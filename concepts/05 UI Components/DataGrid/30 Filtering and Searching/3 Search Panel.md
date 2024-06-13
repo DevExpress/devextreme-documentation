@@ -78,16 +78,16 @@ To make the search panel visible, assign **true** to the [searchPanel](/api-refe
         SearchPanel
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                  <SearchPanel visible={true} />
-                  <Column allowSearch={false} />
-                </DataGrid>
-            );
-        }
+    function App() {
+        return (
+            <DataGrid ... >
+                <SearchPanel visible={true} />
+                <Column allowSearch={false} />
+            </DataGrid>
+        );
     }
+
+    export default App;
 
 ##### ASP.NET MVC Controls
 
@@ -191,44 +191,34 @@ Use the **searchPanel**.[text](/api-reference/10%20UI%20Components/GridBase/1%20
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
+    import React, { useState, useCallback } from 'react';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {
         SearchPanel
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                searchText: "4/1/2015"
-            }
-        }
+    function App() {
+        const [searchText, setSearchText] = useState("4/1/2015");
 
-        render() {
-            let { searchText } = this.state;
-            return (
-                <DataGrid ... 
-                    onOptionChanged={this.onOptionChanged}>
-                    <SearchPanel 
-                        visible={true}
-                        text={searchText} 
-                    />
-                </DataGrid>
-            );
-        }
-        onOptionChanged = (e) => {
-            if(e.fullName === "searchPanel.text") {
-                this.setSearchValue(e.value);
+        const onOptionChanged = useCallback((e) => {
+            if (e.fullName === "searchPanel.text") {
+                setSearchText(e.value);
             }
-        }
-        setSearchValue = (searchText) => {
-            this.setState({
-                searchText: searchText
-            })
-        }
+        }, []);
+
+        return (
+            <DataGrid onOptionChanged={onOptionChanged} ... >
+                <SearchPanel 
+                    visible={true}
+                    text={searchText} 
+                />
+            </DataGrid>
+        );
     }
+
+    export default App;
+
 
 ##### ASP.NET MVC Controls
 

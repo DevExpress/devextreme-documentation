@@ -78,16 +78,17 @@ To make the filter row visible, assign **true** to the [filterRow](/api-referenc
         FilterRow
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <FilterRow visible={true} />
-                    <Column allowFiltering={false} ... />
-                </DataGrid>
-            );
-        }
+    function App() {
+        return (
+            <DataGrid ... >
+                <FilterRow visible={true} />
+                <Column allowFiltering={false} ... />
+            </DataGrid>
+        );
     }
+
+    export default App;
+
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
@@ -177,18 +178,18 @@ A user-specified filter is automatically applied with a delay by default. Altern
         FilterRow
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <FilterRow 
-                        visible={true} 
-                        applyFilter="onClick" 
-                    />
-                </DataGrid>
-            );
-        }
+    function App() {
+        return (
+            <DataGrid ... >
+                <FilterRow 
+                    visible={true} 
+                    applyFilter="onClick" 
+                />
+            </DataGrid>
+        );
     }
+
+    export default App;
 
 ##### ASP.NET MVC Controls
 
@@ -314,7 +315,7 @@ The set of available filter operations can be restricted using the [filterOperat
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
+    import React, { useState, useCallback } from 'react';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {
@@ -322,49 +323,35 @@ The set of available filter operations can be restricted using the [filterOperat
         FilterRow
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.filterOperations = ['contains', '='];
-            this.state = {
-                selectedOperation: 'contains',
-                filterValue: 'Pending'
-            }
-        }
+    function App() {
+        const filterOperations = ['contains', '='];
+        const [selectedOperation, setSelectedOperation] = useState('contains');
+        const [filterValue, setFilterValue] = useState('Pending');
 
-        render() {
-            let { selectedOperation, filterValue } = this.state;
-            return (
-                <DataGrid onOptionChanged={this.optionChanged} ... >
-                    <FilterRow visible={true} />
-                    <Column 
-                        dataField="Status"
-                        filterOperations={this.filterOperations}
-                        selectedFilterOperation={selectedOperation}
-                        filterValue={filterValue}
-                    />
-                </DataGrid>
-            );
-        }
-        optionChanged = (e) => {
-            if(e.fullName === "columns[0].filterValue") {
-                this.setState({ 
-                    filterValue: e.value
-                })
+        const optionChanged = useCallback((e) => {
+            if (e.fullName === "columns[0].filterValue") {
+                setFilterValue(e.value);
             }
-            if(e.fullName === "columns[0].selectedFilterOperation") {
-                this.setState({ 
-                    selectedOperation: e.value
-                })
+            if (e.fullName === "columns[0].selectedFilterOperation") {
+                setSelectedOperation(e.value);
             }
-        }
-        applyFilter = (operation, value) => {
-            this.setState({
-                selectedOperation: operation,
-                filterValue: value
-            })
-        }
+        }, []);
+
+        return (
+            <DataGrid onOptionChanged={optionChanged} ... >
+                <FilterRow visible={true} />
+                <Column 
+                    dataField="Status"
+                    filterOperations={filterOperations}
+                    selectedFilterOperation={selectedOperation}
+                    filterValue={filterValue}
+                />
+            </DataGrid>
+        );
     }
+
+    export default App;
+
 
 ##### ASP.NET MVC Controls
 

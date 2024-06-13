@@ -64,15 +64,15 @@ Set the **filterPanel**.[visible](/api-reference/10%20UI%20Components/GridBase/1
         FilterPanel
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ...>
-                    <FilterPanel visible={true} />                  
-                </DataGrid>
-            );
-        }
+    function App() {
+        return (
+            <DataGrid ...>
+                <FilterPanel visible={true} />                  
+            </DataGrid>
+        );
     }
+
+    export default App;
 
 ##### ASP.NET MVC Controls
 
@@ -133,15 +133,15 @@ If a user changes the filter expression in the filter panel or filter builder, t
 
     import DataGrid from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ...
-                    filterSyncEnabled={false}
-                />
-            );
-        }
+    function App() {
+        return (
+            <DataGrid ...
+                filterSyncEnabled={false}
+            />
+        );
     }
+
+    export default App;
 
 ##### ASP.NET MVC Controls
 
@@ -241,42 +241,38 @@ The **filterValue** is updated when a user changes the filter expression from th
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
+    import React, { useState, useCallback } from 'react';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, {
         FilterPanel
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                filterValue: ['SaleAmount', '<>', null]
-            }
-        }
+    function App() {
+        const [filterValue, setFilterValue] = useState(['SaleAmount', '<>', null]);
 
-        render() {
-            let { filterValue } = this.state;
-            return (
-                <DataGrid ...
-                    onOptionChanged={this.onOptionChanged} 
-                    filterValue={filterValue}>
-                    <FilterPanel visible={true} />                  
-                </DataGrid>
-            );
-        }
-        onOptionChanged = (e) => {
-            if(e.fullName === "filterValue") {
-                this.applyFilter(e.value);
-            }      
-        }
-        applyFilter = (filterExpression) => {
-            this.setState({
-                filterValue: filterExpression
-            });
-        }
+        const onOptionChanged = useCallback((e) => {
+            if (e.fullName === "filterValue") {
+                applyFilter(e.value);
+            }
+        }, []);
+
+        const applyFilter = (filterExpression) => {
+            setFilterValue(filterExpression);
+        };
+
+        return (
+            <DataGrid 
+                onOptionChanged={onOptionChanged} 
+                filterValue={filterValue}
+                ...
+            >
+                <FilterPanel visible={true} />                  
+            </DataGrid>
+        );
     }
+
+    export default App;
 
 ##### ASP.NET MVC Controls
 
@@ -442,61 +438,54 @@ The DataGrid provides the [filterBuilder](/api-reference/10%20UI%20Components/Gr
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
+    import React, { useState, useCallback } from 'react';
     import 'devextreme/dist/css/dx.light.css';
 
     import Button from 'devextreme-react/button';
 
     import DataGrid, {
-        FilterPanel,        
+        FilterPanel,
         FilterBuilder,
         FilterBuilderPopup
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                popupVisible: false
-            }
-            this.customOperations = [{
-                name: "isZero",
-                caption: "Is Zero",
-                dataTypes: ["number"],
-                hasValue: false,
-                calculateFilterExpression: function(filterValue, field) {
-                    return [field.dataField, "=", 0];
-                }
-            }]
-        }
+    function App() {
+        const [popupVisible, setPopupVisible] = useState(false);
 
-        render() {
-            let { popupVisible } = this.state;
-            return (
-                <React.Fragment>
-                    <DataGrid ... 
-                        filterSyncEnabled={true} >
-                        <FilterPanel visible={false} />
-                        <FilterBuilder customOperations={this.customOperations} />
-                        <FilterBuilderPopup 
-                            width={400}
-                            title="Synchronized Filter"
-                            visible={popupVisible}
-                        />                  
-                    </DataGrid>
-                    <Button 
-                        text="Show Filter Builder" 
-                        onClick={this.showFilterBuilder} 
-                    />
-                </React.Fragment>
-            );
-        }
-        showFilterBuilder = () => {
-            this.setState({
-                popupVisible: true
-            });
-        }
+        const customOperations = [{
+            name: "isZero",
+            caption: "Is Zero",
+            dataTypes: ["number"],
+            hasValue: false,
+            calculateFilterExpression: function(filterValue, field) {
+                return [field.dataField, "=", 0];
+            }
+        }];
+
+        const showFilterBuilder = useCallback(() => {
+            setPopupVisible(true);
+        }, []);
+
+        return (
+            <React.Fragment>
+                <DataGrid filterSyncEnabled={true} ... >
+                    <FilterPanel visible={false} />
+                    <FilterBuilder customOperations={customOperations} />
+                    <FilterBuilderPopup 
+                        width={400}
+                        title="Synchronized Filter"
+                        visible={popupVisible}
+                    />                  
+                </DataGrid>
+                <Button 
+                    text="Show Filter Builder" 
+                    onClick={showFilterBuilder} 
+                />
+            </React.Fragment>
+        );
     }
+
+    export default App;
 
 ##### ASP.NET MVC Controls
 

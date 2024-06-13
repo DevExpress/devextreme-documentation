@@ -71,32 +71,25 @@ The [clearFilter(filterName)](/api-reference/10%20UI%20Components/GridBase/3%20M
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
+    import React, { useRef, useCallback } from 'react';
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);    
-            this.gridRef = React.createRef();                  
-        }
-        get dataGrid() {
-            return this.gridRef.current.instance;
-        }
-        
-        render() {
-            return (
-                <DataGrid ... 
-                    :ref="gridRef" 
-                />
-            );
-        }
+    function App() {
+        const gridRef = useRef(null);
 
-        clearSearchPanel = () => {
-            this.dataGrid.clearFilter("search");
-        }
+        const clearSearchPanel = useCallback(() => {
+            const dataGridInstance = gridRef.current.instance;
+            dataGridInstance.clearFilter("search");
+        }, []);
+
+        return (
+            <DataGrid ref={gridRef} ... /> 
+        );
     }
+
+    export default App;
 
 ##### ASP.NET MVC Controls
 

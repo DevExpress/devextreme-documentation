@@ -60,11 +60,6 @@ The TreeList component meets a variety of <a href="https://www.access-board.gov/
         </td>
     </tr>
     <tr>
-        <td>-</td>
-        <td>4.1.3 Status Messages (Level AA 2.1 and 2.2)</td>
-        <td>TreeList summaries when <a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/summary/#recalculateWhileEditing">recalculateWhileEditing</a> is enabled. </td>
-    </tr>
-    <tr>
         <td>502.3.3 Row, Column, and Headers</td>
         <td>-</td>
         <td>TreeList does not convey information about headers if the column fixing feature is enabled.</td>

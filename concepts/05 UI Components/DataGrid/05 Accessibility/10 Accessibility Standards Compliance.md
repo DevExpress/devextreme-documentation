@@ -30,8 +30,6 @@ The DataGrid component meets a variety of <a href="https://www.access-board.gov/
         <td><ul>
                 <li>Keyboard navigation is not supported for ColumnChooser items in 'drag' mode.</li>
                 <li>DataGrid is navigated with the Tab key in the data area.</li>
-                <li>The master-detail feature does not support keyboard navigation.</li>
-                <li>Adaptive rows cannot be expanded/collapsed using keyboard navigation.</li>
             </ul>    
         </td>
     </tr>
@@ -46,7 +44,7 @@ The DataGrid component meets a variety of <a href="https://www.access-board.gov/
         <td>
             <ul>
                 <li>ColumnChooser in 'drag' mode.</li>
-                <li>Grouping and local reordering.</li>
+                <li>Grouping and row drag-and-drop.</li>
                 <li>Column reordering.</li>
             </ul>    
         </td>

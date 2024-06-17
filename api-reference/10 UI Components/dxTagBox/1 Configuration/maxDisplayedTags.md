@@ -12,7 +12,7 @@ Specifies the limit on displayed tags. On exceeding it, the UI component replace
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TagBox/TagCountLimitation/"
 }
 
-[note] You need to set [showMultiTagOnly](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#showMultiTagOnly) to `false` when **maxDisplayedTags** is `0` to avoid unexpected behavior.
+[note] You need to set [showMultiTagOnly](/api-reference/10%20UI%20Components/dxTagBox/1%20Configuration/showMultiTagOnly.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#showMultiTagOnly') to `false` when **maxDisplayedTags** is `0` to avoid unexpected behavior.
 
 #####See Also#####
 - [showMultiTagOnly](/api-reference/10%20UI%20Components/dxTagBox/1%20Configuration/showMultiTagOnly.md '/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#showMultiTagOnly')

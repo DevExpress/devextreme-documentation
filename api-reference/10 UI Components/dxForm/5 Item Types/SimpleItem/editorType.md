@@ -11,7 +11,15 @@ Specifies which editor UI component is used to display and edit the form item va
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/CustomizeItem/"
 }
 
-[important]If you use [DevExtreme modules](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/'), import the editor's module when specifying this property. You can omit modules for *"dxTextBox"*, *"dxDateBox"*, *"dxCheckBox"*, and *"dxNumberBox"*, because the Form UI component imports them automatically when creating form items. 
+[important]
+
+If you use [DevExtreme modules](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/'), import the editor's module when specifying this property. For example, if you use *"dxLookup"*, specify the following import:
+
+    import "devextreme/ui/lookup";
+
+You can omit modules for *"dxTextBox"*, *"dxDateBox"*, *"dxCheckBox"*, and *"dxNumberBox"*, because the Form UI component imports them automatically when creating form items.
+
+[/important]
 
 [note] This property does not [support](/api-reference/10%20UI%20Components/dxForm/9%20Types/FormItemComponent.md '/Documentation/ApiReference/UI_Components/dxForm/Types/#FormItemComponent') all editors. You can use a [template](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/template.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#template') to define an unsupported component. 
 

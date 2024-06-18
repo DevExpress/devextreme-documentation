@@ -97,7 +97,7 @@ Turn JavaScript back on to continue the tutorial.
 
 Run the following command to install the necessary DevExtreme packages and save them to your package dependency list:
 
-    npm install devextreme@24.1 devextreme-react@24.1 --save-exact
+    npm install devextreme@24.2 devextreme-react@24.2 --save-exact
 
 ### Set up the necessary imports
 

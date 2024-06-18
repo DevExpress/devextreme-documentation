@@ -5,7 +5,7 @@
     </tr>
     <tr>
         <td>v24.1.x</td>
-        <td>vue_version_24_1</td>
+        <td>vue_version_24_2</td>
     </tr>
     <tr>
         <td>v23.2.x</td>

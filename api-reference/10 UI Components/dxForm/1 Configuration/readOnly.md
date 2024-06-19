@@ -12,4 +12,4 @@ Specifies whether all editors on the form are read-only. Applies only to non-[te
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview/"
 }
 
-[note] Item [editorOptions](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions) override general Form parameters. For example, if you set **readOnly** to `true` for one of the Form editors, it will be read-only while Form is not. 
+[note] Item [editor options](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions) override general Form parameters. For example, if you set **readOnly** to `true` for one of the Form editors, it will be read-only while Form is not. 

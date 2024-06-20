@@ -8,7 +8,7 @@ The Gallery component meets a variety of <a href="https://www.access-board.gov/i
     </tr>
     <tr>
         <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
-        <td>1.3.1 Info and Relationships (Level A)</td>
+        <td>1.4.3 Contrast (Minimum) (Level AA) <br> 1.4.11 Non-text Contrast (Level AA 2.1 and 2.2)</td>
         <td>Gallery does not support Windows High Contrast themes.</td>
     </tr>
 </table>

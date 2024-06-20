@@ -13,7 +13,7 @@ The TreeList component meets a variety of <a href="https://www.access-board.gov/
     </tr>
     <tr>
         <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
-        <td>1.3.1 Info and Relationships (Level A)</td>
+        <td>1.4.3 Contrast (Minimum) (Level AA) <br> 1.4.11 Non-text Contrast (Level AA 2.1 and 2.2)</td>
         <td>TreeList does not support Windows High Contrast themes. <br>
             The column fixing feature does not meet this criterion. <br>
             The filter menu button in filter row does not supply any accessibility information. 
@@ -27,11 +27,7 @@ The TreeList component meets a variety of <a href="https://www.access-board.gov/
     <tr>
         <td>11.5.2.12 Execution of available actions</td>
         <td>2.1.1 Keyboard (Level A)</td>
-        <td><ul>
-                <li>Keyboard navigation is not supported for ColumnChooser items in 'drag' mode.</li>
-                <li>Keyboard navigation on Expand/Collapse buttons is broken if the mouse was used.</li>
-            </ul>    
-        </td>
+        <td>Keyboard navigation is not supported for ColumnChooser items in 'drag' mode.</td>
     </tr>
     <tr>
         <td>-</td>

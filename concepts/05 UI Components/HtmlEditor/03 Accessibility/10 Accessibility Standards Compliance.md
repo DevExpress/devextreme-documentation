@@ -8,16 +8,18 @@ The HtmlEditor component meets a variety of <a href="https://www.access-board.go
     </tr>
     <tr>
         <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
-        <td>1.3.1 Info and Relationships (Level A)</td>
+        <td>1.4.3 Contrast (Minimum) (Level AA) <br> 1.4.11 Non-text Contrast (Level AA 2.1 and 2.2)</td>
         <td>HtmlEditor does not support Windows High Contrast themes.</td>
     </tr>
     <tr>
         <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
         <td>2.1.1 Keyboard (Level A) <br> 11.5.2.12 Execution of available actions</td>
-        <td><ul>
-            <li>Users cannot resize images, Popup, and Resizable controls within HtmlEditor.</li>
-            <li>The keyboard shortcut to focus out of the component does not exist.</li>
-        </ul></td>
+        <td>Users cannot resize images, Popup, and Resizable controls within HtmlEditor.</td>
+    </tr>
+    <tr>
+        <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
+        <td>2.1.2 No Keyboard Trap (Level A)</td>
+        <td>The keyboard shortcut to focus out of the component does not exist.</td>
     </tr>
     <tr>
         <td>-</td>

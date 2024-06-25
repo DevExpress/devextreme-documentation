@@ -266,10 +266,10 @@ Then, add a button that updates a filter of the TreeList's data source according
             this.fbRef = React.createRef();                   
         }
         get treeList() {
-            return this.gridRef.current.instance;
+            return this.gridRef.current.instance();
         }
         get filterBuilder() {
-            return this.fbRef.current.instance;
+            return this.fbRef.current.instance();
         }
         
         render() {

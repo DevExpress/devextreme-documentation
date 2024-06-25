@@ -309,7 +309,7 @@ Call the [showColumnChooser()](/api-reference/10%20UI%20Components/GridBase/3%20
         }
 
         get dataGrid() {
-            return this.dataGridRef.current.instance;
+            return this.dataGridRef.current.instance();
         }
 
         render() {

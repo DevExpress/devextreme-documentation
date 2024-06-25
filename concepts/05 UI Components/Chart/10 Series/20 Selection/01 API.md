@@ -281,7 +281,7 @@ In the previous code examples, selection was cleared of a specific series. If yo
             );
         }
         get chart() {
-            return this.chartRef.current.instance;
+            return this.chartRef.current.instance();
         }
         clearSelection () {
             return this.chart.clearSelection();

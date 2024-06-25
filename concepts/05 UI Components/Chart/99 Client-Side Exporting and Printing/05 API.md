@@ -84,7 +84,7 @@ To export a UI component using the API, call the [exportTo(fileName, format)](/a
         }
 
         get chart() {
-            return this.chartRef.current.instance;
+            return this.chartRef.current.instance();
         }
 
         exportChart() {
@@ -218,7 +218,7 @@ You can also export several UI components at once using their SVG markup. Gather
         const chart2 = useRef(null);
 
         const exportMultipleCharts = useCallback(() => {
-            const chartMarkup = getMarkup([chart1.current.instance, chart2.current.instance]);
+            const chartMarkup = getMarkup([chart1.current.instance(), chart2.current.instance()]);
             exportFromMarkup(chartMarkup, {
                 height: 768,
                 width: 1024,

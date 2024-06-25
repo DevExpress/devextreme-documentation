@@ -103,7 +103,7 @@ The **expandToTask** method expands a task's parent tasks and does not expand th
         }
 
         get gantt() {
-            return this.ganttRef.current.instance;
+            return this.ganttRef.current.instance();
         }
 
         render() {

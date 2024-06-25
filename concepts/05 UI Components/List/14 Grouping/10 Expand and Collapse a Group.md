@@ -216,10 +216,10 @@ To collapse or expand a specific group programmatically, call the [collapseGroup
     export default function App() {
         const list = useRef(null);
         const collapseGroup = (groupIndex) => {
-            list.current.instance.collapseGroup(groupIndex);
+            list.current.instance().collapseGroup(groupIndex);
         };
         const expandGroup = (groupIndex) => {
-            list.current.instance.expandGroup(groupIndex);
+            list.current.instance().expandGroup(groupIndex);
         };
         return (
             <List ...

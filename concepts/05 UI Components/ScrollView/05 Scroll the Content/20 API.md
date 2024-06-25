@@ -144,7 +144,7 @@ To scroll through ScrollView content by a specified distance, call the [scrollBy
         }
 
         get scrollView() {
-            return this.scrollViewRef.current.instance;
+            return this.scrollViewRef.current.instance();
         }
 
         render() {
@@ -308,7 +308,7 @@ To scroll content vertically and horizontally, call the [scrollBy(distance)](/ap
         }
 
         get scrollView() {
-            return this.scrollViewRef.current.instance;
+            return this.scrollViewRef.current.instance();
         }
 
         render() {
@@ -464,7 +464,7 @@ To scroll the content to a specific position, call the [scrollTo(targetLocation)
         }
 
         get scrollView() {
-            return this.scrollViewRef.current.instance;
+            return this.scrollViewRef.current.instance();
         }
 
         render() {
@@ -628,7 +628,7 @@ To scroll content to a specific element, call the [scrollToElement(element)](/ap
         }
 
         get scrollView() {
-            return this.scrollViewRef.current.instance;
+            return this.scrollViewRef.current.instance();
         }
 
         render() {

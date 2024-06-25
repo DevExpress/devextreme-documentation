@@ -187,7 +187,7 @@ If your DataGrid is inside a resizable container, you must call the [updateDimen
     export default function App() {
         const dataGrid = useRef(null);
         const renderDataGrid = () => {
-            dataGrid.current.instance.updateDimensions();
+            dataGrid.current.instance().updateDimensions();
         };
 
 	    return (

@@ -189,14 +189,14 @@ Use this method if target **ValidationGroup** is recreated.
         const validationGroup = React.createRef();
         const summary = React.createRef();
         const validate = () => {
-            validationGroup.current.instance.validate();
+            validationGroup.current.instance().validate();
         };
         const removeGroup = () => {
             setVisible(false);
         }
         const renderGroup = () => {
             setVisible(true);
-            summary.current.instance.refreshValidationGroup(); // Refresh the subscription to ValidationGroup after rendering
+            summary.current.instance().refreshValidationGroup(); // Refresh the subscription to ValidationGroup after rendering
         }
         return (
             <div>

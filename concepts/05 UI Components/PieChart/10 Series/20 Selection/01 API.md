@@ -265,7 +265,7 @@ In a multi-series PieChart, you can clear the entire selection at once by callin
 
     const pieChartRef = React.createRef();
     const clearSelection = () => {
-        return pieChartRef.current.instance.clearSelection();
+        return pieChartRef.current.instance().clearSelection();
     };
 
     const App = () => {

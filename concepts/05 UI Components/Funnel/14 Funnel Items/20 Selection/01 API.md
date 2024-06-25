@@ -151,7 +151,7 @@ In the previous code example, selection was cleared of a specific item. If you n
             );
         }
         get funnel() {
-            return this.funnelRef.current.instance;
+            return this.funnelRef.current.instance();
         }
         clearSelection () {
             return this.funnel.clearSelection();

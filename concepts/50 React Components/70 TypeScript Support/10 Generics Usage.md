@@ -2,8 +2,8 @@ DevExtreme supports Generics for properties and methods that operate internal da
 
     <!-- tab: App.tsx -->
     import { useRef } from 'react';
-    import service, { Employee } from './data';
-    import DataGrid, { DataGridTypes } from 'devextreme-react/data-grid';
+    import { Employee, employees as dataSource } from './data';
+    import DataGrid, { DataGridTypes, DataGridRef } from 'devextreme-react/data-grid';
     import Button from 'devextreme-react/button';
 
     function onEditorPreparing(e: DataGridTypes.EditorPreparingEvent<Employee, number>) {
@@ -13,23 +13,25 @@ DevExtreme supports Generics for properties and methods that operate internal da
     }
 
     function App() {
-        const dataGrid = useRef<DataGrid<Employee, number>>(null);
+        const dataGrid = useRef<DataGridRef<Employee, number>>(null);
 
         const onButtonClick = () => {
-            const dataGridInstance = dataGrid.current!.instance;
+            const dataGridInstance = dataGrid.current!.instance();
             dataGridInstance.option("disabled", true);
         }
 
         return (
-            <Button
-                text={"Disable DataGrid"}
-                onClick={onButtonClick}
-            />
-            <DataGrid<Employee, number>
-                ref={dataGrid}
-                onEditorPreparing={onEditorPreparing}
-                dataSource={dataSource}>
-            </DataGrid>
+            <>
+                <Button
+                    text={"Disable DataGrid"}
+                    onClick={onButtonClick}
+                />
+                <DataGrid<Employee, number>
+                    ref={dataGrid}
+                    onEditorPreparing={onEditorPreparing}
+                    dataSource={dataSource}>
+                </DataGrid>
+            </>
         );
         }
 

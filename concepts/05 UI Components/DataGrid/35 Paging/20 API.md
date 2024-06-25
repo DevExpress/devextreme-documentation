@@ -70,7 +70,7 @@ Call the [pageCount()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/
             this.dataGridRef = React.createRef();
 
             this.getTotalPageCount = () => {
-                return this.dataGridRef.current.instance.pageCount();
+                return this.dataGridRef.current.instance().pageCount();
             }
         }
 
@@ -202,7 +202,7 @@ The DataGrid also provides the [pageIndex(newIndex)](/api-reference/10%20UI%20Co
         }
 
         goToLastPage() {
-            const pageCount = this.dataGridRef.current.instance.pageCount();
+            const pageCount = this.dataGridRef.current.instance().pageCount();
             this.setState({
                 pageIndex: pageCount - 1
             });

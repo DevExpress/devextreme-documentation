@@ -158,7 +158,7 @@ The **visibleIndex** property can also be changed at runtime to reorder columns 
     export default function App() {
         const treeList = useRef(null);
         const swapColumns = () => {
-            treeList.current.instance.columnOption(1, 'visibleIndex', 0);
+            treeList.current.instance().columnOption(1, 'visibleIndex', 0);
         };
 
 	    return (

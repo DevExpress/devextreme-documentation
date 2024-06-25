@@ -159,11 +159,11 @@ If you need to show or hide the loading indicator at runtime, call the [showLoad
             this.chartRef = React.createRef();
 
             this.showLoadingIndicator = function() {
-                this.chartRef.current.instance.showLoadingIndicator();
+                this.chartRef.current.instance().showLoadingIndicator();
             }
 
             this.hideLoadingIndicator = function() {
-                this.chartRef.current.instance.hideLoadingIndicator();
+                this.chartRef.current.instance().hideLoadingIndicator();
             }
         }
 

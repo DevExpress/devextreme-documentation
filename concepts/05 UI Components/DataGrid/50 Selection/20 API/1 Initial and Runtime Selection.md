@@ -349,7 +349,7 @@ To select all rows at once, call the [selectAll()](/api-reference/10%20UI%20Comp
         }
 
         get dataGrid() {
-            return this.dataGridRef.current.instance;
+            return this.dataGridRef.current.instance();
         }
 
         render() {
@@ -466,7 +466,7 @@ Call the [getSelectedRowKeys()](/api-reference/10%20UI%20Components/dxDataGrid/3
         }
 
         get dataGrid() {
-            return this.dataGridRef.current.instance;
+            return this.dataGridRef.current.instance();
         }
 
         render() {

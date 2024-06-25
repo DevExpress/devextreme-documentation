@@ -152,13 +152,13 @@ The following example shows how to save the UI component state in the local stor
     export default function App() {
         const {widgetName} = useRef(null);
         const saveState = () => {
-            const state = {widgetName}.current.instance.state();
+            const state = {widgetName}.current.instance().state();
             // Saves the state in the local storage
             localStorage.setItem("{widgetName}State", JSON.stringify(state));
         };
         const loadState = () => {
             const state = JSON.parse(localStorage.getItem("{widgetName}State"));
-            {widgetName}.current.instance.state(state);
+            {widgetName}.current.instance().state(state);
         };
         return (
             <React.Fragment>

@@ -111,7 +111,7 @@ The [cellValue(rowIndex, visibleColumnIndex, value)](/api-reference/10%20UI%20Co
         }
 
         get dataGrid() {
-            return this.dataGridRef.current.instance;
+            return this.dataGridRef.current.instance();
         }
 
         updateCell() {
@@ -274,7 +274,7 @@ You can check if there are any unsaved changes by calling the [hasEditData()](/a
         }
 
         get dataGrid() {
-            return this.dataGridRef.current.instance;
+            return this.dataGridRef.current.instance();
         }
 
         saveChanges() {

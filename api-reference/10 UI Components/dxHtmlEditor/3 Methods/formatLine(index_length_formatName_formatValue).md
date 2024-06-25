@@ -100,7 +100,7 @@ Pass **null** to remove a format.
         const htmlEditor = useRef(null);
         
         const alignFirstLineToRight = () => {
-            htmlEditor.current.instance.formatLine(0, 1, "align", "right");
+            htmlEditor.current.instance().formatLine(0, 1, "align", "right");
         };
 
         return (

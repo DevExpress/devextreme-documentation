@@ -107,7 +107,7 @@ You can clear sorting settings for all columns by calling the [clearSorting()](/
         }
 
         get dataGrid() {
-            return this.dataGridRef.current.instance;
+            return this.dataGridRef.current.instance();
         }
 
         render() {

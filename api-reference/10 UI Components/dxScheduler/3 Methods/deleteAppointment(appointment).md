@@ -213,7 +213,7 @@ If you delete a recurring appointment from the data source, all its occurrences 
         }
 
         get scheduler() {
-            return this.schedulerRef.current.instance;
+            return this.schedulerRef.current.instance();
         }
 
         render() {

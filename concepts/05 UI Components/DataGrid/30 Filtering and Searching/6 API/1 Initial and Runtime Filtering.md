@@ -91,7 +91,7 @@ The initial and runtime filtering API depends on the UI element and is described
         const gridRef = useRef(null);
 
         const filterByCost = useCallback(() => {
-            const dataGridInstance = gridRef.current.instance;
+            const dataGridInstance = gridRef.current.instance();
             dataGridInstance.filter([
                 [ "Cost", ">", 1000 ],
                 "and",
@@ -207,7 +207,7 @@ You can create a filter that combines all the applied filters by calling the [ge
         const gridRef = useRef(null);
 
         const getCombinedFilter = useCallback(() => {
-            const dataGridInstance = gridRef.current.instance;
+            const dataGridInstance = gridRef.current.instance();
             return dataGridInstance.getCombinedFilter(true);
         }, []);
 

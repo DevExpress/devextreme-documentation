@@ -120,7 +120,7 @@ This property is a read-only flag. You can use it to check if the editor value c
         const {widgetName}Ref = useRef(null);
 
         const onClick = () => {
-            if (this.{widgetName}Ref.current.instance.option('isDirty')) {
+            if (this.{widgetName}Ref.current.instance().option('isDirty')) {
                 notify("Do not forget to save changes", "warning", 500);
             }
         };

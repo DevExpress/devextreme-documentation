@@ -187,7 +187,7 @@ If your TreeList is inside a resizable container, you must call the [updateDimen
     export default function App() {
         const treeList = useRef(null);
         const renderTreeList = () => {
-            treeList.current.instance.updateDimensions();
+            treeList.current.instance().updateDimensions();
         };
 
 	    return (

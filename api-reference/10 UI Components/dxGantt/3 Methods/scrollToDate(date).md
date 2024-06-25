@@ -151,7 +151,7 @@ Specify a timeout if you call the **scrollToDate** method in the [contentReady](
         }
 
         get gantt() {
-            return this.ganttRef.current.instance;
+            return this.ganttRef.current.instance();
         }
 
         render() {

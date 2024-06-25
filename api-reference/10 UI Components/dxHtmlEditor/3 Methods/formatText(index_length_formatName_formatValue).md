@@ -99,7 +99,7 @@ Applies a single [text format](/concepts/05%20UI%20Components/HtmlEditor/10%20Fo
         
         const makeTextBold = () => {
             // Makes the first five characters bold
-            htmlEditor.current.instance.formatText(0, 5, "bold", true);
+            htmlEditor.current.instance().formatText(0, 5, "bold", true);
         };
 
         return (

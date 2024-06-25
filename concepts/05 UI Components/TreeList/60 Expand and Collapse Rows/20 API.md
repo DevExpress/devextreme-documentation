@@ -172,10 +172,10 @@ Call the [expandRow(key)](/api-reference/10%20UI%20Components/dxTreeList/3%20Met
     export default function App() {
         const treeList = useRef(null);
         const toggleRow = (key) => {
-            if (treeList.current.instance.isRowExpanded(key)) {
-                treeList.current.instance.collapseRow(key);
+            if (treeList.current.instance().isRowExpanded(key)) {
+                treeList.current.instance().collapseRow(key);
             } else {
-                treeList.current.instance.expandRow(key);
+                treeList.current.instance().expandRow(key);
             }
         };
 

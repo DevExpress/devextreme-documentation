@@ -113,7 +113,7 @@ Call the [deleteRow(rowIndex)](/api-reference/10%20UI%20Components/GridBase/3%20
             this.deleteRow = this.deleteRow.bind(this);
         }
         get dataGrid() {
-            return this.dataGridRef.current.instance;
+            return this.dataGridRef.current.instance();
         }
 
         deleteRow() {
@@ -210,7 +210,7 @@ Note that in [batch mode](/concepts/05%20UI%20Components/DataGrid/20%20Editing/1
             this.undeleteRow = this.undeleteRow.bind(this);
         }
         get dataGrid() {
-            return this.dataGridRef.current.instance;
+            return this.dataGridRef.current.instance();
         }
 
         undeleteRow() {

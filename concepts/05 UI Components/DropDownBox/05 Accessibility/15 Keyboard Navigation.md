@@ -112,7 +112,7 @@ Use the [registerKeyHandler(key, handler)](/api-reference/10%20UI%20Components/W
         }
 
         get dropDownBox() {
-            return this.dropDownBoxRef.current.instance;
+            return this.dropDownBoxRef.current.instance();
         }
 
         componentDidMount() {

@@ -129,7 +129,7 @@ Specifies whether to show or hide dependencies.
         }
 
         get gantt() {
-            return this.ganttRef.current.instance;
+            return this.ganttRef.current.instance();
         }
 
         render() {

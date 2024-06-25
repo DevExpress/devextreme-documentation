@@ -525,7 +525,7 @@ The following instructions show how to enable and configure client-side export:
             const dataGridRef = useRef(null);
             function exportGrid() {
                 const doc = new jsPDF();
-                const dataGrid = dataGridRef.current.instance;
+                const dataGrid = dataGridRef.current.instance();
                 exportDataGridToPdf({
                     jsPDFDocument: doc,
                     component: dataGrid

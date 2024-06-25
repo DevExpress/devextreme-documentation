@@ -70,7 +70,7 @@ Regardless of the data source you use, the TagBox always wraps it in a [DataSour
         }
 
         getDataSource() {
-            this.ds = this.tagBoxRef.current.instance.getDataSource();
+            this.ds = this.tagBoxRef.current.instance().getDataSource();
         } 
 
         render() {

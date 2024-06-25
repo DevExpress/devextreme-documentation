@@ -8,8 +8,8 @@ To call UI component methods, you need the UI component instance. Create a <a hr
     export default function App() {
         const textBox = useRef(null);
         const focusTextBox = useCallback(() => {
-            // `current.instance` points to the UI component instance 
-            textBox.current.instance.focus();
+            // `current.instance()` points to the UI component instance 
+            textBox.current.instance().focus();
         }, []);
 
         return (
@@ -36,8 +36,8 @@ To call UI component methods, you need the UI component instance. Create a <a hr
         }
 
         get textBox() {
-            // `current.instance` points to the UI component instance
-            return this.textBoxRef.current.instance;
+            // `current.instance()` points to the UI component instance
+            return this.textBoxRef.current.instance();
         }
 
         render() {

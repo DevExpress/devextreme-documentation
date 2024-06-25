@@ -107,7 +107,7 @@ An embedded format's [value](/concepts/05%20UI%20Components/HtmlEditor/10%20Form
         
         const insertImageAtTheBeginning = () => {
             // Makes the first five characters bold and underlined
-            htmlEditor.current.instance.insertEmbed(0, "extendedImage", {
+            htmlEditor.current.instance().insertEmbed(0, "extendedImage", {
                 src: "https://js.devexpress.com/Content/images/doc/24_1/PhoneJS/person1.png",
                 alt: "Photo",
                 width: "100px"

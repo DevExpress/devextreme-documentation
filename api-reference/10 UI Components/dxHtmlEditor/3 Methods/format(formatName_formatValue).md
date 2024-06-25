@@ -113,10 +113,10 @@ If no content is selected, the format applies to the character typed next.
         const htmlEditor = useRef(null);
         
         const makeTextBold = () => {
-            htmlEditor.current.instance.format("bold", true);
+            htmlEditor.current.instance().format("bold", true);
         };
         const insertGoogleLink = () => {
-            htmlEditor.current.instance.format("link", { 
+            htmlEditor.current.instance().format("link", { 
                 href: "https://www.google.com/", 
                 text: "Google", 
                 title: "Go to Google" 

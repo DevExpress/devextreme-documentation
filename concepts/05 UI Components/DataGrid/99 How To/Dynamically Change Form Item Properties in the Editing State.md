@@ -195,7 +195,7 @@ This function allows you to change form item properties dynamically. Within this
                 this.dataGridRef = React.createRef();
             }
             get dataGrid() {
-                return this.dataGridRef.current.instance;
+                return this.dataGridRef.current.instance();
             }
             render() {
                 return (
@@ -219,7 +219,7 @@ This function allows you to change form item properties dynamically. Within this
             }
             customizeItem = (item) => {
                 if (item && item.itemType === "group" && item.caption === "Home Address") {
-                    let gridInstance = this.dataGrid.current.instance;
+                    let gridInstance = this.dataGrid.current.instance();
                     const editRowKey = gridInstance.option('editing.editRowKey');
                     const rowIndex = gridInstance.getRowIndexByKey(editRowKey);
                     item.visible = gridInstance.cellValue(rowIndex, "AddressRequired");

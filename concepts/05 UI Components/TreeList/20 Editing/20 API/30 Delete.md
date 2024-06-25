@@ -113,7 +113,7 @@ Call the [deleteRow(rowIndex)](/api-reference/10%20UI%20Components/GridBase/3%20
             this.deleteRow = this.deleteRow.bind(this);
         }
         get treeList() {
-            return this.treeListRef.current.instance;
+            return this.treeListRef.current.instance();
         }
 
         deleteRow() {
@@ -210,7 +210,7 @@ Note that in the [batch mode](/concepts/05%20UI%20Components/TreeList/20%20Editi
             this.undeleteRow = this.undeleteRow.bind(this);
         }
         get treeList() {
-            return this.treeListRef.current.instance;
+            return this.treeListRef.current.instance();
         }
 
         undeleteRow() {

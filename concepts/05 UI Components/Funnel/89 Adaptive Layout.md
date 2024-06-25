@@ -152,7 +152,7 @@ The layout does not automatically adapt to changes made in the UI component's co
             );
         }
         get funnel() {
-            return this.funnelRef.current.instance;
+            return this.funnelRef.current.instance();
         }
         renderFunnel () {
             this.funnel.render();

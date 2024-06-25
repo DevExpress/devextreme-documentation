@@ -176,7 +176,7 @@ The following code obtains a **DataSource** instance using both approaches and c
                 this.dataGridRef = React.createRef();
             }
             filter() {
-                const dataSource = this.dataGridRef.current.instance.getDataSource();
+                const dataSource = this.dataGridRef.current.instance().getDataSource();
                 dataSource.filter(['age', '>', 18]);
                 dataSource.load();
             }

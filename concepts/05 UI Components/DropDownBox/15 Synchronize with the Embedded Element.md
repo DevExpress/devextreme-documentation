@@ -322,7 +322,7 @@ This step's implementation depends on the embedded UI component's API and the li
                     dropDownBoxValues: keys
                 });
 
-                this.dropDownBoxRef.current.instance.close();
+                this.dropDownBoxRef.current.instance().close();
             }
 
             render() {

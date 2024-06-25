@@ -155,11 +155,11 @@ To switch the Gallery to the next or previous image, call the [nextItem(animatio
         }
 
         goToPreviousItem() {
-            this.galleryRef.current.instance.prevItem(true);
+            this.galleryRef.current.instance().prevItem(true);
         }
 
         goToNextItem() {
-            this.galleryRef.current.instance.nextItem(true);
+            this.galleryRef.current.instance().nextItem(true);
         }
 
         render() {
@@ -258,7 +258,7 @@ To navigate to a specific image, call the [goToItem(itemIndex, animation)](/api-
         }
 
         goToItem(index) {
-            this.galleryRef.current.instance.goToItem(index, true);
+            this.galleryRef.current.instance().goToItem(index, true);
         }
 
         render() {

@@ -135,7 +135,7 @@ Refer to the article to learn more.
         const dropDownBoxRef = useRef(null);
         const changeDropDownBoxValue = useCallback((arg) => {
             setSelectedFruit(arg.addedItems[0]);
-            dropDownBoxRef.current.instance.close();
+            dropDownBoxRef.current.instance().close();
         }, []);
         const onValueChanged = useCallback((e) => {
             setSelectedFruit(e.value);

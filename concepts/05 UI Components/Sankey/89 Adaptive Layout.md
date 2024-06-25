@@ -151,7 +151,7 @@ The layout does not automatically adapt if the UI component's container is resiz
             )
         }
         get sankey() {
-            return this.sankeyRef.current.instance;
+            return this.sankeyRef.current.instance();
         }
         renderSankey() {
             this.sankey.render();

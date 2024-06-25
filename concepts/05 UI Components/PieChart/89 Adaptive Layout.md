@@ -166,7 +166,7 @@ The layout does not automatically adapt to changes made in the UI component's co
         }
 
         get pieChart() {
-            return this.pieChartRef.current.instance;
+            return this.pieChartRef.current.instance();
         }
     }
 

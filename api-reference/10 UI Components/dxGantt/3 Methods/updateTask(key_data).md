@@ -132,7 +132,7 @@ Note that the **updateTask** method does not allow you to change a task's parent
         }
 
         get gantt() {
-            return this.ganttRef.current.instance;
+            return this.ganttRef.current.instance();
         }
 
         render() {

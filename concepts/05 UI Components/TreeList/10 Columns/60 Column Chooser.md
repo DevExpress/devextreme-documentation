@@ -286,11 +286,11 @@ Call the [showColumnChooser()](/api-reference/10%20UI%20Components/GridBase/3%20
     export default function App() {
         const treeList = useRef(null);
         const showColumnChooser = () => {
-            treeList.current.instance.showColumnChooser();
+            treeList.current.instance().showColumnChooser();
         }
 
         const hideColumnChooser = () => {
-            treeList.current.instance.hideColumnChooser();
+            treeList.current.instance().hideColumnChooser();
         }
 
 	    return (

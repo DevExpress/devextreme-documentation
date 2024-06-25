@@ -138,7 +138,7 @@ The following example illustrates how to use this method:
         }
 
         get fileManager() {
-            return this.fileManagerRef.current.instance;
+            return this.fileManagerRef.current.instance();
         }
 
         render() {

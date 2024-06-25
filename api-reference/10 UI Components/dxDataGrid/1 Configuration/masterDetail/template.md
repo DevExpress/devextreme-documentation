@@ -179,7 +179,7 @@ You should call the [updateDimensions()](/api-reference/10%20UI%20Components/Gri
         const dataGrid = useRef(null);
 
         const updateGridDimensions = () => {
-            dataGrid.current.instance.updateDimensions();
+            dataGrid.current.instance().updateDimensions();
         };
 
         const renderDetailSection = useCallback(({ data }) => {

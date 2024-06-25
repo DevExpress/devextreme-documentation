@@ -250,7 +250,7 @@ Please review the following notes:
         export default function App() {
             const dataGrid = useRef(null);
             const getRecordCount = useCallback(() => {
-                const dataSource = dataGrid.current.instance.getDataSource();
+                const dataSource = dataGrid.current.instance().getDataSource();
                 return dataSource.items().length;
             }, []);
             return (

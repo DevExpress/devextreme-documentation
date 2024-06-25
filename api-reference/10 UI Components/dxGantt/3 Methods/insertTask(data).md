@@ -147,7 +147,7 @@ The **insertTask** method does not update the following data fields in the data 
         }
 
         get gantt() {
-            return this.ganttRef.current.instance;
+            return this.ganttRef.current.instance();
         }
 
         render() {

@@ -273,7 +273,7 @@ If you need to clear selection of all series in the Chart along with their point
         }
 
         clearSelection () {
-            this.chartRef.current.instance.clearSelection();
+            this.chartRef.current.instance().clearSelection();
         }
     }
 

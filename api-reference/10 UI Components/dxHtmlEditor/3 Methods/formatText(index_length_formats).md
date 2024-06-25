@@ -97,7 +97,7 @@ Applies several [text formats](/concepts/05%20UI%20Components/HtmlEditor/10%20Fo
         
         const applyLineFormats = () => {
             // Makes the first five characters bold and underlined
-            htmlEditor.current.instance.formatText(0, 5, { "bold": "true", "underline": "true" });
+            htmlEditor.current.instance().formatText(0, 5, { "bold": "true", "underline": "true" });
         };
 
         return (

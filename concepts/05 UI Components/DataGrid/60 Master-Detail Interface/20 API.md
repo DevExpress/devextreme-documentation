@@ -86,10 +86,10 @@ Pass *-1* to the [expandAll(groupIndex)](/api-reference/10%20UI%20Components/dxD
     export default function App() {
         const dataGrid = useRef(null);
         const expandAllMasterRows = useCallback(() => {
-            dataGrid.current.instance.expandAll(-1);
+            dataGrid.current.instance().expandAll(-1);
         }, []);
         const collapseAllMasterRows = useCallback(() => {
-            dataGrid.current.instance.collapseAll(-1);
+            dataGrid.current.instance().collapseAll(-1);
         }, []);
 
         return (
@@ -198,10 +198,10 @@ The [expandRow(key)](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/
     export default function App() {
         const dataGrid = useRef(null);
         const toggleMasterRow = useCallback((rowKey) => {
-            if (dataGrid.current.instance.isRowExpanded(rowKey)) {
-                dataGrid.current.instance.collapseRow(rowKey);
+            if (dataGrid.current.instance().isRowExpanded(rowKey)) {
+                dataGrid.current.instance().collapseRow(rowKey);
             } else {
-                dataGrid.current.instance.expandRow(rowKey);
+                dataGrid.current.instance().expandRow(rowKey);
             }
         }, []);
 

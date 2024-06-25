@@ -82,7 +82,7 @@ To access a point label, call the [getLabel()](/api-reference/10%20UI%20Componen
         }
 
         getPointLabel () {
-            const series = this.chartRef.current.instance.getSeriesByName("Series 1");
+            const series = this.chartRef.current.instance().getSeriesByName("Series 1");
             const seriesPoints = series.getAllPoints();
             const label = seriesPoints[0].getLabel();
             // ...

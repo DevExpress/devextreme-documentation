@@ -66,7 +66,7 @@ Regardless of the data source you use, the Lookup always wraps it in a [DataSour
         }
 
         getDataSource() {
-            this.ds = this.lookupRef.current.instance.getDataSource();
+            this.ds = this.lookupRef.current.instance().getDataSource();
         } 
 
         render() {

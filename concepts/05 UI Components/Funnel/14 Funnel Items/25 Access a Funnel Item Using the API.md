@@ -68,7 +68,7 @@ Call the [getAllItems()](/api-reference/10%20UI%20Components/dxFunnel/3%20Method
             );
         }
         get funnel() {
-            return this.funnelRef.current.instance;
+            return this.funnelRef.current.instance();
         }
         getAllItems () {
             return this.funnel.getAllItems();

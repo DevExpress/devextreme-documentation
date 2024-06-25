@@ -71,7 +71,7 @@ Use the [addRow()](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/ad
         }
 
         addNewRow() {
-            this.dataGridRef.current.instance.addRow();
+            this.dataGridRef.current.instance().addRow();
         }
 
         render() {

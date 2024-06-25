@@ -346,7 +346,7 @@ Call the [getSelectedRowKeys(mode)](/api-reference/10%20UI%20Components/dxTreeLi
         }
 
         get treeList() {
-            return this.treeListRef.current.instance;
+            return this.treeListRef.current.instance();
         }
 
         render() {

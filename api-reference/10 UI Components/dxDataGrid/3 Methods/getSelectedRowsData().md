@@ -149,7 +149,7 @@ When selection is [deferred](/api-reference/10%20UI%20Components/dxDataGrid/1%20
         }
 
         get dataGrid() {
-            return this.dataGridRef.current.instance;
+            return this.dataGridRef.current.instance();
         }
 
         render() {

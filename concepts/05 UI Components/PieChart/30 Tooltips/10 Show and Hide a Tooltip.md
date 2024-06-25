@@ -198,7 +198,7 @@ You can also hide the tooltip regardless of the point to which it belongs by cal
         }
 
         get pieChart() {
-            return this.pieChartRef.current.instance;
+            return this.pieChartRef.current.instance();
         }
     }
 

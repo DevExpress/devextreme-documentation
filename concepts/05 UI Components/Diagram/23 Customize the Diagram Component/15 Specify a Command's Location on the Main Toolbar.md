@@ -235,7 +235,7 @@ The example below demonstrates how to customize the main toolbar:
             }
         }
         componentDidMount() {
-            var diagram = this.diagramRef.current.instance;
+            var diagram = this.diagramRef.current.instance();
             fetch('data/diagram-flow.json')
                 .then(function(response) {
                     return response.json();

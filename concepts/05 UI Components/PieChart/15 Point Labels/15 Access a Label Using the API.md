@@ -90,7 +90,7 @@ To access a point label, call the [getLabel()](/api-reference/10%20UI%20Componen
         }
 
         get pieChart() {
-            return this.pieChartRef.current.instance;
+            return this.pieChartRef.current.instance();
         }
 
         getPointLabel() {

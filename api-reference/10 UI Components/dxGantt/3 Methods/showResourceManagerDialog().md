@@ -101,7 +101,7 @@ Invokes the "Resource Manager" dialog.
 
     const App = () => {
         const showDialog = () => {
-            myGantt.current.instance.showResourceManagerDialog();
+            myGantt.current.instance().showResourceManagerDialog();
         }
 
         return (

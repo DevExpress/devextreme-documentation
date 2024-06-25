@@ -128,7 +128,7 @@ The objects are not processed by the [DataSource](/api-reference/30%20Data%20Lay
         }
 
         get treeList() {
-            return this.treeListRef.current.instance;
+            return this.treeListRef.current.instance();
         }
 
         render() {

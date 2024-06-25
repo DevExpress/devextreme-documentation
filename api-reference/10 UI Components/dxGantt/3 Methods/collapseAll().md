@@ -98,7 +98,7 @@ Collapses all tasks.
         }
 
         get gantt() {
-            return this.ganttRef.current.instance;
+            return this.ganttRef.current.instance();
         }
 
         render() {

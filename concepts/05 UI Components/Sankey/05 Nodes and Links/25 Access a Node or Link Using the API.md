@@ -77,7 +77,7 @@ Call the [getAllNodes()](/api-reference/10%20UI%20Components/dxSankey/3%20Method
             )
         }
         get sankey() {
-            return this.sankeyRef.current.instance;
+            return this.sankeyRef.current.instance();
         }
         getAllNodes() {
             return this.sankey.getAllNodes();

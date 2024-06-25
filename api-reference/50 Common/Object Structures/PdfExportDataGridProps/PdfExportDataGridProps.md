@@ -174,7 +174,7 @@ The [exportDataGrid(options)](/api-reference/50%20Common/utils/pdfExporter/expor
 
         function exportGrid() {
             const doc = new jsPDF();
-            const dataGrid = dataGridRef.current.instance;
+            const dataGrid = dataGridRef.current.instance();
 
             exportDataGridToPdf({
                 jsPDFDocument: doc,

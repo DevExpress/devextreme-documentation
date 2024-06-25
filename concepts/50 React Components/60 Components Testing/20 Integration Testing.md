@@ -36,19 +36,19 @@ To get started, create a React application as described in the [Unit Testing](/c
         const rowElements = screen.getAllByText('test', {exact: false});
     })
 
-    dataGridRef.current.instance.addRow();
+    dataGridRef.current.instance().addRow();
 
     //give time to render
     jest.advanceTimersByTime(200);
 
-    dataGridRef.current.instance.saveEditData();
+    dataGridRef.current.instance().saveEditData();
 
     //give time to render
     jest.advanceTimersByTime(200);
 
-    expect(dataGridRef.current.instance.getVisibleRows().length).toBe(5);
+    expect(dataGridRef.current.instance().getVisibleRows().length).toBe(5);
     // eslint-disable-next-line testing-library/no-wait-for-multiple-assertions
-    expect(dataGridRef.current.instance.hasEditData()).toBe(false);
+    expect(dataGridRef.current.instance().hasEditData()).toBe(false);
     });
 
 Run `npm test` command in a test project to see the detailed report of the test and its result.

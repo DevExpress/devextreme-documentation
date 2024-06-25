@@ -203,7 +203,7 @@ In the following example, this function adds an image to a cell:
 
         function exportGrid() {
             const doc = new jsPDF();
-            const dataGrid = dataGridRef.current.instance;
+            const dataGrid = dataGridRef.current.instance();
 
             exportDataGridToPdf({
                 jsPDFDocument: doc,

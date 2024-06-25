@@ -195,35 +195,35 @@ The following examples shows how to call these methods.
     export default function App() {
         const list = useRef(null);
         const scrollToLastItem = () => {
-            const listItems = list.current.instance.option("items");
-            list.current.instance.scrollToItem(listItems.length-1);
+            const listItems = list.current.instance().option("items");
+            list.current.instance().scrollToItem(listItems.length-1);
             // OR
             // Find the DOM nodes of all items and scroll to the last node
             const listItemNodes = document.getElementsByClassName("dx-list-item");
-            list.current.instance.scrollToItem(listItemNodes[listItemNodes.length-1]);
+            list.current.instance().scrollToItem(listItemNodes[listItemNodes.length-1]);
         };
         const scrollToLastGroup = () => {
-            const listItems = list.current.instance.option("items");
-            list.current.instance.scrollToItem({
+            const listItems = list.current.instance().option("items");
+            list.current.instance().scrollToItem({
                 group: listItems.length-1,
                 item: 0
             });
             // OR
             // Find the DOM nodes of all groups and scroll to the last node
             const listGroupNodes = document.getElementsByClassName("dx-list-group");
-            list.current.instance.scrollToItem(listGroupNodes[listGroupNodes.length-1]);
+            list.current.instance().scrollToItem(listGroupNodes[listGroupNodes.length-1]);
         };
         const getListHeight = () => {
-            return list.current.instance.scrollHeight();
+            return list.current.instance().scrollHeight();
         };
         const getScrolledDistanceFromTop = () => {
-            return list.current.instance.scrollTop();
+            return list.current.instance().scrollTop();
         };
         const scrollTo = () => {
-            list.current.instance.scrollTo(200);
+            list.current.instance().scrollTo(200);
         };
         const scrollBy = () => {
-            list.current.instance.scrollBy(100);
+            list.current.instance().scrollBy(100);
         };
         return (
             <List ...

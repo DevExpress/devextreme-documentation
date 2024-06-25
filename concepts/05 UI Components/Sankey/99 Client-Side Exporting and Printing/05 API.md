@@ -75,7 +75,7 @@ To export the UI component using the API, call the [exportTo(fileName, format)](
             )
         }
         get sankey() {
-            return this.sankeyRef.current.instance;
+            return this.sankeyRef.current.instance();
         }
         exportSankey () {
             return this.sankey.exportTo("exported_sankey", "PDF");
@@ -193,10 +193,10 @@ You can also export several UI components simultaneously using their SVG markup.
             )
         }
         get sankey1() {
-            return this.sankey1Ref.current.instance;
+            return this.sankey1Ref.current.instance();
         }
         get sankey2() {
-            return this.sankey2Ref.current.instance;
+            return this.sankey2Ref.current.instance();
         }
         exportSeveralSankeys () {
             const sankeyMarkup = getMarkup([this.sankey1, this.sankey2]);

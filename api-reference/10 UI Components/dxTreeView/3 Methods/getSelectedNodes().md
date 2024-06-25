@@ -120,7 +120,7 @@ Selected nodes.
         }
 
         get treeView() {
-            return this.treeViewRef.current.instance;
+            return this.treeViewRef.current.instance();
         }
 
         render() {

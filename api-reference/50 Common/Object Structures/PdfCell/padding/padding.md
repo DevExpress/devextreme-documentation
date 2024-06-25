@@ -179,7 +179,7 @@ Uses the measure units which are specified in the constructor of the [jsPDFDocum
 
         function exportGrid() {
             const doc = new jsPDF();
-            const dataGrid = dataGridRef.current.instance;
+            const dataGrid = dataGridRef.current.instance();
 
             exportDataGridToPdf({
                 jsPDFDocument: doc,

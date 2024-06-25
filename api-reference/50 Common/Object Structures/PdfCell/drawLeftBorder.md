@@ -177,7 +177,7 @@ Specifies whether to show cell's left border.
 
         function exportGrid() {
             const doc = new jsPDF();
-            const dataGrid = dataGridRef.current.instance;
+            const dataGrid = dataGridRef.current.instance();
 
             exportDataGridToPdf({
                 jsPDFDocument: doc,

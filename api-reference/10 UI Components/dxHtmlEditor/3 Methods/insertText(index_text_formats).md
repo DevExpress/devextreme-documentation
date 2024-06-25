@@ -107,7 +107,7 @@ This object should have the following structure:
         
         const insertTextAtTheBeginning = () => {
             // Inserts bold, green text at the beginning of the content
-            htmlEditor.current.instance.insertText(0, "I will be the first", { 
+            htmlEditor.current.instance().insertText(0, "I will be the first", { 
                 bold: true, 
                 color: "green" 
             });

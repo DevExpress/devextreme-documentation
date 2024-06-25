@@ -70,7 +70,7 @@ Call the [pageCount()](/api-reference/10%20UI%20Components/dxTreeList/3%20Method
             this.treeListRef = React.createRef();
 
             this.getTotalPageCount = () => {
-                return this.treeListRef.current.instance.pageCount();
+                return this.treeListRef.current.instance().pageCount();
             }
         }
 
@@ -202,7 +202,7 @@ The TreeList also provides the [pageIndex(newIndex)](/api-reference/10%20UI%20Co
         }
 
         goToLastPage() {
-            const pageCount = this.treeListRef.current.instance.pageCount();
+            const pageCount = this.treeListRef.current.instance().pageCount();
             this.setState({
                 pageIndex: pageCount - 1
             });

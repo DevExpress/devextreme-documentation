@@ -205,7 +205,7 @@ You can ungroup data by all columns at once using the [clearGrouping()](/api-ref
     export default function App() {
         const dataGrid = useRef(null);
         const clearGrouping = () => {
-            dataGrid.current.instance.clearGrouping();
+            dataGrid.current.instance().clearGrouping();
         };
 
         return (

@@ -80,7 +80,7 @@ The [clearFilter(filterName)](/api-reference/10%20UI%20Components/GridBase/3%20M
         const gridRef = useRef(null);
 
         const clearSearchPanel = useCallback(() => {
-            const dataGridInstance = gridRef.current.instance;
+            const dataGridInstance = gridRef.current.instance();
             dataGridInstance.clearFilter("search");
         }, []);
 

@@ -103,7 +103,7 @@ The **expandTask** method expands a task's parent tasks and the task itself.
         }
 
         get gantt() {
-            return this.ganttRef.current.instance;
+            return this.ganttRef.current.instance();
         }
 
         render() {

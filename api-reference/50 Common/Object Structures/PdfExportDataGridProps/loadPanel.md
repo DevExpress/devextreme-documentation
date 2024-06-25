@@ -185,7 +185,7 @@ The example below calls the [exportDataGrid(options)](/api-reference/50%20Common
 
         function exportGrid() {
             const doc = new jsPDF();
-            const dataGrid = dataGridRef.current.instance;
+            const dataGrid = dataGridRef.current.instance();
 
             exportDataGridToPdf({
                 jsPDFDocument: doc,

@@ -70,7 +70,7 @@ Gets all series of the Chart.
                 );
             }
             get chart() {
-                return this.chartRef.current.instance;
+                return this.chartRef.current.instance();
             }
             getAllSeries () {
                 return this.chart.getAllSeries();
@@ -152,7 +152,7 @@ Gets a series by its [name](/api-reference/10%20UI%20Components/dxChart/5%20Seri
                 );
             }
             get chart() {
-                return this.chartRef.current.instance;
+                return this.chartRef.current.instance();
             }
             getSeriesByName (seriesName) {
                 return this.chart.getSeriesByName(seriesName);
@@ -233,7 +233,7 @@ Gets a series by its index in the [series](/api-reference/10%20UI%20Components/d
                 );
             }
             get chart() {
-                return this.chartRef.current.instance;
+                return this.chartRef.current.instance();
             }
             getSeriesByPos(seriesIndex) {
                 return this.chart.getSeriesByPos(seriesIndex);

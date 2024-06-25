@@ -92,7 +92,7 @@
     export default function App() {
         const {widgetName} = useRef(null);
         const getDataSource = () => {
-            return {widgetName}.current.instance.getDataSource();
+            return {widgetName}.current.instance().getDataSource();
         }
 
         return (

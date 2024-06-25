@@ -89,11 +89,11 @@ You can delete a list item by its index. Pass the index to the [deleteItem(itemI
     export default function App() {
         const list = useRef(null);
         const deleteItem = (index) => {
-            list.current.instance.deleteItem(index);
+            list.current.instance().deleteItem(index);
         };
         const deleteItemFromGroup = (itemIndex, groupIndex) => {
             // Delete an item with `itemIndex` from a group with `groupIndex`
-            list.current.instance.deleteItem({ group: groupIndex, item: itemIndex });
+            list.current.instance().deleteItem({ group: groupIndex, item: itemIndex });
         };
         return (
             <List ...

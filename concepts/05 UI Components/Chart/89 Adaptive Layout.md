@@ -164,7 +164,7 @@ The layout does not automatically adapt to changes made in the UI component's co
         }
 
         renderChart () {
-            this.chartRef.current.instance.render();
+            this.chartRef.current.instance().render();
         }
     }
 

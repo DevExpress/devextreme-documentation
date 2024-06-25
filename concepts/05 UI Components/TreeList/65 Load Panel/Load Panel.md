@@ -173,9 +173,9 @@ You can also control the load panel programmatically using the [beginCustomLoadi
     export default function App() {
         const treeList = useRef(null);
         const performLongOperation = useCallback(() => {
-            treeList.current.instance.beginCustomLoading();
+            treeList.current.instance().beginCustomLoading();
             // ...
-            treeList.current.instance.endCustomLoading();
+            treeList.current.instance().endCustomLoading();
         }, []);
 
         return (

@@ -99,7 +99,7 @@ Pass **null** to remove all formats.
         const htmlEditor = useRef(null);
         
         const applyLineFormats = () => {
-            htmlEditor.current.instance.formatLine(0, 1, { "align": "right", "list": "ordered" });
+            htmlEditor.current.instance().formatLine(0, 1, { "align": "right", "list": "ordered" });
         };
 
         return (

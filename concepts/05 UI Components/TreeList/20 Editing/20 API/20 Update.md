@@ -110,7 +110,7 @@ The [cellValue (rowIndex, visibleColumnIndex, value)](/api-reference/10%20UI%20C
         }
 
         get treeList() {
-            return this.treeListRef.current.instance;
+            return this.treeListRef.current.instance();
         }
 
         updateCell() {
@@ -273,7 +273,7 @@ Call the [hasEditData()](/api-reference/10%20UI%20Components/GridBase/3%20Method
         }
 
         get treeList() {
-            return this.treeListRef.current.instance;
+            return this.treeListRef.current.instance();
         }
 
         saveChanges() {

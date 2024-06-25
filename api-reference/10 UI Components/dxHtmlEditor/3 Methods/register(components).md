@@ -93,7 +93,7 @@ where `path1` is *formats/[formatName]* for formats or *modules/[moduleName]* fo
         }
 
         get htmlEditor() {
-            return this.htmlEditorRef.current.instance;
+            return this.htmlEditorRef.current.instance();
         }
 
         render() {

@@ -83,7 +83,7 @@ The [clearFilter(filterName)](/api-reference/10%20UI%20Components/GridBase/3%20M
             this.gridRef = React.createRef();                  
         }
         get treeList() {
-            return this.gridRef.current.instance;
+            return this.gridRef.current.instance();
         }
         
         render() {

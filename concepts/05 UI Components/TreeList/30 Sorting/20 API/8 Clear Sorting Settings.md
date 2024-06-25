@@ -93,7 +93,7 @@ You can clear sorting settings for all columns by calling the [clearSorting()](/
         }
 
         get treeList() {
-            return this.treeListRef.current.instance;
+            return this.treeListRef.current.instance();
         }
 
         render() {

@@ -125,8 +125,8 @@ The theme name passed as a parameter should be the value of the **data-theme** a
 
         const changeTheme = React.useCallback(() => {
             themes.ready(() => {
-                dataGrid.current.instance.repaint();
-                button.current.instance.repaint();
+                dataGrid.current.instance().repaint();
+                button.current.instance().repaint();
             });
             themes.current('generic.light');
             // themes.current('generic.dark');

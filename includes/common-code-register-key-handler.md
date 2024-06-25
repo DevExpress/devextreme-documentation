@@ -102,7 +102,7 @@ Use the [registerKeyHandler(key, handler)](/api-reference/10%20UI%20Widgets/Widg
         }
 
         get {widgetName}() {
-            return this.{widgetName}Ref.current.instance;
+            return this.{widgetName}Ref.current.instance();
         }
 
         componentDidMount() {

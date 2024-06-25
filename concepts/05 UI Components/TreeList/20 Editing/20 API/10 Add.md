@@ -71,7 +71,7 @@ Use the [addRow()](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/ad
         }
 
         addNewRow() {
-            this.treeListRef.current.instance.addRow();
+            this.treeListRef.current.instance().addRow();
         }
 
         render() {

@@ -148,7 +148,7 @@ In the following code, the `bold` format is associated with the `<b>` tag instea
         }
 
         get htmlEditor() {
-            return this.htmlEditorRef.current.instance;
+            return this.htmlEditorRef.current.instance();
         }
 
         render() {

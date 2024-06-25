@@ -207,7 +207,7 @@ You can call this method at any point in your application. In this example, this
         };
 
         const exportButtonClick = (e) => {
-            const gantt = ganttRef.current.instance;
+            const gantt = ganttRef.current.instance();
             exportGanttToPdf(
                 {
                     component: gantt,

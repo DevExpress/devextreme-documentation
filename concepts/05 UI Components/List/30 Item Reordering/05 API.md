@@ -108,12 +108,12 @@ Pass the index to the [reorderItem(itemIndex, toItemIndex)](/api-reference/10%20
         const list = useRef(null);
         const reorderItems = (index1, index2) => {
             // Place an item with `index1` after an item with `index2` 
-            list.current.instance.reorderItem(index1, index2);
+            list.current.instance().reorderItem(index1, index2);
         };
         const reorderItemsInGroups = (groupIndex1, itemIndex1, groupIndex2, itemIndex2) => {
             // Take an item with index `itemIndex1` from a group with `groupIndex1`
             // and place it to a group with `groupIndex2` after an item with `itemIndex2`
-            list.current.instance.reorderItem(
+            list.current.instance().reorderItem(
                 { group: groupIndex1, item: itemIndex1 },
                 { group: groupIndex2, item: itemIndex2 }
             );

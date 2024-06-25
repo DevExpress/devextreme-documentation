@@ -229,7 +229,7 @@ In the following example, the [onClick](/api-reference/10%20UI%20Components/dxBu
         };
 
         const exportButtonClick = (e) => {
-            const gantt = ganttRef.current.instance;
+            const gantt = ganttRef.current.instance();
             exportGanttToPdf(
                 {
                     component: gantt,

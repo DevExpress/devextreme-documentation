@@ -116,10 +116,10 @@ The DataGrid provides the following API for expanding and collapsing groups:
         export default function App() {
             const dataGrid = useRef(null);
             const collapseAllGroups = () => {
-                dataGrid.current.instance.collapseAll();
+                dataGrid.current.instance().collapseAll();
             };
             const expandAllGroups = () => {
-                dataGrid.current.instance.expandAll();
+                dataGrid.current.instance().expandAll();
             };
             return (
                 <DataGrid ...
@@ -251,10 +251,10 @@ The DataGrid provides the following API for expanding and collapsing groups:
         export default function App() {
             const dataGrid = useRef(null);
             const collapseAllGroups = () => {
-                dataGrid.current.instance.collapseAll();
+                dataGrid.current.instance().collapseAll();
             };
             const expandAllGroups = () => {
-                dataGrid.current.instance.expandAll();
+                dataGrid.current.instance().expandAll();
             };
             return (
                 <DataGrid ...
@@ -370,10 +370,10 @@ The DataGrid provides the following API for expanding and collapsing groups:
         export default function App() {
             const dataGrid = useRef(null);
             const toggleGroup = (groupKey) => {
-                if (dataGrid.current.instance.isRowExpanded(groupKey)) {
-                    dataGrid.current.instance.collapseRow(groupKey);
+                if (dataGrid.current.instance().isRowExpanded(groupKey)) {
+                    dataGrid.current.instance().collapseRow(groupKey);
                 } else {
-                    dataGrid.current.instance.expandRow(groupKey);
+                    dataGrid.current.instance().expandRow(groupKey);
                 }
             };
             return (

@@ -95,7 +95,7 @@ Call the [getNodes()](/api-reference/10%20UI%20Components/dxTreeView/3%20Methods
         }
 
         get treeView() {
-            return this.treeViewRef.current.instance;
+            return this.treeViewRef.current.instance();
         }    
     }
 

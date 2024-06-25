@@ -152,7 +152,7 @@ Returns only leaves' data objects.
         }
 
         get treeList() {
-            return this.treeListRef.current.instance;
+            return this.treeListRef.current.instance();
         }
 
         render() {

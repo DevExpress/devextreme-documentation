@@ -103,7 +103,7 @@ The **expandAllToLevel** method first collapses all expanded tasks and then expa
         }
 
         get gantt() {
-            return this.ganttRef.current.instance;
+            return this.ganttRef.current.instance();
         }
 
         render() {

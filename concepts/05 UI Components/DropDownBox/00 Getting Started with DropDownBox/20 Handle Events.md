@@ -104,7 +104,7 @@ You can allow users to type in the DropDownBox text field to add more values to 
         const addItem = useCallback(() => {
             setDataSource([...dataSource, selectedFruit]);
             setSelectedFruit('');
-            listRef.current.instance.reload();
+            listRef.current.instance().reload();
         }, [dataSource, selectedFruit]);
         return (
             <DropDownBox ...

@@ -215,7 +215,7 @@ Call the [clearSelection()](/api-reference/10%20UI%20Components/GridBase/3%20Met
         }
 
         deselectVisibleRows() {
-            this.dataGridRef.current.instance.deselectAll();
+            this.dataGridRef.current.instance().deselectAll();
         }
 
         handleOptionChange(e) {

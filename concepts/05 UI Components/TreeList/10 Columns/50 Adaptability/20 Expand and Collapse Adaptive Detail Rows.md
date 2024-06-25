@@ -83,8 +83,8 @@ You can call the [expandAdaptiveDetailRow(key)](/api-reference/10%20UI%20Compone
     export default function App() {
         const treeList = useRef(null);
         const expandAdaptiveDetailRow = (key) => {
-            if (!treeList.current.instance.isAdaptiveDetailRowExpanded(key)) {
-                treeList.current.instance.expandAdaptiveDetailRow(key);
+            if (!treeList.current.instance().isAdaptiveDetailRowExpanded(key)) {
+                treeList.current.instance().expandAdaptiveDetailRow(key);
             }
         };
 

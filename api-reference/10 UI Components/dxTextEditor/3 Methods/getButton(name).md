@@ -106,7 +106,7 @@ Use the returned button instance to call the [Button UI component's methods](/ap
         }
 
         get {widgetName}() {
-            return this.{widgetName}Ref.current.instance;
+            return this.{widgetName}Ref.current.instance();
         }
 
         render() {

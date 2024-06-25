@@ -98,8 +98,8 @@ Call [saveEditData()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/s
     export default function App() {
         const {widgetName} = useRef(null);
         const updateCell = (rowIndex, dataField, value) => {
-            {widgetName}.current.instance.cellValue(rowIndex, dataField, value);
-            {widgetName}.current.instance.saveEditData();
+            {widgetName}.current.instance().cellValue(rowIndex, dataField, value);
+            {widgetName}.current.instance().saveEditData();
         };
         return (
             <{WidgetName} ...

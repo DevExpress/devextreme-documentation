@@ -122,7 +122,7 @@ This method sets the [isDirty](/api-reference/10%20UI%20Components/dxForm/1%20Co
         const resetButtonOptions = {
             // ...
             onClick: () => {
-                this.formRef.current.instance.reset({'name': 'John Smith', 'email': 'johnsmith@example.com'});
+                this.formRef.current.instance().reset({'name': 'John Smith', 'email': 'johnsmith@example.com'});
             },
         };
 

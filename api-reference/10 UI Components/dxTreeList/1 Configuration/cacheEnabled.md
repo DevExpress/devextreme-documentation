@@ -101,7 +101,7 @@ To update data in cache, call the [refresh()](/api-reference/10%20UI%20Component
         }
 
         get {widgetName}() {
-            return this.{widgetName}Ref.current.instance;
+            return this.{widgetName}Ref.current.instance();
         }
 
         render() {

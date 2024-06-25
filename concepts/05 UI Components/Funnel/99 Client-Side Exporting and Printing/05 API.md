@@ -75,7 +75,7 @@ To export the Funnel using the API, call the [exportTo(fileName, format)](/api-r
             );
         }
         get funnel() {
-            return this.funnelRef.current.instance;
+            return this.funnelRef.current.instance();
         }
         exportFunnel () {
             return this.funnel.exportTo('Exported Funnel', 'PDF');
@@ -193,10 +193,10 @@ You can also export several UI components at once using their SVG markup. Gather
             );
         }
         get funnel1() {
-            return this.funnel1Ref.current.instance;
+            return this.funnel1Ref.current.instance();
         }
         get funnel2() {
-            return this.funnel2Ref.current.instance;
+            return this.funnel2Ref.current.instance();
         }
         exportSeveralFunnels () {
             const funnelMarkup = getMarkup([this.funnel1, this.funnel2]);

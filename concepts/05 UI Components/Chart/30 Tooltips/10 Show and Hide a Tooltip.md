@@ -189,7 +189,7 @@ You can also hide the tooltip regardless of the point to which it belongs. To do
             );
         }
         get chart() {
-            return this.chartRef.current.instance;
+            return this.chartRef.current.instance();
         }
         hideTooltip () {
             this.chart.hideTooltip();

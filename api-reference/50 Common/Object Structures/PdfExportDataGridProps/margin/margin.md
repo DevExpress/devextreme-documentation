@@ -166,7 +166,7 @@ Uses the measure units that are specified in the constructor of the [jsPDFDocume
 
         function exportGrid() {
             const doc = new jsPDF();
-            const dataGrid = dataGridRef.current.instance;
+            const dataGrid = dataGridRef.current.instance();
 
             exportDataGridToPdf({
                 margin: { top: 20, right: 20, bottom: 20, left: 20 },

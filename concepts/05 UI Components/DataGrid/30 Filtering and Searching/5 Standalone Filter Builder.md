@@ -301,8 +301,8 @@ Then, add a button that updates a filter of the DataGrid's data source according
         const fbRef = useRef(null);
 
         const buttonClick = useCallback(() => {
-            const dataGridInstance = gridRef.current.instance;
-            const filterBuilderInstance = fbRef.current.instance;
+            const dataGridInstance = gridRef.current.instance();
+            const filterBuilderInstance = fbRef.current.instance();
             dataGridInstance.filter(filterBuilderInstance.getFilterExpression());
         }, []);
 

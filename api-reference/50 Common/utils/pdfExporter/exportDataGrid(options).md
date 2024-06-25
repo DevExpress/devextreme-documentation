@@ -190,7 +190,7 @@ In the following example, the [onClick](/api-reference/10%20UI%20Components/dxBu
 
         function exportGrid() {
             const doc = new jsPDF();
-            const dataGrid = dataGridRef.current.instance;
+            const dataGrid = dataGridRef.current.instance();
 
             exportDataGridToPdf({
                 jsPDFDocument: doc,

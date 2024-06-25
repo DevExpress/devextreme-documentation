@@ -215,7 +215,7 @@ The [deselectAll()](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/d
         }
 
         deselectVisibleRows() {
-            this.treeListRef.current.instance.deselectAll();
+            this.treeListRef.current.instance().deselectAll();
         }
 
         handleOptionChange(e) {

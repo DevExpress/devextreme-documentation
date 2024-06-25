@@ -42,5 +42,5 @@ The example below illustrates how to create an End-to-End test for the DataGrid'
         //give time to render
         jest.advanceTimersByTime(200);
 
-        expect(dataGridRef.current.instance.pageIndex()).toBe(1);
+        expect(dataGridRef.current.instance().pageIndex()).toBe(1);
     });

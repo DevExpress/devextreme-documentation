@@ -68,7 +68,7 @@ Before accessing a series point, gain access to its series by calling the [getAl
             );
         }
         get chart() {
-            return this.chartRef.current.instance;
+            return this.chartRef.current.instance();
         }
         getSeries () {
             return this.chart.getAllSeries()[0];
@@ -157,7 +157,7 @@ Gets all the series points.
                 );
             }
             get chart() {
-                return this.chartRef.current.instance;
+                return this.chartRef.current.instance();
             }
             getSeries () {
                 return this.chart.getAllSeries()[0];
@@ -246,7 +246,7 @@ Gets those series points that have a specific argument.
                 );
             }
             get chart() {
-                return this.chartRef.current.instance;
+                return this.chartRef.current.instance();
             }
             getSeries () {
                 return this.chart.getAllSeries()[0];
@@ -335,7 +335,7 @@ Gets a point using its index. The index is zero-based.
                 );
             }
             get chart() {
-                return this.chartRef.current.instance;
+                return this.chartRef.current.instance();
             }
             getSeries () {
                 return this.chart.getAllSeries()[0];
@@ -424,7 +424,7 @@ Gets only [visible](/api-reference/10%20UI%20Components/dxPieChart/7%20Chart%20E
                 );
             }
             get chart() {
-                return this.chartRef.current.instance;
+                return this.chartRef.current.instance();
             }
             getSeries () {
                 return this.chart.getAllSeries()[0];

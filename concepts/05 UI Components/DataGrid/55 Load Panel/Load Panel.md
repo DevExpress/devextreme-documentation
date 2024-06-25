@@ -173,9 +173,9 @@ You can also control the load panel programmatically using the [beginCustomLoadi
     export default function App() {
         const dataGrid = useRef(null);
         const performLongOperation = useCallback(() => {
-            dataGrid.current.instance.beginCustomLoading();
+            dataGrid.current.instance().beginCustomLoading();
             // ...
-            dataGrid.current.instance.endCustomLoading();
+            dataGrid.current.instance().endCustomLoading();
         }, []);
 
         return (

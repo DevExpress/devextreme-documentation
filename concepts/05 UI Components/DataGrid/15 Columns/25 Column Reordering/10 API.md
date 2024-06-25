@@ -175,7 +175,7 @@ The **visibleIndex** property can also be changed at runtime to reorder columns 
         }
 
         get dataGrid() {
-            return this.dataGridRef.current.instance;
+            return this.dataGridRef.current.instance();
         }
 
         render() {

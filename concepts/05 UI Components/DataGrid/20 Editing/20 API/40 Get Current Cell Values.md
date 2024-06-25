@@ -141,7 +141,7 @@ The **cellValue(rowIndex, dataField)** method requires a row index. Use the [get
         }
 
         get dataGrid() {
-            return this.dataGridRef.current.instance;
+            return this.dataGridRef.current.instance();
         }
 
         getCellValue() {

@@ -83,8 +83,8 @@ You can call the [expandAdaptiveDetailRow(key)](/api-reference/10%20UI%20Compone
     export default function App() {
         const dataGrid = useRef(null);
         const expandAdaptiveDetailRow = (key) => {
-            if (!dataGrid.current.instance.isAdaptiveDetailRowExpanded(key)) {
-                dataGrid.current.instance.expandAdaptiveDetailRow(key);
+            if (!dataGrid.current.instance().isAdaptiveDetailRowExpanded(key)) {
+                dataGrid.current.instance().expandAdaptiveDetailRow(key);
             }
         };
 

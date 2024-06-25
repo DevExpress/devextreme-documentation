@@ -85,7 +85,7 @@ To export the PieChart using the API, call the [exportTo(fileName, format)](/api
         }
 
         get pieChart() {
-            return this.pieChartRef.current.instance;
+            return this.pieChartRef.current.instance();
         }
 
         exportChart() {
@@ -215,10 +215,10 @@ You can also export several UI components at once using their SVG markup. Gather
         }
 
         get pieChart1() {
-            return this.pieChart1Ref.current.instance;
+            return this.pieChart1Ref.current.instance();
         }
         get pieChart2() {
-            return this.pieChart2Ref.current.instance;
+            return this.pieChart2Ref.current.instance();
         }
 
         exportSeveralCharts() {

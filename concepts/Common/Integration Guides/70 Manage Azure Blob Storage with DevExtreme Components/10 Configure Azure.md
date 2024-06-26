@@ -6,7 +6,7 @@ You need a Microsoft Account to set up Microsoft Azure. At the time of publicati
 1. Log into the [Azure control panel](https://portal.azure.com/), and open the "Create a new resource" page.
 2. Navigate to the "Storage" category and select the "Storage account" option.
 3. Follow the instructions to create a new Storage account.
-    * Pick an all-lowecase Storage account name.
+    * Specify an all-lowercase Storage account name.
     * Select a convenient geographic location for your primary storage.
     * Azure Blob Storage offers two performance tiers: Standard and Premium. Standard is sufficient for most use cases, including the cases described in this article.
     * Select a [redundancy policy](https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy) for your Azure storage. Azure can store copies of your data across multiple servers within the same data center, or different data centers in the same region or two different regions. You cannot manually select the secondary storage region — for maximum efficiency, the system automatically determines its location based on your primary region.

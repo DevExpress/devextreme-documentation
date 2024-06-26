@@ -58,4 +58,4 @@ If you ever need to abort the upload midway, you can use the abortFileUpload met
       return this.makeRequest('abortUpload', params, requestOptions);
     }
 
-Pass this function to the `onUploadAborted` event of the `FileUploader` component, or use it to construct a custom filesystem provider for the `FileManager`.
+Pass this function to the `onUploadAborted` event of the `FileUploader` component, or use it to construct a custom file system provider for the `FileManager`.

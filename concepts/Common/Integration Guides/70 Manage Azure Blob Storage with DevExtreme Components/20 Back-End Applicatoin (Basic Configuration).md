@@ -5,7 +5,7 @@ All three examples in this article require a combination of a server-side applic
 * The [devextreme-file-manager-azure-server-side-binding](https://github.com/DevExpress-Examples/devextreme-file-manager-azure-server-side-binding) repository stores the source code of the back-end application in the `Azure_Backend` directory.
 * The [devextreme-file-uploader-direct-upload-to-azure](https://github.com/DevExpress-Examples/devextreme-file-uploader-direct-upload-to-azure) repository stores the source code of the back-end application in the `AzureDirectUpload_Backend` directory.
 
-All three back-end applications in our repositories use the **.NET Framework** to communicate with Azure Blob Storage API. This article also uses .NET code examples to illustrate back-end development concepts.
+All three back-end applications in our repositories use the **.NET Framework** to communicate with the Azure Blob Storage API. This article also uses .NET code examples to illustrate back-end development concepts.
 
 ### Install the SDK
 

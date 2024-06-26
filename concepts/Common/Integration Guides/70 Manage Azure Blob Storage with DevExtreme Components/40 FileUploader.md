@@ -1,3 +1,8 @@
+Full code example: 
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-file-uploader-direct-upload-to-azure"
+}
 
 The `FileUploader` component can upload blobs to Azure Storage with the multi-part upload technique.
 
@@ -23,7 +28,7 @@ The `FileUploader` component can upload blobs to Azure Storage with the multi-pa
             }
         }
 
-2. **Chunk upload**. Upload chunks one by one. Azure assigns a unique block ID for each chunk. We receive this ID inside the `ETag` header.
+2. **Chunk upload**. Upload chunks one by one. Azure assigns a unique block ID for each chunk. The ID is stored inside the `ETag` header.
 3. **Completion**. To complete the upload, send all of the `ETag` headers you collected during step 2 to the server. This action stitches the chunks together.
 
     The following client-side function uploads chunks to Azure, saves the block ID, and reports block ID data back to Azure alongside the last chunk:

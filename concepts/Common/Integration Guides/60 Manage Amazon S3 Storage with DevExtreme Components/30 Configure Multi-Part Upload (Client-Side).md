@@ -1,6 +1,3 @@
-
-Main article: [Amazon AWS Documentation — Uploading and copying objects using multipart upload](https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html)
-
 S3 supports multiple file upload techniques: single-try uploads, multipart uploads, and resumable uploads. For the purposes of this tutorial, we'll implement object access methods to facilitate multipart uploads.
 
 Multipart uploads involve three steps:
@@ -45,3 +42,5 @@ The `FileUploader` component has the `chunkSize` property:
 If a file does not exceed the maximum chunk size, the upload consists of a single chunk.
 
 Review the repositories to inspect the code that facilitates multi-part uploads in their entirety.
+
+[note] Learn more: [Amazon AWS Documentation — Uploading and copying objects using multipart upload](https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html)

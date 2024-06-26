@@ -34,9 +34,9 @@ Azure Blob Storage does not expose a traditional file system to the end user. Wh
         <NextMarker />
     </EnumerationResults>
 
-The `FileManager` component cannot work with such data. We need to perform additional actions to generate a FileManager-compatible filesystem representation.
+The `FileManager` component cannot work with such data. You need to take additional steps to generate a FileManager-compatible file system representation.
 
-We can perform this task on the client or on the server.
+This task can take place on the client or on the server.
 
 ### Client-side Data Handling
 
@@ -184,7 +184,7 @@ The `FileSystem` endpoint will expose an instance of the `AzureBlobFileProvider`
         return result.GetClientCommandResult();
     }
 
-This approach greatly simplifies component setup. We can create a `RemoteFileSystemProvider` that uses the newly created filesystem endpoint:
+This technique greatly simplifies component setup. You can create a `RemoteFileSystemProvider` that uses the newly created file system endpoint:
 
     const provider = new DevExpress.fileManagement.RemoteFileSystemProvider({
     endpointUrl: `${baseUrl}file-manager-azure`,

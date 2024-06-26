@@ -30,7 +30,7 @@ If you need the same type for multiple components, you can also import this type
     const dataGridValidationRule: ValidationRule;
     const formValidationRule: ValidationRule;
 
-Some [templates](/Documentation/Guide/React_Components/Component_Configuration_Syntax/#Markup_Customization) include complex template data as an argument. To define types for such templates, import the `ComponentTypes` declaration and find the type that ends with `TemplateData`:
+[Templates](/Documentation/Guide/React_Components/Component_Configuration_Syntax/#Markup_Customization) can include complex template data as an argument. To define types for such templates, import the `ComponentTypes` declaration and find the type that ends with `TemplateData`:
 
     <!-- tab: App.tsx -->
     import DataGrid, { DataGridTypes } from 'devextreme-react/data-grid';

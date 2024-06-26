@@ -45,7 +45,7 @@ Make sure to adjust your client-side code accordingly:
         const fileName = keys.length > 1 ? 'archive.zip' : this.getFileNameFromKey(keys[0]);
         ...
 
-If you ever need to abort the upload mid-way, you can use the abortFileUpload method of the AWS API. This capability is critical for graceful handling of upload interruptions. Create a function that sends an upload termination request to the Amazon server:
+If you ever need to abort the upload midway, you can use the abortFileUpload method of the AWS API. This capability is critical for graceful handling of upload interruptions. Create a function that sends an upload termination request to the Amazon server:
 
     async abortFileUpload(fileData, uploadInfo, destinationDirectory) {
       const key = `${destinationDirectory?.key ?? ''}${fileData.name}`;

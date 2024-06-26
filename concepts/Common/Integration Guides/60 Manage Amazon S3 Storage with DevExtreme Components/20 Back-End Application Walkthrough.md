@@ -28,7 +28,7 @@ Example:
                 .AllowAnyMethod()
                 .AllowAnyHeader()
                 .SetIsOriginAllowed(_ => true)
-                .AllowCredentials() // required to expose Content-Disposition and ETag headers
+                .AllowCredentials() // Required to expose Content-Disposition and ETag headers
                 .WithExposedHeaders(new string[] { "Content-Disposition", "ETag"});
         }));
         var app = builder.Build();
@@ -37,7 +37,7 @@ Example:
 
 ### Signature Configuration
 
-**Main article**: [Amazon Documentation — Specifying the Signature Version in Request Authentication](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingAWSSDK.html#specify-signature-version)
+**Main article**: [Amazon AWS Documentation — Specifying the Signature Version in Request Authentication](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingAWSSDK.html#specify-signature-version)
 
 For security reasons, most AWS regions require you to enable the [UseSignatureVersion4](https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-authenticating-requests.html) configuration option. This option ensures that your application uses the fourth version of Amazon's authentication signature standard to sign S3 requests. Unlike signatures of earlier standards, version 4 signatures may include a payload, and allow your requests to possess multiple headers at once.
 
@@ -48,7 +48,7 @@ Add the following line to your `program.cs` file:
 
 ### Configure Object Access
 
-**Main article**: [Amazon Documentation — Uploading and Downloading Objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/uploading-downloading-objects.html)
+**Main article**: [Amazon AWS Documentation — Uploading, downloading, and working with objects in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/uploading-downloading-objects.html)
 
 S3 buckets don't expose a traditional file system to the end user. They store data in object-key pairs. To simulate a file heirarchy, you can use the key to store the file path, and the object to store file contents.
 
@@ -88,7 +88,7 @@ Examine the `AmazonS3Provider.cs` file to view the complete solution.
 
 ### Enable Pre-Signed URLs
 
-**Main article**: [Amazon Documentation — Working with Presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html)
+**Main article**: [Amazon AWS Documentation — Working with Presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html)
 
 If every request you issue includes an authentication signature, the performance of your application may suffer. To combat this issue, S3 can generate **presigned** URLs. You can request authorization for a file action, and receive a time-limited URL that **does not** require an authentication signature. The default validity period for the URL is **15 minutes**. Attempts to access an expired URL will fail. You can use the `Expired` property to modify the duration of the validity period.
 

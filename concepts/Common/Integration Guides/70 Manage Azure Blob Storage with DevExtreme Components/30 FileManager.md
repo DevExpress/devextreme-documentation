@@ -3,7 +3,7 @@ Full code examples:
 * [Client-side data handling](https://github.com/DevExpress-Examples/devextreme-file-manager-azure-client-side-binding)
 * [Server-side data handling](https://github.com/DevExpress-Examples/devextreme-file-manager-azure-server-side-binding)
 
-Azure Blob Storage doesn't expose a traditional file system to the end user. When you request to view the list of blob entries, Azure returns XML: 
+Azure Blob Storage does not expose a traditional file system to the end user. When you request to view the list of blob entries, Azure returns XML: 
 
     <?xml version="1.0" encoding="utf-8"?>
     <EnumerationResults ServiceEndpoint="https://aspxdemos.blob.core.windows.net/" ContainerName="testfilemanager">
@@ -40,7 +40,7 @@ We can perform this task on the client or on the server.
 
 ### Client-side Data Handling
 
-First, we'll create an API endpoint that handles FileManager requests and directs them to the Blob Storage:
+First, create an API endpoint that handles FileManager requests and directs them to the Blob Storage:
 
     [Route("api/file-manager-azure-access", Name = "FileManagerAzureAccessApi")]
     public object Process(string command, string blobName = "", string blobName2 = "")
@@ -68,7 +68,7 @@ First, we'll create an API endpoint that handles FileManager requests and direct
         }
     }
 
-The `ProcessCommand` object defines the intenral logic of the endpoint. It calls functions that interact with Blob entities:
+The `ProcessCommand` object defines the internal logic of the endpoint. It calls functions that interact with Blob entities:
 
     object GetBlobList() {
         if (Container.CanGenerateSasUri) {
@@ -139,7 +139,7 @@ It outputs FileManager-compatible JSON:
 
 ### Server-side Data Handling
 
-If we want to process Blob data on the server, we need to create a class that implements the interface requirements of the FileManager component:
+To process Blob data on the server, create a class that implements the interface requirements of the FileManager component...
 
     public class AzureBlobFileProvider : IFileSystemItemLoader, IFileSystemItemEditor, IFileUploader, IFileContentProvider {
         ...
@@ -149,7 +149,7 @@ If we want to process Blob data on the server, we need to create a class that im
     ...
     }
 
-And create function implementations for the Azure API:
+...and create function implementations for the Azure API:
 
     public IEnumerable<FileSystemItem> GetItems(FileSystemLoadItemOptions options) {
         var result = new List<FileSystemItem>();
@@ -166,7 +166,7 @@ And create function implementations for the Azure API:
             .ToList();
     }
 
-The `FileSystem` end point will expose an instance of the `AzureBlobFileProvider` class to our client-side application:
+The `FileSystem` endpoint will expose an instance of the `AzureBlobFileProvider` class to the client-side application:
 
     [Route("api/file-manager-azure", Name = "FileManagerAzureProviderApi")]
     public object FileSystem(FileSystemCommand command, string arguments) {
@@ -190,7 +190,7 @@ This approach greatly simplifies component setup. We can create a `RemoteFileSys
     endpointUrl: `${baseUrl}file-manager-azure`,
     });
 
-The `fileSystemProvider` component option simply needs to reference this provider:
+Note that the `fileSystemProvider` component option needs to reference the following provider:
 
     $('#file-manager').dxFileManager({
     name: 'fileManager',

@@ -192,6 +192,11 @@ This technique greatly simplifies component setup. You can create a `RemoteFileS
 
 Note that the `fileSystemProvider` component option needs to reference the following provider:
 
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
     $('#file-manager').dxFileManager({
     name: 'fileManager',
     fileSystemProvider: provider,
@@ -201,3 +206,49 @@ Note that the `fileSystemProvider` component option needs to reference the follo
     },
     allowedFileExtensions: [],
     });
+
+##### Angular 
+
+    <!-- tab: app.component.html -->
+    <dx-file-manager
+    id="file-manager"
+    [fileSystemProvider]="fileSystemProvider"
+    [allowedFileExtensions]="allowedFileExtensions"
+    >
+        <dxo-permissions 
+            [download]="true"
+            ...
+        >
+        </dxo-permissions>
+    </dx-file-manager>
+
+##### Vue 
+  
+    <!-- tab: App.vue -->
+    <DxFileManager
+      id="file-manager"
+      :file-system-provider="fileSystemProvider"
+      :allowed-file-extensions="allowedFileExtensions"
+    >
+        <DxPermissions>
+            :download="true"
+            ...
+        </DxPermissions>
+    </DxFileManager>
+
+##### React 
+
+    <!-- tab: App.js -->
+    <FileManager id="file-manager" fileSystemProvider={fileSystemProvider} allowedFileExtensions={allowedFileExtensions}>
+        <Permissions
+            download={true}
+            ...
+        >
+        </Permissions>
+    </FileManager>
+    
+---
+
+
+
+

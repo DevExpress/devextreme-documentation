@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-This article describes configuration properties of a tabbed form item.
+This article describes configuration properties of a tabbed form item. You can specify its options in the [tabPanelOptions](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/#tabPanelOptions) object.
 
 ---
 An item representing a tabbed container for other form items. 

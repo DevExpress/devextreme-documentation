@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the size of an item (pane) in pixels or as a percentage.
+Specifies the initial size of an item (pane) in pixels or as a percentage. The size changes after any layout alteration.
 
 ---
 ---

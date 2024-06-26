@@ -33,6 +33,44 @@ A template name or container.
 ---
 
 ---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(() => {
+        const customer = {
+            Email: "",
+            FullName: "",
+            BirthDate: null
+        };
+
+        const maxDate = new Date().setYear(new Date().getYear() - 21);
+
+        $('#form').dxForm({
+            formData: customer,
+            validationGroup: "customerData",
+            items: [{
+                label: {
+                    text: "Date of birth"
+                },
+                template: (data) => {
+                    return $("<div>").dxDateBox({
+                        value: customer.BirthDate,
+                    }).dxValidator({
+                        validationGroup: "customerData",
+                        validationRules: [{
+                            type: 'required',
+                            message: "Date of birth is required"
+                        }, {
+                            type: 'range',
+                            max: maxDate,
+                            message: 'You must be at least 21 years old'
+                        }]
+                    });
+                }
+            }],
+        });
+    });
+
 ##### Angular
 
 #include api-form-simpleitem-template

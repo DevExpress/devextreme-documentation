@@ -37,6 +37,9 @@ The task's size.
 #include common-template-return-value
 
 ---
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/TaskTemplate/"
+}
 
 ---
 ##### jQuery

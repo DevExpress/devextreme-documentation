@@ -10,6 +10,6 @@ uid: ui/file_uploader:UploadedEvent.request
 ---
 
 ##### Angular
-If you use [DxHttpModule](/Documentation/Guide/Angular_Components/Common_Features/Intercept_HTTP_Requests/), Angular restricts operations with XMLHttpRequest.
+If you use [DxHttpModule](/Documentation/Guide/Angular_Components/Common_Features/Intercept_HTTP_Requests/), Angular restricts access to the XMLHttpRequest object.
 
 ---

@@ -7,4 +7,9 @@ uid: ui/file_uploader:UploadErrorEvent.request
 <!-- Description goes here -->
 
 ---
-<!-- Description goes here -->
+---
+
+##### Angular
+If you use [DxHttpModule](/Documentation/Guide/Angular_Components/Common_Features/Intercept_HTTP_Requests/), Angular restricts access to the XMLHttpRequest object.
+
+---

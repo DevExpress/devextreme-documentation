@@ -10,6 +10,8 @@ HTTP request interception in DevExtreme components might be useful for the follo
 
 In Angular apps, you can use [HttpInterceptor](https://angular.io/api/common/http/HttpInterceptor) to intercept Ajax requests in DevExtreme components such as [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'), [FileUploader](/api-reference/10%20UI%20Components/dxFileUploader '/Documentation/ApiReference/UI_Components/dxFileUploader/'), and [Map](/api-reference/10%20UI%20Components/dxMap '/Documentation/ApiReference/UI_Components/dxMap/'). This task requires that you import `DxHttpModule`.
 
+[note] If you use `DxHttpModule`, Angular restricts access to [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest). This means you cannot get the XHR object in functions such as ODataContext.[errorHandler](/Documentation/ApiReference/Data_Layer/ODataContext/Configuration/#errorHandler), FileManager.fileSystemProvider.[beforeAjaxSend](/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Remote/Configuration/#beforeAjaxSend), FileUploader.[onUploadStarted](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#onUploadStarted), etc.
+
 The following code snippet demonstrates how to intercept a request in DataSource:
 
 ---

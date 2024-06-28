@@ -1,6 +1,6 @@
 [important]
 
-DevExpress is not responsible for security issues you may encounter when you use DevExtreme code examples. Exercise caution as you run code from the article and the associated repositories. The security of sample DevExtreme applications depends on multiple factors outside of the developers' control, including the configuration of your development environment and third-party services.
+DevExpress is not responsible for the security issues you may encounter when you use DevExtreme code examples. Exercise caution as you run code from this article and the associated repositories. The security of sample DevExtreme applications depends on multiple factors outside of the developers' control, including the configuration of your development environment and third-party services.
 
 [/important]
 

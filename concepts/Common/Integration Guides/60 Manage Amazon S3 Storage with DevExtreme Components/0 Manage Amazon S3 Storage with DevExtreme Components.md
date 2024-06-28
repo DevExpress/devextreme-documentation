@@ -1,3 +1,9 @@
+[important]
+
+DevExpress is not responsible for security issues you may encounter when you use DevExtreme code examples. Exercise caution as you run code from the article and the associated repositories. The security of sample DevExtreme applications depends on multiple factors outside of the developers' control, including the configuration of your development environment and third-party services.
+
+[/important]
+
 Amazon's Simple Storage Service (S3) is an essential component of many web applications. It offers high-availability, and safe access to large databases and file archives. You can integrate an S3 storage into your DevExtreme application to streamline CRUD operations with user files.
 
 This article explains the key points you need to consider when you connect DevExtreme components to Amazon's S3 storage. We'll look at a back-end application that communicates with AWS, and two client-side applications — one with a `FileManager` component, and the other with a `FileUploader`.

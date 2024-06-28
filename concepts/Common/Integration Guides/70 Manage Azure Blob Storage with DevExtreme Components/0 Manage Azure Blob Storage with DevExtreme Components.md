@@ -1,3 +1,9 @@
+[important]
+
+DevExpress is not responsible for security issues you may encounter when you use DevExtreme code examples. Exercise caution as you run code from the article and the associated repositories. The security of sample DevExtreme applications depends on multiple factors outside of the developers' control, including the configuration of your development environment and third-party services.
+
+[/important]
+
 Microsoft Azure Blob Storage is a cloud service that offers unstructured data storage. Azure stores "blobs" (data objects) inside "containers" (virtual directories). Each Azure storage account can have multiple associated containers. The greatest benefit of Azure Blob Storage in comparison to its direct competitor — Amazon S3 — is its integration with the Microsoft ecosystem. You can use Blob Storage in your DevExtreme application to streamline CRUD operations with user files.
 
 This article explains the key points you need to consider when you connect DevExtreme components to Azure Blob Storage. We'll look at two ways to use the `FileManager` component — one with server-side binding and one with client-side binding. After that, we'll set up a `FileUploader` component.

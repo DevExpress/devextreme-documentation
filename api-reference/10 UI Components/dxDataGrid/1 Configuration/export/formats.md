@@ -88,7 +88,7 @@ Since the **formats** property accepts an array, you can specify multiple format
             if (e.format === 'xlsx') {
                 const workbook = new Workbook();
                 const worksheet = workbook.addWorksheet('Companies');
-                DevExpress.excelExporter.exportDataGrid({
+                exportDataGrid({
                     component: e.component,
                     worksheet,
                     autoFilterEnabled: true,
@@ -150,7 +150,7 @@ Since the **formats** property accepts an array, you can specify multiple format
                 if (e.format === 'xlsx') {
                     const workbook = new Workbook();
                     const worksheet = workbook.addWorksheet('Companies');
-                    DevExpress.excelExporter.exportDataGrid({
+                    exportDataGrid({
                         component: e.component,
                         worksheet,
                         autoFilterEnabled: true,
@@ -193,7 +193,7 @@ Since the **formats** property accepts an array, you can specify multiple format
             if (e.format === 'xlsx') {
                 const workbook = new Workbook();
                 const worksheet = workbook.addWorksheet('Companies');
-                DevExpress.excelExporter.exportDataGrid({
+                exportDataGrid({
                     component: e.component,
                     worksheet,
                     autoFilterEnabled: true,
@@ -290,7 +290,7 @@ The example below shows how to export DataGrid to CSV format.
         onExporting: function(e) {
             const workbook = new Workbook();
             const worksheet = workbook.addWorksheet('Employees');
-            DevExpress.excelExporter.exportDataGrid({
+            exportDataGrid({
                 component: e.component,
                 worksheet: worksheet
             }).then(function() {
@@ -361,7 +361,7 @@ The example below shows how to export DataGrid to CSV format.
             onExporting: function(e) {
                 const workbook = new Workbook();
                 const worksheet = workbook.addWorksheet('Employees');
-                DevExpress.excelExporter.exportDataGrid({
+                exportDataGrid({
                     component: e.component,
                     worksheet: worksheet
                 }).then(function() {
@@ -392,7 +392,7 @@ The example below shows how to export DataGrid to CSV format.
         const onExporting = React.useCallback((e) => {
             const workbook = new Workbook();
             const worksheet = workbook.addWorksheet('Employees');
-            DevExpress.excelExporter.exportDataGrid({
+            exportDataGrid({
                 component: e.component,
                 worksheet: worksheet
             }).then(function() {

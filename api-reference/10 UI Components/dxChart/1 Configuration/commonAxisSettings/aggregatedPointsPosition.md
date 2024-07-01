@@ -5,7 +5,7 @@ default: 'betweenTicks'
 ---
 ---
 ##### shortDescription
-Specifies the start position of the aggregated series points in the aggregation interval.
+Specifies the start position of the aggregated series points in the aggregation interval. Applies only to axes of continuous and logarithmic [types](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#type').
 
 ---
 

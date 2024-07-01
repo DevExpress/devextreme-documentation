@@ -11,5 +11,6 @@ $(function() {
         useMaskBehavior: true,
         openOnFieldClick: false,
         showClearButton: true,
+        opened: true,
     });
 });

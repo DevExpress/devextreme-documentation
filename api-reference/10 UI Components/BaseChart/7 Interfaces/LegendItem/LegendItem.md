@@ -4,6 +4,7 @@ module: common/charts
 export: LegendItem
 type: Object
 inherits: BaseLegendItem
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

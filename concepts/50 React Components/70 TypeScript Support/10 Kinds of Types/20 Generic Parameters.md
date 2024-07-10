@@ -1,4 +1,4 @@
-DevExtreme supports Generics for properties and methods that operate internal data. You can use Generics inside event handlers and to define instances of data-aware components like DataGrid:
+Some event objects are generic, particularly for data-aware components like Data-Grid:
 
     <!-- tab: App.tsx -->
     import { useRef } from 'react';

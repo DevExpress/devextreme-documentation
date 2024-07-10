@@ -1,0 +1,1 @@
+Event object fields are mostly prefixed with `readonly`. Fields without this modifier are writable and can affect the component. For example, the `cancel` field in cancelable events is writable.

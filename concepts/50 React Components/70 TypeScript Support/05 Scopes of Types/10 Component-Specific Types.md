@@ -1,3 +1,7 @@
+These types configure specific components. Each component has its own set.
+
+**Modular Projects**
+
 To get component-specific types, import the `ComponentTypes` declaration where `Component` is the component name:
 
     <!-- tab: App.tsx -->
@@ -10,25 +14,18 @@ To get component-specific types, import the `ComponentTypes` declaration where `
             <DateBox type={dateType} />
         );
     }
-    </script>
 
-If you need the same type for multiple components, you can also import this type from `common` submodule:
+    export default App;
 
-    <!-- tab: App.tsx -->
-    // In the sample below, ValidationRule is imported for each component:
+After importing, search through all types using `DateBoxTypes.` without extra imports.
 
-    import { DataGridTypes } from 'devextreme-react/data-grid';
-    import { FormTypes } from 'devextreme-react/form';
+**Non-Modular Projects**
 
-    const dataGridValidationRule: DataGridTypes.ValidationRule;
-    const formValidationRule: FormTypes.ValidationRule;
-    
-    // In the sample below, ValidationRule is imported from the common submodule:
+Find component types under the corresponding namespace:
 
-    import { ValidationRule } from 'devextreme-react/common';
+    const dateType: DevExpress.ui.dxDateBox.DateType = 'datetime';
 
-    const dataGridValidationRule: ValidationRule;
-    const formValidationRule: ValidationRule;
+**Templates**
 
 [Templates](/concepts/50%20React%20Components/40%20Component%20Configuration%20Syntax/55%20Markup%20Customization/0%20Markup%20Customization.md '/Documentation/Guide/React_Components/Component_Configuration_Syntax/#Markup_Customization') can include complex template data as an argument. To define types for such templates, import the `ComponentTypes` declaration and find the type that ends with `TemplateData`:
 

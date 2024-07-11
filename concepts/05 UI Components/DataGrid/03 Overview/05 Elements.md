@@ -1,4 +1,4 @@
-Below is a  element map. A click on an element navigates you to a topic devoted to this element.
+Below is an element map. A click on an element navigates to the topic devoted to this element.
 
 <p><img src="/images/DataGrid/datagrid-elements.png" style="margin:0px auto; display:block; width:1000px; height:470px;" alt="DataGrid elements" usemap="#datagrid-elements">
 

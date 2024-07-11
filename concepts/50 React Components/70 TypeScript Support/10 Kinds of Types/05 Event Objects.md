@@ -32,6 +32,8 @@ Reference to the component API.
 - `element`    
 Reference to the HTML element.
 
+<!-- ... -->
+
     export interface EventInfo<TComponent> {
         readonly component: TComponent;
         readonly element: DxElement;
@@ -47,6 +49,8 @@ Reference to the HTML element.
 
 - `event`    
 Native browser event with additional fields from `EventObject`.
+
+<!-- ... -->
 
     interface NativeEventInfo<TComponent, TNativeEvent = Event> {
         readonly component: TComponent;

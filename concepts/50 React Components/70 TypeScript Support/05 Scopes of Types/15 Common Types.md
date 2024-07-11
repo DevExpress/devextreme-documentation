@@ -31,4 +31,6 @@ Common types are located in the following namespaces:
 
 - DevExpress.common.grids
 
+<!-- ... -->
+
     const toolbarItemsLocation: DevExpress.common.ToolbarItemLocation;

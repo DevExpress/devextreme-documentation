@@ -1,8 +1,9 @@
 ---
 uid: viz/chart:Legend
-isType: 
+type: BaseChartLegend | Object
 module: viz/chart
 export: Legend
+inheritsType: viz/chart_components/base_chart:BaseChartLegend
 generateTypeLink: 
 ---
 ---

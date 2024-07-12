@@ -1,5 +1,5 @@
 ---
-id: Utils.query(array)
+id: Utils.query(array, queryOptions)
 module: data/query
 export: default
 ---
@@ -12,6 +12,9 @@ A **Query** instance.
 
 ##### param(array): Array<any>
 Data to be associated with the **Query**.
+
+##### param(queryOptions): Object
+Additional query properties.
 
 ---
 ---

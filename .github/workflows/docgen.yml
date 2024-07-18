@@ -24,11 +24,14 @@ jobs:
             repository: devexpress/devextreme
             ref: ${{ github.ref_name }}
 
+        - uses: pnpm/action-setup@v3
+          with:
+            version: 9
+            run_install: false
+
         - name: NPM - devextreme
           working-directory: devextreme
-          run: |
-            npm ci
-            npm i devextreme-internal-tools@$(node -p "require('./package-lock').dependencies['devextreme-internal-tools'].version")
+          run: pnpm install
 
         - name: NPM - devextreme-documentation
           working-directory: documentation
@@ -38,12 +41,7 @@ jobs:
         - name: Discover declarations
           working-directory: devextreme
           shell: bash
-          run: |
-            if [[ $(npm pkg get name) =~ "monorepo" ]]; then
-              npm run tools:discover-declarations
-            else    
-              npm run discover-declarations -- --artifacts ./artifacts/internal-tools            
-            fi
+          run: pnpm run tools:discover-declarations
 
         - name: Update topics
           working-directory: documentation

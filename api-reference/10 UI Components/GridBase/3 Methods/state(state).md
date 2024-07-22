@@ -6,7 +6,7 @@ id: GridBase.state(state)
 Sets the UI component state.
 
 ##### param(state): Object
-The UI component's state to be set. Pass **null** to restore the initial state.
+The UI component's state to be set. The `state` object will override the current state.
 
 ---
 After the state is set, the {WidgetName} reloads data to apply sorting, filtering, and other data processing settings.

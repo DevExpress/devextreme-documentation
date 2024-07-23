@@ -73,8 +73,8 @@ A template name or container.
             ></dxi-button>
         </dxi-column>
 
-        <div *dxTemplate="let data of 'buttonTemplate'">
-            <div class="dx-icon-email" style="display:inline-block"></div>
+        <div *dxTemplate="let data of 'buttonTemplate'" style="display:inline-block">
+            <div class="dx-icon-email"></div>
         </div>
     </dx-{widget-name}>
 

@@ -195,9 +195,16 @@ The DataGrid provides the following API for expanding and collapsing groups:
         <!-- tab: App.vue -->
         <template>
             <DxDataGrid ...
-                :ref="dataGridRefKey"> 
-                <DxGrouping 
-                    :auto-expand-all="false"
+                :ref="dataGridRefKey"
+            > 
+                <DxColumn 
+                    data-field="firstName"
+                    :group-index="0"
+                />
+                <DxColumn 
+                    data-field="lastName"
+                    :group-index="1"
+                    :auto-expand-group="false"
                 />
             </DxDataGrid>
         </template>
@@ -207,7 +214,7 @@ The DataGrid provides the following API for expanding and collapsing groups:
 
         import {
             DxDataGrid,
-            DxGrouping
+            DxColumn
         } from 'devextreme-vue/data-grid';
 
         const dataGridRefKey = 'my-data-grid';
@@ -223,11 +230,8 @@ The DataGrid provides the following API for expanding and collapsing groups:
                 };
             },
             methods: {
-                collapseAllGroups() {
-                    this.dataGrid.collapseAll();
-                },
-                expandAllGroups() {
-                    this.dataGrid.expandAll();
+                expandDataGroupedByLastName () {
+                    this.dataGrid.instance.expandAll(1);
                 }
             },
             computed: {
@@ -245,22 +249,26 @@ The DataGrid provides the following API for expanding and collapsing groups:
         import 'devextreme/dist/css/dx.light.css';
     
         import DataGrid, {
-            Grouping
+            Column
         } from 'devextreme-react/data-grid';
     
         export default function App() {
             const dataGrid = useRef(null);
-            const collapseAllGroups = () => {
-                dataGrid.current.instance.collapseAll();
-            };
-            const expandAllGroups = () => {
-                dataGrid.current.instance.expandAll();
+            const expandDataGroupedByLastName = () => {
+                dataGrid.current.instance.expandAll(1);
             };
             return (
                 <DataGrid ...
-                    ref={dataGrid}>
-                    <Grouping 
-                        autoExpandAll={false}
+                    ref={dataGrid}
+                >
+                    <Column 
+                        dataField="firstName"
+                        groupIndex={0}
+                    />
+                    <Column 
+                        dataField="lastName"
+                        groupIndex={1}
+                        autoExpandGroup={false}
                     />
                 </DataGrid>
             );

@@ -289,6 +289,21 @@
       "react": "_ui_calendar_ValueChangedEvent",
       "vue": "Dx_ui_calendar_ValueChangedEvent"
     },
+    "_ui_chat_DisposingEvent": {
+      "angular": "dxo-ui-chat--disposing-event",
+      "react": "_ui_chat_DisposingEvent",
+      "vue": "Dx_ui_chat_DisposingEvent"
+    },
+    "_ui_chat_MessageSendEvent": {
+      "angular": "dxo-ui-chat--message-send-event",
+      "react": "_ui_chat_MessageSendEvent",
+      "vue": "Dx_ui_chat_MessageSendEvent"
+    },
+    "_ui_chat_OptionChangedEvent": {
+      "angular": "dxo-ui-chat--option-changed-event",
+      "react": "_ui_chat_OptionChangedEvent",
+      "vue": "Dx_ui_chat_OptionChangedEvent"
+    },
     "_ui_check_box_ContentReadyEvent": {
       "angular": "dxo-ui-check-box--content-ready-event",
       "react": "_ui_check_box_ContentReadyEvent",
@@ -8898,6 +8913,43 @@
     },
     "dxChartSeriesTypes.StockSeries.selectionMode": {
       "vue": "selection-mode"
+    },
+    "dxChat": {
+      "angular": "dx-chat",
+      "react": "Chat",
+      "vue": "DxChat"
+    },
+    "dxChatOptions.accessKey": {
+      "vue": "access-key"
+    },
+    "dxChatOptions.activeStateEnabled": {
+      "vue": "active-state-enabled"
+    },
+    "dxChatOptions.focusStateEnabled": {
+      "vue": "focus-state-enabled"
+    },
+    "dxChatOptions.items": {
+      "angular": "dxi-item",
+      "react": "Item",
+      "vue": "DxItem"
+    },
+    "dxChatOptions.onContentReady": {
+      "vue": "@content-ready"
+    },
+    "dxChatOptions.onDisposing": {
+      "vue": "@disposing"
+    },
+    "dxChatOptions.onInitialized": {
+      "vue": "@initialized"
+    },
+    "dxChatOptions.onMessageSend": {
+      "vue": "@message-send"
+    },
+    "dxChatOptions.onOptionChanged": {
+      "vue": "@option-changed"
+    },
+    "dxChatOptions.tabIndex": {
+      "vue": "tab-index"
     },
     "dxCheckBox": {
       "angular": "dx-check-box",
@@ -20730,6 +20782,16 @@
     "mapLayerElement": {
       "vue": "map-layer-element"
     },
+    "message": {
+      "angular": "dxo-message",
+      "react": "Message",
+      "vue": "DxMessage"
+    },
+    "message.author": {
+      "angular": "dxo-author",
+      "react": "Author",
+      "vue": "DxAuthor"
+    },
     "nativeEventInfo": {
       "vue": "native-event-info"
     },
@@ -21123,6 +21185,14 @@
     },
     "uploadInfo.customData": {
       "vue": "custom-data"
+    },
+    "user": {
+      "angular": "dxo-user",
+      "react": "User",
+      "vue": "DxUser"
+    },
+    "user.avatarUrl": {
+      "vue": "avatar-url"
     },
     "userDefinedElement": {
       "vue": "user-defined-element"

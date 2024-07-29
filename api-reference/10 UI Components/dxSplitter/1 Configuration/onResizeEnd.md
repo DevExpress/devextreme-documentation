@@ -10,9 +10,6 @@ A function that is called when resizing ends.
 ##### param(e): ui/splitter:ResizeEndEvent
 Information about the event.
 
-##### field(e.cancel): Boolean
-Allows you to cancel the resize operation.
-
 ##### field(e.component): {WidgetName}
 The UI component's instance.
 

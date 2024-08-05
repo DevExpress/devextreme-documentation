@@ -90,7 +90,7 @@ Please review the following notes:
 
 - If you specify [validationRules](/api-reference/_hidden/GridBaseColumn/validationRules.md '{basewidgetpath}/Configuration/columns/#validationRules'), the **editCellTemplate** must contain a DevExtreme editor to which the {WidgetName} will apply these rules.
 
-- In [fixed columns](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnFixing '{basewidgetpath}/Configuration/columnFixing/'), the template is initialized and rendered twice for each cell.
+- If [a column is fixed](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnFixing '{basewidgetpath}/Configuration/columnFixing/') or it is hidden with [hidingPriority](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#hidingPriority), the template is initialized and rendered twice for each cell.
 
 [/note]
 

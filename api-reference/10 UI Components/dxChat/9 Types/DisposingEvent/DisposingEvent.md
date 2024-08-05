@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 references: dxChat.Options.onDisposing
 uid: ui/chat:DisposingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

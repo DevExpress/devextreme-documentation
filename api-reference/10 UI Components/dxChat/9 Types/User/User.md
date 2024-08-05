@@ -3,6 +3,7 @@ id: User
 module: ui/chat
 export: User
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

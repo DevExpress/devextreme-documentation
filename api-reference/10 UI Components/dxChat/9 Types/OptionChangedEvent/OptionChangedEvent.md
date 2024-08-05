@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 references: dxChat.Options.onOptionChanged
 uid: ui/chat:OptionChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

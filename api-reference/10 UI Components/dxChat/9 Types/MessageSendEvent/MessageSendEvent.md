@@ -5,6 +5,7 @@ type: Object
 inherits: Cancelable,NativeEventInfo,Message
 references: dxChat.Options.onMessageSend
 uid: ui/chat:MessageSendEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: InitializedEventInfo
 references: dxChat.Options.onInitialized
 uid: ui/chat:InitializedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

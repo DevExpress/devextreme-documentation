@@ -13,6 +13,7 @@
     "ui/button_group":                 "api-reference/10 UI Components/dxButtonGroup/9 Types",
     "ui/button":                       "api-reference/10 UI Components/dxButton/9 Types",
     "ui/calendar":                     "api-reference/10 UI Components/dxCalendar/9 Types",
+    "ui/chat":                         "api-reference/10 UI Components/dxChat/9 Types",
     "ui/check_box":                    "api-reference/10 UI Components/dxCheckBox/9 Types",
     "ui/color_box":                    "api-reference/10 UI Components/dxColorBox/9 Types",
     "ui/context_menu":                 "api-reference/10 UI Components/dxContextMenu/9 Types",

@@ -10,7 +10,7 @@ Log in to the [DevExpress Download Manager](https://www.devexpress.com/ClientCen
 
 ### Manual Configuration
 
-After you obtain the key from the DevExpress Download Manager, define that key as a constant in a separate file and use that constant in your application configuration. Below there are instructions on how to set up a license key based on whether your project is *modular* or *non-modular*. The difference is how new files are added to the project: either through `import` (`require`) statements or by directly referencing the file from a page using `<script>` tags.
+After you obtain the key from the DevExpress Download Manager, define that key as a constant in a separate file and use that constant in your application configuration. See the instructions below for information on how to set up a license key based on whether your project is *modular* or *non-modular*. The difference is how new files are added to the project: either through `import` (`require`) statements or by directly referencing the file from a page using `<script>` tags.
 
 ---
 ##### jQuery
@@ -27,7 +27,7 @@ To allow each developer to use their own license key, do not store this file in 
 
 This action also ensures that your team does not commit the key by accident.
 
-If your project includes sources via `<script>` tags (does not use bundlers), add a reference to the file that registers the license key: 
+If your project includes sources from `<script>` tags (which do not use bundlers), add a reference to the file that registers the license key: 
 
     <!-- tab: index.html --><script src="./dx.all.js" type="text/javascript"> </script> 
     <script src="./devextreme-license.js" type="text/javascript"></script>
@@ -84,7 +84,7 @@ To allow each developer to use their own license key, do not store this file in 
 
 This action also ensures that your team does not commit the key by accident.
 
-If your project includes sources via `<script>` tags (does not use bundlers), add a reference to the file that registers the license key: 
+If your project includes sources from `<script>` tags (which do not use bundlers), add a reference to the file that registers the license key:
 
     <!-- tab: index.html --><script src="./dx.all.js" type="text/javascript"> </script> 
     <script src="./devextreme-license.js" type="text/javascript"></script>
@@ -122,7 +122,7 @@ To allow each developer to use their own license key, do not store this file in 
 
 This action also ensures that your team does not commit the key by accident.
 
-If your project includes sources via `<script>` tags (does not use bundlers), add a reference to the file that registers the license key: 
+If your project includes sources from `<script>` tags (which do not use bundlers), add a reference to the file that registers the license key:
 
     <!-- tab: index.html --><script src="./dx.all.js" type="text/javascript"> </script> 
     <script src="./devextreme-license.js" type="text/javascript"></script>
@@ -160,7 +160,7 @@ To allow each developer to use their own license key, do not store this file in 
 
 This action also ensures that your team does not commit the key by accident.
 
-If your project includes sources via `<script>` tags (does not use bundlers), add a reference to the file that registers the license key: 
+If your project includes sources from `<script>` tags (which do not use bundlers), add a reference to the file that registers the license key:
 
     <!-- tab: index.html --><script src="./dx.all.js" type="text/javascript"> </script> 
     <script src="./devextreme-license.js" type="text/javascript"></script>

@@ -121,7 +121,7 @@ The TextArea raises three keyboard events: [keyDown](/api-reference/10%20UI%20Co
 
 ---
 
-[note] You can also use the [input](/Documentation/ApiReference/UI_Components/dxTextArea/Events/#input) event. This is not a strictly keyboard event, a mouse action can also change a TextArea input value.
+[note] You can also use the [input](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/input.md '/Documentation/ApiReference/UI_Components/dxTextArea/Events/#input') event. This is not a strictly keyboard event, a mouse action can also change a TextArea input value.
 
 ---
 

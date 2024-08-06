@@ -1,7 +1,7 @@
 ---
-id: User.id
-type: Number | String
-default: string
+id: dxChat.Options.user
+type: User
+default: { id: new Guid().toString() }
 ---
 ---
 ##### shortDescription

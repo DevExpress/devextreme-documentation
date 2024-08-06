@@ -8951,6 +8951,11 @@
     "dxChatOptions.tabIndex": {
       "vue": "tab-index"
     },
+    "dxChatOptions.user": {
+      "angular": "dxo-user",
+      "react": "User",
+      "vue": "DxUser"
+    },
     "dxCheckBox": {
       "angular": "dx-check-box",
       "react": "CheckBox",

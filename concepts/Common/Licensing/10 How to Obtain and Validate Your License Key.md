@@ -2,7 +2,7 @@
 
 ### Obtain Your License Key
 
-Log in to the [DevExpress Download Manager](https://www.devexpress.com/ClientCenter/DownloadManager/). Find your **DevExtreme Subscription** license in the product list (even if you have a Universal, DXperience, or ASP.NET/Blazor subscription, the key is under the **DevExtreme Subscription** entry). Expand the product entry to access available downloads and additional information. Follow on-screen instructions to copy your key.
+Log in to the [DevExpress Download Manager](https://www.devexpress.com/ClientCenter/DownloadManager/). Find your **DevExtreme Subscription** license in the product list. (Even if you have a Universal, DXperience, or ASP.NET/Blazor subscription, the key is under the **DevExtreme Subscription** line item.) Expand this line item to access available downloads and additional information. Follow the on-screen instructions to copy your key.
 
 ![DevExtreme Download Manager](/images/Common/licensing-key@2x.png)
 

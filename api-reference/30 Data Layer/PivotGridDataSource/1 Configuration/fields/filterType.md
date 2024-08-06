@@ -16,7 +16,7 @@ Values in the [header filter](/concepts/05%20UI%20Components/PivotGrid/080%20Fil
 - **exclude**       
 All values in the header filter are selected initially. Users changes the filter by clearing the selection of certain values.
 
-This property changes when the user clicks the **Select All** checkbox in the [header filter](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/headerFilter/) (only if header filter displays plain data):
+This property changes when the user clicks the **Select All** checkbox in the [header filter](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/headerFilter '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/headerFilter/') (only if header filter displays plain data):
 
 <table class="dx-table">
     <tr>

@@ -8,7 +8,7 @@ default: undefined
 Specifies the path to the [formData](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/formData.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData') object field bound to the current form item.
 
 ---
-For instance, if your data includes nested items, use standard JavaScript syntax to specify the path to the field:
+For instance, use standard JavaScript syntax to specify the path to the field if your data includes nested items:
 
 ---
 ##### jQuery

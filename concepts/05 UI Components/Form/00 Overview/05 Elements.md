@@ -1,4 +1,4 @@
-Below is an element map. A click on an element navigates to the topic devoted to this element.
+An element map is shown below. Clicking an element navigates to the topic related to this element.
 
 <p><img src="/images/Form/form-elements.png" style="margin:0px auto; display:block; width:500px; height:513px;" alt="Form elements" usemap="#form-elements">
 

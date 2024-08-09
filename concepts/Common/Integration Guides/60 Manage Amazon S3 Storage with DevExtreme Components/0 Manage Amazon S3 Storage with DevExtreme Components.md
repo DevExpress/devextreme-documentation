@@ -1,12 +1,12 @@
 [important]
 
-DevExpress is not responsible for the security issues you may encounter when you use DevExtreme code examples. Exercise caution as you run code from this article and the associated repositories. The security of sample DevExtreme applications depends on multiple factors outside of the developers' control, including the configuration of your development environment and third-party services.
+The code snippets in this article and all associated repositories are for informational purposes only. Security should be your #1 priority when using Amazon S3 storage. You should consult a security expert or apply accepted best practices to maintain the highest security posture for your DevExtreme-powered web application. Remember, a secure web app demands careful consideration/understanding of potential attack vectors, the configuration of your development environment, and security posture of third-party service providers.
 
 [/important]
 
-Amazon's Simple Storage Service (S3) is an essential component of many web applications. It offers high-availability, and safe access to large databases and file archives. You can integrate an S3 storage into your DevExtreme application to streamline CRUD operations with user files.
+Amazon's Simple Storage Service (S3) plays a critical role in today’s enterprise. It offers high-availability and trusted access to large databases/file archives. You can integrate S3 storage into your DevExtreme-powered web application to simplify CRUD- operations against user files.
 
-This article explains the key points you need to consider when you connect DevExtreme components to Amazon's S3 storage. We'll look at a back-end application that communicates with AWS, and two client-side applications — one with a `FileManager` component, and the other with a `FileUploader`.
+This help topic documents key considerations when connecting DevExtreme UI components to Amazon S3 storage. Specifically, it describes a back-end application designed to communicate with AWS, and two client-side applications — one with the DevExtreme [FileManager](/Documentation/Guide/UI_Components/FileManager/Getting_Started_with_File_Manager/) component, and the other with our [FileUploader](/Documentation/Guide/UI_Components/FileUploader/Overview/).
 
 **FileManager** application:
 
@@ -22,22 +22,22 @@ This article explains the key points you need to consider when you connect DevEx
 
 ## Table of Contents
 
-1. **Amazon Setup**
+1. [Amazon Setup](/Documentation/Guide/Common/Integration_Guides/Manage_Amazon_S3_Storage_with_DevExtreme_Components/#Amazon_Setup)
 
-    You need an Amazon Web Services account with an active subscription to set up an S3 bucket. The first section of this tutorial describes how to use the AWS management console to configure your S3 resources.
+    You will need an Amazon Web Services account with an active subscription to set up an S3 bucket. The first section of this tutorial describes use of the AWS management console (to configure S3 resources).
 
-2. **Back-end application walkthrough**
+2. [Back-end application walkthrough](/Documentation/Guide/Common/Integration_Guides/Manage_Amazon_S3_Storage_with_DevExtreme_Components/#Back-End_Application_Walkthrough)
 
-    In this section, you'll set up a back-end .NET application that uses the Amazon SDK to query the S3 API. You can view the source code for the application on [GitHub](https://github.com/DevExpress-Examples/devextreme-file-manager-amazon-client-side-binding/tree/23.1.3%2B/Amazon_Backend).
+    In this section, we’ll set up a back-end .NET application that uses the Amazon SDK to query S3 APIs. You can review source code used on [GitHub](https://github.com/DevExpress-Examples/devextreme-file-manager-amazon-client-side-binding/tree/23.1.3%2B/Amazon_Backend).
 
-3. **Configure multi-part upload (client-side)**
+3. [Configure multi-part upload (client-side)](/Documentation/Guide/Common/Integration_Guides/Manage_Amazon_S3_Storage_with_DevExtreme_Components/#Configure_Multi-Part_Upload_Client-Side)
 
-    This section describes how to configure your client-side application to support multi-part AWS uploads.
+    This section configures your client-side application to support multi-part AWS uploads.
 
-4. **File Manager**
+4. [File Manager](/Documentation/Guide/Common/Integration_Guides/Manage_Amazon_S3_Storage_with_DevExtreme_Components/#FileManager)
 
-    This section describes how to create a client-side application with an S3-bound **FileManager** component. You can view the project in its final form [on GitHub](https://github.com/DevExpress-Examples/devextreme-file-manager-amazon-client-side-binding/). The repository includes applications for all DevExtreme-supported frameworks — React, Angular, Vue, jQuery, and ASP.NET Core.
+    This section creates a client-side application using the DevExtreme FileManager component (bound to S3). You can explore the complete project [on GitHub](https://github.com/DevExpress-Examples/devextreme-file-manager-amazon-client-side-binding/). The repository includes applications for all DevExtreme supported frameworks: React, Angular, Vue, jQuery, and ASP.NET Core.
 
-5. **File Uploader**
+5. [File Uploader](/Documentation/Guide/Common/Integration_Guides/Manage_Amazon_S3_Storage_with_DevExtreme_Components/#FileUploader)
 
-    This section describes how to create a client-side application with an S3-bound **FileUploader** component. You can view the project in its final form [on GitHub](https://github.com/DevExpress-Examples/devextreme-file-uploader-direct-upload-to-amazon). The repository includes applications for all DevExtreme-supported frameworks — React, Angular, Vue, jQuery, and ASP.NET Core.
+    This section creates a client-side application using the DevExtreme FileUploader component. You can explore the complete project [on GitHub](https://github.com/DevExpress-Examples/devextreme-file-uploader-direct-upload-to-amazon). The repository includes applications for all DevExtreme supported frameworks: React, Angular, Vue, jQuery, and ASP.NET Core.

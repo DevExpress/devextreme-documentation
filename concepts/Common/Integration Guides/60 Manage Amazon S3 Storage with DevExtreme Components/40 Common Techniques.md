@@ -1,5 +1,4 @@
-
-Two classes will handle communication between the component and your bucket. The `AmazonFileSystem` class will pass data from the component to `AmazonGateway`. The `AmazonGateway` class will include all the methods that query the Amazon API. This separation of duties makes the code simpler and easier to maintain.
+Two classes will handle communication between the component and your bucket. The `AmazonFileSystem` class will pass data from the component to `AmazonGateway`. The `AmazonGateway` class includes all methods to query Amazon APIs. This separation of duties makes code simpler/easier to maintain.
 
     class AmazonFileSystem {
       gateway = null;
@@ -17,7 +16,7 @@ Two classes will handle communication between the component and your bucket. The
       }
     ...
 
-The `FileManager` component can allow users to download multiple files at once. We can bundle these files into an archive on the server:
+The FileManager component allows users to download multiple files simultaneously. You can bundle these files into an archive on the server:
 
     <!--tab: AmazonS3Provider.cs -->
     public async Task<FileContentResult> DownloadItemsAsync(string[] keys) {
@@ -37,7 +36,7 @@ The `FileManager` component can allow users to download multiple files at once. 
                 foreach (var file in keys) {
                     ...
 
-Make sure to adjust your client-side code accordingly:
+Make sure to modify your client-side code accordingly:
 
     <!--tab: amazon.filesystem.js -->
     async downloadItems(items) {
@@ -45,7 +44,7 @@ Make sure to adjust your client-side code accordingly:
         const fileName = keys.length > 1 ? 'archive.zip' : this.getFileNameFromKey(keys[0]);
         ...
 
-If you ever need to abort the upload midway, you can use the abortFileUpload method of the AWS API. This capability is critical for graceful handling of upload interruptions. Create a function that sends an upload termination request to the Amazon server:
+If you need to abort uploads midway, you can use the **abortFileUpload** method (AWS API). This option is critical for graceful handling of upload interruptions. Create a function that sends an upload termination request to the Amazon server:
 
     async abortFileUpload(fileData, uploadInfo, destinationDirectory) {
       const key = `${destinationDirectory?.key ?? ''}${fileData.name}`;
@@ -58,4 +57,4 @@ If you ever need to abort the upload midway, you can use the abortFileUpload met
       return this.makeRequest('abortUpload', params, requestOptions);
     }
 
-Pass this function to the `onUploadAborted` event of the `FileUploader` component, or use it to construct a custom file system provider for the `FileManager`.
+Pass this function to the `onUploadAborted` event of the FileUploader component or use it to construct a custom file system provider for the FileManager.

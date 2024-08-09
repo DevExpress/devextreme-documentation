@@ -2,9 +2,9 @@ S3 supports multiple file upload techniques: single-try uploads, multipart uploa
 
 Multipart uploads involve three steps:
 
-1. **Initiation**. During this step, you contact the server to establish a new upload attempt. The server returns a unique ID for your upload.
-2. **Chunk upload**. As you upload the file part by part, you need to label each part with an upload ID. The server returns a unique `ETag` for each chunk that it receives.
-3. **Completion**. To complete the upload, send all the `ETag` headers you collected during step 2, as well as the upload ID, to the server.
+1. **Initiation**. In this step, you contact the server to establish a new upload attempt. The server returns a unique ID for your upload.
+2. **Chunk upload**. As you upload the file part by part, you need to label each part with an upload ID. The server returns a unique `ETag` for each chunk it receives.
+3. **Completion**. To complete the upload process, send all the `ETag` headers you collected in step 2 and the upload ID to the server.
 
 Example:
 
@@ -22,25 +22,10 @@ Example:
 
 You can use component options to set maximum chunk size.
 
-The `FileManager` component has the `upload.chunkSize` property:
-
-    $('#file-manager').dxFileManager({
-        ...
-        upload: {
-            chunkSize: 5242880,
-        },
-        ...
-    })
-
-The `FileUploader` component has the `chunkSize` property:
-
-    $('#file-uploader').dxFileUploader({
-      chunkSize: 5242880,
-      ...
-    })
+The DevExtreme FileManager component includes an **upload**.[chunkSize](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/upload/#chunkSize) property. Similarly, the DevExtreme FileUploader component includes a [chunkSize](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#chunkSize) property.
 
 If a file does not exceed the maximum chunk size, the upload consists of a single chunk.
 
-Review the repositories to inspect the code that facilitates multi-part uploads in their entirety.
+Our multi-part upload implementation is included in linked repositories.
 
-[note] Learn more: [Amazon AWS Documentation — Uploading and copying objects using multipart upload](https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html)
+[note] **Additional Info**: [Amazon AWS Documentation — Uploading and copying objects using multipart upload](https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html)

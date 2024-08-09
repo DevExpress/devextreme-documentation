@@ -13,20 +13,19 @@ Follow the [Amazon tutorial](https://docs.aws.amazon.com/AmazonS3/latest/usergui
 
 ### Set Up User Permissions
 
-For the bucket to be secure, you need to properly set up its access permissions. Amazon calls this process IAM (Identity and Access Management). For each user, you can set granular rules that limit access to storage buckets and objects. Review the following Amazon AWS article to understand how IAM works: [Controlling access to a bucket with user policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/walkthrough1.html#walkthrough1-create-bucket).
+For the bucket to be secure, you need to properly set up access permissions. Amazon calls this process IAM (Identity and Access Management). For each user, you can set granular rules that limit access to storage buckets and objects. Review the following Amazon AWS article if you are new to IAM: [Controlling access to a bucket with user policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/walkthrough1.html#walkthrough1-create-bucket).
 
-The following Amazon AWS article explains how to create a [new IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) for your application: [Creating an IAM user in your AWS account](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html). Amazon generates a unique [secret key](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) for each IAM user. The secret key and the access ID are an integral part of the authentication process.
+The following Amazon AWS article explains how to create a [new IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) for your application: [Creating an IAM user in your AWS account](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html). Amazon generates a unique [secret key](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) for each IAM user. The secret key and access ID are an integral part of the authentication process.
 
-Use the AWS Management Console to [create a new access policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) with full access to your S3 bucket. Then, [attach](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html) this policy to the user you created earlier.
+Use the AWS Management Console to [create a new access policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) with full access to your S3 bucket. Once complete, [attach](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html) this policy to the user you created earlier.
 
-[note] **Learn more**: [Amazon AWS Documentation — Controlling access to a bucket with user policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/walkthrough1.html)
+[note] **Additional Info**: [Amazon AWS Documentation — Controlling access to a bucket with user policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/walkthrough1.html)
 
 ### Configure CORS (AWS Management Console)
 
 Last but not least, you need to configure a set of CORS (Cross-Origin Resource Sharing) policies for your bucket. To protect your bucket from unauthorized access, CORS policies limit the range of acceptable request origins and HTTP headers. Amazon references the bucket's CORS policies when it receives incoming requests.
 
-Since the DevExtreme applications that you will be developing do not run on the same server as your bucket, you need to explicitly allow requests from third-party origins. The example configuration below opens up your bucket to requests of all origins, and limits the number of allowed HTTP methods:
-
+Since a DevExtreme-powered application will not run on the same server as your bucket, you need to explicitly allow requests from third-party origins. The configuration below opens up a bucket to requests of all origins, and limits the number of allowed HTTP methods:
 
     [{
         "AllowedHeaders": ["*"], 
@@ -35,4 +34,4 @@ Since the DevExtreme applications that you will be developing do not run on the 
         "ExposeHeaders": ["etag"　... other tags ]
     }]
 
-[note] **Learn more**: [Amazon AWS Documentation — CORS Configuration](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ManageCorsUsing.html)
+[note] **Additional Info**: [Amazon AWS Documentation — CORS Configuration](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ManageCorsUsing.html)

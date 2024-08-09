@@ -3,7 +3,7 @@ Full code examples:
 * [Client-side data handling](https://github.com/DevExpress-Examples/devextreme-file-manager-azure-client-side-binding)
 * [Server-side data handling](https://github.com/DevExpress-Examples/devextreme-file-manager-azure-server-side-binding)
 
-Azure Blob Storage does not expose a traditional file system to the end user. When you request to view the list of blob entries, Azure returns XML: 
+Azure Blob Storage does not expose a traditional file system to the end user. When you request to view the list of blob entries, Azure returns XML:
 
     <?xml version="1.0" encoding="utf-8"?>
     <EnumerationResults ServiceEndpoint="https://aspxdemos.blob.core.windows.net/" ContainerName="testfilemanager">
@@ -34,9 +34,9 @@ Azure Blob Storage does not expose a traditional file system to the end user. Wh
         <NextMarker />
     </EnumerationResults>
 
-The `FileManager` component cannot work with such data. You need to take additional steps to generate a FileManager-compatible file system representation.
+The FileManager component cannot work with Azure’s XML data. As such, you will need to generate a FileManager-compatible file system representation of the XML.
 
-This task can take place on the client or on the server.
+This requirement can be executed on either the client or the server.
 
 ### Client-side Data Handling
 
@@ -68,7 +68,7 @@ First, create an API endpoint that handles FileManager requests and directs them
         }
     }
 
-The `ProcessCommand` object defines the internal logic of the endpoint. It calls functions that interact with Blob entities:
+The `ProcessCommand` object object defines the internal logic of the endpoint. It calls functions that interact with Blob entities:
 
     object GetBlobList() {
         if (Container.CanGenerateSasUri) {
@@ -81,7 +81,7 @@ The `ProcessCommand` object defines the internal logic of the endpoint. It calls
 
 In this example, the `Container` object is an instance of the `BlobContainerClient` class.
 
-The client-side parser function looks like this:
+The client-side parser function is as follows:
 
     getDataObjectsFromEntries(entries, prefix) {
         const result = [];
@@ -184,7 +184,7 @@ The `FileSystem` endpoint will expose an instance of the `AzureBlobFileProvider`
         return result.GetClientCommandResult();
     }
 
-This technique greatly simplifies component setup. You can create a `RemoteFileSystemProvider` that uses the newly created file system endpoint:
+This particular technique simplifies component setup. You can create a `RemoteFileSystemProvider` that uses the newly created file system endpoint:
 
     const provider = new DevExpress.fileManagement.RemoteFileSystemProvider({
     endpointUrl: `${baseUrl}file-manager-azure`,

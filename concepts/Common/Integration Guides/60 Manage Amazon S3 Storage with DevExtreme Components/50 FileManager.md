@@ -1,5 +1,5 @@
 
-The `FileManager` component expects the data source to have the structure of a traditional file system. We can use the `CustomFileSystemProvider` object to imitate such a file system with S3 data.
+The DevExtreme FileManager component expects the data source to have a traditional file system structure. We can use the `CustomFileSystemProvider` object to simulate such a file system with S3 data.
 
     const provider = new DevExpress.fileManagement.CustomFileSystemProvider({
       getItems,
@@ -13,7 +13,7 @@ The `FileManager` component expects the data source to have the structure of a t
       abortFileUpload,
     });
 
-In this scenario, the final copmonent configuration is very straightforward:
+In this particular scenario, final component configuration is straightforward:
 
 ---
 

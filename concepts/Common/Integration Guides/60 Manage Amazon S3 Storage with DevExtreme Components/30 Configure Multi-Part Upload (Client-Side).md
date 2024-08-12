@@ -22,7 +22,7 @@ Example:
 
 You can use component options to set maximum chunk size.
 
-The DevExtreme FileManager component includes an **upload**.[chunkSize](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/upload/#chunkSize) property. Similarly, the DevExtreme FileUploader component includes a [chunkSize](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#chunkSize) property.
+The DevExtreme FileManager component includes an **upload**.[chunkSize](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/upload/chunkSize.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/upload/#chunkSize') property. Similarly, the DevExtreme FileUploader component includes a [chunkSize](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/chunkSize.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#chunkSize') property.
 
 If a file does not exceed the maximum chunk size, the upload consists of a single chunk.
 

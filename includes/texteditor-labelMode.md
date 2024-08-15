@@ -21,10 +21,5 @@ This property can have one of the following values:
         <td>The label is hidden.</td>
         <td><div class="simulator-desktop-container" data-view="/Content/Applications/24_1/UIWidgets/TextEditor/labelModeHidden/index.html, /Content/Applications/24_1/UIWidgets/TextEditor/labelModeHidden/index.js, /Content/Applications/24_1/UIWidgets/TextEditor/labelModeHidden/index.css"></div></td>
     </tr>
-    <tr>
-        <td><i>"outside"</i></td>
-        <td>The label is outside.</td>
-        <td><div class="simulator-desktop-container" data-view="/Content/Applications/24_1/UIWidgets/TextEditor/labelModeOutside/index.html, /Content/Applications/24_1/UIWidgets/TextEditor/labelModeOutside/index.js, /Content/Applications/24_1/UIWidgets/TextEditor/labelModeOutside/index.css"></div></td>
-    </tr>
     ${{outside_mode}}
 </table>

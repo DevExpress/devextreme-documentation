@@ -2,7 +2,7 @@ This section explains an issue and steps to diagnose and resolve it. If the solu
 
 ### Issue
 
-DevExtreme components fail in a jQuery application. Browser console displays the following errors:
+The browser fails to render DevExtreme components on the page. Browser console displays the following errors:
 
 * "Uncaught TypeError: $(...).dxSelectBox is not a function"
 * "Uncaught TypeError: $(...).dxDataGrid is not a function"

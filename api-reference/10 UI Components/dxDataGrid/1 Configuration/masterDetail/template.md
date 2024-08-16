@@ -199,6 +199,150 @@ You should call the [updateDimensions()](/api-reference/10%20UI%20Components/Gri
 
 ---
 
+
+
+---
+#####jQuery
+
+    <!-- tab: index.js -->
+    $("#dataGridContainer").dxDataGrid({
+        // ...
+        masterDetail: {
+            enabled: true,
+            template: function (container, info) {
+                const getter = (data) => data.Amount;
+                const handler = (newValue) => {
+                    container.css('background-color', newValue < 100000 ? 'red' : 'green');
+                };
+                info.watch(getter, handler);
+                return $('<div>').text(info.data.Amount);
+            }
+        }
+    });
+
+#####Angular
+
+    <!-- tab: app.component.html -->
+    <dx-data-grid ... >
+        <dxo-master-detail
+            [enabled]="true"
+            [template]="'detail'">
+        </dxo-master-detail>
+        <div 
+            *dxTemplate="let info of 'productDetail'"
+            [style.background-color]="getBackgroundColor(info.data.Amount)"
+        >
+            {{ info.data.Amount }}
+        </div>
+    </dx-data-grid>
+
+    <!-- tab: app.component.ts -->
+    export class AppComponent {
+        getBackgroundColor(amount: number): string {
+            return amount < 100000 ? 'red' : 'green';
+        }
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            :ref="dataGridRefKey">
+            <DxMasterDetail
+                :enabled="true"
+                template="detail"
+            />
+            <template #detail="{ data }">
+                <DxTabPanel ... 
+                    @selection-changed="onSelectionChanged">
+                </DxTabPanel>
+            </template>
+        </DxDataGrid>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxDataGrid, {
+        DxMasterDetail
+    } from 'devextreme-vue/data-grid';
+    import DxTabPanel from 'devextreme-vue/tab-panel';
+
+    const dataGridRefKey = "my-data-grid";
+
+    export default {
+        components: {
+            DxDataGrid,
+            DxMasterDetail
+        },
+        data: function() {
+            return {
+                dataGridRefKey
+            };
+        },
+        methods: {
+            onSelectionChanged() {
+                // ...
+                this.dataGrid.updateDimensions();
+            }
+        },
+        computed: {
+            dataGrid: function() {
+                return this.$refs[dataGridRefKey].instance;
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React, { useRef, useCallback } from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DataGrid, {
+        MasterDetail
+    } from 'devextreme-react/data-grid';
+    import TabPanel from 'devextreme-react/tab-panel';
+
+    const DetailSection = (data, updateGridDimensions) => {
+        const onSelectionChanged = useCallback(() => {
+            // ...
+            updateGridDimensions();
+        }, []);
+      
+        return (
+            <TabPanel ... 
+                onSelectionChanged>
+            </TabPanel>
+        );
+    };
+
+    export default function App() {
+        const dataGrid = useRef(null);
+
+        const updateGridDimensions = () => {
+            dataGrid.current.instance().updateDimensions();
+        };
+
+        const renderDetailSection = useCallback(({ data }) => {
+            return DetailSection(data, updateGridDimensions);
+        }, []);
+
+        return (
+            <DataGrid ...
+                ref={dataGrid}>
+                <MasterDetail
+                    enabled={true}
+                    render={renderDetailSection}
+                />
+            </DataGrid>
+        );
+    }
+
+---
+
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-datagrid-access-every-master-detail-grid-from-code"
 }

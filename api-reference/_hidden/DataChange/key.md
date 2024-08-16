@@ -4,7 +4,7 @@ type: any
 ---
 ---
 ##### shortDescription
-The key of the row being updated or removed.
+The key of the row being created, updated, or removed.
 
 ---
 

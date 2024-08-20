@@ -1,4 +1,4 @@
-The TextArea raises four keyboard events: [keyDown](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/keyDown.md '/Documentation/ApiReference/UI_Components/dxTextArea/Events/#keyDown'), [keyUp](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/keyUp.md '/Documentation/ApiReference/UI_Components/dxTextArea/Events/#keyUp') and [enterKey](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/enterKey.md '/Documentation/ApiReference/UI_Components/dxTextArea/Events/#enterKey'). Within the functions that handle them, you can access the original keyboard events. If you are _not_ going to change the functions during the lifetime of the UI component, assign them to the respective UI component properties.
+The TextArea raises three keyboard events: [keyDown](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/keyDown.md '/Documentation/ApiReference/UI_Components/dxTextArea/Events/#keyDown'), [keyUp](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/keyUp.md '/Documentation/ApiReference/UI_Components/dxTextArea/Events/#keyUp') and [enterKey](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/enterKey.md '/Documentation/ApiReference/UI_Components/dxTextArea/Events/#enterKey'). Within functions that handle them, you can access original keyboard events. If you are _not_ going to change functions during the lifetime of the UI component, assign them to respective UI component properties.
 
 ---
 ##### jQuery
@@ -121,11 +121,13 @@ The TextArea raises four keyboard events: [keyDown](/api-reference/10%20UI%20Com
 
 ---
 
+[note] You can also use the [input](/api-reference/10%20UI%20Components/dxTextEditor/4%20Events/input.md '/Documentation/ApiReference/UI_Components/dxTextArea/Events/#input') event. This is not a strictly keyboard event, a mouse action can also change a TextArea input value.
+
 ---
 
 ##### jQuery
 
-If you are going to change the handling functions at runtime, or if you need to attach several functions to a single event, use the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxTextArea/Methods/#oneventName_eventHandler') method.
+If you are going to change handling functions at runtime, or if you need to attach several functions to a single event, use the [on(eventName, eventHandler)](/api-reference/10%20UI%20Components/Component/3%20Methods/on(eventName_eventHandler).md '/Documentation/ApiReference/UI_Components/dxTextArea/Methods/#oneventName_eventHandler') method.
 
     <!--JavaScript-->
     const keyDownHandler1 = function (e) {

@@ -8,7 +8,14 @@ default: 'static', 'floating' (Material), 'outside' (Fluent)
 Specifies the [label](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/label.md '{currentpath}/#label')'s display mode.
 
 ---
-#include texteditor-labelMode
+#include texteditor-labelMode with {
+    outside_mode: '
+        <tr>
+        <td><i>"outside"</i></td>
+        <td>The label is outside.</td>
+        <td><div class="simulator-desktop-container" data-view="/Content/Applications/24_1/UIWidgets/TextEditor/labelModeOutside/index.html, /Content/Applications/24_1/UIWidgets/TextEditor/labelModeOutside/index.js, /Content/Applications/24_1/UIWidgets/TextEditor/labelModeOutside/index.css"></div></td>
+    </tr>'
+}
 
 [note]
 

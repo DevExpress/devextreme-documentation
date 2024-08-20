@@ -6,5 +6,5 @@ The following icons are available:
 
 You can find source icons in DevExtreme's GitHub repository:
 
-- <a href="https://github.com/DevExpress/DevExtreme/tree/24_1/packages/devextreme/icons">Font icons</a>
-- <a href="https://github.com/DevExpress/DevExtreme/tree/24_1/packages/devextreme/images/icons">SVG icons</a>
+- <a href="https://github.com/DevExpress/DevExtreme/tree/24_1/packages/devextreme-scss/icons">Font icons</a>
+- <a href="https://github.com/DevExpress/DevExtreme/tree/24_1/packages/devextreme-scss/images/icons">SVG icons</a>

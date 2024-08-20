@@ -1,113 +1,20 @@
-DevExtreme Vue components are supplied with TypeScript declarations. Strict typing allows you to catch bugs at earlier stages and use features like code completion and automated refactoring.
+---
+##### jQuery
+You can find the TypeScript definition file for DevExtreme in the [DevExtreme zip archive](/Documentation/Guide/Common/Distribution_Channels/#ZIP_Archive) or in the installation folder: **C:\Program Files\DevExpress 24.1\DevExtreme\Sources\Lib\ts**. Add this file to your project. Next, reference this file and the jQuery TypeScript definition file in your *.ts* file.
 
-The following code shows an example of using TypeScript with DevExtreme components in a Vue application:
+    <reference path="TypeScript/jquery.d.ts" />
+    //  File from the zip archive or from the installation folder:
+    <reference path="TypeScript/dx.all.d.ts" />
 
-    <!-- tab: App.vue -->
-    <template>
-        <div>
-            <DxList :items="items" ref="list">
-                <template #item="{data}">
-                    <Item :text="data.text" />
-                </template>
-            </DxList>
-        </div>
-    </template>
+Along with TypeScript definitions, you need to reference the libraries themselves. Refer to the following help topic for detailed information: [Local Files](/Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/#Local_Files).
 
-    <script lang='ts'>
-    import { Component, Vue } from 'vue-property-decorator';
-    import { DxList } from 'devextreme-vue/list';
-    import Item from './components/Item.vue';
-    
-    interface IListItemProps {
-        text: string;
-    }
-    
-    @Component({
-        components: {
-            DxList,
-            Item
-        }
-    })
+##### Angular
+TypeScript is a [primary language](https://angular.io/guide/typescript-configuration) for Angular development. This section outlines additional TypeScript specifics related to development with DevExtreme components. 
 
-    export default class App extends Vue {
-        public $refs: Vue['$refs'] & {
-            list?: DxList,
-        } = {};
-        
-        public items: IListItemProps[] = [
-            { text: 'Item 1' },
-            { text: 'Item 2' },
-            { text: 'Item 3' }
-        ];
-    }
-    </script>
+##### Vue
+DevExtreme Vue components are supplied with [TypeScript](https://v3.vuejs.org/guide/typescript-support.html) declarations. Strict typing allows you to catch bugs at earlier stages and use features like code completion and automated refactoring.
 
-    <!-- tab: Item.vue -->
-    <template>
-        <div @click="addCounter">
-            {{text}} was clicked {{counter}} times
-        </div>
-    </template>
-    
-    <script lang='ts'>
-    import { Component, Prop, Vue } from 'vue-property-decorator';  
+##### React
+DevExtreme React components are supplied with [TypeScript](https://react.dev/learn/typescript) declarations. Strict typing allows you to catch bugs at earlier stages and use features like code completion and automated refactoring.
 
-    @Component
-    export default class Item extends Vue {
-        @Prop() public text!: string;
-        public counter: number = 0;
-        public addCounter() {
-            this.counter = this.counter + 1;
-        }
-    }
-    </script>
-
-#####See Also#####
-- <a href="https://v3.vuejs.org/guide/typescript-support.html" target="_blank">TypeScript Support in Vue Documentation</a>
-
-[tags] vue
-
-TypeScript is a [primary language](https://angular.io/guide/typescript-configuration) for Angular development. This help topic outlines additional TypeScript specifics related to development with DevExtreme components. 
-
-DevExtreme React components are supplied with TypeScript declarations. Strict typing allows you to catch bugs at earlier stages and use features like code completion and automated refactoring.
-
-The following code shows an example of using TypeScript with DevExtreme components:
-
-    <!-- tab: App.tsx -->
-    import React, { useState } from 'react';
-    import List from 'devextreme-react/list';
-    import 'devextreme/dist/css/dx.light.css';
-
-    interface IListItemProps {
-        text: string;
-    }
-
-    const items: IListItemProps[] = [
-        { text: "Item 1" },
-        { text: "Item 2" },
-        { text: "Item 3" }
-    ];
-
-    const Item: React.FC<IListItemProps> = (props) => {
-        const [counter, setCounter] = useState<number>(0);
-
-        const addCounter = () => {
-            setCounter(counter + 1);
-        };
-
-        return (
-            <div onClick={addCounter}>
-            {props.text} was clicked {counter} times
-            </div>
-        );
-    };
-
-    const App: React.FC = () => {
-        return (
-            <List items={items} itemRender={(props: any) => <Item {...props.data} />} />
-        );
-    };
-
-    export default App;
-
-[tags] react
+---

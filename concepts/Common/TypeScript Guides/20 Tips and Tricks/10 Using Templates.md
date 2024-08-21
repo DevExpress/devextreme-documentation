@@ -1,8 +1,5 @@
 [Templates](/concepts/50%20React%20Components/40%20Component%20Configuration%20Syntax/55%20Markup%20Customization/0%20Markup%20Customization.md '/Documentation/Guide/React_Components/Component_Configuration_Syntax/#Markup_Customization') can include complex template data as an argument. 
 
----
-##### React
-
 To define types for such templates, import the `ComponentTypes` declaration and find the type that ends with `TemplateData`:
 
     <!-- tab: App.tsx -->
@@ -31,4 +28,4 @@ To define types for such templates, import the `ComponentTypes` declaration and 
         );
     }
 
----
+[tags] React

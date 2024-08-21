@@ -15,7 +15,7 @@ Common types are located in the following namespaces:
 
 ##### Angular
 
-If you need the same type for multiple components, you can import that type from the `common` submodule:
+If you need the same type for multiple components, you can import that type from the `common` module:
 
     <!-- tab: app.component.ts -->
     // In the sample below, ValidationRule is imported for each component:
@@ -35,7 +35,7 @@ If you need the same type for multiple components, you can import that type from
         formValidationRule: DxFormTypes.ValidationRule;
     }
     
-    // In the sample below, ValidationRule is imported from the common submodule:
+    // In the sample below, ValidationRule is imported from the common module:
 
     import { Component } from '@angular/core';
     import { ValidationRule } from 'devextreme/common';
@@ -53,7 +53,7 @@ If you need the same type for multiple components, you can import that type from
 
 ##### Vue
 
-If you need the same type for multiple components, you can also import this type from `common` submodule:
+If you need the same type for multiple components, you can also import this type from `common` module:
 
     <!-- tab: App.vue -->
     // In the sample below, ValidationRule is imported for each component:
@@ -64,7 +64,7 @@ If you need the same type for multiple components, you can also import this type
     const dataGridValidationRule: DxDataGridTypes.ValidationRule;
     const formValidationRule: DxFormTypes.ValidationRule;
     
-    // In the sample below, ValidationRule is imported from the common submodule:
+    // In the sample below, ValidationRule is imported from the common module:
 
     import { ValidationRule } from 'devextreme-vue/common';
 
@@ -73,7 +73,7 @@ If you need the same type for multiple components, you can also import this type
 
 ##### React
 
-Common types are usually in the `ComponentTypes` namespace. If a common type is missing, file an issue in our [Support Center](https://supportcenter.devexpress.com/ticket/create).
+If you need the same type for multiple components, you can import that type from the `common` module.
 
 When using a type for multiple components, it can be unclear from which module to import:
 

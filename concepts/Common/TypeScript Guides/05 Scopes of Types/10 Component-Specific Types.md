@@ -1,4 +1,4 @@
-These types configure specific components. Each component has its own set.
+Each DevExtreme component has its own set of types.
 
 ---
 ##### jQuery

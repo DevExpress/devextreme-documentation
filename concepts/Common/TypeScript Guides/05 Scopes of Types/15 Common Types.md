@@ -1,4 +1,77 @@
-**Modular Projects**
+---
+##### jQuery
+
+Common types are located in the following namespaces:
+
+- DevExpress.common
+
+- DevExpress.common.charts
+
+- DevExpress.common.grids
+
+<!-- ... -->
+
+    const toolbarItemsLocation: DevExpress.common.ToolbarItemLocation;
+
+##### Angular
+
+If you need the same type for multiple components, you can import that type from the `common` submodule:
+
+    <!-- tab: app.component.ts -->
+    // In the sample below, ValidationRule is imported for each component:
+
+    import { Component } from '@angular/core';
+    import { DxDataGridTypes } from 'devextreme-angular/ui/data-grid';
+    import { DxFormTypes } from 'devextreme-angular/ui/form';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+
+    export class AppComponent {
+        dataGridValidationRule: DxDataGridTypes.ValidationRule;
+        formValidationRule: DxFormTypes.ValidationRule;
+    }
+    
+    // In the sample below, ValidationRule is imported from the common submodule:
+
+    import { Component } from '@angular/core';
+    import { ValidationRule } from 'devextreme/common';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+    
+    export class AppComponent {
+        dataGridValidationRule: ValidationRule;
+        formValidationRule: ValidationRule;
+    }
+
+##### Vue
+
+If you need the same type for multiple components, you can also import this type from `common` submodule:
+
+    <!-- tab: App.vue -->
+    // In the sample below, ValidationRule is imported for each component:
+
+    import { DxDataGridTypes } from 'devextreme-vue/data-grid';
+    import { DxFormTypes } from 'devextreme-vue/form';
+
+    const dataGridValidationRule: DxDataGridTypes.ValidationRule;
+    const formValidationRule: DxFormTypes.ValidationRule;
+    
+    // In the sample below, ValidationRule is imported from the common submodule:
+
+    import { ValidationRule } from 'devextreme-vue/common';
+
+    const dataGridValidationRule: ValidationRule;
+    const formValidationRule: ValidationRule;
+
+##### React
 
 Common types are usually in the `ComponentTypes` namespace. If a common type is missing, file an issue in our [Support Center](https://supportcenter.devexpress.com/ticket/create).
 
@@ -21,16 +94,4 @@ Alternatively, define a union:
     type ToolbarItemLocation = DataGridTypes.ToolbarItemLocation | PopupTypes.ToolbarItemLocation;
     const toolbarItemsLocation: ToolbarItemLocation = 'center';
 
-**Non-Modular Projects**
-
-Common types are located in the following namespaces:
-
-- DevExpress.common
-
-- DevExpress.common.charts
-
-- DevExpress.common.grids
-
-<!-- ... -->
-
-    const toolbarItemsLocation: DevExpress.common.ToolbarItemLocation;
+---

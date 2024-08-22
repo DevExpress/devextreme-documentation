@@ -12,6 +12,6 @@ The browser fails to render DevExtreme components on the page. Browser console d
 
 ### Solution
 
-Ensure only one jQuery reference exists **before** `dx.all.js` in the application's `head` section. For more details, refer to the following help topic: [Add DevExtreme to a jQuery Application](/Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/#CDN_Files).
+Ensure only one jQuery reference exists **before** `dx.all.js` in the application's `head` section. For more details, refer to the following help topic: [Add DevExtreme to a jQuery Application](/concepts/58%20jQuery%20Components/05%20Add%20DevExtreme%20to%20a%20jQuery%20Application/05%20CDN%20Files.md '/Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/#CDN_Files').
 
 [tags] jquery

@@ -1,4 +1,4 @@
-Below is an element map. A click on an element navigates to the topic devoted to this element.
+Below is an element map. A click on an element navigates to the topic related to this element.
 
 <p><img src="/images/List/list-elements.png" style="width:415px;" alt="List elements" usemap="#list-elements">
 

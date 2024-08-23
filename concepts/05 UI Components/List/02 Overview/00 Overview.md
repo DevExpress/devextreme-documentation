@@ -1,3 +1,3 @@
-DevExtreme List is a responsive grid control with a vast assortment of capabilities, including data editing and validation, searching and filtering, layout customization, and more.
+DevExtreme List is a UI component that displays data from a local or remote data storage and allows users to group, select, search, reorder, and delete items.
 
 In this overview you can find a map of List elements, information about key features, and what to explore next.

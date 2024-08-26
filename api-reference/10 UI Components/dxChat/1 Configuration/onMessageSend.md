@@ -10,12 +10,6 @@ default: null
 ##### param(e): ui/chat:MessageSendEvent
 <!-- Description goes here -->
 
-##### field(e.author): User
-<!-- Description goes here -->
-
-##### field(e.cancel): Boolean
-<!-- Description goes here -->
-
 ##### field(e.component): {WidgetName}
 <!-- Description goes here -->
 
@@ -23,15 +17,6 @@ default: null
 <!-- Description goes here -->
 
 ##### field(e.event): event
-<!-- Description goes here -->
-
-##### field(e.text): String
-<!-- Description goes here -->
-
-##### field(e.timestamp): String
-<!-- Description goes here -->
-
-##### field(e.typing): Boolean
 <!-- Description goes here -->
 
 ---

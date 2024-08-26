@@ -28,4 +28,4 @@ To define types for such templates, import the `ComponentTypes` declaration and 
         );
     }
 
-[tags] React
+[tags] react

@@ -1,8 +1,6 @@
 Some event objects are generic, particularly for data-aware components like Data-Grid:
 
 ---
-##### jQuery
-
 ##### Angular
 
     <!-- tab: app.component.ts -->
@@ -122,3 +120,5 @@ Some event objects are generic, particularly for data-aware components like Data
     export default App;
 
 ---
+
+[tags] angular, react, vue

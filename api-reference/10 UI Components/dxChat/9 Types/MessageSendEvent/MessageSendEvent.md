@@ -2,7 +2,7 @@
 module: ui/chat
 export: MessageSendEvent
 type: Object
-inherits: Cancelable,NativeEventInfo,Message
+inherits: NativeEventInfo
 references: dxChat.Options.onMessageSend
 uid: ui/chat:MessageSendEvent
 generateTypeLink: 

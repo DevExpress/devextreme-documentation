@@ -1,1 +1,1 @@
-If you work with TypeScript, the correct use of types is essential to create an application. Types may belong to one component, be common across several components, or be part of the framework or library.
+When working with DevExtreme components in TypeScript, the correct use of types is essential for application creation. DevExtreme types may belong to one component, be common across several components, or be internal to the component suite.

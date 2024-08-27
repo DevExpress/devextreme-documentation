@@ -1,19 +1,30 @@
-Each DevExtreme component has its own set of types.
+
+
+
 
 ---
 ##### jQuery
 
-Find component types under the corresponding namespace:
+Each DevExtreme component has its own set of types. To access these types, specify `DevExpress.ui.component` where `component` is the component name in camel case. Your IDE should give you a list of available types.
 
     const dateType: DevExpress.ui.dxDateBox.DateType = 'datetime';
 
 ##### Angular
 
-To get component-specific types, import the `DxComponentTypes` declaration where `Component` is the component name:
+Each DevExtreme component has its own set of types. To access these types, import `DxComponentTypes` where `Component` is the component name.
+
+Our codebase includes the following lines (for example, in DateBox source code):
+
+    import type * as DxDateBoxTypes from "devextreme/ui/date_box_types";
+    export { DxDateBoxTypes }; 
+
+Here, `import type` is used to [import only types](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-8.html#type-only-imports-and-export) from a module, not the actual code that runs during runtime. `* as DxDateBoxTypes` means "import everything" from the module `"devextreme/ui/date_box_types"` and bundle it under the alias `DxDateBoxTypes`.
+
+We then export the `DxDateBoxTypes` alias so you can import these types in your application:
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
-    import { DxDateBoxTypes } from 'devextreme-angular/ui/date-box';
+    import { DxDateBoxTypes } from 'devextreme-angular/date-box';
 
     @Component({
         selector: 'app-root',
@@ -31,11 +42,20 @@ To get component-specific types, import the `DxComponentTypes` declaration where
     >
     </dx-date-box>
 
-After importing, search through all types using `DxDateBoxTypes.` without extra imports.
+After importing, type `DxDateBoxTypes.` to search through all available types.
 
 ##### Vue
 
-To get component-specific types, import the `DxComponentTypes` declaration where `Component` is the component name:
+Each DevExtreme component has its own set of types. To access these types, import `DxComponentTypes` where `Component` is the component name.
+
+Our codebase includes the following lines (for example, in DateBox source code):
+
+    import type * as DxDateBoxTypes from "devextreme/ui/date_box_types";
+    export { DxDateBoxTypes }; 
+
+Here, `import type` is used to [import only types](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-8.html#type-only-imports-and-export) from a module, not the actual code that runs during runtime. `* as DxDateBoxTypes` means "import everything" from the module `"devextreme/ui/date_box_types"` and bundle it under the alias `DxDateBoxTypes`.
+
+We then export the `DxDateBoxTypes` alias so you can import these types in your application:
 
     <!-- tab: App.vue -->
     <template>
@@ -49,11 +69,20 @@ To get component-specific types, import the `DxComponentTypes` declaration where
     const dateType: DxDateBoxTypes.DateType = "datetime";
     </script>
 
-After importing, search through all types using `DxDateBoxTypes.` without extra imports.
+After importing, type `DxDateBoxTypes.` to search through all available types.
 
 ##### React
 
-To get component-specific types, import the `ComponentTypes` declaration where `Component` is the component name:
+Each DevExtreme component has its own set of types. To access these types, import `ComponentTypes` where `Component` is the component name.
+
+Our codebase includes the following lines (for example, in DateBox source code):
+
+    import type * as DateBoxTypes from "devextreme/ui/date_box_types";
+    export { DateBoxTypes }; 
+
+Here, `import type` is used to [import only types](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-8.html#type-only-imports-and-export) from a module, not the actual code that runs during runtime. `* as DateBoxTypes` means "import everything" from the module `"devextreme/ui/date_box_types"` and bundle it under the alias `DateBoxTypes`.
+
+We then export the `DateBoxTypes` alias so you can import these types in your application:
 
     <!-- tab: App.tsx -->
     import DateBox, { DateBoxTypes } from 'devextreme-react/date-box';
@@ -68,6 +97,6 @@ To get component-specific types, import the `ComponentTypes` declaration where `
 
     export default App;
 
-After importing, search through all types using `DateBoxTypes.` without extra imports.
+After importing, type `DateBoxTypes.` to search through all available types.
 
 ---

@@ -1,7 +1,9 @@
+Each component includes the necessary types under its alias. However, if multiple components use the same type on the same page, you might get confused about the correct module to import from. In such cases, import the types from the `common` module.
+
 ---
 ##### jQuery
 
-Common types are located in the following namespaces:
+You can find common types under the following aliases:
 
 - DevExpress.common
 
@@ -14,8 +16,6 @@ Common types are located in the following namespaces:
     const toolbarItemsLocation: DevExpress.common.ToolbarItemLocation;
 
 ##### Angular
-
-If you need the same type for multiple components, you can import that type from the `common` module:
 
     <!-- tab: app.component.ts -->
     // In the sample below, ValidationRule is imported for each component:
@@ -51,9 +51,12 @@ If you need the same type for multiple components, you can import that type from
         formValidationRule: ValidationRule;
     }
 
-##### Vue
+Alternatively, define a union:
 
-If you need the same type for multiple components, you can also import this type from `common` module:
+    type ValidationRule = DxDataGridTypes.ValidationRule | DxFormTypes.ValidationRule;
+    const validationRule: ValidationRule;
+
+##### Vue
 
     <!-- tab: App.vue -->
     // In the sample below, ValidationRule is imported for each component:
@@ -71,11 +74,14 @@ If you need the same type for multiple components, you can also import this type
     const dataGridValidationRule: ValidationRule;
     const formValidationRule: ValidationRule;
 
+Alternatively, define a union:
+
+    type ValidationRule = DxDataGridTypes.ValidationRule | DxFormTypes.ValidationRule;
+    const validationRule: ValidationRule;
+
 ##### React
 
-If you need the same type for multiple components, you can import that type from the `common` module.
-
-When using a type for multiple components, it can be unclear from which module to import:
+    // In the sample below, ToolbarItemLocation is imported for each component:
 
     import { DataGrid, DataGridTypes } from 'devextreme-react/data-grid';
     import { Popup, PopupTypes } from 'devextreme-react/pop-up';
@@ -84,7 +90,7 @@ When using a type for multiple components, it can be unclear from which module t
     // or
     const toolbarItemsLocation: PopupTypes.ToolbarItemLocation = 'center';
 
-In such cases, import the type from a common module:
+    // In the sample below, ToolbarItemLocation is imported from the common module:
 
     import { ToolbarItemLocation } from 'devextreme-react/common';
     const toolbarItemsLocation: ToolbarItemLocation;

@@ -6,8 +6,6 @@ Event types are based on common parts:
         readonly appointmentElement: DxElement;
     };
 
-### Common Event Parts
-
 Events are [intersection types](https://www.typescriptlang.org/docs/handbook/2/objects.html#intersection-types) built up from common and specific parts:
 
     export type AppointmentTooltipShowingEvent = Cancelable & EventInfo<dxScheduler> & {

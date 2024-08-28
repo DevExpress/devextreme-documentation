@@ -1,1 +1,1 @@
-TypeScript offers tools to handle events with precision and type safety. This section lists the key aspects of handling events in DevExtreme components.
+TypeScript offers tools to handle events with precision and type safety. This section explains how to read events in DevExtreme components.

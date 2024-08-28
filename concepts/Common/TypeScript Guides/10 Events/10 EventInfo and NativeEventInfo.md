@@ -1,7 +1,7 @@
 
 Most event arguments have a core part, either `EventInfo` or `NativeEventInfo`.
 
-`EventInfo` is for synthetic events and includes the following fields:
+`EventInfo` is made for synthetic events and includes the following fields:
 
 - `component`    
 Reference to the component API.
@@ -16,7 +16,7 @@ Reference to the HTML element.
         readonly element: DxElement;
     }
 
-`NativeEventInfo` is for browser events and includes the following fields:
+`NativeEventInfo` is made for browser events and includes the following fields:
 
 - `component`    
 Reference to the component API.
@@ -48,4 +48,4 @@ Native browser event with additional fields from `EventObject`.
         stopPropagation(): void;
     }
 
-These types may include conditional elements for integration with third-party libraries. In React, they resolve to built-in browser types.
+These types may include [conditional elements](/Documentation/Guide/Common/TypeScript_Guides/Syntax_Elements/#Conditional_Types) for integration with third-party libraries.

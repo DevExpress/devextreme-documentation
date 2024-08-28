@@ -1,19 +1,22 @@
-**ItemInfo**
-
-Events involving collection items include an `ItemInfo` part.
-
-**ChangedOptionInfo**
-
-`OptionChanged` event objects include `ChangedOptionInfo`.
-
-**InitializedEventInfo**
-
-Events involving initialization use `InitializedEventInfo`.
-
-**Cancelable**
-
-If an event argument type includes `Cancelable`, the event can be canceled by setting the `cancel` property:
-
-    const onListDragStart = (e) => {
-        e.cancel = true;
-    };
+<table class="dx-table">
+    <tr>
+        <th>Event part</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>ItemInfo</td>
+        <td>Events involving collection items include an <code>ItemInfo</code> part.</td>
+    </tr>
+    <tr>
+        <td>ChangedOptionInfo</td>
+        <td><code>OptionChanged</code> event objects include <code>ChangedOptionInfo</code>.</td>
+    </tr>
+    <tr>
+        <td>InitializedEventInfo</td>
+        <td>Events involving initialization use <code>InitializedEventInfo</code>.</td>
+    </tr>
+    <tr>
+        <td>Cancelable</td>
+        <td>If an event argument type includes <code>Cancelable</code>, the event can be canceled by setting the <code>cancel</code> property.</td>
+    </tr>
+</table>

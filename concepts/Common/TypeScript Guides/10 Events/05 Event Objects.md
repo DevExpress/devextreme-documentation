@@ -17,21 +17,3 @@ The example above reads as follows:
 *The **AppointmentTooltipShowing** event object is a common synthetic event object. It is cancelable and includes **targetElement** and **appointments**.*
 
 *The **CellContextMenu** event object is a common native event. It is not cancelable, and native event may be a **MouseEvent**, **PointerEvent**, or **TouchEvent**. It includes **cellData** and **cellElement**.*
-
-If both types have plain definitions, you need to read all the props to understand their commonalities and differences:
-
-    export type AppointmentTooltipShowingEvent = {
-        cancel?: boolean;
-        readonly component: dxScheduler;
-        readonly element: DxElement;
-        readonly targetElement: DxElement;
-        readonly appointments: AppointmentTooltipShowingAppointmentInfo[];
-    };
-
-    export type CellContextMenuEvent = {
-        readonly component: dxScheduler;
-        readonly element: DxElement;
-        readonly event?: DxEvent<MouseEvent | PointerEvent | TouchEvent>;
-        readonly cellData: any;
-        readonly cellElement: DxElement;
-    };

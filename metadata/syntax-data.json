@@ -8919,15 +8919,6 @@
       "react": "Chat",
       "vue": "DxChat"
     },
-    "dxChatOptions.accessKey": {
-      "vue": "access-key"
-    },
-    "dxChatOptions.activeStateEnabled": {
-      "vue": "active-state-enabled"
-    },
-    "dxChatOptions.focusStateEnabled": {
-      "vue": "focus-state-enabled"
-    },
     "dxChatOptions.items": {
       "angular": "dxi-item",
       "react": "Item",
@@ -8947,6 +8938,9 @@
     },
     "dxChatOptions.onOptionChanged": {
       "vue": "@option-changed"
+    },
+    "dxChatOptions.registerKeyHandler": {
+      "vue": "register-key-handler"
     },
     "dxChatOptions.tabIndex": {
       "vue": "tab-index"

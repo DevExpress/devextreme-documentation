@@ -26,7 +26,6 @@
     "ui/drawer":                       "api-reference/10 UI Components/dxDrawer/9 Types",
     "ui/drop_down_box":                "api-reference/10 UI Components/dxDropDownBox/9 Types",
     "ui/drop_down_button":             "api-reference/10 UI Components/dxDropDownButton/9 Types",
-    "ui/drop_down_editor/ui.drop_down_list":             "api-reference/10 UI Components/dxDropDownList/9 Types",
     "ui/file_manager":                 "api-reference/10 UI Components/dxFileManager/9 Types",
     "ui/file_uploader":                "api-reference/10 UI Components/dxFileUploader/9 Types",
     "ui/filter_builder":               "api-reference/10 UI Components/dxFilterBuilder/9 Types",

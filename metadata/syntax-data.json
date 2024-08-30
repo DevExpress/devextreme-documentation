@@ -19711,6 +19711,9 @@
     "enums.SelectionColumnDisplayMode": {
       "vue": "selection-column-display-mode"
     },
+    "enums.SelectionSensitivity": {
+      "vue": "selection-sensitivity"
+    },
     "enums.SeriesHoverMode": {
       "vue": "series-hover-mode"
     },

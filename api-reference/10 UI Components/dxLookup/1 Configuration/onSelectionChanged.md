@@ -9,16 +9,13 @@ A function that is executed when a list item is selected or selection is cancele
 ##### param(e): ui/lookup:SelectionChangedEvent
 Information about the event.
 
-##### field(e.addedItems): Array<any>
-<!-- Description goes here -->
-
 ##### field(e.component): {WidgetName}
 The UI component's instance.
 
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.removedItems): Array<any>
+##### field(e.selectedItem): Object
 <!-- Description goes here -->
 
 ---

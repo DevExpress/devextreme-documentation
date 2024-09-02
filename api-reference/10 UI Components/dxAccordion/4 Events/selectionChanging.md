@@ -1,7 +1,7 @@
 ---
-id: dxChat.Options.activeStateEnabled
-type: Boolean
-default: true
+id: dxAccordion.selectionChanging
+hidden: 
+type: eventType
 ---
 ---
 ##### shortDescription

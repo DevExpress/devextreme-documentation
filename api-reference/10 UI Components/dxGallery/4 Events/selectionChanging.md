@@ -1,7 +1,7 @@
 ---
-id: dxChat.Options.activeStateEnabled
-type: Boolean
-default: true
+id: dxGallery.selectionChanging
+hidden: 
+type: eventType
 ---
 ---
 ##### shortDescription

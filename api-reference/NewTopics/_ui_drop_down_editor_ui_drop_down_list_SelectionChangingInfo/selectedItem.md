@@ -1,7 +1,6 @@
 ---
-id: dxChat.Options.activeStateEnabled
-type: Boolean
-default: true
+id: _ui_drop_down_editor_ui_drop_down_list_SelectionChangingInfo.selectedItem
+type: Object
 ---
 ---
 ##### shortDescription

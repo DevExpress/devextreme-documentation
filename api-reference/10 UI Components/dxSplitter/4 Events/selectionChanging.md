@@ -1,7 +1,7 @@
 ---
-id: dxChat.Options.activeStateEnabled
-type: Boolean
-default: true
+id: dxSplitter.selectionChanging
+hidden: 
+type: eventType
 ---
 ---
 ##### shortDescription

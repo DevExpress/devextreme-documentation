@@ -1,7 +1,6 @@
 ---
-id: dxChat.Options.activeStateEnabled
-type: Boolean
-default: true
+id: dxTreeView.Options.onSelectionChanging
+hidden: 
 ---
 ---
 ##### shortDescription

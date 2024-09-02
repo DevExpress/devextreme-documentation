@@ -1,7 +1,6 @@
 ---
-id: dxChat.Options.activeStateEnabled
-type: Boolean
-default: true
+id: dxActionSheet.Options.onSelectionChanging
+hidden: 
 ---
 ---
 ##### shortDescription

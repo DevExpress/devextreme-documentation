@@ -1,7 +1,6 @@
 ---
-id: dxChat.Options.activeStateEnabled
-type: Boolean
-default: true
+id: dxTileView.Options.onSelectionChanging
+hidden: 
 ---
 ---
 ##### shortDescription

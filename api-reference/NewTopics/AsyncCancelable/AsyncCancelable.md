@@ -1,7 +1,8 @@
 ---
-id: dxChat.Options.activeStateEnabled
-type: Boolean
-default: true
+id: AsyncCancelable
+module: events/index
+export: AsyncCancelable
+type: Object
 ---
 ---
 ##### shortDescription

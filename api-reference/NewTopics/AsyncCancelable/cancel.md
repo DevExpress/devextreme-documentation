@@ -1,7 +1,6 @@
 ---
-id: dxChat.Options.activeStateEnabled
-type: Boolean
-default: true
+id: AsyncCancelable.cancel
+type: Boolean | Promise<Boolean>
 ---
 ---
 ##### shortDescription

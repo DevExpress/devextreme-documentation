@@ -1,6 +1,7 @@
 ---
 id: dxChat.Options.activeStateEnabled
-hidden: 
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

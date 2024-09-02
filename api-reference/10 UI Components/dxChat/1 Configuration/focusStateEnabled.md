@@ -1,6 +1,7 @@
 ---
 id: dxChat.Options.focusStateEnabled
-hidden: 
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

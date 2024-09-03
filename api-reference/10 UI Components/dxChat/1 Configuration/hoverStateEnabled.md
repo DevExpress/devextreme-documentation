@@ -1,5 +1,5 @@
 ---
-id: dxChat.Options.activeStateEnabled
+id: dxChat.Options.hoverStateEnabled
 type: Boolean
 default: true
 ---

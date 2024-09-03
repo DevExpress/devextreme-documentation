@@ -5,6 +5,7 @@ type: Object
 inherits: AsyncCancelable,EventInfo,SelectionChangingInfo
 references: dxList.Options.onSelectionChanging
 uid: ui/list:SelectionChangingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

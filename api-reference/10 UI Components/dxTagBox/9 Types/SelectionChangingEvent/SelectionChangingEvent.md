@@ -5,6 +5,7 @@ type: Object
 inherits: AsyncCancelable,EventInfo,SelectionChangingInfo
 references: dxTagBox.Options.onSelectionChanging
 uid: ui/tag_box:SelectionChangingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

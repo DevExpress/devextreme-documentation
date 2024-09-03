@@ -5,6 +5,7 @@ export: SelectionChangingEvent
 type: Object
 inherits: AsyncCancelable,EventInfo,SelectionChangingInfo
 references: CollectionWidget.Options.onSelectionChanging
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -1,9 +1,7 @@
 ---
-id: AsyncCancelable
-module: events/index
-export: AsyncCancelable
-type: Object
-generateTypeLink: 
+id: dxChat.Options.hoverStateEnabled
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

@@ -8976,6 +8976,18 @@
       "react": "Chat",
       "vue": "DxChat"
     },
+    "dxChatOptions.activeStateEnabled": {
+      "vue": "active-state-enabled"
+    },
+    "dxChatOptions.dataSource": {
+      "vue": "data-source"
+    },
+    "dxChatOptions.focusStateEnabled": {
+      "vue": "focus-state-enabled"
+    },
+    "dxChatOptions.hoverStateEnabled": {
+      "vue": "hover-state-enabled"
+    },
     "dxChatOptions.items": {
       "angular": "dxi-item",
       "react": "Item",

@@ -2,7 +2,7 @@
 id: dxChat
 module: ui/chat
 export: default
-inherits: Widget
+inherits: Widget,DataHelperMixin
 ---
 ---
 ##### shortDescription

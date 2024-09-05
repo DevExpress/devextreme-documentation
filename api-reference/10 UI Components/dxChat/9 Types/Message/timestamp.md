@@ -1,7 +1,7 @@
 ---
 id: Message.timestamp
-type: String
-default: ''
+type: Date | Number | String
+default: undefined
 ---
 ---
 ##### shortDescription

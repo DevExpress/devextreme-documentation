@@ -25,6 +25,7 @@
     "email",
     "errorcircle",
     "event",
+    "eventall",
     "favorites",
     "find",
     "filter",
@@ -255,7 +256,9 @@
     "triangleright",
     "triangleleft",
     "optionsgear",
-    "send"
+    "send",
+    "sendfilled",
+    "chat",
 ];
 
 var divs = $.map(iconNames, function (name) {

@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.fixedPosition
-type: Enums.HorizontalEdge
+type: Enums.FixedPosition
 default: undefined
 ---
 ---

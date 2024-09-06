@@ -19579,6 +19579,9 @@
     "enums.FirstDayOfWeek": {
       "vue": "first-day-of-week"
     },
+    "enums.FixedPosition": {
+      "vue": "fixed-position"
+    },
     "enums.Format": {
       "vue": "format"
     },

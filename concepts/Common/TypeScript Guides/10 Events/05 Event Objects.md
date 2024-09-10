@@ -1,6 +1,6 @@
 Each component has event types that define arguments for handling events. Naming convention is the following: the argument type of the `contentReady` event handler is `ContentReadyEvent`.
 
-Events are unions built up from common and specific parts (to simplify reading them):
+Events are unions built up from [common and specific parts](/Documentation/Guide/Common/TypeScript_Guides/Syntax_Elements/#Writable_Fields) (to simplify reading them):
 
     export type AppointmentTooltipShowingEvent = Cancelable & EventInfo<dxScheduler> & {
         readonly targetElement: DxElement;
@@ -14,6 +14,6 @@ Events are unions built up from common and specific parts (to simplify reading t
 
 The example above reads as follows:
 
-*The **AppointmentTooltipShowing** event object is a common synthetic event object. It is cancelable and includes **targetElement** and **appointments**.*
+**AppointmentTooltipShowing** is a synthetic event which can be cancelled. The event object contains common synthetic event fields and 2 extra fields: **targetElement** and **appointments**.
 
-*The **CellContextMenu** event object is a common native event. It is not cancelable, and native event may be a **MouseEvent**, **PointerEvent**, or **TouchEvent**. It includes **cellData** and **cellElement**.*
+**CellContextMenu** is a common native event which cannot be cancelled. The event object contains common native event fields and 2 extra fields: **cellData** and **cellElement**. Underlying native event may be a MouseEvent, PointerEvent, or TouchEvent

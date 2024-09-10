@@ -1,4 +1,4 @@
-Some event objects are generic, particularly for data-aware components like Data-Grid:
+Some objects are generic, particularly for data-aware components like Data-Grid:
 
 ---
 ##### Angular

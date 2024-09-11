@@ -1,4 +1,0 @@
----
-id: dxMultiViewItem.visible
-hidden: 
----

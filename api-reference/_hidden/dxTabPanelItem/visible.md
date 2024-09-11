@@ -1,4 +1,0 @@
----
-id: dxTabPanelItem.visible
-hidden: 
----

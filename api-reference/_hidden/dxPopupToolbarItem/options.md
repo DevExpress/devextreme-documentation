@@ -26,10 +26,10 @@
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxi-toolbar-item
+        <dxi-popup-toolbar-item
             widget="dxCheckBox"
             [options]="{ text: 'Show IDs' }">
-        </dxi-toolbar-item>
+        </dxi-popup-toolbar-item>
     </dx-{widget-name}>
 
     <!-- tab: app.module.ts -->

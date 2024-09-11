@@ -28,11 +28,11 @@ The following example adds a custom item to the Popup toolbar. Note that Angular
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxi-toolbar-item ...>
+        <dxi-popup-toolbar-item ...>
             <div *dxTemplate>
                 <div>Custom Item</div>
             </div>
-        </dxi-toolbar-item>
+        </dxi-popup-toolbar-item>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

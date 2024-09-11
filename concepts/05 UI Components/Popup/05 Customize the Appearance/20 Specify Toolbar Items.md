@@ -35,18 +35,18 @@ The Popup has two toolbars: top and bottom. Items on these toolbars can be plain
     <dx-popup
         title="Popup Title"
         [(visible)]="isPopupVisible">
-        <dxi-toolbar-item
+        <dxi-popup-toolbar-item
             text="Title"
             location="before">
-        </dxi-toolbar-item>
-        <dxi-toolbar-item
+        </dxi-popup-toolbar-item>
+        <dxi-popup-toolbar-item
             widget="dxButton"
             location="after"
             [options]="{
                 text: 'Refresh',
                 onClick: refresh
             }">
-        </dxi-toolbar-item>
+        </dxi-popup-toolbar-item>
     </dx-popup>
 
     <!--TypeScript-->

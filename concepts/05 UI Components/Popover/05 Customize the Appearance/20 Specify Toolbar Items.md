@@ -42,18 +42,18 @@ The Popover has two toolbars: top and bottom. Items on these toolbars can be pla
         <div *dxTemplate="let data of 'content'">
             <p>Popover content</p>
         </div>
-        <dxi-toolbar-item
+        <dxi-popover-toolbar-item
             text="Title"
             location="before">
-        </dxi-toolbar-item>
-        <dxi-toolbar-item
+        </dxi-popover-toolbar-item>
+        <dxi-popover-toolbar-item
             widget="dxButton"
             location="after"
             [options]="{
                 text: 'Refresh',
                 onClick: refresh
             }">
-        </dxi-toolbar-item>
+        </dxi-popover-toolbar-item>
     </dx-popover>
 
     <!--TypeScript-->

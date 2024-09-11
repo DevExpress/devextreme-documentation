@@ -43,18 +43,18 @@ In the following code, two items are defined on the toolbar: one is plain text, 
         <div *dxTemplate="let data of 'content'">
             <p>{WidgetName} content</p>
         </div>
-        <dxi-toolbar-item
+        <dxi-popup-toolbar-item
             text="Title"
             location="before">
-        </dxi-toolbar-item>
-        <dxi-toolbar-item
+        </dxi-popup-toolbar-item>
+        <dxi-popup-toolbar-item
             widget="dxButton"
             location="after"
             [options]="{
                 text: 'Refresh',
                 onClick: refresh
             }">
-        </dxi-toolbar-item>
+        </dxi-popup-toolbar-item>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

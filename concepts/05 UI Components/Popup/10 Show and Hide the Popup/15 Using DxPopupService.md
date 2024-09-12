@@ -3,7 +3,7 @@ Opening popups using [services](https://angular.dev/guide/di/creating-injectable
 `DxPopupService` is imported from `'devextreme-angular/ui/popup'` and functions as a typical Angular service. The service has one method, `open`, which takes two arguments:
 
 1. The component class to be used as the content of the popup.
-2. The popup configuration, which includes properties of the Popup component.
+2. The popup configuration, which includes [properties](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/) of the Popup component.
 
 The `open` method returns an object of the `DxPopupServiceComponent` type. This type is similar to `DxPopupComponent` but includes a `contentRef` property. Use `contentRef.instance` to access the instance of the component set as the popup content.
 

@@ -1,4 +1,4 @@
-Opening popups using [services](https://angular.dev/guide/di/creating-injectable-service) is a common practice in Angular libraries. DevExtreme Popup allows you to use `DxPopupService` to initiate popups directly from .ts files without involving any template code.
+To use [services](https://angular.dev/guide/di/creating-injectable-service) for popup opening is a common practice in Angular libraries. DevExtreme Popup allows you to use `DxPopupService` to initiate popups directly from .ts files without involving a template code.
 
 `DxPopupService` is imported from `'devextreme-angular/ui/popup'` and functions as a typical Angular service. The service has one method, `open`, which takes two arguments:
 

@@ -6,7 +6,7 @@ references: dxDataGrid.Options.selection.sensitivity
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies sensitivity modes.
 
 ---
 <!-- Description goes here -->

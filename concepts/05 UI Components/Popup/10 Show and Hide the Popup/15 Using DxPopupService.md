@@ -11,6 +11,8 @@ The `open` method returns an object of the `DxPopupServiceComponent` type. This 
 ##### Angular
 
     <!-- tab: app.component.ts -->
+    import { DxPopupService } from 'devextreme-angular/ui/popup';
+    // ...
     export class AppComponent {
         employees: Employee[];
 

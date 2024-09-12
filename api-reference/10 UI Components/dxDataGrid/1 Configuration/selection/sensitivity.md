@@ -24,7 +24,7 @@ Strings with different base letters or case are unequal. Examples: a ≠ b, a = 
 - *"variant"*    
 Strings with different base letters, accents, diacritic marks, or case are unequal. Other differences may also apply. Examples: a ≠ b, a ≠ á, a ≠ A.
 
-The following code snippet filters the initial selection for diacritics. As a result, 'paris' and 'PARIS' are checked, but not 'Parïs'.
+The following code snippet filters the initial selection for diacritics. As a result, 'apple' and 'APPLE' are checked, but not 'Àpple'.
 
 ---
 ##### jQuery
@@ -37,14 +37,14 @@ The following code snippet filters the initial selection for diacritics. As a re
                 deferred: true,
                 sensitivity: 'accent'
             },
-            selectionFilter: ['city', '=', 'Paris']
+            selectionFilter: ['fruit', '=', 'Apple']
         });
     });
 
     const dataSource = [ 
-        { city: 'paris' },
-        { city: 'Parïs' },
-        { city: 'PARIS' }
+        { fruit: 'apple' },
+        { fruit: 'Àpple' },
+        { fruit: 'APPLE' }
     ];
 
 ##### Angular
@@ -72,12 +72,12 @@ The following code snippet filters the initial selection for diacritics. As a re
     })
     export class AppComponent {
         dataSource = [
-            { city: 'paris' },
-            { city: 'Parïs' },
-            { city: 'PARIS' }
+            { fruit: 'apple' },
+            { fruit: 'Àpple' },
+            { fruit: 'APPLE' }
         ];
 
-        selectionFilter = ['city', '=', 'Paris'];
+        selectionFilter = ['fruit', '=', 'Apple'];
     }
 
 ##### Vue
@@ -100,12 +100,12 @@ The following code snippet filters the initial selection for diacritics. As a re
     import DxDataGrid, { DxSelection } from "devextreme-vue/data-grid";
 
     const dataSource = [ 
-        { city: 'paris' },
-        { city: 'Parïs' },
-        { city: 'PARIS' }
+        { fruit: 'apple' },
+        { fruit: 'Àpple' },
+        { fruit: 'APPLE' }
     ];
         
-    const selectionFilter = ["city", "=", "Paris"];
+    const selectionFilter = ['fruit', '=', 'Apple'];
     </script>
 
 ##### React
@@ -115,12 +115,12 @@ The following code snippet filters the initial selection for diacritics. As a re
     import DataGrid, { Selection } from 'devextreme-react/data-grid';
 
     const dataSource = [
-        { city: 'paris' },
-        { city: 'Parïs' },
-        { city: 'PARIS' }
+        { fruit: 'apple' },
+        { fruit: 'Àpple' },
+        { fruit: 'APPLE' }
     ];
 
-    const selectionFilter = ['city', '=', 'Paris'];
+    const selectionFilter = ['fruit', '=', 'Apple'];
 
     function App() {
         return (

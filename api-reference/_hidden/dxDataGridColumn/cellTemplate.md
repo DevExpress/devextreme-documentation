@@ -82,7 +82,7 @@ The code snippet below uses the `watch` function. You can test the snippet in th
 
 Note the following:
 
-- You cannot call `watch` in a cell which data you want to track.
+- You cannot call `watch` in a cell in which you want to track data.
 - The data in the cell where `watch` is called should remain constant.
 
 <!-- ... -->

@@ -1,6 +1,6 @@
 DevExtreme Popup includes a `DxPopupService` that allows you to initiate popups directly from .ts files without template code. The use of [services](https://angular.dev/guide/di/creating-injectable-service) that display popups is a common practice in Angular libraries. 
 
-`DxPopupService` is imported from `'devextreme-angular/ui/popup'` and functions as a typical Angular service. The service has one method, `open`, which takes two arguments:
+`DxPopupService` is imported from `'devextreme-angular/ui/popup'` and functions as a typical Angular service. The service has one method, `open` that takes two arguments:
 
 1. The Angular component class to be used as the content of the popup.
 2. The popup configuration, which includes [properties](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/) of the Popup component.

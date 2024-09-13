@@ -71,6 +71,36 @@ The following details should be taken into account when you use a **cellTemplate
 
 - Template values have no effect on data operations. Implement the column's [calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue') or [calculateDisplayValue](/api-reference/_hidden/GridBaseColumn/calculateDisplayValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateDisplayValue') option to transform the cell's underlying value.
 
+---
+##### jQuery
+
+The code snippet below uses the `watch` function. You can test the snippet in the [Real-Time Updates](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RealTimeUpdates/) demo.
+
+Note the following:
+
+- You cannot call `watch` in a cell in which you want to track data.
+- The data in the cell where `watch` is called should remain constant.
+
+<!-- ... -->
+
+    <!-- tab: index.js -->
+    $("#dataGridContainer").dxDataGrid({
+        columns: [{
+            dataField: 'ProductName', 
+            dataType: 'string',
+            cellTemplate(container, info) {
+                const getter = (data) => data.Amount;
+                const handler = (newValue) => {
+                    container.css('background-color', newValue < 100000 ? 'red' : 'green');
+                };
+                info.watch(getter, handler);
+                return $('<div>').text(info.data.ProductName);
+            }
+        }]
+    });
+
+---
+
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CellCustomization/"
 }

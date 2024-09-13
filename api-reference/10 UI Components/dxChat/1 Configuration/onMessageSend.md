@@ -19,8 +19,5 @@ default: null
 ##### field(e.event): event
 <!-- Description goes here -->
 
-##### field(e.message): Message
-<!-- Description goes here -->
-
 ---
 <!-- Description goes here -->

@@ -199,6 +199,29 @@ You should call the [updateDimensions()](/api-reference/10%20UI%20Components/Gri
 
 ---
 
+---
+##### jQuery
+
+The code snippet below uses the `watch` function. You can test the snippet in the [Real-Time Updates](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RealTimeUpdates/) demo.
+
+    <!-- tab: index.js -->
+    $("#dataGridContainer").dxDataGrid({
+        // ...
+        masterDetail: {
+            enabled: true,
+            template: function (container, info) {
+                const getter = (data) => data.Amount;
+                const handler = (newValue) => {
+                    container.css('background-color', newValue < 100000 ? 'red' : 'green');
+                };
+                info.watch(getter, handler);
+                return $('<div>').text(info.data.Amount);
+            }
+        }
+    });
+
+---
+
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-datagrid-access-every-master-detail-grid-from-code"
 }

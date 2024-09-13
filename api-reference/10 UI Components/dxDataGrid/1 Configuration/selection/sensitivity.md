@@ -8,7 +8,7 @@ default: 'base'
 Specifies how to filter selected DataGrid rows based on sensitivity.
 
 ---
-This property is in effect only if selection is [deferred](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#deferred).
+This property is in effect only if selection is [deferred](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/selection/deferred.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#deferred').
 
 Available values:
 

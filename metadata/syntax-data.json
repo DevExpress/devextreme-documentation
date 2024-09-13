@@ -304,6 +304,11 @@
       "react": "_ui_chat_MessageSendEvent",
       "vue": "Dx_ui_chat_MessageSendEvent"
     },
+    "_ui_chat_MessageSendEvent.message": {
+      "angular": "dxo-message",
+      "react": "Message",
+      "vue": "DxMessage"
+    },
     "_ui_chat_OptionChangedEvent": {
       "angular": "dxo-ui-chat--option-changed-event",
       "react": "_ui_chat_OptionChangedEvent",

@@ -3,7 +3,7 @@ DevExtreme Popup includes a `DxPopupService` that allows you to initiate popups 
 `DxPopupService` is imported from `'devextreme-angular/ui/popup'` and functions as a typical Angular service. The service has one method, `open` that takes two arguments:
 
 1. The Angular component class to be used as the content of the popup.
-2. The popup configuration, which includes [properties](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/) of the Popup component.
+2. The popup configuration, which includes [properties](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/') of the Popup component.
 
 The `open` method returns a `DxPopupServiceComponent` object. This type extends `DxPopupComponent` with a `contentRef` property. Use `contentRef.instance` to access the component that serves as popup content.
 

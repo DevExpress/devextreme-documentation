@@ -25,8 +25,7 @@ During the binding process, the UI component creates a shape for every bound nod
                 }),
                 keyExpr: "ID",
                 parentKeyExpr: "Head_ID",            
-                textExpr: "Title",
-                heightExpr: function() {return 0.4} 
+                textExpr: "Title"
             },
         });
     });
@@ -77,7 +76,6 @@ During the binding process, the UI component creates a shape for every bound nod
             keyExpr="ID"
             textExpr="Title"
             parentKeyExpr="Head_ID"
-            [heightExpr]="itemHeightExpr"
         >
         </dxo-nodes>
     </dx-diagram>
@@ -101,9 +99,6 @@ During the binding process, the UI component creates a shape for every bound nod
             key: "ID",
             data: service.getEmployees(),
             });
-        }
-        itemHeightExpr() {
-            return 0.4;
         }
     }
 
@@ -178,7 +173,6 @@ During the binding process, the UI component creates a shape for every bound nod
             :key-expr="'ID'"
             :text-expr="'Title'"
             :parent-key-expr="'Head_ID'"
-            :height-expr="itemHeightExpr"
         />
     </DxDiagram>
     </template>
@@ -201,12 +195,7 @@ During the binding process, the UI component creates a shape for every bound nod
                     data: service.getEmployees(),
                 })
             };
-        },
-        methods: {
-            itemHeightExpr() {
-                return 0.4;
-            },
-        },
+        }
     };
     </script>
 
@@ -272,10 +261,6 @@ During the binding process, the UI component creates a shape for every bound nod
         data: service.getEmployees(),
     });
 
-    const itemHeightExpr = () => {
-        return 0.4;
-    }
-
     const App = () => {
         return (
             <Diagram>
@@ -284,7 +269,6 @@ During the binding process, the UI component creates a shape for every bound nod
                 keyExpr="ID" 
                 textExpr="Title" 
                 parentKeyExpr="Head_ID"
-                heightExpr={itemHeightExpr}
             />
             </Diagram>
         );

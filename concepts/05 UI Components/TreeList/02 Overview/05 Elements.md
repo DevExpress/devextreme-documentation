@@ -1,4 +1,4 @@
-Below is a map of elements. Click on an element to navigate to a topic related to that element.
+Click an element in the map below to navigate to the topic related to that element.
 
 <p><img src="/images/treelist/tree-list-elements.png" alt="TreeList elements" usemap="#tree-list-elements">
 

@@ -1,4 +1,4 @@
-Below is an element map. A click on an element navigates to the topic related to this element.
+Below is a map of elements. Click on an element to navigate to a topic related to that element.
 
 <p><img src="/images/Scheduler/scheduler-elements.png" alt="Scheduler elements" usemap="#scheduler-elements">
 

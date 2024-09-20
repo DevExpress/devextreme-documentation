@@ -10,7 +10,7 @@ DevExtreme Scheduler supports the following operations with appointments:
 Scheduler allows you to create appointments that [repeat at a specified interval](/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Types/#Recurring_Appointments).
 
 - **Variety of views**     
-The Scheduler component includes multiple view types:
+This Scheduler component includes multiple view types:
     - [Day](/Documentation/Guide/UI_Components/Scheduler/Views/View_Types/#Day_View)
     - [Week](/Documentation/Guide/UI_Components/Scheduler/Views/View_Types/#Week_and_WorkWeek_Views)
     - [Month](/Documentation/Guide/UI_Components/Scheduler/Views/View_Types/#Month_View)
@@ -28,4 +28,4 @@ You can customize a variety of Scheduler elements:
 You can specify a different [time zone](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#timeZone) for the whole Scheduler component, as well as for [individual appointments](/Documentation/Guide/UI_Components/Scheduler/Time_Zone_Support/).
 
 - **Lazy loading**    
-If the  Scheduler performance suffers due to a high number of appointments, you can [lazy load data](/Documentation/Guide/UI_Components/Scheduler/Optimize_Scheduler_Performance_with_Lazy_Loading/).
+If Scheduler performance suffers due to a high number of appointments, you can [lazy load data](/Documentation/Guide/UI_Components/Scheduler/Optimize_Scheduler_Performance_with_Lazy_Loading/).

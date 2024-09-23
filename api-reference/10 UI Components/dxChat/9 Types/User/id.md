@@ -1,7 +1,6 @@
 ---
 id: User.id
 type: Number | String
-default: string
 ---
 ---
 ##### shortDescription

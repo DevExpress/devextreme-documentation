@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed after a message is sent.
 
 ##### param(e): ui/chat:MessageSendEvent
 <!-- Description goes here -->

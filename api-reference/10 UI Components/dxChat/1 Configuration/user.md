@@ -5,7 +5,7 @@ default: { id: new Guid().toString() }
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a current chat user.
 
 ---
 <!-- Description goes here -->

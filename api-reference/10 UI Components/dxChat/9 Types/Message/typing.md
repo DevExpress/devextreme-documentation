@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether to show a typing bubble.
 
 ---
 <!-- Description goes here -->

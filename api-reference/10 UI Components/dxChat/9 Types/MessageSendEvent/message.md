@@ -4,7 +4,7 @@ type: Message
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A message that was sent.
 
 ---
 <!-- Description goes here -->

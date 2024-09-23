@@ -4,16 +4,16 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before the UI component is [disposed of](/api-reference/10%20UI%20Components/DOMComponent/3%20Methods/dispose().md '{basewidgetpath}/Methods/#dispose').
 
 ##### param(e): ui/chat:DisposingEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ---
 <!-- Description goes here -->

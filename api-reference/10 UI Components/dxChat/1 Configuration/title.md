@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies text for a chat header.
 
 ---
-<!-- Description goes here -->
+The chat header element is hidden if you do not specify this property. 

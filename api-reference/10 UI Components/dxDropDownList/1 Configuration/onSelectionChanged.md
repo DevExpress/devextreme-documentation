@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed when a list item is selected or selection is canceled.
+A function that is executed after a list item is selected or selection is canceled.
 
 ##### param(e): Object
 Information about the event.

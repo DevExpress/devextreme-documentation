@@ -4,7 +4,7 @@ type: Number | String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+User's identification number or string.
 
 ---
 <!-- Description goes here -->

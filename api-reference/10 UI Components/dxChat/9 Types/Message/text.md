@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Text of the message.
 
 ---
 <!-- Description goes here -->

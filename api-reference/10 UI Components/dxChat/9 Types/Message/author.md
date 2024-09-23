@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An id of a user who is the author of the message.
 
 ---
 <!-- Description goes here -->

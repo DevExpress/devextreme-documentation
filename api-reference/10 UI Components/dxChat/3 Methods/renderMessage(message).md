@@ -12,7 +12,7 @@ A message to be rendered.
 ---
 ##### jQuery
 
-This method is the primary way to render a new message in jQuery. Do not use this method if you use [items](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items), and vice versa.
+[note] This method is the primary way to render a new message in jQuery. Do not use this method if you use [items](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items), and vice versa.
 
 ##### Angular
 

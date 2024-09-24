@@ -199,6 +199,59 @@ During the binding process, the UI component creates a shape for every bound nod
     };
     </script>
 
+    <!-- tab: data.js -->
+    const employees = [
+        {
+            ID: 3,
+            Full_Name: "Arthur Miller",
+            Title: "CTO",
+        },
+        {
+            ID: 6,
+            Head_ID: 3,
+            Full_Name: "Brett Wade",
+            Title: "IT Manager",
+        },
+        {
+            ID: 9,
+            Head_ID: 3,
+            Full_Name: "Barb Banks",
+            Title: "Support Manager",
+        },
+        {
+            ID: 18,
+            Head_ID: 9,
+            Full_Name: "James Anderson",
+            Title: "Support Assistant",
+        },
+        {
+            ID: 21,
+            Head_ID: 6,
+            Full_Name: "Taylor Riley",
+            Title: "Network Admin",
+        },
+        {
+            ID: 23,
+            Head_ID: 6,
+            Full_Name: "Wally Hobbs",
+            Title: "Programmer",
+        },
+        {
+            ID: 24,
+            Head_ID: 6,
+            Full_Name: "Brad Jameson",
+            Title: "Programmer",
+        },
+    ];
+
+    export default {
+        getEmployees() {
+            return employees;
+        }
+    }
+
+##### React
+
     <!-- tab: App.js -->
     import React from "react";
     import Diagram, { Nodes } from "devextreme-react/diagram";

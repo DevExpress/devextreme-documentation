@@ -20,8 +20,8 @@ DataGrid uses internal binding logic for the edit form. You can call the [cellVa
         <!-- tab: index.js -->
         const grid = $("#data-grid-container").dxDataGrid("instance");
         const key = grid.option("editing.editRowKey");
-        index = grid.getRowIndexByKey(key); // get
-        value = grid.cellValue(index, "CompanyName"); //set
-        grid.cellValue(index, "CompanyName", "new value");
+        index = grid.getRowIndexByKey(key);
+        value = grid.cellValue(index, "CompanyName"); // get
+        grid.cellValue(index, "CompanyName", "new value"); //set
 
     ---

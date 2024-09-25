@@ -20,7 +20,7 @@ Our codebase includes the following lines (for example, in DateBox source code):
 
 Here, `import type` is used to [import only types](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-8.html#type-only-imports-and-export) from a module, not the actual code that runs during runtime. `* as DxDateBoxTypes` means "import everything" from the module `"devextreme/ui/date_box_types"` and bundle it under the name `DxDateBoxTypes`.
 
-We then export the `DxDateBoxTypes` composite bundle so you can import these types in your application:
+We then export `DxDateBoxTypes` so you can import these types in your application:
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -53,9 +53,9 @@ Our codebase includes the following lines (for example, in DateBox source code):
     import type * as DxDateBoxTypes from "devextreme/ui/date_box_types";
     export { DxDateBoxTypes }; 
 
-Here, `import type` is used to [import only types](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-8.html#type-only-imports-and-export) from a module, not the actual code that runs during runtime. `* as DxDateBoxTypes` means "import everything" from the module `"devextreme/ui/date_box_types"` and bundle it under the alias `DxDateBoxTypes`.
+Here, `import type` is used to [import only types](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-8.html#type-only-imports-and-export) from a module, not the actual code that runs during runtime. `* as DxDateBoxTypes` means "import everything" from the module `"devextreme/ui/date_box_types"` and bundle it under the name `DxDateBoxTypes`.
 
-We then export the `DxDateBoxTypes` alias so you can import these types in your application:
+We then export `DxDateBoxTypes` so you can import these types in your application:
 
     <!-- tab: App.vue -->
     <template>
@@ -80,9 +80,9 @@ Our codebase includes the following lines (for example, in DateBox source code):
     import type * as DateBoxTypes from "devextreme/ui/date_box_types";
     export { DateBoxTypes }; 
 
-Here, `import type` is used to [import only types](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-8.html#type-only-imports-and-export) from a module, not the actual code that runs during runtime. `* as DateBoxTypes` means "import everything" from the module `"devextreme/ui/date_box_types"` and bundle it under the alias `DateBoxTypes`.
+Here, `import type` is used to [import only types](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-8.html#type-only-imports-and-export) from a module, not the actual code that runs during runtime. `* as DateBoxTypes` means "import everything" from the module `"devextreme/ui/date_box_types"` and bundle it under the name `DateBoxTypes`.
 
-We then export the `DateBoxTypes` alias so you can import these types in your application:
+We then export `DateBoxTypes` so you can import these types in your application:
 
     <!-- tab: App.tsx -->
     import DateBox, { DateBoxTypes } from 'devextreme-react/date-box';

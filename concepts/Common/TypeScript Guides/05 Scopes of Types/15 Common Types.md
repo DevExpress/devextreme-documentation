@@ -84,7 +84,7 @@ Alternatively, define a union:
     // In the sample below, ToolbarItemLocation is imported for each component:
 
     import { DataGrid, DataGridTypes } from 'devextreme-react/data-grid';
-    import { Popup, PopupTypes } from 'devextreme-react/pop-up';
+    import { Popup, PopupTypes } from 'devextreme-react/popup';
 
     const toolbarItemsLocation: DataGridTypes.ToolbarItemLocation = 'center';
     // or

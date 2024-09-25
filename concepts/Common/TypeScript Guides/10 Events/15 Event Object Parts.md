@@ -1,7 +1,17 @@
+Most event arguments have a core part, either `EventInfo` or `NativeEventInfo`. These types may include [conditional elements](/Documentation/Guide/Common/TypeScript_Guides/Syntax_Elements/#Conditional_Types) for integration with third-party libraries.
+
 <table class="dx-table">
     <tr>
         <th>Event part</th>
         <th>Description</th>
+    </tr>
+    <tr>
+        <td><a href="/Documentation/ApiReference/Common_Types/events/EventInfo/">EventInfo</a></td>
+        <td><code>EventInfo</code> is used for synthetic events.</td>
+    </tr>
+    <tr>
+        <td><a href="/Documentation/ApiReference/Common_Types/events/NativeEventInfo/">NativeEventInfo</a></td>
+        <td><code>NativeEventInfo</code> is used for browser events.</td>
     </tr>
     <tr>
         <td><a href="/Documentation/ApiReference/Common_Types/events/ItemInfo/">ItemInfo</a></td>

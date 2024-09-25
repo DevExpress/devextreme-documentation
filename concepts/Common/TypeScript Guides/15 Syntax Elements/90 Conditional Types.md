@@ -6,10 +6,4 @@ When navigating through DevExtreme sources, you can find conditional types like 
 
 These conditional types are needed for integrating with third-party libraries. 
 
----
-
-##### React
-
-In React, you can ignore them. They resolve to built-in BrowserTypes: specific `HTMLElement` and browser `Event` extended with DevExtreme’s `EventObject` mixin.
-
----
+In {Framework}, you can ignore them. They resolve to built-in BrowserTypes: specific `HTMLElement` and browser `Event` extended with DevExtreme’s `EventObject` mixin.

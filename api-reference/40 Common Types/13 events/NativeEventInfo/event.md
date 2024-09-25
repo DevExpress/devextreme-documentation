@@ -4,7 +4,7 @@ type: event
 ---
 ---
 ##### shortDescription
-Specifies the executed event.
+Native browser event with additional fields from `EventObject`.
 
 ---
 <!-- Description goes here -->

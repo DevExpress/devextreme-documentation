@@ -16,4 +16,4 @@ The example above reads as follows:
 
 **AppointmentTooltipShowing** is a synthetic event which can be cancelled. The event object contains common synthetic event fields and 2 extra fields: **targetElement** and **appointments**.
 
-**CellContextMenu** is a common native event which cannot be cancelled. The event object contains common native event fields and 2 extra fields: **cellData** and **cellElement**. Underlying native event may be a MouseEvent, PointerEvent, or TouchEvent
+**CellContextMenu** is a common native event which cannot be cancelled. The event object contains common native event fields and 2 extra fields: **cellData** and **cellElement**. Underlying native event may be a MouseEvent, PointerEvent, or TouchEvent.

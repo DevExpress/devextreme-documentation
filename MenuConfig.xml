@@ -86,6 +86,8 @@
 
   <MenuRule Destination="75 Troubleshooting" SourcePattern="Howto:^80 Troubleshooting" />
 
+  <MenuRule Destination="77 Migrate from Reactive" SourcePattern="Howto:^50 React Components/65 Migrate from Reactive" />
+
   <MenuRule Destination="80 Migrate to the New Version" SourcePattern="Howto:^Common/Migrate to the New Version" />
 
   <MenuRule Destination="10 UI Components/zz Common Types" SourcePattern="ApiReference:^40 Common Types" />

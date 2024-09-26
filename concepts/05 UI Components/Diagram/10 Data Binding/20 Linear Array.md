@@ -250,6 +250,8 @@ During the binding process, the UI component creates a shape for every bound nod
         }
     }
 
+##### React
+
     <!-- tab: App.js -->
     import React from "react";
     import Diagram, { Nodes } from "devextreme-react/diagram";

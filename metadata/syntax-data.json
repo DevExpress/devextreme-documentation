@@ -13672,6 +13672,17 @@
     "dxMapOptions.onRouteRemoved": {
       "vue": "@route-removed"
     },
+    "dxMapOptions.providerConfig": {
+      "angular": "dxo-provider-config",
+      "react": "ProviderConfig",
+      "vue": "DxProviderConfig"
+    },
+    "dxMapOptions.providerConfig.mapId": {
+      "vue": "map-id"
+    },
+    "dxMapOptions.providerConfig.useAdvancedMarkers": {
+      "vue": "use-advanced-markers"
+    },
     "dxMapOptions.routes": {
       "angular": "dxi-route",
       "react": "Route",

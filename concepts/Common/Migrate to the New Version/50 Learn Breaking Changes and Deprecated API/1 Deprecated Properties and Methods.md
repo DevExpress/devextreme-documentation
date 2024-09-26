@@ -36,6 +36,10 @@
 <td><a href="https://js.devexpress.com/Documentation/24_2/ApiReference/UI_Components/dxLookup/Configuration/#fullScreen">fullScreen</a><br><a href="https://js.devexpress.com/Documentation/24_2/ApiReference/UI_Components/dxLookup/Configuration/#valueChangeEvent">valueChangeEvent</a></td>
 </tr>
 <tr>
+<td>Map</td>
+<td><b>providerConfig.</b><a href="https://js.devexpress.com/Documentation/24_2/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#useAdvancedMarkers">useAdvancedMarkers</a></td>
+</tr>
+<tr>
 <td>PivotGrid</td>
 <td><b>headerFilter.</b><a href="https://js.devexpress.com/Documentation/24_2/ApiReference/UI_Components/dxPivotGrid/Configuration/headerFilter/#allowSearch">allowSearch</a><br><b>headerFilter.</b><a href="https://js.devexpress.com/Documentation/24_2/ApiReference/UI_Components/dxPivotGrid/Configuration/headerFilter/#searchTimeout">searchTimeout</a></td>
 </tr>

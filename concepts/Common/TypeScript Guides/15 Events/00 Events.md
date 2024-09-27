@@ -1,0 +1,1 @@
+This section explains how to read events in DevExtreme components.

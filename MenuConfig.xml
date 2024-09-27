@@ -38,11 +38,6 @@
 
   <MenuRule Destination="050 Getting Started/31 Support for Angular Signals" SourcePattern="Howto:^40 Angular Components/10 Getting Started/90 Support for Angular Signals" VisibleFor="Angular" />
   
-  <MenuRule Destination="050 Getting Started/60 TypeScript Support" SourcePattern="Howto:^40 Angular Components/70 TypeScript Support" VisibleFor="Angular" />
-  <MenuRule Destination="050 Getting Started/61 TypeScript Support" SourcePattern="Howto:^55 Vue Components/70 TypeScript Support" VisibleFor="Vue" />
-  <MenuRule Destination="050 Getting Started/62 TypeScript Support" SourcePattern="Howto:^50 React Components/70 TypeScript Support" VisibleFor="React" />
-  <MenuRule Destination="050 Getting Started/63 TypeScript Support" SourcePattern="Howto:^Common/TypeScript Support" VisibleFor="jQuery" />
-
   <MenuRule Destination="050 Getting Started/71 Supported Angular Versions" SourcePattern="Howto:^40 Angular Components/80 Supported Versions" VisibleFor="Angular" />
   <MenuRule Destination="050 Getting Started/72 Supported Vue Versions" SourcePattern="Howto:^55 Vue Components/80 Supported Versions" VisibleFor="Vue" />
   <MenuRule Destination="050 Getting Started/73 Supported React Versions" SourcePattern="Howto:^50 React Components/80 Supported Versions" VisibleFor="React" />
@@ -54,6 +49,8 @@
   <MenuRule Destination="20 Data Validation/00 Overview" SourcePattern="Howto:^05 UI Components/zz Common/05 UI Widgets/20 Data Validation" />
   <MenuRule Destination="20 Data Validation/99 API/$1" SourcePattern="ApiReference:^10 UI Components/dx(Validator|ValidationGroup|ValidationSummary)" />
   <MenuRule Destination="20 Data Validation/99 API/zz validationEngine" SourcePattern="ApiReference:^50 Common/utils/validationEngine" />
+
+  <MenuRule Destination="25 TypeScript Guides" SourcePattern="Howto:^Common/TypeScript Guides" />
 
   <MenuRule Destination="30 Localization and Globalization/Overview" SourcePattern="Howto:^Common/Localization" />
   <MenuRule Destination="30 Localization and Globalization/Value Formatting" SourcePattern="Howto:^Common/Value Formatting" />

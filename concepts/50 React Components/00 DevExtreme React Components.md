@@ -18,7 +18,7 @@ The DevExtreme React UI Component Suite provides the following platform-specific
 
 - [Declarative configuration syntax](/concepts/50%20React%20Components/40%20Component%20Configuration%20Syntax/00%20Component%20Configuration%20Syntax.md '/Documentation/Guide/React_Components/Component_Configuration_Syntax/')
 
-- [TypeScript support](/concepts/50%20React%20Components/70%20TypeScript%20Support/00%20TypeScript%20Support.md '/Documentation/Guide/React_Components/TypeScript_Support/')
+- [TypeScript support](/Documentation/Guide/Common/TypeScript_Guides/Scopes_of_Types/)
 
 All DevExtreme UI component suites, including React, share architecture and core features. The following core features are common to all suites:
 

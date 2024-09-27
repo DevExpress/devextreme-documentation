@@ -1,0 +1,1 @@
+If you build an application with DevExtreme components in TypeScript, you need to work with DevExpress types. Review the following sections for instructions on how to correctly use component-specific types and types shared by multiple controls/libraries. It also explains how to identify internal DevExpress infrastructure types that you should avoid in your applications. 

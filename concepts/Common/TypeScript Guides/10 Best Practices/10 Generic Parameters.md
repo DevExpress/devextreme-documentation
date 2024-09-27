@@ -1,4 +1,4 @@
-Some objects are generic, particularly for data-aware components like Data-Grid:
+Some types are generic. This is mostly the case for data-aware component types, such as DataGrid:
 
 ---
 ##### Angular

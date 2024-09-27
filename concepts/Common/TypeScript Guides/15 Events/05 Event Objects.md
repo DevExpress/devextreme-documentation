@@ -1,6 +1,6 @@
-Each component has event types that define arguments for handling events. Naming convention is the following: the argument type of the `contentReady` event handler is `ContentReadyEvent`.
+DevExtreme components define types that supply event argument data. Naming convention is the following: the argument type of the `contentReady` event handler is `ContentReadyEvent`.
 
-Events are unions built up from [common and specific parts](/Documentation/Guide/Common/TypeScript_Guides/Events/#Writable_Fields) (to simplify reading them):
+Event objects are unions built up from [basic event types](/Documentation/Guide/Common/TypeScript_Guides/Events/#Event_Object_Parts). This makes event definitions easily readable:
 
     export type AppointmentTooltipShowingEvent = Cancelable & EventInfo<dxScheduler> & {
         readonly targetElement: DxElement;

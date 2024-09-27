@@ -8,9 +8,9 @@ Each DevExtreme component has its own set of types. To access these types, speci
 
 ##### Angular
 
-Each DevExtreme component has its own set of types. To access these types, import `DxComponentTypes` where `Component` is the component name.
+Each DevExtreme component has its own set of types. Use [aggregated exports](/Documentation/Guide/Common/TypeScript_Guides/Syntax_Elements/#Aggregated_Export) to import all component types with a single statement.
 
-We export the `DxDateBoxTypes` [aggregated export](/Documentation/Guide/Common/TypeScript_Guides/Syntax_Elements/#Aggregated_Export) so you can import these types in your application:
+To access these types, import `DxComponentTypes` where `Component` is the component name. For example, if you work with a `DateBox`, you need to import `DxDateBoxTypes`.
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -36,9 +36,9 @@ After importing, type `DxDateBoxTypes.` to search through all available types.
 
 ##### Vue
 
-Each DevExtreme component has its own set of types. To access these types, import `DxComponentTypes` where `Component` is the component name.
+Each DevExtreme component has its own set of types. Use [aggregated exports](/Documentation/Guide/Common/TypeScript_Guides/Syntax_Elements/#Aggregated_Export) to import all component types with a single statement.
 
-We export `DxDateBoxTypes` [aggregated export](/Documentation/Guide/Common/TypeScript_Guides/Syntax_Elements/#Aggregated_Export) so you can import these types in your application:
+To access these types, import `DxComponentTypes` where `Component` is the component name. For example, if you work with a `DateBox`, you need to import `DxDateBoxTypes`.
 
     <!-- tab: App.vue -->
     <template>
@@ -56,9 +56,9 @@ After importing, type `DxDateBoxTypes.` to search through all available types.
 
 ##### React
 
-Each DevExtreme component has its own set of types. To access these types, import `ComponentTypes` where `Component` is the component name.
+Each DevExtreme component has its own set of types. Use [aggregated exports](/Documentation/Guide/Common/TypeScript_Guides/Syntax_Elements/#Aggregated_Export) to import all component types with a single statement.
 
-We export `DateBoxTypes` [aggregated export](/Documentation/Guide/Common/TypeScript_Guides/Syntax_Elements/#Aggregated_Export) so you can import these types in your application:
+To access these types, import `ComponentTypes` where `Component` is the component name. For example, if you work with a `DateBox`, you need to import `DateBoxTypes`.
 
     <!-- tab: App.tsx -->
     import DateBox, { DateBoxTypes } from 'devextreme-react/date-box';

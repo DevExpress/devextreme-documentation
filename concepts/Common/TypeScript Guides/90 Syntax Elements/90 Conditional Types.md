@@ -9,7 +9,7 @@ These conditional types enable integration with third-party libraries. You can i
 ---
 ##### jQuery
 
-They resolve to JQuery types: `JQuery<HTMLElement>` and `JQueryEventObject`.
+They resolve to JQuery types: `JQuery<HTMLElement>` and `JQueryEventObject` with a `cancel` field.
 
 ##### Angular
 

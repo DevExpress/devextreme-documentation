@@ -1,4 +1,4 @@
-Each component includes the necessary types under its alias. However, if multiple components use the same type on the same page, you might get confused about the correct module to import from. In such cases, import the types from the `common` module.
+Each component includes the necessary types under its alias. However, if multiple components use the same type on the same page, it might be unclear which module to import from. In such cases, import the types from the `common` module.
 
 ---
 ##### jQuery

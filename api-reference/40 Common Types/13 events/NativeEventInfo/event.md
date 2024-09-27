@@ -4,7 +4,7 @@ type: event
 ---
 ---
 ##### shortDescription
-Native browser event with additional fields from `EventObject`.
+A native browser event with additional fields from `EventObject`.
 
 ---
 <!-- Description goes here -->

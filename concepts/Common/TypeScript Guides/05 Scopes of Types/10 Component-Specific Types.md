@@ -8,7 +8,7 @@ Each DevExtreme component has its own set of types. To access these types, speci
 
 ##### Angular
 
-Each DevExtreme component has its own set of types. Use [aggregated exports](/Documentation/Guide/Common/TypeScript_Guides/Syntax_Elements/#Aggregated_Export) to import all component types with a single statement.
+Each DevExtreme component has its own set of types. Use [aggregated exports](/concepts/Common/TypeScript%20Guides/90%20Syntax%20Elements/15%20Aggregated%20Export.md '/Documentation/Guide/Common/TypeScript_Guides/Syntax_Elements/#Aggregated_Export') to import all component types with a single statement.
 
 To access these types, import `DxComponentTypes` where `Component` is the component name. For example, you need to import `DxDateBoxTypes` if you work with a `DateBox`.
 
@@ -36,7 +36,7 @@ After importing, type `DxDateBoxTypes.` to search through all available types.
 
 ##### Vue
 
-Each DevExtreme component has its own set of types. Use [aggregated exports](/Documentation/Guide/Common/TypeScript_Guides/Syntax_Elements/#Aggregated_Export) to import all component types with a single statement.
+Each DevExtreme component has its own set of types. Use [aggregated exports](/concepts/Common/TypeScript%20Guides/90%20Syntax%20Elements/15%20Aggregated%20Export.md '/Documentation/Guide/Common/TypeScript_Guides/Syntax_Elements/#Aggregated_Export') to import all component types with a single statement.
 
 To access these types, import `DxComponentTypes` where `Component` is the component name. For example, you need to import `DxDateBoxTypes` if you work with a `DateBox`.
 
@@ -56,7 +56,7 @@ After importing, type `DxDateBoxTypes.` to search through all available types.
 
 ##### React
 
-Each DevExtreme component has its own set of types. Use [aggregated exports](/Documentation/Guide/Common/TypeScript_Guides/Syntax_Elements/#Aggregated_Export) to import all component types with a single statement.
+Each DevExtreme component has its own set of types. Use [aggregated exports](/concepts/Common/TypeScript%20Guides/90%20Syntax%20Elements/15%20Aggregated%20Export.md '/Documentation/Guide/Common/TypeScript_Guides/Syntax_Elements/#Aggregated_Export') to import all component types with a single statement.
 
 To access these types, import `ComponentTypes` where `Component` is the component name. For example, you need to import `DateBoxTypes` if you work with a `DateBox`.
 

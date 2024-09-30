@@ -1,13 +1,5 @@
 The DevExtreme Angular UI Component Suite offers [over 70 responsive, touch-enabled UI components](/Documentation/Guide/UI_Components/) for Angular applications. This suite features a data grid, interactive charts, data editors, and various navigation and utility components.
 
-DevExtreme UI components share a common architecture and core features. These core features include:
-
-- [Data layer](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/')
-- [Client-side data validation](/concepts/05%20UI%20Components/zz%20Common/05%20UI%20Widgets/20%20Data%20Validation '/Documentation/Guide/UI_Components/Common/UI_Widgets/Data_Validation/')
-- [Themes and styles](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') (including [icons library](/Documentation/Guide/Themes_and_Styles/Icons/))
-- [Localization](/concepts/Common/Localization '/Documentation/Guide/Common/Localization/')
-- [Template-based customization](/concepts/05%20UI%20Components/zz%20Common/30%20Templates '/Documentation/Guide/UI_Components/Common/Templates/')
-
 ## Getting Started Guide
 
 #include common-troubleunderstanding-note with {
@@ -23,14 +15,21 @@ DevExtreme UI components share a common architecture and core features. These co
 
 4. If you have any issues, make sure to check out the [troubleshooting](/Documentation/Guide/Troubleshooting/Basics/) section.
 
+## What's New
+
+See the following pages to review new features and major changes in recent versions of DevExtreme components:
+
+- [Explore our newest features](https://js.devexpress.com/New/24_2/)
+- [Version history](https://supportcenter.devexpress.com/versionhistory)
+
 ## Contributing
 
-To report issues, submit feedback, or contribute to the documentation, use the feedback form.
+To report issues, submit feedback, or contribute to the documentation, use the feedback form at the end of each page. For additional questions, [create a ticket](https://supportcenter.devexpress.com/ticket/create) in our Support Center.
 
 ## Related Resources
 
+- [Component full list](/Documentation/Guide/UI_Components/)
 - [Demos](https://js.devexpress.com/Demos/WidgetsGallery)
 - [GitHub examples](https://github.com/DevExpress-Examples)
-- [What's new in the release v24.2](https://js.devexpress.com/New/24_2/)
 
 [tags] angular

@@ -1,4 +1,4 @@
-Most event arguments have a core part, either `EventInfo` or `NativeEventInfo`. These types may include [conditional elements](/Documentation/Guide/Common/TypeScript_Guides/Syntax_Elements/#Conditional_Types) for integration with third-party libraries.
+Most event arguments have a core part, either `EventInfo` or `NativeEventInfo`. These types may include [conditional elements](/concepts/Common/TypeScript%20Guides/90%20Syntax%20Elements/90%20Conditional%20Types.md '/Documentation/Guide/Common/TypeScript_Guides/Syntax_Elements/#Conditional_Types') for integration with third-party libraries.
 
 <table class="dx-table">
     <tr>

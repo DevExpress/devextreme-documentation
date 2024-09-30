@@ -6,7 +6,7 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether to use [advanced markers](https://developers.google.com/maps/documentation/javascript/advanced-markers/migration) with the `google` [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider).
 
 ---
 <!-- Description goes here -->

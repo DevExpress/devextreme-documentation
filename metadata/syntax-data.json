@@ -20396,8 +20396,8 @@
     "gridBaseOptions.columnFixing.texts.rightPosition": {
       "vue": "right-position"
     },
-    "gridBaseOptions.columnFixing.texts.stickyPosition": {
-      "vue": "sticky-position"
+    "gridBaseOptions.columnFixing.texts.stickPosition": {
+      "vue": "stick-position"
     },
     "gridBaseOptions.columnHidingEnabled": {
       "vue": "column-hiding-enabled"

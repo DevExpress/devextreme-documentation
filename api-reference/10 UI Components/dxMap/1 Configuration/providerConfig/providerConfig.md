@@ -5,7 +5,7 @@ default: { mapId: '', useAdvancedMarkers: true }
 ---
 ---
 ##### shortDescription
-A [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider) configuration object.
+A [provider](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/provider.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider') configuration object.
 
 ---
 ---

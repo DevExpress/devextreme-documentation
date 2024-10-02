@@ -1,8 +1,9 @@
 ---
 uid: common/grids:ColumnFixingIcons
+isType: 
 module: common/grids
 export: ColumnFixingIcons
-type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

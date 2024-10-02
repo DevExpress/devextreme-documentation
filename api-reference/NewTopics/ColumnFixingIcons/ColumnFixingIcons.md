@@ -1,5 +1,5 @@
 ---
-id: ColumnFixingIcons
+uid: common/grids:ColumnFixingIcons
 module: common/grids
 export: ColumnFixingIcons
 type: Object

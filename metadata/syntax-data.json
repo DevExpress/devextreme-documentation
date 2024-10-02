@@ -20371,6 +20371,20 @@
       "react": "ColumnFixing",
       "vue": "DxColumnFixing"
     },
+    "gridBaseOptions.columnFixing.icons": {
+      "angular": "dxo-icons",
+      "react": "Icons",
+      "vue": "DxIcons"
+    },
+    "gridBaseOptions.columnFixing.icons.leftPosition": {
+      "vue": "left-position"
+    },
+    "gridBaseOptions.columnFixing.icons.rightPosition": {
+      "vue": "right-position"
+    },
+    "gridBaseOptions.columnFixing.icons.stickyPosition": {
+      "vue": "sticky-position"
+    },
     "gridBaseOptions.columnFixing.texts": {
       "angular": "dxo-texts",
       "react": "Texts",
@@ -20381,6 +20395,9 @@
     },
     "gridBaseOptions.columnFixing.texts.rightPosition": {
       "vue": "right-position"
+    },
+    "gridBaseOptions.columnFixing.texts.stickyPosition": {
+      "vue": "sticky-position"
     },
     "gridBaseOptions.columnHidingEnabled": {
       "vue": "column-hiding-enabled"

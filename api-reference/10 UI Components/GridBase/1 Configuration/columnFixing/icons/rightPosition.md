@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.columnFixing.icons.rightPosition
-type: String
-default: 'fix-column-right'
 ---
 ---
 ##### shortDescription

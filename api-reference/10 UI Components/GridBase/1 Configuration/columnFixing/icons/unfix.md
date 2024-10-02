@@ -1,7 +1,5 @@
 ---
 id: GridBase.Options.columnFixing.icons.unfix
-type: String
-default: 'unfix-column'
 ---
 ---
 ##### shortDescription

@@ -3,7 +3,7 @@ id: GridBase.Options.columnFixing.icons.leftPosition
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies an icon for the context menu subitem that fixes a column to the left edge of the UI component.
 
 ---
 <!-- Description goes here -->

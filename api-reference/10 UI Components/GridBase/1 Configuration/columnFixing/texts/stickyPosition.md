@@ -5,7 +5,7 @@ default: 'Stick in place'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies text for the context menu subitem that sticks a column in place.
 
 ---
 <!-- Description goes here -->

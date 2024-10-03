@@ -5,7 +5,7 @@ default: 'stick-column'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies an icon for the context menu subitem that sticks a column in place.
 
 ---
 <!-- Description goes here -->

@@ -1,4 +1,4 @@
-An **aggregated export** is a DevExtreme entity used to import [component-specific types](/Documentation/Guide/Common/TypeScript_Guides/Scopes_of_Types/#Component-Specific_Types).
+An **aggregated export** is a syntactic construction that DevExtreme uses to group several imports into one (for instance, [component-specific types](/Documentation/Guide/Common/TypeScript_Guides/Scopes_of_Types/#Component-Specific_Types)).
 
 ---
 ##### Angular

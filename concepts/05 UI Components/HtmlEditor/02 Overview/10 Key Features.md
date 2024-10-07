@@ -16,9 +16,9 @@
 
 - [Adaptive Toolbar](/concepts/05%20UI%20Components/HtmlEditor/00%20Getting%20Started%20with%20HtmlEditor/20%20Configure%20the%20Toolbar.md '/Documentation/Guide/UI_Components/HtmlEditor/Getting_Started_with_HtmlEditor/#Configure_the_Toolbar') designed to work with images, links, and color formats.
 
-- [Image upload](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/imageUpload/): drag-and-drop images onto the form, select files from the file system, or specify a URL.
+- [Image upload](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/imageUpload '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/imageUpload/'): drag-and-drop images onto the form, select files from the file system, or specify a URL.
 
-- Copy-paste rich content. The control automatically removes unsupported text formatting attributes (see [Limitations](/Documentation/Guide/UI_Components/HtmlEditor/Limitations/)).
+- Copy-paste rich content. The control automatically removes unsupported text formatting attributes (see [Limitations](/concepts/05%20UI%20Components/HtmlEditor/90%20Limitations.md '/Documentation/Guide/UI_Components/HtmlEditor/Limitations/')).
 
 - [Mentions](https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Mentions/) (@person, for example)
 

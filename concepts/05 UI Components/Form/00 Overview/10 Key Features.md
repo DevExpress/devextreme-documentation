@@ -1,5 +1,5 @@
 - **Automatically Generate Form Fields**    
-The DevExtreme Form component creates form items from the defined data object. Use the [items](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#items) array to configure each form item.
+The DevExtreme Form component creates form items from the defined data object. Use the [items](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#items') array to configure each form item.
 
 - **Multiple Editor Types Support**    
 Choose from [18 DevExtreme editors](/api-reference/10%20UI%20Components/dxForm/9%20Types/FormItemComponent.md '/Documentation/ApiReference/UI_Components/dxForm/Types/#FormItemComponent') to display Form data.

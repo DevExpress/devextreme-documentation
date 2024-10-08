@@ -11,13 +11,13 @@ Set up a [filter row](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20a
 You can use a column header's context menu or a group panel to [group data](/concepts/05%20UI%20Components/DataGrid/45%20Grouping/10%20User%20Interaction '/Documentation/Guide/UI_Components/DataGrid/Grouping/#User_Interaction') in DataGrid. 
 
 - **Virtual and Infinite Scrolling**     
-Enable virtual or infinite [scrolling mode](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#mode) to reduce DataGrid load times and improve navigation with large datasets. 
+Enable virtual or infinite [scrolling mode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/scrolling/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#mode') to reduce DataGrid load times and improve navigation with large datasets. 
 
 - **Master–Detail View**     
-Use the [masterDetail](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/masterDetail/) object to create a Master-Detail view in the DataGrid.  
+Use the [masterDetail](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/masterDetail '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/masterDetail/') object to create a Master-Detail view in the DataGrid.  
 
 - **State Persistence**     
-The DataGrid [saves user changes](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/stateStoring/) like sorting, filtering, grouping, and column adjustments. These changes are automatically restored on reload.
+The DataGrid [saves user changes](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/stateStoring '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/stateStoring/') like sorting, filtering, grouping, and column adjustments. These changes are automatically restored on reload.
 
 - **Total and Group Summaries**    
 Apply summaries to aggregate data by columns. Use a [total summary](/concepts/05%20UI%20Components/DataGrid/65%20Summaries/10%20Total%20Summary '/Documentation/Guide/UI_Components/DataGrid/Summaries/Total_Summary/') to aggregate all data and a [group summary](/concepts/05%20UI%20Components/DataGrid/65%20Summaries/20%20Group%20Summary '/Documentation/Guide/UI_Components/DataGrid/Summaries/Group_Summary/') to aggregate data on a group-by-group basis.
@@ -26,4 +26,4 @@ Apply summaries to aggregate data by columns. Use a [total summary](/concepts/05
 DataGrid offers extensive [appearance](/concepts/05%20UI%20Components/DataGrid/67%20Customize%20the%20Appearance.md '/Documentation/Guide/UI_Components/DataGrid/Customize_the_Appearance/') and behavior customization.
 
 - **Export to PDF and Excel**     
-[Export](/Documentation/Guide/UI_Components/DataGrid/Getting_Started_with_DataGrid/#Export_Data) grid data to Excel and PDF. Modify cell styles and other settings in the exported document to fit your needs.
+[Export](/concepts/05%20UI%20Components/DataGrid/00%20Getting%20Started%20with%20DataGrid/80%20Export%20Data.md '/Documentation/Guide/UI_Components/DataGrid/Getting_Started_with_DataGrid/#Export_Data') grid data to Excel and PDF. Modify cell styles and other settings in the exported document to fit your needs.

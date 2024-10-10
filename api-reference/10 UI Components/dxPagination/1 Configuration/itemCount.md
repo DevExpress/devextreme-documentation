@@ -5,7 +5,7 @@ default: 1
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the total number of items.
 
 ---
-<!-- Description goes here -->
+The number of pages is automatically calculated based on the total number of items, and the number of items that every page displays.

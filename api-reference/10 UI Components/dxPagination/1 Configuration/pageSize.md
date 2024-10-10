@@ -6,7 +6,7 @@ default: 5
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the page size.
 
 ---
 <!-- Description goes here -->

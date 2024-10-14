@@ -8,4 +8,4 @@ default: 1
 Specifies the total number of items.
 
 ---
-The number of pages is automatically calculated based on the total number of items, and the number of items that every page displays.
+`itemCount` is calculated by multiplying the number of items per page by the number of pages.

@@ -14035,6 +14035,26 @@
     "dxOverlayOptions.wrapperAttr": {
       "vue": "wrapper-attr"
     },
+    "dxPagination": {
+      "angular": "dx-pagination",
+      "react": "Pagination",
+      "vue": "DxPagination"
+    },
+    "dxPaginationOptions": {
+      "vue": "dx-pagination-options"
+    },
+    "dxPaginationOptions.allowedPageSizes": {
+      "vue": "allowed-page-sizes"
+    },
+    "dxPaginationOptions.itemCount": {
+      "vue": "item-count"
+    },
+    "dxPaginationOptions.pageIndex": {
+      "vue": "page-index"
+    },
+    "dxPaginationOptions.pageSize": {
+      "vue": "page-size"
+    },
     "dxPieChart": {
       "angular": "dx-pie-chart",
       "react": "PieChart",
@@ -19490,6 +19510,9 @@
     "enums.DiscreteAxisDivisionMode": {
       "vue": "discrete-axis-division-mode"
     },
+    "enums.DisplayMode": {
+      "vue": "display-mode"
+    },
     "enums.Distribution": {
       "vue": "distribution"
     },
@@ -19681,9 +19704,6 @@
     },
     "enums.PageOrientation": {
       "vue": "page-orientation"
-    },
-    "enums.PagerDisplayMode": {
-      "vue": "pager-display-mode"
     },
     "enums.PagerPageSize": {
       "vue": "pager-page-size"
@@ -20351,8 +20371,8 @@
     "gridBaseOptions.columnFixing.texts.rightPosition": {
       "vue": "right-position"
     },
-    "gridBaseOptions.columnFixing.texts.stickPosition": {
-      "vue": "stick-position"
+    "gridBaseOptions.columnFixing.texts.stickyPosition": {
+      "vue": "sticky-position"
     },
     "gridBaseOptions.columnHidingEnabled": {
       "vue": "column-hiding-enabled"
@@ -20623,26 +20643,6 @@
       "angular": "dxo-pager",
       "react": "Pager",
       "vue": "DxPager"
-    },
-    "gridBaseOptions.pager.allowedPageSizes": {
-      "angular": "dxi-allowed-page-size",
-      "react": "AllowedPageSize",
-      "vue": "DxAllowedPageSize"
-    },
-    "gridBaseOptions.pager.displayMode": {
-      "vue": "display-mode"
-    },
-    "gridBaseOptions.pager.infoText": {
-      "vue": "info-text"
-    },
-    "gridBaseOptions.pager.showInfo": {
-      "vue": "show-info"
-    },
-    "gridBaseOptions.pager.showNavigationButtons": {
-      "vue": "show-navigation-buttons"
-    },
-    "gridBaseOptions.pager.showPageSizeSelector": {
-      "vue": "show-page-size-selector"
     },
     "gridBaseOptions.paging": {
       "angular": "dxo-paging",
@@ -20922,6 +20922,36 @@
     },
     "numericRule.ignoreEmptyValue": {
       "vue": "ignore-empty-value"
+    },
+    "pager": {
+      "angular": "dxo-pager",
+      "react": "Pager",
+      "vue": "DxPager"
+    },
+    "pager.allowedPageSizes": {
+      "angular": "dxi-allowed-page-size",
+      "react": "AllowedPageSize",
+      "vue": "DxAllowedPageSize"
+    },
+    "pagerBase": {
+      "angular": "dxo-pager-base",
+      "react": "PagerBase",
+      "vue": "DxPagerBase"
+    },
+    "pagerBase.displayMode": {
+      "vue": "display-mode"
+    },
+    "pagerBase.infoText": {
+      "vue": "info-text"
+    },
+    "pagerBase.showInfo": {
+      "vue": "show-info"
+    },
+    "pagerBase.showNavigationButtons": {
+      "vue": "show-navigation-buttons"
+    },
+    "pagerBase.showPageSizeSelector": {
+      "vue": "show-page-size-selector"
     },
     "patternRule": {
       "angular": "dxo-pattern-rule",

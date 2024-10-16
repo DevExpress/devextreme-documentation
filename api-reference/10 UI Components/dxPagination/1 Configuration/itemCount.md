@@ -8,4 +8,4 @@ default: 1
 Specifies the total number of items.
 
 ---
-`itemCount` is calculated by multiplying the number of items per page by the number of pages.
+`itemCount` is the main configuration setting of the component. Specify the total number of items that should be paginated for Pagination to function properly.

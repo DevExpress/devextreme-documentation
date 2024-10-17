@@ -184,11 +184,6 @@
       "react": "_ui_autocomplete_SelectionChangedEvent",
       "vue": "Dx_ui_autocomplete_SelectionChangedEvent"
     },
-    "_ui_autocomplete_SelectionChangingEvent": {
-      "angular": "dxo-ui-autocomplete--selection-changing-event",
-      "react": "_ui_autocomplete_SelectionChangingEvent",
-      "vue": "Dx_ui_autocomplete_SelectionChangingEvent"
-    },
     "_ui_autocomplete_ValueChangedEvent": {
       "angular": "dxo-ui-autocomplete--value-changed-event",
       "react": "_ui_autocomplete_ValueChangedEvent",
@@ -1513,16 +1508,6 @@
       "react": "SelectedItem",
       "vue": "DxSelectedItem"
     },
-    "_ui_drop_down_editor_ui_drop_down_list_SelectionChangingEvent": {
-      "angular": "dxo-ui-drop-down-editor-ui-drop-down-list--selection-changing-event",
-      "react": "_ui_drop_down_editor_ui_drop_down_list_SelectionChangingEvent",
-      "vue": "Dx_ui_drop_down_editor_ui_drop_down_list_SelectionChangingEvent"
-    },
-    "_ui_drop_down_editor_ui_drop_down_list_SelectionChangingInfo.selectedItem": {
-      "angular": "dxo-selected-item",
-      "react": "SelectedItem",
-      "vue": "DxSelectedItem"
-    },
     "_ui_file_manager_ContentReadyEvent": {
       "angular": "dxo-ui-file-manager--content-ready-event",
       "react": "_ui_file_manager_ContentReadyEvent",
@@ -2478,11 +2463,6 @@
       "react": "_ui_lookup_SelectionChangedEvent",
       "vue": "Dx_ui_lookup_SelectionChangedEvent"
     },
-    "_ui_lookup_SelectionChangingEvent": {
-      "angular": "dxo-ui-lookup--selection-changing-event",
-      "react": "_ui_lookup_SelectionChangingEvent",
-      "vue": "Dx_ui_lookup_SelectionChangingEvent"
-    },
     "_ui_lookup_ValueChangedEvent": {
       "angular": "dxo-ui-lookup--value-changed-event",
       "react": "_ui_lookup_ValueChangedEvent",
@@ -3383,11 +3363,6 @@
       "react": "_ui_select_box_SelectionChangedEvent",
       "vue": "Dx_ui_select_box_SelectionChangedEvent"
     },
-    "_ui_select_box_SelectionChangingEvent": {
-      "angular": "dxo-ui-select-box--selection-changing-event",
-      "react": "_ui_select_box_SelectionChangingEvent",
-      "vue": "Dx_ui_select_box_SelectionChangingEvent"
-    },
     "_ui_select_box_ValueChangedEvent": {
       "angular": "dxo-ui-select-box--value-changed-event",
       "react": "_ui_select_box_ValueChangedEvent",
@@ -3918,11 +3893,6 @@
       "angular": "dxo-ui-tag-box--selection-changed-event",
       "react": "_ui_tag_box_SelectionChangedEvent",
       "vue": "Dx_ui_tag_box_SelectionChangedEvent"
-    },
-    "_ui_tag_box_SelectionChangingEvent": {
-      "angular": "dxo-ui-tag-box--selection-changing-event",
-      "react": "_ui_tag_box_SelectionChangingEvent",
-      "vue": "Dx_ui_tag_box_SelectionChangingEvent"
     },
     "_ui_tag_box_ValueChangedEvent": {
       "angular": "dxo-ui-tag-box--value-changed-event",
@@ -6878,9 +6848,6 @@
     },
     "dxAutocompleteOptions.onSelectionChanged": {
       "vue": "@selection-changed"
-    },
-    "dxAutocompleteOptions.onSelectionChanging": {
-      "vue": "@selection-changing"
     },
     "dxAutocompleteOptions.onValueChanged": {
       "vue": "@value-changed"
@@ -11124,9 +11091,6 @@
     "dxDropDownListOptions.onSelectionChanged": {
       "vue": "@selection-changed"
     },
-    "dxDropDownListOptions.onSelectionChanging": {
-      "vue": "@selection-changing"
-    },
     "dxDropDownListOptions.onValueChanged": {
       "vue": "@value-changed"
     },
@@ -13518,9 +13482,6 @@
     },
     "dxLookupOptions.onSelectionChanged": {
       "vue": "@selection-changed"
-    },
-    "dxLookupOptions.onSelectionChanging": {
-      "vue": "@selection-changing"
     },
     "dxLookupOptions.onValueChanged": {
       "vue": "@value-changed"
@@ -17057,9 +17018,6 @@
     "dxSelectBoxOptions.onSelectionChanged": {
       "vue": "@selection-changed"
     },
-    "dxSelectBoxOptions.onSelectionChanging": {
-      "vue": "@selection-changing"
-    },
     "dxSelectBoxOptions.onValueChanged": {
       "vue": "@value-changed"
     },
@@ -17735,9 +17693,6 @@
     },
     "dxTagBoxOptions.onSelectionChanged": {
       "vue": "@selection-changed"
-    },
-    "dxTagBoxOptions.onSelectionChanging": {
-      "vue": "@selection-changing"
     },
     "dxTagBoxOptions.onValueChanged": {
       "vue": "@value-changed"
@@ -21313,21 +21268,10 @@
     "searchBoxMixinOptions.searchValue": {
       "vue": "search-value"
     },
-    "selectionChangedInfo.addedItems": {
+    "selectionChangeInfo.addedItems": {
       "vue": "added-items"
     },
-    "selectionChangedInfo.removedItems": {
-      "vue": "removed-items"
-    },
-    "selectionChangingEvent": {
-      "angular": "dxo-selection-changing-event",
-      "react": "SelectionChangingEvent",
-      "vue": "DxSelectionChangingEvent"
-    },
-    "selectionChangingInfo.addedItems": {
-      "vue": "added-items"
-    },
-    "selectionChangingInfo.removedItems": {
+    "selectionChangeInfo.removedItems": {
       "vue": "removed-items"
     },
     "stringLengthRule": {

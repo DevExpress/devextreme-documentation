@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 <!-- Description goes here -->
 
-##### param(e): ui/collection/ui.collection_widget.base:SelectionChangingEvent
+##### param(e): Object
 <!-- Description goes here -->
 
 ##### field(e.addedItems): Array<any>
@@ -23,6 +23,9 @@ default: null
 <!-- Description goes here -->
 
 ##### field(e.removedItems): Array<any>
+<!-- Description goes here -->
+
+##### field(e.model): any
 <!-- Description goes here -->
 
 ---

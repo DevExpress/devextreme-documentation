@@ -1,5 +1,5 @@
 ---
-id: SelectionChangedInfo.removedItems
+id: SelectionChangeInfo.removedItems
 type: Array<any>
 ---
 ---

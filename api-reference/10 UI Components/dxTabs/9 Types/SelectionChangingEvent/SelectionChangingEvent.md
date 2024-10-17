@@ -2,7 +2,7 @@
 module: ui/tabs
 export: SelectionChangingEvent
 type: Object
-inherits: AsyncCancelable,EventInfo,SelectionChangingInfo
+inherits: AsyncCancelable,EventInfo,SelectionChangeInfo
 references: dxTabs.Options.onSelectionChanging
 uid: ui/tabs:SelectionChangingEvent
 generateTypeLink: 

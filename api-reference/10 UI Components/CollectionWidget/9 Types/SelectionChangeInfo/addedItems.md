@@ -1,6 +1,6 @@
 ---
-id: dxDropDownList.selectionChanging
-type: eventType
+id: SelectionChangeInfo.addedItems
+type: Array<any>
 ---
 ---
 ##### shortDescription

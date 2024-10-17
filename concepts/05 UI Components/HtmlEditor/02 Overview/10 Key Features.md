@@ -1,6 +1,6 @@
 - [Inline Formats](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/'):
     - **Bold**, *italic*, <s>strikethrough</s>, and <u>underscore</u> text formatting attributes
-    - Typeface, font size, and text color changes (HTML only)
+    - Typeface, font size, and text color changes
     
 - [Block Formats](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/'):
     - Headers

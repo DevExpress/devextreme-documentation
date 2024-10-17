@@ -85,6 +85,13 @@ dx.web.js, dx.viz.js, dx.all.js
 
 [/note]
 
+---
+##### React
+
+[note] If you use DataSource with Next.js, add a [`use client` directive](https://nextjs.org/docs/app/building-your-application/rendering/client-components#using-client-components-in-nextjs). DataSource does not support server-side rendering.
+
+---
+
 Refer to the [Data Layer](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/') and [DataSource Examples](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples '/Documentation/Guide/Data_Binding/Data_Source_Examples/') articles for more information on working with data in DevExtreme.
 
 #include datalayer-store-note-immutable with { name: "DataSource" }

@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-123 Raised before a collection item is selected or selection is canceled.
+Raised before a collection item is selected or selection is canceled.
 
 ---
 Main article: [onSelectionChanging]({basewidgetpath}/Configuration/#onSelectionChanged)

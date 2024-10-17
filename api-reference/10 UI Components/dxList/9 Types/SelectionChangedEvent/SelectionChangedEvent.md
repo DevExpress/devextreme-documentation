@@ -2,7 +2,7 @@
 module: ui/list
 export: SelectionChangedEvent
 type: Object
-inherits: EventInfo,SelectionChangeInfo
+inherits: EventInfo,SelectionChangedInfo
 uid: ui/list:SelectionChangedEvent
 generateTypeLink: 
 references: dxList.Options.onSelectionChanged

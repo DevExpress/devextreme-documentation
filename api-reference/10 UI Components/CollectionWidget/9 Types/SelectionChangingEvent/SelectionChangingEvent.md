@@ -1,10 +1,10 @@
 ---
-module: ui/tab_panel
+id: SelectionChangingEvent
+module: ui/collection/ui.collection_widget.base
 export: SelectionChangingEvent
 type: Object
 inherits: AsyncCancelable,EventInfo,SelectionChangingInfo
-references: dxTabPanel.Options.onSelectionChanging
-uid: ui/tab_panel:SelectionChangingEvent
+references: CollectionWidget.Options.onSelectionChanging
 generateTypeLink: 
 ---
 ---

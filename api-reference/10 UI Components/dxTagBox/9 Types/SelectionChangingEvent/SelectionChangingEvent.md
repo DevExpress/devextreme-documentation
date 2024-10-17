@@ -1,10 +1,10 @@
 ---
-module: ui/tab_panel
+module: ui/tag_box
 export: SelectionChangingEvent
 type: Object
 inherits: AsyncCancelable,EventInfo,SelectionChangingInfo
-references: dxTabPanel.Options.onSelectionChanging
-uid: ui/tab_panel:SelectionChangingEvent
+references: dxTagBox.Options.onSelectionChanging
+uid: ui/tag_box:SelectionChangingEvent
 generateTypeLink: 
 ---
 ---

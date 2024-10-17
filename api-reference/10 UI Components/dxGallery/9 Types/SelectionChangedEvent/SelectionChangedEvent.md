@@ -2,7 +2,7 @@
 module: ui/gallery
 export: SelectionChangedEvent
 type: Object
-inherits: EventInfo,SelectionChangeInfo
+inherits: EventInfo,SelectionChangedInfo
 uid: ui/gallery:SelectionChangedEvent
 generateTypeLink: 
 references: dxGallery.Options.onSelectionChanged

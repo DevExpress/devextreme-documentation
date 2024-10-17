@@ -2,7 +2,7 @@
 module: ui/accordion
 export: SelectionChangedEvent
 type: Object
-inherits: EventInfo,SelectionChangeInfo
+inherits: EventInfo,SelectionChangedInfo
 uid: ui/accordion:SelectionChangedEvent
 generateTypeLink: 
 references: dxAccordion.Options.onSelectionChanged

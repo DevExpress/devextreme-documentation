@@ -2,7 +2,7 @@
 module: ui/context_menu
 export: SelectionChangedEvent
 type: Object
-inherits: EventInfo,SelectionChangeInfo
+inherits: EventInfo,SelectionChangedInfo
 uid: ui/context_menu:SelectionChangedEvent
 generateTypeLink: 
 references: dxContextMenu.Options.onSelectionChanged

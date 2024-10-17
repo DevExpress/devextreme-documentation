@@ -2,7 +2,7 @@
 module: ui/tag_box
 export: SelectionChangedEvent
 type: Object
-inherits: EventInfo,SelectionChangeInfo
+inherits: EventInfo,SelectionChangedInfo
 uid: ui/tag_box:SelectionChangedEvent
 generateTypeLink: 
 references: dxTagBox.Options.onSelectionChanged

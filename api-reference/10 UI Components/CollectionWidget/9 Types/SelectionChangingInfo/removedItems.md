@@ -1,7 +1,6 @@
 ---
-id: dxMap.Options.apiKey.azure
-type: String
-default: ''
+id: SelectionChangingInfo.removedItems
+type: Array<any>
 ---
 ---
 ##### shortDescription

@@ -12,7 +12,5 @@ See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documen
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/GroupSummaries/"
 }
 
-[note] This option has no effect if a summary item value is not a number or Date.
-
 #####See Also#####
 - [Format Text and Value](/concepts/05%20UI%20Components/DataGrid/65%20Summaries/40%20Format%20Text%20and%20Value.md '/Documentation/Guide/UI_Components/DataGrid/Summaries/Format_Text_and_Value/')

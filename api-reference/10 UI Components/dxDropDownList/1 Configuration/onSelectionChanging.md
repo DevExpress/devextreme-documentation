@@ -1,5 +1,5 @@
 ---
-id: CollectionWidget.Options.onSelectionChanging
+id: dxDropDownList.Options.onSelectionChanging
 type: function(e)
 default: null
 ---
@@ -7,7 +7,7 @@ default: null
 ##### shortDescription
 A function that is executed before a collection item is selected.
 
-##### param(e): ui/collection/ui.collection_widget.base:SelectionChangingEvent
+##### param(e): ui/drop_down_editor/ui.drop_down_list:SelectionChangingEvent
 Information about the event.
 
 ##### field(e.addedItems): Array<any>

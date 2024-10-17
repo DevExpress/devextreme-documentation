@@ -1,7 +1,6 @@
 ---
-id: GridBase.Options.columnFixing.texts.stickPosition
-type: String
-default: 'Stick in place'
+id: SelectionChangedInfo.addedItems
+type: Array<any>
 ---
 ---
 ##### shortDescription

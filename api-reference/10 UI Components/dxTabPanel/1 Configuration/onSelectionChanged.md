@@ -4,7 +4,7 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-A function that is executed when a collection item is selected or selection is canceled.
+A function that is executed after a collection item is selected or selection is canceled.
 
 ##### param(e): ui/tab_panel:SelectionChangedEvent
 Information about the event.

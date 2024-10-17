@@ -1,16 +1,7 @@
-The HtmlEditor can output markup in HTML or Markdown. Use the [valueType](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/valueType.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#valueType') property to define the language. If you use Markdown, add the <a href="https://www.npmjs.com/package/turndown" target="_blank">turndown</a> and <a href="https://www.npmjs.com/package/showdown" target="_blank">showdown</a> libraries to your project. In this tutorial, HTML is used as the output language.
-
-The control stores the document markup in the [value](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value') property. If you use this property to specify the document's initial content, the language should match **valueType**. You can also declare HTML content inside the HtmlEditor element. In this case, the language (HTML) and **valueType** can differ.
+The control stores the document markup in the [value](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value') property. You can also declare HTML content inside the HtmlEditor element.
 
 ---
 ##### jQuery
-
-    <!-- tab: index.js -->
-    $(function () {
-        $("#html-editor").dxHtmlEditor({
-            valueType: "html" 
-        });
-    });
 
     <!-- tab: index.html -->
     <html>
@@ -105,7 +96,7 @@ To update the value at the runtime, call the [option(optionName, optionValue)](/
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-html-editor valueType="html">
+    <dx-html-editor>
         <h2>
             <img src="assets/images/HtmlEditor.svg" alt="HtmlEditor">
             Rich Text Editor (HTML Editor)
@@ -177,7 +168,7 @@ To update the value at the runtime, call the [option(optionName, optionValue)](/
 
     <!-- tab: App.vue -->
     <template>
-        <DxHtmlEditor value-type="html">
+        <DxHtmlEditor>
             <div>
                 <h2>
                     <img src="./HtmlEditor.svg" alt="HtmlEditor">
@@ -314,7 +305,7 @@ To update the value at the runtime, call the [option(optionName, optionValue)](/
 
     const App = () => {
         return (
-            <HtmlEditor defaultValue={markup} valueType="html">
+            <HtmlEditor defaultValue={markup}>
             </HtmlEditor>
         );
     };

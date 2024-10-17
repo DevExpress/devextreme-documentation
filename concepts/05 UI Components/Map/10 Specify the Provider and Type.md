@@ -1,4 +1,4 @@
-By default, the Map UI component uses **Google Maps** as a map provider. It can use **Bing Maps** or **Google Static Maps** instead. To change the provider, assign one of the values listed below to the [provider](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/provider.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider') property.
+By default, the Map UI component uses **Google Maps** as a map provider. It can use **Azure Maps** or **Google Static Maps** instead. To change the provider, assign one of the values listed below to the [provider](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/provider.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider') property.
 
 ---
 ##### jQuery
@@ -8,7 +8,7 @@ By default, the Map UI component uses **Google Maps** as a map provider. It can 
         $("#mapContainer").dxMap({
             center: { lat: 40.749825, lng: -73.987963 },
             zoom: 10,
-            provider: "google" // or "bing" | "googleStatic"
+            provider: "google" // or "azure" | "googleStatic"
         });
     });
 
@@ -18,7 +18,7 @@ By default, the Map UI component uses **Google Maps** as a map provider. It can 
     <dx-map
         [center]="{ lat: 40.749825, lng: -73.987963 }"
         [zoom]="10"
-        provider="google"> <!-- or "bing" | "googleStatic" -->
+        provider="google"> <!-- or "azure" | "googleStatic" -->
     </dx-map>
 
     <!--TypeScript-->
@@ -41,7 +41,7 @@ By default, the Map UI component uses **Google Maps** as a map provider. It can 
         <DxMap
             :zoom="10"
             :center="centerCoordinates"
-            provider="google"/> <!-- or "bing" | "googleStatic" -->
+            provider="google"/> <!-- or "azure" | "googleStatic" -->
     </template>
 
     <script>
@@ -76,7 +76,7 @@ By default, the Map UI component uses **Google Maps** as a map provider. It can 
                 <Map
                     defaultZoom={10}
                     defaultCenter={centerCoordinates}
-                    provider="google"/> {/* or "bing" | "googleStatic" */}
+                    provider="google"/> {/* or "azure" | "googleStatic" */}
             );
         }
     }
@@ -95,9 +95,9 @@ When using maps, you should include an API key that authenticates your applicati
         $("#mapContainer").dxMap({
             center: { lat: 40.749825, lng: -73.987963 },
             zoom: 10,
-            provider: "bing",
+            provider: "azure",
             apiKey: {
-                bing: "YOUR_BING_MAPS_API_KEY",
+                azure: "YOUR_AZURE_MAPS_API_KEY",
                 google: "YOUR_GOOGLE_MAPS_API_KEY",
                 googleStatic: "YOUR_GOOGLE_STATIC_MAPS_API_KEY"
             }
@@ -110,7 +110,7 @@ When using maps, you should include an API key that authenticates your applicati
     <dx-map
         [center]="{ lat: 40.749825, lng: -73.987963 }"
         [zoom]="10"
-        provider="bing"
+        provider="azure"
         [apiKey]="authentificationKeys">
     </dx-map>
 
@@ -120,7 +120,7 @@ When using maps, you should include an API key that authenticates your applicati
     export class AppComponent {
         // ...
         authentificationKeys = {
-            bing: "YOUR_BING_MAPS_API_KEY",
+            azure: "YOUR_AZURE_MAPS_API_KEY",
             google: "YOUR_GOOGLE_MAPS_API_KEY",
             googleStatic: "YOUR_GOOGLE_STATIC_MAPS_API_KEY"
         }
@@ -139,7 +139,7 @@ When using maps, you should include an API key that authenticates your applicati
         <DxMap
             :zoom="10"
             :center="centerCoordinates"
-            provider="bing"
+            provider="azure"
             :apiKey="authentificationKeys"
         />
     </template>
@@ -157,7 +157,7 @@ When using maps, you should include an API key that authenticates your applicati
             return {
                 centerCoordinates: { lat: 40.749825, lng: -73.987963 },
                 authentificationKeys: {
-                    bing: "YOUR_BING_MAPS_API_KEY",
+                    azure: "YOUR_AZURE_MAPS_API_KEY",
                     google: "YOUR_GOOGLE_MAPS_API_KEY",
                     googleStatic: "YOUR_GOOGLE_STATIC_MAPS_API_KEY"
                 }
@@ -175,7 +175,7 @@ When using maps, you should include an API key that authenticates your applicati
 
     const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
     const authentificationKeys = {
-        bing: "YOUR_BING_MAPS_API_KEY",
+        azure: "YOUR_AZURE_MAPS_API_KEY",
         google: "YOUR_GOOGLE_MAPS_API_KEY",
         googleStatic: "YOUR_GOOGLE_STATIC_MAPS_API_KEY"
     };
@@ -197,7 +197,7 @@ When using maps, you should include an API key that authenticates your applicati
 
 ---
 
-The Map UI component supports the following map types: *"hybrid"*, *"satellite"* and *"roadmap"*, which is used by default. To change the map type, use the [type](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#type') property. Note that **Bing Maps** call map types differ​ently​​, therefore Aerial and Road **Bing Maps** became *"hybrid"* and *"roadmap"*, respectively, in the Map UI component.
+The Map UI component supports the following map types: *"hybrid"*, *"satellite"* and *"roadmap"*, which is used by default. To change the map type, use the [type](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#type') property.
 
 ---
 ##### jQuery
@@ -208,8 +208,8 @@ The Map UI component supports the following map types: *"hybrid"*, *"satellite"*
         $("#mapContainer").dxMap({
             center: { lat: 40.749825, lng: -73.987963 },
             zoom: 10,
-            provider: "bing",
-            type: "hybrid"
+            provider: "azure",
+            type: "satellite"
         });
     });
 
@@ -219,8 +219,8 @@ The Map UI component supports the following map types: *"hybrid"*, *"satellite"*
     <dx-map
         [center]="{ lat: 40.749825, lng: -73.987963 }"
         [zoom]="10"
-        provider="bing"
-        type="hybrid">
+        provider="azure"
+        type="satellite">
     </dx-map>
 
     <!--TypeScript-->
@@ -243,8 +243,8 @@ The Map UI component supports the following map types: *"hybrid"*, *"satellite"*
         <DxMap
             :zoom="10"
             :center="centerCoordinates"
-            provider="bing"
-            type="hybrid"
+            provider="azure"
+            type="satellite"
         />
     </template>
 
@@ -280,8 +280,8 @@ The Map UI component supports the following map types: *"hybrid"*, *"satellite"*
                 <Map
                     defaultZoom={10}
                     defaultCenter={centerCoordinates}
-                    provider="bing"
-                    type="hybrid"
+                    provider="azure"
+                    type="satellite"
                 />
             );
         }

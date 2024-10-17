@@ -6,7 +6,7 @@ default: 1
 ---
 ---
 ##### shortDescription
-Specifies a page to be displayed based on its index.
+Specifies the page index.
 
 ---
 <!-- Description goes here -->

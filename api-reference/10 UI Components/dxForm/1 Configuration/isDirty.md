@@ -16,6 +16,8 @@ This property is a read-only flag. You can use it to check if any editor value c
 
 - If you use [DateBox](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/isDirty.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#isDirty') or [DateRangeBox](/api-reference/10%20UI%20Components/dxDateRangeBox/1%20Configuration/isDirty.md '/Documentation/ApiReference/UI_Components/dxDateRangeBox/Configuration/#isDirty') as a Form item, and users enter invalid dates, the **isDirty** value does not change.
 
+- This property works only for [predefined editors](/api-reference/10%20UI%20Components/dxForm/9%20Types/FormItemComponent.md '/Documentation/ApiReference/UI_Components/dxForm/Types/#FormItemComponent') and does not work with custom [templates](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/template.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#template').
+
 [/note]
 
 #include btn-open-demo with {

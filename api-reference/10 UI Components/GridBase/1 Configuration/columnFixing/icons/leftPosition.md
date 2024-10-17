@@ -1,6 +1,5 @@
 ---
-id: dxDropDownList.selectionChanging
-type: eventType
+id: GridBase.Options.columnFixing.icons.leftPosition
 ---
 ---
 ##### shortDescription

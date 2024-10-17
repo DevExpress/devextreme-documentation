@@ -1,6 +1,6 @@
 ---
-id: User.id
-type: Number | String
+id: SelectionChangeInfo.removedItems
+type: Array<any>
 ---
 ---
 ##### shortDescription

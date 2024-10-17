@@ -1,6 +1,5 @@
 ---
-id: SelectionChangedInfo.removedItems
-type: Array<any>
+id: GridBase.Options.columnFixing.icons.fix
 ---
 ---
 ##### shortDescription

@@ -7,8 +7,8 @@ default: null
 ##### shortDescription
 A function that is executed before a collection item is selected.
 
-##### param(e): ui/collection/ui.collection_widget.base:SelectionChangingEvent
-Information about the event.
+##### param(e): Object
+<!-- Description goes here -->
 
 ##### field(e.addedItems): Array<any>
 The data of the items that have been selected.
@@ -24,6 +24,9 @@ The UI component's instance.
 
 ##### field(e.removedItems): Array<any>
 The data of the items whose selection has been canceled.
+
+##### field(e.model): any
+<!-- Description goes here -->
 
 ---
 <!-- Description goes here -->

@@ -1,6 +1,5 @@
 ---
-id: User.id
-type: Number | String
+id: GridBase.Options.columnFixing.icons.stickyPosition
 ---
 ---
 ##### shortDescription

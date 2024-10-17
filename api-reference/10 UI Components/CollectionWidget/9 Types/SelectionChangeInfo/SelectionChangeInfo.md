@@ -1,7 +1,7 @@
 ---
-id: SelectionChangedInfo
+id: SelectionChangeInfo
 module: ui/collection/ui.collection_widget.base
-export: SelectionChangedInfo
+export: SelectionChangeInfo
 hidden: 
 generateTypeLink: 
 ---

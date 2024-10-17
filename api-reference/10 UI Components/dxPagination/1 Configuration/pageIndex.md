@@ -1,11 +1,12 @@
 ---
-id: dxPagination.Options.itemCount
+id: dxPagination.Options.pageIndex
+firedEvents: optionChanged
 type: Number
 default: 1
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the page index.
 
 ---
 <!-- Description goes here -->

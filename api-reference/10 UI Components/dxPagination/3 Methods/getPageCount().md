@@ -3,10 +3,10 @@ id: dxPagination.getPageCount()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Gets the number of pages.
 
 ##### return: Number
-<!-- Description goes here -->
+The number of pages.
 
 ---
 <!-- Description goes here -->

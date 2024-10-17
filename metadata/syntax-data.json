@@ -12905,9 +12905,6 @@
       "react": "Toolbar",
       "vue": "DxToolbar"
     },
-    "dxHtmlEditorOptions.valueType": {
-      "vue": "value-type"
-    },
     "dxHtmlEditorOptions.variables": {
       "angular": "dxo-variables",
       "react": "Variables",
@@ -19674,9 +19671,6 @@
     },
     "enums.MapType": {
       "vue": "map-type"
-    },
-    "enums.MarkupType": {
-      "vue": "markup-type"
     },
     "enums.MaskMode": {
       "vue": "mask-mode"

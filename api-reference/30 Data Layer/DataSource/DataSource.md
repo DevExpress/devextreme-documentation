@@ -88,7 +88,7 @@ dx.web.js, dx.viz.js, dx.all.js
 ---
 ##### React
 
-[note] If you use DataSource with Next.js, add a [`use client` directive](https://nextjs.org/docs/app/building-your-application/rendering/client-components#using-client-components-in-nextjs) to ensure that the instance is created on the client only. DataSource instances do not support React serialization and therefore cannot be created on the server and sent to the client.
+[note] If you use DataSource with Next.js, add a [`use client` directive](https://nextjs.org/docs/app/building-your-application/rendering/client-components#using-client-components-in-nextjs) to ensure the instance is created on the client only. DataSource instances do not support React serialization and therefore cannot be created on the server and sent to the client.
 
 ---
 

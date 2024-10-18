@@ -3,7 +3,7 @@ id: GridBase.Options.columnFixing.icons.unfix
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies an icon for the context menu item that unfixes a column.
 
 ---
 <!-- Description goes here -->

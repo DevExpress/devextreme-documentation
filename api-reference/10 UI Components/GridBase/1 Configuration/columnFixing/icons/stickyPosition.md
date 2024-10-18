@@ -3,7 +3,7 @@ id: GridBase.Options.columnFixing.icons.stickyPosition
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies an icon for the context menu subitem that sticks a column in place.
 
 ---
 <!-- Description goes here -->

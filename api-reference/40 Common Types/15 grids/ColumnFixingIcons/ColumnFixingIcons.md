@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures column fixing icons.
 
 ---
 <!-- Description goes here -->

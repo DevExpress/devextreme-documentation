@@ -1,5 +1,7 @@
 ---
-id: GridBase.Options.columnFixing.texts.stickyPosition
+uid: common/grids:ColumnFixingTexts.stickyPosition
+type: String
+default: 'Stick in place'
 ---
 ---
 ##### shortDescription

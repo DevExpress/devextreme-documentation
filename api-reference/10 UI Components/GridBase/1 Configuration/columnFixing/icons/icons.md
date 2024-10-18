@@ -5,7 +5,7 @@ inheritsType: common/grids:ColumnFixingIcons
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Contains properties that specify icons for column fixing commands in the context menu of a column header.
 
 ---
 <!-- Description goes here -->

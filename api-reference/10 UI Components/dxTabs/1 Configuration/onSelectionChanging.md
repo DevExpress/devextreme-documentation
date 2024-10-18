@@ -4,7 +4,7 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-A function that is executed before a collection item is selected or selection is canceled.
+A function that is executed before selection changes.
 
 ##### param(e): ui/tabs:SelectionChangingEvent
 Information about the event.

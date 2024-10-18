@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed before a collection item is selected or selection is canceled.
+A function that is executed before selection changes.
 
 ##### param(e): Object
 Information about the event.

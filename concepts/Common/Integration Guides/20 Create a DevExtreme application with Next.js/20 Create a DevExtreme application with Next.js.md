@@ -115,7 +115,7 @@ The first `import` allows you to use the DataGrid component. The second applies 
 
 ### Set up a Data Source
 
-[note] If you use [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/), add a [`use client` directive](https://nextjs.org/docs/app/building-your-application/rendering/client-components#using-client-components-in-nextjs). **DataSource** does not support server-side rendering.
+[note] If you use [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/), add a [`use client` directive](https://nextjs.org/docs/app/building-your-application/rendering/client-components#using-client-components-in-nextjs) to ensure that the instance is created on the client only. DataSource instances do not support React serialization and therefore cannot be created on the server and sent to the client.
 
 Our DataGrid requires a data source. For the purpose of this tutorial, we'll use data from the publicly available [Cat Facts API](https://catfact.ninja). Add the following asynchronous code to the `page.tsx` file:
 

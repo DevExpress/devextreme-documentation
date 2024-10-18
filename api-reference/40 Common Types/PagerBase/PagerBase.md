@@ -4,6 +4,7 @@ module: common
 export: PagerBase
 hidden: 
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

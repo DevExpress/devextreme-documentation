@@ -197,7 +197,7 @@ When using maps, you should include an API key that authenticates your applicati
 
 ---
 
-The Map UI component supports the following map types: *"hybrid"*, *"satellite"* and *"roadmap"*, which is used by default. To change the map type, use the [type](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#type') property.
+The Map UI component supports the following map types: *"hybrid"*, *"satellite"* and *"roadmap"* (default). To change the map type, use the [type](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#type') property. **Azure Maps** names map types differently. In the Map UI component, *satellite_road_labels* and *road* become *"hybrid"* and *"roadmap"*.
 
 ---
 ##### jQuery
@@ -297,4 +297,4 @@ The Map UI component supports the following map types: *"hybrid"*, *"satellite"*
 - [Map Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/ProvidersAndTypes)
 - [Map API Reference](/api-reference/10%20UI%20Components/dxMap '/Documentation/ApiReference/UI_Components/dxMap/')
 
-[tags]map, provider, bing, google, api key, map type, hybrid, road map, satellite
+[tags]map, provider, azure, google, api key, map type, hybrid, road map, satellite

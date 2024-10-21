@@ -4,7 +4,7 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-A function that is executed after selection changes.
+A function that is called after selection changes.
 
 ##### param(e): ui/tab_panel:SelectionChangedEvent
 Information about the event.

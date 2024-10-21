@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed after selection changes.
+A function that is called after selection changes.
 
 ##### param(e): Object
 Information about the event.

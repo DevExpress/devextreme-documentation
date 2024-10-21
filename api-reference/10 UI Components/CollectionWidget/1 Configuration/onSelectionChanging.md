@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is executed before selection changes.
+A function that is called before selection changes.
 
 ##### param(e): Object
 Information about the event.
@@ -23,7 +23,7 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.removedItems): Array<any>
-The data of the items whose selection has been canceled.
+The data of the items removed from selection.
 
 ##### field(e.model): any
 Model data. Available only if you use Knockout.

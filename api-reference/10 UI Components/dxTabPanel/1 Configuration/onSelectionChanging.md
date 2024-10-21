@@ -10,7 +10,7 @@ A function that is called before selection changes.
 Information about the event.
 
 ##### field(e.addedItems): Array<any>
-The data of the items that have been selected.
+The data of the selected items.
 
 ##### field(e.cancel): Boolean | Promise<Boolean>
 Allows you to cancel selection. 

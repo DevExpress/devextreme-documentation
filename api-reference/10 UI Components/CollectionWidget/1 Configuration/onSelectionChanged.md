@@ -11,7 +11,7 @@ A function that is called after selection changes.
 Information about the event.
 
 ##### field(e.addedItems): Array<any>
-The data of the items that have been selected.
+The data of the selected items.
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.
@@ -23,7 +23,7 @@ The UI component's instance.
 Model data. Available only if you use Knockout.
 
 ##### field(e.removedItems): Array<any>
-The data of the items whose selection has been canceled.
+The data of the items removed from selection.
 
 ---
 <!-- Description goes here -->

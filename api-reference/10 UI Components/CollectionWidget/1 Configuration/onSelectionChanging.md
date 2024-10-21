@@ -5,28 +5,28 @@ default: null
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is called before selection changes.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.addedItems): Array<any>
-<!-- Description goes here -->
+The data of the selected items.
 
 ##### field(e.cancel): Boolean | Promise<Boolean>
-<!-- Description goes here -->
+Allows you to cancel selection. 
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.removedItems): Array<any>
-<!-- Description goes here -->
+The data of the items removed from selection.
 
 ##### field(e.model): any
-<!-- Description goes here -->
+Model data. Available only if you use Knockout.
 
 ---
 <!-- Description goes here -->

@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before selection changes.
 
 ---
-<!-- Description goes here -->
+Main article: [onSelectionChanging]({basewidgetpath}/Configuration/#onSelectionChanged)
+
+#####See Also#####
+#include common-link-handleevents

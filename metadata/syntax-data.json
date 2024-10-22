@@ -6334,6 +6334,11 @@
     "chartSeriesObject.barOverlapGroup": {
       "vue": "bar-overlap-group"
     },
+    "chatError": {
+      "angular": "dxo-chat-error",
+      "react": "ChatError",
+      "vue": "DxChatError"
+    },
     "collectionWidgetItem": {
       "angular": "dxo-collection-widget-item",
       "react": "CollectionWidgetItem",
@@ -8986,6 +8991,11 @@
     },
     "dxChatOptions.dataSource": {
       "vue": "data-source"
+    },
+    "dxChatOptions.errors": {
+      "angular": "dxi-error",
+      "react": "Error",
+      "vue": "DxError"
     },
     "dxChatOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"

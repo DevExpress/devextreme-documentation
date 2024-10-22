@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A list of available errors.
 
 ---
 <!-- Description goes here -->

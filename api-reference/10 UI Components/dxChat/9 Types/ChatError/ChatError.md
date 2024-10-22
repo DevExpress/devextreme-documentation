@@ -6,7 +6,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A configuration object for an error.
 
 ---
 <!-- Description goes here -->

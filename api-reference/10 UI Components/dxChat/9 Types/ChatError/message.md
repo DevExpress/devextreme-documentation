@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A displayed error message.
 
 ---
 <!-- Description goes here -->

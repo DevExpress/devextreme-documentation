@@ -4,8 +4,12 @@
         <th>React</th>
     </tr>
     <tr>
-        <td>v24.1.x</td>
+        <td>v24.2.x</td>
         <td>react_version_24_2</td>
+    </tr>
+    <tr>
+        <td>v24.1.x</td>
+        <td>react_version_24_1</td>
     </tr>
     <tr>
         <td>v23.2.x</td>

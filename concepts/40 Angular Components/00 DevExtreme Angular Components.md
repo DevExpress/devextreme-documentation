@@ -9,15 +9,13 @@ The DevExtreme Angular UI Component Suite offers over 80 responsive, touch-enabl
 
 ## Getting Started
 
-- [Create an application with a template for quick setup](/Documentation/Guide/Angular_Components/Getting_Started/Create_a_DevExtreme_Application/)
+1. [Add DevExtreme](/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/) to your Angular application or create [an application with a template](/Documentation/Guide/Angular_Components/Getting_Started/Create_a_DevExtreme_Application/) for quick setup.
 
-- [Add DevExtreme to your Angular application](/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/)
+2. Learn the [component configuration syntax](/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/).
 
-- [Learn the component configuration syntax](/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/)
+3. Explore [over 250 technical demos](https://js.devexpress.com/Demos/WidgetsGallery) you can edit and copy code from.
 
-- [Explore over 250 technical demos](https://js.devexpress.com/Demos/WidgetsGallery)
-
-- [Troubleshoot your application](/Documentation/Guide/Troubleshooting/Basics/)
+4. If you have any issues, make sure to check out the [troubleshooting](/Documentation/Guide/Troubleshooting/Basics/) section.
 
 ## What's New
 

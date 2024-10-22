@@ -14,7 +14,7 @@ Information about the event.
 The data of the selected items.
 
 ##### field(e.cancel): Boolean | Promise<Boolean>
-Allows you to cancel selection. 
+Allows you to cancel selection.
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.

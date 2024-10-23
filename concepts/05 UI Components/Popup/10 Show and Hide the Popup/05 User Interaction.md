@@ -1,3 +1,65 @@
+Enable the [showCloseButton](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#showCloseButton) property to allow a user hide the Popup component by clicking the Close button.
+
+---
+##### jQuery
+
+    <!--JavaScript-->
+    $(function() {
+        $("#popupContainer").dxPopup({
+            showTitle: true,
+            showCloseButton: true
+        });
+    });
+
+##### Angular
+
+    <!--HTML-->
+    <dx-popup
+        [showTitle]="true"
+        [showCloseButton]="true">
+    </dx-popup>
+
+##### Vue
+
+    <template>
+        <DxPopup
+            :show-title="true"
+            :show-close-button:"true"
+        />
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { DxPopup } from 'devextreme-vue/popup';
+
+    export default {
+        components: {
+            DxPopup
+        }
+    }
+    </script>
+
+##### React
+
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import { Popup } from 'devextreme-react/popup';
+
+    class App extends React.Component {
+        return (
+            <Popup
+                showTitle={true}
+                showCloseButton={true}
+            />
+        );
+    }
+
+    export default App;
+
+---
+
 The Popup can also be hidden when a user clicks outside it. To control this behavior of the Popup, use the [hideOnOutsideClick](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/hideOnOutsideClick.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#hideOnOutsideClick') property.
 
 ---
@@ -100,3 +162,9 @@ The Popup can also be hidden when a user clicks outside it. To control this beha
     export default App;
 
 ---
+
+You can also implement a custom Close button inside the Popup. Refer to the following demo for more information:
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popup/Overview/"
+}

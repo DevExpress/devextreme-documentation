@@ -74,4 +74,41 @@ The `open` method returns a `DxPopupServiceComponent` object. This type extends 
 
 ---
 
+You can use `popupRef` to close Popup programmatically with the [hide()](/api-reference/10%20UI%20Components/dxOverlay/3%20Methods/hide().md '/Documentation/ApiReference/UI_Components/dxPopup/Methods/#hide') method:
+
+---
+##### Angular
+
+    <!-- tab: app.component.ts -->
+    import { DxPopupService, DxPopupServiceComponent } from 'devextreme-angular/ui/popup';
+    // ...
+    export class AppComponent {
+        employees: Employee[];
+        popupRef!: DxPopupServiceComponent;
+
+        constructor(
+            employeeService: EmployeeService,
+            private popupService: DxPopupService
+        ) {
+            this.employees = employeeService.getEmployees();
+        }
+
+        showInfo(employee: Employee) {
+            this.popupRef = this.popupService.open(EmployeeInfoComponent, {
+                showTitle: true,
+                title: 'Information',
+                container: 'html',
+                width: 300
+            });
+
+            this.popupRef.contentRef.instance.currentEmployee = employee;
+        }
+
+        closePopup() {
+            this.popupRef.instance.hide();
+        }
+    }
+
+---
+
 [tags] angular

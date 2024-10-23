@@ -117,7 +117,7 @@ If you specify a [template](/api-reference/_hidden/CollectionWidgetItem/template
         </dxi-item>  
     </dx-menu>
 
-If you use <a href="https://angular.io/guide/routing-overview" target="_blank">routing</a> for your project, specify `<a>` links inside items. Alternatively, you can implement the [onItemClick](/api-reference/10%20UI%20Components/dxMenu/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#onItemClick') event handler to process clicks on links.
+If you use <a href="https://angular.dev/guide/routing" target="_blank">routing</a> for your project, specify `<a>` links inside items. Alternatively, you can implement the [onItemClick](/api-reference/10%20UI%20Components/dxMenu/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#onItemClick') event handler to process clicks on links.
 
     <!-- tab: app.component.html -->
     <dx-menu>

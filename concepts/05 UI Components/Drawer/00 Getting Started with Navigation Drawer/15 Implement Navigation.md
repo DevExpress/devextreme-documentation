@@ -74,7 +74,7 @@ Each list item should navigate to a different view. To implement this, follow th
 
 1. **Define an [itemTemplate](/api-reference/10%20UI%20Components/dxList/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemTemplate')**
 
-    Specify the elements that the template should render and wrap them in an element with the <a href="https://angular.io/api/router/RouterLink" target="_blank">RouterLink</a> directive. In the code below, the *"links"* **itemTemplate** renders an icon and text.
+    Specify the elements that the template should render and wrap them in an element with the <a href="https://angular.dev/api/router/RouterLink" target="_blank">RouterLink</a> directive. In the code below, the *"links"* **itemTemplate** renders an icon and text.
 
 1. **Enable item selection**
 

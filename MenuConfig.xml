@@ -86,7 +86,7 @@
 
   <MenuRule Destination="75 Troubleshooting" SourcePattern="Howto:^80 Troubleshooting" />
 
-  <MenuRule Destination="77 Migrate from Reactive" SourcePattern="Howto:^50 React Components/65 Migrate from Reactive" VisibleFor="React" />
+  <MenuRule Destination="77 Migrate from DevExtreme Reactive" SourcePattern="Howto:^50 React Components/65 Migrate from DevExtreme Reactive" VisibleFor="React" />
 
   <MenuRule Destination="80 Migrate to the New Version" SourcePattern="Howto:^Common/Migrate to the New Version" />
 

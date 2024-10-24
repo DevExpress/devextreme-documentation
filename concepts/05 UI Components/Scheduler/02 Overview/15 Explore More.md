@@ -2,4 +2,4 @@
 
 - [API](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
 
-- [Demos](/concepts/05%20UI%20Components/Scheduler/Demos.md '/Documentation/Guide/UI_Components/Scheduler/Demos/')
+- [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview/)

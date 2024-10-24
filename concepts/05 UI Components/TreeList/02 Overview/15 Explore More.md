@@ -2,4 +2,4 @@
 
 - [API](/api-reference/10%20UI%20Components/dxTreeList '/Documentation/ApiReference/UI_Components/dxTreeList/')
 
-- [Demos](/concepts/05%20UI%20Components/TreeList/Demos.md '/Documentation/Guide/UI_Components/TreeList/Demos/')
+- [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview/)

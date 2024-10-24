@@ -2,4 +2,4 @@
 
 - [API](/api-reference/10%20UI%20Components/dxPopup '/Documentation/ApiReference/UI_Components/dxPopup/')
 
-- [Demos](/concepts/05%20UI%20Components/Popup/Demos.md '/Documentation/Guide/UI_Components/Popup/Demos/')
+- [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popup/Overview/)

@@ -74,7 +74,7 @@ The `open` method returns a `DxPopupServiceComponent` object. This type extends 
 
 ---
 
-You can access the Popup instance through `DxPopupServiceComponent`. Call the [hide()](/api-reference/10%20UI%20Components/dxOverlay/3%20Methods/hide().md '/Documentation/ApiReference/UI_Components/dxPopup/Methods/#hide') method to close Popup programmatically:
+You can access the Popup instance through `DxPopupServiceComponent`. Call the [hide()](/api-reference/10%20UI%20Components/dxOverlay/3%20Methods/hide().md '/Documentation/ApiReference/UI_Components/dxPopup/Methods/#hide') method to close the Popup programmatically:
 
 ---
 ##### Angular

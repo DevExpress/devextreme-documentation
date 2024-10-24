@@ -4,16 +4,20 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function used in JavaScript frameworks to save the UI component instance.
 
 ##### param(e): ui/chat:InitializedEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ---
-<!-- Description goes here -->
+#include common-code-on-initialized
+
+#####See Also#####
+
+#include common-get-instance

@@ -1,13 +1,12 @@
 ---
-id: User
+id: ChatError
 module: ui/chat
-export: User
+export: ChatError
 type: Object
-generateTypeLink: 
 ---
 ---
 ##### shortDescription
-A configuration object for a user.
+A configuration object for an error.
 
 ---
 <!-- Description goes here -->

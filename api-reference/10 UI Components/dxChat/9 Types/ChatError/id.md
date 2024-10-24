@@ -1,10 +1,10 @@
 ---
-id: User.id
+id: ChatError.id
 type: Number | String
 ---
 ---
 ##### shortDescription
-User's identification number or string.
+Error's identification number or string.
 
 ---
 <!-- Description goes here -->

@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [messageSend]({basewidgetpath}/Events/#messageSend) event handler's argument.
 
 ---
 <!-- Description goes here -->

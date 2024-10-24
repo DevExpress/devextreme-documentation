@@ -1,11 +1,11 @@
 ---
-id: User.avatarUrl
+id: ChatError.message
 type: String
 default: ''
 ---
 ---
 ##### shortDescription
-An avatar URL.
+A displayed error message.
 
 ---
 <!-- Description goes here -->

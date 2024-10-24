@@ -1,10 +1,14 @@
-Next.js is a React-based web development framework. It can both generate static websites and serve dynamic content. The creators of React endorse Next.js because Next is easy to use, feature-rich, and compatible with modern web development patterns, such as server-side page rendering.
+---
+title: DevExtreme React - Create a DevExtreme-powered Website/Application with Next.js
+---
 
-This article explains how to create a simple Next.js application, and populate it with DevExtreme components.
+Next.js is a React-based web development framework. It can generate static websites and serve dynamic content. The creators of React endorse Next.js because Next is easy to use, feature-rich, and compatible with modern web development patterns (such as server-side page rendering).
 
-## 1. Create a new project
+This help topic details the use of DevExtreme UI components alongside the Next.js framework.
 
-> Read the [official Next.js documentation](https://nextjs.org/docs/getting-started/installation) for an in-depth overview of the installation process.
+## 1. Create a New Project
+
+Consult the following external webpage if you are new to Next.js: [Getting Started: Installation | Next.js (nextjs.org)](https://nextjs.org/docs/getting-started/installation).
 
 The `create-next-app` wizard allows you to bootstrap a Next.js web app in a matter of minutes.
 
@@ -16,7 +20,7 @@ Run the following command to launch the wizard:
 
     npx create-next-app@latest
 
-Answer the wizard's prompts to configure your new app. For the purposes of this tutorial, we enabled the following options:
+Answer the wizard's prompts to configure your new app. For this tutorial, we enabled the following options:
 
 * TypeScript support
 * ESLint support
@@ -37,11 +41,11 @@ The server outputs the preview URL to the console. The default URL is `http://lo
 
 Proceed to the next step when you get the server up and running.
 
-## 2. Add static content to the front page
+## 2. Add Static Content to the Front Page
 
-During the set-up process we selected the "Store source code in the `src/` directory" option. As such, the `src/app/page.tsx` file stores the source of your application's front page.
+During the set-up process we selected the "Store source code in the `src/` directory" option. As such, the `src/app/page.tsx` file stores the source for your app’s front page.
 
-Let's replace the content of the page with a simple heading and a paragraph:
+Let's replace page content with a simple heading and a paragraph:
 
     <!--tab: page.tsx-->
     export default function Home() {
@@ -62,7 +66,7 @@ Let's replace the content of the page with a simple heading and a paragraph:
 
 The `page.tsx` file no longer references the `page.module.css` file. Delete the CSS file from disk.
 
-The `globals.css` file contains global styles, including the setting that configures the default background color. It is **unsafe** to remove this file. Delete the following CSS code to make the background plain:
+The `globals.css` file contains global styles, including the setting used to configure the default background color. It is **unsafe** to remove this file. Delete the following CSS code to apply a plain background:
 
     <!--tab: globals.css-->
     body {
@@ -77,11 +81,11 @@ The `globals.css` file contains global styles, including the setting that config
 
 ### View the server-rendered page
 
-The page should look like this:
+Your page should appear as follows:
 
 ![Modified page](/images/NextJS/modified-page.png)
 
-Next.js rendered this content on the server. This means that you can view it in a browser that prohibits the execution of client-side JavaScript. Try it yourself --- go to your browser settings, disable JavaScript, and refresh the page. 
+Next.js rendered this content on the server. This means you can view the page in a browser that prohibits execution of client-side JavaScript. Try it yourself - go to your browser settings, disable JavaScript, and refresh the page. 
 
 ![Disable JavaScript](/images/NextJS/disable-javascript.png)
 
@@ -89,17 +93,17 @@ The page should not change.
 
 ![Modified page](/images/NextJS/ssr-example.png)
 
-Turn JavaScript back on to continue the tutorial.
+Activate JavaScript to continue the tutorial.
 
-## 3. Add a DevExtreme DataGrid
+## 3. Add a DevExtreme Grid
 
-### Install dependencies
+### Install Dependencies
 
 Run the following command to install the necessary DevExtreme packages and save them to your package dependency list:
 
     npm install devextreme@24.2 devextreme-react@24.2 --save-exact
 
-### Set up the necessary imports
+### Set up the Necessary Imports
 
 Open the `page.tsx` file. Add the following `import` statements at the beginning:
 
@@ -107,11 +111,13 @@ Open the `page.tsx` file. Add the following `import` statements at the beginning
     import DataGrid from 'devextreme-react/data-grid';
     import 'devextreme/dist/css/dx.light.css';
 
-The first `import` allows you to use the DataGrid component. The second applies the default "Light" theme to DevExtreme components.
+The first `import` allows you to use the DataGrid component. The second applies the default "Light" theme to DevExtreme UI components.
 
 ### Set up a Data Source
 
-The DataGrid component requires a data source. For the purpose of this tutorial, we'll use data from the publicly available [Cat Facts API](https://catfact.ninja). Add the following asynchronous code to the `page.tsx` file:
+[note] If you use [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'), add a [`use client` directive](https://nextjs.org/docs/app/building-your-application/rendering/client-components#using-client-components-in-nextjs) to ensure that the instance is created on the client only. DataSource instances do not support React serialization and therefore cannot be created on the server and sent to the client.
+
+Our DataGrid requires a data source. For the purpose of this tutorial, we'll use data from the publicly available [Cat Facts API](https://catfact.ninja). Add the following asynchronous code to the `page.tsx` file:
 
     <!--tab: page.tsx-->
     const getCatFacts = async (): Promise<any[]> => {
@@ -125,7 +131,7 @@ The DataGrid component requires a data source. For the purpose of this tutorial,
 
 ### Configure the DataGrid
 
-[note] The Next.js Router imposes additional limitations on DevExtreme components. Components without the ["use client" directive](https://nextjs.org/docs/app/building-your-application/rendering/client-components#using-client-components-in-nextjs) only accept props of primitive data types. Include this directive to use custom DevExtreme data types such as `ArrayStore` and `ODataStore`.
+[note] The Next.js Router imposes additional limitations on DevExtreme UI components. Components without the ["use client" directive](https://nextjs.org/docs/app/building-your-application/rendering/client-components#using-client-components-in-nextjs) only accept props of primitive data types. Include this directive to use custom DevExtreme data types such as `ArrayStore` and `ODataStore`.
 
 Create a new React component with the name `DemoGrid`. Use this component to define and configure a new instance of the DevExtreme DataGrid:
 
@@ -144,7 +150,7 @@ Create a new React component with the name `DemoGrid`. Use this component to def
         ); 
     }
 
-### Insert the DataGrid component into the page
+### Insert the DataGrid Into the Page
 
 Modify the Home function to include the `DemoGrid` component we created in the previous step:
 
@@ -164,13 +170,13 @@ Modify the Home function to include the `DemoGrid` component we created in the p
         )
     }
 
-### View the client-side rendered grid
+### View the Client-side Rendered Grid
 
 If your server runs in development mode, refresh the browser window. If your server runs in production mode, build the application, and restart the server:
 
     npm run build; npm run start
 
-The page should display an interactive grid with data from the Cat Facts API.
+The page should now display an interactive grid with data from the Cat Facts API.
 
 ![Client-side grid](/images/NextJS/client-side-grid.png)
 
@@ -180,8 +186,8 @@ DevExtreme renders the DataGrid on the client, even if the rest of the page is r
 
 ## 4. Next Steps
 
-DevExtreme components are powerful, easy to use, and fully compatible with Next.js. View our [application templates](https://js.devexpress.com/React/Templates/) and [demos](https://js.devexpress.com/Demos/WidgetsGallery/) to discover the full capabilities of DevExtreme components.
+DevExtreme UI components are intuitive, easy to use, and fully compatible with Next.js. Review our [application templates](https://js.devexpress.com/React/Templates/) and [demos](https://js.devexpress.com/Demos/WidgetsGallery/) to explore the capabilities of DevExtreme UI components at your own pace.
 
-Read the [Next.js documentation](https://nextjs.org/docs) for more information on the Next.js framework.
+For additional information on the Next.js framework, refer to the following external webpage: [Introduction | Next.js (nextjs.org)](https://nextjs.org/docs).
 
 [tags] react

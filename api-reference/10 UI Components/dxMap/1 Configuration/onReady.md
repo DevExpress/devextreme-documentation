@@ -20,11 +20,4 @@ The UI component's instance.
 The current provider's map data.
 
 ---
-You can use `component` field to access properties that are common for all supported Map [providers](/api-reference/10%20UI%20Components/dxMap/9%20Types/MapProvider.md '/Documentation/ApiReference/UI_Components/dxMap/Types/#MapProvider'). To access provider-specific API, utilize the `originalMap` parameter. The examples below demonstrate this solution:
-
-#include btn-open-github with {
-    href: "https://github.com/DevExpress-Examples/devextreme-map-add-the-current-location-marker"
-}
-#include btn-open-github with {
-    href: "https://github.com/DevExpress-Examples/devextreme-map-display-step-by-step-directions"
-}
+You can use the `component` field to access properties that are common to all supported Map [providers](/api-reference/10%20UI%20Components/dxMap/9%20Types/MapProvider.md '/Documentation/ApiReference/UI_Components/dxMap/Types/#MapProvider'). To access provider-specific API, utilize the `originalMap` parameter.

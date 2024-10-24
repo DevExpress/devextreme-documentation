@@ -1,6 +1,6 @@
 In some cases, the UI component contains so many columns that they cause horizontal scrolling. If specific columns should be on screen constantly regardless of how far the UI component is scrolled, a user can fix them.
 
-![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid ColumnFixing](/images/DataGrid/visual_elements/column_fixing.png)
+![DevExtreme DataGrid Column Fixing](/images/DataGrid/visual_elements/column_fixing.png)
 
 To allow this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnFixing/enabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columnFixing/#enabled') property to **true**. If a user should never fix (or unfix) a specific column, set its [allowFixing](/api-reference/_hidden/GridBaseColumn/allowFixing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowFixing') property to **false**.
 
@@ -95,7 +95,7 @@ To allow this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Compo
     
 ---
 
-If a column should be fixed initially, assign **true** to its [fixed](/api-reference/_hidden/GridBaseColumn/fixed.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#fixed') property and specify its target position in the UI component using the [fixedPosition](/api-reference/_hidden/GridBaseColumn/fixedPosition.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#fixedPosition') property.
+If a column should be fixed initially, assign **true** to its [fixed](/api-reference/_hidden/GridBaseColumn/fixed.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#fixed') property and specify its target position in the UI component with the [fixedPosition](/api-reference/_hidden/GridBaseColumn/fixedPosition.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#fixedPosition') property.
 
 ---
 ##### jQuery
@@ -105,7 +105,7 @@ If a column should be fixed initially, assign **true** to its [fixed](/api-refer
             columns: [{
                 // ...
                 fixed: true,
-                fixedPosition: "left"
+                fixedPosition: "sticky"
             }]
         });
     });
@@ -114,7 +114,7 @@ If a column should be fixed initially, assign **true** to its [fixed](/api-refer
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column [fixed]="true" fixedPosition="left" ... ></dxi-column>
+        <dxi-column [fixed]="true" fixedPosition="sticky" ... ></dxi-column>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -136,7 +136,7 @@ If a column should be fixed initially, assign **true** to its [fixed](/api-refer
     <!-- tab: App.vue -->
     <template>
         <DxDataGrid ... >
-            <DxColumn :fixed="true" fixed-position="left" ... />
+            <DxColumn :fixed="true" fixed-position="sticky" ... />
         </DxDataGrid>
     </template>
 
@@ -172,7 +172,7 @@ If a column should be fixed initially, assign **true** to its [fixed](/api-refer
         render() {
             return (
                 <DataGrid ... >
-                    <Column fixed={true} fixedPosition="left" ... />
+                    <Column fixed={true} fixedPosition="sticky" ... />
                 </DataGrid>
             );
         }

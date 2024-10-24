@@ -6,7 +6,7 @@ references: GridBaseColumn.fixedPosition
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a position type for fixed columns.
 
 ---
 <!-- Description goes here -->

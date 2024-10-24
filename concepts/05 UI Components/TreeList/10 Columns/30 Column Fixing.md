@@ -1,6 +1,6 @@
 In some cases, the UI component contains so many columns that they cause horizontal scrolling. If specific columns should be on screen constantly regardless of how far the UI component is scrolled, a user can fix them.
 
-![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component TreeList ColumnFixing](/images/treelist/visual_elements/column_fixing.png)
+![DevExtreme TreeList Column Fixing](/images/treelist/visual_elements/column_fixing.png)
 
 To allow this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnFixing/enabled.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columnFixing/#enabled') property to **true**. If a user should never fix (or unfix) a specific column, set its [allowFixing](/api-reference/_hidden/GridBaseColumn/allowFixing.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#allowFixing') property to **false**.
 

@@ -2,4 +2,4 @@
 
 - [API](/api-reference/10%20UI%20Components/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid/')
 
-- [Demos](/concepts/05%20UI%20Components/DataGrid/Demos.md '/Documentation/Guide/UI_Components/DataGrid/Demos/')
+- [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/)

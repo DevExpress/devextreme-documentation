@@ -29,10 +29,10 @@ You can customize a variety of Scheduler elements:
 If Scheduler performance suffers due to a high number of appointments, you can [lazy load data](/concepts/05%20UI%20Components/Scheduler/085%20Optimize%20Scheduler%20Performance%20with%20Lazy%20Loading.md '/Documentation/Guide/UI_Components/Scheduler/Optimize_Scheduler_Performance_with_Lazy_Loading/').
 
 - **Disable Date/Time Ranges**    
-Disable certain days, dates, and times to prevent scheduling conflicts.
+[Disable](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CellTemplates/) certain days, dates, and times to prevent scheduling conflicts.
 
 - **Virtual Scrolling**    
-Enabling virtual scrolling in Scheduler speeds up load times by displaying only visible appointments. Ideal for large datasets.
+Enabling [virtual scrolling](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/scrolling/#mode) in Scheduler speeds up load times by displaying only visible appointments. Ideal for large datasets.
 
 - **Work Shifts**    
-Set up multiple work shifts in Scheduler using the offset property to define when the day begins. Combine with startDayHour, endDayHour, and cellDuration for preferred display outcomes.
+Set up multiple work shifts in Scheduler using the [offset](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#offset) property to define when the day begins. Combine with [startDayHour](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#startDayHour), [endDayHour](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#endDayHour), and [cellDuration](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#cellDuration) for preferred display outcomes.

@@ -9,3 +9,6 @@ Configure opening and closing [animations](/api-reference/10%20UI%20Components/d
 
 - **Hide Popup**    
 Choose how users can close the Popup: [show the close button](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/showCloseButton.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#showCloseButton'), [hide on the outside click](/api-reference/10%20UI%20Components/dxPopover/1%20Configuration/hideOnOutsideClick.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#hideOnOutsideClick'), or [define your custom close button](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popup/Overview/).
+
+- **Drag and Resize**    
+A user can [resize](Documentation/ApiReference/UI_Components/dxPopup/Configuration/#resizeEnabled) and [drag](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#dragEnabled) the Popup by the title.

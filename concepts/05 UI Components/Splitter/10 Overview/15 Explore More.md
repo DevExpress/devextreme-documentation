@@ -2,4 +2,4 @@
 
 - [API](/api-reference/10%20UI%20Components/dxSplitter '/Documentation/ApiReference/UI_Components/dxSplitter/')
 
-- [Demos](/concepts/05%20UI%20Components/Splitter/Demos.md '/Documentation/Guide/UI_Components/Splitter/Demos/')
+- [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Splitter/Overview/)

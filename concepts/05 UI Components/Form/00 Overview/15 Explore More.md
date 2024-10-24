@@ -2,4 +2,4 @@
 
 - [API](/api-reference/10%20UI%20Components/dxForm '/Documentation/ApiReference/UI_Components/dxForm/')
 
-- [Demos](/concepts/05%20UI%20Components/Form/Demos.md '/Documentation/Guide/UI_Components/Form/Demos/')
+- [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview/)

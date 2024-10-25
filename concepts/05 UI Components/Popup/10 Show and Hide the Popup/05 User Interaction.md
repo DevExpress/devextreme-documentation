@@ -1,4 +1,4 @@
-Enable the [showCloseButton](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#showCloseButton) property to allow a user to hide the Popup component by clicking the **Close** button.
+Enable the [showCloseButton](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/showCloseButton.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#showCloseButton') property to allow a user to hide the Popup component by clicking the **Close** button.
 
 ---
 ##### jQuery

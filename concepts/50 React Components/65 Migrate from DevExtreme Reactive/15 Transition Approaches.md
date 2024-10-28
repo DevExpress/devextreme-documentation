@@ -28,7 +28,7 @@ For example, you want to transition your DevExtreme Reactive Grid component into
         ); 
     }; 
 
-You can convert DevExtreme Reactive Grid `columns` into DevExtreme DataGrid [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/) object:
+You can convert DevExtreme Reactive Grid `columns` into DevExtreme DataGrid [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') object:
 
     <DataGrid 
         dataSource={rows} 
@@ -39,7 +39,7 @@ You can convert DevExtreme Reactive Grid `columns` into DevExtreme DataGrid [col
         }))} 
     /> 
 
-Note that `rows` transformed into [dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource).
+Note that `rows` transformed into [dataSource](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource').
 
 You can also convert `columns` to DevExtreme React `Column` configuration components:
 
@@ -99,4 +99,4 @@ After replacing everything from scratch, you get the following code:
 
 #####See Also#####
 
-- [Optimize Performance](/Documentation/Guide/React_Components/Optimize_Performance/)
+- [Optimize Performance](/concepts/50%20React%20Components/45%20Optimize%20Performance/00%20Optimize%20Performance.md '/Documentation/Guide/React_Components/Optimize_Performance/')

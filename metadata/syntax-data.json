@@ -6467,6 +6467,17 @@
     "componentOptions.onInitialized": {
       "vue": "@initialized"
     },
+    "converter": {
+      "angular": "dxo-converter",
+      "react": "Converter",
+      "vue": "DxConverter"
+    },
+    "converter.fromHtml": {
+      "vue": "from-html"
+    },
+    "converter.toHtml": {
+      "vue": "to-html"
+    },
     "customCommand": {
       "angular": "dxo-custom-command",
       "react": "CustomCommand",
@@ -12854,6 +12865,11 @@
     },
     "dxHtmlEditorOptions.allowSoftLineBreak": {
       "vue": "allow-soft-line-break"
+    },
+    "dxHtmlEditorOptions.converter": {
+      "angular": "dxo-converter",
+      "react": "Converter",
+      "vue": "DxConverter"
     },
     "dxHtmlEditorOptions.customizeModules": {
       "vue": "customize-modules"

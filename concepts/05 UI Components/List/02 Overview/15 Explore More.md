@@ -2,4 +2,4 @@
 
 - [API](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 
-- [Demos](/concepts/05%20UI%20Components/List/Demos.md '/Documentation/Guide/UI_Components/List/Demos/')
+- [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI/)

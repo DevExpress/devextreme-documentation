@@ -6,3 +6,6 @@ Button states include default, [hover](/api-reference/10%20UI%20Components/dxBut
 
 - **Action Binding**    
 You can bind Button to a function triggered when the button [is clicked](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick'). Actions can include [submitting a form](/concepts/05%20UI%20Components/Button/10%20Validate%20and%20Submit%20an%20HTML%20Form.md '/Documentation/Guide/UI_Components/Button/Validate_and_Submit_an_HTML_Form/'), navigating to another page, or executing a custom script.
+
+- **Predefined Types**    
+Button includes a set of [predefined color schemes](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#type) and [styling modes](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#stylingMode).

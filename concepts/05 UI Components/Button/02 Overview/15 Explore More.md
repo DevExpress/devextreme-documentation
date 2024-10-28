@@ -2,4 +2,4 @@
 
 - [API](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/')
 
-- [Demos](/concepts/05%20UI%20Components/Button/Demos.md '/Documentation/Guide/UI_Components/Button/Demos/')
+- [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/)

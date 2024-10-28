@@ -2,4 +2,4 @@
 
 - [API](/api-reference/10%20UI%20Components/dxTextBox '/Documentation/ApiReference/UI_Components/dxTextBox/')
 
-- [Demos](/concepts/05%20UI%20Components/TextBox/Demos.md '/Documentation/Guide/UI_Components/TextBox/Demos/')
+- [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextBox/Overview/)

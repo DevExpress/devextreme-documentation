@@ -33,6 +33,8 @@ Returns only leaves' keys.
 
         getSelectedRowKeys("leavesOnly") // returns [8, 9, 6, 10, 4]
 
+[note] If remote operations are enabled, **getSelectedRowKeys** retrieves selection from currently loaded rows only.
+
 #####See Also#####
 #include common-link-callmethods
 - [getSelectedRowsData(mode)](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/getSelectedRowsData(mode).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#getSelectedRowsDatamode')

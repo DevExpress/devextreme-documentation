@@ -187,7 +187,13 @@ Returns only leaves' data objects.
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/MultipleRowSelection/"
 }
 
-[note][Calculated values](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#calculateCellValue') cannot be obtained because this method gets data objects from the data source.
+[note]
+
+- [Calculated values](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#calculateCellValue') cannot be obtained because this method gets data objects from the data source.
+
+- If remote operations are enabled, **getSelectedRowsData** retrieves selection from currently loaded rows only.
+
+[/note]
 
 #####See Also#####
 #include common-link-callmethods

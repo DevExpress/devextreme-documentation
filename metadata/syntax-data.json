@@ -309,6 +309,26 @@
       "react": "_ui_chat_OptionChangedEvent",
       "vue": "Dx_ui_chat_OptionChangedEvent"
     },
+    "_ui_chat_TypingEndEvent": {
+      "angular": "dxo-ui-chat--typing-end-event",
+      "react": "_ui_chat_TypingEndEvent",
+      "vue": "Dx_ui_chat_TypingEndEvent"
+    },
+    "_ui_chat_TypingEndEvent.user": {
+      "angular": "dxo-user",
+      "react": "User",
+      "vue": "DxUser"
+    },
+    "_ui_chat_TypingStartEvent": {
+      "angular": "dxo-ui-chat--typing-start-event",
+      "react": "_ui_chat_TypingStartEvent",
+      "vue": "Dx_ui_chat_TypingStartEvent"
+    },
+    "_ui_chat_TypingStartEvent.user": {
+      "angular": "dxo-user",
+      "react": "User",
+      "vue": "DxUser"
+    },
     "_ui_check_box_ContentReadyEvent": {
       "angular": "dxo-ui-check-box--content-ready-event",
       "react": "_ui_check_box_ContentReadyEvent",
@@ -9000,6 +9020,12 @@
     },
     "dxChatOptions.onOptionChanged": {
       "vue": "@option-changed"
+    },
+    "dxChatOptions.onTypingEnd": {
+      "vue": "@typing-end"
+    },
+    "dxChatOptions.onTypingStart": {
+      "vue": "@typing-start"
     },
     "dxChatOptions.registerKeyHandler": {
       "vue": "register-key-handler"
@@ -21350,6 +21376,9 @@
       "angular": "dxo-user",
       "react": "User",
       "vue": "DxUser"
+    },
+    "user.avatarAlt": {
+      "vue": "avatar-alt"
     },
     "user.avatarUrl": {
       "vue": "avatar-url"

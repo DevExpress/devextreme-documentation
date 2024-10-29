@@ -1,5 +1,5 @@
 ---
-id: dxChat.Options.onMessageSend
+id: dxChat.Options.onTypingEnd
 type: function(e)
 default: undefined
 ---
@@ -7,7 +7,7 @@ default: undefined
 ##### shortDescription
 <!-- Description goes here -->
 
-##### param(e): ui/chat:MessageSendEvent
+##### param(e): ui/chat:TypingEndEvent
 <!-- Description goes here -->
 
 ##### field(e.component): {WidgetName}
@@ -16,10 +16,7 @@ default: undefined
 ##### field(e.element): DxElement
 <!-- Description goes here -->
 
-##### field(e.event): event
-<!-- Description goes here -->
-
-##### field(e.message): Message
+##### field(e.user): User
 <!-- Description goes here -->
 
 ---

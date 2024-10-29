@@ -15,7 +15,7 @@ Set the [focusedRowEnabled](/api-reference/10%20UI%20Components/GridBase/1%20Con
     .dx-datagrid-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused),
     .dx-datagrid-rowsview .dx-row-focused.dx-data-row > tr > td:not(.dx-focused) {
         background-color: red !important;
-        color: #fff !important;
+        color: #fff !important; 
     }
 
     <!-- tab: Hovered -->

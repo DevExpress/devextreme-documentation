@@ -5,6 +5,6 @@ default: 1
 ---
 ---
 ##### shortDescription
-Specifies the width of the scale's ticks (both major and minor ticks).
+Specifies the width of the scale's ticks (major ticks only).
 
 ---

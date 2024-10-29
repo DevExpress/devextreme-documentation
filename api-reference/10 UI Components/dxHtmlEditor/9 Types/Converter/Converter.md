@@ -6,7 +6,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An object that configures converter settings.
 
 ---
 <!-- Description goes here -->

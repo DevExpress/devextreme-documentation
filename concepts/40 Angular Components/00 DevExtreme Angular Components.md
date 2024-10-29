@@ -7,6 +7,10 @@ The DevExtreme Angular UI Component Suite offers over 80 responsive, touch-enabl
 
 <img src="/images/UiWidgets/component-list.png" style="width: 900px;"/>
 
+## Try DevExtreme Angular Components in Your Project
+
+Experience DevExtreme components in your projects with our [30-day trial](https://js.devexpress.com/Download/). No registration needed. A [license](/Documentation/Guide/Common/Licensing/) is **required** for commercial use.
+
 ## Getting Started
 
 1. [Add DevExtreme](/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/) to your Angular application or create [an application with a template](/Documentation/Guide/Angular_Components/Getting_Started/Create_a_DevExtreme_Application/) for quick setup.

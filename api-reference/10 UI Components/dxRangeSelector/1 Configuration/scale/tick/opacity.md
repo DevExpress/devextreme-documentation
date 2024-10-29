@@ -5,6 +5,6 @@ default: 0.1
 ---
 ---
 ##### shortDescription
-Specifies the opacity of scale ticks (both major and minor ticks).
+Specifies the opacity of scale ticks (major ticks only).
 
 ---

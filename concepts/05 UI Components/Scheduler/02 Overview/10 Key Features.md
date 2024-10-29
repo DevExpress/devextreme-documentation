@@ -23,7 +23,7 @@ You can customize a variety of Scheduler elements:
     - [Appointment tooltip](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/060%20Customize%20Appointment%20Tooltip.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment_Tooltip/')
     - [Appointment details form](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/onAppointmentFormOpening.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentFormOpening')
     - [View](/concepts/05%20UI%20Components/Scheduler/060%20Views/020%20Customize%20Individual%20Views.md '/Documentation/Guide/UI_Components/Scheduler/Views/Customize_Individual_Views/')
-    - [Resource headers](/Documentation/Guide/UI_Components/Scheduler/Resources/Customize_Resource_Headers/)
+    - [Resource headers](/concepts/05%20UI%20Components/Scheduler/040%20Resources/040%20Customize%20Resource%20Headers.md '/Documentation/Guide/UI_Components/Scheduler/Resources/Customize_Resource_Headers/')
 
 - **Lazy loading**    
 If Scheduler performance suffers due to a high number of appointments, you can [lazy load data](/concepts/05%20UI%20Components/Scheduler/085%20Optimize%20Scheduler%20Performance%20with%20Lazy%20Loading.md '/Documentation/Guide/UI_Components/Scheduler/Optimize_Scheduler_Performance_with_Lazy_Loading/').
@@ -32,7 +32,7 @@ If Scheduler performance suffers due to a high number of appointments, you can [
 [Disable](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CellTemplates/) certain days, dates, and times to prevent scheduling conflicts.
 
 - **Virtual Scrolling**    
-Enabling [virtual scrolling](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/scrolling/#mode) in Scheduler speeds up load times by displaying only visible appointments. Ideal for large datasets.
+Enabling [virtual scrolling](/api-reference/_hidden/dxSchedulerScrolling/mode.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/scrolling/#mode') in Scheduler speeds up load times by displaying only visible appointments. Ideal for large datasets.
 
 - **Work Shifts**    
-Set up multiple work shifts in Scheduler using the [offset](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#offset) property to define when the day begins. Combine with [startDayHour](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#startDayHour), [endDayHour](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#endDayHour), and [cellDuration](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#cellDuration) for preferred display outcomes.
+Set up multiple work shifts in Scheduler using the [offset](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/offset.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#offset') property to define when the day begins. Combine with [startDayHour](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/startDayHour.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#startDayHour'), [endDayHour](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/endDayHour.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#endDayHour'), and [cellDuration](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/cellDuration.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#cellDuration') for preferred display outcomes.

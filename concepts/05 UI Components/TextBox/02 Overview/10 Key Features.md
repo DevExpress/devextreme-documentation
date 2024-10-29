@@ -11,4 +11,4 @@ Switch TextBox to [password mode](/api-reference/10%20UI%20Components/dxTextBox/
 Integrate [custom buttons](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/buttons '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/buttons/') inside the input field. You can also enable predefined buttons like a [clear button](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/showClearButton.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#showClearButton').
 
 - **Text Length Limitation**    
-You can specify the [maxLength](/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#maxLength) property to limit the text length.
+You can specify the [maxLength](/api-reference/10%20UI%20Components/dxTextBox/1%20Configuration/maxLength.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#maxLength') property to limit the text length.

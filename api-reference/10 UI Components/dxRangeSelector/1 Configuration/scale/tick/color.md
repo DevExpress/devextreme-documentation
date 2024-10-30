@@ -5,7 +5,7 @@ default: '#000000'
 ---
 ---
 ##### shortDescription
-Specifies the color of scale ticks (both major and minor ticks).
+Specifies the color of scale ticks (major ticks only).
 
 ---
 #include common-colorlist

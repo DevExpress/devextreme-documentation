@@ -3,10 +3,10 @@ id: dxTreeList.getSelectedRowKeys(mode)
 ---
 ---
 ##### shortDescription
-Gets the selected rows' keys.
+Gets selected row keys.
 
 ##### return: Array<any>
-Keys of selected rows. The keys are stored in the order the user selects rows.
+Selected row keys. Keys are stored in the order users select rows.
 
 ##### param(mode): String
 *"all"*, *"excludeRecursive"*, or *"leavesOnly"*.
@@ -19,19 +19,21 @@ Below is an example of a TreeList with several selected rows:
 The **getSelectedRowKeys(mode)** method called for this TreeList returns different results depending on the **mode** argument:
 
 - *"all"*        
-Returns all the selected rows' keys.
+Returns all selected row keys.
 
         getSelectedRowKeys("all") // returns [2, 5, 8, 9, 6, 10, 4]
 
 - *"excludeRecursive"*        
-Excludes recursively selected rows' keys.
+Excludes keys in recursively selected rows.
 
         getSelectedRowKeys("excludeRecursive") // returns [2, 6, 10, 4]
 
 - *"leavesOnly"*          
-Returns only leaves' keys.
+Returns keys of the end nodes ("leaves") only.
 
         getSelectedRowKeys("leavesOnly") // returns [8, 9, 6, 10, 4]
+
+[note] If remote operations are enabled, **getSelectedRowKeys** retrieves selection from currently loaded rows only.
 
 #####See Also#####
 #include common-link-callmethods

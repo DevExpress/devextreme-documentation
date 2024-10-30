@@ -1,0 +1,1 @@
+DevExtreme Reactive [documentation](https://devexpress.github.io/devextreme-reactive/docs/) contains code snippets in the Guides sections of each component. For each scenario in the documentation, we prepared code snippets that show how to achieve the same results with DevExtreme React components. You can find these snippets under the "Migrate to DevExtreme React" tab.

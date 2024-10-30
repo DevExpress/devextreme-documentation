@@ -9030,6 +9030,18 @@
     "dxChatOptions.registerKeyHandler": {
       "vue": "register-key-handler"
     },
+    "dxChatOptions.showAvatar": {
+      "vue": "show-avatar"
+    },
+    "dxChatOptions.showDayHeaders": {
+      "vue": "show-day-headers"
+    },
+    "dxChatOptions.showMessageTimestamp": {
+      "vue": "show-message-timestamp"
+    },
+    "dxChatOptions.showUserName": {
+      "vue": "show-user-name"
+    },
     "dxChatOptions.tabIndex": {
       "vue": "tab-index"
     },

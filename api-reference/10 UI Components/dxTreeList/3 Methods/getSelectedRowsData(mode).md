@@ -3,10 +3,10 @@ id: dxTreeList.getSelectedRowsData(mode)
 ---
 ---
 ##### shortDescription
-Gets the selected rows' data objects.
+Gets selected row data objects.
 
 ##### return: Array<any>
-The selected rows' data objects.        
+Selected row data objects.        
 The objects are not processed by the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') and have the same order in which the rows were selected.
 
 ##### param(mode): String
@@ -20,17 +20,17 @@ Below is an example of a TreeList with several selected rows:
 The **getSelectedRowsData(mode)** method called for this TreeList returns different results depending on the **mode** argument:
 
 - *"all"*        
-Returns all the selected rows' data objects.
+Returns all selected row data objects.
 
         getSelectedRowsData("all") // returns data objects with the following keys: 2, 5, 8, 9, 6, 10, and 4
 
 - *"excludeRecursive"*        
-Excludes recursively selected rows' data objects.
+Excludes data objects in recursively selected rows
 
         getSelectedRowsData("excludeRecursive") // returns data objects with the following keys: 2, 6, 10, and 4
 
 - *"leavesOnly"*          
-Returns only leaves' data objects.
+Returns data objects of the end nodes ("leaves") only.
 
         getSelectedRowsData("leavesOnly") // returns data objects with the following keys: 8, 9, 6, 10, and 4
 
@@ -187,7 +187,13 @@ Returns only leaves' data objects.
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/MultipleRowSelection/"
 }
 
-[note][Calculated values](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#calculateCellValue') cannot be obtained because this method gets data objects from the data source.
+[note]
+
+- [Calculated values](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#calculateCellValue') cannot be obtained because this method gets data objects from the data source.
+
+- If remote operations are enabled, **getSelectedRowsData** retrieves selection from currently loaded rows only.
+
+[/note]
 
 #####See Also#####
 #include common-link-callmethods

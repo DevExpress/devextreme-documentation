@@ -1,7 +1,7 @@
 ---
 id: dxMap.Options.apiKey
 type: String | Object
-default: { bing: '', google: '', googleStatic: '' }
+default: { azure: '', bing: '', google: '', googleStatic: '' }
 ---
 ---
 ##### shortDescription
@@ -19,7 +19,7 @@ If you have more than one map provider in your application, specify the keys in 
         $("#mapContainer").dxMap({
             // ...
             apiKey: {
-                bing: "MY_BING_MAPS_KEY",
+                azure: "MY_AZURE_MAPS_KEY",
                 google: "MY_GOOGLE_MAPS_KEY",
                 googleStatic: "MY_GOOGLE_STATIC_MAPS_KEY"
             }
@@ -31,7 +31,7 @@ If you have more than one map provider in your application, specify the keys in 
     <!-- tab: app.component.html -->
     <dx-map ... >
         <dxo-api-key
-            bing="MY_BING_MAPS_KEY"
+            azure="MY_AZURE_MAPS_KEY"
             google="MY_GOOGLE_MAPS_KEY"
             googleStatic="MY_GOOGLE_STATIC_MAPS_KEY">
         </dxo-api-key>
@@ -73,7 +73,7 @@ If you have more than one map provider in your application, specify the keys in 
     <template>
         <DxMap ... >
             <DxApiKey
-                bing="MY_BING_MAPS_KEY"
+                azure="MY_AZURE_MAPS_KEY"
                 google="MY_GOOGLE_MAPS_KEY"
                 googleStatic="MY_GOOGLE_STATIC_MAPS_KEY"
             />
@@ -110,7 +110,7 @@ If you have more than one map provider in your application, specify the keys in 
         return (
             <Map ... >
                 <ApiKey
-                    bing="MY_BING_MAPS_KEY"
+                    azure="MY_AZURE_MAPS_KEY"
                     google="MY_GOOGLE_MAPS_KEY"
                     googleStatic="MY_GOOGLE_STATIC_MAPS_KEY"
                 />

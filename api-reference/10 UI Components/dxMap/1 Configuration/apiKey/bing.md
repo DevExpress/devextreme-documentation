@@ -2,6 +2,7 @@
 id: dxMap.Options.apiKey.bing
 type: String
 default: ''
+deprecated: 
 ---
 ---
 ##### shortDescription

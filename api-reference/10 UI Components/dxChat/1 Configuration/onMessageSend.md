@@ -1,7 +1,7 @@
 ---
 id: dxChat.Options.onMessageSend
 type: function(e)
-default: null
+default: undefined
 ---
 ---
 ##### shortDescription

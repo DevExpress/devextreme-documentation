@@ -2,14 +2,14 @@
 module: ui/tabs
 export: SelectionChangingEvent
 type: Object
-inherits: AsyncCancelable,EventInfo,SelectionChangingInfo
+inherits: AsyncCancelable,EventInfo,SelectionChangeInfo
 references: dxTabs.Options.onSelectionChanging
 uid: ui/tabs:SelectionChangingEvent
 generateTypeLink: 
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [selectionChanging]({basewidgetpath}/Events/#selectionChanging) event handler's argument.
 
 ---
 <!-- Description goes here -->

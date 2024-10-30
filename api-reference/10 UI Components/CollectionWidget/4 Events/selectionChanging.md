@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before selection changes.
 
 ---
-<!-- Description goes here -->
+Main article: [onSelectionChanging](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/onSelectionChanged.md '{basewidgetpath}/Configuration/#onSelectionChanged')
+
+#####See Also#####
+#include common-link-handleevents

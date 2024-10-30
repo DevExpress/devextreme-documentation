@@ -37,7 +37,7 @@
 </tr>
 <tr>
 <td>Map</td>
-<td><b>providerConfig.</b><a href="https://js.devexpress.com/Documentation/24_2/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#useAdvancedMarkers">useAdvancedMarkers</a></td>
+<td><b>apiKey.</b><a href="https://js.devexpress.com/Documentation/24_2/ApiReference/UI_Components/dxMap/Configuration/apiKey/#bing">bing</a><br><b>providerConfig.</b><a href="https://js.devexpress.com/Documentation/24_2/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#useAdvancedMarkers">useAdvancedMarkers</a></td>
 </tr>
 <tr>
 <td>PivotGrid</td>

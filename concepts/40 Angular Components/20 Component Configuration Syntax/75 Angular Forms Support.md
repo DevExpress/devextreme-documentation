@@ -1,4 +1,4 @@
-DevExtreme editors support the `formControlName` directive needed for features of <a href="https://angular.io/guide/reactive-forms" target="_blank">reactive forms</a>...
+DevExtreme editors support the `formControlName` directive needed for features of <a href="https://angular.dev/guide/forms/reactive-forms" target="_blank">reactive forms</a>...
 
     <!-- tab: app.component.html -->
     <form [formGroup]="myForm">
@@ -41,7 +41,7 @@ DevExtreme editors support the `formControlName` directive needed for features o
     })
     export class AppModule { }
 
-... and `ngModel` binding necessary to use the editors in <a href="https://angular.io/guide/forms" target="_blank">template-driven forms</a>:
+... and `ngModel` binding necessary to use the editors in <a href="https://angular.dev/guide/forms" target="_blank">template-driven forms</a>:
 
     <!-- tab: app.component.html -->
     <form>

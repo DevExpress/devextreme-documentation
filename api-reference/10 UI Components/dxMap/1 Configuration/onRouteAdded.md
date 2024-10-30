@@ -20,7 +20,7 @@ The UI component's instance.
 The added route's data.
 
 ##### field(e.originalRoute): Object
-The original route that the current map provider uses (only for "google" and "bing" providers).
+The original route that the current map provider uses (only for "google" provider).
 
 ---
 #####See Also#####

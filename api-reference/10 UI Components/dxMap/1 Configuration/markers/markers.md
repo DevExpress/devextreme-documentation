@@ -13,7 +13,3 @@ If you use the Knockout approach when working with the Map UI component, you can
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Routes/"
 }
-
-#include btn-open-github with {
-    href: "https://github.com/DevExpress-Examples/devextreme-map-display-step-by-step-directions"
-}

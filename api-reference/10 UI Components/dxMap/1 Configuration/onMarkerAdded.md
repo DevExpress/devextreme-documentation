@@ -20,7 +20,7 @@ The UI component's instance.
 The added marker's data.
 
 ##### field(e.originalMarker): Object
-The original marker that the current map provider uses (only for "google" and "bing" providers).
+The original marker that the current map provider uses (only for "google" provider).
 
 ---
 #####See Also#####

@@ -35,7 +35,7 @@ State storing saves the following properties:
                 <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#filterValues">filterValues</a></li>
                 <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#fixed">fixed</a></li>
                 <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#fixedPosition">fixedPosition</a></li>
-                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#groupIndex">groupIndex</a></li>
+                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#groupIndex">groupIndex</a> (ensure <a href="{basewidgetpath}/Configuration/groupPanel/#visible">groupPanel.visible</a> and <a href="{basewidgetpath}/Configuration/grouping/#contextMenuEnabled">grouping.contextmenuEnabled</a> are enabled for <b>groupIndex</b> to restore)</li>
             </ul> 
         </td>
         <td>
@@ -44,7 +44,7 @@ State storing saves the following properties:
                 <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#selectedFilterOperation">selectedFilterOperation</a></li>
                 <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#sortIndex">sortIndex</a></li>
                 <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#sortOrder">sortOrder</a></li>
-                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#visible">visible</a> (only if the <a href="{basewidgetpath}/Configuration/columnChooser/">column chooser</a> is <a href="{basewidgetpath}/Configuration/columnChooser/#enabled">enabled</a>)</li>
+                <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#visible">visible</a> (ensure the <a href="{basewidgetpath}/Configuration/columnChooser/">column chooser</a> is <a href="{basewidgetpath}/Configuration/columnChooser/#enabled">enabled</a> for <b>visible</b> to restore)</li>
                 <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#visibleIndex">visibleIndex</a></li>
                 <li><b>columns</b>.<a href="{basewidgetpath}/Configuration/columns/#width">width</a></li>
             </ul>

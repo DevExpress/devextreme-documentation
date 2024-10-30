@@ -112,6 +112,8 @@ where `path1` is *formats/[formatName]* for formats or *modules/[moduleName]* fo
 
 ---
 
+[note] Quill registers modules globally in a static function. You cannot register different modules for different HtmlEditor instances. If you register a module for one HtmlEditor, this module will be registered for all other HtmlEditors on the page/application.
+
 #####See Also#####
 - [get(componentPath)](/api-reference/10%20UI%20Components/dxHtmlEditor/3%20Methods/get(componentPath).md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Methods/#getcomponentPath')
 - [customizeModules](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/customizeModules.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#customizeModules')

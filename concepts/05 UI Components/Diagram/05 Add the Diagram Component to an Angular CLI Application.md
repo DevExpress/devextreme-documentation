@@ -1,4 +1,4 @@
-This tutorial adds the Diagram component to an Angular CLI Application. Refer to the <a href="https://cli.angular.io/" target="_blank">Angular CLI</a> documentation for information on how to create such an application.
+This tutorial adds the Diagram component to an Angular CLI Application. Refer to the <a href="https://angular.dev/cli" target="_blank">Angular CLI</a> documentation for information on how to create such an application.
 
 Install the `devextreme` and `devextreme-angular` npm packages:
 

@@ -85,7 +85,7 @@ To work around this behavior, implement one of the following techniques:
         };
     }
 
-**Rewrite a component’s class method to a custom [Angular pipe](https://angular.io/guide/pipes-custom-data-trans).**
+**Rewrite a component’s class method to a custom [Angular pipe](https://angular.dev/guide/templates/pipes).**
 
     <!-- tab: app.component.ts -->
     import { 

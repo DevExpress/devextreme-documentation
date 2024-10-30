@@ -2,7 +2,7 @@
 module: ui/menu
 export: SelectionChangedEvent
 type: Object
-inherits: EventInfo,SelectionChangedInfo
+inherits: EventInfo,SelectionChangeInfo
 uid: ui/menu:SelectionChangedEvent
 generateTypeLink: 
 references: dxMenu.Options.onSelectionChanged

@@ -18,7 +18,7 @@ After calling this method, remove the DOM element associated with the UI compone
 
 ##### Angular
 
-Use <a href="https://angular.io/guide/built-in-directives#adding-or-removing-an-element-with-ngif" target="_blank">conditional rendering</a> instead of this method:
+Use <a href="https://angular.dev/guide/directives#adding-or-removing-an-element-with-ngif" target="_blank">conditional rendering</a> instead of this method:
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ...

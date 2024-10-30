@@ -13,3 +13,5 @@ This property affects the vertical axis only when the [placeholderSize](/api-ref
 #include dataviz-ref-wordwrap with {
     textOverflow_link: "/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/label/#textOverflow"
 }
+
+[note] This property has no effect if you use a [template](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/label/template.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/label/#template').

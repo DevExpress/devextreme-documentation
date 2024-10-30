@@ -31,7 +31,7 @@ The following code snippet shows how to supply sorting values with a field name:
     <template>
         <DxDataGrid>
             <!-- data-field sets values for the column -->
-            <!-- calculate-sort-value ssets values for sorting -->
+            <!-- calculate-sort-value sets values for sorting -->
             <DxColumn
                 data-field="Position"
                 calculate-sort-value="isOnVacation"

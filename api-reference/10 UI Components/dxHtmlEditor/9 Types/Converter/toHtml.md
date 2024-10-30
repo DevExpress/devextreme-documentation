@@ -4,7 +4,7 @@ type: function(value)
 ---
 ---
 ##### shortDescription
-A function that converts HtmlEditor value from a markup language to HTML.
+A function that converts an HtmlEditor value from a markup language to HTML.
 
 ##### param(value): String
 The HtmlEditor value.

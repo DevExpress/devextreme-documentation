@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-`alt` attribute for avatar image. 
+`alt` attribute for avatar image.
 
 ---
 <!-- Description goes here -->

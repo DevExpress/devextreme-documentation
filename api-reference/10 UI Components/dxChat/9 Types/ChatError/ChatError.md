@@ -3,6 +3,7 @@ id: ChatError
 module: ui/chat
 export: ChatError
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,7 @@
 ---
 ##### jQuery
 
-To change the properties of an editor, get its instance first using the [getEditor(dataField)](/api-reference/10%20UI%20Components/dxForm/3%20Methods/getEditor(dataField).md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#getEditordataField') method. After that, call the **option(optionName, optionValue)** or **option(optionName, options)** method of this instance. This approach is more typical of jQuery. 
+To change the properties of an editor, get its instance using the [getEditor(dataField)](/api-reference/10%20UI%20Components/dxForm/3%20Methods/getEditor(dataField).md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#getEditordataField') method. Then, call the **option(optionName, optionValue)** or **option(optionName, options)** method of this instance.
 
     <!--JavaScript-->
     $(function() {
@@ -26,6 +26,31 @@ To change the properties of an editor, get its instance first using the [getEdit
     });
 
 [note]The **getEditor(dataField)** method is available for visible form items only.
+
+If you need to preserve changes during Form re-rendering, change editor properties at the item level:
+
+    <!--JavaScript-->
+    $(function() {
+        const form = $("#formContainer").dxForm({
+            formData: {
+                firstName: "John",
+                lastName: "Heart",
+                phone: "+1(213) 555-9392",
+                email: "jheart@dx-email.com"
+            }
+        }).dxForm("instance");
+
+         $("#checkBoxContainer").dxCheckBox({
+            text: 'Disable the First Name Editor',
+            value: false,
+            onValueChanged: function (e) {
+                const options = {};
+                options.disabled = e.value;
+                const prevOptions = form.itemOption("firstName").editorOptions;
+                form.itemOption("firstName", "editorOptions", {...prevOptions, ...options });            
+            }
+        });
+    });
 
 ##### Angular
 

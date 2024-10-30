@@ -14,13 +14,13 @@ Experience DevExtreme components in your projects with our [30-day trial](https:
     
     - [Add DevExtreme](/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/) to your Angular application.
     
-    - Create [an application with a template](/Documentation/Guide/Angular_Components/Getting_Started/Create_a_DevExtreme_Application/) for quick setup.
+    - Create [a new application with a template](/Documentation/Guide/Angular_Components/Getting_Started/Create_a_DevExtreme_Application/) for quick setup.
 
 2. **Learn Basics**    
 See the [component configuration syntax](/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/).
 
 3. **Explore**    
-Edit and copy code from [over 400 technical demos](https://js.devexpress.com/Demos/WidgetsGallery).
+Examine [over 400 technical demos](https://js.devexpress.com/Demos/WidgetsGallery) you can edit and copy code from.
 
 ## Getting Help
 
@@ -34,7 +34,7 @@ Questions still unanswered? [Submit a ticket](https://supportcenter.devexpress.c
 
 ## Features for Angular
 
-Each DevExtreme version [supports specific Angular versions](/Documentation/Guide/Angular_Components/Supported_Versions/). The most recent DevExtreme version aligns with the latest Angular version.
+The latest DevExtreme release aligns with the latest Angular version. Check the specific Angular versions your DevExtreme components [are compatible with](/Documentation/Guide/Angular_Components/Supported_Versions/). 
 
 Angular-specific features include:
 

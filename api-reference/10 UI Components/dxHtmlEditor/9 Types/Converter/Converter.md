@@ -3,6 +3,7 @@ id: Converter
 module: ui/html_editor
 export: Converter
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

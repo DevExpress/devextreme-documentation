@@ -165,7 +165,7 @@ The following code snippet shows how to use a function:
 
 ---
 
-Alternatively, adjust sorting with [sortingMethod](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#sortingMethod). The following code snippet sorts the column by word length:
+Alternatively, adjust sorting with [sortingMethod](/api-reference/_hidden/GridBaseColumn/sortingMethod.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#sortingMethod'). The following code snippet sorts the column by word length:
 
 ---
 ##### jQuery

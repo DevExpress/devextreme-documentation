@@ -39,7 +39,7 @@ The latest DevExtreme release aligns with the latest Angular version. Check the 
 Angular-specific features include:
 
 - [TypeScript Support](Documentation/Guide/Common/TypeScript_Guides/Scopes_of_Types/)
-- [Testing](/Documentation/Guide/Angular_Components/Components_Testing/#Unit_Testing)
+- [Testing](/Documentation/Guide/Angular_Components/Components_Testing/)
 - [Server-Side Rendering](/Documentation/Guide/Angular_Components/Common_Features/Server-Side_Rendering/)
 - [Tree Shaking](/Documentation/Guide/Angular_Components/Common_Features/Tree_Shaking/)
 - [Intercept HTTP Requests](/Documentation/Guide/Angular_Components/Common_Features/Intercept_HTTP_Requests/)

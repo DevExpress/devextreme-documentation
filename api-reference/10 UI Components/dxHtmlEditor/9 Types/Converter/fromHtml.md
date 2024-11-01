@@ -4,13 +4,13 @@ type: function(value)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that converts an HtmlEditor value from HTML to another markup language.
 
 ##### param(value): String
-<!-- Description goes here -->
+The HtmlEditor value.
 
 ##### return: String
-<!-- Description goes here -->
+The converted value.
 
 ---
 <!-- Description goes here -->

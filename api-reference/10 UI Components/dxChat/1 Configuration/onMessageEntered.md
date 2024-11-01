@@ -4,7 +4,6 @@ type: function(e)
 default: undefined
 ---
 ---
----
 ##### shortDescription
 A function that is executed after a message is sent.
 

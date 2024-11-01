@@ -1,10 +1,10 @@
 ---
-uid: ui/chat:MessageSendEvent.message
+id: _ui_chat_MessageEnteredEvent.message
 type: Message
 ---
 ---
 ##### shortDescription
-A message that was sent.
+<!-- Description goes here -->
 
 ---
 <!-- Description goes here -->

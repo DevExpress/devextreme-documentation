@@ -294,12 +294,12 @@
       "react": "_ui_chat_DisposingEvent",
       "vue": "Dx_ui_chat_DisposingEvent"
     },
-    "_ui_chat_MessageSendEvent": {
-      "angular": "dxo-ui-chat--message-send-event",
-      "react": "_ui_chat_MessageSendEvent",
-      "vue": "Dx_ui_chat_MessageSendEvent"
+    "_ui_chat_MessageEnteredEvent": {
+      "angular": "dxo-ui-chat--message-entered-event",
+      "react": "_ui_chat_MessageEnteredEvent",
+      "vue": "Dx_ui_chat_MessageEnteredEvent"
     },
-    "_ui_chat_MessageSendEvent.message": {
+    "_ui_chat_MessageEnteredEvent.message": {
       "angular": "dxo-message",
       "react": "Message",
       "vue": "DxMessage"
@@ -9015,8 +9015,8 @@
     "dxChatOptions.onInitialized": {
       "vue": "@initialized"
     },
-    "dxChatOptions.onMessageSend": {
-      "vue": "@message-send"
+    "dxChatOptions.onMessageEntered": {
+      "vue": "@message-entered"
     },
     "dxChatOptions.onOptionChanged": {
       "vue": "@option-changed"
@@ -9029,6 +9029,9 @@
     },
     "dxChatOptions.registerKeyHandler": {
       "vue": "register-key-handler"
+    },
+    "dxChatOptions.reloadOnChange": {
+      "vue": "reload-on-change"
     },
     "dxChatOptions.showAvatar": {
       "vue": "show-avatar"
@@ -9044,6 +9047,11 @@
     },
     "dxChatOptions.tabIndex": {
       "vue": "tab-index"
+    },
+    "dxChatOptions.typingUsers": {
+      "angular": "dxi-typing-user",
+      "react": "TypingUser",
+      "vue": "DxTypingUser"
     },
     "dxChatOptions.user": {
       "angular": "dxo-user",

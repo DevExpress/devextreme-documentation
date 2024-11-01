@@ -1,13 +1,14 @@
 ---
-id: dxChat.Options.onMessageSend
+id: dxChat.Options.onMessageEntered
 type: function(e)
 default: undefined
+---
 ---
 ---
 ##### shortDescription
 A function that is executed after a message is sent.
 
-##### param(e): ui/chat:MessageSendEvent
+##### param(e): ui/chat:MessageEnteredEvent
 Information about the event.
 
 ##### field(e.component): {WidgetName}

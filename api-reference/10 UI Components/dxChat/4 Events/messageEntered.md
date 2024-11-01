@@ -1,5 +1,5 @@
 ---
-id: dxChat.messageSend
+id: dxChat.messageEntered
 type: eventType
 ---
 ---

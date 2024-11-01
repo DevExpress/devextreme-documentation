@@ -1,3 +1,8 @@
+#include common-troubleunderstanding-note with {
+    technology: "React",
+    docsLink: "https://react.dev/learn"
+}
+
 If you are starting a project from scratch, use the [DevExtreme React Template](/concepts/50%20React%20Components/50%20Application%20Template/00%20Application%20Template.md '/Documentation/Guide/React_Components/Application_Template/'). It is a simple application with a navigation menu and several sample views in a responsive layout  (see <a href="https://devexpress.github.io/devextreme-react-template/#/home">live preview</a>).
 
 You can generate this application with the [DevExtreme CLI](/concepts/Common/DevExtreme%20CLI/00%20DevExtreme%20CLI.md '/Documentation/Guide/Common/DevExtreme_CLI/'):

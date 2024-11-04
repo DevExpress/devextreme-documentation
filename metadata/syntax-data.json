@@ -5667,6 +5667,11 @@
     "adaptiveDetailRowPreparingInfo.formOptions": {
       "vue": "form-options"
     },
+    "alert": {
+      "angular": "dxo-alert",
+      "react": "Alert",
+      "vue": "DxAlert"
+    },
     "animationConfig": {
       "angular": "dxo-animation-config",
       "react": "AnimationConfig",
@@ -6323,11 +6328,6 @@
     },
     "chartSeriesObject.barOverlapGroup": {
       "vue": "bar-overlap-group"
-    },
-    "chatError": {
-      "angular": "dxo-chat-error",
-      "react": "ChatError",
-      "vue": "DxChatError"
     },
     "collectionWidgetItem": {
       "angular": "dxo-collection-widget-item",
@@ -8987,13 +8987,13 @@
     "dxChatOptions.activeStateEnabled": {
       "vue": "active-state-enabled"
     },
+    "dxChatOptions.alerts": {
+      "angular": "dxi-alert",
+      "react": "Alert",
+      "vue": "DxAlert"
+    },
     "dxChatOptions.dataSource": {
       "vue": "data-source"
-    },
-    "dxChatOptions.errors": {
-      "angular": "dxi-error",
-      "react": "Error",
-      "vue": "DxError"
     },
     "dxChatOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"

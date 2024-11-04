@@ -1,11 +1,11 @@
 ---
-id: ChatError.message
+id: Alert.message
 type: String
 default: ''
 ---
 ---
 ##### shortDescription
-A displayed error message.
+A displayed alert message.
 
 ---
 <!-- Description goes here -->

@@ -1,13 +1,12 @@
 ---
-id: ChatError
+id: Alert
 module: ui/chat
-export: ChatError
+export: Alert
 type: Object
-generateTypeLink: 
 ---
 ---
 ##### shortDescription
-A configuration object for an error.
+A configuration object for an alert.
 
 ---
 <!-- Description goes here -->

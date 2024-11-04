@@ -1,10 +1,10 @@
 ---
-id: ChatError.id
+id: Alert.id
 type: Number | String
 ---
 ---
 ##### shortDescription
-Error's identification number or string.
+Alert's identification number or string.
 
 ---
 <!-- Description goes here -->

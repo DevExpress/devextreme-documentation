@@ -1,7 +1,7 @@
 ---
-id: Alert.message
 type: String
 default: ''
+uid: ui/chat:Alert.message
 ---
 ---
 ##### shortDescription

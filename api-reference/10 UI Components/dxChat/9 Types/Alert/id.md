@@ -1,6 +1,6 @@
 ---
-id: Alert.id
 type: Number | String
+uid: ui/chat:Alert.id
 ---
 ---
 ##### shortDescription

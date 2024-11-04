@@ -1,8 +1,8 @@
 ---
-id: Alert
 module: ui/chat
 export: Alert
 type: Object
+uid: ui/chat:Alert
 ---
 ---
 ##### shortDescription

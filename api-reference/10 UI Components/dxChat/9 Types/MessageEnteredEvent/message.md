@@ -1,6 +1,6 @@
 ---
-id: _ui_chat_TypingStartEvent.user
-type: User
+type: Message
+uid: ui/chat:MessageEnteredEvent.message
 ---
 ---
 ##### shortDescription

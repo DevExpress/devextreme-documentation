@@ -1,10 +1,10 @@
 ---
-id: _ui_chat_TypingStartEvent
 module: ui/chat
-export: TypingStartEvent
+export: TypingEndEvent
 type: Object
-inherits: NativeEventInfo
-references: dxChat.Options.onTypingStart
+inherits: EventInfo
+references: dxChat.Options.onTypingEnd
+uid: ui/chat:TypingEndEvent
 ---
 ---
 ##### shortDescription

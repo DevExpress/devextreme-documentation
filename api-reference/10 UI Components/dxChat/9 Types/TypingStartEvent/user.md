@@ -1,6 +1,6 @@
 ---
-id: _ui_chat_TypingEndEvent.user
 type: User
+uid: ui/chat:TypingStartEvent.user
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 references: dxChat.Options.onTypingEnd
 uid: ui/chat:TypingEndEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

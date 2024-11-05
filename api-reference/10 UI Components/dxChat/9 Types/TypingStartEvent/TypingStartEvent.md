@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 references: dxChat.Options.onTypingStart
 uid: ui/chat:TypingStartEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

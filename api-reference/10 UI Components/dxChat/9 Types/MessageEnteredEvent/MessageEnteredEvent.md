@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo
 references: dxChat.Options.onMessageEntered
 uid: ui/chat:MessageEnteredEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -3,6 +3,7 @@ module: ui/chat
 export: Alert
 type: Object
 uid: ui/chat:Alert
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

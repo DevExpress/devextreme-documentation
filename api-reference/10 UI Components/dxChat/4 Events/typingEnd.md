@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised 2 seconds after a user stopped typing.
 
 ---
-<!-- Description goes here -->
+Main article: [onTypingEnd](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#onTypingEnd)
+
+#####See Also#####
+#include common-link-handleevents

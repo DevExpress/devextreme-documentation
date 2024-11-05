@@ -5,7 +5,7 @@ default: []
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An array of users who are currently typing.
 
 ---
 <!-- Description goes here -->

@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-Raised after a message is sent.
+Raised after a message is entered.
 
 ---
-<!-- Description goes here -->
+Main article: [onMessageEntered](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#onMessageEntered)
+
+#####See Also#####
+#include common-link-handleevents

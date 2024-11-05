@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-A function that is executed after a message is sent.
+A function that is executed after a message is entered into the chat.
 
 ##### param(e): ui/chat:MessageEnteredEvent
 Information about the event.
@@ -20,7 +20,7 @@ The UI component's instance.
 #include common-ref-eventparam
 
 ##### field(e.message): Message
-A message that was sent.
+A message that was entered.
 
 ---
 <!-- Description goes here -->

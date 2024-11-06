@@ -12,7 +12,20 @@ A message to be rendered.
 ---
 ##### jQuery
 
-[note] This method is the primary way to render a new message in jQuery. Do not use this method if you use [items](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items), and vice versa.
+This method is the primary way to render a new message in jQuery:
+
+    <!-- tab: index.js -->
+    $(() => {
+        const chat = $("#chat").dxChat({
+            onMessageEntered: (e) => {
+                e.component.renderMessage({
+                    text: `Hello! I'm here to help you. How can I assist you today?`, 
+                    author: secondUser,
+                    timestamp: Date.now() 
+                });
+            },
+        }).dxChat('instance');
+    });
 
 ##### Angular
 

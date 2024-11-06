@@ -23,4 +23,5 @@ The UI component's instance.
 A user that started typing.
 
 ---
-<!-- Description goes here -->
+#####See Also#####
+- [typingUsers](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#typingUsers)

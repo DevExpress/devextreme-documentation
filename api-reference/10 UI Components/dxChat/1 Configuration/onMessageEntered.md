@@ -70,7 +70,7 @@ Use this function to handle backend:
     <template>
     <DxChat
         :items="messages"
-        @message-send="onMessageEntered"
+        @message-entered="onMessageEntered"
     />
     </template>
 

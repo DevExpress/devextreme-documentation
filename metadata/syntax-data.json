@@ -9006,6 +9006,9 @@
       "react": "Item",
       "vue": "DxItem"
     },
+    "dxChatOptions.messageTemplate": {
+      "vue": "message-template"
+    },
     "dxChatOptions.onContentReady": {
       "vue": "@content-ready"
     },

@@ -12,4 +12,4 @@ Refer to the following sections for details on each configuration step. You can 
     href: "https://github.com/DevExpress-Examples/getting-started-with-devextreme-htmleditor"
 }
 
-[tags] dxHtmlEdtior, rich text editor, markdown editor
+[tags] dxHtmlEdtior, rich text editor

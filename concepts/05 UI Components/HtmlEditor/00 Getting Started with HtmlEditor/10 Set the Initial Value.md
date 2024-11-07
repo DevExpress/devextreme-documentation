@@ -15,7 +15,7 @@ The control stores the document markup in the [value](/api-reference/10%20UI%20C
                     Rich Text Editor (HTML Editor)
                 </h2>
                 <br>
-                <p>DevExtreme JavaScript HTML Editor is a client-side WYSIWYG text editor that allows its users to format textual and visual content and store it as HTML or Markdown.</p>
+                <p>DevExtreme JavaScript HTML Editor is a client-side WYSIWYG text editor that allows its users to format textual and visual content and store it as HTML.</p>
                 <p>Supported features:</p>
                 <ul>
                     <li>Inline formats:
@@ -33,7 +33,6 @@ The control stores the document markup in the [value](/api-reference/10%20UI%20C
                         </ul>
                     </li>
                     <li>Built-in format customization</li>
-                    <li>HTML and Markdown support</li>
                     <li>Mail Merge</li>
                     <li>Adaptive toolbar for working with images, links, and color formats</li>
                     <li>Copy-paste rich content (the control strips unsupported formats)</li>
@@ -102,7 +101,7 @@ To update the value at the runtime, call the [option(optionName, optionValue)](/
             Rich Text Editor (HTML Editor)
         </h2>
         <br>
-        <p>DevExtreme JavaScript HTML Editor is a client-side WYSIWYG editor that allows its users to format textual and visual content and output it as HTML or Markdown.</p>
+        <p>DevExtreme JavaScript HTML Editor is a client-side WYSIWYG editor that allows its users to format textual and visual content and output it as HTML.</p>
         <p>Supported features:</p>
         <ul>
             <li>Inline formats:
@@ -120,7 +119,6 @@ To update the value at the runtime, call the [option(optionName, optionValue)](/
                 </ul>
             </li>
             <li>Built-in format customization</li>
-            <li>HTML and Markdown support</li>
             <li>Mail Merge</li>
             <li>Adaptive toolbar for working with images, links, and color formats</li>
             <li>Copy-paste rich content (the control strips unsupported formats)</li>
@@ -175,7 +173,7 @@ To update the value at the runtime, call the [option(optionName, optionValue)](/
                     Rich Text Editor (HTML Editor)
                 </h2>
                 <br>
-                <p>DevExtreme JavaScript HTML Editor is a client-side WYSIWYG text editor that allows its users to format textual and visual content and store it as HTML or Markdown.</p>
+                <p>DevExtreme JavaScript HTML Editor is a client-side WYSIWYG text editor that allows its users to format textual and visual content and store it as HTML.</p>
                 <p>Supported features:</p>
                 <ul>
                     <li>Inline formats:
@@ -193,7 +191,6 @@ To update the value at the runtime, call the [option(optionName, optionValue)](/
                         </ul>
                     </li>
                     <li>Built-in format customization</li>
-                    <li>HTML and Markdown support</li>
                     <li>Mail Merge</li>
                     <li>Adaptive toolbar for working with images, links, and color formats</li>
                     <li>Copy-paste rich content (the control strips unsupported formats)</li>
@@ -254,7 +251,7 @@ To update the value at the runtime, call the [option(optionName, optionValue)](/
                 Rich Text Editor (HTML Editor)
             </h2>
             <br>
-            <p>DevExtreme JavaScript HTML Editor is a client-side WYSIWYG text editor that allows its users to format textual and visual content and store it as HTML or Markdown.</p>
+            <p>DevExtreme JavaScript HTML Editor is a client-side WYSIWYG text editor that allows its users to format textual and visual content and store it as HTML.</p>
             <p>Supported features:</p>
             <ul>
                 <li>Inline formats:
@@ -272,7 +269,6 @@ To update the value at the runtime, call the [option(optionName, optionValue)](/
                     </ul>
                 </li>
                 <li>Built-in format customization</li>
-                <li>HTML and Markdown support</li>
                 <li>Mail Merge</li>
                 <li>Adaptive toolbar for working with images, links, and color formats</li>
                 <li>Copy-paste rich content (the control strips unsupported formats)</li>

@@ -5,22 +5,22 @@ default: null
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a custom template for a chat message.
 
 ##### param(data): Object
-<!-- Description goes here -->
+The current data object.
 
 ##### field(data.component): dxChat
-<!-- Description goes here -->
+The Chat instance.
 
 ##### field(data.message): Message
-<!-- Description goes here -->
+The text of the message.
 
 ##### param(messageBubbleElement): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "message" }
 
 ##### return: String | Element | jQuery
-<!-- Description goes here -->
+A template name or container.
 
 ---
 <!-- Description goes here -->

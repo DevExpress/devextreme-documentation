@@ -186,7 +186,7 @@ When using maps, you should include an API key that authenticates your applicati
                 <Map
                     defaultZoom={10}
                     defaultCenter={centerCoordinates}
-                    provider="bing"
+                    provider="azure"
                     apiKey={authentificationKeys}
                 />
             );

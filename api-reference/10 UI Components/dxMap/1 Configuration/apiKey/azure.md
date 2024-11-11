@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A key used to authenticate the component within Azure Maps.
 
 ---
 <!-- Description goes here -->

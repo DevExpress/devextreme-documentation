@@ -1,7 +1,6 @@
 ---
 id: User.avatarAlt
 type: String
-default: undefined
 ---
 ---
 ##### shortDescription

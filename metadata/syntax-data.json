@@ -8995,6 +8995,11 @@
     "dxChatOptions.dataSource": {
       "vue": "data-source"
     },
+    "dxChatOptions.dayHeaderFormat": {
+      "angular": "dxo-day-header-format",
+      "react": "DayHeaderFormat",
+      "vue": "DxDayHeaderFormat"
+    },
     "dxChatOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"
     },
@@ -9008,6 +9013,11 @@
     },
     "dxChatOptions.messageTemplate": {
       "vue": "message-template"
+    },
+    "dxChatOptions.messageTimestampFormat": {
+      "angular": "dxo-message-timestamp-format",
+      "react": "MessageTimestampFormat",
+      "vue": "DxMessageTimestampFormat"
     },
     "dxChatOptions.onContentReady": {
       "vue": "@content-ready"

@@ -5,7 +5,7 @@ default: 'shorttime'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the message timestamp format.
 
 ---
 <!-- Description goes here -->

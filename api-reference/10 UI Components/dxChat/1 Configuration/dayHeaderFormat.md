@@ -5,7 +5,7 @@ default: 'shortdate'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the day header format.
 
 ---
 <!-- Description goes here -->

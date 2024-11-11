@@ -1,6 +1,6 @@
 ---
 id: dxButton.Options.validationGroup
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

@@ -17,7 +17,7 @@ A data object.
 ##### field(itemData.expanded): Boolean
 <!-- %field(itemData.expanded)% -->
 
-##### field(itemData.hasItems): Boolean
+##### field(itemData.hasItems): Boolean | undefined
 <!-- %field(itemData.hasItems)% -->
 
 ##### field(itemData.html): String
@@ -26,13 +26,13 @@ A data object.
 ##### field(itemData.icon): String
 <!-- %field(itemData.icon)% -->
 
-##### field(itemData.id): Number | String
+##### field(itemData.id): Number | String | undefined
 <!-- %field(itemData.id)% -->
 
 ##### field(itemData.items): Array<dxTreeViewItem>
 <!-- %field(itemData.items)% -->
 
-##### field(itemData.parentId): Number | String
+##### field(itemData.parentId): Number | String | undefined
 <!-- %field(itemData.parentId)% -->
 
 ##### field(itemData.selected): Boolean

@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.crosshair.horizontalLine.opacity
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

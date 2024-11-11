@@ -1,6 +1,6 @@
 ---
 id: dxVectorMap.Options.layers.sizeGroupingField
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

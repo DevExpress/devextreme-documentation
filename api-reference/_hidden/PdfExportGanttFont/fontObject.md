@@ -1,6 +1,6 @@
 ---
 id: PdfExportGanttFont.fontObject
-type: Object
+type: Object | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxBarGauge.Options.centerTemplate
-type: template
+type: template | undefined
 default: undefined
 ---
 ---

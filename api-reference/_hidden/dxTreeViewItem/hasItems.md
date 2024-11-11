@@ -1,6 +1,6 @@
 ---
 id: dxTreeViewItem.hasItems
-type: Boolean
+type: Boolean | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: PdfExportGanttProps.format
-type: String | Object
+type: String | Object | undefined
 default: undefined
 ---
 ---

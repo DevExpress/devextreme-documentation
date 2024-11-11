@@ -1,6 +1,6 @@
 ---
 id: CommonIndicator.baseValue
-type: Number
+type: Number | undefined
 default: undefined
 notUsedInTheme: 
 ---

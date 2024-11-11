@@ -1,6 +1,6 @@
 ---
 uid: viz/sankey:Tooltip.nodeTooltipTemplate
-type: template
+type: template | undefined
 default: undefined
 ---
 ---

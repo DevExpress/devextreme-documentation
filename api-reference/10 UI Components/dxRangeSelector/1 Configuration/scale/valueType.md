@@ -1,6 +1,6 @@
 ---
 id: dxRangeSelector.Options.scale.valueType
-type: Enums.ChartsDataType
+type: Enums.ChartsDataType | undefined
 default: undefined
 ---
 ---

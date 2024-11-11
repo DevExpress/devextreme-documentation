@@ -1,6 +1,6 @@
 ---
 id: BaseWidgetAnnotationConfig.description
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

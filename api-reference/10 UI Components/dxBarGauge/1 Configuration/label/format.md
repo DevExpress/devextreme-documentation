@@ -1,6 +1,6 @@
 ---
 id: dxBarGauge.Options.label.format
-type: Format
+type: Format | undefined
 default: undefined
 ---
 ---

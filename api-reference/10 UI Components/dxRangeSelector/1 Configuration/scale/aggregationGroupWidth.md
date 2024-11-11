@@ -1,6 +1,6 @@
 ---
 id: dxRangeSelector.Options.scale.aggregationGroupWidth
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

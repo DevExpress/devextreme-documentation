@@ -1,6 +1,6 @@
 ---
 id: BaseWidgetAnnotationConfig.image.url
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

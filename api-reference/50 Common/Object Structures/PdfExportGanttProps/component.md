@@ -1,6 +1,6 @@
 ---
 id: PdfExportGanttProps.component
-type: dxGantt
+type: dxGantt | undefined
 default: undefined
 ---
 ---

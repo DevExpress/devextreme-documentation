@@ -1,6 +1,6 @@
 ---
 id: dxFormButtonItem.buttonOptions
-type: dxButton_Options
+type: dxButton_Options | undefined
 default: undefined
 ---
 ---

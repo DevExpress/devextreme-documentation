@@ -1,6 +1,6 @@
 ---
 id: dxTreeMap.Options.tile.selectionStyle.border.color
-type: String
+type: String | undefined
 default: '#232323'
 ---
 ---

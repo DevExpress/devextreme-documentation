@@ -1,6 +1,6 @@
 ---
 id: CustomStore.Options.useDefaultSearch
-type: Boolean
+type: Boolean | undefined
 default: undefined
 ---
 ---

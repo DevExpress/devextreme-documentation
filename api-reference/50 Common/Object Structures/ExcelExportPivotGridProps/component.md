@@ -1,6 +1,6 @@
 ---
 id: ExcelExportPivotGridProps.component
-type: dxPivotGrid
+type: dxPivotGrid | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: ExcelExportDataGridProps.component
-type: dxDataGrid
+type: dxDataGrid | undefined
 default: undefined
 ---
 ---

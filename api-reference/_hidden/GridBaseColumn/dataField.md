@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.dataField
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

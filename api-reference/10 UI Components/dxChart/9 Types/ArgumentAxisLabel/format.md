@@ -1,6 +1,6 @@
 ---
 uid: viz/chart:ArgumentAxisLabel.format
-type: Format
+type: Format | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 uid: viz/bar_gauge:Legend.markerTemplate
-type: template
+type: template | undefined
 default: undefined
 ---
 ---

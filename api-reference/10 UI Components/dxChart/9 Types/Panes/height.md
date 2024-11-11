@@ -1,6 +1,6 @@
 ---
 uid: viz/chart:Panes.height
-type: Number | String
+type: Number | String | undefined
 default: undefined
 ---
 ---

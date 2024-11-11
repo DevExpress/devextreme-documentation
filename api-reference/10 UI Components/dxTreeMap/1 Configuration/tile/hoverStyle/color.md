@@ -1,6 +1,6 @@
 ---
 id: dxTreeMap.Options.tile.hoverStyle.color
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxFormSimpleItem.label.text
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

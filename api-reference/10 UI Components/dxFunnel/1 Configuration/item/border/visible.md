@@ -1,6 +1,6 @@
 ---
 id: dxFunnel.Options.item.border.visible
-type: Boolean
+type: Boolean | undefined
 default: false
 ---
 ---

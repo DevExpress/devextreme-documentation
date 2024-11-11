@@ -1,6 +1,6 @@
 ---
 uid: viz/chart:ValueAxis.type
-type: Enums.AxisScaleType
+type: Enums.AxisScaleType | undefined
 default: undefined
 ---
 ---

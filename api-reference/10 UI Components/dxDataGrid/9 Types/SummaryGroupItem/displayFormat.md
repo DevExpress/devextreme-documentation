@@ -1,6 +1,6 @@
 ---
 uid: ui/data_grid:SummaryGroupItem.displayFormat
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxChartCommonAnnotationConfig.axis
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

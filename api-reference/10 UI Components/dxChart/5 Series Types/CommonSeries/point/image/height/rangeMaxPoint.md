@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.point.image.height.rangeMaxPoint
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

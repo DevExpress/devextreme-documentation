@@ -1,6 +1,6 @@
 ---
 id: ChartsColor.base
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

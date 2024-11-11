@@ -1,6 +1,6 @@
 ---
 id: dxFilterBuilder.Options.maxGroupLevel
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

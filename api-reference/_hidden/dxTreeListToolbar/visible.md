@@ -1,6 +1,6 @@
 ---
 id: dxTreeListToolbar.visible
-type: Boolean
+type: Boolean | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: BaseWidgetAnnotationConfig.height
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

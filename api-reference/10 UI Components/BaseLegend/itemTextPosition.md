@@ -1,6 +1,6 @@
 ---
 id: BaseLegend.itemTextPosition
-type: Enums.Position
+type: Enums.Position | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: ScaleBreak.startValue
-type: Number | Date | String
+type: Number | Date | String | undefined
 default: undefined
 ---
 ---

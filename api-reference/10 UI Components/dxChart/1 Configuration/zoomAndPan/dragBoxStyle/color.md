@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.zoomAndPan.dragBoxStyle.color
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

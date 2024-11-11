@@ -1,6 +1,6 @@
 ---
 id: dxCircularGauge.Options.centerTemplate
-type: template
+type: template | undefined
 default: undefined
 ---
 ---

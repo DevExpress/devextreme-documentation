@@ -1,6 +1,6 @@
 ---
 id: dxChartCommonAnnotationConfig.tooltipTemplate
-type: template
+type: template | undefined
 default: undefined
 ---
 ---

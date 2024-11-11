@@ -1,6 +1,6 @@
 ---
 id: dxSankey.Options.node.border.visible
-type: Boolean
+type: Boolean | undefined
 default: false
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: DataExpressionMixin.Options.displayExpr
-type: String | function(item)
+type: String | function(item) | undefined
 default: undefined
 ---
 ---

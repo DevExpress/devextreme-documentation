@@ -1,6 +1,6 @@
 ---
 id: dxVectorMapAnnotationConfig.name
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

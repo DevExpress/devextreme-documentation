@@ -1,6 +1,6 @@
 ---
 id: dxSankey.Options.link.border.color
-type: String
+type: String | undefined
 default: '#000000'
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxPolarChartCommonAnnotationConfig.radius
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: PieChartSeries.tag
-type: any
+type: any | undefined
 default: undefined
 ---
 ---

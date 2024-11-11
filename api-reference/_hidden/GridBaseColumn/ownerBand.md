@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.ownerBand
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

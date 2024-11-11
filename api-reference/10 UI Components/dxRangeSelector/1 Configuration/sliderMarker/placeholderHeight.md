@@ -1,6 +1,6 @@
 ---
 id: dxRangeSelector.Options.sliderMarker.placeholderHeight
-type: Number
+type: Number | undefined
 default: undefined
 notUsedInTheme: 
 ---

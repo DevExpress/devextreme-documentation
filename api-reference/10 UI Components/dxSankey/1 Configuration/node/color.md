@@ -1,6 +1,6 @@
 ---
 id: dxSankey.Options.node.color
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

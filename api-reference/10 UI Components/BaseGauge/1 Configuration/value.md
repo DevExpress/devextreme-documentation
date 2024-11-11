@@ -1,6 +1,6 @@
 ---
 id: BaseGauge.Options.value
-type: Number
+type: Number | undefined
 default: undefined
 firedEvents: optionChanged
 notUsedInTheme: 

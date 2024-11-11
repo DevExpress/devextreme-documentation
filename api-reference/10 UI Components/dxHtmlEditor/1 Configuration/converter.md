@@ -1,6 +1,6 @@
 ---
 id: dxHtmlEditor.Options.converter
-type: Converter
+type: Converter | undefined
 default: undefined
 inheritsType: Converter
 ---

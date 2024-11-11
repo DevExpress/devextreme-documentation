@@ -1,6 +1,6 @@
 ---
 id: dxFunnel.Options.label.connector.color
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxForm.Options.validationGroup
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

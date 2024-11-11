@@ -1,6 +1,6 @@
 ---
 uid: viz/chart:ArgumentAxis.customPositionAxis
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

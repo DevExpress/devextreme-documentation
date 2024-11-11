@@ -1,6 +1,6 @@
 ---
 id: PieChartSeries.name
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

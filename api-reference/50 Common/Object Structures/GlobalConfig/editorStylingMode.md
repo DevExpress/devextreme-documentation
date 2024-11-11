@@ -1,6 +1,6 @@
 ---
 id: GlobalConfig.editorStylingMode
-type: Enums.EditorStyle
+type: Enums.EditorStyle | undefined
 default: undefined
 ---
 ---

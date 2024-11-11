@@ -1,6 +1,6 @@
 ---
 id: dxPieChartSeriesTypes.CommonPieChartSeries.label.connector.color
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

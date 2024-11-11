@@ -1,6 +1,6 @@
 ---
 id: GridBase.Options.columnWidth
-type: Number | Enums.Mode
+type: Number | Enums.Mode | undefined
 default: undefined
 ---
 ---

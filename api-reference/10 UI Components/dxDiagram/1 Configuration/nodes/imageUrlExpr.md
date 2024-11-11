@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.nodes.imageUrlExpr
-type: String | function(data, value)
+type: String | function(data, value) | undefined
 default: undefined
 ---
 ---

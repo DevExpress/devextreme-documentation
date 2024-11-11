@@ -1,6 +1,6 @@
 ---
 id: ColCountResponsible.sm
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

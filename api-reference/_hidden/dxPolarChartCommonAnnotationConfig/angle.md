@@ -1,6 +1,6 @@
 ---
 id: dxPolarChartCommonAnnotationConfig.angle
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

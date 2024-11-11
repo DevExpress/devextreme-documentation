@@ -1,6 +1,6 @@
 ---
 id: dxTreeMap.Options.colorizer.type
-type: Enums.TreeMapColorizerType
+type: Enums.TreeMapColorizerType | undefined
 default: undefined
 ---
 ---

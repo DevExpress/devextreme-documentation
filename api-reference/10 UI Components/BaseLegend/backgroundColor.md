@@ -1,6 +1,6 @@
 ---
 id: BaseLegend.backgroundColor
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

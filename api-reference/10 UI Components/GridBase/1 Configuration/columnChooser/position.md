@@ -1,6 +1,6 @@
 ---
 id: GridBase.Options.columnChooser.position
-type: PositionConfig
+type: PositionConfig | undefined
 default: undefined
 ---
 ---

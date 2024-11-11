@@ -1,6 +1,6 @@
 ---
 id: dxFileManagerDetailsColumn.dataField
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

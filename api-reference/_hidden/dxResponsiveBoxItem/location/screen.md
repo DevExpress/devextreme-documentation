@@ -1,6 +1,6 @@
 ---
 id: dxResponsiveBoxItem.location.screen
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

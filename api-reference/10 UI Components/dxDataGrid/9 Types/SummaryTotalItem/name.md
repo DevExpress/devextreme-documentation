@@ -1,6 +1,6 @@
 ---
 uid: ui/data_grid:SummaryTotalItem.name
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

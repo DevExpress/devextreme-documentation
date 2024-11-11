@@ -1,6 +1,6 @@
 ---
 id: dxFilterBuilderCustomOperation.dataTypes
-type: Array<Enums.DataType>
+type: Array<Enums.DataType> | undefined
 default: undefined
 ---
 ---

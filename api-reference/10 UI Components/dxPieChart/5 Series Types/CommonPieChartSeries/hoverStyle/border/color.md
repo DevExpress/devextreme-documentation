@@ -1,6 +1,6 @@
 ---
 id: dxPieChartSeriesTypes.CommonPieChartSeries.hoverStyle.border.color
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

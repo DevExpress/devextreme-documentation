@@ -1,6 +1,6 @@
 ---
 id: dxRangeSelector.Options.chart.series
-type: Object | Array<ChartSeries>
+type: Object | Array<ChartSeries> | undefined
 inherits: ChartSeries
 default: undefined
 notUsedInTheme: 

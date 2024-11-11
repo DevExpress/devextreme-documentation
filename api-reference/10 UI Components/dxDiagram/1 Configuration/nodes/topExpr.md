@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.nodes.topExpr
-type: String | function(data, value)
+type: String | function(data, value) | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxRangeSelector.Options.chart.barGroupWidth
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

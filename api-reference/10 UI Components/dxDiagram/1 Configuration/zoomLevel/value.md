@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.zoomLevel.value
-type: Number
+type: Number | undefined
 default: undefined
 firedEvents: optionChanged
 ---

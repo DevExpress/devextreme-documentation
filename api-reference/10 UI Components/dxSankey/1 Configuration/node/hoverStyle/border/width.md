@@ -1,6 +1,6 @@
 ---
 id: dxSankey.Options.node.hoverStyle.border.width
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

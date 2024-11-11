@@ -1,6 +1,6 @@
 ---
 uid: viz/tree_map:Tooltip.contentTemplate
-type: template
+type: template | undefined
 default: undefined
 ---
 ---

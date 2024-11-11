@@ -1,6 +1,6 @@
 ---
 id: dxFileManagerDetailsColumn.hidingPriority
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

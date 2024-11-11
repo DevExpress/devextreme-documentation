@@ -1,6 +1,6 @@
 ---
 id: GridBase.Options.focusedRowKey
-type: any
+type: any | undefined
 default: undefined
 firedEvents: focusedRowChanged
 ---

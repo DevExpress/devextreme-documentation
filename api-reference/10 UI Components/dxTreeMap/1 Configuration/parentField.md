@@ -1,6 +1,6 @@
 ---
 id: dxTreeMap.Options.parentField
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

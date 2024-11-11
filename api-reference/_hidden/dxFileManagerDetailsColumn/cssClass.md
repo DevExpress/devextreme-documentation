@@ -1,6 +1,6 @@
 ---
 id: dxFileManagerDetailsColumn.cssClass
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

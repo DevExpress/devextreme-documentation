@@ -1,6 +1,6 @@
 ---
 id: dxSankey.Options.link.hoverStyle.color
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

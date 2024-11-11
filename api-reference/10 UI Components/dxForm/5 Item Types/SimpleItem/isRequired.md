@@ -1,6 +1,6 @@
 ---
 id: dxFormSimpleItem.isRequired
-type: Boolean
+type: Boolean | undefined
 default: undefined
 ---
 ---

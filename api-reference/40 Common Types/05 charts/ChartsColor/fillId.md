@@ -1,6 +1,6 @@
 ---
 id: ChartsColor.fillId
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

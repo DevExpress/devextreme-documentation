@@ -1,6 +1,6 @@
 ---
 id: dxGanttStripLine.end
-type: Date | Number | String | function()
+type: Date | Number | String | function() | undefined
 default: undefined
 ---
 ---

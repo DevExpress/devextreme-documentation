@@ -1,6 +1,6 @@
 ---
 uid: viz/polar_chart:ArgumentAxisConstantLinesLabel.text
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

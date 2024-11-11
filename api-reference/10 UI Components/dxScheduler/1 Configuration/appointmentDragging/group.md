@@ -1,6 +1,6 @@
 ---
 id: dxScheduler.Options.appointmentDragging.group
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

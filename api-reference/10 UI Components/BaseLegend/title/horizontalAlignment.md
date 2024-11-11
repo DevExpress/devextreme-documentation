@@ -1,6 +1,6 @@
 ---
 id: BaseLegend.title.horizontalAlignment
-type: Enums.HorizontalAlignment
+type: Enums.HorizontalAlignment | undefined
 default: undefined
 ---
 ---

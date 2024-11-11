@@ -1,6 +1,6 @@
 ---
 uid: viz/polar_chart:ValueAxis.minorTickCount
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

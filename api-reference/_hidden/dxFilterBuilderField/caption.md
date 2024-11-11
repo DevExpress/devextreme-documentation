@@ -1,6 +1,6 @@
 ---
 id: dxFilterBuilderField.caption
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

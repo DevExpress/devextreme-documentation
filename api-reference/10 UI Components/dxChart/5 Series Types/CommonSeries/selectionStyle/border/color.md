@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.selectionStyle.border.color
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

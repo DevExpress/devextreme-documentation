@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.hidingPriority
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

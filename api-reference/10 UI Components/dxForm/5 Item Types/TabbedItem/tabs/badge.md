@@ -1,6 +1,6 @@
 ---
 id: dxFormTabbedItem.tabs.badge
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxFormTabbedItem.tabs.template
-type: template
+type: template | undefined
 default: undefined
 ---
 ---

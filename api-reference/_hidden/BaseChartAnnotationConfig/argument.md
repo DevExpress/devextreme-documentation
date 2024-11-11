@@ -1,6 +1,6 @@
 ---
 id: BaseChartAnnotationConfig.argument
-type: Number | Date | String
+type: Number | Date | String | undefined
 default: undefined
 ---
 ---

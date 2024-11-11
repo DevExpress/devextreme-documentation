@@ -1,6 +1,6 @@
 ---
 id: BaseLegend.orientation
-type: Enums.Orientation
+type: Enums.Orientation | undefined
 default: undefined
 ---
 ---

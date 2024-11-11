@@ -1,6 +1,6 @@
 ---
 id: dxNumberBox.Options.min
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

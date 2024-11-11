@@ -1,6 +1,6 @@
 ---
 id: ColumnHeaderFilterSearchConfig.searchExpr
-type: getter | Array<getter>
+type: getter | Array<getter> | undefined
 default: undefined
 ---
 ---

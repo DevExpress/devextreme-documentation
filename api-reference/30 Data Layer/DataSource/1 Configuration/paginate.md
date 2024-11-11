@@ -1,6 +1,6 @@
 ---
 id: DataSource.Options.paginate
-type: Boolean
+type: Boolean | undefined
 default: undefined
 ---
 ---

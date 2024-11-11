@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.valueErrorBar.highValueField
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

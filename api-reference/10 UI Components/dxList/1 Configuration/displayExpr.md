@@ -1,6 +1,6 @@
 ---
 id: dxList.Options.displayExpr
-type: String | function(item)
+type: String | function(item) | undefined
 default: undefined
 ---
 ---

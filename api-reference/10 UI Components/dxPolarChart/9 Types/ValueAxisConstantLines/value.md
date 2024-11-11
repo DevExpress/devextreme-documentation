@@ -1,6 +1,6 @@
 ---
 uid: viz/polar_chart:ValueAxisConstantLines.value
-type: Number | Date | String
+type: Number | Date | String | undefined
 default: undefined
 ---
 ---

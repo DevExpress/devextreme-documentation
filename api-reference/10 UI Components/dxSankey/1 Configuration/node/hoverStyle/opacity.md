@@ -1,6 +1,6 @@
 ---
 id: dxSankey.Options.node.hoverStyle.opacity
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

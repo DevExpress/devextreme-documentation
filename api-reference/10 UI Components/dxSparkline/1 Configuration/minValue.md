@@ -1,6 +1,6 @@
 ---
 id: dxSparkline.Options.minValue
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

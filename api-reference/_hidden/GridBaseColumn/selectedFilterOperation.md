@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.selectedFilterOperation
-type: Enums.SelectedFilterOperation
+type: Enums.SelectedFilterOperation | undefined
 default: undefined
 firedEvents: optionChanged
 ---

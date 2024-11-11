@@ -1,6 +1,6 @@
 ---
 id: SearchBoxMixin.Options.searchTimeout
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

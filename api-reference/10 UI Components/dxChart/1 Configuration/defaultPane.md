@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.defaultPane
-type: String
+type: String | undefined
 default: undefined
 notUsedInTheme: 
 ---

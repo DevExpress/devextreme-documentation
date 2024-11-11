@@ -1,6 +1,6 @@
 ---
 uid: viz/funnel:Tooltip.customizeTooltip
-type: function(info)
+type: function(info) | undefined
 default: undefined
 ---
 ---

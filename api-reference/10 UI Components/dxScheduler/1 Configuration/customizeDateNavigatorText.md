@@ -1,6 +1,6 @@
 ---
 id: dxScheduler.Options.customizeDateNavigatorText
-type: function(info)
+type: function(info) | undefined
 default: undefined
 ---
 ---

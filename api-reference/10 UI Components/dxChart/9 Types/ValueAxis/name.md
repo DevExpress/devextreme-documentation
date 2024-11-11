@@ -1,7 +1,7 @@
 ---
 notUsedInTheme: 
 uid: viz/chart:ValueAxis.name
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

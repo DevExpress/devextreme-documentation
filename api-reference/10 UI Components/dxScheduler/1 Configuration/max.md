@@ -1,6 +1,6 @@
 ---
 id: dxScheduler.Options.max
-type: Date | Number | String
+type: Date | Number | String | undefined
 default: undefined
 ---
 ---

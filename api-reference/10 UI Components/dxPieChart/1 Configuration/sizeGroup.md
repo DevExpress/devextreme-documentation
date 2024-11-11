@@ -1,6 +1,6 @@
 ---
 id: dxPieChart.Options.sizeGroup
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.defaultItemProperties.shapeMaxHeight
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

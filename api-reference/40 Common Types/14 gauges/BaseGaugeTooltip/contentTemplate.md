@@ -1,6 +1,6 @@
 ---
 uid: viz/gauges/base_gauge:BaseGaugeTooltip.contentTemplate
-type: template
+type: template | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxPieChart.Options.diameter
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

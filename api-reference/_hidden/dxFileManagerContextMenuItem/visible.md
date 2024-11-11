@@ -1,6 +1,6 @@
 ---
 id: dxFileManagerContextMenuItem.visible
-type: Boolean
+type: Boolean | undefined
 default: undefined
 ---
 ---

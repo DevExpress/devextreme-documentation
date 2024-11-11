@@ -1,6 +1,6 @@
 ---
 uid: viz/chart:ArgumentAxis.aggregationGroupWidth
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

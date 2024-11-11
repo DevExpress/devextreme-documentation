@@ -1,6 +1,6 @@
 ---
 uid: viz/core/base_widget:BaseWidgetExport.svgToCanvas
-type: function(svg, canvas)
+type: function(svg, canvas) | undefined
 default: undefined
 ---
 ---

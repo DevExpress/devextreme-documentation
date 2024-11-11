@@ -1,6 +1,6 @@
 ---
 uid: common/grids:ScrollingBase.renderAsync
-type: Boolean
+type: Boolean | undefined
 default: undefined
 ---
 ---

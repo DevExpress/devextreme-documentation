@@ -1,6 +1,6 @@
 ---
 id: AnimationConfig.staggerDelay
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

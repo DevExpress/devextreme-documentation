@@ -1,6 +1,6 @@
 ---
 uid: viz/chart:CommonAxisSettings.maxValueMargin
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

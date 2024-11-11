@@ -1,6 +1,6 @@
 ---
 uid: viz/chart:ValueAxis.minorTickCount
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

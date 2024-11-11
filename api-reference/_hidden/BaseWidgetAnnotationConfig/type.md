@@ -1,6 +1,6 @@
 ---
 id: BaseWidgetAnnotationConfig.type
-type: Enums.AnnotationType
+type: Enums.AnnotationType | undefined
 default: undefined
 ---
 ---

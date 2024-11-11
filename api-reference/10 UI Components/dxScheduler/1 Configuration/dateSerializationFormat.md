@@ -1,6 +1,6 @@
 ---
 id: dxScheduler.Options.dateSerializationFormat
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxFileManagerDetailsColumn.sortIndex
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

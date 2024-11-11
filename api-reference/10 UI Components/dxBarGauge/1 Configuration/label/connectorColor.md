@@ -1,6 +1,6 @@
 ---
 id: dxBarGauge.Options.label.connectorColor
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxRangeSelector.Options.shutter.color
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

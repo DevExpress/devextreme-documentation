@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.lookup.valueExpr
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

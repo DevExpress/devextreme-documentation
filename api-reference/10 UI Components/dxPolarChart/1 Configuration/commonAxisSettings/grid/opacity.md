@@ -1,6 +1,6 @@
 ---
 id: dxPolarChart.Options.commonAxisSettings.grid.opacity
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

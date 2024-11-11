@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.toolbox.width
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

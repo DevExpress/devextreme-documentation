@@ -1,7 +1,7 @@
 ---
 id: dxFileManagerDetailsColumn.sortOrder
 acceptValues: undefined
-type: Enums.SortOrder
+type: Enums.SortOrder | undefined
 default: undefined
 ---
 ---

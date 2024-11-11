@@ -1,6 +1,6 @@
 ---
 uid: viz/funnel:Legend.markerTemplate
-type: template
+type: template | undefined
 default: undefined
 ---
 ---

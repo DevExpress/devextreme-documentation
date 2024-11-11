@@ -1,6 +1,6 @@
 ---
 id: dxFormButtonItem.visibleIndex
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

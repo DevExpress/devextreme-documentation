@@ -1,6 +1,6 @@
 ---
 uid: viz/chart:ArgumentAxis.offset
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

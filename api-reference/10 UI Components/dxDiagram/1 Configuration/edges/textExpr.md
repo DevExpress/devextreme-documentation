@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.edges.textExpr
-type: String | function(data, value)
+type: String | function(data, value) | undefined
 default: undefined
 ---
 ---

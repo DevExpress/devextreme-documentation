@@ -1,6 +1,6 @@
 ---
 id: dxPolarChartSeriesTypes.CommonPolarChartSeries.valueErrorBar.highValueField
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

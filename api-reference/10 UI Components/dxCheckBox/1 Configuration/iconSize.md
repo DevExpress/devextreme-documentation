@@ -1,6 +1,6 @@
 ---
 id: dxCheckBox.Options.iconSize
-type: Number | String
+type: Number | String | undefined
 default: undefined
 ---
 ---

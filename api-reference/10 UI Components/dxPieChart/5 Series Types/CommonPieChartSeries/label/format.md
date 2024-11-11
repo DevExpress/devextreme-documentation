@@ -1,6 +1,6 @@
 ---
 id: dxPieChartSeriesTypes.CommonPieChartSeries.label.format
-type: Format
+type: Format | undefined
 default: undefined
 ---
 ---

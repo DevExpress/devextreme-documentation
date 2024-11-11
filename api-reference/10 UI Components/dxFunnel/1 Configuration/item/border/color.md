@@ -1,6 +1,6 @@
 ---
 id: dxFunnel.Options.item.border.color
-type: String
+type: String | undefined
 default: #ffffff
 ---
 ---

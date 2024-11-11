@@ -1,6 +1,6 @@
 ---
 id: dxVectorMap.Options.layers.colorGroupingField
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

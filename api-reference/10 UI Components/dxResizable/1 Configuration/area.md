@@ -1,6 +1,6 @@
 ---
 id: dxResizable.Options.area
-type: String | UserDefinedElement
+type: String | UserDefinedElement | undefined
 default: undefined
 ---
 ---

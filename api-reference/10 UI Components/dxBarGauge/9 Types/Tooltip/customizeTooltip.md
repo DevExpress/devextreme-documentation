@@ -1,6 +1,6 @@
 ---
 uid: viz/bar_gauge:Tooltip.customizeTooltip
-type: function(scaleValue)
+type: function(scaleValue) | undefined
 default: undefined
 ---
 ---

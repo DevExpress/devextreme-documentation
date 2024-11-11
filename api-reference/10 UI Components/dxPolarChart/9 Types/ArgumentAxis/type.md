@@ -1,6 +1,6 @@
 ---
 uid: viz/polar_chart:ArgumentAxis.type
-type: Enums.AxisScaleType
+type: Enums.AxisScaleType | undefined
 default: undefined
 ---
 ---

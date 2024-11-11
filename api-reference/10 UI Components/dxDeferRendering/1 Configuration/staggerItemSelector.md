@@ -1,6 +1,6 @@
 ---
 id: dxDeferRendering.Options.staggerItemSelector
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

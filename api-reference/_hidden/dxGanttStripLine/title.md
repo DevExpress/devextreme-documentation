@@ -1,6 +1,6 @@
 ---
 id: dxGanttStripLine.title
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

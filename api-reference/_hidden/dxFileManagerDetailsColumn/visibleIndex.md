@@ -1,6 +1,6 @@
 ---
 id: dxFileManagerDetailsColumn.visibleIndex
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

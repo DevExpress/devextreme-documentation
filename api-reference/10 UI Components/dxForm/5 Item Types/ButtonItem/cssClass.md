@@ -1,6 +1,6 @@
 ---
 id: dxFormButtonItem.cssClass
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

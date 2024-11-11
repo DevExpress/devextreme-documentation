@@ -1,6 +1,6 @@
 ---
 id: dxTreeMap.Options.group.headerHeight
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

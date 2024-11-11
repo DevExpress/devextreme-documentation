@@ -1,6 +1,6 @@
 ---
 id: dxPolarChartSeriesTypes.CommonPolarChartSeries.valueErrorBar.type
-type: Enums.ValueErrorBarType
+type: Enums.ValueErrorBarType | undefined
 default: undefined
 ---
 ---

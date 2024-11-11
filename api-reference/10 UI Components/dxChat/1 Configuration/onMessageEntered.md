@@ -1,6 +1,6 @@
 ---
 id: dxChat.Options.onMessageEntered
-type: function(e)
+type: function(e) | undefined
 default: undefined
 ---
 ---

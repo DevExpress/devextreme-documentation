@@ -1,6 +1,6 @@
 ---
 id: dxContextMenu.Options.showEvent.name
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

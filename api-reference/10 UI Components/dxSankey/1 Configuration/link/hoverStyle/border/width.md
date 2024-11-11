@@ -1,6 +1,6 @@
 ---
 id: dxSankey.Options.link.hoverStyle.border.width
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

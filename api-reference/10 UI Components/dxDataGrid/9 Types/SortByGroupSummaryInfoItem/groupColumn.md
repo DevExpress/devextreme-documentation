@@ -1,6 +1,6 @@
 ---
 uid: ui/data_grid:SortByGroupSummaryInfoItem.groupColumn
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

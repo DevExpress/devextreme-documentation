@@ -1,6 +1,6 @@
 ---
 id: dxDeferRendering.Options.animation
-type: AnimationConfig
+type: AnimationConfig | undefined
 default: undefined
 ---
 ---

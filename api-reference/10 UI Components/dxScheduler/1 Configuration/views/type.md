@@ -1,6 +1,6 @@
 ---
 id: dxScheduler.Options.views.type
-type: Enums.ViewType
+type: Enums.ViewType | undefined
 default: undefined
 ---
 ---

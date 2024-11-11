@@ -1,6 +1,6 @@
 ---
 id: DataSource.Options.pushAggregationTimeout
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

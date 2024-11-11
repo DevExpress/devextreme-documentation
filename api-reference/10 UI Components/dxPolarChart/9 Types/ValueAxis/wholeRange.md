@@ -1,6 +1,6 @@
 ---
 uid: viz/polar_chart:ValueAxis.wholeRange
-type: Object | Array<Number, String, Date>
+type: Object | Array<Number, String, Date> | undefined
 default: undefined
 ---
 ---

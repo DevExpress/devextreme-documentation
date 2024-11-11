@@ -1,6 +1,6 @@
 ---
 id: dxSortable.Options.dragTemplate
-type: template
+type: template | undefined
 default: undefined
 ---
 ---

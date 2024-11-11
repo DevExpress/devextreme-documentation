@@ -1,6 +1,6 @@
 ---
 id: dxTextArea.Options.maxHeight
-type: Number | String
+type: Number | String | undefined
 default: undefined
 ---
 ---

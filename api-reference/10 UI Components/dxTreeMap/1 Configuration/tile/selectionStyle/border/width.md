@@ -1,6 +1,6 @@
 ---
 id: dxTreeMap.Options.tile.selectionStyle.border.width
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

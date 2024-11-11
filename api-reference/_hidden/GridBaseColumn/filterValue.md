@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.filterValue
-type: any
+type: any | undefined
 default: undefined
 firedEvents: optionChanged
 ---

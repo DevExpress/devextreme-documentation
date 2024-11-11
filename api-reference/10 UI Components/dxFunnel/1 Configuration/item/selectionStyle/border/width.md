@@ -1,6 +1,6 @@
 ---
 id: dxFunnel.Options.item.selectionStyle.border.width
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

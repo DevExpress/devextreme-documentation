@@ -1,6 +1,6 @@
 ---
 id: dxChat.Options.onTypingStart
-type: function(e)
+type: function(e) | undefined
 default: undefined
 ---
 ---

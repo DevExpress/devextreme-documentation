@@ -1,6 +1,6 @@
 ---
 id: PdfExportDataGridProps.component
-type: dxDataGrid
+type: dxDataGrid | undefined
 default: undefined
 ---
 ---

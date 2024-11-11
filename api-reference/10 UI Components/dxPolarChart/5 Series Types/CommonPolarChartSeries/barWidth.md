@@ -1,6 +1,6 @@
 ---
 id: dxPolarChartSeriesTypes.CommonPolarChartSeries.barWidth
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

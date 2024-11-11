@@ -1,6 +1,6 @@
 ---
 id: dxTreeMap.Options.selectionMode
-type: Enums.SingleMultipleOrNone
+type: Enums.SingleMultipleOrNone | undefined
 default: undefined
 ---
 ---

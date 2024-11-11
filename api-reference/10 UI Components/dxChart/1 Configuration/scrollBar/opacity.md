@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.scrollBar.opacity
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

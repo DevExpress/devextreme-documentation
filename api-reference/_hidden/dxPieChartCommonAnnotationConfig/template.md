@@ -1,6 +1,6 @@
 ---
 id: dxPieChartCommonAnnotationConfig.template
-type: template
+type: template | undefined
 default: undefined
 ---
 ---

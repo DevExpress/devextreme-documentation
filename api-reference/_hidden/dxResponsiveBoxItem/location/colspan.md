@@ -1,6 +1,6 @@
 ---
 id: dxResponsiveBoxItem.location.colspan
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

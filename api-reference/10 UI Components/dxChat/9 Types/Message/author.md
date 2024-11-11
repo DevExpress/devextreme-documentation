@@ -1,7 +1,6 @@
 ---
 id: Message.author
 type: User
-default: undefined
 ---
 ---
 ##### shortDescription

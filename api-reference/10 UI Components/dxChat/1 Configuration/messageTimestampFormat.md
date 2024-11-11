@@ -1,6 +1,7 @@
 ---
-type: String
-uid: ui/chat:Alert.message
+id: dxChat.Options.messageTimestampFormat
+type: Format
+default: 'shorttime'
 ---
 ---
 ##### shortDescription

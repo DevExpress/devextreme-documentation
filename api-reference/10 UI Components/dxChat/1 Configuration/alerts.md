@@ -1,7 +1,7 @@
 ---
 id: dxChat.Options.alerts
 type: Array<Alert>
-default: undefined
+default: []
 ---
 ---
 ##### shortDescription

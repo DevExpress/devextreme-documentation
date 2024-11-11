@@ -1,7 +1,6 @@
 ---
 id: User.name
 type: String
-default: ''
 ---
 ---
 ##### shortDescription

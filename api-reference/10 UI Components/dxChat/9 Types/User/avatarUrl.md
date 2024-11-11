@@ -1,7 +1,6 @@
 ---
 id: User.avatarUrl
 type: String
-default: ''
 ---
 ---
 ##### shortDescription

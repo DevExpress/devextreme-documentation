@@ -1,6 +1,7 @@
 ---
-type: String
-uid: ui/chat:Alert.message
+id: dxChat.Options.dayHeaderFormat
+type: Format
+default: 'shortdate'
 ---
 ---
 ##### shortDescription

@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-A function that is called after a user stops typing.
+A function that is called 2 seconds after a user stops typing.
 
 ##### param(e): ui/chat:TypingEndEvent
 Information about the event.

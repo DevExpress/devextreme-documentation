@@ -22,7 +22,11 @@ For example, you can wrap common settings to reuse in multiple DataGrids:
 
 [important]
 
-Avoid creating custom nested configuration components that update separately from the parent DevExtreme component. If they rely on context or any internal state changes, these updates only apply when the parent re-renders, causing unexpected behavior.
+Avoid creating custom nested configuration components that may update separately from the parent DevExtreme component. 
+
+Usually, React components that rely on high-level React context or whose state can change independently from the parent component can be updated even if a parent component does not re-render. 
+
+In custom nested configuration components, such updates can be applied only after the parent re-renders for the second time, causing unexpected behavior.
 
 The following code snippet illustrates this problematic approach with pager settings. Avoid such implementations.
 

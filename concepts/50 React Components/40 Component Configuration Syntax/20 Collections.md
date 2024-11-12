@@ -77,3 +77,6 @@ DevExtreme collection UI components also support the `Item` element. It allows y
             );
         }
     }
+
+#####See Also#####
+- [Custom Nested Configuration Components](/Documentation/Guide/React_Components/Component_Configuration_Syntax/#Custom_Nested_Configuration_Components)

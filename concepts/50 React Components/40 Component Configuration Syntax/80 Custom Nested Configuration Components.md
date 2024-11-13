@@ -1,6 +1,6 @@
-Reuse parts of your application with custom nested configuration components.
+You can reuse parts of your application with custom nested configuration components.
 
-For example, you can wrap common settings to reuse in multiple DataGrids:
+For example, you can wrap common settings and reuse them in different DataGrids:
 
     const CommonSettings = () => {
         return (
@@ -24,7 +24,7 @@ For example, you can wrap common settings to reuse in multiple DataGrids:
 
 Avoid creating custom nested configuration components that may update separately from the parent DevExtreme component. 
 
-Usually, React components that rely on high-level React context or whose state can change independently from the parent component can be updated even if a parent component does not re-render. 
+React components that rely on high-level React context or whose state can change independently from the parent component can usually be updated even if a parent component does not re-render. 
 
 In custom nested configuration components, such updates can be applied only after the parent re-renders for the second time, causing unexpected behavior.
 

@@ -19,7 +19,7 @@ The column is fixed to the left edge of the grid.
 - *'sticky'*     
 The column sticks to left and right edges when it reaches them.
 
-[note] If a **virtual** [column rendering mode]({basewidgetpath}/Configuration/scrolling/#columnRenderingMode) is enabled, sticky columns have no effect.
+[note] If a **virtual** [column rendering mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/scrolling/columnRenderingMode.md '{basewidgetpath}/Configuration/scrolling/#columnRenderingMode') is enabled, sticky columns have no effect.
 
 #####See Also#####
 - [columnFixing](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnFixing '{basewidgetpath}/Configuration/columnFixing/')

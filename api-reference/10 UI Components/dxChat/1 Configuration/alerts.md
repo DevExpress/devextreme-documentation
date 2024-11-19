@@ -8,6 +8,10 @@ default: []
 A list of available alerts.
 
 ---
+The code snippet below results in the following image:
+
+![The alert message in the Chat component](/images/Chat/alerts.png)
+
 ---
 
 ##### jQuery

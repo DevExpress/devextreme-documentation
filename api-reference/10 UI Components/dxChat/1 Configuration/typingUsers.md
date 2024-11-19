@@ -8,6 +8,10 @@ default: []
 An array of users who are currently typing.
 
 ---
+The following image shows the message types displayed when different numbers of users are typing:
+
+![The message types displayed when different numbers of users are typing](/images/Chat/typing-users.png)
+
 ---
 ##### jQuery
 

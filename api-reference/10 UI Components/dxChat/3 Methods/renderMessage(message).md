@@ -18,11 +18,7 @@ This method is the primary way to render a new message in jQuery:
     $(() => {
         const chat = $("#chat").dxChat({
             onMessageEntered: (e) => {
-                e.component.renderMessage({
-                    text: `Hello! I'm here to help you. How can I assist you today?`, 
-                    author: secondUser,
-                    timestamp: Date.now() 
-                });
+                e.component.renderMessage(e.message);
             },
         }).dxChat('instance');
     });

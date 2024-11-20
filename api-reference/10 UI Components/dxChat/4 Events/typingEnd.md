@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-Raised 2 seconds after a user stopped typing.
+Raised 2 seconds after a user stopped typing or after a message is entered.
 
 ---
 Main article: [onTypingEnd](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#onTypingEnd)

@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-Text of the message.
+The message text.
 
 ---
 <!-- Description goes here -->

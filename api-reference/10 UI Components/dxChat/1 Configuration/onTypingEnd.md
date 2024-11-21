@@ -17,7 +17,7 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.user): User
-A user that was typing.
+The user who entered the message.
 
 ---
 #####See Also#####

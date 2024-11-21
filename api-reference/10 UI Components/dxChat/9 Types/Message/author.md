@@ -7,7 +7,7 @@ type: User
 A user who is the author of the message.
 
 ---
-This field has the following limitations:
+If you don't specify the author, the following automatic adjustments take place:
 
 - Without `author.name`, the name is displayed as "Unknown User".
 

@@ -20,10 +20,10 @@ The UI component's instance.
 #include common-ref-eventparam
 
 ##### field(e.message): Message
-A message that was entered.
+The entered message.
 
 ---
-Use this function to handle backend:
+Use this function to transfer messages to the backend:
 
 ---
 ##### jQuery

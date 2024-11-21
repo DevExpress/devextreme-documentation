@@ -20,7 +20,7 @@ The UI component's instance.
 #include common-ref-eventparam
 
 ##### field(e.user): User
-A user that started typing.
+The user who started typing.
 
 ---
 #####See Also#####

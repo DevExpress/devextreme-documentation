@@ -4,7 +4,7 @@ uid: ui/chat:TypingStartEvent.user
 ---
 ---
 ##### shortDescription
-A user that started typing.
+The user who started typing.
 
 ---
 <!-- Description goes here -->

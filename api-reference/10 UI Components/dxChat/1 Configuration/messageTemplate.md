@@ -14,7 +14,7 @@ The current data object.
 The Chat instance.
 
 ##### field(data.message): Message
-The text of the message.
+The message text.
 
 ##### param(messageBubbleElement): DxElement
 #include common-ref-elementparam with { element: "message" }

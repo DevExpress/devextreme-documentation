@@ -22,7 +22,7 @@ The path to the modified property that includes all parent properties.
 The modified property if it belongs to the first level. Otherwise, the first-level property it is nested into.
 
 ##### field(e.previousValue): any
-The UI component's previous value.
+The modified property's previous value.
 
 ##### field(e.value): any
 The modified property's new value.

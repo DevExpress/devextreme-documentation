@@ -25,14 +25,14 @@ This method is the primary way to render a new message in jQuery:
 
 ##### Angular
 
-[note] Calling this method is not native to {Framework}. Use [items](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items) instead.
+[note] The use of this method is not native to {Framework}. Use [items](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items) instead.
 
 ##### Vue
 
-[note] Calling this method is not native to {Framework}. Use [items](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items) instead.
+[note] The use of this method is not native to {Framework}. Use [items](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items) instead.
 
 ##### React
 
-[note] Calling this method is not native to {Framework}. Use [items](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items) instead.
+[note] The use of this method is not native to {Framework}. Use [items](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items) instead.
 
 ---

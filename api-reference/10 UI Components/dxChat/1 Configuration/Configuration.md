@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-An object defining configuration properties for the Chat UI component.
+A configuration object for the Chat UI component.
 
 ---
 #####See Also#####

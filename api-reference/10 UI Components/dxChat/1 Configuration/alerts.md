@@ -8,7 +8,7 @@ default: []
 A list of available alerts.
 
 ---
-The code snippet below results in the following image:
+The code snippet below produces the following result:
 
 ![The alert message in the Chat component](/images/Chat/alerts.png)
 

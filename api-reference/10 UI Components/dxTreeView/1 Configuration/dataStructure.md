@@ -5,10 +5,10 @@ default: 'tree'
 ---
 ---
 ##### shortDescription
-Notifies the UI component of the used data structure.
+Notifies the UI component of the data structure in use.
 
 ---
-The UI component expects that data has a hierarchical structure where each data item contains a `text`, a unique `id`, and an `items` array if the data item nests other data items:
+The UI component expects that data has a hierarchical structure (`dataStructure: 'tree'`). Each data item contains text, a unique id, and an items array if the data item includes sub-items:
 
     <!--JavaScript-->
     var hierarchicalData = [{
@@ -27,11 +27,13 @@ The UI component expects that data has a hierarchical structure where each data 
         ]
     }];
 
+[note] A data item's [id](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/items/#id) should not match [rootValue](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#rootValue) in the 'tree' **dataStructure**.
+
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/HierarchicalDataStructure/"
 }
 
-If data has a plain structure, set the **dataStructure** property to *"plain"*. In this case, each data item should have a `text`, a unique `id`, and a `parentId`. For root items, `parentId` should be equal to **0** or **undefined**:
+If data has a plain structure, set the **dataStructure** property to *"plain"*. In this case, each data item should have text, a unique id, and a `parentId`. For root items, `parentId` should be equal to **0** or **undefined**:
 
     <!--JavaScript-->
     var plainData = [

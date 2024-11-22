@@ -27,7 +27,7 @@ The UI component expects that data has a hierarchical structure (`dataStructure:
         ]
     }];
 
-[note] A data item's [id](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/items/#id) should not match [rootValue](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#rootValue) in the 'tree' **dataStructure**.
+[note] A data item's [id](/api-reference/_hidden/dxTreeViewItem/id.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/items/#id') should not match [rootValue](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/rootValue.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#rootValue') in the 'tree' **dataStructure**.
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/HierarchicalDataStructure/"

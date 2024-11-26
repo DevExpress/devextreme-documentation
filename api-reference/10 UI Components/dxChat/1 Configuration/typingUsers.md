@@ -8,7 +8,7 @@ default: []
 An array of users who are currently typing.
 
 ---
-The following image shows messages that appear when a single or multiple users are typing:
+The following image displays messages that appear when a single user or multiple users are typing:
 
 ![Messages that display the number of users typing](/images/Chat/typing-users.png)
 

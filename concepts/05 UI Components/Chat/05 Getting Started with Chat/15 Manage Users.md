@@ -3,7 +3,7 @@ Assign chat users:
 - Specify the user's [ID](/Documentation/ApiReference/UI_Components/dxChat/Types/User/#id).
 - Specify the user's [name](/Documentation/ApiReference/UI_Components/dxChat/Types/User/#name). If the name is not specified, it becomes "Unknown User".
 - Define avatars with a [URL](/Documentation/ApiReference/UI_Components/dxChat/Types/User/#avatarUrl) and [alt](Documentation/ApiReference/UI_Components/dxChat/Types/User/#avatarAlt) text. If the URL is not specified, the avatar becomes the user's name initials.
-- Assign a user to the [user](/Documentation/24_2/ApiReference/UI_Components/dxChat/Configuration/#user) property to define the chat owner.
+- Assign a user to the [user](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#user) property to define the chat owner.
 
 ---
 ##### jQuery

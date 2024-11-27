@@ -11,7 +11,7 @@ Specifies an array of chat messages.
 ---
 ##### jQuery
 
-[note] The [renderMessage(message)](/Documentation/ApiReference/UI_Components/dxChat/Methods/#renderMessagemessage) method is the primary way to render a new message in jQuery. Use **items** only to specify initial messages.
+[note] The [renderMessage(message)](/api-reference/10%20UI%20Components/dxChat/3%20Methods/renderMessage(message).md '/Documentation/ApiReference/UI_Components/dxChat/Methods/#renderMessagemessage') method is the primary way to render a new message in jQuery. Use **items** only to specify initial messages.
 
 ##### Angular
 

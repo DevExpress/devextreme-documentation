@@ -1,0 +1,1 @@
+You can find a list of the resources and files that are redistributable and can be distributed to your application users in our [End User License Agreement](https://www.devexpress.com/Support/EULAs/devextreme.xml) (EULA). You must have a valid license to legally distribute applications that use DevExtreme components.

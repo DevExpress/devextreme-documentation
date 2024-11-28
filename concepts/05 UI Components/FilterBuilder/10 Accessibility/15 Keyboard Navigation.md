@@ -1,4 +1,4 @@
-A user can use the following keys to interact with the Scheduler component: 
+A user can use the following keys to interact with the Chat component: 
 
 <table class="dx-table">
     <tr>
@@ -10,3 +10,5 @@ A user can use the following keys to interact with the Scheduler component:
         <td>?</td>
     </tr>
 </table>
+
+#include common-code-register-key-handler

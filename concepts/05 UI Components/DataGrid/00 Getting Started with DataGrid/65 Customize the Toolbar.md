@@ -1,5 +1,7 @@
 #include grids-tutorial-customize-the-toolbar
 
+[important] If you add custom items to the DataGrid toolbar, you must also specify the built-in items you need.
+
 ---
 ##### jQuery
 

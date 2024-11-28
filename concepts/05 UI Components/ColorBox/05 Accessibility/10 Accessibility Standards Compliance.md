@@ -17,6 +17,11 @@ The ColorBox component meets a variety of <a href="https://www.access-board.gov/
         <td>The ColorBox component does not meet this criterion.</td>
     </tr>
     <tr>
+        <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
+        <td>2.4.7 Focus Visible (Level AA) </td>
+        <td>The ColorBox palette handle does not have a focus indicator.</td>
+    </tr>
+    <tr>
         <td>-</td>
         <td>2.5.8 Target Size (Minimum) (Level AA 2.2 only)</td>
         <td>A drop-down button, handlers of alpha channel, and hue scale in ColorBox.</td>

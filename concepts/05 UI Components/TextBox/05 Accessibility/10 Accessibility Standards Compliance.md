@@ -11,9 +11,4 @@ The TextBox component meets a variety of <a href="https://www.access-board.gov/i
         <td>1.4.3 Contrast (Minimum) (Level AA) <br> 1.4.11 Non-text Contrast (Level AA 2.1 and 2.2)</td>
         <td>TextBox does not support Windows High Contrast themes.</td>
     </tr>
-    <tr>
-        <td>-</td>
-        <td>2.1.1 Keyboard</td>
-        <td>The <a href="/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#showClearButton">Clear button</a> cannot be focused.</td>
-    </tr>
 </table>

@@ -19,7 +19,7 @@
     </tr>
     <tr>
         <td>Contrast Color Theme</td>
-        <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
     </tr>
     <tr>
         <td>Mobile Device Support</td>

@@ -14,10 +14,7 @@ The DataGrid component meets a variety of <a href="https://www.access-board.gov/
     <tr>
         <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
         <td>1.3.1 Info and Relationships (Level A)</td>
-        <td>
-            The column fixing feature does not meet this criterion. <br>
-            The filter menu button in filter row does not supply any accessibility information. 
-        </td>
+        <td>The filter menu button in filter row does not supply any accessibility information.</td>
     </tr>
     <tr>
         <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
@@ -25,17 +22,9 @@ The DataGrid component meets a variety of <a href="https://www.access-board.gov/
         <td>DataGrid does not support Windows High Contrast themes.</td>
     </tr>
     <tr>
-        <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
-        <td>1.3.2 Meaningful Sequence (Level A) <br> 2.4.3 Focus Order (Level A)</td>
-        <td>The column fixing feature in DataGrid does not meet this criterion.</td>
-    </tr>
-    <tr>
         <td>11.5.2.12 Execution of available actions</td>
         <td>2.1.1 Keyboard (Level A)</td>
-        <td><ul>
-                <li>Keyboard navigation is not supported for ColumnChooser items in 'drag' mode.</li>
-            </ul>    
-        </td>
+        <td>Keyboard navigation is not supported for ColumnChooser items in 'drag' mode.</td>
     </tr>
     <tr>
         <td>-</td>
@@ -59,14 +48,9 @@ The DataGrid component meets a variety of <a href="https://www.access-board.gov/
         <td>Command buttons and icons.</td>
     </tr>
     <tr>
-        <td>-</td>
+        <td>11.5.2.15 Change notification </td>
         <td>4.1.3 Status Messages (Level AA 2.1 and 2.2)</td>
         <td>DataGrid summaries when <a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/#recalculateWhileEditing">recalculateWhileEditing</a> is enabled. </td>
-    </tr>
-    <tr>
-        <td>502.3.3 Row, Column, and Headers</td>
-        <td>-</td>
-        <td>DataGrid does not convey information about headers if the column fixing feature is enabled.</td>
     </tr>
     <tr>
         <td>504.2.2 PDF Export</td>

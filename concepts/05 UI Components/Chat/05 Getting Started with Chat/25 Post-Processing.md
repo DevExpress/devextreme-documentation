@@ -2,7 +2,7 @@ Use [onMessageEntered](/Documentation/ApiReference/UI_Components/dxChat/Configur
 
 1. The Feedback Bot user is added to the [typingUsers](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#typingUsers) array to show them typing.
 2. After one second, the **typingUsers** array is emptied, and Chat displays the answer message.
-3. After 3 seconds, an [alert](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#alerts) is displayed, and Chat is disabled. 
+3. After that, an [alert](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#alerts) is displayed, and Chat is disabled. 
 
 ---
 ##### jQuery

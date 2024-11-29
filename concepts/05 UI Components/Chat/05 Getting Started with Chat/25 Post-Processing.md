@@ -19,7 +19,7 @@ Use [onMessageEntered](/Documentation/ApiReference/UI_Components/dxChat/Configur
                 });
                 chat.option("alerts", [{
                     id: 1,
-                    message: "You have been disconnected"
+                    message: "Session expired"
                 }]);
                 chat.option("disabled", true);
             }, 1000);
@@ -72,7 +72,7 @@ Use [onMessageEntered](/Documentation/ApiReference/UI_Components/dxChat/Configur
                     ...this.alerts,
                     {
                         id: 1,
-                        message: "You have been disconnected",
+                        message: "Session expired",
                     },
                 ];
                 this.disabled = true;
@@ -119,7 +119,7 @@ Use [onMessageEntered](/Documentation/ApiReference/UI_Components/dxChat/Configur
                 ...alerts.value,
                 {
                     id: 1,
-                    message: "You have been disconnected",
+                    message: "Session expired",
                 },
             ];
             disabled.value = true;
@@ -156,7 +156,7 @@ Use [onMessageEntered](/Documentation/ApiReference/UI_Components/dxChat/Configur
                 setAlerts([
                     {
                         id: 1,
-                        message: "You have been disconnected",
+                        message: "Session expired",
                     },
                 ]);
                 setDisabled(true);

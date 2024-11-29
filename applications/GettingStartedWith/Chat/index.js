@@ -17,7 +17,7 @@ const initialMessages = [{
 
 const alert = [{
     id: 1,
-    message: "You have been disconnected"
+    message: "Session expired"
 }];
 
 $(() => {
@@ -29,11 +29,9 @@ $(() => {
                 author: secondUser,
                 timestamp: Date.now()
             });
-        }, 1000);
-        setTimeout(() => {
             chat.option("alerts", alert);
             chat.option("disabled", true);
-        }, 3000);
+        }, 1000);
     }
 
     const chat = $("#chat")

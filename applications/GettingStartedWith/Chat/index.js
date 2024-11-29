@@ -5,7 +5,7 @@ const firstUser = {
 
 const secondUser = {
     id: "2",
-    name: "ChatBack",
+    name: "Feedback Bot",
     avatarUrl: "./images/Chat/bot.png"
 };
 
@@ -22,7 +22,6 @@ const alert = [{
 
 $(() => {
     function sendToBackend() {
-        chat.option("typingUsers", [secondUser]);
         setTimeout(() => {
             chat.option("typingUsers", []);
             chat.renderMessage({
@@ -44,6 +43,7 @@ $(() => {
             user: firstUser,
             onMessageEntered: ({ component, message }) => {
                 component.renderMessage(message);
+                chat.option("typingUsers", [secondUser]);
                 sendToBackend();
             },
             items: initialMessages

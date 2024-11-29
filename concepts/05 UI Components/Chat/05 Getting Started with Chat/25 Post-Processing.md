@@ -1,6 +1,6 @@
 Use [onMessageEntered](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#onMessageEntered) to perform message post processing (like sending the message to the server for storage). This tutorial simulates sending a message to a backend:
 
-1. The ChatBack user is added to the [typingUsers](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#typingUsers) array to show them typing.
+1. The Feedback Bot user is added to the [typingUsers](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#typingUsers) array to show them typing.
 2. After one second, the **typingUsers** array is emptied, and Chat displays the answer message.
 3. After 3 seconds, an [alert](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#alerts) is displayed, and Chat is disabled. 
 
@@ -10,10 +10,6 @@ Use [onMessageEntered](/Documentation/ApiReference/UI_Components/dxChat/Configur
     <!-- tab: index.js -->
     $(function() {
         function sendToBackend() {
-            
-            // Here go the sending to backend settings
-
-            chat.option("typingUsers", [secondUser]);
             setTimeout(() => {
                 chat.option("typingUsers", []);
                 chat.renderMessage({
@@ -21,19 +17,18 @@ Use [onMessageEntered](/Documentation/ApiReference/UI_Components/dxChat/Configur
                     author: secondUser,
                     timestamp: Date.now()
                 });
-            }, 1000);
-            setTimeout(() => {
                 chat.option("alerts", [{
                     id: 1,
                     message: "You have been disconnected"
                 }]);
                 chat.option("disabled", true);
-            }, 3000);
+            }, 1000);
         }
         $("#chat").dxChat({ 
             // ...
             onMessageEntered: ({ component, message }) => {
                 //...
+                chat.option("typingUsers", [secondUser]);
                 sendToBackend();
             },
         });
@@ -43,7 +38,7 @@ Use [onMessageEntered](/Documentation/ApiReference/UI_Components/dxChat/Configur
 
     <!-- tab: app.component.html -->
     <dx-chat ...
-        [alerts]="alerts"
+        [(alerts)]="alerts"
         [(disabled)]="disabled"
     >
     </dx-chat>
@@ -58,15 +53,11 @@ Use [onMessageEntered](/Documentation/ApiReference/UI_Components/dxChat/Configur
 
         onMessageEntered({ message }) {
             // ...
+            this.typingUsers = [this.secondUser];
             this.sendToBackend();
         }
 
         sendToBackend() {
-
-            // Here go the sending to backend settings
-
-            this.typingUsers = [this.secondUser];
-
             setTimeout(() => {
                 this.typingUsers = [];
                 this.messages = [
@@ -77,18 +68,15 @@ Use [onMessageEntered](/Documentation/ApiReference/UI_Components/dxChat/Configur
                         timestamp: Date.now(),
                     },
                 ];
-                }, 1000);
-
-            setTimeout(() => {
-            this.alerts = [
-                ...this.alerts,
-                {
-                    id: 1,
-                    message: "You have been disconnected",
-                },
-            ];
-            this.disabled = true;
-            }, 3000);
+                this.alerts = [
+                    ...this.alerts,
+                    {
+                        id: 1,
+                        message: "You have been disconnected",
+                    },
+                ];
+                this.disabled = true;
+            }, 1000);
         }
     }
 
@@ -97,7 +85,7 @@ Use [onMessageEntered](/Documentation/ApiReference/UI_Components/dxChat/Configur
     <!-- tab: App.vue -->
     <template>
         <DxChat ...
-            :alerts="alerts"
+            v-model:alerts="alerts"
             v-model:disabled="disabled"
         />
     </template>
@@ -112,14 +100,11 @@ Use [onMessageEntered](/Documentation/ApiReference/UI_Components/dxChat/Configur
 
     const onMessageEntered = ({ message }) => {
         // ...
+        typingUsers.value = [secondUser];
         sendToBackend();
     };
 
     const sendToBackend = () => {
-
-        // Here go the sending to backend settings
-
-        typingUsers.value = [secondUser];
         setTimeout(() => {
             typingUsers.value = [];
             messages.value = [
@@ -130,8 +115,6 @@ Use [onMessageEntered](/Documentation/ApiReference/UI_Components/dxChat/Configur
                     timestamp: Date.now(),
                 },
             ];
-        }, 1000);
-        setTimeout(() => {
             alerts.value = [
                 ...alerts.value,
                 {
@@ -140,7 +123,7 @@ Use [onMessageEntered](/Documentation/ApiReference/UI_Components/dxChat/Configur
                 },
             ];
             disabled.value = true;
-        }, 3000);
+        }, 1000);
     };
     </script>
 
@@ -155,35 +138,30 @@ Use [onMessageEntered](/Documentation/ApiReference/UI_Components/dxChat/Configur
 
         const onMessageEntered = useCallback(({ message }) => {
             // ...
+            setTypingUsers([secondUser]);
             sendToBackend();
         }, []);
 
         const sendToBackend = () => {
-        
-        // Here go the sending to backend settings
-
-        setTypingUsers([secondUser]);
-        setTimeout(() => {
-            setTypingUsers([]);
-            setMessages((prevMessages) => [
-                ...prevMessages,
-                {
-                    text: "Thanks for helping us improve!",
-                    author: secondUser,
-                    timestamp: Date.now(),
-                },
-            ]);
-        }, 1000);
-        setTimeout(() => {
-            setAlerts([
-                {
-                    id: 1,
-                    message: "You have been disconnected",
-                },
-            ]);
-        setDisabled(true);
-        }, 3000);
-    };
+            setTimeout(() => {
+                setTypingUsers([]);
+                setMessages((prevMessages) => [
+                    ...prevMessages,
+                    {
+                        text: "Thanks for helping us improve!",
+                        author: secondUser,
+                        timestamp: Date.now(),
+                    },
+                ]);
+                setAlerts([
+                    {
+                        id: 1,
+                        message: "You have been disconnected",
+                    },
+                ]);
+                setDisabled(true);
+            }, 3000);
+        };
 
         return (
             <Chat ...

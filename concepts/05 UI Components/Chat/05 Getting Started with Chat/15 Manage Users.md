@@ -16,7 +16,7 @@ Assign chat users:
 
     const secondUser = {
         id: "2",
-        name: "ChatBack",
+        name: "Feedback Bot",
         avatarUrl: "./images/Chat/bot.png"
     };
 
@@ -45,7 +45,7 @@ Assign chat users:
         };
         secondUser: DxChatTypes.User = {
             id: "2",
-            name: "ChatBack",
+            name: "Feedback Bot",
             avatarUrl: "./images/Chat/bot.png"
         };
     }
@@ -68,7 +68,7 @@ Assign chat users:
 
     const secondUser = {
         id: "2",
-        name: "ChatBack",
+        name: "Feedback Bot",
         avatarUrl: "./images/Chat/bot.png"
     };
     </script>
@@ -84,7 +84,7 @@ Assign chat users:
 
     const secondUser = {
         id: "2",
-        name: "ChatBack",
+        name: "Feedback Bot",
         avatarUrl: "./images/Chat/bot.png"
     };
 

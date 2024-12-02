@@ -61,26 +61,29 @@ When a user clicks an appointment, the Scheduler shows a tooltip that can be cus
             <Tooltip
                 [appointmentData]="data.appointmentData"
                 [isDeleteButtonExist]="isDeleteButtonExist(data)"
-                [markerColor]="#337ab7"
+                markerColor="#337ab7"
                 (onDeleteButtonClick)="onDeleteButtonClick($event, data.appointmentData)"
             ></Tooltip>
         </ng-container>
     </dx-scheduler>
 
     <!-- tab: app.components.ts -->
+    import { DxSchedulerTypes } from "devextreme-angular/ui/scheduler";
+    import { DxButtonTypes } from "devextreme-angular/ui/button";
+
     export class AppComponent {
         @ViewChild('targetScheduler', { static: true })
         scheduler: DxSchedulerComponent;
     
         constructor(private service: Service) {}
 
-        onDeleteButtonClick(e: ClickEvent, appointmentData: dxSchedulerAppointment): void {
+        onDeleteButtonClick(e: DxButtonTypes.ClickEvent, appointmentData: DxSchedulerTypes.Appointment): void {
             this.scheduler.instance.deleteAppointment(appointmentData);
             e.event.stopPropagation();
             this.scheduler.instance.hideAppointmentTooltip();
         }
     
-        isDeleteButtonExist({ appointmentData }: { appointmentData: dxSchedulerAppointment}): boolean {
+        isDeleteButtonExist({ appointmentData }: { appointmentData: DxSchedulerTypes.Appointment }): boolean {
             const schedulerInstance = this.scheduler.instance;
             const isAppointmentDisabled = appointmentData.disabled;
             const isDeleteAllowed = (schedulerInstance.option('editing') && schedulerInstance.option('editing.allowDeleting') === true)
@@ -123,16 +126,19 @@ When a user clicks an appointment, the Scheduler shows a tooltip that can be cus
     </div>
 
     <!-- tab: tooltip.components.ts -->
+    import { DxSchedulerTypes } from "devextreme-angular/ui/scheduler";
+    import { DxButtonTypes } from "devextreme-angular/ui/button";
+
     @Component({
         selector: "Tooltip",
         templateUrl: "./tooltip.component.html"
     })
 
     export class TooltipComponent {
-        @Input() appointmentData: dxSchedulerAppointment;
+        @Input() appointmentData: DxSchedulerTypes.Appointment
         @Input() markerColor: string;
         @Input() isDeleteButtonExist: boolean;
-        @Output() onDeleteButtonClick = new EventEmitter<ClickEvent>();
+        @Output() onDeleteButtonClick = new EventEmitter<DxButtonTypes.ClickEvent>();
     }
 
     @NgModule({

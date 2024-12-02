@@ -20,6 +20,6 @@ Appointments are loaded into the DOM when they get into the viewport and are the
 
 - Virtual mode is available for all [views](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/') except *"agenda"*.
 
-- Specify the component's [height](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#height) if you use virtual scrolling. Do not use relative units for height (it prevents Scheduler from maintaining fixed dimensions for virtual scrolling to work correctly).
+- Specify the component's [height](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#height') if you use virtual scrolling. Do not use relative units for height (it prevents Scheduler from maintaining fixed dimensions for virtual scrolling to work correctly).
 
 [/note]

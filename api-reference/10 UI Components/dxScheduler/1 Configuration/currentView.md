@@ -1,6 +1,6 @@
 ---
 id: dxScheduler.Options.currentView
-type: Enums.ViewType
+type: Enums.ViewType | String
 default: 'day'
 firedEvents: optionChanged
 ---

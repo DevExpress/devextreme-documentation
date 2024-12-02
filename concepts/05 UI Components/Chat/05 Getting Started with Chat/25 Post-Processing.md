@@ -1,8 +1,8 @@
-Use [onMessageEntered](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#onMessageEntered) to perform message post processing (like sending the message to the server for storage). This tutorial simulates sending a message to a backend:
+Use [onMessageEntered](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/onMessageEntered.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#onMessageEntered') to perform message post processing (like sending the message to the server for storage). This tutorial simulates sending a message to a backend:
 
-1. The Feedback Bot user is added to the [typingUsers](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#typingUsers) array to show them typing.
+1. The Feedback Bot user is added to the [typingUsers](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/typingUsers.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#typingUsers') array to show them typing.
 2. After one second, the **typingUsers** array is emptied, and Chat displays the answer message.
-3. After that, an [alert](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#alerts) is displayed, and Chat is disabled. 
+3. After that, an [alert](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/alerts.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#alerts') is displayed, and Chat is disabled. 
 
 ---
 ##### jQuery

@@ -96,7 +96,7 @@
 
 ---
 
-To limit the Chat size, use the [width](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#width) and [height](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#height) properties:
+To limit the Chat size, use the [width](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#width') and [height](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#height') properties:
 
 ---
 ##### jQuery

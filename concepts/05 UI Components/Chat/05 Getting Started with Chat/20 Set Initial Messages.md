@@ -1,4 +1,4 @@
-If you want to specify initial messages in the Chat, use the [items](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items) array.
+If you want to specify initial messages in the Chat, use the [items](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items') array.
 
 ---
 ##### jQuery

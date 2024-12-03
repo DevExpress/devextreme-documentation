@@ -109,3 +109,7 @@ The following image displays messages that appear when a single user or multiple
     };
 
 ---
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Chat/Overview/"
+}

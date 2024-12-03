@@ -112,3 +112,7 @@ Use this function to transfer messages to the backend:
     };
 
 ---
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Chat/Overview/"
+}

@@ -36,3 +36,7 @@ This method is the primary way to render a new message in jQuery:
 [note] The use of this method is not native to {Framework}. Use [items](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items') instead.
 
 ---
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Chat/Overview/"
+}

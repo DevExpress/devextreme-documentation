@@ -109,3 +109,7 @@ Allows you to convert an HtmlEditor value between different markups.
     export default App;
 
 ---
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/MarkdownSupport/"
+}

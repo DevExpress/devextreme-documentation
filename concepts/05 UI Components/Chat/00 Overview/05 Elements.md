@@ -1,4 +1,4 @@
-![Chat elements](/images/Chat/chat-elements.png)
+<img src="/images/Chat/chat-elements.png" alt="Chat elements" style="width: 750px;"/>
 
 1. [User name](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#showUserName)
 2. [Timestamp](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#showMessageTimestamp)

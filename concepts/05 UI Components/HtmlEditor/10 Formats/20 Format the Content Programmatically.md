@@ -1,4 +1,4 @@
-The HtmlEditor provides the following API methods to format the content:
+The HTML Editor provides the following API methods to format the content:
 
 <table class="dx-table">
     <tr>

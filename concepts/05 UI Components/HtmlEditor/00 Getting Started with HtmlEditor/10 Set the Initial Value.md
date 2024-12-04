@@ -11,7 +11,7 @@ The control stores the document markup in the [value](/api-reference/10%20UI%20C
         <body class="dx-viewport">
             <div id="html-editor">
                 <h2>
-                    <img src="HtmlEditor.svg" alt="HtmlEditor">
+                    <img src="HtmlEditor.svg" alt="HTML Editor">
                     Rich Text Editor (HTML Editor)
                 </h2>
                 <br>
@@ -97,7 +97,7 @@ To update the value at the runtime, call the [option(optionName, optionValue)](/
     <!-- tab: app.component.html -->
     <dx-html-editor>
         <h2>
-            <img src="assets/images/HtmlEditor.svg" alt="HtmlEditor">
+            <img src="assets/images/HtmlEditor.svg" alt="HTML Editor">
             Rich Text Editor (HTML Editor)
         </h2>
         <br>
@@ -169,7 +169,7 @@ To update the value at the runtime, call the [option(optionName, optionValue)](/
         <DxHtmlEditor>
             <div>
                 <h2>
-                    <img src="./HtmlEditor.svg" alt="HtmlEditor">
+                    <img src="./HtmlEditor.svg" alt="HTML Editor">
                     Rich Text Editor (HTML Editor)
                 </h2>
                 <br>
@@ -247,7 +247,7 @@ To update the value at the runtime, call the [option(optionName, optionValue)](/
     const markup = `
         <div>
             <h2>
-                <img src="HtmlEditor.svg" alt="HtmlEditor"/>
+                <img src="HtmlEditor.svg" alt="HTML Editor"/>
                 Rich Text Editor (HTML Editor)
             </h2>
             <br>

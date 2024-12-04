@@ -1,4 +1,4 @@
-[note] The overall accessibility level of your application depends on the HtmlEditor features you use.
+[note] The overall accessibility level of your application depends on the HTML Editor features you use.
 
 <table class="dx-table">
     <tr>

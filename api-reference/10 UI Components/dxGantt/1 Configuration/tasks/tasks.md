@@ -16,6 +16,15 @@ Configures tasks.
 
 Use the [dataSource](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/tasks/dataSource.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/tasks/#dataSource') property to bind the UI component to a data source, which contains tasks. If the field names in your data source differ from default names ('id', 'parentId', 'title', 'start', 'end', 'progress', 'color'), use appropriate properties ([keyExpr](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/tasks/keyExpr.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/tasks/#keyExpr'), [parentIdExpr](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/tasks/parentIdExpr.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/tasks/#parentIdExpr'), etc.) to map data fields.
 
+The 'color' field accepts the following values:
+
+* Hexadecimal colors
+* RGB colors
+* RGBA colors
+* Predefined/cross-browser color names
+* <a href="https://www.w3.org/TR/SVG11/types.html#ColorKeywords" target="_blank">Predefined SVG colors</a>
+* <a href="https://www.w3.org/TR/SVG11/painting.html#SpecifyingPaint" target="_blank">Paint server address</a>
+
 [note] The 'id' and 'parentId' fields should not have the same value.
 
 ---

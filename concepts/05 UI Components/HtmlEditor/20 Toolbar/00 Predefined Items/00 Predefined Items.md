@@ -1,4 +1,4 @@
-Toolbar items allow users to format the HtmlEditor's content and perform actions on it.
+Toolbar items allow users to format the HTML Editor's content and perform actions on it.
 
 Predefined toolbar items include:
 
@@ -7,7 +7,7 @@ Predefined toolbar items include:
 * Select boxes that apply multiple-choice formats. 
 * Separators that are not user-interactive and only divide other elements.
 
-![DevExtreme HTML5 JavaScript HtmlEditor Toolbar](/images/htmlEditor/visual_elements/toolbar.png)
+![DevExtreme HTML5 JavaScript HTML Editor Toolbar](/images/htmlEditor/visual_elements/toolbar.png)
 
 The following table lists toolbar items and the formats they apply (if applicable):
 

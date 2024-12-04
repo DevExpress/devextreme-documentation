@@ -69,7 +69,7 @@ Users can resize images embedded within the content. To enable this functionalit
 
 ---
 
-For further information on the HtmlEditor component, refer to the following resources:
+For further information on the HTML Editor component, refer to the following resources:
 
 * [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/Overview/)
 * [API Reference](/api-reference/10%20UI%20Components/dxHtmlEditor '/Documentation/ApiReference/UI_Components/dxHtmlEditor/')

@@ -22,9 +22,6 @@ Users can [insert and modify tables](/concepts/05%20UI%20Components/HtmlEditor/0
 - **Built-in Format Customization**     
 You can [modify the existing formats](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats/33%20Customize%20Built-In%20Formats%20and%20Modules '/Documentation/Guide/UI_Components/HtmlEditor/Formats/#Customize_Built-In_Formats_and_Modules') to fit specific requirements. 
 
-- **HTML and Markdown Support**     
-HTML Editor [outputs content](/concepts/05%20UI%20Components/HtmlEditor/00%20Getting%20Started%20with%20HtmlEditor/10%20Set%20the%20Output%20Markup%20Language.md '/Documentation/Guide/UI_Components/HtmlEditor/Getting_Started_with_HtmlEditor/#Set_the_Output_Markup_Language') both in HTML and Markdown. 
-
 - **Mail Merge**     
 Integrate [variables](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/variables '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/variables/') to be replaced with real data during text processing.
 

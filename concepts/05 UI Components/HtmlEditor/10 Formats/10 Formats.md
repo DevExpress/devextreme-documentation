@@ -128,7 +128,7 @@ All the following formats are extendable:
 <table class="dx-table full-width">
  <tr>
     <th>Format Name</th>
-    <th>Supports Pasting into HtmlEditor</th>
+    <th>Supports Pasting into HTML Editor</th>
     <th>Supports Drag and Drop from File Explorer</th>
  </tr>
   <tr>

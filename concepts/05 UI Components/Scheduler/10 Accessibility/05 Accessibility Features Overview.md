@@ -1,4 +1,4 @@
-[note] The overall accessibility level of your application depends on the Scheduler features that you use.
+[note] The overall accessibility level of your application depends on the Scheduler features you use.
 
 <table class="dx-table">
     <tr>

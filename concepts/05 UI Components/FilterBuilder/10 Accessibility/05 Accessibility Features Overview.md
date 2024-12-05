@@ -1,4 +1,4 @@
-[note] The overall accessibility level of your application depends on the FilterBuilder features that you use.
+[note] The overall accessibility level of your application depends on the FilterBuilder features you use.
 
 <table class="dx-table">
     <tr>

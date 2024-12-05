@@ -1,4 +1,4 @@
-[note] The overall accessibility level of your application depends on the Pagination features that you use.
+[note] The overall accessibility level of your application depends on the Pagination features you use.
 
 <table class="dx-table">
     <tr>

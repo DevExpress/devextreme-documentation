@@ -1,5 +1,7 @@
 ---
 id: DevicesObject
+module: core/devices
+export: default
 ---
 ---
 ##### shortDescription

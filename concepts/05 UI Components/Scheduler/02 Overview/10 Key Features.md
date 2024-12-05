@@ -24,10 +24,10 @@ You can customize a variety of Scheduler elements:
     - [Appointment details form](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/onAppointmentFormOpening.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentFormOpening')
     - [View](/concepts/05%20UI%20Components/Scheduler/060%20Views/020%20Customize%20Individual%20Views.md '/Documentation/Guide/UI_Components/Scheduler/Views/Customize_Individual_Views/')
     - [Resource headers](/concepts/05%20UI%20Components/Scheduler/040%20Resources/040%20Customize%20Resource%20Headers.md '/Documentation/Guide/UI_Components/Scheduler/Resources/Customize_Resource_Headers/')
-    - [Cell overflow indicator](/Documentation/Guide/UI_Components/Scheduler/Appointments/Cell_Overflow_Indicator/)
+    - [Cell overflow indicator](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/080%20Cell%20Overflow%20Indicator.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Cell_Overflow_Indicator/')
 
 - **Time Zone Support**    
-Specify a different [time zone](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#timeZone) for the entire Scheduler or [individual appointments](/Documentation/Guide/UI_Components/Scheduler/Time_Zone_Support/).
+Specify a different [time zone](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/timeZone.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#timeZone') for the entire Scheduler or [individual appointments](/concepts/05%20UI%20Components/Scheduler/077%20Time%20Zone%20Support.md '/Documentation/Guide/UI_Components/Scheduler/Time_Zone_Support/').
 
 - **Lazy loading**    
 If Scheduler performance suffers due to a high number of appointments, you can [lazy load data](/concepts/05%20UI%20Components/Scheduler/085%20Optimize%20Scheduler%20Performance%20with%20Lazy%20Loading.md '/Documentation/Guide/UI_Components/Scheduler/Optimize_Scheduler_Performance_with_Lazy_Loading/').

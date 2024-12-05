@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether the Chat UI component displays newly entered messages immediately. This property only applies if [dataSource](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#dataSource) is used.
+Specifies whether the Chat UI component displays newly entered messages immediately. This property only applies if [dataSource](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#dataSource') is used.
 
 ---
 When you send a message in a Chat (press the "Send" button), the Chat triggers the store's [insert](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/insert.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#insert') method and adds the message to the store.

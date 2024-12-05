@@ -10,7 +10,7 @@ Specifies available filter operations. Applies if [allowFiltering](/api-referenc
 ---
 The following table lists available filter operations by [data type](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType'). Users can apply these filter operations in the filter row and nested [filterBuilder](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterBuilder.md '{basewidgetpath}/Configuration/#filterBuilder') component.
 
-[note] The default filter operations for each data type are listed in the [selectedFilterOperation]({basewidgetpath}/Configuration/columns/#selectedFilterOperation) API section.
+[note] The default filter operations for each data type are listed in the [selectedFilterOperation](/api-reference/_hidden/GridBaseColumn/selectedFilterOperation.md '{basewidgetpath}/Configuration/columns/#selectedFilterOperation') API section.
 
 <table class="dx-table">
   <tr>

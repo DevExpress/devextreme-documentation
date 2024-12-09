@@ -1,62 +1,99 @@
-Add diagram resources (scripts and styles) onto the page.
+---
+##### jQuery
 
-- **npm**
+[Add DevExtreme to your jQuery application](/concepts/58%20jQuery%20Components/05%20Add%20DevExtreme%20to%20a%20jQuery%20Application/00%20Add%20DevExtreme%20to%20a%20jQuery%20Application.md '/Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/') and add Diagram resources (scripts and styles) to the page:
 
-    The `devexpress-diagram` is a dependency of the `DevExtreme` package. Therefore, [install the DevExtreme npm package](/concepts/Common/Distribution%20Channels/01%20npm.md '/Documentation/Guide/Common/Distribution_Channels/npm/') to include the Diagram in your project. Then, add the `dx-diagram.min.css` and `dx-diagram.min.js` files to your page.
+    <!-- tab: index.js -->
+    $(function() {
+        $("#diagram").dxDiagram({ });
+    });
 
-        <!--HTML-->
-        <link rel="stylesheet" href="node_modules/devexpress-diagram/dx-diagram.min.css">
-        <script type="text/javascript" src="node_modules/devexpress-diagram/dx-diagram.min.js"></script>
-
-- **CDN**
-
-    Add the `dx-diagram.min.css` and `dx-diagram.min.js` files to your page.
-
-        <!--HTML-->
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_23_2/css/dx-diagram.min.css">
-        <script src="https://cdn3.devexpress.com/jslib/minor_23_2/js/dx-diagram.min.js"></script>
-
-- **Local Scripts**
-
-    You can find all the required files in the [DevExtreme zip archive](https://js.devexpress.com/Download/#Alternative-Downloads) or DevExtreme folder (%ProgramFiles%\DevExpress 24.1\DevExtreme\Sources). Copy the **dx-diagram.min.js** and **dx-diagram.min.css** files into your application folder. Then, link the required files.
-
-        <!--HTML-->
-        <script type="text/javascript" src="js/dx-diagram.min.js"></script>
-        <link rel="stylesheet" href="css/dx-diagram.min.css">
-    
-Use the the `dx-diagram.css` and `dx-diagram.js` files to add an unminified version of the resource files to your page.
-
-[note]
-
-The Diagram UI component is a jQuery DevExtreme UI component. Common DevExtreme resources (listed below) should be included in your page after the Diagram resources.
-
-        <!--HTML-->
-        @* Diagram styles*@
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_23_2/css/dx-diagram.min.css">
-        @* DevExtreme theme *@
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_23_2/css/dx.light.css">
-        
-        @* jQuery *@
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        @* Diagram scripts *@
-        <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_23_2/js/dx-diagram.min.js"></script>
-        @* DevExtreme common scripts *@
-        <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_23_2/js/dx.all.js"></script>
-
-        
-[/note]
+    <!-- tab: index.html -->
+    <html>
+        <head>
+            <!-- ... -->
+            <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+            <script src="https://cdn3.devexpress.com/jslib/minor_24_1/js/dx-diagram.min.js"></script>
+            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_24_1/css/dx-diagram.min.css">
+            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_24_1/css/dx.light.css">
+            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_24_1/js/dx.all.js"></script>
+            <script type="text/javascript" src="index.js"></script>
+        </head>
+        <body>
+            <div id="diagram"></div>
+        </body>
+    </html>
 
 
-Initialize the Diagram UI component in a DOM element.
+##### Angular
 
-        <!--JavaScript-->
-        $(function() {
-            $("#diagram").dxDiagram();
-        });
-  
-        <!--HTML-->
-        <div id="diagram"></div>
+[Add DevExtreme to your Angular application](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/'), then install `devexpress-diagram` (`npm i devexpress-diagram`), and add Diagram resources (scripts and styles) to the page:
 
-![Diagram control](/images/diagram/overview.png)
+    <!-- tab: app.component.html -->
+    <dx-diagram></dx-diagram>
 
-[tags] jquery
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
+
+    import { DxDiagramModule } from 'devextreme-angular';
+
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            DxDiagramModule
+        ],
+        providers: [ ],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+
+    <!-- tab: angular.json -->
+    // ...
+    "styles": [
+        // ...
+        "node_modules/devexpress-diagram/dist/dx-diagram.min.css",
+    ],
+
+##### Vue
+
+[Add DevExtreme to your Vue application](/concepts/55%20Vue%20Components/05%20Add%20DevExtreme%20to%20a%20Vue%20Application/00%20Add%20DevExtreme%20to%20a%20Vue%20Application.md '/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/') and add Diagram resources (scripts and styles) to the page:
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDiagram>
+        </DxDiagram>
+    </template>
+
+    <script setup>
+    import 'devextreme/dist/css/dx.light.css';
+    import 'devexpress-diagram/dist/dx-diagram.min.css';
+    import { DxDiagram } from 'devextreme-vue/diagram';
+    </script>
+
+##### React
+
+[Add DevExtreme to your React application](/concepts/50%20React%20Components/05%20Add%20DevExtreme%20to%20a%20React%20Application/00%20Add%20DevExtreme%20to%20a%20React%20Application.md '/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/') and use the following code snippet to create a Diagram component:
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+    import 'devexpress-diagram/dist/dx-diagram.min.css';
+
+    import { Diagram } from 'devextreme-react/diagram';
+
+    function App() {
+        return (
+            <Diagram>
+            </Diagram>
+        );
+    }
+
+    export default App;
+
+---

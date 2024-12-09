@@ -34,9 +34,9 @@ To include these components, you can use CDN or npm.
             <script src="https://cdnjs.cloudflare.com/ajax/libs/globalize/1.3.0/globalize/currency.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/globalize/1.3.0/globalize/date.min.js"></script>
             <!-- DevExtreme library -->
-            <script src="https://cdn3.devexpress.com/jslib/minor_23_2/js/dx.all.js"></script>
+            <script src="https://cdn3.devexpress.com/jslib/minor_24_2/js/dx.all.js"></script>
             <!-- Dictionary files for German language -->
-            <script src="https://cdn3.devexpress.com/jslib/minor_23_2/js/localization/dx.messages.de.js"></script>
+            <script src="https://cdn3.devexpress.com/jslib/minor_24_2/js/localization/dx.messages.de.js"></script>
             <!-- Common and language-specific CLDR data -->
             <script src="https://unpkg.com/devextreme-cldr-data/supplemental.js"></script>
             <script src="https://unpkg.com/devextreme-cldr-data/de.js"></script>

@@ -13,9 +13,9 @@
     <head>
         <!-- ... -->
         <!-- DevExtreme library -->
-        <script src="https://cdn3.devexpress.com/jslib/minor_23_2/js/dx.all.js"></script>
+        <script src="https://cdn3.devexpress.com/jslib/minor_24_2/js/dx.all.js"></script>
         <!-- Dictionary files for German language -->
-        <script src="https://cdn3.devexpress.com/jslib/minor_23_2/js/localization/dx.messages.de.js"></script>
+        <script src="https://cdn3.devexpress.com/jslib/minor_24_2/js/localization/dx.messages.de.js"></script>
         <script src="index.js"></script>
     </head>
 

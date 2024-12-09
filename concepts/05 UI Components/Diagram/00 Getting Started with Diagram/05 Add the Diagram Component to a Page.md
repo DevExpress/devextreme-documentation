@@ -18,6 +18,7 @@
             <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_24_1/css/dx.light.css">
             <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_24_1/js/dx.all.js"></script>
             <script type="text/javascript" src="index.js"></script>
+            <script type="text/javascript" src="data.js"></script>
         </head>
         <body>
             <div id="diagram"></div>

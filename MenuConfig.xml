@@ -104,11 +104,9 @@
   <MenuRule Destination="10 UI Components/dxFloating Action Button/3 SpeedDialAction API" SourcePattern="ApiReference:^10 UI Components/dxSpeedDialAction" />
   <MenuRule Destination="10 UI Components/dx$1/3 API" SourcePattern="ApiReference:^10 UI Components/dx([a-zA-Z]+)" />
   <MenuRule Destination="10 UI Components/dx$1/4 Demos" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/Demos" />
-  <MenuRule Destination="10 UI Components/dxDiagram/0 Overview" SourcePattern="Howto:^05 UI Components/Diagram/05 Add the Diagram Component to an Angular CLI Application" VisibleFor="Angular"/>
   <MenuRule Destination="10 UI Components/dx$1/0 Overview" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/[0-9]+ Overview" />
   <MenuRule Destination="10 UI Components/dx$1/0 Overview" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/[0-9]+ Visual Elements" />
   <MenuRule Destination="10 UI Components/dx$1/1 Getting Started" SourcePattern="Howto:^05 UI Components/(Drawer|FileManager|Floating Action Button)/[0-9]* Getting Started with (File Manager|Navigation Drawer|Floating Action Button)" />
-  <MenuRule Destination="10 UI Components/dxDiagram/1 Getting Started" SourcePattern="Howto:^05 UI Components/Diagram/00 Getting Started with Diagram" VisibleFor="jQuery"/>
   <MenuRule Destination="10 UI Components/dx$1/1 Getting Started" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/[0-9]+ Getting Started with ([a-zA-Z]+)" />
   <MenuRule Destination="10 UI Components/dx$1/5 Accessibility" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/[0-9]+ Accessibility" />
   <MenuRule Destination="" SourcePattern="Howto:^05 UI Components/(Accordion|BarGauge|Bullet|ButtonGroup|Chat|CheckBox|CircularGauge|Drawer|DropDownButton|Floating Action Button|LinearGauge|NavBar|Resizable|SlideOut|SlideOutView|TabPanel|Tabs|Toolbar|TreeMap|zz Common)" />

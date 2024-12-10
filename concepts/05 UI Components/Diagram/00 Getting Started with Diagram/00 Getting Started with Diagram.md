@@ -1,7 +1,13 @@
-The Diagram UI component provides a visual interface to help you design new and modify existing diagrams. 
+#include tutorials-intro-installationnote
 
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/Overview/"
+Diagram is a UI component for creating and editing diagrams.
+
+This tutorial shows how to add a Diagram component to your application and configure the component.
+
+<div class="simulator-desktop-container" data-view="/Content/Applications/24_2/GettingStartedWith/Diagram/index.html, /Content/Applications/24_2/GettingStartedWith/Diagram/index.js, /Content/Applications/24_2/GettingStartedWith/Diagram/index.css"></div>
+
+Each section in this tutorial describes one configuration step. You can also find full source code in the GitHub repository.
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-getting-started-with-diagram"
 }
-
-[tags] jquery

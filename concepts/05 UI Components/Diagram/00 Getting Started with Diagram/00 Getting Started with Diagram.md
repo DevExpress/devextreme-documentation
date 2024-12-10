@@ -1,6 +1,6 @@
 #include tutorials-intro-installationnote
 
-Diagram is a UI component that offers a visual interface to design and edit diagrams.
+Diagram is a UI component for creating and editing diagrams.
 
 This tutorial shows how to add a Diagram component to your application and configure the component.
 

@@ -1,6 +1,6 @@
 ---
 id: localization.formatMessage(key, value)
-module: localization
+module: common/core/localization
 export: formatMessage
 ---
 ---

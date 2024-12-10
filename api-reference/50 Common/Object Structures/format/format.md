@@ -2,7 +2,7 @@
 id: Format
 type: Object | Enums.Format | String | function(value)
 default: undefined
-module: localization
+module: common/core/localization
 export: Format
 ---
 ---

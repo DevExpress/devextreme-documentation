@@ -1,6 +1,6 @@
 ---
 id: Enums.eventTypes
-acceptValues: 'dx' | 'other' | 'pointer' | 'mouse' | 'dxmousewheel' | 'touch' | 'keyboard'
+acceptValues: 'dx' | 'other' | 'pointer' | 'mouse' | 'dxmousewheel' | 'touch' | 'keyboard' | 'dx' | 'other' | 'pointer' | 'mouse' | 'dxmousewheel' | 'touch' | 'keyboard'
 type: Union
 ---
 ---

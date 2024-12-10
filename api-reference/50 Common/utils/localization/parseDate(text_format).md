@@ -1,6 +1,6 @@
 ---
 id: localization.parseDate(text, format)
-module: localization
+module: common/core/localization
 export: parseDate
 ---
 ---

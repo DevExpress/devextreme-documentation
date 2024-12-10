@@ -1,7 +1,7 @@
 ---
 id: Utils.applyChanges(data, changes, options)
-module: data/apply_changes
-export: default
+module: common/data
+export: applyChanges
 ---
 ---
 ##### shortDescription

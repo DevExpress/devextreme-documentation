@@ -1,6 +1,6 @@
 ---
 id: GroupItem
-module: common/data/custom-store
+module: common/data
 export: GroupItem
 type: Object
 generateTypeLink: 

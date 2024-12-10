@@ -1,7 +1,7 @@
 ---
 id: Query
 type: Object
-module: data/query
+module: common/data
 export: Query
 ---
 ---

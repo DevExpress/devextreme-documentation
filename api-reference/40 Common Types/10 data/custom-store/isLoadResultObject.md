@@ -1,6 +1,6 @@
 ---
 id: isLoadResultObject
-module: common/data/custom-store
+module: common/data
 export: isLoadResultObject
 ---
 ---

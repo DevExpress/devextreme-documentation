@@ -1,6 +1,6 @@
 ---
 id: Utils.compileSetter(expr)
-module: utils
+module: common/data
 export: compileSetter
 ---
 ---

@@ -1,7 +1,7 @@
 ---
 id: template
 type: String | function() | UserDefinedElement
-module: core/templates/template
+module: common
 export: template
 ---
 ---

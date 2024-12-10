@@ -1,7 +1,7 @@
 ---
 id: Utils.query(array, queryOptions)
-module: data/query
-export: default
+module: common/data
+export: query
 ---
 ---
 ##### shortDescription

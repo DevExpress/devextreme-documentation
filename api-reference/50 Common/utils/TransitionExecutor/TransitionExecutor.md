@@ -1,7 +1,7 @@
 ---
 id: TransitionExecutor
-module: animation/transition_executor
-export: default
+module: common/core/animation
+export: TransitionExecutor
 ---
 ---
 ##### shortDescription

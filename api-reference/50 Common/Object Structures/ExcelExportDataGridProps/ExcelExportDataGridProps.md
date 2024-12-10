@@ -1,8 +1,9 @@
 ---
 id: ExcelExportDataGridProps
-inherits: ExcelExportBaseProps
-module: excel_exporter
-export: ExcelExportDataGridProps
+inherits: ExcelExportBase.Options
+module: common/export/excel
+export: DataGridExport_Options
+type: Object
 ---
 ---
 ##### shortDescription

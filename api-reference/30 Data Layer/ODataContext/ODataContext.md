@@ -1,7 +1,7 @@
 ---
 id: ODataContext
-module: data/odata/context
-export: default
+module: common/data
+export: ODataContext
 ---
 ---
 ##### shortDescription

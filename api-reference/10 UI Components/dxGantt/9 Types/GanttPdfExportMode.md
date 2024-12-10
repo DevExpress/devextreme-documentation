@@ -2,7 +2,7 @@
 id: Enums.GanttPdfExportMode
 acceptValues: 'all' | 'treeList' | 'chart'
 type: Union
-references: PdfExportGanttProps.exportMode
+references: GanttExport.Options.exportMode
 ---
 ---
 ##### shortDescription

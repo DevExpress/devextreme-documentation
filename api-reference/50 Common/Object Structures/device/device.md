@@ -1,6 +1,6 @@
 ---
 id: Device
-module: core/devices
+module: common/core/environment
 export: Device
 type: Object
 ---

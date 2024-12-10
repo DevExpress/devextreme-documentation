@@ -1,7 +1,7 @@
 ---
 id: LocalStore
-module: data/local_store
-export: default
+module: common/data
+export: LocalStore
 inherits: ArrayStore
 ---
 ---

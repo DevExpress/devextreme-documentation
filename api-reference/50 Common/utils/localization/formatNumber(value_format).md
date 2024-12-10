@@ -1,6 +1,6 @@
 ---
 id: localization.formatNumber(value, format)
-module: localization
+module: common/core/localization
 export: formatNumber
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: utils.requestAnimationFrame(callback)
-module: animation/frame
+module: common/core/animation
 export: requestAnimationFrame
 ---
 ---

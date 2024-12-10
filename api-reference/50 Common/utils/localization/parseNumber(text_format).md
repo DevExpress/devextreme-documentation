@@ -1,6 +1,6 @@
 ---
 id: localization.parseNumber(text, format)
-module: localization
+module: common/core/localization
 export: parseNumber
 ---
 ---

@@ -1,7 +1,7 @@
 ---
 id: eventsHandler
 hidden: 
-module: events/index
+module: events/events.types
 export: eventsHandler
 ---
 ---

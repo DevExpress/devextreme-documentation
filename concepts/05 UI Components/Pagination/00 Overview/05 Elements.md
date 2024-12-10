@@ -1,4 +1,4 @@
-<img src="/images/Pagination/pagination-elements.png" alt="Pagination elements" style="width: 750px;"/>
+<img src="/images/Pagination/pagination-elements.png" alt="Pagination elements"/>
 
 1. [Page size selector](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#allowedPageSizes)
 2. [Paging info](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#showInfo)

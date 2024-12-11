@@ -39,16 +39,22 @@ A user can use the following keys to interact with the TreeView component:
     </tr>
     <tr>
         <td>Shift + &uarr; / Shift + &darr;</td>
-        <td>Extends selection up/down by one node.</td>
+        <td>Extends selection up/down by one node.<sup>1</sup></td>
     </tr>
     <tr>
         <td>Shift + Home</td>
-        <td>Extends selection up to the first node.</td>
+        <td>Extends selection up to the first node.<sup>1</sup></td>
     </tr>
     <tr>
         <td>Shift + End</td>
-        <td>Extends selection down to the last node.</td>
+        <td>Extends selection down to the last node.<sup>1</sup></td>
     </tr>
 </table>
+
+<div class="footnotes">
+    <ol>
+        <li>If <a href="/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#showCheckBoxesMode">showCheckBoxesMode</a> is set to <i>"none"</i>, this action has no effect.</li>
+    </ol>
+</div>
 
 #include common-code-register-key-handler

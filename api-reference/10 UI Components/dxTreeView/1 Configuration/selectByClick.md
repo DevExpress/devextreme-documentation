@@ -8,6 +8,8 @@ default: false
 Specifies whether an item is selected if a user clicks it.
 
 ---
+Enable this property to select items with the Enter key when [selectionMode](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectionMode) is set to *'none'*.
+
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/ItemSelectionAndCustomization/"
 }

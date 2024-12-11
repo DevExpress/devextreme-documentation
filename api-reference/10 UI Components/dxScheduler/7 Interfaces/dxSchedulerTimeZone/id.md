@@ -1,5 +1,5 @@
 ---
-id: dxSchedulerTimeZone.id
+id: SchedulerTimeZone.id
 type: String
 ---
 ---

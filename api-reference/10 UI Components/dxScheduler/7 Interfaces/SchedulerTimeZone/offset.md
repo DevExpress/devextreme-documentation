@@ -1,5 +1,5 @@
 ---
-id: dxSchedulerTimeZone.offset
+id: SchedulerTimeZone.offset
 type: Number
 ---
 ---

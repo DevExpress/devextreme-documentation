@@ -6,7 +6,7 @@ A license key will work for all minor versions released within a given major rel
 
 - v23.1 and v23.2 are two different major versions. If you upgrade from v23.1.x to v23.2.x, you will need to update license key info.
 
-DevExtreme license keys do not expire. While license keys never expire, please remember, they are linked to major versions (v23.2, v24.1, ...). If you do not have a valid license for a given major version, you will not be authorized to use DevExtreme UI components/libraries for production projects.
+DevExtreme license keys do not expire. While license keys never expire, please remember, they are linked to major versions (v23.2, v24.1, ...). If you do not have a valid license for a given major version, you will not be authorized to use DevExtreme UI components/libraries for production projects. Visit [Renewals](https://www.devexpress.com/buy/renew/) to renew your license.
 
 License keys issued for newer versions of DevExtreme (such as v23.2) can be used for older versions (such as v23.1).
 

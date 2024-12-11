@@ -72,11 +72,11 @@ If you need to use objects, define them outside the component class or function 
     // Correct: Object wrapped in `useMemo`
     function App() {
         // ...
-        const options = React.useMemo({
+        const options = React.useMemo(() => ({
             items: positions,
             searchEnabled: true,
-            value: "CEO"
-        }, []);
+            value: "CEO",
+        }), []);
 
         return (
             <!-- ... -->

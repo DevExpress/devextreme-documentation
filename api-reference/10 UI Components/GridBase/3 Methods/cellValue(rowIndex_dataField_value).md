@@ -15,6 +15,8 @@ The [data field](/api-reference/_hidden/GridBaseColumn/dataField.md '{basewidget
 The cell's new value.
 
 ---
+{WidgetName} re-renders the entire row or edit form after the **cellValue** method changes a cell value. To re-render only the modified cell or form item editor, enable [repaintChangesOnly]({basewidgetpath}/Configuration/#repaintChangesOnly).
+
 Call [saveEditData()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/saveEditData().md '{basewidgetpath}/Methods/#saveEditData') after this method to save the changes:
 
 ---

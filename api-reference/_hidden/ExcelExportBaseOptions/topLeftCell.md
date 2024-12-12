@@ -1,8 +1,7 @@
 ---
-id: ExcelExportBaseProps.topLeftCell
+id: ExcelExportBase.Options.topLeftCell
 type: CellAddress | String
 default: { row: 1, column: 1 }
-inheritsType: CellAddress
 ---
 ---
 ##### shortDescription

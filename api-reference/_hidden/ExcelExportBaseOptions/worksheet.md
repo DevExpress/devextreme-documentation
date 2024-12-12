@@ -1,5 +1,5 @@
 ---
-id: ExcelExportBaseProps.worksheet
+id: ExcelExportBase.Options.worksheet
 type: Object | undefined
 default: undefined
 ---

@@ -1,5 +1,5 @@
 ---
-id: ExcelExportBaseProps.encodeExecutableContent
+id: ExcelExportBase.Options.encodeExecutableContent
 type: Boolean
 default: false
 ---

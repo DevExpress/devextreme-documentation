@@ -8,7 +8,7 @@ Specifies the font.
 
 ---
 
-Specify the **font** property in the [exportGantt](/api-reference/50%20Common/utils/pdfExporter/exportGantt(options).md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportGanttoptions') method to use a custom font in the exported Gantt data. The [fontObject](/api-reference/_hidden/PdfExportGanttFont/fontObject.md '/Documentation/ApiReference/Common/Object_Structures/PdfExportGanttProps/font/fontObject') and [name](/api-reference/_hidden/PdfExportGanttFont/name.md '/Documentation/ApiReference/Common/Object_Structures/PdfExportGanttProps/font/name') properties are required.
+Specify the **font** property in the [exportGantt](/api-reference/50%20Common/utils/pdfExporter/exportGantt(options).md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportGanttoptions') method to use a custom font in the exported Gantt data. The [fontObject](/api-reference/_hidden/PdfExportGanttFont/fontObject.md '/Documentation/ApiReference/Common/Object_Structures/GanttExportOptions/font/fontObject') and [name](/api-reference/_hidden/PdfExportGanttFont/name.md '/Documentation/ApiReference/Common/Object_Structures/GanttExportOptions/font/name') properties are required.
 
 ---
 ##### jQuery

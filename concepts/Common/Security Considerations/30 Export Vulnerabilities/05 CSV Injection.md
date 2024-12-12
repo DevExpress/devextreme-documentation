@@ -2,7 +2,7 @@ If you export data from the DevExtreme DataGrid or PivotGrid in CSV format, your
 
 When executed, malicious code in a formula can alter user data, or allow unauthorized access to data or internal resources.
 
-You can encode CSV files to prevent execution of potentially harmful code within them. Pass the [encodeExecutableContent](/api-reference/_hidden/ExcelExportBaseProps/encodeExecutableContent.md '/Documentation/ApiReference/Common/Object_Structures/ExcelExportDataGridProps/#encodeExecutableContent') option as an argument of the configuration object of the [exportDataGrid](/api-reference/50%20Common/utils/excelExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions') or [exportPivotGrid](/api-reference/50%20Common/utils/excelExporter/exportPivotGrid(options).md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportPivotGridoptions') function.
+You can encode CSV files to prevent execution of potentially harmful code within them. Pass the [encodeExecutableContent](/api-reference/_hidden/ExcelExportBaseOptions/encodeExecutableContent.md '/Documentation/ApiReference/Common/Object_Structures/ExcelExportDataGridProps/#encodeExecutableContent') option as an argument of the configuration object of the [exportDataGrid](/api-reference/50%20Common/utils/excelExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions') or [exportPivotGrid](/api-reference/50%20Common/utils/excelExporter/exportPivotGrid(options).md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportPivotGridoptions') function.
 
 ---
 ##### jQuery

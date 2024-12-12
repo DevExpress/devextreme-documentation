@@ -1,11 +1,11 @@
 ---
-id: PdfExportGanttProps.component
-type: dxGantt | undefined
-default: undefined
+id: GanttExport.Options.exportMode
+type: Enums.GanttPdfExportMode
+default: 'all'
 ---
 ---
 ##### shortDescription
-A Gantt instance. This setting is required.
+Specifies which part of the component to export (chart area, tree list area, or the entire component).
 
 ---
 

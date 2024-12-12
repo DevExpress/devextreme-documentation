@@ -5,7 +5,6 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the outer indents of the exported area.
 
 ---
-<!-- Description goes here -->

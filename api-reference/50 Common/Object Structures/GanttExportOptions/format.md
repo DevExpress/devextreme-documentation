@@ -1,5 +1,5 @@
 ---
-id: PdfExportGanttProps.format
+id: GanttExport.Options.format
 type: String | Object | undefined
 default: undefined
 ---

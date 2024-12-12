@@ -1,16 +1,11 @@
 ---
-id: PdfExportGanttProps.createDocumentMethod
-type: function(options)
+id: GanttExport.Options.landscape
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription
-A function that creates a PDF document.
-
-##### param(options): Object
-PDF document settings.
-
-##### return: Object
-The PDF document.
+Specifies whether to use horizontal orientation for the document.
 
 ---
 

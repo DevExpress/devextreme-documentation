@@ -1,11 +1,16 @@
 ---
-id: PdfExportGanttProps.exportMode
-type: Enums.GanttPdfExportMode
-default: 'all'
+id: GanttExport.Options.createDocumentMethod
+type: function(options)
 ---
 ---
 ##### shortDescription
-Specifies which part of the component to export (chart area, tree list area, or the entire component).
+A function that creates a PDF document.
+
+##### param(options): Object
+PDF document settings.
+
+##### return: Object
+The PDF document.
 
 ---
 

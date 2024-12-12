@@ -1,7 +1,6 @@
 ---
-id: PdfExportGanttProps.font
-type: PdfExportGanttFont
-inheritsType: PdfExportGanttFont
+id: GanttExport.Options.font
+type: GanttExportFont
 ---
 ---
 ##### shortDescription

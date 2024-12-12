@@ -1,5 +1,5 @@
 ---
-id: PdfExportGanttProps.dateRange
+id: GanttExport.Options.dateRange
 type: Enums.GanttPdfExportDateRange | Object
 ---
 ---

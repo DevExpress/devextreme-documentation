@@ -1,5 +1,5 @@
 ---
-id: PdfExportGanttProps.jsPDFDocument
+id: GanttExport.Options.jsPDFDocument
 type: Object | undefined
 default: undefined
 ---

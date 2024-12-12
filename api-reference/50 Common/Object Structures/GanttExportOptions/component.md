@@ -1,11 +1,11 @@
 ---
-id: PdfExportGanttProps.landscape
-type: Boolean
-default: true
+id: GanttExport.Options.component
+type: dxGantt | undefined
+default: undefined
 ---
 ---
 ##### shortDescription
-Specifies whether to use horizontal orientation for the document.
+A Gantt instance. This setting is required.
 
 ---
 

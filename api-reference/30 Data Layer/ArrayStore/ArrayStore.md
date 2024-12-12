@@ -2,6 +2,7 @@
 id: ArrayStore
 module: common/data
 export: ArrayStore
+inheritsType: Store
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,5 @@
 ---
-id: PdfExportGanttFont.weight
+id: GanttExportFont.weight
 type: String | Number | undefined
 default: undefined
 acceptValues: 'normal' | 'bold' | 400 | 700

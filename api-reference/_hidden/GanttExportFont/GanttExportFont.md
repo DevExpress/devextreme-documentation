@@ -6,7 +6,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures a custom font used for the Gantt data export.
 
 ---
-<!-- Description goes here -->

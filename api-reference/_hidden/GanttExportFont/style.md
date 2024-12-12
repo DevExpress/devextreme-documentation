@@ -1,5 +1,5 @@
 ---
-id: PdfExportGanttFont.style
+id: GanttExportFont.style
 type: String
 default: 'normal'
 acceptValues: 'bold' | 'normal' | 'italic'

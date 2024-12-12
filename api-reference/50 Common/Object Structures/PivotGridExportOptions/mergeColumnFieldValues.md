@@ -1,5 +1,5 @@
 ---
-id: ExcelExportPivotGridProps.mergeColumnFieldValues
+id: PivotGridExport.Options.mergeColumnFieldValues
 type: Boolean
 default: true
 ---

@@ -1,8 +1,9 @@
 ---
-id: ExcelExportPivotGridProps
-inherits: ExcelExportBaseProps
-module: excel_exporter
-export: ExcelExportPivotGridProps
+id: PivotGridExport.Options
+module: common/export/excel
+export: PivotGridExport_Options
+type: common/export/excel:PivotGridExportOptions
+inherits: ExcelExportBase.Options
 ---
 ---
 ##### shortDescription

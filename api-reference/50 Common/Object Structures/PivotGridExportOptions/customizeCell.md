@@ -1,5 +1,5 @@
 ---
-id: ExcelExportPivotGridProps.customizeCell
+id: PivotGridExport.Options.customizeCell
 type: function(options)
 ---
 ---

@@ -1,5 +1,5 @@
 ---
-id: ExcelExportPivotGridProps.exportColumnFieldHeaders
+id: PivotGridExport.Options.exportColumnFieldHeaders
 type: Boolean
 default: false
 ---

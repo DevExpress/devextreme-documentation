@@ -83,7 +83,7 @@ The DevExtreme TabPanel and MultiView include a new [visible](/Documentation/Api
 
 ### DataSource - Case Sensitive Filtering
 
-[In v23.1](https://www.devexpress.com/subscriptions/new-2023-1.xml#js-data-layer), we released [langParams](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/langParam) for DataSource. This property can be used to include language-specific parameters for sorting and filtering operations performed on a client.
+[In v23.1](https://www.devexpress.com/subscriptions/new-2023-1.xml#js-data-layer), we released [langParams](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/langParams) for DataSource. This property can be used to include language-specific parameters for sorting and filtering operations performed on a client.
 
 This update includes case sensitivity for the `langParams` options. As you can see in the image below, you can now introduce case-aware filtering when using DevExtreme UI components with DataSource support (such as DataGrid).
 

@@ -8,4 +8,3 @@ default: false
 Specifies whether to show the page size selector.
 
 ---
-

@@ -1,21 +1,21 @@
 To customize the Diagram component and its elements, use the following properties:
 
-- [simpleView](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#simpleView)    
+- [simpleView](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/simpleView.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#simpleView')    
 Activates a mode where the content uses all available space.
 
-- [pageColor](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#pageColor)    
+- [pageColor](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/pageColor.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#pageColor')    
 Specifies the Diagram page's color.
 
-- [defaultItemProperties](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/defaultItemProperties/)    
+- [defaultItemProperties](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/defaultItemProperties '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/defaultItemProperties/')    
 Defines initial properties for new items. In this tutorial, the different font is applied to the items.
 
-Diagram UI customization [tools](/Documentation/Guide/UI_Components/Diagram/Diagram_Tools/) include:
+Diagram UI customization [tools](/concepts/05%20UI%20Components/Diagram/30%20Diagram%20Tools.md '/Documentation/Guide/UI_Components/Diagram/Diagram_Tools/') include:
 
 - [propertiesPanel](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/propertiesPanel '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/propertiesPanel/')    
 Configures the properties panel settings. This tutorial adds a custom group that allows users to change the item appearance.
 
 - [toolbox](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/toolbox '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/toolbox/')    
-The toolbox contains groups of shapes. In this tutorial, we use this configuration object to [disable search](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/toolbox/#showSearch) and limit the [shapes](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/toolbox/groups/#shapes) in the general [category](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/toolbox/groups/#category).
+The toolbox contains groups of shapes. In this tutorial, we use this configuration object to [disable search](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/toolbox/showSearch.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/toolbox/#showSearch') and limit the [shapes](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/toolbox/groups/shapes.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/toolbox/groups/#shapes') in the general [category](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/toolbox/groups/category.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/toolbox/groups/#category').
 
 ---
 ##### jQuery

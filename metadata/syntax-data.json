@@ -5700,6 +5700,9 @@
       "react": "Position",
       "vue": "DxPosition"
     },
+    "arrayStoreOptions": {
+      "vue": "array-store-options"
+    },
     "asyncRule": {
       "angular": "dxo-async-rule",
       "react": "AsyncRule",
@@ -6524,6 +6527,27 @@
     "customRule.validationCallback": {
       "vue": "validation-callback"
     },
+    "customStoreOptions": {
+      "vue": "custom-store-options"
+    },
+    "customStoreOptions.byKey": {
+      "vue": "by-key"
+    },
+    "customStoreOptions.cacheRawData": {
+      "vue": "cache-raw-data"
+    },
+    "customStoreOptions.loadMode": {
+      "vue": "load-mode"
+    },
+    "customStoreOptions.onLoaded": {
+      "vue": "@loaded"
+    },
+    "customStoreOptions.totalCount": {
+      "vue": "total-count"
+    },
+    "customStoreOptions.useDefaultSearch": {
+      "vue": "use-default-search"
+    },
     "dataChange": {
       "angular": "dxo-data-change",
       "react": "DataChange",
@@ -6556,6 +6580,60 @@
     },
     "dataExpressionMixinOptions.valueExpr": {
       "vue": "value-expr"
+    },
+    "dataSource": {
+      "vue": "data-source"
+    },
+    "dataSourceOptions": {
+      "vue": "data-source-options"
+    },
+    "dataSourceOptions.customQueryParams": {
+      "vue": "custom-query-params"
+    },
+    "dataSourceOptions.langParams": {
+      "angular": "dxo-lang-params",
+      "react": "LangParams",
+      "vue": "DxLangParams"
+    },
+    "dataSourceOptions.onChanged": {
+      "vue": "@changed"
+    },
+    "dataSourceOptions.onLoadError": {
+      "vue": "@load-error"
+    },
+    "dataSourceOptions.onLoadingChanged": {
+      "vue": "@loading-changed"
+    },
+    "dataSourceOptions.pageSize": {
+      "vue": "page-size"
+    },
+    "dataSourceOptions.postProcess": {
+      "vue": "post-process"
+    },
+    "dataSourceOptions.pushAggregationTimeout": {
+      "vue": "push-aggregation-timeout"
+    },
+    "dataSourceOptions.requireTotalCount": {
+      "vue": "require-total-count"
+    },
+    "dataSourceOptions.reshapeOnPush": {
+      "vue": "reshape-on-push"
+    },
+    "dataSourceOptions.searchExpr": {
+      "vue": "search-expr"
+    },
+    "dataSourceOptions.searchOperation": {
+      "angular": "dxo-search-operation",
+      "react": "SearchOperation",
+      "vue": "DxSearchOperation"
+    },
+    "dataSourceOptions.searchValue": {
+      "vue": "search-value"
+    },
+    "dataSourceOptions.store": {
+      "angular": "dxo-store",
+      "react": "Store",
+      "vue": "DxStore"
     },
     "dateBoxBaseOptions": {
       "vue": "date-box-base-options"
@@ -19892,6 +19970,9 @@
     "enums.SearchMode": {
       "vue": "search-mode"
     },
+    "enums.SearchOperation": {
+      "vue": "search-operation"
+    },
     "enums.SelectAllMode": {
       "vue": "select-all-mode"
     },
@@ -19957,6 +20038,9 @@
     },
     "enums.StateStoreType": {
       "vue": "state-store-type"
+    },
+    "enums.StoreType": {
+      "vue": "store-type"
     },
     "enums.SubmenuDirection": {
       "vue": "submenu-direction"
@@ -20102,7 +20186,9 @@
       "vue": "DxEvent"
     },
     "eventInfo": {
-      "vue": "event-info"
+      "angular": "dxo-event-info",
+      "react": "EventInfo",
+      "vue": "DxEventInfo"
     },
     "eventInfo.component": {
       "angular": "dxo-component",
@@ -20110,9 +20196,7 @@
       "vue": "DxComponent"
     },
     "eventObject": {
-      "angular": "dxo-event-object",
-      "react": "EventObject",
-      "vue": "DxEventObject"
+      "vue": "event-object"
     },
     "eventObject.currentTarget": {
       "vue": "current-target"
@@ -20945,6 +21029,14 @@
     "itemInfo.itemIndex": {
       "vue": "item-index"
     },
+    "langParams": {
+      "angular": "dxo-lang-params",
+      "react": "LangParams",
+      "vue": "DxLangParams"
+    },
+    "langParams.collatorOptions": {
+      "vue": "collator-options"
+    },
     "legendItem": {
       "angular": "dxo-legend-item",
       "react": "LegendItem",
@@ -20968,6 +21060,80 @@
       "react": "ItemIndex",
       "vue": "DxItemIndex"
     },
+    "loadOptions": {
+      "vue": "load-options"
+    },
+    "loadOptions.customQueryParams": {
+      "vue": "custom-query-params"
+    },
+    "loadOptions.endDate": {
+      "vue": "end-date"
+    },
+    "loadOptions.filter": {
+      "angular": "dxo-filter",
+      "react": "Filter",
+      "vue": "DxFilter"
+    },
+    "loadOptions.group": {
+      "angular": "dxo-group",
+      "react": "Group",
+      "vue": "DxGroup"
+    },
+    "loadOptions.groupSummary": {
+      "angular": "dxi-group-summary",
+      "react": "GroupSummary",
+      "vue": "DxGroupSummary"
+    },
+    "loadOptions.parentIds": {
+      "vue": "parent-ids"
+    },
+    "loadOptions.requireGroupCount": {
+      "vue": "require-group-count"
+    },
+    "loadOptions.requireTotalCount": {
+      "vue": "require-total-count"
+    },
+    "loadOptions.searchExpr": {
+      "vue": "search-expr"
+    },
+    "loadOptions.searchOperation": {
+      "vue": "search-operation"
+    },
+    "loadOptions.searchValue": {
+      "vue": "search-value"
+    },
+    "loadOptions.select": {
+      "angular": "dxo-select",
+      "react": "Select",
+      "vue": "DxSelect"
+    },
+    "loadOptions.sort": {
+      "angular": "dxo-sort",
+      "react": "Sort",
+      "vue": "DxSort"
+    },
+    "loadOptions.startDate": {
+      "vue": "start-date"
+    },
+    "loadOptions.totalSummary": {
+      "angular": "dxi-total-summary",
+      "react": "TotalSummary",
+      "vue": "DxTotalSummary"
+    },
+    "loadOptions.userData": {
+      "vue": "user-data"
+    },
+    "loadResult": {
+      "angular": "dxo-load-result",
+      "react": "LoadResult",
+      "vue": "DxLoadResult"
+    },
+    "localStoreOptions": {
+      "vue": "local-store-options"
+    },
+    "localStoreOptions.flushInterval": {
+      "vue": "flush-interval"
+    },
     "mapLayerElement": {
       "vue": "map-layer-element"
     },
@@ -20982,7 +21148,9 @@
       "vue": "DxAuthor"
     },
     "nativeEventInfo": {
-      "vue": "native-event-info"
+      "angular": "dxo-native-event-info",
+      "react": "NativeEventInfo",
+      "vue": "DxNativeEventInfo"
     },
     "nativeEventInfo.component": {
       "angular": "dxo-component",
@@ -21001,6 +21169,32 @@
     },
     "numericRule.ignoreEmptyValue": {
       "vue": "ignore-empty-value"
+    },
+    "oDataStoreOptions": {
+      "vue": "o-data-store-options"
+    },
+    "oDataStoreOptions.beforeSend": {
+      "vue": "before-send"
+    },
+    "oDataStoreOptions.deserializeDates": {
+      "vue": "deserialize-dates"
+    },
+    "oDataStoreOptions.errorHandler": {
+      "vue": "error-handler"
+    },
+    "oDataStoreOptions.fieldTypes": {
+      "vue": "field-types"
+    },
+    "oDataStoreOptions.filterToLower": {
+      "vue": "filter-to-lower"
+    },
+    "oDataStoreOptions.keyType": {
+      "angular": "dxo-key-type",
+      "react": "KeyType",
+      "vue": "DxKeyType"
+    },
+    "oDataStoreOptions.withCredentials": {
+      "vue": "with-credentials"
     },
     "pager": {
       "angular": "dxo-pager",
@@ -21353,6 +21547,48 @@
     "selectionChangeInfo.removedItems": {
       "vue": "removed-items"
     },
+    "store": {
+      "vue": "store"
+    },
+    "storeOptions": {
+      "vue": "store-options"
+    },
+    "storeOptions.errorHandler": {
+      "vue": "error-handler"
+    },
+    "storeOptions.onInserted": {
+      "vue": "@inserted"
+    },
+    "storeOptions.onInserting": {
+      "vue": "@inserting"
+    },
+    "storeOptions.onLoaded": {
+      "vue": "@loaded"
+    },
+    "storeOptions.onLoading": {
+      "vue": "@loading"
+    },
+    "storeOptions.onModified": {
+      "vue": "@modified"
+    },
+    "storeOptions.onModifying": {
+      "vue": "@modifying"
+    },
+    "storeOptions.onPush": {
+      "vue": "@push"
+    },
+    "storeOptions.onRemoved": {
+      "vue": "@removed"
+    },
+    "storeOptions.onRemoving": {
+      "vue": "@removing"
+    },
+    "storeOptions.onUpdated": {
+      "vue": "@updated"
+    },
+    "storeOptions.onUpdating": {
+      "vue": "@updating"
+    },
     "stringLengthRule": {
       "angular": "dxo-string-length-rule",
       "react": "StringLengthRule",
@@ -21360,6 +21596,11 @@
     },
     "stringLengthRule.ignoreEmptyValue": {
       "vue": "ignore-empty-value"
+    },
+    "summaryDescriptor": {
+      "angular": "dxo-summary-descriptor",
+      "react": "SummaryDescriptor",
+      "vue": "DxSummaryDescriptor"
     },
     "tabPanelItemInfo.itemData": {
       "angular": "dxo-item-data",

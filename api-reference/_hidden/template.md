@@ -1,6 +1,6 @@
 ---
 id: ui.template
-type: template
+type: Object
 deprecated: 
 module: ui/widget/template
 export: Template

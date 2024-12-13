@@ -1,6 +1,6 @@
 ---
 id: Utils.keyConverters
-module: data/odata/utils
+module: common/data
 export: keyConverters
 type: any
 ---

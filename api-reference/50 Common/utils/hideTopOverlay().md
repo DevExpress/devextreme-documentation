@@ -1,7 +1,7 @@
 ---
 id: hideTopOverlay()
-module: mobile/hide_top_overlay
-export: default
+module: common/core/environment
+export: hideTopOverlay
 ---
 ---
 ##### shortDescription

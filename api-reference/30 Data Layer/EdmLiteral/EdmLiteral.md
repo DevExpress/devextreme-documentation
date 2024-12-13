@@ -1,6 +1,6 @@
 ---
 id: EdmLiteral
-module: data/odata/utils
+module: common/data
 export: EdmLiteral
 ---
 ---

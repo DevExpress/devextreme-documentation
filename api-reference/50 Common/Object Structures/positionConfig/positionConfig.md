@@ -1,7 +1,7 @@
 ---
 id: PositionConfig
 type: Object
-module: animation/position
+module: common/core/animation
 export: PositionConfig
 ---
 ---

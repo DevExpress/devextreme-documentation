@@ -1,7 +1,7 @@
 ---
 id: SummaryDescriptor
 type: Object
-module: data/index
+module: common/data
 export: SummaryDescriptor
 ---
 ---

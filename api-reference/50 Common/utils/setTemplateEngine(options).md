@@ -1,7 +1,7 @@
 ---
 id: setTemplateEngine(options)
-module: core/set_template_engine
-export: default
+module: common
+export: setTemplateEngine
 ---
 ---
 ##### shortDescription

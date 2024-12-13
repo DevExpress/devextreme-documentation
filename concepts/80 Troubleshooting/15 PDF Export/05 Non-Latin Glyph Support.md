@@ -32,7 +32,7 @@ Import the variable to use it in your DevExtreme project:
 
 #### Gantt
 
-If you use the *exportGantt* method, you can take advantage of the dedicated [font](/api-reference/50%20Common/Object%20Structures/PdfExportGanttProps/font.md '/Documentation/ApiReference/Common/Object_Structures/PdfExportGanttProps/font/') parameter:
+If you use the *exportGantt* method, you can take advantage of the dedicated [font](/api-reference/50%20Common/Object%20Structures/GanttExportOptions/font.md '/Documentation/ApiReference/Common/Object_Structures/GanttExportOptions/font/') parameter:
 
 <!---JavaScript--->
     import myfont from './myFont';

@@ -1,7 +1,7 @@
 ---
 id: Guid
-module: core/guid
-export: default
+module: common
+export: Guid
 ---
 ---
 ##### shortDescription

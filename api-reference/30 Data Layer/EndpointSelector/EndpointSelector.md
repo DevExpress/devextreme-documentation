@@ -1,7 +1,7 @@
 ---
 id: EndpointSelector
-module: data/endpoint_selector
-export: default
+module: common/data
+export: EndpointSelector
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
 ---
 id: LangParams
-module: data/index
+module: common/data
 export: LangParams
 type: Object
 generateTypeLink: 

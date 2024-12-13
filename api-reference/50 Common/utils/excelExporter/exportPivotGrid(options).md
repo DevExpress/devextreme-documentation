@@ -1,6 +1,6 @@
 ---
 id: excelExporter.exportPivotGrid(options)
-module: excel_exporter
+module: common/export/excel
 export: exportPivotGrid
 ---
 ---
@@ -10,7 +10,7 @@ Exports pivot grid data to Excel.
 ##### return: Promise<CellRange>
 <!-- %return% -->
 
-##### param(options): ExcelExportPivotGridProps
+##### param(options): PivotGridExport_Options
 <!-- %param(options)% -->
 
 ---

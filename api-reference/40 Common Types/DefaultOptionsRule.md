@@ -1,6 +1,6 @@
 ---
 id: Default.OptionsRule
-module: core/options
+module: common
 export: DefaultOptionsRule
 type: Object
 ---

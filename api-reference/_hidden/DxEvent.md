@@ -1,7 +1,7 @@
 ---
 id: DxEvent
 type: EventObject | jQuery.Event
-module: events/index
+module: events/events.types
 export: DxEvent
 ---
 ---

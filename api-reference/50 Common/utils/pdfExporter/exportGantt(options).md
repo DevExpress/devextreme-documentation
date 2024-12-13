@@ -1,6 +1,6 @@
 ---
 id: pdfExporter.exportGantt(options)
-module: pdf_exporter
+module: common/export/pdf
 export: exportGantt
 ---
 ---
@@ -11,7 +11,7 @@ Exports Gantt data to a PDF file.
 A Promise that resolves when the Gantt data is ready for export.
 #include ref-promisedistinction
 
-##### param(options): PdfExportGanttProps
+##### param(options): GanttExport_Options
 Export settings.
 
 ---

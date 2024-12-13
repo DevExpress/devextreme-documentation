@@ -2,7 +2,7 @@
 id: Enums.SearchOperation
 acceptValues: '=' | '<>' | '>' | '>=' | '<' | '<=' | 'startswith' | 'endswith' | 'contains' | 'notcontains'
 type: Union
-references: DataSource.Options.searchOperation|LoadOptions.searchOperation
+references: LoadOptions.searchOperation
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
 ---
 id: localization.formatDate(value, format)
-module: localization
+module: common/core/localization
 export: formatDate
 ---
 ---

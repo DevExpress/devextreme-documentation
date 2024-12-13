@@ -1,7 +1,7 @@
 ---
 id: AnimationConfig
 type: Object | Number | String
-module: animation/fx
+module: common/core/animation
 export: AnimationConfig
 ---
 ---

@@ -1,8 +1,8 @@
 ---
 id: ArrayStore
-module: data/array_store
-export: default
-inherits: Store
+module: common/data
+export: ArrayStore
+inheritsType: Store
 ---
 ---
 ##### shortDescription

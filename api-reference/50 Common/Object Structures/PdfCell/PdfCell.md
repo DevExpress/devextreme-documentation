@@ -1,7 +1,8 @@
 ---
 id: PdfCell
-module: pdf_exporter
+module: common/export/pdf
 export: Cell
+type: Object
 ---
 ---
 ##### shortDescription

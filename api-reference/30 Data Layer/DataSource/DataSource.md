@@ -1,7 +1,7 @@
 ---
 id: DataSource
-module: data/data_source
-export: default
+module: common/data
+export: DataSource
 ---
 ---
 ##### shortDescription

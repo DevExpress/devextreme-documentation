@@ -39,9 +39,16 @@ The instance of the row's target UI component.
 Custom [data](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/rowDragging/data.md '{basewidgetpath}/Configuration/rowDragging/#data') associated with the target UI component.
 
 ##### field(e.toIndex): Number
-The position in which the row is placed. If the row is dragged away from the UI component, the value is **-1**.
+The position in which the row is placed. If the row is dragged away from the UI component, the value is **-1**. If [virtual scrolling]({basewidgetpath}/Configuration/scrolling/#mode) is enabled, the **toIndex** parameter starts from the top visible row.
 
 ---
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/DnDBetweenGrids/"
 }
+
+Use a row key to identify the target row. Call the [getKeyByRowIndex]({basewidgetpath}/Methods/#getKeyByRowIndexrowIndex) method to obtain the key:
+
+    const onAdd = (e) => {
+        console.log(e.toComponent.getKeyByRowIndex(e.toIndex - 1));
+        // ...
+    }

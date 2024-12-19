@@ -1,3 +1,11 @@
+[important]
+
+The Globalize package is outdated and potentially insecure. Reports from the Snyk security checker highlight vulnerabilities associated with this package.
+
+Use Globalize at your own risk. In v25.1, we will remove Globalize from our installation, templates, and demos. We recommend switching to Intl for a more secure solution.
+
+[/important]
+
 If you want to use <a href="https://github.com/globalizejs/globalize#globalize" target="_blank">Globalize</a> for localization, install it and the `devextreme-cldr-data` extension:
 
     npm install --save-dev devextreme-cldr-data globalize

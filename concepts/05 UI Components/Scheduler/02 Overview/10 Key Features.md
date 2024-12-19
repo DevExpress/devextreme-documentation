@@ -8,9 +8,9 @@ DevExtreme Scheduler supports the following operations with appointments:
 
 - **Types of appointments**    
 Scheduler allows you to create the following appointment types:
-    - [One-time](/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Types/#One-Time_Appointments)
-    - [All-day](/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Types/#All-Day_Appointments)
-    - [Recurring](/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Types/#Recurring_Appointments)
+    - [One-time](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/015%20Appointment%20Types/010%20One-Time%20Appointments.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Types/#One-Time_Appointments')
+    - [All-day](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/015%20Appointment%20Types/020%20All-Day%20Appointments.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Types/#All-Day_Appointments')
+    - [Recurring](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/015%20Appointment%20Types/030%20Recurring%20Appointments.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Types/#Recurring_Appointments')
 
 - **Variety of views**     
 The Scheduler component includes multiple view types:
@@ -21,7 +21,7 @@ The Scheduler component includes multiple view types:
     - [Agenda](/concepts/05%20UI%20Components/Scheduler/060%20Views/010%20View%20Types/050%20Agenda%20View.md '/Documentation/Guide/UI_Components/Scheduler/Views/View_Types/#Agenda_View')
 
 - **Resources**    
-Scheduler allows you to assign appointments to a set of [predefined resources](/Documentation/Guide/UI_Components/Scheduler/Resources/Assign_Appointments_to_Resources/). Multiple resources may be available. You can also [group appointments by resources](/Documentation/Guide/UI_Components/Scheduler/Resources/Group_Appointments_by_Resources/).
+Scheduler allows you to assign appointments to a set of [predefined resources](/concepts/05%20UI%20Components/Scheduler/040%20Resources/020%20Assign%20Appointments%20to%20Resources '/Documentation/Guide/UI_Components/Scheduler/Resources/Assign_Appointments_to_Resources/'). Multiple resources may be available. You can also [group appointments by resources](/concepts/05%20UI%20Components/Scheduler/040%20Resources/030%20Group%20Appointments%20by%20Resources.md '/Documentation/Guide/UI_Components/Scheduler/Resources/Group_Appointments_by_Resources/').
 
 - **Customization**    
 You can customize a variety of Scheduler elements:
@@ -31,7 +31,7 @@ You can customize a variety of Scheduler elements:
     - [View](/concepts/05%20UI%20Components/Scheduler/060%20Views/020%20Customize%20Individual%20Views.md '/Documentation/Guide/UI_Components/Scheduler/Views/Customize_Individual_Views/')
     - [Resource headers](/concepts/05%20UI%20Components/Scheduler/040%20Resources/040%20Customize%20Resource%20Headers.md '/Documentation/Guide/UI_Components/Scheduler/Resources/Customize_Resource_Headers/')
     - [Cell overflow indicator](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/080%20Cell%20Overflow%20Indicator.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Cell_Overflow_Indicator/')
-    - [Timetable](/Documentation/Guide/UI_Components/Scheduler/Timetable/)
+    - [Timetable](/concepts/05%20UI%20Components/Scheduler/050%20Timetable.md '/Documentation/Guide/UI_Components/Scheduler/Timetable/')
     - etc.
 
 - **Time zone support**    

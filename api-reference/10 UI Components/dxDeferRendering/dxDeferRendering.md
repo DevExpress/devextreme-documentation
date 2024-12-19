@@ -12,6 +12,27 @@ The DeferRendering is a UI component that waits for its content to be ready befo
 dx.web.js, dx.all.js
 
 ---
+[important]
+
+This component is **deprecated**. To defer rendering in other components, enable the corresponding [deferRendering](/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#deferRendering) properties. You can also create a [loading indicator](/Documentation/Guide/UI_Components/LoadIndicator/Overview/) and display it based on your logic.
+
+---
+##### Angular
+
+To learn how to defer loading in {Framework}, refer to the following help topic: [Deferred loading with @defer](https://angular.dev/guide/templates/defer).
+
+##### Vue
+
+To learn how to defer loading in {Framework}, refer to the following help topic: [Suspense](https://vuejs.org/guide/built-ins/suspense).
+
+##### React
+
+To learn how to defer loading in {Framework}, refer to the following help topics: [Suspense](https://react.dev/reference/react/Suspense) and [useDeferredValue](https://react.dev/reference/react/useDeferredValue).
+
+---
+
+[/important]
+
 #####See Also#####
 #include common-link-setupdevextreme
 #include common-link-configurewidget

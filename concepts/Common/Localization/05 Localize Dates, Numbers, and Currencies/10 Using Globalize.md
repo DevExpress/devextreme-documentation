@@ -1,3 +1,11 @@
+[important]
+
+Please be aware that the Globalize package may be insecure. It has not been updated for an extended period, and we have received reports from the Snyk security checker regarding vulnerabilities associated with this package.
+
+You may choose to use it at your own risk. However, we will be removing Globalize from our installation, templates, and demos in version 25.1. For a more secure solution, we recommend switching to Intl.
+
+[/important]
+
 ---
 ##### React
 [important] React projects created with the [Create React App](https://facebook.github.io/create-react-app) <a href="https://github.com/facebook/create-react-app/issues/4508" target="_blank">do not support Globalize</a>. [DevExtreme React Template](/concepts/50%20React%20Components/50%20Application%20Template/00%20Application%20Template.md '/Documentation/Guide/React_Components/Application_Template/') is one of such projects. [Use Intl](/concepts/Common/Localization/05%20Localize%20Dates%2C%20Numbers%2C%20and%20Currencies/05%20Using%20Intl.md '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/Using_Intl') in these projects instead.

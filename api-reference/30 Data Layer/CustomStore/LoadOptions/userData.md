@@ -18,7 +18,7 @@ An object for storing additional settings that should be sent to the server.
             load: function (loadOptions) {
                 let value = loadOptions.userData?.someValue;
                 if(!value) {
-                    value = 5;
+                    loadOptions.userData?.someValue = 5;
                     alert("Initial value is set");
                 } 
                 else {
@@ -48,7 +48,7 @@ An object for storing additional settings that should be sent to the server.
                 load: (loadOptions) => {
                     let value = loadOptions.userData?.someValue;
                     if(!value) {
-                        value = 5;
+                        loadOptions.userData?.someValue = 5;
                         alert("Initial value is set");
                     } 
                     else {
@@ -75,7 +75,7 @@ An object for storing additional settings that should be sent to the server.
         load: (loadOptions) => {
             let value = loadOptions.userData?.someValue;
             if(!value) {
-                value = 5;
+                loadOptions.userData?.someValue = 5;
                 alert("Initial value is set");
             } 
             else {
@@ -107,7 +107,7 @@ An object for storing additional settings that should be sent to the server.
         load: (loadOptions) => {
             let value = loadOptions.userData?.someValue;
             if(!value) {
-                value = 5;
+                loadOptions.userData?.someValue = 5;
                 alert("Initial value is set");
             } 
             else {

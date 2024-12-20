@@ -226,6 +226,15 @@ If you need a more specific customization, define a custom template in the **col
     
 ---
 
+DataGrid column headers are attached to columns. To keep headers fixed/sticky during page scrolling, adjust the DataGrid's stylesheet. Add the following attributes to the `.dx-datagrid-headers` CSS class:
+
+    <!--CSS-->
+    .dx-datagrid .dx-datagrid-headers{  
+        position: sticky;  
+        top: 0;  
+        z-index: 1000;  
+    }  
+
 To hide column headers, assign **false** to the [showColumnHeaders](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/showColumnHeaders.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#showColumnHeaders') property.
 
 ---

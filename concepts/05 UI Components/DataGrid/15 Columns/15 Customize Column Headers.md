@@ -226,7 +226,7 @@ If you need a more specific customization, define a custom template in the **col
     
 ---
 
-DataGrid column headers are attached to columns. To keep headers fixed/sticky during page scrolling, adjust the DataGrid's stylesheet. Add the following attributes to the `.dx-datagrid-headers` CSS class:
+DataGrid column headers are attached to columns. To make headers fixed/sticky during page scrolling, adjust the DataGrid's stylesheet. Add the following attributes to the `.dx-datagrid-headers` CSS class:
 
     <!--CSS-->
     .dx-datagrid .dx-datagrid-headers{  

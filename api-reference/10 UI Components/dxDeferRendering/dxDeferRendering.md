@@ -19,15 +19,15 @@ This component is **deprecated**. To defer rendering in other components, enable
 ---
 ##### Angular
 
-To learn how to defer loading in {Framework}, refer to the following help topic: [Deferred loading with @defer](https://angular.dev/guide/templates/defer).
+For details on how to defer loading in {Framework}, refer to the following help topic: [Deferred loading with @defer](https://angular.dev/guide/templates/defer).
 
 ##### Vue
 
-To learn how to defer loading in {Framework}, refer to the following help topic: [Suspense](https://vuejs.org/guide/built-ins/suspense).
+For details on how to defer loading in {Framework}, refer to the following help topic: [Suspense](https://vuejs.org/guide/built-ins/suspense).
 
 ##### React
 
-To learn how to defer loading in {Framework}, refer to the following help topics: [Suspense](https://react.dev/reference/react/Suspense) and [useDeferredValue](https://react.dev/reference/react/useDeferredValue).
+For details on how to defer loading in {Framework}, refer to the following help topics: [Suspense](https://react.dev/reference/react/Suspense) and [useDeferredValue](https://react.dev/reference/react/useDeferredValue).
 
 ---
 

@@ -1,7 +1,13 @@
 The Diagram allows you to bind a number of shape and connector visual properties, like type, size, and style. 
 
-[note] If a binding property is undefined, the corresponding shape or connector property value is maintained inside the loaded Diagram UI component and is lost after a page is reloaded.
-       
+[note]
+
+- If a binding property is undefined, the corresponding shape or connector property value is maintained inside the loaded Diagram UI component and is lost after a page is reloaded.
+
+- Diagram [nodes](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/) and shapes ([default](/Documentation/Guide/UI_Components/Diagram/Shape_Types/) and [custom](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/)) are linked. Initially, you can set all shape properties with [defaultItemProperties](/ApiReference/UI_Components/dxDiagram/Configuration/defaultItemProperties/) or within a [customShapes](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/) array. When a shape is placed on a canvas, these properties merge with the **nodes** default settings or callbacks that end with **Expr** (for instance, [typeExpr](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#typeExpr)). Use these callbacks to override the default shape settings.
+
+[/note]
+
 ![Diagram - Data Binding Options](/images/diagram/binding-options.png)
 
 <table class="dx-table">

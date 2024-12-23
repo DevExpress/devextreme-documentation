@@ -14,7 +14,7 @@ dx.web.js, dx.all.js
 ---
 [important]
 
-This component is **deprecated**. To defer rendering in other components, enable the corresponding [deferRendering](/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#deferRendering) properties. You can also create a [loading indicator](/Documentation/Guide/UI_Components/LoadIndicator/Overview/) and display it based on your logic.
+This component is **deprecated**. To defer rendering in other components, enable the corresponding [deferRendering](/api-reference/10%20UI%20Components/dxAccordion/1%20Configuration/deferRendering.md '/Documentation/ApiReference/UI_Components/dxAccordion/Configuration/#deferRendering') properties. You can also create a [loading indicator](/concepts/05%20UI%20Components/LoadIndicator/00%20Overview.md '/Documentation/Guide/UI_Components/LoadIndicator/Overview/') and display it based on your logic.
 
 ---
 ##### Angular

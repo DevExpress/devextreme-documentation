@@ -20,7 +20,7 @@ During the binding process, the UI component creates a shape for every bound nod
         $("#diagram").dxDiagram({
             nodes: {
                 dataSource: new DevExpress.data.ArrayStore({
-                    key: "this",
+                    key: "id",
                     data: orgItems
                 }),
                 keyExpr: "id",
@@ -28,7 +28,7 @@ During the binding process, the UI component creates a shape for every bound nod
             },
             edges: {
                 dataSource: new DevExpress.data.ArrayStore({
-                    key: "this",
+                    key: "id",
                     data: orgLinks
                 }),
                 keyExpr: "id",
@@ -39,7 +39,7 @@ During the binding process, the UI component creates a shape for every bound nod
     });
         
     <!-- tab: data.js -->
-    var orgItems = [{  
+    const orgItems = [{  
         "id":"101",
         "text":"Development",
     },{  
@@ -50,7 +50,7 @@ During the binding process, the UI component creates a shape for every bound nod
         "text":"ASP.NET\nTeam",
     }];
 
-    var orgLinks = [{  
+    const orgLinks = [{  
         "id":"121",
         "from":"101",
         "to":"102",
@@ -243,7 +243,7 @@ During the binding process, the UI component creates a shape for every bound nod
 ##### React
 
     <!-- tab: App.js -->
-    import React, { useState, useEffect } from "react";
+    import React from "react";
     import Diagram, { Nodes, Edges } from "devextreme-react/diagram";
     import ArrayStore from "devextreme/data/array_store";
     import service from "./data.js";

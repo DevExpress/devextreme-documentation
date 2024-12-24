@@ -1,8 +1,8 @@
-The Diagram allows you to bind a number of shape and connector visual properties, like type, size, and style. 
+The Diagram allows you to bind a number of shape and connector visual properties, like type, size, and style.
 
-[note] If a binding property is undefined, the corresponding shape or connector property value is maintained inside the loaded Diagram UI component and is lost after a page is reloaded.
-       
 ![Diagram - Data Binding Options](/images/diagram/binding-options.png)
+
+The following node properties are available:
 
 <table class="dx-table">
     <tr>
@@ -81,7 +81,7 @@ The Diagram allows you to bind a number of shape and connector visual properties
     </tr>
 </table>
 
-[note] If you bind a Diagram to a [linear](/concepts/05%20UI%20Components/Diagram/10%20Data%20Binding/20%20Linear%20Array.md '/Documentation/Guide/UI_Components/Diagram/Data_Binding/#Linear_Array') or [hierarchical array](/concepts/05%20UI%20Components/Diagram/10%20Data%20Binding/30%20Hierarchical%20Array.md '/Documentation/Guide/UI_Components/Diagram/Data_Binding/#Hierarchical_Array'), edge binding properties are not in effect, because connectors are not bound to specific edges. This is why the storage of connector styles in a data source is not supported.
+The following node properties are available:
 
 <table class="dx-table">
     <tr>
@@ -159,6 +159,16 @@ The Diagram allows you to bind a number of shape and connector visual properties
         <td>0</td>
     </tr>
 </table>
+
+[note]
+
+- If a binding property is undefined, the corresponding shape or connector property value is maintained inside the loaded Diagram UI component and is lost after a page is reloaded.
+
+- Diagram [nodes](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/) and shapes ([default](/Documentation/Guide/UI_Components/Diagram/Shape_Types/) and [custom](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/)) are linked. Initially, you can set all shape properties with [defaultItemProperties](/ApiReference/UI_Components/dxDiagram/Configuration/defaultItemProperties/) or within a [customShapes](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/customShapes/) array. When a shape is placed on a canvas, these properties merge with the **nodes'** default settings or callbacks that end with **Expr** (for instance, [typeExpr](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/nodes/#typeExpr)). Use these callbacks to override the default shape settings.
+
+- If you bind a Diagram to a [linear](/concepts/05%20UI%20Components/Diagram/10%20Data%20Binding/20%20Linear%20Array.md '/Documentation/Guide/UI_Components/Diagram/Data_Binding/#Linear_Array') or [hierarchical array](/concepts/05%20UI%20Components/Diagram/10%20Data%20Binding/30%20Hierarchical%20Array.md '/Documentation/Guide/UI_Components/Diagram/Data_Binding/#Hierarchical_Array'), edge binding properties are not in effect, because connectors are not bound to specific edges. This is why the storage of connector styles in a data source is not supported.
+
+[/note]
 
 You can set a binding property to the name of a data source field that supplies item values, or to an expression that returns a constant value or calculates a value in runtime based on conditions.
 

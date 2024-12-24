@@ -20,7 +20,7 @@ During the binding process, the UI component creates a shape for every bound nod
         $("#diagram").dxDiagram({
             nodes: {
                 dataSource: new DevExpress.data.ArrayStore({
-                    key: "this",
+                    key: "ID",
                     data: employees
                 }),
                 keyExpr: "ID",
@@ -186,12 +186,12 @@ During the binding process, the UI component creates a shape for every bound nod
 
     export default {
         components: {
-            DxDiagram, DxNodes, DxEdges
+            DxDiagram, DxNodes
         },
         data() {
             return {
                 dataSource: new ArrayStore({
-                    key: 'id',
+                    key: 'ID',
                     data: service.getEmployees(),
                 })
             };

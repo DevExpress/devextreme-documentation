@@ -184,7 +184,7 @@ If your diagram includes container shapes, define the [containerKeyExpr](/api-re
         $("#diagram").dxDiagram({
             nodes: {
                 dataSource: new DevExpress.data.ArrayStore({
-                    key: "this",
+                    key: "key",
                     data: orgItems
                 }),
                 autoLayout: {
@@ -206,7 +206,7 @@ If your diagram includes container shapes, define the [containerKeyExpr](/api-re
             },
             edges: {
                 dataSource: new DevExpress.data.ArrayStore({
-                    key: "this",
+                    key: "key",
                     data: orgLinks
                 }),
                 fromExpr: "from",
@@ -227,7 +227,7 @@ If your diagram includes container shapes, define the [containerKeyExpr](/api-re
     });
 
     <!-- tab: data.js -->
-    var orgItems = [
+    const orgItems = [
         {  
             height: 0.625,
             key: "101",
@@ -272,7 +272,7 @@ If your diagram includes container shapes, define the [containerKeyExpr](/api-re
             containerKey: "102",
         }
     ];
-    var orgLinks = [  
+    const orgLinks = [  
         {  
             from: "101",
             fromPointIndex: 1,
@@ -285,5 +285,500 @@ If your diagram includes container shapes, define the [containerKeyExpr](/api-re
             toPointIndex: 11,
         },
     ];
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-diagram>
+        <dxo-nodes
+            [dataSource]="orgItemsDataSource"
+            keyExpr="key"
+            textExpr="text"
+            leftExpr="left"
+            topExpr="top"
+            containerKeyExpr="containerKey"
+            heightExpr="height"
+            imageUrlExpr="imageUrl"
+            lockedExpr="locked"
+            textStyleExpr="textStyle"
+            typeExpr="type"
+            widthExpr="width"
+            zIndexExpr="zIndex"
+            [styleExpr]="itemStyleExpr"
+        >
+            <dxo-auto-layout type="off"></dxo-auto-layout>
+        </dxo-nodes>
+        <dxo-edges
+            [dataSource]="orgLinksDataSource"
+            keyExpr="key"
+            fromExpr="from"
+            toExpr="to"
+            fromPointIndexExpr="fromPointIndex"
+            toPointIndexExpr="toPointIndex"
+            pointsExpr="points"
+            [fromLineEndExpr]="linkFromLineEndExpr"
+            [lineTypeExpr]="linkLineTypeExpr"
+            lockedExpr="locked"
+            [styleExpr]="linkStyleExpr"
+            textExpr="text"
+            textStyleExpr="textStyle"
+            toLineEndExpr="linkToLineEndExpr"
+        ></dxo-edges>
+    </dx-diagram>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import ArrayStore from "devextreme/data/array_store";
+    import { Service } from "./app.service";
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css'],
+        providers: [Service]
+    })
+    
+    export class AppComponent {
+        orgItemsDataSource: ArrayStore;
+
+        orgLinksDataSource: ArrayStore;
+
+        constructor(service: Service) {
+            this.orgItemsDataSource = new ArrayStore({
+                key: 'key',
+                data: service.getOrgItems(),
+            });
+            this.orgLinksDataSource = new ArrayStore({
+                key: 'key',
+                data: service.getOrgLinks(),
+            });
+        }
+
+        itemStyleExpr(obj) {
+            if (obj.type && obj.type.includes("Container")) {
+                return { stroke: "red" };
+            }
+            return null;
+        }
+
+        linkFromLineEndExpr(obj) {
+            return 'none';
+        }
+
+        linkLineTypeExpr(obj) {
+            return 'straight';
+        }
+
+        linkStyleExpr(obj) {
+            return { "stroke-dasharray": "4" };
+        }
+
+        linkToLineEndExpr(obj) {
+            return 'arrow';
+        }
+    }
+
+    <!-- tab: app.service.ts -->
+    import { Injectable } from '@angular/core';
+
+    private class Point {
+        x: number;
+        y: number;
+    }
+
+    export class OrgItem {
+        height: number,
+        key: string;
+        left: number;
+        locked: boolean;
+        text: string;
+        textStyle: Object;
+        top: number;
+        type: string;
+        width: number;
+        zIndex: number;
+    }
+
+    export class OrgLink {
+        key: string;
+        from: string;
+        to: string;
+        fromPointIndex: number;
+        toPointIndex: number;
+        points: Point[];
+        locked: boolean;
+        textStyle: Object;
+    }
+
+    const orgItems: OrgItem[] = [
+        {  
+            height: 0.625,
+            key: "101",
+            left: 0.5,
+            locked: true,
+            text: "Product Manager",
+            textStyle: { "font-weight": "bold", "text-decoration": "underline" },
+            top: 0.875,
+            type: "rectangle",
+            width: 1,
+            zIndex: 2,
+        },
+        {  
+            height: 1.375,
+            key: "102",
+            left: 2.5,
+            locked: false,
+            text: "Team",
+            textStyle: { "font-weight": "bold", "text-decoration": "underline" },
+            top: 0.5,
+            type: "horizontalContainer",
+            width: 2,
+            zIndex: 1,
+        },{
+            height: 0.5,
+            imageUrl: "images/employees/30.png",
+            key: "103",
+            left: 2.875,
+            text: "Team Leader",
+            top: 0.625,
+            type: "cardWithImageOnLeft",
+            width: 1.5,
+            containerKey: "102",
+        },{
+            height: 0.5,
+            key: "104",
+            left: 2.875,
+            text: "Developers",
+            top: 1.25,
+            type: "rectangle",
+            width: 1.5,
+            containerKey: "102",
+        }
+    ];
+    const orgLinks: OrgLink[] = [  
+        {  
+            from: "101",
+            fromPointIndex: 1,
+            key: "1",
+            locked: false,
+            points: [{x:1.5,y:1.125},{x:1.75,y:0.875},{x:2.5,y:0.875}],
+            text: "Task",
+            textStyle: { "font-weight": "bold"},
+            to: "102",
+            toPointIndex: 11,
+        },
+    ];
+
+    @Injectable()
+    export class Service {
+        getOrgItems() {
+            return orgItems;
+        }
+        getOrgLinks() {
+            return orgLinks;
+        }
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDiagram>
+            <DxNodes
+                :data-source="orgItemsDataSource"
+                :key-expr="'key'"
+                :text-expr="'text'"
+                :left-expr="'left'"
+                :top-expr="'top'"
+                :container-key-expr="'containerKey'"
+                :height-expr="'height'"
+                :image-url-expr="'imageUrl'"
+                :locked-expr="'locked'"
+                :text-style-expr="'textStyle'"
+                :type-expr="'type'"
+                :width-expr="'width'"
+                :z-index-expr="'zIndex'"
+                :style-expr="itemStyleExpr"
+            >
+                <DxAutoLayout :type="'off'" />
+            </DxNodes>
+            <DxEdges
+                :data-source="orgLinksDataSource"
+                :key-expr="'key'"
+                :from-expr="'from'"
+                :to-expr="'to'"
+                :from-point-index-expr="'fromPointIndex'"
+                :toPointIndexExpr="'toPointIndex'"
+                :points-expr="'points'"
+                :from-line-end-expr="linkFromLineEndExpr"
+                :line-type-expr="linkLineTypeExpr"
+                :locked-expr="'locked'"
+                :style-expr="linkStyleExpr"
+                :text-expr="'text'"
+                :text-style-expr="'textStyle'"
+                :to-line-end-expr="linkToLineEndExpr"
+            />
+        </DxDiagram>
+    </template>
+    <script setup>
+    import {
+        DxDiagram, DxNodes, DxAutoLayout, DxEdges,
+    } from 'devextreme-vue/diagram';
+    import ArrayStore from 'devextreme/data/array_store';
+    import service from './data.js';
+
+    const orgItemsDataSource = new ArrayStore({
+        key: 'key',
+        data: service.getOrgItems(),
+    });
+    const orgLinksDataSource = new ArrayStore({
+        key: 'key',
+        data: service.getOrgLinks(),
+    });
+
+    const itemStyleExpr = (obj) => {
+        if (obj.type && obj.type.includes("Container")) {
+            return { stroke: "red" };
+        }
+        return null;
+    };
+
+    const linkFromLineEndExpr = (obj) => {
+        return 'none';
+    };
+
+    const linkLineTypeExpr = (obj) => {
+        return 'straight';
+    };
+
+    const linkStyleExpr = (obj) => {
+        return { "stroke-dasharray": "4" };
+    };
+
+    const linkToLineEndExpr = (obj) => {
+        return 'arrow';
+    };
+    </script>
+    
+    <!-- tab: data.js -->
+    const orgItems = [
+        {  
+            height: 0.625,
+            key: "101",
+            left: 0.5,
+            locked: true,
+            text: "Product Manager",
+            textStyle: { "font-weight": "bold", "text-decoration": "underline" },
+            top: 0.875,
+            type: "rectangle",
+            width: 1,
+            zIndex: 2,
+        },
+        {  
+            height: 1.375,
+            key: "102",
+            left: 2.5,
+            locked: false,
+            text: "Team",
+            textStyle: { "font-weight": "bold", "text-decoration": "underline" },
+            top: 0.5,
+            type: "horizontalContainer",
+            width: 2,
+            zIndex: 1,
+        },{
+            height: 0.5,
+            imageUrl: "images/employees/30.png",
+            key: "103",
+            left: 2.875,
+            text: "Team Leader",
+            top: 0.625,
+            type: "cardWithImageOnLeft",
+            width: 1.5,
+            containerKey: "102",
+        },{
+            height: 0.5,
+            key: "104",
+            left: 2.875,
+            text: "Developers",
+            top: 1.25,
+            type: "rectangle",
+            width: 1.5,
+            containerKey: "102",
+        }
+    ];
+    const orgLinks = [  
+        {  
+            from: "101",
+            fromPointIndex: 1,
+            key: "1",
+            locked: false,
+            points: [{x:1.5,y:1.125},{x:1.75,y:0.875},{x:2.5,y:0.875}],
+            text: "Task",
+            textStyle: { "font-weight": "bold"},
+            to: "102",
+            toPointIndex: 11,
+        },
+    ];
+
+    export default {
+        getOrgItems() {
+            return orgItems;
+        }
+        getOrgLinks() {
+            return orgLinks;
+        }
+    }
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import Diagram, {
+        Nodes, AutoLayout, Edges, Toolbox, Group,
+    } from 'devextreme-react/diagram';
+    import ArrayStore from 'devextreme/data/array_store';
+    import service from './data.js';
+
+    const orgItemsDataSource = new ArrayStore({
+        key: 'key',
+        data: service.getOrgItems(),
+    });
+    const orgLinksDataSource = new ArrayStore({
+        key: 'key',
+        data: service.getOrgLinks(),
+    });
+
+    const itemStyleExpr = (obj) => {
+        if (obj.type && obj.type.includes("Container")) {
+            return { stroke: "red" };
+        }
+        return null;
+    };
+
+    const linkFromLineEndExpr = (obj) => {
+        return 'none';
+    };
+
+    const linkLineTypeExpr = (obj) => {
+        return 'straight';
+    };
+
+    const linkStyleExpr = (obj) => {
+        return { "stroke-dasharray": "4" };
+    };
+
+    const linkToLineEndExpr = (obj) => {
+        return 'arrow';
+    };
+
+    export default function App() {
+        return (
+            <Diagram units="in">
+                <Nodes
+                    dataSource={orgItemsDataSource}
+                    keyExpr="key"
+                    textExpr="text"
+                    leftExpr="left"
+                    topExpr="top"
+                    containerKeyExpr="containerKey"
+                    heightExpr="height"
+                    imageUrlExpr="imageUrl"
+                    lockedExpr="locked"
+                    textStyleExpr="textStyle"
+                    typeExpr="type"
+                    widthExpr="width"
+                    zIndexExpr="zIndex"
+                    styleExpr={itemStyleExpr}
+                >
+                    <AutoLayout type="off" />
+                </Nodes>
+                <Edges
+                    dataSource={orgLinksDataSource}
+                    keyExpr="key"
+                    fromExpr="from"
+                    toExpr="to"
+                    fromPointIndexExpr="fromPointIndex"
+                    toPointIndexExpr="toPointIndex"
+                    pointsExpr="points"
+                    fromLineEndExpr={linkFromLineEndExpr}
+                    lineTypeExpr={linkLineTypeExpr}
+                    lockedExpr="locked"
+                    styleExpr={linkStyleExpr}
+                    textExpr="text"
+                    textStyleExpr="textStyle"
+                    toLineEndExpr={linkToLineEndExpr}
+                />
+            </Diagram>
+        );
+    }
+
+    <!-- tab: data.js -->
+    const orgItems = [
+        {  
+            height: 0.625,
+            key: "101",
+            left: 0.5,
+            locked: true,
+            text: "Product Manager",
+            textStyle: { "font-weight": "bold", "text-decoration": "underline" },
+            top: 0.875,
+            type: "rectangle",
+            width: 1,
+            zIndex: 2,
+        },
+        {  
+            height: 1.375,
+            key: "102",
+            left: 2.5,
+            locked: false,
+            text: "Team",
+            textStyle: { "font-weight": "bold", "text-decoration": "underline" },
+            top: 0.5,
+            type: "horizontalContainer",
+            width: 2,
+            zIndex: 1,
+        },{
+            height: 0.5,
+            imageUrl: "images/employees/30.png",
+            key: "103",
+            left: 2.875,
+            text: "Team Leader",
+            top: 0.625,
+            type: "cardWithImageOnLeft",
+            width: 1.5,
+            containerKey: "102",
+        },{
+            height: 0.5,
+            key: "104",
+            left: 2.875,
+            text: "Developers",
+            top: 1.25,
+            type: "rectangle",
+            width: 1.5,
+            containerKey: "102",
+        }
+    ];
+    const orgLinks = [  
+        {  
+            from: "101",
+            fromPointIndex: 1,
+            key: "1",
+            locked: false,
+            points: [{x:1.5,y:1.125},{x:1.75,y:0.875},{x:2.5,y:0.875}],
+            text: "Task",
+            textStyle: { "font-weight": "bold"},
+            to: "102",
+            toPointIndex: 11,
+        },
+    ];
+
+    export default {
+        getOrgItems() {
+            return orgItems;
+        }
+        getOrgLinks() {
+            return orgLinks;
+        }
+    }
 
 ---

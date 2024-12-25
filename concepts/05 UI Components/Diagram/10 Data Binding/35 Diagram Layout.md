@@ -264,7 +264,7 @@ If the [autoLayout.type](/api-reference/10%20UI%20Components/dxDiagram/1%20Confi
             <DxNodes
                 :data-source="orgItemsDataSource"
                 :key-expr="'key'"
-                :text-expr="'tame'"
+                :text-expr="'text'"
                 :left-expr="'left'"
                 :top-expr="'top'"
             >

@@ -18,7 +18,7 @@ The Web Dashboard is available as a part of a Universal subscription.
 
 This tutorial shows how to add a PieChart to the page and configure the component's core settings. As a result, you will create the following UI component:
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/24_2/GettingStartedWith/PieChart/index.html, /Content/Applications/24_2/GettingStartedWith/PieChart/index.js, /Content/Applications/24_2/GettingStartedWith/PieChart/index.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/25_1/GettingStartedWith/PieChart/index.html, /Content/Applications/25_1/GettingStartedWith/PieChart/index.js, /Content/Applications/25_1/GettingStartedWith/PieChart/index.css"></div>
 
 Each section in this tutorial describes a single configuration step. You can also find the full source code in the GitHub repository.
 

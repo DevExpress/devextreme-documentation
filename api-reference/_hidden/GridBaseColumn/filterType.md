@@ -23,11 +23,11 @@ This property changes when the user clicks the **Select All** checkbox in the [h
         <th>filterType / filterValues</th>
     </tr>
     <tr>
-        <td><img src="Content/images/doc/24_2/DataGrid/dg-selectall-unchecked.png"></td>
+        <td><img src="Content/images/doc/25_1/DataGrid/dg-selectall-unchecked.png"></td>
         <td><code>filterType: "include"</code><br><code>filterValues: null</code></td>
     </tr>
     <tr>
-        <td><img src="Content/images/doc/24_2/DataGrid/dg-selectall-checked.png"></td>
+        <td><img src="Content/images/doc/25_1/DataGrid/dg-selectall-checked.png"></td>
         <td><code>filterType: "exclude"</code><br><code>filterValues: null</code></td>
     </tr>
 </table>

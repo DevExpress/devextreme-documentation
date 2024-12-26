@@ -1,6 +1,6 @@
 Bar series visualize data as a collection of bars. Those bars can be displayed side by side, as in the **Bar** series type, or can be put in stacks, as in the **Stacked Bar** and **Full-Stacked Bar** series types.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/24_2/DataVisualization/Guides/ChartSeriesTypes/bar.html, /Content/Applications/24_2/DataVisualization/Guides/ChartSeriesTypes/bar.js"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/25_1/DataVisualization/Guides/ChartSeriesTypes/bar.html, /Content/Applications/25_1/DataVisualization/Guides/ChartSeriesTypes/bar.js"></div>
 
 To specify one or another series type, assign its name to the **series[]**.[type](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#type') property. You can configure:
 

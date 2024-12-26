@@ -92,7 +92,7 @@ The legend can be moved inside the chart using the [position](/api-reference/10%
 
 Below, you can try out these properties in action.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/24_2/DataVisualization/Guides/Legend/relocateTheLegend.html, /Content/Applications/24_2/DataVisualization/Guides/Legend/relocateTheLegend.js, /Content/Applications/24_2/DataVisualization/Guides/Legend/relocateTheLegend.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/25_1/DataVisualization/Guides/Legend/relocateTheLegend.html, /Content/Applications/25_1/DataVisualization/Guides/Legend/relocateTheLegend.js, /Content/Applications/25_1/DataVisualization/Guides/Legend/relocateTheLegend.css"></div>
 
 #####See Also#####
 - [Rearrange Legend Items](/concepts/05%20UI%20Components/Chart/35%20Legend/20%20Rearrange%20Legend%20Items.md '/Documentation/Guide/UI_Components/Chart/Legend/Rearrange_Legend_Items/')

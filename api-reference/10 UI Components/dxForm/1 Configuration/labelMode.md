@@ -22,7 +22,7 @@ Specifies a display mode for [item labels](/api-reference/10%20UI%20Components/d
                 <li><a href="/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/label/#alignment">items[].label.alignment</a></li>
             </ul>
         </td>
-        <td><div class="simulator-desktop-container" data-view="/Content/Applications/24_2/UIWidgets/TextEditor/labelModeOutside/index.html, /Content/Applications/24_2/UIWidgets/TextEditor/labelModeOutside/index.js, /Content/Applications/24_2/UIWidgets/TextEditor/labelModeOutside/index.css"></div></td>
+        <td><div class="simulator-desktop-container" data-view="/Content/Applications/25_1/UIWidgets/TextEditor/labelModeOutside/index.html, /Content/Applications/25_1/UIWidgets/TextEditor/labelModeOutside/index.js, /Content/Applications/25_1/UIWidgets/TextEditor/labelModeOutside/index.css"></div></td>
     </tr>'
 }
 

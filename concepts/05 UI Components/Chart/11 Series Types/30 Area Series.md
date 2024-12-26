@@ -1,10 +1,10 @@
 Area series visualize data as an area filled with a color. This area is limited on top by a broken, smooth, or step-like line, which corresponds to the **Area**, **Spline Area**, and **Step Area** series types.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/24_2/DataVisualization/Guides/ChartSeriesTypes/area.html, /Content/Applications/24_2/DataVisualization/Guides/ChartSeriesTypes/area.js"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/25_1/DataVisualization/Guides/ChartSeriesTypes/area.html, /Content/Applications/25_1/DataVisualization/Guides/ChartSeriesTypes/area.js"></div>
 
 Area series also include stacked series types: **Stacked Area** and **Stacked Spline Area**. In such series, the value of each next point is counted off from the previous point with the same argument. As a result, series are put in a stack. Very similar to stacked series are full-stacked series - **Full-Stacked Area** and **Full-Stacked Spline Area**. In these series, the sum of all point values by a given argument is considered 100%, and each individual point value is recalculated to be a share of these 100%.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/24_2/DataVisualization/Guides/ChartSeriesTypes/stackedarea.html, /Content/Applications/24_2/DataVisualization/Guides/ChartSeriesTypes/stackedarea.js"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/25_1/DataVisualization/Guides/ChartSeriesTypes/stackedarea.html, /Content/Applications/25_1/DataVisualization/Guides/ChartSeriesTypes/stackedarea.js"></div>
 
 To specify one or another series type, assign its name to the **series[]**.[type](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#type') property. You can configure:
 

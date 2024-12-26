@@ -10,10 +10,10 @@ The Gallery is a UI component that displays a collection of images in a carousel
 
 ##### widgettree
 dataSource: [
-    "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png",
-    "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png",
-    "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png",
-    "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person4.png"
+    "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png",
+    "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png",
+    "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png",
+    "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person4.png"
 ],
 height: 400
 

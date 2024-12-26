@@ -19,7 +19,7 @@ By default, the **inverted** field is set to **false**.
   
 In the example below, toggle the check box to change the value of the **inverted** field. When this field is **false**, values of the *"2014"* column field go to the arguments, while values of the *"Europe"* row field form series. When **inverted** is **true** - the result is inverted.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/24_2/DataVisualization/Guides/GridChartIntegration/inverted.html, /Content/Applications/24_2/DataVisualization/Guides/GridChartIntegration/inverted.js"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/25_1/DataVisualization/Guides/GridChartIntegration/inverted.html, /Content/Applications/25_1/DataVisualization/Guides/GridChartIntegration/inverted.js"></div>
 
 When the grid contains several data fields, they may be turned into either sets of series or sets of arguments. To specify this, set the **putDataFieldsInto** field to *"series"* or *"args"* correspondingly. By default, this property is set to *"series"*.
 
@@ -47,7 +47,7 @@ Moreover, several data fields may either alternate on the chart plot or not. To 
 
 Below, use the set of controls under the UI components to change the **putDataFieldsInto** and **alternateDataFields** fields. You can observe how the *"Total"* and *"Avg"* data fields depend on the values of these fields.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/24_2/DataVisualization/Guides/GridChartIntegration/dataFieldsLayout.html, /Content/Applications/24_2/DataVisualization/Guides/GridChartIntegration/dataFieldsLayout.js"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/25_1/DataVisualization/Guides/GridChartIntegration/dataFieldsLayout.html, /Content/Applications/25_1/DataVisualization/Guides/GridChartIntegration/dataFieldsLayout.js"></div>
 
 If you need to process data in some specific way, assign a callback function to the **processCell** field. This function will be called for each data cell of the pivot grid.
 

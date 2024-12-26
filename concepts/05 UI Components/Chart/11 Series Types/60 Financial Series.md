@@ -1,7 +1,7 @@
 **Candlestick** and **Stock** are financial series types used to describe and analyse trading patterns over short periods of time. Each point in a **Candlestick** series is composed of a real body and two wicks. The real body illustrates the opening and closing trades; it is filled if the closing price is lower than the opening price, and empty otherwise. The wicks visualize the highest and lowest traded prices during the day. A **Stock** series is similar to **Candlestick** except that the opening and closing trades are illustrated by markers instead of the real body.
 
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/24_2/DataVisualization/Guides/ChartSeriesTypes/financial.html, /Content/Applications/24_2/DataVisualization/Guides/ChartSeriesTypes/financial.js"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/25_1/DataVisualization/Guides/ChartSeriesTypes/financial.html, /Content/Applications/25_1/DataVisualization/Guides/ChartSeriesTypes/financial.js"></div>
 
 Assign *"candlestick"* or *"stock"* to the **series[]**.[type](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#type') property to specify the corresponding series type. You can configure:
 

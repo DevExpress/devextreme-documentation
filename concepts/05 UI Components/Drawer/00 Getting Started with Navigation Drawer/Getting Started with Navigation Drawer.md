@@ -27,7 +27,7 @@ If the template is unsuitable, follow the instructions below to create a Drawer 
 
 ---
 
-<div class="simulator-desktop-container drawer-simulator" data-view="/Content/Applications/24_2/GettingStartedWith/Drawer/index.html, /Content/Applications/24_2/GettingStartedWith/Drawer/index.js, /Content/Applications/24_2/GettingStartedWith/Drawer/index.css"></div>
+<div class="simulator-desktop-container drawer-simulator" data-view="/Content/Applications/25_1/GettingStartedWith/Drawer/index.html, /Content/Applications/25_1/GettingStartedWith/Drawer/index.js, /Content/Applications/25_1/GettingStartedWith/Drawer/index.css"></div>
 
 Refer to the sections below for details on each configuration step. You can also find the full code in the GitHub repository.
 

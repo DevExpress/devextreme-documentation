@@ -4,7 +4,7 @@ You can hide native scroll bars and use a DevExtreme ScrollView component. This 
 
 The following live example demonstrates the basic implementation of the ScrollView component inside a Splitter pane:
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/24_2/UIWidgets/Splitter/scrolling/index.html, /Content/Applications/24_2/UIWidgets/Splitter/scrolling/index.js, /Content/Applications/24_2/UIWidgets/Splitter/scrolling/index.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/25_1/UIWidgets/Splitter/scrolling/index.html, /Content/Applications/25_1/UIWidgets/Splitter/scrolling/index.js, /Content/Applications/25_1/UIWidgets/Splitter/scrolling/index.css"></div>
 
 The next snippet contains the code for the example above. 
 

@@ -26,7 +26,7 @@ The Web Dashboard is available as a part of a Universal subscription.
 
 This tutorial shows how to add the TreeList to a page, bind it to data, and configure its core features. As a result, you will get a UI component that looks as follows:
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/24_2/GettingStartedWith/TreeList/index.html, /Content/Applications/24_2/GettingStartedWith/TreeList/index.js, /Content/Applications/24_2/GettingStartedWith/TreeList/index.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/25_1/GettingStartedWith/TreeList/index.html, /Content/Applications/25_1/GettingStartedWith/TreeList/index.js, /Content/Applications/25_1/GettingStartedWith/TreeList/index.css"></div>
 
 Each section in this tutorial covers a single configuration step. You can also find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-treelist" target="_blank">getting-started-with-treelist</a>.
 

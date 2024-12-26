@@ -84,7 +84,7 @@ The legend can be aligned in the horizontal or vertical direction using the [hor
 
 Below, you can try out these properties in action.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/24_2/DataVisualization/Guides/FunnelLegend/relocateTheLegend.html, /Content/Applications/24_2/DataVisualization/Guides/FunnelLegend/relocateTheLegend.js, /Content/Applications/24_2/DataVisualization/Guides/FunnelLegend/relocateTheLegend.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/25_1/DataVisualization/Guides/FunnelLegend/relocateTheLegend.html, /Content/Applications/25_1/DataVisualization/Guides/FunnelLegend/relocateTheLegend.js, /Content/Applications/25_1/DataVisualization/Guides/FunnelLegend/relocateTheLegend.css"></div>
 
 #####See Also#####
 - [Rearrange Legend Items](/concepts/05%20UI%20Components/Funnel/35%20Legend/20%20Rearrange%20Legend%20Items.md '/Documentation/Guide/UI_Components/Funnel/Legend/Rearrange_Legend_Items/')

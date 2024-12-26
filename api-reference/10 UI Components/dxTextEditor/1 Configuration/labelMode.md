@@ -13,7 +13,7 @@ Specifies the [label](/api-reference/10%20UI%20Components/dxTextEditor/1%20Confi
         <tr>
         <td><i>"outside"</i></td>
         <td>The label is outside.</td>
-        <td><div class="simulator-desktop-container" data-view="/Content/Applications/24_2/UIWidgets/TextEditor/labelModeOutside/index.html, /Content/Applications/24_2/UIWidgets/TextEditor/labelModeOutside/index.js, /Content/Applications/24_2/UIWidgets/TextEditor/labelModeOutside/index.css"></div></td>
+        <td><div class="simulator-desktop-container" data-view="/Content/Applications/25_1/UIWidgets/TextEditor/labelModeOutside/index.html, /Content/Applications/25_1/UIWidgets/TextEditor/labelModeOutside/index.js, /Content/Applications/25_1/UIWidgets/TextEditor/labelModeOutside/index.css"></div></td>
     </tr>'
 }
 

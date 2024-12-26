@@ -1,10 +1,10 @@
 Line series visualize data as a collection of points connected by a line. This line can be broken, smooth, or step-like, which corresponds to the **Line**, **Spline**, and **Step Line** series types.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/24_2/DataVisualization/Guides/ChartSeriesTypes/line.html, /Content/Applications/24_2/DataVisualization/Guides/ChartSeriesTypes/line.js"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/25_1/DataVisualization/Guides/ChartSeriesTypes/line.html, /Content/Applications/25_1/DataVisualization/Guides/ChartSeriesTypes/line.js"></div>
 
 Line series also include stacked series types: **Stacked Line** and **Stacked Spline**. In such series, the value of each next point is counted off from the previous point with the same argument. As a result, series are put in a stack. Very similar to stacked series are full-stacked series - **Full-Stacked Line** and **Full-Stacked Spline**. In these series, the sum of all point values by a given argument is considered 100%, and each individual point value is recalculated to be a share of these 100%.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/24_2/DataVisualization/Guides/ChartSeriesTypes/stackedline.html, /Content/Applications/24_2/DataVisualization/Guides/ChartSeriesTypes/stackedline.js"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/25_1/DataVisualization/Guides/ChartSeriesTypes/stackedline.html, /Content/Applications/25_1/DataVisualization/Guides/ChartSeriesTypes/stackedline.js"></div>
 
 To specify one or another series type, assign its name to the **series[]**.[type](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/ChartSeries/type.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#type') property. You can configure:
 

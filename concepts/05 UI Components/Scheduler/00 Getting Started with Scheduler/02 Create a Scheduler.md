@@ -14,10 +14,10 @@
     <html>
         <head>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/minor_24_2/css/dx.light.css" />
+            <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/minor_25_1/css/dx.light.css" />
             <link rel="stylesheet" href="index.css">
 
-            <script src="https://cdn3.devexpress.com/jslib/minor_24_2/js/dx.all.js"></script>
+            <script src="https://cdn3.devexpress.com/jslib/minor_25_1/js/dx.all.js"></script>
             <script src="index.js"></script>
         </head>
         <body class="dx-viewport">

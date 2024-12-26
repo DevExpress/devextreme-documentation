@@ -1,6 +1,6 @@
 Different screens use different FABs because a FAB should perform or contain only actions that can be performed on a particular screen. The DevExtreme [TabPanel](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TabPanel/Overview/) is used to emulate switching between screens.
 
-<div class="simulator-desktop-container" style="height:362px" data-view="/Content/Applications/24_2/GettingStartedWith/FloatingActionButton/HandleScreenTransitions/index.html, /Content/Applications/24_2/GettingStartedWith/FloatingActionButton/HandleScreenTransitions/index.js, /Content/Applications/24_2/GettingStartedWith/FloatingActionButton/HandleScreenTransitions/index.css"></div>
+<div class="simulator-desktop-container" style="height:362px" data-view="/Content/Applications/25_1/GettingStartedWith/FloatingActionButton/HandleScreenTransitions/index.html, /Content/Applications/25_1/GettingStartedWith/FloatingActionButton/HandleScreenTransitions/index.js, /Content/Applications/25_1/GettingStartedWith/FloatingActionButton/HandleScreenTransitions/index.css"></div>
 
 ---
 ##### jQuery

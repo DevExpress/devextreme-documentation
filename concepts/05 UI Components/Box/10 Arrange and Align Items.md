@@ -93,8 +93,8 @@ Items can be arranged in a row or in a column depending on the value of the [dir
                 "height": 300
             },
             "images": [
-                { "image": "/Content/images/doc/24_2/UiWidgets/Box/Box_direction_row.png", "text": "<b>direction</b>: <i>'row'</i>" },
-                { "image": "/Content/images/doc/24_2/UiWidgets/Box/Box_direction_column.png", "text": "<b>direction</b>: <i>'col'</i>" }
+                { "image": "/Content/images/doc/25_1/UiWidgets/Box/Box_direction_row.png", "text": "<b>direction</b>: <i>'row'</i>" },
+                { "image": "/Content/images/doc/25_1/UiWidgets/Box/Box_direction_column.png", "text": "<b>direction</b>: <i>'col'</i>" }
             ]
         }
     </script>

@@ -5,11 +5,11 @@ You can use **npm** to deliver <a href="https://www.npmjs.com/package/devextreme
 
 Install the latest stable version:
 
-    npm install devextreme-dist@24.2 --save --save-exact
+    npm install devextreme-dist@25.1 --save --save-exact
 
 Install the latest <a href="https://github.com/DevExpress/DevExtreme/releases" target="_blank">published version</a>. It can be stable or pre-release. Pre-release versions contain hotfixes and new features for early testing.
 
-    npm install devextreme-dist@24.2-next --save --save-exact
+    npm install devextreme-dist@25.1-next --save --save-exact
 
 [note] We recommend saving an exact version of DevExtreme to avoid unexpected updates because DevExtreme does not use Semantic Versioning. In our versioning system, the first and middle numbers indicate a major release which may contain behavior changes.
 
@@ -22,15 +22,15 @@ You can use **npm** to deliver DevExtreme to an Angular application. The followi
 
 Install the latest stable version:
 
-    npm install devextreme@24.2 --save --save-exact
+    npm install devextreme@25.1 --save --save-exact
 
-    npm install devextreme-angular@24.2 --save --save-exact
+    npm install devextreme-angular@25.1 --save --save-exact
 
 Install the latest <a href="https://github.com/DevExpress/DevExtreme/releases" target="_blank">published version</a>. It can be stable or pre-release. Pre-release versions contain hotfixes and new features for early testing.
 
-    npm install devextreme@24.2-next --save --save-exact
+    npm install devextreme@25.1-next --save --save-exact
 
-    npm install devextreme-angular@24.2-next --save --save-exact
+    npm install devextreme-angular@25.1-next --save --save-exact
 
 [note] We recommend saving an exact version of DevExtreme to avoid unexpected updates because DevExtreme does not use Semantic Versioning. In our versioning system, the first and middle numbers indicate a major release which may contain behavior changes.
 
@@ -46,15 +46,15 @@ You can use **npm** to deliver DevExtreme to a Vue application. The following pa
 
 Install the latest stable version:
 
-    npm install devextreme@24.2 --save --save-exact
+    npm install devextreme@25.1 --save --save-exact
 
-    npm install devextreme-vue@24.2 --save --save-exact
+    npm install devextreme-vue@25.1 --save --save-exact
 
 Install the latest <a href="https://github.com/DevExpress/DevExtreme/releases" target="_blank">published version</a>. It can be stable or pre-release. Pre-release versions contain hotfixes and new features for early testing.
 
-    npm install devextreme@24.2-next --save --save-exact
+    npm install devextreme@25.1-next --save --save-exact
 
-    npm install devextreme-vue@24.2-next --save --save-exact
+    npm install devextreme-vue@25.1-next --save --save-exact
 
 [note] We recommend saving an exact version of DevExtreme to avoid unexpected updates because DevExtreme does not use Semantic Versioning. In our versioning system, the first and middle numbers indicate a major release which may contain behavior changes.
 
@@ -70,15 +70,15 @@ You can use **npm** to deliver DevExtreme to a React application. The following 
 
 Install the latest stable version:
 
-    npm install devextreme@24.2 --save --save-exact
+    npm install devextreme@25.1 --save --save-exact
 
-    npm install devextreme-react@24.2 --save --save-exact
+    npm install devextreme-react@25.1 --save --save-exact
 
 Install the latest <a href="https://github.com/DevExpress/DevExtreme/releases" target="_blank">published version</a>. It can be stable or pre-release. Pre-release versions contain hotfixes and new features for early testing.
 
-    npm install devextreme@24.2-next --save --save-exact
+    npm install devextreme@25.1-next --save --save-exact
 
-    npm install devextreme-react@24.2-next --save --save-exact
+    npm install devextreme-react@25.1-next --save --save-exact
 
 [note] We recommend saving an exact version of DevExtreme to avoid unexpected updates because DevExtreme does not use Semantic Versioning. In our versioning system, the first and middle numbers indicate a major release which may contain behavior changes.
 

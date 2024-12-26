@@ -18,7 +18,7 @@ A: License keys are public due to the client-side nature of JS apps. If you disc
 
 **Q: Can I revoke license keys if an employee quits and I need to invalidate their key?**
 
-A: No, revoking keys is not possible due to the offline nature of the key validation process. Once issued for a DevExtreme version (e.g., 24.2), a key will remain valid indefinitely for all minor updates and security issues.
+A: No, revoking keys is not possible due to the offline nature of the key validation process. Once issued for a DevExtreme version (e.g., 25.1), a key will remain valid indefinitely for all minor updates and security issues.
 
 <br>
 

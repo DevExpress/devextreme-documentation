@@ -21,7 +21,7 @@ An embedded format's [value](/concepts/05%20UI%20Components/HtmlEditor/10%20Form
     <!--JavaScript-->
     // Adds an image at the beginning of the content
     $("#htmlEditorContainer").dxHtmlEditor("instance").insertEmbed(0, "extendedImage", {
-        src: "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png",
+        src: "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png",
         alt: "Photo",
         width: "100px"
     });
@@ -38,7 +38,7 @@ An embedded format's [value](/concepts/05%20UI%20Components/HtmlEditor/10%20Form
         // @ViewChild(DxHtmlEditorComponent) htmlEditor: DxHtmlEditorComponent;
         insertImageAtTheBeginning() {
             this.htmlEditor.instance.insertEmbed(0, "extendedImage", {
-                src: "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png",
+                src: "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png",
                 alt: "Photo",
                 width: "100px"
             });
@@ -80,7 +80,7 @@ An embedded format's [value](/concepts/05%20UI%20Components/HtmlEditor/10%20Form
             insertImageAtTheBeginning() {
                 // Makes the first five characters bold and underlined
                 this.htmlEditor.insertEmbed(0, "extendedImage", {
-                    src: "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png",
+                    src: "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png",
                     alt: "Photo",
                     width: "100px"
                 });
@@ -108,7 +108,7 @@ An embedded format's [value](/concepts/05%20UI%20Components/HtmlEditor/10%20Form
         const insertImageAtTheBeginning = () => {
             // Makes the first five characters bold and underlined
             htmlEditor.current.instance().insertEmbed(0, "extendedImage", {
-                src: "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png",
+                src: "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png",
                 alt: "Photo",
                 width: "100px"
             });

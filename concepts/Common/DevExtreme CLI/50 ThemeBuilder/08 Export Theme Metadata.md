@@ -14,7 +14,7 @@ Theme metadata is a JSON object that describes the theme. It is used to export o
         "baseTheme": "material.blue.light.compact",
         "outputColorScheme": "custom-scheme",
         "makeSwatch": true,
-        "version": "minor_24_2",
+        "version": "minor_25_1",
         "widgets": ["datagrid","treelist","selectbox"],
         "assetsBasePath": "../../../node_modules/devextreme/dist/css/"
     }

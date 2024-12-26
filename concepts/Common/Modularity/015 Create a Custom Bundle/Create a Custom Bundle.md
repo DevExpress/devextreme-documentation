@@ -25,6 +25,6 @@ Incorporate themes into your application:
 
     <!--HTML-->
     <!--Link Themes-->
-    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_24_2/css/dx.light.css">
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_25_1/css/dx.light.css">
 
 [tags] jquery

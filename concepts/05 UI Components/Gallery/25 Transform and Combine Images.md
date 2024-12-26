@@ -7,10 +7,10 @@ By default, the Gallery UI component displays one image at a time. To fit more i
     $(function () {
         $("#galleryContainer").dxGallery({
             dataSource: [
-                "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png",
-                "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png",
-                "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png",
-                "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person4.png"
+                "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png",
+                "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png",
+                "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png",
+                "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person4.png"
             ],
             height: 300,
             width: 600,
@@ -33,10 +33,10 @@ By default, the Gallery UI component displays one image at a time. To fit more i
     // ...
     export class AppComponent {
         galleryDataSource = [
-            "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png",
-            "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png",
-            "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png",
-            "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person4.png"
+            "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png",
+            "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png",
+            "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png",
+            "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person4.png"
         ];
     }
     @NgModule({
@@ -70,10 +70,10 @@ By default, the Gallery UI component displays one image at a time. To fit more i
         data() {
             return {
                 dataSource: [
-                    'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png',
-                    'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png',
-                    'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png',
-                    'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person4.png'
+                    'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png',
+                    'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png',
+                    'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png',
+                    'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person4.png'
                 ]
             };
         }
@@ -88,10 +88,10 @@ By default, the Gallery UI component displays one image at a time. To fit more i
     import { Gallery } from 'devextreme-react/gallery';
 
     const dataSource = [
-        'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png',
-        'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png',
-        'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png',
-        'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person4.png'
+        'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png',
+        'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png',
+        'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png',
+        'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person4.png'
     ];
 
     class App extends React.Component {
@@ -120,10 +120,10 @@ When distributing images along the total width, the Gallery may add margins betw
     $(function () {
         $("#galleryContainer").dxGallery({
             dataSource: [
-                "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png",
-                "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png",
-                "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png",
-                "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png"
+                "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png",
+                "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png",
+                "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png",
+                "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png"
             ],
             height: 200,
             width: 320,
@@ -148,10 +148,10 @@ When distributing images along the total width, the Gallery may add margins betw
     // ...
     export class AppComponent {
         galleryDataSource = [
-            "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png",
-            "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png",
-            "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png",
-            "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person4.png"
+            "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png",
+            "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png",
+            "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png",
+            "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person4.png"
         ];
     }
     @NgModule({
@@ -186,10 +186,10 @@ When distributing images along the total width, the Gallery may add margins betw
         data() {
             return {
                 dataSource: [
-                    'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png',
-                    'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png',
-                    'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png',
-                    'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png'
+                    'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png',
+                    'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png',
+                    'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png',
+                    'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png'
                 ]
             };
         }
@@ -204,10 +204,10 @@ When distributing images along the total width, the Gallery may add margins betw
     import { Gallery } from 'devextreme-react/gallery';
 
     const dataSource = [
-        'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png',
-        'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png',
-        'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png',
-        'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png'
+        'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png',
+        'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png',
+        'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png',
+        'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png'
     ];
 
     class App extends React.Component {
@@ -239,10 +239,10 @@ The Gallery UI component allows you to display not only the current image, but a
     $(function () {
         $("#galleryContainer").dxGallery({
             dataSource: [
-                "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png",
-                "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png",
-                "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png",
-                "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png"
+                "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png",
+                "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png",
+                "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png",
+                "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png"
             ],
             height: 200,
             width: 320,
@@ -267,10 +267,10 @@ The Gallery UI component allows you to display not only the current image, but a
     // ...
     export class AppComponent {
         galleryDataSource = [
-            "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png",
-            "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png",
-            "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png",
-            "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person4.png"
+            "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png",
+            "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png",
+            "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png",
+            "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person4.png"
         ];
     }
     @NgModule({
@@ -305,10 +305,10 @@ The Gallery UI component allows you to display not only the current image, but a
         data() {
             return {
                 dataSource: [
-                    'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png',
-                    'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png',
-                    'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png',
-                    'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png'
+                    'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png',
+                    'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png',
+                    'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png',
+                    'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png'
                 ]
             };
         }
@@ -323,10 +323,10 @@ The Gallery UI component allows you to display not only the current image, but a
     import { Gallery } from 'devextreme-react/gallery';
 
     const dataSource = [
-        'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png',
-        'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png',
-        'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png',
-        'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png'
+        'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png',
+        'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png',
+        'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png',
+        'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png'
     ];
 
     class App extends React.Component {

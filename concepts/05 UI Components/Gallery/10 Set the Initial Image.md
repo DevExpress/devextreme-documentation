@@ -7,9 +7,9 @@ By default, the image that the Gallery UI component displays initially is the fi
     $(function () {
         $("#galleryContainer").dxGallery({
             dataSource: [
-                "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png",
-                "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png",
-                "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png"
+                "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png",
+                "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png",
+                "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png"
             ],
             height: 300,
             selectedIndex: 2
@@ -30,9 +30,9 @@ By default, the image that the Gallery UI component displays initially is the fi
     // ...
     export class AppComponent {
         galleryDataSource = [
-            "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png",
-            "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png",
-            "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png"
+            "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png",
+            "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png",
+            "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png"
         ];
     }
     @NgModule({
@@ -65,9 +65,9 @@ By default, the image that the Gallery UI component displays initially is the fi
         data() {
             return {
                 dataSource: [
-                    'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png',
-                    'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png',
-                    'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png'
+                    'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png',
+                    'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png',
+                    'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png'
                 ]
             };
         }
@@ -82,9 +82,9 @@ By default, the image that the Gallery UI component displays initially is the fi
     import { Gallery } from 'devextreme-react/gallery';
 
     const dataSource = [
-        'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png',
-        'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png',
-        'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png'
+        'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png',
+        'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png',
+        'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png'
     ];
 
     class App extends React.Component {
@@ -111,13 +111,13 @@ As an alternative, you can specify the initial image using its data source objec
     <!--JavaScript-->
     const galleryData = [{
         imageAlt: "Maria",
-        imageSrc: "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png"
+        imageSrc: "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png"
     }, {
         imageAlt: "John",
-        imageSrc: "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png"
+        imageSrc: "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png"
     }, {
         imageAlt: "Xavier",
-        imageSrc: "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png"
+        imageSrc: "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png"
     }];
 
     $(function () {
@@ -143,13 +143,13 @@ As an alternative, you can specify the initial image using its data source objec
     export class AppComponent {
         galleryDataSource = [{
             imageAlt: "Maria",
-            imageSrc: "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png"
+            imageSrc: "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png"
         }, {
             imageAlt: "John",
-            imageSrc: "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png"
+            imageSrc: "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png"
         }, {
             imageAlt: "Xavier",
-            imageSrc: "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png"
+            imageSrc: "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png"
         }];
         selectedItem = this.galleryDataSource[1];
     }
@@ -184,13 +184,13 @@ As an alternative, you can specify the initial image using its data source objec
             return {
                 galleryData: [{
                     imageAlt: 'Maria',
-                    imageSrc: 'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png'
+                    imageSrc: 'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png'
                 }, {
                     imageAlt: 'John',
-                    imageSrc: 'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png'
+                    imageSrc: 'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png'
                 }, {
                     imageAlt: 'Xavier',
-                    imageSrc: 'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png'
+                    imageSrc: 'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png'
                 }],
                 selectedItem: galleryData[1]
             };
@@ -207,13 +207,13 @@ As an alternative, you can specify the initial image using its data source objec
 
     const galleryData = [{
         imageAlt: 'Maria',
-        imageSrc: 'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png'
+        imageSrc: 'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png'
     }, {
         imageAlt: 'John',
-        imageSrc: 'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png'
+        imageSrc: 'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png'
     }, {
         imageAlt: 'Xavier',
-        imageSrc: 'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png'
+        imageSrc: 'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png'
     }];
 
     const selectedItem = galleryData[1];

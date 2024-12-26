@@ -8,7 +8,7 @@ If none of the available editors suit your requirements, you can define a custom
         $("#formContainer").dxForm({
             formData: {
                 name: "John Heart",
-                picture: "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png",
+                picture: "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png",
                 notes: "John has been in the Audio/Video industry since 1990. He has led DevAv as its CEO since 2003."
             },
             items: ["name", { 
@@ -60,7 +60,7 @@ If none of the available editors suit your requirements, you can define a custom
     export class AppComponent {
         employee = {
             name: "John Heart",
-            picture: "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png",
+            picture: "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png",
             notes: "John has been in the Audio/Video industry since 1990. He has led DevAv as its CEO since 2003."
         }
     }
@@ -119,7 +119,7 @@ If none of the available editors suit your requirements, you can define a custom
             return {
                 employee: {
                     name: "John Heart",
-                    picture: "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png",
+                    picture: "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png",
                     notes: "John has been in the Audio/Video industry since 1990. He has led DevAv as its CEO since 2003."
                 }
             }
@@ -147,7 +147,7 @@ If none of the available editors suit your requirements, you can define a custom
             this.state = {
                  employee: {
                     name: "John Heart",
-                    picture: "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png",
+                    picture: "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png",
                     notes: "John has been in the Audio/Video industry since 1990. He has led DevAv as its CEO since 2003."
                 }       
             };

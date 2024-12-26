@@ -6,7 +6,7 @@ const firstUser = {
 const secondUser = {
     id: "2",
     name: "Feedback Bot",
-    avatarUrl: "/Content/images/doc/24_2/Chat/bot.png"
+    avatarUrl: "/Content/images/doc/25_1/Chat/bot.png"
 };
 
 const initialMessages = [{

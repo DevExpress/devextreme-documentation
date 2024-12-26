@@ -6,12 +6,12 @@ Link DevExtreme scripts and stylesheets within the `<head>` tag on your index pa
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
         <!-- DevExtreme theme -->
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_24_2/css/dx.light.css">
+        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_25_1/css/dx.light.css">
 
         <!-- DevExtreme libraries (reference only one of them) -->
-        <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_24_2/js/dx.all.js"></script>
-        <!-- <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_24_2/js/dx.web.js"></script> -->
-        <!-- <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_24_2/js/dx.viz.js"></script> -->
+        <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_25_1/js/dx.all.js"></script>
+        <!-- <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_25_1/js/dx.web.js"></script> -->
+        <!-- <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_25_1/js/dx.viz.js"></script> -->
     </head>
     <body class="dx-viewport">
         <!-- ... -->

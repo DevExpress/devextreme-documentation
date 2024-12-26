@@ -7,9 +7,9 @@ The Gallery UI component supports the display of images in a slideshow. To speci
     $(function () {
         $("#galleryContainer").dxGallery({
             dataSource: [
-                "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png",
-                "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png",
-                "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png"
+                "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png",
+                "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png",
+                "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png"
             ],
             height: 300,
             slideshowDelay: 1500
@@ -30,9 +30,9 @@ The Gallery UI component supports the display of images in a slideshow. To speci
     // ...
     export class AppComponent {
         galleryDataSource = [
-            "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png",
-            "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png",
-            "https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png"
+            "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png",
+            "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png",
+            "https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png"
         ];
     }
     @NgModule({
@@ -65,9 +65,9 @@ The Gallery UI component supports the display of images in a slideshow. To speci
         data() {
             return {
                 dataSource: [
-                    'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png',
-                    'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png',
-                    'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png'
+                    'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png',
+                    'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png',
+                    'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png'
                 ]
             };
         }
@@ -82,9 +82,9 @@ The Gallery UI component supports the display of images in a slideshow. To speci
     import { Gallery } from 'devextreme-react/gallery';
 
     const dataSource = [
-        'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person1.png',
-        'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person2.png',
-        'https://js.devexpress.com/Content/images/doc/24_2/PhoneJS/person3.png'
+        'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person1.png',
+        'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person2.png',
+        'https://js.devexpress.com/Content/images/doc/25_1/PhoneJS/person3.png'
     ];
 
     class App extends React.Component {

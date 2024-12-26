@@ -23,12 +23,12 @@ To use one of these sources on your map, reference the corresponding file in the
 
 Alternatively, the same data sources can be accessed and referenced using the DevExpress CDN.
 
-	<!--HTML--><script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_24_2/js/vectormap-data/world.js"></script>
-	<script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_24_2/js/vectormap-data/africa.js"></script>
-	<script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_24_2/js/vectormap-data/canada.js"></script>
-	<script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_24_2/js/vectormap-data/eurasia.js"></script>
-	<script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_24_2/js/vectormap-data/europe.js"></script>
-	<script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_24_2/js/vectormap-data/usa.js"></script>
+	<!--HTML--><script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_25_1/js/vectormap-data/world.js"></script>
+	<script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_25_1/js/vectormap-data/africa.js"></script>
+	<script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_25_1/js/vectormap-data/canada.js"></script>
+	<script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_25_1/js/vectormap-data/eurasia.js"></script>
+	<script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_25_1/js/vectormap-data/europe.js"></script>
+	<script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_25_1/js/vectormap-data/usa.js"></script>
 
 After that, set the [dataSource](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/dataSource.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#dataSource') property for a layer to the array defined in the referenced file.
 

@@ -1,5 +1,4 @@
-basically what it says in the title
-renderCards + onOptionChange
+The render function is called on every page index/size [change](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#onOptionChanged):
 
 ---
 ##### jQuery

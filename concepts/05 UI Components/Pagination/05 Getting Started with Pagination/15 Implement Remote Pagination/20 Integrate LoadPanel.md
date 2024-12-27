@@ -1,9 +1,14 @@
-basically what it says in the title
-
-render function
+Integrate a [load panel](/Documentation/Guide/UI_Components/LoadPanel/Overview/) to inform users that cards are loading. This step is optional.
 
 ---
 ##### jQuery
+
+To integrate DevExtreme LoadPanel:
+
+1. Add LoadPanel to the code.
+2. [Display](/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#show) it before calling the render function.
+3. [Hide](/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#hide) it after rendering each color.
+<!-- ... -->
 
     <!-- tab: index.html -->
     <html>
@@ -53,6 +58,13 @@ render function
 
 ##### Angular
 
+To integrate DevExtreme LoadPanel:
+
+1. Add LoadPanel to the code.
+2. [Display](/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#visible) it before calling the render function.
+3. Hide it after rendering each color.
+<!-- ... -->
+
     <!-- tab: app.component.html -->
     <dx-pagination ... ></dx-pagination>
     <!-- ... -->
@@ -93,6 +105,13 @@ render function
     }
 
 ##### Vue
+
+To integrate DevExtreme LoadPanel:
+
+1. Add LoadPanel to the code.
+2. [Display](/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#visible) it before calling the render function.
+3. Hide it after rendering each color.
+<!-- ... -->
 
     <!-- tab: App.vue -->
     <template>
@@ -138,6 +157,13 @@ render function
     </script>
 
 ##### React
+
+To integrate DevExtreme LoadPanel:
+
+1. Add LoadPanel to the code.
+2. [Display](/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#visible) it before calling the render function.
+3. Hide it after rendering each color.
+<!-- ... -->
 
     <!-- tab: App.tsx -->
     // ...

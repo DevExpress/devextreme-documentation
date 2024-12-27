@@ -1,4 +1,17 @@
-A few words on how to generate hexes + #cards space preparation
+This section explains how to implement remote pagination.
+
+In this tutorial, colored cards load as a user changes pages or adjusts page size. The essential steps are the following:
+
+1. Generate 100 hex codes.
+2. Fetch [The Color API](https://www.thecolorapi.com/) (open source) whenever:
+    - The page initially loads
+    - Page size changes
+    - Page is switched (page index changes)
+3. Display the fetched colored cards after loading.
+
+So this is what happens in this section.
+
+Begin by declaring functions to generate random pastel hex codes and add them to an array of length 100:
 
 ---
 ##### jQuery

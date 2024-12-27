@@ -1,4 +1,4 @@
-The fetchData function. Call it on initial load.
+The following code snippet demonstrates how to fetch data from the Color API:
 
 ---
 ##### jQuery
@@ -57,12 +57,6 @@ The fetchData function. Call it on initial load.
                 })));
         }
     }
-
-    export interface Color {
-        image: string;
-        name: string;
-    }
-
 
 ##### Vue
 

@@ -1,4 +1,4 @@
-render function
+The render function determines the start and end indexes of the visible cards array. Next, the array populates with image sources and alt strings.
 
 ---
 ##### jQuery
@@ -112,6 +112,13 @@ render function
                 console.error('Error fetching colors:', error);
             }
         }
+    }
+
+    <!-- tab: app.service.ts -->
+    // ...
+    export interface Color {
+        image: string;
+        name: string;
     }
 
     <!-- tab: app.component.css -->

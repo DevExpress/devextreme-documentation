@@ -9,8 +9,6 @@ In this tutorial, colored cards load as a user changes pages or adjusts page siz
     - Page is switched (page index changes)
 3. Display the fetched colored cards after loading.
 
-So this is what happens in this section.
-
 Begin by declaring functions to generate random pastel hex codes and add them to an array of length 100:
 
 ---

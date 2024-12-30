@@ -1,0 +1,3 @@
+The formats are applied by toolbar items. Most formats have items attached to them out-of-the-box. Refer to [Predefined Items](/concepts/05%20UI%20Components/HtmlEditor/20%20Toolbar/00%20Predefined%20Items '/Documentation/Guide/UI_Components/HtmlEditor/Toolbar/Predefined_Items/') for a full list of toolbar items and the formats they apply.
+
+The following tables list available formats and their values grouped into five categories: inline (or text), block, embedded, image, and table formats.

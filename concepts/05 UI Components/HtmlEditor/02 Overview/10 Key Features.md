@@ -1,9 +1,9 @@
-- **Inline Formats**     
+- [**Inline Formats**](/Documentation/Guide/UI_Components/HtmlEditor/Formats/#Inline_Or_Text_Formats)     
 HTML Editor includes various inline formatting options: 
     - **Bold**, *italic*, <s>strikethrough</s>, and <u>underscore</u>
     - Typeface, font size, and text color
 
-- **Block Formats**     
+- [**Block Formats**](/Documentation/Guide/UI_Components/HtmlEditor/Formats/#Block_Formats)     
 HTML Editor supports block formatting such as:
     - Headers
     - Lists (ordered and unordered)

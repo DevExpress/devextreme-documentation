@@ -11,11 +11,12 @@
   <MenuRule Destination="040 What's New/01 Migrate to the New Version" SourcePattern="Howto:^Common/Migrate to the New Version" />
   <MenuRule Destination="040 What's New" SourcePattern="Howto:^Common/What's New" />
 
+  <MenuRule Destination="050 Getting Started/05 Prerequisites and Installation/00 Distribution Channels" SourcePattern="Howto:^Common/Distribution Channels" />
+
   <MenuRule Destination="050 Getting Started/01 Quick Start" SourcePattern="Howto:^40 Angular Components/10 Getting Started/02 Create a DevExtreme Application" VisibleFor="Angular" />
   <MenuRule Destination="050 Getting Started/02 Quick Start" SourcePattern="Howto:^55 Vue Components/02 Create a DevExtreme Application" VisibleFor="Vue" />
   <MenuRule Destination="050 Getting Started/03 Quick Start" SourcePattern="Howto:^50 React Components/02 Create a DevExtreme Application" VisibleFor="React" />
 
-  <MenuRule Destination="050 Getting Started/05 Prerequisites and Installation/05 Distribution Channels" SourcePattern="Howto:^Common/Distribution Channels" />
   <MenuRule Destination="050 Getting Started/05 Prerequisites and Installation/11 Supported Angular Versions" SourcePattern="Howto:^40 Angular Components/80 Supported Versions" VisibleFor="Angular" />
   <MenuRule Destination="050 Getting Started/05 Prerequisites and Installation/12 Supported Vue Versions" SourcePattern="Howto:^55 Vue Components/80 Supported Versions" VisibleFor="Vue" />
   <MenuRule Destination="050 Getting Started/05 Prerequisites and Installation/13 Supported React Versions" SourcePattern="Howto:^50 React Components/80 Supported Versions" VisibleFor="React" />
@@ -40,7 +41,7 @@
 
   <MenuRule Destination="050 Getting Started/90 DevExtreme CLI" SourcePattern="Howto:^Common/DevExtreme CLI" />
 
-  <MenuRule Destination="060 Licensing" SourcePattern="Howto:^Common/Licensing" />
+  <MenuRule Destination="070 Licensing" SourcePattern="Howto:^Common/Licensing" />
 
   <MenuRule Destination="15 Common Features/05 UI Customization/05 Icons" SourcePattern="Howto:^60 Themes and Styles/30 Icons" />
   <MenuRule Destination="15 Common Features/05 UI Customization/10 Themes and Styles" SourcePattern="Howto:^60 Themes and Styles" />
@@ -116,7 +117,7 @@
   <MenuRule Destination="" SourcePattern="Howto:^(40 Angular|50 React|55 Vue|58 jQuery) Components" />
   <MenuRule Destination="" SourcePattern="Howto:^99 VS Integration" />
   <MenuRule Destination="" SourcePattern="Howto:^Getting Started" />
-  <MenuRule Destination="" SourcePattern="ApiReference:^(.*?)" /> -->
+  <MenuRule Destination="" SourcePattern="ApiReference:^(.*?)" />
   <MenuRule Destination="" SourcePattern="Howto:^(.*?)" />
 
 </MenuRules>

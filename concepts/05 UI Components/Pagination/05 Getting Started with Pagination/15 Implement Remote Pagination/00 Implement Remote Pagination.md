@@ -1,15 +1,15 @@
-This section explains how to implement remote pagination.
+This section explains how to implement remote pagination. Client code generates a color list and requests a remote service for cards that represent those color entries on screen. The pagination component helps users browse resulting color cards.
 
-In this tutorial, colored cards load as a user changes pages or adjusts page size. The essential steps are the following:
+Implementation can be broken down into three steps:
 
 1. Generate 100 hex codes.
-2. Fetch [The Color API](https://www.thecolorapi.com/) (open source) whenever:
-    - The page initially loads
-    - Page size changes
-    - Page is switched (page index changes)
-3. Display the fetched colored cards after loading.
+2. Fetch color cards from [The Color API](https://www.thecolorapi.com/) service when necessary:
+    - On page load
+    - On page size changes
+    - On page index changes
+3. Display color cards obtained from the service. 
 
-Begin by declaring functions to generate random pastel hex codes and add them to an array of length 100:
+Implement the first step. Generate 100 random pastel hex codes and add them to an array:
 
 ---
 ##### jQuery

@@ -1,13 +1,13 @@
-Integrate a [load panel](/Documentation/Guide/UI_Components/LoadPanel/Overview/) to inform users that cards are loading. This step is optional.
+The following code integrate a [load panel](/Documentation/Guide/UI_Components/LoadPanel/Overview/) into the application. The panel appears when the app requests card data from the remote service. This step is optional.
 
 ---
 ##### jQuery
 
-To integrate DevExtreme LoadPanel:
+To integrate the DevExtreme LoadPanel component:
 
-1. Add LoadPanel to the code.
+1. Add a LoadPanel to the code.
 2. [Display](/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#show) it before calling the render function.
-3. [Hide](/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#hide) it after rendering each color.
+3. [Hide](/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#hide) it after render.
 <!-- ... -->
 
     <!-- tab: index.html -->
@@ -58,11 +58,11 @@ To integrate DevExtreme LoadPanel:
 
 ##### Angular
 
-To integrate DevExtreme LoadPanel:
+To integrate the DevExtreme LoadPanel component:
 
-1. Add LoadPanel to the code.
+1. Add a LoadPanel to the code.
 2. [Display](/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#visible) it before calling the render function.
-3. Hide it after rendering each color.
+3. Hide it after render.
 <!-- ... -->
 
     <!-- tab: app.component.html -->
@@ -106,11 +106,11 @@ To integrate DevExtreme LoadPanel:
 
 ##### Vue
 
-To integrate DevExtreme LoadPanel:
+To integrate the DevExtreme LoadPanel component:
 
-1. Add LoadPanel to the code.
+1. Add a LoadPanel to the code.
 2. [Display](/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#visible) it before calling the render function.
-3. Hide it after rendering each color.
+3. Hide it after render.
 <!-- ... -->
 
     <!-- tab: App.vue -->
@@ -158,11 +158,11 @@ To integrate DevExtreme LoadPanel:
 
 ##### React
 
-To integrate DevExtreme LoadPanel:
+To integrate the DevExtreme LoadPanel component:
 
-1. Add LoadPanel to the code.
+1. Add a LoadPanel to the code.
 2. [Display](/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#visible) it before calling the render function.
-3. Hide it after rendering each color.
+3. Hide it after render.
 <!-- ... -->
 
     <!-- tab: App.tsx -->

@@ -1,4 +1,4 @@
-The render function determines the start and end indexes of the visible cards array. Next, the array populates with image sources and alt strings.
+The render function determines the subset of cards to be displayed and populates the array with required images and alt strings.
 
 ---
 ##### jQuery

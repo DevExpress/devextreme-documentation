@@ -1,12 +1,11 @@
-This section of the tutorial details the steps for basic Pagination setup.
+This tutorial step guides you through basic Pagination setup.
 
-First, assign a total number of items to the [itemCount](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#itemCount) property. Pagination will not function properly without this setting.
+Specify the following settings:
 
-Next, specify the [pageIndex](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#pageIndex) property to define the initial page to display. This tutorial sets **pageIndex** to 3 (the default value is 1).
-
-The [allowedPageSizes](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#allowedPageSizes) option is preset to `[5, 10]`. These are available page sizes. You can modify this list as needed. Include `'all'` to show every item on one page. In this tutorial, the default values are used.
-
-Finally, select an initial number of items to display per page from your allowed sizes. Assign the number to the [pageSize](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#pageSize) property.
+* [itemCount](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#itemCount) sets the total number of items. Pagination will not function properly without this setting.
+* [pageIndex](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#pageIndex) sets the initial page to display. This tutorial sets **pageIndex** to 3 (the default value is 1).
+* [allowedPageSizes](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#allowedPageSizes) specifies page sizes available to users. Modify this list as needed. Include `'all'` to allow users to display all items on one page. This tutorial uses the default value: `[5, 10]`.
+* [pageSize](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#pageSize) specifies the initial page size.
 
 The following code snippet demonstrates how to apply the aforementioned settings:
 

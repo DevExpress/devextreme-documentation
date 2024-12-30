@@ -2,7 +2,7 @@
 
 Pagination is a UI component that allows users to navigate through pages and change page size at runtime.
 
-This tutorial explains how to add Pagination to the page and configure the component's core settings. It also covers implementing remote pagination. Colored cards are loaded each time a user switches pages or changes page size. The final result is displayed below:
+This tutorial explains how to add Pagination to a page and configure the component's core settings. It also covers implementing remote pagination. Colored cards are loaded each time a user switches pages or changes page size. The final result is displayed below:
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/24_2/GettingStartedWith/Pagination/index.html, /Content/Applications/24_2/GettingStartedWith/Pagination/index.js, /Content/Applications/24_2/GettingStartedWith/Pagination/index.css"></div>
 

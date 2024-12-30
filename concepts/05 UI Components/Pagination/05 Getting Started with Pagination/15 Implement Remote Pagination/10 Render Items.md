@@ -1,4 +1,4 @@
-The render function determines the subset of cards to be displayed and populates the array with required images and alt strings.
+The render function determines the subset of cards to be displayed and populates the array with images and alt strings.
 
 ---
 ##### jQuery

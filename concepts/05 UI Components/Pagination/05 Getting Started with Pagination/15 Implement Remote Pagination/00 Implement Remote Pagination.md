@@ -1,4 +1,4 @@
-This section explains how to implement remote pagination. Client code generates a color list and requests a remote service for cards that represent those color entries on screen. The pagination component helps users browse resulting color cards.
+This section explains how to implement remote pagination. Client code generates a color list and requests a remote service for cards representing color entries on the screen. The pagination component helps users browse the resulting color cards.
 
 Implementation can be broken down into three steps:
 

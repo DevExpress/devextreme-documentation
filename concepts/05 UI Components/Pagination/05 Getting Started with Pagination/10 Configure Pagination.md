@@ -2,10 +2,10 @@ This tutorial step guides you through the basic Pagination setup.
 
 Specify the following settings:
 
-* [itemCount](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#itemCount) sets the total number of items. Pagination does not function properly without this setting.
-* [pageIndex](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#pageIndex) sets the initial page to display. This tutorial sets **pageIndex** to 3 (the default value is 1).
-* [allowedPageSizes](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#allowedPageSizes) specifies page sizes available to users. Modify this list as needed. Include `'all'` to allow users to display all items on one page. This tutorial uses the default value: `[5, 10]`.
-* [pageSize](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#pageSize) specifies the initial page size.
+* [itemCount](/api-reference/10%20UI%20Components/dxPagination/1%20Configuration/itemCount.md '/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#itemCount') sets the total number of items. Pagination does not function properly without this setting.
+* [pageIndex](/api-reference/10%20UI%20Components/dxPagination/1%20Configuration/pageIndex.md '/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#pageIndex') sets the initial page to display. This tutorial sets **pageIndex** to 3 (the default value is 1).
+* [allowedPageSizes](/api-reference/10%20UI%20Components/dxPagination/1%20Configuration/allowedPageSizes.md '/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#allowedPageSizes') specifies page sizes available to users. Modify this list as needed. Include `'all'` to allow users to display all items on one page. This tutorial uses the default value: `[5, 10]`.
+* [pageSize](/api-reference/10%20UI%20Components/dxPagination/1%20Configuration/pageSize.md '/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#pageSize') specifies the initial page size.
 
 The following code snippet demonstrates how to apply the aforementioned settings:
 

@@ -1,4 +1,4 @@
-The following code integrate a [load panel](/Documentation/Guide/UI_Components/LoadPanel/Overview/) into the application. The panel appears when the app requests card data from the remote service. This step is optional.
+The following code integrate a [load panel](/concepts/05%20UI%20Components/LoadPanel/00%20Overview.md '/Documentation/Guide/UI_Components/LoadPanel/Overview/') into the application. The panel appears when the app requests card data from the remote service. This step is optional.
 
 ---
 ##### jQuery
@@ -6,8 +6,8 @@ The following code integrate a [load panel](/Documentation/Guide/UI_Components/L
 To integrate the DevExtreme LoadPanel component:
 
 1. Add a LoadPanel to the code.
-2. [Display](/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#show) it before calling the render function.
-3. [Hide](/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#hide) it after render.
+2. [Display](/api-reference/10%20UI%20Components/dxLoadPanel/3%20Methods/show().md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#show') it before calling the render function.
+3. [Hide](/api-reference/10%20UI%20Components/dxOverlay/3%20Methods/hide().md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Methods/#hide') it after render.
 <!-- ... -->
 
     <!-- tab: index.html -->
@@ -61,7 +61,7 @@ To integrate the DevExtreme LoadPanel component:
 To integrate the DevExtreme LoadPanel component:
 
 1. Add a LoadPanel to the code.
-2. [Display](/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#visible) it before calling the render function.
+2. [Display](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#visible') it before calling the render function.
 3. Hide it after render.
 <!-- ... -->
 
@@ -109,7 +109,7 @@ To integrate the DevExtreme LoadPanel component:
 To integrate the DevExtreme LoadPanel component:
 
 1. Add a LoadPanel to the code.
-2. [Display](/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#visible) it before calling the render function.
+2. [Display](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#visible') it before calling the render function.
 3. Hide it after render.
 <!-- ... -->
 
@@ -161,7 +161,7 @@ To integrate the DevExtreme LoadPanel component:
 To integrate the DevExtreme LoadPanel component:
 
 1. Add a LoadPanel to the code.
-2. [Display](/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#visible) it before calling the render function.
+2. [Display](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#visible') it before calling the render function.
 3. Hide it after render.
 <!-- ... -->
 

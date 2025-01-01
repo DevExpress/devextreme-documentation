@@ -1,4 +1,4 @@
-The render function is called on every page index/size [change](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#onOptionChanged):
+The render function is called on every page index/size [change](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/onOptionChanged.md '/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#onOptionChanged'):
 
 ---
 ##### jQuery

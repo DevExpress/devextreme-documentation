@@ -9,10 +9,10 @@ Inserts an embedded content at the specified position.
 A zero-based index at which to insert an embedded content.
 
 ##### param(type): String
-An embedded format's [name](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/').
+An embedded format's [name](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats/00%20Formats.md '/Documentation/Guide/UI_Components/HtmlEditor/Formats/').
 
 ##### param(config): any
-An embedded format's [value](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/').
+An embedded format's [value](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats/00%20Formats.md '/Documentation/Guide/UI_Components/HtmlEditor/Formats/').
 
 ---
 ---

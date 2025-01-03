@@ -1,9 +1,9 @@
-- [**Inline Formats**](/Documentation/Guide/UI_Components/HtmlEditor/Formats/#Inline_Or_Text_Formats)     
+- [**Inline Formats**](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats/05%20Inline%20(Or%20Text)%20Formats.md '/Documentation/Guide/UI_Components/HtmlEditor/Formats/#Inline_Or_Text_Formats')     
 HTML Editor includes various inline formatting options: 
     - **Bold**, *italic*, <s>strikethrough</s>, and <u>underscore</u>
     - Typeface, font size, and text color (HTML)
 
-- [**Block Formats**](/Documentation/Guide/UI_Components/HtmlEditor/Formats/#Block_Formats)     
+- [**Block Formats**](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats/10%20Block%20Formats.md '/Documentation/Guide/UI_Components/HtmlEditor/Formats/#Block_Formats')     
 HTML Editor supports block formatting such as:
     - Headers
     - Lists (ordered and unordered)
@@ -20,7 +20,7 @@ Images [can be uploaded](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Co
 Users can [insert and modify tables](/concepts/05%20UI%20Components/HtmlEditor/00%20Getting%20Started%20with%20HtmlEditor/30%20Work%20with%20Tables.md '/Documentation/Guide/UI_Components/HtmlEditor/Getting_Started_with_HtmlEditor/#Work_with_Tables') with built-in UI elements. You can allow users to [resize tables](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/tableResizing.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/tableResizing/').
 
 - **Built-in Format Customization**     
-You can [modify the existing formats](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats/33%20Customize%20Built-In%20Formats%20and%20Modules '/Documentation/Guide/UI_Components/HtmlEditor/Formats/#Customize_Built-In_Formats_and_Modules') to fit specific requirements. 
+You can [modify the existing formats](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats/60%20Customize%20Built-In%20Formats%20and%20Modules '/Documentation/Guide/UI_Components/HtmlEditor/Formats/#Customize_Built-In_Formats_and_Modules') to fit specific requirements. 
 
 - **HTML and Markdown Support**     
 HTML Editor [outputs content](/concepts/05%20UI%20Components/HtmlEditor/00%20Getting%20Started%20with%20HtmlEditor/10%20Set%20the%20Output%20Markup%20Language.md '/Documentation/Guide/UI_Components/HtmlEditor/Getting_Started_with_HtmlEditor/#Set_the_Output_Markup_Language') both in HTML and Markdown. 

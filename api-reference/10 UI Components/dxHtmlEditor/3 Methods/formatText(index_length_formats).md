@@ -3,7 +3,7 @@ id: dxHtmlEditor.formatText(index, length, formats)
 ---
 ---
 ##### shortDescription
-Applies several [text formats](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/') to all characters in the given range.
+Applies several [text formats](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats/00%20Formats.md '/Documentation/Guide/UI_Components/HtmlEditor/Formats/') to all characters in the given range.
 
 ##### param(index): Number
 <!-- %param(index)% -->

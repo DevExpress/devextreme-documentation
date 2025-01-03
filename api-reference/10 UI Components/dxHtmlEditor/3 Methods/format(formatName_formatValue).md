@@ -3,7 +3,7 @@ id: dxHtmlEditor.format(formatName, formatValue)
 ---
 ---
 ##### shortDescription
-Applies a format to the selected content. Cannot be used with [embedded formats](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/').
+Applies a format to the selected content. Cannot be used with [embedded formats](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats/00%20Formats.md '/Documentation/Guide/UI_Components/HtmlEditor/Formats/').
 
 ##### param(formatName): Enums.HtmlEditorFormat | String
 <!-- %param(formatName)% -->

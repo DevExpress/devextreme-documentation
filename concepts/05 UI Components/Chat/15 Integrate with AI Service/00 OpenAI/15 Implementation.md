@@ -38,8 +38,8 @@ The code accesses the OpenAI Chat Completion API with the `getAIResponse(message
 The `messages` parameter refers to the dialog history, an array of objects formatted as `{role: 'user'|'assistant', content: '...'}`.
 Key parameters:
 
-1. `messages`: The chat history, with the user's latest message at the end.
-2. `model`: The model in use.
+- `messages`: The chat history, with the user's latest message at the end.
+- `model`: The model in use.
 
 The function returns the assistant’s new response text.
 

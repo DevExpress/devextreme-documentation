@@ -52,7 +52,7 @@ For example, the following code creates a PivotGrid component and a Chart compon
 
 ---
 
-To bind Chart and PivotGrid together without changing the default integration properties, call [bindChart(chart, integrationOptions)](/api-reference/10%20UI%20Components/dxPivotGrid/3%20Methods/bindChart(chart_integrationOptions).md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Methods/#bindChartchart_integrationOptions'). This method can be called at any point of the application flow. For example, you can bind the chart once it is initialized:
+To bind Chart and PivotGrid without changing the default integration properties, call [bindChart(chart, integrationOptions)](/api-reference/10%20UI%20Components/dxPivotGrid/3%20Methods/bindChart(chart_integrationOptions).md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Methods/#bindChartchart_integrationOptions'). This method can be called at any point of the application flow. For example, you can bind the chart once it is initialized:
 
 ---
 ##### jQuery

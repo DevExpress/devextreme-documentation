@@ -1,68 +1,46 @@
-The second argument of the **bindChart(chart, integrationOptions)** method allows you to customize the contents, behavior and appearance of the resulting chart. This subtopic describes those fields of this argument that consider data procession.
+The second argument of the **bindChart(chart, integrationOptions)** method customizes the contents, behavior, and appearance of the Chart component. This section describes the fields in this argument that handle data procession.
 
-When binding a chart to a pivot grid, you can specify how to form chart series from grid fields. Data fields from the grid always become value fields in the chart. However, row and column fields can form either arguments or series. Use the **inverted** field to specify this. The following values are accepted by this field:
+When binding Chart to PivotGrid, specify how to form Chart series from PivotGrid fields. PivotGrid data fields always become Chart value fields. Row and column fields can form either arguments or series. The **inverted** field specifies the following values:
 
-- **true** - row field values go to the arguments; column field values form series.   
-- **false** - column field values go to the arguments; row field values form series.
+- `true` - row field values become arguments; column field values form series.   
+- `false` (default) - column field values become arguments; row field values form series.
 
-    ---
-    ##### jQuery
+    pivotGridInstance.bindChart(chartInstance, {
+        // ...
+        inverted: false // true
+    });
 
-        <!--JavaScript-->pivotGridInstance.bindChart('#chartWidget', {
-            // ...
-            inverted: false // true
-        });
-    
-    ---
-
-By default, the **inverted** field is set to **false**.
-  
-In the example below, toggle the check box to change the value of the **inverted** field. When this field is **false**, values of the *"2014"* column field go to the arguments, while values of the *"Europe"* row field form series. When **inverted** is **true** - the result is inverted.
+In the example below, toggle the check box to update the **inverted** field. When this field is `false`, values of the *"2014"* column field become the arguments, while values of the *"Europe"* row field form series. When **inverted** is `true`, the result is reversed.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/24_2/DataVisualization/Guides/GridChartIntegration/inverted.html, /Content/Applications/24_2/DataVisualization/Guides/GridChartIntegration/inverted.js"></div>
 
-When the grid contains several data fields, they may be turned into either sets of series or sets of arguments. To specify this, set the **putDataFieldsInto** field to *"series"* or *"args"* correspondingly. By default, this property is set to *"series"*.
+When PivotGrid contains multiple data fields, they can become sets of series or sets of arguments. To specify this behavior, use the **putDataFieldsInto** field and choose *"series"* (default) or *"args"*.
 
----
-##### jQuery
-
-    <!--JavaScript-->pivotGridInstance.bindChart('#chartWidget', {
+    pivotGridInstance.bindChart(chartInstance, {
         // ...
         putDataFieldsInto: "series" // "args"
     });
-        
----
 
-Moreover, several data fields may either alternate on the chart plot or not. To specify this feature, set the **alternateDataFields** field to **true** or **false** respectively. By default, this property is **true**.
+Some data fields may alternate on the Chart plot. To control this behavior, set the **alternateDataFields** field to `true` (default) or `false`.
 
----
-##### jQuery
-
-    <!--JavaScript-->pivotGridInstance.bindChart('#chartWidget', {
+    pivotGridInstance.bindChart(chartInstance, {
         // ...
         alternateDataFields: true // false
     });
 
----
-
-Below, use the set of controls under the UI components to change the **putDataFieldsInto** and **alternateDataFields** fields. You can observe how the *"Total"* and *"Avg"* data fields depend on the values of these fields.
+Below, use the controls under the UI components to change the **putDataFieldsInto** and **alternateDataFields** fields. Observe how the "Total" and "Avg" data fields depend on these values.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/24_2/DataVisualization/Guides/GridChartIntegration/dataFieldsLayout.html, /Content/Applications/24_2/DataVisualization/Guides/GridChartIntegration/dataFieldsLayout.js"></div>
 
-If you need to process data in some specific way, assign a callback function to the **processCell** field. This function will be called for each data cell of the pivot grid.
+To process data in a specific way, assign a callback function to the **processCell** field. This function will be called for each data cell of PivotGrid.
 
----
-##### jQuery
-
-    <!--JavaScript-->pivotGridInstance.bindChart('#chartWidget', {
+    pivotGridInstance.bindChart(chartInstance, {
         // ...
         processCell: function (cellData) {
             // Process data here
             return cellData; // This line is optional
         }
     });
-    
----
 
 The **cellData** argument has the following fields:
 
@@ -101,5 +79,3 @@ The resulting item that will be passed on to the chart data source. The fields o
     The argument of the data item.
     * **val**: <span style="font-size:12px">Number | String | Date</span>      
     The value of the data item.
-    
-In this topic, you have discovered how to process data coming from PivotGrid to Chart using the second argument of the [bindChart(chart, integrationOptions)](/api-reference/10%20UI%20Components/dxPivotGrid/3%20Methods/bindChart(chart_integrationOptions).md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Methods/#bindChartchart_integrationOptions') method. The final topic provides an overview of fields that customize the resulting look of Chart.

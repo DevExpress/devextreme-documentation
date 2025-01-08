@@ -24,7 +24,7 @@ The initial toast position.
     href: "https://js.devexpress.com/Demos//WidgetsGallery/Demo/Toast/Stack/"
 }
 
-To stack toast messages, specify the `position` field in the **stack** object. You can set the position field to a predefined string or an object with coordinates. Note that if you use coordinates for the position field, you need to specify one horizontal and one vertical coordinate only.
+To stack toast messages, specify the `position` field in the **stack** object. You can set the position field to a predefined string or object with coordinates. Note that if you use coordinates for the position field, you need to specify one horizontal and one vertical coordinate only.
 
 The following table lists all predefined strings and their values:
 

@@ -15,6 +15,21 @@ Go to the `NgModule` in which you are going to use DevExtreme UI components and 
     })
     export class AppModule { }
 
+If you use [standalone](https://angular.dev/guide/components) components, import the modules as following:
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import { DxButtonModule } from 'devextreme-angular';
+
+    @Component({
+        selector: 'app-root',
+        standalone: true,
+        imports: [DxButtonModule],
+        templateUrl: './app.component.html',
+        styleUrl: './app.component.css'
+    })
+    export class AppComponent { }
+
 Now you can use the DevExtreme UI component in your application:
 
     <!-- tab: app.component.html -->
@@ -24,13 +39,7 @@ Now you can use the DevExtreme UI component in your application:
     </dx-button>
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    // ...
     export class AppComponent {
         helloWorld() {
             alert('Hello world!');

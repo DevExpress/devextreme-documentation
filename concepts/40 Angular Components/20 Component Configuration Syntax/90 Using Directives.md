@@ -1,13 +1,18 @@
+To change attributes of all components of one type in an app, use [defaultOptions](/Documentation/ApiReference/UI_Components/dxTextBox/Methods/#defaultOptionsrule). To change attributes of multiple specific components, use directives.
+
 When working with [custom directives](https://angular.dev/guide/directives/attribute-directives), follow these steps:
+
 1. Import required components in the `.directive.ts` file. For example, `import { DxButtonComponent } from 'devextreme-angular';`.
 2. Define the components in the constructor. Use the [`@Host`](https://angular.dev/api/core/Host?tab=usage-notes) decorator to access the instance of hosting components. Use the [`@Optional`](https://angular.dev/api/core/Optional?tab=usage-notes) decorator when specifying multiple components.
 3. Use the `ngOnViewInit()` hook to ensure component initialization.
 
-The following code snippet creates a directive that changes "apple" to "banana" in TextArea and TextBox components:
+The following code snippet creates a directive that changes styling mode and switches "apple" to "banana" in TextArea and TextBox components:
 
     <!-- tab: replace.directive.ts -->
     import { Directive, Host, Optional } from '@angular/core';
     import { DxTextBoxComponent, DxTextAreaComponent } from 'devextreme-angular';
+    import { DxTextAreaTypes } from 'devextreme-angular/ui/text-area';
+    import { DxTextBoxTypes } from 'devextreme-angular/ui/text-box';
 
     @Directive({
         selector: '[appReplace]',
@@ -23,16 +28,18 @@ The following code snippet creates a directive that changes "apple" to "banana" 
             this.component = textBox || textArea;
         }
 
-        replaceApple(value: string) {
-            return value.replace(/apple/g, 'banana');
+        replaceApple(e: DxTextAreaTypes.FocusOutEvent & DxTextBoxTypes.FocusOutEvent) {
+            const value = e.component.option('value');
+            e.component.option('value', value?.replace(/apple/g, 'banana'));
         }  
 
         ngAfterViewInit() {
-            this.component.instance.option('onFocusOut', (e: any) => {
-                const value = e.component.option('value');
-                console.log('Original value:', value);
-                e.component.option('value', this.replaceApple(value));
-            });
+            this.component.instance.option('stylingMode', 'filled');
+            this.component.instance.on('focusOut', this.replaceApple);
+        }
+
+        ngOnDestroy() {
+            this.component.instance.off('focusOut');
         }
     }
 

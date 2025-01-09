@@ -4,6 +4,7 @@ on: [push, pull_request]
 
 env:
   nodeVersion: 14.x
+  dotNetVersion: 6.0.x
 
 jobs:
 
@@ -19,6 +20,11 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ env.nodeVersion }}
+
+    - name: Set up .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: ${{ env.dotNetVersion }}
 
     - name: Install dependencies
       run: npm install
@@ -46,6 +52,11 @@ jobs:
       with:
         node-version: ${{ env.nodeVersion }}
 
+    - name: Set up .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: ${{ env.dotNetVersion }}
+
     - name: Install dependencies
       run: npm install
 
@@ -71,6 +82,11 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ env.nodeVersion }}
+
+    - name: Set up .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: ${{ env.dotNetVersion }}
 
     - name: Install dependencies
       run: npm install
@@ -100,6 +116,11 @@ jobs:
   #     uses: actions/setup-node@v3
   #     with:
   #       node-version: ${{ env.nodeVersion }}
+
+  #   - name: Set up .NET
+  #     uses: actions/setup-dotnet@v4
+  #     with:
+  #       dotnet-version: ${{ env.dotNetVersion }}
 
   #   - name: Install dependencies
   #     run: npm install

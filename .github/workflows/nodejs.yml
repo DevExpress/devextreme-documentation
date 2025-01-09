@@ -4,6 +4,7 @@ on: [push, pull_request]
 
 env:
   nodeVersion: 14.x
+  dotNetVersion: 6.0.x
 
 jobs:
 
@@ -13,12 +14,17 @@ jobs:
     steps:
 
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Setup Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ env.nodeVersion }}
+
+    - name: Set up .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: ${{ env.dotNetVersion }}
 
     - name: Install dependencies
       run: npm install
@@ -39,12 +45,17 @@ jobs:
     steps:
 
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Setup Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ env.nodeVersion }}
+
+    - name: Set up .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: ${{ env.dotNetVersion }}
 
     - name: Install dependencies
       run: npm install
@@ -65,12 +76,17 @@ jobs:
     steps:
 
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Setup Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ env.nodeVersion }}
+
+    - name: Set up .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: ${{ env.dotNetVersion }}
 
     - name: Install dependencies
       run: npm install
@@ -94,12 +110,17 @@ jobs:
   #   steps:
 
   #   - name: Checkout
-  #     uses: actions/checkout@v3
+  #     uses: actions/checkout@v4
 
   #   - name: Setup Node.js
-  #     uses: actions/setup-node@v3
+  #     uses: actions/setup-node@v4
   #     with:
   #       node-version: ${{ env.nodeVersion }}
+
+  #   - name: Set up .NET
+  #     uses: actions/setup-dotnet@v4
+  #     with:
+  #       dotnet-version: ${{ env.dotNetVersion }}
 
   #   - name: Install dependencies
   #     run: npm install

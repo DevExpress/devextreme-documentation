@@ -13,7 +13,7 @@ If you use [standalone](https://angular.dev/guide/components) components, import
     })
     export class AppComponent { }
     
-If you use `NgModule`, import the necessary DevExtreme modules as demonstrated in the following code snippet. If [tree shaking](/concepts/40%20Angular%20Components/40%20Common%20Features/10%20Tree%20Shaking.md '/Documentation/Guide/Angular_Components/Common_Features/Tree_Shaking/') is configured in your application, import the modules from `devextreme-angular`. If not, import them from specific files.
+If you use `NgModule`, import the DevExtreme modules as demonstrated in the following code snippet. If [tree shaking](/concepts/40%20Angular%20Components/40%20Common%20Features/10%20Tree%20Shaking.md '/Documentation/Guide/Angular_Components/Common_Features/Tree_Shaking/') is configured in your application, import the modules from `devextreme-angular`. If not, import them from files.
 
     <!-- tab: app.module.ts -->
     // ...

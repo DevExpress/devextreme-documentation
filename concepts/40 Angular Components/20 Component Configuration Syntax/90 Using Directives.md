@@ -1,4 +1,4 @@
-To change attributes of all components of one type in an app, use [defaultOptions](/Documentation/ApiReference/UI_Components/dxTextBox/Methods/#defaultOptionsrule). To change attributes of multiple specific components, use directives.
+To change attributes of all components of one type in an app, use [defaultOptions](/Documentation/ApiReference/UI_Components/dxTextBox/Methods/#defaultOptionsrule). To change attributes of multiple components, use directives.
 
 When working with [custom directives](https://angular.dev/guide/directives/attribute-directives), follow these steps:
 
@@ -6,7 +6,7 @@ When working with [custom directives](https://angular.dev/guide/directives/attri
 2. Define the components in the constructor. Use the [`@Host`](https://angular.dev/api/core/Host?tab=usage-notes) decorator to access the instance of hosting components. Use the [`@Optional`](https://angular.dev/api/core/Optional?tab=usage-notes) decorator when specifying multiple components.
 3. Use the `ngOnViewInit()` hook to ensure component initialization.
 
-The following code snippet creates a directive that changes styling mode and switches "apple" to "banana" in TextArea and TextBox components:
+The following code snippet creates a directive that changes the style and switches "apple" to "banana" in the TextArea and TextBox components:
 
     <!-- tab: replace.directive.ts -->
     import { Directive, Host, Optional } from '@angular/core';

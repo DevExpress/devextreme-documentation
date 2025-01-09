@@ -1,4 +1,4 @@
-If you use [standalone](https://angular.dev/guide/components) components, import the modules as following:
+If you use [standalone](https://angular.dev/guide/components) components, import the modules as shown below:
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';

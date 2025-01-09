@@ -39,7 +39,7 @@ The following code snippet creates a directive that changes styling mode and swi
         }
 
         ngOnDestroy() {
-            this.component.instance.off('focusOut');
+            this.component.instance.off('focusOut', this.replaceApple);
         }
     }
 

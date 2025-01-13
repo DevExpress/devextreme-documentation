@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 references: dxValidator.Options.onDisposing
 uid: ui/validator:DisposingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

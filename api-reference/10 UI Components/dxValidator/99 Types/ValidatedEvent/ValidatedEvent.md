@@ -4,6 +4,7 @@ export: ValidatedEvent
 type: Object
 references: dxValidator.Options.onValidated
 uid: ui/validator:ValidatedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

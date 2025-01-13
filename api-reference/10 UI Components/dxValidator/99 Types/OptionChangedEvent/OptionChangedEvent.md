@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 references: dxValidator.Options.onOptionChanged
 uid: ui/validator:OptionChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

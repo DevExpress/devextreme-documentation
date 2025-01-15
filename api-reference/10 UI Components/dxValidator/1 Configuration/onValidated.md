@@ -12,7 +12,7 @@ Information about the event.
 ##### field(validatedInfo.brokenRule): ValidationRule
 The object that represents the first broken rule on the list of specified validation rules.
 
-##### field(validatedInfo.brokenRules): ValidationRule
+##### field(validatedInfo.brokenRules): Array<ValidationRule>
 An array of [validationRules](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/') that failed to pass the check.
 
 ##### field(validatedInfo.isValid): Boolean

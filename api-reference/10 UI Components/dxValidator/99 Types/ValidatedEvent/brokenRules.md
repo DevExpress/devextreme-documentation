@@ -1,5 +1,5 @@
 ---
-type: ValidationRule
+type: Array<ValidationRule>
 uid: ui/validator:ValidatedEvent.brokenRules
 ---
 ---

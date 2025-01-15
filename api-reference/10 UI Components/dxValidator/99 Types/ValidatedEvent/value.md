@@ -1,5 +1,5 @@
 ---
-type: any
+type: Object
 uid: ui/validator:ValidatedEvent.value
 ---
 ---

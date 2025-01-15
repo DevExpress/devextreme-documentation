@@ -27,7 +27,7 @@ Indicates the validation [status](/api-reference/10%20UI%20Components/dxValidato
 ##### field(validatedInfo.validationRules): Array<ValidationRule>
 An array of validation rules specified for the current **dxValidator** object.
 
-##### field(validatedInfo.value): any
+##### field(validatedInfo.value): Object
 The validated value.
 
 ---

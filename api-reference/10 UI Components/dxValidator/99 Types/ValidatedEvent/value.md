@@ -4,7 +4,7 @@ uid: ui/validator:ValidatedEvent.value
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The validated value.
 
 ---
 <!-- Description goes here -->

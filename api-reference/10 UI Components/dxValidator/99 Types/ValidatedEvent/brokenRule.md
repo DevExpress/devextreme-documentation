@@ -4,7 +4,7 @@ uid: ui/validator:ValidatedEvent.brokenRule
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The object that represents the first broken rule on the list of specified validation rules.
 
 ---
 <!-- Description goes here -->

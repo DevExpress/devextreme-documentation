@@ -4,7 +4,7 @@ uid: ui/validator:ValidatedEvent.validationRules
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An array of validation rules specified for the current **dxValidator** object.
 
 ---
 <!-- Description goes here -->

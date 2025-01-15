@@ -4,7 +4,7 @@ uid: ui/validator:ValidatedEvent.isValid
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Indicates whether the value satisfies all rules.
 
 ---
 <!-- Description goes here -->

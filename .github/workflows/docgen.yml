@@ -29,6 +29,11 @@ jobs:
             version: 9
             run_install: false
 
+        - name: Set up .NET
+          uses: actions/setup-dotnet@v4
+          with:
+            dotnet-version: 6.0.x
+
         - name: NPM - devextreme
           working-directory: devextreme
           run: pnpm install

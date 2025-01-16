@@ -3,6 +3,7 @@ id: AsyncRule
 type: Object
 module: common
 export: AsyncRule
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

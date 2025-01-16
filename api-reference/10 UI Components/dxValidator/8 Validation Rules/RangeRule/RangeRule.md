@@ -3,6 +3,7 @@ id: RangeRule
 type: Object
 module: common
 export: RangeRule
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

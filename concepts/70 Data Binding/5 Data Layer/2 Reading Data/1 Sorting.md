@@ -1,8 +1,8 @@
 [DataSources](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') and [Stores](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores') use sort expressions to specify sorting conditions and direction.
 
-For an example, declare  a **Person** class.
+For example, declare a **Person** class:
 
-    <!--JavaScript-->var Person = function(firstName, lastName, city) {
+    <!--JavaScript-->const Person = function(firstName, lastName, city) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = {
@@ -13,20 +13,20 @@ For an example, declare  a **Person** class.
         return this.firstName + " " + this.lastName;
     };
 
-After the **Person** class is created, declare a **data** array holding several instances of this class.
+Declare a **data** array with multiple instances of the **Person** class:
 
-    <!--JavaScript-->var data = [
+    <!--JavaScript-->const data = [
         new Person("John", "Smith", "San Francisco"),
         new Person("John", "Doe", "New York"),
         new Person("Xavier", "Gomez", "Denver"),
         new Person("Xavier", "Lee", "New Mexico")
     ];
 
-Create a simple [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/').
+Create [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/'):
 
-    <!--JavaScript-->var dataSource = new DevExpress.data.DataSource(data);
+    <!--JavaScript-->const dataSource = new DevExpress.data.DataSource(data);
 
-The sorting condition can be specified using the [sort](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/sort.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#sort') configuration property or the [sort(sortExpr)](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/sort(sortExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#sortsortExpr') method of the DataSource. The value assigned to the property or passed to the method is a sorting expression, which can have one of the following formats.
+Specify the sorting condition with the [sort](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/sort.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#sort') configuration property or the [sort(sortExpr)](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/sort(sortExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#sortsortExpr') method of the DataSource. You can pass a sorting expression to the property/method in one of the following formats:
 
 - **A single expression**
 
@@ -35,7 +35,7 @@ The sorting condition can be specified using the [sort](/api-reference/30%20Data
             // 'result' contains the 'data' array items sorted by 'lastName'
         });
 
- To sort data in descending order, pass an object containing the **getter** (**field** or **selector** - they are equivalents) and **desc** properties to the sort method.
+ To sort data in descending order, pass an object containing the **getter** (**field** or **selector** - they are equivalents) and **desc** properties to the sort method:
 
         <!--JavaScript-->dataSource.sort({ getter: "lastName", desc: true });
         dataSource.load().done(function(result) {
@@ -66,7 +66,7 @@ The sorting condition can be specified using the [sort](/api-reference/30%20Data
             // 'result' contains the 'data' array items sorted by 'fullName' and then by 'address.city' in the descending order
         });
 
- You can pass an array of expressions instead of using several arguments.
+ You can pass an array of expressions instead of using multiple arguments.
 
         <!--JavaScript-->dataSource.sort([
             "firstName",
@@ -80,7 +80,7 @@ The sorting condition can be specified using the [sort](/api-reference/30%20Data
 
 [Stores](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores') support the same sort expression syntax as the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/').
 
-    <!--JavaScript-->var arrayStore = new DevExpress.data.ArrayStore(data);
+    <!--JavaScript-->const arrayStore = new DevExpress.data.ArrayStore(data);
     arrayStore
         .load({
             sort: [

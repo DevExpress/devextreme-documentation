@@ -1,4 +1,4 @@
-To change attributes of all components of one type in an app, use [defaultOptions](/Documentation/ApiReference/UI_Components/dxTextBox/Methods/#defaultOptionsrule). To change attributes of multiple components, use directives.
+To change attributes of all components of one type in an app, use [defaultOptions](/api-reference/10%20UI%20Components/DOMComponent/3%20Methods/defaultOptions(rule).md '/Documentation/ApiReference/UI_Components/dxTextBox/Methods/#defaultOptionsrule'). To change attributes of multiple components, use directives.
 
 When working with [custom directives](https://angular.dev/guide/directives/attribute-directives), follow these steps:
 

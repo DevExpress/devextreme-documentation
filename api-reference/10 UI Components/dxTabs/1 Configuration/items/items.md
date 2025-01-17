@@ -7,10 +7,10 @@ inheritsType: dxTabsItem
 The **items** array can contain:
 
 - Strings
-- Objects with fields described in this section
+- Objects with fields described in this section. If you want use other fields, specify the [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '{basewidgetpath}/Configuration/#itemTemplate').
 - Objects with any other fields. In this case, specify the [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '{basewidgetpath}/Configuration/#itemTemplate').
 
-If you need to update the UI component items, reassign the entire **items** array as shown in the following example:
+If you need to update the UI component items, reassign the **items** array as shown in the following example:
 
     <!--JavaScript-->
     {widgetName}Instance.option('items', newItems);

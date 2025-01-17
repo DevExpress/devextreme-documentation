@@ -8,7 +8,7 @@ If you are already familiar with React, we recommend that you read the following
 
 [note] DevExtreme provides two React UI component libraries: DevExtreme React UI Components described here and <a href="https://github.com/DevExpress/devextreme-reactive/blob/master/README.md" target="_blank">DevExtreme Reactive Components</a>. Refer to <a href="https://community.devexpress.com/blogs/oliver/archive/2018/04/20/devextreme-new-react-wrappers-vs-native-react-components.aspx" target="_blank">this blog post</a> for a detailed comparison of the two libraries.
 
-The DevExtreme React Component Suite is a feature-complete set of [70+ responsive and touch-enabled UI components](https://js.devexpress.com/Overview/Widgets/) for React applications. The suite includes a data grid, interactive charts, data editors, navigation and multi-purpose UI components.
+The DevExtreme React Component Suite is a feature-complete set of [80 responsive and touch-enabled UI components](https://js.devexpress.com/Overview/Widgets/) for React applications. The suite includes a data grid, interactive charts, data editors, navigation and multi-purpose UI components.
 
 The DevExtreme React UI Component Suite provides the following platform-specific features:
 

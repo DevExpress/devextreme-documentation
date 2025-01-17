@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.cssClass
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

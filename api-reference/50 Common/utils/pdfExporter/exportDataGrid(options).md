@@ -1,6 +1,6 @@
 ---
 id: pdfExporter.exportDataGrid(options)
-module: pdf_exporter
+module: common/export/pdf
 export: exportDataGrid
 ---
 ---

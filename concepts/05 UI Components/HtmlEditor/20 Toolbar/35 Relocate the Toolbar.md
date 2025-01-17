@@ -1,6 +1,6 @@
-The toolbar occupies the top part of the HtmlEditor and is rendered inside the UI component's container. To relocate the toolbar, specify a different [container](/api-reference/_hidden/dxHtmlEditorToolbar/container.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/#container') for the toolbar.
+The toolbar occupies the top part of the HTML Editor and is rendered inside the UI component's container. To relocate the toolbar, specify a different [container](/api-reference/_hidden/dxHtmlEditorToolbar/container.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/#container') for the toolbar.
 
-In the following code, the toolbar is placed in a separate `<div>` under the HtmlEditor:
+In the following code, the toolbar is placed in a separate `<div>` under the HTML Editor:
 
 ---
 ##### jQuery

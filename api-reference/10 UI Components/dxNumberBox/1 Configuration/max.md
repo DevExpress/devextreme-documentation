@@ -1,6 +1,6 @@
 ---
 id: dxNumberBox.Options.max
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

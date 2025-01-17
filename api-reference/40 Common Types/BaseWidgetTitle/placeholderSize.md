@@ -1,6 +1,6 @@
 ---
 uid: viz/core/base_widget:BaseWidgetTitle.placeholderSize
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

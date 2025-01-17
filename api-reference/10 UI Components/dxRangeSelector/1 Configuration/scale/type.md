@@ -1,6 +1,6 @@
 ---
 id: dxRangeSelector.Options.scale.type
-type: Enums.AxisScale
+type: Enums.AxisScale | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: DateBoxBase.Options.dateSerializationFormat
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

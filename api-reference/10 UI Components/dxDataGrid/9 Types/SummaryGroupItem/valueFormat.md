@@ -1,6 +1,6 @@
 ---
 uid: ui/data_grid:SummaryGroupItem.valueFormat
-type: Format
+type: Format | undefined
 default: undefined
 ---
 ---

@@ -30,8 +30,8 @@ To create a base Menu level, define the component in the markup and populate it 
         <head>
             <!-- ... -->
             <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_23_2/css/dx.light.css">
-            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_23_2/js/dx.all.js"></script>
+            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_24_2/css/dx.light.css">
+            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_24_2/js/dx.all.js"></script>
             <script type="text/javascript" src="index.js"></script>
             <link rel="stylesheet" type="text/css" href="index.css">
         </head>

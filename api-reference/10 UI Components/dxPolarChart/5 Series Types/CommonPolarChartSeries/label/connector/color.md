@@ -1,6 +1,6 @@
 ---
 id: dxPolarChartSeriesTypes.CommonPolarChartSeries.label.connector.color
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

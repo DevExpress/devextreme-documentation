@@ -1,6 +1,6 @@
 ---
 id: dxFileManagerDetailsColumn.dataType
-type: Enums.DataType
+type: Enums.DataType | undefined
 default: undefined
 ---
 ---

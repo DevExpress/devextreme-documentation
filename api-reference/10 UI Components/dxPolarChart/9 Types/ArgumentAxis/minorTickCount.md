@@ -1,6 +1,6 @@
 ---
 uid: viz/polar_chart:ArgumentAxis.minorTickCount
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

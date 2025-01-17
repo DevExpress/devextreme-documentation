@@ -1,6 +1,6 @@
 ---
 id: PdfExportDataGridProps.jsPDFDocument
-type: Object
+type: Object | undefined
 default: undefined
 ---
 ---

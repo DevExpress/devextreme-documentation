@@ -1,6 +1,6 @@
 ---
 id: dxFileManagerDetailsColumn.width
-type: Number | String
+type: Number | String | undefined
 default: undefined
 ---
 ---

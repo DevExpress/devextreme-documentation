@@ -1,7 +1,7 @@
 ---
 notUsedInTheme: 
 uid: viz/chart:ArgumentAxis.minVisualRangeLength
-type: Number | Object | Enums.TimeInterval
+type: Number | Object | Enums.TimeInterval | undefined
 default: undefined
 ---
 ---

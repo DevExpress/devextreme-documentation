@@ -1,6 +1,6 @@
 ---
 id: dxPopover.Options.hideEvent.name
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

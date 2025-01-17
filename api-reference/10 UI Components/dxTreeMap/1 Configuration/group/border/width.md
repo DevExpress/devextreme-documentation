@@ -1,6 +1,6 @@
 ---
 id: dxTreeMap.Options.group.border.width
-type: Number
+type: Number | undefined
 default: 1
 ---
 ---

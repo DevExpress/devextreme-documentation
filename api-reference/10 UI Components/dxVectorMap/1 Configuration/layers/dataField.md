@@ -1,6 +1,6 @@
 ---
 id: dxVectorMap.Options.layers.dataField
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

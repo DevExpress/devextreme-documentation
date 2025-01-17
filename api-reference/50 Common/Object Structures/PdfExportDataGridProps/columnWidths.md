@@ -1,6 +1,6 @@
 ---
 id: PdfExportDataGridProps.columnWidths
-type: Array<Number>
+type: Array<Number> | undefined
 default: undefined
 ---
 ---

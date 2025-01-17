@@ -1,6 +1,6 @@
 ---
 uid: viz/chart_components/base_chart:BaseChartLegend.markerTemplate
-type: template
+type: template | undefined
 default: undefined
 ---
 ---

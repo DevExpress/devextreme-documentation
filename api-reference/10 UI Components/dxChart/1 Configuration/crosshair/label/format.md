@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.crosshair.label.format
-type: Format
+type: Format | undefined
 default: undefined
 ---
 ---

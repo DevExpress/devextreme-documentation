@@ -11,9 +11,4 @@ The Lookup component meets a variety of <a href="https://www.access-board.gov/ic
         <td>1.4.3 Contrast (Minimum) (Level AA) <br> 1.4.11 Non-text Contrast (Level AA 2.1 and 2.2)</td>
         <td>Lookup does not support Windows High Contrast themes.</td>
     </tr>
-    <tr>
-        <td>-</td>
-        <td>2.4.11 Focus Not Obscured (Minimum) (Level AA 2.2 only)</td>
-        <td>Lookup does not meet this criterion. </td>
-    </tr>
 </table>

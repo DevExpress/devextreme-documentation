@@ -1,6 +1,6 @@
 ---
 uid: viz/gauges/base_gauge:BaseGaugeScale.minorTickInterval
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

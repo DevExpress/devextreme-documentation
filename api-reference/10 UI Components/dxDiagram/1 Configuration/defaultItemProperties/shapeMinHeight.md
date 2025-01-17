@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.defaultItemProperties.shapeMinHeight
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

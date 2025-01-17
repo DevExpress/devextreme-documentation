@@ -1,6 +1,6 @@
 ---
 id: dxPolarChart.Options.customizeAnnotation
-type: function(annotation)
+type: function(annotation) | undefined
 default: undefined
 notUsedInTheme: 
 ---

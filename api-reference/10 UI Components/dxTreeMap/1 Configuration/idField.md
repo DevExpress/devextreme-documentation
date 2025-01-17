@@ -1,6 +1,6 @@
 ---
 id: dxTreeMap.Options.idField
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

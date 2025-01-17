@@ -1,6 +1,6 @@
 ---
 id: dxFormSimpleItem.dataField
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

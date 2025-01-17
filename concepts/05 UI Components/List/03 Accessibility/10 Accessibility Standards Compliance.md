@@ -12,19 +12,9 @@ The List component meets a variety of <a href="https://www.access-board.gov/ict/
         <td>List does not support Windows High Contrast themes.</td>
     </tr>
     <tr>
-        <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
-        <td>2.1.1 Keyboard (Level A)</td>
-        <td>List does not collapse groups.</td>
-    </tr>
-    <tr>
         <td>-</td>
         <td>2.5.7 Dragging Movements (Level AA 2.2 only)</td>
         <td>If <a href="/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemDragging">itemDragging</a> is enabled, the List component does not meet this criterion.</td>
-    </tr>
-    <tr>
-        <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
-        <td>4.1.2 Name, Role, Value (Level A)</td>
-        <td>List does not pronounce groups in the grouped list mode.</td>
     </tr>
     <tr>
         <td>502.3.10 List of Actions<br>11.5.2.11 List of available actions</td>

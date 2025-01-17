@@ -1,6 +1,6 @@
 ---
 id: dxVectorMapCommonAnnotationConfig.customizeTooltip
-type: function(annotation)
+type: function(annotation) | undefined
 default: undefined
 notUsedInTheme: 
 ---

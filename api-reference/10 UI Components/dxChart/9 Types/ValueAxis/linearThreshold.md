@@ -1,6 +1,6 @@
 ---
 uid: viz/chart:ValueAxis.linearThreshold
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

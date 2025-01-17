@@ -1,6 +1,6 @@
 ---
 uid: viz/polar_chart:ValueAxisStrips.endValue
-type: Number | Date | String
+type: Number | Date | String | undefined
 default: undefined
 ---
 ---

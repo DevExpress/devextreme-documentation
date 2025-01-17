@@ -1,6 +1,6 @@
 ---
 id: dxHtmlEditorImageUpload.uploadDirectory
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

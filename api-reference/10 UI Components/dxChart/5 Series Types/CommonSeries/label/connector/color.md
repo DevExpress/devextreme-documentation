@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.label.connector.color
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

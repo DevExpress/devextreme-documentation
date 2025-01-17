@@ -1,6 +1,6 @@
 ---
 id: DataSource.Options.searchOperation
-type: Enums.SearchOperation
+type: Object
 default: 'contains'
 ---
 ---

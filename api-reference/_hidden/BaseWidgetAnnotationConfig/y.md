@@ -1,6 +1,6 @@
 ---
 id: BaseWidgetAnnotationConfig.y
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

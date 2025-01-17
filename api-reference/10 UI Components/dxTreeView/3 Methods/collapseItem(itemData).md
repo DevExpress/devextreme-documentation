@@ -18,7 +18,7 @@ Specifies whether the UI component item responds to user interaction.
 ##### field(itemData.expanded): Boolean
 Specifies whether or not the tree view item is displayed expanded.
 
-##### field(itemData.hasItems): Boolean
+##### field(itemData.hasItems): Boolean | undefined
 Specifies whether or not the tree view item has children.
 
 ##### field(itemData.html): String
@@ -27,13 +27,13 @@ Specifies the HTML markup to be inserted into the item element.
 ##### field(itemData.icon): String
 Specifies the tree view item's icon.
 
-##### field(itemData.id): Number | String
+##### field(itemData.id): Number | String | undefined
 Holds the unique key of an item.
 
 ##### field(itemData.items): Array<dxTreeViewItem>
 Specifies nested tree view items.
 
-##### field(itemData.parentId): Number | String
+##### field(itemData.parentId): Number | String | undefined
 Holds the key of the parent item.
 
 ##### field(itemData.selected): Boolean

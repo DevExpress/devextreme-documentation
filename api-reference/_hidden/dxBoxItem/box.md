@@ -1,6 +1,6 @@
 ---
 id: dxBoxItem.box
-type: dxBox_Options
+type: dxBox_Options | undefined
 default: undefined
 ---
 ---

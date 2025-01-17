@@ -1,6 +1,6 @@
 ---
 id: dxPopover.Options.showEvent
-type: Object | String
+type: Object | String | undefined
 default: undefined
 ---
 ---

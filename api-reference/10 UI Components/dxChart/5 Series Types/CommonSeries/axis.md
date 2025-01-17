@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.axis
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

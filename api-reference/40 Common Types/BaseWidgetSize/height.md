@@ -1,6 +1,6 @@
 ---
 uid: viz/core/base_widget:BaseWidgetSize.height
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

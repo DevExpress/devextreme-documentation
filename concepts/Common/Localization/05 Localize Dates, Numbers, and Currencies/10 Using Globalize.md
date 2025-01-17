@@ -1,3 +1,11 @@
+[important]
+
+The Globalize package is outdated and potentially insecure. Reports from the Snyk security checker highlight vulnerabilities associated with this package.
+
+Use Globalize at your own risk. In v25.1, we will remove Globalize from our installation, templates, and demos. We recommend switching to Intl for a more secure solution.
+
+[/important]
+
 ---
 ##### React
 [important] React projects created with the [Create React App](https://facebook.github.io/create-react-app) <a href="https://github.com/facebook/create-react-app/issues/4508" target="_blank">do not support Globalize</a>. [DevExtreme React Template](/concepts/50%20React%20Components/50%20Application%20Template/00%20Application%20Template.md '/Documentation/Guide/React_Components/Application_Template/') is one of such projects. [Use Intl](/concepts/Common/Localization/05%20Localize%20Dates%2C%20Numbers%2C%20and%20Currencies/05%20Using%20Intl.md '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/Using_Intl') in these projects instead.
@@ -34,9 +42,9 @@ To include these components, you can use CDN or npm.
             <script src="https://cdnjs.cloudflare.com/ajax/libs/globalize/1.3.0/globalize/currency.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/globalize/1.3.0/globalize/date.min.js"></script>
             <!-- DevExtreme library -->
-            <script src="https://cdn3.devexpress.com/jslib/minor_23_2/js/dx.all.js"></script>
+            <script src="https://cdn3.devexpress.com/jslib/minor_24_2/js/dx.all.js"></script>
             <!-- Dictionary files for German language -->
-            <script src="https://cdn3.devexpress.com/jslib/minor_23_2/js/localization/dx.messages.de.js"></script>
+            <script src="https://cdn3.devexpress.com/jslib/minor_24_2/js/localization/dx.messages.de.js"></script>
             <!-- Common and language-specific CLDR data -->
             <script src="https://unpkg.com/devextreme-cldr-data/supplemental.js"></script>
             <script src="https://unpkg.com/devextreme-cldr-data/de.js"></script>

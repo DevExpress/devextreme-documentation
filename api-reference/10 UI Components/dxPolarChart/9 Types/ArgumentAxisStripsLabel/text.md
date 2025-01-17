@@ -1,6 +1,6 @@
 ---
 uid: viz/polar_chart:ArgumentAxisStripsLabel.text
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

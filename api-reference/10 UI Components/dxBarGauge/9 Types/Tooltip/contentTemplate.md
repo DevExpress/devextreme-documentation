@@ -1,6 +1,6 @@
 ---
 uid: viz/bar_gauge:Tooltip.contentTemplate
-type: template
+type: template | undefined
 default: undefined
 ---
 ---

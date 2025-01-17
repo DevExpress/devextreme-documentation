@@ -1,6 +1,6 @@
 ---
 id: dxFormSimpleItem.helpText
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

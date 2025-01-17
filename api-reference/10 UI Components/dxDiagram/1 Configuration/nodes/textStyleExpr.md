@@ -1,6 +1,6 @@
 ---
 id: dxDiagram.Options.nodes.textStyleExpr
-type: String | function(data, value)
+type: String | function(data, value) | undefined
 default: undefined
 ---
 ---

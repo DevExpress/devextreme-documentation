@@ -1,7 +1,7 @@
 ---
 acceptValues: undefined
 uid: ui/data_grid:SortByGroupSummaryInfoItem.sortOrder
-type: Enums.SortOrder
+type: Enums.SortOrder | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxSplitterItem.minSize
-type: Number | String
+type: Number | String | undefined
 default: undefined
 ---
 ---

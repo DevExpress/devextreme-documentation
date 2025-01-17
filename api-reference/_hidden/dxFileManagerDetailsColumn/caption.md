@@ -1,6 +1,6 @@
 ---
 id: dxFileManagerDetailsColumn.caption
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

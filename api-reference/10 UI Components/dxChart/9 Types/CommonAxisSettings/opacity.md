@@ -1,6 +1,6 @@
 ---
 uid: viz/chart:CommonAxisSettings.opacity
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

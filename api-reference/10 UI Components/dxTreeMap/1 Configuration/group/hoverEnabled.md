@@ -1,6 +1,6 @@
 ---
 id: dxTreeMap.Options.group.hoverEnabled
-type: Boolean
+type: Boolean | undefined
 default: undefined
 ---
 ---

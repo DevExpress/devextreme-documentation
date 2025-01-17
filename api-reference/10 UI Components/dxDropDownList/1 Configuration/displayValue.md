@@ -1,6 +1,6 @@
 ---
 id: dxDropDownList.Options.displayValue
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

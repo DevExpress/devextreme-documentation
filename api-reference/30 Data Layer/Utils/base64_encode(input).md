@@ -1,6 +1,6 @@
 ---
 id: Utils.base64_encode(input)
-module: data/utils
+module: common/data
 export: base64_encode
 ---
 ---

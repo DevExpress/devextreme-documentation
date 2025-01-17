@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.dataType
-type: Enums.DataType
+type: Enums.DataType | undefined
 default: undefined
 ---
 ---

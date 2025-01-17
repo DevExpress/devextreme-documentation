@@ -1,6 +1,6 @@
 ---
 id: dxTreeMap.Options.group.hoverStyle.border.width
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.valueErrorBar.type
-type: Enums.ValueErrorBarType
+type: Enums.ValueErrorBarType | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxBullet.Options.endScaleValue
-type: Number
+type: Number | undefined
 default: undefined
 notUsedInTheme: 
 ---

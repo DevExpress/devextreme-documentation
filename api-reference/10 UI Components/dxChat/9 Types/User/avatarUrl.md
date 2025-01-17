@@ -1,11 +1,10 @@
 ---
 id: User.avatarUrl
 type: String
-default: ''
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An avatar URL.
 
 ---
 <!-- Description goes here -->

@@ -6,7 +6,21 @@ inherits: Widget,DataHelperMixin
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The Chat UI component is an interactive interface that allows users to send and receive messages in real time.
+
+##### widgettree
+
+##### lib
+dx.web.js, dx.all.js
 
 ---
-<!-- Description goes here -->
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Chat/Overview/"
+}
+#include common-tutorialbutton with {
+    url: "/Documentation/Guide/UI_Components/Chat/Getting_Started_with_Chat/"
+}
+
+#####See Also#####
+#include common-link-setupdevextreme
+#include common-link-configurewidget

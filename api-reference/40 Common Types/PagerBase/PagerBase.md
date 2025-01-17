@@ -1,6 +1,6 @@
 ---
 id: PagerBase
-module: common
+module: ui/pagination
 export: PagerBase
 hidden: 
 type: Object

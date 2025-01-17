@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.minWidth
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

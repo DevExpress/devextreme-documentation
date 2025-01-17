@@ -1,6 +1,6 @@
 ---
 id: dxPopover.Options.showEvent.delay
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

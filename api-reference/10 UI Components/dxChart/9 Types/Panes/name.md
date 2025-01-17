@@ -1,6 +1,6 @@
 ---
 uid: viz/chart:Panes.name
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

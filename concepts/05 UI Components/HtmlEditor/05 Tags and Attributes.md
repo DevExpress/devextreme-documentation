@@ -1,4 +1,4 @@
-HtmlEditor generates the following HTML tags and attributes:
+HTML Editor generates the following HTML tags and attributes:
 
 **HTML Tags**
 
@@ -83,4 +83,4 @@ HtmlEditor generates the following HTML tags and attributes:
  </tr>
 </table>
 
-[note] The mentioned attributes are generated automatically. If you pass custom values such as custom classes, HtmlEditor may not properly process these attributes.
+[note] The mentioned attributes are generated automatically. If you pass custom values such as custom classes, HTML Editor may not properly process these attributes.

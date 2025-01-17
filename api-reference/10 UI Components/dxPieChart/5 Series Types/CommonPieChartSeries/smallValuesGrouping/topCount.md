@@ -1,6 +1,6 @@
 ---
 id: dxPieChartSeriesTypes.CommonPieChartSeries.smallValuesGrouping.topCount
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

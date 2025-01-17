@@ -1,6 +1,6 @@
 ---
 uid: viz/gauges/base_gauge:BaseGaugeScaleLabel.format
-type: Format
+type: Format | undefined
 default: undefined
 ---
 ---

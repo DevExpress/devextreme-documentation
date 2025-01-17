@@ -1,6 +1,6 @@
 ---
 id: BaseWidget.Options.tooltip.border.opacity
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

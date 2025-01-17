@@ -1,8 +1,9 @@
 ---
 id: ChangedOptionInfo
-module: events/index
+module: common/core/events
 export: ChangedOptionInfo
 generateTypeLink: 
+type: Object
 ---
 ---
 ##### shortDescription

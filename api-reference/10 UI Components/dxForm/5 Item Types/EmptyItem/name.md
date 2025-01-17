@@ -1,6 +1,6 @@
 ---
 id: dxFormEmptyItem.name
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

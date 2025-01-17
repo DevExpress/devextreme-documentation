@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.caption
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

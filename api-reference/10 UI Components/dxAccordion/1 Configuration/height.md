@@ -1,6 +1,6 @@
 ---
 id: dxAccordion.Options.height
-type: Number | String | function()
+type: Number | String | function() | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.sortingMethod
-type: function(value1, value2)
+type: function(value1, value2) | undefined
 default: undefined
 ---
 ---

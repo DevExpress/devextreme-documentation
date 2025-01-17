@@ -1,6 +1,6 @@
 ---
 uid: ui/data_grid:SortByGroupSummaryInfoItem.summaryItem
-type: String | Number
+type: String | Number | undefined
 default: undefined
 ---
 ---

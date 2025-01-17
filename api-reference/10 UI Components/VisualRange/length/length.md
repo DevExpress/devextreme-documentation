@@ -1,6 +1,6 @@
 ---
 id: VisualRange.length
-type: Number | Object | Enums.TimeInterval
+type: Number | Object | Enums.TimeInterval | undefined
 inherits: VizTimeInterval
 default: undefined
 ---

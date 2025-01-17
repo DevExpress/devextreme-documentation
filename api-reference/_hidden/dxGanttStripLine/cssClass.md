@@ -1,6 +1,6 @@
 ---
 id: dxGanttStripLine.cssClass
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

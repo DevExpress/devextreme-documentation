@@ -1,6 +1,6 @@
 ---
 id: GridBase.Options.columnChooser.sortOrder
-type: Enums.SortOrder
+type: Enums.SortOrder | undefined
 default: undefined
 ---
 ---

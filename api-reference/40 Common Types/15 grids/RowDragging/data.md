@@ -1,6 +1,6 @@
 ---
 uid: common/grids:RowDragging.data
-type: any
+type: any | undefined
 default: undefined
 ---
 ---

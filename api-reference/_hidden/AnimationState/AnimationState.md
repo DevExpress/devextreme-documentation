@@ -1,7 +1,7 @@
 ---
 id: AnimationState
 type: Object
-module: animation/fx
+module: common/core/animation
 export: AnimationState
 ---
 ---

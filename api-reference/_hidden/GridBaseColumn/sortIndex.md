@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.sortIndex
-type: Number
+type: Number | undefined
 default: undefined
 firedEvents: optionChanged
 ---

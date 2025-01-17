@@ -1,6 +1,6 @@
 ---
 uid: viz/core/base_widget:BaseWidgetTooltip.format
-type: Format
+type: Format | undefined
 default: undefined
 ---
 ---

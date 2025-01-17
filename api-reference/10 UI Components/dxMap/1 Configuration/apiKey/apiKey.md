@@ -121,4 +121,8 @@ If you have more than one map provider in your application, specify the keys in 
 
 ---
 
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/ProvidersAndTypes/"
+}
+
 [note] The value of this property cannot be changed dynamically.

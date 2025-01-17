@@ -1,6 +1,6 @@
 ---
 uid: viz/bar_gauge:Legend.itemTextFormat
-type: Format
+type: Format | undefined
 default: undefined
 ---
 ---

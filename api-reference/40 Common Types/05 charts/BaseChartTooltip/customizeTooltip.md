@@ -1,7 +1,7 @@
 ---
 notUsedInTheme: 
 uid: viz/chart_components/base_chart:BaseChartTooltip.customizeTooltip
-type: function(pointInfo)
+type: function(pointInfo) | undefined
 default: undefined
 ---
 ---

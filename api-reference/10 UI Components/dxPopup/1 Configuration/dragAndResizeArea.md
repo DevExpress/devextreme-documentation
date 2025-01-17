@@ -1,6 +1,6 @@
 ---
 id: dxPopup.Options.dragAndResizeArea
-type: String | UserDefinedElement
+type: String | UserDefinedElement | undefined
 default: undefined
 ---
 ---

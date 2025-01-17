@@ -1,6 +1,6 @@
 ---
 id: dxHtmlEditorTableContextMenuItem.name
-type: Enums.HtmlEditorPredefinedContextMenuItem
+type: Enums.HtmlEditorPredefinedContextMenuItem | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxFormGroupItem.caption
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

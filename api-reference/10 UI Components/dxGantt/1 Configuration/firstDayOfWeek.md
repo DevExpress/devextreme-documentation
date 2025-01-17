@@ -1,6 +1,6 @@
 ---
 id: dxGantt.Options.firstDayOfWeek
-type: Enums.FirstDayOfWeek
+type: Enums.FirstDayOfWeek | undefined
 default: undefined
 ---
 ---

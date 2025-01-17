@@ -1,6 +1,6 @@
 ---
 id: dxTreeMap.Options.colorizer.colorCodeField
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

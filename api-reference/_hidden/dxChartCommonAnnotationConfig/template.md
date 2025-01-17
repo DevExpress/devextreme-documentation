@@ -1,6 +1,6 @@
 ---
 id: dxChartCommonAnnotationConfig.template
-type: template
+type: template | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 uid: viz/chart:ValueAxis.showZero
-type: Boolean
+type: Boolean | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: Widget.Options.accessKey
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

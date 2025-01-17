@@ -5,7 +5,9 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether to show avatars.
 
 ---
-<!-- Description goes here -->
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Chat/Customization/"
+}

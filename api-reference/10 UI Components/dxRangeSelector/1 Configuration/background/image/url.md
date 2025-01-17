@@ -1,6 +1,6 @@
 ---
 id: dxRangeSelector.Options.background.image.url
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

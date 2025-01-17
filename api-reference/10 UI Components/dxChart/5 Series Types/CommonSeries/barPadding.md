@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.barPadding
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

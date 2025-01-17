@@ -1,6 +1,6 @@
 ---
 id: dxPieChartSeriesTypes.CommonPieChartSeries.smallValuesGrouping.threshold
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

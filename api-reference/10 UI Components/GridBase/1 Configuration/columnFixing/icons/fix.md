@@ -3,7 +3,7 @@ id: GridBase.Options.columnFixing.icons.fix
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies an icon for the context menu item that fixes a column.
 
 ---
 <!-- Description goes here -->

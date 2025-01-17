@@ -1,6 +1,6 @@
 ---
 id: dxSankey.Options.label.border.width
-type: Number
+type: Number | undefined
 default: 2
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 uid: viz/polar_chart:CommonAxisSettingsTick.opacity
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

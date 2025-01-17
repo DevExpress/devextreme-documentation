@@ -1,6 +1,6 @@
 ---
 id: dxRangeSelector.Options.scale.minorTickCount
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

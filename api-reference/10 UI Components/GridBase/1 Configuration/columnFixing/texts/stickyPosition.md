@@ -1,11 +1,9 @@
 ---
 id: GridBase.Options.columnFixing.texts.stickyPosition
-type: String
-default: 'Stick in place'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies text for the context menu subitem that enables sticky column behavior.
 
 ---
 <!-- Description goes here -->

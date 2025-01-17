@@ -1,6 +1,6 @@
 ---
 id: dxRangeSelector.Options.scale.endValue
-type: Number | Date | String
+type: Number | Date | String | undefined
 default: undefined
 notUsedInTheme: 
 ---

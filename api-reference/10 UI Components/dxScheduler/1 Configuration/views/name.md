@@ -1,6 +1,6 @@
 ---
 id: dxScheduler.Options.views.name
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

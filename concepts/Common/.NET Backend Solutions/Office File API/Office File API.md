@@ -22,6 +22,6 @@ The DevExpress Office File API suite also includes other libraries:
 
 - You need a license for the [DevExpress Office File API Subscription](https://www.devexpress.com/products/net/office-file-api/) or [DevExpress Universal Subscription](https://www.devexpress.com/subscriptions/universal.xml) to use these features in production code.
 
-- If you have DevExtreme installed on your machine, you can also access the [Office File API for .NET Core](https://docs.devexpress.com/OfficeFileAPI/15097/demo-application#net-core-demos) demo.
+- If you have DevExtreme ASP.NET Core installed on your machine, you can also access the [Office File API for .NET Core](https://docs.devexpress.com/OfficeFileAPI/15097/demo-application#net-core-demos) demo.
 
 [/note]

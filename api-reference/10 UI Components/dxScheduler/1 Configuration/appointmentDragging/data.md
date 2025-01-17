@@ -1,6 +1,6 @@
 ---
 id: dxScheduler.Options.appointmentDragging.data
-type: any
+type: any | undefined
 default: undefined
 ---
 ---

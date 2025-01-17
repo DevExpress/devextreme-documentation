@@ -1,6 +1,6 @@
 ---
 id: ColCountResponsible.lg
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

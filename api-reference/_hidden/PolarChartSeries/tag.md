@@ -1,6 +1,6 @@
 ---
 id: PolarChartSeries.tag
-type: any
+type: any | undefined
 default: undefined
 ---
 ---

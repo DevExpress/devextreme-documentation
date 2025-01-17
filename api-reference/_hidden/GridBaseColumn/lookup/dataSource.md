@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.lookup.dataSource
-type: Array<any> | Store | DataSource_Options | function(options) | null
+type: Array<any> | Store | DataSource_Options | function(options) | null | undefined
 default: undefined
 ---
 ---

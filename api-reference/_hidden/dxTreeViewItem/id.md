@@ -1,6 +1,6 @@
 ---
 id: dxTreeViewItem.id
-type: Number | String
+type: Number | String | undefined
 default: undefined
 ---
 ---

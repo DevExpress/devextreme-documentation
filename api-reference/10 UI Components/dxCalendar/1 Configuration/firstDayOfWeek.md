@@ -1,6 +1,6 @@
 ---
 id: dxCalendar.Options.firstDayOfWeek
-type: Enums.FirstDayOfWeek
+type: Enums.FirstDayOfWeek | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: DraggableBase.Options.data
-type: any
+type: any | undefined
 default: undefined
 ---
 ---

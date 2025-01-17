@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.barGroupWidth
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxFilterBuilderField.lookup.valueExpr
-type: String | function(data)
+type: String | function(data) | undefined
 default: undefined
 ---
 ---

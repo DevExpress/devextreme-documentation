@@ -1,6 +1,6 @@
 ---
 uid: viz/polar_chart:ArgumentAxisStrips.color
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

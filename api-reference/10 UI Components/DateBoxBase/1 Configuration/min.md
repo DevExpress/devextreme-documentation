@@ -1,6 +1,6 @@
 ---
 id: DateBoxBase.Options.min
-type: Date | Number | String
+type: Date | Number | String | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 uid: viz/core/base_widget:BaseWidgetTooltip.opacity
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

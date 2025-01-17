@@ -1,6 +1,6 @@
 ---
 id: dxGantt.Options.selectedRowKey
-type: any
+type: any | undefined
 default: undefined
 ---
 ---

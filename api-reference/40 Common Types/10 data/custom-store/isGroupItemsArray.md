@@ -1,6 +1,6 @@
 ---
 id: isGroupItemsArray
-module: common/data/custom-store
+module: common/data
 export: isGroupItemsArray
 ---
 ---

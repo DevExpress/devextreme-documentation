@@ -1,11 +1,10 @@
 ---
 id: Message.text
 type: String
-default: ''
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The message text.
 
 ---
 <!-- Description goes here -->

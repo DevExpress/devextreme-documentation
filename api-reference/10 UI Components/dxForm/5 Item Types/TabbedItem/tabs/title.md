@@ -1,6 +1,6 @@
 ---
 id: dxFormTabbedItem.tabs.title
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

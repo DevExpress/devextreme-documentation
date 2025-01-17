@@ -1,6 +1,6 @@
 ---
 id: dxResponsiveBox.Options.cols.screen
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.series
-type: Object | Array<ChartSeries>
+type: Object | Array<ChartSeries> | undefined
 inherits: ChartSeries
 default: undefined
 hideDefaults: true

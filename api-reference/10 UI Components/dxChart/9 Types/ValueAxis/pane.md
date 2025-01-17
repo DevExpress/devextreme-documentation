@@ -1,6 +1,6 @@
 ---
 uid: viz/chart:ValueAxis.pane
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

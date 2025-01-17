@@ -1,6 +1,6 @@
 ---
 id: dxPolarChartCommonAnnotationConfig.tooltipTemplate
-type: template
+type: template | undefined
 default: undefined
 ---
 ---

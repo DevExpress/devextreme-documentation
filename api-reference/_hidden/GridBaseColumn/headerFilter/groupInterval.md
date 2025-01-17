@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.headerFilter.groupInterval
-type: Enums.HeaderFilterGroupInterval | Number
+type: Enums.HeaderFilterGroupInterval | Number | undefined
 default: undefined
 ---
 ---

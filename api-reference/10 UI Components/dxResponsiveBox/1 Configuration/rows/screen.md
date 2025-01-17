@@ -1,6 +1,6 @@
 ---
 id: dxResponsiveBox.Options.rows.screen
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

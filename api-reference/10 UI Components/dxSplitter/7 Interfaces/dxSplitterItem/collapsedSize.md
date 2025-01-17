@@ -1,6 +1,6 @@
 ---
 id: dxSplitterItem.collapsedSize
-type: Number | String
+type: Number | String | undefined
 default: undefined
 ---
 ---

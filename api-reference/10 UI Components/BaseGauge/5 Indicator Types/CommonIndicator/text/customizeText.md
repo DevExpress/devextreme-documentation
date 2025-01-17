@@ -1,6 +1,6 @@
 ---
 id: CommonIndicator.text.customizeText
-type: function(indicatedValue)
+type: function(indicatedValue) | undefined
 default: undefined
 notUsedInTheme: 
 ---

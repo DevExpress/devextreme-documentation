@@ -1,6 +1,6 @@
 ---
 id: dxTreeMap.Options.group.selectionStyle.color
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

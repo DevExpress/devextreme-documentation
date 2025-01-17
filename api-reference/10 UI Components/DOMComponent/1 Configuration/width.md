@@ -1,6 +1,6 @@
 ---
 id: DOMComponent.Options.width
-type: Number | String | function()
+type: Number | String | function() | undefined
 default: undefined
 ---
 ---

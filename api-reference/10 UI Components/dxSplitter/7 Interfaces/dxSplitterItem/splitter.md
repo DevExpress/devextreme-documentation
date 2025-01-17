@@ -1,6 +1,6 @@
 ---
 id: dxSplitterItem.splitter
-type: dxSplitter_Options
+type: dxSplitter_Options | undefined
 default: undefined
 ---
 ---

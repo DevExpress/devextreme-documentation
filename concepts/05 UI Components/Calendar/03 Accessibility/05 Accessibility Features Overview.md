@@ -39,7 +39,7 @@
     </tr>
     <tr>
         <td><a href="https://www.access-board.gov/ict/" target="_blank">Section 508</a> Support</td>
-        <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-success"/></svg></td>
+        <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
     </tr>
     <tr>
         <td><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">WCAG 2.x</a> Support</td>

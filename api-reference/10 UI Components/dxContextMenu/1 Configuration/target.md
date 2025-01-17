@@ -1,6 +1,6 @@
 ---
 id: dxContextMenu.Options.target
-type: String | UserDefinedElement
+type: String | UserDefinedElement | undefined
 default: undefined
 ---
 ---

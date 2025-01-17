@@ -1,6 +1,6 @@
 ---
 id: LoadResultObject
-module: common/data/custom-store
+module: common/data
 export: LoadResultObject
 type: Object
 generateTypeLink: 

@@ -1,6 +1,6 @@
 ---
 id: VizTimeInterval
-type: Number | Object | Enums.TimeInterval
+type: Number | Object | Enums.TimeInterval | undefined
 default: undefined
 hidden: 
 inlineType: 

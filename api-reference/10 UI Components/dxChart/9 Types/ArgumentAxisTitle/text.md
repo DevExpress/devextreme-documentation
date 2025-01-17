@@ -1,6 +1,6 @@
 ---
 uid: viz/chart:ArgumentAxisTitle.text
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxDropDownButton.Options.displayExpr
-type: String | function(itemData)
+type: String | function(itemData) | undefined
 default: undefined
 ---
 ---

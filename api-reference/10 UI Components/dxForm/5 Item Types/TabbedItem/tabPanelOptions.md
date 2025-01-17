@@ -1,6 +1,6 @@
 ---
 id: dxFormTabbedItem.tabPanelOptions
-type: dxTabPanel_Options
+type: dxTabPanel_Options | undefined
 default: undefined
 ---
 ---

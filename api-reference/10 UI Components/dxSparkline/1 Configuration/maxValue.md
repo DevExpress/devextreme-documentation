@@ -1,6 +1,6 @@
 ---
 id: dxSparkline.Options.maxValue
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

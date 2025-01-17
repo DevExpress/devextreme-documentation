@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.lookup.displayExpr
-type: String | function(data)
+type: String | function(data) | undefined
 default: undefined
 ---
 ---

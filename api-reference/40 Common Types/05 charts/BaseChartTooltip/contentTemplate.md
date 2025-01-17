@@ -1,6 +1,6 @@
 ---
 uid: viz/chart_components/base_chart:BaseChartTooltip.contentTemplate
-type: template
+type: template | undefined
 default: undefined
 ---
 ---

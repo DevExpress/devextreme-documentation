@@ -1,6 +1,6 @@
 ---
 id: dxPolarChartSeriesTypes.CommonPolarChartSeries.maxLabelCount
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

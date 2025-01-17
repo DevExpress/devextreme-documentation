@@ -1,6 +1,6 @@
 ---
 id: dxRangeSelector.Options.chart.valueAxis.min
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

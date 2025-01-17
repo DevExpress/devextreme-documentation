@@ -1,6 +1,6 @@
 ---
 id: Widget.Options.hint
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxPieChartSeriesTypes.CommonPieChartSeries.selectionStyle.border.dashStyle
-type: Enums.DashStyle
+type: Enums.DashStyle | undefined
 default: undefined
 ---
 ---

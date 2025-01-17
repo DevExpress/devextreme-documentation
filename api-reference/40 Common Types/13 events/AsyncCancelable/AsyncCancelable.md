@@ -1,6 +1,6 @@
 ---
 id: AsyncCancelable
-module: events/index
+module: common/core/events
 export: AsyncCancelable
 type: Object
 generateTypeLink: 

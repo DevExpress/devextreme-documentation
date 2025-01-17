@@ -1,6 +1,6 @@
 ---
 id: dxFunnel.Options.item.hoverStyle.border.width
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

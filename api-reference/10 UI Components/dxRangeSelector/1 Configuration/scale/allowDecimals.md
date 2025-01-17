@@ -1,6 +1,6 @@
 ---
 id: dxRangeSelector.Options.scale.allowDecimals
-type: Boolean
+type: Boolean | undefined
 default: undefined
 ---
 ---

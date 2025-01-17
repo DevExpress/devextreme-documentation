@@ -1,6 +1,6 @@
 ---
 id: dxRangeSelector.Options.chart.valueAxis.max
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

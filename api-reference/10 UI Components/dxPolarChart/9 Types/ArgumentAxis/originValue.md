@@ -1,6 +1,6 @@
 ---
 uid: viz/polar_chart:ArgumentAxis.originValue
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

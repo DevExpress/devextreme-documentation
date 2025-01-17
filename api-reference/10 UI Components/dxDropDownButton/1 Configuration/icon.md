@@ -1,6 +1,6 @@
 ---
 id: dxDropDownButton.Options.icon
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

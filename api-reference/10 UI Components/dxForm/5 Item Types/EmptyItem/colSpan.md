@@ -1,6 +1,6 @@
 ---
 id: dxFormEmptyItem.colSpan
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A configuration object for a user.
 
 ---
 <!-- Description goes here -->

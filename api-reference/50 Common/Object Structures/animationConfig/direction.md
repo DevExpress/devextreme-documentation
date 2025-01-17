@@ -1,6 +1,6 @@
 ---
 id: AnimationConfig.direction
-type: Enums.Direction
+type: Enums.Direction | undefined
 default: undefined
 ---
 ---

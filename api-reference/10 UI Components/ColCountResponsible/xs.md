@@ -1,6 +1,6 @@
 ---
 id: ColCountResponsible.xs
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

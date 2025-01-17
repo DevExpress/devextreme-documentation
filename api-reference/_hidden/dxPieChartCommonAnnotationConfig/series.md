@@ -1,6 +1,6 @@
 ---
 id: dxPieChartCommonAnnotationConfig.series
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

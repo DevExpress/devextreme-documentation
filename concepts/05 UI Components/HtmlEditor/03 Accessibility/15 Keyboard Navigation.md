@@ -1,4 +1,4 @@
-A user can use the following keys to interact with the HtmlEditor component: 
+A user can use the following keys to interact with the HTML Editor component: 
 
 <table class="dx-table">
     <tr>

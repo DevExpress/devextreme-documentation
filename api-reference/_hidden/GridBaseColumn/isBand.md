@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.isBand
-type: Boolean
+type: Boolean | undefined
 default: undefined
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxFormGroupItem.colSpan
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

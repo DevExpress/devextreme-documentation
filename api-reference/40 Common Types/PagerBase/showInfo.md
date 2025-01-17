@@ -5,7 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether to show the [page information](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/pager/infoText.md '{basewidgetpath}/Configuration/pager/#infoText').
 
 ---
-<!-- Description goes here -->

@@ -1,6 +1,6 @@
 ---
 id: dxSankey.Options.node.border.width
-type: Number
+type: Number | undefined
 default: 1
 ---
 ---

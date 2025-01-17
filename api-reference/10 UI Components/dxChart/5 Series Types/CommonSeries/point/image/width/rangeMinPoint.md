@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.point.image.width.rangeMinPoint
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

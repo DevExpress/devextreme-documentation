@@ -1,6 +1,6 @@
 ---
 uid: common/grids:RowDragging.group
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

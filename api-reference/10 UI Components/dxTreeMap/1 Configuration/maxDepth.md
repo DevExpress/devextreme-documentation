@@ -1,6 +1,6 @@
 ---
 id: dxTreeMap.Options.maxDepth
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

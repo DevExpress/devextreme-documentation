@@ -1,6 +1,6 @@
 ---
 id: dxPieChart.Options.series
-type: Object | Array<PieChartSeries>
+type: Object | Array<PieChartSeries> | undefined
 inherits: PieChartSeries
 default: undefined
 hideDefaults: true

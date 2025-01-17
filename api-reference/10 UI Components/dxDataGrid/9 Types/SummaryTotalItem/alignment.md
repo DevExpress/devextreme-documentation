@@ -1,6 +1,6 @@
 ---
 uid: ui/data_grid:SummaryTotalItem.alignment
-type: Enums.HorizontalAlignment
+type: Enums.HorizontalAlignment | undefined
 default: undefined
 ---
 ---

@@ -3,10 +3,40 @@ id: dxChat.renderMessage(message)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Renders a new message.
 
 ##### param(message): Message
-<!-- Description goes here -->
+A message to be rendered.
 
 ---
-<!-- Description goes here -->
+---
+##### jQuery
+
+This method is the primary way to render a new message in jQuery:
+
+    <!-- tab: index.js -->
+    $(() => {
+        const chat = $("#chat").dxChat({
+            onMessageEntered: (e) => {
+                e.component.renderMessage(e.message);
+            },
+        }).dxChat('instance');
+    });
+
+##### Angular
+
+[note] The use of this method is not native to {Framework}. Use [items](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items') instead.
+
+##### Vue
+
+[note] The use of this method is not native to {Framework}. Use [items](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items') instead.
+
+##### React
+
+[note] The use of this method is not native to {Framework}. Use [items](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items') instead.
+
+---
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Chat/Overview/"
+}

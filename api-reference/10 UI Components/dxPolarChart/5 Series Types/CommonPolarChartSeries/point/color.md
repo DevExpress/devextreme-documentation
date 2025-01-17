@@ -1,6 +1,6 @@
 ---
 id: dxPolarChartSeriesTypes.CommonPolarChartSeries.point.color
-type: String | ChartsColor
+type: String | ChartsColor | undefined
 default: undefined
 ---
 ---

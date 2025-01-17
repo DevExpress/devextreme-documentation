@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.minBarSize
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

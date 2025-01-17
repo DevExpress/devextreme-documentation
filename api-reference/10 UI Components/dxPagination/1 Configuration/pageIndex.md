@@ -9,4 +9,6 @@ default: 1
 Specifies the page index.
 
 ---
-<!-- Description goes here -->
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Pagination/Overview/"
+}

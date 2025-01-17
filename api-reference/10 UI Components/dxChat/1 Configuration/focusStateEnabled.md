@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether the Chat's input element can be focused using keyboard navigation.
 
 ---
 <!-- Description goes here -->

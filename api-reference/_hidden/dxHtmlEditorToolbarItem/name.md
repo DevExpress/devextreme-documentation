@@ -148,7 +148,7 @@ In the following code, the `header` and `size` formats are configured as describ
 
 ---
 
-Refer to the [Formats](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats '/Documentation/Guide/UI_Components/HtmlEditor/Formats/') article for a full list of available formats.
+Refer to the [Formats](/concepts/05%20UI%20Components/HtmlEditor/10%20Formats/00%20Formats.md '/Documentation/Guide/UI_Components/HtmlEditor/Formats/') article for a full list of available formats.
 
 #####See Also#####
 - [widget](/api-reference/_hidden/dxHtmlEditorToolbarItem/widget.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#widget')

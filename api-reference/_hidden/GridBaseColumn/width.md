@@ -1,6 +1,6 @@
 ---
 id: GridBaseColumn.width
-type: Number | String
+type: Number | String | undefined
 default: undefined
 ---
 ---

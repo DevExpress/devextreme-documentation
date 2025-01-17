@@ -1,6 +1,6 @@
 ---
 id: dxDataGrid.Options.toolbar
-type: dxDataGridToolbar
+type: dxDataGridToolbar | undefined
 default: undefined
 inheritsType: dxDataGridToolbar
 ---

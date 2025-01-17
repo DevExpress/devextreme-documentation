@@ -1,6 +1,6 @@
 ---
 id: dxFormEmptyItem.cssClass
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

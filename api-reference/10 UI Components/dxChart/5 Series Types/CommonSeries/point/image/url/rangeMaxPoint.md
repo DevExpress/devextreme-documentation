@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.point.image.url.rangeMaxPoint
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

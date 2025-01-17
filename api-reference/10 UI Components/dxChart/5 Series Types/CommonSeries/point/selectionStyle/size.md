@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.point.selectionStyle.size
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

@@ -11,4 +11,9 @@ The Tooltip component meets a variety of <a href="https://www.access-board.gov/i
         <td>1.4.3 Contrast (Minimum) (Level AA) <br> 1.4.11 Non-text Contrast (Level AA 2.1 and 2.2)</td>
         <td>Tooltip does not support Windows High Contrast themes.</td>
     </tr>
+    <tr>
+        <td>-</td>
+        <td>1.4.13 Content on Hover or Focus (Level AA 2.1 and 2.2) </td>
+        <td>Tooltip does not remain visible on hover and cannot be dismissed using keyboard navigation.</td>
+    </tr>
 </table>

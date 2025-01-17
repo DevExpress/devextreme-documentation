@@ -1,6 +1,6 @@
 ---
 uid: viz/core/base_widget:BaseWidgetTooltip.container
-type: String | UserDefinedElement
+type: String | UserDefinedElement | undefined
 default: undefined
 ---
 ---

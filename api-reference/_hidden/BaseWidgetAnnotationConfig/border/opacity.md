@@ -1,6 +1,6 @@
 ---
 id: BaseWidgetAnnotationConfig.border.opacity
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

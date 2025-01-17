@@ -1,6 +1,6 @@
 ---
 id: dxRangeSelector.Options.indent.left
-type: Number
+type: Number | undefined
 default: undefined
 notUsedInTheme: 
 ---

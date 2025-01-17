@@ -93,8 +93,21 @@ Refer to the following table for detailed information about each component's acc
             <td class="dx-table-row__center icon-success"></td>
             <td class="dx-table-row__center icon-success"></td>
             <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/Chat/Accessibility/">Chat</a></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
             <td class="dx-table-row__center icon-success"></td>
             <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
         </tr>
         <tr>
             <td><a href="/Documentation/Guide/UI_Components/CheckBox/Accessibility/">CheckBox</a></td>
@@ -172,7 +185,7 @@ Refer to the following table for detailed information about each component's acc
             <td class="dx-table-row__center icon-success"></td>
             <td class="dx-table-row__center icon-warning"></td>
             <td class="dx-table-row__center icon-success"></td>
-            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-success"></td>
         </tr>
         <tr>
             <td><a href="/Documentation/Guide/UI_Components/DropDownBox/Accessibility/">DropDownBox</a></td>
@@ -184,8 +197,8 @@ Refer to the following table for detailed information about each component's acc
             <td class="dx-table-row__center icon-warning"></td>
             <td class="dx-table-row__center icon-warning"></td>
             <td class="dx-table-row__center icon-warning"></td>
-            <td class="dx-table-row__center icon-warning"></td>
-            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
         </tr>
         <tr>
             <td><a href="/Documentation/Guide/UI_Components/DropDownButton/Accessibility/">DropDownButton</a></td>
@@ -214,7 +227,7 @@ Refer to the following table for detailed information about each component's acc
             <td class="dx-table-row__center icon-success"></td>
         </tr>
         <tr>
-            <td><a href="/Documentation/Guide/UI_Components/Form/Accessibility/">Form</a></td>
+            <td><a href="/Documentation/Guide/UI_Components/FilterBuilder/Accessibility/">FilterBuilder</a></td>
             <td class="dx-table-row__center icon-success"></td>
             <td class="dx-table-row__center icon-success"></td>
             <td class="dx-table-row__center icon-success"></td>
@@ -225,6 +238,19 @@ Refer to the following table for detailed information about each component's acc
             <td class="dx-table-row__center icon-success"></td>
             <td class="dx-table-row__center icon-success"></td>
             <td class="dx-table-row__center icon-success"></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/Form/Accessibility/">Form</a></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-warning"></td>
         </tr>
         <tr>
             <td><a href="/Documentation/Guide/UI_Components/Gallery/Accessibility/">Gallery</a></td>
@@ -344,7 +370,7 @@ Refer to the following table for detailed information about each component's acc
             <td class="dx-table-row__center icon-success"></td>
         </tr>
         <tr>
-            <td><a href="/Documentation/Guide/UI_Components/Popover/Accessibility/">Popover</a></td>
+            <td><a href="/Documentation/Guide/UI_Components/Pagination/Accessibility/">Pagination</a></td>
             <td class="dx-table-row__center icon-success"></td>
             <td class="dx-table-row__center icon-error"></td>
             <td class="dx-table-row__center icon-success"></td>
@@ -357,6 +383,19 @@ Refer to the following table for detailed information about each component's acc
             <td class="dx-table-row__center icon-success"></td>
         </tr>
         <tr>
+            <td><a href="/Documentation/Guide/UI_Components/Popover/Accessibility/">Popover</a></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-error"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+        </tr>
+        <tr>
             <td><a href="/Documentation/Guide/UI_Components/Popup/Accessibility/">Popup</a></td>
             <td class="dx-table-row__center icon-success"></td>
             <td class="dx-table-row__center icon-success"></td>
@@ -366,8 +405,8 @@ Refer to the following table for detailed information about each component's acc
             <td class="dx-table-row__center icon-warning"></td>
             <td class="dx-table-row__center icon-success"></td>
             <td class="dx-table-row__center icon-success"></td>
-            <td class="dx-table-row__center icon-success"></td>
-            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-warning"></td>
         </tr>
         <tr>
             <td><a href="/Documentation/Guide/UI_Components/ProgressBar/Accessibility/">ProgressBar</a></td>
@@ -407,6 +446,19 @@ Refer to the following table for detailed information about each component's acc
             <td class="dx-table-row__center icon-success"></td>
             <td class="dx-table-row__center icon-success"></td>
             <td class="dx-table-row__center icon-success"></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/Scheduler/Accessibility/">Scheduler</a></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-warning"></td>
         </tr>
         <tr>
             <td><a href="/Documentation/Guide/UI_Components/SelectBox/Accessibility/">SelectBox</a></td>
@@ -523,7 +575,7 @@ Refer to the following table for detailed information about each component's acc
             <td class="dx-table-row__center icon-success"></td>
             <td class="dx-table-row__center icon-success"></td>
             <td class="dx-table-row__center icon-success"></td>
-            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-success"></td>
         </tr>
         <tr>
             <td><a href="/Documentation/Guide/UI_Components/Toast/Accessibility/">Toast</a></td>
@@ -561,8 +613,8 @@ Refer to the following table for detailed information about each component's acc
             <td class="dx-table-row__center icon-success"></td>
             <td class="dx-table-row__center icon-success"></td>
             <td class="dx-table-row__center icon-success"></td>
-            <td class="dx-table-row__center icon-success"></td>
-            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-warning"></td>
         </tr>
         <tr>
             <td><a href="/Documentation/Guide/UI_Components/TreeList/Accessibility/">TreeList</a></td>
@@ -610,7 +662,6 @@ The following components do not meet any accessibility requirements and currentl
 - Draggable
 - Drawer
 - FileManager
-- FilterBuilder
 - Floating Action Button
 - Funnel
 - Gantt
@@ -623,7 +674,6 @@ The following components do not meet any accessibility requirements and currentl
 - RangeSelector
 - Resizable
 - Sankey
-- Scheduler
 - Sortable
 - Sparkline
 - TreeMap

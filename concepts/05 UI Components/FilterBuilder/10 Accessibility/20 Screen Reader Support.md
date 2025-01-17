@@ -1,0 +1,1 @@
+The FilterBuilder component supports screen readers and complies to <a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank">WAI-ARIA</a> standards. 

@@ -1,10 +1,13 @@
-The application includes two layouts. The only difference between them is where the toolbar is located.
+The application includes two layouts. The only difference between them is where the toolbar is located: outer (default) or inner toolbar.
 
-- **Outer Toolbar** (default)       
-![DevExtreme Angular Template - Outer toolbar](/images/dx-application-templates/angular-app-template-outer-toolbar.png)
+**Outer toolbar**
+<br/>
+<img src="/images/dx-application-templates/outer.png" style="width: 800px;" alt="Outer toolbar expanded" />
 
-- **Inner Toolbar**         
-![DevExtreme Angular Template - Inner toolbar](/images/dx-application-templates/angular-app-template-inner-toolbar.png)
+**Inner toolbar**
+<br/>
+<img src="/images/dx-application-templates/inner.png" style="width: 800px;" alt="Inner toolbar expanded" />
+<br/>
 
 To switch to another layout, open the `src\app\app.component.html` file and replace the `app-side-nav-outer-toolbar` element with `app-side-nav-inner-toolbar`:
 

@@ -1,6 +1,6 @@
 ---
 id: dxPolarChart.Options.series
-type: Object | Array<PolarChartSeries>
+type: Object | Array<PolarChartSeries> | undefined
 inherits: PolarChartSeries
 default: undefined
 hideDefaults: true

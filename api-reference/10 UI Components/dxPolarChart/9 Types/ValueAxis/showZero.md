@@ -1,6 +1,6 @@
 ---
 uid: viz/polar_chart:ValueAxis.showZero
-type: Boolean
+type: Boolean | undefined
 default: undefined
 ---
 ---

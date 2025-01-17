@@ -1,6 +1,6 @@
 ---
 id: dxTagBox.Options.maxDisplayedTags
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

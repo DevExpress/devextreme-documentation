@@ -1,6 +1,6 @@
 ---
 uid: viz/gauges/base_gauge:BaseGaugeTooltip.customizeTooltip
-type: function(scaleValue)
+type: function(scaleValue) | undefined
 default: undefined
 ---
 ---

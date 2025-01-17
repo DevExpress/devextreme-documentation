@@ -1,6 +1,6 @@
 ---
 id: Utils.setErrorHandler
-module: data/errors
+module: common/data
 export: setErrorHandler
 type: function(handler)
 ---

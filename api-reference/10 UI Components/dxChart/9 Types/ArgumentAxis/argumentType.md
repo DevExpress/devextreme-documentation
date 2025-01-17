@@ -1,6 +1,6 @@
 ---
 uid: viz/chart:ArgumentAxis.argumentType
-type: Enums.ChartsDataType
+type: Enums.ChartsDataType | undefined
 default: undefined
 ---
 ---

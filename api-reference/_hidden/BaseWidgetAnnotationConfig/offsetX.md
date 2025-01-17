@@ -1,6 +1,6 @@
 ---
 id: BaseWidgetAnnotationConfig.offsetX
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

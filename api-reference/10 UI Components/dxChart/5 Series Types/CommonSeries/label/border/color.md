@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.label.border.color
-type: String
+type: String | undefined
 default: '#d3d3d3'
 ---
 ---

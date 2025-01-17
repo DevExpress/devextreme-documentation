@@ -1,6 +1,6 @@
 ---
 id: dxPolarChartSeriesTypes.CommonPolarChartSeries.label.backgroundColor
-type: String
+type: String | undefined
 default: undefined
 ---
 ---

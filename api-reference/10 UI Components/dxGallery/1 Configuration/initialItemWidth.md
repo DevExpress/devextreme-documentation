@@ -1,6 +1,6 @@
 ---
 id: dxGallery.Options.initialItemWidth
-type: Number
+type: Number | undefined
 default: undefined
 ---
 ---

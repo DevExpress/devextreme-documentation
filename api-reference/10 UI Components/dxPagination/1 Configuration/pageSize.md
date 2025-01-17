@@ -9,4 +9,6 @@ default: 5
 Specifies the page size.
 
 ---
-<!-- Description goes here -->
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Pagination/Overview/"
+}

@@ -1,6 +1,6 @@
 ---
 id: dxTextArea.Options.minHeight
-type: Number | String
+type: Number | String | undefined
 default: undefined
 ---
 ---

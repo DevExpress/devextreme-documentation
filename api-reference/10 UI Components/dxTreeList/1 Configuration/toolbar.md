@@ -1,6 +1,6 @@
 ---
 id: dxTreeList.Options.toolbar
-type: dxTreeListToolbar
+type: dxTreeListToolbar | undefined
 default: undefined
 inheritsType: dxTreeListToolbar
 ---

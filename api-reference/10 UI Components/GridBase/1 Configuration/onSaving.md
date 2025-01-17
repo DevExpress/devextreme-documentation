@@ -14,7 +14,7 @@ Information about the event that caused the function's execution.
 Set this field to **true** if the default saving logic should be disabled.
 
 ##### field(e.changes): Array<DataChange>
-Pending row changes; a copy of the **editing**.[changes](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/changes.md '{basewidgetpath}/Configuration/editing/changes/') array.
+Pending row changes; a copy of the **editing**.[changes](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/changes.md '{basewidgetpath}/Configuration/editing/changes/') array. Includes only row changes, unlike [onSaved]({basewidgetpath}/Configuration/#onSaved), which contains all row data (including changes).
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.

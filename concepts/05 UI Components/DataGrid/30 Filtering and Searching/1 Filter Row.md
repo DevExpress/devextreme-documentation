@@ -211,7 +211,7 @@ Each cell in the filter row contains a magnifying glass icon. Hovering the mouse
 
 The set of available filter operations can be restricted using the [filterOperations](/api-reference/_hidden/GridBaseColumn/filterOperations.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#filterOperations') property. 
 
-[note] Filter row operations depend on the column [data type](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataType). If a column starts with empty values, DataGrid cannot assign the data type automatically. You must assign the column data type for the filter row to function correctly.
+[note] Filter row operations depend on the column [data type](/api-reference/_hidden/GridBaseColumn/dataType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataType'). If a column starts with empty values, DataGrid cannot assign the data type automatically. You must assign the column data type for the filter row to function correctly.
 
 You can also preselect a filter operation and specify the initial filter value with the [selectedFilterOperation](/api-reference/_hidden/GridBaseColumn/selectedFilterOperation.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#selectedFilterOperation') and [filterValue](/api-reference/_hidden/GridBaseColumn/filterValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#filterValue') properties. Call the [columnOption](/api-reference/10%20UI%20Components/GridBase/3%20Methods/columnOption(id_options).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#columnOptionid_options') method at runtime to change these properties:
 

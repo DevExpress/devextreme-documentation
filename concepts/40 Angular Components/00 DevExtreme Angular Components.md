@@ -3,7 +3,7 @@
     docsLink: "https://angular.dev/overview"
 }
 
-The DevExtreme Angular UI Component Suite is a feature-complete set of [70+ responsive and touch-enabled UI components](https://js.devexpress.com/Overview/Widgets/) for Angular applications. The suite includes a data grid, interactive charts, data editors, navigation and multi-purpose UI components.
+The DevExtreme Angular UI Component Suite is a feature-complete set of [80 responsive and touch-enabled UI components](https://js.devexpress.com/Overview/Widgets/) for Angular applications. The suite includes a data grid, interactive charts, data editors, navigation and multi-purpose UI components.
 
 The DevExtreme Angular UI Component Suite provides the following platform-specific features:
 

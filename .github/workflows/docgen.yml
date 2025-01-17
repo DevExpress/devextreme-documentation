@@ -110,7 +110,7 @@ jobs:
                 --data-binary @prdata.json
 
         - name: Archive internal-tools artifacts
-          uses: actions/upload-artifact@v3
+          uses: actions/upload-artifact@v4
           with:
             name: internal-tools-artifacts
             path: ./devextreme/artifacts/internal-tools/

@@ -2,7 +2,7 @@
 Specifies a base theme's name (default: `generic.light`).
 
 * `--input-file`    
-Specifies the name of the file that contains input data (a `.json` file with metadata or a `.less` or `.scss` file with Bootstrap variables).
+Specifies the name of the file that contains input data (a `.json` file with metadata or a `.scss` file with Bootstrap 5 variables).
 
 * `--output-file`   
 Specifies the output file name.
@@ -32,6 +32,3 @@ Specifies a path to the folder that contains the DevExtreme `icons` and `fonts` 
 
 - `--remove-external-resources`     
 When present, removes links to external resources, such as fonts. The theme will use local fallbacks instead.
-
-- `--bootstrap-version`     
-Specifies Bootstrap version 4 or 5 if `--input-file` is a `.scss` file (default: `4`).

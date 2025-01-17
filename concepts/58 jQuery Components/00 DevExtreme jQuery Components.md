@@ -1,4 +1,4 @@
-The DevExtreme jQuery Component Suite is a feature-complete set of 70+ responsive and touch-enabled UI components implemented as jQuery plugins. The components are a data grid, interactive charts, data editors, navigation and multi-purpose UI components.
+The DevExtreme jQuery Component Suite is a feature-complete set of 80 responsive and touch-enabled UI components implemented as jQuery plugins. The components are a data grid, interactive charts, data editors, navigation and multi-purpose UI components.
 
 In addition to components, the suite includes the following features:
 

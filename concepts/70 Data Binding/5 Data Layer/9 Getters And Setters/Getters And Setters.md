@@ -1,4 +1,4 @@
-One of the basic data layer concepts is a *getters* and *setters*. Getters are essential tools used to specify sorting, grouping, filtering, and data transformation rules.
+One of the basic data layer concepts is *getters* and *setters*. Getters are essential tools used to specify sorting, grouping, filtering, and data transformation rules.
 
 A *getter* function returns a value of a predefined property of an object passed to the getter as a parameter.
 

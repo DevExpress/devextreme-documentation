@@ -36,12 +36,7 @@ jobs:
         - name: Discover declarations
           working-directory: devextreme
           shell: bash
-          run: |
-            if [[ $(npm pkg get name) =~ "monorepo" ]]; then
-              npm run tools:discover-declarations
-            else    
-              npm run discover-declarations -- --artifacts ./artifacts/internal-tools            
-            fi
+          run: npm run tools:discover-declarations
 
         - name: Update topics
           working-directory: documentation

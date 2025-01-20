@@ -1,6 +1,6 @@
-Integration with push services allows the store to notify the **DataSource** and all the UI components bound to it about a data modification. On receiving the notification, the **DataSource** can reapply data processing operations, and the components can update parts of the UI in real time.
+Integration with push services allows the store to notify the **DataSource** and its bound UI components about data changes. After receiving the notification, the **DataSource** can reapply data processing operations, and the components can refresh the UI in real time.
 
-All stores provide the [push(changes)](/api-reference/30%20Data%20Layer/Store/3%20Methods/push(changes).md '/Documentation/ApiReference/Data_Layer/CustomStore/Methods/#pushchanges') method used to insert, update, and remove data objects. It accepts an array. This allows you to update data in batches.
+All stores include the [push(changes)](/api-reference/30%20Data%20Layer/Store/3%20Methods/push(changes).md '/Documentation/ApiReference/Data_Layer/CustomStore/Methods/#pushchanges') method used to insert, update, and remove data objects. The method accepts an array, which allows you to update data in batches.
 
     store.push([{ type: "insert", data: data }]);
     store.push([{ type: "update", data: data, key: key }]);

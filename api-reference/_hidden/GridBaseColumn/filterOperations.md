@@ -31,7 +31,7 @@ The following table lists available filter operations by [data type](/api-refere
   </tr>
 </table>
 
-[note] Filter row operations depend on the column [data type]({basewidgetpath}/Configuration/columns/#dataType). If a column starts with empty values, {WidgetName} cannot assign the data type automatically. You must assign the column data type for the filter row to function correctly.
+[note] Filter row operations depend on the column [data type](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType'). If a column starts with empty values, {WidgetName} cannot assign the data type automatically. You must assign the column data type for the filter row to function correctly.
 
 The nested filter builder also allows users to select from an extended set of operations that include *"anyof"*, *"noneof"*, *"isblank"*, *"isnotblank"*, and [names](/api-reference/_hidden/dxFilterBuilderCustomOperation/name.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/customOperations/#name') of custom operations (if any).
 

@@ -1,14 +1,14 @@
-To update a data item specified by the key, use the **store.update(key, values)** method.
+To update a data item specified by the key, use the [store.update(key, values)](/Documentation/ApiReference/Data_Layer/CustomStore/Methods/#updatekey_values) method.
 
     <!--JavaScript-->
     store.update(1, { value: "new value" })
         .done(function(values) {
-            //handle successfull updating
+            //handle successful updating
         })
         .fail(function(error) {
             //handle error
         });
 
-Note that the second argument of the **update(key, values)** method contains only the properties whose values should be changed in the data item, but not the entire item, because it will be merged with the original item object.
+[note] The second argument of the **update(key, values)** method contains only the properties whose values should be changed, not the entire item. This argument merges with the original item.
 
-In a common scenario, before updating, you need to load the required item using the **store.byKey(key)** method.
+Before updating, use the [store.byKey(key)](/Documentation/ApiReference/Data_Layer/CustomStore/Methods/#byKeykey_extraOptions) method to load the required item.

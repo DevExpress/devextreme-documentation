@@ -4,7 +4,7 @@ A *getter* function returns a value of a predefined property of an object passed
 
 A *setter* function assigns a new value to the predefined property of an object passed to the setter as a parameter. The new value is specified through the second parameter of a setter.
 
-To learn how to get and set property values with getters and setters, create a sample object:
+For example, create a sample object:
 
     <!--JavaScript-->var person = {
       firstName: "John",
@@ -22,4 +22,3 @@ To learn how to get and set property values with getters and setters, create a s
         }
       }
     };
-

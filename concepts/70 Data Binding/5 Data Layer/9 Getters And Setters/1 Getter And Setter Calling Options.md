@@ -6,8 +6,6 @@ If you assign a method name to **compileGetter**, the getter returns this method
 
 If the getter returns an object containing multiple functions, the **functionsAsIs** property affects all functions contained in this object.
 
-Assigning a new value to a property with an object replaces the current object with the new one.
-
     <!--JavaScript-->const setter = DevExpress.data.utils.compileSetter("address");
     setter(person, {
         city: "San Francisco",

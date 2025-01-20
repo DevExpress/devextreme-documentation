@@ -15,7 +15,7 @@ All data transfer operations in the data layer are asynchronous for both remote 
 
 ##### Angular
 
-All data transfer operations in the data layer are asynchronous, for both remote service and local data access. This setup supports the universal Store interface for any data source. The data transfer operations return a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">native Promise</a>. Use this Promise to specify callbacks for successful operation completion and for operation failure.
+All data transfer operations in the data layer are asynchronous for both remote services and local data access. This setup supports the universal Store interface for any data source. The data transfer operations return a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">native Promise</a>. Use this Promise to specify callbacks for successful operation completion and operation failure.
 
     <!--JavaScript-->
     dataSource.load()
@@ -28,7 +28,7 @@ All data transfer operations in the data layer are asynchronous, for both remote
 
 ##### Vue
 
-All data transfer operations in the data layer are asynchronous, for both remote service and local data access. This setup supports the universal Store interface for any data source. The data transfer operations return a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">native Promise</a>. Use this Promise to specify callbacks for successful operation completion and for operation failure.
+All data transfer operations in the data layer are asynchronous for both remote services and local data access. This setup supports the universal Store interface for any data source. The data transfer operations return a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">native Promise</a>. Use this Promise to specify callbacks for successful operation completion and operation failure.
 
     <!--JavaScript-->
     dataSource.load()
@@ -41,7 +41,7 @@ All data transfer operations in the data layer are asynchronous, for both remote
 
 ##### React
 
-All data transfer operations in the data layer are asynchronous, for both remote service and local data access. This setup supports the universal Store interface for any data source. The data transfer operations return a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">native Promise</a>. Use this Promise to specify callbacks for successful operation completion and for operation failure.
+All data transfer operations in the data layer are asynchronous for both remote services and local data access. This setup supports the universal Store interface for any data source. The data transfer operations return a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">native Promise</a>. Use this Promise to specify callbacks for successful operation completion and operation failure.
 
     <!--JavaScript-->
     dataSource.load()

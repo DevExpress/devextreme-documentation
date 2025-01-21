@@ -3,6 +3,7 @@ id: NumericRule
 type: Object
 module: common
 export: NumericRule
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

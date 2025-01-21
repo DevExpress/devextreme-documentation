@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [validated]({basewidgetpath}/Events/#validated) event handler's argument.
 
 ---
 <!-- Description goes here -->

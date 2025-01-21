@@ -3,7 +3,7 @@ DevExtreme includes methods used to create a getter and setter for the property 
     <!--JavaScript-->const getter = DevExpress.data.utils.compileGetter("firstName");
     const setter = DevExpress.data.utils.compileSetter("firstName");
 
-[note] This section uses [compileGetter](/Documentation/ApiReference/Data_Layer/Utils/#compileGetterexpr) and [compileSetter](/Documentation/ApiReference/Data_Layer/Utils/#compileSetterexpr) for getters and setters. In practice, you do not need to use them when specifying sorting, filtering, etc. Use only the values passed to these methods, and name them "getter" and "setter".
+[note] This section uses [compileGetter](/api-reference/30%20Data%20Layer/Utils/compileGetter(expr).md '/Documentation/ApiReference/Data_Layer/Utils/#compileGetterexpr') and [compileSetter](/api-reference/30%20Data%20Layer/Utils/compileSetter(expr).md '/Documentation/ApiReference/Data_Layer/Utils/#compileSetterexpr') for getters and setters. In practice, you do not need to use them when specifying sorting, filtering, etc. Use only the values passed to these methods, and name them "getter" and "setter".
 
 To get a value of the **person.firstName** property, call the created getter and pass the **person** object to it.
 

@@ -1,4 +1,4 @@
-To insert a new item into the Store, call the [store.insert(values)](/Documentation/ApiReference/Data_Layer/CustomStore/Methods/#insertvalues) method.
+To insert a new item into the Store, call the [store.insert(values)](/api-reference/30%20Data%20Layer/Store/3%20Methods/insert(values).md '/Documentation/ApiReference/Data_Layer/CustomStore/Methods/#insertvalues') method.
 
     <!--JavaScript-->
     store.insert({

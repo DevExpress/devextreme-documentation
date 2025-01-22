@@ -3,6 +3,7 @@ id: EmailRule
 type: Object
 module: common
 export: EmailRule
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

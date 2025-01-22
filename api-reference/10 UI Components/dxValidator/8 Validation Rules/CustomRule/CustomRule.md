@@ -3,6 +3,7 @@ id: CustomRule
 type: Object
 module: common
 export: CustomRule
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

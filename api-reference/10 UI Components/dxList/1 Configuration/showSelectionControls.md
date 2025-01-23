@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether or not to display controls used to select list items. Not available if [selectionMode](/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode) is set to *'none'*.
+Specifies whether or not to display controls used to select list items. Not available if [selectionMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') is set to *'none'*.
 
 ---
 #include btn-open-demo with {

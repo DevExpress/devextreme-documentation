@@ -22,6 +22,11 @@ jobs:
             repository: devexpress/devextreme
             ref: ${{ github.ref_name }}
 
+        - name: Set up .NET
+          uses: actions/setup-dotnet@v4
+          with:
+            dotnet-version: 6.0.x
+
         - name: NPM - devextreme
           working-directory: devextreme
           run: |

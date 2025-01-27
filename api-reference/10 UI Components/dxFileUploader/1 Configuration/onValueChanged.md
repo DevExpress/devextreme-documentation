@@ -241,7 +241,7 @@ The following code snippet demonstrates how to add image previews before uploadi
 
 ---
 
-To learn how to retrieve file data after uploading, refer to the following demo:
+For details on how to retrieve file data after uploading, refer to the following demo:
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/CustomDropzone/"

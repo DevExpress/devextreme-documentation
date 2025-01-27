@@ -99,10 +99,12 @@ The following code snippet demonstrates how to add image previews before uploadi
     </div>
 
     <!-- tab: app.component.ts -->
+    import { DxFileUploaderTypes } from 'devextreme-angular/file-uploader';
+    // ...
     export class AppComponent {
         imagePreviews: { src: string; name: string }[] = [];
 
-        onFileSelected(e): void {
+        onFileSelected(e: DxFileUploaderTypes.ValueChangedEvent) {
             const input = e.value;
             this.imagePreviews = [];
             input.forEach((file) => {
@@ -145,6 +147,7 @@ The following code snippet demonstrates how to add image previews before uploadi
     <script setup lang="ts">
     import { ref } from "vue";
     import DxFileUploader from "devextreme-vue/file-uploader";
+    import type { DxFileUploaderTypes } from "devextreme-vue/file-uploader";
 
     interface ImagePreview {
         src: string;
@@ -153,7 +156,7 @@ The following code snippet demonstrates how to add image previews before uploadi
 
     const imagePreviews = ref<ImagePreview[]>([]);
 
-    const onFileSelected = (e) => {
+    const onFileSelected = (e: DxFileUploaderTypes.ValueChangedEvent) => {
         const input = e.value;
         imagePreviews.value = [];
         input.forEach((file) => {
@@ -180,8 +183,8 @@ The following code snippet demonstrates how to add image previews before uploadi
 ##### React
 
     <!-- tab: App.tsx -->
-    import React, { useState } from "react";
-    import FileUploader from "devextreme-react/file-uploader";
+    import React, { useCallback, useState } from "react";
+    import FileUploader, { FileUploaderTypes } from "devextreme-react/file-uploader";
 
     interface ImagePreview {
         src: string;
@@ -190,20 +193,20 @@ The following code snippet demonstrates how to add image previews before uploadi
 
     export default function App() {
         const [imagePreviews, setImagePreviews] = useState<ImagePreview[]>([]);
-        const onFileSelected = (e) => {
+        const onFileSelected = useCallback((e: FileUploaderTypes.ValueChangedEvent) => {
             const input = e.value;
             setImagePreviews([]);
             input.forEach((file) => {
-            const reader = new FileReader();
-            reader.onload = () => {
-                setImagePreviews((prevImages) => [
-                    ...prevImages,
-                    { src: reader.result as string, name: file.name },
-                ]);
-            };
-            reader.readAsDataURL(file);
+                const reader = new FileReader();
+                reader.onload = () => {
+                    setImagePreviews((prevImages) => [
+                        ...prevImages,
+                        { src: reader.result, name: file.name },
+                    ]);
+                };
+                reader.readAsDataURL(file);
             });
-        };
+        }, []);
         return (
             <div>
                 <FileUploader

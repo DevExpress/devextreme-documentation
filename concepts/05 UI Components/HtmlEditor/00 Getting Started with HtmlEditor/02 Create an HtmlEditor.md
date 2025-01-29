@@ -1,7 +1,7 @@
 ---
 ##### jQuery
 
-The HTML Editor uses the <a href="https://github.com/DevExpress/devextreme-quill/#--devextreme-quill" target="_blank">DevExtreme Quill</a> library. To create an HtmlEditor on your page, [add DevExtreme to your application](/concepts/58%20jQuery%20Components/05%20Add%20DevExtreme%20to%20a%20jQuery%20Application/00%20Add%20DevExtreme%20to%20a%20jQuery%20Application.md '/Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/'), reference the DevExtreme Quill script before the main DevExtreme script, and use the following code:
+The HTML Editor uses the <a href="https://github.com/DevExpress/devextreme-quill/#--devextreme-quill" target="_blank">DevExtreme Quill</a> library. To create an HTML Editor on your page, [add DevExtreme to your application](/concepts/58%20jQuery%20Components/05%20Add%20DevExtreme%20to%20a%20jQuery%20Application/00%20Add%20DevExtreme%20to%20a%20jQuery%20Application.md '/Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/'), reference the DevExtreme Quill script before the main DevExtreme script, and use the following code:
 
     <!-- tab: index.js -->
     $(function () {

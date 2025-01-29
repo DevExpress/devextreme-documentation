@@ -6,11 +6,11 @@ inherits: Editor
 ---
 ---
 ##### shortDescription
-HtmlEditor is a WYSIWYG editor that allows you to format textual and visual content and to output it in HTML or Markdown. HtmlEditor is built on top of and requires the <a href="https://github.com/DevExpress/devextreme-quill/" target="_blank">DevExtreme Quill</a>.
+HTML Editor is a WYSIWYG editor that allows you to format textual and visual content and to output it in HTML or Markdown. HTML Editor is built on top of and requires the <a href="https://github.com/DevExpress/devextreme-quill/" target="_blank">DevExtreme Quill</a>.
 
 ##### widgettree
 valueType: "html",
-value: "This is <b>HtmlEditor</b>.<br/>Select text and use a toolbar item.",
+value: "This is <b>HTML Editor</b>.<br/>Select text and use a toolbar item.",
 toolbar: {
     items: ["bold", "italic", "color", "background", "link",
     {

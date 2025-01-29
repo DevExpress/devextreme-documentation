@@ -24,7 +24,7 @@
 <td><a href="https://js.devexpress.com/Documentation/24_1/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/24_1/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#searchMode">searchMode</a><br><a href="https://js.devexpress.com/Documentation/24_1/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/24_1/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/#searchTimeout">searchTimeout</a></td>
 </tr>
 <tr>
-<td>HtmlEditor</td>
+<td>HTML Editor</td>
 <td><a href="https://js.devexpress.com/Documentation/24_1/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#formatName">formatName</a><br><a href="https://js.devexpress.com/Documentation/24_1/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#formatValues">formatValues</a></td>
 </tr>
 <tr>

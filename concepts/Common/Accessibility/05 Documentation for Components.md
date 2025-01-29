@@ -240,7 +240,7 @@ Refer to the following table for detailed information about each component's acc
             <td class="dx-table-row__center icon-success"></td>
         </tr>
         <tr>
-            <td><a href="/Documentation/Guide/UI_Components/HtmlEditor/Accessibility/">HtmlEditor</a></td>
+            <td><a href="/Documentation/Guide/UI_Components/HtmlEditor/Accessibility/">HTML Editor</a></td>
             <td class="dx-table-row__center icon-success"></td>
             <td class="dx-table-row__center icon-success"></td>
             <td class="dx-table-row__center icon-success"></td>

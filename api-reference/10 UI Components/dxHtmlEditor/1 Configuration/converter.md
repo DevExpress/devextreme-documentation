@@ -6,7 +6,7 @@ inheritsType: Converter
 ---
 ---
 ##### shortDescription
-Allows you to convert an HtmlEditor value between different markups.
+Allows you to convert an HTML Editor value between different markups.
 
 ---
 ---

@@ -9,7 +9,7 @@ inheritsType: dxHtmlEditorToolbar
 Configures the UI component's toolbar.
 
 ---
-![DevExtreme HTML5 JavaScript HtmlEditor Toolbar](/images/htmlEditor/visual_elements/toolbar.png)
+![DevExtreme HTML5 JavaScript HTML Editor Toolbar](/images/htmlEditor/visual_elements/toolbar.png)
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/ToolbarCustomization/"

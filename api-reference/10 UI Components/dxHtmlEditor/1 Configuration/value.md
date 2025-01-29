@@ -1,6 +1,6 @@
 [note]
 
-HtmlEditor automatically removes redundant tags:
+HTML Editor automatically removes redundant tags:
 
     <!-- from -->
     <p><span>He</span><em><span>llo</span></em></p>

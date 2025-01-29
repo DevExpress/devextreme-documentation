@@ -4,10 +4,10 @@ type: function(value)
 ---
 ---
 ##### shortDescription
-A function that converts an HtmlEditor value from HTML to another markup language.
+A function that converts an HTML Editor value from HTML to another markup language.
 
 ##### param(value): String
-The HtmlEditor value.
+The HTML Editor value.
 
 ##### return: String
 The converted value.

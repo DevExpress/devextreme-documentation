@@ -5,7 +5,7 @@ default: 'base64'
 ---
 ---
 ##### shortDescription
-Specifies how the HtmlEditor UI component uploads files.
+Specifies how the HTML Editor UI component uploads files.
 
 ---
 #include btn-open-demo with {

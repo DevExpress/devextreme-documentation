@@ -51,4 +51,4 @@ To export PivotGrid data to Excel, you first need to install the following third
 
 ---
 
-[important] To learn about potential vulnerabilities when using an older ExcelJS version and applying [CSP rules](/Documentation/Guide/Common/Security_Considerations/#Content_Security_Policy), refer to the [ExcelJS CSP Treats](/Documentation/Guide/Common/Security_Considerations/#Export_Vulnerabilities/ExcelJS_CSP_Threats) section.
+[important] For details about potential vulnerabilities when using an older ExcelJS version and applying [CSP rules](/Documentation/Guide/Common/Security_Considerations/#Content_Security_Policy), refer to the [ExcelJS CSP Treats](/Documentation/Guide/Common/Security_Considerations/#Export_Vulnerabilities/ExcelJS_CSP_Threats) section.

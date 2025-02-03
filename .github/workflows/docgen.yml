@@ -10,13 +10,13 @@ jobs:
 
     steps:
         - name: Checkout Docs
-          uses: actions/checkout@v3
+          uses: actions/checkout@v4
           with:
             path: documentation
             ref: ${{ github.ref_name }}
 
         - name: Checkout DevExtreme
-          uses: actions/checkout@v3
+          uses: actions/checkout@v4
           with:
             path: devextreme
             repository: devexpress/devextreme

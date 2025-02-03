@@ -8,7 +8,29 @@ To learn more information about switching themes, refer to the following help to
 
 [/note]
 
-The DevExtreme Angular Template uses a main theme for view content and an additional theme ([color swatch](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/55%20Color%20Swatches.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/#Color_Swatches')) for the navigation menu. To switch to another theme, open the `src\themes\metadata.base.json` or `src\themes\metadata.additional.json` file and assign a theme name to the `baseTheme` field:
+In the DevExtreme Angular Template, you can switch between themes. Inspect the theme switcher logic in `src\app\shared\services\theme.service.ts`.
+
+The template uses a main theme for view content and an additional theme ([color swatch](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/55%20Color%20Swatches.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/#Color_Swatches')) for the navigation menu. The corresponding .JSON files are the following:
+
+<table class="dx-table">
+    <tr>
+        <th>Theme</th>
+        <th>Base file</th>
+        <th>Additional file</th>
+    </tr>
+    <tr>
+        <td><b>Light</b></td>
+        <td><code>src\themes\metadata.base.json</code></td>
+        <td><code>src\themes\metadata.additional.json</code></td>
+    </tr>
+    <tr>
+        <td><b>Dark</b></td>
+        <td><code>src\themes\metadata.base.dark.json</code></td>
+        <td><code>src\themes\metadata.additional.dark.json</code></td>
+    </tr>
+</table>
+
+The default theme is `fluent.blue.light`. To switch to another theme, open the .JSON file and assign a theme name to the `baseTheme` field:
 
     <!-- tab: metadata.base.json -->
     {
@@ -20,12 +42,28 @@ The DevExtreme Angular Template uses a main theme for view content and an additi
     <!-- tab: metadata.additional.json -->
     {
         // ...
-        "baseTheme": "generic.light",
+        "baseTheme": "material.blue.light",
+        // ...
+    }
+
+    <!-- tab: metadata.base.dark.json -->
+    {
+        // ...
+        "baseTheme": "material.blue.dark",
+        // ...
+    }
+
+    <!-- tab: metadata.additional.dark.json -->
+    {
+        // ...
+        "baseTheme": "material.blue.dark",
         // ...
     }
 
 You can find all theme names in the [Predefined Themes](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') help topic. Use theme names without the `dx` prefix.
 
-Run the following command to rebuild themes:
+[important] If you use a Generic theme, prefix it with `generic.`. For instance, use `generic.dark`, not just `dark`.
+
+After making changes in the .JSON files, run the following command to rebuild themes:
 
     npm run build-themes

@@ -32,13 +32,6 @@ jobs:
     - name: Validation
       run: npm run validate-docs
 
-    - name: Archive internal-tools artifacts
-      uses: actions/upload-artifact@v3
-      with:
-        name: internal-tools-artifacts
-        path: artifacts/internal-tools/
-        retention-days: 7
-
   build:
     runs-on: ubuntu-latest
     name: ContentMap
@@ -62,13 +55,6 @@ jobs:
 
     - name: Generate ContentMaps
       run: npm run generate-content-map
-
-    - name: Archive internal-tools artifacts
-      uses: actions/upload-artifact@v3
-      with:
-        name: internal-tools-artifacts
-        path: artifacts/internal-tools/
-        retention-days: 7
 
   link:
     runs-on: ubuntu-latest
@@ -96,41 +82,3 @@ jobs:
 
     - name: Check links
       run: npm run validate-links
-
-    - name: Archive internal-tools artifacts
-      uses: actions/upload-artifact@v3
-      with:
-        name: internal-tools-artifacts
-        path: artifacts/internal-tools/
-        retention-days: 7
-
-  # modules:
-  #   runs-on: ubuntu-latest
-  #   name: Check modules guide
-  #   steps:
-
-  #   - name: Checkout
-  #     uses: actions/checkout@v4
-
-  #   - name: Setup Node.js
-  #     uses: actions/setup-node@v4
-  #     with:
-  #       node-version: ${{ env.nodeVersion }}
-
-  #   - name: Set up .NET
-  #     uses: actions/setup-dotnet@v4
-  #     with:
-  #       dotnet-version: ${{ env.dotNetVersion }}
-
-  #   - name: Install dependencies
-  #     run: npm install
-
-  #   - name: Check modules guide
-  #     run: npm run validate-modules-guide
-
-  #   - name: Archive internal-tools artifacts
-  #     uses: actions/upload-artifact@v3
-  #     with:
-  #       name: internal-tools-artifacts
-  #       path: artifacts/internal-tools/
-  #       retention-days: 7

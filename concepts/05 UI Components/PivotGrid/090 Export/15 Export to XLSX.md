@@ -29,7 +29,7 @@ The following code snippet exports PivotGrid data as a <a href="https://en.wikip
 
     exportPivotGrid({ 
         worksheet: worksheet, 
-        component: e.component
+        component: pivotGridInstance
     }).then(function() {
         workbook.xlsx.writeBuffer().then(function(buffer: BlobPart) { 
             saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Sales.xlsx"); 
@@ -40,7 +40,7 @@ The following code snippet exports PivotGrid data as a <a href="https://en.wikip
 
     exportPivotGrid({ 
         worksheet: worksheet, 
-        component: e.component
+        component: pivotGridInstance
     }).then(function() {
         workbook.xlsx.writeBuffer().then(function(buffer: BlobPart) { 
             saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Sales.xlsx"); 
@@ -51,7 +51,7 @@ The following code snippet exports PivotGrid data as a <a href="https://en.wikip
 
     exportPivotGrid({ 
         worksheet: worksheet, 
-        component: e.component
+        component: pivotGridInstance
     }).then(function() {
         workbook.xlsx.writeBuffer().then(function(buffer: BlobPart) { 
             saveAs(new Blob([buffer], { type: "application/octet-stream" }), "Sales.xlsx"); 

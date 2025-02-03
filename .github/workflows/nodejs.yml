@@ -33,7 +33,7 @@ jobs:
       run: npm run validate-docs
 
     - name: Archive internal-tools artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: internal-tools-artifacts
         path: artifacts/internal-tools/
@@ -64,7 +64,7 @@ jobs:
       run: npm run generate-content-map
 
     - name: Archive internal-tools artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: internal-tools-artifacts
         path: artifacts/internal-tools/
@@ -98,7 +98,7 @@ jobs:
       run: npm run validate-links
 
     - name: Archive internal-tools artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: internal-tools-artifacts
         path: artifacts/internal-tools/
@@ -129,7 +129,7 @@ jobs:
   #     run: npm run validate-modules-guide
 
   #   - name: Archive internal-tools artifacts
-  #     uses: actions/upload-artifact@v3
+  #     uses: actions/upload-artifact@v4
   #     with:
   #       name: internal-tools-artifacts
   #       path: artifacts/internal-tools/

@@ -1,4 +1,4 @@
-[important] Refer to the [CSV Injection](/Documentation/Guide/Common/Security_Considerations/#Export_Vulnerabilities/CSV_Injection) section for information about CSV Injection Attacks.
+[important] Refer to the [CSV Injection](/concepts/Common/Security%20Considerations/30%20Export%20Vulnerabilities/05%20CSV%20Injection.md '/Documentation/Guide/Common/Security_Considerations/#Export_Vulnerabilities/CSV_Injection') section for information about CSV Injection Attacks.
 
 You can also export PivotGrid to CSV. To do this, call the **exportPivotGrid(options)** method as follows:
 

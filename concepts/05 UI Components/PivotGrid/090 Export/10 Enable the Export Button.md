@@ -1,4 +1,4 @@
-PivotGrid has a built-in "Export" button. To enable this button, set the [export](/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/export/).[enabled](/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/export/#enabled) property to `true`.
+PivotGrid has a built-in "Export" button. To enable this button, set the [export](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/export/').[enabled](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/export/enabled.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/export/#enabled') property to `true`.
 
 ---
 ##### jQuery
@@ -51,4 +51,4 @@ PivotGrid has a built-in "Export" button. To enable this button, set the [export
 
 ---
 
-[note] When users click the "Export" button in PivotGrid, the [onExporting](/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#onExporting) event handler is executed.
+[note] When users click the "Export" button in PivotGrid, the [onExporting](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#onExporting') event handler is executed.

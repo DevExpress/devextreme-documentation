@@ -60,4 +60,4 @@ The following code snippet exports PivotGrid data as a <a href="https://en.wikip
 
 ---
 
-[note] You can pass a PivotGrid instance, a worksheet, and other properties to **exportPivotGrid** to customize your Excel sheet. For a full list, refer to [PivotGridExportOptions](/Documentation/ApiReference/Common/Object_Structures/PivotGridExportOptions/).
+[note] You can pass a PivotGrid instance, a worksheet, and other properties to **exportPivotGrid** to customize your Excel sheet. For a full list, refer to [ExcelExportPivotGridProps](/Documentation/ApiReference/Common/Object_Structures/ExcelExportPivotGridProps/).

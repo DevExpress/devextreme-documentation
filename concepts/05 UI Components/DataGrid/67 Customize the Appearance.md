@@ -22,3 +22,10 @@ The following image is an element map. Click the element you want to customize t
 </map>
 
 </div>
+
+#####See Also#####
+- [Customize DataGrid cells](/Documentation/Guide/UI_Components/DataGrid/Columns/Customize_Cells/)
+- [Editing: Customize editors inside the grid](/Documentation/Guide/UI_Components/DataGrid/Editing/#Customize_Editors)
+- [Editing: Customize edit form](/Documentation/Guide/UI_Components/DataGrid/Editing/#Customize_Edit_Form)
+- [Editing: Customize a button column](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CommandColumnCustomization/)
+- [Toolbar customization](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ToolbarCustomization)

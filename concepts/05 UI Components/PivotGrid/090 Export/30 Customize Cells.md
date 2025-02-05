@@ -1,4 +1,4 @@
-Use the [customizeCell](/Documentation/ApiReference/Common/Object_Structures/ExcelExportPivotGridProps/#customizeCell) function inside the **exportPivotGrid** method to customize exported cells.
+Use the [customizeCell](/api-reference/50%20Common/Object%20Structures/ExcelExportPivotGridProps/customizeCell.md '/Documentation/ApiReference/Common/Object_Structures/ExcelExportPivotGridProps/#customizeCell') function inside the **exportPivotGrid** method to customize exported cells.
 
 For instance, to [outline (group)](https://support.microsoft.com/en-us/office/outline-group-data-in-a-worksheet-08ce98c4-0063-4d42-8ac7-8278c49e9aff) data in an Excel worksheet, define **customizeCell** as shown below:
 

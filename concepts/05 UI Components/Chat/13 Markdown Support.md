@@ -1,12 +1,12 @@
-Many situations require converting Chat messages from Markdown to HTML, as Chat supports HTML messages. For example, when you use Open AI or if you want to support Markdown in user inputs.
+You often need to convert Chat messages from Markdown to HTML since Chat supports HTML. This is useful when using OpenAI or supporting Markdown in user inputs.
 
-To support Markdown, use a third-party library for conversion. One option is the [unified](https://unifiedjs.com/explore/package/unified/) + [remark](https://unifiedjs.com/explore/package/remark/) + [rehype](https://unifiedjs.com/explore/package/rehype/) stack, demonstrated in our AI integration demo:
+To support Markdown, use a third-party library for conversion. The [unified](https://unifiedjs.com/explore/package/unified/) + [remark](https://unifiedjs.com/explore/package/remark/) + [rehype](https://unifiedjs.com/explore/package/rehype/) stack is a good option, as shown in our AI integration demo:
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Chat/AIAndChatbotIntegration/"
 }
 
-This powerful stack supports various extensions and allows control over different conversion stages. For a simpler, lightweight solution, consider using libraries such as [micromark](https://github.com/micromark/micromark).
+This powerful stack supports various extensions and allows control over different conversion stages. For a simpler, lightweight solution, you can use libraries such as [micromark](https://github.com/micromark/micromark).
 
 Regardless of the library choice, convert the message text within the [messageTemplate](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#messageTemplate) property:
 

@@ -8,7 +8,7 @@ To support Markdown, use a third-party library for conversion. The [unified](htt
 
 This powerful stack supports various extensions and allows control over different conversion stages. For a simpler, lightweight solution, you can use libraries such as [micromark](https://github.com/micromark/micromark).
 
-Regardless of the library choice, convert the message text within the [messageTemplate](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#messageTemplate) property:
+Regardless of the library choice, convert the message text within the [messageTemplate](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/messageTemplate.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#messageTemplate') property:
 
 ---
 ##### jQuery

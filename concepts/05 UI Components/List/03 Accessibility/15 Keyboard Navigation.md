@@ -19,7 +19,7 @@ A user can use the following keys to interact with the List component:
     </tr>
     <tr>
         <td>Enter or Space</td>
-        <td><a href="/Documentation/Guide/UI_Components/List/Selection/#User_Interaction">Selects</a> the focused item.</td>
+        <td><a href="/Documentation/Guide/UI_Components/List/Selection/#User_Interaction">Selects</a> and deselects the focused item. Active if the <a href="/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectByClick">selectByClick</a> property is set to <i>true</i>.</td>
     </tr>
     <tr>
         <td>Shift + &uarr; / &darr;</td>

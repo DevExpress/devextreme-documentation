@@ -1,4 +1,4 @@
-Header filter data objects should have the `text` and `value` fields. If data objects fetched from a server lack these fields, map the original data source to the `text` + `value` structure. The mapped data source should also include key fields from the original data source.
+Header filter data objects should have the `text` and `value` fields. If these fields are missing from data objects fetched from a server, map the original data source to the `text` + `value` structure. The mapped data source should also include key fields from the original data source.
 
 [note] Keep the [allowSearch](/api-reference/_hidden/GridBaseColumn/headerFilter/allowSearch.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#allowSearch') property set to **false** to avoid incorrect search results when mapping data source fields.
 

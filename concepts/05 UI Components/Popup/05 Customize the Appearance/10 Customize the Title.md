@@ -151,7 +151,7 @@ If you need to define the title completely, specify a template for it as shown i
         <DxPopup
             v-model:visible="isPopupVisible"
             titleTemplate="title">
-            <template>
+            <template #content>
                 <p>Popup content</p>
             </template>
             <template #title>

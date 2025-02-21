@@ -58,7 +58,7 @@ The following code creates a simple Popover on your page and attaches it to anot
                 target="#image"
                 show-event="dxhoverstart"
                 hide-event="dxhoverend">
-                <template>
+                <template #content>
                     <p>Popover content</p>
                 </template>
             </DxPopover>

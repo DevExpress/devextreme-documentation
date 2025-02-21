@@ -73,7 +73,7 @@ The Popup has two toolbars: top and bottom. Items on these toolbars can be plain
         <DxPopup
             :visible="isPopupVisible"
             title="Popup Title">
-            <template>
+            <template #content>
                 <p>Popup content</p>
             </template>
             <DxToolbarItem

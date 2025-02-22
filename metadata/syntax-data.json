@@ -2493,6 +2493,11 @@
       "react": "_ui_map_ClickEvent",
       "vue": "Dx_ui_map_ClickEvent"
     },
+    "_ui_map_ClickEvent.location": {
+      "angular": "dxo-location",
+      "react": "Location",
+      "vue": "DxLocation"
+    },
     "_ui_map_DisposingEvent": {
       "angular": "dxo-ui-map--disposing-event",
       "react": "_ui_map_DisposingEvent",
@@ -21155,6 +21160,9 @@
     },
     "mapLayerElement": {
       "vue": "map-layer-element"
+    },
+    "mapLocation": {
+      "vue": "map-location"
     },
     "message": {
       "angular": "dxo-message",

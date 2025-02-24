@@ -19,4 +19,7 @@ The UI component's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
+##### field(e.location): MapLocation
+<!-- Description goes here -->
+
 ---

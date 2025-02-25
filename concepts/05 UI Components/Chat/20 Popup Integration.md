@@ -33,12 +33,14 @@ The following code snippet demonstrates this scenario. Check the `CSS` tab for i
             onClick() {
                 popup.show();
             }
-        }).dxSpeedDialAction("instance");
+        });
+
         const popup = $("#popup").dxPopup({
             position: "right bottom",
             width: 400,
             height: 650,
             shading: false,
+            dragEnabled: false,
             contentTemplate: function (contentElement) {
                 contentElement.append(
                 $("<div />")
@@ -80,6 +82,7 @@ The following code snippet demonstrates this scenario. Check the `CSS` tab for i
         [width]="400"
         [height]="650"
         [shading]="false"
+        [dragEnabled]="false"
         position="right bottom"
     >
         <dx-chat #chat
@@ -124,9 +127,7 @@ The following code snippet demonstrates this scenario. Check the `CSS` tab for i
         }
 
         onMessageEntered(e: DxChatTypes.MessageEnteredEvent) {
-            if (e.message) {
-                this.messages = [...this.messages, e.message];
-            }
+            this.messages = [...this.messages, e.message];
         }
     }
 
@@ -154,6 +155,7 @@ The following code snippet demonstrates this scenario. Check the `CSS` tab for i
         :width="400"
         :height="650"
         :shading="false"
+        :drag-enabled="false"
         position="right bottom"
     >
         <DxChat #chat
@@ -183,9 +185,7 @@ The following code snippet demonstrates this scenario. Check the `CSS` tab for i
     }]);
     const popupVisible = ref(false);
     const onMessageEntered = (e: DxChatTypes.MessageEnteredEvent) => {
-        if (e.message) {
-            messages.value = [...messages.value, e.message];
-        }
+        messages.value = [...messages.value, e.message];
     }
     const showPopup = () => {
         popupVisible.value = true;
@@ -225,7 +225,7 @@ The following code snippet demonstrates this scenario. Check the `CSS` tab for i
             text: "Hello! How can I help you?"
         }]);
         const onMessageEntered = useCallback((e: ChatTypes.MessageEnteredEvent) => {
-            setMessages((prevMessages) => [...prevMessages, e.message!]);
+            setMessages((prevMessages) => [...prevMessages, e.message]);
         }, []);
         const showPopup = () => {
             setPopupVisible(true);
@@ -245,16 +245,17 @@ The following code snippet demonstrates this scenario. Check the `CSS` tab for i
                     width={400}
                     height={650}
                     shading={false}
+                    dragEnabled={false}
                     onHiding={hidePopup}
                     position="right bottom"
                 >
-                <Chat
-                    id="chat"
-                    width={400}
-                    height={600}
-                    items={messages}
-                    onMessageEntered={onMessageEntered} 
-                />
+                    <Chat
+                        id="chat"
+                        width={400}
+                        height={600}
+                        items={messages}
+                        onMessageEntered={onMessageEntered} 
+                    />
                 </Popup>
             </>
         );

@@ -1,8 +1,7 @@
 ---
 id: MapLocation
-module: ui/map
-export: MapLocation
 generateTypeLink: 
+hidden: 
 ---
 ---
 ##### shortDescription

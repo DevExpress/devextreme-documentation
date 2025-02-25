@@ -1,10 +1,10 @@
-One popular way to add a chat assistant to your website is to implement it in the modal at the bottom right corner of the screen. For this scenario, follow the steps below:
+A common way to add a chat assistant to your website is by embedding it in a modal at the bottom right corner. Follow these steps:
 
 - Place DevExtreme [Floating Action Button](/Documentation/Guide/UI_Components/Floating_Action_Button/Getting_Started_with_Floating_Action_Button/) at the bottom right of the window. Users can click it to open the popup.
 - Position our [Popup](/Documentation/Guide/UI_Components/Popup/Overview/) at the bottom right (or another preferred location).
 - Add the Chat component for the virtual assistant.
 
-The following code snippet demonstrates this scenario. Check the `CSS` tab for instructions on how to integrate Popup and Chat seamlessly.
+The following code snippet demonstrates this scenario. Check the `CSS` tab for instructions on how to integrate Popup and Chat.
 
 ---
 ##### jQuery

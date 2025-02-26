@@ -4,7 +4,7 @@ type: MapLocation
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The clicked location.
 
 ---
 <!-- Description goes here -->

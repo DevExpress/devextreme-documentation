@@ -2,7 +2,9 @@
 
 - [Evaluation (Trial)](/concepts/Common/Licensing/05%20Evaluation%20(Trial).md '/Documentation/Guide/Common/Licensing/#Evaluation_Trial')
 
-- [How to Obtain and Validate Your License Key](/concepts/Common/Licensing/10%20How%20to%20Obtain%20and%20Validate%20Your%20License%20Key.md '/Documentation/Guide/Common/Licensing/#How_to_Obtain_and_Validate_Your_License_Key')
+- [Obtain Your License Key](/Documentation/Guide/Common/Licensing/#Obtain_Your_License_Key)
+
+- [Validate Your License Key](/Documentation/Guide/Common/Licensing/#Validate_Your_License_Key)
 
 - [Deployment and Continuous Integration (CI)](/concepts/Common/Licensing/13%20Deployment%20and%20Continuous%20Integration%20(CI).md '/Documentation/Guide/Common/Licensing/#Deployment_and_Continuous_Integration_CI')
 

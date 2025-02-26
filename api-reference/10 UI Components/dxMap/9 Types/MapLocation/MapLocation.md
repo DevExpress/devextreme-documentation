@@ -6,5 +6,6 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
+The selected Map location.
 
 ---

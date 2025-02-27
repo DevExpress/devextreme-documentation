@@ -1,7 +1,7 @@
 ---
 id: dxVectorMap.Options.controlBar.zoomVisible
 type: Boolean
-default: 'true'
+default: true
 ---
 ---
 ##### shortDescription

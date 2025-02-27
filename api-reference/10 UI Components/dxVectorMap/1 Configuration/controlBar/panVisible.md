@@ -1,7 +1,7 @@
 ---
 id: dxVectorMap.Options.controlBar.panVisible
 type: Boolean
-default: 'true'
+default: true
 ---
 ---
 ##### shortDescription

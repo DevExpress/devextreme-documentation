@@ -19,7 +19,7 @@ The UI component's instance.
 ##### field(e.event): event
 The event that triggered the function. It can be:
 
-- An [EventObject](/Documentation/ApiReference/Common/Object_Structures/EventObject/) or a <a href="http://api.jquery.com/category/events/event-object/" target="_blank">jQuery.Event</a> with the **'googleStatic'** provider.
+- An [EventObject](/api-reference/50%20Common/Object%20Structures/EventObject '/Documentation/ApiReference/Common/Object_Structures/EventObject/') or a <a href="http://api.jquery.com/category/events/event-object/" target="_blank">jQuery.Event</a> with the **'googleStatic'** provider.
 - A native event with the **'google'** and **'azure'** providers.
 - Unspecified with the **'bing'** provider.
 

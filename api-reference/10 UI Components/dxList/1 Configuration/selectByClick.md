@@ -1,7 +1,7 @@
 ---
 id: dxList.Options.selectByClick
 type: Boolean
-default: 'true'
+default: true
 ---
 ---
 ##### shortDescription

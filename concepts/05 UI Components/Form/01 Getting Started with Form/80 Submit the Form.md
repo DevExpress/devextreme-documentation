@@ -434,11 +434,11 @@ React 19 offers a [useActionState](https://react.dev/reference/react/useActionSt
 
         const [error, submitAction, isPending] = useActionState(
             async (previousState, formData) => {
-                form?.current?.instance?.().clear?.();
+                form?.current?.instance?.().clear?.(); // Clear the form
                 await new Promise((resolve) => 
-                    // resolve the promise
+                    // Resolve the promise
                 );
-                if ( ... ) { // configure when to return an error
+                if ( ... ) { // Configure when to return an error
                     return new Error("Submitting failed!");
                 }
                 const fieldValues = Object.fromEntries(formData);

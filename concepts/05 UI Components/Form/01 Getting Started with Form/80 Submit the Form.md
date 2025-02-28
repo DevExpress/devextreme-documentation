@@ -405,7 +405,7 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
 
 [note]
 
-React 19 offers a [useActionState](https://react.dev/reference/react/useActionState) hook that allows you to update state based on the result of a form action. When using this hook, [clear](/Documentation/ApiReference/UI_Components/dxForm/Methods/#clear) the Form before submitting:
+React 19 offers a [useActionState](https://react.dev/reference/react/useActionState) hook that allows you to update state based on a form action result. When using this hook, [clear](/Documentation/ApiReference/UI_Components/dxForm/Methods/#clear) the Form as the initial step when implementing action:
 
     <!-- tab: App.js -->
     import React, { useActionState, useRef } from "react";

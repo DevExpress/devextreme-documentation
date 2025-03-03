@@ -93,7 +93,6 @@ The following examples show how to configure the FileUploader for each upload mo
             components: {
                 DxFileUploader
             },
-
             data() {
                 return {
                     //...
@@ -237,7 +236,6 @@ The following examples show how to configure the FileUploader for each upload mo
             components: {
                 DxFileUploader
             },
-
             data() {
                 return {
                     //...

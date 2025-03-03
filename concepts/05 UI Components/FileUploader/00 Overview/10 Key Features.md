@@ -1,2 +1,8 @@
-- ****    
-The FileUploader can operate in two different modes, each demanding a different client- and server-side configuration. See the [Client-Side Settings](/concepts/05%20UI%20Components/FileUploader/20%20Upload%20Files/05%20Client-Side%20Settings '/Documentation/Guide/UI_Components/FileUploader/Upload_Files/Client-Side_Settings/') article for more details.
+- **Uploading Options**  
+[Upload](/Documentation/Guide/UI_Components/FileUploader/Upload_Files/Client-Side_Settings/) files instantly or confirm upload with built-in buttons. Upload files [in chunks](/Documentation/Guide/UI_Components/FileUploader/Upload_Files/Client-Side_Settings/#Chunk_Upload) (requires [server-side setup](https://demos.devexpress.com/ASPNetMvc/Demo/FileUploader/ChunkUploading)) or when an [HTML form is submitted](/Documentation/Guide/UI_Components/FileUploader/Upload_Files/Client-Side_Settings/#Upload_Mode).
+
+- **File Restrictions**  
+[Restrict](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#accept) types of files and specify[allowed file extensions](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#allowedFileExtensions). Set [maximum](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#maxFileSize)/[minimum](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#minFileSize) file size. Allow users to select either one file or [multiple](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#multiple) files at a time.
+
+- **Validation**  
+All DevExtreme component [validation](/Documentation/Guide/UI_Components/FileUploader/File_Validation/) options are available for FileUploader. Configure [validation errors](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#validationErrors) and check if FileUploader [is dirty](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#isDirty). Files are validated on the client, but [server-side validation](https://demos.devexpress.com/ASPNetMvc/Demo/FileUploader/Validation/) is also necessary.

@@ -9,6 +9,8 @@ Specifies animation properties.
 ---
 The UI component animates its elements at the beginning of its lifetime and when the data source changes.
 
+[note] If multiple charts on the page do not fit in the window, the animation may not work smoothly. [Disable](/Documentation/ApiReference/UI_Components/dxChart/Configuration/animation/#enabled) the animation or adjust the markup to fit the charts.
+
 ---
 ##### jQuery
 

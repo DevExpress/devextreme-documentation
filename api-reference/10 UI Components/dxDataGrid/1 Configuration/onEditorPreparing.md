@@ -50,7 +50,7 @@ Row editor [properties](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row '
 Indicates whether the editor uses right-to-left representation.
 
 ##### field(e.setValue): any
-Use this method to change cell value. You can also pass a second value to the method to change the displayed value, but only for data row editors in a column with [calculateDisplayValue](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateDisplayValue).
+Use this method to change cell value. You can also pass a second value to the method to change the displayed value, but only for data row editors in a column with [calculateDisplayValue](/api-reference/_hidden/GridBaseColumn/calculateDisplayValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateDisplayValue').
 
 ##### field(e.updateValueTimeout): Number
 Gets and sets the delay between when a user stops typing a filter value and the change is applied. Available if the **parentType** is *"filterRow"* or *"searchPanel"*.

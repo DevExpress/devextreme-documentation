@@ -125,3 +125,174 @@ The following code snippet includes:
 - Push API for inserting and updating messages.
 - `reloadOnChange: false`.
 
+[note] This code snippet illustrates basic principles and does not implement custom editing. For a complete application example, refer to the following demo: [AI and Chatbot Integration](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Chat/AIAndChatbotIntegration/).
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    const messages = [
+        {
+            timestamp: new Date(),
+            text: "Hello! I'm here to help you. How can I assist you today?"
+        }
+    ];
+
+    let uniqueIndex = messages.length + 1;
+    let editing = null;
+
+    $(() => {
+    const customStore = new DevExpress.data.CustomStore({
+        key: 'id',
+        load: () => {
+            const d = $.Deferred();
+
+            setTimeout(() => {
+                d.resolve([...messages]);
+            });
+
+            return d.promise();
+        },
+        insert: (message) => {
+            const d = $.Deferred();
+
+            setTimeout(() => {
+                messages.push(message);
+                d.resolve();
+            });
+
+            return d.promise();
+        },
+    });
+
+    const dataSource = new DevExpress.data.DataSource({
+        store: customStore,
+        paginate: false
+    });
+
+    $("#chat").dxChat({
+        dataSource,
+        reloadOnChange: false,
+        onMessageEntered: (e) => {
+            if (editing) {
+                dataSource.store().push([{ type: 'update', key: editing, data: { text: e.message.text } }]);
+                editing = null;
+            }
+            else {
+                dataSource.store().push([
+                    { type: "insert", data: { id: uniqueIndex++, ...e.message } }
+                ]);
+            }
+        },
+        });
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-chat
+        [dataSource]="dataSource"
+        [reloadOnChange]="false"
+        (onMessageEntered)="onMessageEntered($event)">
+    </dx-chat>
+
+    <!-- tab: app.component.ts -->
+    import DataSource from 'devextreme/data/data_source';
+    import CustomStore from 'devextreme/data/custom_store';
+    import { DxChatTypes } from "devextreme-angular/ui/chat"; 
+    // ...
+
+    export class AppComponent {
+        messages: DxChatTypes.Message[] = [{
+            timestamp: new Date(),
+            text: "Hello! I'm here to help you. How can I assist you today?"
+        }];
+
+        customStore: CustomStore = new CustomStore({
+            key: 'id',
+            load: () => {
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        resolve([...this.messages]);
+                    }, 0);
+                });
+            },
+            insert: (message) => {
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        this.messages.push(message);
+                        resolve(message);
+                    });
+                });
+            },
+        });
+
+        dataSource: DataSource = new DataSource({
+            store: this.customStore,
+            paginate: false,
+        });
+
+        editing = null;
+
+        uniqueIndex = this.messages.length + 1;
+
+        onMessageEntered(e: DxChatTypes.MessageEnteredEvent) {
+            if (this.editing) {
+                this.dataSource.store().push([{ type: 'update', key: this.editing, data: { text: e.message.text } }]);
+                this.editing = null;
+            }
+            else {
+                this.dataSource.store().push([
+                    { type: "insert", data: { id: this.uniqueIndex++, ...e.message } }
+                ]);
+            }
+        };
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+    <DxChat 
+        :data-source="dataSource"
+        :reload-on-change="false"
+        @message-entered="onMessageEntered"
+    />
+    </template>
+
+    <script setup lang="ts">
+    import { DxChat } from 'devextreme-vue';
+    import type { DxChatTypes } from 'devextreme-vue/chat';
+    import { ref, type Ref } from 'vue';
+    import DataSource from 'devextreme/data/data_source';
+    import CustomStore from 'devextreme/data/custom_store';
+
+    const messages: Ref<DxChatTypes.Message[]> = ref([{
+        timestamp: new Date(),
+        text: "Hello! I'm here to help you. How can I assist you today?"
+    }]);
+    const customStore = new CustomStore({
+        key: 'id',
+        load: () => {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve([...messages]);
+                }, 0);
+            });
+        },
+        insert: (message) => {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    messages.push(message);
+                    resolve(message);
+                });
+            });
+        },
+    });
+
+    const dataSource = new DataSource({
+        store: customStore,
+        paginate: false,
+    });
+    
+    </script>

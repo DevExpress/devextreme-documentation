@@ -263,14 +263,13 @@ The following code snippet includes:
     <script setup lang="ts">
     import { DxChat } from 'devextreme-vue';
     import type { DxChatTypes } from 'devextreme-vue/chat';
-    import { ref, type Ref } from 'vue';
     import DataSource from 'devextreme/data/data_source';
     import CustomStore from 'devextreme/data/custom_store';
 
-    const messages: Ref<DxChatTypes.Message[]> = ref([{
+    const messages: DxChatTypes.Message[] = [{
         timestamp: new Date(),
         text: "Hello! I'm here to help you. How can I assist you today?"
-    }]);
+    }];
     const customStore = new CustomStore({
         key: 'id',
         load: () => {
@@ -294,5 +293,84 @@ The following code snippet includes:
         store: customStore,
         paginate: false,
     });
-    
+
+    let editing = null;
+
+    let uniqueIndex = messages.length + 1;
+
+    const onMessageEntered = (e: DxChatTypes.MessageEnteredEvent) => {
+        if (editing) {
+            dataSource.store().push([{ type: 'update', key: editing, data: { text: e.message.text } }]);
+            editing = null;
+        }
+        else {
+            dataSource.store().push([
+                { type: "insert", data: { id: uniqueIndex++, ...e.message } }
+            ]);
+        }
+    };
     </script>
+
+##### React
+
+    <!-- tab: App.tsx -->
+    import { Chat } from "devextreme-react";
+    import { ChatTypes } from "devextreme-react/chat";
+    import "devextreme/dist/css/dx.light.css";
+    import { useCallback } from "react";
+    import DataSource from "devextreme/data/data_source";
+    import CustomStore from "devextreme/data/custom_store";
+
+    export default function App() {
+        const messages: ChatTypes.Message[] = [
+            {
+                timestamp: new Date(),
+                text: "Hello! I'm here to help you. How can I assist you today?",
+            },
+        ];
+        const customStore = new CustomStore({
+            key: "id",
+            load: (): Promise<ChatTypes.Message[]> =>
+            new Promise((resolve) => {
+                setTimeout(() => {
+                resolve([...messages]);
+                }, 0);
+            }),
+            insert: (message: ChatTypes.Message): Promise<ChatTypes.Message> =>
+            new Promise((resolve) => {
+                setTimeout(() => {
+                messages.push(message);
+                resolve(message);
+                });
+            }),
+        });
+
+        const dataSource = new DataSource({
+            store: customStore,
+            paginate: false,
+        });
+
+        let editing = null;
+
+        let uniqueIndex = messages.length + 1;
+
+        const onMessageEntered = useCallback((e: ChatTypes.MessageEnteredEvent) => {
+            if (editing) {
+                dataSource.store().push([
+                    { type: "update", key: editing, data: { text: e.message!.text } },
+                ]);
+                editing = null;
+            } else {
+            dataSource.store().push([{ type: "insert", data: { id: uniqueIndex++, ...e.message } }]);
+            }
+        }, []);
+        return (
+            <Chat
+                dataSource={dataSource}
+                reloadOnChange={false}
+                onMessageEntered={onMessageEntered}
+            />
+        );
+    }
+
+---

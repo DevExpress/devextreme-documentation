@@ -20240,6 +20240,19 @@
     "exportInfo.fileName": {
       "vue": "file-name"
     },
+    "fieldInfo": {
+      "angular": "dxo-field-info",
+      "react": "FieldInfo",
+      "vue": "DxFieldInfo"
+    },
+    "fieldInfo.field": {
+      "angular": "dxo-field",
+      "react": "Field",
+      "vue": "DxField"
+    },
+    "fieldInfo.valueText": {
+      "vue": "value-text"
+    },
     "fileSystemItem": {
       "vue": "file-system-item"
     },

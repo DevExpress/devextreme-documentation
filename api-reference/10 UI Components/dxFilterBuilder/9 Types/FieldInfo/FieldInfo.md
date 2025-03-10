@@ -6,7 +6,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Information about a FilterBuilder field.
 
 ---
 <!-- Description goes here -->

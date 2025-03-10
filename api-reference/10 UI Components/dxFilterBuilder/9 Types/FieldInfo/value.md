@@ -4,7 +4,7 @@ type: String | Number | Date
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Unformatted field value (set in the editor).
 
 ---
 <!-- Description goes here -->

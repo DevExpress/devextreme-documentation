@@ -4,7 +4,7 @@ type: dxFilterBuilderField
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Field configuration.
 
 ---
 <!-- Description goes here -->

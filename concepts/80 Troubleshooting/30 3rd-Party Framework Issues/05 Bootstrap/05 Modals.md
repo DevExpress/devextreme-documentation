@@ -14,7 +14,7 @@ To allow any element to obtain input focus, specify a specially-designed option 
 
 ##### jQuery
 
-Set the `data-bs-focus` property to `false` (Bootstrap 5). For Bootstrap 4 or earlier, disable the `data-focus` property.
+Set the `data-bs-focus` property to `false` (Bootstrap 5). For Bootstrap 4, disable the `data-focus` property.
 
     <!-- tab: Bootstrap 5 -->
     <div class="modal fade" role="dialog" data-bs-focus="false">
@@ -25,7 +25,7 @@ Set the `data-bs-focus` property to `false` (Bootstrap 5). For Bootstrap 4 or ea
         </div>
     </div>
 
-    <!-- tab: Bootstrap 4 or earlier -->
+    <!-- tab: Bootstrap 4 -->
     <div class="modal fade" role="dialog" data-focus="false">
         <div class="modal-dialog">
             <div class="modal-content">     

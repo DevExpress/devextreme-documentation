@@ -19,7 +19,7 @@ The [items](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#item
                 {
                     timestamp: Date.now(),
                     author: secondUser,
-                    text: `Hello! I'm here to help you. How can I assist you today?`,
+                    text: "Hello! I'm here to help you. How can I assist you today?",
                 }
             ];
             onMessageEntered: (e) => {
@@ -44,7 +44,7 @@ The [items](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#item
             {
                 timestamp: Date.now(),
                 author: secondUser,
-                text: `Hello! I'm here to help you. How can I assist you today?`,
+                text: "Hello! I'm here to help you. How can I assist you today?",
             }
         ];
         onMessageEntered({ message }) {
@@ -68,7 +68,7 @@ The [items](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#item
         {
             timestamp: Date.now(),
             author: secondUser,
-            text: `Hello! I'm here to help you. How can I assist you today?`,
+            text: "Hello! I'm here to help you. How can I assist you today?",
         }
     ];
     const onMessageEntered = ({ message }) => {
@@ -85,7 +85,7 @@ The [items](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#item
     const initialMessage = {
         timestamp: Date.now(),
         author: secondUser,
-        text: `Hello! I'm here to help you. How can I assist you today?`,
+        text: "Hello! I'm here to help you. How can I assist you today?",
     };
 
     const App = () => {
@@ -142,48 +142,48 @@ The following code snippet includes:
     let editing = null;
 
     $(() => {
-    const customStore = new DevExpress.data.CustomStore({
-        key: 'id',
-        load: () => {
-            const d = $.Deferred();
+        const customStore = new DevExpress.data.CustomStore({
+            key: "id",
+            load: () => {
+                const d = $.Deferred();
 
-            setTimeout(() => {
-                d.resolve([...messages]);
-            });
+                setTimeout(() => {
+                    d.resolve([...messages]);
+                });
 
-            return d.promise();
-        },
-        insert: (message) => {
-            const d = $.Deferred();
+                return d.promise();
+            },
+            insert: (message) => {
+                const d = $.Deferred();
 
-            setTimeout(() => {
-                messages.push(message);
-                d.resolve();
-            });
+                setTimeout(() => {
+                    messages.push(message);
+                    d.resolve();
+                });
 
-            return d.promise();
-        },
-    });
+                return d.promise();
+            },
+        });
 
-    const dataSource = new DevExpress.data.DataSource({
-        store: customStore,
-        paginate: false
-    });
+        const dataSource = new DevExpress.data.DataSource({
+            store: customStore,
+            paginate: false
+        });
 
-    $("#chat").dxChat({
-        dataSource,
-        reloadOnChange: false,
-        onMessageEntered: (e) => {
-            if (editing) {
-                dataSource.store().push([{ type: 'update', key: editing, data: { text: e.message.text } }]);
-                editing = null;
-            }
-            else {
-                dataSource.store().push([
-                    { type: "insert", data: { id: uniqueIndex++, ...e.message } }
-                ]);
-            }
-        },
+        $("#chat").dxChat({
+            dataSource,
+            reloadOnChange: false,
+            onMessageEntered: (e) => {
+                if (editing) {
+                    dataSource.store().push([{ type: "update", key: editing, data: { text: e.message.text } }]);
+                    editing = null;
+                }
+                else {
+                    dataSource.store().push([
+                        { type: "insert", data: { id: uniqueIndex++, ...e.message } }
+                    ]);
+                }
+            },
         });
     });
 
@@ -209,7 +209,7 @@ The following code snippet includes:
         }];
 
         customStore: CustomStore = new CustomStore({
-            key: 'id',
+            key: "id",
             load: () => {
                 return new Promise((resolve) => {
                     setTimeout(() => {
@@ -238,7 +238,7 @@ The following code snippet includes:
 
         onMessageEntered(e: DxChatTypes.MessageEnteredEvent) {
             if (this.editing) {
-                this.dataSource.store().push([{ type: 'update', key: this.editing, data: { text: e.message.text } }]);
+                this.dataSource.store().push([{ type: "update", key: this.editing, data: { text: e.message.text } }]);
                 this.editing = null;
             }
             else {
@@ -271,7 +271,7 @@ The following code snippet includes:
         text: "Hello! I'm here to help you. How can I assist you today?"
     }];
     const customStore = new CustomStore({
-        key: 'id',
+        key: "id",
         load: () => {
             return new Promise((resolve) => {
                 setTimeout(() => {
@@ -300,7 +300,7 @@ The following code snippet includes:
 
     const onMessageEntered = (e: DxChatTypes.MessageEnteredEvent) => {
         if (editing) {
-            dataSource.store().push([{ type: 'update', key: editing, data: { text: e.message.text } }]);
+            dataSource.store().push([{ type: "update", key: editing, data: { text: e.message.text } }]);
             editing = null;
         }
         else {
@@ -333,14 +333,14 @@ The following code snippet includes:
             load: (): Promise<ChatTypes.Message[]> =>
             new Promise((resolve) => {
                 setTimeout(() => {
-                resolve([...messages]);
+                    resolve([...messages]);
                 }, 0);
             }),
             insert: (message: ChatTypes.Message): Promise<ChatTypes.Message> =>
             new Promise((resolve) => {
                 setTimeout(() => {
-                messages.push(message);
-                resolve(message);
+                    messages.push(message);
+                    resolve(message);
                 });
             }),
         });

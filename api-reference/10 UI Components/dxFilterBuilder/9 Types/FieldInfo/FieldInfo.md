@@ -3,6 +3,7 @@ id: FieldInfo
 module: ui/filter_builder
 export: FieldInfo
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -3701,6 +3701,41 @@
       "react": "_ui_splitter_ResizeStartEvent",
       "vue": "Dx_ui_splitter_ResizeStartEvent"
     },
+    "_ui_stepper_DisposingEvent": {
+      "angular": "dxo-ui-stepper--disposing-event",
+      "react": "_ui_stepper_DisposingEvent",
+      "vue": "Dx_ui_stepper_DisposingEvent"
+    },
+    "_ui_stepper_ItemClickEvent": {
+      "angular": "dxo-ui-stepper--item-click-event",
+      "react": "_ui_stepper_ItemClickEvent",
+      "vue": "Dx_ui_stepper_ItemClickEvent"
+    },
+    "_ui_stepper_ItemContextMenuEvent": {
+      "angular": "dxo-ui-stepper--item-context-menu-event",
+      "react": "_ui_stepper_ItemContextMenuEvent",
+      "vue": "Dx_ui_stepper_ItemContextMenuEvent"
+    },
+    "_ui_stepper_ItemRenderedEvent": {
+      "angular": "dxo-ui-stepper--item-rendered-event",
+      "react": "_ui_stepper_ItemRenderedEvent",
+      "vue": "Dx_ui_stepper_ItemRenderedEvent"
+    },
+    "_ui_stepper_OptionChangedEvent": {
+      "angular": "dxo-ui-stepper--option-changed-event",
+      "react": "_ui_stepper_OptionChangedEvent",
+      "vue": "Dx_ui_stepper_OptionChangedEvent"
+    },
+    "_ui_stepper_SelectionChangedEvent": {
+      "angular": "dxo-ui-stepper--selection-changed-event",
+      "react": "_ui_stepper_SelectionChangedEvent",
+      "vue": "Dx_ui_stepper_SelectionChangedEvent"
+    },
+    "_ui_stepper_SelectionChangingEvent": {
+      "angular": "dxo-ui-stepper--selection-changing-event",
+      "react": "_ui_stepper_SelectionChangingEvent",
+      "vue": "Dx_ui_stepper_SelectionChangingEvent"
+    },
     "_ui_switch_ContentReadyEvent": {
       "angular": "dxo-ui-switch--content-ready-event",
       "react": "_ui_switch_ContentReadyEvent",
@@ -17564,6 +17599,75 @@
     },
     "dxSplitterOptions.tabIndex": {
       "vue": "tab-index"
+    },
+    "dxStepper": {
+      "angular": "dx-stepper",
+      "react": "Stepper",
+      "vue": "DxStepper"
+    },
+    "dxStepperItem": {
+      "angular": "dxo-stepper-item",
+      "react": "DxStepperItem",
+      "vue": "DxStepperItem"
+    },
+    "dxStepperOptions.activeStateEnabled": {
+      "vue": "active-state-enabled"
+    },
+    "dxStepperOptions.dataSource": {
+      "vue": "data-source"
+    },
+    "dxStepperOptions.focusStateEnabled": {
+      "vue": "focus-state-enabled"
+    },
+    "dxStepperOptions.hoverStateEnabled": {
+      "vue": "hover-state-enabled"
+    },
+    "dxStepperOptions.itemHoldTimeout": {
+      "vue": "item-hold-timeout"
+    },
+    "dxStepperOptions.items": {
+      "angular": "dxi-item",
+      "react": "Item",
+      "vue": "DxItem"
+    },
+    "dxStepperOptions.onContentReady": {
+      "vue": "@content-ready"
+    },
+    "dxStepperOptions.onDisposing": {
+      "vue": "@disposing"
+    },
+    "dxStepperOptions.onInitialized": {
+      "vue": "@initialized"
+    },
+    "dxStepperOptions.onItemClick": {
+      "vue": "@item-click"
+    },
+    "dxStepperOptions.onItemContextMenu": {
+      "vue": "@item-context-menu"
+    },
+    "dxStepperOptions.onItemHold": {
+      "vue": "@item-hold"
+    },
+    "dxStepperOptions.onItemRendered": {
+      "vue": "@item-rendered"
+    },
+    "dxStepperOptions.onOptionChanged": {
+      "vue": "@option-changed"
+    },
+    "dxStepperOptions.onSelectionChanged": {
+      "vue": "@selection-changed"
+    },
+    "dxStepperOptions.onSelectionChanging": {
+      "vue": "@selection-changing"
+    },
+    "dxStepperOptions.selectedItems": {
+      "vue": "selected-items"
+    },
+    "dxStepperOptions.selectionMode": {
+      "vue": "selection-mode"
+    },
+    "dxStepperOptions.selectOnFocus": {
+      "vue": "select-on-focus"
     },
     "dxSVGElement": {
       "vue": "dx-s-v-g-element"

@@ -1,10 +1,10 @@
 ---
-id: _ui_stepper_InitializedEvent
 module: ui/stepper
-export: InitializedEvent
+export: ItemClickEvent
 type: Object
-inherits: InitializedEventInfo
-references: dxStepper.Options.onInitialized
+inherits: NativeEventInfo,ItemInfo
+references: dxStepper.Options.onItemClick
+uid: ui/stepper:ItemClickEvent
 ---
 ---
 ##### shortDescription

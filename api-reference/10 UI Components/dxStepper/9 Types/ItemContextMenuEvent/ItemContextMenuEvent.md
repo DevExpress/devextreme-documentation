@@ -1,10 +1,10 @@
 ---
-id: _ui_stepper_ItemClickEvent
 module: ui/stepper
-export: ItemClickEvent
+export: ItemContextMenuEvent
 type: Object
 inherits: NativeEventInfo,ItemInfo
-references: dxStepper.Options.onItemClick
+references: dxStepper.Options.onItemContextMenu
+uid: ui/stepper:ItemContextMenuEvent
 ---
 ---
 ##### shortDescription

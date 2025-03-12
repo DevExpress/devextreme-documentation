@@ -1,10 +1,10 @@
 ---
-id: _ui_stepper_DisposingEvent
 module: ui/stepper
-export: DisposingEvent
+export: InitializedEvent
 type: Object
-inherits: EventInfo
-references: dxStepper.Options.onDisposing
+inherits: InitializedEventInfo
+references: dxStepper.Options.onInitialized
+uid: ui/stepper:InitializedEvent
 ---
 ---
 ##### shortDescription

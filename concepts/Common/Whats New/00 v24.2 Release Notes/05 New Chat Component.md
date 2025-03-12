@@ -63,13 +63,6 @@ Regardless of the method used, you must send the new message to a backend.
 
 With the DevExtreme Chat UI component, you can incorporate AI-powered app assistants, implement Copilot-inspired user interfaces, and much more. To introduce these capabilities to your next DevExtreme-powered web app, simply set up appropriate AI services on the backend (Microsoft/OpenAI - GPT, Google - Gemini, self-hosted models via Ollama, or other AI services).
 
-<!-- <img src="/images/whats-new/24-2-js-chat-ai.png" alt="DevExtreme Chat implementing a virtual AI assistant" style="display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    background-color: #f1f1f1;
-    border-radius: 6px;" /> -->
-
 ![DevExtreme Chat implementing a virtual AI assistant](/images/whats-new/24-2-js-chat-ai.png)
 
 #include btn-open-demo with {

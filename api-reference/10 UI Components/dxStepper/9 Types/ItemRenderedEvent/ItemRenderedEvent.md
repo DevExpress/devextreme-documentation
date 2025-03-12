@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ItemInfo
 references: dxStepper.Options.onItemRendered
 uid: ui/stepper:ItemRenderedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

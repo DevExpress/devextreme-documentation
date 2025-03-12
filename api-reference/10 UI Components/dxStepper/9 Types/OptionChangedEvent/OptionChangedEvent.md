@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,ChangedOptionInfo
 references: dxStepper.Options.onOptionChanged
 uid: ui/stepper:OptionChangedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

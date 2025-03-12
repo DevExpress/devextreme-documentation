@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,ItemInfo
 references: dxStepper.Options.onItemClick
 uid: ui/stepper:ItemClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

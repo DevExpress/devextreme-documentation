@@ -5,6 +5,7 @@ type: Object
 inherits: AsyncCancelable,EventInfo,SelectionChangeInfo
 references: dxStepper.Options.onSelectionChanging
 uid: ui/stepper:SelectionChangingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

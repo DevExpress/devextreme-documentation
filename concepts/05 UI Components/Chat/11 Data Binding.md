@@ -1,10 +1,10 @@
-You can bind data to Chat in two ways: with the [items](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items) array or the [dataSource](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#dataSource) entity.
+You can bind data to Chat in two ways: with the [items](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items') array or the [dataSource](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#dataSource') entity.
 
 [note] Do not specify the **items** property if you specified **dataSource**, and vice versa.
 
 ### items
 
-The [items](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items) array contains all messages in the Chat. To display an initial message, add it to this array. Add subsequent messages to the array to render them in Chat.
+The [items](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items') array contains all messages in the Chat. To display an initial message, add it to this array. Add subsequent messages to the array to render them in Chat.
 
 ---
 ##### jQuery
@@ -106,13 +106,13 @@ The [items](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#item
 
 ### dataSource
 
-For a more flexible solution than one achieved with the use of an array, specify the [dataSource](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#dataSource) property. For instance, with **dataSource**, Chat can handle server-side data processing through [Web API](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/), a [store](/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores), or a [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/) object.
+For a more flexible solution than one achieved with the use of an array, specify the [dataSource](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#dataSource') property. For instance, with **dataSource**, Chat can handle server-side data processing through [Web API](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/30%20Web%20API%2C%20PHP%2C%20MongoDB.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/'), a [store](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores'), or a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') object.
 
 When you pass a store to **dataSource**, the **DataSource** instance is created automatically inside the Chat. 
 
 [note] If you use a separate [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') object, disable [pagination](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/paginate.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate') to ensure Chat functions properly.
 
-When you use **dataSource**, the [reloadOnChange](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#reloadOnChange) property is crucial:
+When you use **dataSource**, the [reloadOnChange](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/reloadOnChange.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#reloadOnChange') property is crucial:
 
 - When you send a message in a Chat (press the "Send" button), the Chat triggers the store's [insert](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/insert.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#insert') method and adds the message to the store.
 - If **reloadOnChange** is enabled (default), the dataSource [reloads](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/reload().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#reload'): clears all items and calls the [load](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/load().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#load') method to update itself. Chat automatically listens to dataSource [changes](/api-reference/30%20Data%20Layer/DataSource/4%20Events/changed.md '/Documentation/ApiReference/Data_Layer/DataSource/Events/#changed'), and updates the message feed with new messages. 
@@ -120,8 +120,8 @@ When you use **dataSource**, the [reloadOnChange](/Documentation/ApiReference/UI
 
 The following code snippet includes:
 
-- A [CustomStore](/Documentation/ApiReference/Data_Layer/CustomStore/).
-- A [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/) (pagination disabled).
+- A [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/').
+- A [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') (pagination disabled).
 - Push API for inserting and updating messages.
 - `reloadOnChange: false`.
 

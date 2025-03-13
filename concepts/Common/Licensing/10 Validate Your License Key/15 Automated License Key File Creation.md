@@ -1,4 +1,4 @@
-You may need to use your license key in multiple places (your projects and CI systems). In such cases, you can store your DevExtreme license in key in an environment variable. You can then read that variable's value and create necessary files on demand.  
+You may need to use your license key in multiple places (your projects and CI systems). In such cases, you can store your DevExtreme license key in an environment variable. You can then read that variable's value and create necessary files on demand.  
 
 The following code is an example of a script you may use in your projects. If the license key file does not exist, the script creates a new file and uses the `DEVEXTREME_KEY` environment variable to specify the key. 
 

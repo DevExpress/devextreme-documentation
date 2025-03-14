@@ -1,7 +1,7 @@
 ---
 ##### jQuery
 
-Create a new file in the folder where you store your project sources. For example, your file path may look like this: `src/devextreme-license.ts`. Paste the license key you copied from the Download Manager:
+Create a new file in the folder where you store your project sources. For example, `src/devextreme-license.ts`. Paste the license key you copied from the Download Manager:
 
     <!-- tab: devextreme-license.ts -->export const licenseKey = 'DEVELOPER_LICENSE_KEY’;
 

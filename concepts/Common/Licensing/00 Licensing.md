@@ -14,8 +14,6 @@
 
 - [Validation](/concepts/Common/Licensing/25%20Validation.md '/Documentation/Guide/Common/Licensing/#Validation')
 
-- [Redistribution](/Documentation/Guide/Common/Licensing/#Redistribution)
-
 - [FAQ](/concepts/Common/Licensing/30%20FAQ.md '/Documentation/Guide/Common/Licensing/#FAQ')
 
 ---

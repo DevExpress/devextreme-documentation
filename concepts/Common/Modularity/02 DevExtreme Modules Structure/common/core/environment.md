@@ -4,7 +4,7 @@ Exports:
 
 - *devices* - The [device](/api-reference/50%20Common/Object%20Structures/device '/Documentation/ApiReference/Common/Object_Structures/device/') object
 
-        require("common/core/environment");
+        require("common/core/environment").devices;
         // ===== or =====
         import { devices } from "devextreme/common/core/environment";
 

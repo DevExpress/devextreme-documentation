@@ -17610,6 +17610,9 @@
       "react": "DxStepperItem",
       "vue": "DxStepperItem"
     },
+    "dxStepperItem.isValid": {
+      "vue": "is-valid"
+    },
     "dxStepperOptions.activeStateEnabled": {
       "vue": "active-state-enabled"
     },
@@ -17629,6 +17632,12 @@
       "angular": "dxi-item",
       "react": "Item",
       "vue": "DxItem"
+    },
+    "dxStepperOptions.keyExpr": {
+      "vue": "key-expr"
+    },
+    "dxStepperOptions.noDataText": {
+      "vue": "no-data-text"
     },
     "dxStepperOptions.onContentReady": {
       "vue": "@content-ready"
@@ -17659,6 +17668,9 @@
     },
     "dxStepperOptions.onSelectionChanging": {
       "vue": "@selection-changing"
+    },
+    "dxStepperOptions.selectedItemKeys": {
+      "vue": "selected-item-keys"
     },
     "dxStepperOptions.selectedItems": {
       "vue": "selected-items"

@@ -1,4 +1,4 @@
-DevExtreme text editors, such as [TextBox](/api-reference/10%20UI%20Components/dxTextBox '/Documentation/ApiReference/UI_Components/dxTextBox/'), [Autocomplete](/api-reference/10%20UI%20Components/dxAutocomplete '/Documentation/ApiReference/UI_Components/dxAutocomplete/'), and [HtmlEditor](/api-reference/10%20UI%20Components/dxHtmlEditor '/Documentation/ApiReference/UI_Components/dxHtmlEditor/'), do not encode user input. We recommend that you apply third-party sanitizing tools to user input before submitting it to the server:
+DevExtreme text editors, such as [TextBox](/api-reference/10%20UI%20Components/dxTextBox '/Documentation/ApiReference/UI_Components/dxTextBox/'), [Autocomplete](/api-reference/10%20UI%20Components/dxAutocomplete '/Documentation/ApiReference/UI_Components/dxAutocomplete/'), and [HTML Editor](/api-reference/10%20UI%20Components/dxHtmlEditor '/Documentation/ApiReference/UI_Components/dxHtmlEditor/'), do not encode user input. We recommend that you apply third-party sanitizing tools to user input before submitting it to the server:
 
 ---
 ##### jQuery

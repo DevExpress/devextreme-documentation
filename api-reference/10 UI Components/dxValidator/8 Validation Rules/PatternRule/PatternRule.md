@@ -3,6 +3,7 @@ id: PatternRule
 type: Object
 module: common
 export: PatternRule
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -23,12 +23,12 @@
   <MenuRule Destination="050 Getting Started/05 Prerequisites and Installation/14 Supported jQuery Versions" SourcePattern="Howto:^58 jQuery Components/80 Supported Versions" VisibleFor="jQuery" />
   <MenuRule Destination="050 Getting Started/05 Prerequisites and Installation/20 Supported Browsers" SourcePattern="Howto:^Common/Supported Browsers" />
 
-  <MenuRule Destination="050 Getting Started/10 Add DevExtreme to an Existing Angular Application" SourcePattern="Howto:^40 Angular Components/10 Getting Started/03 Add DevExtreme to an Angular CLI Application" VisibleFor="Angular" />
-  <MenuRule Destination="050 Getting Started/12 Add DevExtreme to an Existing Vue Application" SourcePattern="Howto:^55 Vue Components/05 Add DevExtreme to a Vue Application" VisibleFor="Vue" />
-  <MenuRule Destination="050 Getting Started/13 Add DevExtreme to an Existing React Application" SourcePattern="Howto:^50 React Components/05 Add DevExtreme to a React Application" VisibleFor="React" />
-  <MenuRule Destination="050 Getting Started/15 Add DevExtreme to an Existing jQuery Application/05 Predefined Bundles" SourcePattern="Howto:^58 jQuery Components/05 Add DevExtreme to a jQuery Application" VisibleFor="jQuery" />
-  <MenuRule Destination="050 Getting Started/15 Add DevExtreme to an Existing jQuery Application/10 Custom Bundle" SourcePattern="Howto:^Common/Modularity/015 Create a Custom Bundle"/>
-  <MenuRule Destination="050 Getting Started/15 Add DevExtreme to an Existing jQuery Application/15 Module Bundlers" SourcePattern="Howto:^Common/Modularity/01 Link Modules"/>
+  <MenuRule Destination="050 Getting Started/10 Add DevExtreme to an Application" SourcePattern="Howto:^40 Angular Components/10 Getting Started/03 Add DevExtreme to an Angular CLI Application" VisibleFor="Angular" />
+  <MenuRule Destination="050 Getting Started/12 Add DevExtreme to an Application" SourcePattern="Howto:^55 Vue Components/05 Add DevExtreme to a Vue Application" VisibleFor="Vue" />
+  <MenuRule Destination="050 Getting Started/13 Add DevExtreme to an Application" SourcePattern="Howto:^50 React Components/05 Add DevExtreme to a React Application" VisibleFor="React" />
+  <MenuRule Destination="050 Getting Started/15 Add DevExtreme to an Application/05 Predefined Bundles" SourcePattern="Howto:^58 jQuery Components/05 Add DevExtreme to a jQuery Application" VisibleFor="jQuery" />
+  <MenuRule Destination="050 Getting Started/15 Add DevExtreme to an Application/10 Custom Bundle" SourcePattern="Howto:^Common/Modularity/015 Create a Custom Bundle"/>
+  <MenuRule Destination="050 Getting Started/15 Add DevExtreme to an Application/15 Module Bundlers" SourcePattern="Howto:^Common/Modularity/01 Link Modules"/>
 
   <MenuRule Destination="050 Getting Started/21 Component Configuration Syntax" SourcePattern="Howto:^40 Angular Components/20 Component Configuration Syntax" VisibleFor="Angular" />
   <MenuRule Destination="050 Getting Started/22 Component Configuration Syntax" SourcePattern="Howto:^55 Vue Components/20 Component Configuration Syntax" VisibleFor="Vue" />

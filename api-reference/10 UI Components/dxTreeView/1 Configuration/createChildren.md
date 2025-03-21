@@ -144,6 +144,22 @@ The following code shows how to use this function with a remote service:
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_View/LoadDataOnDemand/"
 }
 
+[note]
+
+To reset the TreeView state after running **createChildren**, follow these steps based on your configuration:
+
+- For [dataSource](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#dataSource):
+
+        treeViewInstance.option("dataSource", []);
+
+- For [items](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/items/) array:
+
+        const items = treeViewInstance.option("items");
+        // Make necessary changes to items
+        treeViewInstance.option("items", items);
+
+[/note]
+
 #####See Also#####
 - [Enhance Performance on Large Datasets](/concepts/05%20UI%20Components/TreeView/32%20Enhance%20Performance%20on%20Large%20Datasets.md '/Documentation/Guide/UI_Components/TreeView/Enhance_Performance_on_Large_Datasets/')
 - [Demo: Simple Array - Plain Structure](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/SimpleArrayPlainStructure/)

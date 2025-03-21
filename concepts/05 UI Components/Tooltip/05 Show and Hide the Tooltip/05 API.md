@@ -159,7 +159,7 @@ To show or hide the Tooltip programmatically, bind the [visible](/api-reference/
             <DxTooltip
                 target="#image"
                 v-model:visible="isTooltipVisible">
-                <template>
+                <template #content>
                     <p>Tooltip content</p>
                 </template>
             </DxTooltip>

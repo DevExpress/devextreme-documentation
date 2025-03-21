@@ -14,15 +14,17 @@ Templates allow you to customize UI component elements. In the following code, a
         </div>
     </dx-list>
 
-[note] The `dxTemplate` attribute directive cannot be used on custom markup elements. 
-
-Refer to the common [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates') article for more information.
-
 [note]
 
-Angular has a built-in `template` directive. This causes an error when you try to specify an eponymous property on a configuration component (for instance, on `dxo-master-detail`). In this case, use the following syntax:
+- The `dxTemplate` attribute directive cannot be used on custom markup elements.
 
-    <!--HTML-->
-    <dxo-master-detail [template]="'masterDetail'"></dxo-master-detail>
-    
+- An HTML element with the `dxTemplate` attribute directive does not automatically track changes made with [ng-content](https://angular.dev/guide/components/content-projection). For instance, if you call the **repaint** method or update Angular bindings, the `dxTemplate` element does not reinitialize the `ng-content` components.
+
+- Angular has a built-in `template` directive. This causes an error when you try to specify an eponymous property on a configuration component (for instance, on `dxo-master-detail`). In this case, use the following syntax:
+
+        <!--HTML-->
+        <dxo-master-detail [template]="'masterDetail'"></dxo-master-detail>
+
 [/note]
+
+Refer to the common [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates') article for more information.

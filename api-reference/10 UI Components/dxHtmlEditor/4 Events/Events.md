@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-This section describes events that the HtmlEditor UI component raises.
+This section describes events that the HTML Editor UI component raises.
 
 ---
 #####See Also#####

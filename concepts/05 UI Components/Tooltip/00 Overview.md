@@ -60,7 +60,7 @@ The following code creates a simple Tooltip on your page and attaches it to anot
                 target="#image"
                 show-event="dxhoverstart"
                 hide-event="dxhoverend">
-                <template>
+                <template #content>
                     <p>Tooltip content</p>
                 </template>
             </DxTooltip>

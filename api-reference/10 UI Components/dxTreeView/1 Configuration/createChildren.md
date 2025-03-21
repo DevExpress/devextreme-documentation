@@ -146,17 +146,15 @@ The following code shows how to use this function with a remote service:
 
 [note]
 
-To reset the TreeView state after running **createChildren**, follow these steps based on your configuration:
-
-- For [dataSource](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#dataSource):
-
-        treeViewInstance.option("dataSource", []);
-
-- For [items](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/items/) array:
+To reset the TreeView state after running **createChildren**, modify or clear [items](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/items/) array:
 
         const items = treeViewInstance.option("items");
         // Make necessary changes to items
         treeViewInstance.option("items", items);
+
+        // or
+
+        treeViewInstance.option("items", []); 
 
 [/note]
 

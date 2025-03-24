@@ -22,7 +22,6 @@ The marker object should include the following fields.
   - "Brooklyn Bridge,New York,NY";
 - **tooltip** (optional) - the marker tooltip;
 - **onClick** (optional) - a callback function performed when the marker is clicked;
-- **text** (optional) - the marker caption.
 - **iconSrc** (optional) - a URL pointing to the custom icon to be used for the marker.
 
 #####See Also#####

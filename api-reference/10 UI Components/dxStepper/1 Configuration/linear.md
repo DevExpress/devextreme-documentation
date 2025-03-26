@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a navigation mode (linear/non-linear). 
 
 ---
-<!-- Description goes here -->
+If this property is `true`, navigation becomes sequential, allowing users to proceed step-by-step. If `false`, navigation is non-linear, permitting users to skip steps.

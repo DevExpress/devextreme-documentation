@@ -4,7 +4,9 @@ type: Boolean
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a visual indicator for validation.
 
 ---
-<!-- Description goes here -->
+- If `false`, a step displays a validation failed state.
+- If `true`, a step displays a validation succeeded state.
+- If `undefined`, a step shows no validation information.

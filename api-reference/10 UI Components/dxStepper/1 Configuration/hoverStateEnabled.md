@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether the UI component changes its state when a user pauses on it.
 
 ---
 <!-- Description goes here -->

@@ -1,5 +1,5 @@
 ---
 ##### shortDescription
-<!-- Description goes here -->
+This section describes events fired by this UI component.
 
 ---

@@ -5,7 +5,7 @@ default: 'horizontal'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the Stepper orientation.
 
 ---
 <!-- Description goes here -->

@@ -4,6 +4,6 @@ Exports:
 
 - *current* - The [current()](/api-reference/50%20Common/utils/ui/themes/current().md '/Documentation/ApiReference/Common/utils/ui/themes/#current') and [current(themeName)](/api-reference/50%20Common/utils/ui/themes/current(themeName).md '/Documentation/ApiReference/Common/utils/ui/themes/#currentthemeName') methods
 
-        require("ui/themes").current;
+        require("devextreme/ui/themes").current;
         // ===== or =====
         import { current } from "devextreme/ui/themes";

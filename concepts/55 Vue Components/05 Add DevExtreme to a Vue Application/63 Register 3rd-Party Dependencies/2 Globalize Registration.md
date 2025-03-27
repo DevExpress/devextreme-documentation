@@ -13,7 +13,7 @@ If you want to use <a href="https://github.com/globalizejs/globalize#globalize" 
 Then, specify the Globalize and CLDR aliases in the `vue.config.js` file if you created the application with Vue CLI or in the `webpack.config.js` file otherwise:
 
     <!-- tab: vue.config.js -->
-    const path = require("path");
+    const path = require("devextreme/path");
     module.exports = {
       configureWebpack: {
         resolve: {
@@ -29,7 +29,7 @@ Then, specify the Globalize and CLDR aliases in the `vue.config.js` file if you 
     }
 
     <!-- tab: webpack.config.js -->
-    const path = require("path");
+    const path = require("devextreme/path");
     module.exports = {
       ...
       resolve: {

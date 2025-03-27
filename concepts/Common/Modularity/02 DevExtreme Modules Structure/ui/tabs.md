@@ -4,6 +4,6 @@ Exports:
 
 - *default* - The [Tabs](/api-reference/10%20UI%20Components/dxTabs '/Documentation/ApiReference/UI_Components/dxTabs/') UI component
 
-        require("ui/tabs");
+        require("devextreme/ui/tabs");
         // ===== or =====
         import Tabs from "devextreme/ui/tabs";

@@ -4,6 +4,6 @@ Exports:
 
 - *default* - The [Chart](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/') UI component
 
-        require("viz/chart");
+        require("devextreme/viz/chart");
         // ===== or =====
         import Chart from "devextreme/viz/chart";

@@ -4,6 +4,6 @@ Exports:
 
 - *default* - The [Resizable](/api-reference/10%20UI%20Components/dxResizable '/Documentation/ApiReference/UI_Components/dxResizable/') UI component
 
-        require("ui/resizable");
+        require("devextreme/ui/resizable");
         // ===== or =====
         import Resizable from "devextreme/ui/resizable";

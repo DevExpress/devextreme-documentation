@@ -4,6 +4,6 @@ Exports:
 
 - *default* - The [Toast](/api-reference/10%20UI%20Components/dxToast '/Documentation/ApiReference/UI_Components/dxToast/') UI component
 
-        require("ui/toast");
+        require("devextreme/ui/toast");
         // ===== or =====
         import Toast from "devextreme/ui/toast";

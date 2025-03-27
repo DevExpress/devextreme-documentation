@@ -4,6 +4,6 @@ Exports:
 
 - *default* - The [Menu](/api-reference/10%20UI%20Components/dxMenu '/Documentation/ApiReference/UI_Components/dxMenu/') UI component
 
-        require("ui/menu");
+        require("devextreme/ui/menu");
         // ===== or =====
         import Menu from "devextreme/ui/menu";

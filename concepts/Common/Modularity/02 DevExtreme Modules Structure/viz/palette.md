@@ -4,18 +4,18 @@ Exports:
 
 - *currentPalette* - The [currentPalette(paletteName)](/api-reference/50%20Common/utils/viz/currentPalette(paletteName).md '/Documentation/ApiReference/Common/utils/viz/#currentPalettepaletteName') method
 
-        require("viz/palette").currentPalette;
+        require("devextreme/viz/palette").currentPalette;
         // ===== or =====
         import { currentPalette } from "devextreme/viz/palette";
 
 - *getPalette* - The [getPalette(paletteName)](/api-reference/50%20Common/utils/viz/getPalette(paletteName).md '/Documentation/ApiReference/Common/utils/viz/#getPalettepaletteName') method
 
-        require("viz/palette").getPalette;
+        require("devextreme/viz/palette").getPalette;
         // ===== or =====
         import { getPalette } from "devextreme/viz/palette";
 
 - *registerPalette* - The [registerPalette(paletteName, palette)](/api-reference/50%20Common/utils/viz/registerPalette(paletteName_palette).md '/Documentation/ApiReference/Common/utils/viz/#registerPalettepaletteName_palette') method
 
-        require("viz/palette").registerPalette;
+        require("devextreme/viz/palette").registerPalette;
         // ===== or =====
         import { registerPalette } from "devextreme/viz/palette";

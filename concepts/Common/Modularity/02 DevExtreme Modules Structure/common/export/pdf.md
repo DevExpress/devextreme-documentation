@@ -4,13 +4,13 @@ Exports:
 
 - *exportDataGrid* - The [exportDataGrid(options)](/api-reference/50%20Common/utils/pdfExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions') method
 
-        require("common/export/pdf").exportDataGrid;
+        require("devextreme/common/export/pdf").exportDataGrid;
         // ===== or =====
         import { exportDataGrid } from "devextreme/common/export/pdf;
 
 - *exportGantt* - The [exportGantt(options)](/api-reference/50%20Common/utils/pdfExporter/exportGantt(options).md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportGanttoptions') method
 
-        require("common/export/pdf").exportGantt;
+        require("devextreme/common/export/pdf").exportGantt;
         // ===== or =====
         import { exportGantt } from "devextreme/common/export/pdf";
 

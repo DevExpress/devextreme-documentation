@@ -4,6 +4,6 @@ Exports:
 
 - *default* - The [Chat](/api-reference/10%20UI%20Components/dxChat '/Documentation/ApiReference/UI_Components/dxChat/') UI component
 
-        require("ui/chat");
+        require("devextreme/ui/chat");
         // ===== or =====
         import Chat from "devextreme/ui/chat";

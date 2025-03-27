@@ -4,6 +4,6 @@ Exports:
 
 - *default* - The [Lookup](/api-reference/10%20UI%20Components/dxLookup '/Documentation/ApiReference/UI_Components/dxLookup/') UI component
 
-        require("ui/lookup");
+        require("devextreme/ui/lookup");
         // ===== or =====
         import Lookup from "devextreme/ui/lookup";

@@ -4,6 +4,6 @@ Exports:
 
 - *bazeZIndex* - The [baseZIndex(zIndex)](/api-reference/50%20Common/utils/ui/dxOverlay/baseZIndex(zIndex).md '/Documentation/ApiReference/Common/utils/ui/dxOverlay/#baseZIndexzIndex') method
 
-        require("ui/overlay").bazeZIndex;
+        require("devextreme/ui/overlay").bazeZIndex;
         // ===== or =====
         import { bazeZIndex } from "devextreme/ui/overlay";

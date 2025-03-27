@@ -2,12 +2,12 @@ Exposes methods for working with charts (including Chart, PieChart, PolarChart, 
 
 - *registerPattern* - The [registerPattern](/Documentation/ApiReference/Common/Utils/viz/#registerPatternoptions) method
 
-        require("common/charts").registerPattern;
+        require("devextreme/common/charts").registerPattern;
         // ===== or =====
         import { registerPattern } from "devextreme/common/charts";
 
 - *registerGradient* - The [registerGradient](/Documentation/ApiReference/Common/Utils/viz/#registerGradienttype_options) method
 
-        require("common/charts").registerGradient;
+        require("devextreme/common/charts").registerGradient;
         // ===== or =====
         import { registerGradient } from "devextreme/common/charts";        

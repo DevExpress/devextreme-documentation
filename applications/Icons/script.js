@@ -244,6 +244,7 @@
     "textdocument",
     "tips",
     "to",
+    "today",
     "todo",
     "toolbox",
     "trash",

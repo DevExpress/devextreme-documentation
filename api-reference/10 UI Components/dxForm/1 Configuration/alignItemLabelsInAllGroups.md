@@ -12,6 +12,6 @@ Specifies whether item labels in all groups are aligned. Applies only to labels 
 
 - This property applies only to those simple items that are nested within a [group item](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/GroupItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/'). Thus, we recommend that you _do not_ leave any simple items ungrouped if you need a consistent alignment throughout the Form.
 
-- The [labelLocation](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#labelLocation) property value varies based on the theme (Generic or Material/Fluent). Adjust this setting if item labels are misaligned.
+- The [labelLocation](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/labelLocation.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#labelLocation') property value varies based on the theme (Generic or Material/Fluent). Adjust this setting if item labels are misaligned.
 
 [/note]

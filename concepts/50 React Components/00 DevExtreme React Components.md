@@ -2,7 +2,7 @@ The DevExtreme React UI Component Suite offers 80 responsive, touch-enabled UI c
 
 ## Try DevExtreme Components in Your Project
 
-Experience DevExtreme components in your projects with our [30-day trial](https://js.devexpress.com/Download/). No registration needed. A [license](/Documentation/Guide/Common/Licensing/) is **required** for commercial use.
+Try out DevExtreme components in your projects with our [30-day trial](https://js.devexpress.com/Download/) - no registration is needed. A [license](/Documentation/Guide/Common/Licensing/) is **required** for commercial use.
 
 ## Getting Started
 

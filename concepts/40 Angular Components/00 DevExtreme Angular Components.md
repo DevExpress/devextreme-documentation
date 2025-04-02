@@ -1,9 +1,5 @@
 The DevExtreme Angular UI Component Suite offers 80 responsive, touch-enabled UI components for Angular applications. This suite features a data grid, interactive charts, data editors, and various navigation and utility components.
 
-## 80 JavaScript UI Components
-
-<img src="/images/UiWidgets/component-list.png" style="width: 900px;"/>
-
 ## Try DevExtreme Components in Your Project
 
 Experience DevExtreme components in your projects with our [30-day trial](https://js.devexpress.com/Download/). No registration needed. A [license](/Documentation/Guide/Common/Licensing/) is **required** for commercial use.

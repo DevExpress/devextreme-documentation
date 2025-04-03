@@ -247,7 +247,7 @@ Collection UI components are components that include the **items** property. The
 Declare **named** templates within the component's markup but outside the templated element. **Non-named** templates should be declared inside the templated element.
 
     <!-- tab: app.component.html -->
-    <!-- Named template (the name is 'cellTemplate'): -->
+    <!-- Named template (the name is 'pictureCellTemplate'): -->
     <dx-data-grid ... >
         <dxi-column
             dataField="Picture"
@@ -316,7 +316,7 @@ Declare **named** templates within the component's markup but outside the templa
 Declare **named** templates within the component's markup but outside the templated element. **Non-named** templates should be declared inside the templated element.
 
     <!-- tab: App.vue -->
-    <!-- Named template (the name is 'cellTemplate'): -->
+    <!-- Named template (the name is 'pictureCellTemplate'): -->
     <template>
         <DxDataGrid ... >
             <DxColumn

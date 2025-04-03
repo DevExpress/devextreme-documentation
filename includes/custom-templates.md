@@ -207,8 +207,6 @@ Collection UI components are components that include the **items** property. The
 
 ##### Angular
 
-Declare **named** templates within the component's markup but outside the templated element. **Non-named** templates should be declared inside the templated element.
-
     <!-- tab: app.component.html -->
     <dx-list>
         <dxi-item>
@@ -246,9 +244,36 @@ Declare **named** templates within the component's markup but outside the templa
     })
     export class AppModule { }
 
-##### Vue
-
 Declare **named** templates within the component's markup but outside the templated element. **Non-named** templates should be declared inside the templated element.
+
+    <!-- tab: app.component.html -->
+    <!-- Named template (the name is 'cellTemplate'): -->
+    <dx-data-grid ... >
+        <dxi-column
+            dataField="Picture"
+            [width]="100"
+            [allowFiltering]="false"
+            [allowSorting]="false"
+            cellTemplate="cellTemplate"
+        ></dxi-column>
+        <div *dxTemplate="let data of 'cellTemplate'">
+            <img
+                [src]="data.value"
+                alt="Picture of {{ data.data.FirstName }} {{ data.data.LastName }}"
+            />
+        </div>
+    </dx-data-grid>
+
+    <!-- Non-named template -->
+    <dx-toolbar>
+        <dxi-item location="center" locateInMenu="never">
+            <div *dxTemplate>
+                <div class="toolbar-label"><b>Tom's Club</b> Products</div>
+            </div>
+        </dxi-item>
+    </dx-toolbar>
+
+##### Vue
 
     <!-- tab: App.vue -->
     <template>
@@ -290,6 +315,38 @@ Declare **named** templates within the component's markup but outside the templa
         }
     }
     </script>
+
+Declare **named** templates within the component's markup but outside the templated element. **Non-named** templates should be declared inside the templated element.
+
+    <!-- tab: App.vue -->
+    <!-- Named template (the name is 'cellTemplate'): -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn
+                :width="100"
+                :allow-sorting="false"
+                data-field="Picture"
+                cell-template="cellTemplate"
+            />
+            <template #cellTemplate="{ data }">
+                <img :src="data.value" :alt="`Picture of ${data.data.FirstName} ${data.data.LastName}`">
+            </template>
+        </DxDataGrid>
+    </template>
+
+    <!-- Non-named template -->
+    <template>
+        <DxToolbar>
+            <DxItem
+                location="center"
+                locate-in-menu="never"
+            >
+                <template #default>
+                    <div class="toolbar-label"><b>Tom's Club</b> Products</div>
+                </template>
+            </DxItem>
+        </DxToolbar>
+    </template>
 
 ##### React
 

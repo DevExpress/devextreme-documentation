@@ -32,4 +32,4 @@ Choose a predefined route mode, such as `'driving'` or `'walking'`, or select on
     - `truck`
     - `walking`
 
-[note] DevExtreme Map allows access to part of the provider’s API as is. We are not responsible for incorrect mode selections or usage. 
+[note] DevExtreme Map allows access to part of the provider’s API as is. We do not guarantee correct application of the route mode if the string does not match the expected values or the specific configuration for the provider.

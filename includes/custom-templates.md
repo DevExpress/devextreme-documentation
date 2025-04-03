@@ -254,13 +254,10 @@ Declare **named** templates within the component's markup but outside the templa
             [width]="100"
             [allowFiltering]="false"
             [allowSorting]="false"
-            cellTemplate="cellTemplate"
+            cellTemplate="pictureCellTemplate"
         ></dxi-column>
-        <div *dxTemplate="let data of 'cellTemplate'">
-            <img
-                [src]="data.value"
-                alt="Picture of {{ data.data.FirstName }} {{ data.data.LastName }}"
-            />
+        <div *dxTemplate="let data of 'pictureCellTemplate'">
+            <img [src]="data.value" />
         </div>
     </dx-data-grid>
 
@@ -326,10 +323,10 @@ Declare **named** templates within the component's markup but outside the templa
                 :width="100"
                 :allow-sorting="false"
                 data-field="Picture"
-                cell-template="cellTemplate"
+                cell-template="pictureCellTemplate"
             />
-            <template #cellTemplate="{ data }">
-                <img :src="data.value" :alt="`Picture of ${data.data.FirstName} ${data.data.LastName}`">
+            <template #pictureCellTemplate="{ data }">
+                <img :src="data.value" />
             </template>
         </DxDataGrid>
     </template>

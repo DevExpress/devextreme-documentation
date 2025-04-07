@@ -83,7 +83,7 @@ The Popover has two toolbars: top and bottom. Items on these toolbars can be pla
                 target="#image"
                 show-event="dxhoverstart"
                 hide-event="dxhoverend">
-                <template>
+                <template #content>
                     <p>Popover content</p>
                 </template>
                 <DxToolbarItem

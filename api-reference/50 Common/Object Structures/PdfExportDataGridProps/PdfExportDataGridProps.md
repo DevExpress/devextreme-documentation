@@ -1,7 +1,8 @@
 ---
 id: PdfExportDataGridProps
-module: pdf_exporter
-export: PdfExportDataGridProps
+module: common/export/pdf
+export: DataGridExport_Options
+type: Object
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,7 @@
 ---
 id: FilterDescriptor
-type: any
-module: data/index
+type: Object
+module: common/data
 export: FilterDescriptor
 ---
 ---

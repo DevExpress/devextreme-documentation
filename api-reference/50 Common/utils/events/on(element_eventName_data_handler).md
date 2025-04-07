@@ -1,6 +1,6 @@
 ---
 id: events.on(element, eventName, data, handler)
-module: events/index
+module: common/core/events
 export: on
 ---
 ---

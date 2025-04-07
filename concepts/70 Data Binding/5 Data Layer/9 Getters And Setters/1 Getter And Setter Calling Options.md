@@ -1,14 +1,12 @@
-If you assign the name of a method to a **compileGetter**, the getter normally returns the value returned by this method. If you need to get a reference to the method instead of its value, pass an object with the **functionAsIs** property set to **true** to the getter as a second parameter.
+If you assign a method name to **compileGetter**, the getter returns this method's return value. To get a reference to the method instead of its value, pass an object with `functionAsIs: true` to the getter as a second parameter.
 
-    <!--JavaScript-->var getter = DevExpress.data.utils.compileGetter("address.getAddress");
+    <!--JavaScript-->const getter = DevExpress.data.utils.compileGetter("address.getAddress");
     // the getter returns a reference to the 'person.address.getAddress' function and assigns it to the 'getAddressFunction' variable
-    var getAddressFunction = getter(person, { functionsAsIs: true }); 
+    const getAddressFunction = getter(person, { functionsAsIs: true }); 
 
-If the getter returns an object containing several functions, the **functionsAsIs** property affects all functions contained in this object.
+If the getter returns an object containing multiple functions, the **functionsAsIs** property affects all functions contained in this object.
 
-When you use a setter to assign a new value to a property containing an object, the object held in the property is replaced by the new one by default.
-
-    <!--JavaScript-->var setter = DevExpress.data.utils.compileSetter("address");
+    <!--JavaScript-->const setter = DevExpress.data.utils.compileSetter("address");
     setter(person, {
         city: "San Francisco",
         street: "Stanford Ave"
@@ -16,9 +14,9 @@ When you use a setter to assign a new value to a property containing an object, 
     
 In the example above, the object held in the **person.address** property will contain only the **city** and **street** properties after the setter will be called. Other members will be lost. 
 
-If you need to merge the new object passed to the setter with the object held in the property, pass a properties object containing the **merge** property set to true to the setter.
+If you need to merge the new object passed to the setter with the object held in the property, pass a properties object containing `merge: true` to the setter.
 
-    <!--JavaScript-->var setter = DevExpress.data.utils.compileSetter("address");
+    <!--JavaScript-->const setter = DevExpress.data.utils.compileSetter("address");
     setter(
         person, 
         {
@@ -28,7 +26,7 @@ If you need to merge the new object passed to the setter with the object held in
         { merge: true }
     );
 
-In this case, the address object will contain the following properties.
+In this case, the address object contains the following properties:
 
     {
         zipCode: 90007,

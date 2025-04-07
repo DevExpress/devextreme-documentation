@@ -3,6 +3,7 @@ id: RequiredRule
 type: Object
 module: common
 export: RequiredRule
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -403,6 +403,73 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
 
     export default App;
 
+[note]
+
+React 19 offers a [useActionState](https://react.dev/reference/react/useActionState) hook that allows you to update the state based on a form action result. When using this hook, [clear](/api-reference/10%20UI%20Components/dxForm/3%20Methods/clear().md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#clear') the Form as the initial step when you implement an action:
+
+    <!-- tab: App.js -->
+    import React, { useActionState, useRef } from "react";
+    import "devextreme/dist/css/dx.light.css";
+
+    import {
+        Form,
+        SimpleItem,
+        GroupItem,
+        ButtonItem,
+        NumericRule,
+        EmailRule,
+    } from "devextreme-react/form";
+
+    const employee = {
+        // ...
+    };
+
+    const submitButtonOptions = {
+        text: "Submit the form",
+        useSubmitBehavior: true,
+    };
+
+    export default function App() {
+        const form = useRef(null);
+
+        const [error, submitAction, isPending] = useActionState(
+            async (previousState, formData) => {
+                form?.current?.instance?.().clear?.(); // Clear the form
+                await new Promise((resolve) => 
+                    // Resolve the promise
+                );
+                if ( ... ) { // Configure when to return an error
+                    return new Error("Submitting failed!");
+                }
+                const fieldValues = Object.fromEntries(formData);
+                return fieldValues;
+            },
+            null
+        );
+
+        return (
+            <form action={submitAction}>
+                <Form ref={form} formData={employee} colCount={1}>
+                    <GroupItem caption="Personal Information" colCount={1}>
+                        <SimpleItem dataField="name" isRequired={true} />
+                        <SimpleItem dataField="officeNumber">
+                            <NumericRule />
+                        </SimpleItem>
+                        <SimpleItem dataField="email">
+                            <EmailRule />
+                        </SimpleItem>
+                    </GroupItem>
+                    <ButtonItem
+                        horizontalAlignment="left"
+                        buttonOptions={{ ...submitButtonOptions, disabled: isPending }}
+                    />
+                </Form>
+            </form>
+        );
+    }
+
+[/note]
+
 ---
 
 For more information on the Form UI component, refer to the following resources:

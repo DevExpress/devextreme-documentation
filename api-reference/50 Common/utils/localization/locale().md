@@ -1,6 +1,6 @@
 ---
 id: localization.locale()
-module: localization
+module: common/core/localization
 export: locale
 ---
 ---

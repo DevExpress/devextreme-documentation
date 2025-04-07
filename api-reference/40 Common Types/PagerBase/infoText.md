@@ -5,7 +5,6 @@ default: 'Page {0} of {1} ({2} items)'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the page information text.
 
 ---
-<!-- Description goes here -->

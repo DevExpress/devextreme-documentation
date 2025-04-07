@@ -218,4 +218,4 @@ The example below calls the [exportDataGrid(options)](/api-reference/50%20Common
 
 ---     
 
-<!-- import * from 'api-reference\_hidden\ExcelExportBaseProps\loadPanel.md' -->
+<!-- import * from 'api-reference\_hidden\ExcelExportBaseOptions\loadPanel.md' -->

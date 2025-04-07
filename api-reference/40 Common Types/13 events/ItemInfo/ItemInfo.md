@@ -1,8 +1,9 @@
 ---
 id: ItemInfo
-module: events/index
+module: common/core/events
 export: ItemInfo
 generateTypeLink: 
+type: Object
 ---
 ---
 ##### shortDescription

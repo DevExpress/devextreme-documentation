@@ -1,7 +1,7 @@
 ---
 id: fx
-module: animation/fx
-export: default
+module: common/core/animation
+export: fx
 type: Object
 ---
 ---

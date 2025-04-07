@@ -1,13 +1,13 @@
 ---
 id: utils.getTimeZones(date)
-module: time_zone_utils
+module: common/core/environment
 export: getTimeZones
 ---
 ---
 ##### shortDescription
 Gets the list of <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank">IANA</a> time zone objects.
 
-##### return: Array<dxSchedulerTimeZone>
+##### return: Array<SchedulerTimeZone>
 A list of IANA time zone objects.
 
 ##### param(date): Date | undefined

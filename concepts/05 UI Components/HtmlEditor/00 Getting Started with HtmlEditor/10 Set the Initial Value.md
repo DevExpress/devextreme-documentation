@@ -1,4 +1,4 @@
-The control stores the document markup in the [value](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value') property. You can also declare HTML content inside the HtmlEditor element.
+The control stores the document markup in the [value](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value') property. You can also declare HTML content inside the HTML Editor element.
 
 ---
 ##### jQuery

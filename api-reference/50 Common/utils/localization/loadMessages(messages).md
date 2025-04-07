@@ -1,6 +1,6 @@
 ---
 id: localization.loadMessages(messages)
-module: localization
+module: common/core/localization
 export: loadMessages
 ---
 ---

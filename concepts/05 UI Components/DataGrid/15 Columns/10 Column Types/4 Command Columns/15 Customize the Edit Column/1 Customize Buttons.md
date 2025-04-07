@@ -158,7 +158,7 @@ You can also declare custom logic in the button configuration. For instance, the
         <dxi-column type="buttons">
             <dxi-button
                 name="edit"
-                (onClick)="onEditButtonClick($event)">
+                [onClick]="onEditButtonClick">
             </dxi-button>
             <dxi-button name="delete"></dxi-button>
         </dxi-column>

@@ -1,6 +1,6 @@
 DevExtreme major updates (released twice per year) may include new components, features, or enhancements. Refer to our What’s New for more information on our most recent major update:
 
-<a class="btn btn-accent btn-icon btn-docs" href="/Documentation/Guide/Common/Whats_New/v24.2_Release_Notes/" target="_blank" title="What's New v24.2">
+<a class="btn btn-accent btn-icon btn-docs" href="https://js.devexpress.com/New/" target="_blank" title="What's New">
     <span>What's New in DevExtreme</span>
 </a>
 

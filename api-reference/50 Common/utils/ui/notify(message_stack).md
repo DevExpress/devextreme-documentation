@@ -24,19 +24,15 @@ The initial toast position.
     href: "https://js.devexpress.com/Demos//WidgetsGallery/Demo/Toast/Stack/"
 }
 
-To stack toast messages, specify the `position` field in the **stack** object.
+To stack toast messages, specify the `position` field in the **stack** object. You can set the position field to a predefined string or object with coordinates. Note that if you use coordinates for the position field, you need to specify one horizontal and one vertical coordinate only.
 
-The `position` field can be one of the following:
+The following table lists all predefined strings and their values:
 
 <table class="dx-table">
     <tr>
         <th>String</th>
-        <th>Object</th>
-    </tr>    
-    <tr>
-        <td>Cannot specify coordinates</td>
-        <td><code>{x, y}</code>, e.g. <code>{100, 50}</code></td>
-    </tr>    
+        <th>Coordinate Representation</th>
+    </tr>        
     <tr>
         <td><code>'top left'</code></td>
         <td><code>{left, top}</code></td>
@@ -72,6 +68,10 @@ The `position` field can be one of the following:
     <tr>
         <td><code>'bottom right'</code></td>
         <td><code>{right, bottom}</code></td>
+    </tr>
+    <tr>
+        <td>A custom value</td>
+        <td>Use <code>{x, y}</code> coordinate object, e.g. <code>{100, 50}</code>. The start of coordinates is the left bottom corner of the window.</td>
     </tr>
 </table>
 

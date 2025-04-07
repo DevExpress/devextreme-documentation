@@ -1,8 +1,9 @@
 ---
 id: InitializedEventInfo
-module: events/index
+module: common/core/events
 export: InitializedEventInfo
 generateTypeLink: 
+type: Object
 ---
 ---
 ##### shortDescription

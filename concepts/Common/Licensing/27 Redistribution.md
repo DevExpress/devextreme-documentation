@@ -1,1 +1,1 @@
-Our [End User License Agreement] (https://www.devexpress.com/Support/EULAs/devextreme.xml) (EULA) lists the resources and files that can be redistributed to your application users. You must have a valid license to distribute applications that use DevExtreme components.
+Our [End User License Agreement](https://www.devexpress.com/Support/EULAs/devextreme.xml) (EULA) lists the resources and files that can be redistributed to your application users. You must have a valid license to distribute applications that use DevExtreme components.

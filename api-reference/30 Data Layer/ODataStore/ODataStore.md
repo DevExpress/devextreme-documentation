@@ -1,7 +1,7 @@
 ---
 id: ODataStore
-module: data/odata/store
-export: default
+module: common/data
+export: ODataStore
 inherits: Store
 ---
 ---

@@ -1,7 +1,7 @@
 ---
 id: config(config)
-module: core/config
-export: default
+module: common
+export: config
 ---
 ---
 ##### shortDescription

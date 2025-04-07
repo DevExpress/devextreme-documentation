@@ -1,7 +1,7 @@
 ---
 id: animationPresets
-module: animation/presets
-export: default
+module: common/core/animation
+export: animationPresets
 type: Object
 ---
 ---

@@ -62,7 +62,7 @@ The example below shows how to create a template consisting of static (text) and
         <DxPopup
             v-model:visible="isPopupVisible"
             title="Popup Title">
-            <template>
+            <template #content>
                 <p>Static content</p>
                 <DxButton
                     text="Click me"

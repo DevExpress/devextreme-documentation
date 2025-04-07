@@ -1,8 +1,9 @@
 ---
 id: Cancelable
-module: events/index
+module: common/core/events
 export: Cancelable
 generateTypeLink: 
+type: Object
 ---
 ---
 ##### shortDescription

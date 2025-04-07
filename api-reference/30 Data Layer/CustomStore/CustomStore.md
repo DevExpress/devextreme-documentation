@@ -1,7 +1,7 @@
 ---
 id: CustomStore
-module: data/custom_store
-export: default
+module: common/data
+export: CustomStore
 inherits: Store
 ---
 ---

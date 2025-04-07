@@ -264,7 +264,7 @@ A user can change the applied filter by including or excluding values. Use a col
 
 #include datagrid-filtering-rowandheaderconflicts
 
-You can use the **headerFilter.**[allowSearch](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/headerFilter/allowSearch.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/headerFilter/#allowSearch') property to enable searching in the header filter. You can also declare this property in a column's configuration object to enable/disable searching in this column's header filter.
+You can use the **headerFilter.search.**[enabled](/api-reference/40%20Common%20Types/15%20grids/HeaderFilterSearchConfig/enabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/search/#enabled') property to enable searching in the header filter. You can also declare this property in a column's configuration object to enable/disable searching in this column's header filter.
 
 ---
 ##### jQuery
@@ -388,7 +388,9 @@ You can use the **headerFilter.**[allowSearch](/api-reference/10%20UI%20Componen
 
 ---
 
-A header filter's popup menu lists all column values by default. You can group them using the **headerFilter**.[groupInterval](/api-reference/_hidden/GridBaseColumn/headerFilter/groupInterval.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#groupInterval') property if they are numbers or dates. You can also provide a custom data source for a header filter using the [dataSource](/api-reference/_hidden/GridBaseColumn/headerFilter/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#dataSource') property. Refer to the property's description for details.
+A header filter's popup menu initially lists all column values. You can group them using the **headerFilter**.[groupInterval](/api-reference/_hidden/GridBaseColumn/headerFilter/groupInterval.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#groupInterval') property if they are numbers or dates. You can also supply a custom data source for a header filter using the [dataSource](/api-reference/_hidden/GridBaseColumn/headerFilter/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#dataSource') property. Refer to the property's description for details.
+
+[note] If a column has empty cells (`null` or `''`), the header filter popup menu displays a `(Blanks)` item.
 
 #####See Also#####
 - [Filtering API - Initial and Runtime Filtering](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20and%20Searching/6%20API/1%20Initial%20and%20Runtime%20Filtering.md '/Documentation/Guide/UI_Components/DataGrid/Filtering_and_Searching/#API/Initial_and_Runtime_Filtering')

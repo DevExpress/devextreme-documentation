@@ -1,8 +1,9 @@
 ---
 id: NativeEventInfo
-module: events/index
+module: common/core/events
 export: NativeEventInfo
 generateTypeLink: 
+type: Object
 ---
 ---
 ##### shortDescription

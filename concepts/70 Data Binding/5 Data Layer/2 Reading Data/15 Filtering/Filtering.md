@@ -1,11 +1,13 @@
-To consider the filter expression syntax, begin by creating a sample DataSource.
+This section explains filter creation syntax.
 
-[note] Filtering works when inputting a plain data structure only. However, if you need the filtering capability and hierarchical data, transform the plain data using the **DataSource**'s [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') property.
+[note] Filtering works with a plain data structure only. For filtering hierarchical data, transform the plain data with the **DataSource**'s [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') property.
 
-    <!--JavaScript-->var dataSource = new DevExpress.data.DataSource([
+Create a sample DataSource:
+
+    <!--JavaScript-->const dataSource = new DevExpress.data.DataSource([
         { name: "First item", value: 5 },
         { name: "Second item", value: 7 },
         { name: "Last item", value: 3 }
     ]);
 
-Filtering conditions are specified as a filter expression, which is a set of filter expressions separated by group operators. The filtering conditions can be defined via the [filter](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/filter.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#filter') configuration property or the [filter(filterExpr)](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/filter(filterExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#filterfilterExpr') method of the **DataSource**.
+You can use a _filter expression_ to specify filtering conditions (a set of filter expressions separated by group operators). Use the [filter](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/filter.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#filter') configuration property or the DataSource [filter(filterExpr)](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/filter(filterExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#filterfilterExpr') method to define filtering conditions.

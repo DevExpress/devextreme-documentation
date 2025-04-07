@@ -1,7 +1,7 @@
 ---
 id: LoadOptions
 type: Object
-module: data/index
+module: common/data
 export: Load_Options
 ---
 ---

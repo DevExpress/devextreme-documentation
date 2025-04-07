@@ -5,7 +5,6 @@ default: 'adaptive'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the pager's display mode.
 
 ---
-<!-- Description goes here -->

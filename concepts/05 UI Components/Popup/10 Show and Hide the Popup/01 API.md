@@ -143,7 +143,7 @@ To show or hide the Popup programmatically, bind the [visible](/api-reference/10
             <DxPopup
                 title="Popup Title"
                 v-model:visible="isPopupVisible">
-                <template>
+                <template #content>
                     <p>Popup content</p>
                 </template>
             </DxPopup>

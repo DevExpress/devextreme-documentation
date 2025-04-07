@@ -1,6 +1,6 @@
 ---
 id: Utils.compileGetter(expr)
-module: utils
+module: common/data
 export: compileGetter
 ---
 ---

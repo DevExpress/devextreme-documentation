@@ -1,8 +1,8 @@
-Header filter data objects should have the `text` and `value` fields. However, data objects fetched from a server may not have these fields. In this case, map the original data source to the `text` + `value` structure. A mapped data source should also include key fields from the original data source.
+Header filter data objects should have the `text` and `value` fields. If these fields are missing from data objects fetched from a server, map the original data source to the `text` + `value` structure. The mapped data source should also include key fields from the original data source.
 
-[note] Keep the [allowSearch](/api-reference/_hidden/GridBaseColumn/headerFilter/allowSearch.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#allowSearch') property set to **false** because searching produces incorrect results when data source fields are mapped.
+[note] Keep the [allowSearch](/api-reference/_hidden/GridBaseColumn/headerFilter/allowSearch.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#allowSearch') property set to **false** to avoid incorrect search results when mapping data source fields.
 
-In the following code, the `categoryName` and `categoryId` fields are mapped to the `text` and `value` fields. The mapped objects also contain the `categoryId` and `categoryCode` key fields:
+In the following code, the `categoryName` and `categoryId` fields are mapped to the `text` and `value` fields:
 
 ---
 ##### jQuery
@@ -11,10 +11,10 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
     $(function() {
         const categoriesStore = new DevExpress.data.ArrayStore({
             data: [
-                { categoryName: "...", categoryId: 1, categoryCode: "..." },
+                { categoryName: "...", categoryId: 1 },
                 // ...
             ],
-            key: ["categoryId", "categoryCode"]
+            key: "categoryId"
         });
 
         $("#{widgetName}Container").dx{WidgetName}({
@@ -29,7 +29,6 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
                                 text: item.categoryName,
                                 value: item.categoryId,
                                 categoryId: item.categoryId,
-                                categoryCode: item.categoryCode
                             }
                         }
                     }
@@ -63,10 +62,10 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
         constructor() {
             const categoriesStore = new ArrayStore({
                 data: [
-                    { categoryName: "...", categoryId: 1, categoryCode: "..." },
+                    { categoryName: "...", categoryId: 1 },
                     // ...
                 ],
-                key: ["categoryId", "categoryCode"]
+                key: "categoryId"
             });
 
             this.headerFilterData = {
@@ -76,7 +75,6 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
                         text: item.categoryName,
                         value: item.categoryId,
                         categoryId: item.categoryId,
-                        categoryCode: item.categoryCode
                     }
                 }
             };
@@ -128,10 +126,10 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
 
     const categoriesStore = new ArrayStore({
         data: [
-            { categoryName: "...", categoryId: 1, categoryCode: "..." },
+            { categoryName: "...", categoryId: 1 },
             // ...
         ],
-        key: ["categoryId", "categoryCode"]
+        key: "categoryId"
     });
 
     export default {
@@ -149,7 +147,6 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
                             text: item.categoryName,
                             value: item.categoryId,
                             categoryId: item.categoryId,
-                            categoryCode: item.categoryCode
                         }
                     }
                 }
@@ -169,10 +166,10 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
 
     const categoriesStore = new ArrayStore({
         data: [
-            { categoryName: "...", categoryId: 1, categoryCode: "..." },
+            { categoryName: "...", categoryId: 1 },
             // ...
         ],
-        key: ["categoryId", "categoryCode"]
+        key: "categoryId"
     });
 
     const headerFilterData = {
@@ -182,7 +179,6 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
                 text: item.categoryName,
                 value: item.categoryId,
                 categoryId: item.categoryId,
-                categoryCode: item.categoryCode
             }
         }
     };

@@ -1,7 +1,7 @@
 ---
 id: utils.initMobileViewport(options)
-module: mobile/init_mobile_viewport
-export: default
+module: common/core/environment
+export: initMobileViewport
 ---
 ---
 ##### shortDescription

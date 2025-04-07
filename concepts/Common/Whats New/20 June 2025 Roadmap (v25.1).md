@@ -1,12 +1,16 @@
 [note]
 
-The information contained in this help topic contains our current/projected development plans. Please note that this information is being shared for INFORMATIONAL PURPOSES ONLY and does not represent a binding commitment on the part of Developer Express Inc. This roadmap and the features/products listed within it are subject to change. You should not rely on or use this information to help make a purchase decision about Developer Express Inc products. 
+The information contained in this help topic includes our current/projected development plans. Please note that this information is being shared for INFORMATIONAL PURPOSES ONLY and does not represent a binding commitment on the part of Developer Express Inc. This roadmap and the features/products listed within it are subject to change. You should not rely on or use this information to help make a purchase decision about Developer Express Inc products. 
 
 [/note]
 
-To know more about the planned features and review the current development status, see [Roadmap v25.1](https://js.devexpress.com/Roadmap/).  
+To know more about the planned features and review the current development status, see the link below:
 
-Once you’ve had the opportunity to review our June 2025 Roadmap, take a moment to share your feedback in our surveys.
+<a class="btn btn-accent btn-icon btn-docs" href="https://js.devexpress.com/Roadmap/" target="_blank" title="Roadmap v25.1">
+    <span>Roadmap v25.1</span>
+</a>
+
+Once you've had the opportunity to review our June 2025 Roadmap, take a moment to share your feedback in our surveys (on the full Roadmap page).
 
 ## Features planned to be released in v25.1
 

@@ -10,7 +10,7 @@
 
 
   <MenuRule Destination="040 What's New/90 Migrate to the New Version" SourcePattern="Howto:^Common/Migrate to the New Version" />
-  <MenuRule Destination="040 What's New" SourcePattern="Howto:^Common/What's New" />
+  <MenuRule Destination="040 What's New" SourcePattern="Howto:^Common/Whats New" />
 
   <MenuRule Destination="050 Getting Started/05 Prerequisites and Installation/00 Distribution Channels" SourcePattern="Howto:^Common/Distribution Channels" />
 

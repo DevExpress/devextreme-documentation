@@ -1,3 +1,7 @@
+---
+title: Chart - Axes Overview
+---
+
 The Chart UI component visualizes data on the rectangular coordinate system. In this system, each point is determined on a plane by two components: the argument and the value, each indicated on a devoted axis.
 
 ![DevExtreme HTML5 JavaScript Charts Axis Axes](/images/ChartJS/visual_elements/axes.png)

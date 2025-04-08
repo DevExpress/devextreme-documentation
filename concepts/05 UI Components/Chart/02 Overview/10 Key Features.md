@@ -1,5 +1,14 @@
-- **Series Options**    
-The Chart component features over 20 [types of series](/concepts/05%20UI%20Components/Chart/11%20Series%20Types/10%20Line%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/'). [Combine](/concepts/05%20UI%20Components/Chart/10%20Series/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series/Overview/') them, [customize](/Documentation/Guide/UI_Components/Chart/Series/Customize_Appearance/) appearance, and configure individual [points](/concepts/05%20UI%20Components/Chart/14%20Series%20Points/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series_Points/Overview/').
+- **Series Types**    
+The Chart component features over 20 [types of series](/concepts/05%20UI%20Components/Chart/11%20Series%20Types/10%20Line%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/'). The most popular ones are the following:
+    - [Line](/Documentation/Guide/UI_Components/Chart/Series_Types/Line_Series/)
+    - [Bar](/Documentation/Guide/UI_Components/Chart/Series_Types/Bar_Series/)
+    - [Area](/Documentation/Guide/UI_Components/Chart/Series_Types/Area_Series/)
+    - [Scatter](/Documentation/Guide/UI_Components/Chart/Series_Types/Scatter_Series/)
+    - [Bubble](/Documentation/Guide/UI_Components/Chart/Series_Types/Bubble_Series/)
+    - [Financial](/Documentation/Guide/UI_Components/Chart/Series_Types/Financial_Series/)
+    - [Range](/Documentation/Guide/UI_Components/Chart/Series_Types/Range_Series/)
+
+    [Combine](/concepts/05%20UI%20Components/Chart/10%20Series/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series/Overview/') them, [customize](/Documentation/Guide/UI_Components/Chart/Series/Customize_Appearance/) appearance, and configure individual [points](/concepts/05%20UI%20Components/Chart/14%20Series%20Points/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series_Points/Overview/').
 
 - **Data Sources**    
 Chart can load and update data from various [data source](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/') types. Bind data [directly](/Documentation/Guide/UI_Components/Chart/Data_Binding/Bind_Series_to_Data/#Directly) or use a [series template](/Documentation/Guide/UI_Components/Chart/Data_Binding/Bind_Series_to_Data/#Using_a_Series_Template).
@@ -22,3 +31,17 @@ Add interactivity to your Chart with the following elements:
     - [Zooming and Panning](/concepts/05%20UI%20Components/Chart/95%20Zooming%20and%20Panning '/Documentation/Guide/UI_Components/Chart/Zooming_and_Panning/')
     - [Client-Side Exporting and Printing](/concepts/05%20UI%20Components/Chart/99%20Client-Side%20Exporting%20and%20Printing '/Documentation/Guide/UI_Components/Chart/Client-Side_Exporting_and_Printing/')
     - [Adaptive Layout](/concepts/05%20UI%20Components/Chart/89%20Adaptive%20Layout.md '/Documentation/Guide/UI_Components/Chart/Adaptive_Layout/')
+    - [Drill-Down](/Documentation/Guide/UI_Components/Chart/Drill-Down_Chart/) 
+
+- **Customization**    
+The following Chart customizations are available:
+
+    - [Multiple Axes](/Documentation/Guide/UI_Components/Chart/Axes/Multi-Axis_Chart/)
+    - [Multiple Panes](/Documentation/Guide/UI_Components/Chart/Panes/Multi-Pane_Chart/)
+    - [Custom Legend Markers](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/CustomLegendMarkers/)
+    - [Axis Label Templates](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/AxisLabelsTemplates/) 
+    - [Tooltip Templates](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/TooltipHTMLSupport/)
+    - [Color Gradients and Patterns](/Documentation/Guide/UI_Components/Chart/Series/Customize_Appearance/)
+
+- **Data Aggregation**    
+A Chart with too many series points may slow down performance and be difficult to interpret. To enhance analysis, you can [aggregate](/Documentation/Guide/UI_Components/Chart/Data_Aggregation/) the series points. DevExtreme Chart offers point and discrete aggregation modes.

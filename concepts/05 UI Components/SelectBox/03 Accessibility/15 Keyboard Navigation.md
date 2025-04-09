@@ -29,6 +29,10 @@ A user can use the following keys to interact with the SelectBox component:
         <td>Enter or Space</td>
         <td>Selects the item.</td>
     </tr>
+    <tr>
+        <td>Backspace or Delete</td>
+        <td>Clears selection if <a href="/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#showClearButton">showClearButton</a> is enabled.</td>
+    </tr>
 </table>
 
 #include common-code-register-key-handler

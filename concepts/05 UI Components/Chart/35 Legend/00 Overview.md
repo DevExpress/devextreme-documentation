@@ -1,4 +1,8 @@
-The legend is a chart component that helps a user identify series. It contains several colored items, one per series. 
+---
+title: Chart - Legend Overview
+---
+
+The legend helps users identify series by displaying a colored item for each series.
 
 ![DevExtreme HTML5 JavaScript Charts Legend](/images/ChartJS/visual_elements/legend.png)
 

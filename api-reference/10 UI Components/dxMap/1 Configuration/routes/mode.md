@@ -8,7 +8,7 @@ default: 'driving'
 Specifies a transportation mode to be used in the displayed route.
 
 ---
-Choose a predefined route mode, such as `'driving'` or `'walking'`, or select one supported by your provider:
+Regardless of the current provider, you can specify one of two predefined modes: `'driving'` or `'walking'`. You can also select a provider-specific mode:
 
 - [Google](https://developers.google.com/maps/documentation/javascript/directions#TravelModes)
     - `DRIVING`
@@ -32,4 +32,12 @@ Choose a predefined route mode, such as `'driving'` or `'walking'`, or select on
     - `truck`
     - `walking`
 
-[note] DevExtreme Map allows access to part of the provider’s API as is. We do not guarantee correct application of the route mode if the string does not match the expected values or the specific configuration for the provider.
+[note]
+
+If the route doesn't render as expected, consider the following possible causes: 
+
+* Not every provider supports all possible route modes. Make sure that you specify a supported mode. 
+* Check that you specify a provider-specific spelling (compare Google's `BICYCLING` and Azure's `bicycle`). 
+* DevExtreme Map allows partial access to provider’s API. If you changed configuration, the provider may no longer support the route mode you specified. 
+
+[/note]

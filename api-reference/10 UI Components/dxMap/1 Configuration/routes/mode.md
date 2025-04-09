@@ -34,7 +34,7 @@ You can choose between two predefined modes— `'driving'` or `'walking'`—rega
 
 [note]
 
-If the route doesn't render as expected, consider the following possible causes: 
+If the route does not render as expected, consider the following: 
 
 * Not every provider supports all possible route modes. Make sure that you specify a supported mode. 
 * Check that you specify a provider-specific spelling (compare Google's `BICYCLING` and Azure's `bicycle`). 

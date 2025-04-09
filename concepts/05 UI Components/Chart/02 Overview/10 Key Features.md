@@ -1,5 +1,5 @@
 - **Series Types**    
-The Chart component features over 20 [types of series](/concepts/05%20UI%20Components/Chart/11%20Series%20Types/10%20Line%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/'). The most popular ones are the following:
+The Chart component includes over 20 [series types](/concepts/05%20UI%20Components/Chart/11%20Series%20Types/10%20Line%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/'), with the most popular ones being:
     - [Line](/Documentation/Guide/UI_Components/Chart/Series_Types/Line_Series/)
     - [Bar](/Documentation/Guide/UI_Components/Chart/Series_Types/Bar_Series/)
     - [Area](/Documentation/Guide/UI_Components/Chart/Series_Types/Area_Series/)
@@ -14,7 +14,7 @@ The Chart component features over 20 [types of series](/concepts/05%20UI%20Compo
 Chart can load and update data from various [data source](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/') types. Bind data [directly](/Documentation/Guide/UI_Components/Chart/Data_Binding/Bind_Series_to_Data/#Directly) or use a [series template](/Documentation/Guide/UI_Components/Chart/Data_Binding/Bind_Series_to_Data/#Using_a_Series_Template).
 
 - **Informational Elements**    
-You can enhance Chart with additional information elements, such as the following:
+You can enhance the Chart with additional information elements, such as:
 
     - [Legend](/concepts/05%20UI%20Components/Chart/35%20Legend/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Legend/Overview/')
     - [Grid](/concepts/05%20UI%20Components/Chart/55%20Grid/00%20Grid.md '/Documentation/Guide/UI_Components/Chart/Grid/')
@@ -44,4 +44,4 @@ The following Chart customizations are available:
     - [Color Gradients and Patterns](/Documentation/Guide/UI_Components/Chart/Series/Customize_Appearance/)
 
 - **Data Aggregation**    
-A Chart with too many series points may slow down performance and be difficult to interpret. To enhance analysis, you can [aggregate](/Documentation/Guide/UI_Components/Chart/Data_Aggregation/) the series points. DevExtreme Chart offers point and discrete aggregation modes.
+Charts with too many series points can impact performance and readability. To improve analysis, DevExtreme Chart supports point and discrete [aggregation](/Documentation/Guide/UI_Components/Chart/Data_Aggregation/) modes.

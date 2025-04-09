@@ -1,8 +1,5 @@
-[important]
 
-The Globalize package is outdated and potentially unsafe. Reports from the Snyk security checker highlight vulnerabilities associated with this package.
-
-Use Globalize at your own risk. We recommend switching to Intl for a more secure solution.
+l for a more secure solution.
 
 [/important]
 

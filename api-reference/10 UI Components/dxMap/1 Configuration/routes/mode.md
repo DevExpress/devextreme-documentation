@@ -8,7 +8,7 @@ default: 'driving'
 Specifies a transportation mode to be used in the displayed route.
 
 ---
-Regardless of the current provider, you can specify one of two predefined modes: `'driving'` or `'walking'`. You can also select a provider-specific mode:
+You can choose between two predefined modes— `'driving'` or `'walking'`—regardless of the current provider. Additionally, provider-specific modes are available:
 
 - [Google](https://developers.google.com/maps/documentation/javascript/directions#TravelModes)
     - `DRIVING`

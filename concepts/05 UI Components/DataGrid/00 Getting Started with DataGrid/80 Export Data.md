@@ -2,7 +2,7 @@ The DataGrid allows users to export grid data as Excel and PDF documents. This c
 
 - Excel: <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v4.4.0+ and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+
 
-- PDF: <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a>
+- PDF: <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> v2.3.1+
 
 Warning: You need to perform *extra steps* to generate PDFs with non-ASCII characters. See the [PDF Export guide](/concepts/80%20Troubleshooting/15%20PDF%20Export/00%20PDF%20Export.md '/Documentation/Guide/Troubleshooting/PDF_Export/') for more information.
 

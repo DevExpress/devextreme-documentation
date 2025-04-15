@@ -4,7 +4,7 @@ The following code applies the `$base-accent` variable as the `background-color`
 
     <!-- tab: SCSS -->
     // Your SCSS file
-    @import "../../../themes/generated/variables.base.scss";
+    @use "../../../themes/generated/variables.base.scss";
 
     #my-element {
         background-color: $base-accent;

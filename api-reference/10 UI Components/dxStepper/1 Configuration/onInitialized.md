@@ -4,7 +4,7 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-A function used to save the UI component instance.
+A function that fires when the component finishes its initialization
 
 ##### param(e): ui/stepper:InitializedEvent
 Information about the event.
@@ -16,6 +16,8 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "UI component" }
 
 ---
+[note] Use **onInitialized** to save the UI component instance for global use. Avoid using this function to set initial properties.
+
 #include common-code-on-initialized
 
 #####See Also#####

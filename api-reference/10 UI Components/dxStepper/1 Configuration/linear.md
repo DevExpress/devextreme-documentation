@@ -8,6 +8,6 @@ default: true
 Specifies a navigation mode (linear/non-linear). 
 
 ---
-If this property is `true`, navigation becomes sequential, allowing users to proceed step-by-step. If `false`, navigation is non-linear, permitting users to skip steps.
+If this property is `false`, navigation is non-linear. In other words, users can skip steps. 
 
 [note] You cannot skip a [disabled](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/#disabled) step in the linear mode.

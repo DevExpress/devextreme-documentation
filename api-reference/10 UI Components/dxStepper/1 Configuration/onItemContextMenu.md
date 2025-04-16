@@ -4,7 +4,7 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-A function that is executed when an item (step) is right-clicked or pressed.
+A function that is executed when an item (step) is right-clicked or long-pressed.
 
 ##### param(e): ui/stepper:ItemContextMenuEvent
 Information about the event.

@@ -8,4 +8,4 @@ default: true
 Specifies if items are selected automatically when focused via keyboard.
 
 ---
-If this property is `true`, arrow keys move focus and select the step. If `false`, steps remain unselected when navigated with arrow keys.
+Users can press arrow keys to move focus between items. Set `selectOnFocus` to `true` to synchronize keyboard navigation and item selection. 

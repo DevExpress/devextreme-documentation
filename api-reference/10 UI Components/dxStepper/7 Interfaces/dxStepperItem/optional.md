@@ -4,7 +4,7 @@ type: Boolean
 ---
 ---
 ##### shortDescription
-Specifies a visual indicator for the optional state.
+Marks the step as optional.
 
 ---
 - If `false` or `undefined`, a step shows no "optional" information.

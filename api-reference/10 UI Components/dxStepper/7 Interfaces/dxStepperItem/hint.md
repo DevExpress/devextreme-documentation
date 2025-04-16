@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-Specifies a text for the hint that appears when an item (step) is hovered over or long-pressed.
+Specifies the hint text that appears when an item (step) is hovered over or long-pressed.
 
 ---
-<!-- Description goes here -->
+[note] Item's hint has more priority over the component's hint.

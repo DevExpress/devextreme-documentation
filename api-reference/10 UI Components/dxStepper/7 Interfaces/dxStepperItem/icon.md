@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-Specifies the step indicator icon.
+Specifies the indicator icon.
 
 ---
 #include uiwidgets-ref-icon

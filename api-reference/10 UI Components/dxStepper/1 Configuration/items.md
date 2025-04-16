@@ -6,7 +6,7 @@ inheritsType: dxStepperItem
 ---
 ---
 ##### shortDescription
-An array of items (steps) displayed by Splitter.
+An array of items (steps) displayed by the Stepper component.
 
 ---
 The **items** array can contain:

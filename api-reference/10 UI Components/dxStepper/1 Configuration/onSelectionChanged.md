@@ -10,7 +10,7 @@ A function that is executed when an item (step) is selected or selection is canc
 Information about the event.
 
 ##### field(e.addedItems): Array<any>
-The data of the selected items.
+An array that holds items added to selection.
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.
@@ -19,7 +19,7 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.removedItems): Array<any>
-The data of the items removed from selection.
+An array that holds items removed from selection.
 
 ---
 <!-- Description goes here -->

@@ -6,7 +6,7 @@ inherits: CollectionWidget
 ---
 ---
 ##### shortDescription
-Stepper is a UI component that displays progress as a user moves through a sequence of steps.
+A Stepper is a UI component that displays progress as a user moves through a sequence of steps.
 
 ##### widgettree
 items: [{

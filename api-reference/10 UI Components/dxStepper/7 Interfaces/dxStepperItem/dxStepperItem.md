@@ -5,7 +5,7 @@ inherits: CollectionWidgetItem
 ---
 ---
 ##### shortDescription
-A splitter item (step).
+A stepper item (step).
 
 ---
 <!-- Description goes here -->

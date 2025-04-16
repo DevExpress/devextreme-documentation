@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-The type of the [selectionChanged]({basewidgetpath}/Events/#selectionChanged) event handler's argument.
+The argument type in the [selectionChanged]({basewidgetpath}/Events/#selectionChanged) event.
 
 ---
 <!-- Description goes here -->

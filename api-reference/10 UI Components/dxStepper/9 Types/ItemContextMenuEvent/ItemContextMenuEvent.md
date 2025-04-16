@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-The type of the [itemContextMenu]({basewidgetpath}/Events/#itemContextMenu) event handler's argument.
+The argument type in the [itemContextMenu]({basewidgetpath}/Events/#itemContextMenu) event.
 
 ---
 <!-- Description goes here -->

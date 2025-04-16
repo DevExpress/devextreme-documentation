@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-The type of the [itemClick]({basewidgetpath}/Events/#itemClick) event handler's argument.
+The argument type in the [itemClick]({basewidgetpath}/Events/#itemClick) event.
 
 ---
 <!-- Description goes here -->

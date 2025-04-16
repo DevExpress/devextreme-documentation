@@ -4,7 +4,7 @@ The following code applies the `var(--base-accent)` variable as the `background-
 
     <!-- tab: SCSS -->
     // Your SCSS file
-    @‌import "../../../variables.scss";
+    @‌use "../../../variables.scss";
 
     #my-element {
         background-color: var(--base-accent);

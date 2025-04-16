@@ -4,7 +4,7 @@ The following UI components are SVG-based:
 
 - [BarGauge](/concepts/05%20UI%20Components/BarGauge/10%20Visual%20Elements '/Documentation/Guide/UI_Components/BarGauge/Visual_Elements/')
 - [Bullet](/concepts/05%20UI%20Components/Bullet/10%20Visual%20Elements '/Documentation/Guide/UI_Components/Bullet/Visual_Elements/')
-- [Chart](/concepts/05%20UI%20Components/Chart/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Overview/')
+- [Chart](/concepts/05%20UI%20Components/Chart/02%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Overview/')
 - [CircularGauge](/concepts/05%20UI%20Components/CircularGauge/10%20Visual%20Elements '/Documentation/Guide/UI_Components/CircularGauge/Visual_Elements/')
 - [Funnel](/concepts/05%20UI%20Components/Funnel/00%20Overview.md '/Documentation/Guide/UI_Components/Funnel/Overview/')
 - [LinearGauge](/concepts/05%20UI%20Components/LinearGauge/10%20Visual%20Elements '/Documentation/Guide/UI_Components/LinearGauge/Visual_Elements/')
@@ -17,3 +17,5 @@ The following UI components are SVG-based:
 - [VectorMap](/concepts/05%20UI%20Components/VectorMap/10%20Visual%20Elements '/Documentation/Guide/UI_Components/VectorMap/Visual_Elements/')
 
 UI component customization is described in the [HTML-Based UI components Customization](/concepts/60%20Themes%20and%20Styles/10%20HTML-Based%20Components%20Customization '/Documentation/Guide/Themes_and_Styles/HTML-Based_Components_Customization/') and [SVG-Based UI components Customization](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Components%20Customization '/Documentation/Guide/Themes_and_Styles/SVG-Based_Components_Customization/') articles. However, we recommend that you choose a [theme](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') to start customization.
+
+[note] DevExtreme components do not support `zoom` and `transform` CSS rules. Use a [Compact theme](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') to reduce all component sizes.

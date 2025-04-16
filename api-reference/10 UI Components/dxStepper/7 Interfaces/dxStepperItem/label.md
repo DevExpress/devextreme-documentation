@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the caption displayed next to the step.
 
 ---
 <!-- Description goes here -->

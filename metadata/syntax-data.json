@@ -5750,6 +5750,22 @@
       "react": "Position",
       "vue": "DxPosition"
     },
+    "appointmentCollectorTemplateData": {
+      "angular": "dxo-appointment-collector-template-data",
+      "react": "AppointmentCollectorTemplateData",
+      "vue": "DxAppointmentCollectorTemplateData"
+    },
+    "appointmentCollectorTemplateData.appointmentCount": {
+      "vue": "appointment-count"
+    },
+    "appointmentCollectorTemplateData.isCompact": {
+      "vue": "is-compact"
+    },
+    "appointmentCollectorTemplateData.items": {
+      "angular": "dxi-item",
+      "react": "Item",
+      "vue": "DxItem"
+    },
     "arrayStoreOptions": {
       "vue": "array-store-options"
     },
@@ -13049,6 +13065,11 @@
     },
     "dxHtmlEditorMention.valueExpr": {
       "vue": "value-expr"
+    },
+    "dxHtmlEditorOptions.aiIntegration": {
+      "angular": "dxo-ai-integration",
+      "react": "AiIntegration",
+      "vue": "DxAiIntegration"
     },
     "dxHtmlEditorOptions.allowSoftLineBreak": {
       "vue": "allow-soft-line-break"

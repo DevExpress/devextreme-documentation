@@ -1,6 +1,6 @@
 ---
 id: DateBoxBase.Options.max
-type: Date | Number | String | undefined
+type: Date | Number | String | null | undefined
 default: undefined
 ---
 ---

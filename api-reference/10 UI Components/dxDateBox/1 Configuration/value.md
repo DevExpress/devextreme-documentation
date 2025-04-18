@@ -1,6 +1,6 @@
 ---
 id: dxDateBox.Options.value
-type: Date | Number | String
+type: Date | Number | String | null
 default: null
 ---
 ---

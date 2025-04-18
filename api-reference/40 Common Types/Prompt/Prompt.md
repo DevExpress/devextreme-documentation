@@ -6,7 +6,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A prompt for the AI model.
 
 ---
 <!-- Description goes here -->

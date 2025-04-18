@@ -6,7 +6,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An object with request parameters for the language model.
 
 ---
 <!-- Description goes here -->

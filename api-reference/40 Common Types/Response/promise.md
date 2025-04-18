@@ -4,7 +4,7 @@ type: Promise<String>
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A promise that resolves with the final AI-generated text.
 
 ---
 <!-- Description goes here -->

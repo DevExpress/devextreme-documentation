@@ -6,7 +6,6 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An object responsible for sending requests to an AI model. 
 
 ---
-<!-- Description goes here -->

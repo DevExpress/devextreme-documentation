@@ -6,7 +6,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An object returned by the [sendRequest](/Documentation/ApiReference/Common_Types/AIProvider/#sendRequest) function.
 
 ---
 <!-- Description goes here -->

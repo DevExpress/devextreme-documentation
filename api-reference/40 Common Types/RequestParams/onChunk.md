@@ -4,10 +4,10 @@ type: function(chunk)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An optional callback function that gets called whenever a new chunk of the AI response is received (for streaming). 
 
 ##### param(chunk): String
-<!-- Description goes here -->
+A chunk of data.
 
 ---
-<!-- Description goes here -->
+This function can be called multiple times as partial data arrives.

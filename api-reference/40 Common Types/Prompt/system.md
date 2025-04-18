@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Instructions for the AI.
 
 ---
 <!-- Description goes here -->

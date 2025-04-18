@@ -4,13 +4,12 @@ type: function(params)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that sends a request to a language model.
 
 ##### param(params): RequestParams
-<!-- Description goes here -->
+Request parameters.
 
 ##### return: Response
-<!-- Description goes here -->
+An object with AI response.
 
 ---
-<!-- Description goes here -->

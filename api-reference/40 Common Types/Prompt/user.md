@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A string representing a custom message to the AI.
 
 ---
 <!-- Description goes here -->

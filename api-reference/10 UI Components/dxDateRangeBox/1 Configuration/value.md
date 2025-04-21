@@ -1,6 +1,6 @@
 ---
 id: dxDateRangeBox.Options.value
-type: Array<Date, Number, String>
+type: Array<Date, Number, String, null>
 default: [null,null]
 ---
 ---

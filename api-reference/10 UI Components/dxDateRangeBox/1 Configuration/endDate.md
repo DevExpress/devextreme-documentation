@@ -1,6 +1,6 @@
 ---
 id: dxDateRangeBox.Options.endDate
-type: Date | Number | String
+type: Date | Number | String | null
 default: null
 firedEvents: optionChanged
 ---

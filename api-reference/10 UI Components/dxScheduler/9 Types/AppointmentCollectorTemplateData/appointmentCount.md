@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The count of hidden appointments.
 
 ---
 <!-- Description goes here -->

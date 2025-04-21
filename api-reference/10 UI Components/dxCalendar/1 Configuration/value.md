@@ -1,6 +1,6 @@
 ---
 id: dxCalendar.Options.value
-type: Date | Number | String | Array<Date, Number, String>
+type: Date | Number | String | null | Array<Date, Number, String, null>
 default: null
 ---
 ---

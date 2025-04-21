@@ -4,7 +4,7 @@ type: Array<dxSchedulerAppointment>
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Appointments that are displayed after a user clicks on an overflow indicator.
 
 ---
 <!-- Description goes here -->

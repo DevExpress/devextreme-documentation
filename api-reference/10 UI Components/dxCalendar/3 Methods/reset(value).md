@@ -5,7 +5,7 @@ id: dxCalendar.reset(value)
 ##### shortDescription
 Resets the [value](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/value.md '{basewidgetpath}/Configuration/#value') property to the value passed as an argument.
 
-##### param(value): Date | Number | String | Array<Date, Number, String> | null
+##### param(value): Date | Number | String | Array<Date, Number, String, null> | null
 Specifies the new value.
 
 ---

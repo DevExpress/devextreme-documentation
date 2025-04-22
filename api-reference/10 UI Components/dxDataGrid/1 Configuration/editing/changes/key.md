@@ -1,3 +1,8 @@
+---
+##### shortDescription
+The key of the row being created, updated, or removed.
+
+---
 The **key** property supports both simple and composite keys.
 
     <!-- tab: JavaScript -->changes.push({

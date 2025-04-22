@@ -6,7 +6,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Information about a cell overflow indicator.
 
 ---
 <!-- Description goes here -->

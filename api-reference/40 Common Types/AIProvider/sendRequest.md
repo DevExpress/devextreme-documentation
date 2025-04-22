@@ -19,9 +19,11 @@ An object with AI response.
     <!-- tab: index.js -->
     const aiIntegration = new DevExpress.aiIntegration({
         sendRequest({ prompt }) {
-            const promise = fetch('/** API URL */', {
-                method: '/** method name */',
-                headers: { /** headers */ },
+            const promise = fetch('https://example.org/post', {
+                method: 'POST',
+                headers: { 
+                    // Add any custom headers here
+                 },
                 body: JSON.stringify({ prompt }),
             })
                 .then(async (response) => {
@@ -33,7 +35,7 @@ An object with AI response.
             return {
                 promise,
                 abort: () => {
-                    // Abort request here
+                    // Add an abort request
                 },
             };
         },
@@ -50,27 +52,26 @@ An object with AI response.
         constructor(private http: HttpClient) {}
         provider = {
             sendRequest: ({ prompt }) => {
-            const controller = new AbortController();
+                const headers = new HttpHeaders({
+                    // Add any custom headers here
+                });
 
-            const headers = new HttpHeaders({
-                // Add any custom headers here
-                'Content-Type': 'application/json',
-            });
+                const body = JSON.stringify({ prompt });
 
-            const body = JSON.stringify({ prompt });
+                const promise = this.http
+                    .post<{ output?: string }>('https://example.org/post', body, {
+                        headers,
+                        signal: controller.signal,
+                    })
+                    .toPromise()
+                    .then((result) => result.output || '');
 
-            const promise = this.http
-                .post<{ output?: string }>('/** API URL */', body, {
-                    headers,
-                    signal: controller.signal,
-                })
-                .toPromise()
-                .then((result) => result.output || '');
-
-            return {
-                promise,
-                abort: () => controller.abort(),
-            };
+                return {
+                    promise,
+                    abort: () => {
+                        // Add an abort request
+                    },
+                };
             },
         };
         aiIntegration = new AIIntegration(provider);
@@ -85,28 +86,27 @@ An object with AI response.
 
     const provider = {
         sendRequest: ({ prompt }) => {
-        const controller = new AbortController();
+            const headers = {
+                // Add any custom headers here
+            };
 
-        const headers = {
-            'Content-Type': 'application/json',
-            // Add any custom headers here
-        };
+            const promise = fetch('https://example.org/post', {
+                method: 'POST',
+                headers,
+                body: JSON.stringify({ prompt }),
+                signal: controller.signal,
+            })
+                .then(async (response) => {
+                    const result = await response.json();
+                    return result.output || '';
+                });
 
-        const promise = fetch('/** API URL */', {
-            method: 'POST',
-            headers,
-            body: JSON.stringify({ prompt }),
-            signal: controller.signal,
-        })
-            .then(async (response) => {
-                const result = await response.json();
-                return result.output || '';
-            });
-
-        return {
-            promise,
-            abort: () => controller.abort(),
-        };
+            return {
+                promise,
+                abort: () => {
+                    // Add an abort request
+                },
+            };
         },
     };
 
@@ -120,28 +120,28 @@ An object with AI response.
 
     const provider = {
         sendRequest: ({ prompt }) => {
-        const controller = new AbortController();
+            const headers = {
+                'Content-Type': 'application/json',
+                // Add any custom headers here
+            };
 
-        const headers = {
-            'Content-Type': 'application/json',
-            // Add any custom headers here
-        };
+            const promise = fetch('https://example.org/post', {
+                method: 'POST',
+                headers,
+                body: JSON.stringify({ prompt }),
+                signal: controller.signal,
+            })
+                .then(async (response) => {
+                    const result = await response.json();
+                    return result.output || '';
+                });
 
-        const promise = fetch('/** API URL */', {
-            method: 'POST',
-            headers,
-            body: JSON.stringify({ prompt }),
-            signal: controller.signal,
-        })
-            .then(async (response) => {
-                const result = await response.json();
-                return result.output || '';
-            });
-
-        return {
-            promise,
-            abort: () => controller.abort(),
-        };
+            return {
+                promise,
+                abort: () => {
+                    // Add an abort request
+                },
+            };
         },
     };
     const aiIntegration = new AIIntegration(provider);

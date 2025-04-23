@@ -205,6 +205,7 @@ const iconNames = [
     "remove",
     "rename",
     "repeat",
+    "restore",
     "return",
     "revert",
     "rowfield",

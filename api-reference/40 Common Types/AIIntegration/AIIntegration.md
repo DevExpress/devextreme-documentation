@@ -24,7 +24,7 @@ You must create an instance of this class by passing in an object of the [AIProv
 ##### Angular
 
     <!-- tab: app.component.ts -->
-    import { AIIntegration } from 'devextreme-angular/ai-integration';
+    import { AIIntegration } from 'devextreme-angular/common/ai-integration';
     // ...
     export class AppComponent {
         aiIntegration = new AIIntegration(provider);
@@ -37,18 +37,18 @@ You must create an instance of this class by passing in an object of the [AIProv
 
     <!-- tab: App.vue -->
     <template>
-    <DxHtmlEditor :ai-integration="aiIntegration" />
+        <DxHtmlEditor :ai-integration="aiIntegration" />
     </template>
 
     <script setup lang="ts">
-    import { AIIntegration } from 'devextreme-vue/ai-integration';
+    import { AIIntegration } from 'devextreme-vue/common/ai-integration';
     const aiIntegration = new AIIntegration(provider);
     </script>
 
 ##### React
 
     <!-- tab: App.tsx -->
-    import { AIIntegration } from 'devextreme-react/ai-integration';
+    import { AIIntegration } from 'devextreme-react/common/ai-integration';
     const aiIntegration = new AIIntegration(provider);
 
     const App = () => {

@@ -85,6 +85,7 @@ const iconNames = [
     "doesnotcontain",
     "download",
     "dragvertical",
+    "dropzone",
     "edit",
     "edittableheader",
     "email",

@@ -6,7 +6,7 @@ id: GridBase.Options.editing.refreshMode
 Specifies operations that are performed after saving changes.
 
 ---
-The following table shows the operations that are performed after saving changes in different modes:
+The following table lists operations that are performed after changes in different modes are saved:
 
 <table class="dx-table">
  <tr>

@@ -36,7 +36,7 @@ The following table shows the operations that are performed after saving changes
 </table>
 
 1. Data processing operations include paging, filtering, sorting, grouping, and summary calculation (in the **DataGrid**).
-2. Set [repaintChangesOnly]({basewidgetpath}/Configuration/#repaintChangesOnly) to `true` to repaint only elements whose data changed.
+2. Set [repaintChangesOnly]({basewidgetpath}/Configuration/#repaintChangesOnly) to `true` to repaint only those elements whose data had changed.
 3. Set [remoteOperations]({basewidgetpath}/Configuration/remoteOperations/) to `false` and [cacheEnabled]({basewidgetpath}/Configuration/#cacheEnabled) to `true` to avoid data reloading.
 
 #include btn-open-demo with {
@@ -45,7 +45,7 @@ The following table shows the operations that are performed after saving changes
 
 [note]
 
-- When the **refreshMode** is *"reshape"* or *"repaint"*, the server should respond to the insert or update request by sending back the data item saved in the database. See the `DataGridWebApiController` tab in the [CRUD Operations demo](https://demos.devexpress.com/ASPNetMvc/Demo/DataGrid/CRUDOperations) for an example of the server-side implementation. The `InsertOrder` and `UpdateOrder` actions illustrate this case.
+- When the **refreshMode** is set to *"reshape"* or *"repaint"*, the server should respond to the `insert` or `update` request by sending back the data item saved in the database. See the `DataGridWebApiController` tab in the [CRUD Operations demo](https://demos.devexpress.com/ASPNetMvc/Demo/DataGrid/CRUDOperations) for an example of the server-side implementation. The `InsertOrder` and `UpdateOrder` actions illustrate this case.
 - Set **refreshMode** to *"full"* if you need to update row keys.
 
 [/note]

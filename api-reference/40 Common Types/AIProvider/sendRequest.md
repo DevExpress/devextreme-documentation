@@ -4,7 +4,7 @@ type: function(params)
 ---
 ---
 ##### shortDescription
-A function that sends a request to a language model.
+A function that sends a request to an AI service.
 
 ##### param(params): RequestParams
 Request parameters.
@@ -46,7 +46,7 @@ An object with AI response.
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { HttpClient, HttpHeaders } from '@angular/common/http';
-    import { AIIntegration } from 'devextreme-angular/ai-integration';
+    import { AIIntegration } from 'devextreme-angular/common/ai-integration';
     // ...
     export class AppComponent {
         constructor(private http: HttpClient) {}
@@ -82,7 +82,7 @@ An object with AI response.
     <!-- tab: App.vue -->
     <script lang="ts" setup>
     import { ref } from 'vue';
-    import { AIIntegration } from 'devextreme-vue/ai-integration';
+    import { AIIntegration } from 'devextreme-vue/common/ai-integration';
 
     const provider = {
         sendRequest: ({ prompt }) => {
@@ -116,7 +116,7 @@ An object with AI response.
 ##### React
 
     <!-- tab: App.tsx -->
-    import { AIIntegration } from 'devextreme-react/ai-integration';
+    import { AIIntegration } from 'devextreme-react/common/ai-integration';
 
     const provider = {
         sendRequest: ({ prompt }) => {

@@ -4,7 +4,7 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-A function that fires when the component finishes its initialization
+A function that fires when the component finishes its initialization.
 
 ##### param(e): ui/stepper:InitializedEvent
 Information about the event.

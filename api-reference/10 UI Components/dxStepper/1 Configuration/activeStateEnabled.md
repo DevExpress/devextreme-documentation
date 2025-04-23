@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies whether Stepper changes its appearance when in active state (an end user interacts with it).
+Specifies whether Stepper changes its appearance when in the active state (when an end user interacts with it).
 
 ---
 Use this property on platforms that require active state change for UI components. On such platforms, a component switches to the active state when a user presses down the primary mouse button. 

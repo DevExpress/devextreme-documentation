@@ -6,7 +6,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-An object with request parameters for the language model.
+An object with request parameters for AI service.
 
 ---
 <!-- Description goes here -->

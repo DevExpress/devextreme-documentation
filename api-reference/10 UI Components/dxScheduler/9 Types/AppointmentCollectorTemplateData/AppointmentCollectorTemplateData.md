@@ -3,6 +3,7 @@ id: AppointmentCollectorTemplateData
 module: ui/scheduler
 export: AppointmentCollectorTemplateData
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
 ---
 id: dxActionSheetItem.type
-type: Enums.ButtonType
+type: Enums.ButtonType | String
 default: 'normal'
 ---
 ---

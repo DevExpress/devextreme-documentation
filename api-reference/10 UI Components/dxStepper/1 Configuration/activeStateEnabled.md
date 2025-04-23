@@ -5,7 +5,9 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether Stepper changes its appearance when in the active state (when an end user interacts with it).
 
 ---
-<!-- Description goes here -->
+Use this property on platforms that require active state change for UI components. On such platforms, a component switches to the active state when a user presses the primary mouse button.
+
+If the `activeStateEnabled` property is set to `true`, CSS rules for the active state apply. You can change these rules to customize the component.

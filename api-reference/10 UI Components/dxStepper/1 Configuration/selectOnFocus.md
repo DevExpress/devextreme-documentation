@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies if items are selected automatically when focused by keyboard.
 
 ---
-<!-- Description goes here -->
+Users can press arrow keys to move focus between items. Set `selectOnFocus` to `true` to synchronize keyboard navigation and item selection. 

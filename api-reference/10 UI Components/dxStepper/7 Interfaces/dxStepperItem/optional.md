@@ -4,7 +4,8 @@ type: Boolean
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Marks the step as optional.
 
 ---
-<!-- Description goes here -->
+- If `false` or `undefined`, a step shows no "optional" information.
+- If `true`, a step displays an "(Optional)" caption.

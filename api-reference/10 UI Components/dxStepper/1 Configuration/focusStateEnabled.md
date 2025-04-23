@@ -5,7 +5,7 @@ default: true (desktop)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether the UI component can be focused using keyboard navigation.
 
 ---
 <!-- Description goes here -->

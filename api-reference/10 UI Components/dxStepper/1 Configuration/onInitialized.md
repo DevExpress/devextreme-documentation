@@ -4,16 +4,22 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that fires when the component finishes its initialization.
 
 ##### param(e): ui/stepper:InitializedEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ---
-<!-- Description goes here -->
+[note] Use **onInitialized** to save the UI component instance for global use. Avoid using this function to set initial properties.
+
+#include common-code-on-initialized
+
+#####See Also#####
+
+#include common-get-instance

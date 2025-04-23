@@ -5,7 +5,7 @@ inherits: CollectionWidgetItem
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A stepper item (step).
 
 ---
 <!-- Description goes here -->

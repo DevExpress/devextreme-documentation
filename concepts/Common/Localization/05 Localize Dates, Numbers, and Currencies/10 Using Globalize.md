@@ -24,7 +24,7 @@ To include these components, you can use CDN or npm.
 
 * **CDN or local files**      
 
-    Specify the Globalize and CLDR libraries using `<script>` tags as shown below. In this example, the German [dictionary](/concepts/Common/Localization/01%20Dictionaries '/Documentation/Guide/Common/Localization/#Dictionaries') is included. Note that the order in which you include the libraries is important. Then, set the locale using the `Globalize.locale()` method:
+    Specify the Globalize and CLDR libraries using `<script>` tags as shown below. In this example, the German [dictionary](/concepts/Common/Localization/01%20Dictionaries '/Documentation/Guide/Common/Localization/#Dictionaries') is included. Note that the order in which you include libraries is important. Then, set the locale using the `Globalize.locale()` method:
 
     ---
     ##### CDN

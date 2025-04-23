@@ -1,6 +1,6 @@
 ---
 id: dxButtonGroupItem.type
-type: Enums.ButtonType
+type: Enums.ButtonType | String
 default: 'normal'
 ---
 ---

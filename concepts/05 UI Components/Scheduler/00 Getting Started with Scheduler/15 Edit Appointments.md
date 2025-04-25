@@ -86,3 +86,8 @@ Edit operations are enabled (the default setting). To disable an individual oper
     export default App;
 
 ---
+When users add or edit appointments, the Scheduler raises events like [onAppointmentAdding]('/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentAdding/') and [onAppointmentUpdating]('/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentUpdating/'). You can use these events to extend the Scheduler component's functionality. The example below demonstrates how to prevent adding or moving appointments to cells with existing recurring appointments using **onAppointmentAdding** and **onAppointmentUpdating**.
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-scheduler-prevent-recurrence-appointment"
+}

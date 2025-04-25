@@ -123,3 +123,8 @@ A user can insert variables in the text and remove them, but never modify them.
     }
 
 ---
+To learn how to implement mail merge with variables, refer to this example:
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-htmleditor-mail-merge-with-variables"
+}

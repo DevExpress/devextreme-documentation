@@ -36,8 +36,8 @@ The following table lists operations that are performed after changes in differe
 </table>
 
 1. Data processing operations include paging, filtering, sorting, grouping, and summary calculation (in the **DataGrid**).
-2. Set [repaintChangesOnly]({basewidgetpath}/Configuration/#repaintChangesOnly) to `true` to repaint only those elements whose data had changed.
-3. Set [remoteOperations]({basewidgetpath}/Configuration/remoteOperations/) to `false` and [cacheEnabled]({basewidgetpath}/Configuration/#cacheEnabled) to `true` to avoid data reloading.
+2. Set [repaintChangesOnly](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/repaintChangesOnly.md '{basewidgetpath}/Configuration/#repaintChangesOnly') to `true` to repaint only those elements whose data had changed.
+3. Set [remoteOperations](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/remoteOperations '{basewidgetpath}/Configuration/remoteOperations/') to `false` and [cacheEnabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/cacheEnabled.md '{basewidgetpath}/Configuration/#cacheEnabled') to `true` to avoid data reloading.
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CRUDOperations/"

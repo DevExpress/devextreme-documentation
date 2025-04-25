@@ -40,6 +40,10 @@ Indicates whether the row is expanded or collapsed. Applies if this is a master 
 A template name or container.
 
 ---
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-editing-datarowtemplate"
+}
+
 The following details should be taken into account when you use a **dataRowTemplate**:
 
 - Disable [column reordering](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/allowColumnReordering.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#allowColumnReordering'), [grouping](/api-reference/_hidden/dxDataGridColumn/allowGrouping.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowGrouping'), and [column fixing](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnFixing '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columnFixing/') when you specify the row template. Its content cannot automatically synchronize with the column layout, which makes these features inoperative. [Command columns](/concepts/05%20UI%20Components/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/Command_Columns/') are not supported either.

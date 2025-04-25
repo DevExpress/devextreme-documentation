@@ -118,6 +118,11 @@ The format property can accept the following value types:
         // Add a percent sign and limit to two decimal digits
         format: "#0.##'%'" // 0.01%
 
+    To learn how to overcome limitations of mask formats that contain '0' and '#', refer to this example:
+
+    #include btn-open-github with {
+        href: "https://github.com/DevExpress-Examples/devextreme-numberbox-zero-masks"
+    }
     
 - Function    
 A function should apply a custom format to a value and return the formatted value as a string. A shortcut for the [formatter](/api-reference/50%20Common/Object%20Structures/format/formatter.md '/Documentation/ApiReference/Common/Object_Structures/Format/#formatter') property. Refer to the following article for more information: [Custom Function](/concepts/Common/Value%20Formatting/10%20Format%20UI%20Component%20Values/30%20Custom%20Function.md '/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Function').

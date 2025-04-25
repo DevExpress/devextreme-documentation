@@ -223,8 +223,16 @@ In the following code, the **onCellPrepared** function is used to change a `Prod
 
 ---
 
+To learn how to use **onCellPrepared** to display a tooltip for data cells, refer to the following example:
+
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-datagrid-display-tooltip-for-data-cells"
+}
+
+To learn how to implement conditional formatting with **onCellPrepared**, refer to the following example:
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-conditional-formatting"
 }
 
 #####See Also#####

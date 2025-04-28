@@ -6,7 +6,7 @@ inheritsType: dxHtmlEditorVariables
 ---
 ---
 ##### shortDescription
-Configures variables, which are placeholders to be replaced with actual values when processing text.
+Configures variables that are placeholders for values created once text is processed.
 
 ---
 A user can insert variables in the text and remove them, but never modify them.

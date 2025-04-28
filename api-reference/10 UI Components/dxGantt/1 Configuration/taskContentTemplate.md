@@ -25,13 +25,13 @@ The processed task.
 The default HTML element of the processed task.
 
 ##### field(item.taskPosition): Object
-The task's position.
+Task position.
 
 ##### field(item.taskResources): Array<Object>
-The task's resources.
+Task resources.
 
 ##### field(item.taskSize): Object
-The task's size.
+Task size.
 
 ##### return: String | Element | jQuery
 #include common-template-return-value

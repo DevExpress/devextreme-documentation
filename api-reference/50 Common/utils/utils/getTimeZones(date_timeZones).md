@@ -1,5 +1,5 @@
 ---
-id: utils.getTimeZones(date)
+id: utils.getTimeZones(date, timeZones)
 module: common/core/environment
 export: getTimeZones
 ---
@@ -12,6 +12,9 @@ A list of IANA time zone objects.
 
 ##### param(date): Date | undefined
 A date for which to get time zone objects. If not passed, the current date is used.
+
+##### param(timeZones): Array<String> | undefined
+<!-- Description goes here -->
 
 ---
 This method can accept a specific date to get the list of time zone objects for that date. This is useful because these objects can be removed or added, and time zone offsets can change, for example, due to daylight savings.

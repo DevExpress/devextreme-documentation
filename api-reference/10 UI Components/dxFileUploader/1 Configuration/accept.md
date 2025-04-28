@@ -8,7 +8,7 @@ default: ''
 Specifies file types users can select in the Open File dialog. The default value accepts all file types.
 
 ---
-FileUploader passes the value of this property to the **accept** attribute of the underlying **input** element. Utilize MIME types or file extensions separated by commas. Some examples include:
+FileUploader passes the value of this property to the **accept** attribute of the underlying **input** element. Utilize MIME types or file extensions separated by commas. Examples include:
 
 - `image/*` - only image files
 - `image/png, image/jpg` or `.png, .jpg` - only PNG and JPG images

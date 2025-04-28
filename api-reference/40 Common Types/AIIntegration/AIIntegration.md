@@ -5,10 +5,10 @@ export: AIIntegration
 ---
 ---
 ##### shortDescription
-A type of the main AI integration class.
+A class that activates AI services in DevExpress UI components. 
 
 ---
-You must create an instance of this class by passing in an object of the [AIProvider](/Documentation/ApiReference/Common_Types/AIProvider/) type. This instance should then be passed to any components that support AI features.
+This object's constructor accepts an [AIProvider](/Documentation/ApiReference/Common_Types/AIProvider/) object that specifies AI service settings. Pass the created `AIIntegration` object to components where you want to activate AI capabilities.
 
 ---
 ##### jQuery

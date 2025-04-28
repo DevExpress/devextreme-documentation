@@ -4,7 +4,7 @@ type: function()
 ---
 ---
 ##### shortDescription
-A function that allows canceling the request.
+A function that cancels the request.
 
 ---
 <!-- Description goes here -->

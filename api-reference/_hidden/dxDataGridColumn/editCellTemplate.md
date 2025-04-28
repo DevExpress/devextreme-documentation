@@ -82,6 +82,12 @@ Use it to:
     - [Dynamically change editor properties in the editing state](/concepts/05%20UI%20Components/DataGrid/99%20How%20To/Dynamically%20Change%20Editor%20Properties%20in%20the%20Editing%20State.md '/Documentation/Guide/UI_Components/DataGrid/How_To/Dynamically_Change_Editor_Properties_in_the_Editing_State/').
     - Implement other customization cases.
 
+To learn how to configure dynamic columns that can handle multiple value types with **editCellTemplate**, refer to the following example:
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-dynamic-type-column"
+}
+
 [note]
 
 Please review the following notes:

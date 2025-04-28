@@ -301,6 +301,17 @@ To add or remove a marker at runtime, bind the **markers** property of the Map t
     export default App;
 
 ---
+To learn how to add draggable markers, refer to the following example:
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-map-add-draggable-markers"
+}
+
+To learn how to add markers with labels, refer to the following example:
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-map-add-marker-with-label"
+}
 
 #####See Also#####
 - [Map - Customize Markers](/concepts/05%20UI%20Components/Map/20%20Configure%20Markers/10%20Customize.md '/Documentation/Guide/UI_Components/Map/Configure_Markers/Customize/')

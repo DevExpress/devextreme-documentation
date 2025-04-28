@@ -41,7 +41,7 @@ Task size.
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/TaskTemplate/"
 }
 
-To learn how to display both actual and planned tasks in the Gantt chart area with **taskContentTemplate**, refer to the following example:
+To learn how to display current and planned tasks in the Gantt chart area with **taskContentTemplate**, refer to the following example:
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-gantt-planned-vs-actual-tasks"

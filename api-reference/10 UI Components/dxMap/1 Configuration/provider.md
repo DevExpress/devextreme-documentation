@@ -24,3 +24,15 @@ If you have an existing license to Bing Maps for Enterprise, you can continue us
 The last date you can get a new license to Bing Maps for Enterprise is June 30, 2024. If you do not have an existing license after that date, you would not be able to use our map controls with Bing Maps or Azure Maps (until we release the new API). During that time, you can use other [map providers](/api-reference/10%20UI%20Components/dxMap/9%20Types/MapProvider.md '/Documentation/ApiReference/UI_Components/dxMap/Types/#MapProvider') supported by our controls, such as Google or GoogleStatic.
 
 [/important]
+
+Each provider offers different functionality that you can integrate. Refer to the following examples to learn about functionality offered by Google Maps:
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-map-autocomplete-functionality-for-addresses"
+}
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-map-add-draggable-markers"
+}
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-map-add-marker-with-label"
+}

@@ -25,13 +25,13 @@ The processed task.
 The default HTML element of the processed task.
 
 ##### field(item.taskPosition): Object
-The task's position.
+Task position.
 
 ##### field(item.taskResources): Array<Object>
-The task's resources.
+Task resources.
 
 ##### field(item.taskSize): Object
-The task's size.
+Task size.
 
 ##### return: String | Element | jQuery
 #include common-template-return-value
@@ -39,6 +39,12 @@ The task's size.
 ---
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/TaskTemplate/"
+}
+
+To learn how to display current and planned tasks in the Gantt chart area with **taskContentTemplate**, refer to the following example:
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-gantt-planned-vs-actual-tasks"
 }
 
 ---

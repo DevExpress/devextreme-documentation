@@ -19,7 +19,7 @@ A list of time zones to get time zone objects. Use an array of TZ identifiers fr
 ---
 The **getTimeZones** method returns time zone data that is accurate for a specific date. Implement the method to get historical daylight savings data.
 
-The default value of the **timeZones** parameter returns the entire list of IANA time zone objects, which includes almost 600 time zones. To get a list of specific time zones, pass a string array to the **timeZones** property with TZ identifiers. For example, `["America/Los_Angeles"]` will return data for the America/Los_Angeles time zone.
+If you do not pass the **timeZones** parameter, the method returns the entire list of IANA time zone objects, which includes almost 600 time zones. To get a list of specific time zones, pass a string array to the **timeZones** property with TZ identifiers. For example, `["America/Los_Angeles"]` will return data for the America/Los_Angeles time zone.
 
 The following code illustrates how to use this method:
 

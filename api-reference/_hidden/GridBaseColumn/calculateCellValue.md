@@ -366,7 +366,7 @@ To invoke the default behavior, call the **defaultCalculateCellValue** function 
 
 - The `this` keyword refers to the column's configuration.
 
-- **calculateCellValue** is a [getter](/concepts/70%20Data%20Binding/5%20Data%20Layer/9%20Getters%20And%20Setters '/Documentation/Guide/Data_Binding/Data_Layer/#Getters_And_Setters'). If you implement the [getCombinedFilter(returnDataField)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/getCombinedFilter(returnDataField).md '{basewidgetpath}/Methods/#getCombinedFilterreturnDataField') method, pass `false` to the **returnDataField** paramter. Alternatively, utilize [getCombinedFilter()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/getCombinedFilter().md '{basewidgetpath}/Methods/#getCombinedFilter') instead.
+- **calculateCellValue** is a [getter](/concepts/70%20Data%20Binding/5%20Data%20Layer/9%20Getters%20And%20Setters '/Documentation/Guide/Data_Binding/Data_Layer/#Getters_And_Setters'). If you implement the [getCombinedFilter(returnDataField)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/getCombinedFilter(returnDataField).md '{basewidgetpath}/Methods/#getCombinedFilterreturnDataField') method, pass `false` to the **returnDataField** parameter. Alternatively, use [getCombinedFilter()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/getCombinedFilter().md '{basewidgetpath}/Methods/#getCombinedFilter') instead.
 
 [/note]
 

@@ -9,4 +9,4 @@ type: Object
 A prompt for the AI model.
 
 ---
-Most AI services support a prompt that contains two fields: a system message and a user message. The system message directs the AI model, such as "You are a professional assistant." The user message is the user's request, like "Create a to-do list for today."
+Most AI services support a prompt that contains two fields: a system message and a user message. The system message directs the AI model, such as "You are a professional assistant." The user message is the user's request, such as "Create a to-do list for today."

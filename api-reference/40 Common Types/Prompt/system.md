@@ -1,10 +1,10 @@
 ---
-id: Response.abort
-type: function()
+id: Prompt.system
+type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Direct instructions for the AI model.
 
 ---
 <!-- Description goes here -->

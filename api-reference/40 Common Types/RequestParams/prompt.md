@@ -4,7 +4,7 @@ type: Prompt
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The prompt sent to the AI model.
 
 ---
 <!-- Description goes here -->

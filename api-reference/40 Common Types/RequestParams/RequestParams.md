@@ -6,7 +6,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An object with request parameters for AI service.
 
 ---
 <!-- Description goes here -->

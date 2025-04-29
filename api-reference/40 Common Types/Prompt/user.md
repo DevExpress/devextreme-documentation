@@ -1,10 +1,10 @@
 ---
-id: Prompt.system
+id: Prompt.user
 type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A user message to the AI model.
 
 ---
 <!-- Description goes here -->

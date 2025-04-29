@@ -32,14 +32,14 @@ The following code illustrates how to use this method:
     const timeZonesSpecific = DevExpress.utils.getTimeZones(new Date(2025, 1, 1), ["America/Los_Angeles"]);
     // [ {id: 'America/Los_Angeles', title: '(GMT -08:00) America - Los Angeles', offset: -8} ]
     // ===== or when using modules =====
-    import { getTimeZones } from 'devextreme/time_zone_utils';
+    import { getTimeZones } from "devextreme/common/core/environment";
     const timeZonesToday = getTimeZones();
     const timeZonesSpecific = getTimeZones(new Date(2025, 1, 1), ["America/Los_Angeles"]);
 
 ##### Angular
 
     <!-- tab: app.component.ts -->
-    import { getTimeZones } from 'devextreme/time_zone_utils';
+    import { getTimeZones } from "devextreme-angular/common/core/environment";
     const timeZonesToday = getTimeZones();
     // An array of all 593 time zones on the IANA time zone database
     const timeZonesSpecific = getTimeZones(new Date(2025, 1, 1), ["America/Los_Angeles"]);
@@ -48,7 +48,7 @@ The following code illustrates how to use this method:
 ##### Vue
 
     <!-- tab: App.vue -->
-    import { getTimeZones } from 'devextreme/time_zone_utils';
+    import { getTimeZones } from "devextreme-vue/common/core/environment";
     const timeZonesToday = getTimeZones();
     // An array of all 593 time zones on the IANA time zone database
     const timeZonesSpecific = getTimeZones(new Date(2025, 1, 1), ["America/Los_Angeles"]);
@@ -57,7 +57,7 @@ The following code illustrates how to use this method:
 ##### React
 
     <!-- tab: App.js -->
-    import { getTimeZones } from 'devextreme/time_zone_utils';
+    import { getTimeZones } from "devextreme-react/common/core/environment";
     const timeZonesToday = getTimeZones();
     // An array of all 593 time zones on the IANA time zone database
     const timeZonesSpecific = getTimeZones(new Date(2025, 1, 1), ["America/Los_Angeles"]);

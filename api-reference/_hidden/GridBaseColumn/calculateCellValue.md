@@ -362,9 +362,13 @@ To invoke the default behavior, call the **defaultCalculateCellValue** function 
 
 ---
 
-#include uiwidgets-ref-functioncontext with { 
-    value: "column's configuration"
-}
+[note]
+
+- The `this` keyword refers to the column's configuration.
+
+- **calculateCellValue** is a [getter](/concepts/70%20Data%20Binding/5%20Data%20Layer/9%20Getters%20And%20Setters '/Documentation/Guide/Data_Binding/Data_Layer/#Getters_And_Setters'). If you implement the [getCombinedFilter(returnDataField)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/getCombinedFilter(returnDataField).md '{basewidgetpath}/Methods/#getCombinedFilterreturnDataField') method, pass `false` to the **returnDataField** parameter. Alternatively, use [getCombinedFilter()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/getCombinedFilter().md '{basewidgetpath}/Methods/#getCombinedFilter') instead.
+
+[/note]
 
 #####See Also#####
 - **columns[]**.[customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '{basewidgetpath}/Configuration/columns/#customizeText')

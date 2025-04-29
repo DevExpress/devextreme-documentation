@@ -173,7 +173,7 @@ This function allows you to process user input before it is saved to the data so
 
 ---
 
-The **setCellValue** property forces the component to repaint all items in the edit form. Set [repaintChangesOnly](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/repaintChangesOnly.md '{basewidgetpath}/Configuration/#repaintChangesOnly') to **true** so the component re-renders only the fields with the changed values.
+The **setCellValue** function forces the DataGrid component to repaint all of its items, including buttons. If a repaint makes DataGrid buttons unresponsive, set [repaintChangesOnly](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/repaintChangesOnly.md '{basewidgetpath}/Configuration/#repaintChangesOnly') to **true** so the component re-renders only the fields with the changed values.
 
 To perform asynchronous operations in the **setCellValue** function, return a promise from it. The following code uses this technique to get the `Tax` value from the server when the `State` value is changed:
 

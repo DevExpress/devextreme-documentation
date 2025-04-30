@@ -1,10 +1,10 @@
 ---
-id: _ui_chat_MessageUpdatedEvent
 module: ui/chat
-export: MessageUpdatedEvent
+export: MessageEditCanceledEvent
 type: Object
 inherits: EventInfo
-references: dxChat.Options.onMessageUpdated
+references: dxChat.Options.onMessageEditCanceled
+uid: ui/chat:MessageEditCanceledEvent
 ---
 ---
 ##### shortDescription

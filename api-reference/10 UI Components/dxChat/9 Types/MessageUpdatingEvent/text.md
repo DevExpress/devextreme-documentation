@@ -1,6 +1,6 @@
 ---
-id: _ui_chat_MessageUpdatedEvent.text
 type: String
+uid: ui/chat:MessageUpdatingEvent.text
 ---
 ---
 ##### shortDescription

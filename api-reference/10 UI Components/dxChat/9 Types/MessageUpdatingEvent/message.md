@@ -1,6 +1,6 @@
 ---
-id: _ui_chat_MessageUpdatingEvent.message
 type: Message
+uid: ui/chat:MessageUpdatingEvent.message
 ---
 ---
 ##### shortDescription

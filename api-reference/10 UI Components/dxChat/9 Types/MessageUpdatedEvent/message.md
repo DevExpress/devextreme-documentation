@@ -1,6 +1,6 @@
 ---
-id: _ui_chat_MessageEditCanceledEvent.message
 type: Message
+uid: ui/chat:MessageUpdatedEvent.message
 ---
 ---
 ##### shortDescription

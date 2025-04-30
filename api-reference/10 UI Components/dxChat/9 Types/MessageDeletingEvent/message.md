@@ -1,6 +1,6 @@
 ---
-id: _ui_chat_MessageDeletingEvent.message
 type: Message
+uid: ui/chat:MessageDeletingEvent.message
 ---
 ---
 ##### shortDescription

@@ -1,10 +1,10 @@
 ---
-id: _ui_chat_MessageEditingStartEvent
 module: ui/chat
-export: MessageEditingStartEvent
+export: MessageUpdatingEvent
 type: Object
 inherits: AsyncCancelable,EventInfo
-references: dxChat.Options.onMessageEditingStart
+references: dxChat.Options.onMessageUpdating
+uid: ui/chat:MessageUpdatingEvent
 ---
 ---
 ##### shortDescription

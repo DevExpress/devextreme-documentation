@@ -2,6 +2,7 @@
 id: AIToolbarItem
 module: ui/html_editor
 export: AIToolbarItem
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

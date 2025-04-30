@@ -3,6 +3,7 @@ id: AICustomCommand
 module: ui/html_editor
 export: AICustomCommand
 inherits: AICommandBase
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

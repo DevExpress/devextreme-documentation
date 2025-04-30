@@ -500,6 +500,19 @@ Refer to the following table for detailed information about each component's acc
             <td class="dx-table-row__center icon-success"></td>
         </tr>
         <tr>
+            <td><a href="/Documentation/Guide/UI_Components/Stepper/Accessibility/">Stepper</a></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+        </tr>
+        <tr>
             <td><a href="/Documentation/Guide/UI_Components/Switch/Accessibility/">Switch</a></td>
             <td class="dx-table-row__center icon-success"></td>
             <td class="dx-table-row__center icon-success"></td>

@@ -1,8 +1,6 @@
 ---
-id: AIToolbarItem
-module: ui/html_editor
-export: AIToolbarItem
-generateTypeLink: 
+id: dxChat.messageUpdating
+type: eventType
 ---
 ---
 ##### shortDescription

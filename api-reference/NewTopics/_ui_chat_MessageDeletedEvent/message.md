@@ -1,8 +1,6 @@
 ---
-id: AIToolbarItem
-module: ui/html_editor
-export: AIToolbarItem
-generateTypeLink: 
+id: _ui_chat_MessageDeletedEvent.message
+type: Message
 ---
 ---
 ##### shortDescription

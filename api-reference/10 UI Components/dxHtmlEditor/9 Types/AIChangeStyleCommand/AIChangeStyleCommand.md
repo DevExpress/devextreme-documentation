@@ -5,6 +5,7 @@ export: AIChangeStyleCommand
 acceptValues: 'changeStyle'
 type: AICommandBase
 inherits: AICommandBase
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

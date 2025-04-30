@@ -5,6 +5,7 @@ type: Object
 inherits: AsyncCancelable,EventInfo
 references: dxChat.Options.onMessageEditingStart
 uid: ui/chat:MessageEditingStartEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

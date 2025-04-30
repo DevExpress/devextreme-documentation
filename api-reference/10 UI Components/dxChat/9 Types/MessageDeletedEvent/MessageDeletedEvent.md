@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 references: dxChat.Options.onMessageDeleted
 uid: ui/chat:MessageDeletedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

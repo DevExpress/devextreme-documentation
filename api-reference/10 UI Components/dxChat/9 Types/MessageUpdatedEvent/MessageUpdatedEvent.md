@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 references: dxChat.Options.onMessageUpdated
 uid: ui/chat:MessageUpdatedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: AsyncCancelable,EventInfo
 references: dxChat.Options.onMessageUpdating
 uid: ui/chat:MessageUpdatingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 references: dxChat.Options.onMessageEditCanceled
 uid: ui/chat:MessageEditCanceledEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

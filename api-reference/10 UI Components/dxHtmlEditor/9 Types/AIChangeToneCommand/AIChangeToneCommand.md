@@ -5,6 +5,7 @@ export: AIChangeToneCommand
 acceptValues: 'changeTone'
 type: AICommandBase
 inherits: AICommandBase
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

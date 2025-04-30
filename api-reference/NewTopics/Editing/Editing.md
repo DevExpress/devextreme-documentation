@@ -1,8 +1,8 @@
 ---
-id: AIToolbarItem
-module: ui/html_editor
-export: AIToolbarItem
-generateTypeLink: 
+id: Editing
+module: ui/chat
+export: Editing
+type: Object
 ---
 ---
 ##### shortDescription

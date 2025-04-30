@@ -294,12 +294,72 @@
       "react": "_ui_chat_DisposingEvent",
       "vue": "Dx_ui_chat_DisposingEvent"
     },
+    "_ui_chat_MessageDeletedEvent": {
+      "angular": "dxo-ui-chat--message-deleted-event",
+      "react": "_ui_chat_MessageDeletedEvent",
+      "vue": "Dx_ui_chat_MessageDeletedEvent"
+    },
+    "_ui_chat_MessageDeletedEvent.message": {
+      "angular": "dxo-message",
+      "react": "Message",
+      "vue": "DxMessage"
+    },
+    "_ui_chat_MessageDeletingEvent": {
+      "angular": "dxo-ui-chat--message-deleting-event",
+      "react": "_ui_chat_MessageDeletingEvent",
+      "vue": "Dx_ui_chat_MessageDeletingEvent"
+    },
+    "_ui_chat_MessageDeletingEvent.message": {
+      "angular": "dxo-message",
+      "react": "Message",
+      "vue": "DxMessage"
+    },
+    "_ui_chat_MessageEditCanceledEvent": {
+      "angular": "dxo-ui-chat--message-edit-canceled-event",
+      "react": "_ui_chat_MessageEditCanceledEvent",
+      "vue": "Dx_ui_chat_MessageEditCanceledEvent"
+    },
+    "_ui_chat_MessageEditCanceledEvent.message": {
+      "angular": "dxo-message",
+      "react": "Message",
+      "vue": "DxMessage"
+    },
+    "_ui_chat_MessageEditingStartEvent": {
+      "angular": "dxo-ui-chat--message-editing-start-event",
+      "react": "_ui_chat_MessageEditingStartEvent",
+      "vue": "Dx_ui_chat_MessageEditingStartEvent"
+    },
+    "_ui_chat_MessageEditingStartEvent.message": {
+      "angular": "dxo-message",
+      "react": "Message",
+      "vue": "DxMessage"
+    },
     "_ui_chat_MessageEnteredEvent": {
       "angular": "dxo-ui-chat--message-entered-event",
       "react": "_ui_chat_MessageEnteredEvent",
       "vue": "Dx_ui_chat_MessageEnteredEvent"
     },
     "_ui_chat_MessageEnteredEvent.message": {
+      "angular": "dxo-message",
+      "react": "Message",
+      "vue": "DxMessage"
+    },
+    "_ui_chat_MessageUpdatedEvent": {
+      "angular": "dxo-ui-chat--message-updated-event",
+      "react": "_ui_chat_MessageUpdatedEvent",
+      "vue": "Dx_ui_chat_MessageUpdatedEvent"
+    },
+    "_ui_chat_MessageUpdatedEvent.message": {
+      "angular": "dxo-message",
+      "react": "Message",
+      "vue": "DxMessage"
+    },
+    "_ui_chat_MessageUpdatingEvent": {
+      "angular": "dxo-ui-chat--message-updating-event",
+      "react": "_ui_chat_MessageUpdatingEvent",
+      "vue": "Dx_ui_chat_MessageUpdatingEvent"
+    },
+    "_ui_chat_MessageUpdatingEvent.message": {
       "angular": "dxo-message",
       "react": "Message",
       "vue": "DxMessage"
@@ -9144,6 +9204,11 @@
       "react": "DayHeaderFormat",
       "vue": "DxDayHeaderFormat"
     },
+    "dxChatOptions.editing": {
+      "angular": "dxo-editing",
+      "react": "Editing",
+      "vue": "DxEditing"
+    },
     "dxChatOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"
     },
@@ -9172,8 +9237,26 @@
     "dxChatOptions.onInitialized": {
       "vue": "@initialized"
     },
+    "dxChatOptions.onMessageDeleted": {
+      "vue": "@message-deleted"
+    },
+    "dxChatOptions.onMessageDeleting": {
+      "vue": "@message-deleting"
+    },
+    "dxChatOptions.onMessageEditCanceled": {
+      "vue": "@message-edit-canceled"
+    },
+    "dxChatOptions.onMessageEditingStart": {
+      "vue": "@message-editing-start"
+    },
     "dxChatOptions.onMessageEntered": {
       "vue": "@message-entered"
+    },
+    "dxChatOptions.onMessageUpdated": {
+      "vue": "@message-updated"
+    },
+    "dxChatOptions.onMessageUpdating": {
+      "vue": "@message-updating"
     },
     "dxChatOptions.onOptionChanged": {
       "vue": "@option-changed"
@@ -21323,6 +21406,12 @@
       "angular": "dxo-author",
       "react": "Author",
       "vue": "DxAuthor"
+    },
+    "message.isDeleted": {
+      "vue": "is-deleted"
+    },
+    "message.isEdited": {
+      "vue": "is-edited"
     },
     "nativeEventInfo": {
       "angular": "dxo-native-event-info",

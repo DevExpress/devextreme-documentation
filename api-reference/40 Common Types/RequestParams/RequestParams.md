@@ -3,7 +3,6 @@ id: RequestParams
 module: common/ai-integration
 export: RequestParams
 type: Object
-generateTypeLink: 
 ---
 ---
 ##### shortDescription

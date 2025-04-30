@@ -3,7 +3,6 @@ id: Response
 module: common/ai-integration
 export: Response
 type: Object
-generateTypeLink: 
 ---
 ---
 ##### shortDescription

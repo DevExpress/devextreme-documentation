@@ -3,7 +3,6 @@ id: Prompt
 module: common/ai-integration
 export: Prompt
 type: Object
-generateTypeLink: 
 ---
 ---
 ##### shortDescription

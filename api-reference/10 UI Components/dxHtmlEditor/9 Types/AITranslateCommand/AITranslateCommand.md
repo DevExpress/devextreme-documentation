@@ -5,7 +5,6 @@ export: AITranslateCommand
 acceptValues: 'translate'
 type: AICommandBase
 inherits: AICommandBase
-generateTypeLink: 
 ---
 ---
 ##### shortDescription

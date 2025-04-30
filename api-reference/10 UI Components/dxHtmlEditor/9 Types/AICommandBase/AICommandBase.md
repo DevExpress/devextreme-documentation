@@ -2,6 +2,7 @@
 id: AICommandBase
 module: ui/html_editor
 export: AICommandBase
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

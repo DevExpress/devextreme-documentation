@@ -3,6 +3,7 @@ id: Paging
 module: ui/card_view
 export: Paging
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

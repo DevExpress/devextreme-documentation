@@ -3,6 +3,7 @@ id: SelectionConfiguration
 module: ui/card_view
 export: SelectionConfiguration
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,WithFieldCaptionInfo
 references: dxCardView.Options.onFieldCaptionClick
 uid: ui/card_view:FieldCaptionClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

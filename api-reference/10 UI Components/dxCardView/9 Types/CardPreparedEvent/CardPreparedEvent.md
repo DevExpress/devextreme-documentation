@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,WithCardInfo
 references: dxCardView.Options.onCardPrepared
 uid: ui/card_view:CardPreparedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

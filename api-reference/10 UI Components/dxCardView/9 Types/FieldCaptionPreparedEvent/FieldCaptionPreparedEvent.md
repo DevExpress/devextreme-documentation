@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,WithFieldCaptionInfo
 references: dxCardView.Options.onFieldCaptionPrepared
 uid: ui/card_view:FieldCaptionPreparedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

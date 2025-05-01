@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 references: dxCardView.Options.onEditCanceled
 uid: ui/card_view:EditCanceledEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

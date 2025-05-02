@@ -5,19 +5,19 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether a user can update messages. It is called for each message when defined as a function.
 
 ##### param(options): Object
-<!-- Description goes here -->
+Information about the current message.
 
 ##### field(options.component): dxChat
-<!-- Description goes here -->
+Chat's instance.
 
 ##### field(options.message): Message
-<!-- Description goes here -->
+Message data.
 
 ##### return: Boolean
-<!-- Description goes here -->
+`true` if the message can be updated; otherwise `false`.
 
 ---
-<!-- Description goes here -->
+If you set this property to `true`, a user can edit only their messages.

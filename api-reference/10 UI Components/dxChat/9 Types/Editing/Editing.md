@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Type of the [editing](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#editing) object.
 
 ---
 <!-- Description goes here -->

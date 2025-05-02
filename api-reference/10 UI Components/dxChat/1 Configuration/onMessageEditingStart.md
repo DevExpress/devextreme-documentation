@@ -5,10 +5,10 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before a message switches to the editing state.
 
 ##### param(e): ui/chat:MessageEditingStartEvent
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean | Promise<Boolean>
 <!-- Description goes here -->

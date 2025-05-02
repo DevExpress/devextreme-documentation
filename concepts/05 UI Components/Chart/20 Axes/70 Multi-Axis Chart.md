@@ -308,7 +308,7 @@ All value axes in the Chart are synchronized by default, but you can explicitly 
 
 [note]
 
-- Multi-axis charts do not support [zooming and panning](/Documentation/Guide/UI_Components/Chart/Zooming_and_Panning/). You can define both [visualRange](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/visualRange/) and [wholeRange](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/wholeRange/) in all [valueAxis[]](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/) objects to get correct zooming and panning behavior. In this case, Chart may display value ranges incorrectly.
+- Multi-axis charts do not support [zooming and panning](/Documentation/Guide/UI_Components/Chart/Zooming_and_Panning/). If you want to change visual ranges after initialization, modify [valueAxis](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/visualRange/).[visualRange](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/visualRange/) or [argumentAxis](/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/).[visualRange](/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/visualRange/).
 - Multi-axis charts do not support [resetVisualRange()](/Documentation/ApiReference/UI_Components/dxChart/Methods/#resetVisualRange).
 
 [/note]

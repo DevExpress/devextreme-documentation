@@ -2,7 +2,7 @@ Zooming and panning is an efficient way to navigate a chart that contains many s
 
 [note]
 
-[Multi-axis charts](/Documentation/Guide/UI_Components/Chart/Axes/Multi-Axis_Chart/) do not support zooming and panning. As a workaround, you can define both [visualRange](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/visualRange/) and [wholeRange](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/wholeRange/) in all [valueAxis[]](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/) objects to get correct zooming and panning behavior. In this case, Chart may display value ranges incorrectly.
+[Multi-axis charts](/Documentation/Guide/UI_Components/Chart/Axes/Multi-Axis_Chart/) do not support zooming and panning. You can define both [visualRange](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/visualRange/) and [wholeRange](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/wholeRange/) in all [valueAxis[]](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/) objects to get correct zooming and panning behavior. In this case, Chart may display value ranges incorrectly.
 
 [/note]
 

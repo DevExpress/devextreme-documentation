@@ -5,6 +5,12 @@ id: dxChart.resetVisualRange()
 ##### shortDescription
 Resets the visual ranges of both axes to the data range or to the whole range if it is within the data range.
 
+[note]
+
+**resetVisualRange()** does not support [multi-axis charts](/Documentation/Guide/UI_Components/Chart/Axes/Multi-Axis_Chart/).
+
+[/note]
+
 ---
 #####See Also#####
 - [Visual and Whole Ranges](/concepts/05%20UI%20Components/Chart/20%20Axes/03%20Visual%20and%20Whole%20Ranges.md '/Documentation/Guide/UI_Components/Chart/Axes/Visual_and_Whole_Ranges/')

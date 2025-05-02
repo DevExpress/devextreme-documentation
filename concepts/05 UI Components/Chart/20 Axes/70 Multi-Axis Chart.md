@@ -306,6 +306,13 @@ All value axes in the Chart are synchronized by default, but you can explicitly 
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/MultipleAxes/"
 }
 
+[note]
+
+- Multi-axis charts do not support [zooming and panning](/Documentation/Guide/UI_Components/Chart/Zooming_and_Panning/). As a workaround, you can define both [visualRange](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/visualRange/) and [wholeRange](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/wholeRange/) in all [valueAxis[]](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/) objects to get correct zooming and panning behavior. In this case, Chart may display value ranges incorrectly.
+- Multi-axis charts do not support [resetVisualRange()](/Documentation/ApiReference/UI_Components/dxChart/Methods/#resetVisualRange).
+
+[/note]
+
 #####See Also#####
 - [Multi-Pane Chart](/concepts/05%20UI%20Components/Chart/40%20Panes/10%20Multi-Pane%20Chart.md '/Documentation/Guide/UI_Components/Chart/Panes/Multi-Pane_Chart/')
 - [Limit and Relocate the Axes](/concepts/05%20UI%20Components/Chart/20%20Axes/40%20Limit%20and%20Relocate%20the%20Axes.md '/Documentation/Guide/UI_Components/Chart/Axes/Limit_and_Relocate_the_Axes/')

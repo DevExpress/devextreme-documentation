@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before a message switches to the editing state.
 
 ---
-<!-- Description goes here -->
+Main article: [onMessageEditingStart](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#onMessageEditingStart)
+
+#####See Also#####
+#include common-link-handleevents

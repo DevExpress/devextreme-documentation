@@ -4,7 +4,7 @@ type: Boolean
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Marks a message as deleted in the UI.
 
 ---
 <!-- Description goes here -->

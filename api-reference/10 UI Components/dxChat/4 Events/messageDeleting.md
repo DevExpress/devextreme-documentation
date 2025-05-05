@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before a message is deleted.
 
 ---
-<!-- Description goes here -->
+Main article: [onMessageDeleting](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#onMessageDeleting)
+
+#####See Also#####
+#include common-link-handleevents

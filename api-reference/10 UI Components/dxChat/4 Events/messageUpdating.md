@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before a message was updated.
 
 ---
-<!-- Description goes here -->
+Main article: [onMessageUpdating](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#onMessageUpdating)
+
+#####See Also#####
+#include common-link-handleevents

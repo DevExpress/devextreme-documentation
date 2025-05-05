@@ -11,16 +11,16 @@ A function that is executed before a message switches to the editing state.
 Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean | Promise<Boolean>
-<!-- Description goes here -->
+Allows you to cancel message editing.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.message): Message
-<!-- Description goes here -->
+The data of a message to be edited.
 
 ---
 <!-- Description goes here -->

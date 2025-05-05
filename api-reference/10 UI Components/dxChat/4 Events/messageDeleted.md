@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised after a message is deleted.
 
 ---
-<!-- Description goes here -->
+Main article: [onMessageDeleted](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#onMessageDeleted)
+
+#####See Also#####
+#include common-link-handleevents

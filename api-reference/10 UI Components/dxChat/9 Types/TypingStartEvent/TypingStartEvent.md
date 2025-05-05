@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-The type of the [typingStart]({basewidgetpath}/Events/#typingStart) event handler's argument.
+The argument type in the [typingStart]({basewidgetpath}/Events/#typingStart).
 
 ---
 <!-- Description goes here -->

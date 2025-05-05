@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-A function that is executed after a message was updated in the data source.
+A function that is executed after a message was edited in the UI.
 
 ##### param(e): ui/chat:MessageUpdatedEvent
 Information about the event that caused the function's execution.

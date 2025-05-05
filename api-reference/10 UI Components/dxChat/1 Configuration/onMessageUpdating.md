@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-A function that is executed before a message is updated in the data source.
+A function that is executed before a message is edited in the UI.
 
 ##### param(e): ui/chat:MessageUpdatingEvent
 Information about the event that caused the function's execution.

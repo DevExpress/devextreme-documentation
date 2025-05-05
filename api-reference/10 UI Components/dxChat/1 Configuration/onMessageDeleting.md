@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-A function that is executed before a message is removed from the data source.
+A function that is executed before a message is removed from the UI.
 
 ##### param(e): ui/chat:MessageDeletingEvent
 Information about the event that caused the function's execution.

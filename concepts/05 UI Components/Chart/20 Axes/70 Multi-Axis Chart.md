@@ -308,8 +308,8 @@ All value axes in the Chart are synchronized by default, but you can explicitly 
 
 [note]
 
-- Multi-axis charts do not support [zooming and panning](/Documentation/Guide/UI_Components/Chart/Zooming_and_Panning/). If you want to change visual ranges after initialization, modify [valueAxis](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/visualRange/).[visualRange](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/visualRange/) or [argumentAxis](/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/).[visualRange](/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/visualRange/).
-- Multi-axis charts do not support [resetVisualRange()](/Documentation/ApiReference/UI_Components/dxChart/Methods/#resetVisualRange).
+- Multi-axis charts do not support [zooming and panning](/concepts/05%20UI%20Components/Chart/95%20Zooming%20and%20Panning '/Documentation/Guide/UI_Components/Chart/Zooming_and_Panning/'). If you want to change visual ranges after initialization, modify [valueAxis](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/visualRange '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/visualRange/').[visualRange](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/visualRange '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/visualRange/') or [argumentAxis](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/').[visualRange](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/visualRange '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/visualRange/').
+- Multi-axis charts do not support [resetVisualRange()](/api-reference/10%20UI%20Components/dxChart/3%20Methods/resetVisualRange().md '/Documentation/ApiReference/UI_Components/dxChart/Methods/#resetVisualRange').
 
 [/note]
 

@@ -6790,6 +6790,16 @@
     "dateBoxBaseOptions.useMaskBehavior": {
       "vue": "use-mask-behavior"
     },
+    "dateNavigatorItemProperties": {
+      "angular": "dxo-date-navigator-item-properties",
+      "react": "DateNavigatorItemProperties",
+      "vue": "DxDateNavigatorItemProperties"
+    },
+    "dateNavigatorItemProperties.items": {
+      "angular": "dxi-item",
+      "react": "Item",
+      "vue": "DxItem"
+    },
     "disabledDate": {
       "angular": "dxo-disabled-date",
       "react": "DisabledDate",
@@ -7405,6 +7415,9 @@
       "angular": "dxo-element-attr",
       "react": "ElementAttr",
       "vue": "DxElementAttr"
+    },
+    "dxButtonGroupOptions": {
+      "vue": "dx-button-group-options"
     },
     "dxButtonGroupOptions.buttonTemplate": {
       "vue": "button-template"
@@ -17126,6 +17139,11 @@
     "dxSchedulerOptions.timeZone": {
       "vue": "time-zone"
     },
+    "dxSchedulerOptions.toolbar": {
+      "angular": "dxo-toolbar",
+      "react": "Toolbar",
+      "vue": "DxToolbar"
+    },
     "dxSchedulerOptions.useDropDownViewSwitcher": {
       "vue": "use-drop-down-view-switcher"
     },
@@ -17198,6 +17216,21 @@
     },
     "dxSchedulerScrolling": {
       "vue": "dx-scheduler-scrolling"
+    },
+    "dxSchedulerToolbar": {
+      "angular": "dxo-scheduler-toolbar",
+      "react": "DxSchedulerToolbar",
+      "vue": "DxSchedulerToolbar"
+    },
+    "dxSchedulerToolbar.items": {
+      "angular": "dxi-item",
+      "react": "Item",
+      "vue": "DxItem"
+    },
+    "dxSchedulerToolbarItem": {
+      "angular": "dxo-scheduler-toolbar-item",
+      "react": "DxSchedulerToolbarItem",
+      "vue": "DxSchedulerToolbarItem"
     },
     "dxScrollableOptions.bounceEnabled": {
       "vue": "bounce-enabled"
@@ -20201,6 +20234,12 @@
     },
     "enums.ScaleBreakLineStyle": {
       "vue": "scale-break-line-style"
+    },
+    "enums.SchedulerPredefinedDateNavigatorItem": {
+      "vue": "scheduler-predefined-date-navigator-item"
+    },
+    "enums.SchedulerPredefinedToolbarItem": {
+      "vue": "scheduler-predefined-toolbar-item"
     },
     "enums.ScrollbarMode": {
       "vue": "scrollbar-mode"

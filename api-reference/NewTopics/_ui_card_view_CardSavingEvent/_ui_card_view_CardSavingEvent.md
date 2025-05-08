@@ -1,0 +1,14 @@
+---
+id: _ui_card_view_CardSavingEvent
+module: ui/card_view
+export: CardSavingEvent
+type: Object
+inherits: EventInfo,Cancelable
+references: dxCardView.Options.onCardSaving
+---
+---
+##### shortDescription
+<!-- Description goes here -->
+
+---
+<!-- Description goes here -->

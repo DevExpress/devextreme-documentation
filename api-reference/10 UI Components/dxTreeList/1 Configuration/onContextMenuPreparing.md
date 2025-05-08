@@ -31,7 +31,7 @@ The row [properties](/api-reference/10%20UI%20Components/dxTreeList/6%20Row '/Do
 ##### field(e.rowIndex): Number
 The index of the row on which the context menu is invoked. Refer to the following help topic for more information: [Column and Row Indexes](/concepts/05%20UI%20Components/TreeList/10%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_and_Row_Indexes/').
 
-##### field(e.target): String
+##### field(e.target): Enums.GridsContextMenuTarget
 The name of the element on which the context menu is invoked: *"header"*, *"content"*, or *"footer"*. This field is read-only.
 
 ##### field(e.targetElement): DxElement

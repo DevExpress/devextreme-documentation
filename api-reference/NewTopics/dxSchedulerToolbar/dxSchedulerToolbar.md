@@ -1,6 +1,8 @@
 ---
-type: Enums.ToolbarItemLocation
-uid: ui/scheduler:ToolbarItem.location
+id: dxSchedulerToolbar
+module: ui/scheduler
+export: Toolbar
+type: Object
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,7 @@
 ---
-type: DateNavigatorItemProperties | Object
-uid: ui/scheduler:ToolbarItem.options
+id: dxSchedulerToolbar.visible
+type: Boolean | undefined
+default: undefined
 ---
 ---
 ##### shortDescription

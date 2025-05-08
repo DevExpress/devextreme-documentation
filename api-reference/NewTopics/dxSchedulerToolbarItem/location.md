@@ -1,7 +1,6 @@
 ---
-type: Boolean
-default: false
-uid: ui/scheduler:Toolbar.disabled
+id: dxSchedulerToolbarItem.location
+type: Enums.ToolbarItemLocation
 ---
 ---
 ##### shortDescription

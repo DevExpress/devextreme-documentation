@@ -1,6 +1,6 @@
 ---
+id: DateNavigatorItemProperties.items
 type: Array<dxButtonGroupItem, Enums.SchedulerPredefinedDateNavigatorItem>
-uid: ui/scheduler:DateNavigatorItemProperties.items
 ---
 ---
 ##### shortDescription

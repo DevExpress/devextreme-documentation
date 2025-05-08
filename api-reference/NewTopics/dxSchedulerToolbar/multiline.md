@@ -1,8 +1,7 @@
 ---
-module: ui/scheduler
-export: Toolbar
-type: Object
-uid: ui/scheduler:Toolbar
+id: dxSchedulerToolbar.multiline
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

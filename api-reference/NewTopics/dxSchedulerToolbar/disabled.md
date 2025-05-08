@@ -1,7 +1,7 @@
 ---
+id: dxSchedulerToolbar.disabled
 type: Boolean
 default: false
-uid: ui/scheduler:Toolbar.multiline
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
 ---
+id: dxSchedulerToolbarItem.name
 type: Enums.SchedulerPredefinedToolbarItem
-uid: ui/scheduler:ToolbarItem.name
 ---
 ---
 ##### shortDescription

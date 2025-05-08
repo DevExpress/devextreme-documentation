@@ -13,3 +13,31 @@ Configures editing.
 - Set the [Store](/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores)'s **key** property to `"id"` to ensure editing works properly.
 
 [/note]
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $('#chat').dxChat({
+        items: initialMessages,
+        editing: {
+            allowUpdating: true,
+            allowDeleting: true
+        },
+        onMessageEntered({ message }) {
+            e.component.renderMessage(message);
+        },
+        onMessageUpdated(e) {
+            const message = e.message;
+            message.text = e.text;
+            message.isEdited = true;
+            initialMessages[e.message.id] = message;
+            e.component.repaint();
+        },
+        onMessageDeleted(e) {
+            const message = e.message;
+            message.isDeleted = true;
+            initialMessages[e.message.id] = message;
+            e.component.repaint();
+        },
+    });

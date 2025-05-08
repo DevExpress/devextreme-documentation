@@ -17,7 +17,7 @@ To access user information from any part of the application, use the `useAuth` h
     </tr>
     <tr>
         <td>loading</td>
-        <td>A boolean value that is <b>true</b> while user information is being loaded (an HTTP request is in progress).</td>
+        <td>A Boolean value that is <b>true</b> while user information is being loaded (an HTTP request is in progress).</td>
     </tr>
 </table>
 

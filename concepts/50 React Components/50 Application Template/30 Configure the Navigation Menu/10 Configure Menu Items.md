@@ -1,6 +1,6 @@
 To configure navigation menu items, edit `src\app-navigation.js`.
 
-Each item configuration can have the following fields:
+Each item configuration has the following fields:
 
 - **text** - the item's text
 

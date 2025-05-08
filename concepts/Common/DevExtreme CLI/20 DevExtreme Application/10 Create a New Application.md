@@ -61,7 +61,7 @@ Specifies the DevExtreme layout. Available values:
     See the following topic to review both layouts: [Layouts](/concepts/50%20React%20Components/50%20Application%20Template/10%20Layouts.md '/Documentation/Guide/React_Components/Application_Template/#Layouts').
 
 * `--empty`     
-Specifies whether to skip sample view generation. Available values:
+Specifies whether to skip sample data generation. Available values:
     * `false` (default)
     * `true` 
 
@@ -71,12 +71,12 @@ Specifies whether to create an application template with TypeScript support. Ava
     * `typescript`
 
 * `--app-type`
-Specifies whether to create an application using [Next.js](https://nextjs.org/) or [Vite](https://vite.dev/). Available values:
+Specifies whether to create an application with [Next.js](https://nextjs.org/) or [Vite](https://vite.dev/). Available values:
     * `nextjs`
     * `vite`
 
 * `--transpiler`
-Specifies whether to use [Babel](https://babeljs.io/) or [SWC](https://swc.rs/) as a compiler. Used only when `--app-type` is `vite`. Available values:
+Specifies whether to use [Babel](https://babeljs.io/) or [SWC](https://swc.rs/) as a transpiler. Used only when `--app-type` is `vite`. Available values:
     * `babel`
     * `swc`
 

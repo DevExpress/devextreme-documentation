@@ -9,7 +9,7 @@ Each function returns an object with the following fields:
     </tr>
     <tr>
         <td>isOk</td>
-        <td>A boolean value that represents whether the request was successful.</td>
+        <td>A Boolean value that represents whether the request was successful.</td>
     </tr>
     <tr>
         <td>message</td>
@@ -17,6 +17,6 @@ Each function returns an object with the following fields:
     </tr>
     <tr>
         <td>data</td>
-        <td>The result of the request (user information).</td>
+        <td>The request result (user information).</td>
     </tr>
 </table>

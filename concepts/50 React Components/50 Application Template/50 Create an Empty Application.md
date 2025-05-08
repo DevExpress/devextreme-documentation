@@ -1,4 +1,4 @@
-To generate an empty application without sample views, specify the `--empty` flag:
+To generate an application without sample data, specify the `--empty` flag. The application's layout remains the same.
 
     npx devextreme-cli new react-app app-name --empty
 

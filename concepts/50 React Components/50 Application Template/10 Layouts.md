@@ -1,4 +1,4 @@
-The application template includes two layouts. The only difference between them is what type of sidebar is implemented: outer (default) or inner.
+The application template includes two layouts. The only difference between them is what type of toolbar is implemented: outer (default) or inner.
 
 **Outer toolbar**
 <br/>

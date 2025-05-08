@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,WithFieldValueInfo
 references: dxCardView.Options.onFieldValuePrepared
 uid: ui/card_view:FieldValuePreparedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 references: dxCardView.Options.onCardUpdated
 uid: ui/card_view:CardUpdatedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

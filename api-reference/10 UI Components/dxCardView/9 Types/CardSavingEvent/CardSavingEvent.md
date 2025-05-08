@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,Cancelable
 references: dxCardView.Options.onCardSaving
 uid: ui/card_view:CardSavingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

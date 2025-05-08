@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 references: dxCardView.Options.onCardRemoved
 uid: ui/card_view:CardRemovedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

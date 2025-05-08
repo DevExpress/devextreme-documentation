@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,Cancelable
 references: dxCardView.Options.onCardInserting
 uid: ui/card_view:CardInsertingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

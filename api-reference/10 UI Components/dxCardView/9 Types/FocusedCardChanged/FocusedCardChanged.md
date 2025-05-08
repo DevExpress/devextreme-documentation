@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo,WithCardInfo
 references: dxCardView.Options.onFocusedCardChanged
 uid: ui/card_view:FocusedCardChanged
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

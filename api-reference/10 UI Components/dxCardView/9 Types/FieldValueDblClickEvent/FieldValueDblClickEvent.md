@@ -5,6 +5,7 @@ type: Object
 inherits: NativeEventInfo,WithFieldValueInfo
 references: dxCardView.Options.onFieldValueDblClick
 uid: ui/card_view:FieldValueDblClickEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

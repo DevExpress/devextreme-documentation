@@ -5,6 +5,7 @@ type: Object
 inherits: EventInfo
 references: dxCardView.Options.onContextMenuPreparing
 uid: ui/card_view:ContextMenuPreparingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

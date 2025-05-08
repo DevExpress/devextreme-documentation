@@ -3,6 +3,7 @@ id: dxCardViewFieldInfo
 module: ui/card_view
 export: FieldInfo
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

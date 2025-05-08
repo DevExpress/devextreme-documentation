@@ -1,4 +1,8 @@
-The DevExtreme React Application Template helps you create a simple React application with a navigation menu and several sample views in a responsive layout (see <a href="https://devexpress.github.io/devextreme-react-template/#/home">live preview</a>).
+The DevExtreme React Application Template allows you to speed up the process of setting up a new React project that integrates the DevExtreme UI library. The template includes multiple components such as [DataGrid](/Documentation/Guide/UI_Components/DataGrid/Overview/), [Form](/Documentation/Guide/UI_Components/Form/Overview/), [TreeView](/Documentation/Guide/UI_Components/TreeView/Getting_Started_with_TreeView/), and more. It includes multiple sample views, as well as placeholder authentication functions for implementing a secure log-in system.
+
+#include btn-open-github with {
+    href: "https://devexpress.github.io/devextreme-react-template/#/home"
+}
 
 <img src="/images/dx-application-templates/react-app-template.png" style="width: 800px;" alt="DevExtreme React Template" />
 

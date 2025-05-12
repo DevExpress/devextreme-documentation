@@ -1,1 +1,0 @@
-To add steps to the component, specify [dataSource](/api-reference/10%20UI%20Components/dxStepper/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#dataSource') or **items[]**.

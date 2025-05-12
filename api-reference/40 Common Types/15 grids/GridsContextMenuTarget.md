@@ -6,7 +6,7 @@ references: ui/data_grid:ContextMenuPreparingEvent.target|ui/tree_list:ContextMe
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a target for triggering context menu.
 
 ---
 <!-- Description goes here -->

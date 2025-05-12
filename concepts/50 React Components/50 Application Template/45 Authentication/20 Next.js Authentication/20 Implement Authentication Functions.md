@@ -1,4 +1,4 @@
-Authentication functions for back-end requests are located in `src\app\actions\auth.jsx`. You must update these functions to make requests to your server, such as to add or verify users.
+Authentication functions for back-end requests are located in `src\app\actions\auth.jsx`. You must update these functions to access your authentication backend to add or verify users.
 
 Each function returns an object with the following fields:
 

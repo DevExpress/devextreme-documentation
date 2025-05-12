@@ -45,6 +45,8 @@ An object with AI response.
     <head>
         <!-- ... -->
         <script type="text/javascript" src="../artifacts/js/dx.ai-integration.js" charset="utf-8"></script>
+        <!-- or if using CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/js/dx.ai-integration.js"></script>
     </head>
 
 ##### Angular

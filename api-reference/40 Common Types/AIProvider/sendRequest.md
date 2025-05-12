@@ -44,7 +44,7 @@ An object with AI response.
     <!-- tab: index.html -->
     <head>
         <!-- ... -->
-        <script type="text/javascript" src="../artifacts/js/dx.ai-integration.debug.js" charset="utf-8"></script>
+        <script type="text/javascript" src="../artifacts/js/dx.ai-integration.js" charset="utf-8"></script>
     </head>
 
 ##### Angular

@@ -22,6 +22,12 @@ This object's constructor accepts an [AIProvider](/api-reference/40%20Common%20T
         aiIntegration,
     });
 
+    <!-- tab: index.html -->
+    <head>
+        <!-- ... -->
+        <script type="text/javascript" src="../artifacts/js/dx.ai-integration.debug.js" charset="utf-8"></script>
+    </head>
+
 ##### Angular
 
     <!-- tab: app.component.ts -->

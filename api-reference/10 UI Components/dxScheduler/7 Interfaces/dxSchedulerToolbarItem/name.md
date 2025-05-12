@@ -4,7 +4,8 @@ type: Enums.SchedulerPredefinedToolbarItem
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the name of the predefined toolbar item.
 
 ---
-<!-- Description goes here -->
+#####See Also#####
+- toolbar.[items](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/)

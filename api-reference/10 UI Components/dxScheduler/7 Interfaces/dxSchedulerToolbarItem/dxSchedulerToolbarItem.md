@@ -62,14 +62,14 @@ Predefined controls appear on the toolbar depending on whether a specific {Widge
 
         <!-- tab: app.component.html -->
         <dx-{widget-name} ... >
-            <dxo-toolbar>
-                <dxi-item name="dateNavigator"></dxi-item>
-                <dxi-item 
+            <dxo-scheduler-toolbar>
+                <dxi-scheduler-toolbar-item name="dateNavigator"></dxi-scheduler-toolbar-item>
+                <dxi-scheduler-toolbar-item 
                     name="today"
                     locateInMenu="auto"
                     location="after">
-                </dxi-item>
-            </dxo-toolbar>
+                </dxi-scheduler-toolbar-item>
+            </dxo-scheduler-toolbar>
         </dx-{widget-name}>
 
     ##### Vue
@@ -140,36 +140,14 @@ Predefined controls appear on the toolbar depending on whether a specific {Widge
 
         <!-- tab: app.component.html -->
         <dx-{widget-name} ... >
-            <dxo-toolbar>
-                <dxi-item>
+            <dxo-scheduler-toolbar>
+                <dxi-scheduler-toolbar-item>
                     <dx-select-box>
                         <!-- SelectBox properties are specified here -->
                     </dx-select-box>
-                </dxi-item>
-            </dxo-toolbar>
+                </dxi-scheduler-toolbar-item>
+            </dxo-scheduler-toolbar>
         </dx-{widget-name}>
-
-        <!-- tab: app.module.ts -->
-        import { BrowserModule } from '@angular/platform-browser';
-        import { NgModule } from '@angular/core';
-        import { AppComponent } from './app.component';
-            
-        import { Dx{WidgetName}Module, DxSelectBoxModule } from 'devextreme-angular';
-            
-        @NgModule({
-            declarations: [
-                AppComponent
-            ],
-            imports: [
-                BrowserModule,
-                Dx{WidgetName}Module,
-                DxSelectBoxModule,
-            ],
-            providers: [ ],
-            bootstrap: [AppComponent]
-        })
-        export class AppModule { }
-
 
     ##### Vue
 

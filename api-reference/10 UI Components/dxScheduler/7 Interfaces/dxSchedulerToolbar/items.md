@@ -4,7 +4,7 @@ type: Array<Enums.SchedulerPredefinedToolbarItem, dxSchedulerToolbarItem>
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures toolbar items.
 
 ---
 <!-- Description goes here -->

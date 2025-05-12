@@ -1,9 +1,9 @@
 ---
-id: dxSchedulerToolbarItem
+id: dxSchedulerToolbar
 module: ui/scheduler
-export: ToolbarItem
-type: dxToolbarItem | Object
-inherits: dxToolbarItem
+export: Toolbar
+type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -5,4 +5,4 @@
 3. [Allowed file extensions](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#allowedFileExtensions)
 4. [Maximum file size](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#maxFileSize)
 
-*Points 3 and 4 are simply a visual representation of the linked properties.*
+*Points 3 and 4 are a visual representation of the linked properties.*

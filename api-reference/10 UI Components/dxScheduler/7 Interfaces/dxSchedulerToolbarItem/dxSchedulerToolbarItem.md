@@ -35,9 +35,9 @@ Predefined controls appear on the toolbar depending on whether a specific {Widge
         </tr>
     </table>
 
-    If you need to customize a predefined control, add an object to the **items[]** array. This object must contain the control's [name](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/#name) and [properties](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/) that you want to customize. If a control does not need customization, simply include its name in the **toolbar**.**items[]** array. 
+    If you need to customize a predefined control, add an object to the **items[]** array. This object must contain the control's [name](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/#name) and [properties](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/) you want to customize. If a control does not need customization, you can include its name in the **toolbar**.**items[]** array. 
 
-    The date navigator has three components: left arrow (*'prev'*), right arrow (*'next'*), and date interval (*'dateInterval'*). You can customize component order.
+    The date navigator has three components: left arrow (*'prev'*), right arrow (*'next'*), and date interval (*'dateInterval'*). You can customize the component order.
 
     The example below adds a date navigator, and customizes the Today button:
 
@@ -117,7 +117,7 @@ Predefined controls appear on the toolbar depending on whether a specific {Widge
     ---
     ##### jQuery
 
-    You can use DevExtreme components as toolbar items. Set the [widget](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/#widget) property to specify the component that you want to use and configure the component's [options](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/#options):
+    You can use DevExtreme components as toolbar items. Set the [widget](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/#widget) property to specify the component you want to use and configure the component's [options](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/#options):
 
         <!--tab: index.js-->
         $(function(){

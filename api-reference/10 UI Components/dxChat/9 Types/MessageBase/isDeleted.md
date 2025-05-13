@@ -1,5 +1,5 @@
 ---
-id: Message.isDeleted
+id: MessageBase.isDeleted
 type: Boolean
 ---
 ---

@@ -5,21 +5,19 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- %shortDescription% -->
+Specifies whether a user can update messages. It is called for each message when defined as a function.
 
 ##### param(options): Object
-<!-- %param(options)% -->
+Information about the current message.
 
 ##### field(options.component): dxChat
-<!-- %field(options.component)% -->
+Chat's instance.
 
 ##### field(options.message): Message
-<!-- %field(options.message)% -->
+Message data.
 
 ##### return: Boolean
-<!-- %return% -->
+`true` if the message can be updated; otherwise `false`.
 
 ---
-<!-- %fullDescription% -->
-
-<!-- import * from 'api-reference\10 UI Components\dxChat\9 Types\Editing\allowUpdating.md' -->
+If you set this property to `true`, a user can edit only their messages.

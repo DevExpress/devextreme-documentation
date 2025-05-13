@@ -1,5 +1,5 @@
 ---
-id: Message.isEdited
+id: TextMessage.isEdited
 type: Boolean
 ---
 ---

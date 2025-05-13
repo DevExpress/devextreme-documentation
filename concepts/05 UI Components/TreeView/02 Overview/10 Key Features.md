@@ -1,5 +1,5 @@
 - **Data Binding**    
-TreeView can load and update data from different [data source](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#dataSource) types. You can define data as [plain or hierarchical](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#dataStructure). If you choose plain data, you can load it in a [virtual mode](/Documentation/Guide/UI_Components/TreeView/Enhance_Performance_on_Large_Datasets/) to enhance performance on large datasets.
+TreeView can load and update data from different [data source](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#dataSource) types. You can define data as [plain or hierarchical](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#dataStructure). If you choose plain data, you can load it in a [virtual mode](/Documentation/Guide/UI_Components/TreeView/Enhance_Performance_on_Large_Datasets/) to improve performance with large datasets.
 
 - **Search**    
 You can enable [search](/Documentation/Guide/UI_Components/TreeView/Search_Nodes/) in the TreeView component, allowing node searches if they are loaded.

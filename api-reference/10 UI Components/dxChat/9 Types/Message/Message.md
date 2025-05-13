@@ -2,8 +2,9 @@
 id: Message
 module: ui/chat
 export: Message
-type: Object
+type: TextMessage | ImageMessage
 generateTypeLink: 
+inherits: TextMessage,ImageMessage
 ---
 ---
 ##### shortDescription

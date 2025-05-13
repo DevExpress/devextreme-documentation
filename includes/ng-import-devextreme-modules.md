@@ -13,7 +13,7 @@ If you use [standalone](https://angular.dev/guide/components) components, import
     })
     export class AppComponent { }
     
-You can also import components specific to your usage, rather than entire modules. For example, the following code snippet imports DataGrid, its columns, and sorting.
+You can also import components specific to your usage, rather than entire modules. In this case, import all the nested components as well. For example, the following code snippet imports DataGrid, its columns, and sorting.
 
 [note] If you use `*dxTemplate`, import `DxTemplateDirective`.
 

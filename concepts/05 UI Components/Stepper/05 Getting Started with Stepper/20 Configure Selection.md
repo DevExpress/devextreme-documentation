@@ -18,11 +18,10 @@ This tutorial uses **onSelectionChanged** to disable steps as users move through
     $(function() {
         $("#stepper").dxStepper({
             // ...
-            onSelectionChanged: (e) => {
-                const newItem = e.addedItems[0];
-                const items = e.component.option('items');
-                const newIndex = items.findIndex((item) => newItem.label === item.label);
-                e.component.option(`items[${newIndex - 1}].disabled`, true);
+            onSelectionChanged: ({ component, addedItems }) => {
+                const items = component.option("items");
+                const newIndex = items.findIndex(item => addedItems[0].label === item.label);
+                component.option(`items[${newIndex - 1}].disabled`, true);
             },
         });
     });

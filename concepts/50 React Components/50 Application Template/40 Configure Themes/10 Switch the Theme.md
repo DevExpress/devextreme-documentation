@@ -8,7 +8,7 @@ For more information about switching themes, refer to the following help topic: 
 
 [/note]
 
-You can switch between themes in the DevExtreme React Template. You can find the theme switcher logic in `src\theme.js`.
+You can switch between themes in the DevExtreme React Template. Review theme switcher logic in `src\theme.js`.
 
 The template uses a main theme for view content and an additional theme ([color swatch](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/55%20Color%20Swatches.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/#Color_Swatches')) for the navigation menu. The corresponding .JSON files are shown below.
 

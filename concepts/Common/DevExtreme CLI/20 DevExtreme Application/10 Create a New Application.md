@@ -66,17 +66,17 @@ Specifies whether to skip sample data generation. Available values:
     * `true` 
 
 * `--template`
-Specifies whether to create an application template with TypeScript support. Available values:
+Specifies the language you can use in the application. Available values:
     * `javascript`
     * `typescript`
 
 * `--app-type`
-Specifies whether to create an application with [Next.js](https://nextjs.org/) or [Vite](https://vite.dev/). Available values:
+Specifies the framework used in the application: [Next.js](https://nextjs.org/) or [Vite](https://vite.dev/). Available values:
     * `nextjs`
     * `vite`
 
 * `--transpiler`
-Specifies whether to use [Babel](https://babeljs.io/) or [SWC](https://swc.rs/) as a transpiler. Used only when `--app-type` is `vite`. Available values:
+Specifies the transpiler: [Babel](https://babeljs.io/) or [SWC](https://swc.rs/). Used only when `--app-type` is `vite`. Available values:
     * `babel`
     * `swc`
 

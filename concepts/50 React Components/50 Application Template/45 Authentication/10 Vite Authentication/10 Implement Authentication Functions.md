@@ -1,4 +1,4 @@
-Authentication functions for back-end requests are located in `src\api\auth.js`. You must update these functions to make requests to your server, such as to add or verify users.
+Authentication functions for back-end requests are located in `src\api\auth.js`. You must update these functions to make requests to your server. For example, server requests can add users or verify their credentials. 
 
 Each function returns an object with the following fields:
 
@@ -9,7 +9,7 @@ Each function returns an object with the following fields:
     </tr>
     <tr>
         <td>isOk</td>
-        <td>A Boolean value that represents whether the request was successful.</td>
+        <td>A Boolean value that indicates whether the request was successful.</td>
     </tr>
     <tr>
         <td>message</td>

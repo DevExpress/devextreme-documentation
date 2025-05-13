@@ -5,7 +5,7 @@ PivotGrid can display data [from various sources](/Documentation/Guide/UI_Compon
 PivotGrid displays [value summaries](/Documentation/Guide/UI_Components/PivotGrid/Summaries/). Choose between [predefined summaries](/Documentation/Guide/UI_Components/PivotGrid/Summaries/#Predefined_Summaries), [aggregate](/Documentation/Guide/UI_Components/PivotGrid/Summaries/#Custom_Aggregate_Function) values, or a implement a [custom summary](/Documentation/Guide/UI_Components/PivotGrid/Summaries/#Custom_Summaries).
 
 - **Customizable Layout**    
-You can enable or disable multiple PivotGrid elements. More details are available in the [Visual Elements](/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/) article.
+You can enable or disable multiple PivotGrid elements. Review the [Visual Elements](/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/) article for more information.
 
 - **Grouping, Sorting, and Filtering**    
 PivotGrid [groups data](/Documentation/Guide/UI_Components/PivotGrid/Grouping/) for header items and fields. [Sort](/Documentation/Guide/UI_Components/PivotGrid/Sorting/) or [filter](/Documentation/Guide/UI_Components/PivotGrid/Filtering/) fields through the UI or programmatically.
@@ -14,4 +14,4 @@ PivotGrid [groups data](/Documentation/Guide/UI_Components/PivotGrid/Grouping/) 
 [Export PivotGrid data to Excel](/Documentation/Guide/UI_Components/PivotGrid/Export/) in XLSX or CSV format and customize the exported cells.
 
 - **Chart Integration**    
-PivotGrid handles large numeric datasets, which can be hard to interpret. For detailed data visualization, [use the Chart component](/Documentation/Guide/UI_Components/PivotGrid/Integration_with_Chart/) that integrates with PivotGrid.
+PivotGrid handles large numeric datasets that can be hard to interpret. For a detailed data visualization, [use the Chart component](/Documentation/Guide/UI_Components/PivotGrid/Integration_with_Chart/) that integrates into PivotGrid.

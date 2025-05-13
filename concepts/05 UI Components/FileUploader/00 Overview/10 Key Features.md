@@ -1,0 +1,8 @@
+- **Uploading Options**  
+[Upload](/Documentation/Guide/UI_Components/FileUploader/Upload_Files/Client-Side_Settings/) files instantly or confirm upload with built-in buttons. Upload files [in chunks](/Documentation/Guide/UI_Components/FileUploader/Upload_Files/Client-Side_Settings/#Chunk_Upload) (requires [server-side setup](https://demos.devexpress.com/ASPNetMvc/Demo/FileUploader/ChunkUploading)) or when an [HTML form is submitted](/Documentation/Guide/UI_Components/FileUploader/Upload_Files/Client-Side_Settings/#Upload_Mode).
+
+- **File Restrictions**  
+[Restrict](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#accept) types of files and specify[allowed file extensions](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#allowedFileExtensions). Set [maximum](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#maxFileSize)/[minimum](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#minFileSize) file size. Allow users to select one file or [multiple](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#multiple) files simultaneously.
+
+- **Validation**  
+All DevExtreme component [validation](/Documentation/Guide/UI_Components/FileUploader/File_Validation/) options are available for FileUploader. Configure [validation errors](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#validationErrors) and check if FileUploader [is dirty](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#isDirty). Files are validated on the client, but [server-side validation](https://demos.devexpress.com/ASPNetMvc/Demo/FileUploader/Validation/) is also necessary.

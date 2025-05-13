@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-Configures the items.
+Configures toolbar items.
 
 ---
 The toolbar can contain the following elements as items:
@@ -37,9 +37,9 @@ Predefined controls appear on the toolbar depending on whether a specific {Widge
 
     If you need to customize a predefined control, add an object to the **items[]** array. This object must contain the control's [name](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/#name) and [properties](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/) that you want to customize. If a control does not need customization, simply include its name in the **toolbar**.**items[]** array. 
 
-    The date navigator has three components: left arrow (*'prev'*), right arrow (*'next'*), and date interval (*'dateInterval'*). Customize their arrangement as desired.
+    The date navigator has three components: left arrow (*'prev'*), right arrow (*'next'*), and date interval (*'dateInterval'*). You can customize component order.
 
-    The example below adds a date navigator, and customizes the Today button,:
+    The example below adds a date navigator, and customizes the Today button:
 
     ---
     ##### jQuery

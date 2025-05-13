@@ -4,7 +4,7 @@ type: Enums.ToolbarItemLocation
 ---
 ---
 ##### shortDescription
-Specifies a location for the item on the toolbar.
+Specifies toolbar item location.
 
 ---
 <!-- Description goes here -->

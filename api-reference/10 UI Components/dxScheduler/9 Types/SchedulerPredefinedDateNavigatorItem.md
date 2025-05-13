@@ -6,7 +6,7 @@ references: DateNavigatorItemProperties.items
 ---
 ---
 ##### shortDescription
-Specifies names for the date navigator parts.
+Specifies names for date navigator parts.
 
 ---
 <!-- Description goes here -->

@@ -4,7 +4,7 @@ type: DateNavigatorItemProperties | Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the DevExtreme UI component used as a toolbar item.
 
 ---
 <!-- Description goes here -->

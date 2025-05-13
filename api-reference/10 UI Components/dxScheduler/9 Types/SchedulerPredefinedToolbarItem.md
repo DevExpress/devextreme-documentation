@@ -6,7 +6,8 @@ references: dxSchedulerToolbar.items|dxSchedulerToolbarItem.name
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies predefined items for the Scheduler toolbar.
 
 ---
-<!-- Description goes here -->
+#####See Also#####
+- toolbar.[items](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/)

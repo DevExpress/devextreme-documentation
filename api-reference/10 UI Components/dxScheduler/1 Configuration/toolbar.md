@@ -2,10 +2,11 @@
 id: dxScheduler.Options.toolbar
 type: dxSchedulerToolbar | undefined
 default: undefined
+inheritsType: dxSchedulerToolbar
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the toolbar.
 
 ---
 <!-- Description goes here -->

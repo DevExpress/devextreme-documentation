@@ -1,1 +1,1 @@
-The DevExtreme React Application Template offers authentication UI and functions, including multiple authentication pages. These pages allow users to sign in, create accounts, and reset or change their passwords. The authentication functionality of the Vite and Next.js templates are different.
+The DevExtreme React Application Template includes authentication functions and UI (multiple authentication pages). These pages allow users to sign in, create accounts, and reset or change their passwords. The authentication functionality of Vite and Next.js templates is different.

@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether the toolbar responds to user interaction.
 
 ---
 <!-- Description goes here -->

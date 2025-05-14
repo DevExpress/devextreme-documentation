@@ -1,10 +1,11 @@
 ---
 id: Toolbar.items
 type: Array<Enums.PredefinedToolbarItem, ToolbarItem>
+inheritsType: ToolbarItem
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether the toolbar responds to user interaction.
 
 ---
 <!-- Description goes here -->

@@ -5,7 +5,7 @@ default: 'after'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies toolbar item location.
 
 ---
 <!-- Description goes here -->

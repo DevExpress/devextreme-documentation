@@ -1,5 +1,5 @@
 ---
-id: Message.timestamp
+id: MessageBase.timestamp
 type: Date | Number | String
 ---
 ---

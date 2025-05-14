@@ -4,6 +4,7 @@ module: ui/scheduler
 export: DateNavigatorItemProperties
 type: dxButtonGroup_Options | Object
 inherits: dxButtonGroup.Options
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

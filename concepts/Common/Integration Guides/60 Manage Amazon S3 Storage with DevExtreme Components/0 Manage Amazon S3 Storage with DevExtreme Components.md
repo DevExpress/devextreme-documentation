@@ -6,7 +6,7 @@ The code snippets in this article and all associated repositories are for inform
 
 Amazon's Simple Storage Service (S3) plays a critical role in today’s enterprise. It offers high-availability and trusted access to large databases/file archives. You can integrate S3 storage into your DevExtreme-powered web application to simplify CRUD- operations against user files.
 
-This help topic documents key considerations when connecting DevExtreme UI components to Amazon S3 storage. Specifically, it describes a back-end application designed to communicate with AWS, and two client-side applications — one with the DevExtreme [FileManager](/concepts/05%20UI%20Components/FileManager/00%20Getting%20Started%20with%20File%20Manager '/Documentation/Guide/UI_Components/FileManager/Getting_Started_with_File_Manager/') component, and the other with our [FileUploader](/concepts/05%20UI%20Components/FileUploader/00%20Overview.md '/Documentation/Guide/UI_Components/FileUploader/Overview/').
+This help topic documents key considerations when connecting DevExtreme UI components to Amazon S3 storage. Specifically, it describes a back-end application designed to communicate with AWS, and two client-side applications — one with the DevExtreme [FileManager](/concepts/05%20UI%20Components/FileManager/00%20Getting%20Started%20with%20File%20Manager '/Documentation/Guide/UI_Components/FileManager/Getting_Started_with_File_Manager/') component, and the other with our [FileUploader](/concepts/05%20UI%20Components/FileUploader/00%20Overview '/Documentation/Guide/UI_Components/FileUploader/Overview/').
 
 **FileManager** application:
 

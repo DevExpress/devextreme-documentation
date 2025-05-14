@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+CSS class name applied to item root elements.
 
 ---
 <!-- Description goes here -->

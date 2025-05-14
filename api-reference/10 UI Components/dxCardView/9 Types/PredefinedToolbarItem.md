@@ -6,7 +6,7 @@ references: Toolbar.items|ToolbarItem.name
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies predefined items for the CardView toolbar.
 
 ---
 <!-- Description goes here -->

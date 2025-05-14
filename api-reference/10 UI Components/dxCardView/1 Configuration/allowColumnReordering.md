@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether a user can reorder columns.
 
 ---
-<!-- Description goes here -->
+This property reorders header panel items.

@@ -1,6 +1,7 @@
 ---
 id: dxCardView.Options.headerPanel
 type: HeaderPanel
+inheritsType: HeaderPanel
 ---
 ---
 ##### shortDescription

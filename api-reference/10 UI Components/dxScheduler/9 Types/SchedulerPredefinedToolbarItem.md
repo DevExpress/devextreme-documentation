@@ -10,4 +10,4 @@ Specifies predefined items for the Scheduler toolbar.
 
 ---
 #####See Also#####
-- toolbar.[items](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/)
+- toolbar.[items](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerToolbar/items.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/')

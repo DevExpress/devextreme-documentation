@@ -35,7 +35,7 @@ Predefined controls appear on the toolbar depending on whether a specific {Widge
         </tr>
     </table>
 
-    If you need to customize a predefined control, add an object to the **items[]** array. This object must contain the control's [name](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/#name) and [properties](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/) you want to customize. If a control does not need customization, you can include its name in the **toolbar**.**items[]** array. 
+    If you need to customize a predefined control, add an object to the **items[]** array. This object must contain the control's [name](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerToolbarItem/name.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/#name') and [properties](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerToolbarItem '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/') you want to customize. If a control does not need customization, you can include its name in the **toolbar**.**items[]** array. 
 
     The date navigator has three components: left arrow (*'prev'*), right arrow (*'next'*), and date interval (*'dateInterval'*). You can customize the component order.
 
@@ -117,7 +117,7 @@ Predefined controls appear on the toolbar depending on whether a specific {Widge
     ---
     ##### jQuery
 
-    You can use DevExtreme components as toolbar items. Set the [widget](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/#widget) property to specify the component you want to use and configure the component's [options](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/#options):
+    You can use DevExtreme components as toolbar items. Set the [widget](/api-reference/_hidden/dxToolbarItem/widget.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/#widget') property to specify the component you want to use and configure the component's [options](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerToolbarItem/options.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/#options'):
 
         <!--tab: index.js-->
         $(function(){
@@ -136,7 +136,7 @@ Predefined controls appear on the toolbar depending on whether a specific {Widge
 
     ##### Angular
 
-    You can use DevExtreme components as toolbar items. Declare a `dxi-item` element to add a [supported component](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/#widget):
+    You can use DevExtreme components as toolbar items. Declare a `dxi-item` element to add a [supported component](/api-reference/_hidden/dxToolbarItem/widget.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/#widget'):
 
         <!-- tab: app.component.html -->
         <dx-{widget-name} ... >
@@ -151,7 +151,7 @@ Predefined controls appear on the toolbar depending on whether a specific {Widge
 
     ##### Vue
 
-    You can use DevExtreme components as toolbar items. Declare a `DxItem` element to add a [supported component](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/#widget):
+    You can use DevExtreme components as toolbar items. Declare a `DxItem` element to add a [supported component](/api-reference/_hidden/dxToolbarItem/widget.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/#widget'):
 
         <!-- tab: App.vue -->
         <template>
@@ -181,7 +181,7 @@ Predefined controls appear on the toolbar depending on whether a specific {Widge
 
     ##### React
 
-    You can use DevExtreme components as toolbar items. Declare an `Item` element to add a [supported component](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/#widget):
+    You can use DevExtreme components as toolbar items. Declare an `Item` element to add a [supported component](/api-reference/_hidden/dxToolbarItem/widget.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/#widget'):
 
         <!-- tab: App.js -->
         import { SelectBox } from 'devextreme-react/select-box';
@@ -204,4 +204,4 @@ Predefined controls appear on the toolbar depending on whether a specific {Widge
     ---
 
 - **Custom controls**           
-To use a custom control, specify a [template](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/#template) for it.
+To use a custom control, specify a [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/#template') for it.

@@ -4,7 +4,7 @@ type: Boolean
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether the UI component changes its appearance when a user hovers over it.
 
 ---
 <!-- Description goes here -->

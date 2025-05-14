@@ -1,4 +1,4 @@
-The DevExtreme React Application Template quickly sets up a new React project. The template includes:
+The DevExtreme React Application Template simplifies setting up a new React project. The template includes:
 
 - Multiple sample views 
 - DevExtreme UI Widgets: [DataGrid](/Documentation/Guide/UI_Components/DataGrid/Overview/), [Form](/Documentation/Guide/UI_Components/Form/Overview/), [TreeView](/Documentation/Guide/UI_Components/TreeView/Getting_Started_with_TreeView/), and others

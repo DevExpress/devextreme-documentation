@@ -39,7 +39,6 @@
   <MenuRule Destination="050 Getting Started/32 Rollup Configuration" SourcePattern="Howto:^40 Angular Components/10 Getting Started/30 Other Approaches/06 Using Rollup" VisibleFor="Angular" />
   <MenuRule Destination="050 Getting Started/33 Ionic Configuration" SourcePattern="Howto:^40 Angular Components/10 Getting Started/30 Other Approaches/05 Using Ionic" VisibleFor="Angular" />
   <MenuRule Destination="050 Getting Started/34 Gatsby Configuration" SourcePattern="Howto:^Common/Integration Guides/10 Create a DevExtreme application with Gatsby"/>
-  <MenuRule Destination="050 Getting Started/35 Next.js Configuration" SourcePattern="Howto:^Common/Integration Guides/20 Create a DevExtreme application with Next.js"/>
   <MenuRule Destination="050 Getting Started/36 Vite Configuration" SourcePattern="Howto:^Common/Integration Guides/30 Create a DevExtreme application with Vite.js"/>
 
   <MenuRule Destination="070 Licensing" SourcePattern="Howto:^Common/Licensing" />

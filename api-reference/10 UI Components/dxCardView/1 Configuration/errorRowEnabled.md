@@ -5,7 +5,10 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Indicates whether to show the error row.
 
 ---
-<!-- Description goes here -->
+The error row displays data-related errors that may occur on the server during the UI component's runtime. Setting this property to `false` hides the error row, but the errors can still be viewed in the browser's console.
+
+#####See Also#####
+- [onDataErrorOccured]({basewidgetpath}/Configuration/#onDataErrorOccurred)

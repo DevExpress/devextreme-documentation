@@ -5,7 +5,7 @@ default: 'No data'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a text string to display when no data appears in CardView.
 
 ---
 <!-- Description goes here -->

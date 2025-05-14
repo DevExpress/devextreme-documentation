@@ -5,22 +5,22 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed when an error occurs in the data source.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information on the occurred error.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.error): Error
-<!-- Description goes here -->
+The standard <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error" target="_blank">Error</a> object that defines the error.
 
 ##### field(e.model): any
-<!-- Description goes here -->
+Model data. Available only if you use Knockout.
 
 ---
-<!-- Description goes here -->
+Handles errors that might occur in the data source. To obtain a human-readable description of the error in the function, use the **error.message** field.

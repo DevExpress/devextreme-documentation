@@ -3,7 +3,7 @@ To implement authentication functions in the Next.js template, define a session 
     <!-- tab: .env -->
     SESSION_SECRET=<your_secret_key_goes_here>
 
-You can generate a secret key with the `openssl` command in terminal:
+You can generate a secret key with the `openssl` command in the terminal:
 
     openssl rand -base64 32
 

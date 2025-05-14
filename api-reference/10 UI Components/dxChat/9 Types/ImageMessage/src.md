@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-Specifies image source. Accepts URLs and Base64 strings. Only applies to messages of [type](/Documentation/ApiReference/UI_Components/dxChat/Types/Message/#type) `image`.
+Specifies the image source. Accepts URLs and Base64 strings. Only applies to `image` [type](/Documentation/ApiReference/UI_Components/dxChat/Types/Message/#type) messages.
 
 ---
 <!-- Description goes here -->

@@ -7,7 +7,7 @@ inherits: MessageBase
 ---
 ---
 ##### shortDescription
-Configures text message.
+Configures a text message.
 
 ---
 <!-- Description goes here -->

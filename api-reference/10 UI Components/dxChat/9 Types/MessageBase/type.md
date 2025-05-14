@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-The type of the message.
+The message type.
 
 ---
 Available values: [text](/Documentation/ApiReference/UI_Components/dxChat/Types/TextMessage/) and [image](/Documentation/ApiReference/UI_Components/dxChat/Types/ImageMessage/).

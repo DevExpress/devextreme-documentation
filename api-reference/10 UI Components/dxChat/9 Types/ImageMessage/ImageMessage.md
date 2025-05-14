@@ -7,7 +7,7 @@ inherits: MessageBase
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures image message.
 
 ---
 <!-- Description goes here -->

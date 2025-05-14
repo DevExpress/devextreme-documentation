@@ -7,7 +7,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A configuration object for a message.
 
 ---
 <!-- Description goes here -->

@@ -1,5 +1,5 @@
 ---
-id: Message.id
+id: MessageBase.id
 type: Number | String
 ---
 ---

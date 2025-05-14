@@ -1,5 +1,5 @@
 ---
-id: Message.author
+id: MessageBase.author
 type: User
 ---
 ---

@@ -3,13 +3,13 @@ id: dxCardView.isCardSelected(key)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Checks whether a card with a specific key is selected.
 
 ##### return: Boolean
-<!-- Description goes here -->
+`true` if the card is selected; otherwise `false`.
 
 ##### param(key): any
-<!-- Description goes here -->
+The card's key.
 
 ---
 <!-- Description goes here -->

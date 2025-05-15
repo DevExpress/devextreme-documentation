@@ -3,13 +3,19 @@ id: dxCardView.selectCards(keys, preserve)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Selects cards with specific keys.
 
 ##### param(keys): Array<any>
-<!-- Description goes here -->
+The card keys.
 
 ##### param(preserve): Boolean
-<!-- Description goes here -->
+Specifies whether previously selected cards should stay selected.
 
 ---
-<!-- Description goes here -->
+This method call removes the selection of previously selected rows. To maintain their selection, use `true` as the second argument.
+
+    <!--JavaScript-->{widgetName}Instance.selectRows([5, 10, 12], true);
+
+If DataGrid's key is composite (for example, `key: ['id', 'name']`), call the method like this:
+
+    <!--JavaScript-->{widgetName}Instance.selectRows([ { id: 5, name: 'Alex' }, { id: 10: name: 'Bob' } ], true);

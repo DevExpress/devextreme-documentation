@@ -37,9 +37,7 @@ Predefined controls appear on the toolbar depending on whether a specific {Widge
 
     If you need to customize a predefined control, add an object to the **items[]** array. This object must contain the control's [name](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerToolbarItem/name.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/#name') and [properties](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerToolbarItem '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/') you want to customize. If a control does not need customization, you can include its name in the **toolbar**.**items[]** array. 
 
-    The date navigator has three components: left arrow (*'prev'*), right arrow (*'next'*), and date interval (*'dateInterval'*). You can customize the component order.
-
-    The example below adds a date navigator, and customizes the Today button:
+    The date navigator has three components: left arrow (*'prev'*), right arrow (*'next'*), and date interval (*'dateInterval'*). Define [options](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/#options).**items** following the example below to customize the order of date navigator components.
 
     ---
     ##### jQuery
@@ -49,10 +47,11 @@ Predefined controls appear on the toolbar depending on whether a specific {Widge
             $("#{widgetName}Container").dx{WidgetName}({
                 // ...
                 toolbar: {
-                    items: [ "dateNavigator", {
-                        name: "today",      
-                        locateInMenu: "auto",
-                        location: "after"
+                    items: [{
+                        name: "dateNavigator",      
+                        options: {
+                            items: ['prev', 'dateInterval', 'next']
+                        }
                     }]  
                 }
             });
@@ -63,11 +62,9 @@ Predefined controls appear on the toolbar depending on whether a specific {Widge
         <!-- tab: app.component.html -->
         <dx-{widget-name} ... >
             <dxo-scheduler-toolbar>
-                <dxi-scheduler-toolbar-item name="dateNavigator"></dxi-scheduler-toolbar-item>
                 <dxi-scheduler-toolbar-item 
-                    name="today"
-                    locateInMenu="auto"
-                    location="after">
+                    name="dateNavigator"
+                    [options]="{items: ['prev', 'dateInterval', 'next']}">
                 </dxi-scheduler-toolbar-item>
             </dxo-scheduler-toolbar>
         </dx-{widget-name}>
@@ -78,15 +75,81 @@ Predefined controls appear on the toolbar depending on whether a specific {Widge
         <template>
             <Dx{WidgetName} ... >
                 <DxToolbar>
-                    <DxItem name="dateNavigator" />
                     <DxItem
-                        name="today"
-                        locate-in-menu="auto"
-                        location="after"
+                        name="dateNavigator"
+                        :options="{items: ['prev', 'dateInterval', 'next']}"
                     />
                 </DxToolbar>
             </Dx{WidgetName}>
         </template>
+        <script setup lang="ts">
+            import DxScheduler, { DxToolbar, DxItem } from 'devextreme-vue/scheduler';
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import {WidgetName}, { Toolbar, Item } from 'devextreme-react/{widget-name}';
+        // ...
+        const dateNavigatorOptions = {items: ['prev', 'dateInterval', 'next']};
+
+        function App() {
+            return (
+                <{WidgetName} ... >
+                    <Toolbar>
+                        <Item
+                            name="dateNavigator"
+                            options={dateNavigatorOptions}
+                        />
+                    </Toolbar>
+                </{WidgetName}>
+            );
+        }
+
+    ---
+
+    The example below adds the date navigator and the Today button without customization:
+
+    ---
+    ##### jQuery
+
+        <!--tab: index.js-->
+        $(function(){
+            $("#{widgetName}Container").dx{WidgetName}({
+                // ...
+                toolbar: {
+                    items: [
+                        "dateNavigator",
+                        "today"
+                    ]  
+                }
+            });
+        });
+
+    ##### Angular
+
+        <!-- tab: app.component.html -->
+        <dx-{widget-name} ... >
+            <dxo-scheduler-toolbar>
+                <dxi-scheduler-toolbar-item name="dateNavigator"></dxi-scheduler-toolbar-item>
+                <dxi-scheduler-toolbar-item name="today"></dxi-scheduler-toolbar-item>
+            </dxo-scheduler-toolbar>
+        </dx-{widget-name}>
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template>
+            <Dx{WidgetName} ... >
+                <DxToolbar>
+                    <DxItem name="dateNavigator" />
+                    <DxItem name="today" />
+                </DxToolbar>
+            </Dx{WidgetName}>
+        </template>
+        <script setup lang="ts">
+            import DxScheduler, { DxToolbar, DxItem } from 'devextreme-vue/scheduler';
+        </script>
 
     ##### React
 
@@ -98,11 +161,7 @@ Predefined controls appear on the toolbar depending on whether a specific {Widge
                 <{WidgetName} ... >
                     <Toolbar>
                         <Item name="dateNavigator" />
-                        <Item
-                            name="today"
-                            locateInMenu="auto"
-                            location="after"
-                        />
+                        <Item name="today" />
                     </Toolbar>
                 </{WidgetName}>
             );

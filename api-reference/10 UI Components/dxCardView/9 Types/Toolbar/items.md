@@ -5,7 +5,7 @@ inheritsType: ToolbarItem
 ---
 ---
 ##### shortDescription
-Specifies whether the toolbar responds to user interaction.
+Configures toolbar items.
 
 ---
 <!-- Description goes here -->

@@ -1,6 +1,7 @@
 ---
 id: dxCardView.Options.selection
 type: SelectionConfiguration
+inheritsType: SelectionConfiguration
 ---
 ---
 ##### shortDescription

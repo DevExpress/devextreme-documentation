@@ -40,18 +40,18 @@ Predefined controls appear on the toolbar depending on whether a specific CardVi
         <tr>
             <td><i>selectAllButton</i></td>
             <td><img src="/images/CardView/toolbar/select-all.png" alt="DevExtreme CardView toolbar selectAllButton" style="margin:1px; vertical-align:middle; width: 135px;"/></td>
-            <td><a href="{basewidgetpath}/Configuration/searchPanel/">searchPanel</a>.<a href="{basewidgetpath}/Configuration/searchPanel/#visible">visible</a> is <b>true</b></td>
+            <td><a href="{basewidgetpath}/Configuration/selection/">selection</a>.<a href="{basewidgetpath}/Configuration/selection/#allowSelectAll">allowSelectAll</a> is <b>true</b> and <b>selection</b>.<a href="{basewidgetpath}/Configuration/selection/#mode">mode</a> is <i>'multiple'</i></td>
         </tr>
         <tr>
             <td><i>clearSelectionButton</i></td>
             <td><img src="/images/CardView/toolbar/clear-selection.png" alt="DevExtreme CardView toolbar clearSelectionButton" style="margin:1px; vertical-align:middle; width: 175px;"/></td>
-            <td><a href="{basewidgetpath}/Configuration/searchPanel/">searchPanel</a>.<a href="{basewidgetpath}/Configuration/searchPanel/#visible">visible</a> is <b>true</b></td>
+            <td><a href="{basewidgetpath}/Configuration/selection/">selection</a>.<a href="{basewidgetpath}/Configuration/selection/#mode">mode</a> is <i>'single'</i> or <i>'multiple'</i></td>
         </tr>
     </table>
 
     If you need to customize a predefined control, add an object to the **items[]** array. This object must contain the control's [name](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/toolbar/items/#name) and [properties](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/toolbar/items/) that you want to customize. If a control does not need customization, simply include its name in the **toolbar**.**items[]** array. 
 
-    The example below customizes the Column Chooser button, adds an Add Row button, and enables the corresponding CardView features:
+    The example below customizes the Column Chooser button, adds an Add Card button, and enables the corresponding CardView features:
 
     ---
     ##### jQuery
@@ -67,9 +67,10 @@ Predefined controls appear on the toolbar depending on whether a specific CardVi
                     enabled: true
                 },
                 toolbar: {
-                    items: [ "addRowButton", {
+                    items: [ "addCardButton", {
                         name: "columnChooserButton",      
                         locateInMenu: "auto",
+                        location: "after"
                     }]  
                 }
             });
@@ -82,7 +83,7 @@ Predefined controls appear on the toolbar depending on whether a specific CardVi
             <dxo-editing [allowAdding]="true"></dxo-editing>
             <dxo-column-chooser [enabled]="true"></dxo-column-chooser>
             <dxo-toolbar>
-                <dxi-item name="addRowButton"></dxi-item>
+                <dxi-item name="addCardButton"></dxi-item>
                 <dxi-item 
                     name="columnChooserButton"
                     locateInMenu="auto"
@@ -119,7 +120,7 @@ Predefined controls appear on the toolbar depending on whether a specific CardVi
                 <DxEditing :allow-adding="true" />
                 <DxColumnChooser :enabled="true"/>
                 <DxToolbar>
-                    <DxItem name="addRowButton" />
+                    <DxItem name="addCardButton" />
                     <DxItem
                         name="columnChooserButton"
                         locate-in-menu="auto"
@@ -128,18 +129,8 @@ Predefined controls appear on the toolbar depending on whether a specific CardVi
                 </DxToolbar>
             </DxCardView>
         </template>
-        <script>
+        <script setup lang="ts">
         import { DxCardView, DxEditing, DxColumnChooser, DxToolbar, DxItem } from 'devextreme-vue/{widget-name}';
-
-        export default {
-            components: {
-                DxCardView,
-                DxEditing,
-                DxToolbar, 
-                DxItem,
-                DxColumnChooser
-            }
-        };
         </script>
 
     ##### React
@@ -153,7 +144,7 @@ Predefined controls appear on the toolbar depending on whether a specific CardVi
                     <Editing allowAdding={true} />
                     <ColumnChooser enabled={true} />
                     <Toolbar>
-                        <Item name="addRowButton" />
+                        <Item name="addCardButton" />
                         <Item
                             name="columnChooserButton"
                             locateInMenu="auto"
@@ -243,18 +234,9 @@ Predefined controls appear on the toolbar depending on whether a specific CardVi
                 </DxToolbar>
             </DxCardView>
         </template>
-        <script>
+        <script setup lang="ts">
         import { DxCardView, DxToolbar, DxItem } from 'devextreme-vue/{widget-name}';
         import { DxSelectBox } from 'devextreme-vue/select-box';
-
-        export default {
-            components: {
-                DxCardView, 
-                DxToolbar, 
-                DxItem,
-                DxSelectBox
-            }
-        };
         </script>
 
     ##### React

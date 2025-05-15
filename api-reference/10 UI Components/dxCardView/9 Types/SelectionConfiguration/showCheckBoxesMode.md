@@ -4,7 +4,19 @@ type: Enums.SelectionColumnDisplayMode
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies when to display card selection checkboxes.
 
 ---
-<!-- Description goes here -->
+The following values are available:
+
+- *"onClick"*
+Checkboxes appear once a user clicks in the column or if two or more cards are selected programmatically or using keyboard shortcuts. Checkboxes disappear once card selection is canceled.
+
+- *"onLongTap"*
+Checkboxes appear and disappear on long tap (click and hold).
+
+- *"always"*
+Checkboxes are always visible.
+
+- *"none"*  
+Checkboxes are hidden. Users can select cards with keyboard shortcuts or long tap (click and hold).

@@ -5,7 +5,9 @@ inheritsType: ToolbarItem
 ---
 ---
 ##### shortDescription
-Configures toolbar items.
+<!-- %shortDescription% -->
 
 ---
-<!-- Description goes here -->
+<!-- %fullDescription% -->
+
+<!-- import * from 'api-reference\10 UI Components\dxCardView\9 Types\ToolbarItem\ToolbarItem.md' -->

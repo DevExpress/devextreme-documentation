@@ -1,19 +1,19 @@
-If you use [standalone](https://angular.dev/guide/components) components, import the modules as shown below:
+DevExtreme components are [standalone](https://angular.dev/guide/components). Import them as follows:
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
-    import { DxButtonModule } from 'devextreme-angular';
+    import { DxButtonComponent } from 'devextreme-angular/ui/button';
 
     @Component({
         selector: 'app-root',
         standalone: true,
-        imports: [DxButtonModule],
+        imports: [DxButtonComponent],
         templateUrl: './app.component.html',
         styleUrl: './app.component.css'
     })
     export class AppComponent { }
     
-You can also import components specific to your usage, rather than entire modules. In this case, import all the nested components as well. For example, the following code snippet imports DataGrid, its columns, and sorting.
+The nested components should be imported as well. For example, the following code snippet imports DataGrid, its columns, sorting, and a template.
 
 [note] If you use `*dxTemplate`, import `DxTemplateDirective`.
 
@@ -46,9 +46,24 @@ You can also import components specific to your usage, rather than entire module
             />
         </div>
     </dx-data-grid>
+
+Modules help when dealing with multiple configuration components. You can import them as follows:
+
+    !-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import { DxDataGridModule } from 'devextreme-angular';
+
+    @Component({
+        selector: 'app-root',
+        standalone: true,
+        imports: [DxDataGridModule],
+        templateUrl: './app.component.html',
+        styleUrl: './app.component.css'
+    })
+    export class AppComponent { }
     
 If you use `NgModule`, import the DevExtreme modules as demonstrated in the following code snippet. If [tree shaking](/concepts/40%20Angular%20Components/40%20Common%20Features/10%20Tree%20Shaking.md '/Documentation/Guide/Angular_Components/Common_Features/Tree_Shaking/') is configured in your application, import the modules from `devextreme-angular`. If not, import them from files.
-
+    
     <!-- tab: app.module.ts -->
     // ...
     import { DxButtonModule } from 'devextreme-angular';

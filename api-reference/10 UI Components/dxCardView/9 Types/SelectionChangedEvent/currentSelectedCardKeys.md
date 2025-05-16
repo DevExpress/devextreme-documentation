@@ -4,7 +4,7 @@ uid: ui/card_view:SelectionChangedEvent.currentSelectedCardKeys
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The keys of the cards that were selected.
 
 ---
 <!-- Description goes here -->

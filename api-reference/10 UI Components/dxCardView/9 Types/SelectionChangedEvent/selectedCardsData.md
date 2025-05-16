@@ -4,7 +4,7 @@ uid: ui/card_view:SelectionChangedEvent.selectedCardsData
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The data of all selected cards.
 
 ---
 <!-- Description goes here -->

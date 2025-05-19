@@ -13,7 +13,7 @@ DevExtreme components are [standalone](https://angular.dev/guide/components). Im
     })
     export class AppComponent { }
     
-The nested components should be imported as well. For example, the following code snippet imports DataGrid, its columns, sorting, and a template.
+The nested components should also be imported. For example, the following code snippet imports DataGrid, its columns, sorting, and a template.
 
 [note] If you use `*dxTemplate`, import `DxTemplateDirective`.
 
@@ -47,7 +47,7 @@ The nested components should be imported as well. For example, the following cod
         </div>
     </dx-data-grid>
 
-Modules help when dealing with multiple configuration components. You can import them as follows:
+Modules facilitate working with multiple configuration components. You can import them as follows:
 
     !-- tab: app.component.ts -->
     import { Component } from '@angular/core';

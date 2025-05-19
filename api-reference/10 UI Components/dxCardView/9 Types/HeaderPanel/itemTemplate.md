@@ -4,7 +4,7 @@ type: template
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a custom template for items.
 
 ##### param(data): ColumnTemplateData
 <!-- Description goes here -->

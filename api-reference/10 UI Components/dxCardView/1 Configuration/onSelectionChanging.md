@@ -4,31 +4,31 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is called before selection changes.
 
 ##### param(e): ui/card_view:SelectionChangingEvent
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Allows you to cancel selection.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.currentDeselectedCardKeys): Array<any>
-<!-- Description goes here -->
+The keys of the cards whose selection was cleared.
 
 ##### field(e.currentSelectedCardKeys): Array<any>
-<!-- Description goes here -->
+The keys of the cards that were selected.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.selectedCardKeys): Array<any>
-<!-- Description goes here -->
+The keys of all selected cards.
 
 ##### field(e.selectedCardsData): Array<any>
-<!-- Description goes here -->
+The data of all selected cards.
 
 ---
 <!-- Description goes here -->

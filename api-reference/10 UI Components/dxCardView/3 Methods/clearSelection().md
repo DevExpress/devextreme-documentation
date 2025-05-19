@@ -3,7 +3,10 @@ id: dxCardView.clearSelection()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Clears selection of all cards on all pages.
 
 ---
-<!-- Description goes here -->
+#####See Also#####
+#include common-link-callmethods
+- [deselectAll()]({basewidgetpath}/Methods/#deselectAll)
+- [deselectCards(keys)]({basewidgetpath}/Methods/#deselectCardskeys)

@@ -6,7 +6,15 @@ inherits: Widget
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+CardView is a UI component that uses a "card" layout to present information.
+
+##### widgettree
+
+##### lib
+dx.web.js, dx.all.js
 
 ---
-<!-- Description goes here -->
+
+#####See Also#####
+#include common-link-setupdevextreme
+#include common-link-configurewidget

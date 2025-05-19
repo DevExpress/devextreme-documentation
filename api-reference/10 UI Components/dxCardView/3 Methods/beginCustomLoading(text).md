@@ -11,7 +11,7 @@ The text for the load panel to display.
 ---
 The load panel opens automatically when the UI component processes or retrieves data. To open the load panel manually, call this method. Without an argument, this method displays text from the [loadPanel]({basewidgetpath}/Configuration/loadPanel).**text** property. Customize the load panel through the **loadPanel** configuration. When opened manually, the load panel remains visible until [endCustomLoading()]({basewidgetpath}/Methods/#endCustomLoading) is called.
 
-[note] Manually opening the load panel does not replace the automatic panel, which may cause unexpected text changes as the automatic panel overrides the manual one. Ensure text consistency when opening the load panel manually.
+[note] Manually opening the load panel does not replace the automatic panel, which may cause unexpected text changes as the automatic panel overrides the manual panel. Ensure text consistency when manually opening the load panel.
 
 #####See Also#####
 #include common-link-callmethods

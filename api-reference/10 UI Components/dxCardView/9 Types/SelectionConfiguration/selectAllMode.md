@@ -10,7 +10,7 @@ Specifies the mode for selecting cards. Applies only if **selection**.[allowSele
 **selectAllMode** specifies how cards are selected when you click the "Select all" button or call the [selectAll()]({basewidgetpath}/Methods/#selectAll)/[deselectAll()]({basewidgetpath}/Methods/#deselectAll) methods. The following modes are available:
 
 - *"page"*    
-Selects cards on currently rendered pages.       
+Selects cards on rendered pages.       
 
 - *"allPages"*    
 Selects cards on all pages.

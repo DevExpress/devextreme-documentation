@@ -9,10 +9,10 @@ Selects cards with specific keys.
 The card keys.
 
 ##### param(preserve): Boolean
-Specifies whether previously selected cards should stay selected.
+Specifies whether selected cards should remain selected.
 
 ---
-This method call removes the selection of previously selected rows. To maintain their selection, use `true` as the second argument.
+This method clears selected rows. To maintain their selection, use `true` as the second argument.
 
     <!--JavaScript-->{widgetName}Instance.selectRows([5, 10, 12], true);
 

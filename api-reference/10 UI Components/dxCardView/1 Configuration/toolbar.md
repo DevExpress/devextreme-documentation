@@ -5,7 +5,7 @@ inheritsType: Toolbar
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the toolbar.
 
 ---
 <!-- Description goes here -->

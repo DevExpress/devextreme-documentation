@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether grouping must be performed on the server side.
 
 ---
 <!-- Description goes here -->

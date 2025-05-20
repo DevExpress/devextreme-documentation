@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures scrolling.
 
 ---
 <!-- Description goes here -->

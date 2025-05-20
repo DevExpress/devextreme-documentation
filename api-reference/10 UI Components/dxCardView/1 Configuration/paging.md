@@ -1,10 +1,13 @@
 ---
 id: dxCardView.Options.paging
 type: Paging
+inheritsType: Paging
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+<!-- %shortDescription% -->
 
 ---
-<!-- Description goes here -->
+<!-- %fullDescription% -->
+
+<!-- import * from 'api-reference\10 UI Components\dxCardView\9 Types\Paging\Paging.md' -->

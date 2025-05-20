@@ -6,7 +6,7 @@ default: 6
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the page size.
 
 ---
-<!-- Description goes here -->
+The page size determines how many cards the UI component loads at a time.

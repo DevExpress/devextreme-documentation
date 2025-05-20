@@ -1,10 +1,11 @@
 ---
 id: dxCardView.Options.columns
 type: Array<ColumnProperties, String>
+inheritsType: ColumnProperties
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An array of CardView columns.
 
 ---
 <!-- Description goes here -->

@@ -4,19 +4,19 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed after card changes are discarded.
 
 ##### param(e): ui/card_view:EditCanceledEvent
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.changes): Array<DataChange>
-<!-- Description goes here -->
+Discarded card changes.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ---
 <!-- Description goes here -->

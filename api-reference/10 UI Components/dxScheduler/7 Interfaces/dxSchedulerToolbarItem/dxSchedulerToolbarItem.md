@@ -37,7 +37,7 @@ Predefined controls appear on the toolbar depending on whether a specific {Widge
 
     If you need to customize a predefined control, add an object to the **items[]** array. This object must contain the control's [name](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerToolbarItem/name.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/#name') and [properties](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerToolbarItem '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/') you want to customize. If a control does not need customization, you can include its name in the **toolbar**.**items[]** array. 
 
-    The date navigator is a [ButtonGroup](/Documentation/ApiReference/UI_Components/dxButtonGroup/) with three items: left arrow (*'prev'*), right arrow (*'next'*), and date interval (*'dateInterval'*). Define [options](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/#options).**items** following the example below to customize the order of date navigator components.
+    The date navigator is a [ButtonGroup](/api-reference/10%20UI%20Components/dxButtonGroup '/Documentation/ApiReference/UI_Components/dxButtonGroup/') with three items: left arrow (*'prev'*), right arrow (*'next'*), and date interval (*'dateInterval'*). Define [options](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerToolbarItem/options.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/#options').**items** following the example below to customize the order of date navigator components.
 
     ---
     ##### jQuery

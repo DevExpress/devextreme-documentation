@@ -13,7 +13,7 @@ This command does the following:
 
 These steps are explained in the [Add DevExtreme to an Angular CLI Application](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/') article.
 
-Once the command is executed, [import DevExtreme components](/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/#Import_DevExtreme_Components).
+Once the command is executed, [import DevExtreme components](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application/40%20Import%20DevExtreme%20Components.md '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/#Import_DevExtreme_Components').
 
 ##### Vue
 

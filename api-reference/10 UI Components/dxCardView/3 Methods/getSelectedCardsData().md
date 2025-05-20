@@ -12,4 +12,4 @@ The objects are not processed by the [DataSource](/api-reference/30%20Data%20Lay
 ---
 #####See Also#####
 #include common-link-callmethods
-- [getSelectedRowKeys()]({basewidgetpath}/Methods/#getSelectedCardKeys)
+- [getSelectedRowKeys()](/api-reference/10%20UI%20Components/dxCardView/3%20Methods/getSelectedCardKeys().md '{basewidgetpath}/Methods/#getSelectedCardKeys')

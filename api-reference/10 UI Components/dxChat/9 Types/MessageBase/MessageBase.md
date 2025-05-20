@@ -4,6 +4,7 @@ module: ui/chat
 export: MessageBase
 hidden: 
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

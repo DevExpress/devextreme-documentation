@@ -11,4 +11,4 @@ The card keys.
 ---
 #####See Also#####
 #include common-link-callmethods
-- [deselectAll()]({basewidgetpath}/Methods/#deselectAll)
+- [deselectAll()](/api-reference/10%20UI%20Components/dxCardView/3%20Methods/deselectAll().md '{basewidgetpath}/Methods/#deselectAll')

@@ -1,7 +1,7 @@
 The DevExtreme React Application Template simplifies setting up a new React project. The template includes:
 
 - Multiple sample views 
-- DevExtreme UI Widgets: [DataGrid](/Documentation/Guide/UI_Components/DataGrid/Overview/), [Form](/Documentation/Guide/UI_Components/Form/Overview/), [TreeView](/Documentation/Guide/UI_Components/TreeView/Getting_Started_with_TreeView/), and others
+- DevExtreme UI Widgets: [DataGrid](/concepts/05%20UI%20Components/DataGrid/03%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/DataGrid/Overview/'), [Form](/concepts/05%20UI%20Components/Form/00%20Overview '/Documentation/Guide/UI_Components/Form/Overview/'), [TreeView](/concepts/05%20UI%20Components/TreeView/00%20Getting%20Started%20with%20TreeView '/Documentation/Guide/UI_Components/TreeView/Getting_Started_with_TreeView/'), and others
 - Placeholder authentication functions (to implement a secure login system)
 
 #include btn-open-github with {

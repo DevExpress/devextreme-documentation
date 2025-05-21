@@ -19,7 +19,7 @@ DataGrid offers different keyboard controls depending on what action users wish 
     </tr>
     <tr>
         <td>Ctrl + &uarr;<br/>Ctrl + &darr;</td>
-        <td>Moves focus between the component's areas, such as the cell area, column headers area, and group panel.</td>
+        <td>Moves focus between the component's areas, such as the data area, column headers area, group panel, and others.</td>
     </tr>
     <tr>
         <td>Shift + Mouse Wheel</td>
@@ -84,8 +84,12 @@ DataGrid offers different keyboard controls depending on what action users wish 
         <td>Groups data by focused column values if <b>columns[]</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowGrouping">allowGrouping</a> is enabled.</td>
     </tr>
     <tr>
-        <td>Shift + Ctrl + G<br/>Delete<br/>Backspace</td>
+        <td>Shift + Ctrl + G</td>
         <td>Ungroups data by focused column values.</td>
+    </tr>
+    <tr>
+        <td>Delete<br/>Backspace</td>
+        <td>When focused on column headers in the group panel, ungroups data by focused column values.</td>
     </tr>
     <tr>
         <td>Ctrl + &rarr;<br/>Ctrl + &larr;</td>

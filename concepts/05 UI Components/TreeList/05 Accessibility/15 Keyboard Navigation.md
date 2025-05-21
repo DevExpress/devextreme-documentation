@@ -18,8 +18,12 @@ TreeList offers different keyboard controls depending on what action users wish 
         <td>Moves focus forward/backward between all TreeList items.</td>
     </tr>
     <tr>
+        <td>Ctrl + &rarr;<br/>Ctrl + &larr;</td>
+        <td>Expands/collapses the focused row.</td>
+    </tr>
+    <tr>
         <td>Ctrl + &uarr;<br/>Ctrl + &darr;</td>
-        <td>Moves focus between the component's areas, such as the cell area, column headers area, and group panel.</td>
+        <td>Moves focus between the component's areas, such as the data area, column headers area, group panel, and others.</td>
     </tr>
     <tr>
         <td>Shift + Mouse Wheel</td>

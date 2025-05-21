@@ -7,4 +7,4 @@ type: Boolean
 Marks a message as deleted in the UI.
 
 ---
-<!-- Description goes here -->
+If this property is `true`, the editing context menu is not displayed for the message.

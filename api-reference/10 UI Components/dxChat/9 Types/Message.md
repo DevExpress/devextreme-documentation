@@ -10,4 +10,4 @@ generateTypeLink:
 A configuration object for a message.
 
 ---
-<!-- Description goes here -->
+[note] Keyboard navigation is not supported in the message list.

@@ -20,4 +20,4 @@ Message data.
 `true` if the message can be deleted; otherwise `false`.
 
 ---
-If you set this property to `true`, a user can delete only their messages.
+If set to `false`, no messages can be deleted. If set to `true`, only current user can delete their messages.

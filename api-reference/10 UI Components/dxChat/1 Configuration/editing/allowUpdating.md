@@ -20,4 +20,4 @@ Message data.
 `true` if the message can be updated; otherwise `false`.
 
 ---
-If you set this property to `true`, a user can edit only their messages.
+If set to `false`, no messages can be edited. If set to `true`, only current user can edit their messages.

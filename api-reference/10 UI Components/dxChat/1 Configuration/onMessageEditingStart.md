@@ -11,7 +11,8 @@ A function that is executed before a message switches to the editing state.
 Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean | Promise<Boolean>
-Allows you to cancel message editing.
+`true`, a Promise resolved with `true`, or a rejected Promise stops message editing.       
+`false` or a Promise resolved with `false` or `undefined` continues message editing.
 
 ##### field(e.component): {WidgetName}
 UI component's instance.

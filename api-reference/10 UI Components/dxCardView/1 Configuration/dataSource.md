@@ -5,7 +5,15 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Binds the UI component to data.
 
 ---
-<!-- Description goes here -->
+#include common-dataSource-description with {
+    widget_works_with: "CardView works with collections of objects.",
+
+    array_key_note: " and specify the [keyExpr]({basewidgetpath}/Configuration/#keyExpr)",
+
+    odata_key_note: " Make sure to specify the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#key').",
+
+    remote_operations_note: "- If the CardView UI component gets data from a server, configure [remoteOperations]({basewidgetpath}/Configuration/remoteOperations/) to notify the UI component about data operations the server performs.",
+}

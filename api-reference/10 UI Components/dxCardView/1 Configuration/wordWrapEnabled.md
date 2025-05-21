@@ -4,7 +4,7 @@ type: Boolean
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether text that does not fit into a field should be wrapped.
 
 ---
 <!-- Description goes here -->

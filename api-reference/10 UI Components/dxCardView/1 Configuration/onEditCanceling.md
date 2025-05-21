@@ -4,22 +4,22 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed when the edit operation is canceled, but card changes are not yet discarded.
 
 ##### param(e): ui/card_view:EditCancelingEvent
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Set this field to `true` if the card changes should not be discarded.
 
 ##### field(e.changes): Array<DataChange>
-<!-- Description goes here -->
+Card changes to be discarded.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ---
-<!-- Description goes here -->
+An edit operation can be canceled from the UI (with the Cancel button) or programatically (with the [cancelEditData()]({basewidgetpath}/Methods/#cancelEditData) method).

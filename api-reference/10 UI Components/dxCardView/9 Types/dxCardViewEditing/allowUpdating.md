@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether a user can update cards.
 
 ---
 <!-- Description goes here -->

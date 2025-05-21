@@ -4,7 +4,7 @@ type: Pager
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the pager.
 
 ---
-<!-- Description goes here -->
+The pager is an element that allows users to navigate through pages and change their size at runtime. The pager consists of the page navigator and several optional elements: the page size selector, navigation buttons, and page information.

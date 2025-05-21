@@ -4,25 +4,26 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before a card switches to the editing state.
 
 ##### param(e): ui/card_view:EditingStartEvent
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Allows you to cancel card editing.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.data): Object
-<!-- Description goes here -->
+The data of a card to be edited.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.key): any
-<!-- Description goes here -->
+The card's key. An added card not saved has the `undefined` key.   
+Without a specified key field in the [data source]({basewidgetpath}/Configuration/#dataSource), the data object acts as the key.
 
 ---
 <!-- Description goes here -->

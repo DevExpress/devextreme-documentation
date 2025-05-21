@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether users can reorder this column. Overrides the [allowColumnReordering]({basewidgetpath}/Configuration/#allowColumnReordering) property value.
 
 ---
 <!-- Description goes here -->

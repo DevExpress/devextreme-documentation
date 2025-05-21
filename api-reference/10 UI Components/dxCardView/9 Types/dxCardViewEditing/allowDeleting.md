@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether a user can delete cards.
 
 ---
 <!-- Description goes here -->

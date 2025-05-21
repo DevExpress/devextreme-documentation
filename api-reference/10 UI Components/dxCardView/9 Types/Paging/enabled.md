@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Enables paging.
 
 ---
 <!-- Description goes here -->

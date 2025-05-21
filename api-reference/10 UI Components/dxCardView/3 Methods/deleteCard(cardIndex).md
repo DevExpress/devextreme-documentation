@@ -3,10 +3,10 @@ id: dxCardView.deleteCard(cardIndex)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Removes a card with a specific index.
 
 ##### param(cardIndex): Number
-<!-- Description goes here -->
+The card index.
 
 ---
 <!-- Description goes here -->

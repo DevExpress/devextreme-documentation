@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether grouping must be performed on the server.
 
 ---
-<!-- Description goes here -->
+Grouping is required only when a user can filter data using a [header filter]({basewidgetpath}/Configuration/headerFilter/).

@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the search panel.
 
 ---
 <!-- Description goes here -->

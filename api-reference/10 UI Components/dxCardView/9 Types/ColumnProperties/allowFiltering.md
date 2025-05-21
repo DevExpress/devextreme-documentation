@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether data can be filtered by this column. Applies only if filterRow.**visible** is `true`.
 
 ---
 <!-- Description goes here -->

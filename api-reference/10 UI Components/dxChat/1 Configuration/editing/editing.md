@@ -19,7 +19,7 @@ Configures editing.
 
     <!-- tab: index.js -->
     $('#chat').dxChat({
-        items: initialMessages,
+        dataSource: initialMessages,
         editing: {
             allowUpdating: true,
             allowDeleting: true
@@ -46,7 +46,7 @@ Configures editing.
 
     <!-- tab: app.component.html -->
     <dx-chat 
-        [items]="messages"
+        [dataSource]="messages"
         (onMessageEntered)="onMessageEntered($event)"
         (onMessageUpdated)="onMessageUpdated($event)"
         (onMessageDeleted)="onMessageDeleted($event)"
@@ -90,7 +90,7 @@ Configures editing.
     <!-- tab: App.vue -->
     <template>
     <DxChat
-        :items="messages"
+        :data-source="messages"
         @message-entered="onMessageEntered"
         @message-updated="onMessageUpdated"
         @message-deleted="onMessageDeleted"
@@ -160,7 +160,7 @@ Configures editing.
                 onMessageEntered={onMessageEntered}
                 onMessageUpdated={onMessageUpdated}
                 onMessageDeleted={onMessageDeleted}
-                items={messages}
+                dataSource={messages}
             >
                 <Editing allowUpdating={true} allowDeleting={true} />
             </Chat>

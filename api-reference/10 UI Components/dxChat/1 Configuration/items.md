@@ -95,8 +95,6 @@ Use this property to render a new message and specify initial messages in {Frame
 
 ---
 
-[note] Keyboard navigation is not supported in the message list.
-
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Chat/Overview/"
 }

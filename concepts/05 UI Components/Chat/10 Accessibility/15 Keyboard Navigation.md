@@ -11,4 +11,6 @@ A user can use the following keys to interact with the Chat component:
     </tr>
 </table>
 
+[note] Keyboard navigation is not supported in the message list.
+
 #include common-code-register-key-handler

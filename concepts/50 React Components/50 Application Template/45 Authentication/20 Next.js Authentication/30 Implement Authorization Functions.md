@@ -1,0 +1,3 @@
+Authorization functions allow you to verify if a given user has access to certain pages in your project. If a user is not authorized, you can redirect them to an authorization page. These functions are located in `middleware.js` in the root directory of your project.
+
+[note] The Next.js template includes a `_DEMO_logIn()` function in `middleware.js`. This function allows you to test your application during development stage without authorization. Remove this function and implement redirects in production version.

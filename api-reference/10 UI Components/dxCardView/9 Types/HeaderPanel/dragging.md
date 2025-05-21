@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures item dragging.
 
 ---
 <!-- Description goes here -->

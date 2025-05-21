@@ -4,7 +4,7 @@ type: Date | Number | String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A timestamp of when the message was sent.
 
 ---
 <!-- Description goes here -->

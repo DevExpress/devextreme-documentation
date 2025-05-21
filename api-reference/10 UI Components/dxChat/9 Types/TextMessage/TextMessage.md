@@ -4,10 +4,11 @@ module: ui/chat
 export: TextMessage
 type: MessageBase | Object
 inherits: MessageBase
+generateTypeLink: 
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures a text message.
 
 ---
 <!-- Description goes here -->

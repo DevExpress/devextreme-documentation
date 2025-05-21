@@ -5,7 +5,7 @@ type: Array<any>
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Allows you to select cards or determine which cards are selected.
 
 ---
 <!-- Description goes here -->

@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Image alternative text. Specifies the value of the image `alt` attributes. Screen readers utilize this property when image messages are focused. Only applies to `image` type messages.
 
 ---
-<!-- Description goes here -->
+This property has a default placeholder value. To improve your project's accessibility, define a descriptive alt text.

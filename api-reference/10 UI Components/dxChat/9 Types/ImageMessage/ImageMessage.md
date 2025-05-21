@@ -4,10 +4,11 @@ module: ui/chat
 export: ImageMessage
 type: MessageBase | Object
 inherits: MessageBase
+generateTypeLink: 
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures image message.
 
 ---
 <!-- Description goes here -->

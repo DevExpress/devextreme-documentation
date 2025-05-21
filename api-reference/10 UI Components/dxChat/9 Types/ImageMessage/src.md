@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the image source. Accepts URLs and Base64 strings. Only applies to `image` type messages.
 
 ---
 <!-- Description goes here -->

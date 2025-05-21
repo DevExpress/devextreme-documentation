@@ -3,10 +3,12 @@ id: dxCardView.deselectCards(keys)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Cancels the selection of cards with specific keys.
 
 ##### param(keys): Array<any>
-<!-- Description goes here -->
+The card keys.
 
 ---
-<!-- Description goes here -->
+#####See Also#####
+#include common-link-callmethods
+- [deselectAll()](/api-reference/10%20UI%20Components/dxCardView/3%20Methods/deselectAll().md '{basewidgetpath}/Methods/#deselectAll')

@@ -1,4 +1,4 @@
-Stub authentication functions for back-end requests are located in the `src\api\auth.js` file. Update these functions to make actual requests to your back end.
+Authentication functions for backend requests are in `src\api\auth.js`. You must update these functions to make requests to your server. For example, add users or verify their credentials. 
 
 Each function returns an object with the following fields:
 
@@ -9,7 +9,7 @@ Each function returns an object with the following fields:
     </tr>
     <tr>
         <td>isOk</td>
-        <td>A Boolean value that is <b>true</b> if the request was successful and <b>false</b> otherwise.</td>
+        <td>A Boolean value that indicates whether the request was successful.</td>
     </tr>
     <tr>
         <td>message</td>

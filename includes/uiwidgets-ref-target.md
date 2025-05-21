@@ -1,9 +1,9 @@
 This property accepts one of the following values:
 
-- A <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors" target="_blank">CSS selector</a>, or a <a href="https://api.jquery.com/category/selectors/" target="_blank">jQuery selector</a> if you use jQuery
+---
+##### jQuery
 
-    ---
-    ##### jQuery
+- A <a href="https://api.jquery.com/category/selectors/" target="_blank">jQuery selector</a>.
 
         <!--tab: index.js-->
         $(function(){
@@ -13,53 +13,7 @@ This property accepts one of the following values:
             });
         });
 
-    ##### Angular
-
-        <!-- tab: app.component.html -->
-        <dx-{widget-name} ... 
-            target="#targetElement"
-        >
-        </dx-{widget-name}>
-
-    ##### Vue
-
-        <!-- tab: App.vue -->
-        <template>
-            <Dx{WidgetName} ... 
-                target="#targetElement"
-            >
-            </Dx{WidgetName}>
-        </template>
-        <script>
-        import { Dx{WidgetName} } from 'devextreme-vue/{widget-name}';
-
-        export default {
-            components: {
-                Dx{WidgetName}
-            }
-        };
-        </script>
-
-    ##### React
-
-        <!-- tab: App.js -->
-        import {WidgetName} from 'devextreme-react/{widget-name}';
-        // ...
-        function App() {
-            return (
-                <{WidgetName} ... 
-                    target="#targetElement"
-                >
-                </{WidgetName}>
-            );
-        }
-
-    ---
-
 - A jQuery wrapper    
-
-    ---
-    ##### jQuery
 
         <!--tab: index.js-->
         $(function(){
@@ -69,12 +23,7 @@ This property accepts one of the following values:
             });
         });
 
-    ---
-
 - A DOM element
-
-    ---
-    ##### jQuery
 
         <!--tab: index.js-->
         $(function(){
@@ -84,7 +33,33 @@ This property accepts one of the following values:
             });
         });
 
-    ##### Angular
+##### Angular
+
+- A <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors" target="_blank">CSS selector</a>
+
+        <!-- tab: app.component.html -->
+        <dx-{widget-name} ... 
+            target="#targetElement"
+        >
+        </dx-{widget-name}>
+
+    [note]
+
+    The component supports only valid [CSS identifiers](https://www.w3.org/TR/CSS2/syndata.html#value-def-identifier). To target elements with invalid identifiers, specify an [attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) instead.
+
+        <!-- tab: app.component.html -->
+        <dx-{widget-name} ... 
+            target="#111" // An invalid CSS identifier
+        >
+        </dx-{widget-name}>
+        <dx-{widget-name} ... 
+            target="[id='#111']" // An attribute selector
+        >
+        </dx-{widget-name}>
+
+    [/note]
+
+- A DOM element
 
         <!-- tab: app.component.html -->
         <dx-{widget-name} ... 
@@ -101,7 +76,40 @@ This property accepts one of the following values:
             }
         }
 
-    ##### Vue
+##### Vue
+
+- A <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors" target="_blank">CSS selector</a>
+
+        <!-- tab: App.vue -->
+        <template>
+            <Dx{WidgetName} ... 
+                target="#targetElement"
+            >
+            </Dx{WidgetName}>
+        </template>
+        <script setup lang="ts">
+        import { Dx{WidgetName} } from 'devextreme-vue/{widget-name}';
+        </script>
+
+    [note]
+
+    The component supports only valid [CSS identifiers](https://www.w3.org/TR/CSS2/syndata.html#value-def-identifier). To target elements with invalid identifiers, specify an [attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) instead.
+
+        <!-- tab: App.vue -->
+        <template>
+            <Dx{WidgetName} ... 
+                target="#111" // An invalid CSS identifier
+            >
+            </Dx{WidgetName}>
+            <Dx{WidgetName} ... 
+                target="[id='#111']" // An attribute selector
+            >
+            </Dx{WidgetName}>
+        </template>
+
+    [/note]
+
+- A DOM element
 
         <!-- tab: App.vue -->
         <template>
@@ -128,7 +136,45 @@ This property accepts one of the following values:
         };
         </script>
 
-    ##### React
+##### React
+
+- A <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors" target="_blank">CSS selector</a>
+
+        <!-- tab: App.js -->
+        import {WidgetName} from 'devextreme-react/{widget-name}';
+        // ...
+        function App() {
+            return (
+                <{WidgetName} ... 
+                    target="#targetElement"
+                >
+                </{WidgetName}>
+            );
+        }
+
+    [note]
+
+    The component supports only valid [CSS identifiers](https://www.w3.org/TR/CSS2/syndata.html#value-def-identifier). To target elements with invalid identifiers, specify an [attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) instead.
+
+        <!-- tab: App.js -->
+        import {WidgetName} from 'devextreme-react/{widget-name}';
+        // ...
+        function App() {
+            return (
+                <{WidgetName} ... 
+                    target="#111" // An invalid CSS identifier
+                >
+                </{WidgetName}>
+                <{WidgetName} ... 
+                    target="[id='#111']" // An attribute selector
+                >
+                </{WidgetName}>
+            );
+        }
+
+    [/note]
+
+- A DOM element
 
         <!-- tab: App.js -->
         import React, { useEffect, useState } from 'react';
@@ -146,5 +192,5 @@ This property accepts one of the following values:
                 </{WidgetName}>
             );
         }
-
-    ---
+    
+---

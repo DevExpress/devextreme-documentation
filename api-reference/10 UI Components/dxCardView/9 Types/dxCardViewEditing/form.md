@@ -158,7 +158,7 @@ Do not specify the following properties in the **form** object:
 
 - [Event](/api-reference/10%20UI%20Components/dxForm/4%20Events '/Documentation/ApiReference/UI_Components/dxForm/Events/') handlers ([properties](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/onContentReady.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#onContentReady') that start with *"on..."*), except for [onInitialized](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/onInitialized.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#onInitialized') and [onContentReady](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/onContentReady.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#onContentReady')
 
-Also, the [colCount](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/colCount.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#colCount') property defaults to 2, but can be redefined.
+The [colCount](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/colCount.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#colCount') property defaults to 2, but can be redefined.
 
 #include widgets-config-object-option-note with {
     optionName: "form"

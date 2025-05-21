@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether paging must be performed on the server side.
+Specifies whether paging must be performed on the server.
 
 ---
 <!-- Description goes here -->

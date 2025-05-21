@@ -8,4 +8,4 @@ default: false
 Specifies whether grouping must be performed on the server side.
 
 ---
-<!-- Description goes here -->
+Grouping is required only when a user can filter data using a [header filter]({basewidgetpath}/Configuration/headerFilter/).

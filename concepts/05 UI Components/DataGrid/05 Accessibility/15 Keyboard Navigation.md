@@ -1,4 +1,4 @@
-DataGrid offers different keyboard controls depending on what action users wish to perform.
+DataGrid offers different keyboard controls depending on which action users want to perform.
 
 [note] On macOS, Cmd replaces the Ctrl key.
 

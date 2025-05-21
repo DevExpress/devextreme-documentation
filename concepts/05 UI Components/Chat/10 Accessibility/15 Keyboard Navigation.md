@@ -11,7 +11,7 @@ A user can use the following keys to interact with the Chat component:
     </tr>
     <tr>
         <td>Esc</td>
-        <td>Cancels changes made to the edited message.</td>
+        <td>Cancels message editing.</td>
     </tr>
 </table>
 

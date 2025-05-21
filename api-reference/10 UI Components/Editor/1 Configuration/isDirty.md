@@ -141,4 +141,4 @@ This property is a read-only flag. You can use it to check if the editor value c
 ---
 
 #####See Also#####
-- [reset](/api-reference/10%20UI%20Components/Editor/3%20Methods/reset().md '{basewidgetpath}/Methods/#reset')
+- [reset](/api-reference/10%20UI%20Components/Editor/3%20Methods/reset(value).md '{basewidgetpath}/Methods/#resetvalue')

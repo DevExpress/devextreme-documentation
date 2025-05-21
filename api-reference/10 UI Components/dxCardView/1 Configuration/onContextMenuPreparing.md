@@ -37,7 +37,7 @@ he name of the element on which the context menu is invoked: *"headerPanel"*, *"
 #include common-ref-elementparam with { element: "CardView element" }
 
 ---
-In the following code, the **onContextMenuPreparing** function adds a custom item to the context menu invoked when a user right-clicks any column header:
+In the following code, the **onContextMenuPreparing** function adds a custom item to the context menu that is invoked when a user right-clicks any column header:
 
 ---
 ##### jQuery

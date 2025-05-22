@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised after card changes are discarded.
 
 ---
-<!-- Description goes here -->
+Main article: [onEditCanceled](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#onEditCanceled)
+
+#####See Also#####
+#include common-link-handleevents

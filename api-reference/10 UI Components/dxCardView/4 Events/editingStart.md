@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before a card switches to the editing state.
 
 ---
-<!-- Description goes here -->
+Main article: [onEditingStart](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#onEditingStart)
+
+#####See Also#####
+#include common-link-handleevents

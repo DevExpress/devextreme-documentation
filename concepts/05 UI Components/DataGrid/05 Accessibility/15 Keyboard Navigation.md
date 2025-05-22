@@ -1,8 +1,16 @@
 DataGrid offers different keyboard controls depending on which action users want to perform.
 
-[note] On macOS, Cmd replaces the Ctrl key.
-
 ### Navigation
+
+[note]
+
+The **Ctrl + Home** and **Ctrl + End** shortcuts do not support DataGrid components with:
+
+- Group summaries
+- Grouped data
+- Expanded master-detail interfaces
+
+[/note]
 
 <table class="dx-table full-width">
     <tr>

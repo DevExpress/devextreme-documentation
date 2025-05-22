@@ -14,7 +14,7 @@ You can specify any [Popup property](/api-reference/10%20UI%20Components/dxPopup
 - [showTitle](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/showTitle.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#showTitle')
 - [toolbarItems](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/toolbarItems '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/toolbarItems/')
 
-The popup always contains a form whose items are used for editing. Use the [form]({basewidgetpath}/Configuration/editing/#form) property to customize the form's items.
+The popup always contains a form whose items are used for editing. Use the [form](/api-reference/10%20UI%20Components/dxCardView/9%20Types/dxCardViewEditing/form.md '{basewidgetpath}/Configuration/editing/#form') property to customize the form's items.
 
 #include widgets-config-object-option-note with {
     optionName: "popup"

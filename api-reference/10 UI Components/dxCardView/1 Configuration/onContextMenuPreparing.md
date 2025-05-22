@@ -16,7 +16,7 @@ The card properties.
 The index of the card on which the context menu is invoked.
 
 ##### field(e.column): Column
-This column's [configuration]({basewidgetpath}/Configuration/columns/).
+This column's [configuration](/api-reference/10%20UI%20Components/dxCardView/9%20Types/ColumnProperties '{basewidgetpath}/Configuration/columns/').
 
 ##### field(e.columnIndex): Number
 The index of the column on which the context menu is invoked.

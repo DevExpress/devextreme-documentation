@@ -22,4 +22,4 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "UI component" }
 
 ---
-An edit operation can be canceled from the UI (with the Cancel button) or programatically (with the [cancelEditData()]({basewidgetpath}/Methods/#cancelEditData) method).
+An edit operation can be canceled from the UI (with the Cancel button) or programatically (with the [cancelEditData()](/api-reference/10%20UI%20Components/dxCardView/3%20Methods/cancelEditData().md '{basewidgetpath}/Methods/#cancelEditData') method).

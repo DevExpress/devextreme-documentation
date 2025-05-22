@@ -7,7 +7,7 @@ type: Object
 Configures the form inside the editing popup.
 
 ---
-Default form editors depend on the [columns' configuration]({basewidgetpath}/Configuration/columns/). If the generated form does not meet your requirements, and you need to reorganize form items or set other [form properties](/api-reference/10%20UI%20Components/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/'), specify it in the **form** object. To link a [form item](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#items') with a CardView field, assign identical values to the **form**.**items**.[dataField](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/dataField.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#dataField') and **columns**.[dataField]({basewidgetpath}/Configuration/columns/#dataField) properties.
+Default form editors depend on the [columns' configuration](/api-reference/10%20UI%20Components/dxCardView/9%20Types/ColumnProperties '{basewidgetpath}/Configuration/columns/'). If the generated form does not meet your requirements, and you need to reorganize form items or set other [form properties](/api-reference/10%20UI%20Components/dxForm/1%20Configuration '/Documentation/ApiReference/UI_Components/dxForm/Configuration/'), specify it in the **form** object. To link a [form item](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#items') with a CardView field, assign identical values to the **form**.**items**.[dataField](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/dataField.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#dataField') and **columns**.[dataField](/api-reference/10%20UI%20Components/dxCardView/9%20Types/ColumnProperties/dataField.md '{basewidgetpath}/Configuration/columns/#dataField') properties.
 
 ---
 ##### jQuery
@@ -154,7 +154,7 @@ Default form editors depend on the [columns' configuration]({basewidgetpath}/Con
 
 Do not specify the following properties in the **form** object:
 
-- [readOnly](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/readOnly.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly') (use [columns[]]({basewidgetpath}/Configuration/columns/).[allowEditing]({basewidgetpath}/Configuration/columns/#allowEditing) instead)             
+- [readOnly](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/readOnly.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly') (use [columns[]]({basewidgetpath}/Configuration/columns/).[allowEditing](/api-reference/10%20UI%20Components/dxCardView/9%20Types/ColumnProperties/allowEditing.md '{basewidgetpath}/Configuration/columns/#allowEditing') instead)             
 
 - [Event](/api-reference/10%20UI%20Components/dxForm/4%20Events '/Documentation/ApiReference/UI_Components/dxForm/Events/') handlers ([properties](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/onContentReady.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#onContentReady') that start with *"on..."*), except for [onInitialized](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/onInitialized.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#onInitialized') and [onContentReady](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/onContentReady.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#onContentReady')
 
@@ -164,4 +164,4 @@ The [colCount](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/colC
     optionName: "form"
 }
 
-If you need to customize an individual form item, use the [formItem]({basewidgetpath}/Configuration/columns/#formItem) object.
+If you need to customize an individual form item, use the [formItem](/api-reference/10%20UI%20Components/dxCardView/9%20Types/ColumnProperties/formItem.md '{basewidgetpath}/Configuration/columns/#formItem') object.

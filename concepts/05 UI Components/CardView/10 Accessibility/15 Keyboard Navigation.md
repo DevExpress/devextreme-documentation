@@ -1,5 +1,7 @@
 CardView offers different keyboard controls depending on the focused component area and which action users want to perform.
 
+[note] On macOS, Cmd replaces the Ctrl key.
+
 ### Toolbar
 
 <table class="dx-table">
@@ -36,7 +38,7 @@ CardView offers different keyboard controls depending on the focused component a
     </tr>
     <tr>
         <td>Shift + &rarr;<br/>Shift + &larr;</td>
-        <td>Reorders the focused header item if <a href="">allowColumnReordering</a> is "true".</td>
+        <td>Reorders the focused header item if <a href="/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#allowColumnReordering">allowColumnReordering</a> is "true".</td>
     </tr>
 </table>
 
@@ -53,7 +55,7 @@ CardView offers different keyboard controls depending on the focused component a
     </tr>
     <tr>
         <td>Shift + Enter<br/>Shift + Click</td>
-        <td>Enables/cycles between focused header sorting without clearing previous sorting options if <b>sorting</b>.<a href="">mode</a> is multiple.</td>
+        <td>Enables/cycles between focused header sorting without clearing previous sorting options if <b>sorting</b>.<a href="/Documentation/ApiReference/UI_Components/dxCardView/Configuration/sorting/#mode">mode</a> is "multiple".</td>
     </tr>
     <tr>
         <td>Ctrl + Enter<br/>Ctrl + Click</td>
@@ -80,7 +82,7 @@ CardView offers different keyboard controls depending on the focused component a
     </tr>
     <tr>
         <td>PageUp<br/>PageDown</td>
-        <td>Moves focus to the previous/next page if <b>paging</b>.<a href="">enabled</a> is "true".</td>
+        <td>Moves focus to the previous/next page if <b>paging</b>.<a href="/Documentation/ApiReference/UI_Components/dxCardView/Configuration/paging/#enabled">enabled</a> is "true".</td>
     </tr>
     <tr>
         <td>Home<br/>End</td>
@@ -101,11 +103,11 @@ CardView offers different keyboard controls depending on the focused component a
     </tr>
     <tr>
         <td>Space</td>
-        <td>Toggles selection of the focused card and clears previous selection.</td>
+        <td>Toggles selection of the focused card and clears previous selection if <b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxCardView/Configuration/selection/#mode">mode</a> is "single".</td>
     </tr>
     <tr>
         <td>Ctrl + Click</td>
-        <td>Toggles selection of the focused card without clearing previous selection if <b>selection</b>.<a href="">mode</a> is "multiple".</td>
+        <td>Toggles selection of the focused card without clearing previous selection if <b>selection</b>.<b>mode</b> is "multiple" and <b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxCardView/Configuration/selection/#showCheckBoxesMode">showCheckBoxesMode</a> is "onClick".</td>
     </tr>
     <tr>
         <td>Shift + Space<br/>Shift + Click</td>
@@ -117,7 +119,7 @@ CardView offers different keyboard controls depending on the focused component a
     </tr>
     <tr>
         <td>Ctrl + F</td>
-        <td>Moves focus to the search panel if <b>searchPanel</b>.<a href="">visible</a> is enabled.</td>
+        <td>Moves focus to the search panel if <b>searchPanel</b>.<a href="/Documentation/ApiReference/UI_Components/dxCardView/Configuration/searchPanel/#visible">visible</a> is enabled.</td>
     </tr>
 </table>
 

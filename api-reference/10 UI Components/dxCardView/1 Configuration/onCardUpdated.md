@@ -4,22 +4,23 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed after a card was updated in the data source.
 
 ##### param(e): ui/card_view:CardUpdatedEvent
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.data): any
-<!-- Description goes here -->
+The updated data of the card.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.key): any
-<!-- Description goes here -->
+The card's key.  
+If no field specifies the keys in the [data source]({basewidgetpath}/Configuration/#dataSource), the entire data object acts as the key.
 
 ---
 <!-- Description goes here -->

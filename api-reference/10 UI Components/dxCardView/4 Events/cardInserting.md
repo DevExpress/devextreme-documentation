@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before a new card is inserted into the data source.
 
 ---
-<!-- Description goes here -->
+Main article: [onCardInserting](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#onCardInserting)
+
+#####See Also#####
+#include common-link-handleevents

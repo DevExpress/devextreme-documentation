@@ -4,25 +4,26 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before a card is removed from the data source.
 
 ##### param(e): ui/card_view:CardRemovingEvent
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+`true`, a Promise resolved with `true`, or a rejected Promise stops card removal.       
+`false` or a Promise resolved with `false` or `undefined` continues card removal.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.data): any
-<!-- Description goes here -->
+The data of the card that should be removed.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.key): any
-<!-- Description goes here -->
+The card's key.
 
 ---
 <!-- Description goes here -->

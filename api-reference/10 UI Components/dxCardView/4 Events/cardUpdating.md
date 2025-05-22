@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before a card is updated in the data source.
 
 ---
-<!-- Description goes here -->
+Main article: [onCardUpdating](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#onCardUpdating)
+
+#####See Also#####
+#include common-link-handleevents

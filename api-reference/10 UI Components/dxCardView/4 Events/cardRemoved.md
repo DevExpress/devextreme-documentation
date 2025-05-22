@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised after a card was removed from the data source.
 
 ---
-<!-- Description goes here -->
+Main article: [onCardRemoved](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#onCardRemoved)
+
+#####See Also#####
+#include common-link-handleevents

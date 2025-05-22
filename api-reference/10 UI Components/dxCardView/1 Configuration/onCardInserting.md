@@ -4,22 +4,23 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before a new card is inserted into the data source.
 
 ##### param(e): ui/card_view:CardInsertingEvent
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+`true`, a Promise resolved with `true`, or a rejected Promise stops card insertion.       
+`false` or a Promise resolved with `false` or `undefined` continues card insertion.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.data): Object
-<!-- Description goes here -->
+The data of the card that should be inserted.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ---
 <!-- Description goes here -->

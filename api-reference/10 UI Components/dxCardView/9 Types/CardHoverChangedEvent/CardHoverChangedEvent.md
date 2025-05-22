@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The argument type in the [cardHoverChanged]({basewidgetpath}/Events/#cardHoverChanged) event.
 
 ---
 <!-- Description goes here -->

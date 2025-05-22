@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The argument type in the [focusedCardChanged]({basewidgetpath}/Events/#focusedCardChanged) event.
 
 ---
 <!-- Description goes here -->

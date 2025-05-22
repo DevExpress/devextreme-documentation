@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The argument type in the [fieldCaptionPrepared]({basewidgetpath}/Events/#fieldCaptionPrepared) event.
 
 ---
 <!-- Description goes here -->

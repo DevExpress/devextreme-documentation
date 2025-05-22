@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The argument type in the [cardRemoved]({basewidgetpath}/Events/#cardRemoved) event.
 
 ---
 <!-- Description goes here -->

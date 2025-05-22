@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The argument type in the [editCanceling]({basewidgetpath}/Events/#editCanceling) event.
 
 ---
 <!-- Description goes here -->

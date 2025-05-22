@@ -1,7 +1,5 @@
 CardView offers different keyboard controls depending on the focused component area and which action users want to perform.
 
-[note] On macOS, Cmd replaces the Ctrl key.
-
 ### Toolbar
 
 <table class="dx-table">

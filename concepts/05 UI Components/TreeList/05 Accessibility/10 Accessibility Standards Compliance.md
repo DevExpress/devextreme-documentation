@@ -29,13 +29,7 @@ The TreeList component meets a variety of <a href="https://www.access-board.gov/
     <tr>
         <td>-</td>
         <td>2.5.7 Dragging Movements (Level AA 2.2 only)</td>
-        <td>
-            <ul>
-                <li>ColumnChooser in 'drag' mode.</li>
-                <li>Node drag and drop.</li>
-                <li>Column reordering.</li>
-            </ul>    
-        </td>
+        <td>ColumnChooser in 'drag' mode.</td>
     </tr>
     <tr>
         <td>-</td>

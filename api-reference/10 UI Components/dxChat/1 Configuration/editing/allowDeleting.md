@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether a user can delete messages. It is called for each message when defined as a function.
+Specifies whether a user can delete messages. Called for each message when defined as a function.
 
 ##### param(options): Object
 Information about the current message.
@@ -20,4 +20,4 @@ Message data.
 `true` if the message can be deleted; otherwise `false`.
 
 ---
-If set to `false`, no messages can be deleted. If set to `true`, only current user can delete their messages.
+If `false`, no messages can be deleted. If `true`, only the current user can delete their messages.

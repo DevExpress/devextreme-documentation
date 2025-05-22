@@ -5,25 +5,26 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before a message is edited in the UI.
 
 ##### param(e): ui/chat:MessageUpdatingEvent
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean | Promise<Boolean>
-<!-- Description goes here -->
+`true`, a Promise resolved with `true`, or a rejected Promise stops message update.       
+`false` or a Promise resolved with `false` or `undefined` continues message update.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.message): Message
-<!-- Description goes here -->
+Old message data.
 
 ##### field(e.text): String
-<!-- Description goes here -->
+The updated text from the input field.
 
 ---
 <!-- Description goes here -->

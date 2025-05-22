@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-The type of the [messageEntered]({basewidgetpath}/Events/#messageEntered) event handler's argument.
+The argument type in the [messageEntered]({basewidgetpath}/Events/#messageEntered) event.
 
 ---
 <!-- Description goes here -->

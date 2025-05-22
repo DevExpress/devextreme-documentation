@@ -5,22 +5,22 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed after a message was edited in the UI.
 
 ##### param(e): ui/chat:MessageUpdatedEvent
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.message): Message
-<!-- Description goes here -->
+Old message data.
 
 ##### field(e.text): String
-<!-- Description goes here -->
+The updated text from the input field.
 
 ---
 <!-- Description goes here -->

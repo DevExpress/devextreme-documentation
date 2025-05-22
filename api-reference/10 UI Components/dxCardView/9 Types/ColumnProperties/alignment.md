@@ -7,7 +7,7 @@ type: Enums.HorizontalAlignment | undefined
 Aligns the content of the column.
 
 ---
-The default alignment of the content depends on the [type of data]({basewidgetpath}/Configuration/columns/#dataType). 
+The default alignment of the content depends on the [type of data](/api-reference/10%20UI%20Components/dxCardView/9%20Types/ColumnProperties/dataType.md '{basewidgetpath}/Configuration/columns/#dataType'). 
 
 <table class="dx-table">
   <tr>

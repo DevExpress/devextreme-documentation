@@ -14,6 +14,6 @@ The Chat component meets a variety of <a href="https://www.access-board.gov/ict/
     <tr>
         <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
         <td>2.1.1 Keyboard (Level A) <br> 11.5.2.12 Execution of available actions</td>
-        <td>You cannot edit or delete messages in Chat with the keyboard.</td>
+        <td>You cannot edit or delete Chat messages with the keyboard.</td>
     </tr>
 </table>

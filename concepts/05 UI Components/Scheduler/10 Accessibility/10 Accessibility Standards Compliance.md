@@ -35,7 +35,7 @@ The Scheduler component meets a variety of <a href="https://www.access-board.gov
         <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
         <td>3.2.2 On Input (Level A)</td>
         <td>
-            Scheduler changes context when moving between:
+            Scheduler changes the context when moving between:
             <ul>
                 <li>Recurrence editor in the editing popup</li>
                 <li>"End repeat" radio group items</li>

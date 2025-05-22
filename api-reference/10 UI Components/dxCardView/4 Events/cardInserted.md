@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-Raised after a new card was inserted into the data source.
+Raised after a new card is inserted into the data source.
 
 ---
 Main article: [onCardInserted](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#onCardInserted)

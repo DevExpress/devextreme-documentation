@@ -4,7 +4,7 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-A function that is executed after a card was updated in the data source.
+A function that is executed after a card is updated in the data source.
 
 ##### param(e): ui/card_view:CardUpdatedEvent
 Information about the event that caused the function's execution.

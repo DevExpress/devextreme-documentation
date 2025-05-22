@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when a card is double-clicked or double-tapped.
 
 ---
-<!-- Description goes here -->
+Main article: [onCardDblClick](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#onCardDblClick)
+
+#####See Also#####
+#include common-link-handleevents

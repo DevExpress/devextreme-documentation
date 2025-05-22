@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before after the focused card changes.
 
 ---
-<!-- Description goes here -->
+Main article: [onFocusedCardChanged](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#onFocusedCardChanged)
+
+#####See Also#####
+#include common-link-handleevents

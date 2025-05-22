@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before a new card is added to the component.
 
 ---
-<!-- Description goes here -->
+Main article: [onInitNewCard](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#onInitNewCard)
+
+#####See Also#####
+#include common-link-handleevents

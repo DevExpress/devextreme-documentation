@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The argument type in the [cardDblClick]({basewidgetpath}/Events/#cardDblClick) event.
 
 ---
 <!-- Description goes here -->

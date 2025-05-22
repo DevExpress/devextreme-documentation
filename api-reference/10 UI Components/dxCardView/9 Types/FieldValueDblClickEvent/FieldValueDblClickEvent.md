@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The argument type in the [fieldValueDblClick]({basewidgetpath}/Events/#fieldValueDblClick) event.
 
 ---
 <!-- Description goes here -->

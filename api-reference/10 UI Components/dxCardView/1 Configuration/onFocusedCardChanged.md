@@ -4,22 +4,22 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed after the focused card changes.
 
 ##### param(e): ui/card_view:FocusedCardChanged
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.card): CardInfo
-<!-- Description goes here -->
+The card properties.
 
 ##### field(e.cardElement): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "focused card" }
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ---
 <!-- Description goes here -->

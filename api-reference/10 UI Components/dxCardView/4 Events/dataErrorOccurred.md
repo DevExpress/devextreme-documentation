@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when an error occurs in the data source.
 
 ---
-<!-- Description goes here -->
+Main article: [onDataErrorOccurred](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#onDataErrorOccurred)
+
+#####See Also#####
+#include common-link-handleevents

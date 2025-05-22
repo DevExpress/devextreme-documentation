@@ -4,28 +4,29 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before a card is updated in the data source.
 
 ##### param(e): ui/card_view:CardUpdatingEvent
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+`true`, a Promise resolved with `true`, or a rejected Promise stops card updating.       
+`false` or a Promise resolved with `false` or `undefined` continues card updating.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.key): any
-<!-- Description goes here -->
+The card's key.
 
 ##### field(e.newData): Object
-<!-- Description goes here -->
+The card's updated data.
 
 ##### field(e.oldData): any
-<!-- Description goes here -->
+The card's old data.
 
 ---
 <!-- Description goes here -->

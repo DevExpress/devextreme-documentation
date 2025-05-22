@@ -115,7 +115,7 @@ CardView offers different keyboard controls depending on the focused component a
     </tr>
     <tr>
         <td>Ctrl + A</td>
-        <td>Toggles selection of all cards if <b>selection</b>.<b>mode</b> is "multiple".</td>
+        <td>Selects all cards if <b>selection</b>.<b>mode</b> is "multiple".</td>
     </tr>
     <tr>
         <td>Ctrl + F</td>

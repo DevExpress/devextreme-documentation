@@ -1,4 +1,4 @@
-CardView offers different keyboard controls depending on the focused component area and which action users want to perform.
+CardView offers different keyboard controls depending on the focused component area and the action users want to perform.
 
 ### Toolbar
 

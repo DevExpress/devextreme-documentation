@@ -4,7 +4,7 @@ DataGrid offers different keyboard controls depending on which action users want
 
 [note]
 
-The **Ctrl + Home** and **Ctrl + End** shortcuts do not support DataGrid components with:
+The **Ctrl+Home** and **Ctrl+End** shortcuts are not supported in DataGrid components with:
 
 - Group summaries
 - Grouped data

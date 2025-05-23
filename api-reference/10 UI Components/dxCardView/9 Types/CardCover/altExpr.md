@@ -4,13 +4,13 @@ type: String | function(data)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies which data field to use as the `alt` argument of the cover image.
 
 ##### param(data): any
-<!-- Description goes here -->
+The card's data.
 
 ##### return: String
-<!-- Description goes here -->
+The calculated `alt` attribute.
 
 ---
 <!-- Description goes here -->

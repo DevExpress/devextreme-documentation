@@ -1,10 +1,11 @@
 ---
 id: dxCardView.Options.cardCover
 type: CardCover
+inheritsType: CardCover
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures card cover.
 
 ---
 <!-- Description goes here -->

@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the minimum width of the card.
 
 ---
 <!-- Description goes here -->

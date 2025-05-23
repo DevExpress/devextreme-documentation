@@ -1,17 +1,12 @@
 ---
 ##### jQuery
-[Add DevExtreme to your jQuery application](/concepts/58%20jQuery%20Components/05%20Add%20DevExtreme%20to%20a%20jQuery%20Application/00%20Add%20DevExtreme%20to%20a%20jQuery%20Application.md '/Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/') and use the code below to create a Stepper component with six steps. This example utilizes the [items[]](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/) array, but you can use [dataSource](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/dataSource/) to define steps as well. If you do not specify at least one step, Stepper will display no data.
+[Add DevExtreme to your jQuery application](/concepts/58%20jQuery%20Components/05%20Add%20DevExtreme%20to%20a%20jQuery%20Application/00%20Add%20DevExtreme%20to%20a%20jQuery%20Application.md '/Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/') and use the code below to create a Stepper component with one step. This example utilizes the [items[]](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/) array, but you can use [dataSource](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/dataSource/) to define steps as well. If you do not specify at least one step, Stepper will display no data.
 
     <!-- tab: index.js -->
     $(function() {
         $("#stepper").dxStepper({
             items: [
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
+                {}
             ]
         });
     });
@@ -33,20 +28,16 @@
 
 ##### Angular
 
-[Add DevExtreme to your Angular application](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/') and use the code below to create a Stepper component with six steps. This example utilizes the [items[]](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/) array, but you can use [dataSource](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/dataSource/) to define steps as well. If you do not specify at least one step, Stepper will display no data.
+[Add DevExtreme to your Angular application](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/') and use the code below to create a Stepper component with one step. This example utilizes the [items[]](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/) array, but you can use [dataSource](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/dataSource/) to define steps as well. If you do not specify at least one step, Stepper will display no data.
 
     <!-- tab: app.component.html -->
-    <dx-stepper>
-        <dxi-item />
-        <dxi-item />
-        <dxi-item />
-        <dxi-item />
-        <dxi-item />
-        <dxi-item />
+    <dx-stepper
+        [items]="steps">
     </dx-stepper>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
+    import { DxStepperTypes } from 'devextreme-angular/stepper';
 
     @Component({
         selector: 'app-root',
@@ -54,15 +45,17 @@
         styleUrls: ['./app.component.css']
     })
     export class AppComponent {
-
+        steps = [
+            {}
+        ]
     }
 
     <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
     import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
+    import { BrowserModule } from '@angular/platform-browser';
     import { DxStepperModule } from 'devextreme-angular';
+    import { AppRoutingModule } from './app-routing.module';
+    import { AppComponent } from './app.component';
 
     @NgModule({
         declarations: [
@@ -70,50 +63,53 @@
         ],
         imports: [
             BrowserModule,
+            AppRoutingModule,
             DxStepperModule
         ],
-        providers: [ ],
+        providers: [],
         bootstrap: [AppComponent]
     })
     export class AppModule { }
 
 ##### Vue
 
-[Add DevExtreme to your Vue application](/concepts/55%20Vue%20Components/05%20Add%20DevExtreme%20to%20a%20Vue%20Application/00%20Add%20DevExtreme%20to%20a%20Vue%20Application.md '/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/') and use the code below to create a Stepper component with six steps. This example utilizes the [items[]](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/) array, but you can use [dataSource](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/dataSource/) to define steps as well. If you do not specify at least one step, Stepper will display no data.
+[Add DevExtreme to your Vue application](/concepts/55%20Vue%20Components/05%20Add%20DevExtreme%20to%20a%20Vue%20Application/00%20Add%20DevExtreme%20to%20a%20Vue%20Application.md '/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/') and use the code below to create a Stepper component with one step. This example utilizes the [items[]](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/) array, but you can use [dataSource](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/dataSource/) to define steps as well. If you do not specify at least one step, Stepper will display no data.
 
     <!-- tab: App.vue -->
     <script setup lang="ts">
         import { DxStepper, DxItem, DxStepperTypes } from 'devextreme-vue/stepper';
+        import { reactive } from 'vue';
+        const items = reactive([
+            {}
+        ]);
     </script>
     <template>
-        <DxStepper>
-            <DxItem />
-            <DxItem />
-            <DxItem />
-            <DxItem />
-            <DxItem />
-            <DxItem />
+        <DxStepper ref="stepperRef">
+            <DxItem
+                v-for="(item, index) in items"
+                :key="index"
+            />
         </DxStepper>
     </template>
 
 ##### React
 
-[Add DevExtreme to your React application](/concepts/50%20React%20Components/05%20Add%20DevExtreme%20to%20a%20React%20Application/00%20Add%20DevExtreme%20to%20a%20React%20Application.md '/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/') and use the code below to create a Stepper component with six steps. This example utilizes the [items[]](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/) array, but you can use [dataSource](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/dataSource/) to define steps as well. If you do not specify at least one step, Stepper will display no data.
+[Add DevExtreme to your React application](/concepts/50%20React%20Components/05%20Add%20DevExtreme%20to%20a%20React%20Application/00%20Add%20DevExtreme%20to%20a%20React%20Application.md '/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/') and use the code below to create a Stepper component with one step. This example utilizes the [items[]](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/) array, but you can use [dataSource](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/dataSource/) to define steps as well. If you do not specify at least one step, Stepper will display no data.
 
     <!-- tab: App.tsx -->
-    import { JSX } from 'react';
+    import React, { JSX, useState } from 'react';
     import { Stepper, Item, StepperTypes } from 'devextreme-react/stepper';
-    import React from 'react';
 
     export default function App(): JSX.Element {
+        const [steps, setSteps] = useState([
+            {}
+        ]);
+
         return (
             <Stepper>
-                <Item />
-                <Item />
-                <Item />
-                <Item />
-                <Item />
-                <Item />
+                {steps.map((item, index) => (
+                    <Item key={index} {...item} />
+                ))}
             </Stepper>
         );
     }

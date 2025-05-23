@@ -30,22 +30,26 @@ This tutorial uses **onSelectionChanged** to disable steps as users move through
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-stepper (onSelectionChanged)="onSelectionChanged($event)">
+    <dx-stepper 
+        [items]="steps"
+        (onSelectionChanged)="onSelectionChanged($event)">
         // ...
     </dx-stepper>
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
+    // ...
 
     @Component({
         // ...
     })
     export class AppComponent {
-        onSelectionChanged(e: DxStepperTypes.SelectionChangedEvent) {
+        onSelectionChanged(e: DxStepperTypes.SelectionChangedEvent): void {
             const newItem = e.addedItems[0];
-            const items = e.component.option('items');
-            const newIndex = items.findIndex((item) => newItem.label === item.label);
-            e.component.option(`items[${newIndex - 1}].disabled`, true);
+            const newIndex = this.steps.findIndex(item => item.label === newItem.label);
+
+            if (newIndex > 0 && !this.steps[newIndex - 1].disabled) {
+                this.steps[newIndex - 1].disabled = true;
+            }
         }
     }
 
@@ -57,13 +61,14 @@ This tutorial uses **onSelectionChanged** to disable steps as users move through
         // ...
         const onSelectionChanged = (e: DxStepperTypes.SelectionChangedEvent) => {
             const newItem = e.addedItems[0];
-            const items = e.component.option('items');
-            const newIndex = items.findIndex((item) => newItem.label === item.label);
-            e.component.option(`items[${newIndex - 1}].disabled`, true);
+            const newIndex = items.findIndex((item) => item.label === newItem.label);
+            if (newIndex > 0) {
+                items[newIndex - 1].disabled = true;
+            }
         };
     </script>
     <template>
-        <DxStepper @selection-changed="onSelectionChanged">
+        <DxStepper ref="stepperRef" @selection-changed="onSelectionChanged">
             <!-- ... -->
         </DxStepper>
     </template>
@@ -72,14 +77,22 @@ This tutorial uses **onSelectionChanged** to disable steps as users move through
 ##### React
 
     <!-- tab: App.tsx -->
-    const onSelectionChanged = (e: StepperTypes.SelectionChangedEvent) => {
-        const newItem = e.addedItems[0];
-        const items = e.component.option('items');
-        const newIndex = items.findIndex((item: StepperTypes.Item) => newItem.label === item.label);
-        e.component.option(`items[${newIndex - 1}].disabled`, true);
-    };
+    // ...
 
     export default function App(): JSX.Element {
+        // ...
+
+        const onSelectionChanged = (e: StepperTypes.SelectionChangedEvent) => {
+            const newItem = e.addedItems[0];
+            const newIndex = steps.findIndex((item) => item.label === newItem.label);
+
+            if (newIndex > 0 && !steps[newIndex - 1].disabled) {
+                const updated = [...steps];
+                updated[newIndex - 1] = { ...updated[newIndex - 1], disabled: true };
+                setSteps(updated);
+            }
+        };
+
         return (
             <Stepper onSelectionChanged={onSelectionChanged}>
                 // ...

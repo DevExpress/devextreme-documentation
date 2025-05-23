@@ -33,19 +33,28 @@ To learn how to define item templates, refer to [Object Structures - template](/
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-stepper>
-        <dxi-item 
-            label="Personal Details"
-            template="firstStep"
-        ></dxi-item>
-        <div *dxTemplate="let data of 'firstStep'">
-            <div class='star dx-step-indicator'></div>
-            <div class='dx-step-caption'>
-                <div class='dx-step-label'>{{ data.label }}</div>
+    <dx-stepper
+        [items]="steps">
+        <div *dxTemplate="let data of 'starTemplate'">
+            <div class="star dx-step-indicator"></div>
+            <div class="dx-step-caption">
+                <div class="dx-step-label">{{ data.label }}</div>
             </div>
         </div>
-        <!-- ... -->
     </dx-stepper>
+
+    <!-- tab: app.component.ts -->
+    // ...
+
+    @Component({
+        // ...
+    })
+    export class AppComponent {
+        steps = [
+            { label: 'Personal Details', template: 'starTemplate' },
+            // ...
+        ];
+    }
 
     <!-- tab: app.component.scss -->
     .star { 
@@ -60,17 +69,25 @@ To learn how to define item templates, refer to [Object Structures - template](/
     <!-- tab: App.vue -->
     <script setup lang="ts">
         // ...
+        const items = reactive([
+            { label: 'Personal Details', template: 'star' },
+            // ...
+        ]);
     </script>
     <template>
-        <DxStepper>
-            <DxItem label='Personal Details' template='star' />
+        <DxStepper ref="stepperRef" @selection-changed="onSelectionChanged">
+            <DxItem
+                v-for="(item, index) in items"
+                :key="index"
+                v-bind="item"
+                :template="item.template"
+            />
             <template #star="{ data }">
                 <div class="star dx-step-indicator"></div>
                 <div class="dx-step-caption">
                     <div class="dx-step-label">{{ data.label }}</div>
                 </div>
             </template>
-            <!-- ... -->
         </DxStepper>
     </template>
     <style>
@@ -85,20 +102,25 @@ To learn how to define item templates, refer to [Object Structures - template](/
 ##### React
 
     <!-- tab: App.tsx -->
-    const renderFirstItem = (data: StepperTypes.TemplateData) => 
-        <React.Fragment>
+    // ...
+
+    const renderFirstItem = (data: StepperTypes.TemplateData) => (
+        <>
             <div className="star dx-step-indicator"></div>
             <div className="dx-step-caption">
                 <div className="dx-step-label">{data.label}</div>
             </div>
-        </React.Fragment>;
+        </>
+    );
 
     export default function App(): JSX.Element {
+        const [steps, setSteps] = useState([
+            { label: 'Personal Details', render: renderFirstItem },
+            // ...
+        ]);
+
         return (
-            <Stepper>
-                <Item label="Personal Details" render={renderFirstItem} />
-                // ...
-            </Stepper>
+            // ...
         );
     }
 

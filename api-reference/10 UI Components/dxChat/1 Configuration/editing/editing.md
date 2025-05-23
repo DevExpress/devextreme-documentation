@@ -9,8 +9,8 @@ Configures editing.
 ---
 [note]
 
-- Before allowing a user to update and delete messages, make sure that your [data source](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#dataSource) supports these actions.
-- Set the [Store](/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores)'s **key** property to `"id"` to ensure editing functions correctly.
+- Before allowing a user to update and delete messages, make sure that your [data source](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#dataSource') supports these actions.
+- Set the [Store](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores')'s **key** property to `"id"` to ensure editing functions correctly.
 
 [/note]
 

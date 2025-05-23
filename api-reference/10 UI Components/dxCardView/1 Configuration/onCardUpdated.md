@@ -20,7 +20,7 @@ The updated data of the card.
 
 ##### field(e.key): any
 The card's key.  
-If no field specifies the keys in the [data source]({basewidgetpath}/Configuration/#dataSource), the entire data object acts as the key.
+If no field specifies the keys in the [data source](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource'), the entire data object acts as the key.
 
 ---
 <!-- Description goes here -->

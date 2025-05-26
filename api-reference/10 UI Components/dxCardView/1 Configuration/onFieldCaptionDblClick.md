@@ -4,25 +4,25 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed when a field caption is double-clicked or double-tapped.
 
 ##### param(e): ui/card_view:FieldCaptionDblClickEvent
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
-<!-- Description goes here -->
+#include common-ref-eventparam
 
 ##### field(e.field): dxCardViewFieldInfo
-<!-- Description goes here -->
+The field information.
 
 ##### field(e.fieldCaptionElement): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "field caption" }
 
 ---
 <!-- Description goes here -->

@@ -34,7 +34,8 @@ To learn how to define item templates, refer to [Object Structures - template](/
 
     <!-- tab: app.component.html -->
     <dx-stepper
-        [items]="steps">
+        [items]="steps"
+    >
         <div *dxTemplate="let data of 'starTemplate'">
             <div class="star dx-step-indicator"></div>
             <div class="dx-step-caption">
@@ -104,7 +105,7 @@ To learn how to define item templates, refer to [Object Structures - template](/
     <!-- tab: App.tsx -->
     // ...
 
-    const renderFirstItem = (data: StepperTypes.TemplateData) => (
+    const renderStarTemplate = (data: StepperTypes.TemplateData) => (
         <>
             <div className="star dx-step-indicator"></div>
             <div className="dx-step-caption">
@@ -115,7 +116,7 @@ To learn how to define item templates, refer to [Object Structures - template](/
 
     export default function App(): JSX.Element {
         const [steps, setSteps] = useState([
-            { label: 'Personal Details', render: renderFirstItem },
+            { label: 'Personal Details', render: renderStarTemplate },
             // ...
         ]);
 

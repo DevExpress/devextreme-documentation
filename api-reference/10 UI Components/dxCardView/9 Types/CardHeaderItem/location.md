@@ -5,7 +5,7 @@ default: 'after'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a location for the item in the card header.
 
 ---
 <!-- Description goes here -->

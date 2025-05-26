@@ -4,7 +4,7 @@ uid: ui/card_view:CardRemovedEvent.data
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The data of the card.
 
 ---
 <!-- Description goes here -->

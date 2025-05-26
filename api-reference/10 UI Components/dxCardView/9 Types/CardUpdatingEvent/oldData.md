@@ -4,7 +4,7 @@ uid: ui/card_view:CardUpdatingEvent.oldData
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The card's old data.
 
 ---
 <!-- Description goes here -->

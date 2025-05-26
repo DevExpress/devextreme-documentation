@@ -4,6 +4,7 @@ module: ui/chat
 export: Message
 type: TextMessage | ImageMessage
 generateTypeLink: 
+inheritsType: TextMessage,ImageMessage
 ---
 ---
 ##### shortDescription

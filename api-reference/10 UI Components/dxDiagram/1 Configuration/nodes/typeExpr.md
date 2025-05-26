@@ -44,4 +44,62 @@ The built-in shape types are shown in the [Shape Types](/concepts/05%20UI%20Comp
         }
     });
 
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-diagram>
+        <dxo-nodes typeExpr="itemTypeExpr"></dxo-nodes>
+    </dx-diagram>
+
+    <!-- tab: app.component.ts -->
+    export class AppComponent {
+        // ...
+        itemTypeExpr(obj, value) {
+            if(value)
+                obj.type = (value === "rectangle") ? undefined : "group";
+            else
+                return obj.type === "group" ? "ellipse" : "rectangle";
+        }
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDiagram>
+            <DxNodes :type-expr="itemTypeExpr" />
+        </DxDiagram>
+    </template>
+    <script setup lang="ts">
+    import { DxDiagram, DxNodes } from 'devextreme-vue/diagram';
+
+    const itemTypeExpr = (obj, value) => {
+        if(value)
+            obj.type = (value === "rectangle") ? undefined : "group";
+        else
+            return obj.type === "group" ? "ellipse" : "rectangle";
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.tsx -->
+    import React from 'react';
+    import Diagram, { Nodes } from 'devextreme-react/diagram';
+
+    const itemTypeExpr = (obj, value) => {
+        if(value)
+            obj.type = (value === "rectangle") ? undefined : "group";
+        else
+            return obj.type === "group" ? "ellipse" : "rectangle";
+    };
+
+    export default function App() {
+        return (
+            <Diagram>
+                <Nodes typeExpr={itemTypeExpr} />
+            </Diagram>
+        );
+    }
+
 ---

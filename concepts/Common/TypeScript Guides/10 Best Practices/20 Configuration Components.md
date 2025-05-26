@@ -1,4 +1,4 @@
-DevExtreme Angular allows you to configure UI component settings using configuration components. These start with the prefixes `dxo` and `dxi`. DevExtreme includes two types of configuration components:
+DevExtreme Angular allows you to configure UI component settings using configuration components. These start with the `dxo` and `dxi` prefixes. DevExtreme includes two types of configuration components:
 
 - **Named configuration components**    
     Components such as `dxo-data-grid-popup` are specific to their parent UI components. The name of the parent UI component is included after the `dxo` or `dxi` prefix.

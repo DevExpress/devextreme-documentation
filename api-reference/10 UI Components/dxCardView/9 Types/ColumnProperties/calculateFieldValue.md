@@ -4,16 +4,15 @@ type: function(cardData)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Calculates custom field values.
 
 ##### param(cardData): Object
-<!-- Description goes here -->
+The data of the card to which the field belongs.
 
 ##### return: any
-<!-- Description goes here -->
+A field's custom value.
 
 ##### context: Column
-<!-- Description goes here -->
+The `this` keyword refers to the column's configuration.
 
 ---
-<!-- Description goes here -->

@@ -1,4 +1,4 @@
-This tutorials specifies the following properties to configure Stepper steps:
+This tutorial specifies the following properties to configure Stepper steps:
 
 - [label](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/#label)    
 Assigns a step label.
@@ -7,7 +7,7 @@ Defines a step icon. For more information on the DevExteme icon library, refer t
 - [optional](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/#optional)    
 Adds an "Optional" caption.
 
-You can configure steps with the following properties as well:
+You can also configure steps with the following properties:
 
 - [isValid](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/#isValid)    
 A visual indicator for step validation.
@@ -18,7 +18,7 @@ Specifies step hint text that appears upon hover or long-press.
 - [disabled](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/#disabled)    
 Disables a step.
 
-The code below assign six steps to the component with different configuration options.
+The code below assigns six steps to the component with different configuration options.
 
 ---
 ##### jQuery

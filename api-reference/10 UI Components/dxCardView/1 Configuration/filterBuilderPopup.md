@@ -4,7 +4,11 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the popup in which the integrated [filter builder]({basewidgetpath}/Configuration/#filterBuilder) is displayed.
 
 ---
-<!-- Description goes here -->
+See the [Popup configuration](/api-reference/10%20UI%20Components/dxPopup '/Documentation/ApiReference/UI_Components/dxPopup/') for properties that you can specify in this object.
+
+#include widgets-config-object-option-note with {
+    optionName: "filterBuilderPopup"
+}

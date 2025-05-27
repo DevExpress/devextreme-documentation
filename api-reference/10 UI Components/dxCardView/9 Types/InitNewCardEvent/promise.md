@@ -4,7 +4,7 @@ uid: ui/card_view:InitNewCardEvent.promise
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Assign a Promise to this field to perform an asynchronous operation, such as a request to a server.
 
 ---
 <!-- Description goes here -->

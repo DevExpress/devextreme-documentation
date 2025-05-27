@@ -4,7 +4,7 @@ uid: ui/card_view:ContextMenuPreparingEvent.targetElement
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The target element's container.
 
 ---
 <!-- Description goes here -->

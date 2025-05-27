@@ -4,7 +4,7 @@ uid: ui/card_view:ContextMenuPreparingEvent.cardIndex
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The index of the card on which the context menu is invoked.
 
 ---
 <!-- Description goes here -->

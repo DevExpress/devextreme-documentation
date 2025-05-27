@@ -4,7 +4,7 @@ uid: ui/card_view:ContextMenuPreparingEvent.target
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The name of the element on which the context menu is invoked: *"headerPanel"*, *"content"*, or *"toolbar"*. 
 
 ---
-<!-- Description goes here -->
+This field is read-only.

@@ -4,7 +4,7 @@ uid: ui/card_view:ContextMenuPreparingEvent.card
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The card properties.
 
 ---
 <!-- Description goes here -->

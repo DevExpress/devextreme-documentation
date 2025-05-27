@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the aspect ratio of the image container.
 
 ---
 <!-- Description goes here -->

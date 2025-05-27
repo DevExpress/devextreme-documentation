@@ -1,10 +1,11 @@
 ---
 id: CardHeader.items
 type: Array<Enums.CardHeaderPredefinedItem, CardHeaderItem>
+inheritsType: CardHeaderItem
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures card header items.
 
 ---
-<!-- Description goes here -->
+You can reuse default items and include custom items.

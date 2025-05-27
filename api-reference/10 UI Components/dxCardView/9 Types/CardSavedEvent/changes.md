@@ -4,7 +4,7 @@ uid: ui/card_view:CardSavedEvent.changes
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+All card data (including changes). Differs from [onCardSaving]({basewidgetpath}/Configuration/#onCardSaving), which only consists of pending changes.
 
 ---
 <!-- Description goes here -->

@@ -4,7 +4,7 @@ type: Enums.CardHeaderPredefinedItem | String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A name used to identify the card header item.
 
 ---
 <!-- Description goes here -->

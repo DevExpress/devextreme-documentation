@@ -4,7 +4,7 @@ type: Number | Enums.Mode
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the number of cards per row.
 
 ---
 <!-- Description goes here -->

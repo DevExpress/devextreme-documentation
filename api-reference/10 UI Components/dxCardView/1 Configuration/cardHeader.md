@@ -1,10 +1,11 @@
 ---
 id: dxCardView.Options.cardHeader
 type: CardHeader
+inheritsType: CardHeader
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the card header. 
 
 ---
 <!-- Description goes here -->

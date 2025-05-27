@@ -14,7 +14,7 @@ This object's constructor accepts an [AIProvider](/api-reference/40%20Common%20T
 ---
 ##### jQuery
 
-    You need to link `AIIntegration` source.
+You need to link `AIIntegration` source.
 
     <!-- tab: index.js -->
     const aiIntegration = new DevExpress.aiIntegration(provider);

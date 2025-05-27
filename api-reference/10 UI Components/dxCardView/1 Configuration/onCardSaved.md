@@ -10,7 +10,7 @@ A function that is executed after card changes are saved.
 Information about the event that caused the function's execution.
 
 ##### field(e.changes): Array<DataChange>
-Entire card data (including changes). Differs from [onCardSaving]({basewidgetpath}/Configuration/#onCardSaving), which only consists of pending changes.
+All card data (including changes). Differs from [onCardSaving]({basewidgetpath}/Configuration/#onCardSaving), which only consists of pending changes.
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.

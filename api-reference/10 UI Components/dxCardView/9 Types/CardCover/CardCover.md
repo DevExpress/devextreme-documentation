@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-Configures card cover.
+Configures the card cover.
 
 ---
 <!-- Description goes here -->

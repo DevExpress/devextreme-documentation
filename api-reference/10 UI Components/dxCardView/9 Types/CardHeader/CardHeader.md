@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-Configures card header. 
+Configures the card header. 
 
 ---
 <!-- Description goes here -->

@@ -16,7 +16,7 @@ The value for the field to display.
 The `this` keyword refers to the column's configuration.
 
 ---
-This property accepts the name of the [data source field](/{basewidgetpath}/Configuration/#dataSource) that supplies display values or a function that combines display values. Specify this function only if all data processing operations are [executed on the client]({basewidgetpath}/Configuration/remoteOperations/).
+This property accepts the name of the [data source field]({basewidgetpath}/Configuration/#dataSource) that supplies display values or a function that combines display values. Specify this function only if all data processing operations are [executed on the client]({basewidgetpath}/Configuration/remoteOperations/).
 
 ---
 ##### jQuery

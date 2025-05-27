@@ -3,13 +3,13 @@ id: dxCardView.getKeyByCardIndex(cardIndex)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Gets the key of a card with a specific index.
 
 ##### return: any
-<!-- Description goes here -->
+The card's key; **undefined** if nothing found.
 
 ##### param(cardIndex): Number
-<!-- Description goes here -->
+The card's index.
 
 ---
 <!-- Description goes here -->

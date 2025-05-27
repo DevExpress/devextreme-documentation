@@ -3,7 +3,7 @@ id: dxCardView.saveEditData()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Saves changes that a user made to data.
 
 ---
 <!-- Description goes here -->

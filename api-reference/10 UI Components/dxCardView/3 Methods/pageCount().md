@@ -3,10 +3,10 @@ id: dxCardView.pageCount()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Gets the total page count.
 
 ##### return: Number
-<!-- Description goes here -->
+The total page count.
 
 ---
 <!-- Description goes here -->

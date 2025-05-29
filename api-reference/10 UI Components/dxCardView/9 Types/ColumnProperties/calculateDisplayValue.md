@@ -123,6 +123,6 @@ This property accepts the name of the [data source field]({basewidgetpath}/Confi
 
 ---
 
-The UI component uses the specified display values in sorting and searching.
+The UI component utilizes the specified display values in sorting and searching.
 
 Do not use this property to format text in cells. Instead, use the [format]({basewidgetpath}/Configuration/columns/#format), [customizeText]({basewidgetpath}/Configuration/columns/#customizeText), or [fieldTemplate]({basewidgetpath}/Configuration/columns/#fieldTemplate) property.

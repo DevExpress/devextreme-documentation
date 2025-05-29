@@ -13,7 +13,7 @@ Information about the event that caused the function's execution.
 Set this field to `true` if the default saving logic should be disabled.
 
 ##### field(e.changes): Array<DataChange>
-Pending row changes; a copy of the **editing**.[changes]({basewidgetpath}/Configuration/editing/changes/) array. Includes only card changes, unlike [onCardSaved]({basewidgetpath}/Configuration/#onCardSaved), which contains all card data (including changes).
+Pending row changes; a copy of the **editing**.[changes](/api-reference/10%20UI%20Components/dxCardView/9%20Types/dxCardViewEditing/changes.md '{basewidgetpath}/Configuration/editing/changes/') array. Includes only card changes, unlike [onCardSaved](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/onCardSaved.md '{basewidgetpath}/Configuration/#onCardSaved'), which contains all card data (including changes).
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.

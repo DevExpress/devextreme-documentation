@@ -31,10 +31,10 @@ The UI component's instance.
 Items to be displayed in the context menu. Their structure is described in the [items](/api-reference/10%20UI%20Components/dxContextMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/items/') property description. Each item also contains the [onItemClick](/api-reference/10%20UI%20Components/dxContextMenu/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/#onItemClick') event handler, which allows you to access the clicked or tapped item's data.
 
 ##### field(e.target): Enums.ContextMenuTarget
-he name of the element on which the context menu is invoked: *"headerPanel"*, *"content"*, or *"toolbar"*. This field is read-only.
+The name of the element on which the context menu is invoked: *"headerPanel"*, *"content"*, or *"toolbar"*. This field is read-only.
 
 ##### field(e.targetElement): DxElement
-#include common-ref-elementparam with { element: "CardView element" }
+#include common-ref-elementparam with { element: "target element" }
 
 ---
 In the following code, the **onContextMenuPreparing** function adds a custom item to the context menu that is invoked when a user right-clicks any column header:

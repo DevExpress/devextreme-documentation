@@ -3,13 +3,13 @@ id: dxCardView.keyOf(obj)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Gets a data item's key value.
 
 ##### return: any
-<!-- Description goes here -->
+The data item's key value.
 
 ##### param(obj): any
-<!-- Description goes here -->
+A data item.
 
 ---
 <!-- Description goes here -->

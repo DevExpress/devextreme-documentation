@@ -3,10 +3,10 @@ id: dxCardView.pageSize()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Gets the current [page size]({basewidgetpath}/Configuration/paging/#pageSize).
 
 ##### return: Number
-<!-- Description goes here -->
+The current page size.
 
 ---
 <!-- Description goes here -->

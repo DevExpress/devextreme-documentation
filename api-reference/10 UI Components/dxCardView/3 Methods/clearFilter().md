@@ -3,7 +3,7 @@ id: dxCardView.clearFilter()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Clears all filters applied to UI component cards.
 
 ---
 <!-- Description goes here -->

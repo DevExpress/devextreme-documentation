@@ -3,7 +3,7 @@ id: dxCardView.hideColumnChooser()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Hides the [column chooser]({basewidgetpath}/Configuration/columnChooser/).
 
 ---
 <!-- Description goes here -->

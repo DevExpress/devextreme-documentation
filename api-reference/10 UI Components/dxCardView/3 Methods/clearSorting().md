@@ -3,7 +3,7 @@ id: dxCardView.clearSorting()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Clears sorting settings of all columns.
 
 ---
 <!-- Description goes here -->

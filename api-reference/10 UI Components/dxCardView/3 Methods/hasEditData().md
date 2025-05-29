@@ -3,7 +3,7 @@ id: dxCardView.hasEditData()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Checks whether the UI component has unsaved changes.
 
 ---
-<!-- Description goes here -->
+`true` if the UI component has unsaved changes; otherwise - `false`.

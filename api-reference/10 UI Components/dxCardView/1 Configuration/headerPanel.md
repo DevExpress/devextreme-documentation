@@ -5,7 +5,7 @@ inheritsType: HeaderPanel
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the header panel.
 
 ---
 <!-- Description goes here -->

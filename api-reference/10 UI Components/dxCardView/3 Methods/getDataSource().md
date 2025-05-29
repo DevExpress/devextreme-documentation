@@ -3,10 +3,10 @@ id: dxCardView.getDataSource()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Gets the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') instance.
 
 ##### return: DataSource
-<!-- Description goes here -->
+The **DataSource** instance.
 
 ---
-<!-- Description goes here -->
+[note] This method returns the **DataSource** instance even if the UI component's [dataSource]({basewidgetpath}/Configuration/#dataSource) property was given a simple array.

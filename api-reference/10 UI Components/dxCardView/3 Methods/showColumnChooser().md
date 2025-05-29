@@ -3,7 +3,7 @@ id: dxCardView.showColumnChooser()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Shows the [column chooser]({basewidgetpath}/Configuration/columnChooser/).
 
 ---
 <!-- Description goes here -->

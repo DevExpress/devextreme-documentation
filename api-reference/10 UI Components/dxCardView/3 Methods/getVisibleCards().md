@@ -3,10 +3,10 @@ id: dxCardView.getVisibleCards()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Gets currently rendered cards.
 
 ##### return: Array<CardInfo>
-<!-- Description goes here -->
+Currently rendered cards.
 
 ---
 <!-- Description goes here -->

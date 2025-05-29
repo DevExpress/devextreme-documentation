@@ -1,6 +1,6 @@
 The Stepper component supports screen readers and complies to <a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank">WAI-ARIA</a> standards. 
 
-Use [elementAttr](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#elementAttr) to specify the aria-label:
+Use [elementAttr](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/elementAttr.md '/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#elementAttr') to specify the aria-label:
 
 ---
 ##### jQuery

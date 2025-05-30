@@ -7,10 +7,10 @@ Defines a step icon. For more information on the DevExteme icon library, refer t
 - [optional](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/#optional)    
 Adds an "Optional" caption.
 
-You can also configure steps with the following properties:
+You can also specify the following properties:
 
 - [isValid](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/#isValid)    
-A visual indicator for step validation.
+Indicates input validation state for a step.
 - [text](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/#text)    
 Defines text displayed on a step indicator.
 - [hint](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/#hint)    

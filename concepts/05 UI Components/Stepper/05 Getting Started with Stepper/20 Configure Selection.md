@@ -1,4 +1,4 @@
-Stepper offers multiple properties that you can use to configure selection at runtime:
+The following Stepper properties allow you to configure selection at runtime:
 
 - [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#onSelectionChanged/)    
 A function that is called after selection has changed.

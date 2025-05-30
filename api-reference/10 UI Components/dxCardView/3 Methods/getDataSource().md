@@ -9,4 +9,4 @@ Gets the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentatio
 The **DataSource** instance.
 
 ---
-[note] This method returns the **DataSource** instance even if the UI component's [dataSource]({basewidgetpath}/Configuration/#dataSource) property was given a simple array.
+[note] This method returns the **DataSource** instance even if the UI component's [dataSource](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource') property was given a simple array.

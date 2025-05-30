@@ -1,12 +1,12 @@
 The following Stepper properties allow you to configure selection at runtime:
 
-- [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#onSelectionChanged/)    
+- [onSelectionChanged](/api-reference/10%20UI%20Components/dxStepper/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#onSelectionChanged/')    
 A function that is called after selection has changed.
-- [onSelectionChanging](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#onSelectionChanging/)    
+- [onSelectionChanging](/api-reference/10%20UI%20Components/dxStepper/1%20Configuration/onSelectionChanging.md '/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#onSelectionChanging/')    
 A function that is called before selection changes.
-- [selectedIndex](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#selectedIndex/)    
+- [selectedIndex](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/selectedIndex.md '/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#selectedIndex/')    
 The selected item index.
-- [selectedItem](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#selectedItem/)    
+- [selectedItem](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/selectedItem.md '/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#selectedItem/')    
 The selected item object.
 
 This tutorial uses **onSelectionChanged** to disable steps as users move through the component.

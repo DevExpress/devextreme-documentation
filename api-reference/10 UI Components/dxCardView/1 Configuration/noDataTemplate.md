@@ -4,7 +4,7 @@ type: template
 ---
 ---
 ##### shortDescription
-Specifies a custom template to be displayed when no data appears in CardView.  
+Specifies a custom template to be displayed when no data appears in CardView.
 
 ##### param(e): Object
 The object to be rendered.

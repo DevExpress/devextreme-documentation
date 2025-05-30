@@ -1,6 +1,6 @@
 ---
 ##### jQuery
-[Add DevExtreme to your jQuery application](/concepts/58%20jQuery%20Components/05%20Add%20DevExtreme%20to%20a%20jQuery%20Application/00%20Add%20DevExtreme%20to%20a%20jQuery%20Application.md '/Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/') and use the code below to create a Stepper component with one step. This example utilizes the [items[]](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/) array, but you can use [dataSource](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/dataSource/) to define steps as well. If you do not specify at least one step, Stepper will display no data.
+[Add DevExtreme to your jQuery application](/concepts/58%20jQuery%20Components/05%20Add%20DevExtreme%20to%20a%20jQuery%20Application/00%20Add%20DevExtreme%20to%20a%20jQuery%20Application.md '/Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/') and use the code below to create a Stepper component with one step. This example utilizes the [items[]](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/) array, but you can use [dataSource](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/dataSource/) to define steps as well. If you do not specify at least one step, Stepper does not display any data.
 
     <!-- tab: index.js -->
     $(function() {

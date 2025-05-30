@@ -1,6 +1,6 @@
 Specify **items[]**.[template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/#template') to customize an individual step, or [itemTemplate](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#itemTemplate') to customize all steps in the component. This tutorial replaces the first step indicator with a star.
 
-To learn how to define item templates, refer to [Object Structures - template](/Documentation/ApiReference/Common/Object_Structures/template/).
+For instructions on how to define item templates, refer to [Object Structures - template](/Documentation/ApiReference/Common/Object_Structures/template/).
 
 ---
 ##### jQuery

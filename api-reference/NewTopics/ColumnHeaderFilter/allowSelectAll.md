@@ -1,6 +1,7 @@
 ---
-id: ColumnProperties.headerFilter
-type: ColumnHeaderFilter | undefined
+id: ColumnHeaderFilter.allowSelectAll
+type: Boolean
+default: true
 ---
 ---
 ##### shortDescription

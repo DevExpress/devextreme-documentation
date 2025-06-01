@@ -1,6 +1,8 @@
 ---
-id: ColumnProperties.headerFilter
-type: ColumnHeaderFilter | undefined
+id: ColumnHeaderFilter
+module: common/grids
+export: ColumnHeaderFilter
+type: Object
 ---
 ---
 ##### shortDescription

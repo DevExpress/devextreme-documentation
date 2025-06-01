@@ -1,6 +1,8 @@
 ---
-id: ColumnProperties.headerFilter
-type: ColumnHeaderFilter | undefined
+id: ColumnHeaderFilter.allowSearch
+deprecated: 
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
 ---
-id: ColumnProperties.headerFilter
-type: ColumnHeaderFilter | undefined
+id: ColumnHeaderFilter.search
+type: ColumnHeaderFilterSearchConfig
 ---
 ---
 ##### shortDescription

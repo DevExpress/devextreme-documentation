@@ -1,6 +1,7 @@
 ---
-id: ColumnProperties.headerFilter
-type: ColumnHeaderFilter | undefined
+id: ColumnHeaderFilter.width
+type: Number | String | undefined
+default: undefined
 ---
 ---
 ##### shortDescription

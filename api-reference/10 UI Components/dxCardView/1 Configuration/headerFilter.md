@@ -1,6 +1,6 @@
 ---
 id: dxCardView.Options.headerFilter
-type: Object
+type: HeaderFilter
 ---
 ---
 ##### shortDescription

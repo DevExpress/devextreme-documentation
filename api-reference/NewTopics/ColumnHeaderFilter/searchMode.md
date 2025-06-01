@@ -1,6 +1,8 @@
 ---
-id: ColumnProperties.headerFilter
-type: ColumnHeaderFilter | undefined
+id: ColumnHeaderFilter.searchMode
+deprecated: 
+type: Enums.SearchMode
+default: 'contains'
 ---
 ---
 ##### shortDescription

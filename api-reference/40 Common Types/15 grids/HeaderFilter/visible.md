@@ -1,5 +1,5 @@
 ---
-uid: common/grids:HeaderFilter.visible
+id: HeaderFilter.visible
 type: Boolean
 default: false
 ---

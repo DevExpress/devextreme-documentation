@@ -1,5 +1,5 @@
 ---
-uid: common/grids:HeaderFilter
+id: HeaderFilter
 isType: 
 module: common/grids
 export: HeaderFilter

@@ -2,7 +2,7 @@
 id: Enums.ColumnChooserMode
 acceptValues: 'dragAndDrop' | 'select'
 type: Union
-references: GridBase.Options.columnChooser.mode
+references: ColumnChooser.mode
 ---
 ---
 ##### shortDescription

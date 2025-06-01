@@ -1,6 +1,6 @@
 ---
-id: dxCardView.Options.columnChooser
-type: ColumnChooser
+id: ColumnChooser.search
+type: ColumnChooserSearchConfig
 ---
 ---
 ##### shortDescription

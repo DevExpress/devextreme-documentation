@@ -1,6 +1,7 @@
 ---
-id: dxCardView.Options.columnChooser
-type: ColumnChooser
+id: ColumnChooser.position
+type: PositionConfig | undefined
+default: undefined
 ---
 ---
 ##### shortDescription

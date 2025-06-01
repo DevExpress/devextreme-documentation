@@ -1,6 +1,7 @@
 ---
-id: dxCardView.Options.columnChooser
-type: ColumnChooser
+id: ColumnChooser.container
+type: String | UserDefinedElement | undefined
+default: undefined
 ---
 ---
 ##### shortDescription

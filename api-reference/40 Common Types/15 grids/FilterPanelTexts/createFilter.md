@@ -1,5 +1,5 @@
 ---
-uid: common/grids:FilterPanelTexts.createFilter
+id: FilterPanelTexts.createFilter
 type: String
 default: 'Create Filter'
 ---

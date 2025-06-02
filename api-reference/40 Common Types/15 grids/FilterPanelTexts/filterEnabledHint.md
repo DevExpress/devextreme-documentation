@@ -1,5 +1,5 @@
 ---
-uid: common/grids:FilterPanelTexts.filterEnabledHint
+id: FilterPanelTexts.filterEnabledHint
 type: String
 default: 'Enable the filter'
 ---

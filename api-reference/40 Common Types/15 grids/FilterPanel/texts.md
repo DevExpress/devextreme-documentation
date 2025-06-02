@@ -1,7 +1,7 @@
 ---
+id: FilterPanel.texts
 type: FilterPanelTexts
 default: {}
-uid: common/grids:FilterPanel.texts
 ---
 ---
 ##### shortDescription

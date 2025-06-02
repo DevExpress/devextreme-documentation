@@ -2,6 +2,7 @@
 id: ColumnHeaderFilter.search
 type: ColumnHeaderFilterSearchConfig
 inheritsType: ColumnHeaderFilterSearchConfig,HeaderFilterSearchConfig
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

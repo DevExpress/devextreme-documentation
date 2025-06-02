@@ -1,5 +1,5 @@
 ---
-uid: common/grids:Sorting.showSortIndexes
+id: Sorting.showSortIndexes
 type: Boolean
 default: true
 ---

@@ -1,6 +1,7 @@
 ---
 id: dxCardView.Options.sorting
 type: Sorting
+inheritsType: Sorting
 ---
 ---
 ##### shortDescription

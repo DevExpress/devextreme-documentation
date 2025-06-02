@@ -1,5 +1,5 @@
 ---
-uid: common/grids:Sorting.mode
+id: Sorting.mode
 type: Enums.SingleMultipleOrNone
 default: 'single'
 ---

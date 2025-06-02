@@ -4,7 +4,7 @@ type: ColumnChooserSearchConfig
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the column chooser's search functionality.
 
 ---
 <!-- Description goes here -->

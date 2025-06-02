@@ -2,5 +2,10 @@
 id: ColumnChooser.allowSearch
 type: Boolean
 default: false
-deprecated: 
+deprecated: Use `search.enabled` instead.
 ---
+---
+##### shortDescription
+Specifies whether searching is enabled in the column chooser.
+
+--- 

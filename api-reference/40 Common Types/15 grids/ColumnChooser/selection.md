@@ -4,7 +4,7 @@ type: ColumnChooserSelectionConfig
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures column selection functionality within the column chooser.
 
 ---
 <!-- Description goes here -->

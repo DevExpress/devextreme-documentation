@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the column chooser's position.
 
 ---
 <!-- Description goes here -->

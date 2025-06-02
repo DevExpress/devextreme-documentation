@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a container in which the column chooser should be rendered.
 
 ---
 <!-- Description goes here -->

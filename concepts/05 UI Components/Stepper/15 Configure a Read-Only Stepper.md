@@ -4,15 +4,12 @@ You can disable all user interaction with Stepper by setting [focusStateEnabled]
 ##### jQuery
 
     <!-- tab: index.html -->
-
-    <div id='stepper'></div>
+    <div id="stepper"></div>
     <div id="buttons">
-        <div id="prev"></div><div id="next"></div
+        <div id="prev"></div><div id="next"></div>
     </div>
 
-
     <!-- tab: index.js -->
-
     $(() => {
         const stepper = $('#stepper').dxStepper({
             focusStateEnabled: false,
@@ -39,50 +36,40 @@ You can disable all user interaction with Stepper by setting [focusStateEnabled]
     });
 
     <!-- tab: index.css -->
-
     #stepper {
-    pointer-events: none;
+        pointer-events: none;
     }
 
 ##### Angular
 
     <!-- tab: app.component.html -->
-
     <dx-stepper
         id="stepper"
+        [dataSource]="dataSource"
         [selectedIndex]="selectedIndex"
         [focusStateEnabled]="false"
     >
-        <dxi-stepper-item
-            *ngFor="let data of dataSource"
-            // ...
-        ></dxi-stepper-item>
     </dx-stepper>
-    // ...
     <dx-button text="Previous Step" (onClick)="previousStep()"></dx-button>
     <dx-button text="Next Step" (onClick)="nextStep()"></dx-button>
 
     <!-- tab: app.component.ts -->
-
     // ...
     export class AppComponent {
         selectedIndex: number = 0;
-
         previousStep() {
             if (this.selectedIndex > 0) {
-                this.selectedIndex -= 1
+                this.selectedIndex -= 1;
             }
         }
-
         nextStep() {
             if (this.selectedIndex < this.dataSource.length) {
-                this.selectedIndex += 1
+                this.selectedIndex += 1;
             }
         }
     }
 
     <!-- tab: app.component.css -->
-
     #stepper {
         pointer-events: none;
     }
@@ -90,42 +77,33 @@ You can disable all user interaction with Stepper by setting [focusStateEnabled]
 ##### Vue
 
     <!-- tab: App.vue -->
-
     <template>
         <DxStepper
             id="stepper"
+            :dataSource="dataSource"
             :selected-index="2"
             :focus-state-enabled="false"
-        >
-            <DxItem
-                v-for="(step, index) in steps"
-                :key="index"
-            />
-        </DxStepper>
+        />
         <DxButton
           	text="Previous Step"
-                    @click="previousStep()"
-					></DxButton>
-					<DxButton
+            @click="previousStep()"
+        />
+        <DxButton
           	text="Next Step"
-                
-                    @click="nextStep()"
-					></DxButton>
+            @click="nextStep()"
+        />
     </template>
     <script>
     // ...
-
         const selectedIndex = ref(0);
-
         const previousStep = () => {
             if (selectedIndex.value > 0) {
-                selectedIndex.value -= 1
+                selectedIndex.value -= 1;
             }
         }
-
         const nextStep = () => {
             if (selectedIndex.value < steps.length) {
-                selectedIndex.value += 1
+                selectedIndex.value += 1;
             }
         }
     </script>
@@ -138,35 +116,27 @@ You can disable all user interaction with Stepper by setting [focusStateEnabled]
 ##### React
 
     <!-- tab: App.tsx -->
-
     export default function App() {
         const [selectedIndex, setSelectedIndex] = useState(0)
-
         const previousStep = () => {
             if (selectedIndex > 0) {
-                setSelectedIndex(selectedIndex-1)
+                setSelectedIndex(selectedIndex-1);
             }
         }
-
         const nextStep = () => {
             if (selectedIndex < steps.length) {
-                setSelectedIndex(selectedIndex+1)
+                setSelectedIndex(selectedIndex+1);
             }
         }
 
         return (
-            <Stepper id="stepper" focusStateEnabled={false} selectedIndex={selectedIndex} on>
-                {dataSource.map((data, index) => {
-                    return <Item key={index} icon={data.icon}/>;
-                })}
-            </Stepper>
+            <Stepper id="stepper" dataSource={dataSource} focusStateEnabled={false} selectedIndex={selectedIndex} />
             <Button text="Previous Step" onClick={previousStep} />
             <Button text="Next Step" onClick={nextStep} />
         )
     }
 
     <!-- tab: styles.css -->
-
     #stepper {
         pointer-events: none;
     }

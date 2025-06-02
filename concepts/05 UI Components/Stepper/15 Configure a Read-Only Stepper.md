@@ -28,7 +28,7 @@ You can disable all user interaction with Stepper by setting [focusStateEnabled]
             text: "Next step",
             onClick: () => {
                 const selectedIndex = stepper.option('selectedIndex');
-                if (selectedIndex < dataSource.length) {
+                if (selectedIndex < dataSource.length - 1) {
                     stepper.option('selectedIndex', selectedIndex + 1);
                 }
             }
@@ -50,20 +50,20 @@ You can disable all user interaction with Stepper by setting [focusStateEnabled]
         [focusStateEnabled]="false"
     >
     </dx-stepper>
-    <dx-button text="Previous Step" (onClick)="previousStep()"></dx-button>
-    <dx-button text="Next Step" (onClick)="nextStep()"></dx-button>
+    <dx-button text="Previous Step" (onClick)="handlePreviousButtonClick()"></dx-button>
+    <dx-button text="Next Step" (onClick)="handleNextButtonClick()"></dx-button>
 
     <!-- tab: app.component.ts -->
     // ...
     export class AppComponent {
         selectedIndex: number = 0;
-        previousStep() {
+        handlePreviousButtonClick() {
             if (this.selectedIndex > 0) {
                 this.selectedIndex -= 1;
             }
         }
-        nextStep() {
-            if (this.selectedIndex < this.dataSource.length) {
+        handleNextButtonClick() {
+            if (this.selectedIndex < this.dataSource.length - 1) {
                 this.selectedIndex += 1;
             }
         }
@@ -81,28 +81,28 @@ You can disable all user interaction with Stepper by setting [focusStateEnabled]
         <DxStepper
             id="stepper"
             :dataSource="dataSource"
-            :selected-index="2"
+            :selected-index="selectedIndex"
             :focus-state-enabled="false"
         />
         <DxButton
           	text="Previous Step"
-            @click="previousStep()"
+            @click="handlePreviousButtonClick()"
         />
         <DxButton
           	text="Next Step"
-            @click="nextStep()"
+            @click="handleNextButtonClick()"
         />
     </template>
     <script>
     // ...
         const selectedIndex = ref(0);
-        const previousStep = () => {
+        const handlePreviousButtonClick = () => {
             if (selectedIndex.value > 0) {
                 selectedIndex.value -= 1;
             }
         }
-        const nextStep = () => {
-            if (selectedIndex.value < steps.length) {
+        const handleNextButtonClick = () => {
+            if (selectedIndex.value < dataSource.length - 1) {
                 selectedIndex.value += 1;
             }
         }
@@ -118,21 +118,21 @@ You can disable all user interaction with Stepper by setting [focusStateEnabled]
     <!-- tab: App.tsx -->
     export default function App() {
         const [selectedIndex, setSelectedIndex] = useState(0)
-        const previousStep = () => {
+        const handlePreviousButtonClick = () => {
             if (selectedIndex > 0) {
                 setSelectedIndex(selectedIndex-1);
             }
         }
-        const nextStep = () => {
-            if (selectedIndex < steps.length) {
+        const handleNextButtonClick = () => {
+            if (selectedIndex < dataSource.length - 1) {
                 setSelectedIndex(selectedIndex+1);
             }
         }
 
         return (
             <Stepper id="stepper" dataSource={dataSource} focusStateEnabled={false} selectedIndex={selectedIndex} />
-            <Button text="Previous Step" onClick={previousStep} />
-            <Button text="Next Step" onClick={nextStep} />
+            <Button text="Previous Step" onClick={handlePreviousButtonClick} />
+            <Button text="Next Step" onClick={handleNextButtonClick} />
         )
     }
 

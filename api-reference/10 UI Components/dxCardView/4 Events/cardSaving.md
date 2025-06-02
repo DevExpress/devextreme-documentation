@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before pending card changes are saved.
 
 ---
-<!-- Description goes here -->
+Main article: [onCardSaving](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#onCardSaving)
+
+#####See Also#####
+#include common-link-handleevents

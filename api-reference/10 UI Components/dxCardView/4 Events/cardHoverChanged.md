@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised after the pointer enters or leaves a card.
 
 ---
-<!-- Description goes here -->
+Main article: [onCardHoverChanged](//Documentation/ApiReference/UI_Components/dxCardView/Configuration/#onCardHoverChanged)
+
+#####See Also#####
+#include common-link-handleevents

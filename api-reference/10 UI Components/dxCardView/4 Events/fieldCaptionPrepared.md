@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised after a field caption is created.
 
 ---
-<!-- Description goes here -->
+Main article: [onFieldCaptionPrepared](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#onFieldCaptionPrepared)
+
+#####See Also#####
+#include common-link-handleevents

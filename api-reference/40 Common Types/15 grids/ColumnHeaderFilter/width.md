@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the width of the popup menu containing filtering values.
 
 ---
 <!-- Description goes here -->

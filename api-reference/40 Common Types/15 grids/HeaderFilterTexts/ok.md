@@ -1,5 +1,5 @@
 ---
-uid: common/grids:HeaderFilterTexts.ok
+id: HeaderFilterTexts.ok
 type: String
 default: 'Ok'
 ---

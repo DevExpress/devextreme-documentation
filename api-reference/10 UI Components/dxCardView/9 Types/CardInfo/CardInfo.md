@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-The card's data.
+The information about the card.
 
 ---
 <!-- Description goes here -->

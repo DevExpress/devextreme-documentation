@@ -4,7 +4,7 @@ type: HeaderFilterSearchConfig
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the header filter's search box.
 
 ---
 <!-- Description goes here -->

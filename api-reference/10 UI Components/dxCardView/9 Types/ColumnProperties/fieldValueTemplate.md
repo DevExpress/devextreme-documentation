@@ -4,16 +4,16 @@ type: template
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a custom template for the field value.
 
 ##### param(data): FieldTemplateData
-<!-- Description goes here -->
+The field's data.
 
 ##### param(container): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### return: String | UserDefinedElement
-<!-- Description goes here -->
+A template name or container.
 
 ---
 <!-- Description goes here -->

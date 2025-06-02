@@ -4,7 +4,7 @@ type: any
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the default UI component used for [editing]({basewidgetpath}/Configuration/editing/).
 
 ---
 <!-- Description goes here -->

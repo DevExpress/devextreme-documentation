@@ -5,7 +5,7 @@ type: Array<any>
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the values in the header filter.
 
 ---
 <!-- Description goes here -->

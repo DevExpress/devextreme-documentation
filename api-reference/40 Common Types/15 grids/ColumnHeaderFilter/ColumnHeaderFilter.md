@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies data settings for the header filter.
 
 ---
 <!-- Description goes here -->

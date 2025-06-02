@@ -2,6 +2,7 @@
 id: GridBaseColumn.headerFilter
 type: ColumnHeaderFilter | undefined
 default: undefined
+inheritsType: ColumnHeaderFilter
 ---
 ---
 ##### shortDescription

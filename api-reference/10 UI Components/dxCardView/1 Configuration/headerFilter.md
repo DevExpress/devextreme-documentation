@@ -1,6 +1,7 @@
 ---
 id: dxCardView.Options.headerFilter
 type: HeaderFilter
+inheritsType: HeaderFilter
 ---
 ---
 ##### shortDescription

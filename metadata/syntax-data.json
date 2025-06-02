@@ -5976,6 +5976,9 @@
     "adaptiveDetailRowPreparingInfo.formOptions": {
       "vue": "form-options"
     },
+    "aiIntegration": {
+      "vue": "a-i-integration"
+    },
     "alert": {
       "angular": "dxo-alert",
       "react": "Alert",

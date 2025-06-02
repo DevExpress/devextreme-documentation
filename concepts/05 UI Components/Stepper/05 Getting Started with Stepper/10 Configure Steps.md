@@ -1,21 +1,21 @@
 This tutorial specifies the following properties to configure Stepper steps:
 
-- [label](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/#label)    
+- [label](/api-reference/10%20UI%20Components/dxStepper/7%20Interfaces/dxStepperItem/label.md '/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/#label')    
 Assigns a step label.
-- [icon](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/#icon)    
-Defines a step icon. For more information on the DevExteme icon library, refer to [DevExtreme Icons](/Documentation/guide/themes_and_styles/icons/).
-- [optional](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/#optional)    
+- [icon](/api-reference/10%20UI%20Components/dxStepper/7%20Interfaces/dxStepperItem/icon.md '/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/#icon')    
+Defines a step icon. For more information on the DevExteme icon library, refer to [DevExtreme Icons](/concepts/60%20Themes%20and%20Styles/30%20Icons/00%20Icons.md '/Documentation/guide/themes_and_styles/icons/').
+- [optional](/api-reference/10%20UI%20Components/dxStepper/7%20Interfaces/dxStepperItem/optional.md '/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/#optional')    
 Adds an "Optional" caption.
 
 You can also specify the following properties:
 
-- [isValid](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/#isValid)    
+- [isValid](/api-reference/10%20UI%20Components/dxStepper/7%20Interfaces/dxStepperItem/isValid.md '/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/#isValid')    
 Indicates input validation state for a step.
-- [text](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/#text)    
+- [text](/api-reference/_hidden/CollectionWidgetItem/text.md '/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/#text')    
 Defines text displayed on a step indicator.
-- [hint](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/#hint)    
+- [hint](/api-reference/10%20UI%20Components/dxStepper/7%20Interfaces/dxStepperItem/hint.md '/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/#hint')    
 Specifies step hint text that appears upon hover or long-press.
-- [disabled](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/#disabled)    
+- [disabled](/api-reference/_hidden/CollectionWidgetItem/disabled.md '/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/#disabled')    
 Disables a step.
 
 The code below assigns six steps to the component with different configuration options.

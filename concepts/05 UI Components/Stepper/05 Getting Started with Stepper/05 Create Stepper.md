@@ -1,6 +1,6 @@
 ---
 ##### jQuery
-[Add DevExtreme to your jQuery application](/concepts/58%20jQuery%20Components/05%20Add%20DevExtreme%20to%20a%20jQuery%20Application/00%20Add%20DevExtreme%20to%20a%20jQuery%20Application.md '/Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/') and use the code below to create a Stepper component with one step. This example utilizes the [items[]](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/) array, but you can use [dataSource](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/dataSource/) to define steps as well. If you do not specify at least one step, Stepper does not display any data.
+[Add DevExtreme to your jQuery application](/concepts/58%20jQuery%20Components/05%20Add%20DevExtreme%20to%20a%20jQuery%20Application/00%20Add%20DevExtreme%20to%20a%20jQuery%20Application.md '/Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/') and use the code below to create a Stepper component with one step. This example utilizes the [items[]](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/) array, but you can use [dataSource](/api-reference/10%20UI%20Components/dxStepper/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxStepper/Configuration/dataSource/') to define steps as well. If you do not specify at least one step, Stepper does not display any data.
 
     <!-- tab: index.js -->
     $(function() {
@@ -28,7 +28,7 @@
 
 ##### Angular
 
-[Add DevExtreme to your Angular application](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/') and use the code below to create a Stepper component with one step. This example utilizes the [items[]](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/) array, but you can use [dataSource](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/dataSource/) to define steps as well. If you do not specify at least one step, Stepper will display no data.
+[Add DevExtreme to your Angular application](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/') and use the code below to create a Stepper component with one step. This example utilizes the [items[]](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/) array, but you can use [dataSource](/api-reference/10%20UI%20Components/dxStepper/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxStepper/Configuration/dataSource/') to define steps as well. If you do not specify at least one step, Stepper will display no data.
 
     <!-- tab: app.component.html -->
     <dx-stepper
@@ -73,7 +73,7 @@
 
 ##### Vue
 
-[Add DevExtreme to your Vue application](/concepts/55%20Vue%20Components/05%20Add%20DevExtreme%20to%20a%20Vue%20Application/00%20Add%20DevExtreme%20to%20a%20Vue%20Application.md '/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/') and use the code below to create a Stepper component with one step. This example utilizes the [items[]](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/) array, but you can use [dataSource](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/dataSource/) to define steps as well. If you do not specify at least one step, Stepper will display no data.
+[Add DevExtreme to your Vue application](/concepts/55%20Vue%20Components/05%20Add%20DevExtreme%20to%20a%20Vue%20Application/00%20Add%20DevExtreme%20to%20a%20Vue%20Application.md '/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/') and use the code below to create a Stepper component with one step. This example utilizes the [items[]](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/) array, but you can use [dataSource](/api-reference/10%20UI%20Components/dxStepper/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxStepper/Configuration/dataSource/') to define steps as well. If you do not specify at least one step, Stepper will display no data.
 
     <!-- tab: App.vue -->
     <script setup lang="ts">
@@ -94,7 +94,7 @@
 
 ##### React
 
-[Add DevExtreme to your React application](/concepts/50%20React%20Components/05%20Add%20DevExtreme%20to%20a%20React%20Application/00%20Add%20DevExtreme%20to%20a%20React%20Application.md '/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/') and use the code below to create a Stepper component with one step. This example utilizes the [items[]](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/) array, but you can use [dataSource](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/dataSource/) to define steps as well. If you do not specify at least one step, Stepper will display no data.
+[Add DevExtreme to your React application](/concepts/50%20React%20Components/05%20Add%20DevExtreme%20to%20a%20React%20Application/00%20Add%20DevExtreme%20to%20a%20React%20Application.md '/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/') and use the code below to create a Stepper component with one step. This example utilizes the [items[]](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/items/) array, but you can use [dataSource](/api-reference/10%20UI%20Components/dxStepper/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxStepper/Configuration/dataSource/') to define steps as well. If you do not specify at least one step, Stepper will display no data.
 
     <!-- tab: App.tsx -->
     import React, { JSX, useState } from 'react';

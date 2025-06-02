@@ -3,6 +3,7 @@ id: ColumnChooser.mode
 type: Enums.ColumnChooserMode
 default: 'dragAndDrop'
 ---
+---
 ##### shortDescription
 Specifies how a user manages columns using the column chooser.
 

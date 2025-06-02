@@ -3,6 +3,7 @@ id: ColumnChooser.enabled
 type: Boolean
 default: false
 ---
+---
 ##### shortDescription
 Specifies whether a user can open the column chooser.
 

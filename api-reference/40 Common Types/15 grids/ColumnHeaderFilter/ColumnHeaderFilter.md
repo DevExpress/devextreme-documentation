@@ -3,6 +3,7 @@ id: ColumnHeaderFilter
 module: common/grids
 export: ColumnHeaderFilter
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

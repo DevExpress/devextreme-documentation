@@ -1,4 +1,4 @@
-You can disable all user interaction with Stepper by setting [focusStateEnabled](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#focusStateEnabled) to `false` and assigning the `pointer-events: none;` CSS style to the component. Define and modify the [selectedIndex](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#selectedIndex) property to control Stepper state independently of the component. The code snippet below allows users to change the active step with two Buttons.
+You can disable all user interaction with Stepper by setting [focusStateEnabled](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#focusStateEnabled) to `false` and assigning the `pointer-events: none;` CSS style to the component. Define and modify the [selectedIndex](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#selectedIndex) property to control the Stepper state independently of the component. The code snippet below allows users to change the active step with two Buttons.
 
 ---
 ##### jQuery

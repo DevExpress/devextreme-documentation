@@ -1,5 +1,5 @@
 ---
-uid: common/grids:SearchPanel.searchVisibleColumnsOnly
+id: SearchPanel.searchVisibleColumnsOnly
 type: Boolean
 default: false
 ---

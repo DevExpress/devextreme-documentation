@@ -1,7 +1,7 @@
 ---
 id: GridBase.Options.searchPanel
 type: SearchPanel
-inheritsType: common/grids:SearchPanel
+inheritsType: SearchPanel
 ---
 ---
 ##### shortDescription

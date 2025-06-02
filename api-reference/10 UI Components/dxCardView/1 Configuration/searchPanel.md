@@ -1,6 +1,7 @@
 ---
 id: dxCardView.Options.searchPanel
 type: SearchPanel
+inheritsType: SearchPanel
 ---
 ---
 ##### shortDescription

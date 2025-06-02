@@ -4,22 +4,22 @@ type: function(newData, value, currentCardData)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a function to be invoked after the user has edited a field value, but before it is saved in the data source.
 
 ##### param(newData): Object
-<!-- Description goes here -->
+The data object where new data should be set.
 
 ##### param(value): any
-<!-- Description goes here -->
+The input value.
 
 ##### param(currentCardData): Object
-<!-- Description goes here -->
+Accesses the current card data in read-only mode.
 
 ##### return: void | Promise<void>
-<!-- Description goes here -->
+Return a promise for an asynchronous operation or return nothing.
 
 ##### context: Column
-<!-- Description goes here -->
+The `this` keyword refers to the column's configuration.
 
 ---
-<!-- Description goes here -->
+This function allows you to process user input before it is saved to the data source. It accepts the **newData**, **value**, and **currentRowData** parameters. **value** is the user input that you should assign to one of the **newData** fields. Fill the empty **newData** object with fields whose values should be saved in the current row's data object. You can use the read-only **currentCardData** parameter to access the current card's data.

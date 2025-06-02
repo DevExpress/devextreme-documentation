@@ -4,7 +4,7 @@ type: dxFormSimpleItem
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the form item that the field produces in the editing state.
 
 ---
-<!-- Description goes here -->
+[note] The component does not check validation rules in the **formItem** object. Use the **columns**.[validationRules]({basewidgetpath}/Configuration/columns/#validationRules) property to customize validation instead.

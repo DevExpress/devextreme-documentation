@@ -1,12 +1,14 @@
-DevExtreme editors support the `formControlName` directive needed for features of <a href="https://angular.dev/guide/forms/reactive-forms" target="_blank">reactive forms</a>...
+DevExtreme editors support [reactive](https://angular.dev/guide/forms/reactive-forms) and [template-driven](https://angular.dev/guide/forms/template-driven-forms) Angular forms.
+
+To implement a reactive form, specify the `formControlName` input:
 
     <!-- tab: app.component.html -->
-    <form [formGroup]="myForm">
+    <form [formGroup]='myForm'>
         <dx-text-box
-            name="email"
-            formControlName="email"
-            [isValid]="emailControl.valid || emailControl.pristine"
-            [validationError]="{ message: 'Email is invalid'}">
+            name='email'
+            formControlName='email'
+            [isValid]='emailControl.valid || emailControl.pristine'
+            [validationError]='{ message: 'Email is invalid'}'>
         </dx-text-box>
     </form>
 
@@ -41,24 +43,24 @@ DevExtreme editors support the `formControlName` directive needed for features o
     })
     export class AppModule { }
 
-... and `ngModel` binding necessary to use the editors in <a href="https://angular.dev/guide/forms" target="_blank">template-driven forms</a>:
+To implement a template-driven form, specify the `NgModel` directive. Bind `NgModel` to a [template reference variable](https://angular.dev/guide/templates/variables#template-reference-variables) to utilize the built-in validation functionality of Angular forms.
 
     <!-- tab: app.component.html -->
     <form>
         <dx-text-box
-            name="email"
+            name='email'
             email required
-            #emailControl="ngModel"
-            [(ngModel)]="email"
-            [isValid]="emailControl.valid || emailControl.pristine"
-            [validationError]="{ message: 'Email is invalid'}">
+            #emailControl='ngModel'
+            [(ngModel)]='email'
+            [isValid]='emailControl.valid || emailControl.pristine || false'
+            [validationError]='{ message: 'Email is invalid'}'>
         </dx-text-box>
     </form>
 
     <!-- tab: app.component.ts -->
     // ...
     export class AppComponent {
-        email: string;
+        email: string = '';
     }
 
     <!-- tab: app.module.ts -->
@@ -75,3 +77,5 @@ DevExtreme editors support the `formControlName` directive needed for features o
         ]
     })
     export class AppModule { }
+
+[note] DevExtreme validation does not support Angular forms. If you implement `NgModel` and `<dx-validator>` within the same DevExtreme component, validation is called on page load due to a known [issue](https://github.com/angular/angular/issues/14988) with the `NgModel` directive. Utilize Angular's built-in validation with Angular forms or implement DevExtreme validation within a DevExtreme [Form](/Documentation/Guide/UI_Components/Form) component.

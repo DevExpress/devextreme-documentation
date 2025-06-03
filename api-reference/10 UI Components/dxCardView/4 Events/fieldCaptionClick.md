@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when a field caption is clicked or tapped.
 
 ---
-<!-- Description goes here -->
+Main article: [onFieldCaptionClick](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#onFieldCaptionClick)
+
+#####See Also#####
+#include common-link-handleevents

@@ -4,7 +4,7 @@ type: any
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The card's data.
 
 ---
 <!-- Description goes here -->

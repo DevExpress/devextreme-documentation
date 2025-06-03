@@ -6,7 +6,7 @@ references: CardHeader.items|CardHeaderItem.name
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies predefined items for the CardView card headers.
 
 ---
 <!-- Description goes here -->

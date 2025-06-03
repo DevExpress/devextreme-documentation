@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the filter panel.
 
 ---
 <!-- Description goes here -->

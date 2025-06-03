@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The card's index.
 
 ---
 <!-- Description goes here -->

@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when a field value is double-clicked or double-tapped.
 
 ---
-<!-- Description goes here -->
+Main article: [onFieldValueDblClick](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#onFieldValueDblClick)
+
+#####See Also#####
+#include common-link-handleevents

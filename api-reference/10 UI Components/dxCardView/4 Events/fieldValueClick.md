@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when a field value is clicked or tapped.
 
 ---
-<!-- Description goes here -->
+Main article: [onFieldValueClick](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#onFieldValueClick)
+
+#####See Also#####
+#include common-link-handleevents

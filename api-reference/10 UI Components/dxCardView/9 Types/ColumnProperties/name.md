@@ -4,7 +4,7 @@ type: String | undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the column's unique identifier. If not set in code, this value is inherited from the [dataField]({basewidgetpath}/Configuration/columns/#dataField).
 
 ---
-<!-- Description goes here -->
+This property's value is used to refer to the column in code.

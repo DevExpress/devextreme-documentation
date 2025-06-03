@@ -4,7 +4,7 @@ type: dxFilterBuilder_Options
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the filter builder.
 
 ---
 <!-- Description goes here -->

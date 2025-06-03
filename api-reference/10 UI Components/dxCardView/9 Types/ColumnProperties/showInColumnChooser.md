@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether the [column chooser]({basewidgetpath}/Configuration/columnChooser/) can contain the column header.
 
 ---
 <!-- Description goes here -->

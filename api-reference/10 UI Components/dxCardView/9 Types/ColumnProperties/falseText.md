@@ -5,7 +5,8 @@ default: 'false'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+In a [boolean]({basewidgetpath}/Configuration/columns/#dataType) column, replaces all **false** items with a specified text.
 
 ---
-<!-- Description goes here -->
+#####See Also#####
+- **columns[]**.[trueText]({basewidgetpath}/Configuration/columns/#trueText)

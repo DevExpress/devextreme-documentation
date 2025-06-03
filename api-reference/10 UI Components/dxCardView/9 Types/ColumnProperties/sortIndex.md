@@ -5,7 +5,7 @@ type: Number | undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the index according to which columns participate in sorting.
 
 ---
-<!-- Description goes here -->
+This property accepts an integer specifying the index of the column in a collection of columns with applied sorting.

@@ -15,7 +15,7 @@ A selected filter operation.
 
 ##### param(target): String
 A UI element used to filter data.     
-Possible values: [*"headerFilter"*]({basewidgetpath}/Configuration/headerFilter/), [*"filterBuilder"*]({basewidgetpath}/Configuration/#filterBuilder), [*"search"*]({basewidgetpath}/Configuration/searchPanel/).
+Possible values: [*"headerFilter"*](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/headerFilter.md '{basewidgetpath}/Configuration/headerFilter/'), [*"filterBuilder"*](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/filterBuilder.md '{basewidgetpath}/Configuration/#filterBuilder'), [*"search"*](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/searchPanel.md '{basewidgetpath}/Configuration/searchPanel/').
 
 ##### return: String | Array<any> | function()
 A filter expression.

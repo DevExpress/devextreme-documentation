@@ -4,7 +4,7 @@ type: dxCardViewFieldInfo
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Information about the field.
 
 ---
 <!-- Description goes here -->

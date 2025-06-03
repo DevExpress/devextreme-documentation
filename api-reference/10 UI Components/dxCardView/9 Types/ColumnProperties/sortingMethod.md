@@ -19,7 +19,7 @@ Specifies whether *value1* goes before *value2*.
 The `this` keyword refers to the column's configuration.
 
 ---
-This function accepts two cell values and should return a number indicating their sort order:
+This function accepts two cell values and should return a number that indicates their sort order:
 
 - *Less than zero*     
 *value1* goes before *value2*.

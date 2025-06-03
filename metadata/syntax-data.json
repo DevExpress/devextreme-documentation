@@ -5976,8 +5976,50 @@
     "adaptiveDetailRowPreparingInfo.formOptions": {
       "vue": "form-options"
     },
+    "aiChangeStyleCommand": {
+      "angular": "dxo-a-i-change-style-command",
+      "react": "AIChangeStyleCommand",
+      "vue": "DxAIChangeStyleCommand"
+    },
+    "aiChangeToneCommand": {
+      "angular": "dxo-a-i-change-tone-command",
+      "react": "AIChangeToneCommand",
+      "vue": "DxAIChangeToneCommand"
+    },
+    "aiCommand": {
+      "angular": "dxo-a-i-command",
+      "react": "AICommand",
+      "vue": "DxAICommand"
+    },
+    "aiCommandBase": {
+      "vue": "a-i-command-base"
+    },
+    "aiCommandBase.name": {
+      "angular": "dxo-name",
+      "react": "Name",
+      "vue": "DxName"
+    },
+    "aiCommandNameExtended": {
+      "vue": "a-i-command-name-extended"
+    },
+    "aiCustomCommand": {
+      "vue": "a-i-custom-command"
+    },
     "aiIntegration": {
       "vue": "a-i-integration"
+    },
+    "aiToolbarItem": {
+      "vue": "a-i-toolbar-item"
+    },
+    "aiToolbarItem.commands": {
+      "angular": "dxi-command",
+      "react": "Command",
+      "vue": "DxCommand"
+    },
+    "aiTranslateCommand": {
+      "angular": "dxo-a-i-translate-command",
+      "react": "AITranslateCommand",
+      "vue": "DxAITranslateCommand"
     },
     "alert": {
       "angular": "dxo-alert",
@@ -20453,6 +20495,9 @@
     },
     "enums.AggregatedPointsPosition": {
       "vue": "aggregated-points-position"
+    },
+    "enums.AICommandName": {
+      "vue": "a-i-command-name"
     },
     "enums.AllDayPanelMode": {
       "vue": "all-day-panel-mode"

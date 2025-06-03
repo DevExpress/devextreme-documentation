@@ -36,7 +36,7 @@ The following code shows a **validationCallback** example. The function accepts 
 ---
 ##### jQuery
 
-    <!--JavaScript-->
+    <!-- tab: index.js -->
     $(function () {
         $("#numberBoxContainer").dxNumberBox({
             value: 4
@@ -55,7 +55,7 @@ The following code shows a **validationCallback** example. The function accepts 
 
 ##### Angular
 
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-number-box [value]="4">
         <dx-validator>
             <dxi-validation-rule type="custom" 
@@ -65,7 +65,7 @@ The following code shows a **validationCallback** example. The function accepts 
         </dx-validator>
     </dx-number-box>
 
-    <!--TypeScript-->
+    <!-- tab: app.component.ts  -->
     import { DxNumberBoxModule, DxValidatorModule } from "devextreme-angular";
     // ...
     export class AppComponent {
@@ -140,8 +140,173 @@ The following code shows a **validationCallback** example. The function accepts 
                 <NumberBox defaultValue={4}>
                     <Validator>
                         <CustomRule
-                            validationCallback={this.validateNumber}
+                            validationCallback={validateNumber}
                             message="An even number is expected"
+                        />
+                    </Validator>
+                </NumberBox>
+            );
+        }
+    }
+    export default App;
+
+---
+
+The code snippet below demonstrates how to implement multiple validation messages in one CustomRule:
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function () {
+        $("#numberBoxContainer").dxNumberBox({}).dxValidator({
+            validationRules: [{
+                type: "custom",
+                validationCallback: validateNumber,
+            }]
+        });
+    });
+    function validateNumber (e) {
+        switch (true) {
+            case (e.value < 0):
+                e.rule.message = "Enter a number greater than 0";
+                return false;
+            case (e.value > 100):
+                e.rule.message = "Enter a number less than 100";
+                return false;
+            case (e.value % 2 !=0):
+                e.rule.message = "Enter an even number";
+                return false;
+            default:
+                return true;
+        }
+    }
+
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-number-box>
+        <dx-validator>
+            <dxi-validation-rule
+                type="custom" 
+                [validationCallback]="validateNumber" 
+            >
+            </dxi-validation-rule>
+        </dx-validator>
+    </dx-number-box>
+
+    <!-- tab: app.component.ts  -->
+    import { DxNumberBoxModule, DxValidatorModule } from "devextreme-angular";
+    // ...
+    export class AppComponent {
+        validateNumber(e) {
+            switch (true) {
+                case (e.value < 0):
+                    e.rule.message = "Enter a number greater than 0";
+                    return false;
+                case (e.value > 100):
+                    e.rule.message = "Enter a number less than 100";
+                    return false;
+                case (e.value % 2 !=0):
+                    e.rule.message = "Enter an even number";
+                    return false;
+                default:
+                    return true;
+            }
+        }
+    }
+    @NgModule({
+        imports: [
+            DxNumberBoxModule,
+            DxValidatorModule,
+            // ...
+        ],
+        // ...
+    })
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxNumberBox>
+            <DxValidator>
+                <DxCustomRule
+                    :validation-callback="validateNumber"
+                />
+            </DxValidator>
+        </DxNumberBox>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import DxNumberBox from 'devextreme-vue/number-box';
+    import DxValidator, {
+        DxCustomRule
+    } from 'devextreme-vue/validator';
+
+    export default {
+        components: {
+            DxNumberBox,
+            DxValidator,
+            DxCustomRule
+        },
+        methods: {
+            validateNumber(e) {
+                switch (true) {
+                    case (e.value < 0):
+                        e.rule.message = "Enter a number greater than 0";
+                        return false;
+                    case (e.value > 100):
+                        e.rule.message = "Enter a number less than 100";
+                        return false;
+                    case (e.value % 2 !=0):
+                        e.rule.message = "Enter an even number";
+                        return false;
+                    default:
+                        return true;
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+
+    import 'devextreme/dist/css/dx.light.css';
+
+    import NumberBox from 'devextreme-react/number-box';
+    import Validator, {
+        CustomRule
+    } from 'devextreme-react/validator';
+
+    class App extends React.Component {
+        function validateNumber(e) {
+            switch (true) {
+                case (e.value < 0):
+                    e.rule.message = "Enter a number greater than 0";
+                    return false;
+                case (e.value > 100):
+                    e.rule.message = "Enter a number less than 100";
+                    return false;
+                case (e.value % 2 !=0):
+                    e.rule.message = "Enter an even number";
+                    return false;
+                default:
+                    return true;
+            }
+        }
+
+        render() {
+            return (
+                <NumberBox>
+                    <Validator>
+                        <CustomRule
+                            validationCallback={validateNumber}
                         />
                     </Validator>
                 </NumberBox>

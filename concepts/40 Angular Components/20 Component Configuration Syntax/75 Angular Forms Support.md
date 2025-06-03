@@ -78,4 +78,4 @@ To implement a template-driven form, specify the `NgModel` directive. Bind `NgMo
     })
     export class AppModule { }
 
-[note] DevExtreme validation does not support Angular forms. If you implement `NgModel` and `<dx-validator>` within the same DevExtreme component, validation is called on page load due to a known [issue](https://github.com/angular/angular/issues/14988) with the `NgModel` directive. Utilize Angular's built-in validation with Angular forms or implement DevExtreme validation within a DevExtreme [Form](/Documentation/Guide/UI_Components/Form) component.
+[note] DevExtreme [Validator](/Documentation/ApiReference/UI_Components/dxValidator/) does not support Angular forms. If you implement `NgModel` and `<dx-validator>` within the same DevExtreme component, validation is called on page load due to a known [issue](https://github.com/angular/angular/issues/14988) with the `NgModel` directive. Utilize Angular's built-in validation with Angular forms or implement DevExtreme validation within a DevExtreme [Form](/Documentation/Guide/UI_Components/Form) component.

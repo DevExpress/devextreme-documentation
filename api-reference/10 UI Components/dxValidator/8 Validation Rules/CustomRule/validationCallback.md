@@ -67,7 +67,7 @@ The following code shows a **validationCallback** example. The function accepts 
 
     <!-- tab: app.component.ts  -->
     import { DxNumberBoxModule, DxValidatorModule } from "devextreme-angular";
-    import { ValidationCallbackData } from 'devextreme/common';
+    import { ValidationCallbackData } from 'devextreme-angular/common';
     // ...
     export class AppComponent {
         validateNumber(e: ValidationCallbackData) {
@@ -199,7 +199,7 @@ The code snippet below demonstrates how to implement multiple validation message
 
     <!-- tab: app.component.ts  -->
     import { DxNumberBoxModule, DxValidatorModule } from "devextreme-angular";
-    import { ValidationCallbackData } from 'devextreme/common';
+    import { ValidationCallbackData } from 'devextreme-angular/common';
     // ...
     export class AppComponent {
         validateNumber(e: ValidationCallbackData) {

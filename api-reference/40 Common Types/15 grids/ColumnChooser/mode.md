@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.columnChooser.mode
+id: ColumnChooser.mode
 type: Enums.ColumnChooserMode
 default: 'dragAndDrop'
 ---

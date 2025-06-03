@@ -264,7 +264,7 @@ A user can change the applied filter by including or excluding values. Use a col
 
 #include datagrid-filtering-rowandheaderconflicts
 
-You can use the **headerFilter.search.**[enabled](/api-reference/40%20Common%20Types/15%20grids/HeaderFilterSearchConfig/enabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/search/#enabled') property to enable searching in the header filter. You can also declare this property in a column's configuration object to enable/disable searching in this column's header filter.
+You can use the **headerFilter.search.enabled** property to enable searching in the header filter. You can also declare this property in a column's configuration object to enable/disable searching in this column's header filter.
 
 ---
 ##### jQuery
@@ -388,7 +388,7 @@ You can use the **headerFilter.search.**[enabled](/api-reference/40%20Common%20T
 
 ---
 
-A header filter's popup menu initially lists all column values. You can group them using the **headerFilter**.[groupInterval](/api-reference/_hidden/GridBaseColumn/headerFilter/groupInterval.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#groupInterval') property if they are numbers or dates. You can also supply a custom data source for a header filter using the [dataSource](/api-reference/_hidden/GridBaseColumn/headerFilter/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#dataSource') property. Refer to the property's description for details.
+A header filter's popup menu initially lists all column values. You can group them using the **headerFilter**.[groupInterval](/api-reference/40%20Common%20Types/15%20grids/ColumnHeaderFilter/groupInterval.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#groupInterval') property if they are numbers or dates. You can also supply a custom data source for a header filter using the [dataSource](/api-reference/40%20Common%20Types/15%20grids/ColumnHeaderFilter/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#dataSource') property. Refer to the property's description for details.
 
 [note] If a column has empty cells (`null` or `''`), the header filter popup menu displays a `(Blanks)` item.
 

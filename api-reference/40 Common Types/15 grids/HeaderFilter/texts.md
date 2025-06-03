@@ -1,6 +1,6 @@
 ---
-type: Object
-uid: common/grids:HeaderFilter.texts
+id: HeaderFilter.texts
+type: HeaderFilterTexts
 ---
 ---
 ##### shortDescription

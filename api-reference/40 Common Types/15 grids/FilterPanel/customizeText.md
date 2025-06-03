@@ -1,5 +1,5 @@
 ---
-uid: common/grids:FilterPanel.customizeText
+id: FilterPanel.customizeText
 type: function(e)
 ---
 ---

@@ -1,5 +1,5 @@
 ---
-uid: common/grids:HeaderFilterTexts.emptyValue
+id: HeaderFilterTexts.emptyValue
 type: String
 default: '(Blanks)'
 ---

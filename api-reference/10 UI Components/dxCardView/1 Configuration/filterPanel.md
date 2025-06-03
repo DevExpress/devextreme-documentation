@@ -1,6 +1,7 @@
 ---
 id: dxCardView.Options.filterPanel
-type: Object
+type: FilterPanel
+inheritsType: FilterPanel
 ---
 ---
 ##### shortDescription

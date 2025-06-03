@@ -1,5 +1,5 @@
 ---
-id: GridBaseColumn.headerFilter.allowSelectAll
+id: ColumnHeaderFilter.allowSelectAll
 type: Boolean
 default: true
 ---
@@ -8,3 +8,4 @@ default: true
 Specifies whether a "Select All" option is available to users.
 
 ---
+<!-- Description goes here -->

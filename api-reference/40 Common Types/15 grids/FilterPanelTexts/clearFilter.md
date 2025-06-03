@@ -1,5 +1,5 @@
 ---
-uid: common/grids:FilterPanelTexts.clearFilter
+id: FilterPanelTexts.clearFilter
 type: String
 default: 'Clear'
 ---

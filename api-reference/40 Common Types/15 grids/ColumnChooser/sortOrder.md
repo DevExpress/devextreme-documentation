@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.columnChooser.sortOrder
+id: ColumnChooser.sortOrder
 type: Enums.SortOrder | undefined
 default: undefined
 ---

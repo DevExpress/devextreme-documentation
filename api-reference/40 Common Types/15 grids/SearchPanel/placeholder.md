@@ -1,5 +1,5 @@
 ---
-uid: common/grids:SearchPanel.placeholder
+id: SearchPanel.placeholder
 type: String
 default: 'Search...'
 ---

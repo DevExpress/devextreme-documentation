@@ -6778,6 +6778,38 @@
       "react": "Column",
       "vue": "DxColumn"
     },
+    "columnChooser": {
+      "angular": "dxo-column-chooser",
+      "react": "ColumnChooser",
+      "vue": "DxColumnChooser"
+    },
+    "columnChooser.allowSearch": {
+      "vue": "allow-search"
+    },
+    "columnChooser.emptyPanelText": {
+      "vue": "empty-panel-text"
+    },
+    "columnChooser.position": {
+      "angular": "dxo-position",
+      "react": "Position",
+      "vue": "DxPosition"
+    },
+    "columnChooser.search": {
+      "angular": "dxo-search",
+      "react": "Search",
+      "vue": "DxSearch"
+    },
+    "columnChooser.searchTimeout": {
+      "vue": "search-timeout"
+    },
+    "columnChooser.selection": {
+      "angular": "dxo-selection",
+      "react": "Selection",
+      "vue": "DxSelection"
+    },
+    "columnChooser.sortOrder": {
+      "vue": "sort-order"
+    },
     "columnChooserSearchConfig": {
       "angular": "dxo-column-chooser-search-config",
       "react": "ColumnChooserSearchConfig",
@@ -6796,6 +6828,31 @@
     },
     "columnChooserSelectionConfig.selectByClick": {
       "vue": "select-by-click"
+    },
+    "columnHeaderFilter": {
+      "angular": "dxo-column-header-filter",
+      "react": "ColumnHeaderFilter",
+      "vue": "DxColumnHeaderFilter"
+    },
+    "columnHeaderFilter.allowSearch": {
+      "vue": "allow-search"
+    },
+    "columnHeaderFilter.allowSelectAll": {
+      "vue": "allow-select-all"
+    },
+    "columnHeaderFilter.dataSource": {
+      "vue": "data-source"
+    },
+    "columnHeaderFilter.groupInterval": {
+      "vue": "group-interval"
+    },
+    "columnHeaderFilter.search": {
+      "angular": "dxo-search",
+      "react": "Search",
+      "vue": "DxSearch"
+    },
+    "columnHeaderFilter.searchMode": {
+      "vue": "search-mode"
     },
     "columnHeaderFilterSearchConfig": {
       "angular": "dxo-column-header-filter-search-config",
@@ -8236,6 +8293,11 @@
       "angular": "dxo-selection",
       "react": "Selection",
       "vue": "DxSelection"
+    },
+    "dxCardViewOptions.sorting": {
+      "angular": "dxo-sorting",
+      "react": "Sorting",
+      "vue": "DxSorting"
     },
     "dxCardViewOptions.toolbar": {
       "angular": "dxo-toolbar",
@@ -21238,6 +21300,34 @@
     "fileSystemItem.pathKeys": {
       "vue": "path-keys"
     },
+    "filterPanel": {
+      "vue": "filter-panel"
+    },
+    "filterPanel.customizeText": {
+      "vue": "customize-text"
+    },
+    "filterPanel.filterEnabled": {
+      "vue": "filter-enabled"
+    },
+    "filterPanel.texts": {
+      "angular": "dxo-texts",
+      "react": "Texts",
+      "vue": "DxTexts"
+    },
+    "filterPanelTexts": {
+      "angular": "dxo-filter-panel-texts",
+      "react": "FilterPanelTexts",
+      "vue": "DxFilterPanelTexts"
+    },
+    "filterPanelTexts.clearFilter": {
+      "vue": "clear-filter"
+    },
+    "filterPanelTexts.createFilter": {
+      "vue": "create-filter"
+    },
+    "filterPanelTexts.filterEnabledHint": {
+      "vue": "filter-enabled-hint"
+    },
     "font": {
       "angular": "dxo-font",
       "react": "Font",
@@ -21363,26 +21453,6 @@
       "react": "HeaderFilter",
       "vue": "DxHeaderFilter"
     },
-    "gridBaseColumn.headerFilter.allowSearch": {
-      "vue": "allow-search"
-    },
-    "gridBaseColumn.headerFilter.allowSelectAll": {
-      "vue": "allow-select-all"
-    },
-    "gridBaseColumn.headerFilter.dataSource": {
-      "vue": "data-source"
-    },
-    "gridBaseColumn.headerFilter.groupInterval": {
-      "vue": "group-interval"
-    },
-    "gridBaseColumn.headerFilter.search": {
-      "angular": "dxo-search",
-      "react": "Search",
-      "vue": "DxSearch"
-    },
-    "gridBaseColumn.headerFilter.searchMode": {
-      "vue": "search-mode"
-    },
     "gridBaseColumn.hidingPriority": {
       "vue": "hiding-priority"
     },
@@ -21475,33 +21545,6 @@
       "angular": "dxo-column-chooser",
       "react": "ColumnChooser",
       "vue": "DxColumnChooser"
-    },
-    "gridBaseOptions.columnChooser.allowSearch": {
-      "vue": "allow-search"
-    },
-    "gridBaseOptions.columnChooser.emptyPanelText": {
-      "vue": "empty-panel-text"
-    },
-    "gridBaseOptions.columnChooser.position": {
-      "angular": "dxo-position",
-      "react": "Position",
-      "vue": "DxPosition"
-    },
-    "gridBaseOptions.columnChooser.search": {
-      "angular": "dxo-search",
-      "react": "Search",
-      "vue": "DxSearch"
-    },
-    "gridBaseOptions.columnChooser.searchTimeout": {
-      "vue": "search-timeout"
-    },
-    "gridBaseOptions.columnChooser.selection": {
-      "angular": "dxo-selection",
-      "react": "Selection",
-      "vue": "DxSelection"
-    },
-    "gridBaseOptions.columnChooser.sortOrder": {
-      "vue": "sort-order"
     },
     "gridBaseOptions.columnFixing": {
       "angular": "dxo-column-fixing",
@@ -21641,26 +21684,6 @@
       "react": "FilterPanel",
       "vue": "DxFilterPanel"
     },
-    "gridBaseOptions.filterPanel.customizeText": {
-      "vue": "customize-text"
-    },
-    "gridBaseOptions.filterPanel.filterEnabled": {
-      "vue": "filter-enabled"
-    },
-    "gridBaseOptions.filterPanel.texts": {
-      "angular": "dxo-texts",
-      "react": "Texts",
-      "vue": "DxTexts"
-    },
-    "gridBaseOptions.filterPanel.texts.clearFilter": {
-      "vue": "clear-filter"
-    },
-    "gridBaseOptions.filterPanel.texts.createFilter": {
-      "vue": "create-filter"
-    },
-    "gridBaseOptions.filterPanel.texts.filterEnabledHint": {
-      "vue": "filter-enabled-hint"
-    },
     "gridBaseOptions.filterRow": {
       "angular": "dxo-filter-row",
       "react": "FilterRow",
@@ -21741,28 +21764,6 @@
       "angular": "dxo-header-filter",
       "react": "HeaderFilter",
       "vue": "DxHeaderFilter"
-    },
-    "gridBaseOptions.headerFilter.allowSearch": {
-      "vue": "allow-search"
-    },
-    "gridBaseOptions.headerFilter.allowSelectAll": {
-      "vue": "allow-select-all"
-    },
-    "gridBaseOptions.headerFilter.search": {
-      "angular": "dxo-search",
-      "react": "Search",
-      "vue": "DxSearch"
-    },
-    "gridBaseOptions.headerFilter.searchTimeout": {
-      "vue": "search-timeout"
-    },
-    "gridBaseOptions.headerFilter.texts": {
-      "angular": "dxo-texts",
-      "react": "Texts",
-      "vue": "DxTexts"
-    },
-    "gridBaseOptions.headerFilter.texts.emptyValue": {
-      "vue": "empty-value"
     },
     "gridBaseOptions.highlightChanges": {
       "vue": "highlight-changes"
@@ -21913,15 +21914,6 @@
       "react": "SearchPanel",
       "vue": "DxSearchPanel"
     },
-    "gridBaseOptions.searchPanel.highlightCaseSensitive": {
-      "vue": "highlight-case-sensitive"
-    },
-    "gridBaseOptions.searchPanel.highlightSearchText": {
-      "vue": "highlight-search-text"
-    },
-    "gridBaseOptions.searchPanel.searchVisibleColumnsOnly": {
-      "vue": "search-visible-columns-only"
-    },
     "gridBaseOptions.selectedRowKeys": {
       "vue": "selected-row-keys"
     },
@@ -21944,18 +21936,6 @@
       "angular": "dxo-sorting",
       "react": "Sorting",
       "vue": "DxSorting"
-    },
-    "gridBaseOptions.sorting.ascendingText": {
-      "vue": "ascending-text"
-    },
-    "gridBaseOptions.sorting.clearText": {
-      "vue": "clear-text"
-    },
-    "gridBaseOptions.sorting.descendingText": {
-      "vue": "descending-text"
-    },
-    "gridBaseOptions.sorting.showSortIndexes": {
-      "vue": "show-sort-indexes"
     },
     "gridBaseOptions.stateStoring": {
       "angular": "dxo-state-storing",
@@ -21983,6 +21963,30 @@
     "gridBaseOptions.wordWrapEnabled": {
       "vue": "word-wrap-enabled"
     },
+    "headerFilter": {
+      "angular": "dxo-header-filter",
+      "react": "HeaderFilter",
+      "vue": "DxHeaderFilter"
+    },
+    "headerFilter.allowSearch": {
+      "vue": "allow-search"
+    },
+    "headerFilter.allowSelectAll": {
+      "vue": "allow-select-all"
+    },
+    "headerFilter.search": {
+      "angular": "dxo-search",
+      "react": "Search",
+      "vue": "DxSearch"
+    },
+    "headerFilter.searchTimeout": {
+      "vue": "search-timeout"
+    },
+    "headerFilter.texts": {
+      "angular": "dxo-texts",
+      "react": "Texts",
+      "vue": "DxTexts"
+    },
     "headerFilterSearchConfig": {
       "angular": "dxo-header-filter-search-config",
       "react": "HeaderFilterSearchConfig",
@@ -21990,6 +21994,14 @@
     },
     "headerFilterSearchConfig.editorOptions": {
       "vue": "editor-options"
+    },
+    "headerFilterTexts": {
+      "angular": "dxo-header-filter-texts",
+      "react": "HeaderFilterTexts",
+      "vue": "DxHeaderFilterTexts"
+    },
+    "headerFilterTexts.emptyValue": {
+      "vue": "empty-value"
     },
     "headerPanel": {
       "angular": "dxo-header-panel",
@@ -22588,6 +22600,20 @@
     "searchBoxMixinOptions.searchValue": {
       "vue": "search-value"
     },
+    "searchPanel": {
+      "angular": "dxo-search-panel",
+      "react": "SearchPanel",
+      "vue": "DxSearchPanel"
+    },
+    "searchPanel.highlightCaseSensitive": {
+      "vue": "highlight-case-sensitive"
+    },
+    "searchPanel.highlightSearchText": {
+      "vue": "highlight-search-text"
+    },
+    "searchPanel.searchVisibleColumnsOnly": {
+      "vue": "search-visible-columns-only"
+    },
     "selectionChangeInfo.addedItems": {
       "vue": "added-items"
     },
@@ -22607,6 +22633,23 @@
     },
     "selectionConfiguration.showCheckBoxesMode": {
       "vue": "show-check-boxes-mode"
+    },
+    "sorting": {
+      "angular": "dxo-sorting",
+      "react": "Sorting",
+      "vue": "DxSorting"
+    },
+    "sorting.ascendingText": {
+      "vue": "ascending-text"
+    },
+    "sorting.clearText": {
+      "vue": "clear-text"
+    },
+    "sorting.descendingText": {
+      "vue": "descending-text"
+    },
+    "sorting.showSortIndexes": {
+      "vue": "show-sort-indexes"
     },
     "store": {
       "vue": "store"

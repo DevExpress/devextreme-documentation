@@ -1,6 +1,7 @@
 ---
 id: dxCardView.Options.columnChooser
-type: Object
+type: ColumnChooser
+inheritsType: ColumnChooser
 ---
 ---
 ##### shortDescription

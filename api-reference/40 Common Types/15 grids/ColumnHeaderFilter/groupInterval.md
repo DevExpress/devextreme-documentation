@@ -1,5 +1,5 @@
 ---
-id: GridBaseColumn.headerFilter.groupInterval
+id: ColumnHeaderFilter.groupInterval
 type: Enums.HeaderFilterGroupInterval | Number | undefined
 default: undefined
 ---
@@ -164,4 +164,3 @@ For date columns, set this property to one of the accepted string values above. 
     }
 
 ---
-

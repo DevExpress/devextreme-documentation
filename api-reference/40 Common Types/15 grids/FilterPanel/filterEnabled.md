@@ -1,8 +1,8 @@
 ---
-firedEvents: optionChanged
-uid: common/grids:FilterPanel.filterEnabled
+id: FilterPanel.filterEnabled
 type: Boolean
 default: true
+firedEvents: optionChanged
 ---
 ---
 ##### shortDescription

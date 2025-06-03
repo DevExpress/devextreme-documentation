@@ -1,8 +1,8 @@
 ---
-uid: common/grids:SearchPanel
-isType: 
+id: SearchPanel
 module: common/grids
 export: SearchPanel
+type: Object
 generateTypeLink: 
 ---
 ---

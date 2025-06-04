@@ -1,6 +1,6 @@
 ---
 id: HeaderPanel.dragging
-type: Object
+type: HeaderPanelDragging
 ---
 ---
 ##### shortDescription

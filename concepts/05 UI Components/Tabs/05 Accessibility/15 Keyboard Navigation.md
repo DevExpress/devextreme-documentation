@@ -22,8 +22,8 @@ A user can use the following keys to interact with the Tabs component:
         <td>Moves focus to the last tab.</td>
     </tr>
     <tr>
-        <td>Enter or Space</td>
-        <td>Selects the tab.</td>
+        <td>Enter<br>Space</td>
+        <td>Selects the focused tab.</td>
     </tr>
     <tr>
         <td>Shift + Mouse Wheel</td>

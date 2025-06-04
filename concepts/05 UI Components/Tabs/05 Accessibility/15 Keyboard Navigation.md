@@ -22,8 +22,8 @@ A user can use the following keys to interact with the Tabs component:
         <td>Moves focus to the last tab.</td>
     </tr>
     <tr>
-        <td>Enter or Space</td>
-        <td>Selects the tab. Available only if <a href="/Documentation/ApiReference/UI_Components/dxTabs/Configuration/#selectionMode">selectionMode</a> is set to <i>'multiple'</i>.</td>
+        <td>Enter<br>Space</td>
+        <td>Selects the focused tab.</td>
     </tr>
     <tr>
         <td>Shift + Mouse Wheel</td>

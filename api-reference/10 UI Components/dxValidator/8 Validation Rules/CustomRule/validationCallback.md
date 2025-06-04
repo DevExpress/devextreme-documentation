@@ -7,10 +7,10 @@ type: function(options)
 A function that validates the target value.
 
 ##### param(options): Object
-An object defining validation parameters.
+An object that defines validation parameters.
 
 ##### field(options.column): Object
-The column to which the cell being validated belongs. Exists only when you validate a built-in editor in the [DataGrid](/api-reference/10%20UI%20Components/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid') or [TreeList](/api-reference/10%20UI%20Components/dxTreeList '/Documentation/ApiReference/UI_Components/dxTreeList').
+Current row data. Exists only when you validate [DataGrid](/api-reference/10%20UI%20Components/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid') or [TreeList](/api-reference/10%20UI%20Components/dxTreeList '/Documentation/ApiReference/UI_Components/dxTreeList') cell values.
 
 ##### field(options.data): Object
 The current row's data. Exists only when you validate a DataGrid or TreeList cell's value.
@@ -31,7 +31,7 @@ The validated value.
 **true** if the value is valid; otherwise, **false**.
 
 ---
-The following code shows a **validationCallback** example. The function accepts a number and returns **true** if the number is even and **false** if it is odd:
+The following code sample shows a **validationCallback** example. The **validateNumber** function accepts a number and returns **true** if the number is even and **false** if it is odd:
 
 ---
 ##### jQuery

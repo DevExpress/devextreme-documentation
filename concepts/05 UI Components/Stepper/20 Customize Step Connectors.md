@@ -51,13 +51,4 @@ For Steppers that use the vertical orientation, assign the `width` style to the 
             width: 5px;
         }
 
-[note]
-
-If a vertical Stepper does not display step connectors, modify the component's `height` style.
-
-    <!--CSS-->
-    #verticalStepper {
-        height: 750px;
-    }
-
-[/note]
+[note] If a Stepper does not display step connectors, modify the component's `height`/`width` styles or [height](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#height)/[width](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#width) properties.

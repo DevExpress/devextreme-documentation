@@ -17,9 +17,9 @@ To customize connectors in the default state, assign css styles to the `dx-stepp
         background-color: black;
     }
 
-You can also change the width/height of connectors. To do so, assign CSS styles to two classes simultaneously.
+You can also change the width/height of connectors by assigning CSS styles to two classes simultaneously.
 
-For Steppers that use the horizontal [orientation](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#orientation), assign the `height` style to the following classes:
+For Steppers that are [orientated](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#orientation) horizontally, assign the `height` style to the following classes:
 
 - `dx-stepper-connector-container` and `dx-stepper-connector-horizontal`    
     Changes the height of connectors in the default state.
@@ -35,7 +35,7 @@ For Steppers that use the horizontal [orientation](/Documentation/ApiReference/U
             height: 5px;
         }
 
-For Steppers that use the vertical orientation, assign the `width` style to the following classes:
+For Steppers that are orientated vertically, assign the `width` style to the following classes:
 
 - `dx-stepper-connector-container` and `dx-stepper-connector-vertical`    
     Changes the width of connectors in the default state.

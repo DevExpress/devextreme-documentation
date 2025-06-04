@@ -14,7 +14,7 @@ Configures toolbar items.
 The toolbar can contain the following elements as items:
 
 - **Predefined controls**       
-Predefined controls appear on the toolbar depending on whether a specific {WidgetName} feature is enabled. The following table illustrates the dependency:
+Predefined controls appear in the toolbar depending on whether a specific {WidgetName} feature is enabled. The following predefined controls are available:
 
     <table class="dx-table">
         <tr>
@@ -36,79 +36,6 @@ Predefined controls appear on the toolbar depending on whether a specific {Widge
     </table>
 
     If you need to customize a predefined control, add an object to the **items[]** array. This object must contain the control's [name](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerToolbarItem/name.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/#name') and [properties](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerToolbarItem '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/toolbar/items/') you want to customize. If a control does not need customization, you can include its name in the **toolbar**.**items[]** array. 
-
-    The date navigator is a [ButtonGroup](/api-reference/10%20UI%20Components/dxButtonGroup '/Documentation/ApiReference/UI_Components/dxButtonGroup/') with three items: left arrow (*'prev'*), right arrow (*'next'*), and date interval (*'dateInterval'*). Define [options](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerToolbarItem/options.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/#options').**items** following the example below to customize the order of date navigator components.
-
-    ---
-    ##### jQuery
-
-        <!--tab: index.js-->
-        $(function(){
-            $("#{widgetName}Container").dx{WidgetName}({
-                // ...
-                toolbar: {
-                    items: [{
-                        name: "dateNavigator",      
-                        options: {
-                            items: ['prev', 'dateInterval', 'next']
-                        }
-                    }]  
-                }
-            });
-        });
-
-    ##### Angular
-
-        <!-- tab: app.component.html -->
-        <dx-{widget-name} ... >
-            <dxo-scheduler-toolbar>
-                <dxi-scheduler-toolbar-item 
-                    name="dateNavigator"
-                    [options]="{items: ['prev', 'dateInterval', 'next']}">
-                </dxi-scheduler-toolbar-item>
-            </dxo-scheduler-toolbar>
-        </dx-{widget-name}>
-
-    ##### Vue
-
-        <!-- tab: App.vue -->
-        <template>
-            <Dx{WidgetName} ... >
-                <DxToolbar>
-                    <DxItem
-                        name="dateNavigator"
-                        :options="{items: ['prev', 'dateInterval', 'next']}"
-                    />
-                </DxToolbar>
-            </Dx{WidgetName}>
-        </template>
-        <script setup lang="ts">
-            import DxScheduler, { DxToolbar, DxItem } from 'devextreme-vue/scheduler';
-        </script>
-
-    ##### React
-
-        <!-- tab: App.js -->
-        import {WidgetName}, { Toolbar, Item } from 'devextreme-react/{widget-name}';
-        // ...
-        const dateNavigatorOptions = {items: ['prev', 'dateInterval', 'next']};
-
-        function App() {
-            return (
-                <{WidgetName} ... >
-                    <Toolbar>
-                        <Item
-                            name="dateNavigator"
-                            options={dateNavigatorOptions}
-                        />
-                    </Toolbar>
-                </{WidgetName}>
-            );
-        }
-
-    ---
-
-    The example below adds the date navigator and the Today button without customization:
 
     ---
     ##### jQuery
@@ -170,6 +97,121 @@ Predefined controls appear on the toolbar depending on whether a specific {Widge
     ---
 
     [important] The {WidgetName} does not display controls missing from the **items[]** array. Ensure that this array includes controls for all enabled features.
+
+    The "dateNavigator" predefined control is a [ButtonGroup](/api-reference/10%20UI%20Components/dxButtonGroup '/Documentation/ApiReference/UI_Components/dxButtonGroup/') with three items: left arrow (*'prev'*), right arrow (*'next'*), and date interval (*'dateInterval'*). Define [options](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerToolbarItem/options.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/#options').**items** following the example below to customize the order of dateNavigator components and add new buttons.
+
+    ---
+    ##### jQuery
+
+        <!--tab: index.js-->
+        const customButton = {
+            text: "Custom Button",
+            icon: "plus",
+            onClick: () => {
+                console.log("The Custom Button was clicked.")
+            }
+        }
+
+        const dateNavigatorOptions = {
+            items: ['prev', 'dateInterval', customButton, 'next']
+        }
+
+        $(function(){
+            $("#{widgetName}Container").dx{WidgetName}({
+                // ...
+                toolbar: {
+                    items: [{
+                        name: "dateNavigator",      
+                        options: dateNavigatorOptions
+                    }]  
+                }
+            });
+        });
+
+    ##### Angular
+
+        <!-- tab: app.component.html -->
+        <dx-{widget-name} ... >
+            <dxo-scheduler-toolbar>
+                <dxi-scheduler-toolbar-item 
+                    name="dateNavigator"
+                    [options]="dateNavigatorOptions">
+                </dxi-scheduler-toolbar-item>
+            </dxo-scheduler-toolbar>
+        </dx-{widget-name}>
+
+        <!-- tab: app.component.ts -->
+        import { DxSchedulerModule } from 'devextreme-angular'
+        // ...
+        export class AppComponent {
+            customButton = {
+                text: "Custom Button",
+                icon: "plus",
+                onClick: () => {
+                    console.log("The Custom Button was clicked.")
+                }
+            }
+            dateNavigatorOptions = {
+                items: ['prev', 'dateInterval', this.customButton, 'next']
+            }
+        }
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template>
+            <Dx{WidgetName} ... >
+                <DxToolbar>
+                    <DxItem
+                        name="dateNavigator"
+                        :options="dateNavigatorOptions"
+                    />
+                </DxToolbar>
+            </Dx{WidgetName}>
+        </template>
+        <script setup lang="ts">
+            import DxScheduler, { type DxSchedulerTypes, DxToolbar, DxItem } from 'devextreme-vue/scheduler';
+            const customButton = {
+                text: "Custom Button",
+                icon: "plus",
+                onClick: () => {
+                    console.log("The Custom Button was clicked.");
+                }
+            }
+            const dateNavigatorOptions: DateNavigatorItemProperties = {
+                items: ['prev', 'dateInterval', customButton, 'next']
+            }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import {WidgetName}, { Toolbar, Item } from 'devextreme-react/{widget-name}';
+        // ...
+        const customButton = {
+            text: "Custom Button",
+            icon: "plus",
+            onClick: () => {
+                console.log("The Custom Button was clicked.")
+            }
+        }
+
+        const dateNavigatorOptions = {items: ['prev', 'dateInterval', customButton, 'next']};
+
+        function App() {
+            return (
+                <{WidgetName} ... >
+                    <Toolbar>
+                        <Item
+                            name="dateNavigator"
+                            options={dateNavigatorOptions}
+                        />
+                    </Toolbar>
+                </{WidgetName}>
+            );
+        }
+
+    ---
 
 - **DevExtreme components**     
 

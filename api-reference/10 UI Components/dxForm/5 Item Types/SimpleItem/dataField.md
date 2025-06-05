@@ -147,7 +147,153 @@ Use standard JavaScript syntax (`item.nestedItem` and `array[itemIndex]`) to spe
 
 ---
 
-[note] The Form component does not support **dataField** field names that contain characters used to access nested items: `.`, `[`, and `]`.
+[note]
+
+The Form component does not support **dataField** field names that contain characters used to access nested items: `.`, `[`, and `]`. The following code snippet demonstrates an unsupported field name:
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    // Incorrect:
+    const employee = {
+        id: '0',
+        "address.city": 'New York', // Invalid naming.
+    };
+
+    $(function() {
+        $("#formContainer").dxForm({
+            formData: employee,
+            items: [{
+                dataField: "address.city", // Form attempts to access the "city" property inside of "address".
+            }]
+        });
+    });
+
+    // Correct:
+    const employee = {
+        id: '0',
+        addressCity: 'New York', // Supported naming.
+    };
+
+    $(function() {
+        $("#formContainer").dxForm({
+            formData: employee,
+            items: [{
+                dataField: "addressCity", // Form accesses "addressCity" correctly.
+            }]
+        });
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    // Incorrect:
+    <dx-form [formData]="employee" ... >
+        <dxi-item ...
+            dataField="address.city" // Form attempts to access the "city" property inside of "address".
+        >
+        </dxi-item>
+    </dx-form>
+
+    // Correct:
+    <dx-form [formData]="employee" ... >
+        <dxi-item ...
+            dataField="addressCity" // Form accesses "addressCity" correctly.
+        >
+        </dxi-item>
+    </dx-form>
+
+    <!-- tab: app.component.ts -->
+    // Incorrect:
+    const employee: Employee = {
+        id: '0',
+        "address.city": 'New York', // Invalid naming.
+    };
+
+    // Correct:
+    const employee: Employee = {
+        id: '0',
+        addressCity: 'New York', // Supported naming.
+    };
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    // Incorrect:
+    <template>
+        <DxForm :form-data="employee" ...>
+            <DxSimpleItem ... 
+                data-field="address.city" // Form attempts to access the "city" property inside of "address".
+            />
+        </DxForm>
+    </template>
+    <script setup>
+    // ...
+    const employee = {
+        id: '0',
+        "address.city": 'New York', // Invalid naming.
+    };
+    </script>
+
+    // Correct:
+    <template>
+        <DxForm :form-data="employee" ...>
+            <DxSimpleItem ...
+                data-field="addressCity" // Form accesses "addressCity" correctly.
+            />
+        </DxForm>
+    </template>
+    <script setup>
+    // ...
+    const employee = {
+        id: '0',
+        addressCity: 'New York', // Supported naming.
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    // Incorrect:
+    const App = () => {
+        const employee = {
+            id: '0',
+            "address.city": 'New York', // Invalid naming.
+        };
+
+        return (
+            <Form formData={employee} ...>
+                <SimpleItem ...
+                    dataField="address.city" // Form attempts to access the "city" property inside of "address".
+                />
+            </Form>
+        );
+    };
+
+    export default App;
+
+    // Correct: 
+    const App = () => {
+        const employee = {
+            id: '0',
+            addressCity: 'New York', // Supported naming.
+        };
+
+        return (
+            <Form formData={employee} ...>
+                <SimpleItem ...
+                    dataField="addressCity" // Form accesses "addressCity" correctly.
+                />
+            </Form>
+        );
+    };
+
+    export default App;
+
+---
+
+[/note]
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/CustomizeItem/"

@@ -1,6 +1,6 @@
 DevExtreme icons are implemented as an icon font. You can customize icons with CSS styles specific to text content such as `color`, `font-size`, `font-weight`, and `text-align`.
 
-DevExtreme UI components that generate icons assign the `dx-icon` class to all generated icons. You can use the `.dx-icon` CSS selector to customize all of these icons at once. To customize a specific generated icon, use a CSS selector with a specific icon class and a [combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors#combinators_and_separators). The following code snippet customizes both a specific icon and all generated icons:
+DevExtreme UI components that generate icons assign the `dx-icon` class to all generated icons. Assign a unique `id` to a DevExtreme component and use it alongside the `.dx-icon` selector to customize all generated icons within a component at once. To customize a specific generated icon, use a CSS selector with a specific icon class such as `.dx-icon-refresh`. The following code snippet customizes both a specific icon and all generated icons within a [Toolbar](/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/) component:
 
 ---
 ##### jQuery  
@@ -23,12 +23,12 @@ DevExtreme UI components that generate icons assign the `dx-icon` class to all g
     });
 
     <!-- tab: index.css -->
-    .dx-icon {
-        transform: rotate(-22.5deg); /* Customizes all generated icons. */
+    #toolbar .dx-icon {
+        color: red; /* Customizes all generated icons within #toolbar. */
     }
 
     #toolbar .dx-icon-refresh {
-        font-size: 24px; /* Customizes all "refresh" icons within #toolbar. */
+        color: red; /* Customizes all "refresh" icons within #toolbar. */
     }
     
 ##### Angular  
@@ -46,12 +46,12 @@ DevExtreme UI components that generate icons assign the `dx-icon` class to all g
     </dx-toolbar>
 
     <!-- tab: app.component.css -->
-    ::ng-deep .dx-icon {
-        transform: rotate(-22.5deg); /* Customizes all generated icons. */
+    ::ng-deep #toolbar .dx-icon {
+        color: red; /* Customizes all generated icons within #toolbar. */
     }
 
     ::ng-deep #toolbar .dx-icon-refresh {
-        font-size: 24px; /* Customizes all "refresh" icons within #toolbar. */
+        color: red; /* Customizes all "refresh" icons within #toolbar. */
     }
 
 ##### Vue
@@ -75,12 +75,12 @@ DevExtreme UI components that generate icons assign the `dx-icon` class to all g
         const refreshButtonOptions = { icon: 'refresh' }
     </script>
     <style scoped>
-        .dx-icon {
-            transform: rotate(-22.5deg); /* Customizes all generated icons. */
+        #toolbar .dx-icon {
+            color: red; /* Customizes all generated icons within #toolbar. */
         }
 
         #toolbar .dx-icon-refresh {
-            font-size: 24px; /* Customizes all "refresh" icons within #toolbar. */
+            color: red; /* Customizes all "refresh" icons within #toolbar. */
         }
     </style>
 
@@ -109,12 +109,12 @@ DevExtreme UI components that generate icons assign the `dx-icon` class to all g
     export default App;
 
     <!-- tab: App.css -->
-    .dx-icon {
-        transform: rotate(-22.5deg); /* Customizes all generated icons. */
+    #toolbar .dx-icon {
+        color: red; /* Customizes all generated icons within #toolbar. */
     }
 
     #toolbar .dx-icon-refresh {
-        font-size: 24px; /* Customizes all "refresh" icons within #toolbar. */
+        color: red; /* Customizes all "refresh" icons within #toolbar. */
     }
 
 ##### ASP.NET MVC Controls

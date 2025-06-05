@@ -147,8 +147,8 @@ Use standard JavaScript syntax (`item.nestedItem` and `array[itemIndex]`) to spe
 
 ---
 
+[note] The Form component does not support **dataField** field names that contain characters used to access nested items: `.`, `[`, and `]`.
+
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/CustomizeItem/"
 }
-
-[note] The Form component does not support **dataField** field names that contain characters used to access nested items: `.`, `[`, and `]`.

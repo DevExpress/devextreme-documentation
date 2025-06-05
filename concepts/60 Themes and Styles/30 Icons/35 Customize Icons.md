@@ -8,7 +8,7 @@ DevExtreme UI components that generate icons assign the `dx-icon` class to all g
     <!-- tab: index.js -->
     $(function() {
         $("#toolbar").dxToolbar({
-            items: {
+            items: [{
                 widget: 'dxButton',
                 options: {
                     icon: 'back',
@@ -18,13 +18,13 @@ DevExtreme UI components that generate icons assign the `dx-icon` class to all g
                 options: {
                     icon: 'refresh',
                 },
-            },
+            }]
         });
     });
 
     <!-- tab: index.css -->
     .dx-icon {
-        color: red !important; /* Customizes all generated icons. */
+        transform: rotate(-22.5deg); /* Customizes all generated icons. */
     }
 
     #toolbar .dx-icon-refresh {
@@ -47,7 +47,7 @@ DevExtreme UI components that generate icons assign the `dx-icon` class to all g
 
     <!-- tab: app.component.css -->
     ::ng-deep .dx-icon {
-        color: red !important; /* Customizes all generated icons. */
+        transform: rotate(-22.5deg); /* Customizes all generated icons. */
     }
 
     ::ng-deep #toolbar .dx-icon-refresh {
@@ -76,7 +76,7 @@ DevExtreme UI components that generate icons assign the `dx-icon` class to all g
     </script>
     <style scoped>
         .dx-icon {
-            color: red !important; /* Customizes all generated icons. */
+            transform: rotate(-22.5deg); /* Customizes all generated icons. */
         }
 
         #toolbar .dx-icon-refresh {
@@ -110,7 +110,7 @@ DevExtreme UI components that generate icons assign the `dx-icon` class to all g
 
     <!-- tab: App.css -->
     .dx-icon {
-        color: red !important; /* Customizes all generated icons. */
+        transform: rotate(-22.5deg); /* Customizes all generated icons. */
     }
 
     #toolbar .dx-icon-refresh {

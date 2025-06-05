@@ -163,8 +163,10 @@ The Form component does not support **dataField** field names that contain chara
 
     $(function() {
         $("#formContainer").dxForm({
+            // ...
             formData: employee,
             items: [{
+                // ...
                 dataField: "address.city", // Form attempts to access the "city" property inside of "address".
             }]
         });
@@ -178,8 +180,10 @@ The Form component does not support **dataField** field names that contain chara
 
     $(function() {
         $("#formContainer").dxForm({
+            // ...
             formData: employee,
             items: [{
+                // ...
                 dataField: "addressCity", // Form accesses "addressCity" correctly.
             }]
         });

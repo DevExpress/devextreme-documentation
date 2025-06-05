@@ -12,5 +12,3 @@ The Map component meets a variety of <a href="https://www.access-board.gov/ict/"
         <td>Map elements depend on an external map <a href="/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider">provider</a>.</td>
     </tr>
 </table>
-
-The component also complies with the [European Accessibility Act (EAA)](https://eur-lex.europa.eu/eli/dir/2019/882/oj) and [Americans with Disabilities Act (ADA)](https://www.ada.gov/law-and-regs/ada/) directives.

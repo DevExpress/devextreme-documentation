@@ -17,5 +17,3 @@ The NumberBox component meets a variety of <a href="https://www.access-board.gov
         <td>A spin button.</td>
     </tr>
 </table>
-
-The component also complies with the [European Accessibility Act (EAA)](https://eur-lex.europa.eu/eli/dir/2019/882/oj) and [Americans with Disabilities Act (ADA)](https://www.ada.gov/law-and-regs/ada/) directives.

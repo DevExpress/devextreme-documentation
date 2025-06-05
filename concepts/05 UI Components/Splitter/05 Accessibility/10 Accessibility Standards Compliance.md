@@ -17,5 +17,3 @@ The Splitter component meets a variety of <a href="https://www.access-board.gov/
         <td>If a pane does not include focusable elements, and the pane content is larger than its container, the pane content will not be accessible.<br>To resolve the issue, assign <code>tabindex="0"</code> either to the non-focusable element or to the element with the <code>dx-item-content dx-splitter-item-content</code> class.</td>
     </tr>
 </table>
-
-The component also complies with the [European Accessibility Act (EAA)](https://eur-lex.europa.eu/eli/dir/2019/882/oj) and [Americans with Disabilities Act (ADA)](https://www.ada.gov/law-and-regs/ada/) directives.

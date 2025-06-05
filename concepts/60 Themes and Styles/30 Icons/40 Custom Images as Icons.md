@@ -1,8 +1,8 @@
 Assign an image URL to the **icon** property of a DevExtreme UI component to implement a custom icon. You can also encode images in Base64 format to avoid additional HTTP requests at the cost of increased file sizes in your project.
 
-You can assign Base64 code directly to a component's **icon** property or integrate it into a CSS style. We recommend the latter approach because of the length of Base64 strings.
+You can assign Base64 code directly to a component's **icon** property or integrate it into a CSS style. We recommend the latter approach because of the Base64 string length.
 
-The following code snippet demonstrates how you can specify Base64 images in CSS. Replace "customicon" in the `.dx-icon-customicon` selector with the value you assign to component **icon** properties.
+The following code snippet demonstrates how you can specify Base64 images in CSS. Replace "customicon" in the `.dx-icon-customicon` selector with the value you assign to component **icon** properties:
 
 ---
 ##### jQuery

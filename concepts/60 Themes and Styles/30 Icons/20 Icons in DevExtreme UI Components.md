@@ -1,69 +1,44 @@
-Icons can be used in those UI components that have an **icon** property. For instance, the [Button](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') UI component has this property [on the first level of the configuration object](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/icon.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#icon'). Icons in the following code samples are taken from the [built-in icon library](/concepts/60%20Themes%20and%20Styles/30%20Icons/10%20Built-In%20Icon%20Library.md '/Documentation/Guide/Themes_and_Styles/Icons/#Built-In_Icon_Library').
+You can use icons in DevExtreme components that have an **icon** property. The following code snippet integrates icons from the [built-in icon library](/concepts/60%20Themes%20and%20Styles/30%20Icons/10%20Built-In%20Icon%20Library.md '/Documentation/Guide/Themes_and_Styles/Icons/#Built-In_Icon_Library') into a [Button](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') component.
 
 ---
 ##### jQuery  
 
-    <!--JavaScript-->
+    <!-- tab: index.js -->
     $(function() {
         $("#saveButton").dxButton({
             icon: "save",
-            text: "Save"
         });
     });
 
 ##### Angular  
 
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-button
         icon="save"
-        text="Save">
-    </dx-button>
-
-    <!--TypeScript-->
-    import { DxButtonModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        // ...
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxButtonModule
-        ],
-        // ...
-    })
+    ></dx-button>
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxButton
             icon="save"
-            text="Save" />
+        />
     </template>
     <script>
-    import DxButton from 'devextreme-vue/button';
-
-    export default {
-        components: {
-            DxButton
-        }
-    }
+    // ...
     </script>
 
 ##### React
 
-    import React from 'react';
-    import { Button } from 'devextreme-react/button';
-
-    class App extends React.Component {
-        render() {
-            return (
-                <Button
-                    icon="save"
-                    text="Save"
-                />
-            );
-        }
+    <!-- App.js -->
+    // ...
+    function App() {
+        return (
+            <Button
+                icon="save"
+            />
+        );
     }
 
     export default App;
@@ -82,12 +57,12 @@ Icons can be used in those UI components that have an **icon** property. For ins
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/Icons/"
 }
 
-Many [default templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/05%20Default%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Default_Templates') provide the **icon** property as well, the [ContextMenu](/concepts/05%20UI%20Components/ContextMenu/00%20Overview.md '/Documentation/Guide/UI_Components/ContextMenu/Overview/') UI component's [default item template](/api-reference/10%20UI%20Components/dxContextMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/items/') being an example:
+Many [default templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/05%20Default%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Default_Templates') include the **icon** property. The following code snippet demonstrates the [default item template](/api-reference/10%20UI%20Components/dxContextMenu/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxContextMenu/Configuration/items/') of the [ContextMenu](/concepts/05%20UI%20Components/ContextMenu/00%20Overview.md '/Documentation/Guide/UI_Components/ContextMenu/Overview/') component:
 
 ---
 ##### jQuery  
 
-    <!--JavaScript-->
+    <!-- tab: index.js -->
     $(function() {
         $("#contextMenuContainer").dxContextMenu({
             // ...
@@ -101,29 +76,16 @@ Many [default templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templat
 
 ##### Angular  
 
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-context-menu ... >
         <dxi-item text="Zoom In" icon="plus"></dxi-item>
         <dxi-item text="Share" icon="message"></dxi-item>
         <dxi-item text="Download" icon="download"></dxi-item>
     </dx-context-menu>
 
-    <!--TypeScript-->
-    import { DxContextMenuModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        // ...
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxContextMenuModule
-        ],
-        // ...
-    })
-
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxContextMenu ... >
             <DxItem text="Zoom In" icon="plus" />
@@ -132,31 +94,21 @@ Many [default templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templat
         </DxContextMenu>
     </template>
     <script>
-    import { DxContextMenu, DxItem } from 'devextreme-vue/context-menu';
-
-    export default {
-        components: {
-            DxContextMenu,
-            DxItem
-        }
-    }
+    // ...
     </script>
 
 ##### React
 
-    import React from 'react';
-    import { ContextMenu, Item } from 'devextreme-react/context-menu';
-
-    class App extends React.Component {
-        render() {
-            return (
-                <ContextMenu ... >
-                    <Item text="Zoom In" icon="plus" />
-                    <Item text="Share" icon="message" />
-                    <Item text="Download" icon="download" />
-                </ContextMenu>
-            );
-        }
+    <!-- tab: App.js -->
+    // ...
+    function App() {
+        return (
+            <ContextMenu ... >
+                <Item text="Zoom In" icon="plus" />
+                <Item text="Share" icon="message" />
+                <Item text="Download" icon="download" />
+            </ContextMenu>
+        );
     }
 
     export default App;

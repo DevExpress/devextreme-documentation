@@ -31,7 +31,7 @@ You can use icons in DevExtreme components that have an **icon** property. The f
 
 ##### React
 
-    <!-- App.ts -->
+    <!-- App.js -->
     // ...
     function App() {
         return (
@@ -99,7 +99,7 @@ Many [default templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templat
 
 ##### React
 
-    <!-- tab: App.ts -->
+    <!-- tab: App.js -->
     // ...
     function App() {
         return (

@@ -1,6 +1,8 @@
-The UI component's **icon** property accepts URLs, so you can assign the image's URL to it. However, it is better to encode the image in the Base64 type instead to reduce the amount of transferred data. Search for an image to Base64 converter on the web.
+Assign an image URL to the **icon** property of a DevExtreme UI component to implement a custom icon. You can also encode images in Base64 format to avoid additional HTTP requests at the cost of increased file sizes in your project.
 
-Although Base64 code can be assigned directly to the **icon** property, we recommend placing it in the CSS because of its length. Add the following CSS rule to your stylesheet:
+You can assign Base64 code directly to a component's **icon** property or integrate it into a CSS style. We recommend the latter approach because of the length of Base64 strings.
+
+The following code snippet demonstrates how you can specify Base64 images in CSS. Replace "customicon" in the `.dx-icon-customicon` selector with the value you assign to component **icon** properties.
 
 ---
 ##### jQuery
@@ -41,9 +43,7 @@ Although Base64 code can be assigned directly to the **icon** property, we recom
 
 ---
 
-`customicon` here is the icon's name that you should [assign to the UI component's **icon** property](/concepts/60%20Themes%20and%20Styles/30%20Icons/20%20Icons%20in%20DevExtreme%20UI%20Components.md '/Documentation/Guide/Themes_and_Styles/Icons/#Icons_in_DevExtreme_UI_Components').
-
-In addition, you can provide a specific icon variant for different states of a UI component element. In the following code, a special icon is provided for selected tabs:
+You can define specific icons for different UI component states. The following code snippet specifies a unique icon for selected tabs:
 
     <!--CSS-->
     .dx-tab-selected .dx-icon-customicon {
@@ -52,4 +52,4 @@ In addition, you can provide a specific icon variant for different states of a U
         background-position: 0px 0px;
     }
 
-Classes like `dx-tab-selected` from the previous example are not documented. <a href="https://www.devexpress.com/Support/Center/Question/Details/K18570/how-to-inspect-css-rules" target="_blank">Inspect CSS rules</a> to find out which classes are added to the UI component element you are customizing.
+[note] Classes like `dx-tab-selected` are not documented. [Inspect CSS rules](/Documentation/Guide/Troubleshooting/Basics/#Examine_CSS) to determine which selectors you need to use.

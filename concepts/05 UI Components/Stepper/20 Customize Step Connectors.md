@@ -19,7 +19,7 @@ To customize connectors in the default state, assign css styles to the `dx-stepp
 
 You can also change the width/height of connectors by assigning CSS styles to two classes simultaneously.
 
-For Steppers that are [orientated](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#orientation) horizontally, assign the `height` style to the following classes:
+For Steppers that are [orientated](/api-reference/10%20UI%20Components/dxStepper/1%20Configuration/orientation.md '/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#orientation') horizontally, assign the `height` style to the following classes:
 
 - `dx-stepper-connector-container` and `dx-stepper-connector-horizontal`    
     Changes the height of connectors in the default state.
@@ -51,4 +51,4 @@ For Steppers that are orientated vertically, assign the `width` style to the fol
             width: 5px;
         }
 
-[note] If a Stepper does not display step connectors, modify the component's `height`/`width` styles or [height](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#height)/[width](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#width) properties.
+[note] If a Stepper does not display step connectors, modify the component's `height`/`width` styles or [height](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#height')/[width](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#width') properties.

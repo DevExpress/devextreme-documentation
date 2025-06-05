@@ -8,7 +8,7 @@ default: undefined
 Specifies the path to the [formData](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/formData.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData') object field bound to the current form item.
 
 ---
-For instance, use standard JavaScript syntax to specify the path to the field if your data includes nested items:
+Use standard JavaScript syntax (`item.nestedItem` and `array[itemIndex]`) to specify the field path if your data includes nested items/arrays:
 
 ---
 ##### jQuery
@@ -150,3 +150,5 @@ For instance, use standard JavaScript syntax to specify the path to the field if
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/CustomizeItem/"
 }
+
+[note] The Form component does not support **dataField** field names that contain characters used to access nested items: `.`, `[`, and `]`.

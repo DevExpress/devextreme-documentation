@@ -61,16 +61,18 @@ DevExtreme UI components that generate icons assign the `dx-icon` class to all g
         <DxToolbar id="toolbar">
             <DxItem
                 widget="dxButton"
-                :options="{ icon: 'back' }"
+                :options="backButtonOptions"
             />
             <DxItem
                 widget="dxButton"
-                :options="{ icon: 'refresh' }"
+                :options="refreshButtonOptions"
             />
         </DxToolbar>
     </template>
     <script>
         // ...
+        const backButtonOptions = { icon: 'back' }
+        const refreshButtonOptions = { icon: 'refresh' }
     </script>
     <style scoped>
         .dx-icon {
@@ -87,15 +89,18 @@ DevExtreme UI components that generate icons assign the `dx-icon` class to all g
     <!-- tab: App.js -->
     // ...
     function App() {
+        const backButtonOptions = { icon: 'back' }
+        const refreshButtonOptions = { icon: 'refresh' }
+
         return (
             <Toolbar id="toolbar">
                 <Item
                     widget="dxButton"
-                    options={{ icon: 'back' }}
+                    options={backButtonOptions}
                 />
                 <Item
                     widget="dxButton"
-                    options={{ icon: 'refresh' }}
+                    options={refreshButtonOptions}
                 />
             </Toolbar>
         );

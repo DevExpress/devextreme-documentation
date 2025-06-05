@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the display value.
 
 ---
 <!-- Description goes here -->

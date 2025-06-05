@@ -4,7 +4,7 @@ type: CardInfo
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies which card the field belongs to.
 
 ---
 <!-- Description goes here -->

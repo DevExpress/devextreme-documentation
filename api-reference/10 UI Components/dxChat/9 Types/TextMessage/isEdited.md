@@ -7,4 +7,6 @@ type: Boolean
 Marks a message as edited in the UI.
 
 ---
-<!-- Description goes here -->
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Chat/MessageEditing"
+}

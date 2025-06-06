@@ -16,4 +16,6 @@ The card's data.
 A template name or container.
 
 ---
-<!-- Description goes here -->
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CardView/CardTemplate"
+}

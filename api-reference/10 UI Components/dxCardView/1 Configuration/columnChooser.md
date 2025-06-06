@@ -8,4 +8,6 @@ inheritsType: ColumnChooser
 Configures the column chooser.
 
 ---
-<!-- Description goes here -->
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CardView/ColumnChooser"
+}

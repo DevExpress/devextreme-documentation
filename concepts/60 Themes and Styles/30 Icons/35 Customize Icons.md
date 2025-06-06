@@ -1,6 +1,6 @@
 DevExtreme icons are implemented as an icon font. You can customize icons with CSS styles specific to text content such as `color`, `font-size`, `font-weight`, and `text-align`.
 
-DevExtreme UI components that generate icons assign the `dx-icon` class to all generated icons. Assign a unique `id` to a DevExtreme component and use it alongside the `.dx-icon` selector to customize all generated icons in a component simultaneously. To customize a specific generated icon, use a CSS selector with a specific icon class, such as `.dx-icon-refresh`. The following code snippet customizes both a specific icon and all generated icons in a [Toolbar](/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/) component:
+DevExtreme UI components that generate icons assign the `dx-icon` class to all generated icons. Assign a unique `id` to a DevExtreme component and use it alongside the `.dx-icon` selector to customize all generated icons in a component simultaneously. To customize a specific generated icon, use a CSS selector with a specific icon class, such as `.dx-icon-refresh`. The following code snippet customizes both a specific icon and all generated icons in a [Toolbar](/concepts/05%20UI%20Components/Toolbar/00%20Getting%20Started%20with%20Toolbar '/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/') component:
 
 ---
 ##### jQuery  

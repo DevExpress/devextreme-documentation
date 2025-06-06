@@ -8,4 +8,6 @@ inheritsType: FilterPanel
 Configures the filter panel.
 
 ---
-<!-- Description goes here -->
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CardView/FilterPanel"
+}

@@ -8,4 +8,6 @@ inheritsType: HeaderFilter
 Configures the header filter.
 
 ---
-<!-- Description goes here -->
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CardView/ColumnHeaderFilter"
+}

@@ -52,4 +52,4 @@ You can define specific icons for different UI component states. The following c
         background-position: 0px 0px;
     }
 
-[note] Classes like `dx-tab-selected` are not documented. [Inspect CSS rules](/Documentation/Guide/Troubleshooting/Basics/#Examine_CSS) to determine which selectors you need to use.
+[note] Classes like `dx-tab-selected` are not documented. [Inspect CSS rules](/concepts/80%20Troubleshooting/00%20Basics/15%20Examine%20CSS.md '/Documentation/Guide/Troubleshooting/Basics/#Examine_CSS') to determine which selectors you need to use.

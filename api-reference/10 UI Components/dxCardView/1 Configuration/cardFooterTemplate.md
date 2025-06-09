@@ -31,7 +31,7 @@ A template name or container.
             return $('<div>').dxButton({
                 text: 'Click',
                 onClick() {
-                    // Implement custom logic here.
+                    // Implement custom logic here
                 }
             })
         },
@@ -46,7 +46,7 @@ A template name or container.
         <div *dxTemplate="let params of 'footerTemplate'">
             <dx-button
                 text="Click"
-                (onClick)="handleOnClick()" // Implement custom logic here.
+                (onClick)="handleOnClick()" // Implement custom logic here
             ></dx-button>
         </div>
     </dx-card-view>
@@ -61,7 +61,7 @@ A template name or container.
             <template #footerTemplate="{ data }">
                 <DxButton
                     text="Click"
-                    @click="handleOnClick" // Implement custom logic here.
+                    @click="handleOnClick" // Implement custom logic here
                 />
             </template>
         </DxCardView>
@@ -82,7 +82,7 @@ A template name or container.
         return (
             <Button
                 text="Click"
-                onClick={handleOnClick} // Implement custom logic here.
+                onClick={handleOnClick} // Implement custom logic here
             />
         )
     }

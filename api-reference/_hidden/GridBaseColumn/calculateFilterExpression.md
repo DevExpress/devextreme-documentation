@@ -200,7 +200,8 @@ To specify a function as a `selector`, return a property from the `rowData` obje
 ---
 ##### jQuery
 
-    <!--JavaScript-->$(function() {
+    <!--JavaScript-->
+    $(function() {
         $("#{widgetName}Container").dx{WidgetName}({
             // ...
             columns: [{
@@ -300,6 +301,128 @@ To specify a function as a `selector`, return a property from the `rowData` obje
             return [(rowData) => {
                 return rowData.ColumnTwo
             }, selectedFilterOperation, filterValue];
+        }
+    }
+
+    export default function App() {
+        return (
+            <{WidgetName}>
+                <Column ...
+                    dataField="ColumnOne"
+                    calculateFilterExpression={calculateFilterExpression}
+                />
+            </{WidgetName}>
+        );
+    }
+    
+---
+
+You can also implement a function as a filter expression. Specify a function that takes an object and returns a Boolean value. The return Boolean represents whether the passed object meets your filtering conditions. The following code snippet returns `ColumnOne` items that are equal to the `ColumnTwo` item in the same row when users search for "=":
+
+---
+##### jQuery
+
+    <!--JavaScript-->
+    $(function() {
+        $("#{widgetName}Container").dx{WidgetName}({
+            // ...
+            columns: [{
+                dataField: "ColumnOne",
+                calculateFilterExpression: function (filterValue, selectedFilterOperation, target) {
+                    if (filterValue === "=") {
+                        return (rowData) => {
+                            return rowData.ColumnTwo === rowData.ColumnOne;
+                        };
+                    }
+                },
+            }]
+        });
+    });
+
+##### Angular
+
+    <!--TypeScript-->
+    import { Dx{WidgetName}Module } from "devextreme-angular";
+    import { Column } from 'devextreme/ui/data_grid';
+    // ...
+    export class AppComponent {
+        calculateFilterExpression (filterValue, selectedFilterOperation, target) {
+            if (filterValue === "=") {
+                return (rowData) => {
+                    return rowData.ColumnTwo === rowData.ColumnOne;
+                };
+            }
+        }
+    }
+    @NgModule({
+        imports: [
+            // ...
+            Dx{WidgetName}Module
+        ],
+        // ...
+    })
+
+    <!--HTML-->
+    <dx-{widget-name} ... >
+        <dxi-column ...
+            dataField="ColumnOne"
+            [calculateFilterExpression]="calculateFilterExpression">
+        </dxi-column>
+    </dx-{widget-name}>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName}>
+            <DxColumn ...
+                data-field="ColumnOne"
+                :calculate-filter-expression="calculateFilterExpression"
+            />
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Dx{WidgetName}, {
+        DxColumn
+    } from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName},
+            DxColumn
+        },
+        data() {
+            return {
+                calculateFilterExpression (filterValue, selectedFilterOperation, target) {
+                    if (filterValue === "=") {
+                        return (rowData) => {
+                            return rowData.ColumnTwo === rowData.ColumnOne;
+                        };
+                    }
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName}, {
+        Column
+    } from 'devextreme-react/{widget-name}';
+
+    function calculateFilterExpression (filterValue, selectedFilterOperation, target) {
+        if (filterValue === "=") {
+            return (rowData) => {
+                return rowData.ColumnTwo === rowData.ColumnOne;
+            };
         }
     }
 

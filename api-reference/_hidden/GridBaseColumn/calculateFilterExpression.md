@@ -317,7 +317,7 @@ To specify a function as a `selector`, return a property from the `rowData` obje
     
 ---
 
-You can also implement a function as a filter expression. Specify a function that takes an object and returns a Boolean value. The return Boolean represents whether the passed object meets your filtering conditions. The following code snippet returns `ColumnOne` items that are equal to the `ColumnTwo` item in the same row when users search for "=":
+You can also implement a function with [custom filter conditions](/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Filtering/Custom_Filter_Conditions) as a filter expression. Specify a function that takes an object and returns a Boolean value. The return Boolean represents whether the passed object meets your filtering conditions. The following code snippet returns `ColumnOne` items that are equal to the `ColumnTwo` item in the same row when users search for `=`:
 
 ---
 ##### jQuery

@@ -195,7 +195,7 @@ The default *"between"* implementation is inclusive (filter results include the 
     
 ---
 
-To specify a function as a `selector`, return a property from the `rowData` object. You can utilize custom logic in the function to implement advanced filtering behavior. The following code snippet returns data from `ColumnTwo` when users filter `ColumnOne` data in the DataGrid [filterRow](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/):
+To specify a function as a `selector`, return a property from the `rowData` object. You can utilize custom logic in the function to implement advanced filtering behavior. The following code snippet returns data from `ColumnTwo` when users filter `ColumnOne` data in the DataGrid [filterRow](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/'):
 
 ---
 ##### jQuery
@@ -317,7 +317,7 @@ To specify a function as a `selector`, return a property from the `rowData` obje
     
 ---
 
-You can also implement a function with [custom filter conditions](/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Filtering/Custom_Filter_Conditions) as a filter expression. Specify a function that takes an object and returns a Boolean value. The return Boolean represents whether the passed object meets your filtering conditions. The following code snippet returns `ColumnOne` items that are equal to the `ColumnTwo` item in the same row when users search for `=`:
+You can also implement a function with [custom filter conditions](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/15%20Filtering/2%20Custom%20Filter%20Conditions.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Filtering/Custom_Filter_Conditions') as a filter expression. Specify a function that takes an object and returns a Boolean value. The return Boolean represents whether the passed object meets your filtering conditions. The following code snippet returns `ColumnOne` items that are equal to the `ColumnTwo` item in the same row when users search for `=`:
 
 ---
 ##### jQuery

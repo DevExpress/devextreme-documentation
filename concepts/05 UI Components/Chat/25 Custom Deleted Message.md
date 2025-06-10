@@ -23,7 +23,7 @@ To change the "This message was deleted" text in deleted messages, create a [mes
     >
         <div *dxTemplate="let data of 'message'">
             <i *ngIf="data.message.isDeleted" class="dx-icon-trash"></i>
-            {{data.message.text}}
+            <span *ngIf="!data.message.isDeleted">{{data.message.text}}</span>
         </div>
     </dx-chat>
 
@@ -34,7 +34,7 @@ To change the "This message was deleted" text in deleted messages, create a [mes
     <DxChat message-template="message">
         <template #message="{ data }">
             <i v-if="data.message.isDeleted" class="dx-icon-trash"></i>
-            {{ data.message.text }}
+            <span v-if="!data.message.isDeleted">{{ data.message.text }}</span>
         </template>
     </DxChat>
     </template>

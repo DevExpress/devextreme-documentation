@@ -294,8 +294,7 @@ The following code snippet calculates data area "Sales" fields by multiplying `d
     <!--JavaScript-->
     const pivotGridDataSource = new DevExpress.data.PivotGridDataSource({
         // ...
-        fields: [{
-            // ...
+        fields: [
             {
                 caption: 'Sales',
                 dataType: 'number',
@@ -306,7 +305,7 @@ The following code snippet calculates data area "Sales" fields by multiplying `d
                     return data.quantity * data.price;
                 }
             }
-        }]
+        ]
     })
 
 ##### Angular

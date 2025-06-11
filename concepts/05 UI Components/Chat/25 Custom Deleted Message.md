@@ -1,4 +1,4 @@
-To change the "This message was deleted" text in deleted messages, create a [messageTemplate](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#messageTemplate). The following code snippet shows how to replace the default text with a "trash" icon:
+To change the "This message was deleted" text in deleted messages, create a [messageTemplate](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/messageTemplate.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#messageTemplate'). The following code snippet shows how to replace the default text with a "trash" icon:
 
 ---
 ##### jQuery

@@ -46,7 +46,7 @@ The `this` keyword refers to the column's configuration.
     <!-- tab: app.component.ts -->
     // ...
     export class AppComponent {
-        calculateLocation(cardData: cardDataObject): string {
+        calculateLocation(cardData: Employee): string {
             return `${cardData.City}, ${cardData.State}`;
         }
     }
@@ -66,7 +66,7 @@ The `this` keyword refers to the column's configuration.
     <script setup lang="ts">
     import DxCardView, { DxColumn } from 'devextreme-vue/card-view';
 
-    function calculateLocation(cardData: cardDataObject): string {
+    function calculateLocation(cardData: Employee): string {
         return `${cardData.City}, ${cardData.State}`;
     }
     </script>
@@ -76,7 +76,7 @@ The `this` keyword refers to the column's configuration.
     <!-- tab: App.ts -->
     import CardView, { Column } from 'devextreme-react/card-view';
 
-    function calculateLocation(cardData: cardDataObject): string {
+    function calculateLocation(cardData: Employee): string {
         return `${cardData.City}, ${cardData.State}`;
     }
 

@@ -18,8 +18,8 @@ Configures the card cover.
     $(#dxCardView).dxCardView({
         // ...
         cardCover: {
-            imageExpr: "/images/image.jpg",
-            altExpr: "A blank image.",
+            imageExpr: (data) => data.imgUrl,
+            altExpr: (data) => data.imgAlt,
             aspectRatio: 3.5,
             maxHeight: 200,
         }
@@ -30,12 +30,23 @@ Configures the card cover.
     <!-- tab: app.component.html -->
     <dx-card-view ... >
         <dxo-card-view-card-cover
-            imageExpr="/images/image.jpg"
-            altExpr="A blank image."
+            imageExpr="imgUrlExpr"
+            altExpr="imgAltExpr"
             aspectRatio="3.5"
             maxHeight="200"
         ></dxo-card-view-card-cover>
     </dx-card-view>
+
+    <!-- tab: app.component.ts -->
+    // ...
+    export class AppComponent {
+        imgUrlExpr(data: Employee): string {
+            return data.imgUrl;
+        }
+        imgAltExpr(data: Employee): string {
+            return data.imgAlt;
+        }
+    }
 
 ##### Vue
 
@@ -43,8 +54,8 @@ Configures the card cover.
     <template>
         <DxCardView ... >
             <DxCardCover
-                image-expr="/images/image.jpg"
-                alt-expr="A blank image."
+                image-expr="imgUrlExpr"
+                alt-expr="imgAltExpr"
                 aspect-ratio="3.5"
                 max-height="200"
             />
@@ -53,6 +64,13 @@ Configures the card cover.
 
     <script setup lang="ts">
     import DxCardView, { DxCardCover } from 'devextreme-vue/card-view';
+
+    function imgUrlExpr(data: Employee): string {
+        return data.imgUrl;
+    }
+    function imgAltExpr(data: Employee): string {
+        return data.imgAlt;
+    }
     </script>
 
 ##### React
@@ -60,12 +78,19 @@ Configures the card cover.
     <!-- tab: App.ts -->
     import CardView, { CardCover } from 'devextreme-react/card-view';
 
+    function imgUrlExpr(data: Employee): string {
+        return data.imgUrl;
+    }
+    function imgAltExpr(data: Employee): string {
+        return data.imgAlt;
+    }
+
     function App() {
         return (
             <CardView ... >
                 <CardCover
-                    imageExpr="/images/image.jpg"
-                    altExpr="A blank image."
+                    imageExpr="imgUrlExpr"
+                    altExpr="imgAltExpr"
                     aspectRatio="3.5"
                     maxHeight="200"
                 />

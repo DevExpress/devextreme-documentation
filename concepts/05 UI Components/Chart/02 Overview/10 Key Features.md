@@ -8,7 +8,7 @@ The Chart component includes over 20 [series types](/concepts/05%20UI%20Componen
     - [Financial](/concepts/05%20UI%20Components/Chart/11%20Series%20Types/60%20Financial%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/Financial_Series/')
     - [Range](/concepts/05%20UI%20Components/Chart/11%20Series%20Types/70%20Range%20Series.md '/Documentation/Guide/UI_Components/Chart/Series_Types/Range_Series/')
 
-    [Combine](/concepts/05%20UI%20Components/Chart/10%20Series/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series/Overview/') them, [customize](/concepts/05%20UI%20Components/Chart/10%20Series/60%20Customize%20Appearance.md '/Documentation/Guide/UI_Components/Chart/Series/Customize_Appearance/') appearance, and configure individual [points](/concepts/05%20UI%20Components/Chart/14%20Series%20Points/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series_Points/Overview/').
+    [Combine](/concepts/05%20UI%20Components/Chart/10%20Series/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series/Overview/') them, [customize](/Documentation/Guide/UI_Components/Chart/Color_Gradients_and_Patterns/) appearance, and configure individual [points](/concepts/05%20UI%20Components/Chart/14%20Series%20Points/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series_Points/Overview/').
 
 - **Data Sources**    
 Chart can load and update data from various [data source](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/') types. Bind data [directly](/concepts/05%20UI%20Components/Chart/03%20Data%20Binding/23%20Bind%20Series%20to%20Data/05%20Directly.md '/Documentation/Guide/UI_Components/Chart/Data_Binding/Bind_Series_to_Data/#Directly') or use a [series template](/concepts/05%20UI%20Components/Chart/03%20Data%20Binding/23%20Bind%20Series%20to%20Data/10%20Using%20a%20Series%20Template.md '/Documentation/Guide/UI_Components/Chart/Data_Binding/Bind_Series_to_Data/#Using_a_Series_Template').
@@ -41,7 +41,7 @@ The following Chart customizations are available:
     - [Custom Legend Markers](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/CustomLegendMarkers/)
     - [Axis Label Templates](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/AxisLabelsTemplates/) 
     - [Tooltip Templates](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/TooltipHTMLSupport/)
-    - [Color Gradients and Patterns](/concepts/05%20UI%20Components/Chart/10%20Series/60%20Customize%20Appearance.md '/Documentation/Guide/UI_Components/Chart/Series/Customize_Appearance/')
+    - [Color Gradients and Patterns](/Documentation/Guide/UI_Components/Chart/Color_Gradients_and_Patterns/)
 
 - **Data Aggregation**    
 Charts with too many series points can impact performance and readability. To improve analysis, DevExtreme Chart supports point and discrete [aggregation](/concepts/05%20UI%20Components/Chart/88%20Data%20Aggregation '/Documentation/Guide/UI_Components/Chart/Data_Aggregation/') modes.

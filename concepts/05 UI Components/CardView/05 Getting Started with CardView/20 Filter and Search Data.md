@@ -1,4 +1,4 @@
-The CardView includes the following UI elements used to filter and search data:
+The CardView includes the following UI elements used to search and filter data:
 
 - [headerFilter](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/columns/headerFilter/)
 - [filterPanel](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/filterPanel/) with [filterBuilder](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#filterBuilder)

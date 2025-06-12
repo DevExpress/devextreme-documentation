@@ -5,7 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Includes all predefined options for the ["translate"](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Types/AITranslateCommand/) command.
 
 ---
 <!-- Description goes here -->

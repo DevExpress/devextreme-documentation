@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The toolbar item name.
 
 ---
 <!-- Description goes here -->

@@ -5,7 +5,7 @@ inheritsType: AICustomCommand
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An array of AI commands.
 
 ---
 <!-- Description goes here -->

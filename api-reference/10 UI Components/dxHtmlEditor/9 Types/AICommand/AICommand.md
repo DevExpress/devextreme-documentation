@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The union of all command types.
 
 ---
 <!-- Description goes here -->

@@ -6,7 +6,7 @@ references: AICommandNameExtended|AIToolbarItem.commands
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+All predefined command names.
 
 ---
 <!-- Description goes here -->

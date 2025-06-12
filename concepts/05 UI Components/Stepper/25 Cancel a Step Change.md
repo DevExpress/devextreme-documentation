@@ -14,9 +14,9 @@ You can cancel a step change in the Stepper [onSelectionChanging](/Documentation
             const removedIndex = items.findIndex((item) => item === removedItems[0]);
             const addedIndex = items.findIndex((item) => item === addedItems[0]);
 
-            const isMoveForward = addedIndex > removedIndex;
+            const isMoveBack = addedIndex < removedIndex;
 
-            if (!isMoveForward) {
+            if (isMoveBack) {
                 e.cancel = DevExpress.ui.dialog
                     .confirm(`<div>Are you sure you want to go back?</div>`. "")
                     .then((isChangeConfirmed) => {
@@ -52,8 +52,8 @@ You can cancel a step change in the Stepper [onSelectionChanging](/Documentation
             const removedIndex = items.findIndex((item) => item === removedItems[0]);
             const addedIndex = items.findIndex((item) => item === addedItems[0]);
 
-            const isMoveForward = addedIndex > removedIndex;
-            if (!isMoveForward) {
+            const isMoveBack = addedIndex < removedIndex;
+            if (isMoveBack) {
                 e.cancel = confirm(`<div>Are you sure you want to go back?</div>`, '')
                     .then((isConfirmed) => {
                         return !isConfirmed;
@@ -76,8 +76,8 @@ You can cancel a step change in the Stepper [onSelectionChanging](/Documentation
         const removedIndex = items.findIndex((item) => item === removedItems[0]);
         const addedIndex = items.findIndex((item) => item === addedItems[0]);
 
-        const isMoveForward = addedIndex > removedIndex;
-        if (!isMoveForward) {
+        const isMoveBack = addedIndex < removedIndex;
+        if (isMoveBack) {
             e.cancel = confirm(`<div>Are you sure you want to go back?</div>`, '')
                 .then((isConfirmed) => {
                     return !isConfirmed;
@@ -95,25 +95,26 @@ You can cancel a step change in the Stepper [onSelectionChanging](/Documentation
 ##### React
 
     <!-- tab: App.tsx -->
+    import { useCallback } from 'react';
     import { Stepper, Item, type StepperTypes } from 'devextreme-react/stepper';
     import { confirm } from 'devextreme/ui/dialog';
 
     function App() {
-        function handleSelectionChanging(e: StepperTypes.SelectionChangingEvent) {
+        const handleSelectionChanging = useCallback((e: StepperTypes.SelectionChangingEvent) => {
             const { component, addedItems, removedItems } = e;
             const { items = [] } = component.option();
 
             const removedIndex = items.findIndex((item) => item === removedItems[0]);
             const addedIndex = items.findIndex((item) => item === addedItems[0]);
 
-            const isMoveForward = addedIndex > removedIndex;
-            if (!isMoveForward) {
+            const isMoveBack = addedIndex < removedIndex;
+            if (isMoveBack) {
                 e.cancel = confirm(`<div>Are you sure you want to go back?</div>`, "")
                     .then((isConfirmed) => {
                         return !isConfirmed;
                     });
             }
-        }
+        })
 
         return (
             <>

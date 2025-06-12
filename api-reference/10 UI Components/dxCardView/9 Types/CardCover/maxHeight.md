@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the maximum height for the card cover.
 
 ---
 <!-- Description goes here -->

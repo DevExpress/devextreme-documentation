@@ -3,13 +3,13 @@ id: dxCardView.getCardElement(cardIndex)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Gets the container of a card with a specific index.
 
 ##### return: DxElement
-<!-- Description goes here -->
+The card's container.
 
 ##### param(cardIndex): Number
-<!-- Description goes here -->
+The card's index.
 
 ---
 <!-- Description goes here -->

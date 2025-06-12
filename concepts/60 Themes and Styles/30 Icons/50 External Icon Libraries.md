@@ -1,82 +1,64 @@
-Icons in UI components are inserted into the DOM as `<i>` elements. When you set a UI component's **icon** property, its value is used to form the `class` attribute of the `<i>` element. For instance, the code below ...
-
-    icon: "home"
-
-... renders into the DOM as follows:
+DevExtreme UI components generate icons as HTML `<i>` elements with icon class assignments. The following code snippet demonstrates how an icon appears in the DOM:
 
     <!--HTML-->
     <i class="dx-icon dx-icon-home"></i>
 
-This allows DevExtreme UI components to support icons from external icon libraries, provided that they too should be specified in the `class` attribute.
+DevExtreme UI components support external icon libraries that populate the DOM in the same way. Examples of such libraries include the following:
 
-<a href="https://fontawesome.com/" target="_blank">Font Awesome</a>, <a href="https://www.glyphicons.com/" target="_blank">Glyphicons</a>, <a href="https://ionicons.com/" target="_blank">Ionicons</a>, and <a href="https://uifabricicons.azurewebsites.net/" target="_blank">Fabric/Fluent UI</a> are examples of such libraries. Follow the installation tutorial for the library you want to use and set the **icon** property as follows:
+- [Font Awesome](https://fontawesome.com/)
+- [Glyphicons](https://www.glyphicons.com/)
+- [Ionicons](https://ionic.io/ionicons)
+- [Fabric/Fluent UI](https://uifabricicons.azurewebsites.net/)
+
+Follow the installation instructions of the library you want to integrate and set DevExtreme component **icon** properties as follows:
 
 ---
 ##### jQuery  
 
-
-    <!--JavaScript-->
+    <!-- tab: index.js -->
     $(function() {
-        $("#homeButton").dxButton({
-            icon: "fas fa-home" // Font Awesome 5
-            icon: "fa fa-home" // Font Awesome 4
-            icon: "glyphicon glyphicon-home" // Glyphicons
-            icon: "icon ion-md-home" // Ionicons
-            icon: "ms-Icon ms-Icon--Home" // Fabric/Fluent UI
-        });
+        $("#fa5Button").dxButton({icon: "fas fa-home"}); // Font Awesome 5
+        $("#fa4Button").dxButton({icon: "fa fa-home"}); // Font Awesome 4
+        $("#glyphiconButton").dxButton({icon: "glyphicon glyphicon-home"}); // Glyphicons
+        $("#ioniconsButton").dxButton({icon: "icon ion-md-home"}); // Ionicons
+        $("#fabricFluentUIButton").dxButton({icon: "ms-Icon ms-Icon--Home"}); // Fabric/Fluent UI
     });
     
 ##### Angular  
 
-    <!--HTML-->
-    <dx-button ... 
-        icon="fas fa-home" <!-- Font Awesome 5 -->
-        icon="fa fa-home" <!-- Font Awesome 4 -->
-        icon="glyphicon glyphicon-home" <!-- Glyphicons -->
-        icon="icon ion-md-home" <!-- Ionicons -->
-        icon="ms-Icon ms-Icon--Home"> <!-- Fabric/Fluent UI -->
-    </dx-button>
+    <!-- tab: app.component.html -->
+    <dx-button icon="fas fa-home"></dx-button> <!-- Font Awesome 5 -->
+    <dx-button icon="fa fa-home"></dx-button> <!-- Font Awesome 4 -->
+    <dx-button icon="glyphicon glyphicon-home"></dx-button> <!-- Glyphicons -->
+    <dx-button icon="icon ion-md-home"></dx-button> <!-- Ionicons -->
+    <dx-button icon="ms-Icon ms-Icon--Home"></dx-button> <!-- Fabric/Fluent UI -->
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
-        <DxButton ... 
-            icon="fas fa-home" <!-- Font Awesome 5 -->
-            icon="fa fa-home" <!-- Font Awesome 4 -->
-            icon="glyphicon glyphicon-home" <!-- Glyphicons -->
-            icon="icon ion-md-home" <!-- Ionicons -->
-            icon="ms-Icon ms-Icon--Home" /> <!-- Fabric/Fluent UI -->
+        <DxButton icon="fas fa-home" /> <!-- Font Awesome 5 -->
+        <DxButton icon="fa fa-home" /> <!-- Font Awesome 4 -->
+        <DxButton icon="glyphicon glyphicon-home" /> <!-- Glyphicons -->
+        <DxButton icon="icon ion-md-home" /> <!-- Ionicons -->
+        <DxButton icon="ms-Icon ms-Icon--Home" /> <!-- Fabric/Fluent UI -->
     </template>
     <script>
-    import DxButton from 'devextreme-vue/button';
-
-    export default {
-        components: {
-            DxButton
-        }
-    }
+    // ...
     </script>
 
 ##### React
 
-    import React from 'react';
-    import { Button } from 'devextreme-react/button';
-
-    class App extends React.Component {
-        render() {
-            return (
-                <Button
-                    icon="fas fa-home" // Font Awesome 5
-                    icon="fa fa-home" // Font Awesome 4
-                    icon="glyphicon glyphicon-home" // Glyphicons
-                    icon="icon ion-md-home" // Ionicons
-                    icon="ms-Icon ms-Icon--Home" // Fabric/Fluent UI
-                />
-            );
-        }
+    <!-- tab: App.js -->
+    function App() {
+        return (
+            <Button icon="fas fa-home" /> // Font Awesome 5
+            <Button icon="fa fa-home" /> // Font Awesome 4
+            <Button icon="glyphicon glyphicon-home" /> // Glyphicons
+            <Button icon="icon ion-md-home" /> // Ionicons
+            <Button icon="ms-Icon ms-Icon--Home" /> // Fabric/Fluent UI
+        );
     }
-
-    export default App;
 
 ##### ASP.NET MVC Controls
 

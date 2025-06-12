@@ -5,6 +5,7 @@ export: AICommand
 acceptValues: 'summarize'
 type: AICommandBase | AIChangeStyleCommand | AIChangeToneCommand | AITranslateCommand | AICustomCommand
 generateTypeLink: 
+inherits: AIChangeStyleCommand,AIChangeToneCommand,AITranslateCommand,AICustomCommand
 ---
 ---
 ##### shortDescription

@@ -4,16 +4,16 @@ type: String | function(cardData)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Calculates custom values used to sort this column.
 
 ##### param(cardData): Object
-<!-- Description goes here -->
+The data of the card to which the field belongs.
 
 ##### return: any
-<!-- Description goes here -->
+The value to be used in sorting.
 
 ##### context: Column
-<!-- Description goes here -->
+The `this` keyword refers to the column's configuration.
 
 ---
 <!-- Description goes here -->

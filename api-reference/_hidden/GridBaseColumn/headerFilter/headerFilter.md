@@ -1,7 +1,8 @@
 ---
 id: GridBaseColumn.headerFilter
-type: Object
+type: ColumnHeaderFilter | undefined
 default: undefined
+inheritsType: ColumnHeaderFilter
 ---
 ---
 ##### shortDescription

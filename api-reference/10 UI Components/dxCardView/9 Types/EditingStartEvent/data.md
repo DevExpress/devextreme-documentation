@@ -4,7 +4,7 @@ uid: ui/card_view:EditingStartEvent.data
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The data of a card to be edited.
 
 ---
 <!-- Description goes here -->

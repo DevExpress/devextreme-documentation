@@ -4,16 +4,18 @@ type: template
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a custom template for the card.
 
 ##### param(data): CardTemplateData
-<!-- Description goes here -->
+The card's data.
 
 ##### param(container): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### return: String | UserDefinedElement
-<!-- Description goes here -->
+A template name or container.
 
 ---
-<!-- Description goes here -->
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CardView/CardTemplate"
+}

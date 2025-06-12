@@ -5,7 +5,6 @@ type: Number | undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the position of the column among other columns in the resulting UI component.
 
 ---
-<!-- Description goes here -->

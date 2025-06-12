@@ -7,6 +7,10 @@ type: Object
 Configures editing.
 
 ---
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Chat/MessageEditing"
+}
+
 [note]
 
 - Before allowing a user to update and delete messages, make sure that your [data source](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#dataSource') supports these actions.

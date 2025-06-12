@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised after a field value is created.
 
 ---
-<!-- Description goes here -->
+Main article: [onFieldValuePrepared](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/onFieldValuePrepared.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#onFieldValuePrepared')
+
+#####See Also#####
+#include common-link-handleevents

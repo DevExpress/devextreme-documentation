@@ -1,5 +1,5 @@
 ---
-id: GridBase.Options.columnChooser.width
+id: ColumnChooser.width
 type: Number | String
 default: 250
 ---

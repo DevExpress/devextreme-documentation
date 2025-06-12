@@ -1,5 +1,5 @@
 ---
-id: GridBaseColumn.headerFilter.width
+id: ColumnHeaderFilter.width
 type: Number | String | undefined
 default: undefined
 ---
@@ -8,3 +8,4 @@ default: undefined
 Specifies the width of the popup menu containing filtering values.
 
 ---
+<!-- Description goes here -->

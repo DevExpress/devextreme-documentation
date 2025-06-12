@@ -14,13 +14,13 @@ You can use a column's [filterType](/api-reference/10%20UI%20Components/dxGantt/
 
 The header filter contains unique column values. You can change them in the following ways:
 
-* Use the [groupInterval](/api-reference/_hidden/GridBaseColumn/headerFilter/groupInterval.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#groupInterval') property to group filter values.
+* Use the [groupInterval](/api-reference/40%20Common%20Types/15%20grids/ColumnHeaderFilter/groupInterval.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#groupInterval') property to group filter values.
 
-* Bind the header filter to a [data source](/api-reference/_hidden/GridBaseColumn/headerFilter/dataSource.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#dataSource').
+* Bind the header filter to a [data source](/api-reference/40%20Common%20Types/15%20grids/ColumnHeaderFilter/dataSource.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#dataSource').
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering HeaderFilter](/images/Gantt/Visual_elements/Header_filter_groupInterval.png)
 
-Users can search for the filter values in the header filter. Enable the **headerFilter.**[allowSearch](/api-reference/_hidden/dxGanttHeaderFilter/allowSearch.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/#allowSearch') property at the component level or **columns.headerFilter.**[allowSearch](/api-reference/_hidden/GridBaseColumn/headerFilter/allowSearch.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#allowSearch') property at the column level to display the search panel. Use the [searchMode](/api-reference/_hidden/GridBaseColumn/headerFilter/searchMode.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#searchMode') property to define a comparison type for a specific column. 
+Users can search for the filter values in the header filter. Enable the **headerFilter.**[allowSearch](/api-reference/_hidden/dxGanttHeaderFilter/allowSearch.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/#allowSearch') property at the component level or **columns.headerFilter.**[allowSearch](/api-reference/40%20Common%20Types/15%20grids/ColumnHeaderFilter/allowSearch.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#allowSearch') property at the column level to display the search panel. Use the [searchMode](/api-reference/40%20Common%20Types/15%20grids/ColumnHeaderFilter/searchMode.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#searchMode') property to define a comparison type for a specific column. 
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering HeaderFilter](/images/Gantt/Visual_elements/Header_filter_SearchPanel.png)
 

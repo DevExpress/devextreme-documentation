@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when a field caption is double-clicked or double-tapped.
 
 ---
-<!-- Description goes here -->
+Main article: [onFieldCaptionDblClick](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/onFieldCaptionDblClick.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#onFieldCaptionDblClick')
+
+#####See Also#####
+#include common-link-handleevents

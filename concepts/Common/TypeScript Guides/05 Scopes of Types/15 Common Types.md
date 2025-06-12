@@ -38,7 +38,7 @@ You can find common types under the following aliases:
     // In the sample below, ValidationRule is imported from the common module:
 
     import { Component } from '@angular/core';
-    import { ValidationRule } from 'devextreme/common';
+    import { ValidationRule } from 'devextreme-angular/common';
 
     @Component({
         selector: 'app-root',

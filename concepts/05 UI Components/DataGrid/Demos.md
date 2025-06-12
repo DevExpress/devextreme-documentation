@@ -12,18 +12,21 @@
 - [SignalR Service](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/SignalRService/)
 - [Real-Time Updates](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RealTimeUpdates/)
 
-**Paging and Scrolling**
+**Filtering**
 
-- [Record Paging](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RecordPaging/)
-- [Local Virtual Scrolling](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/VirtualScrolling/)
-- [Remote Virtual Scrolling](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RemoteVirtualScrolling/)
-- [Horizontal Virtual Scrolling](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/HorizontalVirtualScrolling/)
-- [Infinite Scrolling](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/InfiniteScrolling/)
+- [Filtering](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Filtering/)
+- [Filtering API](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FilteringAPI/)
+- [Filter Panel](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FilterPanel/)
+- [Column Header Filter](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnHeaderFilter/)
+
+**Sorting**
+
+- [Sorting](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MultipleSorting/)
 
 **Editing**
 
-- [Row Editing and Editing Events](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RowEditingAndEditingEvents/)
-- [Cell Editing and Editing API](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CellEditingAndEditingAPI/)
+- [Row Editing](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RowEditing/)
+- [Cell Editing](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CellEditing/)
 - [Batch Editing](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/BatchEditing/)
 - [Form Editing](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FormEditing/)
 - [Popup Editing](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PopupEditing/)
@@ -31,31 +34,15 @@
 - [Data Validation](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/DataValidation/)
 - [Cascading Lookups](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CascadingLookups/)
 - [Collaborative Editing](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CollaborativeEditing/)
-- [CRUD Operations](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CRUDOperations/)
-- [Customize Keyboard Navigation](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomizeKeyboardNavigation/)
+- [Remote CRUD Operations](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RemoteCRUDOperations/)
 - [Batch Update Request](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/BatchUpdateRequest/)
 - [Edit State Management](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/EditStateManagement/)
-- [Custom New Record Position](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomNewRecordPosition/)
+- [New Record Position](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/NewRecordPosition/)
 
 **Grouping**
 
 - [Record Grouping](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RecordGrouping/)
 - [Remote Grouping](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RemoteGrouping/)
-
-**Filtering and Sorting**
-
-- [Multiple Sorting](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MultipleSorting/)
-- [Filtering](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Filtering/)
-- [Filtering API](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FilteringAPI/)
-- [Filter Panel](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FilterPanel/)
-- [Column Header Filter](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnHeaderFilter/)
-- [Focused Row](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FocusedRow/)
-
-**Row Drag & Drop**
-
-- [Local Reordering](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/LocalReordering/)
-- [Remote Reordering](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RemoteReordering/)
-- [Drag & Drop Between Two Grids](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/DnDBetweenGrids/)
 
 **Selection**
 
@@ -64,29 +51,36 @@
 - [Multiple Record Selection API](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MultipleRecordSelectionAPI/)
 - [Deferred Selection](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/DeferredSelection/)
 
+**Focused Row**
+
+- [Focused Row](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FocusedRow/)
+
+**Paging**
+
+- [Paging](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RecordPaging/)
+
+**Scrolling**
+
+- [Local Virtual Scrolling](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/VirtualScrolling/)
+- [Remote Virtual Scrolling](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RemoteVirtualScrolling/)
+- [Horizontal Virtual Scrolling](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/HorizontalVirtualScrolling/)
+- [Infinite Scrolling](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/InfiniteScrolling/)
+
 **Columns**
 
-- [Column Customization](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnCustomization/)
-- [Columns based on a Data Source](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnsBasedOnADataSource/)
+- [Auto-Populated Columns](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/AutoPopulatedColumns/)
 - [Multi-Level Headers (Bands)](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MultiRowHeadersBands/)
+- [Column Reordering](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnReordering/)
 - [Column Resizing](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnResizing/)
-- [Command Column Customization](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CommandColumnCustomization/)
+- [Sticky Columns](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/FixedAndStickyColumns/)
+- [Command Column Configuration](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CommandColumnConfiguration/)
 - [Column Chooser](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnChooser/)
-- [State Persistence](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/StatePersistence/)
 
-**Appearance**
+**Master-Detail**
 
-- [Appearance](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Appearance/)
-- [Right-To-Left Support](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RightToLeftSupport/)
-
-**Templates**
-
-- [Column Template](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnTemplate/)
-- [Row Template](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RowTemplate/)
-- [Column 3rd Party Engine Template](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Column3RdPartyEngineTemplate/)
-- [Row 3rd Party Engine Template](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Row3RdPartyEngineTemplate/)
-- [Cell Customization](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CellCustomization/)
-- [Toolbar Customization](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ToolbarCustomization/)
+- [Master-Detail View](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MasterDetailView/)
+- [Master-Detail API](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MasterDetailAPI/)
+- [Advanced Master-Detail View](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/AdvancedMasterDetailView/)
 
 **Data Summaries**
 
@@ -95,30 +89,55 @@
 - [Custom Summaries](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomSummaries/)
 - [Recalculate While Editing](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RecalculateWhileEditing/)
 
-**Master-Detail**
+**Drag & Drop**
 
-- [Master-Detail View](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MasterDetailView/)
-- [Master-Detail API](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/MasterDetailAPI/)
-- [Advanced Master-Detail View](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/AdvancedMasterDetailView/)
+- [Local Reordering](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/LocalReordering/)
+- [Remote Reordering](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RemoteReordering/)
+- [Drag & Drop Between Two Grids](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/DnDBetweenGrids/)
 
 **Export to PDF**
 
 - [Overview](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFOverview/)
 - [Cell Customization](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFCellCustomization/)
 - [Header and Footer](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFHeaderAndFooter/)
-- [Export Multiple Grids](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFExportMultipleGrids/)
-- [Export Images](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFExportImages/)
+- [Multiple Grids Export](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFExportMultipleGrids/)
+- [Image Export](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFExportImages/)
 
 **Export to Excel**
 
 - [Overview](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSOverview/)
 - [Cell Customization](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSCellCustomization/)
 - [Header and Footer](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSHeaderAndFooter/)
-- [Export Multiple Grids](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSExportMultipleGrids/)
-- [Export Images](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSExportImages/)
+- [Multiple Grids Export](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSExportMultipleGrids/)
+- [Image Export](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ExcelJSExportImages/)
+
+**Appearance**
+
+- [Appearance](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Appearance/)
+
+**Customization**
+
+- [Column](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Column/)
+- [Row](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Row/)
+- [Column 3rd Party Engine Template](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Column3RdPartyEngineTemplate/)
+- [Row 3rd Party Engine Template](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Row3RdPartyEngineTemplate/)
+- [Cell](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Cell/)
+- [Toolbar](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Toolbar/)
+
+**State Persistence**
+
+- [State Persistence](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/StatePersistence/)
 
 **Adaptability**
 
-- [Grid Adaptability Overview](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/GridAdaptabilityOverview/)
-- [Grid Columns Hiding Priority](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/GridColumnsHidingPriority/)
+- [Overview](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/GridAdaptabilityOverview/)
+- [Columns Hiding Priority](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnsHidingPriority/)
+
+**Keyboard Navigation**
+
 - [Keyboard Navigation](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/KeyboardNavigation/)
+- [Customize Keyboard Navigation](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomizeKeyboardNavigation/)
+
+**Right-To-Left Support**
+
+- [Right-To-Left Support](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RightToLeftSupport/)

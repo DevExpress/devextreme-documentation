@@ -6,7 +6,7 @@ default: null
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a filter expression.
 
 ---
 <!-- Description goes here -->

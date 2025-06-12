@@ -3,10 +3,10 @@ id: dxCardView.pageIndex()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Gets the current page index.
 
 ##### return: Number
-<!-- Description goes here -->
+The current page index.
 
 ---
 <!-- Description goes here -->

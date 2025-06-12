@@ -24,12 +24,16 @@ A filter expression.
 The `this` keyword refers to the column's configuration.
 
 ---
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Filtering/"
+}
+
 The **calculateFilterExpression** function should return a [filter expression](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/15%20Filtering '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Filtering'). A basic filter expression has the following format:
 
     [selector, comparisonOperator, filterValue]
 
 - `selector`      
-A [dataField](/api-reference/_hidden/GridBaseColumn/dataField.md '{basewidgetpath}/Configuration/columns/#dataField') or function that returns column values. Pass `this.calculateCellValue` if your column contains [calculated values](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '{basewidgetpath}/Configuration/columns/#calculateCellValue').
+A [dataField](/api-reference/_hidden/GridBaseColumn/dataField.md '{basewidgetpath}/Configuration/columns/#dataField') or function that accepts a `rowData` property and returns column values. Pass `this.calculateCellValue` if your column contains [calculated values](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '{basewidgetpath}/Configuration/columns/#calculateCellValue').
 
 - `comparisonOperator`       
 One of the following operators: *"=", "<>", ">", ">=", "<", "<=", "startswith", "endswith", "contains", "notcontains"*.     
@@ -191,9 +195,249 @@ The default *"between"* implementation is inclusive (filter results include the 
     
 ---
 
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Filtering/"
-}
+To specify a function as a `selector`, return a property from the `rowData` object. You can utilize custom logic in the function to implement advanced filtering behavior. The following code snippet returns data from `ColumnTwo` when users filter `ColumnOne` data in the DataGrid [filterRow](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/'):
+
+---
+##### jQuery
+
+    <!--JavaScript-->
+    $(function() {
+        $("#{widgetName}Container").dx{WidgetName}({
+            // ...
+            columns: [{
+                dataField: "ColumnOne",
+                calculateFilterExpression: function (filterValue, selectedFilterOperation, target) {
+                    if (target === "filterRow") {
+                        return [(rowData) => {
+                            return rowData.ColumnTwo
+                        }, selectedFilterOperation, filterValue];
+                    }
+                },
+            }]
+        });
+    });
+
+##### Angular
+
+    <!--TypeScript-->
+    import { Dx{WidgetName}Module } from "devextreme-angular";
+    import { Column } from 'devextreme/ui/data_grid';
+    // ...
+    export class AppComponent {
+        calculateFilterExpression (filterValue, selectedFilterOperation, target) {
+            if (target === "filterRow") {
+                return [(rowData) => {
+                    return rowData.ColumnTwo
+                }, selectedFilterOperation, filterValue];
+            }
+        }
+    }
+    @NgModule({
+        imports: [
+            // ...
+            Dx{WidgetName}Module
+        ],
+        // ...
+    })
+
+    <!--HTML-->
+    <dx-{widget-name} ... >
+        <dxi-column ...
+            dataField="ColumnOne"
+            [calculateFilterExpression]="calculateFilterExpression">
+        </dxi-column>
+    </dx-{widget-name}>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName}>
+            <DxColumn ...
+                data-field="ColumnOne"
+                :calculate-filter-expression="calculateFilterExpression"
+            />
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Dx{WidgetName}, {
+        DxColumn
+    } from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName},
+            DxColumn
+        },
+        data() {
+            return {
+                calculateFilterExpression (filterValue, selectedFilterOperation, target) {
+                    if (target === "filterRow") {
+                        return [(rowData) => {
+                            return rowData.ColumnTwo
+                        }, selectedFilterOperation, filterValue];
+                    }
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName}, {
+        Column
+    } from 'devextreme-react/{widget-name}';
+
+    function calculateFilterExpression (filterValue, selectedFilterOperation, target) {
+        if (target === "filterRow") {
+            return [(rowData) => {
+                return rowData.ColumnTwo
+            }, selectedFilterOperation, filterValue];
+        }
+    }
+
+    export default function App() {
+        return (
+            <{WidgetName}>
+                <Column ...
+                    dataField="ColumnOne"
+                    calculateFilterExpression={calculateFilterExpression}
+                />
+            </{WidgetName}>
+        );
+    }
+    
+---
+
+You can also implement a function with [custom filter conditions](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/15%20Filtering/2%20Custom%20Filter%20Conditions.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Filtering/Custom_Filter_Conditions') as a filter expression. Specify a function that takes an object and returns a Boolean value. The return Boolean represents whether the passed object meets your filtering conditions. The following code snippet returns `ColumnOne` items that are equal to the `ColumnTwo` item in the same row when users search for `=`:
+
+---
+##### jQuery
+
+    <!--JavaScript-->
+    $(function() {
+        $("#{widgetName}Container").dx{WidgetName}({
+            // ...
+            columns: [{
+                dataField: "ColumnOne",
+                calculateFilterExpression: function (filterValue, selectedFilterOperation, target) {
+                    if (filterValue === "=") {
+                        return (rowData) => {
+                            return rowData.ColumnTwo === rowData.ColumnOne;
+                        };
+                    }
+                },
+            }]
+        });
+    });
+
+##### Angular
+
+    <!--TypeScript-->
+    import { Dx{WidgetName}Module } from "devextreme-angular";
+    import { Column } from 'devextreme/ui/data_grid';
+    // ...
+    export class AppComponent {
+        calculateFilterExpression (filterValue, selectedFilterOperation, target) {
+            if (filterValue === "=") {
+                return (rowData) => {
+                    return rowData.ColumnTwo === rowData.ColumnOne;
+                };
+            }
+        }
+    }
+    @NgModule({
+        imports: [
+            // ...
+            Dx{WidgetName}Module
+        ],
+        // ...
+    })
+
+    <!--HTML-->
+    <dx-{widget-name} ... >
+        <dxi-column ...
+            dataField="ColumnOne"
+            [calculateFilterExpression]="calculateFilterExpression">
+        </dxi-column>
+    </dx-{widget-name}>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName}>
+            <DxColumn ...
+                data-field="ColumnOne"
+                :calculate-filter-expression="calculateFilterExpression"
+            />
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
+
+    import Dx{WidgetName}, {
+        DxColumn
+    } from 'devextreme-vue/{widget-name}';
+
+    export default {
+        components: {
+            Dx{WidgetName},
+            DxColumn
+        },
+        data() {
+            return {
+                calculateFilterExpression (filterValue, selectedFilterOperation, target) {
+                    if (filterValue === "=") {
+                        return (rowData) => {
+                            return rowData.ColumnTwo === rowData.ColumnOne;
+                        };
+                    }
+                }
+            }
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+
+    import {WidgetName}, {
+        Column
+    } from 'devextreme-react/{widget-name}';
+
+    function calculateFilterExpression (filterValue, selectedFilterOperation, target) {
+        if (filterValue === "=") {
+            return (rowData) => {
+                return rowData.ColumnTwo === rowData.ColumnOne;
+            };
+        }
+    }
+
+    export default function App() {
+        return (
+            <{WidgetName}>
+                <Column ...
+                    dataField="ColumnOne"
+                    calculateFilterExpression={calculateFilterExpression}
+                />
+            </{WidgetName}>
+        );
+    }
+    
+---
 
 [note]
 

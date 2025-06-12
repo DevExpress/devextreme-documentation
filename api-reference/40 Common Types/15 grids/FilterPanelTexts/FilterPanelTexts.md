@@ -1,8 +1,8 @@
 ---
-uid: common/grids:FilterPanelTexts
-isType: 
+id: FilterPanelTexts
 module: common/grids
 export: FilterPanelTexts
+type: Object
 generateTypeLink: 
 ---
 ---

@@ -4,7 +4,7 @@ uid: ui/card_view:InitNewCardEvent.data
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The data of the inserted card; initially empty.
 
 ---
 <!-- Description goes here -->

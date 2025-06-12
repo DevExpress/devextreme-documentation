@@ -1,7 +1,7 @@
 ---
 id: GridBase.Options.columnChooser
-type: common/grids:ColumnChooser
-inherits: ColumnChooser
+type: ColumnChooser
+inheritsType: ColumnChooser
 ---
 ---
 ##### shortDescription

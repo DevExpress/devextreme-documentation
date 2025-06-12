@@ -4,7 +4,7 @@ uid: ui/card_view:CardUpdatedEvent.data
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The updated data of the card.
 
 ---
 <!-- Description goes here -->

@@ -10,4 +10,6 @@ generateTypeLink:
 Configures the toolbar.
 
 ---
-<!-- Description goes here -->
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Toolbar"
+}

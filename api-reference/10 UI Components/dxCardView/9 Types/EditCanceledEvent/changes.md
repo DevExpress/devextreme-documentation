@@ -4,7 +4,7 @@ uid: ui/card_view:EditCanceledEvent.changes
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Discarded card changes.
 
 ---
 <!-- Description goes here -->

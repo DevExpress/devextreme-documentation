@@ -4,7 +4,7 @@ type: Array<any>
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Values of the card as they exist in the data source.
 
 ---
 <!-- Description goes here -->

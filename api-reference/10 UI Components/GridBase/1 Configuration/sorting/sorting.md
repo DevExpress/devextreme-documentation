@@ -1,7 +1,7 @@
 ---
 id: GridBase.Options.sorting
-type: common/grids:Sorting
-inheritsType: common/grids:Sorting
+type: Sorting
+inheritsType: Sorting
 ---
 ---
 ##### shortDescription

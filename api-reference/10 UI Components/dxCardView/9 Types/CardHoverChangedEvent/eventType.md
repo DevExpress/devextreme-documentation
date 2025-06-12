@@ -4,7 +4,7 @@ uid: ui/card_view:CardHoverChangedEvent.eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Indicates whether the pointer entered or left the card. Can be either *"mouseover"* or *"mouseout"*.
 
 ---
 <!-- Description goes here -->

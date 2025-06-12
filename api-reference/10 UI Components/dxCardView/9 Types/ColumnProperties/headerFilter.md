@@ -1,10 +1,11 @@
 ---
 id: ColumnProperties.headerFilter
-type: Object
+type: ColumnHeaderFilter | undefined
+inheritsType: ColumnHeaderFilter
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies data settings for the header filter.
 
 ---
 <!-- Description goes here -->

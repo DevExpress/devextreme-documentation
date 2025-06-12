@@ -4,16 +4,16 @@ type: template
 ---
 ---
 ##### shortDescription
-Specifies a custom template for items.
+Specifies a custom template for header panel items.
 
 ##### param(data): ColumnTemplateData
-<!-- Description goes here -->
+The column's data.
 
 ##### param(container): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### return: String | UserDefinedElement
-<!-- Description goes here -->
+A template name or container.
 
 ---
 <!-- Description goes here -->

@@ -4,7 +4,7 @@ type: Array<Column>
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies columns associated with the card.
 
 ---
 <!-- Description goes here -->

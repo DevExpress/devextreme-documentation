@@ -4,7 +4,7 @@ type: Enums.DataType | undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Converts column values to a different data type.
 
 ---
-<!-- Description goes here -->
+If data fields have values of one type but need to be another in the UI component, set the correct type in this property.

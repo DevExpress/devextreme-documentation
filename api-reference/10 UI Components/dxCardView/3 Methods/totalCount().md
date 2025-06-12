@@ -3,10 +3,10 @@ id: dxCardView.totalCount()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Gets the total card count.
 
 ##### return: Number
-<!-- Description goes here -->
+The total card count.
 
 ---
 <!-- Description goes here -->

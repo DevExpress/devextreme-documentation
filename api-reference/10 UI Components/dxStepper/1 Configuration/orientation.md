@@ -8,4 +8,6 @@ default: 'horizontal'
 Specifies the Stepper orientation.
 
 ---
-<!-- Description goes here -->
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Stepper/Overview"
+}

@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The field value.
 
 ---
 <!-- Description goes here -->

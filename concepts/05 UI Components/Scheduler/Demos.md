@@ -12,32 +12,47 @@
 **Views**
 
 - [Basic Views](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/BasicViews/)
-- [Timelines](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Timelines/)
+- [Timeline](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Timelines/)
 - [Agenda](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Agenda/)
 
-**Features**
+**Appointments**
 
-- [Current Time Indicator](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CurrentTimeIndicator/)
-- [Time Zone Support](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/TimeZonesSupport/)
 - [Recurring Appointments](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/RecurringAppointments/)
-- [Editing](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Editing/)
-- [Custom Drag & Drop](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomDragAndDrop/)
 - [Resources](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Resources/)
+
+**Timetable**
+
 - [All Day Panel Mode](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/AllDayPanelMode/)
 - [Work Shifts](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/WorkShifts/)
-- [Virtual Scrolling](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/VirtualScrolling/)
+- [Time Zone Support](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/TimeZonesSupport/)
+- [Current Time Indicator](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CurrentTimeIndicator/)
+- [Disabled Date/Time Ranges](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CellTemplates/)
+
+**Editing**
+
+- [Editing](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Editing/)
 
 **Grouping**
 
-- [Group Orientation](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/GroupOrientation/)
+- [Grouping by Resources](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/GroupingByResources/)
 - [Grouping By Date](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/GroupByDate/)
+
+**Virtual Scrolling**
+
+- [Virtual Scrolling](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/VirtualScrolling/)
+
+**Drag & Drop**
+
+- [Drag & Drop](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/DragAndDrop/)
 
 **Customization**
 
-- [Custom Templates](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomTemplates/)
-- [Disabled Date/Time Ranges](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CellTemplates/)
-- [Customize Individual Views](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomizeIndividualViews/)
-- [Increased View Duration](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/IncreaseViewDuration/)
-- [Limit the Appointment Count per Cell](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/LimitAppointmentCountPerCell/)
-- [Context Menu Integration](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/ContextMenuIntegration/)
+- [Templates](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Templates/)
+- [Individual Views Customization](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/IndividualViewsCustomization/)
+- [Custom View Duration](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomViewDuration/)
+- [Appointment Count per Cell](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/AppointmentCountPerCell/)
+- [Context Menu](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/ContextMenu/)
+
+**Adaptability**
+
 - [Adaptability](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Adaptability/)

@@ -1,10 +1,13 @@
 ---
 id: dxCardView.Options.filterPanel
-type: Object
+type: FilterPanel
+inheritsType: FilterPanel
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the filter panel.
 
 ---
-<!-- Description goes here -->
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CardView/FilterPanel"
+}

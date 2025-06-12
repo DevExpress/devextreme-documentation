@@ -1,10 +1,13 @@
 ---
 id: dxCardView.Options.columnChooser
-type: Object
+type: ColumnChooser
+inheritsType: ColumnChooser
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the column chooser.
 
 ---
-<!-- Description goes here -->
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CardView/ColumnChooser"
+}

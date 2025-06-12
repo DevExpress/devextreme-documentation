@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a custom template for the field.
 
 ---
 <!-- Description goes here -->

@@ -4,7 +4,7 @@ uid: ui/card_view:CardRemovedEvent.key
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The card's key.
 
 ---
 <!-- Description goes here -->

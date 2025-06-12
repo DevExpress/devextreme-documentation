@@ -4,19 +4,19 @@ type: template
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a custom template to be displayed when no data appears in CardView.
 
 ##### param(e): Object
-<!-- Description goes here -->
+The object to be rendered.
 
 ##### field(e.text): String
-<!-- Description goes here -->
+The "No data" text.
 
 ##### param(container): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### return: String | UserDefinedElement
-<!-- Description goes here -->
+A template name or container.
 
 ---
 <!-- Description goes here -->

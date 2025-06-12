@@ -1,102 +1,120 @@
-Since DevExtreme icons are shipped as an icon font, they can be customized with the same CSS properties that you would use to customize textual content: `color`, `font-size`, `font-weight`, `text-align`, etc. This is true for icons used in UI components...
+DevExtreme icons are implemented as an icon font. You can customize icons with CSS styles specific to text content such as `color`, `font-size`, `font-weight`, and `text-align`.
+
+DevExtreme UI components that generate icons assign the `dx-icon` class to all generated icons. Assign a unique `id` to a DevExtreme component and use it alongside the `.dx-icon` selector to customize all generated icons in a component simultaneously. To customize a specific generated icon, use a CSS selector with a specific icon class, such as `.dx-icon-refresh`. The following code snippet customizes both a specific icon and all generated icons in a [Toolbar](/concepts/05%20UI%20Components/Toolbar/00%20Getting%20Started%20with%20Toolbar '/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/') component:
 
 ---
 ##### jQuery  
 
-    <!--HTML-->
-    <div id="saveButton"></div>
-
-    <!--JavaScript-->
+    <!-- tab: index.js -->
     $(function() {
-        $("#saveButton").dxButton({
-            icon: "save",
-            text: "Save"
+        $("#toolbar").dxToolbar({
+            items: [{
+                widget: 'dxButton',
+                options: {
+                    icon: 'back',
+                },
+            }, {
+                widget: 'dxButton',
+                options: {
+                    icon: 'refresh',
+                },
+            }]
         });
     });
 
-    <!--CSS-->
-    #saveButton .dx-icon {
-        font-size: 24px;
-        color: blue;
+    <!-- tab: index.css -->
+    #toolbar .dx-icon {
+        color: red; /* Customizes all generated icons within #toolbar. */
+    }
+
+    #toolbar .dx-icon-refresh {
+        color: red; /* Customizes all "refresh" icons within #toolbar. */
     }
     
 ##### Angular  
 
-    <!--HTML-->
-    <dx-button
-        id="saveButton" 
-        icon="save"
-        text="Save">
-    </dx-button>
+    <!-- tab: app.component.html -->
+    <dx-toolbar id="toolbar">
+        <dxi-item
+            widget="dxButton"
+            [options]="{icon: 'back'}"
+        ></dxi-item>
+        <dxi-item
+            widget="dxButton"
+            [options]="{icon: 'refresh'}"
+        ></dxi-item>
+    </dx-toolbar>
 
-    <!--TypeScript-->
-    import { DxButtonModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        // ...
+    <!-- tab: app.component.css -->
+    ::ng-deep #toolbar .dx-icon {
+        color: red; /* Customizes all generated icons within #toolbar. */
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxButtonModule
-        ],
-        // ...
-    })
 
-    <!--CSS-->
-    ::ng-deep #saveButton .dx-icon {
-        font-size: 24px;
-        color: blue;
+    ::ng-deep #toolbar .dx-icon-refresh {
+        color: red; /* Customizes all "refresh" icons within #toolbar. */
     }
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
-        <DxButton
-            id="saveButton"
-            icon="save"
-            text="Save" />
+        <DxToolbar id="toolbar">
+            <DxItem
+                widget="dxButton"
+                :options="backButtonOptions"
+            />
+            <DxItem
+                widget="dxButton"
+                :options="refreshButtonOptions"
+            />
+        </DxToolbar>
     </template>
     <script>
-    import DxButton from 'devextreme-vue/button';
-
-    export default {
-        components: {
-            DxButton
-        }
-    }
+        // ...
+        const backButtonOptions = { icon: 'back' }
+        const refreshButtonOptions = { icon: 'refresh' }
     </script>
-    <style>
-    #saveButton .dx-icon {
-        font-size: 24px;
-        color: blue;
-    }
+    <style scoped>
+        #toolbar .dx-icon {
+            color: red; /* Customizes all generated icons within #toolbar. */
+        }
+
+        #toolbar .dx-icon-refresh {
+            color: red; /* Customizes all "refresh" icons within #toolbar. */
+        }
     </style>
 
 ##### React
 
-    <!--JavaScript-->
-    import React from 'react';
-    import { Button } from 'devextreme-react/button';
+    <!-- tab: App.js -->
+    // ...
+    function App() {
+        const backButtonOptions = { icon: 'back' }
+        const refreshButtonOptions = { icon: 'refresh' }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Button
-                    id="saveButton"
-                    icon="save"
-                    text="Save"
+        return (
+            <Toolbar id="toolbar">
+                <Item
+                    widget="dxButton"
+                    options={backButtonOptions}
                 />
-            );
-        }
+                <Item
+                    widget="dxButton"
+                    options={refreshButtonOptions}
+                />
+            </Toolbar>
+        );
     }
 
     export default App;
 
-    <!--CSS-->
-    #saveButton .dx-icon {
-        font-size: 24px;
-        color: blue;
+    <!-- tab: App.css -->
+    #toolbar .dx-icon {
+        color: red; /* Customizes all generated icons within #toolbar. */
+    }
+
+    #toolbar .dx-icon-refresh {
+        color: red; /* Customizes all "refresh" icons within #toolbar. */
     }
 
 ##### ASP.NET MVC Controls
@@ -116,15 +134,13 @@ Since DevExtreme icons are shipped as an icon font, they can be customized with 
 
 ---
 
-... and for icons used in any other HTML elements: 
+To customize icons added to HTML elements, define a specific CSS class and assign styles to it.
 
     <!--HTML-->
-    <i class="dx-icon-email dx-icon-custom-style"></i>
+    <i class="dx-icon-email custom-icon-style"></i>
 
     <!--CSS-->
-    .dx-icon-custom-style {
+    .custom-icon-style {
         font-size: 24px;
         color: blue;
     }
-
-`dx-icon` is a CSS class added to icon elements when DevExtreme UI components render them into the DOM. You cannot use another name for it. However, it is not true for icons in other HTML elements. You can use any name for the class in this case, as demonstrated in the previous example.

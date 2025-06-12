@@ -1,5 +1,5 @@
 ---
-id: GridBaseColumn.headerFilter.dataSource
+id: ColumnHeaderFilter.dataSource
 type: Array<any> | Store | DataSource_Options | function(options) | null | undefined
 default: undefined
 ---
@@ -40,4 +40,3 @@ An [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiR
 
 - **Function**      
 A function that allows you to modify the incoming `options.dataSource` parameter or override it and set it to one of the above. For more information, refer to the [Change the Generated Data Source](/concepts/05%20UI%20Components/DataGrid/99%20How%20To/Customize%20Header%20Filter%20Data%20Source/30%20Change%20the%20Generated%20Data%20Source.md '/Documentation/Guide/UI_Components/DataGrid/How_To/Customize_Header_Filter_Data_Source/#Change_the_Generated_Data_Source') article.
-

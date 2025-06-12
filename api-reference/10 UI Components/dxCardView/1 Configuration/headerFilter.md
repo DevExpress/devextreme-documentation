@@ -1,10 +1,13 @@
 ---
 id: dxCardView.Options.headerFilter
-type: Object
+type: HeaderFilter
+inheritsType: HeaderFilter
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the header filter.
 
 ---
-<!-- Description goes here -->
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CardView/ColumnHeaderFilter"
+}

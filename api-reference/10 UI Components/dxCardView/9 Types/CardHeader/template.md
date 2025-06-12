@@ -4,13 +4,13 @@ type: template
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a custom template for the card header.
 
 ##### param(data): CardTemplateData
-<!-- Description goes here -->
+The card's data.
 
 ##### return: String | UserDefinedElement
-<!-- Description goes here -->
+A template name or container.
 
 ---
 <!-- Description goes here -->

@@ -6,7 +6,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the filter value.
 
 ---
 <!-- Description goes here -->

@@ -4,7 +4,7 @@ type: Array<dxCardViewFieldInfo>
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The card fields.
 
 ---
 <!-- Description goes here -->

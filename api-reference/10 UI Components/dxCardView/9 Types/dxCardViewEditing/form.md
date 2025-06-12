@@ -1,6 +1,6 @@
 ---
 id: dxCardViewEditing.form
-type: Object
+type: dxForm_Options
 ---
 ---
 ##### shortDescription

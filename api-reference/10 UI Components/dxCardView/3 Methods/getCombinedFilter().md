@@ -3,10 +3,10 @@ id: dxCardView.getCombinedFilter()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Gets the total filter that combines all the filters applied.
 
 ##### return: any
-<!-- Description goes here -->
+A filter expression.
 
 ---
 <!-- Description goes here -->

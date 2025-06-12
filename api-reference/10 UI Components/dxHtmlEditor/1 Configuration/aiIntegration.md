@@ -1,6 +1,6 @@
 ---
 id: dxHtmlEditor.Options.aiIntegration
-type: Object
+type: AIIntegration | undefined
 default: undefined
 ---
 ---

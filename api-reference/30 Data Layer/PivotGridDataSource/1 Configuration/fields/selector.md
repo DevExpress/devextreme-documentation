@@ -20,7 +20,7 @@ Specifies a function that combines field values into groups.
 
 [/note]
 
-The **selector** function takes a data object and returns a field value. You can use **selector** as an alternative to the [groupInterval](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/groupInterval.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#groupInterval') property.
+The **selector** function takes a data object and returns a field value. You can use **selector** instead of the [groupInterval](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/fields/groupInterval.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/#groupInterval') property.
 
 The following code snippet implements **selector** to group birth dates by decades:
 

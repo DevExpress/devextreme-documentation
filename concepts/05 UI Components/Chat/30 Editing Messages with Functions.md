@@ -7,8 +7,8 @@ Alternatively, you can customize conditions for when users can edit messages. Fo
 ##### jQuery
 
     <!-- tab: index.js -->
-    const restrictEditing = (e) => {
-        if (Date.now() - e.message.timestamp < 5 * 60 * 1000) {
+    const restrictEditing = ({ message }) => {
+        if (Date.now() - message.timestamp < 5 * 60 * 1000) {
             return true;
         } else {
             return false;

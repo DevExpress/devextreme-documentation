@@ -33,6 +33,8 @@ This property accepts one of the following values:
             });
         });
 
+[note] **Target** type affects the initialization of the component's [events]({basewidgetpath}/Events/). If **target** is a selector, events are initialized on the [document](https://developer.mozilla.org/en-US/docs/Web/API/Document) with the passed selector. If **target** is a jQuery wrapper or DOM element, events are initialized on the passed element. This changes event propagation and the behavior of methods like [stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation).
+
 ##### Angular
 
 - A <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors" target="_blank">CSS selector</a>
@@ -75,6 +77,8 @@ This property accepts one of the following values:
                 this.targetElement = document.getElementById('#targetElement') as Element;
             }
         }
+
+[note] **Target** type affects the initialization of the component's [events]({basewidgetpath}/Events/). If **target** is a selector, events are initialized on the [document](https://developer.mozilla.org/en-US/docs/Web/API/Document) with the passed selector. If **target** is a DOM element, events are initialized on the passed element. This changes event propagation and the behavior of methods like [stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation).
 
 ##### Vue
 
@@ -136,6 +140,8 @@ This property accepts one of the following values:
         };
         </script>
 
+[note] **Target** type affects the initialization of the component's [events]({basewidgetpath}/Events/). If **target** is a selector, events are initialized on the [document](https://developer.mozilla.org/en-US/docs/Web/API/Document) with the passed selector. If **target** is a DOM element, events are initialized on the passed element. This changes event propagation and the behavior of methods like [stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation).
+
 ##### React
 
 - A <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors" target="_blank">CSS selector</a>
@@ -193,4 +199,6 @@ This property accepts one of the following values:
             );
         }
     
+[note] **Target** type affects the initialization of the component's [events]({basewidgetpath}/Events/). If **target** is a selector, events are initialized on the [document](https://developer.mozilla.org/en-US/docs/Web/API/Document) with the passed selector. If **target** is a DOM element, events are initialized on the passed element. This changes event propagation and the behavior of methods like [stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation).
+
 ---

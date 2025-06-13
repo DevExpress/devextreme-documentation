@@ -1,7 +1,7 @@
 To add pagination to CardView, configure the following settings:
 
-- [paging](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/paging/) - enables paging
-- [pager](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#pager) - activates UI elements for pagination
+- [paging](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/paging.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/paging/') - enables paging
+- [pager](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/pager.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#pager') - activates UI elements for pagination
 
 ---
 ##### jQuery

@@ -33,21 +33,6 @@ This property accepts one of the following values:
             });
         });
 
-    [note]
-
-    **Target** type affects the initialization of the component's [events]({basewidgetpath}/Events/): 
-
-    - `undefined`    
-    Events are initialized on the [document](https://developer.mozilla.org/en-US/docs/Web/API/Document).
-    - **Selector**    
-    Events are initialized on the **document** with the passed selector.
-    - **jQuery wrapper** or **DOM element**    
-    Events are initialized on the passed element.
-
-    This changes event propagation and the behavior of methods like [stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation).
-
-    [/note]
-
 ##### Angular
 
 - A [CSS selector](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors)
@@ -90,21 +75,6 @@ This property accepts one of the following values:
                 this.targetElement = document.getElementById('#targetElement') as Element;
             }
         }
-
-    [note]
-
-    **Target** type affects the initialization of the component's [events]({basewidgetpath}/Events/): 
-
-    - `undefined`    
-    Events are initialized on the [document](https://developer.mozilla.org/en-US/docs/Web/API/Document).
-    - **Selector**    
-    Events are initialized on the **document** with the passed selector.
-    - **DOM element**    
-    Events are initialized on the passed element.
-
-    This changes event propagation and the behavior of methods like [stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation).
-
-    [/note]
 
 ##### Vue
 
@@ -166,21 +136,6 @@ This property accepts one of the following values:
         };
         </script>
 
-    [note]
-
-    **Target** type affects the initialization of the component's [events]({basewidgetpath}/Events/): 
-
-    - `undefined`    
-    Events are initialized on the [document](https://developer.mozilla.org/en-US/docs/Web/API/Document).
-    - **Selector**    
-    Events are initialized on the **document** with the passed selector.
-    - **DOM element**    
-    Events are initialized on the passed element.
-
-    This changes event propagation and the behavior of methods like [stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation).
-
-    [/note]
-
 ##### React
 
 - A [CSS selector](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors)
@@ -238,19 +193,90 @@ This property accepts one of the following values:
             );
         }
     
-    [note]
+    
 
-    **Target** type affects the initialization of the component's [events]({basewidgetpath}/Events/): 
+---
 
-    - `undefined`    
-    Events are initialized on the [document](https://developer.mozilla.org/en-US/docs/Web/API/Document).
-    - **Selector**    
-    Events are initialized on the **document** with the passed selector.
-    - **DOM element**    
-    Events are initialized on the passed element.
+---
 
-    This changes event propagation and the behavior of methods like [stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation).
+##### jQuery
 
-    [/note]
+[note]
+
+**Target** type affects the initialization of the component's [events]({basewidgetpath}/Events/): 
+
+- `undefined`    
+Events are initialized on the [document](https://developer.mozilla.org/en-US/docs/Web/API/Document).
+- **Selector**    
+Events are initialized on the **document** with the passed selector.
+- **jQuery wrapper** or **DOM element**    
+Events are initialized on the passed element.
+
+This changes event propagation and the behavior of methods like [stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation).
+
+[/note]
+
+---
+
+---
+
+##### Angular
+
+[note]
+
+**Target** type affects the initialization of the component's [events]({basewidgetpath}/Events/): 
+
+- `undefined`    
+Events are initialized on the [document](https://developer.mozilla.org/en-US/docs/Web/API/Document).
+- **Selector**    
+Events are initialized on the **document** with the passed selector.
+- **DOM element**    
+Events are initialized on the passed element.
+
+This changes event propagation and the behavior of methods like [stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation).
+
+[/note]
+
+---
+
+---
+
+##### Vue
+
+[note]
+
+**Target** type affects the initialization of the component's [events]({basewidgetpath}/Events/): 
+
+- `undefined`    
+Events are initialized on the [document](https://developer.mozilla.org/en-US/docs/Web/API/Document).
+- **Selector**    
+Events are initialized on the **document** with the passed selector.
+- **DOM element**    
+Events are initialized on the passed element.
+
+This changes event propagation and the behavior of methods like [stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation).
+
+[/note]
+
+---
+
+---
+
+##### React
+
+[note]
+
+**Target** type affects the initialization of the component's [events]({basewidgetpath}/Events/): 
+
+- `undefined`    
+Events are initialized on the [document](https://developer.mozilla.org/en-US/docs/Web/API/Document).
+- **Selector**    
+Events are initialized on the **document** with the passed selector.
+- **DOM element**    
+Events are initialized on the passed element.
+
+This changes event propagation and the behavior of methods like [stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation).
+
+[/note]
 
 ---

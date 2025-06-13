@@ -4,6 +4,7 @@ module: ui/card_view
 export: WithFieldValueInfo
 type: Object
 generateTypeLink: 
+hidden: 
 ---
 ---
 ##### shortDescription

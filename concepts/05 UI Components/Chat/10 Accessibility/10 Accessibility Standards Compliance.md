@@ -11,4 +11,11 @@ The Chat component meets a variety of <a href="https://www.access-board.gov/ict/
         <td>1.4.3 Contrast (Minimum) (Level AA) <br> 1.4.11 Non-text Contrast (Level AA 2.1 and 2.2)</td>
         <td>Chat does not support Windows High Contrast themes.</td>
     </tr>
+    <tr>
+        <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
+        <td>2.1.1 Keyboard (Level A) <br> 11.5.2.12 Execution of available actions</td>
+        <td>You cannot edit or delete Chat messages with the keyboard.</td>
+    </tr>
 </table>
+
+The component also complies with the [European Accessibility Act (EAA)](https://eur-lex.europa.eu/eli/dir/2019/882/oj) and [Americans with Disabilities Act (ADA)](https://www.ada.gov/law-and-regs/ada/) directives.

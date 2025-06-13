@@ -1,7 +1,7 @@
 ---
 id: GridBase.Options.headerFilter
-type: common/grids:HeaderFilter
-inheritsType: common/grids:HeaderFilter
+type: HeaderFilter
+inheritsType: HeaderFilter
 ---
 ---
 ##### shortDescription
@@ -14,7 +14,7 @@ A header filter allows a user to filter values in an individual column by includ
 
 To make header filter icons visible, assign **true** to the **headerFilter**.[visible](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/headerFilter/visible.md '{basewidgetpath}/Configuration/headerFilter/#visible') property.
 
-A header filter's popup menu lists all column values. If they are numbers or dates, you can group them using the [groupInterval](/api-reference/_hidden/GridBaseColumn/headerFilter/groupInterval.md '{basewidgetpath}/Configuration/columns/headerFilter/#groupInterval') property in the column's [headerFilter](/api-reference/_hidden/GridBaseColumn/headerFilter '{basewidgetpath}/Configuration/columns/headerFilter/'). You can also provide a custom data source for a header filter using the [dataSource](/api-reference/_hidden/GridBaseColumn/headerFilter/dataSource.md '{basewidgetpath}/Configuration/columns/headerFilter/#dataSource') property.
+A header filter's popup menu lists all column values. If they are numbers or dates, you can group them using the [groupInterval](/api-reference/40%20Common%20Types/15%20grids/ColumnHeaderFilter/groupInterval.md '{basewidgetpath}/Configuration/columns/headerFilter/#groupInterval') property in the column's [headerFilter](/api-reference/_hidden/GridBaseColumn/headerFilter '{basewidgetpath}/Configuration/columns/headerFilter/'). You can also provide a custom data source for a header filter using the [dataSource](/api-reference/40%20Common%20Types/15%20grids/ColumnHeaderFilter/dataSource.md '{basewidgetpath}/Configuration/columns/headerFilter/#dataSource') property.
 
 [note] If a column has empty cells (`null` or `''`), the header filter popup menu displays a `(Blanks)` item.
 

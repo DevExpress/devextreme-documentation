@@ -1,10 +1,10 @@
 ---
-uid: common/grids:Sorting.showSortIndexes
+id: Sorting.showSortIndexes
 type: Boolean
 default: true
 ---
 ---
 ##### shortDescription
-Specifies whether to display [sort indexes](/api-reference/_hidden/GridBaseColumn/sortIndex.md '{basewidgetpath}/Configuration/columns/#sortIndex') in column headers. Applies only when **sorting**.[mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/sorting/mode.md '{basewidgetpath}/Configuration/sorting/#mode') is *"multiple"* and data is sorted by two or more columns.
+Specifies whether to display [sort indexes](/api-reference/_hidden/GridBaseColumn/sortIndex.md '{basewidgetpath}/Configuration/columns/#sortIndex') in column headers. Applies only when **sorting**.[mode](/api-reference/40%20Common%20Types/15%20grids/Sorting/mode.md '{basewidgetpath}/Configuration/sorting/#mode') is *"multiple"* and data is sorted by two or more columns.
 
 ---

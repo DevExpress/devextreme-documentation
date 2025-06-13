@@ -4,7 +4,7 @@ uid: ui/chat:MessageUpdatedEvent.message
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The message that was updated.
 
 ---
 <!-- Description goes here -->

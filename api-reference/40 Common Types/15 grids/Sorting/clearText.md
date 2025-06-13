@@ -1,5 +1,5 @@
 ---
-uid: common/grids:Sorting.clearText
+id: Sorting.clearText
 type: String
 default: 'Clear Sorting'
 ---

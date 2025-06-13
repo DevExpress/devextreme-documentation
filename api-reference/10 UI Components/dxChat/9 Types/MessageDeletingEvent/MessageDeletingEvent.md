@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The argument type in the [messageDeleting]({basewidgetpath}/Events/#messageDeleting) event.
 
 ---
 <!-- Description goes here -->

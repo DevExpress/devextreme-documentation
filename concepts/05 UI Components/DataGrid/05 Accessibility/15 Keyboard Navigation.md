@@ -1,4 +1,16 @@
-A user can use the following keys to interact with the DataGrid component: 
+DataGrid offers different keyboard controls depending on which action users want to perform.
+
+### Navigation
+
+[note]
+
+The **Ctrl+Home** and **Ctrl+End** shortcuts are not supported in DataGrid components with:
+
+- Group summaries
+- Grouped data
+- Expanded master-detail interfaces
+
+[/note]
 
 <table class="dx-table full-width">
     <tr>
@@ -7,12 +19,15 @@ A user can use the following keys to interact with the DataGrid component:
     </tr>
     <tr>
         <td>&larr; &rarr; &uarr; &darr;</td>
-        <td>
-        <ul>
-            <li>Navigates through cells if no cell is in an editing state.</li>
-            <li>In the editing state, moves the cursor inside a cell or increases/decreases cell value (depending on the editor).</li>
-        </ul>
-        </td>
+        <td>Moves focus between cells.</td>
+    </tr>
+    <tr>
+        <td>Tab<br/>Shift + Tab</td>
+        <td>Moves focus forward/backward between all DataGrid items.</td>
+    </tr>
+    <tr>
+        <td>Ctrl + &uarr;<br/>Ctrl + &darr;</td>
+        <td>Moves focus between the component's areas, such as the data area, column headers area, group panel, and others.</td>
     </tr>
     <tr>
         <td>Shift + Mouse Wheel</td>
@@ -20,87 +35,136 @@ A user can use the following keys to interact with the DataGrid component:
     </tr>
     <tr>
         <td>Enter</td>
-        <td>
-        <ul>
-            <li>Switches a cell to the editing state.<sup>1</sup></li>
-            <li>Moves focus to the next cell.<sup>2</sup></li>
-            <li>Saves changes made in a cell or row, and switches that cell/row back to its normal state.</li>
-            <li>Executes an action on a focused element.</li>
-        </ul>
-        </td>        
+        <td>When focused on a cell, moves focus to the next cell if <b>keyboardNavigation</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/keyboardNavigation/#enterKeyAction">enterKeyAction</a> is "moveFocus". The next cell is determined by <b>keyboardNavigation</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/keyboardNavigation/#enterKeyDirection">enterKeyDirection</a>.</td>
     </tr>
     <tr>
-        <td>F2</td>
-        <td>Switches a cell to the editing state.<sup>3</sup></td>
+        <td>Home<br/>End</td>
+        <td>Moves focus to the first/last cell of the current row.</td>
     </tr>
     <tr>
-        <td>Esc</td>
-        <td>Cancels changes made in a cell or row, and switches that cell/row back to its normal state.</td>
+        <td>Ctrl + Home<br/>Ctrl + End</td>
+        <td>Moves focus to the first cell of the first row/last cell of the last row.</td>
     </tr>
     <tr>
-        <td>Alt + &#8595;</td>
-        <td>Opens a drop-down editor (a select box<sup>4</sup>, a calendar<sup>5</sup>, etc.) in the editing state.</td>
-    </tr>
-    <tr>
-        <td>Space</td>
-        <td><ul>
-            <li>Selects the focused row and clears the selection of previously selected rows.<sup>3</sup></li>
-            <li>Changes sorting order if a column header is focused.</li>
-        </ul></td>        
-    </tr>
-    <tr>
-        <td>Ctrl + &uarr; &darr;</td>
-        <td>Navigates between a column header, filter row, data area, filter panel, and pager.</td>
-    </tr>
-    <tr>
-        <td>Ctrl + Space or Ctrl + Click</td>
-        <td>Selects or clears the selection of the focused row.<br />
-            Previously selected rows remain selected.<sup>7</sup>
-        </td>        
-    </tr>
-    <tr>
-        <td>Shift + Space or Shift + Click</td>
-        <td>Selects or clears the selection of a range of rows between the last selected/deselected and the focused rows.<sup>7,8</sup></td>
-    </tr>
-    <tr>
-        <td>Ctrl + A</td>
-        <td>Selects all rows.<sup>6,9</sup></td>
+        <td>PageUp<br/>PageDown</td>
+        <td>Navigates to the component's previous/next page.</td>
     </tr>
     <tr>
         <td>Ctrl + F</td>
-        <td>Focuses the search panel.<sup>10</sup>
-    </tr>
-    <tr>
-        <td>PageUp / PageDown</td>
-        <td>Navigates to the previous/next page. If <b>scrolling</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#mode">mode</a> is <i>"virtual"</i>, DataGrid scrolls to the value of DataGrid's row viewport height.
-    </tr>
-    <tr>
-        <td>Tab / Shift + Tab</td>
-        <td>Moves the focus one element forward/back.<br /> Focuses the first/last element in the next/previous row if there are no more elements in the current row.</td>
-    </tr>
-    <tr>
-        <td>
-        Shift + Click / Ctrl + Click<br/>
-        on a column header
-        </td>
-        <td>Applies/clears column sorting settings.<sup>11</sup></td>
+        <td>When focused on a cell, moves focus to the search panel if <b>searchPanel</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/searchPanel/#visible">visible</a> is "true".</td>
     </tr>
 </table>
 
-<div class="footnotes">
-    <ol>
-        <li>If the <a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/keyboardNavigation/#enterKeyAction">enterKeyAction</a> is <i>"startEdit"</i>.</li>
-        <li>If the <b>edititng</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode">mode</a> is <i>"cell"</i> or <i>"batch"</i> and the <a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/keyboardNavigation/#enterKeyAction">enterKeyAction</a> is <i>"moveFocus"</i>.</li>
-        <li>The <b>editing</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode">mode</a> should be <i>"cell"</i> or <i>"batch"</i>.</li>
-        <li>A select box appears in a cell of a <a href="/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/Lookup_Columns/">lookup column</a>.</li>
-        <li>A calendar appears in a data cell when a column contains <i>"date"</i> <a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataType">type</a> data.</li>
-        <li>The <b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#mode">mode</a> should be different from <i>"none"</i>.</li>
-        <li>The <b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#mode">mode</a> should be <i>"multiple"</i>.</li>
-        <li>If the <b>scrolling</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#mode">mode</a> is <i>"virtual"</i>, the rows should be visible simultaneously. If the mode is <i>"standard"</i>, the rows should be on one page.</li>
-        <li><b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#allowSelectAll">allowSelectAll</a> should be <i>true</i>.</li>
-        <li>The <a href="/Documentation/Guide/UI_Components/DataGrid/Filtering_and_Searching/#Search_Panel">search panel</a> should be visible.</li>
-        <li>The <b>sorting</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/sorting/#mode">mode</a> should be <i>"multiple"</i>.</li>
-    </ol>
-</div>
+### Column Sorting and Reordering
+
+<table class="dx-table full-width">
+    <tr>
+        <th>Key</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>Enter<br/>Space</td>
+        <td>When focused on a column header, enables/cycles between sorting options (ascending/descending).</td>
+    </tr>
+    <tr>
+        <td>Shift + Enter<br/>Shift + Space<br/>Shift + Click</td>
+        <td>Enables/cycles focused column sorting without clearing previous sorting options if <b>sorting</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/sorting/#mode">mode</a> is "multiple".</td>
+    </tr>
+    <tr>
+        <td>Ctrl + Enter<br/>Ctrl + Space<br/>Ctrl + Click</td>
+        <td>Disables focused column sorting. Does not clear previous sorting options if <b>sorting</b>.<b>mode</b> is "multiple".</td>
+    </tr>
+    <tr>
+        <td>Ctrl + &rarr;<br/>Ctrl + &larr;</td>
+        <td>Moves the focused column header right/left if <b>columns[]</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowReordering">allowReordering</a> is enabled.</td>
+    </tr>
+</table>
+
+### Column Grouping
+
+<table class="dx-table full-width">
+    <tr>
+        <th>Key</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>Ctrl + G</td>
+        <td>Groups data by focused column values if <b>columns[]</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowGrouping">allowGrouping</a> is enabled.</td>
+    </tr>
+    <tr>
+        <td>Shift + Ctrl + G</td>
+        <td>Ungroups data by focused column values.</td>
+    </tr>
+    <tr>
+        <td>Delete<br/>Backspace</td>
+        <td>When focused on column headers in the group panel, ungroups data by focused column values.</td>
+    </tr>
+    <tr>
+        <td>Ctrl + &rarr;<br/>Ctrl + &larr;</td>
+        <td>Moves the focused column header right/left in the group panel to change group hierarchy.</td>
+    </tr>
+    <tr>
+        <td>Shift + Alt + G</td>
+        <td>Ungroups data by all column values.</td>
+    </tr>
+</table>
+
+### Editing
+
+<table class="dx-table full-width">
+    <tr>
+        <th>Key</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>Enter</td>
+        <td>
+            When focused on a cell in normal mode, switches the component to edit mode if <b>keyboardNavigation</b>.<b>enterKeyAction</b> is "startEdit".<br/>
+            When focused on a cell in edit mode, saves changes and switches the component to normal mode.<br/>
+            When focused on a button in a command column, triggers the focused command button.
+        </td>
+    </tr>
+    <tr>
+        <td>F2</td>
+        <td>When focused on a cell in normal mode, switches the component to edit mode unless the focused cell's <b>editing</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode">mode</a> is "popup".</td>
+    </tr>
+    <tr>
+        <td>Alt + &darr;</td>
+        <td>Opens drop-down editors such as select boxes in edit mode.</td>
+    </tr>
+    <tr>
+        <td>&larr; &rarr; &uarr; &darr;</td>
+        <td>When focused on a cell in edit mode, moves the cursor in the focused cell or increases/decreases its value.</td>
+    </tr>
+    <tr>
+        <td>Esc</td>
+        <td>When in edit mode, cancels unsaved changes and switches to normal mode.</td>
+    </tr>
+</table>
+
+### Selection
+
+<table class="dx-table full-width">
+    <tr>
+        <th>Key</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>Space</td>
+        <td>Selects the focused cell's row and clears the previous selection if <b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#mode">mode</a> is "multiple" or "single" and <b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#showCheckBoxesMode">showCheckBoxesMode</a> is "none", "onClick", or "onLongTap". Does not clear previous selection if <b>selection</b>.<b>showCheckBoxesMode</b> is "always".</td>
+    </tr>
+    <tr>
+        <td>Ctrl + Space<br/>Ctrl + Click</td>
+        <td>Toggles selection of the focused cell's row without clearing previous selection.</td>
+    </tr>
+    <tr>
+        <td>Shift + Space<br/>Shift + Click</td>
+        <td>Selects all items between the last selected row and the focused cell's row if <b>selection</b>.<b>mode</b> is "multiple".</td>
+    </tr>
+    <tr>
+        <td>Ctrl + A</td>
+        <td>Selects all rows if <b>selection</b>.<b>mode</b> is "multiple" and <b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#allowSelectAll">allowSelectAll</a> is "true".</td>
+    </tr>
+</table>
 
 You can override these shortcuts or create your own. Refer to the following help topic for more information: [Custom Keyboard Navigation](/concepts/05%20UI%20Components/DataGrid/70%20Custom%20Keyboard%20Navigation/00%20Custom%20Keyboard%20Navigation.md '/Documentation/Guide/UI_Components/DataGrid/Custom_Keyboard_Navigation/').

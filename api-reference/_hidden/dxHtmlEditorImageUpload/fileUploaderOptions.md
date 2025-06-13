@@ -32,7 +32,7 @@ See [FileUploader Configuration](/api-reference/10%20UI%20Components/dxFileUploa
     <!-- tab: app.component.html -->
     <dx-html-editor ...>
         <dxo-image-upload
-            [fileUploaderOptions]="{ [maxFileSize]="4000000" }">
+            [fileUploaderOptions]="{ maxFileSize: 4000000 }"
         </dxo-image-upload>
     </dx-html-editor>
 
@@ -88,7 +88,7 @@ See [FileUploader Configuration](/api-reference/10%20UI%20Components/dxFileUploa
         },
         data() {
             return {
-                fu_options: {:max-file-size="4000000"} 
+                fu_options: { maxFileSize: 4000000 }
             };
         }         
     }
@@ -103,7 +103,7 @@ See [FileUploader Configuration](/api-reference/10%20UI%20Components/dxFileUploa
 
     import HtmlEditor from 'devextreme-react/html-editor';
 
-    const fu_options = { maxFileSize={4000000} };
+    const fu_options = { maxFileSize: 4000000 };
 
     class App extends React.Component {
         render() {

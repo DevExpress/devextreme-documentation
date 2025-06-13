@@ -47,9 +47,9 @@ Specifies whether to generate a Vue 2 or Vue 3 application. Available values: `2
 
 Creates a new <a href="https://devexpress.github.io/devextreme-react-template" target="_blank">DevExtreme React application</a> that uses the [DevExtreme layout template](/concepts/50%20React%20Components/50%20Application%20Template/00%20Application%20Template.md '/Documentation/Guide/React_Components/Application_Template/'):
 
-    devextreme new react-app app-name [--layout][--empty]
+    devextreme new react-app app-name [--layout][--empty][--template][--app-type][--transpiler]
     // ===== or without installing the DevExtreme CLI =====
-    npx devextreme-cli new react-app app-name [--layout][--empty]
+    npx devextreme-cli new react-app app-name [--layout][--empty][--template][--app-type][--transpiler]
 
 Arguments:
 
@@ -61,10 +61,24 @@ Specifies the DevExtreme layout. Available values:
     See the following topic to review both layouts: [Layouts](/concepts/50%20React%20Components/50%20Application%20Template/10%20Layouts.md '/Documentation/Guide/React_Components/Application_Template/#Layouts').
 
 * `--empty`     
-Specifies whether to skip sample view generation (default: `false`). 
+Specifies whether to skip sample data generation. Available values:
+    * `false` (default)
+    * `true` 
 
 * `--template`
-Specifies whether to create an application template with TypeScript support. Available values: `javascript` and `typescript`.
+Specifies the language you can use in the application. Available values:
+    * `javascript`
+    * `typescript`
+
+* `--app-type`
+Specifies the framework used in the application: [Next.js](https://nextjs.org/) or [Vite](https://vite.dev/). Available values:
+    * `nextjs`
+    * `vite`
+
+* `--transpiler`
+Specifies the transpiler: [Babel](https://babeljs.io/) or [SWC](https://swc.rs/). Used only when `--app-type` is `vite`. Available values:
+    * `babel`
+    * `swc`
 
 ---
 

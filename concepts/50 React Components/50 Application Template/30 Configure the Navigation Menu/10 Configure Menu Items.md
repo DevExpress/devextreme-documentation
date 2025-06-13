@@ -1,4 +1,6 @@
-Edit the `src\app-navigation.js` file to configure navigation menu items. Each item configuration can have the following fields:
+To configure navigation menu items, edit `src\app-navigation.js`.
+
+Each item configuration has the following fields:
 
 - **text** - the item's text
 
@@ -8,7 +10,7 @@ Edit the `src\app-navigation.js` file to configure navigation menu items. Each i
 
 - **items** - child items
 
-[note] A menu item should either navigate to a page OR include subitems. For that reason, do not specify both **path** and **items** for the same menu item.
+[note] A menu item should either navigate to a page OR include subitems. Do not specify both **path** and **items** for the same menu item.
 
     <!-- tab: JavaScript -->
     {

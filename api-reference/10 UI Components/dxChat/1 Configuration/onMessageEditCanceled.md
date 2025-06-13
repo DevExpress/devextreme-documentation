@@ -5,19 +5,19 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed after message changes are discarded.
 
 ##### param(e): ui/chat:MessageEditCanceledEvent
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.message): Message
-<!-- Description goes here -->
+Discarded message changes.
 
 ---
 <!-- Description goes here -->

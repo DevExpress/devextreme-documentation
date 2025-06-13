@@ -1,8 +1,8 @@
 ---
-uid: common/grids:HeaderFilter
-isType: 
+id: HeaderFilter
 module: common/grids
 export: HeaderFilter
+type: Object
 generateTypeLink: 
 ---
 ---

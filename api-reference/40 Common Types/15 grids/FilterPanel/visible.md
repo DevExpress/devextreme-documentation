@@ -1,5 +1,5 @@
 ---
-uid: common/grids:FilterPanel.visible
+id: FilterPanel.visible
 type: Boolean
 default: false
 ---

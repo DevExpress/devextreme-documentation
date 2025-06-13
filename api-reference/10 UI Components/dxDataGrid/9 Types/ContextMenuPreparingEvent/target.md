@@ -1,5 +1,5 @@
 ---
-type: String
+type: Enums.GridsContextMenuTarget
 uid: ui/data_grid:ContextMenuPreparingEvent.target
 ---
 ---

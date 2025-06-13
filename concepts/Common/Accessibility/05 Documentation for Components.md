@@ -97,6 +97,19 @@ Refer to the following table for detailed information about each component's acc
             <td class="dx-table-row__center icon-warning"></td>
         </tr>
         <tr>
+            <td><a href="/Documentation/Guide/UI_Components/CardView/Accessibility/">CardView</a></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+        </tr>
+        <tr>
             <td><a href="/Documentation/Guide/UI_Components/Chat/Accessibility/">Chat</a></td>
             <td class="dx-table-row__center icon-success"></td>
             <td class="dx-table-row__center icon-success"></td>

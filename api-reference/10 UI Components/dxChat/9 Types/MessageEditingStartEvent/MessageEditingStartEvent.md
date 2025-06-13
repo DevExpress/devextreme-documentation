@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The argument type in the [messageEditingStart]({basewidgetpath}/Events/#messageEditingStart) event.
 
 ---
 <!-- Description goes here -->

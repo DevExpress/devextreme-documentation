@@ -9,20 +9,7 @@ The Scheduler component meets a variety of <a href="https://www.access-board.gov
     <tr>
         <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
         <td>1.3.1 Info and Relationships (Level A) </td>
-        <td>
-            Scheduler does not include accessibility information about:  
-            <ul>
-                <li>The number of appointments in a single day. </li>
-                <li>Current time. </li>
-                <li>Appointment resources.  </li>
-                <li>Recurrence section in the editing popup.  </li>
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
-        <td>1.4.1 Use of Color (Level A) </td>
-        <td>Scheduler’s appointment resource does not have alternative description. </td>
+        <td>Scheduler does not include accessibility information about recurrence section in the editing popup.</td>
     </tr>
     <tr>
         <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
@@ -44,4 +31,18 @@ The Scheduler component meets a variety of <a href="https://www.access-board.gov
         <td>2.1.2 No Keyboard Trap (Level A)</td>
         <td>Scheduler has keyboard trap in appointments navigation if virtual scrolling is enabled. </td>
     </tr>
+    <tr>
+        <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
+        <td>3.2.2 On Input (Level A)</td>
+        <td>
+            Scheduler changes the context when moving between:
+            <ul>
+                <li>Recurrence editor in the editing popup</li>
+                <li>"End repeat" radio group items</li>
+                <li>"Repeat on" weekday button group</li>
+            </ul>
+        </td>
+    </tr>
 </table>
+
+The component also complies with the [European Accessibility Act (EAA)](https://eur-lex.europa.eu/eli/dir/2019/882/oj) and [Americans with Disabilities Act (ADA)](https://www.ada.gov/law-and-regs/ada/) directives.

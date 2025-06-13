@@ -12,7 +12,7 @@ Sets the values in the [header filter](/concepts/05%20UI%20Components/DataGrid/3
 
 Note: Convert date strings into [Date](https://www.w3schools.com/js/js_dates.asp) objects before you pass them to the filter expression.
 
-If you specify the **headerFilter**.[groupInterval](/api-reference/_hidden/GridBaseColumn/headerFilter/groupInterval.md '{basewidgetpath}/Configuration/columns/headerFilter/#groupInterval') property, each member of the `filterValues` array indicates the beginning of a value range:
+If you specify the **headerFilter**.[groupInterval](/api-reference/40%20Common%20Types/15%20grids/ColumnHeaderFilter/groupInterval.md '{basewidgetpath}/Configuration/columns/headerFilter/#groupInterval') property, each member of the `filterValues` array indicates the beginning of a value range:
 
 ---
 #####jQuery

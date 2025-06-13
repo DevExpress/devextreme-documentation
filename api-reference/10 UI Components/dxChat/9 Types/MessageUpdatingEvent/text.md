@@ -4,7 +4,7 @@ uid: ui/chat:MessageUpdatingEvent.text
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The updated text from the input field.
 
 ---
 <!-- Description goes here -->

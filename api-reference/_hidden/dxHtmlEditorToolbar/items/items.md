@@ -1,7 +1,7 @@
 ---
 id: dxHtmlEditorToolbar.items
-type: Array<dxHtmlEditorToolbarItem, Enums.HtmlEditorPredefinedToolbarItem>
-inheritsType: dxHtmlEditorToolbarItem
+type: Array<dxHtmlEditorToolbarItem, AIToolbarItem, Enums.HtmlEditorPredefinedToolbarItem>
+inheritsType: dxHtmlEditorToolbarItem,AIToolbarItem
 ---
 ---
 ##### shortDescription

@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The argument type in the [messageUpdating]({basewidgetpath}/Events/#messageUpdating) event.
 
 ---
 <!-- Description goes here -->

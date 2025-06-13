@@ -39,7 +39,6 @@
   <MenuRule Destination="050 Getting Started/32 Rollup Configuration" SourcePattern="Howto:^40 Angular Components/10 Getting Started/30 Other Approaches/06 Using Rollup" VisibleFor="Angular" />
   <MenuRule Destination="050 Getting Started/33 Ionic Configuration" SourcePattern="Howto:^40 Angular Components/10 Getting Started/30 Other Approaches/05 Using Ionic" VisibleFor="Angular" />
   <MenuRule Destination="050 Getting Started/34 Gatsby Configuration" SourcePattern="Howto:^Common/Integration Guides/10 Create a DevExtreme application with Gatsby"/>
-  <MenuRule Destination="050 Getting Started/35 Next.js Configuration" SourcePattern="Howto:^Common/Integration Guides/20 Create a DevExtreme application with Next.js"/>
   <MenuRule Destination="050 Getting Started/36 Vite Configuration" SourcePattern="Howto:^Common/Integration Guides/30 Create a DevExtreme application with Vite.js"/>
 
   <MenuRule Destination="070 Licensing" SourcePattern="Howto:^Common/Licensing" />
@@ -117,7 +116,7 @@
   <MenuRule Destination="10 UI Components/dx$1/1 Getting Started" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/[0-9]+ Getting Started with ([a-zA-Z]+)" />
   <MenuRule Destination="10 UI Components/dx$1/4 Accessibility" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)/[0-9]+ Accessibility" />
 
-  <MenuRule Destination="" SourcePattern="Howto:^05 UI Components/(Accordion|BarGauge|Bullet|ButtonGroup|CheckBox|CircularGauge|Drawer|DropDownButton|Floating Action Button|LinearGauge|NavBar|Pagination|Resizable|SlideOut|SlideOutView|TabPanel|Tabs|Toolbar|TreeMap|zz Common)" />
+  <MenuRule Destination="" SourcePattern="Howto:^05 UI Components/(Accordion|BarGauge|Bullet|ButtonGroup|CardView|CheckBox|CircularGauge|Drawer|DropDownButton|Floating Action Button|LinearGauge|NavBar|Pagination|Resizable|SlideOut|SlideOutView|TabPanel|Tabs|Toolbar|TreeMap|zz Common)" />
   <MenuRule Destination="10 UI Components/dx$1/2 How To" SourcePattern="Howto:^05 UI Components/(DataGrid|FileUploader|TreeList)/[0-9]+ How To" />
   <MenuRule Destination="10 UI Components/dx$1/2 How To" SourcePattern="Howto:^05 UI Components/([a-zA-Z]+)" />
 

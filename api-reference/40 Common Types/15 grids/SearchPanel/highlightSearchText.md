@@ -1,5 +1,5 @@
 ---
-uid: common/grids:SearchPanel.highlightSearchText
+id: SearchPanel.highlightSearchText
 type: Boolean
 default: true
 ---

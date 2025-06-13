@@ -1,8 +1,8 @@
 ---
 id: GridBase.Options.filterPanel.texts
-type: common/grids:FilterPanelTexts
+type: FilterPanelTexts
 default: {}
-inheritsType: common/grids:FilterPanelTexts
+inheritsType: FilterPanelTexts
 ---
 ---
 ##### shortDescription

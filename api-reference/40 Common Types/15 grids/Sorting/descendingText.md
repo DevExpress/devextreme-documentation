@@ -1,5 +1,5 @@
 ---
-uid: common/grids:Sorting.descendingText
+id: Sorting.descendingText
 type: String
 default: 'Sort Descending'
 ---

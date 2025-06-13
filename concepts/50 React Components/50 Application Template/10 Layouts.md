@@ -1,4 +1,4 @@
-The application includes two layouts. The only difference between them is where the toolbar is located: outer (default) or inner toolbar.
+The application template has two layouts that differ only in toolbar type: outer (default) or inner.
 
 **Outer toolbar**
 <br/>
@@ -9,13 +9,17 @@ The application includes two layouts. The only difference between them is where 
 <img src="/images/dx-application-templates/inner.png" style="width: 800px;" alt="Inner toolbar expanded" />
 <br/>
 
-To switch to another layout, open the `src\Content.js` file and replace the `SideNavOuterToolbar` import with `SideNavInnerToolbar`:
+To switch to another layout: 
 
-    <!-- tab: Content.js -->
-    import {
-      SideNavInnerToolbar as SideNavBarLayout,
-      SingleCard
-    } from './layouts';
+- If your project uses Vite, replace the `SideNavOuterToolbar` import with `SideNavInnerToolbar` in `src\Content.js`.
+
+        <!-- tab: Content.js -->
+        import { SideNavInnerToolbar as SideNavBarLayout, SingleCard } from './layouts';
+
+- If your project uses Next.js, replace the `SideNavOuterToolbar` import with `SideNavInnerToolbar` in `src\app\pages\layout.jsx`.
+
+        <!-- tab: Content.js -->
+        import { SideNavInnerToolbar as SideNavBarLayout, SingleCard } from './src/layouts/index';
 
 To generate a new application with an inner toolbar, set the `--layout` flag to `side-nav-inner-toolbar`:
 

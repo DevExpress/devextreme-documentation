@@ -6,7 +6,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The 'ai' toolbar item.
 
 ---
 <!-- Description goes here -->

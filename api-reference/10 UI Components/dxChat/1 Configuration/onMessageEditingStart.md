@@ -5,22 +5,23 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before a message switches to the editing state.
 
 ##### param(e): ui/chat:MessageEditingStartEvent
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean | Promise<Boolean>
-<!-- Description goes here -->
+`true`, a Promise resolved with `true`, or a rejected Promise stops message editing.       
+`false` or a Promise resolved with `false` or `undefined` continues message editing.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.message): Message
-<!-- Description goes here -->
+The data of a message to be edited.
 
 ---
 <!-- Description goes here -->

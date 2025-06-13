@@ -2,7 +2,7 @@
 id: Enums.SortOrder
 acceptValues: 'asc' | 'desc'
 type: Union
-references: ui/data_grid:SortByGroupSummaryInfoItem.sortOrder|dxFileManagerDetailsColumn.sortOrder|GridBaseColumn.sortOrder|GridBase.Options.columnChooser.sortOrder|PivotGridDataSource.Options.fields.sortOrder
+references: ColumnChooser.sortOrder|ColumnProperties.sortOrder|ui/data_grid:SortByGroupSummaryInfoItem.sortOrder|dxFileManagerDetailsColumn.sortOrder|GridBaseColumn.sortOrder|PivotGridDataSource.Options.fields.sortOrder
 ---
 ---
 ##### shortDescription

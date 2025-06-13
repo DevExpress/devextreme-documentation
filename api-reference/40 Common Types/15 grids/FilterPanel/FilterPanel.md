@@ -1,6 +1,5 @@
 ---
-uid: common/grids:FilterPanel
-isType: 
+id: FilterPanel
 module: common/grids
 export: FilterPanel
 generateTypeLink: 

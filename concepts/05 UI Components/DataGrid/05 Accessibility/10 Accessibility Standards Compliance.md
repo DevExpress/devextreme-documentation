@@ -34,13 +34,7 @@ The DataGrid component meets a variety of <a href="https://www.access-board.gov/
     <tr>
         <td>-</td>
         <td>2.5.7 Dragging Movements (Level AA 2.2 only)</td>
-        <td>
-            <ul>
-                <li>ColumnChooser in 'drag' mode.</li>
-                <li>Grouping and row drag-and-drop.</li>
-                <li>Column reordering.</li>
-            </ul>    
-        </td>
+        <td>ColumnChooser in 'drag' mode.</td>
     </tr>
     <tr>
         <td>-</td>
@@ -65,3 +59,5 @@ The DataGrid component meets a variety of <a href="https://www.access-board.gov/
         </td>
     </tr>
 </table>
+
+The component also complies with the [European Accessibility Act (EAA)](https://eur-lex.europa.eu/eli/dir/2019/882/oj) and [Americans with Disabilities Act (ADA)](https://www.ada.gov/law-and-regs/ada/) directives.

@@ -16,4 +16,4 @@ Configures the header filter's search box.
 }
 
 #####See Also#####
-- [search](/api-reference/_hidden/GridBaseColumn/headerFilter/search '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/columns/headerFilter/search/')
+- [search](/api-reference/40%20Common%20Types/15%20grids/ColumnHeaderFilter/search.md '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/columns/headerFilter/search/')

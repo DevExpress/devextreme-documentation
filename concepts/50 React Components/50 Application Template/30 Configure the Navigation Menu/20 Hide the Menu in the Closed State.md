@@ -1,11 +1,11 @@
-In the closed state, the navigation menu is partially visible because it displays item icons. If the items do not have icons, you can hide the menu. To do this, open the `SideNavOuterToolbar` or `SideNavInnerToolbar` component (depending on the used [layout](/concepts/50%20React%20Components/50%20Application%20Template/10%20Layouts.md '/Documentation/Guide/React_Components/Application_Template/#Layouts')), find the [Drawer](/api-reference/10%20UI%20Components/dxDrawer '/Documentation/ApiReference/UI_Components/dxDrawer/') configuration, and set its [minSize](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/minSize.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#minSize') property to 0:
+In its closed state, the navigation menu is partially visible as it displays item icons. If items do not have icons, you can hide the menu. In the `SideNavOuterToolbar` or `SideNavInnerToolbar` component (depending on project [layout type](/concepts/50%20React%20Components/50%20Application%20Template/10%20Layouts.md '/Documentation/Guide/React_Components/Application_Template/#Layouts')), find the [Drawer](/api-reference/10%20UI%20Components/dxDrawer '/Documentation/ApiReference/UI_Components/dxDrawer/') configuration and set its [minSize](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/minSize.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#minSize') property to 0:
 
     <!-- tab: side-nav-outer-toolbar.js -->
     // ...
     export default function ({ title, children }) {
         // ...
         return (
-            <div className={'side-nav-inner-toolbar'}>
+            <div className={'side-nav-outer-toolbar'}>
                 <Drawer ...
                     minSize={0}>
                     {/* ... */}

@@ -1,0 +1,3 @@
+The Vite template offers stub functions that utilize [React Router](https://reactrouter.com/) for authentication with client-side routing. The `UnauthenticatedContent.js` component renders authentication pages. The `Content.js` component renders the rest of the application.
+
+[important] Do not rely on client-side routing to protect your application from unauthorized access. Always verify user credentials on the back end.

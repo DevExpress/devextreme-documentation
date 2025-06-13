@@ -4,7 +4,7 @@ uid: ui/chat:MessageDeletedEvent.message
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The message that was deleted.
 
 ---
 <!-- Description goes here -->

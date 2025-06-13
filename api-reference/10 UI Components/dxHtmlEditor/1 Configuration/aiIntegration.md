@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Binds AI service to HTML Editor.
+Binds the AI service to the HTML Editor.
 
 ---
 To activate AI functionality in HTML Editor, specify:

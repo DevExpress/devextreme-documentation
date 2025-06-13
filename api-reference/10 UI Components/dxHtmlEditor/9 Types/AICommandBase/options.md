@@ -4,7 +4,7 @@ type: any
 ---
 ---
 ##### shortDescription
-The command options.
+Command options.
 
 ---
 Only the following commands include predefined options:
@@ -39,7 +39,7 @@ Only the following commands include predefined options:
     - *"Japanese"*
     - *"Spanish"*
 
-If you use these commands without declaring the options array, all predefined options ara available. You can assign only the needed options or add custom ones:
+If you use these commands without declaring the options array, all predefined options are available. You can assign only specific options or add custom options:
 
 ---
 ##### jQuery

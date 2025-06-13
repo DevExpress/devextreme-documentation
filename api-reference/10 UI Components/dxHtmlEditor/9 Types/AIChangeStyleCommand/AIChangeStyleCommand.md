@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-Specifies a "change style" command for the [AI toolbar item](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Types/AIToolbarItem/).
+Specifies a "change style" command for the ["ai" toolbar item](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Types/AIToolbarItem/).
 
 ---
 To allow users to use this command, add its name to the [commands](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/commands/) array:

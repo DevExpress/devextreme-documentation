@@ -5,7 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Includes all predefined options for the ["change style"](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Types/AIChangeStyleCommand/) command.
 
 ---
 <!-- Description goes here -->

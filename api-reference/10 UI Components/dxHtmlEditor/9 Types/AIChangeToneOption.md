@@ -5,7 +5,7 @@ type: Union
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Includes all predefined options for the ["change tone"](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Types/AIChangeToneCommand/) command.
 
 ---
 <!-- Description goes here -->

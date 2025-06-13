@@ -4,7 +4,7 @@ type: AICommandNameExtended
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The command name.
 
 ---
 <!-- Description goes here -->

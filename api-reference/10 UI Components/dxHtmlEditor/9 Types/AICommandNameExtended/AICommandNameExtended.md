@@ -8,7 +8,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An extended type for command names. Includes [predefined](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Types/#AICommandName) and custom command names.
 
 ---
 <!-- Description goes here -->

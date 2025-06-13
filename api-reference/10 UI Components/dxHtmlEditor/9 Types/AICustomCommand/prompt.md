@@ -4,13 +4,13 @@ type: function(param)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A custom prompt.
 
 ##### param(param): String
-<!-- Description goes here -->
+Prompt parameters.
 
 ##### return: String
-<!-- Description goes here -->
+The prompt text.
 
 ---
 <!-- Description goes here -->

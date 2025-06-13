@@ -1,5 +1,5 @@
 ---
-id: dxCardView.addCard
+id: dxCardView.addCard()
 ---
 ---
 ##### shortDescription

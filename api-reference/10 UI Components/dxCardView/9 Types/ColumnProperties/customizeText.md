@@ -1,30 +1,30 @@
 ---
 id: ColumnProperties.customizeText
-type: function(cellInfo)
+type: function(fieldInfo)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
-
-##### param(cellInfo): Object
-<!-- Description goes here -->
-
-##### field(cellInfo.groupInterval): String | Number
-<!-- Description goes here -->
-
-##### field(cellInfo.target): String
-<!-- Description goes here -->
-
-##### field(cellInfo.value): any
-<!-- Description goes here -->
-
-##### field(cellInfo.valueText): String
 <!-- Description goes here -->
 
 ##### return: String
 <!-- Description goes here -->
 
 ##### context: Column
+<!-- Description goes here -->
+
+##### param(fieldInfo): Object
+<!-- Description goes here -->
+
+##### field(fieldInfo.groupInterval): String | Number
+<!-- Description goes here -->
+
+##### field(fieldInfo.target): String
+<!-- Description goes here -->
+
+##### field(fieldInfo.value): any
+<!-- Description goes here -->
+
+##### field(fieldInfo.valueText): String
 <!-- Description goes here -->
 
 ---

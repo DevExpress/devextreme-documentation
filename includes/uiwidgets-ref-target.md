@@ -3,7 +3,7 @@ This property accepts one of the following values:
 ---
 ##### jQuery
 
-- A <a href="https://api.jquery.com/category/selectors/" target="_blank">jQuery selector</a>.
+- A [jQuery selector](https://api.jquery.com/category/selectors/)
 
         <!--tab: index.js-->
         $(function(){
@@ -13,7 +13,7 @@ This property accepts one of the following values:
             });
         });
 
-- A jQuery wrapper    
+- A jQuery wrapper
 
         <!--tab: index.js-->
         $(function(){
@@ -35,7 +35,7 @@ This property accepts one of the following values:
 
 ##### Angular
 
-- A <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors" target="_blank">CSS selector</a>
+- A [CSS selector](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors)
 
         <!-- tab: app.component.html -->
         <dx-{widget-name} ... 
@@ -78,7 +78,7 @@ This property accepts one of the following values:
 
 ##### Vue
 
-- A <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors" target="_blank">CSS selector</a>
+- A [CSS selector](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors)
 
         <!-- tab: App.vue -->
         <template>
@@ -138,7 +138,7 @@ This property accepts one of the following values:
 
 ##### React
 
-- A <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors" target="_blank">CSS selector</a>
+- A [CSS selector](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors)
 
         <!-- tab: App.js -->
         import {WidgetName} from 'devextreme-react/{widget-name}';
@@ -193,4 +193,90 @@ This property accepts one of the following values:
             );
         }
     
+    
+
+---
+
+---
+
+##### jQuery
+
+[note]
+
+**Target** type affects the initialization of the component's [events]({basewidgetpath}/Events/): 
+
+- `undefined`    
+Events are initialized on the [document](https://developer.mozilla.org/en-US/docs/Web/API/Document).
+- **Selector**    
+Events are initialized on the **document** with the passed selector.
+- **jQuery wrapper** or **DOM element**    
+Events are initialized on the passed element.
+
+This changes event propagation and the behavior of methods like [stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation).
+
+[/note]
+
+---
+
+---
+
+##### Angular
+
+[note]
+
+**Target** type affects the initialization of the component's [events]({basewidgetpath}/Events/): 
+
+- `undefined`    
+Events are initialized on the [document](https://developer.mozilla.org/en-US/docs/Web/API/Document).
+- **Selector**    
+Events are initialized on the **document** with the passed selector.
+- **DOM element**    
+Events are initialized on the passed element.
+
+This changes event propagation and the behavior of methods like [stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation).
+
+[/note]
+
+---
+
+---
+
+##### Vue
+
+[note]
+
+**Target** type affects the initialization of the component's [events]({basewidgetpath}/Events/): 
+
+- `undefined`    
+Events are initialized on the [document](https://developer.mozilla.org/en-US/docs/Web/API/Document).
+- **Selector**    
+Events are initialized on the **document** with the passed selector.
+- **DOM element**    
+Events are initialized on the passed element.
+
+This changes event propagation and the behavior of methods like [stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation).
+
+[/note]
+
+---
+
+---
+
+##### React
+
+[note]
+
+**Target** type affects the initialization of the component's [events]({basewidgetpath}/Events/): 
+
+- `undefined`    
+Events are initialized on the [document](https://developer.mozilla.org/en-US/docs/Web/API/Document).
+- **Selector**    
+Events are initialized on the **document** with the passed selector.
+- **DOM element**    
+Events are initialized on the passed element.
+
+This changes event propagation and the behavior of methods like [stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation).
+
+[/note]
+
 ---

@@ -1,4 +1,4 @@
-CardView supports single and multiple selection modes. Use the **selection**.[mode](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/selection/#mode) property to specify the mode.
+CardView supports single and multiple selection modes. Use the **selection**.[mode](/api-reference/10%20UI%20Components/dxCardView/9%20Types/SelectionConfiguration/mode.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/selection/#mode') property to specify the mode.
 
 ---
 ##### jQuery

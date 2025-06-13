@@ -1,4 +1,4 @@
-The CardView component can load and update data from different data source types. To use a local array, assign it to the [dataSource](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#dataSource) property and specify the key field in the [keyExpr](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#keyExpr) property:
+The CardView component can load and update data from different data source types. To use a local array, assign it to the [dataSource](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#dataSource') property and specify the key field in the [keyExpr](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#keyExpr') property:
 
 ---
 ##### jQuery

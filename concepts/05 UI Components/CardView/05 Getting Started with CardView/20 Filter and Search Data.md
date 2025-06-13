@@ -1,8 +1,8 @@
 The CardView includes the following UI elements used to search and filter data:
 
-- [headerFilter](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/columns/headerFilter/)
-- [filterPanel](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/filterPanel/) with [filterBuilder](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#filterBuilder)
-- [searchPanel](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/searchPanel/)
+- [headerFilter](/api-reference/10%20UI%20Components/dxCardView/9%20Types/ColumnProperties/headerFilter.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/columns/headerFilter/')
+- [filterPanel](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/filterPanel.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/filterPanel/') with [filterBuilder](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/filterBuilder.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#filterBuilder')
+- [searchPanel](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/searchPanel.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/searchPanel/')
 
 In this tutorial, the header filter and the search panel are displayed:
 

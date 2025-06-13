@@ -1,4 +1,4 @@
-You can set the **editing**.[allowDeleting](/Documentation/ApiReference/UI_Components/dxChat/Configuration/editing/#allowDeleting) and [allowUpdating](/Documentation/ApiReference/UI_Components/dxChat/Configuration/editing/#allowUpdating) options to a Boolean value to toggle editing functionality. 
+You can set the **editing**.[allowDeleting](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/editing/allowDeleting.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/editing/#allowDeleting') and [allowUpdating](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/editing/allowUpdating.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/editing/#allowUpdating') options to a Boolean value to toggle editing functionality. 
 
 Alternatively, you can customize conditions for when users can edit messages. For example, the following code snippet prevents editing or deleting messages that are more than five minutes old:
 

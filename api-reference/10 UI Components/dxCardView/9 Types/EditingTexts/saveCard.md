@@ -5,7 +5,7 @@ default: 'Save'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the text of the button that saves the edited card.
 
 ---
 <!-- Description goes here -->

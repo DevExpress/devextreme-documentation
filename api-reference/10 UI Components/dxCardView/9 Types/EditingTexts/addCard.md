@@ -1,10 +1,7 @@
 ---
-id: WithCardInfo
-module: ui/card_view
-export: WithCardInfo
-type: Object
-generateTypeLink: 
-hidden: 
+id: EditingTexts.addCard
+type: String
+default: 'Add a card'
 ---
 ---
 ##### shortDescription

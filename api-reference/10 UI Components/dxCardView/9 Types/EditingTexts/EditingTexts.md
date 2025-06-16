@@ -1,10 +1,9 @@
 ---
-id: WithFieldValueInfo
+id: EditingTexts
 module: ui/card_view
-export: WithFieldValueInfo
+export: EditingTexts
 type: Object
 generateTypeLink: 
-hidden: 
 ---
 ---
 ##### shortDescription

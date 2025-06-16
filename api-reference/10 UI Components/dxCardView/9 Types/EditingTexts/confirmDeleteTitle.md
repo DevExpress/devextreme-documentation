@@ -1,10 +1,7 @@
 ---
-id: WithCardInfo
-module: ui/card_view
-export: WithCardInfo
-type: Object
-generateTypeLink: 
-hidden: 
+id: EditingTexts.confirmDeleteTitle
+type: String
+default: ''
 ---
 ---
 ##### shortDescription

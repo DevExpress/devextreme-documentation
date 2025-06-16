@@ -1,10 +1,6 @@
 ---
-id: WithCardInfo
-module: ui/card_view
-export: WithCardInfo
-type: Object
-generateTypeLink: 
-hidden: 
+id: dxCardViewEditing.texts
+type: EditingTexts
 ---
 ---
 ##### shortDescription

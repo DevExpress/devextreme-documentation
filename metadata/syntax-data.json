@@ -471,23 +471,6 @@
     "_ui_card_view_SelectionChangedEvent.selectedCardsData": {
       "vue": "selected-cards-data"
     },
-    "_ui_card_view_SelectionChangingEvent": {
-      "angular": "dxo-ui-card-view--selection-changing-event",
-      "react": "_ui_card_view_SelectionChangingEvent",
-      "vue": "Dx_ui_card_view_SelectionChangingEvent"
-    },
-    "_ui_card_view_SelectionChangingEvent.currentDeselectedCardKeys": {
-      "vue": "current-deselected-card-keys"
-    },
-    "_ui_card_view_SelectionChangingEvent.currentSelectedCardKeys": {
-      "vue": "current-selected-card-keys"
-    },
-    "_ui_card_view_SelectionChangingEvent.selectedCardKeys": {
-      "vue": "selected-card-keys"
-    },
-    "_ui_card_view_SelectionChangingEvent.selectedCardsData": {
-      "vue": "selected-cards-data"
-    },
     "_ui_chat_DisposingEvent": {
       "angular": "dxo-ui-chat--disposing-event",
       "react": "_ui_chat_DisposingEvent",
@@ -8097,6 +8080,11 @@
       "react": "Popup",
       "vue": "DxPopup"
     },
+    "dxCardViewEditing.texts": {
+      "angular": "dxo-texts",
+      "react": "Texts",
+      "vue": "DxTexts"
+    },
     "dxCardViewFieldInfo": {
       "angular": "dxo-card-view-field-info",
       "react": "DxCardViewFieldInfo",
@@ -8191,6 +8179,9 @@
       "angular": "dxo-filter-panel",
       "react": "FilterPanel",
       "vue": "DxFilterPanel"
+    },
+    "dxCardViewOptions.filterSyncEnabled": {
+      "vue": "filter-sync-enabled"
     },
     "dxCardViewOptions.filterValue": {
       "vue": "filter-value"
@@ -8299,9 +8290,6 @@
     },
     "dxCardViewOptions.onSelectionChanged": {
       "vue": "@selection-changed"
-    },
-    "dxCardViewOptions.onSelectionChanging": {
-      "vue": "@selection-changing"
     },
     "dxCardViewOptions.pager": {
       "angular": "dxo-pager",
@@ -20519,6 +20507,27 @@
     },
     "dxVectorMapOptions.zoomingEnabled": {
       "vue": "zooming-enabled"
+    },
+    "editingTexts": {
+      "vue": "editing-texts"
+    },
+    "editingTexts.addCard": {
+      "vue": "add-card"
+    },
+    "editingTexts.confirmDeleteMessage": {
+      "vue": "confirm-delete-message"
+    },
+    "editingTexts.confirmDeleteTitle": {
+      "vue": "confirm-delete-title"
+    },
+    "editingTexts.deleteCard": {
+      "vue": "delete-card"
+    },
+    "editingTexts.editCard": {
+      "vue": "edit-card"
+    },
+    "editingTexts.saveCard": {
+      "vue": "save-card"
     },
     "editorOptions.isDirty": {
       "vue": "is-dirty"

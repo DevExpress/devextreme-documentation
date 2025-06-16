@@ -125,6 +125,25 @@ The following code creates a simple Tooltip on your page and attaches it to anot
 
 ---
 
+[note]
+
+The component can affect page layout when initialized in a flex container with other elements using the following CSS styles:
+
+    <!-- tab: CSS -->
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+To avoid changes to the page layout, implement the following CSS styles for the Tooltip container:
+
+    <!-- tab: CSS -->
+    .dx-tooltip {
+        display: none !important;
+    }
+
+[/note]
+
 #####See Also#####
 #include common-link-configurewidget
 - [Tooltip - Show and Hide](/concepts/05%20UI%20Components/Tooltip/05%20Show%20and%20Hide%20the%20Tooltip '/Documentation/Guide/UI_Components/Tooltip/Show_and_Hide_the_Tooltip/')

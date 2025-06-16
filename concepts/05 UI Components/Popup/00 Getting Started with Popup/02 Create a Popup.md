@@ -125,3 +125,22 @@
     export default App;
 
 ---
+
+[note]
+
+The component can affect page layout when initialized in a flex container with other elements using the following CSS styles:
+
+    <!-- tab: CSS -->
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+To avoid changes to the page layout, implement the following CSS styles for the Popup container:
+
+    <!-- tab: CSS -->
+    .dx-popup {
+        display: none !important;
+    }
+
+[/note]

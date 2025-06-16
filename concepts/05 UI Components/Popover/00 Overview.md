@@ -123,6 +123,25 @@ The following code creates a simple Popover on your page and attaches it to anot
 
 ---
 
+[note]
+
+The component can affect page layout when initialized in a flex container with other elements using the following CSS styles:
+
+    <!-- tab: CSS -->
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+To avoid changes to the page layout, implement the following CSS styles for the Popover container:
+
+    <!-- tab: CSS -->
+    .dx-popover {
+        display: none !important;
+    }
+
+[/note]
+
 There are several ways to specify the content of the Popover. Learn more in the [Customize the Content](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/05%20Customize%20the%20Content '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Content/') article. The Popover can also be displayed with a title and toolbars. For detailed information, see the [Customize the Title](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/10%20Customize%20the%20Title.md '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Title/') and [Specify Toolbar Items](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/20%20Specify%20Toolbar%20Items.md '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Specify_Toolbar_Items/') topics. 
 
 #####See Also#####

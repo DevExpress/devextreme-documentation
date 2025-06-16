@@ -127,7 +127,7 @@ The following code creates a simple Tooltip on your page and attaches it to anot
 
 [note]
 
-The component can affect page layout when initialized in a flex container with other elements using the following CSS styles:
+The component can affect page layout when initialized in a flex container with other elements using CSS styles such as the following:
 
     <!-- tab: CSS -->
     .flex {

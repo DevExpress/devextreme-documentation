@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-Specifies a custom command for the ["ai" toolbar item](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Types/AIToolbarItem/).
+Specifies a custom command for the ["ai" toolbar item](/api-reference/10%20UI%20Components/dxHtmlEditor/9%20Types/AIToolbarItem '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Types/AIToolbarItem/').
 
 ---
 To define a custom command, do the following:

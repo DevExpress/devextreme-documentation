@@ -20509,7 +20509,9 @@
       "vue": "zooming-enabled"
     },
     "editingTexts": {
-      "vue": "editing-texts"
+      "angular": "dxo-editing-texts",
+      "react": "EditingTexts",
+      "vue": "DxEditingTexts"
     },
     "editingTexts.addCard": {
       "vue": "add-card"

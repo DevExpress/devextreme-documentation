@@ -9,7 +9,7 @@ Command options.
 ---
 Only the following commands include predefined options:
 
-- [changeStyle](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Types/AIChangeStyleCommand/):    
+- [changeStyle](/api-reference/10%20UI%20Components/dxHtmlEditor/9%20Types/AIChangeStyleCommand '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Types/AIChangeStyleCommand/'):    
     - *"formal"*
     - *"informal"*
     - *"technical"*
@@ -23,14 +23,14 @@ Only the following commands include predefined options:
     - *"descriptive"*
     - *"conversational"*
 
-- [changeTone](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Types/AIChangeToneCommand/):
+- [changeTone](/api-reference/10%20UI%20Components/dxHtmlEditor/9%20Types/AIChangeToneCommand '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Types/AIChangeToneCommand/'):
     - *"professional"*
     - *"casual"*
     - *"straightforward"*
     - *"confident"*
     - *"friendly"*
 
-- [translate](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Types/AITranslateCommand/)
+- [translate](/api-reference/10%20UI%20Components/dxHtmlEditor/9%20Types/AITranslateCommand '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Types/AITranslateCommand/')
     - *"Arabic"*
     - *"Chinese"*
     - *"English"*
@@ -125,4 +125,4 @@ If you use these commands without declaring the options array, all predefined op
 
 ---
 
-The ["custom"](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Types/AICustomCommand/) command can also include custom options.
+The ["custom"](/api-reference/10%20UI%20Components/dxHtmlEditor/9%20Types/AICustomCommand '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Types/AICustomCommand/') command can also include custom options.

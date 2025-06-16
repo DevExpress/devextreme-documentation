@@ -11,7 +11,7 @@ Specifies how the component changes **argumentAxis**.[visualRange](/api-referenc
 The following modes are available:
 
 - *"shift"*    
-**visualRange** moves to the end of the data range or [wholeRange](/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/wholeRange/) if defined. The range does not change.
+**visualRange** moves to the end of the data range or [wholeRange](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/wholeRange '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/wholeRange/') if defined. The range does not change.
 
 - *"reset"*    
 **visualRange** becomes equal to the data range or **wholeRange** if defined.
@@ -28,4 +28,4 @@ The following modes are available:
 
 #####See Also#####
 - **Axis**.[visualRange()](/api-reference/10%20UI%20Components/dxChart/7%20Chart%20Elements/Axis/3%20Methods/visualRange().md '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Axis/Methods/#visualRange')
-- **valueAxis**.[visualRangeUpdateMode](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#visualRangeUpdateMode)
+- **valueAxis**.[visualRangeUpdateMode](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/visualRangeUpdateMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#visualRangeUpdateMode')

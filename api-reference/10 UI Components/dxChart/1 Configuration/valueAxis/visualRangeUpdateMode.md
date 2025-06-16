@@ -17,7 +17,7 @@ The following modes are available:
 **visualRange** does not change.
 
 - *"auto"*    
-The component applies a mode based on [argumentAxis](/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/).[visualRangeUpdateMode](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/visualRangeUpdateMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#visualRangeUpdateMode'):
+The component applies a mode based on [argumentAxis](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/').[visualRangeUpdateMode](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/visualRangeUpdateMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#visualRangeUpdateMode'):
     
     - If **argumentAxis**.**visualRangeUpdateMode** is *"shift"* or *"reset"*, **valueAxis**.**visualRangeUpdateMode** is set to *"reset"*.
     - If **argumentAxis**.**visualRangeUpdateMode** is *"keep"*, **valueAxis**.**visualRangeUpdateMode** is set to *"keep"*.

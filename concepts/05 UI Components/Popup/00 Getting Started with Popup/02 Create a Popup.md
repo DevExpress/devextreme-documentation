@@ -128,7 +128,7 @@
 
 [note]
 
-The component can affect page layout when initialized in a flex container with other elements using CSS styles such as the following:
+The component may affect the page layout when used inside a flex container with other elements. For example, the following parent CSS styles can cause this issue:
 
     <!-- tab: CSS -->
     .flex {

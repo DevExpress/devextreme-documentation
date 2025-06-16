@@ -5,7 +5,7 @@ default: 'Delete'
 ---
 ---
 ##### shortDescription
-Specifies the text of the button that invokes card deleting.
+Specifies the text of the button that invokes card deletion.
 
 ---
 <!-- Description goes here -->

@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-Specifies the title text of the deletion confirmation popup.
+Specifies the title text of the pop-up deletion confirmation.
 
 ---
 <!-- Description goes here -->

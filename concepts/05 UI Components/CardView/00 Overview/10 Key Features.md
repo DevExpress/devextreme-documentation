@@ -8,7 +8,7 @@ CardView can allow users to add, update, and delete cards. You can configure whi
 Configure [headerFilter](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/headerFilter/) or [filterPanel](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/filterPanel/) to allow users to filter CardView data. Modify sorting settings in the [sorting](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/sorting/) object.
 
 - **Card Customization**    
-You can customize the appearance of cards with a variety of objects, including the following:
+You can customize the appearance of cards with a variety of objects, including:
     - [cardCover](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/cardCover/)
     - [cardHeader](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/cardHeader/)
     - [cardFooterTemplate](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#cardFooterTemplate)

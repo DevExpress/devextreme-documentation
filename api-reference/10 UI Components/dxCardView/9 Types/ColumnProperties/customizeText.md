@@ -4,28 +4,28 @@ type: function(fieldInfo)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Customizes text displayed in field values.
 
 ##### return: String
-<!-- Description goes here -->
+The text the field value should display.
 
 ##### context: Column
-<!-- Description goes here -->
+The `this` keyword refers to the column's configuration.
 
 ##### param(fieldInfo): Object
-<!-- Description goes here -->
+Information on the current field.
 
 ##### field(fieldInfo.groupInterval): String | Number
-<!-- Description goes here -->
+Indicates how header filter values were combined into groups. Available if **target** is *"headerFilter"*. 
 
 ##### field(fieldInfo.target): String
-<!-- Description goes here -->
+The UI element where the **customizeText** function was called: *"card"*, *"headerFilter"*, *"search"*, *"filterPanel"*, or *"filterBuilder"*.
 
 ##### field(fieldInfo.value): any
-<!-- Description goes here -->
+The field value.
 
 ##### field(fieldInfo.valueText): String
-<!-- Description goes here -->
+The [formatted](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/columns/#format) value converted to a string.
 
 ---
 <!-- Description goes here -->

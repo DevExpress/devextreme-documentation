@@ -5,7 +5,7 @@ default: 'Add a card'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the text of the button that adds a card.
 
 ---
 <!-- Description goes here -->

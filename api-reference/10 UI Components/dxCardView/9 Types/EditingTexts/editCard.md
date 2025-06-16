@@ -5,7 +5,7 @@ default: 'Edit'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the text of the button that invokes card editing.
 
 ---
 <!-- Description goes here -->

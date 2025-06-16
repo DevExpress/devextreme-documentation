@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The texts displayed when editing a card.
 
 ---
 <!-- Description goes here -->

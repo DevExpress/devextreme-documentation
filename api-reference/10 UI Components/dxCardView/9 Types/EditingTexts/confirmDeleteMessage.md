@@ -5,7 +5,7 @@ default: 'Are you sure you want to delete this record?'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the text of the deletion confirmation message.
 
 ---
 <!-- Description goes here -->

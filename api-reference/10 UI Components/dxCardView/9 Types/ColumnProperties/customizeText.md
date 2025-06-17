@@ -16,7 +16,7 @@ The `this` keyword refers to the column's configuration.
 Information on the current field.
 
 ##### field(fieldInfo.groupInterval): String | Number
-Indicates how header filter values were combined into groups. Available if **target** is *"headerFilter"*. 
+Indicates how header filter values were combined into groups. Available if **target** is *"headerFilter"*.
 
 ##### field(fieldInfo.target): String
 The UI element where the **customizeText** function was called: *"card"*, *"headerFilter"*, *"search"*, *"filterPanel"*, or *"filterBuilder"*.
@@ -25,7 +25,7 @@ The UI element where the **customizeText** function was called: *"card"*, *"head
 The field value.
 
 ##### field(fieldInfo.valueText): String
-The [formatted](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/columns/#format) value converted to a string.
+The [formatted](/api-reference/10%20UI%20Components/dxCardView/9%20Types/ColumnProperties/format.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/columns/#format') value converted to a string.
 
 ---
 <!-- Description goes here -->

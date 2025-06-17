@@ -1,4 +1,4 @@
-To get started, add Stepper and MultiView to your project. Create a navigation panel by adding a `<div>` element to display the active step and two [Button](/Documentation/Guide/UI_Components/Button/Overview/) components to a container:
+To get started, add Stepper and MultiView to your project. Create a navigation panel by adding a `<div>` element for the active step indicator and two [Button](/Documentation/Guide/UI_Components/Button/Overview/) components to a container:
 
 ---
 
@@ -43,9 +43,7 @@ To get started, add Stepper and MultiView to your project. Create a navigation p
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-stepper
-        (onSelectionChanging)="onSelectionChanging($event)"
-    >
+    <dx-stepper ... >
         <dxi-stepper-item ...
             *ngFor="let step of steps"
         ></dxi-stepper-item>
@@ -59,8 +57,8 @@ To get started, add Stepper and MultiView to your project. Create a navigation p
         </dx-multi-view>
         <div class="nav-panel">
             <div class="current-step">
-                <span>
-                    Step <span class="selected-index">{{ selectedIndex + 1 }}</span> of <span class="step-count">{{ steps.length }}</span>
+                <span ... >
+                    Step <span class="selected-index">1</span> of <span class="step-count">{{ steps.length }}</span>
                 </span>
             </div>
             <div class="nav-buttons">
@@ -80,6 +78,7 @@ To get started, add Stepper and MultiView to your project. Create a navigation p
     </div>
 
     <!-- tab: app.component.ts -->
+    import { DxStepperModule, DxButtonModule, DxMultiViewModule, DxFormModule } from 'devextreme-angular';
     // ...
     export class AppComponent {
         steps: Item[];
@@ -91,7 +90,98 @@ To get started, add Stepper and MultiView to your project. Create a navigation p
 
 ##### Vue
 
+    <!-- tab: App.vue -->
+    <template>
+        <DxStepper ... >
+            <DxStepperItem ...
+                v-for="item of steps"
+            />
+        </DxStepper>
+        <div class="content">
+            <DxMultiView ...
+                :focus-state-enabled="false"
+                :animation-enabled="false"
+                :swipe-enabled="false"
+            >
+            </DxMultiView>
+            <div class="nav-panel">
+                <div class="current-step">
+                    <span ... >
+                        Step <span class="selected-index">1</span> of <span class="step-count">{{ steps.length }}</span>
+                    </span>
+                </div>
+                <div class="nav-buttons">
+                    <DxButton ...
+                        id="prevButton"
+                        :visible="false"
+                        text="Back"
+                    />
+                    <DxButton ...
+                        id="nextButton"
+                        text="Next"
+                    />
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script setup lang="ts">
+    import DxButton from 'devextreme-vue/button';
+    import DxMultiView, { DxItem as DxMultiViewItem } from 'devextreme-vue/multi-view';
+    import DxStepper, { DxItem as DxStepperItem } from 'devextreme-vue/stepper';
+    import type { IItemProps } from 'devextreme-react/cjs/stepper';
+    import { getInitialSteps } from './data.ts';
+
+    // ...
+    const steps = ref<IItemProps[]>(getInitialSteps());
+    </script>
+
 ##### React
+
+    <!-- tab: App.tsx -->
+    import { Stepper, Item } from 'devextreme-react/stepper'
+    import type { IItemProps } from 'devextreme-react/stepper'
+    import Button from 'devextreme-react/button';
+    import { MultiView } from 'devextreme-react/multi-view';
+    import { initialSteps } from './data.ts';
+
+    // ...
+    export default function App () {
+        const [steps, setSteps] = useState<IItemProps[]>(initialSteps);
+
+        // ...
+        return (
+            <>
+                <Stepper ... >
+                    {steps.map((step) => <Item key={step.label} {...step} />)}
+                </Stepper>
+                <div className="content">
+                    <MultiView ...
+                        focusStateEnabled={false}
+                        animationEnabled={false}
+                        swipeEnabled={false}
+                    >
+                    </MultiView>
+                    <div className="nav-panel">
+                        <div className="current-step">
+                            Step <span className="selected-index">1</span> of <span className="step-count">{steps.length}</span>
+                        </div>
+                        <div className="nav-buttons">
+                            <Button ...
+                                id="prevButton"
+                                text="Back"
+                                visible={false}
+                            >
+                            <Button
+                                id="nextButton"
+                                text="Next"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </>
+        )
+    }
 
 ---
 
@@ -146,5 +236,127 @@ Configure forms for each step with MultiView **items[]**.[template](/Documentati
     function getConfirmationTemplate() {
         // Configure the form
     }
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <!-- ... -->
+    <div class="content">
+        <dx-multi-view ... >
+            <dxi-multi-view-item>
+                <div *dxTemplate>
+                    <dates-form ... ></dates-form>
+                </div>
+            </dxi-multi-view-item>
+            <!-- Configure the rest of the forms -->
+        </dx-multi-view>
+        <!-- ... -->
+    </div>
+
+    <!-- tab: app.component.ts -->
+    // ...
+    import { DatesFormComponent } from "./dates-form/dates-form.component";
+    import { BookingFormData } from './app.types';
+    
+    // ...
+    export class AppComponent {
+        formData: BookingFormData;
+
+        constructor(private readonly appService: AppService) {
+            // ...
+            this.formData = this.appService.getInitialFormData();
+        }
+    }
+
+    @NgModule({
+        // ...
+        declarations: [
+            // ...
+            DatesFormComponent,
+        ]
+    })
+
+    <!-- tab: dates-form.component.html -->
+    <p><!-- ... --></p>
+    <dx-form ... >
+        <dxi-form-item ... ></dxi-form-item>
+    </dx-form>
+
+This tutorial implements custom components as MultiView item templates and a custom type for form data. For more details on how this example is configured, refer to the [Stepper - Form Integration](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Stepper/FormIntegration/) demo.
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <!-- ... -->
+        <div class="content">
+            <DxMultiView ... >
+                <DxMultiViewItem>
+                    <template #default>
+                        <DatesTemplate ... />
+                    </template>
+                </DxMultiViewItem>
+                <!-- Configure the rest of the forms -->
+            </DxMultiView>
+            <!-- ... -->
+        </div>
+    </template>
+
+    <script setup lang="ts">
+    import DatesTemplate from './DatesTemplate.vue';
+
+    // ...
+    </script>
+
+    <!-- tab: DatesTemplate.vue -->
+    <template>
+        <p><!-- ... --></p>
+        <DxForm ... >
+            <DxSimpleItem ... />
+        </DxForm>
+    </template>
+
+This tutorial implements custom components as MultiView item templates and a custom type for form data. For more details on how this example is configured, refer to the [Stepper - Form Integration](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Stepper/FormIntegration/) demo.
+
+##### React
+
+    <!-- tab: App.tsx -->
+    import DatesForm from './DatesForm.tsx';
+
+    // ...
+    export default function App () {
+        const renderDatesForm = useCallback(() => {
+            return <DatesForm ... />;
+        }, [formData]);
+        
+        // ...
+        return (
+            <>
+                <!-- ... -->
+                <div className="content">
+                    <MultiView ... >
+                        <Item render={renderDatesForm} />
+                        <!-- Configure the rest of the forms -->
+                    </MultiView>
+                    <!-- ... -->
+                </div>
+            </>
+        )
+    }
+
+    <!-- tab: DatesForm.tsx -->
+    import { Form, SimpleItem } from 'devextreme-react/form';
+
+    // ...
+    const DatesForm: FC<FormProps> = memo(({ formData, validationGroup }) => (
+        <>
+            <p><!-- ... --></p>
+            <Form ... >
+                <SimpleItem ... />
+            </Form>
+        </>
+    ));
+
+This tutorial implements custom components as MultiView item templates and a custom type for form data. For more details on how this example is configured, refer to the [Stepper - Form Integration](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Stepper/FormIntegration/) demo.
 
 ---

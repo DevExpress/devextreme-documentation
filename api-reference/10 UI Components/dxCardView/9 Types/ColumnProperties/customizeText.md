@@ -28,4 +28,85 @@ The field value.
 The [formatted](/api-reference/10%20UI%20Components/dxCardView/9%20Types/ColumnProperties/format.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/columns/#format') value converted to a string.
 
 ---
-<!-- Description goes here -->
+---
+#####jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#{widgetName}Container").dx{WidgetName}({
+            // ...
+            columns: [{
+                dataField: "Temperature",
+                customizeText: function(fieldInfo) {
+                    return fieldInfo.value + " &deg;C";
+                }
+            }]
+        });
+    });
+
+#####Angular
+
+    <!-- tab: app.component.html -->
+    <dx-{widget-name} ... >
+       <dxi-{widget-name}-column
+           dataField="Temperature"
+           [customizeText]="customizeText"
+       ></dxi-{widget-name}-column>
+    </dx-{widget-name}>
+
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+    export class AppComponent {
+        customizeText(fieldInfo) {
+            return fieldInfo.value + " &deg;C";
+        }
+    }
+
+#####Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ... >
+            <DxColumn
+                data-field="Temperature" 
+                :customize-text="customizeText"
+            />
+        </Dx{WidgetName}>
+    </template>
+
+    <script setup lang="ts">
+    import 'devextreme/dist/css/dx.light.css';
+    import { Dx{WidgetName}, DxColumn } from "devextreme-vue/{widget-name}";
+
+    const customizeText(fieldInfo) {
+        return fieldInfo.value + " &deg;C";
+    }
+    </script>
+
+#####React
+
+    <!-- tab: App.tsx -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.light.css';
+    import {WidgetName}, { Column } from "devextreme-react/{widget-name}";
+    
+    function App() {
+        customizeText = (fieldInfo) => {
+            return fieldInfo.value + " &deg;C";
+        }
+        return (
+            <{WidgetName} ... >
+                <Column dataField="Temperature" customizeText={customizeText} />
+            </{WidgetName}>
+        );
+    }
+    export default App;
+
+---

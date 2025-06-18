@@ -19,6 +19,7 @@ To get started, add Stepper and MultiView to your project. Create a navigation p
 
     <!-- tab: index.js -->
     const stepper = $('#stepper').dxStepper({
+        // ...
         items: steps,
     }).dxStepper('instance');
 
@@ -79,6 +80,7 @@ To get started, add Stepper and MultiView to your project. Create a navigation p
 
     <!-- tab: app.component.ts -->
     import { DxStepperModule, DxButtonModule, DxMultiViewModule, DxFormModule } from 'devextreme-angular';
+    import { AppService } from './app.service';
     // ...
     export class AppComponent {
         steps: Item[];
@@ -187,11 +189,11 @@ To get started, add Stepper and MultiView to your project. Create a navigation p
 
 The "Back" button is initially hidden. This tutorial implements logic that shows the button on the second step of the wizard later (see [Synchronize Steps and Navigation Panel](/Documentation/Guide/UI_Components/Stepper/Implement_a_Wizard/#Synchronize_Steps_and_Navigation_Panel)).
 
-Configure forms for each step with MultiView **items[]**.[template](/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/items/#template):
-
 ---
 
 ##### jQuery
+
+Configure forms for each step with MultiView **items[]**.[template](/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/items/#template):
 
     <!-- tab: index.js -->
     const multiViewItems = [
@@ -238,6 +240,8 @@ Configure forms for each step with MultiView **items[]**.[template](/Documentati
     }
 
 ##### Angular
+
+Configure forms for each step with MultiView **items[]**.[template](/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/items/#template):
 
     <!-- tab: app.component.html -->
     <!-- ... -->
@@ -286,6 +290,8 @@ This tutorial implements custom components as MultiView item templates and a cus
 
 ##### Vue
 
+Configure forms for each step with MultiView **items[]**.[template](/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/items/#template):
+
     <!-- tab: App.vue -->
     <template>
         <!-- ... -->
@@ -319,6 +325,8 @@ This tutorial implements custom components as MultiView item templates and a cus
 This tutorial implements custom components as MultiView item templates and a custom type for form data. For more details on how this example is configured, refer to the [Stepper - Form Integration](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Stepper/FormIntegration/) demo.
 
 ##### React
+
+Configure forms for each step with MultiView **items[]**.[render](/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/items/#render):
 
     <!-- tab: App.tsx -->
     import DatesForm from './DatesForm.tsx';

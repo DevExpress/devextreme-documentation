@@ -3,7 +3,7 @@
 
 ##### jQuery
 
-To synchronize the **selectedIndex** properties of Stepper and MultiView, create a new function, `setSelectedIndex`. Call it in the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#onSelectionChanged) function of Stepper and the [onClick]() functions of both navigation buttons:
+To synchronize the **selectedIndex** properties of Stepper and MultiView, create a new function, `setSelectedIndex`. Call it in the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#onSelectionChanged) handler of Stepper and the [onClick]() handlers of both navigation buttons:
 
     <!-- tab: index.js -->
     const stepper = $('#stepper').dxStepper({
@@ -348,7 +348,7 @@ To learn how to disable Stepper interactions, refer to the [Configure a Readonly
 
 ##### React
 
-To synchronize the **selectedIndex** properties of Stepper and MultiView, define a state variable (`selectedIndex`) using the `useState` hook in the `App` function. In the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#onSelectionChanged) event handler of Stepper, set the `selectedIndex` state variable to [SelectionChangedEvent](/Documentation/ApiReference/UI_Components/dxStepper/Types/SelectionChangedEvent/).**component**.**option('selectedIndex')**. Assign the [selectedIndex](/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/#selectedIndex) property of MultiView to the `selectedIndex` state variable.  
+To synchronize the **selectedIndex** properties of Stepper and MultiView, define a state variable, `selectedIndex`, using the `useState` hook. In the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#onSelectionChanged) handler of Stepper, set the `selectedIndex` state variable to the component's [selectedIndex](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#selectedIndex) value. Assign the state variable to the [selectedIndex](/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/#selectedIndex) property of MultiView.
 
     <!-- tab: App.tsx -->
     // ...

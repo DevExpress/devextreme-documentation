@@ -16864,9 +16864,6 @@
     "dxRangeSelectorOptions.behavior.animationEnabled": {
       "vue": "animation-enabled"
     },
-    "dxRangeSelectorOptions.behavior.callValueChanged": {
-      "vue": "call-value-changed"
-    },
     "dxRangeSelectorOptions.behavior.manualRangeSelectionEnabled": {
       "vue": "manual-range-selection-enabled"
     },
@@ -21231,9 +21228,6 @@
     },
     "enums.ValueAxisVisualRangeUpdateMode": {
       "vue": "value-axis-visual-range-update-mode"
-    },
-    "enums.ValueChangedCallMode": {
-      "vue": "value-changed-call-mode"
     },
     "enums.ValueErrorBarDisplayMode": {
       "vue": "value-error-bar-display-mode"

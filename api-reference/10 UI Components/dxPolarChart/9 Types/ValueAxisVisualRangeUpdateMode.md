@@ -2,7 +2,7 @@
 id: Enums.ValueAxisVisualRangeUpdateMode
 acceptValues: 'auto' | 'keep' | 'reset'
 type: Union
-references: viz/polar_chart:ValueAxis.visualRangeUpdateMode
+references: viz/chart:ValueAxis.visualRangeUpdateMode|viz/polar_chart:ValueAxis.visualRangeUpdateMode
 ---
 ---
 ##### shortDescription

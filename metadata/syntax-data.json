@@ -8180,9 +8180,6 @@
       "react": "FilterPanel",
       "vue": "DxFilterPanel"
     },
-    "dxCardViewOptions.filterSyncEnabled": {
-      "vue": "filter-sync-enabled"
-    },
     "dxCardViewOptions.filterValue": {
       "vue": "filter-value"
     },

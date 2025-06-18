@@ -43,27 +43,21 @@ A template name or container.
 
     <!-- tab: app.component.html -->
     <dx-card-view ... >
-        <!-- ... -->
         <dxi-card-view-column ...
             fieldTemplate="progressTemplate"
-        />
+        ></dxi-card-view-column>
         <div *dxTemplate="let data of 'progressTemplate'">
             <dx-progress-bar
                 [value]="data.field.value"
-            />
+            ></dx-progress-bar>
         </div>
     </dx-card-view>
-
-    <!-- tab: app.component.ts -->
-    import { DxCardViewModule, DxProgressBarModule } from 'devextreme-angular';
-    // ...
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
         <DxCardView ... >
-            <!-- ... -->
             <DxColumn ...
                 field-template="progressTemplate"
             />
@@ -85,9 +79,8 @@ A template name or container.
 ##### React
 
     <!-- tab: App.tsx -->
-    import CardView, { Column } from 'devextreme-react/card-view';
+    import CardView, { Column, CardViewTypes } from 'devextreme-react/card-view';
     import { ProgressBar } from 'devextreme-react/progress-bar';
-    import { CardViewTypes } from "devextreme-react/card-view"
 
     function progressRender(data: CardViewTypes.FieldTemplateData) {
         return (
@@ -99,7 +92,6 @@ A template name or container.
     function App() {
         return (
             <CardView ... >
-                <!-- ... -->
                 <Column ...
                     fieldRender={progressRender}
                 />

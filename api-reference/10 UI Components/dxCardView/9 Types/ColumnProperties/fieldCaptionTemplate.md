@@ -29,8 +29,8 @@ A template name or container.
             // ...
             fieldCaptionTemplate(data) {
                 return $('<div>')
-                    .addClass("dx-icon-errorcircle")
                     .append(
+                        $('<i>').addClass("dx-icon-errorcircle"),
                         $('<span>').text(data.field.column.caption)
                     )
             },
@@ -41,14 +41,11 @@ A template name or container.
 
     <!-- tab: app.component.html -->
     <dx-card-view ... >
-        <!-- ... -->
         <dxi-card-view-column ...
             fieldCaptionTemplate="captionTemplate"
-        />
-        <div
-            *dxTemplate="let data of 'captionTemplate'"
-            class="dx-icon-errorcircle"
-        >
+        ></dxi-card-view-column>
+        <div *dxTemplate="let data of 'captionTemplate'">
+            <i class="dx-icon-errorcircle"></i>
             <span>{{ data.field.column.caption }}</span>
         </div>
     </dx-card-view>
@@ -58,12 +55,12 @@ A template name or container.
     <!-- tab: App.vue -->
     <template>
         <DxCardView ... >
-            <!-- ... -->
             <DxColumn ...
                 field-caption-template="captionTemplate"
             />
             <template #captionTemplate="{ data }">
-                <div class="dx-icon-errorcircle">
+                <div>
+                    <i class="dx-icon-errorcircle"></i>
                     <span>{{ data.field.column.caption }}</span>
                 </div>
             </template>
@@ -73,11 +70,12 @@ A template name or container.
 ##### React
 
     <!-- tab: App.tsx -->
-    import { CardViewTypes } from "devextreme-react/card-view"
+    import CardView, { CardViewTypes } from "devextreme-react/card-view"
     
     function captionRender(data: CardViewTypes.FieldTemplateData) {
         return (
-            <div class="dx-icon-errorcircle">
+            <div>
+                <i class="dx-icon-errorcircle"></i>
                 <span>{data.field.column.caption}</span>
             </div>
         )
@@ -87,7 +85,6 @@ A template name or container.
     function App() {
         return (
             <CardView ... >
-                <!-- ... -->
                 <Column ...
                     fieldCaptionRender={captionRender}
                 />

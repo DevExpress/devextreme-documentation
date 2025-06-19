@@ -23,7 +23,6 @@ A template name or container.
 ##### jQuery
 
     <!-- tab: index.js -->
-    <!-- tab: index.js -->
     $(#dxCardView).dxCardView({
         // ...
         headerPanel: {

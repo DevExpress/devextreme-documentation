@@ -1,4 +1,4 @@
-Stepper can be used with [Form](/Documentation/Guide/UI_Components/Form/Overview/) and [MultiView](/Documentation/Guide/UI_Components/MultiView/Overview/) components to implement a wizard-like application.
+This tutorial demonstrates one of the approaches of creating wizard-like applications with Stepper. The created application integrates the [Form](/Documentation/Guide/UI_Components/Form/Overview/) and [MultiView](/Documentation/Guide/UI_Components/MultiView/Overview/) components.
 
 This wizard includes three key parts:
 

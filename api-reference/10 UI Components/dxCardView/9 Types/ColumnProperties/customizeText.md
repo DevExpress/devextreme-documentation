@@ -85,7 +85,7 @@ The [formatted](/api-reference/10%20UI%20Components/dxCardView/9%20Types/ColumnP
     import 'devextreme/dist/css/dx.light.css';
     import { Dx{WidgetName}, DxColumn } from "devextreme-vue/{widget-name}";
 
-    const customizeText(fieldInfo) {
+    function customizeText(fieldInfo) {
         return fieldInfo.value + " °C";
     }
     </script>
@@ -97,10 +97,11 @@ The [formatted](/api-reference/10%20UI%20Components/dxCardView/9%20Types/ColumnP
     import 'devextreme/dist/css/dx.light.css';
     import {WidgetName}, { Column } from "devextreme-react/{widget-name}";
     
+    const customizeText = (fieldInfo) => {
+        return fieldInfo.value + " °C";
+    }
+
     function App() {
-        customizeText = (fieldInfo) => {
-            return fieldInfo.value + " °C";
-        }
         return (
             <{WidgetName} ... >
                 <Column dataField="Temperature" customizeText={customizeText} />

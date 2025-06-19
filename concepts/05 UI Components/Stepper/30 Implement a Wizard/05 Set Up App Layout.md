@@ -1,4 +1,4 @@
-To get started, add Stepper and MultiView to your project. Create a navigation panel by adding a `<div>` element for the active step indicator and two [Button](/Documentation/Guide/UI_Components/Button/Overview/) components to a container:
+To get started, add Stepper and MultiView to your project. Create a navigation panel by adding a `<div>` element for the active step caption and two [Button](/Documentation/Guide/UI_Components/Button/Overview/) components to a container:
 
 ---
 

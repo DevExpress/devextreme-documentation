@@ -1,4 +1,4 @@
-To configure validation, assign [validation groups](/Documentation/ApiReference/UI_Components/dxValidationGroup/) and specify [validation rules](/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/) in each MultiView form:
+To configure validation, assign [validation groups](/Documentation/ApiReference/UI_Components/dxValidationGroup/) and specify [validation rules](/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/) in each MultiView form that requires validation:
 
 ---
 

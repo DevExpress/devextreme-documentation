@@ -4,7 +4,7 @@ This wizard includes three key parts:
 
 - The Stepper component.
 - Step content where the MultiView component shows content for each step. Every view with input fields contains a Form.
-- A navigation panel with an active step indicator ("Step 1 of 5") and buttons for moving between steps ("Next" and "Back").
+- A navigation panel with an active step caption ("Step 1 of 5") and buttons for moving between steps ("Next" and "Back").
 
 Image, TBA 
 

@@ -24,7 +24,6 @@ To configure validation, assign [validation groups](/Documentation/ApiReference/
 ##### Angular
 
     <!-- tab: dates-form.component.html -->
-    <!-- ... -->
     <dx-form ... 
         [validationGroup]="validationGroup"
     >
@@ -40,7 +39,6 @@ To configure validation, assign [validation groups](/Documentation/ApiReference/
     }
 
     <!-- tab: app.component.html -->
-    <!-- ... -->
     <div class="content">
         <dx-multi-view ... >
             <dxi-multi-view-item>
@@ -50,9 +48,7 @@ To configure validation, assign [validation groups](/Documentation/ApiReference/
                     ></dates-form>
                 </div>
             </dxi-multi-view-item>
-            <!-- ... -->
         </dx-multi-view>
-        <!-- ... -->
     </div>
 
     <!-- tab: app.component.ts -->
@@ -65,7 +61,6 @@ To configure validation, assign [validation groups](/Documentation/ApiReference/
 
     <!-- tab: DatesTemplate.vue -->
     <template>
-        <!-- ... -->
         <DxForm ...
             :validation-group="validationGroup"
         >
@@ -90,7 +85,6 @@ To configure validation, assign [validation groups](/Documentation/ApiReference/
 
     <!-- tab: App.vue -->
     <template>
-        <!-- ... -->
         <div class="content">
             <DxMultiView ... >
                 <DxMultiViewItem>
@@ -100,9 +94,7 @@ To configure validation, assign [validation groups](/Documentation/ApiReference/
                         />
                     </template>
                 </DxMultiViewItem>
-                <!-- ... -->
             </DxMultiView>
-            <!-- ... -->
         </div>
     </template>
 
@@ -120,7 +112,6 @@ To configure validation, assign [validation groups](/Documentation/ApiReference/
     // ...
     const DatesForm: FC<FormProps> = memo(({ formData, validationGroup }) => (
         <>
-            <p><!-- ... --></p>
             <Form ...
                 validationGroup={validationGroup}
             >
@@ -202,7 +193,6 @@ This tutorial validates steps only when users move forward. If a step fails vali
     <dx-stepper ...
         (onSelectionChanging)="onSelectionChanging($event)"
     >
-        <!-- ... -->
     </dx-stepper>
 
     <!-- tab: app.component.ts -->
@@ -265,9 +255,7 @@ This tutorial validates steps only when users move forward. If a step fails vali
         <DxStepper ...
             @selection-changing="onSelectionChanging"
         >
-            <!-- ... -->
         </DxStepper>
-        <!-- ... -->
     </template>
 
     <script setup lang="ts">
@@ -378,7 +366,6 @@ This tutorial validates steps only when users move forward. If a step fails vali
                 <Stepper ...
                     onSelectionChanging={onSelectionChanging}
                 >
-                    <!-- ... -->
                 </Stepper>
             </>
         )

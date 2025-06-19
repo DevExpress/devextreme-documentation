@@ -244,7 +244,6 @@ Configure forms for each step with MultiView **items[]**.[template](/Documentati
 Configure forms for each step with MultiView **items[]**.[template](/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/items/#template):
 
     <!-- tab: app.component.html -->
-    <!-- ... -->
     <div class="content">
         <dx-multi-view ... >
             <dxi-multi-view-item>
@@ -254,7 +253,6 @@ Configure forms for each step with MultiView **items[]**.[template](/Documentati
             </dxi-multi-view-item>
             <!-- Configure the rest of the forms -->
         </dx-multi-view>
-        <!-- ... -->
     </div>
 
     <!-- tab: app.component.ts -->
@@ -281,7 +279,6 @@ Configure forms for each step with MultiView **items[]**.[template](/Documentati
     })
 
     <!-- tab: dates-form.component.html -->
-    <p><!-- ... --></p>
     <dx-form ... >
         <dxi-form-item ... ></dxi-form-item>
     </dx-form>
@@ -294,7 +291,6 @@ Configure forms for each step with MultiView **items[]**.[template](/Documentati
 
     <!-- tab: App.vue -->
     <template>
-        <!-- ... -->
         <div class="content">
             <DxMultiView ... >
                 <DxMultiViewItem>
@@ -304,7 +300,6 @@ Configure forms for each step with MultiView **items[]**.[template](/Documentati
                 </DxMultiViewItem>
                 <!-- Configure the rest of the forms -->
             </DxMultiView>
-            <!-- ... -->
         </div>
     </template>
 
@@ -316,7 +311,6 @@ Configure forms for each step with MultiView **items[]**.[template](/Documentati
 
     <!-- tab: DatesTemplate.vue -->
     <template>
-        <p><!-- ... --></p>
         <DxForm ... >
             <DxSimpleItem ... />
         </DxForm>
@@ -340,13 +334,11 @@ Configure forms for each step with MultiView **items[]**.[render](/Documentation
         // ...
         return (
             <>
-                <!-- ... -->
                 <div className="content">
                     <MultiView ... >
                         <Item render={renderDatesForm} />
                         <!-- Configure the rest of the forms -->
                     </MultiView>
-                    <!-- ... -->
                 </div>
             </>
         )
@@ -358,7 +350,6 @@ Configure forms for each step with MultiView **items[]**.[render](/Documentation
     // ...
     const DatesForm: FC<FormProps> = memo(({ formData, validationGroup }) => (
         <>
-            <p><!-- ... --></p>
             <Form ... >
                 <SimpleItem ... />
             </Form>

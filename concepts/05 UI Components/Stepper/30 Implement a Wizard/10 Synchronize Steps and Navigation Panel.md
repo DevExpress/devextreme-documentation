@@ -3,7 +3,7 @@
 
 ##### jQuery
 
-To synchronize the **selectedIndex** properties of Stepper and MultiView, create a new function, `setSelectedIndex`. Call it in the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#onSelectionChanged) handler of Stepper and the [onClick]() handlers of both navigation buttons:
+To synchronize the **selectedIndex** properties of Stepper and MultiView, set them to a common value in a new function, `setSelectedIndex`. Call this function in the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#onSelectionChanged) handler of Stepper and the [onClick](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick) handlers of both navigation buttons:
 
     <!-- tab: index.js -->
     const stepper = $('#stepper').dxStepper({
@@ -49,32 +49,13 @@ To synchronize the **selectedIndex** properties of Stepper and MultiView, create
 
 `setSelectedIndex` also updates the navigation panel with `updateStepNavigationButtons` and `setCurrentStepCaption`.
 
-`setCurrentStepCaption` updates the active step indicator as users progress through the Stepper:
+On the last step, the "Next" button is changed to "Confirm". The "Confirm" button submits the form and disables user interactions with Stepper. To learn how to disable Stepper interactions, refer to the [Configure a Readonly Stepper](/Documentation/Guide/UI_Components/Stepper/Configure_a_Read-Only_Stepper/) help topic.
+
+After users submit the form, they can reset the wizard and start over.
 
     <!-- tab: index.js -->
     let confirmed = false;
 
-    function setCurrentStepCaption(index) {
-        if (confirmed) {
-            $('.current-step').empty();
-        } else if (!$('.current-step').text()) {
-            $('.current-step').append(`Step <span class="selected-index">${index + 1}</span> of ${steps.length}`);
-        } else {
-            $('.selected-index').text(index + 1);
-        }
-    }
-
-`updateStepNavigationButtons` displays the "Back" button on the second step. On the last step, the "Next" button changes to "Confirm". When clicked, the "Confirm" button does the following:
-
-- Submits the form.
-- Hides the "Back" button.
-- Hides the active step indicator.
-- Replaces "Confirm" with "Reset".
-- Disables Stepper interactions.
-
-To learn how to disable Stepper interactions, refer to the [Configure a Readonly Stepper](/Documentation/Guide/UI_Components/Stepper/Configure_a_Read-Only_Stepper/) help topic.
-
-    <!-- tab: index.js -->
     const nextButton = $('#nextButton').dxButton({
         onClick: () => {
             if (selectedIndex < steps.length - 1) {
@@ -86,6 +67,16 @@ To learn how to disable Stepper interactions, refer to the [Configure a Readonly
             }
         }
     })
+
+    function setCurrentStepCaption(index) {
+        if (confirmed) {
+            $('.current-step').empty();
+        } else if (!$('.current-step').text()) {
+            $('.current-step').append(`Step <span class="selected-index">${index + 1}</span> of ${steps.length}`);
+        } else {
+            $('.selected-index').text(index + 1);
+        }
+    }
 
     function reset() {
         confirmed = false;
@@ -125,21 +116,18 @@ To learn how to disable Stepper interactions, refer to the [Configure a Readonly
 
 ##### Angular
 
-To synchronize the **selectedIndex** properties of Stepper and MultiView, assign them to a common variable with two-way data binding syntax:
+To synchronize the **selectedIndex** properties of Stepper and MultiView, assign them to a common variable. Integrate two-way data binding syntax to synchronize Stepper [selectedIndex](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#selectedIndex) with the common variable:
 
     <!-- tab: app.component.html -->
     <dx-stepper ...
         [(selectedIndex)]="selectedIndex"
     >
-        <!-- ... -->
     </dx-stepper>
     <div class="content">
         <dx-multi-view ...
             [(selectedIndex)]="selectedIndex"
         >
-            <!-- ... -->
         </dx-multi-view>
-        <!-- ... -->
     </div>
 
     <!-- tab: app.component.ts -->
@@ -158,15 +146,9 @@ This example utilizes the `selectedIndex` variable in multiple places to impleme
 - The `onPrevButtonClick` and `onNextButtonClick` handlers move to the previous/next step by modifying `selectedIndex`.
 - The `getNextButtonText` function changes the text of the "Next" button to "Confirm" on the last step.
 
-When clicked, the "Confirm" button sets the `isConfirmed` Boolean to `true` and does the following:
+The "Confirm" button submits the form and disables user interactions with Stepper. To learn how to disable Stepper interactions, refer to the [Configure a Readonly Stepper](/Documentation/Guide/UI_Components/Stepper/Configure_a_Read-Only_Stepper/) help topic.
 
-- Submits the form.
-- Hides the "Back" button.
-- Hides the active step indicator.
-- Replaces "Confirm" with "Reset".
-- Disables Stepper interactions.
-
-To learn how to disable Stepper interactions, refer to the [Configure a Readonly Stepper](/Documentation/Guide/UI_Components/Stepper/Configure_a_Read-Only_Stepper/) help topic.
+After users submit the form, they can reset the wizard and start over.
 
     <!-- tab: app.component.html -->
     <dx-stepper ...
@@ -253,7 +235,7 @@ To learn how to disable Stepper interactions, refer to the [Configure a Readonly
 
 ##### Vue
 
-To synchronize the **selectedIndex** properties of Stepper and MultiView, assign them to a common variable using the `v-model` directive:
+To synchronize the **selectedIndex** properties of Stepper and MultiView, assign them to a common variable. Integrate the `v-model` directive to synchronize Stepper [selectedIndex](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#selectedIndex) with the common variable:
 
     <!-- tab: App.vue -->
     <template>
@@ -266,9 +248,7 @@ To synchronize the **selectedIndex** properties of Stepper and MultiView, assign
             <DxMultiView ...
                 v-model:selected-index="selectedIndex"
             >
-                <!-- ... -->
             </DxMultiView>
-            <!-- ... -->
         </div>
     </template>
 
@@ -283,15 +263,9 @@ This example utilizes the `selectedIndex` variable in multiple places to impleme
 - The `onPrevButtonClick` and `onNextButtonClick` handlers move to the previous/next step by modifying `selectedIndex`.
 - The `nextButtonText` function changes the text of the "Next" button to "Confirm" on the last step.
 
-When clicked, the "Confirm" button sets the `isConfirmed` Boolean to `true` and does the following:
+The "Confirm" button submits the form and disables user interactions with Stepper. To learn how to disable Stepper interactions, refer to the [Configure a Readonly Stepper](/Documentation/Guide/UI_Components/Stepper/Configure_a_Read-Only_Stepper/) help topic.
 
-- Submits the form.
-- Hides the "Back" button.
-- Hides the active step indicator.
-- Replaces "Confirm" with "Reset".
-- Disables Stepper interactions.
-
-To learn how to disable Stepper interactions, refer to the [Configure a Readonly Stepper](/Documentation/Guide/UI_Components/Stepper/Configure_a_Read-Only_Stepper/) help topic.
+After users submit the form, they can reset the wizard and start over.
 
     <!-- tab: App.vue -->
     <template>
@@ -366,7 +340,7 @@ To learn how to disable Stepper interactions, refer to the [Configure a Readonly
 
 ##### React
 
-To synchronize the **selectedIndex** properties of Stepper and MultiView, define a state variable, `selectedIndex`, using the `useState` hook. In the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#onSelectionChanged) handler of Stepper, set the `selectedIndex` state variable to the component's [selectedIndex](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#selectedIndex) value. Assign the state variable to the [selectedIndex](/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/#selectedIndex) property of MultiView.
+To synchronize the **selectedIndex** properties of Stepper and MultiView, update the [selectedIndex](/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/#selectedIndex) property of MultiView in the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#onSelectionChanged) handler of Stepper.
 
     <!-- tab: App.tsx -->
     // ...
@@ -384,15 +358,12 @@ To synchronize the **selectedIndex** properties of Stepper and MultiView, define
                     selectedIndex={selectedIndex}
                     onSelectionChanged={onSelectionChanged}
                 >
-                    <!-- ... -->
                 </Stepper>
                 <div className="content">
                     <MultiView ...
                         selectedIndex={selectedIndex}
                     >
-                        <!-- ... -->
                     </MultiView>
-                    <!-- ... -->
                 </div>
             </>
         )
@@ -403,15 +374,9 @@ This example utilizes the `selectedIndex` variable in multiple places to impleme
 - The `onPrevButtonClick` and `onNextButtonClick` handlers move to the previous/next step by modifying `selectedIndex`.
 - The `nextButtonText` function changes the text of the "Next" button to "Confirm" on the last step.
 
-When clicked, the "Confirm" button sets the `isConfirmed` Boolean to `true` and does the following:
+The "Confirm" button submits the form and disables user interactions with Stepper. To learn how to disable Stepper interactions, refer to the [Configure a Readonly Stepper](/Documentation/Guide/UI_Components/Stepper/Configure_a_Read-Only_Stepper/) help topic.
 
-- Submits the form.
-- Hides the "Back" button.
-- Hides the active step indicator.
-- Replaces "Confirm" with "Reset".
-- Disables Stepper interactions.
-
-To learn how to disable Stepper interactions, refer to the [Configure a Readonly Stepper](/Documentation/Guide/UI_Components/Stepper/Configure_a_Read-Only_Stepper/) help topic.
+After users submit the form, they can reset the wizard and start over.
 
     <!-- tab: App.tsx -->
     // ...

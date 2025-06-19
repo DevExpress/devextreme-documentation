@@ -36,71 +36,28 @@ A template name or container.
     const createVehicleCard = (card) => {
         const { TrademarkName, Name, CategoryName, ID } = card.data;
 
-        const cardEl = $('<div>').addClass('vehicle__card');
+        const cardEl = $('<div>');
         
         const name = `${TrademarkName} ${Name}`;
         const priceText = card.fields.find(f => f.column.dataField === 'Price')?.text;
 
-        const vehicleInfo = $('<div>')
-            .addClass('vehicle__info')
-            .append(
-                $('<div>').addClass('vehicle__name')
-                    .text(name)
-                    .attr('title', name),
-                $('<div>').addClass('vehicle__price')
-                    .text(priceText),
-                $('<div>').addClass('vehicle__type-container')
-                    .append(
-                        $('<div>').addClass('vehicle__type')
-                            .text(CategoryName)
-                    )
+        const vehicleInfo = $('<div>').append(
+                $('<div>').text(name).attr('title', name),
+                $('<div>').text(priceText),
+                $('<div>').text(CategoryName)
             )
 
-        const imageWrapper = $('<div>')
-            .addClass('vehicle__img-wrapper')
-            .append(
-                $('<img>').addClass('vehicle__img')
-                    .attr({
+        const imageWrapper = $('<div>').append(
+                $('<img>').attr({
                         src: `images/vehicles/image_${ID}.png`,
-                        alt: `${TrademarkName} ${Name}`,
+                        alt: name,
                     })
-            );
+        );
 
         cardEl.append(imageWrapper, vehicleInfo);
 
         return cardEl;
     };
-
-    <!-- tab: styles.css -->
-    .vehicle__name {
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 28px;
-        height: 28px;
-        padding: 0 12px;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-    }
-
-    .vehicle__price {
-        padding: 0 12px;
-        height: 32px;
-        font-weight: 700;
-        font-size: 24px;
-        color: var(--dx-color-primary);
-    }
-
-    .vehicle__type-container {
-        padding: 12px;
-        display: inline-block;
-    }
-
-    .vehicle__type {
-        padding: 2px 6px;
-        background-color: var(--dx-color-separator);
-        border-radius: 13px;
-    }
 
 ##### Angular
 
@@ -108,26 +65,20 @@ A template name or container.
     <dx-card-view ...
         cardTemplate="vehicleCardTemplate"
     >
-        <!-- ... -->
         <div *dxTemplate="let model of 'vehicleCardTemplate'">
             <ng-container *ngIf="model.card?.data as data">
-                <div class="vehicle__card">
-                    <div class="vehicle__img-wrapper">
-                        <img
-                            class="vehicle__img"
-                            src="images/vehicles/image_{{ data.ID }}.png"
-                            alt="{{ data.trademarkName + ' ' + data.Name }}"
-                        />
+                <div>
+                    <img
+                        src="images/vehicles/image_{{ data.ID }}.png"
+                        alt="{{ data.trademarkName + ' ' + data.Name }}"
+                    />
+                </div>
+                <div>
+                    <div title="{{ data.trademarkName + ' ' + data.Name }}">
+                        {{ data.TrademarkName + ' ' + data.Name }}
                     </div>
-                    <div class="vehicle__info">
-                        <div class="vehicle__name" title="{{ data.trademarkName + ' ' + data.Name }}">
-                            {{ data.TrademarkName + ' ' + data.Name }}
-                        </div>
-                    <div class="vehicle__price">{{ getFormattedPrice(model.card) }}</div>
-                        <div class="vehicle__type-container">
-                            <div class="vehicle__type">{{ data.CategoryName }}</div>
-                        </div>
-                    </div>
+                    <div>{{ getFormattedPrice(model.card) }}</div>
+                    <div>{{ data.CategoryName }}</div>
                 </div>
             </ng-container>
         </div>
@@ -144,43 +95,6 @@ A template name or container.
         }
     }
 
-    <!-- tab: app.component.css -->
-    .vehicle__name {
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 28px;
-        height: 28px;
-        padding: 0 12px;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-    }
-
-    .vehicle__price {
-        padding: 0 12px;
-        height: 32px;
-        font-weight: 700;
-        font-size: 24px;
-        color: var(--dx-color-primary);
-    }
-
-    .vehicle__type-container {
-        padding: 12px;
-        display: inline-block;
-    }
-
-    .vehicle__type {
-        padding: 2px 6px;
-        background-color: var(--dx-color-separator);
-        border-radius: 13px;
-    }
-
-    .vehicle__img {
-        height: 100%;
-        width: 100%;
-        object-fit: scale-down;
-    }
-
 ##### Vue
 
     <!-- tab: App.vue -->
@@ -188,39 +102,20 @@ A template name or container.
         <DxCardView ...
             card-template="cardTemplate"
         >
-            <!-- ... -->
-            <template #cardTemplate="{
-                data: {
-                    card: {
-                        data: {
-                            ID,
-                            TrademarkName,
-                            Name,
-                            CategoryName,
-                        },
-                        fields,
-                    }
-                }
-            }">
-                <div class="vehicle__card">
-                    <div class="vehicle__img-wrapper">
-                        <img class="vehicle__img"
-                            :src="`images/vehicles/image_${ID}.png`"
-                            :alt="`${TrademarkName} ${Name}`"
+            <template #cardTemplate="{ data: { card } }">
+                <div>
+                    <div>
+                        <img
+                            :src="`images/vehicles/image_${card.data.ID}.png`"
+                            :alt="`${card.data.TrademarkName} ${card.data.Name}`"
                         >
                     </div>
-                    <div class="vehicle__info">
-                        <div class="vehicle__name" :title="`${model}`">
-                            {{ TrademarkName + ' ' + Name }}
+                    <div>
+                        <div :title="`${card.data.TrademarkName} ${card.data.Name}`">
+                            {{ card.data.TrademarkName + ' ' + card.data.Name }}
                         </div>
-                        <div class="vehicle__price">
-                            {{ fields?.find(f => f.column?.dataField === 'Price')?.text }}
-                        </div>
-                        <div class="vehicle__type-container">
-                            <div class="vehicle__type">
-                                {{ CategoryName }}
-                            </div>
-                        </div>
+                        <div>{{ card.fields?.find(f => f.column?.dataField === 'Price')?.text }}</div>
+                        <div>{{ card.data.CategoryName }}</div>
                     </div>
                 </div>
             </template>
@@ -230,5 +125,42 @@ A template name or container.
 ##### React
 
     <!-- tab: App.tsx -->
+    import CardView, { CardViewTypes } from "devextreme-react/card-view"
+
+    // ...
+    function cardRender(model: CardViewTypes.CardTemplateData) {
+        const { TrademarkName, Name, CategoryName, ID } = model.card.data;
+        const name = `${TrademarkName} ${Name}`;
+        const price = model.card.fields.find(f => f.column.dataField === 'Price')?.text;
+
+        return (
+            <div>
+                <div>
+                    <img
+                        src={`images/vehicles/image_${ID}.png`}
+                        alt={name}
+                    />
+                </div>
+            <div>
+                <div title={name}>
+                    {name}
+                </div>
+                <div>
+                    {price}
+                </div>
+                <div>
+                    {CategoryName}
+                </div>
+            </div>
+        </div>
+        )
+    }
+
+    function App() {
+        return (
+            <CardView ...
+                cardRender={cardRender}
+        )
+    }
 
 ---

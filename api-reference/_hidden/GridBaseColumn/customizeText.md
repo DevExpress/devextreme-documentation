@@ -40,7 +40,7 @@ The `this` keyword refers to the column's configuration.
             columns: [{
                 dataField: "Temperature",
                 customizeText: function(cellInfo) {
-                    return cellInfo.value + " &deg;C";
+                    return cellInfo.value + " °C";
                 }
             }]
         });
@@ -67,7 +67,7 @@ The `this` keyword refers to the column's configuration.
     })
     export class AppComponent {
         customizeText(cellInfo) {
-            return cellInfo.value + " &deg;C";
+            return cellInfo.value + " °C";
         }
     }
 
@@ -116,7 +116,7 @@ The `this` keyword refers to the column's configuration.
         },
         methods: {
             customizeText(cellInfo) {
-                return cellInfo.value + " &deg;C";
+                return cellInfo.value + " °C";
             }
         }
     }
@@ -133,7 +133,7 @@ The `this` keyword refers to the column's configuration.
     
     class App extends React.Component {
         customizeText = (cellInfo) => {
-            return cellInfo.value + " &deg;C";
+            return cellInfo.value + " °C";
         }
         render() {
             return (
@@ -158,7 +158,7 @@ The `this` keyword refers to the column's configuration.
 
     <script type="text/javascript">
         function customizeText(cellInfo) {
-            return cellInfo.value + " &deg;C";
+            return cellInfo.value + " °C";
         }
     </script>
 

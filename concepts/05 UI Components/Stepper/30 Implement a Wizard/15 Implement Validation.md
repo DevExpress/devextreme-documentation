@@ -275,12 +275,6 @@ This tutorial validates steps only when users move forward. If a step fails vali
 
     // ...
     function onSelectionChanging(e: SelectionChangingEvent) {
-        if (isConfirmed.value) {
-            e.cancel = true;
-
-            return;
-        }
-
         const { component, addedItems, removedItems } = e;
         const { items = [] } = component.option();
 
@@ -330,12 +324,6 @@ This tutorial validates steps only when users move forward. If a step fails vali
     // ...
     export default function App () {
         const onSelectionChanging = useCallback((args: SelectionChangingEvent) => {
-            if (isConfirmed) {
-                args.cancel = true;
-
-                return;
-            }
-
             const { component, addedItems, removedItems } = args;
             const { items = [] } = component.option();
 

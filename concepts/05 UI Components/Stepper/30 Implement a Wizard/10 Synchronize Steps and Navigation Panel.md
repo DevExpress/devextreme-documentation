@@ -58,7 +58,7 @@ To synchronize the **selectedIndex** properties of Stepper and MultiView, create
         if (confirmed) {
             $('.current-step').empty();
         } else if (!$('.current-step').text()) {
-            $('.current-step').append(`Step <span class="selected-index">${index + 1}</span> of <span class="step-count">${steps.length}</span>`);
+            $('.current-step').append(`Step <span class="selected-index">${index + 1}</span> of ${steps.length}`);
         } else {
             $('.selected-index').text(index + 1);
         }
@@ -169,11 +169,14 @@ When clicked, the "Confirm" button sets the `isConfirmed` Boolean to `true` and 
 To learn how to disable Stepper interactions, refer to the [Configure a Readonly Stepper](/Documentation/Guide/UI_Components/Stepper/Configure_a_Read-Only_Stepper/) help topic.
 
     <!-- tab: app.component.html -->
-    <!-- ... -->
+    <dx-stepper ...
+        [focusStateEnabled]="!isStepperReadonly"
+        [class.readonly]="isStepperReadonly"
+    ></dx-stepper>
     <div class="nav-panel">
         <div class="current-step">
             <span *ngIf="!isConfirmed">
-                Step <span class="selected-index">{{ selectedIndex + 1 }}</span> of <span class="step-count">{{ steps.length }}</span>
+                Step <span class="selected-index">{{ selectedIndex + 1 }}</span> of {{ steps.length }}
             </span>
         </div>
         <div class="nav-buttons">
@@ -196,10 +199,12 @@ To learn how to disable Stepper interactions, refer to the [Configure a Readonly
     export class AppComponent {
         // ...
         isConfirmed: boolean;
+        isStepperReadonly: boolean;
 
         constructor(private readonly appService: AppService) {
             // ...
             this.isConfirmed = false;
+            this.isStepperReadonly = false;
         }
 
         getNextButtonText() {
@@ -221,11 +226,13 @@ To learn how to disable Stepper interactions, refer to the [Configure a Readonly
         reset(){
             this.isConfirmed = false;
             this.selectedIndex = 0;
+            this.isStepperReadonly = false;
             // ...
         }
 
         confirm(){
             this.isConfirmed = true;
+            this.isStepperReadonly = true;
         }
 
         onNextButtonClick() {
@@ -237,6 +244,11 @@ To learn how to disable Stepper interactions, refer to the [Configure a Readonly
                 this.confirm();
             }
         }
+    }
+
+    <!-- tab: app.component.css -->
+    ::ng-deep .readonly {
+        pointer-events: none;
     }
 
 ##### Vue
@@ -283,11 +295,14 @@ To learn how to disable Stepper interactions, refer to the [Configure a Readonly
 
     <!-- tab: App.vue -->
     <template>
-        <!-- ... -->
+        <DxStepper ...
+            :focus-state-enabled="!isStepperReadonly"
+            :class="{ readonly: isStepperReadonly }"
+        />
         <div class="nav-panel">
             <div class="current-step">
                 <span v-if="!isConfirmed">
-                    Step <span class="selected-index">{{ selectedIndex + 1 }}</span> of <span class="step-count">{{ steps.length }}</span>
+                    Step <span class="selected-index">{{ selectedIndex + 1 }}</span> of {{ steps.length }}
                 </span>
             </div>
             <div class="nav-buttons">
@@ -308,6 +323,7 @@ To learn how to disable Stepper interactions, refer to the [Configure a Readonly
     <script setup lang="ts">
     // ...
     const isConfirmed = ref(false);
+    const isStepperReadonly = ref(false);
 
     const nextButtonText = computed(() => {
         if (selectedIndex.value < steps.value.length - 1) {
@@ -328,11 +344,13 @@ To learn how to disable Stepper interactions, refer to the [Configure a Readonly
     const reset = () => {
         isConfirmed.value = false;
         selectedIndex.value = 0;
+        isStepperReadonly.value = false;
         // ...
     };
 
     const confirm = () => {
         isConfirmed.value = true;
+        isStepperReadonly.value = true;
     };
 
     function onNextButtonClick() {
@@ -399,6 +417,7 @@ To learn how to disable Stepper interactions, refer to the [Configure a Readonly
     // ...
     export default function App () {
         const [isConfirmed, setIsConfirmed] = useState(false);
+        const [isStepperReadonly, setIsStepperReadonly] = useState(false);
 
         const nextButtonText = useMemo(() => {
             if (selectedIndex < steps.length - 1) {
@@ -422,12 +441,13 @@ To learn how to disable Stepper interactions, refer to the [Configure a Readonly
 
         const onConfirm = useCallback(() => {
             setIsConfirmed(true);
-            // ...
+            setIsStepperReadonly(true)
         }, []);
 
         const onReset = useCallback(() => {
             setIsConfirmed(false);
             setSelectedIndex(0);
+            setIsStepperReadonly(false);
             // ...
         }, []);
 
@@ -444,12 +464,15 @@ To learn how to disable Stepper interactions, refer to the [Configure a Readonly
         // ...
         return (
             <>
-                <!-- ... -->
+                <Stepper
+                    className={isStepperReadonly ? 'readonly' : ''}
+                    focusStateEnabled={!isStepperReadonly}
+                />
                 <div className="nav-panel">
                     <div className="current-step">
                         {!isConfirmed && (
                         <>
-                            Step <span className="selected-index">{selectedIndex + 1}</span> of <span className="step-count">{steps.length}</span>
+                            Step <span className="selected-index">{selectedIndex + 1}</span> of {steps.length}
                         </>
                         )}
                     </div>
@@ -469,6 +492,11 @@ To learn how to disable Stepper interactions, refer to the [Configure a Readonly
                 </div>
             </>
         )
+    }
+
+    <!-- tab: styles.css -->
+    .readonly {
+        pointer-events: none;
     }
 
 ---

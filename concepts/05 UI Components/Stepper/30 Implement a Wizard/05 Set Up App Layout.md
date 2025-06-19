@@ -9,7 +9,7 @@ To get started, add Stepper and MultiView to your project. Create a navigation p
     <div class="content">
         <div id="stepContent"></div>
         <div class="nav-panel">
-            <div class="current-step"> Step <span class="selected-index">1</span> of 5<span class="step-count"></span></div>
+            <div class="current-step"> Step <span class="selected-index">1</span> of 5</span></div>
             <div class="nav-buttons">
                 <div id="prevButton"></div>
                 <div id="nextButton"></div>
@@ -59,7 +59,7 @@ To get started, add Stepper and MultiView to your project. Create a navigation p
         <div class="nav-panel">
             <div class="current-step">
                 <span ... >
-                    Step <span class="selected-index">1</span> of <span class="step-count">{{ steps.length }}</span>
+                    Step <span class="selected-index">1</span> of {{ steps.length }}
                 </span>
             </div>
             <div class="nav-buttons">
@@ -109,7 +109,7 @@ To get started, add Stepper and MultiView to your project. Create a navigation p
             <div class="nav-panel">
                 <div class="current-step">
                     <span ... >
-                        Step <span class="selected-index">1</span> of <span class="step-count">{{ steps.length }}</span>
+                        Step <span class="selected-index">1</span> of {{ steps.length }}
                     </span>
                 </div>
                 <div class="nav-buttons">
@@ -166,7 +166,7 @@ To get started, add Stepper and MultiView to your project. Create a navigation p
                     </MultiView>
                     <div className="nav-panel">
                         <div className="current-step">
-                            Step <span className="selected-index">1</span> of <span className="step-count">{steps.length}</span>
+                            Step <span className="selected-index">1</span> of {steps.length}
                         </div>
                         <div className="nav-buttons">
                             <Button ...

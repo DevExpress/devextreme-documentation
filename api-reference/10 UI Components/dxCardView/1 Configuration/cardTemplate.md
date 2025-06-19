@@ -100,9 +100,9 @@ A template name or container.
     <!-- tab: App.vue -->
     <template>
         <DxCardView ...
-            card-template="cardTemplate"
+            card-template="vehicleCardTemplate"
         >
-            <template #cardTemplate="{ data: { card } }">
+            <template #vehicleCardTemplate="{ data: { card } }">
                 <div>
                     <div>
                         <img
@@ -128,7 +128,7 @@ A template name or container.
     import CardView, { CardViewTypes } from "devextreme-react/card-view"
 
     // ...
-    function cardRender(model: CardViewTypes.CardTemplateData) {
+    function vehicleCardRender(model: CardViewTypes.CardTemplateData) {
         const { TrademarkName, Name, CategoryName, ID } = model.card.data;
         const name = `${TrademarkName} ${Name}`;
         const price = model.card.fields.find(f => f.column.dataField === 'Price')?.text;
@@ -141,25 +141,21 @@ A template name or container.
                         alt={name}
                     />
                 </div>
-            <div>
-                <div title={name}>
-                    {name}
-                </div>
                 <div>
-                    {price}
-                </div>
-                <div>
-                    {CategoryName}
+                    <div title={name}>{name}</div>
+                    <div>{price}</div>
+                    <div>{CategoryName}</div>
                 </div>
             </div>
-        </div>
         )
     }
 
     function App() {
         return (
             <CardView ...
-                cardRender={cardRender}
+                cardRender={vehicleCardRender}
+            >
+            </CardView>
         )
     }
 

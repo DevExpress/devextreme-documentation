@@ -198,6 +198,5 @@ Specify the **argumentAxis**.[aggregationGroupWidth](/api-reference/10%20UI%20Co
 
     ---
 
-- **Categories**        
-Aggregation by category can be applied when the axis displays discrete data and arguments can be repeated. These arguments are displayed as a single point. 
-You do not need to specify any additional properties to set up aggregation by categories.
+- **Categories**    
+You can enable aggregation by category only for discrete argument axes. Group data before assigning to the component's [dataSource](/Documentation/ApiReference/UI_Components/dxChart/Configuration/#dataSource) to aggregate it by category. You do not need to specify any additional properties to set up aggregation by category.

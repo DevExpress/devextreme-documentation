@@ -7,4 +7,4 @@ When you need to handle any click on a map regardless of whether it was on an ar
 		}
 	};
 
-The X and Y coordinates are calculated relatively to the client area, i.e., the UI component container. To convert them into map coordinates, use the [convertCoordinates(x,y)](/api-reference/10%20UI%20Components/dxVectorMap/3%20Methods/convertCoordinates(x_y).md '/Documentation/ApiReference/UI_Components/dxVectorMap/Methods/#convertCoordinatesx_y') method.
+The X and Y coordinates are calculated relatively to the client area, i.e., the UI component container.

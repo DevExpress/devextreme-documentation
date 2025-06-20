@@ -20,5 +20,4 @@ The selected range (initial or current). Equals the entire [scale](/api-referenc
 #####See Also#####
 - [selectedRangeUpdateMode](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/selectedRangeUpdateMode.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/#selectedRangeUpdateMode')
 - [onValueChanged](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/#onValueChanged')
-- **behavior**.[callValueChanged](/api-reference/10%20UI%20Components/dxRangeSelector/1%20Configuration/behavior/callValueChanged.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/behavior/#callValueChanged')
 - [getValue()](/api-reference/10%20UI%20Components/dxRangeSelector/3%20Methods/getValue().md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Methods/#getValue') | [setValue(value)](/api-reference/10%20UI%20Components/dxRangeSelector/3%20Methods/setValue(value).md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Methods/#setValuevalue')

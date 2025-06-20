@@ -133,7 +133,7 @@ Use deferred mode to increase the DataGrid's performance when [selecting multipl
 [note]
 
 - You should specify the **key** property of the [Store](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores') underlying the [dataSource](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource') to ensure that deferred selection works properly.
-- When **deferred** is enabled, "Select all" checkboxes do not automatically update when users select or deselect all DataGrid items manually.
+- When **deferred** is enabled, "Select all" checkboxes do not automatically update when users select or deselect all DataGrid items.
 
 [/note]
 

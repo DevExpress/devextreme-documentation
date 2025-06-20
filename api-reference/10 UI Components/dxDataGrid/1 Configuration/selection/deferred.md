@@ -12,8 +12,8 @@ Consider making selection deferred if the UI component needs to operate a large 
 
 [note]
 
-- Deferred selection is unsupported when [selectAllMode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/selection/selectAllMode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#selectAllMode') is *"page"*.
-- When **deferred** is enabled, "Select all" checkboxes do not automatically update when users select or deselect all DataGrid items manually.
+- Deferred selection is not supported when [selectAllMode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/selection/selectAllMode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#selectAllMode') is *"page"*.
+- When **deferred** is enabled, "Select all" checkboxes do not automatically update when users select or deselect all DataGrid items.
 
 [/note]
 

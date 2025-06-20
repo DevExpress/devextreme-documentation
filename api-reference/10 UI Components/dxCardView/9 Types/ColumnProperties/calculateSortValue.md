@@ -16,7 +16,7 @@ The value to be used in sorting.
 The `this` keyword refers to the column's configuration.
 
 ---
-This property requires the name of the [data source field]({basewidgetpath}/Configuration/#dataSource) used for sorting this column or a function to obtain those values. The following code snippet demonstrates the first approach:
+This property requires the name of the [data source field](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource') used for sorting this column or a function to obtain those values. The following code snippet demonstrates the first approach:
 
 ---
 ##### jQuery

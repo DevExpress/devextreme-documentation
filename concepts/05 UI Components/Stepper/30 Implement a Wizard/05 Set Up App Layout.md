@@ -1,4 +1,4 @@
-To get started, add a Stepper and a MultiView to your project. Create a navigation panel - a container with child items. Child items are a `<div>` element that displays the active step caption and two [Button](/Documentation/Guide/UI_Components/Button/Overview/) components:
+To get started, add a Stepper and a MultiView to your project. Create a navigation panel - a container with child items. Child items are a `<div>` element that displays the active step caption and two [Buttons](/Documentation/Guide/UI_Components/Button/Overview/):
 
 ---
 

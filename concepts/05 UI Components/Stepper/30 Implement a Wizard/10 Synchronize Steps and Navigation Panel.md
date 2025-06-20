@@ -49,7 +49,7 @@ To synchronize the **selectedIndex** properties of Stepper and MultiView, set th
 
 `setSelectedIndex` also updates the navigation panel. It calls the following methods: `updateStepNavigationButtons` and `setCurrentStepCaption`.
 
-On the last step, the "Next" button is changes to "Confirm". The "Confirm" button submits the form and disables user interactions with the Stepper. To learn how to disable Stepper interactions, refer to the following help topic: [Configure a Readonly Stepper](/Documentation/Guide/UI_Components/Stepper/Configure_a_Read-Only_Stepper/).
+On the last step, the "Next" button changes to "Confirm". The "Confirm" button submits the form and disables user interactions with the Stepper. For instructions on how to disable Stepper interactions, refer to the following help topic: [Configure a Readonly Stepper](/Documentation/Guide/UI_Components/Stepper/Configure_a_Read-Only_Stepper/).
 
 After users submit the form, they can reset the wizard and start over.
 
@@ -146,7 +146,7 @@ This example utilizes the `selectedIndex` variable to implement navigation panel
 - The `onPrevButtonClick` and `onNextButtonClick` handlers move to the previous/next step by modifying `selectedIndex`.
 - The `getNextButtonText` function changes the text of the "Next" button to "Confirm" on the last step.
 
-The "Confirm" button submits the form and disables user interactions with the Stepper. To learn how to disable Stepper interactions, refer to the following help topic: [Configure a Readonly Stepper](/Documentation/Guide/UI_Components/Stepper/Configure_a_Read-Only_Stepper/).
+The "Confirm" button submits the form and disables user interactions with the Stepper. For details on how to disable Stepper interactions, refer to the following help topic: [Configure a Readonly Stepper](/Documentation/Guide/UI_Components/Stepper/Configure_a_Read-Only_Stepper/).
 
 After users submit the form, they can reset the wizard and start over.
 
@@ -263,7 +263,7 @@ This example utilizes the `selectedIndex` variable to implement navigation panel
 - The `onPrevButtonClick` and `onNextButtonClick` handlers move to the previous/next step by modifying `selectedIndex`.
 - The `nextButtonText` function changes the text of the "Next" button to "Confirm" on the last step.
 
-The "Confirm" button submits the form and disables user interactions with the Stepper. To learn how to disable Stepper interactions, refer to the following help topic [Configure a Readonly Stepper](/Documentation/Guide/UI_Components/Stepper/Configure_a_Read-Only_Stepper/).
+The "Confirm" button submits the form and disables user interactions with the Stepper. For details on how to disable Stepper interactions, refer to the following help topic [Configure a Readonly Stepper](/Documentation/Guide/UI_Components/Stepper/Configure_a_Read-Only_Stepper/).
 
 After users submit the form, they can reset the wizard and start over.
 

@@ -47,9 +47,9 @@ To synchronize the **selectedIndex** properties of Stepper and MultiView, set th
         }
     }
 
-`setSelectedIndex` also updates the navigation panel with `updateStepNavigationButtons` and `setCurrentStepCaption`.
+`setSelectedIndex` also updates the navigation panel. It calls the following methods: `updateStepNavigationButtons` and `setCurrentStepCaption`.
 
-On the last step, the "Next" button is changed to "Confirm". The "Confirm" button submits the form and disables user interactions with Stepper. To learn how to disable Stepper interactions, refer to the [Configure a Readonly Stepper](/Documentation/Guide/UI_Components/Stepper/Configure_a_Read-Only_Stepper/) help topic.
+On the last step, the "Next" button is changes to "Confirm". The "Confirm" button submits the form and disables user interactions with the Stepper. To learn how to disable Stepper interactions, refer to the following help topic: [Configure a Readonly Stepper](/Documentation/Guide/UI_Components/Stepper/Configure_a_Read-Only_Stepper/).
 
 After users submit the form, they can reset the wizard and start over.
 
@@ -116,7 +116,7 @@ After users submit the form, they can reset the wizard and start over.
 
 ##### Angular
 
-To synchronize the **selectedIndex** properties of Stepper and MultiView, assign them to a common variable. Integrate two-way data binding syntax to synchronize Stepper [selectedIndex](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#selectedIndex) with the common variable:
+Use a separate variable and two-way data binding syntax to synchronize **selectedIndex** properties of Stepper and MultiView:
 
     <!-- tab: app.component.html -->
     <dx-stepper ...
@@ -141,12 +141,12 @@ To synchronize the **selectedIndex** properties of Stepper and MultiView, assign
         }
     }
 
-This example utilizes the `selectedIndex` variable in multiple places to implement navigation panel functionality:
+This example utilizes the `selectedIndex` variable to implement navigation panel functionality:
 
 - The `onPrevButtonClick` and `onNextButtonClick` handlers move to the previous/next step by modifying `selectedIndex`.
 - The `getNextButtonText` function changes the text of the "Next" button to "Confirm" on the last step.
 
-The "Confirm" button submits the form and disables user interactions with Stepper. To learn how to disable Stepper interactions, refer to the [Configure a Readonly Stepper](/Documentation/Guide/UI_Components/Stepper/Configure_a_Read-Only_Stepper/) help topic.
+The "Confirm" button submits the form and disables user interactions with the Stepper. To learn how to disable Stepper interactions, refer to the following help topic: [Configure a Readonly Stepper](/Documentation/Guide/UI_Components/Stepper/Configure_a_Read-Only_Stepper/).
 
 After users submit the form, they can reset the wizard and start over.
 
@@ -235,7 +235,7 @@ After users submit the form, they can reset the wizard and start over.
 
 ##### Vue
 
-To synchronize the **selectedIndex** properties of Stepper and MultiView, assign them to a common variable. Integrate the `v-model` directive to synchronize Stepper [selectedIndex](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#selectedIndex) with the common variable:
+Use a separate variable and the `v-model` directive to synchronize **selectedIndex** properties of Stepper and MultiView:
 
     <!-- tab: App.vue -->
     <template>
@@ -258,12 +258,12 @@ To synchronize the **selectedIndex** properties of Stepper and MultiView, assign
     // ...
     </script>
 
-This example utilizes the `selectedIndex` variable in multiple places to implement navigation panel functionality:
+This example utilizes the `selectedIndex` variable to implement navigation panel functionality:
 
 - The `onPrevButtonClick` and `onNextButtonClick` handlers move to the previous/next step by modifying `selectedIndex`.
 - The `nextButtonText` function changes the text of the "Next" button to "Confirm" on the last step.
 
-The "Confirm" button submits the form and disables user interactions with Stepper. To learn how to disable Stepper interactions, refer to the [Configure a Readonly Stepper](/Documentation/Guide/UI_Components/Stepper/Configure_a_Read-Only_Stepper/) help topic.
+The "Confirm" button submits the form and disables user interactions with the Stepper. To learn how to disable Stepper interactions, refer to the following help topic [Configure a Readonly Stepper](/Documentation/Guide/UI_Components/Stepper/Configure_a_Read-Only_Stepper/).
 
 After users submit the form, they can reset the wizard and start over.
 
@@ -340,7 +340,7 @@ After users submit the form, they can reset the wizard and start over.
 
 ##### React
 
-To synchronize the **selectedIndex** properties of Stepper and MultiView, update the [selectedIndex](/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/#selectedIndex) property of MultiView in the [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#onSelectionChanged) handler of Stepper.
+To synchronize the **selectedIndex** properties of Stepper and MultiView, update the MultiView.[selectedIndex](/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/#selectedIndex) property in the Stepper.[onSelectionChanged](/Documentation/ApiReference/UI_Components/dxStepper/Configuration/#onSelectionChanged) event handler.
 
     <!-- tab: App.tsx -->
     // ...
@@ -369,12 +369,12 @@ To synchronize the **selectedIndex** properties of Stepper and MultiView, update
         )
     }
 
-This example utilizes the `selectedIndex` variable in multiple places to implement navigation panel functionality:
+This example utilizes the `selectedIndex` variable to implement navigation panel functionality:
 
 - The `onPrevButtonClick` and `onNextButtonClick` handlers move to the previous/next step by modifying `selectedIndex`.
 - The `nextButtonText` function changes the text of the "Next" button to "Confirm" on the last step.
 
-The "Confirm" button submits the form and disables user interactions with Stepper. To learn how to disable Stepper interactions, refer to the [Configure a Readonly Stepper](/Documentation/Guide/UI_Components/Stepper/Configure_a_Read-Only_Stepper/) help topic.
+The "Confirm" button submits the form and disables user interactions with the Stepper. To learn how to disable Stepper interactions, refer to the following help topic: [Configure a Readonly Stepper](/Documentation/Guide/UI_Components/Stepper/Configure_a_Read-Only_Stepper/).
 
 After users submit the form, they can reset the wizard and start over.
 

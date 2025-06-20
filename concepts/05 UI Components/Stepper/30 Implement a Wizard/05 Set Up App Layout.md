@@ -1,4 +1,4 @@
-To get started, add Stepper and MultiView to your project. Create a navigation panel by adding a `<div>` element for the active step caption and two [Button](/Documentation/Guide/UI_Components/Button/Overview/) components to a container:
+To get started, add a Stepper and a MultiView to your project. Create a navigation panel - a container with child items. Child items are a `<div>` element that displays the active step caption and two [Button](/Documentation/Guide/UI_Components/Button/Overview/) components:
 
 ---
 
@@ -187,7 +187,7 @@ To get started, add Stepper and MultiView to your project. Create a navigation p
 
 ---
 
-The "Back" button is initially hidden. This tutorial implements logic that shows the button on the second step of the wizard later (see [Synchronize Steps and Navigation Panel](/Documentation/Guide/UI_Components/Stepper/Implement_a_Wizard/#Synchronize_Steps_and_Navigation_Panel)).
+The "Back" button is initially hidden. A later step in this tutorial implements dynamic visibility logic (see [Synchronize Steps and Navigation Panel](/Documentation/Guide/UI_Components/Stepper/Implement_a_Wizard/#Synchronize_Steps_and_Navigation_Panel)).
 
 ---
 

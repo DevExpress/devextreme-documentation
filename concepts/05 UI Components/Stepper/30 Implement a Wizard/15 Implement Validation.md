@@ -135,7 +135,7 @@ To configure validation, assign [validation groups](/Documentation/ApiReference/
 
 ---
 
-This tutorial validates steps only when users move forward. If a step fails validation, the step change is cancelled:
+This tutorial validates steps only when users move forward. If a step fails validation, navigation operation is cancelled:
 
 ---
 

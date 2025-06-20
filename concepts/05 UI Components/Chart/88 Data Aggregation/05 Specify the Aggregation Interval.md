@@ -199,4 +199,4 @@ Specify the **argumentAxis**.[aggregationGroupWidth](/api-reference/10%20UI%20Co
     ---
 
 - **Categories**    
-You can enable aggregation by category only for discrete argument axes. Group data before assigning to the component's [dataSource](/Documentation/ApiReference/UI_Components/dxChart/Configuration/#dataSource) to aggregate it by category. You do not need to specify any additional properties to set up aggregation by category.
+You can enable aggregation by category only for discrete argument axes. Group data before assigning to the component's [dataSource](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/#dataSource') to aggregate it by category. You do not need to specify any additional properties to set up aggregation by category.

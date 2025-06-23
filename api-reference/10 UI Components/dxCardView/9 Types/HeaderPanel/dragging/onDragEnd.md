@@ -5,10 +5,10 @@ default: null
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is called when the drag gesture is finished.
 
 ##### param(e): any
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ---
 <!-- Description goes here -->

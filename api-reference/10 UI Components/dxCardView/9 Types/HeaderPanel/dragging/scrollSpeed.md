@@ -5,7 +5,7 @@ default: 30
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the scrolling speed when dragging an item beyond the viewport.
 
 ---
 <!-- Description goes here -->

@@ -1,14 +1,11 @@
 ---
 id: dxTileView.Options.height
-type: Number | String | function()
+type: Number | String
 default: 500
 ---
 ---
 ##### shortDescription
 Specifies the UI component's height.
-
-##### return: Number | String
-The UI component's height.
 
 ---
 #include uiwidgets-ref-height

@@ -1,12 +1,7 @@
 ---
 id: dxResponsiveBox.Options.height
-type: Number | String | function()
+type: Number | String
 default: '100%'
----
----
-##### return: Number | String
-<!-- %return% -->
-
 ---
 
 <!-- %fullDescription% -->

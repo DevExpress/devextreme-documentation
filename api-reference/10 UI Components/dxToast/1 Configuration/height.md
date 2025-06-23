@@ -1,12 +1,7 @@
 ---
 id: dxToast.Options.height
-type: Number | String | function()
+type: Number | String
 default: 'auto'
----
----
-##### return: Number | String
-The UI component's height.
-
 ---
 
 This property accepts a value of one of the following types:

@@ -1,12 +1,7 @@
 ---
 id: dxResizable.Options.width
-type: Number | String | function()
+type: Number | String
 firedEvents: resize
----
----
-##### return: Number | String
-<!-- %return% -->
-
 ---
 
 <!-- %fullDescription% -->

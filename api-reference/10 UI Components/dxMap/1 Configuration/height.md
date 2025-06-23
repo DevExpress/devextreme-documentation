@@ -1,12 +1,7 @@
 ---
 id: dxMap.Options.height
-type: Number | String | function()
+type: Number | String
 default: 300
----
----
-##### return: Number | String
-<!-- %return% -->
-
 ---
 
 <!-- %fullDescription% -->

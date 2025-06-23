@@ -1,12 +1,9 @@
 ---
 id: BaseWidget.Options.width
-type: Number | String | function()
+type: Number | String
 hidden: 
 ---
 ---
 ##### shortDescription
-
-##### return: Number | String
-<!-- Description goes here -->
 
 ---

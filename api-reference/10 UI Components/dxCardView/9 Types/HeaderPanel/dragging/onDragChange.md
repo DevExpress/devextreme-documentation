@@ -5,7 +5,7 @@ default: null
 ---
 ---
 ##### shortDescription
-A function that is called when the dragged item's position is changed.
+A function that is called when the dragged item's position changes.
 
 ##### param(e): any
 Information about the event that caused the function's execution.

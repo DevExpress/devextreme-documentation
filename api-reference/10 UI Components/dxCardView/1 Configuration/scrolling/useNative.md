@@ -8,7 +8,7 @@ default: 'auto'
 Specifies whether CardView should use native or simulated scrolling.
 
 ---
-This property can have one of the following values:
+This property accepts one of the following values:
 
 <table class="dx-table">
     <tr>

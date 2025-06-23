@@ -2,7 +2,7 @@ This tutorial demonstrates how to customize FileUploader appearance.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/25_1/UIWidgets/FileUploader/Customization/index.html, /Content/Applications/25_1/UIWidgets/FileUploader/Customization/index.js, /Content/Applications/25_1/UIWidgets/FileUploader/Customization/index.css"></div>
 
-Specify the [dropZone](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#dropZone) property to integrate a custom drop zone. Use the `width` and `height` CSS styles to modify the dimensions of the dropzone. This tutorial also implements the `background-color` and `border-radius` styles:
+Specify the [dropZone](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#dropZone) property to integrate a custom drop zone. Use the `width` and `height` CSS styles to modify drop zone dimensions. This tutorial also implements the `background-color` and `border-radius` styles:
 
 ---
 
@@ -77,7 +77,7 @@ Specify the [dropZone](/Documentation/ApiReference/UI_Components/dxFileUploader/
 
 ---
 
-This tutorial places FileUploader inside the custom drop zone container:
+This tutorial places the FileUploader inside a custom drop zone container:
 
 ---
 
@@ -124,7 +124,7 @@ This tutorial places FileUploader inside the custom drop zone container:
 
 ---
 
-To center FileUploader elements inside a custom drop zone, assign the following CSS styles to the `.dx-fileuploader-input-wrapper` selector:
+To center FileUploader elements inside the drop zone, assign the following CSS styles to the `.dx-fileuploader-input-wrapper` selector:
 
     <!-- tab: styles.css -->
     .dx-fileuploader-input-wrapper {
@@ -134,7 +134,7 @@ To center FileUploader elements inside a custom drop zone, assign the following 
         transform: translate(-50%, -50%);
     }
 
-When users upload files, the component lists selected files in its container. To modify placement of this list, implement absolute positioning on the uploaded file container. Assign the following CSS styles to the `.dx-fileuploader-files-container` selector:
+When users upload files, the component lists selected files in its container. To move this list, specify absolute positioning. Assign the following CSS styles to the `.dx-fileuploader-files-container` selector:
 
     <!-- tab: styles.css -->
     .dx-fileuploader-files-container {
@@ -147,7 +147,10 @@ When users upload files, the component lists selected files in its container. To
         overflow-y: auto;
     }
 
-In this tutorial, the uploaded file container is positioned below the FileUploader with the `top: 70%` style. The `overflow-y: auto` style adds a scroll bar to the uploaded file container when items overflow the element.
+Note the following styles: 
+
+- `top: 70%`: Positions the uploaded file list container below the FileUploader.
+- `overflow-y: auto`: Adds a scroll bar to the uploaded file list container when necessary.
 
 The component's default behaviour is to upload selected files immediately. To allow users to select and upload files separately, set the [uploadMode](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadMode) property to *"useButtons"*. This creates multiple upload buttons in the FileUploader container:
 

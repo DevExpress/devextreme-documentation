@@ -5,7 +5,7 @@ default: true, false (non-touch_devices)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether a user can scroll the content with a swipe gesture. Applies only if [useNative]({basewidgetpath}/Configuration/scrolling/#useNative) is `false`.
 
 ---
 <!-- Description goes here -->

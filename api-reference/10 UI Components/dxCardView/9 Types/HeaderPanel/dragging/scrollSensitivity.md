@@ -5,7 +5,7 @@ default: 60
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the distance in pixels from the edge of viewport at which scrolling should start.
 
 ---
 <!-- Description goes here -->

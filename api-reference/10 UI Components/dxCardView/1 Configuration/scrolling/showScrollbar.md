@@ -5,7 +5,7 @@ default: 'onScroll', 'onHover' (desktop)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies when to display scroll bars. Applies only if [useNative]({basewidgetpath}/Configuration/scrolling/#useNative) is `false`.
 
 ---
 <!-- Description goes here -->

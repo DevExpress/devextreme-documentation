@@ -1,3 +1,3 @@
 The module that provides Knockout integration.
 
-    require("integration/knockout");
+    require("devextreme/integration/knockout");

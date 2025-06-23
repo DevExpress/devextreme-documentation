@@ -1,12 +1,7 @@
 ---
 id: dxToast.Options.width
-type: Number | String | function()
+type: Number | String
 default: '80vw', '100vw' (phones_on_Android), 'auto' (Android)
----
----
-##### return: Number | String
-The UI component's width.
-
 ---
 
 This property accepts a value of one of the following types:

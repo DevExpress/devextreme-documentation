@@ -8308,6 +8308,18 @@
       "react": "Scrolling",
       "vue": "DxScrolling"
     },
+    "dxCardViewOptions.scrolling.scrollByContent": {
+      "vue": "scroll-by-content"
+    },
+    "dxCardViewOptions.scrolling.scrollByThumb": {
+      "vue": "scroll-by-thumb"
+    },
+    "dxCardViewOptions.scrolling.showScrollbar": {
+      "vue": "show-scrollbar"
+    },
+    "dxCardViewOptions.scrolling.useNative": {
+      "vue": "use-native"
+    },
     "dxCardViewOptions.searchPanel": {
       "angular": "dxo-search-panel",
       "react": "SearchPanel",
@@ -8367,9 +8379,6 @@
       "angular": "dxo-argument-axis",
       "react": "ArgumentAxis",
       "vue": "DxArgumentAxis"
-    },
-    "dxChartOptions.argumentAxis.aggregateByCategory": {
-      "vue": "aggregate-by-category"
     },
     "dxChartOptions.argumentAxis.aggregationGroupWidth": {
       "vue": "aggregation-group-width"
@@ -10293,9 +10302,6 @@
       "angular": "dxi-item",
       "react": "Item",
       "vue": "DxItem"
-    },
-    "dxContextMenuOptions.closeOnOutsideClick": {
-      "vue": "close-on-outside-click"
     },
     "dxContextMenuOptions.dataSource": {
       "vue": "data-source"
@@ -14056,12 +14062,6 @@
     "dxHtmlEditorToolbarItem.acceptedValues": {
       "vue": "accepted-values"
     },
-    "dxHtmlEditorToolbarItem.formatName": {
-      "vue": "format-name"
-    },
-    "dxHtmlEditorToolbarItem.formatValues": {
-      "vue": "format-values"
-    },
     "dxHtmlEditorVariables": {
       "angular": "dxo-html-editor-variables",
       "react": "DxHtmlEditorVariables",
@@ -14505,9 +14505,6 @@
     "dxLookupOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"
     },
-    "dxLookupOptions.fullScreen": {
-      "vue": "full-screen"
-    },
     "dxLookupOptions.groupTemplate": {
       "vue": "group-template"
     },
@@ -14630,9 +14627,6 @@
     },
     "dxLookupOptions.usePopover": {
       "vue": "use-popover"
-    },
-    "dxLookupOptions.valueChangeEvent": {
-      "vue": "value-change-event"
     },
     "dxMap": {
       "angular": "dx-map",
@@ -15083,9 +15077,6 @@
     },
     "dxOverlayOptions.activeStateEnabled": {
       "vue": "active-state-enabled"
-    },
-    "dxOverlayOptions.closeOnOutsideClick": {
-      "vue": "close-on-outside-click"
     },
     "dxOverlayOptions.contentTemplate": {
       "vue": "content-template"
@@ -16592,9 +16583,6 @@
       "react": "Show",
       "vue": "DxShow"
     },
-    "dxPopoverOptions.closeOnOutsideClick": {
-      "vue": "close-on-outside-click"
-    },
     "dxPopoverOptions.dragAndResizeArea": {
       "vue": "drag-and-resize-area"
     },
@@ -16993,9 +16981,6 @@
       "angular": "dxo-scale",
       "react": "Scale",
       "vue": "DxScale"
-    },
-    "dxRangeSelectorOptions.scale.aggregateByCategory": {
-      "vue": "aggregate-by-category"
     },
     "dxRangeSelectorOptions.scale.aggregationGroupWidth": {
       "vue": "aggregation-group-width"
@@ -18144,9 +18129,6 @@
     "dxSelectBoxOptions.showSelectionControls": {
       "vue": "show-selection-controls"
     },
-    "dxSelectBoxOptions.valueChangeEvent": {
-      "vue": "value-change-event"
-    },
     "dxSlider": {
       "angular": "dx-slider",
       "react": "Slider",
@@ -19222,9 +19204,6 @@
     },
     "dxToastOptions.closeOnClick": {
       "vue": "close-on-click"
-    },
-    "dxToastOptions.closeOnOutsideClick": {
-      "vue": "close-on-outside-click"
     },
     "dxToastOptions.closeOnSwipe": {
       "vue": "close-on-swipe"
@@ -22059,6 +22038,33 @@
       "angular": "dxo-dragging",
       "react": "Dragging",
       "vue": "DxDragging"
+    },
+    "headerPanel.dragging.dropFeedbackMode": {
+      "vue": "drop-feedback-mode"
+    },
+    "headerPanel.dragging.onDragChange": {
+      "vue": "@drag-change"
+    },
+    "headerPanel.dragging.onDragEnd": {
+      "vue": "@drag-end"
+    },
+    "headerPanel.dragging.onDragMove": {
+      "vue": "@drag-move"
+    },
+    "headerPanel.dragging.onDragStart": {
+      "vue": "@drag-start"
+    },
+    "headerPanel.dragging.onRemove": {
+      "vue": "@remove"
+    },
+    "headerPanel.dragging.onReorder": {
+      "vue": "@reorder"
+    },
+    "headerPanel.dragging.scrollSensitivity": {
+      "vue": "scroll-sensitivity"
+    },
+    "headerPanel.dragging.scrollSpeed": {
+      "vue": "scroll-speed"
     },
     "headerPanel.itemCssClass": {
       "vue": "item-css-class"

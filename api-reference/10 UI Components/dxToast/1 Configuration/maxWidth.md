@@ -1,12 +1,7 @@
 ---
 id: dxToast.Options.maxWidth
-type: Number | String | function()
+type: Number | String
 default: 568 (Fluent, Material)
----
----
-##### return: Number | String
-The maximum width.
-
 ---
 
 This property accepts a value of one of the following types:

@@ -1,12 +1,7 @@
 ---
 id: dxLoadPanel.Options.maxHeight
-type: Number | String | function()
+type: Number | String
 default: 60 (Material)
----
----
-##### return: Number | String
-<!-- %return% -->
-
 ---
 
 <!-- %fullDescription% -->

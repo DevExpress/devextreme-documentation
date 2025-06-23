@@ -1,12 +1,7 @@
 ---
 id: dxLoadPanel.Options.height
-type: Number | String | function()
+type: Number | String
 default: 90, 'auto' (Fluent), 60 (Material)
----
----
-##### return: Number | String
-<!-- %return% -->
-
 ---
 
 <!-- %fullDescription% -->

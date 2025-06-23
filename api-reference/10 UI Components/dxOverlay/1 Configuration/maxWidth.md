@@ -1,14 +1,11 @@
 ---
 id: dxOverlay.Options.maxWidth
-type: Number | String | function()
+type: Number | String
 default: null
 ---
 ---
 ##### shortDescription
 Specifies the maximum width the UI component can reach while resizing.
-
-##### return: Number | String
-The maximum width.
 
 ---
 #include uiwidgets-ref-width

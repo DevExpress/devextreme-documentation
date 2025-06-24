@@ -36,6 +36,97 @@ An [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiR
 - **Function**      
 A function that returns one of the above.
 
+    [note]
+    
+    When the component is initialized, it calls the **dataSource** function with an empty **options** object. To avoid execution errors, check that **options** properties are defined before accessing them. The following code snippet demonstrates how to check if **options**.**data** is defined before using the property in a filter expression:
+    
+    ---
+
+    ##### jQuery
+
+        <!-- tab: index.js -->
+        $("#{widgetName}Container").dx{WidgetName}({
+            columns: [{
+                lookup: {
+                    dataSource(options) {
+                        return {
+                            store: dataStore,
+                            filter: options.data ? ['StateID', '=', options.data.StateID] : null,
+                        };
+                    },
+                }
+            }]
+        })
+
+    ##### Angular
+
+        <!-- tab: app.component.html -->
+        <dx-{widget-name} ... >
+            <dxi-column ... >
+                <dxo-lookup [dataSource]="lookupDataSource" ... ></dxo-lookup>
+            </dxi-column>
+        </dx-{widget-name}>
+
+        <!-- tab: app.component.ts -->
+        export class AppComponent {
+            lookupDataSource = (options) => {
+                return {
+                    store: this.dataStore,
+                    filter: options.data ? ['StateID', '=', options.data.StateID] : null,
+                }
+            }
+        }
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <script setup>
+        import { Dx{WidgetName}, DxColumn, DxLookup } from 'devextreme-vue/{widget-name}';
+
+        const lookupDataSource = (options) => {
+            return {
+                store: dataStore,
+                filter: options.data ? ['StateID', '=', options.data.StateID] : null,
+            }
+        }
+        </script>
+
+        <template>
+            <Dx{WidgetName} ... >
+                <DxColumn ... >
+                    <DxLookup :dataSource="lookupDataSource" ... />
+                </DxColumn>
+            </Dx{WidgetName}>
+        </template>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import { {WidgetName} } from 'devextreme-react';
+        import { Column, Lookup } from 'devextreme-react/{widget-name}';
+
+        function App() {
+            function lookupDataSource(options) {
+                return {
+                    store: dataStore,
+                    filter: options.data ? ['StateID', '=', options.data.StateID] : null,
+                }
+            }
+            return (
+                <>
+                    <{WidgetName} ... >
+                        <Column ... >
+                            <Lookup dataSource={lookupDataSource} ... />
+                        </Column>
+                    </{WidgetName}>
+                </>
+            )
+        }
+
+    ---
+
+    [/note]
+
 If the lookup data source contains objects, specify the [valueExpr](/api-reference/_hidden/GridBaseColumn/lookup/valueExpr.md '{basewidgetpath}/Configuration/columns/lookup/#valueExpr') and [displayExpr](/api-reference/_hidden/GridBaseColumn/lookup/displayExpr.md '{basewidgetpath}/Configuration/columns/lookup/#displayExpr') properties in addition to the **dataSource**.
 
 [note] Collections of primitives are not supported if you use the <a href="https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/README.md" target="_blank">DevExtreme.AspNet.Data</a> library API <a href="https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/docs/client-side-with-jquery.md#api-reference" target="_blank">directly</a> or via a server-side wrapper (<a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400704/concepts/data-binding#aspnet-mvc-and-web-api-controllers" target="_blank">as with the DevExtreme ASP.NET MVC Controls</a>) to load the collections from a remote data source. Reconfigure the data source to return collections of objects.

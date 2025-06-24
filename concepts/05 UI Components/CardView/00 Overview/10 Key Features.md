@@ -8,10 +8,10 @@ CardView allows users to add, update, and delete cards. You can specify which op
 Configure [headerFilter](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/headerFilter.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/headerFilter/') or [filterPanel](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/filterPanel.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/filterPanel/') to allow users to filter CardView data. Enable sorting by single or multiple fields in the [sorting](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/sorting.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/sorting/') object. Specify search settings in the [searchPanel](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/searchPanel/) object. 
 
 - **Selection Modes**    
-CardView supports single and multiple card selection. Configure selection mode and other settings in the [selection](/Documentation/25_1/ApiReference/UI_Components/dxCardView/Configuration/selection/) object.
+CardView supports single and multiple card selection. Users can select cards with mouse actions or [keyboard shortcuts](/Documentation/Guide/UI_Components/CardView/Accessibility/#Keyboard_Navigation). Configure selection mode and other settings in the [selection](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/selection/) object.
 
 - **Column Hiding and Reordering**    
-You can use [columnChooser](/Documentation/25_1/ApiReference/UI_Components/dxCardView/Configuration/columnChooser/) to change column visibiity. To reorder columns, rearrange column headers in the **headerPanel**. You can also initialize columns in a specific order and visibility state by configuring the [columns[]](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/columns/) array.
+You can use [columnChooser](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/columnChooser/) to change column visibiity. To reorder columns, rearrange column headers in the **headerPanel**. You can also initialize columns in a specific order and visibility state by configuring the [columns[]](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/columns/) array.
 
 - **Card Customization**    
 You can customize the appearance of card visual elements to suit your needs with a variety of properties, including:

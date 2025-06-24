@@ -1,6 +1,7 @@
 ---
 id: HeaderPanel.dragging
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

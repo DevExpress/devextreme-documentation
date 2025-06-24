@@ -14,14 +14,14 @@ CardView supports single and multiple card selection. Users can select cards wit
 You can use [columnChooser](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/columnChooser/) to change column visibiity. To reorder columns, rearrange column headers in the **headerPanel**. You can also initialize columns in a specific order and visibility state by configuring the [columns[]](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/columns/) array.
 
 - **Card Customization**    
-You can customize the appearance of card visual elements to suit your needs with a variety of properties, including:
+You can customize the appearance of card visual elements with different properties, including:
     - [cardCover](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/cardCover.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/cardCover/')
     - [cardHeader](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/cardHeader.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/cardHeader/')
     - [cardFooterTemplate](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/cardFooterTemplate.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#cardFooterTemplate')
     - [cardContentTemplate](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/cardContentTemplate.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#cardContentTemplate')
     - **columns**.[fieldTemplate](/api-reference/10%20UI%20Components/dxCardView/9%20Types/ColumnProperties/fieldTemplate.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/columns/#fieldTemplate')
 
-    To fully customize card layout and appearance, configure [cardTemplate](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/cardTemplate.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#cardTemplate').
+    To customize card layout and appearance, configure [cardTemplate](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/cardTemplate.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#cardTemplate').
 
 - **Component Customization**    
 The following properties customize the appearance and functionality of the CardView component:

@@ -38,7 +38,7 @@ A function that returns one of the above.
 
     [note]
     
-    When the component is initialized, it calls the **dataSource** function with an empty **options** object. To avoid execution errors, check that **options** properties are defined before accessing them. The following code snippet demonstrates how you can check if **options**.**data** is defined before using the property in a filter expression:
+    When the component is initialized, it calls the **dataSource** function with an empty **options** object. To avoid execution errors, check that **options** properties are defined before accessing them. The following code snippet demonstrates how to check if **options**.**data** is defined before using the property in a filter expression:
     
     ---
 

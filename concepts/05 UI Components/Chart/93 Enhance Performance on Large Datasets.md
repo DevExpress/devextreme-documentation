@@ -1,5 +1,13 @@
 When working with large datasets, you can improve Chart performance by rendering less data. This help topic covers multiple ways to do so.
 
+### Implement Zoom and Pan Operations
+
+Enable zooming and panning to improve performance on datasets with long argument axes. These operations allow users to view the entirety of your dataset using scrolling. You can also implement on-demand data loading to improve the component's performance. For more information about loading data on-demand, refer to the following demo:
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/LoadDataOnDemand/"
+}
+
 ### Data Aggregation
 
 Aggregation groups data points by averaging them. Enable data aggregation to render fewer data points. Set one of the following properties to `true`:
@@ -15,14 +23,6 @@ For discrete axes, you do not need to define additional parameters to enable agg
 [note] If you specify both properties, **aggregationInterval** overrides **aggregationGroupWidth**.
 
 For more information on data aggregation, refer to the following help topic: [Data Aggregation](/Documentation/Guide/UI_Components/Chart/Data_Aggregation/).
-
-### Implement Zoom and Pan Operations
-
-Enable zooming and panning to improve performance on datasets with long argument axes. These operations allow users to view the entirety of your dataset using scrolling. You can also implement on-demand data loading to improve the component's performance. For more information about loading data on-demand, refer to the following demo:
-
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/LoadDataOnDemand/"
-}
 
 ### Hide Unnecessary Chart Elements
 

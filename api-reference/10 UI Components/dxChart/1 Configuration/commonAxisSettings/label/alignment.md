@@ -10,7 +10,7 @@ Aligns axis labels in relation to ticks.
 ---
 <!-- Description goes here -->
 
-The following table represents how this property aligns the labels of horizontal/vertical axes:
+The following table shows how this property aligns the labels of horizontal/vertical axes:
 
 <table class="dx-table">
     <tr>

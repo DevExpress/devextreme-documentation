@@ -1,5 +1,5 @@
 ---
-id: ToolbarItem.name
+id: dxCardViewToolbarItem.name
 type: Enums.PredefinedToolbarItem | String
 ---
 ---

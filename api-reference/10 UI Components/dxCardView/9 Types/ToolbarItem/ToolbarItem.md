@@ -1,5 +1,5 @@
 ---
-id: ToolbarItem
+id: dxCardViewToolbarItem
 module: ui/card_view
 export: ToolbarItem
 type: dxToolbarItem | Object

@@ -6,7 +6,7 @@ To display a LoadPanel on page load, initialize the component with [visible](/Do
 
     <!-- tab: index.js -->
     $(() => {
-        let data = new DevExpress.data.ODataStore({
+        const data = new DevExpress.data.ODataStore({
             url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
         });
 

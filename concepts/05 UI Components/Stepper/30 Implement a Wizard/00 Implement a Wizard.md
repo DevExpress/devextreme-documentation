@@ -2,11 +2,11 @@ This tutorial uses a Stepper widget to create a wizard-like application. The cre
 
 This wizard includes three key parts:
 
-- The Stepper component.
-- Step content where the MultiView component shows content for each step. Every view with input fields contains a Form.
-- A navigation panel with an active step caption ("Step 1 of 5") and buttons for moving between steps ("Next" and "Back").
+1. The Stepper component.
+2. Step content where the MultiView component shows content for each step. Every view with input fields contains a Form.
+3. A navigation panel with an active step caption ("Step 1 of 5") and buttons for moving between steps ("Next" and "Back").
 
-Image, TBA 
+<img src="/images/Stepper/stepper-wizard.png" alt="Stepper wizard elements" style="width: 100%; margin:0px auto; display:block;" />
 
 To view the complete code of this example, refer to the following demo:
 

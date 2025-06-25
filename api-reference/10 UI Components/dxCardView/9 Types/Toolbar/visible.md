@@ -1,5 +1,5 @@
 ---
-id: Toolbar.visible
+id: dxCardViewToolbar.visible
 type: Boolean | undefined
 default: undefined
 ---

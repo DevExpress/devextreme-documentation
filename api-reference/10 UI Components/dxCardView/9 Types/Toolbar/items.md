@@ -1,7 +1,7 @@
 ---
-id: Toolbar.items
-type: Array<Enums.PredefinedToolbarItem, ToolbarItem>
-inheritsType: ToolbarItem
+id: dxCardViewToolbar.items
+type: Array<Enums.PredefinedToolbarItem, dxCardViewToolbarItem>
+inheritsType: dxCardViewToolbarItem
 ---
 ---
 ##### shortDescription

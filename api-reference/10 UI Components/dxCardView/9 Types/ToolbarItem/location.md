@@ -1,5 +1,5 @@
 ---
-id: ToolbarItem.location
+id: dxCardViewToolbarItem.location
 type: Enums.ToolbarItemLocation
 default: 'after'
 ---

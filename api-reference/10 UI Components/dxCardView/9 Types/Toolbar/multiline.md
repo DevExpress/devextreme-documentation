@@ -1,5 +1,5 @@
 ---
-id: Toolbar.multiline
+id: dxCardViewToolbar.multiline
 type: Boolean
 default: false
 ---

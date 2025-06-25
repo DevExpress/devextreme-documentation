@@ -1,5 +1,5 @@
 ---
-id: Toolbar.disabled
+id: dxCardViewToolbar.disabled
 type: Boolean
 default: false
 ---

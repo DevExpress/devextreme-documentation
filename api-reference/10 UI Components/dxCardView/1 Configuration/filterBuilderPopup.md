@@ -1,6 +1,6 @@
 ---
 id: dxCardView.Options.filterBuilderPopup
-type: Object
+type: dxPopup_Options
 ---
 ---
 ##### shortDescription

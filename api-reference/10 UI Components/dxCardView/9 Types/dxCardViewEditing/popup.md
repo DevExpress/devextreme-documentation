@@ -1,6 +1,6 @@
 ---
 id: dxCardViewEditing.popup
-type: Object
+type: dxPopup_Options
 ---
 ---
 ##### shortDescription

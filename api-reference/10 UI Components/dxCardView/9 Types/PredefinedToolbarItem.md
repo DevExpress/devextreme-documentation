@@ -2,7 +2,7 @@
 id: Enums.PredefinedToolbarItem
 acceptValues: 'columnChooserButton' | 'searchPanel' | 'addCardButton' | 'selectAllButton' | 'clearSelectionButton'
 type: Union
-references: Toolbar.items|ToolbarItem.name
+references: dxCardViewToolbar.items|dxCardViewToolbarItem.name
 ---
 ---
 ##### shortDescription

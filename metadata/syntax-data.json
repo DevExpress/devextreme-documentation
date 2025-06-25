@@ -8346,6 +8346,21 @@
     "dxCardViewOptions.wordWrapEnabled": {
       "vue": "word-wrap-enabled"
     },
+    "dxCardViewToolbar": {
+      "angular": "dxo-card-view-toolbar",
+      "react": "DxCardViewToolbar",
+      "vue": "DxCardViewToolbar"
+    },
+    "dxCardViewToolbar.items": {
+      "angular": "dxi-item",
+      "react": "Item",
+      "vue": "DxItem"
+    },
+    "dxCardViewToolbarItem": {
+      "angular": "dxo-card-view-toolbar-item",
+      "react": "DxCardViewToolbarItem",
+      "vue": "DxCardViewToolbarItem"
+    },
     "dxChart": {
       "angular": "dx-chart",
       "react": "Chart",
@@ -22789,21 +22804,6 @@
     },
     "textMessage.isEdited": {
       "vue": "is-edited"
-    },
-    "toolbar": {
-      "angular": "dxo-toolbar",
-      "react": "Toolbar",
-      "vue": "DxToolbar"
-    },
-    "toolbar.items": {
-      "angular": "dxi-item",
-      "react": "Item",
-      "vue": "DxItem"
-    },
-    "toolbarItem": {
-      "angular": "dxo-toolbar-item",
-      "react": "ToolbarItem",
-      "vue": "DxToolbarItem"
     },
     "toolbarPreparingInfo.toolbarOptions": {
       "vue": "toolbar-options"

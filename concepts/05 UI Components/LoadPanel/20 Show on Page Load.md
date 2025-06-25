@@ -98,4 +98,4 @@ To display a LoadPanel on page load, initialize the component with [visible](/Do
 
 ---
 
-[note] The default behaviour of LoadPanel is to display over the entire application [window](https://developer.mozilla.org/en-US/docs/Web/API/Window). To place the component over a specific area, define the [position](/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#position) property.
+[note] The default placement of LoadPanel is over the entire application [window](https://developer.mozilla.org/en-US/docs/Web/API/Window). To place the component over a specific area, define the [position](/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#position) property.

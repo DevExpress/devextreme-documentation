@@ -314,7 +314,7 @@ An error message can be specified as follows:
                     <TextBox>
                         {/* The error message will be "${{errorMessage}}" */}
                         <Validator name="${{editorName}}">
-                            <${{ruleTypeUpperCase}}Rule} />
+                            <${{ruleTypeUpperCase}}Rule />
                         </Validator>
                     </TextBox>
                 );

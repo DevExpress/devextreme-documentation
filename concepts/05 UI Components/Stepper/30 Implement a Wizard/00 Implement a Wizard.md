@@ -1,4 +1,4 @@
-This tutorial uses a Stepper widget to create a wizard-like application. The created application integrates the [Form](/Documentation/Guide/UI_Components/Form/Overview/) and [MultiView](/Documentation/Guide/UI_Components/MultiView/Overview/) components.
+This tutorial uses a Stepper widget to create a wizard-like application. The created application integrates the [Form](/concepts/05%20UI%20Components/Form/00%20Overview '/Documentation/Guide/UI_Components/Form/Overview/') and [MultiView](/concepts/05%20UI%20Components/MultiView/00%20Overview.md '/Documentation/Guide/UI_Components/MultiView/Overview/') components.
 
 This wizard includes three key parts:
 

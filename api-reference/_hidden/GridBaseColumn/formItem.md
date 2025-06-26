@@ -161,6 +161,8 @@ In the following code, the `Full_Name` grid column in the editing state produces
 
 - The component does not check validation rules in the **formItem** object. Use the [columns.validationRules](/api-reference/_hidden/GridBaseColumn/formItem.md '{basewidgetpath}/Configuration/columns/#formItem') property to customize validation instead. For more information, refer to the [Data Validation](/concepts/05%20UI%20Components/DataGrid/20%20Editing/50%20Data%20Validation.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#Data_Validation') article.
 
+- {WidgetName} fails validation on default values set in **formItem**.[editorOptions](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorOptions). Specify default values for new column entries in [onInitNewRow](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onInitNewRow).
+
 [/note]
 
 #include btn-open-github with {

@@ -50,13 +50,13 @@ Row editor [properties](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row '
 Indicates whether the editor uses right-to-left representation.
 
 ##### field(e.setValue): any
-Use this method to change cell value. You can also pass a second value to the method to change the displayed value, but only for data row editors in a column with [calculateDisplayValue](/api-reference/_hidden/GridBaseColumn/calculateDisplayValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateDisplayValue').
+Use this method to change cell/editor value. You can also pass a second parameter to change displayed cell values in columns with [calculateDisplayValue](/api-reference/_hidden/GridBaseColumn/calculateDisplayValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateDisplayValue') specified.
 
 ##### field(e.updateValueTimeout): Number
 Gets and sets the delay between when a user stops typing a filter value and the change is applied. Available if the **parentType** is *"filterRow"* or *"searchPanel"*.
 
 ##### field(e.value): any
-Editor value. This field is read-only. To change editor value, use the **setValue(newValue, newText)** function parameter.
+Editor value. This field is read-only. To change editor value, use the **setValue(newValue)** function parameter.
 
 ##### field(e.width): Number
 Editor width; equals **null** for all editors except for those whose **parentType** equals *"searchPanel"*.
@@ -255,7 +255,7 @@ Use the **parentType** function parameter to check if the editor that the functi
 
 [note]
 
-- We do not recommend that you use the **onEditorPreparing** function to specify default editor values. Use the [onInitNewRow](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onInitNewRow.md '{basewidgetpath}/Configuration/#onInitNewRow') function instead.
+- The component fails validation on default editor values set in **onEditorPreparing**. To ensure {WidgetName} validates default editor values correctly, specify them in [onInitNewRow](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onInitNewRow.md '{basewidgetpath}/Configuration/#onInitNewRow') instead.
 
 - This function has higher priority over other editing tools. The order of priority is as follows: **onEditorPreparing** > [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '{basewidgetpath}/Configuration/columns/').[formItem](/api-reference/_hidden/GridBaseColumn/formItem.md '{basewidgetpath}/Configuration/columns/#formItem') > [editing](/api-reference/10%20UI%20Components/dxDataGrid/9%20Types/Editing '{basewidgetpath}/Configuration/editing/').[form](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/form.md '{basewidgetpath}/Configuration/editing/#form').
 

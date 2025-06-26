@@ -1,5 +1,5 @@
 - [Getting Started with TagBox](/Documentation/Guide/UI_Components/TagBox/Getting_Started_with_TagBox/)
 
-- [API](/Documentation/25_1/ApiReference/UI_Components/dxTagBox/Configuration/)
+- [API](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/)
 
 - [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TagBox/Overview/)

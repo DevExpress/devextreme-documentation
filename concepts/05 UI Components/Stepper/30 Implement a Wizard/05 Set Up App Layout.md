@@ -1,4 +1,4 @@
-To get started, add a Stepper and a MultiView to your project. Create a navigation panel - a container with child items. Child items are a `<div>` element that displays the active step caption and two [Buttons](/Documentation/Guide/UI_Components/Button/Overview/):
+To get started, add a Stepper and a MultiView to your project. Create a navigation panel - a container with child items. Child items are a `<div>` element that displays the active step caption and two [Buttons](/concepts/05%20UI%20Components/Button/02%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/Button/Overview/'):
 
 ---
 
@@ -187,13 +187,13 @@ To get started, add a Stepper and a MultiView to your project. Create a navigati
 
 ---
 
-The "Back" button is initially hidden. A later step in this tutorial implements dynamic visibility logic (see [Synchronize Steps and Navigation Panel](/Documentation/Guide/UI_Components/Stepper/Implement_a_Wizard/#Synchronize_Steps_and_Navigation_Panel)).
+The "Back" button is initially hidden. A later step in this tutorial implements dynamic visibility logic (see [Synchronize Steps and Navigation Panel](/concepts/05%20UI%20Components/Stepper/30%20Implement%20a%20Wizard/10%20Synchronize%20Steps%20and%20Navigation%20Panel.md '/Documentation/Guide/UI_Components/Stepper/Implement_a_Wizard/#Synchronize_Steps_and_Navigation_Panel')).
 
 ---
 
 ##### jQuery
 
-Configure forms for each step with MultiView **items[]**.[template](/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/items/#template):
+Configure forms for each step with MultiView **items[]**.[template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/items/#template'):
 
     <!-- tab: index.js -->
     const multiViewItems = [
@@ -241,7 +241,7 @@ Configure forms for each step with MultiView **items[]**.[template](/Documentati
 
 ##### Angular
 
-Configure forms for each step with MultiView **items[]**.[template](/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/items/#template):
+Configure forms for each step with MultiView **items[]**.[template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/items/#template'):
 
     <!-- tab: app.component.html -->
     <div class="content">
@@ -287,7 +287,7 @@ This tutorial implements custom components as MultiView item templates and a cus
 
 ##### Vue
 
-Configure forms for each step with MultiView **items[]**.[template](/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/items/#template):
+Configure forms for each step with MultiView **items[]**.[template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/items/#template'):
 
     <!-- tab: App.vue -->
     <template>
@@ -320,7 +320,7 @@ This tutorial implements custom components as MultiView item templates and a cus
 
 ##### React
 
-Configure forms for each step with MultiView **items[]**.[render](/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/items/#render):
+Configure forms for each step with MultiView **items[]**.[render](/api-reference/_hidden/CollectionWidgetItem/render.md '/Documentation/ApiReference/UI_Components/dxMultiView/Configuration/items/#render'):
 
     <!-- tab: App.tsx -->
     import DatesForm from './DatesForm.tsx';

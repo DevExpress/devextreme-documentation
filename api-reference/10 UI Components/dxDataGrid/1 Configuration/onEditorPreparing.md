@@ -255,7 +255,7 @@ Use the **parentType** function parameter to check if the editor that the functi
 
 [note]
 
-- The component fails validation for default editor values set in **onEditorPreparing**. To ensure {WidgetName} validates default editor values correctly, specify them in [onInitNewRow](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onInitNewRow.md '{basewidgetpath}/Configuration/#onInitNewRow') instead.
+- We do not recommend setting default editor values in **onEditorPreparing**. Implement [onInitNewRow](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onInitNewRow.md '{basewidgetpath}/Configuration/#onInitNewRow') and [onEditingStart](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditingStart) to specify default editor values.
 
 - This function has higher priority over other editing tools. The order of priority is as follows: **onEditorPreparing** > [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '{basewidgetpath}/Configuration/columns/').[formItem](/api-reference/_hidden/GridBaseColumn/formItem.md '{basewidgetpath}/Configuration/columns/#formItem') > [editing](/api-reference/10%20UI%20Components/dxDataGrid/9%20Types/Editing '{basewidgetpath}/Configuration/editing/').[form](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/form.md '{basewidgetpath}/Configuration/editing/#form').
 

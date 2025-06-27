@@ -20,19 +20,19 @@ Exports:
         // ===== or =====
         import { CustomStore } from "devextreme/common/data";
 
-- *isGroupItemsArray* - The [isGroupItemsArray](/Documentation/ApiReference/Common_Types/data/custom-store/#isGroupItemsArray) type guard function
+- *isGroupItemsArray* - The [isGroupItemsArray](/api-reference/40%20Common%20Types/10%20data/custom-store/isGroupItemsArray.md '/Documentation/ApiReference/Common_Types/data/custom-store/#isGroupItemsArray') type guard function
 
         require("devextreme/common/data").isGroupItemsArray;
         // ===== or =====
         import { isGroupItemsArray } from "devextreme/common/data";
 
-- *isItemsArray* - The [isItemsArray](/Documentation/ApiReference/Common_Types/data/custom-store/#isItemsArray) type guard function
+- *isItemsArray* - The [isItemsArray](/api-reference/40%20Common%20Types/10%20data/custom-store/isItemsArray.md '/Documentation/ApiReference/Common_Types/data/custom-store/#isItemsArray') type guard function
 
         require("devextreme/common/data").isItemsArray;
         // ===== or =====
         import { isItemsArray } from "devextreme/common/data";
 
-- *isLoadResultObject* - The [isLoadResultObject](/Documentation/ApiReference/Common_Types/data/custom-store/#isLoadResultObject) type guard function
+- *isLoadResultObject* - The [isLoadResultObject](/api-reference/40%20Common%20Types/10%20data/custom-store/isLoadResultObject.md '/Documentation/ApiReference/Common_Types/data/custom-store/#isLoadResultObject') type guard function
 
         require("devextreme/common/data").isLoadResultObject;
         // ===== or =====

@@ -2,6 +2,7 @@
 id: UI Events.dxremove
 module: events/remove
 type: eventType
+hidden: 
 ---
 ---
 ##### shortDescription

@@ -12,18 +12,18 @@ Enable zoom and pan to improve performance with long argument axes. These featur
 
 You can group data and show summary values to reduce the number of points. To do this, set one of the following properties to `true`:
 
-- **series**.**aggregation**.[enabled](/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/aggregation/#enabled): Enables aggregation for a specific series.
-- **commonSeriesSettings**.**aggregation**.[enabled](/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/aggregation/#enabled): Enables aggregation for all series.
+- **series**.**aggregation**.[enabled](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/aggregation/enabled.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/aggregation/#enabled'): Enables aggregation for a specific series.
+- **commonSeriesSettings**.**aggregation**.[enabled](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/aggregation/enabled.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonSeriesSettings/aggregation/#enabled'): Enables aggregation for all series.
 
 For discrete axes, you do not need to define additional parameters to enable aggregation. For continuous and logarithmic axes, specify one of the following properties:
 
-- **argumentAxis**.[aggregationInterval](/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/aggregationInterval/): Defines the aggregation interval in axis units.
-- **argumentAxis**.[aggregationGroupWidth](/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#aggregationGroupWidth): Defines the aggregation interval in pixels.
+- **argumentAxis**.[aggregationInterval](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/aggregationInterval '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/aggregationInterval/'): Defines the aggregation interval in axis units.
+- **argumentAxis**.[aggregationGroupWidth](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/aggregationGroupWidth.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#aggregationGroupWidth'): Defines the aggregation interval in pixels.
 
 [note] If you specify both properties, **aggregationInterval** overrides **aggregationGroupWidth**.
 
-For more information on data aggregation, refer to the following help topic: [Data Aggregation](/Documentation/Guide/UI_Components/Chart/Data_Aggregation/).
+For more information on data aggregation, refer to the following help topic: [Data Aggregation](/concepts/05%20UI%20Components/Chart/88%20Data%20Aggregation '/Documentation/Guide/UI_Components/Chart/Data_Aggregation/').
 
 ### Hide Unnecessary Chart Elements
 
-You can hide unnecessary elements to improve Chart performance. For instance, disable **series**.**point**.[visible](/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/point/#visible) to render chart lines without markers. You can also hide unused Chart elements and controls or disable animations.
+You can hide unnecessary elements to improve Chart performance. For instance, disable **series**.**point**.[visible](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/point/visible.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/point/#visible') to render chart lines without markers. You can also hide unused Chart elements and controls or disable animations.

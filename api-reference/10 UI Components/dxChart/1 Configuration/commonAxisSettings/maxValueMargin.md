@@ -18,4 +18,4 @@ The following expression calculates the axis end value with a minimum data value
 
 #####See Also#####
 - **commonAxisSettings**.[valueMarginsEnabled](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/valueMarginsEnabled.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/#valueMarginsEnabled') - enables/disables margins for axes.
-- **commonAxisSettings**.[minValueMargin](/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/#minValueMargin)
+- **commonAxisSettings**.[minValueMargin](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/minValueMargin.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/#minValueMargin')

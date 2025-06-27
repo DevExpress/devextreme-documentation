@@ -7,3 +7,5 @@
 5. [Field chooser](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/fieldChooser '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/fieldChooser/')
 6. [Grand Total row](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/showRowGrandTotals.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#showRowGrandTotals')
 7. [Grand Total column](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/showColumnGrandTotals.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#showColumnGrandTotals')
+
+Review the [Visual Elements](/concepts/05%20UI%20Components/PivotGrid/010%20Visual%20Elements '/Documentation/Guide/UI_Components/PivotGrid/Visual_Elements/') article for more information.

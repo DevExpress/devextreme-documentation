@@ -223,11 +223,13 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
 
 [note]
 
- **calculateSortValue** does not affect group rows. To sort them, implement [calculateGroupValue](/api-reference/_hidden/dxDataGridColumn/calculateGroupValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateGroupValue') in addition to **calculateSortValue**. You should also define the [groupCellTemplate](/api-reference/_hidden/dxDataGridColumn/groupCellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#groupCellTemplate') to apply a custom template for group rows.
+- **calculateSortValue** does not affect DataGrid group rows. To sort them, implement [calculateGroupValue](/api-reference/_hidden/dxDataGridColumn/calculateGroupValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateGroupValue') in addition to **calculateSortValue**. You should also define the [groupCellTemplate](/api-reference/_hidden/dxDataGridColumn/groupCellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#groupCellTemplate') to apply a custom template for group rows.
 
- #include btn-open-github with {
+    #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-datagrid-custom-sorting-grouped-column"
- }
+    }
+
+- This property only accepts strings if [remote operations]({basewidgetpath}/Configuration/remoteOperations/) are enabled.
 
 [/note]
 

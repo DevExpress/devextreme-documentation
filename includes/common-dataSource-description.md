@@ -172,7 +172,9 @@ ${{dataSource_items_note}}
 
 ${{paginate_note}}
 
-- Data field names cannot be equal to `this` and should not contain the following characters: `.`, `:`, `[`, and `]`.
+- Field names cannot be equal to `this` and should not contain the following characters: `.`, `:`, `[`, and `]`.
+
+- {WidgetName} does not execute **dataSource**.[sort](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#sort) functions. To implement custom sorting logic, implement **columns[]**.[calculateSortValue](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateSortValue).
 
 ${{remote_operations_note}}
 

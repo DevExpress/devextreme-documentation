@@ -20,4 +20,4 @@ PivotGrid handles large numeric datasets that can be hard to interpret. For a de
 If PivotGrid is bound to a large dataset, you can [enable a virtual scrolling mode](/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/scrolling/#mode) to optimize data load time and reduce resource consumption.
 
 - **Drill Down**    
-PivotGrid supports the [drill-down operation](https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/DrillDown/) that allows you to retrieve individual records used to calculate a specific summary value.
+PivotGrid supports [drill-down operations](https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/DrillDown/) that allow you to retrieve individual records for calculating a specific summary value.

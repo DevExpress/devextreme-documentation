@@ -142,7 +142,7 @@ This property accepts a string - the name of the data field that provides displa
 
     ---
 
-- When [headerFilter](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/headerFilter/) and **columns**.[lookup](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/) are enabled at the same time, the component executes the **displayExpr** method of lookup columns an additional time with a `null` parameter. To avoid errors, check that **data** is not `null` before accessing its properties in the **displayExpr** method:
+- When [headerFilter](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/headerFilter/) and **columns**.[lookup](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/) are both enabled, ensure **data** is not `null` before accessing its properties in the **displayExpr** method of lookup columns:
 
         <!-- tab: JavaScript -->
         displayExpr: (data) => { return data ? `${data.ID} ${data.Name}` : '' }

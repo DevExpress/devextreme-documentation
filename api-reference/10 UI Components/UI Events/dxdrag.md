@@ -2,6 +2,7 @@
 id: UI Events.dxdrag
 module: events/drag
 type: eventType
+hidden: 
 ---
 ---
 ##### shortDescription

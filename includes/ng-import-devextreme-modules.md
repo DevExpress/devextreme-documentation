@@ -49,7 +49,7 @@ The nested components should also be imported. For example, the following code s
 
 Modules facilitate working with multiple configuration components. You can import them as follows:
 
-    !-- tab: app.component.ts -->
+    <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { DxDataGridModule } from 'devextreme-angular';
 

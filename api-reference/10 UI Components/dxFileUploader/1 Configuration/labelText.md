@@ -1,7 +1,7 @@
 ---
 id: dxFileUploader.Options.labelText
 type: String
-default: 'or Drop file here', '' (InternetExplorer, desktop)
+default: 'or Drop file here', '' (mobile_devices)
 ---
 ---
 ##### shortDescription

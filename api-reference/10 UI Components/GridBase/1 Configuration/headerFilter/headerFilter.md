@@ -16,7 +16,101 @@ To make header filter icons visible, assign **true** to the **headerFilter**.[vi
 
 A header filter's popup menu lists all column values. If they are numbers or dates, you can group them using the [groupInterval](/api-reference/_hidden/GridBaseColumn/headerFilter/groupInterval.md '{basewidgetpath}/Configuration/columns/headerFilter/#groupInterval') property in the column's [headerFilter](/api-reference/_hidden/GridBaseColumn/headerFilter '{basewidgetpath}/Configuration/columns/headerFilter/'). You can also provide a custom data source for a header filter using the [dataSource](/api-reference/_hidden/GridBaseColumn/headerFilter/dataSource.md '{basewidgetpath}/Configuration/columns/headerFilter/#dataSource') property.
 
-[note] If a column has empty cells (`null` or `''`), the header filter popup menu displays a `(Blanks)` item.
+[note]
+
+If a column has empty cells (`null`, `undefined`, or `''`), the header filter adds a "(Blanks)" item to its data source. To avoid displaying this "(Blanks)" item, implement **DataSource**.[postProcess](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#postProcess) in the **columns**.**headerFilter**.[dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#dataSource) method:
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#{widgetName}Container").dx{WidgetName}({
+            columns: [{
+                headerFilter: {
+                    dataSource: function (options) {
+                        options.dataSource.postProcess = function (results) {
+                            return results.filter((item) => item.value !== null)
+                        }
+                    }
+                }
+            }]
+        })
+    })
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-{widget-name} ... >
+        <dxo-header-filter [visible]="true"></dxo-header-filter>
+        <dxi-column ... >
+            <dxo-header-filter ... 
+                [dataSource]="calculateDataSource"
+            ></dxo-header-filter>
+        </dxi-column>
+    </dx-{widget-name}>
+
+    <!-- tab: app.component.ts -->
+    export class AppComponent {
+        calculateDataSource (options) {
+            options.dataSource.postProcess = function (results) {
+                return results.filter((item) => item.value !== null)
+            }
+        }
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ... >
+            <DxHeaderFilter :visible="true" />
+            <DxColumn ... >
+                <DxHeaderFilter ...
+                    :data-source="calculateDataSource"
+                />
+            </DxColumn>
+        </Dx{WidgetName}>
+    </template>
+
+    <script>
+    import Dx{WidgetName}, { DxColumn, DxLookup, DxHeaderFilter } from 'devextreme-vue/{widget-name}';
+
+    const calculateDataSource = (options) => {
+        options.dataSource.postProcess = function (results) {
+            return results.filter((item) => item.value !== null)
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.js -->
+    import {WidgetName}, { Column, Lookup, HeaderFilter } from 'devextreme-react/{widget-name}';
+
+    function calculateDataSource(options) {
+        options.dataSource.postProcess = function (results) {
+            return results.filter((item) => item.value !== null)
+        }
+    }
+
+    export default function App() {
+        return (
+            <{WidgetName} ... >
+                <HeaderFilter visible={true} />
+                <Column ...
+                    <HeaderFilter ...
+                        dataSource={calculateDataSource}
+                    />
+                </Column>
+            </{WidgetName}>
+        );
+    }
+
+---
+
+[/note]
 
 #include datagrid-filtering-selectallmodifiesfiltertype with {
     filterValuesLink: "{basewidgetpath}/Configuration/columns/#filterValues",

@@ -148,6 +148,13 @@ If a data field provides values of one data type, but the UI component should ca
 
 ---
 
+[note]
+
+- {WidgetName} renders DevExtreme [CheckBox](/Documentation/Guide/UI_Components/CheckBox) components to display *"boolean"* data fields.
+- When **dataType** is *"object"*, the component does not generate [filterOperations]({basewidgetpath}/Configuration/columns/#filterOperations).
+
+[/note]
+
 #####See Also#####
 - [Troubleshooting - Date String Handling Issues](/concepts/80%20Troubleshooting/10%20Date%20String%20Handling%20Issues/00%20Date%20String%20Handling%20Issues.md '/Documentation/Guide/Troubleshooting/Date_String_Handling_Issues/')
 - [Data Columns](/concepts/05%20UI%20Components/DataGrid/15%20Columns/10%20Column%20Types/1%20Data%20Columns.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_Types/Data_Columns/')

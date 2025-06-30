@@ -18,7 +18,7 @@ A header filter's popup menu lists all column values. If they are numbers or dat
 
 [note]
 
-If a column has empty cells (`null` or `''`), the header filter adds a "(Blanks)" item to its data source. To avoid displaying this "(Blanks)" item, implement **DataSource**.[postProcess](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#postProcess) in the **columns**.**headerFilter**.[dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#dataSource) method:
+If a column has empty cells (`null`, `undefined`, or `''`), the header filter adds a "(Blanks)" item to its data source. To avoid displaying this "(Blanks)" item, implement **DataSource**.[postProcess](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#postProcess) in the **columns**.**headerFilter**.[dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#dataSource) method:
 
 ---
 

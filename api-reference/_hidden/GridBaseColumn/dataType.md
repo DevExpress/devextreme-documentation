@@ -151,7 +151,9 @@ If a data field provides values of one data type, but the UI component should ca
 [note]
 
 - {WidgetName} renders DevExtreme [CheckBox](/Documentation/Guide/UI_Components/CheckBox) components to display *"boolean"* data fields.
-- When **dataType** is *"object"*, the component does not generate [filterOperations]({basewidgetpath}/Configuration/columns/#filterOperations).
+- When **dataType** is *"object"*, the component implements the [toString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString) method to display fields. To integrate custom display logic, implement **columns[]**.[calculateCellValue]({basewidgetpath}/Configuration/columns/#calculateCellValue).
+- {WidgetName} does not generate [filterOperations]({basewidgetpath}/Configuration/columns/#filterOperations) for the [filterRow]({basewidgetpath}/Configuration/filterRow/) cells of *"object"* fields.
+- The component's [filterBuilder]({basewidgetpath}/Configuration/#filterBuilder) includes only extended filter operations for *"object"* fields: "anyof", "noneof", "isblank", and "isnotblank".
 
 [/note]
 

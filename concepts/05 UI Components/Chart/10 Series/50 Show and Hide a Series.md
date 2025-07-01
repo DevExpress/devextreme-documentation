@@ -105,7 +105,7 @@ The Chart provides an API for showing and hiding a series at runtime. The most c
 
 ---
 
-A series can be hidden initially. For this, assign **false** to the [visible](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/visible.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#visible') property of the object that configures the series.
+You can hide a series on component initialization. To do this, assign **false** to the [visible](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/visible.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#visible') property of the object that configures the series.
 
 ---
 ##### jQuery
@@ -186,6 +186,8 @@ A series can be hidden initially. For this, assign **false** to the [visible](/a
     export default App;
 
 ---
+
+[note] You can hide series to reduce the number of rendered component elements. This can improve Chart performance on large datasets. For more information on how to improve component performance, refer to the following topic: [Enhance Performance on Large Datasets](/Documentation/Guide/UI_Components/Chart/Enhance_Performance_on_Large_Datasets/).
 
 #####See Also#####
 - [Access a Series Using the API](/concepts/05%20UI%20Components/Chart/10%20Series/40%20Access%20a%20Series%20Using%20the%20API.md '/Documentation/Guide/UI_Components/Chart/Series/Access_a_Series_Using_the_API/')

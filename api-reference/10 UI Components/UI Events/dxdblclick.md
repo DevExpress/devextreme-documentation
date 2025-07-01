@@ -2,6 +2,7 @@
 id: UI Events.dxdblclick
 module: events/dblclick
 type: eventType
+hidden: 
 ---
 ---
 ##### shortDescription

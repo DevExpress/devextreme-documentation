@@ -2,6 +2,7 @@
 id: UI Events.dxrotatestart
 module: events/transform
 type: eventType
+hidden: 
 ---
 ---
 ##### shortDescription

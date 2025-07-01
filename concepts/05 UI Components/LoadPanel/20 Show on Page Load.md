@@ -1,4 +1,4 @@
-To display a LoadPanel on page load, initialize the component with [visible](/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#visible) set to `true`. You can hide the LoadPanel once your page or data finishes loading. The following code snippet demonstrates how to hide the component after [ODataStore](/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/) finishes loading data:
+To display a LoadPanel on page load, initialize the component with [visible](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#visible') set to `true`. You can hide the LoadPanel once your page or data finishes loading. The following code snippet demonstrates how to hide the component after [ODataStore](/api-reference/30%20Data%20Layer/ODataStore/1%20Configuration '/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/') finishes loading data:
 
 ---
 
@@ -98,4 +98,4 @@ To display a LoadPanel on page load, initialize the component with [visible](/Do
 
 ---
 
-[note] The default placement of LoadPanel is over the entire application [window](https://developer.mozilla.org/en-US/docs/Web/API/Window). To place the component over a specific area, define the [position](/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#position) property.
+[note] The default placement of LoadPanel is over the entire application [window](https://developer.mozilla.org/en-US/docs/Web/API/Window). To place the component over a specific area, define the [position](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/position.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#position') property.

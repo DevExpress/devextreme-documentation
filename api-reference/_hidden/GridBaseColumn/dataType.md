@@ -162,7 +162,7 @@ Note the following data type specifics:
 
 *"object":*
 
-- The component implements the [toString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString) method to display fields. To integrate custom display logic, implement **columns[]**.[calculateCellValue]({basewidgetpath}/Configuration/columns/#calculateCellValue).
+- The component implements the [toString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString) method to display fields. To integrate custom display logic, implement **columns[]**.[calculateCellValue]({basewidgetpath}/Configuration/columns/#calculateCellValue) or [calculateDisplayValue]({basewidgetpath}/Configuration/columns/#calculateDisplayValue).
 - {WidgetName} does not generate [filterOperations]({basewidgetpath}/Configuration/columns/#filterOperations) for the [filterRow]({basewidgetpath}/Configuration/filterRow/).
 - The component's [filterBuilder]({basewidgetpath}/Configuration/#filterBuilder) includes only extended filter operations: *"anyof"*, *"noneof"*, *"isblank"*, and *"isnotblank"*.
 

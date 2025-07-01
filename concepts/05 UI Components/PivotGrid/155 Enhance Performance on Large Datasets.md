@@ -1,5 +1,7 @@
 ### Process Data Before Binding to the Component
 
+The DevExtreme PivotGrid performs all data processing operations such as filtering and sorting on the client side. To enhance component performance, you can process data on your server before binding it to PivotGrid. For instance, bind the component to an [XmlaStore](/Documentation/ApiReference/Data_Layer/XmlaStore/) to access an OLAP cube following the XMLA standard.
+
 ### Enable Remote Operations
 
 PivotGridDataSource.remoteOperations

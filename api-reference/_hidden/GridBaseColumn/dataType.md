@@ -150,7 +150,7 @@ If a data field provides values of one data type, but the UI component should ca
 
 [note]
 
-Take note of the following data type specifics:
+Note the following data type specifics:
 
 *"boolean":*
 
@@ -158,7 +158,7 @@ Take note of the following data type specifics:
 
 *"number":*
 
-- The component aligns values and captions to the right sides of columns.
+- The component aligns values and captions to the right side of columns.
 
 *"object":*
 

@@ -2,7 +2,9 @@ This help topic describes how to improve Chart performance by rendering less dat
 
 ### Implement Zoom and Pan Operations
 
-Enable zoom and pan to improve performance with long argument axes. These features allow users to view smaller data sets and scroll through the chart. To optimize further, use on-demand data loading. See the demo for details:
+Enable zoom and pan to improve performance with long argument axes. Configure these features in the [zoomAndPan](/Documentation/ApiReference/UI_Components/dxChart/Configuration/zoomAndPan/) object. Zooming and panning actions allow users to load smaller data sets and scroll through the chart. To load a smaller data set on component initialization, specify an initial zoom level. For instructions on how to do this, refer to the following topic: [Set the Initial Zoom](/Documentation/Guide/UI_Components/Chart/Zooming_and_Panning/#Set_the_Initial_Zoom).
+
+To optimize Chart performance further, use on-demand data loading. See the demo for details: 
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/LoadDataOnDemand/"
@@ -26,4 +28,10 @@ For more information on data aggregation, refer to the following help topic: [Da
 
 ### Hide Unnecessary Chart Elements
 
-You can hide unnecessary elements to improve Chart performance. For instance, disable **series**.**point**.[visible](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/point/visible.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/point/#visible') to render chart lines without markers. You can also hide unused Chart elements and controls or disable animations.
+You can hide unnecessary elements to improve Chart performance. For instance, disable **series**.**point**.[visible](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/point/visible.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/point/#visible') to render chart lines without markers. To hide an unused series, refer to the following topic: [Show and Hide a Series](/Documentation/Guide/UI_Components/Chart/Series/Show_and_Hide_a_Series/)
+
+To reduce the number of visible labels, you can set [resolveLabelOverlapping](/Documentation/ApiReference/UI_Components/dxChart/Configuration/#resolveLabelOverlapping) to *'hide'*. For more information on how to resolve label overlapping, refer to the following topic: [Resolve Overlapping](/Documentation/Guide/UI_Components/Chart/Point_Labels/Resolve_Overlapping/).
+
+You can also hide unused Chart elements and controls or disable [animations](/Documentation/ApiReference/UI_Components/dxChart/Configuration/animation/).
+
+[note] The component disables animations automatically when displayed series points exceed **animation**.[maxPointCountSupported](/Documentation/ApiReference/UI_Components/dxChart/Configuration/animation/#maxPointCountSupported).

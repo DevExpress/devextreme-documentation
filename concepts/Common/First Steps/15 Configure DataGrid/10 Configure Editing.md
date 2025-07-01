@@ -1,15 +1,15 @@
-The DataGrid component allows you configure core settings such as sorting, filtering, search, grouping, and selection. Editing is one of these settings. Enable it to allow users to add, edit, and delete rows.
+The DataGrid component allows you configure core features such as sorting, filtering, search, grouping, and selection. Editing is one of these features. Enable it to allow users to add, edit, and delete rows.
 
 This guide explains how to create a task list where users can check off tasks, remove them, and add new ones. To do this, specify the following editing options:
 
 - [allowAdding](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowAdding)  
-Set to `true` to add new rows.
+Set to `true` to allow users adding new rows.
 
 - [allowDeleting](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowDeleting)  
-Set to `true` to remove rows.
+Set to `true` to allow users removing rows.
 
 - [allowUpdating](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowUpdating)  
-Set to `true` to update rows.
+Set to `true` to allow users updating rows.
 
 - [mode](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode)  
 Change the mode from default *"row"* to *"cell"* for easy task status changes.
@@ -48,7 +48,7 @@ Set new rows to appear at the *"last"* position for a top-to-bottom task list.
         ></dxo-data-grid-editing>
     </dx-data-grid>
 
-Remember to import the necessary nested components:
+Remember to import the `DxoDataGridEditingComponent` component:
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';

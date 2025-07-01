@@ -2,7 +2,7 @@
 module: ui/popover
 export: HidingEvent
 type: Object
-inherits: Cancelable,EventInfo
+inherits: AsyncCancelable,EventInfo
 uid: ui/popover:HidingEvent
 generateTypeLink: 
 references: dxPopover.Options.onHiding

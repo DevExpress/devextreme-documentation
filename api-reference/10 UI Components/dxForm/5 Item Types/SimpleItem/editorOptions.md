@@ -12,6 +12,8 @@ Configures the form item's editor.
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/CustomizeItem/"
 }
 
+[important] Not all editor properties are available in **editorOptions**. Properties managed by Form are excluded. This limitation applies to placeholders and labels, since Form handles this data.
+
 ---
 ##### Angular
 

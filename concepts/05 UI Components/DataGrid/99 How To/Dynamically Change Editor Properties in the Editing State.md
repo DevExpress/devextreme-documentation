@@ -2,7 +2,7 @@ The following tutorial explains how to dynamically change editor properties base
 
 ### Implement the **onEditorPreparing** event handler
 
-Use the **editorOptions** parameter of [onEditorPreparing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onEditorPreparing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditorPreparing') to change editor properties. The code snippet below changes the **disabled** property of the `LastName` editor if the `FirstName` editor has no entered value:
+Use the **editorOptions** parameter of [onEditorPreparing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onEditorPreparing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditorPreparing') to change editor properties. The code snippet below changes the **disabled** property of the `LastName` editor if the `FirstName` editor has no value:
 
 ---
 
@@ -298,7 +298,7 @@ The **defaultSetCellValue** call causes all editors to rerender and apply their 
 
 [note] To ensure editors repaint and apply your changes correctly, disable [repaintChangesOnly](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#repaintChangesOnly).
 
-The full project is available on GitHub:
+The complete project is available on GitHub:
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-datagrid-hide-show-edit-form-items-dynamically"

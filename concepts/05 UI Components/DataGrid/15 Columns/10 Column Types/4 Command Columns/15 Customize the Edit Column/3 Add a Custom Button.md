@@ -1,20 +1,22 @@
-Add an object to the [buttons](/api-reference/_hidden/dxDataGridColumn/buttons '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/') array and specify the button's properties in it...
+Add and configure custom buttons in the **columns[]**.[buttons](/api-reference/_hidden/dxDataGridColumn/buttons '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/') array. The component passes a [ColumnButtonClickEvent](/Documentation/ApiReference/UI_Components/dxDataGrid/Types/ColumnButtonClickEvent/) parameter to custom button [onClick](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/#onClick) handlers:
 
 ---
+
 ##### jQuery  
 
     <!--JavaScript-->
+    let savedRows = [];
+
     $(function () {
         $("#dataGridContainer").dxDataGrid({
-            // ...
             columns: [{
                 type: "buttons",
                 buttons: ["edit", "delete", {
-                    text: "My Command",
-                    icon: "/url/to/my/icon.ico",
-                    hint: "My Command",
+                    text: "Save",
+                    icon: "add",
+                    hint: "Save Row",
                     onClick: function (e) {
-                        // Execute your command here
+                        savedRows.push(e.row.data);
                     }
                 }]
             }]
@@ -29,10 +31,10 @@ Add an object to the [buttons](/api-reference/_hidden/dxDataGridColumn/buttons '
             <dxi-button name="edit"></dxi-button>
             <dxi-button name="delete"></dxi-button>
             <dxi-button
-                text="My Command"
-                icon="/url/to/my/icon.ico"
-                hint="My Command"
-                [onClick]="myCommand">
+                text="Save"
+                icon="add"
+                hint="Save Row"
+                [onClick]="saveRow">
             </dxi-button>
         </dxi-column>
     </dx-data-grid>
@@ -41,16 +43,16 @@ Add an object to the [buttons](/api-reference/_hidden/dxDataGridColumn/buttons '
     import { DxDataGridModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        myCommand (e) {
-            // Execute your command here
+        savedRows: [] = [];
+
+        saveRow (e) {
+            this.savedRows.push(e.row.data);
         }
     }
     @NgModule({
         imports: [
-            // ...
             DxDataGridModule
         ],
-        // ...
     })
 
 ##### Vue
@@ -62,10 +64,10 @@ Add an object to the [buttons](/api-reference/_hidden/dxDataGridColumn/buttons '
                 <DxButton name="edit" />
                 <DxButton name="delete" />
                 <DxButton 
-                    text="My Command"
-                    icon="/url/to/my/icon.ico"
-                    hint="My Command"
-                    :on-click="myCommand"
+                    text="Save"
+                    icon="add"
+                    hint="Save Row"
+                    :on-click="saveRow"
                 />
             </DxColumn>
         </DxDataGrid>
@@ -74,27 +76,12 @@ Add an object to the [buttons](/api-reference/_hidden/dxDataGridColumn/buttons '
     <script>
     import 'devextreme/dist/css/dx.light.css';
 
-    import DxDataGrid, {
-        DxColumn,
-        DxButton
-    } from 'devextreme-vue/data-grid';
+    import DxDataGrid, { DxColumn, DxButton } from 'devextreme-vue/data-grid';
 
-    export default {
-        components: {
-            DxDataGrid,
-            DxColumn,
-            DxButton
-        },
-        data() {
-            return {
-                // ...
-            }
-        },
-        methods: {
-            myCommand(e) {
-                // Execute your command here
-            }
-        }
+    const savedRows = ref([]);
+
+    const saveRow = (e) => {
+        savedRows.value.push(e.row.data);
     }
     </script>
 
@@ -105,33 +92,31 @@ Add an object to the [buttons](/api-reference/_hidden/dxDataGridColumn/buttons '
 
     import 'devextreme/dist/css/dx.light.css';
 
-    import DataGrid, {
-        Column,
-        Button
-    } from 'devextreme-react/data-grid';
+    import DataGrid, { Column, Button } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        myCommand (e) {
-            // Execute your command here
-        }
+    function App () {
+        const [savedRows, setSavedRows] = useState([]);
 
-        render() {
-            return (
-                <DataGrid ... >
-                    <Column type="buttons">
-                        <Button name="edit" />
-                        <Button name="delete" />
-                        <Button
-                            text="My Command"
-                            icon="/url/to/my/icon.ico"
-                            hint="My Command"
-                            onClick={this.myCommand}
-                        />
-                    </Column>
-                </DataGrid>
-            );
-        }
+        const saveRow = useCallback((e) => {
+            setSavedRows((prevState) => {return prevState.concat(e.row.data)});
+        }, [])
+
+        return (
+            <DataGrid ... >
+                <Column type="buttons">
+                    <Button name="edit" />
+                    <Button name="delete" />
+                    <Button
+                        text="Save"
+                        icon="add"
+                        hint="Save Row"
+                        onClick={saveRow}
+                    />
+                </Column>
+            </DataGrid>
+        );
     }
+
     export default App;
 
 ##### ASP.NET MVC Controls
@@ -162,7 +147,7 @@ Add an object to the [buttons](/api-reference/_hidden/dxDataGridColumn/buttons '
     
 ---
 
-... or use a [template](/api-reference/_hidden/dxDataGridColumnButton/template.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/#template') to render the button with custom appearance.
+Specify the **buttons[]**.[template](/api-reference/_hidden/dxDataGridColumnButton/template.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/#template') property to customize button appearance.
 
 ---
 ##### jQuery  

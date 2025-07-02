@@ -9,8 +9,6 @@ notUsedInTheme:
 Specifies the positioning of a map in geographical coordinates.
 
 ---
-[important] Specifying **bounds** in the following object format is deprecated: `{ minLon: *minLongitude*, maxLat: *maxLatitude*, maxLon: *maxLongitude*, minLat: *minLatitude* }`
-
 To display a specific portion of a map, specify coordinates in the **bounds** property. Specify an array of four values in the following order: `[minLongitude, maxLatitude, maxLongitude, minLatitude]`.
 
 Refer to the following image to see how these values are applied to a map:

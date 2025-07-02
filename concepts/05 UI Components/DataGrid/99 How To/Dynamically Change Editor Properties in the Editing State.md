@@ -1,296 +1,304 @@
-The following instructions explain how to dynamically change an editor's properties based on another editor's value:
+The following tutorial explains how to dynamically change editor properties based on the value of another editor.
 
-1. **Implement the [onEditorPreparing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onEditorPreparing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditorPreparing') event handler**  
-Use this handler's **editorOptions** parameter to change editor properties. The code below changes the **disabled** property of the `LastName` editor if the `FirstName` editor has no entered value:
+### Implement the **onEditorPreparing** event handler.
 
-    ---
-    ##### jQuery
+Use the **editorOptions** parameter of [onEditorPreparing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onEditorPreparing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditorPreparing') to change editor properties. The code snippet below changes the **disabled** property of the `LastName` editor if the `FirstName` editor has no entered value:
 
-        <!--JavaScript-->
-        $(function() {
-            $("#dataGridСontainer").dxDataGrid({ 
-                // ...
-                columns: [{
-                    dataField: "FirstName"
-                }, {
-                    dataField: "LastName"
-                }],
-                editing: {
-                    allowUpdating: true,
-                    allowAdding: true
-                },
-                onEditorPreparing: function(e) {
-                    if (e.dataField === "LastName" && e.parentType === "dataRow") {
-                        e.editorOptions.disabled = e.row.data && e.row.data.FirstName === "";
-                    }
-                }
-            });
-        });
+---
 
-    ##### Angular
+##### jQuery
 
-        <!-- tab: app.component.html -->
-        <dx-data-grid ...
-            (onEditorPreparing)="onEditorPreparing($event)">
-            <dxi-column dataField="FirstName"></dxi-column>
-            <dxi-column dataField="LastName"></dxi-column>
-            <dxo-editing
-                [allowAdding]="true"
-                [allowUpdating]="true">
-            </dxo-editing>
-        </dx-data-grid>
-
-        <!-- tab: app.component.ts -->
-        import { Component } from '@angular/core';
-
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        })
-        export class AppComponent {
+    <!--JavaScript-->
+    $(function() {
+        $("#dataGridСontainer").dxDataGrid({ 
             // ...
-            onEditorPreparing(e) {
+            columns: [{
+                dataField: "FirstName"
+            }, {
+                dataField: "LastName"
+            }],
+            editing: {
+                allowUpdating: true,
+                allowAdding: true
+            },
+            onEditorPreparing: function(e) {
                 if (e.dataField === "LastName" && e.parentType === "dataRow") {
                     e.editorOptions.disabled = e.row.data && e.row.data.FirstName === "";
                 }
             }
+        });
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-data-grid ...
+        (onEditorPreparing)="onEditorPreparing($event)">
+        <dxi-column dataField="FirstName"></dxi-column>
+        <dxi-column dataField="LastName"></dxi-column>
+        <dxo-editing
+            [allowAdding]="true"
+            [allowUpdating]="true">
+        </dxo-editing>
+    </dx-data-grid>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+    export class AppComponent {
+        // ...
+        onEditorPreparing(e) {
+            if (e.dataField === "LastName" && e.parentType === "dataRow") {
+                e.editorOptions.disabled = e.row.data && e.row.data.FirstName === "";
+            }
         }
-        
-        <!-- tab: app.module.ts -->
-        import { BrowserModule } from '@angular/platform-browser';
-        import { NgModule } from '@angular/core';
-        import { AppComponent } from './app.component';
+    }
+    
+    <!-- tab: app.module.ts -->
+    import { BrowserModule } from '@angular/platform-browser';
+    import { NgModule } from '@angular/core';
+    import { AppComponent } from './app.component';
 
-        import { DxDataGridModule } from 'devextreme-angular';
+    import { DxDataGridModule } from 'devextreme-angular';
 
-        @NgModule({
-            declarations: [
-                AppComponent
-            ],
-            imports: [
-                BrowserModule,
-                DxDataGridModule
-            ],
-            providers: [ ],
-            bootstrap: [AppComponent]
-        })
-        export class AppModule { }
+    @NgModule({
+        declarations: [
+            AppComponent
+        ],
+        imports: [
+            BrowserModule,
+            DxDataGridModule
+        ],
+        providers: [ ],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
 
-    ##### Vue
+##### Vue
 
-        <!-- tab: App.vue -->
-        <template>
-            <DxDataGrid ...
-                @editor-preparing="onEditorPreparing">
-                <DxColumn data-field="FirstName" />
-                <DxColumn data-field="LastName" />
-                <DxEditing
-                    :allow-updating="true"
-                    :allow-adding="true">
-                />
-            </DxDataGrid>
-        </template>
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ...
+            @editor-preparing="onEditorPreparing">
+            <DxColumn data-field="FirstName" />
+            <DxColumn data-field="LastName" />
+            <DxEditing
+                :allow-updating="true"
+                :allow-adding="true">
+            />
+        </DxDataGrid>
+    </template>
 
-        <script>
-        import 'devextreme/dist/css/dx.light.css';
+    <script>
+    import 'devextreme/dist/css/dx.light.css';
 
-        import DxDataGrid, { 
-            DxColumn,
+    import DxDataGrid, { 
+        DxColumn,
+        DxEditing
+        } from "devextreme-vue/data-grid";
+
+    export default {
+        components: {              
+            DxDataGrid,
+            DxColumn,  
             DxEditing
-         } from "devextreme-vue/data-grid";
-
-        export default {
-            components: {              
-                DxDataGrid,
-                DxColumn,  
-                DxEditing
-            },
-            data() {
-                return {
-                    // ...            
-                }
-            },
-            methods: {
-                onEditorPreparing(e) {
-                    if(e.dataField === "LastName" && e.parentType ==="dataRow"){
-                        e.editorOptions.disabled = e.row.data && e.row.data.FirstName === "";
-                    }
-                }     
+        },
+        data() {
+            return {
+                // ...            
             }
-        }
-        </script>
-
-    ##### React
-
-        <!-- tab: App.js -->
-        import React from 'react';
-
-        import 'devextreme/dist/css/dx.light.css';
-
-        import DataGrid, { 
-            Column,
-            Editing
-        } from 'devextreme-react/data-grid';
-
-        class App extends React.Component {        
-            render() {
-                return (
-                    <DataGrid ...
-                        onEditorPreparing={this.onEditorPreparing}>
-                        <Column dataField="FirstName" />
-                        <Column dataField="LastName" />  
-                        <Editing
-                            allowAdding={true}
-                            allowUpdating={true}
-                        />            
-                    </DataGrid>
-                );
-            }
-            onEditorPreparing = (e) => {
+        },
+        methods: {
+            onEditorPreparing(e) {
                 if(e.dataField === "LastName" && e.parentType ==="dataRow"){
-                  e.editorOptions.disabled = e.row.data && e.row.data.FirstName === "";
-                }
-            }          
-        }
-        export default App;
-
-    ##### ASP.NET MVC Controls
-
-        <!--Razor C#-->
-        @(Html.DevExtreme().DataGrid()
-            // ...
-            .OnEditorPreparing("onEditorPreparing")
-            .Columns(cols => {
-                cols.Add().DataField("FirstName");
-                cols.Add().DataField("LastName");   
-            })
-            .Editing(e => e
-                .AllowUpdating(true)
-                .AllowAdding(true)                   
-            )
-        })
-
-        <script type="text/javascript">
-            function onEditorPreparing(e) {
-                 if (e.dataField === "LastName" && e.parentType === "dataRow") {
                     e.editorOptions.disabled = e.row.data && e.row.data.FirstName === "";
                 }
-            }          
-        </script>
+            }     
+        }
+    }
+    </script>
 
-    ---
+##### React
 
-1. **Specify the [setCellValue](/api-reference/_hidden/GridBaseColumn/setCellValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#setCellValue') callback function**   
-Specify **setCellValue** for those columns whose editors should affect other editors. In the function, call its default implementation as shown below. This call causes all editors to rerender themselves with the new properties.
+    <!-- tab: App.js -->
+    import React from 'react';
 
-    ---
-    #####jQuery
+    import 'devextreme/dist/css/dx.light.css';
 
-        <!--JavaScript-->
-        $(function() {
-            $("#dataGridСontainer").dxDataGrid({ 
-                columns: [{ 
-                    dataField: "FirstName", 
-                    setCellValue: function(newData, value) {
-                        this.defaultSetCellValue(newData, value);
-                    }
-                }, {
-                    dataField: "LastName"
-                }],
-                // ...
-            });
-        });
+    import DataGrid, { 
+        Column,
+        Editing
+    } from 'devextreme-react/data-grid';
 
-    ##### Angular
+    class App extends React.Component {        
+        render() {
+            return (
+                <DataGrid ...
+                    onEditorPreparing={this.onEditorPreparing}>
+                    <Column dataField="FirstName" />
+                    <Column dataField="LastName" />  
+                    <Editing
+                        allowAdding={true}
+                        allowUpdating={true}
+                    />            
+                </DataGrid>
+            );
+        }
+        onEditorPreparing = (e) => {
+            if(e.dataField === "LastName" && e.parentType ==="dataRow"){
+                e.editorOptions.disabled = e.row.data && e.row.data.FirstName === "";
+            }
+        }          
+    }
+    export default App;
 
-        <!-- tab: app.component.html -->
-        <dx-data-grid ... >
-            <dxi-column dataField="FirstName" [setCellValue]="setCellValue"></dxi-column>
-            <dxi-column dataField="LastName"></dxi-column>
-        </dx-data-grid>
+##### ASP.NET MVC Controls
 
-        <!-- tab: app.component.ts -->
-        import { Component } from '@angular/core';
-
-        @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
+    <!--Razor C#-->
+    @(Html.DevExtreme().DataGrid()
+        // ...
+        .OnEditorPreparing("onEditorPreparing")
+        .Columns(cols => {
+            cols.Add().DataField("FirstName");
+            cols.Add().DataField("LastName");   
         })
-        export class AppComponent {
-            // ...
-            setCellValue(newData, value) {
-                let column = (<any>this);
-                column.defaultSetCellValue(newData, value);
+        .Editing(e => e
+            .AllowUpdating(true)
+            .AllowAdding(true)                   
+        )
+    })
+
+    <script type="text/javascript">
+        function onEditorPreparing(e) {
+                if (e.dataField === "LastName" && e.parentType === "dataRow") {
+                e.editorOptions.disabled = e.row.data && e.row.data.FirstName === "";
             }
-        }
- 
-    ##### Vue
+        }          
+    </script>
 
-        <!-- tab: App.vue -->
-        <template>
-            <DxDataGrid ... >
-                <DxColumn data-field="FirstName" :set-cell-value="setCellValue" />
-                <DxColumn data-field="LastName" />
-            </DxDataGrid>
-        </template>
+---
 
-        <script>
-        // ...
-        export default {
-            // ...
-            methods: {
-                setCellValue(newData,value) {
-                    let column = this;
-                    column.defaultSetCellValue(newData, value);
+### Specify the **setCellValue** callback function.
+
+Specify [setCellValue](/api-reference/_hidden/GridBaseColumn/setCellValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#setCellValue') in columns that should affect other column editors. Call the default **setCellValue** implementation:
+
+---
+
+#####jQuery
+
+    <!--JavaScript-->
+    $(function() {
+        $("#dataGridСontainer").dxDataGrid({ 
+            columns: [{ 
+                dataField: "FirstName", 
+                setCellValue: function(newData, value) {
+                    this.defaultSetCellValue(newData, value);
                 }
-            }
-        }
-        </script>
+            }, {
+                dataField: "LastName"
+            }],
+            // ...
+        });
+    });
 
-    ##### React
+##### Angular
 
-        <!--tab: App.js-->
+    <!-- tab: app.component.html -->
+    <dx-data-grid ... >
+        <dxi-column dataField="FirstName" [setCellValue]="setCellValue"></dxi-column>
+        <dxi-column dataField="LastName"></dxi-column>
+    </dx-data-grid>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+    })
+    export class AppComponent {
         // ...
-        class App extends React.Component {
-            // ...   
-            render() {
-                return (
-                    <DataGrid ... >             
-                        <Column dataField="FirstName" setCellValue={this.setCellValue} />
-                        <Column dataField="LastName" /> 
-                    </DataGrid>
-                );
-            }
-            setCellValue(newData, value) {
+        setCellValue(newData, value) {
+            let column = (<any>this);
+            column.defaultSetCellValue(newData, value);
+        }
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDataGrid ... >
+            <DxColumn data-field="FirstName" :set-cell-value="setCellValue" />
+            <DxColumn data-field="LastName" />
+        </DxDataGrid>
+    </template>
+
+    <script>
+    // ...
+    export default {
+        // ...
+        methods: {
+            setCellValue(newData,value) {
                 let column = this;
                 column.defaultSetCellValue(newData, value);
             }
         }
-        export default App;
+    }
+    </script>
 
-    ##### ASP.NET MVC Controls
-    
-        <!--Razor C#-->
-        @(Html.DevExtreme().DataGrid()
-            // ...
-            .Columns(cols => {
-                cols.Add().DataField("FirstName")
-                    .SetCellValue("setCellValue");
-                cols.Add().DataField("LastName");   
-            })
-        )
-        <script type="text/javascript">
-            // ...
-            function setCellValue(newData, value) {                
-                this.defaultSetCellValue(newData, value);
-            }
-        </script>
+##### React
 
-    ---
+    <!--tab: App.js-->
+    // ...
+    class App extends React.Component {
+        // ...   
+        render() {
+            return (
+                <DataGrid ... >             
+                    <Column dataField="FirstName" setCellValue={this.setCellValue} />
+                    <Column dataField="LastName" /> 
+                </DataGrid>
+            );
+        }
+        setCellValue(newData, value) {
+            let column = this;
+            column.defaultSetCellValue(newData, value);
+        }
+    }
+    export default App;
 
-The full project is available on GitHub.
+##### ASP.NET MVC Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().DataGrid()
+        // ...
+        .Columns(cols => {
+            cols.Add().DataField("FirstName")
+                .SetCellValue("setCellValue");
+            cols.Add().DataField("LastName");   
+        })
+    )
+    <script type="text/javascript">
+        // ...
+        function setCellValue(newData, value) {                
+            this.defaultSetCellValue(newData, value);
+        }
+    </script>
+
+---
+
+The **defaultSetCellValue** call causes all editors to rerender and apply their new properties.
+
+[note] To ensure editors repaint and apply your changes correctly, disable [repaintChangesOnly](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#repaintChangesOnly).
+
+The full project is available on GitHub:
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-datagrid-hide-show-edit-form-items-dynamically"

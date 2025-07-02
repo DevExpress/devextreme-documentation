@@ -18,4 +18,4 @@ The following expression calculates the axis start value with a minimum data val
 
 #####See Also#####
 - **commonAxisSettings**.[valueMarginsEnabled](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/valueMarginsEnabled.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/#valueMarginsEnabled') - enables/disables margins for axes.
-- **commonAxisSettings**.[maxValueMargin](/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/#maxValueMargin)
+- **commonAxisSettings**.[maxValueMargin](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/maxValueMargin.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/#maxValueMargin')

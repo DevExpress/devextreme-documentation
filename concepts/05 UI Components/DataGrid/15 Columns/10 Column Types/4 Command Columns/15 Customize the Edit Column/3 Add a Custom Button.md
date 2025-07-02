@@ -41,7 +41,7 @@ Add and configure custom buttons in the **columns[]**.[buttons](/api-reference/_
 
     <!--TypeScript-->
     import { DxDataGridModule } from "devextreme-angular";
-    // ...
+    
     export class AppComponent {
         savedRows: [] = [];
 
@@ -74,8 +74,8 @@ Add and configure custom buttons in the **columns[]**.[buttons](/api-reference/_
     </template>
 
     <script>
+    import { ref } from 'vue';
     import 'devextreme/dist/css/dx.light.css';
-
     import DxDataGrid, { DxColumn, DxButton } from 'devextreme-vue/data-grid';
 
     const savedRows = ref([]);
@@ -88,10 +88,8 @@ Add and configure custom buttons in the **columns[]**.[buttons](/api-reference/_
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
-
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.light.css';
-
     import DataGrid, { Column, Button } from 'devextreme-react/data-grid';
 
     function App () {

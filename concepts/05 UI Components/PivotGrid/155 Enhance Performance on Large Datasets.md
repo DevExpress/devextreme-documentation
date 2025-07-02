@@ -1,10 +1,14 @@
 This help topic describes how to improve PivotGrid performance when binding and processing large data sets.
 
-[note] To enhance component performance, we recommend you process data before binding it to PivotGrid.
-
 ### Enable Remote Operations
 
-The DevExtreme PivotGrid performs all data operations such as filtering and grouping on the client side. To enhance component performance, enable **PivotGridDataSource**.[remoteOperations](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/#remoteOperations) to process data on the server side. PivotGrid **remoteOperations** support [ODataStore](/Documentation/ApiReference/Data_Layer/ODataStore/) and [XmlaStore](/Documentation/ApiReference/Data_Layer/XmlaStore/) store types. 
+The DevExtreme PivotGrid performs all data operations such as filtering and grouping on the client side. To enhance component performance, enable **PivotGridDataSource**.[remoteOperations](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/#remoteOperations) to process data on the server side. PivotGrid **remoteOperations** support [XmlaStore](/Documentation/ApiReference/Data_Layer/XmlaStore/) and [CustomStore](/Documentation/ApiReference/Data_Layer/CustomStore/) store types, along with **CustomStore** instances created with [DevExtreme.AspNet.Data](https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/README.md).[createStore](https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/docs/client-side-with-jquery.md#api-reference). For more information about the **createStore** method, refer to the following topic: [Web API, PHP and MongoDB Data Sources](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/)
+
+For more information about integrating a Web API service with PivotGrid, refer to the following demo:
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/WebAPIService/"
+}
 
 ### Enable Virtual Scrolling
 
@@ -12,7 +16,7 @@ Enable virtual scrolling to render cells as users scroll them into view. Set **s
 
 ### Enable Pagination
 
-Enable pagination to load data in portions. To do this, enable **PivotGridDataSource**.[paginate](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/#paginate).
+When binding the component to an OLAP Cube with an **XmlaStore**, you can enable pagination to load data in portions. To do this, enable **PivotGridDataSource**.[paginate](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/#paginate).
 
 ### Disable the Expand All Button
 

@@ -30,8 +30,10 @@ Next, import components into `app.component.ts`. For detailed instructions on me
 Layout the components in the HTML file:
 
     <!-- tab: app.component.html -->
-    <dx-progress-bar id="progress"></dx-progress-bar>
-    <dx-data-grid id="task-grid"></dx-data-grid>
+    <div id="dashboard">
+        <dx-progress-bar id="progress"></dx-progress-bar>
+        <dx-data-grid id="task-grid"></dx-data-grid>
+    </div>
 
 ##### Vue
 
@@ -39,8 +41,10 @@ Next, import and layout the components. For detailed instructions on imports, re
 
     <!-- tab: App.vue -->
     <template>
-        <DxProgressBar id="progress" />
-        <DxDataGrid id="task-grid"></DxDataGrid>
+        <div id="dashboard">
+            <DxProgressBar id="progress" />
+            <DxDataGrid id="task-grid"></DxDataGrid>
+        </div>
     </template>
     <script setup>
     import DxProgressBar from 'devextreme-vue/progress-bar';
@@ -58,10 +62,10 @@ Next, import and layout the components. For detailed instructions on imports, re
 
     const App = () => {
         return(
-            <>
+            <div id="dashboard">
                 <ProgressBar id="progress" />
                 <DataGrid id="task-grid"></DataGrid>
-            </>
+            </div>
         );
     }
 

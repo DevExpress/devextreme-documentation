@@ -29,7 +29,6 @@ Then, bind the [value](/Documentation/ApiReference/UI_Components/dxProgressBar/C
         [value]="progressValue"
     >
     </dx-progress-bar>
-    <dx-data-grid ... ></dx-data-grid>
 
 ##### Vue
 
@@ -37,10 +36,12 @@ Create a `progressValue` variable and set its [ref](https://vuejs.org/guide/esse
 
     <!-- tab: App.vue -->
     <template>
-        <DxProgressBar 
-            :value="progressValue"
-        />
-        <DxDataGrid ... ></DxDataGrid>
+        <div id="dashboard">
+            <DxProgressBar 
+                :value="progressValue"
+            />
+            <DxDataGrid ... ></DxDataGrid>
+        </div>
     </template>
     <script setup>
     import { ref } from 'vue';
@@ -61,12 +62,12 @@ Create a `progressValue` variable and set its [state](https://react.dev/referenc
     const App = () => {
         const [progressValue, setProgressValue] = useState(50);
         return(
-            <>
+            <div id="dashboard">
                 <ProgressBar 
                     value={progressValue}
                 />
                 <DataGrid ... ></DataGrid>
-            </>
+            </div>
         );
     }
 

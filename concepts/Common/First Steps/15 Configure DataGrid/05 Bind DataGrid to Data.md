@@ -35,7 +35,6 @@ The DataGrid component can [load and update data](/Documentation/Guide/UI_Compon
 3. Use the nested `dxi-data-grid-column` component to define [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/) you want to display.
         
         <!-- tab: app.component.html -->
-        <dx-progress-bar id="progress"></dx-progress-bar>
         <dx-data-grid ...
             [dataSource]="tasks"
         >
@@ -72,20 +71,22 @@ For more information about the nested components, refer to the following article
 
         <!-- tab: App.vue -->
         <template>
-            <DxProgressBar id="progress" />
-            <DxDataGrid ...
-                :data-source="tasks"
-            >
-                <DxColumn  
-                    data-field="task"
-                />
-                <DxColumn  
-                    data-field="dueDate"
-                />
-                <DxColumn 
-                    data-field="done"
-                />
-            </DxDataGrid>
+            <div id="dashboard">
+                <DxProgressBar id="progress" />
+                <DxDataGrid ...
+                    :data-source="tasks"
+                >
+                    <DxColumn  
+                        data-field="task"
+                    />
+                    <DxColumn  
+                        data-field="dueDate"
+                    />
+                    <DxColumn 
+                        data-field="done"
+                    />
+                </DxDataGrid>
+            </div>
         </template>
         <script setup>
         import DxDataGrid, { DxColumn } from 'devextreme-vue/data-grid';
@@ -118,7 +119,7 @@ For more information about the nested components, refer to the following article
 
         const App = () => {
             return(
-                <>
+                <div id="dashboard">
                     <ProgressBar id="progress" />
                     <DataGrid ... 
                         dataSource={tasks}
@@ -133,7 +134,7 @@ For more information about the nested components, refer to the following article
                             dataField="done"
                         />
                     </DataGrid>
-                </>
+                </div>
             );
         }
 

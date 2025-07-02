@@ -37,7 +37,6 @@ Set new rows to appear at the *"last"* position for a top-to-bottom task list.
 ##### Angular
         
     <!-- tab: app.component.html -->
-    <dx-progress-bar id="progress"></dx-progress-bar>
     <dx-data-grid ... >
         <dxo-data-grid-editing 
             mode="row" 
@@ -66,16 +65,18 @@ Remember to import the `DxoDataGridEditingComponent` component:
 
     <!-- tab: App.vue -->
     <template>
-        <DxProgressBar id="progress" />
-        <DxDataGrid ... >
-            <DxEditing 
-                mode="row"
-                :allow-updating="true"
-                :allow-adding="true"
-                :allow-deleting="true"
-                new-row-position="last"
-            />
-        </DxDataGrid>
+        <div id="dashboard">
+            <DxProgressBar id="progress" />
+            <DxDataGrid ... >
+                <DxEditing 
+                    mode="row"
+                    :allow-updating="true"
+                    :allow-adding="true"
+                    :allow-deleting="true"
+                    new-row-position="last"
+                />
+            </DxDataGrid>
+        </div>
     </template>
     <script setup>
     import DxDataGrid, { DxColumn, DxEditing } from 'devextreme-vue/data-grid';
@@ -91,7 +92,7 @@ Remember to import the `DxoDataGridEditingComponent` component:
 
     const App = () => {
         return(
-            <>
+            <div id="dashboard">
                 <ProgressBar id="progress" />
                 <DataGrid ... >
                     <Editing 
@@ -102,7 +103,7 @@ Remember to import the `DxoDataGridEditingComponent` component:
                         newRowPosition="last"
                     />
                 </DataGrid>
-            </>
+            </div>
         );
     }
 

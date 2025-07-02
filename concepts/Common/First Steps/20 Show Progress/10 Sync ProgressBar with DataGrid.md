@@ -29,14 +29,13 @@ To synchronize ProgressBar with DataGrid, define an `updateProgress` function. T
         updateProgress() {
             const all = this.tasks.length;
             const completed = this.tasks.filter((t) => t.done).length;
-            this.progressValue = Math.round((completed / all) * 100));
+            this.progressValue = Math.round((completed / all) * 100);
         };
     }
 
 To call this function whenever a row updates, inserts, or deletes, assign it to the DataGrid event handlers: [onRowUpdated](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowUpdated), [onRowInserted](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowInserted), and [onRowRemoved](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowRemoved).
 
     <!-- tab: app.component.html -->
-    <dx-progress-bar ... ></dx-progress-bar>
     <dx-data-grid ...
         (onRowUpdated)="updateProgress($event)"
         (onRowInserted)="updateProgress($event)"
@@ -49,13 +48,15 @@ To synchronize ProgressBar with DataGrid, define an `updateProgress` function. T
 
         <!-- tab: App.vue -->
         <template>
-            <DxProgressBar ... />
-            <DxDataGrid ...
-                @row-updated="updateProgress"
-                @row-inserted="updateProgress"
-                @row-removed="updateProgress"
-            >
-            </DxDataGrid>
+            <div id="dashboard">
+                <DxProgressBar ... />
+                <DxDataGrid ...
+                    @row-updated="updateProgress"
+                    @row-inserted="updateProgress"
+                    @row-removed="updateProgress"
+                >
+                </DxDataGrid>
+            </div>
         </template>
         <script setup>
         //...
@@ -79,7 +80,7 @@ To synchronize ProgressBar with DataGrid, define an `updateProgress` function. T
             setProgressValue(Math.round((completed / all) * 100));
         };
         return(
-            <>
+            <div id="dashboard">
                 <ProgressBar ... />
                 <DataGrid ...
                     onRowUpdated={updateProgress}
@@ -87,7 +88,7 @@ To synchronize ProgressBar with DataGrid, define an `updateProgress` function. T
                     onRowRemoved={updateProgress}
                 >
                 </DataGrid>
-            </>
+            </div>
         );
     }
 

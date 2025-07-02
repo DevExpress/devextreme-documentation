@@ -1,6 +1,6 @@
 The following tutorial explains how to dynamically change editor properties based on the value of another editor.
 
-### Implement the **onEditorPreparing** event handler.
+### Implement the **onEditorPreparing** event handler
 
 Use the **editorOptions** parameter of [onEditorPreparing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onEditorPreparing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onEditorPreparing') to change editor properties. The code snippet below changes the **disabled** property of the `LastName` editor if the `FirstName` editor has no entered value:
 
@@ -183,7 +183,7 @@ Use the **editorOptions** parameter of [onEditorPreparing](/api-reference/10%20U
 
 ---
 
-### Specify the **setCellValue** callback function.
+### Specify the **setCellValue** callback function
 
 Specify [setCellValue](/api-reference/_hidden/GridBaseColumn/setCellValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#setCellValue') in columns that should affect other column editors. Call the default **setCellValue** implementation:
 

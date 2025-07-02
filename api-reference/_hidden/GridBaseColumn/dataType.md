@@ -154,7 +154,7 @@ Note the following data type specifics:
 
 *"boolean":*
 
-- {WidgetName} renders DevExtreme [CheckBox](/Documentation/Guide/UI_Components/CheckBox) components in cells.
+- {WidgetName} renders DevExtreme [CheckBox](/concepts/05%20UI%20Components/CheckBox/00%20Getting%20Started%20with%20CheckBox/05%20Create%20a%20CheckBox.md '/Documentation/Guide/UI_Components/CheckBox') components in cells.
 
 *"number":*
 
@@ -162,9 +162,9 @@ Note the following data type specifics:
 
 *"object":*
 
-- The component implements the [toString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString) method to display fields. To integrate custom display logic, implement **columns[]**.[calculateCellValue]({basewidgetpath}/Configuration/columns/#calculateCellValue) or [calculateDisplayValue]({basewidgetpath}/Configuration/columns/#calculateDisplayValue).
-- {WidgetName} does not generate [filterOperations]({basewidgetpath}/Configuration/columns/#filterOperations) for the [filterRow]({basewidgetpath}/Configuration/filterRow/).
-- The component's [filterBuilder]({basewidgetpath}/Configuration/#filterBuilder) includes only extended filter operations: *"anyof"*, *"noneof"*, *"isblank"*, and *"isnotblank"*.
+- The component implements the [toString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString) method to display fields. To integrate custom display logic, implement **columns[]**.[calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '{basewidgetpath}/Configuration/columns/#calculateCellValue') or [calculateDisplayValue](/api-reference/_hidden/GridBaseColumn/calculateDisplayValue.md '{basewidgetpath}/Configuration/columns/#calculateDisplayValue').
+- {WidgetName} does not generate [filterOperations](/api-reference/_hidden/GridBaseColumn/filterOperations.md '{basewidgetpath}/Configuration/columns/#filterOperations') for the [filterRow](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '{basewidgetpath}/Configuration/filterRow/').
+- The component's [filterBuilder](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterBuilder.md '{basewidgetpath}/Configuration/#filterBuilder') includes only extended filter operations: *"anyof"*, *"noneof"*, *"isblank"*, and *"isnotblank"*.
 
 [/note]
 

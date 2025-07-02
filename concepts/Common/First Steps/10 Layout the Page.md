@@ -46,7 +46,7 @@ Next, import and layout the components. For detailed instructions on imports, re
             <DxDataGrid id="task-grid"></DxDataGrid>
         </div>
     </template>
-    <script setup>
+    <script setup lang="ts">
     import DxProgressBar from 'devextreme-vue/progress-bar';
     import DxDataGrid from 'devextreme-vue/data-grid';
     </script>
@@ -55,12 +55,11 @@ Next, import and layout the components. For detailed instructions on imports, re
 
 Next, import and layout the components. For detailed instructions on imports, refer to the [Import DevExtreme Components](/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/#Import_DevExtreme_Components) article.
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
     import DataGrid from 'devextreme-react/data-grid';
     import ProgressBar from 'devextreme-react/progress-bar';
 
-    const App = () => {
+    function App(): JSX.Element {
         return(
             <div id="dashboard">
                 <ProgressBar id="progress" />

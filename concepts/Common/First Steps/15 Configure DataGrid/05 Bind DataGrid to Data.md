@@ -88,7 +88,7 @@ For more information about the nested components, refer to the following article
                 </DxDataGrid>
             </div>
         </template>
-        <script setup>
+        <script setup lang="ts">
         import DxDataGrid, { DxColumn } from 'devextreme-vue/data-grid';
         
         const tasks = [
@@ -108,8 +108,7 @@ For more information about the nested components, refer to the following article
 2. Assign the array to the [dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource) property.  
 3. Use the nested `Column` component to define [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/) you want to display. Remember to import the necessary nested components.
 
-        <!-- tab: App.js -->
-        import React from 'react';
+        <!-- tab: App.tsx -->
         import DataGrid, { Column } from 'devextreme-react/data-grid';
 
         const tasks = [
@@ -117,7 +116,7 @@ For more information about the nested components, refer to the following article
             { id: 2, task: "Write a blog post", dueDate: new Date(), done: true }
         ];
 
-        const App = () => {
+        function App(): JSX.Element {
             return(
                 <div id="dashboard">
                     <ProgressBar id="progress" />

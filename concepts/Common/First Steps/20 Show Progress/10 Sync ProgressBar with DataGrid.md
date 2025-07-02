@@ -58,7 +58,7 @@ To synchronize ProgressBar with DataGrid, define an `updateProgress` function. T
                 </DxDataGrid>
             </div>
         </template>
-        <script setup>
+        <script setup lang="ts">
         //...
         function updateProgress() {
             const all = tasks.length;
@@ -71,8 +71,8 @@ To synchronize ProgressBar with DataGrid, define an `updateProgress` function. T
 
 To synchronize ProgressBar with DataGrid, define an `updateProgress` function. This function checks completed tasks and updates the ProgressBar value using the `progressValue` variable. To call this function whenever a row updates, inserts, or deletes, assign it to the DataGrid event handlers: [onRowUpdated](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowUpdated), [onRowInserted](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowInserted), and [onRowRemoved](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowRemoved).
 
-    <!-- tab: App.js -->
-    const App = () => {
+    <!-- tab: App.tsx -->
+    function App(): JSX.Element {
         const [progressValue, setProgressValue] = useState(50);
         function updateProgress() {
             const all = tasks.length;

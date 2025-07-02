@@ -37,13 +37,13 @@ Create a `progressValue` variable and set its [ref](https://vuejs.org/guide/esse
     <!-- tab: App.vue -->
     <template>
         <div id="dashboard">
-            <DxProgressBar 
+            <DxProgressBar ... 
                 :value="progressValue"
             />
             <DxDataGrid ... ></DxDataGrid>
         </div>
     </template>
-    <script setup>
+    <script setup lang="ts">
     import { ref } from 'vue';
     import DxProgressBar from 'devextreme-vue/progress-bar';
     //...
@@ -55,11 +55,11 @@ Create a `progressValue` variable and set its [ref](https://vuejs.org/guide/esse
 
 Create a `progressValue` variable and set its [state](https://react.dev/reference/react/useState) to 50, as half of the tasks in the initial list are completed. Then, bind the [value](/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#value) option to this variable. Directly assigning 50 will not work, as the variable will synchronize ProgressBar and DataGrid later.
 
-    <!-- tab: App.js -->
-    import React, { useState } from 'react';
+    <!-- tab: App.tsx -->
+    import { useState } from 'react';
     import ProgressBar from 'devextreme-react/progress-bar';
 
-    const App = () => {
+    function App(): JSX.Element {
         const [progressValue, setProgressValue] = useState(50);
         return(
             <div id="dashboard">

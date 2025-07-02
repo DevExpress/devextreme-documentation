@@ -78,19 +78,18 @@ Remember to import the `DxoDataGridEditingComponent` component:
             </DxDataGrid>
         </div>
     </template>
-    <script setup>
+    <script setup lang="ts">
     import DxDataGrid, { DxColumn, DxEditing } from 'devextreme-vue/data-grid';
     // ...
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
     import DataGrid, { Column, Editing } from 'devextreme-react/data-grid';
     // ...
 
-    const App = () => {
+    function App(): JSX.Element {
         return(
             <div id="dashboard">
                 <ProgressBar id="progress" />

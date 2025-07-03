@@ -37,7 +37,7 @@
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
-    import { DxStepperTypes } from 'devextreme-angular/stepper';
+    import { DxStepperTypes } from 'devextreme-angular/ui/stepper';
 
     @Component({
         selector: 'app-root',
@@ -45,7 +45,7 @@
         styleUrls: ['./app.component.css']
     })
     export class AppComponent {
-        steps = [
+        steps: DxStepperTypes.Item[] = [
             {}
         ]
     }
@@ -77,9 +77,11 @@
 
     <!-- tab: App.vue -->
     <script setup lang="ts">
-        import { DxStepper, DxItem, DxStepperTypes } from 'devextreme-vue/stepper';
         import { reactive } from 'vue';
-        const items = reactive([
+        import { DxStepper, DxItem, DxStepperTypes } from 'devextreme-vue/stepper';
+        import 'devextreme/dist/css/dx.light.css';
+
+        const items: DxStepperTypes.Item[] = reactive([
             {}
         ]);
     </script>
@@ -99,17 +101,20 @@
     <!-- tab: App.tsx -->
     import React, { JSX, useState } from 'react';
     import { Stepper, Item, StepperTypes } from 'devextreme-react/stepper';
+    import 'devextreme/dist/css/dx.light.css';
 
     export default function App(): JSX.Element {
-        const [steps, setSteps] = useState([
+        const [steps, setSteps] = useState<any[]>([
             {}
         ]);
 
         return (
             <Stepper>
-                {steps.map((item, index) => (
-                    <Item key={index} {...item} />
-                ))}
+                {
+                    steps.map((item, index) => (
+                        <Item key={index} {...item} />
+                    ))
+                }
             </Stepper>
         );
     }

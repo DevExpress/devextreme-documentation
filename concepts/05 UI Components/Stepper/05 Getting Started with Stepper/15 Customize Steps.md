@@ -51,7 +51,7 @@ For instructions on how to define item templates, refer to [Object Structures - 
         // ...
     })
     export class AppComponent {
-        steps = [
+        steps: DxStepperTypes.Item[] = [
             { label: 'Personal Details', template: 'starTemplate' },
             // ...
         ];
@@ -70,7 +70,7 @@ For instructions on how to define item templates, refer to [Object Structures - 
     <!-- tab: App.vue -->
     <script setup lang="ts">
         // ...
-        const items = reactive([
+        const items: DxStepperTypes.Item[] = reactive([
             { label: 'Personal Details', template: 'star' },
             // ...
         ]);
@@ -105,17 +105,19 @@ For instructions on how to define item templates, refer to [Object Structures - 
     <!-- tab: App.tsx -->
     // ...
 
-    const renderStarTemplate = (data: StepperTypes.TemplateData) => (
-        <>
-            <div className="star dx-step-indicator"></div>
-            <div className="dx-step-caption">
-                <div className="dx-step-label">{data.label}</div>
-            </div>
-        </>
-    );
-
     export default function App(): JSX.Element {
-        const [steps, setSteps] = useState([
+        function renderStarTemplate(data: StepperTypes.Item): JSX.Element {
+            return (
+                <React.Fragment>
+                    <div className="star dx-step-indicator"></div>
+                    <div className="dx-step-caption">
+                    <div className="dx-step-label">{data.label}</div>
+                    </div>
+                </React.Fragment>
+            );
+        }
+
+        const [steps, setSteps] = useState<any[]>([
             { label: 'Personal Details', render: renderStarTemplate },
             // ...
         ]);

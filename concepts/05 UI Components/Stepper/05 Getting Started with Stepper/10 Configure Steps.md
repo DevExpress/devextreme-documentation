@@ -58,7 +58,7 @@ The code below assigns six steps to the component with different configuration o
         // ...
     })
     export class AppComponent {
-        steps = [
+        steps: DxStepperTypes.Item[] = [
             { label: 'Personal Details' },
             { label: 'Program Selection', icon: 'detailslayout' },
             { label: 'Campus and Start Dates', icon: 'map' },
@@ -74,7 +74,7 @@ The code below assigns six steps to the component with different configuration o
     <!-- tab: App.vue -->
     <script setup lang="ts">
         // ...
-        const items = reactive([
+        const items: DxStepperTypes.Item[] = reactive([
             { label: 'Personal Details' },
             { label: 'Program Selection', icon: 'detailslayout' },
             { label: 'Campus and Start Dates', icon: 'map' },
@@ -94,13 +94,13 @@ The code below assigns six steps to the component with different configuration o
     // ...
 
     export default function App(): JSX.Element {
-        const [steps, setSteps] = useState([
+        const [steps, setSteps] = useState<any[]>([
             { label: 'Personal Details' },
             { label: 'Program Selection', icon: 'detailslayout' },
             { label: 'Campus and Start Dates', icon: 'map' },
             { label: 'Supporting Documents', icon: 'textdocument' },
             { label: 'Scholarship and Aid', icon: 'money', optional: true },
-            { label: 'Review and Submit', icon: 'send' }
+            { label: 'Review and Submit', icon: 'send' },
         ]);
 
         return (

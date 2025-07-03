@@ -19,10 +19,10 @@ Configures the form item's editor.
 
     <!-- tab: app.component.html -->
     <dx-form ... >
-        <dxi-item ...
+        <dxi-form-item ...
             editorType="dxDateBox"
             [editorOptions]="{ width: '100%' }">
-        </dxi-item>
+        </dxi-form-item>
     </dx-form>
 
     <!-- tab: app.module.ts -->
@@ -67,14 +67,14 @@ If you want to define multiple editors and avoid inline declarations, combine al
 
     <!-- tab: app.component.html -->
     <dx-form ... >
-        <dxi-item ...
+        <dxi-form-item ...
             editorType="dxDateBox"
             [editorOptions]="dateBoxOptions">
-        </dxi-item>
-        <dxi-item ...
+        </dxi-form-item>
+        <dxi-form-item ...
             editorType="dxTextBox"
             [editorOptions]="textBoxOptions">
-        </dxi-item>
+        </dxi-form-item>
     </dx-form>
 
 ##### Vue
@@ -116,13 +116,13 @@ If you use TypeScript, want to define multiple editors, and avoid inline declara
     <!-- tab: App.vue -->
     <template>
     <DxForm>
-        <DxItem editor-type="dxDateBox" :editor-options="dateBoxOptions" />
-        <DxItem editor-type="dxTextBox" :editor-options="textBoxOptions" />
+        <DxSimpleItem editor-type="dxDateBox" :editor-options="dateBoxOptions" />
+        <DxSimpleItem editor-type="dxTextBox" :editor-options="textBoxOptions" />
     </DxForm>
     </template>
 
     <script setup lang="ts">
-    import DxForm, { DxItem } from "devextreme-vue/form";
+    import DxForm, { DxSimpleItem } from "devextreme-vue/form";
     import type { DxDateBoxTypes } from "devextreme-vue/date-box";
     import type { DxTextBoxTypes } from "devextreme-vue/text-box";
     import 'devextreme/dist/css/dx.light.css';
@@ -166,7 +166,7 @@ If you use TypeScript, want to define multiple editors, and avoid inline declara
 
     <!-- tab: App.tsx -->
     import 'devextreme/dist/css/dx.light.css';
-    import Form, { Item } from 'devextreme-react/form';
+    import Form, { SimpleItem } from 'devextreme-react/form';
     import type { JSX } from 'react';
     import type { DateBoxTypes } from 'devextreme-react/date-box';
     import type { TextBoxTypes } from 'devextreme-react/text-box';
@@ -179,8 +179,8 @@ If you use TypeScript, want to define multiple editors, and avoid inline declara
     function App(): JSX.Element {
         return (
             <Form>
-                <Item editorType="dxDateBox" editorOptions={dateBoxOptions} />
-                <Item editorType="dxTextBox" editorOptions={textBoxOptions} />
+                <SimpleItem editorType="dxDateBox" editorOptions={dateBoxOptions} />
+                <SimpleItem editorType="dxTextBox" editorOptions={textBoxOptions} />
             </Form>
         );
     }

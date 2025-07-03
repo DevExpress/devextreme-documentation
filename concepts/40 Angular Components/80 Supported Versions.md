@@ -1,3 +1,5 @@
+[note] DevExtreme components v25.1 support [Angular 20](https://blog.angular.dev/announcing-angular-v20-b5c9c06cf301).
+
 <table class="dx-table">
     <tr>
         <th>DevExtreme</th>

@@ -26,6 +26,6 @@ The data of the item whose title is clicked.
 #include common-ref-elementparam with { element: "item" }
 
 ##### field(e.itemIndex): Number
-<!-- Description goes here -->
+The clicked item's index.
 
 ---

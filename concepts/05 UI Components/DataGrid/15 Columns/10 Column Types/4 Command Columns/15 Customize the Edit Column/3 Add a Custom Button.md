@@ -1,4 +1,4 @@
-Add and configure custom buttons in the **columns[]**.[buttons](/api-reference/_hidden/dxDataGridColumn/buttons '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/') array. The component passes a [ColumnButtonClickEvent](/Documentation/ApiReference/UI_Components/dxDataGrid/Types/ColumnButtonClickEvent/) parameter to custom button [onClick](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/#onClick) handlers:
+Add and configure custom buttons in the **columns[]**.[buttons](/api-reference/_hidden/dxDataGridColumn/buttons '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/') array. The component passes a [ColumnButtonClickEvent](/api-reference/10%20UI%20Components/dxDataGrid/9%20Types/ColumnButtonClickEvent '/Documentation/ApiReference/UI_Components/dxDataGrid/Types/ColumnButtonClickEvent/') parameter to custom button [onClick](/api-reference/_hidden/dxDataGridColumnButton/onClick.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/#onClick') handlers:
 
 ---
 

@@ -33,11 +33,11 @@ You can also specify other column chooser settings, such as [mode](/api-referenc
             <dxo-card-view-column-chooser-selection
                 [selectByClick]="true"
             ></dxo-card-view-column-chooser-selection>
-            <dxo-card-view-column-chooser-position
+            <dxo-card-view-position
                 my="right top"
                 at="right bottom"
                 of=".dx-cardview-column-chooser-button"
-            ></dxo-card-view-column-chooser-position>
+            ></dxo-card-view-position>
         </dxo-card-view-column-chooser>
     </dx-card-view>
 

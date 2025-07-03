@@ -2,9 +2,9 @@ This help topic describes how to improve PivotGrid performance when binding and 
 
 ### Enable Remote Operations
 
-The DevExtreme PivotGrid performs all data operations such as filtering and grouping on the client side. To enhance component performance, enable **PivotGridDataSource**.[remoteOperations](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/#remoteOperations) to process data on the server side. PivotGrid **remoteOperations** support [XmlaStore](/Documentation/ApiReference/Data_Layer/XmlaStore/) and [CustomStore](/Documentation/ApiReference/Data_Layer/CustomStore/) store types, along with **CustomStore** instances created with [DevExtreme.AspNet.Data](https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/README.md).[createStore](https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/docs/client-side-with-jquery.md#api-reference).
+The DevExtreme PivotGrid performs all data operations, such as filtering and grouping, on the client side. To enhance component performance, enable **PivotGridDataSource**.[remoteOperations](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/#remoteOperations) to process data on the server side. PivotGrid **remoteOperations** support [XmlaStore](/Documentation/ApiReference/Data_Layer/XmlaStore/) and [CustomStore](/Documentation/ApiReference/Data_Layer/CustomStore/) store types, along with **CustomStore** instances created with [DevExtreme.AspNet.Data](https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/README.md).[createStore](https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/docs/client-side-with-jquery.md#api-reference).
 
-To learn more about the **createStore** method, refer to the following topic: [Web API, PHP and MongoDB Data Sources](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/)
+For more information about the **createStore** method, refer to the following topic: [Web API, PHP and MongoDB Data Sources](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/)
 
 For more information about integrating a Web API service with PivotGrid, refer to the following demo:
 
@@ -22,7 +22,7 @@ When binding the component to an OLAP Cube with an **XmlaStore**, you can enable
 
 ### Disable the Expand All Button
 
-The "Expand All" button can request a lot of data from your data source at once. This can strain your server resources and cause other performance issues with your application if you are using a remote data store. Disable [allowExpandAll](/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#allowExpandAll) if you are using large remote datasets to avoid issues with data loading.
+The "Expand All" button can request a lot of data from your data source at once. This can strain server resources and cause other performance issues with your application if you are using a remote data store. Disable [allowExpandAll](/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#allowExpandAll) if you are using large remote datasets to avoid issues with data loading.
 
 ### Enable State Storing
 

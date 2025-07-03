@@ -1,6 +1,6 @@
 User information is stored in a context declared in the `contexts\auth.js` module.
 
-To access user information from any part of the application, use the `useAuth` hook from the `contexts\auth-hooks.js`. This hook returns an object with the following fields:
+To access user information from any part of the application, use the `useAuth` hook from `contexts\auth-hooks.js`. This hook returns an object with the following fields:
 
 <table class="dx-table">
     <tr>
@@ -13,11 +13,11 @@ To access user information from any part of the application, use the `useAuth` h
     </tr>
     <tr>
         <td>signIn</td>
-        <td>A function that sends a sign-in request to the server and saves the received user information. Accepts the user's email and password as parameters.</td>
+        <td>A function that sends a sign-in request to the server and saves received user information. Accepts user email and password as parameters.</td>
     </tr>
     <tr>
         <td>signOut</td>
-        <td>A function that clears information about the current user.</td>
+        <td>A function that clears current user information.</td>
     </tr>
     <tr>
         <td>loading</td>

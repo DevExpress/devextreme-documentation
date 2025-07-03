@@ -14,7 +14,7 @@ Specifies whether users can drag and drop appointments.
 
 [note]
 
-- When users drag and drop a [recurring appointment](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/RecurringAppointments/), only its start and end date and time change, but not recurrence settings. If users want to change the recurrence settings, they should use the appointment details form.
+- When users drag and drop a [recurring appointment](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/RecurringAppointments/), only its start and end date and time change, not recurrence settings. To change the recurrence settings, they should use the appointment details form.
 - Dragging and dropping recurring appointments and choosing "Edit Series" in the "Edit Recurring Appointment" popup changes the start date of the recurring appointment series. The component removes all appointments before the modified appointment.
 
 [/note]

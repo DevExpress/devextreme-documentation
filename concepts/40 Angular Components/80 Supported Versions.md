@@ -1,4 +1,4 @@
-[note] DevExtreme components v25.1 support [Angular 20](https://blog.angular.dev/announcing-angular-v20-b5c9c06cf301).
+[note] DevExtreme v25.1 supports [Angular 20](https://blog.angular.dev/announcing-angular-v20-b5c9c06cf301). Tests show full compatibility with DevExtreme UI components. No issues detected.
 
 <table class="dx-table">
     <tr>

@@ -1,13 +1,10 @@
 ---
-id: CellAddress
-type: Object
-module: common/export/excel
-export: CellAddress
+id: TabPanelItemInfo.itemIndex
+type: Number
 ---
 ---
 ##### shortDescription
 <!-- Description goes here -->
 
 ---
-
 <!-- Description goes here -->

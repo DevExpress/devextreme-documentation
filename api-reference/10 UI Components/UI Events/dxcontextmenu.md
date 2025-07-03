@@ -2,6 +2,7 @@
 id: UI Events.dxcontextmenu
 module: events/contextmenu
 type: eventType
+hidden: 
 ---
 ---
 ##### shortDescription

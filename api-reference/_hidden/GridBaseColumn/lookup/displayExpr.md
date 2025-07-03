@@ -142,12 +142,12 @@ This property accepts a string - the name of the data field that provides displa
 
     ---
 
-- When [headerFilter](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/headerFilter/) and **columns**.[lookup](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/) are both enabled, ensure **data** is not `null` before accessing its properties in the **displayExpr** method of lookup columns:
+- When [headerFilter](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/headerFilter '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/headerFilter/') and **columns**.[lookup](/api-reference/_hidden/GridBaseColumn/lookup '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/') are both enabled, ensure **data** is not `null` before accessing its properties in the **displayExpr** method of lookup columns:
 
         <!-- tab: JavaScript -->
         displayExpr: (data) => { return data ? `${data.ID} ${data.Name}` : '' }
 
-    The `null` value adds a "(Blanks)" item to column header filters. To avoid displaying this "(Blanks)" item, implement **DataSource**.[postProcess](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#postProcess) in the **columns**.**headerFilter**.[dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#dataSource) method of lookup columns:
+    The `null` value adds a "(Blanks)" item to column header filters. To avoid displaying this "(Blanks)" item, implement **DataSource**.[postProcess](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/postProcess.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#postProcess') in the **columns**.**headerFilter**.[dataSource](/api-reference/_hidden/GridBaseColumn/headerFilter/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#dataSource') method of lookup columns:
 
     ---
 

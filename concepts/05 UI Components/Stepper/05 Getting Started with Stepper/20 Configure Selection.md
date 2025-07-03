@@ -82,7 +82,7 @@ This tutorial uses **onSelectionChanged** to disable steps as users move through
     export default function App(): JSX.Element {
         // ...
 
-        const onSelectionChanged = (e: StepperTypes.SelectionChangedEvent) => {
+        function onSelectionChanged(e: StepperTypes.SelectionChangedEvent): void {
             const newItem = e.addedItems[0];
             const newIndex = steps.findIndex((item) => item.label === newItem.label);
 
@@ -91,7 +91,7 @@ This tutorial uses **onSelectionChanged** to disable steps as users move through
                 updated[newIndex - 1] = { ...updated[newIndex - 1], disabled: true };
                 setSteps(updated);
             }
-        };
+        }
 
         return (
             <Stepper onSelectionChanged={onSelectionChanged}>

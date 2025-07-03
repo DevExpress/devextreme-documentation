@@ -10,4 +10,4 @@ Specifies whether to synchronize the [filter row](/concepts/05%20UI%20Components
 ---
 Synchronization is enabled if the [filter panel](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterPanel '/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/filterPanel/') is visible. When it is enabled, check that each column that allows filter operations has the [dataField](/api-reference/_hidden/GridBaseColumn/dataField.md '{basewidgetpath}/Configuration/columns/#dataField') or [name](/api-reference/_hidden/GridBaseColumn/name.md '{basewidgetpath}/Configuration/columns/#name') property specified.
 
-[note] If this property is enabled, the component maintains filters specified in **header filters** and **filter rows** when columns are hidden.
+[note] If this property is enabled, the component keeps filters specified in **header filters** and **filter rows** active when columns are hidden.

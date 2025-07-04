@@ -14,7 +14,7 @@ Import `DxComponentTypes` (an *aggregated export*) where `Component` is the comp
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
-    import { DxDateBoxTypes } from 'devextreme-angular/date-box';
+    import { DxDateBoxTypes } from 'devextreme-angular/ui/date-box';
 
     @Component({
         selector: 'app-root',
@@ -47,7 +47,7 @@ Import `DxComponentTypes` (an *aggregated export*) where `Component` is the comp
 
     <script setup lang="ts">
     import DxDateBox from "devextreme-vue/date-box";
-    import type { DxDateBoxTypes } from "devextreme-vue/date-box";
+    import { type DxDateBoxTypes } from "devextreme-vue/date-box";
 
     const dateType: DxDateBoxTypes.DateType = "datetime";
     </script>
@@ -61,7 +61,7 @@ Each DevExtreme component has its own set of types. Use *aggregated exports* to 
 Import `ComponentTypes` (an *aggregated export*) where `Component` is the component name. For example, you need to import `DateBoxTypes` if you work with a `DateBox`.
 
     <!-- tab: App.tsx -->
-    import DateBox, { DateBoxTypes } from 'devextreme-react/date-box';
+    import DateBox, { type DateBoxTypes } from 'devextreme-react/date-box';
 
     const dateType: DateBoxTypes.DateType = 'datetime';
 

@@ -29,7 +29,7 @@ The input field's text.
 
 You can specify DOM events after which the component calls this function. Use the [customItemCreateEvent](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/customItemCreateEvent.md '{basewidgetpath}/Configuration/#customItemCreateEvent') property for this purpose. Besides the event passed to this property, the item can also be created when users press the **Enter** key.
 
-The following code shows how to enable item creation when the **Space** key is pressed:
+The following code shows how to create custom items when the **Space** key is pressed:
 
 ---
 ##### jQuery
@@ -256,6 +256,13 @@ The following code shows how to enable item creation when the **Space** key is p
     export default App;
 
 ---
+
+To allows users to add custom items without updating the component [dataSource](/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#dataSource), integrate the following **onCustomItemCreating** implementation:
+
+    <!-- tab: JavaScript -->
+    onCustomItemCreating(data) {
+        data.customItem = { Name: data.text };
+    }
 
 #####See Also#####
 - [Create a User-Defined Item](/concepts/05%20UI%20Components/SelectBox/15%20Create%20a%20User-Defined%20Item.md '/Documentation/Guide/UI_Components/{WidgetName}/Create_a_User-Defined_Item/')

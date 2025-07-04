@@ -11,7 +11,7 @@ A function that is executed when a tab is clicked or tapped.
 Information about the event.
 
 ##### field(e.component): {WidgetName}
-The UI component's instance.
+UI component instance.
 
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
@@ -26,6 +26,6 @@ The data of the item whose title is clicked.
 #include common-ref-elementparam with { element: "item" }
 
 ##### field(e.itemIndex): Number
-<!-- Description goes here -->
+Clicked item index.
 
 ---

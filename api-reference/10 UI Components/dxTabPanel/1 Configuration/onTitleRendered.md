@@ -8,10 +8,10 @@ default: null
 A function that is executed after a tab is rendered.
 
 ##### param(e): ui/tab_panel:TitleRenderedEvent
-Information about the event.
+Event information.
 
 ##### field(e.component): {WidgetName}
-The UI component's instance.
+UI component instance.
 
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
@@ -23,6 +23,6 @@ The data of the item whose title is rendered.
 #include common-ref-elementparam with { element: "item" }
 
 ##### field(e.itemIndex): Number
-<!-- Description goes here -->
+Rendered item index.
 
 ---

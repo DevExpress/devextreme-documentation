@@ -1,0 +1,157 @@
+.components .components-title,
+.components .components-subtitle {
+  margin: 0;
+  padding: 0;
+}
+.components .components-subtitle {
+  text-align: center;
+}
+.components .components-frameworks {
+  margin: 40px auto;
+}
+.components .components-block {
+  padding: 16px 0;
+}
+.components .components-block-title {
+  margin: 0;
+  padding: 24px 0;
+  border-bottom: 1px solid;
+  display: flex;
+}
+.components .components-block-title svg {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  padding-right: 8px;
+}
+.components .components-block-content {
+  display: flex;
+  gap: 24px 48px;
+  padding: 32px 0;
+}
+.components .components-block-content-text {
+  flex: 1;
+  margin: 0;
+  padding-top: 8px;
+}
+.components .components-list {
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px 40px;
+}
+.components .components-list-item {
+  position: relative;
+  width: 100px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.components .components-list-item svg {
+  width: 64px;
+  height: 64px;
+}
+.components .components-list-item .badge {
+  position: absolute;
+  font-size: 12px;
+  right: 12px;
+  top: 12px;
+  padding: 2px 4px;
+  border: 2px solid white;
+  border-radius: 999em;
+  color: white;
+}
+.components .components-list-item-name {
+  margin: 0;
+  text-align: center;
+}
+.components .components-list-item:hover {
+  text-decoration: none;
+}
+.components .components-list-container {
+  column-width: 200px;
+  margin: 8px 0 32px 0;
+  padding: 0 20px;
+  transition: opacity 0.5s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.components .components-list-container.fade-in {
+  animation: fadeIn 1.5s ease;
+}
+.components .components-list-container .category-container {
+  padding-top: 32px;
+  break-inside: avoid;
+  min-width: 200px;
+}
+.components .components-list-container .category-container .category-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+.components .components-list-container .category-container .demos-list {
+  display: flex;
+  flex-flow: column;
+  gap: 8px;
+}
+.components .components-list-container .category-container .demos-list .link-container a {
+  line-height: 20px;
+  text-decoration: underline;
+}
+.components .components-list-container .category-container .demos-list .link-container:after {
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+  height: 20px;
+  font-weight: 500;
+  padding: 0 6px;
+  margin-left: 6px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+.components .components-list-container .category-container .demos-list .link-container.Roadmap:after {
+  content: "In Progress";
+  background-color: #fb8c00;
+}
+.components .components-list-container .category-container .demos-list .link-container.New:after {
+  content: "New";
+  background-color: #dd1144;
+}
+.components .components-list-container .category-container .demos-list .link-container.Updated:after {
+  content: "Upd";
+  background-color: #42b883;
+}
+@media only screen and (max-width: 1400px) {
+  .components .components-title,
+  .components .components-subtitle {
+    text-align: center;
+  }
+  .components .components-frameworks {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .components .components-content {
+    text-align: center;
+  }
+  .components .components-block-title {
+    justify-content: center;
+  }
+  .components .components-block-content {
+    flex-direction: column;
+  }
+  .components .components-list {
+    justify-content: center;
+  }
+}

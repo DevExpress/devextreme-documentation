@@ -21642,6 +21642,9 @@
     "tabPanelItemInfo.itemElement": {
       "vue": "item-element"
     },
+    "tabPanelItemInfo.itemIndex": {
+      "vue": "item-index"
+    },
     "targetedAppointmentInfo.appointmentData": {
       "angular": "dxo-appointment-data",
       "react": "AppointmentData",

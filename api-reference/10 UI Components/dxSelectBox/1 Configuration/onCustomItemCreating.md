@@ -29,7 +29,7 @@ The input field's text.
 
 You can specify DOM events after which the component calls this function. Use the [customItemCreateEvent](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/customItemCreateEvent.md '{basewidgetpath}/Configuration/#customItemCreateEvent') property for this purpose. Besides the event passed to this property, the item can also be created when users press the **Enter** key.
 
-The following code shows how to enable item creation when the **Space** key is pressed:
+The following code shows how to create custom items when the **Space** key is pressed:
 
 ---
 ##### jQuery
@@ -254,6 +254,85 @@ The following code shows how to enable item creation when the **Space** key is p
     }
 
     export default App;
+
+---
+
+To allows users to add custom items without updating the component [dataSource]({basewidgetpath}/Configuration/#dataSource), integrate the following **onCustomItemCreating** implementation:
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#{widgetName}").dx{WidgetName}({
+            // ...
+            displayExpr: "Name",
+            acceptCustomValue: true,
+            onCustomItemCreating(e) {
+                e.customItem = { Name: e.text };
+            }
+        })
+    })
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-{widget-name} ...
+        displayExpr="Name"
+        [acceptCustomValue]="true"
+        (onCustomItemCreating)="onCustomItemCreating($event)"
+    ></dx-{widget-name}>
+
+    <!-- tab: app.component.ts -->
+    import { Dx{WidgetName}Module, type Dx{WidgetName}Types } from "devextreme-angular/ui/{widget-name}"
+
+    // ...
+    export class App {
+        onCustomItemCreating(e: Dx{WidgetName}Types.CustomItemCreatingEvent) {
+            e.customItem = { Name: e.text };
+        }
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <script setup lang="ts">
+    import { Dx{WidgetName}, type Dx{WidgetName}Types } from 'devextreme-vue/{widget-name}';
+
+    function onCustomItemCreating(e: Dx{WidgetName}Types.CustomItemCreatingEvent) {
+        e.customItem = { Name: e.text };
+    }
+    </script>
+
+    <template>
+        <Dx{WidgetName} ...
+            displayExpr="Name"
+            :acceptCustomValue="true"
+            :onCustomItemCreating="onCustomItemCreating"
+        />
+    </template>
+
+##### React
+
+    <!-- tab: App.tsx -->
+    import { {WidgetName}, type {WidgetName}Types } from 'devextreme-react/{widget-name}';
+
+    function App() {
+        function onCustomItemCreating(e: {WidgetName}Types.CustomItemCreatingEvent) {
+            e.customItem = { Name: e.text };
+        }
+
+        return (
+            <>
+                <{WidgetName} ...
+                    displayExpr="Name"
+                    acceptCustomValue={true}
+                    onCustomItemCreating={onCustomItemCreating}
+                />
+            </>
+        )
+    }
 
 ---
 

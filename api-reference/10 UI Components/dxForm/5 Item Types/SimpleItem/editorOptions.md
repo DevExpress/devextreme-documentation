@@ -45,7 +45,7 @@ Configures the form item's editor.
     })
     export class AppModule { }
 
-If you want to define multiple editors and avoid inline declarations, combine all editor types into a [union](/Documentation/Guide/Common/TypeScript_Guides/Best_Practices/#Using_Unions_Instead_of_Base_Classes). Next, assign each of your **editorOptions** an object with this union type.
+If you want to define multiple editors and avoid inline declarations, combine all editor types into a [union](/Documentation/Guide/Common/TypeScript_Guides/Best_Practices/#Using_Unions_Instead_of_Base_Classes). Then, assign an object with this union type to each of your **editorOptions* .
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -111,7 +111,7 @@ If you want to define multiple editors and avoid inline declarations, combine al
     }
     </script>
 
-If you use TypeScript, want to define multiple editors, and avoid inline declarations, combine all editor types into a [union](/Documentation/Guide/Common/TypeScript_Guides/Best_Practices/#Using_Unions_Instead_of_Base_Classes). Next, assign each of your **editorOptions** an object with this union type.
+If you use TypeScript, want to define multiple editors, and avoid inline declarations, combine all editor types into a [union](/Documentation/Guide/Common/TypeScript_Guides/Best_Practices/#Using_Unions_Instead_of_Base_Classes). Then, assign an object with this union type to each of your **editorOptions**.
 
     <!-- tab: App.vue -->
     <template>
@@ -189,7 +189,7 @@ If you use TypeScript, want to define multiple editors, and avoid inline declara
 
 ---
 
-[note] Some editor properties specified in **editorOptions** can be overwritten by Form settings - for instance, labels and placeholders. The `id` and `name` attributes of the [inputAttr](/api-reference/10%20UI%20Components/dxTextBox/1%20Configuration/inputAttr.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#inputAttr') property are also overwritten. The Form generates these attributes automatically and uses them for addressing the DOM elements.
+[note] Some editor properties specified in **editorOptions** can be overwritten by Form settings, for instance, labels and placeholders. The `id` and `name` attributes of the [inputAttr](/api-reference/10%20UI%20Components/dxTextBox/1%20Configuration/inputAttr.md '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/#inputAttr') property are also overwritten. The Form generates these attributes automatically and uses them to address the DOM elements.
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-datagrid-display-htmleditor-in-form-editing-mode"

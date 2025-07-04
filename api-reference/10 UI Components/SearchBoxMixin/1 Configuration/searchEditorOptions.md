@@ -73,7 +73,7 @@ The component implements a DevExtreme [TextBox](/Documentation/Guide/UI_Componen
     import { type TextBoxTypes } from 'devextreme-react/text-box';
 
     function App() {
-        const textboxOptions: DxTextBoxTypes.Properties = {
+        const textboxOptions: TextBoxTypes.Properties = {
             label: "Email",
             labelMode: "floating",
             showClearButton: true,

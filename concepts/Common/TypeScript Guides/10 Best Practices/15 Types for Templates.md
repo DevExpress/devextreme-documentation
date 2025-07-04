@@ -3,8 +3,8 @@
 To define types for such templates, import the `ComponentTypes` declaration and find the type that ends with `TemplateData`:
 
     <!-- tab: App.tsx -->
-    import DataGrid, { DataGridTypes } from 'devextreme-react/data-grid';
-    import Calendar, { CalendarTypes } from 'devextreme-react/calendar';
+    import DataGrid, { type DataGridTypes } from 'devextreme-react/data-grid';
+    import Calendar, { type CalendarTypes } from 'devextreme-react/calendar';
 
     // A rendering function
     const gridCell = (data: DataGridTypes.ColumnCellTemplateData) => {

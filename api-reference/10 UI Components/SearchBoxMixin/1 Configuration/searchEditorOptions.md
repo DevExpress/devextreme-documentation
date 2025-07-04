@@ -70,7 +70,7 @@ The component implements a DevExtreme [TextBox](/Documentation/Guide/UI_Componen
 
     <!-- tab: App.tsx -->
     import { {WidgetName} } from 'devextreme-react/{widget-name}';
-    import { type DxTextBoxTypes } from 'devextreme-react/text-box';
+    import { type TextBoxTypes } from 'devextreme-react/text-box';
 
     function App() {
         const textboxOptions: DxTextBoxTypes.Properties = {

@@ -277,14 +277,14 @@ To allows users to add custom items without updating the component [dataSource](
 
 ##### Angular
 
-    <!-- tab: app.html -->
+    <!-- tab: app.component.html -->
     <dx-{widget-name} ...
         displayExpr="Name"
         [acceptCustomValue]="true"
         (onCustomItemCreating)="onCustomItemCreating($event)"
     ></dx-{widget-name}>
 
-    <!-- tab: app.ts -->
+    <!-- tab: app.component.ts -->
     import { Dx{WidgetName}Module, type Dx{WidgetName}Types } from "devextreme-angular/ui/{widget-name}"
 
     // ...

@@ -1,4 +1,8 @@
-The DevExtreme Vue UI Component Suite offers 80 responsive, touch-enabled UI components for Vue applications. This suite features a data grid, interactive charts, data editors, and various navigation and utility components.
+The DevExtreme Vue UI Component Suite offers 80+ responsive, touch-enabled UI components for Vue applications. This suite features a data grid, interactive charts, data editors, and various navigation and utility components.
+
+## Explore All 80+ Vue Components
+
+<div class="simulator-desktop-container" data-view="/Content/Applications/25_1/ComponentList/index.html, /Content/Applications/25_1/ComponentList/index.css"></div>
 
 ## Try DevExtreme Components in Your Project
 

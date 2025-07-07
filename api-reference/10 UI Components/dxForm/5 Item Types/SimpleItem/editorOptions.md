@@ -45,7 +45,7 @@ Configures the form item's editor.
     })
     export class AppModule { }
 
-If you want to define multiple editors and avoid inline declarations, combine all editor types into a [union](/Documentation/Guide/Common/TypeScript_Guides/Best_Practices/#Using_Unions_Instead_of_Base_Classes). Then, assign an object with this union type to each of your **editorOptions* .
+If you want to define multiple editors and avoid inline declarations, combine all editor types into a [union](/concepts/Common/TypeScript%20Guides/10%20Best%20Practices/05%20Using%20Unions%20Instead%20of%20Base%20Classes.md '/Documentation/Guide/Common/TypeScript_Guides/Best_Practices/#Using_Unions_Instead_of_Base_Classes'). Then, assign an object with this union type to each of your **editorOptions* .
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -111,7 +111,7 @@ If you want to define multiple editors and avoid inline declarations, combine al
     }
     </script>
 
-If you use TypeScript, want to define multiple editors, and avoid inline declarations, combine all editor types into a [union](/Documentation/Guide/Common/TypeScript_Guides/Best_Practices/#Using_Unions_Instead_of_Base_Classes). Then, assign an object with this union type to each of your **editorOptions**.
+If you use TypeScript, want to define multiple editors, and avoid inline declarations, combine all editor types into a [union](/concepts/Common/TypeScript%20Guides/10%20Best%20Practices/05%20Using%20Unions%20Instead%20of%20Base%20Classes.md '/Documentation/Guide/Common/TypeScript_Guides/Best_Practices/#Using_Unions_Instead_of_Base_Classes'). Then, assign an object with this union type to each of your **editorOptions**.
 
     <!-- tab: App.vue -->
     <template>
@@ -162,7 +162,7 @@ If you use TypeScript, want to define multiple editors, and avoid inline declara
     }
     export default App;
 
-If you use TypeScript, want to define multiple editors, and avoid inline declarations, combine all editor types into a [union](/Documentation/Guide/Common/TypeScript_Guides/Best_Practices/#Using_Unions_Instead_of_Base_Classes). Next, assign each of your **editorOptions** an object with this union type.
+If you use TypeScript, want to define multiple editors, and avoid inline declarations, combine all editor types into a [union](/concepts/Common/TypeScript%20Guides/10%20Best%20Practices/05%20Using%20Unions%20Instead%20of%20Base%20Classes.md '/Documentation/Guide/Common/TypeScript_Guides/Best_Practices/#Using_Unions_Instead_of_Base_Classes'). Next, assign each of your **editorOptions** an object with this union type.
 
     <!-- tab: App.tsx -->
     import 'devextreme/dist/css/dx.light.css';

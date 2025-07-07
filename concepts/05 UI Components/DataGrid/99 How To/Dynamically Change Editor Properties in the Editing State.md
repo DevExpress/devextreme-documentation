@@ -296,7 +296,7 @@ Specify [setCellValue](/api-reference/_hidden/GridBaseColumn/setCellValue.md '/D
 
 The **defaultSetCellValue** call causes all editors to rerender and apply their new properties.
 
-[note] To ensure editors repaint and apply your changes correctly, disable [repaintChangesOnly](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#repaintChangesOnly).
+[note] To ensure editors repaint and apply your changes correctly, disable [repaintChangesOnly](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/repaintChangesOnly.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#repaintChangesOnly').
 
 The complete project is available on GitHub:
 

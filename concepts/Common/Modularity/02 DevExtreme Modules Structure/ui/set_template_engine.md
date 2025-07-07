@@ -1,1 +1,1 @@
-This module is deprecated. Use the [common](/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#common) module instead.
+This module is deprecated. Use the [common](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/common '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#common') module instead.

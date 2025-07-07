@@ -44,27 +44,27 @@ jobs:
         - name: Discover declarations
           working-directory: devextreme
           shell: bash
-          run: pnpm run tools:discover-declarations
+          run: pnpm nx run devextreme-metadata:discover-declarations
 
         - name: Update topics
           working-directory: documentation
-          run: npm run update-topics -- --artifacts ../devextreme/artifacts/internal-tools
+          run: npm run update-topics -- --artifacts ../devextreme/packages/devextreme-metadata/dist
 
         - name: Generate additional topics
           working-directory: documentation
-          run: npm run generate-extra-topic --artifacts ../devextreme/artifacts/internal-tools
+          run: npm run generate-extra-topic --artifacts ../devextreme/packages/devextreme-metadata/dist
 
         - name: Generate Syntax metadata
           working-directory: documentation
-          run: npm run generate-syntax-data -- --artifacts ../devextreme/artifacts/internal-tools
+          run: npm run generate-syntax-data -- --artifacts ../devextreme/packages/devextreme-metadata/dist
 
         - name: Generate ContentMap
           working-directory: documentation
-          run: npm run generate-content-map --artifacts ../devextreme/artifacts/internal-tools
+          run: npm run generate-content-map --artifacts ../devextreme/packages/devextreme-metadata/dist
 
         - name: Update links
           working-directory: documentation
-          run: npm run update-links --artifacts ../devextreme/artifacts/internal-tools
+          run: npm run update-links --artifacts ../devextreme/packages/devextreme-metadata/dist
 
 #PR
         - name: Configure Git
@@ -86,7 +86,7 @@ jobs:
             git push --set-upstream origin $branch_name
 
             escaped_pwd=$(echo $(pwd)/ | sed --expression 's/\//\\\//g')
-            cat ../devextreme/artifacts/internal-tools/Readme.md | sed -e "s/$escaped_pwd//g" > prbody.md
+            cat ../devextreme/packages/devextreme-metadata/dist/Readme.md | sed -e "s/$escaped_pwd//g" > prbody.md
             
             MAXSIZE=65536
             FILESIZE=$(stat -c%s prbody.md)
@@ -113,5 +113,5 @@ jobs:
           uses: actions/upload-artifact@v4
           with:
             name: internal-tools-artifacts
-            path: ./devextreme/artifacts/internal-tools/
+            path: ./devextreme/packages/devextreme-metadata/dist/
             retention-days: 7

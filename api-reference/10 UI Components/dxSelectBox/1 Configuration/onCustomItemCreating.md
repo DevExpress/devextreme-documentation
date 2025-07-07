@@ -257,7 +257,7 @@ The following code shows how to create custom items when the **Space** key is pr
 
 ---
 
-To allows users to add custom items without updating the component [dataSource]({basewidgetpath}/Configuration/#dataSource), integrate the following **onCustomItemCreating** implementation:
+To allows users to add custom items without updating the component [dataSource](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource'), integrate the following **onCustomItemCreating** implementation:
 
 ---
 

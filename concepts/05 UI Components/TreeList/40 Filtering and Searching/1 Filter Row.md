@@ -1,4 +1,12 @@
-The filter row allows a user to filter data by individual columns' values.  Usually, the filter row's cells are text boxes, but the cells of columns that hold date or Boolean values contain other filtering controls (calendars or select boxes). 
+The filter row allows users to filter data by individual column values. The following DevExtreme components are used as filter editors:
+
+- [TextBox](/Documentation/Guide/UI_Components/TextBox/Overview/)
+- [CheckBox](/Documentation/Guide/UI_Components/CheckBox/Getting_Started_with_CheckBox/)
+- [DateBox](/Documentation/Guide/UI_Components/DateBox/Overview/)
+- [NumberBox](/Documentation/Guide/UI_Components/NumberBox/Getting_Started_with_NumberBox/)
+- [SelectBox](/Documentation/Guide/UI_Components/SelectBox/Overview/)
+
+You can customize these editors using the **columns[]**.[editorOptions](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#editorOptions) property. For more information about customizing filter row editors, refer to the following topic: [Customize Editors](/Documentation/Guide/UI_Components/TreeList/Editing/#Customize_Editors).
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular TreeList Filtering FilterRow](/images/treelist/visual_elements/filter_row.png)
 

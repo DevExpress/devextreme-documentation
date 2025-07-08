@@ -161,7 +161,7 @@ The following code snippet shows how to call **refresh()**:
 
 - Calling the **refresh()** method in edit mode discards unsaved changes and cancels the edit mode. When **editing**.[mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode') is *"batch"*, the component cancels the edit mode but does not discard unsaved changes.
 - **refresh()** does not repaint the editing popup when **editing**.**mode** is *"popup"*.
-- The component may reject the **refresh** promise if {WidgetName} accesses its **dataSource** while the promise is in progress. To avoid rejecting the **refresh** promise, modify properties that initiate data queries after **refresh** completes.
+- The component may reject the **refresh** promise if {WidgetName} accesses its **dataSource** while the promise is in progress. To avoid rejecting the **refresh** promise, modify properties that initiate data queries after **refresh** is completed.
 
 [/note]
 

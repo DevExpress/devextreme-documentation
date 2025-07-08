@@ -9,7 +9,7 @@ This tutorial guides you through the following steps:
  - Create six steps and specify their icons, labels, and other options. 
  - Disable completed steps as a user progresses.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/25_1/GettingStartedWith/Stepper/index.html, /Content/Applications/25_1/GettingStartedWith/Stepper/index.js, /Content/Applications/25_1/GettingStartedWith/Stepper/index.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/25_2/GettingStartedWith/Stepper/index.html, /Content/Applications/25_2/GettingStartedWith/Stepper/index.js, /Content/Applications/25_2/GettingStartedWith/Stepper/index.css"></div>
 
 Each section in this tutorial covers a single configuration step. You can find the complete source code in the following GitHub repository:
 

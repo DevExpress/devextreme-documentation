@@ -2,7 +2,6 @@
 id: UI Events.dxpointerenter
 module: events/pointer
 type: eventType
-hidden: 
 ---
 ---
 ##### shortDescription

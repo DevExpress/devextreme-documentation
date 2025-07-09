@@ -2,7 +2,6 @@
 id: UI Events.dxpointerup
 module: events/pointer
 type: eventType
-hidden: 
 ---
 ---
 ##### shortDescription

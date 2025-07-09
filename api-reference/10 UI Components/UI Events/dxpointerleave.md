@@ -2,7 +2,6 @@
 id: UI Events.dxpointerleave
 module: events/pointer
 type: eventType
-hidden: 
 ---
 ---
 ##### shortDescription

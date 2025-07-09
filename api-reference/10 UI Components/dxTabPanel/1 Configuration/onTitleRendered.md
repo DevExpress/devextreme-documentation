@@ -23,6 +23,6 @@ The data of the item whose title is rendered.
 #include common-ref-elementparam with { element: "item" }
 
 ##### field(e.itemIndex): Number
-<!-- Description goes here -->
+Rendered item index.
 
 ---

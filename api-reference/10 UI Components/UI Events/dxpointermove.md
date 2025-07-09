@@ -2,7 +2,6 @@
 id: UI Events.dxpointermove
 module: events/pointer
 type: eventType
-hidden: 
 ---
 ---
 ##### shortDescription

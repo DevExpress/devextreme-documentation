@@ -26,6 +26,6 @@ The data of the item whose title is held.
 #include common-ref-elementparam with { element: "item" }
 
 ##### field(e.itemIndex): Number
-<!-- Description goes here -->
+Held item index.
 
 ---

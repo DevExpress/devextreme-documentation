@@ -2,7 +2,6 @@
 id: UI Events.dxpointercancel
 module: events/pointer
 type: eventType
-hidden: 
 ---
 ---
 ##### shortDescription

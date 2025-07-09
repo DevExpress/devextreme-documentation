@@ -2,7 +2,6 @@
 id: UI Events.dxhold
 module: events/hold
 type: eventType
-hidden: 
 ---
 ---
 ##### shortDescription

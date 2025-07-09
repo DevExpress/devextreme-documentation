@@ -2,7 +2,6 @@
 id: UI Events.dxswipeend
 module: events/swipe
 type: eventType
-hidden: 
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,6 @@
 id: UI Events.dxpinchend
 module: events/transform
 type: eventType
-hidden: 
 ---
 ---
 ##### shortDescription

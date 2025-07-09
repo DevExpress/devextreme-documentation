@@ -2,7 +2,6 @@
 id: UI Events.dxhoverend
 module: events/hover
 type: eventType
-hidden: 
 ---
 ---
 ##### shortDescription

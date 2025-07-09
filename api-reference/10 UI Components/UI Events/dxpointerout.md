@@ -2,7 +2,6 @@
 id: UI Events.dxpointerout
 module: events/pointer
 type: eventType
-hidden: 
 ---
 ---
 ##### shortDescription

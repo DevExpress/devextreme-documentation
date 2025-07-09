@@ -1,8 +1,7 @@
 ---
 id: UI Events.dxclick
 module: events/click
-type: eventType
-hidden: 
+type: eventType 
 ---
 ---
 ##### shortDescription

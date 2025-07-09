@@ -25,4 +25,7 @@ The data of the item whose title is clicked.
 ##### field(e.itemElement): DxElement
 #include common-ref-elementparam with { element: "item" }
 
+##### field(e.itemIndex): Number
+Clicked item index.
+
 ---

@@ -10,7 +10,7 @@ A Promise that is resolved after data is loaded.
 #include ref-promisedistinction
 
 ---
-**refresh()** calls [dataSource]({basewidgetpath}/Configuration/#dataSource).[reload()](/Documentation/ApiReference/Data_Layer/DataSource/Methods/#reload) and refreshes component properties such as [selection]({basewidgetpath}/Configuration/selection/) and lookup column [dataSources]({basewidgetpath}/Configuration/columns/lookup/#dataSource). This method also repaints all data rows if [repaintChangesOnly]({basewidgetpath}/Configuration/#repaintChangesOnly) is `false` (default).
+**refresh()** calls [dataSource](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource').[reload()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/reload().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#reload') and refreshes component properties such as [selection](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/selection '{basewidgetpath}/Configuration/selection/') and lookup column [dataSources](/api-reference/_hidden/GridBaseColumn/lookup/dataSource.md '{basewidgetpath}/Configuration/columns/lookup/#dataSource'). This method also repaints all data rows if [repaintChangesOnly](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/repaintChangesOnly.md '{basewidgetpath}/Configuration/#repaintChangesOnly') is `false` (default).
 
 {WidgetName} cannot track data source changes applied outside of the component. To update the component in such cases, call the **refresh()** method.
 

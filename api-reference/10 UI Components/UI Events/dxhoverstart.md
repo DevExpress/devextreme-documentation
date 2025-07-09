@@ -2,6 +2,7 @@
 id: UI Events.dxhoverstart
 module: events/hover
 type: eventType
+hidden: 
 ---
 ---
 ##### shortDescription

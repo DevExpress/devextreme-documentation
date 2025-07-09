@@ -148,6 +148,26 @@ If a data field provides values of one data type, but the UI component should ca
 
 ---
 
+[note]
+
+Note the following data type specifics:
+
+*"boolean":*
+
+- {WidgetName} renders DevExtreme [CheckBox](/concepts/05%20UI%20Components/CheckBox/00%20Getting%20Started%20with%20CheckBox/05%20Create%20a%20CheckBox.md '/Documentation/Guide/UI_Components/CheckBox') components in cells.
+
+*"number":*
+
+- The component aligns values and captions to the right side of columns.
+
+*"object":*
+
+- The component implements the [toString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString) method to display fields. To integrate custom display logic, implement **columns[]**.[calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '{basewidgetpath}/Configuration/columns/#calculateCellValue') or [calculateDisplayValue](/api-reference/_hidden/GridBaseColumn/calculateDisplayValue.md '{basewidgetpath}/Configuration/columns/#calculateDisplayValue').
+- {WidgetName} does not generate [filterOperations](/api-reference/_hidden/GridBaseColumn/filterOperations.md '{basewidgetpath}/Configuration/columns/#filterOperations') for the [filterRow](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '{basewidgetpath}/Configuration/filterRow/').
+- The component's [filterBuilder](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterBuilder.md '{basewidgetpath}/Configuration/#filterBuilder') includes only extended filter operations: *"anyof"*, *"noneof"*, *"isblank"*, and *"isnotblank"*.
+
+[/note]
+
 #####See Also#####
 - [Troubleshooting - Date String Handling Issues](/concepts/80%20Troubleshooting/10%20Date%20String%20Handling%20Issues/00%20Date%20String%20Handling%20Issues.md '/Documentation/Guide/Troubleshooting/Date_String_Handling_Issues/')
 - [Data Columns](/concepts/05%20UI%20Components/DataGrid/15%20Columns/10%20Column%20Types/1%20Data%20Columns.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_Types/Data_Columns/')

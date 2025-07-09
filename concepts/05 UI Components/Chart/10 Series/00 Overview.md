@@ -1,3 +1,7 @@
+---
+title: Chart - Series Overview
+---
+
 A series is a collection of related data points. 
 
 ![DevExtreme HTML5 JavaScript Charts Series](/images/ChartJS/visual_elements/series.png)

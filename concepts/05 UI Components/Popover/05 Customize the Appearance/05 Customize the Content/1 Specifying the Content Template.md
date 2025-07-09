@@ -61,7 +61,7 @@ The following code shows how to create a template consisting of static (text) an
             <DxPopover 
                 target="#image"
                 show-event="dxhoverstart">
-                <template>
+                <template #content>
                     <p>Static content</p>
                     <dx-switch>
                         <!-- The "Switch" UI component is configured here -->

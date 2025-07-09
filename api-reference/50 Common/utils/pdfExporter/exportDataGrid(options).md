@@ -18,7 +18,7 @@ Export settings.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFOverview/"
 }
 
-This method uses <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> v2.3.1+ to export data and create PDF files.
+[note] This method uses <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> v2.3.1+ to export data and create PDF files.
 
 If you use jQuery, store links to the <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> library within the `<head>` tag. If you use Angular, Vue, or React, install the library with the following command:
 

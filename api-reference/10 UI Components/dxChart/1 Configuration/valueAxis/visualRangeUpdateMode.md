@@ -5,21 +5,24 @@ default: 'auto'
 ---
 ---
 ##### shortDescription
-Specifies how the axis's [visual range](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/visualRange '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/visualRange/') should behave when chart data is updated.
+Specifies how the component changes **valueAxis**.[visualRange](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/visualRange '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/visualRange/') when chart data is updated.
 
 ---
 The following modes are available:
 
-- *"reset"*     
-The visual range becomes equal to the data range or the [whole range](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/wholeRange '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/wholeRange/') if it is a subrange of the data range.
+- *"reset"*    
+**visualRange** becomes equal to the data range or [wholeRange](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/wholeRange '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/wholeRange/') if defined and within the data range.
 
-- *"keep"*      
-The visual range does not change.
+- *"keep"*    
+**visualRange** does not change.
 
-- *"auto"*      
-When the visual range is specified, the applied mode is the same as the argument axis' [visualRangeUpdateMode](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/visualRangeUpdateMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#visualRangeUpdateMode').
+- *"auto"*    
+The component applies a mode based on [argumentAxis](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/').[visualRangeUpdateMode](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/visualRangeUpdateMode.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#visualRangeUpdateMode'):
+    
+    - If **argumentAxis**.**visualRangeUpdateMode** is *"shift"* or *"reset"*, **valueAxis**.**visualRangeUpdateMode** is set to *"reset"*.
+    - If **argumentAxis**.**visualRangeUpdateMode** is *"keep"*, **valueAxis**.**visualRangeUpdateMode** is set to *"keep"*.
 
-- *"shift"* (**deprecated since v23.1**)     
+- *"shift"* (**deprecated since v23.1**)    
 The same as *"auto"* mode.
 
 #####See Also#####

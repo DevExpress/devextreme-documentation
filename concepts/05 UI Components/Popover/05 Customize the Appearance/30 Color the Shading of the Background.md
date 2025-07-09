@@ -58,7 +58,7 @@ When the Popover is shown, the area beneath it can be shaded. To enable this beh
                 hide-event="dxhoverend"
                 :shading="true"
                 shadingColor="rgba(0, 0, 0, 0.2)">
-                <template>
+                <template #content>
                     <p>Popover content</p>
                 </template>
             </DxPopover>

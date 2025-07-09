@@ -49,7 +49,7 @@ If a field providing keys is not specified in the [data source](/api-reference/1
 <!-- %field(cellInfo.oldValue)% -->
 
 ##### field(e.row): dxDataGridRowObject
-The row [properties](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row '{basewidgetpath}/Row/').
+Row [properties](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row '{basewidgetpath}/Row/').
 
 ##### field(e.rowIndex): Number
 The row's index. Refer to [Column and Row Indexes](/concepts/05%20UI%20Components/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_and_Row_Indexes/') for more information.
@@ -223,8 +223,16 @@ In the following code, the **onCellPrepared** function is used to change a `Prod
 
 ---
 
+To learn how to use **onCellPrepared** to display a tooltip for data cells, refer to the following example:
+
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-datagrid-display-tooltip-for-data-cells"
+}
+
+To learn how to implement conditional formatting with **onCellPrepared**, refer to the following example:
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-conditional-formatting"
 }
 
 #####See Also#####

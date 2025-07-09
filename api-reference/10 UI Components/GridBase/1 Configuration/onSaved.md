@@ -11,7 +11,7 @@ A function that is executed after row changes are saved.
 Information about the event that caused the function's execution.
 
 ##### field(e.changes): Array<DataChange>
-Saved changes.
+Entire row data (including changes). Differs from [onSaving]({basewidgetpath}/Configuration/#onSaving), which only consists of pending changes.
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.

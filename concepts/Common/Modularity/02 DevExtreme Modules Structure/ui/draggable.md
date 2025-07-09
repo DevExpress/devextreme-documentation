@@ -4,6 +4,6 @@ Exports:
 
 - *default* - The [Draggable](/api-reference/10%20UI%20Components/dxDraggable '/Documentation/ApiReference/UI_Components/dxDraggable/') UI component
 
-        require("ui/draggable");
+        require("devextreme/ui/draggable");
         // ===== or =====
         import Draggable from "devextreme/ui/draggable";

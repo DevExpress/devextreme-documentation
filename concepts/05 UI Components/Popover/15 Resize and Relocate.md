@@ -58,7 +58,7 @@ To change the size of the Popover, specify the [height](/api-reference/10%20UI%2
                 hide-event="dxhoverend"
                 :height="300"
                 :width="500">
-                <template>
+                <template #content>
                     <p>Popover content</p>
                 </template>
             </DxPopover>
@@ -180,7 +180,7 @@ If you need to position the Popover against a certain side of the [target elemen
                 show-event="dxhoverstart"
                 hide-event="dxhoverend"
                 position="top"> <!-- or "bottom" | "left" | "right" -->
-                <template>
+                <template #content>
                     <p>Popover content</p>
                 </template>
             </DxPopover>

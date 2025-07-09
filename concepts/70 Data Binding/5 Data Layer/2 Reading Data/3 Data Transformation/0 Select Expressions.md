@@ -1,8 +1,8 @@
-The [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') supports the [select](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/select.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#select') property intended to specify the structure of an item of the array being loaded. The DataSource passes the value of this property to the underlying Store when loading data. Therefore, this data transformation can be performed on the server side if the Store supports it. 
+The [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') supports the [select](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/select.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#select') property. This property determines the structure of items in the loaded array. When loading data, the DataSource sends the **select** value to the underlying Store. If the Store supports it, data transformation occurs on the server side.
 
-To consider a select expression syntax, begin by creating an array of sample data.
+Create an array of sample data:
 
-    <!--JavaScript-->var data = [
+    <!--JavaScript-->const data = [
         {
             firstName: "John",
             lastName: "Smith",
@@ -20,10 +20,10 @@ To consider a select expression syntax, begin by creating an array of sample dat
         }
     ];
 
-You can define the select property value via the [configuration object](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/') passed to the DataSource constructor.
+You can define the select property value within the [configuration object](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/') passed to the DataSource constructor.
 
     <!--JavaScript-->
-    var dataSource = new DevExpress.data.DataSource({
+    const dataSource = new DevExpress.data.DataSource({
         store: data,
         select: "lastName"
     });
@@ -34,7 +34,7 @@ To modify the **select** property, pass the new property value to the [select(ex
     dataSource.select("firstName", "city");
     dataSource.load();
 
-A selection expression can be a [getter](/concepts/70%20Data%20Binding/5%20Data%20Layer/9%20Getters%20And%20Setters '/Documentation/Guide/Data_Binding/Data_Layer/#Getters_And_Setters'), several getters, or a function.
+A selection expression can be a [getter](/concepts/70%20Data%20Binding/5%20Data%20Layer/9%20Getters%20And%20Setters '/Documentation/Guide/Data_Binding/Data_Layer/#Getters_And_Setters'), multiple getters, or a function.
 
 - **A single getter**
 
@@ -43,7 +43,7 @@ A selection expression can be a [getter](/concepts/70%20Data%20Binding/5%20Data%
             //'result' contains the resulting array
         });
 
- The resulting array looks like the following.
+ The resulting array looks like the following:
 
         [
             { lastName: "Smith" },
@@ -51,14 +51,14 @@ A selection expression can be a [getter](/concepts/70%20Data%20Binding/5%20Data%
             { lastName: "Gomez" },
         ]
 
-- **Several getters**
+- **Multiple getters**
 
         <!--JavaScript-->dataSource.select("firstName", "lastName");
         dataSource.load().done(function(result) {
             //'result' contains the resulting array
         });
 
- The resulting array looks like the following.
+ The resulting array looks like the following:
 
         [
             { firstName: "John", lastName: "Smith" },
@@ -66,13 +66,13 @@ A selection expression can be a [getter](/concepts/70%20Data%20Binding/5%20Data%
             { firstName: "Maria", lastName: "Gomez" },
         ]
 
- You can pass an array of [getters](/concepts/70%20Data%20Binding/5%20Data%20Layer/9%20Getters%20And%20Setters '/Documentation/Guide/Data_Binding/Data_Layer/#Getters_And_Setters') instead of using several arguments.
+ You can pass an array of [getters](/concepts/70%20Data%20Binding/5%20Data%20Layer/9%20Getters%20And%20Setters '/Documentation/Guide/Data_Binding/Data_Layer/#Getters_And_Setters') instead of using multiple arguments.
 
         <!--JavaScript-->dataSource.select(["firstName", "lastName"]);
 
 - **A function**
 
- A select expression can also be a function that takes on an item object and returns the transformed object.
+ A select expression can be a function that takes an item object and returns the transformed object.
 
         <!--JavaScript-->dataSource.select(function(dataItem) {
             return {
@@ -84,7 +84,7 @@ A selection expression can be a [getter](/concepts/70%20Data%20Binding/5%20Data%
             //'result' contains the resulting array
         });
 
- The resulting array looks like the following.
+ The resulting array looks like the following:
 
         [
             { fullName: "John Smith", address: "San Francisco" }
@@ -94,7 +94,7 @@ A selection expression can be a [getter](/concepts/70%20Data%20Binding/5%20Data%
 
 [Stores](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores') support the same select expression syntax as the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/').
 
-    <!--JavaScript-->var arrayStore = new DevExpress.data.ArrayStore(data);
+    <!--JavaScript-->const arrayStore = new DevExpress.data.ArrayStore(data);
     arrayStore
         .load({
             select: [ "firstName", "lastName" ]
@@ -103,4 +103,4 @@ A selection expression can be a [getter](/concepts/70%20Data%20Binding/5%20Data%
             //'result' contains the resulting array
         });
 
-Additional data transformation can be performed with the [map](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/map.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#map') and [postProcess](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/postProcess.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#postProcess') configuration properties of the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/').
+You can perform additional data transformation with the [map](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/map.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#map') and [postProcess](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/postProcess.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#postProcess') configuration properties of the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/').

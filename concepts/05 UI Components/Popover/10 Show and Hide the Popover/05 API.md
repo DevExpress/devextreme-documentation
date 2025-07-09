@@ -153,7 +153,7 @@ To show or hide the Popover programmatically, bind the [visible](/api-reference/
             <DxPopover
                 target="#image"
                 v-model:visible="isPopoverVisible">
-                <template>
+                <template #content>
                     <p>Popover content</p>
                 </template>
             </DxPopover>

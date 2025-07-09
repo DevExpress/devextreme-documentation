@@ -21,8 +21,6 @@ The content of a tab can be organized in columns. The [colCount](/api-reference/
                 colSpan: 2,
                 tabs: [{
                     title: "Info",
-                    // Makes this tab span both general columns
-                    colSpan: 2,
                     // Organizes items inside this tab in three columns
                     colCount: 3,
                     items: ["position", "hireDate", "city"]
@@ -45,7 +43,6 @@ The content of a tab can be organized in columns. The [colCount](/api-reference/
         <dxi-item itemType="tabbed" [colSpan]="2">
             <dxi-tab
                 title="Info"
-                [colSpan]="2" <!-- Makes this tab span both general columns -->
                 [colCount]="3"> <!-- Organizes items inside this tab in three columns -->
                     <dxi-item dataField="position"></dxi-item>
                     <dxi-item dataField="hireDate"></dxi-item>
@@ -92,7 +89,6 @@ The content of a tab can be organized in columns. The [colCount](/api-reference/
             <DxTabbedItem :col-span="2">
                 <DxTab
                     title="Info"
-                    :col-span="2"
                     :col-count="3">
                     <DxSimpleItem data-field="position" />
                     <DxSimpleItem data-field="hireDate" />
@@ -161,7 +157,6 @@ The content of a tab can be organized in columns. The [colCount](/api-reference/
                     <TabbedItem colSpan={2}>
                         <Tab
                             title="Info"
-                            colSpan={2}
                             colCount={3}>
                             <SimpleItem dataField="position" />
                             <SimpleItem dataField="hireDate" />

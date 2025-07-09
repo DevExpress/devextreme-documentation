@@ -3,6 +3,7 @@ id: CompareRule
 type: Object
 module: common
 export: CompareRule
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

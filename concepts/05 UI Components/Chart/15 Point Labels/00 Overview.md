@@ -1,3 +1,7 @@
+---
+title: Chart - Point Labels Overview
+---
+
 Each [series point](/concepts/05%20UI%20Components/Chart/14%20Series%20Points/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series_Points/Overview/') can be accompanied with a label that displays the point's value(s) or custom data.
 
 ![DevExtreme HTML5 JavaScript Charts SeriesPoints](/images/ChartJS/visual_elements/point_labels.png)

@@ -1,6 +1,6 @@
 ---
 id: dxCalendar.Options.min
-type: Date | Number | String
+type: Date | Number | String | null
 default: new Date(1000, 0)
 ---
 ---

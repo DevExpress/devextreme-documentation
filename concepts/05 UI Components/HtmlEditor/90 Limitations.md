@@ -23,3 +23,9 @@ HTML Editor is designed to create rich text and export it in HTML. You can also 
 - The HTML Editor tables do not support complex elements in cells, such as block elements, lists, nested tables, etc.
 
 - HTML Editor does not support complex clipboard data formats of HTML pages and text processor applications, such as Microsoft Word®.
+
+- Copy-pasting large or multiple images into HTML Editor can slow down input. To prevent this, use our [image upload](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/imageUpload '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/imageUpload/') feature and block image pasting, as shown in this GitHub example:
+
+    #include btn-open-github with {
+        href: "https://github.com/DevExpress-Examples/devextreme-html-editor-prevent-inserting-images"
+    }

@@ -5,9 +5,9 @@ To call UI component methods, you need its instance. To access it, use the `@Vie
     import { DxDataGridComponent } from "devextreme-angular";
     // ...
     export class AppComponent {
-        @ViewChild(DxDataGridComponent, { static: false }) dataGrid: DxDataGridComponent
+        @ViewChild(DxDataGridComponent, { static: false }) dataGrid!: DxDataGridComponent
         // ===== or using a template reference variable =====
-        @ViewChild("targetDataGrid", { static: false }) dataGrid: DxDataGridComponent
+        @ViewChild("targetDataGrid", { static: false }) dataGrid!: DxDataGridComponent
 
         // Prior to Angular 8
         // @ViewChild(DxDataGridComponent) dataGrid: DxDataGridComponent
@@ -17,7 +17,7 @@ To call UI component methods, you need its instance. To access it, use the `@Vie
         }
 
         // Getting multiple instances of one UI component
-        // @ViewChildren(DxDataGridComponent) dataGrids: QueryList<DxDataGridComponent>
+        // @ViewChildren(DxDataGridComponent) dataGrids!: QueryList<DxDataGridComponent>
     }
 
     <!-- tab: app.component.html -->
@@ -38,7 +38,7 @@ Alternatively, you can assign the UI component instance to a variable and use it
     import DataGrid from "devextreme/ui/data_grid";
     // ...
     export class AppComponent {
-        dataGridInstance: DataGrid;
+        dataGridInstance!: DataGrid;
         saveGridInstance (e) {
             this.dataGridInstance = e.component;
         }

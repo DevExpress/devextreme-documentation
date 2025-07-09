@@ -1,4 +1,12 @@
-The filter row allows a user to filter data by individual columns' values.  Usually, the filter row's cells are text boxes, but the cells of columns that hold date or Boolean values contain other filtering controls (calendars or select boxes).
+The filter row allows users to filter data by individual column values. The following DevExtreme components are used as filter editors:
+
+- [TextBox](/concepts/05%20UI%20Components/TextBox/02%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/TextBox/Overview/')
+- [CheckBox](/concepts/05%20UI%20Components/CheckBox/00%20Getting%20Started%20with%20CheckBox '/Documentation/Guide/UI_Components/CheckBox/Getting_Started_with_CheckBox/')
+- [DateBox](/concepts/05%20UI%20Components/DateBox/01%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/DateBox/Overview/')
+- [NumberBox](/concepts/05%20UI%20Components/NumberBox/00%20Getting%20Started%20with%20NumberBox '/Documentation/Guide/UI_Components/NumberBox/Getting_Started_with_NumberBox/')
+- [SelectBox](/concepts/05%20UI%20Components/SelectBox/01%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/SelectBox/Overview/')
+
+You can customize these editors using the **columns[]**.[editorOptions](/api-reference/_hidden/GridBaseColumn/editorOptions.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editorOptions') property. For more information about customizing filter row editors, refer to the following topic: [Customize Editors](/concepts/05%20UI%20Components/DataGrid/20%20Editing/40%20Customize%20Editors.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#Customize_Editors').
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular DataGrid Filtering FilterRow](/images/DataGrid/visual_elements/filter_row.png)
 
@@ -209,7 +217,11 @@ Each cell in the filter row contains a magnifying glass icon. Hovering the mouse
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular DataGrid Filtering FilterRow](/images/DataGrid/visual_elements/filter_row_operation_chooser.png)
 
 
-The set of available filter operations can be restricted using the [filterOperations](/api-reference/_hidden/GridBaseColumn/filterOperations.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#filterOperations') property. You can also preselect a filter operation and specify the initial filter value with the [selectedFilterOperation](/api-reference/_hidden/GridBaseColumn/selectedFilterOperation.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#selectedFilterOperation') and [filterValue](/api-reference/_hidden/GridBaseColumn/filterValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#filterValue') properties. Call the [columnOption](/api-reference/10%20UI%20Components/GridBase/3%20Methods/columnOption(id_options).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#columnOptionid_options') method at runtime to change these properties:
+The set of available filter operations can be restricted using the [filterOperations](/api-reference/_hidden/GridBaseColumn/filterOperations.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#filterOperations') property. 
+
+[note] Filter row operations depend on the column [data type](/api-reference/_hidden/GridBaseColumn/dataType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataType'). If a column starts with empty values, DataGrid cannot assign the data type automatically. You must assign the column data type for the filter row to function correctly.
+
+You can also preselect a filter operation and specify the initial filter value with the [selectedFilterOperation](/api-reference/_hidden/GridBaseColumn/selectedFilterOperation.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#selectedFilterOperation') and [filterValue](/api-reference/_hidden/GridBaseColumn/filterValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#filterValue') properties. Call the [columnOption](/api-reference/10%20UI%20Components/GridBase/3%20Methods/columnOption(id_options).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#columnOptionid_options') method at runtime to change these properties:
 
 ---
 ##### jQuery

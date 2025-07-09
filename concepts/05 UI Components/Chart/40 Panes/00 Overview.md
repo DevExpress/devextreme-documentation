@@ -1,3 +1,7 @@
+---
+title: Chart - Panes Overview
+---
+
 A pane is a chart area containing series. If there are many series in the Chart, they can be distributed between multiple panes.
 
 ![DevExtreme HTML5 JavaScript Charts Panes](/images/ChartJS/visual_elements/pane.png)

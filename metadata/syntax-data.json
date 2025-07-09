@@ -4763,6 +4763,16 @@
       "react": "_ui_validation_summary_OptionChangedEvent",
       "vue": "Dx_ui_validation_summary_OptionChangedEvent"
     },
+    "_ui_validator_DisposingEvent": {
+      "angular": "dxo-ui-validator--disposing-event",
+      "react": "_ui_validator_DisposingEvent",
+      "vue": "Dx_ui_validator_DisposingEvent"
+    },
+    "_ui_validator_OptionChangedEvent": {
+      "angular": "dxo-ui-validator--option-changed-event",
+      "react": "_ui_validator_OptionChangedEvent",
+      "vue": "Dx_ui_validator_OptionChangedEvent"
+    },
     "_viz_bar_gauge_DisposingEvent": {
       "angular": "dxo-viz-bar-gauge--disposing-event",
       "react": "_viz_bar_gauge_DisposingEvent",
@@ -19179,6 +19189,15 @@
     "dxValidatorOptions.adapter.validationRequestsCallbacks": {
       "vue": "validation-requests-callbacks"
     },
+    "dxValidatorOptions.onDisposing": {
+      "vue": "@disposing"
+    },
+    "dxValidatorOptions.onInitialized": {
+      "vue": "@initialized"
+    },
+    "dxValidatorOptions.onOptionChanged": {
+      "vue": "@option-changed"
+    },
     "dxValidatorOptions.onValidated": {
       "vue": "@validated"
     },
@@ -20220,6 +20239,19 @@
     },
     "exportInfo.fileName": {
       "vue": "file-name"
+    },
+    "fieldInfo": {
+      "angular": "dxo-field-info",
+      "react": "FieldInfo",
+      "vue": "DxFieldInfo"
+    },
+    "fieldInfo.field": {
+      "angular": "dxo-field",
+      "react": "Field",
+      "vue": "DxField"
+    },
+    "fieldInfo.valueText": {
+      "vue": "value-text"
     },
     "fileSystemItem": {
       "vue": "file-system-item"
@@ -21609,6 +21641,9 @@
     },
     "tabPanelItemInfo.itemElement": {
       "vue": "item-element"
+    },
+    "tabPanelItemInfo.itemIndex": {
+      "vue": "item-index"
     },
     "targetedAppointmentInfo.appointmentData": {
       "angular": "dxo-appointment-data",

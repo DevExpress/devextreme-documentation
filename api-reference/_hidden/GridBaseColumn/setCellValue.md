@@ -173,7 +173,7 @@ This function allows you to process user input before it is saved to the data so
 
 ---
 
-The **setCellValue** property forces the component to repaint all items in the edit form. Set [repaintChangesOnly](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/repaintChangesOnly.md '{basewidgetpath}/Configuration/#repaintChangesOnly') to **true** so the component re-renders only the fields with the changed values.
+The **setCellValue** function forces the DataGrid component to repaint all its elements, including buttons in [command columns](/concepts/05%20UI%20Components/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/00%20Command%20Columns.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_Types/Command_Columns/'). If elements do not behave correctly after a repaint action, set [repaintChangesOnly](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/repaintChangesOnly.md '{basewidgetpath}/Configuration/#repaintChangesOnly') to **true** so the component re-renders only fields with changed values.
 
 To perform asynchronous operations in the **setCellValue** function, return a promise from it. The following code uses this technique to get the `Tax` value from the server when the `State` value is changed:
 
@@ -400,7 +400,7 @@ To perform asynchronous operations in the **setCellValue** function, return a pr
 ---
 
 
-To invoke the default behavior, call the **this.defaultSetCellValue(newData, value)** function.
+To invoke the default behavior, call the **this.defaultSetCellValue(newData, value, currentRowData)** function.
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-datagrid-hide-show-edit-form-items-dynamically"

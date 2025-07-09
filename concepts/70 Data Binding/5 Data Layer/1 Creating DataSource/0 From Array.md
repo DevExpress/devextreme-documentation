@@ -1,10 +1,10 @@
 Pass the required array to the DataSource constructor.
 
-    <!--JavaScript-->var dataSource = new DevExpress.data.DataSource(array);
+    <!--JavaScript-->const dataSource = new DevExpress.data.DataSource(array);
 
 If you need to specify other DataSource [configuration properties](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/'), use another form.
 
-    <!--JavaScript-->var dataSource = new DevExpress.data.DataSource({
+    <!--JavaScript-->const dataSource = new DevExpress.data.DataSource({
         // array of data
         store: array,
 

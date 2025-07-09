@@ -100,7 +100,7 @@ The following code shows the [onValueChanged](/api-reference/10%20UI%20Component
                 :hide-event="hideEvent"
                 position="bottom"
                 :visible="isTooltipVisible">
-                <template>
+                <template #content>
                     <p>Limit reached</p>
                 </template>
             </DxTooltip>

@@ -49,7 +49,7 @@ When the Popup is shown, the area beneath it can be shaded. To enable this behav
             title="Popup Title"
             :shading="true"
             shading-color="rgba(0, 0, 0, 0.2)">
-            <template>
+            <template #content>
                 <p>Popup content</p>
             </template>
         </DxPopup>

@@ -4,6 +4,7 @@ on: [push, pull_request]
 
 env:
   nodeVersion: 14.x
+  dotNetVersion: 6.0.x
 
 jobs:
 
@@ -13,12 +14,17 @@ jobs:
     steps:
 
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Setup Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ env.nodeVersion }}
+
+    - name: Set up .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: ${{ env.dotNetVersion }}
 
     - name: Install dependencies
       run: npm install
@@ -26,25 +32,23 @@ jobs:
     - name: Validation
       run: npm run validate-docs
 
-    - name: Archive internal-tools artifacts
-      uses: actions/upload-artifact@v3
-      with:
-        name: internal-tools-artifacts
-        path: artifacts/internal-tools/
-        retention-days: 7
-
   build:
     runs-on: ubuntu-latest
     name: ContentMap
     steps:
 
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Setup Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ env.nodeVersion }}
+
+    - name: Set up .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: ${{ env.dotNetVersion }}
 
     - name: Install dependencies
       run: npm install
@@ -52,25 +56,23 @@ jobs:
     - name: Generate ContentMaps
       run: npm run generate-content-map
 
-    - name: Archive internal-tools artifacts
-      uses: actions/upload-artifact@v3
-      with:
-        name: internal-tools-artifacts
-        path: artifacts/internal-tools/
-        retention-days: 7
-
   link:
     runs-on: ubuntu-latest
     name: Check links
     steps:
 
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Setup Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ env.nodeVersion }}
+
+    - name: Set up .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: ${{ env.dotNetVersion }}
 
     - name: Install dependencies
       run: npm install
@@ -80,36 +82,3 @@ jobs:
 
     - name: Check links
       run: npm run validate-links
-
-    - name: Archive internal-tools artifacts
-      uses: actions/upload-artifact@v3
-      with:
-        name: internal-tools-artifacts
-        path: artifacts/internal-tools/
-        retention-days: 7
-
-  # modules:
-  #   runs-on: ubuntu-latest
-  #   name: Check modules guide
-  #   steps:
-
-  #   - name: Checkout
-  #     uses: actions/checkout@v3
-
-  #   - name: Setup Node.js
-  #     uses: actions/setup-node@v3
-  #     with:
-  #       node-version: ${{ env.nodeVersion }}
-
-  #   - name: Install dependencies
-  #     run: npm install
-
-  #   - name: Check modules guide
-  #     run: npm run validate-modules-guide
-
-  #   - name: Archive internal-tools artifacts
-  #     uses: actions/upload-artifact@v3
-  #     with:
-  #       name: internal-tools-artifacts
-  #       path: artifacts/internal-tools/
-  #       retention-days: 7

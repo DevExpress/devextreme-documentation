@@ -1,17 +1,12 @@
-To customize the automatically-generated value axes or panes, assign a callback function to the **customizeChart** field. This function will be called once - before rendering the chart.
+To customize the automatically-generated value axes or panes, assign a callback function to the **customizeChart** field. This function will be called once - before rendering the Chart.
 
----
-##### jQuery
-
-    <!--JavaScript-->pivotGridInstance.bindChart('#chartWidget', {
+    pivotGridInstance.bindChart(chartInstance, {
         // ...
         customizeChart: function (chartOptions) {
-            // Change chart properties here
+            // Change Chart properties here
             return chartOptions; // This line is optional
         }
     });
-    
----
 
 The **chartOptions** object contains the following fields.
 
@@ -20,4 +15,4 @@ Allows you to customize the automatically-created [value axes](/concepts/05%20UI
 - **panes**: <span style="font-size:12px">Array</span>        
 Allows you to customize the automatically-created [panes](/concepts/05%20UI%20Components/Chart/40%20Panes/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Panes/Overview/'). Each object in this array can contain fields described in the [panes](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/panes '/Documentation/ApiReference/UI_Components/dxChart/Configuration/panes/') property description. When this array holds several objects, use their [name](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/panes/name.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/panes/#name') field to identify the pane.
 
-The **customizeChart(chartOptions)** function is designed mainly for customizing the automatically-generated chart elements. However, the argument of this function accepts any [property](/api-reference/10%20UI%20Components/dxChart/1%20Configuration '/Documentation/ApiReference/UI_Components/dxChart/Configuration/') of Chart that configures the UI component's appearance. Alternatively, you can specify the needed properties as usual - when you design the chart. They will be merged with the properties returned by the **customizeChart(chartOptions)** function.
+The **customizeChart(chartOptions)** function is designed mainly for customizing the automatically-generated Chart elements. However, the argument of this function accepts any [property](/api-reference/10%20UI%20Components/dxChart/1%20Configuration '/Documentation/ApiReference/UI_Components/dxChart/Configuration/') of Chart that configures the UI component's appearance. Alternatively, you can specify the properties when you design the Chart. They merge with the properties returned by the **customizeChart(chartOptions)** function.

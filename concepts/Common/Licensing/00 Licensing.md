@@ -2,7 +2,9 @@
 
 - [Evaluation (Trial)](/concepts/Common/Licensing/05%20Evaluation%20(Trial).md '/Documentation/Guide/Common/Licensing/#Evaluation_Trial')
 
-- [How to Obtain and Validate Your License Key](/concepts/Common/Licensing/10%20How%20to%20Obtain%20and%20Validate%20Your%20License%20Key.md '/Documentation/Guide/Common/Licensing/#How_to_Obtain_and_Validate_Your_License_Key')
+- [Obtain Your License Key](/concepts/Common/Licensing/09%20Obtain%20Your%20License%20Key.md '/Documentation/Guide/Common/Licensing/#Obtain_Your_License_Key')
+
+- [Validate Your License Key](/concepts/Common/Licensing/10%20Validate%20Your%20License%20Key/00%20Validate%20Your%20License%20Key.md '/Documentation/Guide/Common/Licensing/#Validate_Your_License_Key')
 
 - [Deployment and Continuous Integration (CI)](/concepts/Common/Licensing/13%20Deployment%20and%20Continuous%20Integration%20(CI).md '/Documentation/Guide/Common/Licensing/#Deployment_and_Continuous_Integration_CI')
 
@@ -11,6 +13,8 @@
 - [Information Security](/concepts/Common/Licensing/20%20Information%20Security.md '/Documentation/Guide/Common/Licensing/#Information_Security')
 
 - [Validation](/concepts/Common/Licensing/25%20Validation.md '/Documentation/Guide/Common/Licensing/#Validation')
+
+- [Redistribution](/concepts/Common/Licensing/27%20Redistribution.md '/Documentation/Guide/Common/Licensing/#Redistribution')
 
 - [FAQ](/concepts/Common/Licensing/30%20FAQ.md '/Documentation/Guide/Common/Licensing/#FAQ')
 
@@ -26,7 +30,7 @@ If a developer leaves or stops using DevExtreme, you can revoke their license an
 
 ### v23.2+
 
-With the release of v23.2, DevExpress checks license status to determine whether a valid DevExtreme license exists. If you do not have a valid DevExtreme license, an error message will be displayed on-screen. To complete the license verification process, you must [supply a valid license key](/concepts/Common/Licensing/10%20How%20to%20Obtain%20and%20Validate%20Your%20License%20Key.md '/Documentation/Guide/Common/Licensing/#How_to_Obtain_and_Validate_Your_License_Key'). This license key will be auto-generated on your behalf once you purchase a license (it will be auto-generated for all active DevExtreme subscribers as well).
+With the release of v23.2, DevExpress checks the license status to determine whether a valid DevExtreme license exists. If you do not have a valid DevExtreme license, an error message is displayed on-screen. To complete the license verification process, you must [supply a valid license key](/concepts/Common/Licensing/10%20Validate%20Your%20License%20Key/00%20Validate%20Your%20License%20Key.md '/Documentation/Guide/Common/Licensing/#Validate_Your_License_Key'). This license key is auto-generated on your behalf once you purchase a license (it is also auto-generated for all active DevExtreme subscribers).
 
 When you purchase a DevExtreme, ASP.NET/Blazor, DXperience, or Universal Subscription, your auto-generated DevExtreme license key will be displayed within the DevExpress [Download Manager](https://www.devexpress.com/ClientCenter/DownloadManager/).
 

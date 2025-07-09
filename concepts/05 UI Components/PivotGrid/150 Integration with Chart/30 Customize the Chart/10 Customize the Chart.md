@@ -1,1 +1,1 @@
-In the previous topic, you learned how to process data using the second argument of the **bindChart(chart, integrationOptions)** method. Subtopics in this section show how to use fields of this argument to change the appearance of the chart. 
+In the previous topic, you learned how to process data through the second argument of the **bindChart(chart, integrationOptions)** method. Subtopics in this section cover how to adjust the fields of this argument to modify the Chart appearance.

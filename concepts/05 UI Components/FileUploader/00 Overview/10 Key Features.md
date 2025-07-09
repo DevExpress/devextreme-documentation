@@ -1,0 +1,17 @@
+- **Uploading Options**     
+[Upload](/concepts/05%20UI%20Components/FileUploader/20%20Upload%20Files/05%20Client-Side%20Settings '/Documentation/Guide/UI_Components/FileUploader/Upload_Files/Client-Side_Settings/') files instantly, when a user clicks the **Upload** button, or when an [HTML form is submitted](/concepts/05%20UI%20Components/FileUploader/20%20Upload%20Files/05%20Client-Side%20Settings/05%20Upload%20Mode.md '/Documentation/Guide/UI_Components/FileUploader/Upload_Files/Client-Side_Settings/#Upload_Mode').
+
+- **Chunk Uploading**     
+DevExtreme FileUploader supports [chunk upload](/concepts/05%20UI%20Components/FileUploader/20%20Upload%20Files/05%20Client-Side%20Settings/07%20Chunk%20Upload.md '/Documentation/Guide/UI_Components/FileUploader/Upload_Files/Client-Side_Settings/#Chunk_Upload'). Large files are split into chunks and sent with multiple requests. [Server-side configuration](https://demos.devexpress.com/ASPNetMvc/Demo/FileUploader/ChunkUploading) is required. 
+
+- **Multiple Files Uploading**    
+Allow users to select one file or [multiple](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/multiple.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#multiple') files simultaneously.
+
+- **File Restrictions**    
+[Restrict](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/accept.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#accept') types of files and specify [allowed file extensions](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/allowedFileExtensions.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#allowedFileExtensions'). Set [maximum](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/maxFileSize.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#maxFileSize')/[minimum](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/minFileSize.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#minFileSize') file size.
+
+- **Validation**    
+All DevExtreme component [validation](/concepts/05%20UI%20Components/FileUploader/40%20File%20Validation.md '/Documentation/Guide/UI_Components/FileUploader/File_Validation/') options are available for FileUploader. Configure [validation errors](/api-reference/10%20UI%20Components/Editor/1%20Configuration/validationErrors.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#validationErrors') and check if FileUploader [is dirty](/api-reference/10%20UI%20Components/Editor/1%20Configuration/isDirty.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#isDirty'). Files are validated on the client, but [server-side validation](https://demos.devexpress.com/ASPNetMvc/Demo/FileUploader/Validation/) is also necessary.
+
+- **Custom Drop Zone**    
+The FileUploader component supports drag-and-drop file uploads. Set the [dropZone](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/dropZone.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#dropZone') property to a custom HTML element to enable file dropping in that element. The drop area can be [customized](/concepts/05%20UI%20Components/FileUploader/50%20Customize%20FileUploader.md '/Documentation/Guide/UI_Components/FileUploader/Customize_FileUploader/').

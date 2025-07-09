@@ -20,7 +20,7 @@ Export settings.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/ExportToPDF/"
 }
 
-This method uses <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> v2.3.1+ to generate PDF files, and the <a href="https://github.com/simonbengtsson/jsPDF-AutoTable" target="_blank">jsPDF-AutoTable</a> plugin to create tables within the PDF.
+[note] This method uses <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> v2.3.1+ to generate PDF files, and the <a href="https://github.com/simonbengtsson/jsPDF-AutoTable" target="_blank">jsPDF-AutoTable</a> plugin to create tables within the PDF.
 
 Warning: You need to perform *extra steps* to generate PDFs with non-ASCII characters. See the [PDF Export guide](/concepts/80%20Troubleshooting/15%20PDF%20Export/00%20PDF%20Export.md '/Documentation/Guide/Troubleshooting/PDF_Export/'). for more information.
 

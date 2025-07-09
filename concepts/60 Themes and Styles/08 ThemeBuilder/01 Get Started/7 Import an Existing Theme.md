@@ -6,9 +6,9 @@ You can import an existing theme from DevExtreme metadata [saved beforehand](/co
 
 3. To import DevExtreme metadata, upload a `.json` file with the metadata or paste the metadata in the text area.  
 
-    To import Bootstrap variables, upload a `variables.less` for Bootstrap 3 or `_variables.scss` file for Bootstrap 4.
+    To import Bootstrap variables, upload a `_variables.scss` file for Bootstrap 5.
 
-    [note] These files should include only a list of variables and their values. 
+    [note] This file should include only a list of variables and their values. 
     
     The ThemeBuilder uses colors from the variables to create a theme that is consistent with the Bootstrap theme. ThemeBuilder imports theme options based on the Bootstrap [default theme](https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss) variables. These colors are transferred to the base theme settings. You can find these settings in the **Basic Settings** section.
 

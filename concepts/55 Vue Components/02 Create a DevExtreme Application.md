@@ -1,3 +1,8 @@
+#include common-troubleunderstanding-note with {
+    technology: "Vue",
+    docsLink: "https://v3.vuejs.org/guide/introduction.html#getting-started"
+}
+
 If you are starting a project from scratch, use the [DevExtreme Vue Template](/concepts/55%20Vue%20Components/50%20Application%20Template/00%20Application%20Template.md '/Documentation/Guide/Vue_Components/Application_Template/'). It is a simple application with a navigation menu and several sample views in a responsive layout (see <a href="https://devexpress.github.io/devextreme-vue-template/#/home">live preview</a>).
 
 You can generate this application with the [DevExtreme CLI](/concepts/Common/DevExtreme%20CLI/00%20DevExtreme%20CLI.md '/Documentation/Guide/Common/DevExtreme_CLI/'):

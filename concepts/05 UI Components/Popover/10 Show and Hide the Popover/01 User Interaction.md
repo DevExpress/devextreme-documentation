@@ -52,7 +52,7 @@ To specify when the Popover should be shown and hidden, set the [showEvent](/api
                 target="#image"
                 show-event="dxhoverstart"
                 hide-event="dxhoverend">
-                <template>
+                <template #content>
                     <p>Popover content</p>
                 </template>
             </DxPopover>
@@ -178,7 +178,7 @@ The Popover can also be hidden when a user clicks outside it. To control this be
                 show-event="dxhoverstart"
                 hide-event="dxhoverend"
                 :hide-on-outside-click="false">
-                <template>
+                <template #content>
                     <p>Popover content</p>
                 </template>
             </DxPopover>

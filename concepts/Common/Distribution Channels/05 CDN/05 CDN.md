@@ -6,7 +6,7 @@ DevExtreme sources are available on cdnjs:
     <script src="https://cdnjs.cloudflare.com/ajax/libs/devexpress-diagram/cdnjs_version/dx-diagram.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/devexpress-gantt/cdnjs_version/dx-gantt.min.js"></script>
 
-    <!-- DevExtreme Quill (required by the HtmlEditor UI component) -->
+    <!-- DevExtreme Quill (required by the HTML Editor UI component) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme-quill/cdnjs_version/dx-quill.min.js"></script>
 
     <!-- DevExtreme library -->
@@ -79,7 +79,7 @@ Alternatively, you can get DevExtreme sources from DevExpress CDN:
     <script src="https://cdn3.devexpress.com/jslib/minor_23_2/js/dx-diagram.min.js"></script>
     <script src="https://cdn3.devexpress.com/jslib/minor_23_2/js/dx-gantt.min.js"></script>
 
-    <!-- DevExtreme Quill (required by the HtmlEditor UI component) -->
+    <!-- DevExtreme Quill (required by the HTML Editor UI component) -->
     <script src="https://cdn3.devexpress.com/jslib/minor_23_2/js/dx-quill.min.js"></script>
 
     <!-- DevExtreme libraries (reference only one of them) -->

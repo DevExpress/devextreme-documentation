@@ -1,6 +1,6 @@
 ---
 id: dxCalendar.Options.max
-type: Date | Number | String
+type: Date | Number | String | null
 default: new Date(3000, 0)
 ---
 ---

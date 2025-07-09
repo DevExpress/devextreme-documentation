@@ -36,6 +36,12 @@ If you want to change tooltip appearance, implement a custom template with the `
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomTemplates/"
 }
 
+To learn how to implement appointment layouts with appointment templates, refer to the following example:
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-scheduler-appointment-template"
+}
+
 #####See Also#####
 - **views[]**.[appointmentTooltipTemplate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views/appointmentTooltipTemplate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#appointmentTooltipTemplate')
 - [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

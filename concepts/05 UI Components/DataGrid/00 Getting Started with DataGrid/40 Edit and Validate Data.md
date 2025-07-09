@@ -182,3 +182,9 @@ DevExtreme includes a validation engine that checks edited values before they ar
 ---
 
 Run the code and click the Edit button in any row. This invokes a pop-up window that contains an edit form. When you clear the Full Name text box on this form, the following validation error is shown: *"Full Name is required"*.
+
+To learn how to validate unchanged cells with a button click, refer to the following example:
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-data-grid-validate-unchanged-cells"
+}

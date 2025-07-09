@@ -60,7 +60,7 @@ The following code creates a simple Tooltip on your page and attaches it to anot
                 target="#image"
                 show-event="dxhoverstart"
                 hide-event="dxhoverend">
-                <template>
+                <template #content>
                     <p>Tooltip content</p>
                 </template>
             </DxTooltip>
@@ -124,6 +124,25 @@ The following code creates a simple Tooltip on your page and attaches it to anot
     <img id="image" src="https://url/to/an/image" />
 
 ---
+
+[note]
+
+The component may affect the page layout when used inside a flex container with other elements. For example, the following parent CSS styles can cause this issue:
+
+    <!-- tab: CSS -->
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+To avoid changes to the page layout, implement the following CSS styles for the Tooltip container:
+
+    <!-- tab: CSS -->
+    .dx-tooltip {
+        display: none !important;
+    }
+
+[/note]
 
 #####See Also#####
 #include common-link-configurewidget

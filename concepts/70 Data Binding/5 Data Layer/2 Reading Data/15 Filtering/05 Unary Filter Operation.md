@@ -1,4 +1,4 @@
-The unary *not* operation allows you to filter out data matching some conditions.
+The unary *not* operation filters out data that matches specific conditions.
 
 To specify an unary filter operation, use an array containing the following items.
 

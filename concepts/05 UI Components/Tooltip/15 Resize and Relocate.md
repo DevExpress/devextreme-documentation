@@ -63,7 +63,7 @@ To change the size of the Tooltip, specify the [height](/api-reference/10%20UI%2
                 hide-event="dxhoverend"
                 :height="70"
                 :width="200">
-                <template>
+                <template #content>
                     <p>Tooltip content</p>
                 </template>
             </DxTooltip>
@@ -193,7 +193,7 @@ If you need to position the Tooltip against a certain side of the [target elemen
                 show-event="dxhoverstart"
                 hide-event="dxhoverend"
                 position="top"> <!-- or "bottom" | "left" | "right" -->
-                <template>
+                <template #content>
                     <p>Tooltip content</p>
                 </template>
             </DxTooltip>

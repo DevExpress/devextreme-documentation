@@ -1,4 +1,12 @@
-The filter row allows a user to filter data by individual columns' values.  Usually, the filter row's cells are text boxes, but the cells of columns that hold date or Boolean values contain other filtering controls (calendars or select boxes). 
+The filter row allows users to filter data by individual column values. The following DevExtreme components are used as filter editors:
+
+- [TextBox](/concepts/05%20UI%20Components/TextBox/02%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/TextBox/Overview/')
+- [CheckBox](/concepts/05%20UI%20Components/CheckBox/00%20Getting%20Started%20with%20CheckBox '/Documentation/Guide/UI_Components/CheckBox/Getting_Started_with_CheckBox/')
+- [DateBox](/concepts/05%20UI%20Components/DateBox/01%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/DateBox/Overview/')
+- [NumberBox](/concepts/05%20UI%20Components/NumberBox/00%20Getting%20Started%20with%20NumberBox '/Documentation/Guide/UI_Components/NumberBox/Getting_Started_with_NumberBox/')
+- [SelectBox](/concepts/05%20UI%20Components/SelectBox/01%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/SelectBox/Overview/')
+
+You can customize these editors using the **columns[]**.[editorOptions](/api-reference/_hidden/GridBaseColumn/editorOptions.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#editorOptions') property. For more information about customizing filter row editors, refer to the following topic: [Customize Editors](/concepts/05%20UI%20Components/TreeList/20%20Editing/40%20Customize%20Editors.md '/Documentation/Guide/UI_Components/TreeList/Editing/#Customize_Editors').
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular TreeList Filtering FilterRow](/images/treelist/visual_elements/filter_row.png)
 

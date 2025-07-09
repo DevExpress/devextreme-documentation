@@ -10,15 +10,13 @@ jobs:
 
     steps:
         - name: Checkout Docs
-          uses: actions/checkout@v3
+          uses: actions/checkout@v4
           with:
             path: documentation
-            token: ${{ secrets.DXROBOT_PAT }}
-            ssh-key: ${{ secrets.DXROBOT_SK }}
             ref: ${{ github.ref_name }}
 
         - name: Checkout DevExtreme
-          uses: actions/checkout@v3
+          uses: actions/checkout@v4
           with:
             path: devextreme
             repository: devexpress/devextreme
@@ -28,6 +26,11 @@ jobs:
           with:
             version: 9
             run_install: false
+
+        - name: Set up .NET
+          uses: actions/setup-dotnet@v4
+          with:
+            dotnet-version: 6.0.x
 
         - name: NPM - devextreme
           working-directory: devextreme
@@ -107,7 +110,7 @@ jobs:
                 --data-binary @prdata.json
 
         - name: Archive internal-tools artifacts
-          uses: actions/upload-artifact@v3
+          uses: actions/upload-artifact@v4
           with:
             name: internal-tools-artifacts
             path: ./devextreme/artifacts/internal-tools/

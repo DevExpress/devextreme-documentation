@@ -38,7 +38,7 @@ You can find common types under the following aliases:
     // In the sample below, ValidationRule is imported from the common module:
 
     import { Component } from '@angular/core';
-    import { ValidationRule } from 'devextreme/common';
+    import { ValidationRule } from 'devextreme-angular/common';
 
     @Component({
         selector: 'app-root',
@@ -61,8 +61,8 @@ Alternatively, define a union:
     <!-- tab: App.vue -->
     // In the sample below, ValidationRule is imported for each component:
 
-    import { DxDataGridTypes } from 'devextreme-vue/data-grid';
-    import { DxFormTypes } from 'devextreme-vue/form';
+    import { type DxDataGridTypes } from 'devextreme-vue/data-grid';
+    import { type DxFormTypes } from 'devextreme-vue/form';
 
     const dataGridValidationRule: DxDataGridTypes.ValidationRule;
     const formValidationRule: DxFormTypes.ValidationRule;
@@ -83,8 +83,8 @@ Alternatively, define a union:
 
     // In the sample below, ToolbarItemLocation is imported for each component:
 
-    import { DataGrid, DataGridTypes } from 'devextreme-react/data-grid';
-    import { Popup, PopupTypes } from 'devextreme-react/popup';
+    import { DataGrid, type DataGridTypes } from 'devextreme-react/data-grid';
+    import { Popup, type PopupTypes } from 'devextreme-react/popup';
 
     const toolbarItemsLocation: DataGridTypes.ToolbarItemLocation = 'center';
     // or
@@ -92,7 +92,7 @@ Alternatively, define a union:
 
     // In the sample below, ToolbarItemLocation is imported from the common module:
 
-    import { ToolbarItemLocation } from 'devextreme-react/common';
+    import { type ToolbarItemLocation } from 'devextreme-react/common';
     const toolbarItemsLocation: ToolbarItemLocation;
 
 Alternatively, define a union:

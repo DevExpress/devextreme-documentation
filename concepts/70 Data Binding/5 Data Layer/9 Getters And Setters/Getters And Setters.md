@@ -1,9 +1,10 @@
-One of the basic data layer concepts is a Getters and Setters concept. Getters are essential tools used to specify sorting, grouping, filtering, and data transformation rules.
+One of the basic data layer concepts is *getters* and *setters*. Getters are essential tools used to specify sorting, grouping, filtering, and data transformation rules.
 
-A getter is a function that returns a value of the predefined property of an object passed to the getter as a parameter.
-A setter is a function that assigns the new value to the predefined property of an object passed to the setter as a parameter. The new value is specified via the second parameter of a setter.
+A *getter* function returns a value of a predefined property of an object passed to the getter as a parameter.
 
-Create the **person** object to consider how to get and set its property values using getters and setters.
+A *setter* function assigns a new value to the predefined property of an object passed to the setter as a parameter. The new value is specified through the second parameter of a setter.
+
+For example, create a sample object:
 
     <!--JavaScript-->var person = {
       firstName: "John",
@@ -21,4 +22,3 @@ Create the **person** object to consider how to get and set its property values 
         }
       }
     };
-

@@ -10,9 +10,11 @@ A Promise that is resolved after data is loaded.
 #include ref-promisedistinction
 
 ---
-The UI component cannot track changes a third party makes in the data source. To update data in the UI component in this case, call the **refresh()** method. [Data sources](/api-reference/_hidden/GridBaseColumn/lookup/dataSource.md '{basewidgetpath}/Configuration/columns/lookup/#dataSource') of lookup columns are updated with the main data source.
+**refresh()** calls [dataSource](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource').[reload()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/reload().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#reload') and refreshes component properties such as [selection](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/selection '{basewidgetpath}/Configuration/selection/') and lookup column [dataSources](/api-reference/_hidden/GridBaseColumn/lookup/dataSource.md '{basewidgetpath}/Configuration/columns/lookup/#dataSource'). This method also repaints all data rows if [repaintChangesOnly](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/repaintChangesOnly.md '{basewidgetpath}/Configuration/#repaintChangesOnly') is `false` (default).
 
-The following code shows how to call this method:
+{WidgetName} cannot track data source changes applied outside of the component. To update the component in such cases, call the **refresh()** method.
+
+The following code snippet shows how to call **refresh()**:
 
 ---
 #####jQuery
@@ -33,8 +35,6 @@ The following code shows how to call this method:
     <dx-{widget-name} #{widgetName}Var ... >
         <!-- ... -->
     </dx-{widget-name}>
-
-<!---->
 
     <!-- tab: app.component.ts -->
     import { Component, ViewChild } from '@angular/core';
@@ -157,7 +157,13 @@ The following code shows how to call this method:
 
 ---
 
-[note] Calling the **refresh()** method ends the editing process. In *batch* [editing mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), changes are saved in a buffer before they are saved to the data source. In other modes, all unsaved changes are discarded. 
+[note]
+
+- Calling the **refresh()** method in edit mode discards unsaved changes and cancels the edit mode. When **editing**.[mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode') is *"batch"*, the component cancels the edit mode but does not discard unsaved changes.
+- **refresh()** does not repaint the editing popup when **editing**.**mode** is *"popup"*.
+- The component may reject the **refresh** promise if {WidgetName} accesses its **dataSource** while the promise is in progress. To avoid rejecting the **refresh** promise, modify properties that initiate data queries after **refresh** is completed.
+
+[/note]
 
 #####See Also#####
 - [refresh(changesOnly)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/refresh(changesOnly).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#refreshchangesOnly')

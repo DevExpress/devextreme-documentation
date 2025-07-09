@@ -500,6 +500,10 @@ Editors are displayed in cells in the normal state too if you set the **columns*
     
 ---
 
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomEditors/"
+}
+
 #####See Also#####
 - [Columns - Customize Cells](/concepts/05%20UI%20Components/DataGrid/15%20Columns/40%20Customize%20Cells '/Documentation/Guide/UI_Components/DataGrid/Columns/Customize_Cells/')
 - [Create a Column with Custom Buttons](/concepts/05%20UI%20Components/DataGrid/15%20Columns/10%20Column%20Types/4%20Command%20Columns/30%20Create%20a%20Column%20with%20Custom%20Buttons.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/Command_Columns/#Create_a_Column_with_Custom_Buttons')

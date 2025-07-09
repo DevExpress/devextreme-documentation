@@ -1,7 +1,7 @@
 ---
 id: UI Events.dxtranslateend
 module: events/transform
-type: eventType
+type: eventType 
 ---
 ---
 ##### shortDescription

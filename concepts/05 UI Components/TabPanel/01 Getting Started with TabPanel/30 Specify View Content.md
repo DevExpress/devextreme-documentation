@@ -330,3 +330,8 @@ This tutorial demonstrates the use of the **items[]**.**template** property. Thi
     export default App;
 
 ---
+To learn how to display DevExtreme components in a TabPanel's view content area, refer to the following example:
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-tabpanel-customize-view-content"
+}

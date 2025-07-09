@@ -138,3 +138,5 @@ You can enable data aggregation for individual series, all series of a specific 
     export default App;
 
 ---
+
+[note] You can configure data aggregation to reduce the number of rendered component elements. This can improve Chart performance on large datasets. For more information on how to improve component performance, refer to the following topic: [Enhance Performance on Large Datasets](/concepts/05%20UI%20Components/Chart/93%20Enhance%20Performance%20on%20Large%20Datasets.md '/Documentation/Guide/UI_Components/Chart/Enhance_Performance_on_Large_Datasets/').

@@ -16,8 +16,6 @@ The **recurrenceRule** value should contain an `RRULE` pattern as per the <a hre
 If you need to obtain individual dates from an appointment series, use a 3rd-party library. In the following example, the <a href="https://github.com/jakubroztocil/rrule#rrulejs" target="_blank">rrule</a> library is used:
 
     <!-- tab: JavaScript -->
-    import { formatDate } from "devextreme/localization";
-
     const data = [{
         text: 'Watercolor Landscape',
         startDate: new Date('2020-11-01T17:30:00.000Z'),
@@ -27,7 +25,7 @@ If you need to obtain individual dates from an appointment series, use a 3rd-par
     }];
 
     function logAppointmentOccurrences(appointmentData) {
-        const startDateStr = formatDate(appointmentData.startDate, "yyyyMMddTHHmmssZ");
+        const startDateStr = DevExpress.localization.formatDate(appointmentData.startDate, "yyyyMMddTHHmmssZ");
         const rule = new rrule.rrulestr(
             `DTSTART:${startDateStr}\n`
             + `RRULE:${appointmentData.recurrenceRule}\n`

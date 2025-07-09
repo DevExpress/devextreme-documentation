@@ -1,4 +1,4 @@
-A filter expression can also be a function that takes on an item object and returns a Boolean value that determines whether an item satisfies the filtering condition or not.
+A filter expression can also be a function that takes an item object and returns a Boolean value that determines whether the item meets the filter condition.
 
     <!--JavaScript-->dataSource.filter(function(itemData) {
         return itemData.value > 3 && itemData.name != "Second item";
@@ -9,7 +9,7 @@ A filter expression can also be a function that takes on an item object and retu
 
 [Stores](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores') support the same filter expression syntax as the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/').
 
-    <!--JavaScript-->var arrayStore = new DevExpress.data.ArrayStore(data);
+    <!--JavaScript-->const arrayStore = new DevExpress.data.ArrayStore(data);
     arrayStore
         .load({
             filter: [

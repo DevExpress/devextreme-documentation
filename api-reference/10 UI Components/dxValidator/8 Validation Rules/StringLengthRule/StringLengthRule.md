@@ -3,6 +3,7 @@ id: StringLengthRule
 type: Object
 module: common
 export: StringLengthRule
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

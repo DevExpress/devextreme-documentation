@@ -138,5 +138,7 @@ A modified data item.
 
 ---
 
+[note] DataGrid and TreeList features like [export](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/'), [selection](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/selection '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/'), and [grouping](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/grouping '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/') work incorrectly with mapped data objects. If you need these features, use [calculated columns](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue') instead of mapped objects.
+
 #####See Also#####
 - [Item Mapping](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/3%20Data%20Transformation/1%20Item%20Mapping.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Data_Transformation/Item_Mapping')

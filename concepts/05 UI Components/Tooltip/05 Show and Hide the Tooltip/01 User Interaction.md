@@ -55,7 +55,7 @@ To specify when the Tooltip should be shown and hidden, set the [showEvent](/api
                 target="#image"
                 show-event="dxhoverstart"
                 hide-event="dxhoverend">
-                <template>
+                <template #content>
                     <p>Tooltip content</p>
                 </template>
             </DxTooltip>
@@ -180,7 +180,7 @@ The Tooltip can also be hidden when a user clicks outside it. To control this be
                 show-event="dxhoverstart"
                 hide-event="dxhoverend"
                 :hide-on-outside-click="false">
-                <template>
+                <template #content>
                     <p>Tooltip content</p>
                 </template>
             </DxTooltip>

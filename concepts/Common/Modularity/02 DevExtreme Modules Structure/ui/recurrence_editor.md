@@ -6,6 +6,6 @@ Exports:
 
 - *default* - The **RecurrenceEditor** UI component
 
-        require("ui/recurrence_editor");
+        require("devextreme/ui/recurrence_editor");
         // ===== or =====
         import RecurrenceEditor from "devextreme/ui/recurrence_editor";

@@ -62,14 +62,14 @@ Some types are generic. This is mostly the case for data-aware component types, 
     import { DxDataGrid } from "devextreme-vue/data-grid";
     import { DxButton } from "devextreme-vue/button";
 
-    import type { DxDataGridTypes } from "devextreme-vue/data-grid";
+    import { type DxDataGridTypes } from "devextreme-vue/data-grid";
     import type dxDataGrid from 'devextreme/ui/data_grid';
-    import type { Employee } from '../data';
+    import { type Employee } from '../data';
 
     const dataGridRef = ref<DxDataGrid>();
 
     function onButtonClick() {
-        const dataGridInstance = dataGridRef.value?.instance! as dxDataGrid<Employee, number>;
+        const dataGridInstance: dxDataGrid<Employee, number> = dataGridRef.value?.instance!;
         dataGridInstance.option("disabled", true);
     }
 
@@ -84,8 +84,8 @@ Some types are generic. This is mostly the case for data-aware component types, 
 
     <!-- tab: App.tsx -->
     import { useRef } from 'react';
-    import { Employee, employees as dataSource } from './data';
-    import DataGrid, { DataGridTypes, DataGridRef } from 'devextreme-react/data-grid';
+    import { type Employee, employees as dataSource } from './data';
+    import DataGrid, { type DataGridTypes, DataGridRef } from 'devextreme-react/data-grid';
     import Button from 'devextreme-react/button';
 
     function onEditorPreparing(e: DataGridTypes.EditorPreparingEvent<Employee, number>) {

@@ -1,12 +1,12 @@
 The filter row allows users to filter data by individual column values. The following DevExtreme components are used as filter editors:
 
-- [TextBox](/Documentation/Guide/UI_Components/TextBox/Overview/)
-- [CheckBox](/Documentation/Guide/UI_Components/CheckBox/Getting_Started_with_CheckBox/)
-- [DateBox](/Documentation/Guide/UI_Components/DateBox/Overview/)
-- [NumberBox](/Documentation/Guide/UI_Components/NumberBox/Getting_Started_with_NumberBox/)
-- [SelectBox](/Documentation/Guide/UI_Components/SelectBox/Overview/)
+- [TextBox](/concepts/05%20UI%20Components/TextBox/02%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/TextBox/Overview/')
+- [CheckBox](/concepts/05%20UI%20Components/CheckBox/00%20Getting%20Started%20with%20CheckBox '/Documentation/Guide/UI_Components/CheckBox/Getting_Started_with_CheckBox/')
+- [DateBox](/concepts/05%20UI%20Components/DateBox/01%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/DateBox/Overview/')
+- [NumberBox](/concepts/05%20UI%20Components/NumberBox/00%20Getting%20Started%20with%20NumberBox '/Documentation/Guide/UI_Components/NumberBox/Getting_Started_with_NumberBox/')
+- [SelectBox](/concepts/05%20UI%20Components/SelectBox/01%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/SelectBox/Overview/')
 
-You can customize these editors using the **columns[]**.[editorOptions](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editorOptions) property. For more information about customizing filter row editors, refer to the following topic: [Customize Editors](/Documentation/Guide/UI_Components/DataGrid/Editing/#Customize_Editors).
+You can customize these editors using the **columns[]**.[editorOptions](/api-reference/_hidden/GridBaseColumn/editorOptions.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#editorOptions') property. For more information about customizing filter row editors, refer to the following topic: [Customize Editors](/concepts/05%20UI%20Components/DataGrid/20%20Editing/40%20Customize%20Editors.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#Customize_Editors').
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular DataGrid Filtering FilterRow](/images/DataGrid/visual_elements/filter_row.png)
 

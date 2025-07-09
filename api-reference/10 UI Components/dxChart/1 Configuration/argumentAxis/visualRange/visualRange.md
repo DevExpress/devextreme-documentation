@@ -14,7 +14,14 @@ Defines the axis' displayed range. Cannot be wider than the [wholeRange](/api-re
     basepath: "/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/visualRange",
     objectName: "visualRange",
     element: "axis",
-    elementType: "[argumentType](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/argumentType.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#argumentType')"
+    elementType: "[argumentType](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/argumentType.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#argumentType')",
+    angularSelector: "dxo-argument-axis",
+    jquerySelector: "argumentAxis",
+    parentSelector: "ArgumentAxis",
+    objectSelector: "VisualRange",
+    angularComponentName: "dx-chart",
+    componentName: "Chart",
+    componentNameLowercase: "chart"
 }
 
 #include btn-open-demo with {

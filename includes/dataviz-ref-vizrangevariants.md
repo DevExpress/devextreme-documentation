@@ -103,7 +103,6 @@ This property accepts one of the following:
 
     The following code snippet demonstrates **${{objectName}}** defined as a `<Dx${{objectSelector}}>` selector:
 
-        <!-- tab: App.vue -->
         <Dx${{componentName}}>
             <Dx${{parentSelector}}>
                 <Dx${{objectSelector}} startValue="50" endValue="70" />
@@ -131,7 +130,6 @@ This property accepts one of the following:
 
     The following code snippet demonstrates ${{objectName}} defined as a `<${{objectSelector}}>` selector:
 
-        <!-- tab: App.vue -->
         <${{componentName}}>
             <${{parentSelector}}>
                 <${{objectSelector}} startValue="50" endValue="70" />
@@ -193,7 +191,6 @@ This property accepts one of the following:
 
     The following code snippet demonstrates **${{objectName}}** defined as a `<Dx${{objectSelector}}>` selector:
 
-        <!-- tab: App.vue -->
         <Dx${{componentName}}>
             <Dx${{parentSelector}}>
                 <Dx${{objectSelector}} startValue="50" length="20" />
@@ -221,7 +218,6 @@ This property accepts one of the following:
 
     The following code snippet demonstrates **${{objectName}}** defined as a `<${{objectSelector}}>` selector:
 
-        <!-- tab: App.vue -->
         <${{componentName}}>
             <${{parentSelector}}>
                 <${{objectSelector}} startValue="50" length="20" />

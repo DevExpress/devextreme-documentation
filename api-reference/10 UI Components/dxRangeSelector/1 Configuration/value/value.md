@@ -96,7 +96,6 @@ This property accepts one of the following:
 
     The following code snippet demonstrates **value** defined as a `<DxValue>` selector:
 
-        <!-- tab: App.vue -->
         <DxRangeSelector>
             <DxValue startValue="50" endValue="70" />
         </DxRangeSelector>
@@ -116,7 +115,6 @@ This property accepts one of the following:
 
     The following code snippet demonstrates value defined as a `<Value>` selector:
 
-        <!-- tab: App.vue -->
         <RangeSelector>
             <Value startValue="50" endValue="70" />
         </RangeSelector>
@@ -162,7 +160,6 @@ This property accepts one of the following:
 
     The following code snippet demonstrates **value** defined as a `<DxValue>` selector:
 
-        <!-- tab: App.vue -->
         <DxRangeSelector>
             <DxValue startValue="50" length="20" />
         </DxRangeSelector>
@@ -182,7 +179,6 @@ This property accepts one of the following:
 
     The following code snippet demonstrates **value** defined as a `<Value>` selector:
 
-        <!-- tab: App.vue -->
         <RangeSelector>
             <Value startValue="50" length="20" />
         </RangeSelector>

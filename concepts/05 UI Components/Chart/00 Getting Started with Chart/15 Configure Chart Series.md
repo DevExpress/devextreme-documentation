@@ -1,4 +1,4 @@
-To configure how Chart displays data, specify **series** properties. This example implements the following properties: [type](/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#type), [name](/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#name), and [color](/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#color).
+To configure how Chart displays data, specify **series** object properties. This example implements the following properties: [type](/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#type), [name](/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#name), and [color](/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#color).
 
 ---
 

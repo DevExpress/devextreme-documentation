@@ -1,4 +1,4 @@
-You can customize the appearance of Chart visual elements such as the component background. To configure a background gradient, assign **commonPaneSettings**.[backgroundColor](/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonPaneSettings/#backgroundColor) to a [ChartsColor](/Documentation/ApiReference/Common_Types/charts/ChartsColor/) object. In this object, implement the [registerGradient](/Documentation/ApiReference/Common/Utils/viz/#registerGradienttype_options) method as [fillId](/Documentation/ApiReference/Common_Types/charts/ChartsColor/#fillId):
+You can customize the appearance of Chart visual elements such as the component background. To configure a background gradient, set **commonPaneSettings**.[backgroundColor](/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonPaneSettings/#backgroundColor) to a [ChartsColor](/Documentation/ApiReference/Common_Types/charts/ChartsColor/) object. In this object, assign the [registerGradient](/Documentation/ApiReference/Common/Utils/viz/#registerGradienttype_options) return value to [fillId](/Documentation/ApiReference/Common_Types/charts/ChartsColor/#fillId):
 
 ---
 

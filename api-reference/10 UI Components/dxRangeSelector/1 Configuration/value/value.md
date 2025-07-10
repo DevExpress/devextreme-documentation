@@ -189,7 +189,7 @@ This property accepts one of the following:
 
     ---
 
-    If you specify only **length**, the component implements the largest scale value as **endValue**.
+    If you specify only **length**, the component defines the **endValue** property as the largest scale value. 
 
 ---
 

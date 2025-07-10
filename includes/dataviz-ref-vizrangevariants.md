@@ -90,7 +90,7 @@ This property accepts one of the following:
 
     ##### Vue
 
-    The following code snippet demonstrates **${{objectName}}** defined as a `<Dx${{parentSelector}}>` property:
+    The following code snippet demonstrates **${{objectName}}** defined as a `<Dx${{parentSelector}}>` attribute:
 
         <!-- tab: App.vue -->
         <Dx${{componentName}}>
@@ -117,7 +117,7 @@ This property accepts one of the following:
 
     ##### React
 
-    The following code snippet demonstrates **${{objectName}}** defined as a `<${{parentSelector}}>` property:
+    The following code snippet demonstrates **${{objectName}}** defined as a `<${{parentSelector}}>` attribute:
 
         <!-- tab: App.tsx -->
         <${{componentName}}>
@@ -128,7 +128,7 @@ This property accepts one of the following:
             <${{parentSelector}} ${{objectName}}={{ startValue: null, endValue: 70 }} />
         </${{componentName}}>
 
-    The following code snippet demonstrates ${{objectName}} defined as a `<${{objectSelector}}>` selector:
+    The following code snippet demonstrates **${{objectName}}** defined as a `<${{objectSelector}}>` selector:
 
         <${{componentName}}>
             <${{parentSelector}}>
@@ -178,7 +178,7 @@ This property accepts one of the following:
 
     ##### Vue
 
-    The following code snippet demonstrates **${{objectName}}** defined as a `<Dx${{parentSelector}}>` property:
+    The following code snippet demonstrates **${{objectName}}** defined as a `<Dx${{parentSelector}}>` attribute:
 
         <!-- tab: App.vue -->
         <Dx${{componentName}}>
@@ -205,7 +205,7 @@ This property accepts one of the following:
 
     ##### React
 
-    The following code snippet demonstrates **${{objectName}}** defined as a `<${{parentSelector}}>` property:
+    The following code snippet demonstrates **${{objectName}}** defined as a `<${{parentSelector}}>` attribute:
 
         <!-- tab: App.tsx -->
         <${{componentName}}>

@@ -4,7 +4,7 @@ type: function(items)
 ---
 ---
 ##### shortDescription
-Allows you to change the order, text, and visibility of legend items.
+Allows you to change **only** the order, text, and visibility of legend items.
 
 ##### param(items): Array<LegendItem>
 Legend items before customizations.

@@ -2,6 +2,7 @@
 id: UI Events.dxtransformend
 module: events/transform
 type: eventType
+hidden: 
 ---
 ---
 ##### shortDescription

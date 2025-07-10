@@ -1,4 +1,4 @@
-The DevExtreme jQuery UI Component Suite offers over 80+ responsive, touch-enabled UI components for jQuery applications. This suite features a data grid, interactive charts, data editors, and various navigation and utility components.
+The DevExtreme jQuery UI Component Suite offers 80+ responsive, touch-enabled UI components for jQuery applications. This suite features a data grid, interactive charts, data editors, and various navigation and utility components.
 
 ## Explore All 80+ jQuery Components
 

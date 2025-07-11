@@ -178,7 +178,7 @@ This property accepts one of the following:
 
     ##### Vue
 
-    The following code snippet demonstrates **${{objectName}}** defined as a `<Dx${{parentSelector}}>` attribute:
+    The following code snippet demonstrates **${{objectName}}** defined as an attribute of `<Dx${{parentSelector}}>`:
 
         <!-- tab: App.vue -->
         <Dx${{componentName}}>
@@ -189,7 +189,7 @@ This property accepts one of the following:
             <Dx${{parentSelector}} :${{objectName}}="{ endValue: 70, length: 20 }" />
         </Dx${{componentName}}>
 
-    The following code snippet demonstrates **${{objectName}}** defined as a `<Dx${{objectSelector}}>` selector:
+    The following code snippet demonstrates **${{objectName}}** defined as a selector (`<Dx${{objectSelector}}>`):
 
         <Dx${{componentName}}>
             <Dx${{parentSelector}}>
@@ -205,7 +205,7 @@ This property accepts one of the following:
 
     ##### React
 
-    The following code snippet demonstrates **${{objectName}}** defined as a `<${{parentSelector}}>` attribute:
+    The following code snippet demonstrates **${{objectName}}** defined as an attribute of `<${{parentSelector}}>`:
 
         <!-- tab: App.tsx -->
         <${{componentName}}>
@@ -216,7 +216,7 @@ This property accepts one of the following:
             <${{parentSelector}} ${{objectName}}={{ endValue: 70, length: 20 }} />
         <${{componentName}}>
 
-    The following code snippet demonstrates **${{objectName}}** defined as a `<${{objectSelector}}>` selector:
+    The following code snippet demonstrates **${{objectName}}** defined as a selector (`<${{objectSelector}}>`):
 
         <${{componentName}}>
             <${{parentSelector}}>
@@ -232,7 +232,7 @@ This property accepts one of the following:
 
     ---
 
-    If you specify only **length**, the component implements the largest ${{element}} value as **endValue**.
+    If you specify only **length**, the component defines the **endValue** property as the largest scale value.
 
 ---
 

@@ -151,14 +151,14 @@ This property accepts one of the following:
 
     ##### Vue
 
-    The following code snippet demonstrates **value** defined as a `<DxRangeSelector>` attribute:
+    The following code snippet demonstrates **value** defined as an attribute of `<DxRangeSelector>`:
 
         <!-- tab: App.vue -->
         <DxRangeSelector :value="{ startValue: 50, length: 20 }" />
         <!-- or -->
         <DxRangeSelector :value="{ endValue: 70, length: 20 }" />
 
-    The following code snippet demonstrates **value** defined as a `<DxValue>` selector:
+    The following code snippet demonstrates **value** defined as a selector (`<DxValue>`):
 
         <DxRangeSelector>
             <DxValue startValue="50" length="20" />
@@ -170,14 +170,14 @@ This property accepts one of the following:
 
     ##### React
 
-    The following code snippet demonstrates **value** defined as a `<RangeSelector>` attribute:
+    The following code snippet demonstrates **value** defined as an attribute of `<RangeSelector>`:
 
         <!-- tab: App.tsx -->
         <RangeSelector value={{ startValue: 50, length: 20 }} />
         <!-- or -->
         <RangeSelector value={{ endValue: 70, length: 20 }} />
 
-    The following code snippet demonstrates **value** defined as a `<Value>` selector:
+    The following code snippet demonstrates **value** defined as a selector (`<Value>`):
 
         <RangeSelector>
             <Value startValue="50" length="20" />

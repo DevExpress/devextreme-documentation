@@ -1,7 +1,7 @@
 ---
 ##### jQuery
 
-To customize the appearance of all Autocomplete suggestions, define an [item template](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#itemTemplate'). 
+To customize the appearance of all AutoComplete suggestions, define an [item template](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#itemTemplate'). 
 
 If your data is grouped, you may want to customize the group headings. Define a [group template](/api-reference/10%20UI%20Components/dxAutocomplete/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#groupTemplate') for that purpose. 
 
@@ -25,7 +25,7 @@ You can also enable [wrapItemText](/api-reference/10%20UI%20Components/dxDropDow
 
 ##### Angular
 
-To customize the appearance of all Autocomplete suggestions, define an [item template](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#itemTemplate'). To customize an individual suggestion, use [custom templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates') property.
+To customize the appearance of all AutoComplete suggestions, define an [item template](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#itemTemplate'). To customize an individual suggestion, use [custom templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates') property.
 
 If your data is grouped, you may want to customize the group headings. Define a [group template](/api-reference/10%20UI%20Components/dxAutocomplete/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#groupTemplate') for that purpose.
 
@@ -47,7 +47,7 @@ You can also enable [wrapItemText](/api-reference/10%20UI%20Components/dxDropDow
 
 ##### Vue
 
-To customize the appearance of all Autocomplete suggestions, define an [item template](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#itemTemplate'). To customize an individual suggestion, use [custom templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates') property.
+To customize the appearance of all AutoComplete suggestions, define an [item template](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#itemTemplate'). To customize an individual suggestion, use [custom templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates') property.
 
 If your data is grouped, you may want to customize the group headings. Define a [group template](/api-reference/10%20UI%20Components/dxAutocomplete/1%20Configuration/groupTemplate.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#groupTemplate') for that purpose.
 
@@ -75,7 +75,7 @@ You can also enable [wrapItemText](/api-reference/10%20UI%20Components/dxDropDow
 
 ##### React
 
-To customize the appearance of all Autocomplete suggestions, implement the [itemRender](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/itemRender.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#itemRender') or [itemComponent](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/itemComponent.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#itemComponent') function. To customize an individual suggestion, specify the [render](/api-reference/_hidden/CollectionWidgetItem/render.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/items/#render') or [component](/api-reference/_hidden/CollectionWidgetItem/component.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/items/#component') property.
+To customize the appearance of all AutoComplete suggestions, implement the [itemRender](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/itemRender.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#itemRender') or [itemComponent](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/itemComponent.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#itemComponent') function. To customize an individual suggestion, specify the [render](/api-reference/_hidden/CollectionWidgetItem/render.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/items/#render') or [component](/api-reference/_hidden/CollectionWidgetItem/component.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/items/#component') property.
 
 If your data is grouped, you may want to customize the group headings. Implement the [groupRender](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/groupRender.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#groupRender') or [groupComponent](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/groupComponent.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#groupComponent') function for that purpose.
 

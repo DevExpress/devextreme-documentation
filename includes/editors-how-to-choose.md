@@ -3,7 +3,7 @@ DevExtreme has five drop-down text editors:
 - [SelectBox](/api-reference/10%20UI%20Components/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/')
 - [TagBox](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/')
 - [Lookup](/api-reference/10%20UI%20Components/dxLookup '/Documentation/ApiReference/UI_Components/dxLookup/')
-- [Autocomplete](/api-reference/10%20UI%20Components/dxAutocomplete '/Documentation/ApiReference/UI_Components/dxAutocomplete/')
+- [AutoComplete](/api-reference/10%20UI%20Components/dxAutocomplete '/Documentation/ApiReference/UI_Components/dxAutocomplete/')
 - [DropDownBox](/api-reference/10%20UI%20Components/dxDropDownBox '/Documentation/ApiReference/UI_Components/dxDropDownBox/')
 
 The following table compares the drop-down editors according to features:
@@ -14,7 +14,7 @@ The following table compares the drop-down editors according to features:
         <th>SelectBox</th>
         <th>TagBox</th>
         <th>Lookup</th>
-        <th>Autocomplete</th>
+        <th>AutoComplete</th>
         <th>DropDownBox</th>
     </tr>
     <tr>

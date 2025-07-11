@@ -1,4 +1,4 @@
-[note] The overall accessibility level of your application depends on the Autocomplete features that you use.
+[note] The overall accessibility level of your application depends on the AutoComplete features that you use.
 
 <table class="dx-table">
     <tr>

@@ -1,4 +1,4 @@
-You can group data items in the Autocomplete drop-down list.
+You can group data items in the AutoComplete drop-down list.
 
 If the data source contains ungrouped data items, use the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/')'s [group](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/group.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group') property to specify the data field by which to group.
 

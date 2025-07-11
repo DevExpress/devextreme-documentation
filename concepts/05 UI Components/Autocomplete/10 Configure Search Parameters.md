@@ -1,4 +1,4 @@
-The Autocomplete can provide suggestions in two different modes: *'contains'* (by default) and *'startswith'*. You can use the [searchMode](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/searchMode.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#searchMode') property to change the mode.
+The AutoComplete can provide suggestions in two different modes: *'contains'* (by default) and *'startswith'*. You can use the [searchMode](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/searchMode.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#searchMode') property to change the mode.
 
 ---
 ##### jQuery
@@ -105,7 +105,7 @@ The Autocomplete can provide suggestions in two different modes: *'contains'* (b
 
 ---
 
-By default, the Autocomplete UI component starts providing suggestions once an end user types the first character. To increase the number of characters that triggers suggestions, use the [minSearchLength](/api-reference/10%20UI%20Components/dxAutocomplete/1%20Configuration/minSearchLength.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#minSearchLength') property. 
+By default, the AutoComplete UI component starts providing suggestions once an end user types the first character. To increase the number of characters that triggers suggestions, use the [minSearchLength](/api-reference/10%20UI%20Components/dxAutocomplete/1%20Configuration/minSearchLength.md '/Documentation/ApiReference/UI_Components/dxAutocomplete/Configuration/#minSearchLength') property. 
 
 ---
 ##### jQuery
@@ -246,7 +246,7 @@ You can also specify the time interval the UI component should wait before provi
 ---
 
 #####See Also#####
-- [Autocomplete Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Autocomplete/Overview)
-- [Autocomplete API Reference](/api-reference/10%20UI%20Components/dxAutocomplete '/Documentation/ApiReference/UI_Components/dxAutocomplete/')
+- [AutoComplete Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Autocomplete/Overview)
+- [AutoComplete API Reference](/api-reference/10%20UI%20Components/dxAutocomplete '/Documentation/ApiReference/UI_Components/dxAutocomplete/')
 
 [tags]autocomplete, search, search mode, time interval, min search length

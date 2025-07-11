@@ -1,6 +1,6 @@
-To render an image in a Chat, set the message [type](/Documentation/ApiReference/UI_Components/dxChat/Types/Message/#type) to "image" and specify the [src](/Documentation/ApiReference/UI_Components/dxChat/Types/Message/#src) field with the image URL. In the following example, AI sends a message with the "imageResponse" type, which is then converted into an image in Chat.
+To render an image in a Chat, set the message [type](/api-reference/10%20UI%20Components/dxChat/9%20Types/MessageBase/type.md '/Documentation/ApiReference/UI_Components/dxChat/Types/Message/#type') to "image" and specify the [src](/api-reference/10%20UI%20Components/dxChat/9%20Types/ImageMessage/src.md '/Documentation/ApiReference/UI_Components/dxChat/Types/Message/#src') field with the image URL. In the following example, AI sends a message with the "imageResponse" type, which is then converted into an image in Chat.
 
-[note] Chat displays either images or text in a single message. Specify [messageTemplate](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#messageTemplate) to display custom messages.
+[note] Chat displays either images or text in a single message. Specify [messageTemplate](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/messageTemplate.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#messageTemplate') to display custom messages.
 
 ---
 ##### jQuery

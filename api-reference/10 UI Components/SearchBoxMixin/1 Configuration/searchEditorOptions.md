@@ -8,7 +8,7 @@ default: {}
 Configures the search panel.
 
 ---
-The component implements a DevExtreme [TextBox](/Documentation/Guide/UI_Components/TextBox/Overview/) component to display a search panel. Define [TextBox Configuration](/api-reference/10%20UI%20Components/dxTextBox/1%20Configuration '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/') properties in **searchEditorOptions** to customize the search panel:
+The component implements a DevExtreme [TextBox](/concepts/05%20UI%20Components/TextBox/02%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/TextBox/Overview/') component to display a search panel. Define [TextBox Configuration](/api-reference/10%20UI%20Components/dxTextBox/1%20Configuration '/Documentation/ApiReference/UI_Components/dxTextBox/Configuration/') properties in **searchEditorOptions** to customize the search panel:
 
 ---
 

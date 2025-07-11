@@ -1,4 +1,4 @@
-You can find all required files in the DevExtreme folder (%ProgramFiles%\DevExpress 25.1\DevExtreme\Sources) if you used the <a target="_blank" href="https://www.devexpress.com/ClientCenter/DownloadManager">Unified Component installer</a>. Copy the Lib folder into the folder with your application. Then, link jQuery and DevExtreme stylesheets and scripts in the index page's `<head>` tag in the following order:
+You can find all required files in the DevExtreme folder (%ProgramFiles%\DevExpress 25.2\DevExtreme\Sources) if you used the <a target="_blank" href="https://www.devexpress.com/ClientCenter/DownloadManager">Unified Component installer</a>. Copy the Lib folder into the folder with your application. Then, link jQuery and DevExtreme stylesheets and scripts in the index page's `<head>` tag in the following order:
 
     <!--HTML-->
     <head>

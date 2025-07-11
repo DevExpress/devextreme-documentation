@@ -2,7 +2,7 @@ The DevExtreme Angular UI Component Suite offers 80+ responsive, touch-enabled U
 
 ## Explore All 80+ Angular Components
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/25_1/ComponentList/index.html, /Content/Applications/25_1/ComponentList/index.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/25_2/ComponentList/index.html, /Content/Applications/25_2/ComponentList/index.css"></div>
 
 ## Try DevExtreme Components in Your Project
 

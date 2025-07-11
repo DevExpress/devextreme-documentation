@@ -1,6 +1,6 @@
 This tutorial demonstrates how to customize FileUploader appearance.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/25_1/UIWidgets/FileUploader/Customization/index.html, /Content/Applications/25_1/UIWidgets/FileUploader/Customization/index.js, /Content/Applications/25_1/UIWidgets/FileUploader/Customization/index.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/25_2/UIWidgets/FileUploader/Customization/index.html, /Content/Applications/25_2/UIWidgets/FileUploader/Customization/index.js, /Content/Applications/25_2/UIWidgets/FileUploader/Customization/index.css"></div>
 
 Specify the [dropZone](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/dropZone.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#dropZone') property to integrate a custom drop zone. Use the `width` and `height` CSS styles to modify drop zone dimensions. This tutorial also implements the `background-color` and `border-radius` styles:
 

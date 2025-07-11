@@ -15,6 +15,7 @@ $(() => {
   const grid = $("#task-grid")
     .dxDataGrid({
       dataSource: tasks,
+      keyExpr: "id",
       columns: ["task", "dueDate", "done"],
       editing: {
         mode: "cell",

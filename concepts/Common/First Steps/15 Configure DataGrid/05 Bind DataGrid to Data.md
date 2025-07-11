@@ -5,7 +5,8 @@ The DataGrid component can [load and update data](/Documentation/Guide/UI_Compon
 
 1. Create the `tasks` array.  
 2. Assign the array to the [dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource) property.  
-3. In the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/) array, define which columns you want to display.
+3. Specify [keyExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr) (*'id'* in this case).
+4. In the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/) array, define which columns you want to display.
 
         <!-- tab: index.js -->
         $(() => {
@@ -15,6 +16,7 @@ The DataGrid component can [load and update data](/Documentation/Guide/UI_Compon
             ];
             $("#task-grid").dxDataGrid({
                 dataSource: tasks,
+                keyExpr: "id",
                 columns: ["task", "dueDate", "done"],
             });
         });
@@ -31,19 +33,21 @@ The DataGrid component can [load and update data](/Documentation/Guide/UI_Compon
             ];
         }
 
-2. Assign the array to the [dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource) property.  
-3. Use the nested `dxi-data-grid-column` component to define [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/) you want to display.
+2. Assign the array to the [dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource) property.
+3. Specify [keyExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr) (*'id'* in this case).
+4. Use the nested `dxi-data-grid-column` component to define [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/) you want to display.
         
         <!-- tab: app.component.html -->
         <dx-data-grid ...
             [dataSource]="tasks"
+            keyExpr="id"
         >
             <dxi-data-grid-column dataField="task"></dxi-data-grid-column>
             <dxi-data-grid-column dataField="dueDate"></dxi-data-grid-column>
             <dxi-data-grid-column dataField="done"></dxi-data-grid-column>
         </dx-data-grid>
 
-4. Remember to import the `DxiDataGridColumnComponent` component.
+5. Remember to import the `DxiDataGridColumnComponent` component.
 
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
@@ -66,8 +70,9 @@ For more information about the nested components, refer to the following article
 ##### Vue
 
 1. Create the `tasks` array.  
-2. Assign the array to the [dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource) property.  
-3. Use the nested `DxColumn` component to define [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/) you want to display. Remember to import the necessary nested components.
+2. Assign the array to the [dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource) property.
+3. Specify [keyExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr) (*'id'* in this case).  
+4. Use the nested `DxColumn` component to define [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/) you want to display. Remember to import the necessary nested components.
 
         <!-- tab: App.vue -->
         <template>
@@ -75,6 +80,7 @@ For more information about the nested components, refer to the following article
                 <DxProgressBar id="progress" />
                 <DxDataGrid ...
                     :data-source="tasks"
+                    key-expr="id"
                 >
                     <DxColumn  
                         data-field="task"
@@ -105,8 +111,9 @@ For more information about the nested components, refer to the following article
 ##### React
 
 1. Create the `tasks` array.  
-2. Assign the array to the [dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource) property.  
-3. Use the nested `Column` component to define [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/) you want to display. Remember to import the necessary nested components.
+2. Assign the array to the [dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource) property. 
+3. Specify [keyExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr) (*'id'* in this case). 
+4. Use the nested `Column` component to define [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/) you want to display. Remember to import the necessary nested components.
 
         <!-- tab: App.tsx -->
         import DataGrid, { Column } from 'devextreme-react/data-grid';
@@ -122,6 +129,7 @@ For more information about the nested components, refer to the following article
                     <ProgressBar id="progress" />
                     <DataGrid ... 
                         dataSource={tasks}
+                        keyExpr="id"
                     >
                         <Column  
                             dataField="task"

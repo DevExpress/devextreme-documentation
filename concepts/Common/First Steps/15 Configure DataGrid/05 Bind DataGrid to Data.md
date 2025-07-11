@@ -5,7 +5,7 @@ The DataGrid component can [load and update data](/Documentation/Guide/UI_Compon
 
 1. Create the `tasks` array.  
 2. Assign the array to the [dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource) property.  
-3. Specify [keyExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr) (*'id'* in this case).
+3. Specify [keyExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr) (`id` in this case).
 4. In the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/) array, define which columns you want to display.
 
         <!-- tab: index.js -->
@@ -34,7 +34,7 @@ The DataGrid component can [load and update data](/Documentation/Guide/UI_Compon
         }
 
 2. Assign the array to the [dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource) property.
-3. Specify [keyExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr) (*'id'* in this case).
+3. Specify [keyExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr) (`id` in this case).
 4. Use the nested `dxi-data-grid-column` component to define [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/) you want to display.
         
         <!-- tab: app.component.html -->
@@ -71,7 +71,7 @@ For more information about the nested components, refer to the following article
 
 1. Create the `tasks` array.  
 2. Assign the array to the [dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource) property.
-3. Specify [keyExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr) (*'id'* in this case).  
+3. Specify [keyExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr) (`id` in this case).  
 4. Use the nested `DxColumn` component to define [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/) you want to display. Remember to import the necessary nested components.
 
         <!-- tab: App.vue -->
@@ -112,7 +112,7 @@ For more information about the nested components, refer to the following article
 
 1. Create the `tasks` array.  
 2. Assign the array to the [dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource) property. 
-3. Specify [keyExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr) (*'id'* in this case). 
+3. Specify [keyExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr) (`id` in this case). 
 4. Use the nested `Column` component to define [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/) you want to display. Remember to import the necessary nested components.
 
         <!-- tab: App.tsx -->

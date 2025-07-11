@@ -1,4 +1,4 @@
-To create an Autocomplete component, declare it in the markup and bind the component to a data source.
+To create an AutoComplete component, declare it in the markup and bind the component to a data source.
 
 Use one of the following properties to supply data to the component:
 

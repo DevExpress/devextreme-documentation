@@ -11,7 +11,7 @@ Next, layout the components in the HTML file:
 
 ##### Angular
 
-Next, import components into `app.component.ts`. For detailed instructions on methods and module imports, refer to the [Import DevExtreme Components](/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/#Import_DevExtreme_Components) article.
+Next, import components into `app.component.ts`. For detailed instructions on imports, refer to the [Import DevExtreme Components](/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/#Import_DevExtreme_Components) article.
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';

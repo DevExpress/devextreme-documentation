@@ -51,7 +51,7 @@ The following example shows a **CustomStore** that sends data processing setting
                     .fail(function() { throw "Data loading error" });
                 return d.promise();
             },
-            // Needed to process selected value(s) in the SelectBox, Lookup, Autocomplete, and DropDownBox
+            // Needed to process selected value(s) in the SelectBox, Lookup, AutoComplete, and DropDownBox
             // byKey: function(key) {
             //     var d = new $.Deferred();
             //     $.get('https://mydomain.com/MyDataService?id=' + key)
@@ -140,7 +140,7 @@ The following example shows a **CustomStore** that sends data processing setting
                             throw 'Data loading error';
                         });
                     },
-                    // Needed to process selected value(s) in the SelectBox, Lookup, Autocomplete, and DropDownBox
+                    // Needed to process selected value(s) in the SelectBox, Lookup, AutoComplete, and DropDownBox
                     // byKey: (key: number) => {
                     //     return lastValueFrom(
                     //        this.http.get(`$https://mydomain.com/MyDataService?id=${key}`)
@@ -251,7 +251,7 @@ The following example shows a **CustomStore** that sends data processing setting
                 })
                 .catch(() => { throw 'Network error' });
         },
-        // Needed to process selected value(s) in the SelectBox, Lookup, Autocomplete, and DropDownBox
+        // Needed to process selected value(s) in the SelectBox, Lookup, AutoComplete, and DropDownBox
         // byKey: (key) => {
         //     return fetch(`https://mydomain.com/MyDataService?id=${key}`)
         //         .then(handleErrors);
@@ -335,7 +335,7 @@ The following example shows a **CustomStore** that sends data processing setting
                 })
                 .catch(() => { throw 'Network error' });
         },
-        // Needed to process selected value(s) in the SelectBox, Lookup, Autocomplete, and DropDownBox
+        // Needed to process selected value(s) in the SelectBox, Lookup, AutoComplete, and DropDownBox
         // byKey: (key) => {
         //     return fetch(`https://mydomain.com/MyDataService?id=${key}`)
         //         .then(handleErrors);

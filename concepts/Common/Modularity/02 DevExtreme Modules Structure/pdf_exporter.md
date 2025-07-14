@@ -14,4 +14,4 @@ Exports:
         // ===== or =====
         import { exportGantt } from "devextreme/pdf_exporter";
 
-[note] To generate PDFs with non-ASCII characters, refer to the following troubleshooting guide: [Export Unsupported Characters](/Documentation/Guide/Troubleshooting/PDF_Export_Issues/Export_Unsupported_Characters/).
+[note] To generate PDFs with unsupported characters, refer to the following troubleshooting guide: [Export Unsupported Characters](/Documentation/Guide/Troubleshooting/PDF_Export_Issues/Export_Unsupported_Characters/DataGrid/).

@@ -23,7 +23,7 @@ Export settings.
 [note]
 
 - This method uses [jsPDF](https://github.com/parallax/jsPDF) v2.3.1+ to generate PDF files, and the [jsPDF-AutoTable](https://github.com/simonbengtsson/jsPDF-AutoTable) plugin to create tables within generated PDFs.
-- To generate PDFs with non-ASCII characters, refer to the following troubleshooting guide: [Export Unsupported Characters - Gantt](/Documentation/Guide/Troubleshooting/PDF_Export_Issues/Export_Unsupported_Characters/Gantt/).
+- To generate PDFs with unsupported characters, refer to the following troubleshooting guide: [Export Unsupported Characters - Gantt](/Documentation/Guide/Troubleshooting/PDF_Export_Issues/Export_Unsupported_Characters/Gantt/).
 
 [/note]
 

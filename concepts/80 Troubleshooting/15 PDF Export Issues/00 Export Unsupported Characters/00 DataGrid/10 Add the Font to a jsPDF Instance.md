@@ -1,10 +1,10 @@
-To add a Base64 encoded font file to a jsPDF instance, implement the following jsPDF methods:
+To add a font file to a jsPDF instance, implement the following jsPDF methods:
 
 - [addFileToVFS(fileName, contents)](https://raw.githack.com/MrRio/jsPDF/master/docs/module-vFS.html#~addFileToVFS)
 - [addFont(fileName, fontName, fontStyle)](https://raw.githack.com/MrRio/jsPDF/master/docs/jsPDF.html#addFont)
 - [setFont(fontName)](https://raw.githack.com/MrRio/jsPDF/master/docs/jsPDF.html#setFont)
 
-Assign your Base64 encoded font to the **contents** parameter of **addFileToVFS()**:
+Set the **contents** parameter of **addFileToVFS()** to the Base64 encoded font:
 
     <!-- tab: JavaScript -->
     const doc = new jsPDF();

@@ -13,7 +13,14 @@ Defines the range where the axis can be [zoomed and panned](/concepts/05%20UI%20
     basepath: "/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/wholeRange",
     objectName: "wholeRange",
     element: "axis",
-    elementType: "[argumentType](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/argumentType.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#argumentType')"
+    elementType: "[argumentType](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/argumentType.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#argumentType')",
+    angularSelector: "dxo-argument-axis",
+    jquerySelector: "argumentAxis",
+    parentSelector: "ArgumentAxis",
+    objectSelector: "WholeRange",
+    angularComponentName: "dx-chart",
+    componentName: "Chart",
+    componentNameLowercase: "chart"
 }
 
 #####See Also#####

@@ -21,3 +21,7 @@ The parent element has the `background-color` property. Expand it to see that th
 ![Inspect CSS: the `background-color` property expanded](/images/Troubleshooting/troubleshooting-inspect-css-3.png)
 
 Use a more specific CSS selector for this style to take effect only on the standalone toolbar. For example, assign an ID to the standalone toolbar and specify the following selector: `#my-toolbar .dx-toolbar`.
+
+##### See Also #####
+
+- [Individual CSS Classes](/Documentation/Guide/Themes_and_Styles/HTML-Based_Components_Customization/#Individual_CSS_Classes)

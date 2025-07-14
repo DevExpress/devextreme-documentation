@@ -1,4 +1,4 @@
-To add tooltips to Chart, assign `true` to the **tooltip**.[enabled](/Documentation/ApiReference/UI_Components/dxChart/Configuration/tooltip/#enabled) property. Default tooltips display values when users hover over points. To implement custom tooltips, define the [customizeTooltip](/Documentation/ApiReference/UI_Components/dxChart/Configuration/tooltip/#customizeTooltip) function. This example uses **customizeTooltip** to display the difference between `actualSpend` points and the average value of all `actualSpend` fields (calculated in the `calculateAverageSpend()` method):
+To add tooltips to Chart, assign `true` to the **tooltip**.[enabled](/Documentation/ApiReference/UI_Components/dxChart/Configuration/tooltip/#enabled) property. Default tooltips display values when users hover over points. To implement custom tooltips, define the [customizeTooltip](/Documentation/ApiReference/UI_Components/dxChart/Configuration/tooltip/#customizeTooltip) function. This example uses **customizeTooltip** to display the difference between the current and average `actualSpend` values (calculated in the `calculateAverageSpend()` method):
 
 ---
 

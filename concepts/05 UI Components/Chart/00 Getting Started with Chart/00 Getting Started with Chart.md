@@ -1,6 +1,6 @@
 #include tutorials-intro-installationnote
 
-DevExtreme Chart is an interactive UI component that displays data in a chart format. The component supports multiple chart [types](/Documentation/ApiReference/UI_Components/dxChart/Series_Types/).
+DevExtreme Chart is an interactive UI component that visualizes data using multiple [series types](/Documentation/ApiReference/UI_Components/dxChart/Series_Types/): line, bar, bubble, candlestick, and others.
 
 This tutorial explains how to add a Chart to a page and configure the component's core settings.
 

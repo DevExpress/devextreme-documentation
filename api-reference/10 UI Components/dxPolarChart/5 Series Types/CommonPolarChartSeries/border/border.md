@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-An object defining the series border configuration properties.
+An object that defines the series border configuration properties.
 
 ##### propertyOf
 dxPolarChartSeriesTypes.areapolarseries,dxPolarChartSeriesTypes.barpolarseries,dxPolarChartSeriesTypes.stackedbarpolarseries

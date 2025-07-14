@@ -13,7 +13,14 @@ Defines the range where the axis can be zoomed.
     basepath: "/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/valueAxis/wholeRange",
     objectName: "wholeRange",
     element: "axis",
-    elementType: "[valueType](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/valueAxis/valueType.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/valueAxis/#valueType')"
+    elementType: "[valueType](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/valueAxis/valueType.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/valueAxis/#valueType')",
+    angularSelector: "dxo-value-axis",
+    jquerySelector: "valueAxis",
+    parentSelector: "ValueAxis",
+    objectSelector: "WholeRange",
+    angularComponentName: "dx-polar-chart",
+    componentName: "PolarChart",
+    componentNameLowercase: "polarChart"
 }
 
 #####See Also#####

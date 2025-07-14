@@ -14,7 +14,14 @@ Defines the axis' displayed range. Cannot be wider than the [wholeRange](/api-re
     basepath: "/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/visualRange",
     objectName: "visualRange",
     element: "axis",
-    elementType: "[valueType](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/valueType.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#valueType')"
+    elementType: "[valueType](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/valueType.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#valueType')",
+    angularSelector: "dxo-value-axis",
+    jquerySelector: "valueAxis",
+    parentSelector: "ValueAxis",
+    objectSelector: "VisualRange",
+    angularComponentName: "dx-chart",
+    componentName: "Chart",
+    componentNameLowercase: "chart"
 }
 
 To specify the minimum visual range that a user can set, use the [minVisualRangeLength](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/minVisualRangeLength '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/minVisualRangeLength/') property.

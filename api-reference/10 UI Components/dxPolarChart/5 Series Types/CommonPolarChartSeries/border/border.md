@@ -16,7 +16,7 @@ You can configure **border** settings in the following objects:
 - [commonSeriesSettings](/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/)    
 Configures the **border** object for all supported series.
 - **commonSeriesSettings**.[area](/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/#area), **commonSeriesSettings**.[bar](/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/#bar), **commonSeriesSettings**.[stackedbar](/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/#stackedbar)    
-Configures the **border** object for all series of a specific type. Overwrites **border** configuration in **commonSeriesSettings**.
+Configure the **border** object for all series of a specific type. These objects overwrite **border** configuration in **commonSeriesSettings**.
 - [series](/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/)    
 Configures the **border** object for a specific series. Overwrites **border** configuration in **commonSeriesSettings** and series-specific objects.
 

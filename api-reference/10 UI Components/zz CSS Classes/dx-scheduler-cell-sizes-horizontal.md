@@ -9,3 +9,5 @@ Use this class to customize the Scheduler's table cells and the cells above them
     #yourSchedulerID .dx-scheduler-cell-sizes-horizontal {
         width: 200px;
     }
+
+[note] Scheduler does not support modifying `.dx-scheduler-cell-sizes-horizontal` element dimensions at runtime.

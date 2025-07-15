@@ -9,3 +9,5 @@ Use this class to customize the Scheduler's table cells and the cells to the lef
     #yourSchedulerID .dx-scheduler-cell-sizes-vertical {
         height: 200px;
     }
+
+[note] Scheduler does not support modifying `.dx-scheduler-cell-sizes-vertical` element dimensions at runtime.

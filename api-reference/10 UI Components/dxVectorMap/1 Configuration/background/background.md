@@ -15,6 +15,7 @@ The map background is a space on a map that does not contain areas. Within the *
 
     <!-- tab: index.js -->
     $('#vectorMap').dxVectorMap({
+        // ...
         background: {
             color: "azure",
             borderColor: "blue",
@@ -24,7 +25,7 @@ The map background is a space on a map that does not contain areas. Within the *
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-vector-map>
+    <dx-vector-map ... >
         <dxo-background color="azure" borderColor="blue"></dxo-background>
     </dx-vector-map>
 
@@ -32,7 +33,7 @@ The map background is a space on a map that does not contain areas. Within the *
 
     <!-- tab: App.vue -->
     <template>
-        <DxVectorMap>
+        <DxVectorMap ... >
             <DxBackground color="azure" borderColor="blue" />
         </DxVectorMap>
     </template>
@@ -49,7 +50,7 @@ The map background is a space on a map that does not contain areas. Within the *
 
     function App() {
         return (
-            <VectorMap>
+            <VectorMap ... >
                 <Background color="azure" borderColor="blue" />
             </VectorMap>
         )

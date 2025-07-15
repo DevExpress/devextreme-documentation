@@ -8034,6 +8034,9 @@
     "dxCalendarOptions.showWeekNumbers": {
       "vue": "show-week-numbers"
     },
+    "dxCalendarOptions.todayButtonText": {
+      "vue": "today-button-text"
+    },
     "dxCalendarOptions.weekNumberRule": {
       "vue": "week-number-rule"
     },

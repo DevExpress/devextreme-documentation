@@ -7,11 +7,83 @@ type: Object
 Configures the minor grid.
 
 ---
-In addition to the [major grid](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/grid '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/grid/') built on major ticks, the Chart UI component provides the minor grid built on minor ticks.
-
 ![DevExtreme HTML5 Charts MinorGridLines](/images/ChartJS/visual_elements/minor_grid_lines.png)
 
-[note]Neither minor ticks, nor the minor grid can be displayed if the axis is of the *"discrete"* type.
+In addition to the [major grid](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/grid '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/grid/'), DevExtreme Chart can display a minor grid following the placement of minor ticks.
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $('#chart').dxChart({
+        // ...
+        commonAxisSettings: {
+            minorGrid: {
+                visible: true,
+                color: 'blue',
+                opacity: 0.1,
+                width: 1,
+            },
+        },
+    })
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-chart ... >
+        <dxo-common-axis-settings>
+            <dxo-minor-grid
+                [visible]="true"
+                color="blue"
+                opacity="0.1"
+                width="1"
+            ></dxo-minor-grid>
+        </dxo-common-axis-settings>
+    </dx-chart>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxChart ... >
+            <DxCommonAxisSettings>
+                <DxMinorGrid
+                    :visible="true"
+                    color="blue"
+                    opacity="0.1"
+                    width="1"
+                />
+            </DxCommonAxisSettings>
+        </DxChart>
+    </template>
+
+    <script setup lang="ts">
+    import { DxChart, DxCommonAxisSettings, DxMinorGrid } from 'devextreme-vue/chart';
+
+    </script>
+
+##### React
+
+    <!-- tab: App.tsx -->
+    import { Chart, CommonAxisSettings, MinorGrid } from 'devextreme-react/chart';
+
+    function App() {
+        return (
+            <Chart ... >
+                <CommonAxisSettings>
+                    <MinorGrid
+                        visible={true}
+                        color="blue"
+                        opacity="0.1"
+                        width="1"
+                    />
+                </CommonAxisSettings>
+            </Chart>
+        )
+    }
+
+---
 
 The **commonAxisSettings**.[minorGrid](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/minorGrid '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/minorGrid/') object specifies common settings for all minor grid lines in the chart. To configure only those grid lines that descend from a particular axis, use the following objects.
 
@@ -20,4 +92,9 @@ The **commonAxisSettings**.[minorGrid](/api-reference/10%20UI%20Components/dxCha
 
 Axis-specific settings override common settings.
 
-[note]Displaying the minor grid without the major grid may impair the readability of a chart. To prevent this situation, we recommend you use the minor grid only in conjunction with the major grid.
+[note]
+
+- Displaying the minor grid alone may impair chart readability. We recommend you implement the minor grid in conjunction with the major grid.
+- The component does not display the minor grid on *"discrete"* axes.
+
+[/note]

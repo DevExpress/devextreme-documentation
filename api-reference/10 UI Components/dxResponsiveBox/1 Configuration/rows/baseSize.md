@@ -14,7 +14,7 @@ This property accepts a value of one of the following types:
 The base size in pixels.
 
 - **String**  
-A CSS-accepted measurement of the base size. For example, `"55px"`, `"20vw"`, `"80%"`, `"auto"`, `"inherit"`.
+A CSS measurement for the base size, as used in [flex-basis](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis).
 
 #####See Also#####
 - [ResponsiveBox - Create the Layout Grid](/concepts/05%20UI%20Components/ResponsiveBox/10%20Create%20the%20Layout%20Grid.md '/Documentation/Guide/UI_Components/ResponsiveBox/Create_the_Layout_Grid/')

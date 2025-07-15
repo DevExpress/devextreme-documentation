@@ -7,9 +7,9 @@ type: Object
 Configures the grid.
 
 ---
-![DevExtreme HTML5 Charts GridLines](/images/ChartJS/visual_elements/grid_lines.png)
-
 Grid lines can be considered extensions of [ticks](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/tick '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/tick/').
+
+![DevExtreme HTML5 Charts GridLines](/images/ChartJS/visual_elements/grid_lines.png)
 
 ---
 

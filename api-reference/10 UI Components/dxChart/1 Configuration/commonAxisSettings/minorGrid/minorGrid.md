@@ -7,9 +7,9 @@ type: Object
 Configures the minor grid.
 
 ---
-![DevExtreme HTML5 Charts MinorGridLines](/images/ChartJS/visual_elements/minor_grid_lines.png)
-
 In addition to the [major grid](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/grid '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/grid/'), DevExtreme Chart can display a minor grid following the placement of minor ticks.
+
+![DevExtreme HTML5 Charts MinorGridLines](/images/ChartJS/visual_elements/minor_grid_lines.png)
 
 ---
 

@@ -22,19 +22,24 @@ If license key validation fails, DevExtreme will display one of the following me
         <td><code>W0020 - DevExtreme: License Key Has Expired</code><br><br>A mismatch exists between the license key used and the DevExtreme version referenced in this project. <br><br> To proceed, you can:
         <ul>
         <li>use a version of DevExtreme linked to your license key (visit the DevExpress <a href="https://www.devexpress.com/ClientCenter/DownloadManager/" target="_blank">Download Manager</a> to validate license/version information)</li>
-        <li><a href="https://www.devexpress.com/buy/renew/" target="_blank">renew your DevExpress Subscription</a> (once you renew your subscription, you will be entitled to product updates and support service as defined in the DevExtreme End User License Agreement)</li></ul>
+        <li><a href="https://www.devexpress.com/buy/renew/" target="_blank">renew your DevExpress Subscription</a> (once you renew your subscription, you will be entitled to product updates and support services as defined in the DevExtreme End User License Agreement)</li></ul>
         If you have licensing-related questions or need help with a renewal, please email <a href="mailto: clientservices@devexpress.com">clientservices@devexpress.com</a>. For additional information on this error message, see: <a href="/Documentation/ApiReference/Common/Utils/Errors_and_Warnings/#W0020">W0020</a>.</td>
     </tr>
     <tr>
         <td>License key verification failed.</td>
         <td><code>W0021 - DevExtreme: License Key Verification Has Failed</code><br><br>
-        To verify your DevExtreme license, make certain to specify a correct key in the GlobalConfig. If you continue to encounter this error, please visit DevExpress <a href="https://www.devexpress.com/ClientCenter/DownloadManager/" target="_blank">Download Manager</a> to obtain a valid license key. <br><br> If you have a valid license key and this problem persists, please submit a <a href="https://supportcenter.devexpress.com/ticket/create" target="_blank">support ticket</a> via the DevExpress Support Center. We will be happy to follow-up. <br><br>
+        To verify your DevExtreme license, specify a correct key in the GlobalConfig. If you continue to encounter this error, please visit DevExpress <a href="https://www.devexpress.com/ClientCenter/DownloadManager/" target="_blank">Download Manager</a> to obtain a valid license key. <br><br> If you have a valid license key and this problem persists, please submit a <a href="https://supportcenter.devexpress.com/ticket/create" target="_blank">support ticket</a> with the DevExpress Support Center. We will be happy to follow-up. <br><br>
         For additional information on this error message, see: <a href="/Documentation/ApiReference/Common/Utils/Errors_and_Warnings/#W0021">W0021</a>.
         </td>
     </tr>
     <tr>
         <td>Pre-release version (Alpha, Beta, Community Technology Preview "CTP", or Release Candidate "RC", Early Access Preview "EAP")</td>
         <td><code>W0022 – DevExtreme: Pre-release software. Not suitable for commercial use.</code><br><br>
-        Pre-release software may contain deficiencies and as such, should not be considered for use or integrated in any mission critical application. For additional information on this error message, see: <a href="/Documentation/ApiReference/Common/Utils/Errors_and_Warnings/#W0022">W0022</a>. </td>
+        Pre-release software may contain deficiencies, and as such should not be considered for use or integrated in any mission critical application. For additional information on this error message, see: <a href="/Documentation/ApiReference/Common/Utils/Errors_and_Warnings/#W0022">W0022</a>. </td>
+    </tr>
+    <tr>
+        <td>The DevExtreme .NET license key is used instead of a DevExtreme key</td>
+        <td><code>W0024 - DevExtreme: Use Your DevExtreme License Key - Not Your DevExpress .NET License Key</code><br><br>
+        To remove the warning, enter the correct DevExtreme (React, Angular, Vue, JS) license key. For additional information on this error message, see: <a href="/Documentation/ApiReference/Common/Utils/Errors_and_Warnings/#W0024">W0024</a>. </td>
     </tr>
 </table>

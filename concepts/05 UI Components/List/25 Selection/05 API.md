@@ -139,13 +139,12 @@ To configure the initial selection or access the keys of selected items, use the
 
 ---
 
-You can also call the [selectItem](/api-reference/10%20UI%20Components/dxList/3%20Methods/selectItem(itemIndex).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#selectItemitemIndex') method to select a List item by index. To unselect an item, call [unselectItem](/api-reference/10%20UI%20Components/dxList/3%20Methods/unselectItem(itemIndex).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#unselectItemitemIndex').
+You can also call the [selectItem](/api-reference/10%20UI%20Components/dxList/3%20Methods/selectItem(itemIndex).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#selectItemitemIndex') method to select a List item by index. To unselect an item, call [unselectItem](/api-reference/10%20UI%20Components/dxList/3%20Methods/unselectItem(itemIndex).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#unselectItemitemIndex'). To exclude individual items from selection, set **items[]**.[disabled](/Documentation/ApiReference/UI_Components/dxList/Configuration/items/#disabled) to `true`.
 
-[note]To specify the key field, use the [keyExpr](/api-reference/10%20UI%20Components/dxList/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#keyExpr') property of the List or the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#key') property of the **Store**.
+[note] To specify the key field, use the [keyExpr](/api-reference/10%20UI%20Components/dxList/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#keyExpr') property of the List or the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#key') property of the **Store**.
 
 Implement the [onSelectionChanged](/api-reference/10%20UI%20Components/dxList/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged') event handler to perform an action after a user selects items. To cancel selection programmatically, use [onSelectionChanging](/api-reference/10%20UI%20Components/dxList/1%20Configuration/onSelectionChanging.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanging'). To see an example, refer to the following demo: [List Selection](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection/).
 
 #####See Also#####
-#include common-link-callmethods
 - [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection)
 - [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')

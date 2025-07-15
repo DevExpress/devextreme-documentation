@@ -36,8 +36,8 @@ In addition to the [major grid](/api-reference/10%20UI%20Components/dxChart/1%20
             <dxo-minor-grid
                 [visible]="true"
                 color="blue"
-                opacity="0.1"
-                width="1"
+                [opacity]="0.1"
+                [width]="1"
             ></dxo-minor-grid>
         </dxo-common-axis-settings>
     </dx-chart>
@@ -51,8 +51,8 @@ In addition to the [major grid](/api-reference/10%20UI%20Components/dxChart/1%20
                 <DxMinorGrid
                     :visible="true"
                     color="blue"
-                    opacity="0.1"
-                    width="1"
+                    :opacity="0.1"
+                    :width="1"
                 />
             </DxCommonAxisSettings>
         </DxChart>
@@ -75,8 +75,8 @@ In addition to the [major grid](/api-reference/10%20UI%20Components/dxChart/1%20
                     <MinorGrid
                         visible={true}
                         color="blue"
-                        opacity="0.1"
-                        width="1"
+                        opacity={0.1}
+                        width={1}
                     />
                 </CommonAxisSettings>
             </Chart>

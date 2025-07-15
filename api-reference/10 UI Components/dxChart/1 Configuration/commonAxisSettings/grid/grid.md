@@ -35,8 +35,8 @@ Grid lines can be considered extensions of [ticks](/api-reference/10%20UI%20Comp
             <dxo-grid
                 [visible]="true"
                 color="blue"
-                opacity="0.25"
-                width="2"
+                [opacity]="0.25"
+                [width]="2"
             ></dxo-grid>
         </dxo-common-axis-settings>
     </dx-chart>
@@ -50,8 +50,8 @@ Grid lines can be considered extensions of [ticks](/api-reference/10%20UI%20Comp
                 <DxGrid
                     :visible="true"
                     color="blue"
-                    opacity="0.25"
-                    width="2"
+                    :opacity="0.25"
+                    :width="2"
                 />
             </DxCommonAxisSettings>
         </DxChart>
@@ -74,8 +74,8 @@ Grid lines can be considered extensions of [ticks](/api-reference/10%20UI%20Comp
                     <Grid
                         visible={true}
                         color="blue"
-                        opacity="0.25"
-                        width="2"
+                        opacity={0.25}
+                        width={2}
                     />
                 </CommonAxisSettings>
             </Chart>

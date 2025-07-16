@@ -24,4 +24,4 @@ Use a more specific CSS selector for this style to take effect only on the stand
 
 ##### See Also #####
 
-- [Individual CSS Classes](/Documentation/Guide/Themes_and_Styles/HTML-Based_Components_Customization/#Individual_CSS_Classes)
+- [Individual CSS Classes](/concepts/60%20Themes%20and%20Styles/10%20HTML-Based%20Components%20Customization/40%20Individual%20CSS%20Classes.md '/Documentation/Guide/Themes_and_Styles/HTML-Based_Components_Customization/#Individual_CSS_Classes')

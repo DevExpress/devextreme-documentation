@@ -14,4 +14,4 @@ Legend items after customizations.
 ---
 #include dataviz-legend-customizeitems-example
 
-[note] To customize legend markers, use [markerTemplate](/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/#markerTemplate).
+[note] To customize legend markers, use [markerTemplate](/api-reference/40%20Common%20Types/05%20charts/BaseChartLegend/markerTemplate.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/#markerTemplate').

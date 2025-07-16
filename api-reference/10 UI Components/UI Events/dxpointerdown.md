@@ -2,6 +2,7 @@
 id: UI Events.dxpointerdown
 module: events/pointer
 type: eventType
+hidden: 
 ---
 ---
 ##### shortDescription

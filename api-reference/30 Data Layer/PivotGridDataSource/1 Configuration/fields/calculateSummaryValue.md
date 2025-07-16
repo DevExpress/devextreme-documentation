@@ -26,9 +26,10 @@ The following code snippet shows how to use **calculateSummaryValue** to impleme
 <img src="/images/pivotgrid/calculate-summary-value-1.png" alt="DevExtreme PivotGrid: Profit/Loss column" style="padding: 24px 0 24px 0;" /> 
 
 ---
+
 ##### jQuery
 
-    <!--JavaScript-->
+    <!-- tab: index.js -->
     $(function() {
         const pivotGridDataSource = new DevExpress.data.PivotGridDataSource({
             // ...
@@ -57,9 +58,8 @@ The following code snippet shows how to use **calculateSummaryValue** to impleme
 
 ##### Angular
 
-    <!--TypeScript-->
+    <!-- app.component.ts -->
     import PivotGridDataSource from "devextreme/ui/pivot_grid/data_source";
-    import { DxPivotGridModule } from "devextreme-angular";
     // ...
     export class AppComponent {
         pivotGridDataSource: PivotGridDataSource;
@@ -85,31 +85,11 @@ The following code snippet shows how to use **calculateSummaryValue** to impleme
         }
     }
 
-    @NgModule({
-        imports: [
-            // ...
-            DxPivotGridModule
-        ],
-        // ...
-    })
-
-    <!--HTML-->
-    <dx-pivot-grid
-        [dataSource]="pivotGridDataSource">
-    </dx-pivot-grid>
-
 ##### Vue
 
     <!-- tab: App.vue -->
-    <template>
-        <DxPivotGrid
-            :data-source="pivotGridDataSource"
-        />
-    </template>
-    
     <script>
     import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
-    import DxPivotGrid from 'devextreme-vue/pivot-grid';
 
     const pivotGridDataSource = new PivotGridDataSource({
         // ...
@@ -129,26 +109,14 @@ The following code snippet shows how to use **calculateSummaryValue** to impleme
             }
         }]
     });
-
-    export default {
-        components: {
-            DxPivotGrid
-        },
-        data() {
-            return {
-                pivotGridDataSource
-            }
-        }
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
 
     import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
-    import DxPivotGrid from 'devextreme-react/pivot-grid';
 
     const pivotGridDataSource = new PivotGridDataSource({
         // ...
@@ -168,17 +136,6 @@ The following code snippet shows how to use **calculateSummaryValue** to impleme
             }
         }]
     });
-
-    class App extends React.Component {
-        render() {
-            return (
-                <PivotGrid
-                    dataSource={pivotGridDataSource}
-                />
-            );
-        }
-    }
-    export default App;
 
 ##### ASP.NET MVC Controls
 
@@ -211,6 +168,100 @@ The following code snippet shows how to use **calculateSummaryValue** to impleme
 The "Profit/Loss" cell displays a difference between "Total Amount" cells in this case.
 
 <img src="/images/pivotgrid/calculate-summary-value-2.png" alt="CalculateSummaryValue: How the cell value is counted" style="padding: 24px 0 24px 0;" /> 
+
+To add a new grand totals column, add an item to **fields** and check that the **calculateSummaryValue()** parameter has no parent cells in the *"column"* direction:
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        const pivotGridDataSource = new DevExpress.data.PivotGridDataSource({
+            fields: [{
+                caption: 'Sales Average',
+                summaryType: 'avg',
+                calculateSummaryValue(cell){
+                    const isGrandTotalCell = !cell.parent("column");  
+                    if(isGrandTotalCell){  
+                        return e.value();  
+                    }  
+                    return null;  
+                },
+            }]
+        });
+    });
+    
+
+##### Angular
+
+    <!-- app.component.ts -->
+    import PivotGridDataSource from "devextreme/ui/pivot_grid/data_source";
+    // ...
+    export class AppComponent {
+        pivotGridDataSource: PivotGridDataSource;
+        constructor() {
+            this.pivotGridDataSource = new PivotGridDataSource({
+                fields: [{
+                    caption: 'Sales Average',
+                    summaryType: 'avg',
+                    calculateSummaryValue(cell){
+                        const isGrandTotalCell = !cell.parent("column");  
+                        if(isGrandTotalCell){  
+                            return e.value();  
+                        }  
+                        return null;  
+                    },
+                }]
+            });
+        }
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <script>
+    import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
+
+    const pivotGridDataSource = new PivotGridDataSource({
+        // ...
+        fields: [{
+            caption: 'Sales Average',
+            summaryType: 'avg',
+            calculateSummaryValue(cell){
+                const isGrandTotalCell = !cell.parent("column");  
+                if(isGrandTotalCell){  
+                    return e.value();  
+                }  
+                return null;  
+            },
+        }]
+    });
+    </script>
+
+##### React
+
+    <!-- tab: App.tsx -->
+    import React from 'react';
+
+    import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
+
+    const pivotGridDataSource = new PivotGridDataSource({
+        // ...
+        fields: [{
+            caption: 'Sales Average',
+            summaryType: 'avg',
+            calculateSummaryValue(cell){
+                const isGrandTotalCell = !cell.parent("column");  
+                if(isGrandTotalCell){  
+                    return e.value();  
+                }  
+                return null;  
+            },
+        }]
+    });
+
+---
 
 #include uiwidgets-ref-functioncontext with { 
     value: "field's configuration"

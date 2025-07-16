@@ -85,7 +85,7 @@ In addition to the [major grid](/api-reference/10%20UI%20Components/dxChart/1%20
 
 ---
 
-The **commonAxisSettings**.[minorGrid](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/minorGrid '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/minorGrid/') object specifies common settings for all minor gridlines in a chart. To configure only those gridlines that descend from an axis of your choice, use the following objects.
+The **commonAxisSettings**.[minorGrid](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/minorGrid '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/minorGrid/') object specifies common settings for all minor gridlines in a chart. To configure only those gridlines that descend from an axis of your choice, use the following objects:
 
 - **argumentAxis**.[minorGrid](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/minorGrid '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/minorGrid/')     
 - **valueAxis**.[minorGrid](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/minorGrid '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/minorGrid/')       

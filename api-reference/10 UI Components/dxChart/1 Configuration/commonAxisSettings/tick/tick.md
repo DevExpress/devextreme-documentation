@@ -92,7 +92,7 @@ Ticks help you align values with their corresponding data points on an axis. The
 
 ---
 
-The **commonAxisSettings**.**tick** object specifies common settings for all major ticks in a chart. To configure only those major ticks that belong to a particular axis, use the following objects.
+The **commonAxisSettings**.**tick** object specifies common settings for all major ticks in a chart. To configure only those major ticks that belong to a particular axis, use the following objects:
 
 - **argumentAxis**.[tick](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/tick '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/tick/')     
 - **valueAxis**.[tick](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/tick '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/tick/')       

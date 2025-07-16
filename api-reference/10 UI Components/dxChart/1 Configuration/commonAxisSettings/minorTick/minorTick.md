@@ -7,7 +7,7 @@ type: Object
 Configures the appearance of minor axis ticks.
 
 ---
-In addition to [major ticks](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/tick '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/tick/'), DevExtreme Chart can display minor ticks. The component places minor ticks between major ticks.
+In addition to [major ticks](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/tick '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/tick/'), the DevExtreme Chart can display minor ticks. This component places minor ticks between major ticks.
 
 ![DevExtreme HTML5 Charts MinorTicks](/images/ChartJS/visual_elements/minor_ticks.png)
 
@@ -92,7 +92,7 @@ In addition to [major ticks](/api-reference/10%20UI%20Components/dxChart/1%20Con
 
 ---
 
-The **commonAxisSettings**.[minorTick](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/minorTick '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/minorTick/') object specifies common settings for all minor ticks in the chart. To configure only those minor ticks that belong to a particular axis, use the following objects.
+The **commonAxisSettings**.[minorTick](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/minorTick '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/minorTick/') object specifies common settings for all minor ticks in a chart. To configure only those minor ticks that belong to a particular axis, use the following objects.
 
 - **argumentAxis**.[minorTick](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/minorTick '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/minorTick/')     
 - **valueAxis**.[minorTick](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/minorTick '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/minorTick/')     

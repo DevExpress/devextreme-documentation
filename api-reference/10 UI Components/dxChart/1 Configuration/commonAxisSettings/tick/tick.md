@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Configures the appearance of major axis ticks.
+Configures major axis tick appearance.
 
 ---
 Ticks help you align values with their corresponding data points on an axis. The **tick** object configures major ticks that are placed in relation to value labels.
@@ -92,7 +92,7 @@ Ticks help you align values with their corresponding data points on an axis. The
 
 ---
 
-The **commonAxisSettings**.**tick** object specifies common settings for all major ticks in the chart. To configure only those major ticks that belong to a particular axis, use the following objects.
+The **commonAxisSettings**.**tick** object specifies common settings for all major ticks in a chart. To configure only those major ticks that belong to a particular axis, use the following objects.
 
 - **argumentAxis**.[tick](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/tick '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/tick/')     
 - **valueAxis**.[tick](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/tick '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/tick/')       
@@ -102,4 +102,4 @@ Axis-specific settings override common settings.
 #####See Also#####
 - **argumentAxis**.[tickInterval](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/tickInterval '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/tickInterval/') - specifies the tick interval of the argument axis.
 - **valueAxis**.[tickInterval](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/tickInterval '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/tickInterval/') - specifies the tick interval of the value axis.
-- **commonAxisSettings**.[minorTick](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/minorTick '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/minorTick/') - customizes the appearance of minor ticks.
+- **commonAxisSettings**.[minorTick](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/minorTick '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/minorTick/') - customizes minor tick appearance.

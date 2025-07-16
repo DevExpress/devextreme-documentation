@@ -3,13 +3,13 @@ The DataGrid component allows you configure core features such as sorting, filte
 This guide explains how to create a task list where users can check off tasks, remove them, and add new ones. To do this, specify the following editing options:
 
 - [allowAdding](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowAdding)  
-Set to `true` to allow users adding new rows.
+Set to `true` - allow users to add new rows.
 
 - [allowDeleting](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowDeleting)  
-Set to `true` to allow users removing rows.
+Set to `true` - allow users to remove rows.
 
 - [allowUpdating](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowUpdating)  
-Set to `true` to allow users updating rows.
+Set to `true` - allow users to update rows.
 
 - [mode](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode)  
 Change the mode from default *"row"* to *"cell"* for easy task status changes.

@@ -1,7 +1,7 @@
 ---
 ##### jQuery
 
-First, create a ProgressBar and save its [instance](/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/#Get_a_UI_Component_Instance) for accessing methods later.
+First, create a ProgressBar and save its [instance](/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/#Get_a_UI_Component_Instance) to access its methods later.
 
 Next, set the [value](/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#value) option to 50, as half of the tasks in the initial list are completed.
 

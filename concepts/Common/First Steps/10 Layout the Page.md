@@ -1,7 +1,7 @@
 ---
 ##### jQuery
 
-Next, layout the components in the HTML file:
+Next, specify component layout in the HTML file:
 
     <!-- tab: index.html -->
     <div id="dashboard">
@@ -27,7 +27,7 @@ Next, import components into `app.component.ts`. For detailed instructions on im
     })
     export class AppComponent { }
 
-Layout the components in the HTML file:
+Specify component layout in the HTML file:
 
     <!-- tab: app.component.html -->
     <div id="dashboard">
@@ -37,7 +37,7 @@ Layout the components in the HTML file:
 
 ##### Vue
 
-Next, import and layout the components. For detailed instructions on imports, refer to the [Import DevExtreme Components](/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/#Import_DevExtreme_Components) article.
+Next, import components and specify their layout. For detailed instructions on imports, refer to the [Import DevExtreme Components](/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/#Import_DevExtreme_Components) article.
 
     <!-- tab: App.vue -->
     <template>
@@ -53,7 +53,7 @@ Next, import and layout the components. For detailed instructions on imports, re
 
 ##### React
 
-Next, import and layout the components. For detailed instructions on imports, refer to the [Import DevExtreme Components](/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/#Import_DevExtreme_Components) article.
+Next, import components and specify their layout. For detailed instructions on imports, refer to the [Import DevExtreme Components](/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/#Import_DevExtreme_Components) article.
 
     <!-- tab: App.tsx -->
     import DataGrid from 'devextreme-react/data-grid';

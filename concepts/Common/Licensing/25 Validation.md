@@ -28,7 +28,7 @@ If license key validation fails, DevExtreme will display one of the following me
     <tr>
         <td>License key verification failed.</td>
         <td><code>W0021 - DevExtreme: License Key Verification Has Failed</code><br><br>
-        TTo verify your DevExtreme license, specify a correct key in the GlobalConfig. If you continue to encounter this error, please visit DevExpress <a href="https://www.devexpress.com/ClientCenter/DownloadManager/" target="_blank">Download Manager</a> to obtain a valid license key. <br><br> If you have a valid license key and this problem persists, please submit a <a href="https://supportcenter.devexpress.com/ticket/create" target="_blank">support ticket</a> with the DevExpress Support Center. We will be happy to follow-up. <br><br>
+        To verify your DevExtreme license, specify a correct key in the GlobalConfig. If you continue to encounter this error, please visit DevExpress <a href="https://www.devexpress.com/ClientCenter/DownloadManager/" target="_blank">Download Manager</a> to obtain a valid license key. <br><br> If you have a valid license key and this problem persists, please submit a <a href="https://supportcenter.devexpress.com/ticket/create" target="_blank">support ticket</a> with the DevExpress Support Center. We will be happy to follow-up. <br><br>
         For additional information on this error message, see: <a href="/Documentation/ApiReference/Common/Utils/Errors_and_Warnings/#W0021">W0021</a>.
         </td>
     </tr>

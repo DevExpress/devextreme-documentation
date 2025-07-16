@@ -1,4 +1,4 @@
-DevExtreme Chart can display horizontal or vertical constant lines as points of reference. The following example uses the **valueAxis**.[constantLines](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/constantLines/) property to display a horizontal constant line that indicates the yearly spending average (`averageSpend`):
+DevExtreme Chart can display horizontal or vertical constant lines as points of reference. The following example uses the **valueAxis**.[constantLines](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/constantLines '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/constantLines/') property to display a horizontal constant line that indicates the yearly spending average (`averageSpend`):
 
 ---
 

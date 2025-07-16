@@ -2,7 +2,7 @@
 
 ##### jQuery
 
-To configure Chart with multiple series, update your data source with additional value fields and specify additional **series** objects. This example configures two series to display a [spline](/Documentation/ApiReference/UI_Components/dxChart/Series_Types/SplineSeries/) and a [bar](/Documentation/ApiReference/UI_Components/dxChart/Series_Types/BarSeries/) chart:
+To configure Chart with multiple series, update your data source with additional value fields and specify additional **series** objects. This example configures two series to display a [spline](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/SplineSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/SplineSeries/') and a [bar](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/BarSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/BarSeries/') chart:
 
     <!-- tab: index.js -->
     $(() => {
@@ -41,7 +41,7 @@ To configure Chart with multiple series, update your data source with additional
 
 ##### Angular
 
-To configure Chart with multiple series, update your data source with additional value fields and specify additional `<dxi-series>` selectors. This example configures two series to display a [spline](/Documentation/ApiReference/UI_Components/dxChart/Series_Types/SplineSeries/) and a [bar](/Documentation/ApiReference/UI_Components/dxChart/Series_Types/BarSeries/) chart:
+To configure Chart with multiple series, update your data source with additional value fields and specify additional `<dxi-series>` selectors. This example configures two series to display a [spline](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/SplineSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/SplineSeries/') and a [bar](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/BarSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/BarSeries/') chart:
 
     <!-- tab: app.component.html -->
     <dx-chart [dataSource]="chartData" >
@@ -81,7 +81,7 @@ To configure Chart with multiple series, update your data source with additional
 
 ##### Vue
 
-To configure Chart with multiple series, update your data source with additional value fields and specify additional `<DxSeries>` selectors. This example configures two series to display a [spline](/Documentation/ApiReference/UI_Components/dxChart/Series_Types/SplineSeries/) and a [bar](/Documentation/ApiReference/UI_Components/dxChart/Series_Types/BarSeries/) chart:
+To configure Chart with multiple series, update your data source with additional value fields and specify additional `<DxSeries>` selectors. This example configures two series to display a [spline](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/SplineSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/SplineSeries/') and a [bar](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/BarSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/BarSeries/') chart:
 
     <!-- tab: App.vue -->
     <script setup lang="ts">
@@ -126,7 +126,7 @@ To configure Chart with multiple series, update your data source with additional
 
 ##### React
 
-To configure Chart with multiple series, update your data source with additional value fields and specify additional `<Series>` selectors. This example configures two series to display a [spline](/Documentation/ApiReference/UI_Components/dxChart/Series_Types/SplineSeries/) and a [bar](/Documentation/ApiReference/UI_Components/dxChart/Series_Types/BarSeries/) chart:
+To configure Chart with multiple series, update your data source with additional value fields and specify additional `<Series>` selectors. This example configures two series to display a [spline](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/SplineSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/SplineSeries/') and a [bar](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/BarSeries '/Documentation/ApiReference/UI_Components/dxChart/Series_Types/BarSeries/') chart:
 
     <!-- tab: App.tsx -->
     const chartData = [

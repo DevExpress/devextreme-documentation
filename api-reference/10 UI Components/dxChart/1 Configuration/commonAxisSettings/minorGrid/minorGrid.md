@@ -85,7 +85,7 @@ In addition to the [major grid](/api-reference/10%20UI%20Components/dxChart/1%20
 
 ---
 
-The **commonAxisSettings**.[minorGrid](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/minorGrid '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/minorGrid/') object specifies common settings for all minor grid lines in the chart. To configure only those grid lines that descend from a particular axis, use the following objects.
+The **commonAxisSettings**.[minorGrid](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/minorGrid '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/minorGrid/') object specifies common settings for all minor gridlines in a chart. To configure only those gridlines that descend from an axis of your choice, use the following objects.
 
 - **argumentAxis**.[minorGrid](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/minorGrid '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/minorGrid/')     
 - **valueAxis**.[minorGrid](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings/minorGrid '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/minorGrid/')       
@@ -94,7 +94,7 @@ Axis-specific settings override common settings.
 
 [note]
 
-- Displaying the minor grid alone may impair chart readability. We recommend you implement the minor grid in conjunction with the major grid.
+- If you display the minor grid alone, it may impair chart readability. We recommend you implement the minor grid in conjunction with the major grid.
 - The component does not display the minor grid on *"discrete"* axes.
 
 [/note]

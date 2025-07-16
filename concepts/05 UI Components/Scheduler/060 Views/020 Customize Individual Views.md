@@ -1,41 +1,21 @@
-To customize individual views, assign an array of configuration objects to the **views** property. Each object contains the [type](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views/type.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type') property that defines which view is customized. Refer to the [API Reference](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/') for a list of properties.
-
-The following code defines three views: the first is not customized, the second has a specific cell duration and a custom template for the time scale, and the third is grouped by resources.
-
 ---
-#####jQuery
 
-    <!--JavaScript-->
-    var data = [{
-        text: "Google AdWords Strategy",
-        ownerId: [2],
-        startDate: new Date("2016-01-01T09:00:00.000Z"),
-        endDate: new Date("2016-01-01T10:30:00.000Z")
-    }, {
-        text: "New Brochures",
-        ownerId: [1],
-        startDate: new Date("2016-01-01T11:30:00.000Z"),
-        endDate: new Date("2016-01-01T14:15:00.000Z")
-    },
-    // ...
-    ];
+##### jQuery
 
-    var resources = [
-        { text: "Samantha Bright", id: 1, color: "#cb6bb2" },
-        { text: "John Heart", id: 2, color: "#56ca85" }
-    ];
+To customize an individual view, specify a configuration object in the [views[]](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/) array. Assign a [view type](/Documentation/ApiReference/UI_Components/dxScheduler/Types/#ViewType) value to the **views**.[type](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type) property to define which view is customized. Specify  **views[]** properties to implement your changes.
 
+The following code snippet customizes the *"day"* and *"workWeek"* views. This example groups appointments by a [resource](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/) in the *"workWeek"* view. For more information about appointment grouping, refer to the following topic: [Group Appointments by Resources](/Documentation/Guide/UI_Components/Scheduler/Resources/Group_Appointments_by_Resources/).
+
+    <!-- tab: index.js -->
     $(function(){
         $("#schedulerContainer").dxScheduler({
-            dataSource: data,
-            currentDate: new Date(2016, 1, 1),
-            views: ["month", {
+            views: [{
                 type: "day",
                 cellDuration: 60,
                 timeCellTemplate: function(data, index, element) {
                     element.text(data.text)
-                            .css('color', 'green')
-                            .css('font-style', 'italic');
+                        .css('color', 'green')
+                        .css('font-style', 'italic');
                 }
             }, {
                 type: "workWeek",
@@ -45,18 +25,27 @@ The following code defines three views: the first is not customized, the second 
         });
     });
 
-#####Angular
+To add a view without customizations, you can specify **ViewType** values in the **views** array:
 
-    <!--HTML-->
-    <dx-scheduler
-        [dataSource]="schedulerData"
-        [currentDate]="currentDate"
-        currentView="day">
+    <!-- tab: index.js -->
+    $(function(){
+        $("#schedulerContainer").dxScheduler({
+            views: ["day", "workWeek"],
+        });
+    });
+
+##### Angular
+
+To customize an individual view, specify a `<dxi-view>` configuration component. Assign a [view type](/Documentation/ApiReference/UI_Components/dxScheduler/Types/#ViewType) value to the [views](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/).[type](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type) property to define which view is customized. Specify  **views[]** properties to implement your changes.
+
+The following code snippet customizes the *"day"* and *"workWeek"* views. This example groups appointments by a [resource](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/) in the *"workWeek"* view. For more information about appointment grouping, refer to the following topic: [Group Appointments by Resources](/Documentation/Guide/UI_Components/Scheduler/Resources/Group_Appointments_by_Resources/).
+
+    <!-- tab: app.component.html -->
+    <dx-scheduler ... >
         <dxi-resource
             fieldExpr="ownerId"
             [dataSource]="employees">
         </dxi-resource>
-        <dxi-view type="month"></dxi-view>
         <dxi-view type="day"
             [cellDuration]="60"
             timeCellTemplate="timeCellTemplate">
@@ -67,49 +56,27 @@ The following code defines three views: the first is not customized, the second 
         </div>
     </dx-scheduler>
 
-    <!--TypeScript-->
-    import { DxSchedulerModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        schedulerData = [{
-            text: "Google AdWords Strategy",
-            ownerId: [2],
-            startDate: new Date("2016-01-01T09:00:00.000Z"),
-            endDate: new Date("2016-01-01T10:30:00.000Z")
-        }, {
-            text: "New Brochures",
-            ownerId: [1],
-            startDate: new Date("2016-01-01T11:30:00.000Z"),
-            endDate: new Date("2016-01-01T14:15:00.000Z")
-        },
-        // ...
-        ];
-        currentDate = new Date(2016, 1, 1);
-        employees [
-            { text: "Samantha Bright", id: 1, color: "#cb6bb2" },
-            { text: "John Heart", id: 2, color: "#56ca85" }
-        ];
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxSchedulerModule
-        ],
-        // ...
-    })
+To add a view without customizations, specify only the **views**.**type** property:
+
+    <!-- tab: app.component.html -->
+    <dx-scheduler ... >
+        <dxi-view type="day"></dxi-view>
+        <dxi-view type="workWeek"></dxi-view>
+    </dx-scheduler>
 
 ##### Vue
 
+To customize an individual view, specify a `<DxView>` configuration component. Assign a [view type](/Documentation/ApiReference/UI_Components/dxScheduler/Types/#ViewType) value to the [views](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/).[type](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type) property to define which view is customized. Specify  **views[]** properties to implement your changes.
+
+The following code snippet customizes the *"day"* and *"workWeek"* views. This example groups appointments by a [resource](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/) in the *"workWeek"* view. For more information about appointment grouping, refer to the following topic: [Group Appointments by Resources](/Documentation/Guide/UI_Components/Scheduler/Resources/Group_Appointments_by_Resources/).
+
     <!-- tab: App.vue -->
     <template>
-        <DxScheduler
-            :data-source="schedulerData"
-            :current-date="currentDate">
+        <DxScheduler ... >
             <DxResource
                 field-expr="ownerId"
                 :data-source="employees"
             />
-            <DxView type="month" />
             <DxView type="day"
                 :cell-duration="60"
                 time-cell-template="time-cell"
@@ -122,93 +89,68 @@ The following code defines three views: the first is not customized, the second 
     </template>
 
     <script>
+    import { DxScheduler, DxResource, DxView } from 'devextreme-vue/scheduler';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { DxScheduler, DxResource, DxView } from 'devextreme-vue/scheduler';
-
-    export default {
-        components: {
-            DxScheduler,
-            DxResource,
-            DxView
-        },
-        data() {
-            return {
-                schedulerData: [{
-                    text: "Google AdWords Strategy",
-                    ownerId: [2],
-                    startDate: new Date("2016-01-01T09:00:00.000Z"),
-                    endDate: new Date("2016-01-01T10:30:00.000Z")
-                }, {
-                    text: "New Brochures",
-                    ownerId: [1],
-                    startDate: new Date("2016-01-01T11:30:00.000Z"),
-                    endDate: new Date("2016-01-01T14:15:00.000Z")
-                },
-                // ...
-                ],
-                currentDate: new Date(2016, 1, 1),
-                employees: [
-                    { text: "Samantha Bright", id: 1, color: "#cb6bb2" },
-                    { text: "John Heart", id: 2, color: "#56ca85" }
-                ]
-            }
-        }
-    }
     </script>
+
+To add a view without customizations, specify only the **views**.**type** property:
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler ... >
+            <DxView type="day" />
+            <DxView type="workWeek" />
+        </DxScheduler>
+    </template>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+To customize an individual view, specify a `<View>` configuration component. Assign a [view type](/Documentation/ApiReference/UI_Components/dxScheduler/Types/#ViewType) value to the [views](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/).[type](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type) property to define which view is customized. Specify  **views[]** properties to implement your changes.
 
+The following code snippet customizes the *"day"* and *"workWeek"* views. This example groups appointments by a [resource](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/) in the *"workWeek"* view. For more information about appointment grouping, refer to the following topic: [Group Appointments by Resources](/Documentation/Guide/UI_Components/Scheduler/Resources/Group_Appointments_by_Resources/).
+
+    <!-- tab: App.tsx -->
+    import { Scheduler, Resource, View } from 'devextreme-react/scheduler';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { Scheduler, Resource, View } from 'devextreme-react/scheduler';
-
-    const schedulerData = [{
-        text: 'Google AdWords Strategy',
-        ownerId: [2],
-        startDate: new Date("2016-01-01T09:00:00.000Z"),
-        endDate: new Date("2016-01-01T10:30:00.000Z")
-    }, {
-        text: 'New Brochures',
-        ownerId: [1],
-        startDate: new Date("2016-01-01T11:30:00.000Z"),
-        endDate: new Date("2016-01-01T14:15:00.000Z")
-    },
-    // ...
-    ];
-    const currentDate = new Date(2016, 1, 1);
-    const employees = [
-        { text: 'Samantha Bright', id: 1, color: '#cb6bb2' },
-        { text: 'John Heart', id: 2, color: '#56ca85' }
-    ];
-    const renderTimeCell = (data) => <i style='color: green'>{data.text}</i>;
-
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler
-                    dataSource={schedulerData}
-                    defaultCurrentDate={currentDate}>
-                    <Resource
-                        fieldExpr="ownerId"
-                        dataSource={employees}
-                    />
-                    <View type="month" />
-                    <View type="day"
-                        cellDuration={60}
-                        timeCellTemplate={renderTimeCell}
-                    />
-                    <View type="workWeek" groups={['ownerId']} />
-                </Scheduler>
-            );
-        }
+    function renderTimeCell(data: {text: string}): JSX.Element {
+        return (
+            <i style="color: green">{data.text}</i>
+        );
     }
-    export default App;
+
+    function App() {
+        return (
+            <Scheduler ... >
+                <Resource
+                    fieldExpr="ownerId"
+                    dataSource={employees}
+                />
+                <View type="day"
+                    cellDuration={60}
+                    timeCellRender={renderTimeCell}
+                />
+                <View type="workWeek" groups={['ownerId']} />
+            </Scheduler>
+        );
+    }
+
+To add a view without customizations, specify only the **views**.**type** property:
+
+    <!-- tab: App.tsx -->
+    function App() {
+        return (
+            <Scheduler ... >
+                <View type="day" />
+                <View type="workWeek" />
+            </Scheduler>
+        );
+    }
 
 ---
+
+[note] Properties defined in the **views[]** array override their corresponding properties specified in the component configuration. For instance, **views**.[firstDayOfWeek](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#firstDayOfWeek) overrides the [firstDayOfWeek](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#firstDayOfWeek) property.
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomizeIndividualViews/",

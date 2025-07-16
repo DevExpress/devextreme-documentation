@@ -17,6 +17,7 @@ You can specify most of the [Calendar properties](/api-reference/10%20UI%20Compo
 - [onValueChanged](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#onValueChanged')
 - [selectionMode](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#selectionMode')
 - [tabIndex](/api-reference/10%20UI%20Components/Widget/1%20Configuration/tabIndex.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#tabIndex')
+- [todayButtonText](/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#todayButtonText)
 - [value](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#value')
 
 #include widgets-config-object-option-note with {

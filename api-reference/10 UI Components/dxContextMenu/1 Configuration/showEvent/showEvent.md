@@ -5,10 +5,10 @@ default: 'dxcontextmenu'
 ---
 ---
 ##### shortDescription
-Specifies properties for displaying the UI component.
+Specifies properties used to display the UI component.
 
 ---
-If you assign only a string that specifies event names on which the UI component is shown, the UI component will not apply any delay.
+If you assign only a string that specifies event names on which the UI component is shown, the UI component will not apply a delay.
 
     <!--JavaScript-->
     showEvent: "mouseenter"

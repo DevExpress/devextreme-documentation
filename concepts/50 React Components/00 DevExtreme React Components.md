@@ -16,7 +16,7 @@ Try out DevExtreme components in your projects with our [30-day trial](https://j
 Learn the [first steps](/Documentation/Guide/Common/First_Steps/) and see the [component configuration syntax](/concepts/50%20React%20Components/40%20Component%20Configuration%20Syntax/00%20Component%20Configuration%20Syntax.md '/Documentation/Guide/React_Components/Component_Configuration_Syntax/').
 
 3. **Explore**    
-Examine [over 450 technical demos](https://js.devexpress.com/Demos/WidgetsGallery) you can edit and copy code from.
+Examine [over 450 technical demos](https://js.devexpress.com/Demos/WidgetsGallery) you can edit and from which you can copy code.
 
 ## Getting Help
 
@@ -30,7 +30,7 @@ Questions still unanswered? [Submit a ticket](https://supportcenter.devexpress.c
 
 ## Features for React
 
-The latest DevExtreme release aligns with the latest React version. Check the specific React versions your DevExtreme components [are compatible with](/concepts/50%20React%20Components/80%20Supported%20Versions.md '/Documentation/Guide/React_Components/Supported_Versions/'). 
+The latest DevExtreme release aligns with the latest React version. Check which specific React versions [are compatible with](/concepts/50%20React%20Components/80%20Supported%20Versions.md '/Documentation/Guide/React_Components/Supported_Versions/') your DevExtreme components.
 
 React-specific features include:
 

@@ -3,7 +3,7 @@
 
 First, create a ProgressBar and save its [instance](/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/#Get_a_UI_Component_Instance) to access its methods later.
 
-Next, set the [value](/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#value) option to 50, as half of the tasks in the initial list are completed.
+Next, set the [value](/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#value) option to **50**, as half of the tasks in the initial list are completed.
 
     <!-- tab: index.js -->
     $(() => {
@@ -14,7 +14,7 @@ Next, set the [value](/Documentation/ApiReference/UI_Components/dxProgressBar/Co
 
 ##### Angular
 
-Create a `progressValue` variable and set it to 50, as half of the tasks in the initial list are completed. 
+Create a `progressValue` variable and set it to **50**, as half of the tasks in the initial list are completed. 
 
     <!-- tab: app.component.ts -->
     export class AppComponent {
@@ -22,7 +22,7 @@ Create a `progressValue` variable and set it to 50, as half of the tasks in the 
         progressValue = 50;
     }
 
-Then, bind the [value](/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#value) option to this variable. Directly assigning 50 will not work, as the variable will synchronize ProgressBar and DataGrid later.
+Then, bind the [value](/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#value) option to this variable. Directly assigning **50** will not work, as the variable will synchronize ProgressBar and DataGrid later.
 
     <!-- tab: app.component.html -->
     <dx-progress-bar ...
@@ -32,7 +32,7 @@ Then, bind the [value](/Documentation/ApiReference/UI_Components/dxProgressBar/C
 
 ##### Vue
 
-Create a `progressValue` variable and set its [ref](https://vuejs.org/guide/essentials/template-refs) to 50, as half of the tasks in the initial list are completed. Then, bind the [value](/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#value) option to this variable. Directly assigning 50 will not work, as the variable will synchronize ProgressBar and DataGrid later.
+Create a `progressValue` variable and set its [ref](https://vuejs.org/guide/essentials/template-refs) to **50**, as half of the tasks in the initial list are completed. Then, bind the [value](/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#value) option to this variable. Directly assigning **50** will not work, as the variable will synchronize ProgressBar and DataGrid later.
 
     <!-- tab: App.vue -->
     <template>
@@ -53,7 +53,7 @@ Create a `progressValue` variable and set its [ref](https://vuejs.org/guide/esse
 
 ##### React
 
-Create a `progressValue` variable and set its [state](https://react.dev/reference/react/useState) to 50, as half of the tasks in the initial list are completed. Then, bind the [value](/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#value) option to this variable. Directly assigning 50 will not work, as the variable will synchronize ProgressBar and DataGrid later.
+Create a `progressValue` variable and set its [state](https://react.dev/reference/react/useState) to **50**, as half of the tasks in the initial list are completed. Then, bind the [value](/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#value) option to this variable. Directly assigning **50** will not work, as the variable will synchronize ProgressBar and DataGrid later.
 
     <!-- tab: App.tsx -->
     import { useState } from 'react';

@@ -7,7 +7,7 @@ To learn more about DevExtreme, refer to the following sources:
 
 2. Edit and copy code from over 450 [DevExtreme demos](https://js.devexpress.com/Demos/WidgetsGallery).
 
-3. To learn more about a specific component, review guides and API reference in documentation. For common issues, refer to:
+3. To learn more about a specific component, review guides and API references in the documentation. For common issues, refer to the following resources:
 
     - [Troubleshooting Guide](/concepts/80%20Troubleshooting/00%20Basics '/Documentation/Guide/Troubleshooting/Basics/')
     - [Support Center Tickets](https://supportcenter.devexpress.com/ticket/list?preset=ab3eb0eb-09d3-42b5-ae17-53bed1e6cec3)
@@ -21,7 +21,7 @@ To learn more about DevExtreme, refer to the following sources:
 
 2. Edit and copy code from over 450 [DevExtreme demos](https://js.devexpress.com/Demos/WidgetsGallery).
 
-3. To learn more about a specific component, review guides and API reference in documentation. For common issues, refer to:
+3. To learn more about a specific component, review guides and API references in the documentation. For common issues, refer to the following resources:
 
     - [Troubleshooting Guide](/concepts/80%20Troubleshooting/00%20Basics '/Documentation/Guide/Troubleshooting/Basics/')
     - [Support Center Tickets](https://supportcenter.devexpress.com/ticket/list?preset=ab3eb0eb-09d3-42b5-ae17-53bed1e6cec3)
@@ -35,7 +35,7 @@ To learn more about DevExtreme, refer to the following sources:
 
 2. Edit and copy code from over 450 [DevExtreme demos](https://js.devexpress.com/Demos/WidgetsGallery).
 
-3. To learn more about a specific component, review guides and API reference in documentation. For common issues, refer to:
+3. To learn more about a specific component, review guides and API references in the documentation. For common issues, refer to the following resources:
 
     - [Troubleshooting Guide](/concepts/80%20Troubleshooting/00%20Basics '/Documentation/Guide/Troubleshooting/Basics/')
     - [Support Center Tickets](https://supportcenter.devexpress.com/ticket/list?preset=ab3eb0eb-09d3-42b5-ae17-53bed1e6cec3)
@@ -45,11 +45,11 @@ To learn more about DevExtreme, refer to the following sources:
 
 ##### React
 
-1. Learn the basics with [Component Configuration Syntax](/Documentation/Guide/React_Components/Component_Configuration_Syntax/).
+1. Learn the basics of [Component Configuration Syntax](/Documentation/Guide/React_Components/Component_Configuration_Syntax/).
 
 2. Edit and copy code from over 450 [DevExtreme demos](https://js.devexpress.com/Demos/WidgetsGallery).
 
-3. To learn more about a specific component, review guides and API reference in documentation. For common issues, refer to:
+3. To learn more about a specific component, review guides and API references in the documentation. For common issues, refer to the following resources:
 
     - [Troubleshooting Guide](/concepts/80%20Troubleshooting/00%20Basics '/Documentation/Guide/Troubleshooting/Basics/')
     - [Support Center Tickets](https://supportcenter.devexpress.com/ticket/list?preset=ab3eb0eb-09d3-42b5-ae17-53bed1e6cec3)

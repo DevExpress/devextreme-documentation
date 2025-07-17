@@ -61,7 +61,7 @@ The DataGrid component can [load and update data](/Documentation/Guide/UI_Compon
         })
         export class AppComponent { ... }
 
-For more information about the nested components, refer to the following articles:
+For more information about the nested components, refer to the following help topics:
 
 - [Collections](Documentation/Guide/Angular_Components/Component_Configuration_Syntax/#Collections)
 - [Properties of the Object Type](/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/#Properties_of_the_Object_Type)
@@ -103,7 +103,7 @@ For more information about the nested components, refer to the following article
         ];
         </script>
 
-For more information about the nested components, refer to the following articles:
+For more information about the nested components, refer to the following help topics:
 
 - [Collections](/Documentation/Guide/Vue_Components/Component_Configuration_Syntax/#Collections)
 - [Properties of the Object Type](/Documentation/Guide/Vue_Components/Component_Configuration_Syntax/#Properties_of_the_Object_Type)
@@ -147,7 +147,7 @@ For more information about the nested components, refer to the following article
 
         export default App;
 
-For more information about the nested components, refer to the following articles:
+For more information about the nested components, refer to the following help topics:
 
 - [Collections](/Documentation/Guide/React_Components/Component_Configuration_Syntax/#Collections)
 - [Properties of the Object Type](/Documentation/Guide/React_Components/Component_Configuration_Syntax/#Properties_of_the_Object_Type)

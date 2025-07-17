@@ -1,7 +1,7 @@
 ---
 ##### jQuery
 
-Next, specify component layout in the HTML file:
+Next, specify the component layout in the HTML file:
 
     <!-- tab: index.html -->
     <div id="dashboard">
@@ -11,7 +11,7 @@ Next, specify component layout in the HTML file:
 
 ##### Angular
 
-Next, import components into `app.component.ts`. For detailed instructions on imports, refer to the [Import DevExtreme Components](/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/#Import_DevExtreme_Components) article.
+Next, import components into `app.component.ts`. For detailed instructions on imports, refer to the [Import DevExtreme Components](/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/#Import_DevExtreme_Components) help topic.
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -27,7 +27,7 @@ Next, import components into `app.component.ts`. For detailed instructions on im
     })
     export class AppComponent { }
 
-Specify component layout in the HTML file:
+Specify the component layout in the HTML file:
 
     <!-- tab: app.component.html -->
     <div id="dashboard">
@@ -37,7 +37,7 @@ Specify component layout in the HTML file:
 
 ##### Vue
 
-Next, import components and specify their layout. For detailed instructions on imports, refer to the [Import DevExtreme Components](/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/#Import_DevExtreme_Components) article.
+Next, import components and specify their layout. For detailed instructions on imports, refer to the [Import DevExtreme Components](/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/#Import_DevExtreme_Components) help topic.
 
     <!-- tab: App.vue -->
     <template>
@@ -53,7 +53,7 @@ Next, import components and specify their layout. For detailed instructions on i
 
 ##### React
 
-Next, import components and specify their layout. For detailed instructions on imports, refer to the [Import DevExtreme Components](/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/#Import_DevExtreme_Components) article.
+Next, import components and specify their layout. For detailed instructions on imports, refer to the [Import DevExtreme Components](/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/#Import_DevExtreme_Components) help topic.
 
     <!-- tab: App.tsx -->
     import DataGrid from 'devextreme-react/data-grid';

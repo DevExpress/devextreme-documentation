@@ -1,15 +1,15 @@
 ---
 ##### Angular
 
-[important] You should be familiar with basic concepts and patterns of {Framework} to use DevExtreme components. If you are not, refer to the <a href="https://angular.dev/overview" target="_blank">{Framework} documentation</a> for a getting-started tutorial first.
+[important] You should be familiar with basic concepts and patterns of {Framework} to use DevExtreme components. If you are not, refer to the <a href="https://angular.dev/overview" target="_blank">{Framework} documentation</a> to follow its getting-started tutorial first.
 
 ##### Vue
 
-[important] You should be familiar with basic concepts and patterns of {Framework} to use DevExtreme components. If you are not, refer to the <a href="https://vuejs.org/guide/introduction.html#getting-started" target="_blank">{Framework} documentation</a> for a getting-started tutorial first.
+[important] You should be familiar with basic concepts and patterns of {Framework} to use DevExtreme components. If you are not, refer to the <a href="https://vuejs.org/guide/introduction.html#getting-started" target="_blank">{Framework} documentation</a> to follow its getting-started tutorial first.
 
 ##### React
 
-[important] You should be familiar with basic concepts and patterns of {Framework} to use this DevExtreme components. If you are not, refer to the <a href="https://react.dev/learn" target="_blank">{Framework} documentation</a> for a getting-started tutorial first.
+[important] You should be familiar with basic concepts and patterns of {Framework} to use DevExtreme components. If you are not, refer to the <a href="https://react.dev/learn" target="_blank">{Framework} documentation</a> to follow its getting-started tutorial first.
 
 ---
 

@@ -1,18 +1,18 @@
-The DataGrid component allows you configure core features such as sorting, filtering, search, grouping, and selection. Editing is one of these features. Enable it to allow users to add, edit, and delete rows.
+The DataGrid component allows you to configure core features such as sorting, filtering, search, grouping, selection, and editing. Enable editing to allow users to add, edit, and delete rows.
 
 This guide explains how to create a task list where users can check off tasks, remove them, and add new ones. To do this, specify the following editing options:
 
 - [allowAdding](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowAdding)  
-Set to `true` - allow users to add new rows.
+Set to `true` - allows users to add new rows.
 
 - [allowDeleting](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowDeleting)  
-Set to `true` - allow users to remove rows.
+Set to `true` - allows users to remove rows.
 
 - [allowUpdating](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowUpdating)  
-Set to `true` - allow users to update rows.
+Set to `true` - allows users to update rows.
 
 - [mode](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode)  
-Change the mode from default *"row"* to *"cell"* for easy task status changes.
+Change the mode from the default *"row"* to *"cell"* for easy task status changes.
 
 - [newRowPosition](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#newRowPosition)  
 Set new rows to appear at the *"last"* position for a top-to-bottom task list.

@@ -139,7 +139,7 @@ To configure the initial selection or access selected item keys, use the [select
 
 ---
 
-You can also call the [selectItem](/api-reference/10%20UI%20Components/dxList/3%20Methods/selectItem(itemIndex).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#selectItemitemIndex') method to select a List item by index. To deselect an item, call [unselectItem](/api-reference/10%20UI%20Components/dxList/3%20Methods/unselectItem(itemIndex).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#unselectItemitemIndex'). To exclude individual items from selection, set **items[]**.[disabled](/Documentation/ApiReference/UI_Components/dxList/Configuration/items/#disabled) to `true`.
+You can also call the [selectItem](/api-reference/10%20UI%20Components/dxList/3%20Methods/selectItem(itemIndex).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#selectItemitemIndex') method to select a List item by index. To deselect an item, call [unselectItem](/api-reference/10%20UI%20Components/dxList/3%20Methods/unselectItem(itemIndex).md '/Documentation/ApiReference/UI_Components/dxList/Methods/#unselectItemitemIndex'). To exclude individual items from selection, set **items[]**.[disabled](/api-reference/_hidden/CollectionWidgetItem/disabled.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/items/#disabled') to `true`.
 
 [note] To specify the key field, use the [keyExpr](/api-reference/10%20UI%20Components/dxList/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#keyExpr') property of the List or the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#key') property of the **Store**.
 

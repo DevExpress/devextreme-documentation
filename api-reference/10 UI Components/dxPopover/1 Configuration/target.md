@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the element against which to position the {WidgetName}.
+Specifies the element against which to position the {WidgetName}. If **target** is `undefined`, the component cannot be displayed.
 
 ---
 #include uiwidgets-ref-target

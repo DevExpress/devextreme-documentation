@@ -15,7 +15,7 @@ This property accepts an array of strings and objects:
 A view name. Use a string if the view does not need customization, but should be available in the view switcher.
 
 - **Object**        
-An individual view's configuration. Set the [type](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views/type.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type') property to specify the view to which the configuration should apply. This documentation section describes available properties. The properties set for an individual view have a higher priority than the same properties set on the root level for all views.
+An individual view's configuration. Set the [type](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views/type.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type') property to specify the view to customize. Properties set for an individual view override their corresponding component configuration properties.
 
         <!-- tab: JavaScript-->views: [{
                 type: 'workWeek',
@@ -32,6 +32,8 @@ An individual view's configuration. Set the [type](/api-reference/10%20UI%20Comp
             },
             'agenda'
         ]
+
+    For more information about how to customize an individual view, refer to the following topic: [Customize Individual Views](/Documentation/Guide/UI_Components/Scheduler/Views/Customize_Individual_Views/).
 
 To specify the default view, use the [currentView](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/currentView.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#currentView') property.
 

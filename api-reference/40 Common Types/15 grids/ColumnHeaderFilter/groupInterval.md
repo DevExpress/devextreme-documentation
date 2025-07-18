@@ -1,11 +1,11 @@
 ---
 id: ColumnHeaderFilter.groupInterval
-type: Enums.HeaderFilterGroupInterval | Number | undefined
+type: Enums.HeaderFilterGroupInterval | Number | Array | undefined
 default: undefined
 ---
 ---
 ##### shortDescription
-Specifies how the header filter combines values into groups. Does not apply if you [specify a custom header filter data source](/concepts/05%20UI%20Components/DataGrid/99%20How%20To/Customize%20Header%20Filter%20Data%20Source/10%20Specify%20a%20Custom%20Data%20Source.md '/Documentation/Guide/UI_Components/DataGrid/How_To/Customize_Header_Filter_Data_Source/#Specify_a_Custom_Data_Source').
+Specifies how the header filter combines values into groups. If you [specify a custom header filter data source](/concepts/05%20UI%20Components/DataGrid/99%20How%20To/Customize%20Header%20Filter%20Data%20Source/10%20Specify%20a%20Custom%20Data%20Source.md '/Documentation/Guide/UI_Components/DataGrid/How_To/Customize_Header_Filter_Data_Source/#Specify_a_Custom_Data_Source'), accepts only string arrays that contain group fields for [hierarchical header filters](/Documentation/Guide/UI_Components/DataGrid/How_To/Implement_a_Hierarchical_Header_Filter/).
 
 ---
 For numeric columns, assign a number to this property. This number designates a step with which to generate groups. Column values are classified into these groups.

@@ -4,7 +4,7 @@ The DataGrid allows users to export grid data as Excel and PDF documents. This c
 
 - PDF: <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> v2.3.1+
 
-[note] To generate PDFs with unsupported characters, refer to the following troubleshooting guide: [Export Unsupported Characters - DataGrid](/Documentation/Guide/Troubleshooting/PDF_Export_Issues/Export_Unsupported_Characters/DataGrid/).
+[note] To generate PDFs with Unicode characters, refer to the following troubleshooting guide: [Export Unicode Characters - DataGrid](/Documentation/Guide/Troubleshooting/PDF_Export_Issues/Export_Unicode_Characters/DataGrid/).
 
 To configure grid data export, use the **excelExporter**.[exportDataGrid(options)](/api-reference/50%20Common/utils/excelExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions') and **pdfExporter**.[exportDataGrid(options)](/api-reference/50%20Common/utils/pdfExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions') methods. Both methods require a valid DataGrid instance and a target file of the appropriate format (Excel or PDF). You can call these methods at any point in your application.
 

@@ -21,7 +21,7 @@ Export settings.
 [note]
 
 - This method uses [jsPDF](https://github.com/parallax/jsPDF) v2.3.1+ to generate PDF files.
-- To resolve possible issues with Unicode characters in exported PDF files, refer to the following troubleshooting guide: [Export Unsupported Characters - DataGrid](/Documentation/Guide/Troubleshooting/PDF_Export_Issues/Export_Unsupported_Characters/DataGrid/).
+- To resolve possible issues with Unicode characters in exported PDF files, refer to the following troubleshooting guide: [Export Unicode Characters - DataGrid](/Documentation/Guide/Troubleshooting/PDF_Export_Issues/Export_Unicode_Characters/DataGrid/).
 
 [/note]
 

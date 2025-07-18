@@ -4,7 +4,7 @@ To add a font file to a jsPDF instance, implement the following jsPDF methods:
 - [addFont(fileName, fontName, fontStyle)](https://raw.githack.com/MrRio/jsPDF/master/docs/jsPDF.html#addFont)
 - [setFont(fontName)](https://raw.githack.com/MrRio/jsPDF/master/docs/jsPDF.html#setFont)
 
-Set the **contents** parameter of **addFileToVFS()** to the Base64 encoded font:
+Set the **contents** parameter of **addFileToVFS()** to the Base64-encoded font:
 
     <!-- tab: JavaScript -->
     const doc = new jsPDF();

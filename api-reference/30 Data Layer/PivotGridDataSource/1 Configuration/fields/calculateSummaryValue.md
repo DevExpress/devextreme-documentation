@@ -169,7 +169,7 @@ The "Profit/Loss" cell displays a difference between "Total Amount" cells in thi
 
 <img src="/images/pivotgrid/calculate-summary-value-2.png" alt="CalculateSummaryValue: How the cell value is counted" style="padding: 24px 0 24px 0;" /> 
 
-To add a new grand totals column, add an item to **fields** and check that the **calculateSummaryValue()** parameter has no parent cells in the *"column"* direction:
+To add a new grand totals column, add an item to **fields** and check that the **calculateSummaryValue()** function parameter has no parent cells in the *"column"* direction:
 
 ---
 

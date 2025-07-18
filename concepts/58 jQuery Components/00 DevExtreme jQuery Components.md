@@ -14,10 +14,10 @@ Try out DevExtreme components in your projects with our [30-day trial](https://j
 [Add DevExtreme](/concepts/58%20jQuery%20Components/05%20Add%20DevExtreme%20to%20a%20jQuery%20Application/00%20Add%20DevExtreme%20to%20a%20jQuery%20Application.md '//Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/') to your jQuery application.
 
 2. **Learn Basics**    
-See the [component configuration syntax](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/').
+Learn the [first steps](/Documentation/Guide/Common/First_Steps/) and see the [component configuration syntax](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/').
 
 3. **Explore**    
-Examine [over 450 technical demos](https://js.devexpress.com/Demos/WidgetsGallery) you can edit and copy code from.
+Examine [over 450 technical demos](https://js.devexpress.com/Demos/WidgetsGallery) you can edit and from which you can copy code.
 
 ## Getting Help
 
@@ -31,7 +31,7 @@ Questions still unanswered? [Submit a ticket](https://supportcenter.devexpress.c
 
 ## Features for jQuery
 
-The latest DevExtreme release aligns with the latest jQuery version. Check the specific jQuery versions your DevExtreme components [are compatible with](/concepts/58%20jQuery%20Components/80%20Supported%20Versions.md '/Documentation/Guide/jQuery_Components/Supported_Versions/'). 
+The latest DevExtreme release aligns with the latest jQuery version. Check which specific jQuery versions [are compatible with](/concepts/58%20jQuery%20Components/80%20Supported%20Versions.md '/Documentation/Guide/jQuery_Components/Supported_Versions/') your DevExtreme components.
 
 jQuery-specific features include:
 

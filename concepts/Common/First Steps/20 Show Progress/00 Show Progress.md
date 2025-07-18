@@ -1,0 +1,1 @@
+At this point of the tutorial, you have built a task DataGrid that allows users to edit records. To display task progress, you integrated a ProgressBar into the layout. The next steps are to configure the ProgressBar options and synchronize it with DataGrid updates.

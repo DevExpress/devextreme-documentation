@@ -2,7 +2,7 @@
 
 ##### jQuery
 
-To customize an individual view, specify a configuration object in the [views[]](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/) array. Assign a [view type](/Documentation/ApiReference/UI_Components/dxScheduler/Types/#ViewType) value to the **views**.[type](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type) property to define which view is customized. Specify  **views[]** properties to implement your changes.
+To customize an individual view, specify a configuration object in the [views[]](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/) array. Assign a [view type](/Documentation/ApiReference/UI_Components/dxScheduler/Types/#ViewType) value to the **views**.[type](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type) property to define which view is customized. Specify **views[]** properties to implement your changes.
 
 The following code snippet customizes the *"day"* and *"workWeek"* views. This example groups appointments by a [resource](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/) in the *"workWeek"* view. For more information about appointment grouping, refer to the following topic: [Group Appointments by Resources](/Documentation/Guide/UI_Components/Scheduler/Resources/Group_Appointments_by_Resources/).
 
@@ -36,7 +36,7 @@ To add a view without customizations, you can specify **ViewType** values in the
 
 ##### Angular
 
-To customize an individual view, specify a `<dxi-view>` configuration component. Assign a [view type](/Documentation/ApiReference/UI_Components/dxScheduler/Types/#ViewType) value to the [views](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/).[type](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type) property to define which view is customized. Specify  **views[]** properties to implement your changes.
+To customize an individual view, specify a `<dxi-view>` configuration component. Assign a [view type](/Documentation/ApiReference/UI_Components/dxScheduler/Types/#ViewType) value to the [views](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/).[type](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type) property to define which view is customized. Specify **views[]** properties to implement your changes.
 
 The following code snippet customizes the *"day"* and *"workWeek"* views. This example groups appointments by a [resource](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/) in the *"workWeek"* view. For more information about appointment grouping, refer to the following topic: [Group Appointments by Resources](/Documentation/Guide/UI_Components/Scheduler/Resources/Group_Appointments_by_Resources/).
 
@@ -66,7 +66,7 @@ To add a view without customizations, specify only the **views**.**type** proper
 
 ##### Vue
 
-To customize an individual view, specify a `<DxView>` configuration component. Assign a [view type](/Documentation/ApiReference/UI_Components/dxScheduler/Types/#ViewType) value to the [views](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/).[type](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type) property to define which view is customized. Specify  **views[]** properties to implement your changes.
+To customize an individual view, specify a `<DxView>` configuration component. Assign a [view type](/Documentation/ApiReference/UI_Components/dxScheduler/Types/#ViewType) value to the [views](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/).[type](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type) property to define which view is customized. Specify **views[]** properties to implement your changes.
 
 The following code snippet customizes the *"day"* and *"workWeek"* views. This example groups appointments by a [resource](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/) in the *"workWeek"* view. For more information about appointment grouping, refer to the following topic: [Group Appointments by Resources](/Documentation/Guide/UI_Components/Scheduler/Resources/Group_Appointments_by_Resources/).
 
@@ -106,7 +106,7 @@ To add a view without customizations, specify only the **views**.**type** proper
 
 ##### React
 
-To customize an individual view, specify a `<View>` configuration component. Assign a [view type](/Documentation/ApiReference/UI_Components/dxScheduler/Types/#ViewType) value to the [views](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/).[type](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type) property to define which view is customized. Specify  **views[]** properties to implement your changes.
+To customize an individual view, specify a `<View>` configuration component. Assign a [view type](/Documentation/ApiReference/UI_Components/dxScheduler/Types/#ViewType) value to the [views](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/).[type](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type) property to define which view is customized. Specify **views[]** properties to implement your changes.
 
 The following code snippet customizes the *"day"* and *"workWeek"* views. This example groups appointments by a [resource](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/) in the *"workWeek"* view. For more information about appointment grouping, refer to the following topic: [Group Appointments by Resources](/Documentation/Guide/UI_Components/Scheduler/Resources/Group_Appointments_by_Resources/).
 

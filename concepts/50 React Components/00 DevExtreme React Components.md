@@ -14,10 +14,10 @@ Try out DevExtreme components in your projects with our [30-day trial](https://j
     
     - [Add DevExtreme](/concepts/50%20React%20Components/05%20Add%20DevExtreme%20to%20a%20React%20Application/00%20Add%20DevExtreme%20to%20a%20React%20Application.md '//Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/') to your React application.
     
-    - Create [a new application with a template](/Documentation/Guide/React_Components/Application_Template/) for quick setup.
+    - Create [a new application with a template](/concepts/50%20React%20Components/50%20Application%20Template/00%20Application%20Template.md '/Documentation/Guide/React_Components/Application_Template/') for quick setup.
 
 2. **Learn Basics**    
-Learn the [first steps](/Documentation/Guide/Common/First_Steps/) and see the [component configuration syntax](/concepts/50%20React%20Components/40%20Component%20Configuration%20Syntax/00%20Component%20Configuration%20Syntax.md '/Documentation/Guide/React_Components/Component_Configuration_Syntax/').
+Learn the [first steps](/concepts/Common/First%20Steps/00%20First%20Steps.md '/Documentation/Guide/Common/First_Steps/') and see the [component configuration syntax](/concepts/50%20React%20Components/40%20Component%20Configuration%20Syntax/00%20Component%20Configuration%20Syntax.md '/Documentation/Guide/React_Components/Component_Configuration_Syntax/').
 
 3. **Explore**    
 Examine [over 450 technical demos](https://js.devexpress.com/Demos/WidgetsGallery) you can edit and from which you can copy code.

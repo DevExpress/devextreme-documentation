@@ -2,19 +2,19 @@ The DataGrid component allows you to configure core features such as sorting, fi
 
 This guide explains how to create a task list where users can check off tasks, remove them, and add new ones. To do this, specify the following editing options:
 
-- [allowAdding](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowAdding)  
+- [allowAdding](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/allowAdding.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowAdding')  
 Set to `true` - allows users to add new rows.
 
-- [allowDeleting](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowDeleting)  
+- [allowDeleting](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/allowDeleting.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowDeleting')  
 Set to `true` - allows users to remove rows.
 
-- [allowUpdating](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowUpdating)  
+- [allowUpdating](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/allowUpdating.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowUpdating')  
 Set to `true` - allows users to update rows.
 
-- [mode](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode)  
+- [mode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode')  
 Change the mode from the default *"row"* to *"cell"* for easy task status changes.
 
-- [newRowPosition](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#newRowPosition)  
+- [newRowPosition](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/newRowPosition.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#newRowPosition')  
 Set new rows to appear at the *"last"* position for a top-to-bottom task list.
 
 ---

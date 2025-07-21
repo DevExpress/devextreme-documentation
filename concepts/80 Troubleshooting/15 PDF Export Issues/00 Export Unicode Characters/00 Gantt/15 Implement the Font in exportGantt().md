@@ -1,4 +1,4 @@
-As an alternative, you can add a font to your PDF exports by implementing the [GanttExportOptions](/Documentation/ApiReference/Common/Object_Structures/GanttExportOptions/).[font](/Documentation/ApiReference/Common/Object_Structures/GanttExportOptions/font/) property. Assign a Base64-encoded font file to **font**.[fontObject](/Documentation/ApiReference/Common/Object_Structures/GanttExportOptions/font/#fontObject) and specify **font**.[name](/Documentation/ApiReference/Common/Object_Structures/GanttExportOptions/font/#name):
+As an alternative, you can use the [GanttExportOptions](/Documentation/ApiReference/Common/Object_Structures/GanttExportOptions/).[font](/Documentation/ApiReference/Common/Object_Structures/GanttExportOptions/font/) property to add a font to your PDF exports. Assign a Base64-encoded font file to **font**.[fontObject](/Documentation/ApiReference/Common/Object_Structures/GanttExportOptions/font/#fontObject) and specify **font**.[name](/Documentation/ApiReference/Common/Object_Structures/GanttExportOptions/font/#name):
 
 ---
 

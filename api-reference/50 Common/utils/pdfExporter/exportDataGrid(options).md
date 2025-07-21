@@ -25,7 +25,7 @@ Export settings.
 
 [/note]
 
-In the following example, the [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') handler of a DevExtreme [Button](/Documentation/Guide/UI_Components/Button/Overview/) calls **exportDataGrid**:
+In the following example, a DevExtreme [Button](/Documentation/Guide/UI_Components/Button/Overview/)'s [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') event handler calls **exportDataGrid**:
 
 ---
 ##### jQuery

@@ -27,7 +27,7 @@ Export settings.
 
 [/note]
 
-In the following example, the [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') handler of a toolbar button calls **exportGantt**:
+In the following example, a toolbar button's [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') event handler calls **exportGantt**:
 
 ---
 ##### jQuery

@@ -3,7 +3,7 @@ To learn more about DevExtreme, refer to the following sources:
 ---
 ##### jQuery
 
-1. Learn the basics with [Component Configuration Syntax](/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/).
+1. Learn the basics with [Component Configuration Syntax](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/').
 
 2. Edit and copy code from over 450 [DevExtreme demos](https://js.devexpress.com/Demos/WidgetsGallery).
 
@@ -17,7 +17,7 @@ To learn more about DevExtreme, refer to the following sources:
 
 ##### Angular
 
-1. Learn the basics with [Component Configuration Syntax](/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/).
+1. Learn the basics with [Component Configuration Syntax](/concepts/40%20Angular%20Components/20%20Component%20Configuration%20Syntax '/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/').
 
 2. Edit and copy code from over 450 [DevExtreme demos](https://js.devexpress.com/Demos/WidgetsGallery).
 
@@ -31,7 +31,7 @@ To learn more about DevExtreme, refer to the following sources:
 
 ##### Vue
 
-1. Learn the basics with [Component Configuration Syntax](/Documentation/Guide/Vue_Components/Component_Configuration_Syntax/).
+1. Learn the basics with [Component Configuration Syntax](/concepts/55%20Vue%20Components/20%20Component%20Configuration%20Syntax '/Documentation/Guide/Vue_Components/Component_Configuration_Syntax/').
 
 2. Edit and copy code from over 450 [DevExtreme demos](https://js.devexpress.com/Demos/WidgetsGallery).
 
@@ -45,7 +45,7 @@ To learn more about DevExtreme, refer to the following sources:
 
 ##### React
 
-1. Learn the basics of [Component Configuration Syntax](/Documentation/Guide/React_Components/Component_Configuration_Syntax/).
+1. Learn the basics of [Component Configuration Syntax](/concepts/50%20React%20Components/40%20Component%20Configuration%20Syntax/00%20Component%20Configuration%20Syntax.md '/Documentation/Guide/React_Components/Component_Configuration_Syntax/').
 
 2. Edit and copy code from over 450 [DevExtreme demos](https://js.devexpress.com/Demos/WidgetsGallery).
 

@@ -1,7 +1,7 @@
 ---
 ##### jQuery
 
-To synchronize ProgressBar with DataGrid, define an `updateProgress` function. This function checks completed tasks and updates the ProgressBar value using the [option](/Documentation/ApiReference/UI_Components/dxProgressBar/Methods/#option) method. Use this function to handle the following events: [onRowUpdated](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowUpdated), [onRowInserted](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowInserted), and [onRowRemoved](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowRemoved).
+To synchronize ProgressBar with DataGrid, define an `updateProgress` function. This function checks completed tasks and updates the ProgressBar value using the [option](/api-reference/10%20UI%20Components/Component/3%20Methods/option().md '/Documentation/ApiReference/UI_Components/dxProgressBar/Methods/#option') method. Use this function to handle the following events: [onRowUpdated](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onRowUpdated.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowUpdated'), [onRowInserted](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onRowInserted.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowInserted'), and [onRowRemoved](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onRowRemoved.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowRemoved').
 
     <!-- tab: index.js -->
     $(() => {
@@ -33,7 +33,7 @@ To synchronize ProgressBar with DataGrid, define an `updateProgress` function. T
         };
     }
 
-Use this function to handle the following DataGrid events: [onRowUpdated](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowUpdated), [onRowInserted](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowInserted), and [onRowRemoved](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowRemoved).
+Use this function to handle the following DataGrid events: [onRowUpdated](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onRowUpdated.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowUpdated'), [onRowInserted](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onRowInserted.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowInserted'), and [onRowRemoved](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onRowRemoved.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowRemoved').
 
     <!-- tab: app.component.html -->
     <dx-data-grid ...
@@ -44,7 +44,7 @@ Use this function to handle the following DataGrid events: [onRowUpdated](/Docum
 
 ##### Vue
 
-To synchronize ProgressBar with DataGrid, define an `updateProgress` function. This function checks completed tasks and updates the ProgressBar value using the `progressValue` variable. Use this function to handle the following DataGrid events: [onRowUpdated](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowUpdated), [onRowInserted](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowInserted), and [onRowRemoved](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowRemoved).
+To synchronize ProgressBar with DataGrid, define an `updateProgress` function. This function checks completed tasks and updates the ProgressBar value using the `progressValue` variable. Use this function to handle the following DataGrid events: [onRowUpdated](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onRowUpdated.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowUpdated'), [onRowInserted](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onRowInserted.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowInserted'), and [onRowRemoved](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onRowRemoved.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowRemoved').
 
         <!-- tab: App.vue -->
         <template>
@@ -69,7 +69,7 @@ To synchronize ProgressBar with DataGrid, define an `updateProgress` function. T
 
 ##### React
 
-To synchronize ProgressBar with DataGrid, define an `updateProgress` function. This function checks completed tasks and updates the ProgressBar value using the `progressValue` variable. Use this function to handle the following DataGrid events: [onRowUpdated](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowUpdated), [onRowInserted](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowInserted), and [onRowRemoved](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowRemoved).
+To synchronize ProgressBar with DataGrid, define an `updateProgress` function. This function checks completed tasks and updates the ProgressBar value using the `progressValue` variable. Use this function to handle the following DataGrid events: [onRowUpdated](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onRowUpdated.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowUpdated'), [onRowInserted](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onRowInserted.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowInserted'), and [onRowRemoved](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onRowRemoved.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onRowRemoved').
 
     <!-- tab: App.tsx -->
     function App(): JSX.Element {

@@ -18,17 +18,14 @@ Export settings.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PDFOverview/"
 }
 
-[note] This method uses <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> v2.3.1+ to export data and create PDF files.
+[note]
 
-If you use jQuery, store links to the <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> library within the `<head>` tag. If you use Angular, Vue, or React, install the library with the following command:
+- This method uses [jsPDF](https://github.com/parallax/jsPDF) v2.3.1+ to generate PDF files.
+- To resolve possible issues with Unicode characters in exported PDF files, refer to the following troubleshooting guide: [Export Unicode Characters - DataGrid](/Documentation/Guide/Troubleshooting/PDF_Export_Issues/Export_Unicode_Characters/DataGrid/).
 
-    npm install jspdf
+[/note]
 
-You can call this method at any point in your application.
-
-Warning: You need to perform *extra steps* to generate PDFs with non-ASCII characters. See the [PDF Export guide](/concepts/80%20Troubleshooting/15%20PDF%20Export/00%20PDF%20Export.md '/Documentation/Guide/Troubleshooting/PDF_Export/') for more information.
-
-In the following example, the [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') handler of a standalone button fires this method:
+In the following example, a DevExtreme [Button](/Documentation/Guide/UI_Components/Button/Overview/)'s [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') event handler calls **exportDataGrid**:
 
 ---
 ##### jQuery

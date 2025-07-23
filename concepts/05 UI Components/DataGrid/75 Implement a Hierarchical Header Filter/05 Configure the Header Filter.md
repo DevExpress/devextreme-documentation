@@ -1,6 +1,6 @@
 To configure a hierarchical header filter, specify the following properties:
 
-- [groupInterval](/Documentation/ApiReference/Common_Types/grids/ColumnHeaderFilter/#groupInterval)    
+- [groupInterval](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#groupInterval)    
 Assign a string array that contains multiple items to the **groupInterval** property. Specify the nesting levels you want to implement in this array:
 
     ---

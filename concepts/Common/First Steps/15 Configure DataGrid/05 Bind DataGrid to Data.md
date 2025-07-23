@@ -1,12 +1,12 @@
-The DataGrid component can [load and update data](/Documentation/Guide/UI_Components/DataGrid/Getting_Started_with_DataGrid/#Bind_the_DataGrid_to_Data) from different data source types. In this guide, a small local array serves as the data source. Follow these steps:
+The DataGrid component can [load and update data](/concepts/05%20UI%20Components/DataGrid/00%20Getting%20Started%20with%20DataGrid/05%20Bind%20the%20DataGrid%20to%20Data.md '/Documentation/Guide/UI_Components/DataGrid/Getting_Started_with_DataGrid/#Bind_the_DataGrid_to_Data') from different data source types. In this guide, a small local array serves as the data source. Follow these steps:
 
 ---
 ##### jQuery
 
 1. Create the `tasks` array.  
-2. Assign the array to the [dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource) property.  
-3. Specify [keyExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr) (`id` in this case).
-4. In the [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/) array, define which columns you want to display.
+2. Assign the array to the [dataSource](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource') property.  
+3. Specify [keyExpr](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr') (`id` in this case).
+4. In the [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') array, define which columns you want to display.
 
         <!-- tab: index.js -->
         $(() => {
@@ -33,9 +33,9 @@ The DataGrid component can [load and update data](/Documentation/Guide/UI_Compon
             ];
         }
 
-2. Assign the array to the [dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource) property.
-3. Specify [keyExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr) (`id` in this case).
-4. Use the nested `dxi-data-grid-column` component to define [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/) you want to display.
+2. Assign the array to the [dataSource](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource') property.
+3. Specify [keyExpr](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr') (`id` in this case).
+4. Use the nested `dxi-data-grid-column` component to define [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') you want to display.
         
         <!-- tab: app.component.html -->
         <dx-data-grid ...
@@ -63,16 +63,16 @@ The DataGrid component can [load and update data](/Documentation/Guide/UI_Compon
 
 For more information about the nested components, refer to the following help topics:
 
-- [Collections](Documentation/Guide/Angular_Components/Component_Configuration_Syntax/#Collections)
-- [Properties of the Object Type](/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/#Properties_of_the_Object_Type)
-- [Configuration Components](/Documentation/Guide/Common/TypeScript_Guides/Best_Practices/#Configuration_Components)
+- [Collections](/concepts/40%20Angular%20Components/20%20Component%20Configuration%20Syntax/17%20Collections.md 'Documentation/Guide/Angular_Components/Component_Configuration_Syntax/#Collections')
+- [Properties of the Object Type](/concepts/40%20Angular%20Components/20%20Component%20Configuration%20Syntax/14%20Properties%20of%20the%20Object%20Type.md '/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/#Properties_of_the_Object_Type')
+- [Configuration Components](/concepts/Common/TypeScript%20Guides/10%20Best%20Practices/20%20Configuration%20Components.md '/Documentation/Guide/Common/TypeScript_Guides/Best_Practices/#Configuration_Components')
 
 ##### Vue
 
 1. Create the `tasks` array.  
-2. Assign the array to the [dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource) property.
-3. Specify [keyExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr) (`id` in this case).  
-4. Use the nested `DxColumn` component to define [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/) you want to display. Remember to import the necessary nested components.
+2. Assign the array to the [dataSource](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource') property.
+3. Specify [keyExpr](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr') (`id` in this case).  
+4. Use the nested `DxColumn` component to define [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') you want to display. Remember to import the necessary nested components.
 
         <!-- tab: App.vue -->
         <template>
@@ -105,15 +105,15 @@ For more information about the nested components, refer to the following help to
 
 For more information about the nested components, refer to the following help topics:
 
-- [Collections](/Documentation/Guide/Vue_Components/Component_Configuration_Syntax/#Collections)
-- [Properties of the Object Type](/Documentation/Guide/Vue_Components/Component_Configuration_Syntax/#Properties_of_the_Object_Type)
+- [Collections](/concepts/55%20Vue%20Components/20%20Component%20Configuration%20Syntax/17%20Collections.md '/Documentation/Guide/Vue_Components/Component_Configuration_Syntax/#Collections')
+- [Properties of the Object Type](/concepts/55%20Vue%20Components/20%20Component%20Configuration%20Syntax/14%20Properties%20of%20the%20Object%20Type.md '/Documentation/Guide/Vue_Components/Component_Configuration_Syntax/#Properties_of_the_Object_Type')
 
 ##### React
 
 1. Create the `tasks` array.  
-2. Assign the array to the [dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource) property. 
-3. Specify [keyExpr](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr) (`id` in this case). 
-4. Use the nested `Column` component to define [columns](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/) you want to display. Remember to import the necessary nested components.
+2. Assign the array to the [dataSource](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource') property. 
+3. Specify [keyExpr](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr') (`id` in this case). 
+4. Use the nested `Column` component to define [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') you want to display. Remember to import the necessary nested components.
 
         <!-- tab: App.tsx -->
         import DataGrid, { Column } from 'devextreme-react/data-grid';
@@ -149,7 +149,7 @@ For more information about the nested components, refer to the following help to
 
 For more information about the nested components, refer to the following help topics:
 
-- [Collections](/Documentation/Guide/React_Components/Component_Configuration_Syntax/#Collections)
-- [Properties of the Object Type](/Documentation/Guide/React_Components/Component_Configuration_Syntax/#Properties_of_the_Object_Type)
+- [Collections](/concepts/50%20React%20Components/40%20Component%20Configuration%20Syntax/20%20Collections.md '/Documentation/Guide/React_Components/Component_Configuration_Syntax/#Collections')
+- [Properties of the Object Type](/concepts/50%20React%20Components/40%20Component%20Configuration%20Syntax/12%20Properties%20of%20the%20Object%20Type.md '/Documentation/Guide/React_Components/Component_Configuration_Syntax/#Properties_of_the_Object_Type')
 
 ---

@@ -6,11 +6,10 @@
     margin: 50px;
     height: 525px;
     align-items: center;
-    color: rgb(89, 108, 125) !important;
 }
 
 .dx-fileuploader-input-label, .dx-fileuploader-file-name {
-    color: rgb(89, 108, 125) !important;
+    color: #596c7d;
 }
 
 .file-uploader-block {

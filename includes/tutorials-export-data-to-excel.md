@@ -1,6 +1,6 @@
 {WidgetName} allows users to export grid data as Excel documents. This feature requires the following third-party libraries:
 
-- <a href="https://github.com/DevExpress/devextreme-exceljs-fork" target="_blank">ExcelJS</a> v4.4.0+
+- <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v4.4.0+
 - <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+
 
 To configure export operations, use the [export{WidgetName}(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#export{WidgetName}options) method from the [excelExporter](/Documentation/ApiReference/Common/Utils/excelExporter/) module. It requires a {WidgetName} instance and a target Excel worksheet.

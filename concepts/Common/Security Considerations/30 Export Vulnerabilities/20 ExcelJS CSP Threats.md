@@ -1,4 +1,4 @@
-The DevExtreme DataGrid and PivotGrid components use the [ExcelJS](https://github.com/DevExpress/devextreme-exceljs-fork) third-party library to export data to Excel. 
+The DevExtreme DataGrid and PivotGrid components use the [ExcelJS](https://github.com/exceljs/exceljs) third-party library to export data to Excel. 
 
 [important] We strongly advise you to use ExcelJS v4.4.0 or later.
 

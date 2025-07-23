@@ -11,7 +11,7 @@ Exports Gantt data to a PDF file.
 A Promise that resolves when the Gantt data is ready for export.
 #include ref-promisedistinction
 
-##### param(options): GanttExport_Options
+##### param(options): GanttExport.Options
 Export settings.
 
 ---
@@ -20,11 +20,14 @@ Export settings.
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/ExportToPDF/"
 }
 
-[note] This method uses <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> v2.3.1+ to generate PDF files, and the <a href="https://github.com/simonbengtsson/jsPDF-AutoTable" target="_blank">jsPDF-AutoTable</a> plugin to create tables within the PDF.
+[note]
 
-Warning: You need to perform *extra steps* to generate PDFs with non-ASCII characters. See the [PDF Export guide](/concepts/80%20Troubleshooting/15%20PDF%20Export/00%20PDF%20Export.md '/Documentation/Guide/Troubleshooting/PDF_Export/'). for more information.
+- This method uses [jsPDF](https://github.com/parallax/jsPDF) v2.3.1+ to generate PDF files, and the [jsPDF-AutoTable](https://github.com/simonbengtsson/jsPDF-AutoTable) plugin to create tables within generated PDFs.
+- To resolve possible issues with Unicode characters in exported PDF files, refer to the following troubleshooting guide: [Export Unicode Characters - Gantt](/Documentation/Guide/Troubleshooting/PDF_Export_Issues/Export_Unicode_Characters/Gantt/).
 
-In the following example, the [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') handler of a standalone toolbar item fires this method:
+[/note]
+
+In the following example, a toolbar button's [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') event handler calls **exportGantt**:
 
 ---
 ##### jQuery

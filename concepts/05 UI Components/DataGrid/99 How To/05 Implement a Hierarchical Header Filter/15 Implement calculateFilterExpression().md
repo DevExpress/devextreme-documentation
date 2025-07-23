@@ -11,6 +11,7 @@ To apply hierarchical header filter values, define the [calculateFilterExpressio
                 if (target === "headerFilter" && filterValue) {
                     return [["City", selectedFilterOperation, filterValue], "or", ["State", selectedFilterOperation, filterValue]];
                 }
+                return this.defaultCalculateFilterExpression(filterValue, selectedFilterOperations, target);
             },
         }]
     })
@@ -28,10 +29,11 @@ To apply hierarchical header filter values, define the [calculateFilterExpressio
 
     <!-- tab: app.component.ts -->
     export class AppComponent {
-        calculateFilterExpression(filterValue, selectedFilterOperation, target) {
+        calculateFilterExpression(this: DxDataGridTypes.Column, filterValue, selectedFilterOperation, target) {
             if (target === "headerFilter" && filterValue) {
                 return [["City", selectedFilterOperation, filterValue], "or", ["State", selectedFilterOperation, filterValue]];
             }
+            return this.defaultCalculateFilterExpression(filterValue, selectedFilterOperations, target);
         }
     }
 
@@ -50,27 +52,29 @@ To apply hierarchical header filter values, define the [calculateFilterExpressio
     <template>
 
     <script setup lang="ts">
-    import { DxDataGrid, DxColumn, DxHeaderFilter } from 'devextreme-vue/data-grid';
+    import { DxDataGrid, DxColumn, DxHeaderFilter, type DxDataGridTypes } from 'devextreme-vue/data-grid';
 
     const groupInterval: string[] = ["State", "City"];
-    function calculateFilterExpression(filterValue, selectedFilterOperation, target) {
+    function calculateFilterExpression(this: DxDataGridTypes.Column, filterValue, selectedFilterOperation, target) {
         if (target === "headerFilter" && filterValue) {
             return [["City", selectedFilterOperation, filterValue], "or", ["State", selectedFilterOperation, filterValue]];
         }
+        return this.defaultCalculateFilterExpression(filterValue, selectedFilterOperations, target);
     }
     </script>
 
 ##### React
 
     <!-- tab: App.tsx -->
-    import { DataGrid, Column, HeaderFilter } from 'devextreme-react/data-grid';
+    import { DataGrid, Column, HeaderFilter, type DxDataGridTypes } from 'devextreme-react/data-grid';
 
     const groupInterval: string[] = ["State", "City"];
 
-    function calculateFilterExpression(filterValue, selectedFilterOperation, target) {
+    function calculateFilterExpression(this: DxDataGridTypes.Column, filterValue, selectedFilterOperation, target) {
         if (target === "headerFilter" && filterValue) {
             return [["City", selectedFilterOperation, filterValue], "or", ["State", selectedFilterOperation, filterValue]];
         }
+        return this.defaultCalculateFilterExpression(filterValue, selectedFilterOperations, target);
     }
 
     function App() {

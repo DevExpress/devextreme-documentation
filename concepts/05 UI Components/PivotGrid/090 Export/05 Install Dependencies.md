@@ -1,6 +1,6 @@
 To export PivotGrid data to Excel, you first need to install the following third-party libraries:
 
-- <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v4.4.0+
+- <a href="https://github.com/DevExpress/devextreme-exceljs-fork" target="_blank">ExcelJS</a> v4.4.0+
 - <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+
 
 ---

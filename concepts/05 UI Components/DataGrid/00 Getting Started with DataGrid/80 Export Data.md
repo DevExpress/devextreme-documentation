@@ -1,6 +1,6 @@
 The DataGrid allows users to export grid data as Excel and PDF documents. This capability makes use of the following third-party libraries:
 
-- Excel: <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v4.4.0+ and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+
+- Excel: <a href="https://github.com/DevExpress/devextreme-exceljs-fork" target="_blank">ExcelJS</a> v4.4.0+ and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+
 
 - PDF: <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> v2.3.1+
 

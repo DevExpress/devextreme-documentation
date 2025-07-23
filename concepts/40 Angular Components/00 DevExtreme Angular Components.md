@@ -14,10 +14,10 @@ Try out DevExtreme components in your projects with our [30-day trial](https://j
     
     - [Add DevExtreme](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/') to your Angular application.
     
-    - Create [a new application with a template](/Documentation/Guide/Angular_Components/Application_Template/) for quick setup.
+    - Create [a new application with a template](/concepts/40%20Angular%20Components/30%20Application%20Template/00%20Application%20Template.md '/Documentation/Guide/Angular_Components/Application_Template/') for quick setup.
 
 2. **Learn Basics**    
-Learn the [first steps](/Documentation/Guide/Common/First_Steps/) and see the [component configuration syntax](/concepts/40%20Angular%20Components/20%20Component%20Configuration%20Syntax '/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/').
+Learn the [first steps](/concepts/Common/First%20Steps/00%20First%20Steps.md '/Documentation/Guide/Common/First_Steps/') and see the [component configuration syntax](/concepts/40%20Angular%20Components/20%20Component%20Configuration%20Syntax '/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/').
 
 3. **Explore**    
 Examine [over 450 technical demos](https://js.devexpress.com/Demos/WidgetsGallery) you can edit and from which you can copy code.

@@ -12,20 +12,20 @@ An object passed to this callback function.
 ##### field(options.excelCell): Object
 An ExcelJS object that describes an Excel cell. Use the object's properties to customize the cell. For information on these properties, refer to the following ExcelJS documentation sections:
 
-- <a href="https://github.com/DevExpress/devextreme-exceljs-fork#value-types" target="_blank">value</a>
-- <a href="https://github.com/DevExpress/devextreme-exceljs-fork#alignment" target="_blank">alignment</a>
-- <a href="https://github.com/DevExpress/devextreme-exceljs-fork#borders" target="_blank">border</a>
-- <a href="https://github.com/DevExpress/devextreme-exceljs-fork#fills" target="_blank">fill</a>
-- <a href="https://github.com/DevExpress/devextreme-exceljs-fork#rich-text" target="_blank">richText</a>
-- <a href="https://github.com/DevExpress/devextreme-exceljs-fork#fonts" target="_blank">font</a>
-- <a href="https://github.com/DevExpress/devextreme-exceljs-fork#number-formats" target="_blank">numFmt</a>
+- <a href="https://github.com/exceljs/exceljs#value-types" target="_blank">value</a>
+- <a href="https://github.com/exceljs/exceljs#alignment" target="_blank">alignment</a>
+- <a href="https://github.com/exceljs/exceljs#borders" target="_blank">border</a>
+- <a href="https://github.com/exceljs/exceljs#fills" target="_blank">fill</a>
+- <a href="https://github.com/exceljs/exceljs#rich-text" target="_blank">richText</a>
+- <a href="https://github.com/exceljs/exceljs#fonts" target="_blank">font</a>
+- <a href="https://github.com/exceljs/exceljs#number-formats" target="_blank">numFmt</a>
 
 ##### field(options.gridCell): ExcelDataGridCell
 A DataGrid cell.
 
 ---
 
-The following code illustrates how to customize <a href="https://github.com/DevExpress/devextreme-exceljs-fork#fonts" target="_blank">font</a> and <a href="https://github.com/DevExpress/devextreme-exceljs-fork#alignment" target="_blank">alignment</a> in cells whose [rowType](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row/rowType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/#rowType') equals *"data"*:
+The following code illustrates how to customize <a href="https://github.com/exceljs/exceljs#fonts" target="_blank">font</a> and <a href="https://github.com/exceljs/exceljs#alignment" target="_blank">alignment</a> in cells whose [rowType](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row/rowType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/#rowType') equals *"data"*:
 
 ---
 ##### jQuery

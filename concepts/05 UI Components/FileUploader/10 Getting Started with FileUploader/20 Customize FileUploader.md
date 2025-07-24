@@ -1,4 +1,4 @@
-You can customize FileUploader visual elements as your needs dictate. To customize the file drag and drop zone, specify the [dropZone](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#dropZone) property. To configure component texts, specify properties such as [labelText](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#labelText), [readyToUploadMessage](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#readyToUploadMessage), and [uploadButtonText](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadButtonText).
+You can customize FileUploader visual elements as your needs dictate. To customize the file drag and drop zone, specify the [dropZone](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#dropZone) property. To configure display text, specify properties such as [labelText](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#labelText), [readyToUploadMessage](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#readyToUploadMessage), and [uploadButtonText](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadButtonText).
 
 This example implements a custom drop zone and configures the **labelText** property:
 
@@ -46,7 +46,7 @@ This example implements a custom drop zone and configures the **labelText** prop
 
 ---
 
-To customize FileUploader visual elements further, you can configure custom CSS styles. This example implements styles to position the **labelText** string below the "Select a file" button. Additionally, this example centers the component horizontally inside the FileUploader drop zone. Scrolling is enabled when uploaded files overflow the drop zone container with the `overflow-y: auto;` style.
+To customize FileUploader visual elements further, you can configure custom CSS styles. This example implements styles to position the **labelText** string below the "Select a file" button. Additionally, this example centers the component horizontally inside the FileUploader drop zone. Scrollbars appear when the file list overflows the drop zone container (`overflow-y: auto;`).
 
     <!-- tab: styles.css -->
     .demo-container {

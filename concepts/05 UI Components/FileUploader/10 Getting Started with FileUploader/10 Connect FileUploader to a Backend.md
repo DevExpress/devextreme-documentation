@@ -3,7 +3,7 @@ To connect FileUploader to a backend when **uploadMode** is *"instantly"* or *"u
 - [uploadUrl](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadUrl)    
 Specifies a target URL for HTTP requests. The [uploadMethod](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadMethod) property allows you to choose between POST (default) and PUT requests.
 - [uploadFile](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadFile)    
-Defines a custom uploading function. You can implement **uploadFile** if you want to process files on the client-side before uploading.
+Defines a custom uploading function. You can implement **uploadFile** if you want to process files on the client side before uploading.
 
 You must configure your server to accept uploaded files. Refer to the following topics for server-side implementation examples:
 

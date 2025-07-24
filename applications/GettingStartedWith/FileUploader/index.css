@@ -1,0 +1,39 @@
+.demo-container > * {
+    color: rgb(89, 108, 125) !important;
+}
+
+.demo-container {
+    margin: 50px;
+    height: 525px;
+    align-items: center;
+}
+
+.dx-fileuploader-input-label, .dx-fileuploader-file-name {
+    color: #596c7d;
+}
+
+.file-uploader-block {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(245, 245, 245);
+    border-radius: 16px;
+}
+
+#file-uploader {
+    height: 100%;
+}
+
+.dx-fileuploader-input-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dx-fileuploader-input-container {
+    text-align: center;
+}
+
+#file-uploader .dx-fileuploader-wrapper {
+    overflow-y: auto;
+}

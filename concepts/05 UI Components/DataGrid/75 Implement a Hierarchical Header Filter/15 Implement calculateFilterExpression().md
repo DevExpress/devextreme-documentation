@@ -1,4 +1,4 @@
-To apply hierarchical header filter values, define the [calculateFilterExpression](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateFilterExpression) function. Return a [group filter expression](/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Filtering/Group_Filter_Operations) that compares **filterValue** with both item and group fields:
+To apply hierarchical header filter values, define the [calculateFilterExpression](/api-reference/_hidden/GridBaseColumn/calculateFilterExpression.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateFilterExpression') function. Return a [group filter expression](/concepts/70%20Data%20Binding/5%20Data%20Layer/2%20Reading%20Data/15%20Filtering/1%20Group%20Filter%20Operations.md '/Documentation/Guide/Data_Binding/Data_Layer/#Reading_Data/Filtering/Group_Filter_Operations') that compares **filterValue** with both item and group fields:
 
 ---
 

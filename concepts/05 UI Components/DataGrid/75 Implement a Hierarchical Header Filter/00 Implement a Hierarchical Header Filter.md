@@ -1,1 +1,1 @@
-DataGrid supports hierarchical data structures in column [headerFilters](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/). This tutorial demonstrates how to implement a hierarchical header filter for a specific column.
+DataGrid supports hierarchical data structures in column [headerFilters](/api-reference/_hidden/GridBaseColumn/headerFilter '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/'). This tutorial demonstrates how to implement a hierarchical header filter for a specific column.

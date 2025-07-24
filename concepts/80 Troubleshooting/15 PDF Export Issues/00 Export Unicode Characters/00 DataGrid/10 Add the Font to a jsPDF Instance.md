@@ -13,7 +13,7 @@ Set the **addFileToVFS()** method's **contents** parameter to the Base64-encoded
     doc.addFont("Roboto-Regular.ttf", "Roboto", "normal");
     doc.setFont("Roboto");
 
-Assign this jsPDF instance to the [jsPDFDocument](/Documentation/ApiReference/Common/Object_Structures/PdfExportDataGridProps/#jsPDFDocument) property of [exportDataGrid](/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions):
+Assign this jsPDF instance to the [jsPDFDocument](/api-reference/50%20Common/Object%20Structures/PdfExportDataGridProps/jsPDFDocument.md '/Documentation/ApiReference/Common/Object_Structures/PdfExportDataGridProps/#jsPDFDocument') property of [exportDataGrid](/api-reference/50%20Common/utils/pdfExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions'):
 
 ---
 
@@ -77,4 +77,4 @@ Assign this jsPDF instance to the [jsPDFDocument](/Documentation/ApiReference/Co
 ---
 
 #####See Also#####
-- [Export Data](/Documentation/Guide/UI_Components/DataGrid/Getting_Started_with_DataGrid/#Export_Data)
+- [Export Data](/concepts/05%20UI%20Components/DataGrid/00%20Getting%20Started%20with%20DataGrid/80%20Export%20Data.md '/Documentation/Guide/UI_Components/DataGrid/Getting_Started_with_DataGrid/#Export_Data')

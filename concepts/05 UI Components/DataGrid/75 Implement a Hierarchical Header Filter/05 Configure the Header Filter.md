@@ -1,6 +1,6 @@
 To configure a hierarchical header filter, specify the following properties:
 
-- [groupInterval](/Documentation/ApiReference/Common_Types/grids/ColumnHeaderFilter/#groupInterval)    
+- [groupInterval](/api-reference/40%20Common%20Types/15%20grids/ColumnHeaderFilter/groupInterval.md '/Documentation/ApiReference/Common_Types/grids/ColumnHeaderFilter/#groupInterval')    
 Assign a string array that contains multiple items to the **groupInterval** property. Specify the nesting levels you want to implement in this array:
 
     ---
@@ -72,8 +72,8 @@ Assign a string array that contains multiple items to the **groupInterval** prop
 
     ---
 
-- **headerFilter**.[dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#dataSource)    
-Configure a hierarchical **headerFilter**.**dataSource** following the *"tree"* [DataStructure](/Documentation/ApiReference/Common_Types/#DataStructure). Specify the `text`, `value`, and `items[]` properties:
+- **headerFilter**.[dataSource](/api-reference/40%20Common%20Types/15%20grids/ColumnHeaderFilter/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#dataSource')    
+Configure a hierarchical **headerFilter**.**dataSource** following the *"tree"* [DataStructure](/api-reference/40%20Common%20Types/DataStructure.md '/Documentation/ApiReference/Common_Types/#DataStructure'). Specify the `text`, `value`, and `items[]` properties:
 
     ---
 
@@ -179,4 +179,4 @@ Configure a hierarchical **headerFilter**.**dataSource** following the *"tree"* 
 
     ---
 
-For more information about hierarchical data structures in DevExtreme, refer to the following topic: [TreeList - dataStructure](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#dataStructure).
+For more information about hierarchical data structures in DevExtreme, refer to the following topic: [TreeList - dataStructure](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/dataStructure.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#dataStructure').

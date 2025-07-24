@@ -11,7 +11,7 @@ Exports Gantt data to a PDF file.
 A Promise that resolves when the Gantt data is ready for export.
 #include ref-promisedistinction
 
-##### param(options): GanttExport.Options
+##### param(options): GanttExport_Options
 Export settings.
 
 ---
@@ -23,7 +23,7 @@ Export settings.
 [note]
 
 - This method uses [jsPDF](https://github.com/parallax/jsPDF) v2.3.1+ to generate PDF files, and the [jsPDF-AutoTable](https://github.com/simonbengtsson/jsPDF-AutoTable) plugin to create tables within generated PDFs.
-- To resolve possible issues with Unicode characters in exported PDF files, refer to the following troubleshooting guide: [Export Unicode Characters - Gantt](/Documentation/Guide/Troubleshooting/PDF_Export_Issues/Export_Unicode_Characters/Gantt/).
+- To resolve possible issues with Unicode characters in exported PDF files, refer to the following troubleshooting guide: [Export Unicode Characters - Gantt](/concepts/80%20Troubleshooting/15%20PDF%20Export%20Issues/00%20Export%20Unicode%20Characters/00%20Gantt '/Documentation/Guide/Troubleshooting/PDF_Export_Issues/Export_Unicode_Characters/Gantt/').
 
 [/note]
 

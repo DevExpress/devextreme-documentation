@@ -1,6 +1,6 @@
 ---
 id: ColumnHeaderFilter.groupInterval
-type: Enums.HeaderFilterGroupInterval | Number | Array | undefined
+type: Enums.HeaderFilterGroupInterval | Number | undefined
 default: undefined
 ---
 ---
@@ -8,7 +8,7 @@ default: undefined
 Specifies how the header filter combines values into groups.
 
 ---
-If you [specify a custom header filter data source](/concepts/05%20UI%20Components/DataGrid/99%20How%20To/Customize%20Header%20Filter%20Data%20Source/10%20Specify%20a%20Custom%20Data%20Source.md '/Documentation/Guide/UI_Components/DataGrid/How_To/Customize_Header_Filter_Data_Source/#Specify_a_Custom_Data_Source'), **groupInterval** accepts only string arrays that contain group fields for [hierarchical header filters](/Documentation/Guide/UI_Components/DataGrid/Implement_a_Hierarchical_Header_Filter/).
+If you [specify a custom header filter data source](/concepts/05%20UI%20Components/DataGrid/99%20How%20To/Customize%20Header%20Filter%20Data%20Source/10%20Specify%20a%20Custom%20Data%20Source.md '/Documentation/Guide/UI_Components/DataGrid/How_To/Customize_Header_Filter_Data_Source/#Specify_a_Custom_Data_Source'), **groupInterval** accepts only string arrays that contain group fields for [hierarchical header filters](/concepts/05%20UI%20Components/DataGrid/75%20Implement%20a%20Hierarchical%20Header%20Filter/00%20Implement%20a%20Hierarchical%20Header%20Filter.md '/Documentation/Guide/UI_Components/DataGrid/Implement_a_Hierarchical_Header_Filter/').
 
 For numeric columns, assign a number that specifies the size of generated groups. For an example of this **groupInterval** implementation, refer to the following demo:
 
@@ -17,7 +17,7 @@ For numeric columns, assign a number that specifies the size of generated groups
     name: "DataGrid - Filtering"
 }
 
-For date columns, set this property to a [HeaderFilterGroupInterval](/Documentation/ApiReference/Common_Types/grids/#HeaderFilterGroupInterval) value. This value indicates the smallest available filter value. For instance, the *"day"* value allows you to filter date columns by a specific day.
+For date columns, set this property to a [HeaderFilterGroupInterval](/api-reference/40%20Common%20Types/15%20grids/HeaderFilterGroupInterval.md '/Documentation/ApiReference/Common_Types/grids/#HeaderFilterGroupInterval') value. This value indicates the smallest available filter value. For instance, the *"day"* value allows you to filter date columns by a specific day.
 
 The default header filter for date columns is hierarchical. To implement a non-hierarchical header filter, set **groupInterval** to **null** and specify the [calculateFilterExpression](/api-reference/_hidden/GridBaseColumn/calculateFilterExpression.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateFilterExpression') function:
 

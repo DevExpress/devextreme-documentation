@@ -1,4 +1,4 @@
-As an alternative, you can use the [GanttExportOptions](/Documentation/ApiReference/Common/Object_Structures/GanttExportOptions/).[font](/Documentation/ApiReference/Common/Object_Structures/GanttExportOptions/font/) property to add a font to your PDF exports. Assign a Base64-encoded font file to **font**.[fontObject](/Documentation/ApiReference/Common/Object_Structures/GanttExportOptions/font/#fontObject) and specify **font**.[name](/Documentation/ApiReference/Common/Object_Structures/GanttExportOptions/font/#name):
+As an alternative, you can use the [GanttExportOptions](/api-reference/50%20Common/Object%20Structures/GanttExportOptions '/Documentation/ApiReference/Common/Object_Structures/GanttExportOptions/').[font](/api-reference/50%20Common/Object%20Structures/GanttExportOptions/font.md '/Documentation/ApiReference/Common/Object_Structures/GanttExportOptions/font/') property to add a font to your PDF exports. Assign a Base64-encoded font file to **font**.[fontObject](/api-reference/_hidden/GanttExportFont/fontObject.md '/Documentation/ApiReference/Common/Object_Structures/GanttExportOptions/font/#fontObject') and specify **font**.[name](/api-reference/_hidden/GanttExportFont/name.md '/Documentation/ApiReference/Common/Object_Structures/GanttExportOptions/font/#name'):
 
 ---
 
@@ -78,4 +78,4 @@ As an alternative, you can use the [GanttExportOptions](/Documentation/ApiRefere
 ---
 
 #####See Also#####
-- [Export Data](/Documentation/Guide/UI_Components/Gantt/Export_Data/)
+- [Export Data](/concepts/05%20UI%20Components/Gantt/50%20Export%20Data.md '/Documentation/Guide/UI_Components/Gantt/Export_Data/')

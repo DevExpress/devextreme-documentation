@@ -21,11 +21,11 @@ Export settings.
 [note]
 
 - This method uses [jsPDF](https://github.com/parallax/jsPDF) v2.3.1+ to generate PDF files.
-- To resolve possible issues with Unicode characters in exported PDF files, refer to the following troubleshooting guide: [Export Unicode Characters - DataGrid](/Documentation/Guide/Troubleshooting/PDF_Export_Issues/Export_Unicode_Characters/DataGrid/).
+- To resolve possible issues with Unicode characters in exported PDF files, refer to the following troubleshooting guide: [Export Unicode Characters - DataGrid](/concepts/80%20Troubleshooting/15%20PDF%20Export%20Issues/00%20Export%20Unicode%20Characters/00%20DataGrid '/Documentation/Guide/Troubleshooting/PDF_Export_Issues/Export_Unicode_Characters/DataGrid/').
 
 [/note]
 
-In the following example, a DevExtreme [Button](/Documentation/Guide/UI_Components/Button/Overview/)'s [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') event handler calls **exportDataGrid**:
+In the following example, a DevExtreme [Button](/concepts/05%20UI%20Components/Button/02%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/Button/Overview/')'s [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') event handler calls **exportDataGrid**:
 
 ---
 ##### jQuery

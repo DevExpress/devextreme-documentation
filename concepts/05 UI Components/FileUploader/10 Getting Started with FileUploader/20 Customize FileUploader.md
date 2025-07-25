@@ -1,4 +1,4 @@
-You can customize FileUploader visual elements as your needs dictate. To customize the file drag and drop zone, specify the [dropZone](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#dropZone) property. To configure display text, specify properties such as [labelText](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#labelText), [readyToUploadMessage](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#readyToUploadMessage), and [uploadButtonText](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadButtonText).
+You can customize FileUploader visual elements as your needs dictate. To customize the file drag and drop zone, specify the [dropZone](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/dropZone.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#dropZone') property. To configure display text, specify properties such as [labelText](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/labelText.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#labelText'), [readyToUploadMessage](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/readyToUploadMessage.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#readyToUploadMessage'), and [uploadButtonText](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/uploadButtonText.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadButtonText').
 
 This example implements a custom drop zone and configures the **labelText** property:
 
@@ -80,4 +80,4 @@ To customize FileUploader visual elements further, use custom CSS. This example 
         overflow-y: auto;
     }
 
-For more information about customizing DevExtreme FileUploader, refer to the following topic: [Customize FileUploader](/Documentation/Guide/UI_Components/FileUploader/Customize_FileUploader/)
+For more information about customizing DevExtreme FileUploader, refer to the following topic: [Customize FileUploader](/concepts/05%20UI%20Components/FileUploader/50%20Customize%20FileUploader.md '/Documentation/Guide/UI_Components/FileUploader/Customize_FileUploader/')

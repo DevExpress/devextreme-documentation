@@ -1,8 +1,8 @@
 To configure FileUploader permissions, specify the following properties:
 
-- [accept](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#accept)    
-Specifies file types and extensions the component accepts. Assign MIME types to this property. Alternatively, define [allowedFileExtensions](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#allowedFileExtensions) to specify accepted file extensions.
-- [minFileSize](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#minFileSize)/[maxFileSize](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#maxFileSize)    
+- [accept](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/accept.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#accept')    
+Specifies file types and extensions the component accepts. Assign MIME types to this property. Alternatively, define [allowedFileExtensions](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/allowedFileExtensions.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#allowedFileExtensions') to specify accepted file extensions.
+- [minFileSize](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/minFileSize.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#minFileSize')/[maxFileSize](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/maxFileSize.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#maxFileSize')    
 These properties specify the minimum/maximum file size the component accepts. To allow users to upload large files with less strain on your server resources, you can enable [chunk uploading](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileUploader/ChunkUpload/).
 
 This example configures FileUploader to accept image files up to 32 MB:

@@ -82,9 +82,9 @@
 
 To configure FileUploader functionality, specify the following properties:
 
-- [multiple](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#multiple)    
+- [multiple](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/multiple.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#multiple')    
 Specifies if users can upload multiple files at once.
-- [uploadMode](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadMode)    
+- [uploadMode](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/uploadMode.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadMode')    
 Configures how FileUploader sends files to your server. This property accepts the following values:
     - *"instantly"* (default)    
     The component uploads with HTTP requests immediately after users select files.
@@ -92,7 +92,7 @@ Configures how FileUploader sends files to your server. This property accepts th
     The component uploads with HTTP requests after users select files and press an upload button.
     - *"useForm"*    
     The component uploads using an HTML form when users submit the form.
-- [allowCanceling](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#allowCanceling)    
+- [allowCanceling](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/allowCanceling.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#allowCanceling')    
 Allows users to remove selected files and cancel uploading. Applies only if **uploadMode** is *"instantly"* or *"useButtons"*.
 
 This example sets **uploadMode** to *"useButtons"* and enables the **multiple** and **allowCanceling** properties:

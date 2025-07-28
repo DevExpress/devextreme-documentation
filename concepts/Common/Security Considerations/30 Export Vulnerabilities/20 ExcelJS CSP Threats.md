@@ -1,6 +1,6 @@
 The DevExtreme DataGrid and PivotGrid components use the [ExcelJS](https://github.com/DevExpress/devextreme-exceljs-fork) third-party library to export data to Excel. 
 
-[important] We strongly advise you to use ExcelJS v4.4.0 or later.
+[important] We strongly advise you to use DevExtreme ExcelJS v4.4.1 or later.
 
 If you use an older ExcelJS version and apply [CSP rules](/concepts/Common/Security%20Considerations/40%20Content%20Security%20Policy/05%20Common%20CSP%20Directives.md '/Documentation/Guide/Common/Security_Considerations/#Content_Security_Policy/Common_CSP_Directives'), you should include the following initialization code before code that loads ExcelJS sources: `window.regeneratorRuntime = null;` 
 
@@ -15,7 +15,7 @@ If you use an older ExcelJS version and apply [CSP rules](/concepts/Common/Secur
         <script nonce="uqcb8z">
             window.regeneratorRuntime = null;
         </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.3.0/exceljs.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.3.0/dx-exceljs-fork.min.js"></script>
         <!-- reference the DevExtreme sources here -->
     </head>
 
@@ -61,7 +61,7 @@ If you use an older ExcelJS version and apply [CSP rules](/concepts/Common/Secur
     
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import { exportDataGrid } from 'devextreme/excel_exporter';
     
     @Component({
@@ -108,7 +108,7 @@ If you use an older ExcelJS version and apply [CSP rules](/concepts/Common/Secur
     <script>
     import 'devextreme/dist/css/dx.light.css';
     import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
 
     export default {
         components: {
@@ -147,7 +147,7 @@ If you use an older ExcelJS version and apply [CSP rules](/concepts/Common/Secur
     <script setup>
     import 'devextreme/dist/css/dx.light.css';
     import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
 
     const onExporting = (e) => {
         if (e.format === 'xlsx') {
@@ -173,7 +173,7 @@ If you use an older ExcelJS version and apply [CSP rules](/concepts/Common/Secur
     import React from 'react';
     import 'devextreme/dist/css/dx.light.css';
     import DataGrid, { Export } from 'devextreme-react/data-grid';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
 
     const exportFormats = ['xlsx'];
 

@@ -81,7 +81,7 @@ You can use this function to adjust column properties before export. In the foll
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { exportDataGrid } from 'devextreme/excel_exporter';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import saveAs from 'file-saver';
     
     @Component({
@@ -146,7 +146,7 @@ You can use this function to adjust column properties before export. In the foll
 
     import { DxDataGrid, DxExport, DxColumn } from 'devextreme-vue/data-grid';
     import { exportDataGrid } from 'devextreme/excel_exporter';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import saveAs from 'file-saver';
 
     export default {
@@ -184,7 +184,7 @@ You can use this function to adjust column properties before export. In the foll
     import React from 'react';
     import 'devextreme/dist/css/dx.light.css';
 
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import saveAs from 'file-saver';
     import DataGrid, { Export, Column } from 'devextreme-react/data-grid';
     import { exportDataGrid } from 'devextreme/excel_exporter';

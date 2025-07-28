@@ -14,7 +14,7 @@ Exports pivot grid data to Excel.
 <!-- %param(options)% -->
 
 ---
-This method requires <a href="https://github.com/DevExpress/devextreme-exceljs-fork" target="_blank">ExcelJS</a> v4.4.0+ to export data and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+ to save files. If you apply [CSP rules](/concepts/Common/Security%20Considerations/40%20Content%20Security%20Policy/00%20Content%20Security%20Policy.md '/Documentation/Guide/Common/Security_Considerations/#Content_Security_Policy'), refer to the [ExcelJS CSP Treats](/concepts/Common/Security%20Considerations/30%20Export%20Vulnerabilities/20%20ExcelJS%20CSP%20Threats.md '/Documentation/Guide/Common/Security_Considerations/#Export_Vulnerabilities/ExcelJS_CSP_Threats') section to read more about potential vulnerabilities.
+This method requires <a href="https://github.com/DevExpress/devextreme-exceljs-fork" target="_blank">DevExtreme ExcelJS</a> v4.4.1+ to export data and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+ to save files. If you apply [CSP rules](/concepts/Common/Security%20Considerations/40%20Content%20Security%20Policy/00%20Content%20Security%20Policy.md '/Documentation/Guide/Common/Security_Considerations/#Content_Security_Policy'), refer to the [ExcelJS CSP Treats](/concepts/Common/Security%20Considerations/30%20Export%20Vulnerabilities/20%20ExcelJS%20CSP%20Threats.md '/Documentation/Guide/Common/Security_Considerations/#Export_Vulnerabilities/ExcelJS_CSP_Threats') section to read more about potential vulnerabilities.
 
 You can call this method at any point in your application. In the example below, this method is called in the [onExporting](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#onExporting') function that is executed before data is exported. The **cancel** parameter is enabled to prevent the built-in export. As a result, the PivotGrid is exported to a single worksheet. 
 
@@ -45,7 +45,7 @@ You can call this method at any point in your application. In the example below,
     <head>
         <!-- ... -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/devextreme-exceljs-fork@4.4.1/dist/dx-exceljs-fork.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
         <!-- reference the DevExtreme sources here -->
     </head>
@@ -61,7 +61,7 @@ You can call this method at any point in your application. In the example below,
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { exportPivotGrid } from 'devextreme/excel_exporter';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import saveAs from 'file-saver';
     
     @Component({
@@ -124,7 +124,7 @@ You can call this method at any point in your application. In the example below,
 
     import { DxPivotGrid, DxExport } from 'devextreme-vue/pivot-grid';
     import { exportPivotGrid } from 'devextreme/excel_exporter';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import saveAs from 'file-saver';
 
     export default {
@@ -158,7 +158,7 @@ You can call this method at any point in your application. In the example below,
     import 'devextreme/dist/css/dx.light.css';
 
     import PivotGrid, { Export } from 'devextreme-react/pivot-grid';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import saveAs from 'file-saver';
     import { exportPivotGrid } from 'devextreme/excel_exporter';
 

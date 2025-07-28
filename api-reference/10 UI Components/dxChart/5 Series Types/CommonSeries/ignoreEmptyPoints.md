@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether the series should ignore null data points.
+Specifies whether the series should ignore empty data points.
 
 ---
-Data points that have the _null_ value do not produce actual series points. Because of this, series may be drawn with unnecessary gaps where missing points should have been. To remove these gaps, set the **ignoreEmptyPoints** property to **true**.
+Empty or `null` data items do not generate series points. As a result, the Chart displays data with gaps. To remove this space, enable the **ignoreEmptyPoints** property.

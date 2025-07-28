@@ -10,4 +10,4 @@ Generates an empty space, measured in pixels, between the legend's left/right bo
 ---
 ![DevExtreme Legend Left-Right Padding](/images/ChartJS/LegendPaddingLeftRight.png)
 
-[note] To apply legend padding, specify the [backgroundColor](/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/#backgroundColor) property or enable **border**.[visible](/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/border/#visible).
+[note] To apply legend padding, specify the [backgroundColor](/api-reference/10%20UI%20Components/BaseLegend/backgroundColor.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/#backgroundColor') property or enable **border**.[visible](/api-reference/10%20UI%20Components/BaseLegend/border/visible.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/legend/border/#visible').

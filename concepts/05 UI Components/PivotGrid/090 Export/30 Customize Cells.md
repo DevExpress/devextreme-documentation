@@ -36,7 +36,7 @@ For instance, to [outline (group)](https://support.microsoft.com/en-us/office/ou
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { exportPivotGrid } from 'devextreme/excel_exporter';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import saveAs from 'file-saver';
     
     @Component({
@@ -79,7 +79,7 @@ For instance, to [outline (group)](https://support.microsoft.com/en-us/office/ou
     <script setup lang="ts">
     import 'devextreme/dist/css/dx.light.css';
     import { DxPivotGrid, DxPivotGridTypes } from 'devextreme-vue/pivot-grid';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import { saveAs } from 'file-saver-es';
     import { exportPivotGrid } from 'devextreme/excel_exporter';
 
@@ -108,7 +108,7 @@ For instance, to [outline (group)](https://support.microsoft.com/en-us/office/ou
     import React from 'react';
     import 'devextreme/dist/css/dx.light.css';
     import PivotGrid, { PivotGridTypes } from 'devextreme-react/pivot-grid';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import { saveAs } from 'file-saver-es';
     import { exportPivotGrid } from 'devextreme/excel_exporter';
 

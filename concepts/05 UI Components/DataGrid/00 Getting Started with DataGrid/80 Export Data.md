@@ -1,6 +1,6 @@
 The DataGrid allows users to export grid data as Excel and PDF documents. This capability makes use of the following third-party libraries:
 
-- Excel: <a href="https://github.com/DevExpress/devextreme-exceljs-fork" target="_blank">ExcelJS</a> v4.4.0+ and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+
+- Excel: <a href="https://github.com/DevExpress/devextreme-exceljs-fork" target="_blank">DevExtreme ExcelJS</a> v4.4.1+ and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+
 
 - PDF: <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> v2.3.1+
 
@@ -22,7 +22,7 @@ When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(optio
         <head>
             <!-- ... -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/devextreme-exceljs-fork@4.4.1/dist/dx-exceljs-fork.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
             <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
             <!-- DevExtreme scripts are referenced here -->
@@ -71,7 +71,7 @@ When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(optio
 ##### Angular
 
     <!-- tab: Installation command -->
-    npm install --save exceljs file-saver
+    npm install --save devextreme-exceljs-fork file-saver
     npm install jspdf
 
     <!-- tab: tsconfig.app.json -->
@@ -82,7 +82,7 @@ When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(optio
             "paths": {
                 // ...
                 "exceljs": [
-                    "node_modules/exceljs/dist/exceljs.min.js"
+                    "node_modules/devextreme-exceljs-fork/dist/dx-exceljs-fork.min.js"
                 ]
             }
         },
@@ -102,7 +102,7 @@ When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(optio
 
     <!-- tab: app.component.ts -->
     // ...
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import saveAs from 'file-saver';
     import { exportDataGrid } from 'devextreme/excel_exporter';
     import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
@@ -139,7 +139,7 @@ When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(optio
 ##### Vue
 
     <!-- tab: Installation command -->
-    npm install --save exceljs file-saver
+    npm install --save devextreme-exceljs-fork file-saver
     npm install jspdf
 
     <!-- tab: App.vue -->
@@ -160,7 +160,7 @@ When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(optio
         // ...
         DxExport
     } from 'devextreme-vue/data-grid';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import saveAs from 'file-saver';
     import { exportDataGrid } from 'devextreme/excel_exporter';
     import { jsPDF } from 'jspdf';
@@ -208,7 +208,7 @@ When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(optio
 ##### React
 
     <!-- tab: Installation command -->
-    npm install --save exceljs file-saver
+    npm install --save devextreme-exceljs-fork file-saver
     npm install jspdf
 
     <!-- tab: App.js -->
@@ -222,7 +222,7 @@ When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(optio
         Export
     } from 'devextreme-react/data-grid';
 
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import saveAs from 'file-saver';
     import { exportDataGrid } from 'devextreme/excel_exporter';
     import { jsPDF } from 'jspdf';

@@ -74,7 +74,7 @@ Since the **formats** property accepts an array, you can specify multiple format
     import { Component } from '@angular/core';
     import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
     import { jsPDF } from 'jspdf';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import { saveAs } from 'file-saver-es';
     import { exportDataGrid } from 'devextreme/excel_exporter';
     
@@ -132,7 +132,7 @@ Since the **formats** property accepts an array, you can specify multiple format
     import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
     import { jsPDF } from 'jspdf';
     import { exportDataGrid as exportDataGridToPdf} from 'devextreme/pdf_exporter';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import { saveAs } from 'file-saver-es';
     import { exportDataGrid } from 'devextreme/excel_exporter';
 
@@ -182,7 +182,7 @@ Since the **formats** property accepts an array, you can specify multiple format
     import DataGrid, { Export } from 'devextreme-react/data-grid';
     import { jsPDF } from 'jspdf';
     import { exportDataGrid as exportDataGridToPdf} from 'devextreme/pdf_exporter';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import { saveAs } from 'file-saver-es';
     import { exportDataGrid } from 'devextreme/excel_exporter';
 
@@ -276,7 +276,7 @@ The example below shows how to export DataGrid to CSV format.
     
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import { saveAs } from 'file-saver-es';
     import { exportDataGrid } from 'devextreme/excel_exporter';
     
@@ -344,7 +344,7 @@ The example below shows how to export DataGrid to CSV format.
     <script>
     import 'devextreme/dist/css/dx.light.css';
     import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import { saveAs } from 'file-saver-es';
     import { exportDataGrid } from 'devextreme/excel_exporter';
 
@@ -382,7 +382,7 @@ The example below shows how to export DataGrid to CSV format.
     import React from 'react';
     import 'devextreme/dist/css/dx.light.css';
     import DataGrid, { Export } from 'devextreme-react/data-grid';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import { saveAs } from 'file-saver-es';
     import { exportDataGrid } from 'devextreme/excel_exporter';
 

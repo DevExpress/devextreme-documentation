@@ -36,7 +36,7 @@ You can encode CSV files to prevent execution of potentially harmful code within
     <head>
         <!-- ... -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/devextreme-exceljs-fork@4.4.1/dist/dx-exceljs-fork.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
         <!-- reference the DevExtreme sources here -->
     </head>
@@ -55,7 +55,7 @@ You can encode CSV files to prevent execution of potentially harmful code within
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { exportDataGrid } from 'devextreme/excel_exporter';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import saveAs from 'file-saver';
     
     @Component({
@@ -117,7 +117,7 @@ You can encode CSV files to prevent execution of potentially harmful code within
     // ...
     import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
     import { exportDataGrid } from 'devextreme/excel_exporter';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import saveAs from 'file-saver';
 
     export default {
@@ -151,7 +151,7 @@ You can encode CSV files to prevent execution of potentially harmful code within
     // ...
 
     import DataGrid, { Export } from 'devextreme-react/data-grid';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import saveAs from 'file-saver';
     import { exportDataGrid } from 'devextreme/excel_exporter';
 

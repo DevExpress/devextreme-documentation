@@ -142,11 +142,11 @@ The total row count.
 
 [note]
 
-- If any filter is applied, **totalCount()** returns the number of records after [filtering](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20and%20Searching '/Documentation/Guide/UI_Components/DataGrid/Filtering_and_Searching/').
+- If a filter is applied, **totalCount()** returns the number of records after [filtering](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20and%20Searching '/Documentation/Guide/UI_Components/DataGrid/Filtering_and_Searching/').
 
-- If **scrolling**.[mode](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#mode) is *"infinite"*, this method returns the number of currently loaded rows.
+- If **scrolling**.[mode](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#mode) is *"infinite"*, this method returns the number of loaded rows.
 
-- If paging is disabled in the DataGrid ([paging](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/paging/').[enabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging/enabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/paging/#enabled') is **false**) or in the underlying [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') ([paginate](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/paginate.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate') is **false**), **totalCount()** returns -1. To get the total record count in this case, you can use the following code:
+- If paging is disabled in the DataGrid ([paging](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/paging/').[enabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging/enabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/paging/#enabled') is **false**) or underlying [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') ([paginate](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/paginate.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate') is **false**), **totalCount()** returns -1. To get the total record count in this case, use the following code:
 
     ---
     ##### jQuery

@@ -96,10 +96,11 @@ Clicking the *"Delete"* button invokes the confirmation dialog that allows a use
     
 ---
 
-
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CellEditingAndEditingAPI/"
 }
+
+[note] Users cannot interact with checkbox editors if another cell editor is active in cell mode. Set [repaintChangesOnly](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#repaintChangesOnly) to `true` to enable checkbox interactions while another editor is active.
 
 #####See Also#####
 - [Data Validation](/concepts/05%20UI%20Components/DataGrid/20%20Editing/50%20Data%20Validation.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#Data_Validation')

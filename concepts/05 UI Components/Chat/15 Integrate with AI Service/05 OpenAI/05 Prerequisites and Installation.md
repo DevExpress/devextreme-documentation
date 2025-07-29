@@ -1,4 +1,4 @@
-First, obtain an [API key](https://platform.openai.com/api-keys). Then, install OpenAI SDK:
+First, obtain an [API key](https://platform.openai.com/api-keys). Next, install OpenAI SDK:
 
 ---
 

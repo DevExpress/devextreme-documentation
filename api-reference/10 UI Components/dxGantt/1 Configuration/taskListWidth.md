@@ -5,7 +5,7 @@ default: 300
 ---
 ---
 ##### shortDescription
-Specifies the width of the task list in pixels.
+Specifies the width of task list columns in pixels.
 
 ---
 

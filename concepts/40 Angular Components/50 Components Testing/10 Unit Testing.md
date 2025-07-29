@@ -31,12 +31,16 @@ To get started, create an Angular application and [add DevExtreme](/concepts/40%
     })
     export class AppModule { }
 
-Reference DevExtreme style file in the `karma.conf.js`:
+Reference a DevExtreme style file in `angular.json`:
 
-    <!-- tab: karma.conf.js -->
-    files: [
-        "node_modules/devextreme/dist/css/dx.light.css"
-    ]
+    <!-- tab: angular.json -->
+    "test": {
+        "options": {
+            "styles": [
+                "node_modules/devextreme/dist/css/dx.light.css"
+            ]
+        }
+    }
 
 Add the following script to test the DataGrid configuration and the number of loaded records: 
 

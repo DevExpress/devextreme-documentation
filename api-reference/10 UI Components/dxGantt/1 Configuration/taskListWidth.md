@@ -5,7 +5,7 @@ default: 300
 ---
 ---
 ##### shortDescription
-Specifies the width of the task list in pixels.
+Specifies the width of task list columns in pixels.
 
 ---
 
@@ -13,7 +13,7 @@ Specifies the width of the task list in pixels.
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gantt/Overview/"
 }
 
-![DevExtreme Gantt Chart - Task List](/images/Gantt/task-list.png)
+<img src="/images/Gantt/task-list.png" alt="DevExtreme Gantt Chart - Task List" />
 
 ---
 

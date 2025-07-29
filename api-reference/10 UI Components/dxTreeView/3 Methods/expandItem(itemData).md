@@ -13,4 +13,3 @@ A Promise that is resolved after the item is expanded and rejected if the item i
 The item's data object.
 
 ---
-<!-- import * from 'api-reference\10 UI Components\dxTreeView\3 Methods\collapseItem(itemData).md' -->

@@ -15,4 +15,3 @@ A data object.
 <!-- %fullDescription% -->
 
 <!-- import { fullDescription } from 'api-reference\10 UI Components\dxTreeView\3 Methods\unselectAll().md' -->
-<!-- import * from 'api-reference\10 UI Components\dxTreeView\3 Methods\collapseItem(itemData).md' -->

@@ -13,4 +13,3 @@ A Promise that is resolved after the content is scrolled to the target item and 
 The item's data object.
 
 ---
-<!-- import * from 'api-reference\10 UI Components\dxTreeView\3 Methods\collapseItem(itemData).md' -->

@@ -13,5 +13,7 @@ When a user clicks a row's *"Delete"* button, the UI component only marks the ro
     href: "https://github.com/DevExpress-Examples/devextreme-datagrid-batch-editing-select-multiple-cells"
 }
 
+[note] Users cannot interact with checkbox editors if another cell editor is active in batch mode. Set [repaintChangesOnly](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#repaintChangesOnly) to `true` to enable checkbox interactions while another editor is active.
+
 #####See Also#####
 - [Data Validation](/concepts/05%20UI%20Components/DataGrid/20%20Editing/50%20Data%20Validation.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#Data_Validation')

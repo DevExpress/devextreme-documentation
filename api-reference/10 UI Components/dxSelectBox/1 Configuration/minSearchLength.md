@@ -1,3 +1,5 @@
+[note] When the SelectBox input field contains text (an item is selected), the component ignores **minSearchLength** and starts searching after users enter one character.
+
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/SearchAndEditing/"
 }

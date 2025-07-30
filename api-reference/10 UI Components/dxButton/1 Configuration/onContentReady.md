@@ -40,7 +40,7 @@ The UI component's instance.
 
     <!-- tab: app.component.ts -->
     export class AppComponent {
-        handleContentReady(e) {
+        handleContentReady(e: DxButtonTypes.ContentReadyEvent) {
             e.component.focus();
         }
     }

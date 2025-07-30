@@ -363,7 +363,7 @@ There is a delay between the moment a user finishes typing and the moment the se
 
 ---
 
-The SelectBox UI component starts searching after a user has typed at least one character by default. Use the [minSearchLength](/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#minSearchLength) property to increase the number of characters that triggers the search. 
+The SelectBox UI component starts searching after a user types at least one character. Use the [minSearchLength](/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#minSearchLength) property to increase the number of characters that trigger the search. 
 
 ---
 ##### jQuery
@@ -480,7 +480,7 @@ The SelectBox UI component starts searching after a user has typed at least one 
 
 ---
 
-[note] When the SelectBox input field contains text, the component ignores **minSearchLength** and starts searching after users enter one character.
+[note] When the SelectBox input field contains text (an item is selected), the component ignores **minSearchLength** and starts searching after users enter one character.
 
 #####See Also#####
 - [SelectBox - Create a User-Defined Item](/concepts/05%20UI%20Components/SelectBox/15%20Create%20a%20User-Defined%20Item.md '/Documentation/Guide/UI_Components/SelectBox/Create_a_User-Defined_Item/')

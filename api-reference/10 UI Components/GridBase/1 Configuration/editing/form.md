@@ -304,6 +304,18 @@ If you configure a form with [tabbed items](/Documentation/ApiReference/UI_Compo
             </dxo-editing>
         </dx-data-grid>
 
+        <!-- tab: app.module.ts -->
+        import { DxDataGridModule, DxFormModule } from 'devextreme-angular';
+
+        @NgModule({
+            imports: [
+                BrowserModule,
+                DxFormModule,
+            ],
+            // ...
+        })
+
+
 ##### Vue
 
 - The nested component that configures the **form** property does not support event bindings and two-way property bindings.
@@ -327,8 +339,8 @@ If you configure a form with [tabbed items](/Documentation/ApiReference/UI_Compo
         </template>
 
         <script setup lang="ts">
-        import { DxDataGrid, DxEditing, DxForm } from 'devextreme-react/data-grid';
-        import { DxSimpleItem, DxTabbedItem, DxTabPanelOptions, DxTab } from 'devextreme-react/form';
+        import { DxDataGrid, DxEditing, DxForm } from 'devextreme-vue/data-grid';
+        import { DxSimpleItem, DxTabbedItem, DxTabPanelOptions, DxTab } from 'devextreme-vue/form';
 
         </script>
 

@@ -9,6 +9,8 @@ This article describes configuration properties of a group form item.
 ---
 A group form item is a section consisting of a caption and child form items. You can customize the layout properties for each group separately.
 
+[note] If Form contains group items, all form item editors may be re-initialized when the component is resized.
+
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields/"
 }

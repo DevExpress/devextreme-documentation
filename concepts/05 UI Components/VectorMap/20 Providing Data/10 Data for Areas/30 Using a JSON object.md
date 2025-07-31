@@ -11,7 +11,7 @@ If your data source is a JSON object, assign its <a href="http://en.wikipedia.or
         }]
     }
 
-You can specify the JSON data object in the [GeoJSON](http://en.wikipedia.org/wiki/GeoJSON) [FeatureCollection](https://datatracker.ietf.org/doc/html/rfc7946#section-3.3) format. VectorMap supports the following GeoJSON geometries:
+You can specify the JSON data object in [GeoJSON](http://en.wikipedia.org/wiki/GeoJSON) [FeatureCollection](https://datatracker.ietf.org/doc/html/rfc7946#section-3.3) format. VectorMap supports the following GeoJSON geometries:
 
 - [Polygon](https://datatracker.ietf.org/doc/html/rfc7946#appendix-A.3)
 - [MultiPolygon](https://datatracker.ietf.org/doc/html/rfc7946#appendix-A.6)

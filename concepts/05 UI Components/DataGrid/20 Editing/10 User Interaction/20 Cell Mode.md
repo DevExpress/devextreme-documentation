@@ -6,7 +6,7 @@ If you [validate data](/concepts/05%20UI%20Components/DataGrid/20%20Editing/50%2
 
 ![DevExtreme HTML5 JavaScript jQuery Angular Knockout UI component DataGrid Editing Cell Mode Validation](/images/DataGrid/editing/cell_mode_validation.png)
 
-The "Cancel Changes" button also appears after users modify [lookup](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/) column values.
+The "Cancel Changes" button also appears after users modify [lookup](/api-reference/_hidden/GridBaseColumn/lookup '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/lookup/') column values.
 
 Clicking the "Delete" button invokes the confirmation dialog that allows a user to cancel row deletion. Use the [confirmDelete](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/editing/confirmDelete.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#confirmDelete') property to hide this dialog.
 
@@ -102,7 +102,7 @@ Clicking the "Delete" button invokes the confirmation dialog that allows a user 
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CellEditingAndEditingAPI/"
 }
 
-[note] Users cannot interact with checkbox editors if another cell editor is active in cell mode. Set [repaintChangesOnly](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#repaintChangesOnly) to `true` to enable checkbox interactions while another editor is active.
+[note] Users cannot interact with checkbox editors if another cell editor is active in cell mode. Set [repaintChangesOnly](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/repaintChangesOnly.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#repaintChangesOnly') to `true` to enable checkbox interactions while another editor is active.
 
 #####See Also#####
 - [Data Validation](/concepts/05%20UI%20Components/DataGrid/20%20Editing/50%20Data%20Validation.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#Data_Validation')

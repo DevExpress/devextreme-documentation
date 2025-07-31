@@ -19,4 +19,7 @@ The UI component's instance.
 #include common-ref-eventparam
 
 ---
-<!-- Description goes here -->
+
+#include uiwidgets-ref-functioncontext with {
+    value: "TextBox configuration"
+}

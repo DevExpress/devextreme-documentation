@@ -286,7 +286,7 @@ If you configure a form with [tabbed items](/Documentation/ApiReference/UI_Compo
 
 ##### Angular
 
-- The nested component that configures the **form** property does not support event bindings and two-way property bindings.
+- The nested component that configures the **form** property does not support event and two-way property bindings.
 
 - If you configure a form with [tabbed items](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/), the component does not validate editors in hidden tabs. To validate hidden tab editors, disable **form**.**TabbedItem**.[tabPanelOptions](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/#tabPanelOptions).[deferRendering](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#deferRendering):
 

@@ -255,11 +255,124 @@ Do not specify the following properties in the **form** object:
 
 Also, the [colCount](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/colCount.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#colCount') property defaults to 2, but can be redefined. Refer to the following help topic for more information about form customization: [Customize Edit Form](/concepts/05%20UI%20Components/DataGrid/20%20Editing/43%20Customize%20Edit%20Form '/Documentation/Guide/UI_Components/DataGrid/Editing/#Customize_Edit_Form').
 
-#include widgets-config-object-option-note with {
-    optionName: "form"
-}
-
 If you need to customize an individual form item, use the [formItem](/api-reference/_hidden/GridBaseColumn/formItem.md '{basewidgetpath}/Configuration/columns/#formItem') object.
+
+[note]
+
+---
+
+##### jQuery
+
+If you configure a form with [tabbed items](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/), the component does not validate editors in hidden tabs. To validate hidden tab editors, disable **form**.**TabbedItem**.[tabPanelOptions](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/#tabPanelOptions).[deferRendering](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#deferRendering):
+
+    <!-- tab: index.js -->
+    $(function() {
+        $('#gridContainer').dxDataGrid({
+            editing: {
+                form: {
+                    items: [{
+                        itemType: 'tabbed',
+                        tabPanelOptions: {
+                            deferRendering: false,
+                        },
+                        tabs: [{
+                            items: [ ... ],
+                        }]
+                    }]
+                }
+            }
+        })
+    })
+
+##### Angular
+
+- The nested component that configures the **form** property does not support event and two-way property bindings.
+
+- If you configure a form with [tabbed items](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/), the component does not validate editors in hidden tabs. To validate hidden tab editors, disable **form**.**TabbedItem**.[tabPanelOptions](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/#tabPanelOptions).[deferRendering](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#deferRendering):
+
+        <!-- tab: app.component.html -->
+        <dx-data-grid ... >
+            <dxo-editing ... >
+                <dxo-form>
+                    <dxi-item itemType="tabbed">
+                        <dxo-tab-panel-options [deferRendering]="false" />
+                        <dxi-tab ... >
+                            <dxi-item ... />
+                        </dxi-tab>
+                    </dxi-item>
+                </dxo-form>
+            </dxo-editing>
+        </dx-data-grid>
+
+        <!-- tab: app.module.ts -->
+        import { DxDataGridModule, DxFormModule } from 'devextreme-angular';
+
+        @NgModule({
+            imports: [
+                BrowserModule,
+                DxFormModule,
+            ],
+            // ...
+        })
+
+
+##### Vue
+
+- The nested component that configures the **form** property does not support event and two-way property bindings.
+
+- If you configure a form with [tabbed items](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/), the component does not validate editors in hidden tabs. To validate hidden tab editors, disable **form**.**TabbedItem**.[tabPanelOptions](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/#tabPanelOptions).[deferRendering](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#deferRendering):
+
+        <!-- tab: App.vue -->
+        <template>
+            <DxDataGrid ... >
+                <DxEditing ... >
+                    <DxForm>
+                        <DxTabbedItem>
+                            <DxTabPanelOptions :deferRendering="false" />
+                            <DxTab ... >
+                                <DxSimpleItem ... />
+                            </DxTab>
+                        </DxTabbedItem>
+                    </DxForm>
+                </DxEditing>
+            </DxDataGrid>
+        </template>
+
+        <script setup lang="ts">
+        import { DxDataGrid, DxEditing, DxForm } from 'devextreme-vue/data-grid';
+        import { DxSimpleItem, DxTabbedItem, DxTabPanelOptions, DxTab } from 'devextreme-vue/form';
+
+        </script>
+
+
+##### React
+
+If you configure a form with [tabbed items](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/), the component does not validate editors in hidden tabs. To validate hidden tab editors, disable **form**.**TabbedItem**.[tabPanelOptions](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/#tabPanelOptions).[deferRendering](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#deferRendering):
+
+    <!-- tab: App.tsx -->
+    import { DataGrid, Editing, Form } from 'devextreme-react/data-grid';
+    import { SimpleItem, TabbedItem, TabPanelOptions, Tab } from 'devextreme-react/form';
+
+    function App() {
+        return (
+            <DataGrid ... >
+                <Editing ... >
+                    <Form>
+                        <TabbedItem>
+                            <TabPanelOptions deferRendering={false} />
+                            <Tab ... >
+                                <SimpleItem ... />
+                            </Tab>
+                        </TabbedItem>
+                    </Form>
+                </Editing>
+            </DataGrid>
+        )
+    }
+
+---
+
+[/note]
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/PopupEditing/"

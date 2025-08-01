@@ -14371,6 +14371,9 @@
     "dxLoadIndicatorOptions.activeStateEnabled": {
       "vue": "active-state-enabled"
     },
+    "dxLoadIndicatorOptions.animationType": {
+      "vue": "animation-type"
+    },
     "dxLoadIndicatorOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"
     },
@@ -20901,6 +20904,9 @@
     },
     "enums.ListMenuMode": {
       "vue": "list-menu-mode"
+    },
+    "enums.LoadingAnimationType": {
+      "vue": "loading-animation-type"
     },
     "enums.LocateInMenuMode": {
       "vue": "locate-in-menu-mode"

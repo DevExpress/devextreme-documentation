@@ -18,7 +18,7 @@ The following instructions show how to enable and configure client-side export:
 
     Install the following libraries for the export:
 
-    - Excel: The <a href="https://github.com/exceljs/exceljs" target="_blank">ExcelJS</a> v4.4.0+ and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+ libraries. If you apply [CSP rules](/concepts/Common/Security%20Considerations/40%20Content%20Security%20Policy/00%20Content%20Security%20Policy.md '/Documentation/Guide/Common/Security_Considerations/#Content_Security_Policy'), refer to the [ExcelJS CSP Treats](/concepts/Common/Security%20Considerations/30%20Export%20Vulnerabilities/20%20ExcelJS%20CSP%20Threats.md '/Documentation/Guide/Common/Security_Considerations/#Export_Vulnerabilities/ExcelJS_CSP_Threats') section for more information about potential vulnerabilities.
+    - Excel: The <a href="https://github.com/DevExpress/devextreme-exceljs-fork" target="_blank">DevExtreme ExcelJS</a> v4.4.1+ and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+ libraries. If you apply [CSP rules](/concepts/Common/Security%20Considerations/40%20Content%20Security%20Policy/00%20Content%20Security%20Policy.md '/Documentation/Guide/Common/Security_Considerations/#Content_Security_Policy'), refer to the [ExcelJS CSP Treats](/concepts/Common/Security%20Considerations/30%20Export%20Vulnerabilities/20%20ExcelJS%20CSP%20Threats.md '/Documentation/Guide/Common/Security_Considerations/#Export_Vulnerabilities/ExcelJS_CSP_Threats') section for more information about potential vulnerabilities.
 
     - PDF: The <a href="https://github.com/parallax/jsPDF" target="_blank">jsPDF</a> v2.3.1+ library.  
 
@@ -28,7 +28,7 @@ The following instructions show how to enable and configure client-side export:
         <!-- Export to Excel -->
         <head>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/devextreme-exceljs-fork@4.4.1/dist/dx-exceljs-fork.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
             <!-- Reference the DevExtreme sources here -->
         </head>
@@ -46,7 +46,7 @@ The following instructions show how to enable and configure client-side export:
         npm install jspdf
 
         <!-- Export to Excel -->
-        npm install --save exceljs file-saver
+        npm install --save devextreme-exceljs-fork file-saver
         npm i --save-dev @types/file-saver
 
         <!-- tab: tsconfig.app.json -->
@@ -66,7 +66,7 @@ The following instructions show how to enable and configure client-side export:
         npm install jspdf
 
         <!-- Export to Excel -->
-        npm install --save exceljs file-saver
+        npm install --save devextreme-exceljs-fork file-saver
         
     ##### React
 
@@ -75,7 +75,7 @@ The following instructions show how to enable and configure client-side export:
         npm install jspdf
 
         <!-- Export to Excel -->
-        npm install --save exceljs file-saver
+        npm install --save devextreme-exceljs-fork file-saver
         
     --- 
 
@@ -241,7 +241,7 @@ The following instructions show how to enable and configure client-side export:
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
         import { exportDataGrid } from 'devextreme/excel_exporter';
-        import { Workbook } from 'exceljs';
+        import { Workbook } from 'devextreme-exceljs-fork';
         import { saveAs } from 'file-saver';
         import { ExportingEvent } from 'devextreme/ui/data_grid';
         
@@ -307,7 +307,7 @@ The following instructions show how to enable and configure client-side export:
 
         import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
         import { exportDataGrid } from 'devextreme/excel_exporter';
-        import { Workbook } from 'exceljs';
+        import { Workbook } from 'devextreme-exceljs-fork';
         import saveAs from 'file-saver';
 
         export default {
@@ -343,7 +343,7 @@ The following instructions show how to enable and configure client-side export:
         import React from 'react';
         import 'devextreme/dist/css/dx.light.css';
 
-        import { Workbook } from 'exceljs';
+        import { Workbook } from 'devextreme-exceljs-fork';
         import saveAs from 'file-saver';
         import DataGrid, { Export } from 'devextreme-react/data-grid';
         import { exportDataGrid } from 'devextreme/excel_exporter';

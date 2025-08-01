@@ -16,7 +16,7 @@ type: function(options)
 A PivotGrid cell.
 
 ---
-In the following code, the **customizeCell** function customizes <a href="https://github.com/exceljs/exceljs#fonts" target="_blank">font</a> and <a href="https://github.com/exceljs/exceljs#alignment" target="_blank">alignment</a> in cells that display regular summaries (whose [rowType](/api-reference/10%20UI%20Components/dxPivotGrid/6%20Pivot%20Grid%20Cell/rowType.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Pivot_Grid_Cell/#rowType') is *"D"*):
+In the following code, the **customizeCell** function customizes <a href="https://github.com/DevExpress/devextreme-exceljs-fork#fonts" target="_blank">font</a> and <a href="https://github.com/DevExpress/devextreme-exceljs-fork#alignment" target="_blank">alignment</a> in cells that display regular summaries (whose [rowType](/api-reference/10%20UI%20Components/dxPivotGrid/6%20Pivot%20Grid%20Cell/rowType.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Pivot_Grid_Cell/#rowType') is *"D"*):
 
 ---
 ##### jQuery
@@ -57,7 +57,7 @@ In the following code, the **customizeCell** function customizes <a href="https:
     <head>
         <!-- ... -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/devextreme-exceljs-fork@4.4.1/dist/dx-exceljs-fork.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
         <!-- reference the DevExtreme sources here -->
     </head>
@@ -73,7 +73,7 @@ In the following code, the **customizeCell** function customizes <a href="https:
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { exportPivotGrid } from 'devextreme/excel_exporter';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import saveAs from 'file-saver';
     
     @Component({
@@ -144,7 +144,7 @@ In the following code, the **customizeCell** function customizes <a href="https:
 
     import { DxPivotGrid, DxExport } from 'devextreme-vue/pivot-grid';
     import { exportPivotGrid } from 'devextreme/excel_exporter';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import saveAs from 'file-saver';
 
     export default {
@@ -186,7 +186,7 @@ In the following code, the **customizeCell** function customizes <a href="https:
     import 'devextreme/dist/css/dx.light.css';
 
     import PivotGrid, { Export } from 'devextreme-react/pivot-grid';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import saveAs from 'file-saver';
     import { exportPivotGrid } from 'devextreme/excel_exporter';
 

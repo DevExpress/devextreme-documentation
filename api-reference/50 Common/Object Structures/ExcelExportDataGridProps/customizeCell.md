@@ -10,22 +10,22 @@ Customizes an Excel cell after creation.
 An object passed to this callback function.
 
 ##### field(options.excelCell): Object
-An ExcelJS object that describes an Excel cell. Use the object's properties to customize the cell. For information on these properties, refer to the following ExcelJS documentation sections:
+An DevExtreme ExcelJS object that describes an Excel cell. Use the object's properties to customize the cell. For information on these properties, refer to the following DevExtreme ExcelJS documentation sections:
 
-- <a href="https://github.com/exceljs/exceljs#value-types" target="_blank">value</a>
-- <a href="https://github.com/exceljs/exceljs#alignment" target="_blank">alignment</a>
-- <a href="https://github.com/exceljs/exceljs#borders" target="_blank">border</a>
-- <a href="https://github.com/exceljs/exceljs#fills" target="_blank">fill</a>
-- <a href="https://github.com/exceljs/exceljs#rich-text" target="_blank">richText</a>
-- <a href="https://github.com/exceljs/exceljs#fonts" target="_blank">font</a>
-- <a href="https://github.com/exceljs/exceljs#number-formats" target="_blank">numFmt</a>
+- <a href="https://github.com/DevExpress/devextreme-exceljs-fork#value-types" target="_blank">value</a>
+- <a href="https://github.com/DevExpress/devextreme-exceljs-fork#alignment" target="_blank">alignment</a>
+- <a href="https://github.com/DevExpress/devextreme-exceljs-fork#borders" target="_blank">border</a>
+- <a href="https://github.com/DevExpress/devextreme-exceljs-fork#fills" target="_blank">fill</a>
+- <a href="https://github.com/DevExpress/devextreme-exceljs-fork#rich-text" target="_blank">richText</a>
+- <a href="https://github.com/DevExpress/devextreme-exceljs-fork#fonts" target="_blank">font</a>
+- <a href="https://github.com/DevExpress/devextreme-exceljs-fork#number-formats" target="_blank">numFmt</a>
 
 ##### field(options.gridCell): ExcelDataGridCell
 A DataGrid cell.
 
 ---
 
-The following code illustrates how to customize <a href="https://github.com/exceljs/exceljs#fonts" target="_blank">font</a> and <a href="https://github.com/exceljs/exceljs#alignment" target="_blank">alignment</a> in cells whose [rowType](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row/rowType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/#rowType') equals *"data"*:
+The following code illustrates how to customize <a href="https://github.com/DevExpress/devextreme-exceljs-fork#fonts" target="_blank">font</a> and <a href="https://github.com/DevExpress/devextreme-exceljs-fork#alignment" target="_blank">alignment</a> in cells whose [rowType](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row/rowType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/#rowType') equals *"data"*:
 
 ---
 ##### jQuery
@@ -66,7 +66,7 @@ The following code illustrates how to customize <a href="https://github.com/exce
     <head>
         <!-- ... -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/devextreme-exceljs-fork@4.4.1/dist/dx-exceljs-fork.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
         <!-- reference the DevExtreme sources here -->
     </head>
@@ -82,7 +82,7 @@ The following code illustrates how to customize <a href="https://github.com/exce
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
     import { exportDataGrid } from 'devextreme/excel_exporter';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import saveAs from 'file-saver';
     
     @Component({
@@ -153,7 +153,7 @@ The following code illustrates how to customize <a href="https://github.com/exce
 
     import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
     import { exportDataGrid } from 'devextreme/excel_exporter';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import saveAs from 'file-saver';
 
     export default {
@@ -195,7 +195,7 @@ The following code illustrates how to customize <a href="https://github.com/exce
     import 'devextreme/dist/css/dx.light.css';
 
     import DataGrid, { Export } from 'devextreme-react/data-grid';
-    import { Workbook } from 'exceljs';
+    import { Workbook } from 'devextreme-exceljs-fork';
     import saveAs from 'file-saver';
     import { exportDataGrid } from 'devextreme/excel_exporter';
 

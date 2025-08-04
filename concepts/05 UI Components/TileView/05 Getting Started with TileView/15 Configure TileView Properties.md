@@ -86,6 +86,6 @@ Specifies component height.
 You can also configure the following properties to customize individual tiles:
 
 - **items[]**.[widthRatio](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#widthRatio)/**items[]**.[heightRatio](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#heightRatio)    
-Specify a multipler for an item's width/height. Implement these properties to create tiles of different sizes.
+Specify a multiplier for an item's width/height. Implement these properties to create tiles of different sizes.
 - **items[]**.[disabled](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#disabled)    
 Configures whether an item responds to user interaction.

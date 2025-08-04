@@ -18,7 +18,7 @@ The component updates this property automatically as it validates values. You ca
     <!-- tab: index.js -->
     $('#{widget-name}').dx{WidgetName}({
         isValid: false,
-        validationErrors: [{message: "Custom validation error"}],
+        validationErrors: [{ message: "Custom validation error" }],
     })
 
 ##### Angular
@@ -26,8 +26,17 @@ The component updates this property automatically as it validates values. You ca
     <!-- tab: app.component.html -->
     <dx-{widget-name}
         [isValid]="false"
-        [validationErrors]="[{message: 'Custom validation error'}]"
+        [validationErrors]="validationErrors"
     ></dx-{widget-name}>
+
+    <!-- tab: app.component.ts -->
+    import { Dx{WidgetName}Component } from 'devextreme-angular/ui/{widget-name}'
+
+    export class AppComponent {
+        validationErrors = [
+            { message: 'Custom validation error' }
+        ];
+    }
 
 ##### Vue
 
@@ -35,12 +44,15 @@ The component updates this property automatically as it validates values. You ca
     <script setup lang="ts">
     import { Dx{WidgetName} } from 'devextreme-vue/{widget-name}';
 
+    const validationErrors = [
+        { message: 'Custom validation error' }
+    ];
     </script>
 
     <template>
         <Dx{WidgetName} 
             :isValid="false"
-            :validationErrors="[{message: 'Custom validation error'}]"
+            :validation-errors="validationErrors"
         />
     </template>
 
@@ -49,11 +61,15 @@ The component updates this property automatically as it validates values. You ca
     <!-- tab: App.tsx -->
     import { {WidgetName} } from 'devextreme-react/{widget-name}';
 
+    const validationErrors = [
+        { message: 'Custom validation error' }
+    ];
+
     function App(): JSX.Element {
         return (
             <{WidgetName}
                 isValid={false}
-                validationErrors={[{message: 'Custom validation error'}]}
+                validationErrors={validationErrors}
             />
         )
     }

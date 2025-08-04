@@ -30,7 +30,7 @@ HTML Editor is designed to create rich text and export it in HTML. You can also 
         href: "https://github.com/DevExpress-Examples/devextreme-html-editor-prevent-inserting-images"
     }
 
-- The component wraps each "Normal text" block in a `<p>` tag (individual lines or multi-line blocks if [allowSoftLineBreak](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#allowSoftLineBreak) is enabled). These `<p>` elements cannot be removed. However, you can replace the `<p>` tags with another tag (for instance, a `<div>`). The following code snippet demonstrates how:
+- The component wraps each "Normal text" block in a `<p>` tag (individual lines or multi-line blocks if [allowSoftLineBreak](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/allowSoftLineBreak.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#allowSoftLineBreak') is enabled). These `<p>` elements cannot be removed. However, you can replace the `<p>` tags with another tag (for instance, a `<div>`). The following code snippet demonstrates how:
 
     ---
 

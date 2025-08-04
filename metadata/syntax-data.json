@@ -18656,6 +18656,9 @@
     "dxTabPanelOptions.itemTitleTemplate": {
       "vue": "item-title-template"
     },
+    "dxTabPanelOptions.keyExpr": {
+      "vue": "key-expr"
+    },
     "dxTabPanelOptions.onContentReady": {
       "vue": "@content-ready"
     },

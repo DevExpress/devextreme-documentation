@@ -1,0 +1,18 @@
+.demo-container {
+    margin: 50px;
+    width: 90vw;
+}
+
+.dx-tile-content .image {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  padding: 5px;
+}
+
+.price-text {
+  margin: 0;
+}

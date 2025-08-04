@@ -4,7 +4,7 @@ type: String | function()
 ---
 ---
 ##### shortDescription
-Specifies the key property for accessing data items. Each key value must be unique.
+Specifies the key property used to access data items. Each key value must be unique.
 
 ---
 #####See Also#####

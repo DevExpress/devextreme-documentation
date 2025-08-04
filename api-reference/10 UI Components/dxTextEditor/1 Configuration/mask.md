@@ -5,10 +5,10 @@ default: ''
 ---
 ---
 ##### shortDescription
-The editor mask that specifies the custom format of the entered string.
+The editor mask that specifies a custom input format.
 
 ---
-A mask can contain the following elements.
+The component supports the following masking elements:
 
 <table class="dx-table">
     <tr>
@@ -51,8 +51,12 @@ A mask can contain the following elements.
 
 [note]
 
-- To escape the masking elements, use the double backslash character (\\\). For example, *"000.\\\0\\\0"*.
+- To escape a masking element, use two backslash characters (`\\`). For instance, `\\0` allows users to input only `0`.
 
-- The `drop` event is not supported for masked input.
+- The `drop` event is not supported for masked inputs.
 
 [/note]
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TextBox/Overview/"
+}

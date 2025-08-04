@@ -1,4 +1,4 @@
-Specify the [onItemClick](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#onItemClick) function to handle tile click events. This example implements the [notify()](/Documentation/ApiReference/Common/Utils/ui/#notifymessage_stack) utility method to display clicked item prices:
+Specify the [onItemClick](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#onItemClick) function to handle the TileView [ItemClickEvent](/Documentation/ApiReference/UI_Components/dxTileView/Types/ItemClickEvent/). This example implements the [notify()](/Documentation/ApiReference/Common/Utils/ui/#notifymessage_stack) utility method to display clicked item prices:
 
 ---
 

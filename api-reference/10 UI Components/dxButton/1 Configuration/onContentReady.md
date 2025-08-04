@@ -39,6 +39,9 @@ The UI component's instance.
     ></dx-button>
 
     <!-- tab: app.component.ts -->
+    import { DxButtonComponent, type DxButtonTypes } from 'devextreme-angular/ui/button'
+    // ...
+
     export class AppComponent {
         handleContentReady(e: DxButtonTypes.ContentReadyEvent) {
             e.component.focus();

@@ -51,7 +51,7 @@ The component supports the following masking elements:
 
 [note]
 
-- To escape a masking element, use two backslash characters (`\\`). For instance `\\0` will allow users to input only `0`.
+- To escape a masking element, use two backslash characters (`\\`). For instance, `\\0` allows users to input only `0`.
 
 - The `drop` event is not supported for masked inputs.
 

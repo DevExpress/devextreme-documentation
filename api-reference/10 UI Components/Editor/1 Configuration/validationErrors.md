@@ -5,6 +5,57 @@ default: null
 ---
 ---
 ##### shortDescription
-An array of the [validation rules](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/') that failed.
+An array of validation errors.
+
+---
+
+The component updates this property automatically as it validates values. You can also update **validationErrors** manually to display custom errors and implement custom validation logic. The following code snippet demonstrates how to define items in this array:
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $('#{widget-name}').dx{WidgetName}({
+        isValid: false,
+        validationErrors: [{message: "Custom validation error"}],
+    })
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-{widget-name}
+        [isValid]="false"
+        [validationErrors]="[{message: 'Custom validation error'}]"
+    ></dx-{widget-name}>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <script setup lang="ts">
+    import { Dx{WidgetName} } from 'devextreme-vue/{widget-name}';
+
+    </script>
+
+    <template>
+        <Dx{WidgetName} 
+            :isValid="false"
+            :validationErrors="[{message: 'Custom validation error'}]"
+        />
+    </template>
+
+##### React
+
+    <!-- tab: App.tsx -->
+    import { {WidgetName} } from 'devextreme-react/{widget-name}';
+
+    function App(): JSX.Element {
+        return (
+            <{WidgetName}
+                isValid={false}
+                validationErrors={[{message: 'Custom validation error'}]}
+            />
+        )
+    }
 
 ---

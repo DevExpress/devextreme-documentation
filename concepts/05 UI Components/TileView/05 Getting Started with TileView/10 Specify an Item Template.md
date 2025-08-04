@@ -62,6 +62,13 @@ The default behavior of TileView is to display tile text defined in the **items[
         </div>
     </dx-tile-view>
 
+    <!-- tab: app.component.ts -->
+    import { formatNumber } from 'devextreme/localization';
+
+    export class AppComponent {
+        formatNumber = formatNumber;
+    }
+
     <!-- tab: app.component.scss -->
     .dx-tile-content .image {
         height: 100%;
@@ -80,6 +87,10 @@ The default behavior of TileView is to display tile text defined in the **items[
 ##### Vue
 
     <!-- tab: App.vue -->
+    <script setup lang="ts">
+    import { formatNumber } from 'devextreme/localization';
+
+    </script>
     <template>
         <DxTileView
             :data-source="bikes"
@@ -122,6 +133,8 @@ The default behavior of TileView is to display tile text defined in the **items[
 ##### React
 
     <!-- tab: App.tsx -->
+    import { formatNumber } from 'devextreme/localization';
+
     function TileRender(itemData: { price: number; disabled: boolean | undefined; imageSrc: string }): JSX.Element {
         if (!itemData.disabled) {
             return (
@@ -163,4 +176,3 @@ The default behavior of TileView is to display tile text defined in the **items[
     }
 
 ---
-

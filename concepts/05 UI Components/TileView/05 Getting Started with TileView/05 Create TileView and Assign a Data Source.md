@@ -20,7 +20,7 @@
             <script type="text/javascript" src="data.js"></script>
         </head>
         <body>
-            <div id="tile-view"></div>
+            <div id="tileview"></div>
         </body>
     </html>
 
@@ -44,11 +44,6 @@
     import { Component } from '@angular/core';
     import { bikes } from './data';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
     export class AppComponent {
         bikes = bikes;
     }

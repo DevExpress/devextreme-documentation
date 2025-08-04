@@ -4,9 +4,9 @@ TileView is a UI component that displays items in tiles. The component is design
 
 This tutorial guides you through the following steps:
 
-- Add a TileView to a page.
+- Add TileView to a page.
 - Specify an item template.
-- Configure core component settings.
+- Configure component properties.
 - Handle item click events.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/25_1/GettingStartedWith/TileView/index.html, /Content/Applications/25_1/GettingStartedWith/TileView/index.js, /Content/Applications/25_1/GettingStartedWith/TileView/index.css"></div>

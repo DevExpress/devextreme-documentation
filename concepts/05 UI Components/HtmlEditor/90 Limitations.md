@@ -29,3 +29,47 @@ HTML Editor is designed to create rich text and export it in HTML. You can also 
     #include btn-open-github with {
         href: "https://github.com/DevExpress-Examples/devextreme-html-editor-prevent-inserting-images"
     }
+
+- The component wraps each "Normal text" block in a `<p>` tag (individual lines or multi-line blocks if [allowSoftLineBreak](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#allowSoftLineBreak) is enabled). These `<p>` elements cannot be removed. However, you can replace the `<p>` tags with another tag (for instance, a `<div>`). The following code snippet demonstrates how:
+
+    ---
+
+    ##### jQuery
+
+        <!-- tab: index.js -->
+        let block = DevExpress.Quill.import('blots/block');
+        block.tagName = 'DIV';
+        DevExpress.Quill.register(block, true);
+        
+        $('#htmleditor').dxHtmlEditor({ ... })
+
+    ##### Angular
+
+        <!-- tab: app.component.ts -->
+        import Quill from 'devextreme-quill'
+
+        let block = Quill.import('blots/block');
+        block.tagName = 'DIV';
+        Quill.register(block, true);
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <script setup lang="ts">
+        import Quill from 'devextreme-quill'
+
+        let block = Quill.import('blots/block');
+        block.tagName = 'DIV';
+        Quill.register(block, true);
+        </script>
+
+    ##### React
+
+        <!-- tab: App.tsx -->
+        import Quill from 'devextreme-quill'
+
+        let block = Quill.import('blots/block');
+        block.tagName = 'DIV';
+        Quill.register(block, true);
+
+    ---

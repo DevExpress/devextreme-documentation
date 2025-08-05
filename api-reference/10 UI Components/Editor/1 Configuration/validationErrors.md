@@ -51,7 +51,7 @@ An array of validation errors.
 
     <template>
         <Dx{WidgetName} 
-            :isValid="false"
+            :is-valid="false"
             :validation-errors="validationErrors"
         />
     </template>

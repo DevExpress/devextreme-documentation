@@ -10,7 +10,7 @@ Provides the Form's data. Gets updated every time form fields change.
 
 ---
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/FormsAndMultiPurposeOverview/"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/FormsAndMultiPurpose/Overview/"
 }
 
 #####See Also#####

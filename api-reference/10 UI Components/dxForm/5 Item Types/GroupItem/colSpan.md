@@ -9,7 +9,7 @@ Specifies the number of columns spanned by the item.
 
 ---
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/FormsAndMultiPurposeOverview/"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/FormsAndMultiPurpose/Overview/"
 }
 
 #####See Also#####

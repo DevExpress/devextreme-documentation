@@ -9,7 +9,7 @@ Holds an array of form items.
 
 ---
 #include common-demobutton-named with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/FormsAndMultiPurposeOverview/",
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/FormsAndMultiPurpose/Overview/",
     name: "Overview"
 }
 #include common-demobutton-named with {

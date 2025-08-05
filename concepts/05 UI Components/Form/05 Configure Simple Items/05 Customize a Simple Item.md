@@ -193,7 +193,7 @@ If none of the available editors suit your requirements, you can define a custom
 ---
 
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/FormsAndMultiPurposeOverview/"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/FormsAndMultiPurpose/Overview/"
 }
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-form-custom-items"

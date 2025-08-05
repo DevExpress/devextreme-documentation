@@ -9,7 +9,7 @@ An array of validation errors.
 
 ---
 
-The component updates this property automatically as it validates values. You can also update **validationErrors** manually to display custom errors and implement custom validation logic. The following code snippet demonstrates how to define items in this array:
+{WidgetName} updates this property automatically as it validates values. You can also update **validationErrors** manually to display custom errors and implement custom validation logic. The following code snippet demonstrates how to define items in this array:
 
 ---
 

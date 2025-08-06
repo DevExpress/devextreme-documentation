@@ -1,6 +1,8 @@
-To get modified but not yet saved cell values in edit mode, call [cellValue(rowIndex, dataField)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/cellValue(rowIndex_dataField).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#cellValuerowIndex_dataField').
+To get current cell values (saved or unsaved), call [cellValue(rowIndex, dataField)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/cellValue(rowIndex_dataField).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#cellValuerowIndex_dataField').
 
-The method takes a row index parameter. You can implement [getRowIndexByKey(key)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/getRowIndexByKey(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getRowIndexByKeykey') to get row indexes with row keys. The following code snippet demonstrates how to implement **getRowIndexByKey** and **cellValue** to get edited cell values:
+The method takes a row index parameter. To get row indexes, you can implement [getRowIndexByKey(key)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/getRowIndexByKey(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getRowIndexByKeykey'). To get the key value of the row being edited, call [option(optionName)](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#optionoptionName) with the `'editing.editRowKey'` parameter.
+
+The following code snippet demonstrates how to implement **getRowIndexByKey**, **cellValue**, and **option** to get edited cell values:
 
 ---
 ##### jQuery

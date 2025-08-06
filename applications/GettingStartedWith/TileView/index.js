@@ -11,7 +11,7 @@ $(() => {
 
       const element = $('<div>')
         .addClass('image')
-        .css('background-image', `url(${itemData.imageSrc})`)
+        .css({'background-image': `url(${itemData.imageSrc})`, 'background-color': '#ffffff'})
         .append($('<p>')
           .text(text)
           .addClass('price-text'));

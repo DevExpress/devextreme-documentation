@@ -5,7 +5,7 @@ default: 'circle'
 ---
 ---
 ##### shortDescription
-Specifies animation type for LoadIndicator.
+Specifies the animation type for LoadIndicator.
 
 ---
 This property can have one of the following values:

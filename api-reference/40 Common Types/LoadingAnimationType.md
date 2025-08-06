@@ -6,7 +6,7 @@ references: dxLoadIndicator.Options.animationType
 ---
 ---
 ##### shortDescription
-Specifies loading animation type.
+Specifies the loading animation type.
 
 ---
 <!-- Description goes here -->

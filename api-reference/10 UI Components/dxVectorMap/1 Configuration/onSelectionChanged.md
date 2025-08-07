@@ -22,3 +22,5 @@ The selected/deselected layer element; described in the [Layer Element](/api-ref
 
 ---
 To identify whether the selection has been applied or canceled, call the layer element's [selected()](/api-reference/10%20UI%20Components/dxVectorMap/6%20Map%20Elements/Layer%20Element/3%20Methods/selected().md '/Documentation/ApiReference/UI_Components/dxVectorMap/Map_Elements/Layer_Element/Methods/#selected') method.
+
+[note] To implement VectorMap selection, you must specify the [onClick](/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/#onClick) event handler. For more information about configuring selection, refer to the following topic: [End-User Interaction - Selection](/Documentation/Guide/UI_Components/VectorMap/End-User_Interaction/#Selection).

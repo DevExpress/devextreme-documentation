@@ -19,3 +19,5 @@ At runtime, you can do the following operations.
 - Deselect all the selected layer elements using the [clearSelection()](/api-reference/10%20UI%20Components/dxVectorMap/6%20Map%20Elements/Layer/3%20Methods/clearSelection().md '/Documentation/ApiReference/UI_Components/dxVectorMap/Map_Elements/Layer/Methods/#clearSelection') method of the map layer.
 
 The change of the selection state invokes the callback function assigned to the [onSelectionChanged](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/#onSelectionChanged') property. Within this function, you can handle the selection event in the manner you require.
+
+[note] To implement VectorMap selection, you must specify the [onClick](/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/#onClick) event handler. For more information about configuring selection, refer to the following topic: [End-User Interaction - Selection](/Documentation/Guide/UI_Components/VectorMap/End-User_Interaction/#Selection).

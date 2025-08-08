@@ -5,11 +5,11 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether all rows are expanded initially.
+Specifies whether all rows are expanded.
 
 ---
 
-If you enable the **autoExpandAll** property, the TreeList ignores the [remoteOperations](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/remoteOperations/') property and loads all data to the client first. Sorting and filtering are executed in JavaScript code.
+When **autoExpandAll** is enabled, the component ignores [remoteOperations](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/remoteOperations/') and loads all data to the client. TreeList executes sorting and filtering on the client side.
 
 #include common-demobutton with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Paging/"

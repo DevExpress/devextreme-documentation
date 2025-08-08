@@ -3,6 +3,7 @@ id: HeaderFilterSearchConfig.editorOptions
 type: any
 default: {}
 ---
+---
 ##### shortDescription
 Configures the search box.
 

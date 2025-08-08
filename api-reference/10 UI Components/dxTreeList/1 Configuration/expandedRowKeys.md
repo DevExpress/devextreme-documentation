@@ -6,10 +6,10 @@ firedEvents: optionChanged
 ---
 ---
 ##### shortDescription
-Specifies keys of the initially expanded rows.
+Specifies expanded rows with keys.
 
 ---
-Setting this property expands only the specified rows, but not their parents. If a to-be-expanded row lies deep in the hierarchy, make sure to include keys of all rows that nest it.
+This property expands only specified rows, not their parent rows. To expand a row that has parent rows, specify all parent row keys in addition to the child row key.
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview/"

@@ -59,8 +59,7 @@ To specify a comparison expression, define the [comparisonTarget](/api-reference
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
 
-    import { DxValidatorModule,
-                DxTextBoxModule } from 'devextreme-angular';
+    import { DxValidatorModule, DxTextBoxModule } from 'devextreme-angular';
 
     @NgModule({
         declarations: [

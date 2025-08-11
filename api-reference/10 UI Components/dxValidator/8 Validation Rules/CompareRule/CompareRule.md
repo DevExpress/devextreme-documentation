@@ -10,7 +10,7 @@ generateTypeLink:
 A validation rule that requires validated values to match a specified expression.
 
 ---
-To specify a comparison expression, define the [comparisonTarget](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules/CompareRule/comparisonTarget.md '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/CompareRule/#comparisonTarget') function. Validator compares values to this function's return value. To configure which comparison operator Validator compares values with, specify the [comparisonType](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules/CompareRule/comparisonType.md '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/CompareRule/#comparisonType') property.
+To specify a comparison expression, define the [comparisonTarget](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules/CompareRule/comparisonTarget.md '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/CompareRule/#comparisonTarget') function. Validator compares values to this function's return value. To configure which comparison operator Validator compares values to, specify the [comparisonType](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules/CompareRule/comparisonType.md '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/CompareRule/#comparisonType') property.
 
 ---
 

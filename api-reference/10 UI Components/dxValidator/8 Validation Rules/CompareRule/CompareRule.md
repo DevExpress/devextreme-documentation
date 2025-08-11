@@ -18,6 +18,7 @@ To specify a comparison expression, define the [comparisonTarget](/api-reference
 
     <!-- tab: index.js -->
     $(function() {
+        $('#password').dxTextBox({ ... });
         $('#confirm-password').dxTextBox({ ... })
             .dxValidator({
                 type: 'compare',

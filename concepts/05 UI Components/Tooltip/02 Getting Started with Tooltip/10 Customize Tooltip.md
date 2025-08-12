@@ -119,7 +119,7 @@ To customize Tooltip content, specify [contentRender](/Documentation/ApiReferenc
 
 ---
 
-You can customize the appearance of Tooltip visual elements with CSS. This example implements the following styles to change the colors of `#trash-tooltip` and `#info-tooltip`:
+You can use CSS to customize Tooltip appearance. You may have noticed that code snippets above assigned CSS classes to all tooltips. This example defines those styles (`.red-tooltip` and `.blue-tooltip`):
 
 ---
 

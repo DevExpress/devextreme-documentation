@@ -93,7 +93,7 @@
 
 ---
 
-This example creates three [Button](/) components and assigns Tooltips to them. Button ID attributes are specified as Tooltip targets. Additionally, this example configures the [hideEvent](/) property for all Tooltips:
+This example creates three [Button](/Documentation/Guide/UI_Components/Button/Overview/) components and assigns Tooltips to them. Button ID attributes are specified as Tooltip targets. Additionally, this example configures the [hideEvent](/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/hideEvent/) property for all Tooltips:
 
 ---
 

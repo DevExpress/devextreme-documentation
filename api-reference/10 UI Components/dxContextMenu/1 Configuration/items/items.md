@@ -1,5 +1,5 @@
 ---
 id: dxContextMenu.Options.items
-type: Array<dxContextMenuItem>
+type: Array<dxContextMenuItem, any>
 inheritsType: dxContextMenuItem
 ---

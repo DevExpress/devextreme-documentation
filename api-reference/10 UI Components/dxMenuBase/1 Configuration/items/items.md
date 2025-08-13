@@ -1,6 +1,6 @@
 ---
 id: dxMenuBase.Options.items
-type: Array<dxMenuBaseItem>
+type: Array<dxMenuBaseItem, any>
 inheritsType: dxMenuBaseItem
 ---
 ---

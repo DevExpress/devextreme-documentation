@@ -1,0 +1,22 @@
+.main-container {
+  padding: 40px;
+  height: 75px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dx-overlay-content:has(.blue-tooltip),
+.dx-overlay-content:has(.blue-tooltip) .dx-popover-arrow::after {
+  background-color: #0f6cbd;
+  color: white;
+}
+
+.dx-overlay-content:has(.red-tooltip),
+.dx-overlay-content:has(.red-tooltip) .dx-popover-arrow::after {
+  background-color: #d13438;
+  color: white;
+}

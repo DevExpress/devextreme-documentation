@@ -1,178 +1,106 @@
-The default behavior of TileView is to display tile text defined in the **items[]**.[text](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#text) property. To implement custom tile content, define [templates](/Documentation/Guide/UI_Components/Common/Templates/). Specify **items[]**.[template](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#template) to customize a specific item and [itemTemplate](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemTemplate) to customize all items. This example implements the **itemTemplate** property:
 
 ---
 
 ##### jQuery
 
+The default behavior of TileView is to display tile text defined in the **items[]**.[text](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#text) property. To implement custom tile content, define [templates](/Documentation/Guide/UI_Components/Common/Templates/). Specify **items[]**.[template](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#template) to customize a specific item and [itemTemplate](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemTemplate) to customize all items. This example implements the **itemTemplate** property:
+
     <!-- tab: index.js -->
     $(function() {
         $('#tileview').dxTileView({
-            dataSource: bikes,
+            dataSource: tiles,
             itemTemplate(itemData, itemIndex, itemElement) {
-                const text = itemData.disabled ? 'Out of stock' : DevExpress.localization.formatNumber(itemData.price, 'currency');
+                const iconBox = $('<div>')
+                    .addClass('icon-box')
+                    .append(
+                        $('<i>').addClass(`dx-icon-${itemData.icon}`),
+                    );
 
-                const element = $('<div>')
-                    .addClass('image')
-                    .css('background-image', `url(${itemData.imageSrc})`)
-                    .append($('<p>')
-                    .text(text)
-                    .addClass('price-text'));
+                const textBox = $('<div>')
+                    .addClass('text-box')
+                    .append(
+                        $('<h3>')
+                            .addClass('tile-title')
+                            .text(itemData.title),
+                        $('<p>')
+                            .addClass('tile-text')
+                            .text(itemData.text),
+                    );
 
-                if (itemData.disabled) {
-                    element.css('opacity', '50%');
-                }
-
-                itemElement.append(element);
+                itemElement.append(iconBox);
+                itemElement.append(textBox);
             },
         });
     });
 
-    <!-- tab: index.css -->
-    .dx-tile-content .image {
-        height: 100%;
-        width: 100%;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        display: block;
-        padding: 5px;
-    }
-
-    .price-text {
-        margin: 0;
-    }
-
 ##### Angular
+
+The default behavior of TileView is to display tile text defined in the **items[]**.[text](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#text) property. To implement custom tile content, define [templates](/Documentation/Guide/UI_Components/Common/Templates/). Specify **items[]**.[template](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#template) to customize a specific item and [itemTemplate](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemTemplate) to customize all items. This example implements the **itemTemplate** property:
 
     <!-- tab: app.component.html -->
     <dx-tile-view
-        [dataSource]="bikes"
+        [dataSource]="tiles"
         itemTemplate="tileTemplate"
     >
         <div *dxTemplate="let data of 'tileTemplate'">
-            @if (!data.disabled) {
-                <div class="image" [style]="{ 'background-image': 'url(' + data.imageSrc + ')' }">
-                    <p class="price-text">{{ formatNumber(data.price, 'currency') }}</p>
-                </div>
-            } @else {
-                <div class="image" [style]="{ 'background-image': 'url(' + data.imageSrc + ')', 'opacity': '50%' }">
-                    <p class="price-text">Out of stock</p>
-                </div>
-            }
+            <div class="icon-box">
+                <i class="dx-icon-{{data.icon}}"></i>
+            </div>
+            <div class="text-box">
+                <h3 class="tile-title">{{data.title}}</h3>
+                <p class="tile-text">{{data.text}}</p>
+            </div>
         </div>
     </dx-tile-view>
 
-    <!-- tab: app.component.ts -->
-    import { formatNumber } from 'devextreme/localization';
-
-    export class AppComponent {
-        formatNumber = formatNumber;
-    }
-
-    <!-- tab: app.component.scss -->
-    .dx-tile-content .image {
-        height: 100%;
-        width: 100%;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        display: block;
-        padding: 5px;
-    }
-
-    .price-text {
-        margin: 0;
-    }
-
 ##### Vue
 
-    <!-- tab: App.vue -->
-    <script setup lang="ts">
-    import { formatNumber } from 'devextreme/localization';
+The default behavior of TileView is to display tile text defined in the **items[]**.[text](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#text) property. To implement custom tile content, define [templates](/Documentation/Guide/UI_Components/Common/Templates/). Specify **items[]**.[template](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#template) to customize a specific item and [itemTemplate](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemTemplate) to customize all items. This example implements the **itemTemplate** property:
 
-    </script>
+    <!-- tab: App.vue -->
     <template>
         <DxTileView
-            :data-source="bikes"
+            :data-source="tiles"
             item-template="tileTemplate"
         >
             <template #tileTemplate="data">
-                <div
-                    v-if="!data.data.disabled"
-                    class="image"
-                    :style="{ 'background-image': `url(${data.data.imageSrc})` }"
-                >
-                    <p class="price-text">{{ formatNumber(data.data.price, 'currency') }}</p>
+                <div class="icon-box">
+                    <i :class="`dx-icon-${data.data.icon}`"></i>
                 </div>
-                <div
-                    v-else
-                    class="image"
-                    :style="{ 'background-image': `url(${data.data.imageSrc})`, 'opacity': '50%' }"
-                >
-                    <p class="price-text">Out of stock</p>
+                <div class="text-box">
+                    <h3 class="tile-title">{{ data.data.title }}</h3>
+                    <p class="tile-text">{{ data.data.text }}</p>
                 </div>
             </template>
         </DxTileView>
     </template>
-    <style scoped>
-    .dx-tile-content.image {
-        height: 100%;
-        width: 100%;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        display: block;
-        padding: 5px;
-    }
-
-    .price-text {
-        margin: 0;
-    }
-    </style>
 
 ##### React
 
+The default behavior of TileView is to display tile text defined in the **items[]**.[text](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#text) property. To implement custom tile content, define [templates](/Documentation/Guide/UI_Components/Common/Templates/). Specify **items[]**.[render](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#render) or **items[]**.[component](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#component) to customize a specific item and [itemRender](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemRender) or [itemComponent](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemComponent) to customize all items. This example implements the **itemRender** property:
+
     <!-- tab: App.tsx -->
-    import { formatNumber } from 'devextreme/localization';
-
-    function TileRender(itemData: { price: number; disabled: boolean | undefined; imageSrc: string }): JSX.Element {
-        if (!itemData.disabled) {
-            return (
-                <div className="image" style={{ backgroundImage: `url(${itemData.imageSrc})` }}>
-                    <p className="price-text">{ formatNumber(itemData.price, 'currency') }</p>
-                </div>
-            );
-        }
-
+    function TileRender(data: { icon: string; title: string; text: string }): JSX.Element {
         return (
-            <div className="image" style={{ backgroundImage: `url(${itemData.imageSrc})`, opacity: '50%' }}>
-                <p className="price-text">Out of stock</p>
-            </div>
+            <>
+                <div className="icon-box">
+                    <i className={`dx-icon-${data.icon}`}></i>
+                </div>
+                <div className="text-box">
+                    <h3 className="tile-title">{data.title}</h3>
+                    <p className="tile-text">{data.text}</p>
+                </div>
+            </>
         );
     }
 
     export default function App(): JSX.Element {
         return (
             <TileView
-                dataSource={bikes}
+                dataSource={tiles}
                 itemRender={TileRender}
             />
         );
-    }
-
-    <!-- tab: App.css -->
-    .dx-tile-content .image {
-        height: 100%;
-        width: 100%;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        display: block;
-        padding: 5px;
-    }
-
-    .price-text {
-        margin: 0;
     }
 
 ---

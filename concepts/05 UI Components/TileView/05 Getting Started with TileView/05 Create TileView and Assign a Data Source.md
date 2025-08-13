@@ -5,7 +5,7 @@
     <!-- tab: index.js -->
     $(function() {
         $('#tileview').dxTileView({
-            dataSource: bikes,
+            dataSource: tiles,
         });
     });
 
@@ -25,10 +25,10 @@
     </html>
 
     <!-- tab: data.js -->
-    const bikes = [{
-        id: 1,
-        price: 347,
-        imageSrc: '../../data/bikes-catalog/bike-100351718.jpg',
+    const tiles = [{
+        icon: 'datatrending',
+        title: 'Boost Productivity',
+        text: 'Tools and data that help you get the most from your team.',
     }, ... ]
 
 ##### Angular
@@ -37,15 +37,16 @@
 
     <!-- tab: app.component.html -->
     <dx-tile-view
-        [dataSource]="bikes"
+        [dataSource]="tiles"
     ></dx-tile-view>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
-    import { bikes } from './data';
+    import { tiles } from './data';
 
     export class AppComponent {
-        bikes = bikes;
+        // Create a local version of tiles to implement in app.component.html
+        tiles = tiles;
     }
 
     <!-- tab: app.module.ts -->
@@ -70,11 +71,11 @@
     export class AppModule { }
 
     <!-- tab: data.ts -->
-    export const bikes = [{
-        id: 1,
-        price: 347,
-        imageSrc: 'assets/bike-100351718.jpg',
-    } ... ]
+    export const tiles = [{
+        icon: 'datatrending',
+        title: 'Boost Productivity',
+        text: 'Tools and data that help you get the most from your team.',
+    }, ... ]
 
 ##### Vue
 
@@ -83,44 +84,42 @@
     <!-- tab: App.vue -->
     <script setup lang="ts">
         import { DxTileView } from 'devextreme-vue/tile-view';
-        import { bikes } from '@/data.js';
+        import { tiles } from '@/data.js';
     </script>
     <template>
         <DxTileView
-            :data-source="bikes"
+            :data-source="tiles"
         ></DxTileView>
     </template>
 
     <!-- tab: data.js -->
-    export const bikes = [{
-        id: 1,
-        price: 347,
-        imageSrc: 'assets/bike-100351718.jpg',
-    } ... ]
+    export const tiles = [{
+        icon: 'datatrending',
+        title: 'Boost Productivity',
+        text: 'Tools and data that help you get the most from your team.',
+    }, ... ]
 
 ##### React
 
 [Add DevExtreme to your React application](/concepts/50%20React%20Components/05%20Add%20DevExtreme%20to%20a%20React%20Application/00%20Add%20DevExtreme%20to%20a%20React%20Application.md '/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/') and use the code below to create a TileView component with empty tiles. This example specifies the [dataSource](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#dataSource/) property to define items. You can also specify TileView items in the [items[]](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/) array.
 
     <!-- tab: App.tsx -->
-    import React from 'react';
     import { TileView } from 'devextreme-react/tile-view';
-    import { bikes } from './data.js';
+    import { tiles } from './data.js';
 
     export default function App(): JSX.Element {
         return (
             <TileView
-                dataSource={bikes}
+                dataSource={tiles}
             />
         );
     }
 
     <!-- tab: data.js -->
-    const bikes = [{
-        id: 1,
-        price: 347,
-        imageSrc: '../../data/bikes-catalog/bike-100351718.jpg',
+    const tiles = [{
+        icon: 'datatrending',
+        title: 'Boost Productivity',
+        text: 'Tools and data that help you get the most from your team.',
     }, ... ]
 
 ---
-

@@ -7,12 +7,12 @@ body {
 }
 
 .demo-container {
-    height: 496px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--dx-color-main-bg);
-    border-radius: 16px;
+  height: 496px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dx-color-main-bg);
+  border-radius: 16px;
 }
 
 .dx-tile {

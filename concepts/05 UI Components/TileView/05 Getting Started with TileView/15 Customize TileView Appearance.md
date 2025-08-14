@@ -67,4 +67,4 @@ To customize the appearance of TileView items, this example implements the follo
         outline: 2px solid var(--dx-color-primary);
     }
 
-This application implements DevExtreme CSS variables defined in the imported theme file (dx.fluent.blue.dark.css). To integrate support for dark and light themes, this example also implements the [color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme) CSS style and specifies multiple color styles using the [light-dark()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark) function.
+This application modifies DevExtreme CSS variables defined in the imported theme file (dx.fluent.blue.dark.css). To integrate support for dark and light themes, this example also implements the [color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme) CSS style and specifies multiple color styles using the [light-dark()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark) function.

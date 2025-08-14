@@ -82,7 +82,7 @@ Specifies if TileView items are clickable.
 You can also configure the following properties to further customize the TileView component:
 
 - **items[]**.[widthRatio](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#widthRatio)/**items[]**.[heightRatio](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#heightRatio)    
-Specify a multiplier for an item's width/height. Implement these properties to create tiles of different sizes.
+Adjust an item's width/height. Set these properties to create tiles of different sizes.
 - [onItemClick](Documentation/ApiReference/UI_Components/dxTileView/Configuration/#onItemClick)    
 Configures a handler function for the [ItemClickEvent](/Documentation/ApiReference/UI_Components/dxTileView/Types/ItemClickEvent/).
 - [direction](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#direction)    

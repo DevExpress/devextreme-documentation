@@ -3,7 +3,7 @@
 
 ##### jQuery
 
-To customize Tooltip content, specify [contentTemplate](/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#contentTemplate). If you assign a string to this property, Tooltip displays plain text in its container:
+To customize Tooltip content, specify [contentTemplate](/api-reference/10%20UI%20Components/dxTooltip/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#contentTemplate'). If you assign a string to this property, Tooltip displays plain text in its container:
 
     <!-- tab: index.js -->
     $(function() {
@@ -30,7 +30,7 @@ To customize Tooltip content, specify [contentTemplate](/Documentation/ApiRefere
 
 ##### Angular
 
-To customize Tooltip content, specify [contentTemplate](/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#contentTemplate). If you assign a string to this property, Tooltip displays plain text in its container:
+To customize Tooltip content, specify [contentTemplate](/api-reference/10%20UI%20Components/dxTooltip/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#contentTemplate'). If you assign a string to this property, Tooltip displays plain text in its container:
 
     <!-- tab: app.component.html -->
     <div class="tooltips">
@@ -55,7 +55,7 @@ To customize Tooltip content, specify [contentTemplate](/Documentation/ApiRefere
 
 ##### Vue
 
-To customize Tooltip content, specify [contentTemplate](/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#contentTemplate). If you assign a string to this property, Tooltip displays plain text in its container:
+To customize Tooltip content, specify [contentTemplate](/api-reference/10%20UI%20Components/dxTooltip/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#contentTemplate'). If you assign a string to this property, Tooltip displays plain text in its container:
 
     <!-- tab: App.vue -->
     <template>
@@ -82,7 +82,7 @@ To customize Tooltip content, specify [contentTemplate](/Documentation/ApiRefere
 
 ##### React
 
-To customize Tooltip content, specify [contentRender](/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#contentRender) or [contentComponent](/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#contentComponent):
+To customize Tooltip content, specify [contentRender](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/contentRender.md '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#contentRender') or [contentComponent](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/contentComponent.md '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#contentComponent'):
 
     <!-- tab: App.tsx -->
     function likeRender(): JSX.Element {
@@ -187,6 +187,6 @@ You can use CSS to customize the Tooltip's appearance. The code snippets above a
 
 #####See Also#####
 
-- [Tooltip - Customize Content](/Documentation/Guide/UI_Components/Tooltip/Customize_the_Content/)
-- [Examine CSS](/Documentation/Guide/Troubleshooting/Basics/#Examine_CSS)
+- [Tooltip - Customize Content](/concepts/05%20UI%20Components/Tooltip/10%20Customize%20the%20Content '/Documentation/Guide/UI_Components/Tooltip/Customize_the_Content/')
+- [Examine CSS](/concepts/80%20Troubleshooting/00%20Basics/15%20Examine%20CSS.md '/Documentation/Guide/Troubleshooting/Basics/#Examine_CSS')
 - [:has() CSS pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:has)

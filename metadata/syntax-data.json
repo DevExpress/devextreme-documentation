@@ -7272,9 +7272,6 @@
       "react": "DisabledDate",
       "vue": "DxDisabledDate"
     },
-    "domComponentOptions.bindingOptions": {
-      "vue": "binding-options"
-    },
     "domComponentOptions.elementAttr": {
       "angular": "dxo-element-attr",
       "react": "ElementAttr",

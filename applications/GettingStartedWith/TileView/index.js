@@ -49,13 +49,3 @@ const tiles = [{
   title: "Enhance Communication",
   text: "Help your team collaborate more effectively than ever.",
 }]
-
-var theme = window.localStorage.getItem('dx-documentation-theme');
-
-$(":root").css("color-scheme", theme);
-
-const link = document.createElement('link');
-link.rel = 'stylesheet';
-link.href = `/SharedStatic/DevExtreme/24_2/css/dx.fluent.blue.${theme}.css`;
-
-document.head.appendChild(link);

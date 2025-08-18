@@ -17,7 +17,7 @@ Server-side data processing improves component performance on large datasets. Th
    </tr>
    <tr>
       <td><i>"auto"</i></td>
-      <td><b>Filtering</b>, <b>sorting</b>, and <b>paging</b> if the component <a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource">dataSource</a> is an <a href="/Documentation/ApiReference/Data_Layer/XmlaStore/">XmlaStore</a> or <a href="/Documentation/ApiReference/Data_Layer/ODataStore/">OdataStore</a>. If you implement another data source type, DataGrid performs no operations on the server side.</td>
+      <td>If the component <a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource">dataSource</a> is an <a href="/Documentation/ApiReference/Data_Layer/ODataStore/">OdataStore</a>, <b>filtering</b>, <b>sorting</b>, and <b>paging</b>. If you implement another data source type, <b>no operations</b> are enabled.</td>
    </tr>
    <tr>
       <td><code>true</code></td>
@@ -29,7 +29,7 @@ Server-side data processing improves component performance on large datasets. Th
    </tr>
    <tr>
       <td><code>{ paging: true }</code></td>
-      <td><b>Paging</b>, <b>filtering</b>, <b>sorting</b>, and <b>summary calculation</b>, as well as <b>grouping</b> if <b>grouping</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/#autoExpandAll">autoExpandAll</a> is disabled.</td>
+      <td><b>Paging</b>, <b>filtering</b>, <b>sorting</b>, and <b>summary calculation</b>, as well as <b>grouping</b> if <a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/#autoExpandAll">autoExpandAll</a> is disabled.</td>
    </tr>
    <tr>
       <td><code>{ filtering: true }</code></td>
@@ -45,15 +45,13 @@ Server-side data processing improves component performance on large datasets. Th
    </tr>
    <tr>
       <td><code>{ summary: true }</code></td>
-      <td><b>Summary calculation</b>, <b>filtering</b>, as well as <b>sorting</b> and <b>grouping</b> if <b>summary</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/groupItems/">groupItems[]</a> is configured.</td>
+      <td><b>Summary calculation</b> and <b>filtering</b>, as well as <b>sorting</b> and <b>grouping</b> if <b>summary</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/groupItems/">groupItems[]</a> is configured.</td>
    </tr>
 </table>
 
-[note] The default component behavior is to perform remote **paging**, **filtering**, and **sorting** when the **dataSource** is an [ODataStore](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/40%20OData.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/'). Other operations are always client-side, TBA.
+The following restrictions apply when operations are remote:
 
-The following restrictions apply to component functionality when operations are remote:
-
-- DataGrid does not sort, filter, or group columns with [calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue') or [calculateDisplayValue](/api-reference/_hidden/GridBaseColumn/calculateDisplayValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateDisplayValue') defined.
+- DataGrid does not sort, filter, or group columns that implement [calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue') or [calculateDisplayValue](/api-reference/_hidden/GridBaseColumn/calculateDisplayValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateDisplayValue').
 - The [calculateGroupValue](/api-reference/_hidden/dxDataGridColumn/calculateGroupValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateGroupValue') and [calculateSortValue](/api-reference/_hidden/GridBaseColumn/calculateSortValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateSortValue') properties accept only string values.
 - DataGrid ignores the [calculateCustomSummary](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/calculateCustomSummary.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/#calculateCustomSummary') property.
 - The component ignores [calculateFilterExpression](/api-reference/_hidden/GridBaseColumn/calculateFilterExpression.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateFilterExpression') properties that return a function or a filter expression containing a functon.

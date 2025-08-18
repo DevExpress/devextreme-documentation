@@ -1,83 +1,8 @@
-This tutorial demonstrates how to customize FileUploader appearance.
+This tutorial demonstrates how to customize FileUploader appearance. The following live example demonstrates the result:
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/25_1/UIWidgets/FileUploader/Customization/index.html, /Content/Applications/25_1/UIWidgets/FileUploader/Customization/index.js, /Content/Applications/25_1/UIWidgets/FileUploader/Customization/index.css"></div>
 
-Specify the [dropZone](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/dropZone.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#dropZone') property to integrate a custom drop zone. Use the `width` and `height` CSS styles to modify drop zone dimensions. This tutorial also implements the `background-color` and `border-radius` styles:
-
----
-
-##### jQuery
-
-    <!-- tab: index.html -->
-    <div class="file-uploader-block"></div>
-    <div id="file-uploader"></div>
-
-    <!-- tab: index.js -->
-    $(() => {
-        $('#file-uploader').dxFileUploader({
-            dropZone: '.file-uploader-block',
-        })
-    })
-
-    <!-- tab: styles.css -->
-    .file-uploader-block {
-        width: 350px;
-        height: 200px;
-        background-color: #f5f5f5;
-        border-radius: 16px;
-    }
-
-##### Angular
-
-    <!-- tab: app.component.html -->
-    <div class="file-uploader-block"></div>
-    <dx-file-uploader dropZone=".file-uploader-block"></dx-file-uploader>
-
-    <!-- tab: app.component.css -->
-    .file-uploader-block {
-        width: 350px;
-        height: 200px;
-        background-color: #f5f5f5;
-        border-radius: 16px;
-    }
-
-##### Vue
-
-    <!-- tab: App.vue -->
-    <template>
-        <div class="file-uploader-block"></div>
-        <DxFileUploader drop-zone=".file-uploader-block" />
-    </template>
-
-    <!-- tab: styles.css -->
-    .file-uploader-block {
-        width: 350px;
-        height: 200px;
-        background-color: #f5f5f5;
-        border-radius: 16px;
-    }
-
-##### React
-
-    <!-- tab: App.tsx -->
-    export default function App() {
-        return (
-            <div class="file-uploader-block"></div>
-            <FileUploader dropZone=".file-uploader-block" />
-        )
-    }
-
-    <!-- tab: styles.css -->
-    .file-uploader-block {
-        width: 350px;
-        height: 200px;
-        background-color: #f5f5f5;
-        border-radius: 16px;
-    }
-
----
-
-This tutorial places the FileUploader inside a custom drop zone container:
+To integrate a custom FileUploader drop zone, specify the [dropZone](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/dropZone.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#dropZone') property. Create the component inside the drop zone container to place FileUploader in its drop zone:
 
 ---
 
@@ -124,33 +49,67 @@ This tutorial places the FileUploader inside a custom drop zone container:
 
 ---
 
-To center FileUploader elements inside the drop zone, assign the following CSS styles to the `.dx-fileuploader-input-wrapper` selector:
+Implement the following CSS styles to customize the FileUploader and its drop zone:
 
     <!-- tab: styles.css -->
-    .dx-fileuploader-input-wrapper {
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    .file-uploader-block {
+        width: 360px;
+        height: 360px;
+        background-color: #f5f5f5;
+        border-radius: 16px;
     }
 
-When users upload files, the component lists selected files in its container. To move this list, specify absolute positioning. Assign the following CSS styles to the `.dx-fileuploader-files-container` selector:
+    #file-uploader {
+        height: 100%;
+    }
+
+    .dx-fileuploader-content {
+        display: grid;
+        height: 100%;
+        position: relative;
+    }
+
+    .dx-fileuploader-input-wrapper {
+        place-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+Note the following styles:
+
+- `flex-direction: column`: Rearranges the "Select a file" button and "or Drop a File Here" label vertically.
+- `place-self: center`: Centers the button and label in the `.dx-fileuploader-content` grid container.
+
+When users upload files, the component lists selected files in its container. To move this list below the FileUploader drop zone, specify absolute positioning and implement the following styles:
 
     <!-- tab: styles.css -->
+    .dx-fileuploader-wrapper {
+        overflow: visible;
+    }
+
+    .dx-fileuploader-show-file-list .dx-fileuploader-files-container {
+        padding-top: 0;
+    }
+
     .dx-fileuploader-files-container {
         position: absolute;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, 0);
-        width: 35%;
-        height: 30%;
+        top: calc(100% + 16px);
+        left: 8px;
+        right: 8px;
+        width: auto;
+        max-height: 180px;
         overflow-y: auto;
+        box-sizing: border-box;
     }
 
 Note the following styles: 
 
-- `top: 70%`: Positions the uploaded file list container below the FileUploader.
-- `overflow-y: auto`: Adds a scroll bar to the uploaded file list container when necessary.
+- `top: calc(100% + 16px)`: Positions the uploaded file list container below the FileUploader.
+- `overflow-y: auto`: Adds a scroll bar to the uploaded file list when necessary.
+
+[note] To ensure absolute positioning applies to `.dx-fileuploader-files-container`, specify relative positioning for the `.dx-fileuploader-content` selector.
 
 The component's default behaviour is to upload selected files immediately. To allow users to select and upload files separately, set the [uploadMode](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/uploadMode.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadMode') property to *"useButtons"*. This creates multiple upload buttons in the FileUploader container:
 
@@ -161,5 +120,5 @@ This tutorial hides the common "Upload" button using the following CSS style:
 
     <!-- tab: styles.css -->
     .dx-fileuploader-content > .dx-fileuploader-upload-button {
-        visibility: hidden;
+        display: none;
     }

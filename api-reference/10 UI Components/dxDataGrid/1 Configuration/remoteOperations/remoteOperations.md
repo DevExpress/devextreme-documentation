@@ -8,7 +8,7 @@ default: 'auto'
 Specifies DataGrid operations to be executed on the server side.
 
 ---
-Server-side data processing improves component performance on large datasets. The following table lists **remoteOperation** configuration values and what operations each value affects:
+Server-side data processing improves component performance with large datasets. The following table lists **remoteOperation** configuration values and which operations each value affects:
 
 <table class="dx-table">
    <tr>

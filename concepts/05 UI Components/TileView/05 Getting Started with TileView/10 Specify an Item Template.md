@@ -3,7 +3,7 @@
 
 ##### jQuery
 
-The default behavior of TileView is to display tile text defined in the **items[]**.[text](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#text) property. To implement custom tile content, define [templates](/Documentation/Guide/UI_Components/Common/Templates/). Specify **items[]**.[template](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#template) to customize a specific item and [itemTemplate](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemTemplate) to customize all items. This example implements the **itemTemplate** property:
+At this point, tiles display text defined in the **items[]**.[text](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#text) property. To customize tile content, define [templates](/Documentation/Guide/UI_Components/Common/Templates/). Specify **items[]**.[template](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#template) to customize a specific item and [itemTemplate](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemTemplate) to customize all items. This example uses the **itemTemplate** property:
 
     <!-- tab: index.js -->
     $(function() {
@@ -35,7 +35,7 @@ The default behavior of TileView is to display tile text defined in the **items[
 
 ##### Angular
 
-The default behavior of TileView is to display tile text defined in the **items[]**.[text](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#text) property. To implement custom tile content, define [templates](/Documentation/Guide/UI_Components/Common/Templates/). Specify **items[]**.[template](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#template) to customize a specific item and [itemTemplate](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemTemplate) to customize all items. This example implements the **itemTemplate** property:
+At this point, tiles display text defined in the **items[]**.[text](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#text) property. To customize tile content, define [templates](/Documentation/Guide/UI_Components/Common/Templates/). Specify **items[]**.[template](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#template) to customize a specific item and [itemTemplate](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemTemplate) to customize all items. This example uses the **itemTemplate** property:
 
     <!-- tab: app.component.html -->
     <dx-tile-view
@@ -55,7 +55,7 @@ The default behavior of TileView is to display tile text defined in the **items[
 
 ##### Vue
 
-The default behavior of TileView is to display tile text defined in the **items[]**.[text](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#text) property. To implement custom tile content, define [templates](/Documentation/Guide/UI_Components/Common/Templates/). Specify **items[]**.[template](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#template) to customize a specific item and [itemTemplate](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemTemplate) to customize all items. This example implements the **itemTemplate** property:
+At this point, tiles display text defined in the **items[]**.[text](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#text) property. To customize tile content, define [templates](/Documentation/Guide/UI_Components/Common/Templates/). Specify **items[]**.[template](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#template) to customize a specific item and [itemTemplate](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemTemplate) to customize all items. This example uses the **itemTemplate** property:
 
     <!-- tab: App.vue -->
     <template>
@@ -77,7 +77,7 @@ The default behavior of TileView is to display tile text defined in the **items[
 
 ##### React
 
-The default behavior of TileView is to display tile text defined in the **items[]**.[text](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#text) property. To implement custom tile content, define [templates](/Documentation/Guide/UI_Components/Common/Templates/). Specify **items[]**.[render](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#render) or **items[]**.[component](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#component) to customize a specific item and [itemRender](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemRender) or [itemComponent](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemComponent) to customize all items. This example implements the **itemRender** property:
+At this point, tiles display text defined in the **items[]**.[text](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#text) property. To customize tile content, define [templates](/Documentation/Guide/UI_Components/Common/Templates/). Specify **items[]**.[render](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#render) or **items[]**.[component](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#component) to customize a specific item and [itemRender](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemRender) or [itemComponent](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemComponent) to customize all items. This example uses the **itemRender** property:
 
     <!-- tab: App.tsx -->
     function TileRender(data: { icon: string; title: string; text: string }): JSX.Element {

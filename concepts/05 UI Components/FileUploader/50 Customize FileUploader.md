@@ -111,7 +111,7 @@ Note the following styles:
 
 [note] To ensure absolute positioning applies to `.dx-fileuploader-files-container`, specify relative positioning for the `.dx-fileuploader-content` selector.
 
-The component's default behaviour is to upload selected files immediately. To allow users to select and upload files separately, set the [uploadMode](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/uploadMode.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadMode') property to *"useButtons"*. This creates multiple upload buttons in the FileUploader container:
+The component uploads selected files immediately when [uploadMode](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadMode) is *"instantly"* (default). To allow users to select and upload files separately, set **uploadMode** to *"useButtons"*. This creates multiple upload buttons in the FileUploader container:
 
 - Individual upload buttons for each item in the uploaded file list.
 - A common "Upload" button that uploads all files at once.

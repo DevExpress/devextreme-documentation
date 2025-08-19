@@ -1,12 +1,12 @@
 This example specifies the following TileView properties:
 
-- [itemMargin](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemMargin)    
+- [itemMargin](/api-reference/10%20UI%20Components/dxTileView/1%20Configuration/itemMargin.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemMargin')    
 Configures the margin between TileView items.
-- [baseItemWidth](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#baseItemWidth)/[baseItemHeight](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#baseItemHeight)    
+- [baseItemWidth](/api-reference/10%20UI%20Components/dxTileView/1%20Configuration/baseItemWidth.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#baseItemWidth')/[baseItemHeight](/api-reference/10%20UI%20Components/dxTileView/1%20Configuration/baseItemHeight.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#baseItemHeight')    
 Specify the base width/height of TileView items.
-- [height](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#height)    
+- [height](/api-reference/10%20UI%20Components/dxTileView/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#height')    
 Configures component height.
-- [activeStateEnabled](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#activeStateEnabled)    
+- [activeStateEnabled](/api-reference/10%20UI%20Components/dxTileView/1%20Configuration/activeStateEnabled.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#activeStateEnabled')    
 Specifies if TileView items are clickable.
 
 ---
@@ -81,11 +81,11 @@ Specifies if TileView items are clickable.
 
 You can also configure the following properties to further customize the TileView component:
 
-- **items[]**.[widthRatio](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#widthRatio)/**items[]**.[heightRatio](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#heightRatio)    
+- **items[]**.[widthRatio](/api-reference/_hidden/dxTileViewItem/widthRatio.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#widthRatio')/**items[]**.[heightRatio](/api-reference/_hidden/dxTileViewItem/heightRatio.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#heightRatio')    
 Adjust an item's width/height. Set these properties to create tiles of different sizes.
-- [onItemClick](Documentation/ApiReference/UI_Components/dxTileView/Configuration/#onItemClick)    
-Configures a handler function for the [ItemClickEvent](/Documentation/ApiReference/UI_Components/dxTileView/Types/ItemClickEvent/).
-- [direction](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#direction)    
+- [onItemClick](/api-reference/10%20UI%20Components/dxTileView/1%20Configuration/onItemClick.md 'Documentation/ApiReference/UI_Components/dxTileView/Configuration/#onItemClick')    
+Configures a handler function for the [ItemClickEvent](/api-reference/10%20UI%20Components/dxTileView/9%20Types/ItemClickEvent '/Documentation/ApiReference/UI_Components/dxTileView/Types/ItemClickEvent/').
+- [direction](/api-reference/10%20UI%20Components/dxTileView/1%20Configuration/direction.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#direction')    
 Specifies TileView orientation.
-- [showScrollbar](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#showScrollbar)    
+- [showScrollbar](/api-reference/10%20UI%20Components/dxTileView/1%20Configuration/showScrollbar.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#showScrollbar')    
 Configures scrollbar visibility. The TileView scrollbar appears at the bottom of the component when **direction** is *"horizontal"* (default) and on the right when **direction** is *"vertical"*.

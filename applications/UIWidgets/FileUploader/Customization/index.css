@@ -1,10 +1,14 @@
+body {
+  padding: 0;
+}
+
 .dx-theme-fluent-typography {
   background-color: white;
 }
 
 #container {
-    height: 525px;
-    border-radius: 15px;
+  height: 525px;
+  border-radius: 15px;
 }
 
 .main-block {
@@ -16,42 +20,17 @@
   height: 100%;
 }
 
+.dx-fileuploader-input-label {
+  color: gray;
+}
+
+/* -- File Uploader -- */
+
 .file-uploader-block {
+  width: 360px;
+  height: 360px;
   background-color: #f5f5f5;
-  width: 40%;
-  height: 47.5%;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
-  padding: 1.5% 1.5%;
   border-radius: 16px;
-}
-
-#notes {
-  margin: 16px;
-}
-
-.note {
-  font-size: 10pt;
-}
-
-.note > span {
-  font-weight: 700;
-}
-
-.dx-fileuploader-input-label{
-    color:gray;
-}
-
-.dx-fileuploader-input-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.dx-fileuploader-input-container {
-  width: 75%;
-  text-align: center;
 }
 
 #file-uploader {
@@ -59,32 +38,38 @@
 }
 
 .dx-fileuploader-content {
+  display: grid;
   height: 100%;
-  anchor-name: --fileuploader-content
+  position: relative;
 }
 
 .dx-fileuploader-input-wrapper {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
+  place-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.dx-fileuploader-files-container {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 35%;
-    height: 30%;
-    overflow-y: auto;
-}
-
-.dx-fileuploader-show-file-list .dx-fileuploader-files-container {
-    padding-top: 0;
+.dx-fileuploader-wrapper {
+  overflow: visible;
 }
 
 .dx-fileuploader-content > .dx-fileuploader-upload-button {
-    visibility: hidden;
+  display: none;
+}
+
+.dx-fileuploader-show-file-list .dx-fileuploader-files-container {
+  padding-top: 0;
+}
+
+.dx-fileuploader-files-container {
+  position: absolute;
+  top: calc(100% + 16px);
+  left: 8px;
+  right: 8px;
+  width: auto;
+  max-height: 180px;
+  overflow-y: auto;
+  box-sizing: border-box;
 }

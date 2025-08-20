@@ -13,6 +13,5 @@ $(() => {
     const fileFive = new File([new Blob(["testing"])], "Image Five.jpg", { type: "text/plain" });
 
     fileUploader.option("value", [fileOne, fileTwo, fileThree, fileFour, fileFive]);
-    //fileUploader.upload();
 });
 

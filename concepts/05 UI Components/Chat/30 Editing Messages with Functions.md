@@ -94,4 +94,6 @@ Alternatively, you can customize conditions for when users can edit messages. Fo
         );
     }
 
+---
+
 [note] A Boolean value must be returned if **allowDeleting** or **allowUpdating** are used as functions.

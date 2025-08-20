@@ -1,5 +1,6 @@
 ---
 id: dxSelectBox.Options.fieldRender
+deprecated: 
 ---
 ---
 ##### shortDescription

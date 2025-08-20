@@ -1,5 +1,6 @@
 ---
 id: dxColorBox.Options.fieldComponent
+deprecated: 
 ---
 ---
 ##### shortDescription

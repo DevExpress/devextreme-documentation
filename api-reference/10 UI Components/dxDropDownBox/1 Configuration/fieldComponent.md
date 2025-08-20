@@ -1,5 +1,6 @@
 ---
 id: dxDropDownBox.Options.fieldComponent
+deprecated: 
 ---
 ---
 ##### shortDescription

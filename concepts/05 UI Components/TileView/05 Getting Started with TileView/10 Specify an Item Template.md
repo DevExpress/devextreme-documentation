@@ -3,7 +3,7 @@
 
 ##### jQuery
 
-At this point, tiles display text defined in the **items[]**.[text](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#text) property. To customize tile content, define [templates](/Documentation/Guide/UI_Components/Common/Templates/). Specify **items[]**.[template](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#template) to customize a specific item and [itemTemplate](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemTemplate) to customize all items. This example uses the **itemTemplate** property:
+At this point, tiles display text defined in the **items[]**.[text](/api-reference/_hidden/CollectionWidgetItem/text.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#text') property. To customize tile content, define [templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates '/Documentation/Guide/UI_Components/Common/Templates/'). Specify **items[]**.[template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#template') to customize a specific item and [itemTemplate](/api-reference/10%20UI%20Components/dxTileView/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemTemplate') to customize all items. This example uses the **itemTemplate** property:
 
     <!-- tab: index.js -->
     $(function() {
@@ -35,7 +35,7 @@ At this point, tiles display text defined in the **items[]**.[text](/Documentati
 
 ##### Angular
 
-At this point, tiles display text defined in the **items[]**.[text](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#text) property. To customize tile content, define [templates](/Documentation/Guide/UI_Components/Common/Templates/). Specify **items[]**.[template](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#template) to customize a specific item and [itemTemplate](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemTemplate) to customize all items. This example uses the **itemTemplate** property:
+At this point, tiles display text defined in the **items[]**.[text](/api-reference/_hidden/CollectionWidgetItem/text.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#text') property. To customize tile content, define [templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates '/Documentation/Guide/UI_Components/Common/Templates/'). Specify **items[]**.[template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#template') to customize a specific item and [itemTemplate](/api-reference/10%20UI%20Components/dxTileView/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemTemplate') to customize all items. This example uses the **itemTemplate** property:
 
     <!-- tab: app.component.html -->
     <dx-tile-view
@@ -55,7 +55,7 @@ At this point, tiles display text defined in the **items[]**.[text](/Documentati
 
 ##### Vue
 
-At this point, tiles display text defined in the **items[]**.[text](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#text) property. To customize tile content, define [templates](/Documentation/Guide/UI_Components/Common/Templates/). Specify **items[]**.[template](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#template) to customize a specific item and [itemTemplate](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemTemplate) to customize all items. This example uses the **itemTemplate** property:
+At this point, tiles display text defined in the **items[]**.[text](/api-reference/_hidden/CollectionWidgetItem/text.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#text') property. To customize tile content, define [templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates '/Documentation/Guide/UI_Components/Common/Templates/'). Specify **items[]**.[template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#template') to customize a specific item and [itemTemplate](/api-reference/10%20UI%20Components/dxTileView/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemTemplate') to customize all items. This example uses the **itemTemplate** property:
 
     <!-- tab: App.vue -->
     <template>
@@ -77,7 +77,7 @@ At this point, tiles display text defined in the **items[]**.[text](/Documentati
 
 ##### React
 
-At this point, tiles display text defined in the **items[]**.[text](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#text) property. To customize tile content, define [templates](/Documentation/Guide/UI_Components/Common/Templates/). Specify **items[]**.[render](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#render) or **items[]**.[component](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#component) to customize a specific item and [itemRender](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemRender) or [itemComponent](/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemComponent) to customize all items. This example uses the **itemRender** property:
+At this point, tiles display text defined in the **items[]**.[text](/api-reference/_hidden/CollectionWidgetItem/text.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#text') property. To customize tile content, define [templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates '/Documentation/Guide/UI_Components/Common/Templates/'). Specify **items[]**.[render](/api-reference/_hidden/CollectionWidgetItem/render.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#render') or **items[]**.[component](/api-reference/_hidden/CollectionWidgetItem/component.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/items/#component') to customize a specific item and [itemRender](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemRender.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemRender') or [itemComponent](/api-reference/10%20UI%20Components/CollectionWidget/1%20Configuration/itemComponent.md '/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#itemComponent') to customize all items. This example uses the **itemRender** property:
 
     <!-- tab: App.tsx -->
     function TileRender(data: { icon: string; title: string; text: string }): JSX.Element {

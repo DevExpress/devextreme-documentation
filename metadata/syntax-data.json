@@ -10890,6 +10890,11 @@
     "dxDateBoxOptions.disabledDates": {
       "vue": "disabled-dates"
     },
+    "dxDateBoxOptions.fieldAddons": {
+      "angular": "dxo-field-addons",
+      "react": "FieldAddons",
+      "vue": "DxFieldAddons"
+    },
     "dxDateBoxOptions.inputAttr": {
       "vue": "input-attr"
     },
@@ -10987,6 +10992,11 @@
     },
     "dxDateRangeBoxOptions.endDateText": {
       "vue": "end-date-text"
+    },
+    "dxDateRangeBoxOptions.fieldAddons": {
+      "angular": "dxo-field-addons",
+      "react": "FieldAddons",
+      "vue": "DxFieldAddons"
     },
     "dxDateRangeBoxOptions.inputAttr": {
       "vue": "input-attr"
@@ -12142,6 +12152,11 @@
     "dxDropDownEditorOptions.dropDownOptions": {
       "vue": "drop-down-options"
     },
+    "dxDropDownEditorOptions.fieldAddons": {
+      "angular": "dxo-field-addons",
+      "react": "FieldAddons",
+      "vue": "DxFieldAddons"
+    },
     "dxDropDownEditorOptions.maskChar": {
       "vue": "mask-char"
     },
@@ -12180,6 +12195,11 @@
     },
     "dxDropDownListOptions.displayValue": {
       "vue": "display-value"
+    },
+    "dxDropDownListOptions.fieldAddons": {
+      "angular": "dxo-field-addons",
+      "react": "FieldAddons",
+      "vue": "DxFieldAddons"
     },
     "dxDropDownListOptions.fieldTemplate": {
       "vue": "field-template"
@@ -18075,6 +18095,11 @@
     "dxSelectBoxOptions.dropDownOptions": {
       "vue": "drop-down-options"
     },
+    "dxSelectBoxOptions.fieldAddons": {
+      "angular": "dxo-field-addons",
+      "react": "FieldAddons",
+      "vue": "DxFieldAddons"
+    },
     "dxSelectBoxOptions.fieldTemplate": {
       "vue": "field-template"
     },
@@ -21308,6 +21333,17 @@
     },
     "exportInfo.fileName": {
       "vue": "file-name"
+    },
+    "fieldAddons": {
+      "angular": "dxo-field-addons",
+      "react": "FieldAddons",
+      "vue": "DxFieldAddons"
+    },
+    "fieldAddons.afterTemplate": {
+      "vue": "after-template"
+    },
+    "fieldAddons.beforeTemplate": {
+      "vue": "before-template"
     },
     "fieldInfo": {
       "angular": "dxo-field-info",

@@ -2,6 +2,7 @@
 id: dxColorBox.Options.fieldTemplate
 type: template
 default: null
+dep: dxDropDownEditor.Options.fieldAddons
 ---
 ---
 ##### shortDescription

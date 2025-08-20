@@ -8,8 +8,16 @@
 <td><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxCardView/Configuration/columnChooser/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxCardView/Configuration/columnChooser/#searchTimeout">searchTimeout</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxCardView/Configuration/columns/headerFilter/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxCardView/Configuration/columns/headerFilter/#searchMode">searchMode</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxCardView/Configuration/headerFilter/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxCardView/Configuration/headerFilter/#searchTimeout">searchTimeout</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxCardView/Types/ColumnProperties/headerFilter/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxCardView/Types/ColumnProperties/headerFilter/#searchMode">searchMode</a></td>
 </tr>
 <tr>
+<td>ColorBox</td>
+<td><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxColorBox/Configuration/#fieldComponent">fieldComponent</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxColorBox/Configuration/#fieldRender">fieldRender</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxColorBox/Configuration/#fieldTemplate">fieldTemplate</a></td>
+</tr>
+<tr>
 <td>DataGrid</td>
 <td><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxDataGrid/Configuration/columnChooser/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxDataGrid/Configuration/columnChooser/#searchTimeout">searchTimeout</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#searchMode">searchMode</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxDataGrid/Configuration/#rowComponent">rowComponent</a><br><b>rowDragging.</b><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#filter">filter</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxDataGrid/Configuration/#rowRender">rowRender</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxDataGrid/Configuration/#rowTemplate">rowTemplate</a></td>
+</tr>
+<tr>
+<td>DropDownBox</td>
+<td><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxDropDownBox/Configuration/#fieldComponent">fieldComponent</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxDropDownBox/Configuration/#fieldRender">fieldRender</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxDropDownBox/Configuration/#fieldTemplate">fieldTemplate</a></td>
 </tr>
 <tr>
 <td>Gantt</td>
@@ -30,6 +38,14 @@
 <tr>
 <td>Scheduler</td>
 <td><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxScheduler/Configuration/#dropDownAppointmentComponent">dropDownAppointmentComponent</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxScheduler/Configuration/#dropDownAppointmentRender">dropDownAppointmentRender</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxScheduler/Configuration/#dropDownAppointmentTemplate">dropDownAppointmentTemplate</a><br><b>views.</b><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxScheduler/Configuration/views/#dropDownAppointmentComponent">dropDownAppointmentComponent</a><br><b>views.</b><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxScheduler/Configuration/views/#dropDownAppointmentRender">dropDownAppointmentRender</a><br><b>views.</b><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxScheduler/Configuration/views/#dropDownAppointmentTemplate">dropDownAppointmentTemplate</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxScheduler/Methods/scrollToTime(hours_minutes_date)">scrollToTime(hours, minutes, date)</a></td>
+</tr>
+<tr>
+<td>SelectBox</td>
+<td><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxSelectBox/Configuration/#fieldComponent">fieldComponent</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxSelectBox/Configuration/#fieldRender">fieldRender</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxSelectBox/Configuration/#fieldTemplate">fieldTemplate</a></td>
+</tr>
+<tr>
+<td>TagBox</td>
+<td><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxTagBox/Configuration/#fieldComponent">fieldComponent</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxTagBox/Configuration/#fieldRender">fieldRender</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxTagBox/Configuration/#fieldTemplate">fieldTemplate</a></td>
 </tr>
 <tr>
 <td>TreeList</td>

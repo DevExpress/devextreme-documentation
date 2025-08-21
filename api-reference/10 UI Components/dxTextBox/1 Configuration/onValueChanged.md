@@ -25,4 +25,5 @@ The UI component's previous value.
 The UI component's new value.
 
 ---
-<!-- Description goes here -->
+
+#include editors-onvaluechanged-validation-note

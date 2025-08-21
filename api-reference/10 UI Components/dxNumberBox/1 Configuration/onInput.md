@@ -19,4 +19,5 @@ The UI component's instance.
 #include common-ref-eventparam
 
 ---
-<!-- Description goes here -->
+
+#include editors-oninput-validation-note

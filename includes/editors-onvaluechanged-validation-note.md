@@ -1,0 +1,1 @@
+[note] The component invokes [validation](/Documentation/Guide/UI_Components/Common/UI_Widgets/Data_Validation/) on each value change. To validate {WidgetName} value on each input, add *"input"* to the [valueChangeEvent]({basewidgetpath}/Configuration/#valueChangeEvent) property.

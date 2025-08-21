@@ -21283,6 +21283,11 @@
     "eventObject.delegateTarget": {
       "vue": "delegate-target"
     },
+    "eventObject.originalEvent": {
+      "angular": "dxo-original-event",
+      "react": "OriginalEvent",
+      "vue": "DxOriginalEvent"
+    },
     "excelPivotGridCell": {
       "angular": "dxo-excel-pivot-grid-cell",
       "react": "ExcelPivotGridCell",

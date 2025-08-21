@@ -9,9 +9,9 @@ Specifies the root key. Applies if [dataStructure](/api-reference/10%20UI%20Comp
 
 ---
 
-Assign an item's **parentId** to the value of this property to specify a root item.
+Assign a node's **parentId** to the value of this property to specify a root node.
 
-[note] TreeList does not display items that have an **id** value identical to **rootValue**. To ensure the component displays data correctly, specify a **rootValue** that does not match item **id** properties.
+[note] TreeList does not display nodes that have an **id** value identical to **rootValue**. To ensure the component displays data correctly, specify a **rootValue** that does not match node **id** properties.
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/SimpleArrayPlainStructure/"

@@ -24,7 +24,7 @@ The field's new value.
 
 ---
 
-[note] Form does not raise the **FieldDataChangedEvent** for items that utilize a [template](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#template). To raise this event when a template editor changes value, call the [updateData(dataField, value)](/Documentation/ApiReference/UI_Components/dxForm/Methods/#updateDatadataField_value) method in the template editor's **onValueChanged** handler.
+[note] Form does not raise the **FieldDataChangedEvent** for items that utilize a [template](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/template.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#template'). To raise this event when a template editor changes value, call the [updateData(dataField, value)](/api-reference/10%20UI%20Components/dxForm/3%20Methods/updateData(dataField_value).md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#updateDatadataField_value') method in the template editor's **onValueChanged** handler.
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-form-change-certain-items-based-on-value-of-another-item"

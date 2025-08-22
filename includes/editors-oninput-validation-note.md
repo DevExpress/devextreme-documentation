@@ -1,0 +1,1 @@
+[note] Do not [validate](/Documentation/ApiReference/UI_Components/dxValidator/Methods/#validate) the component value in this event handler. To invoke validation on each input, add *"input"* to the [valueChangeEvent]({basewidgetpath}/Configuration/#valueChangeEvent) property.

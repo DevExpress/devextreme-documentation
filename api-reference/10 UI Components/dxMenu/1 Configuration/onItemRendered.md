@@ -28,7 +28,7 @@ The current item's index.
 
 [note]
 
-When Menu is in [adaptive mode](/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#adaptivityEnabled), the component passes a [TreeView](/Documentation/Guide/UI_Components/TreeView/Overview/) item to **ItemRenderedEvent**.[itemElement](/Documentation/ApiReference/UI_Components/dxMenu/Types/ItemRenderedEvent/#itemElement) instead of a Menu item. To implement separate **onItemRendered** logic for the component's adaptive and default modes, check if **itemElement** contains the `dx-treeview-item` class:
+When Menu is in [adaptive mode](/api-reference/10%20UI%20Components/dxMenu/1%20Configuration/adaptivityEnabled.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#adaptivityEnabled'), the component passes a [TreeView](/concepts/05%20UI%20Components/TreeView/02%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/TreeView/Overview/') item to **ItemRenderedEvent**.[itemElement](/api-reference/40%20Common%20Types/13%20events/ItemInfo/itemElement.md '/Documentation/ApiReference/UI_Components/dxMenu/Types/ItemRenderedEvent/#itemElement') instead of a Menu item. To implement separate **onItemRendered** logic for the component's adaptive and default modes, check if **itemElement** contains the `dx-treeview-item` class:
 
 ---
 

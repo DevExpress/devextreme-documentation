@@ -5,7 +5,10 @@ default: 0
 ---
 ---
 ##### shortDescription
-Specifies the [parent ID](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/parentIdExpr.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#parentIdExpr') value of the root item.
+Specifies the root key.
 
 ---
-[note] A data item's [id](/api-reference/_hidden/dxTreeViewItem/id.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/items/#id') should not match **rootValue** in the 'tree' [data structure](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/dataStructure.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#dataStructure').
+
+Assign an item's [parentId](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/items/#parentId) to the value of this property to specify a root item.
+
+[note] To ensure the component displays data correctly, specify a **rootValue** that does not match **items[]**.[id](/api-reference/_hidden/dxTreeViewItem/id.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/items/#id') properties.

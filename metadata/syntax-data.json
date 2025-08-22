@@ -10013,6 +10013,9 @@
     "dxChatOptions.editing.allowUpdating": {
       "vue": "allow-updating"
     },
+    "dxChatOptions.emptyViewTemplate": {
+      "vue": "empty-view-template"
+    },
     "dxChatOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"
     },
@@ -21316,6 +21319,11 @@
     },
     "eventObject.delegateTarget": {
       "vue": "delegate-target"
+    },
+    "eventObject.originalEvent": {
+      "angular": "dxo-original-event",
+      "react": "OriginalEvent",
+      "vue": "DxOriginalEvent"
     },
     "excelPivotGridCell": {
       "angular": "dxo-excel-pivot-grid-cell",

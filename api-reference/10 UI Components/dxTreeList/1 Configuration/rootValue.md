@@ -18,5 +18,5 @@ Assign a node's **parentId** to the value of this property to specify a root nod
 }
 
 #####See Also#####
-- [parentIdExpr](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#parentIdExpr)
-- [keyExpr](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#keyExpr)
+- [parentIdExpr](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/parentIdExpr.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#parentIdExpr')
+- [keyExpr](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#keyExpr')

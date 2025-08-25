@@ -1,28 +1,29 @@
 - **Data Binding**    
 TagBox supports loading and updating data from different [data source](/Documentation/ApiReference/Data_Layer/DataSource/) types.
 
+- **Custom Tags**    
+You can customize TagBox tags as your needs dictate. Implement the [tagTemplate](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#tagTemplate) property and specify custom HTML markup for tag containers.
+
 - **Selection Options**    
-TagBox supports multiple item selection. Specify the maximum number of tags the component displays by configuring [maxDisplayedTags](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#maxDisplayedTags). Define [showSelectionControls](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#showSelectionControls) to configure the visbility of selection checkboxes, including the "Select All" checkbox.
+TagBox supports configurable selection functionality. You can specify the [maximum number of tags](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#maxDisplayedTags) the component displays and [enable selection checkboxes](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#showSelectionControls) (including a "Select All" checkbox).
 
 - **Data Entry**    
 The component allows users to add new values to its dataset. Configure [acceptCustomValue](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#acceptCustomValue) and [onCustomItemCreating](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#onCustomItemCreating) to implement this functionality.
 
-- **Searching**    
-Set [searchEnabled](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#searchEnabled) to `true` to allow users to search TagBox values. Configure search options with the following properties:
-    - [searchMode](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#searchMode)
-    - [searchExpr](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#searchExpr)
-    - [searchTimeout](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#searchTimeout)
+- **Searching and Filtering**    
+The TagBox component supports [configurable search functionality](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#searchEnabled). You can specify a [search mode](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#searchMode), change the component [search delay](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#searchTimeout), and configure which [item fields to search](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#searchExpr). TagBox also supports minimum and maximum search query definitions.
 
 - **Grouping**    
-You can separate TagBox items into groups. To do this, enable the [grouped](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#grouped) property and specify **DataSource**.[group](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group) in the TagBox [dataSource](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#dataSource).
+You can group items within the TagBox dropdown list. To enable grouping, set [grouped](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#grouped) to `true` and specify **DataSource**.[group](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#group) in the component [dataSource](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#dataSource).
 
-- **Customization**    
-You can customize the appearance of TagBox visual elements with the following properties:
-    - [label](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#label)
-    - [labelMode](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#labelMode)
-    - [tagTemplate](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#tagTemplate)
-    - [fieldTemplate](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#fieldTemplate)
-    - [stylingMode](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#stylingMode)
+- **Paging**    
+DevExtreme TagBox supports paging within the component dropdown list. You can implement this feature to load large data sets in chunks. To enable paging, specify a [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/) instance as the TagBox **dataSource** and configure the [paginate](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#paginate) and [pageSize](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#pageSize) properties.
 
-- **Configurable Buttons**    
-TagBox supports rendering buttons in its input area. Enable [showDropDownButton](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#showDropDownButton) and [showClearButton](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#showClearButton) to display the component's predefined buttons. Configure custom buttons in the [buttons[]](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/buttons/) array.
+- **Form Support**    
+TagBox is a supported editor type in the DevExtreme [Form](/Documentation/Guide/UI_Components/Form/Overview/) component. To integrate TagBox within a Form, set a Form item's [editorType](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType) property to *"dxTagBox"*.
+
+- **Customization Settings**    
+You can customize TagBox visual elements as your needs dictate, including the component [label](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#label) and [styling mode](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#stylingMode). TagBox also supports input area [buttons](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/buttons/) and includes two predefined options: a [clear button](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#showClearButton) and a [dropdown button](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#showDropDownButton).
+
+- **Customization with Templates**    
+DevExtreme TagBox supports extended visual element customization with templates. You can specify custom HTML markup for the following component elements: <a href="/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#tagTemplate">tags</a>, [dropdown items](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#itemTemplate), the TagBox [input field](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#fieldTemplate), and [dropdown group headers](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#groupTemplate).

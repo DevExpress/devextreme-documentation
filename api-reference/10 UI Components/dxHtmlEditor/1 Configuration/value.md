@@ -1,12 +1,22 @@
 [note]
 
-HTML Editor automatically removes redundant tags:
+- When HTML Editor loads its **value**, the component removes redundant tags:
 
-    <!-- from -->
-    <p><span>He</span><em><span>llo</span></em></p>
+        <!-- from -->
+        <p><span>Hello</span><em><span>World</span></em></p>
 
-    <!-- to -->
-    <p>He<em>llo</em></p>
+        <!-- to -->
+        <p>Hello<em>World</em></p>
+
+- The component merges consecutive inline tags that match and contain identical attributes:
+
+        <!-- from -->
+        <a href="/">Hello</a><a href="/">World</a>
+        
+        <!-- to -->
+        <a href="/">HelloWorld</a>
+
+    To avoid this behavior, separate identical inline tags with other tags.
 
 [/note]
 

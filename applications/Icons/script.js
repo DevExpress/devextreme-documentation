@@ -48,7 +48,7 @@
     "clearcircle",
     "clearformat",
     "clearsquare",
-    "clipboardpastesmart",
+    "clipboardpastesparkle",
     "clipboardtasklist",
     "clock",
     "close",

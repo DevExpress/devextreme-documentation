@@ -1,4 +1,4 @@
-HTML Editor supports the following HTML tags and attributes.
+The HTML Editor supports the following HTML tags and attributes.
 
 ### HTML Tags
 
@@ -23,7 +23,7 @@ HTML Editor supports the following HTML tags and attributes.
 
 [note]
 
-When HTML Editor loads its [value](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value), the component merges consecutive inline tags that match and contain identical attributes:
+When the HTML Editor loads its [value](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value), the component merges consecutive inline tags that match and contain identical attributes:
 
       <!-- from -->
       <a href="/">Hello</a><a href="/">World</a>
@@ -93,4 +93,4 @@ To avoid this behavior, separate identical inline tags with other tags.
    </tr>
 </table>
 
-[note] The mentioned attributes are generated automatically. If you pass custom values such as custom classes, HTML Editor may not properly process these attributes.
+[note] The mentioned attributes are generated automatically. If you pass custom values such as custom classes, the HTML Editor may not properly process these attributes.

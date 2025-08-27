@@ -1,6 +1,6 @@
 [note]
 
-- When HTML Editor loads its **value**, the component removes redundant tags:
+- When the HTML Editor loads its **value**, the component removes redundant tags:
 
         <!-- from -->
         <p><span>Hello</span><em><span>World</span></em></p>

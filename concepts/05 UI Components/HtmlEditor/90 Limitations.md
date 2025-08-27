@@ -1,4 +1,4 @@
-HTML Editor is designed to create rich text and export it in HTML. You can also use the component to parse HTML content (for example, if you set [value](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value') to markup). However, this technique may prove ineffective because HTML Editor does not support all HTML features. The following limitations apply:
+The HTML Editor is designed to create rich text and export it in HTML. You can also use this component to parse HTML content (for example, if you set [value](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value') to markup). However, since the HTML Editor does not support all HTML features, the following limitations apply:
 
 - If you use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM" target="_blank">Shadow DOM</a>, the HTML Editor component may experience issues in some browsers (see <a href="https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot#browser_compatibility" target="_blank">getSelection</a>).
 
@@ -6,7 +6,7 @@ HTML Editor is designed to create rich text and export it in HTML. You can also 
 
 - HTML Editor saves only a limited subset of [tags and attributes](/concepts/05%20UI%20Components/HtmlEditor/05%20Tags%20and%20Attributes.md '/Documentation/Guide/UI_Components/HtmlEditor/Tags_and_Attributes/'). All other formatting attributes and features are discarded.
 
-- When HTML Editor loads its [value](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value), the component removes redundant tags:
+- When the HTML Editor loads its [value](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value), the component removes redundant tags:
 
         <!-- from -->
         <p><span>Hello</span><em><span>World</span></em></p>
@@ -24,7 +24,7 @@ HTML Editor is designed to create rich text and export it in HTML. You can also 
 
     To avoid this behavior, separate identical inline tags with other tags.
 
-- HTML Editor trims extra space and tab characters passed to the [value](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value') option.
+- The HTML Editor trims extra space and tab characters passed to the [value](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value') option.
 
 - The component is not designed to convert text enclosed in curly brackets (`{}`) to a variable. Content in curly brackets is always treated as plain text.
 

@@ -1,4 +1,4 @@
-const iconNames = [
+﻿const iconNames = [
     "accountbox",
     "activefolder",
     "add",
@@ -48,6 +48,7 @@ const iconNames = [
     "clearcircle",
     "clearformat",
     "clearsquare",
+    "clipboardpastesmart",
     "clipboardtasklist",
     "clock",
     "close",

@@ -33,5 +33,8 @@ If the previous steps do not resolve your issue, run the following command to cl
 If the issue persists, create a ticket in the [DevExpress Support Center](https://supportcenter.devexpress.com/). Include the following information in your ticket:
 
 - Node.js and NPM versions.
-- NPM log file (found in `C:\Users\your_username\AppData\Local\npm-cache\_logs`).
 - Commands you executed.
+- The NPM log file. You can find this file in the following directories:
+    - `C:\Users\your_username\AppData\Local\npm-cache\_logs` on Windows
+    - `/Users/your_username/.npm/_logs/` on macOS
+    - `~/.npm/_logs/` on Linux

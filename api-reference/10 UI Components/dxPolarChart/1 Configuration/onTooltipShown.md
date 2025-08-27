@@ -15,7 +15,7 @@ The UI component's instance.
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.target): basePointObject | dxChartAnnotationConfig | any
+##### field(e.target): Object
 The series point whose tooltip is shown; described in the [Point](/api-reference/10%20UI%20Components/dxPolarChart/7%20Chart%20Elements/Point '{basewidgetpath}/Chart_Elements/Point/') section.
 
 ---

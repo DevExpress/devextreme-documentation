@@ -15,7 +15,7 @@ The UI component's instance.
 ##### field(e.element): DxElement
 The UI component's container.
 
-##### field(e.target): basePointObject
+##### field(e.target): Object
 The series point whose selection state has been changed; described in the [Point](/api-reference/10%20UI%20Components/dxChart/7%20Chart%20Elements/Point '{basewidgetpath}/Chart_Elements/Point/') section.
 
 ---

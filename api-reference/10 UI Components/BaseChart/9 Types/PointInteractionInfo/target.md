@@ -1,6 +1,6 @@
 ---
 id: PointInteractionInfo.target
-type: basePointObject
+type: Object
 ---
 ---
 ##### shortDescription

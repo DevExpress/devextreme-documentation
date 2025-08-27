@@ -6332,11 +6332,6 @@
       "react": "Marker",
       "vue": "DxMarker"
     },
-    "basePointObject": {
-      "angular": "dxo-base-point-object",
-      "react": "BasePointObject",
-      "vue": "DxBasePointObject"
-    },
     "basePointObject.fullState": {
       "vue": "full-state"
     },
@@ -22567,11 +22562,6 @@
       "angular": "dxo-polar-chart-series-object",
       "react": "PolarChartSeriesObject",
       "vue": "DxPolarChartSeriesObject"
-    },
-    "polarPointObject": {
-      "angular": "dxo-polar-point-object",
-      "react": "PolarPointObject",
-      "vue": "DxPolarPointObject"
     },
     "positionConfig": {
       "angular": "dxo-position-config",

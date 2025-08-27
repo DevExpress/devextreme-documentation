@@ -23,7 +23,7 @@ Localized empty view texts.
 A template name or container.
 
 ---
-When the Chat data source contains no messages, the component displays the empty view. To specify custom empty view markup, implement this property. To retain localized empty view texts, integrate the `data.texts.message` and `data.texts.prompt` properties in your markup:
+When the Chat data source contains no messages, the component displays an empty chat view. To specify custom empty view markup, implement this property. To retain localized empty view texts, integrate the `data.texts.message` and `data.texts.prompt` properties in your markup:
 
 ---
 

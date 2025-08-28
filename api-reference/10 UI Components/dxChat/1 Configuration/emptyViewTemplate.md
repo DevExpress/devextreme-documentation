@@ -13,14 +13,14 @@ Empty view data.
 ##### field(data.component): dxChat
 The Chat instance.
 
-##### field(data.data): Object
-Localized empty view texts.
-
 ##### param(itemElement): DxElement
 #include common-ref-elementparam with { element: "empty view" }
 
 ##### return: String | Element | jQuery
 A template name or container.
+
+##### field(data.texts): Object
+<!-- Description goes here -->
 
 ---
 When the Chat data source contains no messages, the component displays an empty chat view. To specify custom empty view markup, implement this property. To retain localized empty view texts, integrate the `data.texts.message` and `data.texts.prompt` properties in your markup:

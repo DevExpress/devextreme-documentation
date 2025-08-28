@@ -1,3 +1,5 @@
+[note] If you experience issues when you create a new application with DevExtreme CLI, refer to the following troubleshooting topic: [DevExtreme CLI Issues - Create a New Application](/Documentation/Guide/Troubleshooting/DevExtreme_CLI_Issues/Create_a_New_Application/)
+
 ---
 
 ##### Angular

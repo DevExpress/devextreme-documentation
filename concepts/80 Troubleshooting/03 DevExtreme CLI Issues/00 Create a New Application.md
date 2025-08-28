@@ -1,4 +1,4 @@
-To resolve issues when you [create a new application with DevExtreme CLI](/Documentation/Guide/Common/DevExtreme_CLI/#DevExtreme_Application/Create_a_New_Application), perform the following troubleshooting steps.
+To resolve issues when you [create a new application with DevExtreme CLI](/Documentation/Guide/Common/DevExtreme_CLI/#DevExtreme_Application/Create_a_New_Application), perform the following troubleshooting steps:
 
 ## Check Node.js and NPM Versions
 

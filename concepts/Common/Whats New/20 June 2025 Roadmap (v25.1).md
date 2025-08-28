@@ -1,3 +1,5 @@
+[important] [DevExtreme v25.1](https://js.devexpress.com/New/25_1/) is now available. Explore our newest features/capabilities.
+
 [note]
 
 The information contained in this help topic includes our current/projected development plans. Please note that this information is being shared for INFORMATIONAL PURPOSES ONLY and does not represent a binding commitment on the part of Developer Express Inc. This roadmap and the features/products listed within it are subject to change. You should not rely on or use this information to help make a purchase decision about Developer Express Inc products. 
@@ -6,7 +8,7 @@ The information contained in this help topic includes our current/projected deve
 
 To know more about the planned features and review the current development status, see the link below:
 
-<a class="btn btn-accent btn-icon btn-docs" href="https://js.devexpress.com/Roadmap/" target="_blank" title="Roadmap v25.1">
+<a class="btn btn-accent btn-icon btn-docs" href="https://community.devexpress.com/Blogs/javascript/archive/2025/02/21/devextreme-roadmap-v25-1.aspx" target="_blank" title="Roadmap v25.1">
     <span>Roadmap v25.1</span>
 </a>
 
@@ -18,56 +20,56 @@ Once you've had the opportunity to review our June 2025 Roadmap, take a moment t
 
 ##### jQuery
 - New Components  
-    - [CardView](https://js.devexpress.com/Roadmap/#cardview)
-    - [Stepper](https://js.devexpress.com/Roadmap/#stepper)
-- [AI-powered Extensions](https://js.devexpress.com/Roadmap/#ai-powered-extensions)
+    - CardView
+    - Stepper
+- AI-powered Extensions
 - Chat Enhancements  
-    - [Editing and Deleting Messages](https://js.devexpress.com/Roadmap/#editing-and-deleting-messages) 
-    - [Image Rendering](https://js.devexpress.com/Roadmap/#image-rendering)
-- [Scheduler – Toolbar Customization](https://js.devexpress.com/Roadmap/#scheduler-toolbar-customization)
-- [Map – Custom Route Modes](https://js.devexpress.com/Roadmap/#map-custom-route-modes)
-- [Accessibility](https://js.devexpress.com/Roadmap/#accessibility)
+    - Editing and Deleting Messages 
+    - Image Rendering
+- Scheduler – Toolbar Customization
+- Map – Custom Route Modes
+- Accessibility
 - ASP.NET Core
-    - [Rich Text Editor – Zoom](https://js.devexpress.com/jQuery/Roadmap/#rich-text-editor-zoom)
+    - Rich Text Editor – Zoom
 
 ##### Angular
 - New Components  
-    - [CardView](https://js.devexpress.com/Roadmap/#cardview)
-    - [Stepper](https://js.devexpress.com/Roadmap/#stepper)
-- [AI-powered Extensions](https://js.devexpress.com/Roadmap/#ai-powered-extensions)
+    - CardView
+    - Stepper
+- AI-powered Extensions
 - Chat Enhancements  
-    - [Editing and Deleting Messages](https://js.devexpress.com/Roadmap/#editing-and-deleting-messages) 
-    - [Image Rendering](https://js.devexpress.com/Roadmap/#image-rendering)
-- [Scheduler – Toolbar Customization](https://js.devexpress.com/Roadmap/#scheduler-toolbar-customization)
-- [Map – Custom Route Modes](https://js.devexpress.com/Roadmap/#map-custom-route-modes)
-- [Accessibility](https://js.devexpress.com/Roadmap/#accessibility)
+    - Editing and Deleting Messages 
+    - Image Rendering
+- Scheduler – Toolbar Customization
+- Map – Custom Route Modes
+- Accessibility
 - DevExtreme CLI  
-    - [Create a Standalone Angular Application](https://js.devexpress.com/Angular/Roadmap/#create-a-standalone-angular-application)
+    - Create a Standalone Angular Application
 
 ##### Vue
 - New Components  
-    - [CardView](https://js.devexpress.com/Roadmap/#cardview)
-    - [Stepper](https://js.devexpress.com/Roadmap/#stepper)
-- [AI-powered Extensions](https://js.devexpress.com/Roadmap/#ai-powered-extensions)
+    - CardView
+    - Stepper
+- AI-powered Extensions
 - Chat Enhancements  
-    - [Editing and Deleting Messages](https://js.devexpress.com/Roadmap/#editing-and-deleting-messages) 
-    - [Image Rendering](https://js.devexpress.com/Roadmap/#image-rendering)
-- [Scheduler – Toolbar Customization](https://js.devexpress.com/Roadmap/#scheduler-toolbar-customization)
-- [Map – Custom Route Modes](https://js.devexpress.com/Roadmap/#map-custom-route-modes)
-- [Accessibility](https://js.devexpress.com/Roadmap/#accessibility)
+    - Editing and Deleting Messages 
+    - Image Rendering
+- Scheduler – Toolbar Customization
+- Map – Custom Route Modes
+- Accessibility
 
 ##### React
 - New Components  
-    - [CardView](https://js.devexpress.com/Roadmap/#cardview)
-    - [Stepper](https://js.devexpress.com/Roadmap/#stepper)
-- [AI-powered Extensions](https://js.devexpress.com/Roadmap/#ai-powered-extensions)
+    - CardView
+    - Stepper
+- AI-powered Extensions
 - Chat Enhancements  
-    - [Editing and Deleting Messages](https://js.devexpress.com/Roadmap/#editing-and-deleting-messages) 
-    - [Image Rendering](https://js.devexpress.com/Roadmap/#image-rendering)
-- [Scheduler – Toolbar Customization](https://js.devexpress.com/Roadmap/#scheduler-toolbar-customization)
-- [Map – Custom Route Modes](https://js.devexpress.com/Roadmap/#map-custom-route-modes)
-- [Accessibility](https://js.devexpress.com/Roadmap/#accessibility)
+    - Editing and Deleting Messages 
+    - Image Rendering
+- Scheduler – Toolbar Customization
+- Map – Custom Route Modes
+- Accessibility
 - DevExtreme CLI  
-    - [Create React Applications with Vite and Next.js](https://js.devexpress.com/React/Roadmap/#create-a-standalone-angular-application)
+    - Create React Applications with Vite and Next.js
 
 ---

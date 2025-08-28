@@ -3,4 +3,87 @@
 Fields that provide information about the event.
 
 ---
-In addition to the fields described in this section, **EventObject** contains <a href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank">native JavaScript event</a> properties.
+In addition to the fields described in this section, **EventObject** contains the following [native JavaScript event](https://developer.mozilla.org/en-US/docs/Web/Events) properties:
+
+<table class="multicolumn-list">
+    <tr>
+        <td>
+            <ul>
+                <li>altKey</li>
+                <li>altitudeAngle</li>
+                <li>azimuthAngle</li>
+                <li>bubbles</li>
+                <li>button</li>
+                <li>buttons</li>
+                <li>cancelable</li>
+                <li>cancelBubble</li>
+                <li>changedTouches</li>
+                <li>char</li>
+                <li>charCode</li>
+                <li>clipboardData</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>code</li>
+                <li>composed</li>
+                <li>ctrlKey</li>
+                <li>defaultPrevented</li>
+                <li>delegateTarget</li>
+                <li>deltaMode</li>
+                <li>deltaX</li>
+                <li>deltaY</li>
+                <li>deltaZ</li>
+                <li>detail</li>
+                <li>eventPhase</li>
+                <li>height</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>isComposing</li>
+                <li>isPrimary</li>
+                <li>key</li>
+                <li>keyCode</li>
+                <li>layerX</li>
+                <li>layerY</li>
+                <li>location</li>
+                <li>metaKey</li>
+                <li>movementX</li>
+                <li>movementY</li>
+                <li>offsetX</li>
+                <li>offsetY</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>pointerId</li>
+                <li>pointerType</li>
+                <li>pressure</li>
+                <li>relatedTarget</li>
+                <li>repeat</li>
+                <li>returnValue</li>
+                <li>srcElement</li>
+                <li>shiftKey</li>
+                <li>tangentialPressure</li>
+                <li>target</li>
+                <li>targetTouches</li>
+                <li>tiltX</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>tiltY</li>
+                <li>toElement</li>
+                <li>touches</li>
+                <li>twist</li>
+                <li>view</li>
+                <li>width</li>
+                <li>x</li>
+                <li>y</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+To access fields not specified in this list, utilize the [originalEvent](/Documentation/ApiReference/Common/Object_Structures/EventObject/Fields/#originalEvent) property.

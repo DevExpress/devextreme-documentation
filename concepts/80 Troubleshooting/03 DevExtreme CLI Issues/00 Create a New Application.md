@@ -1,7 +1,5 @@
 To resolve issues when you [create a new application with DevExtreme CLI](/Documentation/Guide/Common/DevExtreme_CLI/#DevExtreme_Application/Create_a_New_Application), perform the following troubleshooting steps.
 
-[important] To ensure commands are executed correctly, run them with administrator privileges.
-
 ## Check Node.js and NPM Versions
 
 Ensure the latest Node.js and NPM are installed on your machine.

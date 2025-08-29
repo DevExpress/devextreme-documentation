@@ -16,7 +16,7 @@
         <!-- to -->
         <a href="/">HelloWorld</a>
 
-    To avoid this behavior, separate identical inline tags with other tags.
+    To avoid this behavior, specify other elements between identical inline tags.
 
 [/note]
 

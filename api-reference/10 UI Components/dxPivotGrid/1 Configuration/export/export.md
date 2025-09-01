@@ -40,7 +40,7 @@ The following instructions show how to enable and configure client-side export:
                 // ...
                 "paths": {
                     // ...
-                    "exceljs": [
+                    "devextreme-exceljs-fork": [
                         "node_modules/devextreme-exceljs-fork/dist/dx-exceljs-fork.min.js"
                     ]
                 }

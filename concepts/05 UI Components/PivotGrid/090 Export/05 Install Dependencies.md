@@ -32,7 +32,8 @@ To export PivotGrid data to Excel, you first need to install the following third
             "paths": {
                 // ...
                 "devextreme-exceljs-fork": [
-                    "node_modules/devextreme-exceljs-fork/dist/dx-exceljs-fork.min.js"
+                    "./node_modules/devextreme-exceljs-fork/index.d.ts",
+                    "./node_modules/devextreme-exceljs-fork/dist/dx-exceljs-fork.min.js",
                 ]
             }
         },

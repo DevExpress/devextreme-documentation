@@ -82,7 +82,8 @@ When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(optio
             "paths": {
                 // ...
                 "devextreme-exceljs-fork": [
-                    "node_modules/devextreme-exceljs-fork/dist/dx-exceljs-fork.min.js"
+                    "./node_modules/devextreme-exceljs-fork/index.d.ts",
+                    "./node_modules/devextreme-exceljs-fork/dist/dx-exceljs-fork.min.js",
                 ]
             }
         },

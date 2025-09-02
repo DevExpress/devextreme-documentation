@@ -59,7 +59,8 @@ You can call this method at any point in your application. The following code ca
             "paths": {
                 // ...
                 "devextreme-exceljs-fork": [
-                    "node_modules/devextreme-exceljs-fork/dist/dx-exceljs-fork.min.js"
+                    "./node_modules/devextreme-exceljs-fork/index.d.ts",
+                    "./node_modules/devextreme-exceljs-fork/dist/dx-exceljs-fork.min.js",
                 ]
             }
         },

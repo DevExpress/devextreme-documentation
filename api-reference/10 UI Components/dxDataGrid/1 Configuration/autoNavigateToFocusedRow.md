@@ -4,7 +4,12 @@ Automatically scrolls the component to the focused row when the [focusedRowKey](
 
 ---
 
-[note] You must specify the component's [height](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/#height) to ensure that the **autoNavigateToFocusedRow** property works properly.
+[note]
+
+- You must specify the component [height](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#height') to ensure that **autoNavigateToFocusedRow** works correctly.
+- When **autoNavigateToFocusedRow** is disabled, the default browser scrolling behavior remains in effect. If you focus a row that is loaded in the {WidgetName} container, the browser scrolls to the focused row.
+
+[/note]
 
 If you set the [remoteOperations](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/) property to **true**, the DataGrid generates additional requests with comparison operators (for example, `<` and `>`). This logic does not work if ODataStore is bound to a table with GUID keys. You need to disable the **autoNavigateToFocusedRow** or **remoteOperations** properties to ensure it operates correctly.
 

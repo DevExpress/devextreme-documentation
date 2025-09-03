@@ -3,7 +3,7 @@ id: dxDataGrid.Options.summary.totalItems.column
 ---
 ---
 ##### shortDescription
-Specifies the summary item data column.
+Specifies the summary item's data column.
 
 ---
 To specify the data column of a summary item, assign a column [name](/api-reference/_hidden/GridBaseColumn/name.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#name'), [data field](/api-reference/_hidden/GridBaseColumn/dataField.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField') or [caption](/api-reference/_hidden/GridBaseColumn/caption.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#caption') to this property. DataGrid uses this column's values to calculate the summary item.

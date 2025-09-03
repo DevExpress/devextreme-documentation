@@ -2298,6 +2298,16 @@
       "react": "_ui_form_OptionChangedEvent",
       "vue": "Dx_ui_form_OptionChangedEvent"
     },
+    "_ui_form_SmartPastedEvent": {
+      "angular": "dxo-ui-form--smart-pasted-event",
+      "react": "_ui_form_SmartPastedEvent",
+      "vue": "Dx_ui_form_SmartPastedEvent"
+    },
+    "_ui_form_SmartPastingEvent": {
+      "angular": "dxo-ui-form--smart-pasting-event",
+      "react": "_ui_form_SmartPastingEvent",
+      "vue": "Dx_ui_form_SmartPastingEvent"
+    },
     "_ui_gallery_ContentReadyEvent": {
       "angular": "dxo-ui-gallery--content-ready-event",
       "react": "_ui_gallery_ContentReadyEvent",
@@ -12897,6 +12907,11 @@
     "dxFormOptions": {
       "vue": "dx-form-options"
     },
+    "dxFormOptions.aiIntegration": {
+      "angular": "dxo-ai-integration",
+      "react": "AiIntegration",
+      "vue": "DxAiIntegration"
+    },
     "dxFormOptions.alignItemLabels": {
       "vue": "align-item-labels"
     },
@@ -12952,6 +12967,12 @@
     "dxFormOptions.onOptionChanged": {
       "vue": "@option-changed"
     },
+    "dxFormOptions.onSmartPasted": {
+      "vue": "@smart-pasted"
+    },
+    "dxFormOptions.onSmartPasting": {
+      "vue": "@smart-pasting"
+    },
     "dxFormOptions.optionalMark": {
       "vue": "optional-mark"
     },
@@ -12989,6 +13010,9 @@
       "angular": "dxo-form-simple-item",
       "react": "DxFormSimpleItem",
       "vue": "DxFormSimpleItem"
+    },
+    "dxFormSimpleItem.aiOptions": {
+      "vue": "ai-options"
     },
     "dxFormSimpleItem.colSpan": {
       "vue": "col-span"
@@ -20847,6 +20871,9 @@
     "enums.FormLabelMode": {
       "vue": "form-label-mode"
     },
+    "enums.FormPredefinedButtonItem": {
+      "vue": "form-predefined-button-item"
+    },
     "enums.FunnelAlgorithm": {
       "vue": "funnel-algorithm"
     },
@@ -22744,6 +22771,11 @@
     },
     "selectionConfiguration.showCheckBoxesMode": {
       "vue": "show-check-boxes-mode"
+    },
+    "smartPasteInfo.aiResult": {
+      "angular": "dxo-ai-result",
+      "react": "AiResult",
+      "vue": "DxAiResult"
     },
     "sorting": {
       "angular": "dxo-sorting",

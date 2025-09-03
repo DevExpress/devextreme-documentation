@@ -6,7 +6,7 @@ The HTML Editor is designed to create rich text and export it in HTML. You can a
 
 - HTML Editor saves only a limited subset of [tags and attributes](/concepts/05%20UI%20Components/HtmlEditor/05%20Tags%20and%20Attributes.md '/Documentation/Guide/UI_Components/HtmlEditor/Tags_and_Attributes/'). All other formatting attributes and features are discarded.
 
-- When the HTML Editor loads its [value](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value), the component removes redundant tags:
+- When the HTML Editor loads its [value](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value'), the component removes redundant tags:
 
         <!-- from -->
         <p><span>Hello</span><em><span>World</span></em></p>

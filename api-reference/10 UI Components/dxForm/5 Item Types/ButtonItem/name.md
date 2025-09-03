@@ -1,6 +1,6 @@
 ---
 id: dxFormButtonItem.name
-type: String | undefined
+type: Enums.FormPredefinedButtonItem | String | undefined
 default: undefined
 ---
 ---

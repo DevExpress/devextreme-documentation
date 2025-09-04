@@ -25,15 +25,15 @@ This method is the primary way to render a new message in jQuery:
 
 ##### Angular
 
-[note] This method is not native to {Framework}. To add a new message to Chat, update the [dataSource](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#dataSource) or [items](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items') property.
+[note] This method is not native to {Framework}. To add a new message to Chat, update the [dataSource](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#dataSource') or [items](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items') property.
 
 ##### Vue
 
-[note] This method is not native to {Framework}. To add a new message to Chat, update the [dataSource](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#dataSource) or [items](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items') property.
+[note] This method is not native to {Framework}. To add a new message to Chat, update the [dataSource](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#dataSource') or [items](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items') property.
 
 ##### React
 
-[note] This method is not native to {Framework}. To add a new message to Chat, update the [dataSource](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#dataSource) or [items](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items') property.
+[note] This method is not native to {Framework}. To add a new message to Chat, update the [dataSource](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#dataSource') or [items](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items') property.
 
 ---
 

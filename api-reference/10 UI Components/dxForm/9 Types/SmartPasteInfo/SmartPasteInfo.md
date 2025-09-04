@@ -4,6 +4,7 @@ module: ui/form
 export: SmartPasteInfo
 hidden: 
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -36,7 +36,7 @@ jobs:
           with:
             path: devextreme
             repository: devexpress/devextreme
-            ref: anber/tools-18_1_2
+            ref: 25_2
 
         - name: NPM - devextreme
           working-directory: devextreme

@@ -27,5 +27,6 @@
   },
   "dependencies": {
     "@types/node": "^20.3.2"
-  }
+  },
+  "packageManager": "pnpm@10.15.0"
 }

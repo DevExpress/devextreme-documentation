@@ -15,6 +15,9 @@ jobs:
             path: documentation
             ref: ${{ github.ref_name }}
 
+        - uses: ./.github/actions/setup-env
+          with:
+            path: documentation
         - name: Checkout DevExtreme
           uses: actions/checkout@v4
           with:
@@ -22,23 +25,9 @@ jobs:
             repository: devexpress/devextreme
             ref: ${{ github.ref_name }}
 
-        - uses: pnpm/action-setup@v3
-          with:
-            version: 9
-            run_install: false
-
-        - name: Set up .NET
-          uses: actions/setup-dotnet@v4
-          with:
-            dotnet-version: 6.0.x
-
         - name: NPM - devextreme
           working-directory: devextreme
           run: pnpm install --frozen-lockfile
-
-        - name: NPM - devextreme-documentation
-          working-directory: documentation
-          run: npm ci
 
 #Generation
         - name: Discover declarations

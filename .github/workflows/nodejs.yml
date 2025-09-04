@@ -2,106 +2,71 @@ name: Node.js CI
 
 on: [push, pull_request]
 
-env:
-  dotNetVersion: 6.0.x
-
 jobs:
 
   validation:
-    runs-on: ubuntu-latest
+
     name: Validation docs
+    runs-on: ubuntu-latest
+
     steps:
+      - name: Checkout Docs
+        uses: actions/checkout@v4
 
-    - name: Checkout
-      uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-env
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version-file: .node-version
+      - name: Validation
+        run: npm run validate-docs
 
-    - name: Set up .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: ${{ env.dotNetVersion }}
-
-    - name: Install dependencies
-      run: npm ci
-
-    - name: Validation
-      run: npm run validate-docs
-
-    - name: Archive internal-tools artifacts
-      uses: actions/upload-artifact@v4
-      with:
-        name: internal-tools-artifacts-validation
-        path: artifacts/internal-tools/
-        retention-days: 7
+      - name: Archive internal-tools artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: internal-tools-artifacts-validation
+          path: artifacts/internal-tools/
+          retention-days: 7
 
   build:
-    runs-on: ubuntu-latest
+
     name: ContentMap
+    runs-on: ubuntu-latest
     steps:
+      - name: Checkout Docs
+        uses: actions/checkout@v4
 
-    - name: Checkout
-      uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-env
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version-file: .node-version
+      - name: Generate ContentMaps
+        run: npm run generate-content-map
 
-    - name: Set up .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: ${{ env.dotNetVersion }}
-
-    - name: Install dependencies
-      run: npm ci
-
-    - name: Generate ContentMaps
-      run: npm run generate-content-map
-
-    - name: Archive internal-tools artifacts
-      uses: actions/upload-artifact@v4
-      with:
-        name: internal-tools-artifacts-build
-        path: artifacts/internal-tools/
-        retention-days: 7
+      - name: Archive internal-tools artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: internal-tools-artifacts-build
+          path: artifacts/internal-tools/
+          retention-days: 7
 
   link:
     runs-on: ubuntu-latest
+
     name: Check links
     steps:
+      - name: Checkout Docs
+        uses: actions/checkout@v4
 
-    - name: Checkout
-      uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-env
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version-file: .node-version
+      - name: Generate ContentMaps
+        run: npm run generate-content-map
 
-    - name: Set up .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: ${{ env.dotNetVersion }}
+      - name: Check links
+        run: npm run validate-links
 
-    - name: Install dependencies
-      run: npm ci
-
-    - name: Generate ContentMaps
-      run: npm run generate-content-map
-
-    - name: Check links
-      run: npm run validate-links
-
-    - name: Archive internal-tools artifacts
-      uses: actions/upload-artifact@v4
-      with:
-        name: internal-tools-artifacts-link
-        path: artifacts/internal-tools/
-        retention-days: 7
+      - name: Archive internal-tools artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: internal-tools-artifacts-link
+          path: artifacts/internal-tools/
+          retention-days: 7
 
   merge-artifacts:
     runs-on: ubuntu-latest

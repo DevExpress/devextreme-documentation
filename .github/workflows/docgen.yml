@@ -15,7 +15,7 @@ jobs:
           uses: actions/checkout@v4
           with:
             path: documentation
-            ref: ${{ github.ref_name }}
+            ref: 25_2
 
         - name: Setup Node.js
           uses: actions/setup-node@v4
@@ -37,7 +37,7 @@ jobs:
           with:
             path: devextreme
             repository: devexpress/devextreme
-            ref: ${{ github.ref_name }}
+            ref: 25_2
 
         - name: NPM - devextreme
           working-directory: devextreme
@@ -80,11 +80,11 @@ jobs:
           shell: bash
           run: |
             formatted_time=$(date +"%d_%m_%y_%Hh%Mm")
-            branch_name="dxrobot/${{ github.ref_name }}_D$formatted_time"
+            branch_name="dxrobot/25_2_D$formatted_time"
 
             git checkout -b $branch_name
             git add ./api-reference ./concepts ./metadata
-            git commit -m "DocGen ${{ github.ref_name }} result" || exit 0
+            git commit -m "DocGen 25_2 result" || exit 0
 
             git push --set-upstream origin $branch_name
 
@@ -100,8 +100,8 @@ jobs:
 
             jq -n \
               --arg head "$branch_name" \
-              --arg base "${{ github.ref_name }}" \
-              --arg title "DocGen ${{ github.ref_name }} [$(date +%D)]" \
+              --arg base "25_2" \
+              --arg title "DocGen 25_2 [$(date +%D)]" \
               --rawfile body prbody.md \
               '{ "head": $head, "base": $base, "title": $title, "body": $body }' > prdata.json
 

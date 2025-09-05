@@ -1,11 +1,8 @@
-
 ---
 ##### shortDescription
-
 Sets focus on the UI component.
 
 ---
-
 This method focuses a {WidgetName} element depending on the following conditions:
 
 <table class="dx-table">

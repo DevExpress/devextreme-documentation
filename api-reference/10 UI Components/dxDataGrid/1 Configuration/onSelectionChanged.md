@@ -34,7 +34,7 @@ This function has the following specifics:
 - If a field providing key values is not specified in the data source, the whole data object is considered the key. In this case, all arrays passed to the function contain data objects instead of keys.
 - When selection is [deferred](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/selection/deferred.md '{basewidgetpath}/Configuration/selection/#deferred'), this function does not provide access to keys and data. Use the [getSelectedRowsData()](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/getSelectedRowsData().md '{basewidgetpath}/Methods/#getSelectedRowsData') or [getSelectedRowKeys()](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/getSelectedRowKeys().md '{basewidgetpath}/Methods/#getSelectedRowKeys') method instead.
 
-[note] If the [selectedRowKeys](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#selectedRowKeys) array contains keys not included in the component [dataSource](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource), {WidgetName} executes **onSelectionChanged** on initialization.
+[note] If the [selectedRowKeys](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/selectedRowKeys.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#selectedRowKeys') array contains keys not included in the component [dataSource](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource'), {WidgetName} executes **onSelectionChanged** on initialization.
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Data_Grid/RowSelection/"

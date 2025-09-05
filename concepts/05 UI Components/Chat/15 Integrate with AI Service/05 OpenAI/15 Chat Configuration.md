@@ -1,4 +1,4 @@
-To synchronize Chat and OpenAI, declare the `processMessageSending()` function. This function configures [typingUsers](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#typingUsers), pushes the assistant message to the store, and renders the message.
+To synchronize Chat and OpenAI, declare the `processMessageSending()` function. This function configures [typingUsers](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/typingUsers.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#typingUsers'), pushes the assistant message to the store, and renders the message.
 
 ---
 
@@ -88,7 +88,7 @@ To synchronize Chat and OpenAI, declare the `processMessageSending()` function. 
 
 ---
 
-Call `processMessageSending()` after a user message is sent in the [onMessageEntered](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#onMessageEntered) event handler:
+Call `processMessageSending()` after a user message is sent in the [onMessageEntered](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/onMessageEntered.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#onMessageEntered') event handler:
 
 ---
 
@@ -149,8 +149,8 @@ Call `processMessageSending()` after a user message is sent in the [onMessageEnt
 
 You can also implement additional UI capabilities to further improve user experience:
 
-- Add a Markdown converter for assistant outputs. For more information, refer to the [Markdown Support](/Documentation/Guide/UI_Components/Chat/Markdown_Support/) help topic.
-- Define a [messageTemplate](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#messageTemplate) for the assistant’s responses and add two buttons: copy and regenerate response. See the example code in the GitHub repository:
+- Add a Markdown converter for assistant outputs. For more information, refer to the [Markdown Support](/concepts/05%20UI%20Components/Chat/13%20Markdown%20Support.md '/Documentation/Guide/UI_Components/Chat/Markdown_Support/') help topic.
+- Define a [messageTemplate](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/messageTemplate.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#messageTemplate') for the assistant’s responses and add two buttons: copy and regenerate response. See the example code in the GitHub repository:
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-chat-openai-integration"

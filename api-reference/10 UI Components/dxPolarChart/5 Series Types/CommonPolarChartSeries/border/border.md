@@ -13,11 +13,11 @@ dxPolarChartSeriesTypes.areapolarseries,dxPolarChartSeriesTypes.barpolarseries,d
 
 You can configure **border** settings in the following objects:
 
-- [commonSeriesSettings](/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/)    
+- [commonSeriesSettings](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/commonSeriesSettings '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/')    
 Configures the **border** object for all supported series.
-- **commonSeriesSettings**.[area](/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/#area), **commonSeriesSettings**.[bar](/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/#bar), **commonSeriesSettings**.[stackedbar](/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/#stackedbar)    
+- **commonSeriesSettings**.[area](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/commonSeriesSettings/area.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/#area'), **commonSeriesSettings**.[bar](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/commonSeriesSettings/bar.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/#bar'), **commonSeriesSettings**.[stackedbar](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/commonSeriesSettings/stackedbar.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/commonSeriesSettings/#stackedbar')    
 Configure the **border** object for all series of a specific type. These objects overwrite **border** configuration in **commonSeriesSettings**.
-- [series](/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/)    
+- [series](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/series '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/')    
 Configures the **border** object for a specific series. Overwrites **border** configuration in **commonSeriesSettings** and series-specific objects.
 
 ---

@@ -14,4 +14,4 @@ Exports:
         // ===== or =====
         import { exportGantt } from "devextreme/common/export/pdf";
 
-[note] To generate PDFs with Unicode characters, refer to the following troubleshooting guide: [Export Unicode Characters](/Documentation/Guide/Troubleshooting/PDF_Export_Issues/Export_Unicode_Characters/DataGrid/).
+[note] To generate PDFs with Unicode characters, refer to the following troubleshooting guide: [Export Unicode Characters](/concepts/80%20Troubleshooting/15%20PDF%20Export%20Issues/00%20Export%20Unicode%20Characters/00%20DataGrid '/Documentation/Guide/Troubleshooting/PDF_Export_Issues/Export_Unicode_Characters/DataGrid/').

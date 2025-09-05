@@ -61,7 +61,7 @@ This property accepts one of the following:
 
     ---
 
-- **An object with the [startValue](/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/value/#startValue) and [endValue](/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/value/#endValue) fields**    
+- **An object with the [startValue](/api-reference/10%20UI%20Components/VisualRange/startValue.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/value/#startValue') and [endValue](/api-reference/10%20UI%20Components/VisualRange/endValue.md '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/value/#endValue') fields**    
 
     An alternative to the two-item array.
 
@@ -125,7 +125,7 @@ This property accepts one of the following:
 
     ---
 
-- **An object with the [length](/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/value/length/) and startValue or endValue**      
+- **An object with the [length](/api-reference/10%20UI%20Components/VisualRange/length '/Documentation/ApiReference/UI_Components/dxRangeSelector/Configuration/value/length/') and startValue or endValue**      
 
     Specifies the range using length and start or end values.
 

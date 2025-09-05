@@ -5,6 +5,7 @@ export: SmartPastingEvent
 type: Object
 inherits: EventInfo,AsyncCancelable,SmartPasteInfo
 references: dxForm.Options.onSmartPasting
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

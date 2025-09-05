@@ -2,6 +2,7 @@
 id: UI Events.dxpinchstart
 module: events/transform
 type: eventType
+hidden: 
 ---
 ---
 ##### shortDescription

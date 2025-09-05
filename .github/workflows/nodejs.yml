@@ -59,7 +59,7 @@ jobs:
         run: npm run generate-content-map
 
       - name: Check links
-        run: npm run validate-links
+        run: npm run validate-links || (echo "::error::merge the stable version into this branch and re-run 'npm run update-links' locally" && exit 1)
 
       - name: Archive internal-tools artifacts
         uses: actions/upload-artifact@v4

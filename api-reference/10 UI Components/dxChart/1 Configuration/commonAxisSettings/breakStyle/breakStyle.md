@@ -8,7 +8,7 @@ Configures scale break appearance.
 
 ---
 
-The following code snippet configures [commonAxisSettings](/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/).**breakStyle** to customize items in **valueAxis**.[breaks[]](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/breaks/) and **argumentAxis**.[breaks[]](/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/breaks/).
+The following code snippet configures [commonAxisSettings](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonAxisSettings '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonAxisSettings/').**breakStyle** to customize items in **valueAxis**.[breaks[]](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/breaks/) and **argumentAxis**.[breaks[]](/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/breaks/).
 
 ---
 

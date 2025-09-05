@@ -13,7 +13,7 @@ Set the **addFileToVFS()** method's **contents** parameter to the Base64-encoded
     doc.addFont("Roboto-Regular.ttf", "Roboto", "normal");
     doc.setFont("Roboto");
 
-Assign this jsPDF instance to the **jsPDFDocument** property of [exportGantt](/Documentation/ApiReference/Common/Utils/pdfExporter/#exportGanttoptions):
+Assign this jsPDF instance to the **jsPDFDocument** property of [exportGantt](/api-reference/50%20Common/utils/pdfExporter/exportGantt(options).md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportGanttoptions'):
 
 ---
 

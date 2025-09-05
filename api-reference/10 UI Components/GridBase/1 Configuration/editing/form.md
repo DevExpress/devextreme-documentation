@@ -263,7 +263,7 @@ If you need to customize an individual form item, use the [formItem](/api-refere
 
 ##### jQuery
 
-If you configure a form with [tabbed items](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/), the component does not validate editors in hidden tabs. To validate hidden tab editors, disable **form**.**TabbedItem**.[tabPanelOptions](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/#tabPanelOptions).[deferRendering](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#deferRendering):
+If you configure a form with [tabbed items](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/TabbedItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/'), the component does not validate editors in hidden tabs. To validate hidden tab editors, disable **form**.**TabbedItem**.[tabPanelOptions](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/TabbedItem/tabPanelOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/#tabPanelOptions').[deferRendering](/api-reference/10%20UI%20Components/dxMultiView/1%20Configuration/deferRendering.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#deferRendering'):
 
     <!-- tab: index.js -->
     $(function() {
@@ -288,7 +288,7 @@ If you configure a form with [tabbed items](/Documentation/ApiReference/UI_Compo
 
 - The nested component that configures the **form** property does not support event and two-way property bindings.
 
-- If you configure a form with [tabbed items](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/), the component does not validate editors in hidden tabs. To validate hidden tab editors, disable **form**.**TabbedItem**.[tabPanelOptions](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/#tabPanelOptions).[deferRendering](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#deferRendering):
+- If you configure a form with [tabbed items](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/TabbedItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/'), the component does not validate editors in hidden tabs. To validate hidden tab editors, disable **form**.**TabbedItem**.[tabPanelOptions](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/TabbedItem/tabPanelOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/#tabPanelOptions').[deferRendering](/api-reference/10%20UI%20Components/dxMultiView/1%20Configuration/deferRendering.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#deferRendering'):
 
         <!-- tab: app.component.html -->
         <dx-data-grid ... >
@@ -320,7 +320,7 @@ If you configure a form with [tabbed items](/Documentation/ApiReference/UI_Compo
 
 - The nested component that configures the **form** property does not support event and two-way property bindings.
 
-- If you configure a form with [tabbed items](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/), the component does not validate editors in hidden tabs. To validate hidden tab editors, disable **form**.**TabbedItem**.[tabPanelOptions](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/#tabPanelOptions).[deferRendering](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#deferRendering):
+- If you configure a form with [tabbed items](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/TabbedItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/'), the component does not validate editors in hidden tabs. To validate hidden tab editors, disable **form**.**TabbedItem**.[tabPanelOptions](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/TabbedItem/tabPanelOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/#tabPanelOptions').[deferRendering](/api-reference/10%20UI%20Components/dxMultiView/1%20Configuration/deferRendering.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#deferRendering'):
 
         <!-- tab: App.vue -->
         <template>
@@ -347,7 +347,7 @@ If you configure a form with [tabbed items](/Documentation/ApiReference/UI_Compo
 
 ##### React
 
-If you configure a form with [tabbed items](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/), the component does not validate editors in hidden tabs. To validate hidden tab editors, disable **form**.**TabbedItem**.[tabPanelOptions](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/#tabPanelOptions).[deferRendering](/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#deferRendering):
+If you configure a form with [tabbed items](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/TabbedItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/'), the component does not validate editors in hidden tabs. To validate hidden tab editors, disable **form**.**TabbedItem**.[tabPanelOptions](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/TabbedItem/tabPanelOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/#tabPanelOptions').[deferRendering](/api-reference/10%20UI%20Components/dxMultiView/1%20Configuration/deferRendering.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#deferRendering'):
 
     <!-- tab: App.tsx -->
     import { DataGrid, Editing, Form } from 'devextreme-react/data-grid';

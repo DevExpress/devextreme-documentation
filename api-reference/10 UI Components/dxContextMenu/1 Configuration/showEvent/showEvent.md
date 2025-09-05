@@ -13,4 +13,4 @@ If you assign only a string that specifies event names on which the UI component
     <!--JavaScript-->
     showEvent: "mouseenter"
 
-Assign `""` (an empty string) to **showEvent** if you want to display the component only through code (for instance, by calling the [show()](/Documentation/ApiReference/UI_Components/dxContextMenu/Methods/#show) method).
+Assign `""` (an empty string) to **showEvent** if you want to display the component only through code (for instance, by calling the [show()](/api-reference/10%20UI%20Components/dxContextMenu/3%20Methods/show().md '/Documentation/ApiReference/UI_Components/dxContextMenu/Methods/#show') method).

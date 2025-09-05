@@ -1,6 +1,6 @@
 ---
-id: _viz_chart_components_base_chart_TooltipInfo.target
-type: Object
+id: EventObject.originalEvent
+type: event
 ---
 ---
 ##### shortDescription

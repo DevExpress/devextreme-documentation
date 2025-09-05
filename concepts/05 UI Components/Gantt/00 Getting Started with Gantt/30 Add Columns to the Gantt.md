@@ -94,5 +94,5 @@ Use the [columns](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/
 
 #####See Also#####
 
-- [Sort Data](/Documentation/Guide/UI_Components/Gantt/Sort_Data/)
-- [Filter Row](/Documentation/Guide/UI_Components/Gantt/Filter_Data/Filter_Row/)
+- [Sort Data](/concepts/05%20UI%20Components/Gantt/20%20Sort%20Data '/Documentation/Guide/UI_Components/Gantt/Sort_Data/')
+- [Filter Row](/concepts/05%20UI%20Components/Gantt/15%20Filter%20Data/10%20Filter%20Row.md '/Documentation/Guide/UI_Components/Gantt/Filter_Data/Filter_Row/')

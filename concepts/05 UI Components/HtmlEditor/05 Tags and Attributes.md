@@ -23,7 +23,7 @@ The HTML Editor supports the following HTML tags and attributes.
 
 [note]
 
-When the HTML Editor loads its [value](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value), the component merges consecutive inline tags that match and contain identical attributes:
+When the HTML Editor loads its [value](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value'), the component merges consecutive inline tags that match and contain identical attributes:
 
       <!-- from -->
       <a href="/">Hello</a><a href="/">World</a>

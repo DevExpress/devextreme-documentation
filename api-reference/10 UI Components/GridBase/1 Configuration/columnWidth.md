@@ -10,7 +10,7 @@ Specifies the width for all [data columns](/concepts/05%20UI%20Components/DataGr
 ---
 When this property is unspecified and the component container is wider than the content, {WidgetName} stretches columns to fit the container width. If the content is wider than the component container, {WidgetName} cuts off long values that do not fit. {WidgetName} displayes an ellipsis at the end of each cut off value.
 
-When this property is *"auto"*, the component adjusts column widths to fit data. {WidgetName} decreases its width if the content is narrower than the component container. If the content is wider than the component container, {WidgetName} enables horizontal [scrolling](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/) to fit content.
+When this property is *"auto"*, the component adjusts column widths to fit data. The component decreases its width if the content is narrower than the {WidgetName} container. If the content is wider than the component container, {WidgetName} enables horizontal [scrolling](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/) to fit content.
 
 [note] Virtual keyboards may experience issues with {WidgetName} input when **columnWidth** is set to *"auto"*. To avoid these issues, do not set **columnWidth** to *"auto"* if you target virtual keyboard users and implement [filtering](/Documentation/Guide/UI_Components/DataGrid/Filtering_and_Searching/), [searching](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/searchPanel/), or [editing](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/).
 

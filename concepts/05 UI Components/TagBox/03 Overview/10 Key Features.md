@@ -20,7 +20,7 @@ DevExtreme TagBox supports paging within the component dropdown list. You can im
 TagBox is a supported editor type in the DevExtreme [Form](/Documentation/Guide/UI_Components/Form/Overview/) component. To integrate TagBox within a Form, set a Form item's [editorType](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#editorType) property to *"dxTagBox"*.
 
 - **Accessibility and RTL**    
-TagBox conforms to WCAG 2.x, European Accessibility Act (EAA), and Americans with Disabilities Act (ADA) standards. The component supports keyboard navigation and custom key handlers. TagBox also ships with right-to-left (RTL) representation support.
+TagBox [conforms](/Documentation/Guide/UI_Components/TagBox/Accessibility/) to WCAG 2.x, European Accessibility Act (EAA), and Americans with Disabilities Act (ADA) standards. The component supports keyboard navigation and custom key handlers. TagBox also ships with right-to-left (RTL) representation support.
 
 - **Customization Settings**    
 You can customize TagBox visual elements as your needs dictate, including the component [label](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#label) and [styling mode](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#stylingMode). TagBox also supports input area [buttons](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/buttons/) and includes two predefined options: a [clear button](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#showClearButton) and a [dropdown button](/Documentation/ApiReference/UI_Components/dxTagBox/Configuration/#showDropDownButton).

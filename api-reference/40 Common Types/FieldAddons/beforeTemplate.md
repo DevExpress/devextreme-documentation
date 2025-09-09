@@ -4,16 +4,15 @@ type: template
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies custom markup on the left of editor input fields.
 
 ##### param(data): Object
-<!-- Description goes here -->
+Data of the selected editor item.
 
 ##### param(element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "**beforeTemplate**" }
 
 ##### return: String | Element | jQuery
-<!-- Description goes here -->
+A template name or container.
 
 ---
-<!-- Description goes here -->

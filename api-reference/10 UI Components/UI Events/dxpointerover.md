@@ -2,6 +2,7 @@
 id: UI Events.dxpointerover
 module: events/pointer
 type: eventType
+hidden: 
 ---
 ---
 ##### shortDescription

@@ -12,7 +12,7 @@ When this property is disabled, the component displays data in equal-width colum
 
 When **columnAutoWidth** is enabled, the component adjusts the width of each column to avoid cutting off long values. If {WidgetName} content is wider than the component container, {WidgetName} enables horizontal [scrolling](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/) to fit content.
 
-[note] Virtual keyboards may experience issues with {WidgetName} input when **columnAutoWidth** is enabled. To avoid these issues, disable **columnAutoWidth** if you target virtual keyboard users and implement [filtering](/Documentation/Guide/UI_Components/DataGrid/Filtering_and_Searching/), [searching](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/searchPanel/), or [editing](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/).
+[note] When **columnAutoWidth** is enabled and a {WidgetName} input is focused, virtual keyboards may experience issues (such as flickering and premature closing). To avoid these issues, disable **columnAutoWidth** if you target virtual keyboard users and implement [editing]({basewidgetpath}/Configuration/editing/), the [search panel]({basewidgetpath}/Configuration/searchPanel/), or a filtering element (such as the [header filter]({basewidgetpath}/Configuration/headerFilter/)).
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnResizing/",

@@ -12,7 +12,7 @@ When this property is unspecified and the component container is wider than the 
 
 When this property is *"auto"*, the component adjusts column widths to fit data. The component decreases its width if the content is narrower than the {WidgetName} container. If the content is wider than the component container, {WidgetName} enables horizontal [scrolling](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/) to fit content.
 
-[note] Virtual keyboards may experience issues with {WidgetName} input when **columnWidth** is set to *"auto"*. To avoid these issues, do not set **columnWidth** to *"auto"* if you target virtual keyboard users and implement [filtering](/Documentation/Guide/UI_Components/DataGrid/Filtering_and_Searching/), [searching](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/searchPanel/), or [editing](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/).
+[note] When **columnWidth** is set to *"auto"* and a {WidgetName} input is focused, virtual keyboards may experience issues (such as flickering and premature closing). To avoid these issues, do not set **columnWidth** to *"auto"* if you target virtual keyboard users and implement [editing]({basewidgetpath}/Configuration/editing/), the [search panel]({basewidgetpath}/Configuration/searchPanel/), or a filtering element (such as the [header filter]({basewidgetpath}/Configuration/headerFilter/)).
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnResizing/",

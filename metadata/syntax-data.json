@@ -9740,6 +9740,9 @@
       "react": "Aggregation",
       "vue": "DxAggregation"
     },
+    "dxChartSeriesTypes.ScatterSeries.ignoreEmptyPoints": {
+      "vue": "ignore-empty-points"
+    },
     "dxChartSeriesTypes.ScatterSeries.label": {
       "angular": "dxo-label",
       "react": "Label",

@@ -35,10 +35,11 @@ The DataGrid component can [load and update data](/concepts/05%20UI%20Components
 
 2. Assign the array to the [dataSource](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource') property.
 3. Specify [keyExpr](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr') (`id` in this case).
-4. Use the nested `dxi-data-grid-column` component to define [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') you want to display.
+4. Use the nested `dxi-data-grid-column` configuration component to define [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') you want to display.
         
         <!-- tab: app.component.html -->
-        <dx-data-grid ...
+        <dx-data-grid
+            id="task-grid"
             [dataSource]="tasks"
             keyExpr="id"
         >
@@ -61,7 +62,7 @@ The DataGrid component can [load and update data](/concepts/05%20UI%20Components
         })
         export class AppComponent { ... }
 
-For more information about the nested components, refer to the following help topics:
+For more information about the nested configuration components, refer to the following help topics:
 
 - [Collections](/concepts/40%20Angular%20Components/20%20Component%20Configuration%20Syntax/17%20Collections.md 'Documentation/Guide/Angular_Components/Component_Configuration_Syntax/#Collections')
 - [Properties of the Object Type](/concepts/40%20Angular%20Components/20%20Component%20Configuration%20Syntax/14%20Properties%20of%20the%20Object%20Type.md '/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/#Properties_of_the_Object_Type')
@@ -72,25 +73,20 @@ For more information about the nested components, refer to the following help to
 1. Create the `tasks` array.  
 2. Assign the array to the [dataSource](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource') property.
 3. Specify [keyExpr](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr') (`id` in this case).  
-4. Use the nested `DxColumn` component to define [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') you want to display. Remember to import the necessary nested components.
+4. Use the nested `DxColumn` configuration component to define [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') you want to display. Remember to import the necessary configuration components.
 
         <!-- tab: App.vue -->
         <template>
             <div id="dashboard">
                 <DxProgressBar id="progress" />
-                <DxDataGrid ...
+                <DxDataGrid
+                    id="task-grid"
                     :data-source="tasks"
                     key-expr="id"
                 >
-                    <DxColumn  
-                        data-field="task"
-                    />
-                    <DxColumn  
-                        data-field="dueDate"
-                    />
-                    <DxColumn 
-                        data-field="done"
-                    />
+                    <DxColumn data-field="task" />
+                    <DxColumn data-field="dueDate" />
+                    <DxColumn data-field="done" />
                 </DxDataGrid>
             </div>
         </template>
@@ -103,7 +99,7 @@ For more information about the nested components, refer to the following help to
         ];
         </script>
 
-For more information about the nested components, refer to the following help topics:
+For more information about the nested configuration components, refer to the following help topics:
 
 - [Collections](/concepts/55%20Vue%20Components/20%20Component%20Configuration%20Syntax/17%20Collections.md '/Documentation/Guide/Vue_Components/Component_Configuration_Syntax/#Collections')
 - [Properties of the Object Type](/concepts/55%20Vue%20Components/20%20Component%20Configuration%20Syntax/14%20Properties%20of%20the%20Object%20Type.md '/Documentation/Guide/Vue_Components/Component_Configuration_Syntax/#Properties_of_the_Object_Type')
@@ -113,7 +109,7 @@ For more information about the nested components, refer to the following help to
 1. Create the `tasks` array.  
 2. Assign the array to the [dataSource](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource') property. 
 3. Specify [keyExpr](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr') (`id` in this case). 
-4. Use the nested `Column` component to define [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') you want to display. Remember to import the necessary nested components.
+4. Use the nested `Column` configuration component to define [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') you want to display. Remember to import the necessary configuration components.
 
         <!-- tab: App.tsx -->
         import DataGrid, { Column } from 'devextreme-react/data-grid';
@@ -127,19 +123,14 @@ For more information about the nested components, refer to the following help to
             return(
                 <div id="dashboard">
                     <ProgressBar id="progress" />
-                    <DataGrid ... 
+                    <DataGrid
+                        id="task-grid" 
                         dataSource={tasks}
                         keyExpr="id"
                     >
-                        <Column  
-                            dataField="task"
-                        />
-                        <Column  
-                            dataField="dueDate"
-                        />
-                        <Column  
-                            dataField="done"
-                        />
+                        <Column dataField="task" />
+                        <Column dataField="dueDate" />
+                        <Column dataField="done" />
                     </DataGrid>
                 </div>
             );
@@ -147,7 +138,7 @@ For more information about the nested components, refer to the following help to
 
         export default App;
 
-For more information about the nested components, refer to the following help topics:
+For more information about the nested configuration components, refer to the following help topics:
 
 - [Collections](/concepts/50%20React%20Components/40%20Component%20Configuration%20Syntax/20%20Collections.md '/Documentation/Guide/React_Components/Component_Configuration_Syntax/#Collections')
 - [Properties of the Object Type](/concepts/50%20React%20Components/40%20Component%20Configuration%20Syntax/12%20Properties%20of%20the%20Object%20Type.md '/Documentation/Guide/React_Components/Component_Configuration_Syntax/#Properties_of_the_Object_Type')

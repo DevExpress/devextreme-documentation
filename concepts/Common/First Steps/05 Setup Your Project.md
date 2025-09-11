@@ -1,7 +1,7 @@
 ---
 ##### jQuery
 
-First, create an empty web application. Then add jQuery and DevExtreme source files to the `<head>`:
+Create an empty web application. Then add jQuery and DevExtreme source files to the `<head>`:
 
     <!-- tab: index.html -->
     <head>
@@ -13,7 +13,7 @@ For complete installation instructions, refer to the following help topic: [Add 
 
 ##### Angular
 
-First, create an empty Angular application (see [Angular Documentation: Set up a new project locally](https://angular.dev/installation#set-up-a-new-project-locally)). Run the following commands:
+Create an empty Angular application (see [Angular Documentation: Set up a new project locally](https://angular.dev/installation#set-up-a-new-project-locally)). Run the following commands:
 
     npm install -g @angular/cli
     ng new first-steps-project
@@ -28,7 +28,7 @@ For complete installation instructions, refer to the following help topic: [Add 
 
 ##### Vue
 
-First, create an empty Vue JavaScript application (see [Vue Documentation: Creating a Vue Application](https://vuejs.org/guide/quick-start.html#creating-a-vue-application)). Run the following command:
+Create an empty Vue JavaScript application (see [Vue Documentation: Creating a Vue Application](https://vuejs.org/guide/quick-start.html#creating-a-vue-application)). Run the following command:
 
     npm create vue@latest
 
@@ -42,7 +42,7 @@ For complete installation instructions, refer to the following help topic: [Add 
 
 ##### React
 
-First, create an empty React JavaScript application (see [React Documentation: Build a React app from Scratch](https://react.dev/learn/build-a-react-app-from-scratch#vite)). For instance, to create an application with [Vite](https://vite.dev/), run the following command:
+Create an empty React JavaScript application (see [React Documentation: Build a React app from Scratch](https://react.dev/learn/build-a-react-app-from-scratch#vite)). For instance, to create an application with [Vite](https://vite.dev/), run the following command:
 
     npm create vite@latest my-app -- --template react
 

@@ -53,7 +53,7 @@ Create a `progressValue` variable and set its [ref](https://vuejs.org/guide/esse
 
 ##### React
 
-Manage the progress bar state with React [useState](https://react.dev/reference/react/useState) Hook. Set the Hook initial value to **50**, as half of the tasks in the initial list are completed. Bind the [value](/api-reference/10%20UI%20Components/dxProgressBar/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#value') option to the `progressValue` variable. `setProgressValue` will later keep ProgressBar and DataGrid in sync.
+Manage the progress bar state with React [useState](https://react.dev/reference/react/useState) Hook. Set the Hook initial value to **50**, as half of the tasks in the initial list are completed. Bind the [value](/api-reference/10%20UI%20Components/dxProgressBar/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxProgressBar/Configuration/#value') option to the `progressValue` variable. `setProgressValue` keeps ProgressBar and DataGrid synchronized.
 
     <!-- tab: App.tsx -->
     import { useState } from 'react';

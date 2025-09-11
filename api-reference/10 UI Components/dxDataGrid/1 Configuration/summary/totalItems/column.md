@@ -15,7 +15,7 @@ The component displays summary items in their corresponding data columns. To dis
 If you do not specify **column**, note the following specifics:
 
 - The component does not display the summary item if you do not specify **showInColumn**.
-- DataGrid uses row data objects to calculate summaries, which affects calculated values. For instance, the *"max"* [summary type](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#summaryType) returns "[object Object]".
+- DataGrid uses row data objects to calculate summaries, which affects calculated values. For instance, the *"max"* [summary type](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/totalItems/summaryType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#summaryType') returns "[object Object]".
 
 [/note]
 

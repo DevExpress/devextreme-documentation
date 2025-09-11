@@ -8,3 +8,11 @@
 6. [Connector](/Documentation/ApiReference/UI_Components/dxDiagram/Interfaces/dxDiagramConnector/)
 7. [Properties Panel](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/propertiesPanel/)
 8. [Properties Panel Button](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/propertiesPanel/#visibility)
+
+You can use the DevExtreme Diagram component to create and edit diagrams of varied types, including the following:
+
+- Business process diagrams
+- Company structure charts
+- [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language) and entity-relationship (ER) diagrams
+- Business process model and notation (BPMN) flowcharts
+- Software architecture/component diagrams

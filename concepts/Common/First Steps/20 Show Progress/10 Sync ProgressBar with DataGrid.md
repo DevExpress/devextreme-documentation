@@ -95,3 +95,9 @@ To synchronize ProgressBar with DataGrid, define an `updateProgress` function. T
     export default App;
 
 ---
+
+You can find the full source code in the GitHub repository:
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-first-steps"
+}

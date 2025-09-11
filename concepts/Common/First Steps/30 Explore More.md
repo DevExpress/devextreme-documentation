@@ -19,7 +19,7 @@ To learn more about DevExtreme, refer to the following sources:
 
 1. Learn the basics with [Component Configuration Syntax](/concepts/40%20Angular%20Components/20%20Component%20Configuration%20Syntax '/Documentation/Guide/Angular_Components/Component_Configuration_Syntax/').
 
-2. Edit and copy code from over 450 [DevExtreme demos](https://js.devexpress.com/Demos/WidgetsGallery).
+2. Edit and copy code from over 450 [DevExtreme demos](https://js.devexpress.com/Demos/WidgetsGallery) or our [UI Template Gallery](https://js.devexpress.com/Angular/Templates/).
 
 3. To learn more about a specific component, review guides and API references in the documentation. For common issues, refer to the following resources:
 
@@ -33,7 +33,7 @@ To learn more about DevExtreme, refer to the following sources:
 
 1. Learn the basics with [Component Configuration Syntax](/concepts/55%20Vue%20Components/20%20Component%20Configuration%20Syntax '/Documentation/Guide/Vue_Components/Component_Configuration_Syntax/').
 
-2. Edit and copy code from over 450 [DevExtreme demos](https://js.devexpress.com/Demos/WidgetsGallery).
+2. Edit and copy code from over 450 [DevExtreme demos](https://js.devexpress.com/Demos/WidgetsGallery) or our [UI Template Gallery](https://js.devexpress.com/Vue/Templates/).
 
 3. To learn more about a specific component, review guides and API references in the documentation. For common issues, refer to the following resources:
 
@@ -47,7 +47,7 @@ To learn more about DevExtreme, refer to the following sources:
 
 1. Learn the basics of [Component Configuration Syntax](/concepts/50%20React%20Components/40%20Component%20Configuration%20Syntax/00%20Component%20Configuration%20Syntax.md '/Documentation/Guide/React_Components/Component_Configuration_Syntax/').
 
-2. Edit and copy code from over 450 [DevExtreme demos](https://js.devexpress.com/Demos/WidgetsGallery).
+2. Edit and copy code from over 450 [DevExtreme demos](https://js.devexpress.com/Demos/WidgetsGallery) or our [UI Template Gallery](https://js.devexpress.com/React/Templates/).
 
 3. To learn more about a specific component, review guides and API references in the documentation. For common issues, refer to the following resources:
 

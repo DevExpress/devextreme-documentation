@@ -26,7 +26,7 @@ We recommend using named configuration components that are specific to the UI co
         ></dxo-card-view-editing>
     </dx-card-view>
 
-You can implement named configuration components for nested DevExtreme components, such as the editing [Popup](/Documentation/Guide/UI_Components/Popup/Overview/) within the [DataGrid](/Documentation/Guide/UI_Components/DataGrid/Overview/). To do so, specify **top-level component** names. For instance, to configure Popup animation settings within a DataGrid, implement the `<dxo-data-grid-animation>` configuration component:
+You can implement named configuration components for nested DevExtreme components, such as the editing [Popup](/Documentation/Guide/UI_Components/Popup/Overview/) within the [DataGrid](/Documentation/Guide/UI_Components/DataGrid/Overview/). To do this, specify **top-level component** names. For instance, to configure Popup animation settings within a DataGrid, implement the `<dxo-data-grid-animation>` configuration component:
 
     <dx-data-grid ... >
         <dxo-editing mode="popup" />

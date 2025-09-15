@@ -39,7 +39,7 @@ To specify which commands a tool panel or menu displays, define the element's **
             <dxi-diagram-command name="bold"></dxi-diagram-command>
             <dxi-diagram-command name="italic"></dxi-diagram-command>
             <dxi-diagram-command name="underline"></dxi-diagram-command>
-        </dxo-main-toolbar>
+        </dxo-diagram-main-toolbar>
     </dx-diagram>
 
 ##### Vue
@@ -121,7 +121,7 @@ The Diagram component supports custom commands within tool panels and menus. To 
                 name="clear"
                 icon="deletetable"
             ></dxi-diagram-command>
-        </dxo-main-toolbar>
+        </dxo-diagram-main-toolbar>
     </dx-diagram>
 
     <!-- tab: app.component.ts -->

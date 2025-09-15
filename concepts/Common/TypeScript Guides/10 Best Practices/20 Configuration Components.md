@@ -26,7 +26,7 @@ We recommend using named configuration components that are specific to the UI co
         ></dxo-card-view-editing>
     </dx-card-view>
 
-You can implement named configuration components for nested DevExtreme components, such as the editing [Popup](/Documentation/Guide/UI_Components/Popup/Overview/) within the [DataGrid](/Documentation/Guide/UI_Components/DataGrid/Overview/). To do this, specify **top-level component** names. For instance, to configure Popup animation settings within a DataGrid, implement the `<dxo-data-grid-animation>` configuration component:
+You can implement named configuration components for nested DevExtreme components, such as the editing [Popup](/concepts/05%20UI%20Components/Popup/02%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/Popup/Overview/') within the [DataGrid](/concepts/05%20UI%20Components/DataGrid/03%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/DataGrid/Overview/'). To do this, specify **top-level component** names. For instance, to configure Popup animation settings within a DataGrid, implement the `<dxo-data-grid-animation>` configuration component:
 
     <dx-data-grid ... >
         <dxo-editing mode="popup" />
@@ -40,7 +40,7 @@ You can implement named configuration components for nested DevExtreme component
 
 [note]
 
-Specify Popup and [Popover](/Documentation/Guide/UI_Components/Popover/Overview/) toolbar items as `<...-toolbar-item>` (both for nested and non-nested controls), and other component toolbar items as `<...-item>`:
+Specify Popup and [Popover](/concepts/05%20UI%20Components/Popover/00%20Overview.md '/Documentation/Guide/UI_Components/Popover/Overview/') toolbar items as `<...-toolbar-item>` (both for nested and non-nested controls), and other component toolbar items as `<...-item>`:
 
     <!-- Toolbar item in a DataGrid editing Popup -->
     <dx-data-grid ... >

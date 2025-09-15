@@ -1,7 +1,7 @@
 ---
 id: PagerBase.showPageSizeSelector
-type: Boolean | Enums.Mode
-default: 'auto'
+type: Boolean
+default: false
 ---
 ---
 ##### shortDescription

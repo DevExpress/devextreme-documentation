@@ -5,7 +5,7 @@ id: dxFileUploader.reset(value)
 ##### shortDescription
 Resets the [value](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/value.md '{basewidgetpath}/Configuration/#value') property to the value passed as an argument.
 
-##### param(value): Array<File>
+##### param(value): any
 Specifies the new value.
 
 ---

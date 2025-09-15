@@ -5,7 +5,7 @@ id: dxAutocomplete.reset(value)
 ##### shortDescription
 Resets the [value](/api-reference/10%20UI%20Components/dxAutocomplete/1%20Configuration/value.md '{basewidgetpath}/Configuration/#value') property to the value passed as an argument.
 
-##### param(value): String | null
+##### param(value): String | null | undefined
 Specifies the new value.
 
 ---

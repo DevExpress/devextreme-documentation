@@ -5,7 +5,7 @@ id: dxColorBox.reset(value)
 ##### shortDescription
 Resets the [value](/api-reference/10%20UI%20Components/dxColorBox/1%20Configuration/value.md '{basewidgetpath}/Configuration/#value') property to the value passed as an argument.
 
-##### param(value): String | null
+##### param(value): any
 Specifies the new value.
 
 ---

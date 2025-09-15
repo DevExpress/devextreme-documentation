@@ -115,7 +115,7 @@ The Diagram component supports custom commands within tool panels and menus. To 
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-diagram [onCustomCommand]="handleCustomCommand">
+    <dx-diagram (onCustomCommand)="handleCustomCommand($event)">
         <dxo-diagram-main-toolbar [visible]="true">
             <dxi-diagram-command
                 name="clear"
@@ -172,7 +172,7 @@ The Diagram component supports custom commands within tool panels and menus. To 
 
     function App() {
         return (
-            <Diagram>
+            <Diagram onCustomCommand={handleCustomCommand}>
                 <MainToolbar visible={true}>
                     <Command
                         name="clear"

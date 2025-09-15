@@ -47,11 +47,6 @@ To specify which commands a tool panel or menu displays, define the element's **
 To specify which commands a tool panel or menu displays, define the element's **commands[]** array (for instance, **mainToolbar**.[commands[]](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/mainToolbar/commands/)). To add predefined commands, specify only the **name** property:
 
     <!-- tab: App.vue -->
-    <script setup lang="ts">
-    import { DxDiagram, DxMainToolbar, DxCommand } from 'devextreme-vue/diagram';
-
-    </script>
-
     <template>
         <DxDiagram>
             <DxMainToolbar :visible="true">
@@ -65,6 +60,11 @@ To specify which commands a tool panel or menu displays, define the element's **
             </DxMainToolbar>
         </DxDiagram>
     </template>
+
+    <script setup lang="ts">
+    import { DxDiagram, DxMainToolbar, DxCommand } from 'devextreme-vue/diagram';
+
+    </script>
 
 ##### React
 
@@ -138,16 +138,6 @@ The Diagram component supports custom commands within tool panels and menus. To 
 ##### Vue
 
     <!-- tab: App.vue -->
-    <script setup lang="ts">
-    import { DxDiagram, DxMainToolbar, DxCommand, type DxDiagramTypes } from 'devextreme-vue/diagram'
-
-    function handleCustomCommand(e: DxDiagramTypes.CustomCommandEvent) {
-        if(e.name === 'clear') {
-            e.component.import('');
-        }
-    }
-    </script>
-
     <template>
         <DxDiagram @custom-command="handleCustomCommand">
             <DxMainToolbar :visible="true">
@@ -158,6 +148,16 @@ The Diagram component supports custom commands within tool panels and menus. To 
             </DxMainToolbar>
         </DxDiagram>
     </template>
+
+    <script setup lang="ts">
+    import { DxDiagram, DxMainToolbar, DxCommand, type DxDiagramTypes } from 'devextreme-vue/diagram'
+
+    function handleCustomCommand(e: DxDiagramTypes.CustomCommandEvent) {
+        if(e.name === 'clear') {
+            e.component.import('');
+        }
+    }
+    </script>
 
 ##### React
 

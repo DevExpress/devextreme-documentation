@@ -1,29 +1,23 @@
-- **Labeling**    
-You can label the DevExtreme DropDownButton with [text](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#text) and [icons](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#icon). The component can also display a [dropdown arrow](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#showArrowIcon) to differentiate DropDownButton from the [Button](/Documentation/Guide/UI_Components/Button/Overview/) component.
-
 - **Action Binding**    
-You can specify unique DropDownButton actions for the following click handlers:
-    - [onButtonClick](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#onButtonClick)    
-    Executed when users click the DropDownButton.
-    - [onItemClick](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#onItemClick)    
-    Executed when users click any DropDownButton item.
-    - **items**.[onClick](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/items/#onClick)    
-    Executed when users click a specific DropDownButton item.
+DropDownButton can trigger actions when users click drop-down list items ([onItemClick](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#onItemClick)) or the DropDownButton itself ([onButtonClick](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#onButtonClick)). You can also specify individual [click handlers](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/items/#onClick) for each item within the component data source.
+
+- **Appearance Settings**    
+You can specify an [icon](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#icon) and [text](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#text), as well as configure [drop-down arrow](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#showArrowIcon) visibility to customize component appearance.
+
+- **Item Configuration**    
+You can configure [text](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/items/#text), [icons](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/items/#icon), and [badges](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/items/#badge) to customize drop-down item appearance. The component also allows you to implement unique [click handlers](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/items/#onClick) for each item, as well as [custom templates](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/items/#template).
 
 - **Split Button Support**    
-Enable [splitButton](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#splitButton) to separate the dropdown and action buttons of the DropDownButton component.
+DevExtreme DropDownButton supports a [split button](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#splitButton) mode. In this mode, the component separates the action and drop-down buttons.
+
+- **Predefined Styling Modes**    
+You can choose one of three [styling modes](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#stylingMode) to configure DropDownButton appearance: text only, contained, and outlined (default). The component also includes [four built-in colors](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#type).
 
 - **Selection**    
-DevExtreme DropDownButton supports selection. If [useSelectMode](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#useSelectMode) is enabled, the component displays the text and icon of the selected item. DropDownButton includes the following selection properties:
-    - [selectedItem](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#selectedItem)
-    - [selectedItemKey](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#selectedItemKey)
-    - [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#onSelectionChanged)
+When [selection](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#useSelectMode) is enabled, the component displays the selected item text and icon. You can [handle selection change](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#onSelectionChanged) and process [selected item](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#selectedItemKey) data at runtime.
 
-- **Customization**    
-You can customize the appearance of DevExtreme DropDownButton elements as your needs dictate. Specify the following properties to implement your customizations:
-    - [stylingMode](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#stylingMode)
-    - [type](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#type)
-    - [template](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#template)
-    - [itemTemplate](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#itemTemplate)
-    - **items**.[template](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/items/#template)
-    - [dropDownContentTemplate](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#dropDownContentTemplate)
+- **Accessibility and Keyboard Navigation**    
+DropDownButton [conforms](/Documentation/Guide/UI_Components/DropDownButton/Accessibility/) to WCAG 2.x, European Accessibility Act (EAA), and Americans with Disabilities Act (ADA) standards. The component supports keyboard navigation and custom key handlers. TagBox also ships with right-to-left ([RTL](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#rtlEnabled)) representation support.
+
+- **Custom Templates**    
+DropDownButton supports custom markup for the component [action button](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#template) and the [drop-down content](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#dropDownContentTemplate).  You can also specify custom templates for [specific](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/items/#template) drop-down items or a [common template](/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#itemTemplate) for all items.

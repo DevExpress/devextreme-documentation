@@ -1,4 +1,8 @@
-The Diagram UI component allows you to customize its UI tools with the following properties.
+The DevExtreme Diagram ships with configurable tool panels and menus. The following image highlights these visual elements:
+
+![DevExtreme Diagram tools](/images/diagram/ui-customization.png)
+
+To configure Diagram tools, implement the following properties:
 
 - [contextMenu](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/contextMenu '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/contextMenu/')
 - [contextToolbox](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/contextToolbox '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/contextToolbox/')
@@ -8,414 +12,181 @@ The Diagram UI component allows you to customize its UI tools with the following
 - [toolbox](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/toolbox '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/toolbox/')
 - [viewToolbar](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/viewToolbar '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/viewToolbar/')
 
-![Diagram control data toolbox](/images/diagram/ui-customization.png)
-
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/UICustomization/"
-}
-
 ---
+
 ##### jQuery
 
-      <!-- tab: index.js -->
-      $(function() {
-      var diagram = $("#diagram").dxDiagram({
-            contextMenu: {
-                  enabled: true,
-                  commands: ["bringToFront","sendToBack", "lock", "unlock"]
-            },
-            contextToolbox: {
-                  enabled: true,
-                  category: "flowchart",
-                  shapeIconsPerRow: 5,
-                  width: 200
-            },
-            propertiesPanel: {
-                  visibility: 'visible',
-                  tabs: [{
-                        groups: [ { title: "Page Properties", commands: ["pageSize", "pageOrientation", "pageColor"] } ]
-                  }]
-            },
-            historyToolbar: {
-                  visible: false
-            },
-            viewToolbar: {
-                  visible: true,
-                  commands: ["zoomLevel", "fullScreen", "units", 
-                        {name: "sayHello", text: "Say Hello", icon: "blockquote"},
-                        {name: "export", icon: "export", items: ["exportSvg","exportPng","exportJpg"]}]
-            },
-            mainToolbar: {
-                  visible: true,
-                  commands: [
-                  { name: "undo" },
-                  { name: "redo" },
-                  { name: "separator" },
-                  { name: "fontName" },
-                  { name: "fontSize" },
-                  { name: "separator" },
-                  { name: "bold" },
-                  { name: "italic" },
-                  { name: "underline" },
-                  { name: "separator" },
-                  { name: "fontColor" },
-                  { name: "lineColor" },
-                  { name: "fillColor" },
-                  { name: "separator" },
-                  { name: "clear", icon: "clearsquare", text: "Clear Diagram" }
-                  ]
-            },
-            toolbox: {
-                  visibility: 'visible',
-                  groups: [
-                  "general", { category: "flowchart", title: "Flowchart", expanded: true }
-                  ],
-                  showSearch: false,
-                  shapeIconsPerRow: 4,
-                  width: 220
-            },
-            onCustomCommand: function(e) {
-                  if(e.name === "clear") {
-                  var result = DevExpress.ui.dialog.confirm(
-                        "Are you sure you want to clear the diagram? This action cannot be undone.", "Warning");
-                  result.done(
-                        function(dialogResult) {
-                              if(dialogResult) {
-                              e.component.import("");
-                              }
-                        }
-                  );}
-                  else if (e.name == "sayHello")
-                  alert("Hello!")
-            }
-      }).dxDiagram("instance");
-      ...
+To specify which commands a tool panel or menu displays, define the element's **commands[]** array (for instance, **mainToolbar**.[commands[]](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/mainToolbar/commands/)). To add predefined commands, you can specify a string value within **commands[]** arrays:
+
+    <!-- tab: index.js -->
+    $("#diagram").dxDiagram({
+        mainToolbar: {
+            commands: [ 'undo', 'redo', 'fontName', 'fontSize', 'bold', 'italic', 'underline' ],
+        },
+    })
 
 ##### Angular
 
-      <!-- tab: app.component.html -->
-      <dx-diagram #diagram id="diagram" (onCustomCommand)="onCustomCommand($event)">
-      <dxo-context-menu [enabled]="true" [commands]='["bringToFront", "sendToBack", "lock", "unlock"]'>
-      </dxo-context-menu>
-      <dxo-context-toolbox [enabled]="true" category="flowchart" [width]="200" [shapeIconsPerRow]="5">
-      </dxo-context-toolbox>
-      <dxo-properties-panel visibility="visible">
-            <dxi-tab>
-                  <dxi-group title="Page Properties" [commands]='["pageSize","pageOrientation","pageColor"]'></dxi-group>
-            </dxi-tab>
-      </dxo-properties-panel>
-      <dxo-history-toolbar [visible]="false">
-      </dxo-history-toolbar>
-      <dxo-view-toolbar [visible]="true">
-            <dxi-command name="zoomLevel"></dxi-command>
-            <dxi-command name="fullScreen"></dxi-command>
-            <dxi-command name="units"></dxi-command>
-            <dxi-command name="sayHello" icon="blockquote" text="Say Hello"></dxi-command> 
-            <dxi-command name="export" icon="export" [items] = '["exportSvg","exportPng","exportJpg"]'></dxi-command>  
-      </dxo-view-toolbar>
-      <dxo-main-toolbar [visible]="true">
-            <dxi-command name="undo"></dxi-command>
-            <dxi-command name="redo"></dxi-command>
-            <dxi-command name="separator"></dxi-command>
-            <dxi-command name="fontName"></dxi-command>
-            <dxi-command name="fontSize"></dxi-command>
-            <dxi-command name="separator"></dxi-command>
-            <dxi-command name="bold"></dxi-command>
-            <dxi-command name="italic"></dxi-command>
-            <dxi-command name="underline"></dxi-command>
-            <dxi-command name="separator"></dxi-command>
-            <dxi-command name="fontColor"></dxi-command>
-            <dxi-command name="lineColor"></dxi-command>
-            <dxi-command name="fillColor"></dxi-command>
-            <dxi-command name="separator"></dxi-command>
-            <dxi-command name="clear" icon="clearsquare" text="Clear Diagram"></dxi-command>
-      </dxo-main-toolbar>
-      <dxo-toolbox visibility="visible" [showSearch]="false" [shapeIconsPerRow]="4" [width]="220">
-            <dxi-group category="general" title="General"></dxi-group>
-            <dxi-group category="flowchart" title="Flowchart" [expanded]="true"></dxi-group>
-      </dxo-toolbox>
-      </dx-diagram>
+To specify which commands a tool panel or menu displays, define the element's **commands[]** array (for instance, **mainToolbar**.[commands[]](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/mainToolbar/commands/)). To add predefined commands, specify only the **name** property:
 
-      <!-- tab: app.component.ts -->
-      import { confirm } from 'devextreme/ui/dialog';
-      
-      @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-      })
-      export class AppComponent {
-            // ...
-            onCustomCommand(e) {
-                  if(e.name === "clear") {
-                        let result = confirm("Are you sure you want to clear the diagram? This action cannot be undone.", "Warning");
-                        result.then(
-                        function(dialogResult) {
-                              if(dialogResult) {
-                                    e.component.import("");
-                              }
-                        }
-                        );
-                  }
-                  else if (e.name == "sayHello")
-                        alert("Hello!")
-            }
-      }
-
-      <!-- tab: app.module.ts -->
-      import { BrowserModule } from '@angular/platform-browser';
-      import { NgModule } from '@angular/core';
-      import { AppComponent } from './app.component';
-
-      import { DxDiagramModule } from 'devextreme-angular';
-
-      @NgModule({
-            declarations: [
-                  AppComponent
-            ],
-            imports: [
-                  BrowserModule,
-                  DxDiagramModule
-            ],
-            providers: [ ],
-            bootstrap: [AppComponent]
-      })
-      export class AppModule { }
+    <!-- tab: app.component.html -->
+    <dx-diagram>
+        <dxo-diagram-main-toolbar [visible]="true">
+            <dxi-diagram-command name="undo"></dxi-diagram-command>
+            <dxi-diagram-command name="redo"></dxi-diagram-command>
+            <dxi-diagram-command name="fontName"></dxi-diagram-command>
+            <dxi-diagram-command name="fontSize"></dxi-diagram-command>
+            <dxi-diagram-command name="bold"></dxi-diagram-command>
+            <dxi-diagram-command name="italic"></dxi-diagram-command>
+            <dxi-diagram-command name="underline"></dxi-diagram-command>
+        </dxo-diagram-main-toolbar>
+    </dx-diagram>
 
 ##### Vue
 
-      <!-- tab: App.vue -->
-      <template>
-      <DxDiagram
-            id="diagram"
-            ref="diagram"
-            @custom-command="onCustomCommand"
-      >
-            <DxContextMenu
-                  :enabled="true"
-                  :commands="['bringToFront', 'sendToBack' , 'lock' , 'unlock' ]"
-            />
-            <DxContextToolbox
-                  :enabled="true"
-                  :category="'flowchart'"
-                  :shape-icons-per-row="5"
-                  :width="200"
-            />
-            <DxPropertiesPanel
-                  :visibility="'visible'"
-            >
-                  <DxTab>
-                        <DxGroup
-                              :title="'Page Properties'"
-                              :commands="['pageSize', 'pageOrientation' , 'pageColor' ]"
-                        />
-                  </DxTab>
-            </DxPropertiesPanel>
-            <DxHistoryToolbar
-                  :visible="false"
-            />
-            <DxViewToolbar
-                  :visible="true"
-            >
-                  <DxCommand
-                        :name="'zoomLevel'"
-                  />
-                  <DxCommand
-                        :name="'fullScreen'"
-                  />
-                  <DxCommand
-                        :name="'units'"
-                  />
-                  <DxCommand
-                        :name="'sayHello'"
-                        :icon="'blockquote'"
-                        :text="'Say Hello'"
-                  />
-                  <DxCommand
-                        :name="'export'"
-                        :icon="'export'"
-                        :items="['exportSvg','exportPng','exportJpg']"
-                  />
-                  </DxViewToolbar>
-            <DxMainToolbar
-                  :visible="true"
-            >
-                  <DxCommand
-                        :name="'undo'"
-                  />
-                  <DxCommand
-                        :name="'redo'"
-                  />
-                  <DxCommand
-                        :name="'separator'"
-                  />
-                  <DxCommand
-                        :name="'fontName'"
-                  />
-                  <DxCommand
-                        :name="'fontSize'"
-                  />
-                  <DxCommand
-                        :name="'separator'"
-                  />
-                  <DxCommand
-                        :name="'bold'"
-                  />
-                  <DxCommand
-                        :name="'italic'"
-                  />
-                  <DxCommand
-                        :name="'underline'"
-                  />
-                  <DxCommand
-                        :name="'separator'"
-                  />
-                  <DxCommand
-                        :name="'fontColor'"
-                  />
-                  <DxCommand
-                        :name="'lineColor'"
-                  />
-                  <DxCommand
-                        :name="'fillColor'"
-                  />
-                  <DxCommand
-                        :name="'separator'"
-                  />
-                  <DxCommand
-                        :name="'clear'"
-                        :icon="'clearsquare'"
-                        :text="'Clear Diagram'"
-                  />
+To specify which commands a tool panel or menu displays, define the element's **commands[]** array (for instance, **mainToolbar**.[commands[]](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/mainToolbar/commands/)). To add predefined commands, specify only the **name** property:
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDiagram>
+            <DxMainToolbar :visible="true">
+                <DxCommand name="undo" />
+                <DxCommand name="redo" />
+                <DxCommand name="fontName" />
+                <DxCommand name="fontSize" />
+                <DxCommand name="bold" />
+                <DxCommand name="italic" />
+                <DxCommand name="underline" />
             </DxMainToolbar>
-            <DxToolbox
-                  :visibility="'visible'"
-                  :show-search="false"
-                  :shape-icons-per-row="4"
-                  :width="220"
-            >
-                  <DxGroup
-                        :category="'general'"
-                        :title="'General'"
-                  />
-                  <DxGroup
-                        :category="'flowchart'"
-                        :title="'Flowchart'"
-                        :expanded="true"
-                  />
-            </DxToolbox>
-      </DxDiagram>
-      </template>
-      <script>
-      import { DxDiagram, DxContextMenu, DxContextToolbox, DxPropertiesPanel, DxGroup, DxTab, 
-      DxHistoryToolbar, DxViewToolbar, DxMainToolbar, DxCommand, DxToolbox } from 'devextreme-vue/diagram';
-      import { confirm } from 'devextreme/ui/dialog';
-      import 'whatwg-fetch';
-      export default {
-      components: {
-            DxDiagram, DxContextMenu, DxContextToolbox, DxPropertiesPanel, DxGroup, DxTab, 
-            DxHistoryToolbar, DxViewToolbar, DxMainToolbar, DxCommand, DxToolbox
-      },
-      mounted() {
-            var diagram = this.$refs['diagram'].instance;
-            fetch('data/diagram-flow.json')
-                  .then(function(response) {
-                        return response.json();
-                  })
-                  .then(function(json) {
-                        diagram.import(JSON.stringify(json));
-                  })
-                  .catch(function() {
-                        throw 'Data Loading Error';
-                  });
-      },
-      methods: {
-            onCustomCommand(e) {
-                  if(e.name === 'clear') {
-                        var result = confirm('Are you sure you want to clear the diagram? 
-                        This action cannot be undone.', 'Warning');
-                        result.then(
-                              function(dialogResult) {
-                                    if(dialogResult) {
-                                    e.component.import('');
-                                    }
-                              }
-                        );
-                  }
-                  else if (e.name == "sayHello")
-                        alert("Hello!")
-            }
-      }
-      };
-      </script>
-      
+        </DxDiagram>
+    </template>
+
+    <script setup lang="ts">
+    import { DxDiagram, DxMainToolbar, DxCommand } from 'devextreme-vue/diagram';
+
+    </script>
+
 ##### React
 
-      <!-- tab: App.js -->
-      // ...
-      import { confirm } from 'devextreme/ui/dialog';
-      // ...
-      class App extends React.Component {
-            // ...
-            onCustomCommand(e) {
-                  if(e.name === 'clear') {
-                        var result = confirm('Are you sure you want to clear the diagram? 
-                              This action cannot be undone.', 'Warning');
-                        result.then(
-                              function(dialogResult) {
-                                    if(dialogResult) {
-                                          e.component.import('');
-                                    }
-                              }
-                        );
-                  }
-                  else if (e.name == "sayHello")
-                        alert("Hello!") 
-            }
+To specify which commands a tool panel or menu displays, define the element's **commands[]** array (for instance, **mainToolbar**.[commands[]](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/mainToolbar/commands/)). To add predefined commands, specify only the **name** property:
 
-            render() {
-                  return (
-                        <Diagram id="diagram" ref={this.diagramRef} onCustomCommand={this.onCustomCommand}>
-                              <ContextMenu enabled={true} commands={['bringToFront', 'sendToBack', 'lock', 'unlock']} />
-                              <ContextToolbox enabled={true} category="flowchart" shapeIconsPerRow={5} width={200} />
-                              <PropertiesPanel visibility="visible">
-                                    <Tab>
-                                          <Group title="Page Properties" commands={['pageSize', 'pageOrientation', 'pageColor']} />
-                                    </Tab>
-                              </PropertiesPanel>
-                              <HistoryToolbar visible={false} />
-                              <ViewToolbar visible={true}>
-                                    <Command name="zoomLevel" />
-                                    <Command name="fullScreen" />
-                                    <Command name="units" />
-                                    <Command name="sayHello" icon="blockquote" text="Say Hello" />
-                                    <Command name="export" icon="export" items = {["exportSvg","exportPng","exportJpg"]} />
-                              </ViewToolbar>
-                              <MainToolbar visible={true}>
-                                    <Command name="undo" />
-                                    <Command name="redo" />
-                                    <Command name="separator" />
-                                    <Command name="fontName" />
-                                    <Command name="fontSize" />
-                                    <Command name="separator" />
-                                    <Command name="bold" />
-                                    <Command name="italic" />
-                                    <Command name="underline" />
-                                    <Command name="separator" />
-                                    <Command name="fontColor" />
-                                    <Command name="lineColor" />
-                                    <Command name="fillColor" />
-                                    <Command name="separator" />
-                                    <Command name="clear" icon="clearsquare" text="Clear Diagram" />
-                              </MainToolbar>
-                              <Toolbox visibility="visible" showSearch={false} shapeIconsPerRow={4} width={220}>
-                                    <Group category="general" title="General" />
-                                    <Group category="flowchart" title="Flowchart" expanded={true} />
-                              </Toolbox>
-                        </Diagram>
-                  );
+    <!-- tab: App.tsx -->
+    import { Diagram, MainToolbar, Command } from 'devextreme-react/diagram';
+
+    function App() {
+        return (
+            <Diagram>
+                <MainToolbar visible={true}>
+                    <Command name="undo" />
+                    <Command name="redo" />
+                    <Command name="fontName" />
+                    <Command name="fontSize" />
+                    <Command name="bold" />
+                    <Command name="italic" />
+                    <Command name="underline" />
+                </MainToolbar>
+            </Diagram>
+        )
+    }
+
+---
+
+The Diagram component supports custom commands within tool panels and menus. To define a custom command item, specify a string **command**.**name** value (different from [Command](/Documentation/ApiReference/UI_Components/dxDiagram/Types/#Command) type values) and implement the [onCustomCommand](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#onCustomCommand) handler. You can also specify custom command icons and text. The following code snippet demonstrates a custom command that imports an empty value into the Diagram to clear component content:
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js-->
+    $("#diagram").dxDiagram({
+        mainToolbar: {
+            commands: [{
+                name: 'clear',
+                icon: 'deletetable'
+            }, ... ],
+        },
+        onCustomCommand(e) {
+            if(e.name === 'clear') {
+                e.component.import('');
             }
-      }
+        },
+    })
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-diagram (onCustomCommand)="handleCustomCommand($event)">
+        <dxo-diagram-main-toolbar [visible]="true">
+            <dxi-diagram-command
+                name="clear"
+                icon="deletetable"
+            ></dxi-diagram-command>
+        </dxo-diagram-main-toolbar>
+    </dx-diagram>
+
+    <!-- tab: app.component.ts -->
+    import { DxDiagramComponent, type DxDiagramTypes } from 'devextreme-angular/ui/diagram';
+    // ...
+    export class AppComponent {
+        handleCustomCommand(e: DxDiagramTypes.CustomCommandEvent) {
+            if(e.name === 'clear') {
+                e.component.import('');
+            }
+        }
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDiagram @custom-command="handleCustomCommand">
+            <DxMainToolbar :visible="true">
+                <DxCommand
+                    name="clear"
+                    icon="deletetable"
+                />
+            </DxMainToolbar>
+        </DxDiagram>
+    </template>
+
+    <script setup lang="ts">
+    import { DxDiagram, DxMainToolbar, DxCommand, type DxDiagramTypes } from 'devextreme-vue/diagram'
+
+    function handleCustomCommand(e: DxDiagramTypes.CustomCommandEvent) {
+        if(e.name === 'clear') {
+            e.component.import('');
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.tsx -->
+    import { Diagram, MainToolbar, Command, type DiagramTypes } from 'devextreme-react/diagram';
+
+    function handleCustomCommand(e: DiagramTypes.CustomCommandEvent) {
+        if(e.name === 'clear') {
+            e.component.import('');
+        }
+    }
+
+    function App() {
+        return (
+            <Diagram onCustomCommand={handleCustomCommand}>
+                <MainToolbar visible={true}>
+                    <Command
+                        name="clear"
+                        icon="deletetable"
+                    />
+                </MainToolbar>
+            </Diagram>
+        )
+    }
+
+---
+
+
+---
 
 ##### ASP.NET Core Controls
 
@@ -614,3 +385,7 @@ The Diagram UI component allows you to customize its UI tools with the following
       )
 
 ---
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Diagram/UICustomization/"
+}

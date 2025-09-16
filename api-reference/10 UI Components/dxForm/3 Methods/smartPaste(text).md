@@ -3,10 +3,10 @@ id: dxForm.smartPaste(text)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Populates the Form with AI-generated values based on clipboard text.
 
 ##### param(text): String | undefined
-<!-- Description goes here -->
+The clipboard text.
 
 ---
 <!-- Description goes here -->

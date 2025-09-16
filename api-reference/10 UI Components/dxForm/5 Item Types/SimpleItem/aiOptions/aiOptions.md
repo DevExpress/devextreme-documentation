@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies options for AI service when you implement Smart Paste.
 
 ---
 <!-- Description goes here -->

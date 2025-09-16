@@ -5,19 +5,19 @@ default: null
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed after an AI service populates the Form.
 
 ##### param(e): ui/form:SmartPastedEvent
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.aiResult): Object
-<!-- Description goes here -->
+Smart Paste results. This data populates the Form fields.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ---
 <!-- Description goes here -->

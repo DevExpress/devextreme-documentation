@@ -1,40 +1,23 @@
-- **Data Binding**    
-To bind FileManager to data, specify the [fileSystemProvider](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/#fileSystemProvider) property. The component supports the following file system provider types:    
-    - [Object](/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Object/)    
-    An in-memory array of JSON objects.
-    - [Remote](/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Remote/)    
-    A server-side file system.
-    - [Custom](/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Custom/)    
-    Custom file system implementation.
+- **File System Support**    
+The DevExtreme FileManager supports [in-memory](/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Object/) (JSON), [remote](/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Remote/), and [custom](/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Custom/) file system provider types.
 
-- **Data Representation**    
-FileManager supports two file representation modes: a **details view** and a **thumbnail view**. The **thumbnail view** displays only thumbnails, while the **details view** offers additional [details](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/itemView/details/). To choose between the two, specify the **itemView**.[mode](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/itemView/#mode) property. Users can switch between the two options using the FileManager [toolbar](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/).
+- **Cloud Service Integration**    
+You can implement the custom file system provider type to connect FileManager to a cloud service provider (for instance, [Amazon S3](/Documentation/Guide/Common/Integration_Guides/Manage_Amazon_S3_Storage_with_DevExtreme_Components/#FileManager) or [Azure Blob](/Documentation/Guide/Common/Integration_Guides/Manage_Azure_Blob_Storage_with_DevExtreme_Components/#FileManager)).
 
-- **Permissions**     
-Configure the [permissions](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/) object to specify available FileManager actions:
-    - **copy**    
-    Duplicate files.
-    - **create**    
-    Create new directories.
-    - **delete**    
-    Delete files and directories.
-    - **download**    
-    Download files.
-    - **move**    
-    Move files and directories within the component file system.
-    - **rename**    
-    Rename files and directories.
-    - **upload**    
-    Upload files to the component file system.
+- **Detail and Thumbnail Views**    
+FileManager supports two file representation modes: a **details view** and a **thumbnail view**. The **thumbnail view** displays only thumbnails, while the **details view** includes [additional information](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/itemView/details/). Users can switch between the two options using the FileManager [toolbar](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/).
 
-- **File Uploading and Downloading**    
-To enable file uploading and downloading functionalities, assign `true` to the [upload](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#upload) and [download](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/#download) properties. Configure upload options such as [maxFileSize](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/upload/#maxFileSize) in the [upload](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/upload/) object.
+- **Configurarble Permissions**     
+DevExtreme FileManager allows you to configure [permissions](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/) to manage user access to files. You can enable/disable operations such as file upload/download, creation, and deletion.
+
+- **File Uploading**    
+You can configure upload options such as [maximum file size](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/upload/#maxFileSize) and enable [chunk uploading](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/upload/#chunkSize). Users can upload files through the component toolbar or drag and drop operations.
 
 - **Adaptability and Customization**    
-DevExtreme FileManager supports screens of all sizes. You can customize FileManager visual elements to fit your needs with properties such as [width](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/#width), [height](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/#height), and [customizeThumbnail](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/#customizeThumbnail).
+DevExtreme FileManager fits screens of all sizes and ships with right-to-left ([RTL](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/#rtlEnabled)) representation support. The component also allows you to customize visual elements such as [file thumbnails](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/#customizeThumbnail) and toolbar [items](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/items/).
 
 - **Data Selection**    
-FileManager supports single and multiple selection modes. Users can select items with mouse clicks, or focus and select items with keyboard actions. The following image demonstrates available FileManager item states:    
+FileManager supports single and multiple [selection modes](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/#selectionMode). The following image demonstrates available FileManager item states:    
 <img src="/images/FileManager/filemanager-item-states.png" alt="FileManager item states"/>
     1. **Selected Item**
     2. **Selected and Focused**

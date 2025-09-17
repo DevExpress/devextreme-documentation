@@ -5,7 +5,7 @@ The DevExtreme FileManager supports [in-memory](/Documentation/ApiReference/UI_C
 You can implement the custom file system provider type to connect FileManager to a cloud service provider (for instance, [Amazon S3](/Documentation/Guide/Common/Integration_Guides/Manage_Amazon_S3_Storage_with_DevExtreme_Components/#FileManager) or [Azure Blob](/Documentation/Guide/Common/Integration_Guides/Manage_Azure_Blob_Storage_with_DevExtreme_Components/#FileManager)).
 
 - **Detail and Thumbnail Views**    
-FileManager supports two file representation modes: the "Details" and "Thumbnails" views. "Thumbnails" displays only thumbnails, while "Details" includes [additional information](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/itemView/details/). Users can switch between the two options in the FileManager [toolbar](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/).
+FileManager supports two file representation modes: "Thumbnails" and "Details". "Thumbnails" displays only thumbnails, while "Details" includes [additional information](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/itemView/details/). Users can switch between the two options in the FileManager [toolbar](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/).
 
 - **Configurarble Permissions**     
 DevExtreme FileManager allows you to configure [permissions](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/) to manage user access to files. You can enable/disable operations such as file upload/download, creation, and deletion.

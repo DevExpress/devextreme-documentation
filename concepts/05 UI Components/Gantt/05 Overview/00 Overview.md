@@ -1,3 +1,3 @@
-DevExtreme Gantt is a project management tool that helps schedule and plan projects. The component displays tasks on a timeline and visualizes dependencies between hierarchical tasks. Gantt can also highlight task progress, milestones, and resource/team assignments. Alongside the timeline, the component displays tasks in a configurable column view which supports filtering and sorting operations.
+DevExtreme Gantt is a project management tool that helps schedule and plan projects. The component displays tasks on a timeline and visualizes dependencies between hierarchical tasks. Gantt can highlight task progress, milestones, and resource/team assignments. Alongside the timeline, the component displays tasks in a configurable column view which supports filtering and sorting operations.
 
 This overview highlights Gantt elements, key features, and what to explore next.

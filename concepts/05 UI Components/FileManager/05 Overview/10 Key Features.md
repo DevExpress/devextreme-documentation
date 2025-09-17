@@ -5,16 +5,19 @@ The DevExtreme FileManager supports [in-memory](/Documentation/ApiReference/UI_C
 You can implement the custom file system provider type to connect FileManager to a cloud service provider (for instance, [Amazon S3](/Documentation/Guide/Common/Integration_Guides/Manage_Amazon_S3_Storage_with_DevExtreme_Components/#FileManager) or [Azure Blob](/Documentation/Guide/Common/Integration_Guides/Manage_Azure_Blob_Storage_with_DevExtreme_Components/#FileManager)).
 
 - **Detail and Thumbnail Views**    
-FileManager supports two file representation modes: a **details view** and a **thumbnail view**. The **thumbnail view** displays only thumbnails, while the **details view** includes [additional information](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/itemView/details/). Users can switch between the two options using the FileManager [toolbar](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/).
+FileManager supports two file representation modes: the "Details" and "Thumbnails" views. "Thumbnails" displays only thumbnails, while "Details" includes [additional information](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/itemView/details/). Users can switch between the two options in the FileManager [toolbar](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/).
 
 - **Configurarble Permissions**     
 DevExtreme FileManager allows you to configure [permissions](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/permissions/) to manage user access to files. You can enable/disable operations such as file upload/download, creation, and deletion.
 
 - **File Uploading**    
-You can configure upload options such as [maximum file size](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/upload/#maxFileSize) and enable [chunk uploading](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/upload/#chunkSize). Users can upload files through the component toolbar or drag and drop operations.
+You can configure upload options such as [maximum file size](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/upload/#maxFileSize) and [chunk uploading](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/upload/#chunkSize). Users can upload files through drag and drop operations or in the component toolbar.
 
-- **Adaptability and Customization**    
-DevExtreme FileManager fits screens of all sizes and ships with right-to-left ([RTL](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/#rtlEnabled)) representation support. The component also allows you to customize visual elements such as [file thumbnails](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/#customizeThumbnail) and toolbar [items](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/items/).
+- **Adaptability**    
+DevExtreme FileManager fits screens of all sizes and ships with right-to-left ([RTL](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/#rtlEnabled)) representation support.
+
+- **Customization**    
+FileManager allows you to customize visual elements such as [file thumbnails](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/#customizeThumbnail) and toolbar [items](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/items/).
 
 - **Data Selection**    
 FileManager supports single and multiple [selection modes](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/#selectionMode). The following image demonstrates available FileManager item states:    

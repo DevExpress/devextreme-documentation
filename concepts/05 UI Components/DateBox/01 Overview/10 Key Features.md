@@ -2,15 +2,19 @@
 You can configure DateBox [type](/) to integrate the component as a date, time, or date and time picker.
 
 - **Formatting**    
-DateBox [formats](/concepts/05%20UI%20Components/DateBox/04%20Value%20Formatting%20and%20Masked%20Input.md '/Documentation/Guide/UI_Components/DateBox/Value_Formatting_and_Masked_Input/') its value according to the application's locale. Use [predefined or custom](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/') formats.
+The DateBox component automatically formats values based on your application locale. You can also [specify display formats](/Documentation/Guide/UI_Components/DateBox/Value_Formatting_and_Masked_Input/) manually, including [predefined, Intl, and custom formats](/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values).
 
-Masked Input
+- **Masked Input**    
+DateBox supports [masked input](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#useMaskBehavior). When enabled, the component does not allows users to input characters not supported by the DateBox [display format](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#displayFormat). 
 
-Configurable Date and Time Ranges
+- **Configurable Date and Time Ranges**    
+You can limit DateBox selection to a specific [date and time range](/Documentation/Guide/UI_Components/DateBox/Getting_Started_with_DateBox/#Set_the_Accepted_Date_Range).
 
-Date Disabling
+- **Disabled Dates**    
+DateBox allows you to [disable specific dates](/Documentation/Guide/UI_Components/DateBox/Getting_Started_with_DateBox/#Disable_Specific_Dates). You can implement this feature to disables days such as weekends and holidays.
 
-Calendar Configuration
+- **Drop-Down Calendar Configuration**    
+You can customize [DateBox Calendar options](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#calendarOptions) such as zoom level and week numbers.
 
 Form Support
 

@@ -1,4 +1,5 @@
 - **DateBox Types**    
+You can configure DateBox [type](/) to integrate the component as a date, time, or date and time picker.
 
 - **Formatting**    
 DateBox [formats](/concepts/05%20UI%20Components/DateBox/04%20Value%20Formatting%20and%20Masked%20Input.md '/Documentation/Guide/UI_Components/DateBox/Value_Formatting_and_Masked_Input/') its value according to the application's locale. Use [predefined or custom](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/') formats.

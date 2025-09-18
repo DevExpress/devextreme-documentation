@@ -12,11 +12,11 @@ Specifies the page size.
 
 [note]
 
-Pagination hides itself when the [pageSize](/) value is greater than [itemCount](/). To avoid this behavior, assign `true` to at least one of the following properties:
+If the **pageSize** value is greater than [itemCount](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#itemCount), Pagination hides itself. To avoid this behavior, assign `true` to at least one of the following properties:
 
-- [showInfo]()
-- [showNavigationButtons]()
-- [showPageSizeSelector]()
+- [showInfo](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#showInfo)
+- [showNavigationButtons](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#showNavigationButtons)
+- [showPageSizeSelector](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#showPageSizeSelector)
 
 [/note]
 

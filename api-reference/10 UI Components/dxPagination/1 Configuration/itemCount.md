@@ -8,15 +8,15 @@ default: 1
 Specifies the total number of items.
 
 ---
-`itemCount` is the main configuration setting of the component. Specify the total number of items to ensure the Pagination component functions properly.
+Define this property to ensure Pagination functions properly.
 
 [note]
 
-Pagination hides itself when the [pageSize](/) value is greater than [itemCount](/). To avoid this behavior, assign `true` to at least one of the following properties:
+If the [pageSize](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#pageSize) value is greater than **itemCount**, Pagination hides itself. To avoid this behavior, assign `true` to at least one of the following properties:
 
-- [showInfo]()
-- [showNavigationButtons]()
-- [showPageSizeSelector]()
+- [showInfo](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#showInfo)
+- [showNavigationButtons](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#showNavigationButtons)
+- [showPageSizeSelector](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#showPageSizeSelector)
 
 [/note]
 

@@ -6129,11 +6129,6 @@
     "baseChartOptions.pointSelectionMode": {
       "vue": "point-selection-mode"
     },
-    "baseChartOptions.tooltip": {
-      "angular": "dxo-tooltip",
-      "react": "Tooltip",
-      "vue": "DxTooltip"
-    },
     "baseChartOptions.tooltip.argumentFormat": {
       "angular": "dxo-argument-format",
       "react": "ArgumentFormat",
@@ -15354,6 +15349,11 @@
     },
     "dxPieChartOptions.startAngle": {
       "vue": "start-angle"
+    },
+    "dxPieChartOptions.tooltip": {
+      "angular": "dxo-tooltip",
+      "react": "Tooltip",
+      "vue": "DxTooltip"
     },
     "dxPieChartSeriesTypes.CommonPieChartSeries.argumentField": {
       "vue": "argument-field"

@@ -8,7 +8,7 @@ default: undefined
 ##### shortDescription
 Allows you to change tooltip appearance.
 
-##### param(pointInfo): Object
+##### param(pointInfo): viz/chart_components/base_chart:ChartsPointInfo
 Information on the series point being pressed or hovered over with the mouse pointer.
 
 ##### return: Object

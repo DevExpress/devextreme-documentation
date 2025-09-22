@@ -91,7 +91,7 @@ To specify which commands a tool panel or menu displays, define the element's **
 
 ---
 
-The Diagram component supports custom commands within tool panels and menus. To define a custom command item, specify a string **command**.**name** value (different from [Command](/Documentation/ApiReference/UI_Components/dxDiagram/Types/#Command) type values) and implement the [onCustomCommand](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#onCustomCommand) handler. You can also specify custom command icons and text. The following code snippet demonstrates a custom command that imports an empty value into the Diagram to clear component content:
+The Diagram component supports custom commands within tool panels and menus. To define a custom command item, specify a string **command**.**name** value (different from [Command](/api-reference/10%20UI%20Components/dxDiagram/9%20Types/Command.md '/Documentation/ApiReference/UI_Components/dxDiagram/Types/#Command') type values) and implement the [onCustomCommand](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/onCustomCommand.md '/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/#onCustomCommand') handler. You can also specify custom command icons and text. The following code snippet demonstrates a custom command that imports an empty value into the Diagram to clear component content:
 
 ---
 

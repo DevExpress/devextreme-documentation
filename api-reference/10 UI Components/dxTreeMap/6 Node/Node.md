@@ -8,7 +8,7 @@ export: dxTreeMapNode
 This section describes the **node** object.
 
 ---
-The following image demonstrates TreeMap node types:
+The following image illustrates TreeMap node types:
 
 <img src="/images/TreeMap/treemap-node.png" alt="TreeMap node types" style="width: 1100px;"/>
 

@@ -3869,6 +3869,41 @@
     "_ui_sortable_ReorderEvent.toIndex": {
       "vue": "to-index"
     },
+    "_ui_speech_to_text_ContentReadyEvent": {
+      "angular": "dxo-ui-speech-to-text--content-ready-event",
+      "react": "_ui_speech_to_text_ContentReadyEvent",
+      "vue": "Dx_ui_speech_to_text_ContentReadyEvent"
+    },
+    "_ui_speech_to_text_DisposingEvent": {
+      "angular": "dxo-ui-speech-to-text--disposing-event",
+      "react": "_ui_speech_to_text_DisposingEvent",
+      "vue": "Dx_ui_speech_to_text_DisposingEvent"
+    },
+    "_ui_speech_to_text_ErrorEvent": {
+      "angular": "dxo-ui-speech-to-text--error-event",
+      "react": "_ui_speech_to_text_ErrorEvent",
+      "vue": "Dx_ui_speech_to_text_ErrorEvent"
+    },
+    "_ui_speech_to_text_OptionChangedEvent": {
+      "angular": "dxo-ui-speech-to-text--option-changed-event",
+      "react": "_ui_speech_to_text_OptionChangedEvent",
+      "vue": "Dx_ui_speech_to_text_OptionChangedEvent"
+    },
+    "_ui_speech_to_text_ResultEvent": {
+      "angular": "dxo-ui-speech-to-text--result-event",
+      "react": "_ui_speech_to_text_ResultEvent",
+      "vue": "Dx_ui_speech_to_text_ResultEvent"
+    },
+    "_ui_speech_to_text_StartClickEvent": {
+      "angular": "dxo-ui-speech-to-text--start-click-event",
+      "react": "_ui_speech_to_text_StartClickEvent",
+      "vue": "Dx_ui_speech_to_text_StartClickEvent"
+    },
+    "_ui_speech_to_text_StopClickEvent": {
+      "angular": "dxo-ui-speech-to-text--stop-click-event",
+      "react": "_ui_speech_to_text_StopClickEvent",
+      "vue": "Dx_ui_speech_to_text_StopClickEvent"
+    },
     "_ui_speed_dial_action_ClickEvent": {
       "angular": "dxo-ui-speed-dial-action--click-event",
       "react": "_ui_speed_dial_action_ClickEvent",
@@ -7124,6 +7159,14 @@
     },
     "customRule.validationCallback": {
       "vue": "validation-callback"
+    },
+    "customSpeechRecognizer": {
+      "angular": "dxo-custom-speech-recognizer",
+      "react": "CustomSpeechRecognizer",
+      "vue": "DxCustomSpeechRecognizer"
+    },
+    "customSpeechRecognizer.isListening": {
+      "vue": "is-listening"
     },
     "customStoreOptions": {
       "vue": "custom-store-options"
@@ -18415,6 +18458,60 @@
     "dxSparklineOptions.winlossThreshold": {
       "vue": "winloss-threshold"
     },
+    "dxSpeechToText": {
+      "angular": "dx-speech-to-text",
+      "react": "SpeechToText",
+      "vue": "DxSpeechToText"
+    },
+    "dxSpeechToTextOptions.customSpeechRecognizer": {
+      "angular": "dxo-custom-speech-recognizer",
+      "react": "CustomSpeechRecognizer",
+      "vue": "DxCustomSpeechRecognizer"
+    },
+    "dxSpeechToTextOptions.onContentReady": {
+      "vue": "@content-ready"
+    },
+    "dxSpeechToTextOptions.onDisposing": {
+      "vue": "@disposing"
+    },
+    "dxSpeechToTextOptions.onError": {
+      "vue": "@error"
+    },
+    "dxSpeechToTextOptions.onInitialized": {
+      "vue": "@initialized"
+    },
+    "dxSpeechToTextOptions.onOptionChanged": {
+      "vue": "@option-changed"
+    },
+    "dxSpeechToTextOptions.onResult": {
+      "vue": "@result"
+    },
+    "dxSpeechToTextOptions.onStartClick": {
+      "vue": "@start-click"
+    },
+    "dxSpeechToTextOptions.onStopClick": {
+      "vue": "@stop-click"
+    },
+    "dxSpeechToTextOptions.startIcon": {
+      "vue": "start-icon"
+    },
+    "dxSpeechToTextOptions.startText": {
+      "vue": "start-text"
+    },
+    "dxSpeechToTextOptions.stopIcon": {
+      "vue": "stop-icon"
+    },
+    "dxSpeechToTextOptions.stopText": {
+      "vue": "stop-text"
+    },
+    "dxSpeechToTextOptions.stylingMode": {
+      "vue": "styling-mode"
+    },
+    "dxSpeechToTextOptions.webSpeechApiConfig": {
+      "angular": "dxo-web-speech-api-config",
+      "react": "WebSpeechApiConfig",
+      "vue": "DxWebSpeechApiConfig"
+    },
     "dxSpeedDialAction": {
       "angular": "dx-speed-dial-action",
       "react": "SpeedDialAction",
@@ -22964,6 +23061,17 @@
     },
     "visualRange.startValue": {
       "vue": "start-value"
+    },
+    "webSpeechApiConfig": {
+      "angular": "dxo-web-speech-api-config",
+      "react": "WebSpeechApiConfig",
+      "vue": "DxWebSpeechApiConfig"
+    },
+    "webSpeechApiConfig.interimResults": {
+      "vue": "interim-results"
+    },
+    "webSpeechApiConfig.maxAlternatives": {
+      "vue": "max-alternatives"
     },
     "widgetOptions.accessKey": {
       "vue": "access-key"

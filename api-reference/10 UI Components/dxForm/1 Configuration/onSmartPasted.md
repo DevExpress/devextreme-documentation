@@ -21,3 +21,9 @@ UI component's instance.
 
 ---
 <!-- Description goes here -->
+
+onSmartPasted(e) {
+    if (e.aiResult !== Object.prototype) {
+        DevExpress.ui.notify("Smart Paste finished successfully");
+    }
+},

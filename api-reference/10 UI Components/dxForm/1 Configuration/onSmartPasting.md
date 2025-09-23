@@ -25,3 +25,10 @@ UI component's instance.
 
 ---
 <!-- Description goes here -->
+
+onSmartPasting(e) {
+    if (!e.aiResult.ZIP) {
+        e.cancel = true;
+        DevExpress.ui.notify("Could not past: the ZIP address was not recognized");
+    }
+},

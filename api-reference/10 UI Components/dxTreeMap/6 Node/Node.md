@@ -10,7 +10,7 @@ This section describes the **node** object.
 ---
 The following image demonstrates TreeMap node types:
 
-<img src="/images/TreeMap/treemap-node.png" alt="TagBox elements" style="width: 1100px;"/>
+<img src="/images/TreeMap/treemap-node.png" alt="TreeMap node types" style="width: 1100px;"/>
 
 1. [Group Node](/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/group/)
 2. [Child Node](/Documentation/ApiReference/UI_Components/dxTreeMap/Configuration/#childrenField)

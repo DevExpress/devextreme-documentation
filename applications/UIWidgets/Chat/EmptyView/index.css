@@ -1,0 +1,83 @@
+.demo-viewport {
+  height: 800px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.empty-view-titlebox {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 36px;
+  margin-top: 44px;
+}
+
+.empty-view-title {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Segoe UI;
+}
+
+.empty-view-subtitle {
+  margin-top: auto;
+}
+
+#chat {
+  background-image: url('data:image/svg+xml;utf8,<svg width="780" height="480" viewBox="0 0 780 480" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_15587_1133)"><rect width="780" height="480" fill="white"/><g filter="url(%23filter0_f_15587_1133)"><path d="M358 358C358 466.248 270.248 554 162 554C53.7522 554 -34 466.248 -34 358C-34 249.752 53.7522 162 162 162C270.248 162 358 249.752 358 358Z" fill="%23D8E9FF"/><path d="M897 143C897 251.248 809.248 339 701 339C592.752 339 505 251.248 505 143C505 34.7522 592.752 -53 701 -53C809.248 -53 897 34.7522 897 143Z" fill="%23F8D8FF"/><path d="M612 232C612 340.248 524.248 428 416 428C307.752 428 220 340.248 220 232C220 123.752 307.752 36 416 36C524.248 36 612 123.752 612 232Z" fill="white"/></g></g><defs><filter id="filter0_f_15587_1133" x="-434" y="-453" width="1731" height="1407" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_15587_1133"/></filter><clipPath id="clip0_15587_1133"><rect width="780" height="480" fill="white"/></clipPath></defs></svg>');
+}
+
+#chat .dx-chat-messagebox {
+  border-top-width: 0px;
+  padding: 40px;
+}
+
+.empty-view-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#tile-view-container {
+  align-self: center;
+}
+
+.dx-tile {
+  border-radius: 12px;
+  border-color: #E6E6E6;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 12px rgb(0, 0, 0, 0.04);
+  padding: 16px;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+.dx-tile:hover {
+  transform: scale(1.025); 
+  border: 1px solid rgba(224, 224, 224, .6);
+  box-shadow: 0px 0px 8px 4px rgba(0, 4, 8, .025);
+  cursor: pointer;
+}
+
+.dx-tile.dx-state-focused {
+  outline: 2px solid var(--dx-color-primary);
+}
+
+.tile-container {
+  display: grid;
+  height: 100%;
+}
+
+.tile-emoji {
+  font-size: 28px;
+  line-height: 36px;
+  font-family: Segoe UI;
+  text-align: center;
+}
+
+.tile-text {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Segoe UI;
+  font-weight: 600;
+  align-self: end;
+  text-align: center;
+}

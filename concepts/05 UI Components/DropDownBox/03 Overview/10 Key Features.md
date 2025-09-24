@@ -4,6 +4,9 @@ You can embed any DevExtreme component within the DropDownBox. To display data, 
 - **Synchronize with Embedded Component**    
 To synchronize DropDownBox with its embedded component, refer to the following tutorial: [Synchronize with the Embedded Element](/Documentation/Guide/UI_Components/DropDownBox/Synchronize_with_the_Embedded_Element/)
 
+- **Selection**    
+You can configure DropDownBox selection to display single or multiple values.
+
 - **Validation**    
 DropDownBox ships with [data validation capabilities](/Documentation/Guide/UI_Components/Common/UI_Widgets/Data_Validation/). You can implement custom logic to validate the component value and display a [validation status](/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#isValid) to users.
 

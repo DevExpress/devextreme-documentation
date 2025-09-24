@@ -1,15 +1,7 @@
-$("<link>", {
-    rel: "stylesheet",
-    href: "https://unpkg.com/ionicons@4.6.3/dist/css/ionicons.min.css"
- }).appendTo("head");
-
 $(function() {
-    const isDarkTheme = document.cookie.includes("theme=dark");
-    DevExpress.ui.themes.current(isDarkTheme ? "material.blue.dark" : "material.blue.light")
-
     DevExpress.config({
         floatingActionButtonConfig: {
-            icon: "icon ion-md-share",
+            icon: "share",
             position: {
                 my: "right bottom",
                 at: "right bottom",
@@ -21,7 +13,7 @@ $(function() {
 
     var editAction = $("#action-edit").dxSpeedDialAction({
         hint: "Edit",
-        icon: "icon ion-md-create",
+        icon: "edit",
         onClick: function() {
             showNotification("Edit is clicked")
         }
@@ -29,7 +21,7 @@ $(function() {
 
     var copyAction = $("#action-copy").dxSpeedDialAction({
         hint: "Copy to clipboard",
-        icon: "icon ion-md-copy",
+        icon: "copy",
         visible: false,
         onClick: function() {
             showNotification("Copied to clipboard")
@@ -38,19 +30,19 @@ $(function() {
 
     var mailAction = $("#action-mail").dxSpeedDialAction({
         hint: "Send by email",
-        icon: "icon ion-md-mail",
+        icon: "email",
         visible: false,
         onClick: function() {
             showNotification("Sent by email")
         }
     }).dxSpeedDialAction("instance");
 
-    var facebookAction = $("#action-facebook").dxSpeedDialAction({
-        hint: "Share on Facebook",
-        icon: "icon ion-logo-facebook",
+    var facebookAction = $("#action-social").dxSpeedDialAction({
+        hint: "Share on Social Media",
+        icon: "link",
         visible: false,
         onClick: function() {
-            showNotification("Shared on Facebook")
+            showNotification("Shared on Social Media")
         }
     }).dxSpeedDialAction("instance");
 

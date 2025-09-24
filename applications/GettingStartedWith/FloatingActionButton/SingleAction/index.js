@@ -1,12 +1,4 @@
-$("<link>", {
-    rel: "stylesheet",
-    href: "https://unpkg.com/ionicons@4.6.3/dist/css/ionicons.min.css"
- }).appendTo("head");
-
 $(function() {
-    const isDarkTheme = document.cookie.includes("theme=dark");
-    DevExpress.ui.themes.current(isDarkTheme ? "material.blue.dark" : "material.blue.light")
-
     DevExpress.config({
         floatingActionButtonConfig: {
             position: {
@@ -20,7 +12,7 @@ $(function() {
 
     $("#action-edit").dxSpeedDialAction({
         hint: "Edit",
-        icon: "icon ion-md-create",
+        icon: "edit",
         onClick: function() {
             showNotification("Edit is clicked")
         }

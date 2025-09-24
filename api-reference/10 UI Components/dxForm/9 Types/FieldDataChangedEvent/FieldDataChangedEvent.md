@@ -9,7 +9,7 @@ references: dxForm.Options.onFieldDataChanged
 ---
 ---
 ##### shortDescription
-The type of the [fieldDataChanged]({basewidgetpath}/Events/#fieldDataChanged) event handler's argument.
+The argument type in the [fieldDataChanged]({basewidgetpath}/Events/#fieldDataChanged) event.
 
 ---
 <!-- Description goes here -->

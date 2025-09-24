@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The argument type in the [smartPasted]({basewidgetpath}/Events/#smartPasted) event.
 
 ---
 <!-- Description goes here -->

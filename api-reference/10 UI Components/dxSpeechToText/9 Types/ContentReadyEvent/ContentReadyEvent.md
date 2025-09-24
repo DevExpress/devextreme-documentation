@@ -1,10 +1,11 @@
 ---
-id: _ui_speech_to_text_ResultEvent
+uid: ui/speech_to_text:ContentReadyEvent
 module: ui/speech_to_text
-export: ResultEvent
+export: ContentReadyEvent
 type: Object
 inherits: EventInfo
-references: dxSpeechToText.Options.onResult
+references: dxSpeechToText.Options.onContentReady
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

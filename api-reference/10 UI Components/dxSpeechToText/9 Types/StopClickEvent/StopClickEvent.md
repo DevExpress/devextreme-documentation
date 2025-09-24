@@ -1,10 +1,11 @@
 ---
-id: _ui_speech_to_text_StartClickEvent
+uid: ui/speech_to_text:StopClickEvent
 module: ui/speech_to_text
-export: StartClickEvent
+export: StopClickEvent
 type: Object
 inherits: NativeEventInfo
-references: dxSpeechToText.Options.onStartClick
+references: dxSpeechToText.Options.onStopClick
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

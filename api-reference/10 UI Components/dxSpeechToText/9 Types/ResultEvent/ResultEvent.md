@@ -1,10 +1,11 @@
 ---
-id: _ui_speech_to_text_DisposingEvent
+uid: ui/speech_to_text:ResultEvent
 module: ui/speech_to_text
-export: DisposingEvent
+export: ResultEvent
 type: Object
 inherits: EventInfo
-references: dxSpeechToText.Options.onDisposing
+references: dxSpeechToText.Options.onResult
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -1,10 +1,11 @@
 ---
-id: _ui_speech_to_text_InitializedEvent
+uid: ui/speech_to_text:InitializedEvent
 module: ui/speech_to_text
 export: InitializedEvent
 type: Object
 inherits: InitializedEventInfo
 references: dxSpeechToText.Options.onInitialized
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

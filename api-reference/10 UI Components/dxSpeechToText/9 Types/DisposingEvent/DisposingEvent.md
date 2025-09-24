@@ -1,10 +1,11 @@
 ---
-id: _ui_speech_to_text_ErrorEvent
+uid: ui/speech_to_text:DisposingEvent
 module: ui/speech_to_text
-export: ErrorEvent
+export: DisposingEvent
 type: Object
 inherits: EventInfo
-references: dxSpeechToText.Options.onError
+references: dxSpeechToText.Options.onDisposing
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

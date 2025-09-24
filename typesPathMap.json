@@ -59,6 +59,7 @@
     "ui/select_box":                   "api-reference/10 UI Components/dxSelectBox/9 Types",
     "ui/slider":                       "api-reference/10 UI Components/dxSlider/9 Types",
     "ui/sortable":                     "api-reference/10 UI Components/dxSortable/9 Types",
+    "ui/speech_to_text":               "api-reference/10 UI Components/dxSpeechToText/9 Types",
     "ui/speed_dial_action":            "api-reference/10 UI Components/dxSpeedDialAction/9 Types",
     "ui/splitter":                     "api-reference/10 UI Components/dxSplitter/9 Types",
     "ui/stepper":                      "api-reference/10 UI Components/dxStepper/9 Types",

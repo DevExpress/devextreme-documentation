@@ -1,15 +1,7 @@
-$("<link>", {
-    rel: "stylesheet",
-    href: "https://unpkg.com/ionicons@4.6.3/dist/css/ionicons.min.css"
- }).appendTo("head");
-
 $(function() {
-    const isDarkTheme = document.cookie.includes("theme=dark");
-    DevExpress.ui.themes.current(isDarkTheme ? "material.blue.dark" : "material.blue.light")
-
     DevExpress.config({
         floatingActionButtonConfig: {
-            icon: "icon ion-md-share",
+            icon: "share",
             position: {
                 my: "right bottom",
                 at: "right bottom",
@@ -21,7 +13,7 @@ $(function() {
 
     $("#action-copy").dxSpeedDialAction({
         hint: "Copy to clipboard",
-        icon: "icon ion-md-copy",
+        icon: "copy",
         onClick: function() {
             showNotification("Copied to clipboard");
         }
@@ -29,17 +21,17 @@ $(function() {
 
     $("#action-mail").dxSpeedDialAction({
         hint: "Send by email",
-        icon: "icon ion-md-mail",
+        icon: "email",
         onClick: function() {
             showNotification("Sent by email");
         }
     });
 
-    $("#action-facebook").dxSpeedDialAction({
-        hint: "Share on Facebook",
-        icon: "icon ion-logo-facebook",
+    $("#action-social").dxSpeedDialAction({
+        hint: "Share on Social Media",
+        icon: "link",
         onClick: function() {
-            showNotification("Shared on Facebook");
+            showNotification("Shared on Social Media");
         }
     });
 

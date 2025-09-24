@@ -1,5 +1,5 @@
 ---
-id: _ui_form_SmartPastingEvent
+uid: ui/form:SmartPastingEvent
 module: ui/form
 export: SmartPastingEvent
 type: Object

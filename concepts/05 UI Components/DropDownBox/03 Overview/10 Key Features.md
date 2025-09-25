@@ -1,5 +1,5 @@
 - **Embed DevExtreme Components**    
-You can embed any DevExtreme component within the DropDownBox. To display data, we recommend the DevExtreme [DataGrid](/Documentation/Guide/UI_Components/DataGrid/Overview/), [TreeView](/Documentation/Guide/UI_Components/TreeView/Overview/), and [CardView](/Documentation/Guide/UI_Components/CardView/Overview/) components.
+You can embed any DevExtreme component within the DropDownBox. To display data, we recommend the DevExtreme [DataGrid](/Documentation/Guide/UI_Components/DataGrid/Overview/) and [TreeView](/Documentation/Guide/UI_Components/TreeView/Overview/) components.
 
 - **Synchronize with Embedded Component**    
 To synchronize DropDownBox with its embedded component, refer to the following tutorial: [Synchronize with the Embedded Element](/Documentation/Guide/UI_Components/DropDownBox/Synchronize_with_the_Embedded_Element/)

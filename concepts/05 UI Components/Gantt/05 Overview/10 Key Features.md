@@ -2,7 +2,7 @@
 You can specify tasks in the Gantt [data source](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/tasks/#dataSource) or enable the component's [editing](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/editing/) tools to create tasks.
 
 - **Task Types**    
-Gantt supports tasks of multiple types:
+Gantt supports multiple [task](/Documentation/Guide/UI_Components/Gantt/Gantt_Elements/#Task) types:
     - **Regular Tasks**    
     Regular tasks display information such as duration ([start](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/tasks/#startExpr) and [end](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/tasks/#endExpr) dates), [progress](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/tasks/#progressExpr), [dependencies](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/dependencies/), and [resource assignments](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/resources/). You can also specify a [task template](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#taskContentTemplate) to display custom markup.
     - **Milestone Tasks**    

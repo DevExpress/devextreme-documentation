@@ -1,4 +1,4 @@
-The DevExpress MCP server supports the following IDEs and AI agents:
+The DevExpress MCP server supports the following IDEs and AI tools:
 
 **IDEs**:
 
@@ -7,7 +7,7 @@ The DevExpress MCP server supports the following IDEs and AI agents:
 - Cursor IDE
 - JetBrains Rider 2025.1+
 
-**AI agents**:
+**AI tools**:
 
 - GitHub Copilot
 - JetBrains AI Assistant

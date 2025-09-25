@@ -90,7 +90,7 @@
   <MenuRule Destination="90 Integration Guides/40 Azure Blob Storage Configuration" SourcePattern="Howto:^Common/Integration Guides/70 Manage Azure Blob Storage with DevExtreme Components"/>
   <MenuRule Destination="90 Integration Guides/50 .NET Backend Solutions" SourcePattern="Howto:^Common/.NET Backend Solutions"/>
   <MenuRule Destination="90 Integration Guides/60 Data Analytics and BI" SourcePattern="Howto:^Common/Data Analytics and BI"/>
-  <MenuRule Destination="90 Integration Guides/70 DevExpress MCP Server Configuration" SourcePattern="Howto:^Common/Integration Guides/80 DevExpress MCP Server Configuration"/>
+  <MenuRule Destination="90 Integration Guides/03 DevExpress MCP Server Configuration" SourcePattern="Howto:^Common/Integration Guides/05 DevExpress MCP Server Configuration"/>
   <MenuRule Destination="90 Integration Guides/99 Migrate from DevExtreme Reactive" SourcePattern="Howto:^50 React Components/65 Migrate from DevExtreme Reactive" VisibleFor="React" />
 
   <MenuRule Destination="10 UI Components/zz Common Types" SourcePattern="ApiReference:^40 Common Types" />

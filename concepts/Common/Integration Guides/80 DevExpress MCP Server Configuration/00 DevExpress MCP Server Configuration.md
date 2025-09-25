@@ -1,3 +1,0 @@
-The DevExpress MCP server connects AI agents with the DevExpress documentation library, including DevExtreme documentation. The MCP server ensures your AI tools have direct access to the latest information on DevExtreme JavaScript components.
-
-[important] Always conduct thorough reviews of AI-generated output: check for security vulnerabilities and adherence to your project standards. AI-generated output may vary greatly depending on the prompt, AI model, and many other factors.

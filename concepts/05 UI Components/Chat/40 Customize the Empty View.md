@@ -2,7 +2,7 @@ This tutorial illustrates how to customize the Chat empty view. The following li
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/25_2/UIWidgets/Chat/EmptyView/index.html, /Content/Applications/25_2/UIWidgets/Chat/EmptyView/index.js, /Content/Applications/25_2/UIWidgets/Chat/EmptyView/index.css" style="height: 520px;"></div>
 
-To implement custom markup for the Chat empty view, specify the [emptyViewTemplate]() property. This tutorial defines an empty view container that includes a title and subtitle, as well as integrates the DevExtreme [TileView]() component:
+To implement custom markup for the Chat empty view, specify the [emptyViewTemplate](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#emptyViewTemplate) property. This tutorial defines an empty view container that includes a title and subtitle, as well as integrates the DevExtreme [TileView](/Documentation/Guide/UI_Components/TileView/Overview/) component:
 
 ---
 
@@ -30,10 +30,7 @@ To implement custom markup for the Chat empty view, specify the [emptyViewTempla
 ##### Angular
 
     <div class="demo-viewport">
-        <dx-chat
-            id="chat"
-            [width]="780"
-            [height]="480"
+        <dx-chat ...
             emptyViewTemplate="emptyView"
         >
             <div *dxTemplate="let data of 'emptyView'">
@@ -41,23 +38,8 @@ To implement custom markup for the Chat empty view, specify the [emptyViewTempla
                     <div class="empty-view-title">How can HR Assistant help you today?</div>
                     <div class="empty-view-subtitle">{{ data.texts.message }}</div>
                 </div>
-                <dx-tile-view
-                    id="tile-view-container"
-                    [dataSource]="tiles"
-                    [width]="728"
-                    [height]="124"
-                    [baseItemWidth]="226"
-                    [baseItemHeight]="96"
-                    [itemMargin]="12"
-                    [activeStateEnabled]="false"
-                    itemTemplate="itemTemplate"
-                >
-                    <div *dxTemplate="let itemData of 'itemTemplate'">
-                        <div class="tile-container">
-                            <div class="tile-emoji">{{itemData.emoji}}</div>
-                            <div class="tile-text">{{itemData.text}}</div>
-                        </div>
-                    </div>
+                <dx-tile-view ... >
+                    <!-- ... -->
                 </dx-tile-view>
             </div>
         </dx-chat>
@@ -66,10 +48,59 @@ To implement custom markup for the Chat empty view, specify the [emptyViewTempla
 ##### Vue
 
     <!-- tab: App.vue -->
+    <template>
+    <DxChat ...
+        empty-view-template="emptyView"
+    >
+        <template #emptyView="{ data }">
+            <div class="empty-view-titlebox">
+                <div class="empty-view-title">How can HR Assistant help you today?</div>
+                <div class="empty-view-subtitle">{{ data.texts.message }}</div>
+            </div>
+            <DxTileView ... >
+                <!-- ... -->
+            </DxTileView>
+        </template>
+    </DxChat>
+    </template>
+
+    <script setup lang="ts">
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
+    import DxChat from 'devextreme-vue/chat';
+    import DxTileView from 'devextreme-vue/tile-view';
+
+    // ...
+    </script>
 
 ##### React
 
     <!-- tab: App.tsx -->
+    import React from 'react';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
+    import Chat from 'devextreme-react/chat';
+    import TileView from 'devextreme-react/tile-view';
+
+    function renderEmptyView(data: { texts: { message: string } }): JSX.Element {
+        return (
+            <React.Fragment>
+                <div className="empty-view-titlebox">
+                    <div className="empty-view-title">How can HR Assistant help you today?</div>
+                    <div className="empty-view-subtitle">{data.texts.message}</div>
+                </div>
+                <TileView ... />
+            </React.Fragment>
+        );
+    }
+
+    function App(): JSX.Element {
+        return (
+            <div className="demo-container">
+                <Chat ...
+                    emptyViewRender={renderEmptyView}
+                />
+            </div>
+        );
+    }
 
 ---
 

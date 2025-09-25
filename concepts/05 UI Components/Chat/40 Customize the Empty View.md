@@ -29,11 +29,55 @@ To implement custom markup for the Chat empty view, specify the [emptyViewTempla
 
 ##### Angular
 
+    <div class="demo-viewport">
+        <dx-chat
+            id="chat"
+            [width]="780"
+            [height]="480"
+            emptyViewTemplate="emptyView"
+        >
+            <div *dxTemplate="let data of 'emptyView'">
+                <div class="empty-view-titlebox">
+                    <div class="empty-view-title">How can HR Assistant help you today?</div>
+                    <div class="empty-view-subtitle">{{ data.texts.message }}</div>
+                </div>
+                <dx-tile-view
+                    id="tile-view-container"
+                    [dataSource]="tiles"
+                    [width]="728"
+                    [height]="124"
+                    [baseItemWidth]="226"
+                    [baseItemHeight]="96"
+                    [itemMargin]="12"
+                    [activeStateEnabled]="false"
+                    itemTemplate="itemTemplate"
+                >
+                    <div *dxTemplate="let itemData of 'itemTemplate'">
+                        <div class="tile-container">
+                            <div class="tile-emoji">{{itemData.emoji}}</div>
+                            <div class="tile-text">{{itemData.text}}</div>
+                        </div>
+                    </div>
+                </dx-tile-view>
+            </div>
+        </dx-chat>
+    </div>
+
 ##### Vue
+
+    <!-- tab: App.vue -->
 
 ##### React
 
+    <!-- tab: App.tsx -->
+
 ---
+
+To view the full source code of this tutorial, refer to the following example:
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-chat-empty-view-customization9"
+}
 
 This tutorial also implements the **texts**.**message** variable defined in the **emptyViewTemplate** parameter. The **texts** object includes the following variables:
 
@@ -56,7 +100,7 @@ Chat localizes these texts following your application locale. For more informati
 
 ### Customize Chat when Empty View is Displayed
 
-You can implement customizations outside of the empty view container and display them only when the empty view is active. For instance, to implement a custom Chat background color when the empty view is active, add the [:has()](https://developer.mozilla.org/en-US/docs/Web/CSS/:has) pseudo-class to your CSS selector:
+You can implement customizations outside of the empty view container and display them only when the empty view is active. For instance, to implement a custom Chat background color when the empty view is active, implement the [:has()](https://developer.mozilla.org/en-US/docs/Web/CSS/:has) CSS pseudo-class:
 
     <!-- tab: index.css -->
     #chat:has(.dx-chat-messagelist-empty-view) {

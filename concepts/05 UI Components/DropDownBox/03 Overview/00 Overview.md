@@ -18,6 +18,6 @@ DevExtreme DropDownBox is an advanced editor that supports in-depth customizatio
 
 ---
 
-[important] DevExtreme ships with multiple other drop-down editors. To find out which editor best suits your task, refer to the following article: [How to Choose a Drop-Down Editor](/Documentation/Guide/UI_Components/Lookup/Choose_a_Drop-Down_Editor/).
+[important] DevExtreme ships with multiple drop-down editors. To find out which editor best suits your task, refer to the following help topic: [How to Choose a Drop-Down Editor](/Documentation/Guide/UI_Components/Lookup/Choose_a_Drop-Down_Editor/).
 
 This overview highlights DropDownBox elements, key features, and what to explore next.

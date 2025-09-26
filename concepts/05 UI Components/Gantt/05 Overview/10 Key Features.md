@@ -14,7 +14,7 @@ Gantt supports multiple [task](/Documentation/Guide/UI_Components/Gantt/Gantt_El
 DevExtreme Gantt supports operations such as task [selection](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#allowSelection), as well as task, resource, and dependency [addition/deletion](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/editing/).
 
 - **Configurable Task View Columns**    
-The component task view displays task data in a list with configurable [columns](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/). You can integrate these columns to display task information as needed. The task view does not scroll with the timeline and allows users to view specified details without horizontal scrolling.  
+The component task view displays task data in a list with configurable [columns](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/). You can integrate these columns to display task information. The task view does not scroll with the timeline and allows users to view details without horizontal scrolling.  
 
 - **Sorting**    
 The Gantt task view supports column [sorting](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/). Users can sort tasks in single or multiple [mode](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/sorting/#mode). You can also implement [custom sorting logic](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#calculateSortValue) for each task view column.
@@ -23,7 +23,7 @@ The Gantt task view supports column [sorting](/Documentation/ApiReference/UI_Com
 Users can filter task view columns in [header filters](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/) or a [filter row](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/filterRow/). Gantt allows you to specify [initial filter values](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#filterValue), as well as [custom filtering logic](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#calculateFilterExpression) for each task view column.
 
 - **Zooming and Scaling**    
-DevExtreme Gantt calculates an appropriate [zoom level](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#scaleType) automatically based on displayed tasks. You can also configure a zoom level manually, as well as specify [min/max zoom levels](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/scaleTypeRange/).
+DevExtreme Gantt calculates an appropriate [zoom level](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/#scaleType) automatically based on displayed tasks. You can also configure a zoom level, as well as specify [min/max zoom levels](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/scaleTypeRange/).
 
 - **Strip Lines**    
 You can implement [strip lines](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/stripLines/) to highlight important points of time for your project.

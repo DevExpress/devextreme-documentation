@@ -1,10 +1,15 @@
 ---
 id: dxSpeechToText.Options.customSpeechRecognizer
 type: CustomSpeechRecognizer
+inheritsType: CustomSpeechRecognizer
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Allows you to implement custom speech recognition engines.
 
 ---
-<!-- Description goes here -->
+To implement a custom speech recognition engine, set **customSpeechRecognizer**.[enabled]({currentpath}/#enabled) to `true`. When you implement a custom speech recognizer, SpeechToText no longer does the following:
+
+- Listen to user speech.
+- Update the component state state. You must update the SpeechToText state manually through the **customSpeechRecognizer**.[isListening]({currentpath}/#isListening) property.
+- Call the [onResult](/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/#onResult) and [onError](Documentation/25_2/ApiReference/UI_Components/dxSpeechToText/Configuration/#onError) handlers.

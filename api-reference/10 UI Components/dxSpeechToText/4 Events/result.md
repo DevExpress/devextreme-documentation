@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when the Web Speech API returns a [result](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition/result_event).
 
 ---
-<!-- Description goes here -->
+Main article: [onResult](/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/#onResult)
+
+#####See Also#####
+#include common-link-handleevents

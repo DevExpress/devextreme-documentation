@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [error]({basewidgetpath}/Events/#error) event handler's argument.
 
 ---
 <!-- Description goes here -->

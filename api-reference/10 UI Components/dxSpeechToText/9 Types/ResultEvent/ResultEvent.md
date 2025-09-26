@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [result]({basewidgetpath}/Events/#result) event handler's argument.
 
 ---
 <!-- Description goes here -->

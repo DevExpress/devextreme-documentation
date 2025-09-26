@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when the Web Speech API encounters an [error](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition/error_event).
 
 ---
-<!-- Description goes here -->
+Main article: [onError](/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/#onError)
+
+#####See Also#####
+#include common-link-handleevents

@@ -1,6 +1,6 @@
 ---
 id: dxAutocomplete.Options.value
-type: String
+type: String | null
 default: null
 ---
 ---

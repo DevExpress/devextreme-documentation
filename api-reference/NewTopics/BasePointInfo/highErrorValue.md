@@ -1,0 +1,10 @@
+---
+id: BasePointInfo.highErrorValue
+type: Number
+---
+---
+##### shortDescription
+<!-- Description goes here -->
+
+---
+<!-- Description goes here -->

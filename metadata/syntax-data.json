@@ -6164,21 +6164,10 @@
     "baseChartOptions.pointSelectionMode": {
       "vue": "point-selection-mode"
     },
-    "baseChartOptions.tooltip": {
-      "angular": "dxo-tooltip",
-      "react": "Tooltip",
-      "vue": "DxTooltip"
-    },
     "baseChartOptions.tooltip.argumentFormat": {
       "angular": "dxo-argument-format",
       "react": "ArgumentFormat",
       "vue": "DxArgumentFormat"
-    },
-    "baseChartOptions.tooltip.contentTemplate": {
-      "vue": "content-template"
-    },
-    "baseChartOptions.tooltip.customizeTooltip": {
-      "vue": "customize-tooltip"
     },
     "baseGaugeOptions.animation": {
       "angular": "dxo-animation",
@@ -6376,6 +6365,37 @@
       "angular": "dxo-marker",
       "react": "Marker",
       "vue": "DxMarker"
+    },
+    "basePointInfo": {
+      "angular": "dxo-base-point-info",
+      "react": "BasePointInfo",
+      "vue": "DxBasePointInfo"
+    },
+    "basePointInfo.argumentText": {
+      "vue": "argument-text"
+    },
+    "basePointInfo.highErrorValue": {
+      "vue": "high-error-value"
+    },
+    "basePointInfo.lowErrorValue": {
+      "vue": "low-error-value"
+    },
+    "basePointInfo.originalArgument": {
+      "vue": "original-argument"
+    },
+    "basePointInfo.originalValue": {
+      "vue": "original-value"
+    },
+    "basePointInfo.points": {
+      "angular": "dxi-point",
+      "react": "Point",
+      "vue": "DxPoint"
+    },
+    "basePointInfo.seriesName": {
+      "vue": "series-name"
+    },
+    "basePointInfo.valueText": {
+      "vue": "value-text"
     },
     "basePointObject.fullState": {
       "vue": "full-state"
@@ -6629,6 +6649,82 @@
     "baseWidgetOptions.tooltip.zIndex": {
       "vue": "z-index"
     },
+    "bubblePointInfo": {
+      "angular": "dxo-bubble-point-info",
+      "react": "BubblePointInfo",
+      "vue": "DxBubblePointInfo"
+    },
+    "bubblePointInfo.points": {
+      "angular": "dxi-point",
+      "react": "Point",
+      "vue": "DxPoint"
+    },
+    "bubblePointInfo.sizeText": {
+      "vue": "size-text"
+    },
+    "candleStickPointInfo": {
+      "angular": "dxo-candle-stick-point-info",
+      "react": "CandleStickPointInfo",
+      "vue": "DxCandleStickPointInfo"
+    },
+    "candleStickPointInfo.closeValue": {
+      "vue": "close-value"
+    },
+    "candleStickPointInfo.closeValueText": {
+      "vue": "close-value-text"
+    },
+    "candleStickPointInfo.highValue": {
+      "vue": "high-value"
+    },
+    "candleStickPointInfo.highValueText": {
+      "vue": "high-value-text"
+    },
+    "candleStickPointInfo.lowValue": {
+      "vue": "low-value"
+    },
+    "candleStickPointInfo.lowValueText": {
+      "vue": "low-value-text"
+    },
+    "candleStickPointInfo.openValue": {
+      "vue": "open-value"
+    },
+    "candleStickPointInfo.openValueText": {
+      "vue": "open-value-text"
+    },
+    "candleStickPointInfo.originalArgument": {
+      "vue": "original-argument"
+    },
+    "candleStickPointInfo.originalCloseValue": {
+      "vue": "original-close-value"
+    },
+    "candleStickPointInfo.originalHighValue": {
+      "vue": "original-high-value"
+    },
+    "candleStickPointInfo.originalLowValue": {
+      "vue": "original-low-value"
+    },
+    "candleStickPointInfo.originalOpenValue": {
+      "vue": "original-open-value"
+    },
+    "candleStickPointInfo.point": {
+      "angular": "dxo-point",
+      "react": "Point",
+      "vue": "DxPoint"
+    },
+    "candleStickPointInfo.points": {
+      "angular": "dxi-point",
+      "react": "Point",
+      "vue": "DxPoint"
+    },
+    "candleStickPointInfo.reductionValue": {
+      "vue": "reduction-value"
+    },
+    "candleStickPointInfo.seriesName": {
+      "vue": "series-name"
+    },
+    "candleStickPointInfo.valueText": {
+      "vue": "value-text"
+    },
     "cardCover": {
       "angular": "dxo-card-cover",
       "react": "CardCover",
@@ -6733,6 +6829,11 @@
     },
     "chartPointAggregationInfoObject.intervalStart": {
       "vue": "interval-start"
+    },
+    "chartPointInfo": {
+      "angular": "dxo-chart-point-info",
+      "react": "ChartPointInfo",
+      "vue": "DxChartPointInfo"
     },
     "chartPointObject": {
       "angular": "dxo-chart-point-object",
@@ -9026,6 +9127,12 @@
       "react": "Tooltip",
       "vue": "DxTooltip"
     },
+    "dxChartOptions.tooltip.contentTemplate": {
+      "vue": "content-template"
+    },
+    "dxChartOptions.tooltip.customizeTooltip": {
+      "vue": "customize-tooltip"
+    },
     "dxChartOptions.valueAxis": {
       "angular": "dxi-value-axis",
       "react": "ValueAxis",
@@ -9202,6 +9309,11 @@
     },
     "dxChartOptions.zoomAndPan.valueAxis": {
       "vue": "value-axis"
+    },
+    "dxChartPointInfo": {
+      "angular": "dxo-chart-point-info",
+      "react": "DxChartPointInfo",
+      "vue": "DxChartPointInfo"
     },
     "dxChartSeriesTypes.AreaSeries.aggregation": {
       "angular": "dxo-aggregation",
@@ -15398,6 +15510,22 @@
     "dxPieChartOptions.startAngle": {
       "vue": "start-angle"
     },
+    "dxPieChartOptions.tooltip": {
+      "angular": "dxo-tooltip",
+      "react": "Tooltip",
+      "vue": "DxTooltip"
+    },
+    "dxPieChartOptions.tooltip.contentTemplate": {
+      "vue": "content-template"
+    },
+    "dxPieChartOptions.tooltip.customizeTooltip": {
+      "vue": "customize-tooltip"
+    },
+    "dxPieChartPointInfo": {
+      "angular": "dxo-pie-chart-point-info",
+      "react": "DxPieChartPointInfo",
+      "vue": "DxPieChartPointInfo"
+    },
     "dxPieChartSeriesTypes.CommonPieChartSeries.argumentField": {
       "vue": "argument-field"
     },
@@ -16285,6 +16413,12 @@
       "react": "Tooltip",
       "vue": "DxTooltip"
     },
+    "dxPolarChartOptions.tooltip.contentTemplate": {
+      "vue": "content-template"
+    },
+    "dxPolarChartOptions.tooltip.customizeTooltip": {
+      "vue": "customize-tooltip"
+    },
     "dxPolarChartOptions.useSpiderWeb": {
       "vue": "use-spider-web"
     },
@@ -16403,6 +16537,11 @@
       "angular": "dxo-whole-range",
       "react": "WholeRange",
       "vue": "DxWholeRange"
+    },
+    "dxPolarChartPointInfo": {
+      "angular": "dxo-polar-chart-point-info",
+      "react": "DxPolarChartPointInfo",
+      "vue": "DxPolarChartPointInfo"
     },
     "dxPolarChartSeriesTypes.areapolarseries.hoverMode": {
       "vue": "hover-mode"
@@ -22720,6 +22859,51 @@
       "react": "Offset",
       "vue": "DxOffset"
     },
+    "rangePointInfo": {
+      "angular": "dxo-range-point-info",
+      "react": "RangePointInfo",
+      "vue": "DxRangePointInfo"
+    },
+    "rangePointInfo.argumentText": {
+      "vue": "argument-text"
+    },
+    "rangePointInfo.originalArgument": {
+      "vue": "original-argument"
+    },
+    "rangePointInfo.originalMinValue": {
+      "vue": "original-min-value"
+    },
+    "rangePointInfo.originalValue": {
+      "vue": "original-value"
+    },
+    "rangePointInfo.point": {
+      "angular": "dxo-point",
+      "react": "Point",
+      "vue": "DxPoint"
+    },
+    "rangePointInfo.points": {
+      "angular": "dxi-point",
+      "react": "Point",
+      "vue": "DxPoint"
+    },
+    "rangePointInfo.rangeValue1": {
+      "vue": "range-value1"
+    },
+    "rangePointInfo.rangeValue1Text": {
+      "vue": "range-value1-text"
+    },
+    "rangePointInfo.rangeValue2": {
+      "vue": "range-value2"
+    },
+    "rangePointInfo.rangeValue2Text": {
+      "vue": "range-value2-text"
+    },
+    "rangePointInfo.seriesName": {
+      "vue": "series-name"
+    },
+    "rangePointInfo.valueText": {
+      "vue": "value-text"
+    },
     "rangeRule": {
       "angular": "dxo-range-rule",
       "react": "RangeRule",
@@ -22904,6 +23088,22 @@
     },
     "speechRecognitionConfig.maxAlternatives": {
       "vue": "max-alternatives"
+    },
+    "stackedPointInfo": {
+      "angular": "dxo-stacked-point-info",
+      "react": "StackedPointInfo",
+      "vue": "DxStackedPointInfo"
+    },
+    "stackedPointInfo.percentText": {
+      "vue": "percent-text"
+    },
+    "stackedPointInfo.points": {
+      "angular": "dxi-point",
+      "react": "Point",
+      "vue": "DxPoint"
+    },
+    "stackedPointInfo.totalText": {
+      "vue": "total-text"
     },
     "store": {
       "vue": "store"

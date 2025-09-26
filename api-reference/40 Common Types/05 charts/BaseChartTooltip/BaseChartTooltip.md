@@ -5,6 +5,7 @@ module: viz/chart_components/base_chart
 export: BaseChartTooltip
 generateTypeLink: 
 hidden: 
+inheritsType: viz/core/base_widget:BaseWidgetTooltip
 ---
 ---
 ##### shortDescription

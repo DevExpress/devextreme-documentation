@@ -1,4 +1,4 @@
 ---
 id: dxColorBox.Options.value
-type: String
+type: String | null
 ---

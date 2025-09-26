@@ -4,7 +4,7 @@ type: Number | String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The [reduction](/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/reduction/) value of the series point.
 
 ---
 <!-- Description goes here -->

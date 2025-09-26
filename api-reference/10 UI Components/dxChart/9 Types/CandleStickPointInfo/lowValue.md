@@ -4,7 +4,7 @@ type: Number | String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The [low value](/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#lowValueField) of the series point.
 
 ---
 <!-- Description goes here -->

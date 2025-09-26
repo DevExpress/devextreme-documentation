@@ -4,7 +4,7 @@ type: Number | String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The [high value](/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#highValueField) of the series point.
 
 ---
 <!-- Description goes here -->

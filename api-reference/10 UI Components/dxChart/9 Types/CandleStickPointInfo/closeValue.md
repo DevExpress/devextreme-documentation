@@ -4,7 +4,7 @@ type: Number | String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The [close value](/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#closeValueField) of the series point.
 
 ---
 <!-- Description goes here -->

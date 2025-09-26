@@ -4,7 +4,7 @@ type: String | Number | Date
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The [second value](/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#rangeValue2Field) of the series point.
 
 ---
 <!-- Description goes here -->

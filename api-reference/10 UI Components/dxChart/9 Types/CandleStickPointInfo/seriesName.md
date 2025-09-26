@@ -4,7 +4,7 @@ type: any
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The [name](/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#name) of the series that includes the series point.
 
 ---
 <!-- Description goes here -->

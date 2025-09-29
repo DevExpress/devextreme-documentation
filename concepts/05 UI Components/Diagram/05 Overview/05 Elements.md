@@ -9,7 +9,7 @@
 7. [Properties Panel](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/propertiesPanel/)
 8. [Properties Panel Button](/Documentation/ApiReference/UI_Components/dxDiagram/Configuration/propertiesPanel/#visibility)
 
-You can use the DevExtreme Diagram component to create and edit diagrams of varied types, including the following:
+You can use the DevExtreme Diagram component to create and edit a variety of diagrams, including:
 
 - Business process diagrams
 - Company structure charts

@@ -14,7 +14,7 @@ The DevExpress MCP server supports the following IDEs and AI tools:
 - Claude/Claude Code
 - Other MCP-compatible AI Assistants
 
-[note] We strongly recommend you keep your development tools up to date to ensure access to the latest MCP features.
+[note] We recommend that you keep your development tools up to date so you can access the latest MCP features.
 
 To configure the DevExpress MCP server in your IDE, refer to the following topic:
 

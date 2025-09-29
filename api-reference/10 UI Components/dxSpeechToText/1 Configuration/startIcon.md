@@ -5,7 +5,7 @@ default: 'micoutline'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The SpeechToText button icon in the default component state.
 
 ---
 <!-- Description goes here -->

@@ -17,4 +17,6 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "UI component" }
 
 ---
-[note] The component does not call this handler if you implement a [custom speech recognition engine](/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/customSpeechRecognizer/)
+TBA Code
+
+[note] The component does not call this handler if you implement a [custom speech recognition engine](/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/customSpeechRecognizer/).

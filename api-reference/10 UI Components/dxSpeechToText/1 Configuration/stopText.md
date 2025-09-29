@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The SpeechToText button text in the "listening" component state.
 
 ---
 <!-- Description goes here -->

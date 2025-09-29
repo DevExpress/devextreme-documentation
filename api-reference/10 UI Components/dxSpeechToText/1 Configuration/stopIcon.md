@@ -5,7 +5,7 @@ default: 'stopfilled'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The SpeechToText button icon in the "listening" component state.
 
 ---
 <!-- Description goes here -->

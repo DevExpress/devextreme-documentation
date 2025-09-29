@@ -5,7 +5,9 @@ default: 'contained'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies SpeechToText button styling.
 
 ---
-<!-- Description goes here -->
+The following styles are available: 
+
+![Button Styling Modes](/images/UiWidgets/button_stylingMode.png)

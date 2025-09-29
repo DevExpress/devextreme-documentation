@@ -2,4 +2,4 @@ MCP-compatible AI tools support custom instructions that you can specify in addi
 
     /mcp.dxdocs.devexpress_docs_query_workflow
 
-For instructions on how to implement these instructions in other IDEs, refer to the following topic: [Configure an AI-powered Assistant](https://docs.devexpress.com/GeneralInformation/405551/help-resources/dev-express-documentation-mcp-server-configure-an-ai-powered-assistant)
+For information on how to implement these instructions in other IDEs, refer to the following topic: [Configure an AI-powered Assistant](https://docs.devexpress.com/GeneralInformation/405551/help-resources/dev-express-documentation-mcp-server-configure-an-ai-powered-assistant).

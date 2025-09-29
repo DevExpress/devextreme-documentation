@@ -14,8 +14,8 @@ Information about the event that caused the function's execution.
 Smart Paste results. This data populates the Form fields.
 
 ##### field(e.cancel): Boolean | Promise<Boolean>
-`true`, a Promise resolved with `true`, or a rejected Promise stops Smart Pasting.       
-`false` or a Promise resolved with `false` or `undefined` continues Smart Pasting.
+`true` or a Promise resolved with `true` stops Smart Pasting.       
+`false`, a Promise resolved with `false` or `undefined`, or a rejected Promise continues Smart Pasting.
 
 ##### field(e.component): {WidgetName}
 UI component's instance.

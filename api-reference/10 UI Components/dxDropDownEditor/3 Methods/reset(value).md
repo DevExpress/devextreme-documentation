@@ -3,10 +3,13 @@ id: dxDropDownEditor.reset(value)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Resets the [value]({basewidgetpath}/Configuration/#value) property to the value passed as an argument.
 
 ##### param(value): any
-<!-- Description goes here -->
+Specifies the new value.
 
 ---
-<!-- Description goes here -->
+This method sets the [isDirty]({basewidgetpath}/Configuration/#isDirty) flag to `false`.
+
+##### See Also #####
+- [clear()]({basewidgetpath}/Methods/#clear)

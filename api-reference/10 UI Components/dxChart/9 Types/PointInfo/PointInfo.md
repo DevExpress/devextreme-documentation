@@ -1,5 +1,6 @@
 ---
 id: PointInfo
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

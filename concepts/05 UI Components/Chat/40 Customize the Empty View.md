@@ -2,7 +2,7 @@ This tutorial illustrates how to customize the Chat's empty view. The following 
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/25_2/UIWidgets/Chat/EmptyView/index.html, /Content/Applications/25_2/UIWidgets/Chat/EmptyView/index.js, /Content/Applications/25_2/UIWidgets/Chat/EmptyView/index.css" style="height: 520px;"></div>
 
-To implement custom markup for the Chat's empty view, specify the [emptyViewTemplate](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#emptyViewTemplate) property. This tutorial defines an empty view container that includes a title and subtitle, as well as integrates the DevExtreme [TileView](/Documentation/Guide/UI_Components/TileView/Overview/) component:
+To implement custom markup for the Chat's empty view, specify the [emptyViewTemplate](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/emptyViewTemplate.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#emptyViewTemplate') property. This tutorial defines an empty view container that includes a title and subtitle, as well as integrates the DevExtreme [TileView](/concepts/05%20UI%20Components/TileView/00%20Overview.md '/Documentation/Guide/UI_Components/TileView/Overview/') component:
 
 ---
 
@@ -127,7 +127,7 @@ This tutorial also implements the **texts**.**message** variable defined in the 
     </tr>
 </table>
 
-Chat localizes these texts following your application locale. For more information about DevExtreme localization, refer to the following topic: [Localization](/Documentation/Guide/Common/Localization/).
+Chat localizes these texts following your application locale. For more information about DevExtreme localization, refer to the following topic: [Localization](/concepts/Common/Localization '/Documentation/Guide/Common/Localization/').
 
 ### Customize Chat when Empty View is Displayed
 

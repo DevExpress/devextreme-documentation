@@ -3,6 +3,7 @@ id: dxPolarChartPointInfo
 module: viz/polar_chart
 export: PointInfo
 type: BasePointInfo
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

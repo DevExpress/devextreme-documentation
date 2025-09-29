@@ -3,6 +3,7 @@ id: ChartPointInfo
 module: viz/chart
 export: ChartPointInfo
 type: BasePointInfo
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

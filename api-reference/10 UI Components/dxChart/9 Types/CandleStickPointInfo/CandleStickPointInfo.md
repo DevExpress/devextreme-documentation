@@ -3,6 +3,7 @@ id: CandleStickPointInfo
 module: viz/chart
 export: CandleStickPointInfo
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

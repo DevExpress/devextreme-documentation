@@ -3,6 +3,7 @@ id: BubblePointInfo
 module: viz/chart
 export: BubblePointInfo
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

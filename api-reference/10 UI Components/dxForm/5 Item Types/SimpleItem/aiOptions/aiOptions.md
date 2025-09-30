@@ -9,7 +9,7 @@ Specifies options for an AI service that parses Smart Paste data.
 ---
 Use options available in this class to customize how an AI Service processes data. You can apply the following changes: 
 
-- Mark an field as disabled for AI processing.
+- Mark a field as disabled for AI processing.
 - Specify custom parsing instructions for a field.
 
 The following code snippet adds a custom instruction to the item:

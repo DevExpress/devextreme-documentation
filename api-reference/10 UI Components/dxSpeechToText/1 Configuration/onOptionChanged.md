@@ -28,7 +28,7 @@ The modified property's previous value.
 The modified property's new value.
 
 ---
-The following code snippet shows how to subscribe to component property changes:
+The following code snippet demonstrates how to subscribe to component property changes:
 
 ---
 
@@ -54,7 +54,8 @@ The following code snippet shows how to subscribe to component property changes:
     </dx-{widget-name}> 
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core'; 
+    import { Component } from '@angular/core';
+    import { type Dx{WidgetName}Types } from 'devextreme-angular/ui/{widget-name}';
 
     @Component({ 
         selector: 'app-root', 
@@ -64,7 +65,7 @@ The following code snippet shows how to subscribe to component property changes:
 
     export class AppComponent { 
         // ...
-        handlePropertyChange(e) {
+        handlePropertyChange(e: Dx{WidgetName}Types.OptionChangedEvent) {
             if(e.name === "changedProperty") { 
                 // handle the property change here
             }
@@ -75,7 +76,7 @@ The following code snippet shows how to subscribe to component property changes:
     import { BrowserModule } from '@angular/platform-browser'; 
     import { NgModule } from '@angular/core'; 
     import { AppComponent } from './app.component'; 
-    import { Dx{WidgetName}Module } from 'devextreme-angular'; 
+    import { Dx{WidgetName}Module } from 'devextreme-angular/ui/{widget-name}';
   
     @NgModule({ 
         declarations: [ 
@@ -100,34 +101,26 @@ The following code snippet shows how to subscribe to component property changes:
         />            
     </template> 
   
-    <script>  
-    import 'devextreme/dist/css/dx.light.css'; 
-    import Dx{WidgetName} from 'devextreme-vue/{widget-name}'; 
+    <script>
+    import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
+    import { Dx{WidgetName}, type Dx{WidgetName}Types } from 'devextreme-vue/{widget-name}'; 
 
-    export default { 
-        components: { 
-            Dx{WidgetName}
-        }, 
-        // ...
-        methods: { 
-            handlePropertyChange: function(e) {
-                if(e.name === "changedProperty") {
-                    // handle the property change here
-                }
-            }
-        } 
-    } 
+    function handlePropertyChange: function(e: Dx{WidgetName}Types.OptionChangedEvent) {
+        if(e.name === "changedProperty") {
+            // handle the property change here
+        }
+    }
     </script>
 
 ##### React 
 
     <!-- tab: App.js -->
     import React from 'react';  
-    import 'devextreme/dist/css/dx.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import {WidgetName} from 'devextreme-react/{widget-name}'; 
+    import { {WidgetName}, type {WidgetName}Types } from 'devextreme-react/{widget-name}'; 
 
-    const handlePropertyChange = (e) => {
+    function handlePropertyChange(e: {WidgetName}Types.OptionChangedEvent) {
         if(e.name === "changedProperty") {
             // handle the property change here
         }

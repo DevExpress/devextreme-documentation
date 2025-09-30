@@ -5,10 +5,10 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Binds the AI service to the Form.
+Binds the Form to an AI service.
 
 ---
-The Form component ships with the **Smart Paste** functionality. To activate this capability, specify:
+Use the following members to activate AI-powered **Smart Paste** functionality for the Form component:
 
 - [AIIntegration](/api-reference/40%20Common%20Types/AIIntegration '/Documentation/ApiReference/Common_Types/AIIntegration/') class
 - *'smartPaste'* button [name](/Documentation/ApiReference/UI_Components/dxForm/Types/#FormPredefinedButtonItem) (or call the [smartPaste(text)](/Documentation/ApiReference/UI_Components/dxForm/Methods/#smartPastetext) method)

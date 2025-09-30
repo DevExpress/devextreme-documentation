@@ -11,7 +11,7 @@ A function that is executed after an AI service populates the Form.
 Information about the event that caused the function's execution.
 
 ##### field(e.aiResult): Object
-Smart Paste results. This data populates the Form fields.
+Smart Paste results. Data from this object populates the Form.
 
 ##### field(e.component): {WidgetName}
 UI component's instance.
@@ -20,7 +20,7 @@ UI component's instance.
 #include common-ref-elementparam with { element: "UI component" }
 
 ---
-The following code snippet displays a notification that indicates whether Smart Paste is successful:
+The following code snippet displays a notification with Smart Paste operation result:
 
 ---
 ##### jQuery

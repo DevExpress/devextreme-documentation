@@ -11,11 +11,11 @@ A function that is executed before an AI service populates the Form.
 Information about the event that caused the function's execution.
 
 ##### field(e.aiResult): Object
-Smart Paste results. This data populates the Form fields.
+Smart Paste results. Data from this object populates the Form.
 
 ##### field(e.cancel): Boolean | Promise<Boolean>
-`true` or a Promise resolved with `true` stops Smart Pasting.       
-`false`, a Promise resolved with `false` or `undefined`, or a rejected Promise continues Smart Pasting.
+`true` or a Promise resolved with `true` cancels Smart Paste.       
+`false`, a Promise resolved with `false` or `undefined`, or a rejected Promise allows Smart Paste.
 
 ##### field(e.component): {WidgetName}
 UI component's instance.
@@ -24,7 +24,7 @@ UI component's instance.
 #include common-ref-elementparam with { element: "UI component" }
 
 ---
-The following code snippet cancels Smart Paste operation when a ZIP code is not present in the `aiResult`:
+The following code snippet cancels a Smart Paste operation if a ZIP code is not present in the `aiResult`:
 
 ---
 ##### jQuery

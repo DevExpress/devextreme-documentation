@@ -4,10 +4,13 @@ type: Object
 ---
 ---
 ##### shortDescription
-Specifies options for AI service when you implement Smart Paste.
+Specifies options for an AI service that parses Smart Paste data.
 
 ---
-Use these options to mark an item disabled for AI processing or give a custom instruction.
+Use options available in this class to customize how an AI Service processes data. You can apply the following changes: 
+
+- Mark an field as disabled for AI processing.
+- Specify custom parsing instructions for a field.
 
 The following code snippet adds a custom instruction to the item:
 

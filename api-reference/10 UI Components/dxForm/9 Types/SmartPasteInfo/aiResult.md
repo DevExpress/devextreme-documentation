@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-Specifies Smart Paste results. This data populates the Form fields.
+Specifies Smart Paste results. Data from this object populates the Form.
 
 ---
 <!-- Description goes here -->

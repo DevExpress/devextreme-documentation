@@ -3879,6 +3879,11 @@
       "react": "_ui_speech_to_text_DisposingEvent",
       "vue": "Dx_ui_speech_to_text_DisposingEvent"
     },
+    "_ui_speech_to_text_EndEvent": {
+      "angular": "dxo-ui-speech-to-text--end-event",
+      "react": "_ui_speech_to_text_EndEvent",
+      "vue": "Dx_ui_speech_to_text_EndEvent"
+    },
     "_ui_speech_to_text_ErrorEvent": {
       "angular": "dxo-ui-speech-to-text--error-event",
       "react": "_ui_speech_to_text_ErrorEvent",
@@ -17947,9 +17952,6 @@
     "dxSchedulerOptions.descriptionExpr": {
       "vue": "description-expr"
     },
-    "dxSchedulerOptions.dropDownAppointmentTemplate": {
-      "vue": "drop-down-appointment-template"
-    },
     "dxSchedulerOptions.editing": {
       "angular": "dxo-editing",
       "react": "Editing",
@@ -18172,9 +18174,6 @@
     },
     "dxSchedulerOptions.views.dateCellTemplate": {
       "vue": "date-cell-template"
-    },
-    "dxSchedulerOptions.views.dropDownAppointmentTemplate": {
-      "vue": "drop-down-appointment-template"
     },
     "dxSchedulerOptions.views.endDayHour": {
       "vue": "end-day-hour"
@@ -18612,6 +18611,9 @@
     },
     "dxSpeechToTextOptions.onDisposing": {
       "vue": "@disposing"
+    },
+    "dxSpeechToTextOptions.onEnd": {
+      "vue": "@end"
     },
     "dxSpeechToTextOptions.onError": {
       "vue": "@error"

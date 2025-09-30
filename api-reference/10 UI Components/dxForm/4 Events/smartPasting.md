@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before an AI service populates the Form.
 
 ---
-<!-- Description goes here -->
+Main article: [onSmartPasting](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#onSmartPasting)
+
+#####See Also#####
+#include common-link-handleevents

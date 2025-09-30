@@ -90,7 +90,7 @@ All properties configuring tooltips are collected in the [tooltip](/api-referenc
 
 ---
 
-Properties declared in the **tooltip** object apply to all tooltips in the Chart. If you want to customize a specific tooltip, assign a function to the [customizeTooltip](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/tooltip/customizeTooltip.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/tooltip/#customizeTooltip') property. This function must return an object with properties for the tooltip that you want to customize.
+Properties declared in the **tooltip** object apply to all tooltips in the Chart. If you want to customize a specific tooltip, assign a function to the [customizeTooltip](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/tooltip/customizeTooltip.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/tooltip/#customizeTooltip') property. This function must return an object with properties for the tooltip that you want to customize.
 
 ---
 ##### jQuery

@@ -2,7 +2,7 @@ A tooltip is a small pop-up rectangle displaying information about a series poin
 
 ![DevExtreme HTML5 JavaScript PieChart Tooltip](/images/PieChart/visual_elements/tooltip.png)
 
-All properties configuring tooltips are collected in the [tooltip](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/tooltip/') object. For example, to enable the tooltips, assign **true** to the **enabled** property of this object.
+All properties configuring tooltips are collected in the [tooltip](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuration/tooltip '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/tooltip/') object. For example, to enable the tooltips, assign **true** to the **enabled** property of this object.
 
 ---
 ##### jQuery

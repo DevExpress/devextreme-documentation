@@ -5,19 +5,107 @@ default: null
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed after an AI service populates the Form.
 
 ##### param(e): ui/form:SmartPastedEvent
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.aiResult): Object
-<!-- Description goes here -->
+Smart Paste results. Data from this object populates the Form.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ---
-<!-- Description goes here -->
+The following code snippet displays a notification with the Smart Paste operation's result:
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $("#form").dxForm({
+        // ...
+        onSmartPasted(e) {
+            if (Object.keys(e.aiResult).length !== 0) {
+                DevExpress.ui.notify("Smart Paste finished successfully");
+            }
+            else {
+                DevExpress.ui.notify("No data to be pasted");
+            }
+        },
+    });
+
+##### Angular
+
+    <!-- tab: app.component.ts -->
+    import { DxFormTypes } from "devextreme-angular/ui/form";
+    import notify from 'devextreme/ui/notify';
+    // ...
+    export class AppComponent {
+        onSmartPasted(e: DxFormTypes.SmartPastedEvent) {
+            if (Object.keys(e.aiResult).length !== 0) {
+                notify("Smart Paste finished successfully");
+            }
+            else {
+                notify("No data to be pasted");
+            }
+        }
+    }
+
+    <!-- tab: app.component.html -->
+    <dx-form (onSmartPasted)="onSmartPasted($event)" ... ></dx-form>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm @smart-pasted="onSmartPasted" ... />
+    </template>
+
+    <script setup lang="ts">
+    import {
+        DxForm,
+        DxFormTypes,
+    } from 'devextreme-vue/form';
+    import notify from 'devextreme/ui/notify';
+    // ...
+
+    const onSmartPasted = (e: DxFormTypes.SmartPastedEvent) => {
+        if (Object.keys(e.aiResult).length !== 0) {
+            notify("Smart Paste finished successfully");
+        }
+        else {
+            notify("No data to be pasted");
+        }
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.tsx -->
+    import React from 'react';
+    import Form, {
+        FormTypes,
+    } from 'devextreme-react/form';
+    import notify from 'devextreme/ui/notify';
+    // ...
+
+    const onSmartPasted = (e: FormTypes.SmartPastedEvent) => {
+        if (Object.keys(e.aiResult).length !== 0) {
+            notify("Smart Paste finished successfully");
+        }
+        else {
+            notify("No data to be pasted");
+        }
+    };
+
+    const App = () => {
+        return (
+            <Form onSmartPasted={onSmartPasted} ... />
+        );
+    }
+
+---

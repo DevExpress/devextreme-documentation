@@ -5,22 +5,103 @@ default: null
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before an AI service populates the Form.
 
 ##### param(e): ui/form:SmartPastingEvent
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.aiResult): Object
-<!-- Description goes here -->
+Smart Paste results. Data from this object populates the Form.
 
 ##### field(e.cancel): Boolean | Promise<Boolean>
-<!-- Description goes here -->
+`true` or a Promise resolved with `true` cancels Smart Paste.       
+`false`, a Promise resolved with `false` or `undefined`, or a rejected Promise allows Smart Paste.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ---
-<!-- Description goes here -->
+The following code snippet cancels a Smart Paste operation if a ZIP code is not present in the `aiResult`:
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $("#form").dxForm({
+        // ...
+        onSmartPasting(e) {
+            if (!e.aiResult.ZIP) {
+                e.cancel = true;
+                DevExpress.ui.notify("Could not paste: the ZIP address was not recognized");
+            }
+        },
+    });
+
+##### Angular
+
+    <!-- tab: app.component.ts -->
+    import { DxFormTypes } from "devextreme-angular/ui/form";
+    import notify from 'devextreme/ui/notify';
+    // ...
+    export class AppComponent {
+        onSmartPasting(e: DxFormTypes.SmartPastingEvent) {
+            if (!e.aiResult.ZIP) {
+                e.cancel = true;
+                DevExpress.ui.notify("Could not paste: the ZIP address was not recognized");
+            }
+        }
+    }
+
+    <!-- tab: app.component.html -->
+    <dx-form (onSmartPasting)="onSmartPasting($event)" ... ></dx-form>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxForm @smart-pasting="onSmartPasting" ... />
+    </template>
+
+    <script setup lang="ts">
+    import {
+        DxForm,
+        DxFormTypes,
+    } from 'devextreme-vue/form';
+    import notify from 'devextreme/ui/notify';
+    // ...
+
+    const onSmartPasting = (e: DxFormTypes.SmartPastingEvent) => {
+        if (!e.aiResult.ZIP) {
+            e.cancel = true;
+            DevExpress.ui.notify("Could not paste: the ZIP address was not recognized");
+        }
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.tsx -->
+    import React from 'react';
+    import Form, {
+        FormTypes,
+    } from 'devextreme-react/form';
+    import notify from 'devextreme/ui/notify';
+    // ...
+
+    const onSmartPasting = (e: FormTypes.SmartPastingEvent) => {
+        if (!e.aiResult.ZIP) {
+            e.cancel = true;
+            DevExpress.ui.notify("Could not paste: the ZIP address was not recognized");
+        }
+    };
+
+    const App = () => {
+        return (
+            <Form onSmartPasting={onSmartPasting} ... />
+        );
+    }
+
+---

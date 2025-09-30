@@ -9,7 +9,7 @@ references: dxForm.Options.onEditorEnterKey
 ---
 ---
 ##### shortDescription
-The type of the [editorEnterKey]({basewidgetpath}/Events/#editorEnterKey) event handler's argument.
+The argument type in the [editorEnterKey]({basewidgetpath}/Events/#editorEnterKey) event.
 
 ---
 <!-- Description goes here -->

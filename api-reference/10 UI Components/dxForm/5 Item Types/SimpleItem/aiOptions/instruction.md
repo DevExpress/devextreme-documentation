@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies an individual item instruction for the AI service.
 
 ---
 <!-- Description goes here -->

@@ -20,7 +20,7 @@ UI component's instance.
 #include common-ref-elementparam with { element: "UI component" }
 
 ---
-The following code snippet displays a notification with Smart Paste operation result:
+The following code snippet displays a notification with the Smart Paste operation's result:
 
 ---
 ##### jQuery

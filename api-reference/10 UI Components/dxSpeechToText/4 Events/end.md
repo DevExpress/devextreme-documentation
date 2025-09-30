@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when SpeechToText transitions from the "listening" state to the default state.
 
 ---
-<!-- Description goes here -->
+Main article: [onEnd](/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/#onEnd)
+
+#####See Also#####
+#include common-link-handleevents

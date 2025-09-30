@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures Web Speech API [SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition) properties.
 
 ---
-<!-- Description goes here -->
+This configuration object allows you to customize SpeechToText functionality.

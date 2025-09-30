@@ -4,7 +4,7 @@ type: Array<String>
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the SpeechRecognition [grammars](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition/grammars) property.
 
 ---
-<!-- Description goes here -->
+Specify this property to bias SpeechRecognition results towards an array of words and phrases.

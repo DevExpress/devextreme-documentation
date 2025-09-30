@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-The type of the [contentReady]({basewidgetpath}/Events/#contentReady) event handler's argument.
+The argument type in the [contentReady]({basewidgetpath}/Events/#contentReady) event.
 
 ---
 <!-- Description goes here -->

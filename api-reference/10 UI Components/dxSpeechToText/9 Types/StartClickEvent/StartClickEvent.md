@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The argument type in the [startClick]({basewidgetpath}/Events/#startClick) event.
 
 ---
 <!-- Description goes here -->

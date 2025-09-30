@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-The type of the [disposing]({basewidgetpath}/Events/#disposing) event handler's argument.
+The argument type in the [disposing]({basewidgetpath}/Events/#disposing) event.
 
 ---
 <!-- Description goes here -->

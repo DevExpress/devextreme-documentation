@@ -11,7 +11,7 @@ Binds the Form to an AI service.
 Use the following members to activate the AI-powered **Smart Paste** functionality for the Form component:
 
 - *`aiIntegration`* - accepts an [AIIntegration](/api-reference/40%20Common%20Types/AIIntegration '/Documentation/ApiReference/Common_Types/AIIntegration/') object that stores AI Service settings.
-- *'smartPaste'* - specifies a button [name](/Documentation/ApiReference/UI_Components/dxForm/Types/#FormPredefinedButtonItem). (You can also call the [smartPaste(text)](/Documentation/ApiReference/UI_Components/dxForm/Methods/#smartPastetext) method.)
+- *'smartPaste'* - specifies a button [name](/api-reference/10%20UI%20Components/dxForm/9%20Types/FormPredefinedButtonItem.md '/Documentation/ApiReference/UI_Components/dxForm/Types/#FormPredefinedButtonItem'). (You can also call the [smartPaste(text)](/api-reference/10%20UI%20Components/dxForm/3%20Methods/smartPaste(text).md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#smartPastetext') method.)
 
 ---
 ##### jQuery

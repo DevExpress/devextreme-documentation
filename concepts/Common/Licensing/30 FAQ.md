@@ -12,7 +12,7 @@ A:  No significant impact - the license verification process takes ~10ms.
 
 **Q: What if my license key is stolen/compromised? What are the consequences?**
 
-A: License keys are public due to the client-side nature of JS apps. If you discover that your license key was stolen/compromised, you can contact our <a href="mailto: clientservices@devexpress.com">license compliance department</a> for assistance.
+A: License keys are public due to the client-side nature of JS apps. If you discover that your license key was stolen/compromised, you can contact our <a href="mailto:clientservices@devexpress.com">license compliance department</a> for assistance.
 
 <br>
 

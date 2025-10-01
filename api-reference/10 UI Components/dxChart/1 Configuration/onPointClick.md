@@ -21,7 +21,7 @@ The UI component's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.target): basePointObject
+##### field(e.target): Object
 The clicked series point; described in the [Point](/api-reference/10%20UI%20Components/dxChart/7%20Chart%20Elements/Point '{basewidgetpath}/Chart_Elements/Point/') section.
 
 ---

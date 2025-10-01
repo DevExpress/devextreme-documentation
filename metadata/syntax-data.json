@@ -6332,11 +6332,6 @@
       "react": "Marker",
       "vue": "DxMarker"
     },
-    "basePointObject": {
-      "angular": "dxo-base-point-object",
-      "react": "BasePointObject",
-      "vue": "DxBasePointObject"
-    },
     "basePointObject.fullState": {
       "vue": "full-state"
     },
@@ -7271,9 +7266,6 @@
       "angular": "dxo-disabled-date",
       "react": "DisabledDate",
       "vue": "DxDisabledDate"
-    },
-    "domComponentOptions.bindingOptions": {
-      "vue": "binding-options"
     },
     "domComponentOptions.elementAttr": {
       "angular": "dxo-element-attr",
@@ -21286,6 +21278,11 @@
     "eventObject.delegateTarget": {
       "vue": "delegate-target"
     },
+    "eventObject.originalEvent": {
+      "angular": "dxo-original-event",
+      "react": "OriginalEvent",
+      "vue": "DxOriginalEvent"
+    },
     "excelPivotGridCell": {
       "angular": "dxo-excel-pivot-grid-cell",
       "react": "ExcelPivotGridCell",
@@ -22517,11 +22514,6 @@
       "angular": "dxo-polar-chart-series-object",
       "react": "PolarChartSeriesObject",
       "vue": "DxPolarChartSeriesObject"
-    },
-    "polarPointObject": {
-      "angular": "dxo-polar-point-object",
-      "react": "PolarPointObject",
-      "vue": "DxPolarPointObject"
     },
     "positionConfig": {
       "angular": "dxo-position-config",

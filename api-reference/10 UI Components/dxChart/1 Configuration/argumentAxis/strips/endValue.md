@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.argumentAxis.strips.startValue
+id: dxChart.Options.argumentAxis.strips.endValue
 type: Number | Date | String
 default: undefined
 ---
@@ -15,6 +15,6 @@ To align discrete axis strips with ticks, set **argumentAxis**.[discreteAxisDivi
 
 <img src="/images/ChartJS/argumentaxis-strip.png" alt="Two Chart argument axis strips in different discrete axis division modes" style="border-radius: 16px;"></img>
 
-1. [Start value](/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/strips/#endValue)
+1. [Start value](/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/strips/#startValue)
 2. Strip area
 3. End value

@@ -40,4 +40,4 @@ Regardless of the distribution channel you use - NuGet, npm, yarn, CDN, zip - yo
 
 [/note]
 
-Should you require purchase assistance or more information on our new license verification process, please contact a member of the <a href="mailto: clientservices@devexpress.com">DevExpress Client Services Team</a>.
+Should you require purchase assistance or more information on our new license verification process, please contact a member of the <a href="mailto:clientservices@devexpress.com">DevExpress Client Services Team</a>.

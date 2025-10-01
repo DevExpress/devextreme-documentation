@@ -13,7 +13,7 @@ When **argumentAxis**.[type](/Documentation/ApiReference/UI_Components/dxChart/C
 
 To align discrete axis strips with ticks, set **argumentAxis**.[discreteAxisDivisionMode](/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#discreteAxisDivisionMode) to *"betweenLabels"*. To align strips with ticks when **discreteAxisDivisionMode** is *"crossLabels"*, implement an [area series](/Documentation/Guide/UI_Components/Chart/Series_Types/Area_Series/) instead of a strip. The following image demonstrates the effect of **discreteAxisDivisionMode** on an argument axis strip:
 
-<img src="/images/ChartJS/argumentaxis-strip.png" alt="Chart argument axis strips in different discrete axis division modes" style="border-radius: 16px;"></img>
+<img src="/images/ChartJS/argumentaxis-strip.png" alt="Two DevExtreme Chart components displaying argument axis strips. The two charts implement different discrete axis division modes. The top chart places argument axis ticks between labels. The bottom chart aligns argument axis ticks with labels." style="border-radius: 16px;"></img>
 
 1. Start value
 2. Strip area

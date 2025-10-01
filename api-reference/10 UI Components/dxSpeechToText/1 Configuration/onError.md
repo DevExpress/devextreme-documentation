@@ -17,6 +17,74 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "UI component" }
 
 ---
-TBA Code
+The following code snippet demonstrates how to implement the [notify()](/Documentation/ApiReference/Common/Utils/ui/#notifymessage_stack) utility method to display a Web Speech API error in the **onError** handler:
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $('#speech-to-text').dxSpeechToText({
+        onError(e) {
+            DevExpress.ui.notify(`Web Speech API encountered an error: ${e.event.error}`);
+        }
+    })
+
+##### Angular
+    
+    <!-- tab: app.component.html -->
+    <dx-speech-to-text
+        (onError)="handleError($event)"
+    ></dx-speech-to-text>
+
+    <!-- tab: app.component.ts -->
+    import { DxSpeechToTextComponent, type DxSpeechToTextTypes } from 'devextreme-angular/ui/speech-to-text';
+    import notify from 'devextreme/ui/notify';
+
+    // ...
+    export class AppComponent {
+        handleError(e: DxSpeechToTextTypes.ErrorEvent) {
+            notify(`Web Speech API encountered an error: ${e.event.error}`);
+        }
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxSpeechToText
+            @error="handleError"
+        />
+    </template>
+
+    <script setup lang="ts">
+    import { DxSpeechToText, type DxSpeechToTextTypes } from 'devextreme-vue/speech-to-text';
+    import notify from 'devextreme/ui/notify';
+
+    function handleError(e: DxSpeechToTextTypes.ResultEvent) {
+        notify(`Web Speech API encountered an error: ${e.event.error}`);
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.tsx -->
+    import React from 'react';
+    import { SpeechToText, type SpeechToTextTypes } from 'devextreme-react/speech-to-text';
+    import notify from 'devextreme/ui/notify';
+
+    function handleError(e: DxSpeechToTextTypes.ResultEvent): void {
+        notify(`Web Speech API encountered an error: ${e.event.error}`);
+    }
+
+    function App(): JSX.Element {
+        return (
+            <SpeechToText
+                onError={handleError}
+            />
+        );
+    }
+
+---
 
 [note] The component does not call this handler if you implement a [custom speech recognition engine](/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/customSpeechRecognizer/).

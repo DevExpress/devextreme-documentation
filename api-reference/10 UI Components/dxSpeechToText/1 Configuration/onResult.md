@@ -61,7 +61,7 @@ The following code snippet demonstrates how to extract transcribed text in the *
     </template>
 
     <script setup lang="ts">
-    import { DxSpeechToText, DxCustomSpeechRecognizer, type DxSpeechToTextTypes } from 'devextreme-vue/speech-to-text';
+    import { DxSpeechToText, type DxSpeechToTextTypes } from 'devextreme-vue/speech-to-text';
 
     function handleResult(e: DxSpeechToTextTypes.ResultEvent) {
         const resultText = Object.values(e.event.results)
@@ -74,7 +74,7 @@ The following code snippet demonstrates how to extract transcribed text in the *
 
     <!-- tab: App.tsx -->
     import React from 'react';
-    import { SpeechToText, CustomSpeechRecognizer, type SpeechToTextTypes } from 'devextreme-react/speech-to-text';
+    import { SpeechToText, type SpeechToTextTypes } from 'devextreme-react/speech-to-text';
 
     function handleResult(e: DxSpeechToTextTypes.ResultEvent): void {
         const resultText = Object.values(e.event.results)

@@ -8,11 +8,11 @@ default: 'normal'
 Specifies the SpeechToText button type.
 
 ---
-DevExtreme supplies the following button types:
+The following image demonstrates available SpeechToText types (arranged vertically) and [styling modes](/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/#stylingMode) (arranged horizontally):
 
-![Button Types](/images/UiWidgets/Button_Types.png) 
+<img src="/images/SpeechToText/speechtotext-type-stylingmode.png" alt="A grid of DevExtreme SpeechToText components which demonstrate available SpeechToText types and styling modes." style="border-radius: 16px; width: 800px;"></img>
 
-You can also specify your own button type and define its CSS rules as shown in the example:
+You can also create a SpeechToText type and define custom CSS rules:
 
 ---
 ##### jQuery

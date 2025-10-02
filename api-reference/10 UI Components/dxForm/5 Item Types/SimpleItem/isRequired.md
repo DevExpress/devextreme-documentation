@@ -5,28 +5,29 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies whether the current form item is required.
+Specifies if the current form item is required.
 
 ---
+When this property is enabled, Form uses [RequiredRule](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules/RequiredRule '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/RequiredRule/') to validate the current item. The following values break **RequiredRule**:
+
+- [Falsy JavaScript values](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) except `0`, `-0`, `0n`, and `NaN`.
+- Invalid values for the target editor (e.g. a non-numeric string for the [NumberBox](/api-reference/10%20UI%20Components/dxNumberBox '/Documentation/ApiReference/UI_Components/dxNumberBox/') component).
+
 [note]
 
-If you specify validation rules using the [validationRules](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/validationRules.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#validationRules') property, the **isRequired** property is ignored. In this case, use the [Require](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules/RequiredRule '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/RequiredRule/') validation rule instead. 
+If you specify [validationRules](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/validationRules.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#validationRules'), Form ignores the **isRequired** property. To implement **isRequired** functionality, specify a **RequiredRule** validation rule:
 
 ---
 ##### jQuery
 
     <!--JavaScript-->
     $(function() {
-        $("#formContainer").dxForm({
-            // ...
+        $('#formContainer').dxForm({
             items: [{
-                // ...
                 validationRules: [
-                    { type: "required" }
+                    { type: 'required' }
                 ]
-            },
-            // ...
-            ]
+            }, ... ]
         });
     });
 
@@ -40,7 +41,7 @@ If you specify validation rules using the [validationRules](/api-reference/10%20
     </dx-form>
 
     <!--TypeScript-->
-    import { DxFormModule } from "devextreme-angular";
+    import { DxFormModule } from 'devextreme-angular/ui/form';
     // ...
     export class AppComponent {
         // ...
@@ -57,14 +58,14 @@ If you specify validation rules using the [validationRules](/api-reference/10%20
 
     <!-- tab: App.vue -->
     <template>
-        <DxForm ...>
-            <DxSimpleItem ...>
-                <DxRequiredRule .../>
+        <DxForm ... >
+            <DxSimpleItem ... >
+                <DxRequiredRule ... />
             </DxSimpleItem>
         </DxForm>
     </template>
     <script>
-    import DxForm, { DxSimpleItem, DxRequiredRule } from 'devextreme-vue/form';
+    import { DxForm, DxSimpleItem, DxRequiredRule } from 'devextreme-vue/form';
 
     export default {
         components: {
@@ -79,9 +80,9 @@ If you specify validation rules using the [validationRules](/api-reference/10%20
 
     <!-- tab: App.js -->
     import React from 'react';
-    import Form, { SimpleItem, RequiredRule } from 'devextreme-react/form';
+    import { Form, SimpleItem, RequiredRule } from 'devextreme-react/form';
 
-    const App = () => {
+    function App () {
         return (
             <Form ...>
                 <SimpleItem ...>

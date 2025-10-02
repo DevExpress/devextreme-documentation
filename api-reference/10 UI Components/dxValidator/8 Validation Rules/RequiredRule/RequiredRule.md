@@ -7,13 +7,13 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-A validation rule that demands that a validated field has a value.
+A validation rule that rejects empty and invalid values.
 
 ---
-Use this rule type to ensure the target editor value is specified. The rule will be broken in the following cases.
+The following values break **RequiredRule**:
 
-- If the validated value is **null**, **false**, or **undefined**.
-- If the specified value has a type that is not expected for the target field (e.g., a string for the [DateBox](/api-reference/10%20UI%20Components/dxDateBox '/Documentation/ApiReference/UI_Components/dxDateBox/') UI component).
+- [Falsy JavaScript values](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) except `0`, `-0`, `0n`, and `NaN`.
+- Invalid values for the target editor (e.g. a non-numeric string for the [NumberBox](/api-reference/10%20UI%20Components/dxNumberBox '/Documentation/ApiReference/UI_Components/dxNumberBox/') component).
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Validation/Overview/"

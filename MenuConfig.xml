@@ -62,6 +62,8 @@
   
   <MenuRule Destination="15 Common Concepts/50 Module Structure" SourcePattern="Howto:^Common/Modularity/02 DevExtreme Modules Structure" />
   
+  <MenuRule Destination="15 Common Concepts/60 Shadow DOM" SourcePattern="Howto:^Common/Shadow DOM" />
+
   <MenuRule Destination="20 DevExtreme CLI" SourcePattern="Howto:^Common/DevExtreme CLI" />
   <MenuRule Destination="25 Angular Application Template" SourcePattern="Howto:^40 Angular Components/30 Application Template" />
   <MenuRule Destination="26 Vue Application Template" SourcePattern="Howto:^55 Vue Components/50 Application Template" />

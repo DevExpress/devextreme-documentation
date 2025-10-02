@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-A function that is executed when the SpeechToText button is clicked or tapped in the default component state.
+A function that is executed when the SpeechToText button is clicked or tapped in the initial component state.
 
 ##### param(e): ui/speech_to_text:StartClickEvent
 Information about the event.

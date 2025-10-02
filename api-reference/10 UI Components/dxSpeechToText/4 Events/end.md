@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-Raised when SpeechToText transitions from the "listening" state to the default state.
+Raised when the Web Speech API finishes transcription and SpeechToText switches to the initial component state.
 
 ---
 Main article: [onEnd](/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/#onEnd)

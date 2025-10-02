@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-A function that is executed when SpeechToText transitions from the "listening" state to the default state.
+A function that is executed when the Web Speech API finishes transcription and SpeechToText switches to the initial component state.
 
 ##### param(e): ui/speech_to_text:EndEvent
 Information about the event.

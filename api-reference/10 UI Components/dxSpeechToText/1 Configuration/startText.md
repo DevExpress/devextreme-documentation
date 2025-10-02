@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-The SpeechToText button text in the default component state.
+The SpeechToText button text in the initial component state.
 
 ---
 <!-- Description goes here -->

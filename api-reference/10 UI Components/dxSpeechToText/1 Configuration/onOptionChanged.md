@@ -19,7 +19,7 @@ The UI component's instance.
 The path to the modified property that includes all parent properties.
 
 ##### field(e.name): String
-The modified property if it belongs to the first level. Otherwise, the first-level property in which it is nested.
+The modified property. For nested properties, returns the root-level property.
 
 ##### field(e.previousValue): any
 The modified property's previous value.

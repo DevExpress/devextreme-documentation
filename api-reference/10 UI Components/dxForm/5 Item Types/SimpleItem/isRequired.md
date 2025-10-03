@@ -11,7 +11,7 @@ Specifies if the current form item is required.
 When this property is enabled, Form uses [RequiredRule](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules/RequiredRule '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/RequiredRule/') to validate the current item. The following values break **RequiredRule**:
 
 - [Falsy JavaScript values](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) except `0`, `-0`, `0n`, and `NaN`.
-- Invalid values for the target editor (e.g. a non-numeric string for the [NumberBox](/api-reference/10%20UI%20Components/dxNumberBox '/Documentation/ApiReference/UI_Components/dxNumberBox/') component).
+- Invalid values for the target editor (for example, a non-numeric string for the [NumberBox](/api-reference/10%20UI%20Components/dxNumberBox '/Documentation/ApiReference/UI_Components/dxNumberBox/') component).
 
 [note]
 

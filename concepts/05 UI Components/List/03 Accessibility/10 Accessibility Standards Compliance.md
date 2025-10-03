@@ -14,7 +14,7 @@ The List component meets a variety of <a href="https://www.access-board.gov/ict/
     <tr>
         <td>11.5.2.12 Execution of available actions</td>
         <td>2.1.1 Keyboard (Level A)</td>
-        <td>List does not support item reordering (<a href="/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemDragging">itemDragging</a>) through keyboard actions.</td>
+        <td>List does not support item reordering (<a href="/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemDragging">itemDragging</a>) with keyboard actions.</td>
     </tr>
     <tr>
         <td>-</td>

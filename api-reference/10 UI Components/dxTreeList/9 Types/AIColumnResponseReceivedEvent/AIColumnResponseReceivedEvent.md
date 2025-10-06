@@ -1,5 +1,5 @@
 ---
-id: _ui_tree_list_AIColumnResponseReceivedEvent
+uid: ui/tree_list:AIColumnResponseReceivedEvent
 module: ui/tree_list
 export: AIColumnResponseReceivedEvent
 type: Object

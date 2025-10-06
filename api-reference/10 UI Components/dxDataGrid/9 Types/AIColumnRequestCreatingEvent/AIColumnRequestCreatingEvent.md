@@ -1,10 +1,10 @@
 ---
-id: _ui_tree_list_AIColumnRequestCreatingEvent
-module: ui/tree_list
+uid: ui/data_grid:AIColumnRequestCreatingEvent
+module: ui/data_grid
 export: AIColumnRequestCreatingEvent
 type: Object
 inherits: EventInfo,AIColumnRequestCreatingInfo
-references: dxTreeList.Options.onAIColumnRequestCreating
+references: dxDataGrid.Options.onAIColumnRequestCreating
 ---
 ---
 ##### shortDescription

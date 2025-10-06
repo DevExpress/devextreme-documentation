@@ -1,5 +1,5 @@
 ---
-id: _ui_data_grid_AIColumnResponseReceivedEvent
+uid: ui/data_grid:AIColumnResponseReceivedEvent
 module: ui/data_grid
 export: AIColumnResponseReceivedEvent
 type: Object

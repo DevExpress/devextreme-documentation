@@ -736,6 +736,16 @@
       "react": "_ui_data_grid_AdaptiveDetailRowPreparingEvent",
       "vue": "Dx_ui_data_grid_AdaptiveDetailRowPreparingEvent"
     },
+    "_ui_data_grid_AIColumnRequestCreatingEvent": {
+      "angular": "dxo-ui-data-grid--a-i-column-request-creating-event",
+      "react": "_ui_data_grid_AIColumnRequestCreatingEvent",
+      "vue": "Dx_ui_data_grid_AIColumnRequestCreatingEvent"
+    },
+    "_ui_data_grid_AIColumnResponseReceivedEvent": {
+      "angular": "dxo-ui-data-grid--a-i-column-response-received-event",
+      "react": "_ui_data_grid_AIColumnResponseReceivedEvent",
+      "vue": "Dx_ui_data_grid_AIColumnResponseReceivedEvent"
+    },
     "_ui_data_grid_CellClickEvent": {
       "angular": "dxo-ui-data-grid--cell-click-event",
       "react": "_ui_data_grid_CellClickEvent",
@@ -1463,31 +1473,6 @@
       "angular": "dxo-ui-date-range-box--value-changed-event",
       "react": "_ui_date_range_box_ValueChangedEvent",
       "vue": "Dx_ui_date_range_box_ValueChangedEvent"
-    },
-    "_ui_defer_rendering_ContentReadyEvent": {
-      "angular": "dxo-ui-defer-rendering--content-ready-event",
-      "react": "_ui_defer_rendering_ContentReadyEvent",
-      "vue": "Dx_ui_defer_rendering_ContentReadyEvent"
-    },
-    "_ui_defer_rendering_DisposingEvent": {
-      "angular": "dxo-ui-defer-rendering--disposing-event",
-      "react": "_ui_defer_rendering_DisposingEvent",
-      "vue": "Dx_ui_defer_rendering_DisposingEvent"
-    },
-    "_ui_defer_rendering_OptionChangedEvent": {
-      "angular": "dxo-ui-defer-rendering--option-changed-event",
-      "react": "_ui_defer_rendering_OptionChangedEvent",
-      "vue": "Dx_ui_defer_rendering_OptionChangedEvent"
-    },
-    "_ui_defer_rendering_RenderedEvent": {
-      "angular": "dxo-ui-defer-rendering--rendered-event",
-      "react": "_ui_defer_rendering_RenderedEvent",
-      "vue": "Dx_ui_defer_rendering_RenderedEvent"
-    },
-    "_ui_defer_rendering_ShownEvent": {
-      "angular": "dxo-ui-defer-rendering--shown-event",
-      "react": "_ui_defer_rendering_ShownEvent",
-      "vue": "Dx_ui_defer_rendering_ShownEvent"
     },
     "_ui_diagram_ContentReadyEvent": {
       "angular": "dxo-ui-diagram--content-ready-event",
@@ -4536,6 +4521,16 @@
       "react": "_ui_tree_list_AdaptiveDetailRowPreparingEvent",
       "vue": "Dx_ui_tree_list_AdaptiveDetailRowPreparingEvent"
     },
+    "_ui_tree_list_AIColumnRequestCreatingEvent": {
+      "angular": "dxo-ui-tree-list--a-i-column-request-creating-event",
+      "react": "_ui_tree_list_AIColumnRequestCreatingEvent",
+      "vue": "Dx_ui_tree_list_AIColumnRequestCreatingEvent"
+    },
+    "_ui_tree_list_AIColumnResponseReceivedEvent": {
+      "angular": "dxo-ui-tree-list--a-i-column-response-received-event",
+      "react": "_ui_tree_list_AIColumnResponseReceivedEvent",
+      "vue": "Dx_ui_tree_list_AIColumnResponseReceivedEvent"
+    },
     "_ui_tree_list_CellClickEvent": {
       "angular": "dxo-ui-tree-list--cell-click-event",
       "react": "_ui_tree_list_CellClickEvent",
@@ -6019,6 +6014,29 @@
       "react": "AIChangeToneCommand",
       "vue": "DxAIChangeToneCommand"
     },
+    "aiColumnRequestCreatingInfo.additionalInfo": {
+      "angular": "dxo-additional-info",
+      "react": "AdditionalInfo",
+      "vue": "DxAdditionalInfo"
+    },
+    "aiColumnRequestCreatingInfo.column": {
+      "angular": "dxo-column",
+      "react": "Column",
+      "vue": "DxColumn"
+    },
+    "aiColumnRequestCreatingInfo.useCache": {
+      "vue": "use-cache"
+    },
+    "aiColumnResponseReceivedInfo.additionalInfo": {
+      "angular": "dxo-additional-info",
+      "react": "AdditionalInfo",
+      "vue": "DxAdditionalInfo"
+    },
+    "aiColumnResponseReceivedInfo.column": {
+      "angular": "dxo-column",
+      "react": "Column",
+      "vue": "DxColumn"
+    },
     "aiCommand": {
       "angular": "dxo-a-i-command",
       "react": "AICommand",
@@ -6948,6 +6966,31 @@
       "angular": "dxo-column",
       "react": "Column",
       "vue": "DxColumn"
+    },
+    "columnAIOptions": {
+      "vue": "column-a-i-options"
+    },
+    "columnAIOptions.aiIntegration": {
+      "angular": "dxo-ai-integration",
+      "react": "AiIntegration",
+      "vue": "DxAiIntegration"
+    },
+    "columnAIOptions.editorOptions": {
+      "vue": "editor-options"
+    },
+    "columnAIOptions.emptyText": {
+      "vue": "empty-text"
+    },
+    "columnAIOptions.noDataText": {
+      "vue": "no-data-text"
+    },
+    "columnAIOptions.popup": {
+      "angular": "dxo-popup",
+      "react": "Popup",
+      "vue": "DxPopup"
+    },
+    "columnAIOptions.showHeaderMenu": {
+      "vue": "show-header-menu"
     },
     "columnChooser": {
       "angular": "dxo-column-chooser",
@@ -10741,6 +10784,12 @@
     "dxDataGridOptions.onAdaptiveDetailRowPreparing": {
       "vue": "@adaptive-detail-row-preparing"
     },
+    "dxDataGridOptions.onAIColumnRequestCreating": {
+      "vue": "@a-i-column-request-creating"
+    },
+    "dxDataGridOptions.onAIColumnResponseReceived": {
+      "vue": "@a-i-column-response-received"
+    },
     "dxDataGridOptions.onCellClick": {
       "vue": "@cell-click"
     },
@@ -11258,45 +11307,6 @@
     },
     "dxDateRangeBoxOptions.startDateText": {
       "vue": "start-date-text"
-    },
-    "dxDeferRendering": {
-      "angular": "dx-defer-rendering",
-      "react": "DeferRendering",
-      "vue": "DxDeferRendering"
-    },
-    "dxDeferRenderingOptions.animation": {
-      "angular": "dxo-animation",
-      "react": "Animation",
-      "vue": "DxAnimation"
-    },
-    "dxDeferRenderingOptions.onContentReady": {
-      "vue": "@content-ready"
-    },
-    "dxDeferRenderingOptions.onDisposing": {
-      "vue": "@disposing"
-    },
-    "dxDeferRenderingOptions.onInitialized": {
-      "vue": "@initialized"
-    },
-    "dxDeferRenderingOptions.onOptionChanged": {
-      "vue": "@option-changed"
-    },
-    "dxDeferRenderingOptions.onRendered": {
-      "vue": "@rendered"
-    },
-    "dxDeferRenderingOptions.onShown": {
-      "vue": "@shown"
-    },
-    "dxDeferRenderingOptions.renderWhen": {
-      "angular": "dxo-render-when",
-      "react": "RenderWhen",
-      "vue": "DxRenderWhen"
-    },
-    "dxDeferRenderingOptions.showLoadIndicator": {
-      "vue": "show-load-indicator"
-    },
-    "dxDeferRenderingOptions.staggerItemSelector": {
-      "vue": "stagger-item-selector"
     },
     "dxDiagram": {
       "angular": "dx-diagram",
@@ -17041,9 +17051,6 @@
     "dxProgressBarOptions.tabIndex": {
       "vue": "tab-index"
     },
-    "dxPromise": {
-      "vue": "dx-promise"
-    },
     "dxRadioGroup": {
       "angular": "dx-radio-group",
       "react": "RadioGroup",
@@ -19815,6 +19822,12 @@
     "dxTreeListOptions.onAdaptiveDetailRowPreparing": {
       "vue": "@adaptive-detail-row-preparing"
     },
+    "dxTreeListOptions.onAIColumnRequestCreating": {
+      "vue": "@a-i-column-request-creating"
+    },
+    "dxTreeListOptions.onAIColumnResponseReceived": {
+      "vue": "@a-i-column-response-received"
+    },
     "dxTreeListOptions.onCellClick": {
       "vue": "@cell-click"
     },
@@ -20851,6 +20864,9 @@
     "enums.AggregatedPointsPosition": {
       "vue": "aggregated-points-position"
     },
+    "enums.AIColumnMode": {
+      "vue": "a-i-column-mode"
+    },
     "enums.AICommandName": {
       "vue": "a-i-command-name"
     },
@@ -21718,6 +21734,16 @@
       "react": "GaugeIndicator",
       "vue": "DxGaugeIndicator"
     },
+    "gridBaseColumn": {
+      "angular": "dxo-grid-base-column",
+      "react": "GridBaseColumn",
+      "vue": "DxGridBaseColumn"
+    },
+    "gridBaseColumn.ai": {
+      "angular": "dxo-ai",
+      "react": "Ai",
+      "vue": "DxAi"
+    },
     "gridBaseColumn.allowEditing": {
       "vue": "allow-editing"
     },
@@ -21879,6 +21905,11 @@
     },
     "gridBaseColumnButton.cssClass": {
       "vue": "css-class"
+    },
+    "gridBaseOptions.aiIntegration": {
+      "angular": "dxo-ai-integration",
+      "react": "AiIntegration",
+      "vue": "DxAiIntegration"
     },
     "gridBaseOptions.allowColumnReordering": {
       "vue": "allow-column-reordering"

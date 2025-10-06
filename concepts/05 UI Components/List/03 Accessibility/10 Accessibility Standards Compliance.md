@@ -12,6 +12,11 @@ The List component meets a variety of <a href="https://www.access-board.gov/ict/
         <td>List does not support Windows High Contrast themes.</td>
     </tr>
     <tr>
+        <td>11.5.2.12 Execution of available actions</td>
+        <td>2.1.1 Keyboard (Level A)</td>
+        <td>List does not support item reordering (<a href="/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemDragging">itemDragging</a>) with keyboard actions.</td>
+    </tr>
+    <tr>
         <td>-</td>
         <td>2.5.7 Dragging Movements (Level AA 2.2 only)</td>
         <td>If <a href="/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemDragging">itemDragging</a> is enabled, the List component does not meet this criterion.</td>

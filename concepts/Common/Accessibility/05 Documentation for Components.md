@@ -708,7 +708,6 @@ The following components do not meet any accessibility requirements and currentl
 Accessibility requirements are not applicable to the following components due to their nature:
 
 - Box
-- DeferRendering
 - ResponsiveBox
 - ScrollView
 - TileView

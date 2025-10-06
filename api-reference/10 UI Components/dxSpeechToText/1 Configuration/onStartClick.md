@@ -5,19 +5,19 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed when the SpeechToText button is clicked or tapped in the initial component state.
 
 ##### param(e): ui/speech_to_text:StartClickEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+The UI component's container.
 
 ##### field(e.event): event
-<!-- Description goes here -->
+#include common-ref-eventparam
 
 ---
 <!-- Description goes here -->

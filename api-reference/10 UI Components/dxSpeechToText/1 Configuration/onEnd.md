@@ -5,16 +5,16 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed when the Web Speech API finishes transcription and SpeechToText switches to the initial component state.
 
 ##### param(e): ui/speech_to_text:EndEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ---
-<!-- Description goes here -->
+[note] The component does not call this handler if you implement a [custom speech recognition engine](/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/customSpeechRecognizer/).

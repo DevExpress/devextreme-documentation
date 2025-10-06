@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The argument type in the [stopClick]({basewidgetpath}/Events/#stopClick) event.
 
 ---
 <!-- Description goes here -->

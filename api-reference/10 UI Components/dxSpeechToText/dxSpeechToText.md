@@ -6,7 +6,17 @@ inherits: Widget
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The SpeechToText UI component is TBA.
+
+##### widgettree
+icon: "favorites",
+text: "Click"
+
+##### lib
+dx.web.js, dx.all.js
 
 ---
-<!-- Description goes here -->
+
+#####See Also#####
+#include common-link-setupdevextreme
+#include common-link-configurewidget

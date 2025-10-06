@@ -5,7 +5,6 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether a custom speech recognition engine is implemented.
 
 ---
-<!-- Description goes here -->

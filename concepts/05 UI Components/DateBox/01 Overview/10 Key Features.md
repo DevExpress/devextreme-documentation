@@ -19,11 +19,8 @@ DateBox allows you to [disable individual dates](/Documentation/Guide/UI_Compone
 - **Drop-Down Calendar Configuration**    
 You can customize [DateBox Calendar options](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#calendarOptions) such as zoom level and week numbers.
 
-- **Form Support**    
-DateBox is a supported editor type in the DevExtreme [Form](/Documentation/Guide/UI_Components/Form/Overview/) component.
-
 - **Validation**    
-The DateBox component ships with [data validation capabilities](/Documentation/Guide/UI_Components/Common/UI_Widgets/Data_Validation/). You can implement custom logic to validate the component value and display a [validation status](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#isValid).
+The DateBox component ships with [data validation capabilities](/Documentation/Guide/UI_Components/Common/UI_Widgets/Data_Validation/). You can implement custom logic to validate the component value and display a [validation status](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#isValid). You can also validate DateBox values within a DevExtreme [Form](/Documentation/Guide/UI_Components/Form/Overview/) component.
 
 - **Adaptivity**    
 You can [enable adaptive rendering](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#adaptivityEnabled) to adapt DateBox to small screens. In this mode, the component displays compact visual elements.

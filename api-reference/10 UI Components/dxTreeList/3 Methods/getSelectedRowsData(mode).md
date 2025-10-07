@@ -7,7 +7,7 @@ Gets selected row data objects.
 
 ##### return: Array<any>
 Selected row data objects.        
-The objects are not processed by the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') and have the same order in which the rows were selected.
+The objects are not processed by the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/').
 
 ##### param(mode): String
 *"all"*, *"excludeRecursive"*, or *"leavesOnly"*.

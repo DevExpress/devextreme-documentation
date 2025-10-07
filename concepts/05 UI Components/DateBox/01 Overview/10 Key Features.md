@@ -1,11 +1,11 @@
 - **DateBox Types**    
-You can configure DateBox [type](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#type) to integrate the component as a date, time, or date and time picker.
+You can configure the DateBox [type](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#type) to integrate the component as a date, time, or date and time picker.
 
 - **Picker Configuration**    
-DateBox supports multiple [picker types](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#pickerType), including calendar, list, and roller pickers. You can also implement native pickers that vary depending on user devices and platforms.
+DateBox supports multiple [picker types](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#pickerType), including calendar, list, and roller pickers. You can also implement native pickers that vary depending on the user's device and platforms.
 
 - **Formatting**    
-The DateBox component automatically formats values based on your application locale. You can also [specify display formats](/Documentation/Guide/UI_Components/DateBox/Value_Formatting_and_Masked_Input/) manually, including [predefined, Intl, and custom formats](/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values).
+The DateBox component automatically formats values based on your application locale. You can also [specify display formats](/Documentation/Guide/UI_Components/DateBox/Value_Formatting_and_Masked_Input/), including [predefined, Intl, and custom formats](/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values).
 
 - **Masked Input**    
 DateBox supports [masked input](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#useMaskBehavior). When enabled, the component allows users to input only characters supported by the DateBox [display format](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#displayFormat).

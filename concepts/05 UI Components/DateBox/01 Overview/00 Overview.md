@@ -1,3 +1,3 @@
-DateBox is a UI component that enables users enter or modify date and time values. The component ships with three entry modes that eliminate the need for separate date, time, and date/time selection components. DateBox supports date and time entry through built-in dropdown pickers, as well as in the component text field.
+DateBox is a UI component that allows users to enter or modify date and time values. The component ships with three entry modes that eliminate the need for separate date, time, and date/time selection components. DateBox supports date and time entry through built-in dropdown pickers, as well as in the component text field.
 
 This overview highlights DateBox elements, key features, and what to explore next.

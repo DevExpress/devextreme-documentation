@@ -6853,11 +6853,6 @@
     "chartPointAggregationInfoObject.intervalStart": {
       "vue": "interval-start"
     },
-    "chartPointInfo": {
-      "angular": "dxo-chart-point-info",
-      "react": "ChartPointInfo",
-      "vue": "DxChartPointInfo"
-    },
     "chartPointObject": {
       "angular": "dxo-chart-point-object",
       "react": "ChartPointObject",
@@ -7254,6 +7249,11 @@
     },
     "commonIndicator.verticalOrientation": {
       "vue": "vertical-orientation"
+    },
+    "commonPointInfo": {
+      "angular": "dxo-common-point-info",
+      "react": "CommonPointInfo",
+      "vue": "DxCommonPointInfo"
     },
     "compareRule": {
       "angular": "dxo-compare-rule",
@@ -17981,6 +17981,22 @@
     },
     "dxSchedulerOptions.editing.allowUpdating": {
       "vue": "allow-updating"
+    },
+    "dxSchedulerOptions.editing.form": {
+      "angular": "dxo-form",
+      "react": "Form",
+      "vue": "DxForm"
+    },
+    "dxSchedulerOptions.editing.form.items": {
+      "angular": "dxi-item",
+      "react": "Item",
+      "vue": "DxItem"
+    },
+    "dxSchedulerOptions.editing.form.onCanceled": {
+      "vue": "@canceled"
+    },
+    "dxSchedulerOptions.editing.form.onSaved": {
+      "vue": "@saved"
     },
     "dxSchedulerOptions.endDateExpr": {
       "vue": "end-date-expr"

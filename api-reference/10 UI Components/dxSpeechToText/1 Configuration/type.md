@@ -8,7 +8,7 @@ default: 'normal'
 Specifies the SpeechToText button type.
 
 ---
-The following image demonstrates available SpeechToText types (arranged vertically) and [styling modes](/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/#stylingMode) (arranged horizontally):
+The following image demonstrates available SpeechToText types (arranged vertically) and [styling modes](/api-reference/10%20UI%20Components/dxSpeechToText/1%20Configuration/stylingMode.md '/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/#stylingMode') (arranged horizontally):
 
 <img src="/images/SpeechToText/speechtotext-type-stylingmode.png" alt="A grid of DevExtreme SpeechToText components which demonstrate available SpeechToText types and styling modes." style="border-radius: 16px; width: 800px;"></img>
 

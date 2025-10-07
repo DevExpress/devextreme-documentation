@@ -92,4 +92,4 @@ The following code snippet demonstrates how to extract transcribed text in the *
 
 ---
 
-[note] The component does not call this handler if you implement a [custom speech recognition engine](/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/customSpeechRecognizer/).
+[note] The component does not call this handler if you implement a [custom speech recognition engine](/api-reference/10%20UI%20Components/dxSpeechToText/1%20Configuration/customSpeechRecognizer.md '/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/customSpeechRecognizer/').

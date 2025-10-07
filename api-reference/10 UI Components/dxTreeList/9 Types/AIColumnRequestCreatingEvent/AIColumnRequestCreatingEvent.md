@@ -5,6 +5,7 @@ export: AIColumnRequestCreatingEvent
 type: Object
 inherits: EventInfo,AIColumnRequestCreatingInfo
 references: dxTreeList.Options.onAIColumnRequestCreating
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

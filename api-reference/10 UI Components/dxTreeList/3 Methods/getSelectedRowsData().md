@@ -7,7 +7,7 @@ Gets the data objects of the rows selected explicitly [via the API](/concepts/05
 
 ##### return: Array<any>
 The selected rows' data objects.        
-The objects are not processed by the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') and have the same order in which the rows were selected.
+The objects are not processed by the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/').
 
 ---
 ---

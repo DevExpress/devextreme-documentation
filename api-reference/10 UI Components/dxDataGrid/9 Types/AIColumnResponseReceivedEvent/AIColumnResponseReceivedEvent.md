@@ -5,6 +5,7 @@ export: AIColumnResponseReceivedEvent
 type: Object
 inherits: EventInfo,AIColumnResponseReceivedInfo
 references: dxDataGrid.Options.onAIColumnResponseReceived
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

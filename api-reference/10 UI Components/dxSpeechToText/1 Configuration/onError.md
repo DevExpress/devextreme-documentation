@@ -17,7 +17,7 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "UI component" }
 
 ---
-The following code snippet demonstrates how to implement the [notify()](/Documentation/ApiReference/Common/Utils/ui/#notifymessage_stack) utility method to display a Web Speech API error in the **onError** handler:
+The following code snippet demonstrates how to implement the [notify()](/api-reference/50%20Common/utils/ui/notify(message_stack).md '/Documentation/ApiReference/Common/Utils/ui/#notifymessage_stack') utility method to display a Web Speech API error in the **onError** handler:
 
 ---
 
@@ -87,4 +87,4 @@ The following code snippet demonstrates how to implement the [notify()](/Documen
 
 ---
 
-[note] The component does not call this handler if you implement a [custom speech recognition engine](/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/customSpeechRecognizer/).
+[note] The component does not call this handler if you implement a [custom speech recognition engine](/api-reference/10%20UI%20Components/dxSpeechToText/1%20Configuration/customSpeechRecognizer.md '/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/customSpeechRecognizer/').

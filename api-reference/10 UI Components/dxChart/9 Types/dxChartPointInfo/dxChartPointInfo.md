@@ -2,7 +2,7 @@
 id: dxChartPointInfo
 module: viz/chart
 export: PointInfo
-type: ChartPointInfo | StackedPointInfo | BubblePointInfo | CandleStickPointInfo | RangePointInfo
+type: CommonPointInfo | StackedPointInfo | BubblePointInfo | CandleStickPointInfo | RangePointInfo
 generateTypeLink: 
 ---
 ---

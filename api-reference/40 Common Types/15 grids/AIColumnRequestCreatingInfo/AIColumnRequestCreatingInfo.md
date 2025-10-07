@@ -3,6 +3,7 @@ id: AIColumnRequestCreatingInfo
 module: common/grids
 export: AIColumnRequestCreatingInfo
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

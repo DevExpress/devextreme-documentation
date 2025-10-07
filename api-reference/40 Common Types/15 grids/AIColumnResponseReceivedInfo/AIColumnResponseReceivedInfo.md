@@ -3,6 +3,7 @@ id: AIColumnResponseReceivedInfo
 module: common/grids
 export: AIColumnResponseReceivedInfo
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -1,9 +1,7 @@
 ---
-id: ColumnAI.Options
-module: common/grids
-export: ColumnAI_Options
-type: Object
-generateTypeLink: 
+id: dxScheduler.Options.editing.form
+type: Object | undefined
+default: undefined
 ---
 ---
 ##### shortDescription

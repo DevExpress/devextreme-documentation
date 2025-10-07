@@ -1,9 +1,8 @@
 ---
-id: ColumnAI.Options
-module: common/grids
-export: ColumnAI_Options
-type: Object
-generateTypeLink: 
+id: CommonPointInfo
+module: viz/chart
+export: CommonPointInfo
+type: BasePointInfo
 ---
 ---
 ##### shortDescription

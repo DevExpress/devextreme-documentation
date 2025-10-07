@@ -1,0 +1,4 @@
+- Use **DataGrid** for flat data or master-detail scenarios that demand advanced table features.
+- Use **TreeList** for hierarchical (parent-child) structures or when both tree and table formats are needed.
+- Use **PivotGrid** for multidimensional datasets requiring flexible aggregation, analysis, and pivoting.
+- Use **CardView** when each item needs a visual format or when responsive, mobile layouts matter.

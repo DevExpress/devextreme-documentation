@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether AI-generated text is pasted into this item.
+Marks the item as disabled for AI processing.
 
 ---
 <!-- Description goes here -->

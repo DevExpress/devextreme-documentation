@@ -17,6 +17,13 @@ When more than one view matches the **currentView** value, the Scheduler display
 
 To subscribe to changes of the current view, use the [onOptionChanged](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/onOptionChanged.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onOptionChanged') handler.
 
+[note]
+
+- Ensure to include the **currentView** value in the **views** array.
+- If the **views** array is empty or contains a single item, Scheduler hides the view switcher. 
+
+[/note]
+
 #####See Also#####
 - [Views](/concepts/05%20UI%20Components/Scheduler/060%20Views/010%20View%20Types/010%20Day%20View.md '/Documentation/Guide/UI_Components/Scheduler/Views/')
 - [View Switcher](/concepts/05%20UI%20Components/Scheduler/070%20View%20Switcher.md '/Documentation/Guide/UI_Components/Scheduler/View_Switcher/')

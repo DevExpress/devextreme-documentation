@@ -1,40 +1,42 @@
-View switcher is a scheduler element used for quick switching between views.
+The view switcher is a predefined [toolbar](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/) item that allows users to switch between Scheduler views.
 
 ![View Switcher](/images/UiWidgets/Scheduler_View_Switcher.png)
 
-To specify what views are available within the switcher, use the [views](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/') property.
+To specify available views, configure the [views](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/') array. To specify the current view, configure the [currentView](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#currentView) property:
 
 ---
 
 ##### jQuery
 
-    <!--JavaScript-->
+    <!-- index.js -->
     $(function(){
         $("#schedulerContainer").dxScheduler({
             // ...
             views: ['day', 'week', 'agenda']
+            currentView: 'day',
         });
     });
 
 ##### Angular
 
-    <!--HTML-->
+    <!-- app.component.html -->
     <dx-scheduler ...
-        [views]="['day', 'week', 'agenda']">
-    </dx-scheduler>
+        [views]="views"
+        currentView="day"
+    ></dx-scheduler>
 
-    <!--TypeScript-->
+    <!-- app.component.ts -->
     import { DxSchedulerModule } from "devextreme-angular";
+    
     // ...
     export class AppComponent {
-        // ...
+        views = ['day', 'week', 'agenda'];
     }
     @NgModule({
         imports: [
             // ...
             DxSchedulerModule
         ],
-        // ...
     })
 
 ##### Vue
@@ -43,126 +45,51 @@ To specify what views are available within the switcher, use the [views](/api-re
     <template>
         <DxScheduler
             :views="views"
+            current-view="day"
         />
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import DxScheduler from 'devextreme-vue/scheduler';
+    import { DxScheduler } from 'devextreme-vue/scheduler';
 
-    export default {
-        components: {
-            DxScheduler
-        },
-        data() {
-            return {
-                views: ['day', 'week', 'agenda']
-            }
-        }
-    }
+    const views = ['day', 'week', 'agenda'];
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
-
-    import Scheduler from 'devextreme-react/scheduler';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
+    import { Scheduler } from 'devextreme-react/scheduler';
     
     const views = ["day", "week", "agenda"];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler views={views} />
-            );
-        }
+    function App () {
+        return (
+            <Scheduler
+                views={views}
+                currentView="day"
+            />
+        );
     }
-    export default App;
 
 ---
 
-On mobile devices, the view switcher is displayed as a drop-down menu. 
+[note]
+
+- Ensure to include the **currentView** value in the **views** array.
+- If the **views** array is empty or contains a single item, Scheduler hides the view switcher. 
+
+[/note]
+
+On mobile devices, Scheduler displays the view switcher as a drop-down menu:
 
 ![Drop-down View Switcher](/images/UiWidgets/Scheduler_DropDown_ViewSwitcher.png)
 
-To use the drop-down menu on all types of devices, assign **true** to the [useDropDownViewSwitcher](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/useDropDownViewSwitcher.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#useDropDownViewSwitcher') property; to use tabs - assign **false**.
-
----
-
-#####jQuery
-
-    <!--JavaScript-->
-    $(function(){
-        $("#schedulerContainer").dxScheduler({ 
-            // ...
-            useDropDownViewSwitcher: true
-        });
-    });
-
-#####Angular
-
-    <!--HTML-->
-    <dx-scheduler ...
-        [useDropDownViewSwitcher]="true">
-    </dx-scheduler>
-
-    <!--TypeScript-->
-    import { DxSchedulerModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        // ...
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxSchedulerModule
-        ],
-        // ...
-    })
-
-##### Vue
-
-    <!-- tab: App.vue -->
-    <template>
-        <DxScheduler
-            :use-drop-down-view-switcher="true" />
-    </template>
-
-    <script>
-    import 'devextreme/dist/css/dx.light.css';
-
-    import DxScheduler from 'devextreme-vue/scheduler';
-
-    export default {
-        components: {
-            DxScheduler
-        }
-    }
-    </script>
-
-##### React
-
-    <!-- tab: App.js -->
-    import React from 'react';
-
-    import 'devextreme/dist/css/dx.light.css';
-
-    import Scheduler from 'devextreme-react/scheduler';
-
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler useDropDownViewSwitcher={true} />
-            );
-        }
-    }
-    export default App;
-
----
+To integrate the drop-down menu view switcher on other devices, enable [useDropDownViewSwitcher](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/useDropDownViewSwitcher.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#useDropDownViewSwitcher').
 
 #####See Also#####
 - [Scheduler - View Types](/concepts/05%20UI%20Components/Scheduler/060%20Views/010%20View%20Types '/Documentation/Guide/UI_Components/Scheduler/Views/View_Types/')

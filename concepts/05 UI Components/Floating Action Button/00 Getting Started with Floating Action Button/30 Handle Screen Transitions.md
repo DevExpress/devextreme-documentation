@@ -1,33 +1,33 @@
-Different screens use different FABs because a FAB should perform or contain only actions that can be performed on a particular screen. The DevExtreme [TabPanel](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TabPanel/Overview/) is used to emulate switching between screens.
+In this example, each screen has a distinct FAB, as each FAB contains only actions for that screen. The DevExtreme [TabPanel](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TabPanel/Overview/) emulates screen switching:
 
 <div class="simulator-desktop-container" style="height:362px" data-view="/Content/Applications/25_1/GettingStartedWith/FloatingActionButton/HandleScreenTransitions/index.html, /Content/Applications/25_1/GettingStartedWith/FloatingActionButton/HandleScreenTransitions/index.js, /Content/Applications/25_1/GettingStartedWith/FloatingActionButton/HandleScreenTransitions/index.css"></div>
 
 ---
 ##### jQuery
 
-To implement this behavior, change the [visible](/api-reference/10%20UI%20Components/dxSpeedDialAction/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxSpeedDialAction/Configuration/#visible') property of each SpeedDialAction when the screen is switched. Set this property to **true** if an action can be performed on the current screen. Otherwise, set it to **false**.
+Change the [visible](/api-reference/10%20UI%20Components/dxSpeedDialAction/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxSpeedDialAction/Configuration/#visible') property of each SpeedDialAction when the screen changes. Set **visible** to `true` if the action applies to the current screen. Otherwise, set it to `false`.
 
 ##### Angular
 
-To implement this behavior, you can place the actions in separate components if the components have different URLs. No further configuration is required in this case.
+Separate actions into different components when components use different URLs. No extra configuration is needed.
 
-The approach is different if the components have the same URL, or actions are in the same component. Change the [visible](/api-reference/10%20UI%20Components/dxSpeedDialAction/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxSpeedDialAction/Configuration/#visible') property of each SpeedDialAction when the screen is switched. Set this property to **true** if an action can be performed on the current screen. Otherwise, set it to **false**.
+If components share a URL or actions exist in the same component, update the [visible](/api-reference/10%20UI%20Components/dxSpeedDialAction/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxSpeedDialAction/Configuration/#visible') property of each SpeedDialAction when the screen changes. Set **visible** to `true` if the action applies to the current screen. Otherwise, set it to `false`.
 
 ##### Vue
 
-To implement this behavior, you can place the actions in separate components if the components have different URLs. No further configuration is required in this case.
+Separate actions into different components when components use different URLs. No extra configuration is needed.
 
-The approach is different if the components have the same URL, or actions are in the same component. Change the [visible](/api-reference/10%20UI%20Components/dxSpeedDialAction/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxSpeedDialAction/Configuration/#visible') property of each SpeedDialAction when the screen is switched. Set this property to **true** if an action can be performed on the current screen. Otherwise, set it to **false**.
+If components share a URL or actions exist in the same component, update the [visible](/api-reference/10%20UI%20Components/dxSpeedDialAction/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxSpeedDialAction/Configuration/#visible') property of each SpeedDialAction when the screen changes. Set **visible** to `true` if the action applies to the current screen. Otherwise, set it to `false`.
 
 ##### React
 
-To implement this behavior, you can place the actions in separate components if the components have different URLs. No further configuration is required in this case.
+Separate actions into different components when components use different URLs. No extra configuration is needed.
 
-The approach is different if the components have the same URL, or actions are in the same component. Change the [visible](/api-reference/10%20UI%20Components/dxSpeedDialAction/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxSpeedDialAction/Configuration/#visible') property of each SpeedDialAction when the screen is switched. Set this property to **true** if an action can be performed on the current screen. Otherwise, set it to **false**.
+If components share a URL or actions exist in the same component, update the [visible](/api-reference/10%20UI%20Components/dxSpeedDialAction/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxSpeedDialAction/Configuration/#visible') property of each SpeedDialAction when the screen changes. Set **visible** to `true` if the action applies to the current screen. Otherwise, set it to `false`.
 
 ---
 
-The following code shows the TabPanel configuration and an empty `switchSDA` function. This function controls the actions' visibility when it is implemented later.
+The following code includes the TabPanel configuration and an empty `switchSDA` function. Implement `switchSDA` to control actions’ visibility:
 
 ---
 ##### jQuery
@@ -65,9 +65,6 @@ The following code shows the TabPanel configuration and an empty `switchSDA` fun
             <!-- DevExtreme resources -->
             <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_25_1/css/dx.material.blue.light.css">
             <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_25_1/js/dx.all.js"></script>
-
-            <!-- Custom icons by Ionicons -->
-            <link rel="stylesheet" href="https://unpkg.com/ionicons@4.6.3/dist/css/ionicons.min.css">
 
             <link rel="stylesheet" href="index.css">
             <script type="text/javascript" src="index.js"></script>
@@ -166,55 +163,6 @@ The following code shows the TabPanel configuration and an empty `switchSDA` fun
         justify-content: center;
     }
 
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxTabPanelModule, DxSpeedDialActionModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxTabPanelModule,
-            DxSpeedDialActionModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
-
-    <!-- tab: angular.json -->
-    {
-      // ...
-      "projects": {
-        "ng-app": {
-          // ...
-          "architect": {
-            "build": {
-              "options": {
-                // ...
-                "styles": [
-                  "node_modules/devextreme/dist/css/dx.material.blue.light.css",
-                  // Custom icons by Ionicons
-                  "node_modules/ionicons/dist/css/ionicons.css",
-                  "src/styles.css"
-                ],
-                // ...
-              },
-              // ...
-            },
-            // ...
-          }
-        },
-        // ...
-      },
-      // ...
-    }
-
 ##### Vue
 
     <!-- tab: App.vue -->
@@ -239,23 +187,11 @@ The following code shows the TabPanel configuration and an empty `switchSDA` fun
 
     <script>
     import 'devextreme/dist/css/dx.material.blue.light.css';
-    // Custom icons by Ionicons
-    import 'ionicons/dist/css/ionicons.css';
-
     import DxTabPanel, { DxItem } from 'devextreme-vue/tab-panel';
 
-    export default {
-        components: {
-            DxTabPanel,
-            DxItem,
-        },
-        methods: {
-            switchSDAs(e) {
-                // To be implemented
-            }
-        }
-    }
+    // switchSDAs to be implemented
     </script>
+
     <style>
     .dx-fa-button-icon, .dx-fa-button-icon-close {
         text-align: center;
@@ -286,39 +222,32 @@ The following code shows the TabPanel configuration and an empty `switchSDA` fun
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
-
     import 'devextreme/dist/css/dx.material.blue.light.css';
-    // Custom icons by Ionicons
-    import 'ionicons/dist/css/ionicons.css';
-
     import './App.css';
 
     import TabPanel, { Item } from 'devextreme-react/tab-panel';
 
-    class App extends React.Component {
-        switchSDAs(e) {
-            // To be implemented
-        }
-        
-        render() {
-            return (
-                <div id="app-container">
-                    <TabPanel
-                        onSelectionChanged={this.switchSDAs}>
-                        <Item title="Edit tab">
-                            <p>Edit tab's content</p>
-                        </Item>
-                        <Item title="Share tab">
-                            <p>Share tab's content</p>
-                        </Item>
-                    </TabPanel>
-                    {/* To be implemented */}
-                </div>
-            );
-        }
+    function App(): JSX.Element {
+        // switchSDAs to be implemented
+
+        return (
+            <div id="app-container">
+                <TabPanel
+                    onSelectionChanged={this.switchSDAs}>
+                    <Item title="Edit tab">
+                        <p>Edit tab's content</p>
+                    </Item>
+                    <Item title="Share tab">
+                        <p>Share tab's content</p>
+                    </Item>
+                </TabPanel>
+                {/* To be implemented */}
+            </div>
+        );
     }
+
     export default App;
 
     <!-- tab: App.css -->
@@ -349,7 +278,7 @@ The following code shows the TabPanel configuration and an empty `switchSDA` fun
 
 ---
 
-The following code adds four SpeedDialActions to the page, but only the "Edit" action is **visible** at launch. The `switchSDA` function changes the actions' visibility based on the selected tab:
+The following code creates four SpeedDialActions. At launch, only "Edit" appears. The `switchSDA` function displays or hides actions depending on the active tab:
 
 ---
 ##### jQuery
@@ -682,7 +611,11 @@ The following code adds four SpeedDialActions to the page, but only the "Edit" a
 
 ---
 
-You can find the full code in the following GitHub repository: <a href="https://github.com/DevExpress-Examples/getting-started-with-floating-action-button-screen-transitions/" target="_blank">getting-started-with-floating-action-button-screen-transitions</a>.
+You can find the full code in the following GitHub repository: 
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/getting-started-with-floating-action-button-screen-transitions/"
+}
 
 For more information on the Floating Action Button's functionality, explore the following resources:
 

@@ -19,7 +19,7 @@ To subscribe to changes of the current view, use the [onOptionChanged](/api-refe
 
 [note]
 
-- Ensure to include the **currentView** value in the **views** array.
+- Be sure to include the **currentView** value in the **views** array.
 - If the **views** array is empty or contains a single item, Scheduler hides the view switcher. 
 
 [/note]

@@ -80,7 +80,7 @@ To specify available views, configure the [views](/api-reference/10%20UI%20Compo
 
 [note]
 
-- Ensure to include the **currentView** value in the **views** array.
+- Be sure to include the **currentView** value in the **views** array.
 - If the **views** array is empty or contains a single item, Scheduler hides the view switcher. 
 
 [/note]

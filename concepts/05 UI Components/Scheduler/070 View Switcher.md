@@ -1,4 +1,4 @@
-The view switcher is a predefined [toolbar](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/) item that allows users to switch between Scheduler views.
+The view switcher is a predefined toolbar item that allows users to switch between Scheduler views.
 
 ![View Switcher](/images/UiWidgets/Scheduler_View_Switcher.png)
 

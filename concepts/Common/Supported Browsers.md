@@ -32,15 +32,15 @@
 <table class="dx-table">
     <tr>
         <th style="width: 183px;">Browser</th>
-        <th style="width: 376px;">Supported OS versions</th>
+        <th style="width: 376px;">Supported versions</th>
     </tr>
     <tr>
         <td><img src="/images/browsers/safari-icon.png" alt="Safari" style="width: 24px; height: 24px; margin-right: 24px;" /> Safari</td>
-        <td>iOS 15.4+</td>
+        <td>Two latest versions</td>
     </tr>
     <tr>
         <td><img src="/images/browsers/chrome-icon.png" alt="Google Chrome" style="width: 24px; height: 24px; margin-right: 24px;" /> Google Chrome</td>
-        <td>Android 5+</td>
+        <td>Two latest versions</td>
     </tr>
 </table>
 

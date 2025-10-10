@@ -21,7 +21,6 @@
     "ui/context_menu/ui":              "api-reference/10 UI Components/dxContextMenu/9 Types",
     "ui/date_box":                     "api-reference/10 UI Components/dxDateBox/9 Types",
     "ui/date_range_box":               "api-reference/10 UI Components/dxDateRangeBox/9 Types",
-    "ui/defer_rendering":              "api-reference/10 UI Components/dxDeferRendering/9 Types",
     "ui/diagram":                      "api-reference/10 UI Components/dxDiagram/9 Types",
     "ui/draggable":                    "api-reference/10 UI Components/dxDraggable/9 Types",
     "ui/drawer":                       "api-reference/10 UI Components/dxDrawer/9 Types",

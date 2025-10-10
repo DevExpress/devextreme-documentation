@@ -386,9 +386,6 @@
     "ui/date_box": {
       "default": {}
     },
-    "ui/defer_rendering": {
-      "default": {}
-    },
     "ui/diagram": {
       "default": {},
       "dxDiagramAddShapeArgs": {},

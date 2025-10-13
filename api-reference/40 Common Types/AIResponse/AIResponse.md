@@ -1,9 +1,8 @@
 ---
-id: ChartPointInfo
-module: viz/chart
-export: ChartPointInfo
-type: BasePointInfo
-generateTypeLink: 
+id: AIResponse
+module: common/ai-integration
+export: AIResponse
+type: Object
 ---
 ---
 ##### shortDescription

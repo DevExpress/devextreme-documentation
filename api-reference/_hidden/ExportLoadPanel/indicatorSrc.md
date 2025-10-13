@@ -2,6 +2,7 @@
 id: ExportLoadPanel.indicatorSrc
 type: String
 default: ''
+dep: ExportLoadPanel.indicatorOptions
 ---
 ---
 ##### shortDescription

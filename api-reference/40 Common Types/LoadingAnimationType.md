@@ -2,7 +2,7 @@
 id: Enums.LoadingAnimationType
 acceptValues: 'circle' | 'sparkle'
 type: Union
-references: dxLoadIndicator.Options.animationType
+references: dxLoadIndicator.Options.animationType|LoadPanelIndicatorProperties.animationType
 ---
 ---
 ##### shortDescription

@@ -14642,6 +14642,9 @@
     "dxLoadPanelOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"
     },
+    "dxLoadPanelOptions.indicatorOptions": {
+      "vue": "indicator-options"
+    },
     "dxLoadPanelOptions.indicatorSrc": {
       "vue": "indicator-src"
     },
@@ -22191,6 +22194,9 @@
       "react": "LoadPanel",
       "vue": "DxLoadPanel"
     },
+    "gridBaseOptions.loadPanel.indicatorOptions": {
+      "vue": "indicator-options"
+    },
     "gridBaseOptions.loadPanel.indicatorSrc": {
       "vue": "indicator-src"
     },
@@ -22585,6 +22591,14 @@
     },
     "loadOptions.userData": {
       "vue": "user-data"
+    },
+    "loadPanelIndicatorProperties": {
+      "angular": "dxo-load-panel-indicator-properties",
+      "react": "LoadPanelIndicatorProperties",
+      "vue": "DxLoadPanelIndicatorProperties"
+    },
+    "loadPanelIndicatorProperties.animationType": {
+      "vue": "animation-type"
     },
     "loadResult": {
       "angular": "dxo-load-result",

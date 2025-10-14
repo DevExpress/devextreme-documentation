@@ -3,6 +3,7 @@ id: AIResponse
 module: common/ai-integration
 export: AIResponse
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -2,7 +2,7 @@ The view switcher is a predefined toolbar item that allows users to switch betwe
 
 ![View Switcher](/images/UiWidgets/Scheduler_View_Switcher.png)
 
-To specify available views, configure the [views](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/') array. To specify the current view, configure the [currentView](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#currentView) property:
+To specify available views, configure the [views](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/') array. To specify the current view, configure the [currentView](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/currentView.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#currentView') property:
 
 ---
 

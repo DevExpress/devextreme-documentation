@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Binds the {WidgetName} to an AI service.
 
 ---
-<!-- Description goes here -->
+To activate AI functionality in {WidgetName}, configure this object and assign *"ai"* to a column's [type]({basewidgetpath}/Configuration/columns/#type) property.

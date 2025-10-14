@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised after an AI column response is received.
 
 ---
-<!-- Description goes here -->
+Main article: [onAIColumnResponseReceived]({basewidgetpath}/Configuration/#onAIColumnResponseReceived)

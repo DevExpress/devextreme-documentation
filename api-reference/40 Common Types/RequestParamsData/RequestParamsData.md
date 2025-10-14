@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An object that contains additional data to be sent to an AI model.
 
 ---
-<!-- Description goes here -->
+Configure this object to send additional data in AI requests.

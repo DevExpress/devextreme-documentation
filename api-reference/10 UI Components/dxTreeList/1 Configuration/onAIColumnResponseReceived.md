@@ -5,28 +5,28 @@ default: null
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed when an AI column request is responded to.
 
 ##### param(e): ui/tree_list:AIColumnResponseReceivedEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.additionalInfo): Object
-<!-- Description goes here -->
+Additional data returned in the response.
 
 ##### field(e.column): GridBaseColumn
-<!-- Description goes here -->
+The AI column that initiated the request.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.data): Array<Object>
-<!-- Description goes here -->
+An array of AI responses.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.error): String
-<!-- Description goes here -->
+Error text returned in the response.
 
 ---
 <!-- Description goes here -->

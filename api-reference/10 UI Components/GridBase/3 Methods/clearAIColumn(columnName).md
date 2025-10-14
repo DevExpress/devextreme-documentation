@@ -3,10 +3,10 @@ id: GridBase.clearAIColumn(columnName)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Clears all cells of an AI column.
 
 ##### param(columnName): String
-<!-- Description goes here -->
+The AI column name.
 
 ---
 <!-- Description goes here -->

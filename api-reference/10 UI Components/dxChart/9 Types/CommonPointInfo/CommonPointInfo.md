@@ -3,6 +3,7 @@ id: CommonPointInfo
 module: viz/chart
 export: CommonPointInfo
 type: BasePointInfo
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

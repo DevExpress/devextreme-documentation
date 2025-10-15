@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures visibility of the prompt editor button in the AI column's header.
 
 ---
 <!-- Description goes here -->

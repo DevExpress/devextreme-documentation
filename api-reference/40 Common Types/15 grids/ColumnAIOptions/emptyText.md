@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The initial text that AI column cells display.
 
 ---
 <!-- Description goes here -->

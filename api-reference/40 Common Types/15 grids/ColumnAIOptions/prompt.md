@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The prompt to be included in AI requests.
 
 ---
 <!-- Description goes here -->

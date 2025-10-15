@@ -4,7 +4,7 @@ type: dxTextBox_Options
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A configuration object for the AI column's prompt input field.
 
 ---
 <!-- Description goes here -->

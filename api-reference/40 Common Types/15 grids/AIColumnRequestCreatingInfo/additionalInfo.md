@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An object that contains additional data to include in the request.
 
 ---
 <!-- Description goes here -->

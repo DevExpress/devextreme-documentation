@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Binds the column to an AI service.
 
 ---
-<!-- Description goes here -->
+This object configures AI options specific to a column.

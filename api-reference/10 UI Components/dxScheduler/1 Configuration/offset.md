@@ -10,7 +10,7 @@ Specifies the minute offset applied to configured day durations in all views.
 ---
 This property shifts the interval between [startDayHour](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/startDayHour.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#startDayHour') and [endDayHour](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/endDayHour.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#endDayHour'). The **offset** value can range from `-1440` (24 hours behind) to `1440` (24 hours ahead). 
 
-You can implement **offset** with different **startDayHour**, **endDayHour**, and [cellDuration](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/cellDuration.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#cellDuration') combinations. The following code snippet integrates these properties to configure days from 4:40 AM to 11:40 AM:
+You can implement **offset** along with different **startDayHour**, **endDayHour**, and [cellDuration](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/cellDuration.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#cellDuration') combinations to customize views. The following code snippet integrates these properties to configure days from 4:40 AM to 11:40 AM and a 40-minute cell duration:
 
 ---
 ##### jQuery

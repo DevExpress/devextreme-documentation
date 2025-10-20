@@ -18001,6 +18001,9 @@
     "dxSchedulerOptions.editing.form.onSaved": {
       "vue": "@saved"
     },
+    "dxSchedulerOptions.editing.form.showIcons": {
+      "vue": "show-icons"
+    },
     "dxSchedulerOptions.endDateExpr": {
       "vue": "end-date-expr"
     },
@@ -21368,6 +21371,9 @@
     },
     "enums.ScaleBreakLineStyle": {
       "vue": "scale-break-line-style"
+    },
+    "enums.SchedulerAppointmentFormIconDisplay": {
+      "vue": "scheduler-appointment-form-icon-display"
     },
     "enums.SchedulerPredefinedDateNavigatorItem": {
       "vue": "scheduler-predefined-date-navigator-item"

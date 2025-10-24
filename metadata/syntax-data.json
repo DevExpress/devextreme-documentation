@@ -471,6 +471,16 @@
     "_ui_card_view_SelectionChangedEvent.selectedCardsData": {
       "vue": "selected-cards-data"
     },
+    "_ui_chat_AttachmentDownloadEvent": {
+      "angular": "dxo-ui-chat--attachment-download-event",
+      "react": "_ui_chat_AttachmentDownloadEvent",
+      "vue": "Dx_ui_chat_AttachmentDownloadEvent"
+    },
+    "_ui_chat_AttachmentDownloadEvent.attachment": {
+      "angular": "dxo-attachment",
+      "react": "Attachment",
+      "vue": "DxAttachment"
+    },
     "_ui_chat_DisposingEvent": {
       "angular": "dxo-ui-chat--disposing-event",
       "react": "_ui_chat_DisposingEvent",
@@ -6135,6 +6145,11 @@
     "asyncRule.validationCallback": {
       "vue": "validation-callback"
     },
+    "attachment": {
+      "angular": "dxo-attachment",
+      "react": "Attachment",
+      "vue": "DxAttachment"
+    },
     "barGaugeBarInfo": {
       "angular": "dxo-bar-gauge-bar-info",
       "react": "BarGaugeBarInfo",
@@ -10227,6 +10242,9 @@
     "dxChatOptions.emptyViewTemplate": {
       "vue": "empty-view-template"
     },
+    "dxChatOptions.fileUploaderOptions": {
+      "vue": "file-uploader-options"
+    },
     "dxChatOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"
     },
@@ -10245,6 +10263,9 @@
       "angular": "dxo-message-timestamp-format",
       "react": "MessageTimestampFormat",
       "vue": "DxMessageTimestampFormat"
+    },
+    "dxChatOptions.onAttachmentDownload": {
+      "vue": "@attachment-download"
     },
     "dxChatOptions.onContentReady": {
       "vue": "@content-ready"
@@ -17990,6 +18011,9 @@
       "react": "Form",
       "vue": "DxForm"
     },
+    "dxSchedulerOptions.editing.form.iconsShowMode": {
+      "vue": "icons-show-mode"
+    },
     "dxSchedulerOptions.editing.form.items": {
       "angular": "dxi-item",
       "react": "Item",
@@ -20910,6 +20934,9 @@
     "enums.ApplyValueMode": {
       "vue": "apply-value-mode"
     },
+    "enums.AppointmentFormIconsShowMode": {
+      "vue": "appointment-form-icons-show-mode"
+    },
     "enums.ArgumentAxisHoverMode": {
       "vue": "argument-axis-hover-mode"
     },
@@ -23253,6 +23280,11 @@
       "angular": "dxo-text-message",
       "react": "TextMessage",
       "vue": "DxTextMessage"
+    },
+    "textMessage.attachments": {
+      "angular": "dxi-attachment",
+      "react": "Attachment",
+      "vue": "DxAttachment"
     },
     "textMessage.isEdited": {
       "vue": "is-edited"

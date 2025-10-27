@@ -7,7 +7,7 @@ Automatically scrolls the component to the focused row when the [focusedRowKey](
 [note]
 
 - You must specify the component [height](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#height') to ensure **autoNavigateToFocusedRow** works correctly.
-- When **autoNavigateToFocusedRow** is `true`, {WidgetName} sorts records by key on data load if any [remote operations]({basewidgetpath}/Configuration/remoteOperations/) are enabled.
+- When **autoNavigateToFocusedRow** is `true`, {WidgetName} sorts records by key on data load if remote [filtering](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/#filtering), [sorting](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/#sorting), and [paging](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/#paging) are enabled.
 - When **autoNavigateToFocusedRow** is disabled, the default browser scrolling behavior remains in effect. If you focus a row that is loaded in the {WidgetName} container, the browser scrolls to the focused row.
 
 [/note]

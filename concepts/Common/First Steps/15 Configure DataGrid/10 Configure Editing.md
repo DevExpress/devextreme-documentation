@@ -23,7 +23,9 @@ Set new rows to appear at the *"last"* position for a top-to-bottom task list.
     <!-- tab: index.js -->
     $(() => {
         $("#task-grid").dxDataGrid({
-            // ...
+            dataSource: tasks,
+            keyExpr: "id",
+            columns: ["task", "dueDate", "done"],
             editing: {
                 mode: "cell",
                 allowUpdating: true,
@@ -37,7 +39,11 @@ Set new rows to appear at the *"last"* position for a top-to-bottom task list.
 ##### Angular
         
     <!-- tab: app.component.html -->
-    <dx-data-grid ... >
+    <dx-data-grid
+        id="task-grid"
+        [dataSource]="tasks"
+        keyExpr="id"
+    >
         <dxo-data-grid-editing 
             mode="row" 
             [allowUpdating]="true" 
@@ -67,7 +73,11 @@ Remember to import the `DxoDataGridEditingComponent` component:
     <template>
         <div id="dashboard">
             <DxProgressBar id="progress" />
-            <DxDataGrid ... >
+            <DxDataGrid
+                id="task-grid"
+                :data-source="tasks"
+                key-expr="id"
+            >
                 <DxEditing 
                     mode="row"
                     :allow-updating="true"
@@ -93,7 +103,11 @@ Remember to import the `DxoDataGridEditingComponent` component:
         return(
             <div id="dashboard">
                 <ProgressBar id="progress" />
-                <DataGrid ... >
+                <DataGrid
+                    id="task-grid" 
+                    dataSource={tasks}
+                    keyExpr="id"
+                >
                     <Editing 
                         mode="row"
                         allowUpdating={true}

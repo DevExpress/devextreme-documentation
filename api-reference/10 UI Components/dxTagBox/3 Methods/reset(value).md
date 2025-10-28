@@ -1,0 +1,15 @@
+---
+id: dxTagBox.reset(value)
+---
+---
+##### shortDescription
+Resets the [value](/api-reference/10%20UI%20Components/dxTagBox/1%20Configuration/value.md '{basewidgetpath}/Configuration/#value') property to the value passed as an argument.
+
+##### param(value): Array<String, Number, any>
+Specifies the new value.
+
+---
+This method sets the [isDirty](/api-reference/10%20UI%20Components/Editor/1%20Configuration/isDirty.md '{basewidgetpath}/Configuration/#isDirty') flag to `false`.
+
+##### See Also #####
+- [clear()](/api-reference/10%20UI%20Components/Editor/3%20Methods/clear().md '{basewidgetpath}/Methods/#clear')

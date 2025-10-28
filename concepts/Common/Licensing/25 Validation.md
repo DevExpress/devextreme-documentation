@@ -15,7 +15,7 @@ If license key validation fails, DevExtreme will display one of the following me
         <code>W0019 - DevExtreme: Unable to Locate a Valid License Key</code><br><br>
         If you are using a 30-day trial version of DevExtreme, you must uninstall all copies of DevExtreme once your 30-day trial period expires. For terms and conditions that govern use of DevExtreme UI components/libraries, please refer to the <a href="https://js.devexpress.com/EULAs/DevExtremeComplete/" target="_blank">DevExtreme End User License Agreement</a>. <br><br>
         To use DevExtreme in a commercial project, you must purchase a license. For pricing/licensing options, please visit <a href="http://js.devexpress.com/Buy/" target="_blank">DevExtreme Purchase page</a>. <br><br>
-        If you have licensing-related questions or need help with a purchase, please email <a href="mailto: clientservices@devexpress.com">clientservices@devexpress.com</a>. For additional information on this error message, see: <a href="/Documentation/ApiReference/Common/Utils/Errors_and_Warnings/#W0019">W0019</a>.</td>
+        If you have licensing-related questions or need help with a purchase, please email <a href="mailto:clientservices@devexpress.com">clientservices@devexpress.com</a>. For additional information on this error message, see: <a href="/Documentation/ApiReference/Common/Utils/Errors_and_Warnings/#W0019">W0019</a>.</td>
     </tr>
     <tr>
         <td>The license key has expired.</td>
@@ -23,7 +23,7 @@ If license key validation fails, DevExtreme will display one of the following me
         <ul>
         <li>use a version of DevExtreme linked to your license key (visit the DevExpress <a href="https://www.devexpress.com/ClientCenter/DownloadManager/" target="_blank">Download Manager</a> to validate license/version information)</li>
         <li><a href="https://www.devexpress.com/buy/renew/" target="_blank">renew your DevExpress Subscription</a> (once you renew your subscription, you will be entitled to product updates and support services as defined in the DevExtreme End User License Agreement)</li></ul>
-        If you have licensing-related questions or need help with a renewal, please email <a href="mailto: clientservices@devexpress.com">clientservices@devexpress.com</a>. For additional information on this error message, see: <a href="/Documentation/ApiReference/Common/Utils/Errors_and_Warnings/#W0020">W0020</a>.</td>
+        If you have licensing-related questions or need help with a renewal, please email <a href="mailto:clientservices@devexpress.com">clientservices@devexpress.com</a>. For additional information on this error message, see: <a href="/Documentation/ApiReference/Common/Utils/Errors_and_Warnings/#W0020">W0020</a>.</td>
     </tr>
     <tr>
         <td>License key verification failed.</td>

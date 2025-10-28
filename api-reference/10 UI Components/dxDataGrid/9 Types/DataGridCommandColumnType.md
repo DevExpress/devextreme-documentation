@@ -1,6 +1,6 @@
 ---
 id: Enums.DataGridCommandColumnType
-acceptValues: 'adaptive' | 'buttons' | 'detailExpand' | 'groupExpand' | 'selection' | 'drag'
+acceptValues: 'adaptive' | 'ai' | 'buttons' | 'detailExpand' | 'groupExpand' | 'selection' | 'drag'
 type: Union
 references: dxDataGridColumn.type
 ---

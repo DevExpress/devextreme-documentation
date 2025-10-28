@@ -736,6 +736,16 @@
       "react": "_ui_data_grid_AdaptiveDetailRowPreparingEvent",
       "vue": "Dx_ui_data_grid_AdaptiveDetailRowPreparingEvent"
     },
+    "_ui_data_grid_AIColumnRequestCreatingEvent": {
+      "angular": "dxo-ui-data-grid--a-i-column-request-creating-event",
+      "react": "_ui_data_grid_AIColumnRequestCreatingEvent",
+      "vue": "Dx_ui_data_grid_AIColumnRequestCreatingEvent"
+    },
+    "_ui_data_grid_AIColumnResponseReceivedEvent": {
+      "angular": "dxo-ui-data-grid--a-i-column-response-received-event",
+      "react": "_ui_data_grid_AIColumnResponseReceivedEvent",
+      "vue": "Dx_ui_data_grid_AIColumnResponseReceivedEvent"
+    },
     "_ui_data_grid_CellClickEvent": {
       "angular": "dxo-ui-data-grid--cell-click-event",
       "react": "_ui_data_grid_CellClickEvent",
@@ -1463,31 +1473,6 @@
       "angular": "dxo-ui-date-range-box--value-changed-event",
       "react": "_ui_date_range_box_ValueChangedEvent",
       "vue": "Dx_ui_date_range_box_ValueChangedEvent"
-    },
-    "_ui_defer_rendering_ContentReadyEvent": {
-      "angular": "dxo-ui-defer-rendering--content-ready-event",
-      "react": "_ui_defer_rendering_ContentReadyEvent",
-      "vue": "Dx_ui_defer_rendering_ContentReadyEvent"
-    },
-    "_ui_defer_rendering_DisposingEvent": {
-      "angular": "dxo-ui-defer-rendering--disposing-event",
-      "react": "_ui_defer_rendering_DisposingEvent",
-      "vue": "Dx_ui_defer_rendering_DisposingEvent"
-    },
-    "_ui_defer_rendering_OptionChangedEvent": {
-      "angular": "dxo-ui-defer-rendering--option-changed-event",
-      "react": "_ui_defer_rendering_OptionChangedEvent",
-      "vue": "Dx_ui_defer_rendering_OptionChangedEvent"
-    },
-    "_ui_defer_rendering_RenderedEvent": {
-      "angular": "dxo-ui-defer-rendering--rendered-event",
-      "react": "_ui_defer_rendering_RenderedEvent",
-      "vue": "Dx_ui_defer_rendering_RenderedEvent"
-    },
-    "_ui_defer_rendering_ShownEvent": {
-      "angular": "dxo-ui-defer-rendering--shown-event",
-      "react": "_ui_defer_rendering_ShownEvent",
-      "vue": "Dx_ui_defer_rendering_ShownEvent"
     },
     "_ui_diagram_ContentReadyEvent": {
       "angular": "dxo-ui-diagram--content-ready-event",
@@ -3869,6 +3854,46 @@
     "_ui_sortable_ReorderEvent.toIndex": {
       "vue": "to-index"
     },
+    "_ui_speech_to_text_ContentReadyEvent": {
+      "angular": "dxo-ui-speech-to-text--content-ready-event",
+      "react": "_ui_speech_to_text_ContentReadyEvent",
+      "vue": "Dx_ui_speech_to_text_ContentReadyEvent"
+    },
+    "_ui_speech_to_text_DisposingEvent": {
+      "angular": "dxo-ui-speech-to-text--disposing-event",
+      "react": "_ui_speech_to_text_DisposingEvent",
+      "vue": "Dx_ui_speech_to_text_DisposingEvent"
+    },
+    "_ui_speech_to_text_EndEvent": {
+      "angular": "dxo-ui-speech-to-text--end-event",
+      "react": "_ui_speech_to_text_EndEvent",
+      "vue": "Dx_ui_speech_to_text_EndEvent"
+    },
+    "_ui_speech_to_text_ErrorEvent": {
+      "angular": "dxo-ui-speech-to-text--error-event",
+      "react": "_ui_speech_to_text_ErrorEvent",
+      "vue": "Dx_ui_speech_to_text_ErrorEvent"
+    },
+    "_ui_speech_to_text_OptionChangedEvent": {
+      "angular": "dxo-ui-speech-to-text--option-changed-event",
+      "react": "_ui_speech_to_text_OptionChangedEvent",
+      "vue": "Dx_ui_speech_to_text_OptionChangedEvent"
+    },
+    "_ui_speech_to_text_ResultEvent": {
+      "angular": "dxo-ui-speech-to-text--result-event",
+      "react": "_ui_speech_to_text_ResultEvent",
+      "vue": "Dx_ui_speech_to_text_ResultEvent"
+    },
+    "_ui_speech_to_text_StartClickEvent": {
+      "angular": "dxo-ui-speech-to-text--start-click-event",
+      "react": "_ui_speech_to_text_StartClickEvent",
+      "vue": "Dx_ui_speech_to_text_StartClickEvent"
+    },
+    "_ui_speech_to_text_StopClickEvent": {
+      "angular": "dxo-ui-speech-to-text--stop-click-event",
+      "react": "_ui_speech_to_text_StopClickEvent",
+      "vue": "Dx_ui_speech_to_text_StopClickEvent"
+    },
     "_ui_speed_dial_action_ClickEvent": {
       "angular": "dxo-ui-speed-dial-action--click-event",
       "react": "_ui_speed_dial_action_ClickEvent",
@@ -4495,6 +4520,16 @@
       "angular": "dxo-ui-tree-list--adaptive-detail-row-preparing-event",
       "react": "_ui_tree_list_AdaptiveDetailRowPreparingEvent",
       "vue": "Dx_ui_tree_list_AdaptiveDetailRowPreparingEvent"
+    },
+    "_ui_tree_list_AIColumnRequestCreatingEvent": {
+      "angular": "dxo-ui-tree-list--a-i-column-request-creating-event",
+      "react": "_ui_tree_list_AIColumnRequestCreatingEvent",
+      "vue": "Dx_ui_tree_list_AIColumnRequestCreatingEvent"
+    },
+    "_ui_tree_list_AIColumnResponseReceivedEvent": {
+      "angular": "dxo-ui-tree-list--a-i-column-response-received-event",
+      "react": "_ui_tree_list_AIColumnResponseReceivedEvent",
+      "vue": "Dx_ui_tree_list_AIColumnResponseReceivedEvent"
     },
     "_ui_tree_list_CellClickEvent": {
       "angular": "dxo-ui-tree-list--cell-click-event",
@@ -5979,6 +6014,29 @@
       "react": "AIChangeToneCommand",
       "vue": "DxAIChangeToneCommand"
     },
+    "aiColumnRequestCreatingInfo.additionalInfo": {
+      "angular": "dxo-additional-info",
+      "react": "AdditionalInfo",
+      "vue": "DxAdditionalInfo"
+    },
+    "aiColumnRequestCreatingInfo.column": {
+      "angular": "dxo-column",
+      "react": "Column",
+      "vue": "DxColumn"
+    },
+    "aiColumnRequestCreatingInfo.useCache": {
+      "vue": "use-cache"
+    },
+    "aiColumnResponseReceivedInfo.additionalInfo": {
+      "angular": "dxo-additional-info",
+      "react": "AdditionalInfo",
+      "vue": "DxAdditionalInfo"
+    },
+    "aiColumnResponseReceivedInfo.column": {
+      "angular": "dxo-column",
+      "react": "Column",
+      "vue": "DxColumn"
+    },
     "aiCommand": {
       "angular": "dxo-a-i-command",
       "react": "AICommand",
@@ -6129,21 +6187,10 @@
     "baseChartOptions.pointSelectionMode": {
       "vue": "point-selection-mode"
     },
-    "baseChartOptions.tooltip": {
-      "angular": "dxo-tooltip",
-      "react": "Tooltip",
-      "vue": "DxTooltip"
-    },
     "baseChartOptions.tooltip.argumentFormat": {
       "angular": "dxo-argument-format",
       "react": "ArgumentFormat",
       "vue": "DxArgumentFormat"
-    },
-    "baseChartOptions.tooltip.contentTemplate": {
-      "vue": "content-template"
-    },
-    "baseChartOptions.tooltip.customizeTooltip": {
-      "vue": "customize-tooltip"
     },
     "baseGaugeOptions.animation": {
       "angular": "dxo-animation",
@@ -6341,6 +6388,37 @@
       "angular": "dxo-marker",
       "react": "Marker",
       "vue": "DxMarker"
+    },
+    "basePointInfo": {
+      "angular": "dxo-base-point-info",
+      "react": "BasePointInfo",
+      "vue": "DxBasePointInfo"
+    },
+    "basePointInfo.argumentText": {
+      "vue": "argument-text"
+    },
+    "basePointInfo.highErrorValue": {
+      "vue": "high-error-value"
+    },
+    "basePointInfo.lowErrorValue": {
+      "vue": "low-error-value"
+    },
+    "basePointInfo.originalArgument": {
+      "vue": "original-argument"
+    },
+    "basePointInfo.originalValue": {
+      "vue": "original-value"
+    },
+    "basePointInfo.points": {
+      "angular": "dxi-point",
+      "react": "Point",
+      "vue": "DxPoint"
+    },
+    "basePointInfo.seriesName": {
+      "vue": "series-name"
+    },
+    "basePointInfo.valueText": {
+      "vue": "value-text"
     },
     "basePointObject.fullState": {
       "vue": "full-state"
@@ -6594,6 +6672,82 @@
     "baseWidgetOptions.tooltip.zIndex": {
       "vue": "z-index"
     },
+    "bubblePointInfo": {
+      "angular": "dxo-bubble-point-info",
+      "react": "BubblePointInfo",
+      "vue": "DxBubblePointInfo"
+    },
+    "bubblePointInfo.points": {
+      "angular": "dxi-point",
+      "react": "Point",
+      "vue": "DxPoint"
+    },
+    "bubblePointInfo.sizeText": {
+      "vue": "size-text"
+    },
+    "candleStickPointInfo": {
+      "angular": "dxo-candle-stick-point-info",
+      "react": "CandleStickPointInfo",
+      "vue": "DxCandleStickPointInfo"
+    },
+    "candleStickPointInfo.closeValue": {
+      "vue": "close-value"
+    },
+    "candleStickPointInfo.closeValueText": {
+      "vue": "close-value-text"
+    },
+    "candleStickPointInfo.highValue": {
+      "vue": "high-value"
+    },
+    "candleStickPointInfo.highValueText": {
+      "vue": "high-value-text"
+    },
+    "candleStickPointInfo.lowValue": {
+      "vue": "low-value"
+    },
+    "candleStickPointInfo.lowValueText": {
+      "vue": "low-value-text"
+    },
+    "candleStickPointInfo.openValue": {
+      "vue": "open-value"
+    },
+    "candleStickPointInfo.openValueText": {
+      "vue": "open-value-text"
+    },
+    "candleStickPointInfo.originalArgument": {
+      "vue": "original-argument"
+    },
+    "candleStickPointInfo.originalCloseValue": {
+      "vue": "original-close-value"
+    },
+    "candleStickPointInfo.originalHighValue": {
+      "vue": "original-high-value"
+    },
+    "candleStickPointInfo.originalLowValue": {
+      "vue": "original-low-value"
+    },
+    "candleStickPointInfo.originalOpenValue": {
+      "vue": "original-open-value"
+    },
+    "candleStickPointInfo.point": {
+      "angular": "dxo-point",
+      "react": "Point",
+      "vue": "DxPoint"
+    },
+    "candleStickPointInfo.points": {
+      "angular": "dxi-point",
+      "react": "Point",
+      "vue": "DxPoint"
+    },
+    "candleStickPointInfo.reductionValue": {
+      "vue": "reduction-value"
+    },
+    "candleStickPointInfo.seriesName": {
+      "vue": "series-name"
+    },
+    "candleStickPointInfo.valueText": {
+      "vue": "value-text"
+    },
     "cardCover": {
       "angular": "dxo-card-cover",
       "react": "CardCover",
@@ -6807,6 +6961,31 @@
       "angular": "dxo-column",
       "react": "Column",
       "vue": "DxColumn"
+    },
+    "columnAIOptions": {
+      "vue": "column-a-i-options"
+    },
+    "columnAIOptions.aiIntegration": {
+      "angular": "dxo-ai-integration",
+      "react": "AiIntegration",
+      "vue": "DxAiIntegration"
+    },
+    "columnAIOptions.editorOptions": {
+      "vue": "editor-options"
+    },
+    "columnAIOptions.emptyText": {
+      "vue": "empty-text"
+    },
+    "columnAIOptions.noDataText": {
+      "vue": "no-data-text"
+    },
+    "columnAIOptions.popup": {
+      "angular": "dxo-popup",
+      "react": "Popup",
+      "vue": "DxPopup"
+    },
+    "columnAIOptions.showHeaderMenu": {
+      "vue": "show-header-menu"
     },
     "columnChooser": {
       "angular": "dxo-column-chooser",
@@ -7071,6 +7250,11 @@
     "commonIndicator.verticalOrientation": {
       "vue": "vertical-orientation"
     },
+    "commonPointInfo": {
+      "angular": "dxo-common-point-info",
+      "react": "CommonPointInfo",
+      "vue": "DxCommonPointInfo"
+    },
     "compareRule": {
       "angular": "dxo-compare-rule",
       "react": "CompareRule",
@@ -7124,6 +7308,14 @@
     },
     "customRule.validationCallback": {
       "vue": "validation-callback"
+    },
+    "customSpeechRecognizer": {
+      "angular": "dxo-custom-speech-recognizer",
+      "react": "CustomSpeechRecognizer",
+      "vue": "DxCustomSpeechRecognizer"
+    },
+    "customSpeechRecognizer.isListening": {
+      "vue": "is-listening"
     },
     "customStoreOptions": {
       "vue": "custom-store-options"
@@ -8983,6 +9175,12 @@
       "react": "Tooltip",
       "vue": "DxTooltip"
     },
+    "dxChartOptions.tooltip.contentTemplate": {
+      "vue": "content-template"
+    },
+    "dxChartOptions.tooltip.customizeTooltip": {
+      "vue": "customize-tooltip"
+    },
     "dxChartOptions.valueAxis": {
       "angular": "dxi-value-axis",
       "react": "ValueAxis",
@@ -9159,6 +9357,11 @@
     },
     "dxChartOptions.zoomAndPan.valueAxis": {
       "vue": "value-axis"
+    },
+    "dxChartPointInfo": {
+      "angular": "dxo-chart-point-info",
+      "react": "DxChartPointInfo",
+      "vue": "DxChartPointInfo"
     },
     "dxChartSeriesTypes.AreaSeries.aggregation": {
       "angular": "dxo-aggregation",
@@ -9739,6 +9942,9 @@
       "angular": "dxo-aggregation",
       "react": "Aggregation",
       "vue": "DxAggregation"
+    },
+    "dxChartSeriesTypes.ScatterSeries.ignoreEmptyPoints": {
+      "vue": "ignore-empty-points"
     },
     "dxChartSeriesTypes.ScatterSeries.label": {
       "angular": "dxo-label",
@@ -10578,6 +10784,12 @@
     "dxDataGridOptions.onAdaptiveDetailRowPreparing": {
       "vue": "@adaptive-detail-row-preparing"
     },
+    "dxDataGridOptions.onAIColumnRequestCreating": {
+      "vue": "@a-i-column-request-creating"
+    },
+    "dxDataGridOptions.onAIColumnResponseReceived": {
+      "vue": "@a-i-column-response-received"
+    },
     "dxDataGridOptions.onCellClick": {
       "vue": "@cell-click"
     },
@@ -11095,45 +11307,6 @@
     },
     "dxDateRangeBoxOptions.startDateText": {
       "vue": "start-date-text"
-    },
-    "dxDeferRendering": {
-      "angular": "dx-defer-rendering",
-      "react": "DeferRendering",
-      "vue": "DxDeferRendering"
-    },
-    "dxDeferRenderingOptions.animation": {
-      "angular": "dxo-animation",
-      "react": "Animation",
-      "vue": "DxAnimation"
-    },
-    "dxDeferRenderingOptions.onContentReady": {
-      "vue": "@content-ready"
-    },
-    "dxDeferRenderingOptions.onDisposing": {
-      "vue": "@disposing"
-    },
-    "dxDeferRenderingOptions.onInitialized": {
-      "vue": "@initialized"
-    },
-    "dxDeferRenderingOptions.onOptionChanged": {
-      "vue": "@option-changed"
-    },
-    "dxDeferRenderingOptions.onRendered": {
-      "vue": "@rendered"
-    },
-    "dxDeferRenderingOptions.onShown": {
-      "vue": "@shown"
-    },
-    "dxDeferRenderingOptions.renderWhen": {
-      "angular": "dxo-render-when",
-      "react": "RenderWhen",
-      "vue": "DxRenderWhen"
-    },
-    "dxDeferRenderingOptions.showLoadIndicator": {
-      "vue": "show-load-indicator"
-    },
-    "dxDeferRenderingOptions.staggerItemSelector": {
-      "vue": "stagger-item-selector"
     },
     "dxDiagram": {
       "angular": "dx-diagram",
@@ -14469,6 +14642,9 @@
     "dxLoadPanelOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"
     },
+    "dxLoadPanelOptions.indicatorOptions": {
+      "vue": "indicator-options"
+    },
     "dxLoadPanelOptions.indicatorSrc": {
       "vue": "indicator-src"
     },
@@ -15351,6 +15527,22 @@
     },
     "dxPieChartOptions.startAngle": {
       "vue": "start-angle"
+    },
+    "dxPieChartOptions.tooltip": {
+      "angular": "dxo-tooltip",
+      "react": "Tooltip",
+      "vue": "DxTooltip"
+    },
+    "dxPieChartOptions.tooltip.contentTemplate": {
+      "vue": "content-template"
+    },
+    "dxPieChartOptions.tooltip.customizeTooltip": {
+      "vue": "customize-tooltip"
+    },
+    "dxPieChartPointInfo": {
+      "angular": "dxo-pie-chart-point-info",
+      "react": "DxPieChartPointInfo",
+      "vue": "DxPieChartPointInfo"
     },
     "dxPieChartSeriesTypes.CommonPieChartSeries.argumentField": {
       "vue": "argument-field"
@@ -16239,6 +16431,12 @@
       "react": "Tooltip",
       "vue": "DxTooltip"
     },
+    "dxPolarChartOptions.tooltip.contentTemplate": {
+      "vue": "content-template"
+    },
+    "dxPolarChartOptions.tooltip.customizeTooltip": {
+      "vue": "customize-tooltip"
+    },
     "dxPolarChartOptions.useSpiderWeb": {
       "vue": "use-spider-web"
     },
@@ -16357,6 +16555,11 @@
       "angular": "dxo-whole-range",
       "react": "WholeRange",
       "vue": "DxWholeRange"
+    },
+    "dxPolarChartPointInfo": {
+      "angular": "dxo-polar-chart-point-info",
+      "react": "DxPolarChartPointInfo",
+      "vue": "DxPolarChartPointInfo"
     },
     "dxPolarChartSeriesTypes.areapolarseries.hoverMode": {
       "vue": "hover-mode"
@@ -16850,9 +17053,6 @@
     },
     "dxProgressBarOptions.tabIndex": {
       "vue": "tab-index"
-    },
-    "dxPromise": {
-      "vue": "dx-promise"
     },
     "dxRadioGroup": {
       "angular": "dx-radio-group",
@@ -17762,9 +17962,6 @@
     "dxSchedulerOptions.descriptionExpr": {
       "vue": "description-expr"
     },
-    "dxSchedulerOptions.dropDownAppointmentTemplate": {
-      "vue": "drop-down-appointment-template"
-    },
     "dxSchedulerOptions.editing": {
       "angular": "dxo-editing",
       "react": "Editing",
@@ -17787,6 +17984,22 @@
     },
     "dxSchedulerOptions.editing.allowUpdating": {
       "vue": "allow-updating"
+    },
+    "dxSchedulerOptions.editing.form": {
+      "angular": "dxo-form",
+      "react": "Form",
+      "vue": "DxForm"
+    },
+    "dxSchedulerOptions.editing.form.items": {
+      "angular": "dxi-item",
+      "react": "Item",
+      "vue": "DxItem"
+    },
+    "dxSchedulerOptions.editing.form.onCanceled": {
+      "vue": "@canceled"
+    },
+    "dxSchedulerOptions.editing.form.onSaved": {
+      "vue": "@saved"
     },
     "dxSchedulerOptions.endDateExpr": {
       "vue": "end-date-expr"
@@ -17987,9 +18200,6 @@
     },
     "dxSchedulerOptions.views.dateCellTemplate": {
       "vue": "date-cell-template"
-    },
-    "dxSchedulerOptions.views.dropDownAppointmentTemplate": {
-      "vue": "drop-down-appointment-template"
     },
     "dxSchedulerOptions.views.endDayHour": {
       "vue": "end-day-hour"
@@ -18411,6 +18621,63 @@
     },
     "dxSparklineOptions.winlossThreshold": {
       "vue": "winloss-threshold"
+    },
+    "dxSpeechToText": {
+      "angular": "dx-speech-to-text",
+      "react": "SpeechToText",
+      "vue": "DxSpeechToText"
+    },
+    "dxSpeechToTextOptions.customSpeechRecognizer": {
+      "angular": "dxo-custom-speech-recognizer",
+      "react": "CustomSpeechRecognizer",
+      "vue": "DxCustomSpeechRecognizer"
+    },
+    "dxSpeechToTextOptions.onContentReady": {
+      "vue": "@content-ready"
+    },
+    "dxSpeechToTextOptions.onDisposing": {
+      "vue": "@disposing"
+    },
+    "dxSpeechToTextOptions.onEnd": {
+      "vue": "@end"
+    },
+    "dxSpeechToTextOptions.onError": {
+      "vue": "@error"
+    },
+    "dxSpeechToTextOptions.onInitialized": {
+      "vue": "@initialized"
+    },
+    "dxSpeechToTextOptions.onOptionChanged": {
+      "vue": "@option-changed"
+    },
+    "dxSpeechToTextOptions.onResult": {
+      "vue": "@result"
+    },
+    "dxSpeechToTextOptions.onStartClick": {
+      "vue": "@start-click"
+    },
+    "dxSpeechToTextOptions.onStopClick": {
+      "vue": "@stop-click"
+    },
+    "dxSpeechToTextOptions.speechRecognitionConfig": {
+      "angular": "dxo-speech-recognition-config",
+      "react": "SpeechRecognitionConfig",
+      "vue": "DxSpeechRecognitionConfig"
+    },
+    "dxSpeechToTextOptions.startIcon": {
+      "vue": "start-icon"
+    },
+    "dxSpeechToTextOptions.startText": {
+      "vue": "start-text"
+    },
+    "dxSpeechToTextOptions.stopIcon": {
+      "vue": "stop-icon"
+    },
+    "dxSpeechToTextOptions.stopText": {
+      "vue": "stop-text"
+    },
+    "dxSpeechToTextOptions.stylingMode": {
+      "vue": "styling-mode"
     },
     "dxSpeedDialAction": {
       "angular": "dx-speed-dial-action",
@@ -19574,6 +19841,12 @@
     "dxTreeListOptions.onAdaptiveDetailRowPreparing": {
       "vue": "@adaptive-detail-row-preparing"
     },
+    "dxTreeListOptions.onAIColumnRequestCreating": {
+      "vue": "@a-i-column-request-creating"
+    },
+    "dxTreeListOptions.onAIColumnResponseReceived": {
+      "vue": "@a-i-column-response-received"
+    },
     "dxTreeListOptions.onCellClick": {
       "vue": "@cell-click"
     },
@@ -20610,6 +20883,9 @@
     "enums.AggregatedPointsPosition": {
       "vue": "aggregated-points-position"
     },
+    "enums.AIColumnMode": {
+      "vue": "a-i-column-mode"
+    },
     "enums.AICommandName": {
       "vue": "a-i-command-name"
     },
@@ -21477,6 +21753,16 @@
       "react": "GaugeIndicator",
       "vue": "DxGaugeIndicator"
     },
+    "gridBaseColumn": {
+      "angular": "dxo-grid-base-column",
+      "react": "GridBaseColumn",
+      "vue": "DxGridBaseColumn"
+    },
+    "gridBaseColumn.ai": {
+      "angular": "dxo-ai",
+      "react": "Ai",
+      "vue": "DxAi"
+    },
     "gridBaseColumn.allowEditing": {
       "vue": "allow-editing"
     },
@@ -21638,6 +21924,11 @@
     },
     "gridBaseColumnButton.cssClass": {
       "vue": "css-class"
+    },
+    "gridBaseOptions.aiIntegration": {
+      "angular": "dxo-ai-integration",
+      "react": "AiIntegration",
+      "vue": "DxAiIntegration"
     },
     "gridBaseOptions.allowColumnReordering": {
       "vue": "allow-column-reordering"
@@ -21902,6 +22193,9 @@
       "angular": "dxo-load-panel",
       "react": "LoadPanel",
       "vue": "DxLoadPanel"
+    },
+    "gridBaseOptions.loadPanel.indicatorOptions": {
+      "vue": "indicator-options"
     },
     "gridBaseOptions.loadPanel.indicatorSrc": {
       "vue": "indicator-src"
@@ -22298,6 +22592,14 @@
     "loadOptions.userData": {
       "vue": "user-data"
     },
+    "loadPanelIndicatorProperties": {
+      "angular": "dxo-load-panel-indicator-properties",
+      "react": "LoadPanelIndicatorProperties",
+      "vue": "DxLoadPanelIndicatorProperties"
+    },
+    "loadPanelIndicatorProperties.animationType": {
+      "vue": "animation-type"
+    },
     "loadResult": {
       "angular": "dxo-load-result",
       "react": "LoadResult",
@@ -22620,6 +22922,51 @@
       "react": "Offset",
       "vue": "DxOffset"
     },
+    "rangePointInfo": {
+      "angular": "dxo-range-point-info",
+      "react": "RangePointInfo",
+      "vue": "DxRangePointInfo"
+    },
+    "rangePointInfo.argumentText": {
+      "vue": "argument-text"
+    },
+    "rangePointInfo.originalArgument": {
+      "vue": "original-argument"
+    },
+    "rangePointInfo.originalMinValue": {
+      "vue": "original-min-value"
+    },
+    "rangePointInfo.originalValue": {
+      "vue": "original-value"
+    },
+    "rangePointInfo.point": {
+      "angular": "dxo-point",
+      "react": "Point",
+      "vue": "DxPoint"
+    },
+    "rangePointInfo.points": {
+      "angular": "dxi-point",
+      "react": "Point",
+      "vue": "DxPoint"
+    },
+    "rangePointInfo.rangeValue1": {
+      "vue": "range-value1"
+    },
+    "rangePointInfo.rangeValue1Text": {
+      "vue": "range-value1-text"
+    },
+    "rangePointInfo.rangeValue2": {
+      "vue": "range-value2"
+    },
+    "rangePointInfo.rangeValue2Text": {
+      "vue": "range-value2-text"
+    },
+    "rangePointInfo.seriesName": {
+      "vue": "series-name"
+    },
+    "rangePointInfo.valueText": {
+      "vue": "value-text"
+    },
     "rangeRule": {
       "angular": "dxo-range-rule",
       "react": "RangeRule",
@@ -22793,6 +23140,33 @@
     },
     "sorting.showSortIndexes": {
       "vue": "show-sort-indexes"
+    },
+    "speechRecognitionConfig": {
+      "angular": "dxo-speech-recognition-config",
+      "react": "SpeechRecognitionConfig",
+      "vue": "DxSpeechRecognitionConfig"
+    },
+    "speechRecognitionConfig.interimResults": {
+      "vue": "interim-results"
+    },
+    "speechRecognitionConfig.maxAlternatives": {
+      "vue": "max-alternatives"
+    },
+    "stackedPointInfo": {
+      "angular": "dxo-stacked-point-info",
+      "react": "StackedPointInfo",
+      "vue": "DxStackedPointInfo"
+    },
+    "stackedPointInfo.percentText": {
+      "vue": "percent-text"
+    },
+    "stackedPointInfo.points": {
+      "angular": "dxi-point",
+      "react": "Point",
+      "vue": "DxPoint"
+    },
+    "stackedPointInfo.totalText": {
+      "vue": "total-text"
     },
     "store": {
       "vue": "store"

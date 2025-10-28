@@ -1,6 +1,6 @@
 ---
 id: Response.promise
-type: Promise<String>
+type: Promise<AIResponse>
 ---
 ---
 ##### shortDescription

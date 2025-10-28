@@ -2,6 +2,7 @@
 uid: common/grids:LoadPanel.indicatorSrc
 type: String
 default: ''
+dep: GridBase.Options.loadPanel.indicatorOptions
 ---
 ---
 ##### shortDescription

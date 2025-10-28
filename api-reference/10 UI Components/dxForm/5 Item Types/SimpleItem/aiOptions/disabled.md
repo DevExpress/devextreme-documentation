@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Marks the item as disabled for AI processing.
 
 ---
 <!-- Description goes here -->

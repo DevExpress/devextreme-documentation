@@ -24,6 +24,10 @@
 <td><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#searchMode">searchMode</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/#searchTimeout">searchTimeout</a></td>
 </tr>
 <tr>
+<td>LoadPanel</td>
+<td><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxLoadPanel/Configuration/#indicatorSrc">indicatorSrc</a></td>
+</tr>
+<tr>
 <td>Map</td>
 <td><b>apiKey.</b><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxMap/Configuration/apiKey/#bing">bing</a><br><b>providerConfig.</b><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#useAdvancedMarkers">useAdvancedMarkers</a></td>
 </tr>
@@ -34,10 +38,6 @@
 <tr>
 <td>PivotGridFieldChooser</td>
 <td><b>headerFilter.</b><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxPivotGridFieldChooser/Configuration/headerFilter/#allowSearch">allowSearch</a><br><b>headerFilter.</b><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxPivotGridFieldChooser/Configuration/headerFilter/#searchTimeout">searchTimeout</a></td>
-</tr>
-<tr>
-<td>Scheduler</td>
-<td><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxScheduler/Configuration/#dropDownAppointmentComponent">dropDownAppointmentComponent</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxScheduler/Configuration/#dropDownAppointmentRender">dropDownAppointmentRender</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxScheduler/Configuration/#dropDownAppointmentTemplate">dropDownAppointmentTemplate</a><br><b>views.</b><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxScheduler/Configuration/views/#dropDownAppointmentComponent">dropDownAppointmentComponent</a><br><b>views.</b><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxScheduler/Configuration/views/#dropDownAppointmentRender">dropDownAppointmentRender</a><br><b>views.</b><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxScheduler/Configuration/views/#dropDownAppointmentTemplate">dropDownAppointmentTemplate</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/UI_Components/dxScheduler/Methods/scrollToTime(hours_minutes_date)">scrollToTime(hours, minutes, date)</a></td>
 </tr>
 <tr>
 <td>SelectBox</td>
@@ -65,10 +65,10 @@
 </tr>
 <tr>
 <td>grids</td>
-<td><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/Common_Types/grids/ColumnChooser/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/Common_Types/grids/ColumnChooser/#searchTimeout">searchTimeout</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/Common_Types/grids/ColumnHeaderFilter/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/Common_Types/grids/ColumnHeaderFilter/#searchMode">searchMode</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/Common_Types/grids/HeaderFilter/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/Common_Types/grids/HeaderFilter/#searchTimeout">searchTimeout</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/Common_Types/grids/RowDragging/#filter">filter</a></td>
+<td><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/Common_Types/grids/ColumnChooser/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/Common_Types/grids/ColumnChooser/#searchTimeout">searchTimeout</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/Common_Types/grids/ColumnHeaderFilter/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/Common_Types/grids/ColumnHeaderFilter/#searchMode">searchMode</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/Common_Types/grids/HeaderFilter/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/Common_Types/grids/HeaderFilter/#searchTimeout">searchTimeout</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/Common_Types/grids/LoadPanel/#indicatorSrc">indicatorSrc</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/Common_Types/grids/RowDragging/#filter">filter</a></td>
 </tr>
 <tr>
 <td>Object Structures</td>
-<td><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/Common/Object_Structures/GlobalConfig/#decimalSeparator">decimalSeparator</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/Common/Object_Structures/GlobalConfig/#thousandsSeparator">thousandsSeparator</a></td>
+<td><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/Common/Object_Structures/GlobalConfig/#decimalSeparator">decimalSeparator</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/Common/Object_Structures/GlobalConfig/#thousandsSeparator">thousandsSeparator</a><br><a href="https://js.devexpress.com/Documentation/25_2/ApiReference/Common/Object_Structures/PdfExportDataGridProps/loadPanel/#indicatorSrc">indicatorSrc</a></td>
 </tr>
 </table>

@@ -34,20 +34,6 @@ The following instructions show how to enable and configure client-side export:
         <!-- tab: Installation command -->
         npm install --save devextreme-exceljs-fork file-saver
 
-        <!-- tab: tsconfig.app.json -->
-        {
-            "compilerOptions": {
-                // ...
-                "paths": {
-                    // ...
-                    "devextreme-exceljs-fork": [
-                        "./node_modules/devextreme-exceljs-fork/index.d.ts",
-                        "./node_modules/devextreme-exceljs-fork/dist/dx-exceljs-fork.min.js",
-                    ]
-                }
-            }
-        }
-
     ##### Vue
 
         npm install --save devextreme-exceljs-fork file-saver

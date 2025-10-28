@@ -2,6 +2,7 @@
 id: dxLoadPanel.Options.indicatorSrc
 type: String
 default: ''
+dep: dxLoadPanel.Options.indicatorOptions
 ---
 ---
 ##### shortDescription

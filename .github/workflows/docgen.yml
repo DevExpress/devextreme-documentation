@@ -16,25 +16,9 @@ jobs:
             path: documentation
             ref: ${{ github.ref_name }}
 
-        - name: Setup Node.js
-          uses: actions/setup-node@v4
+        - uses: ./documentation/.github/actions/setup-env
           with:
-            node-version: 20.x
-
-        - uses: pnpm/action-setup@v4
-          with:
-            version: 10
-            run_install: false
-
-        - name: Set up .NET
-          uses: actions/setup-dotnet@v4
-          with:
-            dotnet-version: 6.0.x
-
-        - name: Install dependencies
-          working-directory: documentation
-          shell: bash
-          run: pnpm install --frozen-lockfile
+            path: documentation
 
         - name: Checkout DevExtreme
           uses: actions/checkout@v4

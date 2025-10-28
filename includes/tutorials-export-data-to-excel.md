@@ -51,22 +51,6 @@ You can call this method at any point in your application. The following code ca
     <!-- tab: Installation command -->
     npm install --save devextreme-exceljs-fork file-saver
 
-    <!-- tab: tsconfig.app.json -->
-    {
-        // ...
-        "compilerOptions": {
-            // ...
-            "paths": {
-                // ...
-                "devextreme-exceljs-fork": [
-                    "./node_modules/devextreme-exceljs-fork/index.d.ts",
-                    "./node_modules/devextreme-exceljs-fork/dist/dx-exceljs-fork.min.js",
-                ]
-            }
-        },
-        // ...
-    }
-
     <!-- tab: app.component.html -->
     <dx-{widget-name} ...
         (onExporting)="exportGrid($event)">

@@ -5,6 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-Specifies the path to an image used as the indicator.
+Specifies a custom load indicator image.
 
 ---
+Use a .gif image to implement an animated load indicator.

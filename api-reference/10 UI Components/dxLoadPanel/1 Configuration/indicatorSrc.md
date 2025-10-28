@@ -6,6 +6,7 @@ dep: dxLoadPanel.Options.indicatorOptions
 ---
 ---
 ##### shortDescription
-A URL pointing to an image to be used as a load indicator.
+Specifies a custom load indicator image.
 
 ---
+Use a .gif image to implement an animated load indicator.

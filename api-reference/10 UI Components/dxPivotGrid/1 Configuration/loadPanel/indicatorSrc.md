@@ -5,6 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-Specifies the URL pointing to an image that will be used as a load indicator.
+Specifies a custom load indicator image.
 
 ---
+Use a .gif image to implement an animated load indicator.

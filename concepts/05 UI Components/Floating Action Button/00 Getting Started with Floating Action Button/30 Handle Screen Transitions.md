@@ -27,7 +27,7 @@ If components share a URL or actions exist in the same component, update the [vi
 
 ---
 
-The following code includes the TabPanel configuration and an empty `switchSDA` function. Implement `switchSDA` to control actions’ visibility:
+The following code includes the TabPanel configuration and an empty `switchSDA` function. Implement `switchSDA` to control action visibility:
 
 ---
 ##### jQuery
@@ -185,7 +185,7 @@ The following code includes the TabPanel configuration and an empty `switchSDA` 
         </div>
     </template>
 
-    <script>
+    <script setup lang="ts">
     import 'devextreme/dist/css/dx.material.blue.light.css';
     import DxTabPanel, { DxItem } from 'devextreme-vue/tab-panel';
 
@@ -234,8 +234,7 @@ The following code includes the TabPanel configuration and an empty `switchSDA` 
 
         return (
             <div id="app-container">
-                <TabPanel
-                    onSelectionChanged={this.switchSDAs}>
+                <<TabPanel onSelectionChanged={switchSDAs}>
                     <Item title="Edit tab">
                         <p>Edit tab's content</p>
                     </Item>
@@ -290,7 +289,7 @@ The following code creates four SpeedDialActions. At launch, only "Edit" appears
 
         DevExpress.config({
             floatingActionButtonConfig: {
-                icon: "icon ion-md-share",
+                icon: "share",
                 position: {
                     my: "right bottom",
                     at: "right bottom",
@@ -302,7 +301,7 @@ The following code creates four SpeedDialActions. At launch, only "Edit" appears
 
         const editAction = $("#action-edit").dxSpeedDialAction({
             hint: "Edit",
-            icon: "icon ion-md-create",
+            icon: "edit",
             onClick: function() {
                 showNotification("Edit is clicked")
             }
@@ -310,7 +309,7 @@ The following code creates four SpeedDialActions. At launch, only "Edit" appears
 
         const copyAction = $("#action-copy").dxSpeedDialAction({
             hint: "Copy to clipboard",
-            icon: "icon ion-md-copy",
+            icon: "copy",
             visible: false,
             onClick: function() {
                 showNotification("Copied to clipboard")
@@ -319,7 +318,7 @@ The following code creates four SpeedDialActions. At launch, only "Edit" appears
 
         const mailAction = $("#action-mail").dxSpeedDialAction({
             hint: "Send by email",
-            icon: "icon ion-md-mail",
+            icon: "email",
             visible: false,
             onClick: function() {
                 showNotification("Sent by email")
@@ -328,7 +327,7 @@ The following code creates four SpeedDialActions. At launch, only "Edit" appears
 
         const facebookAction = $("#action-facebook").dxSpeedDialAction({
             hint: "Share on Facebook",
-            icon: "icon ion-logo-facebook",
+            icon: "link",
             visible: false,
             onClick: function() {
                 showNotification("Shared on Facebook")
@@ -375,26 +374,26 @@ The following code creates four SpeedDialActions. At launch, only "Edit" appears
         <!-- ... -->
         <dx-speed-dial-action
             hint="Edit"
-            icon="icon ion-md-create"
+            icon="edit"
             [visible]="currentTab === 'Edit tab'"
             (onClick)="showNotification('Edit is clicked')">
         </dx-speed-dial-action>
 
         <dx-speed-dial-action
             hint="Copy to clipboard"
-            icon="icon ion-md-copy"
+            icon="copy"
             [visible]="currentTab === 'Share tab'"
             (onClick)="showNotification('Copied to clipboard')">
         </dx-speed-dial-action>
         <dx-speed-dial-action
             hint="Send by email"
-            icon="icon ion-md-mail"
+            icon="email"
             [visible]="currentTab === 'Share tab'"
             (onClick)="showNotification('Sent by email')">
         </dx-speed-dial-action>
         <dx-speed-dial-action
             hint="Share on Facebook"
-            icon="icon ion-logo-facebook"
+            icon="link"
             [visible]="currentTab === 'Share tab'"
             (onClick)="showNotification('Shared on Facebook')">
         </dx-speed-dial-action>
@@ -407,7 +406,7 @@ The following code creates four SpeedDialActions. At launch, only "Edit" appears
 
     config({
         floatingActionButtonConfig: {
-            icon: 'icon ion-md-share',
+            icon: 'share',
             position: {
                 my: 'right bottom',
                 at: 'right bottom',
@@ -448,165 +447,179 @@ The following code creates four SpeedDialActions. At launch, only "Edit" appears
             <!-- TabPanel is configured here -->
             <DxSpeedDialAction
                 hint="Edit"
-                icon="ion ion-md-create"
+                icon="edit"
                 :visible="currentTab === 'Edit tab'"
                 @click="showNotification('Edit is clicked')"
             />
             <DxSpeedDialAction
                 hint="Copy to clipboard"
-                icon="ion ion-md-copy"
+                icon="copy"
                 :visible="currentTab === 'Share tab'"
                 @click="showNotification('Copied to clipboard')"
             />
             <DxSpeedDialAction
                 hint="Send by email"
-                icon="ion ion-md-mail"
+                icon="email"
                 :visible="currentTab === 'Share tab'"
                 @click="showNotification('Sent by email')"
             />
             <DxSpeedDialAction
                 hint="Share on Facebook"
-                icon="ion ion-logo-facebook"
+                icon="link"
                 :visible="currentTab === 'Share tab'"
                 @click="showNotification('Shared on Facebook')"
             />
         </div>
     </template>
 
-    <script>
-    // ...
+    <script setup lang="ts">
+    import { ref } from 'vue';
+    import { DxTabPanel, DxItem } from 'devextreme-vue/tab-panel';
     import DxSpeedDialAction from 'devextreme-vue/speed-dial-action';
-
+    import type { DxTabPanelTypes } from 'devextreme-vue/tab-panel';
+    import type { GlobalConfig } from 'devextreme/common';
+    import type { Properties as ToastProperties } from 'devextreme/ui/toast';
     import notify from 'devextreme/ui/notify';
     import config from 'devextreme/core/config';
+    import type { TabItem } from '../types';
 
-    config({
+    const floatingActionButtonConfig: GlobalConfig = {
         floatingActionButtonConfig: {
-            icon: 'icon ion-md-share',
+            icon: 'share',
             position: {
                 my: 'right bottom',
                 at: 'right bottom',
                 of: '#app-container',
-                offset: '-16 -16'
-            }
-        }
-    });
-
-    export default {
-        components: {
-            // ...
-            DxSpeedDialAction
-        },
-        data() {
-            return {
-                currentTab: 'Edit tab'
-            }
-        },
-        methods: {
-            switchSDAs(e) {
-                this.currentTab = e.addedItems[0].title;
+                offset: '-16 -16',
             },
-            showNotification(message) {
-                notify({
-                    message: message,
-                    position: {
-                        my: 'left bottom',
-                        at: 'left bottom',
-                        of: '#app-container',
-                        offset: '16 -16'
-                    },
-                    minWidth: null,
-                    width: 320 * 0.7
-                }, "info", 1000);
-            }
-        }
-    }
-    </script>
-    <style>
-    /* ... */
-    </style>
+        },
+    };
 
+    config(floatingActionButtonConfig);
+
+    const currentTab = ref<string>('Edit tab');
+
+    const switchSDAs = (e: DxTabPanelTypes.SelectionChangedEvent): void => {
+        const addedItem = e.addedItems[0] as TabItem;
+        currentTab.value = addedItem.title;
+    };
+
+    const showNotification = (message: string): void => {
+        const options: ToastProperties = {
+            message,
+            position: {
+                my: 'left bottom',
+                at: 'left bottom',
+                of: '#app-container',
+                offset: '16 -16',
+            },
+            width: 320 * 0.7,
+            minWidth: 0,
+        };
+        notify(options, 'info', 1000);
+    };
+    </script>
 
 ##### React
 
     <!-- tab: App.js -->
     // ...
+    import { useCallback, useState } from 'react';
+    import TabPanel, { Item } from 'devextreme-react/tab-panel';
     import SpeedDialAction from 'devextreme-react/speed-dial-action';
     import config from 'devextreme/core/config';
+    import type { GlobalConfig } from 'devextreme/common';
     import notify from 'devextreme/ui/notify';
+    import type { TabPanelTypes } from 'devextreme-react/tab-panel';
+    import type { Properties as ToastProperties } from 'devextreme/ui/toast';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            config({
-                floatingActionButtonConfig: {
-                    icon: 'icon ion-md-share',
-                    position: {
-                        my: 'right bottom',
-                        at: 'right bottom',
-                        of: '#app-container',
-                        offset: '-16 -16'
-                    }
-                }
-            });
-            this.state = {
-                currentTab: 'Edit tab'
-            }
-            this.switchSDAs = this.switchSDAs.bind(this);
-        }
+    const globalConfig: GlobalConfig = {
+        floatingActionButtonConfig: {
+            icon: 'share',
+            position: {
+                my: 'right bottom',
+                at: 'right bottom',
+                of: '#app-container',
+                offset: '-16 -16',
+            },
+        },
+    };
 
-        switchSDAs(e) {
-            this.setState({
-                currentTab: e.addedItems[0].title
-            });
-        }
-        
-        render() {
-            return (
-                <div id="app-container">
-                    {/* TabPanel is configured here */}
-                    <SpeedDialAction
-                        hint="Edit"
-                        icon="icon ion-md-create"
-                        visible={this.state.currentTab === 'Edit tab'}
-                        onClick={() => showNotification('Edit is clicked')}
-                    />
-                    <SpeedDialAction
-                        hint="Copy to clipboard"
-                        icon="icon ion-md-copy"
-                        visible={this.state.currentTab === 'Share tab'}
-                        onClick={() => showNotification('Copied to clipboard')}
-                    />
-                    <SpeedDialAction
-                        hint="Send by email"
-                        icon="icon ion-md-mail"
-                        visible={this.state.currentTab === 'Share tab'}
-                        onClick={() => showNotification('Sent by email')}
-                    />
-                    <SpeedDialAction
-                        hint="Share on Facebook"
-                        icon="icon ion-logo-facebook"
-                        visible={this.state.currentTab === 'Share tab'}
-                        onClick={() => showNotification('Shared on Facebook')}
-                    />
-                </div>
-            );
-        }
-    }
+    config(globalConfig);
 
-    function showNotification(message) {
-        notify({
-            message: message,
+    function showNotification(message: string): void {
+        const options: ToastProperties = {
+            message,
             position: {
                 my: 'left bottom',
                 at: 'left bottom',
                 of: '#app-container',
-                offset: '16 -16'
+                offset: '16 -16',
             },
-            minWidth: null,
-            width: 320 * 0.7
-        }, 'info', 1000);
+            width: 320 * 0.7,
+            minWidth: 0,
+        };
+
+        notify(options, 'info', 1000);
     }
+
+    function App(): JSX.Element {
+        const [currentTab, setCurrentTab] = useState<string>('Edit tab');
+
+        const switchSDAs = useCallback(
+            (e: TabPanelTypes.SelectionChangedEvent): void => {
+                setCurrentTab(e.addedItems[0].title);
+            },
+            [],
+        );
+
+        const handleEditClick = useCallback((): void => {
+            showNotification('Edit is clicked');
+        }, []);
+
+        const handleCopyClick = useCallback((): void => {
+            showNotification('Copied to clipboard');
+        }, []);
+
+        const handleMailClick = useCallback((): void => {
+            showNotification('Sent by email');
+        }, []);
+
+        const handleSocialClick = useCallback((): void => {
+            showNotification('Shared on Social Media');
+        }, []);
+
+        return (
+            <div id="app-container">
+                <!-- TabPanel configuration -->
+                <SpeedDialAction
+                    hint="Edit"
+                    icon="edit"
+                    visible={currentTab === 'Edit tab'}
+                    onClick={handleEditClick}
+                />
+                <SpeedDialAction
+                    hint="Copy to clipboard"
+                    icon="copy"
+                    visible={currentTab === 'Share tab'}
+                    onClick={handleCopyClick}
+                />
+                <SpeedDialAction
+                    hint="Send by email"
+                    icon="email"
+                    visible={currentTab === 'Share tab'}
+                    onClick={handleMailClick}
+                />
+                <SpeedDialAction
+                    hint="Share on Social Media"
+                    icon="link"
+                    visible={currentTab === 'Share tab'}
+                    onClick={handleSocialClick}
+                />
+            </div>
+        );
+    }
+
     export default App;
 
 ---

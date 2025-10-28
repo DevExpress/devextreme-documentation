@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a custom load indicator image.
 
 ---
-<!-- Description goes here -->
+Use a .gif image to implement an animated load indicator. When this property is specified, **animationType** has no effect.

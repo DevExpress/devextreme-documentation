@@ -1,10 +1,11 @@
 ---
 id: GridBase.Options.loadPanel.indicatorOptions
 type: LoadPanelIndicatorProperties
+inheritsType: LoadPanelIndicatorProperties
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the load indicator.
 
 ---
 <!-- Description goes here -->

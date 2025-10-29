@@ -7,6 +7,6 @@ To block stored or reflected XSS:
 - Validate each URL.
 - Route image retrieval through a server-side proxy and check returned data.
 - Clean document HTML during save.
-- Render with a restrictive [Content Security Policy (CSP)](/Documentation/Guide/Common/Security_Considerations/#Content_Security_Policy).
+- Render with a restrictive [Content Security Policy (CSP)](/concepts/Common/Security%20Considerations/40%20Content%20Security%20Policy/00%20Content%20Security%20Policy.md '/Documentation/Guide/Common/Security_Considerations/#Content_Security_Policy').
 
 [important] SVG format allows scripts. Apply SVG-aware sanitization or rasterize images on the server before use.

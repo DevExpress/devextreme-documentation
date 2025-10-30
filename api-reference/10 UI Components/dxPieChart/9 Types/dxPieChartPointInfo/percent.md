@@ -1,6 +1,6 @@
 ---
-id: PointInfo.percentText
-type: String
+id: dxPieChartPointInfo.percent
+type: Number
 ---
 ---
 ##### shortDescription

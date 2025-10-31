@@ -5,6 +5,7 @@ export: AttachmentDownloadEvent
 type: Object
 inherits: EventInfo
 references: dxChat.Options.onAttachmentDownload
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

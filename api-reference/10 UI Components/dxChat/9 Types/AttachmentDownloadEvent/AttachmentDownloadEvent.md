@@ -1,5 +1,5 @@
 ---
-id: _ui_chat_AttachmentDownloadEvent
+uid: ui/chat:AttachmentDownloadEvent
 module: ui/chat
 export: AttachmentDownloadEvent
 type: Object

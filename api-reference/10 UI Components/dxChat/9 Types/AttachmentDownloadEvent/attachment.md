@@ -1,5 +1,5 @@
 ---
-id: _ui_chat_AttachmentDownloadEvent.attachment
+uid: ui/chat:AttachmentDownloadEvent.attachment
 type: Attachment
 ---
 ---

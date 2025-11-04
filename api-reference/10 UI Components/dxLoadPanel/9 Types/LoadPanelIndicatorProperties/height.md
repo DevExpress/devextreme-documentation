@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Configures the load indicator height.
+Configures the load indicator's height.
 
 ---
 <!-- Description goes here -->

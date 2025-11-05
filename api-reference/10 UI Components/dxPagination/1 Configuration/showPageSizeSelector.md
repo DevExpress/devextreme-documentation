@@ -9,4 +9,4 @@ Specifies page size selector visibility.
 
 ---
 
-When this property is set to *"auto"*, pagination hides itself if the [pageSize](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#pageSize) value is greater than [itemCount](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#itemCount). To avoid this behavior, set **showPageSizeSelector** to `true`.
+When this property is set to *"auto"*, Pagination hides itself if [pageSize](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#pageSize) is greater than [itemCount](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#itemCount). To avoid this behavior, set **showPageSizeSelector** to `true`.

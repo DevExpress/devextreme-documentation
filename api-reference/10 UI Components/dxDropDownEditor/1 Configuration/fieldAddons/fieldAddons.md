@@ -2,7 +2,6 @@
 id: dxDropDownEditor.Options.fieldAddons
 type: FieldAddons
 default: 
-inheritsType: FieldAddons
 ---
 ---
 ##### shortDescription

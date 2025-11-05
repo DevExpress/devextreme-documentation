@@ -12,7 +12,7 @@ Define this property to ensure Pagination functions properly.
 
 [note]
 
-If the [pageSize](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#pageSize) value is greater than **itemCount**, Pagination hides itself. To avoid this behavior, assign `true` to at least one of the following properties:
+If the [pageSize](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#pageSize) value is greater than **itemCount**, Pagination is hidden. To avoid this behavior, assign `true` to at least one of the following properties:
 
 - [showInfo](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#showInfo)
 - [showNavigationButtons](/Documentation/ApiReference/UI_Components/dxPagination/Configuration/#showNavigationButtons)

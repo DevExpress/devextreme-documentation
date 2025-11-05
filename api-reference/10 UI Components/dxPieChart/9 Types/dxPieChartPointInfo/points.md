@@ -1,5 +1,5 @@
 ---
-id: PointInfo.points
+id: dxPieChartPointInfo.points
 type: PointInfo
 ---
 ---

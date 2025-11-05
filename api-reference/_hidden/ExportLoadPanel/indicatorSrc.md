@@ -6,7 +6,7 @@ dep: ExportLoadPanel.indicatorOptions
 ---
 ---
 ##### shortDescription
-Specifies a URL pointing to an image to be used as a loading indicator.
+Specifies the path to a custom load indicator image.
 
 ---
-<!-- Description goes here -->
+Use a .gif image to implement an animated load indicator.

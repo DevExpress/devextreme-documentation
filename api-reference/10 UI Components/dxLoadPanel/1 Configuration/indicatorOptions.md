@@ -1,10 +1,11 @@
 ---
 id: dxLoadPanel.Options.indicatorOptions
 type: LoadPanelIndicatorProperties
+inheritsType: LoadPanelIndicatorProperties
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the load indicator.
 
 ---
 <!-- Description goes here -->

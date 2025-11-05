@@ -1,6 +1,6 @@
 ---
-id: dxChat.attachmentDownload
-type: eventType
+uid: ui/chat:AttachmentDownloadClickEvent.attachment
+type: Attachment
 ---
 ---
 ##### shortDescription

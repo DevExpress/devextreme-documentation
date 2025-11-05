@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when an attachment is being downloaded.
 
 ---
-<!-- Description goes here -->
+Main article: [onAttachmentDownload](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#onAttachmentDownload)
+
+#####See Also#####
+#include common-link-handleevents

@@ -5,19 +5,19 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed after
 
 ##### param(e): ui/chat:AttachmentDownloadEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.attachment): Attachment
-<!-- Description goes here -->
+The downloaded file attachment.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ---
-<!-- Description goes here -->
+[note] If not specified, “Download” button is not rendered.

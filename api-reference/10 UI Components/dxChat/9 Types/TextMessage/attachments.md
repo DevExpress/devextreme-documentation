@@ -4,7 +4,7 @@ type: Array<Attachment>
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An array of file [attachments](/Documentation/ApiReference/UI_Components/dxChat/Types/Attachment/).
 
 ---
 <!-- Description goes here -->

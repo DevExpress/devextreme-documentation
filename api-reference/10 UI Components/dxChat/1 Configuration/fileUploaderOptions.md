@@ -5,7 +5,14 @@ default: null
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the file uploading options.
 
 ---
-<!-- Description goes here -->
+You can specify most of the [FileUploader properties](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/) in this object except those listed below. These properties are overridden by their Chat counterparts.
+
+- [dialogTrigger]()
+- [showFileList]()
+- [uploadMode]()
+- [rtlEnabled]()
+- [uploadButtonText]()
+- [visible]()

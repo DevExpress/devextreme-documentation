@@ -4,7 +4,7 @@ type: template
 ---
 ---
 ##### shortDescription
-Specifies custom markup on the right of editor input fields.
+A custom markup that displays content to the right of the input field.
 
 ##### param(data): Object
 Data of the selected editor item.

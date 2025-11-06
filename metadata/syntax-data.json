@@ -15565,6 +15565,9 @@
       "react": "DxPieChartPointInfo",
       "vue": "DxPieChartPointInfo"
     },
+    "dxPieChartPointInfo.percentText": {
+      "vue": "percent-text"
+    },
     "dxPieChartSeriesTypes.CommonPieChartSeries.argumentField": {
       "vue": "argument-field"
     },

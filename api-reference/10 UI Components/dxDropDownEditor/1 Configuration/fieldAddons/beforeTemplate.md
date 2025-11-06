@@ -1,5 +1,5 @@
 ---
-id: FieldAddons.beforeTemplate
+id: dxDropDownEditor.Options.fieldAddons.beforeTemplate
 type: template
 ---
 ---

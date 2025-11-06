@@ -1,4 +1,4 @@
-SpeechToText returns transcription results in the [onResult]() handler. Final transcriptions are nested within the **onResult** parameter (a [ResultEvent]() object). To access final transcriptions, implement the following code:
+SpeechToText returns transcription results in the [onResult](/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/#onResult) handler. Final transcriptions are nested within the **onResult** parameter (a [ResultEvent](/Documentation/ApiReference/UI_Components/dxSpeechToText/Types/ResultEvent/) object). To access final transcriptions, implement the following code:
 
     onResult(e) {
         const resultText = Object.values(e.event.results)
@@ -6,7 +6,7 @@ SpeechToText returns transcription results in the [onResult]() handler. Final tr
             .join(' ');
     },
 
-To integrate the component with a text input (for instance, DevExtreme [TextArea]()), update the input's value in **onResult** as follows:
+To integrate the component with a text input (for instance, DevExtreme [TextArea](/Documentation/Guide/UI_Components/TextArea/Getting_Started_with_TextArea/)), update the input's value in **onResult**:
 
 ---
 

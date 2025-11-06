@@ -1,4 +1,4 @@
-SpeechToText returns [Web Speech API errors](https://webaudio.github.io/web-speech-api/#speechreco-error) in the [onError]() handler. Error codes are nested within the **onError** parameter (an [ErrorEvent]() object). To display these errors to users, you can implement the [notify]() utility method:
+SpeechToText returns [Web Speech API errors](https://webaudio.github.io/web-speech-api/#speechreco-error) in the [onError](/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/#onError) handler. Error codes are nested within the **onError** parameter (an [ErrorEvent](/Documentation/ApiReference/UI_Components/dxSpeechToText/Types/ErrorEvent/) object). To display these errors to users, you can implement the [notify](/Documentation/ApiReference/Common/Utils/ui/#notifymessage_stack) utility method:
 
 ---
 

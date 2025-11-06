@@ -1,5 +1,5 @@
 - **Text Editor Integration**    
-You can integrate the SpeechToText component with any text input, including other [DevExtreme Components](/Documentation/Guide/{Framework}_Components/DevExtreme_{Framework}_Components/).
+You can use SpeechToText with any text input, including other [DevExtreme Components](/Documentation/Guide/{Framework}_Components/DevExtreme_{Framework}_Components/).
 
 - **Language and Localization Support**    
 SpeechToText implements the [Web Speech API SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition) interface, which supports transcription in multiple languages, including English, Spanish, Hindi, Portuguese, and others. [Supported languages](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition/lang) may vary depending on the browser.

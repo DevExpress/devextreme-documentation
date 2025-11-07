@@ -1,8 +1,8 @@
-[Add DevExtreme to your {Framework} application](/Documentation/Guide/{framework}_Components/Add_DevExtreme_to_a_{framework}_Application/) and use the following code to create a SpeechToText:
-
 ---
 
 ##### jQuery
+
+[Add DevExtreme to your jQuery application](/Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/) and use the following code to create a SpeechToText:
 
     <!-- tab: index.js -->
     $(function() {
@@ -24,6 +24,8 @@
     </html>
 
 ##### Angular
+
+[Add DevExtreme to your Angular application](/Documentation/Guide/Angular_Components/Add_DevExtreme_to_a_Angular_Application/) and use the following code to create a SpeechToText:
 
     <!-- tab: app.component.html -->
     <dx-speech-to-text></dx-speech-to-text>
@@ -63,6 +65,8 @@
 
 ##### Vue
 
+[Add DevExtreme to your Vue application](/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/) and use the following code to create a SpeechToText:
+
     <!-- tab: App.vue -->
     <script setup lang="ts">
     import { DxSpeechToText, type DxSpeechToTextTypes } from 'devextreme-vue/speech-to-text';
@@ -74,6 +78,8 @@
     </template>
 
 ##### React
+
+[Add DevExtreme to your React application](/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/) and use the following code to create a SpeechToText:
 
     <!-- tab: App.tsx -->
     import React, { JSX, useState } from 'react';

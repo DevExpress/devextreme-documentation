@@ -25,7 +25,7 @@
 
 ##### Angular
 
-[Add DevExtreme to your Angular application](/Documentation/Guide/Angular_Components/Add_DevExtreme_to_an_Angular_Application/) and use the following code to create a SpeechToText:
+[Add DevExtreme to your Angular application](/Documentation/Guide/Angular_Components/Add_DevExtreme_to_an_Angular_CLI_Application/) and use the following code to create a SpeechToText:
 
     <!-- tab: app.component.html -->
     <dx-speech-to-text></dx-speech-to-text>
@@ -71,7 +71,7 @@
     <template>
         <DxSpeechToText />
     </template>
-    
+
     <script setup lang="ts">
     import { DxSpeechToText, type DxSpeechToTextTypes } from 'devextreme-vue/speech-to-text';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';

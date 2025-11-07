@@ -1,14 +1,14 @@
 ---
 id: dxDropDownEditor.Options.fieldAddons
 type: FieldAddons
-default: 
+default: null
 ---
 ---
 ##### shortDescription
 Specifies {WidgetName} input field addons.
 
 ---
-Field addons are custom markup containers that you can add to either side of the {WidgetName} input field. The component arranges visual elements in the following order: [beforeTemplate]({basewidgetpath}/Configuration/fieldAddons/#beforeTemplate), {WidgetName} input, [afterTemplate]({basewidgetpath}/Configuration/fieldAddons/#afterTemplate).
+Field addons are custom markup containers that you can add to either side of the {WidgetName} input field. The component arranges visual elements in the following order: [beforeTemplate](/api-reference/10%20UI%20Components/dxDropDownEditor/1%20Configuration/fieldAddons/beforeTemplate.md '{basewidgetpath}/Configuration/fieldAddons/#beforeTemplate'), {WidgetName} input, [afterTemplate](/api-reference/10%20UI%20Components/dxDropDownEditor/1%20Configuration/fieldAddons/afterTemplate.md '{basewidgetpath}/Configuration/fieldAddons/#afterTemplate').
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: dxSelectBox.Options.fieldAddons
 type: FieldAddons
-default: 
+default: null
 inheritsType: FieldAddons
 ---
 ---
@@ -9,7 +9,7 @@ inheritsType: FieldAddons
 Specifies {WidgetName} input field addons.
 
 ---
-Field addons are custom markup containers that you can add to either side of the {WidgetName} input field. The component arranges visual elements in the following order: [beforeTemplate]({basewidgetpath}/Configuration/fieldAddons/#beforeTemplate), {WidgetName} input, [afterTemplate]({basewidgetpath}/Configuration/fieldAddons/#afterTemplate).
+Field addons are custom markup containers that you can add to either side of the {WidgetName} input field. The component arranges visual elements in the following order: [beforeTemplate](/api-reference/40%20Common%20Types/FieldAddons/beforeTemplate.md '{basewidgetpath}/Configuration/fieldAddons/#beforeTemplate'), {WidgetName} input, [afterTemplate](/api-reference/40%20Common%20Types/FieldAddons/afterTemplate.md '{basewidgetpath}/Configuration/fieldAddons/#afterTemplate').
 
 ---
 

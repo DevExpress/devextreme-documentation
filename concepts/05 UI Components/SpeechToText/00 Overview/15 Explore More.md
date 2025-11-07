@@ -1,4 +1,4 @@
-- [Getting Started with SpeechToText](/Documentation/Guide/UI_Components/TagBox/Getting_Started_with_SpeechToText/)
+- [Getting Started with SpeechToText](/Documentation/Guide/UI_Components/SpeechToText/Getting_Started_with_SpeechToText/)
 
 - [API](/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/)
 

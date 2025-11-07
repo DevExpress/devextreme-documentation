@@ -1,4 +1,4 @@
-[important] [DevExtreme v25.1](https://js.devexpress.com/New/25_1/) is now available. Explore our newest features/capabilities.
+[important] [DevExtreme v25.1](https://www.devexpress.com/subscriptions/new-2025-1.xml) is now available. Explore our newest features/capabilities.
 
 [note]
 

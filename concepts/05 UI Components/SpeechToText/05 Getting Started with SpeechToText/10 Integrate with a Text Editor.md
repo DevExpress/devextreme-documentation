@@ -60,6 +60,16 @@ To integrate the component with a text input (for instance, DevExtreme [TextArea
 ##### Vue
 
     <!-- tab: App.vue -->
+    <template>
+        <DxSpeechToText
+            @result="handleResult"
+        />
+        <DxTextArea
+            placeholder="Transcribed text will appear here..."
+            v-model:value="textAreaValue"
+        />
+    </template>
+    
     <script setup lang="ts">
     import { ref } from 'vue';
     import { DxSpeechToText, type DxSpeechToTextTypes } from 'devextreme-vue/speech-to-text';
@@ -76,15 +86,6 @@ To integrate the component with a text input (for instance, DevExtreme [TextArea
     }
 
     </script>
-    <template>
-        <DxSpeechToText
-            @result="handleResult"
-        />
-        <DxTextArea
-            placeholder="Transcribed text will appear here..."
-            v-model:value="textAreaValue"
-        />
-    </template>
 
 ##### React
 

@@ -36,6 +36,13 @@ To configure **SpeechRecognition** options, define the [speechRecognitionConfig]
 ##### Vue
 
     <!-- tab: App.vue -->
+    <template>
+        <DxSpeechToText ...
+            :speech-recognition-config="speechRecognitionConfig"
+        />
+        <!-- ... -->
+    </template>
+
     <script setup lang="ts">
     import { ref } from 'vue';
     import { DxSpeechToText, type DxSpeechToTextTypes } from 'devextreme-vue/speech-to-text';
@@ -46,12 +53,6 @@ To configure **SpeechRecognition** options, define the [speechRecognitionConfig]
     const speechRecognitionConfig = { continuous: true };
 
     </script>
-    <template>
-        <DxSpeechToText ...
-            :speech-recognition-config="speechRecognitionConfig"
-        />
-        <!-- ... -->
-    </template>
 
 ##### React
 

@@ -83,6 +83,13 @@ This example implements an `if` statement to display a unique message for `not-a
 ##### Vue
 
     <!-- tab: App.vue -->
+    <template>
+        <DxSpeechToText ...
+            @error="handleError"
+        />
+        <!-- ... -->
+    </template>
+
     <script setup lang="ts">
     import { ref } from 'vue';
     import { DxSpeechToText, type DxSpeechToTextTypes } from 'devextreme-vue/speech-to-text';
@@ -99,12 +106,6 @@ This example implements an `if` statement to display a unique message for `not-a
     }
 
     </script>
-    <template>
-        <DxSpeechToText ...
-            @error="handleError"
-        />
-        <!-- ... -->
-    </template>
 
 ##### React
 

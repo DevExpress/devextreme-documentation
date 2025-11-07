@@ -25,7 +25,7 @@
 
 ##### Angular
 
-[Add DevExtreme to your Angular application](/Documentation/Guide/Angular_Components/Add_DevExtreme_to_an_Angular_CLI_Application/) and use the following code to create a SpeechToText:
+[Add DevExtreme to your Angular application](/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/) and use the following code to create a SpeechToText:
 
     <!-- tab: app.component.html -->
     <dx-speech-to-text></dx-speech-to-text>

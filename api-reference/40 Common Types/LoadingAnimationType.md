@@ -6,7 +6,7 @@ references: dxLoadIndicator.Options.animationType|LoadPanelIndicatorProperties.a
 ---
 ---
 ##### shortDescription
-Specifies the loading animation type.
+Chooses between predefined load indicator animations.
 
 ---
 <!-- Description goes here -->

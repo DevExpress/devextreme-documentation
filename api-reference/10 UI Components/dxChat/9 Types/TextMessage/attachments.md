@@ -1,6 +1,6 @@
 ---
-id: PointInfo.percentText
-type: String
+id: TextMessage.attachments
+type: Array<Attachment>
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,5 @@
 ---
-id: PointInfo.percent
+id: dxPieChartPointInfo.percent
 type: Number
 ---
 ---

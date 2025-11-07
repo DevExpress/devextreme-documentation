@@ -1,7 +1,6 @@
 ---
-id: dxDropDownEditor.Options.fieldAddons
-type: FieldAddons
-default: null
+id: dxPieChartPointInfo.percentText
+type: String
 ---
 ---
 ##### shortDescription

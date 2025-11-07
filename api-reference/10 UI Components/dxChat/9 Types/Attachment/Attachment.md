@@ -1,5 +1,8 @@
 ---
-id: PointInfo
+id: Attachment
+module: ui/chat
+export: Attachment
+type: Object
 generateTypeLink: 
 ---
 ---

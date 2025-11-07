@@ -1,6 +1,6 @@
 ---
-id: PointInfo.points
-type: PointInfo
+id: dxChat.attachmentDownloadClick
+type: eventType
 ---
 ---
 ##### shortDescription

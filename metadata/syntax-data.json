@@ -471,6 +471,16 @@
     "_ui_card_view_SelectionChangedEvent.selectedCardsData": {
       "vue": "selected-cards-data"
     },
+    "_ui_chat_AttachmentDownloadClickEvent": {
+      "angular": "dxo-ui-chat--attachment-download-click-event",
+      "react": "_ui_chat_AttachmentDownloadClickEvent",
+      "vue": "Dx_ui_chat_AttachmentDownloadClickEvent"
+    },
+    "_ui_chat_AttachmentDownloadClickEvent.attachment": {
+      "angular": "dxo-attachment",
+      "react": "Attachment",
+      "vue": "DxAttachment"
+    },
     "_ui_chat_DisposingEvent": {
       "angular": "dxo-ui-chat--disposing-event",
       "react": "_ui_chat_DisposingEvent",
@@ -6135,6 +6145,11 @@
     "asyncRule.validationCallback": {
       "vue": "validation-callback"
     },
+    "attachment": {
+      "angular": "dxo-attachment",
+      "react": "Attachment",
+      "vue": "DxAttachment"
+    },
     "barGaugeBarInfo": {
       "angular": "dxo-bar-gauge-bar-info",
       "react": "BarGaugeBarInfo",
@@ -10227,6 +10242,9 @@
     "dxChatOptions.emptyViewTemplate": {
       "vue": "empty-view-template"
     },
+    "dxChatOptions.fileUploaderOptions": {
+      "vue": "file-uploader-options"
+    },
     "dxChatOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"
     },
@@ -10245,6 +10263,9 @@
       "angular": "dxo-message-timestamp-format",
       "react": "MessageTimestampFormat",
       "vue": "DxMessageTimestampFormat"
+    },
+    "dxChatOptions.onAttachmentDownloadClick": {
+      "vue": "@attachment-download-click"
     },
     "dxChatOptions.onContentReady": {
       "vue": "@content-ready"
@@ -15544,6 +15565,9 @@
       "react": "DxPieChartPointInfo",
       "vue": "DxPieChartPointInfo"
     },
+    "dxPieChartPointInfo.percentText": {
+      "vue": "percent-text"
+    },
     "dxPieChartSeriesTypes.CommonPieChartSeries.argumentField": {
       "vue": "argument-field"
     },
@@ -17989,6 +18013,9 @@
       "angular": "dxo-form",
       "react": "Form",
       "vue": "DxForm"
+    },
+    "dxSchedulerOptions.editing.form.iconsShowMode": {
+      "vue": "icons-show-mode"
     },
     "dxSchedulerOptions.editing.form.items": {
       "angular": "dxi-item",
@@ -20910,6 +20937,9 @@
     "enums.ApplyValueMode": {
       "vue": "apply-value-mode"
     },
+    "enums.AppointmentFormIconsShowMode": {
+      "vue": "appointment-form-icons-show-mode"
+    },
     "enums.ArgumentAxisHoverMode": {
       "vue": "argument-axis-hover-mode"
     },
@@ -23253,6 +23283,11 @@
       "angular": "dxo-text-message",
       "react": "TextMessage",
       "vue": "DxTextMessage"
+    },
+    "textMessage.attachments": {
+      "angular": "dxi-attachment",
+      "react": "Attachment",
+      "vue": "DxAttachment"
     },
     "textMessage.isEdited": {
       "vue": "is-edited"

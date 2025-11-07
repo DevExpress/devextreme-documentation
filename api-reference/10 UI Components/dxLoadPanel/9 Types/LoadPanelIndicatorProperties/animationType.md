@@ -5,7 +5,10 @@ default: 'circle'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Chooses between predefined load indicator animations.
 
 ---
-<!-- Description goes here -->
+
+{WidgetName} ships with two predefined load animations: circle and sparkle. To implement a custom load animation, specify a .gif image in the **src** property.
+
+[note] When **src** is specified, **animationType** has no effect.

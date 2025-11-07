@@ -1,5 +1,26 @@
+---
+
+##### jQuery
+
 - **Text Editor Integration**    
-You can use SpeechToText with any text input, including other [DevExtreme Components](/Documentation/Guide/{Framework}_Components/DevExtreme_{Framework}_Components/).
+You can use SpeechToText with any text input, including other [DevExtreme Components](/Documentation/Guide/jQuery_Components/DevExtreme_jQuery_Components/).
+
+##### Angular
+
+- **Text Editor Integration**    
+You can use SpeechToText with any text input, including other [DevExtreme Components](/Documentation/Guide/Angular_Components/DevExtreme_Angular_Components/).
+
+##### Vue
+
+- **Text Editor Integration**    
+You can use SpeechToText with any text input, including other [DevExtreme Components](/Documentation/Guide/Vue_Components/DevExtreme_Vue_Components/).
+
+##### React
+
+- **Text Editor Integration**    
+You can use SpeechToText with any text input, including other [DevExtreme Components](/Documentation/Guide/React_Components/DevExtreme_React_Components/).
+
+---
 
 - **Language and Localization Support**    
 SpeechToText implements the [Web Speech API SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition) interface, which supports transcription in multiple languages, including English, Spanish, Hindi, Portuguese, and others. [Supported languages](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition/lang) may vary depending on the browser.

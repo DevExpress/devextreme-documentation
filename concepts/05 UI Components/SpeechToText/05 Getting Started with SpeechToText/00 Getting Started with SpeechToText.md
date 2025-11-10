@@ -3,7 +3,7 @@
 This tutorial guides you through the following steps: 
 
 - Add a SpeechToText to a page.
-- Integrate SpeechToText with a text editor ([TextArea](/Documentation/Guide/UI_Components/TextArea/Getting_Started_with_TextArea/)).
+- Integrate SpeechToText with a text editor ([TextArea](/concepts/05%20UI%20Components/TextArea/00%20Getting%20Started%20with%20TextArea '/Documentation/Guide/UI_Components/TextArea/Getting_Started_with_TextArea/')).
 - Handle transcription errors.
 - Customize [SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition) options.
 

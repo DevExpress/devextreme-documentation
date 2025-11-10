@@ -1,4 +1,4 @@
-To configure **SpeechRecognition** options, define the [speechRecognitionConfig](/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/speechRecognitionConfig/) object. This example enables continuous recognition (transcription continues after speech ends):
+To configure **SpeechRecognition** options, define the [speechRecognitionConfig](/api-reference/10%20UI%20Components/dxSpeechToText/1%20Configuration/speechRecognitionConfig.md '/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/speechRecognitionConfig/') object. This example enables continuous recognition (transcription continues after speech ends):
 
 ---
 

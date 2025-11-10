@@ -1,4 +1,4 @@
-SpeechToText returns transcription results in the [onResult](/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/#onResult) handler. Final transcriptions are nested within the **onResult** parameter (a [ResultEvent](/Documentation/ApiReference/UI_Components/dxSpeechToText/Types/ResultEvent/) object). To access final transcriptions, implement the following code:
+SpeechToText returns transcription results in the [onResult](/api-reference/10%20UI%20Components/dxSpeechToText/1%20Configuration/onResult.md '/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/#onResult') handler. Final transcriptions are nested within the **onResult** parameter (a [ResultEvent](/api-reference/10%20UI%20Components/dxSpeechToText/9%20Types/ResultEvent '/Documentation/ApiReference/UI_Components/dxSpeechToText/Types/ResultEvent/') object). To access final transcriptions, implement the following code:
 
     onResult(e) {
         const resultText = Object.values(e.event.results)
@@ -6,7 +6,7 @@ SpeechToText returns transcription results in the [onResult](/Documentation/ApiR
             .join(' ');
     },
 
-To integrate the component with a text input (for instance, DevExtreme [TextArea](/Documentation/Guide/UI_Components/TextArea/Getting_Started_with_TextArea/)), update the input's value in **onResult**:
+To integrate the component with a text input (for instance, DevExtreme [TextArea](/concepts/05%20UI%20Components/TextArea/00%20Getting%20Started%20with%20TextArea '/Documentation/Guide/UI_Components/TextArea/Getting_Started_with_TextArea/')), update the input's value in **onResult**:
 
 ---
 

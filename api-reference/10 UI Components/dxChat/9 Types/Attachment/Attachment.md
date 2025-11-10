@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A configuration object for a file attachment.
 
 ---
 <!-- Description goes here -->

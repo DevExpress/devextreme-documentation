@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the file size in bytes.
 
 ---
 <!-- Description goes here -->

@@ -1,3 +1,0 @@
-TBA
-
-[tags] angular

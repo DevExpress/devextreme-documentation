@@ -34,9 +34,7 @@ Field addons are custom markup containers that you can add to either side of the
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-{widget-name}
-        [fieldAddons]="fieldAddons"
-    >
+    <dx-{widget-name} ... >
         <dxo-{widget-name}-field-addons
             beforeTemplate="before{WidgetName}"
             afterTemplate="after{WidgetName}"
@@ -58,9 +56,7 @@ Field addons are custom markup containers that you can add to either side of the
     </script>
 
     <template>
-        <Dx{WidgetName}
-            :field-addons="fieldAddons"
-        >
+        <Dx{WidgetName} ... >
             <DxFieldAddons
                 before-template="before{WidgetName}"
                 after-template="after{WidgetName}"
@@ -93,7 +89,7 @@ Field addons are custom markup containers that you can add to either side of the
 
     function App() {
         return (
-            <{WidgetName}>
+            <{WidgetName} ... >
                 <FieldAddons
                     beforeRender={before{WidgetName}Render}
                     afterRender={after{WidgetName}Render}

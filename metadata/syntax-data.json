@@ -18028,6 +18028,11 @@
     "dxSchedulerOptions.editing.form.onSaved": {
       "vue": "@saved"
     },
+    "dxSchedulerOptions.editing.popup": {
+      "angular": "dxo-popup",
+      "react": "Popup",
+      "vue": "DxPopup"
+    },
     "dxSchedulerOptions.endDateExpr": {
       "vue": "end-date-expr"
     },

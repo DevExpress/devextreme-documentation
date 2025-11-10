@@ -1,5 +1,5 @@
 ---
-id: dxChat.attachmentDownloadClick
+id: dxChat.attachmentDownload
 type: eventType
 ---
 ---

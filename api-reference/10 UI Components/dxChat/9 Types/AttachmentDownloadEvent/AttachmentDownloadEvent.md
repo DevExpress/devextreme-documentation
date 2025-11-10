@@ -1,10 +1,10 @@
 ---
-uid: ui/chat:AttachmentDownloadClickEvent
+uid: ui/chat:AttachmentDownloadEvent
 module: ui/chat
-export: AttachmentDownloadClickEvent
+export: AttachmentDownloadEvent
 type: Object
 inherits: EventInfo
-references: dxChat.Options.onAttachmentDownloadClick
+references: dxChat.Options.onAttachmentDownload
 generateTypeLink: 
 ---
 ---

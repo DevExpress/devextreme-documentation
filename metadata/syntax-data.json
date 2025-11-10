@@ -471,12 +471,12 @@
     "_ui_card_view_SelectionChangedEvent.selectedCardsData": {
       "vue": "selected-cards-data"
     },
-    "_ui_chat_AttachmentDownloadClickEvent": {
-      "angular": "dxo-ui-chat--attachment-download-click-event",
-      "react": "_ui_chat_AttachmentDownloadClickEvent",
-      "vue": "Dx_ui_chat_AttachmentDownloadClickEvent"
+    "_ui_chat_AttachmentDownloadEvent": {
+      "angular": "dxo-ui-chat--attachment-download-event",
+      "react": "_ui_chat_AttachmentDownloadEvent",
+      "vue": "Dx_ui_chat_AttachmentDownloadEvent"
     },
-    "_ui_chat_AttachmentDownloadClickEvent.attachment": {
+    "_ui_chat_AttachmentDownloadEvent.attachment": {
       "angular": "dxo-attachment",
       "react": "Attachment",
       "vue": "DxAttachment"
@@ -10264,8 +10264,8 @@
       "react": "MessageTimestampFormat",
       "vue": "DxMessageTimestampFormat"
     },
-    "dxChatOptions.onAttachmentDownloadClick": {
-      "vue": "@attachment-download-click"
+    "dxChatOptions.onAttachmentDownload": {
+      "vue": "@attachment-download"
     },
     "dxChatOptions.onContentReady": {
       "vue": "@content-ready"
@@ -15565,9 +15565,6 @@
       "react": "DxPieChartPointInfo",
       "vue": "DxPieChartPointInfo"
     },
-    "dxPieChartPointInfo.percentText": {
-      "vue": "percent-text"
-    },
     "dxPieChartSeriesTypes.CommonPieChartSeries.argumentField": {
       "vue": "argument-field"
     },
@@ -18027,11 +18024,6 @@
     },
     "dxSchedulerOptions.editing.form.onSaved": {
       "vue": "@saved"
-    },
-    "dxSchedulerOptions.editing.popup": {
-      "angular": "dxo-popup",
-      "react": "Popup",
-      "vue": "DxPopup"
     },
     "dxSchedulerOptions.endDateExpr": {
       "vue": "end-date-expr"

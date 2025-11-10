@@ -1,5 +1,5 @@
 ---
-id: dxChat.Options.onAttachmentDownload
+id: dxChat.Options.onAttachmentDownloadClick
 type: function(e) | undefined
 default: undefined
 ---
@@ -7,7 +7,7 @@ default: undefined
 ##### shortDescription
 A function that is executed after
 
-##### param(e): ui/chat:AttachmentDownloadEvent
+##### param(e): ui/chat:AttachmentDownloadClickEvent
 Information about the event.
 
 ##### field(e.attachment): Attachment

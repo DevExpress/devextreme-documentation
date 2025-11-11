@@ -45,7 +45,7 @@ To define resource kinds, assign an array of objects specifying them to the [res
                         paginate: false
                     }),
                     fieldExpr: "roomId",        // "roomId" is the data field in an appointment object that binds it to the resource
-                    label: "Room"               // Label displayed for this resource kind in the appointment details form
+                    label: "Room"               // Label displayed for this resource kind in the appointment edit form
                 },
                 // Definition of the second resource kind
                 {
@@ -118,7 +118,7 @@ To define resource kinds, assign an array of objects specifying them to the [res
         <!-- Definition of the first resource kind -->
         <dxi-resource
             fieldExpr="roomId"      <!-- "roomId" is the data field in an appointment object that binds it to the resource -->
-            label="Room"            <!-- Label displayed for this resource kind in the appointment details form -->
+            label="Room"            <!-- Label displayed for this resource kind in the appointment edit form -->
             [dataSource]="rooms">
         </dxi-resource>
 
@@ -141,7 +141,7 @@ To define resource kinds, assign an array of objects specifying them to the [res
             <!-- Definition of the first resource kind -->
             <DxResource
                 field-expr="roomId"      <!-- "roomId" is the data field in an appointment object that binds it to the resource -->
-                label="Room"             <!-- Label displayed for this resource kind in the appointment details form -->
+                label="Room"             <!-- Label displayed for this resource kind in the appointment edit form -->
                 :data-source="rooms" />
 
             <!-- Definition of the second resource kind -->
@@ -249,7 +249,7 @@ To define resource kinds, assign an array of objects specifying them to the [res
                     {/* Definition of the first resource kind */}
                     <Resource
                         fieldExpr='roomId'      {/* 'roomId' is the data field in an appointment object that binds it to the resource */}
-                        label='Room'            {/* Label displayed for this resource kind in the appointment details form */}
+                        label='Room'            {/* Label displayed for this resource kind in the appointment edit form */}
                         dataSource={rooms} />
 
                     {/* Definition of the second resource kind */}

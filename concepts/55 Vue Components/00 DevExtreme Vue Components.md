@@ -2,7 +2,7 @@ The DevExtreme Vue UI Component Suite offers 80+ responsive, touch-enabled UI co
 
 ## Explore All 80+ Vue Components
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/25_2/ComponentList/index.html, /Content/Applications/25_2/ComponentList/index.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/25_2/ComponentList/index.html, /Content/Applications/25_2/ComponentList/index.css" style="border-radius: 16px"></div>
 
 ## Try DevExtreme Components in Your Project
 

@@ -1,7 +1,7 @@
 To add an appointment, a user follows the steps listed below.
 
 1. Clicks a cell in the timetable to set focus on it.
-2. Clicks the focused cell once again. The appointment details form will be shown.
+2. Clicks the focused cell once again. The appointment edit form will be shown.
 3. In the form, specifies required fields and clicks the *"Done"* button. This will create an appointment and add it to the [data source](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource').
 
 <div>

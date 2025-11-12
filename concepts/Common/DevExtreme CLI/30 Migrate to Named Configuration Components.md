@@ -36,6 +36,8 @@ To perform the migration to named configuration components, run `devextreme migr
     // If DevExtreme CLI is not installed
     npx devextreme-cli migrate angular-config-components
 
+<img src="/images/DevExtremeCLI/devextreme-cli-migrate-terminal.png" alt="A terminal window that displays the output of two commands, including a DevExtreme CLI command."></img>
+
 You can add the `--dry` argument to preview changes before upgrading:
 
     // If DevExtreme CLI is installed (in your project or global node_modules)

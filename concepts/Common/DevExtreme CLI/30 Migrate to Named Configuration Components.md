@@ -20,7 +20,7 @@ The following code snippet demonstrates named and generic configuration componen
 
 [/note]
 
-To upgrade your Angular application to named configuration components, you can use DevExtreme CLI. The `migrate` command uses our DevExtreme Schematics package to perform the upgrade. DevExtreme CLI installs this package in the NPM cache when you run `migrate`. You can also install the package manually in your project or global `node_modules`:
+To upgrade your Angular application to named configuration components, you can use the following DevExtreme CLI command: `devextreme migrate`. Note that this command requires our DevExtreme Schematics package. DevExtreme CLI installs this package in the NPM cache when you run `migrate`. You can also install the package manually to your project or global `node_modules`:
 
     // Project install
     npm i devextreme-schematics --save-dev
@@ -28,7 +28,7 @@ To upgrade your Angular application to named configuration components, you can u
     // Global install
     npm i -g devextreme-schematics
 
-To perform the migration to named configuration components, run `devextreme migrate angular-config-components` in your project root:
+To upgrade your application to named configuration components, run the command in your project root:
 
     // If DevExtreme CLI is installed (in your project or global node_modules)
     devextreme migrate angular-config-components
@@ -46,7 +46,7 @@ You can add the `--dry` argument to preview changes before upgrading:
     // If DevExtreme CLI is not installed
     npx devextreme-cli migrate angular-config-components --dry
 
-This command can upgrade generic configuration components in both external templates (.html files) and inline templates (defined within `@Component({})` class decorators). To perform inline template migration, DevExtreme CLI requires the TypeScript package. You can install this package in your project folder or in the global `node_modules`:
+This command can upgrade generic configuration components in both external templates (.html files) and inline templates (defined within `@Component({})` class decorators). Inline template migration requires the TypeScript package. You can install this package to your project folder or the global `node_modules`:
 
     // Project install
     npm i typescript --save-dev
@@ -54,7 +54,7 @@ This command can upgrade generic configuration components in both external templ
     // Global install
     npm i -g typescript
 
-DevExtreme CLI can also install TypeScript temporarily to perform inline template migration. This saves the package in the NPM cache.
+DevExtreme CLI can also install TypeScript temporarily (to the NPM cache).
 
 If your application does not use inline templates, you can specify an empty `--script-include` value ('' or []) to skip inline template migration:
 

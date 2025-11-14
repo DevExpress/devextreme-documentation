@@ -1,4 +1,4 @@
-DevExtreme Angular v24.2 introduced named configuration components. These are strictly typed and specific to each UI component. Strict typing allows code completion and hinting systems to suggest only valid configurations and detect invalid usage.
+DevExtreme Angular v24.2 introduced named configuration components. They are strictly typed and specific to their parent UI component. Strict typing allows code completion and hinting systems to suggest only valid configurations and detect invalid usage.
 
 The following code snippet demonstrates named and generic configuration components:
 
@@ -16,7 +16,7 @@ The following code snippet demonstrates named and generic configuration componen
 [note]
 
 - We recommend upgrading to named configuration components to improve your development experience.
-- Starting with v25.2, a warning is displayed in the console if you use generic configuration components.
+- DevExtreme v25.2+ displays warnings in the console if you use generic configuration components.
 
 [/note]
 
@@ -56,7 +56,7 @@ This command can upgrade generic configuration components in both external templ
 
 DevExtreme CLI can also install TypeScript temporarily (to the NPM cache).
 
-If your application does not use inline templates, you can specify an empty `--script-include` value ('' or []) to skip inline template migration:
+If your application does not use inline templates, you can instruct the command to skip script files to speed up migration. Specify an empty `--script-include` value ('' or []):
 
     npm devextreme migrate angular-config-components --script-include=''
     // ===== or =====

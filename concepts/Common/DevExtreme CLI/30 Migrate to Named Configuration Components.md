@@ -20,7 +20,7 @@ The following code snippet demonstrates named and generic configuration componen
 
 [/note]
 
-To upgrade your Angular application to named configuration components, you can use the following DevExtreme CLI command: `devextreme migrate`. Note that this command requires our DevExtreme Schematics package. DevExtreme CLI installs this package in the NPM cache when you run `migrate`. You can also install the package manually to your project or global `node_modules`:
+To upgrade your Angular application to named configuration components, use the following DevExtreme CLI command: `devextreme migrate`. Note that this command requires our DevExtreme Schematics package. DevExtreme CLI installs this package in the NPM cache when you run `migrate`. You can also install the package to your project or global `node_modules`:
 
     // Project install
     npm i devextreme-schematics --save-dev

@@ -4,6 +4,7 @@ module: common/grids
 export: AIColumnRequestCreatingInfo
 type: Object
 generateTypeLink: 
+hidden: 
 ---
 ---
 ##### shortDescription

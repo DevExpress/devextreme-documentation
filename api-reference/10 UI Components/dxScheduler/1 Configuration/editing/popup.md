@@ -4,7 +4,7 @@ type: dxPopup_Options
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the [Popup](/Documentation/Guide/UI_Components/Popup/Overview/) component that contains the Scheduler appointment edit form.
 
 ---
-<!-- Description goes here -->
+Specify DevExtreme [Popup](/Documentation/Guide/UI_Components/Popup/Overview/) configuration options to customize the appointment edit form.

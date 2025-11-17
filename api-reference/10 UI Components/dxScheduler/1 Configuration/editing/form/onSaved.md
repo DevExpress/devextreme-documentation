@@ -5,10 +5,10 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed when users confirm their changes in the appointment edit form.
 
 ##### param(formData): Object
-<!-- Description goes here -->
+Details of the modified appointment.
 
 ---
 <!-- Description goes here -->

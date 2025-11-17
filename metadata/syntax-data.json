@@ -751,11 +751,6 @@
       "react": "_ui_data_grid_AIColumnRequestCreatingEvent",
       "vue": "Dx_ui_data_grid_AIColumnRequestCreatingEvent"
     },
-    "_ui_data_grid_AIColumnResponseReceivedEvent": {
-      "angular": "dxo-ui-data-grid--a-i-column-response-received-event",
-      "react": "_ui_data_grid_AIColumnResponseReceivedEvent",
-      "vue": "Dx_ui_data_grid_AIColumnResponseReceivedEvent"
-    },
     "_ui_data_grid_CellClickEvent": {
       "angular": "dxo-ui-data-grid--cell-click-event",
       "react": "_ui_data_grid_CellClickEvent",
@@ -4536,11 +4531,6 @@
       "react": "_ui_tree_list_AIColumnRequestCreatingEvent",
       "vue": "Dx_ui_tree_list_AIColumnRequestCreatingEvent"
     },
-    "_ui_tree_list_AIColumnResponseReceivedEvent": {
-      "angular": "dxo-ui-tree-list--a-i-column-response-received-event",
-      "react": "_ui_tree_list_AIColumnResponseReceivedEvent",
-      "vue": "Dx_ui_tree_list_AIColumnResponseReceivedEvent"
-    },
     "_ui_tree_list_CellClickEvent": {
       "angular": "dxo-ui-tree-list--cell-click-event",
       "react": "_ui_tree_list_CellClickEvent",
@@ -6036,16 +6026,6 @@
     },
     "aiColumnRequestCreatingInfo.useCache": {
       "vue": "use-cache"
-    },
-    "aiColumnResponseReceivedInfo.additionalInfo": {
-      "angular": "dxo-additional-info",
-      "react": "AdditionalInfo",
-      "vue": "DxAdditionalInfo"
-    },
-    "aiColumnResponseReceivedInfo.column": {
-      "angular": "dxo-column",
-      "react": "Column",
-      "vue": "DxColumn"
     },
     "aiCommand": {
       "angular": "dxo-a-i-command",
@@ -10807,9 +10787,6 @@
     },
     "dxDataGridOptions.onAIColumnRequestCreating": {
       "vue": "@a-i-column-request-creating"
-    },
-    "dxDataGridOptions.onAIColumnResponseReceived": {
-      "vue": "@a-i-column-response-received"
     },
     "dxDataGridOptions.onCellClick": {
       "vue": "@cell-click"
@@ -19875,9 +19852,6 @@
     },
     "dxTreeListOptions.onAIColumnRequestCreating": {
       "vue": "@a-i-column-request-creating"
-    },
-    "dxTreeListOptions.onAIColumnResponseReceived": {
-      "vue": "@a-i-column-response-received"
     },
     "dxTreeListOptions.onCellClick": {
       "vue": "@cell-click"

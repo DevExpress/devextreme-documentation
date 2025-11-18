@@ -32,8 +32,8 @@ The UI component's instance.
         onAttachmentDownloadClick(e) {
             const { attachment } = e;
 
-            if (!attachment?.url) {
-                return;
+            if (!attachment?.url) { // attachment.url is a custom field
+                return;             // See demo below for full implementation
             };
 
             const link = document.createElement('a');
@@ -60,8 +60,8 @@ The UI component's instance.
 
         onAttachmentDownloadClick(e: DxChatTypes.AttachmentDownloadClickEvent): void {
             if (e.attachment) {
-                if (!e.attachment?.url) {
-                    return;
+                if (!e.attachment?.url) { // attachment.url is a custom field
+                    return;               // See demo below for full implementation
                 };
 
                 const link = document.createElement('a');
@@ -88,8 +88,8 @@ The UI component's instance.
     import { DxChat, DxChatTypes } from 'devextreme-vue/chat';
 
     function onAttachmentDownloadClick({ attachment }: DxChatTypes.AttachmentDownloadClickEvent): void {
-        if (!attachment?.url) {
-            return;
+        if (!attachment?.url) { // attachment.url is a custom field
+            return;             // See demo below for full implementation
         }
 
         const link = document.createElement('a');
@@ -111,8 +111,8 @@ The UI component's instance.
      const onAttachmentDownloadClick = useCallback((
         { attachment }: ChatTypes.AttachmentDownloadClickEvent,
     ): void => {
-        if (!attachment?.url) {
-        return;
+        if (!attachment?.url) { // attachment.url is a custom field
+            return;             // See demo below for full implementation
         }
 
         const link = document.createElement('a');

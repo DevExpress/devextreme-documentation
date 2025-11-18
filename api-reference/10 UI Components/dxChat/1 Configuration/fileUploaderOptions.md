@@ -20,7 +20,15 @@ You can specify most of the [FileUploader properties](/Documentation/ApiReferenc
 - [value](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#value)
 - [visible](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#visible)
 
-[note] The **fileUploaderOptions**.[multiple](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#multiple) property default value is `true` (unlike in FileUploader). 
+[note]
+
+The following option default values differ from FileUploader:
+
+- The **fileUploaderOptions**.[multiple](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#multiple) property default value is `true` (`false` in FileUploader).
+
+- The **fileUploaderOptions**.[allowedFileExtensions](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#allowedFileExtensions) property default value is `[".jpg", ".jpeg", ".png", ".gif", ".webp", ".bmp", ".pdf", ".docx", ".xlsx", ".pptx", ".txt", ".rtf", ".csv", ".md"]` (`[]` in FileUploader).
+
+The following example reverts these options:
 
 ---
 
@@ -28,56 +36,58 @@ You can specify most of the [FileUploader properties](/Documentation/ApiReferenc
 
     <!-- tab: index.js -->
     $('#chat-container').dxChat({
+        // ...
         fileUploaderOptions: {
             multiple: false,
-            // ...
+            allowedFileExtensions: [],
         }
     })
 
 ##### Angular
 
-    <!-- tab: app.component.ts -->
-    import { DxChatModule} from 'devextreme-angular';
-
-    // TBA
-
     <!-- tab: app.component.html -->
-     <dx-chat ...
-        [fileUploaderOptions]="fileUploaderOptions"
-    ></dx-chat>
+    <dx-chat ... >
+        <dxo-chat-file-uploader-options
+            [multiple]="false"
+            [allowedFileExtensions]="[]"
+        >
+        </dxo-chat-file-uploader-options>
+    </dx-chat>
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <DxChat ...
-            :file-uploader-options="fileUploaderOptions"
-        >
+        <DxChat ... >
+            <DxFileUploaderOptions
+                :multiple="false"
+                :allowed-file-extensions="[]"
+            />
         </DxChat>
     </template>
 
     <script setup lang="ts">
-    import { DxChat } from 'devextreme-vue/chat';
-
-    // TBA
-
+    import { DxChat, DxFileUploaderOptions } from 'devextreme-vue/chat';
     </script>
 
 ##### React
 
     <!-- tab: App.tsx -->
-    import { Chat, type ChatTypes } from 'devextreme-react/chat';
-
-    // TBA
+    import { Chat, FileUploaderOptions } from 'devextreme-react/chat';
 
     function App() {
         return (
             <>
-                <Chat ...
-                    fileUploaderOptions={fileUploaderOptions}
-                />
+                <Chat ... >
+                    <FileUploaderOptions
+                        multiple={false}
+                        allowedFileExtensions={[]}
+                    />
+                </Chat>
             </>
         );
     }
 
 ---
+
+[/note]

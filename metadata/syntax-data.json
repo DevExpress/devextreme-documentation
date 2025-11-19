@@ -6111,6 +6111,20 @@
       "react": "Item",
       "vue": "DxItem"
     },
+    "appointmentFormProperties": {
+      "angular": "dxo-appointment-form-properties",
+      "react": "AppointmentFormProperties",
+      "vue": "DxAppointmentFormProperties"
+    },
+    "appointmentFormProperties.iconsShowMode": {
+      "vue": "icons-show-mode"
+    },
+    "appointmentFormProperties.onCanceled": {
+      "vue": "@canceled"
+    },
+    "appointmentFormProperties.onSaved": {
+      "vue": "@saved"
+    },
     "arrayStoreOptions": {
       "vue": "array-store-options"
     },
@@ -17990,20 +18004,6 @@
       "angular": "dxo-form",
       "react": "Form",
       "vue": "DxForm"
-    },
-    "dxSchedulerOptions.editing.form.iconsShowMode": {
-      "vue": "icons-show-mode"
-    },
-    "dxSchedulerOptions.editing.form.items": {
-      "angular": "dxi-item",
-      "react": "Item",
-      "vue": "DxItem"
-    },
-    "dxSchedulerOptions.editing.form.onCanceled": {
-      "vue": "@canceled"
-    },
-    "dxSchedulerOptions.editing.form.onSaved": {
-      "vue": "@saved"
     },
     "dxSchedulerOptions.editing.popup": {
       "angular": "dxo-popup",

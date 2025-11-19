@@ -1,0 +1,196 @@
+Configure **editing**.**form**.[items[]]() to customize the appointment edit form layout. To preserve the form's switching functionality between `mainGroup` and `recurrenceGroup`, add the groups as [group items]() in the **items[]** root:
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $('#scheduler').dxScheduler({
+        editing: {
+            form: {
+                items: [{
+                    name: 'mainGroup',
+                    itemType: 'group',
+                }, {
+                    name: 'recurrenceGroup',
+                    itemType: 'group',
+                }],
+            },
+        },
+    });
+
+##### Angular
+
+    <!-- tab: app.component.ts -->
+    <dx-scheduler>
+        <dxo-scheduler-editing>
+            <dxo-editing-form>
+    	        <dxi-form-item
+                    name="mainGroup"
+                    itemType="group"
+                ></dxi-form-item>
+                <dxi-form-item
+                    name="recurrenceGroup"
+                    itemType="group"
+                ></dxi-form-item>
+            </dxo-editing-form>
+        </dxo-scheduler-editing>
+    </dx-scheduler>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler>
+            <DxEditing>
+                <DxForm>
+                    <DxItem
+                        name="mainGroup"
+                        itemType="group"
+                    />
+                    <DxItem
+                        name="recurrenceGroup"
+                        itemType="group"
+                    />
+                </DxForm>
+            </DxEditing>
+        </DxScheduler>
+    </template>
+
+    <script setup lang="ts">
+    import { DxScheduler, DxEditing, DxForm, DxItem } from 'devextreme-vue/scheduler';
+
+    </script>
+
+##### React
+
+    <!-- tab: App.tsx -->
+    import { Scheduler, Editing, Form, Item } from 'devextreme-react/scheduler';
+
+    function App() {
+        return (
+            <Scheduler>
+                <Editing>
+                    <Form>
+                        <Item
+                            name="mainGroup"
+                            itemType="group"
+                        />
+                        <Item
+                            name="recurrenceGroup"
+                            itemType="group"
+                        />
+                    </Form>
+                </Editing>
+            </Scheduler>
+        );
+    };
+
+---
+
+To add resource field editors to **items[]**, use resource labels in item names as follows:
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $('#scheduler').dxScheduler({
+        resources: [{
+            label: 'Priority'
+        }],
+        editing: {
+            form: {
+                items: [{
+                    name: 'mainGroup',
+                    itemType: 'group',
+                    items: [{
+                        name: 'PriorityGroup',
+                        itemType: 'group',
+                        items: ['PriorityIcon', 'PriorityEditor']
+                    }],
+                }, ... ],
+            },
+        },
+    });
+
+##### Angular
+
+    <!-- tab: app.component.ts -->
+    <dx-scheduler>
+        <dxo-scheduler-editing>
+            <dxo-editing-form>
+    	        <dxi-form-item
+                    name="mainGroup"
+                    itemType="group"
+                >
+                    <dxi-form-item
+                        name="PriorityGroup"
+                        itemType="group"
+                    >
+                        <dxi-form-item name="PriorityIcon"></dxi-form-item>
+                        <dxi-form-item name="PriorityEditor"></dxi-form-item>
+                    </dxi-form-item>
+                </dxi-form-item>
+            </dxo-editing-form>
+        </dxo-scheduler-editing>
+    </dx-scheduler>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler>
+            <DxEditing>
+                <DxForm>
+                    <DxItem
+                        name="mainGroup"
+                        itemType="group"
+                    >
+                        <DxItem
+                            name="PriorityGroup"
+                            itemType="group"
+                        >
+                            <DxItem name="PriorityIcon" />
+                            <DxItem name="PriorityEditor" />
+                        </DxItem>
+                    </DxItem>
+                </DxForm>
+            </DxEditing>
+        </DxScheduler>
+    </template>
+
+    <script setup lang="ts">
+    import { DxScheduler, DxEditing, DxForm, DxItem } from 'devextreme-vue/scheduler';
+
+    </script>
+
+##### React
+
+    <!-- tab: App.tsx -->
+    import { Scheduler, Editing, Form, Item } from 'devextreme-react/scheduler';
+
+    function App() {
+        return (
+            <Scheduler>
+                <Editing>
+                    <Form>
+                        <Item
+                            name="mainGroup"
+                            itemType="group"
+                        >
+                            <Item
+                                name="PriorityGroup"
+                                itemType="group"
+                            >
+                                <Item name="PriorityIcon" />
+                                <Item name="PriorityEditor" />
+                            </Item>
+                        </Item>
+                    </Form>
+                </Editing>
+            </Scheduler>
+        );
+    };
+
+---

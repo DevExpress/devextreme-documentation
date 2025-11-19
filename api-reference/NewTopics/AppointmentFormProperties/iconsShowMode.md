@@ -1,6 +1,7 @@
 ---
-id: dxScheduler.Options.editing.form
-type: AppointmentFormProperties
+id: AppointmentFormProperties.iconsShowMode
+type: Enums.AppointmentFormIconsShowMode
+default: 'main'
 ---
 ---
 ##### shortDescription

@@ -4,6 +4,7 @@ module: ui/scheduler
 export: AppointmentFormProperties
 type: FormProperties | Object
 inherits: dxForm.Options
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

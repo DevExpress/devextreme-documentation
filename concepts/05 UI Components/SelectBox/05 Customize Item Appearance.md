@@ -1,265 +1,76 @@
-For a minor customization of SelectBox items, you can define [specific fields](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/items/') in their data objects. For example, the following code generates three items: the first is not customized, the second is disabled and the third is hidden.
 
 ---
+
 ##### jQuery
 
-    <!--JavaScript-->
+To customize the appearance of [items](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/items/') in the SelectBox drop-down menu, configure [itemTemplate](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#itemTemplate') (customizes all items) or **items[]**.[template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/items/#template') (customizes individual items).
+
+    <!-- tab: index.js -->
     $(function() {
         $("#selectBoxContainer").dxSelectBox({
-            valueExpr: 'text',
-            displayExpr: 'text',
-            dataSource: [
-                { text: "HD Video Player" },
-                { text: "SuperHD Video Player", disabled: true },
-                { text: "SuperPlasma 50", visible: false }
-            ],
-            placeholder: "Select a product..."
-        });
-    });
-
-##### Angular
-
-    <!--TypeScript-->
-    import { DxSelectBoxModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        products =  [
-            { text: "HD Video Player" },
-            { text: "SuperHD Video Player", disabled: true },
-            { text: "SuperPlasma 50", visible: false }
-        ];
-    }
-    @NgModule({
-         imports: [
-             // ...
-             DxSelectBoxModule
-         ],
-         // ...
-     })
-
-    <!--HTML-->
-    <dx-select-box
-        [dataSource]="products"
-        valueExpr="text"
-        displayExpr="text"
-        placeholder="Select a product...">
-    </dx-select-box>
-
-##### Vue
-
-    <!-- tab: App.vue -->
-    <template> 
-        <DxSelectBox ...
-            :data-source="products"
-            display-expr="text"
-            value-expr="text"
-        />
-    </template>
-
-    <script>
-    import 'devextreme/dist/css/dx.light.css';
-
-    import { DxSelectBox } from 'devextreme-vue/select-box';
-
-    export default {
-        components: {
-            DxSelectBox
-        },
-        data() {
-            const products = [
-                { text: "HD Video Player" },
-                { text: "SuperHD Video Player", disabled: true },
-                { text: "SuperPlasma 50", visible: false }
-            ];
-            return {
-                products
-            }
-        }
-    }
-    </script>
-
-##### React
-
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
-
-    import SelectBox from 'devextreme-react/select-box';
-
-    const products = [
-        { text: "HD Video Player" },
-        { text: "SuperHD Video Player", disabled: true },
-        { text: "SuperPlasma 50", visible: false }
-    ];
-
-    export default function App(props) {
-        return (
-            <SelectBox ...
-                dataSource={products} 
-                displayExpr="text"
-                valueExpr="text"
-            />
-        );
-    }
-
----
-
-If you need a more flexible solution, specify [itemTemplate](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#itemTemplate').
-
----
-##### jQuery
-
-    <!--JavaScript-->
-    const selectBoxData = [{
-        id: 1,
-        name: "HD Video Player",
-        imgSrc: "images/products/1-small.png"
-    }, {
-        id: 2,
-        name: "UltraHD Player",
-        imgSrc: "images/products/2-small.png"
-    },
-    // . . .
-    ];
-
-    $(function() {
-        $("#selectBoxContainer").dxSelectBox({
-            dataSource: selectBoxData,
-            valueExpr: 'id',
-            displayExpr: 'name',
-            itemTemplate: function (itemData, itemIndex, itemElement) {
-                return $("<div />").append(
-                	$("<img />").attr("src", itemData.imgSrc),
-                    $("<p />").text(itemData.name)
-                              .css("display", "inline-block")
+            itemTemplate: function(data) {
+                return $("<div>").append(
+                    $("<img>").attr("src", data.imgSrc)
                 );
-            }
+            },
         });
     });
 
 ##### Angular
 
-    <!--HTML-->
-    <dx-select-box
-        [dataSource]="selectBoxData"
-        displayExpr="name"
-        valueExpr="id"
-        itemTemplate="item">
+To customize the appearance of [items](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/items/') in the SelectBox drop-down menu, configure [itemTemplate](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#itemTemplate') (customizes all items) or **items[]**.[template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/items/#template') (customizes individual items).
+
+    <!-- tab: app.component.html -->
+    <dx-select-box ...
+        itemTemplate="item"
+    >
         <div *dxTemplate="let data of 'item'">
-            <img src="{{data.imgSrc}}" />
-            <div style="display:inline-block">{{data.name}}</div>
+            <img src="{{ data.imgSrc }}" />
         </div>
     </dx-select-box>
 
-    <!--TypeScript-->
-    import { DxSelectBoxModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        selectBoxData = [{
-            id: 1,
-            name: "HD Video Player",
-            imgSrc: "images/products/1-small.png"
-        }, {
-            id: 2,
-            name: "UltraHD Player",
-            imgSrc: "images/products/2-small.png"
-        },
-        // ...
-        ];
-    }
-    @NgModule({
-         imports: [
-             // ...
-             DxSelectBoxModule
-         ],
-         // ...
-     })
-
 ##### Vue
+
+To customize the appearance of [items](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/items/') in the SelectBox drop-down menu, configure [itemTemplate](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#itemTemplate') (customizes all items) or **items[]**.[template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/items/#template') (customizes individual items).
 
     <!-- tab: App.vue -->
     <template> 
         <DxSelectBox ...
-            :data-source="selectBoxData"
-            display-expr="name"
-            value-expr="id"
             item-template="item"
         >
             <template #item="{ data }">
-                <div>
-                    <img :src="data.imgSrc">
-                    <div style="display:inline-block">
-                        {{ data.name }}
-                    </div>
-                </div>
+                <img :src="data.imgSrc">
             </template>
         </DxSelectBox>
     </template>
 
-    <script>
-    import 'devextreme/dist/css/dx.light.css';
+    <script setup lang="ts">
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxSelectBox } from 'devextreme-vue/select-box';
 
-    export default {
-        components: {
-            DxSelectBox
-        },
-        data() {
-            const selectBoxData = [{
-                id: 1,
-                name: "HD Video Player",
-                imgSrc: "images/products/1-small.png"
-            }, {
-                id: 2,
-                name: "UltraHD Player",
-                imgSrc: "images/products/2-small.png"
-            },
-            // ...
-            ];
-            return {
-                selectBoxData
-            }
-        }
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
+To customize the appearance of [items](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/items/') in the SelectBox drop-down menu, configure [itemRender](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/itemRender.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#itemRender')/[itemComponent](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/itemComponent.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#itemComponent') (customize all items) or **items[]**.[render](/api-reference/_hidden/CollectionWidgetItem/render.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/items/#render')/[component](/api-reference/_hidden/CollectionWidgetItem/component.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/items/#component') (customize individual items).
+
+    <!-- tab: App.tsx -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import SelectBox from 'devextreme-react/select-box';
+    import { SelectBox } from 'devextreme-react/select-box';
 
-    const renderItem = (data) => {
+    function itemRender(data) {
         return (
-            <div>
-                <img src={data.imgSrc} />
-                <div style={{display: 'inline-block'}}>{data.name}</div>
-            </div>
+            <img src={data.imgSrc} />
         );
     }
 
-    const selectBoxData = [{
-        id: 1,
-        name: "HD Video Player",
-        imgSrc: "images/products/1-small.png"
-    }, {
-        id: 2,
-        name: "UltraHD Player",
-        imgSrc: "images/products/2-small.png"
-    },
-    // ...
-    ];
-
-    export default function App(props) {
+    function App() {
         return (
-            <SelectBox ...
-                dataSource={selectBoxData} 
-                displayExpr="name"
-                valueExpr="id"
-                itemRender={renderItem}
+            <SelectBox ... 
+                itemRender={itemRender}
             />
         );
     }
@@ -267,264 +78,84 @@ If you need a more flexible solution, specify [itemTemplate](/api-reference/10%2
 ---
 
 ---
+
 ##### jQuery
 
-You can also customize individual SelectBox items. Declare them as scripts and reference them in the [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/items/#template') property or assign a customization function straight to this property.
+You can also customize the SelectBox input field. Configure **fieldAddons**.[beforeTemplate](/api-reference/40%20Common%20Types/FieldAddons/beforeTemplate.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/fieldAddons/#beforeTemplate') and **fieldAddons**.[afterTemplate](/api-reference/40%20Common%20Types/FieldAddons/afterTemplate.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/fieldAddons/#afterTemplate') to display custom markup to the left/right of the component input:
 
-    <!--HTML-->
-    <div id="selectBoxContainer"></div>
-    <script id="individualTemplate" type="text/html">
-        <span>Comment</span>
-    </script>
-
-    <!--JavaScript-->
+    <!-- tab: index.js -->
     $(function() {
         $("#selectBoxContainer").dxSelectBox({
-            items: [{ 
-                template: function() {
-                    return $("<span>").text("User");
-                }
-            }, { 
-                template: $("#individualTemplate")
-            }]
-        });
-    });
-
-##### Angular
-
-You can also customize individual SelectBox items. Declare them using the [dxItem](/api-reference/10%20UI%20Components/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component.
-
-    <!--HTML-->
-    <dx-select-box>
-        <dxi-item>
-            <span>User</span>
-        </dxi-item>
-        <dxi-item>
-            <span>Comment</span>
-        </dxi-item>
-    </dx-select-box>
-
-    <!--TypeScript-->
-    import { DxSelectBoxModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        // ...
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxSelectBoxModule
-        ],
-        // ...
-    })
-
-##### Vue
-
-You can also customize individual SelectBox items. Declare them using the [dxItem](/api-reference/10%20UI%20Components/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component.
-
-    <!--tab: App.vue-->
-    <template>
-        <DxSelectBox>
-            <DxItem>
-                <template #default>
-                    <span>User</span>
-                </template>
-            </DxItem>
-            <DxItem>
-                <template #default>
-                    <span>Comment</span>
-                </template>
-            </DxItem>
-        </DxSelectBox>
-    </template>
-    <script>
-    import 'devextreme/dist/css/dx.light.css';
-
-    import DxSelectBox, { DxItem } from "devextreme-vue/select-box";
-
-    export default {
-        components: {
-            DxSelectBox,
-            DxItem
-        }
-    };
-    </script>
-
-##### React
-
-You can also customize individual SelectBox items. Declare them using the [dxItem](/api-reference/10%20UI%20Components/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component.
-
-    <!--tab: App.js-->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
-
-    import { SelectBox, Item } from 'devextreme-react/select-box';
-
-    export default function App(props) {
-        return (
-            <SelectBox>
-                <Item>
-                    <span>User</span>
-                </Item>
-                <Item>
-                    <span>Comment</span>
-                </Item>
-            </SelectBox>
-        );
-    }
-
----
-
-Using similar techniques, you can customize the input field of the SelectBox. The template for it should be assigned to the [fieldTemplate](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/fieldTemplate.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#fieldTemplate') property. Note that the input field must contain the [TextBox](/api-reference/10%20UI%20Components/dxTextBox '/Documentation/ApiReference/UI_Components/dxTextBox/') UI component.
-
----
-##### jQuery
-
-    <!--JavaScript-->
-    $(function() {
-        $("#selectBoxContainer").dxSelectBox({
-            dataSource: selectBoxData,
-            valueExpr: 'id',
-            displayExpr: 'name',
-            value: 1,
-            fieldTemplate: function(selectedItem, fieldElement) {
-                return $("<div />").append(
-                    $("<img />").attr("src", selectedItem.imgSrc),
-                    $("<div />").dxTextBox({ value: selectedItem.name })
-                                .css("display", "inline-block")
-                );
+            fieldAddons: {
+                beforeTemplate: function(data) {
+                    return $("<div>").append(
+                        $("<img>").attr("src", data.imgSrc)
+                    );
+                },
             }
         });
     });
 
 ##### Angular
 
-    <!--HTML-->
-    <dx-select-box
-        [dataSource]="selectBoxData"
-        valueExpr="id"
-        [value]="1"
-        displayExpr="name"
-        fieldTemplate="inputField">
-        <div *dxTemplate="let data of 'inputField'">
-            <img ng-src="{{data.imgSrc}}" />
-            <dx-text-box style="display:inline-block" 
-                [value]="data.name" 
-            ></dx-text-box>
+You can also customize the SelectBox input field. Configure **fieldAddons**.[beforeTemplate](/api-reference/40%20Common%20Types/FieldAddons/beforeTemplate.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/fieldAddons/#beforeTemplate') and **fieldAddons**.[afterTemplate](/api-reference/40%20Common%20Types/FieldAddons/afterTemplate.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/fieldAddons/#afterTemplate') to display custom markup to the left/right of the component input:
+
+    <!-- tab: app.component.html -->
+    <dx-select-box ... >
+        <dxo-select-box-field-addons
+            beforeTemplate="before"
+        ></dxo-select-box-field-addons>
+        <div *dxTemplate="let data of 'before'">
+            <img src="{{ data.imgSrc }}" />
         </div>
     </dx-select-box>
 
-    <!--TypeScript-->
-    import { DxSelectBoxModule, DxTextBoxModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        selectBoxData = [
-            { id: 1, name: "HD Video Player", imgSrc: "images/products/1-small.png" },
-            // ...
-        ];
-    }
-    @NgModule({
-         imports: [
-             // ...
-             DxSelectBoxModule,
-             DxTextBoxModule
-         ],
-         // ...
-     })
-
 ##### Vue
+
+You can also customize the SelectBox input field. Configure **fieldAddons**.[beforeTemplate](/api-reference/40%20Common%20Types/FieldAddons/beforeTemplate.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/fieldAddons/#beforeTemplate') and **fieldAddons**.[afterTemplate](/api-reference/40%20Common%20Types/FieldAddons/afterTemplate.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/fieldAddons/#afterTemplate') to display custom markup to the left/right of the component input:
 
     <!-- tab: App.vue -->
     <template> 
-        <DxSelectBox ...
-            :data-source="selectBoxData"
-            :value="1"
-            display-expr="name"
-            value-expr="id"
-            field-template="field"
-        >
-            <template #field='{ data }'>
-                <div>
-                    <img :src="data.imgSrc">
-                    <DxTextBox
-                        :value="data.name"
-                        style="display:inline-block"
-                    />
-                </div>
+        <DxSelectBox ... >
+            <DxFieldAddons
+                before-template="before"
+            />
+            <template #before="{ data }"">
+                <img :src="data.imgSrc">
             </template>
         </DxSelectBox>
     </template>
 
-    <script>
-    import 'devextreme/dist/css/dx.light.css';
+    <script setup lang="ts">
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import { DxSelectBox } from 'devextreme-vue/select-box';
-    import { DxTextBox } from 'devextreme-vue/text-box';
+    import { DxSelectBox, DxFieldAddons } from 'devextreme-vue/select-box';
 
-    export default {
-        components: {
-            DxSelectBox,
-            DxTextBox
-        },
-        data() {
-            const selectBoxData = [{
-                id: 1,
-                name: "HD Video Player",
-                imgSrc: "images/products/1-small.png"
-            }, {
-                id: 2,
-                name: "UltraHD Player",
-                imgSrc: "images/products/2-small.png"
-            },
-            // ...
-            ];
-            return {
-                selectBoxData
-            }
-        }
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
+You can also customize the SelectBox input field. Configure **fieldAddons**.[beforeRender](/api-reference/10%20UI%20Components/dxDropDownEditor/1%20Configuration/fieldAddons/beforeRender.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/fieldAddons/#beforeRender')/[beforeComponent](/api-reference/10%20UI%20Components/dxDropDownEditor/1%20Configuration/fieldAddons/beforeComponent.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/fieldAddons/#beforeComponent') and **fieldAddons**.[afterRender](/api-reference/10%20UI%20Components/dxDropDownEditor/1%20Configuration/fieldAddons/afterRender.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/fieldAddons/#afterRender')/[afterComponent](/api-reference/10%20UI%20Components/dxDropDownEditor/1%20Configuration/fieldAddons/afterComponent.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/fieldAddons/#afterComponent') to display custom markup to the left/right of the component input:
+
+    <!-- tab: App.tsx -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import { SelectBox } from 'devextreme-react/select-box';
-    import { TextBox } from 'devextreme-react/text-box';
+    import { SelectBox, FieldAddons } from 'devextreme-react/select-box';
 
-    const renderField = (data) => {
+    function beforeRender(data) {
         return (
-            <div>
-                <img src={data.imgSrc} />
-                    <TextBox style={{display: 'inline-block'}}
-                        defaultValue={data.name} />
-            </div>
+            <img src={data.imgSrc} />
         );
     }
 
-    const selectBoxData = [{
-        id: 1,
-        name: "HD Video Player",
-        imgSrc: "images/products/1-small.png"
-    }, {
-        id: 2,
-        name: "UltraHD Player",
-        imgSrc: "images/products/2-small.png"
-    },
-    // ...
-    ];
-
-    export default function App(props) {
+    function App() {
         return (
-            <SelectBox ...
-                dataSource={selectBoxData} 
-                value={1}
-                displayExpr="name"
-                valueExpr="id"
-                fieldRender={renderField}
-            />
+            <SelectBox ... >
+                <FieldAddons
+                    beforeRender={beforeRender}
+                />
+            </SelectBox>
         );
     }
 

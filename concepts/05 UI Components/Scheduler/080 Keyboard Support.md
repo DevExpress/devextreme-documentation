@@ -36,7 +36,7 @@ An end user can use the following keys to interact with the UI component.
     </tr>
     <tr>
         <td>Enter or Space</td>        
-        <td>Invokes the appointment details form for the currently selected cell.</td>
+        <td>Invokes the appointment edit form for the currently selected cell.</td>
     </tr>
     <tr>
         <td>Shift + &larr; / &rarr; / &uarr; / &darr;</td>        
@@ -58,7 +58,7 @@ An end user can use the following keys to interact with the UI component.
     </tr>
     <tr>
         <td>Enter or Space</td>
-        <td>Invokes the appointment details form.</td>
+        <td>Invokes the appointment edit form.</td>
     </tr>
     <tr>
         <td>Delete</td>

@@ -4,16 +4,15 @@ type: template
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A custom markup that display content to the right of the input field.
 
 ##### param(data): Object
-<!-- Description goes here -->
+Data of the selected editor item.
 
 ##### param(element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "**afterTemplate**" }
 
 ##### return: String | Element | jQuery
-<!-- Description goes here -->
+A template name or container.
 
 ---
-<!-- Description goes here -->

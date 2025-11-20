@@ -1,7 +1,6 @@
 ---
 id: dxScheduler.Options.editing.form
-type: Object | undefined
-default: undefined
+type: AppointmentFormProperties
 ---
 ---
 ##### shortDescription

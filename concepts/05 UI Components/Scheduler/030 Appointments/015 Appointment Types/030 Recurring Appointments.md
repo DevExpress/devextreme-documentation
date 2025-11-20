@@ -125,7 +125,7 @@ If your appointment data objects contain different fields that perform the funct
     
 ---
 
-In the UI, to mark an appointment as recurring, toggle the *"Repeat"* switcher on the appointment details form. Then, a set of new fields will appear. 
+In the UI, to mark an appointment as recurring, toggle the *"Repeat"* switcher on the appointment edit form. Then, a set of new fields will appear. 
 
 ![Scheduler Recurring Appointment Details](/images/UiWidgets/Scheduler_RecurrentAppointment_Details.png)
 

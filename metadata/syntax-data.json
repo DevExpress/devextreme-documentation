@@ -471,6 +471,16 @@
     "_ui_card_view_SelectionChangedEvent.selectedCardsData": {
       "vue": "selected-cards-data"
     },
+    "_ui_chat_AttachmentDownloadClickEvent": {
+      "angular": "dxo-ui-chat--attachment-download-click-event",
+      "react": "_ui_chat_AttachmentDownloadClickEvent",
+      "vue": "Dx_ui_chat_AttachmentDownloadClickEvent"
+    },
+    "_ui_chat_AttachmentDownloadClickEvent.attachment": {
+      "angular": "dxo-attachment",
+      "react": "Attachment",
+      "vue": "DxAttachment"
+    },
     "_ui_chat_DisposingEvent": {
       "angular": "dxo-ui-chat--disposing-event",
       "react": "_ui_chat_DisposingEvent",
@@ -740,11 +750,6 @@
       "angular": "dxo-ui-data-grid--a-i-column-request-creating-event",
       "react": "_ui_data_grid_AIColumnRequestCreatingEvent",
       "vue": "Dx_ui_data_grid_AIColumnRequestCreatingEvent"
-    },
-    "_ui_data_grid_AIColumnResponseReceivedEvent": {
-      "angular": "dxo-ui-data-grid--a-i-column-response-received-event",
-      "react": "_ui_data_grid_AIColumnResponseReceivedEvent",
-      "vue": "Dx_ui_data_grid_AIColumnResponseReceivedEvent"
     },
     "_ui_data_grid_CellClickEvent": {
       "angular": "dxo-ui-data-grid--cell-click-event",
@@ -4526,11 +4531,6 @@
       "react": "_ui_tree_list_AIColumnRequestCreatingEvent",
       "vue": "Dx_ui_tree_list_AIColumnRequestCreatingEvent"
     },
-    "_ui_tree_list_AIColumnResponseReceivedEvent": {
-      "angular": "dxo-ui-tree-list--a-i-column-response-received-event",
-      "react": "_ui_tree_list_AIColumnResponseReceivedEvent",
-      "vue": "Dx_ui_tree_list_AIColumnResponseReceivedEvent"
-    },
     "_ui_tree_list_CellClickEvent": {
       "angular": "dxo-ui-tree-list--cell-click-event",
       "react": "_ui_tree_list_CellClickEvent",
@@ -6027,16 +6027,6 @@
     "aiColumnRequestCreatingInfo.useCache": {
       "vue": "use-cache"
     },
-    "aiColumnResponseReceivedInfo.additionalInfo": {
-      "angular": "dxo-additional-info",
-      "react": "AdditionalInfo",
-      "vue": "DxAdditionalInfo"
-    },
-    "aiColumnResponseReceivedInfo.column": {
-      "angular": "dxo-column",
-      "react": "Column",
-      "vue": "DxColumn"
-    },
     "aiCommand": {
       "angular": "dxo-a-i-command",
       "react": "AICommand",
@@ -6121,6 +6111,20 @@
       "react": "Item",
       "vue": "DxItem"
     },
+    "appointmentFormProperties": {
+      "angular": "dxo-appointment-form-properties",
+      "react": "AppointmentFormProperties",
+      "vue": "DxAppointmentFormProperties"
+    },
+    "appointmentFormProperties.iconsShowMode": {
+      "vue": "icons-show-mode"
+    },
+    "appointmentFormProperties.onCanceled": {
+      "vue": "@canceled"
+    },
+    "appointmentFormProperties.onSaved": {
+      "vue": "@saved"
+    },
     "arrayStoreOptions": {
       "vue": "array-store-options"
     },
@@ -6134,6 +6138,11 @@
     },
     "asyncRule.validationCallback": {
       "vue": "validation-callback"
+    },
+    "attachment": {
+      "angular": "dxo-attachment",
+      "react": "Attachment",
+      "vue": "DxAttachment"
     },
     "barGaugeBarInfo": {
       "angular": "dxo-bar-gauge-bar-info",
@@ -10227,6 +10236,9 @@
     "dxChatOptions.emptyViewTemplate": {
       "vue": "empty-view-template"
     },
+    "dxChatOptions.fileUploaderOptions": {
+      "vue": "file-uploader-options"
+    },
     "dxChatOptions.focusStateEnabled": {
       "vue": "focus-state-enabled"
     },
@@ -10245,6 +10257,9 @@
       "angular": "dxo-message-timestamp-format",
       "react": "MessageTimestampFormat",
       "vue": "DxMessageTimestampFormat"
+    },
+    "dxChatOptions.onAttachmentDownloadClick": {
+      "vue": "@attachment-download-click"
     },
     "dxChatOptions.onContentReady": {
       "vue": "@content-ready"
@@ -10786,9 +10801,6 @@
     },
     "dxDataGridOptions.onAIColumnRequestCreating": {
       "vue": "@a-i-column-request-creating"
-    },
-    "dxDataGridOptions.onAIColumnResponseReceived": {
-      "vue": "@a-i-column-response-received"
     },
     "dxDataGridOptions.onCellClick": {
       "vue": "@cell-click"
@@ -15544,6 +15556,9 @@
       "react": "DxPieChartPointInfo",
       "vue": "DxPieChartPointInfo"
     },
+    "dxPieChartPointInfo.percentText": {
+      "vue": "percent-text"
+    },
     "dxPieChartSeriesTypes.CommonPieChartSeries.argumentField": {
       "vue": "argument-field"
     },
@@ -17990,16 +18005,10 @@
       "react": "Form",
       "vue": "DxForm"
     },
-    "dxSchedulerOptions.editing.form.items": {
-      "angular": "dxi-item",
-      "react": "Item",
-      "vue": "DxItem"
-    },
-    "dxSchedulerOptions.editing.form.onCanceled": {
-      "vue": "@canceled"
-    },
-    "dxSchedulerOptions.editing.form.onSaved": {
-      "vue": "@saved"
+    "dxSchedulerOptions.editing.popup": {
+      "angular": "dxo-popup",
+      "react": "Popup",
+      "vue": "DxPopup"
     },
     "dxSchedulerOptions.endDateExpr": {
       "vue": "end-date-expr"
@@ -19844,9 +19853,6 @@
     "dxTreeListOptions.onAIColumnRequestCreating": {
       "vue": "@a-i-column-request-creating"
     },
-    "dxTreeListOptions.onAIColumnResponseReceived": {
-      "vue": "@a-i-column-response-received"
-    },
     "dxTreeListOptions.onCellClick": {
       "vue": "@cell-click"
     },
@@ -20909,6 +20915,9 @@
     },
     "enums.ApplyValueMode": {
       "vue": "apply-value-mode"
+    },
+    "enums.AppointmentFormIconsShowMode": {
+      "vue": "appointment-form-icons-show-mode"
     },
     "enums.ArgumentAxisHoverMode": {
       "vue": "argument-axis-hover-mode"
@@ -23253,6 +23262,11 @@
       "angular": "dxo-text-message",
       "react": "TextMessage",
       "vue": "DxTextMessage"
+    },
+    "textMessage.attachments": {
+      "angular": "dxi-attachment",
+      "react": "Attachment",
+      "vue": "DxAttachment"
     },
     "textMessage.isEdited": {
       "vue": "is-edited"

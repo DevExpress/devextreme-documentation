@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-A function that is executed after a user clicks "Download" button.
+A function that is executed after a user clicks the "Download" button.
 
 ##### param(e): ui/chat:AttachmentDownloadEvent
 Information about the event.
@@ -20,7 +20,7 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "UI component" }
 
 ---
-[note] If not specified, "Download" button is not rendered.
+[note] If an event handler is not specified, the "Download" button is not rendered.
 
 ---
 

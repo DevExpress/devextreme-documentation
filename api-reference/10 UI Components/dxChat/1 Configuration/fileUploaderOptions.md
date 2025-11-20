@@ -10,7 +10,7 @@ Configures file upload options.
 ---
 Define [uploadFile](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadFile) in this object to enable file upload. To show the "Attach" button, pass at least an empty object to **fileUploaderOptions**.
 
-You can specify most of the [FileUploader properties](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/) in this object except those listed below. These properties are overridden by Chat.
+You can specify most [FileUploader properties](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/) in this object except those listed below. These properties are overridden by Chat.
 
 - [dialogTrigger](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#dialogTrigger)
 - [rtlEnabled](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#rtlEnabled)
@@ -22,11 +22,11 @@ You can specify most of the [FileUploader properties](/Documentation/ApiReferenc
 
 [note]
 
-The following option default values differ from FileUploader:
+The following default settings differ from FileUploader:
 
-- The **fileUploaderOptions**.[multiple](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#multiple) property default value is `true` (`false` in FileUploader).
+- The **fileUploaderOptions**.[multiple](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#multiple) property value is `true` (`false` in FileUploader).
 
-- The **fileUploaderOptions**.[allowedFileExtensions](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#allowedFileExtensions) property default value is `[".jpg", ".jpeg", ".png", ".gif", ".webp", ".bmp", ".pdf", ".docx", ".xlsx", ".pptx", ".txt", ".rtf", ".csv", ".md"]` (`[]` in FileUploader).
+- The **fileUploaderOptions**.[allowedFileExtensions](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#allowedFileExtensions) property value is `[".jpg", ".jpeg", ".png", ".gif", ".webp", ".bmp", ".pdf", ".docx", ".xlsx", ".pptx", ".txt", ".rtf", ".csv", ".md"]` (`[]` in FileUploader).
 
 The following example reverts these options:
 

@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-Text that AI column cells display if the AI service returns no data.
+Text displayed in AI column cells if the AI service returns no data.
 
 ---
 <!-- Description goes here -->

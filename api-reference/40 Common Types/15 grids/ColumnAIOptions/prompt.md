@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-The prompt to be included in AI requests.
+The column's initial AI prompt.
 
 ---
 <!-- Description goes here -->

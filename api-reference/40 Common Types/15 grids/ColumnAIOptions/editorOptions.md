@@ -4,7 +4,7 @@ type: dxTextBox_Options
 ---
 ---
 ##### shortDescription
-A configuration object for the AI column's prompt input field.
+Configures the AI column's prompt input field (a DevExtreme [TextBox](/Documentation/Guide/UI_Components/TextBox/Overview/) component).
 
 ---
 <!-- Description goes here -->

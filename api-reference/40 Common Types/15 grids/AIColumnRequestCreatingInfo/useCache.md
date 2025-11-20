@@ -4,7 +4,7 @@ type: Boolean
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures whether the component caches AI requests.
 
 ---
 <!-- Description goes here -->

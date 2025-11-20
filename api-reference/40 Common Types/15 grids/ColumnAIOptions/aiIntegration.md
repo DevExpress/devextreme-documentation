@@ -8,4 +8,4 @@ default: undefined
 Binds the column to an AI service.
 
 ---
-This object configures AI options specific to a column.
+This object configures AI options specific to a column and overrides common **aiIntegration** options (defined outside of **columns[]**).

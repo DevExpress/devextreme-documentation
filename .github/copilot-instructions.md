@@ -18,7 +18,7 @@ What you need to do:
 
 When reviewing PRs, please follow these guidelines:
 
-DevExtreme Documentation Style Guide:
+When reviewing documentation content:
 1. Use American English spelling and grammar.
 2. Use active voice and present tense. Prefer active sentences with clear subject and verb.
 3. Use consistent terminology (refer to existing documentation).
@@ -28,6 +28,6 @@ DevExtreme Documentation Style Guide:
 7. Use the Oxford comma.
 8. Avoid comma-separated clauses at the beginning of sentences.
 
-When Reviewing Code Samples:
+When reviewing code samples:
 1. Follow the existing code style in the file.
 2. Ensure code samples follow best practices for the relevant technology. E.g., Vue samples should use the Composition API + TS. React samples should use functional components + hooks + TS.

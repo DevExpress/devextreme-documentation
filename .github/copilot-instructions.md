@@ -1,4 +1,4 @@
-Title: GitHub Copilot Instructions
+# GitHub Copilot Instructions
 
 These instructions summarize the DevExpress/devextreme-documentation repository so you can make efficient, correct suggestions with minimal exploratory searching. Trust these instructions first; only search if information is missing or proves inaccurate.
 
@@ -10,7 +10,7 @@ It is a content + light tooling project (not a compiled application). Your typic
 - Reviewing the style consistency of code samples (JavaScript/HTML/CSS/TypeScript).
 - Reviewing the technical accuracy of code samples (JavaScript/HTML/CSS/TypeScript).
 
-What you need to do is:
+What you need to do:
 - You will review Pull Requests (PRs) submitted by contributors.
 - You will leave comments on PRs when you spot issues.
 - YOU WILL NOT SUBMIT PRS YOURSELF.
@@ -28,6 +28,6 @@ DevExtreme Documentation Style Guide:
 7. Use the Oxford comma.
 8. Avoid comma-separated clauses at the beginning of sentences.
 
-When reviewing code samples:
+When Reviewing Code Samples:
 1. Follow the existing code style in the file.
 2. Ensure code samples follow best practices for the relevant technology. E.g., Vue samples should use the Composition API + TS. React samples should use functional components + hooks + TS.

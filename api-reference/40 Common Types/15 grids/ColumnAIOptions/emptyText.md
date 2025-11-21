@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-Initial text displayed in AI column cells.
+Text displayed in AI column cells that contain an empty value.
 
 ---
 <!-- Description goes here -->

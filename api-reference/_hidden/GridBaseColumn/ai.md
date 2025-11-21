@@ -8,4 +8,12 @@ inheritsType: ColumnAI.Options
 Configures AI options for the column.
 
 ---
-<!-- Description goes here -->
+Configure this property to integrate an AI column.
+
+[note]
+
+Note the following AI column specifics:
+
+- To ensure the AI column functions correctly, specify key values in the {WidgetName} data source.
+
+[/note]

@@ -4,7 +4,7 @@ type: dxPopup_Options
 ---
 ---
 ##### shortDescription
-Configures the AI column's prompt prompt editor popup (a DevExtreme [Popup](/Documentation/Guide/UI_Components/Popup/Overview/) component).
+Configures the AI column's prompt editor popup (a DevExtreme [Popup](/Documentation/Guide/UI_Components/Popup/Overview/) component).
 
 ---
 <!-- Description goes here -->

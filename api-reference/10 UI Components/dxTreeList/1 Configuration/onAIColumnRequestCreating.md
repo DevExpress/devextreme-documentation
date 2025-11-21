@@ -11,7 +11,7 @@ A function that is executed before an AI column request is created.
 Information about the event.
 
 ##### field(e.additionalInfo): Object
-Additional data to include in the request.
+Additional data to include in the request (such as metadata for AI endpoints).
 
 ##### field(e.cancel): Boolean
 Allows you to cancel the request.
@@ -23,13 +23,13 @@ The AI column that initiated the request.
 The UI component's instance.
 
 ##### field(e.data): Array<Object>
-An array of {WidgetName} records.
+{WidgetName} data included in the AI request.
 
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.useCache): Boolean
-Specifies whether to cache request parameters.
+Specifies whether the component uses cached results.
 
 ---
 This handler allows you to modify or cancel AI column requests. The following code snippet demonstrates how to cancel an AI column request that includes more than 100 {WidgetName} records:

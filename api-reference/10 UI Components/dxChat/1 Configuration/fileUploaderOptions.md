@@ -10,7 +10,7 @@ Configures file upload options.
 ---
 Define [uploadFile](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadFile) in this object to enable file upload.
 
-You can specify most [FileUploader properties](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/) in this object except those listed below. These properties are overridden by Chat.
+You can specify most [FileUploader properties](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/) in this object, except for the properties listed below. Chat overrides these properties.
 
 - [dialogTrigger](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#dialogTrigger)
 - [rtlEnabled](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#rtlEnabled)

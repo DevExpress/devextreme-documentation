@@ -15,6 +15,6 @@ When this property is set to *"auto"*, the AI column sends requests to update va
 Note the following **mode** specifics:
 
 - If this property is set to *"auto"*, the component sends AI requests to update data each time users update the AI column prompt.
-- If this property is set to *"manual"* and the component hides the AI column (when [columnHidingEnabled](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnHidingEnabled) is `true`), users will not have access to the header menu to generate AI data.
+- If this property is set to *"manual"* and the component hides the AI column (when [columnHidingEnabled](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnHidingEnabled) is `true`), users do not have access to the [AI header menu]({currentpath}/#showHeaderMenu) to generate data.
 
 [/note]

@@ -3,10 +3,10 @@ id: GridBase.abortAIColumnRequest(columnName)
 ---
 ---
 ##### shortDescription
-Aborts the requests of an AI column.
+Aborts an AI column's requests.
 
 ##### param(columnName): String
-The AI column name.
+The AI column's name.
 
 ---
 <!-- Description goes here -->

@@ -4,7 +4,7 @@ type: Boolean
 ---
 ---
 ##### shortDescription
-Configures whether the component caches the request's result.
+Configures whether the component uses cached results.
 
 ---
 <!-- Description goes here -->

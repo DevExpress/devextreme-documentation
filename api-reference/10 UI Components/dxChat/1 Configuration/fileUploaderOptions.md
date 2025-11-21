@@ -8,7 +8,7 @@ default: null
 Configures file upload options.
 
 ---
-Define [uploadFile](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadFile) in this object to enable file upload. To show the "Attach" button, pass at least an empty object to **fileUploaderOptions**.
+Define [uploadFile](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#uploadFile) in this object to enable file upload.
 
 You can specify most [FileUploader properties](/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/) in this object except those listed below. These properties are overridden by Chat.
 

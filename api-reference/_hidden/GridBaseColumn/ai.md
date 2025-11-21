@@ -15,6 +15,6 @@ Configure this property to integrate an AI column.
 Note the following AI column specifics:
 
 - To ensure the AI column functions correctly, specify key values in the {WidgetName} data source.
-- If {WidgetName} automatically hides an AI column (when [columnHidingEnabled]({basewidgetpath}/Configuration/#columnHidingEnabled) is `true`), users cannot access the [AI header menu]({currentpath}/#showHeaderMenu).
+- If {WidgetName} automatically hides an AI column (when [columnHidingEnabled]({basewidgetpath}/Configuration/#columnHidingEnabled) is `true`), users cannot access the [AI header menu]({basewidgetpath}/Configuration/columns/ai/#showHeaderMenu).
 
 [/note]

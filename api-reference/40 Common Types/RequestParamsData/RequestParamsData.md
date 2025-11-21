@@ -10,4 +10,4 @@ generateTypeLink:
 An object that contains additional data to be sent to an AI model.
 
 ---
-Configure this object to send additional data in AI requests.
+You can add data required for AI endpoints in this object, such as metadata and query parameters.

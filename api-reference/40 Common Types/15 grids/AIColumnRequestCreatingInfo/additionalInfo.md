@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-An object that contains additional data to include in the request.
+Additional data to include in the request.
 
 ---
-<!-- Description goes here -->
+You can add data required for AI endpoints in this object, such as metadata and query parameters.

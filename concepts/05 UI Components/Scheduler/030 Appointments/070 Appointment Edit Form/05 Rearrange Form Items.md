@@ -1,4 +1,4 @@
-Configure **editing**.**form**.[items[]]() to customize the appointment edit form layout. To preserve the form's switching functionality between `mainGroup` and `recurrenceGroup`, add the groups as [group items]() in the **items[]** root:
+Configure **editing**.**form**.[items[]](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/form/#items) to customize the appointment edit form layout. To preserve the form's switching functionality between `mainGroup` and `recurrenceGroup`, add the groups as [group items](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/) in the **items[]** root:
 
 ---
 

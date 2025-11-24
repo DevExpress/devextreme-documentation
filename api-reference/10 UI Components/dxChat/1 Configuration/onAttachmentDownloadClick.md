@@ -7,7 +7,7 @@ default: undefined
 ##### shortDescription
 A function that is executed after a user clicks the "Download" button.
 
-##### param(e): ui/chat:AttachmentDownloadEvent
+##### param(e): ui/chat:AttachmentDownloadClickEvent
 Information about the event.
 
 ##### field(e.attachment): Attachment

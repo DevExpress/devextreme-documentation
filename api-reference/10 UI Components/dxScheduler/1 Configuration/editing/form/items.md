@@ -15,25 +15,25 @@ The following predefined items are available in the Appointment Edit Form:
     |  ├─ subjectGroup
     |  │  ├─ subjectIcon
     |  │  └─ subjectEditor
-    |  └─ dateGroup
-    |     ├─ dateIcon
-    |     ├─ allDayEditor
-    |     ├─ startDateGroup
-    |     │  ├─ startDateTimeGroup
-    |     │  │  ├─ startDateEditor
-    |     │  │  └─ startTimeEditor
-    |     │  └─ startDateTimezoneEditor
-    |     ├─ endDateGroup
-    |     │  ├─ endDateTimeGroup
-    |     │  │  ├─ endDateEditor
-    |     │  │  └─ endTimeEditor
-    |     │  └─ endDateTimezoneEditor
-    |     ├─ repeatGroup
-    |     │  ├─ repeatIcon
-    |     │  └─ repeatEditor
-    |     └─ descriptionGroup
-    |        ├─ descriptionIcon
-    |        └─ descriptionEditor
+    |  ├─ dateGroup
+    |  │  ├─ dateIcon
+    |  │  ├─ allDayEditor
+    |  │  ├─ startDateGroup
+    |  │  │  ├─ startDateTimeGroup
+    |  │  │  │  ├─ startDateEditor
+    |  │  │  │  └─ startTimeEditor
+    |  │  │  └─ startDateTimezoneEditor
+    |  │  └─ endDateGroup
+    |  │     ├─ endDateTimeGroup
+    |  │     │  ├─ endDateEditor
+    |  │     │  └─ endTimeEditor
+    |  │     └─ endDateTimezoneEditor
+    |  ├─ repeatGroup
+    |  │  ├─ repeatIcon
+    |  │  └─ repeatEditor
+    |  └─ descriptionGroup
+    |     ├─ descriptionIcon
+    |     └─ descriptionEditor
     └─ recurrenceGroup
        ├─ recurrenceStartDateGroup
        │  ├─ recurrenceStartDateIcon

@@ -4,7 +4,7 @@ type: dxTextBox_Options
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the AI column's prompt editor input (a DevExtreme [TextArea](/Documentation/Guide/UI_Components/TextArea/Getting_Started_with_TextArea/) component).
 
 ---
 <!-- Description goes here -->

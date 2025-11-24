@@ -4,7 +4,7 @@ type: RequestParamsData
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Additional data sent to the AI model.
 
 ---
-<!-- Description goes here -->
+Configure this object to send additional data in the request.

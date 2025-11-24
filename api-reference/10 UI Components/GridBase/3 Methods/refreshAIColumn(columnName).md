@@ -3,10 +3,10 @@ id: GridBase.refreshAIColumn(columnName)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Refreshes the values of an AI column.
 
 ##### param(columnName): String
-<!-- Description goes here -->
+The AI column name.
 
 ---
-<!-- Description goes here -->
+This method requests new values from the AI Service specified by {WidgetName} [aiIntegration]({basewidgetpath}/Configuration/#aiIntegration) settings.

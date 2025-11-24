@@ -4,7 +4,7 @@ type: GridBaseColumn
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The AI column that initiated the request.
 
 ---
 <!-- Description goes here -->

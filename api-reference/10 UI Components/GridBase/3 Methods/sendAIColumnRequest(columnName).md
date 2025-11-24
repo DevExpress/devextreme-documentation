@@ -3,10 +3,10 @@ id: GridBase.sendAIColumnRequest(columnName)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Populates the AI column with values.
 
 ##### param(columnName): String
-<!-- Description goes here -->
+The AI column name.
 
 ---
-<!-- Description goes here -->
+This method requests column values from the AI Service specified by {WidgetName} [aiIntegration]({basewidgetpath}/Configuration/#aiIntegration) settings.

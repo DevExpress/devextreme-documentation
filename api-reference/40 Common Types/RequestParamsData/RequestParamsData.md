@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An object that contains additional data to be sent to an AI model.
 
 ---
-<!-- Description goes here -->
+Use this object to specify additional data required by AI endpoints. For example, you can add metadata and query parameters.

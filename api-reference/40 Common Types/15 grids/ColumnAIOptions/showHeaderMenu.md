@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Configures visibility of the AI header menu button.
+Configures menu button visibility in the AI column header.
 
 ---
 When this property is enabled, the column displays an AI header menu that includes the following items:

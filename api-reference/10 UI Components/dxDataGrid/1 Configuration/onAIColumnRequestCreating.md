@@ -32,7 +32,7 @@ The UI component's instance.
 Specifies whether the component uses cached results.
 
 ---
-This handler allows you to modify or cancel AI column requests. The following code snippet demonstrates how to cancel an AI column request that includes more than 100 {WidgetName} records:
+This handler allows you to modify or cancel AI column requests. The following code snippet demonstrates how to cancel AI column requests that include more than 100 {WidgetName} records:
 
 ---
 

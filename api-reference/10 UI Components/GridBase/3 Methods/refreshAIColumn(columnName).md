@@ -9,4 +9,4 @@ Refreshes the values of an AI column.
 The AI column name.
 
 ---
-This method sends a request to the {WidgetName} [aiIntegration]({basewidgetpath}/Configuration/#aiIntegration) to refresh AI column values.
+This method requests new values from the AI Service specified by {WidgetName} [aiIntegration]({basewidgetpath}/Configuration/#aiIntegration) settings.

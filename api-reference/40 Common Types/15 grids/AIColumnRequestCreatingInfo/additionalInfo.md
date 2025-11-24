@@ -7,4 +7,4 @@ type: Object
 Additional data to include in the request.
 
 ---
-You can add data required for AI endpoints in this object, such as metadata and query parameters.
+Use this object to specify additional data required by AI endpoints. For example, you can add metadata and query parameters.

@@ -40,12 +40,12 @@ The following predefined items are available in the Appointment Edit Form:
        │  └─ recurrenceStartDateEditor
        ├─ recurrenceRuleGroup
        │  ├─ recurrenceRuleIcon
-       │  ├─ recurrenceRuleRepeatGroup
-       │  ├─ recurrenceCountEditor
-       │  ├─ recurrencePeriodEditor
-       │  └─ recurrenceDayOfYearGroup — recurrenceDaysOfWeekEditor — recurrenceDayOfMonthEditor
-       │     ├─ recurrenceDayOfYearMonthEditor
-       │     └─ recurrenceDayOfYearDayEditor
+       │  └─ recurrenceRuleRepeatGroup
+       │     ├─ recurrenceCountEditor
+       │     ├─ recurrencePeriodEditor
+       │     └─ recurrenceDayOfYearGroup — recurrenceDaysOfWeekEditor — recurrenceDayOfMonthEditor
+       │        ├─ recurrenceDayOfYearMonthEditor
+       │        └─ recurrenceDayOfYearDayEditor
        └─ recurrenceEndGroup
           ├─ recurrenceEndIcon
           └─ recurrenceEndEditor

@@ -5,7 +5,7 @@ default: []
 ---
 ---
 ##### shortDescription
-Configures Appointment Edit Form items.
+Configures items within the appointment edit form.
 
 ---
 The following predefined items are available in the Appointment Edit Form:

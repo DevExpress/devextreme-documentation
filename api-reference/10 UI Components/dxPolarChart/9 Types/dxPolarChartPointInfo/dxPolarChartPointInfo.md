@@ -2,12 +2,12 @@
 id: dxPolarChartPointInfo
 module: viz/polar_chart
 export: PointInfo
-type: BasePointInfo
+inheritsType: BasePointInfo
 generateTypeLink: 
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Data of the hovered/pressed series point.
 
 ---
 <!-- Description goes here -->

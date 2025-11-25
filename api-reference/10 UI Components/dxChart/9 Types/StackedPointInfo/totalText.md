@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Total formatted value of points at the same argument as the hovered/pressed point (after [format]({basewidgetpath}/Configuration/tooltip/#format) has been applied).
 
 ---
 <!-- Description goes here -->

@@ -4,7 +4,7 @@ type: String | Number | Date
 ---
 ---
 ##### shortDescription
-The value of the series point.
+The point's value.
 
 ---
 <!-- Description goes here -->

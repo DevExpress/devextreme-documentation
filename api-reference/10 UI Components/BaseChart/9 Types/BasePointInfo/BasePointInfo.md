@@ -8,7 +8,7 @@ hidden:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Data of the hovered/pressed series point shared across all series types.
 
 ---
 <!-- Description goes here -->

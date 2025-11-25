@@ -4,7 +4,7 @@ type: String | Number | Date
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The point's raw value set in the data source.
 
 ---
 <!-- Description goes here -->

@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The point's high error value (specified in **valueErrorBar**.[highValueField]({basewidgetpath}/Configuration/commonSeriesSettings/valueErrorBar/#highValueField)).
 
 ---
 <!-- Description goes here -->

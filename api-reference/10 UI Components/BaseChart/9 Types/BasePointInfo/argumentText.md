@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The point's formatted argument (after [argumentFormat]({basewidgetpath}/Configuration/tooltip/#argumentFormat) has been applied).
 
 ---
 <!-- Description goes here -->

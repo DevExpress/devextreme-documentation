@@ -1,6 +1,6 @@
 ---
 type: Promise<void>
-uid: ui/card_view:CardSavingEvent.promise
+uid: ui/card_view:SavingEvent.promise
 ---
 ---
 ##### shortDescription

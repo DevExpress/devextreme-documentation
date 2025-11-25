@@ -12,7 +12,7 @@ The AI-generated text.
 The AI column name.
 
 ##### param(key): any
-The {WidgetName} record [key]({basewidgetpath}/Configuration/#keyExpr) value.
+The {WidgetName} record [key](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/keyExpr.md '{basewidgetpath}/Configuration/#keyExpr') value.
 
 ---
 Call this method to access AI column values.

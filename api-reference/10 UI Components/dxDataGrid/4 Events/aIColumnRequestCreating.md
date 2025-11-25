@@ -7,4 +7,4 @@ type: eventType
 Raised before an AI column request is created.
 
 ---
-Main article: [onAIColumnRequestCreating]({basewidgetpath}/Configuration/#onAIColumnRequestCreating)
+Main article: [onAIColumnRequestCreating](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onAIColumnRequestCreating.md '{basewidgetpath}/Configuration/#onAIColumnRequestCreating')

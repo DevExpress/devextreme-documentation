@@ -1,14 +1,15 @@
 ---
-id: _ui_card_view_SavingEvent
 module: ui/card_view
 export: SavingEvent
 type: Object
 inherits: EventInfo,Cancelable
 references: dxCardView.Options.onSaving
+uid: ui/card_view:SavingEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The argument type in the [saving]({basewidgetpath}/Events/#saving) event.
 
 ---
 <!-- Description goes here -->

@@ -1,14 +1,15 @@
 ---
-id: _ui_card_view_SavedEvent
 module: ui/card_view
 export: SavedEvent
 type: Object
 inherits: EventInfo
 references: dxCardView.Options.onSaved
+uid: ui/card_view:SavedEvent
+generateTypeLink: 
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The argument type in the [saved]({basewidgetpath}/Events/#saved) event.
 
 ---
 <!-- Description goes here -->

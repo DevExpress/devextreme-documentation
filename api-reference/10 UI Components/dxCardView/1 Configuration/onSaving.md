@@ -4,25 +4,25 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before pending card changes are saved.
 
 ##### param(e): ui/card_view:SavingEvent
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Set this field to `true` if the default saving logic should be disabled.
 
 ##### field(e.changes): Array<DataChange>
-<!-- Description goes here -->
+Pending row changes; a copy of the **editing**.[changes](/api-reference/10%20UI%20Components/dxCardView/9%20Types/dxCardViewEditing/changes.md '{basewidgetpath}/Configuration/editing/changes/') array. Includes only card changes, unlike [onSaved](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/onSaved.md '{basewidgetpath}/Configuration/#onSaved'), which contains all card data (including changes).
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.promise): Promise<void>
-<!-- Description goes here -->
+Assign a Promise to this field to perform an asynchronous operation, such as a request to a server.
 
 ---
 <!-- Description goes here -->

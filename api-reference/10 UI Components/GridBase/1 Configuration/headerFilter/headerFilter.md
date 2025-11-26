@@ -43,12 +43,12 @@ If a column has empty cells (`null`, `undefined`, or `''`), the header filter ad
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-header-filter [visible]="true"></dxo-header-filter>
-        <dxi-column ... >
-            <dxo-header-filter ... 
+        <dxo-{widget-name}-header-filter [visible]="true"></dxo-{widget-name}-header-filter>
+        <dxi-{widget-name}-column ... >
+            <dxo-{widget-name}-header-filter ... 
                 [dataSource]="calculateDataSource"
-            ></dxo-header-filter>
-        </dxi-column>
+            ></dxo-{widget-name}-header-filter>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

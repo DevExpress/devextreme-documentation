@@ -41,10 +41,10 @@ You can specify a custom width and height for the component:
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-size
+        <dxo-{widget-name}-size
             [height]="300"
             [width]="600">
-        </dxo-size>
+        </dxo-{widget-name}-size>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

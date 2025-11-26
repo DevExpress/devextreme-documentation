@@ -30,11 +30,11 @@ The UI component animates its elements at the beginning of its lifetime and when
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-animation
+        <dxo-{widget-name}-animation
             easing="linear"
             [duration]="500"
             [maxPointCountSupported]="100">
-        </dxo-animation>
+        </dxo-{widget-name}-animation>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

@@ -47,13 +47,13 @@ All `drivers` have the `busID` field, which refers to a bus. If `drivers` is the
 
     <!--HTML-->
     <dx-{widget-name} [dataSource]="drivers">
-        <dxi-column dataField="busID">
-            <dxo-lookup
+        <dxi-{widget-name}-column dataField="busID">
+            <dxo-{widget-name}-lookup
                 [dataSource]="buses"
                 valueExpr="busID"
                 displayExpr="plates">
-            </dxo-lookup>
-        </dxi-column>
+            </dxo-{widget-name}-lookup>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!--TypeScript-->

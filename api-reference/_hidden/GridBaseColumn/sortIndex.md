@@ -38,8 +38,8 @@ To sort data first by the *"Last Name"* and then by the *"First Name"* column, u
     
     <!--HTML-->
     <dx-{widget-name} ... >
-        <dxi-column dataField="firstName" [sortIndex]="1" sortOrder="asc"></dxi-column>
-        <dxi-column dataField="lastName" [sortIndex]="0" sortOrder="asc"></dxi-column>
+        <dxi-{widget-name}-column dataField="firstName" [sortIndex]="1" sortOrder="asc"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="lastName" [sortIndex]="0" sortOrder="asc"></dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!--TypeScript-->

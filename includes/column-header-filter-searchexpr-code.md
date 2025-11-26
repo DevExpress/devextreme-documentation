@@ -25,13 +25,13 @@
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxi-column ... >
-            <dxo-header-filter ... >
-                <dxo-search ...
+        <dxi-{widget-name}-column ... >
+            <dxo-{widget-name}-header-filter ... >
+                <dxo-{widget-name}-search ...
                     [searchExpr]="searchFields"
-                ></dxo-search>
-            </dxo-header-filter>
-        </dxi-column>
+                ></dxo-{widget-name}-search>
+            </dxo-{widget-name}-header-filter>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

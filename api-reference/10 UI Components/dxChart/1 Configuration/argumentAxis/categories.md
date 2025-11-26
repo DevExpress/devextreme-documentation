@@ -50,10 +50,10 @@ Arguments of the `string` type on discrete axes maintain the order of objects in
     <!-- tab: app.component.html -->
     <dx-{widget-name} ...
         [dataSource]="dataSource">
-        <dxo-argument-axis
+        <dxo-{widget-name}-argument-axis
             [categories]="continentNames"
             argumentField="continent">
-        </dxo-argument-axis>
+        </dxo-{widget-name}-argument-axis>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

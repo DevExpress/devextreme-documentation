@@ -52,28 +52,28 @@ Default form editors depend on the [columns' configuration](/api-reference/10%20
     
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-editing
+        <dxo-{widget-name}-editing
             [allowUpdating]="true"
             mode="form">
-            <dxo-form>
-                <dxi-item itemType="group" caption="Personal Data">
-                    <dxi-item dataField="Prefix"></dxi-item>
-                    <dxi-item dataField="Full_Name"></dxi-item>
-                    <dxi-item dataField="Position"></dxi-item>
-                    <dxi-item dataField="Duties" editorType="dxTextArea"></dxi-item>
-                </dxi-item>
-                <dxi-item itemType="group" caption="Contacts">
-                    <dxi-item dataField="Email"></dxi-item>
-                    <dxi-item dataField="Skype"></dxi-item>
-                </dxi-item>
-            </dxo-form>
-        </dxo-editing>
-        <dxi-column dataField="Full_Name"></dxi-column>
-        <dxi-column dataField="Prefix"></dxi-column>
-        <dxi-column dataField="Position"></dxi-column>
-        <dxi-column dataField="Duties"></dxi-column>
-        <dxi-column dataField="Email"></dxi-column>
-        <dxi-column dataField="Skype"></dxi-column>
+            <dxo-{widget-name}-form>
+                <dxi-{widget-name}-item itemType="group" caption="Personal Data">
+                    <dxi-{widget-name}-item dataField="Prefix"></dxi-{widget-name}-item>
+                    <dxi-{widget-name}-item dataField="Full_Name"></dxi-{widget-name}-item>
+                    <dxi-{widget-name}-item dataField="Position"></dxi-{widget-name}-item>
+                    <dxi-{widget-name}-item dataField="Duties" editorType="dxTextArea"></dxi-{widget-name}-item>
+                </dxi-{widget-name}-item>
+                <dxi-{widget-name}-item itemType="group" caption="Contacts">
+                    <dxi-{widget-name}-item dataField="Email"></dxi-{widget-name}-item>
+                    <dxi-{widget-name}-item dataField="Skype"></dxi-{widget-name}-item>
+                </dxi-{widget-name}-item>
+            </dxo-{widget-name}-form>
+        </dxo-{widget-name}-editing>
+        <dxi-{widget-name}-column dataField="Full_Name"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="Prefix"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="Position"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="Duties"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="Email"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="Skype"></dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

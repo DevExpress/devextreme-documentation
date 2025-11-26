@@ -48,13 +48,13 @@ The default header filter for date columns is hierarchical. To implement a non-h
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxi-column ...
+        <dxi-{widget-name}-column ...
             dataType="date"
             [calculateFilterExpression]="calculateFilterExpression">
-            <dxo-header-filter
+            <dxo-{widget-name}-header-filter
                 [groupInterval]="null"
-            ></dxo-header-filter>
-        </dxi-column>
+            ></dxo-{widget-name}-header-filter>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

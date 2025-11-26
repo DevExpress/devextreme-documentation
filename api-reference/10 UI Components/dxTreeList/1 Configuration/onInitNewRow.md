@@ -75,9 +75,9 @@ In the following code, the **onInitNewRow** function is used to provide default 
     <dx-{widget-name} ...
         [dataSource]="employees"
         (onInitNewRow)="onInitNewRow($event)">
-        <dxi-column dataField="ID"></dxi-column>
-        <dxi-column dataField="hireDate" dataType="date"></dxi-column>
-        <dxi-column dataField="position"></dxi-column>
+        <dxi-{widget-name}-column dataField="ID"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="hireDate" dataType="date"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="position"></dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

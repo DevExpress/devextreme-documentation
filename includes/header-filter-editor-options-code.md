@@ -25,12 +25,12 @@
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-header-filter ... >
-            <dxo-search
+        <dxo-{widget-name}-header-filter ... >
+            <dxo-{widget-name}-search
                 [editorOptions]="searchEditorOptions"
                 // ...
-            ></dxo-search>
-        </dxo-header-filter>
+            ></dxo-{widget-name}-search>
+        </dxo-{widget-name}-header-filter>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

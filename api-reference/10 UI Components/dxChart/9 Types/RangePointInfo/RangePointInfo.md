@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Series point data included in [RangeArea]({basewidgetpath}/Series_Types/RangeAreaSeries/) and [RangeBar]({basewidgetpath}/Series_Types/RangeBarSeries/) series.
 
 ---
 <!-- Description goes here -->

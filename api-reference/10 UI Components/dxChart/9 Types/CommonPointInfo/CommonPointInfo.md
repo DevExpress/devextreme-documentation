@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-Data of the hovered/pressed series point included in all series types.
+Series point data included in all series types.
 
 ---
 <!-- Description goes here -->

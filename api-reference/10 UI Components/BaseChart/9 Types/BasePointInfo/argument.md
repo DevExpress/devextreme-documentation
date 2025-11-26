@@ -4,7 +4,7 @@ type: String | Number | Date
 ---
 ---
 ##### shortDescription
-The point's argument.
+The point's argument value.
 
 ---
 <!-- Description goes here -->

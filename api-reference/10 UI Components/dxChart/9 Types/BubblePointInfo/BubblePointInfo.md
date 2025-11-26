@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-Data of the hovered/pressed series point included in the [Bubble]({basewidgetpath}/Series_Types/BubbleSeries/) series.
+Series point data included in the [Bubble]({basewidgetpath}/Series_Types/BubbleSeries/) series.
 
 ---
 <!-- Description goes here -->

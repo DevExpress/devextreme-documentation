@@ -8,7 +8,7 @@ default: undefined
 Specifies custom markup for tooltips
 
 ##### param(pointInfo): dxChartPointInfo
-Data of the hovered/pressed series point.
+Series point data.
 
 ##### param(element): DxElement
 #include common-ref-elementparam with { element: "tooltip" }

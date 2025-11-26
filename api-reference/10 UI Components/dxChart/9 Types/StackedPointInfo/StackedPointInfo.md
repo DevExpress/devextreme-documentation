@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-Data of the hovered/pressed series point included in stacked series.
+Series point data included in stacked series.
 
 ---
 Points within the following series contain data included in this type:

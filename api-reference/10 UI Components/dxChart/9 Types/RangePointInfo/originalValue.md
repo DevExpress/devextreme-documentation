@@ -4,7 +4,7 @@ type: String | Number | Date
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The point's raw [second value]({basewidgetpath}/Configuration/commonSeriesSettings/#rangeValue2Field) (set in the component data source).
 
 ---
 <!-- Description goes here -->

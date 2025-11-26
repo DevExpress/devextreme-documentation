@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-Data of the hovered/pressed series point.
+Series point data.
 
 ---
 **PointInfo** is a union of multiple types that changes based on the hovered/pressed point's series type. Refer to the following topics for additional information:

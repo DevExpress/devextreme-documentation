@@ -4,7 +4,7 @@ type: Number | String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The point's raw open value (set in the component data source).
 
 ---
 <!-- Description goes here -->

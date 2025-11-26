@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-Size of the hovered/pressed point's bubble.
+The point's bubble size.
 
 ---
 <!-- Description goes here -->

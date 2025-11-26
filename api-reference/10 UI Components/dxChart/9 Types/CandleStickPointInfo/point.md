@@ -4,7 +4,7 @@ type: chartPointObject
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+[Point]({basewidgetpath}/Chart_Elements/Point/) instance of the hovered/pressed series point.
 
 ---
-<!-- Description goes here -->
+Use this object to call [point methods]({basewidgetpath}/Chart_Elements/Point/Methods) or access the [point fields]({basewidgetpath}/Chart_Elements/Point/Fields).

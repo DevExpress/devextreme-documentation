@@ -2,12 +2,12 @@
 id: CommonPointInfo
 module: viz/chart
 export: CommonPointInfo
-type: BasePointInfo
+inheritsType: BasePointInfo
 generateTypeLink: 
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Series point data included in all series types.
 
 ---
 <!-- Description goes here -->

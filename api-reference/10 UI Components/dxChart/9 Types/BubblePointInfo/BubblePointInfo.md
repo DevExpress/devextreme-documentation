@@ -2,12 +2,12 @@
 id: BubblePointInfo
 module: viz/chart
 export: BubblePointInfo
-type: Object
+inheritsType: BasePointInfo
 generateTypeLink: 
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Series point data included in the [Bubble]({basewidgetpath}/Series_Types/BubbleSeries/) series.
 
 ---
 <!-- Description goes here -->

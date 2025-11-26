@@ -8,7 +8,7 @@ hidden:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Series point data shared across all series types.
 
 ---
 <!-- Description goes here -->

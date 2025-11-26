@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The point's formatted first and second values (after [format]({basewidgetpath}/Configuration/tooltip/#format) has been applied).
 
 ---
 <!-- Description goes here -->

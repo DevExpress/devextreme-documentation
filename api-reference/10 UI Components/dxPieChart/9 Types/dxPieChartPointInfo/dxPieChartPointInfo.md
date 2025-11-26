@@ -2,12 +2,12 @@
 id: dxPieChartPointInfo
 module: viz/pie_chart
 export: PointInfo
-type: BasePointInfo | Object
+inheritsType: BasePointInfo
 generateTypeLink: 
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Series point data.
 
 ---
 <!-- Description goes here -->

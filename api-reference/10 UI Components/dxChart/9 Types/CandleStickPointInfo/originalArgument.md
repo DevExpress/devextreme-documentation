@@ -4,7 +4,7 @@ type: String | Number | Date
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The point's raw argument value (set in the component data source).
 
 ---
 <!-- Description goes here -->

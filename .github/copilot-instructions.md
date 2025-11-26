@@ -24,10 +24,10 @@ When reviewing documentation content:
 2. Use active voice and present tense. Prefer active sentences with clear subject, object, and verb.
 3. Use consistent terminology (refer to existing documentation).
 4. Do not use contractions and elisions; prefer full/complete wording versions.
-5. All the headings should use Title Case. Do not use end punctuation (a period) at the end of headings.
+5. All the headings should use Title Case. Do not use end punctuation (periods) at the end of headings.
 6. Remember to write alt text for images.
 7. Use the Oxford comma.
-8. Avoid comma-separated clauses at the beginning of sentences.
+8. Avoid introductory dependent clauses followed by commas (e.g., prefer "The function returns true" over "When called, the function returns true").
 
 When reviewing code samples:
 1. Follow the existing code style in the file.

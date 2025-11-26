@@ -233,10 +233,10 @@ To add a button to the toolbar, add its [name](/concepts/05%20UI%20Components/Ht
     <!--HTML-->
     <dx-html-editor>
         <dxo-html-editor-toolbar>
-            <dxi-html-editor-item name="bold"/>
-            <dxi-html-editor-item name="italic"/>
-            <dxi-html-editor-item name="alignRight"/>
-            <dxi-html-editor-item name="alignLeft"/>
+            <dxi-html-editor-item name="bold"></dxi-html-editor-item>
+            <dxi-html-editor-item name="italic"></dxi-html-editor-item>
+            <dxi-html-editor-item name="alignRight"></dxi-html-editor-item>
+            <dxi-html-editor-item name="alignLeft"></dxi-html-editor-item>
         </dxo-html-editor-toolbar>
     </dx-html-editor>
 

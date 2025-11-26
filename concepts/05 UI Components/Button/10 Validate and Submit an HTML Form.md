@@ -83,7 +83,7 @@ Commonly, editors nested into an HTML form are supposed to be validated on the c
             </DxTextBox>
             <DxTextBox name="Password" mode="password">
                 <DxValidator>
-                    <dx-validation-rule type="required" />
+                    <DxValidationRule type="required" />
                 </DxValidator>
             </DxTextBox>
             <DxButton

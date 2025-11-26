@@ -33,7 +33,7 @@ The component applies default property values to newly created items if you do n
 
     <!-- tab: app.component.html -->+
     <dx-diagram #diagram id="diagram">
-        <dxo-diagram-nodes ... />
+        <dxo-diagram-nodes ... ></dxo-diagram-nodes>
         <dxo-diagram-default-item-properties 
             connectorLineStart="outlinedTriangle" 
             connectorLineEnd="none" 

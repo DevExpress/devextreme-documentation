@@ -29,7 +29,7 @@ We recommend using named configuration components that are specific to the UI co
 You can implement named configuration components for nested DevExtreme components, such as the editing [Popup](/concepts/05%20UI%20Components/Popup/02%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/Popup/Overview/') within the [DataGrid](/concepts/05%20UI%20Components/DataGrid/03%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/DataGrid/Overview/'). To do this, specify **top-level component** names. For instance, to configure Popup animation settings within a DataGrid, implement the `<dxo-data-grid-animation>` configuration component:
 
     <dx-data-grid ... >
-        <dxo-data-grid-editing mode="popup" />
+        <dxo-data-grid-editing mode="popup"></dxo-data-grid-editing>
         <dxo-data-grid-popup>
             <dxo-data-grid-animation
                 [show]="showOptions"
@@ -44,7 +44,7 @@ Specify Popup and [Popover](/concepts/05%20UI%20Components/Popover/00%20Overview
 
     <!-- Toolbar item in a DataGrid editing Popup -->
     <dx-data-grid ... >
-        <dxo-data-grid-editing mode="popup" />
+        <dxo-data-grid-editing mode="popup"></dxo-data-grid-editing>
         <dxo-data-grid-popup>
             <dxi-data-grid-toolbar-item
                 widget="dxButton"

@@ -295,9 +295,9 @@ If you configure a form with [tabbed items](/api-reference/10%20UI%20Components/
             <dxo-data-grid-editing ... >
                 <dxo-data-grid-form>
                     <dxi-data-grid-item itemType="tabbed">
-                        <dxo-tab-panel-options [deferRendering]="false" />
+                        <dxo-tab-panel-options [deferRendering]="false"></dxo-tab-panel-options>
                         <dxi-tab ... >
-                            <dxi-data-grid-item ... />
+                            <dxi-data-grid-item ... ></dxi-data-grid-item>
                         </dxi-tab>
                     </dxi-data-grid-item>
                 </dxo-data-grid-form>

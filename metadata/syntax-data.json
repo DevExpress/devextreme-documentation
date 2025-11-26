@@ -434,6 +434,11 @@
       "react": "_ui_card_view_InitNewCardEvent",
       "vue": "Dx_ui_card_view_InitNewCardEvent"
     },
+    "_ui_card_view_OptionChangedEvent": {
+      "angular": "dxo-ui-card-view--option-changed-event",
+      "react": "_ui_card_view_OptionChangedEvent",
+      "vue": "Dx_ui_card_view_OptionChangedEvent"
+    },
     "_ui_card_view_SavedEvent": {
       "angular": "dxo-ui-card-view--saved-event",
       "react": "_ui_card_view_SavedEvent",
@@ -8270,6 +8275,9 @@
     },
     "dxCardViewOptions.onInitNewCard": {
       "vue": "@init-new-card"
+    },
+    "dxCardViewOptions.onOptionChanged": {
+      "vue": "@option-changed"
     },
     "dxCardViewOptions.onSaved": {
       "vue": "@saved"

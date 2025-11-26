@@ -2,7 +2,7 @@
 id: CandleStickPointInfo
 module: viz/chart
 export: CandleStickPointInfo
-inheritsType: BasePointInfo
+type: Object
 generateTypeLink: 
 ---
 ---

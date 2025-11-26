@@ -2,7 +2,7 @@
 id: RangePointInfo
 module: viz/chart
 export: RangePointInfo
-inheritsType: BasePointInfo
+type: Object
 generateTypeLink: 
 ---
 ---

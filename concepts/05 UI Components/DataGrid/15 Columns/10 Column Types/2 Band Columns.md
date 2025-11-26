@@ -21,11 +21,11 @@ To set up this layout, describe the hierarchy of columns directly in an object o
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column caption="Contacts">
-            <dxi-column dataField="Email"></dxi-column>
-            <dxi-column dataField="Mobile_Phone"></dxi-column>
-            <dxi-column dataField="Skype"></dxi-column>
-        </dxi-column>
+        <dxi-data-grid-column caption="Contacts">
+            <dxi-data-grid-column dataField="Email"></dxi-data-grid-column>
+            <dxi-data-grid-column dataField="Mobile_Phone"></dxi-data-grid-column>
+            <dxi-data-grid-column dataField="Skype"></dxi-data-grid-column>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -255,19 +255,19 @@ Band columns support hierarchies of any nesting level and enables you to use the
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column caption="A">
-            <dxi-column dataField="A1"></dxi-column>
-            <dxi-column dataField="A2"></dxi-column>
-            <dxi-column caption="A3">
-                <dxi-column dataField="A31"></dxi-column>
-                <dxi-column dataField="A32"></dxi-column>
-                <dxi-column caption="A33">
-                    <dxi-column dataField="A331"></dxi-column>
-                    <dxi-column dataField="A332"></dxi-column>
-                    <dxi-column dataField="A333"></dxi-column>
-                </dxi-column>
-            </dxi-column>
-        </dxi-column>
+        <dxi-data-grid-column caption="A">
+            <dxi-data-grid-column dataField="A1"></dxi-data-grid-column>
+            <dxi-data-grid-column dataField="A2"></dxi-data-grid-column>
+            <dxi-data-grid-column caption="A3">
+                <dxi-data-grid-column dataField="A31"></dxi-data-grid-column>
+                <dxi-data-grid-column dataField="A32"></dxi-data-grid-column>
+                <dxi-data-grid-column caption="A33">
+                    <dxi-data-grid-column dataField="A331"></dxi-data-grid-column>
+                    <dxi-data-grid-column dataField="A332"></dxi-data-grid-column>
+                    <dxi-data-grid-column dataField="A333"></dxi-data-grid-column>
+                </dxi-data-grid-column>
+            </dxi-data-grid-column>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->

@@ -6,14 +6,14 @@ The following code adds a search button to the toolbar:
     <header>
         <dx-toolbar class="header-toolbar">
             <!-- ... -->
-            <dxi-item
+            <dxi-toolbar-item
                 location="after"
                 widget="dxButton"
                 [options]="{
                     icon: 'search',
                     onClick: startSearch
                 }">
-            </dxi-item>
+            </dxi-toolbar-item>
             <!-- ... -->
         </dx-toolbar>
     </header>

@@ -56,8 +56,8 @@ Call this method to register a gradient ID. Assign the ID to a component's color
 
     <!-- tab: app.component.html -->
     <dx-chart ... >
-        <dxo-common-series-settings [color]="seriesColor">
-        </dxo-common-series-settings>
+        <dxo-chart-common-series-settings [color]="seriesColor">
+        </dxo-chart-common-series-settings>
     </dx-chart>
 
     <!-- tab: app.component.ts -->

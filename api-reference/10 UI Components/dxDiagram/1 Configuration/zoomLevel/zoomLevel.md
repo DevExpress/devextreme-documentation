@@ -26,10 +26,10 @@ Specifies the zoom level.
 
     <!-- tab: app.component.html -->+
     <dx-diagram #diagram id="diagram">
-        <dxo-zoom-level 
+        <dxo-diagram-zoom-level 
             [value]="0.75" 
             [items]='[0.5, 0.75, 1, 1.5]'>
-        </dxo-zoom-level>
+        </dxo-diagram-zoom-level>
     </dx-diagram>
 
 ##### Vue

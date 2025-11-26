@@ -78,9 +78,9 @@ Many [default templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templat
 
     <!-- tab: app.component.html -->
     <dx-context-menu ... >
-        <dxi-item text="Zoom In" icon="plus"></dxi-item>
-        <dxi-item text="Share" icon="message"></dxi-item>
-        <dxi-item text="Download" icon="download"></dxi-item>
+        <dxi-context-menu-item text="Zoom In" icon="plus"></dxi-context-menu-item>
+        <dxi-context-menu-item text="Share" icon="message"></dxi-context-menu-item>
+        <dxi-context-menu-item text="Download" icon="download"></dxi-context-menu-item>
     </dx-context-menu>
 
 ##### Vue

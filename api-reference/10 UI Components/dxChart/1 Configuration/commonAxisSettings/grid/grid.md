@@ -31,14 +31,14 @@ Gridlines can be considered extensions of [ticks](/api-reference/10%20UI%20Compo
 
     <!-- tab: app.component.html -->
     <dx-chart ... >
-        <dxo-common-axis-settings>
-            <dxo-grid
+        <dxo-chart-common-axis-settings>
+            <dxo-chart-grid
                 [visible]="true"
                 color="blue"
                 [opacity]="0.25"
                 [width]="2"
-            ></dxo-grid>
-        </dxo-common-axis-settings>
+            ></dxo-chart-grid>
+        </dxo-chart-common-axis-settings>
     </dx-chart>
 
 ##### Vue

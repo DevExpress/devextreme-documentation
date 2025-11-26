@@ -30,17 +30,17 @@ The Form UI component allows you to place custom content, for example, an image,
     <!--HTML-->
     <dx-form
         [(formData)]="employee">
-        <dxi-item
+        <dxi-form-item
             itemType="group"
             caption="Picture"
             [template]="'pictureTemplate'">
-        </dxi-item>
-        <dxi-item
+        </dxi-form-item>
+        <dxi-form-item
             itemType="group"
             caption="Personal Data">
-                <dxi-item dataField="firstName"></dxi-item>
-                <dxi-item dataField="lastName"></dxi-item>
-        </dxi-item>
+                <dxi-form-item dataField="firstName"></dxi-form-item>
+                <dxi-form-item dataField="lastName"></dxi-form-item>
+        </dxi-form-item>
         <div *dxTemplate="let data of 'pictureTemplate'">
             <img src="{{data.formData.picture}}">
         </div>

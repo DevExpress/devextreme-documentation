@@ -18,9 +18,9 @@ Depending on whether the legend is oriented vertically or horizontally, the Char
     ##### Angular
 
         <!--HTML--><dx-chart>
-            <dxo-legend
+            <dxo-chart-legend
                 orientation="vertical"> <!-- or "horizontal" -->
-            </dxo-legend>
+            </dxo-chart-legend>
         </dx-chart>
 
         <!--TypeScript-->
@@ -103,10 +103,10 @@ To distribute all legend items between several columns (in a vertically-oriented
     ##### Angular
 
         <!--HTML--><dx-chart>
-            <dxo-legend
+            <dxo-chart-legend
                 [columnCount]="3">
                 <!-- [rowCount]="2"> -->
-            </dxo-legend>
+            </dxo-chart-legend>
         </dx-chart>
 
         <!--TypeScript-->
@@ -187,10 +187,10 @@ Regardless the legend orientation, you can adjust the empty space between column
     ##### Angular
 
         <!--HTML--><dx-chart>
-            <dxo-legend
+            <dxo-chart-legend
                 [columnItemSpacing]="20"
                 [rowItemSpacing]="30">
-            </dxo-legend>
+            </dxo-chart-legend>
         </dx-chart>
 
         <!--TypeScript-->

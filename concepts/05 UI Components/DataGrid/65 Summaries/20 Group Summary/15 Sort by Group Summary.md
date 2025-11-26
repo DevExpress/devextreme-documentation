@@ -27,17 +27,17 @@ Groups are sorted by values of a column they are grouped by. You can also sort t
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-summary>
-            <dxi-group-item
+        <dxo-data-grid-summary>
+            <dxi-data-grid-group-item
                 column="OrderNumber"
                 summaryType="count"
                 name="Total Count">
-            </dxi-group-item>
-        </dxo-summary>
-        <dxi-sort-by-group-summary-info 
+            </dxi-data-grid-group-item>
+        </dxo-data-grid-summary>
+        <dxi-data-grid-sort-by-group-summary-info 
             summaryItem="Total Count"  <!-- or "count" | 0 | "OrderNumber" -->
             sortOrder="desc">          <!-- or "asc" -->
-        </dxi-sort-by-group-summary-info>
+        </dxi-data-grid-sort-by-group-summary-info>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -161,26 +161,26 @@ Summary-based sorting is applied when you group data by any column. If you need 
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-summary>
-            <dxi-group-item
+        <dxo-data-grid-summary>
+            <dxi-data-grid-group-item
                 column="SaleAmount"
                 summaryType="max">
-            </dxi-group-item>
-            <dxi-group-item
+            </dxi-data-grid-group-item>
+            <dxi-data-grid-group-item
                 column="TotalAmount"
                 summaryType="max">
-            </dxi-group-item>
-        </dxo-summary>
-        <dxi-sort-by-group-summary-info 
+            </dxi-data-grid-group-item>
+        </dxo-data-grid-summary>
+        <dxi-data-grid-sort-by-group-summary-info 
             summaryItem="max"  
             groupColumn="TotalAmount"
             sortOrder="asc">         
-        </dxi-sort-by-group-summary-info>
-        <dxi-sort-by-group-summary-info 
+        </dxi-data-grid-sort-by-group-summary-info>
+        <dxi-data-grid-sort-by-group-summary-info 
             summaryItem="max"  
             groupColumn="SaleAmount"
             sortOrder="desc">         
-        </dxi-sort-by-group-summary-info>
+        </dxi-data-grid-sort-by-group-summary-info>
     </dx-data-grid>
 
     <!--TypeScript-->

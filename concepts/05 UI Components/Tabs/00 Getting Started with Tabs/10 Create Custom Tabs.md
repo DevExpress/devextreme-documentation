@@ -35,11 +35,11 @@ The following code adds a fourth custom tab:
     <!-- tab: app.component.html -->
     <dx-tabs>
         <!-- ... -->
-        <dxi-item>
+        <dxi-tabs-item>
             <div *dxTemplate>
                 <div id="fourth">Fourth</div>
             </div>
-        </dxi-item>
+        </dxi-tabs-item>
     </dx-tabs>
 
     <!-- tab: app.component.css -->

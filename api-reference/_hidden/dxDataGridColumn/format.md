@@ -42,12 +42,12 @@ Cannot be converted, the cell value is exported without formatting. To export th
 
         <!-- tab: app.component.html -->
         <dx-data-grid ... >
-            <dxi-column ...
+            <dxi-data-grid-column ...
                 format="0.##" 
                 [customizeText]="customizeText">
-            </dxi-column>
-            <dxo-export [enabled]="true">
-            </dxo-export>
+            </dxi-data-grid-column>
+            <dxo-data-grid-export [enabled]="true">
+            </dxo-data-grid-export>
         </dx-data-grid>
 
         <!-- tab: app.component.ts -->

@@ -29,12 +29,12 @@ Use the **editing**.[popup](/api-reference/10%20UI%20Components/GridBase/1%20Con
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-editing
+        <dxo-data-grid-editing
             [allowUpdating]="true"
             mode="popup">
-            <dxo-form labelLocation="top"></dxo-form>
-            <dxo-popup [showTitle]="true" title="Row in the editing state"></dxo-popup>
-        </dxo-editing>
+            <dxo-data-grid-form labelLocation="top"></dxo-data-grid-form>
+            <dxo-data-grid-popup [showTitle]="true" title="Row in the editing state"></dxo-data-grid-popup>
+        </dxo-data-grid-editing>
     </dx-data-grid>
 
     <!--TypeScript-->

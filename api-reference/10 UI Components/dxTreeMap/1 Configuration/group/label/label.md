@@ -31,15 +31,15 @@ Each tile or the header of a group contains a text label identifying what this t
 
     <!-- tab: app.component.html -->
     <dx-tree-map ... >
-        <dxo-group>
-            <dxo-label>
-                <dxo-font
+        <dxo-tree-map-group>
+            <dxo-tree-map-label>
+                <dxo-tree-map-font
                     size="20"
                     opacity="0.7"
                 >
-                </dxo-font>
-            </dxo-label>
-        </dxo-group>
+                </dxo-tree-map-font>
+            </dxo-tree-map-label>
+        </dxo-tree-map-group>
     </dx-tree-map>
 
 ##### Vue

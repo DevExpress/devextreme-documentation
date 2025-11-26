@@ -143,13 +143,13 @@ If you want to format and localize strings, numbers, dates, and currencies autom
 
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
-        <dxi-column dataField="price">
+        <dxi-data-grid-column dataField="price">
             <!-- Specifying a currency in a format definition -->
-            <dxo-format
+            <dxo-data-grid-format
                 type="currency"
                 currency="RUB">
-            </dxo-format>
-        </dxi-column>
+            </dxo-data-grid-format>
+        </dxi-data-grid-column>
     </dx-data-grid>
     
     <!-- tab: app.module.ts -->

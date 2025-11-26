@@ -29,7 +29,7 @@ The following code sample illustrates how to set this property:
 
     <!--HTML-->
     <dx-form ... >
-        <dxo-col-count-by-screen [xs]="2"></dxo-col-count-by-screen>
+        <dxo-form-col-count-by-screen [xs]="2"></dxo-form-col-count-by-screen>
     </dx-form>
 
     <!--TypeScript-->

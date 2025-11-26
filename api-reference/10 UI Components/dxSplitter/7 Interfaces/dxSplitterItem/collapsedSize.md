@@ -27,10 +27,10 @@ Specifies the size of a collapsible item (pane) when collapsed in pixels or as a
 
     <!-- tab: app.component.html -->
     <dx-splitter ... >
-        <dxi-item ...
+        <dxi-splitter-item ...
             collapsedSize="20px"
         >
-        </dxi-item>
+        </dxi-splitter-item>
     </dx-splitter>
 
 ##### Vue

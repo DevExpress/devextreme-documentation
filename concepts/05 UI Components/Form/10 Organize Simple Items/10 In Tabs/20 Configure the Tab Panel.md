@@ -29,12 +29,12 @@ For displaying tabs, the Form uses the [TabPanel](/api-reference/10%20UI%20Compo
     <!--HTML-->
     <dx-form
         [(formData)]="employee">
-        <dxi-item dataField="firstName"></dxi-item>
-        <dxi-item dataField="lastName"></dxi-item>
-        <dxi-item itemType="tabbed">
-            <dxo-tab-panel-options [height]="250" [onTitleClick]="tabPanel_tabTitleClick">
-            </dxo-tab-panel-options>
-        </dxi-item>
+        <dxi-form-item dataField="firstName"></dxi-form-item>
+        <dxi-form-item dataField="lastName"></dxi-form-item>
+        <dxi-form-item itemType="tabbed">
+            <dxo-form-tab-panel-options [height]="250" [onTitleClick]="tabPanel_tabTitleClick">
+            </dxo-form-tab-panel-options>
+        </dxi-form-item>
     </dx-form>
 
     <!--TypeScript-->

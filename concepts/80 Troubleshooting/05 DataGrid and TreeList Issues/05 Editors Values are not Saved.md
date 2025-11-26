@@ -26,10 +26,10 @@ If you want to implement an unbound column, specify column.[name](/api-reference
 
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
-        <dxi-column ...
+        <dxi-data-grid-column ...
             [setCellValue]="setCellValue"
         >
-        </dxi-column>
+        </dxi-data-grid-column>
      </dx-data-grid>
 
     <!-- tab: app.component.ts -->

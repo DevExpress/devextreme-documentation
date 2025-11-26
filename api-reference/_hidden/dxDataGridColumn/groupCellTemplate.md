@@ -96,11 +96,11 @@ The following example shows how to display column value only:
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column 
+        <dxi-data-grid-column 
             dataField="Country" 
             [groupIndex]="0" 
             groupCellTemplate="groupCellTemplate">
-        </dxi-column>
+        </dxi-data-grid-column>
 
         <div *dxTemplate="let data of 'groupCellTemplate'">
             <div>{{data.value}}</div>

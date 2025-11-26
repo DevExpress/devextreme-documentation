@@ -33,8 +33,8 @@ The following example demonstrates how to hide shapes in the context toolbox dep
 
     <!-- tab: app.component.html -->
     <dx-diagram #diagram id="diagram" (onRequestEditOperation)="requestEditOperation($event)">
-        <dxo-context-toolbox [enabled]="true" [shapes]='["process", "decision", "terminator"]' [shapeIconsPerRow]="3">
-        </dxo-context-toolbox>
+        <dxo-diagram-context-toolbox [enabled]="true" [shapes]='["process", "decision", "terminator"]' [shapeIconsPerRow]="3">
+        </dxo-diagram-context-toolbox>
     </dx-diagram>
 
     <!-- tab: app.component.ts -->

@@ -37,8 +37,8 @@ To group these records first by the *"LastName"* field and then by the *"FirstNa
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column dataField="FirstName" [groupIndex]="1"></dxi-column>
-        <dxi-column dataField="LastName" [groupIndex]="0"></dxi-column>
+        <dxi-data-grid-column dataField="FirstName" [groupIndex]="1"></dxi-data-grid-column>
+        <dxi-data-grid-column dataField="LastName" [groupIndex]="0"></dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->

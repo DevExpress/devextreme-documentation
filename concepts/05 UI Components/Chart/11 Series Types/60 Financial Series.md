@@ -36,19 +36,19 @@ Note that the financial series require four value fields: [openValueField](/api-
 
     <!--HTML-->
     <dx-chart ... >
-        <dxi-series
+        <dxi-chart-series
             type="candlestick"
             openValueField="o"
             closeValueField="c"
             highValueField="h"
             lowValueField="l">
-        </dxi-series>
-        <dxi-series ... ></dxi-series>
+        </dxi-chart-series>
+        <dxi-chart-series ... ></dxi-chart-series>
         ...
-        <dxo-common-series-settings>
+        <dxo-chart-common-series-settings>
             <dxo-candlestick ... ></dxo-candlestick>
             <dxo-stock ... ></dxo-stock>
-        </dxo-common-series-settings>
+        </dxo-chart-common-series-settings>
     </dx-chart>
 
     <!--TypeScript-->
@@ -166,9 +166,9 @@ Financial series gauge price reduction by comparing the values of two neighborin
 
     <!--HTML-->
     <dx-chart ... >
-        <dxi-series ... >
-            <dxo-reduction level="high" color="blue"></dxo-reduction>
-        </dxi-series>
+        <dxi-chart-series ... >
+            <dxo-chart-reduction level="high" color="blue"></dxo-chart-reduction>
+        </dxi-chart-series>
     </dx-chart>
 
     <!--TypeScript-->

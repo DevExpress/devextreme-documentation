@@ -25,11 +25,11 @@ You can configure the scrollbar using the [scrollBar](/api-reference/10%20UI%20C
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-zoom-and-pan
+        <dxo-chart-zoom-and-pan
             argumentAxis="both"
             valueAxis="both">
-        </dxo-zoom-and-pan>
-        <dxo-scroll-bar [visible]="true" ... ></dxo-scroll-bar>
+        </dxo-chart-zoom-and-pan>
+        <dxo-chart-scroll-bar [visible]="true" ... ></dxo-chart-scroll-bar>
     </dx-chart>
 
     <!--TypeScript-->

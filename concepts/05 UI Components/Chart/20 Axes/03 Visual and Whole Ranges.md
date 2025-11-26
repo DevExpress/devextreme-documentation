@@ -44,9 +44,9 @@ If your framework supports two-way binding, bind the axis' **visualRange** to a 
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis
+        <dxo-chart-argument-axis
             [(visualRange)]="chart_visualRange">
-        </dxo-argument-axis>
+        </dxo-chart-argument-axis>
     </dx-chart>
     <dx-button
         text="Change Visual Range"

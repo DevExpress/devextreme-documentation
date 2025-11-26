@@ -19,9 +19,9 @@ All properties configuring tooltips are collected in the [tooltip](/api-referenc
 ##### Angular
 
     <!--HTML--><dx-funnel ... >
-        <dxo-tooltip
+        <dxo-funnel-tooltip
             [enabled]="true">
-        </dxo-tooltip>
+        </dxo-funnel-tooltip>
     </dx-funnel>
 
     <!--TypeScript-->
@@ -103,11 +103,11 @@ Properties declared in the **tooltip** object apply to all tooltips in the Funne
 ##### Angular
 
     <!--HTML--><dx-funnel ... >
-        <dxo-tooltip
+        <dxo-funnel-tooltip
             [enabled]="true"
             color="yellow"
             [customizeTooltip]="customizeTooltip">
-        </dxo-tooltip>
+        </dxo-funnel-tooltip>
     </dx-funnel>
 
     <!--TypeScript-->

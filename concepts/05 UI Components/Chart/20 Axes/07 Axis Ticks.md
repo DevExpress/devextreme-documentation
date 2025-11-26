@@ -20,10 +20,10 @@ To configure major or minor ticks, use the [tick](/api-reference/10%20UI%20Compo
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis> <!-- or dxi-value-axis, or dxo-common-axis-settings -->
-            <dxo-tick [visible]="true"></dxo-tick>
-            <dxo-minor-tick [visible]="true"></dxo-minor-tick>
-        </dxo-argument-axis>
+        <dxo-chart-argument-axis> <!-- or dxi-value-axis, or dxo-common-axis-settings -->
+            <dxo-chart-tick [visible]="true"></dxo-chart-tick>
+            <dxo-chart-minor-tick [visible]="true"></dxo-chart-minor-tick>
+        </dxo-chart-argument-axis>
     </dx-chart>
 
     <!--TypeScript-->

@@ -44,9 +44,9 @@ The **columns** property accepts an array of columns. To configure a column, use
 
     <!-- tab: app.component.html -->
     <dx-gantt>
-        <dxi-column dataField="title" caption="Subject" [width]="300"></dxi-column>
-        <dxi-column dataField="start" caption="Start Date"></dxi-column>
-        <dxi-column dataField="end" caption="End Date"></dxi-column>
+        <dxi-gantt-column dataField="title" caption="Subject" [width]="300"></dxi-gantt-column>
+        <dxi-gantt-column dataField="start" caption="Start Date"></dxi-gantt-column>
+        <dxi-gantt-column dataField="end" caption="End Date"></dxi-gantt-column>
     </dx-gantt>
 
     <!-- tab: app.component.ts -->

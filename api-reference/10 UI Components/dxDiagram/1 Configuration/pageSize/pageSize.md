@@ -27,8 +27,8 @@ The [units](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/unit
 
     <!-- tab: app.component.html -->+
     <dx-diagram #diagram id="diagram" units="cm">
-        <dxo-page-size [width]="10" [height]="10">
-        </dxo-page-size>
+        <dxo-diagram-page-size [width]="10" [height]="10">
+        </dxo-diagram-page-size>
     </dx-diagram>
 
 ##### Vue

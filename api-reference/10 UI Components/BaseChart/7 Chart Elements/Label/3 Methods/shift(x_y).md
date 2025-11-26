@@ -49,14 +49,14 @@ The following example customizes a Bar Chart. The code moves the label to the to
     <dx-chart ...
         (onDrawn)="moveLabel($event)" 
     >
-        <dxi-series ...
+        <dxi-chart-series ...
             type="bar"
         >
-            <dxo-label ... 
+            <dxo-chart-label ... 
                 [visible]="true" 
             >
-            </dxo-label>
-        </dxi-series>
+            </dxo-chart-label>
+        </dxi-chart-series>
     </dx-chart>
 
     <!-- tab: app.component.ts -->

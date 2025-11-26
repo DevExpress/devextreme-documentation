@@ -68,24 +68,24 @@ The example below demonstrates how to customize the main toolbar:
 
     <!-- tab: app.component.html -->
     <dx-diagram #diagram id="diagram" (onCustomCommand)="onCustomCommand($event)">
-        <dxo-main-toolbar [visible]="true">
-            <dxi-command name="undo" location="before"> </dxi-command>
-            <dxi-command name="redo" location="before"> </dxi-command>
-            <dxi-command name="separator" location="before"> </dxi-command>
-            <dxi-command name="copy" location="center"> </dxi-command>
-            <dxi-command name="paste" location="center"> </dxi-command>
-            <dxi-command name="cut" location="center"> </dxi-command>
-            <dxi-command name="separator" location="after"> </dxi-command>
-            <dxi-command 
+        <dxo-diagram-main-toolbar [visible]="true">
+            <dxi-diagram-command name="undo" location="before"> </dxi-diagram-command>
+            <dxi-diagram-command name="redo" location="before"> </dxi-diagram-command>
+            <dxi-diagram-command name="separator" location="before"> </dxi-diagram-command>
+            <dxi-diagram-command name="copy" location="center"> </dxi-diagram-command>
+            <dxi-diagram-command name="paste" location="center"> </dxi-diagram-command>
+            <dxi-diagram-command name="cut" location="center"> </dxi-diagram-command>
+            <dxi-diagram-command name="separator" location="after"> </dxi-diagram-command>
+            <dxi-diagram-command 
                 name="clear" 
                 icon="clearsquare" 
                 text="Clear Diagram"
                 location="after">
-            </dxi-command>
-        </dxo-main-toolbar>
-        <dxo-toolbox visibility="hidden"> </dxo-toolbox>
-        <dxo-history-toolbar [visible]="false"> </dxo-history-toolbar>
-        <dxo-view-toolbar [visible]="false"> </dxo-view-toolbar>
+            </dxi-diagram-command>
+        </dxo-diagram-main-toolbar>
+        <dxo-diagram-toolbox visibility="hidden"> </dxo-diagram-toolbox>
+        <dxo-diagram-history-toolbar [visible]="false"> </dxo-diagram-history-toolbar>
+        <dxo-diagram-view-toolbar [visible]="false"> </dxo-diagram-view-toolbar>
     </dx-diagram>
 
     <!-- tab: app.module.ts -->

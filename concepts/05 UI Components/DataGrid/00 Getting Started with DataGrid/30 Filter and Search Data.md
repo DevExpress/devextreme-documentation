@@ -24,8 +24,8 @@ In this tutorial, the [filterRow](/api-reference/10%20UI%20Components/GridBase/1
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
         <!-- ... -->
-        <dxo-filter-row [visible]="true"></dxo-filter-row>
-        <dxo-search-panel [visible]="true"></dxo-search-panel>
+        <dxo-data-grid-filter-row [visible]="true"></dxo-data-grid-filter-row>
+        <dxo-data-grid-search-panel [visible]="true"></dxo-data-grid-search-panel>
     </dx-data-grid>
 
 ##### Vue

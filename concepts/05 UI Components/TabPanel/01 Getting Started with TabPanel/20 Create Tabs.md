@@ -29,15 +29,15 @@ Specify a tab's [title](/api-reference/_hidden/dxTabPanelItem/title.md '/Documen
 
     <!-- tab: app.component.html -->
     <dx-tab-panel>
-        <dxi-item title="Employee" icon="floppy">
+        <dxi-tab-panel-item title="Employee" icon="floppy">
             <!-- ... -->
-        </dxi-item>
-        <dxi-item title="Notes" icon="comment">
+        </dxi-tab-panel-item>
+        <dxi-tab-panel-item title="Notes" icon="comment">
             <!-- ... -->
-        </dxi-item>
-        <dxi-item title="Role" icon="isnotblank" badge="new">
+        </dxi-tab-panel-item>
+        <dxi-tab-panel-item title="Role" icon="isnotblank" badge="new">
             <!-- ... -->
-        </dxi-item>
+        </dxi-tab-panel-item>
     </dx-tab-panel>
 
 ##### Vue

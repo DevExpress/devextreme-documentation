@@ -30,9 +30,9 @@ The following code shows how to use the **controlBar** object to move the contro
 
     <!-- tab: app.component.html -->
     <dx-vector-map ... >
-        <dxo-control-bar
+        <dxo-vector-map-control-bar
             horizontalAlignment="right">
-        </dxo-control-bar>
+        </dxo-vector-map-control-bar>
     </dx-vector-map>
 
     <!-- tab: app.module.ts -->

@@ -43,10 +43,10 @@ Use the [dxTemplate](/api-reference/10%20UI%20Components/Markup%20Components/dxT
         [currentDate]="currentDate"
         [groups]="['roomId']"
         resourceCellTemplate="headerTemplate">
-        <dxi-resource
+        <dxi-scheduler-resource
             fieldExpr="roomId"
             [dataSource]="rooms" >
-        </dxi-resource>
+        </dxi-scheduler-resource>
         <div *dxTemplate="let data of 'headerTemplate'">
             <i style="color: blue">{{data.text}}</i>
         </div>

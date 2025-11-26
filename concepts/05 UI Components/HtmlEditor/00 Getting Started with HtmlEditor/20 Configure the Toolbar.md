@@ -61,39 +61,39 @@ If toolbar items overflow the length of the toolbar, enable the [multiline](/api
 
     <!-- tab: app.component.html -->
     <dx-html-editor ... >
-        <dxo-toolbar [multiline]="true">
-            <dxi-item name="undo"></dxi-item>
-            <dxi-item name="redo"></dxi-item>
-            <dxi-item name="separator"></dxi-item>
-            <dxi-item name="size" [acceptedValues]="['8pt', '10pt', '12pt', '14pt', '18pt', '24pt', '36pt']"></dxi-item>
-            <dxi-item name="font" [acceptedValues]="['Arial', 'Georgia', 'Tahoma', 'Times New Roman', 'Verdana']"></dxi-item>
-            <dxi-item name="separator"></dxi-item>
-            <dxi-item name="bold"></dxi-item>
-            <dxi-item name="italic"></dxi-item>
-            <dxi-item name="strike"></dxi-item>
-            <dxi-item name="underline"></dxi-item>
-            <dxi-item name="separator"></dxi-item>
-            <dxi-item name="alignLeft"></dxi-item>
-            <dxi-item name="alignCenter"></dxi-item>
-            <dxi-item name="alignRight"></dxi-item>
-            <dxi-item name="alignJustify"></dxi-item>
-            <dxi-item name="separator"></dxi-item>
-            <dxi-item name="orderedList"></dxi-item>
-            <dxi-item name="bulletList"></dxi-item>
-            <dxi-item name="separator"></dxi-item>
-            <dxi-item name="header" [acceptedValues]="[false, 1, 2, 3, 4, 5]"></dxi-item>
-            <dxi-item name="separator"></dxi-item>
-            <dxi-item name="color"></dxi-item>
-            <dxi-item name="background"></dxi-item>
-            <dxi-item name="separator"></dxi-item>
-            <dxi-item name="link"></dxi-item>
-            <dxi-item name="image"></dxi-item>
-            <dxi-item name="separator"></dxi-item>
-            <dxi-item name="clear"></dxi-item>
-            <dxi-item name="codeBlock"></dxi-item>
-            <dxi-item name="blockquote"></dxi-item>
-            <dxi-item name="separator"></dxi-item>
-        </dxo-toolbar>
+        <dxo-html-editor-toolbar [multiline]="true">
+            <dxi-html-editor-item name="undo"></dxi-html-editor-item>
+            <dxi-html-editor-item name="redo"></dxi-html-editor-item>
+            <dxi-html-editor-item name="separator"></dxi-html-editor-item>
+            <dxi-html-editor-item name="size" [acceptedValues]="['8pt', '10pt', '12pt', '14pt', '18pt', '24pt', '36pt']"></dxi-html-editor-item>
+            <dxi-html-editor-item name="font" [acceptedValues]="['Arial', 'Georgia', 'Tahoma', 'Times New Roman', 'Verdana']"></dxi-html-editor-item>
+            <dxi-html-editor-item name="separator"></dxi-html-editor-item>
+            <dxi-html-editor-item name="bold"></dxi-html-editor-item>
+            <dxi-html-editor-item name="italic"></dxi-html-editor-item>
+            <dxi-html-editor-item name="strike"></dxi-html-editor-item>
+            <dxi-html-editor-item name="underline"></dxi-html-editor-item>
+            <dxi-html-editor-item name="separator"></dxi-html-editor-item>
+            <dxi-html-editor-item name="alignLeft"></dxi-html-editor-item>
+            <dxi-html-editor-item name="alignCenter"></dxi-html-editor-item>
+            <dxi-html-editor-item name="alignRight"></dxi-html-editor-item>
+            <dxi-html-editor-item name="alignJustify"></dxi-html-editor-item>
+            <dxi-html-editor-item name="separator"></dxi-html-editor-item>
+            <dxi-html-editor-item name="orderedList"></dxi-html-editor-item>
+            <dxi-html-editor-item name="bulletList"></dxi-html-editor-item>
+            <dxi-html-editor-item name="separator"></dxi-html-editor-item>
+            <dxi-html-editor-item name="header" [acceptedValues]="[false, 1, 2, 3, 4, 5]"></dxi-html-editor-item>
+            <dxi-html-editor-item name="separator"></dxi-html-editor-item>
+            <dxi-html-editor-item name="color"></dxi-html-editor-item>
+            <dxi-html-editor-item name="background"></dxi-html-editor-item>
+            <dxi-html-editor-item name="separator"></dxi-html-editor-item>
+            <dxi-html-editor-item name="link"></dxi-html-editor-item>
+            <dxi-html-editor-item name="image"></dxi-html-editor-item>
+            <dxi-html-editor-item name="separator"></dxi-html-editor-item>
+            <dxi-html-editor-item name="clear"></dxi-html-editor-item>
+            <dxi-html-editor-item name="codeBlock"></dxi-html-editor-item>
+            <dxi-html-editor-item name="blockquote"></dxi-html-editor-item>
+            <dxi-html-editor-item name="separator"></dxi-html-editor-item>
+        </dxo-html-editor-toolbar>
     </dx-html-editor>
 
 ##### Vue

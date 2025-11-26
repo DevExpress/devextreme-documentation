@@ -25,17 +25,17 @@ Add an object to the [buttons](/api-reference/_hidden/dxTreeListColumn/buttons '
 
     <!--HTML-->
     <dx-tree-list ... >
-        <dxi-column type="buttons">
-            <dxi-button name="add"></dxi-button>
-            <dxi-button name="edit"></dxi-button>
-            <dxi-button name="delete"></dxi-button>
-            <dxi-button
+        <dxi-tree-list-column type="buttons">
+            <dxi-tree-list-button name="add"></dxi-tree-list-button>
+            <dxi-tree-list-button name="edit"></dxi-tree-list-button>
+            <dxi-tree-list-button name="delete"></dxi-tree-list-button>
+            <dxi-tree-list-button
                 text="My Command"
                 icon="/url/to/my/icon.ico"
                 hint="My Command"
                 [onClick]="myCommand">
-            </dxi-button>
-        </dxi-column>
+            </dxi-tree-list-button>
+        </dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->
@@ -157,16 +157,16 @@ Add an object to the [buttons](/api-reference/_hidden/dxTreeListColumn/buttons '
 
     <!--HTML-->
     <dx-tree-list ... >
-        <dxi-column type="buttons">
-            <dxi-button name="add"></dxi-button>
-            <dxi-button name="edit"></dxi-button>
-            <dxi-button name="delete"></dxi-button>
-            <dxi-button template="myCommand">
+        <dxi-tree-list-column type="buttons">
+            <dxi-tree-list-button name="add"></dxi-tree-list-button>
+            <dxi-tree-list-button name="edit"></dxi-tree-list-button>
+            <dxi-tree-list-button name="delete"></dxi-tree-list-button>
+            <dxi-tree-list-button template="myCommand">
                 <div *dxTemplate="let data of 'myCommand'">
                     <!-- Declare custom markup here -->
                 </div>
-            </dxi-button>
-        </dxi-column>
+            </dxi-tree-list-button>
+        </dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->

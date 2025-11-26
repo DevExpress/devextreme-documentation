@@ -22,8 +22,8 @@ The TreeList displays all columns from the **columns** array. To hide a column, 
     <!-- tab: app.component.html -->
     <dx-tree-list ... >
         <!-- ... -->
-        <dxi-column dataField="Email" [visible]="false"></dxi-column>
-        <dxo-column-chooser [enabled]="true"></dxo-column-chooser>
+        <dxi-tree-list-column dataField="Email" [visible]="false"></dxi-tree-list-column>
+        <dxo-tree-list-column-chooser [enabled]="true"></dxo-tree-list-column-chooser>
     </dx-tree-list>
 
 ##### Vue

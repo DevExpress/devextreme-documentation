@@ -36,15 +36,15 @@ You can use the following position markers in this text:
 
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
-        <dxo-summary>
-            <dxi-group-item
+        <dxo-data-grid-summary>
+            <dxi-data-grid-group-item
                 column="SaleAmount"
                 summaryType="sum"
                 showInColumn="TotalAmount"
                 valueFormat="currency"
                 displayFormat="Column: {1}. Sales: {0}"> <!-- for example, "Column: Total Amount. Sales: $1234" -->
-            </dxi-group-item>
-        </dxo-summary>
+            </dxi-data-grid-group-item>
+        </dxo-data-grid-summary>
     </dx-data-grid>
 
     <!-- tab: app.module.ts -->

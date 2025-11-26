@@ -74,8 +74,8 @@ You can use this function to adjust column properties before export. In the foll
     <!-- tab: app.component.html -->
     <dx-data-grid ...
         (onExporting)="onExporting($event)">
-        <dxo-export [enabled]="true"></dxo-export>
-        <dxi-column dataField="ID" [visible]="false"></dxi-column>
+        <dxo-data-grid-export [enabled]="true"></dxo-data-grid-export>
+        <dxi-data-grid-column dataField="ID" [visible]="false"></dxi-data-grid-column>
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->

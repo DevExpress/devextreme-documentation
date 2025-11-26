@@ -34,24 +34,24 @@ All group items are displayed in parentheses after the group header by default. 
     <!--HTML-->
     <dx-data-grid ...
         [columns]="['OrderNumber', 'City', 'Price']" >
-        <dxo-summary>
-            <dxi-group-item
+        <dxo-data-grid-summary>
+            <dxi-data-grid-group-item
                 column="OrderNumber"
                 summaryType="count"
                 [alignByColumn]="true">
-            </dxi-group-item>
-            <dxi-group-item
+            </dxi-data-grid-group-item>
+            <dxi-data-grid-group-item
                 column="Price"
                 summaryType="sum"
                 [showInGroupFooter]="true">
-            </dxi-group-item>
-            <dxi-group-item
+            </dxi-data-grid-group-item>
+            <dxi-data-grid-group-item
                 column="Price"
                 summaryType="max"
                 [showInGroupFooter]="true"
                 showInColumn="City">
-            </dxi-group-item>
-        </dxo-summary>
+            </dxi-data-grid-group-item>
+        </dxo-data-grid-summary>
     </dx-data-grid>
 
     <!--TypeScript-->

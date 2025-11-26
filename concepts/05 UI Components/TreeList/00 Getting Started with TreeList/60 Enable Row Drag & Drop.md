@@ -55,12 +55,12 @@ Users can drag and drop nodes to reorder them or change their hierarchy. To conf
     <div id="app-container">
         <dx-tree-list ...
             <!-- ... -->
-            <dxo-row-dragging
+            <dxo-tree-list-row-dragging
                 [onDragChange]="onDragChange"
                 [onReorder]="onReorder"
                 [allowDropInsideItem]="true"
                 [allowReordering]="true"
-            ></dxo-row-dragging>
+            ></dxo-tree-list-row-dragging>
         </dx-tree-list>
     </div>
 

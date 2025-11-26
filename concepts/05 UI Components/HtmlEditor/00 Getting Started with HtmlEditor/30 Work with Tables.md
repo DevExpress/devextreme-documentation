@@ -29,19 +29,19 @@ Users can insert and modify tables if you add the following items to the toolbar
 
     <!-- tab: app.component.html -->
     <dx-html-editor ... >
-        <dxo-toolbar ... >
+        <dxo-html-editor-toolbar ... >
             <!-- ... -->
-            <dxi-item name="insertTable"></dxi-item>
-            <dxi-item name="deleteTable"></dxi-item>
-            <dxi-item name="insertRowAbove"></dxi-item>
-            <dxi-item name="insertRowBelow"></dxi-item>
-            <dxi-item name="deleteRow"></dxi-item>
-            <dxi-item name="insertColumnLeft"></dxi-item>
-            <dxi-item name="insertColumnRight"></dxi-item>
-            <dxi-item name="deleteColumn"></dxi-item>
-            <dxi-item name="cellProperties"></dxi-item>
-            <dxi-item name="tableProperties"></dxi-item>
-        </dxo-toolbar>
+            <dxi-html-editor-item name="insertTable"></dxi-html-editor-item>
+            <dxi-html-editor-item name="deleteTable"></dxi-html-editor-item>
+            <dxi-html-editor-item name="insertRowAbove"></dxi-html-editor-item>
+            <dxi-html-editor-item name="insertRowBelow"></dxi-html-editor-item>
+            <dxi-html-editor-item name="deleteRow"></dxi-html-editor-item>
+            <dxi-html-editor-item name="insertColumnLeft"></dxi-html-editor-item>
+            <dxi-html-editor-item name="insertColumnRight"></dxi-html-editor-item>
+            <dxi-html-editor-item name="deleteColumn"></dxi-html-editor-item>
+            <dxi-html-editor-item name="cellProperties"></dxi-html-editor-item>
+            <dxi-html-editor-item name="tableProperties"></dxi-html-editor-item>
+        </dxo-html-editor-toolbar>
     </dx-html-editor>
 
 ##### Vue
@@ -119,13 +119,13 @@ Users can also modify tables with the context menu if you set the [tableContextM
 
     <!-- tab: app.component.html -->
     <dx-html-editor ... >
-        <dxo-toolbar ... >
+        <dxo-html-editor-toolbar ... >
             <!-- ... -->
-            <dxi-item name="insertTable"></dxi-item>
-        </dxo-toolbar>
-        <dxo-table-context-menu
+            <dxi-html-editor-item name="insertTable"></dxi-html-editor-item>
+        </dxo-html-editor-toolbar>
+        <dxo-html-editor-table-context-menu
             [enabled]="true">
-        </dxo-table-context-menu>
+        </dxo-html-editor-table-context-menu>
     </dx-html-editor>
 
 ##### Vue

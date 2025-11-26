@@ -57,12 +57,12 @@ The 'color' field accepts the following values:
 
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxo-resources 
+        <dxo-gantt-resources 
             [dataSource]="resources" 
             keyExpr="resourceId"
             textExpr="title"
             colorExpr="resourceColor" >
-        </dxo-resources>
+        </dxo-gantt-resources>
         <!-- ... -->
     </dx-gantt>
 

@@ -16,9 +16,9 @@ Labels are arranged in a column by default. Change the **label**.[position](/api
 
     <!--HTML-->
     <dx-funnel ... >
-        <dxo-label
+        <dxo-funnel-label
             position="columns"> <!-- or "inside" | "outside" -->
-        </dxo-label>
+        </dxo-funnel-label>
     </dx-funnel>
 
     <!--TypeScript-->

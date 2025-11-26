@@ -23,15 +23,15 @@ In the following code, a CSS class is added to the **Save** button. The **Add**,
 
     <!--HTML-->
     <dx-tree-list ... >
-        <dxi-column type="buttons">
-            <dxi-button
+        <dxi-tree-list-column type="buttons">
+            <dxi-tree-list-button
                 name="save"
                 cssClass="my-class">
-            </dxi-button>
-            <dxi-button name="add"></dxi-button>
-            <dxi-button name="edit"></dxi-button>
-            <dxi-button name="delete"></dxi-button>
-        </dxi-column>
+            </dxi-tree-list-button>
+            <dxi-tree-list-button name="add"></dxi-tree-list-button>
+            <dxi-tree-list-button name="edit"></dxi-tree-list-button>
+            <dxi-tree-list-button name="delete"></dxi-tree-list-button>
+        </dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->

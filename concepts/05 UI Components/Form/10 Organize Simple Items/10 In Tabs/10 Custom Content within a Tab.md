@@ -45,23 +45,23 @@ The Form UI component allows you to specify custom templates for an individual t
     <!--HTML-->
     <dx-form
         [(formData)]="employee">
-        <dxi-item dataField="name"></dxi-item>
-        <dxi-item itemType="tabbed" [colSpan]="2">
-            <dxi-tab
+        <dxi-form-item dataField="name"></dxi-form-item>
+        <dxi-form-item itemType="tabbed" [colSpan]="2">
+            <dxi-form-tab
                 title="Data Protection Policy"
                 tabTemplate="tab"
                 [template]="'tabContent'">
-            </dxi-tab>
-            <dxi-tab title="Info">
-                <dxi-item dataField="position"></dxi-item>
-                <dxi-item dataField="birthDate"></dxi-item>
-                <dxi-item dataField="city"></dxi-item>
-            </dxi-tab>
-            <dxi-tab title="Contacts">
-                <dxi-item dataField="phone"></dxi-item>
-                <dxi-item dataField="email"></dxi-item>
-            </dxi-tab>
-        </dxi-item>
+            </dxi-form-tab>
+            <dxi-form-tab title="Info">
+                <dxi-form-item dataField="position"></dxi-form-item>
+                <dxi-form-item dataField="birthDate"></dxi-form-item>
+                <dxi-form-item dataField="city"></dxi-form-item>
+            </dxi-form-tab>
+            <dxi-form-tab title="Contacts">
+                <dxi-form-item dataField="phone"></dxi-form-item>
+                <dxi-form-item dataField="email"></dxi-form-item>
+            </dxi-form-tab>
+        </dxi-form-item>
         <div *dxTemplate="let tabData of 'tab'; let i = index">
             <p style="color:red">{{tabData.title}}</p>
         </div>

@@ -34,20 +34,20 @@ Configure each summary item in the **summary**.[groupItems](/api-reference/10%20
     <!--HTML-->
     <dx-data-grid ...
         [columns]="['OrderNumber', 'Price']" >
-        <dxo-summary>
-            <dxi-group-item
+        <dxo-data-grid-summary>
+            <dxi-data-grid-group-item
                 column="OrderNumber"
                 summaryType="count">
-            </dxi-group-item>
-            <dxi-group-item
+            </dxi-data-grid-group-item>
+            <dxi-data-grid-group-item
                 column="Price"
                 summaryType="sum">
-            </dxi-group-item>
-            <dxi-group-item
+            </dxi-data-grid-group-item>
+            <dxi-data-grid-group-item
                 column="Price"
                 summaryType="max">
-            </dxi-group-item>
-        </dxo-summary>
+            </dxi-data-grid-group-item>
+        </dxo-data-grid-summary>
     </dx-data-grid>
 
     <!--TypeScript-->

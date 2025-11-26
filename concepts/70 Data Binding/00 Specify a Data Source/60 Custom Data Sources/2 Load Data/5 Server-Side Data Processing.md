@@ -154,9 +154,9 @@ The following example shows a **CustomStore** that sends data processing setting
     <!-- tab: app.component.html -->
     <dx-data-grid
         [dataSource]="customDataSource">
-        <dxo-remote-operations
+        <dxo-data-grid-remote-operations
             [groupPaging]="true">
-        </dxo-remote-operations>
+        </dxo-data-grid-remote-operations>
     </dx-data-grid>
 
     <!-- tab: app.module.ts -->

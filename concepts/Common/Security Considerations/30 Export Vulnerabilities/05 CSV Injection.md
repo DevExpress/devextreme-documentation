@@ -46,10 +46,10 @@ You can encode CSV files to prevent execution of potentially harmful code within
     <!-- tab: app.component.html -->
     <dx-data-grid ...
         (onExporting)="onExporting($event)">
-        <dxo-export
+        <dxo-data-grid-export
             [enabled]="true"
             [formats]="['csv']"
-        ></dxo-export>
+        ></dxo-data-grid-export>
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->

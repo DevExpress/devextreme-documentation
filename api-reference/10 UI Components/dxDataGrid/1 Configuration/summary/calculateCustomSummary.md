@@ -73,16 +73,16 @@ A summary value calculation is conducted in three stages: *start* - the **totalV
 
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
-        <dxo-summary [calculateCustomSummary]="calculateSummary">
-            <dxi-total-item
+        <dxo-data-grid-summary [calculateCustomSummary]="calculateSummary">
+            <dxi-data-grid-total-item
                 name="сustomSummary1"
                 summaryType="custom">
-            </dxi-total-item>
-            <dxi-total-item
+            </dxi-data-grid-total-item>
+            <dxi-data-grid-total-item
                 name="сustomSummary2"
                 summaryType="custom">
-            </dxi-total-item>
-        </dxo-summary>
+            </dxi-data-grid-total-item>
+        </dxo-data-grid-summary>
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->
@@ -322,20 +322,20 @@ You can use the **value** field to retrieve the column value. If you do not spec
     <!-- tab: app.component.html -->
     <dx-data-grid ... 
         [selectedRowKeys]="selectedRows">
-        <dxi-column dataField="width"></dxi-column>
-        <dxi-column dataField="height"></dxi-column>
-        <dxi-column
+        <dxi-data-grid-column dataField="width"></dxi-data-grid-column>
+        <dxi-data-grid-column dataField="height"></dxi-data-grid-column>
+        <dxi-data-grid-column
             dataField="Area"
             [calculateCellValue]="calculateArea">
-        </dxi-column>
-        <dxo-summary [calculateCustomSummary]="calculateAreaSummary">
-            <dxi-total-item
+        </dxi-data-grid-column>
+        <dxo-data-grid-summary [calculateCustomSummary]="calculateAreaSummary">
+            <dxi-data-grid-total-item
                 name="AreaSummary"
                 summaryType="custom"
                 showInColumn="Area"
                 displayFormat="Total Area: {0}">
-            </dxi-total-item>
-        </dxo-summary>
+            </dxi-data-grid-total-item>
+        </dxo-data-grid-summary>
     </dx-data-grid>
 
     <!-- tab: app.module.ts -->

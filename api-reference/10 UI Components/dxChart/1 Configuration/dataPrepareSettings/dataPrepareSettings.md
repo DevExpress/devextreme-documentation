@@ -26,9 +26,9 @@ The following code shows the **dataPrepareSettings** declaration syntax:
 
     <!-- tab: app.component.html -->
     <dx-chart ... >
-        <dxo-data-prepare-settings
+        <dxo-chart-data-prepare-settings
             [sortingMethod]="false">
-        </dxo-data-prepare-settings>
+        </dxo-chart-data-prepare-settings>
     </dx-chart>
 
     <!-- tab: app.component.ts -->

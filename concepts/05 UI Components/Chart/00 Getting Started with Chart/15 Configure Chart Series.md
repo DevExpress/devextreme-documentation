@@ -22,13 +22,13 @@ To configure how a Chart displays data, specify **series** object properties. Th
 
     <!-- tab: app.component.html -->
     <dx-chart [dataSource]="chartData" >
-        <dxi-series
+        <dxi-chart-series
             type="bar"
             argumentField="month"
             valueField="targetSpend"
             name="Budget"
             color="#5996ff"
-        ></dxi-series>
+        ></dxi-chart-series>
     </dx-chart>
 
 ##### Vue

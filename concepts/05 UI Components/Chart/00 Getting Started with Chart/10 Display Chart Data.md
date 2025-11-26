@@ -34,10 +34,10 @@ To bind a DevExtreme Chart to data, specify the [dataSource](/api-reference/10%2
 
     <!-- tab: app.component.html -->
     <dx-chart [dataSource]="chartData" >
-        <dxi-series
+        <dxi-chart-series
             argumentField="month"
             valueField="targetSpend"
-        ></dxi-series>
+        ></dxi-chart-series>
     </dx-chart>
 
     <!-- tab: app.component.ts -->

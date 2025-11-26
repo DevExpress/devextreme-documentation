@@ -18,11 +18,11 @@ Labels are located beside their series points by default. Change the **series**.
 
     <!--HTML-->
     <dx-pie-chart ... >
-        <dxi-series>
-            <dxo-label
+        <dxi-pie-chart-series>
+            <dxo-pie-chart-label
                 position="columns"> <!-- or "inside" | "outside" -->
-            </dxo-label>
-        </dxi-series>
+            </dxo-pie-chart-label>
+        </dxi-pie-chart-series>
     </dx-pie-chart>
 
     <!--TypeScript-->

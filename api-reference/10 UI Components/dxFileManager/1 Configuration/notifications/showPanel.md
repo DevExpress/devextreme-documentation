@@ -33,9 +33,9 @@ The **Refresh** button does not display notification marks if the **showPanel** 
 
     <!--HTML--> 
     <dx-file-manager id="fileManager">
-        <dxo-notifications 
+        <dxo-file-manager-notifications 
             [showPanel]="false">
-        </dxo-notifications>
+        </dxo-file-manager-notifications>
         <!-- ... -->
     </dx-file-manager>
 

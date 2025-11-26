@@ -33,13 +33,13 @@ Configures the "Details" file system representation mode.
 
     <!-- tab: app.component.html -->
     <dx-file-manager>
-        <dxo-item-view>
-            <dxo-details>
-                <dxi-column dataField="thumbnail"></dxi-column>
-                <dxi-column dataField="name"></dxi-column>
+        <dxo-file-manager-item-view>
+            <dxo-file-manager-details>
+                <dxi-file-manager-column dataField="thumbnail"></dxi-file-manager-column>
+                <dxi-file-manager-column dataField="name"></dxi-file-manager-column>
                 <!-- ... -->
-            </dxo-details>
-        </dxo-item-view>
+            </dxo-file-manager-details>
+        </dxo-file-manager-item-view>
     </dx-file-manager>
 
     <!-- tab: app.module.ts -->

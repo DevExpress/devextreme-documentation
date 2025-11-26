@@ -21,7 +21,7 @@ Set a column's [allowEditing](/api-reference/_hidden/GridBaseColumn/allowEditing
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
         <!-- ... -->
-        <dxi-column [allowEditing]="false" ></dxi-column>
+        <dxi-data-grid-column [allowEditing]="false" ></dxi-data-grid-column>
     </dx-data-grid>
 
      <!-- tab: app.component.ts -->

@@ -17,11 +17,11 @@ The legend can be moved inside the chart using the [position](/api-reference/10%
 ##### Angular
 
     <!--HTML--><dx-chart>
-        <dxo-legend
+        <dxo-chart-legend
             position="inside"
             horizontalAlignment="center"
             verticalAlignment="top">
-        </dxo-legend>
+        </dxo-chart-legend>
     </dx-chart>
 
     <!--TypeScript-->

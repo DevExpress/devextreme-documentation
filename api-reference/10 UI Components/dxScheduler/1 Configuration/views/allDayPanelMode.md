@@ -42,8 +42,8 @@ To also display appointments that have a duration equal to or more than 24 hours
 
     <!-- tab: app.component.html -->
     <dx-scheduler ... >
-        <dxi-view type="week" allDayPanelMode="all" name="Week">
-        </dxi-view>
+        <dxi-scheduler-view type="week" allDayPanelMode="all" name="Week">
+        </dxi-scheduler-view>
     </dx-scheduler>
 
     <!-- tab: app.module.ts -->

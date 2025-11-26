@@ -35,11 +35,11 @@ You can achieve the same in the markup using the [dxItem](/api-reference/10%20UI
 
     <!-- tab: app.component.html -->
     <dx-list>
-        <dxi-item text="Apples" [disabled]="true"></dxi-item>
-        <dxi-item text="Lemons" [visible]="false"></dxi-item>
-        <dxi-item>
+        <dxi-list-item text="Apples" [disabled]="true"></dxi-list-item>
+        <dxi-list-item text="Lemons" [visible]="false"></dxi-list-item>
+        <dxi-list-item>
             <i>Oranges</i>
-        </dxi-item>
+        </dxi-list-item>
     </dx-list>
 
     <!-- tab: app.module.ts -->

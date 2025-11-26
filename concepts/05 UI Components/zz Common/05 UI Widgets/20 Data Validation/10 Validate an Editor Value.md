@@ -25,14 +25,14 @@ Associate a DevExtreme editor with the [Validator](/api-reference/10%20UI%20Comp
     <!-- tab: app.component.html -->
     <dx-text-box [(value)]="login" placeholder="Login">
         <dx-validator>
-            <dxi-validation-rule
+            <dxi-validator-validation-rule
                 type="required">
-            </dxi-validation-rule>
-            <dxi-validation-rule
+            </dxi-validator-validation-rule>
+            <dxi-validator-validation-rule
                 type="pattern"
                 pattern="^[a-zA-Z]+$"
                 message="Do not use digits.">
-            </dxi-validation-rule>
+            </dxi-validator-validation-rule>
         </dx-validator>
     </dx-text-box>
 

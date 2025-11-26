@@ -16,9 +16,9 @@ Node labels can overlap when the Sankey contains many nodes. You can specify the
 
     <!--HTML-->
     <dx-sankey ... >
-        <dxo-label
+        <dxo-sankey-label
             overlappingBehavior="ellipsis"> <!-- or "hide" | "none" -->
-        </dxo-label>
+        </dxo-sankey-label>
     </dx-sankey>
 
     <!--TypeScript-->

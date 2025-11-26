@@ -29,11 +29,11 @@ The following code opens a link in the same frame the item was clicked:
 
     <!-- tab: app.component.html -->
     <dx-menu>
-        <dxi-item 
+        <dxi-menu-item 
             icon="home"
             url="https://js.devexpress.com"
         >
-        </dxi-item>
+        </dxi-menu-item>
     </dx-menu>
 
 ##### Vue
@@ -110,18 +110,18 @@ If you specify a [template](/api-reference/_hidden/CollectionWidgetItem/template
 
     <!-- tab: app.component.html -->
     <dx-menu>
-        <dxi-item>
+        <dxi-menu-item>
             <div *dxTemplate>
                 <a href="http://js.devexpress.com" target="_blank">Home</a>
             </div>
-        </dxi-item>  
+        </dxi-menu-item>  
     </dx-menu>
 
 If you use <a href="https://angular.dev/guide/routing" target="_blank">routing</a> for your project, specify `<a>` links inside items. Alternatively, you can implement the [onItemClick](/api-reference/10%20UI%20Components/dxMenu/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxMenu/Configuration/#onItemClick') event handler to process clicks on links.
 
     <!-- tab: app.component.html -->
     <dx-menu>
-        <dxi-item><a routerLink="/">Home</a></dxi-item>
+        <dxi-menu-item><a routerLink="/">Home</a></dxi-item>
         <dxi-item><a routerLink="/about">About</a></dxi-item>
     </dx-menu>
     <router-outlet></router-outlet>

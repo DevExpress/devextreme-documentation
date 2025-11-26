@@ -42,15 +42,15 @@ The following code snippet customizes the *"day"* and *"workWeek"* views. This e
 
     <!-- tab: app.component.html -->
     <dx-scheduler ... >
-        <dxi-resource
+        <dxi-scheduler-resource
             fieldExpr="ownerId"
             [dataSource]="employees">
-        </dxi-resource>
-        <dxi-view type="day"
+        </dxi-scheduler-resource>
+        <dxi-scheduler-view type="day"
             [cellDuration]="60"
             timeCellTemplate="timeCellTemplate">
-        </dxi-view>
-        <dxi-view type="workWeek" [groups]="['ownerId']"></dxi-view>
+        </dxi-scheduler-view>
+        <dxi-scheduler-view type="workWeek" [groups]="['ownerId']"></dxi-scheduler-view>
         <div *dxTemplate="let data of 'timeCellTemplate'">
             <i style="color: green">{{data.text}}</i>
         </div>
@@ -60,8 +60,8 @@ To add a view without customizations, specify only the **views**.**type** proper
 
     <!-- tab: app.component.html -->
     <dx-scheduler ... >
-        <dxi-view type="day"></dxi-view>
-        <dxi-view type="workWeek"></dxi-view>
+        <dxi-scheduler-view type="day"></dxi-scheduler-view>
+        <dxi-scheduler-view type="workWeek"></dxi-scheduler-view>
     </dx-scheduler>
 
 ##### Vue

@@ -55,9 +55,9 @@ In the following code, the **Add** button is added to rows whose status is _not_
 
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-editing
+        <dxo-tree-list-editing
             [allowAdding]="allowAdding">
-        </dxo-editing>
+        </dxo-tree-list-editing>
     </dx-tree-list>
 
 ##### Vue

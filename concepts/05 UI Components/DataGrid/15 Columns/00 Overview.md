@@ -19,10 +19,10 @@ Columns represent sets of data values that have the same type. To configure colu
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column dataField="Title" caption="Position"></dxi-column>
-        <dxi-column dataField="FullName" [width]="300"></dxi-column>
-        <dxi-column dataField="CompanyName"></dxi-column>
-        <dxi-column dataField="City"></dxi-column>
+        <dxi-data-grid-column dataField="Title" caption="Position"></dxi-data-grid-column>
+        <dxi-data-grid-column dataField="FullName" [width]="300"></dxi-data-grid-column>
+        <dxi-data-grid-column dataField="CompanyName"></dxi-data-grid-column>
+        <dxi-data-grid-column dataField="City"></dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->

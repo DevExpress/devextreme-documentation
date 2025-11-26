@@ -40,10 +40,10 @@ To specify one or another series type, assign its name to the **series[]**.[type
 
     <!--HTML-->
     <dx-chart ... >
-        <dxi-series type="area"></dxi-series>
-        <dxi-series ... ></dxi-series>
+        <dxi-chart-series type="area"></dxi-chart-series>
+        <dxi-chart-series ... ></dxi-chart-series>
         ...
-        <dxo-common-series-settings>
+        <dxo-chart-common-series-settings>
             <dxo-area ... ></dxo-area>
             <dxo-splinearea ... ></dxo-splinearea>
             <dxo-steparea ... ></dxo-steparea>
@@ -51,7 +51,7 @@ To specify one or another series type, assign its name to the **series[]**.[type
             <dxo-stackedsplinearea ... ></dxo-stackedsplinearea>
             <dxo-fullstackedarea ... ></dxo-fullstackedarea>
             <dxo-fullstackedsplinearea ... ></dxo-fullstackedsplinearea>
-        </dxo-common-series-settings>
+        </dxo-chart-common-series-settings>
     </dx-chart>
 
     <!--TypeScript-->

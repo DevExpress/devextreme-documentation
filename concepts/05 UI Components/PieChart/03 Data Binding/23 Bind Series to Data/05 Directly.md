@@ -22,11 +22,11 @@ To bind a series to data directly, specify which data source field provides argu
 ##### Angular
 
     <!--HTML--><dx-pie-chart [dataSource]="fruitProduction">
-        <dxi-series
+        <dxi-pie-chart-series
             argumentField="fruit"
             valueField="year2014"
             name="2014">
-        </dxi-series>
+        </dxi-pie-chart-series>
     </dx-pie-chart>
 
     <!--TypeScript-->
@@ -141,12 +141,12 @@ The PieChart may contain several series that have the same argument field. In th
 ##### Angular
 
     <!--HTML--><dx-pie-chart [dataSource]="fruitProduction">
-        <dxo-common-series-settings
+        <dxo-pie-chart-common-series-settings
             argumentField="fruit">
-        </dxo-common-series-settings>
-        <dxi-series valueField="year2014" name="2014"></dxi-series>
-        <dxi-series valueField="year2015" name="2015"></dxi-series>
-        <dxi-series valueField="year2016" name="2016"></dxi-series>
+        </dxo-pie-chart-common-series-settings>
+        <dxi-pie-chart-series valueField="year2014" name="2014"></dxi-pie-chart-series>
+        <dxi-pie-chart-series valueField="year2015" name="2015"></dxi-pie-chart-series>
+        <dxi-pie-chart-series valueField="year2016" name="2016"></dxi-pie-chart-series>
     </dx-pie-chart>
 
     <!--TypeScript-->

@@ -18,9 +18,9 @@ Users can resize images embedded within the content. To enable this functionalit
     <!-- tab: app.component.html -->
     <dx-html-editor ... >
         <!-- ... -->
-        <dxo-media-resizing
+        <dxo-html-editor-media-resizing
             [enabled]="true">
-        </dxo-media-resizing>
+        </dxo-html-editor-media-resizing>
     </dx-html-editor>
 
 ##### Vue

@@ -16,10 +16,10 @@ The legend can be aligned in the horizontal or vertical direction using the [hor
 ##### Angular
 
     <!--HTML--><dx-funnel>
-        <dxo-legend
+        <dxo-funnel-legend
             horizontalAlignment="center" <!-- or "left" | "right" -->
             verticalAlignment="top"> <!-- or "bottom" -->
-        </dxo-legend>
+        </dxo-funnel-legend>
     </dx-funnel>
 
     <!--TypeScript-->

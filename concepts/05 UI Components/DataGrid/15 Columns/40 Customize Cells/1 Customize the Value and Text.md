@@ -41,7 +41,7 @@ Use the [customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column dataField="Price" [customizeText]="priceColumn_customizeText"></dxi-column>
+        <dxi-data-grid-column dataField="Price" [customizeText]="priceColumn_customizeText"></dxi-data-grid-column>
     </dx-data-grid>
 
 ##### Vue
@@ -157,7 +157,7 @@ To use the text displayed in cells in those data processing operations, specify 
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column caption="Full Name" [calculateCellValue]="fullNameColumn_calculateCellValue"></dxi-column>
+        <dxi-data-grid-column caption="Full Name" [calculateCellValue]="fullNameColumn_calculateCellValue"></dxi-data-grid-column>
     </dx-data-grid>
 
 ##### Vue

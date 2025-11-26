@@ -50,8 +50,8 @@ Add the following script to your test file. This code finds the specified link o
         id="gridContainer"
         [dataSource]="dataSource"
     >
-        <dxo-pager [visible]="true" [allowedPageSizes]="[5, 10]" [showPageSizeSelector]="true"></dxo-pager>
-        <dxo-paging [enabled]="true" [pageSize]="10"></dxo-paging>
+        <dxo-data-grid-pager [visible]="true" [allowedPageSizes]="[5, 10]" [showPageSizeSelector]="true"></dxo-data-grid-pager>
+        <dxo-data-grid-paging [enabled]="true" [pageSize]="10"></dxo-data-grid-paging>
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->

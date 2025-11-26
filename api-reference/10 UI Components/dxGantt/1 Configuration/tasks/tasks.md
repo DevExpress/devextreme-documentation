@@ -65,7 +65,7 @@ The 'color' field accepts the following values:
 
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxo-tasks 
+        <dxo-gantt-tasks 
             [dataSource]="tasks" 
             keyExpr="taskId"
             parentIdExpr="parentTaskId"
@@ -74,7 +74,7 @@ The 'color' field accepts the following values:
             startExpr="startDate"
             endExpr="endDate"
             colorExpr="taskColor" >
-        </dxo-tasks>
+        </dxo-gantt-tasks>
         <!-- ... -->
     </dx-gantt>
 

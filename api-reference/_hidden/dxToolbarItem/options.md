@@ -28,10 +28,10 @@ Configures the DevExtreme UI component used as a toolbar item.
 
     <!-- tab: app.component.html -->
     <dx-toolbar ... >
-        <dxi-item
+        <dxi-toolbar-item
             widget="dxCheckBox"
             [options]="{ text: 'Show IDs' }">
-        </dxi-item>
+        </dxi-toolbar-item>
     </dx-toolbar>
 
     <!-- tab: app.module.ts -->

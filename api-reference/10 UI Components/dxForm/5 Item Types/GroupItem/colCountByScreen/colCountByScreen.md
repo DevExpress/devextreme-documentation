@@ -33,13 +33,13 @@ Specifies the relation between the [screen size qualifier](/api-reference/10%20U
 
     <!-- tab: app.component.html -->
     <dx-form ... >
-        <dxi-item itemType="group">
-            <dxo-col-count-by-screen 
+        <dxi-form-item itemType="group">
+            <dxo-form-col-count-by-screen 
                 [xs]="2"  
                 [sm]="3"> 
-            </dxo-col-count-by-screen>
-            <dxi-item ... ></dxi-item>
-        </dxi-item>
+            </dxo-form-col-count-by-screen>
+            <dxi-form-item ... ></dxi-form-item>
+        </dxi-form-item>
     </dx-form>
 
     <!-- tab: app.module.ts -->

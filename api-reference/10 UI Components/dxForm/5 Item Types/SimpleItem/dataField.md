@@ -44,7 +44,7 @@ Use standard JavaScript syntax (`item.nestedItem` and `array[itemIndex]`) to spe
 
     <!-- tab: app.component.html -->
     <dx-form [formData]="employee" ... >
-        <dxi-item dataField="address[0].city" ... ></dxi-item>
+        <dxi-form-item dataField="address[0].city" ... ></dxi-form-item>
     </dx-form>
 
     <!-- tab: app.service.ts -->
@@ -194,18 +194,18 @@ The Form component does not support **dataField** field names that contain chara
     <!-- tab: app.component.html -->
     // Incorrect:
     <dx-form [formData]="employee" ... >
-        <dxi-item ...
+        <dxi-form-item ...
             dataField="address.city" // Form attempts to access the "city" property inside of "address".
         >
-        </dxi-item>
+        </dxi-form-item>
     </dx-form>
 
     // Correct:
     <dx-form [formData]="employee" ... >
-        <dxi-item ...
+        <dxi-form-item ...
             dataField="addressCity" // Form accesses "addressCity" correctly.
         >
-        </dxi-item>
+        </dxi-form-item>
     </dx-form>
 
     <!-- tab: app.component.ts -->

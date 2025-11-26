@@ -18,8 +18,8 @@ Rows are sorted according to the data source by default. Set the [sortOrder](/ap
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxi-column dataField="Name"    [sortIndex]="1" sortOrder="asc"></dxi-column>
-        <dxi-column dataField="Surname" [sortIndex]="0" sortOrder="asc"></dxi-column>
+        <dxi-tree-list-column dataField="Name"    [sortIndex]="1" sortOrder="asc"></dxi-tree-list-column>
+        <dxi-tree-list-column dataField="Surname" [sortIndex]="0" sortOrder="asc"></dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->

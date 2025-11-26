@@ -32,13 +32,13 @@ The following code example demonstrates how to bind the DataGrid to the [OData s
 
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
-        <dxi-column
+        <dxi-data-grid-column
             dataField="Products"
             dataType="string"
             [calculateFilterExpression]="calculateFilterExpression"
             [calculateCellValue]="calculateCellValue"
         >
-        </dxi-column>
+        </dxi-data-grid-column>
         // ...
     </dx-data-grid>
 

@@ -59,10 +59,10 @@ To change the properties of an editor, bind the property that should be changed 
     <!--HTML-->
     <dx-form
         [(formData)]="employee">
-        <dxi-item dataField="firstName" [editorOptions]="{ disabled: disableFirstName.value }"></dxi-item>
-        <dxi-item dataField="lastName"></dxi-item>
-        <dxi-item dataField="phone"></dxi-item>
-        <dxi-item dataField="email"></dxi-item>
+        <dxi-form-item dataField="firstName" [editorOptions]="{ disabled: disableFirstName.value }"></dxi-form-item>
+        <dxi-form-item dataField="lastName"></dxi-form-item>
+        <dxi-form-item dataField="phone"></dxi-form-item>
+        <dxi-form-item dataField="email"></dxi-form-item>
     </dx-form>
     <dx-check-box #disableFirstName
         text="Disable the First Name Editor"

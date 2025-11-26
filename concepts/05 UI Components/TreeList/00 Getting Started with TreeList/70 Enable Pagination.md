@@ -20,10 +20,10 @@ When pagination is enabled, TreeList loads records page by page instead of loadi
     <!-- tab: app.component.html -->
     <dx-tree-list ... >
         <!-- ... -->
-        <dxo-paging 
+        <dxo-tree-list-paging 
             [enabled]="true"
             [pageSize]="10">
-        </dxo-paging>
+        </dxo-tree-list-paging>
     </dx-tree-list>
 
 ##### Vue

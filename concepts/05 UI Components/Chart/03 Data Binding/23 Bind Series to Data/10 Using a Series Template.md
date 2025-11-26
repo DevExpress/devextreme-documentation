@@ -33,12 +33,12 @@ After that, use the **seriesTemplate**.[nameField](/api-reference/10%20UI%20Comp
 ##### Angular
 
     <!--HTML--><dx-chart [dataSource]="fruitProduction">
-        <dxo-common-series-settings
+        <dxo-chart-common-series-settings
             argumentField="fruit"
             valueField="produced" <!-- or other data fields -->
             type="bar">
-        </dxo-common-series-settings>
-        <dxo-series-template nameField="year"></dxo-series-template>
+        </dxo-chart-common-series-settings>
+        <dxo-chart-series-template nameField="year"></dxo-chart-series-template>
     </dx-chart>
 
     <!--TypeScript-->
@@ -174,12 +174,12 @@ If you need to change properties of a particular series, return an [object with 
 ##### Angular
 
     <!--HTML--><dx-chart [dataSource]="fruitProduction">
-        <dxo-common-series-settings
+        <dxo-chart-common-series-settings
             argumentField="fruit"
             valueField="produced"
             type="bar">
-        </dxo-common-series-settings>
-        <dxo-series-template nameField="year" [customizeSeries]="customizeSeries"></dxo-series-template>
+        </dxo-chart-common-series-settings>
+        <dxo-chart-series-template nameField="year" [customizeSeries]="customizeSeries"></dxo-chart-series-template>
     </dx-chart>
 
     <!--TypeScript-->

@@ -30,14 +30,14 @@ Each lookup column has an individual [data source](/api-reference/_hidden/GridBa
     
     <!--HTML-->
     <dx-tree-list [dataSource]="orders">
-        <dxi-column
+        <dxi-tree-list-column
             dataField="statusId"> <!-- provides actual values -->
-            <dxo-lookup
+            <dxo-tree-list-lookup
                 [dataSource]="lookupData"
                 valueExpr="id" <!-- contains the same values as the "statusId" field provides -->
                 displayExpr="name"> <!-- provides display values -->
-            </dxo-lookup>
-        </dxi-column>
+            </dxo-tree-list-lookup>
+        </dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->
@@ -189,12 +189,12 @@ Each lookup column has an individual [data source](/api-reference/_hidden/GridBa
     
     <!--HTML-->
     <dx-tree-list [dataSource]="orders">
-        <dxi-column
+        <dxi-tree-list-column
             dataField="status"> <!-- provides column values -->
-            <dxo-lookup
+            <dxo-tree-list-lookup
                 [dataSource]="lookupData"> <!-- contains the same values as the "status" field provides -->
-            </dxo-lookup>
-        </dxi-column>
+            </dxo-tree-list-lookup>
+        </dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->

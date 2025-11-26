@@ -42,10 +42,10 @@ default: undefined
 
     <!-- tab: app.component.html -->
     <dx-vector-map ... >
-        <dxi-annotation ...
+        <dxi-vector-map-annotation ...
             type="custom"
             template="custom-annotation">
-        </dxi-annotation>
+        </dxi-vector-map-annotation>
         <svg *dxTemplate="let annotation of 'custom-annotation'">
             <!-- Declare custom SVG markup here -->
         </svg>

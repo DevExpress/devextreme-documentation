@@ -61,9 +61,9 @@ The following code adds a custom label to the SimpleItem:
 
     <!-- tab: app.component.html -->
     <dx-form ... >
-        <dxi-item ... >
-            <dxo-label template="customLabel"></dxo-label>
-        </dxi-item>
+        <dxi-form-item ... >
+            <dxo-form-label template="customLabel"></dxo-form-label>
+        </dxi-form-item>
         <div *dxTemplate="let data of 'customLabel'">
             <span>Custom {{ data.text }}</span>
         </div>

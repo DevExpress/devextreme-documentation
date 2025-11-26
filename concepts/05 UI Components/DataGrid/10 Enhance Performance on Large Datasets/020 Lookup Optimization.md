@@ -35,16 +35,16 @@ You can send the human-readable values from the server as a part of the main dat
 
     <!--HTML-->
     <dx-data-grid ...>
-        <dxi-column
+        <dxi-data-grid-column
             caption="Customer"
             dataField="CustomerID"
             calculateDisplayValue="CustomerName">   <!-- "CustomerName" provides human-readable values -->
-            <dxo-lookup
+            <dxo-data-grid-lookup
                 [dataSource]="dataSource"
                 displayExpr="ContactName"
                 valueExpr="CustomerID">
-            </dxo-lookup>
-        </dxi-column>
+            </dxo-data-grid-lookup>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->

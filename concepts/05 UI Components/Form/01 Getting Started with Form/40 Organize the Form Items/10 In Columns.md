@@ -29,14 +29,14 @@ An item can span multiple columns. The example below sets the [colSpan](/api-ref
     <dx-form
         [formData]="employee"
         [colCount]="2">
-        <dxi-item dataField="name"></dxi-item>
-        <dxi-item dataField="position"></dxi-item>
-        <dxi-item dataField="hireDate"></dxi-item>
-        <dxi-item dataField="officeNumber"></dxi-item>
-        <dxi-item 
+        <dxi-form-item dataField="name"></dxi-form-item>
+        <dxi-form-item dataField="position"></dxi-form-item>
+        <dxi-form-item dataField="hireDate"></dxi-form-item>
+        <dxi-form-item dataField="officeNumber"></dxi-form-item>
+        <dxi-form-item 
             dataField="notes" 
             [colSpan]="2">
-        </dxi-item>
+        </dxi-form-item>
     </dx-form>
 
     <!-- tab: app.component.ts -->

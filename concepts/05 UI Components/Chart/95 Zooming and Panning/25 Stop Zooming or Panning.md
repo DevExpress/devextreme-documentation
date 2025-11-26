@@ -23,10 +23,10 @@ For example, you can disallow users to zoom in further if the visual range's len
 
     <!--HTML--><dx-chart ...
         (onZoomEnd)="chart_zoomEnd($event)">
-        <dxo-zoom-and-pan
+        <dxo-chart-zoom-and-pan
             argumentAxis="both"
             valueAxis="both">
-        </dxo-zoom-and-pan>
+        </dxo-chart-zoom-and-pan>
     </dx-chart>
 
     <!--TypeScript-->

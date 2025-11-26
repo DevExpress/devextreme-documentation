@@ -24,8 +24,8 @@ In this tutorial, the **filterRow** and **searchPanel** are displayed:
     <!-- tab: app.component.html -->
     <dx-tree-list ... >
         <!-- ... -->
-        <dxo-filter-row [visible]="true"></dxo-filter-row>
-        <dxo-search-panel [visible]="true"></dxo-search-panel>
+        <dxo-tree-list-filter-row [visible]="true"></dxo-tree-list-filter-row>
+        <dxo-tree-list-search-panel [visible]="true"></dxo-tree-list-search-panel>
     </dx-tree-list>
 
 ##### Vue

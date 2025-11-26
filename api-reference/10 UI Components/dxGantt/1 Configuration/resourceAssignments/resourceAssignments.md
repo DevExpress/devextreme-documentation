@@ -49,12 +49,12 @@ Use the [dataSource](/api-reference/10%20UI%20Components/dxGantt/1%20Configurati
 
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxo-resource-assignments 
+        <dxo-gantt-resource-assignments 
             [dataSource]="resourceAssignments" 
             keyExpr="key"
             resourceIdExpr="resourceKey" 
             taskIdExpr="taskKey">
-        </dxo-resource-assignments>
+        </dxo-gantt-resource-assignments>
         <!-- ... -->
     </dx-gantt>
 

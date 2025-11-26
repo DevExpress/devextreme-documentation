@@ -26,15 +26,15 @@ If you use a lookup column editor in the DataGrid or TreeList, you need to speci
 
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
-        <dxi-column 
+        <dxi-data-grid-column 
             dataField="StateID"
         >
-            <dxo-lookup 
+            <dxo-data-grid-lookup 
                 [dataSource]="dataSource" 
                 valueExpr="ID"
             >
-            </dxo-lookup>
-        </dxi-column>
+            </dxo-data-grid-lookup>
+        </dxi-data-grid-column>
      </dx-data-grid>
 
     <!-- tab: app.component.ts -->

@@ -29,9 +29,9 @@ Edit operations are enabled (the default setting). To disable an individual oper
 
     <!-- tab: app.component.html -->
     <dx-scheduler ... >
-        <dxo-editing
+        <dxo-scheduler-editing
             [allowDragging]="false">
-        </dxo-editing>
+        </dxo-scheduler-editing>
     </dx-scheduler> 
 
 ##### Vue 

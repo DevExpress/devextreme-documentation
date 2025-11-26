@@ -37,16 +37,16 @@ The following example sets the **isRequired** property for the `Name` item. It a
     <dx-form
         [formData]="employee"
         [colCount]="2">
-        <dxi-item dataField="name" [isRequired]="true">
-        </dxi-item>
-        <dxi-item dataField="officeNumber">
-            <dxi-validation-rule type="numeric">
-            </dxi-validation-rule>
-        </dxi-item>
-        <dxi-item dataField="email">
-            <dxi-validation-rule type="email">
-            </dxi-validation-rule>
-        </dxi-item>
+        <dxi-form-item dataField="name" [isRequired]="true">
+        </dxi-form-item>
+        <dxi-form-item dataField="officeNumber">
+            <dxi-form-validation-rule type="numeric">
+            </dxi-form-validation-rule>
+        </dxi-form-item>
+        <dxi-form-item dataField="email">
+            <dxi-form-validation-rule type="email">
+            </dxi-form-validation-rule>
+        </dxi-form-item>
     </dx-form>
 
     <!-- tab: app.component.ts -->

@@ -26,13 +26,13 @@ The toolbar provides [predefined items](/concepts/05%20UI%20Components/HtmlEdito
 
     <!--HTML-->
     <dx-html-editor>
-        <dxo-toolbar>
-            <dxi-item name="bold"></dxi-item>
-            <dxi-item name="italic"></dxi-item>
-            <dxi-item name="alignCenter"></dxi-item>
-            <dxi-item name="undo"></dxi-item>
-            <dxi-item name="redo"></dxi-item>
-        </dxo-toolbar>
+        <dxo-html-editor-toolbar>
+            <dxi-html-editor-item name="bold"></dxi-html-editor-item>
+            <dxi-html-editor-item name="italic"></dxi-html-editor-item>
+            <dxi-html-editor-item name="alignCenter"></dxi-html-editor-item>
+            <dxi-html-editor-item name="undo"></dxi-html-editor-item>
+            <dxi-html-editor-item name="redo"></dxi-html-editor-item>
+        </dxo-html-editor-toolbar>
     </dx-html-editor>
 
     <!--TypeScript-->
@@ -146,13 +146,13 @@ Most of the predefined items are buttons. To customize a button, assign its name
 
     <!--HTML-->
     <dx-html-editor>
-        <dxo-toolbar>
+        <dxo-html-editor-toolbar>
             <!-- ... -->
-            <dxi-item
+            <dxi-html-editor-item
                 name="clear"
                 [options]="clearFormatOptions">
-            </dxi-item>
-        </dxo-toolbar>
+            </dxi-html-editor-item>
+        </dxo-html-editor-toolbar>
     </dx-html-editor>
 
     <!--TypeScript-->

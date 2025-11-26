@@ -28,9 +28,9 @@ If the axis displays numbers, assign a number to this property. If the axis disp
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis ... >
-            <dxo-minor-tick-interval [days]="5"></dxo-minor-tick-interval>
-        </dxo-argument-axis>
+        <dxo-chart-argument-axis ... >
+            <dxo-chart-minor-tick-interval [days]="5"></dxo-chart-minor-tick-interval>
+        </dxo-chart-argument-axis>
     </dx-chart>
 
     <!--TypeScript-->

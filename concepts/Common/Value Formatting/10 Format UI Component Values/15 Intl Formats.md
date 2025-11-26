@@ -23,14 +23,14 @@ A UI component's **format** property is compatible with the `options` parameter 
 
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
-        <dxi-column
+        <dxi-data-grid-column
             dataField="OrderDate"
             [format]="{ year: '2-digit', month: 'narrow', day: '2-digit' }">
-        </dxi-column>
-        <dxi-column
+        </dxi-data-grid-column>
+        <dxi-data-grid-column
             dataField="SaleAmount"
             [format]="{ style: 'currency', currency: 'EUR', useGrouping: true, minimumSignificantDigits: 3 }">
-        </dxi-column>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!-- tab: app.module.ts -->

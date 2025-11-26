@@ -19,10 +19,10 @@ Top N points with the biggest values remain ungrouped; all other points form a g
 
         <!--HTML-->
         <dx-pie-chart>
-            <dxo-small-values-grouping
+            <dxo-pie-chart-small-values-grouping
                 mode="topN"
                 [topCount]="5">
-            </dxo-small-values-grouping>
+            </dxo-pie-chart-small-values-grouping>
         </dx-pie-chart>
 
         <!--TypeScript-->
@@ -104,10 +104,10 @@ Points that fall beyond a threshold establish a group. The **smallValuesGrouping
 
         <!--HTML-->
         <dx-pie-chart>
-            <dxo-small-values-grouping
+            <dxo-pie-chart-small-values-grouping
                 mode="smallValueThreshold"
                 [threshold]="3.5">
-            </dxo-small-values-grouping>
+            </dxo-pie-chart-small-values-grouping>
         </dx-pie-chart>
 
         <!--TypeScript-->
@@ -189,9 +189,9 @@ The group for small points is called *"others"* by default. You can change this 
 
     <!--HTML-->
     <dx-pie-chart>
-        <dxo-small-values-grouping ...
+        <dxo-pie-chart-small-values-grouping ...
             groupName="miscellaneous">
-        </dxo-small-values-grouping>
+        </dxo-pie-chart-small-values-grouping>
     </dx-pie-chart>
 
     <!--TypeScript-->

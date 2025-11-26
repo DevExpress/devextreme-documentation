@@ -130,9 +130,9 @@ To configure other aspects of the funnel items' appearance, use the [item](/api-
 
     <!--HTML-->
     <dx-funnel ... >
-        <dxo-border
+        <dxo-funnel-border
             [visible]="true">
-        </dxo-border>
+        </dxo-funnel-border>
     </dx-funnel>
 
     <!--TypeScript-->

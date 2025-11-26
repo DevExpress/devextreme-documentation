@@ -37,15 +37,15 @@ If none of the available editors suit your requirements, you can define a custom
     <!--HTML-->
     <dx-form
         [(formData)]="employee">
-        <dxi-item dataField="name"></dxi-item>
-        <dxi-item 
+        <dxi-form-item dataField="name"></dxi-form-item>
+        <dxi-form-item 
             dataField="notes"
             [template]="'notesTemplate'">
-        </dxi-item>
-        <dxi-item 
+        </dxi-form-item>
+        <dxi-form-item 
             dataField="picture" 
             [template]="'pictureTemplate'">
-        </dxi-item>
+        </dxi-form-item>
         <div *dxTemplate="let data of 'notesTemplate'">
             <dx-text-area [(value)]="employee.notes"></dx-text-area>
         </div>

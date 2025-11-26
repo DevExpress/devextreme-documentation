@@ -27,9 +27,9 @@ Use the [columns](/api-reference/10%20UI%20Components/dxGantt/1%20Configuration/
 
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxi-column dataField="title" caption="Subject" [width]="300"></dxi-column>
-        <dxi-column dataField="start" caption="Start Date" dataType="date"></dxi-column>
-        <dxi-column dataField="end" caption="End Date" dataType="date"></dxi-column>
+        <dxi-gantt-column dataField="title" caption="Subject" [width]="300"></dxi-gantt-column>
+        <dxi-gantt-column dataField="start" caption="Start Date" dataType="date"></dxi-gantt-column>
+        <dxi-gantt-column dataField="end" caption="End Date" dataType="date"></dxi-gantt-column>
     </dx-gantt>
 
 ##### Vue

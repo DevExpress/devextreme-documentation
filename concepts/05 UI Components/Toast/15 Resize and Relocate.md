@@ -182,11 +182,11 @@ If you need to position the Toast against a specific element on your page, set t
         [(visible)]="isVisible"
         type="error"
         message="Connection problem">
-        <dxo-position
+        <dxo-toast-position
             my="left"
             at="left"
             of="#targetElement">
-        </dxo-position>
+        </dxo-toast-position>
     </dx-toast>
     <dx-button
         text="Show the Toast"

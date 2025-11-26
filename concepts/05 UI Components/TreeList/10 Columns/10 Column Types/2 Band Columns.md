@@ -21,11 +21,11 @@ To set up this layout, describe the hierarchy of columns directly in an object o
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxi-column caption="Contacts">
-            <dxi-column dataField="Email"></dxi-column>
-            <dxi-column dataField="Mobile_Phone"></dxi-column>
-            <dxi-column dataField="Skype"></dxi-column>
-        </dxi-column>
+        <dxi-tree-list-column caption="Contacts">
+            <dxi-tree-list-column dataField="Email"></dxi-tree-list-column>
+            <dxi-tree-list-column dataField="Mobile_Phone"></dxi-tree-list-column>
+            <dxi-tree-list-column dataField="Skype"></dxi-tree-list-column>
+        </dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->
@@ -240,19 +240,19 @@ Band columns support hierarchies of any nesting level making the following struc
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxi-column caption="A">
-            <dxi-column dataField="A1"></dxi-column>
-            <dxi-column dataField="A2"></dxi-column>
-            <dxi-column caption="A3">
-                <dxi-column dataField="A31"></dxi-column>
-                <dxi-column dataField="A32"></dxi-column>
-                <dxi-column caption="A33">
-                    <dxi-column dataField="A331"></dxi-column>
-                    <dxi-column dataField="A332"></dxi-column>
-                    <dxi-column dataField="A333"></dxi-column>
-                </dxi-column>
-            </dxi-column>
-        </dxi-column>
+        <dxi-tree-list-column caption="A">
+            <dxi-tree-list-column dataField="A1"></dxi-tree-list-column>
+            <dxi-tree-list-column dataField="A2"></dxi-tree-list-column>
+            <dxi-tree-list-column caption="A3">
+                <dxi-tree-list-column dataField="A31"></dxi-tree-list-column>
+                <dxi-tree-list-column dataField="A32"></dxi-tree-list-column>
+                <dxi-tree-list-column caption="A33">
+                    <dxi-tree-list-column dataField="A331"></dxi-tree-list-column>
+                    <dxi-tree-list-column dataField="A332"></dxi-tree-list-column>
+                    <dxi-tree-list-column dataField="A333"></dxi-tree-list-column>
+                </dxi-tree-list-column>
+            </dxi-tree-list-column>
+        </dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->

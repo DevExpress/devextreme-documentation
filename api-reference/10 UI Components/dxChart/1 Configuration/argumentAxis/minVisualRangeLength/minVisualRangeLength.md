@@ -30,9 +30,9 @@ If the visual range is set on a numeric axis, assign a number to this property. 
 
     <!-- tab: app.component.html -->
     <dx-chart ... >
-        <dxo-argument-axis ... >
-            <dxo-min-visual-range-length [weeks]="2"></dxo-min-visual-range-length>
-        </dxo-argument-axis>
+        <dxo-chart-argument-axis ... >
+            <dxo-chart-min-visual-range-length [weeks]="2"></dxo-chart-min-visual-range-length>
+        </dxo-chart-argument-axis>
     </dx-chart>
 
     <!-- tab: app.component.ts -->

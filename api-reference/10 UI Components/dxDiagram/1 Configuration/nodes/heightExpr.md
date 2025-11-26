@@ -69,12 +69,12 @@ The [units](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuration/unit
 
     <!-- tab: app.component.html -->
     <dx-diagram #diagram id="diagram">
-        <dxo-nodes
+        <dxo-diagram-nodes
             [dataSource]="orgItemsDataSource"
             keyExpr="ID"
             [heightExpr]="itemHeightExpr"
         >
-        </dxo-nodes>
+        </dxo-diagram-nodes>
     </dx-diagram>
 
     <!-- tab: app.module.ts -->

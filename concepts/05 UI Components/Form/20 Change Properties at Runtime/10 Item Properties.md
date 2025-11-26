@@ -53,12 +53,12 @@ To change an item property at runtime, bind the property that should be changed 
     <!--HTML-->
     <dx-form
         [(formData)]="employee">
-        <dxi-item dataField="firstName"></dxi-item>
-        <dxi-item dataField="lastName"></dxi-item>
-        <dxi-item itemType="group" caption="Contacts">
-            <dxi-item dataField="phone" [visible]="showPhone.value"></dxi-item>
-            <dxi-item dataField="email"></dxi-item>
-        </dxi-item>
+        <dxi-form-item dataField="firstName"></dxi-form-item>
+        <dxi-form-item dataField="lastName"></dxi-form-item>
+        <dxi-form-item itemType="group" caption="Contacts">
+            <dxi-form-item dataField="phone" [visible]="showPhone.value"></dxi-form-item>
+            <dxi-form-item dataField="email"></dxi-form-item>
+        </dxi-form-item>
     </dx-form>
     <dx-check-box #showPhone
         text="Show the Phone Number"

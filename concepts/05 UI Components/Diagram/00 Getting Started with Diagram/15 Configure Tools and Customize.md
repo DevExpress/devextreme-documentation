@@ -52,20 +52,20 @@ The toolbox contains groups of shapes. In this tutorial, we use this configurati
         [simpleView]="true"
         pageColor="#f0f0f0"
     >
-        <dxo-default-item-properties 
+        <dxo-diagram-default-item-properties 
             textStyle="font-family: 'Courier New', monospace;">
-        </dxo-default-item-properties>
-        <dxo-properties-panel>
-            <dxi-tab>
-                <dxi-group
+        </dxo-diagram-default-item-properties>
+        <dxo-diagram-properties-panel>
+            <dxi-diagram-tab>
+                <dxi-diagram-group
                     title="Object Properties"
                     [commands]="['lineStyle', 'lineColor', 'fillColor']"
-                ></dxi-group>
-            </dxi-tab>
-        </dxo-properties-panel>
-        <dxo-toolbox [showSearch]="false">
-            <dxi-group category="general" [shapes]="['text', 'rectangle']"></dxi-group>
-        </dxo-toolbox>
+                ></dxi-diagram-group>
+            </dxi-diagram-tab>
+        </dxo-diagram-properties-panel>
+        <dxo-diagram-toolbox [showSearch]="false">
+            <dxi-diagram-group category="general" [shapes]="['text', 'rectangle']"></dxi-diagram-group>
+        </dxo-diagram-toolbox>
     </dx-diagram>
 
 ##### Vue

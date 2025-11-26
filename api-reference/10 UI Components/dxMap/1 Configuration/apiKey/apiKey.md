@@ -30,11 +30,11 @@ If you have more than one map provider in your application, specify the keys in 
 
     <!-- tab: app.component.html -->
     <dx-map ... >
-        <dxo-api-key
+        <dxo-map-api-key
             azure="MY_AZURE_MAPS_KEY"
             google="MY_GOOGLE_MAPS_KEY"
             googleStatic="MY_GOOGLE_STATIC_MAPS_KEY">
-        </dxo-api-key>
+        </dxo-map-api-key>
     </dx-map>
 
     <!-- tab: app.component.ts -->

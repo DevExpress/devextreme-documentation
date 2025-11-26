@@ -20,10 +20,10 @@ You can enable both exporting and printing by setting the [export](/api-referenc
 ##### Angular
 
     <!--HTML--><dx-funnel ... >
-        <dxo-export
+        <dxo-funnel-export
             [enabled]="true"
             [printingEnabled]="false">
-        </dxo-export>
+        </dxo-funnel-export>
     </dx-funnel>
 
     <!--TypeScript-->
@@ -105,11 +105,11 @@ If you want to restrict the set of formats available for exporting, change the *
 ##### Angular
 
     <!--HTML--><dx-funnel ... >
-        <dxo-export
+        <dxo-funnel-export
             [enabled]="true"
             [formats]="['PNG', 'JPEG']"
             fileName="exported_funnel">
-        </dxo-export>
+        </dxo-funnel-export>
     </dx-funnel>
 
     <!--TypeScript-->

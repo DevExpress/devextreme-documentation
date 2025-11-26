@@ -44,25 +44,25 @@ If you need to implement minor changes (for example, apply a style to a form ite
 
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
-        <dxo-editing
+        <dxo-data-grid-editing
             [allowUpdating]="true"
             mode="form"
         >
-        </dxo-editing>
-        <dxi-column dataField="ID">
-            <dxo-form-item [visible]="false">
-            </dxo-form-item>
-        </dxi-column>
-        <dxi-column dataField="Notes">
-            <dxo-form-item 
+        </dxo-data-grid-editing>
+        <dxi-data-grid-column dataField="ID">
+            <dxo-data-grid-form-item [visible]="false">
+            </dxo-data-grid-form-item>
+        </dxi-data-grid-column>
+        <dxi-data-grid-column dataField="Notes">
+            <dxo-data-grid-form-item 
                 [colSpan] = "2"
                 cssClass = "custom-class"
                 editorType = "dxTextArea"
                 [editorOptions] = "{ height: 100 }"
             >
-                <dxo-label location="top"></dxo-label>
-            </dxo-form-item>
-        </dxi-column>
+                <dxo-data-grid-label location="top"></dxo-data-grid-label>
+            </dxo-data-grid-form-item>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!-- tab: app.module.ts -->

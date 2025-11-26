@@ -306,10 +306,10 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
         displayExpr="name"
         parentIdExpr="parent"
         [searchEnabled]="true">
-        <dxo-search-editor-options
+        <dxo-tree-view-search-editor-options
             placeholder="Type search value here..."
             [width]="300">
-        </dxo-search-editor-options>
+        </dxo-tree-view-search-editor-options>
     </dx-tree-view>
 
     <!--TypeScript-->

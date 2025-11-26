@@ -38,21 +38,21 @@ Normally, when records are grouped by a column, the groups are sorted according 
  
      <!--HTML-->
      <dx-data-grid ... >
-         <dxo-summary>
-             <dxi-group-item
+         <dxo-data-grid-summary>
+             <dxi-data-grid-group-item
                  column="Age"
                  summaryType="avg"
                  name="Average Age Group Summary">
-             </dxi-group-item>
-             <dxi-group-item
+             </dxi-data-grid-group-item>
+             <dxi-data-grid-group-item
                  column="Income"
                  summaryType="max">
-             </dxi-group-item>
-             <dxi-group-item
+             </dxi-data-grid-group-item>
+             <dxi-data-grid-group-item
                  column="Tasks"
                  summaryType="min">
-             </dxi-group-item>
-         </dxo-summary>
+             </dxi-data-grid-group-item>
+         </dxo-data-grid-summary>
      </dx-data-grid>
 
     <!--TypeScript-->
@@ -159,15 +159,15 @@ To use these summary items for sorting groups, assign an array of objects to the
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-sort-by-group-summary-info 
+        <dxi-data-grid-sort-by-group-summary-info 
             [summaryItem]="1"> <!-- determines the maximum income item using its index in the "groupItems" array -->
-        </dxi-sort-by-group-summary-info>
-        <dxi-sort-by-group-summary-info 
+        </dxi-data-grid-sort-by-group-summary-info>
+        <dxi-data-grid-sort-by-group-summary-info 
             summaryItem="min"> <!-- determines the minimum tasks item using its aggregate function -->
-        </dxi-sort-by-group-summary-info>
-        <dxi-sort-by-group-summary-info 
+        </dxi-data-grid-sort-by-group-summary-info>
+        <dxi-data-grid-sort-by-group-summary-info 
             summaryItem="Average Age Group Summary"> <!-- determines the average age item using its name -->
-        </dxi-sort-by-group-summary-info>
+        </dxi-data-grid-sort-by-group-summary-info>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -262,16 +262,16 @@ After that, set the [groupColumn](/api-reference/10%20UI%20Components/dxDataGrid
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-sort-by-group-summary-info 
+        <dxi-data-grid-sort-by-group-summary-info 
             [summaryItem]="1" groupColumn="Tasks"> <!-- applies sorting only when records are grouped by the "Tasks" column -->
-        </dxi-sort-by-group-summary-info>
-        <dxi-sort-by-group-summary-info 
+        </dxi-data-grid-sort-by-group-summary-info>
+        <dxi-data-grid-sort-by-group-summary-info 
             summaryItem="min"
             groupColumn="Last Name"> <!-- applies sorting only when records are grouped by a "Last Name" column -->
-        </dxi-sort-by-group-summary-info>
-        <dxi-sort-by-group-summary-info 
+        </dxi-data-grid-sort-by-group-summary-info>
+        <dxi-data-grid-sort-by-group-summary-info 
             summaryItem="Average Age Group Summary"> <!--  applies sorting regardless the grouping column -->
-        </dxi-sort-by-group-summary-info>
+        </dxi-data-grid-sort-by-group-summary-info>
     </dx-data-grid>
 
     <!--TypeScript-->

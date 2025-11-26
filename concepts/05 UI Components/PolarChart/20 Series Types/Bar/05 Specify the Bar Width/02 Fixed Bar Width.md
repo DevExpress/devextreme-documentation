@@ -22,14 +22,14 @@ The [barWidth](/api-reference/10%20UI%20Components/dxPolarChart/5%20Series%20Typ
 
     <!--HTML-->
     <dx-polar-chart ... >
-        <dxi-series
+        <dxi-polar-chart-series
             [barWidth]="20"> <!-- for an individual series -->
-        </dxi-series>
-        <dxi-series ... ></dxi-series>
+        </dxi-polar-chart-series>
+        <dxi-polar-chart-series ... ></dxi-polar-chart-series>
         ...
-        <dxo-common-series-settings
+        <dxo-polar-chart-common-series-settings
             [barWidth]="20"> <!-- for all series in the chart -->
-        </dxo-common-series-settings>
+        </dxo-polar-chart-common-series-settings>
     </dx-polar-chart>
 
     <!--TypeScript-->

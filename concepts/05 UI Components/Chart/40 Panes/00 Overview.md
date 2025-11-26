@@ -28,10 +28,10 @@ Panes are configured by the [panes](/api-reference/10%20UI%20Components/dxChart/
 
     <!--HTML--><dx-chart ... >
         <dxi-panes backgroundColor="yellow">
-            <dxo-border
+            <dxo-chart-border
                 [visible]="true"
                 [width]="2">
-            </dxo-border>
+            </dxo-chart-border>
         </dxi-panes>
     </dx-chart>
 

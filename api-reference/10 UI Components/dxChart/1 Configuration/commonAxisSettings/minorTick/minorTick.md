@@ -33,16 +33,16 @@ In addition to [major ticks](/api-reference/10%20UI%20Components/dxChart/1%20Con
 
     <!-- tab: app.component.html -->
     <dx-chart ... >
-        <dxo-common-axis-settings>
-            <dxo-minor-tick
+        <dxo-chart-common-axis-settings>
+            <dxo-chart-minor-tick
                 [visible]="true"
                 color="blue"
                 [length]="10"
                 [opacity]="0.5"
                 [shift]="0"
                 [width]="1"
-            ></dxo-minor-tick>
-        </dxo-common-axis-settings>
+            ></dxo-chart-minor-tick>
+        </dxo-chart-common-axis-settings>
     </dx-chart>
 
 ##### Vue

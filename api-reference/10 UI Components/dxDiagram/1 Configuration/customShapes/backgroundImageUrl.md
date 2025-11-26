@@ -54,7 +54,7 @@ The **backgroundImageUrl** property is not in effect if the [baseType](/api-refe
 
     <!-- tab: app.component.html -->
     <dx-diagram #diagram id="diagram">
-        <dxi-custom-shape 
+        <dxi-diagram-custom-shape 
             category="custom"
             type="roundedRect"
             title="Rounded Rectangle"
@@ -64,10 +64,10 @@ The **backgroundImageUrl** property is not in effect if the [baseType](/api-refe
             defaultText="Text"
             [textTop]="0.35"
             [textHeight]="0.3">
-        </dxi-custom-shape>
-        <dxo-toolbox>
-            <dxi-group category="custom" title="Custom"></dxi-group>
-        </dxo-toolbox>
+        </dxi-diagram-custom-shape>
+        <dxo-diagram-toolbox>
+            <dxi-diagram-group category="custom" title="Custom"></dxi-diagram-group>
+        </dxo-diagram-toolbox>
     </dx-diagram>
 ##### Vue
 

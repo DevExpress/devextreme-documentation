@@ -26,12 +26,12 @@ To group data in code, specify a column's [groupIndex](/api-reference/_hidden/dx
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
         <!-- ... -->
-        <dxi-column
+        <dxi-data-grid-column
             dataField="Country"
             ...
             [groupIndex]="0">
-        </dxi-column>
-        <dxo-group-panel [visible]="true"></dxo-group-panel>
+        </dxi-data-grid-column>
+        <dxo-data-grid-group-panel [visible]="true"></dxo-data-grid-group-panel>
     </dx-data-grid>
 
 ##### Vue

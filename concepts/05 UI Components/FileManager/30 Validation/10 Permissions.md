@@ -30,7 +30,7 @@ The UI component also has the [allowedFileExtensions](/api-reference/10%20UI%20C
     <!-- tab: app.component.html -->
     <dx-file-manager id="fileManager" 
         [allowedFileExtensions]="allowedFileExtensions" >
-        <dxo-permissions 
+        <dxo-file-manager-permissions 
             [create]="true"
             [copy]="true"
             [download]="true"
@@ -38,7 +38,7 @@ The UI component also has the [allowedFileExtensions](/api-reference/10%20UI%20C
             [remove]="true"
             [rename]="true"
             [upload]="true">
-        </dxo-permissions>
+        </dxo-file-manager-permissions>
         <!-- ... -->
     </dx-file-manager>
 

@@ -43,18 +43,18 @@ The example below illustrates how to customize label text for all series and ind
 
     <!-- tab: app.component.html -->
     <dx-pie-chart ... >
-        <dxi-series valueField="y1564" name="15-64 years"></dxi-series>
-        <dxi-series valueField="y014" name="0-14 years"></dxi-series>
-        <dxi-series valueField="y65" name="65 years and older">
-            <dxo-label displayformat="<u>65+ years</u>: {value}">
-            </dxo-label>
-        </dxi-series>
-        <dxo-common-series-settings ... >
-            <dxo-label 
+        <dxi-pie-chart-series valueField="y1564" name="15-64 years"></dxi-pie-chart-series>
+        <dxi-pie-chart-series valueField="y014" name="0-14 years"></dxi-pie-chart-series>
+        <dxi-pie-chart-series valueField="y65" name="65 years and older">
+            <dxo-pie-chart-label displayformat="<u>65+ years</u>: {value}">
+            </dxo-pie-chart-label>
+        </dxi-pie-chart-series>
+        <dxo-pie-chart-common-series-settings ... >
+            <dxo-pie-chart-label 
                 [visible]="true"
                 displayFormat="{series}: {value}">
-            </dxo-label>
-        </dxo-common-series-settings>
+            </dxo-pie-chart-label>
+        </dxo-pie-chart-common-series-settings>
     </dx-pie-chart>
 
     <!-- tab: app.component.ts -->

@@ -26,16 +26,16 @@ When a sankey node or link is hovered over or pressed, it applies the appearance
 
     <!--HTML-->
     <dx-sankey ... >
-        <dxo-node>
-            <dxo-hover-style
+        <dxo-sankey-node>
+            <dxo-sankey-hover-style
                 [opacity]="0.5">
-            </dxo-hover-style>
-        </dxo-node>
-        <dxo-link>
-            <dxo-hover-style>
-                <dxo-border [visible]="true"></dxo-border>
-            </dxo-hover-style>
-        </dxo-link>
+            </dxo-sankey-hover-style>
+        </dxo-sankey-node>
+        <dxo-sankey-link>
+            <dxo-sankey-hover-style>
+                <dxo-sankey-border [visible]="true"></dxo-sankey-border>
+            </dxo-sankey-hover-style>
+        </dxo-sankey-link>
     </dx-sankey>
 
     <!--TypeScript-->

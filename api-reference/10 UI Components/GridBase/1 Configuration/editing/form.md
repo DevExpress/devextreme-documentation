@@ -292,16 +292,16 @@ If you configure a form with [tabbed items](/api-reference/10%20UI%20Components/
 
         <!-- tab: app.component.html -->
         <dx-data-grid ... >
-            <dxo-editing ... >
-                <dxo-form>
-                    <dxi-item itemType="tabbed">
+            <dxo-data-grid-editing ... >
+                <dxo-data-grid-form>
+                    <dxi-data-grid-item itemType="tabbed">
                         <dxo-tab-panel-options [deferRendering]="false" />
                         <dxi-tab ... >
-                            <dxi-item ... />
+                            <dxi-data-grid-item ... />
                         </dxi-tab>
-                    </dxi-item>
-                </dxo-form>
-            </dxo-editing>
+                    </dxi-data-grid-item>
+                </dxo-data-grid-form>
+            </dxo-data-grid-editing>
         </dx-data-grid>
 
         <!-- tab: app.module.ts -->

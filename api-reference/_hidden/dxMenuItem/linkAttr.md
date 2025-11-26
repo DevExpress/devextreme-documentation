@@ -49,12 +49,12 @@ The following code opens a link in a new window or tab:
 
     <!-- tab: app.component.html -->
     <dx-menu>
-        <dxi-item 
+        <dxi-menu-item 
             text="Home"
             url="https://js.devexpress.com"
             [linkAttr]="linkAttr"
         >
-        </dxi-item>
+        </dxi-menu-item>
     </dx-menu>
 
     <!-- tab: app.component.ts -->

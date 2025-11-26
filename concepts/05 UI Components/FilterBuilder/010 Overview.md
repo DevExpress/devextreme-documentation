@@ -45,18 +45,18 @@ The following code adds a simple FilterBuilder to your page. Note that each item
     <!--HTML-->
     <dx-filter-builder
         [(value)]="filterValue">
-        <dxi-field
+        <dxi-filter-builder-field
             dataField="Product_ID"
             dataType="number"
             caption="ID">
-        </dxi-field>
-        <dxi-field dataField="Product_Name"></dxi-field>
-        <dxi-field
+        </dxi-filter-builder-field>
+        <dxi-filter-builder-field dataField="Product_Name"></dxi-filter-builder-field>
+        <dxi-filter-builder-field
             dataField="Product_Cost"
             dataType="number"
             caption="Cost"
             format="currency">
-        </dxi-field>
+        </dxi-filter-builder-field>
     </dx-filter-builder>
 
     <!--TypeScript-->

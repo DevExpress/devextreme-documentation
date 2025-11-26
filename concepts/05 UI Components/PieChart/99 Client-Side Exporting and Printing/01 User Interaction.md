@@ -20,10 +20,10 @@ You can enable both exporting and printing by setting the [export](/api-referenc
 ##### Angular
 
     <!--HTML--><dx-pie-chart ... >
-        <dxo-export
+        <dxo-pie-chart-export
             [enabled]="true"
             [printingEnabled]="false">
-        </dxo-export>
+        </dxo-pie-chart-export>
     </dx-pie-chart>
 
     <!--TypeScript-->
@@ -107,11 +107,11 @@ If you want to restrict the set of formats available for exporting, change the *
 ##### Angular
 
     <!--HTML--><dx-pie-chart ... >
-        <dxo-export
+        <dxo-pie-chart-export
             [enabled]="true"
             [formats]="['PNG', 'JPEG']"
             fileName="exported_chart">
-        </dxo-export>
+        </dxo-pie-chart-export>
     </dx-pie-chart>
 
     <!--TypeScript-->

@@ -24,10 +24,10 @@ Properties that configure tooltips are collected in the [tooltip](/api-reference
 ##### Angular
 
     <!--HTML--><dx-sankey ... >
-        <dxo-tooltip
+        <dxo-sankey-tooltip
             color="yellow"
             [customizeNodeTooltip]="sankey_customizeNodeTooltip">
-        </dxo-tooltip>
+        </dxo-sankey-tooltip>
     </dx-sankey>
 
     <!--TypeScript-->

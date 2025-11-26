@@ -43,10 +43,10 @@ The text the cell should display.
 
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-    <dxi-column
+    <dxi-gantt-column
         dataField="Miles"
         [customizeText]="customizeText"
-    ></dxi-column>
+    ></dxi-gantt-column>
     </dx-gantt>
 
     <!-- tab: app.component.ts -->

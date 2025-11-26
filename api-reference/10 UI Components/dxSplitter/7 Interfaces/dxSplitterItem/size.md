@@ -27,10 +27,10 @@ Specifies the initial size of an item (pane) in pixels or as a percentage. The s
 
     <!-- tab: app.component.html -->
     <dx-splitter ... >
-        <dxi-item ...
+        <dxi-splitter-item ...
             size="50%"
         >
-        </dxi-item>
+        </dxi-splitter-item>
     </dx-splitter>
 
 ##### Vue

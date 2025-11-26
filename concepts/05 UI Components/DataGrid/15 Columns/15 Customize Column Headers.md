@@ -22,7 +22,7 @@ Specify the **columns**.[caption](/api-reference/_hidden/GridBaseColumn/caption.
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column dataField="CompanyName" caption="Company"></dxi-column>
+        <dxi-data-grid-column dataField="CompanyName" caption="Company"></dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -117,15 +117,15 @@ If you need a more specific customization, define a custom template in the **col
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column
+        <dxi-data-grid-column
             dataField="Title"
             caption="Position"
             headerCellTemplate="titleHeaderTemplate">
-        </dxi-column>
-        <dxi-column
+        </dxi-data-grid-column>
+        <dxi-data-grid-column
             dataField="Address"
             headerCellTemplate="addressHeaderTemplate">
-        </dxi-column>
+        </dxi-data-grid-column>
         <div *dxTemplate="let info of 'titleHeaderTemplate'">
             <p style="font-size:16px">{{info.column.caption}}</p>
         </div>

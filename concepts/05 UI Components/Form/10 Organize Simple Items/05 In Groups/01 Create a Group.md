@@ -30,19 +30,19 @@ In the context of the Form UI component, a group is called ["group item"](/api-r
     <!--HTML-->
     <dx-form
         [(formData)]="employee">
-        <dxi-item
+        <dxi-form-item
             itemType="group"
             caption="Personal Data">
-                <dxi-item dataField="firstName"></dxi-item>
-                <dxi-item dataField="lastName"></dxi-item>
-                <dxi-item dataField="position"></dxi-item>
-        </dxi-item>
-        <dxi-item
+                <dxi-form-item dataField="firstName"></dxi-form-item>
+                <dxi-form-item dataField="lastName"></dxi-form-item>
+                <dxi-form-item dataField="position"></dxi-form-item>
+        </dxi-form-item>
+        <dxi-form-item
             itemType="group"
             caption="Contacts">
-                <dxi-item dataField="phone"></dxi-item>
-                <dxi-item dataField="email"></dxi-item>
-        </dxi-item>
+                <dxi-form-item dataField="phone"></dxi-form-item>
+                <dxi-form-item dataField="email"></dxi-form-item>
+        </dxi-form-item>
     </dx-form>
 
     <!--TypeScript-->

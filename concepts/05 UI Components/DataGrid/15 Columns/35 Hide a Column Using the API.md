@@ -11,10 +11,10 @@ A column is considered hidden when its [visible](/api-reference/_hidden/GridBase
 
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
-        <dxi-column
+        <dxi-data-grid-column
             dataField="Email"
             [(visible)]="isEmailVisible"
-        ></dxi-column>
+        ></dxi-data-grid-column>
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->

@@ -43,12 +43,12 @@ The FileManager UI component allows you to add default and create custom context
 
     <!-- tab: app.component.html -->
     <dx-file-manager >
-        <dxo-context-menu>
-            <dxi-item name="create"></dxi-item>
-            <dxi-item text="Create new file">
-                <dxi-item text="Text Document" [options]="{ extension: '.txt' }"></dxi-item>
-            </dxi-item>
-        </dxo-context-menu>
+        <dxo-file-manager-context-menu>
+            <dxi-file-manager-item name="create"></dxi-file-manager-item>
+            <dxi-file-manager-item text="Create new file">
+                <dxi-file-manager-item text="Text Document" [options]="{ extension: '.txt' }"></dxi-file-manager-item>
+            </dxi-file-manager-item>
+        </dxo-file-manager-context-menu>
         <!-- ... -->
     </dx-file-manager>
 

@@ -42,8 +42,8 @@ A template name or container.
     <dx-toolbar
         menuItemTemplate="menu-item"
     >
-        <dxi-item ... >
-        </dxi-item>
+        <dxi-toolbar-item ... >
+        </dxi-toolbar-item>
         <div *dxTemplate="let data of 'menu-item'; let index = index">
             {{index + 1}}. {{data.options.text}}
         </div>

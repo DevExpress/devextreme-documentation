@@ -56,14 +56,14 @@ Once you set up pane layout, the Splitter displays separator bars between panes.
             [height]="400"
             [separatorSize]="5"
         >
-            <dxi-item></dxi-item>
-            <dxi-item>
+            <dxi-splitter-item></dxi-splitter-item>
+            <dxi-splitter-item>
                 <dx-splitter orientation="vertical" [separatorSize]="5">
-                    <dxi-item></dxi-item>
-                    <dxi-item></dxi-item>
-                    <dxi-item></dxi-item>
+                    <dxi-splitter-item></dxi-splitter-item>
+                    <dxi-splitter-item></dxi-splitter-item>
+                    <dxi-splitter-item></dxi-splitter-item>
                 </dx-splitter>
-            </dxi-item>
+            </dxi-splitter-item>
             </dx-splitter>
     </container>
 

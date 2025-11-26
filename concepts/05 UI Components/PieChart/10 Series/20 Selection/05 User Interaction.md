@@ -18,11 +18,11 @@ When a user selects a series point, its style changes to the one specified by th
 
     <!--HTML-->
     <dx-pie-chart>
-        <dxi-series>
-            <dxo-selection-style>
+        <dxi-pie-chart-series>
+            <dxo-pie-chart-selection-style>
                 <!-- ...-->
-            </dxo-selection-style>
-        </dxi-series>
+            </dxo-pie-chart-selection-style>
+        </dxi-pie-chart-series>
     </dx-pie-chart>
 
     <!--TypeScript-->
@@ -108,9 +108,9 @@ You can disable the selection capability by settings the **series**.[selectionMo
 ##### Angular
 
     <!--HTML--><dx-pie-chart>
-        <dxi-series
+        <dxi-pie-chart-series
             selectionMode="none">
-        </dxi-series>
+        </dxi-pie-chart-series>
     </dx-pie-chart>
 
     <!--TypeScript-->

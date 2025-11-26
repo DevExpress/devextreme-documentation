@@ -72,12 +72,12 @@ The example below demonstrates how to specify a node's width depending on the no
 
     <!-- tab: app.component.html -->
     <dx-diagram #diagram id="diagram">
-        <dxo-nodes
+        <dxo-diagram-nodes
             [dataSource]="orgItemsDataSource"
             keyExpr="ID"
             [widthExpr]="itemWidthExpr"
         >
-        </dxo-nodes>
+        </dxo-diagram-nodes>
     </dx-diagram>
 
 

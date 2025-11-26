@@ -36,16 +36,16 @@ To specify the items of the group summary, declare an array of objects, each of 
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-summary>
-            <dxi-group-item
+        <dxo-data-grid-summary>
+            <dxi-data-grid-group-item
                 column="Age"
                 summaryType="avg">
-            </dxi-group-item>
-            <dxi-group-item
+            </dxi-data-grid-group-item>
+            <dxi-data-grid-group-item
                 column="LastName"
                 summaryType="count">
-            </dxi-group-item>
-        </dxo-summary>
+            </dxi-data-grid-group-item>
+        </dxo-data-grid-summary>
     </dx-data-grid>
 
     <!--TypeScript-->

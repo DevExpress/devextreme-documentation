@@ -92,29 +92,29 @@ This tutorial uses **templates** to define components inside panes:
     <!-- tab: app.component.html -->
     <container>
         <dx-splitter ... >
-            <dxi-item ... >
+            <dxi-splitter-item ... >
                 <dx-form
                     id="form"
                     [formData]="employee"
                     (onFieldDataChanged)="onFieldDataChanged($event)"
                 ></dx-form>
-            </dxi-item>
-            <dxi-item>
+            </dxi-splitter-item>
+            <dxi-splitter-item>
                 <dx-splitter ... >
-                    <dxi-item ... >
+                    <dxi-splitter-item ... >
                         <div *ngFor="let item of output">{{ item }}</div>
-                    </dxi-item>
-                    <dxi-item ... >
+                    </dxi-splitter-item>
+                    <dxi-splitter-item ... >
                         <dx-button
                             text="Clear all entries"
                             (onClick)="resetFormAndOutput()"
                         ></dx-button>
-                    </dxi-item>
-                    <dxi-item ...
+                    </dxi-splitter-item>
+                    <dxi-splitter-item ...
                         text="All rights are reserved ©"
-                    ></dxi-item>
+                    ></dxi-splitter-item>
                 </dx-splitter>
-            </dxi-item>
+            </dxi-splitter-item>
             </dx-splitter>
     </container>
 

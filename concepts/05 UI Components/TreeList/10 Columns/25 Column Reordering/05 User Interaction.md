@@ -21,7 +21,7 @@ If a specific column should not be moved, set its [allowReordering](/api-referen
     <!--HTML-->
     <dx-tree-list ...
         [allowColumnReordering]="true">
-        <dxi-column dataField="CompanyName" [allowReordering]="false"></dxi-column>
+        <dxi-tree-list-column dataField="CompanyName" [allowReordering]="false"></dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->

@@ -170,11 +170,11 @@ The [container](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuratio
         [hideOnOutsideClick]="true"
         container="#container"
         [(visible)]="isLoadPanelVisible">
-        <dxo-position
+        <dxo-load-panel-position
             my="left"
             at="left"
             of="#targetElement">
-        </dxo-position>
+        </dxo-load-panel-position>
     </dx-load-panel>
     <dx-button
         text="Show the Load Panel"

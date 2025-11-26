@@ -34,8 +34,8 @@ To make the filter row visible, assign **true** to the [filterRow](/api-referenc
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-filter-row [visible]="true"></dxo-filter-row>
-        <dxi-column [allowFiltering]="false" ... ></dxi-column>
+        <dxo-tree-list-filter-row [visible]="true"></dxo-tree-list-filter-row>
+        <dxi-tree-list-column [allowFiltering]="false" ... ></dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->
@@ -122,10 +122,10 @@ A user-specified filter is automatically applied with a delay by default. Altern
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-filter-row
+        <dxo-tree-list-filter-row
             [visible]="true"
             applyFilter="onClick">
-        </dxo-filter-row>
+        </dxo-tree-list-filter-row>
     </dx-tree-list>
 
     <!--TypeScript-->
@@ -228,13 +228,13 @@ The set of available filter operations can be restricted using the [filterOperat
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-filter-row [visible]="true"></dxo-filter-row>
-        <dxi-column 
+        <dxo-tree-list-filter-row [visible]="true"></dxo-tree-list-filter-row>
+        <dxi-tree-list-column 
             dataField="Status"
             [filterOperations]="['contains', '=']"
             [(selectedFilterOperation)]="selectedOperation"
             [(filterValue)]="filterValue">
-        </dxi-column>
+        </dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->

@@ -20,7 +20,7 @@ The following example shows how to specify the adaptive column's [width](/api-re
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column type="adaptive" [width]="50"></dxi-column>
+        <dxi-data-grid-column type="adaptive" [width]="50"></dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -126,11 +126,11 @@ If a command column should have custom content, specify the column's [cellTempla
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column
+        <dxi-data-grid-column
             type="selection"
             cellTemplate="selectionCellTemplate"
             headerCellTemplate="selectionHeaderCellTemplate">
-        </dxi-column>
+        </dxi-data-grid-column>
         <div *dxTemplate="let cellInfo of 'selectionCellTemplate'">
             <!-- Declare custom cell content here -->
         </div>

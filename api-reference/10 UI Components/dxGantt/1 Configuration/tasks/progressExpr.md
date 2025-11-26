@@ -43,10 +43,10 @@ If the field name in your data source differs from default 'progress', use this 
 
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxo-tasks ...
+        <dxo-gantt-tasks ...
             [dataSource]="tasks" 
             progressExpr="taskProgress" >
-        </dxo-tasks>
+        </dxo-gantt-tasks>
         <!-- ... -->
     </dx-gantt>
 

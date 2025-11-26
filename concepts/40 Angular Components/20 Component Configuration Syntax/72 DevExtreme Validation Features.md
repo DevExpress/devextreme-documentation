@@ -4,14 +4,14 @@ In the following example, two textboxes are placed in a [validation group](/api-
     <dx-validation-group>
         <dx-text-box [(value)]="email">
             <dx-validator>
-                <dxi-validation-rule type="required" message="Email is required"></dxi-validation-rule>
-                <dxi-validation-rule type="email" message="Email is invalid"></dxi-validation-rule>
+                <dxi-validator-validation-rule type="required" message="Email is required"></dxi-validator-validation-rule>
+                <dxi-validator-validation-rule type="email" message="Email is invalid"></dxi-validator-validation-rule>
             </dx-validator>
         </dx-text-box>
 
         <dx-text-box [(value)]="password" mode="password">
             <dx-validator>
-                <dxi-validation-rule type="required" message="Password is required"></dxi-validation-rule>
+                <dxi-validator-validation-rule type="required" message="Password is required"></dxi-validator-validation-rule>
             </dx-validator>
         </dx-text-box>
 

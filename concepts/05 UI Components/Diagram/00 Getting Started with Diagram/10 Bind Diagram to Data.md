@@ -70,13 +70,13 @@ For details about different ways to bind Diagram data, refer to the following he
 
     <!-- tab: app.component.html -->
     <dx-diagram>
-        <dxo-nodes
+        <dxo-diagram-nodes
             [dataSource]="dataSource"
             keyExpr="ID"
             parentKeyExpr="Parent_ID"
             textExpr="Task_Name"
         >
-        </dxo-nodes>
+        </dxo-diagram-nodes>
     </dx-diagram>
 
     <!-- tab: app.component.ts -->

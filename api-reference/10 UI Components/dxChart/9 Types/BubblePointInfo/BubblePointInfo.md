@@ -2,7 +2,7 @@
 id: BubblePointInfo
 module: viz/chart
 export: BubblePointInfo
-type: Object
+inheritsType: BasePointInfo
 generateTypeLink: 
 ---
 ---

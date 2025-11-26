@@ -2,7 +2,7 @@
 id: StackedPointInfo
 module: viz/chart
 export: StackedPointInfo
-type: Object
+inheritsType: BasePointInfo
 generateTypeLink: 
 ---
 ---

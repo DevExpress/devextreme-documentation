@@ -1,29 +1,30 @@
 # GitHub Copilot Instructions
 
-These instructions summarize the DevExpress/devextreme-documentation repository so you can make efficient, correct suggestions with minimal exploratory searching. Trust these instructions first; only search if information is missing or proves inaccurate.
+These instructions summarize the DevExpress/devextreme-documentation repository so you can make efficient, correct suggestions with minimal exploratory searching. Trust these instructions first; search only if certain information is missing or proves inaccurate.
 
-This repository contains the source Markdown, embedded sample applications, images, and reusable include fragments for the public DevExtreme documentation site: https://js.devexpress.com/Documentation/.
+This repository contains source Markdown files, embedded sample applications, images, and reusable include fragments for the public DevExtreme documentation site: https://js.devexpress.com/Documentation/.
 
 It is a content + light tooling project (not a compiled application). Your typical changes will involve:
-- Reviewing the style consistency and grammar of documentation content. The documentation content is straightforward technical writing aimed at developers.
-- Reviewing the consistency and accuracy of links used in documentation content.
-- Reviewing the style consistency of code samples (JavaScript/HTML/CSS/TypeScript).
-- Reviewing the technical accuracy of code samples (JavaScript/HTML/CSS/TypeScript).
+- Reviewing style consistency and grammar of documentation content. The documentation content is straightforward technical writing targeting software developer audience.
+- Reviewing link/reference consistency and accuracy in documentation content.
+- Reviewing style consistency of code samples (JavaScript/HTML/CSS/TypeScript).
+- Reviewing technical accuracy of code samples (JavaScript/HTML/CSS/TypeScript).
 
 What you need to do:
 - You will review Pull Requests (PRs) submitted by contributors.
 - You will leave comments on PRs when you spot issues.
+What you will not do:
 - YOU WILL NOT SUBMIT PRS YOURSELF.
 - YOU WILL NOT WRITE NEW DOCUMENTATION CONTENT YOURSELF.
 
 When reviewing PRs, please follow these guidelines:
 
 When reviewing documentation content:
-1. Use American English spelling and grammar.
-2. Use active voice and present tense. Prefer active sentences with clear subject and verb.
+1. Follow American English spelling and grammar.
+2. Use active voice and present tense. Prefer active sentences with clear subject, object, and verb.
 3. Use consistent terminology (refer to existing documentation).
-4. Do not use contractions; expand them fully.
-5. All the headings should use Title Case. Do not use end punctuation at the end of headings.
+4. Do not use contractions and elisions; prefer full/complete wording versions.
+5. All the headings should use Title Case. Do not use end punctuation (a period) at the end of headings.
 6. Remember to write alt text for images.
 7. Use the Oxford comma.
 8. Avoid comma-separated clauses at the beginning of sentences.

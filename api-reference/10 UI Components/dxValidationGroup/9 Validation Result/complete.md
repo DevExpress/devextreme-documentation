@@ -58,18 +58,18 @@ In the following example, a button validates a group of editors with async rules
     <dx-text-box>
         <dx-validator
             [validationGroup]="validationGroupName">
-                <dxi-validation-rule type="async" 
+                <dxi-validator-validation-rule type="async" 
                     [validationCallback]="validateAsync">
-                </dxi-validation-rule>
+                </dxi-validator-validation-rule>
         </dx-validator>
     </dx-text-box>
 
     <dx-date-box>
         <dx-validator
             [validationGroup]="validationGroupName">
-                <dxi-validation-rule type="async" 
+                <dxi-validator-validation-rule type="async" 
                     [validationCallback]="validateAsync">
-                </dxi-validation-rule>
+                </dxi-validator-validation-rule>
         </dx-validator>
     </dx-date-box>
 

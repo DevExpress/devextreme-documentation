@@ -45,16 +45,16 @@ contain data fields from a UI component's data source. For example, the followin
 
     <!--HTML-->
     <dx-filter-builder>
-        <dxi-field
+        <dxi-filter-builder-field
             dataField="ID"
             dataType="number">
-        </dxi-field>
-        <dxi-field dataField="Name"></dxi-field>
-        <dxi-field
+        </dxi-filter-builder-field>
+        <dxi-filter-builder-field dataField="Name"></dxi-filter-builder-field>
+        <dxi-filter-builder-field
             dataField="Price"
             dataType="number"
             format="currency">
-        </dxi-field>
+        </dxi-filter-builder-field>
     </dx-filter-builder>
     <dx-list 
         [dataSource]="products">

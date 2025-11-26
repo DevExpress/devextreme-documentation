@@ -24,13 +24,13 @@ The **Add**, **Edit**, and **Delete** buttons can be hidden by omitting them whe
 
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-editing
+        <dxo-tree-list-editing
             [allowUpdating]="true"
             [allowDeleting]="true">
-        </dxo-editing>
-        <dxi-column type="buttons">
-            <dxi-button name="edit"></dxi-button>
-        </dxi-column>
+        </dxo-tree-list-editing>
+        <dxi-tree-list-column type="buttons">
+            <dxi-tree-list-button name="edit"></dxi-tree-list-button>
+        </dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->

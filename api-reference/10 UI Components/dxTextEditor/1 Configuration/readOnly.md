@@ -28,11 +28,11 @@ When this property is set to **true**, the following applies:
 
         <!-- tab: app.component.html -->
         <dx-{widget-name} ... >
-            <dxi-button
+            <dxi-{widget-name}-button
                 name="myCustomButton"
                 location="after"
                 [options]="myCustomButtonConfig">
-            </dxi-button>
+            </dxi-{widget-name}-button>
         </dx-{widget-name}>
 
         <!-- tab: app.component.ts -->
@@ -171,10 +171,10 @@ When this property is set to **true**, the following applies:
         <!-- tab: app.component.html -->
         <dx-{widget-name} ...
             (onOptionChanged)="changeButtonState">
-            <dxi-button
+            <dxi-{widget-name}-button
                 name="myCustomButton"
                 ...
-            ></dxi-button>
+            ></dxi-{widget-name}-button>
         </dx-{widget-name}>
 
         <!-- tab: app.component.ts -->

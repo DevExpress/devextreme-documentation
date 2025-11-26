@@ -30,12 +30,12 @@ The UI component allows you to configure upload settings:
 
     <!-- tab: app.component.html -->
     <dx-file-manager id="fileManager">
-        <dxo-upload 
+        <dxo-file-manager-upload 
             [maxFileSize]="1000000" 
             [chunkSize]="500000">
-        </dxo-upload>
-        <dxo-permissions [upload]="true">
-        </dxo-permissions>
+        </dxo-file-manager-upload>
+        <dxo-file-manager-permissions [upload]="true">
+        </dxo-file-manager-permissions>
         <!-- ... -->
     </dx-file-manager>
 

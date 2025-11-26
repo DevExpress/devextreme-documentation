@@ -77,10 +77,10 @@ The string comparison is culture-insensitive by default. Use the following code 
 
     <!--HTML-->
     <dx-{widget-name} ... >
-        <dxi-column
+        <dxi-{widget-name}-column
             dataField="fieldName"
             [sortingMethod]="sortStringsConsideringCulture">
-        </dxi-column>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
 ##### Vue

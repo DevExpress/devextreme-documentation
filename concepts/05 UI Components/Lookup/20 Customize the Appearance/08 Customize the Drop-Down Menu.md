@@ -28,10 +28,10 @@ To customize the Popup or Popover, use the [dropDownOptions](/api-reference/10%2
     <dx-lookup
         [dataSource]="lookupDataSource"
         [usePopover]="false">
-        <dxo-drop-down-options
+        <dxo-lookup-drop-down-options
             [shading]="false"
             [fullScreen]="false">
-        </dxo-drop-down-options>
+        </dxo-lookup-drop-down-options>
     </dx-lookup>
 
     <!--TypeScript-->
@@ -148,15 +148,15 @@ To change the size of the drop-down menu and position it against a specific elem
     <!--HTML-->
     <img id="targetElement" src="http://here/goes/my.jpg">
     <dx-lookup [dataSource]="lookupDataSource">
-        <dxo-drop-down-options
+        <dxo-lookup-drop-down-options
             [height]="300"
             [width]="300">
-            <dxo-position
+            <dxo-lookup-position
                 my="left"
                 at="left"
                 of="#targetElement">
-            </dxo-position>
-        </dxo-drop-down-options>
+            </dxo-lookup-position>
+        </dxo-lookup-drop-down-options>
     </dx-lookup>
 
     <!--TypeScript-->
@@ -287,13 +287,13 @@ The drop-down menu can have a title. Use the **dropDownOptions**.[title](/api-re
 
     <!--HTML-->
     <dx-lookup [dataSource]="lookupDataSource">
-        <dxo-drop-down-options
+        <dxo-lookup-drop-down-options
             title="Products">
             <!-- titleTemplate="titleTemplate">
             <div *dxTemplate="let title of 'titleTemplate'">
                 <div style='color: blue'>Products</div>
             </div> -->
-        </dxo-drop-down-options>
+        </dxo-lookup-drop-down-options>
     </dx-lookup>
 
     <!--TypeScript-->

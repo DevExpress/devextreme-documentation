@@ -24,13 +24,13 @@ The **Edit** and **Delete** buttons can be hidden by omitting them when declarin
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-editing
+        <dxo-data-grid-editing
             [allowUpdating]="true"
             [allowDeleting]="true">
-        </dxo-editing>
-        <dxi-column type="buttons">
-            <dxi-button name="edit"></dxi-button>
-        </dxi-column>
+        </dxo-data-grid-editing>
+        <dxi-data-grid-column type="buttons">
+            <dxi-data-grid-button name="edit"></dxi-data-grid-button>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->

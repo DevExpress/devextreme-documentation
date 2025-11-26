@@ -34,11 +34,11 @@ Sets the color for the series when it is hovered over.
 
     <!-- tab: app.component.html -->
     <dx-pie-chart ... >
-        <dxi-series ... >
-            <dxo-hover-style
+        <dxi-pie-chart-series ... >
+            <dxo-pie-chart-hover-style
                 [color]="fill"
-            ></dxo-hover-style>
-        </dxi-series>
+            ></dxo-pie-chart-hover-style>
+        </dxi-pie-chart-series>
     </dx-pie-chart>
 
     <!-- tab: app.component.ts -->

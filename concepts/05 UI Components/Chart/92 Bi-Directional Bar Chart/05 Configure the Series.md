@@ -24,12 +24,12 @@ You need two **Stacked Bar** series for the bi-directional bar chart. The follow
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-common-series-settings
+        <dxo-chart-common-series-settings
             type="stackedbar"
             argumentField="age">
-        </dxo-common-series-settings>
-        <dxi-series valueField="male" name="Male"></dxi-series>
-        <dxi-series valueField="female" name="Female"></dxi-series>
+        </dxo-chart-common-series-settings>
+        <dxi-chart-series valueField="male" name="Male"></dxi-chart-series>
+        <dxi-chart-series valueField="female" name="Female"></dxi-chart-series>
     </dx-chart>
 
 ##### Vue

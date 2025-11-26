@@ -36,16 +36,16 @@ To specify the items of the total summary, declare an array of objects, each of 
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-summary>
-            <dxi-total-item
+        <dxo-data-grid-summary>
+            <dxi-data-grid-total-item
                 column="Age"
                 summaryType="avg">
-            </dxi-total-item>
-            <dxi-total-item
+            </dxi-data-grid-total-item>
+            <dxi-data-grid-total-item
                 column="LastName"
                 summaryType="count">
-            </dxi-total-item>
-        </dxo-summary>
+            </dxi-data-grid-total-item>
+        </dxo-data-grid-summary>
     </dx-data-grid>
 
     <!--TypeScript-->

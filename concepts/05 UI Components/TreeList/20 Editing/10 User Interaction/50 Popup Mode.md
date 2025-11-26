@@ -29,12 +29,12 @@ Use the **editing**.[popup](/api-reference/10%20UI%20Components/GridBase/1%20Con
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-editing
+        <dxo-tree-list-editing
             [allowUpdating]="true"
             mode="popup">
-            <dxo-form labelLocation="top"></dxo-form>
-            <dxo-popup [showTitle]="true" title="Row in the editing state"></dxo-popup>
-        </dxo-editing>
+            <dxo-tree-list-form labelLocation="top"></dxo-tree-list-form>
+            <dxo-tree-list-popup [showTitle]="true" title="Row in the editing state"></dxo-tree-list-popup>
+        </dxo-tree-list-editing>
     </dx-tree-list>
 
     <!--TypeScript-->

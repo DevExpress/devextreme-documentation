@@ -56,7 +56,7 @@ You can call this method at any point in your application. In the example below,
     <!-- tab: app.component.html -->
     <dx-data-grid ...
         (onExporting)="onExporting($event)">
-        <dxo-export [enabled]="true"></dxo-export>
+        <dxo-data-grid-export [enabled]="true"></dxo-data-grid-export>
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->

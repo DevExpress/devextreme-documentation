@@ -20,9 +20,9 @@ The UI component creates a diagram layout based on the **autoLayout**.[orientati
 
     <!-- tab: app.component.html -->
     <dx-diagram>
-        <dxo-nodes ... >
-            <dxo-auto-layout orientation="horizontal" type="tree"></dxo-auto-layout>
-        </dxo-nodes>
+        <dxo-diagram-nodes ... >
+            <dxo-diagram-auto-layout orientation="horizontal" type="tree"></dxo-diagram-auto-layout>
+        </dxo-diagram-nodes>
     </dx-diagram>
 
 ##### Vue
@@ -147,16 +147,16 @@ If the **autoLayout**.[type](/api-reference/10%20UI%20Components/dxDiagram/1%20C
 
     <!-- tab: app.component.html -->
     <dx-diagram units="in">
-        <dxo-nodes
+        <dxo-diagram-nodes
             [dataSource]="orgItemsDataSource"
             keyExpr="key"
             textExpr="text"
             leftExpr="left"
             topExpr="top"
         >
-            <dxo-auto-layout type="off"></dxo-auto-layout>
-        </dxo-nodes>
-        <dxo-edges
+            <dxo-diagram-auto-layout type="off"></dxo-diagram-auto-layout>
+        </dxo-diagram-nodes>
+        <dxo-diagram-edges
             [dataSource]="orgLinksDataSource"
             keyExpr="key"
             fromExpr="from"
@@ -164,7 +164,7 @@ If the **autoLayout**.[type](/api-reference/10%20UI%20Components/dxDiagram/1%20C
             fromPointIndexExpr="fromPoint"
             toPointIndexExpr="toPoint"
             pointsExpr="points"
-        ></dxo-edges>
+        ></dxo-diagram-edges>
     </dx-diagram>
 
     <!-- tab: app.component.ts -->

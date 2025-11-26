@@ -24,7 +24,7 @@ The most important characteristic of a series is its type. The Chart provides ov
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxi-series type="bar" ... ></dxi-series>
+        <dxi-chart-series type="bar" ... ></dxi-chart-series>
     </dx-chart>
 
     <!--TypeScript-->
@@ -108,8 +108,8 @@ A single Chart can contain several series at once. In this case, the [series](/a
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxi-series type="bar" name="Men" ... ></dxi-series>
-        <dxi-series type="area" name="Women" ... ></dxi-series>
+        <dxi-chart-series type="bar" name="Men" ... ></dxi-chart-series>
+        <dxi-chart-series type="area" name="Women" ... ></dxi-chart-series>
     </dx-chart>
 
     <!--TypeScript-->
@@ -204,12 +204,12 @@ Objects in the **series** array specify individual settings for series. You can 
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxi-series ... >
+        <dxi-chart-series ... >
             <!-- high priority -->
-        </dxi-series>
-        <dxo-common-series-settings ... >
+        </dxi-chart-series>
+        <dxo-chart-common-series-settings ... >
             <!-- low priority -->
-        </dxo-common-series-settings>
+        </dxo-chart-common-series-settings>
     </dx-chart>
 
     <!--TypeScript-->

@@ -33,16 +33,16 @@ Use the [baseType](/api-reference/10%20UI%20Components/dxDiagram/1%20Configurati
 
     <!-- tab: app.component.html -->
     <dx-diagram #diagram id="diagram">
-        <dxi-custom-shape *ngFor="let emp of employees"
+        <dxi-diagram-custom-shape *ngFor="let emp of employees"
             category="employees"
             [type]='"employee" + emp.ID'
             baseType="rectangle"
             [defaultText]="emp.Full_Name"
             [allowEditText]="false">
-        </dxi-custom-shape>
-        <dxo-toolbox>
-            <dxi-group category="employees" title="Employees" displayMode="texts"></dxi-group>
-        </dxo-toolbox>
+        </dxi-diagram-custom-shape>
+        <dxo-diagram-toolbox>
+            <dxi-diagram-group category="employees" title="Employees" displayMode="texts"></dxi-diagram-group>
+        </dxo-diagram-toolbox>
     </dx-diagram>
 
 ##### Vue
@@ -119,10 +119,10 @@ You can use the [style](/api-reference/10%20UI%20Components/dxDiagram/1%20Config
 
     <!-- tab: app.component.html -->
     <dx-diagram #diagram id="diagram">
-        <dxo-default-item-properties
+        <dxo-diagram-default-item-properties
             style="fill: yellow;"
             textStyle="font-size: 14pt;">
-        </dxo-default-item-properties>
+        </dxo-diagram-default-item-properties>
         <!-- ... -->
     </dx-diagram>
 

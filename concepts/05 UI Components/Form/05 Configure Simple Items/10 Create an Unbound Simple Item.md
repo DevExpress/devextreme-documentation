@@ -55,24 +55,24 @@ In the following example, the `order` item contains the [DataGrid](/concepts/05%
     <!--HTML-->
     <dx-form
         [(formData)]="employee">
-        <dxi-item dataField="firstName"></dxi-item>
-        <dxi-item dataField="lastName"></dxi-item>
-        <dxi-item name="show-order">
-            <dxo-label text="Show the Order"></dxo-label>
+        <dxi-form-item dataField="firstName"></dxi-form-item>
+        <dxi-form-item dataField="lastName"></dxi-form-item>
+        <dxi-form-item name="show-order">
+            <dxo-form-label text="Show the Order"></dxo-form-label>
             <div *dxTemplate>
                 <dx-check-box
                     [(value)]="order.visible">
                 </dx-check-box>
             </div>
-        </dxi-item>
-        <dxi-item #order name="order"
+        </dxi-form-item>
+        <dxi-form-item #order name="order"
             [visible]="false">
             <div *dxTemplate>
                 <dx-data-grid
                     [dataSource]="orders">
                 </dx-data-grid>
             </div>
-        </dxi-item>
+        </dxi-form-item>
     </dx-form>
 
     <!--TypeScript-->

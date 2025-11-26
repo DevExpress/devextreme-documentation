@@ -27,11 +27,11 @@ Use deferred mode to increase the DataGrid's performance when [selecting multipl
 
     <!--HTML--><dx-data-grid
         [dataSource]="dataSource">
-        <dxo-selection
+        <dxo-data-grid-selection
             mode="multiple"
             [allowSelectAll]="true"
             [deferred]="true">
-        </dxo-selection>
+        </dxo-data-grid-selection>
     </dx-data-grid>
 
     <!--TypeScript-->

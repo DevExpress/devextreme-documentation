@@ -112,7 +112,7 @@ You can specify initial values for a newly added row in the [onInitNewRow](/api-
     <!--HTML-->
     <dx-data-grid ...
         (onInitNewRow)="onInitNewRow($event)">
-        <dxi-column dataField="Hire_Date" dataType="date"></dxi-column>
+        <dxi-data-grid-column dataField="Hire_Date" dataType="date"></dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->

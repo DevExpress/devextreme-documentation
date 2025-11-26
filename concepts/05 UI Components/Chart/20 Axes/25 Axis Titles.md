@@ -19,9 +19,9 @@ The axis title is configured by the [title](/api-reference/10%20UI%20Components/
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis
+        <dxo-chart-argument-axis
             title="Axis Title">
-        </dxo-argument-axis>
+        </dxo-chart-argument-axis>
     </dx-chart>
 
     <!--TypeScript-->
@@ -105,9 +105,9 @@ is the same as this:
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis>
-            <dxo-title text="Axis Title"></dxo-title>
-        </dxo-argument-axis>
+        <dxo-chart-argument-axis>
+            <dxo-chart-title text="Axis Title"></dxo-chart-title>
+        </dxo-chart-argument-axis>
     </dx-chart>
 
     <!--TypeScript-->

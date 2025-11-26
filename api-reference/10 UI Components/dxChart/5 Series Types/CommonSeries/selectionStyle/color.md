@@ -36,11 +36,11 @@ Specifies the color of the series in the selected state.
 
     <!-- tab: app.component.html -->
     <dx-chart ... >
-        <dxi-series ... >
-            <dxo-selection-style
+        <dxi-chart-series ... >
+            <dxo-chart-selection-style
                 [color]="fill"
-            ></dxo-selection-style>
-        </dxi-series>
+            ></dxo-chart-selection-style>
+        </dxi-chart-series>
     </dx-chart>
 
     <!-- tab: app.component.ts -->

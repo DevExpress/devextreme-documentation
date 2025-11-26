@@ -33,16 +33,16 @@ Ticks help you align values with their corresponding data points on an axis. The
 
     <!-- tab: app.component.html -->
     <dx-chart ... >
-        <dxo-common-axis-settings>
-            <dxo-tick
+        <dxo-chart-common-axis-settings>
+            <dxo-chart-tick
                 [visible]="true"
                 color="blue"
                 [length]="20"
                 [opacity]="0.75"
                 [shift]="0"
                 [width]="2"
-            ></dxo-tick>
-        </dxo-common-axis-settings>
+            ></dxo-chart-tick>
+        </dxo-chart-common-axis-settings>
     </dx-chart>
 
 ##### Vue

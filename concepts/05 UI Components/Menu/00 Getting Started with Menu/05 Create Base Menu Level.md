@@ -48,22 +48,22 @@ To create a base Menu level, define the component in the markup and populate it 
     <!-- tab: app.component.html -->
     <div id="container">
         <dx-menu>
-            <dxi-item 
+            <dxi-menu-item 
                 icon="home"
             >
-            </dxi-item>
-            <dxi-item 
+            </dxi-menu-item>
+            <dxi-menu-item 
                 text="About"
             >
-            </dxi-item>
-            <dxi-item 
+            </dxi-menu-item>
+            <dxi-menu-item 
                 text="Products"
             >
-            </dxi-item>
-            <dxi-item 
+            </dxi-menu-item>
+            <dxi-menu-item 
                 icon="cart"
             >
-            </dxi-item>    
+            </dxi-menu-item>    
         </dx-menu>
     </div>
 

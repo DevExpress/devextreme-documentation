@@ -36,9 +36,9 @@ In the following code, the FilterBuilder can filter data by three fields, two of
     <!--HTML-->
     <dx-filter-builder
         [allowHierarchicalFields]="true">
-        <dxi-field dataField="orderID"></dxi-field>
-        <dxi-field dataField="address.state"></dxi-field>
-        <dxi-field dataField="address.city"></dxi-field>
+        <dxi-filter-builder-field dataField="orderID"></dxi-filter-builder-field>
+        <dxi-filter-builder-field dataField="address.state"></dxi-filter-builder-field>
+        <dxi-filter-builder-field dataField="address.city"></dxi-filter-builder-field>
     </dx-filter-builder>
 
     <!--TypeScript-->

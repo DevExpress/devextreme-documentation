@@ -38,14 +38,14 @@ Each lookup column has an individual [data source](/api-reference/_hidden/GridBa
     
     <!--HTML-->
     <dx-data-grid [dataSource]="orders">
-        <dxi-column
+        <dxi-data-grid-column
             dataField="statusId"> <!-- provides actual values -->
-            <dxo-lookup
+            <dxo-data-grid-lookup
                 [dataSource]="lookupData"
                 valueExpr="id" <!-- contains the same values as the "statusId" field provides -->
                 displayExpr="name"> <!-- provides display values -->
-            </dxo-lookup>
-        </dxi-column>
+            </dxo-data-grid-lookup>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -212,12 +212,12 @@ Each lookup column has an individual [data source](/api-reference/_hidden/GridBa
     
     <!--HTML-->
     <dx-data-grid [dataSource]="orders">
-        <dxi-column
+        <dxi-data-grid-column
             dataField="status"> <!-- provides column values -->
-            <dxo-lookup
+            <dxo-data-grid-lookup
                 [dataSource]="lookupData"> <!-- contains the same values as the "status" field provides -->
-            </dxo-lookup>
-        </dxi-column>
+            </dxo-data-grid-lookup>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->

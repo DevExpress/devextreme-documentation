@@ -80,16 +80,16 @@ Predefined controls appear on the toolbar depending on whether a specific CardVi
 
         <!-- tab: app.component.html -->
         <dx-{widget-name} ... >
-            <dxo-editing [allowAdding]="true"></dxo-editing>
-            <dxo-column-chooser [enabled]="true"></dxo-column-chooser>
-            <dxo-toolbar>
-                <dxi-item name="addCardButton"></dxi-item>
-                <dxi-item 
+            <dxo-{widget-name}-editing [allowAdding]="true"></dxo-{widget-name}-editing>
+            <dxo-{widget-name}-column-chooser [enabled]="true"></dxo-{widget-name}-column-chooser>
+            <dxo-{widget-name}-toolbar>
+                <dxi-{widget-name}-item name="addCardButton"></dxi-{widget-name}-item>
+                <dxi-{widget-name}-item 
                     name="columnChooserButton"
                     locateInMenu="auto"
                     location="after">
-                </dxi-item>
-            </dxo-toolbar>
+                </dxi-{widget-name}-item>
+            </dxo-{widget-name}-toolbar>
         </dx-{widget-name}>
 
         <!-- tab: app.module.ts -->

@@ -149,20 +149,20 @@ The Form UI component can have a fixed number of columns in the layout...
         [(formData)]="employee"
         colCount="auto"
         [minColWidth]="500">
-        <dxi-item dataField="firstName"></dxi-item>
-        <dxi-item dataField="lastName"></dxi-item>
-        <dxi-item itemType="tabbed">
-            <dxi-tab
+        <dxi-form-item dataField="firstName"></dxi-form-item>
+        <dxi-form-item dataField="lastName"></dxi-form-item>
+        <dxi-form-item itemType="tabbed">
+            <dxi-form-tab
                 title="Info"
                 [colCount]="3"
                 [items]="['position', 'hireDate', 'city' ]">
-            </dxi-tab>
-            <dxi-tab
+            </dxi-form-tab>
+            <dxi-form-tab
                 title="Contacts"
                 [colCount]="2"
                 [items]="['phone', 'email']">
-            </dxi-tab>
-        </dxi-item>
+            </dxi-form-tab>
+        </dxi-form-item>
     </dx-form>
 
     <!--TypeScript-->

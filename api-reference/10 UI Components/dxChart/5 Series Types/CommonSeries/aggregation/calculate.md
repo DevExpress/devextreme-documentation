@@ -46,13 +46,13 @@ One or several aggregated data objects. Should have the same structure as the or
 
     <!--HTML-->
     <dx-chart ... >
-        <dxi-series ... >
-            <dxo-aggregation
+        <dxi-chart-series ... >
+            <dxo-chart-aggregation
                 [enabled]="true"
                 method="custom"
                 [calculate]="customAggregateFunc">
-            </dxo-aggregation>
-        </dxi-series>
+            </dxo-chart-aggregation>
+        </dxi-chart-series>
     </dx-chart>
 
     <!--TypeScript-->

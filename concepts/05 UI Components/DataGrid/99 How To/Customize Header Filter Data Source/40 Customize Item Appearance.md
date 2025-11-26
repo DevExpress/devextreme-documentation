@@ -39,11 +39,11 @@ You can use [templates](/api-reference/50%20Common/Object%20Structures/template 
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxi-column>
-            <dxo-header-filter
+        <dxi-{widget-name}-column>
+            <dxo-{widget-name}-header-filter
                 [dataSource]="headerFilterData">
-            </dxo-header-filter>
-        </dxi-column>
+            </dxo-{widget-name}-header-filter>
+        </dxi-{widget-name}-column>
         <div *dxTemplate="let data of 'boldFont'">
             <b>{{data.text}}</b>
         </div>

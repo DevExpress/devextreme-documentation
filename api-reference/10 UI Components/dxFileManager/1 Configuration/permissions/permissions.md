@@ -34,7 +34,7 @@ Specifies actions that a user is allowed to perform on files and directories.
 
     <!--HTML--> 
     <dx-file-manager id="fileManager">
-        <dxo-permissions 
+        <dxo-file-manager-permissions 
             create="true"
             copy="true"
             move="true"
@@ -42,7 +42,7 @@ Specifies actions that a user is allowed to perform on files and directories.
             rename="true"
             upload="true"
             download="true">
-        </dxo-permissions>    
+        </dxo-file-manager-permissions>    
         <!-- ... -->
     </dx-file-manager>
 

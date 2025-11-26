@@ -23,9 +23,9 @@ Set the **grouping**.[expandMode](/api-reference/10%20UI%20Components/dxDataGrid
 
     <!--HTML-->
     <dx-data-grid ...>
-        <dxo-grouping ...
+        <dxo-data-grid-grouping ...
             expandMode="rowClick">  <!-- or "buttonClick" -->
-        </dxo-grouping>
+        </dxo-data-grid-grouping>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -113,10 +113,10 @@ You can prevent a user from expanding and collapsing groups by assigning **false
 
     <!--HTML-->
     <dx-data-grid ...>
-        <dxo-grouping ...
+        <dxo-data-grid-grouping ...
             [autoExpandAll]="true"
             [allowCollapsing]="false">
-        </dxo-grouping>
+        </dxo-data-grid-grouping>
     </dx-data-grid>
 
     <!--TypeScript-->

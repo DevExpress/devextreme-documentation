@@ -29,8 +29,8 @@ Specifies whether to show the pop-up notification window.
 
     <!--HTML--> 
     <dx-file-manager id="fileManager">
-        <dxo-notifications [showPopup]="false">
-        </dxo-notifications>
+        <dxo-file-manager-notifications [showPopup]="false">
+        </dxo-file-manager-notifications>
         <!-- ... -->
     </dx-file-manager>
 

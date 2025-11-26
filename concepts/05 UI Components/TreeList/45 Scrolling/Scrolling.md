@@ -23,9 +23,9 @@ Use the **scrolling**.[mode](/api-reference/10%20UI%20Components/dxTreeList/1%20
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-scrolling
+        <dxo-tree-list-scrolling
             mode="standard"> <!-- or "virtual" -->
-        </dxo-scrolling>
+        </dxo-tree-list-scrolling>
     </dx-tree-list>
 
     <!--TypeScript-->
@@ -107,9 +107,9 @@ The TreeList adapts its scrolling mechanism to the current platform. It utilizes
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-scrolling
+        <dxo-tree-list-scrolling
             [useNative]="true">
-        </dxo-scrolling>
+        </dxo-tree-list-scrolling>
     </dx-tree-list>
 
     <!--TypeScript-->
@@ -198,12 +198,12 @@ The current platform determines the native scrolling settings and you cannot adj
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-scrolling
+        <dxo-tree-list-scrolling
             [useNative]="false"
             [scrollByContent]="true"
             [scrollByThumb]="true"
             showScrollbar="onHover"> <!-- or "onScroll" | "always" | "never" -->
-        </dxo-scrolling>
+        </dxo-tree-list-scrolling>
     </dx-tree-list>
 
     <!--TypeScript-->

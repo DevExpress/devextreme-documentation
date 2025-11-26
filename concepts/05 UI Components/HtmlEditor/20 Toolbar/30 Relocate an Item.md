@@ -24,14 +24,14 @@ This property accepts the *"before"*, *"center"*, and *"after"* values that spec
 
     <!--HTML-->
     <dx-html-editor>
-        <dxo-toolbar>
-            <dxi-item name="undo" location="after"></dxi-item>
-            <dxi-item name="redo" location="after"></dxi-item>
-            <dxi-item name="alignLeft"></dxi-item>
-            <dxi-item name="alignRight"></dxi-item>
-            <dxi-item name="color" location="center"></dxi-item>
-            <dxi-item name="background" location="center"></dxi-item>
-        </dxo-toolbar>
+        <dxo-html-editor-toolbar>
+            <dxi-html-editor-item name="undo" location="after"></dxi-html-editor-item>
+            <dxi-html-editor-item name="redo" location="after"></dxi-html-editor-item>
+            <dxi-html-editor-item name="alignLeft"></dxi-html-editor-item>
+            <dxi-html-editor-item name="alignRight"></dxi-html-editor-item>
+            <dxi-html-editor-item name="color" location="center"></dxi-html-editor-item>
+            <dxi-html-editor-item name="background" location="center"></dxi-html-editor-item>
+        </dxo-html-editor-toolbar>
     </dx-html-editor>
 
     <!--TypeScript-->
@@ -155,11 +155,11 @@ If the toolbar cannot fit all the items, some of them are collected in the overf
 
     <!--HTML-->
     <dx-html-editor>
-        <dxo-toolbar>
+        <dxo-html-editor-toolbar>
             <!-- ... -->
-            <dxi-item name="undo" locateInMenu="always"></dxi-item>
-            <dxi-item name="color" locateInMenu="never"></dxi-item>
-        </dxo-toolbar>
+            <dxi-html-editor-item name="undo" locateInMenu="always"></dxi-html-editor-item>
+            <dxi-html-editor-item name="color" locateInMenu="never"></dxi-html-editor-item>
+        </dxo-html-editor-toolbar>
     </dx-html-editor>
 
     <!--TypeScript-->

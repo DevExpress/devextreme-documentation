@@ -23,7 +23,7 @@ In Angular, the **title**'s value can also be passed to the browser tooltip. Thi
 To avoid this behavior, wrap the property in square brackets and wrap the property value in single quotes:
 
     <!--HTML-->
-    <dxi-item [title]="'Customers'"> 
+    <dxi-tab-panel-item [title]="'Customers'">
 
 
 [/note]

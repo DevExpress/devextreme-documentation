@@ -27,10 +27,10 @@ You can also specify a custom pattern or gradient instead of a plain color. Foll
 
     <!-- tab: app.component.html -->
     <dx-chart ... >
-        <dxi-series ...
+        <dxi-chart-series ...
             [color]="customPattern"
         >
-        </dxi-series>
+        </dxi-chart-series>
     </dx-chart>
 
     <!-- tab: app.component.ts -->

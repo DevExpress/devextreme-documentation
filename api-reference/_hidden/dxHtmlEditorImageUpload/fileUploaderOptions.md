@@ -31,7 +31,7 @@ See [FileUploader Configuration](/api-reference/10%20UI%20Components/dxFileUploa
 
     <!-- tab: app.component.html -->
     <dx-html-editor ...>
-        <dxo-image-upload
+        <dxo-html-editor-image-upload
             [fileUploaderOptions]="{ maxFileSize: 4000000 }"
         </dxo-image-upload>
     </dx-html-editor>

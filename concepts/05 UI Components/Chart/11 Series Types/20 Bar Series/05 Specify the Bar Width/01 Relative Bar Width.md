@@ -22,14 +22,14 @@ Regulating the empty space on a bar's sides controls the relative bar width. Use
 
     <!--HTML-->
     <dx-chart ... >
-        <dxi-series
+        <dxi-chart-series
             [barPadding]="0.1"> <!-- for an individual series -->
-        </dxi-series>
-        <dxi-series ... ></dxi-series>
+        </dxi-chart-series>
+        <dxi-chart-series ... ></dxi-chart-series>
         ...
-        <dxo-common-series-settings
+        <dxo-chart-common-series-settings
             [barPadding]="0.1"> <!-- for all series in the chart -->
-        </dxo-common-series-settings>
+        </dxo-chart-common-series-settings>
     </dx-chart>
 
     <!--TypeScript-->

@@ -36,20 +36,20 @@ Specify the **argumentAxis**.[aggregationInterval](/api-reference/10%20UI%20Comp
         <!--HTML-->
         <dx-chart>
             <!-- A new interval every 100 units -->
-            <dxo-argument-axis ... [aggregationInterval]="100">
-            </dxo-argument-axis>
+            <dxo-chart-argument-axis ... [aggregationInterval]="100">
+            </dxo-chart-argument-axis>
         </dx-chart>
         <dx-chart>
             <!-- A new interval every day -->
-            <dxo-argument-axis ... aggregationInterval="day">
-            </dxo-argument-axis>
+            <dxo-chart-argument-axis ... aggregationInterval="day">
+            </dxo-chart-argument-axis>
         </dx-chart>
         <dx-chart>
-            <dxo-argument-axis ... >
+            <dxo-chart-argument-axis ... >
                 <!-- A new interval every five days -->
-                <dxo-aggregation-interval [days]="5">
-                </dxo-aggregation-interval>
-            </dxo-argument-axis>
+                <dxo-chart-aggregation-interval [days]="5">
+                </dxo-chart-aggregation-interval>
+            </dxo-chart-argument-axis>
         </dx-chart>
 
     ##### Vue
@@ -148,8 +148,8 @@ Specify the **argumentAxis**.[aggregationGroupWidth](/api-reference/10%20UI%20Co
         <!--HTML-->
         <dx-chart ... >
             <!-- A new interval every 100 pixels -->
-            <dxo-argument-axis ... [aggregationGroupWidth]="100">
-            </dxo-argument-axis>
+            <dxo-chart-argument-axis ... [aggregationGroupWidth]="100">
+            </dxo-chart-argument-axis>
         </dx-chart>
 
     ##### Vue

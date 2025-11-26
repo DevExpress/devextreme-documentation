@@ -55,7 +55,7 @@ You can call this method at any point in your application. The following code ca
     <dx-{widget-name} ...
         (onExporting)="exportGrid($event)">
         <!-- ... -->
-        <dxo-export [enabled]="true"></dxo-export>
+        <dxo-{widget-name}-export [enabled]="true"></dxo-{widget-name}-export>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

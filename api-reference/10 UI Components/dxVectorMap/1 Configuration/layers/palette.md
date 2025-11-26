@@ -39,12 +39,12 @@ Use the [paletteIndex](/api-reference/10%20UI%20Components/dxVectorMap/1%20Confi
 
     <!-- tab: app.component.html -->
     <dx-vector-map ... >
-        <dxi-layer
+        <dxi-vector-map-layer
             [dataSource]="worldMap"
             palette="Material" 
             [paletteSize]="7"
             [customize]="colorizeMap">
-        </dxi-layer>
+        </dxi-vector-map-layer>
     </dx-vector-map>
 
     <!-- tab: app.component.ts -->

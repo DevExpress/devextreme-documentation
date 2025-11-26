@@ -64,17 +64,17 @@ During the binding process, the UI component creates a shape for every bound nod
 
     <!-- tab: app.component.html -->
     <dx-diagram>
-        <dxo-nodes 
+        <dxo-diagram-nodes 
             [dataSource]="flowNodesDataSource" 
             keyExpr="id" 
             textExpr="text"
-        ></dxo-nodes>
-        <dxo-edges
+        ></dxo-diagram-nodes>
+        <dxo-diagram-edges
             [dataSource]="flowEdgesDataSource"
             keyExpr="id"
             fromExpr="from"
             toExpr="to"
-        ></dxo-edges>
+        ></dxo-diagram-edges>
     </dx-diagram>
 
     <!-- tab: app.component.ts -->

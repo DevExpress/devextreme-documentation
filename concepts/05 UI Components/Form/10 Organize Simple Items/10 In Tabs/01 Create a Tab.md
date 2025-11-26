@@ -32,18 +32,18 @@ The Form UI component allows you to organize items in tabs. In the context of th
     <!--HTML-->
     <dx-form
         [(formData)]="employee">
-        <dxi-item dataField="name"></dxi-item>
-        <dxi-item itemType="tabbed">
-            <dxi-tab title="Info">
-                <dxi-item dataField="position"></dxi-item>
-                <dxi-item dataField="hireDate"></dxi-item>
-                <dxi-item dataField="city"></dxi-item>
-            </dxi-tab>
-            <dxi-tab title="Contacts">
-                <dxi-item dataField="phone"></dxi-item>
-                <dxi-item dataField="email"></dxi-item>
-            </dxi-tab>
-        </dxi-item>
+        <dxi-form-item dataField="name"></dxi-form-item>
+        <dxi-form-item itemType="tabbed">
+            <dxi-form-tab title="Info">
+                <dxi-form-item dataField="position"></dxi-form-item>
+                <dxi-form-item dataField="hireDate"></dxi-form-item>
+                <dxi-form-item dataField="city"></dxi-form-item>
+            </dxi-form-tab>
+            <dxi-form-tab title="Contacts">
+                <dxi-form-item dataField="phone"></dxi-form-item>
+                <dxi-form-item dataField="email"></dxi-form-item>
+            </dxi-form-tab>
+        </dxi-form-item>
     </dx-form>
 
     <!--TypeScript-->

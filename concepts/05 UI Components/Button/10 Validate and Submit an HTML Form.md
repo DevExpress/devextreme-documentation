@@ -41,12 +41,12 @@ Commonly, editors nested into an HTML form are supposed to be validated on the c
     <form action="/Login" method="post">
         <dx-text-box name="Login">
             <dx-validator>
-                <dxi-validation-rule type="required"></dxi-validation-rule>
+                <dxi-validator-validation-rule type="required"></dxi-validator-validation-rule>
             </dx-validator>
         </dx-text-box>
         <dx-text-box name="Password" mode="password">
             <dx-validator>
-                <dxi-validation-rule type="required"></dxi-validation-rule>
+                <dxi-validator-validation-rule type="required"></dxi-validator-validation-rule>
             </dx-validator>
         </dx-text-box>
         <dx-button
@@ -83,7 +83,7 @@ Commonly, editors nested into an HTML form are supposed to be validated on the c
             </DxTextBox>
             <DxTextBox name="Password" mode="password">
                 <DxValidator>
-                    <dx-validation-rule type="required" />
+                    <DxValidationRule type="required" />
                 </DxValidator>
             </DxTextBox>
             <DxButton

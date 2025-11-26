@@ -25,15 +25,15 @@ Customize a summary item's text and value format using the [displayFormat](/api-
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-summary>
-            <dxi-total-item
+        <dxo-data-grid-summary>
+            <dxi-data-grid-total-item
                 column="SaleAmount"
                 summaryType="sum"
                 showInColumn="TotalAmount"
                 valueFormat="currency"
                 displayFormat="Column: {1}. Sales: {0}">
-            </dxi-total-item>
-        </dxo-summary>
+            </dxi-data-grid-total-item>
+        </dxo-data-grid-summary>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -141,13 +141,13 @@ Specify the **customizeText** function for a more detailed customization.
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-summary>
-            <dxi-group-item
+        <dxo-data-grid-summary>
+            <dxi-data-grid-group-item
                 column="OrderNumber"
                 summaryType="count"
                 [customizeText]="customizeText">
-            </dxi-group-item>
-        </dxo-summary>
+            </dxi-data-grid-group-item>
+        </dxo-data-grid-summary>
     </dx-data-grid>
 
     <!--TypeScript-->

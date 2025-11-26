@@ -26,9 +26,9 @@ The following code sample illustrates how to set this property:
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-filter-operation-descriptions
+        <dxo-{widget-name}-filter-operation-descriptions
             startsWith="Begins with">
-        </dxo-filter-operation-descriptions>
+        </dxo-{widget-name}-filter-operation-descriptions>
     </dx-{widget-name}>
 
     <!-- tab: app.module.ts -->

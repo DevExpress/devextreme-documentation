@@ -269,15 +269,15 @@ Alternatively, you can get a group's instance and call its [validate](/api-refer
     <dx-validation-group #targetGroup>
         <dx-text-box>
             <dx-validator>
-                <dxi-validation-rule type="required">
-                </dxi-validation-rule>
+                <dxi-validator-validation-rule type="required">
+                </dxi-validator-validation-rule>
             </dx-validator>
         </dx-text-box>
 
         <dx-text-box>
             <dx-validator>
-                <dxi-validation-rule type="required">
-                </dxi-validation-rule>
+                <dxi-validator-validation-rule type="required">
+                </dxi-validator-validation-rule>
             </dx-validator>
         </dx-text-box>
     </dx-validation-group>

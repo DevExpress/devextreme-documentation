@@ -34,11 +34,11 @@ This property also controls the user input in cells that use the [DateBox](/api-
 
     <!--HTML-->
     <dx-filter-builder ... >
-        <dxi-field
+        <dxi-filter-builder-field
             dataField="SaleAmount"
             format="currency"
             [editorOptions]="saleAmountEditorOptions">
-        </dxi-field>
+        </dxi-filter-builder-field>
     </dx-filter-builder>
 
     <!--TypeScript-->

@@ -90,26 +90,26 @@ The code below configures the [DateBox](/api-reference/10%20UI%20Components/dxDa
         [formData]="customer"
         validationGroup="customerData">
         <!-- ... -->
-        <dxi-item>
-            <dxo-label text="Date of birth"></dxo-label>
+        <dxi-form-item>
+            <dxo-form-label text="Date of birth"></dxo-form-label>
             <div *dxTemplate>
                 <dx-date-box
                     [(value)]="customer.BirthDate">
                     <dx-validator
                         validationGroup="customerData">
-                        <dxi-validation-rule 
+                        <dxi-validator-validation-rule 
                             type="required"
                             message="Date of birth is required">
-                        </dxi-validation-rule>
-                        <dxi-validation-rule 
+                        </dxi-validator-validation-rule>
+                        <dxi-validator-validation-rule 
                             type="range"
                             [max]="maxDate"
                             message="You must be at least 21 years old">
-                        </dxi-validation-rule>
+                        </dxi-validator-validation-rule>
                     </dx-validator>
                 </dx-date-box>
             </div>
-        </dxi-item>
+        </dxi-form-item>
     </dx-form>
 
     <!-- tab: app.component.ts -->

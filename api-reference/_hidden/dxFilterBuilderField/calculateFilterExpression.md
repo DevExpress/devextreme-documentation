@@ -92,9 +92,9 @@ In the following code, the **calculateFilterExpression** function implements an 
 
     <!--HTML-->
     <dx-filter-builder ... >
-        <dxi-field ...
+        <dxi-filter-builder-field ...
             [calculateFilterExpression]="calculateFilterExpression">
-        </dxi-field>
+        </dxi-filter-builder-field>
     </dx-filter-builder>
 
 ##### Vue

@@ -19,11 +19,11 @@ The example below shows how you can show and hide the Toast component without th
                 type="info"
                 message="You have a new message"
             >  
-                <dxo-position
+                <dxo-toast-position
                     my="bottom"
                     at="bottom"
                     of="#container">
-                </dxo-position>
+                </dxo-toast-position>
             </dx-toast>
         </div>
     </div>

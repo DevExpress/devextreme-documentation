@@ -43,16 +43,16 @@ By default, the UI component aligns all editors of all simple items in straight 
         [(formData)]="employee"
         [alignItemLabels]="false"
         [alignItemLabelsInAllGroups]="false">
-        <dxi-item dataField="firstName"></dxi-item>
-        <dxi-item dataField="lastName"></dxi-item>
-        <dxi-item itemType="group"
+        <dxi-form-item dataField="firstName"></dxi-form-item>
+        <dxi-form-item dataField="lastName"></dxi-form-item>
+        <dxi-form-item itemType="group"
             caption="Contacts"
             [items]="['phone', 'email']">
-        </dxi-item>
-        <dxi-item itemType="group"
+        </dxi-form-item>
+        <dxi-form-item itemType="group"
             caption="Misc Data"
             [items]="['position', 'city']">
-        </dxi-item>
+        </dxi-form-item>
     </dx-form>
 
     <!--TypeScript-->

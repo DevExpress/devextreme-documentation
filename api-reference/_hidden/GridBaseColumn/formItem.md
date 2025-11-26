@@ -38,15 +38,15 @@ In the following code, the `Full_Name` grid column in the editing state produces
     
     <!--HTML-->
     <dx-{widget-name} ... >
-        <dxo-editing
+        <dxo-{widget-name}-editing
             [allowUpdating]="true"
             mode="form">
-        </dxo-editing>
-        <dxi-column dataField="Full_Name">
-            <dxo-form-item [colSpan]="2">
-                <dxo-label location="top"></dxo-label>
-            </dxo-form-item>
-        </dxi-column>
+        </dxo-{widget-name}-editing>
+        <dxi-{widget-name}-column dataField="Full_Name">
+            <dxo-{widget-name}-form-item [colSpan]="2">
+                <dxo-{widget-name}-label location="top"></dxo-{widget-name}-label>
+            </dxo-{widget-name}-form-item>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!--TypeScript-->

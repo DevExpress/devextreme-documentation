@@ -36,11 +36,11 @@ This property accepts the name of the data source field that provides values use
     
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
-        <dxi-column
+        <dxi-data-grid-column
             dataField="ColumnValues"
             [groupIndex]="0"
             calculateGroupValue="GroupingValues">
-        </dxi-column>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!-- tab: app.module.ts -->
@@ -154,12 +154,12 @@ This property accepts the name of the data source field that provides values use
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
         <!-- ... -->
-        <dxi-column
+        <dxi-data-grid-column
             dataField="HireDate"
             [groupIndex]="0"
             [calculateGroupValue]="groupByDate"
             dataType="date">
-        </dxi-column>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->

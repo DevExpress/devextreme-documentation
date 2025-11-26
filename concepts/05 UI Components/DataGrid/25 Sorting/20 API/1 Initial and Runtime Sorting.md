@@ -19,16 +19,16 @@ Rows are sorted according to the data source by default. Set the [sortOrder](/ap
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column
+        <dxi-data-grid-column
             dataField="City"
             [sortIndex]="1"
             sortOrder="asc">
-        </dxi-column>
-        <dxi-column
+        </dxi-data-grid-column>
+        <dxi-data-grid-column
             dataField="Country"
             [sortIndex]="0"
             sortOrder="asc">
-        </dxi-column>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -122,10 +122,10 @@ Change the **sortOrder** and **sortIndex** properties using the [columnOption](/
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column
+        <dxi-data-grid-column
             dataField="Country"
             [(sortOrder)]="countrySortOrder">
-        </dxi-column>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->

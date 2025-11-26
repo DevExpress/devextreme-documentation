@@ -32,16 +32,16 @@ Grid columns have equal widths by default. You can set each column's [width](/ap
         [allowColumnResizing]="true"
         [columnAutoWidth]="true">
         <!-- ... -->
-        <dxi-column
+        <dxi-data-grid-column
             dataField="BirthDate"
             dataType="date"
             [width]="100">
-        </dxi-column>
-        <dxi-column
+        </dxi-data-grid-column>
+        <dxi-data-grid-column
             dataField="HireDate"
             dataType="date"
             [width]="100">
-        </dxi-column>
+        </dxi-data-grid-column>
         <!-- ... -->
     </dx-data-grid>
 

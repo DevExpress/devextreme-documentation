@@ -69,13 +69,13 @@ In the following example, a toolbar button's [onClick](/api-reference/10%20UI%20
 
     <!-- tab: app.component.html -->
     <dx-gantt ...>
-        <dxo-toolbar>
+        <dxo-gantt-toolbar>
             <!-- ... -->    
-            <dxi-item
+            <dxi-gantt-item
                 widget="dxButton"
                 [options]="exportButtonOptions">
-            </dxi-item>
-        </dxo-toolbar>
+            </dxi-gantt-item>
+        </dxo-gantt-toolbar>
     </dx-gantt>
 
     <!-- tab: app.component.ts -->

@@ -17,11 +17,11 @@ In nested components, the `()` syntax cannot be used. Use the `[]` syntax instea
 
     <!-- tab: app.component.html -->
     <dx-data-grid>
-        <dxi-column type="buttons">
-            <dxi-button
+        <dxi-data-grid-column type="buttons">
+            <dxi-data-grid-button
                 [onClick]="okClicked">
-            </dxi-button>
-        </dxi-column>
+            </dxi-data-grid-button>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->

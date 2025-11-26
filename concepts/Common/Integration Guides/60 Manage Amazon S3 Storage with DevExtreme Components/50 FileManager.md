@@ -46,8 +46,8 @@ In this particular scenario, final component configuration is straightforward:
         [fileSystemProvider]="fileSystemProvider"
         [allowedFileExtensions]="allowedFileExtensions"
     >
-        <dxo-upload [chunkSize]="5242880"></dxo-upload>
-        <dxo-permissions
+        <dxo-file-manager-upload [chunkSize]="5242880"></dxo-file-manager-upload>
+        <dxo-file-manager-permissions
         [create]="true"
         [copy]="true"
         [move]="true"
@@ -56,7 +56,7 @@ In this particular scenario, final component configuration is straightforward:
         [upload]="true"
         [download]="true"
         >
-        </dxo-permissions>
+        </dxo-file-manager-permissions>
     </dx-file-manager>
 
 ##### Vue 

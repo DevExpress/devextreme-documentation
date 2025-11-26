@@ -31,16 +31,16 @@ Configure each summary item in the **summary**.[totalItems](/api-reference/10%20
     <!--HTML-->
     <dx-data-grid ...
         [columns]="['OrderNumber', 'Price']" >
-        <dxo-summary>
-            <dxi-total-item
+        <dxo-data-grid-summary>
+            <dxi-data-grid-total-item
                 column="OrderNumber"
                 summaryType="count">
-            </dxi-total-item>
-            <dxi-total-item
+            </dxi-data-grid-total-item>
+            <dxi-data-grid-total-item
                 column="Price"
                 summaryType="sum">
-            </dxi-total-item>
-        </dxo-summary>
+            </dxi-data-grid-total-item>
+        </dxo-data-grid-summary>
     </dx-data-grid>
 
     <!--TypeScript-->

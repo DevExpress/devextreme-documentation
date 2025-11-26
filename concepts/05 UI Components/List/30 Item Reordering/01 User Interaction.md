@@ -17,9 +17,9 @@ If you want to allow the user to reorder items on the List, define the [itemDrag
 
     <!--HTML-->
     <dx-list ...>
-        <dxo-item-dragging
+        <dxo-list-item-dragging
             [allowReordering]="true">
-        </dxo-item-dragging>
+        </dxo-list-item-dragging>
     </dx-list>
 
     <!--TypeScript-->

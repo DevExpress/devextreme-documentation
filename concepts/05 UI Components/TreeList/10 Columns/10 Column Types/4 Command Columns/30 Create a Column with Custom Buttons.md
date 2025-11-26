@@ -25,13 +25,13 @@ The following code shows how to add a command column with custom [buttons](/api-
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxi-column type="buttons" [buttons]="['add', 'edit', 'delete']"></dxi-column>
-        <dxi-column dataField="firstName"></dxi-column>
-        <dxi-column dataField="lastName"></dxi-column>
-        <dxi-column type="buttons">
-            <dxi-button ... ></dxi-button>
+        <dxi-tree-list-column type="buttons" [buttons]="['add', 'edit', 'delete']"></dxi-tree-list-column>
+        <dxi-tree-list-column dataField="firstName"></dxi-tree-list-column>
+        <dxi-tree-list-column dataField="lastName"></dxi-tree-list-column>
+        <dxi-tree-list-column type="buttons">
+            <dxi-tree-list-button ... ></dxi-tree-list-button>
             <!-- Declare and configure custom buttons here -->
-        </dxi-column>
+        </dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->

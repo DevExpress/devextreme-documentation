@@ -215,11 +215,11 @@ Note that the `fileSystemProvider` component option needs to reference the follo
     [fileSystemProvider]="fileSystemProvider"
     [allowedFileExtensions]="allowedFileExtensions"
     >
-        <dxo-permissions 
+        <dxo-file-manager-permissions 
             [download]="true"
             ...
         >
-        </dxo-permissions>
+        </dxo-file-manager-permissions>
     </dx-file-manager>
 
 ##### Vue 

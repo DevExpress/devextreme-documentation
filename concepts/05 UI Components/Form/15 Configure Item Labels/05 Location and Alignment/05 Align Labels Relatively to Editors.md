@@ -28,14 +28,14 @@ The Form UI component displays labels on the left side of their editors and alig
     <dx-form
         [(formData)]="employee"
         labelLocation="top"> <!-- or "left" | "right" -->
-        <dxi-item dataField="firstName"></dxi-item>
-        <dxi-item dataField="lastName"></dxi-item>
-        <dxi-item dataField="phone">
-            <dxo-label
+        <dxi-form-item dataField="firstName"></dxi-form-item>
+        <dxi-form-item dataField="lastName"></dxi-form-item>
+        <dxi-form-item dataField="phone">
+            <dxo-form-label
                 location="left"
                 alignment="right"> <!-- or "left" | "center" -->
-            </dxo-label>
-        </dxi-item>
+            </dxo-form-label>
+        </dxi-form-item>
     </dx-form>
 
     <!--TypeScript-->

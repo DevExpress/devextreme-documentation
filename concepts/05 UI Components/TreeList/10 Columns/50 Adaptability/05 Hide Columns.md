@@ -31,9 +31,9 @@ You can use the **columns[]**.[hidingPriority](/api-reference/_hidden/GridBaseCo
     <dx-tree-list ... 
         [columnHidingEnabled]="true">
         <!-- These columns will be hidden in the following order: -->
-        <dxi-column [hidingPriority]="0" ... ></dxi-column> <!-- first -->
-        <dxi-column [hidingPriority]="1" ... ></dxi-column> <!-- second -->
-        <dxi-column [hidingPriority]="2" ... ></dxi-column> <!-- third -->
+        <dxi-tree-list-column [hidingPriority]="0" ... ></dxi-tree-list-column> <!-- first -->
+        <dxi-tree-list-column [hidingPriority]="1" ... ></dxi-tree-list-column> <!-- second -->
+        <dxi-tree-list-column [hidingPriority]="2" ... ></dxi-tree-list-column> <!-- third -->
     </dx-tree-list>
 
     <!--TypeScript-->

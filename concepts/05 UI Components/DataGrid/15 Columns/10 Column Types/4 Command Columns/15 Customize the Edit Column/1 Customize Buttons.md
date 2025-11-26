@@ -23,14 +23,14 @@ In the following code, a CSS class is added to the **Save** button. The **Edit**
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column type="buttons">
-            <dxi-button
+        <dxi-data-grid-column type="buttons">
+            <dxi-data-grid-button
                 name="save"
                 cssClass="my-class">
-            </dxi-button>
-            <dxi-button name="edit"></dxi-button>
-            <dxi-button name="delete"></dxi-button>
-        </dxi-column>
+            </dxi-data-grid-button>
+            <dxi-data-grid-button name="edit"></dxi-data-grid-button>
+            <dxi-data-grid-button name="delete"></dxi-data-grid-button>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -155,13 +155,13 @@ You can also declare custom logic in the button configuration. For instance, the
 
     <!-- tab: app.component.html-->
     <dx-data-grid ... >
-        <dxi-column type="buttons">
-            <dxi-button
+        <dxi-data-grid-column type="buttons">
+            <dxi-data-grid-button
                 name="edit"
                 [onClick]="onEditButtonClick">
-            </dxi-button>
-            <dxi-button name="delete"></dxi-button>
-        </dxi-column>
+            </dxi-data-grid-button>
+            <dxi-data-grid-button name="delete"></dxi-data-grid-button>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->

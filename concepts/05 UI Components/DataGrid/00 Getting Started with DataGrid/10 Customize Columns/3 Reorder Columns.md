@@ -34,21 +34,21 @@ To reorder grid columns, change their order in the [columns](/api-reference/10%2
     <!-- tab: app.component.html -->
     <dx-data-grid ...
         [allowColumnReordering]="true">
-        <dxi-column dataField="FullName"></dxi-column>
-        <dxi-column dataField="Position"></dxi-column>
-        <dxi-column
+        <dxi-data-grid-column dataField="FullName"></dxi-data-grid-column>
+        <dxi-data-grid-column dataField="Position"></dxi-data-grid-column>
+        <dxi-data-grid-column
             dataField="BirthDate"
             dataType="date">
-        </dxi-column>
-        <dxi-column
+        </dxi-data-grid-column>
+        <dxi-data-grid-column
             dataField="HireDate"
             dataType="date">
-        </dxi-column>
-        <dxi-column dataField="City"></dxi-column>
-        <dxi-column dataField="Country"></dxi-column>
-        <dxi-column dataField="Address"></dxi-column>
-        <dxi-column dataField="HomePhone"></dxi-column>
-        <dxi-column dataField="PostalCode"></dxi-column>
+        </dxi-data-grid-column>
+        <dxi-data-grid-column dataField="City"></dxi-data-grid-column>
+        <dxi-data-grid-column dataField="Country"></dxi-data-grid-column>
+        <dxi-data-grid-column dataField="Address"></dxi-data-grid-column>
+        <dxi-data-grid-column dataField="HomePhone"></dxi-data-grid-column>
+        <dxi-data-grid-column dataField="PostalCode"></dxi-data-grid-column>
     </dx-data-grid>
 
 ##### Vue

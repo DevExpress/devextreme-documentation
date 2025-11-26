@@ -34,15 +34,15 @@ If an item should span more than one column, assign the required number to the [
     <dx-form
         [(formData)]="employee"
         [colCount]="2">
-        <dxi-item dataField="firstName"></dxi-item>
-        <dxi-item dataField="lastName"></dxi-item>
-        <dxi-item dataField="notes" [colSpan]="2"></dxi-item>
-        <dxi-item itemType="tabbed" [colSpan]="2">
-            <dxi-tab
+        <dxi-form-item dataField="firstName"></dxi-form-item>
+        <dxi-form-item dataField="lastName"></dxi-form-item>
+        <dxi-form-item dataField="notes" [colSpan]="2"></dxi-form-item>
+        <dxi-form-item itemType="tabbed" [colSpan]="2">
+            <dxi-form-tab
                 title="Contacts"
                 [items]="['phone', 'email']">
-            </dxi-tab>
-        </dxi-item>
+            </dxi-form-tab>
+        </dxi-form-item>
     </dx-form>
 
     <!--TypeScript-->

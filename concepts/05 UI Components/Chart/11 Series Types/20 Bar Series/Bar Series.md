@@ -32,14 +32,14 @@ To specify one or another series type, assign its name to the **series[]**.[type
 
     <!--HTML-->
     <dx-chart ... >
-        <dxi-series type="bar"></dxi-series>
-        <dxi-series ... ></dxi-series>
+        <dxi-chart-series type="bar"></dxi-chart-series>
+        <dxi-chart-series ... ></dxi-chart-series>
         ...
-        <dxo-common-series-settings>
+        <dxo-chart-common-series-settings>
             <dxo-bar ... ></dxo-bar>
             <dxo-stackedbar ... ></dxo-stackedbar>
             <dxo-fullstackedbar ... ></dxo-fullstackedbar>
-        </dxo-common-series-settings>
+        </dxo-chart-common-series-settings>
     </dx-chart>
 
     <!--TypeScript-->

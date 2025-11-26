@@ -39,16 +39,16 @@ The following code shows how to configure the **labelLocation** property to plac
         [formData]="employee"
         [colCount]="2"
         labelLocation="top">
-        <dxi-item dataField="name"></dxi-item>
-        <dxi-item dataField="position"></dxi-item>
-        <dxi-item dataField="hireDate"></dxi-item>
-        <dxi-item dataField="officeNumber"></dxi-item>
-        <dxi-item 
+        <dxi-form-item dataField="name"></dxi-form-item>
+        <dxi-form-item dataField="position"></dxi-form-item>
+        <dxi-form-item dataField="hireDate"></dxi-form-item>
+        <dxi-form-item dataField="officeNumber"></dxi-form-item>
+        <dxi-form-item 
             dataField="notes" 
             [colSpan]="2">
-            <dxo-label alignment="center">
-            </dxo-label>
-        </dxi-item>
+            <dxo-form-label alignment="center">
+            </dxo-form-label>
+        </dxi-form-item>
     </dx-form>
 
     <!-- tab: app.component.ts -->

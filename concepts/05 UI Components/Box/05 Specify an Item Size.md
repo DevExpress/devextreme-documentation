@@ -44,9 +44,9 @@ The unoccupied area can be distributed among the items according to **ratio**s. 
 
     <!--HTML-->
     <dx-box [height]="100" [width]="600">
-        <dxi-item class="box-item orange" [baseSize]="200" [ratio]="6"> Item 1 </dxi-item>
-        <dxi-item class="box-item yellow" [baseSize]="100" [ratio]="2"> Item 2 </dxi-item>
-        <dxi-item class="box-item green"  [baseSize]="150" [ratio]="1"> Item 3 </dxi-item>
+        <dxi-box-item class="box-item orange" [baseSize]="200" [ratio]="6"> Item 1 </dxi-box-item>
+        <dxi-box-item class="box-item yellow" [baseSize]="100" [ratio]="2"> Item 2 </dxi-box-item>
+        <dxi-box-item class="box-item green"  [baseSize]="150" [ratio]="1"> Item 3 </dxi-box-item>
     </dx-box>
 
     <!--TypeScript-->
@@ -208,9 +208,9 @@ If **ratio** applies when there is an available space, **shrink** applies when s
 
     <!--HTML-->
     <dx-box [height]="100" [width]="300">
-        <dxi-item class="box-item orange" [baseSize]="200" [shrink]="1"> Item 1 </dxi-item>
-        <dxi-item class="box-item yellow" [baseSize]="200" [shrink]="1"> Item 2 </dxi-item>
-        <dxi-item class="box-item green"  [baseSize]="200" [shrink]="1"> Item 3 </dxi-item>
+        <dxi-box-item class="box-item orange" [baseSize]="200" [shrink]="1"> Item 1 </dxi-box-item>
+        <dxi-box-item class="box-item yellow" [baseSize]="200" [shrink]="1"> Item 2 </dxi-box-item>
+        <dxi-box-item class="box-item green"  [baseSize]="200" [shrink]="1"> Item 3 </dxi-box-item>
     </dx-box>
 
     <!--TypeScript-->
@@ -366,9 +366,9 @@ The result is different if *Item 2*'s **shrink** value is more than the other it
 
     <!--HTML-->
     <dx-box [height]="100" [width]="300">
-        <dxi-item class="box-item orange" [baseSize]="200" [shrink]="1"> Item 1 </dxi-item>
-        <dxi-item class="box-item yellow" [baseSize]="200" [shrink]="2"> Item 2 </dxi-item>
-        <dxi-item class="box-item green"  [baseSize]="200" [shrink]="1"> Item 3 </dxi-item>
+        <dxi-box-item class="box-item orange" [baseSize]="200" [shrink]="1"> Item 1 </dxi-box-item>
+        <dxi-box-item class="box-item yellow" [baseSize]="200" [shrink]="2"> Item 2 </dxi-box-item>
+        <dxi-box-item class="box-item green"  [baseSize]="200" [shrink]="1"> Item 3 </dxi-box-item>
     </dx-box>
 
     <!--TypeScript-->

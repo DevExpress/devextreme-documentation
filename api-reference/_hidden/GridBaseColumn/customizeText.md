@@ -50,10 +50,10 @@ The `this` keyword refers to the column's configuration.
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-       <dxi-column
+       <dxi-{widget-name}-column
            dataField="Temperature"
            [customizeText]="customizeText"
-       ></dxi-column>
+       ></dxi-{widget-name}-column>
     </dx-{widget-name}>
 
 

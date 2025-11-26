@@ -59,11 +59,11 @@ This method sets the [isDirty](/api-reference/10%20UI%20Components/dxForm/1%20Co
     <dx-form ... 
         #formRef
     >
-        <dxi-item
+        <dxi-form-item
           itemType="button"
           [buttonOptions]="resetButtonOptions"
         >
-        </dxi-item>
+        </dxi-form-item>
     </dx-form>
 
 ##### Vue

@@ -26,7 +26,7 @@ The map background is a space on a map that does not contain areas. Within the *
 
     <!-- tab: app.component.html -->
     <dx-vector-map ... >
-        <dxo-background color="azure" borderColor="blue"></dxo-background>
+        <dxo-vector-map-background color="azure" borderColor="blue"></dxo-vector-map-background>
     </dx-vector-map>
 
 ##### Vue

@@ -19,9 +19,9 @@ If you need to change the text displayed by funnel items, declare the [customize
 ##### Angular
 
     <!--HTML--><dx-funnel ... >
-        <dxo-label
+        <dxo-funnel-label
             [customizeText]="customizeText">
-        </dxo-label>
+        </dxo-funnel-label>
     </dx-funnel>
 
     <!--TypeScript-->

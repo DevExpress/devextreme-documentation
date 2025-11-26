@@ -32,12 +32,12 @@ The **columns** array can contain column objects and data field names as strings
     
     <!--HTML-->
     <dx-{widget-name} ... >
-        <dxi-column dataField="CustomerID"></dxi-column>
-        <dxi-column dataField="EmployeeID" [width]="200"></dxi-column>
-        <dxi-column dataField="OrderDate"></dxi-column>
-        <dxi-column dataField="Freight" format="fixedPoint"></dxi-column>
-        <dxi-column dataField="ShipName"></dxi-column>
-        <dxi-column dataField="ShipCity"></dxi-column>
+        <dxi-{widget-name}-column dataField="CustomerID"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="EmployeeID" [width]="200"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="OrderDate"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="Freight" format="fixedPoint"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="ShipName"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="ShipCity"></dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!--TypeScript-->

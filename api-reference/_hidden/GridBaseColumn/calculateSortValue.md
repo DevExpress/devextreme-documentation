@@ -35,10 +35,10 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxi-column
+        <dxi-{widget-name}-column
             dataField="Position" <!-- provides column values -->
             calculateSortValue="isOnVacation"> <!-- provides values used to sort the Position column -->
-        </dxi-column>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!-- tab: app.module.ts -->
@@ -129,11 +129,11 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxi-column
+        <dxi-{widget-name}-column
             dataField="Employee"
             sortOrder="asc"
             [calculateSortValue]="sortByLocation">
-        </dxi-column>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

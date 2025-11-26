@@ -45,30 +45,30 @@ DevExtreme includes a validation engine that checks edited values before they ar
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
         <!-- ... -->
-        <dxi-column dataField="FullName">
-            <dxi-validation-rule type="required"></dxi-validation-rule>
-        </dxi-column>
-        <dxi-column dataField="Position">
-            <dxi-validation-rule type="required"></dxi-validation-rule>
-        </dxi-column>
-        <dxi-column ...
+        <dxi-data-grid-column dataField="FullName">
+            <dxi-data-grid-validation-rule type="required"></dxi-data-grid-validation-rule>
+        </dxi-data-grid-column>
+        <dxi-data-grid-column dataField="Position">
+            <dxi-data-grid-validation-rule type="required"></dxi-data-grid-validation-rule>
+        </dxi-data-grid-column>
+        <dxi-data-grid-column ...
             dataField="BirthDate">
-            <dxi-validation-rule type="required"></dxi-validation-rule>
-        </dxi-column>
-        <dxi-column ...
+            <dxi-data-grid-validation-rule type="required"></dxi-data-grid-validation-rule>
+        </dxi-data-grid-column>
+        <dxi-data-grid-column ...
             dataField="HireDate">
-            <dxi-validation-rule type="required"></dxi-validation-rule>
-        </dxi-column>
-        <dxi-column ...
+            <dxi-data-grid-validation-rule type="required"></dxi-data-grid-validation-rule>
+        </dxi-data-grid-column>
+        <dxi-data-grid-column ...
             dataField="Country">
-            <dxi-validation-rule type="required"></dxi-validation-rule>
-        </dxi-column>
-        <dxo-editing
+            <dxi-data-grid-validation-rule type="required"></dxi-data-grid-validation-rule>
+        </dxi-data-grid-column>
+        <dxo-data-grid-editing
             mode="popup"
             [allowUpdating]="true"
             [allowDeleting]="true"
             [allowAdding]="true">
-        </dxo-editing>
+        </dxo-data-grid-editing>
     </dx-data-grid>
 
 ##### Vue

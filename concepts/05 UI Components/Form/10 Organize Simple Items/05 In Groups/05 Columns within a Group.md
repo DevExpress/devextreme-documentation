@@ -37,21 +37,21 @@ Items within a group can be organized in several columns. To specify the number 
     <dx-form
         [(formData)]="employee"
         [colCount]="2"> <!-- Splits the Form layout in two columns -->
-        <dxi-item
+        <dxi-form-item
             itemType="group"
             caption="Personal Data"
             [colSpan]="2" <!-- Makes this group span both general columns -->
             [colCount]="3"> <!-- Organizes items inside this group in three columns -->
-                <dxi-item dataField="firstName"></dxi-item>
-                <dxi-item dataField="lastName"></dxi-item>
-                <dxi-item dataField="position"></dxi-item>
-        </dxi-item>
-        <dxi-item
+                <dxi-form-item dataField="firstName"></dxi-form-item>
+                <dxi-form-item dataField="lastName"></dxi-form-item>
+                <dxi-form-item dataField="position"></dxi-form-item>
+        </dxi-form-item>
+        <dxi-form-item
             itemType="group"
             caption="Contacts">
-                <dxi-item dataField="phone"></dxi-item>
-                <dxi-item dataField="email"></dxi-item>
-        </dxi-item>
+                <dxi-form-item dataField="phone"></dxi-form-item>
+                <dxi-form-item dataField="email"></dxi-form-item>
+        </dxi-form-item>
     </dx-form>
 
     <!--TypeScript-->

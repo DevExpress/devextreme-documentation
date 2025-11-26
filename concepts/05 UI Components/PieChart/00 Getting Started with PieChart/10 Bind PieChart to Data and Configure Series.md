@@ -63,11 +63,11 @@ To display data, specify the [series](/api-reference/10%20UI%20Components/dxPieC
         [dataSource]="billionaires"
         type="doughnut"
     >
-        <dxi-series 
+        <dxi-pie-chart-series 
             argumentField="country" 
             valueField="amount"
         >
-        </dxi-series>
+        </dxi-pie-chart-series>
     </dx-pie-chart>
 
     <!-- tab: app.component.ts -->

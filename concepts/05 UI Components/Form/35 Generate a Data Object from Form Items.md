@@ -28,9 +28,9 @@ Not only you can bind the Form to an existing data object, but you can also gene
     <!--HTML-->
     <dx-form
         (onFieldDataChanged)="form_fieldDataChanged($event)">
-        <dxi-item dataField="firstName" editorType="dxTextBox"></dxi-item>
-        <dxi-item dataField="lastName"  editorType="dxTextBox"></dxi-item>
-        <dxi-item dataField="birthDate" editorType="dxDateBox"></dxi-item>
+        <dxi-form-item dataField="firstName" editorType="dxTextBox"></dxi-form-item>
+        <dxi-form-item dataField="lastName"  editorType="dxTextBox"></dxi-form-item>
+        <dxi-form-item dataField="birthDate" editorType="dxDateBox"></dxi-form-item>
     </dx-form>
 
     <!--TypeScript-->

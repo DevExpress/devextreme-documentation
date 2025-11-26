@@ -67,10 +67,10 @@ A function assigned to this property should do the following:
 
     <!-- tab: app.component.html -->
     <dx-diagram #diagram id="diagram">
-        <dxo-edges
+        <dxo-diagram-edges
             [dataSource]="orgLinksDataSource"
             [customDataExpr]="linkCustomDataExpr"
-        ></dxo-edges>
+        ></dxo-diagram-edges>
     </dx-diagram>
 
     <!-- tab: app.module.ts -->

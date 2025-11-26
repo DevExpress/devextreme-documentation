@@ -37,11 +37,11 @@ Configures the file and directory view.
 
     <!-- tab: app.component.html -->
     <dx-file-manager>
-        <dxo-item-view 
+        <dxo-file-manager-item-view 
             mode="thumbnails"
             showFolders="false"
             showParentFolder="false" >
-        </dxo-item-view>
+        </dxo-file-manager-item-view>
         <!-- ... -->
     </dx-file-manager>
 

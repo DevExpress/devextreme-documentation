@@ -17,10 +17,10 @@
 
     <!--HTML-->
     <dx-{widget-name} [value]="40">
-        <dxo-value-indicator <!-- or dxo-subvalue-indicator -->
+        <dxo-{widget-name}-value-indicator <!-- or dxo-subvalue-indicator -->
             type="${{indicatorTypeCamelCase}}"          
             <!-- The rest of the indicator properties go here -->
-        ></dxo-value-indicator>
+        ></dxo-{widget-name}-value-indicator>
     <dx-{widget-name}>
 
     <!--TypeScript-->

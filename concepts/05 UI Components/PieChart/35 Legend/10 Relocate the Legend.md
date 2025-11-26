@@ -16,10 +16,10 @@ The legend can be aligned in the horizontal or vertical direction using the [hor
 ##### Angular
 
     <!--HTML--><dx-pie-chart>
-        <dxo-legend
+        <dxo-pie-chart-legend
             horizontalAlignment="center" <!-- or "left" | "right" -->
             verticalAlignment="top"> <!-- or "bottom" -->
-        </dxo-legend>
+        </dxo-pie-chart-legend>
     </dx-pie-chart>
 
     <!--TypeScript-->

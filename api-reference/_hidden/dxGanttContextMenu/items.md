@@ -43,14 +43,14 @@ To add a predefined item to the context menu, add its [name](/api-reference/_hid
 
     <!--HTML--> 
     <dx-gantt ... >
-        <dxo-context-menu>
-            <dxi-item name="addTask"></dxi-item>
-            <dxi-item name="deleteTask"></dxi-item>
-            <dxi-item text="Zoom">
-                <dxi-item name="zoomIn"></dxi-item>
-                <dxi-item name="zoomOut"></dxi-item>
-            </dxi-item>        
-        </dxo-context-menu>
+        <dxo-gantt-context-menu>
+            <dxi-gantt-item name="addTask"></dxi-gantt-item>
+            <dxi-gantt-item name="deleteTask"></dxi-gantt-item>
+            <dxi-gantt-item text="Zoom">
+                <dxi-gantt-item name="zoomIn"></dxi-gantt-item>
+                <dxi-gantt-item name="zoomOut"></dxi-gantt-item>
+            </dxi-gantt-item>        
+        </dxo-gantt-context-menu>
         ...
     </dx-gantt>
 
@@ -210,13 +210,13 @@ To add a custom context menu item, specify its [text](/api-reference/_hidden/dxM
 
     <!--HTML--> 
     <dx-gantt (onCustomCommand)="onCustomCommand($event)" >
-        <dxo-context-menu>
-            <dxi-item text="Category">
-                <dxi-item name="item1" text="Item 1"></dxi-item>
-                <dxi-item name="item2" text="Item 2"></dxi-item>
-                <dxi-item name="item3" text="Item 3"></dxi-item>
-            </dxi-item>        
-        </dxo-context-menu>
+        <dxo-gantt-context-menu>
+            <dxi-gantt-item text="Category">
+                <dxi-gantt-item name="item1" text="Item 1"></dxi-gantt-item>
+                <dxi-gantt-item name="item2" text="Item 2"></dxi-gantt-item>
+                <dxi-gantt-item name="item3" text="Item 3"></dxi-gantt-item>
+            </dxi-gantt-item>        
+        </dxo-gantt-context-menu>
         ...
     </dx-gantt>
 

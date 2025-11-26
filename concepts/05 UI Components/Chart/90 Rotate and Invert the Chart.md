@@ -108,10 +108,10 @@ To invert both argument and value axes, assign **true** to the [inverted](/api-r
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-common-axis-settings [inverted]="true"></dxo-common-axis-settings>
+        <dxo-chart-common-axis-settings [inverted]="true"></dxo-chart-common-axis-settings>
         <!-- or for a specific axis -->
-        <dxo-argument-axis [inverted]="true"></dxo-argument-axis>
-        <dxi-value-axis [inverted]="true"></dxi-value-axis>
+        <dxo-chart-argument-axis [inverted]="true"></dxo-chart-argument-axis>
+        <dxi-chart-value-axis [inverted]="true"></dxi-chart-value-axis>
     </dx-chart>
 
     <!--TypeScript-->

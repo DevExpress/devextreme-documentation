@@ -87,12 +87,12 @@ The following code includes the TabPanel configuration and an empty `switchSDA` 
     <div id="app-container">
         <dx-tab-panel
             (onSelectionChanged)="switchSDAs($event)">
-            <dxi-item title="Edit tab">
+            <dxi-tab-panel-item title="Edit tab">
                 <p>Edit tab's content</p>
-            </dxi-item>
-            <dxi-item title="Share tab">
+            </dxi-tab-panel-item>
+            <dxi-tab-panel-item title="Share tab">
                 <p>Share tab's content</p>
-            </dxi-item>
+            </dxi-tab-panel-item>
         </dx-tab-panel>
         <!-- To be implemented -->
     </div>

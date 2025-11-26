@@ -19,10 +19,10 @@ An error message can be specified as follows:
         <!-- tab: app.component.html -->
         <dx-text-box> 
             <dx-validator>
-                <dxi-validation-rule 
+                <dxi-validator-validation-rule 
                     type="${{ruleType}}" 
                     message="My custom message">
-                </dxi-validation-rule>
+                </dxi-validator-validation-rule>
             </dx-validator>
         </dx-text-box>
 
@@ -127,10 +127,10 @@ An error message can be specified as follows:
         <!-- tab: app.component.html -->
         <dx-text-box>
             <dx-validator>
-                <dxi-validation-rule 
+                <dxi-validator-validation-rule 
                     type="${{ruleType}}" 
                     message="">
-                </dxi-validation-rule>
+                </dxi-validator-validation-rule>
             </dx-validator>
         </dx-text-box>
 
@@ -238,9 +238,9 @@ An error message can be specified as follows:
         <dx-text-box>
             <!-- The error message will be "${{errorMessage}}" -->
             <dx-validator name="${{editorName}}">
-                <dxi-validation-rule 
+                <dxi-validator-validation-rule 
                     type="${{ruleType}}">
-                </dxi-validation-rule>
+                </dxi-validator-validation-rule>
             </dx-validator>
         </dx-text-box>
 

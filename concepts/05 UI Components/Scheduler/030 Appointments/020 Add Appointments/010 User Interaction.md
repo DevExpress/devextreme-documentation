@@ -28,7 +28,7 @@ To prevent an end user from adding an appointment, set the **editing**.[allowAdd
 
     <!--HTML-->
     <dx-scheduler ... >
-        <dxo-editing [allowAdding]="false"></dxo-editing>
+        <dxo-scheduler-editing [allowAdding]="false"></dxo-scheduler-editing>
     </dx-scheduler>
 
     <!--TypeScript-->

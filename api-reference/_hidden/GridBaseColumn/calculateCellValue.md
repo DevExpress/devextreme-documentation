@@ -52,10 +52,10 @@ In the following code, the **calculateCellValue** function is used to create an 
     <!-- tab: app.component.html -->
     <dx-{widget-name}
         [dataSource]="products">
-        <dxi-column
+        <dxi-{widget-name}-column
             caption="Sales Amount"
             [calculateCellValue]="calculateSalesAmount">
-        </dxi-column>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->
@@ -305,9 +305,9 @@ To invoke the default behavior, call the **defaultCalculateCellValue** function 
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxi-column ...
+        <dxi-{widget-name}-column ...
             [calculateCellValue]="calculateCellValue">
-        </dxi-column>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
 ##### Vue

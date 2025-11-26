@@ -23,10 +23,10 @@ Columns represent sets of data values that have the same type. To configure colu
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxi-column dataField="Title" caption="Position"></dxi-column>
-        <dxi-column dataField="FullName" [width]="300"></dxi-column>
-        <dxi-column dataField="CompanyName"></dxi-column>
-        <dxi-column dataField="City"></dxi-column>
+        <dxi-tree-list-column dataField="Title" caption="Position"></dxi-tree-list-column>
+        <dxi-tree-list-column dataField="FullName" [width]="300"></dxi-tree-list-column>
+        <dxi-tree-list-column dataField="CompanyName"></dxi-tree-list-column>
+        <dxi-tree-list-column dataField="City"></dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->

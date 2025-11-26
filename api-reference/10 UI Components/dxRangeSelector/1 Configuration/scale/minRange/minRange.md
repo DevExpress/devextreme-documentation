@@ -33,14 +33,14 @@ Use this property to set the minimum range that can be selected. When moving a s
 
     <!-- tab: app.component.html -->
     <dx-range-selector ... >
-        <dxo-scale
+        <dxo-range-selector-scale
             [startValue]="startValue"
             [endValue]="endValue"
             tickInterval="day"
             [minRange]="minRange"
             maxRange="month"
         >
-        </dxo-scale>
+        </dxo-range-selector-scale>
     </dx-range-selector>
 
     <!-- tab: app.component.ts -->

@@ -22,12 +22,12 @@ The title is configured by the [title](/api-reference/10%20UI%20Components/dxCha
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-title
+        <dxo-chart-title
             text="I am the Title">
-            <dxo-subtitle
+            <dxo-chart-subtitle
                 text="I am the Subtitle">
-            </dxo-subtitle>
-        </dxo-title>
+            </dxo-chart-subtitle>
+        </dxo-chart-title>
     </dx-chart>
 
     <!--TypeScript-->

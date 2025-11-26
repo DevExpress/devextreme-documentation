@@ -30,12 +30,12 @@ To configure a built-in button, assign its name to this property. The other prop
 
     <!--HTML-->
     <dx-{widget-name} ... >
-        <dxi-column type="buttons">
-            <dxi-button
+        <dxi-{widget-name}-column type="buttons">
+            <dxi-{widget-name}-button
                 name="save"
                 cssClass="my-class">
-            </dxi-button>
-        </dxi-column>
+            </dxi-{widget-name}-button>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!--TypeScript-->

@@ -22,14 +22,14 @@ Regulating the empty space on a bar's sides controls the relative angular bar wi
 
     <!--HTML-->
     <dx-polar-chart ... >
-        <dxi-series
+        <dxi-polar-chart-series
             [barPadding]="0.1"> <!-- for an individual series -->
-        </dxi-series>
-        <dxi-series ... ></dxi-series>
+        </dxi-polar-chart-series>
+        <dxi-polar-chart-series ... ></dxi-polar-chart-series>
         ...
-        <dxo-common-series-settings
+        <dxo-polar-chart-common-series-settings
             [barPadding]="0.1"> <!-- for all series in the chart -->
-        </dxo-common-series-settings>
+        </dxo-polar-chart-common-series-settings>
     </dx-polar-chart>
 
     <!--TypeScript-->

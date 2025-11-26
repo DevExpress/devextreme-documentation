@@ -52,18 +52,18 @@ The following code snippet adds a button before the central elements and a butto
     <!-- tab: app.component.html -->
     <dx-toolbar>
         <!-- ... -->
-        <dxi-item 
+        <dxi-toolbar-item 
             location="before" 
             widget="dxButton" 
             [options]="backButtonOptions"
         >
-        </dxi-item>
-        <dxi-item 
+        </dxi-toolbar-item>
+        <dxi-toolbar-item 
             location="after" 
             widget="dxButton"
             [options]="aboutButtonOptions"
         >
-        </dxi-item>
+        </dxi-toolbar-item>
     </dx-toolbar>
 
     <!-- tab: app.component.ts -->

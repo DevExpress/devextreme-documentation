@@ -33,12 +33,12 @@ In the following code, the *"fixedPoint"* [format type](/api-reference/50%20Comm
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxi-column ... >
-            <dxo-format
+        <dxi-{widget-name}-column ... >
+            <dxo-{widget-name}-format
                 type="fixedPoint"
                 [precision]="2">
-            </dxo-format>
-        </dxi-column>
+            </dxo-{widget-name}-format>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!-- tab: app.module.ts -->

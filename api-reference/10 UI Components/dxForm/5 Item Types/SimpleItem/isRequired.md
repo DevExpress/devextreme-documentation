@@ -35,9 +35,9 @@ If you specify [validationRules](/api-reference/10%20UI%20Components/dxForm/5%20
 
     <!--HTML-->
     <dx-form ... >
-        <dxi-item ... >
-            <dxi-validation-rule type="required"></dxi-validation-rule>
-        </dxi-item>
+        <dxi-form-item ... >
+            <dxi-form-validation-rule type="required"></dxi-form-validation-rule>
+        </dxi-form-item>
     </dx-form>
 
     <!--TypeScript-->

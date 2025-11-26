@@ -27,7 +27,7 @@ Set the **filterPanel**.[visible](/api-reference/10%20UI%20Components/GridBase/1
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-filter-panel [visible]="true"></dxo-filter-panel>
+        <dxo-data-grid-filter-panel [visible]="true"></dxo-data-grid-filter-panel>
     </dx-data-grid>
 
 ##### Vue

@@ -48,11 +48,11 @@ In the following code, a toolbar button outside the Drawer opens and closes it:
 
     <!-- tab: app.component.html -->
     <dx-toolbar id="toolbar">
-        <dxi-item 
+        <dxi-toolbar-item 
             widget="dxButton"
             [options]="buttonOptions"
             location="before">
-        </dxi-item>
+        </dxi-toolbar-item>
     </dx-toolbar>
     <dx-drawer ...
         [(opened)]="isDrawerOpen">

@@ -15,9 +15,9 @@ The visual range of arguments/values on an axis should include all arguments/val
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis
+        <dxo-chart-argument-axis
             [visualRange]="[1950, 2000]">
-        </dxo-argument-axis>
+        </dxo-chart-argument-axis>
     </dx-chart>
 
     <!--TypeScript-->
@@ -104,12 +104,12 @@ Axes can be relocated to their opposite side using the [position](/api-reference
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis
+        <dxo-chart-argument-axis
             position="top">
-        </dxo-argument-axis>
-        <dxi-value-axis
+        </dxo-chart-argument-axis>
+        <dxi-chart-value-axis
             position="right">
-        </dxi-value-axis>
+        </dxi-chart-value-axis>
     </dx-chart>
 
     <!--TypeScript-->

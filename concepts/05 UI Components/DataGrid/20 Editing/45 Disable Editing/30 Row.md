@@ -122,10 +122,10 @@ DataGrid's [editing mode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Con
 
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
-        <dxi-column type="buttons">
-            <dxi-button name="edit" [visible]="hideEditButton" ></dxi-button>
-            <dxi-button name="delete"></dxi-button>
-        </dxi-column>
+        <dxi-data-grid-column type="buttons">
+            <dxi-data-grid-button name="edit" [visible]="hideEditButton" ></dxi-data-grid-button>
+            <dxi-data-grid-button name="delete"></dxi-data-grid-button>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->

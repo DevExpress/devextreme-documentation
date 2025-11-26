@@ -43,10 +43,10 @@ The following example adds a gradient to one of the ranges in a gauge:
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-range-container ... >
-            <dxi-range [startValue]="0" [endValue]="50" color="#92000A"></dxi-range>
-            <dxi-range [startValue]="50" [endValue]="100" [color]="fill">
-        </dxo-range-container>
+        <dxo-{widget-name}-range-container ... >
+            <dxi-{widget-name}-range [startValue]="0" [endValue]="50" color="#92000A"></dxi-{widget-name}-range>
+            <dxi-{widget-name}-range [startValue]="50" [endValue]="100" [color]="fill">
+        </dxo-{widget-name}-range-container>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

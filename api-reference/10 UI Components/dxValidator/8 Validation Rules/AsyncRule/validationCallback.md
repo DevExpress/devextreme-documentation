@@ -67,9 +67,9 @@ The following code shows a generic **validationCallback** implementation for a s
     <!-- tab: app.component.html -->
     <dx-text-box>
         <dx-validator>
-            <dxi-validation-rule type="async" 
+            <dxi-validator-validation-rule type="async" 
                 [validationCallback]="validateAsync">
-            </dxi-validation-rule>
+            </dxi-validator-validation-rule>
         </dx-validator>
     </dx-text-box>
 

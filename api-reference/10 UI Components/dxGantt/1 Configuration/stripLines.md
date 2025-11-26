@@ -45,20 +45,20 @@ Strip lines allows you to highlight certain time or time intervals in the chart.
 
     <!-- tab: app.component.html -->
     <dx-gantt>
-        <dxi-strip-line
+        <dxi-gantt-strip-line
             [start]="tasks[0].start"
             title="Start">
-        </dxi-strip-line>
-        <dxi-strip-line
+        </dxi-gantt-strip-line>
+        <dxi-gantt-strip-line
             [start]="tasks[tasks.length - 3].start"
             [end]="tasks[tasks.length - 1].end"
             title="Final Phase">
-        </dxi-strip-line>
-        <dxi-strip-line
+        </dxi-gantt-strip-line>
+        <dxi-gantt-strip-line
             [start]="currentTime"
             title="Current Time"
             cssClass="current-time">
-        </dxi-strip-line>
+        </dxi-gantt-strip-line>
     </dx-gantt>
 
     <!-- tab: app.component.ts -->

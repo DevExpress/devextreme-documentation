@@ -107,9 +107,9 @@ The default *"between"* implementation is inclusive (filter results include the 
 
     <!--HTML-->
     <dx-{widget-name} ... >
-        <dxi-column ...
+        <dxi-{widget-name}-column ...
             [calculateFilterExpression]="calculateFilterExpression">
-        </dxi-column>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
 ##### Vue
@@ -242,10 +242,10 @@ To specify a function as a `selector`, return a property from the `rowData` obje
 
     <!--HTML-->
     <dx-{widget-name} ... >
-        <dxi-column ...
+        <dxi-{widget-name}-column ...
             dataField="ColumnOne"
             [calculateFilterExpression]="calculateFilterExpression">
-        </dxi-column>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
 ##### Vue
@@ -364,10 +364,10 @@ You can also implement a function with [custom filter conditions](/concepts/70%2
 
     <!--HTML-->
     <dx-{widget-name} ... >
-        <dxi-column ...
+        <dxi-{widget-name}-column ...
             dataField="ColumnOne"
             [calculateFilterExpression]="calculateFilterExpression">
-        </dxi-column>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
 ##### Vue
@@ -494,9 +494,9 @@ DataGrid uses *"anyof"* and *"noneof"* filter values for [headerFilter](/api-ref
 
     <!--HTML-->
     <dx-{widget-name} ... >
-        <dxi-column ...
+        <dxi-{widget-name}-column ...
             [calculateFilterExpression]="calculateFilterExpression">
-        </dxi-column>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
 ##### Vue

@@ -21,7 +21,7 @@ To prohibit an operation, set the corresponding *allow{Operation}* [editing](/ap
 ##### Angular
 
     <dx-diagram #diagram id="diagram" >
-        <dxo-editing 
+        <dxo-diagram-editing 
             [allowAddShape]="false"
             [allowChangeConnection]="false"
             [allowChangeConnectorPoints]="false"
@@ -31,7 +31,7 @@ To prohibit an operation, set the corresponding *allow{Operation}* [editing](/ap
             [allowDeleteShape]="false"
             [allowMoveShape]="false"
             [allowResizeShape]="false">
-        </dxo-editing>
+        </dxo-diagram-editing>
     </dx-diagram>
 
 ##### Vue

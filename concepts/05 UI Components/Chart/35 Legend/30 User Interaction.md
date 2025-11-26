@@ -15,7 +15,7 @@ A user can interact with the legend by pausing on legend items. When a user does
 ##### Angular
 
     <!--HTML--><dx-chart>
-        <dxo-legend hoverMode="none"></dxo-legend>
+        <dxo-chart-legend hoverMode="none"></dxo-chart-legend>
     </dx-chart>
 
     <!--TypeScript-->
@@ -97,7 +97,7 @@ Series that consist of several elements rather than just series points ([Range A
 ##### Angular
 
     <!--HTML--><dx-chart>
-        <dxo-legend hoverMode="excludePoints"></dxo-legend>
+        <dxo-chart-legend hoverMode="excludePoints"></dxo-chart-legend>
     </dx-chart>
 
     <!--TypeScript-->

@@ -19,9 +19,9 @@ Properties that configure item labels are collected in the [label](/api-referenc
 ##### Angular
 
     <!--HTML--><dx-funnel ... >
-        <dxo-label ... >
+        <dxo-funnel-label ... >
             <!-- Settings for all item labels -->
-        </dxo-label>
+        </dxo-funnel-label>
     </dx-funnel>
 
     <!--TypeScript-->

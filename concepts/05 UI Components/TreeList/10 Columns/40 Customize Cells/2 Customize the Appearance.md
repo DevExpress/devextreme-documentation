@@ -21,7 +21,7 @@ To customize cell appearance, use a column's [cellTemplate](/api-reference/_hidd
 
     <!--HTML-->
     <dx-tree-list ... >
-        <dxi-column dataField="Title" cellTemplate="cellTemplate"></dxi-column>
+        <dxi-tree-list-column dataField="Title" cellTemplate="cellTemplate"></dxi-tree-list-column>
         <div *dxTemplate="let cell of 'cellTemplate'">
             <div style="color:blue">{{ cell.text }}</div>
         </div>

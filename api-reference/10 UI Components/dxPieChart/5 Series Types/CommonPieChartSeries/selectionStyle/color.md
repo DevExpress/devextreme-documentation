@@ -34,11 +34,11 @@ Sets the color for a series when it is selected.
 
     <!-- tab: app.component.html -->
     <dx-pie-chart ... >
-        <dxi-series ... >
-            <dxo-selection-style
+        <dxi-pie-chart-series ... >
+            <dxo-pie-chart-selection-style
                 [color]="fill"
-            ></dxo-selection-style>
-        </dxi-series>
+            ></dxo-pie-chart-selection-style>
+        </dxi-pie-chart-series>
     </dx-pie-chart>
 
     <!-- tab: app.component.ts -->

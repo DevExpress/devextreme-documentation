@@ -36,10 +36,10 @@ See the [Button configuration](/api-reference/10%20UI%20Components/dxButton/1%20
 
     <!--HTML-->
     <dx-form ...>
-        <dxi-item
+        <dxi-form-item
             itemType="button"
             [buttonOptions]="buttonOptions">
-        </dxi-item>
+        </dxi-form-item>
     </dx-form>
 
     <!--TypeScript-->

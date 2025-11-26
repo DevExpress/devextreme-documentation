@@ -31,8 +31,8 @@ Specifies the color of the indicator.
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-value-indicator [color]="fill">
-        </dxo-value-indicator>
+        <dxo-{widget-name}-value-indicator [color]="fill">
+        </dxo-{widget-name}-value-indicator>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

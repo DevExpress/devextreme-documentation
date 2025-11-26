@@ -17,7 +17,7 @@ The Sankey UI component has an adaptive layout that enables the UI component to 
 ##### Angular
 
     <!--HTML--><dx-sankey ... >
-        <dxo-adaptive-layout [height]="300" [width]="400"></dxo-adaptive-layout>
+        <dxo-sankey-adaptive-layout [height]="300" [width]="400"></dxo-sankey-adaptive-layout>
     </dx-sankey>
 
     <!--TypeScript-->

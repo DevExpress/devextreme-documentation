@@ -18,12 +18,12 @@ If your dataset excludes non-working days, you can skip them on the axis as well
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis
+        <dxo-chart-argument-axis
             [workdaysOnly]="true"
             [workWeek]="[0, 1, 2, 3, 4, 5]"
             [holidays]="['2017/1/16', '2017/2/20', '2017/5/29']"
             [singleWorkdays]="['2017/1/1']">
-        </dxo-argument-axis>
+        </dxo-chart-argument-axis>
     </dx-chart>
 
     <!--TypeScript-->

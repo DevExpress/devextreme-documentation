@@ -26,13 +26,13 @@ Set the **format** UI component property to apply a predefined format. In the fo
     <dx-slider
         [min]="0" [max]="10"
         [(value)]="sliderValue" [step]="0.01">
-        <dxo-tooltip
+        <dxo-slider-tooltip
             [enabled]="true">
-            <dxo-format
+            <dxo-slider-format
                 type="fixedPoint"
                 [precision]="2">
-            </dxo-format>
-        </dxo-tooltip>
+            </dxo-slider-format>
+        </dxo-slider-tooltip>
     </dx-slider>
 
     <!--TypeScript-->

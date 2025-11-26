@@ -16,9 +16,9 @@ The DataGrid UI component supports single and multiple row selection. Use the **
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-selection
+        <dxo-data-grid-selection
             mode="single"> <!-- "multiple" | "none" -->
-        </dxo-selection>
+        </dxo-data-grid-selection>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -108,10 +108,10 @@ The check box in the column's header selects all rows or only the currently rend
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-selection
+        <dxo-data-grid-selection
             mode="multiple"
             selectAllMode="page">   <!-- or "allPages" -->
-        </dxo-selection>
+        </dxo-data-grid-selection>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -199,10 +199,10 @@ You can prevent users from selecting all rows by setting the **selection**.[allo
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-selection
+        <dxo-data-grid-selection
             mode="multiple"
             [allowSelectAll]="false">
-        </dxo-selection>
+        </dxo-data-grid-selection>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -292,10 +292,10 @@ The [showCheckBoxesMode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Conf
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-selection
+        <dxo-data-grid-selection
             mode="multiple"
             showCheckBoxesMode="none">    <!-- or "onClick" | "onLongTap" | "always" -->
-        </dxo-selection>
+        </dxo-data-grid-selection>
     </dx-data-grid>
 
     <!--TypeScript-->

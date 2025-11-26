@@ -20,7 +20,7 @@ The following example shows how to specify the adaptive column's [width](/api-re
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxi-column type="adaptive" [width]="50"></dxi-column>
+        <dxi-tree-list-column type="adaptive" [width]="50"></dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->

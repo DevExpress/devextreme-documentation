@@ -23,8 +23,8 @@ If you do not explicitly specify certain columns' [width](/api-reference/_hidden
     <!--HTML-->
     <dx-data-grid ...
         [columnMinWidth]="100">
-        <dxi-column dataField="Title" [width]="200"></dxi-column>
-        <dxi-column dataField="Address" [minWidth]="150"></dxi-column>
+        <dxi-data-grid-column dataField="Title" [width]="200"></dxi-data-grid-column>
+        <dxi-data-grid-column dataField="Address" [minWidth]="150"></dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -198,7 +198,7 @@ The UI component allows a user to resize columns in two different modes: by chan
     <dx-data-grid ...
         [allowColumnResizing]="true"
         columnResizingMode="widget"> <!-- or 'nextColumn' -->
-        <dxi-column dataField="Title" [allowResizing]="false"></dxi-column>
+        <dxi-data-grid-column dataField="Title" [allowResizing]="false"></dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->

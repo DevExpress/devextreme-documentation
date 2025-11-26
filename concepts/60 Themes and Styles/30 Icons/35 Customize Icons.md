@@ -35,14 +35,14 @@ DevExtreme UI components that generate icons assign the `dx-icon` class to all g
 
     <!-- tab: app.component.html -->
     <dx-toolbar id="toolbar">
-        <dxi-item
+        <dxi-toolbar-item
             widget="dxButton"
             [options]="{icon: 'back'}"
-        ></dxi-item>
-        <dxi-item
+        ></dxi-toolbar-item>
+        <dxi-toolbar-item
             widget="dxButton"
             [options]="{icon: 'refresh'}"
-        ></dxi-item>
+        ></dxi-toolbar-item>
     </dx-toolbar>
 
     <!-- tab: app.component.css -->

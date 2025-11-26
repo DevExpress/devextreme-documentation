@@ -33,14 +33,14 @@ Use this property to set the maximum range that can be selected. When trying to 
 
     <!-- tab: app.component.html -->
     <dx-range-selector ... >
-        <dxo-scale
+        <dxo-range-selector-scale
             [startValue]="startValue"
             [endValue]="endValue"
             tickInterval="day"
             [minRange]="minRange"
             maxRange="month"
         >
-        </dxo-scale>
+        </dxo-range-selector-scale>
     </dx-range-selector>
 
     <!-- tab: app.component.ts -->

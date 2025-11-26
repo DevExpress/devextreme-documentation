@@ -68,10 +68,10 @@ The following example illustrates how this property works for the Boolean and Da
     
     <!--HTML-->
     <dx-{widget-name} ... >
-        <dxi-column dataField="BirthDate" dataType="date"></dxi-column>
-        <dxi-column dataField="OrderDate" dataType="date" showEditorAlways="true"></dxi-column>
-        <dxi-column dataField="CheckedState" dataType="boolean" showEditorAlways="false"></dxi-column>
-        <dxi-column dataField="AvailabilityState" dataType="boolean" ></dxi-column>
+        <dxi-{widget-name}-column dataField="BirthDate" dataType="date"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="OrderDate" dataType="date" showEditorAlways="true"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="CheckedState" dataType="boolean" showEditorAlways="false"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="AvailabilityState" dataType="boolean" ></dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!--TypeScript-->

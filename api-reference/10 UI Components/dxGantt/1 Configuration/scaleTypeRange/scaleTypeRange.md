@@ -28,10 +28,10 @@ Use the [scaleTypeRange.min](/api-reference/10%20UI%20Components/dxGantt/1%20Con
 
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxo-scale-type-range
+        <dxo-gantt-scale-type-range
             [min]="days" 
             [max]="years">
-        </dxo-scale-type-range>
+        </dxo-gantt-scale-type-range>
         <!-- ... -->
     </dx-gantt>
 

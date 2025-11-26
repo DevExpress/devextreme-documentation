@@ -25,9 +25,9 @@ Specifies whether to enable the table context menu.
 
     <!-- tab: app.component.html -->
     <dx-html-editor>
-        <dxo-table-context-menu
+        <dxo-html-editor-table-context-menu
             [enabled]="true">
-        </dxo-table-context-menu>
+        </dxo-html-editor-table-context-menu>
     </dx-html-editor>
 
 ##### Vue

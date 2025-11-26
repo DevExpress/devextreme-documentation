@@ -28,10 +28,10 @@ The Diagram component allows you to specify default settings for its items in th
 
     <!-- tab: app.component.html -->
     <dx-diagram #diagram id="diagram">
-        <dxo-default-item-properties connectorLineType="straight" style="stroke-width: 3px">
-        </dxo-default-item-properties>
-        <dxo-nodes ... [textStyleExpr]="textStyleExpr"></dxo-nodes>
-        <dxo-edges ... [styleExpr]="styleExpr"></dxo-edges>
+        <dxo-diagram-default-item-properties connectorLineType="straight" style="stroke-width: 3px">
+        </dxo-diagram-default-item-properties>
+        <dxo-diagram-nodes ... [textStyleExpr]="textStyleExpr"></dxo-diagram-nodes>
+        <dxo-diagram-edges ... [styleExpr]="styleExpr"></dxo-diagram-edges>
     </dx-diagram>
 
     <!-- tab: app.component.ts -->

@@ -29,11 +29,11 @@ The following code sample illustrates how to set this property:
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-filter-row ... >
-            <dxo-operation-descriptions
+        <dxo-{widget-name}-filter-row ... >
+            <dxo-{widget-name}-operation-descriptions
                 startsWith="Begins with">
-            </dxo-operation-descriptions>
-        </dxo-filter-row>
+            </dxo-{widget-name}-operation-descriptions>
+        </dxo-{widget-name}-filter-row>
     </dx-{widget-name}>
 
     <!-- tab: app.module.ts -->

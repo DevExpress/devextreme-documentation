@@ -24,11 +24,11 @@ The following example positions a validation message at the component's right:
     <dx-{widget-name} ...
         validationMessagePosition="right">
         <dx-validator>
-            <dxi-validation-rule
+            <dxi-validator-validation-rule
                 type="required"
                 message="Required"
             >
-            </dxi-validation-rule>
+            </dxi-validator-validation-rule>
         </dx-validator>
     </dx-{widget-name}>
 

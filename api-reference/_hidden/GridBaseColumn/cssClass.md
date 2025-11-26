@@ -43,8 +43,8 @@ In the following code, this property is assigned a `cell-highlighted` CSS class 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ...
         [dataSource]="employees">
-        <dxi-column dataField="ID"></dxi-column>
-        <dxi-column dataField="position" cssClass="cell-highlighted"></dxi-column>
+        <dxi-{widget-name}-column dataField="ID"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="position" cssClass="cell-highlighted"></dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

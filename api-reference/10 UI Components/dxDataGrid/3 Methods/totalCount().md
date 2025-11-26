@@ -65,7 +65,7 @@ The total row count.
         [dataSource]="dataSource"
         (onContentReady)="getTotalCount($event)"
     >
-        <dxo-paging [enabled]="true"> </dxo-paging>
+        <dxo-data-grid-paging [enabled]="true"> </dxo-data-grid-paging>
     </dx-data-grid>
 
 ##### Vue

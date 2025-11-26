@@ -28,12 +28,12 @@ All ResponsiveBox elements are arranged in a layout grid according to the [rows]
     <!--HTML-->
     <dx-responsive-box>
         <!-- Creates two rows of equal height -->
-        <dxi-row></dxi-row>
-        <dxi-row></dxi-row>
+        <dxi-responsive-box-row></dxi-responsive-box-row>
+        <dxi-responsive-box-row></dxi-responsive-box-row>
         <!-- Creates three columns of equal width -->
-        <dxi-col></dxi-col>
-        <dxi-col></dxi-col>
-        <dxi-col></dxi-col>
+        <dxi-responsive-box-col></dxi-responsive-box-col>
+        <dxi-responsive-box-col></dxi-responsive-box-col>
+        <dxi-responsive-box-col></dxi-responsive-box-col>
     </dx-responsive-box>
 
     <!--TypeScript-->
@@ -170,13 +170,13 @@ The collections of rows and columns may differ depending on the screen's [size q
 
     <!--HTML-->
     <dx-responsive-box>
-        <dxi-row [ratio]="1"></dxi-row>
-        <dxi-row [ratio]="2" [shrink]="2"></dxi-row>
-        <dxi-row [ratio]="0.7"></dxi-row>
-        <dxi-col [ratio]="0.5" [shrink]="0.5"></dxi-col>
+        <dxi-responsive-box-row [ratio]="1"></dxi-responsive-box-row>
+        <dxi-responsive-box-row [ratio]="2" [shrink]="2"></dxi-responsive-box-row>
+        <dxi-responsive-box-row [ratio]="0.7"></dxi-responsive-box-row>
+        <dxi-responsive-box-col [ratio]="0.5" [shrink]="0.5"></dxi-responsive-box-col>
         <!-- The following columns appear on medium and large screens only -->
-        <dxi-col [ratio]="2" screen="md lg"></dxi-col>
-        <dxi-col [ratio]="0.5" screen="md lg"></dxi-col>
+        <dxi-responsive-box-col [ratio]="2" screen="md lg"></dxi-responsive-box-col>
+        <dxi-responsive-box-col [ratio]="0.5" screen="md lg"></dxi-responsive-box-col>
     </dx-responsive-box>
 
     <!--TypeScript-->

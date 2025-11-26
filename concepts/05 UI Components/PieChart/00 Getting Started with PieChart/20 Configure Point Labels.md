@@ -34,16 +34,16 @@ If you need to change the point's label text, declare the [label](/api-reference
     <!-- tab: app.component.html -->
     <dx-pie-chart ...
     >
-        <dxi-series ...
+        <dxi-pie-chart-series ...
         >
-            <dxo-label 
+            <dxo-pie-chart-label 
                 [visible]="true"
                 position="columns"
                 [customizeText]="customizeText"
             >
-                <dxo-connector [visible]="true"></dxo-connector>
-            </dxo-label>
-        </dxi-series>
+                <dxo-pie-chart-connector [visible]="true"></dxo-pie-chart-connector>
+            </dxo-pie-chart-label>
+        </dxi-pie-chart-series>
     </dx-pie-chart>
 
     <!-- tab: app.component.ts -->

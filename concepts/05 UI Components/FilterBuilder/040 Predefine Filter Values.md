@@ -29,12 +29,12 @@ Each lookup field has an individual [data source](/api-reference/_hidden/dxFilte
 
     <!--HTML-->
     <dx-filter-builder>
-        <dxi-field
+        <dxi-filter-builder-field
             dataField="status"> <!-- a field from a data source to be filtered -->
-            <dxo-lookup
+            <dxo-filter-builder-lookup
                 [dataSource]="lookupData"> <!-- contains values present in the dataField -->
-            </dxo-lookup>
-        </dxi-field>
+            </dxo-filter-builder-lookup>
+        </dxi-filter-builder-field>
     </dx-filter-builder>
 
     <!--TypeScript-->
@@ -154,14 +154,14 @@ Each lookup field has an individual [data source](/api-reference/_hidden/dxFilte
 
     <!--HTML-->
     <dx-filter-builder>
-        <dxi-field
+        <dxi-filter-builder-field
             dataField="statusId"> <!-- a field from a data source to be filtered -->
-            <dxo-lookup 
+            <dxo-filter-builder-lookup 
                 [dataSource]="statuses"
                 valueExpr="id" <!-- contains values present in the dataField -->
                 displayExpr="name"> <!-- provides display values -->
-            </dxo-lookup> 
-        </dxi-field>
+            </dxo-filter-builder-lookup> 
+        </dxi-filter-builder-field>
     </dx-filter-builder>
 
     <!--TypeScript-->

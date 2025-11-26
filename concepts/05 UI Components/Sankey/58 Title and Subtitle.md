@@ -22,12 +22,12 @@ The [title](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/tit
 ##### Angular
 
     <!--HTML--><dx-sankey ... >
-        <dxo-title
+        <dxo-sankey-title
             text="I am the Title">
-            <dxo-subtitle
+            <dxo-sankey-subtitle
                 text="I am the Subtitle">
-            </dxo-subtitle>
-        </dxo-title>
+            </dxo-sankey-subtitle>
+        </dxo-sankey-title>
     </dx-sankey>
 
     <!--TypeScript-->

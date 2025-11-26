@@ -22,12 +22,12 @@ If you need to change the text displayed by point labels, declare the [customize
 ##### Angular
 
     <!--HTML--><dx-pie-chart ... >
-        <dxi-series>
-            <dxo-label
+        <dxi-pie-chart-series>
+            <dxo-pie-chart-label
                 [visible]="true"
                 [customizeText]="customizeText">
-            </dxo-label>
-        </dxi-series>
+            </dxo-pie-chart-label>
+        </dxi-pie-chart-series>
     </dx-pie-chart>
 
     <!--TypeScript-->
@@ -140,12 +140,12 @@ You can also customize an individual label. For this purpose, assign a function 
 
     <!--HTML--><dx-pie-chart
         [customizeLabel]="customizeLabel">
-        <dxi-series>
-            <dxo-label
+        <dxi-pie-chart-series>
+            <dxo-pie-chart-label
                 [visible]="true"
                 backgroundColor="blue">
-            </dxo-label>
-        </dxi-series>
+            </dxo-pie-chart-label>
+        </dxi-pie-chart-series>
     </dx-pie-chart>
 
     <!--TypeScript-->

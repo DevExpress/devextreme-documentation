@@ -46,11 +46,11 @@ Allows you to convert an HTML Editor value between different markups.
 
     <!-- tab: app.component.html -->
     <dx-html-editor>
-        <dxo-converter
+        <dxo-html-editor-converter
             (toHtml)="toHtml"
             (fromHtml)="fromHtml"
         >
-        </dxo-converter>
+        </dxo-html-editor-converter>
     </dx-html-editor>
 
 ##### Vue

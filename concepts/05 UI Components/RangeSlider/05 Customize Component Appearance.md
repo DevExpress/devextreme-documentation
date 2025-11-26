@@ -21,11 +21,11 @@ The RangeSlider can display labels for the [min](/api-reference/10%20UI%20Compon
 
     <!--HTML-->
     <dx-range-slider ... >
-        <dxo-label
+        <dxo-range-slider-label
             [visible]="true"
             [format]="format"
             position="bottom"> <!-- or "top" -->
-        </dxo-label>
+        </dxo-range-slider-label>
     </dx-range-slider>
 
     <!--TypeScript-->
@@ -125,12 +125,12 @@ The RangeSlider can also display a tooltip for the slider handles. To configure 
 
     <!--HTML-->
     <dx-range-slider ... >
-        <dxo-tooltip
+        <dxo-range-slider-tooltip
             [enabled]="true"
             [format]="format"
             position="bottom"
             showMode="always"> <!-- or "onHover" -->
-        </dxo-tooltip>
+        </dxo-range-slider-tooltip>
     </dx-range-slider>
 
     <!--TypeScript-->

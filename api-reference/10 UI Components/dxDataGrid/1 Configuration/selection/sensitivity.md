@@ -54,12 +54,12 @@ The following code snippet filters the initial selection for diacritics. As a re
         [dataSource]="dataSource" 
         [selectionFilter]="selectionFilter"
     >
-        <dxo-selection
+        <dxo-data-grid-selection
             mode="multiple"
             [deferred]="true"
             sensitivity="accent"
         >
-        </dxo-selection>
+        </dxo-data-grid-selection>
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->

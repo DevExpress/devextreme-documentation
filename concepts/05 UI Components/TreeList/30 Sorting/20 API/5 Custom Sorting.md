@@ -16,10 +16,10 @@ Implement a custom sorting routine using the [calculateSortValue](/api-reference
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxi-column
+        <dxi-tree-list-column
             dataField="Position" <!--provides values for the column -->
             calculateSortValue="isOnVacation"> <!-- provides values to be used in sorting -->
-        </dxi-column>
+        </dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->
@@ -133,11 +133,11 @@ Implement a custom sorting routine using the [calculateSortValue](/api-reference
 
     <!--HTML-->
     <dx-tree-list ... >
-        <dxi-column
+        <dxi-tree-list-column
             dataField="Position"
             sortOrder="asc"
             [calculateSortValue]="customSortingFunction">
-        </dxi-column>
+        </dxi-tree-list-column>
     </dx-tree-list>
 
 ##### Vue

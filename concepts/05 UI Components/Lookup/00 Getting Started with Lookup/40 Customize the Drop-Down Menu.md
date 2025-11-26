@@ -20,10 +20,10 @@ To customize Popup or Popover, use the [dropDownOptions](/api-reference/10%20UI%
 
     <!-- tab: app.component.html -->
     <dx-lookup>
-        <dxo-drop-down-options
+        <dxo-lookup-drop-down-options
             [hideOnOutsideClick]="true"
             [showTitle]="false">
-        </dxo-drop-down-options>
+        </dxo-lookup-drop-down-options>
     </dx-lookup>
 
 ##### Vue

@@ -74,7 +74,7 @@ To integrate the DevExtreme LoadPanel component:
         [showPane]="true"
         [hideOnOutsideClick]="false"
     >
-        <dxo-position my="top" at="top" of="#cards"></dxo-position>
+        <dxo-load-panel-position my="top" at="top" of="#cards"></dxo-load-panel-position>
     </dx-load-panel>
 
     <!-- tab: app.component.ts -->

@@ -40,9 +40,9 @@ The All Fields section includes the fields declared in the [fields[]](/Documenta
 
     <!-- tab: app.component.html -->
     <dx-pivot-grid ... >
-        <dxo-field-chooser
+        <dxo-pivot-grid-field-chooser
             [allowSearch]="true">
-        </dxo-field-chooser>
+        </dxo-pivot-grid-field-chooser>
     </dx-pivot-grid>
 
 ##### Vue

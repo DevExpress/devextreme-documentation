@@ -26,7 +26,7 @@ Configures upload settings.
 
     <!-- tab: app.component.html -->
     <dx-file-manager id="fileManager">
-        <dxo-upload [chunkSize]="500000" [maxFileSize]="1000000" ></dxo-upload>
+        <dxo-file-manager-upload [chunkSize]="500000" [maxFileSize]="1000000" ></dxo-file-manager-upload>
         <!-- ... -->
     </dx-file-manager>
 

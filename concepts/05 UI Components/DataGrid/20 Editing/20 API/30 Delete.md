@@ -27,11 +27,11 @@ Call the [deleteRow(rowIndex)](/api-reference/10%20UI%20Components/GridBase/3%20
     
     <!--HTML-->
     <dx-data-grid>
-        <dxo-editing
+        <dxo-data-grid-editing
             mode="row"
             [allowDeleting]="true"
             [confirmDelete]="false">
-        </dxo-editing>
+        </dxo-data-grid-editing>
     </dx-data-grid>
     <dx-button
         text="Delete Row"

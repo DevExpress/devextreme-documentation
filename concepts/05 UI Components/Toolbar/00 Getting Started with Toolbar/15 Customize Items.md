@@ -36,13 +36,13 @@ The following code adds a custom item after the **Back** button.
     <!-- tab: app.component.html -->
     <dx-toolbar>
         <!-- ... -->
-        <dxi-item
+        <dxi-toolbar-item
             location="before"
         >
             <div *dxTemplate>
                 <div id="back">Go back</div>
             </div>
-        </dxi-item>
+        </dxi-toolbar-item>
     </dx-toolbar>
 
     <!-- tab: app.component.css -->

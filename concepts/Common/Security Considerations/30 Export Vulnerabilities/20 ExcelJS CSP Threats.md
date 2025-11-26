@@ -53,10 +53,10 @@ If you use an older ExcelJS version and apply [CSP rules](/concepts/Common/Secur
         (onExporting)="onExporting($event)"
     >
         <!-- ... -->
-        <dxo-export
+        <dxo-data-grid-export
             [enabled]="true"
             [formats]="['xlsx']"
-        ></dxo-export>
+        ></dxo-data-grid-export>
     </dx-data-grid>
     
     <!-- tab: app.component.ts -->

@@ -20,14 +20,14 @@ Assign a non-negative integer to the **columns**.[groupIndex](/api-reference/_hi
 
     <!--HTML-->
     <dx-data-grid ...>
-        <dxi-column 
+        <dxi-data-grid-column 
             dataField="Country"
             [groupIndex]="1">
-        </dxi-column>
-        <dxi-column 
+        </dxi-data-grid-column>
+        <dxi-data-grid-column 
             dataField="Continent"
             [groupIndex]="0">
-        </dxi-column>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -143,10 +143,10 @@ You can change a column's **groupIndex** at runtime using the [columnOption(id, 
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column
+        <dxi-data-grid-column
             dataField="City"
             [(groupIndex)]="cityGroupIndex">
-        </dxi-column>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->

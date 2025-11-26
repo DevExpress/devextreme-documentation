@@ -20,10 +20,10 @@ Paging is used to load data in portions, which improves the UI component's perfo
 
     <!--HTML-->
     <dx-data-grid>
-        <dxo-paging 
+        <dxo-data-grid-paging 
             [pageSize]="15"
             [pageIndex]="1"> <!-- Shows the second page -->
-        </dxo-paging>
+        </dxo-data-grid-paging>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -111,7 +111,7 @@ When working with small datasets, you can disable paging by setting the **paging
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-paging [enabled]="false"></dxo-paging>
+        <dxo-data-grid-paging [enabled]="false"></dxo-data-grid-paging>
     </dx-data-grid>
 
     <!--TypeScript-->

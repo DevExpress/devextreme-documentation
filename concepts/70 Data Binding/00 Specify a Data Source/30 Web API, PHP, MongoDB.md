@@ -34,9 +34,9 @@ To access the server from the client, configure the [CustomStore](/api-reference
     <!-- tab: app.component.html -->
     <dx-data-grid
         [dataSource]="remoteDataSource">
-        <dxo-remote-operations
+        <dxo-data-grid-remote-operations
             [groupPaging]="true">
-        </dxo-remote-operations>
+        </dxo-data-grid-remote-operations>
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->

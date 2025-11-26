@@ -27,12 +27,12 @@ All layout elements are arranged against a [layout grid](/concepts/05%20UI%20Com
 
     <!--HTML-->
     <dx-responsive-box id="responsiveBox">
-        <dxi-row [ratio]="1"></dxi-row>     <!-- Header -->
-        <dxi-row [ratio]="2"></dxi-row>     <!-- Content -->
-        <dxi-row [ratio]="0.7"></dxi-row>   <!-- Footer -->
-        <dxi-col [ratio]="0.5" screen="md lg"></dxi-col>     <!-- Left-side bar -->
-        <dxi-col [ratio]="2"></dxi-col>                      <!-- Content -->
-        <dxi-col [ratio]="0.5" screen="md lg"></dxi-col>     <!-- Right-side bar -->
+        <dxi-responsive-box-row [ratio]="1"></dxi-responsive-box-row>     <!-- Header -->
+        <dxi-responsive-box-row [ratio]="2"></dxi-responsive-box-row>     <!-- Content -->
+        <dxi-responsive-box-row [ratio]="0.7"></dxi-responsive-box-row>   <!-- Footer -->
+        <dxi-responsive-box-col [ratio]="0.5" screen="md lg"></dxi-responsive-box-col>     <!-- Left-side bar -->
+        <dxi-responsive-box-col [ratio]="2"></dxi-responsive-box-col>                      <!-- Content -->
+        <dxi-responsive-box-col [ratio]="0.5" screen="md lg"></dxi-responsive-box-col>     <!-- Right-side bar -->
     </dx-responsive-box>
 
     <!--TypeScript-->
@@ -170,33 +170,33 @@ Every layout element has the [location](/api-reference/_hidden/dxResponsiveBoxIt
     <dx-responsive-box id="responsiveBox">
         <!-- Layout grid is configured here -->
         
-        <dxi-item class="header">
-            <dxi-location screen="md lg" [row]="0" [col]="0" [colspan]="3"></dxi-location>
-            <dxi-location screen="xs sm" [row]="0" [col]="0"></dxi-location>
+        <dxi-responsive-box-item class="header">
+            <dxi-responsive-box-location screen="md lg" [row]="0" [col]="0" [colspan]="3"></dxi-responsive-box-location>
+            <dxi-responsive-box-location screen="xs sm" [row]="0" [col]="0"></dxi-responsive-box-location>
             <p>Header</p>
-        </dxi-item>
+        </dxi-responsive-box-item>
         
-        <dxi-item class="content">
-            <dxi-location screen="md lg" [row]="1" [col]="1"></dxi-location>
-            <dxi-location screen="xs sm" [row]="1" [col]="0"></dxi-location>
+        <dxi-responsive-box-item class="content">
+            <dxi-responsive-box-location screen="md lg" [row]="1" [col]="1"></dxi-responsive-box-location>
+            <dxi-responsive-box-location screen="xs sm" [row]="1" [col]="0"></dxi-responsive-box-location>
             <p>Content</p>
-        </dxi-item>
+        </dxi-responsive-box-item>
         
-        <dxi-item class="left-side-bar">
-            <dxi-location screen="md lg" [row]="1" [col]="0"></dxi-location>
+        <dxi-responsive-box-item class="left-side-bar">
+            <dxi-responsive-box-location screen="md lg" [row]="1" [col]="0"></dxi-responsive-box-location>
             <p>Left Bar</p>
-        </dxi-item>
+        </dxi-responsive-box-item>
         
-        <dxi-item class="right-side-bar">
-            <dxi-location screen="md lg" [row]="1" [col]="2"></dxi-location>
+        <dxi-responsive-box-item class="right-side-bar">
+            <dxi-responsive-box-location screen="md lg" [row]="1" [col]="2"></dxi-responsive-box-location>
             <p>Right Bar</p>
-        </dxi-item>
+        </dxi-responsive-box-item>
         
-        <dxi-item class="footer">
-            <dxi-location screen="md lg" [row]="2" [col]="0" [colspan]="3"></dxi-location>
-            <dxi-location screen="xs sm" [row]="2" [col]="0"></dxi-location>
+        <dxi-responsive-box-item class="footer">
+            <dxi-responsive-box-location screen="md lg" [row]="2" [col]="0" [colspan]="3"></dxi-responsive-box-location>
+            <dxi-responsive-box-location screen="xs sm" [row]="2" [col]="0"></dxi-responsive-box-location>
             <p>Footer</p>
-        </dxi-item>
+        </dxi-responsive-box-item>
     </dx-responsive-box>
 
     <!--TypeScript-->
@@ -415,8 +415,8 @@ If on some screens, all elements should be arranged in a single column, assign t
     <!--HTML-->
     <dx-responsive-box
         singleColumnScreen="xs sm"> <!-- Single-column layout on small and extra small screens -->
-        <dxi-row ...></dxi-row> <!-- Ignored -->
-        <dxi-col ...></dxi-col> <!-- Ignored -->
+        <dxi-responsive-box-row ...></dxi-responsive-box-row> <!-- Ignored -->
+        <dxi-responsive-box-col ...></dxi-responsive-box-col> <!-- Ignored -->
     </dx-responsive-box>
 
     <!--TypeScript-->

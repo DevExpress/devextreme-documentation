@@ -24,10 +24,10 @@ You can also set a column's [sortOrder](/api-reference/_hidden/GridBaseColumn/so
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
         <!-- ... -->
-        <dxi-column
+        <dxi-data-grid-column
             dataField="Country"
             sortOrder="asc">
-        </dxi-column>
+        </dxi-data-grid-column>
         <!-- <dxo-sorting [mode]="single"></dxo-sorting> -->
     </dx-data-grid>
 

@@ -26,8 +26,8 @@ Assign **true** to the [headerFilter](/api-reference/10%20UI%20Components/GridBa
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-header-filter [visible]="true"></dxo-header-filter>
-        <dxi-column [allowHeaderFiltering]="false" ... ></dxi-column>
+        <dxo-tree-list-header-filter [visible]="true"></dxo-tree-list-header-filter>
+        <dxi-tree-list-column [allowHeaderFiltering]="false" ... ></dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->
@@ -123,11 +123,11 @@ A user can change the applied filter by including or excluding values. Use a col
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxi-column 
+        <dxi-tree-list-column 
             dataField="OrderDate"
             [(filterValues)]="filterValues"
             [(filterType)]="filterType"> 
-        </dxi-column>
+        </dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->
@@ -268,10 +268,10 @@ You can use the **headerFilter**.[allowSearch](/api-reference/10%20UI%20Componen
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-header-filter [visible]="true" [allowSearch]="true"></dxo-header-filter>
-        <dxi-column ... >
-            <dxo-header-filter [allowSearch]="false"></dxo-header-filter>
-        </dxi-column>
+        <dxo-tree-list-header-filter [visible]="true" [allowSearch]="true"></dxo-tree-list-header-filter>
+        <dxi-tree-list-column ... >
+            <dxo-tree-list-header-filter [allowSearch]="false"></dxo-tree-list-header-filter>
+        </dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->

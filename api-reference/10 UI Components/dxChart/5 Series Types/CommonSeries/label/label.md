@@ -34,16 +34,16 @@ Declared in [commonSeriesSettings](/api-reference/10%20UI%20Components/dxChart/1
 
     <!-- tab: app.component.html -->
     <dx-chart ... >
-        <dxi-series>
-            <dxo-label ... >
+        <dxi-chart-series>
+            <dxo-chart-label ... >
                 <!-- Settings for all point labels of an individual series -->
-            </dxo-label>
-        </dxi-series>
-        <dxo-common-series-settings ... >
-            <dxo-label ... >
+            </dxo-chart-label>
+        </dxi-chart-series>
+        <dxo-chart-common-series-settings ... >
+            <dxo-chart-label ... >
                 <!-- Settings for all point labels in the Chart -->
-            </dxo-label>
-        </dxo-common-series-settings>
+            </dxo-chart-label>
+        </dxo-chart-common-series-settings>
     </dx-chart>
 
     <!-- tab: app.component.ts -->

@@ -28,16 +28,16 @@ To configure point labels, use the [label](/api-reference/10%20UI%20Components/d
 ##### Angular
 
     <!--HTML--><dx-pie-chart ... >
-        <dxi-series>
-            <dxo-label ... >
+        <dxi-pie-chart-series>
+            <dxo-pie-chart-label ... >
                 <!-- Settings for all point labels of an individual series -->
-            </dxo-label>
-        </dxi-series>
-        <dxo-common-series-settings ... >
-            <dxo-label ... >
+            </dxo-pie-chart-label>
+        </dxi-pie-chart-series>
+        <dxo-pie-chart-common-series-settings ... >
+            <dxo-pie-chart-label ... >
                 <!-- Settings for all point labels in the PieChart -->
-            </dxo-label>
-        </dxo-common-series-settings>
+            </dxo-pie-chart-label>
+        </dxo-pie-chart-common-series-settings>
     </dx-pie-chart>
 
     <!--TypeScript-->
@@ -142,11 +142,11 @@ Point labels are not visible by default. To make them visible, assign **true** t
 ##### Angular
 
     <!--HTML--><dx-pie-chart ... >
-        <dxi-series>
-            <dxo-label [visible]="true">
-                <dxo-connector [visible]="true"></dxo-connector>
-            </dxo-label>
-        </dxi-series>
+        <dxi-pie-chart-series>
+            <dxo-pie-chart-label [visible]="true">
+                <dxo-pie-chart-connector [visible]="true"></dxo-pie-chart-connector>
+            </dxo-pie-chart-label>
+        </dxi-pie-chart-series>
     </dx-pie-chart>
 
     <!--TypeScript-->

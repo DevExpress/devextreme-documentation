@@ -31,7 +31,7 @@ The Form UI component enables you to specify different layouts for different scr
     <dx-form
         [(formData)]="employee"
         [screenByWidth]="getSizeQualifier">
-        <dxo-col-count-by-screen [xs]="1" [sm]="2" [md]="3" [lg]="4"></dxo-col-count-by-screen>
+        <dxo-form-col-count-by-screen [xs]="1" [sm]="2" [md]="3" [lg]="4"></dxo-form-col-count-by-screen>
     </dx-form>
 
     <!--TypeScript-->

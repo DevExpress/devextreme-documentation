@@ -63,17 +63,17 @@ This tutorial explicitly specifies the following properties: **size**, **minSize
     <!-- tab: app.component.html -->
     <container>
         <dx-splitter ... >
-            <dxi-item size="285px"></dxi-item>
-            <dxi-item>
+            <dxi-splitter-item size="285px"></dxi-splitter-item>
+            <dxi-splitter-item>
                 <dx-splitter ...>
-                    <dxi-item size="80%"></dxi-item>
-                    <dxi-item [collapsible]="true" minSize="40px"></dxi-item>
-                    <dxi-item
+                    <dxi-splitter-item size="80%"></dxi-splitter-item>
+                    <dxi-splitter-item [collapsible]="true" minSize="40px"></dxi-splitter-item>
+                    <dxi-splitter-item
                         [collapsible]="true"
                         maxSize="30px"
-                    ></dxi-item>
+                    ></dxi-splitter-item>
                 </dx-splitter>
-            </dxi-item>
+            </dxi-splitter-item>
             </dx-splitter>
     </container>
 

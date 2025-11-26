@@ -28,9 +28,9 @@ Follow the instructions below to implement custom server-side data aggregation. 
         <!--HTML-->
         <dx-data-grid ...
             [remoteOperations]="true">            
-            <dxo-summary>
-                <dxi-total-item summaryType="totalSales"></dxi-total-item>
-            </dxo-summary>
+            <dxo-data-grid-summary>
+                <dxi-data-grid-total-item summaryType="totalSales"></dxi-data-grid-total-item>
+            </dxo-data-grid-summary>
         </dx-data-grid>
 
         <!--TypeScript-->

@@ -70,7 +70,7 @@ The main idea is to filter the data source by the `parentID` for different drill
     <!-- tab: app.component.html -->
     <dx-chart
         [dataSource]="dataSource">
-        <dxi-series argumentField="arg" valueField="val" type="bar"></dxi-series>
+        <dxi-chart-series argumentField="arg" valueField="val" type="bar"></dxi-chart-series>
     </dx-chart>
 
     <!-- tab: app.component.ts -->
@@ -209,7 +209,7 @@ The main idea is to filter the data source by the `parentID` for different drill
     <!-- tab: app.component.html -->
     <dx-chart
         [dataSource]="dxDataSource">
-        <dxi-series argumentField="arg" valueField="val" type="bar"></dxi-series>
+        <dxi-chart-series argumentField="arg" valueField="val" type="bar"></dxi-chart-series>
     </dx-chart>
 
     <!-- tab: app.component.ts -->

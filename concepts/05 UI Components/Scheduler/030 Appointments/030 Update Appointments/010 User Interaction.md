@@ -103,7 +103,7 @@ To prevent a user from updating an appointment, set the **editing**.[allowUpdati
 
     <!--HTML-->
     <dx-scheduler ... >
-        <dxo-editing [allowUpdating]="false"></dxo-editing>
+        <dxo-scheduler-editing [allowUpdating]="false"></dxo-scheduler-editing>
     </dx-scheduler>
 
     <!--TypeScript-->

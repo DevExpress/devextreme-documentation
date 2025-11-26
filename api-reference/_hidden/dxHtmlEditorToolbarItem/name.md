@@ -44,17 +44,17 @@ In the following code, the `header` and `size` formats are configured as describ
 
     <!--HTML-->
     <dx-html-editor>
-        <dxo-toolbar>
-            <dxi-item
+        <dxo-html-editor-toolbar>
+            <dxi-html-editor-item
                 name="header"
                 [acceptedValues]="[1, 2, 3, false]"
                 [options]="{ width: 150 }">
-            </dxi-item>
-            <dxi-item
+            </dxi-html-editor-item>
+            <dxi-html-editor-item
                 name="size"
                 [acceptedValues]="['11px', '14px', '16px']">
-            </dxi-item>
-        </dxo-toolbar>
+            </dxi-html-editor-item>
+        </dxo-html-editor-toolbar>
     </dx-html-editor>   
 
     <!--TypeScript-->

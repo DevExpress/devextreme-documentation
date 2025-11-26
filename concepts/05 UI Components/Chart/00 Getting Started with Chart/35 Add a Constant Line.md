@@ -26,11 +26,11 @@ DevExtreme Chart can display horizontal or vertical constant lines as points of 
 
     <!-- tab: app.component.html -->
     <dx-chart [dataSource]="chartData">
-        <dxi-value-axis>
-            <dxi-constant-line [value]="averageSpend">
-                <dxo-label text="Yearly Spend Average"></dxo-label>
-            </dxi-constant-line>
-        </dxi-value-axis>
+        <dxi-chart-value-axis>
+            <dxi-chart-constant-line [value]="averageSpend">
+                <dxo-chart-label text="Yearly Spend Average"></dxo-chart-label>
+            </dxi-chart-constant-line>
+        </dxi-chart-value-axis>
     </dx-chart>
 
 ##### Vue

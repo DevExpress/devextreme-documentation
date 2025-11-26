@@ -27,9 +27,9 @@ The DataGrid provides the following API for expanding and collapsing groups:
 
         <!--HTML-->
         <dx-data-grid ... >
-            <dxo-grouping 
+            <dxo-data-grid-grouping 
                 [autoExpandAll]="false">
-            </dxo-grouping>
+            </dxo-data-grid-grouping>
         </dx-data-grid>
 
         <!--TypeScript-->
@@ -159,15 +159,15 @@ The DataGrid provides the following API for expanding and collapsing groups:
 
         <!--HTML-->
         <dx-data-grid ... >
-            <dxi-column 
+            <dxi-data-grid-column 
                 dataField="firstName"
                 [groupIndex]="0">
-            </dxi-column>
-            <dxi-column 
+            </dxi-data-grid-column>
+            <dxi-data-grid-column 
                 dataField="lastName"
                 [groupIndex]="1"
                 [autoExpandGroup]="false">
-            </dxi-column>
+            </dxi-data-grid-column>
         </dx-data-grid>
 
         <!--TypeScript-->

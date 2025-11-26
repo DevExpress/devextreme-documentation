@@ -30,11 +30,11 @@ The following code shows the **editing**.**texts** declaration syntax:
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-editing ... >
-            <dxo-texts
+        <dxo-{widget-name}-editing ... >
+            <dxo-{widget-name}-texts
                 deleteRow="Remove">
-            </dxo-texts>
-        </dxo-editing>
+            </dxo-{widget-name}-texts>
+        </dxo-{widget-name}-editing>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

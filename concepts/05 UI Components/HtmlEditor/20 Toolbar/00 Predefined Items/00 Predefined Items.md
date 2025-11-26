@@ -232,12 +232,12 @@ To add a button to the toolbar, add its [name](/concepts/05%20UI%20Components/Ht
 
     <!--HTML-->
     <dx-html-editor>
-        <dxo-toolbar>
-            <dxi-item name="bold"/>
-            <dxi-item name="italic"/>
-            <dxi-item name="alignRight"/>
-            <dxi-item name="alignLeft"/>
-        </dxo-toolbar>
+        <dxo-html-editor-toolbar>
+            <dxi-html-editor-item name="bold"></dxi-html-editor-item>
+            <dxi-html-editor-item name="italic"></dxi-html-editor-item>
+            <dxi-html-editor-item name="alignRight"></dxi-html-editor-item>
+            <dxi-html-editor-item name="alignLeft"></dxi-html-editor-item>
+        </dxo-html-editor-toolbar>
     </dx-html-editor>
 
     <!--TypeScript-->
@@ -350,16 +350,16 @@ To add a select box, specify the [name](/api-reference/_hidden/dxHtmlEditorToolb
 
     <!--HTML-->
     <dx-html-editor>
-        <dxo-toolbar>
-            <dxi-item
+        <dxo-html-editor-toolbar>
+            <dxi-html-editor-item
                 [acceptedValues]="headerAcceptedValues"
                 name="header"
             />
-            <dxi-item
+            <dxi-html-editor-item
                 [acceptedValues]="alignAcceptedValues"
                 name="align"
             />
-        </dxo-toolbar>
+        </dxo-html-editor-toolbar>
     </dx-html-editor>
 
     <!--TypeScript-->

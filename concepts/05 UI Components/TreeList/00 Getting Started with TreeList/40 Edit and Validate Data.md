@@ -44,30 +44,30 @@ DevExtreme includes a validation engine that checks edited values before they ar
     <!-- tab: app.component.html -->
     <dx-tree-list ... >
         <!-- ... -->
-        <dxi-column dataField="FullName">
-            <dxi-validation-rule type="required"></dxi-validation-rule>
-        </dxi-column>
-        <dxi-column dataField="Position">
-            <dxi-validation-rule type="required"></dxi-validation-rule>
-        </dxi-column>
-        <dxi-column ...
+        <dxi-tree-list-column dataField="FullName">
+            <dxi-tree-list-validation-rule type="required"></dxi-tree-list-validation-rule>
+        </dxi-tree-list-column>
+        <dxi-tree-list-column dataField="Position">
+            <dxi-tree-list-validation-rule type="required"></dxi-tree-list-validation-rule>
+        </dxi-tree-list-column>
+        <dxi-tree-list-column ...
             dataField="BirthDate">
-            <dxi-validation-rule type="required"></dxi-validation-rule>
-        </dxi-column>
-        <dxi-column ...
+            <dxi-tree-list-validation-rule type="required"></dxi-tree-list-validation-rule>
+        </dxi-tree-list-column>
+        <dxi-tree-list-column ...
             dataField="HireDate">
-            <dxi-validation-rule type="required"></dxi-validation-rule>
-        </dxi-column>
-        <dxi-column ...
+            <dxi-tree-list-validation-rule type="required"></dxi-tree-list-validation-rule>
+        </dxi-tree-list-column>
+        <dxi-tree-list-column ...
             dataField="State">
-            <dxi-validation-rule type="required"></dxi-validation-rule>
-        </dxi-column>
-        <dxo-editing
+            <dxi-tree-list-validation-rule type="required"></dxi-tree-list-validation-rule>
+        </dxi-tree-list-column>
+        <dxo-tree-list-editing
             mode="popup"
             [allowUpdating]="true"
             [allowDeleting]="true"
             [allowAdding]="true">
-        </dxo-editing>
+        </dxo-tree-list-editing>
     </dx-tree-list>
 
 ##### Vue

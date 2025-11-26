@@ -77,19 +77,19 @@ The next snippet contains the code for the example above.
     <!-- tab: app.component.html -->
     <container>
         <dx-splitter>
-            <dxi-item text="Pane 1"></dxi-item>
-            <dxi-item [resizable]="true">
+            <dxi-splitter-item text="Pane 1"></dxi-splitter-item>
+            <dxi-splitter-item [resizable]="true">
                 <dx-splitter orientation="vertical">
-                    <dxi-item text="Pane 2"></dxi-item>
-                    <dxi-item template="scrollableContent"></dxi-item>
+                    <dxi-splitter-item text="Pane 2"></dxi-splitter-item>
+                    <dxi-splitter-item template="scrollableContent"></dxi-splitter-item>
                     <div *dxTemplate="let data of 'scrollableContent'">
                         <dx-scroll-view width="100%" height="100%" direction="both">
                             <div class='caption'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque at justo non suscipit. Nulla non blandit dolor, non vulputate augue. Praesent at lectus mollis, consectetur ex id, congue tortor. Proin feugiat tempor iaculis. Maecenas in lectus eget magna pretium posuere. Integer ac pellentesque libero, a cursus orci. Morbi iaculis nisl in ex malesuada, eget pellentesque tellus aliquam. Sed in fermentum diam. Nulla lectus nunc, molestie eget mi eu, tincidunt cursus ipsum. Maecenas hendrerit commodo sem, quis tincidunt ipsum semper vitae. Vestibulum leo lectus, imperdiet ut luctus in, euismod id tellus. Integer gravida, sem sagittis egestas placerat, mi orci bibendum tellus, quis sodales sapien tellus ut neque.</div>
                         </dx-scroll-view>
                     </div>
                 </dx-splitter>
-            </dxi-item>
-            <dxi-item text="Pane 4"></dxi-item>
+            </dxi-splitter-item>
+            <dxi-splitter-item text="Pane 4"></dxi-splitter-item>
         </dx-splitter>
     </container>
 

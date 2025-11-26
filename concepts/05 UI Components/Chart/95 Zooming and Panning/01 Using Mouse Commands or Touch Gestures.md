@@ -21,10 +21,10 @@ Zooming and panning are configured in the [zoomAndPan](/api-reference/10%20UI%20
 
     <!--HTML-->
     <dx-chart ... >
-        <dxo-zoom-and-pan
+        <dxo-chart-zoom-and-pan
             argumentAxis="both"
             valueAxis="both"> <!-- or "zoom" | "pan" | "none" -->
-        </dxo-zoom-and-pan>
+        </dxo-chart-zoom-and-pan>
     </dx-chart>
 
     <!--TypeScript-->
@@ -116,12 +116,12 @@ Users can zoom the chart using the drag gesture (area selection) if you enable t
 
     <!--HTML-->
     <dx-chart ... >
-        <dxo-zoom-and-pan
+        <dxo-chart-zoom-and-pan
             [dragToZoom]="true"
             panKey="ctrl"
             argumentAxis="both"
             valueAxis="both">
-        </dxo-zoom-and-pan>
+        </dxo-chart-zoom-and-pan>
     </dx-chart>
 
     <!--TypeScript-->
@@ -212,11 +212,11 @@ If you need to disable the mouse wheel or touch support, set the [allowMouseWhee
 
     <!--HTML-->
     <dx-chart ... >
-        <dxo-zoom-and-pan
+        <dxo-chart-zoom-and-pan
             argumentAxis="both"
             valueAxis="both"
             [allowTouchGestures]="false">
-        </dxo-zoom-and-pan>
+        </dxo-chart-zoom-and-pan>
     </dx-chart>
 
     <!--TypeScript-->

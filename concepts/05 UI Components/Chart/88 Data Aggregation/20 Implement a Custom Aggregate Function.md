@@ -42,15 +42,15 @@ In the following code, a custom aggregation function implements the <a href="htt
 
     <!--HTML-->
     <dx-chart [dataSource]="data">
-        <dxi-series
+        <dxi-chart-series
             argumentField="argument"
             valueField="value">
-            <dxo-aggregation
+            <dxo-chart-aggregation
                 [enabled]="true"
                 method="custom"
                 [calculate]="calcMedianFilter">
-            </dxo-aggregation>
-        </dxi-series>
+            </dxo-chart-aggregation>
+        </dxi-chart-series>
     </dx-chart>
 
     <!--TypeScript-->

@@ -35,14 +35,14 @@ To group appointments by resources, assign an array to the [groups](/api-referen
     <dx-scheduler
         [dataSource]="appointments"
         [groups]="['roomId', 'teacherId']"> <!-- Groups appointments by rooms and by teachers -->
-        <dxi-resource
+        <dxi-scheduler-resource
             fieldExpr="roomId"
             [dataSource]="rooms">
-        </dxi-resource>
-        <dxi-resource
+        </dxi-scheduler-resource>
+        <dxi-scheduler-resource
             fieldExpr="teacherId"
             [dataSource]="teachers">
-        </dxi-resource>
+        </dxi-scheduler-resource>
     </dx-scheduler>
 
     <!--TypeScript-->
@@ -232,11 +232,11 @@ You can change resource headers orientation in an individual view using the **vi
 
     <!--HTML-->
     <dx-scheduler ... >
-        <dxi-view type="month"></dxi-view>
-        <dxi-view
+        <dxi-scheduler-view type="month"></dxi-scheduler-view>
+        <dxi-scheduler-view
             type="day"
             groupOrientaion="vertical">
-        </dxi-view>
+        </dxi-scheduler-view>
     </dx-scheduler>
 
 ##### Vue

@@ -46,8 +46,8 @@ An object that contains information about the error.
     <!-- tab: app.component.html -->
     <dx-file-manager id="fileManager">
         [fileSystemProvider]="keepExtensionsProvider">
-        <dxo-permissions rename="true">
-        </dxo-permissions>
+        <dxo-file-manager-permissions rename="true">
+        </dxo-file-manager-permissions>
         <!-- ... -->
     </dx-file-manager>
 

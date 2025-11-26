@@ -15,7 +15,7 @@ Defines the axis' displayed range. Cannot be wider than the [wholeRange](/api-re
     objectName: "visualRange",
     element: "axis",
     elementType: "[valueType](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/valueType.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#valueType')",
-    angularSelector: "dxo-chart-value-axis",
+    angularSelector: "dxo-value-axis",
     jquerySelector: "valueAxis",
     parentSelector: "ValueAxis",
     objectSelector: "VisualRange",

@@ -47,9 +47,9 @@ The following code snippet configures [commonAxisSettings](/api-reference/10%20U
         <dxo-chart-argument-axis>
             <dxi-chart-break startValue="1998" endValue="2003"></dxi-chart-break>
         </dxo-chart-argument-axis>
-        <dxo-chart-value-axis>
+        <dxo-value-axis>
             <dxi-chart-break startValue="250" endValue="350"></dxi-chart-break>
-        <dxo-chart-value-axis>
+        <dxo-value-axis>
     </dx-chart>
 
 ##### Vue

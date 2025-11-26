@@ -121,8 +121,8 @@ If you use <a href="https://angular.dev/guide/routing" target="_blank">routing</
 
     <!-- tab: app.component.html -->
     <dx-menu>
-        <dxi-menu-item><a routerLink="/">Home</a></dxi-item>
-        <dxi-item><a routerLink="/about">About</a></dxi-item>
+        <dxi-menu-item><a routerLink="/">Home</a></dxi-menu-item>
+        <dxi-menu-item><a routerLink="/about">About</a></dxi-menu-item>
     </dx-menu>
     <router-outlet></router-outlet>
 

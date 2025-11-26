@@ -109,11 +109,11 @@ If your form layout contains tabs, disable **TabbedItem.tabPanelOptions**.[defer
     <dx-data-grid ... >
         <dxo-data-grid-editing>
             <dxo-data-grid-form>
-                <dxi-itemitemType="tabbed">
+                <dxi-data-grid-item itemType="tabbed">
                     <dxo-tab-panel-options [deferRendering]="false">
                     </dxo-tab-panel-options>
                     <dxi-tab></dxi-tab>
-                </dxi-item>
+                </dxi-data-grid-item>
             </dxo-data-grid-form>
         </dxo-data-grid-editing>
     </dx-data-grid>

@@ -14,7 +14,7 @@ Defines the range where the axis can be [zoomed and panned](/concepts/05%20UI%20
     objectName: "wholeRange",
     element: "axis",
     elementType: "[valueType](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/valueType.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#valueType')",
-    angularSelector: "dxo-value-axis",
+    angularSelector: "dxo-chart-value-axis",
     jquerySelector: "valueAxis",
     parentSelector: "ValueAxis",
     objectSelector: "WholeRange",

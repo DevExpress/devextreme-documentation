@@ -53,10 +53,10 @@ Values of the `string` type on discrete axes maintain the order of objects in th
     &lt;!-- tab: app.component.html --&gt;
     &lt;dx-{widget-name} ...
         [dataSource]="dataSource"&gt;
-        &lt;dxo-value-axis
+        &lt;dxo-chart-value-axis
             [categories]="continentNames"
             valueField="continent"&gt;
-        &lt;/dxo-value-axis&gt;
+        &lt;/dxo-chart-value-axis&gt;
     &lt;/dx-{widget-name}&gt;
 
     &lt;!-- tab: app.component.ts --&gt;

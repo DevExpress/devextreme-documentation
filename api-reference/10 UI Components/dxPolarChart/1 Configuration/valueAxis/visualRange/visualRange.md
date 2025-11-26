@@ -15,7 +15,7 @@ Defines the axis' displayed range. Cannot be wider than the [wholeRange](/api-re
     objectName: "visualRange",
     element: "axis",
     elementType: "[valueType](/api-reference/10%20UI%20Components/dxPolarChart/1%20Configuration/valueAxis/valueType.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/valueAxis/#valueType')",
-    angularSelector: "dxo-value-axis",
+    angularSelector: "dxo-chart-value-axis",
     jquerySelector: "valueAxis",
     parentSelector: "ValueAxis",
     objectSelector: "VisualRange",

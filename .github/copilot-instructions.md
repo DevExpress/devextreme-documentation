@@ -4,7 +4,7 @@ These instructions summarize the DevExpress/devextreme-documentation repository 
 
 This repository contains source Markdown files, embedded sample applications, images, and reusable include fragments for the public DevExtreme documentation site: https://js.devexpress.com/Documentation/.
 
-It is a content + light tooling project (not a compiled application). Your typical changes will involve:
+This repository is a content + light tooling project (not a compiled application). Your typical changes will involve:
 - Reviewing style consistency and grammar of documentation content. The documentation content is straightforward technical writing targeting software developer audience.
 - Reviewing link/reference consistency and accuracy in documentation content.
 - Reviewing style consistency of code samples (JavaScript/HTML/CSS/TypeScript).

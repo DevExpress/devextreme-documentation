@@ -18,7 +18,7 @@ This mode is an alternative to paging where pages are rendered when they get int
 
 - Specify the component's [height](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#height') if you use virtual scrolling.
 
-- Node selection in **virtual** scroll mode with Shift+Click does not work if the [allowSelectAll](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/selection/allowSelectAll.md 'Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#allowSelectAll') property is disabled.
+- Node selection in **virtual** scroll mode with Shift+Click does not work.
 
 [/note]
 

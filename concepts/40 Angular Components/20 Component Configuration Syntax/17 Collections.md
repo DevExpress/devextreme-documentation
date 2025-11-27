@@ -16,9 +16,9 @@ For properties that accept either an object or a collection, use UI components p
         </dxi-chart-value-axis>
     </dx-chart>
 
-A special `dxi-` element, `dxi-item`, is designed to declare items in collection UI components. It supports <a href="https://angular.dev/guide/directives/structural-directives" target="_blank">structural directives</a> provided by Angular, for instance, `ngFor`. The following code shows how to use `dxi-item` to declare items in the [List](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ItemTemplate) UI component.
+A special `dxi-` element, `dxi-component-name-item`, is designed to declare items in collection UI components. The following code shows how to use `dxi-list-item` to declare items in the [List](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ItemTemplate) UI component.
 
-`dxi-item` also supports directives that control parts of item appearance, such as `badge` in the code below. They are described in the [items](/api-reference/10%20UI%20Components/dxList/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxList/Configuration/items/') section of each collection UI component.
+`dxi-component-name-item` also supports directives that control parts of item appearance, such as `badge` in the code below. They are described in the [items](/api-reference/10%20UI%20Components/dxList/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxList/Configuration/items/') section of each collection UI component.
 
     <!-- tab: app.component.html -->
     <dx-list>
@@ -43,7 +43,7 @@ A special `dxi-` element, `dxi-item`, is designed to declare items in collection
         }];
     }
 
-If a `dxi-item` contains nested components, wrap the content in an element with the `dxTemplate` directive without parameters:
+If a `dxi-component-name-item` contains nested components, wrap the content in an element with the `dxTemplate` directive without parameters:
 
     <!--HTML-->
     <dx-list>

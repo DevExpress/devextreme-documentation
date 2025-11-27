@@ -183,7 +183,7 @@ Predefined controls appear on the toolbar depending on whether a specific CardVi
 
     ##### Angular
 
-    You can use DevExtreme components as toolbar items. Declare a `dxi-item` element to add a [supported component](/api-reference/_hidden/dxToolbarItem/widget.md '{basewidgetpath}/Configuration/toolbar/items/#widget'):
+    You can use DevExtreme components as toolbar items. Declare a `dxi-{widget-name}-item` element to add a [supported component](/api-reference/_hidden/dxToolbarItem/widget.md '{basewidgetpath}/Configuration/toolbar/items/#widget'):
 
         <!-- tab: app.component.html -->
         <dx-{widget-name} ... >

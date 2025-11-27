@@ -4,6 +4,7 @@ module: viz/chart
 export: CommonPointInfo
 inheritsType: BasePointInfo
 generateTypeLink: 
+type: BasePointInfo
 ---
 ---
 ##### shortDescription

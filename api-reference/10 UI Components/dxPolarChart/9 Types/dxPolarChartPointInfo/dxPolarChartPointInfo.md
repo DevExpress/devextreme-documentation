@@ -4,6 +4,7 @@ module: viz/polar_chart
 export: PointInfo
 inheritsType: BasePointInfo
 generateTypeLink: 
+type: BasePointInfo
 ---
 ---
 ##### shortDescription

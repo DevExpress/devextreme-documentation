@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised after {WidgetName} property is changed.
 
 ---
-<!-- Description goes here -->
+Main article: [onOptionChanged]({basewidgetpath}/Configuration/#onOptionChanged)
+
+#####See Also#####
+#include common-link-handleevents

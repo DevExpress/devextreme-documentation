@@ -9,7 +9,7 @@ Resets editors to specified or initial values.
 New editor values.
 
 ---
-Specify the **editorsData** parameter following the [formData](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData) structure to assign new values to Form editors. To reset editors to initial values (set on editor initialization), omit corresponding **formData** fields in **editorsData**. To reset all editors to initial values, call this function witout the **editorsData** parameter.
+Specify the **editorsData** parameter following the [formData](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/formData.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData') structure to assign new values to Form editors. To reset editors to initial values (set on editor initialization), omit corresponding **formData** fields in **editorsData**. To reset all editors to initial values, call this function witout the **editorsData** parameter.
 
 ---
 
@@ -106,8 +106,8 @@ Specify the **editorsData** parameter following the [formData](/Documentation/Ap
 
 [note]
 
-- Form updates initial editor values on each [repaint](/Documentation/ApiReference/UI_Components/dxForm/Methods/#repaint), including on component size or layout changes. To reset editors to original values (set in formData) after a repaint, pass a **formData** clone ([structuredClone](https://developer.mozilla.org/en-US/docs/Web/API/Window/structuredClone)) as the **editorsData** parameter.
-- This method does not support nested **editorsData** objects. If your data includes nested objects, call the [option()](/Documentation/ApiReference/UI_Components/dxForm/Methods/#optionoptionName_optionValue) method instead:
+- Form updates initial editor values on each [repaint](/api-reference/10%20UI%20Components/Widget/3%20Methods/repaint().md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#repaint'), including on component size or layout changes. To reset editors to original values (set in formData) after a repaint, pass a **formData** clone ([structuredClone](https://developer.mozilla.org/en-US/docs/Web/API/Window/structuredClone)) as the **editorsData** parameter.
+- This method does not support nested **editorsData** objects. If your data includes nested objects, call the [option()](/api-reference/10%20UI%20Components/Component/3%20Methods/option(optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#optionoptionName_optionValue') method instead:
 
     ---
 
@@ -141,7 +141,7 @@ Specify the **editorsData** parameter following the [formData](/Documentation/Ap
 
     ---
 
-- This method resets [isDirty](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#isDirty) to `false`.
+- This method resets [isDirty](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/isDirty.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#isDirty') to `false`.
 
 [/note]
 

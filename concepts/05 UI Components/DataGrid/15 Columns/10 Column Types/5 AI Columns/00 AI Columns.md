@@ -1,0 +1,1 @@
+AI columns augment {WidgetName} data with AI-generated insights. You can add one or multiple AI columns to a {WidgetName}. AI columns are a type of [command column]({basewidgetpath}/Columns/Column_Types/Command_Columns/) and are not bound to a data field.

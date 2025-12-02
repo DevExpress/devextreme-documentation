@@ -1,4 +1,4 @@
-The default {WidgetName} behavior is to add all visible row data in AI requests, including data not bound to a column and data of hidden columns. To save AI resources, you can configure the component to include only relevant data. Modify the **AIColumnRequestCreatingEvent**.[data](/Documentation/25_2/ApiReference/UI_Components/dxDataGrid/Types/AIColumnRequestCreatingEvent/#data) parameter within [onAIColumnRequestCreating](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onAIColumnRequestCreating) as follows:
+Default AI requests include all data from rows visible in the {WidgetName} container. This data includes fields of hidden columns and fields not bound to a column. To save AI resources, you can configure the component to include only relevant data fields. Modify the **AIColumnRequestCreatingEvent**.[data](/Documentation/25_2/ApiReference/UI_Components/dxDataGrid/Types/AIColumnRequestCreatingEvent/#data) parameter within [onAIColumnRequestCreating](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onAIColumnRequestCreating) as follows:
 
 ---
 

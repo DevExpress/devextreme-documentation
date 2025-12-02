@@ -4,28 +4,28 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed after a {WidgetName} property is changed.
 
 ##### param(e): ui/card_view:OptionChangedEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.fullName): String
-<!-- Description goes here -->
+The modified property's path (includes all parent properties).
 
 ##### field(e.name): String
-<!-- Description goes here -->
+The modified property or the top-level parent if the modified property is nested.
 
 ##### field(e.previousValue): any
-<!-- Description goes here -->
+The modified property's previous value.
 
 ##### field(e.value): any
-<!-- Description goes here -->
+The modified property's new value.
 
 ---
 <!-- Description goes here -->

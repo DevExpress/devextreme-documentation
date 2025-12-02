@@ -4,7 +4,7 @@ type: eventType
 ---
 ---
 ##### shortDescription
-Raised after {WidgetName} property is changed.
+Raised after the {WidgetName} property is changed.
 
 ---
 Main article: [onOptionChanged]({basewidgetpath}/Configuration/#onOptionChanged)

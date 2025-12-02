@@ -1,7 +1,6 @@
 Note the following AI column limitations:
 
 - AI columns cannot be integrated within [band columns](/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/Band_Columns/).
-- If {WidgetName} hides an AI column, users cannot access the [AI header menu](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/ai/#showHeaderMenu) to regenerate data or update the prompt.
 - {WidgetName} does not support AI data editing, filtering, searching, and sorting.
 - AI columns ignore the following [columns[]](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/) properties:
 

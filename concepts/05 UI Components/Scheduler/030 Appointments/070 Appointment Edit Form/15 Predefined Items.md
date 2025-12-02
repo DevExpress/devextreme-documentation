@@ -9,7 +9,7 @@ The following predefined items are available:
     |  │  └─ subjectEditor
     |  ├─ dateGroup
     |  │  ├─ dateIcon
-    |  |  └─ TBA
+    |  |  └─ dateOptionsGroup
     |  │     ├─ allDayEditor
     |  │     ├─ startDateGroup
     |  │     │  ├─ startDateTimeGroup
@@ -24,6 +24,8 @@ The following predefined items are available:
     |  ├─ repeatGroup
     |  │  ├─ repeatIcon
     |  │  └─ repeatEditor
+    |  ├─ resourcesGroup
+    |  │  └─ ...
     |  └─ descriptionGroup
     |     ├─ descriptionIcon
     |     └─ descriptionEditor
@@ -43,6 +45,34 @@ The following predefined items are available:
        └─ recurrenceEndGroup
           ├─ recurrenceEndIcon
           └─ recurrenceEndEditor
+             ├─ recurrenceRepeatEndEditor
+             └─ recurrenceEndEditorsGroup
+                ├─ recurrenceEndSpacer
+                ├─ recurrenceEndUntilEditor
+                └─ recurrenceEndCountEditor
+
+Items within `resourcesGroup` depend on resource [fieldExpr](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/#fieldExpr) and [icon](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/#icon) properties. Scheduler uses resource field expressions (for instance, "roomId") in item names as follows:
+
+    ...
+    └─ resourcesGroup
+       └─ roomIdGroup
+          ├─ roomIdIcon
+          └─ roomIdEditor
+
+If no resource has an icon assigned, `resourcesGroup` contains the following items:
+
+    ...
+    └─ resourcesGroup
+       ├─ resourcesGroupIcon
+       └─ resourceEditorsGroup
+          ├─ roomIdEditor
+          ├─ priorityIdEditor
+          ├─ assigneeIdEditor
+          └─ ...
+
+#include btn-open-demo with {
+   href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Resources/"
+}
 
 Below is a list of images that demonstrate predefined items within each available group.
 
@@ -76,7 +106,7 @@ Appointment recurrence settings are available in the `recurrenceGroup`:
 
 1. `dateGroup`
 2. `dateIcon`
-3. TBA
+3. `dateOptionsGroup`
 4. `allDayEditor`
 5. `startDateGroup`
 6. `endDateGroup`

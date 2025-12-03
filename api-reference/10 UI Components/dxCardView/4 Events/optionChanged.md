@@ -7,7 +7,7 @@ type: eventType
 Raised after the {WidgetName} property is changed.
 
 ---
-Main article: [onOptionChanged]({basewidgetpath}/Configuration/#onOptionChanged)
+Main article: [onOptionChanged](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/onOptionChanged.md '{basewidgetpath}/Configuration/#onOptionChanged')
 
 #####See Also#####
 #include common-link-handleevents

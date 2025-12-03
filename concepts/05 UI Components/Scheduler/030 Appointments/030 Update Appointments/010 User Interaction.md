@@ -2,7 +2,7 @@ An end user can update an appointment in one of the following ways.
 
 - Reschedule an appointment by moving it to another cell.
 - Extend or shorten an appointment by dragging its top or bottom border.
-- Change the appointment details by focusing the appointment and clicking "Open Appointment" afterwards.
+- Change the appointment details by double-clicking the appointment.
 
 <div>
     <video width="640px" controls="yes">

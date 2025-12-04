@@ -80,7 +80,10 @@ Below is a list of images that demonstrate predefined items within each availabl
 
 General appointment details are available in the `mainGroup`:
 
-<pre class="code-wrapper prettyprint" style="width: 100%; display: flex; justify-content: center; border-radius: 16px; min-width: 400px"><img src="/images/Scheduler/appointment-edit-form/items/1-mainGroup.png" alt="Scheduler appointment edit form, main group" style="width: 30vw; min-width: 400px"></img></pre>
+#include full-width-image-container with {
+   src: "/images/Scheduler/appointment-edit-form/items/1-mainGroup.png",
+   alt: "Scheduler appointment edit form, main group"
+}
 
 1. `mainGroup`
 

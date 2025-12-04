@@ -121,11 +121,17 @@ Appointment recurrence settings are available in the `recurrenceGroup`:
 
 ### Resources
 
-<img src="/images/Scheduler/appointment-edit-form/items/resourcesGroup-alt.png" alt="Scheduler appointment edit form, repeat group items" style="width: 750px"></img>
+<img src="/images/Scheduler/appointment-edit-form/items/resourcesGroup-alt.png" alt="TBA" style="width: 750px"></img>
 
 1. `resourcesGroup`
 2. `roomIdGroup`
 3. `priorityIdGroup` - without icon.
+
+<img src="/images/Scheduler/appointment-edit-form/items/resourcesGroup-content.png" alt="TBA" style="width: 750px"></img>
+
+<img src="/images/Scheduler/appointment-edit-form/items/resourcesGroup-no-logos.png" alt="TBA" style="width: 750px"></img>
+
+<img src="/images/Scheduler/appointment-edit-form/items/resourcesGroup-alt.png" alt="TBA" style="width: 750px"></img>
 
 ### Description
 
@@ -205,3 +211,6 @@ The following image demonstrates `recurrenceRuleGroup` items specific to each re
 1. `recurrenceEndGroup`
 2. `recurrenceEndIcon`
 3. `recurrenceEndEditor`
+
+<img src="/images/Scheduler/appointment-edit-form/items/recurrenceEndEditor.png" alt="TBA" style="width: 750px"></img>
+

@@ -80,7 +80,7 @@ Below is a list of images that demonstrate predefined items within each availabl
 
 General appointment details are available in the `mainGroup`:
 
-<img src="/images/Scheduler/appointment-edit-form/items/1-mainGroup.png" alt="Scheduler appointment edit form, main group" style="width: 750px"></img>
+<div style="width: 100%; background-color: #f9f9f9; display: flex; justify-content: center; border-radius: 16px"><img src="/images/Scheduler/appointment-edit-form/items/1-mainGroup.png" alt="Scheduler appointment edit form, main group" style="height: 450px !important;"></img></div>
 
 1. `mainGroup`
 
@@ -88,13 +88,13 @@ General appointment details are available in the `mainGroup`:
 
 Appointment recurrence settings are available in the `recurrenceGroup`:
 
-<img src="/images/Scheduler/appointment-edit-form/items/2-recurrenceGroup.png" alt="Scheduler appointment edit form, recurrence group" style="width: 750px"></img>
+<div style="width: 100%; background-color: #f9f9f9; display: flex; justify-content: center; border-radius: 16px"><img src="/images/Scheduler/appointment-edit-form/items/2-recurrenceGroup.png" alt="Scheduler appointment edit form, recurrence group" style="height: 450px !important;"></img></div>
 
 1. `recurrenceGroup`
 
 ### Subject
 
-<img src="/images/Scheduler/appointment-edit-form/items/3-subjectGroup.png" alt="Scheduler appointment edit form, subject group items" style="width: 750px"></img
+<div style="width: 100%; background-color: #f9f9f9; display: flex; justify-content: center; border-radius: 16px"><img src="/images/Scheduler/appointment-edit-form/items/3-subjectGroup.png" alt="Scheduler appointment edit form, subject group items" style="height: 450px !important;"></img></div>
 
 1. `subjectGroup`
 2. `subjectIcon`
@@ -102,7 +102,7 @@ Appointment recurrence settings are available in the `recurrenceGroup`:
 
 ### Date
 
-<img src="/images/Scheduler/appointment-edit-form/items/4-dateGroup.png" alt="Scheduler appointment edit form, date group items" style="width: 750px"></img>
+<div style="width: 100%; background-color: #f9f9f9; display: flex; justify-content: center; border-radius: 16px"><img src="/images/Scheduler/appointment-edit-form/items/4-dateGroup.png" alt="Scheduler appointment edit form, date group items" style="height: 450px !important;"></img></div>
 
 1. `dateGroup`
 2. `dateIcon`
@@ -113,7 +113,7 @@ Appointment recurrence settings are available in the `recurrenceGroup`:
 
 ### Recurrence
 
-<img src="/images/Scheduler/appointment-edit-form/items/5-repeatGroup.png" alt="Scheduler appointment edit form, repeat group items" style="width: 750px"></img>
+<div style="width: 100%; background-color: #f9f9f9; display: flex; justify-content: center; border-radius: 16px"><img src="/images/Scheduler/appointment-edit-form/items/5-repeatGroup.png" alt="Scheduler appointment edit form, repeat group items" style="height: 450px !important;"></img></div>
 
 1. `repeatGroup`
 2. `repeatIcon`
@@ -121,21 +121,44 @@ Appointment recurrence settings are available in the `recurrenceGroup`:
 
 ### Resources
 
-<img src="/images/Scheduler/appointment-edit-form/items/resourcesGroup-alt.png" alt="TBA" style="width: 750px"></img>
+<div style="width: 100%; background-color: #f9f9f9; display: flex; justify-content: center; border-radius: 16px"><img src="/images/Scheduler/appointment-edit-form/items/resourcesGroup.png" alt="TBA" style="height: 450px !important;"></img></div>
 
 1. `resourcesGroup`
 2. `roomIdGroup`
-3. `priorityIdGroup` - without icon.
+3. `priorityIdGroup`
+4. `assigneeIdGroup`
 
-<img src="/images/Scheduler/appointment-edit-form/items/resourcesGroup-content.png" alt="TBA" style="width: 750px"></img>
+<div style="width: 100%; background-color: #f9f9f9; display: flex; justify-content: center; border-radius: 16px"><img src="/images/Scheduler/appointment-edit-form/items/resourcesGroup-content.png" alt="TBA" style="height: 450px !important;"></img></div>
 
-<img src="/images/Scheduler/appointment-edit-form/items/resourcesGroup-no-logos.png" alt="TBA" style="width: 750px"></img>
+1. `roomIdGroup`
+2. `roomIdIcon`
+3. `roomIdEditor`
+4. `priorityIdGroup`
+5. `priorityIdIcon`
+6. `priorityIdEditor`
+7. `assigneeIdGroup`
+8. `assigneeIdIcon`
+9. `assigneeIdEditor`
 
-<img src="/images/Scheduler/appointment-edit-form/items/resourcesGroup-alt.png" alt="TBA" style="width: 750px"></img>
+The following image demonstrates a compact `resourcesGroup` layout:
+
+<div style="width: 100%; background-color: #f9f9f9; display: flex; justify-content: center; border-radius: 16px"><img src="/images/Scheduler/appointment-edit-form/items/resourcesGroup-alt.png" alt="TBA" style="height: 450px !important;"></img></div>
+
+1. `resourcesGroup`
+2. `roomIdGroup`
+3. `priorityIdEditor`
+
+The following image demonstrates `resourcesGroup` items when no resource icons are specified:
+
+<div style="width: 100%; background-color: #f9f9f9; display: flex; justify-content: center; border-radius: 16px"><img src="/images/Scheduler/appointment-edit-form/items/resourcesGroup-no-logos.png" alt="TBA" style="height: 450px !important;"></img></div>
+
+1. `resourcesGroup`
+2. `resourcesGroupIcon`
+3. `resourceEditorsGroup`
 
 ### Description
 
-<img src="/images/Scheduler/appointment-edit-form/items/6-descriptionGroup.png" alt="Scheduler appointment edit form, description group items" style="width: 750px"></img>
+<div style="width: 100%; background-color: #f9f9f9; display: flex; justify-content: center; border-radius: 16px"><img src="/images/Scheduler/appointment-edit-form/items/6-descriptionGroup.png" alt="Scheduler appointment edit form, description group items" style="height: 450px !important;"></img></div>
 
 1. `descriptionGroup`
 2. `descriptionIcon`
@@ -143,7 +166,7 @@ Appointment recurrence settings are available in the `recurrenceGroup`:
 
 ### Start Date
 
-<img src="/images/Scheduler/appointment-edit-form/items/7-startDateGroup.png" alt="Scheduler appointment edit form, start date group items" style="width: 750px"></img>
+<div style="width: 100%; background-color: #f9f9f9; display: flex; justify-content: center; border-radius: 16px"><img src="/images/Scheduler/appointment-edit-form/items/7-startDateGroup.png" alt="Scheduler appointment edit form, start date group items" style="height: 450px !important;"></img></div>
 
 1. `startDateGroup`
 2. `startDateTimeGroup`
@@ -153,7 +176,7 @@ Appointment recurrence settings are available in the `recurrenceGroup`:
 
 ### End Date
 
-<img src="/images/Scheduler/appointment-edit-form/items/8-endDateGroup.png" alt="Scheduler appointment edit form, end date group items" style="width: 750px"></img>
+<div style="width: 100%; background-color: #f9f9f9; display: flex; justify-content: center; border-radius: 16px"><img src="/images/Scheduler/appointment-edit-form/items/8-endDateGroup.png" alt="Scheduler appointment edit form, end date group items" style="height: 450px !important;"></img></div>
 
 1. `endDateGroup`
 2. `endDateTimeGroup`
@@ -163,7 +186,7 @@ Appointment recurrence settings are available in the `recurrenceGroup`:
 
 ### Recurrence Start Date
 
-<img src="/images/Scheduler/appointment-edit-form/items/9-recurrenceStartDateGroup.png" alt="Scheduler appointment edit form, recurrence start date group items" style="width: 750px"></img>
+<div style="width: 100%; background-color: #f9f9f9; display: flex; justify-content: center; border-radius: 16px"><img src="/images/Scheduler/appointment-edit-form/items/9-recurrenceStartDateGroup.png" alt="Scheduler appointment edit form, recurrence start date group items" style="height: 450px !important;"></img></div>
 
 1. `recurrenceStartDateGroup`
 2. `recurrenceStartDateIcon`
@@ -173,7 +196,7 @@ Appointment recurrence settings are available in the `recurrenceGroup`:
 
 The following image demonstrates `recurrenceRuleGroup` items that are displayed in all recurrence modes:
 
-<img src="/images/Scheduler/appointment-edit-form/items/10-recurrenceRuleGroup.png" alt="Scheduler appointment edit form, recurrence rule group items displayed in all recurrence modes" style="width: 750px"></img>
+<div style="width: 100%; background-color: #f9f9f9; display: flex; justify-content: center; border-radius: 16px"><img src="/images/Scheduler/appointment-edit-form/items/10-recurrenceRuleGroup.png" alt="Scheduler appointment edit form, recurrence rule group items displayed in all recurrence modes" style="height: 450px !important;"></img></div>
 
 1. `recurrenceRuleGroup`
 2. `recurrenceRuleIcon`
@@ -187,7 +210,7 @@ The following image demonstrates `recurrenceRuleGroup` items that are displayed 
 
 The following image demonstrates `recurrenceRuleGroup` items specific to each recurrence mode:
 
-<img src="/images/Scheduler/appointment-edit-form/items/11-recurrenceRuleOptions.png" alt="Scheduler appointment edit form, recurrence rule group items specific to each recurrence mode" style="width: 750px"></img>
+<div style="width: 100%; background-color: #f9f9f9; display: flex; justify-content: center; border-radius: 16px"><img src="/images/Scheduler/appointment-edit-form/items/11-recurrenceRuleOptions.png" alt="Scheduler appointment edit form, recurrence rule group items specific to each recurrence mode" style="height: 450px !important;"></img></div>
 
 1. `recurrencePeriodEditor` - Daily Recurrence    
    ㅤ
@@ -206,11 +229,11 @@ The following image demonstrates `recurrenceRuleGroup` items specific to each re
 
 ### Recurrence End Date
 
-<img src="/images/Scheduler/appointment-edit-form/items/12-recurrenceEndGroup.png" alt="Scheduler appointment edit form, recurrence end date group items" style="width: 750px"></img>
+<div style="width: 100%; background-color: #f9f9f9; display: flex; justify-content: center; border-radius: 16px"><img src="/images/Scheduler/appointment-edit-form/items/12-recurrenceEndGroup.png" alt="Scheduler appointment edit form, recurrence end date group items" style="height: 450px !important;"></img></div>
 
 1. `recurrenceEndGroup`
 2. `recurrenceEndIcon`
 3. `recurrenceEndEditor`
 
-<img src="/images/Scheduler/appointment-edit-form/items/recurrenceEndEditor.png" alt="TBA" style="width: 750px"></img>
+<div style="width: 100%; background-color: #f9f9f9; display: flex; justify-content: center; border-radius: 16px"><img src="/images/Scheduler/appointment-edit-form/items/recurrenceEndEditor.png" alt="TBA" style="height: 450px !important;"></img></div>
 

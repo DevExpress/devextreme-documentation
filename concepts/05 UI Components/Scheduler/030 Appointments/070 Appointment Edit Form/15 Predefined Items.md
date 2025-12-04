@@ -119,6 +119,14 @@ Appointment recurrence settings are available in the `recurrenceGroup`:
 2. `repeatIcon`
 3. `repeatEditor`
 
+### Resources
+
+<img src="/images/Scheduler/appointment-edit-form/items/resourcesGroup-alt.png" alt="Scheduler appointment edit form, repeat group items" style="width: 750px"></img>
+
+1. `resourcesGroup`
+2. `roomIdGroup`
+3. `priorityIdGroup` - without icon.
+
 ### Description
 
 <img src="/images/Scheduler/appointment-edit-form/items/6-descriptionGroup.png" alt="Scheduler appointment edit form, description group items" style="width: 750px"></img>

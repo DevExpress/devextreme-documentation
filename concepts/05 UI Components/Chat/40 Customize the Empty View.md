@@ -1,6 +1,6 @@
 This tutorial illustrates how to customize the Chat's empty view. The following live example demonstrates the result:
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/25_2/UIWidgets/Chat/EmptyView/index.html, /Content/Applications/25_2/UIWidgets/Chat/EmptyView/index.js, /Content/Applications/25_2/UIWidgets/Chat/EmptyView/index.css" style="height: 520px;"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/25_2/UIWidgets/Chat/EmptyView/index.html, /Content/Applications/25_2/UIWidgets/Chat/EmptyView/index.js, /Content/Applications/25_2/UIWidgets/Chat/EmptyView/index.css" style="border-radius: 20px; border-color: #EDF0F2; min-height: 100%; min-width: 1000;"></div>
 
 To implement custom markup for the Chat's empty view, specify the [emptyViewTemplate](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/emptyViewTemplate.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#emptyViewTemplate') property. This tutorial defines an empty view container that includes a title and subtitle, as well as integrates the DevExtreme [TileView](/concepts/05%20UI%20Components/TileView/00%20Overview.md '/Documentation/Guide/UI_Components/TileView/Overview/') component:
 

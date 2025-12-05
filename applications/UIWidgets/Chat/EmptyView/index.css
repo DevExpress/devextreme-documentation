@@ -1,16 +1,16 @@
 .demo-viewport {
-  height: 800px;
   display: flex;
   align-items: start;
   justify-content: center;
+  padding: 20px;
 }
 
 .empty-view-titlebox {
   height: 60px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 36px;
-  margin-top: 44px;
+  margin-bottom: 24px;
+  margin-top: 20px;
 }
 
 .empty-view-title {
@@ -24,7 +24,8 @@
 }
 
 #chat {
-  background-image: url('data:image/svg+xml;utf8,<svg width="780" height="480" viewBox="0 0 780 480" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_15587_1133)"><rect width="780" height="480" fill="white"/><g filter="url(%23filter0_f_15587_1133)"><path d="M358 358C358 466.248 270.248 554 162 554C53.7522 554 -34 466.248 -34 358C-34 249.752 53.7522 162 162 162C270.248 162 358 249.752 358 358Z" fill="%23D8E9FF"/><path d="M897 143C897 251.248 809.248 339 701 339C592.752 339 505 251.248 505 143C505 34.7522 592.752 -53 701 -53C809.248 -53 897 34.7522 897 143Z" fill="%23F8D8FF"/><path d="M612 232C612 340.248 524.248 428 416 428C307.752 428 220 340.248 220 232C220 123.752 307.752 36 416 36C524.248 36 612 123.752 612 232Z" fill="white"/></g></g><defs><filter id="filter0_f_15587_1133" x="-434" y="-453" width="1731" height="1407" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_15587_1133"/></filter><clipPath id="clip0_15587_1133"><rect width="780" height="480" fill="white"/></clipPath></defs></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1580" transform="translate(-640, -320)" viewBox="0 0 2000 1580" fill="none"><g filter="url(%23filter0_f_18089_901)"><path d="M905.263 927.17C905.263 1066.8 792.156 1180 652.632 1180C513.107 1180 400 1066.8 400 927.17C400 787.535 513.107 674.339 652.632 674.339C792.156 674.339 905.263 787.535 905.263 927.17Z" fill="%23D8EAFF"/><path d="M1600 652.83C1600 792.465 1486.89 905.661 1347.37 905.661C1207.84 905.661 1094.74 792.465 1094.74 652.83C1094.74 513.196 1207.84 400 1347.37 400C1486.89 400 1600 513.196 1600 652.83Z" fill="%23F8D8FF"/></g><defs><filter id="filter0_f_18089_901" x="0" y="0" width="2000" height="1580" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_18089_901"/></filter></defs></svg>');
+  min-width: 360px;
 }
 
 #chat .dx-chat-messagebox {
@@ -37,14 +38,40 @@
   flex-direction: column;
 }
 
-#tile-view-container {
+.empty-view-container #tile-view-container {
   align-self: center;
+  height: 124px;
+}
+
+#chat .dx-chat-messagebox {
+  padding-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .empty-view-container #tile-view-container {
+    align-self: center;
+    width: 100% !important;
+    max-width: 379px !important;
+    height: 336px !important;
+  }
+
+  #chat {
+    height: 660px !important;
+  }
+
+  .dx-tile {
+    width: calc(100% - 24px) !important;
+    max-width: 355px !important;
+    height: 96px !important;
+  }
+}
+
+.dx-chat-messagelist-empty-view {
+  width: 100%;
 }
 
 .dx-tile {
   border-radius: 12px;
-  border-color: #E6E6E6;
-  background-color: #FFFFFF;
   padding: 16px;
   transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
 }

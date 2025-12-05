@@ -1,6 +1,6 @@
 Note the following AI column limitations:
 
-- AI columns cannot be integrated within [band columns](/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/Band_Columns/).
+- AI columns cannot be integrated within [band columns](/concepts/05%20UI%20Components/DataGrid/15%20Columns/10%20Column%20Types/2%20Band%20Columns.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/Band_Columns/').
 - {WidgetName} does not save AI-generated values to the component data source and does not support AI data editing, filtering, searching, and sorting.
 - AI columns ignore the following [columns[]](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/) properties:
 

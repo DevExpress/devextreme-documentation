@@ -31,6 +31,7 @@
 #chat .dx-chat-messagebox {
   border-top-width: 0px;
   padding: 40px;
+  padding-top: 20px;
 }
 
 .empty-view-container {
@@ -43,15 +44,11 @@
   height: 124px;
 }
 
-#chat .dx-chat-messagebox {
-  padding-top: 20px;
-}
-
 @media (max-width: 800px) {
   .empty-view-container #tile-view-container {
     align-self: center;
     width: 100% !important;
-    max-width: 379px !important;
+    
     height: 336px !important;
   }
 
@@ -61,7 +58,7 @@
 
   .dx-tile {
     width: calc(100% - 24px) !important;
-    max-width: 355px !important;
+    
     height: 96px !important;
   }
 }

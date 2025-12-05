@@ -13,7 +13,6 @@ To add all **SpeechRecognition** types (including `SpeechRecognitionEvent`) to y
 
 1. Install the `@types/dom-speech-recognition` package:
 
-        <!-- tab: CMD -->
         npm i -D @types/dom-speech-recognition
 
 2. Add `"dom-speech-recognition"` to the **types** array in your TypeScript configuration:

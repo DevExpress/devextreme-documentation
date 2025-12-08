@@ -17,7 +17,7 @@
 .empty-view-title {
   font-size: 20px;
   font-weight: 600;
-  font-family: Segoe UI;
+  font-family: "Segoe UI";
 }
 
 .empty-view-subtitle {
@@ -31,8 +31,7 @@
 
 #chat .dx-chat-messagebox {
   border-top-width: 0px;
-  padding: 40px;
-  padding-top: 20px;
+  padding: 20px 40px 40px 40px;
 }
 
 .empty-view-container {
@@ -46,38 +45,12 @@
 }
 
 #chat .dx-scrollable-content {
-    padding-right: 28px;
-    padding-left: 28px;
-  }
+  padding-right: 28px;
+  padding-left: 28px;
+}
 
-  #chat .dx-scrollable-content .dx-scrollable-content {
-    padding: 0;
-  }
-
-@media (max-width: 830px) {
-  #chat .dx-scrollable-content {
-    padding-right: 28px;
-    padding-left: 28px;
-  }
-
-  #chat .dx-scrollable-content .dx-scrollable-content {
-    padding: 0;
-  }
-
-  .empty-view-container #tile-view-container {
-    align-self: center;
-    width: 100% !important;
-    height: 336px !important;
-  }
-
-  #chat {
-    height: 660px !important;
-  }
-
-  .dx-tile {
-    width: calc(100% - 24px) !important;
-    height: 96px !important;
-  }
+#chat .dx-scrollable-content .dx-scrollable-content {
+  padding: 0;
 }
 
 .dx-chat-messagelist-empty-view {
@@ -109,15 +82,40 @@
 .tile-emoji {
   font-size: 28px;
   line-height: 36px;
-  font-family: Segoe UI;
+  font-family: "Segoe UI";
   text-align: center;
 }
 
 .tile-text {
   font-size: 14px;
   line-height: 20px;
-  font-family: Segoe UI;
+  font-family: "Segoe UI";
   font-weight: 600;
   align-self: end;
   text-align: center;
+}
+
+@media (max-width: 830px) {
+  #chat .dx-scrollable-content {
+    padding-right: 28px;
+    padding-left: 28px;
+  }
+
+  #chat .dx-scrollable-content .dx-scrollable-content {
+    padding: 0;
+  }
+
+  .empty-view-container #tile-view-container {
+    width: 100% !important;
+    height: 336px !important;
+  }
+
+  #chat {
+    height: 660px !important;
+  }
+
+  .dx-tile {
+    width: calc(100% - 24px) !important;
+    height: 96px !important;
+  }
 }

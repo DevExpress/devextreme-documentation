@@ -18,11 +18,11 @@ When a user presses or hovers over funnel items, they change their style to the 
 
     <!--HTML-->
     <dx-funnel ... >
-        <dxo-item>
-            <dxo-hover-style>
-                <dxo-hatching direction="left"></dxo-hatching>
-            </dxo-hover-style>
-        </dxo-item>
+        <dxo-funnel-item>
+            <dxo-funnel-hover-style>
+                <dxo-funnel-hatching direction="left"></dxo-funnel-hatching>
+            </dxo-funnel-hover-style>
+        </dxo-funnel-item>
     </dx-funnel>
 
     <!--TypeScript-->

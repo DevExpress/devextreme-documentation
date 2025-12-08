@@ -28,8 +28,8 @@ Use this property if you need to change the element in which the column chooser 
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-column-chooser container="#popupContainer" >
-        </dxo-column-chooser>
+        <dxo-{widget-name}-column-chooser container="#popupContainer" >
+        </dxo-{widget-name}-column-chooser>
     </dx-{widget-name}>
 
 ##### Vue

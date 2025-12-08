@@ -23,8 +23,8 @@ If you do not explicitly specify certain columns' [width](/api-reference/_hidden
     <!--HTML-->
     <dx-tree-list ...
         [columnMinWidth]="100">
-        <dxi-column dataField="Title" [width]="200"></dxi-column>
-        <dxi-column dataField="Address" [minWidth]="150"></dxi-column>
+        <dxi-tree-list-column dataField="Title" [width]="200"></dxi-tree-list-column>
+        <dxi-tree-list-column dataField="Address" [minWidth]="150"></dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->
@@ -191,7 +191,7 @@ The UI component allows a user to resize columns in two different modes: by chan
     <dx-tree-list ...
         [allowColumnResizing]="true"
         columnResizingMode="widget"> <!-- or 'nextColumn' -->
-        <dxi-column dataField="Title" [allowResizing]="false"></dxi-column>
+        <dxi-tree-list-column dataField="Title" [allowResizing]="false"></dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->

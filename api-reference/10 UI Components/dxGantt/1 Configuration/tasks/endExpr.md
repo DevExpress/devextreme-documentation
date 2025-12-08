@@ -43,10 +43,10 @@ If the field name in your data source differs from default 'end', use this prope
 
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxo-tasks ...
+        <dxo-gantt-tasks ...
             [dataSource]="tasks" 
             endExpr="endDate" >
-        </dxo-tasks>
+        </dxo-gantt-tasks>
         <!-- ... -->
     </dx-gantt>
 

@@ -55,17 +55,17 @@ Note that you should specify resources for appointments in your data source acco
 
     <!-- tab: app.component.html -->
     <dx-scheduler ... >
-        <dxi-resource
+        <dxi-scheduler-resource
             fieldExpr="roomId"
             label="Room"
             [dataSource]="rooms" >
-        </dxi-resource>
-        <dxi-resource
+        </dxi-scheduler-resource>
+        <dxi-scheduler-resource
             fieldExpr="assigneeId"
             label="Assignee"
             [dataSource]="assignees"
             [allowMultiple]="true" >
-        </dxi-resource>
+        </dxi-scheduler-resource>
         <!-- ... -->
     </dx-scheduler>
 

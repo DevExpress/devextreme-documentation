@@ -30,12 +30,12 @@ Generates space around the UI component.
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-margin
+        <dxo-{widget-name}-margin
             [top]="20"
             [bottom]="20"
             [left]="30"
             [right]="30">
-        </dxo-margin>
+        </dxo-{widget-name}-margin>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

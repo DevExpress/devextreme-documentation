@@ -25,9 +25,9 @@ The following code shows how to use the **customizeItems** function to sort lege
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-legend ...
+        <dxo-{widget-name}-legend ...
             [customizeItems]="sortLegendItems">
-        </dxo-legend>
+        </dxo-{widget-name}-legend>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

@@ -28,10 +28,10 @@ By default, the **agenda** view displays appointments for seven dates at a time 
     <!--HTML-->
     <dx-scheduler ...
         currentView="agenda">
-        <dxi-view
+        <dxi-scheduler-view
             type="agenda"
             [agendaDuration]="5">
-        </dxi-view>
+        </dxi-scheduler-view>
     </dx-scheduler>
 
     <!--TypeScript-->

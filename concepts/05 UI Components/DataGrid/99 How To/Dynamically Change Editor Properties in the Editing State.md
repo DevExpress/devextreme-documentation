@@ -34,12 +34,12 @@ Use the **editorOptions** parameter of [onEditorPreparing](/api-reference/10%20U
     <!-- tab: app.component.html -->
     <dx-data-grid ...
         (onEditorPreparing)="onEditorPreparing($event)">
-        <dxi-column dataField="FirstName"></dxi-column>
-        <dxi-column dataField="LastName"></dxi-column>
-        <dxo-editing
+        <dxi-data-grid-column dataField="FirstName"></dxi-data-grid-column>
+        <dxi-data-grid-column dataField="LastName"></dxi-data-grid-column>
+        <dxo-data-grid-editing
             [allowAdding]="true"
             [allowUpdating]="true">
-        </dxo-editing>
+        </dxo-data-grid-editing>
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->
@@ -210,8 +210,8 @@ Specify [setCellValue](/api-reference/_hidden/GridBaseColumn/setCellValue.md '/D
 
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
-        <dxi-column dataField="FirstName" [setCellValue]="setCellValue"></dxi-column>
-        <dxi-column dataField="LastName"></dxi-column>
+        <dxi-data-grid-column dataField="FirstName" [setCellValue]="setCellValue"></dxi-data-grid-column>
+        <dxi-data-grid-column dataField="LastName"></dxi-data-grid-column>
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->

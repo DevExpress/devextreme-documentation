@@ -23,14 +23,14 @@ Specify the [remoteOperations](/api-reference/10%20UI%20Components/dxDataGrid/1%
 #####Angular
 
     <!--HTML--><dx-data-grid ... >
-        <dxo-remote-operations
+        <dxo-data-grid-remote-operations
             [filtering]="true"
             [paging]="true"
             [sorting]="true"
             [summary]="true"
             [grouping]="true"
             [groupPaging]="true"> 
-        </dxo-remote-operations>
+        </dxo-data-grid-remote-operations>
     </dx-data-grid>
 
     <!--TypeScript-->

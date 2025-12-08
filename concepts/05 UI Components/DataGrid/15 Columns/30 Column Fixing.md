@@ -25,8 +25,8 @@ To allow this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Compo
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-column-fixing [enabled]="true"></dxo-column-fixing>
-        <dxi-column [allowFixing]="false" ... ></dxi-column>
+        <dxo-data-grid-column-fixing [enabled]="true"></dxo-data-grid-column-fixing>
+        <dxi-data-grid-column [allowFixing]="false" ... ></dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -116,7 +116,7 @@ If a column should be fixed initially, assign **true** to its [fixed](/api-refer
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column [fixed]="true" fixedPosition="sticky" ... ></dxi-column>
+        <dxi-data-grid-column [fixed]="true" fixedPosition="sticky" ... ></dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->

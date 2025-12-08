@@ -58,28 +58,28 @@ The code also shows how to configure the tab panel's [height](/api-reference/10%
     <dx-form
         [formData]="employee"
         [colCount]="2">
-        <dxi-item 
+        <dxi-form-item 
             itemType="group" 
             caption="Employee">
-            <dxi-item dataField="name"></dxi-item>
-            <dxi-item dataField="position"></dxi-item>
-            <dxi-item dataField="hireDate"></dxi-item>
-            <dxi-item dataField="officeNumber"></dxi-item>
-        </dxi-item>
-        <dxi-item itemType="group" caption="Personal Information">
-            <dxi-item itemType="tabbed">
-                <dxo-tab-panel-options [height]="260">
-                </dxo-tab-panel-options>
-                <dxi-tab title="Contacts">
-                	<dxi-item dataField="skype"></dxi-item>
-                    <dxi-item dataField="phone"></dxi-item>
-                    <dxi-item dataField="email"></dxi-item>
-                </dxi-tab>
-                <dxi-tab title="Note">
-                    <dxi-item dataField="notes"></dxi-item>
-                </dxi-tab>
-            </dxi-item>
-        </dxi-item>
+            <dxi-form-item dataField="name"></dxi-form-item>
+            <dxi-form-item dataField="position"></dxi-form-item>
+            <dxi-form-item dataField="hireDate"></dxi-form-item>
+            <dxi-form-item dataField="officeNumber"></dxi-form-item>
+        </dxi-form-item>
+        <dxi-form-item itemType="group" caption="Personal Information">
+            <dxi-form-item itemType="tabbed">
+                <dxo-form-tab-panel-options [height]="260">
+                </dxo-form-tab-panel-options>
+                <dxi-form-tab title="Contacts">
+                	<dxi-form-item dataField="skype"></dxi-form-item>
+                    <dxi-form-item dataField="phone"></dxi-form-item>
+                    <dxi-form-item dataField="email"></dxi-form-item>
+                </dxi-form-tab>
+                <dxi-form-tab title="Note">
+                    <dxi-form-item dataField="notes"></dxi-form-item>
+                </dxi-form-tab>
+            </dxi-form-item>
+        </dxi-form-item>
     </dx-form>
 
     <!-- tab: app.component.ts -->

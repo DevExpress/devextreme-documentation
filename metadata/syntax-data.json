@@ -332,26 +332,6 @@
       "react": "_ui_card_view_CardRemovingEvent",
       "vue": "Dx_ui_card_view_CardRemovingEvent"
     },
-    "_ui_card_view_CardSavedEvent": {
-      "angular": "dxo-ui-card-view--card-saved-event",
-      "react": "_ui_card_view_CardSavedEvent",
-      "vue": "Dx_ui_card_view_CardSavedEvent"
-    },
-    "_ui_card_view_CardSavedEvent.changes": {
-      "angular": "dxi-change",
-      "react": "Change",
-      "vue": "DxChange"
-    },
-    "_ui_card_view_CardSavingEvent": {
-      "angular": "dxo-ui-card-view--card-saving-event",
-      "react": "_ui_card_view_CardSavingEvent",
-      "vue": "Dx_ui_card_view_CardSavingEvent"
-    },
-    "_ui_card_view_CardSavingEvent.changes": {
-      "angular": "dxi-change",
-      "react": "Change",
-      "vue": "DxChange"
-    },
     "_ui_card_view_CardUpdatedEvent": {
       "angular": "dxo-ui-card-view--card-updated-event",
       "react": "_ui_card_view_CardUpdatedEvent",
@@ -453,6 +433,31 @@
       "angular": "dxo-ui-card-view--init-new-card-event",
       "react": "_ui_card_view_InitNewCardEvent",
       "vue": "Dx_ui_card_view_InitNewCardEvent"
+    },
+    "_ui_card_view_OptionChangedEvent": {
+      "angular": "dxo-ui-card-view--option-changed-event",
+      "react": "_ui_card_view_OptionChangedEvent",
+      "vue": "Dx_ui_card_view_OptionChangedEvent"
+    },
+    "_ui_card_view_SavedEvent": {
+      "angular": "dxo-ui-card-view--saved-event",
+      "react": "_ui_card_view_SavedEvent",
+      "vue": "Dx_ui_card_view_SavedEvent"
+    },
+    "_ui_card_view_SavedEvent.changes": {
+      "angular": "dxi-change",
+      "react": "Change",
+      "vue": "DxChange"
+    },
+    "_ui_card_view_SavingEvent": {
+      "angular": "dxo-ui-card-view--saving-event",
+      "react": "_ui_card_view_SavingEvent",
+      "vue": "Dx_ui_card_view_SavingEvent"
+    },
+    "_ui_card_view_SavingEvent.changes": {
+      "angular": "dxi-change",
+      "react": "Change",
+      "vue": "DxChange"
     },
     "_ui_card_view_SelectionChangedEvent": {
       "angular": "dxo-ui-card-view--selection-changed-event",
@@ -6111,6 +6116,14 @@
       "react": "Item",
       "vue": "DxItem"
     },
+    "appointmentFormProperties": {
+      "angular": "dxo-appointment-form-properties",
+      "react": "AppointmentFormProperties",
+      "vue": "DxAppointmentFormProperties"
+    },
+    "appointmentFormProperties.iconsShowMode": {
+      "vue": "icons-show-mode"
+    },
     "arrayStoreOptions": {
       "vue": "array-store-options"
     },
@@ -8426,12 +8439,6 @@
     "dxCardViewOptions.onCardRemoving": {
       "vue": "@card-removing"
     },
-    "dxCardViewOptions.onCardSaved": {
-      "vue": "@card-saved"
-    },
-    "dxCardViewOptions.onCardSaving": {
-      "vue": "@card-saving"
-    },
     "dxCardViewOptions.onCardUpdated": {
       "vue": "@card-updated"
     },
@@ -8476,6 +8483,15 @@
     },
     "dxCardViewOptions.onInitNewCard": {
       "vue": "@init-new-card"
+    },
+    "dxCardViewOptions.onOptionChanged": {
+      "vue": "@option-changed"
+    },
+    "dxCardViewOptions.onSaved": {
+      "vue": "@saved"
+    },
+    "dxCardViewOptions.onSaving": {
+      "vue": "@saving"
     },
     "dxCardViewOptions.onSelectionChanged": {
       "vue": "@selection-changed"
@@ -17990,20 +18006,6 @@
       "angular": "dxo-form",
       "react": "Form",
       "vue": "DxForm"
-    },
-    "dxSchedulerOptions.editing.form.iconsShowMode": {
-      "vue": "icons-show-mode"
-    },
-    "dxSchedulerOptions.editing.form.items": {
-      "angular": "dxi-item",
-      "react": "Item",
-      "vue": "DxItem"
-    },
-    "dxSchedulerOptions.editing.form.onCanceled": {
-      "vue": "@canceled"
-    },
-    "dxSchedulerOptions.editing.form.onSaved": {
-      "vue": "@saved"
     },
     "dxSchedulerOptions.editing.popup": {
       "angular": "dxo-popup",

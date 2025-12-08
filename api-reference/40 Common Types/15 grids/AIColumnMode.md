@@ -6,7 +6,7 @@ references: ColumnAI.Options.mode
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies how an AI column sends requests.
 
 ---
 <!-- Description goes here -->

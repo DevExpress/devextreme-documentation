@@ -48,7 +48,7 @@ The built-in shape types are shown in the [Shape Types](/concepts/05%20UI%20Comp
 
     <!-- tab: app.component.html -->
     <dx-diagram>
-        <dxo-nodes typeExpr="itemTypeExpr"></dxo-nodes>
+        <dxo-diagram-nodes typeExpr="itemTypeExpr"></dxo-diagram-nodes>
     </dx-diagram>
 
     <!-- tab: app.component.ts -->

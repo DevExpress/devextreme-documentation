@@ -16,9 +16,9 @@ Because **editorOptions** depend on the **dataType**, they cannot be typed and a
 
     <!-- tab: app.component.html -->
     <dx-filter-builder ... >
-        <dxi-field ...
+        <dxi-filter-builder-field ...
             [editorOptions]="{ format: 'currency', showClearButton: true }">
-        </dxi-field>
+        </dxi-filter-builder-field>
     </dx-filter-builder>
 
     <!-- tab: app.module.ts -->

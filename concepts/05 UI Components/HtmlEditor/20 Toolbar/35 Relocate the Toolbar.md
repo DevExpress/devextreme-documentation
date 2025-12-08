@@ -23,9 +23,9 @@ In the following code, the toolbar is placed in a separate `<div>` under the HTM
 
     <!--HTML-->
     <dx-html-editor>
-        <dxo-toolbar ...
+        <dxo-html-editor-toolbar ...
             container="#htmlEditorFooter">
-        </dxo-toolbar>
+        </dxo-html-editor-toolbar>
     </dx-html-editor>
     <div id="htmlEditorFooter"></div>
 

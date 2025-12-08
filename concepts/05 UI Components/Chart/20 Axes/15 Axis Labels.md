@@ -22,12 +22,12 @@ You can configure axis labels using the [label](/api-reference/10%20UI%20Compone
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis> <!-- or dxi-value-axis, or dxo-common-axis-settings -->
-            <dxo-label
+        <dxo-chart-argument-axis> <!-- or dxi-value-axis, or dxo-common-axis-settings -->
+            <dxo-chart-label
                 displayMode="stagger"
                 [staggeringSpacing]="10">
-            </dxo-label>
-        </dxo-argument-axis>
+            </dxo-chart-label>
+        </dxo-chart-argument-axis>
     </dx-chart>
 
     <!--TypeScript-->
@@ -121,12 +121,12 @@ Another noteworthy property is [overlappingBehavior](/api-reference/10%20UI%20Co
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis> <!-- or dxi-value-axis, or dxo-common-axis-settings -->
-            <dxo-label
+        <dxo-chart-argument-axis> <!-- or dxi-value-axis, or dxo-common-axis-settings -->
+            <dxo-chart-label
                 overlappingBehavior="rotate"
                 [rotationAngle]="45">
-            </dxo-label>
-        </dxo-argument-axis>
+            </dxo-chart-label>
+        </dxo-chart-argument-axis>
     </dx-chart>
 
     <!--TypeScript-->

@@ -63,7 +63,7 @@
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} [dataSource]="{widgetName}DataSource">
-        <dxi-series argumentField="fruit" valueField="count"></dxi-series>
+        <dxi-{widget-name}-series argumentField="fruit" valueField="count"></dxi-{widget-name}-series>
     </dx-{widget-name}>
 
     <!-- tab: app.module.ts -->

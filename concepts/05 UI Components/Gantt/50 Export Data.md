@@ -44,13 +44,13 @@ You can call this method at any point in your application. In this example, this
 
     <!-- tab: app.component.html -->
     <dx-gantt ...>
-        <dxo-toolbar>
+        <dxo-gantt-toolbar>
             <!-- ... -->    
-            <dxi-item
+            <dxi-gantt-item
                 widget="dxButton"
                 [options]="exportButtonOptions">
-            </dxi-item>
-        </dxo-toolbar>
+            </dxi-gantt-item>
+        </dxo-gantt-toolbar>
     </dx-gantt>
 
     <!-- tab: app.component.ts -->

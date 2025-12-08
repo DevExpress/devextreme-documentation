@@ -52,28 +52,28 @@ In the following code, the items with the specified **dataField** are simple ite
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-editing
+        <dxo-tree-list-editing
             [allowUpdating]="true"
             mode="form">
-            <dxo-form>
-                <dxi-item itemType="group" caption="Personal Data">
-                    <dxi-item dataField="Prefix"></dxi-item>
-                    <dxi-item dataField="Full_Name"></dxi-item>
-                    <dxi-item dataField="Position"></dxi-item>
-                    <dxi-item dataField="Duties" editorType="dxTextArea"></dxi-item>
-                </dxi-item>
-                <dxi-item itemType="group" caption="Contacts">
-                    <dxi-item dataField="Email"></dxi-item>
-                    <dxi-item dataField="Skype"></dxi-item>
-                </dxi-item>
-            </dxo-form>
-        </dxo-editing>
-        <dxi-column dataField="Full_Name"></dxi-column>
-        <dxi-column dataField="Prefix"></dxi-column>
-        <dxi-column dataField="Position"></dxi-column>
-        <dxi-column dataField="Duties"></dxi-column>
-        <dxi-column dataField="Email"></dxi-column>
-        <dxi-column dataField="Skype"></dxi-column>
+            <dxo-tree-list-form>
+                <dxi-tree-list-item itemType="group" caption="Personal Data">
+                    <dxi-tree-list-item dataField="Prefix"></dxi-tree-list-item>
+                    <dxi-tree-list-item dataField="Full_Name"></dxi-tree-list-item>
+                    <dxi-tree-list-item dataField="Position"></dxi-tree-list-item>
+                    <dxi-tree-list-item dataField="Duties" editorType="dxTextArea"></dxi-tree-list-item>
+                </dxi-tree-list-item>
+                <dxi-tree-list-item itemType="group" caption="Contacts">
+                    <dxi-tree-list-item dataField="Email"></dxi-tree-list-item>
+                    <dxi-tree-list-item dataField="Skype"></dxi-tree-list-item>
+                </dxi-tree-list-item>
+            </dxo-tree-list-form>
+        </dxo-tree-list-editing>
+        <dxi-tree-list-column dataField="Full_Name"></dxi-tree-list-column>
+        <dxi-tree-list-column dataField="Prefix"></dxi-tree-list-column>
+        <dxi-tree-list-column dataField="Position"></dxi-tree-list-column>
+        <dxi-tree-list-column dataField="Duties"></dxi-tree-list-column>
+        <dxi-tree-list-column dataField="Email"></dxi-tree-list-column>
+        <dxi-tree-list-column dataField="Skype"></dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->

@@ -15,7 +15,7 @@ A user can interact with the legend by pausing on legend items. When a user does
 ##### Angular
 
     <!--HTML--><dx-pie-chart>
-        <dxo-legend hoverMode="none"></dxo-legend>
+        <dxo-pie-chart-legend hoverMode="none"></dxo-pie-chart-legend>
     </dx-pie-chart>
 
     <!--TypeScript-->

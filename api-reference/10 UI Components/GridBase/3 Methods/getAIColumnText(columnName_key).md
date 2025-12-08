@@ -3,16 +3,16 @@ id: GridBase.getAIColumnText(columnName, key)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Gets AI-generated text from a specific cell within an AI column.
 
 ##### return: String
-<!-- Description goes here -->
+The AI-generated text.
 
 ##### param(columnName): String
-<!-- Description goes here -->
+The AI column name.
 
 ##### param(key): any
-<!-- Description goes here -->
+The {WidgetName} record [key](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/keyExpr.md '{basewidgetpath}/Configuration/#keyExpr') value.
 
 ---
-<!-- Description goes here -->
+Call this method to access AI column values.

@@ -141,15 +141,15 @@ The editor that will be used in a particular simple item depends on the type of 
     <!--HTML-->
     <dx-form
         [(formData)]="employee">
-        <dxi-item dataField="name"></dxi-item>
-        <dxi-item dataField="hireDate"
+        <dxi-form-item dataField="name"></dxi-form-item>
+        <dxi-form-item dataField="hireDate"
             editorType="dxCalendar"
             [editorOptions]="{ value: new Date() }">
-        </dxi-item>
-        <dxi-item dataField="notes"
+        </dxi-form-item>
+        <dxi-form-item dataField="notes"
             editorType="dxTextArea"
             [editorOptions]="{ placeholder: 'Add notes...' }">
-        </dxi-item>
+        </dxi-form-item>
     </dx-form>
 
     <!--TypeScript-->

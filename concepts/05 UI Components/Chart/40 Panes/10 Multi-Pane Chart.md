@@ -108,8 +108,8 @@ Bind each of them to a pane using the [pane](/api-reference/10%20UI%20Components
 
         <!--HTML--><dx-chart ... >
             ...
-            <dxi-value-axis pane="topPane"></dxi-value-axis>
-            <dxi-value-axis pane="bottomPane"></dxi-value-axis>
+            <dxi-chart-value-axis pane="topPane"></dxi-chart-value-axis>
+            <dxi-chart-value-axis pane="bottomPane"></dxi-chart-value-axis>
         </dx-chart>
 
         <!--TypeScript-->
@@ -199,12 +199,12 @@ Bind each series to a pane using the [pane](/api-reference/10%20UI%20Components/
         <!--HTML--><dx-chart ...
             defaultPane="topPane">
             ...
-            <dxi-series pane="topPane"></dxi-series>
-            <dxi-series pane="bottomPane"></dxi-series>
-            <dxi-series pane="topPane"></dxi-series>
-            <dxi-series>
+            <dxi-chart-series pane="topPane"></dxi-chart-series>
+            <dxi-chart-series pane="bottomPane"></dxi-chart-series>
+            <dxi-chart-series pane="topPane"></dxi-chart-series>
+            <dxi-chart-series>
                 <!-- This series will be bound to the default pane -->
-            </dxi-series>
+            </dxi-chart-series>
         </dx-chart>
 
         <!--TypeScript-->
@@ -296,13 +296,13 @@ If all panes in a multi-pane chart should have uniform settings, you can specify
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-common-pane-settings
+        <dxo-chart-common-pane-settings
             backgroundColor="yellow">
-            <dxo-border
+            <dxo-chart-border
                 [visible]="true"
                 [width]="2">
-            </dxo-border>
-        </dxo-common-pane-settings>
+            </dxo-chart-border>
+        </dxo-chart-common-pane-settings>
     </dx-chart>
 
     <!--TypeScript-->

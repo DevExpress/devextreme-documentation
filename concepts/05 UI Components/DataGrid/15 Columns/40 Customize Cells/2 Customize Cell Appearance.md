@@ -145,10 +145,10 @@ The example below shows how to use the [columns](/api-reference/10%20UI%20Compon
 
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
-        <dxi-column
+        <dxi-data-grid-column
             dataField="Speed"
             cellTemplate="limitTemplate"
-        ></dxi-column>
+        ></dxi-data-grid-column>
         <div *dxTemplate="let cellInfo of 'limitTemplate'">
             <div [ngClass]="{'my-class': cellInfo.data.Speed > cellInfo.data.SpeedLimit}">
                 {{cellInfo.value}}

@@ -78,11 +78,11 @@ When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(optio
     <dx-data-grid ...
         (onExporting)="exportGrid($event)">
         <!-- ... -->
-        <dxo-export 
+        <dxo-data-grid-export 
             [enabled]="true"
             [formats]="['xlsx', 'pdf']"
         >
-        </dxo-export>
+        </dxo-data-grid-export>
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->

@@ -59,39 +59,39 @@ Users can search for the filter values in the header filter. Enable the **header
     
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxo-header-filter 
+        <dxo-gantt-header-filter 
             [visible]="true"
             [allowSearch]="true">
-        </dxo-header-filter>
+        </dxo-gantt-header-filter>
 
-        <dxi-column 
+        <dxi-gantt-column 
     	    dataField="title"
             caption="Subject"
             filterType = "exclude">
   		    
-            <dxo-header-filter 
+            <dxo-gantt-header-filter 
                 searchMode="startswith"
             />
             
-        </dxi-column>
+        </dxi-gantt-column>
 
-        <dxi-column
+        <dxi-gantt-column
             dataField="start"
             caption="Start Date"
             dataType="date"
             [allowHeaderFiltering]="false">
-        </dxi-column>
+        </dxi-gantt-column>
         
-        <dxi-column
+        <dxi-gantt-column
             dataField="end"
             caption="End Date"
             dataType="date">
             
-            <dxo-header-filter 
+            <dxo-gantt-header-filter 
                 groupInterval="month"
             />
 
-        </dxi-column>
+        </dxi-gantt-column>
         <!--...-->
     </dx-gantt>
     
@@ -327,15 +327,15 @@ The **Gantt** allows you to define initial filter settings in code. Specify the 
     
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxo-header-filter 
+        <dxo-gantt-header-filter 
             [visible]="true">
-        </dxo-header-filter>
+        </dxo-gantt-header-filter>
         
-        <dxi-column 
+        <dxi-gantt-column 
     	    dataField="title"
             caption="Subject"
             [filterValues]="['Deploy software', 'Deployment', 'Deployment complete', 'Testing', 'Unit testing']">
-        </dxi-column>
+        </dxi-gantt-column>
         <!--...-->
     </dx-gantt>
     

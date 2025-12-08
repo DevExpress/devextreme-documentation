@@ -116,21 +116,21 @@ To define resource kinds, assign an array of objects specifying them to the [res
     <!--HTML-->
     <dx-scheduler ... >
         <!-- Definition of the first resource kind -->
-        <dxi-resource
+        <dxi-scheduler-resource
             fieldExpr="roomId"      <!-- "roomId" is the data field in an appointment object that binds it to the resource -->
             label="Room"            <!-- Label displayed for this resource kind in the appointment edit form -->
             [dataSource]="rooms">
-        </dxi-resource>
+        </dxi-scheduler-resource>
 
         <!-- Definition of the second resource kind -->
-        <dxi-resource
+        <dxi-scheduler-resource
             fieldExpr="teacherId"
             valueExpr="guid"            <!-- Resource instance's field used instead of "id" -->
             colorExpr="clr"             <!-- Resource instance's field used instead of "color" -->
             displayExpr="name"          <!-- Resource instance's field used instead of "text" -->
             label="Teacher"
             [dataSource]="teachers">
-        </dxi-resource>
+        </dxi-scheduler-resource>
     </dx-scheduler>
 
 ##### Vue

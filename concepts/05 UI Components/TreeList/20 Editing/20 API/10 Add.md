@@ -112,7 +112,7 @@ You can specify initial values for a newly added row in the [onInitNewRow](/api-
     <!--HTML-->
     <dx-tree-list ...
         (onInitNewRow)="onInitNewRow($event)">
-        <dxi-column dataField="Hire_Date" dataType="date"></dxi-column>
+        <dxi-tree-list-column dataField="Hire_Date" dataType="date"></dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->

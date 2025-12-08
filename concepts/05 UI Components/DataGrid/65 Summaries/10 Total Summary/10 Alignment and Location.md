@@ -25,14 +25,14 @@ A summary item is under the [column providing data](/api-reference/10%20UI%20Com
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-summary>
-            <dxi-total-item
+        <dxo-data-grid-summary>
+            <dxi-data-grid-total-item
                 column="Amount"
                 summaryType="avg"
                 showInColumn="StoreCity"
                 alignment="center">     <!-- or "left" | "right" -->
-            </dxi-total-item>
-        </dxo-summary>
+            </dxi-data-grid-total-item>
+        </dxo-data-grid-summary>
     </dx-data-grid>
 
     <!--TypeScript-->

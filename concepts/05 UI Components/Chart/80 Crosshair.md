@@ -22,9 +22,9 @@ To enable the crosshair, set the **crosshair**.[enabled](/api-reference/10%20UI%
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-crosshair [enabled]="true">
-            <dxo-label [visible]="true"></dxo-label>
-        </dxo-crosshair>
+        <dxo-chart-crosshair [enabled]="true">
+            <dxo-chart-label [visible]="true"></dxo-chart-label>
+        </dxo-chart-crosshair>
     </dx-chart>
 
     <!--TypeScript-->

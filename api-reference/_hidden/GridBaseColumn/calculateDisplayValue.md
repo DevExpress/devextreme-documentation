@@ -34,10 +34,10 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
 
     <!--HTML-->
     <dx-{widget-name} ... >
-        <dxi-column
+        <dxi-{widget-name}-column
             dataField="countryID" <!-- provides values for editing -->
             calculateDisplayValue="country"> <!-- provides display values -->
-        </dxi-column>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!--TypeScript-->
@@ -149,10 +149,10 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
 
     <!--HTML-->
     <dx-{widget-name} ... >
-        <dxi-column
+        <dxi-{widget-name}-column
             dataField="countryID" <!-- provides values for editing -->
             [calculateDisplayValue]="getCountryWithCapital"> <!-- combines display values -->
-        </dxi-column>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!--TypeScript-->

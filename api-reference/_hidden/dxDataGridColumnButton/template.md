@@ -66,12 +66,12 @@ A template name or container.
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxi-column type="buttons">
-            <dxi-button
+        <dxi-{widget-name}-column type="buttons">
+            <dxi-{widget-name}-button
                 // ...
                 template="buttonTemplate"
-            ></dxi-button>
-        </dxi-column>
+            ></dxi-{widget-name}-button>
+        </dxi-{widget-name}-column>
 
         <div *dxTemplate="let data of 'buttonTemplate'" style="display:inline-block">
             <div class="dx-icon-email"></div>

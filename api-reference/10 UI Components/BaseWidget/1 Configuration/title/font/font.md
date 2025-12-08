@@ -29,11 +29,11 @@ The following code sample illustrates how to set this property:
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-title ... >
-            <dxo-font
+        <dxo-{widget-name}-title ... >
+            <dxo-{widget-name}-font
                 color="black">
-            </dxo-font>
-        </dxo-title>
+            </dxo-{widget-name}-font>
+        </dxo-{widget-name}-title>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

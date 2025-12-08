@@ -42,14 +42,14 @@ Use this property to make the item a nested Splitter UI component.
 
     <!-- tab: app.component.html -->
     <dx-splitter id="splitter" orientation="vertical">
-        <dxi-item text="Top Panel"></dxi-item>
-        <dxi-item>
+        <dxi-splitter-item text="Top Panel"></dxi-splitter-item>
+        <dxi-splitter-item>
             <dx-splitter>
-                <dxi-item text="Nested Left Panel"></dxi-item>
-                <dxi-item text="Nested Central Panel"></dxi-item>
-                <dxi-item text="Nested Right Panel"></dxi-item>
+                <dxi-splitter-item text="Nested Left Panel"></dxi-splitter-item>
+                <dxi-splitter-item text="Nested Central Panel"></dxi-splitter-item>
+                <dxi-splitter-item text="Nested Right Panel"></dxi-splitter-item>
             </dx-splitter>
-        </dxi-item>
+        </dxi-splitter-item>
     </dx-splitter>
 
 ##### Vue

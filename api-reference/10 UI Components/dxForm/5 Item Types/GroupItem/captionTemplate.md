@@ -52,15 +52,15 @@ The following code example adds an icon to caption content:
 
     <!-- tab: app.component.html -->
     <dx-form ... >
-        <dxi-item
+        <dxi-form-item
             itemType="group"
             caption="Personal Data"
             captionTemplate="caption-template"
         >
-                <dxi-item dataField="firstName"></dxi-item>
-                <dxi-item dataField="lastName"></dxi-item>
-                <dxi-item dataField="position"></dxi-item>
-        </dxi-item>
+                <dxi-form-item dataField="firstName"></dxi-form-item>
+                <dxi-form-item dataField="lastName"></dxi-form-item>
+                <dxi-form-item dataField="position"></dxi-form-item>
+        </dxi-form-item>
         <div *dxTemplate="let data of 'caption-template'">
             <i class="dx-icon dx-icon-user"></i>
             {{ data.caption }}

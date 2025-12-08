@@ -72,15 +72,15 @@ In the following code snippet, `Author Name` is a [lookup column](/concepts/05%2
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column
+        <dxi-data-grid-column
             dataField="authorId"
             caption="Author Name">
-            <dxo-lookup
+            <dxo-data-grid-lookup
                 [dataSource]="lookupDataSource"
                 displayExpr="name"
                 valueExpr="id"> <!-- "id" contains the same values as "authorId" -->
-            </dxo-lookup>
-        </dxi-column>
+            </dxo-data-grid-lookup>
+        </dxi-data-grid-column>
         <!-- ... -->
     </dx-data-grid>
 

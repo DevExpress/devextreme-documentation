@@ -24,10 +24,10 @@ Set [export](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/ex
 ##### Angular
 
     <!--HTML--><dx-sankey ... >
-        <dxo-export
+        <dxo-sankey-export
             [enabled]="true"
             [printingEnabled]="false">
-        </dxo-export>
+        </dxo-sankey-export>
     </dx-sankey>
 
     <!--TypeScript-->
@@ -109,11 +109,11 @@ Change the **export**.[formats](/api-reference/10%20UI%20Components/BaseWidget/1
 ##### Angular
 
     <!--HTML--><dx-sankey ... >
-        <dxo-export
+        <dxo-sankey-export
             [enabled]="true"
             [formats]="['PNG', 'JPEG']"
             fileName="exported_sankey">
-        </dxo-export>
+        </dxo-sankey-export>
     </dx-sankey>
 
     <!--TypeScript-->

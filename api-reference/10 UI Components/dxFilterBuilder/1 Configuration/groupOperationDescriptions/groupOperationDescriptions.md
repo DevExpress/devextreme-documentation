@@ -27,9 +27,9 @@ The following code sample illustrates how to set this property:
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-group-operation-descriptions
+        <dxo-{widget-name}-group-operation-descriptions
             and="Plus">
-        </dxo-group-operation-descriptions>
+        </dxo-{widget-name}-group-operation-descriptions>
     </dx-{widget-name}>
 
     <!-- tab: app.module.ts -->

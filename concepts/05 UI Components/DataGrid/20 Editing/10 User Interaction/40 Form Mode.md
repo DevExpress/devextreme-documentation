@@ -54,28 +54,28 @@ In the following code, the items with the specified **dataField** are simple ite
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-editing
+        <dxo-data-grid-editing
             [allowUpdating]="true"
             mode="form">
-            <dxo-form>
-                <dxi-item itemType="group" caption="Personal Data">
-                    <dxi-item dataField="Prefix"></dxi-item>
-                    <dxi-item dataField="Full_Name"></dxi-item>
-                    <dxi-item dataField="Position"></dxi-item>
-                    <dxi-item dataField="Duties" editorType="dxTextArea"></dxi-item>
-                </dxi-item>
-                <dxi-item itemType="group" caption="Contacts">
-                    <dxi-item dataField="Email"></dxi-item>
-                    <dxi-item dataField="Skype"></dxi-item>
-                </dxi-item>
-            </dxo-form>
-        </dxo-editing>
-        <dxi-column dataField="Full_Name"></dxi-column>
-        <dxi-column dataField="Prefix"></dxi-column>
-        <dxi-column dataField="Position"></dxi-column>
-        <dxi-column dataField="Duties"></dxi-column>
-        <dxi-column dataField="Email"></dxi-column>
-        <dxi-column dataField="Skype"></dxi-column>
+            <dxo-data-grid-form>
+                <dxi-data-grid-item itemType="group" caption="Personal Data">
+                    <dxi-data-grid-item dataField="Prefix"></dxi-data-grid-item>
+                    <dxi-data-grid-item dataField="Full_Name"></dxi-data-grid-item>
+                    <dxi-data-grid-item dataField="Position"></dxi-data-grid-item>
+                    <dxi-data-grid-item dataField="Duties" editorType="dxTextArea"></dxi-data-grid-item>
+                </dxi-data-grid-item>
+                <dxi-data-grid-item itemType="group" caption="Contacts">
+                    <dxi-data-grid-item dataField="Email"></dxi-data-grid-item>
+                    <dxi-data-grid-item dataField="Skype"></dxi-data-grid-item>
+                </dxi-data-grid-item>
+            </dxo-data-grid-form>
+        </dxo-data-grid-editing>
+        <dxi-data-grid-column dataField="Full_Name"></dxi-data-grid-column>
+        <dxi-data-grid-column dataField="Prefix"></dxi-data-grid-column>
+        <dxi-data-grid-column dataField="Position"></dxi-data-grid-column>
+        <dxi-data-grid-column dataField="Duties"></dxi-data-grid-column>
+        <dxi-data-grid-column dataField="Email"></dxi-data-grid-column>
+        <dxi-data-grid-column dataField="Skype"></dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->

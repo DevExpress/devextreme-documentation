@@ -9,10 +9,10 @@ A column is considered hidden when its [visible](/api-reference/_hidden/GridBase
 
     <!-- tab: app.component.html -->
     <dx-tree-list ... >
-        <dxi-column
+        <dxi-tree-list-column
             dataField="Email"
             [(visible)]="isEmailVisible"
-        ></dxi-column>
+        ></dxi-tree-list-column>
     </dx-tree-list>
 
     <!-- tab: app.component.ts -->

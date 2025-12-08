@@ -33,13 +33,13 @@ Configures the column chooser's search functionality.
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-column-chooser ... >
-            <dxo-search
+        <dxo-{widget-name}-column-chooser ... >
+            <dxo-{widget-name}-search
                 [editorOptions]="searchEditorOptions"
                 [enabled]="true"
                 [timeout]="800"
-            ></dxo-search>
-        </dxo-column-chooser>
+            ></dxo-{widget-name}-search>
+        </dxo-{widget-name}-column-chooser>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

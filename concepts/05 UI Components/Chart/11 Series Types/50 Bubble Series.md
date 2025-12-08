@@ -35,12 +35,12 @@ Note that **Bubble** series require an additional data field that provides size 
     <dx-chart
         [minBubbleSize]="14"
         [maxBubbleSize]="0.3">
-        <dxi-series type="bubble" sizeField="size"></dxi-series>
-        <dxi-series ... ></dxi-series>
+        <dxi-chart-series type="bubble" sizeField="size"></dxi-chart-series>
+        <dxi-chart-series ... ></dxi-chart-series>
         ...
-        <dxo-common-series-settings>
+        <dxo-chart-common-series-settings>
             <dxo-bubble ... ></dxo-bubble>
-        </dxo-common-series-settings>
+        </dxo-chart-common-series-settings>
     </dx-chart>
 
     <!--TypeScript-->

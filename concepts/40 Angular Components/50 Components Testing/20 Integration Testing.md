@@ -47,7 +47,7 @@ Add the test code. This code creates the DataGrid and calls the **addRow** and *
         id="gridContainer"
         [dataSource]="dataSource"
     >
-        <dxo-editing mode="batch"></dxo-editing>
+        <dxo-data-grid-editing mode="batch"></dxo-data-grid-editing>
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->

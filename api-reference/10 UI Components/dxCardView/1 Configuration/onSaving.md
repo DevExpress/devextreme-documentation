@@ -1,19 +1,19 @@
 ---
-id: dxCardView.Options.onCardSaving
+id: dxCardView.Options.onSaving
 type: function(e)
 ---
 ---
 ##### shortDescription
 A function that is executed before pending card changes are saved.
 
-##### param(e): ui/card_view:CardSavingEvent
+##### param(e): ui/card_view:SavingEvent
 Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
 Set this field to `true` if the default saving logic should be disabled.
 
 ##### field(e.changes): Array<DataChange>
-Pending row changes; a copy of the **editing**.[changes](/api-reference/10%20UI%20Components/dxCardView/9%20Types/dxCardViewEditing/changes.md '{basewidgetpath}/Configuration/editing/changes/') array. Includes only card changes, unlike [onCardSaved](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/onCardSaved.md '{basewidgetpath}/Configuration/#onCardSaved'), which contains all card data (including changes).
+Pending row changes; a copy of the **editing**.[changes](/api-reference/10%20UI%20Components/dxCardView/9%20Types/dxCardViewEditing/changes.md '{basewidgetpath}/Configuration/editing/changes/') array. Includes only card changes, unlike [onSaved](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/onSaved.md '{basewidgetpath}/Configuration/#onSaved'), which contains all card data (including changes).
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.

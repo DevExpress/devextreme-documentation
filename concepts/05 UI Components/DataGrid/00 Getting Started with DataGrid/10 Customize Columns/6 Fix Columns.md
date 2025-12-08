@@ -26,12 +26,12 @@ The following code fixes the `FullName` column to the default position and allow
 
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
-        <dxi-column
+        <dxi-data-grid-column
             dataField="FullName"
             [fixed]="true">
-        </dxi-column>
+        </dxi-data-grid-column>
         <!-- ... -->
-        <dxo-column-fixing [enabled]="true"></dxo-column-fixing>
+        <dxo-data-grid-column-fixing [enabled]="true"></dxo-data-grid-column-fixing>
     </dx-data-grid>
 
 ##### Vue

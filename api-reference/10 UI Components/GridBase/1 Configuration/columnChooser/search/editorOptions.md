@@ -32,12 +32,12 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-column-chooser ... >
-            <dxo-search
+        <dxo-{widget-name}-column-chooser ... >
+            <dxo-{widget-name}-search
                 [editorOptions]="searchEditorOptions"
                 // ...
-            ></dxo-search>
-        </dxo-column-chooser>
+            ></dxo-{widget-name}-search>
+        </dxo-{widget-name}-column-chooser>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

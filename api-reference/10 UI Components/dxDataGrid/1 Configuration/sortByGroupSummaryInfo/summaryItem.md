@@ -32,16 +32,16 @@ The **summaryItem** property accepts one of the following values.
 
         <!--HTML-->
         <dx-data-grid ... >
-            <dxo-summary>
-                <dxi-group-item
+            <dxo-data-grid-summary>
+                <dxi-data-grid-group-item
                     column="Age"
                     summaryType="avg"
                     name="Average Age Group Summary">
-                </dxi-group-item>
-            </dxo-summary>
-            <dxi-sort-by-group-summary-info 
+                </dxi-data-grid-group-item>
+            </dxo-data-grid-summary>
+            <dxi-data-grid-sort-by-group-summary-info 
                 summaryItem="Average Age Group Summary"> 
-            </dxi-sort-by-group-summary-info>
+            </dxi-data-grid-sort-by-group-summary-info>
         </dx-data-grid>
 
         <!--TypeScript-->
@@ -148,15 +148,15 @@ The **summaryItem** property accepts one of the following values.
 
         <!--HTML-->
         <dx-data-grid ... >
-            <dxo-summary>
-                <dxi-group-item
+            <dxo-data-grid-summary>
+                <dxi-data-grid-group-item
                     column="Age"
                     summaryType="min">
-                </dxi-group-item>
-            </dxo-summary>
-            <dxi-sort-by-group-summary-info 
+                </dxi-data-grid-group-item>
+            </dxo-data-grid-summary>
+            <dxi-data-grid-sort-by-group-summary-info 
                 [summaryItem]="0"> 
-            </dxi-sort-by-group-summary-info>
+            </dxi-data-grid-sort-by-group-summary-info>
         </dx-data-grid>
 
         <!--TypeScript-->
@@ -271,23 +271,23 @@ The **summaryItem** property accepts one of the following values.
     
         <!--HTML-->
         <dx-data-grid ... >
-            <dxo-summary>
-                <dxi-group-item
+            <dxo-data-grid-summary>
+                <dxi-data-grid-group-item
                     column="Age"
                     summaryType="avg">
-                </dxi-group-item>
-                <dxi-group-item
+                </dxi-data-grid-group-item>
+                <dxi-data-grid-group-item
                     column="Income"
                     summaryType="max">
-                </dxi-group-item>
-                <dxi-group-item
+                </dxi-data-grid-group-item>
+                <dxi-data-grid-group-item
                     column="Tasks"
                     summaryType="min">
-                </dxi-group-item>
-            </dxo-summary>
-            <dxi-sort-by-group-summary-info 
+                </dxi-data-grid-group-item>
+            </dxo-data-grid-summary>
+            <dxi-data-grid-sort-by-group-summary-info 
                 summaryItem="min">
-            </dxi-sort-by-group-summary-info>
+            </dxi-data-grid-sort-by-group-summary-info>
         </dx-data-grid>
 
         <!--TypeScript-->
@@ -419,19 +419,19 @@ The **summaryItem** property accepts one of the following values.
     
         <!--HTML-->
         <dx-data-grid ... >
-            <dxo-summary>
-                <dxi-group-item
+            <dxo-data-grid-summary>
+                <dxi-data-grid-group-item
                     column="Income"
                     summaryType="min">
-                </dxi-group-item>
-                <dxi-group-item
+                </dxi-data-grid-group-item>
+                <dxi-data-grid-group-item
                     column="Income"
                     summaryType="avg">
-                </dxi-group-item>
-            </dxo-summary>
-            <dxi-sort-by-group-summary-info 
+                </dxi-data-grid-group-item>
+            </dxo-data-grid-summary>
+            <dxi-data-grid-sort-by-group-summary-info 
                 summaryItem="Income">
-            </dxi-sort-by-group-summary-info>
+            </dxi-data-grid-sort-by-group-summary-info>
         </dx-data-grid>
 
         <!--TypeScript-->

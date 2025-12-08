@@ -41,17 +41,17 @@ To specify the view displayed initially, set the [currentView](/api-reference/10
     <!-- tab: app.component.html -->
     <dx-scheduler ...
         currentView="week">
-        <dxi-view
+        <dxi-scheduler-view
             type="day"
             [startDayHour]="10"
             [endDayHour]="22">
-        </dxi-view>
-        <dxi-view
+        </dxi-scheduler-view>
+        <dxi-scheduler-view
             type="week"
             [startDayHour]="10"
             [endDayHour]="22">
-        </dxi-view>
-        <dxi-view type="month"></dxi-view>
+        </dxi-scheduler-view>
+        <dxi-scheduler-view type="month"></dxi-scheduler-view>
     </dx-scheduler> 
 
 ##### Vue 

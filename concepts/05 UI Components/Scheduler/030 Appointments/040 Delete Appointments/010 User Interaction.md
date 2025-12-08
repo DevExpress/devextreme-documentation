@@ -100,7 +100,7 @@ To prevent a user from deleting an appointment, set the **editing**.[allowDeleti
 
     <!--HTML-->
     <dx-scheduler ... >
-        <dxo-editing [allowDeleting]="false"></dxo-editing>
+        <dxo-scheduler-editing [allowDeleting]="false"></dxo-scheduler-editing>
     </dx-scheduler>
 
     <!--TypeScript-->

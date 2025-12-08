@@ -23,9 +23,9 @@ Users can edit the time zones of individual appointments. To enable this functio
     <dx-scheduler ...
         timeZone="Europe/Berlin">
         <!-- ... -->
-        <dxo-editing ...
+        <dxo-scheduler-editing ...
             [allowTimeZoneEditing]="true">
-        </dxo-editing>
+        </dxo-scheduler-editing>
     </dx-scheduler> 
 
 ##### Vue 

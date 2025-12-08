@@ -93,13 +93,13 @@ Use the [dataSource](/api-reference/10%20UI%20Components/dxGantt/1%20Configurati
 
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxo-dependencies
+        <dxo-gantt-dependencies
             [dataSource]="dependencies" 
             keyExpr="dependencyId"
             typeExpr="dependencyType"
             predecessorIdExpr="taskPredecessorId"
             successorIdExpr="taskSuccessorId" >
-        </dxo-dependencies>
+        </dxo-gantt-dependencies>
         <!-- ... -->
     </dx-gantt>
 

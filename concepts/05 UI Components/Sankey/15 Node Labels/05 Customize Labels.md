@@ -50,9 +50,9 @@ In the following example, the **customizeText** function is used to add incoming
 
     <!--HTML--><dx-sankey ... >
         <dxi-series>
-            <dxo-label
+            <dxo-sankey-label
                 [customizeText]="sankey_label_customizeText">
-            </dxo-label>
+            </dxo-sankey-label>
         </dxi-series>
     </dx-sankey>
 

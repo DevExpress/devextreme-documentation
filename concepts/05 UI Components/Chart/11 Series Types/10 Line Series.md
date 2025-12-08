@@ -40,10 +40,10 @@ To specify one or another series type, assign its name to the **series[]**.[type
 
     <!--HTML-->
     <dx-chart ... >
-        <dxi-series type="spline"></dxi-series>
-        <dxi-series ... ></dxi-series>
+        <dxi-chart-series type="spline"></dxi-chart-series>
+        <dxi-chart-series ... ></dxi-chart-series>
         ...
-        <dxo-common-series-settings>
+        <dxo-chart-common-series-settings>
             <dxo-line ... ></dxo-line>
             <dxo-spline ... ></dxo-spline>
             <dxo-stepline ... ></dxo-stepline>
@@ -51,7 +51,7 @@ To specify one or another series type, assign its name to the **series[]**.[type
             <dxo-stackedspline ... ></dxo-stackedspline>
             <dxo-fullstackedline ... ></dxo-fullstackedline>
             <dxo-fullstackedspline ... ></dxo-fullstackedspline>
-        </dxo-common-series-settings>
+        </dxo-chart-common-series-settings>
     </dx-chart>
 
     <!--TypeScript-->

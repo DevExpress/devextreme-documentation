@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures AI options for a column.
 
 ---
 <!-- Description goes here -->

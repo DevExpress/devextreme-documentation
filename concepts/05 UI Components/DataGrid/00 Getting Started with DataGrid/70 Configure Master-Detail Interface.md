@@ -64,10 +64,10 @@ DataGrid allows you to display expandable detail sections under data rows. To co
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
         <!-- ... -->
-        <dxo-master-detail
+        <dxo-data-grid-master-detail
             [enabled]="true"
             [template]="'employee-info'">
-        </dxo-master-detail>
+        </dxo-data-grid-master-detail>
         <div *dxTemplate="let employee of 'employee-info'">
             <img class="employee-photo" [src]="employee.data.Photo">
             <p class="employee-notes">{{ employee.data.Notes }}</p>

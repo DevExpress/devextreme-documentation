@@ -181,8 +181,8 @@ You can also customize individual views. Declare them using the [dxItem](/api-re
 
     <!--HTML-->
     <dx-multi-view>
-        <dxi-item text="Personal Data"></dxi-item>
-        <dxi-item text="Contacts"></dxi-item>
+        <dxi-multi-view-item text="Personal Data"></dxi-multi-view-item>
+        <dxi-multi-view-item text="Contacts"></dxi-multi-view-item>
     </dx-multi-view>
 
     <!--TypeScript-->

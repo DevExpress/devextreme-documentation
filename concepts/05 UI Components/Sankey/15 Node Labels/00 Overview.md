@@ -19,9 +19,9 @@ Properties that configure node labels are collected in the [label](/api-referenc
 ##### Angular
 
     <!--HTML--><dx-sankey ... >
-        <dxo-label ... >
+        <dxo-sankey-label ... >
             <!-- Settings for all node labels -->
-        </dxo-label>
+        </dxo-sankey-label>
     </dx-sankey>
 
     <!--TypeScript-->

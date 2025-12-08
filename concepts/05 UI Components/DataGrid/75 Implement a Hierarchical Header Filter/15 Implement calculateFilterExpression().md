@@ -20,11 +20,11 @@ To apply hierarchical header filter values, define the [calculateFilterExpressio
 
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
-        <dxi-column>
-            <dxo-header-filter
+        <dxi-data-grid-column>
+            <dxo-data-grid-header-filter
                 [calculateFilterExpression]="calculateFilterExpression"
-            ></dxo-header-filter>
-        </dxi-column>
+            ></dxo-data-grid-header-filter>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->

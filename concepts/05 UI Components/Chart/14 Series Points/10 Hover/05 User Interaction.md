@@ -34,20 +34,20 @@ The hover style for all series points in the Chart. Individual series settings o
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxi-series ... >
-            <dxo-point>
-                <dxo-hover-style>
+        <dxi-chart-series ... >
+            <dxo-chart-point>
+                <dxo-chart-hover-style>
                     <!-- high priority -->
-                </dxo-hover-style>
-            </dxo-point>
-        </dxi-series>
-        <dxo-common-series-settings ... >
-            <dxo-point>
-                <dxo-hover-style>
+                </dxo-chart-hover-style>
+            </dxo-chart-point>
+        </dxi-chart-series>
+        <dxo-chart-common-series-settings ... >
+            <dxo-chart-point>
+                <dxo-chart-hover-style>
                     <!-- low priority -->
-                </dxo-hover-style>
-            </dxo-point>
-        </dxo-common-series-settings>
+                </dxo-chart-hover-style>
+            </dxo-chart-point>
+        </dxo-chart-common-series-settings>
     </dx-chart>
 
     <!--TypeScript-->
@@ -162,11 +162,11 @@ To choose which series elements should be highlighted when a user pauses on a se
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-common-series-settings ... >
-            <dxo-point
+        <dxo-chart-common-series-settings ... >
+            <dxo-chart-point
                 hoverMode="allArgumentPoints"> <!-- or 'onlyPoint' | 'allSeriesPoints' | 'none' -->
-            </dxo-point>
-        </dxo-common-series-settings>
+            </dxo-chart-point>
+        </dxo-chart-common-series-settings>
     </dx-chart>
 
     <!--TypeScript-->

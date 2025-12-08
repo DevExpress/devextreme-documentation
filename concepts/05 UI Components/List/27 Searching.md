@@ -194,10 +194,10 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
 
     <!--HTML-->
     <dx-list ... >
-        <dxo-search-editor-options
+        <dxo-list-search-editor-options
             placeholder="Type search value here..."
             [width]="300">
-        </dxo-search-editor-options>
+        </dxo-list-search-editor-options>
     </dx-list>
 
 ##### Vue

@@ -31,7 +31,7 @@ Assign a number to this property if the visual range is set on a numeric axis. I
     <!-- tab: app.component.html -->
     <dx-polar-chart ... >
         <dxi-value-axis ... >
-            <dxo-min-visual-range-length [weeks]="2"></dxo-min-visual-range-length>
+            <dxo-polar-chart-min-visual-range-length [weeks]="2"></dxo-polar-chart-min-visual-range-length>
         </dxi-value-axis>
     </dx-polar-chart>
 

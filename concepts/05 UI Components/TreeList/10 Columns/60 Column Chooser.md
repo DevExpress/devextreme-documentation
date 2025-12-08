@@ -16,10 +16,10 @@ The column chooser allows a user to change the set of columns at runtime. It is 
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-column-chooser
+        <dxo-tree-list-column-chooser
             [enabled]="true"
             mode="dragAndDrop"> <!-- or "select" -->
-        </dxo-column-chooser>
+        </dxo-tree-list-column-chooser>
     </dx-tree-list>
 
     <!--TypeScript-->
@@ -112,13 +112,13 @@ Set a column's [allowHiding](/api-reference/_hidden/GridBaseColumn/allowHiding.m
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-column-chooser [enabled]="true"></dxo-column-chooser>
-        <dxi-column ...
+        <dxo-tree-list-column-chooser [enabled]="true"></dxo-tree-list-column-chooser>
+        <dxi-tree-list-column ...
             [allowHiding]="false"> <!-- cannot be hidden -->
-        </dxi-column>
-        <dxi-column ...
+        </dxi-tree-list-column>
+        <dxi-tree-list-column ...
             [showInColumnChooser]="false"> <!-- does not appear in the column chooser even when hidden -->
-        </dxi-column>
+        </dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->

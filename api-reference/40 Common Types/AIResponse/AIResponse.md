@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An object that contains an AI response.
 
 ---
 <!-- Description goes here -->

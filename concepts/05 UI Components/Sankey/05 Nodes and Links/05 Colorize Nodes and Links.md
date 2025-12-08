@@ -100,9 +100,9 @@ Links also support several [colorization modes](/api-reference/10%20UI%20Compone
 
     <!--HTML-->
     <dx-sankey ... >
-        <dxo-link
+        <dxo-sankey-link
             colorMode="source"> <!-- or "target" | "gradient" -->
-        </dxo-link>
+        </dxo-sankey-link>
     </dx-sankey>
 
     <!--TypeScript-->
@@ -180,8 +180,8 @@ To colorize nodes or links uniformly, specify the color using the **node**.[colo
 
     <!--HTML-->
     <dx-sankey ... >
-        <dxo-node color="blue"></dxo-node>
-        <dxo-link color="green"></dxo-link>
+        <dxo-sankey-node color="blue"></dxo-sankey-node>
+        <dxo-sankey-link color="green"></dxo-sankey-link>
     </dx-sankey>
 
     <!--TypeScript-->

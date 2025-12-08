@@ -189,14 +189,14 @@ In addition, you can now format values using structures accepted by <a href="htt
 
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
-        <dxi-column
+        <dxi-data-grid-column
             dataField="OrderDate"
             [format]="{ skeleton: 'yMMMd' }">
-        </dxi-column>
-        <dxi-column
+        </dxi-data-grid-column>
+        <dxi-data-grid-column
             dataField="SaleAmount"
             [format]="{ currency: 'EUR', maximumFractionDigits: 2 }">
-        </dxi-column>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->

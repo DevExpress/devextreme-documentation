@@ -37,18 +37,18 @@ The following code snippet configures [commonAxisSettings](/api-reference/10%20U
 
     <!-- tab: app.component.html -->
     <dx-chart>
-        <dxo-common-axis-settings>
-            <dxo-break-style
+        <dxo-chart-common-axis-settings>
+            <dxo-chart-break-style
                 color="red"
                 line="straight"
                 [width]="15"
-            ></dxo-break-style>
-        </dxo-common-axis-settings>
-        <dxo-argument-axis>
-            <dxi-break startValue="1998" endValue="2003"></dxi-break>
-        </dxo-argument-axis>
+            ></dxo-chart-break-style>
+        </dxo-chart-common-axis-settings>
+        <dxo-chart-argument-axis>
+            <dxi-chart-break startValue="1998" endValue="2003"></dxi-chart-break>
+        </dxo-chart-argument-axis>
         <dxo-value-axis>
-            <dxi-break startValue="250" endValue="350"></dxi-break>
+            <dxi-chart-break startValue="250" endValue="350"></dxi-chart-break>
         <dxo-value-axis>
     </dx-chart>
 

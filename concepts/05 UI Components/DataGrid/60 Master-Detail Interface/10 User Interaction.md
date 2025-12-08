@@ -32,11 +32,11 @@ The master-detail interface becomes available after you specify the detail secti
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-master-detail
+        <dxo-data-grid-master-detail
             [enabled]="true"
             [autoExpandAll]="true"
             [template]="'detail'">
-        </dxo-master-detail>
+        </dxo-data-grid-master-detail>
         <div *dxTemplate="let employee of 'detail'">
             <div class="employeeInfo">
                 <img class="employeePhoto" [src]="employee.data.Picture" />

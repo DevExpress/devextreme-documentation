@@ -48,9 +48,9 @@ The following code sorts string arguments in alphabetical order:
 
     <!-- tab: app.component.html -->
     <dx-chart ... >
-        <dxo-data-prepare-settings
+        <dxo-chart-data-prepare-settings
             [sortingMethod]="alphabetical">
-        </dxo-data-prepare-settings>
+        </dxo-chart-data-prepare-settings>
     </dx-chart>
 
     <!-- tab: app.component.ts -->

@@ -36,11 +36,11 @@ Specifies the color of the series in the hovered state.
 
     <!-- tab: app.component.html -->
     <dx-chart ... >
-        <dxi-series ... >
-            <dxo-hover-style
+        <dxi-chart-series ... >
+            <dxo-chart-hover-style
                 [color]="fill"
-            ></dxo-hover-style>
-        </dxi-series>
+            ></dxo-chart-hover-style>
+        </dxi-chart-series>
     </dx-chart>
 
     <!-- tab: app.component.ts -->

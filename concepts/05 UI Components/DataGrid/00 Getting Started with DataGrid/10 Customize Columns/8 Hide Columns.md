@@ -22,8 +22,8 @@ The DataGrid displays all columns from the [columns](/api-reference/10%20UI%20Co
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
         <!-- ... -->
-        <dxi-column dataField="PostalCode" [visible]="false"></dxi-column>
-        <dxo-column-chooser [enabled]="true"></dxo-column-chooser>
+        <dxi-data-grid-column dataField="PostalCode" [visible]="false"></dxi-data-grid-column>
+        <dxo-data-grid-column-chooser [enabled]="true"></dxo-data-grid-column-chooser>
     </dx-data-grid>
 
 ##### Vue

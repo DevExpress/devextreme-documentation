@@ -19,9 +19,9 @@ All properties configuring tooltips are collected in the [tooltip](/api-referenc
 ##### Angular
 
     <!--HTML--><dx-pie-chart ... >
-        <dxo-tooltip
+        <dxo-pie-chart-tooltip
             [enabled]="true">
-        </dxo-tooltip>
+        </dxo-pie-chart-tooltip>
     </dx-pie-chart>
 
     <!--TypeScript-->
@@ -103,11 +103,11 @@ Properties declared in the **tooltip** object apply to all tooltips in the PieCh
 ##### Angular
 
     <!--HTML--><dx-pie-chart ... >
-        <dxo-tooltip
+        <dxo-pie-chart-tooltip
             [enabled]="true"
             color="yellow"
             [customizeTooltip]="customizeTooltip">
-        </dxo-tooltip>
+        </dxo-pie-chart-tooltip>
     </dx-pie-chart>
 
     <!--TypeScript-->

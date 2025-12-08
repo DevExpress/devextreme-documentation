@@ -15,9 +15,9 @@ To zoom a standalone Chart initially, specify the axis' [visualRange](/api-refer
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis
+        <dxo-chart-argument-axis
             [visualRange]="[0, 10]">
-        </dxo-argument-axis>
+        </dxo-chart-argument-axis>
     </dx-chart>
 
     <!--TypeScript-->
@@ -106,9 +106,9 @@ If the Chart is [bound to the RangeSelector](/concepts/05%20UI%20Components/Char
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis
+        <dxo-chart-argument-axis
             [(visualRange)]="chart_visualRange">
-        </dxo-argument-axis>
+        </dxo-chart-argument-axis>
     </dx-chart>
     <dx-range-selector ...
         [(value)]="chart_visualRange">

@@ -36,11 +36,11 @@ In the following code, the **postProcess** function adds a custom item to the ge
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxi-column>
-            <dxo-header-filter
+        <dxi-{widget-name}-column>
+            <dxo-{widget-name}-header-filter
                 [dataSource]="customizeHeaderFilterData">
-            </dxo-header-filter>
-        </dxi-column>
+            </dxo-{widget-name}-header-filter>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

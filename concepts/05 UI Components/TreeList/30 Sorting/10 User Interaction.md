@@ -15,9 +15,9 @@ With the TreeList UI component, a user can sort by single and multiple columns. 
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-sorting
+        <dxo-tree-list-sorting
             mode="single"> <!-- or "multiple" | "none" -->
-        </dxo-sorting>
+        </dxo-tree-list-sorting>
     </dx-tree-list>
 
     <!--TypeScript-->
@@ -108,7 +108,7 @@ To disable sorting in the whole UI component, set the **sorting**.**mode** prope
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxi-column [allowSorting]="false"></dxi-column>
+        <dxi-tree-list-column [allowSorting]="false"></dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->

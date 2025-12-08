@@ -22,12 +22,12 @@ The [title](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/tit
 ##### Angular
 
     <!--HTML--><dx-funnel ... >
-        <dxo-title
+        <dxo-funnel-title
             text="I am the Title">
-            <dxo-subtitle
+            <dxo-funnel-subtitle
                 text="I am the Subtitle">
-            </dxo-subtitle>
-        </dxo-title>
+            </dxo-funnel-subtitle>
+        </dxo-funnel-title>
     </dx-funnel>
 
     <!--TypeScript-->

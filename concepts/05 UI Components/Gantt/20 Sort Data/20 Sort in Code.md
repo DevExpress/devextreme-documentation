@@ -23,12 +23,12 @@ The following code sorts data by the "Start" and "End" columns:
 
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxi-column dataField="start" [sortIndex]="0" sortOrder="asc">
-        </dxi-column>
-        <dxi-column dataField="end" [sortIndex]="1" sortOrder="asc">
-        </dxi-column>
-        <dxo-sorting mode="multiple">
-        </dxo-sorting>        
+        <dxi-gantt-column dataField="start" [sortIndex]="0" sortOrder="asc">
+        </dxi-gantt-column>
+        <dxi-gantt-column dataField="end" [sortIndex]="1" sortOrder="asc">
+        </dxi-gantt-column>
+        <dxo-gantt-sorting mode="multiple">
+        </dxo-gantt-sorting>        
         <!-- ... -->
     </dx-gantt>
 
@@ -189,11 +189,11 @@ Use the [ascendingText](/api-reference/_hidden/dxGanttSorting/ascendingText.md '
 
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxo-sorting
+        <dxo-gantt-sorting
             ascendingText="Ascending Order" 
             descendingText="Descending Order"
             clearText="Clear Sort">
-        </dxo-sorting>        
+        </dxo-gantt-sorting>        
         <!-- ... -->
     </dx-gantt>
 

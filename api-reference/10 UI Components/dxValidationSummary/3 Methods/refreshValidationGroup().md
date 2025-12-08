@@ -68,11 +68,11 @@ Use this method if target **ValidationGroup** is recreated.
     <dx-validation-group #group>
         <dx-text-box *ngIf="visible">
             <dx-validator>
-                <dxi-validation-rule type="required" />
+                <dxi-validator-validation-rule type="required"></dxi-validator-validation-rule>
             </dx-validator>
         </dx-text-box>
         <!-- Initialize other ValidationGroup members -->
-        <dx-validation-summary #summary />
+        <dx-validation-summary #summary></dx-validation-summary>
     </dx-validation-group>
     <dx-button
         text="Validate"

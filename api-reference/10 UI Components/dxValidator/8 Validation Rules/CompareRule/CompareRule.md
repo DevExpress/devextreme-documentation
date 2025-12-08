@@ -41,11 +41,11 @@ To specify a comparison expression, define the [comparisonTarget](/api-reference
     ></dx-text-box>
     <dx-text-box> 
         <dx-validator>
-            <dxi-validation-rule 
+            <dxi-validator-validation-rule 
                 type="compare"
                 [comparisonTarget]="passwordComparison"
                 message="Passwords do not match."
-            ></dxi-validation-rule>
+            ></dxi-validator-validation-rule>
         </dx-validator>
     </dx-text-box>
 

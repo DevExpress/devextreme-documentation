@@ -37,20 +37,20 @@ Individual series settings override common settings.
 
     <!--HTML-->
     <dx-chart ... >
-        <dxi-series ... >
-            <dxo-point>
-                <dxo-selection-style>
+        <dxi-chart-series ... >
+            <dxo-chart-point>
+                <dxo-chart-selection-style>
                     <!-- high priority -->
-                </dxo-selection-style>
-            </dxo-point>
-        </dxi-series>
-        <dxo-common-series-settings ... >
-            <dxo-point>
-                <dxo-selection-style>
+                </dxo-chart-selection-style>
+            </dxo-chart-point>
+        </dxi-chart-series>
+        <dxo-chart-common-series-settings ... >
+            <dxo-chart-point>
+                <dxo-chart-selection-style>
                     <!-- low priority -->
-                </dxo-selection-style>
-            </dxo-point>
-        </dxo-common-series-settings>
+                </dxo-chart-selection-style>
+            </dxo-chart-point>
+        </dxo-chart-common-series-settings>
     </dx-chart>
 
     <!--TypeScript-->
@@ -167,11 +167,11 @@ To choose which elements should be highlighted when a user selects a point, spec
 
     <!--HTML-->
     <dx-chart ... >
-        <dxo-common-series-settings ... >
-            <dxo-point
+        <dxo-chart-common-series-settings ... >
+            <dxo-chart-point
                 selectionMode="allArgumentPoints"> <!-- or 'onlyPoint' | 'allSeriesPoints' | 'none' -->
-            </dxo-point>
-        </dxo-common-series-settings>
+            </dxo-chart-point>
+        </dxo-chart-common-series-settings>
     </dx-chart>
 
     <!--TypeScript-->

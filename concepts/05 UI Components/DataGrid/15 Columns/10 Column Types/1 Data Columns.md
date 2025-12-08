@@ -27,7 +27,7 @@ A data column automatically detects the type of its values. However, if the valu
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column dataField="HireDate" dataType="date"></dxi-column>
+        <dxi-data-grid-column dataField="HireDate" dataType="date"></dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->

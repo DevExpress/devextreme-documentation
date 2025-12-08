@@ -19,7 +19,7 @@ To configure the appearance, location, and content of the legend, use properties
 ##### Angular
 
     <!--HTML--><dx-pie-chart ... >
-        <dxo-legend ... ></dxo-legend>
+        <dxo-pie-chart-legend ... ></dxo-pie-chart-legend>
     </dx-pie-chart>
 
     <!--TypeScript-->

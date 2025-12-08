@@ -72,16 +72,16 @@ To add a predefined item to the toolbar, specify its [name](/api-reference/_hidd
 
     <!-- tab: app.component.html -->
     <dx-file-manager>
-        <dxo-toolbar>
+        <dxo-file-manager-toolbar>
             <!-- Specifies a predefined item's name and optional settings -->
-            <dxi-item name="create" text="Create a directory" icon="newfolder"></dxi-item>
+            <dxi-file-manager-item name="create" text="Create a directory" icon="newfolder"></dxi-file-manager-item>
             <!-- Specifies a predefined item's name only -->
-            <dxi-item name="switchView"></dxi-item>
-            <dxi-item name="separator"></dxi-item>
+            <dxi-file-manager-item name="switchView"></dxi-file-manager-item>
+            <dxi-file-manager-item name="separator"></dxi-file-manager-item>
             <!-- Specifies items that are visible when users select files -->
-            <dxi-file-selection-item name="copy"></dxi-file-selection-item>
-            <dxi-file-selection-item name="rename"></dxi-file-selection-item>
-        </dxo-toolbar>
+            <dxi-file-manager-file-selection-item name="copy"></dxi-file-manager-file-selection-item>
+            <dxi-file-manager-file-selection-item name="rename"></dxi-file-manager-file-selection-item>
+        </dxo-file-manager-toolbar>
     </dx-file-manager>
 
     <!-- tab: app.module.ts -->
@@ -271,9 +271,9 @@ The [widget](/api-reference/_hidden/dxFileManagerToolbarItem/widget.md '/Documen
 
     <!-- tab: app.component.html -->
     <dx-file-manager>
-        <dxo-toolbar>
-            <dxi-item widget="dxMenu" [options]="fileMenuOptions"></dxi-item>
-        </dxo-toolbar>
+        <dxo-file-manager-toolbar>
+            <dxi-file-manager-item widget="dxMenu" [options]="fileMenuOptions"></dxi-file-manager-item>
+        </dxo-file-manager-toolbar>
     </dx-file-manager>
 
     <!-- tab: app.component.ts -->

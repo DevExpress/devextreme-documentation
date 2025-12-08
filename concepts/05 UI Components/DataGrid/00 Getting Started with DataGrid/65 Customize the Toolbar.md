@@ -43,21 +43,21 @@
     <div id="app-container">
         <dx-data-grid ... >
             <!-- ... -->
-            <dxo-grouping [autoExpandAll]="expanded"></dxo-grouping>
-            <dxo-toolbar>
-                <dxi-item name="groupPanel"></dxi-item>
-                <dxi-item location="after">
+            <dxo-data-grid-grouping [autoExpandAll]="expanded"></dxo-data-grid-grouping>
+            <dxo-data-grid-toolbar>
+                <dxi-data-grid-item name="groupPanel"></dxi-data-grid-item>
+                <dxi-data-grid-item location="after">
                     <dx-button
                         [text]="expanded ? 'Collapse All' : 'Expand All'"
                         [width]="136"
                         (onClick)="expanded = !expanded">
                     </dx-button>
-                </dxi-item>
-                <dxi-item name="addRowButton" showText="always"></dxi-item>
-                <dxi-item name="exportButton"></dxi-item>
-                <dxi-item name="columnChooserButton"></dxi-item>
-                <dxi-item name="searchPanel"></dxi-item>
-            </dxo-toolbar>
+                </dxi-data-grid-item>
+                <dxi-data-grid-item name="addRowButton" showText="always"></dxi-data-grid-item>
+                <dxi-data-grid-item name="exportButton"></dxi-data-grid-item>
+                <dxi-data-grid-item name="columnChooserButton"></dxi-data-grid-item>
+                <dxi-data-grid-item name="searchPanel"></dxi-data-grid-item>
+            </dxo-data-grid-toolbar>
         </dx-data-grid>
     </div>
 

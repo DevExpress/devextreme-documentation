@@ -22,8 +22,8 @@ Assign **true** to the [headerFilter](/api-reference/10%20UI%20Components/GridBa
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-header-filter [visible]="true"></dxo-header-filter>
-        <dxi-column [allowHeaderFiltering]="false" ... ></dxi-column>
+        <dxo-data-grid-header-filter [visible]="true"></dxo-data-grid-header-filter>
+        <dxi-data-grid-column [allowHeaderFiltering]="false" ... ></dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -131,11 +131,11 @@ A user can change the applied filter by including or excluding values. Use a col
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column 
+        <dxi-data-grid-column 
             dataField="OrderDate"
             [(filterValues)]="filterValues"
             [(filterType)]="filterType"> 
-        </dxi-column>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -290,10 +290,10 @@ You can use the **headerFilter.search.enabled** property to enable searching in 
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-header-filter [visible]="true" [allowSearch]="true"></dxo-header-filter>
-        <dxi-column ... >
-            <dxo-header-filter [allowSearch]="false"></dxo-header-filter>
-        </dxi-column>
+        <dxo-data-grid-header-filter [visible]="true" [allowSearch]="true"></dxo-data-grid-header-filter>
+        <dxi-data-grid-column ... >
+            <dxo-data-grid-header-filter [allowSearch]="false"></dxo-data-grid-header-filter>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->

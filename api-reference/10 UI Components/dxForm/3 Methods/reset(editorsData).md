@@ -3,35 +3,29 @@ id: dxForm.reset(editorsData)
 ---
 ---
 ##### shortDescription
-Resets editor values. Every editor attempts to obtain its new value from the argument list. If an editor is not included in the list, that editor resets to its initial value.
+Resets editors to specified or initial values.
 
 ##### param(editorsData): Object
-New values for editors.
+New editor values.
 
 ---
-This method sets the [isDirty](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/isDirty.md '{basewidgetpath}/Configuration/#isDirty') flag to `false`. You can use this method without arguments to reset the Form component to initial values.
+Specify the **editorsData** parameter following the [formData](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/formData.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData') structure to assign new values to Form editors. To reset editors to initial values (set on editor initialization), omit corresponding **formData** fields in **editorsData**. To reset all editors to initial values, call this function witout the **editorsData** parameter.
 
 ---
+
 ##### jQuery
 
-    <!--tab: index.js -->
-    $(() => {
-        const form = $('#form').dxForm({
-            // ...
-            items: [
-                // ...
-                {
-                    itemType: 'button',
-                    buttonOptions: {
-                        // ...
-                        onClick: () => {
-                            form.reset({'name': 'John Smith', 'email': 'johnsmith@example.com'});
-                        },
-                    }
-                }
-            ]
-        }).dxForm('instance');
-    });
+    <!-- tab: index.js -->
+    const form = $('#form').dxForm({
+        // ...
+    }).dxForm('instance');
+
+    function resetForm() {
+        form.reset({
+            'name': 'John Smith',
+            'email': 'johnsmith@example.com',
+        });
+    };
 
 ##### Angular
 
@@ -39,31 +33,23 @@ This method sets the [isDirty](/api-reference/10%20UI%20Components/dxForm/1%20Co
     import { Component, ViewChild } from '@angular/core';
     import { DxFormComponent } from 'devextreme-angular';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    // ...
     export class AppComponent {
-        @ViewChild('formRef', { static: false }) form: DxFormComponent;
+        @ViewChild('formRef', { static: false }) form!: DxFormComponent;
 
-        resetButtonOptions = {
-            // ...
-            onClick: () => {
-                this.form.instance.reset({'name': 'John Smith', 'email': 'johnsmith@example.com'});
-            },
+        resetForm() {
+            this.form.instance.reset({
+                'name': 'John Smith',
+                'email': 'johnsmith@example.com',
+            });
         };
-    }
+    };
 
     <!-- tab: app.component.html -->
     <dx-form ... 
         #formRef
     >
-        <dxi-item
-          itemType="button"
-          [buttonOptions]="resetButtonOptions"
-        >
-        </dxi-item>
+        <!-- ... -->
     </dx-form>
 
 ##### Vue
@@ -73,73 +59,91 @@ This method sets the [isDirty](/api-reference/10%20UI%20Components/dxForm/1%20Co
         <DxForm ...
             :ref="formRef"
         >
-            <DxButtonItem ...
-                :button-options="resetButtonOptions"
-            />
+            <!-- ... -->
         </DxForm>
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
-    import DxForm, { DxButtonItem }from 'devextreme-vue/form';
+    import { ref } from 'vue';
+    import { DxForm } from 'devextreme-vue/form';
 
-    export default {
-        components: {
-            DxForm,
-            DxButtonItem
-        },
-
-        data() {
-            return {
-                formRef,
-                resetButtonOptions: {
-                    // ...
-                    onClick: () => {
-                        this.form.reset({'name': 'John Smith', 'email': 'johnsmith@example.com'});
-                    },
-                }
-            }
-        },
-
-        computed: {
-            form: function() {
-                return this.$refs[formRef].instance;
-            }
-        }
-    }
+    const formRef = ref(null);
+    
+    function resetForm() {
+        formRef.value.instance.reset({
+            'name': 'John Smith',
+            'email': 'johnsmith@example.com',
+        });
+    };
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React, { useRef } from 'react';
-    import Form, { ButtonItem } from 'devextreme-react/form';
-    import 'devextreme/dist/css/dx.light.css';
+    <!-- tab: App.tsx -->
+    import React, { useRef, useCallback } from 'react';
+    import { Form } from 'devextreme-react/form';
 
-    const App = () => {
+    function App() {
         const formRef = useRef(null);
 
-        const resetButtonOptions = {
-            // ...
-            onClick: () => {
-                this.formRef.current.instance().reset({'name': 'John Smith', 'email': 'johnsmith@example.com'});
-            },
-        };
+        const resetForm = useCallback(() => {
+            formRef.current.instance().reset({
+                'name': 'John Smith',
+                'email': 'johnsmith@example.com',
+            });
+        }, []);
 
         return (
             <Form ...
                 ref={formRef}
             >
-                <ButtonItem ...
-                    buttonOptions={resetButtonOptions}
-                />
+                <!-- ... -->
             </Form>
         );
     };
 
-    export default App;
-
 ---
+
+[note]
+
+- Form updates initial editor values on each [repaint](/api-reference/10%20UI%20Components/Widget/3%20Methods/repaint().md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#repaint'), including on component size or layout changes. To reset editors to original values (set in formData) after a repaint, pass a **formData** clone ([structuredClone](https://developer.mozilla.org/en-US/docs/Web/API/Window/structuredClone)) as the **editorsData** parameter.
+- This method does not support nested **editorsData** objects. If your data includes nested objects, call the [option()](/api-reference/10%20UI%20Components/Component/3%20Methods/option(optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#optionoptionName_optionValue') method instead:
+
+    ---
+
+    ##### jQuery
+
+        <!-- tab: index.js -->
+        // ...
+
+        form.option("formData", formDataObject);
+
+    ##### Angular
+
+        <!-- tab: app.component.ts -->
+        // ...
+        
+        this.form.instance.option("formData", formDataObject);
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        // ...
+
+        formRef.value.instance.option("formData", formDataObject);
+
+    ##### React
+
+        <!-- tab: App.tsx -->
+        // ...
+        
+        formRef.current.instance().option("formData", formDataObject);
+
+    ---
+
+- This method resets [isDirty](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/isDirty.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#isDirty') to `false`.
+
+[/note]
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Validation/"

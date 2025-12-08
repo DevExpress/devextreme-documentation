@@ -25,12 +25,12 @@ Assigning **true** to the **grouping**.[contextMenuEnabled](/api-reference/10%20
 
     <!--HTML-->
     <dx-data-grid ...>
-        <dxo-grouping 
+        <dxo-data-grid-grouping 
             [contextMenuEnabled]="true"> 
-        </dxo-grouping>
-        <dxo-group-panel 
+        </dxo-data-grid-grouping>
+        <dxo-data-grid-group-panel 
             [visible]="true"> <!-- or "auto" -->
-        </dxo-group-panel>
+        </dxo-data-grid-group-panel>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -130,10 +130,10 @@ You can prevent a user from dragging columns to the group panel, in which case i
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-group-panel 
+        <dxo-data-grid-group-panel 
             [visible]="true"
             [allowColumnDragging]="false"> 
-        </dxo-group-panel>
+        </dxo-data-grid-group-panel>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -238,10 +238,10 @@ If a specific column should never take part in grouping, set its [allowGrouping]
 
     <!--HTML-->
     <dx-data-grid ...>
-        <dxi-column 
+        <dxi-data-grid-column 
             dataField="id" 
             [allowGrouping]="false">
-        </dxi-column>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->

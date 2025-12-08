@@ -26,13 +26,13 @@ Grid data can be edited in several modes. Set the **editing**.[mode](/api-refere
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-editing
+        <dxo-data-grid-editing
             [allowUpdating]="true"
             [allowAdding]="true"
             [allowDeleting]="true"
             mode="row"> <!-- 'batch' | 'cell' | 'form' | 'popup' -->
-        </dxo-editing>
-        <dxi-column dataField="id" [allowEditing]="false"></dxi-column>
+        </dxo-data-grid-editing>
+        <dxi-data-grid-column dataField="id" [allowEditing]="false"></dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->

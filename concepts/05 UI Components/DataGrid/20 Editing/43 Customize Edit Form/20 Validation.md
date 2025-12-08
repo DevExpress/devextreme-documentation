@@ -29,18 +29,18 @@ DataGrid automatically applies rules defined for columns to editors in an [edit 
 
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
-        <dxi-column dataField="Full_Name">
+        <dxi-data-grid-column dataField="Full_Name">
             <!-- correct -->
-            <dxi-validation-rule type="required"></dxi-validation-rule>
-        </dxi-column>
-        <dxo-editing>
-            <dxo-form>
-                <dxi-item dataField="Full_Name">
+            <dxi-data-grid-validation-rule type="required"></dxi-data-grid-validation-rule>
+        </dxi-data-grid-column>
+        <dxo-data-grid-editing>
+            <dxo-data-grid-form>
+                <dxi-data-grid-item dataField="Full_Name">
                     <!-- incorrect -->
-                    <dxi-validation-rule type="required">    
-                </dxi-item>
-            </dxo-form>
-        </dxo-editing>
+                    <dxi-data-grid-validation-rule type="required">    
+                </dxi-data-grid-item>
+            </dxo-data-grid-form>
+        </dxo-data-grid-editing>
     </dx-data-grid>
 
 ##### Vue
@@ -107,15 +107,15 @@ If your form layout contains tabs, disable **TabbedItem.tabPanelOptions**.[defer
 
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
-        <dxo-editing>
-            <dxo-form>
-                <dxi-itemitemType="tabbed">
+        <dxo-data-grid-editing>
+            <dxo-data-grid-form>
+                <dxi-data-grid-item itemType="tabbed">
                     <dxo-tab-panel-options [deferRendering]="false">
                     </dxo-tab-panel-options>
                     <dxi-tab></dxi-tab>
-                </dxi-item>
-            </dxo-form>
-        </dxo-editing>
+                </dxi-data-grid-item>
+            </dxo-data-grid-form>
+        </dxo-data-grid-editing>
     </dx-data-grid>
 
 ##### Vue

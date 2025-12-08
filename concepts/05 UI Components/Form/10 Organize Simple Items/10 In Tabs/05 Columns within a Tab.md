@@ -39,22 +39,22 @@ The content of a tab can be organized in columns. The [colCount](/api-reference/
     <dx-form
         [(formData)]="employee"
         [colCount]="2"> <!-- Splits the Form layout in two columns -->
-        <dxi-item dataField="name"></dxi-item>
-        <dxi-item itemType="tabbed" [colSpan]="2">
-            <dxi-tab
+        <dxi-form-item dataField="name"></dxi-form-item>
+        <dxi-form-item itemType="tabbed" [colSpan]="2">
+            <dxi-form-tab
                 title="Info"
                 [colCount]="3"> <!-- Organizes items inside this tab in three columns -->
-                    <dxi-item dataField="position"></dxi-item>
-                    <dxi-item dataField="hireDate"></dxi-item>
-                    <dxi-item dataField="city"></dxi-item>
-            </dxi-tab>
-            <dxi-tab
+                    <dxi-form-item dataField="position"></dxi-form-item>
+                    <dxi-form-item dataField="hireDate"></dxi-form-item>
+                    <dxi-form-item dataField="city"></dxi-form-item>
+            </dxi-form-tab>
+            <dxi-form-tab
                 title="Contacts"
                 [colCount]="2">
-                    <dxi-item dataField="phone"></dxi-item>
-                    <dxi-item dataField="email"></dxi-item>
-            </dxi-tab>
-        </dxi-item>
+                    <dxi-form-item dataField="phone"></dxi-form-item>
+                    <dxi-form-item dataField="email"></dxi-form-item>
+            </dxi-form-tab>
+        </dxi-form-item>
     </dx-form>
 
     <!--TypeScript-->

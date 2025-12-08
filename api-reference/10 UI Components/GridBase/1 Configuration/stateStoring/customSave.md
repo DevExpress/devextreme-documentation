@@ -101,12 +101,12 @@ If you need to save and load the state from a remote storage, use the following 
 
     <!--HTML-->
     <dx-{widget-name} ...>
-        <dxo-state-storing 
+        <dxo-{widget-name}-state-storing 
             [enabled]="true" 
             type="custom" 
             [customLoad]="loadState"
             [customSave]="saveState">
-        </dxo-state-storing>
+        </dxo-{widget-name}-state-storing>
     </dx-{widget-name}>
 
 ##### Vue

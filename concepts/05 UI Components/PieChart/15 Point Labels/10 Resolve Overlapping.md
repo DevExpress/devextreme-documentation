@@ -89,7 +89,7 @@ Another way to deal with overlapping labels is to hide all labels of a specific 
 
     <!--HTML-->
     <dx-pie-chart ... >
-        <dxi-series [maxLabelCount]="10" ... ></dxi-series>
+        <dxi-pie-chart-series [maxLabelCount]="10" ... ></dxi-pie-chart-series>
     </dx-pie-chart>
 
     <!--TypeScript-->

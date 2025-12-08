@@ -41,10 +41,10 @@ You can also specify a custom pattern or gradient instead of a plain color:
 
     <!-- tab: app.component.html -->
     <dx-pie-chart ... >
-        <dxi-series ...
+        <dxi-pie-chart-series ...
             [color]="fill"
         >
-        </dxi-series>
+        </dxi-pie-chart-series>
     </dx-pie-chart>
 
     <!-- tab: app.component.ts -->

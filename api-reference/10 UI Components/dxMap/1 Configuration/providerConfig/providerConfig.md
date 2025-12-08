@@ -29,10 +29,10 @@ A [provider](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/provide
         provider="google"
         apiKey="YOUR_API_KEY"
     >
-        <dxo-provider-config
+        <dxo-map-provider-config
             mapId="YOUR_GOOGLE_MAP_ID"
         >
-        </dxo-provider-config>
+        </dxo-map-provider-config>
     </dx-map>
 
     <!-- tab: app.module.ts -->

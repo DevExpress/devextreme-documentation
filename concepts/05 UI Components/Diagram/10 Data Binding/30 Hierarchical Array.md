@@ -68,13 +68,13 @@ During the binding process, the UI component creates a shape for every bound nod
 
     <!-- tab: app.component.html -->
     <dx-diagram>
-        <dxo-nodes
+        <dxo-diagram-nodes
             [dataSource]="dataSource"
             keyExpr="ID"
             textExpr="Title"
             itemsExpr="Items"
         >
-        </dxo-nodes>
+        </dxo-diagram-nodes>
     </dx-diagram>
 
     <!-- tab: app.component.ts -->

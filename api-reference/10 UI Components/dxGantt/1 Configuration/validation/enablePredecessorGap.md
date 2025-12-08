@@ -39,10 +39,10 @@ The **enablePredecessorGap** option allows users to increase/decrease the gap be
 
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxo-validation
+        <dxo-gantt-validation
             [enablePredecessorGap]="true" 
             [validateDependencies]="true">
-        </dxo-validation>
+        </dxo-gantt-validation>
         <!-- ... -->
     </dx-gantt>
 

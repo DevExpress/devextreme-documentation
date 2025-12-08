@@ -44,12 +44,12 @@ Use the [fileUploadMode](/api-reference/_hidden/dxHtmlEditorImageUpload/fileUplo
 
     <!-- tab: app.component.html -->
     <dx-html-editor ...>
-        <dxo-image-upload
+        <dxo-html-editor-image-upload
             fileUploadMode="both"
             [tabs]="['url', 'file']"
             uploadUrl="https://js.devexpress.com/Demos/Upload"
             uploadDirectory="/Images">
-        </dxo-image-upload>
+        </dxo-html-editor-image-upload>
     </dx-html-editor>
 
     <!-- tab: app.component.ts -->

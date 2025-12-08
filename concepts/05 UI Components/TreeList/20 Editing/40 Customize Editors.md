@@ -37,10 +37,10 @@ The columns's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Doc
     <!--HTML-->
     <dx-tree-list ...
         (onEditorPreparing)="onEditorPreparing($event)">
-        <dxi-column
+        <dxi-tree-list-column
             dataField="Note"
             [editorOptions]="{ height: 200 }">
-        </dxi-column>
+        </dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->
@@ -234,10 +234,10 @@ Implement the column's [editCellTemplate](/api-reference/_hidden/dxTreeListColum
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxi-column
+        <dxi-tree-list-column
             dataField="isChecked"
             editCellTemplate="editCellTemplate">
-        </dxi-column>
+        </dxi-tree-list-column>
         <div *dxTemplate="let cellInfo of 'editCellTemplate'">
             <dx-switch
                 [width]="50"
@@ -247,7 +247,7 @@ Implement the column's [editCellTemplate](/api-reference/_hidden/dxTreeListColum
                 (onValueChanged)="setEditedValue($event, cellInfo)">
             </dx-switch>
         </div>
-        <dxo-editing mode="batch" [allowUpdating]="true"></dxo-editing>
+        <dxo-tree-list-editing mode="batch" [allowUpdating]="true"></dxo-tree-list-editing>
     </dx-tree-list>
 
     <!--TypeScript-->
@@ -410,11 +410,11 @@ Editors are displayed in cells in the normal state too if you set the **columns*
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxi-column
+        <dxi-tree-list-column
             dataField="Hidden"
             dataType="boolean"
             [showEditorAlways]="true">
-        </dxi-column>
+        </dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->

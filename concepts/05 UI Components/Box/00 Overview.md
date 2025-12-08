@@ -42,9 +42,9 @@ The following code adds a simple Box containing three items to your page. These 
     <dx-box
         direction="row"
         [height]="100">
-        <dxi-item class="box-item orange" [ratio]="1"> Item 1 </dxi-item>
-        <dxi-item class="box-item yellow" [ratio]="1"> Item 2 </dxi-item>
-        <dxi-item class="box-item green"  [ratio]="1"> Item 3 </dxi-item>
+        <dxi-box-item class="box-item orange" [ratio]="1"> Item 1 </dxi-box-item>
+        <dxi-box-item class="box-item yellow" [ratio]="1"> Item 2 </dxi-box-item>
+        <dxi-box-item class="box-item green"  [ratio]="1"> Item 3 </dxi-box-item>
     </dx-box>
 
     <!--TypeScript-->

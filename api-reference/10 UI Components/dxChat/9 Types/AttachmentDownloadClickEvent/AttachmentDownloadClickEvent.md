@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The argument type in the [attachmentDownloadClick]({basewidgetpath}/Events/#attachmentDownloadClick) event.
 
 ---
 <!-- Description goes here -->

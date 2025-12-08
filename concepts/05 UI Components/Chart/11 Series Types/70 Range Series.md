@@ -33,17 +33,17 @@ Note that the range series require two value fields: [rangeValue1Field](/api-ref
 
     <!--HTML-->
     <dx-chart ... >
-        <dxi-series
+        <dxi-chart-series
             type="rangearea"
             rangeValue1Field="low"
             rangeValue2Field="high">
-        </dxi-series>
-        <dxi-series ... ></dxi-series>
+        </dxi-chart-series>
+        <dxi-chart-series ... ></dxi-chart-series>
         ...
-        <dxo-common-series-settings>
+        <dxo-chart-common-series-settings>
             <dxo-rangearea ... ></dxo-rangearea>
             <dxo-rangebar ... ></dxo-rangebar>
-        </dxo-common-series-settings>
+        </dxo-chart-common-series-settings>
     </dx-chart>
 
     <!--TypeScript-->

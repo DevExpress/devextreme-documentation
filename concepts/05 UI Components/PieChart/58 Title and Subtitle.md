@@ -22,12 +22,12 @@ The title is configured by the [title](/api-reference/10%20UI%20Components/dxPie
 ##### Angular
 
     <!--HTML--><dx-pie-chart ... >
-        <dxo-title
+        <dxo-pie-chart-title
             text="I am the Title">
-            <dxo-subtitle
+            <dxo-pie-chart-subtitle
                 text="I am the Subtitle">
-            </dxo-subtitle>
-        </dxo-title>
+            </dxo-pie-chart-subtitle>
+        </dxo-pie-chart-title>
     </dx-pie-chart>
 
     <!--TypeScript-->

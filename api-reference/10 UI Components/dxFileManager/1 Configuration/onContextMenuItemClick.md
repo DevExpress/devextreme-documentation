@@ -64,11 +64,11 @@ Specifies whether the context menu is invoked in the navigation panel or in the 
     <!-- tab: app.component.html -->
     <dx-file-manager 
         (onContextMenuItemClick)="onItemClick($event)">
-        <dxo-context-menu>
-            <dxi-item text="Create .txt Document" [options]="{ extension: '.txt' }"></dxi-item>
-            <dxi-item text="Create .rtf Document" [options]="{ extension: '.rtf' }"></dxi-item>
-            <dxi-item text="Create .xls Document" [options]="{ extension: '.xls' }"></dxi-item>
-        </dxo-context-menu>
+        <dxo-file-manager-context-menu>
+            <dxi-file-manager-item text="Create .txt Document" [options]="{ extension: '.txt' }"></dxi-file-manager-item>
+            <dxi-file-manager-item text="Create .rtf Document" [options]="{ extension: '.rtf' }"></dxi-file-manager-item>
+            <dxi-file-manager-item text="Create .xls Document" [options]="{ extension: '.xls' }"></dxi-file-manager-item>
+        </dxo-file-manager-context-menu>
         <!-- ... -->
     </dx-file-manager>
 

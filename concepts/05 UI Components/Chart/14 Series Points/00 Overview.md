@@ -32,16 +32,16 @@ For those series whose points are simple dots ([Range Area](/concepts/05%20UI%20
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxi-series>
-            <dxo-point ... >
+        <dxi-chart-series>
+            <dxo-chart-point ... >
                 <!-- Settings for all points of an individual series -->
-            </dxo-point>
-        </dxi-series>
-        <dxo-common-series-settings ... >
-            <dxo-point ... >
+            </dxo-chart-point>
+        </dxi-chart-series>
+        <dxo-chart-common-series-settings ... >
+            <dxo-chart-point ... >
                 <!-- Settings for all points of all series -->
-            </dxo-point>
-        </dxo-common-series-settings>
+            </dxo-chart-point>
+        </dxo-chart-common-series-settings>
     </dx-chart>
 
     <!--TypeScript-->
@@ -155,9 +155,9 @@ Settings specified in the manner described above apply to a congregation of seri
 
     <!--HTML--><dx-chart
         [customizePoint]="customizePoint">
-        <dxi-series>
-            <dxo-point color="blue" ></dxo-point>
-        </dxi-series>
+        <dxi-chart-series>
+            <dxo-chart-point color="blue" ></dxo-chart-point>
+        </dxi-chart-series>
     </dx-chart>
 
     <!--TypeScript-->

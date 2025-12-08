@@ -5,12 +5,12 @@
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-toolbar>
-            <dxi-file-selection-item
+        <dxo-{widget-name}-toolbar>
+            <dxi-{widget-name}-file-selection-item
                 widget="dxCheckBox"
                 [options]="{ text: 'Show IDs' }">
-            </dxi-file-selection-item>
-        </dxo-toolbar>
+            </dxi-{widget-name}-file-selection-item>
+        </dxo-{widget-name}-toolbar>
     </dx-{widget-name}>
 
     <!-- tab: app.module.ts -->

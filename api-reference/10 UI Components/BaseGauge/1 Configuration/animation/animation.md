@@ -28,10 +28,10 @@ To make your gauge "live", enable animation for it by setting the **enabled** pr
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-animation
+        <dxo-{widget-name}-animation
             easing="linear"
             [duration]="500">
-        </dxo-animation>
+        </dxo-{widget-name}-animation>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

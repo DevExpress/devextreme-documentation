@@ -27,16 +27,16 @@ Add and configure custom buttons in the **columns[]**.[buttons](/api-reference/_
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column type="buttons">
-            <dxi-button name="edit"></dxi-button>
-            <dxi-button name="delete"></dxi-button>
-            <dxi-button
+        <dxi-data-grid-column type="buttons">
+            <dxi-data-grid-button name="edit"></dxi-data-grid-button>
+            <dxi-data-grid-button name="delete"></dxi-data-grid-button>
+            <dxi-data-grid-button
                 text="Save"
                 icon="add"
                 hint="Save Row"
                 [onClick]="saveRow">
-            </dxi-button>
-        </dxi-column>
+            </dxi-data-grid-button>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -169,15 +169,15 @@ Specify the **buttons[]**.[template](/api-reference/_hidden/dxDataGridColumnButt
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column type="buttons">
-            <dxi-button name="edit"></dxi-button>
-            <dxi-button name="delete"></dxi-button>
-            <dxi-button template="myCommand">
+        <dxi-data-grid-column type="buttons">
+            <dxi-data-grid-button name="edit"></dxi-data-grid-button>
+            <dxi-data-grid-button name="delete"></dxi-data-grid-button>
+            <dxi-data-grid-button template="myCommand">
                 <div *dxTemplate="let data of 'myCommand'">
                     <!-- Declare custom markup here -->
                 </div>
-            </dxi-button>
-        </dxi-column>
+            </dxi-data-grid-button>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->

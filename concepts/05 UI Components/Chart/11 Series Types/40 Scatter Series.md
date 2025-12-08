@@ -30,12 +30,12 @@ To specify the **Scatter** series type, assign *"scatter"* to the **series[]**.[
 
     <!--HTML-->
     <dx-chart ... >
-        <dxi-series type="scatter"></dxi-series>
-        <dxi-series ... ></dxi-series>
+        <dxi-chart-series type="scatter"></dxi-chart-series>
+        <dxi-chart-series ... ></dxi-chart-series>
         ...
-        <dxo-common-series-settings>
+        <dxo-chart-common-series-settings>
             <dxo-scatter ... ></dxo-scatter>
-        </dxo-common-series-settings>
+        </dxo-chart-common-series-settings>
     </dx-chart>
 
     <!--TypeScript-->

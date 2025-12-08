@@ -27,10 +27,10 @@ Specifies the minimum size of an item (pane) in pixels or as a percentage.
 
     <!-- tab: app.component.html -->
     <dx-splitter ... >
-        <dxi-item ...
+        <dxi-splitter-item ...
             minSize="30%"
         >
-        </dxi-item>
+        </dxi-splitter-item>
     </dx-splitter>
 
 ##### Vue

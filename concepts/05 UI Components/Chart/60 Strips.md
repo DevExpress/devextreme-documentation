@@ -29,14 +29,14 @@ To configure the strips, declare the [strips](/api-reference/10%20UI%20Component
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis>
-            <dxi-strip [startValue]="100" [endValue]="150" color="yellow"></dxi-strip>
-            <dxi-strip [startValue]="50" [endValue]="70" color="orange"></dxi-strip>
-        </dxo-argument-axis>
-        <dxi-value-axis>
-            <dxi-strip [startValue]="40" [endValue]="50" color="blue"></dxi-strip>
-            <dxi-strip [startValue]="70" color="red"></dxi-strip>
-        </dxi-value-axis>
+        <dxo-chart-argument-axis>
+            <dxi-chart-strip [startValue]="100" [endValue]="150" color="yellow"></dxi-chart-strip>
+            <dxi-chart-strip [startValue]="50" [endValue]="70" color="orange"></dxi-chart-strip>
+        </dxo-chart-argument-axis>
+        <dxi-chart-value-axis>
+            <dxi-chart-strip [startValue]="40" [endValue]="50" color="blue"></dxi-chart-strip>
+            <dxi-chart-strip [startValue]="70" color="red"></dxi-chart-strip>
+        </dxi-chart-value-axis>
     </dx-chart>
 
     <!--TypeScript-->
@@ -163,27 +163,27 @@ Note that individual settings override axis-specific settings which, in turn, ov
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis>
-            <dxi-strip ... >
+        <dxo-chart-argument-axis>
+            <dxi-chart-strip ... >
                 <!-- high priority -->
-            </dxi-strip>
-            <dxo-strip-style ... >
+            </dxi-chart-strip>
+            <dxo-chart-strip-style ... >
                 <!-- middle priority -->
-            </dxo-strip-style>
-        </dxo-argument-axis>
-        <dxi-value-axis>
-            <dxi-strip ... >
+            </dxo-chart-strip-style>
+        </dxo-chart-argument-axis>
+        <dxi-chart-value-axis>
+            <dxi-chart-strip ... >
                 <!-- high priority -->
-            </dxi-strip>
-            <dxo-strip-style ... >
+            </dxi-chart-strip>
+            <dxo-chart-strip-style ... >
                 <!-- middle priority -->
-            </dxo-strip-style>
-        </dxi-value-axis>
-        <dxo-common-axis-settings>
-            <dxo-strip-style ... >
+            </dxo-chart-strip-style>
+        </dxi-chart-value-axis>
+        <dxo-chart-common-axis-settings>
+            <dxo-chart-strip-style ... >
                 <!-- low priority -->
-            </dxo-strip-style>
-        </dxo-common-axis-settings>
+            </dxo-chart-strip-style>
+        </dxo-chart-common-axis-settings>
     </dx-chart>
 
     <!--TypeScript-->

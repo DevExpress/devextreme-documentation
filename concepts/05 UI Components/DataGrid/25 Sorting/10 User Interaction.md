@@ -15,9 +15,9 @@ With the DataGrid UI component, a user can sort by single and multiple columns. 
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-sorting
+        <dxo-data-grid-sorting
             mode="single"> <!-- or "multiple" | "none" -->
-        </dxo-sorting>
+        </dxo-data-grid-sorting>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -108,7 +108,7 @@ To disable sorting in the whole UI component, set the **sorting**.**mode** prope
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column [allowSorting]="false"></dxi-column>
+        <dxi-data-grid-column [allowSorting]="false"></dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->

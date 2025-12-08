@@ -209,18 +209,18 @@ Collection UI components are components that include the **items** property. The
 
     <!-- tab: app.component.html -->
     <dx-list>
-        <dxi-item>
+        <dxi-list-item>
             <i>Item 1</i>
-        </dxi-item>
-        <dxi-item>
+        </dxi-list-item>
+        <dxi-list-item>
             <b>Item 2</b>
-        </dxi-item>
-        <dxi-item>
+        </dxi-list-item>
+        <dxi-list-item>
             <div *dxTemplate>
                 Item with a nested component
                 <dx-button text="Click me"></dx-button>
             </div>
-        </dxi-item>
+        </dxi-list-item>
     </dx-list>
 
     <!-- tab: app.module.ts -->
@@ -249,13 +249,13 @@ Declare **named** templates within the component's markup but outside the templa
     <!-- tab: app.component.html -->
     <!-- Named template (the name is 'pictureCellTemplate'): -->
     <dx-data-grid ... >
-        <dxi-column
+        <dxi-data-grid-column
             dataField="Picture"
             [width]="100"
             [allowFiltering]="false"
             [allowSorting]="false"
             cellTemplate="pictureCellTemplate"
-        ></dxi-column>
+        ></dxi-data-grid-column>
         <div *dxTemplate="let data of 'pictureCellTemplate'">
             <img [src]="data.value" />
         </div>
@@ -263,11 +263,11 @@ Declare **named** templates within the component's markup but outside the templa
 
     <!-- Non-named template -->
     <dx-toolbar>
-        <dxi-item location="center" locateInMenu="never">
+        <dxi-toolbar-item location="center" locateInMenu="never">
             <div *dxTemplate>
                 <div class="toolbar-label"><b>Tom's Club</b> Products</div>
             </div>
-        </dxi-item>
+        </dxi-toolbar-item>
     </dx-toolbar>
 
 ##### Vue

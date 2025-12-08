@@ -29,15 +29,15 @@ To configure the argument or value axis individually, use the [argumentAxis](/ap
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis>
+        <dxo-chart-argument-axis>
             <!-- high priority -->
-        </dxo-argument-axis>
-        <dxi-value-axis>
+        </dxo-chart-argument-axis>
+        <dxi-chart-value-axis>
             <!-- high priority -->
-        </dxi-value-axis>
-        <dxo-common-axis-settings>
+        </dxi-chart-value-axis>
+        <dxo-chart-common-axis-settings>
             <!-- low priority -->
-        </dxo-common-axis-settings>
+        </dxo-chart-common-axis-settings>
     </dx-chart>
 
     <!--TypeScript-->
@@ -160,13 +160,13 @@ Usually, the Chart chooses the axis type automatically according to the type of 
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis
+        <dxo-chart-argument-axis
             argumentType="datetime"
             type="discrete">
-        </dxo-argument-axis>
-        <dxi-value-axis
+        </dxo-chart-argument-axis>
+        <dxi-chart-value-axis
             valueType="numeric">
-        </dxi-value-axis>
+        </dxi-chart-value-axis>
     </dx-chart>
 
     <!--TypeScript-->

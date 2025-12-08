@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when a user clicks the "Download" button.
 
 ---
-<!-- Description goes here -->
+Main article: [onAttachmentDownloadClick](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/onAttachmentDownloadClick.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#onAttachmentDownloadClick')
+
+#####See Also#####
+#include common-link-handleevents

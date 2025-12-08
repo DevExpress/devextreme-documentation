@@ -27,11 +27,11 @@ If you need to add an empty space between neighboring items, use an [empty item]
     <dx-form
         [(formData)]="employee"
         [colCount]="2">
-        <dxi-item itemType="empty"></dxi-item>
-        <dxi-item dataField="firstName"></dxi-item>
-        <dxi-item itemType="empty" [colSpan]="2"></dxi-item>
-        <dxi-item dataField="lastName"></dxi-item>
-        <dxi-item dataField="position"></dxi-item>
+        <dxi-form-item itemType="empty"></dxi-form-item>
+        <dxi-form-item dataField="firstName"></dxi-form-item>
+        <dxi-form-item itemType="empty" [colSpan]="2"></dxi-form-item>
+        <dxi-form-item dataField="lastName"></dxi-form-item>
+        <dxi-form-item dataField="position"></dxi-form-item>
     </dx-form>
 
     <!--TypeScript-->

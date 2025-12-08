@@ -35,15 +35,15 @@ Use this property to create a hierarchical context menu. The following code demo
 
     <!-- tab: app.component.html -->
     <dx-html-editor>
-        <dxo-table-context-menu
+        <dxo-html-editor-table-context-menu
             [enabled]="true">
-            <dxi-item text="Font Style">
-                <dxi-item name="bold"></dxi-item>
-                <dxi-item name="italic"></dxi-item>
-                <dxi-item name="underline"></dxi-item>
-                <dxi-item name="strike"></dxi-item>
-            </dxi-item>
-        </dxo-table-context-menu>
+            <dxi-html-editor-item text="Font Style">
+                <dxi-html-editor-item name="bold"></dxi-html-editor-item>
+                <dxi-html-editor-item name="italic"></dxi-html-editor-item>
+                <dxi-html-editor-item name="underline"></dxi-html-editor-item>
+                <dxi-html-editor-item name="strike"></dxi-html-editor-item>
+            </dxi-html-editor-item>
+        </dxo-html-editor-table-context-menu>
     </dx-html-editor>
 
 ##### Vue

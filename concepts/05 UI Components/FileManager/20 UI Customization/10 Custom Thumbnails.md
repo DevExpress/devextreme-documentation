@@ -67,9 +67,9 @@ You can specify an icon in the following formats:
     <dx-file-manager id="fileManager"
         [fileSystemProvider]="fileItems"
         [customizeThumbnail]="customizeIcon" >
-        <dxo-item-view
+        <dxo-file-manager-item-view
             mode="thumbnails">
-        </dxo-item-view>
+        </dxo-file-manager-item-view>
         <!-- ... -->    
     </dx-file-manager>
 

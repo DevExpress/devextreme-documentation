@@ -220,11 +220,11 @@ The following example hides a tooltip for points with values greater than 10:
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-tooltip ...
+        <dxo-{widget-name}-tooltip ...
             [enabled]="true"
             [customizeTooltip]="customizeTooltip"
         >
-        </dxo-tooltip>
+        </dxo-{widget-name}-tooltip>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

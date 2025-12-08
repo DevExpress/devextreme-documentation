@@ -37,10 +37,10 @@ The columns's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Doc
     <!--HTML-->
     <dx-data-grid ...
         (onEditorPreparing)="onEditorPreparing($event)">
-        <dxi-column
+        <dxi-data-grid-column
             dataField="Note"
             [editorOptions]="{ height: 200 }">
-        </dxi-column>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -234,10 +234,10 @@ Implement the column's [editCellTemplate](/api-reference/_hidden/dxDataGridColum
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column
+        <dxi-data-grid-column
             dataField="isChecked"
             editCellTemplate="editCellTemplate">
-        </dxi-column>
+        </dxi-data-grid-column>
         <div *dxTemplate="let cellInfo of 'editCellTemplate'">
             <dx-switch
                 [width]="50"
@@ -247,7 +247,7 @@ Implement the column's [editCellTemplate](/api-reference/_hidden/dxDataGridColum
                 (onValueChanged)="setEditedValue($event, cellInfo)">
             </dx-switch>
         </div>
-        <dxo-editing mode="batch" [allowUpdating]="true"></dxo-editing>
+        <dxo-data-grid-editing mode="batch" [allowUpdating]="true"></dxo-data-grid-editing>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -410,11 +410,11 @@ Editors are displayed in cells in the normal state too if you set the **columns*
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column
+        <dxi-data-grid-column
             dataField="Hidden"
             dataType="boolean"
             [showEditorAlways]="true">
-        </dxi-column>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->

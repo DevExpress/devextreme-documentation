@@ -19,9 +19,9 @@ The load panel is shown only for remote data sources by default. To show it rega
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-load-panel
+        <dxo-tree-list-load-panel
             [enabled]="true">
-        </dxo-load-panel>
+        </dxo-tree-list-load-panel>
     </dx-tree-list>
 
     <!--TypeScript-->
@@ -206,11 +206,11 @@ Since the load panel is a DevExtreme [LoadPanel](/concepts/05%20UI%20Components/
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-load-panel
+        <dxo-tree-list-load-panel
             [height]="100"
             [width]="250"
             indicatorSrc="https://js.devexpress.com/Content/data/loadingIcons/rolling.svg">
-        </dxo-load-panel>
+        </dxo-tree-list-load-panel>
     </dx-tree-list>
 
     <!--TypeScript-->

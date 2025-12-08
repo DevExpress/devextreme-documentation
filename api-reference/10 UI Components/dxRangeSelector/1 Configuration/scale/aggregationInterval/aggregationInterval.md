@@ -30,12 +30,12 @@ If the scale displays numbers, assign a number to this property. For example, an
 ##### Angular
 
     <!--HTML--><dx-range-selector ... >
-        <dxo-scale
+        <dxo-range-selector-scale
             aggregationInterval="day"> <!-- Interval of one day -->
-            <dxo-aggregation-interval
+            <dxo-range-selector-aggregation-interval
                 [days]="5">            <!-- Interval of five days -->
-            </dxo-aggregation-interval>
-        </dxo-scale>
+            </dxo-range-selector-aggregation-interval>
+        </dxo-range-selector-scale>
     </dx-range-selector>
 
     <!--TypeScript-->

@@ -16,9 +16,9 @@ All node labels are colored according to the **label**.**font**.[color](/api-ref
 
     <!--HTML--><dx-sankey ... >
         <dxi-series>
-            <dxo-label
+            <dxo-sankey-label
                 [useNodeColors]="true">
-            </dxo-label>
+            </dxo-sankey-label>
         </dxi-series>
     </dx-sankey>
 

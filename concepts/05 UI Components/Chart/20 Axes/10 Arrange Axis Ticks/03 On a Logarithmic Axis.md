@@ -17,11 +17,11 @@ A logarithmic axis indicates numeric values; each of them is the [logarithmBase]
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis
+        <dxo-chart-argument-axis
             type="logarithmic"
             [tickInterval]="2">
-            <dxo-tick [visible]="true"></dxo-tick>
-        </dxo-argument-axis>
+            <dxo-chart-tick [visible]="true"></dxo-chart-tick>
+        </dxo-chart-argument-axis>
     </dx-chart>
 
     <!--TypeScript-->
@@ -114,11 +114,11 @@ As an alternative to **tickInterval**, you can use the [axisDivisionFactor](/api
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis
+        <dxo-chart-argument-axis
             type="logarithmic"
             [axisDivisionFactor]="20">
-            <dxo-tick [visible]="true"></dxo-tick>
-        </dxo-argument-axis>
+            <dxo-chart-tick [visible]="true"></dxo-chart-tick>
+        </dxo-chart-argument-axis>
     </dx-chart>
 
     <!--TypeScript-->

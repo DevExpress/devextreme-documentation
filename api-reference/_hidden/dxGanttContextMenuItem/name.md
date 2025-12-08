@@ -51,13 +51,13 @@ Specifies the context menu item name.
 
     <!--HTML--> 
     <dx-gantt (onCustomCommand)="onCustomCommand($event)" >
-        <dxo-context-menu>
-            <dxi-item text="Category">
-                <dxi-item name="item1" text="Item 1"></dxi-item>
-                <dxi-item name="item2" text="Item 2"></dxi-item>
-                <dxi-item name="item3" text="Item 3"></dxi-item>
-            </dxi-item>        
-        </dxo-context-menu>
+        <dxo-gantt-context-menu>
+            <dxi-gantt-item text="Category">
+                <dxi-gantt-item name="item1" text="Item 1"></dxi-gantt-item>
+                <dxi-gantt-item name="item2" text="Item 2"></dxi-gantt-item>
+                <dxi-gantt-item name="item3" text="Item 3"></dxi-gantt-item>
+            </dxi-gantt-item>        
+        </dxo-gantt-context-menu>
         ...
     </dx-gantt>
 

@@ -36,14 +36,14 @@ You can implement **offset** along with different **startDayHour**, **endDayHour
 
     <!-- tab: app.component.html -->
     <dx-scheduler ... >
-        <dxi-view ...
+        <dxi-scheduler-view ...
             type="workWeek"
             [offset]="-20"
             [startDayHour]="5"
             [endDayHour]="12"
             [cellDuration]="40"
         >
-        </dxi-view>
+        </dxi-scheduler-view>
     </dx-scheduler>
 
 ##### Vue

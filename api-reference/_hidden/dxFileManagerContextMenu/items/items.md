@@ -58,11 +58,11 @@ To add a predefined item to the context menu, add its [name](/api-reference/_hid
 
     <!-- tab: app.component.html -->
     <dx-file-manager ... >
-        <dxo-context-menu>
-            <dxi-item name="rename"></dxi-item>
-            <dxi-item name="download" text="Download a File"></dxi-item>
-            <dxi-item name="refresh" beginGroup="true"></dxi-item>        
-        </dxo-context-menu>
+        <dxo-file-manager-context-menu>
+            <dxi-file-manager-item name="rename"></dxi-file-manager-item>
+            <dxi-file-manager-item name="download" text="Download a File"></dxi-file-manager-item>
+            <dxi-file-manager-item name="refresh" beginGroup="true"></dxi-file-manager-item>        
+        </dxo-file-manager-context-menu>
         <!-- ... -->
     </dx-file-manager>
 
@@ -234,11 +234,11 @@ To add a custom context menu item, specify its [text](/api-reference/_hidden/dxM
     <!-- tab: app.component.html -->
     <dx-file-manager 
         (onContextMenuItemClick)="onItemClick($event)">
-        <dxo-context-menu>
-            <dxi-item text="Create .txt Document" [options]="{ extension: '.txt' }"></dxi-item>
-            <dxi-item text="Create .rtf Document" [options]="{ extension: '.rtf' }"></dxi-item>
-            <dxi-item text="Create .xls Document" [options]="{ extension: '.xls' }"></dxi-item>
-        </dxo-context-menu>
+        <dxo-file-manager-context-menu>
+            <dxi-file-manager-item text="Create .txt Document" [options]="{ extension: '.txt' }"></dxi-file-manager-item>
+            <dxi-file-manager-item text="Create .rtf Document" [options]="{ extension: '.rtf' }"></dxi-file-manager-item>
+            <dxi-file-manager-item text="Create .xls Document" [options]="{ extension: '.xls' }"></dxi-file-manager-item>
+        </dxo-file-manager-context-menu>
         <!-- ... -->
     </dx-file-manager>
 

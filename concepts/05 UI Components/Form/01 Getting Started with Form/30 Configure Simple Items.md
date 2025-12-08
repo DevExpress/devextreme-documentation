@@ -25,12 +25,12 @@ Use the [items[]](/Documentation/ApiReference/UI_Components/dxForm/Configuration
     <!-- tab: app.component.html -->
     <dx-form
         [formData]="employee">
-        <dxi-item dataField="name"></dxi-item>
-        <dxi-item dataField="officeNumber"></dxi-item>
-        <dxi-item 
+        <dxi-form-item dataField="name"></dxi-form-item>
+        <dxi-form-item dataField="officeNumber"></dxi-form-item>
+        <dxi-form-item 
             dataField="hireDate" 
             [editorOptions]="hireDateOptions">
-        </dxi-item>
+        </dxi-form-item>
     </dx-form>
 
     <!-- tab: app.component.ts -->

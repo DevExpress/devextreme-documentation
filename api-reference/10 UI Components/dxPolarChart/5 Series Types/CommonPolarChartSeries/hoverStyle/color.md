@@ -34,11 +34,11 @@ Sets a color for a series when it is hovered over.
 
     <!-- tab: app.component.html -->
     <dx-polar-chart ... >
-        <dxi-series ... >
-            <dxo-hover-style
+        <dxi-polar-chart-series ... >
+            <dxo-polar-chart-hover-style
                 [color]="fill"
-            ></dxo-hover-style>
-        </dxi-series>
+            ></dxo-polar-chart-hover-style>
+        </dxi-polar-chart-series>
     </dx-polar-chart>
 
     <!-- tab: app.component.ts -->

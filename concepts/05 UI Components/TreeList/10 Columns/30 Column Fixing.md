@@ -25,8 +25,8 @@ To allow this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Compo
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-column-fixing [enabled]="true"></dxo-column-fixing>
-        <dxi-column [allowFixing]="true" ... ></dxi-column>
+        <dxo-tree-list-column-fixing [enabled]="true"></dxo-tree-list-column-fixing>
+        <dxi-tree-list-column [allowFixing]="true" ... ></dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->
@@ -113,7 +113,7 @@ If a column should be fixed initially, assign **true** to its [fixed](/api-refer
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxi-column [fixed]="true" fixedPosition="left" ... ></dxi-column>
+        <dxi-tree-list-column [fixed]="true" fixedPosition="left" ... ></dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->

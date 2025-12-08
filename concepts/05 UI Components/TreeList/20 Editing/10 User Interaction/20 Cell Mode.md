@@ -26,11 +26,11 @@ Clicking the *"Delete"* button invokes the confirmation dialog that allows a use
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-editing 
+        <dxo-tree-list-editing 
             mode="cell"
             [confirmDelete]="false"
             [allowDeleting]="true">
-        </dxo-editing>
+        </dxo-tree-list-editing>
     </dx-tree-list>
 
     <!--TypeScript-->

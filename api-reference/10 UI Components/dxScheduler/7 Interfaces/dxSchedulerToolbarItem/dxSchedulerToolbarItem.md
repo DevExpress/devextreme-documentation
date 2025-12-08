@@ -237,7 +237,7 @@ Predefined controls appear in the toolbar depending on whether a specific {Widge
 
     ##### Angular
 
-    You can use DevExtreme components as toolbar items. Declare a `dxi-item` element to add a [supported component](/api-reference/_hidden/dxToolbarItem/widget.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/#widget'):
+    You can use DevExtreme components as toolbar items. Declare a `dxi-{widget-name}-item` element to add a [supported component](/api-reference/_hidden/dxToolbarItem/widget.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/#widget'):
 
         <!-- tab: app.component.html -->
         <dx-{widget-name} ... >

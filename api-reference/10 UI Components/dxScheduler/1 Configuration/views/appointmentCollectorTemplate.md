@@ -43,9 +43,9 @@ A template name or container.
 
     <!-- tab: app.component.html -->
     <dx-scheduler ... >
-        <dxi-view ...
+        <dxi-scheduler-view ...
             appointmentCollectorTemplate="myTemplate">
-        </dxi-view>
+        </dxi-scheduler-view>
         <div *dxTemplate="let data of 'myTemplate'">
             <!-- your markup goes here -->
         </div>

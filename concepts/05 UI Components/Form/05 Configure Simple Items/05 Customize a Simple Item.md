@@ -37,15 +37,15 @@ If none of the available editors suit your requirements, you can define a custom
     <!--HTML-->
     <dx-form
         [(formData)]="employee">
-        <dxi-item dataField="name"></dxi-item>
-        <dxi-item 
+        <dxi-form-item dataField="name"></dxi-form-item>
+        <dxi-form-item 
             dataField="notes"
             [template]="'notesTemplate'">
-        </dxi-item>
-        <dxi-item 
+        </dxi-form-item>
+        <dxi-form-item 
             dataField="picture" 
             [template]="'pictureTemplate'">
-        </dxi-item>
+        </dxi-form-item>
         <div *dxTemplate="let data of 'notesTemplate'">
             <dx-text-area [(value)]="employee.notes"></dx-text-area>
         </div>
@@ -226,8 +226,8 @@ A simple item can be accompanied by a line of text that gives a hint, for exampl
     <!--HTML-->
     <dx-form
         [(formData)]="employee">
-        <dxi-item dataField="name" [isRequired]="true"></dxi-item>
-        <dxi-item dataField="phone" helpText="Example: +1(111)111-1111"></dxi-item>
+        <dxi-form-item dataField="name" [isRequired]="true"></dxi-form-item>
+        <dxi-form-item dataField="phone" helpText="Example: +1(111)111-1111"></dxi-form-item>
     </dx-form>
 
     <!--TypeScript-->

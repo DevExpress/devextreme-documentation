@@ -20,11 +20,11 @@ Assign a string array that contains multiple items to the **groupInterval** prop
 
         <!-- tab: app.component.html -->
         <dx-data-grid ... >
-            <dxi-column>
-                <dxo-header-filter
+            <dxi-data-grid-column>
+                <dxo-data-grid-header-filter
                     [groupInterval]="groupInterval"
-                ></dxo-header-filter>
-            </dxi-column>
+                ></dxo-data-grid-header-filter>
+            </dxi-data-grid-column>
         </dx-data-grid>
 
         <!-- tab: app.component.ts -->

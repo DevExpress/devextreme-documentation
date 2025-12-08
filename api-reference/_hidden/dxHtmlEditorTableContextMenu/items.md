@@ -39,19 +39,19 @@ Use this property to customize the context menu. For example, the following code
 
     <!-- tab: app.component.html -->
     <dx-html-editor>
-        <dxo-table-context-menu
+        <dxo-html-editor-table-context-menu
             [enabled]="true">
-            <dxi-item name="insertHeaderRow"></dxi-item>
-            <dxi-item name="insertRowAbove"></dxi-item>
-            <dxi-item name="insertRowBelow"></dxi-item>
-            <dxi-item name="insertColumnLeft" [beginGroup]="true"></dxi-item>
-            <dxi-item name="insertColumnRight"></dxi-item>
-            <dxi-item name="deleteColumn" [beginGroup]="true"></dxi-item>
-            <dxi-item name="deleteRow"></dxi-item>
-            <dxi-item name="deleteTable"></dxi-item>
-            <dxi-item name="cellProperties" [beginGroup]="true"></dxi-item>
-            <dxi-item name="tableProperties"></dxi-item>
-        </dxo-table-context-menu>
+            <dxi-html-editor-item name="insertHeaderRow"></dxi-html-editor-item>
+            <dxi-html-editor-item name="insertRowAbove"></dxi-html-editor-item>
+            <dxi-html-editor-item name="insertRowBelow"></dxi-html-editor-item>
+            <dxi-html-editor-item name="insertColumnLeft" [beginGroup]="true"></dxi-html-editor-item>
+            <dxi-html-editor-item name="insertColumnRight"></dxi-html-editor-item>
+            <dxi-html-editor-item name="deleteColumn" [beginGroup]="true"></dxi-html-editor-item>
+            <dxi-html-editor-item name="deleteRow"></dxi-html-editor-item>
+            <dxi-html-editor-item name="deleteTable"></dxi-html-editor-item>
+            <dxi-html-editor-item name="cellProperties" [beginGroup]="true"></dxi-html-editor-item>
+            <dxi-html-editor-item name="tableProperties"></dxi-html-editor-item>
+        </dxo-html-editor-table-context-menu>
     </dx-html-editor>
 
 ##### Vue

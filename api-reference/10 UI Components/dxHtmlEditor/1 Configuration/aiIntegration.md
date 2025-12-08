@@ -61,9 +61,9 @@ To activate AI functionality in HTML Editor, specify:
 
     <!-- tab: app.component.html -->
     <dx-html-editor [aiIntegration]="aiIntegration">
-        <dxo-toolbar>
-            <dxi-item name="ai" [commands]="commands"></dxi-item>
-        </dxo-toolbar>
+        <dxo-html-editor-toolbar>
+            <dxi-html-editor-item name="ai" [commands]="commands"></dxi-html-editor-item>
+        </dxo-html-editor-toolbar>
     </dx-html-editor>
 
 ##### Vue

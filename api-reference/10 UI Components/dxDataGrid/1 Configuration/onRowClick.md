@@ -81,7 +81,7 @@ In the following code, the **onRowClick** function calls the [editRow](/api-refe
     <!-- tab: app.component.html -->
     <dx-{widget-name} ...
         (onRowClick)="startEdit($event)">
-        <dxo-editing mode="form"></dxo-editing>
+        <dxo-{widget-name}-editing mode="form"></dxo-{widget-name}-editing>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

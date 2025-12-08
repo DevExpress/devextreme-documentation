@@ -45,20 +45,20 @@ To configure Chart with multiple series, update your data source with additional
 
     <!-- tab: app.component.html -->
     <dx-chart [dataSource]="chartData" >
-        <dxi-series
+        <dxi-chart-series
             type="bar"
             argumentField="month"
             valueField="targetSpend"
             name="Budget"
             color="#5996ff"
-        ></dxi-series>
-        <dxi-series
+        ></dxi-chart-series>
+        <dxi-chart-series
             type="spline"
             argumentField="month"
             valueField="actualSpend"
             name="Amount Spent"
             color="#cb4bfa"
-        ></dxi-series>
+        ></dxi-chart-series>
     </dx-chart>
 
     <!-- tab: app.component.ts -->

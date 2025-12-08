@@ -65,7 +65,7 @@ The following instructions show how to enable and configure client-side export:
 
         <!-- tab: app.component.html -->
         <dx-pivot-grid ... >
-            <dxo-export [enabled]="true"></dxo-export>
+            <dxo-pivot-grid-export [enabled]="true"></dxo-pivot-grid-export>
         </dx-pivot-grid>
 
         <!-- tab: app.component.ts -->
@@ -186,7 +186,7 @@ The following instructions show how to enable and configure client-side export:
         <!-- tab: app.component.html -->
         <dx-pivot-grid ...
             (onExporting)="onExporting($event)">
-            <dxo-export [enabled]="true"></dxo-export>
+            <dxo-pivot-grid-export [enabled]="true"></dxo-pivot-grid-export>
         </dx-pivot-grid>
 
         <!-- tab: app.component.ts -->

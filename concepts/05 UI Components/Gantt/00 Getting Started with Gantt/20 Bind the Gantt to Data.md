@@ -87,12 +87,12 @@ The example below illustrates how to bind the Gantt UI component to data sources
 
     <!-- tab: app.component.html -->
     <dx-gantt [rootValue]="-1">
-        <dxo-tasks [dataSource]="tasks"></dxo-tasks>
-        <dxo-dependencies [dataSource]="dependencies"></dxo-dependencies>
-        <dxo-resources [dataSource]="resources"></dxo-resources>
-        <dxo-resource-assignments
+        <dxo-gantt-tasks [dataSource]="tasks"></dxo-gantt-tasks>
+        <dxo-gantt-dependencies [dataSource]="dependencies"></dxo-gantt-dependencies>
+        <dxo-gantt-resources [dataSource]="resources"></dxo-gantt-resources>
+        <dxo-gantt-resource-assignments
             [dataSource]="resourceAssignments"
-        ></dxo-resource-assignments>
+        ></dxo-gantt-resource-assignments>
     </dx-gantt>
 
     <!-- tab: app.service.ts -->

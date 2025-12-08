@@ -126,7 +126,7 @@ You can hide a series on component initialization. To do this, assign **false** 
 
     <!--HTML-->
     <dx-chart ... >
-        <dxi-series [visible]="false" ...></dxi-series>
+        <dxi-chart-series [visible]="false" ...></dxi-chart-series>
     </dx-chart>
 
     <!--TypeScript-->

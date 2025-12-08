@@ -16,10 +16,10 @@ Values on a discrete axis are called ["categories"](/api-reference/10%20UI%20Com
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis
+        <dxo-chart-argument-axis
             discreteAxisDivisionMode="crossLabels"> <!-- or 'betweenLabels' -->
-            <dxo-tick [visible]="true"></dxo-tick>
-        </dxo-argument-axis>
+            <dxo-chart-tick [visible]="true"></dxo-chart-tick>
+        </dxo-chart-argument-axis>
     </dx-chart>
 
     <!--TypeScript-->

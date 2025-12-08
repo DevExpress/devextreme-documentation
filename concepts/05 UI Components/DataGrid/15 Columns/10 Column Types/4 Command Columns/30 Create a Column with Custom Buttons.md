@@ -25,13 +25,13 @@ The following code shows how to add a command column with custom [buttons](/api-
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column type="buttons" [buttons]="['edit', 'delete']"></dxi-column>
-        <dxi-column dataField="firstName"></dxi-column>
-        <dxi-column dataField="lastName"></dxi-column>
-        <dxi-column type="buttons">
-            <dxi-button ... ></dxi-button>
+        <dxi-data-grid-column type="buttons" [buttons]="['edit', 'delete']"></dxi-data-grid-column>
+        <dxi-data-grid-column dataField="firstName"></dxi-data-grid-column>
+        <dxi-data-grid-column dataField="lastName"></dxi-data-grid-column>
+        <dxi-data-grid-column type="buttons">
+            <dxi-data-grid-button ... ></dxi-data-grid-button>
             <!-- Declare and configure custom buttons here -->
-        </dxi-column>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->

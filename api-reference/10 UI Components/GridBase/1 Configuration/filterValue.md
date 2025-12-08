@@ -34,9 +34,9 @@ The filter expression can contain the following operations: *"="*, *"<>"*, *"<"*
     <dx-{widget-name} ...
         [filterSyncEnabled]="true"
         [filterValue]="['ID', 'anyof', [500, 700]]"> 
-        <dxo-header-filter 
+        <dxo-{widget-name}-header-filter 
             [visible]="true">
-        </dxo-header-filter>
+        </dxo-{widget-name}-header-filter>
     </dx-{widget-name}>
 
     <!--TypeScript-->
@@ -152,16 +152,16 @@ If a column's [groupInterval](/api-reference/40%20Common%20Types/15%20grids/Colu
     <dx-{widget-name} ...
         <!-- Filter intervals are 500-600 and 700-800 -->
         [(filterValue)]="['ID', 'anyof', [500, 700]]">
-            <dxo-header-filter 
+            <dxo-{widget-name}-header-filter 
                 [visible]="true">
-            </dxo-header-filter>
-            <dxi-column
+            </dxo-{widget-name}-header-filter>
+            <dxi-{widget-name}-column
                 dataField="ID"
                 dataType="number">
-                    <dxo-header-filter 
+                    <dxo-{widget-name}-header-filter 
                         [groupInterval]="100">
-                    </dxo-header-filter>
-            </dxi-column>
+                    </dxo-{widget-name}-header-filter>
+            </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!--TypeScript-->

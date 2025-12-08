@@ -45,12 +45,12 @@ Summaries of the *count* type do not skip empty values regardless of the **skipE
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-summary [calculateCustomSummary]="calculateSummary">
-            <dxi-total-item
+        <dxo-data-grid-summary [calculateCustomSummary]="calculateSummary">
+            <dxi-data-grid-total-item
                 summaryType="custom"
                 name="customSummary1">
-            </dxi-total-item>
-        </dxo-summary>
+            </dxi-data-grid-total-item>
+        </dxo-data-grid-summary>
     </dx-data-grid>
 
     <!--TypeScript-->

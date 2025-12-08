@@ -39,13 +39,13 @@ dxPolarChartSeriesTypes.linepolarseries,dxPolarChartSeriesTypes.areapolarseries,
 
     <!-- tab: app.component.html -->
     <dx-polar-chart ... >
-        <dxi-series ... >
-            <dxo-point ... >
-                <dxo-selection-style 
+        <dxi-polar-chart-series ... >
+            <dxo-polar-chart-point ... >
+                <dxo-polar-chart-selection-style 
                     [color]="fill"
-                ></dxo-selection-style>
-            </dxo-point>
-        </dxi-series>
+                ></dxo-polar-chart-selection-style>
+            </dxo-polar-chart-point>
+        </dxi-polar-chart-series>
     </dx-polar-chart>
 
     <!-- tab: app.component.ts -->

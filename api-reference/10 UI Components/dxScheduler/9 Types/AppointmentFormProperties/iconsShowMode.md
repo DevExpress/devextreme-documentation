@@ -1,6 +1,7 @@
 ---
-id: AIColumnResponseReceivedInfo.data
-type: Array<Object>
+id: AppointmentFormProperties.iconsShowMode
+type: Enums.AppointmentFormIconsShowMode
+default: 'main'
 ---
 ---
 ##### shortDescription

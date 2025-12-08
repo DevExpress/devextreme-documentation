@@ -34,11 +34,11 @@ Sets a color for a series when it is selected.
 
     <!-- tab: app.component.html -->
     <dx-polar-chart ... >
-        <dxi-series ... >
-            <dxo-selection-style
+        <dxi-polar-chart-series ... >
+            <dxo-polar-chart-selection-style
                 [color]="fill"
-            ></dxo-selection-style>
-        </dxi-series>
+            ></dxo-polar-chart-selection-style>
+        </dxi-polar-chart-series>
     </dx-polar-chart>
 
     <!-- tab: app.component.ts -->

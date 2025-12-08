@@ -24,11 +24,11 @@ In this tutorial, the tooltip displays information about the point argument. Use
     <dx-pie-chart ...
     >
         <!-- ... -->
-        <dxo-tooltip
+        <dxo-pie-chart-tooltip
             [enabled]="true"
             [contentTemplate]="contentTemplate"
         >
-        </dxo-tooltip>
+        </dxo-pie-chart-tooltip>
     </dx-pie-chart>
 
     <!-- tab: app.component.ts -->

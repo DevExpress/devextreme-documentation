@@ -88,22 +88,22 @@ This tutorial demonstrates the use of the **items[]**.**template** property. Thi
 
     <!-- tab: app.component.html -->
     <dx-tab-panel>
-        <dxi-item title="Employee" icon="floppy">
+        <dxi-tab-panel-item title="Employee" icon="floppy">
             <div *dxTemplate>
                 <dx-form
                     id="form"
                     [formData]="employeeData"
                 >
-                    <dxi-item dataField="name">
-                        <dxo-label template="name"></dxo-label>
-                    </dxi-item>
-                    <dxi-item dataField="position">
-                        <dxo-label template="position"></dxo-label>
-                    </dxi-item>
-                    <<dxi-item dataField="hireDate"></dxi-item>
-                    <dxi-item dataField="officeNumber">
-                        <dxo-label template="officeNumber"></dxo-label>
-                    </dxi-item>
+                    <dxi-form-item dataField="name">
+                        <dxo-form-label template="name"></dxo-form-label>
+                    </dxi-form-item>
+                    <dxi-form-item dataField="position">
+                        <dxo-form-label template="position"></dxo-form-label>
+                    </dxi-form-item>
+                    <<dxi-form-item dataField="hireDate"></dxi-form-item>
+                    <dxi-form-item dataField="officeNumber">
+                        <dxo-form-label template="officeNumber"></dxo-form-label>
+                    </dxi-form-item>
                     <ng-container *ngFor="let label of labelTemplates">
                         <div *dxTemplate="let data of label.name">
                             <div><i class="dx-icon {{ label.icon }}"></i>{{ data.text }}</div>
@@ -111,22 +111,22 @@ This tutorial demonstrates the use of the **items[]**.**template** property. Thi
                     </ng-container>
                 </dx-form>
             </div>
-        </dxi-item>
-        <dxi-item title="Notes" icon="comment">
+        </dxi-tab-panel-item>
+        <dxi-tab-panel-item title="Notes" icon="comment">
             <div *dxTemplate>
                 <dx-text-area
                     [(value)]="employeeData.notes">
                 </dx-text-area>
             </div>
-        </dxi-item>
-        <dxi-item title="Role" icon="isnotblank" badge="new">
+        </dxi-tab-panel-item>
+        <dxi-tab-panel-item title="Role" icon="isnotblank" badge="new">
             <div *dxTemplate>
                 <dx-radio-group
                     [items]="employeeData.roles"
                     [(value)]="employeeData.roles[0]">
                 </dx-radio-group>
             </div>
-        </dxi-item>
+        </dxi-tab-panel-item>
     </dx-tab-panel>
 
     <!-- tab: app.component.ts -->

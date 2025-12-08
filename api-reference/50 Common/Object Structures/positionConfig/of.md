@@ -199,9 +199,9 @@ This property accepts the following value types:
         <!-- tab: app.component.html -->
         <a id="target" (click)="eventHandler($event, item)">Details</a>
         <dx-popover>
-            <dxo-position
+            <dxo-popover-position
                 [of]="target">
-            </dxo-position>
+            </dxo-popover-position>
         </dx-popover>
     
         <!-- tab: app.component.ts -->

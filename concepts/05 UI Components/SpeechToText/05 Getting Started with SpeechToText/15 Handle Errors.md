@@ -13,7 +13,8 @@ SpeechToText returns [Web Speech API errors](https://webaudio.github.io/web-spee
     import notify from 'devextreme/ui/notify';
 
     onError(e) {
-        notify(e.event.error);
+        const speechEvent = e.event as SpeechRecognitionErrorEvent;
+        notify(speechEvent.error);
     }
 
 ##### Vue
@@ -21,7 +22,8 @@ SpeechToText returns [Web Speech API errors](https://webaudio.github.io/web-spee
     import notify from 'devextreme/ui/notify';
 
     onError(e) {
-        notify(e.event.error);
+        const speechEvent = e.event as SpeechRecognitionErrorEvent;
+        notify(speechEvent.error);
     }
 
 ##### React
@@ -29,7 +31,8 @@ SpeechToText returns [Web Speech API errors](https://webaudio.github.io/web-spee
     import notify from 'devextreme/ui/notify';
 
     onError(e) {
-        notify(e.event.error);
+        const speechEvent = e.event as SpeechRecognitionErrorEvent;
+        notify(speechEvent.error);
     }
 
 ---
@@ -72,7 +75,8 @@ This example implements an `if` statement to display a unique message for `not-a
     // ...
     export class AppComponent {
         handleError(e: SpeechToTextTypes.ErrorEvent): void {
-            if (e.event.error === 'not-allowed') {
+            const speechEvent = e.event as SpeechRecognitionErrorEvent;
+            if (speechEvent.error === 'not-allowed') {
                 notify('Microphone access denied. Please grant microphone permissions and try again.', 'error', 5000);
             } else {
                 notify(`An error occurred during speech recognition: ${e.event.error}`, 'error', 5000);
@@ -98,7 +102,8 @@ This example implements an `if` statement to display a unique message for `not-a
 
     // ...
     function handleError(e: DxSpeechToTextTypes.ErrorEvent): void {
-        if (e.event.error === 'not-allowed') {
+        const speechEvent = e.event as SpeechRecognitionErrorEvent;
+        if (speechEvent.error === 'not-allowed') {
             notify('Microphone access denied. Please grant microphone permissions and try again.', 'error', 5000);
         } else {
             notify(`An error occurred during speech recognition: ${e.event.error}`, 'error', 5000);
@@ -115,16 +120,17 @@ This example implements an `if` statement to display a unique message for `not-a
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import notify from 'devextreme/ui/notify';
 
-    // ...
-    const handleError = useCallback((e: SpeechToTextTypes.ErrorEvent): void => {
-        if (e.event.error === 'not-allowed') {
-            notify('Microphone access denied. Please grant microphone permissions and try again.', 'error', 5000);
-        } else {
-            notify(`An error occurred during speech recognition: ${e.event.error}`, 'error', 5000);
-        }
-    }, []);
-
     function App(): JSX.Element {
+        // ...
+        const handleError = useCallback((e: SpeechToTextTypes.ErrorEvent): void => {
+            const speechEvent = e.event as SpeechRecognitionErrorEvent;
+            if (speechEvent.error === 'not-allowed') {
+                notify('Microphone access denied. Please grant microphone permissions and try again.', 'error', 5000);
+            } else {
+                notify(`An error occurred during speech recognition: ${e.event.error}`, 'error', 5000);
+            }
+        }, []);
+
         return (
             <div className="demo-container">
                 <SpeechToText ...

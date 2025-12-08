@@ -45,8 +45,9 @@ The following code snippet demonstrates how to extract transcribed text in the *
     // ...
     export class AppComponent {
         handleResult(e: DxSpeechToTextTypes.ResultEvent) {
-            const resultText = Object.values(e.event.results)
-                .map((resultItem) => resultItem[0].transcript)
+            const speechEvent = e.event as SpeechRecognitionEvent;
+            const resultText = Object.values(speechEvent.results)
+                .map((resultItem: unknown) => (resultItem as SpeechRecognitionResult)[0].transcript)
                 .join(" ");
         }
     }
@@ -64,8 +65,9 @@ The following code snippet demonstrates how to extract transcribed text in the *
     import { DxSpeechToText, type DxSpeechToTextTypes } from 'devextreme-vue/speech-to-text';
 
     function handleResult(e: DxSpeechToTextTypes.ResultEvent) {
-        const resultText = Object.values(e.event.results)
-            .map((resultItem) => resultItem[0].transcript)
+        const speechEvent = e.event as SpeechRecognitionEvent;
+        const resultText = Object.values(speechEvent.results)
+            .map((resultItem: unknown) => (resultItem as SpeechRecognitionResult)[0].transcript)
             .join(" ");
     }
     </script>
@@ -77,8 +79,9 @@ The following code snippet demonstrates how to extract transcribed text in the *
     import { SpeechToText, type SpeechToTextTypes } from 'devextreme-react/speech-to-text';
 
     function handleResult(e: DxSpeechToTextTypes.ResultEvent): void {
-        const resultText = Object.values(e.event.results)
-            .map((resultItem) => resultItem[0].transcript)
+        const speechEvent = e.event as SpeechRecognitionEvent;
+        const resultText = Object.values(speechEvent.results)
+            .map((resultItem: unknown) => (resultItem as SpeechRecognitionResult)[0].transcript)
             .join(" ");
     }
 
@@ -92,4 +95,23 @@ The following code snippet demonstrates how to extract transcribed text in the *
 
 ---
 
-[note] The component does not call this handler if you implement a [custom speech recognition engine](/api-reference/10%20UI%20Components/dxSpeechToText/1%20Configuration/customSpeechRecognizer.md '/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/customSpeechRecognizer/').
+[note]
+
+- The component does not call this handler if you implement a [custom speech recognition engine](/api-reference/10%20UI%20Components/dxSpeechToText/1%20Configuration/customSpeechRecognizer.md '/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/customSpeechRecognizer/').
+
+- To add all **SpeechRecognition** types (including `SpeechRecognitionEvent`) to your project:
+
+1. Install the `@types/dom-speech-recognition` package:
+
+            npm i -D @types/dom-speech-recognition
+
+2. Add `"dom-speech-recognition"` to the **types** array in your TypeScript configuration:
+
+            <!-- tab: tsconfig.app.json -->
+            {
+                "compilerOptions": {
+                    "types": ["dom-speech-recognition"],
+                }
+            }
+
+[/note]

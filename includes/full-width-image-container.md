@@ -1,0 +1,1 @@
+<div class="full-width-image-container" style="width: 100%; display: flex; justify-content: center; border-radius: 16px; min-width: 400px;"><img src="${{src}}" alt="${{alt}}" style="width: 30vw; min-width: 400px;"></img></div>

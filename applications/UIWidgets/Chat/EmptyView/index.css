@@ -96,15 +96,6 @@
 }
 
 @media (max-width: 830px) {
-  #chat .dx-scrollable-content {
-    padding-right: 28px;
-    padding-left: 28px;
-  }
-
-  #chat .dx-scrollable-content .dx-scrollable-content {
-    padding: 0;
-  }
-
   .empty-view-container #tile-view-container {
     width: 100% !important;
     height: 336px !important;

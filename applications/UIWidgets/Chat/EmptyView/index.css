@@ -30,8 +30,8 @@
 }
 
 #chat .dx-chat-messagebox {
-  border-top-width: 0px;
-  padding: 20px 40px 40px 40px;
+  border-top-width: 0;
+  padding: 20px 40px 40px;
 }
 
 .empty-view-container {
@@ -65,8 +65,8 @@
 
 .dx-tile:hover {
   transform: scale(1.025); 
-  border: 1px solid rgba(224, 224, 224, .6);
-  box-shadow: 0px 0px 8px 4px rgba(0, 4, 8, .025);
+  border: 1px solid rgba(224 224 224 / 60%);
+  box-shadow: 0 0 8px 4px rgba(0 4 8 / 2.5%);
   cursor: pointer;
 }
 
@@ -95,7 +95,7 @@
   text-align: center;
 }
 
-@media (max-width: 830px) {
+@media (width <= 830px) {
   .empty-view-container #tile-view-container {
     width: 100% !important;
     height: 336px !important;

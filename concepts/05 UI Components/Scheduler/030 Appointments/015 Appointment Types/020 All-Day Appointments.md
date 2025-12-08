@@ -1,6 +1,11 @@
 An all-day appointment occupies the entire day.
 
-![Scheduler All-Day Appointment](/images/UiWidgets/Scheduler_AllDayAppointment.png)
+#include full-width-image-container with {
+   src: "/images/UiWidgets/Scheduler_AllDayAppointment.png",
+   alt: "Scheduler all-day appointment",
+   minWidth: "360px",
+   width: "80vw"
+}
 
 To create an all-day appointment, set its [allDay](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerAppointment/allDay.md '/Documentation/ApiReference/UI_Components/dxScheduler/Interfaces/dxSchedulerAppointment/#allDay') field to **true**. An all-day appointment must have a [startDate](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerAppointment/startDate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Interfaces/dxSchedulerAppointment/#startDate') field. You can also set an [endDate](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerAppointment/endDate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Interfaces/dxSchedulerAppointment/#endDate') field if the appointment occupies more than one day. Time values in these fields are ignored.
 

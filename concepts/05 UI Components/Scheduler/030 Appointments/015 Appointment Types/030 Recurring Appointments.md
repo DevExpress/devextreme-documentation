@@ -1,6 +1,11 @@
 A recurring appointment repeats at a specified interval. 
 
-![Scheduler Recurring Appointment](/images/UiWidgets/Scheduler_RecurrentAppointment.png)
+#include full-width-image-container with {
+   src: "/images/UiWidgets/Scheduler_RecurrentAppointment.png",
+   alt: "Scheduler recurring appointment",
+   minWidth: "360px",
+   width: "80vw"
+}
 
 To make an appointment recurring, specify the [recurrenceRule](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerAppointment/recurrenceRule.md '/Documentation/ApiReference/UI_Components/dxScheduler/Interfaces/dxSchedulerAppointment/#recurrenceRule') field with a value according to the <a href="https://tools.ietf.org/html/rfc2445#section-4.3.10" target="_blank">iCalendar RFC 2445</a> specification. This creates an appointment series. You can exclude specific appointments from it if you set their [recurrenceException](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerAppointment/recurrenceException.md '/Documentation/ApiReference/UI_Components/dxScheduler/Interfaces/dxSchedulerAppointment/#recurrenceException') field. For example, the appointment below occurs daily since February 20, 2021, except February 22 and 23:
 

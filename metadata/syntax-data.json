@@ -6124,12 +6124,6 @@
     "appointmentFormProperties.iconsShowMode": {
       "vue": "icons-show-mode"
     },
-    "appointmentFormProperties.onCanceled": {
-      "vue": "@canceled"
-    },
-    "appointmentFormProperties.onSaved": {
-      "vue": "@saved"
-    },
     "arrayStoreOptions": {
       "vue": "array-store-options"
     },

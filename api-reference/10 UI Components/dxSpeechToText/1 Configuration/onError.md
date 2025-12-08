@@ -44,7 +44,8 @@ The following code snippet demonstrates how to implement the [notify()](/api-ref
     // ...
     export class AppComponent {
         handleError(e: DxSpeechToTextTypes.ErrorEvent) {
-            notify(`Web Speech API encountered an error: ${e.event.error}`);
+            const speechEvent = e.event as SpeechRecognitionErrorEvent;
+            notify(`Web Speech API encountered an error: ${speechEvent.error}`);
         }
     }
 
@@ -61,8 +62,9 @@ The following code snippet demonstrates how to implement the [notify()](/api-ref
     import { DxSpeechToText, type DxSpeechToTextTypes } from 'devextreme-vue/speech-to-text';
     import notify from 'devextreme/ui/notify';
 
-    function handleError(e: DxSpeechToTextTypes.ResultEvent) {
-        notify(`Web Speech API encountered an error: ${e.event.error}`);
+    function handleError(e: DxSpeechToTextTypes.ErrorEvent) {
+        const speechEvent = e.event as SpeechRecognitionErrorEvent;
+        notify(`Web Speech API encountered an error: ${speechEvent.error}`);
     }
     </script>
 
@@ -73,8 +75,9 @@ The following code snippet demonstrates how to implement the [notify()](/api-ref
     import { SpeechToText, type SpeechToTextTypes } from 'devextreme-react/speech-to-text';
     import notify from 'devextreme/ui/notify';
 
-    function handleError(e: DxSpeechToTextTypes.ResultEvent): void {
-        notify(`Web Speech API encountered an error: ${e.event.error}`);
+    function handleError(e: DxSpeechToTextTypes.ErrorEvent): void {
+        const speechEvent = e.event as SpeechRecognitionErrorEvent;
+        notify(`Web Speech API encountered an error: ${speechEvent.error}`);
     }
 
     function App(): JSX.Element {
@@ -87,4 +90,23 @@ The following code snippet demonstrates how to implement the [notify()](/api-ref
 
 ---
 
-[note] The component does not call this handler if you implement a [custom speech recognition engine](/api-reference/10%20UI%20Components/dxSpeechToText/1%20Configuration/customSpeechRecognizer.md '/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/customSpeechRecognizer/').
+[note]
+
+- The component does not call this handler if you implement a [custom speech recognition engine](/api-reference/10%20UI%20Components/dxSpeechToText/1%20Configuration/customSpeechRecognizer.md '/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/customSpeechRecognizer/').
+
+- To add all **SpeechRecognition** types (including `SpeechRecognitionErrorEvent`) to your project:
+
+1. Install the `@types/dom-speech-recognition` package:
+
+            npm i -D @types/dom-speech-recognition
+
+2. Add `"dom-speech-recognition"` to the **types** array in your TypeScript configuration:
+
+            <!-- tab: tsconfig.app.json -->
+            {
+                "compilerOptions": {
+                    "types": ["dom-speech-recognition"],
+                }
+            }
+
+[/note]

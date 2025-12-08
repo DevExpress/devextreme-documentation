@@ -126,6 +126,11 @@ If your appointment data objects contain a different field that performs the fun
 
 To mark an appointment as all-day in the UI, toggle the *"All day"* switcher on the appointment edit form. This form appears when a user [adds](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/020%20Add%20Appointments '/Documentation/Guide/UI_Components/Scheduler/Appointments/Add_Appointments/') or [updates](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/030%20Update%20Appointments '/Documentation/Guide/UI_Components/Scheduler/Appointments/Update_Appointments/') an appointment. 
 
-![Scheduler All Day Appointment Details](/images/UiWidgets/Scheduler_AllDayAppointment_Details.png)
+#include full-width-image-container with {
+   src: "/images/UiWidgets/Scheduler_AllDayAppointment_Details.png",
+   alt: "Scheduler all-day appointment edit form",
+   minWidth: "360px",
+   width: "80vw"
+}
 
 All-day appointments are displayed in the All-day panel. If you do not use such appointments, disable the [showAllDayPanel](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/showAllDayPanel.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#showAllDayPanel') property to hide the All-day panel.

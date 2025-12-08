@@ -132,7 +132,12 @@ If your appointment data objects contain different fields that perform the funct
 
 In the UI, to mark an appointment as recurring, toggle the *"Repeat"* switcher on the appointment edit form. Then, a set of new fields will appear. 
 
-![Scheduler Recurring Appointment Details](/images/UiWidgets/Scheduler_RecurrentAppointment_Details.png)
+#include full-width-image-container with {
+   src: "/images/UiWidgets/Scheduler_RecurrentAppointment_Details.png",
+   alt: "Scheduler recurring appointment edit form",
+   minWidth: "360px",
+   width: "80vw"
+}
 
 The Scheduler control saves the specified values in the appointment's **recurrenceRule** field. Note that although the control displays a recurring appointment as several appointments on the timetable, it only saves a single appointment object to the data source.
 

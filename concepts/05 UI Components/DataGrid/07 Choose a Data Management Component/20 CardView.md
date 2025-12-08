@@ -1,8 +1,8 @@
-Displays data records as cards. Ideal for visual layouts, adaptive interfaces, and scenarios focused on presentation.
+Displays data records as cards. Ideal for visual layouts, adaptive interfaces, and scenarios focused on presentation. For the expanded list of features, see [CardView Key Features](/Documentation/Guide/UI_Components/CardView/Overview/#Key_Features).
 
 <img src="/images/CardView/card-view-choose.png" alt="DevExtreme CardView" />
 
-Use it for:
+### Typical Usage Scenarios
 
 - Product directories with images  
 - Employee or customer lists  

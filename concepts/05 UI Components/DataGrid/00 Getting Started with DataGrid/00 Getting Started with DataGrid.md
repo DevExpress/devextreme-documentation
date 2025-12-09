@@ -1,3 +1,5 @@
+#include uiwidgets-grids-choose-a-data-management-component
+
 #include tutorials-intro-installationnote
 
 The DataGrid component displays data from a local or remote store and allows users to sort, group, filter, and perform other operations on columns and records.

@@ -1,6 +1,8 @@
+#include uiwidgets-grids-choose-a-data-management-component
+
 #include tutorials-intro-installationnote
 
-The PivotGrid component allows you to display and analyze multi-dimensional data from a local storage or an OLAP cube.
+The PivotGrid component allows you to display and analyze multi-dimensional data from local storage or OLAP cube.
 
 [note]
 

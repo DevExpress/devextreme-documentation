@@ -2,7 +2,7 @@
 
 #include tutorials-intro-installationnote
 
-CardView is a UI component that enables you to display data in a card-based format. You can use it for employee directories, contact lists, product catalogs, or task boards.
+CardView is a UI component that displays data in a card-based format. You can use it for employee directories, contact lists, product catalogs, and task boards.
 
 This tutorial explains how to add a CardView to a page and configure the component's core settings. 
 

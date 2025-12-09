@@ -6,74 +6,51 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies dependency between the screen factor and the count of columns in the form layout.
+Specifies Form column counts for different screen sizes.
 
 ---
 
-The following code sample illustrates how to set this property:
+The following code snippet implements 2 columns for the "xs" screen size:
 
 ---
 ##### jQuery
 
-    <!--JavaScript-->
-    $(function() {
-        $("#formContainer").dxForm({
-            // ...
-            colCountByScreen: {
-                xs: 2
-            }
-        });
+    <!-- tab: index.js -->
+    $("#form-container").dxForm({
+        colCountByScreen: {
+            xs: 2
+        }
     });
 
 ##### Angular
 
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-form ... >
         <dxo-col-count-by-screen [xs]="2"></dxo-col-count-by-screen>
     </dx-form>
-
-    <!--TypeScript-->
-    import { DxFormModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        // ...
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxFormModule
-        ],
-        // ...
-    })
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <DxForm ...>
-            <DxColCountByScreen :xs="2"/>
+        <DxForm ... >
+            <DxColCountByScreen :xs="2" />
         </DxForm>
     </template>
-    <script>
-    import DxForm, { DxColCountByScreen } from 'devextreme-vue/form';
+    <script setup lang="ts">
+    import { DxForm, DxColCountByScreen } from 'devextreme-vue/form';
 
-    export default {
-        components: {
-            DxForm,
-            DxColCountByScreen
-        }
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
-    import Form, { ColCountByScreen } from 'devextreme-react/form';
+    import { Form, ColCountByScreen } from 'devextreme-react/form';
 
-    const App = () => {
+    function App() {
         return (
-            <Form ...>
+            <Form ... >
                 <ColCountByScreen xs={2} />
             </Form>
         );
@@ -82,6 +59,8 @@ The following code sample illustrates how to set this property:
     export default App;
 
 ---
+
+[note] Column count changes [repaint](/Documentation/ApiReference/UI_Components/dxForm/Methods/#repaint) the Form. Repaints reset item states and reinitialize Form items and item templates.
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/ColumnsAdaptability/"

@@ -77,3 +77,5 @@ $(function(){
         adaptivityEnabled: true
     });
 });
+
+$('body').css('padding', '0');

@@ -6,7 +6,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies Form column counts for different screen sizes.
+Specifies the number of Form columns for different screen sizes.
 
 ---
 

@@ -1,0 +1,1 @@
+DevExtreme includes multiple data management components. You can use them to display tabular, hierarchical, multidimensional data, or present information as cards. For more information about these components and their features, see [How to Choose a Data Management Component](/Documentation/Guide/UI_Components/DataGrid/Choose_a_Data_Management_Component/).

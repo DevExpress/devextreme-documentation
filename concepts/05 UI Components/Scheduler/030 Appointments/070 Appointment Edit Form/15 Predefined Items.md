@@ -150,7 +150,7 @@ Appointment recurrence settings are available in the `recurrenceGroup`:
 
 #include full-width-image-container with {
    src: "/images/Scheduler/appointment-edit-form/items/resourcesGroup.png",
-   alt: "TBA",
+   alt: "Scheduler appointment edit form, resources groups.",
    width: "30vw",
    minWidth: "412px"
 }
@@ -162,7 +162,7 @@ Appointment recurrence settings are available in the `recurrenceGroup`:
 
 #include full-width-image-container with {
    src: "/images/Scheduler/appointment-edit-form/items/resourcesGroup-content.png",
-   alt: "TBA",
+   alt: "Scheduler appointment edit form, resources group items.",
    width: "30vw",
    minWidth: "412px"
 }
@@ -181,7 +181,7 @@ The following image demonstrates a compact `resourcesGroup` layout:
 
 #include full-width-image-container with {
    src: "/images/Scheduler/appointment-edit-form/items/resourcesGroup-alt.png",
-   alt: "TBA",
+   alt: "Scheduler appointment edit form, resources group items, alternative layout.",
    width: "30vw",
    minWidth: "412px"
 }
@@ -194,7 +194,7 @@ The following image demonstrates `resourcesGroup` items when no resource icons a
 
 #include full-width-image-container with {
    src: "/images/Scheduler/appointment-edit-form/items/resourcesGroup-no-logos.png",
-   alt: "TBA",
+   alt: "Scheduler appointment edit form, resources group items, no individual resource icons.",
    width: "30vw",
    minWidth: "412px"
 }
@@ -319,7 +319,7 @@ The following image demonstrates `recurrenceRuleGroup` items specific to each re
 
 #include full-width-image-container with {
    src: "/images/Scheduler/appointment-edit-form/items/recurrenceEndEditor.png",
-   alt: "TBA",
+   alt: "Scheduler appointment edit form, recurrence end date editor items",
    width: "30vw",
    minWidth: "412px"
 }

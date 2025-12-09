@@ -88,7 +88,7 @@ Configure **editing**.**form**.[items[]](/Documentation/ApiReference/UI_Componen
 
 ---
 
-To add resource field editors to **items[]**, use resource labels in item names as follows:
+To add a resource field editor to **items[]**, use the resource [fieldExpr](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/#fieldExpr) in an item name as follows:
 
 ---
 
@@ -97,7 +97,7 @@ To add resource field editors to **items[]**, use resource labels in item names 
     <!-- tab: index.js -->
     $('#scheduler').dxScheduler({
         resources: [{
-            label: 'Priority'
+            fieldExpr: 'priorityId'
         }],
         editing: {
             form: {
@@ -105,9 +105,9 @@ To add resource field editors to **items[]**, use resource labels in item names 
                     name: 'mainGroup',
                     itemType: 'group',
                     items: [{
-                        name: 'PriorityGroup',
+                        name: 'priorityIdGroup',
                         itemType: 'group',
-                        items: ['PriorityIcon', 'PriorityEditor']
+                        items: ['priorityIdIcon', 'priorityIdEditor']
                     }],
                 }, ... ],
             },
@@ -125,11 +125,11 @@ To add resource field editors to **items[]**, use resource labels in item names 
                     itemType="group"
                 >
                     <dxi-form-item
-                        name="PriorityGroup"
+                        name="priorityIdGroup"
                         itemType="group"
                     >
-                        <dxi-form-item name="PriorityIcon"></dxi-form-item>
-                        <dxi-form-item name="PriorityEditor"></dxi-form-item>
+                        <dxi-form-item name="priorityIdIcon"></dxi-form-item>
+                        <dxi-form-item name="priorityIdEditor"></dxi-form-item>
                     </dxi-form-item>
                 </dxi-form-item>
             </dxo-editing-form>
@@ -148,11 +148,11 @@ To add resource field editors to **items[]**, use resource labels in item names 
                         itemType="group"
                     >
                         <DxItem
-                            name="PriorityGroup"
+                            name="priorityIdGroup"
                             itemType="group"
                         >
-                            <DxItem name="PriorityIcon" />
-                            <DxItem name="PriorityEditor" />
+                            <DxItem name="priorityIdIcon" />
+                            <DxItem name="priorityIdEditor" />
                         </DxItem>
                     </DxItem>
                 </DxForm>
@@ -180,11 +180,11 @@ To add resource field editors to **items[]**, use resource labels in item names 
                             itemType="group"
                         >
                             <Item
-                                name="PriorityGroup"
+                                name="priorityIdGroup"
                                 itemType="group"
                             >
-                                <Item name="PriorityIcon" />
-                                <Item name="PriorityEditor" />
+                                <Item name="priorityIdIcon" />
+                                <Item name="priorityIdEditor" />
                             </Item>
                         </Item>
                     </Form>

@@ -1,3 +1,5 @@
+#include uiwidgets-grids-choose-a-data-management-component
+
 #include tutorials-intro-installationnote
 
 CardView is a UI component that enables you to display data in a card-based format. You can use it for employee directories, contact lists, product catalogs, or task boards.

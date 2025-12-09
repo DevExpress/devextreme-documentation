@@ -1,4 +1,4 @@
-The Form UI component enables you to specify different layouts for different screen widths. For this purpose, use the [screenByWidth](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/screenByWidth.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#screenByWidth') function and [colCountByScreen](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/colCountByScreen '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#colCountByScreen') property. The **screenByWidth** function returns a size qualifier depending on the screen width. The **colCountByScreen** property establishes the dependency between the size qualifier and the column count.
+The Form UI component supports different layouts for different screen widths. Use the [screenByWidth](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/screenByWidth.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#screenByWidth') function to convert the current screen width into a size qualifier, and the [colCountByScreen](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/colCountByScreen '/Documentation/ApiReference/UI_Components/dxForm/Configuration/colCountByScreen/') property to map that qualifier to a column count.
 
 ---
 ##### jQuery
@@ -152,6 +152,8 @@ The Form UI component enables you to specify different layouts for different scr
     export default App;
 
 ---
+
+[note] Changing the column count [repaints](/Documentation/ApiReference/UI_Components/dxForm/Methods/#repaint) the Form. Repainting resets item states and reinitializes Form items and item templates.
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/ColumnsAdaptability/"

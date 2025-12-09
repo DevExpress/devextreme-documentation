@@ -1,4 +1,4 @@
-Displays hierarchical data in a tree with grid-like features. Suitable for parent-child structures. For the expanded list of features, see [TreeList Key Features](/Documentation/Guide/UI_Components/TreeList/Overview/#Key_Features).
+Displays hierarchical data in a tree with grid-like features. Suitable for parent-child structures. For an expanded list of features, see [TreeList Key Features](/Documentation/Guide/UI_Components/TreeList/Overview/#Key_Features).
 
 <img src="/images/treelist/tree-list-choose.png" alt="DevExtreme TreeList" />
 
@@ -8,4 +8,4 @@ Displays hierarchical data in a tree with grid-like features. Suitable for paren
 - Category hierarchies (for example, project tasks) 
 - File structures  
 
-[note] Use [TreeList](/Documentation/Guide/UI_Components/TreeList/Overview/) for hierarchical (parent-child) structures or when both tree and table formats are needed.
+[note] Use the [TreeList](/Documentation/Guide/UI_Components/TreeList/Overview/) for hierarchical (parent-child) structures, or when both tree and table formats are needed.

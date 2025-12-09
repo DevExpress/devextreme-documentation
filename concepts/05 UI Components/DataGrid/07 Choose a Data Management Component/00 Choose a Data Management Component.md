@@ -5,4 +5,4 @@ DevExtreme includes four main components for data display and management:
 - [PivotGrid](/Documentation/Guide/UI_Components/PivotGrid/Overview/)  
 - [CardView](/Documentation/Guide/UI_Components/CardView/Overview/)  
 
-Each component connects to similar [data sources](/Documentation/Guide/Data_Binding/Data_Source_Examples/). Selecting the right one depends on the structure of your data and your requirements.
+Each component connects to similar [data sources](/Documentation/Guide/Data_Binding/Data_Source_Examples/). Selecting the relevant component depends on the structure of your data and your requirements.

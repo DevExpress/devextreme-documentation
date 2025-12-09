@@ -10,7 +10,7 @@ Specifies Form column counts for different screen sizes.
 
 ---
 
-The following code snippet implements 2 columns for the "xs" screen size:
+The following code snippet specifies 2 columns for the "xs" screen size:
 
 ---
 ##### jQuery
@@ -60,7 +60,7 @@ The following code snippet implements 2 columns for the "xs" screen size:
 
 ---
 
-[note] Column count changes [repaint](/Documentation/ApiReference/UI_Components/dxForm/Methods/#repaint) the Form. Repaints reset item states and reinitialize Form items and item templates.
+[note] Changing the column count [repaints](/Documentation/ApiReference/UI_Components/dxForm/Methods/#repaint) the Form. Repainting resets item states and reinitializes Form items and item templates.
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/ColumnsAdaptability/"

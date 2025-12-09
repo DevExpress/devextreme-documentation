@@ -153,7 +153,7 @@ The Form UI component supports different layouts for different screen widths. Us
 
 ---
 
-[note] Column count changes [repaint](/Documentation/ApiReference/UI_Components/dxForm/Methods/#repaint) the Form. Repaints reset item states and reinitialize Form items and item templates.
+[note] Changing the column count [repaints](/Documentation/ApiReference/UI_Components/dxForm/Methods/#repaint) the Form. Repainting resets item states and reinitializes Form items and item templates.
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/ColumnsAdaptability/"

@@ -115,3 +115,7 @@ The following code snippet demonstrates how to extract transcribed text in the *
             }
 
 [/note]
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/SpeechToText/Overview/"
+}

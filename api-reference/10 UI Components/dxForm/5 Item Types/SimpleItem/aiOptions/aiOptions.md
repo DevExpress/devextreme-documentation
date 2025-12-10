@@ -100,3 +100,7 @@ The following code snippet adds a custom instruction to the item:
     }
 
 ---
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/SmartPaste/"
+}

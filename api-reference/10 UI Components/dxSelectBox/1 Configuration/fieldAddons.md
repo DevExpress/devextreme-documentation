@@ -99,3 +99,8 @@ Field addons are custom markup containers that you can add to either side of the
     }
 
 ---
+
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview/",
+    name: "SelectBox"
+}

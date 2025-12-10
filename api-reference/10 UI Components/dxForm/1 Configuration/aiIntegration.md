@@ -94,3 +94,7 @@ Use the following members to activate the AI-powered **Smart Paste** functionali
     }
 
 ---
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/SmartPaste/"
+}

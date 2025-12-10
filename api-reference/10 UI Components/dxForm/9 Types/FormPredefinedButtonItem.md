@@ -19,3 +19,7 @@ Resets all values in the Form to their initial state.
 
 - *'smartPaste'*    
 Populates the Form with AI-generated values based on clipboard text. Requires [aiIntegration](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/aiIntegration.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#aiIntegration').
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/SmartPaste/"
+}

@@ -79,3 +79,7 @@ If no resource has an icon assigned, `resourcesGroup` contains the following ite
           └─ ...
 
 For additional information about predefined items within the appointment edit form, see the following topic: [Scheduler - Appointment Edit Form](/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Edit_Form/#Rearrange_Form_Items)
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Templates/"
+}

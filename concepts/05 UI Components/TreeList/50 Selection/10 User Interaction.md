@@ -15,9 +15,9 @@ The TreeList UI component supports single and multiple row selection. Use the **
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-selection
+        <dxo-tree-list-selection
             mode="single"> <!-- "multiple" | "none" -->
-        </dxo-selection>
+        </dxo-tree-list-selection>
     </dx-tree-list>
 
     <!--TypeScript-->
@@ -104,10 +104,10 @@ You can disable the latter feature by setting the **selection**.[allowSelectAll]
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-selection
+        <dxo-tree-list-selection
             mode="multiple"
             [allowSelectAll]="false">
-        </dxo-selection>
+        </dxo-tree-list-selection>
     </dx-tree-list>
 
     <!--TypeScript-->
@@ -196,10 +196,10 @@ Selection is non-recursive by default, that is, only the clicked row is selected
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-selection
+        <dxo-tree-list-selection
             mode="multiple"
             [recursive]="true">
-        </dxo-selection>
+        </dxo-tree-list-selection>
     </dx-tree-list>
 
     <!--TypeScript-->

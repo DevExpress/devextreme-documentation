@@ -29,13 +29,13 @@ The following example adds a custom item to the component. Note that Angular and
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-context-menu>
-            <dxi-item ...>
+        <dxo-{widget-name}-context-menu>
+            <dxi-{widget-name}-item ...>
                 <div *dxTemplate>
                     <div>Custom Item</div>
                 </div>
-            </dxi-item>
-        </dxo-context-menu>
+            </dxi-{widget-name}-item>
+        </dxo-{widget-name}-context-menu>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

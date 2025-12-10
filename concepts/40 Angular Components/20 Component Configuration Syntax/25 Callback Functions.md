@@ -1,8 +1,8 @@
     <!-- tab: app.component.html -->
     <dx-vector-map>
-        <dxi-layer
+        <dxi-vector-map-layer
             [customize]="customizeLayers">
-        </dxi-layer>
+        </dxi-vector-map-layer>
     </dx-vector-map>
 
     <!-- tab: app.component.ts -->
@@ -32,9 +32,9 @@ Callback functions are executed _outside_ the component's context. If the contex
 
     <!-- tab: app.component.html -->
     <dx-vector-map>
-        <dxi-layer
+        <dxi-vector-map-layer
             [customize]="customizeLayers">
-        </dxi-layer>
+        </dxi-vector-map-layer>
     </dx-vector-map>
 
     

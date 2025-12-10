@@ -28,7 +28,7 @@ Specifies the start position of the aggregated series points in the aggregation 
 
     <!-- tab: app.component.html -->
     <dx-chart ... >
-        <dxo-common-axis-settings [aggregatedPointsPosition]="crossTicks" >
+        <dxo-chart-common-axis-settings [aggregatedPointsPosition]="crossTicks" >
         </dxo-common-series-settings>
     </dx-chart>
 

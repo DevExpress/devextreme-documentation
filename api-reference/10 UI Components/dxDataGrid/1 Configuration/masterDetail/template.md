@@ -67,10 +67,10 @@ You should call the [updateDimensions()](/api-reference/10%20UI%20Components/Gri
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-master-detail
+        <dxo-data-grid-master-detail
             [enabled]="true"
             [template]="'detail'">
-        </dxo-master-detail>
+        </dxo-data-grid-master-detail>
         <div *dxTemplate="let info of 'detail'">
             <dx-tab-panel ... 
                 (onSelectionChanged)="onSelectionChanged()">

@@ -44,19 +44,19 @@ The Gantt UI component allows you to add default and create custom toolbar items
 
     <!-- tab: app.component.html -->
     <dx-gantt>
-        <dxo-toolbar>
-            <dxi-item name="undo"></dxi-item>
-            <dxi-item name="redo"></dxi-item>
-            <dxi-item name="separator"></dxi-item>
-            <dxi-item
+        <dxo-gantt-toolbar>
+            <dxi-gantt-item name="undo"></dxi-gantt-item>
+            <dxi-gantt-item name="redo"></dxi-gantt-item>
+            <dxi-gantt-item name="separator"></dxi-gantt-item>
+            <dxi-gantt-item
                 widget="dxButton"
                 [options]="customButtonOptions">
-            </dxi-item>
-        </dxo-toolbar>
+            </dxi-gantt-item>
+        </dxo-gantt-toolbar>
 
-        <dxi-column dataField="title" caption="Subject" [width]="300"></dxi-column>
-        <dxi-column dataField="start" caption="Start Date"></dxi-column>
-        <dxi-column dataField="end" caption="End Date"></dxi-column>
+        <dxi-gantt-column dataField="title" caption="Subject" [width]="300"></dxi-gantt-column>
+        <dxi-gantt-column dataField="start" caption="Start Date"></dxi-gantt-column>
+        <dxi-gantt-column dataField="end" caption="End Date"></dxi-gantt-column>
     </dx-gantt>
 
     <!-- tab: app.component.ts -->

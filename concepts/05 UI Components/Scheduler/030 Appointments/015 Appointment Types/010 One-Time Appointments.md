@@ -1,6 +1,11 @@
 A one-time appointment is a non-recurring appointment with specified start and end dates.
 
-![Scheduler One-Time Appointment](/images/UiWidgets/Scheduler_OneTimeAppointment.png)
+#include full-width-image-container with {
+   src: "/images/UiWidgets/Scheduler_OneTimeAppointment.png",
+   alt: "Scheduler one-time appointment",
+   minWidth: "360px",
+   width: "80vw"
+}
 
 An object that defines a one-time appointment has this structure:
 

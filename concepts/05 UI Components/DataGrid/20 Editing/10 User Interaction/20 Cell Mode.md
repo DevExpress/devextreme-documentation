@@ -28,11 +28,11 @@ Clicking the "Delete" button invokes the confirmation dialog that allows a user 
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-editing 
+        <dxo-data-grid-editing 
             mode="cell" 
             [allowDeleting]="true"
             [confirmDelete]="false">
-        </dxo-editing>
+        </dxo-data-grid-editing>
     </dx-data-grid>
 
     <!--TypeScript-->

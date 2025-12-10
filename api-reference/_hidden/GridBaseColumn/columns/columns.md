@@ -28,11 +28,11 @@ Unlike normal columns, band columns do not hold data. Instead, they collect two 
     
     <!--HTML-->
     <dx-{widget-name} ... >
-        <dxi-column caption="Address">
-            <dxi-column dataField="City"></dxi-column>
-            <dxi-column dataField="Street"></dxi-column>
-            <dxi-column dataField="Apartment"></dxi-column>
-        </dxi-column>
+        <dxi-{widget-name}-column caption="Address">
+            <dxi-{widget-name}-column dataField="City"></dxi-{widget-name}-column>
+            <dxi-{widget-name}-column dataField="Street"></dxi-{widget-name}-column>
+            <dxi-{widget-name}-column dataField="Apartment"></dxi-{widget-name}-column>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!--TypeScript-->
@@ -136,14 +136,14 @@ For example, the following code specifies the **width** and **sortOrder** proper
     
     <!--HTML-->
     <dx-{widget-name} ... >
-        <dxi-column
+        <dxi-{widget-name}-column
             caption="Address"
             [fixed]="true"
             fixedPosition="right">
-            <dxi-column dataField="City"></dxi-column>
-            <dxi-column dataField="Street" [width]="100" sortOrder="asc"></dxi-column>
-            <dxi-column dataField="Apartment"></dxi-column>
-        </dxi-column>
+            <dxi-{widget-name}-column dataField="City"></dxi-{widget-name}-column>
+            <dxi-{widget-name}-column dataField="Street" [width]="100" sortOrder="asc"></dxi-{widget-name}-column>
+            <dxi-{widget-name}-column dataField="Apartment"></dxi-{widget-name}-column>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!--TypeScript-->
@@ -247,22 +247,22 @@ Band columns support hierarchies of any nesting level. It means that the followi
     
     <!--HTML-->
     <dx-{widget-name} ... >
-        <dxi-column caption="A">
-            <dxi-column dataField="A1"></dxi-column>
-            <dxi-column dataField="A2"></dxi-column>
-            <dxi-column caption="A3">
-                <dxi-column dataField="A31"></dxi-column>
-                <dxi-column dataField="A32"></dxi-column>
-                <dxi-column caption="A33">
-                    <dxi-column dataField="A331"></dxi-column>
-                    <dxi-column dataField="A332"></dxi-column>
-                    <dxi-column dataField="A333"></dxi-column>
-                </dxi-column>
-            </dxi-column>
-        </dxi-column>
-        <dxi-column caption="B">
+        <dxi-{widget-name}-column caption="A">
+            <dxi-{widget-name}-column dataField="A1"></dxi-{widget-name}-column>
+            <dxi-{widget-name}-column dataField="A2"></dxi-{widget-name}-column>
+            <dxi-{widget-name}-column caption="A3">
+                <dxi-{widget-name}-column dataField="A31"></dxi-{widget-name}-column>
+                <dxi-{widget-name}-column dataField="A32"></dxi-{widget-name}-column>
+                <dxi-{widget-name}-column caption="A33">
+                    <dxi-{widget-name}-column dataField="A331"></dxi-{widget-name}-column>
+                    <dxi-{widget-name}-column dataField="A332"></dxi-{widget-name}-column>
+                    <dxi-{widget-name}-column dataField="A333"></dxi-{widget-name}-column>
+                </dxi-{widget-name}-column>
+            </dxi-{widget-name}-column>
+        </dxi-{widget-name}-column>
+        <dxi-{widget-name}-column caption="B">
             ...
-        </dxi-column>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!--TypeScript-->

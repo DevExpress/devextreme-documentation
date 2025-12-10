@@ -43,10 +43,10 @@ If the field name in your data source differs from default 'title', use this pro
 
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxo-tasks ...
+        <dxo-gantt-tasks ...
             [dataSource]="tasks" 
             titleExpr="taskTitle" >
-        </dxo-tasks>
+        </dxo-gantt-tasks>
         <!-- ... -->
     </dx-gantt>
 

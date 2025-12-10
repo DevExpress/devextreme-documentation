@@ -37,10 +37,10 @@ Assign 0 to the **size** object's **height** and **width** properties to hide th
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-size
+        <dxo-{widget-name}-size
             [height]="300"
             [width]="600">
-        </dxo-size>
+        </dxo-{widget-name}-size>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

@@ -33,14 +33,14 @@ The component applies default property values to newly created items if you do n
 
     <!-- tab: app.component.html -->+
     <dx-diagram #diagram id="diagram">
-        <dxo-nodes ... />
-        <dxo-default-item-properties 
+        <dxo-diagram-nodes ... ></dxo-diagram-nodes>
+        <dxo-diagram-default-item-properties 
             connectorLineStart="outlinedTriangle" 
             connectorLineEnd="none" 
             connectorLineType="straight" 
             style="fill: #d9d9d9; stroke: #999999" 
             textStyle="font-weight: bold; text-decoration: underline">
-        </dxo-default-item-properties>
+        </dxo-diagram-default-item-properties>
     </dx-diagram>
 
 ##### Vue

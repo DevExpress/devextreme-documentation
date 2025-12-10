@@ -23,14 +23,14 @@ The [barWidth](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/Co
 
     <!--HTML-->
     <dx-chart ... >
-        <dxi-series
+        <dxi-chart-series
             [barWidth]="50"> <!-- for an individual series -->
-        </dxi-series>
-        <dxi-series ... ></dxi-series>
+        </dxi-chart-series>
+        <dxi-chart-series ... ></dxi-chart-series>
         ...
-        <dxo-common-series-settings
+        <dxo-chart-common-series-settings
             [barWidth]="50"> <!-- for all series in the chart -->
-        </dxo-common-series-settings>
+        </dxo-chart-common-series-settings>
     </dx-chart>
 
     <!--TypeScript-->

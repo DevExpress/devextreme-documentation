@@ -74,10 +74,10 @@ You can use the DevExtreme validation engine to validate a custom value, for exa
     </div>
     <dx-validator
         [adapter]="adapterConfig">
-        <dxi-validation-rule
+        <dxi-validator-validation-rule
             type="required"
             message="Specify your phone or email.">
-        </dxi-validation-rule>
+        </dxi-validator-validation-rule>
     </dx-validator>
     <dx-validation-summary></dx-validation-summary>
     <dx-button

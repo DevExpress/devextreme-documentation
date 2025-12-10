@@ -33,27 +33,27 @@ You can enable data aggregation for individual series, all series of a specific 
 
     <!--HTML-->
     <dx-chart ... >
-        <dxo-common-series-settings>
+        <dxo-chart-common-series-settings>
             <!-- Enables data aggregation for all series in the Chart -->
-            <dxo-aggregation
+            <dxo-chart-aggregation
                 [enabled]="true">
-            </dxo-aggregation>
+            </dxo-chart-aggregation>
 
             <dxo-fullstackedbar>
                 <!-- Enables data aggregation for all Full-Stacked Bar series -->
-                <dxo-aggregation
+                <dxo-chart-aggregation
                     [enabled]="true">
-                </dxo-aggregation>
+                </dxo-chart-aggregation>
             </dxo-fullstackedbar>
 
-        </dxo-common-series-settings>
+        </dxo-chart-common-series-settings>
 
-        <dxi-series>
+        <dxi-chart-series>
             <!-- Enables data aggregation for an individual series -->
-            <dxo-aggregation
+            <dxo-chart-aggregation
                 [enabled]="true">
-            </dxo-aggregation>
-        </dxi-series>
+            </dxo-chart-aggregation>
+        </dxi-chart-series>
     </dx-chart>
 
     <!--TypeScript-->

@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The column's initial AI prompt.
 
 ---
 <!-- Description goes here -->

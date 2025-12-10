@@ -31,13 +31,13 @@ The following code sample illustrates how to set this property:
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-legend>
-            <dxo-title ... >
-                <dxo-font
+        <dxo-{widget-name}-legend>
+            <dxo-{widget-name}-title ... >
+                <dxo-{widget-name}-font
                     color="black">
-                </dxo-font>
-            </dxo-title>
-        </dxo-legend>
+                </dxo-{widget-name}-font>
+            </dxo-{widget-name}-title>
+        </dxo-{widget-name}-legend>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

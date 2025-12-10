@@ -17,7 +17,7 @@ PivotGrid has a built-in "Export" button. To enable this button, set the [export
 
     <!-- tab: app.component.html -->
     <dx-pivot-grid ... >
-        <dxo-export [enabled]="true"></dxo-export>
+        <dxo-pivot-grid-export [enabled]="true"></dxo-pivot-grid-export>
     </dx-pivot-grid>
 
 ##### Vue

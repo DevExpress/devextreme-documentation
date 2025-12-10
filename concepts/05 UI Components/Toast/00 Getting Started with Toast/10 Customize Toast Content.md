@@ -80,11 +80,11 @@ To customize toast content, either specify a [contentTemplate](/api-reference/10
                 [height]="50"
                 type="custom"
             >  
-                <dxo-position
+                <dxo-toast-position
                     my="bottom"
                     at="bottom"
                     of="#container">
-                </dxo-position>
+                </dxo-toast-position>
                 <div *dxTemplate="let data of 'content'">
                     <div class="flex-box">
                         <span>You have a new message &nbsp;</span>

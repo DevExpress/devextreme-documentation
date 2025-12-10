@@ -23,21 +23,21 @@ To reorder columns, change their order in the **columns** array. Users can also 
     <!-- tab: app.component.html -->
     <dx-tree-list ...
         [allowColumnReordering]="true">
-        <dxi-column dataField="FullName"></dxi-column>
-        <dxi-column dataField="Position"></dxi-column>
-        <dxi-column
+        <dxi-tree-list-column dataField="FullName"></dxi-tree-list-column>
+        <dxi-tree-list-column dataField="Position"></dxi-tree-list-column>
+        <dxi-tree-list-column
             dataField="BirthDate"
             dataType="date">
-        </dxi-column>
-        <dxi-column
+        </dxi-tree-list-column>
+        <dxi-tree-list-column
             dataField="HireDate"
             dataType="date">
-        </dxi-column>
-        <dxi-column dataField="City"></dxi-column>
-        <dxi-column dataField="State"></dxi-column>
-        <dxi-column dataField="Email"></dxi-column>
-        <dxi-column dataField="MobilePhone"></dxi-column>
-        <dxi-column dataField="Skype"></dxi-column>
+        </dxi-tree-list-column>
+        <dxi-tree-list-column dataField="City"></dxi-tree-list-column>
+        <dxi-tree-list-column dataField="State"></dxi-tree-list-column>
+        <dxi-tree-list-column dataField="Email"></dxi-tree-list-column>
+        <dxi-tree-list-column dataField="MobilePhone"></dxi-tree-list-column>
+        <dxi-tree-list-column dataField="Skype"></dxi-tree-list-column>
     </dx-tree-list>
 
 ##### Vue

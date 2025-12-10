@@ -30,16 +30,16 @@ Individual series settings override common settings.
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxi-series ... >
-            <dxo-hover-style>
+        <dxi-chart-series ... >
+            <dxo-chart-hover-style>
                 <!-- high priority -->
-            </dxo-hover-style>
-        </dxi-series>
-        <dxo-common-series-settings ... >
-            <dxo-hover-style>
+            </dxo-chart-hover-style>
+        </dxi-chart-series>
+        <dxo-chart-common-series-settings ... >
+            <dxo-chart-hover-style>
                 <!-- low priority -->
-            </dxo-hover-style>
-        </dxo-common-series-settings>
+            </dxo-chart-hover-style>
+        </dxo-chart-common-series-settings>
     </dx-chart>
 
     <!--TypeScript-->
@@ -147,14 +147,14 @@ To choose which series elements should be highlighted when a user pauses on a se
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxi-series
+        <dxi-chart-series
             type="bar"
             hoverMode="allSeriesPoints"> <!-- or "onlyPoint" | "allArgumentPoints" | "none" -->
-        </dxi-series>
-        <dxi-series
+        </dxi-chart-series>
+        <dxi-chart-series
             type="line"
             hoverMode="includePoints"> <!-- or "nearestPoint" | "excludePoints" | "none" -->
-        </dxi-series>
+        </dxi-chart-series>
     </dx-chart>
 
     <!--TypeScript-->

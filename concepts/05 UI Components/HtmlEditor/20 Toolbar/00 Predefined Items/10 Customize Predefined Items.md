@@ -20,12 +20,12 @@ To customize a button, assign its [name](/concepts/05%20UI%20Components/HtmlEdit
 
     <!--HTML-->
     <dx-html-editor>
-        <dxo-toolbar>
-            <dxi-item
+        <dxo-html-editor-toolbar>
+            <dxi-html-editor-item
                 [options]="clearFormatOptions"
                 name="clear">
-            </dxi-item>
-        </dxo-toolbar>
+            </dxi-html-editor-item>
+        </dxo-html-editor-toolbar>
     </dx-html-editor>
 
     <!--TypeScript-->
@@ -146,13 +146,13 @@ To customize a select box, specify [select box properties](/api-reference/10%20U
 
     <!--HTML-->
     <dx-html-editor>
-        <dxo-toolbar>
-            <dxi-item
+        <dxo-html-editor-toolbar>
+            <dxi-html-editor-item
                 [options]="sizeFormatOptions"
                 [acceptedValues]="sizeAcceptedValues"
                 name="size"
             />
-        </dxo-toolbar>
+        </dxo-html-editor-toolbar>
     </dx-html-editor>
 
     <!--TypeScript-->

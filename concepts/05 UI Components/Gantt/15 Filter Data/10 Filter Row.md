@@ -40,20 +40,20 @@ The **Gantt** allows you to define initial filter settings in code. Specify a co
     
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxo-filter-row 
+        <dxo-gantt-filter-row 
             [visible]="true">
-        </dxo-filter-row>
-        <dxi-column
+        </dxo-gantt-filter-row>
+        <dxi-gantt-column
             dataField="title"
             caption="Subject"
             filterValue="Scope">
-        </dxi-column>
-        <dxi-column
+        </dxi-gantt-column>
+        <dxi-gantt-column
             dataField="start"
             caption="Start Date"
             dataType="date"
             [allowFiltering]="false">
-        </dxi-column>
+        </dxi-gantt-column>
         <!--...-->
     </dx-gantt>
     
@@ -261,14 +261,14 @@ You can use the [filterOperations](/api-reference/10%20UI%20Components/dxGantt/1
     
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxo-filter-row 
+        <dxo-gantt-filter-row 
             [visible]="true">
-        </dxo-filter-row>
-        <dxi-column
+        </dxo-gantt-filter-row>
+        <dxi-gantt-column
             dataField="title"
             caption="Subject"
             [filterOperations]="['startswith', 'endswith']">
-        </dxi-column>
+        </dxi-gantt-column>
         <!--...-->
     </dx-gantt>
     

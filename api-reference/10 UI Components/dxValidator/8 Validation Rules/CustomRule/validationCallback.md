@@ -58,10 +58,10 @@ The following code sample shows a **validationCallback** example. The **validate
     <!-- tab: app.component.html -->
     <dx-number-box [value]="4">
         <dx-validator>
-            <dxi-validation-rule type="custom" 
+            <dxi-validator-validation-rule type="custom" 
                 [validationCallback]="validateNumber" 
                 message="An even number is expected">
-            </dxi-validation-rule>
+            </dxi-validator-validation-rule>
         </dx-validator>
     </dx-number-box>
 
@@ -189,11 +189,11 @@ The code snippet below demonstrates how to implement multiple validation message
     <!-- tab: app.component.html -->
     <dx-number-box>
         <dx-validator>
-            <dxi-validation-rule
+            <dxi-validator-validation-rule
                 type="custom" 
                 [validationCallback]="validateNumber" 
             >
-            </dxi-validation-rule>
+            </dxi-validator-validation-rule>
         </dx-validator>
     </dx-number-box>
 

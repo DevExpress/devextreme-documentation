@@ -2,12 +2,13 @@
 id: BubblePointInfo
 module: viz/chart
 export: BubblePointInfo
-type: Object
+inheritsType: BasePointInfo
 generateTypeLink: 
+type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Series point data included in the [Bubble](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries '{basewidgetpath}/Series_Types/BubbleSeries/') series.
 
 ---
 <!-- Description goes here -->

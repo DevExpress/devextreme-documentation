@@ -28,13 +28,13 @@ UI elements like [tooltips](/concepts/05%20UI%20Components/Chart/30%20Tooltips/0
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-tooltip
+        <dxo-chart-tooltip
             [enabled]="true"
             [customizeTooltip]="customizeTooltip">
-        </dxo-tooltip>
-        <dxi-value-axis>
-            <dxo-label [customizeText]="customizeLabel"></dxo-label>
-        </dxi-value-axis>
+        </dxo-chart-tooltip>
+        <dxi-chart-value-axis>
+            <dxo-chart-label [customizeText]="customizeLabel"></dxo-chart-label>
+        </dxi-chart-value-axis>
     </dx-chart>
 
     <!--TypeScript-->

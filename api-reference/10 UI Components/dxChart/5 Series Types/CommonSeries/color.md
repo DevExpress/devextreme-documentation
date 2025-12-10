@@ -36,10 +36,10 @@ Specified in the [commonSeriesSettings](/api-reference/10%20UI%20Components/dxCh
 
     <!-- tab: app.component.html -->
     <dx-chart ... >
-        <dxi-series 
+        <dxi-chart-series 
             [color]="fill"
         >
-        </dxi-series>
+        </dxi-chart-series>
     </dx-chart>
 
     <!-- tab: app.component.ts -->

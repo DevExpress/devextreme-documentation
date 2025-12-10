@@ -47,17 +47,17 @@ A nested Box is configured similarly to an ordinary Box. To nest one Box into an
         direction="col"
         height="100%"
         [width]="300">
-        <dxi-item class="box-item yellow" [ratio]="1" [baseSize]="50"> Item 1 </dxi-item>
-        <dxi-item [ratio]="1" [baseSize]="50">
+        <dxi-box-item class="box-item yellow" [ratio]="1" [baseSize]="50"> Item 1 </dxi-box-item>
+        <dxi-box-item [ratio]="1" [baseSize]="50">
             <div *dxTemplate>
                 <dx-box id="nestedBox"
                     direction="row"
                     height="100%">
-                    <dxi-item class="box-item green"  [ratio]="1"> Item 2 </dxi-item>
-                    <dxi-item class="box-item orange" [ratio]="1"> Item 3 </dxi-item>
+                    <dxi-box-item class="box-item green"  [ratio]="1"> Item 2 </dxi-box-item>
+                    <dxi-box-item class="box-item orange" [ratio]="1"> Item 3 </dxi-box-item>
                 </dx-box>
             </div>
-        </dxi-item>
+        </dxi-box-item>
     </dx-box>
 
     <!--TypeScript-->

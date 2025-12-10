@@ -19,9 +19,9 @@ The load panel is shown only for remote data sources by default. To show it rega
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-load-panel
+        <dxo-data-grid-load-panel
             [enabled]="true">
-        </dxo-load-panel>
+        </dxo-data-grid-load-panel>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -206,11 +206,11 @@ Since the load panel is a DevExtreme [LoadPanel](/concepts/05%20UI%20Components/
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-load-panel
+        <dxo-data-grid-load-panel
             [height]="100"
             [width]="250"
             indicatorSrc="https://js.devexpress.com/Content/data/loadingIcons/rolling.svg">
-        </dxo-load-panel>
+        </dxo-data-grid-load-panel>
     </dx-data-grid>
 
     <!--TypeScript-->

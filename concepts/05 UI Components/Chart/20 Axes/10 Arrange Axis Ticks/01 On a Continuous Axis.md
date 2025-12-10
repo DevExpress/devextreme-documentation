@@ -28,28 +28,28 @@ A continuous axis indicates numeric or date-time values. If you know the range o
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis
+        <dxo-chart-argument-axis
             [tickInterval]="10"
             [minorTickInterval]="2">
-            <dxo-tick [visible]="true"></dxo-tick>
-            <dxo-minor-tick [visible]="true"></dxo-minor-tick>
-        </dxo-argument-axis>
+            <dxo-chart-tick [visible]="true"></dxo-chart-tick>
+            <dxo-chart-minor-tick [visible]="true"></dxo-chart-minor-tick>
+        </dxo-chart-argument-axis>
 
         <!-- or -->
-        <dxo-argument-axis>
-            <dxo-tick-interval [years]="1"></dxo-tick-interval>
-            <dxo-minor-tick-interval [months]="6"></dxo-minor-tick-interval>
-            <dxo-tick [visible]="true"></dxo-tick>
-            <dxo-minor-tick [visible]="true"></dxo-minor-tick>
-        </dxo-argument-axis>
+        <dxo-chart-argument-axis>
+            <dxo-chart-tick-interval [years]="1"></dxo-chart-tick-interval>
+            <dxo-chart-minor-tick-interval [months]="6"></dxo-chart-minor-tick-interval>
+            <dxo-chart-tick [visible]="true"></dxo-chart-tick>
+            <dxo-chart-minor-tick [visible]="true"></dxo-chart-minor-tick>
+        </dxo-chart-argument-axis>
 
         <!-- or -->
-        <dxo-argument-axis
+        <dxo-chart-argument-axis
             tickInterval="year"
             minorTickInterval="month">
-            <dxo-tick [visible]="true"></dxo-tick>
-            <dxo-minor-tick [visible]="true"></dxo-minor-tick>
-        </dxo-argument-axis>
+            <dxo-chart-tick [visible]="true"></dxo-chart-tick>
+            <dxo-chart-minor-tick [visible]="true"></dxo-chart-minor-tick>
+        </dxo-chart-argument-axis>
     </dx-chart>
 
     <!--TypeScript-->
@@ -189,12 +189,12 @@ Without knowing the range of values on the axis, you can arrange major ticks by 
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis
+        <dxo-chart-argument-axis
             [axisDivisionFactor]="20"
             [minorTickCount]="4">
-            <dxo-tick [visible]="true"></dxo-tick>
-            <dxo-minor-tick [visible]="true"></dxo-minor-tick>
-        </dxo-argument-axis>
+            <dxo-chart-tick [visible]="true"></dxo-chart-tick>
+            <dxo-chart-minor-tick [visible]="true"></dxo-chart-minor-tick>
+        </dxo-chart-argument-axis>
     </dx-chart>
 
     <!--TypeScript-->

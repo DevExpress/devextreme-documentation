@@ -12,9 +12,9 @@ const tiles = [{
 $(() => {
     $("#chat").dxChat({
         width: 780,
-        height: 480,
+        height: 520,
         emptyViewTemplate: (data, element) => {
-            const $container = $("<div>").addClass('empty-view-container').css({'width': '100%', 'height': '100%'});
+            const $container = $("<div>").addClass('empty-view-container');
             $container.append(
                 $('<div>').addClass("empty-view-titlebox").append(
                     $('<div>').addClass("empty-view-title").text("How can HR Assistant help you today?"),
@@ -42,11 +42,7 @@ $(() => {
                     },
                 }),
             );
-
             return $container;
-        },
-        onMessageEntered: ({ component, message }) => {
-            component.renderMessage(message);
         },
     });
   

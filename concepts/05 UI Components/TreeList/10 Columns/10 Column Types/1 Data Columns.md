@@ -21,7 +21,7 @@ If data column values should be cast to another type (for example, date values s
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxi-column dataField="HireDate" dataType="date"></dxi-column>
+        <dxi-tree-list-column dataField="HireDate" dataType="date"></dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->

@@ -36,7 +36,7 @@ Use the [customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '
 
     <!--HTML-->
     <dx-tree-list ... >
-        <dxi-column dataField="Price" [customizeText]="priceColumn_customizeText"></dxi-column>
+        <dxi-tree-list-column dataField="Price" [customizeText]="priceColumn_customizeText"></dxi-tree-list-column>
     </dx-tree-list>
 
 ##### Vue
@@ -134,7 +134,7 @@ To use the text displayed in cells in those data processing operations, specify 
 
     <!--HTML-->
     <dx-tree-list ... >
-        <dxi-column caption="Full Name" [calculateCellValue]="fullNameColumn_calculateCellValue"></dxi-column>
+        <dxi-tree-list-column caption="Full Name" [calculateCellValue]="fullNameColumn_calculateCellValue"></dxi-tree-list-column>
     </dx-tree-list>
 
 ##### Vue

@@ -95,11 +95,11 @@ Use the [series](/api-reference/10%20UI%20Components/dxPieChart/1%20Configuratio
 
     <!--HTML-->
     <dx-pie-chart>
-        <dxo-common-series-settings
+        <dxo-pie-chart-common-series-settings
             argumentField="year">
-        </dxo-common-series-settings>
-        <dxi-series valueField="men"></dxi-series>
-        <dxi-series valueField="women"></dxi-series>
+        </dxo-pie-chart-common-series-settings>
+        <dxi-pie-chart-series valueField="men"></dxi-pie-chart-series>
+        <dxi-pie-chart-series valueField="women"></dxi-pie-chart-series>
     </dx-pie-chart>
 
     <!--TypeScript-->
@@ -193,7 +193,7 @@ Settings specified for a series apply to all its points. If you need to customiz
     <!--HTML-->
     <dx-pie-chart
         [customizePoint]="customizePoint">
-        <dxi-series color="blue"></dxi-series>
+        <dxi-pie-chart-series color="blue"></dxi-pie-chart-series>
     </dx-pie-chart>
 
     <!--TypeScript-->

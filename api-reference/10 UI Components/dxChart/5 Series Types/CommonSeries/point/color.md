@@ -39,11 +39,11 @@ dxChartSeriesTypes.LineSeries,dxChartSeriesTypes.StackedLineSeries,dxChartSeries
 
     <!-- tab: app.component.html -->
     <dx-chart ... >
-        <dxi-series ... >
-            <dxo-point
+        <dxi-chart-series ... >
+            <dxo-chart-point
                 [color]="fill"
-            ></dxo-point>
-        </dxi-series>
+            ></dxo-chart-point>
+        </dxi-chart-series>
     </dx-chart>
 
     <!-- tab: app.component.ts -->

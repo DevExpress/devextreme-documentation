@@ -16,11 +16,11 @@ A series point's style changes when a user hovers the mouse pointer over it.  Th
 ##### Angular
 
     <!--HTML--><dx-pie-chart>
-        <dxi-series>
-            <dxo-hover-style>
+        <dxi-pie-chart-series>
+            <dxo-pie-chart-hover-style>
                 <!-- ... -->
-            </dxo-hover-style>
-        </dxi-series>
+            </dxo-pie-chart-hover-style>
+        </dxi-pie-chart-series>
     </dx-pie-chart>
 
     <!--TypeScript-->
@@ -106,9 +106,9 @@ You can disable this feature by assigning *"none"* to the **series**.[hoverMode]
 ##### Angular
 
     <!--HTML--><dx-pie-chart>
-        <dxi-series
+        <dxi-pie-chart-series
             hoverMode="none">
-        </dxi-series>
+        </dxi-pie-chart-series>
     </dx-pie-chart>
 
     <!--TypeScript-->

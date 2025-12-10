@@ -290,7 +290,7 @@ If your diagram includes container shapes, define the [containerKeyExpr](/api-re
 
     <!-- tab: app.component.html -->
     <dx-diagram>
-        <dxo-nodes
+        <dxo-diagram-nodes
             [dataSource]="orgItemsDataSource"
             keyExpr="key"
             textExpr="text"
@@ -306,9 +306,9 @@ If your diagram includes container shapes, define the [containerKeyExpr](/api-re
             zIndexExpr="zIndex"
             [styleExpr]="itemStyleExpr"
         >
-            <dxo-auto-layout type="off"></dxo-auto-layout>
-        </dxo-nodes>
-        <dxo-edges
+            <dxo-diagram-auto-layout type="off"></dxo-diagram-auto-layout>
+        </dxo-diagram-nodes>
+        <dxo-diagram-edges
             [dataSource]="orgLinksDataSource"
             keyExpr="key"
             fromExpr="from"
@@ -323,7 +323,7 @@ If your diagram includes container shapes, define the [containerKeyExpr](/api-re
             textExpr="text"
             textStyleExpr="textStyle"
             toLineEndExpr="linkToLineEndExpr"
-        ></dxo-edges>
+        ></dxo-diagram-edges>
     </dx-diagram>
 
     <!-- tab: app.component.ts -->

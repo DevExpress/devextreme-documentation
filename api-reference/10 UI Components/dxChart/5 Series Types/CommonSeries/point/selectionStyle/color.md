@@ -41,13 +41,13 @@ dxChartSeriesTypes.LineSeries,dxChartSeriesTypes.StackedLineSeries,dxChartSeries
 
     <!-- tab: app.component.html -->
     <dx-chart ... >
-        <dxi-series ... >
-            <dxo-point ... >
-                <dxo-selection-style 
+        <dxi-chart-series ... >
+            <dxo-chart-point ... >
+                <dxo-chart-selection-style 
                     [color]="fill"
-                ></dxo-selection-style>
-            </dxo-point>
-        </dxi-series>
+                ></dxo-chart-selection-style>
+            </dxo-chart-point>
+        </dxi-chart-series>
     </dx-chart>
 
     <!-- tab: app.component.ts -->

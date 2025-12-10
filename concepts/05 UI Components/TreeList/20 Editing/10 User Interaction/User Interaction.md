@@ -23,12 +23,12 @@ The TreeList UI component allows a user to add, delete and update data. Assign *
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-editing
+        <dxo-tree-list-editing
             [allowUpdating]="true"
             [allowAdding]="true"
             [allowDeleting]="true">
-        </dxo-editing>
-        <dxi-column dataField="id" [allowEditing]="false"></dxi-column>
+        </dxo-tree-list-editing>
+        <dxi-tree-list-column dataField="id" [allowEditing]="false"></dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->
@@ -125,9 +125,9 @@ With the TreeList you can edit data in several modes. Use the **editing**.[mode]
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-editing
+        <dxo-tree-list-editing
             mode="row"> <!-- 'batch' | 'cell' | 'form' | 'popup' -->
-        </dxo-editing>
+        </dxo-tree-list-editing>
     </dx-tree-list>
 
     <!--TypeScript-->

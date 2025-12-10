@@ -27,12 +27,12 @@ Error bars can be generated either from concrete or calculated values. To genera
 ##### Angular
 
     <!--HTML--><dx-chart [dataSource]="chartDataSource">
-        <dxi-series ... >
-            <dxo-value-error-bar
+        <dxi-chart-series ... >
+            <dxo-chart-value-error-bar
                 highValueField="highError"
                 lowValueField="lowError">
-            </dxo-value-error-bar>
-        </dxi-series>
+            </dxo-chart-value-error-bar>
+        </dxi-chart-series>
     </dx-chart>
 
     <!--TypeScript-->
@@ -149,12 +149,12 @@ Alternatively, error bar values can be calculated according to an algorithm. In 
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxi-series ... >
-            <dxo-value-error-bar
+        <dxi-chart-series ... >
+            <dxo-chart-value-error-bar
                 type="percent"
                 [value]="5">
-            </dxo-value-error-bar>
-        </dxi-series>
+            </dxo-chart-value-error-bar>
+        </dxi-chart-series>
     </dx-chart>
 
     <!--TypeScript-->
@@ -252,16 +252,16 @@ If error bars should have uniform settings, you can specify them using one of th
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxi-series>
-            <dxo-value-error-bar>
+        <dxi-chart-series>
+            <dxo-chart-value-error-bar>
                 <!-- high priority -->
-            </dxo-value-error-bar>
-        </dxi-series>
-        <dxo-common-series-settings>
-            <dxo-value-error-bar>
+            </dxo-chart-value-error-bar>
+        </dxi-chart-series>
+        <dxo-chart-common-series-settings>
+            <dxo-chart-value-error-bar>
                 <!-- low priority -->
-            </dxo-value-error-bar>
-        </dxo-common-series-settings>
+            </dxo-chart-value-error-bar>
+        </dxo-chart-common-series-settings>
     </dx-chart>
 
     <!--TypeScript-->

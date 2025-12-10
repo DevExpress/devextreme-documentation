@@ -36,10 +36,10 @@ The following types of the specified value are available.
 
     <!-- tab: app.component.html -->
     <dx-toolbar>
-        <dxi-item ... 
+        <dxi-toolbar-item ... 
             menuItemTemplate="menu-item"
         >
-        </dxi-item>
+        </dxi-toolbar-item>
         <div *dxTemplate="let data of 'menu-item'">
             <i class="dx-icon-favorites"></i> {{data.options.text}}
         </div>

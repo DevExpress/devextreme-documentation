@@ -27,7 +27,7 @@ Specified in a summary configuration object, this property affects an individual
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-summary [skipEmptyValues]="false"></dxo-summary>
+        <dxo-data-grid-summary [skipEmptyValues]="false"></dxo-data-grid-summary>
     </dx-data-grid>
 
     <!--TypeScript-->

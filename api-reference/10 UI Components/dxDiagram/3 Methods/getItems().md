@@ -44,7 +44,7 @@ The code sample below demonstrates how to get the full collection of diagram ite
 
     <!-- tab: app.component.html -->
     <dx-diagram #diagram id="diagram" (onItemClick)="itemClickHandler($event)">
-        <dxo-nodes [dataSource]="dataSource" keyExpr="ID" textExpr="Full_Name" parentKeyExpr="Head_ID" />
+        <dxo-diagram-nodes [dataSource]="dataSource" keyExpr="ID" textExpr="Full_Name" parentKeyExpr="Head_ID"></dxo-diagram-nodes>
     </dx-diagram>
 
     <!-- tab: app.component.ts -->

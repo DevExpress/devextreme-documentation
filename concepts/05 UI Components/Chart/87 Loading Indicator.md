@@ -19,7 +19,7 @@ To activate the loading indicator, assign **true** to the [loadingIndicator](/ap
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-loading-indicator [enabled]="true"></dxo-loading-indicator>
+        <dxo-chart-loading-indicator [enabled]="true"></dxo-chart-loading-indicator>
     </dx-chart>
 
     <!--TypeScript-->

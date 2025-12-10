@@ -4,7 +4,7 @@ type: Boolean
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Allows you to cancel the AI request.
 
 ---
 <!-- Description goes here -->

@@ -32,8 +32,8 @@ Specifies the color of the pane's background.
 
     <!-- tab: app.component.html -->
     <dx-chart ... >
-        <dxo-common-pane-settings [backgroundColor]="fill">
-        </dxo-common-pane-settings>
+        <dxo-chart-common-pane-settings [backgroundColor]="fill">
+        </dxo-chart-common-pane-settings>
     </dx-chart>
 
     <!-- tab: app.component.ts -->

@@ -12,10 +12,10 @@ Set a column's [groupIndex](/api-reference/_hidden/dxDataGridColumn/groupIndex.m
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column
+        <dxi-data-grid-column
             dataField="City"
             [(groupIndex)]="cityGroupIndex">
-        </dxi-column>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->

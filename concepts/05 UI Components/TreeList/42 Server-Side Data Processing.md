@@ -20,11 +20,11 @@ Specify the [remoteOperations](/api-reference/10%20UI%20Components/dxTreeList/1%
 #####Angular
 
     <!--HTML--><dx-tree-list ... >
-        <dxo-remote-operations
+        <dxo-tree-list-remote-operations
             [filtering]="true"
             [sorting]="true"
             [grouping]="true"> 
-        </dxo-remote-operations>
+        </dxo-tree-list-remote-operations>
     </dx-tree-list>
 
     <!--TypeScript-->

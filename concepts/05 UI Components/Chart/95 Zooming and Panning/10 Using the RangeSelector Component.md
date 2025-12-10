@@ -35,17 +35,17 @@ The Chart can be zoomed and panned using the [RangeSelector](/concepts/05%20UI%2
     <!--HTML--><dx-chart
         [dataSource]="data"
         [series]="seriesConfiguration">
-        <dxo-argument-axis
+        <dxo-chart-argument-axis
             [(visualRange)]="chart_visualRange">
-        </dxo-argument-axis>
+        </dxo-chart-argument-axis>
     </dx-chart>
     <dx-range-selector
         [dataSource]="data"
         [(value)]="chart_visualRange">
         <!-- Displays the Chart in the background of the RangeSelector -->
-        <dxo-chart [series]="seriesConfiguration"></dxo-chart>
+        <dxo-range-selector-chart [series]="seriesConfiguration"></dxo-range-selector-chart>
         <!-- Makes zooming and panning smoother -->
-        <dxo-behavior callValueChanged="onMoving"></dxo-behavior>
+        <dxo-range-selector-behavior callValueChanged="onMoving"></dxo-range-selector-behavior>
     </dx-range-selector>
 
     <!--TypeScript-->
@@ -277,7 +277,7 @@ If you need to fix the zoom window and allow users to only move it along the sca
     <!--HTML--><dx-chart ... ></dx-chart>
     <dx-range-selector ... 
         [value]="[0, 10]">
-        <dxo-scale [minRange]="10" [maxRange]="10"></dxo-scale>
+        <dxo-range-selector-scale [minRange]="10" [maxRange]="10"></dxo-range-selector-scale>
     </dx-range-selector>
 
     <!--TypeScript-->

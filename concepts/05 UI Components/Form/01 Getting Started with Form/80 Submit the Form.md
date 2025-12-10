@@ -62,25 +62,25 @@ The code below shows how to add a submit button, but does not show how to implem
         <dx-form
             [formData]="employee"
             [colCount]="2">
-            <dxi-item 
+            <dxi-form-item 
                 itemType="group" 
                 caption="Personal Information"
                 [colCount]="2">
-                <dxi-item dataField="name" [isRequired]="true">
-                </dxi-item>
-                <dxi-item dataField="officeNumber">
-                    <dxi-validation-rule type="numeric">
-                    </dxi-validation-rule>
-                </dxi-item>
-                <dxi-item dataField="email">
-                    <dxi-validation-rule type="email">
-                    </dxi-validation-rule>
-                </dxi-item>
-            </dxi-item>
-            <dxi-item 
+                <dxi-form-item dataField="name" [isRequired]="true">
+                </dxi-form-item>
+                <dxi-form-item dataField="officeNumber">
+                    <dxi-form-validation-rule type="numeric">
+                    </dxi-form-validation-rule>
+                </dxi-form-item>
+                <dxi-form-item dataField="email">
+                    <dxi-form-validation-rule type="email">
+                    </dxi-form-validation-rule>
+                </dxi-form-item>
+            </dxi-form-item>
+            <dxi-form-item 
                 itemType="button"
                 [buttonOptions]="submitButtonOptions">
-            </dxi-item>
+            </dxi-form-item>
         </dx-form>
     </form>
 
@@ -297,10 +297,10 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
     <!-- tab: app.component.html -->
     <form action="/employee-page" id="form-container">
         <dx-form ... >
-            <dxi-item 
+            <dxi-form-item 
                 itemType="button"
                 [buttonOptions]="submitButtonOptions">
-            </dxi-item>
+            </dxi-form-item>
         </dx-form>
     </form>
 

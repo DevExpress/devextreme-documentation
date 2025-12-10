@@ -32,9 +32,9 @@ To specify the mark or text for required and optional items, use the [requiredMa
         requiredMark="!"
         optionalMark="opt"
         [showOptionalMark]="true">
-        <dxi-item dataField="firstName" [isRequired]="true"></dxi-item>
-        <dxi-item dataField="lastName"  [isRequired]="true"></dxi-item>
-        <dxi-item dataField="position"></dxi-item>
+        <dxi-form-item dataField="firstName" [isRequired]="true"></dxi-form-item>
+        <dxi-form-item dataField="lastName"  [isRequired]="true"></dxi-form-item>
+        <dxi-form-item dataField="position"></dxi-form-item>
     </dx-form>
 
     <!--TypeScript-->
@@ -153,11 +153,11 @@ Each label ends with a colon. To hide it, assign **false** to the [showColonAfte
     <dx-form
         [(formData)]="employee"
         [showColonAfterLabel]="false">
-        <dxi-item dataField="firstName"></dxi-item>
-        <dxi-item dataField="lastName"></dxi-item>
-        <dxi-item dataField="position">
-            <dxo-label [showColon]="true"></dxo-label>
-        </dxi-item>
+        <dxi-form-item dataField="firstName"></dxi-form-item>
+        <dxi-form-item dataField="lastName"></dxi-form-item>
+        <dxi-form-item dataField="position">
+            <dxo-form-label [showColon]="true"></dxo-form-label>
+        </dxi-form-item>
     </dx-form>
 
     <!--TypeScript-->

@@ -32,17 +32,17 @@ The dxItem component defines custom markup for items in layout and collection UI
 
     <!-- tab: app.component.html -->
     <dx-list>
-        <dxi-item text="Apples" [disabled]="true"></dxi-item>
-        <dxi-item text="Lemons" [visible]="false"></dxi-item>
-        <dxi-item>
+        <dxi-list-item text="Apples" [disabled]="true"></dxi-list-item>
+        <dxi-list-item text="Lemons" [visible]="false"></dxi-list-item>
+        <dxi-list-item>
             <!-- Custom markup -->
-        </dxi-item>
-        <dxi-item>
+        </dxi-list-item>
+        <dxi-list-item>
             <!-- A nested component should be wrapped in an element with a parameterless dxTemplate directive -->
             <div *dxTemplate>
                 <dx-button text="I am a nested component"></dx-button>
             </div>
-        </dxi-item>
+        </dxi-list-item>
     </dx-list>
 
     <!-- tab: app.module.ts -->

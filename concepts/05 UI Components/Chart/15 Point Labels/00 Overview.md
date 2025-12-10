@@ -32,16 +32,16 @@ To configure point labels, use the fields of the [label](/api-reference/10%20UI%
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxi-series>
-            <dxo-label ... >
+        <dxi-chart-series>
+            <dxo-chart-label ... >
                 <!-- Settings for all point labels of an individual series -->
-            </dxo-label>
-        </dxi-series>
-        <dxo-common-series-settings ... >
-            <dxo-label ... >
+            </dxo-chart-label>
+        </dxi-chart-series>
+        <dxo-chart-common-series-settings ... >
+            <dxo-chart-label ... >
                 <!-- Settings for all point labels in the Chart -->
-            </dxo-label>
-        </dxo-common-series-settings>
+            </dxo-chart-label>
+        </dxo-chart-common-series-settings>
     </dx-chart>
 
     <!--TypeScript-->
@@ -148,11 +148,11 @@ Point labels are not visible by default. To make them visible, assign **true** t
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxi-series>
-            <dxo-label [visible]="true">
-                <dxo-connector [visible]="true"></dxo-connector>
-            </dxo-label>
-        </dxi-series>
+        <dxi-chart-series>
+            <dxo-chart-label [visible]="true">
+                <dxo-chart-connector [visible]="true"></dxo-chart-connector>
+            </dxo-chart-label>
+        </dxi-chart-series>
     </dx-chart>
 
     <!--TypeScript-->

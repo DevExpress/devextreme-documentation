@@ -21,8 +21,8 @@ The following code snippet demonstrates **itemTemplate** usage. Panes have rando
 
     <!-- tab: app.component.html -->
     <dx-splitter itemTemplate="item">
-        <dxi-item ...></dxi-item>
-        <dxi-item ...></dxi-item>
+        <dxi-splitter-item ...></dxi-splitter-item>
+        <dxi-splitter-item ...></dxi-splitter-item>
         <div
             *dxTemplate="let data of 'item'; let index = index" 
             [style.background-color]="getRandomColor()"

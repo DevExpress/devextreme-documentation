@@ -24,11 +24,11 @@ Set the [showNavigationButtons](/api-reference/10%20UI%20Components/GridBase/1%2
 
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-pager
+        <dxo-tree-list-pager
             [showPageSizeSelector]="true"
             [allowedPageSizes]="[10, 20, 50]"
             [showNavigationButtons]="true">
-        </dxo-pager>
+        </dxo-tree-list-pager>
     </dx-tree-list>
 
     <!--TypeScript-->
@@ -125,13 +125,13 @@ Assign **true** to the [showInfo](/api-reference/10%20UI%20Components/GridBase/1
 
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-paging 
+        <dxo-tree-list-paging 
             [enabled]="true">
-        </dxo-paging>
-        <dxo-pager
+        </dxo-tree-list-paging>
+        <dxo-tree-list-pager
             [showInfo]="true"
             infoText="Page #{0}. Total: {1} ({2} items)">
-        </dxo-pager>
+        </dxo-tree-list-pager>
     </dx-tree-list>
 
     <!--TypeScript-->

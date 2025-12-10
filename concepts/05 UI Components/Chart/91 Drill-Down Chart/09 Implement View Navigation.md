@@ -56,7 +56,7 @@ To navigate from the first to the second view, filter data by a different `paren
     <dx-chart
         [dataSource]="dataSource"
         (onPointClick)="onPointClick($event)">
-        <dxi-series argumentField="arg" valueField="val" type="bar"></dxi-series>
+        <dxi-chart-series argumentField="arg" valueField="val" type="bar"></dxi-chart-series>
     </dx-chart>
     <dx-button class="button-container"
         text="Back"
@@ -318,7 +318,7 @@ The following code shows how to implement navigation when using the DevExtreme *
     <dx-chart
         [dataSource]="dxDataSource"
         (onPointClick)="onPointClick($event)">
-        <dxi-series argumentField="arg" valueField="val" type="bar"></dxi-series>
+        <dxi-chart-series argumentField="arg" valueField="val" type="bar"></dxi-chart-series>
     </dx-chart>
     <dx-button class="button-container"
         text="Back"

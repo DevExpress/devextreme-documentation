@@ -287,12 +287,12 @@ You can also customize individual tiles. Declare them using the [dxItem](/api-re
 
     <!--HTML-->
     <dx-tile-view>
-        <dxi-item>
+        <dxi-tile-view-item>
             <span>User</span>
-        </dxi-item>
-        <dxi-item>
+        </dxi-tile-view-item>
+        <dxi-tile-view-item>
             <span>Comment</span>
-        </dxi-item>
+        </dxi-tile-view-item>
     </dx-tile-view>
 
     <!--TypeScript-->

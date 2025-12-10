@@ -46,9 +46,9 @@ Because of this dependency, **editorOptions** cannot be typed and are not implem
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxi-column ...
+        <dxi-{widget-name}-column ...
             [editorOptions]="{ format: 'currency', showClearButton: true }">
-        </dxi-column>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!-- tab: app.module.ts -->

@@ -32,23 +32,23 @@ The following code shows how to specify aggregation methods for each series indi
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-common-series-settings ... >
-            <dxo-aggregation
+        <dxo-chart-common-series-settings ... >
+            <dxo-chart-aggregation
                 [enabled]="true">
-            </dxo-aggregation>
-        </dxo-common-series-settings>
+            </dxo-chart-aggregation>
+        </dxo-chart-common-series-settings>
 
-        <dxi-series type="line" ... >
-            <dxo-aggregation
+        <dxi-chart-series type="line" ... >
+            <dxo-chart-aggregation
                 method="min">
-            </dxo-aggregation>
-        </dxi-series>
+            </dxo-chart-aggregation>
+        </dxi-chart-series>
 
-        <dxi-series type="bar" ... >
-            <dxo-aggregation
+        <dxi-chart-series type="bar" ... >
+            <dxo-chart-aggregation
                 method="max">
-            </dxo-aggregation>
-        </dxi-series>
+            </dxo-chart-aggregation>
+        </dxi-chart-series>
     </dx-chart>
 
     <!--TypeScript-->

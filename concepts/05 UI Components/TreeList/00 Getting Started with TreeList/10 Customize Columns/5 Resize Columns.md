@@ -32,16 +32,16 @@ TreeList columns have equal widths (the default setting). You can set each colum
         [allowColumnResizing]="true"
         [columnAutoWidth]="true">
         <!-- ... -->
-        <dxi-column
+        <dxi-tree-list-column
             dataField="BirthDate"
             dataType="date"
             [width]="100">
-        </dxi-column>
-        <dxi-column
+        </dxi-tree-list-column>
+        <dxi-tree-list-column
             dataField="HireDate"
             dataType="date"
             [width]="100">
-        </dxi-column>
+        </dxi-tree-list-column>
         <!-- ... -->
     </dx-tree-list>
 

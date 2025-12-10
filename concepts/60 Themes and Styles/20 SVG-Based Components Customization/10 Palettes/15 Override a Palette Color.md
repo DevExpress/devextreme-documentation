@@ -42,20 +42,20 @@ Set a UI component element's **color** property to override a palette color for 
 
     <!--HTML-->
     <dx-chart ... >
-        <dxi-series color="red" ... ></dxi-series>
+        <dxi-chart-series color="red" ... ></dxi-chart-series>
     </dx-chart>
 
     <dx-circular-gauge ... >
-        <dxo-range-container>
+        <dxo-circular-gauge-range-container>
             <!-- ... -->
-            <dxi-range color="red" ... ></dxi-range>
-        </dxo-range-container>
+            <dxi-circular-gauge-range color="red" ... ></dxi-circular-gauge-range>
+        </dxo-circular-gauge-range-container>
     </dx-circular-gauge>
 
     <dx-vector-map ... >
-        <dxi-layer ...
+        <dxi-vector-map-layer ...
             [customize]="colorizeMap">
-        </dxi-layer>
+        </dxi-vector-map-layer>
     </dx-vector-map>
 
     <!--TypeScript-->

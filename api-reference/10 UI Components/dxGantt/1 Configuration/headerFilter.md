@@ -39,12 +39,12 @@ Set the **headerFilter**.[visible](/api-reference/_hidden/dxGanttHeaderFilter/vi
 
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxo-header-filter
+        <dxo-gantt-header-filter
             [visible]="true" 
             [width]="280"
             [height]="350"
             [searchTimeout]="800" >
-        </dxo-header-filter>
+        </dxo-gantt-header-filter>
         <!-- ... -->
     </dx-gantt>
 

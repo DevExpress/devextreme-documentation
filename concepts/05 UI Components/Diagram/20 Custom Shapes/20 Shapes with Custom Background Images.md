@@ -25,7 +25,7 @@ Use the [backgroundImageUrl](/api-reference/10%20UI%20Components/dxDiagram/1%20C
 
     <!-- tab: app.component.html -->
     <dx-diagram #diagram id="diagram">
-        <dxi-custom-shape 
+        <dxi-diagram-custom-shape 
             type="Rounded Rectangle"
             backgroundImageUrl="images/shapes/roundedRectangle.svg"
         </dxi-custom-shape>
@@ -97,11 +97,11 @@ Use the following properties to specify the shape size settings:
 
     <!-- tab: app.component.html -->
     <dx-diagram #diagram id="diagram">
-        <dxi-custom-shape 
+        <dxi-diagram-custom-shape 
             <!-- ... -->
             [defaultWidth]="2"
             [defaultHeight]="1"
-        </dxi-custom-shape>
+        </dxi-diagram-custom-shape>
     </dx-diagram>
 
 ##### Vue
@@ -166,14 +166,14 @@ The following properties allow you to specify the image size and position:
 
     <!-- tab: app.component.html -->
     <dx-diagram #diagram id="diagram">
-        <dxi-custom-shape 
+        <dxi-diagram-custom-shape 
             <!-- ... -->
             defaultImageUrl="images/photo.png"
             [imageHeight]="0.8"
             [imageWidth]="0.3"
             [imageTop]="0.1"
             [imageLeft]="0.1"
-        </dxi-custom-shape>
+        </dxi-diagram-custom-shape>
     </dx-diagram>
 
 ##### Vue
@@ -247,12 +247,12 @@ Use the following properties to specify the size and position of the text contai
 
     <!-- tab: app.component.html -->
     <dx-diagram #diagram id="diagram">
-        <dxi-custom-shape 
+        <dxi-diagram-custom-shape 
             <!-- ... -->
             defaultText="Employee"
             [textLeft]="0.4"
             [textWidth]="0.6">
-        </dxi-custom-shape>
+        </dxi-diagram-custom-shape>
     </dx-diagram>
 
 ##### Vue
@@ -306,9 +306,9 @@ You can use the [textStyle](/api-reference/10%20UI%20Components/dxDiagram/1%20Co
 
     <!-- tab: app.component.html -->
     <dx-diagram #diagram id="diagram">
-        <dxo-default-item-properties
+        <dxo-diagram-default-item-properties
             textStyle="font-size: 14pt;">
-        </dxo-default-item-properties>
+        </dxo-diagram-default-item-properties>
         <!-- ... -->
     </dx-diagram>
 
@@ -367,11 +367,11 @@ Use the [connectionPoints](/api-reference/10%20UI%20Components/dxDiagram/1%20Con
 
     <!-- tab: app.component.html -->
     <dx-diagram #diagram id="diagram">
-        <dxi-custom-shape 
+        <dxi-diagram-custom-shape 
             <!-- ... -->
-            <dxi-connection-point [x]="0.5" [y]="0"></dxi-connection-point>
-            <dxi-connection-point [x]="0.5" [y]="1"></dxi-connection-point>
-        </dxi-custom-shape>
+            <dxi-diagram-connection-point [x]="0.5" [y]="0"></dxi-diagram-connection-point>
+            <dxi-diagram-connection-point [x]="0.5" [y]="1"></dxi-diagram-connection-point>
+        </dxi-diagram-custom-shape>
     </dx-diagram>
 
 ##### Vue

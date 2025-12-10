@@ -28,12 +28,12 @@ Specifies the special character(s) that should surround the variables.
 
     <!--HTML-->
     <dx-html-editor>
-        <dxo-variables
+        <dxo-html-editor-variables
             [dataSource]="[ 'FirstName' ]"
             [escapeChar]="[ '{', '}' ]"> <!-- {FirstName} -->
             <!-- or -->
             <!-- escapeChar="##"> --> <!-- ##FirstName## -->
-        </dxo-variables>
+        </dxo-html-editor-variables>
     </dx-html-editor>
 
     <!--TypeScript-->

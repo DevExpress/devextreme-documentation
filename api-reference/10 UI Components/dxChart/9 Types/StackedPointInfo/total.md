@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Total value of points at the same argument as the hovered/pressed point.
 
 ---
 <!-- Description goes here -->

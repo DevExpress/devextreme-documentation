@@ -36,14 +36,14 @@ If you specify the **headerFilter**.[groupInterval](/api-reference/40%20Common%2
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxi-column
+        <dxi-{widget-name}-column
             dataField="ID"
             dataType="number"
             [filterValues]="[500, 700]"> <!-- Filter intervals are 500-600 and 700-800 -->
-            <dxo-header-filter
+            <dxo-{widget-name}-header-filter
                 [groupInterval]="100">
-            </dxo-header-filter>
-        </dxi-column>
+            </dxo-{widget-name}-header-filter>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!-- tab: app.module.ts -->

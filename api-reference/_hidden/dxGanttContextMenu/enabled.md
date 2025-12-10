@@ -25,8 +25,8 @@ Specifies whether the context menu is enabled in the UI component.
 
     <!--HTML--> 
     <dx-gantt ... >
-        <dxo-context-menu [enabled]="false">
-        </dxo-context-menu>
+        <dxo-gantt-context-menu [enabled]="false">
+        </dxo-gantt-context-menu>
         ...
     </dx-gantt>
 

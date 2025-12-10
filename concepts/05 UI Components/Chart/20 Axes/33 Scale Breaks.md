@@ -25,10 +25,10 @@ Use an axis' [breaks](/api-reference/10%20UI%20Components/dxChart/1%20Configurat
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxi-value-axis> <!-- or <dxo-argument-axis> -->
-            <dxi-break [startValue]="100" [endValue]="500"></dxi-break>
-            <dxi-break [startValue]="1000" [endValue]="2000"></dxi-break>
-        </dxi-value-axis>
+        <dxi-chart-value-axis> <!-- or <dxo-argument-axis> -->
+            <dxi-chart-break [startValue]="100" [endValue]="500"></dxi-chart-break>
+            <dxi-chart-break [startValue]="1000" [endValue]="2000"></dxi-chart-break>
+        </dxi-chart-value-axis>
     </dx-chart>
 
     <!--TypeScript-->
@@ -129,10 +129,10 @@ The value axis supports auto-calculated scale breaks, which can be enabled by se
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxi-value-axis
+        <dxi-chart-value-axis
             [autoBreaksEnabled]="true"
             [maxAutoBreakCount]="2">
-        </dxi-value-axis>
+        </dxi-chart-value-axis>
     </dx-chart>
 
     <!--TypeScript-->

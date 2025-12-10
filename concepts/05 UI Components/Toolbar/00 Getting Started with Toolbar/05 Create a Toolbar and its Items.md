@@ -92,16 +92,16 @@ The following code creates a Toolbar and adds a [dxTextBox](/api-reference/10%20
 
     <!-- tab: app.component.html -->
     <dx-toolbar>
-        <dxi-item 
+        <dxi-toolbar-item 
             widget="dxTextBox" 
             [options]="textBoxOptions"
         >
-        </dxi-item>
-        <dxi-item  
+        </dxi-toolbar-item>
+        <dxi-toolbar-item  
             widget="dxButton" 
             [options]="searchButtonOptions"
         >
-        </dxi-item>
+        </dxi-toolbar-item>
     </dx-toolbar>
 
     <!-- tab: app.component.ts -->

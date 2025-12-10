@@ -40,13 +40,13 @@ In the following example, the [CheckBox](/api-reference/10%20UI%20Widgets/dxChec
 
     <!--HTML-->
     <dx-html-editor>
-        <dxo-toolbar>
-            <dxi-item
+        <dxo-html-editor-toolbar>
+            <dxi-html-editor-item
                 widget="dxCheckBox"
                 [options]="checkboxOptions"
                 locateInMenu="never">
-            </dxi-item>
-        </dxo-toolbar>
+            </dxi-html-editor-item>
+        </dxo-html-editor-toolbar>
     </dx-html-editor>
 
     <!--TypeScript-->

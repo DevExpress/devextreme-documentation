@@ -412,7 +412,7 @@ Cannot be converted, the cell value is exported without formatting. To export th
         <!-- tab: app.component.html -->
         <dx-pivot-grid ... 
             [dataSource]="pivotGridDataSource">
-            <dxo-export [enabled]="true"></dxo-export>
+            <dxo-pivot-grid-export [enabled]="true"></dxo-pivot-grid-export>
         </dx-pivot-grid>
 
         <!-- tab: app.component.ts -->

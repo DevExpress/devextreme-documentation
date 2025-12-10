@@ -41,10 +41,10 @@ To add tooltips to a Chart, assign `true` to the **tooltip**.[enabled](/api-refe
 
     <!-- tab: app.component.html -->
     <dx-chart [dataSource]="chartData" >
-        <dxo-tooltip
+        <dxo-chart-tooltip
             [enabled]="true"
             [customizeTooltip]="customizeTooltip"
-        ></dxo-tooltip>
+        ></dxo-chart-tooltip>
     </dx-chart>
 
     <!-- tab: app.component.ts -->

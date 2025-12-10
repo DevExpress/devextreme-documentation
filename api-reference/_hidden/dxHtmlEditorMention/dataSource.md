@@ -71,7 +71,7 @@ Use one of the following extensions to enable the server to process data accordi
 
         <!-- tab: app.component.html -->
         <dx-{widget-name} ... >
-            <dxi-mention [dataSource]="store"></dxi-mention>
+            <dxi-{widget-name}-mention [dataSource]="store"></dxi-{widget-name}-mention>
         </dx-{widget-name}>
 
         <!-- tab: app.module.ts -->

@@ -52,36 +52,36 @@ Use the [beginGroup](/api-reference/_hidden/dxMenuBaseItem/beginGroup.md '/Docum
     <div id="container">
         <dx-menu>
             <!-- ... -->
-            <dxi-item 
+            <dxi-menu-item 
                 text="Products"
             >
-                <dxi-item 
+                <dxi-menu-item 
                     text="Product 1"
                 >
-                </dxi-item> 
-                <dxi-item 
+                </dxi-menu-item> 
+                <dxi-menu-item 
                     text="Category"
                 >
-                    <dxi-item 
+                    <dxi-menu-item 
                         text="Product 2"
                     >
-                    </dxi-item>
-                    <dxi-item 
+                    </dxi-menu-item>
+                    <dxi-menu-item 
                         [beginGroup]="true"
                         text="Product 3"
                     >
-                    </dxi-item>
-                    <dxi-item 
+                    </dxi-menu-item>
+                    <dxi-menu-item 
                         text="Product 4"
                     >
-                    </dxi-item>
-                </dxi-item>
-                <dxi-item 
+                    </dxi-menu-item>
+                </dxi-menu-item>
+                <dxi-menu-item 
                     [disabled]="true"
                     text="Product 5"
                 >
-                </dxi-item> 
-            </dxi-item>
+                </dxi-menu-item> 
+            </dxi-menu-item>
             <!-- ... -->
         </dx-menu>
     </div>

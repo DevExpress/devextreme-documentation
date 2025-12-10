@@ -62,9 +62,9 @@ A function that returns one of the above.
 
         <!-- tab: app.component.html -->
         <dx-{widget-name} ... >
-            <dxi-column ... >
-                <dxo-lookup [dataSource]="lookupDataSource" ... ></dxo-lookup>
-            </dxi-column>
+            <dxi-{widget-name}-column ... >
+                <dxo-{widget-name}-lookup [dataSource]="lookupDataSource" ... ></dxo-{widget-name}-lookup>
+            </dxi-{widget-name}-column>
         </dx-{widget-name}>
 
         <!-- tab: app.component.ts -->

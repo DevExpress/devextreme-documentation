@@ -27,16 +27,16 @@ User input is validated against a set of [validation rules](/api-reference/10%20
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxi-column dataField="Full_Name">
-            <dxi-validation-rule type="required"></dxi-validation-rule>
-        </dxi-column>
-        <dxi-column dataField="Login">
-            <dxi-validation-rule
+        <dxi-tree-list-column dataField="Full_Name">
+            <dxi-tree-list-validation-rule type="required"></dxi-tree-list-validation-rule>
+        </dxi-tree-list-column>
+        <dxi-tree-list-column dataField="Login">
+            <dxi-tree-list-validation-rule
                 type="stringLength"
                 [min]="3"
                 message="Login should be longer than 3 symbols" >
-            </dxi-validation-rule>
-        </dxi-column>
+            </dxi-tree-list-validation-rule>
+        </dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->

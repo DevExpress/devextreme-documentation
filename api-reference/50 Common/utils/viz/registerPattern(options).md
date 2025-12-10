@@ -60,8 +60,8 @@ The following example demonstrates how to create a stroke pattern. Use a [d](htt
 
     <!-- tab: app.component.html -->
     <dx-chart ... >
-        <dxo-common-series-settings [color]="seriesColor">
-        </dxo-common-series-settings>
+        <dxo-chart-common-series-settings [color]="seriesColor">
+        </dxo-chart-common-series-settings>
     </dx-chart>
 
     <!-- tab: app.component.ts -->

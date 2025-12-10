@@ -28,14 +28,14 @@ To configure the constant lines, declare the [constantLines](/api-reference/10%2
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis>
-            <dxi-constant-line [value]="100"></dxi-constant-line>
-            <dxi-constant-line [value]="50"></dxi-constant-line>
-        </dxo-argument-axis>
-        <dxi-value-axis>
-            <dxi-constant-line [value]="40"></dxi-constant-line>
-            <dxi-constant-line [value]="70"></dxi-constant-line>
-        </dxi-value-axis>
+        <dxo-chart-argument-axis>
+            <dxi-chart-constant-line [value]="100"></dxi-chart-constant-line>
+            <dxi-chart-constant-line [value]="50"></dxi-chart-constant-line>
+        </dxo-chart-argument-axis>
+        <dxi-chart-value-axis>
+            <dxi-chart-constant-line [value]="40"></dxi-chart-constant-line>
+            <dxi-chart-constant-line [value]="70"></dxi-chart-constant-line>
+        </dxi-chart-value-axis>
     </dx-chart>
 
     <!--TypeScript-->
@@ -162,27 +162,27 @@ Note that individual settings override axis-specific settings which, in turn, ov
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis>
-            <dxi-constant-line ... >
+        <dxo-chart-argument-axis>
+            <dxi-chart-constant-line ... >
                 <!-- high priority -->
-            </dxi-constant-line>
-            <dxo-constant-line-style ... >
+            </dxi-chart-constant-line>
+            <dxo-chart-constant-line-style ... >
                 <!-- middle priority -->
-            </dxo-constant-line-style>
-        </dxo-argument-axis>
-        <dxi-value-axis>
-            <dxi-constant-line ... >
+            </dxo-chart-constant-line-style>
+        </dxo-chart-argument-axis>
+        <dxi-chart-value-axis>
+            <dxi-chart-constant-line ... >
                 <!-- high priority -->
-            </dxi-constant-line>
-            <dxo-constant-line-style ... >
+            </dxi-chart-constant-line>
+            <dxo-chart-constant-line-style ... >
                 <!-- middle priority -->
-            </dxo-constant-line-style>
-        </dxi-value-axis>
-        <dxo-common-axis-settings>
-            <dxo-constant-line-style ... >
+            </dxo-chart-constant-line-style>
+        </dxi-chart-value-axis>
+        <dxo-chart-common-axis-settings>
+            <dxo-chart-constant-line-style ... >
                 <!-- low priority -->
-            </dxo-constant-line-style>
-        </dxo-common-axis-settings>
+            </dxo-chart-constant-line-style>
+        </dxo-chart-common-axis-settings>
     </dx-chart>
 
     <!--TypeScript-->

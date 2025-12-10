@@ -25,10 +25,10 @@ A custom function is useful when advanced formatting is required. The value to b
     <dx-slider
         [min]="0" [max]="sliderMaxValue"
         [(value)]="sliderValue" [step]="0.01">
-        <dxo-tooltip
+        <dxo-slider-tooltip
             [enabled]="true"
             [format]="formatSliderTooltip">
-        </dxo-tooltip>
+        </dxo-slider-tooltip>
     </dx-slider>
 
     <!--TypeScript-->

@@ -53,7 +53,7 @@ Use the [toolbox](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuratio
 
     <!-- tab: app.component.html -->
     <dx-diagram #diagram id="diagram">
-        <dxi-custom-shape 
+        <dxi-diagram-custom-shape 
             category="hardware"
             type="internet"
             title="Internet"
@@ -70,15 +70,15 @@ Use the [toolbox](/api-reference/10%20UI%20Components/dxDiagram/1%20Configuratio
             [textTop]="0.7"
             [textWidth]="1"
             [textHeight]="0.3">
-            <dxi-connection-point [x]="0.5" [y]="0"></dxi-connection-point>
-            <dxi-connection-point [x]="0.9" [y]="0.5"></dxi-connection-point>
-            <dxi-connection-point [x]="0.5" [y]="1"></dxi-connection-point>
-            <dxi-connection-point [x]="0.1" [y]="0.5"></dxi-connection-point>
-        </dxi-custom-shape>
+            <dxi-diagram-connection-point [x]="0.5" [y]="0"></dxi-diagram-connection-point>
+            <dxi-diagram-connection-point [x]="0.9" [y]="0.5"></dxi-diagram-connection-point>
+            <dxi-diagram-connection-point [x]="0.5" [y]="1"></dxi-diagram-connection-point>
+            <dxi-diagram-connection-point [x]="0.1" [y]="0.5"></dxi-diagram-connection-point>
+        </dxi-diagram-custom-shape>
         ...
-        <dxo-toolbox>
-            <dxi-group category="hardware" title="Hardware"></dxi-group>
-        </dxo-toolbox>
+        <dxo-diagram-toolbox>
+            <dxi-diagram-group category="hardware" title="Hardware"></dxi-diagram-group>
+        </dxo-diagram-toolbox>
     </dx-diagram>
 
     <!-- tab: app.component.ts -->

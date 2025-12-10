@@ -30,12 +30,12 @@ If the axis displays numbers, assign a number to this property. For example, an 
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis
+        <dxo-chart-argument-axis
             aggregationInterval="day"> <!-- Interval of one day -->
-            <dxo-aggregation-interval
+            <dxo-chart-aggregation-interval
                 [days]="5">            <!-- Interval of five days -->
-            </dxo-aggregation-interval>
-        </dxo-argument-axis>
+            </dxo-chart-aggregation-interval>
+        </dxo-chart-argument-axis>
     </dx-chart>
 
     <!--TypeScript-->

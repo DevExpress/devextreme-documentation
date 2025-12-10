@@ -35,14 +35,14 @@ You can add a button that performs a custom action using a [button item](/api-re
     <dx-form
         [(formData)]="employee"
         [colCount]="2">
-        <dxi-item dataField="name"></dxi-item>
-        <dxi-item itemType="empty"></dxi-item>
-        <dxi-item dataField="email"></dxi-item>
-        <dxi-item 
+        <dxi-form-item dataField="name"></dxi-form-item>
+        <dxi-form-item itemType="empty"></dxi-form-item>
+        <dxi-form-item dataField="email"></dxi-form-item>
+        <dxi-form-item 
             itemType="button" 
             alignment="left"
             [buttonOptions]="buttonOptions">
-        </dxi-item>
+        </dxi-form-item>
     </dx-form>
 
     <!--TypeScript-->

@@ -4,7 +4,7 @@ type: Number | String
 ---
 ---
 ##### shortDescription
-The [open value](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/openValueField.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/series/#openValueField') of the series point.
+The point's [open value](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/CommonSeries/openValueField.md '{basewidgetpath}/Series_Types/CandleStickSeries/#openValueField').
 
 ---
 <!-- Description goes here -->

@@ -5,12 +5,12 @@
 
     <!-- tab: app.component.html -->
     <dx-file-manager ... >
-        <dxo-toolbar>
-            <dxi-item 
+        <dxo-file-manager-toolbar>
+            <dxi-file-manager-item 
                 widget="dxCheckBox"
                 [options]="{ text: 'Show IDs' }">
-            </dxi-item>
-        </dxo-toolbar>
+            </dxi-file-manager-item>
+        </dxo-file-manager-toolbar>
         ...
     </dx-file-manager>    
 

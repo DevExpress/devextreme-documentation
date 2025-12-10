@@ -112,14 +112,14 @@ In the CircularGauge and LinearGauge, the palette can be specified in the [range
     <!-- tab: app.component.html -->
     <dx-circular-gauge ...
         [subvalues]="[25, 40, 68]">
-        <dxo-subvalue-indicator
+        <dxo-circular-gauge-subvalue-indicator
             palette="Soft Pastel">
-        </dxo-subvalue-indicator>
-        <dxo-range-container palette="Harmony Light">
-            <dxi-range [startValue]="0" [endValue]="30"></dxi-range>
-            <dxi-range [startValue]="30" [endValue]="70"></dxi-range>
-            <dxi-range [startValue]="70" [endValue]="100"></dxi-range>
-        </dxo-range-container>
+        </dxo-circular-gauge-subvalue-indicator>
+        <dxo-circular-gauge-range-container palette="Harmony Light">
+            <dxi-circular-gauge-range [startValue]="0" [endValue]="30"></dxi-circular-gauge-range>
+            <dxi-circular-gauge-range [startValue]="30" [endValue]="70"></dxi-circular-gauge-range>
+            <dxi-circular-gauge-range [startValue]="70" [endValue]="100"></dxi-circular-gauge-range>
+        </dxo-circular-gauge-range-container>
     </dx-circular-gauge>
 
     <!-- tab: app.module.ts -->
@@ -261,16 +261,16 @@ In the TreeMap, the palette is part of the [colorizer](/api-reference/10%20UI%20
 
     <!-- tab: app.component.html -->
     <dx-tree-map ... >
-        <dxo-colorizer palette="Harmony Light"></dxo-colorizer>
+        <dxo-tree-map-colorizer palette="Harmony Light"></dxo-tree-map-colorizer>
     </dx-tree-map>
 
     <dx-vector-map ... >
-        <dxi-layer
+        <dxi-vector-map-layer
             [dataSource]="worldMap"
             palette="Violet" 
             [paletteSize]="7"
             [customize]="colorizeMap">
-        </dxi-layer>
+        </dxi-vector-map-layer>
     </dx-vector-map>
 
     <dx-range-selector
@@ -279,11 +279,11 @@ In the TreeMap, the palette is part of the [colorizer](/api-reference/10%20UI%20
             { arg: 'B', val1: 5, val2: 5 },
             { arg: 'C', val1: 10, val2: 7 }
         ]">
-        <dxo-chart palette="Soft Pastel">
-            <dxo-common-series-settings type="bar" argumentField="arg"></dxo-common-series-settings>
-            <dxi-series value-field="val1"></dxi-series>
-            <dxi-series value-field="val2"></dxi-series>
-        </dxo-chart>
+        <dxo-range-selector-chart palette="Soft Pastel">
+            <dxo-range-selector-common-series-settings type="bar" argumentField="arg"></dxo-range-selector-common-series-settings>
+            <dxi-range-selector-series value-field="val1"></dxi-range-selector-series>
+            <dxi-range-selector-series value-field="val2"></dxi-range-selector-series>
+        </dxo-range-selector-chart>
     </dx-range-selector>
 
     <!-- tab: app.component.ts -->

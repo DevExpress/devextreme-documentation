@@ -50,19 +50,19 @@ This function allows you to change form item properties dynamically. Within this
         <!-- tab: app.component.html -->
         <dx-data-grid ... >
             <!-- ... -->
-            <dxi-column dataField="State"></dxi-column>
-            <dxi-column dataField="Address" [visible]="false"></dxi-column>
-            <dxi-column dataField="AddressRequired" [visible]="false"></dxi-column>   
-            <dxo-editing mode="form" [allowUpdating]="true" [allowAdding]="true">
-               <dxo-form [customizeItem]="customizeItem">
+            <dxi-data-grid-column dataField="State"></dxi-data-grid-column>
+            <dxi-data-grid-column dataField="Address" [visible]="false"></dxi-data-grid-column>
+            <dxi-data-grid-column dataField="AddressRequired" [visible]="false"></dxi-data-grid-column>   
+            <dxo-data-grid-editing mode="form" [allowUpdating]="true" [allowAdding]="true">
+               <dxo-data-grid-form [customizeItem]="customizeItem">
                     <!-- ... -->
-                    <dxi-item dataField="AddressRequired"></dxi-item>
-                    <dxi-item itemType="group" caption="Home Address">
-                        <dxi-item dataField="State"></dxi-item>
-                        <dxi-item dataField="Address"></dxi-item>
-                    </dxi-item>
-               </dxo-form>
-            </dxo-editing>            
+                    <dxi-data-grid-item dataField="AddressRequired"></dxi-data-grid-item>
+                    <dxi-data-grid-item itemType="group" caption="Home Address">
+                        <dxi-data-grid-item dataField="State"></dxi-data-grid-item>
+                        <dxi-data-grid-item dataField="Address"></dxi-data-grid-item>
+                    </dxi-data-grid-item>
+               </dxo-data-grid-form>
+            </dxo-data-grid-editing>            
         </dx-data-grid>
 
         <!-- tab: app.component.ts -->
@@ -300,7 +300,7 @@ Specify **setCellValue** for those columns whose editors affect other form items
         <!-- tab: app.component.html -->
         <dx-data-grid ... >
             <!-- ... -->
-            <dxi-column dataField="AddressRequired" [setCellValue]="setCellValue"></dxi-column>           
+            <dxi-data-grid-column dataField="AddressRequired" [setCellValue]="setCellValue"></dxi-data-grid-column>           
         </dx-data-grid>
 
         <!-- tab: app.component.ts -->

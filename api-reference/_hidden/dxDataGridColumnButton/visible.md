@@ -48,12 +48,12 @@ Use the function to show or hide the button for specific rows. For example, the 
 
     <!--HTML-->
     <dx-{widget-name} ... >
-        <dxi-column type="buttons">
-            <dxi-button
+        <dxi-{widget-name}-column type="buttons">
+            <dxi-{widget-name}-button
                 text="Cancel"
                 [visible]="isCancelButtonVisible">
-            </dxi-button>
-        </dxi-column>
+            </dxi-{widget-name}-button>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!--TypeScript-->

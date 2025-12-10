@@ -24,16 +24,16 @@ Follow the steps below to configure custom client-side data aggregation.
 
         <!--HTML-->
         <dx-data-grid ... >
-            <dxo-summary>
-                <dxi-total-item
+            <dxo-data-grid-summary>
+                <dxi-data-grid-total-item
                     name="сustomSummary1"
                     summaryType="custom">
-                </dxi-total-item>
-                <dxi-total-item
+                </dxi-data-grid-total-item>
+                <dxi-data-grid-total-item
                     name="сustomSummary2"
                     summaryType="custom">
-                </dxi-total-item>
-            </dxo-summary>
+                </dxi-data-grid-total-item>
+            </dxo-data-grid-summary>
         </dx-data-grid>
 
         <!--TypeScript-->

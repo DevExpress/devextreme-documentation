@@ -55,7 +55,7 @@ You can call this method at any point in your application. In the example below,
     <!-- tab: app.component.html -->
     <dx-pivot-grid ...
         (onExporting)="onExporting($event)">
-        <dxo-export [enabled]="true"></dxo-export>
+        <dxo-pivot-grid-export [enabled]="true"></dxo-pivot-grid-export>
     </dx-pivot-grid>
 
     <!-- tab: app.component.ts -->

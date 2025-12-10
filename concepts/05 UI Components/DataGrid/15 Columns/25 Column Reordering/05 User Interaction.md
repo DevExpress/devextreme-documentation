@@ -21,7 +21,7 @@ If a specific column should not be moved, set its [allowReordering](/api-referen
     <!--HTML-->
     <dx-data-grid ...
         [allowColumnReordering]="true">
-        <dxi-column dataField="CompanyName" [allowReordering]="false"></dxi-column>
+        <dxi-data-grid-column dataField="CompanyName" [allowReordering]="false"></dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->

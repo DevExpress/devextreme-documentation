@@ -41,7 +41,7 @@ The following code snippet adds a custom instruction to the item:
             editorType="dxTextBox"
             [aiOptions]="emailAIOptions"
         >
-            <dxi-validation-rule type="email"></dxi-validation-rule>
+            <dxi-form-validation-rule type="email"></dxi-form-validation-rule>
         </dxi-form-item>
     </dx-form>
 

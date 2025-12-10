@@ -41,9 +41,9 @@ Use the **scrolling**.[mode](/api-reference/10%20UI%20Components/dxDataGrid/1%20
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-scrolling
+        <dxo-data-grid-scrolling
             mode="standard"> <!-- or "virtual" | "infinite" -->
-        </dxo-scrolling>
+        </dxo-data-grid-scrolling>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -125,9 +125,9 @@ The DataGrid adapts its scrolling mechanism to the current platform. It utilizes
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-scrolling
+        <dxo-data-grid-scrolling
             [useNative]="true">
-        </dxo-scrolling>
+        </dxo-data-grid-scrolling>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -216,12 +216,12 @@ The current platform determines the native scrolling settings and you cannot adj
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-scrolling
+        <dxo-data-grid-scrolling
             [useNative]="false"
             [scrollByContent]="true"
             [scrollByThumb]="true"
             showScrollbar="onHover"> <!-- or "onScroll" | "always" | "never" -->
-        </dxo-scrolling>
+        </dxo-data-grid-scrolling>
     </dx-data-grid>
 
     <!--TypeScript-->

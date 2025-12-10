@@ -42,11 +42,11 @@ The following code example demonstrates how to filter data on the client. To imp
         [remoteOperations]="{ filtering: false }"
         // ...
     >
-        <dxi-column
+        <dxi-data-grid-column
             dataField="Products"
             dataType="string"
             [calculateFilterExpression]="calculateFilterExpression">
-        </dxi-column>
+        </dxi-data-grid-column>
         // ...
     </dx-data-grid>
 

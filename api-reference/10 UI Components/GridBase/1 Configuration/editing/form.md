@@ -52,28 +52,28 @@ Default form editors depend on the [columns' configuration](/api-reference/10%20
     
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-editing
+        <dxo-{widget-name}-editing
             [allowUpdating]="true"
             mode="form">
-            <dxo-form>
-                <dxi-item itemType="group" caption="Personal Data">
-                    <dxi-item dataField="Prefix"></dxi-item>
-                    <dxi-item dataField="Full_Name"></dxi-item>
-                    <dxi-item dataField="Position"></dxi-item>
-                    <dxi-item dataField="Duties" editorType="dxTextArea"></dxi-item>
-                </dxi-item>
-                <dxi-item itemType="group" caption="Contacts">
-                    <dxi-item dataField="Email"></dxi-item>
-                    <dxi-item dataField="Skype"></dxi-item>
-                </dxi-item>
-            </dxo-form>
-        </dxo-editing>
-        <dxi-column dataField="Full_Name"></dxi-column>
-        <dxi-column dataField="Prefix"></dxi-column>
-        <dxi-column dataField="Position"></dxi-column>
-        <dxi-column dataField="Duties"></dxi-column>
-        <dxi-column dataField="Email"></dxi-column>
-        <dxi-column dataField="Skype"></dxi-column>
+            <dxo-{widget-name}-form>
+                <dxi-{widget-name}-item itemType="group" caption="Personal Data">
+                    <dxi-{widget-name}-item dataField="Prefix"></dxi-{widget-name}-item>
+                    <dxi-{widget-name}-item dataField="Full_Name"></dxi-{widget-name}-item>
+                    <dxi-{widget-name}-item dataField="Position"></dxi-{widget-name}-item>
+                    <dxi-{widget-name}-item dataField="Duties" editorType="dxTextArea"></dxi-{widget-name}-item>
+                </dxi-{widget-name}-item>
+                <dxi-{widget-name}-item itemType="group" caption="Contacts">
+                    <dxi-{widget-name}-item dataField="Email"></dxi-{widget-name}-item>
+                    <dxi-{widget-name}-item dataField="Skype"></dxi-{widget-name}-item>
+                </dxi-{widget-name}-item>
+            </dxo-{widget-name}-form>
+        </dxo-{widget-name}-editing>
+        <dxi-{widget-name}-column dataField="Full_Name"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="Prefix"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="Position"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="Duties"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="Email"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="Skype"></dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->
@@ -292,16 +292,16 @@ If you configure a form with [tabbed items](/api-reference/10%20UI%20Components/
 
         <!-- tab: app.component.html -->
         <dx-data-grid ... >
-            <dxo-editing ... >
-                <dxo-form>
-                    <dxi-item itemType="tabbed">
-                        <dxo-tab-panel-options [deferRendering]="false" />
+            <dxo-data-grid-editing ... >
+                <dxo-data-grid-form>
+                    <dxi-data-grid-item itemType="tabbed">
+                        <dxo-tab-panel-options [deferRendering]="false"></dxo-tab-panel-options>
                         <dxi-tab ... >
-                            <dxi-item ... />
+                            <dxi-data-grid-item ... ></dxi-data-grid-item>
                         </dxi-tab>
-                    </dxi-item>
-                </dxo-form>
-            </dxo-editing>
+                    </dxi-data-grid-item>
+                </dxo-data-grid-form>
+            </dxo-data-grid-editing>
         </dx-data-grid>
 
         <!-- tab: app.module.ts -->

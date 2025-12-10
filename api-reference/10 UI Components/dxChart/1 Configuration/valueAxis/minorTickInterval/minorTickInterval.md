@@ -26,9 +26,9 @@ If the axis displays numbers, set the **minorTickInterval** to a number. This nu
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxi-value-axis ... >
-            <dxo-minor-tick-interval [days]="5"></dxo-minor-tick-interval>
-        </dxi-value-axis>
+        <dxi-chart-value-axis ... >
+            <dxo-chart-minor-tick-interval [days]="5"></dxo-chart-minor-tick-interval>
+        </dxi-chart-value-axis>
     </dx-chart>
 
     <!--TypeScript-->

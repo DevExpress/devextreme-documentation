@@ -30,8 +30,8 @@ To make the filter row visible, assign **true** to the [filterRow](/api-referenc
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-filter-row [visible]="true"></dxo-filter-row>
-        <dxi-column [allowFiltering]="false" ... ></dxi-column>
+        <dxo-data-grid-filter-row [visible]="true"></dxo-data-grid-filter-row>
+        <dxi-data-grid-column [allowFiltering]="false" ... ></dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -129,10 +129,10 @@ A user-specified filter is automatically applied with a delay by default. Altern
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-filter-row
+        <dxo-data-grid-filter-row
             [visible]="true"
             applyFilter="onClick">
-        </dxo-filter-row>
+        </dxo-data-grid-filter-row>
     </dx-data-grid>
 
     <!--TypeScript-->
@@ -252,13 +252,13 @@ You can also preselect a filter operation and specify the initial filter value w
     
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-filter-row [visible]="true"></dxo-filter-row>
-        <dxi-column 
+        <dxo-data-grid-filter-row [visible]="true"></dxo-data-grid-filter-row>
+        <dxi-data-grid-column 
             dataField="Status"
             [filterOperations]="['contains', '=']"
             [(selectedFilterOperation)]="selectedOperation"
             [(filterValue)]="filterValue">
-        </dxi-column>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->

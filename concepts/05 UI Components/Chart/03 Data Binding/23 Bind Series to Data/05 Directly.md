@@ -22,11 +22,11 @@ To bind a series to data directly, specify which data source field provides argu
 ##### Angular
 
     <!--HTML--><dx-chart [dataSource]="fruitProduction">
-        <dxi-series
+        <dxi-chart-series
             argumentField="fruit"
             valueField="year2014"
             name="2014">
-        </dxi-series>
+        </dxi-chart-series>
     </dx-chart>
 
     <!--TypeScript-->
@@ -141,12 +141,12 @@ Commonly, a chart contains several series, and many of them have the same argume
 ##### Angular
 
     <!--HTML--><dx-chart [dataSource]="fruitProduction">
-        <dxo-common-series-settings
+        <dxo-chart-common-series-settings
             argumentField="fruit">
-        </dxo-common-series-settings>
-        <dxi-series valueField="year2014" name="2014"></dxi-series>
-        <dxi-series valueField="year2015" name="2015"></dxi-series>
-        <dxi-series valueField="year2016" name="2016"></dxi-series>
+        </dxo-chart-common-series-settings>
+        <dxi-chart-series valueField="year2014" name="2014"></dxi-chart-series>
+        <dxi-chart-series valueField="year2015" name="2015"></dxi-chart-series>
+        <dxi-chart-series valueField="year2016" name="2016"></dxi-chart-series>
     </dx-chart>
 
     <!--TypeScript-->

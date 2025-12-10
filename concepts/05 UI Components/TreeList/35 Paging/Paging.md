@@ -21,11 +21,11 @@ Paging improves the UI component's performance on large datasets because it rend
 
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-paging 
+        <dxo-tree-list-paging 
             [enabled]="true"
             [pageSize]="15"
             [pageIndex]="1"> <!-- Shows the second page -->
-        </dxo-paging>
+        </dxo-tree-list-paging>
     </dx-tree-list>
 
     <!--TypeScript-->

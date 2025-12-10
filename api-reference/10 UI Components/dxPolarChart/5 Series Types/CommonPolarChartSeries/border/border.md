@@ -42,14 +42,14 @@ Configures the **border** object for a specific series. Overwrites **border** co
 
     <!-- tab: app.component.html -->
     <dx-polar-chart>
-        <dxo-common-series-settings>
-            <dxo-border
+        <dxo-polar-chart-common-series-settings>
+            <dxo-polar-chart-border
                 [visible]="true"
                 color="black"
                 dashStyle="longDashdot"
                 width="1"
-            ></dxo-border>
-        </dxo-common-series-settings>
+            ></dxo-polar-chart-border>
+        </dxo-polar-chart-common-series-settings>
     </dx-polar-chart>
 
 ##### Vue

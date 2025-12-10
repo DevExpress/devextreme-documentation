@@ -43,10 +43,10 @@ If the field name in your data source differs from default 'id', use this proper
 
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxo-tasks ...
+        <dxo-gantt-tasks ...
             [dataSource]="tasks" 
             keyExpr="taskId" >
-        </dxo-tasks>
+        </dxo-gantt-tasks>
         <!-- ... -->
     </dx-gantt>
 

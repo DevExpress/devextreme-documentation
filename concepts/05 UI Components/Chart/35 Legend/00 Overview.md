@@ -23,7 +23,7 @@ To configure the appearance, location, and content of the legend, use properties
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-legend ... ></dxo-legend>
+        <dxo-chart-legend ... ></dxo-chart-legend>
     </dx-chart>
 
     <!--TypeScript-->

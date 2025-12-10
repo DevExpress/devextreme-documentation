@@ -30,10 +30,10 @@ Configures validation properties.
 
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxo-validation
+        <dxo-gantt-validation
             [autoUpdateParentTasks]="true" 
             [validateDependencies]="true">
-        </dxo-validation>
+        </dxo-gantt-validation>
         <!-- ... -->
     </dx-gantt>
 

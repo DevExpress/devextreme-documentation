@@ -27,10 +27,10 @@ To configure the elements' appearance, use the [node](/api-reference/10%20UI%20C
 
     <!--HTML-->
     <dx-sankey ... >
-        <dxo-node [opacity]="0.5"></dxo-node>
-        <dxo-link>
-            <dxo-border [visible]="true"></dxo-border>
-        </dxo-link>
+        <dxo-sankey-node [opacity]="0.5"></dxo-sankey-node>
+        <dxo-sankey-link>
+            <dxo-sankey-border [visible]="true"></dxo-sankey-border>
+        </dxo-sankey-link>
     </dx-sankey>
 
     <!--TypeScript-->

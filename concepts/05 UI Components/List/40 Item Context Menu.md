@@ -44,18 +44,18 @@ If you want to offer the user a set of commands related to a List item, you can 
         <div *dxTemplate="let data of 'item'">
             <b>{{data.fruit}}</b>
         </div>
-        <dxi-menu-item
+        <dxi-list-menu-item
             text="Add to Cart"
             [action]="addToCart">
-        </dxi-menu-item>
-        <dxi-menu-item
+        </dxi-list-menu-item>
+        <dxi-list-menu-item
             text="View Details"
             [action]="showDetails">
-        </dxi-menu-item>
-        <dxi-menu-item
+        </dxi-list-menu-item>
+        <dxi-list-menu-item
             text="Register a Complaint"
             [action]="complain">
-        </dxi-menu-item>
+        </dxi-list-menu-item>
     </dx-list>
 
     <!--TypeScript-->

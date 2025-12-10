@@ -64,10 +64,10 @@ Since the **formats** property accepts an array, you can specify multiple format
         (onExporting)="onExporting($event)"
     >
         <!-- ... -->
-        <dxo-export
+        <dxo-data-grid-export
             [enabled]="true"
             [formats]="['xlsx', 'pdf']"
-        ></dxo-export>
+        ></dxo-data-grid-export>
     </dx-data-grid>
     
     <!-- tab: app.component.ts -->
@@ -268,10 +268,10 @@ The example below shows how to export DataGrid to CSV format.
         (onExporting)="onExporting($event)"
     >
         <!-- ... -->
-        <dxo-export
+        <dxo-data-grid-export
             [enabled]="true"
             [formats]="['csv']"
-        ></dxo-export>
+        ></dxo-data-grid-export>
     </dx-data-grid>
     
     <!-- tab: app.component.ts -->

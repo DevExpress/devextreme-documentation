@@ -42,21 +42,21 @@ Note that axis-specific settings override common settings.
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxo-argument-axis>
-            <dxo-grid>
+        <dxo-chart-argument-axis>
+            <dxo-chart-grid>
                 <!-- high priority -->
-            </dxo-grid>
-        </dxo-argument-axis>
-        <dxi-value-axis>
-            <dxo-grid>
+            </dxo-chart-grid>
+        </dxo-chart-argument-axis>
+        <dxi-chart-value-axis>
+            <dxo-chart-grid>
                 <!-- high priority -->
-            </dxo-grid>
-        </dxi-value-axis>
-        <dxo-common-axis-settings>
-            <dxo-grid>
+            </dxo-chart-grid>
+        </dxi-chart-value-axis>
+        <dxo-chart-common-axis-settings>
+            <dxo-chart-grid>
                 <!-- low priority -->
-            </dxo-grid>
-        </dxo-common-axis-settings>
+            </dxo-chart-grid>
+        </dxo-chart-common-axis-settings>
     </dx-chart>
 
     <!--TypeScript-->

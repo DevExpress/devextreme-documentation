@@ -30,11 +30,11 @@ The code below configures a group summary that counts grid records in each group
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
         <!-- ... -->
-        <dxo-summary>
-            <dxi-group-item
+        <dxo-data-grid-summary>
+            <dxi-data-grid-group-item
                 summaryType="count">
-            </dxi-group-item>
-        </dxo-summary>
+            </dxi-data-grid-group-item>
+        </dxo-data-grid-summary>
     </dx-data-grid>
 
 ##### Vue

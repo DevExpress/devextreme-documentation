@@ -25,9 +25,9 @@ To disable sorting for an individual column, set the **column.**[allowSorting](/
 
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxo-sorting
+        <dxo-gantt-sorting
             mode="multiple">
-        </dxo-sorting>        
+        </dxo-gantt-sorting>        
         <!-- ... -->
     </dx-gantt>
 

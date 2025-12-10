@@ -12,10 +12,10 @@ You can clear sorting settings for all columns by calling the [clearSorting()](/
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxi-column
+        <dxi-data-grid-column
             dataField="Name"
             [(sortIndex)]="nameSortIndex">
-        </dxi-column>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!--TypeScript-->

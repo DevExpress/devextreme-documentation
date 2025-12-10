@@ -29,7 +29,7 @@ jobs:
 
         - name: NPM - devextreme
           working-directory: devextreme
-          run: pnpm install
+          run: pnpm install --frozen-lockfile
 
 #Generation
         - name: Discover declarations

@@ -26,8 +26,8 @@ To make the search panel visible, assign **true** to the [searchPanel](/api-refe
     
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-search-panel [visible]="true"></dxo-search-panel>
-        <dxi-column [allowSearch]="false" ... ></dxi-column>
+        <dxo-tree-list-search-panel [visible]="true"></dxo-tree-list-search-panel>
+        <dxi-tree-list-column [allowSearch]="false" ... ></dxi-tree-list-column>
     </dx-tree-list>
 
     <!--TypeScript-->
@@ -120,10 +120,10 @@ Use the **searchPanel**.[text](/api-reference/10%20UI%20Components/GridBase/1%20
 
     <!--HTML-->
     <dx-tree-list ... >
-        <dxo-search-panel 
+        <dxo-tree-list-search-panel 
             [visible]="true" 
             [(text)]="searchText">
-        </dxo-search-panel>
+        </dxo-tree-list-search-panel>
     </dx-tree-list>
 
     <!--TypeScript-->

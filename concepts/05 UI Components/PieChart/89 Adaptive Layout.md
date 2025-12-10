@@ -16,7 +16,7 @@ With the ever-growing variety of platforms, today's web sites and applications c
 ##### Angular
 
     <!--HTML--><dx-pie-chart ... >
-        <dxo-adaptive-layout [height]="300" [width]="400"></dxo-adaptive-layout>
+        <dxo-pie-chart-adaptive-layout [height]="300" [width]="400"></dxo-pie-chart-adaptive-layout>
     </dx-pie-chart>
 
     <!--TypeScript-->

@@ -31,16 +31,16 @@ Individual settings override common settings.
 
     <!--HTML-->
     <dx-chart ... >
-        <dxi-series ... >
-            <dxo-selection-style>
+        <dxi-chart-series ... >
+            <dxo-chart-selection-style>
                 <!-- high priority -->
-            </dxo-selection-style>
-        </dxi-series>
-        <dxo-common-series-settings ... >
-            <dxo-selection-style>
+            </dxo-chart-selection-style>
+        </dxi-chart-series>
+        <dxo-chart-common-series-settings ... >
+            <dxo-chart-selection-style>
                 <!-- low priority -->
-            </dxo-selection-style>
-        </dxo-common-series-settings>
+            </dxo-chart-selection-style>
+        </dxo-chart-common-series-settings>
     </dx-chart>
 
     <!--TypeScript-->
@@ -149,14 +149,14 @@ To choose which series elements should be highlighted when a user selects a seri
 
     <!--HTML-->
     <dx-chart ... >
-        <dxi-series
+        <dxi-chart-series
             type="bar"
             selectionMode="allSeriesPoints"> <!-- or "onlyPoint" | "allArgumentPoints" | "none" -->
-        </dxi-series>
-        <dxi-series
+        </dxi-chart-series>
+        <dxi-chart-series
             type="line"
             selectionMode="includePoints"> <!-- or "nearestPoint" | "excludePoints" | "none" -->
-        </dxi-series>
+        </dxi-chart-series>
     </dx-chart>
 
     <!--TypeScript-->

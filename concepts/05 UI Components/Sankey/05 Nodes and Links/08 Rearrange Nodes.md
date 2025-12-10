@@ -20,7 +20,7 @@ Nodes in a column are separated by a space. You can use the **node**.[padding](/
 
     <!--HTML-->
     <dx-sankey ... >
-        <dxo-node [padding]="1"></dxo-node>
+        <dxo-sankey-node [padding]="1"></dxo-sankey-node>
     </dx-sankey>
 
     <!--TypeScript-->

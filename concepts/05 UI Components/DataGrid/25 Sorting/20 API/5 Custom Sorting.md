@@ -19,10 +19,10 @@ The following code snippet shows how to supply sorting values with a field name:
     
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
-        <dxi-column
+        <dxi-data-grid-column
             dataField="Position" <!--sets values for the column -->
             calculateSortValue="isOnVacation"> <!-- sets values for sorting -->
-        </dxi-column>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
 ##### Vue
@@ -93,11 +93,11 @@ The following code snippet shows how to use a function:
 
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
-        <dxi-column
+        <dxi-data-grid-column
             dataField="Position"
             sortOrder="asc"
             [calculateSortValue]="calculateSortValue">
-        </dxi-column>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->
@@ -186,10 +186,10 @@ Alternatively, adjust sorting with [sortingMethod](/api-reference/_hidden/GridBa
 
     <!-- tab: app.component.html -->
     <dx-data-grid ... >
-        <dxi-column
+        <dxi-data-grid-column
             dataField="State"
             [sortingMethod]="sortingMethod">
-        </dxi-column>
+        </dxi-data-grid-column>
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->

@@ -46,20 +46,20 @@ You can use predefined item features to customize the items. The code below crea
     <dx-tabs
         [width]="300"
     >
-        <dxi-item 
+        <dxi-tabs-item 
             badge="First"
         >
-        </dxi-item>
-        <dxi-item 
+        </dxi-tabs-item>
+        <dxi-tabs-item 
             text="Second"
             [disabled]="true"
         >
-        </dxi-item>
-        <dxi-item 
+        </dxi-tabs-item>
+        <dxi-tabs-item 
             text="Third"
             icon="favorites"
         >
-        </dxi-item>
+        </dxi-tabs-item>
     </dx-tabs>
 
     <!-- tab: app.module.ts -->

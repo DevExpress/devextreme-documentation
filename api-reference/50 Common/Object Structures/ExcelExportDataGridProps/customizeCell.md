@@ -76,7 +76,7 @@ The following code illustrates how to customize <a href="https://github.com/DevE
     <!-- tab: app.component.html -->
     <dx-data-grid ...
         (onExporting)="onExporting($event)">
-        <dxo-export [enabled]="true"></dxo-export>
+        <dxo-data-grid-export [enabled]="true"></dxo-data-grid-export>
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->

@@ -32,13 +32,13 @@ You can specify the [my](/api-reference/50%20Common/Object%20Structures/position
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-column-chooser ... >
-            <dxo-position
+        <dxo-{widget-name}-column-chooser ... >
+            <dxo-{widget-name}-position
                 my="right top"
                 at="right bottom"
                 of=".dx-{widgetname}-column-chooser-button">
-            </dxo-position>
-        </dxo-column-chooser>
+            </dxo-{widget-name}-position>
+        </dxo-{widget-name}-column-chooser>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

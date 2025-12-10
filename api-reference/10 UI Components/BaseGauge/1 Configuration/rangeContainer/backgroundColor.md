@@ -32,9 +32,9 @@ The background color is used to indicate the area reserved for the range contain
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxo-range-container [backgroundColor]="fill">
+        <dxo-{widget-name}-range-container [backgroundColor]="fill">
             <!-- ... -->
-        </dxo-range-container>
+        </dxo-{widget-name}-range-container>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

@@ -19,7 +19,7 @@ Properties that configure the legend's appearance, location, and content are col
 ##### Angular
 
     <!--HTML--><dx-funnel ... >
-        <dxo-legend [visible]="true"></dxo-legend>
+        <dxo-funnel-legend [visible]="true"></dxo-funnel-legend>
     </dx-funnel>
 
     <!--TypeScript-->

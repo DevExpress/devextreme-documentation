@@ -27,17 +27,17 @@ In the following example, the empty item [spans](/api-reference/10%20UI%20Compon
     <dx-form
         [formData]="employee"
         [colCount]="2">
-        <dxi-item dataField="name"></dxi-item>
-        <dxi-item dataField="position"></dxi-item>
-        <dxi-item dataField="hireDate"></dxi-item>
-        <dxi-item dataField="officeNumber"></dxi-item>
-        <dxi-item 
+        <dxi-form-item dataField="name"></dxi-form-item>
+        <dxi-form-item dataField="position"></dxi-form-item>
+        <dxi-form-item dataField="hireDate"></dxi-form-item>
+        <dxi-form-item dataField="officeNumber"></dxi-form-item>
+        <dxi-form-item 
             itemType="empty" 
             [colSpan]="2">
-        </dxi-item>
-        <dxi-item dataField="skype"></dxi-item>
-        <dxi-item dataField="phone"></dxi-item>
-        <dxi-item dataField="email"></dxi-item>
+        </dxi-form-item>
+        <dxi-form-item dataField="skype"></dxi-form-item>
+        <dxi-form-item dataField="phone"></dxi-form-item>
+        <dxi-form-item dataField="email"></dxi-form-item>
     </dx-form>
 
     <!-- tab: app.component.ts -->

@@ -45,19 +45,19 @@
             [autoExpandAll]="expanded"
             [(expandedRowKeys)]="expandedRowKeys">
             <!-- ... -->
-            <dxo-toolbar>
-                <dxi-item location="after">
+            <dxo-tree-list-toolbar>
+                <dxi-tree-list-item location="after">
                     <dx-button
                         [text]="expanded ? 'Collapse All' : 'Expand All'"
                         [width]="136"
                         (onClick)="expanded = !expanded; expandedRowKeys = []">
                     </dx-button>
-                </dxi-item>
-                <dxi-item name="addRowButton" showText="always"></dxi-item>
-                <dxi-item name="exportButton"></dxi-item>
-                <dxi-item name="columnChooserButton"></dxi-item>
-                <dxi-item name="searchPanel"></dxi-item>
-            </dxo-toolbar>
+                </dxi-tree-list-item>
+                <dxi-tree-list-item name="addRowButton" showText="always"></dxi-tree-list-item>
+                <dxi-tree-list-item name="exportButton"></dxi-tree-list-item>
+                <dxi-tree-list-item name="columnChooserButton"></dxi-tree-list-item>
+                <dxi-tree-list-item name="searchPanel"></dxi-tree-list-item>
+            </dxo-tree-list-toolbar>
         </dx-tree-list>
     </div>
 

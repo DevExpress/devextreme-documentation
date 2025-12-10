@@ -22,10 +22,10 @@ To display the field panel, enable the [fieldPanel](/api-reference/10%20UI%20Com
 
     <!-- tab: app.component.html -->
     <dx-pivot-grid ... >
-        <dxo-field-panel
+        <dxo-pivot-grid-field-panel
             [visible]="true"
             [showFilterFields]="false">
-        </dxo-field-panel>
+        </dxo-pivot-grid-field-panel>
     </dx-pivot-grid>
 
 ##### Vue

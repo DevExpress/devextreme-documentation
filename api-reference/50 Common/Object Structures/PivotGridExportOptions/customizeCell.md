@@ -67,7 +67,7 @@ In the following code, the **customizeCell** function customizes <a href="https:
     <!-- tab: app.component.html -->
     <dx-pivot-grid ...
         (onExporting)="onExporting($event)">
-        <dxo-export [enabled]="true"></dxo-export>
+        <dxo-pivot-grid-export [enabled]="true"></dxo-pivot-grid-export>
     </dx-pivot-grid>
 
     <!-- tab: app.component.ts -->

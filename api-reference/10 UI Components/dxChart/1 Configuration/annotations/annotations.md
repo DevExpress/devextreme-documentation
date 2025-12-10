@@ -44,18 +44,18 @@ To create annotations, assign an array of objects to the **annotations[]** prope
 
     <!-- tab: app.component.html -->
     <dx-chart ... >
-        <dxi-annotation
+        <dxi-chart-annotation
             type="text"
             text="Annotation text">
-        </dxi-annotation>
-        <dxi-annotation
+        </dxi-chart-annotation>
+        <dxi-chart-annotation
             type="image"
             image="http://image/url/myimage.png">
-        </dxi-annotation>
-        <dxi-annotation
+        </dxi-chart-annotation>
+        <dxi-chart-annotation
             type="custom"
             template="custom-annotation">
-        </dxi-annotation>
+        </dxi-chart-annotation>
         <svg *dxTemplate="let annotation of 'custom-annotation'">
             <!-- Declare custom SVG markup here -->
         </svg>

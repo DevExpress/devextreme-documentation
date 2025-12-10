@@ -32,14 +32,14 @@ In addition to the [major grid](/api-reference/10%20UI%20Components/dxChart/1%20
 
     <!-- tab: app.component.html -->
     <dx-chart ... >
-        <dxo-common-axis-settings>
-            <dxo-minor-grid
+        <dxo-chart-common-axis-settings>
+            <dxo-chart-minor-grid
                 [visible]="true"
                 color="blue"
                 [opacity]="0.1"
                 [width]="1"
-            ></dxo-minor-grid>
-        </dxo-common-axis-settings>
+            ></dxo-chart-minor-grid>
+        </dxo-chart-common-axis-settings>
     </dx-chart>
 
 ##### Vue

@@ -49,19 +49,19 @@ The following example illustrates this case. A page contains two [TextBoxes](/ap
     <!-- tab: app.component.html -->
     <dx-text-box>
         <dx-validator>
-            <dxi-validation-rule type="required">
-            </dxi-validation-rule>
+            <dxi-validator-validation-rule type="required">
+            </dxi-validator-validation-rule>
         </dx-validator>
     </dx-text-box>
 
     <dx-text-box>
         <dx-validator>
-            <dxi-validation-rule 
+            <dxi-validator-validation-rule 
                 type="custom"
                 message="Required" 
                 [validationCallback]="customCallback"
                 [reevaluate]="true">
-            </dxi-validation-rule>
+            </dxi-validator-validation-rule>
         </dx-validator>
     </dx-text-box>
 

@@ -75,11 +75,11 @@ A function assigned to this property should do the following:
 
     <!-- tab: app.component.html -->
     <dx-diagram #diagram id="diagram">
-        <dxo-nodes
+        <dxo-diagram-nodes
             [dataSource]="dataSource"
             [customDataExpr]="itemCustomDataExpr"
         >
-        </dxo-nodes>
+        </dxo-diagram-nodes>
     </dx-diagram>
 
     <!-- tab: app.module.ts -->

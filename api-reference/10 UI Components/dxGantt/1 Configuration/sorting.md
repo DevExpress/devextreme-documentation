@@ -50,13 +50,13 @@ To clear sorting for a column, hold Ctrl and click the column header. You can al
 
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxo-sorting
+        <dxo-gantt-sorting
             mode="multiple" 
             [showSortIndexes]="true" 
             ascendingText="Ascending Order" 
             descendingText="Descending Order"
             clearText="Clear Sort">
-        </dxo-sorting>        
+        </dxo-gantt-sorting>        
         <!-- ... -->
     </dx-gantt>
 

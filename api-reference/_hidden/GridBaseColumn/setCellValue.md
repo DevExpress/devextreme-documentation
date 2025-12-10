@@ -51,13 +51,13 @@ This function allows you to process user input before it is saved to the data so
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxi-column dataField="Price"></dxi-column>
-        <dxi-column
+        <dxi-{widget-name}-column dataField="Price"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column
             dataField="Count"
             dataType="number"
             [setCellValue]="setCellValue">
-        </dxi-column>
-        <dxi-column dataField="TotalPrice"></dxi-column>
+        </dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="TotalPrice"></dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->
@@ -213,11 +213,11 @@ To perform asynchronous operations in the **setCellValue** function, return a pr
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxi-column
+        <dxi-{widget-name}-column
             dataField="State"
             [setCellValue]="setCellValue">
-        </dxi-column>
-        <dxi-column dataField="Tax"></dxi-column>
+        </dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="Tax"></dxi-{widget-name}-column>
         <!-- ... -->
     </dx-{widget-name}>
 

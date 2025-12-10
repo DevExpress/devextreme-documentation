@@ -25,9 +25,9 @@ Tooltips can be invoked programmatically by calling a [Node](/api-reference/10%2
     <!--HTML--><dx-sankey ...
         (onLinkClick)="sankey_onLinkClick($event)"
         (onLinkHoverChanged)="sankey_onLinkHoverChanged($event)">
-        <dxo-tooltip
+        <dxo-sankey-tooltip
             [enabled]="false">
-        </dxo-tooltip>
+        </dxo-sankey-tooltip>
     </dx-sankey>
 
     <!--TypeScript-->

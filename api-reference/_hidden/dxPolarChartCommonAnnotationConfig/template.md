@@ -44,10 +44,10 @@ default: undefined
 
     <!-- tab: app.component.html -->
     <dx-polar-chart ... >
-        <dxi-annotation ...
+        <dxi-polar-chart-annotation ...
             type="custom"
             template="custom-annotation">
-        </dxi-annotation>
+        </dxi-polar-chart-annotation>
         <svg *dxTemplate="let annotation of 'custom-annotation'">
             <!-- Declare custom SVG markup here -->
         </svg>

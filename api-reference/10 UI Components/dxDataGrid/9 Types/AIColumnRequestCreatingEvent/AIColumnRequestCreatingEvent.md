@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The argument type in the [aIColumnRequestCreating]({basewidgetpath}/Events/#aIColumnRequestCreating) event.
 
 ---
 <!-- Description goes here -->

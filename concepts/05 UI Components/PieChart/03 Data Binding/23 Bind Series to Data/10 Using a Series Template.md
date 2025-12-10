@@ -30,13 +30,13 @@ After that, use the **seriesTemplate**.[nameField](/api-reference/10%20UI%20Comp
 ##### Angular
 
     <!--HTML--><dx-pie-chart [dataSource]="fruitProduction">
-        <dxo-common-series-settings
+        <dxo-pie-chart-common-series-settings
             argumentField="fruit"
             valueField="produced">
-        </dxo-common-series-settings>
-        <dxo-series-template
+        </dxo-pie-chart-common-series-settings>
+        <dxo-pie-chart-series-template
             nameField="year">
-        </dxo-series-template>
+        </dxo-pie-chart-series-template>
     </dx-pie-chart>
 
     <!--TypeScript-->
@@ -169,14 +169,14 @@ If you need to change properties of a particular series, return an [object with 
 ##### Angular
 
     <!--HTML--><dx-pie-chart [dataSource]="fruitProduction">
-        <dxo-common-series-settings
+        <dxo-pie-chart-common-series-settings
             argumentField="fruit"
             valueField="produced">
-        </dxo-common-series-settings>
-        <dxo-series-template
+        </dxo-pie-chart-common-series-settings>
+        <dxo-pie-chart-series-template
             nameField="year"
             [customizeSeries]="customizeSeries">
-        </dxo-series-template>
+        </dxo-pie-chart-series-template>
     </dx-pie-chart>
 
     <!--TypeScript-->

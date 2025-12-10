@@ -37,11 +37,11 @@ dxPolarChartSeriesTypes.linepolarseries,dxPolarChartSeriesTypes.areapolarseries,
 
     <!-- tab: app.component.html -->
     <dx-polar-chart ... >
-        <dxi-series ... >
-            <dxo-point
+        <dxi-polar-chart-series ... >
+            <dxo-polar-chart-point
                 [color]="fill"
-            ></dxo-point>
-        </dxi-series>
+            ></dxo-polar-chart-point>
+        </dxi-polar-chart-series>
     </dx-polar-chart>
 
     <!-- tab: app.component.ts -->

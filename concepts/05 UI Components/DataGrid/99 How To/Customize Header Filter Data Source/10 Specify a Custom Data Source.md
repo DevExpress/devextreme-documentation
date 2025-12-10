@@ -37,11 +37,11 @@ The following code shows how to specify a custom data source:
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxi-column>
-            <dxo-header-filter
+        <dxi-{widget-name}-column>
+            <dxo-{widget-name}-header-filter
                 [dataSource]="headerFilterData">
-            </dxo-header-filter>
-        </dxi-column>
+            </dxo-{widget-name}-header-filter>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

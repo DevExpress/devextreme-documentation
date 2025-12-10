@@ -37,14 +37,14 @@ If a data field provides values of one data type, but the UI component should ca
     <!--HTML-->
     <dx-{widget-name} ...
         [dataSource]="employees">
-        <dxi-column
+        <dxi-{widget-name}-column
             dataField="ID"
             dataType="number">
-        </dxi-column>
-        <dxi-column 
+        </dxi-{widget-name}-column>
+        <dxi-{widget-name}-column 
             dataField="hireDate"
             dataType="date">
-        </dxi-column>
+        </dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!--TypeScript-->

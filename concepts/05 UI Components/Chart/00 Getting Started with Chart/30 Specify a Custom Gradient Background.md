@@ -31,12 +31,12 @@ You can customize the appearance of Chart elements. To configure a background gr
 
     <!-- tab: app.component.html -->
     <dx-chart [dataSource]="chartData" >
-        <dxo-common-pane-settings>
-            <dxo-background-color
+        <dxo-chart-common-pane-settings>
+            <dxo-chart-background-color
                 base="#ffffff"
                 [fillId]="chartGradient"
-            ></dxo-background-color>
-        </dxo-common-pane-settings>
+            ></dxo-chart-background-color>
+        </dxo-chart-common-pane-settings>
     </dx-chart>
 
     <!-- tab: app.component.ts -->

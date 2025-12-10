@@ -24,8 +24,8 @@ Declare several objects in the [valueAxis](/api-reference/10%20UI%20Components/d
     ##### Angular
 
         <!--HTML--><dx-chart ... >
-            <dxi-value-axis name="absoluteAxis"></dxi-value-axis>
-            <dxi-value-axis name="percentageAxis"></dxi-value-axis>
+            <dxi-chart-value-axis name="absoluteAxis"></dxi-chart-value-axis>
+            <dxi-chart-value-axis name="percentageAxis"></dxi-chart-value-axis>
         </dx-chart>
 
         <!--TypeScript-->
@@ -116,11 +116,11 @@ Bind each series to a value axis using the [axis](/api-reference/10%20UI%20Compo
 
         <!--HTML--><dx-chart ... >
             ...
-            <dxi-series axis="percentageAxis"></dxi-series>
-            <dxi-series axis="percentageAxis"></dxi-series>
-            <dxi-series>
+            <dxi-chart-series axis="percentageAxis"></dxi-chart-series>
+            <dxi-chart-series axis="percentageAxis"></dxi-chart-series>
+            <dxi-chart-series>
                 <!-- This series will be automatically bound to the 'absoluteAxis' -->
-            </dxi-series>
+            </dxi-chart-series>
         </dx-chart>
 
         <!--TypeScript-->
@@ -217,15 +217,15 @@ All value axes in the Chart are synchronized by default, but you can explicitly 
 
     <!--HTML--><dx-chart ... >
         ...
-        <dxi-value-axis
+        <dxi-chart-value-axis
             name="absoluteAxis"
             [synchronizedValue]="0">
-        </dxi-value-axis>
-        <dxi-value-axis
+        </dxi-chart-value-axis>
+        <dxi-chart-value-axis
             name="percentageAxis"
             [synchronizedValue]="0"
             [multipleAxesSpacing]="10">
-        </dxi-value-axis>
+        </dxi-chart-value-axis>
     </dx-chart>
 
     <!--TypeScript-->

@@ -55,9 +55,9 @@ The following code allows a user to delete only odd data rows:
 
     <!--HTML-->
     <dx-data-grid ... >
-        <dxo-editing
+        <dxo-data-grid-editing
             [allowDeleting]="allowDeleting">
-        </dxo-editing>
+        </dxo-data-grid-editing>
     </dx-data-grid>
 
 ##### Vue

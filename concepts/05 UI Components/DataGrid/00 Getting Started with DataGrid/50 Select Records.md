@@ -51,7 +51,7 @@ You can obtain the selected record's data in the [onSelectionChanged](/api-refer
         <dx-data-grid ...
             (onSelectionChanged)="selectEmployee($event)">
             <!-- ... -->
-            <dxo-selection mode="single"></dxo-selection>
+            <dxo-data-grid-selection mode="single"></dxo-data-grid-selection>
         </dx-data-grid>
         <p id="selected-employee" *ngIf="selectedEmployee">
             Selected employee: {{ selectedEmployee.FullName }}

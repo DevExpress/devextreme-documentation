@@ -41,8 +41,8 @@ The following example adds a gradient to all series in a PieChart:
 
     <!-- tab: app.component.html -->
     <dx-polar-chart ... >
-        <dxo-common-series-settings [color]="seriesColor">
-        </dxo-common-series-settings>
+        <dxo-polar-chart-common-series-settings [color]="seriesColor">
+        </dxo-polar-chart-common-series-settings>
     </dx-polar-chart>
 
     <!-- tab: app.component.ts -->

@@ -88,36 +88,36 @@ The following code specifies `locateInMenu="auto"` for the **About** button and 
         [width]="500"
     >
         <!-- ... -->
-        <dxi-item 
+        <dxi-toolbar-item 
             location="after" 
             widget="dxButton"
             locateInMenu="auto"
             [options]="aboutButtonOptions"
         >
-        </dxi-item>
+        </dxi-toolbar-item>
         <!-- ... -->
-        <dxi-item 
+        <dxi-toolbar-item 
             location="after"
             locateInMenu="always" 
         >
             <div *dxTemplate>
                 <div id="greeting">Hi <b>User</b>!</div>
             </div>
-        </dxi-item>
-        <dxi-item 
+        </dxi-toolbar-item>
+        <dxi-toolbar-item 
             location="after" 
             widget="dxButton"
             locateInMenu="always"
             [options]="profileButtonOptions"
         >
-        </dxi-item>
-        <dxi-item 
+        </dxi-toolbar-item>
+        <dxi-toolbar-item 
             location="after" 
             widget="dxButton"
             locateInMenu="always"
             [options]="settingsButtonOptions"
         >
-        </dxi-item>
+        </dxi-toolbar-item>
     </dx-toolbar>
 
     <!-- tab: app.component.ts -->

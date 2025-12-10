@@ -33,13 +33,13 @@ A user can insert variables in the text and remove them, but never modify them.
     <!--HTML-->
     <dx-html-editor>
         <!-- Adds a toolbar item that allows users to insert variables -->
-        <dxo-toolbar>
-            <dxi-item name="variable"></dxi-item>
-        </dxo-toolbar>
-        <dxo-variables
+        <dxo-html-editor-toolbar>
+            <dxi-html-editor-item name="variable"></dxi-html-editor-item>
+        </dxo-html-editor-toolbar>
+        <dxo-html-editor-variables
             [dataSource]="[ 'FirstName', 'LastName', 'Company' ]"
             [escapeChar]="[ '{', '}' ]">
-        </dxo-variables>
+        </dxo-html-editor-variables>
     </dx-html-editor>
 
     <!--TypeScript-->

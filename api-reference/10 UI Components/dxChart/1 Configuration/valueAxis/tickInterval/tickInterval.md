@@ -26,9 +26,9 @@ If the axis displays numbers, set the **tickInterval** to a number. This number 
 ##### Angular
 
     <!--HTML--><dx-chart ... >
-        <dxi-value-axis ... >
-            <dxo-tick-interval [days]="5"></dxo-tick-interval>
-        </dxi-value-axis>
+        <dxi-chart-value-axis ... >
+            <dxo-chart-tick-interval [days]="5"></dxo-chart-tick-interval>
+        </dxi-chart-value-axis>
     </dx-chart>
 
     <!--TypeScript-->

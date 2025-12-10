@@ -55,11 +55,11 @@ The following example adds a custom item to the component. Note that Angular use
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxi-item ... >
+        <dxi-{widget-name}-item ... >
             <div *dxTemplate>
                 <div>Custom Item</div>
             </div>
-        </dxi-item>
+        </dxi-{widget-name}-item>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

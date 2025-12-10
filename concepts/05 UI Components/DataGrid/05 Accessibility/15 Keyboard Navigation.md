@@ -168,3 +168,5 @@ DataGrid offers different keyboard controls depending on which action users want
 </table>
 
 You can override these shortcuts or create your own. Refer to the following help topic for more information: [Custom Keyboard Navigation](/concepts/05%20UI%20Components/DataGrid/70%20Custom%20Keyboard%20Navigation/00%20Custom%20Keyboard%20Navigation.md '/Documentation/Guide/UI_Components/DataGrid/Custom_Keyboard_Navigation/').
+
+[note] On macOS, Cmd replaces the Ctrl key.

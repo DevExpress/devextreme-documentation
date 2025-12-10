@@ -1,8 +1,8 @@
 TreeList offers different keyboard controls depending on what action users wish to perform.
 
-[note] On macOS, Cmd replaces the Ctrl key. 
-
 ### Navigation
+
+[note] When **scrolling**.[columnRenderingMode](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/scrolling/#columnRenderingMode) is *"virtual"*, the [filter row](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/filterRow/) does not support keyboard navigation.
 
 <table class="dx-table full-width">
     <tr>
@@ -131,3 +131,5 @@ TreeList offers different keyboard controls depending on what action users wish 
 </table>
 
 You can override these shortcuts or create your own shortcuts using the [onKeyDown](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/onKeyDown.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onKeyDown') event handler.
+
+[note] On macOS, Cmd replaces the Ctrl key.

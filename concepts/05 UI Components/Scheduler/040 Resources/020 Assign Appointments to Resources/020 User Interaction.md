@@ -1,6 +1,11 @@
 The Scheduler shows all available resource kinds in the appointment edit form. By default, the UI component allows a user to assign only a single resource of one kind. 
 
-![Scheduler Appointment Resources](/images/UiWidgets/Scheduler_Resources_SelectBox.png)
+#include full-width-image-container with {
+   src: "/images/UiWidgets/Scheduler_Resources_SelectBox.png",
+   alt: "Scheduler appointment resources",
+   minWidth: "360px",
+   width: "80vw"
+}
 
 To allow multiple resources, assign **true** to the [allowMultiple](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/resources/allowMultiple.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/#allowMultiple') property of the corresponding resource kind. 
 
@@ -10,7 +15,12 @@ To allow multiple resources, assign **true** to the [allowMultiple](/api-referen
         { fieldExpr: 'teacherId', dataSource: teachersDataSource, allowMultiple: true }
     ];
 
-![Scheduler Appointment Resources](/images/UiWidgets/Scheduler_Resources_Details.png)
+#include full-width-image-container with {
+   src: "/images/UiWidgets/Scheduler_Resources_Details.png",
+   alt: "Scheduler appointment resources",
+   minWidth: "360px",
+   width: "80vw"
+}
 
 #####See Also#####
 - [Scheduler - Group Appointments by Resources](/concepts/05%20UI%20Components/Scheduler/040%20Resources/030%20Group%20Appointments%20by%20Resources.md '/Documentation/Guide/UI_Components/Scheduler/Resources/Group_Appointments_by_Resources/')

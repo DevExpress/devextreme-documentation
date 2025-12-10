@@ -24,7 +24,12 @@ The DataGrid component meets a variety of <a href="https://www.access-board.gov/
     <tr>
         <td>11.5.2.12 Execution of available actions</td>
         <td>2.1.1 Keyboard (Level A)</td>
-        <td>Keyboard navigation is not supported for ColumnChooser items in 'drag' mode.</td>
+        <td>
+            <ul>
+                <li>ColumnChooser items in 'drag' mode do not support keyboard navigation.</li>
+                <li>Column resizing does not support keyboard actions (when <a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#allowColumnResizing">allowColumnResizing</a> is enabled).</li>
+            </ul>
+        </td>
     </tr>
     <tr>
         <td>-</td>
@@ -45,7 +50,12 @@ The DataGrid component meets a variety of <a href="https://www.access-board.gov/
     <tr>
         <td>-</td>
         <td>2.5.8 Target Size (Minimum) (Level AA 2.2 only)</td>
-        <td>Command buttons and icons.</td>
+        <td>
+            <ul>
+                <li>Command buttons and icons.</li>
+                <li>Column separators when <a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#allowColumnResizing">allowColumnResizing</a> is enabled.</li>
+            </ul>
+        </td>
     </tr>
     <tr>
         <td>11.5.2.15 Change notification </td>

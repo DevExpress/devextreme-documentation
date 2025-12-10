@@ -1,4 +1,14 @@
-A user can use the following keys to interact with the DataGrid component: 
+DataGrid offers different keyboard controls depending on which action users want to perform.
+
+[note]
+
+- The following DataGrid features do not support the **Ctrl+Home** and **Ctrl+End** shortcuts:
+    - Group summaries
+    - Grouped data
+    - Expanded master-detail interfaces
+- When **scrolling**.[columnRenderingMode](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#columnRenderingMode) is *"virtual"*, the [filter row](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/) does not support keyboard navigation.
+
+[/note]
 
 <table class="dx-table full-width">
     <tr>
@@ -104,3 +114,5 @@ A user can use the following keys to interact with the DataGrid component:
 </div>
 
 You can override these shortcuts or create your own. Refer to the following help topic for more information: [Custom Keyboard Navigation](/concepts/05%20UI%20Components/DataGrid/70%20Custom%20Keyboard%20Navigation/00%20Custom%20Keyboard%20Navigation.md '/Documentation/Guide/UI_Components/DataGrid/Custom_Keyboard_Navigation/').
+
+[note] On macOS, Cmd replaces the Ctrl key.

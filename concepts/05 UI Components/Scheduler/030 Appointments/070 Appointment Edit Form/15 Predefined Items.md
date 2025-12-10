@@ -76,7 +76,7 @@ If no resource has an icon assigned, `resourcesGroup` contains the following ite
    minWidth: "412px"
 }
 
-Below is a list of images that demonstrate predefined items within each available group.
+The images below illustrate predefined items within each available group.
 
 ### General Appointment Details
 

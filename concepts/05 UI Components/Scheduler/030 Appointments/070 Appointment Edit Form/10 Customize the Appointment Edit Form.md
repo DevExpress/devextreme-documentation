@@ -70,7 +70,7 @@ To customize individual appointment edit form items, implement the [onAppointmen
 
 [note] Specify full item paths described in [Predefined Items](/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Edit_Form/#Predefined_Items) as the **id** parameter in [itemOption()](/Documentation/ApiReference/UI_Components/dxForm/Methods/#itemOptionid).
 
-To customize the appointment edit form further, specify the **editing**.[form](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/form/) and **editing**.[popup](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/#popup) configuration objects. These objects configure the appointment edit form's Popup and Form components. The following code snippet implements an increased width for the Popup and the "static" label mode for the Form:
+To customize the appointment edit form further, specify the **editing**.[form](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/form/) and **editing**.[popup](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/#popup) configuration objects. These objects configure the appointment edit form's Popup and Form components. The following code snippet increases the width of the Popup and sets the "static" label mode for the Form:
 
 ---
 

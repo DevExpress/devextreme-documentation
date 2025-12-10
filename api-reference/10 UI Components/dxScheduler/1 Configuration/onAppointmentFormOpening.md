@@ -14,7 +14,7 @@ Information about the event.
 Data of the appointment edit form's target appointment.
 
 ##### field(e.cancel): Boolean
-Allows you to cancel appointment edit form opening.
+Allows you to cancel opening the appointment edit form.
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.

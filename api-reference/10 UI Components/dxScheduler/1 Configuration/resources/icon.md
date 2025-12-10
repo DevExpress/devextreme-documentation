@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies a resource [icon](/Documentation/Guide/Themes_and_Styles/Icons/#Built-In_Icon_Library).
 
 ---
-<!-- Description goes here -->
+Scheduler displays resource icons in the appointment edit form.

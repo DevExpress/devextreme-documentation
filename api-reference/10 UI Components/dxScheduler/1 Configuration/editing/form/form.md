@@ -4,7 +4,7 @@ type: AppointmentFormProperties
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the [Form](/Documentation/Guide/UI_Components/Form/Overview/) component within the Scheduler's appointment edit form.
 
 ---
-<!-- Description goes here -->
+In addition to **editing**.**form** properties, you can specify DevExtreme [Form](/Documentation/Guide/UI_Components/Form/Overview/) configuration options to customize the appointment edit form.

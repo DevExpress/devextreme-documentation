@@ -5,7 +5,7 @@ default: true
 ---
 ---
 ##### shortDescription
-Specifies which editing operations a user can perform on appointments.
+Configures appointment editing options, such as available operations.
 
 ---
 

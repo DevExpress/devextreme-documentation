@@ -91,3 +91,7 @@ The following example reverts these options:
 ---
 
 [/note]
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Chat/FileAttachments/"
+}

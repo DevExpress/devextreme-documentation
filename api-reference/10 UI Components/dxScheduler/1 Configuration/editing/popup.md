@@ -8,3 +8,7 @@ Configures the [Popup](/Documentation/Guide/UI_Components/Popup/Overview/) compo
 
 ---
 Specify DevExtreme [Popup](/Documentation/Guide/UI_Components/Popup/Overview/) configuration options to customize the appointment edit form.
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Templates/"
+}

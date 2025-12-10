@@ -21,3 +21,7 @@ The UI component's container.
 
 ---
 <!-- Description goes here -->
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/SpeechToText/Overview/"
+}

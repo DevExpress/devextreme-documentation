@@ -13,7 +13,7 @@ To customize overflow indicators, set the [appointmentCollectorTemplate](/api-re
 
 #####See Also#####
 - [Customize Appointment](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/050%20Customize%20Appointment.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment/')
-- [Appointment Edit Form](/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Edit_Form/)
+- [Appointment Edit Form](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/070%20Appointment%20Edit%20Form/00%20Appointment%20Edit%20Form.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Edit_Form/')
 - [Customize Appointment Tooltip](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/060%20Customize%20Appointment%20Tooltip.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment_Tooltip/')
 
 [tags]scheduler, appointment collector, overflow indicator, customize tooltip, hidden appointments 

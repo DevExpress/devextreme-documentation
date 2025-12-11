@@ -349,7 +349,7 @@ In addition, you can use a 3rd-party template engine to customize the UI compone
 
 #####See Also#####
 - [Scheduler - Customize Appointment Tooltip](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/060%20Customize%20Appointment%20Tooltip.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment_Tooltip/')
-- [Scheduler - Appointment Edit Form](/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Edit_Form/)
+- [Scheduler - Appointment Edit Form](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/070%20Appointment%20Edit%20Form/00%20Appointment%20Edit%20Form.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Edit_Form/')
 - [Scheduler - Customize Resource Headers](/concepts/05%20UI%20Components/Scheduler/040%20Resources/040%20Customize%20Resource%20Headers.md '/Documentation/Guide/UI_Components/Scheduler/Resources/Customize_Resource_Headers/')
 - [Scheduler - Customize Timetable](/concepts/05%20UI%20Components/Scheduler/050%20Timetable.md '/Documentation/Guide/UI_Components/Scheduler/Timetable/')
 - [Scheduler API Reference](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')

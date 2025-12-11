@@ -8,7 +8,7 @@ default: 'main'
 Configures icon visibility within the Appointment Edit Form.
 
 ---
-The Scheduler's Appointment Edit Form consists of two parts: a general information group and a recurrence settings group. Implement [AppointmentFormIconsShowMode](/Documentation/ApiReference/UI_Components/dxScheduler/Types/#AppointmentFormIconsShowMode) values to configure icon visibility as follows:
+The Scheduler's Appointment Edit Form consists of two parts: a general information group and a recurrence settings group. Implement [AppointmentFormIconsShowMode](/api-reference/10%20UI%20Components/dxScheduler/9%20Types/AppointmentFormIconsShowMode.md '/Documentation/ApiReference/UI_Components/dxScheduler/Types/#AppointmentFormIconsShowMode') values to configure icon visibility as follows:
 
 - *"both"*    
 Icons are visible in both general information and recurrence settings groups.

@@ -1,4 +1,4 @@
-The appointment edit form includes multiple predefined items. To integrate these, assign predefined item names to [SimpleItem](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/)/[GroupItem](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/) objects in the **editing**.**form**.[items](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/form/#items) array. You can customize predefined items in their **SimpleItem**/**GroupItem** objects. To integrate predefined items without customization, add item names as strings.
+The appointment edit form includes multiple predefined items. To integrate these, assign predefined item names to [SimpleItem](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/')/[GroupItem](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/GroupItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/') objects in the **editing**.**form**.[items](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/editing/form/items.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/form/#items') array. You can customize predefined items in their **SimpleItem**/**GroupItem** objects. To integrate predefined items without customization, add item names as strings.
 
 The following predefined items are available:
 
@@ -51,7 +51,7 @@ The following predefined items are available:
                 ├─ recurrenceEndUntilEditor
                 └─ recurrenceEndCountEditor
 
-Items within `resourcesGroup` depend on resource [fieldExpr](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/#fieldExpr) and [icon](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/#icon) properties. Scheduler uses resource field expressions (for instance, "roomId") in item names as follows:
+Items within `resourcesGroup` depend on resource [fieldExpr](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/resources/fieldExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/#fieldExpr') and [icon](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/resources/icon.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/#icon') properties. Scheduler uses resource field expressions (for instance, "roomId") in item names as follows:
 
     ...
     └─ resourcesGroup

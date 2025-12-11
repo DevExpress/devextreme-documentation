@@ -6,7 +6,7 @@ DataGrid offers different keyboard controls depending on which action users want
     - Group summaries
     - Grouped data
     - Expanded master-detail interfaces
-- When **scrolling**.[columnRenderingMode](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#columnRenderingMode) is *"virtual"*, the [filter row](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/) does not support keyboard navigation.
+- When **scrolling**.[columnRenderingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/scrolling/columnRenderingMode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#columnRenderingMode') is *"virtual"*, the [filter row](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/') does not support keyboard navigation.
 
 [/note]
 

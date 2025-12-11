@@ -1,4 +1,4 @@
-Configure **editing**.**form**.[items[]](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/form/#items) to customize the appointment edit form layout. To preserve the form's switching functionality between `mainGroup` and `recurrenceGroup`, add the groups as [group items](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/) in the **items[]** root:
+Configure **editing**.**form**.[items[]](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/form/#items) to customize the appointment edit form layout. To preserve the form's switching functionality between `mainGroup` and `recurrenceGroup`, add the groups as [group items](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/GroupItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/') in the **items[]** root:
 
 ---
 
@@ -88,7 +88,7 @@ Configure **editing**.**form**.[items[]](/Documentation/ApiReference/UI_Componen
 
 ---
 
-To add a resource field editor to **items[]**, use the resource [fieldExpr](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/#fieldExpr) in an item name as follows:
+To add a resource field editor to **items[]**, use the resource [fieldExpr](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/resources/fieldExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/resources/#fieldExpr') in an item name as follows:
 
 ---
 

@@ -9,7 +9,7 @@ references: AppointmentFormProperties.iconsShowMode
 Specifies icon visibility within the Appointment Edit Form.
 
 ---
-The Scheduler Appointment Edit Form consists of two parts: a general information group and a recurrence settings group. Implement **AppointmentFormIconsShowMode** values in **editing**.**form**.[iconsShowMode](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/form/#iconsShowMode) to configure icon visibility as follows:
+The Scheduler Appointment Edit Form consists of two parts: a general information group and a recurrence settings group. Implement **AppointmentFormIconsShowMode** values in **editing**.**form**.[iconsShowMode](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/editing/form/iconsShowMode.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/form/#iconsShowMode') to configure icon visibility as follows:
 
 - *"both"*    
 Display icons in both general information and recurrence settings groups.

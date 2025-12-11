@@ -1,4 +1,4 @@
-To customize individual appointment edit form items, implement the [onAppointmentFormOpening](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentFormOpening) handler. The following code snippet uses **AppointmentFormOpeningEvent**.[form](/Documentation/ApiReference/UI_Components/dxScheduler/Types/AppointmentFormOpeningEvent/#form) to disable the `subjectEditor` input and enable [isRequired](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#isRequired) for the `descriptionEditor` item:
+To customize individual appointment edit form items, implement the [onAppointmentFormOpening](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/onAppointmentFormOpening.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentFormOpening') handler. The following code snippet uses **AppointmentFormOpeningEvent**.[form](/api-reference/10%20UI%20Components/dxScheduler/9%20Types/AppointmentFormOpeningEvent/form.md '/Documentation/ApiReference/UI_Components/dxScheduler/Types/AppointmentFormOpeningEvent/#form') to disable the `subjectEditor` input and enable [isRequired](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/isRequired.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#isRequired') for the `descriptionEditor` item:
 
 ---
 
@@ -68,9 +68,9 @@ To customize individual appointment edit form items, implement the [onAppointmen
 
 ---
 
-[note] Specify full item paths described in [Predefined Items](/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Edit_Form/#Predefined_Items) as the **id** parameter in [itemOption()](/Documentation/ApiReference/UI_Components/dxForm/Methods/#itemOptionid).
+[note] Specify full item paths described in [Predefined Items](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/070%20Appointment%20Edit%20Form/15%20Predefined%20Items.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Edit_Form/#Predefined_Items') as the **id** parameter in [itemOption()](/api-reference/10%20UI%20Components/dxForm/3%20Methods/itemOption(id).md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#itemOptionid').
 
-To customize the appointment edit form further, specify the **editing**.[form](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/form/) and **editing**.[popup](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/#popup) configuration objects. These objects configure the appointment edit form's Popup and Form components. The following code snippet increases the width of the Popup and sets the "static" label mode for the Form:
+To customize the appointment edit form further, specify the **editing**.[form](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/editing/form '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/form/') and **editing**.[popup](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/editing/popup.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/#popup') configuration objects. These objects configure the appointment edit form's Popup and Form components. The following code snippet increases the width of the Popup and sets the "static" label mode for the Form:
 
 ---
 

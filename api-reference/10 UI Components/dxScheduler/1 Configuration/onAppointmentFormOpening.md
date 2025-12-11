@@ -30,7 +30,7 @@ Instance of the appointment edit form's Popup component.
 
 ---
 
-To customize individual appointment edit form items, implement this handler. The following code snippet uses **AppointmentFormOpeningEvent**.[form](/Documentation/ApiReference/UI_Components/dxScheduler/Types/AppointmentFormOpeningEvent/#form) to disable the `subjectEditor` input and enable [isRequired](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#isRequired) for the `descriptionEditor` item:
+To customize individual appointment edit form items, implement this handler. The following code snippet uses **AppointmentFormOpeningEvent**.[form](/api-reference/10%20UI%20Components/dxScheduler/9%20Types/AppointmentFormOpeningEvent/form.md '/Documentation/ApiReference/UI_Components/dxScheduler/Types/AppointmentFormOpeningEvent/#form') to disable the `subjectEditor` input and enable [isRequired](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/isRequired.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#isRequired') for the `descriptionEditor` item:
 
 ---
 
@@ -100,7 +100,7 @@ To customize individual appointment edit form items, implement this handler. The
 
 ---
 
-[note] Specify full item paths described in [Appointment Edit Form - Predefined Items](/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Edit_Form/#Predefined_Items) as the **id** parameter in [itemOption()](/Documentation/ApiReference/UI_Components/dxForm/Methods/#itemOptionid).
+[note] Specify full item paths described in [Appointment Edit Form - Predefined Items](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/070%20Appointment%20Edit%20Form/15%20Predefined%20Items.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Edit_Form/#Predefined_Items') as the **id** parameter in [itemOption()](/api-reference/10%20UI%20Components/dxForm/3%20Methods/itemOption(id).md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#itemOptionid').
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-scheduler-create-custom-editing-form"
@@ -110,5 +110,5 @@ To customize individual appointment edit form items, implement this handler. The
 }
 
 #####See Also#####
-- [Scheduler - Customize the Appointment Edit Form](/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Edit_Form/#Customize_the_Appointment_Edit_Form)
+- [Scheduler - Customize the Appointment Edit Form](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/070%20Appointment%20Edit%20Form/10%20Customize%20the%20Appointment%20Edit%20Form.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Edit_Form/#Customize_the_Appointment_Edit_Form')
 - [Form - Change Properties at Runtime](/concepts/05%20UI%20Components/Form/20%20Change%20Properties%20at%20Runtime/05%20Form%20Properties.md '/Documentation/Guide/UI_Components/Form/Change_Properties_at_Runtime/Form_Properties/')

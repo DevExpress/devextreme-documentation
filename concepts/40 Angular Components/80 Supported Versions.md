@@ -1,4 +1,4 @@
-[note] DevExtreme v25.1 supports [Angular 20](https://blog.angular.dev/announcing-angular-v20-b5c9c06cf301). Tests show full compatibility with DevExtreme UI components.
+[note] DevExtreme v25.2 supports [Angular 21](https://blog.angular.dev/announcing-angular-v21-57946c34f14b). Tests show full compatibility with DevExtreme UI components.
 
 <table class="dx-table">
     <tr>
@@ -6,8 +6,12 @@
         <th>Angular</th>
     </tr>
     <tr>
-        <td>v25.1.x</td>
+        <td>v25.2.x</td>
         <td>angular_version_25_2</td>
+    </tr>
+    <tr>
+        <td>v25.1.x</td>
+        <td>angular_version_25_1</td>
     </tr>
     <tr>
         <td>v24.2.x</td>

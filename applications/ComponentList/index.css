@@ -1,3 +1,7 @@
+body {
+  background-color: light-dark(#ffffff, #2a2a2a) !important;
+}
+
 .components .components-title,
 .components .components-subtitle {
   margin: 0;

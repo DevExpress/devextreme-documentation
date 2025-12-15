@@ -1,7 +1,18 @@
-let iframeSheets = document.styleSheets;
+const iframeSheets = document.styleSheets;
 
-iframeSheets[4].disabled = true;
+Object.entries(iframeSheets).forEach(([key, sheet]) => {
+    if (sheet.href?.includes('fluent')) {
+        iframeSheets[key].disabled = true;
+    }
+});
 
-let parentSheets = window.parent.document.styleSheets;
+const parentSheets = window.parent.document.styleSheets;
 
-$('head').append(`<link rel="stylesheet" href="${parentSheets[parentSheets.length - 1].href}">`);
+Object.values(parentSheets).forEach(sheet => {
+    const href = sheet.href?.toLowerCase() || '';
+    const frameworks = ['jquery', 'angular', 'vue', 'react'];
+
+    if (frameworks.some(fw => href.includes(fw))) {
+        $('head').append(`<link rel="stylesheet" href="${sheet.href}">`);
+    }
+});

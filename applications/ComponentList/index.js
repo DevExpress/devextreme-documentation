@@ -13,6 +13,9 @@ Object.values(parentSheets).forEach(sheet => {
     const frameworks = ['jquery', 'angular', 'vue', 'react'];
 
     if (frameworks.some(fw => href.includes(fw))) {
-        $('head').append(`<link rel="stylesheet" href="${sheet.href}">`);
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = sheet.href;
+        document.head.appendChild(link);
     }
 });

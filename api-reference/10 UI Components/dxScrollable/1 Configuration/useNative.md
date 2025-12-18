@@ -11,4 +11,4 @@ Specifies whether the component uses native or simulated scrolling.
 
 When this property is set to `true`, ScrollView implements the scrolling logic of the browser. When disabled, the component implements custom scrolling logic that does not change across browsers and devices.
 
-[note] When **useNative** is enabled and the component contains no focusable elements, [Axe](https://www.deque.com/axe/) reports a [false positive issue for scrollable-region-focusable](https://github.com/dequelabs/axe-core/issues/2822). This does not affect the accessibility levels of your application. To eliminate the issue, you can add the `tabindex="0"` attribute to the ScrollView content container.
+[note] When **useNative** is enabled and the component contains no focusable elements, [Axe](https://www.deque.com/axe/) reports a [false positive issue for scrollable-region-focusable](https://github.com/dequelabs/axe-core/issues/2822). This does not affect the accessibility levels of your application. To resolve the issue, you can add the `tabindex="0"` attribute to the ScrollView content container.

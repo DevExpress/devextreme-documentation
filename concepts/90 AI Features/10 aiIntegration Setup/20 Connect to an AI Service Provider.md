@@ -11,17 +11,16 @@ To use [aiIntegration]() within your project, import the type as follows:
         <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/js/dx.ai-integration.js"></script>
     </head>
 
-To connect to an AI service provider using REST APIs, implement the [fetch API]() to define an AI request in the [sendRequest]() function within **aiIntegration**.**aiProvider**. Implement the **fetch** promise within the [Request]() object returned by **sendRequest** as follows:
+To connect to an AI service provider using REST APIs, implement the [fetch API]() to define an AI request in the [sendRequest]() function within **aiIntegration**.**aiProvider**. Use the **fetch** promise within the [Request]() object returned by **sendRequest** as follows:
 
     <!-- tab: index.js -->
     const aiIntegration = new DevExpress.aiIntegration({
         sendRequest(params) {
             const promise = fetch('https://example.org/post', {
                 method: 'POST',
-                headers: { ... }, // Add custom headers, including API authentication headers, here
+                headers: { ... }, // Add custom headers here, including API authentication headers
                 body: JSON.stringify(params.prompt),
-            })
-                .then(async (response) => {
+            }).then(async (response) => {
                     const result = await response.json();
 
                     return result.output || '';

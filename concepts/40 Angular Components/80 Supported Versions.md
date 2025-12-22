@@ -7,7 +7,7 @@
     </tr>
     <tr>
         <td>v25.2.x</td>
-        <td>angular_version_25_2</td>
+        <td>angular_version_26_1</td>
     </tr>
     <tr>
         <td>v25.1.x</td>

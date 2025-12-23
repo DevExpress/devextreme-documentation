@@ -12,7 +12,7 @@ When binding Chart to PivotGrid, specify how to form Chart series from PivotGrid
 
 In the example below, toggle the check box to update the **inverted** field. When this field is `false`, values of the *"2014"* column field become the arguments, while values of the *"Europe"* row field form series. When **inverted** is `true`, the result is reversed.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/25_2/DataVisualization/Guides/GridChartIntegration/inverted.html, /Content/Applications/25_2/DataVisualization/Guides/GridChartIntegration/inverted.js"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/26_1/DataVisualization/Guides/GridChartIntegration/inverted.html, /Content/Applications/26_1/DataVisualization/Guides/GridChartIntegration/inverted.js"></div>
 
 When PivotGrid contains multiple data fields, they can become sets of series or sets of arguments. To specify this behavior, use the **putDataFieldsInto** field and choose *"series"* (default) or *"args"*.
 
@@ -30,7 +30,7 @@ Some data fields may alternate on the Chart plot. To control this behavior, set 
 
 Below, use the controls under the UI components to change the **putDataFieldsInto** and **alternateDataFields** fields. Observe how the "Total" and "Avg" data fields depend on these values.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/25_2/DataVisualization/Guides/GridChartIntegration/dataFieldsLayout.html, /Content/Applications/25_2/DataVisualization/Guides/GridChartIntegration/dataFieldsLayout.js"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/26_1/DataVisualization/Guides/GridChartIntegration/dataFieldsLayout.html, /Content/Applications/26_1/DataVisualization/Guides/GridChartIntegration/dataFieldsLayout.js"></div>
 
 To process data in a specific way, assign a callback function to the **processCell** field. This function will be called for each data cell of PivotGrid.
 

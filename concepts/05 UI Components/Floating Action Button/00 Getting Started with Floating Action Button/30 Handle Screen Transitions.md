@@ -1,6 +1,6 @@
 In the following example, each screen has a distinct FAB, as each FAB contains only actions for that screen. The DevExtreme [TabPanel](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TabPanel/Overview/) emulates screen switching:
 
-<div class="simulator-desktop-container" style="height:362px" data-view="/Content/Applications/25_2/GettingStartedWith/FloatingActionButton/HandleScreenTransitions/index.html, /Content/Applications/25_2/GettingStartedWith/FloatingActionButton/HandleScreenTransitions/index.js, /Content/Applications/25_2/GettingStartedWith/FloatingActionButton/HandleScreenTransitions/index.css"></div>
+<div class="simulator-desktop-container" style="height:362px" data-view="/Content/Applications/26_1/GettingStartedWith/FloatingActionButton/HandleScreenTransitions/index.html, /Content/Applications/26_1/GettingStartedWith/FloatingActionButton/HandleScreenTransitions/index.js, /Content/Applications/26_1/GettingStartedWith/FloatingActionButton/HandleScreenTransitions/index.css"></div>
 
 The following code includes the TabPanel configuration and an empty `switchSDA` function. Implement `switchSDA` to control action visibility:
 
@@ -38,8 +38,8 @@ The following code includes the TabPanel configuration and an empty `switchSDA` 
             <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
             <!-- DevExtreme resources -->
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_25_2/css/dx.material.blue.light.css">
-            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_25_2/js/dx.all.js"></script>
+            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_26_1/css/dx.material.blue.light.css">
+            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_26_1/js/dx.all.js"></script>
 
             <link rel="stylesheet" href="index.css">
             <script type="text/javascript" src="index.js"></script>

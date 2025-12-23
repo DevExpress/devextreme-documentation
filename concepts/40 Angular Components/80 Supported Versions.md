@@ -1,9 +1,13 @@
-[note] DevExtreme v25.2 supports [Angular 21](https://blog.angular.dev/announcing-angular-v21-57946c34f14b). Tests show full compatibility with DevExtreme UI components.
+[note] DevExtreme v26.1 supports [Angular 21](https://blog.angular.dev/announcing-angular-v21-57946c34f14b). Tests show full compatibility with DevExtreme UI components.
 
 <table class="dx-table">
     <tr>
         <th>DevExtreme</th>
         <th>Angular</th>
+    </tr>
+    <tr>
+        <td>v26.1.x</td>
+        <td>angular_version_26_1</td>
     </tr>
     <tr>
         <td>v25.2.x</td>

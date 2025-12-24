@@ -1,4 +1,6 @@
-A user can use the following keys to interact with the TreeView component: 
+TreeView offers different keyboard controls depending on the action users want to perform.
+
+### Navigation
 
 <table class="dx-table">
     <tr>
@@ -33,21 +35,30 @@ A user can use the following keys to interact with the TreeView component:
         <td>Minus Sign (-)</td>
         <td>Collapses all nodes (if <a href="/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#expandAllEnabled">expandAllEnabled</a> is <code>true</code>).</td>
     </tr>
+</table>
+
+### Selection
+
+<table class="dx-table">
+    <tr>
+        <th>Key</th>
+        <th>Action</th>
+    </tr>
     <tr>
         <td>Enter or Space</td>
         <td>Selects the node.</td>
     </tr>
     <tr>
         <td>Shift + &uarr; / Shift + &darr;</td>
-        <td>Extends selection up/down by one node (if <a href="/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick">selectByClick</a> is <code>true</code>).</td>
+        <td>Extends selection up/down by one node (if <a href="/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectionMode">selectionMode</a> is <i>"multiple"</i> or <i>"all"</i>).</td>
     </tr>
     <tr>
         <td>Shift + Home</td>
-        <td>Extends selection up to the first node (if <a href="/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick">selectByClick</a> is <code>true</code>).</td>
+        <td>Extends selection up to the first node (if <a href="/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectionMode">selectionMode</a> is <i>"multiple"</i> or <i>"all"</i>).</td>
     </tr>
     <tr>
         <td>Shift + End</td>
-        <td>Extends selection down to the last node (if <a href="/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick">selectByClick</a> is <code>true</code>).</td>
+        <td>Extends selection down to the last node (if <a href="/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectionMode">selectionMode</a> is <i>"multiple"</i> or <i>"all"</i>).</td>
     </tr>
 </table>
 

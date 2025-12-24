@@ -10,7 +10,7 @@ A function that validates the target value.
 An object that defines validation parameters.
 
 ##### field(options.column): Object
-The column which the cell being validated belongs to. Exists only when you validate a built-in editor in [DataGrid](/api-reference/10%20UI%20Components/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid') or [TreeList](/api-reference/10%20UI%20Components/dxTreeList '/Documentation/ApiReference/UI_Components/dxTreeList').
+The column to which the cell being validated belongs. Exists only when you validate a built-in editor in [DataGrid](/api-reference/10%20UI%20Components/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid') or [TreeList](/api-reference/10%20UI%20Components/dxTreeList '/Documentation/ApiReference/UI_Components/dxTreeList').
 
 ##### field(options.data): Object
 Current row data. Exists only when you validate DataGrid or TreeList cell values.
@@ -24,8 +24,8 @@ The rule being checked.
 ##### field(options.validator): Object
 The [Validator](/api-reference/10%20UI%20Components/dxValidator '/Documentation/ApiReference/UI_Components/dxValidator') object that initiated the validation.
 
-##### field(options.value): String | Number
-The validated value.
+##### field(options.value): any
+The validated value. Note that the value type depends on the validated editor.
 
 ##### return: Boolean
 **true** if the value is valid; otherwise, **false**.

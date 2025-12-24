@@ -10,7 +10,7 @@ A function that validates the target value.
 An object that defines validation parameters.
 
 ##### field(options.column): Object
-The column which the cell being validated belongs to. Exists only when you validate a built-in editor in [DataGrid](/api-reference/10%20UI%20Components/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid') or [TreeList](/api-reference/10%20UI%20Components/dxTreeList '/Documentation/ApiReference/UI_Components/dxTreeList').
+The column to which the cell being validated belongs. Exists only when you validate a built-in editor in [DataGrid](/api-reference/10%20UI%20Components/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid') or [TreeList](/api-reference/10%20UI%20Components/dxTreeList '/Documentation/ApiReference/UI_Components/dxTreeList').
 
 ##### field(options.data): Object
 Current row data. Exists only when you validate DataGrid or TreeList cell values.

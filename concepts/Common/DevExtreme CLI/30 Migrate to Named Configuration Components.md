@@ -10,7 +10,7 @@ The following code snippet demonstrates named and generic configuration componen
 
     <!-- Generic configuration component -->
     <dx-form>
-        <dxi-form-item></dxi-form-item>
+        <dxi-item></dxi-item>
     </dx-form>
 
 [note]

@@ -27,11 +27,11 @@ A user can use the following keys to interact with the TreeView component:
     </tr>
     <tr>
         <td>Asterisk Sign (*)</td>
-        <td>Expands all nodes. Available only if <a href="/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#expandAllEnabled">expandAllEnabled</a> is set to <i>true</i>.</td>
+        <td>Expands all nodes (if <a href="/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#expandAllEnabled">expandAllEnabled</a> is <code>true</code>).</td>
     </tr>
     <tr>
         <td>Minus Sign (-)</td>
-        <td>Collapses all nodes. Available only if <a href="/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#expandAllEnabled">expandAllEnabled</a> is set to <i>true</i>.</td>
+        <td>Collapses all nodes (if <a href="/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#expandAllEnabled">expandAllEnabled</a> is <code>true</code>).</td>
     </tr>
     <tr>
         <td>Enter or Space</td>
@@ -39,22 +39,16 @@ A user can use the following keys to interact with the TreeView component:
     </tr>
     <tr>
         <td>Shift + &uarr; / Shift + &darr;</td>
-        <td>Extends selection up/down by one node.<sup>1</sup></td>
+        <td>Extends selection up/down by one node (if <a href="/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick">selectByClick</a> is <code>true</code>).</td>
     </tr>
     <tr>
         <td>Shift + Home</td>
-        <td>Extends selection up to the first node.<sup>1</sup></td>
+        <td>Extends selection up to the first node (if <a href="/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick">selectByClick</a> is <code>true</code>).</td>
     </tr>
     <tr>
         <td>Shift + End</td>
-        <td>Extends selection down to the last node.<sup>1</sup></td>
+        <td>Extends selection down to the last node (if <a href="/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#selectByClick">selectByClick</a> is <code>true</code>).</td>
     </tr>
 </table>
-
-<div class="footnotes">
-    <ol>
-        <li>If <a href="/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#showCheckBoxesMode">showCheckBoxesMode</a> is set to <i>"none"</i>, this action has no effect.</li>
-    </ol>
-</div>
 
 #include common-code-register-key-handler

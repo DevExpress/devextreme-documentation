@@ -1,5 +1,22 @@
 body {
   background-color: light-dark(#ffffff, #2a2a2a) !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+body.jQuery a {
+  color: #0E8BC1;
+}
+
+body.Angular a {
+  color: light-dark(#2190F7, #158BFF);
+}
+
+body.Vue a {
+  color: #42B883;
+}
+
+body.React a {
+  color: #09B5E1;
 }
 
 .components .components-title,

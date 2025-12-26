@@ -1,81 +1,96 @@
 .demo-container {
-  display: flex;
-  justify-content: center;
-  padding: 40px;
-  height: 500px;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    height: 500px;
 }
 
 .board {
-  background-color: light-dark(#F5F5F5, #141414);
-  outline: 4px solid light-dark(#F5F5F5, #141414);
-  max-width: 1000px;
-  min-width: 350px;
-  width: 100%;
-  height: 500px;
-  display: flex;
-  justify-content: start;
-  gap: 8px;
-  border-radius: 8px;
+    background-color: light-dark(#F5F5F5, #141414);
+    outline: 4px solid light-dark(#F5F5F5, #141414);
+    max-width: 1000px;
+    min-width: 320px;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: start;
+    gap: 8px;
+    border-radius: 8px;
 }
 
-@media (width <= 830px) {
+@media (width < 850px) {
     .board {
-        flex-direction: column;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (width < 650px) {
+    .board {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width < 475px) {
+    .board {
+        grid-template-columns: 1fr;
     }
 }
 
 .card {
-  width: 230px;
-  min-height: 84px;
-  max-height: 84px;
-  border-radius: 8px;
-  background-color: light-dark(#FFFFFF, #292929);
-  display: flex;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.24);
-  transition: box-shadow 0.1s ease-in-out;
+    max-width: 320px;
+    min-width: 180px;
+    width: 100%;
+    min-height: 84px;
+    max-height: 84px;
+    border-radius: 8px;
+    background-color: light-dark(#FFFFFF, #292929);
+    display: flex;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.24);
+    transition: box-shadow 0.1s ease-in-out;
 }
 
 .color-indicator {
-  margin: 8px;
-  height: 68px;
-  width: 4px;
-  border-radius: 4px;
+    margin: 8px;
+    height: 68px;
+    width: 4px;
+    border-radius: 4px;
 }
 
 .color-indicator.blue {
-  background-color: #62ABF5;
+    background-color: #62ABF5;
 }
 
 .color-indicator.green {
-  background-color: #107C10;
+    background-color: #107C10;
 }
 
 .color-indicator.red {
-  background-color: #D13438;
+    background-color: #D13438;
 }
 
 .color-indicator.yellow {
-  background-color: #EFB839;
+    background-color: #EFB839;
 }
 
 .text-container {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  margin-right: 8px;
-  height: 68px;
-  display: flex;
-  flex-direction: column;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    height: 68px;
+    display: flex;
+    flex-direction: column;
 }
 
 .body-text-box {
-  height: 40px;
+    height: 40px;
 }
 
 .detail-text-box {
-  margin-top: auto;
-  color: light-dark(#707070, #999999);
+    margin-top: auto;
+    color: light-dark(#707070, #999999);
 }
 
 .card.dx-draggable-dragging {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.28);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.28);
 }

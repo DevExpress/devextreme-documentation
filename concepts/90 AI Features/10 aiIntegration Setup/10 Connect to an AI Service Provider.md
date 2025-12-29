@@ -1,4 +1,4 @@
-To configure [AIIntegration](/Documentation/ApiReference/Common_Types/AIIntegration/), import the type into your project:
+To configure [AIIntegration](/Documentation/ApiReference/Common_Types/AIIntegration/), import the DevExtreme AI integration module into your project:
 
 ---
 ##### jQuery

@@ -1,10 +1,8 @@
 $(() => {
     const notes = ["#note-1", "#note-2", "#note-3", "#note-4"];
-    let z = 0;
+    let z = 1;
 
-  let handleComponent;
-  $("#note-1")
-    .dxDraggable({
+    $("#note-1").dxDraggable({
       onDragStart: handleDragStart,
       onDragMove: handleDragMove,
       onDragEnd: handleDragEnd,
@@ -13,8 +11,7 @@ $(() => {
     })
     .on("click", handleClick);
 
-  $("#note-2")
-    .dxDraggable({
+    $("#note-2").dxDraggable({
       onDragStart: handleDragStart,
       onDragMove: handleDragMove,
       onDragEnd: handleDragEnd,
@@ -23,8 +20,7 @@ $(() => {
     })
     .on("click", handleClick);
 
-  $("#note-3")
-    .dxDraggable({
+    $("#note-3").dxDraggable({
       onDragStart: handleDragStart,
       onDragMove: handleDragMove,
       onDragEnd: handleDragEnd,
@@ -33,14 +29,12 @@ $(() => {
     })
     .on("click", handleClick);
 
-  $("#note-4")
-    .dxDraggable({
+    $("#note-4").dxDraggable({
       onDragStart: handleDragStart,
       onDragMove: handleDragMove,
       onDragEnd: handleDragEnd,
       boundary: ".board",
       group: "1",
-
     })
     .on("click", handleClick);
 
@@ -59,13 +53,13 @@ $(() => {
 
     function handleDragMove(e) {
         if (e.toComponent !== e.component) {
-            e.toComponent.element().css("opacity", "50%");
+            e.toComponent.element().css("outline", "1px dashed red");
         } else {
-            notes.forEach((el) => $(el).css('opacity', ''));
+            notes.forEach((el) => $(el).css('outline', ''));
         }
     }
 
     function handleDragEnd(e) {
-        e.toComponent.element().css("opacity", "");
+        notes.forEach((el) => $(el).css('outline', ''));
     }
 });

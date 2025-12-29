@@ -18,7 +18,7 @@
             <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_25_2/js/dx.all.js"></script>
             <script type="text/javascript" src="index.js"></script>
         </head>
-        <body>
+        <body class="dx-viewport">
             <div id="draggable"></div>
         </body>
     </html>
@@ -94,3 +94,82 @@
     }
 
 ---
+
+Draggable does not include default visual elements. Specify custom Draggable markup as follows:
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#note-1").dxDraggable({});
+    });
+
+    <!-- tab: index.html -->
+    <html>
+        <head>
+            <!-- ... -->
+            <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_25_2/css/dx.fluent.blue.light.css">
+            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_25_2/js/dx.all.js"></script>
+            <script type="text/javascript" src="index.js"></script>
+        </head>
+        <body class="dx-viewport">
+            <div id="note-1" class="card">
+                <div class="color-indicator blue"></div>
+                <div class="text-container">
+                    <div class="body-text-box">Install New Router in Dev Room</div>
+                    <div class="detail-text-box">Amelia Harper</div>
+                </div>
+            </div>
+        </body>
+    </html>
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-draggable id="note-1" class="card">
+        <div class="color-indicator blue"></div>
+        <div class="text-container">
+            <div class="body-text-box">Install New Router in Dev Room</div>
+            <div class="detail-text-box">Amelia Harper</div>
+        </div>
+    </dx-draggable>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxDraggable id="note-1" class="card">
+            <div class="color-indicator blue"></div>
+            <div class="text-container">
+                <div class="body-text-box">Install New Router in Dev Room</div>
+                <div class="detail-text-box">Amelia Harper</div>
+            </div>
+        </DxDraggable>
+    </template>
+
+##### React
+
+    <!-- tab: App.tsx -->
+    import React, { JSX, useState } from 'react';
+    import { Draggable, type DraggableTypes } from 'devextreme-react/draggable';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
+
+    export default function App(): JSX.Element {
+        return (
+            <Draggable id="note-1" className="card">
+                <div class="color-indicator blue"></div>
+                <div class="text-container">
+                    <div class="body-text-box">Install New Router in Dev Room</div>
+                    <div class="detail-text-box">Amelia Harper</div>
+                </div>
+            </Draggable>
+        );
+    }
+
+---
+
+This example creates four Draggable components inside a common `.board` container:
+

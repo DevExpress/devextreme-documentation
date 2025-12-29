@@ -1,0 +1,1 @@
+This example specifies the [boundary](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#boundary/) property to constrain Draggable movement inside the `.board` container:

@@ -45,9 +45,9 @@
     min-height: 84px;
     max-height: 84px;
     border-radius: 8px;
-    background-color: light-dark(#FFFFFF, #292929);
+    background-color: light-dark(#FFF, #292929);
     display: flex;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 0 2px rgba(0 0 0 / 24%);
     transition: box-shadow 0.1s ease-in-out;
 }
 
@@ -89,9 +89,9 @@
 
 .detail-text-box {
     margin-top: auto;
-    color: light-dark(#707070, #999999);
+    color: light-dark(#707070, #999);
 }
 
 .card.dx-draggable-dragging {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.28);
+    box-shadow: 0 4px 8px rgba(0 0 0 / 28%);
 }

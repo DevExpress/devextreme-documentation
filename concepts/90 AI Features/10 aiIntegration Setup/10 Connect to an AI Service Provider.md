@@ -1,4 +1,4 @@
-To use [aiIntegration]() within your project, import the type as follows:
+To configure [AIIntegration](/Documentation/ApiReference/Common_Types/AIIntegration/), import the type into your project:
 
 ---
 ##### jQuery
@@ -11,7 +11,7 @@ To use [aiIntegration]() within your project, import the type as follows:
         <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme-dist/cdnjs_version/js/dx.ai-integration.js"></script>
     </head>
 
-To connect to an AI service provider using REST APIs, implement the [fetch API]() to define an AI request in the [sendRequest]() function within **aiIntegration**.**aiProvider**. Use the **fetch** promise within the [Request]() object returned by **sendRequest** as follows:
+To use REST APIs to connect to an AI service provider, implement the [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) within **aiIntegration**.**aiProvider**.[sendRequest](/Documentation/ApiReference/Common_Types/AIProvider/#sendRequest):
 
     <!-- tab: index.js -->
     const aiIntegration = new DevExpress.aiIntegration({
@@ -40,7 +40,7 @@ To connect to an AI service provider using REST APIs, implement the [fetch API](
     <!-- tab: app.component.ts -->
     import { AIIntegration } from 'devextreme-angular/common/ai-integration';
 
-aaa
+To use REST APIs to connect to an AI service provider, implement the [HttpClient](https://angular.dev/api/common/http/HttpClient) service within **aiIntegration**.**aiProvider**.[sendRequest](/Documentation/ApiReference/Common_Types/AIProvider/#sendRequest):
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
@@ -84,7 +84,7 @@ aaa
 
     </script>
 
-aaa
+To use REST APIs to connect to an AI service provider, implement the [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) within **aiIntegration**.**aiProvider**.[sendRequest](/Documentation/ApiReference/Common_Types/AIProvider/#sendRequest):
 
     <!-- tab: App.vue -->
     <script lang="ts" setup>
@@ -125,7 +125,7 @@ aaa
     <!-- tab: App.tsx -->
     import { AIIntegration } from 'devextreme-react/common/ai-integration';
 
-aaa
+To use REST APIs to connect to an AI service provider, implement the [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) within **aiIntegration**.**aiProvider**.[sendRequest](/Documentation/ApiReference/Common_Types/AIProvider/#sendRequest):
 
     <!-- tab: App.tsx -->
     import { AIIntegration } from 'devextreme-react/common/ai-integration';

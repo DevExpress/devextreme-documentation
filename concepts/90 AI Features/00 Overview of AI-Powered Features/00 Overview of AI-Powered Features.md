@@ -1,0 +1,1 @@
+DevExtreme ships with multiple AI-powered capabilities. You can implement any large language model (LLM) that offers REST/client APIs to activate these features, including self-hosted AI agents.

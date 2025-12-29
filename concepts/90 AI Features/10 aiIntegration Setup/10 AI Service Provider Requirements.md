@@ -1,1 +1,0 @@
-DevExtreme AI-Powered features support all AI service providers that offer REST or client APIs. This includes self-hosted AI agents.

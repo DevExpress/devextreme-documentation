@@ -151,7 +151,7 @@ If a column's [groupInterval](/api-reference/40%20Common%20Types/15%20grids/Colu
     <!--HTML-->
     <dx-{widget-name} ...
         <!-- Filter intervals are 500-600 and 700-800 -->
-        [(filterValue)]="['ID', 'anyof', [500, 700]]">
+        [filterValue]="['ID', 'anyof', [500, 700]]">
             <dxo-header-filter 
                 [visible]="true">
             </dxo-header-filter>

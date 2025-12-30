@@ -5,16 +5,23 @@ default: undefined
 ---
 ---
 ##### shortDescription
-An array of validation rules to be checked for the form item editor.
+An array of validation rules to apply to the item's editor.
 
 ---
-There are several predefined rule types. Each rule type demands a specific set of rule properties. Refer to the [Validation Rules](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/') section of the [Validator](/api-reference/10%20UI%20Components/dxValidator '/Documentation/ApiReference/UI_Components/dxValidator/') API reference to learn how to define rules of different types.
+Refer to the following topic for information about predefined validation rules: [Validation Rules](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/').
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Validation/"
 }
 
-[note] If you use a [template](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/template.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#template'), you need to explicitly define **Validator**. Refer to the [template](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/template.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#template') API section for more information.
+[note]
+
+- When an item [template](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/template.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#template') is configured, do not specify this property. Configure a [Validator](/Documentation/ApiReference/UI_Components/dxValidator/) within the template and specify **Validator**.[validationRules](/Documentation/ApiReference/UI_Components/dxValidator/Configuration/#validationRules) instead.
+- The Form is repainted when you update **validationRules** as follows:    
+    - When you add or remove [RequiredRule](/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/RequiredRule/).
+    - When you set **validationRules** to empty or add a rule to an empty **validationRules**. 
+
+[/note]
 
 #####See Also#####
 - [Validate the Form Data](/concepts/05%20UI%20Components/Form/01%20Getting%20Started%20with%20Form/70%20Validate%20the%20Form%20Data.md '/Documentation/Guide/UI_Components/Form/Getting_Started_with_Form/#Validate_the_Form_Data')

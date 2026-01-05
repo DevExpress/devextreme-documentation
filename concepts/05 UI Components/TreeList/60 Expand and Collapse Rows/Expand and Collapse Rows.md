@@ -1,0 +1,1 @@
+TreeList allows you to configure expanded rows on initialization, as well as expand/collapse rows programmatically.

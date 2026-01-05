@@ -72,9 +72,9 @@ Object type properties that depend on other properties' values are not implement
         }
     }
 
-[important] We recommend that you declare the object outside the configuration component to prevent possible issues caused by unnecessary re-rendering.
+[important] Do not define inline objects in markup. Use configuration components or assign variables to object properties instead.
 
-If you use <a href="https://react.dev/reference/react/hooks" target="_blank">React Hooks</a> and need to define a configuration object inside a function component, wrap this object in the <a href="https://react.dev/reference/react/useMemo" target="_blank">useMemo</a> hook to preserve the object's reference between state changes:
+You can integrate the [useMemo](https://react.dev/reference/react/useMemo) hook in object property variables as follows:
 
     <!-- tab: App.js -->
     import React, { useState, useMemo } from 'react';

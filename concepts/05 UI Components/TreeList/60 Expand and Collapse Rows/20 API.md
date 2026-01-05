@@ -57,7 +57,7 @@ All TreeList rows are initially collapsed. If you enable [autoExpandAll](/api-re
         />
     </template>
 
-    <script>
+    <script setup lang="ts">
     import { DxTreeList } from 'devextreme-vue/tree-list';
 
     </script>
@@ -129,13 +129,13 @@ To toggle a row between expanded and collapsed states, you can implement the [is
         />
     </template>
 
-    <script>
+    <script setup lang="ts">
     import { ref } from 'vue';
     import { DxTreeList } from 'devextreme-vue/tree-list';
 
     const treeListRef = ref(null);
 
-    function toggleRow (key) {
+    function toggleRow(key) {
         if (treeList.value.instance.isRowExpanded(key)) {
             treeList.value.instance.collapseRow(key);
         } else {

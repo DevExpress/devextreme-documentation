@@ -5,10 +5,12 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether a user can resize columns.
+Enables column resizing.
 
 ---
-By default, the width of each column depends on the [width of the UI component](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/width.md '{basewidgetpath}/Configuration/#width') and the total number of [columns](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columns '{basewidgetpath}/Configuration/columns/'). You can allow a user to resize the columns at runtime by setting the **allowColumnResizing** property to **true**.
+When enabled, this property allows users to drag column separators in the header row to update column widths. Initial column widths depend on the component's [width](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/width.md '{basewidgetpath}/Configuration/#width') and the number of displayed [columns](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columns '{basewidgetpath}/Configuration/columns/').
+
+[note] To ensure correct column resize behavior when [columnHidingEnabled]({basewidgetpath}/Configuration/#columnHidingEnabled) is `true`, specify column widths ([columnWidth]({basewidgetpath}/Configuration/#columnWidth)/**columns[]**.[width]({basewidgetpath}/Configuration/columns/#width)) or enable [columnAutoWidth]({basewidgetpath}/Configuration/#columnAutoWidth).
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ColumnResizing/",

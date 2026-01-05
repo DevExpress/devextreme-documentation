@@ -240,7 +240,7 @@ The following code snippet checks DataGrid cell [rowType](/Documentation/ApiRefe
 
 [note]
 
-To integrate asynchronous operations within **customizeCell**, follow these steps:
+To add asynchronous operations to **customizeCell**, follow these steps:
 
 1. Define a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) array in the [onExporting](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExporting) handler.
 2. In **customizeCell**, add your asynchronous operations to the **Promise** array.

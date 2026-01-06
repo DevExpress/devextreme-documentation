@@ -16,9 +16,9 @@ Refer to the following topic for information about predefined validation rules: 
 
 [note]
 
-- When an item [template](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/template.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#template') is configured, do not specify this property. Configure a [Validator](/Documentation/ApiReference/UI_Components/dxValidator/) within the template and specify **Validator**.[validationRules](/Documentation/ApiReference/UI_Components/dxValidator/Configuration/#validationRules) instead.
+- When an item [template](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/template.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#template') is configured, do not specify this property. Configure a [Validator](/api-reference/10%20UI%20Components/dxValidator '/Documentation/ApiReference/UI_Components/dxValidator/') within the template and specify **Validator**.[validationRules](/api-reference/10%20UI%20Components/dxValidator/1%20Configuration/validationRules.md '/Documentation/ApiReference/UI_Components/dxValidator/Configuration/#validationRules') instead.
 - The Form is repainted when you update **validationRules** as follows:    
-    - When you add or remove [RequiredRule](/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/RequiredRule/).
+    - When you add or remove [RequiredRule](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules/RequiredRule '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/RequiredRule/').
     - When you set **validationRules** to an empty array or add a rule to an empty **validationRules** array. 
 
 [/note]

@@ -27,7 +27,7 @@ DevExtreme ExcelJS allows you to customize the following Excel cell properties:
 - [font](https://github.com/DevExpress/devextreme-exceljs-fork#fonts)
 - [numFmt](https://github.com/DevExpress/devextreme-exceljs-fork#number-formats)
 
-The following code snippet checks DataGrid cell [rowType](/Documentation/ApiReference/UI_Components/dxDataGrid/Row/#rowType) values to customize Excel cells in data rows:
+The following code snippet checks DataGrid cell [rowType](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row/rowType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Row/#rowType') values to customize Excel cells in data rows:
 
 ---
 ##### jQuery
@@ -242,9 +242,9 @@ The following code snippet checks DataGrid cell [rowType](/Documentation/ApiRefe
 
 To add asynchronous operations to **customizeCell**, follow these steps:
 
-1. Define a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) array in the [onExporting](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExporting) handler.
+1. Define a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) array in the [onExporting](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExporting') handler.
 2. In **customizeCell**, add your asynchronous operations to the **Promise** array.
-3. In [exportDataGrid](/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions).**then()**, save the exported file within a [Promise.all()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all).**then()** callback. Pass the promise array defined in **onExporting** as the **Promise**.**all()** parameter as follows:
+3. In [exportDataGrid](/api-reference/50%20Common/utils/excelExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions').**then()**, save the exported file within a [Promise.all()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all).**then()** callback. Pass the promise array defined in **onExporting** as the **Promise**.**all()** parameter as follows:
 
         onExporting(e) {
             const workbook = new Workbook();

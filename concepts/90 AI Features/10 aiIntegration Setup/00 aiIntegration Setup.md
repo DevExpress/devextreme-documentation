@@ -1,4 +1,4 @@
-The [AIIntegration](/Documentation/ApiReference/Common_Types/AIIntegration/) type powers AI features in the following components:
+The [AIIntegration](/api-reference/40%20Common%20Types/AIIntegration '/Documentation/ApiReference/Common_Types/AIIntegration/') type powers AI features in the following components:
 
 - DataGrid
 - TreeList

@@ -85,4 +85,4 @@ Object type properties that depend on other properties' values are not implement
     const columnEditorOptions = { width: 100 };
     </script>
 
-[important] Do not define inline objects in markup. Use configuration components or assign variables to object properties instead.
+[important] To avoid issues caused by excess re-renders, do not define inline objects in markup. Use configuration components or assign variables to object properties instead.

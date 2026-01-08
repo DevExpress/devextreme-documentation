@@ -1,15 +1,4 @@
 ﻿.icon {
     font-size: 32px;
-    margin-right: 10px;
     vertical-align: middle;
-}
-.icon-name {
-    font-size: 14px;
-    margin-top: 5px;
-    color: #86929d;
-}
-.container {
-    display: inline-flex;
-    width: 180px;
-    padding: 0 10px 10px 0;
 }

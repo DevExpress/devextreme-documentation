@@ -6,7 +6,7 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
     <!--JavaScript-->$(function() {
         $("#lookupContainer").dxLookup({
             dataSource: new DevExpress.data.ODataStore({
-                url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+                url: "http://www.example.com/Northwind.svc/Products",
                 key: "Product_ID"
             }),
             valueExpr: "Product_Cost",
@@ -29,7 +29,7 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
     // ...
     export class AppComponent {
         lookupDataSource = new ODataStore({
-            url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+            url: "http://www.example.com/Northwind.svc/Products",
             key: "Product_ID"
         });
     }
@@ -64,7 +64,7 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
         data() {
             return {
                 products: new ODataStore({
-                    url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+                    url: "http://www.example.com/Northwind.svc/Products",
                     key: "Product_ID"
                 })
             };
@@ -85,7 +85,7 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
             super(props);
 
             this.products = new ODataStore({
-                url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+                url: "http://www.example.com/Northwind.svc/Products",
                 key: "Product_ID"
             });
         }
@@ -115,7 +115,7 @@ Data kept in the **ODataStore** can be processed in a [DataSource](/api-referenc
             dataSource: new DevExpress.data.DataSource({
                 store: {
                     type: "odata",
-                    url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+                    url: "http://www.example.com/Northwind.svc/Products",
                     key: "Product_ID"
                 },
                 filter: ["Product_Available", "=", true]
@@ -143,7 +143,7 @@ Data kept in the **ODataStore** can be processed in a [DataSource](/api-referenc
         lookupDataSource = new DataSource({
             store: {
                 type: "odata",
-                url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+                url: "http://www.example.com/Northwind.svc/Products",
                 key: "Product_ID"
             },
             filter: ["Product_Available", "=", true]
@@ -182,7 +182,7 @@ Data kept in the **ODataStore** can be processed in a [DataSource](/api-referenc
                 products: new DataSource({
                     store: {
                         type: "odata",
-                        url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+                        url: "http://www.example.com/Northwind.svc/Products",
                         key: "Product_ID"
                     },
                     filter: ["Product_Available", "=", true]
@@ -207,7 +207,7 @@ Data kept in the **ODataStore** can be processed in a [DataSource](/api-referenc
             this.products = new DataSource({
                 store: {
                     type: "odata",
-                    url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+                    url: "http://www.example.com/Northwind.svc/Products",
                     key: "Product_ID"
                 },
                 filter: ["Product_Available", "=", true]

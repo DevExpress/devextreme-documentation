@@ -7,7 +7,7 @@ To display a LoadPanel on page load, initialize the component with [visible](/ap
     <!-- tab: index.js -->
     $(() => {
         const data = new DevExpress.data.ODataStore({
-            url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+            url: "http://www.example.com/Northwind.svc/Products",
         });
 
         const loadPanel = $('#loadpanel').dxLoadPanel({
@@ -36,7 +36,7 @@ To display a LoadPanel on page load, initialize the component with [visible](/ap
         loadingVisible: boolean = true;
     
         data: ODataStore = new ODataStore({
-            url: "https://js.devexpress.com/Demos/DevAV/odata/Products"
+            url: "http://www.example.com/Northwind.svc/Products"
         });
 
         constructor() {    
@@ -63,7 +63,7 @@ To display a LoadPanel on page load, initialize the component with [visible](/ap
     const loadingVisible = ref(true);
 
     const data: ODataStore = new ODataStore({
-        url: "https://js.devexpress.com/Demos/DevAV/odata/Products"
+        url: "http://www.example.com/Northwind.svc/Products"
     });
 
     data.load().then(() => {
@@ -81,7 +81,7 @@ To display a LoadPanel on page load, initialize the component with [visible](/ap
         const [loadingVisible, setLoadingVisible] = useState(true);
 
         const data: ODataStore = new ODataStore({
-            url: "https://js.devexpress.com/Demos/DevAV/odata/Products"
+            url: "http://www.example.com/Northwind.svc/Products"
         });
 
         data.load().then(() => {

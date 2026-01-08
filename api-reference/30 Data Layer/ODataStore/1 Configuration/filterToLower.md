@@ -17,7 +17,7 @@ When this property is **true**, the filter expression sent to the server contain
     <!--JavaScript-->
     var ds = new DevExpress.data.DataSource({
         store: new DevExpress.data.ODataStore({
-            url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+            url: "http://www.example.com/Northwind.svc/Products",
             key: "Product_ID",
             filterToLower: true
         }),
@@ -38,7 +38,7 @@ When this property is **true**, the filter expression sent to the server contain
         constructor() {
             this.ds = new DataSource({
                 store: new ODataStore({
-                    url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+                    url: "http://www.example.com/Northwind.svc/Products",
                     key: "Product_ID",
                     filterToLower: true
                 }),
@@ -59,7 +59,7 @@ When this property is **true**, the filter expression sent to the server contain
 
     const ds = new DataSource({
         store: new ODataStore({
-            url: 'https://js.devexpress.com/Demos/DevAV/odata/Products',
+            url: 'http://www.example.com/Northwind.svc/Products',
             key: 'Product_ID',
             filterToLower: true
         }),
@@ -88,7 +88,7 @@ When this property is **true**, the filter expression sent to the server contain
 
     const ds = new DataSource{
         store: new ODataStore({
-            url: 'https://js.devexpress.com/Demos/DevAV/odata/Products',
+            url: 'http://www.example.com/Northwind.svc/Products',
             key: 'Product_ID',
             filterToLower: true
         }),

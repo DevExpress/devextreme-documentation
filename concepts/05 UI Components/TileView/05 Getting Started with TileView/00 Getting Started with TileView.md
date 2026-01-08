@@ -11,7 +11,7 @@ This tutorial guides you through the following steps:
 
 The following live example demonstrates the result:
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/25_1/GettingStartedWith/TileView/index.html, /Content/Applications/25_1/GettingStartedWith/TileView/index.js, /Content/Applications/25_1/GettingStartedWith/TileView/index.css" style="border-radius: 16px;"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/26_1/GettingStartedWith/TileView/index.html, /Content/Applications/26_1/GettingStartedWith/TileView/index.js, /Content/Applications/26_1/GettingStartedWith/TileView/index.css" style="border-radius: 16px;"></div>
 
 Each section in this tutorial describes a single configuration step. You can find the complete source code in the following GitHub repository:
 

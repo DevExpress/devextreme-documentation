@@ -11,6 +11,8 @@ Specifies expanded rows with keys.
 ---
 This property expands only specified rows, not their parent rows. To expand a row that has parent rows, specify all parent row keys in addition to the child row key.
 
+To collapse all rows, set **expandedRowKeys** to an empty array (`[]`).
+
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview/"
 }

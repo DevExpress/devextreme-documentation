@@ -1,3 +1,5 @@
+[important] [DevExtreme v25.2](https://www.devexpress.com/subscriptions/new-2025-2.xml) is now available. Explore our newest features/capabilities.
+
 [note]
 
 The information contained in this help topic includes our current/projected development plans. Please note that this information is being shared for INFORMATIONAL PURPOSES ONLY and does not represent a binding commitment on the part of Developer Express Inc. This roadmap and the features/products listed within it are subject to change. You should not rely on or use this information to help make a purchase decision about Developer Express Inc products. 

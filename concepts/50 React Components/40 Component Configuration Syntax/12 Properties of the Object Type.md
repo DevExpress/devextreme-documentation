@@ -72,7 +72,7 @@ Object type properties that depend on other properties' values are not implement
         }
     }
 
-[important] To avoid issues caused by excess re-renders, do not define inline objects in markup. Use configuration components or assign variables to object properties instead.
+[important] To avoid issues caused by excessive re-rendering, do not define inline objects in markup. Use configuration components or assign variables to object properties instead.
 
 You can integrate the [useMemo](https://react.dev/reference/react/useMemo) hook in object property variables as follows:
 

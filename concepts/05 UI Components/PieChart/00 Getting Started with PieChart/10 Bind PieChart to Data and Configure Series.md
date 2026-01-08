@@ -2,7 +2,7 @@ The PieChart can visualize data from different sources. Refer to the following d
 
 - [Simple Array](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SimpleArray/)
 - [JSON Data](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/AjaxRequest/)
-- [OData Service](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ServerSideDataProcessing/)
+- [ASP.NET Data Service](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/ServerSideDataProcessing/)
 - [SignalR Service](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/SignalRService/)
 
 This tutorial uses an array as a PieChart data source. To bind the PieChart to data, pass the array to the PieChart's [dataSource](/api-reference/10%20UI%20Components/BaseChart/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxPieChart/Configuration/#dataSource') property.

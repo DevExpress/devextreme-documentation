@@ -13,7 +13,7 @@ Specifies the URL of an OData service.
     <!--JavaScript-->
     var context = new DevExpress.data.ODataContext({
         // ...
-        url: "https://js.devexpress.com/Demos/DevAV/odata/"
+        url: "http://www.example.com/Northwind.svc/"
     });
 
 #####Angular
@@ -26,7 +26,7 @@ Specifies the URL of an OData service.
         constructor() {
             this.context = new ODataContext({
                 // ...
-                url: "https://js.devexpress.com/Demos/DevAV/odata/"
+                url: "http://www.example.com/Northwind.svc/"
             });
         }
     }
@@ -39,7 +39,7 @@ Specifies the URL of an OData service.
 
     const context = new ODataContext({
         // ...
-        url: 'https://js.devexpress.com/Demos/DevAV/odata/'
+        url: 'http://www.example.com/Northwind.svc/'
     });
 
     export default {
@@ -55,7 +55,7 @@ Specifies the URL of an OData service.
 
     const context = new ODataContext({
         // ...
-        url: 'https://js.devexpress.com/Demos/DevAV/odata/'
+        url: 'http://www.example.com/Northwind.svc/'
     });
     
     class App extends React.Component {

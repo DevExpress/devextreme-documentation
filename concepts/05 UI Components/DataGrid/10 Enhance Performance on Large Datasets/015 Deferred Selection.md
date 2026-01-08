@@ -11,7 +11,7 @@ Use deferred mode to increase the DataGrid's performance when [selecting multipl
             dataSource: {
                 store: {
                     type: "odata",
-                    url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+                    url: "http://www.example.com/Northwind.svc/Products",
                     key: "Product_ID"
                 }
             },
@@ -42,7 +42,7 @@ Use deferred mode to increase the DataGrid's performance when [selecting multipl
         dataSource = {
             store: {
                 type: "odata",
-                url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+                url: "http://www.example.com/Northwind.svc/Products",
                 key: "Product_ID"
             }
         }
@@ -78,7 +78,7 @@ Use deferred mode to increase the DataGrid's performance when [selecting multipl
     import ODataStore from 'devextreme/data/odata/store';
 
     const store = new ODataStore({
-        url: 'https://js.devexpress.com/Demos/DevAV/odata/Products',
+        url: 'http://www.example.com/Northwind.svc/Products',
         key: 'Product_ID'
     });
 
@@ -109,7 +109,7 @@ Use deferred mode to increase the DataGrid's performance when [selecting multipl
     import ODataStore from 'devextreme/data/odata/store';
 
     const store = new ODataStore({
-        url: 'https://js.devexpress.com/Demos/DevAV/odata/Products',
+        url: 'http://www.example.com/Northwind.svc/Products',
         key: 'Product_ID'
     });
 

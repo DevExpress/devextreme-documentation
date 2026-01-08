@@ -15,7 +15,7 @@ Set this property if you do not need to [filter data](/concepts/70%20Data%20Bind
 
     <!--JavaScript-->
     var store = new DevExpress.data.ODataStore({
-        url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+        url: "http://www.example.com/Northwind.svc/Products",
         key: [ "Product_ID", "Product_Code" ],
         keyType: {
             Product_ID: "Guid",
@@ -32,7 +32,7 @@ Set this property if you do not need to [filter data](/concepts/70%20Data%20Bind
         store: ODataStore;
         constructor() {
             this.store = new ODataStore({
-                url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+                url: "http://www.example.com/Northwind.svc/Products",
                 key: [ "Product_ID", "Product_Code" ],
                 keyType: {
                     Product_ID: "Guid",
@@ -49,7 +49,7 @@ Set this property if you do not need to [filter data](/concepts/70%20Data%20Bind
     import ODataStore from 'devextreme/data/odata/store';
 
     const store = new ODataStore({
-        url: 'https://js.devexpress.com/Demos/DevAV/odata/Products',
+        url: 'http://www.example.com/Northwind.svc/Products',
         key: [ 'Product_ID', 'Product_Code' ],
         keyType: {
             Product_ID: 'Guid',
@@ -74,7 +74,7 @@ Set this property if you do not need to [filter data](/concepts/70%20Data%20Bind
     import ODataStore from 'devextreme/data/odata/store';
 
     const store = new ODataStore({
-        url: 'https://js.devexpress.com/Demos/DevAV/odata/Products',
+        url: 'http://www.example.com/Northwind.svc/Products',
         key: [ 'Product_ID', 'Product_Code' ],
         keyType: {
             Product_ID: 'Guid',

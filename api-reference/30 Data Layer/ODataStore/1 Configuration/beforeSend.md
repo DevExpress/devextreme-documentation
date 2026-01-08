@@ -37,7 +37,7 @@ The request URL.
 
     <!--JavaScript-->
     var store = new DevExpress.data.ODataStore({
-        url: "https://js.devexpress.com/Demos/DevAV/odata/Products",  
+        url: "http://www.example.com/Northwind.svc/Products",  
         beforeSend: function (e) {  
             e.params = {
                 "param1": "value1",
@@ -58,7 +58,7 @@ The request URL.
         store: ODataStore;
         constructor() {
             this.store = new ODataStore({
-                url: "https://js.devexpress.com/Demos/DevAV/odata/Products",  
+                url: "http://www.example.com/Northwind.svc/Products",  
                 beforeSend: (e) => {  
                     e.params = {
                         "param1": "value1",
@@ -79,7 +79,7 @@ The request URL.
     import ODataStore from 'devextreme/data/odata/store';
 
     const store = new ODataStore({
-        url: 'https://js.devexpress.com/Demos/DevAV/odata/Products',  
+        url: 'http://www.example.com/Northwind.svc/Products',  
         beforeSend: (e) => {  
             e.params = {
                 'param1': 'value1',
@@ -108,7 +108,7 @@ The request URL.
     import ODataStore from 'devextreme/data/odata/store';
 
     const store = new ODataStore({
-        url: 'https://js.devexpress.com/Demos/DevAV/odata/Products',  
+        url: 'http://www.example.com/Northwind.svc/Products',  
         beforeSend: (e) => {  
             e.params = {
                 'param1': 'value1',

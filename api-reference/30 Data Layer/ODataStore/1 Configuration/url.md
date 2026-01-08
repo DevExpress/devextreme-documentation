@@ -13,7 +13,7 @@ Specifies the URL of an OData entity collection.
     <!--JavaScript-->
     var store = new DevExpress.data.ODataStore({
         // ...
-        url: "https://js.devexpress.com/Demos/DevAV/odata/Products"
+        url: "http://www.example.com/Northwind.svc/Products"
     });
 
 #####Angular
@@ -26,7 +26,7 @@ Specifies the URL of an OData entity collection.
         constructor() {
             this.store = new ODataStore({
                 // ...
-                url: "https://js.devexpress.com/Demos/DevAV/odata/Products"
+                url: "http://www.example.com/Northwind.svc/Products"
             });
         };
     }
@@ -39,7 +39,7 @@ Specifies the URL of an OData entity collection.
 
     const store = new ODataStore({
         // ...
-        url: 'https://js.devexpress.com/Demos/DevAV/odata/Products'
+        url: 'http://www.example.com/Northwind.svc/Products'
     });
 
     export default {
@@ -60,7 +60,7 @@ Specifies the URL of an OData entity collection.
 
     const store = new ODataStore({
         // ...
-        url: 'https://js.devexpress.com/Demos/DevAV/odata/Products'
+        url: 'http://www.example.com/Northwind.svc/Products'
     });
 
     class App extends React.Component {

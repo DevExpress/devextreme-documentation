@@ -22,7 +22,7 @@ Call this method within the [insert()](/api-reference/30%20Data%20Layer/ODataSto
 
     <!--JavaScript-->
     var context = new DevExpress.data.ODataContext({
-        url: "https://js.devexpress.com/Demos/DevAV/odata/",
+        url: "http://www.example.com/Northwind.svc/",
         entities: { 
             Orders: {  
                 key: "Order_ID", 
@@ -47,7 +47,7 @@ Call this method within the [insert()](/api-reference/30%20Data%20Layer/ODataSto
         context: ODataContext;
         constructor() {
             this.context = new ODataContext({
-                url: "https://js.devexpress.com/Demos/DevAV/odata/",
+                url: "http://www.example.com/Northwind.svc/",
                 entities: { 
                     Orders: {  
                         key: "Order_ID", 
@@ -72,7 +72,7 @@ Call this method within the [insert()](/api-reference/30%20Data%20Layer/ODataSto
     import ODataContext from 'devextreme/data/odata/context';
 
     const context = new ODataContext({
-        url: 'https://js.devexpress.com/Demos/DevAV/odata/',
+        url: 'http://www.example.com/Northwind.svc/',
         entities: { 
             Orders: {  
                 key: 'Order_ID', 
@@ -102,7 +102,7 @@ Call this method within the [insert()](/api-reference/30%20Data%20Layer/ODataSto
     import ODataContext from 'devextreme/data/odata/context';
 
     const context = new ODataContext({
-        url: 'https://js.devexpress.com/Demos/DevAV/odata/',
+        url: 'http://www.example.com/Northwind.svc/',
         entities: { 
             Orders: {  
                 key: 'Order_ID', 

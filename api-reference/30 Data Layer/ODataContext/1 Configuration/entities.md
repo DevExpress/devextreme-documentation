@@ -14,14 +14,14 @@ The **ODataContext** creates an **ODataStore** per entity collection, so you nee
 
     <!--JavaScript-->
     var context = new DevExpress.data.ODataContext({
-        url: "https://js.devexpress.com/Demos/DevAV/odata/",
+        url: "http://www.example.com/Northwind.svc/",
         entities: { 
-            // Configures access to "https://js.devexpress.com/Demos/DevAV/odata/Employees"
+            // Configures access to "http://www.example.com/Northwind.svc/Employees"
             Employees: { 
                 key: "Employee_ID", 
                 keyType: "Int32" 
             },
-            // Configures access to "https://js.devexpress.com/Demos/DevAV/odata/Customers"
+            // Configures access to "http://www.example.com/Northwind.svc/Customers"
             Clients: {              // The collection alias
                 name: "Customers",  // The collection name
                 key: "Customer_ID", 
@@ -40,14 +40,14 @@ The **ODataContext** creates an **ODataStore** per entity collection, so you nee
         context: ODataContext;
         constructor() {
             this.context = new ODataContext({
-                url: "https://js.devexpress.com/Demos/DevAV/odata/",
+                url: "http://www.example.com/Northwind.svc/",
                 entities: { 
-                    // Configures access to "https://js.devexpress.com/Demos/DevAV/odata/Employees"
+                    // Configures access to "http://www.example.com/Northwind.svc/Employees"
                     Employees: { 
                         key: "Employee_ID", 
                         keyType: "Int32" 
                     },
-                    // Configures access to "https://js.devexpress.com/Demos/DevAV/odata/Customers"
+                    // Configures access to "http://www.example.com/Northwind.svc/Customers"
                     Clients: {              // The collection alias
                         name: "Customers",  // The collection name
                         key: "Customer_ID", 
@@ -66,14 +66,14 @@ The **ODataContext** creates an **ODataStore** per entity collection, so you nee
     import ODataContext from 'devextreme/data/odata/context';
 
     const context = new ODataContext({
-        url: 'https://js.devexpress.com/Demos/DevAV/odata/',
+        url: 'http://www.example.com/Northwind.svc/',
         entities: { 
-            // Configures access to "https://js.devexpress.com/Demos/DevAV/odata/Employees"
+            // Configures access to "http://www.example.com/Northwind.svc/Employees"
             Employees: { 
                 key: 'Employee_ID', 
                 keyType: 'Int32' 
             },
-            // Configures access to "https://js.devexpress.com/Demos/DevAV/odata/Customers"
+            // Configures access to "http://www.example.com/Northwind.svc/Customers"
             Clients: {              // The collection alias
                 name: 'Customers',  // The collection name
                 key: 'Customer_ID', 
@@ -97,14 +97,14 @@ The **ODataContext** creates an **ODataStore** per entity collection, so you nee
     import ODataContext from 'devextreme/data/odata/context';
 
     const context = new ODataContext({
-        url: 'https://js.devexpress.com/Demos/DevAV/odata/',
+        url: 'http://www.example.com/Northwind.svc/',
         entities: { 
-            // Configures access to "https://js.devexpress.com/Demos/DevAV/odata/Employees"
+            // Configures access to "http://www.example.com/Northwind.svc/Employees"
             Employees: { 
                 key: 'Employee_ID', 
                 keyType: 'Int32' 
             },
-            // Configures access to "https://js.devexpress.com/Demos/DevAV/odata/Customers"
+            // Configures access to "http://www.example.com/Northwind.svc/Customers"
             Clients: {              // The collection alias
                 name: 'Customers',  // The collection name
                 key: 'Customer_ID', 

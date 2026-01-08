@@ -37,7 +37,7 @@ The request URL.
 
     <!--JavaScript-->
     var context = new DevExpress.data.ODataContext({
-        url: "https://js.devexpress.com/Demos/DevAV/odata/",
+        url: "http://www.example.com/Northwind.svc/",
         entities: { 
             Employees: { 
                 key: "Employee_ID", 
@@ -68,7 +68,7 @@ The request URL.
         context: ODataContext;
         constructor() {
             this.context = new ODataContext({
-                url: "https://js.devexpress.com/Demos/DevAV/odata/",
+                url: "http://www.example.com/Northwind.svc/",
                 entities: { 
                     Employees: { 
                         key: "Employee_ID", 
@@ -99,7 +99,7 @@ The request URL.
     import ODataContext from 'devextreme/data/odata/context';
 
     const context = new ODataContext({
-        url: 'https://js.devexpress.com/Demos/DevAV/odata/',
+        url: 'http://www.example.com/Northwind.svc/',
         entities: { 
             Employees: { 
                 key: 'Employee_ID', 
@@ -133,7 +133,7 @@ The request URL.
     import ODataContext from 'devextreme/data/odata/context';
 
     const context = new ODataContext({
-        url: 'https://js.devexpress.com/Demos/DevAV/odata/',
+        url: 'http://www.example.com/Northwind.svc/',
         entities: { 
             Employees: { 
                 key: 'Employee_ID', 

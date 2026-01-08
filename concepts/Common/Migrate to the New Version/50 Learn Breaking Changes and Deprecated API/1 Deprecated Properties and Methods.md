@@ -52,6 +52,14 @@
 <td><a href="https://js.devexpress.com/Documentation/26_1/ApiReference/UI_Components/dxTreeList/Configuration/columnChooser/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/26_1/ApiReference/UI_Components/dxTreeList/Configuration/columnChooser/#searchTimeout">searchTimeout</a><br><a href="https://js.devexpress.com/Documentation/26_1/ApiReference/UI_Components/dxTreeList/Configuration/columns/headerFilter/#allowSearch">allowSearch</a><br><a href="https://js.devexpress.com/Documentation/26_1/ApiReference/UI_Components/dxTreeList/Configuration/columns/headerFilter/#searchMode">searchMode</a><br><b>rowDragging.</b><a href="https://js.devexpress.com/Documentation/26_1/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#filter">filter</a></td>
 </tr>
 <tr>
+<td>ODataContext</td>
+<td><a href="https://js.devexpress.com/Documentation/26_1/ApiReference/Data_Layer/ODataContext/Configuration/#deserializeDates">deserializeDates</a></td>
+</tr>
+<tr>
+<td>ODataStore</td>
+<td><a href="https://js.devexpress.com/Documentation/26_1/ApiReference/Data_Layer/ODataStore/Configuration/#deserializeDates">deserializeDates</a></td>
+</tr>
+<tr>
 <td>PivotGridDataSource</td>
 <td><b>fields.headerFilter.</b><a href="https://js.devexpress.com/Documentation/26_1/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/headerFilter/#allowSearch">allowSearch</a></td>
 </tr>

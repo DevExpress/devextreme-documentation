@@ -15,7 +15,7 @@ Set this property if you are going to [filter data](/concepts/70%20Data%20Bindin
 
     <!--JavaScript-->
     var store = new DevExpress.data.ODataStore({
-        url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+        url: "http://www.example.com/Northwind.svc/Products",
         key: "Product_ID",
         fieldTypes: {
             Product_ID: "Guid",
@@ -33,7 +33,7 @@ Set this property if you are going to [filter data](/concepts/70%20Data%20Bindin
         store: ODataStore;
         constructor() {
             this.store = new ODataStore({
-                url: "https://js.devexpress.com/Demos/DevAV/odata/Products",  
+                url: "http://www.example.com/Northwind.svc/Products",  
                 key: "Product_ID",
                 fieldTypes: {
                     Product_ID: "Guid",
@@ -51,7 +51,7 @@ Set this property if you are going to [filter data](/concepts/70%20Data%20Bindin
     import ODataStore from 'devextreme/data/odata/store';
 
     const store = new ODataStore({
-        url: 'https://js.devexpress.com/Demos/DevAV/odata/Products',  
+        url: 'http://www.example.com/Northwind.svc/Products',  
         key: 'Product_ID',
         fieldTypes: {
             Product_ID: 'Guid',
@@ -77,7 +77,7 @@ Set this property if you are going to [filter data](/concepts/70%20Data%20Bindin
     import ODataStore from 'devextreme/data/odata/store';
 
     const store = new ODataStore({
-        url: 'https://js.devexpress.com/Demos/DevAV/odata/Products',  
+        url: 'http://www.example.com/Northwind.svc/Products',  
         key: 'Product_ID',
         fieldTypes: {
             Product_ID: 'Guid',
@@ -95,7 +95,7 @@ Set this property if you are going to [filter data](/concepts/70%20Data%20Bindin
 
     <!--Razor C#-->@(Html.DevExtreme().WidgetName()
         .DataSource(d => d.OData()
-            .Url("https://js.devexpress.com/Demos/DevAV/odata/Products")
+            .Url("http://www.example.com/Northwind.svc/Products")
             .Key("Product_ID")
             .FieldTypes(new Dictionary<string, EdmType> {
                 { "Product_ID", EdmType.Guid },

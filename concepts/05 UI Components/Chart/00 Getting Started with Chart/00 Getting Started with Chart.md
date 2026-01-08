@@ -4,7 +4,7 @@ The DevExtreme Chart is an interactive UI component that visualizes data using m
 
 This tutorial explains how to add a Chart to a page and configure component core settings.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/25_1/GettingStartedWith/Chart/index.html, /Content/Applications/25_1/GettingStartedWith/Chart/index.js, /Content/Applications/25_1/GettingStartedWith/Chart/index.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/25_2/GettingStartedWith/Chart/index.html, /Content/Applications/25_2/GettingStartedWith/Chart/index.js, /Content/Applications/25_2/GettingStartedWith/Chart/index.css"></div>
 
 Each section in this tutorial covers a single configuration step. You can find the complete source code in the following GitHub repository:
 

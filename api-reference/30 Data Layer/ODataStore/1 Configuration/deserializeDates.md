@@ -1,6 +1,8 @@
 ---
 id: ODataStore.Options.deserializeDates
 type: Boolean
+dep: ODataStore.Options.processDatesAsUtc
+default: false
 ---
 ---
 ##### shortDescription

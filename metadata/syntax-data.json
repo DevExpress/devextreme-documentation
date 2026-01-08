@@ -22682,7 +22682,9 @@
       "vue": "error-handler"
     },
     "oDataStoreOptions.fieldTypes": {
-      "vue": "field-types"
+      "angular": "dxo-field-types",
+      "react": "FieldTypes",
+      "vue": "DxFieldTypes"
     },
     "oDataStoreOptions.filterToLower": {
       "vue": "filter-to-lower"
@@ -22691,6 +22693,9 @@
       "angular": "dxo-key-type",
       "react": "KeyType",
       "vue": "DxKeyType"
+    },
+    "oDataStoreOptions.processDatesAsUtc": {
+      "vue": "process-dates-as-utc"
     },
     "oDataStoreOptions.withCredentials": {
       "vue": "with-credentials"

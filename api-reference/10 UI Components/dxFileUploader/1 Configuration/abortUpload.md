@@ -14,7 +14,7 @@ Information about the file upload session.
 
 ##### return: Promise<any> | any
 A Promise that is resolved after the upload is aborted.
-#include ref-promisedistinction
+
 
 ---
 

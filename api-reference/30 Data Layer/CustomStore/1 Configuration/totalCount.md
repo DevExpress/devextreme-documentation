@@ -17,6 +17,6 @@ Data grouping settings.
 
 ##### return: Promise<Number>
 A Promise that is resolved after data is loaded.
-#include ref-promisedistinction
+
 
 ---

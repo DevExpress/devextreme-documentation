@@ -7,7 +7,7 @@ Notifies the ScrollView that data loading is finished.
 
 ##### return: Promise<void>
 A Promise that is resolved after the UI component is released.
-#include ref-promisedistinction
+
 
 ##### param(preventScrollBottom): Boolean
 Specifies whether to prevent the [onReachBottom](/api-reference/10%20UI%20Components/dxScrollView/1%20Configuration/onReachBottom.md '/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#onReachBottom') handler execution.

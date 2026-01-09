@@ -7,7 +7,7 @@ Closes the drawer.
 
 ##### return: Promise<void>
 A Promise that is resolved after the drawer is closed.
-#include ref-promisedistinction
+
 
 ---
 #####See Also#####

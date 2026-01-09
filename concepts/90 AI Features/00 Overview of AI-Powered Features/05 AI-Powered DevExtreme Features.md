@@ -1,4 +1,4 @@
-DevExtreme ships with the following AI-powered capabilities:
+DevExtreme components support the following AI-powered capabilities:
 
 - Chat - [Integration with AI Assistants](/concepts/05%20UI%20Components/Chat/15%20Integrate%20with%20AI%20Service/00%20Integrate%20with%20AI%20Service.md '/Documentation/Guide/UI_Components/Chat/Integrate_with_AI_Service/')
 - DataGrid - [AI Columns](/concepts/05%20UI%20Components/DataGrid/15%20Columns/10%20Column%20Types/5%20AI%20Columns/00%20AI%20Columns.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/AI_Columns/')

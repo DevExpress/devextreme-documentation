@@ -1,4 +1,4 @@
-AI-powered DevExtreme features are illustrated and described in the following technical demos:
+AI-powered DevExtreme features are demonstrated and described in the following technical demos:
 
 - [Chat - AI and Chatbot Integration](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Chat/AIAndChatbotIntegration/)
 - [DataGrid - AI Columns](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/AIColumns/)

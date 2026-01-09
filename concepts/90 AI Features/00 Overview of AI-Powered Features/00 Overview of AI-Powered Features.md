@@ -1,1 +1,0 @@
-You can use AI-powered capabilities with a number of DevExtreme components. To activate these AI-powered features, implement any large language model (LLM) that offers REST/client APIs. Self-hosted or remote AI agents are supported.

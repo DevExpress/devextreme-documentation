@@ -16,9 +16,16 @@
   <MenuRule Destination="050 Getting Started/01 First Steps" SourcePattern="Howto:^Common/First Steps" />
 
   <MenuRule Destination="050 Getting Started/05 Prerequisites and Installation/11 Supported Angular Versions" SourcePattern="Howto:^40 Angular Components/80 Supported Versions" VisibleFor="Angular" />
-  <MenuRule Destination="050 Getting Started/05 Prerequisites and Installation/12 Supported Vue Versions" SourcePattern="Howto:^55 Vue Components/80 Supported Versions" VisibleFor="Vue" />
-  <MenuRule Destination="050 Getting Started/05 Prerequisites and Installation/13 Supported React Versions" SourcePattern="Howto:^50 React Components/80 Supported Versions" VisibleFor="React" />
-  <MenuRule Destination="050 Getting Started/05 Prerequisites and Installation/14 Supported jQuery Versions" SourcePattern="Howto:^58 jQuery Components/80 Supported Versions" VisibleFor="jQuery" />
+  <MenuRule Destination="050 Getting Started/05 Prerequisites and Installation/12 Supported TypeScript Versions" SourcePattern="Howto:^40 Angular Components/85 Supported TypeScript Versions" VisibleFor="Angular" />
+
+  <MenuRule Destination="050 Getting Started/05 Prerequisites and Installation/13 Supported Vue Versions" SourcePattern="Howto:^55 Vue Components/80 Supported Versions" VisibleFor="Vue" />
+  <MenuRule Destination="050 Getting Started/05 Prerequisites and Installation/14 Supported TypeScript Versions" SourcePattern="Howto:^55 Vue Components/85 Supported TypeScript Versions" VisibleFor="Vue" />
+  
+  <MenuRule Destination="050 Getting Started/05 Prerequisites and Installation/15 Supported React Versions" SourcePattern="Howto:^50 React Components/80 Supported Versions" VisibleFor="React" />
+  <MenuRule Destination="050 Getting Started/05 Prerequisites and Installation/16 Supported TypeScript Versions" SourcePattern="Howto:^50 React Components/85 Supported TypeScript Versions" VisibleFor="React" />
+  
+  <MenuRule Destination="050 Getting Started/05 Prerequisites and Installation/17 Supported jQuery Versions" SourcePattern="Howto:^58 jQuery Components/80 Supported Versions" VisibleFor="jQuery" />
+
   <MenuRule Destination="050 Getting Started/05 Prerequisites and Installation/20 Supported Browsers" SourcePattern="Howto:^Common/Supported Browsers" />
 
   <MenuRule Destination="050 Getting Started/10 Add DevExtreme to an Application" SourcePattern="Howto:^40 Angular Components/10 Getting Started/03 Add DevExtreme to an Angular CLI Application" VisibleFor="Angular" />

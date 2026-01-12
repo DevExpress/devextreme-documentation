@@ -75,7 +75,7 @@
     font-family: DXIcons !important;
 }
 
-.dx-button::after {
+.dx-cardview-content.dx-cardview-content-grid .dx-button::after {
     content: '\f107';
     font-family: DXIcons;
     font-size: 18px;
@@ -90,7 +90,7 @@
     transition: opacity 0.3s ease-in-out, max-width 0.3s ease-in-out, padding-right 0.3s ease-in-out;
 }
 
-.dx-button:hover::after {
+.dx-cardview-content.dx-cardview-content-grid .dx-button:hover::after {
     opacity: 1;
     max-width: 28px;
     padding-right: 8px;
@@ -107,7 +107,8 @@
 
 .dx-cardview-header-container > :nth-child(2) {
     order: 0;
-    width: 50%;
+    width: 75%;
+    min-width: fit-content;
     display: flex;
 }
 

@@ -1,0 +1,1 @@
+In addition to panes, Splitter allows you to customize the component's resizing handles and separators.

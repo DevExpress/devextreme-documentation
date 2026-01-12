@@ -1,0 +1,1 @@
+To customize separators, define custom CSS styles for the `.dx-resize-handle` selector:

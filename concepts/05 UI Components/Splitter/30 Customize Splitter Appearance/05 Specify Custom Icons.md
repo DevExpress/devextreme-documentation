@@ -1,0 +1,1 @@
+To specify custom resizing handle icons, define CSS styles as follows:

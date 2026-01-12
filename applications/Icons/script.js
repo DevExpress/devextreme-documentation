@@ -52,8 +52,8 @@ $('#tabs').dxTabs({
 })
 
 function copyData(text) {
-    if (!navigator) {
-        DevExpress.ui.notify('Failed to copy text');
+    if (!navigator.clipboard) {
+        DevExpress.ui.notify('Failed to copy text.');
     } else {
         navigator.clipboard.writeText(text).then(() => {
             DevExpress.ui.notify(`"${text}" copied to clipboard.`);

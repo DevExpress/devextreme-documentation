@@ -1,4 +1,97 @@
-﻿.icon {
-    font-size: 32px;
+﻿body {
+    padding: 0px !important;
+}
+
+.icon {
+    font-size: 20px;
+    text-align: center;
     vertical-align: middle;
+}
+
+.tabs-container {
+    border-bottom: 1px solid light-dark(rgb(225 230 234), rgb(98 98 98));
+}
+
+#tabs {
+    width: 25%;
+    min-width: fit-content;
+}
+
+.dx-cardview-card {
+    border: none;
+}
+
+.dx-cardview-card-content {
+    display: flex;
+}
+
+.dx-cardview-card-content > div {
+    width: 100%;
+}
+
+.icon-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dx-overlay-content {
+    display: flex;
+}
+
+.dx-toast-message {
+    width: 100%;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: DXIconsMaterial;
+    src: url("/SharedStatic/DevExtreme/25_2/css/icons/dxiconsmaterial.woff2") format("woff2"),
+        url("/SharedStatic/DevExtreme/25_2/css/icons/dxiconsmaterial.woff") format("woff"),
+        url("/SharedStatic/DevExtreme/25_2/css/icons/dxiconsmaterial.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: DXIconsGeneric;
+    src: url("/SharedStatic/DevExtreme/25_2/css/icons/dxicons.woff2") format("woff2"),
+        url("/SharedStatic/DevExtreme/25_2/css/icons/dxicons.woff") format("woff"),
+        url("/SharedStatic/DevExtreme/25_2/css/icons/dxicons.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+#cardview-container .Material-icons {
+    font-family: DXIconsMaterial !important;
+}
+
+#cardview-container .Generic-icons {
+    font-family: DXIconsGeneric !important;
+}
+
+#cardview-container .Fluent-icons {
+    font-family: DXIcons !important;
+}
+
+.dx-button::after {
+    content: '\f107';
+    font-family: DXIcons;
+    font-size: 18px;
+    color: light-dark(#2190F7, #158BFF);
+    padding-right: 0px;
+    vertical-align: bottom;
+    opacity: 0;
+    max-width: 0;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out, max-width 0.3s ease-in-out, padding-right 0.3s ease-in-out;
+}
+
+.dx-button:hover::after {
+    opacity: 1;
+    max-width: 28px;
+    padding-right: 8px;
 }

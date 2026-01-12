@@ -86,7 +86,7 @@ $('#cardview-container').dxCardView({
                     copyData(data.card.data.iconName);
                 }
             }),
-            $('<div class="icon-name">').dxButton({
+            $('<div class="icon-char">').dxButton({
                 stylingMode: 'text',
                 hoverStateEnabled: true,
                 activeStateEnabled: false,
@@ -113,6 +113,6 @@ $('#cardview-container').dxCardView({
     pager: {
         visible: false,
     },
-    height: '1000px',
-    cardMinWidth: 96,
+    height: 668,
+    cardMinWidth: 120,
 });

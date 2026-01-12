@@ -51,13 +51,12 @@ $('#tabs').dxTabs({
     },
 })
 
-async function copyData(text) {
-    try {
-        await navigator.clipboard.writeText(text);
+function copyData(text) {
+    navigator.clipboard.writeText(text).then(() => {
         DevExpress.ui.notify(`"${text}" copied to clipboard.`);
-    } catch (err) {
-        DevExpress.ui.notify('Failed to copy text: ', err);
-    }
+    }).catch((e) => {
+        DevExpress.ui.notify('Failed to copy text: ', e);
+    })
 }
 
 $('#cardview-container').dxCardView({
@@ -113,6 +112,6 @@ $('#cardview-container').dxCardView({
     pager: {
         visible: false,
     },
-    height: 668,
+    height: 656,
     cardMinWidth: 120,
 });

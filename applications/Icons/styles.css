@@ -1,5 +1,6 @@
 ﻿body {
     padding: 0px !important;
+    height: 700px;
 }
 
 .icon {
@@ -135,4 +136,8 @@
 
 .dx-cardview-card-content {
     height: 120px;
+}
+
+.dx-cardview-root-container > :nth-child(4), .dx-cardview-root-container > :nth-child(6) {
+    display: none;
 }

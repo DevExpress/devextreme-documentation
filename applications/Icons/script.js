@@ -52,11 +52,15 @@ $('#tabs').dxTabs({
 })
 
 function copyData(text) {
-    navigator.clipboard.writeText(text).then(() => {
-        DevExpress.ui.notify(`"${text}" copied to clipboard.`);
-    }).catch((e) => {
-        DevExpress.ui.notify('Failed to copy text: ', e);
-    })
+    if (!navigator) {
+        DevExpress.ui.notify('Failed to copy text');
+    } else {
+        navigator.clipboard.writeText(text).then(() => {
+            DevExpress.ui.notify(`"${text}" copied to clipboard.`);
+        }).catch((e) => {
+            DevExpress.ui.notify('Failed to copy text: ', e);
+        })
+    }
 }
 
 $('#cardview-container').dxCardView({

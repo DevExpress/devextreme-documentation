@@ -95,3 +95,25 @@
     max-width: 28px;
     padding-right: 8px;
 }
+
+.dx-cardview-header-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.dx-cardview-header-container >:first-child {
+    order: 1;
+}
+
+.dx-cardview-header-container > :nth-child(2) {
+    order: 0;
+    width: 50%;
+    display: flex;
+}
+
+.dx-cardview-header-container > :nth-child(2)::before {
+    content: 'Sort By:';
+    vertical-align: middle;
+    line-height: 30px;
+    padding-right: 8px;
+}

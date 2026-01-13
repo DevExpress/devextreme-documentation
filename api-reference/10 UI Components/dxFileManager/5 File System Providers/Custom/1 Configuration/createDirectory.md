@@ -14,7 +14,7 @@ The name of the new directory.
 
 ##### return: Promise<any> | any
 A Promise that is resolved after a new directory is created.
-#include ref-promisedistinction
+
 
 ---
 

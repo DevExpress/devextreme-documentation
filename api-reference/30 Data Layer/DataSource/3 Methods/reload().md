@@ -7,7 +7,7 @@ Clears currently loaded **DataSource** items and calls the [load()](/api-referen
 
 ##### return: Promise<any>
 A Promise that is resolved after loading is completed and rejected after loading failed.
-#include ref-promisedistinction
+
 
 ---
 DataSource reloads data starting from the current page index. To reload all data, set [pageIndex](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/pageIndex(newIndex).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#pageIndexnewIndex') to `0` before you call **reload()**.

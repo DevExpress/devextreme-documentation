@@ -14,7 +14,7 @@ The directory where a file system item is copied to.
 
 ##### return: Promise<any> | any
 A Promise that is resolved after the file system item is copied.
-#include ref-promisedistinction
+
 
 ---
 

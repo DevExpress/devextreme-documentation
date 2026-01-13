@@ -7,7 +7,7 @@ Saves changes that a user made to data.
 
 ##### return: Promise<void>
 A Promise that is resolved after changes are saved in the data source.
-#include ref-promisedistinction
+
 
 ---
 #####See Also#####

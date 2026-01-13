@@ -24,7 +24,7 @@ The rule being checked.
 ##### field(options.validator): Object
 The [Validator](/api-reference/10%20UI%20Components/dxValidator '/Documentation/ApiReference/UI_Components/dxValidator') object that initiated the validation.
 
-##### field(options.value): String | Number
+##### field(options.value): any
 The validated value. Note that the value type depends on the validated editor.
 
 ##### return: Boolean

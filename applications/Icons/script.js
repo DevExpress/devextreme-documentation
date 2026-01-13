@@ -126,7 +126,6 @@ $('#cardview-container').dxCardView({
     },
     paging: {
         enabled: false,
-        //pageSize: 320,
     },
     pager: {
         visible: false,

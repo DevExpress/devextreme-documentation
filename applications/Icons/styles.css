@@ -20,10 +20,6 @@
     padding-left: 12px;
 }
 
-.dx-cardview-card {
-    
-}
-
 .dx-cardview-card-content {
     display: flex;
     padding-left: 4px;
@@ -80,7 +76,6 @@
     content: '\f107';
     font-family: DXIcons;
     font-size: 18px;
-    /* color: light-dark(#2190F7, #158BFF); */
     color: var(--dx-color-primary);
     padding-right: 0px;
     vertical-align: bottom;

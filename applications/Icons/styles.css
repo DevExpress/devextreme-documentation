@@ -141,7 +141,9 @@
     display: flex;
 }
 
-.dx-overlay-content.dx-toast-content i {
+.dx-overlay-content.dx-toast-content i::before {
     line-height: 20px;
+    height: 20px;
+    font-size: 20px;
     margin-right: 8px;
 }

@@ -44,8 +44,10 @@ $('#tabs').dxTabs({
         for (const theme of tabs) {
             if (data.addedItems[0] === theme) {
                 $('i').addClass(`${theme}-icons`);
+                $('.dx-cardview-content.dx-cardview-content-grid .dx-button').addClass(`${theme}-icons`);
             } else {
                 $('i').removeClass(`${theme}-icons`);
+                $('.dx-cardview-content.dx-cardview-content-grid .dx-button').removeClass(`${theme}-icons`);
             }
         }
     },
@@ -53,12 +55,27 @@ $('#tabs').dxTabs({
 
 function copyData(text) {
     if (!navigator.clipboard) {
-        DevExpress.ui.notify('Failed to copy text.');
+        DevExpress.ui.notify({ contentTemplate() {
+                return $('<div>').css({display: 'flex', 'align-items': 'center'}).append(
+                    $('<i>').addClass('dx-icon-errorcircle'),
+                    $('<div>').text(`Failed to copy icon.`),
+                )
+            }, displayTime: 1000, width: 260 }, { position: "bottom center", direction: "up-push" });
     } else {
         navigator.clipboard.writeText(text).then(() => {
-            DevExpress.ui.notify(`"${text}" copied to clipboard.`);
+            DevExpress.ui.notify({ contentTemplate() {
+                return $('<div>').css({display: 'flex', 'align-items': 'center'}).append(
+                    $('<i>').addClass('dx-icon-info'),
+                    $('<div>').text(`"${text}" copied to clipboard.`),
+                )
+            }, displayTime: 1000, width: 260 }, { position: "bottom center", direction: "up-push" });
         }).catch((e) => {
-            DevExpress.ui.notify('Failed to copy text: ', e);
+            DevExpress.ui.notify({ contentTemplate() {
+                return $('<div>').css({display: 'flex', 'align-items': 'center'}).append(
+                    $('<i>').addClass('dx-icon-errorcircle'),
+                    $('<div>').text(`Failed to copy icon: ${e}`),
+                )
+            }, displayTime: 1000, width: 260 }, { position: "bottom center", direction: "up-push" });
         })
     }
 }

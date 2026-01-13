@@ -46,11 +46,6 @@
     display: flex;
 }
 
-.dx-toast-message {
-    width: 100%;
-    justify-content: center;
-}
-
 @font-face {
     font-family: DXIconsMaterial;
     src: url("/SharedStatic/DevExtreme/25_2/css/icons/dxiconsmaterial.woff2") format("woff2"),
@@ -69,15 +64,15 @@
     font-style: normal
 }
 
-#cardview-container .Material-icons {
+#cardview-container i.Material-icons, .dx-cardview-content.dx-cardview-content-grid .dx-button.Material-icons::after {
     font-family: DXIconsMaterial !important;
 }
 
-#cardview-container .Generic-icons {
+#cardview-container i.Generic-icons, .dx-cardview-content.dx-cardview-content-grid .dx-button.Generic-icons::after {
     font-family: DXIconsGeneric !important;
 }
 
-#cardview-container .Fluent-icons {
+#cardview-container i.Fluent-icons, .dx-cardview-content.dx-cardview-content-grid .dx-button.Fluent-icons::after {
     font-family: DXIcons !important;
 }
 
@@ -85,7 +80,8 @@
     content: '\f107';
     font-family: DXIcons;
     font-size: 18px;
-    color: light-dark(#2190F7, #158BFF);
+    /* color: light-dark(#2190F7, #158BFF); */
+    color: var(--dx-color-primary);
     padding-right: 0px;
     vertical-align: bottom;
     opacity: 0;
@@ -126,7 +122,7 @@
 }
 
 .dx-item-content.dx-toolbar-item-content, .dx-textbox.dx-texteditor, .dx-texteditor-container .dx-texteditor-input-container > input {
-    width: 200px !important;
+    width: 160px;
 }
 
 .icon-char {
@@ -140,4 +136,18 @@
 
 .dx-cardview-root-container > :nth-child(4), .dx-cardview-root-container > :nth-child(6) {
     display: none;
+}
+
+.dx-overlay-content.dx-toast-content > :nth-child(1), .dx-overlay-content.dx-toast-content > :nth-child(2) {
+    display: none;
+}
+
+.dx-overlay-content.dx-toast-content {
+    display: flex;
+    justify-content: center;
+}
+
+.dx-overlay-content.dx-toast-content i {
+    line-height: 20px;
+    margin-right: 8px;
 }

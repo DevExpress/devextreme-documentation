@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     padding: 40px;
-    height: 500px;
+    height: 524px;
 }
 
 .board {
@@ -17,6 +17,7 @@
     align-content: start;
     gap: 8px;
     border-radius: 8px;
+    padding: 12px;
 }
 
 @media (width < 850px) {

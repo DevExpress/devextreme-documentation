@@ -2,8 +2,8 @@ DevExtreme React supports the following TypeScript versions:
 
 <table class="dx-table">
     <tr>
-        <th>DevExtreme</th>
-        <th>React</th>
+        <th>DevExtreme React</th>
+        <th>TypeScript</th>
     </tr>
     <tr>
         <td>v25.2.x</td>

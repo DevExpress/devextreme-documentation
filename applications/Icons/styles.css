@@ -144,7 +144,6 @@
 
 .dx-overlay-content.dx-toast-content {
     display: flex;
-    justify-content: center;
 }
 
 .dx-overlay-content.dx-toast-content i {

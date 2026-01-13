@@ -60,7 +60,7 @@ function copyData(text) {
                     $('<i>').addClass('dx-icon-errorcircle'),
                     $('<div>').text(`Failed to copy icon.`),
                 )
-            }, displayTime: 1000, width: 260 }, { position: "bottom center", direction: "up-push" });
+            }, displayTime: 1000, minWidth: 260, maxWidth: 260 }, { position: "bottom center", direction: "up-push" });
     } else {
         navigator.clipboard.writeText(text).then(() => {
             DevExpress.ui.notify({ contentTemplate() {
@@ -68,14 +68,14 @@ function copyData(text) {
                     $('<i>').addClass('dx-icon-info'),
                     $('<div>').text(`"${text}" copied to clipboard.`),
                 )
-            }, displayTime: 1000, width: 260 }, { position: "bottom center", direction: "up-push" });
+            }, displayTime: 1000, minWidth: 260, maxWidth: 260 }, { position: "bottom center", direction: "up-push" });
         }).catch((e) => {
             DevExpress.ui.notify({ contentTemplate() {
                 return $('<div>').css({display: 'flex', 'align-items': 'center'}).append(
                     $('<i>').addClass('dx-icon-errorcircle'),
                     $('<div>').text(`Failed to copy icon: ${e}`),
                 )
-            }, displayTime: 1000, width: 260 }, { position: "bottom center", direction: "up-push" });
+            }, displayTime: 1000, minWidth: 260, maxWidth: 260 }, { position: "bottom center", direction: "up-push" });
         })
     }
 }

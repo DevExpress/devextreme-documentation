@@ -2,7 +2,7 @@ DevExtreme includes an icon library with SVG and font icons for all DevExtreme t
 
 The following icons are available:
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/25_2/Icons/markup.html, /Content/Applications/25_2/Icons/script.js, /Content/Applications/25_2/Icons/styles.css" style="border-radius: 12px; min-width: 540px; max-height: 700px"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/25_2/Icons/markup.html, /Content/Applications/25_2/Icons/script.js, /Content/Applications/25_2/Icons/styles.css" style="border-radius: 12px; min-width: 540px; max-height: 700px; margin-bottom: 12px;"></div>
 
 You can find source icons in DevExtreme's GitHub repository:
 

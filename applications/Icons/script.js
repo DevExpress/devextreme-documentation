@@ -83,11 +83,9 @@ function copyData(text) {
 $('#cardview-container').dxCardView({
     dataSource: icons,
     columns: [{
-        dataField: 'id',
-        caption: 'Icon',
-    }, {
         dataField: 'iconName',
         caption: 'Name',
+        sortOrder: 'asc',
     }, {
         dataField: 'iconChar',
         caption: 'Character Code',

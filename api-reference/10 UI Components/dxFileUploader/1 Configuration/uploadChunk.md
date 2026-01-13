@@ -14,7 +14,7 @@ Information about the file upload session.
 
 ##### return: Promise<any> | any
 A Promise that is resolved after the chunk is uploaded.
-#include ref-promisedistinction
+
 
 ---
 

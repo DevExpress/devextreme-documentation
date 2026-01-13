@@ -7,7 +7,7 @@ Calculates the average of all values found using a [getter](/concepts/70%20Data%
 
 ##### return: Promise<Number>
 A Promise that is resolved after the operation is completed.
-#include ref-promisedistinction
+
 
 ##### param(getter): Object
 A getter; in most cases, the name of the field that provides values for the calculation.

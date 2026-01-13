@@ -10,7 +10,7 @@ The row's key.
 
 ##### return: Promise<void>
 A Promise that is resolved after the grid is navigated to the specified row.
-#include ref-promisedistinction
+
 
 ---
 This method performs the following actions:

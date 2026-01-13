@@ -7,7 +7,7 @@ Gets a data item with a specific key.
 
 ##### return: Promise<any>
 A Promise that is resolved after the data item is loaded.
-#include ref-promisedistinction
+
 
 ##### param(key): Object | String | Number
 A data item's key value.

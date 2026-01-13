@@ -7,7 +7,7 @@ Reorders items found using their DOM nodes.
 
 ##### return: Promise<void>
 A Promise that is resolved if the item is moved and rejected otherwise.
-#include ref-promisedistinction
+
 
 ##### param(itemElement): Element
 The DOM node of the item to be reordered.

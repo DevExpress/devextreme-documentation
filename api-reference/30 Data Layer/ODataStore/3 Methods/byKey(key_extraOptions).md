@@ -7,7 +7,7 @@ Gets an entity with a specific key.
 
 ##### return: Promise<any>
 A Promise that is resolved after the entity is loaded.
-#include ref-promisedistinction
+
 
 ##### param(key): Object | String | Number
 An entity's key value.

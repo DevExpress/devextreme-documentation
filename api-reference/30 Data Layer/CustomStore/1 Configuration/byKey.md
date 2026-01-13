@@ -11,7 +11,7 @@ A key value.
 
 ##### return: Promise<any>
 A Promise that is resolved after the data item is loaded.
-#include ref-promisedistinction
+
 
 ##### param(extraOptions): LoadOptions
 <!-- Description goes here -->

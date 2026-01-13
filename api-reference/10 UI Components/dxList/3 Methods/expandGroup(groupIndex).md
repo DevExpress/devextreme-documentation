@@ -7,7 +7,7 @@ Expands a group with a specific index.
 
 ##### return: Promise<void>
 A Promise that is resolved if the group is expanded and rejected otherwise.
-#include ref-promisedistinction
+
 
 ##### param(groupIndex): Number
 The group's index.

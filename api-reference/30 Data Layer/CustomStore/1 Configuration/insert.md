@@ -11,7 +11,7 @@ The data item to be inserted.
 
 ##### return: Promise<any>
 A Promise that is resolved after the data item is inserted.
-#include ref-promisedistinction
+
 
 ---
 ---

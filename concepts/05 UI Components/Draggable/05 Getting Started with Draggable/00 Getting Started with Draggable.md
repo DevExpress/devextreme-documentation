@@ -6,7 +6,7 @@ This tutorial guides you through the following steps:
 - Handle events (specific to Draggable, as well as common events).
 - Configure Draggable options.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/25_2/GettingStartedWith/Draggable/index.html, /Content/Applications/25_2/GettingStartedWith/Draggable/index.js, /Content/Applications/25_2/GettingStartedWith/Draggable/index.css" style="border-radius: 16px"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/25_2/GettingStartedWith/Draggable/index.html, /Content/Applications/25_2/GettingStartedWith/Draggable/index.js, /Content/Applications/25_2/GettingStartedWith/Draggable/index.css" style="border-radius: 16px; height: 524px;"></div>
 
 Each section in this tutorial covers a single configuration step. You can find the complete source code in the following GitHub repository:
 

@@ -1,13 +1,28 @@
+body {
+    padding: 0;
+}
+
 .demo-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 40px;
+    align-items: center;
+    padding: 0 40px;
     height: 524px;
+}
+
+.boundary-text {
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 17px;
+    padding-bottom: 17px;
 }
 
 .board {
     background-color: light-dark(#F5F5F5, #141414);
-    outline: 4px solid light-dark(#F5F5F5, #141414);
+    outline: 1px dashed light-dark(#E0E0E0, #525252);
     max-width: 1000px;
     min-width: 320px;
     width: 100%;

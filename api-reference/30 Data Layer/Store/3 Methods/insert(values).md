@@ -7,7 +7,7 @@ Adds a data item to the store.
 
 ##### return: Promise<any>
 A Promise that is resolved after a data item is added.
-#include ref-promisedistinction
+
 
 ##### param(values): Object
 A data item.

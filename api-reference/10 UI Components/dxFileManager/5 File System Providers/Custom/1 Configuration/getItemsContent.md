@@ -11,7 +11,7 @@ The file system items.
 
 ##### return: Promise<Object> | Object
 A Promise that is resolved after the content of the file system items is obtained.
-#include ref-promisedistinction
+
 
 ---
 

@@ -14,7 +14,7 @@ An object with new values for the data item.
 
 ##### return: Promise<any>
 A Promise that is resolved after the data item is updated.
-#include ref-promisedistinction
+
 
 ---
 ---

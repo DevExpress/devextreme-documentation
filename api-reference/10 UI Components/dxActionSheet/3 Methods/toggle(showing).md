@@ -7,7 +7,7 @@ Shows or hides the UI component depending on the argument.
 
 ##### return: Promise<void>
 A Promise that is resolved after the UI component is shown/hidden.
-#include ref-promisedistinction
+
 
 ##### param(showing): Boolean
 Specifies whether to show or hide the UI component.

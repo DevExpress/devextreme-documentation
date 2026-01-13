@@ -9,7 +9,7 @@ Creates a confirmation dialog with a message and **Yes** and **No** buttons.
 
 ##### return: Promise<Boolean>
 A Promise that is resolved with a Boolean value indicating whether a user has clicked **Yes** or **No**.
-#include ref-promisedistinction
+
 
 ##### param(messageHtml): String
 <!-- %param(messageHtml)% -->

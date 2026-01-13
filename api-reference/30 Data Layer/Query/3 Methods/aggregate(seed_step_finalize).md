@@ -7,7 +7,7 @@ Calculates a custom summary for all data items.
 
 ##### return: Promise<any>
 A Promise that is resolved after the operation is completed.
-#include ref-promisedistinction
+
 
 ##### param(seed): Object
 The initial value.

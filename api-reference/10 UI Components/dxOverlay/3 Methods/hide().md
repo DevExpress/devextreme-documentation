@@ -7,7 +7,7 @@ Hides the UI component.
 
 ##### return: Promise<Boolean>
 A Promise that is resolved after the UI component is hidden.
-#include ref-promisedistinction
+
 
 ---
 #include common-demobutton-named with {

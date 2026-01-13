@@ -9,7 +9,7 @@ Exports Gantt data to a PDF file.
 
 ##### return: Promise<any>
 A Promise that resolves when the Gantt data is ready for export.
-#include ref-promisedistinction
+
 
 ##### param(options): GanttExport_Options
 Export settings.

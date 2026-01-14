@@ -12,7 +12,6 @@ The directory that stores file system items.
 ##### return: Promise<Array<Object>> | Array<Object>
 A Promise that is resolved after file system items are obtained.
 
-
 ---
 
 ---

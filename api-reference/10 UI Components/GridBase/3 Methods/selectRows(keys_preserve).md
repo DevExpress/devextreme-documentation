@@ -8,7 +8,6 @@ Selects rows with specific keys.
 ##### return: Promise<any>
 A Promise that is resolved after the rows are selected.
 
-
 ##### param(keys): Array<any>
 The row keys.
 

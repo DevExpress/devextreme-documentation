@@ -8,5 +8,4 @@ Starts all the animations registered using the [enter(elements, animation)](/api
 ##### return: Promise<void>
 A Promise that is resolved after all the animations are finished.
 
-
 ---

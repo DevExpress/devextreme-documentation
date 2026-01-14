@@ -8,7 +8,6 @@ Executes the **Query**. This is an asynchronous alternative to the [toArray()](/
 ##### return: Promise<any>
 A Promise that is resolved after the operation is completed.
 
-
 ---
 ---
 ##### jQuery

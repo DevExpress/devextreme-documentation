@@ -8,7 +8,6 @@ Calculates the number of data items.
 ##### return: Promise<Number>
 A Promise that is resolved after the operation is completed.
 
-
 ---
 ---
 ##### jQuery

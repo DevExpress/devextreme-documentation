@@ -8,7 +8,6 @@ Collapses a group with a specific index.
 ##### return: Promise<void>
 A Promise that is resolved if the group is collapsed and rejected otherwise.
 
-
 ##### param(groupIndex): Number
 The group's index.
 

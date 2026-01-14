@@ -8,5 +8,4 @@ Loads all root node descendants (all data items). Takes effect only if data has 
 ##### return: Promise<void>
 A Promise that is resolved after data is loaded.
 
-
 ---

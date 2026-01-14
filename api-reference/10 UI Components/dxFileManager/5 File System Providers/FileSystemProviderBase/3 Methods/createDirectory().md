@@ -8,7 +8,6 @@ Creates a directory.
 ##### return: Promise<any>
 A Promise that is resolved after a new directory is created.
 
-
 ##### param(parentDirectory): FileSystemItem
 The parent directory where a new directory should be created.
 

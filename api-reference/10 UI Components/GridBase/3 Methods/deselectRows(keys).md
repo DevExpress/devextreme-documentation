@@ -8,7 +8,6 @@ Cancels the selection of rows with specific keys.
 ##### return: Promise<any>
 A Promise that is resolved after selection is cleared.
 
-
 ##### param(keys): Array<any>
 The row keys.
 

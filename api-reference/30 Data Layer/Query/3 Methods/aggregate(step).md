@@ -8,7 +8,6 @@ Calculates a custom summary for all data items.
 ##### return: Promise<any>
 A Promise that is resolved after the operation is completed.
 
-
 ##### param(step): function()
 A function that is called for each item.
 

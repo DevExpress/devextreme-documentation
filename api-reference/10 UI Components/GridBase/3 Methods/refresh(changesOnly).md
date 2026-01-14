@@ -8,7 +8,6 @@ Reloads data and repaints all or only updated data rows.
 ##### return: Promise<void>
 A Promise that is resolved after data is loaded.
 
-
 ##### param(changesOnly): Boolean
 Pass **true** to repaint updated data rows; **false** to repaint all data rows.
 

@@ -8,7 +8,6 @@ Shows the next image.
 ##### return: Promise<void>
 A Promise that is resolved after the image is shown.
 
-
 ##### param(animation): Boolean
 Specifies whether switching to the image should be animated.
 

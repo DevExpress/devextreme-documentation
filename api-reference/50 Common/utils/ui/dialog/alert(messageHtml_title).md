@@ -10,7 +10,6 @@ Displays an alert dialog with a message and **OK** button.
 ##### return: Promise<void>
 A Promise that is resolved after a user clicks the button.
 
-
 ##### param(messageHtml): String
 The dialog's message.       
 Can contain HTML markup that will be evaluated. Make sure that the markup does not contain malicious code.        

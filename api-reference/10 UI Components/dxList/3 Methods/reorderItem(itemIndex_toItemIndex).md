@@ -8,7 +8,6 @@ Reorders items with specific indexes.
 ##### return: Promise<void>
 A Promise that is resolved if the item is moved and rejected otherwise.
 
-
 ##### param(itemIndex): Number | Object
 The index of the item to be reordered.
 

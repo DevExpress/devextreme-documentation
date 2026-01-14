@@ -8,7 +8,6 @@ Collapses a row with a specific key.
 ##### return: Promise<void>
 A Promise that is resolved after the row is collapsed.
 
-
 ##### param(key): any
 The row's key.
 

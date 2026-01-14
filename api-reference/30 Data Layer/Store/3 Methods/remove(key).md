@@ -8,7 +8,6 @@ Removes a data item with a specific key from the store.
 ##### return: Promise<void>
 A Promise that is resolved after the data item is removed.
 
-
 ##### param(key): Object | String | Number
 A data item's key value.
 

@@ -1,15 +1,149 @@
-﻿.icon {
+﻿body {
+    padding: 0px !important;
+    height: 700px;
+}
+
+.icon {
     font-size: 32px;
-    margin-right: 10px;
+    text-align: center;
     vertical-align: middle;
+    height: 40px;
 }
-.icon-name {
-    font-size: 14px;
-    margin-top: 5px;
-    color: #86929d;
+
+.tabs-container {
+    border-bottom: 1px solid light-dark(rgb(225 230 234), rgb(98 98 98));
 }
-.container {
-    display: inline-flex;
-    width: 180px;
-    padding: 0 10px 10px 0;
+
+#tabs {
+    width: 224px;
+    min-width: fit-content;
+    padding-left: 12px;
+}
+
+.dx-cardview-card-content {
+    display: flex;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 16px;
+}
+
+.dx-cardview-card-content > div {
+    width: 100%;
+}
+
+.icon-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dx-overlay-content {
+    display: flex;
+}
+
+@font-face {
+    font-family: DXIconsMaterial;
+    src: url("/SharedStatic/DevExtreme/25_2/css/icons/dxiconsmaterial.woff2") format("woff2"),
+        url("/SharedStatic/DevExtreme/25_2/css/icons/dxiconsmaterial.woff") format("woff"),
+        url("/SharedStatic/DevExtreme/25_2/css/icons/dxiconsmaterial.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: DXIconsGeneric;
+    src: url("/SharedStatic/DevExtreme/25_2/css/icons/dxicons.woff2") format("woff2"),
+        url("/SharedStatic/DevExtreme/25_2/css/icons/dxicons.woff") format("woff"),
+        url("/SharedStatic/DevExtreme/25_2/css/icons/dxicons.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+#cardview-container i.Material-icons, .dx-cardview-content.dx-cardview-content-grid .dx-button.Material-icons::after {
+    font-family: DXIconsMaterial !important;
+}
+
+#cardview-container i.Generic-icons, .dx-cardview-content.dx-cardview-content-grid .dx-button.Generic-icons::after {
+    font-family: DXIconsGeneric !important;
+}
+
+#cardview-container i.Fluent-icons, .dx-cardview-content.dx-cardview-content-grid .dx-button.Fluent-icons::after {
+    font-family: DXIcons !important;
+}
+
+.dx-cardview-content.dx-cardview-content-grid .dx-button::after {
+    content: '\f107';
+    font-family: DXIcons;
+    font-size: 18px;
+    color: var(--dx-color-primary);
+    padding-right: 0px;
+    vertical-align: bottom;
+    opacity: 0;
+    max-width: 0;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out, max-width 0.3s ease-in-out, padding-right 0.3s ease-in-out;
+}
+
+.dx-cardview-content.dx-cardview-content-grid .dx-button:hover::after {
+    opacity: 1;
+    max-width: 28px;
+    padding-right: 8px;
+}
+
+.dx-cardview-header-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.dx-cardview-header-container >:first-child {
+    order: 1;
+}
+
+.dx-cardview-header-container > :nth-child(2) {
+    order: 0;
+    width: 75%;
+    min-width: fit-content;
+    display: flex;
+}
+
+.dx-cardview-header-container > :nth-child(2)::before {
+    content: 'Sort By:';
+    vertical-align: middle;
+    line-height: 30px;
+    padding-right: 8px;
+}
+
+.dx-item-content.dx-toolbar-item-content, .dx-textbox.dx-texteditor, .dx-texteditor-container .dx-texteditor-input-container > input {
+    width: 160px;
+}
+
+.icon-char {
+    font-size: 12px;
+    color: var(--dx-color-icon)
+}
+
+.dx-cardview-card-content {
+    height: 120px;
+}
+
+.dx-cardview-root-container > :nth-child(4), .dx-cardview-root-container > :nth-child(6) {
+    display: none;
+}
+
+.dx-overlay-content.dx-toast-content > :nth-child(1), .dx-overlay-content.dx-toast-content > :nth-child(2) {
+    display: none;
+}
+
+.dx-overlay-content.dx-toast-content {
+    display: flex;
+}
+
+.dx-overlay-content.dx-toast-content i::before {
+    line-height: 20px;
+    height: 20px;
+    font-size: 20px;
+    margin-right: 8px;
 }

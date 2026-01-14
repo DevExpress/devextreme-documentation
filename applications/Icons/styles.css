@@ -147,3 +147,18 @@
     font-size: 20px;
     margin-right: 8px;
 }
+
+#cardview-container {
+    padding-right: calc(24px - 14px);
+}
+
+#cardview-container .dx-scrollable-container, #cardview-container .dx-toolbar-after {
+    padding-right: 14px;
+}
+
+#cardview-container .dx-scrollbar-vertical.dx-scrollable-scrollbar-active,
+#cardview-container .dx-scrollbar-vertical.dx-state-hover,
+#cardview-container .dx-scrollbar-vertical.dx-scrollable-scrollbar-active .dx-scrollable-scroll,
+#cardview-container .dx-scrollbar-vertical.dx-state-hover .dx-scrollable-scroll {
+    width: 12px;
+}

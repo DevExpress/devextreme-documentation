@@ -8,7 +8,6 @@ Updates a data item with a specific key.
 ##### return: Promise<any>
 A Promise that is resolved after the data item is updated.
 
-
 ##### param(key): Object | String | Number
 A data item's key value.
 

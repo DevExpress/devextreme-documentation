@@ -12,7 +12,6 @@ Data processing settings.
 ##### return: LoadResult | Promise<LoadResult>
 An array with data or a Promise that is resolved after data is loaded.
 
-
 ---
 Refer to the following help topic for information on how to implement the **load** function: [Custom Data Sources](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/60%20Custom%20Data%20Sources '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/').
 

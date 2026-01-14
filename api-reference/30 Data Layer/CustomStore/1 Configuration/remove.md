@@ -12,7 +12,6 @@ The key of the data item to be removed.
 ##### return: Promise<void>
 A Promise that is resolved after the data item is removed.
 
-
 ---
 ---
 ##### jQuery

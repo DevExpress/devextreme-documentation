@@ -8,7 +8,6 @@ Loads specified node descendants. Affects all descendants when **childrenOnly** 
 ##### return: Promise<void>
 A Promise that is resolved after data is loaded.
 
-
 ##### param(keys): Array<any>
 Node keys.
 

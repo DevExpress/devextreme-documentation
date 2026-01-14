@@ -8,7 +8,6 @@ Collapses a group or a master row with a specific key.
 ##### return: Promise<void>
 A Promise that is resolved after the row is collapsed.
 
-
 ##### param(key): any
 The key of the group or the master row.
 

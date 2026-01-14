@@ -8,7 +8,6 @@ Gets a data object with a specific key.
 ##### return: Promise<Object>
 A Promise that is resolved after the data object is loaded.
 
-
 ##### param(key): Object | String | Number
 The data object's key.
 

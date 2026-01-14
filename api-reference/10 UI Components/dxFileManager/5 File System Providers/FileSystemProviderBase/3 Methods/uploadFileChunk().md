@@ -8,7 +8,6 @@ Uploads a file in chunks.
 ##### return: Promise<any>
 A Promise that is resolved after the file uploaded.
 
-
 ##### param(fileData): File
 The file that is being uploaded.
 

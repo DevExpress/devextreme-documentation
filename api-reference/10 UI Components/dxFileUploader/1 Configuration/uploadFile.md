@@ -15,7 +15,6 @@ A function that you should call to notify the UI component about the file upload
 ##### return: Promise<any> | any
 A Promise that is resolved after the file is uploaded.
 
-
 ---
 
 ---

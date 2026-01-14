@@ -8,7 +8,6 @@ Animates an element.
 ##### return: Promise<void>
 A Promise that is resolved after animation is completed.
 
-
 ##### param(element): Element
 The element.
 

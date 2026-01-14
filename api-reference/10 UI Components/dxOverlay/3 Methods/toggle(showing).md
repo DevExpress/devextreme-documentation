@@ -8,7 +8,6 @@ Shows or hides the UI component depending on the argument.
 ##### return: Promise<Boolean>
 A Promise that is resolved with **true** if the UI component is shown or **false** if it is hidden.
 
-
 ##### param(showing): Boolean
 Specifies whether to show or hide the UI component.
 

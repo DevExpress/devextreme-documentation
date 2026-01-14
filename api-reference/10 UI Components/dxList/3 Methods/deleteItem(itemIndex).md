@@ -8,7 +8,6 @@ Removes an item with a specific index.
 ##### return: Promise<void>
 A Promise that is resolved if the item is deleted and rejected otherwise.
 
-
 ##### param(itemIndex): Number | Object
 The item's index. If the items are grouped, the index represents an object defining the group and item indexes: { group: 0, item: 0 }.
 

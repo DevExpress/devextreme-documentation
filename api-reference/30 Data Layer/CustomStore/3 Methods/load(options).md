@@ -8,7 +8,6 @@ Starts loading data.
 ##### return: Promise<LoadResult>
 A Promise that is resolved after data is loaded.
 
-
 ##### param(options): LoadOptions
 Data processing settings.
 

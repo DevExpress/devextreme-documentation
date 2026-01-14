@@ -18,7 +18,6 @@ The directory where a file system item is uploaded to.
 ##### return: Promise<any> | any
 A Promise that is resolved after the file upload in aborted.
 
-
 ---
 
 

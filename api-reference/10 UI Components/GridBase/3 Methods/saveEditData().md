@@ -8,7 +8,6 @@ Saves changes that a user made to data.
 ##### return: Promise<void>
 A Promise that is resolved after changes are saved in the data source.
 
-
 ---
 #####See Also#####
 #include common-link-callmethods

@@ -122,7 +122,9 @@ $('#cardview-container').dxCardView({
         visible: true,
     },
     scrolling: {
-        enabled: true,
+        useNative: false,
+        scrollByThumb: true,
+        showScrollbar: 'onHover',
     },
     paging: {
         enabled: false,

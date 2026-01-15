@@ -25,6 +25,7 @@
     padding-left: 4px;
     padding-right: 4px;
     padding-top: 16px;
+    height: 120px;
 }
 
 .dx-cardview-card-content > div {
@@ -125,8 +126,8 @@
     color: var(--dx-color-icon)
 }
 
-.dx-cardview-card-content {
-    height: 120px;
+.dx-cardview-card {
+    border-color: rgba(from var(--dx-color-border) r g b / 0.5);
 }
 
 .dx-cardview-root-container > :nth-child(4), .dx-cardview-root-container > :nth-child(6) {
@@ -146,4 +147,19 @@
     height: 20px;
     font-size: 20px;
     margin-right: 8px;
+}
+
+#cardview-container {
+    padding-right: calc(24px - 14px);
+}
+
+#cardview-container .dx-scrollable-container, #cardview-container .dx-toolbar-after {
+    padding-right: 14px;
+}
+
+#cardview-container .dx-scrollbar-vertical.dx-scrollable-scrollbar-active,
+#cardview-container .dx-scrollbar-vertical.dx-state-hover,
+#cardview-container .dx-scrollbar-vertical.dx-scrollable-scrollbar-active .dx-scrollable-scroll,
+#cardview-container .dx-scrollbar-vertical.dx-state-hover .dx-scrollable-scroll {
+    width: 12px;
 }

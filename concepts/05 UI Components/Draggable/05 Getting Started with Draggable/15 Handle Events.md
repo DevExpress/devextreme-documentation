@@ -127,6 +127,8 @@ To attach handlers to common events, call [Draggable.on()](/Documentation/ApiRef
     <!-- tab: index.js -->
     $(function() {
         $("#note-1").dxDraggable({
+            group: 'cards',
+
             // ...
         }).on({
             "click": handleClick,
@@ -157,6 +159,7 @@ To attach handlers to common events, call the [on()](/Documentation/ApiReference
     <!-- tab: app.component.html -->
     <div class="board">
         <dx-draggable ...
+            group="cards"
             (onInitialized)="handleInit($event)"
         ></dx-draggable>
 
@@ -204,6 +207,7 @@ To attach handlers to common events, call the [on()](/Documentation/ApiReference
     <template>
         <div class="board">
             <DxDraggable ...
+                group="cards"
                 @initialized="handleInit"
             />
 
@@ -278,6 +282,7 @@ To attach handlers to common events, call the [on()](/Documentation/ApiReference
         return (
             <div class="board">
                 <Draggable ...
+                    group="cards"
                     onInitialized={handleInit}
                 />
 

@@ -59,10 +59,10 @@ $(() => {
   }
 
   function handleDragEnter(e) {
-    $(e.target).css("outline", "1px dashed red");
+    e.target.classList.add('overlapped');
   }
 
   function handleDragStop(e) {
-    $(e.target).css("outline", "");
+    e.target.classList.remove('overlapped');
   }
 });

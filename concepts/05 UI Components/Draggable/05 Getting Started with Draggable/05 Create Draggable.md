@@ -95,7 +95,7 @@
 
 ---
 
-Draggable does not include default visual elements. Specify custom Draggable markup as follows:
+Draggable does not include default visual elements. Specify custom markup as follows:
 
 ---
 
@@ -160,10 +160,10 @@ Draggable does not include default visual elements. Specify custom Draggable mar
     export default function App(): JSX.Element {
         return (
             <Draggable id="note-1" className="card">
-                <div class="color-indicator blue"></div>
-                <div class="text-container">
-                    <div class="body-text-box">Install New Router in Dev Room</div>
-                    <div class="detail-text-box">Amelia Harper</div>
+                <div className="color-indicator blue"></div>
+                <div className="text-container">
+                    <div className="body-text-box">Install New Router in Dev Room</div>
+                    <div className="detail-text-box">Amelia Harper</div>
                 </div>
             </Draggable>
         );
@@ -173,3 +173,172 @@ Draggable does not include default visual elements. Specify custom Draggable mar
 
 This example creates four Draggable components inside a common `.board` container:
 
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $(function() {
+        $("#note-1").dxDraggable({});
+        $("#note-2").dxDraggable({});
+        $("#note-3").dxDraggable({});
+        $("#note-4").dxDraggable({});
+    });
+
+    <!-- tab: index.html -->
+    <div class="board">
+        <div id="note-1" class="card">
+            <div class="color-indicator blue"></div>
+            <div class="text-container">
+                <div class="body-text-box">Install New Router in Dev Room</div>
+                <div class="detail-text-box">Amelia Harper</div>
+            </div>
+        </div>
+
+        <div id="note-2" class="card">
+            <div class="color-indicator green"></div>
+            <div class="text-container">
+                <div class="body-text-box">Launch New Website</div>
+                <div class="detail-text-box">Brett Wade</div>
+            </div>
+        </div>
+
+        <div id="note-3" class="card">
+            <div class="color-indicator red"></div>
+            <div class="text-container">
+                <div class="body-text-box">Prepare 2026 Marketing Plan</div>
+                <div class="detail-text-box">Robert Reagan</div>
+            </div>
+        </div>
+
+        <div id="note-4" class="card">
+            <div class="color-indicator yellow"></div>
+            <div class="text-container">
+                <div class="body-text-box">Approve Personal Computer Upgrade Plan</div>
+                <div class="detail-text-box">Bart Arnaz</div>
+            </div>
+        </div>
+    </div>
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <div class="board">
+        <dx-draggable id="note-1" class="card">
+            <div class="color-indicator blue"></div>
+            <div class="text-container">
+                <div class="body-text-box">Install New Router in Dev Room</div>
+                <div class="detail-text-box">Amelia Harper</div>
+            </div>
+        </dx-draggable>
+
+        <dx-draggable id="note-2" class="card">
+            <div class="color-indicator green"></div>
+            <div class="text-container">
+                <div class="body-text-box">Launch New Website</div>
+                <div class="detail-text-box">Brett Wade</div>
+            </div>
+        </dx-draggable>
+
+        <dx-draggable id="note-3" class="card">
+            <div class="color-indicator red"></div>
+            <div class="text-container">
+                <div class="body-text-box">Prepare 2026 Marketing Plan</div>
+                <div class="detail-text-box">Robert Reagan</div>
+            </div>
+        </dx-draggable>
+
+        <dx-draggable id="note-4" class="card">
+            <div class="color-indicator yellow"></div>
+            <div class="text-container">
+                <div class="body-text-box">Approve Personal Computer Upgrade Plan</div>
+                <div class="detail-text-box">Bart Arnaz</div>
+            </div>
+        </dx-draggable>
+    </div>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <div class="board">
+            <DxDraggable id="note-1" class="card">
+                <div class="color-indicator blue"></div>
+                <div class="text-container">
+                    <div class="body-text-box">Install New Router in Dev Room</div>
+                    <div class="detail-text-box">Amelia Harper</div>
+                </div>
+            </DxDraggable>
+
+            <DxDraggable id="note-2" class="card">
+                <div class="color-indicator green"></div>
+                <div class="text-container">
+                    <div class="body-text-box">Launch New Website</div>
+                    <div class="detail-text-box">Brett Wade</div>
+                </div>
+            </DxDraggable>
+
+            <DxDraggable id="note-3" class="card">
+                <div class="color-indicator red"></div>
+                <div class="text-container">
+                    <div class="body-text-box">Prepare 2026 Marketing Plan</div>
+                    <div class="detail-text-box">Robert Reagan</div>
+                </div>
+            </DxDraggable>
+
+            <DxDraggable id="note-4" class="card">
+                <div class="color-indicator yellow"></div>
+                <div class="text-container">
+                    <div class="body-text-box">Approve Personal Computer Upgrade Plan</div>
+                    <div class="detail-text-box">Bart Arnaz</div>
+                </div>
+            </DxDraggable>
+        </div>
+    </template>
+
+##### React
+
+    <!-- tab: App.tsx -->
+    import React, { JSX, useState } from 'react';
+    import { Draggable, type DraggableTypes } from 'devextreme-react/draggable';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
+
+    export default function App(): JSX.Element {
+        return (
+            <div class="board">
+                <Draggable id="note-1" className="card">
+                    <div className="color-indicator blue"></div>
+                    <div className="text-container">
+                        <div className="body-text-box">Install New Router in Dev Room</div>
+                        <div className="detail-text-box">Amelia Harper</div>
+                    </div>
+                </Draggable>
+
+                <Draggable id="note-2" className="card">
+                    <div className="color-indicator green"></div>
+                    <div className="text-container">
+                        <div className="body-text-box">Launch New Website</div>
+                        <div className="detail-text-box">Brett Wade</div>
+                    </div>
+                </Draggable>
+
+                <Draggable id="note-3" className="card">
+                    <div className="color-indicator red"></div>
+                    <div className="text-container">
+                        <div className="body-text-box">Prepare 2026 Marketing Plan</div>
+                        <div className="detail-text-box">Robert Reagan</div>
+                    </div>
+                </Draggable>
+
+                <Draggable id="note-4" className="card">
+                    <div className="color-indicator yellow"></div>
+                    <div className="text-container">
+                        <div className="body-text-box">Approve Personal Computer Upgrade Plan</div>
+                        <div className="detail-text-box">Bart Arnaz</div>
+                    </div>
+                </Draggable>
+            </div>
+        );
+    }
+
+---

@@ -18,6 +18,7 @@ body {
     vertical-align: middle;
     padding-top: 17px;
     padding-bottom: 17px;
+    color: var(--dx-color-icon)
 }
 
 .board {
@@ -75,19 +76,19 @@ body {
 }
 
 .color-indicator.blue {
-    background-color: #62ABF5;
+    background-color: var(--dx-color-primary);
 }
 
 .color-indicator.green {
-    background-color: #107C10;
+    background-color: var(--dx-color-success);
 }
 
 .color-indicator.red {
-    background-color: #D13438;
+    background-color: var(--dx-color-danger);
 }
 
 .color-indicator.yellow {
-    background-color: #EFB839;
+    background-color: var(--dx-color-warning);
 }
 
 .text-container {
@@ -110,4 +111,8 @@ body {
 
 .card.dx-draggable-dragging {
     box-shadow: 0 4px 8px rgba(0 0 0 / 28%);
+}
+
+.card.overlapped {
+    outline: 1px dashed var(--dx-color-primary);
 }

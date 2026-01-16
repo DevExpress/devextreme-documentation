@@ -55,7 +55,7 @@ body {
 }
 
 .card {
-    z-index: 1;
+    z-index: 0;
     max-width: 320px;
     min-width: 180px;
     width: 100%;

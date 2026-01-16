@@ -46,8 +46,8 @@ $(() => {
   });
 
   function changeZIndex(el) {
-    z++;
     el.css("z-index", z);
+    z++;
   }
 
   function handleClick(e) {

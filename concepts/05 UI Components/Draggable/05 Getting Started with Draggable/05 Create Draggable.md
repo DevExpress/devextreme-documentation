@@ -87,11 +87,13 @@
     import { Draggable, type DraggableTypes } from 'devextreme-react/draggable';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    export default function App(): JSX.Element {
+    function App(): JSX.Element {
         return (
             <Draggable />
         );
     }
+
+    export default App;
 
 ---
 
@@ -153,11 +155,9 @@ Draggable does not include default visual elements. Specify custom markup as fol
 ##### React
 
     <!-- tab: App.tsx -->
-    import React, { JSX, useState } from 'react';
-    import { Draggable, type DraggableTypes } from 'devextreme-react/draggable';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
+    import { Draggable } from 'devextreme-react/draggable';
 
-    export default function App(): JSX.Element {
+    function App(): JSX.Element {
         return (
             <Draggable id="note-1" className="card">
                 <div className="color-indicator blue"></div>
@@ -198,7 +198,7 @@ This example creates four Draggable components inside a common `.board` containe
         <div id="note-2" class="card">
             <div class="color-indicator green"></div>
             <div class="text-container">
-                <div class="body-text-box">Launch New Website</div>
+                <div class="body-text-box">👨‍💻 Launch New Website</div>
                 <div class="detail-text-box">Brett Wade</div>
             </div>
         </div>
@@ -214,7 +214,7 @@ This example creates four Draggable components inside a common `.board` containe
         <div id="note-4" class="card">
             <div class="color-indicator yellow"></div>
             <div class="text-container">
-                <div class="body-text-box">Approve Personal Computer Upgrade Plan</div>
+                <div class="body-text-box">🖥️ Approve Personal Computer Upgrade Plan</div>
                 <div class="detail-text-box">Bart Arnaz</div>
             </div>
         </div>
@@ -235,7 +235,7 @@ This example creates four Draggable components inside a common `.board` containe
         <dx-draggable id="note-2" class="card">
             <div class="color-indicator green"></div>
             <div class="text-container">
-                <div class="body-text-box">Launch New Website</div>
+                <div class="body-text-box">👨‍💻 Launch New Website</div>
                 <div class="detail-text-box">Brett Wade</div>
             </div>
         </dx-draggable>
@@ -251,7 +251,7 @@ This example creates four Draggable components inside a common `.board` containe
         <dx-draggable id="note-4" class="card">
             <div class="color-indicator yellow"></div>
             <div class="text-container">
-                <div class="body-text-box">Approve Personal Computer Upgrade Plan</div>
+                <div class="body-text-box">🖥️ Approve Personal Computer Upgrade Plan</div>
                 <div class="detail-text-box">Bart Arnaz</div>
             </div>
         </dx-draggable>
@@ -273,7 +273,7 @@ This example creates four Draggable components inside a common `.board` containe
             <DxDraggable id="note-2" class="card">
                 <div class="color-indicator green"></div>
                 <div class="text-container">
-                    <div class="body-text-box">Launch New Website</div>
+                    <div class="body-text-box">👨‍💻 Launch New Website</div>
                     <div class="detail-text-box">Brett Wade</div>
                 </div>
             </DxDraggable>
@@ -289,7 +289,7 @@ This example creates four Draggable components inside a common `.board` containe
             <DxDraggable id="note-4" class="card">
                 <div class="color-indicator yellow"></div>
                 <div class="text-container">
-                    <div class="body-text-box">Approve Personal Computer Upgrade Plan</div>
+                    <div class="body-text-box">🖥️ Approve Personal Computer Upgrade Plan</div>
                     <div class="detail-text-box">Bart Arnaz</div>
                 </div>
             </DxDraggable>
@@ -299,11 +299,9 @@ This example creates four Draggable components inside a common `.board` containe
 ##### React
 
     <!-- tab: App.tsx -->
-    import React, { JSX, useState } from 'react';
-    import { Draggable, type DraggableTypes } from 'devextreme-react/draggable';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
+    import { Draggable } from 'devextreme-react/draggable';
 
-    export default function App(): JSX.Element {
+    function App(): JSX.Element {
         return (
             <div class="board">
                 <Draggable id="note-1" className="card">
@@ -317,7 +315,7 @@ This example creates four Draggable components inside a common `.board` containe
                 <Draggable id="note-2" className="card">
                     <div className="color-indicator green"></div>
                     <div className="text-container">
-                        <div className="body-text-box">Launch New Website</div>
+                        <div className="body-text-box">👨‍💻 Launch New Website</div>
                         <div className="detail-text-box">Brett Wade</div>
                     </div>
                 </Draggable>
@@ -333,7 +331,7 @@ This example creates four Draggable components inside a common `.board` containe
                 <Draggable id="note-4" className="card">
                     <div className="color-indicator yellow"></div>
                     <div className="text-container">
-                        <div className="body-text-box">Approve Personal Computer Upgrade Plan</div>
+                        <div className="body-text-box">🖥️ Approve Personal Computer Upgrade Plan</div>
                         <div className="detail-text-box">Bart Arnaz</div>
                     </div>
                 </Draggable>

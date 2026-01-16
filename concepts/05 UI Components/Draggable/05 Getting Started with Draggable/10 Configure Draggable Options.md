@@ -21,7 +21,9 @@ This example specifies the [boundary](/Documentation/ApiReference/UI_Components/
             id="note-1"
             class="card"
             boundary=".board"
-        ></dx-draggable>
+        >
+            <!-- ... -->
+        </dx-draggable>
 
         <!-- ... -->
     </div>
@@ -35,7 +37,9 @@ This example specifies the [boundary](/Documentation/ApiReference/UI_Components/
                 id="note-1"
                 class="card"
                 boundary=".board"
-            ></DxDraggable>
+            >
+                <!-- ... -->
+            </DxDraggable>
 
             <!-- ... -->
         </div>
@@ -44,18 +48,18 @@ This example specifies the [boundary](/Documentation/ApiReference/UI_Components/
 ##### React
 
     <!-- tab: App.tsx -->
-    import React, { JSX, useState } from 'react';
-    import { Draggable, type DraggableTypes } from 'devextreme-react/draggable';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
+    import { Draggable } from 'devextreme-react/draggable';
 
-    export default function App(): JSX.Element {
+    function App(): JSX.Element {
         return (
             <div class="board">
                 <Draggable
                     id="note-1"
                     className="card"
                     boundary=".board"
-                ></Draggable>
+                >
+                    {/* ... */}
+                </Draggable>
 
                 {/* ... */}
             </div>

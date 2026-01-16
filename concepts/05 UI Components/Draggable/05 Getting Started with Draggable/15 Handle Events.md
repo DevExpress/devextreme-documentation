@@ -293,4 +293,4 @@ To attach handlers to common events, call the [on()](/Documentation/ApiReference
 
 ---
 
-[note] Specify an identical [group](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#group) value for all Draggable instances to ensure the components can interact with each other (in `dxdragenter`, `dxdragleave`, and `dxdrop` handlers).
+[note] Specify an identical [group](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#group) value for all Draggable instances to ensure the components interact with each other (in `dxdragenter`, `dxdragleave`, and `dxdrop` handlers).

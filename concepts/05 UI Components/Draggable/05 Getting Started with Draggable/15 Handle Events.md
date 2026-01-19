@@ -1,4 +1,4 @@
-This example specifies an [onDragStart](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragStart) handler to update card overlapping as follows:
+This example specifies an [onDragStart](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragStart) handler to update card overlapping:
 
 ---
 
@@ -122,7 +122,7 @@ This example also specifies handlers for four common events (not specific to Dra
 
 ##### jQuery
 
-To attach handlers to common events, call [Draggable.on()](/Documentation/ApiReference/UI_Components/dxDraggable/Methods/#onevents) as follows:
+To attach handlers to common events, call [Draggable.on()](/Documentation/ApiReference/UI_Components/dxDraggable/Methods/#onevents):
 
     <!-- tab: index.js -->
     $(function() {
@@ -154,7 +154,7 @@ To attach handlers to common events, call [Draggable.on()](/Documentation/ApiRef
 
 ##### Angular
 
-To attach handlers to common events, call the [on()](/Documentation/ApiReference/Common/Utils/events/#onelement_eventName_handler) utility method within [Draggable.onInitialized()](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onInitialized) as follows:
+To attach handlers to common events, call the [on()](/Documentation/ApiReference/Common/Utils/events/#onelement_eventName_handler) utility method within [Draggable.onInitialized()](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onInitialized):
 
     <!-- tab: app.component.html -->
     <div class="board">
@@ -201,7 +201,7 @@ To attach handlers to common events, call the [on()](/Documentation/ApiReference
 
 ##### Vue
 
-To attach handlers to common events, call the [on()](/Documentation/ApiReference/Common/Utils/events/#onelement_eventName_handler) utility method within [Draggable.onInitialized()](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onInitialized) as follows:
+To attach handlers to common events, call the [on()](/Documentation/ApiReference/Common/Utils/events/#onelement_eventName_handler) utility method within [Draggable.onInitialized()](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onInitialized):
 
     <!-- tab: App.vue -->
     <template>
@@ -249,7 +249,7 @@ To attach handlers to common events, call the [on()](/Documentation/ApiReference
 
 ##### React
 
-To attach handlers to common events, call the [on()](/Documentation/ApiReference/Common/Utils/events/#onelement_eventName_handler) utility method within [Draggable.onInitialized()](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onInitialized) as follows:
+To attach handlers to common events, call the [on()](/Documentation/ApiReference/Common/Utils/events/#onelement_eventName_handler) utility method within [Draggable.onInitialized()](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onInitialized):
 
     <!-- tab: App.tsx -->
     import React, { JSX, useState, useCallback } from 'react';

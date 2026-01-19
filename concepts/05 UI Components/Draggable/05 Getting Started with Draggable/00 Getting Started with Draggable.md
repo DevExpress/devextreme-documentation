@@ -4,7 +4,7 @@ This tutorial guides you through the following steps:
 
 - Add a Draggable to a page.
 - Configure Draggable options.
-- Handle events (specific to Draggable, as well as common events).
+- Handle common events and events specific to Draggable.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/25_2/GettingStartedWith/Draggable/index.html, /Content/Applications/25_2/GettingStartedWith/Draggable/index.js, /Content/Applications/25_2/GettingStartedWith/Draggable/index.css" style="border-radius: 16px; height: 524px;"></div>
 

@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-Specifies card template data.
+Properties of a card content template.
 
 ---
 <!-- Description goes here -->

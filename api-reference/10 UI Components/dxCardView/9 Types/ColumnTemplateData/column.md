@@ -4,7 +4,7 @@ type: Column
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Information about the column.
 
 ---
 <!-- Description goes here -->

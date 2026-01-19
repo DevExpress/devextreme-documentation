@@ -4,7 +4,7 @@ type: CardInfo
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Information about the card.
 
 ---
 <!-- Description goes here -->

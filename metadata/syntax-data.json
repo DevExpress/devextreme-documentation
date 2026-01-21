@@ -6644,6 +6644,11 @@
       "react": "CardTemplateData",
       "vue": "DxCardTemplateData"
     },
+    "cardTemplateData.card": {
+      "angular": "dxo-card",
+      "react": "Card",
+      "vue": "DxCard"
+    },
     "cellInfo.cellElement": {
       "vue": "cell-element"
     },
@@ -7009,6 +7014,11 @@
       "angular": "dxo-column-template-data",
       "react": "ColumnTemplateData",
       "vue": "DxColumnTemplateData"
+    },
+    "columnTemplateData.column": {
+      "angular": "dxo-column",
+      "react": "Column",
+      "vue": "DxColumn"
     },
     "commonIndicator.arrowLength": {
       "vue": "arrow-length"

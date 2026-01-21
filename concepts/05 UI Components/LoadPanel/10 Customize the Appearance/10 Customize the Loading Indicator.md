@@ -1,4 +1,4 @@
-If you need to use a 3rd-party loading indicator inside the LoadPanel, assign its URL to the [indicatorSrc](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/indicatorSrc.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#indicatorSrc') property.
+To use a custom load indicator image, set **indicatorOptions**.[src](Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/indicatorOptions/#src) to the image URL.
 
 ---
 ##### jQuery
@@ -6,14 +6,9 @@ If you need to use a 3rd-party loading indicator inside the LoadPanel, assign it
     <!--JavaScript-->$(function() {
 		$("#loadPanelContainer").dxLoadPanel({
             hideOnOutsideClick: true,
-            indicatorSrc: "https://js.devexpress.com/Content/data/loadingIcons/rolling.svg" 
-        });
-        
-        $("#buttonContainer").dxButton({
-            text: "Show the Load Panel", 
-            onClick: function () {
-                $("#loadPanelContainer").dxLoadPanel("show");
-            } 
+            indicatorOptions: {
+                src: "https://js.devexpress.com/Content/data/loadingIcons/rolling.svg"
+            }
         });
     });
 
@@ -22,128 +17,57 @@ If you need to use a 3rd-party loading indicator inside the LoadPanel, assign it
     <!--HTML-->
     <dx-load-panel
         [hideOnOutsideClick]="true"
-        [(visible)]="isLoadPanelVisible"
-        [indicatorSrc]="indicatorUrl">
+        [indicatorOptions]="indicatorOptions">
     </dx-load-panel>
-    <dx-button
-        text="Show the Load Panel"
-        (onClick)="isLoadPanelVisible = true">
-    </dx-button>
 
     <!--TypeScript-->
-    import { DxLoadPanelModule, DxButtonModule } from "devextreme-angular";
+    import { DxLoadPanelTypes } from 'devextreme-angular/ui/load-panel';
     // ...
     export class AppComponent {
-        isLoadPanelVisible: boolean = false;
-        indicatorUrl: string = "https://js.devexpress.com/Content/data/loadingIcons/rolling.svg";
+        indicatorOptions: DxLoadPanelTypes.LoadPanelIndicatorProperties = {
+            src: "https://js.devexpress.com/Content/data/loadingIcons/rolling.svg"
+        };
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxLoadPanelModule,
-            DxButtonModule
-        ],
-        // ...
-    })
 
 ##### Vue
 
     <template>
-        <div>
-            <DxLoadPanel
-                :hide-on-outside-click="true"
-                v-model:visible="isLoadPanelVisible"
-                :indicator-src="indicatorUrl"
-            />
-            <DxButton
-                text="Show the Load Panel"
-                @click="handleClick"
-            />
-        </div>
+        <DxLoadPanel
+            :hide-on-outside-click="true"
+            :indicator-options="indicatorOptions"
+        />
     </template>
 
-    <script>
-    import 'devextreme/dist/css/dx.light.css';
+    <script setup lang="ts">
+    import DxLoadPanel from 'devextreme-vue/load-panel';
+    import { type DxLoadPanelTypes } from "devextreme-vue/load-panel";
 
-    import { DxLoadPanel } from 'devextreme-vue/load-panel';
-    import { DxButton } from 'devextreme-vue/button';
-
-    export default {
-        components: {
-            DxLoadPanel,
-            DxButton
-        },
-        data() {
-            return {
-                indicatorUrl: "https://js.devexpress.com/Content/data/loadingIcons/rolling.svg",
-                isLoadPanelVisible: false
-            }
-        },
-        methods: {
-            handleClick() {
-                this.isLoadPanelVisible = true;
-            }
-        }
-    }
+    const indicatorOptions: DxLoadPanelTypes.LoadPanelIndicatorProperties = {
+        src: "https://js.devexpress.com/Content/data/loadingIcons/rolling.svg"
+    };
     </script>
 
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import LoadPanel, { LoadPanelTypes } from 'devextreme-react/load-panel';
 
-    import { LoadPanel } from 'devextreme-react/load-panel';
-    import { Button } from 'devextreme-react/button';
+    const indicatorOptions: LoadPanelTypes.LoadPanelIndicatorProperties = {
+        src: "https://js.devexpress.com/Content/data/loadingIcons/rolling.svg"
+    };
 
-    const indicatorUrl = "https://js.devexpress.com/Content/data/loadingIcons/rolling.svg";
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-
-            this.state = {
-                isLoadPanelVisible: false
-            };
-
-            this.handleClick = this.handleClick.bind(this);
-            this.handleHide = this.handleHide.bind(this);
-        }
-
-        handleClick() {
-            this.setState({
-                isLoadPanelVisible: true
-            });
-        }
-
-        handleHide() {
-            this.setState({
-                isLoadPanelVisible: false
-            });
-        }
-
-        render() {
-            return (
-                <div>
-                    <LoadPanel
-                        hideOnOutsideClick={true}
-                        indicatorSrc={indicatorUrl}
-                        visible={this.state.isLoadPanelVisible}
-                        onHidden={this.handleHide}
-                    />
-                    <Button
-                        text="Show the Load Panel"
-                        onClick={this.handleClick}
-                    />
-                </div>
-            );
-        }
+    export default function App() {
+        return (
+            <LoadPanel
+                hideOnOutsideClick={true}
+                indicatorOptions={indicatorOptions}
+            />
+        );
     }
-
-    export default App;
 
 ---
 
-In case you do not need any loading indicator to be shown at all, assign **false** to the [showIndicator](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/showIndicator.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#showIndicator') property.
+To hide a load indicator, disable the [showIndicator](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/showIndicator.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#showIndicator') property.
 
 ---
 ##### jQuery
@@ -153,13 +77,6 @@ In case you do not need any loading indicator to be shown at all, assign **false
             hideOnOutsideClick: true,
             showIndicator: false
         });
-        
-        $("#buttonContainer").dxButton({
-            text: "Show the Load Panel", 
-            onClick: function () {
-                $("#loadPanelContainer").dxLoadPanel("show");
-            } 
-        });
     });
 
 ##### Angular
@@ -167,120 +84,35 @@ In case you do not need any loading indicator to be shown at all, assign **false
     <!--HTML-->
     <dx-load-panel
         [hideOnOutsideClick]="true"
-        [(visible)]="isLoadPanelVisible"
         [showIndicator]="false">
     </dx-load-panel>
-    <dx-button
-        text="Show the Load Panel"
-        (onClick)="isLoadPanelVisible = true">
-    </dx-button>
-
-    <!--TypeScript-->
-    import { DxLoadPanelModule, DxButtonModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        isLoadPanelVisible: boolean = false;
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxLoadPanelModule,
-            DxButtonModule
-        ],
-        // ...
-    })
 
 ##### Vue
 
     <template>
-        <div>
-            <DxLoadPanel
-                :hide-on-outside-click="true"
-                v-model:visible="isLoadPanelVisible"
-                :show-indicator="false"
-            />
-            <DxButton
-                text="Show the Load Panel"
-                @click="handleClick"
-            />
-        </div>
+        <DxLoadPanel
+            :hide-on-outside-click="true"
+            :show-indicator="false"
+        />
     </template>
 
-    <script>
-    import 'devextreme/dist/css/dx.light.css';
-
-    import { DxLoadPanel } from 'devextreme-vue/load-panel';
-    import { DxButton } from 'devextreme-vue/button';
-
-    export default {
-        components: {
-            DxLoadPanel,
-            DxButton
-        },
-        data() {
-            return {
-                isLoadPanelVisible: false
-            }
-        },
-        methods: {
-            handleClick() {
-                this.isLoadPanelVisible = true;
-            }
-        }
-    }
+    <script setup lang="ts">
+    import DxLoadPanel from 'devextreme-vue/load-panel';
     </script>
 
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
-
     import { LoadPanel } from 'devextreme-react/load-panel';
-    import { Button } from 'devextreme-react/button';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-
-            this.state = {
-                isLoadPanelVisible: false
-            };
-
-            this.handleClick = this.handleClick.bind(this);
-            this.handleHide = this.handleHide.bind(this);
-        }
-
-        handleClick() {
-            this.setState({
-                isLoadPanelVisible: true
-            });
-        }
-
-        handleHide() {
-            this.setState({
-                isLoadPanelVisible: false
-            });
-        }
-
-        render() {
-            return (
-                <div>
-                    <LoadPanel
-                        hideOnOutsideClick={true}
-                        showIndicator={false}
-                        visible={this.state.isLoadPanelVisible}
-                        onHidden={this.handleHide}
-                    />
-                    <Button
-                        text="Show the Load Panel"
-                        onClick={this.handleClick}
-                    />
-                </div>
-            );
-        }
+    export default function App() {
+        return (
+            <LoadPanel
+                hideOnOutsideClick={true}
+                showIndicator={false}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

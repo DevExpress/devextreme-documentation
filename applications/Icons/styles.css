@@ -117,10 +117,6 @@
     padding-right: 8px;
 }
 
-.dx-item-content.dx-toolbar-item-content, .dx-textbox.dx-texteditor, .dx-texteditor-container .dx-texteditor-input-container > input {
-    width: 160px;
-}
-
 .icon-char {
     font-size: 12px;
     color: var(--dx-color-icon)

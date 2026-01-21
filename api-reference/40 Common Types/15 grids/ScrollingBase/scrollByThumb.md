@@ -1,7 +1,7 @@
 ---
 uid: common/grids:ScrollingBase.scrollByThumb
 type: Boolean
-default: false
+default: false, true (desktop)
 ---
 ---
 ##### shortDescription

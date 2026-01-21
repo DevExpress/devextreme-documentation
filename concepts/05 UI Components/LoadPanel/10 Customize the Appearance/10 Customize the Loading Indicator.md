@@ -3,7 +3,8 @@ To use a custom load indicator image, set **indicatorOptions**.[src](Documentati
 ---
 ##### jQuery
 
-    <!--JavaScript-->$(function() {
+    <!-- tab: index.js -->
+    $(function() {
 		$("#loadPanelContainer").dxLoadPanel({
             hideOnOutsideClick: true,
             indicatorOptions: {
@@ -14,13 +15,13 @@ To use a custom load indicator image, set **indicatorOptions**.[src](Documentati
 
 ##### Angular
 
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-load-panel
         [hideOnOutsideClick]="true"
         [indicatorOptions]="indicatorOptions">
     </dx-load-panel>
 
-    <!--TypeScript-->
+    <!-- tab: app.component.ts -->
     import { DxLoadPanelTypes } from 'devextreme-angular/ui/load-panel';
     // ...
     export class AppComponent {
@@ -31,6 +32,7 @@ To use a custom load indicator image, set **indicatorOptions**.[src](Documentati
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxLoadPanel
             :hide-on-outside-click="true"
@@ -49,14 +51,15 @@ To use a custom load indicator image, set **indicatorOptions**.[src](Documentati
 
 ##### React
 
+    <!-- tab: App.tsx -->
     import React from 'react';
-    import LoadPanel, { LoadPanelTypes } from 'devextreme-react/load-panel';
+    import LoadPanel, { type LoadPanelTypes } from 'devextreme-react/load-panel';
 
     const indicatorOptions: LoadPanelTypes.LoadPanelIndicatorProperties = {
         src: "https://js.devexpress.com/Content/data/loadingIcons/rolling.svg"
     };
 
-    export default function App() {
+    function App() {
         return (
             <LoadPanel
                 hideOnOutsideClick={true}
@@ -65,6 +68,8 @@ To use a custom load indicator image, set **indicatorOptions**.[src](Documentati
         );
     }
 
+    export default App;
+
 ---
 
 To hide a load indicator, disable the [showIndicator](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/showIndicator.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#showIndicator') property.
@@ -72,7 +77,8 @@ To hide a load indicator, disable the [showIndicator](/api-reference/10%20UI%20C
 ---
 ##### jQuery
 
-    <!--JavaScript-->$(function() {
+    <!-- tab: index.js -->
+    $(function() {
 		$("#loadPanelContainer").dxLoadPanel({
             hideOnOutsideClick: true,
             showIndicator: false
@@ -81,7 +87,7 @@ To hide a load indicator, disable the [showIndicator](/api-reference/10%20UI%20C
 
 ##### Angular
 
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-load-panel
         [hideOnOutsideClick]="true"
         [showIndicator]="false">
@@ -89,6 +95,7 @@ To hide a load indicator, disable the [showIndicator](/api-reference/10%20UI%20C
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxLoadPanel
             :hide-on-outside-click="true"
@@ -102,10 +109,11 @@ To hide a load indicator, disable the [showIndicator](/api-reference/10%20UI%20C
 
 ##### React
 
+    <!-- tab: App.tsx -->
     import React from 'react';
     import { LoadPanel } from 'devextreme-react/load-panel';
 
-    export default function App() {
+    function App() {
         return (
             <LoadPanel
                 hideOnOutsideClick={true}
@@ -113,6 +121,8 @@ To hide a load indicator, disable the [showIndicator](/api-reference/10%20UI%20C
             />
         );
     }
+
+    export default App;
 
 ---
 

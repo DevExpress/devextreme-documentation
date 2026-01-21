@@ -22,7 +22,7 @@ To use a custom load indicator image, set **indicatorOptions**.[src](Documentati
     </dx-load-panel>
 
     <!-- tab: app.component.ts -->
-    import { DxLoadPanelTypes } from 'devextreme-angular/ui/load-panel';
+    import type { DxLoadPanelTypes } from 'devextreme-angular/ui/load-panel';
     // ...
     export class AppComponent {
         indicatorOptions: DxLoadPanelTypes.LoadPanelIndicatorProperties = {

@@ -16,7 +16,19 @@ $(() => {
     .dxDataGrid({
       dataSource: tasks,
       keyExpr: "id",
-      columns: ["task", "dueDate", "done"],
+      columns: ["task", "dueDate", "done", {
+        type: 'buttons',
+        buttons: ['delete'],
+        headerCellTemplate() {
+          return $('<div>').dxButton({
+            icon: 'add',
+            stylingMode: 'text',
+            onClick() {
+              grid.addRow();
+            }
+          })
+        }
+      }],
       editing: {
         mode: "cell",
         allowUpdating: true,

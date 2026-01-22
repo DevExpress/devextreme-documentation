@@ -1,4 +1,4 @@
-To use a custom load indicator image, set **indicatorOptions**.[src](Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/indicatorOptions/#src) to the image URL.
+To use a custom load indicator image, set **indicatorOptions**.[src](/api-reference/10%20UI%20Components/dxLoadPanel/9%20Types/LoadPanelIndicatorProperties/src.md 'Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/indicatorOptions/#src') to the image URL.
 
 ---
 ##### jQuery

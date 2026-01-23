@@ -26,7 +26,7 @@ To bind a UI component to JSON data, pass the data URL to the UI component's [da
         styleUrls: ['./app.component.css']
     })
     export class AppComponent {
-        jsonUrl: String = 'https://jsonplaceholder.typicode.com/posts'
+        jsonUrl: string = 'https://jsonplaceholder.typicode.com/posts'
     }
 
     <!-- tab: app.module.ts -->
@@ -61,47 +61,37 @@ To bind a UI component to JSON data, pass the data URL to the UI component's [da
     <script>
     import 'devextreme/dist/css/dx.light.css';
 
-    import DxDataGrid from 'devextreme-vue/data-grid';
+    import { DxDataGrid } from 'devextreme-vue/data-grid';
 
-    export default {
-        components: {
-            DxDataGrid
-        },
-        data() {
-            return {
-                jsonUrl: 'https://jsonplaceholder.typicode.com/posts'
-            }
-        }
-    }
+    const jsonUrl: string = 'https://jsonplaceholder.typicode.com/posts';
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
 
     import 'devextreme/dist/css/dx.light.css';
+    import { DataGrid } from 'devextreme-react/data-grid';
 
-    import DataGrid from 'devextreme-react/data-grid';
+    const jsonUrl: string = 'https://jsonplaceholder.typicode.com/posts';
 
-    const jsonUrl = 'https://jsonplaceholder.typicode.com/posts';
-
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid
-                    dataSource={jsonUrl}
-                />
-            );
-        }
+    function App {
+        return (
+            <DataGrid
+                dataSource={jsonUrl}
+            />
+        );
     }
     export default App;
 
 ---
 
-This configuration enables the UI component to request data objects. To specify the key field, customize the request, or process response data, use a [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/'). Implement its [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function and enable the raw [loadMode](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/loadMode.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#loadMode') (except in the DataGrid, TreeList, PivotGrid, and Scheduler UI components, in which this mode is already enabled).
+[note] DevExtreme components do not support data shaping operations, such as filtering, when you assign JSON data directly to **dataSource**.
 
-The following code shows a **CustomStore** configuration in which the **load** function sends custom parameters with the request:
+To shape data, configure a [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/'). Specify the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') method and set [loadMode](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/loadMode.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#loadMode') to *"raw"* (default in DataGrid, TreeList, PivotGrid, and Scheduler).
+
+The following code configures **CustomStore**.**load** to include custom parameters in each request:
 
 ---
 ##### jQuery
@@ -111,20 +101,20 @@ The following code shows a **CustomStore** configuration in which the **load** f
         $("#listContainer").dxList({
             dataSource: new DevExpress.data.CustomStore({
                 key: "id",
-                loadMode: "raw", // omit in the DataGrid, TreeList, PivotGrid, and Scheduler
+                loadMode: "raw", // Default in DataGrid, TreeList, PivotGrid, and Scheduler
                 load: function() {
                     var d = $.Deferred();
                     return $.getJSON("https://mydomain.com/MyDataService", { 
-                            "param1": "value1",
-                            "param2": "value2"
-                        })
-                        .done(function(result) {
-                            // You can process the response here
-                            d.resolve(result);
-                        })
-                        .fail(function() {
-                            throw "Data loading error";
-                        });
+                        "param1": "value1",
+                        "param2": "value2"
+                    })
+                    .done(function(result) {
+                        // Process the response here
+                        d.resolve(result);
+                    })
+                    .fail(function() {
+                        throw "Data loading error";
+                    });
                 }
             })
         });
@@ -150,19 +140,19 @@ The following code shows a **CustomStore** configuration in which the **load** f
         constructor(private http: HttpClient) {
             this.jsonDataSource = new CustomStore({
                 key: 'id',
-                loadMode: 'raw', // omit in the DataGrid, TreeList, PivotGrid, and Scheduler
+                loadMode: 'raw', // Default in DataGrid, TreeList, PivotGrid, and Scheduler
                 load: () => {
                     let params: HttpParams = new HttpParams();
                     params.set('param1', 'value1')
-                          .set('param2', 'value2');
+                        .set('param2', 'value2');
                     return lastValueFrom(this.http.get('https://mydomain.com/MyDataService', { 
-                            params: params
-                        }))
-                        .then(result => {
-                            // You can process the response here
-                            return result;
-                        })
-                        .catch(() => { throw 'Data loading error' });
+                        params: params
+                    }))
+                    .then(result => {
+                        // Process the response here
+                        return result;
+                    })
+                    .catch(() => { throw 'Data loading error' });
                 }
             });
         }
@@ -204,11 +194,11 @@ The following code shows a **CustomStore** configuration in which the **load** f
         />
     </template>
 
-    <script>
+    <script setup>
     import 'devextreme/dist/css/dx.light.css';
 
-    import DxList from 'devextreme-vue/list';
-    import CustomStore from 'devextreme/data/custom_store';
+    import { DxList } from 'devextreme-vue/list';
+    import { CustomStore } from 'devextreme/data/custom_store';
     import 'whatwg-fetch';
 
     function handleErrors(response) {
@@ -220,30 +210,19 @@ The following code shows a **CustomStore** configuration in which the **load** f
 
     const jsonDataSource = new CustomStore({
         key: 'id',
-        loadMode: 'raw', // omit in the DataGrid, TreeList, PivotGrid, and Scheduler
+        loadMode: 'raw', // Default in DataGrid, TreeList, PivotGrid, and Scheduler
         load: () => {
             let params = '?param1=value1&param2=value2';
             return fetch('https://mydomain.com/MyDataService' + params)
                 .then(handleErrors)
                 .then(response => response.json())
                 .then(result => {
-                    // You can process the response here
+                    // Process the response here
                     return result;
                 })
                 .catch(() => { throw 'Network error' });
         }
     });
-
-    export default {
-        components: {
-            DxList
-        },
-        data() {
-            return {
-                jsonDataSource
-            }
-        }
-    }
     </script>
 
 ##### React
@@ -253,8 +232,8 @@ The following code shows a **CustomStore** configuration in which the **load** f
 
     import 'devextreme/dist/css/dx.light.css';
 
-    import List from 'devextreme-react/list';
-    import CustomStore from 'devextreme/data/custom_store';
+    import { List } from 'devextreme-react/list';
+    import { CustomStore } from 'devextreme/data/custom_store';
     import 'whatwg-fetch';
 
     function handleErrors(response) {
@@ -266,28 +245,26 @@ The following code shows a **CustomStore** configuration in which the **load** f
 
     const jsonDataSource = new CustomStore({
         key: 'id',
-        loadMode: 'raw', // omit in the DataGrid, TreeList, PivotGrid, and Scheduler
+        loadMode: 'raw', // Default in DataGrid, TreeList, PivotGrid, and Scheduler
         load: () => {
             let params = '?param1=value1&param2=value2';
             return fetch('https://mydomain.com/MyDataService' + params)
                 .then(handleErrors)
                 .then(response => response.json())
                 .then(result => {
-                    // You can process the response here
+                    // Process the response here
                     return result;
                 })
                 .catch(() => { throw 'Network error' });
         }
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                <List
-                    dataSource={jsonDataSource}
-                />
-            );
-        }
+    function App() {
+        return (
+            <List
+                dataSource={jsonDataSource}
+            />
+        );
     }
     export default App;
 

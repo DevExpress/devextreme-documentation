@@ -87,7 +87,7 @@ To bind a UI component to JSON data, pass the data URL to the UI component's [da
 
 ---
 
-[note] DevExtreme components do not support data shaping operations (such as filtering) when you assign JSON data directly to **dataSource**.
+[note] DevExtreme components do not support data shaping operations, such as filtering, when you assign JSON data directly to **dataSource**.
 
 To shape data, configure a [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/'). Specify the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') method and set [loadMode](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/loadMode.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#loadMode') to *"raw"* (default in DataGrid, TreeList, PivotGrid, and Scheduler).
 

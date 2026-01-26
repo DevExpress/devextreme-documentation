@@ -2,7 +2,7 @@ DevExtreme is supplied with the [XmlaStore](/api-reference/30%20Data%20Layer/Xml
 
 [note] If you use another OLAP server that supports an XMLA standard, refer to the documentation for this server and learn how to configure HTTP access to it, then jump to step 6 of the list below.
 
-1.&nbsp;Install Microsoft Analysis Services. For details, refer to the <a href="https://msdn.microsoft.com/en-us/library/ms143764(v=sql.100" target="_blank">How to: Install Analysis Services by Using Setup</a>.aspx) MSDN article.
+1.Install Microsoft Analysis Services. For details, refer to the [How to: Install Analysis Services by Using Setup](https://learn.microsoft.com/en-us/previous-versions/sql/sql-server-2008/ms143764(v=sql.100)) MSDN article.
  
 2.&nbsp;Install **SQL Server Data Tools ― Business Intelligence** for your version of Visual Studio (<a href="https://www.microsoft.com/en-us/download/details.aspx?id=36843" target="_blank">Visual Studio 2012 version</a>).
  

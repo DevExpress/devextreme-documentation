@@ -18,8 +18,11 @@
   padding-top: 32px
 }
 
-#task-grid .dx-datagrid-headers {
+#task-grid .dx-datagrid-headers, #task-grid .dx-datagrid .dx-datagrid-table .dx-header-row>td:first-child {
   border-top-left-radius: 8px;
+}
+
+#task-grid .dx-datagrid-headers, #task-grid .dx-datagrid .dx-datagrid-table .dx-header-row>td:last-child {
   border-top-right-radius: 8px;
 }
 
@@ -38,9 +41,10 @@
 }
 
 .dx-dialog .dx-toolbar-center {
-  margin: 0 !important;
-  width: calc(100% + 8px);
+  margin: -8px !important;
+  width: calc(100% + 16px);
   border-spacing: 8px 0;
+  float: none !important;
 }
 
 .dx-toolbar-center .dx-button {

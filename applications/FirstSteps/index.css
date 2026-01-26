@@ -3,7 +3,7 @@
   gap: 20px;
   max-width: 900px;
   margin: 40px auto;
-  padding: 20px;
+  padding: 80px;
   box-sizing: border-box;
 }
 
@@ -35,4 +35,22 @@
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-bottom-style: none;
+}
+
+.dx-dialog .dx-toolbar-center {
+  margin: 0 !important;
+  width: calc(100% + 8px);
+  border-spacing: 8px 0;
+}
+
+.dx-toolbar-center .dx-button {
+  width: 100%;
+}
+
+.dx-toolbar-center .dx-item {
+  padding-right: 0 !important;
+}
+
+.dx-link-delete::before {
+  color: var(--dx-color-danger)
 }

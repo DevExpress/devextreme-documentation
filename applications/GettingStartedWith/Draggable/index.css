@@ -54,7 +54,7 @@ body {
     }
 }
 
-.card {
+.note {
     z-index: 0;
     max-width: 320px;
     min-width: 180px;
@@ -109,10 +109,10 @@ body {
     color: light-dark(#707070, #999);
 }
 
-.card.dx-draggable-dragging {
+.note.dx-draggable-dragging {
     box-shadow: 0 4px 8px rgba(0 0 0 / 28%);
 }
 
-.card.overlapped {
+.note.overlapped {
     outline: 1px dashed var(--dx-color-primary);
 }

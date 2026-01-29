@@ -1,8 +1,9 @@
-This example specifies an [onDragStart](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragStart) handler to update card overlapping:
 
 ---
 
 ##### jQuery
+
+This example specifies an [onDragStart](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragStart) handler to update note overlapping:
 
     <!-- tab: index.js -->
     $(function() {
@@ -21,96 +22,6 @@ This example specifies an [onDragStart](/Documentation/ApiReference/UI_Component
         }
     });
 
-##### Angular
-
-    <!-- tab: app.component.html -->
-    <div class="board">
-        <dx-draggable ...
-            (onDragStart)="handleDragStart($event)"
-        ></dx-draggable>
-
-        <!-- ... -->
-    </div>
-
-    <!-- tab: app.component.ts -->
-    import { type DxDraggableTypes } from 'devextreme-angular/ui/draggable';
-
-    // ...
-    export class AppComponent {
-        z = 1;
-
-        changeZIndex(element: HTMLElement) {
-            element.style.zIndex = this.z.toString();
-            this.z++;
-        }
-
-        handleDragStart(e: DxDraggableTypes.DragStartEvent) {
-            this.changeZIndex(e.element);
-        }
-    }
-
-##### Vue
-
-    <!-- tab: App.vue -->
-    <template>
-        <div class="board">
-            <DxDraggable ...
-                @drag-start="handleDragStart"
-            />
-
-            <!-- ... -->
-        </div>
-    </template>
-
-    <script setup lang="ts">
-    import { DxDraggable, type DxDraggableTypes } from "devextreme-vue/draggable";
-
-    let z = 1;
-
-    function changeZIndex(element: HTMLElement) {
-        element.style.zIndex = z.toString();
-        z++;
-    }
-
-    function handleDragStart(e: DxDraggableTypes.DragStartEvent) {
-        changeZIndex(e.element);
-    }
-
-    </script>
-
-##### React
-
-    <!-- tab: App.tsx -->
-    import React, { JSX, useState, useCallback } from 'react';
-    import { Draggable, type DraggableTypes } from 'devextreme-react/draggable';
-
-    function App(): JSX.Element {
-        const [, setZ] = useState(1);
-
-        const changeZIndex = useCallback((element: HTMLElement) => {
-            setZ((prevValue) => {
-                element.style.zIndex = prevValue.toString();
-                return prevValue + 1;
-            });
-        }, []);
-
-        const handleDragStart = useCallback((e: DraggableTypes.DragStartEvent) => {
-            changeZIndex(e.element);
-        }, []);
-
-        return (
-            <div class="board">
-                <Draggable ...
-                    onDragStart={handleDragStart}
-                />
-
-                {/* ... */}
-            </div>
-        );
-    }
-
----
-
 This example also specifies handlers for four common events (not specific to Draggable):
 
 - `click`
@@ -118,16 +29,12 @@ This example also specifies handlers for four common events (not specific to Dra
 - `dxdragleave`
 - `dxdrop`
 
----
-
-##### jQuery
-
 To attach handlers to common events, call [Draggable.on()](/Documentation/ApiReference/UI_Components/dxDraggable/Methods/#onevents):
 
     <!-- tab: index.js -->
     $(function() {
         $("#note-1").dxDraggable({
-            group: 'cards',
+            group: 'notes',
 
             // ...
         }).on({
@@ -152,145 +59,220 @@ To attach handlers to common events, call [Draggable.on()](/Documentation/ApiRef
         }
     });
 
+[note] Specify an identical [group](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#group) value for all Draggable instances to ensure the components interact with each other (in `dxdragenter`, `dxdragleave`, and `dxdrop` handlers).
+
 ##### Angular
 
-To attach handlers to common events, call the [on()](/Documentation/ApiReference/Common/Utils/events/#onelement_eventName_handler) utility method within [Draggable.onInitialized()](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onInitialized):
+This example specifies the following event handlers to update note overlapping:
+
+- [onDragStart](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragStart)
+- [onDragMove](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragMove)
+- [onDragEnd](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragEnd)
+
+This example also implements a `(click)` handler on the parent `<div>` element within the `note` component:
 
     <!-- tab: app.component.html -->
-    <div class="board">
-        <dx-draggable ...
-            group="cards"
-            (onInitialized)="handleInit($event)"
-        ></dx-draggable>
-
-        <!-- ... -->
-    </div>
-
-    <!-- tab: app.component.ts -->
-    import { type DxDraggableTypes } from 'devextreme-angular/ui/draggable';
-    import { EventObject } from 'devextreme/common/core/events';
-    import { on } from "devextreme/events";
-
-    // ...
-    export class AppComponent {
-        handleClick(e: EventObject) {
-            this.changeZIndex(e.currentTarget as HTMLElement);
-        }
-
-        handleDragEnter(e: EventObject) {
-            const target: HTMLElement = e.target as HTMLElement;
-
-            target.classList.add('overlapped');
-        }
-
-        handleDragStop(e: EventObject) {
-            const target: HTMLElement = e.target as HTMLElement;
-
-            target.classList.remove('overlapped');
-        }
-
-        handleInit(e: DxDraggableTypes.InitializedEvent) {
-            on(e.element!, 'click', this.handleClick.bind(this));
-
-            on(e.element!, 'dxdragenter', this.handleDragEnter);
-
-            on(e.element!, 'dxdragleave', this.handleDragStop);
-            on(e.element!, 'dxdrop', this.handleDragStop);
-        }
-    }
+    aa
 
 ##### Vue
 
-To attach handlers to common events, call the [on()](/Documentation/ApiReference/Common/Utils/events/#onelement_eventName_handler) utility method within [Draggable.onInitialized()](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onInitialized):
+This example specifies the following event handlers to update note overlapping:
 
-    <!-- tab: App.vue -->
+- [onDragStart](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragStart)
+- [onDragMove](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragMove)
+- [onDragEnd](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragEnd)
+
+This example also implements a `@click` handler on the parent `<div>` element within the `Note` component:
+
+    <!-- tab: Note.vue -->
     <template>
-        <div class="board">
-            <DxDraggable ...
-                group="cards"
-                @initialized="handleInit"
-            />
-
-            <!-- ... -->
-        </div>
+        <DxDraggable ...
+            :style="{zIndex: currentZIndex}"
+            @drag-start="handleDragStart"
+            @drag-move="handleDragMove"
+            @drag-end="handleDragEnd"
+        >
+            <div
+                :class="`note ${isOverlapped ? 'overlapped' : ''}`"
+                @click="handleClick"
+            >
+                <!-- ... -->
+            </div>
+        </DxDraggable>
     </template>
 
     <script setup lang="ts">
-    import { DxDraggable, type DxDraggableTypes } from "devextreme-vue/draggable";
-    import { on } from "devextreme/events";
-    import { type EventObject } from "devextreme/common/core/events";
+    import { ref } from "vue";
+    // ...
 
-    function handleClick(e: EventObject) {
-        changeZIndex(e.currentTarget as HTMLElement);
+    const overlappedComponentId = ref<string | null>(null);
+    const currentZIndex = ref<number>(0);
+
+    function updateZIndex() {
+        const zIndexToUpdate = zIndex.value + 1;
+        currentZIndex.value = zIndexToUpdate;
+        zIndex.value = zIndexToUpdate;
     }
 
-    function handleDragEnter(e: EventObject) {
-        const target: HTMLElement = e.target as HTMLElement;
-
-        target.classList.add('overlapped');
+    function handleDragStart() {
+        updateZIndex();
     }
 
-    function handleDragStop(e: EventObject) {
-        const target: HTMLElement = e.target as HTMLElement;
-
-        target.classList.remove('overlapped');
+    function handleDragMove(e: DxDraggableTypes.DragMoveEvent) {
+        if (e.toComponent !== e.component) {
+            const toComponentId = e.toComponent.element().id;
+            startOverlap(toComponentId);
+            overlappedComponentId.value = toComponentId;
+        } else {
+            stopOverlap();
+            overlappedComponentId.value = null;
+        }
     }
 
-    function handleInit(e: DxDraggableTypes.InitializedEvent) {
-        on(e.element!, "click", handleClick);
-
-        on(e.element!, "dxdragenter", handleDragEnter);
-
-        on(e.element!, "dxdragleave", handleDragStop);
-        on(e.element!, "dxdrop", handleDragStop);
+    function handleDragEnd() {
+        stopOverlap();
     }
 
+    function handleClick() {
+        updateZIndex();
+    }
     </script>
+
+    <!-- tab: App.vue -->
+    <template>
+        <div class="boundary-text">Dragging Boundary</div>
+        <div class="board">
+            <template v-for="note in notes">
+            <Note ...
+                :is-overlapped="overlappedId === note.id"
+                v-model:z-index="zIndex"
+                :start-overlap="startOverlap"
+                :stop-overlap="stopOverlap"
+            />
+            </template>
+        </div>
+        <div class="boundary-text">Dragging Boundary</div>
+    </template>
+
+    <script setup lang="ts">
+    import { ref } from "vue";
+    // ...
+
+    const overlappedId = ref<string | null>(null);
+    const zIndex = ref<number>(0);
+
+    function startOverlap(id: string) {
+        overlappedId.value = id;
+    }
+
+    function stopOverlap() {
+        overlappedId.value = null;
+    }
+    </script>
+
 
 ##### React
 
-To attach handlers to common events, call the [on()](/Documentation/ApiReference/Common/Utils/events/#onelement_eventName_handler) utility method within [Draggable.onInitialized()](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onInitialized):
+This example specifies the following event handlers to update note overlapping:
 
-    <!-- tab: App.tsx -->
-    import React, { JSX, useState, useCallback } from 'react';
-    import { Draggable, type DraggableTypes } from 'devextreme-react/draggable';
-    import { on } from 'devextreme/common/core/events';
-    import { type EventObject } from 'devextreme/common/core/events';
+- [onDragStart](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragStart)
+- [onDragMove](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragMove)
+- [onDragEnd](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragEnd)
 
-    function App(): JSX.Element {
-        const handleClick = useCallback((e: EventObject) => {
-            changeZIndex(e.currentTarget as HTMLElement);
+This example also implements an `onClick` handler on the parent `<div>` element within the `Note` component:
+
+    <!-- tab: Note.tsx -->
+    import React, {
+        useCallback, useMemo, useRef, useState,
+    } from 'react';
+    // ...
+
+    function Note({ ... }: NoteProps) {
+        const overlappedComponentId = useRef<string | null>(null);
+        const [currentZIndex, setCurrentZIndex] = useState(0);
+
+        const style = useMemo(() => ({ zIndex: currentZIndex }), [currentZIndex]);
+
+        const updateZIndex = useCallback(() => {
+            const zIndexToUpdate = zIndex.current + 1;
+            setCurrentZIndex(zIndexToUpdate);
+            zIndex.current = zIndexToUpdate;
         }, []);
 
-        const handleDragEnter = useCallback((e: EventObject) => {
-            const target: HTMLElement = e.target as HTMLElement;
-            target.classList.add('overlapped');
+        const handleDragStart = useCallback(() => {
+            updateZIndex();
         }, []);
 
-        const handleDragStop = useCallback((e: EventObject) => {
-            const target: HTMLElement = e.target as HTMLElement;
-            target.classList.remove('overlapped');
+        const handleDragMove = useCallback((e: DraggableTypes.DragMoveEvent) => {
+            if (e.toComponent !== e.component) {
+                const toComponentId = e.toComponent.element().id;
+                startOverlap(toComponentId);
+                overlappedComponentId.current = toComponentId;
+            } else {
+                stopOverlap();
+                overlappedComponentId.current = null;
+            }
         }, []);
 
-        const handleInit = useCallback((e: DraggableTypes.InitializedEvent) => {
-            on(e.element!, 'click', handleClick);
-            on(e.element!, 'dxdragenter', handleDragEnter);
-            on(e.element!, 'dxdragleave', handleDragStop);
-            on(e.element!, 'dxdrop', handleDragStop);
+        const onClick = useCallback(() => {
+            updateZIndex();
+        }, [updateZIndex]);
+
+        const handleDragEnd = useCallback(() => {
+            stopOverlap();
         }, []);
 
         return (
-            <div class="board">
-                <Draggable ...
-                    group="cards"
-                    onInitialized={handleInit}
-                />
-
+            <Draggable ...
+                style={style}
+                onDragStart={handleDragStart}
+                onDragMove={handleDragMove}
+                onDragEnd={handleDragEnd}
+            >
+            <div
+                className={`note ${isOverlapped ? 'overlapped' : ''}`}
+                onClick={onClick}
+            >
                 {/* ... */}
+            </div>
+            </Draggable>
+        );
+    }
+
+    <!-- tab: App.tsx -->
+    import { useCallback, useRef, useState } from 'react';
+    // ...
+
+    function App(): JSX.Element {
+        const zIndex = useRef(0);
+        const [overlappedId, setOverlappedId] = useState<string | null>(null);
+
+        const startOverlap = useCallback((id: string) => {
+            setOverlappedId(id);
+        }, []);
+
+        const stopOverlap = useCallback(() => {
+            setOverlappedId(null);
+        }, []);
+
+        return (
+            <div className="demo-container dx-theme-fluent-typography">
+            <div className="boundary-text">Dragging Boundary</div>
+            <div className="board">
+                {notes.map((note) => (
+                    <Note
+                        {...note}
+                        key={note.id}
+                        isOverlapped={overlappedId === note.id}
+                        zIndex={zIndex}
+                        startOverlap={startOverlap}
+                        stopOverlap={stopOverlap}
+                    />
+                ))}
+            </div>
+            <div className="boundary-text">Dragging Boundary</div>
             </div>
         );
     }
 
 ---
-
-[note] Specify an identical [group](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#group) value for all Draggable instances to ensure the components interact with each other (in `dxdragenter`, `dxdragleave`, and `dxdrop` handlers).

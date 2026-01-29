@@ -112,13 +112,9 @@ Draggable does not include default visual elements. Specify custom markup as fol
     <html>
         <head>
             <!-- ... -->
-            <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_25_2/css/dx.fluent.blue.light.css">
-            <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_25_2/js/dx.all.js"></script>
-            <script type="text/javascript" src="index.js"></script>
         </head>
         <body class="dx-viewport">
-            <div id="note-1" class="card">
+            <div id="note-1" class="note">
                 <div class="color-indicator blue"></div>
                 <div class="text-container">
                     <div class="body-text-box">Install New Router in Dev Room</div>
@@ -128,54 +124,7 @@ Draggable does not include default visual elements. Specify custom markup as fol
         </body>
     </html>
 
-##### Angular
-
-    <!-- tab: app.component.html -->
-    <dx-draggable id="note-1" class="card">
-        <div class="color-indicator blue"></div>
-        <div class="text-container">
-            <div class="body-text-box">Install New Router in Dev Room</div>
-            <div class="detail-text-box">Amelia Harper</div>
-        </div>
-    </dx-draggable>
-
-##### Vue
-
-    <!-- tab: App.vue -->
-    <template>
-        <DxDraggable id="note-1" class="card">
-            <div class="color-indicator blue"></div>
-            <div class="text-container">
-                <div class="body-text-box">Install New Router in Dev Room</div>
-                <div class="detail-text-box">Amelia Harper</div>
-            </div>
-        </DxDraggable>
-    </template>
-
-##### React
-
-    <!-- tab: App.tsx -->
-    import { Draggable } from 'devextreme-react/draggable';
-
-    function App(): JSX.Element {
-        return (
-            <Draggable id="note-1" className="card">
-                <div className="color-indicator blue"></div>
-                <div className="text-container">
-                    <div className="body-text-box">Install New Router in Dev Room</div>
-                    <div className="detail-text-box">Amelia Harper</div>
-                </div>
-            </Draggable>
-        );
-    }
-
----
-
 This example creates four Draggable components inside a common `.board` container:
-
----
-
-##### jQuery
 
     <!-- tab: index.js -->
     $(function() {
@@ -187,7 +136,7 @@ This example creates four Draggable components inside a common `.board` containe
 
     <!-- tab: index.html -->
     <div class="board">
-        <div id="note-1" class="card">
+        <div id="note-1" class="note">
             <div class="color-indicator blue"></div>
             <div class="text-container">
                 <div class="body-text-box">Install New Router in Dev Room</div>
@@ -195,7 +144,7 @@ This example creates four Draggable components inside a common `.board` containe
             </div>
         </div>
 
-        <div id="note-2" class="card">
+        <div id="note-2" class="note">
             <div class="color-indicator green"></div>
             <div class="text-container">
                 <div class="body-text-box">👨‍💻 Launch New Website</div>
@@ -203,7 +152,7 @@ This example creates four Draggable components inside a common `.board` containe
             </div>
         </div>
 
-        <div id="note-3" class="card">
+        <div id="note-3" class="note">
             <div class="color-indicator red"></div>
             <div class="text-container">
                 <div class="body-text-box">Prepare 2026 Marketing Plan</div>
@@ -211,7 +160,7 @@ This example creates four Draggable components inside a common `.board` containe
             </div>
         </div>
 
-        <div id="note-4" class="card">
+        <div id="note-4" class="note">
             <div class="color-indicator yellow"></div>
             <div class="text-container">
                 <div class="body-text-box">🖥️ Approve Personal Computer Upgrade Plan</div>
@@ -223,78 +172,207 @@ This example creates four Draggable components inside a common `.board` containe
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <div class="board">
-        <dx-draggable id="note-1" class="card">
-            <div class="color-indicator blue"></div>
-            <div class="text-container">
-                <div class="body-text-box">Install New Router in Dev Room</div>
-                <div class="detail-text-box">Amelia Harper</div>
-            </div>
-        </dx-draggable>
+    <dx-draggable id="note-1" class="note">
+        <div class="color-indicator"></div>
+        <div class="text-container">
+            <div class="body-text-box">Install New Router in Dev Room</div>
+            <div class="detail-text-box">Amelia Harper</div>
+        </div>
+    </dx-draggable>
 
-        <dx-draggable id="note-2" class="card">
-            <div class="color-indicator green"></div>
-            <div class="text-container">
-                <div class="body-text-box">👨‍💻 Launch New Website</div>
-                <div class="detail-text-box">Brett Wade</div>
-            </div>
-        </dx-draggable>
+This example defines Draggable markup within a custom component, `note`.
 
-        <dx-draggable id="note-3" class="card">
-            <div class="color-indicator red"></div>
-            <div class="text-container">
-                <div class="body-text-box">Prepare 2026 Marketing Plan</div>
-                <div class="detail-text-box">Robert Reagan</div>
-            </div>
-        </dx-draggable>
+This component configures the `NoteInfo` interface to specify note information. Use this interface within an array to define four notes. Implement the `note` component within a `@for` directive to add these notes to the app:
 
-        <dx-draggable id="note-4" class="card">
-            <div class="color-indicator yellow"></div>
+    <!-- tab: note.component.html -->
+    <div>
+        <dx-draggable
+            [id]="id()"
+            [group]="group()"
+            [boundary]="boundary()"
+            class="note"
+        >
+            <div class="color-indicator"></div>
             <div class="text-container">
-                <div class="body-text-box">🖥️ Approve Personal Computer Upgrade Plan</div>
-                <div class="detail-text-box">Bart Arnaz</div>
+                <div class="body-text-box">{{ task() }}</div>
+                <div class="detail-text-box">{{ assignee() }}</div>
             </div>
         </dx-draggable>
     </div>
+
+    <!-- tab: note.component.ts -->
+    import { Component, input, model } from '@angular/core';
+
+    export interface NoteInfo {
+        id: string;
+        task: string;
+        assignee: string;
+    }
+
+    @Component({
+        selector: 'note',
+        templateUrl: './note.component.html',
+        styleUrls: ['../app/app.component.scss'],
+    })
+    export class NoteComponent {
+        id = input<string>();
+        group = input<string>('notes');
+        boundary = input<string>('.board')
+        task = input<string>();
+        assignee = input<string>();
+        // ...
+
+    }
+
+    <!-- tab: app.component.html -->
+    <div class="boundary-text">Dragging Boundary</div>
+    <div class="board">
+        @for (note of notes; track note) {
+        <note
+            [id]="note.id"
+            [task]="note.task"
+            [assignee]="note.assignee"
+        ></note>
+        }
+    </div>
+    <div class="boundary-text">Dragging Boundary</div>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import { type NoteInfo } from 'src/note/note.component';
+
+    // ...
+    export class AppComponent {
+        notes: NoteInfo[] = [{
+            id: 'note-1',
+            task: 'Install New Router in Dev Room',
+            assignee: 'Amelia Harper',
+        }, {
+            id: 'note-2',
+            task: '👨‍💻 Launch New Website',
+            assignee: 'Brett Wade',
+        }, {
+            id: 'note-3',
+            task: 'Prepare 2026 Marketing Plan',
+            assignee: 'Robert Reagan',
+        }, {
+            id: 'note-4',
+            task: '🖥️ Approve Personal Computer Upgrade Plan',
+            assignee: 'Bart Arnaz',
+        }];
+    }
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <div class="board">
-            <DxDraggable id="note-1" class="card">
-                <div class="color-indicator blue"></div>
+        <DxDraggable id="note-1">
+            <div class="note">
+                <div class="color-indicator"></div>
                 <div class="text-container">
                     <div class="body-text-box">Install New Router in Dev Room</div>
                     <div class="detail-text-box">Amelia Harper</div>
                 </div>
-            </DxDraggable>
-
-            <DxDraggable id="note-2" class="card">
-                <div class="color-indicator green"></div>
-                <div class="text-container">
-                    <div class="body-text-box">👨‍💻 Launch New Website</div>
-                    <div class="detail-text-box">Brett Wade</div>
-                </div>
-            </DxDraggable>
-
-            <DxDraggable id="note-3" class="card">
-                <div class="color-indicator red"></div>
-                <div class="text-container">
-                    <div class="body-text-box">Prepare 2026 Marketing Plan</div>
-                    <div class="detail-text-box">Robert Reagan</div>
-                </div>
-            </DxDraggable>
-
-            <DxDraggable id="note-4" class="card">
-                <div class="color-indicator yellow"></div>
-                <div class="text-container">
-                    <div class="body-text-box">🖥️ Approve Personal Computer Upgrade Plan</div>
-                    <div class="detail-text-box">Bart Arnaz</div>
-                </div>
-            </DxDraggable>
-        </div>
+            </div>
+        </DxDraggable>
     </template>
+
+This example defines Draggable markup within a custom component, `Note`.
+
+This component configures two interfaces:
+
+- `export interface NoteInfo`: Specifies note information. 
+- `interface NoteProps`: Defines properties of the Note component.
+
+Create an array of `NoteInfo` objects to define four notes. Implement the `Note` component within a `<template>` tag and use the `v-for` directive to add these notes to the app:
+
+    <!-- tab: Note.vue -->
+    <template>
+        <DxDraggable
+            :id="id"
+            :group="group"
+            :boundary="boundary"
+        >
+            <div class="note">
+                <div class="color-indicator"></div>
+                <div class="text-container">
+                    <div class="body-text-box">{{ task }}</div>
+                    <div class="detail-text-box">{{ assignee }}</div>
+                </div>
+            </div>
+        </DxDraggable>
+    </template>
+
+    <script setup lang="ts">
+    // ...
+
+    export interface NoteInfo {
+        id: string;
+        task: string;
+        assignee: string;
+    }
+
+    interface NoteProps extends NoteInfo {
+        group?: string;
+        boundary?: string;
+        // ...
+    }
+
+    const {
+        id,
+        group = 'notes',
+        boundary = '.board',
+        task,
+        assignee,
+        // ...
+    } = defineProps<NoteProps>();
+
+    </script>
+
+    <!-- tab: App.vue -->
+    <template>
+    <div class="boundary-text">Dragging Boundary</div>
+    <div class="board">
+        <template v-for="note in notes">
+            <Note
+                :id="note.id"
+                :task="note.task"
+                :assignee="note.assignee"
+            />
+        </template>
+    </div>
+    <div class="boundary-text">Dragging Boundary</div>
+    </template>
+
+    <script setup lang="ts">
+    // ...
+
+    import Note, { type NoteInfo } from "./Note.vue";
+
+    const notes: NoteInfo[] = [
+        {
+            id: 'note-1',
+            task: 'Install New Router in Dev Room',
+            assignee: 'Amelia Harper',
+        },
+        {
+            id: 'note-2',
+            task: '👨‍💻 Launch New Website',
+            assignee: 'Brett Wade',
+        },
+        {
+            id: 'note-3',
+            task: 'Prepare 2026 Marketing Plan',
+            assignee: 'Robert Reagan',
+        },
+        {
+            id: 'note-4',
+            task: '🖥️ Approve Personal Computer Upgrade Plan',
+            assignee: 'Bart Arnaz',
+        },
+    ];
+
+    </script>
 
 ##### React
 
@@ -303,39 +381,107 @@ This example creates four Draggable components inside a common `.board` containe
 
     function App(): JSX.Element {
         return (
-            <div class="board">
-                <Draggable id="note-1" className="card">
-                    <div className="color-indicator blue"></div>
-                    <div className="text-container">
-                        <div className="body-text-box">Install New Router in Dev Room</div>
-                        <div className="detail-text-box">Amelia Harper</div>
-                    </div>
-                </Draggable>
+            <Draggable id="note-1" className="note">
+                <div className="color-indicator blue"></div>
+                <div className="text-container">
+                    <div className="body-text-box">Install New Router in Dev Room</div>
+                    <div className="detail-text-box">Amelia Harper</div>
+                </div>
+            </Draggable>
+        );
+    }
 
-                <Draggable id="note-2" className="card">
-                    <div className="color-indicator green"></div>
-                    <div className="text-container">
-                        <div className="body-text-box">👨‍💻 Launch New Website</div>
-                        <div className="detail-text-box">Brett Wade</div>
-                    </div>
-                </Draggable>
+This example defines Draggable markup within a custom component, `Note`.
 
-                <Draggable id="note-3" className="card">
-                    <div className="color-indicator red"></div>
-                    <div className="text-container">
-                        <div className="body-text-box">Prepare 2026 Marketing Plan</div>
-                        <div className="detail-text-box">Robert Reagan</div>
-                    </div>
-                </Draggable>
+This component configures two interfaces:
 
-                <Draggable id="note-4" className="card">
-                    <div className="color-indicator yellow"></div>
+- `export interface NoteInfo`: Specifies note information. 
+- `interface NoteProps`: Defines properties of the Note component.
+
+Create an array of `NoteInfo` objects to define four notes. Implement the `Note` component within an [Array.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) callback to add these notes to the app:
+
+    <!-- tab: Note.tsx -->
+    import { Draggable, type DraggableTypes } from 'devextreme-react/draggable';
+    import { type NoteProps } from './Note.types';
+    // ...
+
+    function Note({
+        id,
+        group = 'notes',
+        boundary = '.board',
+        task,
+        assignee,
+        // ...
+    }: NoteProps) {
+        return (
+            <Draggable
+                id={id}
+                group={group}
+                boundary={boundary}
+            >
+                <div
+                    className={`note ${isOverlapped ? 'overlapped' : ''}`}
+                >
+                    <div className="color-indicator"></div>
                     <div className="text-container">
-                        <div className="body-text-box">🖥️ Approve Personal Computer Upgrade Plan</div>
-                        <div className="detail-text-box">Bart Arnaz</div>
+                        <div className="body-text-box">{task}</div>
+                        <div className="detail-text-box">{assignee}</div>
                     </div>
-                </Draggable>
+                </div>
+            </Draggable>
+        );
+    }
+
+    export default Note;
+
+    <!-- tab: Note.types.tsx -->
+    export interface NoteInfo {
+        id: string;
+        task: string;
+        assignee: string;
+    }
+
+    export interface NoteProps extends NoteInfo {
+        group?: string;
+        boundary?: string;
+        // ...
+    }
+
+    <!-- tab: App.tsx -->
+    import Note from './components/Note/Note.tsx';
+    import { type NoteInfo } from './components/Note/Note.types.tsx';
+    // ...
+
+    const notes: NoteInfo[] = [{
+        id: 'note-1',
+        task: 'Install New Router in Dev Room',
+        assignee: 'Amelia Harper',
+    }, {
+        id: 'note-2',
+        task: '👨‍💻 Launch New Website',
+        assignee: 'Brett Wade',
+    }, {
+        id: 'note-3',
+        task: 'Prepare 2026 Marketing Plan',
+        assignee: 'Robert Reagan',
+    }, {
+        id: 'note-4',
+        task: '🖥️ Approve Personal Computer Upgrade Plan',
+        assignee: 'Bart Arnaz',
+    }];
+
+    function App(): JSX.Element {
+        return (
+            <div className="boundary-text">Dragging Boundary</div>
+            <div className="board">
+                {notes.map((note) => (
+                    <Note
+                        {...note}
+                        key={note.id}
+                    />
+                ))}
             </div>
+            <div className="boundary-text">Dragging Boundary</div>
         );
     }
 

@@ -4,7 +4,7 @@ $(() => {
   $("#note-1").dxDraggable({
     onDragStart: handleDragStart,
     boundary: ".board",
-    group: "cards",
+    group: "notes",
   }).on({
     "click": handleClick,
     "dxdragenter": handleDragEnter,
@@ -14,7 +14,7 @@ $(() => {
 
   $("#note-2").dxDraggable({
     onDragStart: handleDragStart,
-    group: "cards",
+    group: "notes",
     boundary: ".board",
   }).on({
     "click": handleClick,
@@ -25,7 +25,7 @@ $(() => {
 
   $("#note-3").dxDraggable({
     onDragStart: handleDragStart,
-    group: "cards",
+    group: "notes",
     boundary: ".board",
   }).on({
     "click": handleClick,
@@ -37,7 +37,7 @@ $(() => {
   $("#note-4").dxDraggable({
     onDragStart: handleDragStart,
     boundary: ".board",
-    group: "cards",
+    group: "notes",
   }).on({
     "click": handleClick,
     "dxdragenter": handleDragEnter,

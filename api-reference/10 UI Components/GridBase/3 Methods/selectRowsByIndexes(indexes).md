@@ -7,7 +7,6 @@ Selects rows with specific indexes.
 
 ##### return: Promise<any>
 A Promise that is resolved after the rows are selected.
-#include ref-promisedistinction
 
 ##### param(indexes): Array<Number>
 The row indexes.

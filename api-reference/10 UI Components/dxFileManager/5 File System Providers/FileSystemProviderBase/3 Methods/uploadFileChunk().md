@@ -7,7 +7,6 @@ Uploads a file in chunks.
 
 ##### return: Promise<any>
 A Promise that is resolved after the file uploaded.
-#include ref-promisedistinction
 
 ##### param(fileData): File
 The file that is being uploaded.

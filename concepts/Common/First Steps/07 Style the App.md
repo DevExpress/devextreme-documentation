@@ -10,9 +10,9 @@ To apply a theme, link its file in the `<head>` between jQuery and DevExtreme so
     <!-- tab: index.html -->
     <head>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_25_1/css/dx.light.css" />
+        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_25_2/css/dx.light.css" />
         <link rel="stylesheet" type="text/css" href="index.css" />
-        <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_25_1/js/dx.all.js"></script>
+        <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_25_2/js/dx.all.js"></script>
     </head>
 
 ##### Angular

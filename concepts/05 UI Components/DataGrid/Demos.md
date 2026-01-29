@@ -6,7 +6,6 @@
 
 - [Simple Array](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/SimpleArray/)
 - [JSON Data](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/AjaxRequest/)
-- [OData Service](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/OdataService/)
 - [Custom Data Source](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomDataSource/)
 - [Web API Service](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/WebAPIService/)
 - [SignalR Service](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/SignalRService/)

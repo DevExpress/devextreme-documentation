@@ -19,7 +19,7 @@ Binds the UI component to data.
 
     odata_key_note: " Make sure to specify the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#key').",
 
-    odata_view_demo: "[View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ODataService)", 
+    odata_view_demo: "[View Example](https://github.com/DevExpress-Examples/devextreme-datagrid-odata)", 
 
     create_store_view_demo: "[View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/WebAPIService)",
 

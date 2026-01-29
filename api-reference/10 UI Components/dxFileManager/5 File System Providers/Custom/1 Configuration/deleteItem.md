@@ -11,7 +11,6 @@ The current file system item.
 
 ##### return: Promise<any> | any
 A Promise that is resolved after a file system item is deleted.
-#include ref-promisedistinction
 
 ---
 

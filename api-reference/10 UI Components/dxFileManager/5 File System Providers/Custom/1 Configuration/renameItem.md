@@ -14,7 +14,6 @@ The new name for the file system item.
 
 ##### return: Promise<any> | any
 A Promise that is resolved after the file system item is renamed.
-#include ref-promisedistinction
 
 ---
 

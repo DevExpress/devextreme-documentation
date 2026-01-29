@@ -7,7 +7,6 @@ Reloads data and repaints data rows.
 
 ##### return: Promise<void>
 A Promise that is resolved after data is loaded.
-#include ref-promisedistinction
 
 ---
 **refresh()** calls [dataSource](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource').[reload()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/reload().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#reload') and refreshes component properties such as [selection](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/selection '{basewidgetpath}/Configuration/selection/') and lookup column [dataSources](/api-reference/_hidden/GridBaseColumn/lookup/dataSource.md '{basewidgetpath}/Configuration/columns/lookup/#dataSource'). This method also repaints all data rows if [repaintChangesOnly](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/repaintChangesOnly.md '{basewidgetpath}/Configuration/#repaintChangesOnly') is `false` (default).

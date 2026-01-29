@@ -7,7 +7,6 @@ Calculates a custom summary for all data items.
 
 ##### return: Promise<any>
 A Promise that is resolved after the operation is completed.
-#include ref-promisedistinction
 
 ##### param(step): function()
 A function that is called for each item.

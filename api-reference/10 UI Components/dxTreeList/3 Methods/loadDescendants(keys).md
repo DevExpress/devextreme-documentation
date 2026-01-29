@@ -7,7 +7,6 @@ Loads specified node descendants. Takes effect only if data has a [plain structu
 
 ##### return: Promise<void>
 A Promise that is resolved after data is loaded.
-#include ref-promisedistinction
 
 ##### param(keys): Array<any>
 Node keys.

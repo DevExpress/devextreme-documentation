@@ -6,7 +6,7 @@ To access an OData service, implement the [ODataStore](/api-reference/30%20Data%
     <!-- tab: index.js -->
     $(function() {
         var productsStore = new DevExpress.data.ODataStore({
-            url: "https://js.devexpress.com/Demos/DevAV/odata/Products",
+            url: "http://www.example.com/Northwind.svc/Products",
             key: "Product_ID",
             version: 3,
             onLoaded: function() {
@@ -35,7 +35,7 @@ To access an OData service, implement the [ODataStore](/api-reference/30%20Data%
 
         constructor() {
             this.productsStore = new ODataStore({
-                url: 'https://js.devexpress.com/Demos/DevAV/odata/Products',
+                url: 'http://www.example.com/Northwind.svc/Products',
                 key: 'Product_ID',
                 version: 3,
                 onLoaded: () => {
@@ -86,7 +86,7 @@ To access an OData service, implement the [ODataStore](/api-reference/30%20Data%
     import ODataStore from 'devextreme/data/odata/store';
 
     const productsStore = new ODataStore({
-        url: 'https://js.devexpress.com/Demos/DevAV/odata/Products',
+        url: 'http://www.example.com/Northwind.svc/Products',
         key: 'Product_ID',
         version: 3,
         onLoaded: () => {
@@ -117,7 +117,7 @@ To access an OData service, implement the [ODataStore](/api-reference/30%20Data%
     import ODataStore from 'devextreme/data/odata/store';
 
     const productsStore = new ODataStore({
-        url: 'https://js.devexpress.com/Demos/DevAV/odata/Products',
+        url: 'http://www.example.com/Northwind.svc/Products',
         key: 'Product_ID',
         version: 3,
         onLoaded: () => {
@@ -283,8 +283,8 @@ The following example declares an **ODataStore**, wraps it in a **DataSource**, 
 
 ---
 
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/OdataService/"
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-odata"
 }
 
 ### A 1-Click Solution for CRUD Web API Services with Role-based Access Control via EF Core

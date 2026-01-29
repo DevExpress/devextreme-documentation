@@ -7,7 +7,6 @@ Selects rows with specific keys.
 
 ##### return: Promise<any>
 A Promise that is resolved after the rows are selected.
-#include ref-promisedistinction
 
 ##### param(keys): Array<any>
 The row keys.

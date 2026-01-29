@@ -59,6 +59,11 @@ To attach handlers to common events, call [Draggable.on()](/Documentation/ApiRef
         }
     });
 
+    <!-- tab: index.css -->
+    .note.overlapped {
+        outline: 1px dashed var(--dx-color-primary);
+    }
+
 [note] Specify an identical [group](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#group) value for all Draggable instances to ensure the components interact with each other (in `dxdragenter`, `dxdragleave`, and `dxdrop` handlers).
 
 ##### Angular
@@ -71,8 +76,102 @@ This example specifies the following event handlers to update note overlapping:
 
 This example also implements a `(click)` handler on the parent `<div>` element within the `note` component:
 
+    <!-- tab: note.component.html -->
+    <div (click)="handleClick()">
+        <dx-draggable ...
+            [style.z-index]="currentZIndex"
+            [class.overlapped]="isOverlapped()"
+            (onDragMove)="handleDragMove($event)"
+            (onDragEnd)="handleDragEnd()"
+            (onDragStart)="handleDragStart()"
+        >
+            <!-- ... -->
+        </dx-draggable>
+    </div>
+
+    <!-- tab: note.component.ts -->
+    import { type DxDraggableTypes } from 'devextreme-angular/ui/draggable';
+
+    // ...
+    export class NoteComponent {
+        // ...
+
+        overlappedComponentId: string | null = null;
+        currentZIndex: number = 0;
+
+        updateZIndex(): void {
+            const updatedZIndex = this.zIndex() + 1;
+            this.currentZIndex = updatedZIndex;
+            this.zIndex.update(() => updatedZIndex);
+
+            console.log(this.currentZIndex)
+        }
+
+        handleDragStart(): void {
+            this.updateZIndex();
+        }
+
+        handleDragMove(e: DxDraggableTypes.DragMoveEvent): void {
+            if (e.toComponent !== e.component) {
+                const toComponentId = e.toComponent.element().id;
+                this.startOverlap()(toComponentId);
+                this.overlappedComponentId = toComponentId;
+            } else {
+                this.stopOverlap()();
+                this.overlappedComponentId = null;
+            }
+        }
+
+        handleDragEnd(): void {
+            this.stopOverlap()();
+        }
+
+        handleClick(): void {
+            this.updateZIndex();
+        }
+    }
+
     <!-- tab: app.component.html -->
-    aa
+    <div class="boundary-text">Dragging Boundary</div>
+        <div class="board">
+            @for (note of notes; track note) {
+            <note ...
+                [isOverlapped]="overlappedId === note.id"
+                [(zIndex)]="zIndex"
+                [startOverlap]="startOverlap"
+                [stopOverlap]="stopOverlap"
+            ></note>
+            }
+        </div>
+    <div class="boundary-text">Dragging Boundary</div>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+
+    // ...
+    export class AppComponent {
+        // ...
+
+        zIndex: number = 0;
+        overlappedId: string | null = null;
+
+        startOverlap: (id: string) => void = (id) => {
+            this.overlappedId = id;
+        }
+
+        stopOverlap: () => void = () => {
+            this.overlappedId = null;
+        }
+
+        handleDragEnd: () => void = () => {
+            this.stopOverlap();
+        }
+    }
+
+    <!-- tab: app.component.scss -->
+    .note.overlapped {
+        outline: 1px dashed var(--dx-color-primary);
+    }
 
 ##### Vue
 
@@ -170,6 +269,12 @@ This example also implements a `@click` handler on the parent `<div>` element wi
     }
     </script>
 
+    <style scoped>
+    .note.overlapped {
+        outline: 1px dashed var(--dx-color-primary);
+    }
+
+    </style>
 
 ##### React
 
@@ -273,6 +378,11 @@ This example also implements an `onClick` handler on the parent `<div>` element 
             <div className="boundary-text">Dragging Boundary</div>
             </div>
         );
+    }
+
+    <!-- tab: index.css -->
+    .note.overlapped {
+        outline: 1px dashed var(--dx-color-primary);
     }
 
 ---

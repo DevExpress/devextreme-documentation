@@ -386,3 +386,9 @@ This example also implements an `onClick` handler on the parent `<div>` element 
     }
 
 ---
+
+Refer to the following repository for the complete source code of this tutorial:
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-getting-started-with-draggable"
+}

@@ -1,44 +1,49 @@
-If you do not explicitly specify certain columns' [width](/api-reference/_hidden/GridBaseColumn/width.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#width'), the TreeList distributes the available space equally among columns at startup. As a result, cell values may appear truncated. Use the [columnMinWidth](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnMinWidth.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnMinWidth') property to specify a minimum width for all columns and the [minWidth](/api-reference/_hidden/GridBaseColumn/minWidth.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#minWidth') for an individual column. Note that all these settings may cause horizontal scrolling if columns cannot fit into the UI component's width.
+TreeList calculates column width values based on the component's width. You can also configure [columnWidth](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnWidth) or **columns[]**.[width](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#width) to specify column widths.
+
+If you specify **columns[]**.**width** for some but not all columns, the component may truncate cell values or hide certain columns. To avoid this behavior, configure one of the following properties:
+
+- **columns[]**.[minWidth](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#minWidth) (for all columns)/[columnMinWidth](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnMinWidth)
+- **columns[]**.[width](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#width) (for all columns)/[columnWidth](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnWidth)
+- [columnAutoWidth](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnAutoWidth)
+
+The **columnAutoWidth** property adjusts column width values to fit content.
+
+When the combined width of all columns exceeds the TreeList's width, the component enables horizontal [scrolling](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/scrolling/).
 
 ---
+
 ##### jQuery
 
-    <!--JavaScript-->
-    $(function() {
-        $("#treeListContainer").dxTreeList({
-            // ...
-            columnMinWidth: 100,
-            columns: [{
-                dataField: "Title",
-                width: 200
-            }, {
-                dataField: "Address",
-                minWidth: 150
-            }]
-        });
+    <!-- tab: index.js -->
+    $("#tree-list-container").dxTreeList({
+        columnMinWidth: 100,
+        columns: [{
+            dataField: "Title",
+            width: 200,
+        }, {
+            dataField: "Address",
+            minWidth: 150,
+        }, ... ]
     });
 
 ##### Angular
     
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-tree-list ...
         [columnMinWidth]="100">
         <dxi-tree-list-column dataField="Title" [width]="200"></dxi-tree-list-column>
         <dxi-tree-list-column dataField="Address" [minWidth]="150"></dxi-tree-list-column>
+        <!-- ... -->
     </dx-tree-list>
 
-    <!--TypeScript-->
+    <!-- tab: app.component.ts -->
     import { DxTreeListModule } from "devextreme-angular";
+
     // ...
-    export class AppComponent {
-        // ...
-    }
     @NgModule({
         imports: [
-            // ...
             DxTreeListModule
         ],
-        // ...
     })
 
 ##### Vue
@@ -49,164 +54,69 @@ If you do not explicitly specify certain columns' [width](/api-reference/_hidden
             :column-min-width="100">
             <DxColumn data-field="Title" :width="200" />
             <DxColumn data-field="Address" :min-width="150" />
+            <!-- ... -->
         </DxTreeList>
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import { DxTreeList, DxColumn } from 'devextreme-vue/tree-list';
+    // ...
 
-    import DxTreeList, {
-        DxColumn
-    } from 'devextreme-vue/tree-list';
-
-    export default {
-        components: {
-            DxTreeList,
-            DxColumn
-        },
-        // ...
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import { TreeList, Column } from 'devextreme-react/tree-list';
 
-    import 'devextreme/dist/css/dx.light.css';
-
-    import TreeList, {
-        Column
-    } from 'devextreme-react/tree-list';
-
-    export default function App() {
-	    return (
+    function App() {
+        return (
             <TreeList ...
                 columnMinWidth={100}>
                 <Column dataField="Title" width={200} />
                 <Column dataField="Address" minWidth={150} />
-            </TreeList> 
-        );
-    }
-    
----
-
-Set the [columnAutoWidth](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnAutoWidth.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnAutoWidth') property to **true** to make all columns adjust their widths to their content.
-
----
-##### jQuery
-
-    <!--JavaScript-->
-    $(function() {
-        $("#treeListContainer").dxTreeList({
-            // ...
-            columnAutoWidth: true
-        });
-    });
-
-##### Angular
-    
-    <!--HTML-->
-    <dx-tree-list ...
-        [columnAutoWidth]="true">
-    </dx-tree-list>
-
-    <!--TypeScript-->
-    import { DxTreeListModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        // ...
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxTreeListModule
-        ],
-        // ...
-    })
-
-##### Vue
-
-    <!-- tab: App.vue -->
-    <template>
-        <DxTreeList ...
-            :column-auto-width="true">
-        </DxTreeList>
-    </template>
-
-    <script>
-    import 'devextreme/dist/css/dx.light.css';
-
-    import DxTreeList from 'devextreme-vue/tree-list';
-
-    export default {
-        components: {
-            DxTreeList
-        },
-        // ...
-    }
-    </script>
-
-##### React
-
-    <!-- tab: App.js -->
-    import React from 'react';
-
-    import 'devextreme/dist/css/dx.light.css';
-
-    import TreeList from 'devextreme-react/tree-list';
-
-    export default function App() {
-	    return (
-            <TreeList ...
-                columnAutoWidth={true}>
+                {/* ... */}
             </TreeList>
         );
     }
     
 ---
 
-The UI component allows a user to resize columns in two different modes: by changing the next column's width or the UI component's width. To enable this functionality and set the mode, specify the [allowColumnResizing](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/allowColumnResizing.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#allowColumnResizing') and [columnResizingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnResizingMode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnResizingMode') properties, respectively. Note that you can prevent a specific column from being resized by assigning **false** to its [allowResizing](/api-reference/_hidden/GridBaseColumn/allowResizing.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#allowResizing') property.
+TreeList also allows you to use the mouse to resize columns at runtime. To enable this functionality, set [allowColumnResizing](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/allowColumnResizing.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#allowColumnResizing') to `true`. TreeList includes two column resizing modes ([columnResizingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnResizingMode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnResizingMode')):
+
+- *"nextColumn"*: Adjusts the width of two columns (on either side of a column separator).
+- *"widget"*: Adjusts the width of one column (on the left of a column separator) and the component's width.
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/ColumnResizing/"
+}
+
+To disable mouse resizing for a specific column, set **columns[]**.[allowResizing](/api-reference/_hidden/GridBaseColumn/allowResizing.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#allowResizing') to `false`.
 
 ---
+
 ##### jQuery
 
-    <!--JavaScript-->
-    $(function() {
-        $("#treeListContainer").dxTreeList({
-            // ...
-            allowColumnResizing: true,
-            columnResizingMode: 'widget', // or 'nextColumn'
-            columns: [{
-                dataField: "Title",
-                allowResizing: false
-            }, // ...
-            ]
-        });
+    <!-- tab: index.js -->
+    $("#tree-list-container").dxTreeList({
+        allowColumnResizing: true,
+        columnResizingMode: 'widget',
+        columns: [{
+            dataField: "Title",
+            allowResizing: false
+        }, ... ]
     });
 
 ##### Angular
     
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-tree-list ...
         [allowColumnResizing]="true"
-        columnResizingMode="widget"> <!-- or 'nextColumn' -->
+        columnResizingMode="widget"
+    >
         <dxi-tree-list-column dataField="Title" [allowResizing]="false"></dxi-tree-list-column>
+        <!-- ... -->
     </dx-tree-list>
-
-    <!--TypeScript-->
-    import { DxTreeListModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        // ...
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxTreeListModule
-        ],
-        // ...
-    })
 
 ##### Vue
 
@@ -214,54 +124,37 @@ The UI component allows a user to resize columns in two different modes: by chan
     <template>
         <DxTreeList ...
             :allow-column-resizing="true"
-            column-resizing-mode="widget"> <!-- or "nextColumn" -->
+            column-resizing-mode="widget"
+        >
             <DxColumn data-field="Title" :allow-resizing="false" />
+            <!-- ... -->
         </DxTreeList>
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import { DxTreeList, DxColumn } from 'devextreme-vue/tree-list';
+    // ...
 
-    import DxTreeList, {
-        DxColumn
-    } from 'devextreme-vue/tree-list';
-
-    export default {
-        components: {
-            DxTreeList,
-            DxColumn
-        },
-        // ...
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import { TreeList, Column } from 'devextreme-react/tree-list';
 
-    import 'devextreme/dist/css/dx.light.css';
-
-    import TreeList, {
-        Column
-    } from 'devextreme-react/tree-list';
-
-    export default function App() {
-	    return (
+    function App() {
+        return (
             <TreeList ...
                 allowColumnResizing={true}
-                columnResizingMode="widget"> <!-- or 'nextColumn' -->
+                columnResizingMode="widget"
+            >
                 <Column dataField="Title" allowResizing={false} />
+                {/* ... */}
             </TreeList>
         );
     }
     
-    
 ---
 
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_List/Resizing/"
-}
-
 #####See Also#####
-- [TreeList - Column Reordering](/concepts/05%20UI%20Components/TreeList/10%20Columns/25%20Column%20Reordering '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Reordering/')
+- [TreeList - Column Reordering](/concepts/05%20UI%20Components/TreeList/15%20Columns/25%20Column%20Reordering '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Reordering/')

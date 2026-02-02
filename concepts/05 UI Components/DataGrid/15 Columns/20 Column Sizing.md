@@ -1,14 +1,14 @@
 DataGrid calculates column width values based on the component's width. You can also configure [columnWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnWidth) or **columns[]**.[width](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#width) to specify column widths.
 
-If you specify **columns[]**.**width** for some but not all columns, the component may truncate cell values or hide certain columns. To avoid this behavior, configure one of the following properties:
+The default DataGrid behavior is to assign equal width values to columns. To fit all columns within the component container, DataGrid may shrink columns with default **width** values (*"auto"*). This may truncate cell values or collapse columns to zero width. To avoid this behavior, specify one of the following properties:
 
 - **columns[]**.[minWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#minWidth) (for all columns)/[columnMinWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnMinWidth)
 - **columns[]**.[width](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#width) (for all columns)/[columnWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnWidth)
 - [columnAutoWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnAutoWidth)
 
-The **columnAutoWidth** property adjusts column width values to fit content.
+The **columnAutoWidth** property adjusts columns to fit cell values.
 
-When the combined width of all columns exceeds the DataGrid's width, the component enables horizontal [scrolling](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/).
+When the specified width of all columns exceeds the component's width, DataGrid enables horizontal [scrolling](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/).
 
 ---
 
@@ -30,7 +30,8 @@ When the combined width of all columns exceeds the DataGrid's width, the compone
     
     <!-- tab: app.component.html -->
     <dx-data-grid ...
-        [columnMinWidth]="100">
+        [columnMinWidth]="100"
+    >
         <dxi-data-grid-column dataField="Title" [width]="200"></dxi-data-grid-column>
         <dxi-data-grid-column dataField="Address" [minWidth]="150"></dxi-data-grid-column>
         <!-- ... -->
@@ -51,7 +52,8 @@ When the combined width of all columns exceeds the DataGrid's width, the compone
     <!-- tab: App.vue -->
     <template>
         <DxDataGrid ...
-            :column-min-width="100">
+            :column-min-width="100"
+        >
             <DxColumn data-field="Title" :width="200" />
             <DxColumn data-field="Address" :min-width="150" />
             <!-- ... -->
@@ -72,7 +74,8 @@ When the combined width of all columns exceeds the DataGrid's width, the compone
     function App() {
         return (
             <DataGrid ...
-                columnMinWidth={100}>
+                columnMinWidth={100}
+            >
                 <Column dataField="Title" width={200} />
                 <Column dataField="Address" minWidth={150} />
                 {/* ... */}

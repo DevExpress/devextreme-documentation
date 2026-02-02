@@ -1,5 +1,12 @@
-This help topic describes how to integrate Chat with [Google Dialogflow](https://cloud.google.com/dialogflow/docs). You can find the full example code in the following GitHub repository:
+This section describes how to integrate Chat with [Google Dialogflow](https://cloud.google.com/dialogflow/docs). The Dialogflow platform includes two virtual agent services: 
+
+- [CX](https://docs.cloud.google.com/dialogflow/cx/docs) - suitable for large and complex agents.
+- [ES](https://docs.cloud.google.com/dialogflow/es/docs) - suitable for small and simple agents.
+
+This tutorial uses **Dialogflow ES**. You can find the full example code in the following GitHub repository:
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-chat-google-dialogflow"
 }
+
+[note] Ensure you are familiar with the [Google Dialogflow documentation](https://cloud.google.com/dialogflow/docs) before you start this tutorial.

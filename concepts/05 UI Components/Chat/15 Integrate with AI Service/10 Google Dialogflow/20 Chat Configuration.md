@@ -1,0 +1,1 @@
+Configure the Chat component as described in the [OpenAI - Chat Configuration](/Documentation/Guide/UI_Components/Chat/Integrate_with_AI_Service/#OpenAI/Chat_Configuration) help topic.

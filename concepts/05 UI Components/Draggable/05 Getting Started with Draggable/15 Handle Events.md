@@ -3,7 +3,7 @@
 
 ##### jQuery
 
-This example specifies an [onDragStart](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragStart) handler to update note overlapping:
+This example specifies an [onDragStart](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragStart) handler to update the note's Z-index (bring to front):
 
     <!-- tab: index.js -->
     $(function() {
@@ -68,7 +68,7 @@ To attach handlers to common events, call [Draggable.on()](/Documentation/ApiRef
 
 ##### Angular
 
-This example specifies the following event handlers to update note overlapping:
+This example specifies the following event handlers to update the note's Z-index (bring to front while dragging):
 
 - [onDragStart](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragStart)
 - [onDragMove](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragMove)
@@ -175,7 +175,7 @@ This example also implements a `(click)` handler on the parent `<div>` element w
 
 ##### Vue
 
-This example specifies the following event handlers to update note overlapping:
+This example specifies the following event handlers to update the note's Z-index (bring to front while dragging):
 
 - [onDragStart](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragStart)
 - [onDragMove](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragMove)
@@ -278,7 +278,7 @@ This example also implements a `@click` handler on the parent `<div>` element wi
 
 ##### React
 
-This example specifies the following event handlers to update note overlapping:
+This example specifies the following event handlers to update the note's Z-index (bring to front while dragging):
 
 - [onDragStart](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragStart)
 - [onDragMove](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragMove)

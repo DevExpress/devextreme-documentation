@@ -500,6 +500,19 @@ Refer to the following table for detailed information about each component's acc
             <td class="dx-table-row__center icon-success"></td>
         </tr>
         <tr>
+            <td><a href="/Documentation/Guide/UI_Components/SpeechToText/Accessibility/">SpeechToText</a></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+        </tr>
+        <tr>
             <td><a href="/Documentation/Guide/UI_Components/Splitter/Accessibility/">Splitter</a></td>
             <td class="dx-table-row__center icon-success"></td>
             <td class="dx-table-row__center icon-success"></td>

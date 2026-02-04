@@ -84,7 +84,7 @@ When the specified width of all columns exceeds the component's width, DataGrid 
     
 ---
 
-DataGrid also allows you to use the mouse to resize columns at runtime. To enable this functionality, set [allowColumnResizing](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/allowColumnResizing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#allowColumnResizing') to `true`. DataGrid includes two column resizing modes ([columnResizingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnResizingMode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnResizingMode')):
+DataGrid also allows you to use the mouse to resize columns at runtime. To activate this functionality, set [allowColumnResizing](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/allowColumnResizing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#allowColumnResizing') to `true`. Select a [columnResizingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnResizingMode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnResizingMode'):
 
 - *"nextColumn"*: Adjusts the width of two columns (on either side of a column separator).
 - *"widget"*: Adjusts the width of one column (on the left of a column separator) and the component's width.

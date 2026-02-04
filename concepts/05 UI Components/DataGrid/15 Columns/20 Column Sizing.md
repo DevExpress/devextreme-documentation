@@ -4,11 +4,10 @@ The default DataGrid behavior is to assign equal width values to columns. To fit
 
 - **columns[]**.[minWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#minWidth) (for all columns)/[columnMinWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnMinWidth)
 - **columns[]**.[width](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#width) (for all columns)/[columnWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnWidth)
-- [columnAutoWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnAutoWidth)
+- [columnAutoWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnAutoWidth) - adjusts columns to fit cell values.
 
-The **columnAutoWidth** property adjusts columns to fit cell values.
 
-When the specified width of all columns exceeds the component's width, DataGrid enables horizontal [scrolling](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/).
+When the specified width of all columns exceeds the component's width, DataGrid activates horizontal [scrolling](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/).
 
 ---
 

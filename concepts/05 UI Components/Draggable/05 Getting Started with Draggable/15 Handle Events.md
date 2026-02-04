@@ -3,7 +3,7 @@
 
 ##### jQuery
 
-This example specifies an [onDragStart](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragStart) handler to update the note's Z-index (bring to front):
+This example specifies an [onDragStart](/api-reference/10%20UI%20Components/dxDraggable/1%20Configuration/onDragStart.md '/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragStart') handler to update the note's Z-index (bring to front):
 
     <!-- tab: index.js -->
     $(function() {
@@ -29,7 +29,7 @@ This example also specifies handlers for four common events (not specific to Dra
 - `dxdragleave`
 - `dxdrop`
 
-To attach handlers to common events, call [Draggable.on()](/Documentation/ApiReference/UI_Components/dxDraggable/Methods/#onevents):
+To attach handlers to common events, call [Draggable.on()](/api-reference/10%20UI%20Components/Component/3%20Methods/on(events).md '/Documentation/ApiReference/UI_Components/dxDraggable/Methods/#onevents'):
 
     <!-- tab: index.js -->
     $(function() {
@@ -64,15 +64,15 @@ To attach handlers to common events, call [Draggable.on()](/Documentation/ApiRef
         outline: 1px dashed var(--dx-color-primary);
     }
 
-[note] Specify an identical [group](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#group) value for all Draggable instances to ensure the components interact with each other (in `dxdragenter`, `dxdragleave`, and `dxdrop` handlers).
+[note] Specify an identical [group](/api-reference/10%20UI%20Components/DraggableBase/1%20Configuration/group.md '/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#group') value for all Draggable instances to ensure the components interact with each other (in `dxdragenter`, `dxdragleave`, and `dxdrop` handlers).
 
 ##### Angular
 
 This example specifies the following event handlers to update the note's Z-index (bring to front while dragging):
 
-- [onDragStart](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragStart)
-- [onDragMove](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragMove)
-- [onDragEnd](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragEnd)
+- [onDragStart](/api-reference/10%20UI%20Components/dxDraggable/1%20Configuration/onDragStart.md '/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragStart')
+- [onDragMove](/api-reference/10%20UI%20Components/dxDraggable/1%20Configuration/onDragMove.md '/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragMove')
+- [onDragEnd](/api-reference/10%20UI%20Components/dxDraggable/1%20Configuration/onDragEnd.md '/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragEnd')
 
 This example also implements a `(click)` handler on the parent `<div>` element within the `note` component:
 
@@ -177,9 +177,9 @@ This example also implements a `(click)` handler on the parent `<div>` element w
 
 This example specifies the following event handlers to update the note's Z-index (bring to front while dragging):
 
-- [onDragStart](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragStart)
-- [onDragMove](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragMove)
-- [onDragEnd](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragEnd)
+- [onDragStart](/api-reference/10%20UI%20Components/dxDraggable/1%20Configuration/onDragStart.md '/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragStart')
+- [onDragMove](/api-reference/10%20UI%20Components/dxDraggable/1%20Configuration/onDragMove.md '/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragMove')
+- [onDragEnd](/api-reference/10%20UI%20Components/dxDraggable/1%20Configuration/onDragEnd.md '/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragEnd')
 
 This example also implements a `@click` handler on the parent `<div>` element within the `Note` component:
 
@@ -280,9 +280,9 @@ This example also implements a `@click` handler on the parent `<div>` element wi
 
 This example specifies the following event handlers to update the note's Z-index (bring to front while dragging):
 
-- [onDragStart](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragStart)
-- [onDragMove](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragMove)
-- [onDragEnd](/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragEnd)
+- [onDragStart](/api-reference/10%20UI%20Components/dxDraggable/1%20Configuration/onDragStart.md '/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragStart')
+- [onDragMove](/api-reference/10%20UI%20Components/dxDraggable/1%20Configuration/onDragMove.md '/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragMove')
+- [onDragEnd](/api-reference/10%20UI%20Components/dxDraggable/1%20Configuration/onDragEnd.md '/Documentation/ApiReference/UI_Components/dxDraggable/Configuration/#onDragEnd')
 
 This example also implements an `onClick` handler on the parent `<div>` element within the `Note` component:
 

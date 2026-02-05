@@ -1,4 +1,4 @@
-DevExtreme components consist of standard HTML elements (for instance, `<div>`, `<td>`, and `<tr>`). You use use CSS classes to customize these elements.
+DevExtreme components consist of standard HTML elements (for instance, `<div>`, `<td>`, and `<tr>`). You can use CSS classes to customize these elements.
 
 For a list of common CSS classes used within DevExtreme components, refer to the following topic: [CSS Classes](/api-reference/10%20UI%20Components/zz%20CSS%20Classes '/Documentation/ApiReference/UI_Components/CSS_Classes/'). To determine classes of specific visual elements within DevExtreme components, inspect component markup:
 

@@ -32,8 +32,6 @@ To add custom classes to a DevExtreme component's root element, specify the `cla
 
 ---
 
-aaaa
-
 After you apply CSS customizations to DevExtreme components, review your application's adaptivity in the browser. For more information, refer to the following topics:
 
 - [Google Chrome - Simulate mobile devices with device mode](https://developer.chrome.com/docs/devtools/device-mode/)

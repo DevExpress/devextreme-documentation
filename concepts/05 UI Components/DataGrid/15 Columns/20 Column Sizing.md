@@ -1,11 +1,16 @@
-DataGrid calculates equal width values for all columns based on the component's width by default. You can also configure [columnWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnWidth) or **columns[]**.[width](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#width) to specify column widths.
+DataGrid calculates equal width values for all columns based on the component's width by default (when column **width** values are *"auto"*). You can also configure the following properties to specify column width values:
 
-To fit all columns within the component container, DataGrid may shrink columns with default **width** values (*"auto"*). This may truncate displayed cell data. If the combined width of columns with specified **width** values exceeds the width of the component, DataGrid collapses all other columns to zero width. To avoid this behavior, you can specify one of the following properties:
+- **columns[]**.[width](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#width)/**columns[]**.[minWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#minWidth): Specify width/minimum width for a specific column.
+- [columnWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnWidth)/[columnMinWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnMinWidth): Specify width/minimum width for all columns.
+- [columnAutoWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnAutoWidth): Adjusts all columns to fit cell values.
 
-- **columns[]**.[minWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#minWidth) (in each columns[] object)/[columnMinWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnMinWidth)
-- **columns[]**.[width](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#width) (for all columns)/[columnWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnWidth)
-- [columnAutoWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnAutoWidth) - adjusts columns to fit cell values.
+Your data or component configuration may result in column layout issues:
 
+- Truncated cell values.
+- Collapsed (hidden) columns.
+- Columns with excess blank space.
+
+To resolve these issues, specify column width or minimum width, or enable auto-width.
 
 When the specified width of all columns exceeds the component's width, DataGrid activates horizontal [scrolling](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/).
 

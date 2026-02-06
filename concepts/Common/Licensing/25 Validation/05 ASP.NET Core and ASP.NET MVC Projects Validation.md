@@ -3,12 +3,13 @@ If you use ASP.NET Core or ASP.NET MVC with DevExtreme and see a trial version m
 If the guide does not resolve the issue and the message remains, the problem may be related to the DevExtreme code. You need to enter a DevExtreme license key in the following cases:
 
 - A DevExtreme warning appears in the browser console.
-- DevExtreme components use jQuery or JavaScript.
+- You use jQuery or JavaScript to configure DevExtreme components.
 - The trial message mentions "**DevExtreme** Complete" in the subscription list.
 
-To resolve the issue:
+To resolve the issue, do one of the following:
 
-- If you use both Razor and jQuery/JavaScript, render all Razor-based components before jQuery/JavaScript components. [Manually enter](/Documentation/Guide/Common/Licensing/#Validate_Your_License_Key/Manual_Configuration/Non-Modular) your license key with `DevExpress.config()` and load scripts in the following order:
+- If you use both Razor and jQuery/JavaScript, render all Razor-based components before jQuery/JavaScript components. 
+- [Manually enter](/Documentation/Guide/Common/Licensing/#Validate_Your_License_Key/Manual_Configuration/Non-Modular) your license key with `DevExpress.config()` and load scripts in the following order:
     1. jQuery scripts
     2. `dx.all.js`
     3. `devextreme-license.js`

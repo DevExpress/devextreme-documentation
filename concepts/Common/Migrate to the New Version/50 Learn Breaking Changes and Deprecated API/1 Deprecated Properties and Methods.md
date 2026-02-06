@@ -40,6 +40,10 @@
 <td><b>headerFilter.</b><a href="https://js.devexpress.com/Documentation/26_1/ApiReference/UI_Components/dxPivotGridFieldChooser/Configuration/headerFilter/#allowSearch">allowSearch</a><br><b>headerFilter.</b><a href="https://js.devexpress.com/Documentation/26_1/ApiReference/UI_Components/dxPivotGridFieldChooser/Configuration/headerFilter/#searchTimeout">searchTimeout</a></td>
 </tr>
 <tr>
+<td>Scheduler</td>
+<td><a href="https://js.devexpress.com/Documentation/26_1/ApiReference/UI_Components/dxScheduler/Methods/scrollTo(date_group_allDay)">scrollTo(date, group, allDay)</a></td>
+</tr>
+<tr>
 <td>SelectBox</td>
 <td><a href="https://js.devexpress.com/Documentation/26_1/ApiReference/UI_Components/dxSelectBox/Configuration/#fieldComponent">fieldComponent</a><br><a href="https://js.devexpress.com/Documentation/26_1/ApiReference/UI_Components/dxSelectBox/Configuration/#fieldRender">fieldRender</a><br><a href="https://js.devexpress.com/Documentation/26_1/ApiReference/UI_Components/dxSelectBox/Configuration/#fieldTemplate">fieldTemplate</a></td>
 </tr>

@@ -13612,6 +13612,11 @@
       "react": "DxGanttColumn",
       "vue": "DxGanttColumn"
     },
+    "dxGanttColumn.ai": {
+      "angular": "dxo-ai",
+      "react": "Ai",
+      "vue": "DxAi"
+    },
     "dxGanttColumn.allowEditing": {
       "vue": "allow-editing"
     },

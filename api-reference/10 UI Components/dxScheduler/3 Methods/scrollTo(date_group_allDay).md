@@ -1,5 +1,6 @@
 ---
 id: dxScheduler.scrollTo(date, group, allDay)
+deprecated: 
 ---
 ---
 ##### shortDescription

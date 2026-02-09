@@ -7,7 +7,6 @@ Invokes an OData operation that returns nothing.
 
 ##### return: Promise<void>
 A Promise that is resolved after the operation has completed.
-#include ref-promisedistinction
 
 ##### param(operationName): String
 The operation's name

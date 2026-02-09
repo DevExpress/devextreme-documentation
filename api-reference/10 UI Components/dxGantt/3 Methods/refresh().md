@@ -7,7 +7,6 @@ Reloads data and repaints the Gantt component.
 
 ##### return: Promise<void>
 A Promise that is resolved after data is loaded.
-#include ref-promisedistinction
 
 ---
 ---

@@ -1,308 +1,137 @@
-﻿const iconNames = [
-    "accountbox",
-    "activefolder",
-    "add",
-    "addtableheader",
-    "airplane",
-    "aligncenter",
-    "alignjustify",
-    "alignleft",
-    "alignright",
-    "arrowback",
-    "arrowdown",
-    "arrowleft",
-    "arrowright",
-    "arrowsortdown",
-    "arrowsortup",
-    "arrowup",
-    "attach",
-    "back",
-    "background",
-    "bell",
-    "belloutline",
-    "blockquote",
-    "bmpfile",
-    "bold",
-    "bookmark",
-    "box",
-    "bulletlist",
-    "car",
-    "card",
-    "cardcontent",
-    "cart",
-    "cellproperties",
-    "chart",
-    "chat",
-    "chatadd",
-    "check",
-    "checklist",
-    "checkmarkcircle",
-    "chevrondoubleleft",
-    "chevrondoubleright",
-    "chevrondown",
-    "chevronleft",
-    "chevronnext",
-    "chevronprev",
-    "chevronright",
-    "chevronup",
-    "clear",
-    "clearcircle",
-    "clearformat",
-    "clearsquare",
-    "clipboardpastesparkle",
-    "clipboardtasklist",
-    "clock",
-    "close",
-    "codeblock",
-    "coffee",
-    "collapse",
-    "color",
-    "colordismiss",
-    "columnchooser",
-    "columnfield",
-    "columnproperties",
-    "comment",
-    "contains",
-    "contentlayout",
-    "copy",
-    "csv",
-    "cursormove",
-    "cursorprohibition",
-    "cut",
-    "dataarea",
-    "datafield",
-    "datapie",
-    "datatrending",
-    "datausage",
-    "daterangepicker",
-    "decreaseindent",
-    "decreaselinespacing",
-    "deletecolumn",
-    "deleterow",
-    "deletetable",
-    "description",
-    "detailslayout",
-    "doc",
-    "docfile",
-    "docxfile",
-    "doesnotcontain",
-    "download",
-    "dragvertical",
-    "dropzone",
-    "edit",
-    "edittableheader",
-    "email",
-    "endswith",
-    "equal",
-    "errorcircle",
-    "event",
-    "eventall",
-    "expand",
-    "expandform",
-    "export",
-    "exportpdf",
-    "exportselected",
-    "exportxlsx",
-    "eyeclose",
-    "eyeopen",
-    "favorites",
-    "fieldchooser",
-    "fields",
-    "file",
-    "fill",
-    "filter",
-    "find",
-    "fixcolumn",
-    "fixcolumnleft",
-    "fixcolumnright",
-    "floppy",
-    "folder",
-    "font",
-    "fontsize",
-    "food",
-    "formula",
-    "fullscreen",
-    "gift",
-    "globe",
-    "greater",
-    "greaterorequal",
-    "group",
-    "groupbycolumn",
-    "growfont",
-    "handlehorizontal",
-    "handlevertical",
-    "header",
-    "help",
-    "hidepanel",
-    "hierarchy",
-    "home",
-    "image",
-    "imagethumbnail",
-    "imgarlock",
-    "imgarunlock",
-    "import",
-    "importselected",
-    "inactivefolder",
-    "increaseindent",
-    "increaselinespacing",
-    "indent",
-    "indeterminatestate",
-    "info",
-    "insertcolumnleft",
-    "insertcolumnright",
-    "insertrowabove",
-    "insertrowbelow",
-    "inserttable",
-    "isblank",
-    "isnotblank",
-    "italic",
-    "jpgfile",
-    "key",
-    "less",
-    "lessorequal",
-    "like",
-    "link",
-    "lock",
-    "login",
-    "map",
-    "mediumiconslayout",
-    "mention",
-    "menu",
-    "mergecells",
-    "message",
-    "micfilled",
-    "micoutline",
-    "minus",
-    "money",
-    "moon",
-    "more",
-    "movetofolder",
-    "music",
-    "newfolder",
-    "notequal",
-    "optionsgear",
-    "orderedlist",
-    "ordersbox",
-    "overflow",
-    "packagebox",
-    "palette",
-    "panelleft",
-    "panelright",
-    "parentfolder",
-    "paste",
-    "pasteplaintext",
-    "pdffile",
-    "percent",
-    "photo",
-    "photooutline",
-    "pin",
-    "pinleft",
-    "pinmap",
-    "pinright",
-    "plus",
-    "pptfile",
-    "pptxfile",
-    "preferences",
-    "print",
-    "product",
-    "pulldown",
-    "range",
-    "ratingfilled",
-    "ratingoutline",
-    "redo",
-    "refresh",
-    "remove",
-    "rename",
-    "repeat",
-    "restore",
-    "return",
-    "revert",
-    "rowfield",
-    "rowproperties",
-    "rtffile",
-    "runner",
-    "save",
-    "search",
-    "selectall",
-    "send",
-    "sendfilled",
-    "servicebell",
-    "share",
-    "showpanel",
-    "shrinkfont",
-    "smalliconslayout",
-    "sortdown",
-    "sortdowntext",
-    "sorted",
-    "sortup",
-    "sortuptext",
-    "sparkle",
-    "spindown",
-    "spinleft",
-    "spinnext",
-    "spinprev",
-    "spinright",
-    "spinup",
-    "splitcells",
-    "square",
-    "startswith",
-    "stickcolumn",
-    "stopfilled",
-    "stopoutline",
-    "strike",
-    "subscript",
-    "sun",
-    "superscript",
-    "svgfile",
-    "tableproperties",
-    "tags",
-    "taskcomplete",
-    "taskhelpneeded",
-    "taskinprogress",
-    "taskrejected",
-    "taskstop",
-    "tel",
-    "textdocument",
-    "tips",
-    "to",
-    "today",
-    "todo",
-    "toolbox",
-    "trash",
-    "triangledown",
-    "triangleleft",
-    "triangleright",
-    "triangleup",
-    "txtfile",
-    "underline",
-    "undo",
-    "unfixcolumn",
-    "ungroupcolumn",
-    "ungroupallcolumns",
-    "unlock",
-    "unpin",
-    "unselectall",
-    "upload",
-    "user",
-    "variable",
-    "verticalalignbottom",
-    "verticalaligncenter",
-    "verticalaligntop",
-    "video",
-    "warning",
-    "xlsfile",
-    "xlsxfile"
-];
+﻿let mainSheet;
 
-var divs = $.map(iconNames, function (name) {
-    return $("<div class='container'>").append(
-        $("<i class='icon dx-icon-" + name + "'></i>"),
-        $("<span class='icon-name'>" + name + "</span>")
-    );
-});
-
-var externalContainer = $("#external-container");
-
-while (divs.length) {
-    externalContainer.append(divs.shift());
+for (const sheet of document.styleSheets) {
+    if (sheet.href?.includes('fluent')) {
+        mainSheet = sheet;
+        break;
+    }
 }
+
+const singleIconStyleRegex = /.dx-icon-([\w]+)::before/
+const doubleIconStyleRegex = /.dx-icon-([\w]+)::before, .dx-icon-([\w]+)::before/
+const tripleIconStyleRegex = /.dx-icon-([\w]+)::before, .dx-icon-([\w]+)::before, .dx-icon-([\w]+)::before/
+
+let icons = [];
+
+for (let id = 0; id < mainSheet.cssRules.length; id++) {
+    const rule = mainSheet.cssRules[id];
+
+    if (rule.selectorText && (rule.selectorText.match(singleIconStyleRegex) && !rule.selectorText.includes(' ') || rule.selectorText.match(doubleIconStyleRegex))) {
+        const iconChar = `\\${rule.style.content.replace(/["']/g, '').codePointAt(0).toString(16)}`;
+        const iconName = rule.selectorText.split('::')[0].split('-')[2];
+        icons.push({id, iconName, iconChar});
+    }
+
+    if (rule.selectorText && rule.selectorText.match(doubleIconStyleRegex)) {
+        const iconChar = `\\${rule.style.content.replace(/["']/g, '').codePointAt(0).toString(16)}`;
+        const iconName = rule.selectorText.split('::')[1].split('-')[2];
+        icons.push({id, iconName, iconChar});
+    }
+
+    if (rule.selectorText && rule.selectorText.match(tripleIconStyleRegex)) {
+        const iconChar = `\\${rule.style.content.replace(/["']/g, '').codePointAt(0).toString(16)}`;
+        const iconName = rule.selectorText.split('::')[2].split('-')[2];
+        icons.push({id, iconName, iconChar});
+    }
+}
+
+const tabs = ['Fluent', 'Material', 'Generic'];
+
+$('#tabs').dxTabs({
+    dataSource: tabs,
+    selectedItem: 'Fluent',
+    onSelectionChanged(data) {
+        for (const theme of tabs) {
+            if (data.addedItems[0] === theme) {
+                $('i').addClass(`${theme}-icons`);
+                $('.dx-cardview-content.dx-cardview-content-grid .dx-button').addClass(`${theme}-icons`);
+            } else {
+                $('i').removeClass(`${theme}-icons`);
+                $('.dx-cardview-content.dx-cardview-content-grid .dx-button').removeClass(`${theme}-icons`);
+            }
+        }
+    },
+})
+
+function copyData(text) {
+    if (!navigator.clipboard) {
+        DevExpress.ui.notify({ contentTemplate() {
+                return $('<div>').css({display: 'flex', 'align-items': 'center'}).append(
+                    $('<i>').addClass('dx-icon-errorcircle'),
+                    $('<div>').text(`Failed to copy icon.`),
+                )
+            }, displayTime: 1000, minWidth: 320, maxWidth: 320 }, { position: "bottom center", direction: "up-push" });
+    } else {
+        navigator.clipboard.writeText(text).then(() => {
+            DevExpress.ui.notify({ contentTemplate() {
+                return $('<div>').css({display: 'flex', 'align-items': 'center'}).append(
+                    $('<i>').addClass('dx-icon-info'),
+                    $('<div>').text(`"${text}" copied to clipboard.`),
+                )
+            }, displayTime: 1000, minWidth: 320, maxWidth: 320 }, { position: "bottom center", direction: "up-push" });
+        }).catch((e) => {
+            DevExpress.ui.notify({ contentTemplate() {
+                return $('<div>').css({display: 'flex', 'align-items': 'center'}).append(
+                    $('<i>').addClass('dx-icon-errorcircle'),
+                    $('<div>').text(`Failed to copy icon: ${e}`),
+                )
+            }, displayTime: 1000, minWidth: 320, maxWidth: 320 }, { position: "bottom center", direction: "up-push" });
+        })
+    }
+}
+
+$('#cardview-container').dxCardView({
+    dataSource: icons,
+    columns: [{
+        dataField: 'iconName',
+        caption: 'Name',
+        sortOrder: 'asc',
+    }, {
+        dataField: 'iconChar',
+        caption: 'Character Code',
+    }],
+    cardContentTemplate(data) {
+        return $('<div class="icon-container">').append(
+            $(`<i class='icon dx-icon-${data.card.data.iconName}' style='text-align: center'></i>`),
+            $('<div class="icon-name">').dxButton({
+                stylingMode: 'text',
+                hoverStateEnabled: true,
+                activeStateEnabled: false,
+                focusStateEnabled: false,
+                text: data.card.data.iconName,
+                height: 24,
+                onClick(e) {
+                    copyData(data.card.data.iconName);
+                }
+            }),
+            $('<div class="icon-char">').dxButton({
+                stylingMode: 'text',
+                hoverStateEnabled: true,
+                activeStateEnabled: false,
+                focusStateEnabled: false,
+                text: data.card.data.iconChar,
+                height: 24,
+                onClick(e) {
+                    copyData(data.card.data.iconChar);
+                }
+            }),
+        )
+    },
+    cardsPerRow: 'auto',
+    searchPanel: {
+        visible: true,
+    },
+    scrolling: {
+        useNative: false,
+        scrollByThumb: true,
+        showScrollbar: 'onHover',
+    },
+    paging: {
+        enabled: false,
+    },
+    pager: {
+        visible: false,
+    },
+    height: 656,
+    cardMinWidth: 120,
+});

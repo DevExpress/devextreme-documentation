@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-The data of column template.
+Properties of a column template.
 
 ---
 <!-- Description goes here -->

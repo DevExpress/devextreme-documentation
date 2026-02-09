@@ -24,7 +24,7 @@ The instance of the row's source UI component.
 Custom [data](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/rowDragging/data.md '{basewidgetpath}/Configuration/rowDragging/#data') associated with the source UI component.
 
 ##### field(e.fromIndex): Number
-The row's original position. If the row is dragged from another UI component, the value is **-1**.
+The row's original position (when [paging](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging '{basewidgetpath}/Configuration/paging/') is enabled, the row's original position in the active page). If the row is dragged from another UI component, this value is **-1**.
 
 ##### field(e.itemData): any
 The data object of the row being dragged.
@@ -42,7 +42,7 @@ The instance of the row's target UI component.
 Custom [data](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/rowDragging/data.md '{basewidgetpath}/Configuration/rowDragging/#data') associated with the target UI component.
 
 ##### field(e.toIndex): Number
-The position in which a row is placed. If the row is dragged away from the UI component, the value is **-1**.
+The row's dropped position (when [paging](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging '{basewidgetpath}/Configuration/paging/') is enabled, the row's dropped position in the active page). If the row is dragged into another UI component, this value is **-1**.
 
 ---
 #include btn-open-demo with {

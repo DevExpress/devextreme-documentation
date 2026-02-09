@@ -7,7 +7,6 @@ Removes an item found using its DOM node.
 
 ##### return: Promise<void>
 A Promise that is resolved if the item is deleted and rejected otherwise.
-#include ref-promisedistinction
 
 ##### param(itemElement): Element
 The item's DOM node.

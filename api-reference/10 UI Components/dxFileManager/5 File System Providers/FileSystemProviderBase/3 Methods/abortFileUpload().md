@@ -7,7 +7,6 @@ Cancels the file upload.
 
 ##### return: Promise<any>
 A Promise that is resolved after the file upload is aborted.
-#include ref-promisedistinction
 
 ##### param(fileData): File
 The file that is being uploaded.

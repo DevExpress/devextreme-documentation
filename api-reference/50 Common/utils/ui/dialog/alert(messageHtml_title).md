@@ -9,7 +9,6 @@ Displays an alert dialog with a message and **OK** button.
 
 ##### return: Promise<void>
 A Promise that is resolved after a user clicks the button.
-#include ref-promisedistinction
 
 ##### param(messageHtml): String
 The dialog's message.       

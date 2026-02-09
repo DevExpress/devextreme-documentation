@@ -7,7 +7,6 @@ Reloads data and repaints the UI component.
 
 ##### return: Promise<any>
 A Promise that is resolved after data is loaded.
-#include ref-promisedistinction
 
 ---
 

@@ -7,7 +7,6 @@ Cancels the selection of rows with specific keys.
 
 ##### return: Promise<any>
 A Promise that is resolved after selection is cleared.
-#include ref-promisedistinction
 
 ##### param(keys): Array<any>
 The row keys.

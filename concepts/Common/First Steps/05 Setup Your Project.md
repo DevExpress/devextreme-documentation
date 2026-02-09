@@ -6,7 +6,7 @@ Create an empty web application. Then add jQuery and DevExtreme source files to 
     <!-- tab: index.html -->
     <head>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_25_1/js/dx.all.js"></script>
+        <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_25_2/js/dx.all.js"></script>
     </head>
 
 For complete installation instructions, refer to the following help topic: [Add DevExtreme to a jQuery Application](/concepts/58%20jQuery%20Components/05%20Add%20DevExtreme%20to%20a%20jQuery%20Application/00%20Add%20DevExtreme%20to%20a%20jQuery%20Application.md '/Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/').

@@ -7,7 +7,6 @@ Adds a route to the map.
 
 ##### return: Promise<Object>
 A Promise that is resolved with an original route instance when the route is added.
-#include ref-promisedistinction
 
 ##### param(options): Object | Array<Object>
 The [Route](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/routes '/Documentation/ApiReference/UI_Components/dxMap/Configuration/routes/') object(s).

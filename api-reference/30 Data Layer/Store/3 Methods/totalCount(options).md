@@ -7,7 +7,6 @@ Gets the total count of items the [load()](/api-reference/30%20Data%20Layer/Stor
 
 ##### return: Promise<Number>
 A Promise that is resolved after the total item count is obtained.
-#include ref-promisedistinction
 
 ##### param(obj): Object
 Filtering and grouping properties.

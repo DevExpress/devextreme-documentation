@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Configures whether to ignore specified time zones in *"Date"* and *"DateTimeOffset"* [field types](/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#fieldTypes).
+Configures whether to ignore specified time zones for *"Date"* and *"DateTimeOffset"* [field types](/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#fieldTypes) (in requests and attached components).
 
 ---
 When enabled, ODataStore ignores specified time zones and processes date values as UTC (sets the [time zone designator](https://en.wikipedia.org/wiki/ISO_8601#Time_zone_designators) in an ISO 8601 string to "Z"). When disabled (default), the store uses the following time zone offsets to convert dates to UTC:

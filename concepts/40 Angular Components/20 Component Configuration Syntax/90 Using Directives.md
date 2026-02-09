@@ -11,8 +11,8 @@ The following code snippet creates a directive that changes the style and switch
     <!-- tab: replace.directive.ts -->
     import { Directive, Host, Optional } from '@angular/core';
     import { DxTextBoxComponent, DxTextAreaComponent } from 'devextreme-angular';
-    import { DxTextAreaTypes } from 'devextreme-angular/ui/text-area';
-    import { DxTextBoxTypes } from 'devextreme-angular/ui/text-box';
+    import { type DxTextAreaTypes } from 'devextreme-angular/ui/text-area';
+    import { type DxTextBoxTypes } from 'devextreme-angular/ui/text-box';
 
     @Directive({
         selector: '[appReplace]',

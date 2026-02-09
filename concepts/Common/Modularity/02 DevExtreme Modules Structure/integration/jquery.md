@@ -1,3 +1,3 @@
 The module that provides jQuery integration.
 
-    require("integration/jquery");
+    require("devextreme/devextreme/integration/jquery");

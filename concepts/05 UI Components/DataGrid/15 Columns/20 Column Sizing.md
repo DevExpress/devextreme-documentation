@@ -1,4 +1,4 @@
-DataGrid calculates equal width values for all columns based on the component's width by default (when column **width** values are *"auto"*). You can also configure the following properties to specify column width values:
+DataGrid columns have equal width in default configuration (column **width** values are *"auto"*). Total column width matches the component/container width. You can configure the following properties to change the column layout:
 
 - **columns[]**.[width](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#width)/**columns[]**.[minWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#minWidth): Specify width/minimum width for a specific column.
 - [columnWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnWidth)/[columnMinWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnMinWidth): Specify width/minimum width for all columns.

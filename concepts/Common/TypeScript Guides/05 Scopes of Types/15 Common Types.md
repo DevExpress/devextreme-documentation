@@ -21,8 +21,8 @@ You can find common types under the following aliases:
     // In the sample below, ValidationRule is imported for each component:
 
     import { Component } from '@angular/core';
-    import { DxDataGridTypes } from 'devextreme-angular/ui/data-grid';
-    import { DxFormTypes } from 'devextreme-angular/ui/form';
+    import { type DxDataGridTypes } from 'devextreme-angular/ui/data-grid';
+    import { type DxFormTypes } from 'devextreme-angular/ui/form';
 
     @Component({
         selector: 'app-root',

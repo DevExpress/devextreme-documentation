@@ -1,8 +1,8 @@
-Exposes DevExtreme methods for working with AI integration.
+Exposes DevExtreme AI integration layer.
 
 Exports:
-- *getAIResponse* - The [getAIResponse](/api-reference/50%20Common/utils/utils/getAIResponse(options).md '/Documentation/ApiReference/Common/Utils/utils/#getAIResponseoptions') method
+    - *default* - The [AIIntegration](/Documentation/ApiReference/Common_Types/AIIntegration/) type
 
-        require("devextreme/common/utils/utils").getAIResponse;
+        require("devextreme/common/ai-integration");
         // ===== or =====
-        import { getAIResponse } from "devextreme/common/utils/utils";
+        import "devextreme/common/ai-integration";

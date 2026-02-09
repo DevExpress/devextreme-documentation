@@ -1,14 +1,18 @@
-TreeList calculates column width values based on the component's width. You can also configure [columnWidth](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnWidth) or **columns[]**.[width](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#width) to specify column widths.
+TreeList columns have equal width in default configuration (column **width** values are *"auto"*). Total column width matches the component/container width. You can configure the following properties to change the column layout:
 
-The default TreeList behavior is to assign equal width values to columns. To fit all columns within the component container, TreeList may shrink columns with default **width** values (*"auto"*). This may truncate cell values or collapse columns to zero width. To avoid this behavior, specify one of the following properties:
+- **columns[]**.[width](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#width)/**columns[]**.[minWidth](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#minWidth): Specify width/minimum width for a specific column.
+- [columnWidth](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnWidth)/[columnMinWidth](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnMinWidth): Specify width/minimum width for all columns.
+- [columnAutoWidth](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnAutoWidth): Adjusts all columns to fit cell values.
 
-- **columns[]**.[minWidth](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#minWidth) (for all columns)/[columnMinWidth](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnMinWidth)
-- **columns[]**.[width](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#width) (for all columns)/[columnWidth](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnWidth)
-- [columnAutoWidth](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnAutoWidth)
+Your data or component configuration may result in column layout issues:
 
-The **columnAutoWidth** property adjusts columns to fit cell values.
+- Truncated cell values.
+- Collapsed (hidden) columns.
+- Columns with excess blank space.
 
-When the specified width of all columns exceeds the component's width, TreeList enables horizontal [scrolling](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/scrolling/).
+To resolve these issues, specify column width or minimum width, or enable auto-width.
+
+When the specified width of all columns exceeds the component's width, TreeList activates horizontal [scrolling](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/scrolling/).
 
 ---
 

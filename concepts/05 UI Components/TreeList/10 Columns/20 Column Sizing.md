@@ -1,4 +1,4 @@
-TreeList columns have equal width in default configuration (column **width** values are *"auto"*). Total column width matches the component/container width. You can configure the following properties to change the column layout:
+TreeList columns have equal widths in the default configuration (**width** is set to *"auto"*). The total column width matches the component (container) width. Configure the following properties to change the column layout:
 
 - **columns[]**.[width](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#width)/**columns[]**.[minWidth](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#minWidth): Specify width/minimum width for a specific column.
 - [columnWidth](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnWidth)/[columnMinWidth](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnMinWidth): Specify width/minimum width for all columns.

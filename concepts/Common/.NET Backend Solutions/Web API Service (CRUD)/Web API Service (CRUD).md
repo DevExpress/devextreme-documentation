@@ -17,7 +17,7 @@ DevExpress Web API Service leverages the functionality of EF Core to implement C
 Your application’s authentication mechanism can utilize the built-in OAuth2, JWT, and OpenID support. You can also implement custom authentication.
 
 - **IDE Integration**    
-If you work in Visual Studio 2022+ for Windows, the integrated Template Kit automatically scaffolds your Web Service to speed up application development.
+If you work in Visual Studio 2022+ for Windows or JetBrains Rider, the integrated Template Kit automatically scaffolds your Web Service to speed up application development.
 
 Basic functionality of DevExpress Web API Service is available for free. Additional capabilities and services listed below are available as part of the [DevExpress Universal Subscription](https://www.devexpress.com/subscriptions/universal.xml):
 

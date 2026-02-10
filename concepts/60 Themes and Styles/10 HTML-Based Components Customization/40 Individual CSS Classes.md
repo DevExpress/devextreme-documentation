@@ -17,17 +17,17 @@ DevExtreme component markup may change between releases without notice. We recom
 
 ##### Angular
 
-- DevExtreme component markup may change between releases without notice. We recommend you configure [API properties](/concepts/60%20Themes%20and%20Styles/10%20HTML-Based%20Components%20Customization/30%20Components%20API.md '/Documentation/Guide/Themes_and_Styles/HTML-Based_Components_Customization/#Components_API') to customize components instead.
+- DevExtreme component markup may change between releases without notice. We recommend that you configure [API properties](/concepts/60%20Themes%20and%20Styles/10%20HTML-Based%20Components%20Customization/30%20Components%20API.md '/Documentation/Guide/Themes_and_Styles/HTML-Based_Components_Customization/#Components_API') to customize components instead.
 - DevExtreme components such as [Popup](/Documentation/Guide/UI_Components/Popup/Overview/) display content within wrappers in the application root. To customize these components, define global CSS styles. For more information, refer to the following topic: [Angular - Styling Components](https://angular.dev/guide/components/styling).
 
 ##### Vue
 
-- DevExtreme component markup may change between releases without notice. We recommend you configure [API properties](/concepts/60%20Themes%20and%20Styles/10%20HTML-Based%20Components%20Customization/30%20Components%20API.md '/Documentation/Guide/Themes_and_Styles/HTML-Based_Components_Customization/#Components_API') to customize components instead.
+- DevExtreme component markup may change between releases without notice. We recommend that you configure [API properties](/concepts/60%20Themes%20and%20Styles/10%20HTML-Based%20Components%20Customization/30%20Components%20API.md '/Documentation/Guide/Themes_and_Styles/HTML-Based_Components_Customization/#Components_API') to customize components instead.
 - DevExtreme components such as [Popup](/Documentation/Guide/UI_Components/Popup/Overview/) display content within wrappers in the application root. To customize these components, define CSS styles in non-scoped `<style>` tags. For more information, refer to the following topic: [Vue - SFC CSS Features](https://vuejs.org/api/sfc-css-features.html).
 
 ##### React
 
-DevExtreme component markup may change between releases without notice. We recommend you configure [API properties](/concepts/60%20Themes%20and%20Styles/10%20HTML-Based%20Components%20Customization/30%20Components%20API.md '/Documentation/Guide/Themes_and_Styles/HTML-Based_Components_Customization/#Components_API') to customize components instead.
+DevExtreme component markup may change between releases without notice. We recommend that you configure [API properties](/concepts/60%20Themes%20and%20Styles/10%20HTML-Based%20Components%20Customization/30%20Components%20API.md '/Documentation/Guide/Themes_and_Styles/HTML-Based_Components_Customization/#Components_API') to customize components instead.
 
 ---
 

@@ -1,6 +1,6 @@
 DevExtreme components consist of standard HTML elements (for instance, `<div>`, `<td>`, and `<tr>`). You can use CSS classes to customize these elements.
 
-For a list of common CSS classes used within DevExtreme components, refer to the following topic: [CSS Classes](/api-reference/10%20UI%20Components/zz%20CSS%20Classes '/Documentation/ApiReference/UI_Components/CSS_Classes/'). To determine classes of specific visual elements within DevExtreme components, inspect component markup:
+For a list of common CSS classes used in DevExtreme components, see [CSS Classes](/api-reference/10%20UI%20Components/zz%20CSS%20Classes '/Documentation/ApiReference/UI_Components/CSS_Classes/'). To identify classes for specific visual elements, inspect the component markup:
 
 - [How to inspect CSS rules](/concepts/80%20Troubleshooting/00%20Basics/15%20Examine%20CSS.md '/Documentation/Guide/Troubleshooting/Basics/#Examine_CSS')
 - [Use CSS to Customize Control Appearance](https://docs.devexpress.com/GeneralInformation/404568/css-customization/customize-control-appearance)
@@ -13,7 +13,7 @@ To add custom classes to a DevExtreme component's root element, specify the `cla
 
 ##### jQuery
 
-DevExtreme component markup may change between releases without notice. We recommend you configure [API properties](/concepts/60%20Themes%20and%20Styles/10%20HTML-Based%20Components%20Customization/30%20Components%20API.md '/Documentation/Guide/Themes_and_Styles/HTML-Based_Components_Customization/#Components_API') to customize components instead.
+DevExtreme component markup may change between releases without notice. We recommend that you configure [API properties](/concepts/60%20Themes%20and%20Styles/10%20HTML-Based%20Components%20Customization/30%20Components%20API.md '/Documentation/Guide/Themes_and_Styles/HTML-Based_Components_Customization/#Components_API') to customize components instead.
 
 ##### Angular
 

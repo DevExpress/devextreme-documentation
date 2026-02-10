@@ -11,11 +11,6 @@ The Form component meets a variety of <a href="https://www.access-board.gov/ict/
         <td>1.4.3 Contrast (Minimum) (Level AA) <br> 1.4.11 Non-text Contrast (Level AA 2.1 and 2.2)</td>
         <td>Form does not support Windows High Contrast themes.</td>
     </tr>
-    <tr>
-        <td>11.5.2.15 Change notification</td>
-        <td>4.1.3 Status Messages (Level AA 2.1 and 2.2)</td>
-        <td>Validator with an AsyncRule and ValidationSummary.</td>
-    </tr>
 </table>
 
 The component also complies with the [European Accessibility Act (EAA)](https://eur-lex.europa.eu/eli/dir/2019/882/oj) and [Americans with Disabilities Act (ADA)](https://www.ada.gov/law-and-regs/ada/) directives.

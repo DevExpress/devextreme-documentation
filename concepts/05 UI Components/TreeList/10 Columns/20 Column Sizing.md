@@ -10,7 +10,7 @@ Your data or component configuration may result in column layout issues:
 - Collapsed (hidden) columns.
 - Columns with excess blank space.
 
-To resolve these issues, specify column width or minimum width, or enable auto-width.
+To resolve these issues, specify column width or minimum width values, or enable auto-width.
 
 When the specified width of all columns exceeds the component's width, TreeList activates horizontal [scrolling](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/scrolling/).
 
@@ -89,10 +89,10 @@ When the specified width of all columns exceeds the component's width, TreeList 
     
 ---
 
-TreeList also allows you to use the mouse to resize columns at runtime. To enable this functionality, set [allowColumnResizing](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/allowColumnResizing.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#allowColumnResizing') to `true`. TreeList includes two column resizing modes ([columnResizingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnResizingMode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnResizingMode')):
+TreeList also allows you to use the mouse to resize columns at runtime. To activate this feature, set [allowColumnResizing](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/allowColumnResizing.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#allowColumnResizing') to `true` and select a [columnResizingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnResizingMode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#columnResizingMode'):
 
-- *"nextColumn"*: Adjusts the width of two columns (on either side of a column separator).
-- *"widget"*: Adjusts the width of one column (on the left of a column separator) and the component's width.
+- *"nextColumn"*: Adjusts the width of the two columns on either side of a column separator.
+- *"widget"*: Adjusts the width of the column to the left of a column separator and the component width.
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/ColumnResizing/"

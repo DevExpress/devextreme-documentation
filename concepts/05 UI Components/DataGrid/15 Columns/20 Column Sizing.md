@@ -10,7 +10,7 @@ Your data or component configuration may result in column layout issues:
 - Collapsed (hidden) columns.
 - Columns with excess blank space.
 
-To resolve these issues, specify column width or minimum width, or enable auto-width.
+To resolve these issues, specify column width or minimum width values, or enable auto-width.
 
 When the specified width of all columns exceeds the component's width, DataGrid activates horizontal [scrolling](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/).
 

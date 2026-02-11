@@ -1,8 +1,8 @@
 DataGrid columns have equal widths in the default configuration (**width** is set to *"auto"*). The total column width matches the component (container) width. Configure the following properties to change the column layout:
 
-- **columns[]**.[width](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#width)/**columns[]**.[minWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#minWidth): Specify width/minimum width for a specific column.
-- [columnWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnWidth)/[columnMinWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnMinWidth): Specify width/minimum width for all columns.
-- [columnAutoWidth](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnAutoWidth): Adjusts all columns to fit cell values.
+- **columns[]**.[width](/api-reference/_hidden/GridBaseColumn/width.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#width')/**columns[]**.[minWidth](/api-reference/_hidden/GridBaseColumn/minWidth.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#minWidth'): Specify width/minimum width for a specific column.
+- [columnWidth](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnWidth.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnWidth')/[columnMinWidth](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnMinWidth.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnMinWidth'): Specify width/minimum width for all columns.
+- [columnAutoWidth](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnAutoWidth.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnAutoWidth'): Adjusts all columns to fit cell values.
 
 Your data or component configuration may result in column layout issues:
 
@@ -12,7 +12,7 @@ Your data or component configuration may result in column layout issues:
 
 To resolve these issues, specify column width or minimum width values, or enable auto-width.
 
-When the specified width of all columns exceeds the component's width, DataGrid activates horizontal [scrolling](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/).
+When the specified width of all columns exceeds the component's width, DataGrid activates horizontal [scrolling](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/scrolling '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/').
 
 ---
 

@@ -4526,6 +4526,21 @@
     "_ui_tree_list_CellPreparedEvent.oldValue": {
       "vue": "old-value"
     },
+    "_ui_tree_list_ColumnButtonClickEvent": {
+      "angular": "dxo-ui-tree-list--column-button-click-event",
+      "react": "_ui_tree_list_ColumnButtonClickEvent",
+      "vue": "Dx_ui_tree_list_ColumnButtonClickEvent"
+    },
+    "_ui_tree_list_ColumnButtonClickEvent.column": {
+      "angular": "dxo-column",
+      "react": "Column",
+      "vue": "DxColumn"
+    },
+    "_ui_tree_list_ColumnButtonClickEvent.row": {
+      "angular": "dxo-row",
+      "react": "Row",
+      "vue": "DxRow"
+    },
     "_ui_tree_list_ContentReadyEvent": {
       "angular": "dxo-ui-tree-list--content-ready-event",
       "react": "_ui_tree_list_ContentReadyEvent",

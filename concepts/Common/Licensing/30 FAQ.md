@@ -46,7 +46,7 @@ A:
 
 And all related supplemental products like Application Templates, UI Template Gallery, and Demos (if you download them or copy to CodePen or CodeSandBox).
 
-[note] For more information about licensing in ASP.NET Core/MVC, refer to the following article: [Convert a Trial Version to a Licensed Version](https://docs.devexpress.com/GeneralInformation/403579/trial-register/convert-a-trial-version-to-a-licensed-version).
+[note] For more information about licensing in ASP.NET Core/MVC, refer to the following article: [ASP.NET Core and ASP.NET MVC Projects](/Documentation/Guide/Common/Licensing/#Validation/ASPNET_Core_and_ASPNET_MVC_Projects).
 
 <br>
 

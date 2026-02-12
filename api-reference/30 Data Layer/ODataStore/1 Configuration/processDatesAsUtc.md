@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-Configures whether to ignore specified time zones for *"Date"* and *"DateTimeOffset"* [field types](/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#fieldTypes) (in requests and attached components).
+Specifies whether requests and attached components ignore time zones when treating date-time field values.
 
 ---
 This option specifies how to treat values in *"Date"* and *"DateTimeOffset"* [field types](/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#fieldTypes). 

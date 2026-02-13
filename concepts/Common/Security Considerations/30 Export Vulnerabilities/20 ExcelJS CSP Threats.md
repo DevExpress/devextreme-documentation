@@ -1,6 +1,6 @@
 DevExtreme DataGrid and PivotGrid use ExcelJS to export data to Excel. 
 
-[important] This section applies only to ExcelJS versions 4.4.0 and older. We strongly advise you use our fork of the ExcelJS library instead, [DevExtreme ExcelJS](https://github.com/DevExpress/devextreme-exceljs-fork).
+[important] This section applies only to ExcelJS v4.4.0 and older. We recommend that you use our fork of the ExcelJS library instead, [DevExtreme ExcelJS](https://github.com/DevExpress/devextreme-exceljs-fork).
 
 If you apply [CSP rules](/concepts/Common/Security%20Considerations/40%20Content%20Security%20Policy/05%20Common%20CSP%20Directives.md '/Documentation/Guide/Common/Security_Considerations/#Content_Security_Policy/Common_CSP_Directives'), include the following initialization code before ExcelJS sources: `window.regeneratorRuntime = null;` 
 

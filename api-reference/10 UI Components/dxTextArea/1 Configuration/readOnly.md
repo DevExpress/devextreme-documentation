@@ -1,0 +1,1 @@
+When this property is enabled, users cannot change the TextArea value.

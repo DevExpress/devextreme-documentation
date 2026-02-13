@@ -10272,6 +10272,9 @@
     "dxChatOptions.hoverStateEnabled": {
       "vue": "hover-state-enabled"
     },
+    "dxChatOptions.inputFieldText": {
+      "vue": "input-field-text"
+    },
     "dxChatOptions.items": {
       "angular": "dxi-item",
       "react": "Item",
@@ -10344,6 +10347,12 @@
     },
     "dxChatOptions.showUserName": {
       "vue": "show-user-name"
+    },
+    "dxChatOptions.speechToTextEnabled": {
+      "vue": "speech-to-text-enabled"
+    },
+    "dxChatOptions.speechToTextOptions": {
+      "vue": "speech-to-text-options"
     },
     "dxChatOptions.tabIndex": {
       "vue": "tab-index"
@@ -18667,6 +18676,9 @@
       "angular": "dx-speech-to-text",
       "react": "SpeechToText",
       "vue": "DxSpeechToText"
+    },
+    "dxSpeechToTextOptions": {
+      "vue": "dx-speech-to-text-options"
     },
     "dxSpeechToTextOptions.customSpeechRecognizer": {
       "angular": "dxo-custom-speech-recognizer",

@@ -46,12 +46,12 @@ $(() => {
         }
       }, {
         type: 'buttons',
-        headerCellTemplate() {
+        headerCellTemplate(el, data) {
           return $('<div>').dxButton({
             icon: 'add',
             stylingMode: 'text',
             onClick() {
-              grid.addRow();
+              data.component.addRow();
             }
           })
         }

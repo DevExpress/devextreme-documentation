@@ -1,0 +1,1 @@
+You can apply optional styles and templates to customize the app.

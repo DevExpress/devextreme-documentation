@@ -1,7 +1,6 @@
 ---
 id: dxChat.Options.fileUploaderOptions
 type: dxFileUploader_Options
-default: null
 ---
 ---
 ##### shortDescription

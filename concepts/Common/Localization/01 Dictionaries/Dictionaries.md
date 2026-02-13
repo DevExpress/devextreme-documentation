@@ -1,11 +1,14 @@
-Dictionaries contain localized strings for different languages. The strings are key/value pairs and are shipped as JavaScript or JSON files (depending on the package you use).
+Dictionaries contain localized strings for different languages. These strings are key/value pairs and are shipped as JavaScript or JSON files (depending on the package you use).
 
-All dictionaries are contributed and curated by the community. The list of dictionaries is available <a href="https://github.com/DevExpress/DevExtreme/tree/25_2/packages/devextreme/js/localization/messages" target="_blank">on GitHub</a>.
+DevExtreme dictionaries are crowd-sourced. For a list of all available dictionaries, refer to the DevExtreme repo on GitHub: [DevExtreme Dictionaries](https://github.com/DevExpress/DevExtreme/tree/25_2/packages/devextreme/js/localization/messages).
+
+To localize your project, you can import dictionaries from the following folders:
+
+- `js/localization` within the `devextreme-dist` package.
+- `C:\Program Files\DevExpress 25.2\Components\Sources\DevExtreme\Lib\js\localization` on your computer if you used the DevExpress Unified Component Installer.
 
 ---
 ##### jQuery
-
-You can find all the dictionaries on your local machine in the DevExtreme installation folder's or ZIP archive's Lib\js\localization directory. These dictionaries are also available on CDN.
 
 Use the `<script>` tag to link the required dictionaries, and place the links *after* a link to the DevExtreme library:
 
@@ -27,8 +30,6 @@ Use the `<script>` tag to link the required dictionaries, and place the links *a
     </body>
 
 ##### Angular
-
-You can find all the dictionaries on your local machine in the DevExtreme installation folder's or ZIP archive's Lib\js\localization directory. These dictionaries are also available on npm.
 
 Include the dictionaries using the `import` or `require` statement the statement depends on the syntax for working with modules. The following code shows ECMAScript 6 and CommonJS syntaxes:
 
@@ -56,8 +57,6 @@ Include the dictionaries using the `import` or `require` statement the statement
 
 ##### Vue
 
-You can find all the dictionaries on your local machine in the DevExtreme installation folder's or ZIP archive's Lib\js\localization directory. These dictionaries are also available on npm.
-
 Include the dictionaries using the `import` or `require` statement the statement depends on the syntax for working with modules. The following code shows ECMAScript 6 and CommonJS syntaxes:
 
     <!-- tab: ECMAScript 6 syntax -->
@@ -83,8 +82,6 @@ Include the dictionaries using the `import` or `require` statement the statement
     localization.locale(navigator.language);
 
 ##### React
-
-You can find all the dictionaries on your local machine in the DevExtreme installation folder's or ZIP archive's Lib\js\localization directory. These dictionaries are also available on npm.
 
 Include the dictionaries using the `import` or `require` statement the statement depends on the syntax for working with modules. The following code shows ECMAScript 6 and CommonJS syntaxes:
 

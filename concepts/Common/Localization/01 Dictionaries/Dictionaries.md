@@ -2,9 +2,10 @@ Dictionaries contain localized strings for different languages. These strings ar
 
 DevExtreme dictionaries are crowd-sourced. For a list of all available dictionaries, refer to the DevExtreme repo on GitHub: [DevExtreme Dictionaries](https://github.com/DevExpress/DevExtreme/tree/25_2/packages/devextreme/js/localization/messages).
 
-To localize your project, you can import dictionaries from the following folders:
+To localize your project, you can import dictionaries from the following locations:
 
 - `js/localization` within the `devextreme-dist` package.
+- `js/localization` in DevExtreme libraries on the DevExpress CDN.
 - `C:\Program Files\DevExpress 25.2\Components\Sources\DevExtreme\Lib\js\localization` on your computer if you used the DevExpress Unified Component Installer.
 
 ---

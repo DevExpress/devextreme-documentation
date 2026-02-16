@@ -1,6 +1,6 @@
 Dictionaries contain localized strings for different languages. These strings are key/value pairs shipped as JavaScript or JSON files, depending on the package you use.
 
-DevExtreme dictionaries are community-sourced. For a list of all available dictionaries, refer to the DevExtreme repo on GitHub: [DevExtreme Dictionaries](https://github.com/DevExpress/DevExtreme/tree/25_2/packages/devextreme/js/localization/messages).
+DevExtreme dictionaries are community-sourced. For a list of all available dictionaries, refer to the DevExtreme repository on GitHub: [DevExtreme Dictionaries](https://github.com/DevExpress/DevExtreme/tree/25_2/packages/devextreme/js/localization/messages).
 
 To localize your project, import dictionaries from the following locations:
 

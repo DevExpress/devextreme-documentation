@@ -35,23 +35,28 @@ for (let id = 0; id < mainSheet.cssRules.length; id++) {
     }
 }
 
-const tabs = ['Fluent', 'Material', 'Generic'];
+const themes = ['Fluent', 'Material', 'Generic'];
 
-$('#tabs').dxTabs({
-    dataSource: tabs,
+function changeIconTheme(selectedTheme) {
+    for (const theme of themes) {
+        if (selectedTheme === theme) {
+            $('.icon-container i').addClass(`${theme}-icons`);
+            $('.dx-cardview-content.dx-cardview-content-grid .dx-button').addClass(`${theme}-icons`);
+        } else {
+            $('.icon-container i').removeClass(`${theme}-icons`);
+            $('.dx-cardview-content.dx-cardview-content-grid .dx-button').removeClass(`${theme}-icons`);
+        }
+    }
+}
+
+const tabs = $('#tabs').dxTabs({
+    dataSource: themes,
     selectedItem: 'Fluent',
     onSelectionChanged(data) {
-        for (const theme of tabs) {
-            if (data.addedItems[0] === theme) {
-                $('i').addClass(`${theme}-icons`);
-                $('.dx-cardview-content.dx-cardview-content-grid .dx-button').addClass(`${theme}-icons`);
-            } else {
-                $('i').removeClass(`${theme}-icons`);
-                $('.dx-cardview-content.dx-cardview-content-grid .dx-button').removeClass(`${theme}-icons`);
-            }
-        }
+        const selectedTheme = data.addedItems[0];
+        changeIconTheme(selectedTheme);
     },
-})
+}).dxTabs('instance');
 
 function copyData(text) {
     if (!navigator.clipboard) {
@@ -134,4 +139,8 @@ $('#cardview-container').dxCardView({
     },
     height: 656,
     cardMinWidth: 120,
+    onContentReady() {
+        const selectedTheme = tabs.option('selectedItem');
+        changeIconTheme(selectedTheme);
+    },
 });

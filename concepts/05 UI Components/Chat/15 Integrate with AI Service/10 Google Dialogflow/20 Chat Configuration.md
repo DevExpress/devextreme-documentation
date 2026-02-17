@@ -1,4 +1,4 @@
-To synchronize Chat and Google Dialogflow, declare the `processMessageSending()` function. This function configures [typingUsers](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/typingUsers.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#typingUsers'), pushes the assistant message to the store, and renders the message.
+To process messages with Google Dialogflow in DevExtreme Chat, declare the `processMessageSending()` function. This function configures [typingUsers](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/typingUsers.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#typingUsers'), pushes the assistant message to the store, and renders the message.
 
 ---
 

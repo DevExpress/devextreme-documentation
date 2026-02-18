@@ -20361,6 +20361,9 @@
     "dxTreeViewOptions.dataStructure": {
       "vue": "data-structure"
     },
+    "dxTreeViewOptions.disabledNodeSelectionMode": {
+      "vue": "disabled-node-selection-mode"
+    },
     "dxTreeViewOptions.expandAllEnabled": {
       "vue": "expand-all-enabled"
     },
@@ -21118,6 +21121,9 @@
     },
     "enums.Direction": {
       "vue": "direction"
+    },
+    "enums.DisabledNodeSelectionMode": {
+      "vue": "disabled-node-selection-mode"
     },
     "enums.DiscreteAxisDivisionMode": {
       "vue": "discrete-axis-division-mode"

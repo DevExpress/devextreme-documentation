@@ -1,4 +1,4 @@
-Google recommends to implement a server layer when you use Dialogflow to ensure the security and reliability of the application. You cannot use this library on the client exclusively since Google's CORS policy blocks the necessary requests. 
+Dialogflow requires a server layer. You cannot use this library on the client exclusively since Google's CORS policy blocks necessary requests. 
 
 To create a server layer, perform the following steps:
 
@@ -14,7 +14,7 @@ To create a server layer, perform the following steps:
             }
         }
 
-3. Install the necessary dependencies:
+3. Install the following dependencies:
 
         npm i @google-cloud/dialogflow
         npm i path browser-sync body-parser express

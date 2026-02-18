@@ -1,4 +1,4 @@
-If you use ASP.NET Core or ASP.NET MVC with DevExtreme and see a trial version message at the top of the application window, see the following solutions:
+If you use ASP.NET Core or ASP.NET MVC with DevExtreme and see a trial message at the top of the application window, try the following solutions:
 
 **1. .NET key is invalid or missing:**
 
@@ -11,8 +11,8 @@ If you use ASP.NET Core or ASP.NET MVC with DevExtreme and see a trial version m
 - A [DevExtreme warning](/Documentation/Guide/Common/Licensing/#Validation) appears in the browser console.
 - Trial message links open `js.devexpress.com`. The message lists "**DevExtreme Complete**" in the subscription.
 - **Solutions**:
-  - If both Razor and jQuery/JavaScript are used, render Razor-based components first.
-  - [Configure the license key manually](/Documentation/Guide/Common/Licensing/#Validate_Your_License_Key/Manual_Configuration/Non-Modular). In `devextreme-license.js`, add `DevExpress.config({ licenseKey: 'your_license_key' });`. Load scripts in this order:
+  - If you use both Razor and jQuery/JavaScript, render Razor-based components first.
+  - [Configure the license key](/Documentation/Guide/Common/Licensing/#Validate_Your_License_Key/Manual_Configuration/Non-Modular). In `devextreme-license.js`, add `DevExpress.config({ licenseKey: 'your_license_key' });`. Load scripts in this order:
     1. jQuery scripts
     2. `dx.all.js`
     3. `devextreme-license.js`

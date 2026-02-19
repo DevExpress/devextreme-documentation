@@ -1,4 +1,4 @@
-DevExtreme components assign classes to nested elements. You can specify custom CSS styles for these classes to customize your app. For a list of common DevExtreme classes, refer to the following topic: [CSS Classes](Documentation/ApiReference/UI_Components/CSS_Classes/).
+DevExtreme components assign classes to nested elements. You can specify custom CSS styles for these classes to customize your app. For a list of common DevExtreme classes, refer to the following topic: [CSS Classes](/Documentation/ApiReference/UI_Components/CSS_Classes/).
 
 This example applies rounded corners to the first and last rows of the DataGrid:
 

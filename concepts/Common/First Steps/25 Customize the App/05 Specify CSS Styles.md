@@ -1,13 +1,6 @@
 DevExtreme components assign classes to nested elements. You can specify custom CSS styles for these classes to customize your app. For a list of common DevExtreme classes, refer to the following topic: [CSS Classes](Documentation/ApiReference/UI_Components/CSS_Classes/).
 
-Specify the following styles to hide the DataGrid header panel:
-
-    <!-- tab: index.css -->
-    #task-grid .dx-datagrid-header-panel {
-        display: none;
-    }
-
-To apply rounded corners to the first and last rows of the DataGrid, specify the following styles:
+This example applies rounded corners to the first and last rows of the DataGrid:
 
     <!-- tab: index.css -->
     #task-grid .dx-datagrid-headers, #task-grid .dx-datagrid .dx-datagrid-table .dx-header-row>td:first-child {

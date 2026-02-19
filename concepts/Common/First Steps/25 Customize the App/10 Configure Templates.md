@@ -1,6 +1,6 @@
 DevExtreme components allow you to specify custom markup for certain elements. To specify custom markup, configure [templates](/Documentation/Guide/UI_Components/Common/Templates/).
 
-This example specifies a **columns[]**.[headerCellTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#headerCellTemplate) to display an "Add a row" button in the header row. Integrate a DevExtreme [Button](/Documentation/Guide/UI_Components/Button/Overview/) within this template and call [DataGrid.addRow()](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#addRow) in the button's [onClick](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick) handler:
+This example hides the DataGrid [toolbar](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/) and specifies a **columns[]**.[headerCellTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#headerCellTemplate) to display an "Add a row" button in the header row. Integrate a DevExtreme [Button](/Documentation/Guide/UI_Components/Button/Overview/) within this template and call [DataGrid.addRow()](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#addRow) in the button's [onClick](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick) handler:
 
 ---
 
@@ -20,6 +20,9 @@ This example specifies a **columns[]**.[headerCellTemplate](/Documentation/ApiRe
                 })
             }
         }],
+        toolbar: {
+            visible: false
+        },
         // ...
     })
 
@@ -61,7 +64,7 @@ This example also configures **columns[]**.[cellTemplate]() to implement placeho
 
 ---
 
-You can find the full source code in the GitHub repository:
+You can find the full source code of this example in the following GitHub repository:
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-first-steps"

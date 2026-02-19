@@ -26,10 +26,6 @@
   border-top-right-radius: 8px;
 }
 
-#task-grid .dx-datagrid-header-panel {
-  display: none;
-}
-
 #task-grid .dx-row-lines:nth-last-child(2) > td {
   border-bottom-style: none;
 }

@@ -1,0 +1,3 @@
+DevExtreme does not use semantic versioning and follows the DevExpress [product delivery model](https://www.devexpress.com/support/delivery-model.xml). New versions are released twice per year, in December and June. Minor updates are released approximetly once per month, or more frequently, if required.
+
+To minimize security-related risks, you should always install and use the most recent version of DevExtreme available.

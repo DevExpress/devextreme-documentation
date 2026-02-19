@@ -18,7 +18,7 @@ Create a React application and [install DevExtreme](/concepts/50%20React%20Compo
 
 ---
 
-Implement a `getAIResponse(text)` function to call the Dialogflow server for responses.
+Implement a `getAIResponse(text)` function to query the Dialogflow server for responses.
 
 ---
 

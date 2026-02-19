@@ -1,4 +1,4 @@
-This section describes how to integrate Chat with [Google Dialogflow](https://cloud.google.com/dialogflow/docs). The Dialogflow platform includes two virtual agent services: 
+This section describes [Google Dialogflow](https://cloud.google.com/dialogflow/docs) integration into DevExtreme Chat. The Dialogflow platform includes two virtual agent services: 
 
 - [CX](https://docs.cloud.google.com/dialogflow/cx/docs) - suitable for large and complex agents.
 - [ES](https://docs.cloud.google.com/dialogflow/es/docs) - suitable for small and simple agents.

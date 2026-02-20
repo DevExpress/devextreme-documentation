@@ -28,7 +28,7 @@ This example hides the DataGrid [toolbar](/Documentation/ApiReference/UI_Compone
 
 ---
 
-This example also configures **columns[]**.[cellTemplate]() to implement placeholder values for empty cells and format date values ([formatDate()](/Documentation/ApiReference/Common/Utils/localization/#formatDatevalue_format)):
+This example also configures **columns[]**.[cellTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate) to implement placeholder values for empty cells and format date values ([formatDate()](/Documentation/ApiReference/Common/Utils/localization/#formatDatevalue_format)):
 
 ---
 

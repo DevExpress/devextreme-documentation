@@ -12,7 +12,7 @@
 
 - [Information Security](/concepts/Common/Licensing/20%20Information%20Security.md '/Documentation/Guide/Common/Licensing/#Information_Security')
 
-- [Validation](/concepts/Common/Licensing/25%20Validation.md '/Documentation/Guide/Common/Licensing/#Validation')
+- [Validation](/concepts/Common/Licensing/25%20Validation/00%20Validation.md '/Documentation/Guide/Common/Licensing/#Validation')
 
 - [Redistribution](/concepts/Common/Licensing/27%20Redistribution.md '/Documentation/Guide/Common/Licensing/#Redistribution')
 

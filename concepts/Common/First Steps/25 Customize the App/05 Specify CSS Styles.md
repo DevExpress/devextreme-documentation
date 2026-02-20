@@ -17,7 +17,7 @@ This example applies rounded corners to the first and last rows of the DataGrid:
         border-bottom-style: none;
     }
 
-DevExtreme ships with multiple CSS variables. These allow you to apply theme-dependent customizations. This example applies the `--dx-color-danger` variable to customize "delete" buttons in DataGrid rows:
+DevExtreme defines multiple theme-dependent CSS variables. You can use these variables to customize UI elements. This example applies the `--dx-color-danger` variable to "Delete" buttons in DataGrid rows:
 
     <!-- tab: index.css -->
     .dx-link-delete::before {

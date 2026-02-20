@@ -1,1 +1,1 @@
-You can apply optional styles and templates to customize the app.
+Apply styles and templates to DevExtreme components to customize your app appearance.

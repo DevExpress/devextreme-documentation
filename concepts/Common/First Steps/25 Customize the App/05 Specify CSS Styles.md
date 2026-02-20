@@ -24,7 +24,7 @@ DevExtreme defines multiple theme-dependent CSS variables. You can use these var
         color: var(--dx-color-danger)
     }
 
-This example also customizes row deletion dialogs:
+This example also customizes row deletion popups. The following styles stretch the nested [Toolbar](/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/) component to align dialog buttons with the dialog text:
 
     <!-- tab: index.css -->
     .dx-dialog .dx-toolbar-center {

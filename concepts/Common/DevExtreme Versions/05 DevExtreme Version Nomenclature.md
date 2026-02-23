@@ -19,6 +19,6 @@ DevExtreme version notation includes three numbers:
     </tr>
 </table>
 
-[note] In the DevExtreme documentation, versions with omitted minors (such as v25.2.x) refer to the latest available minor in the specified major release.
+[note] In DevExtreme documentation, version references can omit the last number (as in v25.2.x). This notation refers to the latest available minor update of the specified major release.
 
 For a list of DevExtreme versions, refer to the following topic: [Version History](/Documentation/Guide/Common/Whats_New/Version_History/).

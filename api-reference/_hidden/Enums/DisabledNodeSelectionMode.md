@@ -6,7 +6,7 @@ references: dxTreeView.Options.disabledNodeSelectionMode
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the selection behavior of disabled nodes.
 
 ---
 <!-- Description goes here -->

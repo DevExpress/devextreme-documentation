@@ -1,4 +1,4 @@
-Dialogflow requires a server layer. You cannot use this library on the client exclusively since Google's CORS policy blocks necessary requests. 
+Dialogflow requires a server layer. You cannot use this library on the client only because Google’s CORS policy blocks required requests.
 
 To create a server layer, perform the following steps:
 

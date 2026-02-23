@@ -2,19 +2,19 @@ After we release a major DevExtreme release, we aim to publish minor updates acc
 
 <table class="dx-table">
    <tr>
-	<th>Time since major release</th>
-	<th>Minor release schedule</th>
-	<th>Minor release content</th>
+      <th>Time since major release</th>
+      <th>Minor release schedule</th>
+      <th>Minor release content</th>
    </tr>
    <tr>
-        <td>First 12 months</td>
-        <td>Monthly</td>
-        <td>Bug fixes and resolved security issues</td>
+      <td>First 12 months</td>
+      <td>Monthly</td>
+      <td>Bug fixes and resolved security issues</td>
    </tr>
    <tr>
-        <td>12-24 months</td>
-        <td>As necessary</td>
-        <td>Resolved security issues only</td>
+      <td>12-24 months</td>
+      <td>As necessary</td>
+      <td>Resolved security issues only</td>
    </tr>
 </table>
 

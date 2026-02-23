@@ -9,4 +9,4 @@ This tutorial uses **Dialogflow ES**. You can find the full example code in the 
     href: "https://github.com/DevExpress-Examples/devextreme-chat-google-dialogflow"
 }
 
-[note] Ensure you are familiar with the [Google Dialogflow documentation](https://cloud.google.com/dialogflow/docs) before you start this tutorial.
+[note] Read the official [Google Dialogflow documentation](https://cloud.google.com/dialogflow/docs) to learn how to set up and configure your agent.

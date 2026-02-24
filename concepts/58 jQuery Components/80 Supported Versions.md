@@ -19,4 +19,8 @@
 
 [note] Although earlier versions are supported, we recommend that you use jQuery v3.7.1 to protect against [vulnerabilities](https://security.snyk.io/package/npm/jquery) found in earlier versions.
 
+#####See Also#####
+
+- [DevExtreme Versions](/Documentation/Guide/Common/DevExtreme_Versions/)
+
 [tags] jquery

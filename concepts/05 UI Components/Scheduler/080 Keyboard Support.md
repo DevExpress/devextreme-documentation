@@ -17,7 +17,7 @@ An end user can use the following keys to interact with the UI component.
     </tr>
     <tr>
         <td><a href="/Documentation/Guide/UI_Components/Scheduler/View_Switcher/">View Switcher</a></td>
-        <td>Left Arrow  or Right Arrow </td>        
+        <td>Left Arrow or Right Arrow</td>        
         <td>Switches between scheduler views.</td>
     </tr>
     <tr>
@@ -31,7 +31,7 @@ An end user can use the following keys to interact with the UI component.
     </tr>
     <tr>
         <td rowspan="4">Timetable</td>
-        <td>Left Arrow / Right Arrow / Up Arrow  / Down Arrow </td>
+        <td>Left Arrow / Right Arrow / Up Arrow / Down Arrow</td>
         <td>Selects the previous/next/top/bottom cell.</td>
     </tr>
     <tr>
@@ -43,7 +43,7 @@ An end user can use the following keys to interact with the UI component.
         <td>Selects several cells.</td>
     </tr>
     <tr>
-        <td>Shift + Space or Enter + Arrow Keys </td>        
+        <td>Shift + Space or Enter + Arrow Keys</td>        
         <td>Invokes a popup window for currently selected cells.</td>
     </tr>
     <tr>

@@ -6,7 +6,7 @@ A user can use the following keys to interact with the Slider component:
         <th>Action</th>
     </tr>
     <tr>
-        <td>Left Arrow / Right Arrow </td>
+        <td>Left Arrow / Right Arrow</td>
         <td>Decreases/increases the value of the focused handle by a <a href="/Documentation/ApiReference/UI_Components/dxSlider/Configuration/#step">step</a>.</td>
     </tr>
     <tr>

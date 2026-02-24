@@ -10,9 +10,9 @@ Generates a pixel-measured empty space between the left/right border of a strip 
 ---
 This property depends on the **label**.**horizontalAlignment** in the following way.
 
-- **horizontalAlignment** is *"left"* &rarr; padding applies to the left border of a strip;       
-- **horizontalAlignment** is *"right"* &rarr; padding applies to the right border of a strip;      
-- **horizontalAlignment** is *"center"* &rarr; padding is calculated automatically.
+- **horizontalAlignment** is *"left"*: Padding applies to the left border of a strip;       
+- **horizontalAlignment** is *"right"*: Padding applies to the right border of a strip;      
+- **horizontalAlignment** is *"center"*: Padding is calculated automatically.
 
 ![DevExtreme HTML5 Charts StripPadding](/images/ChartJS/StripPaddingLeftRight.png)
 

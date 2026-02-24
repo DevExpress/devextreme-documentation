@@ -6,15 +6,15 @@ A user can use the following keys to interact with the AutoComplete component:
         <th>Action</th>
     </tr>
     <tr>
-        <td>Alt + &darr;</td>
+        <td>Alt + Down Arrow</td>
         <td>Opens the drop-down menu.</td>
     </tr>
     <tr>
-        <td>Alt + &uarr; / Esc</td>
+        <td>Alt + Up Arrow / Esc</td>
         <td>Closes the drop-down menu.</td>
     </tr>
     <tr>
-        <td>&uarr; / &darr;</td>
+        <td>Up/Down Arrows</td>
         <td>Moves focus to the previous/next menu item.</td>
     </tr>
     <tr>

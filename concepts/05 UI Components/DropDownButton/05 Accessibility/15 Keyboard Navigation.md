@@ -6,11 +6,11 @@ A user can use the following keys to interact with the DropDownButton component:
         <th>Action</th>
     </tr>
     <tr>
-        <td>&larr;</td>
+        <td>Left Arrow</td>
         <td>Moves focus to the action button when <a href="/Documentation/ApiReference/UI_Components/dxDropDownButton/Configuration/#splitButton">splitButton</a> is enabled.</td>
     </tr>
     <tr>
-        <td>&rarr;</td>
+        <td>Right Arrow</td>
         <td>Moves focus to the toggle button when <b>splitButton</b> is enabled.</td>
     </tr>
     <tr>
@@ -21,11 +21,11 @@ A user can use the following keys to interact with the DropDownButton component:
         <td>Selects a menu item when focused.</td>
     </tr>
     <tr>
-        <td>&uarr; / &darr;</td>
+        <td>Up/Down Arrows</td>
         <td>Moves focus to the previous/following menu item.</td>
     </tr>
     <tr>
-        <td>&darr;</td>
+        <td>Down Arrow</td>
         <td>Opens the drop-down menu.</td>
     </tr>
     <tr>

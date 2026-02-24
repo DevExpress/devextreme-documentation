@@ -9,7 +9,7 @@ A user can use the following keys to interact with the DateBox component:
     <tr></tr>
     <tr>
         <td rowspan="3">All</td>
-        <td style="font-style:italic; text-align:center">Alt + &darr; / Alt + &uarr;</td>
+        <td style="font-style:italic; text-align:center">Alt + Down Arrow / Alt + Up Arrow</td>
         <td>Opens/closes the value picker.</td>
     </tr>
     <tr>
@@ -22,15 +22,15 @@ A user can use the following keys to interact with the DateBox component:
     </tr>
     <tr>
         <td rowspan="10">Calendar</td>
-        <td style="font-style:italic; text-align:center">&larr; &rarr; &uarr; &darr;</td>
+        <td style="font-style:italic; text-align:center">Arrow Keys</td>
         <td>Moves focus to the nearest date.</td>
     </tr>
     <tr>
-        <td>Page Up or Ctrl + &larr;</td>
+        <td>Page Up or Ctrl + Left Arrow</td>
         <td>Displays the previous month.</td>
     </tr>
     <tr>
-        <td>Page Down or Ctrl + &rarr;</td>
+        <td>Page Down or Ctrl + Right Arrow</td>
         <td>Displays the next month.</td>
     </tr>
     <tr>
@@ -38,7 +38,7 @@ A user can use the following keys to interact with the DateBox component:
         <td>Selects the focused day.</td>
     </tr>
     <tr>
-        <td>Alt + &uarr; / Alt + &darr;</td>
+        <td>Alt + Up Arrow / Alt + Down Arrow</td>
         <td>Opens/closes the drop-down editor.</td>
     </tr>
     <tr>
@@ -46,11 +46,11 @@ A user can use the following keys to interact with the DateBox component:
         <td>Closes the drop-down editor.</td>
     </tr>
     <tr>
-        <td>Ctrl + &uarr;</td>
+        <td>Ctrl + Up Arrow</td>
         <td>Increases <a href="/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#zoomLevel">zoomLevel</a>.</td>
     </tr>
     <tr>
-        <td>Ctrl + &darr;</td>
+        <td>Ctrl + Down Arrow</td>
         <td>Decreases <b>zoomLevel</b>.</td>
     </tr>
     <tr>
@@ -63,7 +63,7 @@ A user can use the following keys to interact with the DateBox component:
     </tr>
     <tr>
         <td rowspan="3">List</td>
-        <td style="font-style:italic; text-align:center">&uarr; / &darr;</td>
+        <td style="font-style:italic; text-align:center">Up/Down Arrows</td>
         <td>Moves focus to the previous/next time value.</td>
     </tr>
     <tr>

@@ -10,9 +10,9 @@ Generates a pixel-measured empty space between the top/bottom border of a strip 
 ---
 This property depends on the **label**.**verticalAlignment** in the following way.
 
-- **verticalAlignment** is *"top"* &rarr; padding applies to the top border of a strip;       
-- **verticalAlignment** is *"bottom"* &rarr; padding applies to the bottom border of a strip;      
-- **verticalAlignment** is *"center"* &rarr; padding is calculated automatically.
+- **verticalAlignment** is *"top"*: Padding applies to the top border of a strip;       
+- **verticalAlignment** is *"bottom"*: Padding applies to the bottom border of a strip;      
+- **verticalAlignment** is *"center"*: Padding is calculated automatically.
 
 ![DevExtreme HTML5 Charts StripPadding](/images/ChartJS/StripPaddingTopBottom.png)
 

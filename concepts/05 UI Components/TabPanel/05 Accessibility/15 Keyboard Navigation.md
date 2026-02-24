@@ -6,11 +6,11 @@ A user can use the following keys to interact with the TabPanel component:
         <th>Action</th>
     </tr>
     <tr>
-        <td>&larr;</td>
+        <td>Left Arrow</td>
         <td>Switches the UI component to the previous view.</td>
     </tr>
     <tr>
-        <td>&rarr;</td>
+        <td>Right Arrow</td>
         <td>Switches the UI component to the next view.</td>
     </tr>
 </table>

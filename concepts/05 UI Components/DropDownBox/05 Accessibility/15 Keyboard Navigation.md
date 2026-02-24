@@ -6,7 +6,7 @@ A user can use the following keys to interact with the DropDownBox component:
         <th>Action</th>
     </tr>
     <tr>
-        <td>Alt + &darr;</td>
+        <td>Alt + Down Arrow</td>
         <td>Opens the drop-down field.</td>
     </tr>
 </table>

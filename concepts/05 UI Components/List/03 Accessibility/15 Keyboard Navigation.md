@@ -6,7 +6,7 @@ A user can use the following keys to interact with the List component:
         <th>Action</th>
     </tr>
     <tr>
-        <td>&uarr; / &darr;</td>
+        <td>Up/Down Arrows</td>
         <td>Moves focus to the previous/next item.</td>
     </tr>
     <tr>
@@ -22,7 +22,7 @@ A user can use the following keys to interact with the List component:
         <td><a href="/Documentation/Guide/UI_Components/List/Selection/#User_Interaction">Selects</a> and deselects the focused item. Active if the <a href="/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectByClick">selectByClick</a> property is set to <i>true</i>.</td>
     </tr>
     <tr>
-        <td>Shift + &uarr; / &darr;</td>
+        <td>Shift + Up Arrow / Down Arrow</td>
         <td>Shifts the focused item one item up/down. Active if the <a href="/Documentation/ApiReference/UI_Components/dxList/Configuration/#allowItemReordering">allowItemReordering</a> property is set to <i>true</i>.</td>
     </tr>
     <tr>

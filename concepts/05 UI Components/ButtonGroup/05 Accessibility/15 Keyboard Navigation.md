@@ -6,11 +6,11 @@ A user can use the following keys to interact with the ButtonGroup component:
         <th>Action</th>
     </tr>
     <tr>
-        <td>&larr; &uarr; or PageUp</td>
+        <td>Left/Up Arrows, PageUp</td>
         <td>Moves focus to the previous button.</td>
     </tr>
     <tr>
-        <td>&rarr; &darr; or PageDown</td>
+        <td>Right/Down Arrows, PageDown</td>
         <td> Moves focus to the next button.</td>
     </tr>
     <tr>

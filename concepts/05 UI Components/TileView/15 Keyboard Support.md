@@ -10,7 +10,7 @@ An end user can use the following keys to interact with the UI component.
         <td>Scrolls the content left/right if the <a href="/Documentation/ApiReference/UI_Components/dxTileView/Configuration/#direction">direction</a> property is <i>"horizontal"</i>.</td>
     </tr>
     <tr>
-        <td>&larr;&rarr;&uarr;&darr;</td>
+        <td>Left ArrowRight ArrowUp ArrowDown Arrow</td>
         <td>Moves focus to the neighboring tile.</td>
     </tr>
     <tr>

@@ -6,7 +6,7 @@ A user can use the following keys to interact with the Lookup component:
         <th>Action</th>
     </tr>
     <tr>
-        <td>Alt + &darr;</td>
+        <td>Alt + Down Arrow</td>
         <td>Opens the drop-down menu.</td>
     </tr>
     <tr>
@@ -18,7 +18,7 @@ A user can use the following keys to interact with the Lookup component:
         <td>Closes the drop-down menu.</td>
     </tr>
     <tr>
-        <td>&uarr; / &darr;</td>
+        <td>Up/Down Arrows</td>
         <td>If the drop-down menu is opened, moves focus to the previous/next item.</td>
     </tr>
     <tr>

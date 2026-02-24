@@ -58,21 +58,25 @@ To apply a theme, import a stylesheet where DevExtreme components are used or in
 
 If you want to apply theme colors and typography settings to all page elements (and not only to DevExtreme UI components), add a `dx-viewport` class to the `<body>` tag of your application's `index.html` file.
 
-To configure component styles manually, create an `index.css` file and import it alongside the DevExtreme theme CSS file:
+To configure component styles, create an `index.css` file and import it alongside the DevExtreme theme CSS file:
 
     <!-- tab: index.css -->
+    :root {
+        color-scheme: light; /* Update this property when you switch between light/dark themes. */
+    }
+
     #dashboard {
         display: grid;
         gap: 20px;
         max-width: 900px;
         margin: 40px auto;
-        padding: 20px;
+        padding: 80px 20px;
         box-sizing: border-box;
     }
 
     #progress,
     #task-grid {
-        background: #fff;
+        background-color: light-dark(#fff, #383838);
         padding: 16px;
         border-radius: 8px;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);

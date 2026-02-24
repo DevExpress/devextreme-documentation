@@ -3,14 +3,54 @@
   gap: 20px;
   max-width: 900px;
   margin: 40px auto;
-  padding: 20px;
+  padding: 80px 20px;
   box-sizing: border-box;
 }
 
-#progress,
-#task-grid {
-  background: #fff;
+#progress, #task-grid {
+  background-color: light-dark(#fff, #383838);
   padding: 16px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#progress {
+  padding-top: 32px
+}
+
+#task-grid .dx-datagrid-headers, #task-grid .dx-datagrid .dx-datagrid-table .dx-header-row>td:first-child {
+  border-top-left-radius: 8px;
+}
+
+#task-grid .dx-datagrid-headers, #task-grid .dx-datagrid .dx-datagrid-table .dx-header-row>td:last-child {
+  border-top-right-radius: 8px;
+}
+
+#task-grid .dx-row-lines:nth-last-child(2) > td {
+  border-bottom-style: none;
+}
+
+#task-grid .dx-datagrid-rowsview {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-style: none;
+}
+
+.dx-dialog .dx-toolbar-center {
+  margin: -8px !important;
+  width: calc(100% + 16px);
+  border-spacing: 8px 0;
+  float: none !important;
+}
+
+.dx-toolbar-center .dx-button {
+  width: 100%;
+}
+
+.dx-toolbar-center .dx-item {
+  padding-right: 0 !important;
+}
+
+.dx-link-delete::before {
+  color: var(--dx-color-danger)
 }

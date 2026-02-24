@@ -18,7 +18,7 @@ A user can use the following keys to interact with the Lookup component:
         <td>Closes the drop-down menu.</td>
     </tr>
     <tr>
-        <td>Up/Down Arrows</td>
+        <td>Up Arrow / Down Arrow</td>
         <td>If the drop-down menu is opened, moves focus to the previous/next item.</td>
     </tr>
     <tr>

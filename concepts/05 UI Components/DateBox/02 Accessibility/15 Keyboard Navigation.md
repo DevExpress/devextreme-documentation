@@ -63,7 +63,7 @@ A user can use the following keys to interact with the DateBox component:
     </tr>
     <tr>
         <td rowspan="3">List</td>
-        <td style="font-style:italic; text-align:center">Up/Down Arrows</td>
+        <td style="font-style:italic; text-align:center">Up Arrow / Down Arrow</td>
         <td>Moves focus to the previous/next time value.</td>
     </tr>
     <tr>

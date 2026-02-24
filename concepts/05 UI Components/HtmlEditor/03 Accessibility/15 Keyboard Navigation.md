@@ -67,7 +67,7 @@ A user can use the following keys to interact with the HTML Editor component:
         <td>Decrease indentation (when at the start of a paragraph)</td>    
     </tr>
     <tr>
-        <td colspan="2">Up Arrow Right Arrow Down Arrow Left Arrow</td>
+        <td colspan="2">Arrow Keys</td>
         <td>Navigate through the table</td>
     </tr>
     <tr>

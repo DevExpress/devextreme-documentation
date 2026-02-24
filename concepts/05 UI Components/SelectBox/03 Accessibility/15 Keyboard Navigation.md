@@ -18,7 +18,7 @@ A user can use the following keys to interact with the SelectBox component:
         <td>Closes the drop-down list and removes focus from the UI component.</td>
     </tr>
     <tr>
-        <td>Up/Down Arrows</td>
+        <td>Up Arrow / Down Arrow</td>
         <td>If the drop-down list is opened, moves focus to the previous/next item; otherwise, selects the previous/next item.</td>
     </tr>
     <tr>

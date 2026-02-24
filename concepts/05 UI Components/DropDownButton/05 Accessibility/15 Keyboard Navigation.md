@@ -21,7 +21,7 @@ A user can use the following keys to interact with the DropDownButton component:
         <td>Selects a menu item when focused.</td>
     </tr>
     <tr>
-        <td>Up/Down Arrows</td>
+        <td>Up Arrow / Down Arrow/td>
         <td>Moves focus to the previous/following menu item.</td>
     </tr>
     <tr>

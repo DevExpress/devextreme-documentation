@@ -12,7 +12,7 @@ TreeView offers different keyboard controls depending on the action users want t
         <td>Scrolls the content left/right if the <a href="/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#scrollDirection">scrollDirection</a> property is <i>"horizontal"</i> or <i>"both"</i>.</td>
     </tr>
     <tr>
-        <td>Up/Down Arrows</td>
+        <td>Up Arrow / Down Arrow</td>
         <td>Moves focus to the previous/next node.</td>
     </tr>
     <tr>

@@ -6,11 +6,11 @@ An end user can use the following keys to interact with the UI component.
         <th>Action</th>
     </tr>
     <tr>
-        <td>Up/Down Arrows</td>
+        <td>Up Arrow / Down Arrow</td>
         <td>Scrolls the content up/down if the <a href="/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#direction">scrolling direction</a> is <i>"vertical"</i> or <i>"both"</i>.</td>
     </tr>
     <tr>
-        <td>Mouse Wheel + Shift or Left/Right Arrows</td>
+        <td>Mouse Wheel + Shift or Left  Arrow / Right Arrow</td>
         <td>Scrolls the content left/right if the <a href="/Documentation/ApiReference/UI_Components/dxScrollView/Configuration/#direction">scrolling direction</a> is <i>"horizontal"</i> or <i>"both"</i>.</td>
     </tr>
     <tr>

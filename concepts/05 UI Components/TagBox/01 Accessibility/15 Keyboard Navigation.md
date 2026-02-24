@@ -18,7 +18,7 @@ A user can use the following keys to interact with the TagBox component:
         <td>Closes the drop-down list and removes focus from the UI component.</td>
     </tr>
     <tr>
-        <td>Up/Down Arrows</td>
+        <td>Up Arrow / Down Arrow</td>
         <td>Moves focus to the previous/next item. Active only when the drop-down list is open.</td>
     </tr>
     <tr>
@@ -34,7 +34,7 @@ A user can use the following keys to interact with the TagBox component:
         <td>Unselects the last selected item.</td>
     </tr>
     <tr>
-        <td>Left/Right Arrows</td>
+        <td>Left Arrow / Right Arrow</td>
         <td>Focuses the previous/following tag.</td>
     </tr>
     <tr>

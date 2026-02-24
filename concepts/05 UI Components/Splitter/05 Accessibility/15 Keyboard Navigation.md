@@ -8,7 +8,7 @@ A user can use the following keys to interact with the Splitter component:
         <th>Action</th>
     </tr>
     <tr>
-        <td>Left Arrow Right Arrow / Up Arrow Down Arrow</td>
+        <td>Left Arrow / Right Arrow or Up Arrow / Down Arrow</td>
         <td>Moves handle bar in a 5px step.</td>
     </tr>
     <tr>

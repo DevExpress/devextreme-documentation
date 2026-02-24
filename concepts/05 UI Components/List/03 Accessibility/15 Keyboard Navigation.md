@@ -6,7 +6,7 @@ A user can use the following keys to interact with the List component:
         <th>Action</th>
     </tr>
     <tr>
-        <td>Up/Down Arrows</td>
+        <td>Up Arrow / Down Arrow</td>
         <td>Moves focus to the previous/next item.</td>
     </tr>
     <tr>

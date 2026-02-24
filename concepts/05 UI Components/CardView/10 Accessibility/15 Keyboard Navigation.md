@@ -183,7 +183,7 @@ CardView offers different keyboard controls depending on the focused component a
         <td>Triggers focused pager item.</td>
     </tr>
     <tr>
-        <td>Up Arrow Down Arrow</td>
+        <td>Up Arrow / Down Arrow</td>
         <td>When focused on TBA, switches the component to the next/previous page.</td>
     </tr>
     <tr>

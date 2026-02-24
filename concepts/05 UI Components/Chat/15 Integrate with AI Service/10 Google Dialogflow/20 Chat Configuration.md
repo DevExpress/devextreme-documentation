@@ -150,4 +150,4 @@ Call `processMessageSending()` after a user message is sent in the [onMessageEnt
 
 ---
 
-For additional configuration options, refer to the [Additional Configuration](/Documentation/Guide/UI_Components/Chat/Integrate_with_AI_Service/#OpenAI/Additional_Configuration) help topic.
+For additional configuration options, refer to the [Additional Configuration](/concepts/05%20UI%20Components/Chat/15%20Integrate%20with%20AI%20Service/05%20OpenAI/20%20Additional%20Configuration.md '/Documentation/Guide/UI_Components/Chat/Integrate_with_AI_Service/#OpenAI/Additional_Configuration') help topic.

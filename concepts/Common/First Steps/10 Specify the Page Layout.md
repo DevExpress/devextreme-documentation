@@ -17,13 +17,13 @@ Next, import components into `app.component.ts`:
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
-    import { DxDataGridComponent } from 'devextreme-angular/ui/data-grid';
-    import { DxProgressBarComponent } from 'devextreme-angular/ui/progress-bar';
+    import { DxDataGridModule } from 'devextreme-angular/ui/data-grid';
+    import { DxProgressBarModule } from 'devextreme-angular/ui/progress-bar';
 
     @Component({
         selector: 'app-root',
         standalone: true,
-        imports: [DxDataGridComponent, DxProgressBarComponent],
+        imports: [DxDataGridModule, DxProgressBarModule],
         templateUrl: './app.component.html',
         styleUrl: './app.component.css'
     })

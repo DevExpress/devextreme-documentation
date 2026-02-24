@@ -31,7 +31,7 @@ CardView offers different keyboard controls depending on the focused component a
         <td>Moves focus between the header panel and other CardView areas.</td>
     </tr>
     <tr>
-        <td>Left Arrow Right Arrow</td>
+        <td>Left Arrow / Right Arrow</td>
         <td>Moves focus between header panel items.</td>
     </tr>
     <tr>

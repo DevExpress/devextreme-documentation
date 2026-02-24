@@ -14,7 +14,7 @@ A user can use the following keys to interact with the AutoComplete component:
         <td>Closes the drop-down menu.</td>
     </tr>
     <tr>
-        <td>Up/Down Arrows</td>
+        <td>Up Arrow / Down Arrow</td>
         <td>Moves focus to the previous/next menu item.</td>
     </tr>
     <tr>

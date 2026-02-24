@@ -13,7 +13,8 @@
 
   <MenuRule Destination="050 Getting Started/05 Prerequisites and Installation/00 Distribution Channels" SourcePattern="Howto:^Common/Distribution Channels" />
 
-  <MenuRule Destination="050 Getting Started/01 First Steps" SourcePattern="Howto:^Common/First Steps" />
+  <MenuRule Destination="050 Getting Started/01 DevExtreme Versions" SourcePattern="Howto:^Common/DevExtreme Versions" />
+  <MenuRule Destination="050 Getting Started/02 First Steps" SourcePattern="Howto:^Common/First Steps" />
 
   <MenuRule Destination="050 Getting Started/05 Prerequisites and Installation/11 Supported Angular Versions" SourcePattern="Howto:^40 Angular Components/80 Supported Versions" VisibleFor="Angular" />
   <MenuRule Destination="050 Getting Started/05 Prerequisites and Installation/12 Supported TypeScript Versions" SourcePattern="Howto:^40 Angular Components/85 Supported TypeScript Versions" VisibleFor="Angular" />

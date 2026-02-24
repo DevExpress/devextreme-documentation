@@ -67,4 +67,8 @@ DevExtreme Vue supports the following TypeScript versions:
     </tr>
 </table>
 
+#####See Also#####
+
+- [DevExtreme Versions](/Documentation/Guide/Common/DevExtreme_Versions/)
+
 [tags] vue

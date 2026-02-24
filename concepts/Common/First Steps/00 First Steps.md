@@ -13,7 +13,7 @@
 
 ---
 
-In this step-by-step tutorial, you will build a simple task list application with a progress bar. By the end, you will have the following application:
+This step-by-step tutorial guides you through building a simple task list application with a progress bar. The completed application looks as follows:
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/25_2/FirstSteps/index.html, /Content/Applications/25_2/FirstSteps/index.js, /Content/Applications/25_2/FirstSteps/index.css" style="border-radius: 16px; margin-bottom: 12px"></div>
 

@@ -48,7 +48,7 @@ The DataGrid component can [load and update data](/concepts/05%20UI%20Components
             <dxi-data-grid-column dataField="done"></dxi-data-grid-column>
         </dx-data-grid>
 
-5. Remember to import the `DxiDataGridColumnComponent` component.
+5. If you use `DxDataGridComponent` instead of `DxDataGridModule`, remember to import the `DxiDataGridColumnComponent` component.
 
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';

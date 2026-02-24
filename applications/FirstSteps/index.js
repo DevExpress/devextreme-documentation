@@ -16,13 +16,55 @@ $(() => {
     .dxDataGrid({
       dataSource: tasks,
       keyExpr: "id",
-      columns: ["task", "dueDate", "done"],
+      columns: [{
+        dataField: "task",
+        cellTemplate(element, data) {
+          if (!data.value) {
+            return $(element)
+              .text('Enter a title...')
+              .css('color', 'var(--dx-color-icon)');
+          } else {
+            return $(element).text(data.value);
+          }
+        }
+      }, {
+        dataField: "dueDate",
+        cellTemplate(element, data) {
+          if (!data.value) {
+            return $(element)
+              .text('Enter a date...')
+              .css('color', 'var(--dx-color-icon)');
+          } else {
+            return $(element).text(DevExpress.localization.formatDate(data.value, 'shortDate'));
+          }
+        }
+      }, {
+        dataField: "done",
+        dataType: 'boolean',
+        calculateCellValue(row) {
+          return !!row.done;
+        }
+      }, {
+        type: 'buttons',
+        headerCellTemplate(el, data) {
+          return $('<div>').dxButton({
+            icon: 'add',
+            stylingMode: 'text',
+            onClick() {
+              data.component.addRow();
+            }
+          })
+        }
+      }],
       editing: {
         mode: "cell",
         allowUpdating: true,
         allowAdding: true,
         allowDeleting: true,
         newRowPosition: "last"
+      },
+      toolbar: {
+        visible: false,
       },
       onRowUpdated: updateProgress,
       onRowInserted: updateProgress,

@@ -1,0 +1,1 @@
+Apply styles and templates to DevExtreme components to customize your app appearance.

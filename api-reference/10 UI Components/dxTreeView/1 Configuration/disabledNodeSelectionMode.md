@@ -5,10 +5,10 @@ default: 'recursiveAndAll'
 ---
 ---
 ##### shortDescription
-Configures the selection behavior of disabled nodes.
+Configures disabled node behavior during batch selection operations.
 
 ---
-This property configures selection behavior for UI selection and methods such as [selectAll()](/Documentation/ApiReference/UI_Components/dxTreeView/Methods/#selectAll) and [selectItem()](/Documentation/ApiReference/UI_Components/dxTreeView/Methods/#selectItemkey). The following values are available:
+The following values are available:
 
-- *"recursiveAndAll"*: Recursive selection and Select All operations can select/unselect disabled nodes.
+- *"recursiveAndAll"*: Recursive selection and Select All operations affect disabled nodes. Selection operations can be initiated by an end user or by the following methods: [selectAll()](/Documentation/ApiReference/UI_Components/dxTreeView/Methods/#selectAll) and [selectItem()](/Documentation/ApiReference/UI_Components/dxTreeView/Methods/#selectItemkey). 
 - *"never"*: The selection state of disabled nodes cannot be changed.

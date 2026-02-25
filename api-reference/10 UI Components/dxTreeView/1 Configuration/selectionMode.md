@@ -31,7 +31,7 @@ To enable selection and display a Select All checkbox, set **showCheckBoxesMode*
     </tr>
 </table>
 
-[note] If [disabledNodeSelectionMode](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#disabledNodeSelectionMode) is *"never"*, TreeView ignores disabled nodes when determining the state of the Select All checkbox. For instance, when a disabled node is selected but no enabled node is checked, TreeView displays the Select All checkbox in the unchecked state.
+[note] If [disabledNodeSelectionMode](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/disabledNodeSelectionMode.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#disabledNodeSelectionMode') is *"never"*, TreeView ignores disabled nodes when determining the state of the Select All checkbox. For instance, when a disabled node is selected but no enabled node is checked, TreeView displays the Select All checkbox in the unchecked state.
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/ItemSelectionAndCustomization/"

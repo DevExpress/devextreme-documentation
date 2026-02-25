@@ -12,8 +12,8 @@ Recursive selection propagates in the directions of both child and parent nodes.
 
 [note]
 
-- If a [search value](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#searchValue) is specified, recursive selection affects only child nodes that match the search query.
-- When [disabledNodeSelectionMode](/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#disabledNodeSelectionMode) is *"never"*, recursive selection does not propagate past disabled nodes.
+- If a [search value](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/searchValue.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#searchValue') is specified, recursive selection affects only child nodes that match the search query.
+- When [disabledNodeSelectionMode](/api-reference/10%20UI%20Components/dxTreeView/1%20Configuration/disabledNodeSelectionMode.md '/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#disabledNodeSelectionMode') is *"never"*, recursive selection does not propagate past disabled nodes.
 
 [/note]
 

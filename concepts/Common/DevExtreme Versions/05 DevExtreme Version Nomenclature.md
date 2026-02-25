@@ -21,4 +21,4 @@ DevExtreme version notation includes three numbers:
 
 [note] In DevExtreme documentation, version references can omit the last number (as in v25.2.x). This notation refers to the latest available minor update of the specified major release.
 
-For a list of DevExtreme versions, refer to the following topic: [Version History](/Documentation/Guide/Common/Whats_New/Version_History/).
+For a list of DevExtreme versions, refer to the following topic: [Version History](/concepts/Common/Whats%20New/10%20Version%20History.md '/Documentation/Guide/Common/Whats_New/Version_History/').

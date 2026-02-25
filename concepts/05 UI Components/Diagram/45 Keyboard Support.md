@@ -50,15 +50,15 @@ A user can press the following keys to interact with the UI component:
         <td>Finishes shape/connector text editing.</td>
     </tr>
     <tr>
-        <td>&larr; / &rarr; / &uarr; / &darr;</td>
+        <td>Arrow Keys</td>
         <td>Moves the selected elements one grid cell in the specified direction.</td>
     </tr>
     <tr>
-        <td>Ctrl + &larr; / &rarr; / &uarr; / &darr;</td>
+        <td>Ctrl + Arrow Keys</td>
         <td>Moves the selected elements one pixel in the specified direction.</td>
     </tr>
     <tr>
-        <td>Alt + &larr; / &rarr; / &uarr; / &darr;</td>
+        <td>Alt + Arrow Keys</td>
         <td>Clones the selected elements.</td>
     </tr>
     <tr>

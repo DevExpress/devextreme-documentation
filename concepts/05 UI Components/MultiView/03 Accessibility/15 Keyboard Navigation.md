@@ -6,11 +6,11 @@ A user can use the following keys to interact with the MultiView component:
         <th>Action</th>
     </tr>
     <tr>
-        <td>&larr; / &uarr;</td>
+        <td>Left Arrow / Up Arrow</td>
         <td>Moves focus to the previous view.</td>
     </tr>
     <tr>
-        <td>&rarr; / &darr;</td>
+        <td>Right Arrow / Down Arrow</td>
         <td>Moves focus to the next view.</td>
     </tr>
     <tr>

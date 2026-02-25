@@ -10,7 +10,7 @@ A user can use the following keys to interact with the TreeView component:
         <td>Scrolls the content left/right if the <a href="/Documentation/ApiReference/UI_Components/dxTreeView/Configuration/#scrollDirection">scrollDirection</a> property is <i>"horizontal"</i> or <i>"both"</i>.</td>
     </tr>
     <tr>
-        <td>&uarr; / &darr;</td>
+        <td>Up Arrow / Down Arrow</td>
         <td>Moves focus to the previous/next node.</td>
     </tr>
     <tr>
@@ -18,11 +18,11 @@ A user can use the following keys to interact with the TreeView component:
         <td>Moves focus to the first/last node.</td>
     </tr>
     <tr>
-        <td>&rarr;</td>
+        <td>Right Arrow</td>
         <td>Expands the node.</td>
     </tr>
     <tr>
-        <td>&larr;</td>
+        <td>Left Arrow</td>
         <td>Collapses the node.</td>
     </tr>
     <tr>
@@ -38,7 +38,7 @@ A user can use the following keys to interact with the TreeView component:
         <td>Selects the node.</td>
     </tr>
     <tr>
-        <td>Shift + &uarr; / Shift + &darr;</td>
+        <td>Shift + Up Arrow / Shift + Down Arrow</td>
         <td>Extends selection up/down by one node.<sup>1</sup></td>
     </tr>
     <tr>

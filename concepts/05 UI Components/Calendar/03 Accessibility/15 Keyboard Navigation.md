@@ -6,15 +6,15 @@ A user can use the following keys to interact with the Calendar component:
         <th>Action</th>
     </tr>
     <tr>
-        <td>&larr; &rarr; &uarr; &darr;</td>
+        <td>Arrow Keys</td>
         <td>Moves focus to the day nearby.</td>
     </tr>
     <tr>
-        <td>Page Up or Ctrl + &larr;</td>
+        <td>Page Up or Ctrl + Left Arrow</td>
         <td>Displays the previous month.</td>
     </tr>
     <tr>
-        <td>Page Down or Ctrl + &rarr;</td>
+        <td>Page Down or Ctrl + Right Arrow</td>
         <td>Displays the next month.</td>
     </tr>
     <tr>
@@ -22,11 +22,11 @@ A user can use the following keys to interact with the Calendar component:
         <td>Selects the focused day.</td>
     </tr>
     <tr>
-        <td>Ctrl + &uarr;</td>
+        <td>Ctrl + Up Arrow</td>
         <td>Increases <a href="/Documentation/ApiReference/UI_Components/dxCalendar/Configuration/#zoomLevel">zoomLevel</a>.</td>
     </tr>
     <tr>
-        <td>Ctrl + &darr;</td>
+        <td>Ctrl + Down Arrow</td>
         <td>Decreases <b>zoomLevel</b>.</td>
     </tr>
     <tr>

@@ -11,9 +11,9 @@ Generates a pixel-measured empty space between the top/bottom side of a constant
 <!--
 This property depends on the **label**.**verticalAlignment** in the following way.
 
-- **verticalAlignment** is *"top"* &rarr; padding applies to the top side of a constant line;       
-- **verticalAlignment** is *"bottom"* &rarr; padding applies to the bottom side of a constant line;      
-- **verticalAlignment** is *"center"* &rarr; padding is calculated automatically.
+- **verticalAlignment** is *"top"*: Padding applies to the top side of a constant line;       
+- **verticalAlignment** is *"bottom"*: Padding applies to the bottom side of a constant line;      
+- **verticalAlignment** is *"center"*: Padding is calculated automatically.
 
 ![DevExtreme HTML5 Charts ConstantLinePadding](/images/ChartJS/ConstantLinePaddingTopBottom.png)
 

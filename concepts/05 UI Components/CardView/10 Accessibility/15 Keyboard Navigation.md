@@ -31,11 +31,11 @@ CardView offers different keyboard controls depending on the focused component a
         <td>Moves focus between the header panel and other CardView areas.</td>
     </tr>
     <tr>
-        <td>&larr; &rarr;</td>
+        <td>Left Arrow / Right Arrow</td>
         <td>Moves focus between header panel items.</td>
     </tr>
     <tr>
-        <td>Shift + &rarr;<br/>Shift + &larr;</td>
+        <td>Shift + Right Arrow<br/>Shift + Left Arrow</td>
         <td>Reorders the focused header item if <a href="/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#allowColumnReordering">allowColumnReordering</a> is "true".</td>
     </tr>
 </table>
@@ -60,7 +60,7 @@ CardView offers different keyboard controls depending on the focused component a
         <td>Disables focused header sorting. Does not clear previous sorting options if <b>sorting</b>.<b>mode</b> is "multiple".</td>
     </tr>
     <tr>
-        <td>Alt + &darr;</td>
+        <td>Alt + Down Arrow</td>
         <td>Triggers the focused header filter popup.</td>
     </tr>
 </table>
@@ -75,7 +75,7 @@ CardView offers different keyboard controls depending on the focused component a
         <th>Action</th>
     </tr>
     <tr>
-        <td>&larr; &rarr; &uarr; &darr;</td>
+        <td>Arrow Keys</td>
         <td>Moves focus between cards.</td>
     </tr>
     <tr>
@@ -183,11 +183,11 @@ CardView offers different keyboard controls depending on the focused component a
         <td>Triggers focused pager item.</td>
     </tr>
     <tr>
-        <td>&uarr; &darr;</td>
+        <td>Up Arrow / Down Arrow</td>
         <td>When focused on TBA, switches the component to the next/previous page.</td>
     </tr>
     <tr>
-        <td>Alt + &darr;</td>
+        <td>Alt + Down Arrow</td>
         <td>When focused on TBA, opens the dropdown.</td>
     </tr>
 </table>

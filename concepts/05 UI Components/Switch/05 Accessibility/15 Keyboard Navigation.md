@@ -10,11 +10,11 @@ A user can use the following keys to interact with the Switch component:
         <td>Changes the UI component value.</td>
     </tr>
     <tr>
-        <td>&rarr;</td>
+        <td>Right Arrow</td>
         <td>Changes the switch state to "On".</td>
     </tr>
     <tr>
-        <td>&larr;</td>
+        <td>Left Arrow</td>
         <td>Changes the switch state to "Off".</td>
     </tr>
 </table>

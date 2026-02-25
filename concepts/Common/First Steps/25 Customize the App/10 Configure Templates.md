@@ -1,6 +1,6 @@
-DevExtreme components allow you to specify custom markup for certain elements. To specify custom markup, configure [templates](/Documentation/Guide/UI_Components/Common/Templates/).
+DevExtreme components allow you to specify custom markup for certain elements. To specify custom markup, configure [templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates '/Documentation/Guide/UI_Components/Common/Templates/').
 
-This example hides the DataGrid [toolbar](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/) and specifies a **columns[]**.[headerCellTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#headerCellTemplate) to display an "Add a row" button in the header row. Integrate a DevExtreme [Button](/Documentation/Guide/UI_Components/Button/Overview/) within this template and call [DataGrid.addRow()](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#addRow) in the button's [onClick](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick) handler:
+This example hides the DataGrid [toolbar](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/toolbar.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/') and specifies a **columns[]**.[headerCellTemplate](/api-reference/_hidden/dxDataGridColumn/headerCellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#headerCellTemplate') to display an "Add a row" button in the header row. Integrate a DevExtreme [Button](/concepts/05%20UI%20Components/Button/02%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/Button/Overview/') within this template and call [DataGrid.addRow()](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/addRow().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#addRow') in the button's [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') handler:
 
 ---
 
@@ -149,7 +149,7 @@ This example hides the DataGrid [toolbar](/Documentation/ApiReference/UI_Compone
 
 ---
 
-This example also configures **columns[]**.[cellTemplate](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate) to implement placeholder values for empty cells and format date values ([formatDate()](/Documentation/ApiReference/Common/Utils/localization/#formatDatevalue_format)):
+This example also configures **columns[]**.[cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellTemplate') to implement placeholder values for empty cells and format date values ([formatDate()](/api-reference/50%20Common/utils/localization/formatDate(value_format).md '/Documentation/ApiReference/Common/Utils/localization/#formatDatevalue_format')):
 
 ---
 

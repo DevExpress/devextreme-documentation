@@ -6,11 +6,11 @@ A user can use the following keys to interact with the Accordion component:
         <th>Action</th>
     </tr>
     <tr>
-        <td>&uarr; or PageUp</td>
+        <td>Up Arrow or PageUp</td>
         <td>Sets focus to the previous panel.</td>
     </tr>
     <tr>
-        <td>&darr; or PageDown</td>
+        <td>Down Arrow or PageDown</td>
         <td>Sets focus to the next panel.</td>
     </tr>
     <tr>

@@ -6,11 +6,11 @@ A user can use the following keys to interact with the Tabs component:
         <th>Action</th>
     </tr>
     <tr>
-        <td>&larr; &uarr; or PageUp</td>
+        <td>Left Arrow / Up Arrow or PageUp</td>
         <td>Moves focus to the previous tab.</td>
     </tr>
     <tr>
-        <td>&rarr; &darr; or PageDown</td>
+        <td>Right Arrow / Down Arrow or PageDown</td>
         <td> Moves focus to the next tab.</td>
     </tr>
     <tr>

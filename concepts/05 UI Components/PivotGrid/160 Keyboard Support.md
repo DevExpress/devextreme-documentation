@@ -6,11 +6,11 @@ An end user can use the following keys to interact with the UI component.
         <th>Action</th>
     </tr>
     <tr>
-        <td>&uarr; / &darr;</td>
+        <td>Up Arrow / Down Arrow</td>
         <td>Scrolls the content up/down.</td>
     </tr>
     <tr>	
-        <td>Mouse Wheel + Shift or &larr; / &rarr;</td>	
+        <td>Shift + Mouse Wheel or Left Arrow / Right Arrow</td>	
         <td>Scrolls the content left/right.
     </td>
     <tr>

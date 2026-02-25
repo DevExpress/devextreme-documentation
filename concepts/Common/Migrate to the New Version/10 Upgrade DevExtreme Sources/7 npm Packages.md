@@ -38,5 +38,5 @@ Run the following commands:
 ---
 
 #####See Also#####
-- [DevExtreme Versions](/Documentation/Guide/Common/DevExtreme_Versions/)
+- [DevExtreme Versions](/concepts/Common/DevExtreme%20Versions/00%20DevExtreme%20Versions.md '/Documentation/Guide/Common/DevExtreme_Versions/')
 - [DevExtreme CLI - Create a New Application](/concepts/Common/DevExtreme%20CLI/20%20DevExtreme%20Application '/Documentation/Guide/Common/DevExtreme_CLI/#DevExtreme_Application')

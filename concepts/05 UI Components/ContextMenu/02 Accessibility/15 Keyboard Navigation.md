@@ -6,11 +6,11 @@ A user can use the following keys to interact with the ContextMenu component:
         <th>Action</th>
     </tr>
     <tr>
-        <td>&larr;</td>
+        <td>Left Arrow</td>
         <td>Closes the submenu and focuses on its parent item.</td>
     </tr>
     <tr>
-        <td>&rarr;</td>
+        <td>Right Arrow</td>
         <td>Opens the submenu of the focused item.</td>
     </tr>
     <tr>

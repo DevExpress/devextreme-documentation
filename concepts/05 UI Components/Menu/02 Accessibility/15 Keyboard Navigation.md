@@ -6,19 +6,19 @@ A user can use the following keys to interact with the Menu component:
         <th>Action</th>
     </tr>
     <tr>
-        <td>&larr;</td>
+        <td>Left Arrow</td>
         <td>Moves focus to the previous item. Closes the submenu and focuses on its parent item.</td>
     </tr>
     <tr>
-        <td>&rarr;</td>
+        <td>Right Arrow</td>
         <td>Moves focus to the next item. Opens the submenu of the focused item.</td>
     </tr>
     <tr>
-        <td>&uarr;</td>
+        <td>Up Arrow</td>
         <td>Moves focus to the previous item.</td>
     </tr>
     <tr>
-        <td>&darr;</td>
+        <td>Down Arrow</td>
         <td>Moves focus to the next item.</td>
     </tr>
     <tr>

@@ -69,6 +69,6 @@ DevExtreme React supports the following TypeScript versions:
 
 #####See Also#####
 
-- [DevExtreme Versions](/Documentation/Guide/Common/DevExtreme_Versions/)
+- [DevExtreme Versions](/concepts/Common/DevExtreme%20Versions/00%20DevExtreme%20Versions.md '/Documentation/Guide/Common/DevExtreme_Versions/')
 
 [tags] react

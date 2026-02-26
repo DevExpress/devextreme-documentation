@@ -3,6 +3,7 @@ id: Occurrence
 module: ui/scheduler
 export: Occurrence
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

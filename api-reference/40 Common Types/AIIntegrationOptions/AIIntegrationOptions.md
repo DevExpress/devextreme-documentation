@@ -2,7 +2,8 @@
 id: AIIntegration.Options
 module: common/ai-integration
 export: AIIntegration_Options
-type: common/ai-integration:AIIntegrationOptions
+type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

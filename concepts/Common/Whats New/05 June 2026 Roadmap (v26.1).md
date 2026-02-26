@@ -10,7 +10,7 @@ To know more about the planned features and review the current development statu
     <span>Roadmap v26.1</span>
 </a>
 
-Once you've had the opportunity to review our Year-End Roadmap, take a moment to share your feedback in our surveys (on the full Roadmap page).
+Once you've had the opportunity to review our June Roadmap, take a moment to share your feedback in our surveys ([on the full Roadmap page](https://community.devexpress.com/Blogs/javascript/archive/2026/02/25/devextreme-roadmap-v26-1.aspx#survey)).
 
 ## Features planned to be released in v26.1
 
@@ -33,7 +33,7 @@ Once you've had the opportunity to review our Year-End Roadmap, take a moment to
     - [Globalization — Separate Text and Date/Number Locales](https://community.devexpress.com/Blogs/javascript/archive/2026/02/25/devextreme-roadmap-v26-1.aspx#globalization-locales)
 - [Accessibility](https://community.devexpress.com/Blogs/javascript/archive/2026/02/25/devextreme-roadmap-v26-1.aspx#accessibility)
 - [Migration Away from CommonJS](https://community.devexpress.com/Blogs/javascript/archive/2026/02/25/devextreme-roadmap-v26-1.aspx#migration-away-from-common-js)
-- [.NET](https://community.devexpress.com/Blogs/javascript/archive/2026/02/25/devextreme-roadmap-v26-1.aspx#net)
+- [ASP.NET Core](https://community.devexpress.com/Blogs/javascript/archive/2026/02/25/devextreme-roadmap-v26-1.aspx#net)
 
 ##### Angular
 - [DataGrid & TreeList — AI Assistant](https://community.devexpress.com/Blogs/javascript/archive/2026/02/25/devextreme-roadmap-v26-1.aspx#grids-ai-assistant)

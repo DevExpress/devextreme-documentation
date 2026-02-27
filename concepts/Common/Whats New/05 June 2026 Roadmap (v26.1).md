@@ -10,7 +10,7 @@ To know more about the planned features and review the current development statu
     <span>Roadmap v26.1</span>
 </a>
 
-Once you've had the opportunity to review our June Roadmap, take a moment to share your feedback in our surveys ([on the full Roadmap page](https://community.devexpress.com/Blogs/javascript/archive/2026/02/25/devextreme-roadmap-v26-1.aspx#survey)).
+Once you've had the opportunity to review our June 2026 Roadmap, take a moment to share your feedback in our surveys ([on the full Roadmap page](https://community.devexpress.com/Blogs/javascript/archive/2026/02/25/devextreme-roadmap-v26-1.aspx#survey)).
 
 ## Features planned to be released in v26.1
 

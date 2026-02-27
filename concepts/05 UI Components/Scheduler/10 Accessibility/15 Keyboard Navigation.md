@@ -1,4 +1,4 @@
-An end user can use the following keys to interact with the UI component. 
+A user can use the following keys to interact with the Scheduler component: 
 
 <table class="dx-table full-width">
     <tr>
@@ -7,11 +7,12 @@ An end user can use the following keys to interact with the UI component.
         <th>Action</th>
     </tr>
     <tr>
-        <td rowspan="2">Scheduler UI component</td>
+        <td>Scheduler UI component</td>
         <td>Tab / Shift+Tab</td>        
         <td>Shifts focus to the next/previous appointment.</td>
     </tr>
     <tr>
+        <td>Scheduler UI component</td>
         <td>Shift + Mouse Wheel</td>
         <td>Scrolls the content left/right if the horizontal scrolling is taking place.</td>
     </tr>
@@ -21,30 +22,14 @@ An end user can use the following keys to interact with the UI component.
         <td>Switches between scheduler views.</td>
     </tr>
     <tr>
-        <td rowspan="2">Date Navigator</td>
+        <td>Date Navigator</td>
         <td>Tab / Shift+Tab</td>        
         <td>Shifts focus to the next/previous element within the navigator.</td>
     </tr>
     <tr>
+        <td>Date Navigator</td>
         <td>Enter or Space</td>        
         <td>Selects the focused element of the navigator.</td>
-    </tr>
-    <tr>
-        <td rowspan="4">Timetable</td>
-        <td>Left Arrow / Right Arrow / Up Arrow / Down Arrow</td>
-        <td>Selects the previous/next/top/bottom cell.</td>
-    </tr>
-    <tr>
-        <td>Enter or Space</td>        
-        <td>Invokes the appointment edit form for the currently selected cell.</td>
-    </tr>
-    <tr>
-        <td>Shift + Arrow Keys</td>        
-        <td>Selects several cells.</td>
-    </tr>
-    <tr>
-        <td>Shift + Space or Enter + Arrow Keys</td>        
-        <td>Invokes a popup window for currently selected cells.</td>
     </tr>
     <tr>
         <td>Popup Window</td>
@@ -52,32 +37,28 @@ An end user can use the following keys to interact with the UI component.
         <td>Shifts focus to the next/previous element within the window. Editors within the window are controlled by their own keyboard shortcuts. </td>
     </tr>
     <tr>
-        <td rowspan="3">Appointments</td>
+        <td>Appointments</td>
         <td>Tab / Shift+Tab</td>        
         <td>Shifts focus to the next/previous appointment.</td>
     </tr>
     <tr>
+        <td>Appointments</td>
         <td>Enter or Space</td>
         <td>Invokes the appointment edit form.</td>
     </tr>
     <tr>
+        <td>Appointments</td>
         <td>Delete</td>
         <td>Deletes the current appointment.</td>
     </tr>
     <tr>
-        <td rowspan="2"><a href="/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment_Tooltip/">Appointment Tooltip</a></td>
+        <td><a href="/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment_Tooltip/">Appointment Tooltip</a></td>
         <td>Tab / Shift+Tab</td>        
         <td>Shifts focus between tooltip elements.</td>
     </tr>
     <tr>
+        <td><a href="/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment_Tooltip/">Appointment Tooltip</a></td>
         <td>Enter or Space</td>        
         <td>Selects the focused element in the tooltip.</td>
     </tr>
 </table>
-
-#####See Also#####
-#include common-link-callmethods
-- [Scheduler Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview)
-- [Scheduler API Reference](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
-
-[tags]scheduler, navigation, accessibility, keyboard shortcuts

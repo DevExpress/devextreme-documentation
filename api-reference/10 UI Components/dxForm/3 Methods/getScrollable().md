@@ -3,10 +3,34 @@ id: dxForm.getScrollable()
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Returns the scrolling component within the Form.
 
 ##### return: Scrollable | undefined
-<!-- Description goes here -->
+The scrolling component's instance (Scrollable).
 
 ---
-<!-- Description goes here -->
+To configure Scrollable, use [ScrollView](/Documentation/ApiReference/UI_Components/dxScrollView/) configuration. The following options are not available:
+
+Properties:
+
+- **pullingDownText**  
+- **pulledDownText**  
+- **refreshingText**  
+- **reachBottomText**  
+- **onPullDown**  
+- **onReachBottom**  
+
+Methods:
+
+- **release(preventScrollBottom)**
+- **refresh()**
+
+[note]
+
+- This method returns a Scrollable instance only if [scrollingEnabled](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#scrollingEnabled) is `true`.
+- When **scrollingEnabled** is `true`, Form contains a Scrollable even if content fits within the component and scrolling is not active.
+
+[/note]
+
+#####See Also#####
+#include common-link-callmethods

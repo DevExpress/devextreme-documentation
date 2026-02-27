@@ -52,6 +52,16 @@ A user can use the following keys to interact with the Scheduler component:
         <td>Deletes the current appointment.</td>
     </tr>
     <tr>
+        <td>Appointments</td>
+        <td>Home</td>
+        <td>Moves focus to the first appointment in the view.</td>
+    </tr>
+    <tr>
+        <td>Appointments</td>
+        <td>End</td>
+        <td>Moves focus to the last appointment in the view.</td>
+    </tr>
+    <tr>
         <td><a href="/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment_Tooltip/">Appointment Tooltip</a></td>
         <td>Tab / Shift+Tab</td>        
         <td>Shifts focus between tooltip elements.</td>

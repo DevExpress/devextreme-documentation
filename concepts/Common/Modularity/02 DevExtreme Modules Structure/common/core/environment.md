@@ -20,7 +20,7 @@ Exports:
         // ===== or =====
         import { initMobileViewport } from "devextreme/common/core/environment";
 
-- *getTimeZones* - The [getTimeZones](/api-reference/50%20Common/utils/utils/getTimeZones(date).md '/Documentation/ApiReference/Common/Utils/utils/#getTimeZonesdate') method
+- *getTimeZones* - The [getTimeZones](/api-reference/50%20Common/utils/utils/getTimeZones(date_timeZones).md '/Documentation/ApiReference/Common/Utils/utils/#getTimeZonesdate_timeZones') method
 
         require("devextreme/common/core/environment").getTimeZones;
         // ===== or =====

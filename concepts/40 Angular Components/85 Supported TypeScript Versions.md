@@ -71,4 +71,8 @@ DevExtreme Angular supports the following TypeScript versions:
     </tr>
 </table>
 
+#####See Also#####
+
+- [DevExtreme Versions](/concepts/Common/DevExtreme%20Versions/00%20DevExtreme%20Versions.md '/Documentation/Guide/Common/DevExtreme_Versions/')
+
 [tags] angular

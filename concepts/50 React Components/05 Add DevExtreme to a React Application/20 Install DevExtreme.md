@@ -2,4 +2,4 @@ Install the `devextreme` and `devextreme-react` npm packages:
 
     npm install devextreme@24.2 devextreme-react@24.2 --save --save-exact
 
-[note] We recommend saving an exact version of DevExtreme to avoid unexpected updates because DevExtreme does not use Semantic Versioning. In our versioning system, the first and middle numbers indicate a major release which may contain behavior changes.
+[note] We recommend saving an exact version of DevExtreme to avoid unexpected updates because DevExtreme does not use Semantic Versioning. For more information about DevExtreme version nomenclature, see the following topic: [DevExtreme Versions](/concepts/Common/DevExtreme%20Versions/00%20DevExtreme%20Versions.md '/Documentation/Guide/Common/DevExtreme_Versions/').

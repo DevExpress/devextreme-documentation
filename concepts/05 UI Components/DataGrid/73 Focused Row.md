@@ -16,11 +16,11 @@ Users can control the focused row using the following mouse and keyboard command
         <td>Mouse Click</td><td>Focuses a row.</td>
     </tr>
     <tr>
-        <td>&uarr; / &darr;</td>
+        <td>Up Arrow / Down Arrow</td>
         <td>Focuses the next/previous row.</td>
     </tr>
     <tr>
-        <td>&larr; / &rarr;</td>
+        <td>Left Arrow / Right Arrow</td>
         <td>Focuses the cell to the left/right.</td>
     </tr>
     <tr>

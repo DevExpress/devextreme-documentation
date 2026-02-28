@@ -18,7 +18,7 @@ DataGrid offers different keyboard controls depending on which action users want
         <th>Action</th>
     </tr>
     <tr>
-        <td>&larr; &rarr; &uarr; &darr;</td>
+        <td>Arrow Keys</td>
         <td>Moves focus between cells.</td>
     </tr>
     <tr>
@@ -26,7 +26,7 @@ DataGrid offers different keyboard controls depending on which action users want
         <td>Moves focus forward/backward between all DataGrid items.</td>
     </tr>
     <tr>
-        <td>Ctrl + &uarr;<br/>Ctrl + &darr;</td>
+        <td>Ctrl + Up Arrow<br/>Ctrl + Down Arrow</td>
         <td>Moves focus between the component's areas, such as the data area, column headers area, group panel, and others.</td>
     </tr>
     <tr>
@@ -75,7 +75,7 @@ DataGrid offers different keyboard controls depending on which action users want
         <td>Disables focused column sorting. Does not clear previous sorting options if <b>sorting</b>.<b>mode</b> is "multiple".</td>
     </tr>
     <tr>
-        <td>Ctrl + &rarr;<br/>Ctrl + &larr;</td>
+        <td>Ctrl + Right Arrow<br/>Ctrl + Left Arrow</td>
         <td>Moves the focused column header right/left if <b>columns[]</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#allowReordering">allowReordering</a> is enabled.</td>
     </tr>
 </table>
@@ -100,7 +100,7 @@ DataGrid offers different keyboard controls depending on which action users want
         <td>When focused on column headers in the group panel, ungroups data by focused column values.</td>
     </tr>
     <tr>
-        <td>Ctrl + &rarr;<br/>Ctrl + &larr;</td>
+        <td>Ctrl + Right Arrow<br/>Ctrl + Left Arrow</td>
         <td>Moves the focused column header right/left in the group panel to change group hierarchy.</td>
     </tr>
     <tr>
@@ -129,11 +129,11 @@ DataGrid offers different keyboard controls depending on which action users want
         <td>When focused on a cell in normal mode, switches the component to edit mode unless the focused cell's <b>editing</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode">mode</a> is "popup".</td>
     </tr>
     <tr>
-        <td>Alt + &darr;</td>
+        <td>Alt + Down Arrow</td>
         <td>Opens drop-down editors such as select boxes in edit mode.</td>
     </tr>
     <tr>
-        <td>&larr; &rarr; &uarr; &darr;</td>
+        <td>Arrow Keys</td>
         <td>When focused on a cell in edit mode, moves the cursor in the focused cell or increases/decreases its value.</td>
     </tr>
     <tr>

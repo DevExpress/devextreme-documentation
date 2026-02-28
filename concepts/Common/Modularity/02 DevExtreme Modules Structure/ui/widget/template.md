@@ -1,1 +1,0 @@
-This module is deprecated. Use the [common](/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#common) module instead.

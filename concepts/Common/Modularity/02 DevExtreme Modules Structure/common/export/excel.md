@@ -13,3 +13,4 @@ Exports:
         require("devextreme/common/export/excel").exportPivotGrid;
         // ===== or =====
         import { exportPivotGrid } from "devextreme/common/export/excel";
+        

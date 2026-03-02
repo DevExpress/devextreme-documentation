@@ -5,7 +5,7 @@ default: ''
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the Chat input field value.
 
 ---
-<!-- Description goes here -->
+Use this option to get the text that users type or [dictate](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#speechToTextEnabled) in the Chat input field. You can also set this option to change the input field value programmatically.

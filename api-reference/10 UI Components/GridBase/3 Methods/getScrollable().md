@@ -3,27 +3,27 @@ id: GridBase.getScrollable()
 ---
 ---
 ##### shortDescription
-Gets the instance of the UI component's scrollable part.
+Returns the scrolling component within the {WidgetName}.
 
 ##### return: dxScrollable
-The scrollable part's instance.
+The scrolling component's instance (Scrollable).
 
 ---
-For information on API members of the scrollable part, refer to the [ScrollView](/api-reference/10%20UI%20Components/dxScrollView '/Documentation/ApiReference/UI_Components/dxScrollView/') section. The list below shows ScrollView members that are unavailable for this method.
+To configure Scrollable, use [ScrollView](/Documentation/ApiReference/UI_Components/dxScrollView/) configuration. The following options are not available:
 
-**Properties:** 
+Properties:
 
-- *pullingDownText*  
-- *pulledDownText*  
-- *refreshingText*  
-- *reachBottomText*  
-- *onPullDown*  
-- *onReachBottom*  
+- **pullingDownText**  
+- **pulledDownText**  
+- **refreshingText**  
+- **reachBottomText**  
+- **onPullDown**  
+- **onReachBottom**  
 
-**Methods:** 
+Methods:
 
-- *release(preventScrollBottom)*
-- *refresh()*
+- **release(preventScrollBottom)**
+- **refresh()**
 
 #####See Also#####
 #include common-link-callmethods

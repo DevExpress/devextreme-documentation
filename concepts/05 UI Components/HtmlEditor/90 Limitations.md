@@ -6,7 +6,7 @@ The HTML Editor is designed to create rich text and export it in HTML. You can a
 
 - HTML Editor saves only a limited subset of [tags and attributes](/concepts/05%20UI%20Components/HtmlEditor/05%20Tags%20and%20Attributes.md '/Documentation/Guide/UI_Components/HtmlEditor/Tags_and_Attributes/'). All other formatting attributes and features are discarded.
 
-- When the HTML Editor loads its [value](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value'), the component removes redundant tags:
+- When HTML Editor loads markup (specified in [value](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value')), the component removes redundant tags:
 
         <!-- from -->
         <p><span>Hello</span><em><span>World</span></em></p>
@@ -14,7 +14,12 @@ The HTML Editor is designed to create rich text and export it in HTML. You can a
         <!-- to -->
         <p>Hello<em>World</em></p>
 
-- The component merges consecutive inline tags that match and contain identical attributes:
+- The component merges the following elements:
+
+   - All consecutive tables.
+   - Consecutive inline tags that match and contain identical attributes:
+    
+    <nbsp>
 
         <!-- from -->
         <a href="/">Hello</a><a href="/">World</a>
@@ -22,7 +27,7 @@ The HTML Editor is designed to create rich text and export it in HTML. You can a
         <!-- to -->
         <a href="/">HelloWorld</a>
 
-    To avoid this behavior, separate identical inline tags with other tags.
+    To avoid this behavior, separate these elements with tags such as `<br>`.
 
 - The HTML Editor trims extra space and tab characters passed to the [value](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value') option.
 

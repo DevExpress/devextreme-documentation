@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-A function that is executed after a message is entered into the chat.
+A function that is executed after a message is entered into the chat (Send button is clicked or the Enter key is pressed).
 
 ##### param(e): ui/chat:MessageEnteredEvent
 Information about the event.

@@ -73,7 +73,7 @@ You can also set this option to change the input field value programmatically.
     import Chat from 'devextreme-react/chat';
     import Button from 'devextreme-react/button';
 
-    function ChatComponent() {
+    function App() {
         const [inputText, setInputText] = useState('');
         const handleSetInput = () => {
             setInputText('Hello, Assistant!');
@@ -92,4 +92,5 @@ You can also set this option to change the input field value programmatically.
         );
     }
 
+    export default App;
 ---

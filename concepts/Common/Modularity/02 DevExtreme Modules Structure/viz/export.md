@@ -1,4 +1,4 @@
-Exposes export-related methods.
+Exposes export utilities for visualization components.
 
 Exports:
 

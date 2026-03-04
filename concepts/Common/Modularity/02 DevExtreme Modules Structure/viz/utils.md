@@ -1,4 +1,4 @@
-Exposes utility methods.
+Exposes visualization helpers.
 
 Exports:
 

@@ -1,4 +1,4 @@
-Exposes an object that provides information about the file upload session.
+Exposes an object that offers information about the file upload session.
 
 Exports:
 

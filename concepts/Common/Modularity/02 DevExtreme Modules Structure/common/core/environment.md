@@ -1,4 +1,4 @@
-Exposes methods for working with environment.
+Exposes environment helpers for devices, viewport setup, overlays, and time zones.
 
 Exports:
 

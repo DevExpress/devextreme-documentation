@@ -1,9 +1,45 @@
 ---
 ##### shortDescription
-The name of the UI component that should represent the toolbar item.
+The DevExtreme component to use as a toolbar item.
 
 ---
-[note]Import the specified UI component's module when using [DevExtreme modules](/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/). 
+[note]
+
+---
+
+##### jQuery
+
+If you use [DevExtreme modules](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/'), import the specified editor's module from the `devextreme` folder as follows: 
+
+    import 'devextreme/ui/tag_box';
+
+##### Angular
+
+- To use this property, import the specified editor's [module](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/') from the `devextreme` folder as follows:
+
+        import 'devextreme/ui/tag_box';
+
+- To update the item component's state/options at runtime, use a [template]({currentpath}/#template) instead of this property.
+
+##### Vue
+
+- To use this property, import the specified editor's [module](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/') from the `devextreme` folder as follows:
+
+        import 'devextreme/ui/tag_box';
+
+- To update the item component's state/options at runtime, use a [template]({currentpath}/#template) instead of this property.
+
+##### React
+
+- To use this property, import the specified editor's [module](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/') from the `devextreme` folder as follows:
+
+        import 'devextreme/ui/tag_box';
+
+- To update the item component's state/options at runtime, use [component]({currentpath}/#component) or [render]({currentpath}/#render) instead of this property.
+
+---
+
+[/note]
 
 Configure the specified UI component in the [options](/api-reference/_hidden/dxHtmlEditorToolbar/items/options.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/#options') object. You can find information on available UI component properties in the UI component's API reference.
 

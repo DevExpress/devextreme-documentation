@@ -1,1 +1,1 @@
-Exposes the base gauge component.
+Exposes the base gauge entities.

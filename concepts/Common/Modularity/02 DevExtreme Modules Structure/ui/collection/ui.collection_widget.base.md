@@ -1,1 +1,1 @@
-Exposes the base class for collection widgets.
+Exposes the base collection entities.

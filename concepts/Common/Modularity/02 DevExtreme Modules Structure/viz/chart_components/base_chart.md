@@ -1,1 +1,1 @@
-Exposes the base chart component.
+Exposes the base chart entities.

@@ -1,1 +1,1 @@
-Exposes the base editor module.
+Exposes the base editor entities.

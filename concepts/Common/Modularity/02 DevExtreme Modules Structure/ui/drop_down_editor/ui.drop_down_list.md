@@ -1,1 +1,1 @@
-Exposes the base drop-down list editor.
+Exposes the base drop-down list entities.

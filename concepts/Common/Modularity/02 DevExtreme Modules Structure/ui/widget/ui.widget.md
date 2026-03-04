@@ -1,1 +1,1 @@
-Exposes the base Widget class.
+Exposes the base widget entities.

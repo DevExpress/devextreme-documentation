@@ -1,1 +1,1 @@
-Exposes the base sparkline component.
+Exposes the base sparkline entities.

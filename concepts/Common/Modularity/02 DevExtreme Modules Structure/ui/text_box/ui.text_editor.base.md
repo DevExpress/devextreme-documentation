@@ -1,1 +1,1 @@
-Exposes the base text editor class.
+Exposes the base text editor entities.

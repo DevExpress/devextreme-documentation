@@ -78,11 +78,15 @@ You can also set this option to change the input field value programmatically.
         const handleSetInput = () => {
             setInputText('Hello, Assistant!');
         };
+        const handleInputChange = (e) => {
+            setInputText(e.value);
+        };
 
         return (
             <>
             <Chat 
                 inputFieldText={inputText}
+                onInputFieldTextChange={handleInputChange}
             />
             <Button 
                 onClick={handleSetInput} 

@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The argument type in the [inputFieldTextChanged]({basewidgetpath}/Events/#inputFieldTextChanged) event.
 
 ---
 <!-- Description goes here -->

@@ -79,7 +79,7 @@ dx.web.js, dx.viz.js, dx.all.js
 
 ##### Angular
 
-- If you create a **DataSource** instance outside a DevExtreme component, make sure to call [dispose()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/dispose().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#dispose') when this instance is no longer required. **DataSource** instances created in DevExtreme components are disposed of automatically.
+- If you create a **DataSource** instance outside a DevExtreme component, ensure you call [dispose()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/dispose().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#dispose') when this instance is no longer required. **DataSource** instances created in DevExtreme components are disposed of automatically.
 
 - Do not use a **DataSource** instance in multiple DevExtreme components. To share data across components, use a common [data store](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores').
 
@@ -119,7 +119,7 @@ dx.web.js, dx.viz.js, dx.all.js
 
 ##### React
 
-- If you create a **DataSource** instance outside a DevExtreme component, make sure to call [dispose()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/dispose().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#dispose') when this instance is no longer required. **DataSource** instances created in DevExtreme components are disposed of automatically.
+- If you create a **DataSource** instance outside a DevExtreme component, ensure you call [dispose()](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/dispose().md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#dispose') when this instance is no longer required. **DataSource** instances created in DevExtreme components are disposed of automatically.
 
 - Do not use a **DataSource** instance in multiple DevExtreme components. To share data across components, use a common [data store](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores').
 

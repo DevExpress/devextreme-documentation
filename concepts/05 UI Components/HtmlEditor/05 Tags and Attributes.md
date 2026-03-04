@@ -23,15 +23,18 @@ The HTML Editor supports the following HTML tags and attributes.
 
 [note]
 
-When the HTML Editor loads its [value](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value'), the component merges consecutive inline tags that match and contain identical attributes:
+When HTML Editor loads markup (specified in [value](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#value')), the component merges the following elements:
 
-      <!-- from -->
-      <a href="/">Hello</a><a href="/">World</a>
-      
-      <!-- to -->
-      <a href="/">HelloWorld</a>
+   - All consecutive tables.
+   - Consecutive inline tags that match and contain identical attributes:
 
-To avoid this behavior, separate identical inline tags with other tags.
+         <!-- from -->
+         <a href="/">Hello</a><a href="/">World</a>
+         
+         <!-- to -->
+         <a href="/">HelloWorld</a>
+
+To avoid this behavior, separate these elements with tags such as `<br>`.
 
 [/note]
 

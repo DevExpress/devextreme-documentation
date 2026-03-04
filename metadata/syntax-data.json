@@ -491,6 +491,11 @@
       "react": "_ui_chat_DisposingEvent",
       "vue": "Dx_ui_chat_DisposingEvent"
     },
+    "_ui_chat_InputFieldTextChangedEvent": {
+      "angular": "dxo-ui-chat--input-field-text-changed-event",
+      "react": "_ui_chat_InputFieldTextChangedEvent",
+      "vue": "Dx_ui_chat_InputFieldTextChangedEvent"
+    },
     "_ui_chat_MessageDeletedEvent": {
       "angular": "dxo-ui-chat--message-deleted-event",
       "react": "_ui_chat_MessageDeletedEvent",
@@ -10299,6 +10304,9 @@
     },
     "dxChatOptions.onInitialized": {
       "vue": "@initialized"
+    },
+    "dxChatOptions.onInputFieldTextChanged": {
+      "vue": "@input-field-text-changed"
     },
     "dxChatOptions.onMessageDeleted": {
       "vue": "@message-deleted"

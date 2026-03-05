@@ -1,1 +1,1 @@
-Exposes the base widget entities.
+Exposes the base component entities.

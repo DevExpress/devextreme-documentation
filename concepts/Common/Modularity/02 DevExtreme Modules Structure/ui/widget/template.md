@@ -1,1 +1,1 @@
-Exposes widget template helpers.
+Exposes component template helpers.

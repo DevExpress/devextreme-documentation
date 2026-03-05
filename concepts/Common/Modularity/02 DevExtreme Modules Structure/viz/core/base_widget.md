@@ -1,1 +1,1 @@
-Exposes the base visualization widget entities.
+Exposes the base visualization component entities.

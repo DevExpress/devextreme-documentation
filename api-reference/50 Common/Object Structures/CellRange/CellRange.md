@@ -1,7 +1,7 @@
 ---
 id: CellRange
 type: Object
-module: excel_exporter.types
+module: common/export/excel
 export: CellRange
 ---
 ---

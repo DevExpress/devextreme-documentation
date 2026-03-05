@@ -1,6 +1,6 @@
 ---
 id: dxScheduler.scrollTo(date, group, allDay)
-deprecated: 
+deprecated: Use [scrollTo(date, options)]({basewidgetpath}/Configuration/#scrollTo(date_options)) instead.
 ---
 ---
 ##### shortDescription
@@ -19,12 +19,12 @@ If **true**, scrolls the view to the all-day panel of the specified group. Appli
 
 The following example shows how to use this method:
 
-    // Scroll to January 14, 2021
-    scrollTo(new Date(2021, 0, 14));
-    // Scroll to the second group at 5:30 p.m. on January 14, 2021
-    scrollTo(new Date(2021, 0, 14, 17, 30), {groupId: 2})
+    // Scroll to January 14, 2026
+    scrollTo(new Date(2026, 0, 14));
+    // Scroll to the second group at 5:30 p.m. on January 14, 2026
+    scrollTo(new Date(2026, 0, 14, 17, 30), {groupId: 2})
     // Scroll to the all-day panel of the second group
-    scrollTo(new Date(2021, 0, 14, 17, 30), {groupId: 2}, true);
+    scrollTo(new Date(2026, 0, 14, 17, 30), {groupId: 2}, true);
 
 [note] If you need to navigate to a date outside the current view, use the [currentDate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/currentDate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#currentDate') property instead. 
 

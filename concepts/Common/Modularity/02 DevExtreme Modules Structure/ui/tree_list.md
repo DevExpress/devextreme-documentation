@@ -4,6 +4,6 @@ Exports:
 
 - *default* - The [TreeList](/api-reference/10%20UI%20Components/dxTreeList '/Documentation/ApiReference/UI_Components/dxTreeList/') UI component
 
-        require("ui/tree_list");
+        require("devextreme/ui/tree_list");
         // ===== or =====
         import TreeList from "devextreme/ui/tree_list";

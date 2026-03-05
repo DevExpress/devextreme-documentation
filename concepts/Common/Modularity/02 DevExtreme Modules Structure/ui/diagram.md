@@ -4,6 +4,6 @@ Exports:
 
 - *default* - The [Diagram](/api-reference/10%20UI%20Components/dxDiagram '/Documentation/ApiReference/UI_Components/dxDiagram/') UI component
 
-        require("ui/diagram") ; 
+        require("devextreme/ui/diagram") ; 
         // ===== or =====
         import Diagram from "devextreme/ui/diagram";

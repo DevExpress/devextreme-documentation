@@ -1,6 +1,6 @@
 ---
 id: dxDropDownBox.Options.fieldComponent
-deprecated: Use [fieldAddons]({currentpath}/#fieldAddons) instead.
+deprecated: Use [fieldAddons]({basewidgetpath}/Configuration/fieldAddons) instead.
 ---
 ---
 ##### shortDescription

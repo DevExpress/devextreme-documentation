@@ -1,6 +1,6 @@
 ---
 id: dxDataGrid.Options.rowRender
-deprecated: 
+deprecated: Use [dataRowRender]({currentpath}/#dataRowRender) instead.
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
 ---
 id: dxDropDownBox.Options.fieldRender
-deprecated: 
+deprecated: Use [fieldAddons]({currentpath}/#fieldAddons) instead.
 ---
 ---
 ##### shortDescription

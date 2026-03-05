@@ -1,6 +1,6 @@
 ---
 id: dxScheduler.scrollTo(date, group, allDay)
-deprecated: Use [scrollTo(date, options)]({basewidgetpath}/Configuration/#scrollTo(date_options)) instead.
+deprecated: Use [scrollTo(date, options)]({currentpath}/#scrollTo(date_options)) instead.
 ---
 ---
 ##### shortDescription

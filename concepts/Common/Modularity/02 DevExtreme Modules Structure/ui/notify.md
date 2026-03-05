@@ -4,6 +4,6 @@ Exports:
 
 - *default* - The [notify(message, type, displayTime)](/api-reference/50%20Common/utils/ui/notify(message_type_displayTime).md '/Documentation/ApiReference/Common/Utils/ui/#notifymessage_type_displayTime') and [notify(options)](/api-reference/50%20Common/utils/ui/notify(options_type_displayTime).md '/Documentation/ApiReference/Common/Utils/ui/#notifyoptions_type_displayTime') methods
 
-        require("ui/notify");
+        require("devextreme/ui/notify");
         // ===== or =====
         import notify from "devextreme/ui/notify";

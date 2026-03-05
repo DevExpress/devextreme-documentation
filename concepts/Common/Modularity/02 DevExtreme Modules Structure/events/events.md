@@ -4,24 +4,24 @@ Exports:
 
 - *off* - The [off](/api-reference/50%20Common/utils/events/off(element_eventName_selector_handler).md '/Documentation/ApiReference/Common/utils/events/#offelement_eventName_selector_handler') method
 
-        require("events").off;
+        require("devextreme/events").off;
         // ===== or =====
         import { off } from "devextreme/events";
 
 - *on* - The [on](/api-reference/50%20Common/utils/events/on(element_eventName_selector_data_handler).md '/Documentation/ApiReference/Common/utils/events/#onelement_eventName_selector_data_handler') method
 
-        require("events").on;
+        require("devextreme/events").on;
         // ===== or =====
         import { on } from "devextreme/events";
 
 - *one* - The [one](/api-reference/50%20Common/utils/events/one(element_eventName_selector_data_handler).md '/Documentation/ApiReference/Common/utils/events/#oneelement_eventName_selector_data_handler') method
 
-        require("events").one
+        require("devextreme/events").one
         // ===== or =====
         import { one } from "devextreme/events";
 
 - *trigger* - The [trigger](/api-reference/50%20Common/utils/events/trigger(element_event_extraParameters).md '/Documentation/ApiReference/Common/utils/events/#triggerelement_event_extraParameters') method
 
-        require("events").trigger;
+        require("devextreme/events").trigger;
         // ===== or =====
         import { trigger } from "devextreme/events";

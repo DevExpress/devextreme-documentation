@@ -4,6 +4,6 @@ Exports:
 
 - *default* - The [Scheduler](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/') UI component
 
-        require("ui/scheduler");
+        require("devextreme/ui/scheduler");
         // ===== or =====
         import Scheduler from "devextreme/ui/scheduler";

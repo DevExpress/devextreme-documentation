@@ -4,6 +4,6 @@ Exports:
 
 - *default* - The [Popover](/api-reference/10%20UI%20Components/dxPopover '/Documentation/ApiReference/UI_Components/dxPopover/') UI component
 
-        require("ui/popover");
+        require("devextreme/ui/popover");
         // ===== or =====
         import Popover from "devextreme/ui/popover";

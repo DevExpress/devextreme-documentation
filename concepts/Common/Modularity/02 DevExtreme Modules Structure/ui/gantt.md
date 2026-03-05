@@ -4,6 +4,6 @@ Exports:
 
 - *default* - The [Gantt](/api-reference/10%20UI%20Components/dxGantt '/Documentation/ApiReference/UI_Components/dxGantt/') UI component
 
-        require("ui/gantt") ; 
+        require("devextreme/ui/gantt") ; 
         // ===== or =====
         import Gantt from "devextreme/ui/gantt";

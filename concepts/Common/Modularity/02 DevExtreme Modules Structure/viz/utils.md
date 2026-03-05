@@ -1,9 +1,9 @@
-Exposes utility methods.
+Exposes visualization helpers.
 
 Exports:
 
 - *refreshPaths* - The [refreshPaths()](/api-reference/50%20Common/utils/viz/refreshPaths().md '/Documentation/ApiReference/Common/utils/viz/#refreshPaths') method
 
-        require("viz/utils").refreshPaths;
+        require("devextreme/viz/utils").refreshPaths;
         // ===== or =====
         import { refreshPaths } from "devextreme/viz/utils";

@@ -1,4 +1,4 @@
-Exposes methods for working with charts (including Chart, PieChart, PolarChart, CircularGauge, and LinearGauge).
+Exposes methods for working with charts (Chart, PieChart, PolarChart, CircularGauge, LinearGauge).
 
 - *registerPattern* - The [registerPattern](/api-reference/50%20Common/utils/viz/registerPattern(options).md '/Documentation/ApiReference/Common/Utils/viz/#registerPatternoptions') method
 

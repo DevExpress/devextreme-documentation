@@ -1,4 +1,4 @@
-Exposes DevExtreme AI integration layer.
+Exposes the DevExtreme AI integration layer.
 
 Exports:
     - *default* - The [AIIntegration](/api-reference/40%20Common%20Types/AIIntegration '/Documentation/ApiReference/Common_Types/AIIntegration/') type

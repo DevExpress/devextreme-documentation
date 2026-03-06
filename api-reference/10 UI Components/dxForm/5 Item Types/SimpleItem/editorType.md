@@ -58,7 +58,7 @@ The following components are supported:
 
     You can omit modules for *"dxTextBox"*, *"dxDateBox"*, *"dxCheckBox"*, and *"dxNumberBox"*. The Form component imports these modules automatically.
 
-- Use a [template]({currentpath}/#template) instead of this property to integrate an unsupported component.
+- Do not specify this property and configure the item component within a [template]({currentpath}/#template) instead to integrate an unsupported component.
 
 ##### Angular
 
@@ -68,7 +68,7 @@ The following components are supported:
 
     You can omit modules for *"dxTextBox"*, *"dxDateBox"*, *"dxCheckBox"*, and *"dxNumberBox"*. The Form component imports these modules automatically.
 
-- Use a [template]({currentpath}/#template) instead of this property in the following usage scenarios:
+- Do not specify this property and configure the item component within a [template]({currentpath}/#template) instead in the following usage scenarios:
 
     - To update the item component's state/options at runtime.
     - To integrate an unsupported component.
@@ -81,7 +81,7 @@ The following components are supported:
 
     You can omit modules for *"dxTextBox"*, *"dxDateBox"*, *"dxCheckBox"*, and *"dxNumberBox"*. The Form component imports these modules automatically.
 
-- Use a [template]({currentpath}/#template) instead of this property in the following usage scenarios:
+- Do not specify this property and configure the item component within a [template]({currentpath}/#template) instead in the following usage scenarios:
 
     - To update the item component's state/options at runtime.
     - To integrate an unsupported component.
@@ -94,7 +94,7 @@ The following components are supported:
 
     You can omit modules for *"dxTextBox"*, *"dxDateBox"*, *"dxCheckBox"*, and *"dxNumberBox"*. The Form component imports these modules automatically.
 
-- Use [component]({currentpath}/#component) or [render]({currentpath}/#render) instead of this property in the following usage scenarios:
+- Do not specify this property and configure the item component within [render]({currentpath}/#render) or [component]({currentpath}/#component) instead in the following usage scenarios:
 
     - To update the item component's state/options at runtime.
     - To integrate an unsupported component.

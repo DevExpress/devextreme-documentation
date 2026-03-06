@@ -19,7 +19,7 @@ If you use [DevExtreme modules](/concepts/Common/Modularity/02%20DevExtreme%20Mo
 
         import 'devextreme/ui/tag_box';
 
-- To update the item component's state/options at runtime, use a [template]({currentpath}/#template) instead of this property.
+- To update the item component's state/options at runtime, do not use this property. Configure the component within a [template]({currentpath}/#template) instead.
 
 ##### Vue
 
@@ -27,7 +27,7 @@ If you use [DevExtreme modules](/concepts/Common/Modularity/02%20DevExtreme%20Mo
 
         import 'devextreme/ui/tag_box';
 
-- To update the item component's state/options at runtime, use a [template]({currentpath}/#template) instead of this property.
+- To update the item component's state/options at runtime, do not use this property. Configure the component within a [template]({currentpath}/#template) instead.
 
 ##### React
 
@@ -35,7 +35,7 @@ If you use [DevExtreme modules](/concepts/Common/Modularity/02%20DevExtreme%20Mo
 
         import 'devextreme/ui/tag_box';
 
-- To update the item component's state/options at runtime, use [component]({currentpath}/#component) or [render]({currentpath}/#render) instead of this property.
+- To update the item component's state/options at runtime, do not use this property. Configure the component within [render]({currentpath}/#render) or [component]({currentpath}/#component) instead.
 
 ---
 

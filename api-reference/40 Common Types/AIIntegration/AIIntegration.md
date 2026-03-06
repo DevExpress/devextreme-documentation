@@ -9,7 +9,7 @@ generateTypeLink:
 A class that activates AI services in DevExpress UI components.
 
 ---
-This object's constructor accepts an [AIProvider](/api-reference/40%20Common%20Types/AIProvider '/Documentation/ApiReference/Common_Types/AIProvider/') object that specifies AI service settings. Pass the created `AIIntegration` object to components where you want to activate AI capabilities.
+This object's constructor accepts an [AIProvider](/api-reference/40%20Common%20Types/AIProvider '/Documentation/ApiReference/Common_Types/AIProvider/') object that specifies AI service settings. You can also configure an [AIIntegrationOptions](/Documentation/ApiReference/Common_Types/AIIntegrationOptions/) object to specify additional properties. Pass the created `AIIntegration` object to components where you want to activate AI capabilities.
 
 ---
 ##### jQuery

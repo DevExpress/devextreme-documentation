@@ -4,7 +4,7 @@ type: Date
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The start date of the appointment occurrence.
 
 ---
 <!-- Description goes here -->

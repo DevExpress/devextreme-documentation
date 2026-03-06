@@ -63,7 +63,7 @@ dx.web.js, dx.viz.js, dx.all.js
 
 - Do not use a **DataSource** instance in multiple DevExtreme components. To share data across components, use a common [data store](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores').
 
-- In filtering and sorting operations, **DataSource** ignores letter cases. To implement case-sensitive filtering and sorting, specify **langParams**.[collatorOptions](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/langParams/#collatorOptions) and set [sensitivity](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/Collator#sensitivity) to *"case"* or *"variant"*:
+- In filtering and sorting operations, **DataSource** ignores letter cases. To implement case-sensitive filtering and sorting, specify **langParams**.[collatorOptions](/api-reference/40%20Common%20Types/10%20data/LangParams/collatorOptions.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/langParams/#collatorOptions') and set [sensitivity](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/Collator#sensitivity) to *"case"* or *"variant"*:
 
         <!-- tab: index.js -->
         const dataSource = new DevExpress.data.DataSource({
@@ -75,7 +75,7 @@ dx.web.js, dx.viz.js, dx.all.js
             }
         });
 
-- **DataSource** is immutable. Call DataSource [methods](/Documentation/ApiReference/Data_Layer/DataSource/Methods/) to manipulate an instance of this object.
+- **DataSource** is immutable. Call DataSource [methods](/api-reference/30%20Data%20Layer/DataSource/3%20Methods '/Documentation/ApiReference/Data_Layer/DataSource/Methods/') to manipulate an instance of this object.
 
 ##### Angular
 
@@ -83,7 +83,7 @@ dx.web.js, dx.viz.js, dx.all.js
 
 - Do not use a **DataSource** instance in multiple DevExtreme components. To share data across components, use a common [data store](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores').
 
-- In filtering and sorting operations, **DataSource** ignores letter cases. To implement case-sensitive filtering and sorting, specify **langParams**.[collatorOptions](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/langParams/#collatorOptions) and set [sensitivity](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/Collator#sensitivity) to *"case"* or *"variant"*:
+- In filtering and sorting operations, **DataSource** ignores letter cases. To implement case-sensitive filtering and sorting, specify **langParams**.[collatorOptions](/api-reference/40%20Common%20Types/10%20data/LangParams/collatorOptions.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/langParams/#collatorOptions') and set [sensitivity](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/Collator#sensitivity) to *"case"* or *"variant"*:
 
         <!-- tab: app.component.ts -->
         dataSource = new DataSource({
@@ -95,7 +95,7 @@ dx.web.js, dx.viz.js, dx.all.js
             }
         });
 
-- **DataSource** is immutable. Call DataSource [methods](/Documentation/ApiReference/Data_Layer/DataSource/Methods/) to manipulate an instance of this object.
+- **DataSource** is immutable. Call DataSource [methods](/api-reference/30%20Data%20Layer/DataSource/3%20Methods '/Documentation/ApiReference/Data_Layer/DataSource/Methods/') to manipulate an instance of this object.
 
 ##### Vue
 
@@ -103,7 +103,7 @@ dx.web.js, dx.viz.js, dx.all.js
 
 - Do not use a **DataSource** instance in multiple DevExtreme components. To share data across components, use a common [data store](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores').
 
-- In filtering and sorting operations, **DataSource** ignores letter cases. To implement case-sensitive filtering and sorting, specify **langParams**.[collatorOptions](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/langParams/#collatorOptions) and set [sensitivity](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/Collator#sensitivity) to *"case"* or *"variant"*:
+- In filtering and sorting operations, **DataSource** ignores letter cases. To implement case-sensitive filtering and sorting, specify **langParams**.[collatorOptions](/api-reference/40%20Common%20Types/10%20data/LangParams/collatorOptions.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/langParams/#collatorOptions') and set [sensitivity](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/Collator#sensitivity) to *"case"* or *"variant"*:
 
         <!-- tab: App.vue -->
         const dataSource = new DataSource({
@@ -115,7 +115,7 @@ dx.web.js, dx.viz.js, dx.all.js
             }
         });
 
-- **DataSource** is immutable. Call DataSource [methods](/Documentation/ApiReference/Data_Layer/DataSource/Methods/) to manipulate an instance of this object.
+- **DataSource** is immutable. Call DataSource [methods](/api-reference/30%20Data%20Layer/DataSource/3%20Methods '/Documentation/ApiReference/Data_Layer/DataSource/Methods/') to manipulate an instance of this object.
 
 ##### React
 
@@ -123,7 +123,7 @@ dx.web.js, dx.viz.js, dx.all.js
 
 - Do not use a **DataSource** instance in multiple DevExtreme components. To share data across components, use a common [data store](/concepts/70%20Data%20Binding/5%20Data%20Layer/1%20Creating%20DataSource/3%20What%20Are%20Stores.md '/Documentation/Guide/Data_Binding/Data_Layer/#Creating_DataSource/What_Are_Stores').
 
-- In filtering and sorting operations, **DataSource** ignores letter cases. To implement case-sensitive filtering and sorting, specify **langParams**.[collatorOptions](/Documentation/ApiReference/Data_Layer/DataSource/Configuration/langParams/#collatorOptions) and set [sensitivity](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/Collator#sensitivity) to *"case"* or *"variant"*:
+- In filtering and sorting operations, **DataSource** ignores letter cases. To implement case-sensitive filtering and sorting, specify **langParams**.[collatorOptions](/api-reference/40%20Common%20Types/10%20data/LangParams/collatorOptions.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/langParams/#collatorOptions') and set [sensitivity](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator/Collator#sensitivity) to *"case"* or *"variant"*:
 
         <!-- tab: App.tsx -->
         const dataSource = new DataSource({
@@ -135,7 +135,7 @@ dx.web.js, dx.viz.js, dx.all.js
             }
         });
 
-- **DataSource** is immutable. Call DataSource [methods](/Documentation/ApiReference/Data_Layer/DataSource/Methods/) to manipulate an instance of this object.
+- **DataSource** is immutable. Call DataSource [methods](/api-reference/30%20Data%20Layer/DataSource/3%20Methods '/Documentation/ApiReference/Data_Layer/DataSource/Methods/') to manipulate an instance of this object.
 
 - **DataSource** does not support React serialization. To use **DataSource** in apps that use [React Server Components](https://react.dev/reference/rsc/server-components) (such as Next.js applications), configure instances in client components. For more information about server components, refer to the following guide: [Next.js - Server and Client Components](https://nextjs.org/docs/app/building-your-application/rendering/client-components#using-client-components-in-nextjs).
 

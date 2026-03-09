@@ -7,7 +7,7 @@ type: String
 Specifies the AI response language.
 
 ---
-Configure this property to pass language information to the AI service in a system prompt. You can use language codes such as [ISO 639](https://en.wikipedia.org/wiki/ISO_639) or [IETF BCP 47](https://en.wikipedia.org/wiki/IETF_language_tag) or plain language names (for instance, "English"). You can also specify multiple languages.
+Configure this property to pass language information to the AI service in a system prompt. You can use language codes such as [ISO 639](https://en.wikipedia.org/wiki/ISO_639) or [IETF BCP 47](https://en.wikipedia.org/wiki/IETF_language_tag) or plain language names (for instance, "English").
 
 ---
 ##### jQuery

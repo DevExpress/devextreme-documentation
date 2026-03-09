@@ -6,10 +6,10 @@ id: dxForm.getScrollable()
 Returns the scrolling component within the Form.
 
 ##### return: Scrollable | undefined
-The scrolling component's instance (Scrollable).
+The scrolling component's instance (a `Scrollable` object).
 
 ---
-To configure Scrollable, use [ScrollView](/Documentation/ApiReference/UI_Components/dxScrollView/) configuration. The following options are not available:
+This method returns a `Scrollable` object used in our `ScrollView` component. As such, once you obtain the object, you can use [ScrollView](/Documentation/ApiReference/UI_Components/dxScrollView/) configuration properties. Note that the following options are not available:
 
 Properties:
 

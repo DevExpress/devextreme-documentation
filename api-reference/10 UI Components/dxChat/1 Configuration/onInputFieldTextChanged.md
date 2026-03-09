@@ -5,25 +5,25 @@ default: undefined
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed after the Chat's [inputFieldText](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#inputFieldText) changes.
 
 ##### param(e): ui/chat:InputFieldTextChangedEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
-<!-- Description goes here -->
+#include common-ref-eventparam
 
 ##### field(e.previousValue): Object
-<!-- Description goes here -->
+The input field's previous value.
 
 ##### field(e.value): Object
-<!-- Description goes here -->
+The input field's new value.
 
 ---
 <!-- Description goes here -->

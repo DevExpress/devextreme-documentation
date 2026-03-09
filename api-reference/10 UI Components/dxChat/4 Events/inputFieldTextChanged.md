@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised after the UI component's [inputFieldText](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#inputFieldText) is changed.
 
 ---
-<!-- Description goes here -->
+Main article: [onInputFieldTextChanged](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#onInputFieldTextChanged)
+
+#####See Also#####
+#include common-link-handleevents

@@ -28,7 +28,7 @@ Methods:
 [note]
 
 - This method returns a Scrollable instance only if [scrollingEnabled](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#scrollingEnabled) is `true`.
-- When **scrollingEnabled** is `true`, Form contains a Scrollable even if content fits within the component and scrolling is not active.
+- When **scrollingEnabled** is `true`, Form contains a Scrollable instance even if the content fits within the component and scrolling is not active.
 
 [/note]
 

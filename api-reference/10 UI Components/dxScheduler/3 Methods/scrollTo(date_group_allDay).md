@@ -1,6 +1,6 @@
 ---
 id: dxScheduler.scrollTo(date, group, allDay)
-deprecated: 
+deprecated: Use [scrollTo(date, options)](/Documentation/26_1/ApiReference/UI_Components/dxScheduler/Methods/#scrollTodate_options) instead.
 ---
 ---
 ##### shortDescription

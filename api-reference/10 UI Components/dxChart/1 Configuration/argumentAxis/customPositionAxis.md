@@ -9,5 +9,5 @@ Specifies the [name](/api-reference/10%20UI%20Components/dxChart/1%20Configurati
 
 ---
 
-##### See also #####
+#####See Also#####
 - [customPosition](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/customPosition.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#customPosition')

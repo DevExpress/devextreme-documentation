@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-A function that is executed after the Chat's [inputFieldText](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#inputFieldText) changes.
+A function that is executed after the Chat's [inputFieldText](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/inputFieldText.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#inputFieldText') changes.
 
 ##### param(e): ui/chat:InputFieldTextChangedEvent
 Information about the event.

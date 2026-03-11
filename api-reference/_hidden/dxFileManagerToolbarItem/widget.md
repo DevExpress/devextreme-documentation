@@ -1,7 +1,41 @@
+To configure this component, use the [options](/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/toolbar/items/#options) object.
+
 [note]
 
-- Import the specified UI component's module when using [DevExtreme modules](/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/). 
+---
 
-- You can specify the **widget** option for custom toolbar items only.
+##### jQuery
+
+- If you use [DevExtreme modules](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/'), import the specified editor's module from the `devextreme` folder: 
+
+        import 'devextreme/ui/tag_box';
+
+- This property is ignored for [predefined toolbar items](/Documentation/ApiReference/UI_Components/dxFileManager/Types/#FileManagerPredefinedToolbarItem).
+
+##### Angular
+
+- To use this property, import the specified editor's [module](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/') from the `devextreme` folder:
+
+        import 'devextreme/ui/tag_box';
+
+- This property is ignored for [predefined toolbar items](/Documentation/ApiReference/UI_Components/dxFileManager/Types/#FileManagerPredefinedToolbarItem).
+
+##### Vue
+
+- To use this property, import the specified editor's [module](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/') from the `devextreme` folder:
+
+        import 'devextreme/ui/tag_box';
+
+- This property is ignored for [predefined toolbar items](/Documentation/ApiReference/UI_Components/dxFileManager/Types/#FileManagerPredefinedToolbarItem).
+
+##### React
+
+- To use this property, import the specified editor's [module](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/') from the `devextreme` folder:
+
+        import 'devextreme/ui/tag_box';
+
+- This property is ignored for [predefined toolbar items](/Documentation/ApiReference/UI_Components/dxFileManager/Types/#FileManagerPredefinedToolbarItem).
+
+---
 
 [/note]

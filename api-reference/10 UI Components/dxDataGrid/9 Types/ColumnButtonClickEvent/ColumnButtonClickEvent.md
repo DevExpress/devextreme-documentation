@@ -9,7 +9,7 @@ references: dxDataGridColumnButton.onClick
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The argument type in **columns[]**.**buttons[]**.[onClick]({basewidgetpath}/Configuration/columns/buttons/#onClick).
 
 ---
 <!-- Description goes here -->

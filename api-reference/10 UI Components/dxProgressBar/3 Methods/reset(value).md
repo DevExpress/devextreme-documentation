@@ -11,5 +11,5 @@ Specifies the new value.
 ---
 This method sets the [isDirty](/api-reference/10%20UI%20Components/Editor/1%20Configuration/isDirty.md '{basewidgetpath}/Configuration/#isDirty') flag to `false`.
 
-##### See Also #####
+#####See Also#####
 - [clear()](/api-reference/10%20UI%20Components/Editor/3%20Methods/clear().md '{basewidgetpath}/Methods/#clear')

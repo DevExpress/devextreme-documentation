@@ -33,7 +33,7 @@ The HTML Editor is designed to create rich text and export it in HTML. You can a
 
 - The component is not designed to convert text enclosed in curly brackets (`{}`) to a variable. Content in curly brackets is always treated as plain text.
 
-- The HTML Editor tables are native HTML tables and use native features; therefore, the same limitations apply. For example, users cannot paste multiline text in separate cells.
+- HTML Editor tables are native HTML tables and use native features; therefore, the same limitations apply. For example, users cannot paste multiline text in separate cells.
 
 - HTML Editor tables do not support complex elements in cells, such as block elements, lists, and nested tables.
 
@@ -45,7 +45,7 @@ The HTML Editor is designed to create rich text and export it in HTML. You can a
         href: "https://github.com/DevExpress-Examples/devextreme-html-editor-prevent-inserting-images"
     }
 
-- The component wraps each "Normal text" block in a `<p>` tag (individual lines or multi-line blocks if [allowSoftLineBreak](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/allowSoftLineBreak.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#allowSoftLineBreak') is enabled). These `<p>` elements cannot be removed. However, you can replace the `<p>` tags with another tag (for instance, a `<div>`). The following code snippet demonstrates how:
+- The component wraps each "Normal text" block in a `<p>` tag (individual lines or multi-line blocks if [allowSoftLineBreak](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/allowSoftLineBreak.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#allowSoftLineBreak') is enabled). These `<p>` elements cannot be removed. However, you can replace  `<p>` tags with another tag (for instance, a `<div>`). The following code snippet demonstrates how:
 
     ---
 

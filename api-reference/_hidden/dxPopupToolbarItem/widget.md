@@ -11,33 +11,33 @@ To configure this component, use the [options](/Documentation/ApiReference/UI_Co
 
 ##### jQuery
 
-If you use [DevExtreme modules](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/'), import the specified editor's module from the `devextreme` folder as follows: 
+If you use [DevExtreme modules](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/'), import the specified editor's module from the `devextreme` folder: 
 
     import 'devextreme/ui/tag_box';
 
 ##### Angular
 
-- To use this property, import the specified editor's [module](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/') from the `devextreme` folder as follows:
+- To use this property, import the specified editor's [module](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/') from the `devextreme` folder:
 
         import 'devextreme/ui/tag_box';
 
-- To update the item component's state/options at runtime, do not use this property. Configure the component within a [template]({currentpath}/#template) instead.
+- To update the item component's state/options at runtime, configure the component in a [template]({currentpath}/#template) instead of using this property.
 
 ##### Vue
 
-- To use this property, import the specified editor's [module](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/') from the `devextreme` folder as follows:
+- To use this property, import the specified editor's [module](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/') from the `devextreme` folder:
 
         import 'devextreme/ui/tag_box';
 
-- To update the item component's state/options at runtime, do not use this property. Configure the component within a [template]({currentpath}/#template) instead.
+- To update the item component's state/options at runtime, configure the component in a [template]({currentpath}/#template) instead of using this property.
 
 ##### React
 
-- To use this property, import the specified editor's [module](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/') from the `devextreme` folder as follows:
+- To use this property, import the specified editor's [module](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/') from the `devextreme` folder:
 
         import 'devextreme/ui/tag_box';
 
-- To update the item component's state/options at runtime, do not use this property. Configure the component within [render]({currentpath}/#render) or [component]({currentpath}/#component) instead.
+- To update the item component's state/options at runtime, configure the component in [render]({currentpath}/#render) or [component]({currentpath}/#component) instead of using this property.
 
 ---
 

@@ -52,7 +52,7 @@ The following components are supported:
 
 ##### jQuery
 
-- If you use [DevExtreme modules](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/'), import the specified editor's module from the `devextreme` folder as follows: 
+- If you use [DevExtreme modules](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/'), import the specified editor's module from the `devextreme` folder: 
 
         import 'devextreme/ui/tag_box';
 
@@ -62,7 +62,7 @@ The following components are supported:
 
 ##### Angular
 
-- To use this property, import the specified editor's [module](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/') from the `devextreme` folder as follows:
+- To use this property, import the specified editor's [module](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/') from the `devextreme` folder:
 
         import 'devextreme/ui/tag_box';
 
@@ -75,7 +75,7 @@ The following components are supported:
 
 ##### Vue
 
-- To use this property, import the specified editor's [module](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/') from the `devextreme` folder as follows:
+- To use this property, import the specified editor's [module](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/') from the `devextreme` folder:
 
         import 'devextreme/ui/tag_box';
 
@@ -88,7 +88,7 @@ The following components are supported:
 
 ##### React
 
-- To use this property, import the specified editor's [module](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/') from the `devextreme` folder as follows:
+- To use this property, import the specified editor's [module](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/') from the `devextreme` folder:
 
         import 'devextreme/ui/tag_box';
 

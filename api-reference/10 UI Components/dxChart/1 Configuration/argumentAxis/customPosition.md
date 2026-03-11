@@ -16,5 +16,5 @@ The value of this property should be specified in the same format as the values 
 
 [note]This property overrides the [position](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/position.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/#position') property.
 
-##### See also #####
+#####See Also#####
 - **valueAxis**.[customPosition](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/customPosition.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/#customPosition')

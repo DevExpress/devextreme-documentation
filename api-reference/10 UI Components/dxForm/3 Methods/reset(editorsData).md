@@ -149,5 +149,5 @@ Specify the **editorsData** parameter following the [formData](/api-reference/10
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Validation/"
 }
 
-##### See Also #####
+#####See Also#####
 - [clear()](/api-reference/10%20UI%20Components/dxForm/3%20Methods/clear().md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#clear')

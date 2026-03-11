@@ -18,7 +18,7 @@ The end date of the time interval.
 An array of appointments to filter.
 
 ---
-An occurrence is an appointment instance that falls within the specified time interval. If an appointment has a recurrence rule, it can generate multiple occurrences.
+An occurrence is an appointment instance that falls within the specified time interval. Recurring appointments can generate multiple occurrences.
 
 Use this method as follows:
 

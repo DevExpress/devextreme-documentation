@@ -2,7 +2,7 @@ The HTML Editor is designed to create rich text and export it in HTML. You can a
 
 - If you use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM" target="_blank">Shadow DOM</a>, the HTML Editor component may experience issues in some browsers (see <a href="https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot#browser_compatibility" target="_blank">getSelection</a>).
 
-- HTML Editor does not produce a fully structured HTML document with `<!DOCTYPE>`, `<head>`, and `<body>` tags. The editor is meant to export simple markup that contains formatted rich content for an article, forum post, etc.
+- The HTML Editor does not produce a fully structured HTML document with `<!DOCTYPE>`, `<head>`, and `<body>` tags. The editor is meant to export simple markup that contains formatted rich content for an article, forum post, etc.
 
 - HTML Editor saves only a limited subset of [tags and attributes](/concepts/05%20UI%20Components/HtmlEditor/05%20Tags%20and%20Attributes.md '/Documentation/Guide/UI_Components/HtmlEditor/Tags_and_Attributes/'). All other formatting attributes and features are discarded.
 
@@ -35,11 +35,11 @@ The HTML Editor is designed to create rich text and export it in HTML. You can a
 
 - The HTML Editor tables are native HTML tables and use native features; therefore, the same limitations apply. For example, users cannot paste multiline text in separate cells.
 
-- The HTML Editor tables do not support complex elements in cells, such as block elements, lists, and nested tables.
+- HTML Editor tables do not support complex elements in cells, such as block elements, lists, and nested tables.
 
-- HTML Editor does not fully support complex clipboard data from HTML pages and word processing applications such as Microsoft Word®. It also does not fully support pasted data from online spreadsheet applications such as Google Sheets™.
+- The HTML Editor does not fully support complex clipboard data from HTML pages and word processing applications such as Microsoft Word®. It also does not fully support pasted data from online spreadsheet applications such as Google Sheets™.
 
-- Copy-pasting large or multiple images into HTML Editor can slow down input. To prevent this, use the [image upload](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/imageUpload '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/imageUpload/') feature and block image pasting, as shown in this GitHub example:
+- Copy-pasting large or multiple images into the HTML Editor can slow down input. To prevent this, use the [image upload](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/imageUpload '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/imageUpload/') feature and block image pasting, as shown in this GitHub example:
 
     #include btn-open-github with {
         href: "https://github.com/DevExpress-Examples/devextreme-html-editor-prevent-inserting-images"

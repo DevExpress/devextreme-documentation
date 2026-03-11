@@ -58,7 +58,7 @@ The following components are supported:
 
     You can omit modules for *"dxTextBox"*, *"dxDateBox"*, *"dxCheckBox"*, and *"dxNumberBox"*. The Form component imports these modules automatically.
 
-- Do not specify this property and configure the item component within a [template]({currentpath}/#template) instead to integrate an unsupported component.
+- To integrate an unsupported component, configure the item component in a [template]({currentpath}/#template) instead of specifying this property.
 
 ##### Angular
 

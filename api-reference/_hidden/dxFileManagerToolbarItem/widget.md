@@ -6,7 +6,7 @@ To configure this component, use the [options](/Documentation/ApiReference/UI_Co
 
 ##### jQuery
 
-- If you use [DevExtreme modules](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/'), import the specified editor's module from the `devextreme` folder as follows: 
+- If you use [DevExtreme modules](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/'), import the specified editor's module from the `devextreme` folder: 
 
         import 'devextreme/ui/tag_box';
 

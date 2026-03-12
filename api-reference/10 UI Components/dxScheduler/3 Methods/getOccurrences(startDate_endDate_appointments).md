@@ -26,7 +26,7 @@ Use this method as follows:
         {
             text: 'Meeting',
             startDate: new Date(2026, 1, 1, 9, 0),
-            endDate: new Date(2026, 1, 6, 10, 0),
+            endDate: new Date(2026, 1, 1, 10, 0),
             recurrenceRule: 'FREQ=DAILY;COUNT=5'
         },
         {
@@ -37,6 +37,6 @@ Use this method as follows:
     ];
 
     // Returns occurrences of the "Meeting" appointment for February 2-4, 2026 and the "Call" appointment for February 3, 2026:
-    const occurrences = scheduler.getOccurrences(new Date(2026, 1, 2), new Date(2026, 1, 4), appointments); 
+    const occurrences = scheduler.getOccurrences(new Date(2026, 1, 2), new Date(2026, 1, 5), appointments); 
 
 Use the returned occurrences to implement custom logic for detecting overlapping appointments.

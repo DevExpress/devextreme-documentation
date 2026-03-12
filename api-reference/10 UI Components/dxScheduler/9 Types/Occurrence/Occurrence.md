@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An object that contains information about an appointment occurrence. The [getOccurrences](/Documentation/ApiReference/UI_Components/dxScheduler/Methods/#getOccurrencesstartDate_endDate_appointments) method returns objects of this type.
 
 ---
-<!-- Description goes here -->
+An occurrence is an appointment instance that falls within the specified interval. Recurring appointments can generate multiple occurrences.

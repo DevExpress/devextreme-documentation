@@ -3,22 +3,22 @@ id: dxScheduler.getOccurrences(startDate, endDate, appointments)
 ---
 ---
 ##### shortDescription
-Gets an array of appointment occurrences that fall within a specified time interval.
+Gets an array of appointment occurrences that fall within a specified interval.
 
 ##### return: Array<Occurrence>
 An array of appointment occurrences.
 
 ##### param(startDate): Date
-The start date of the time interval.
+The start date of the interval.
 
 ##### param(endDate): Date
-The end date of the time interval.
+The end date of the interval.
 
 ##### param(appointments): Array<dxSchedulerAppointment>
 An array of appointments to filter.
 
 ---
-An occurrence is an appointment instance that falls within the specified time interval. Recurring appointments can generate multiple occurrences.
+An occurrence is an appointment instance that falls within the specified interval. Recurring appointments can generate multiple occurrences.
 
 Use this method as follows:
 

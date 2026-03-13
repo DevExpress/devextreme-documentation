@@ -19,6 +19,10 @@ Behavior of the editor in a cell depends on the component's edit mode:
 
 [note]
 
+---
+
+##### jQuery
+
 This property has the following specifics:
 
 - The default value of this property depends on the column's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType'). For Boolean columns, the default value is **true**; for columns of other types - **false**.
@@ -26,6 +30,40 @@ This property has the following specifics:
 - The [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '{basewidgetpath}/Configuration/columns/#editCellTemplate') has higher priority over the [cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '{basewidgetpath}/Configuration/columns/#cellTemplate') if the **showEditorAlways** property value is **true**. Relevant for all data types except Boolean.
 
 - The **cellInfo.setValue** function does not work when the **showEditorAlways** property value is **true** but you do not switch the component to edit mode.
+
+##### Angular
+
+This property has the following specifics:
+
+- The default value of this property depends on the column's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType'). For Boolean columns, the default value is **true**; for columns of other types - **false**.
+
+- The [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '{basewidgetpath}/Configuration/columns/#editCellTemplate') has higher priority over the [cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '{basewidgetpath}/Configuration/columns/#cellTemplate') if the **showEditorAlways** property value is **true**. Relevant for all data types except Boolean.
+
+- The **cellInfo.setValue** function does not work when the **showEditorAlways** property value is **true** but you do not switch the component to edit mode.
+
+##### Vue
+
+This property has the following specifics:
+
+- The default value of this property depends on the column's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType'). For Boolean columns, the default value is **true**; for columns of other types - **false**.
+
+- The [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '{basewidgetpath}/Configuration/columns/#editCellTemplate') has higher priority over the [cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '{basewidgetpath}/Configuration/columns/#cellTemplate') if the **showEditorAlways** property value is **true**. Relevant for all data types except Boolean.
+
+- The **cellInfo.setValue** function does not work when the **showEditorAlways** property value is **true** but you do not switch the component to edit mode.
+
+##### React
+
+This property has the following specifics:
+
+- The default value of this property depends on the column's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '{basewidgetpath}/Configuration/columns/#dataType'). For Boolean columns, the default value is **true**; for columns of other types - **false**.
+
+- The [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '{basewidgetpath}/Configuration/columns/#editCellTemplate') has higher priority over the [cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '{basewidgetpath}/Configuration/columns/#cellTemplate') if the **showEditorAlways** property value is **true**. Relevant for all data types except Boolean.
+
+- The **cellInfo.setValue** function does not work when the **showEditorAlways** property value is **true** but you do not switch the component to edit mode.
+
+- To ensure {WidgetName} initializes editors with correct dimensions when **showEditorAlways** is enabled for a column, set [renderAsync]({basewidgetpath}/Configuration/#renderAsync) to `true`.
+
+---
 
 [/note]
 

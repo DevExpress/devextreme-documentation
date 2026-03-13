@@ -4,7 +4,7 @@ uid: ui/data_grid:ColumnButtonClickEvent.row
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The properties of the button's row.
 
 ---
 <!-- Description goes here -->

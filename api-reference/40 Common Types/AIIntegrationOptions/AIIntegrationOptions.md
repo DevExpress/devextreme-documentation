@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies optional AI service configuration.
 
 ---
 <!-- Description goes here -->

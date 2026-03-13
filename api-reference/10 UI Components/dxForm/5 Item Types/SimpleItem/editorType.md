@@ -7,7 +7,7 @@ type: Enums.FormItemComponent
 The DevExtreme component to use as the item editor.
 
 ---
-To configure this component, use the [editorOptions]({currentpath}/#editorOptions) object.
+To configure this component, use the [editorOptions](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/editorOptions.md '{currentpath}/#editorOptions') object.
 
 The following components are supported:
 
@@ -58,7 +58,7 @@ The following components are supported:
 
     You can omit modules for *"dxTextBox"*, *"dxDateBox"*, *"dxCheckBox"*, and *"dxNumberBox"*. The Form component imports these modules automatically.
 
-- To integrate an unsupported component, configure the item component in a [template]({currentpath}/#template) instead of specifying this property.
+- To integrate an unsupported component, configure the item component in a [template](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/template.md '{currentpath}/#template') instead of specifying this property.
 
 ##### Angular
 
@@ -68,7 +68,7 @@ The following components are supported:
 
     You can omit modules for *"dxTextBox"*, *"dxDateBox"*, *"dxCheckBox"*, and *"dxNumberBox"*. The Form component imports these modules automatically.
 
-- Do not specify this property and configure the item component within a [template]({currentpath}/#template) instead in the following usage scenarios:
+- Do not specify this property and configure the item component within a [template](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/template.md '{currentpath}/#template') instead in the following usage scenarios:
 
     - To update the item component's state/options at runtime.
     - To integrate an unsupported component.
@@ -81,7 +81,7 @@ The following components are supported:
 
     You can omit modules for *"dxTextBox"*, *"dxDateBox"*, *"dxCheckBox"*, and *"dxNumberBox"*. The Form component imports these modules automatically.
 
-- Do not specify this property and configure the item component within a [template]({currentpath}/#template) instead in the following usage scenarios:
+- Do not specify this property and configure the item component within a [template](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/template.md '{currentpath}/#template') instead in the following usage scenarios:
 
     - To update the item component's state/options at runtime.
     - To integrate an unsupported component.
@@ -94,7 +94,7 @@ The following components are supported:
 
     You can omit modules for *"dxTextBox"*, *"dxDateBox"*, *"dxCheckBox"*, and *"dxNumberBox"*. The Form component imports these modules automatically.
 
-- Do not specify this property and configure the item component within [render]({currentpath}/#render) or [component]({currentpath}/#component) instead in the following usage scenarios:
+- Do not specify this property and configure the item component within [render](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/render.md '{currentpath}/#render') or [component](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/component.md '{currentpath}/#component') instead in the following usage scenarios:
 
     - To update the item component's state/options at runtime.
     - To integrate an unsupported component.

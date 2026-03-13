@@ -25,7 +25,7 @@ If you use [DevExtreme modules](/concepts/Common/Modularity/02%20DevExtreme%20Mo
 
         import 'devextreme/ui/tag_box';
 
-- To update the item component's state/options at runtime, configure the component in a [template](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#template) instead of using this property.
+- To update the item component's state/options at runtime, configure the component in a [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#template') instead of using this property.
 
 ##### Vue
 
@@ -33,7 +33,7 @@ If you use [DevExtreme modules](/concepts/Common/Modularity/02%20DevExtreme%20Mo
 
         import 'devextreme/ui/tag_box';
 
-- To update the item component's state/options at runtime, configure the component in a [template](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#template) instead of using this property.
+- To update the item component's state/options at runtime, configure the component in a [template](/api-reference/_hidden/CollectionWidgetItem/template.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#template') instead of using this property.
 
 ##### React
 
@@ -41,7 +41,7 @@ If you use [DevExtreme modules](/concepts/Common/Modularity/02%20DevExtreme%20Mo
 
         import 'devextreme/ui/tag_box';
 
-- To update the item component's state/options at runtime, configure the component in [render](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#render) or [component](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#component) instead of using this property.
+- To update the item component's state/options at runtime, configure the component in [render](/api-reference/_hidden/CollectionWidgetItem/render.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#render') or [component](/api-reference/_hidden/CollectionWidgetItem/component.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#component') instead of using this property.
 
 ---
 

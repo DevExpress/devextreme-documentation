@@ -4,7 +4,7 @@ type: dxTreeListColumn
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The properties of the button's column.
 
 ---
 <!-- Description goes here -->

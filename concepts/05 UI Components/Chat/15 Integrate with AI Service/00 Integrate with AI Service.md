@@ -1,11 +1,5 @@
-You can integrate DevExtreme Chat with various AI services, such as [OpenAI](https://platform.openai.com/docs/overview), [Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/), [Google Dialogflow](https://cloud.google.com/dialogflow/docs), and [Microsoft Bot Framework](https://learn.microsoft.com/en-us/azure/bot-service/index-bf-sdk).
+You can integrate DevExtreme Chat with various AI services, such as the following:
 
-[note]
-
-Review this demo for Azure OpenAI integration:
-
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Chat/AIAndChatbotIntegration/"
-}
-
-[/note]
+- [OpenAI](/Documentation/Guide/UI_Components/Chat/Integrate_with_AI_Service/#OpenAI)
+- [Azure OpenAI](/Documentation/Guide/UI_Components/Chat/Integrate_with_AI_Service/#Azure_OpenAI)
+- [Google Dialogflow](/Documentation/Guide/UI_Components/Chat/Integrate_with_AI_Service/#Google_Dialogflow)

@@ -12,7 +12,7 @@ A class that activates AI services in DevExpress UI components.
 This object's constructor accepts two parameters: 
 
 - [AIProvider](/api-reference/40%20Common%20Types/AIProvider '/Documentation/ApiReference/Common_Types/AIProvider/') object (required) - specifies AI service settings. 
-- [AIIntegrationOptions](/Documentation/ApiReference/Common_Types/AIIntegrationOptions/) object (optional) - specifies additional properties. 
+- [AIIntegrationOptions](/api-reference/40%20Common%20Types/AIIntegrationOptions '/Documentation/ApiReference/Common_Types/AIIntegrationOptions/') object (optional) - specifies additional properties. 
 
 Pass the created `AIIntegration` object to components where you want to activate AI capabilities.
 

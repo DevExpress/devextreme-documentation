@@ -29,7 +29,7 @@ This property has the following specifics:
 
 - The [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '{basewidgetpath}/Configuration/columns/#editCellTemplate') has higher priority over the [cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '{basewidgetpath}/Configuration/columns/#cellTemplate') if the **showEditorAlways** property value is **true**. Relevant for all data types except Boolean.
 
-- The **cellInfo.setValue** function does not work when the **showEditorAlways** property value is **true** but you do not switch the component to edit mode.
+- The **cellInfo.setValue** function does not work when **showEditorAlways** is **true** and the component is not in edit mode.
 
 ##### Angular
 
@@ -39,7 +39,7 @@ This property has the following specifics:
 
 - The [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '{basewidgetpath}/Configuration/columns/#editCellTemplate') has higher priority over the [cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '{basewidgetpath}/Configuration/columns/#cellTemplate') if the **showEditorAlways** property value is **true**. Relevant for all data types except Boolean.
 
-- The **cellInfo.setValue** function does not work when the **showEditorAlways** property value is **true** but you do not switch the component to edit mode.
+- The **cellInfo.setValue** function does not work when **showEditorAlways** is **true** and the component is not in edit mode.
 
 ##### Vue
 
@@ -49,7 +49,7 @@ This property has the following specifics:
 
 - The [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '{basewidgetpath}/Configuration/columns/#editCellTemplate') has higher priority over the [cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '{basewidgetpath}/Configuration/columns/#cellTemplate') if the **showEditorAlways** property value is **true**. Relevant for all data types except Boolean.
 
-- The **cellInfo.setValue** function does not work when the **showEditorAlways** property value is **true** but you do not switch the component to edit mode.
+- The **cellInfo.setValue** function does not work when **showEditorAlways** is **true** and the component is not in edit mode.
 
 ##### React
 
@@ -59,9 +59,9 @@ This property has the following specifics:
 
 - The [editCellTemplate](/api-reference/_hidden/dxDataGridColumn/editCellTemplate.md '{basewidgetpath}/Configuration/columns/#editCellTemplate') has higher priority over the [cellTemplate](/api-reference/_hidden/dxDataGridColumn/cellTemplate.md '{basewidgetpath}/Configuration/columns/#cellTemplate') if the **showEditorAlways** property value is **true**. Relevant for all data types except Boolean.
 
-- The **cellInfo.setValue** function does not work when the **showEditorAlways** property value is **true** but you do not switch the component to edit mode.
+- The **cellInfo.setValue** function does not work when **showEditorAlways** is **true** and the component is not in edit mode.
 
-- To ensure {WidgetName} initializes editors with correct dimensions when **showEditorAlways** is enabled for a column, set [renderAsync]({basewidgetpath}/Configuration/#renderAsync) to `true`.
+- To ensure {WidgetName} initializes editors with the correct dimensions when **showEditorAlways** is enabled for a column, set [renderAsync]({basewidgetpath}/Configuration/#renderAsync) to `true`.
 
 ---
 

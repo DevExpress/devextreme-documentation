@@ -198,9 +198,14 @@ Assign **true** to the [showInfo](/api-reference/10%20UI%20Components/GridBase/1
 
 ---
 
-
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RecordPaging/"
+}
+
+The DataGrid also supports external pagers. You can hide the built-in pager and configure a standalone [Pagination](/Documentation/Guide/UI_Components/Pagination/Overview/) component to control the DataGrid. For more information, refer to the following example:
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-datagrid-pager-on-top"
 }
 
 #####See Also#####

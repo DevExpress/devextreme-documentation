@@ -14,7 +14,7 @@ Information about the event.
 The UI component's instance.
 
 ##### field(e.direction): String
-The direction in which the item is swiped.
+The direction of the item swipe.
 
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
@@ -29,7 +29,7 @@ The swiped item's data.
 #include common-ref-elementparam with { element: "item" }
 
 ##### field(e.itemIndex): Number | Object
-The item's index. In a grouped list, the index represents an object defining the group and item indexes: { group: 0, item: 0 }.
+The swiped item's index. In a grouped list, this property includes group information in the following format: `{ group: 0, item: 0 }`.
 
 ---
 

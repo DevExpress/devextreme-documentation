@@ -54,7 +54,7 @@ To allow this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Compo
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxColumn,
@@ -76,7 +76,7 @@ To allow this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Compo
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column,
@@ -143,7 +143,7 @@ If a column should be fixed initially, assign **true** to its [fixed](/api-refer
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxColumn
@@ -164,7 +164,7 @@ If a column should be fixed initially, assign **true** to its [fixed](/api-refer
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column

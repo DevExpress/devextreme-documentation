@@ -48,7 +48,7 @@ If data column values should be cast to another type (for example, date values s
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxTreeList, {
         DxColumn
     } from 'devextreme-vue/tree-list';
@@ -66,7 +66,7 @@ If data column values should be cast to another type (for example, date values s
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Column

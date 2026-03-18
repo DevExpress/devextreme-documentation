@@ -48,7 +48,7 @@ The load panel is shown only for remote data sources by default. To show it rega
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxLoadPanel
@@ -67,7 +67,7 @@ The load panel is shown only for remote data sources by default. To show it rega
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         LoadPanel
@@ -127,7 +127,7 @@ You can also control the load panel programmatically using the [beginCustomLoadi
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         // ...
@@ -164,7 +164,7 @@ You can also control the load panel programmatically using the [beginCustomLoadi
 
     <!-- tab: App.js -->
     import React, { useRef, useCallback } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         // ...
@@ -241,7 +241,7 @@ Since the load panel is a DevExtreme [LoadPanel](/concepts/05%20UI%20Components/
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxLoadPanel
@@ -260,7 +260,7 @@ Since the load panel is a DevExtreme [LoadPanel](/concepts/05%20UI%20Components/
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         LoadPanel

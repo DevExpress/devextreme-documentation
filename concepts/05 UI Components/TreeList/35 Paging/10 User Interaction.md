@@ -59,7 +59,7 @@ Set the [showNavigationButtons](/api-reference/10%20UI%20Components/GridBase/1%2
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxPager
@@ -78,7 +78,7 @@ Set the [showNavigationButtons](/api-reference/10%20UI%20Components/GridBase/1%2
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Pager
@@ -161,7 +161,7 @@ Assign **true** to the [showInfo](/api-reference/10%20UI%20Components/GridBase/1
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxPager
@@ -180,7 +180,7 @@ Assign **true** to the [showInfo](/api-reference/10%20UI%20Components/GridBase/1
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Pager

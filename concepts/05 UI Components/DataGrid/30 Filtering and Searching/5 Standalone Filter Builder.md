@@ -74,7 +74,7 @@ The DataGrid UI component has an integrated filter builder that can be invoked u
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
     import DxFilterBuilder from 'devextreme-vue/filter-builder';
@@ -107,7 +107,7 @@ The DataGrid UI component has an integrated filter builder that can be invoked u
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
     import FilterBuilder from 'devextreme-react/filter-builder';
@@ -248,7 +248,7 @@ Then, add a button that updates a filter of the DataGrid's data source according
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
     import DxFilterBuilder from 'devextreme-vue/filter-builder';
@@ -290,7 +290,7 @@ Then, add a button that updates a filter of the DataGrid's data source according
 
     <!-- tab: App.js -->
     import React, { useRef, useCallback } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
     import FilterBuilder from 'devextreme-react/filter-builder';

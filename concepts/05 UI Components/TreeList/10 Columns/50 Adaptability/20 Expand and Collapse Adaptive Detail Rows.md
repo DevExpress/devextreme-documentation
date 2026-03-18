@@ -43,7 +43,7 @@ You can call the [expandAdaptiveDetailRow(key)](/api-reference/10%20UI%20Compone
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
 
@@ -77,7 +77,7 @@ You can call the [expandAdaptiveDetailRow(key)](/api-reference/10%20UI%20Compone
 
     <!-- tab: App.js -->
     import React, { useRef } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import TreeList from 'devextreme-react/tree-list';
 
     export default function App() {

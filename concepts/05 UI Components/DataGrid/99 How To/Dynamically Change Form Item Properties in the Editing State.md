@@ -131,7 +131,7 @@ This function allows you to change form item properties dynamically. Within this
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DxDataGrid, { 
             DxColumn,
@@ -179,7 +179,7 @@ This function allows you to change form item properties dynamically. Within this
         <!--tab: App.js-->
         import React from 'react';
 
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DataGrid, { 
             Column,

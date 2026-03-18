@@ -46,7 +46,7 @@ The [columns](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/c
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxTreeList from 'devextreme-vue/tree-list';
 
     export default {
@@ -65,7 +65,7 @@ The [columns](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/c
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import TreeList from 'devextreme-react/tree-list';
 
     const customizeColumns = (columns) => {
@@ -125,7 +125,7 @@ The **visibleIndex** property can also be changed at runtime to reorder columns 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxTreeList, {
         DxColumn
     } from 'devextreme-vue/tree-list';
@@ -152,7 +152,7 @@ The **visibleIndex** property can also be changed at runtime to reorder columns 
 
     <!-- tab: App.js -->
     import React, { useRef } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import TreeList from 'devextreme-react/tree-list';
     
     export default function App() {

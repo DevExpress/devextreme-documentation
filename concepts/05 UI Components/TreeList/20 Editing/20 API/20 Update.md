@@ -61,7 +61,7 @@ The [cellValue (rowIndex, visibleColumnIndex, value)](/api-reference/10%20UI%20C
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
     import DxButton from 'devextreme-vue/button';
@@ -97,7 +97,7 @@ The [cellValue (rowIndex, visibleColumnIndex, value)](/api-reference/10%20UI%20C
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList from 'devextreme-react/tree-list';
     import Button from 'devextreme-react/button';
@@ -217,7 +217,7 @@ Call the [hasEditData()](/api-reference/10%20UI%20Components/GridBase/3%20Method
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
     import DxButton from 'devextreme-vue/button';
@@ -260,7 +260,7 @@ Call the [hasEditData()](/api-reference/10%20UI%20Components/GridBase/3%20Method
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList from 'devextreme-react/tree-list';
     import Button from 'devextreme-react/button';

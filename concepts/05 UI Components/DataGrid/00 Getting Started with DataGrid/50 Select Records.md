@@ -163,7 +163,7 @@ You can obtain the selected record's data in the [onSelectionChanged](/api-refer
 
     <!-- tab: App.js -->
     import React, { useCallback, useState } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import './App.css';
 
     import {

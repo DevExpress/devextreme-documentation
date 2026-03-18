@@ -44,7 +44,7 @@ Pass *-1* to the [expandAll(groupIndex)](/api-reference/10%20UI%20Components/dxD
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxDataGrid, { ... } from 'devextreme-vue/data-grid';
 
     const dataGridRefKey = "my-data-grid";
@@ -79,7 +79,7 @@ Pass *-1* to the [expandAll(groupIndex)](/api-reference/10%20UI%20Components/dxD
 
     <!-- tab: App.js -->
     import React, { useRef, useCallback } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, { ... } from 'devextreme-react/data-grid';
 
@@ -155,7 +155,7 @@ The [expandRow(key)](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxDataGrid, { ... } from 'devextreme-vue/data-grid';
 
     const dataGridRefKey = "my-data-grid";
@@ -191,7 +191,7 @@ The [expandRow(key)](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/
 
     <!-- tab: App.js -->
     import React, { useRef, useCallback } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, { ... } from 'devextreme-react/data-grid';
 

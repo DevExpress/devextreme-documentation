@@ -68,7 +68,7 @@ The DataGrid provides the following API for expanding and collapsing groups:
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import {
             DxDataGrid,
@@ -107,7 +107,7 @@ The DataGrid provides the following API for expanding and collapsing groups:
         
         <!-- tab: App.js -->
         import React, { useRef } from 'react';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
         import DataGrid, {
             Grouping
@@ -210,7 +210,7 @@ The DataGrid provides the following API for expanding and collapsing groups:
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import {
             DxDataGrid,
@@ -246,7 +246,7 @@ The DataGrid provides the following API for expanding and collapsing groups:
         
         <!-- tab: App.js -->
         import React, { useRef } from 'react';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
         import DataGrid, {
             Column
@@ -329,7 +329,7 @@ The DataGrid provides the following API for expanding and collapsing groups:
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import {
             DxDataGrid,
@@ -369,7 +369,7 @@ The DataGrid provides the following API for expanding and collapsing groups:
         
         <!-- tab: App.js -->
         import React, { useRef } from 'react';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
         import DataGrid, {
             // ...

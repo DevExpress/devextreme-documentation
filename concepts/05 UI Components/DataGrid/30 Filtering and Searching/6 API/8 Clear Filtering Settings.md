@@ -39,7 +39,7 @@ The [clearFilter(filterName)](/api-reference/10%20UI%20Components/GridBase/3%20M
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
 
@@ -72,7 +72,7 @@ The [clearFilter(filterName)](/api-reference/10%20UI%20Components/GridBase/3%20M
 
     <!-- tab: App.js -->
     import React, { useRef, useCallback } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
 

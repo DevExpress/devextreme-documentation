@@ -64,7 +64,7 @@ You can use the **columns[]**.[hidingPriority](/api-reference/_hidden/GridBaseCo
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxColumn
@@ -84,7 +84,7 @@ You can use the **columns[]**.[hidingPriority](/api-reference/_hidden/GridBaseCo
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Column
@@ -149,7 +149,7 @@ If your TreeList is inside a resizable container, you must call the [updateDimen
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
 
@@ -181,7 +181,7 @@ If your TreeList is inside a resizable container, you must call the [updateDimen
 
     <!-- tab: App.js -->
     import React, { useRef } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import TreeList from 'devextreme-react/tree-list';
 
     export default function App() {

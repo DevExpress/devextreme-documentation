@@ -97,7 +97,7 @@ To reorder grid columns, change their order in the [columns](/api-reference/10%2
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         DataGrid,

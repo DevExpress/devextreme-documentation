@@ -68,7 +68,7 @@ Each lookup field has an individual [data source](/api-reference/_hidden/dxFilte
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxFilterBuilder, {
         DxField,
@@ -99,7 +99,7 @@ Each lookup field has an individual [data source](/api-reference/_hidden/dxFilte
 ##### React
 
     <!-- tab: App.js -->
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FilterBuilder, {
         Field,
@@ -199,7 +199,7 @@ Each lookup field has an individual [data source](/api-reference/_hidden/dxFilte
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxFilterBuilder, {
         DxField,
@@ -230,7 +230,7 @@ Each lookup field has an individual [data source](/api-reference/_hidden/dxFilte
 ##### React
 
     <!-- tab: App.js -->
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FilterBuilder, {
         Field,

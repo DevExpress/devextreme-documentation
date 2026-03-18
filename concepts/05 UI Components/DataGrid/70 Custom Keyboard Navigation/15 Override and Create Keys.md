@@ -55,7 +55,7 @@ The following example shows how to override the **Space Bar** keystroke so it sw
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxDataGrid from 'devextreme-vue/data-grid';
 
     export default {
@@ -80,7 +80,7 @@ The following example shows how to override the **Space Bar** keystroke so it sw
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DataGrid from 'devextreme-react/data-grid';
 
     const onKeyDown = (e) => {

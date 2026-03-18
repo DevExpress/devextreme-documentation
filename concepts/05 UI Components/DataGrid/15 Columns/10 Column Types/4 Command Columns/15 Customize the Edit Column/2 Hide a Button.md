@@ -63,7 +63,7 @@ The **Edit** and **Delete** buttons can be hidden by omitting them when declarin
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxEditing,
@@ -91,7 +91,7 @@ The **Edit** and **Delete** buttons can be hidden by omitting them when declarin
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Editing,

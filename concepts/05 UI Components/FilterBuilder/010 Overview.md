@@ -107,7 +107,7 @@ The following code adds a simple FilterBuilder to your page. Note that each item
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxFilterBuilder, {
         DxField
@@ -142,7 +142,7 @@ The following code adds a simple FilterBuilder to your page. Note that each item
 
     <!-- tab: App.js -->
     import { useState } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FilterBuilder, {
         Field

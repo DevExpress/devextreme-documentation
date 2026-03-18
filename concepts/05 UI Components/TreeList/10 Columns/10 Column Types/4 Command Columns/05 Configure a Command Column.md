@@ -47,7 +47,7 @@ The following example shows how to specify the adaptive column's [width](/api-re
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxTreeList, {
         DxColumn
     } from 'devextreme-vue/tree-list';
@@ -69,7 +69,7 @@ The following example shows how to specify the adaptive column's [width](/api-re
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import TreeList, {
         Column
     } from 'devextreme-react/tree-list';

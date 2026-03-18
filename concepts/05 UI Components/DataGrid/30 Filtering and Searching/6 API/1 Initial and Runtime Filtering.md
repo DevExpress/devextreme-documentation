@@ -46,7 +46,7 @@ The initial and runtime filtering API depends on the UI element and is described
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
 
@@ -83,7 +83,7 @@ The initial and runtime filtering API depends on the UI element and is described
 
     <!-- tab: App.js -->
     import React, { useRef, useCallback } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
 
@@ -166,7 +166,7 @@ You can create a filter that combines all the applied filters by calling the [ge
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
 
@@ -199,7 +199,7 @@ You can create a filter that combines all the applied filters by calling the [ge
 
     <!-- tab: App.js -->
     import React, { useRef, useCallback } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
 

@@ -112,7 +112,7 @@ If you need to implement minor changes (for example, apply a style to a form ite
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxEditing,
@@ -142,7 +142,7 @@ If you need to implement minor changes (for example, apply a style to a form ite
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Editing,

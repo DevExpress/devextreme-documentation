@@ -56,7 +56,7 @@ To add pagination to CardView, configure the following settings:
 
     <!-- tab: App.tsx -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import CardView, { Paging, Pager } from 'devextreme-react/card-view';
     import { employees } from './data.ts';
 

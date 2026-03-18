@@ -64,7 +64,7 @@ You can use the **columns[]**.[hidingPriority](/api-reference/_hidden/GridBaseCo
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxColumn
@@ -84,7 +84,7 @@ You can use the **columns[]**.[hidingPriority](/api-reference/_hidden/GridBaseCo
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column
@@ -149,7 +149,7 @@ If your DataGrid is inside a resizable container, you must call the [updateDimen
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
 
@@ -181,7 +181,7 @@ If your DataGrid is inside a resizable container, you must call the [updateDimen
 
     <!-- tab: App.js -->
     import React, { useRef } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DataGrid from 'devextreme-react/data-grid';
 
     export default function App() {

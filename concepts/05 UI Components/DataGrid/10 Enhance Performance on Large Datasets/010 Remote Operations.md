@@ -64,7 +64,7 @@ Specify the [remoteOperations](/api-reference/10%20UI%20Components/dxDataGrid/1%
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxRemoteOperations
@@ -84,7 +84,7 @@ Specify the [remoteOperations](/api-reference/10%20UI%20Components/dxDataGrid/1%
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         RemoteOperations

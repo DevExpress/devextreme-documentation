@@ -59,7 +59,7 @@ To make the filter row visible, assign **true** to the [filterRow](/api-referenc
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxColumn,
@@ -79,7 +79,7 @@ To make the filter row visible, assign **true** to the [filterRow](/api-referenc
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column,
@@ -162,7 +162,7 @@ A user-specified filter is automatically applied with a delay by default. Altern
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxFilterRow
@@ -180,7 +180,7 @@ A user-specified filter is automatically applied with a delay by default. Altern
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         FilterRow
@@ -295,7 +295,7 @@ You can also preselect a filter operation and specify the initial filter value w
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxColumn,
@@ -328,7 +328,7 @@ You can also preselect a filter operation and specify the initial filter value w
 
     <!-- tab: App.js -->
     import React, { useState, useCallback } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column,

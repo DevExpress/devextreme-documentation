@@ -45,7 +45,7 @@ The DataGrid UI component supports single and multiple row selection. Use the **
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxSelection
@@ -64,7 +64,7 @@ The DataGrid UI component supports single and multiple row selection. Use the **
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Selection
@@ -140,7 +140,7 @@ The check box in the column's header selects all rows or only the currently rend
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxSelection
@@ -159,7 +159,7 @@ The check box in the column's header selects all rows or only the currently rend
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Selection
@@ -232,7 +232,7 @@ You can prevent users from selecting all rows by setting the **selection**.[allo
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxSelection
@@ -251,7 +251,7 @@ You can prevent users from selecting all rows by setting the **selection**.[allo
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Selection
@@ -324,7 +324,7 @@ The [showCheckBoxesMode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Conf
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxSelection
@@ -343,7 +343,7 @@ The [showCheckBoxesMode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Conf
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Selection

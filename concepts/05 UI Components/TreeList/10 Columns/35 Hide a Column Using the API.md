@@ -63,7 +63,7 @@ A column is considered hidden when its [visible](/api-reference/_hidden/GridBase
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxColumn
@@ -91,7 +91,7 @@ A column is considered hidden when its [visible](/api-reference/_hidden/GridBase
 
     <!-- tab: App.js -->
     import React, { useState, useCallback } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Column

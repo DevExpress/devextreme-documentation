@@ -74,7 +74,7 @@ Add an object to the [buttons](/api-reference/_hidden/dxTreeListColumn/buttons '
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxTreeList, {
         DxColumn,
         DxButton
@@ -103,7 +103,7 @@ Add an object to the [buttons](/api-reference/_hidden/dxTreeListColumn/buttons '
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import TreeList, {
         Column,
         Button
@@ -202,7 +202,7 @@ Add an object to the [buttons](/api-reference/_hidden/dxTreeListColumn/buttons '
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxTreeList, {
         DxColumn,
         DxButton
@@ -227,7 +227,7 @@ Add an object to the [buttons](/api-reference/_hidden/dxTreeListColumn/buttons '
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Column,

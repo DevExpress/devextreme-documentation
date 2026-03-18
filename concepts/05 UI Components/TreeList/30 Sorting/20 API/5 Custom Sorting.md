@@ -51,7 +51,7 @@ Implement a custom sorting routine using the [calculateSortValue](/api-reference
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTreeList, DxColumn } from 'devextreme-vue/tree-list';
 
@@ -68,7 +68,7 @@ Implement a custom sorting routine using the [calculateSortValue](/api-reference
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TreeList, Column } from 'devextreme-react/tree-list';
 
@@ -154,7 +154,7 @@ Implement a custom sorting routine using the [calculateSortValue](/api-reference
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTreeList, DxColumn } from 'devextreme-vue/tree-list';
 
@@ -181,7 +181,7 @@ Implement a custom sorting routine using the [calculateSortValue](/api-reference
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TreeList, Column } from 'devextreme-react/tree-list';
 

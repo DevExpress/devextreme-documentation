@@ -82,7 +82,7 @@ In the following code, the FilterBuilder can filter data by three fields, two of
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxFilterBuilder, {
         DxField
@@ -120,7 +120,7 @@ In the following code, the FilterBuilder can filter data by three fields, two of
 ##### React
 
     <!-- tab: App.js -->
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FilterBuilder, {
         Field

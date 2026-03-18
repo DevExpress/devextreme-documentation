@@ -68,7 +68,7 @@ The following code shows how to add a command column with custom [buttons](/api-
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxTreeList, {
         DxColumn,
         DxButton
@@ -92,7 +92,7 @@ The following code shows how to add a command column with custom [buttons](/api-
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import TreeList, {
         Column,
         Button

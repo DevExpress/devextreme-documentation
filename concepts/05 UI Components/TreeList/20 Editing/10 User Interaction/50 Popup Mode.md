@@ -71,7 +71,7 @@ Use the **editing**.[popup](/api-reference/10%20UI%20Components/GridBase/1%20Con
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxEditing,
@@ -94,7 +94,7 @@ Use the **editing**.[popup](/api-reference/10%20UI%20Components/GridBase/1%20Con
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Editing,

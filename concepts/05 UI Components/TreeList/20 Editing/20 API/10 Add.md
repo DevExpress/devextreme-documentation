@@ -38,7 +38,7 @@ Use the [addRow()](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/ad
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
 
@@ -59,7 +59,7 @@ Use the [addRow()](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/ad
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList from 'devextreme-react/tree-list';
 
@@ -142,7 +142,7 @@ You can specify initial values for a newly added row in the [onInitNewRow](/api-
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxColumn
@@ -166,7 +166,7 @@ You can specify initial values for a newly added row in the [onInitNewRow](/api-
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Column

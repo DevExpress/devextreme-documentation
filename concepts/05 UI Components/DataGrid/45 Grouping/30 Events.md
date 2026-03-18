@@ -68,7 +68,7 @@ You can execute certain commands before or after a row was expanded or collapsed
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
 
@@ -100,7 +100,7 @@ You can execute certain commands before or after a row was expanded or collapsed
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DataGrid, Column } from 'devextreme-react/data-grid';
 

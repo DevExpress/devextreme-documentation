@@ -57,7 +57,7 @@ To customize cell appearance, use a column's [cellTemplate](/api-reference/_hidd
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxTreeList, {
         DxColumn
     } from 'devextreme-vue/tree-list';
@@ -75,7 +75,7 @@ To customize cell appearance, use a column's [cellTemplate](/api-reference/_hidd
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import TreeList, {
         Column
     } from 'devextreme-react/tree-list';
@@ -161,7 +161,7 @@ While **cellTemplate** customizes data cells only, the [onCellPrepared](/api-ref
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxTreeList from 'devextreme-vue/tree-list';
 
     export default {
@@ -188,7 +188,7 @@ While **cellTemplate** customizes data cells only, the [onCellPrepared](/api-ref
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import TreeList from 'devextreme-react/tree-list';
 
     const onCellPrepared = (e) => {

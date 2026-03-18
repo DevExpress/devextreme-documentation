@@ -93,7 +93,7 @@
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTreeList } from 'devextreme-vue/tree-list';
 
@@ -116,7 +116,7 @@
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TreeList } from 'devextreme-react/tree-list';
 

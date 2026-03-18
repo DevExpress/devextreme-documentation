@@ -52,7 +52,7 @@ Paging is used to load data in portions, which improves the UI component's perfo
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxPaging
@@ -71,7 +71,7 @@ Paging is used to load data in portions, which improves the UI component's perfo
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Paging
@@ -138,7 +138,7 @@ When working with small datasets, you can disable paging by setting the **paging
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxPaging
@@ -157,7 +157,7 @@ When working with small datasets, you can disable paging by setting the **paging
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Paging

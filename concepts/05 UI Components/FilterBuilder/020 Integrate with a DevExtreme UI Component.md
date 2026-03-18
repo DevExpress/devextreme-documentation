@@ -114,7 +114,7 @@ contain data fields from a UI component's data source. For example, the followin
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxFilterBuilder, { DxField } from 'devextreme-vue/filter-builder';
     import DxList from 'devextreme-vue/list';
@@ -149,7 +149,7 @@ contain data fields from a UI component's data source. For example, the followin
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FilterBuilder, { Field } from 'devextreme-react/filter-builder';
     import List from 'devextreme-react/list';

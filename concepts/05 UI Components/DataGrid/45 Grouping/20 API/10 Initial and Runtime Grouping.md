@@ -61,7 +61,7 @@ Assign a non-negative integer to the **columns**.[groupIndex](/api-reference/_hi
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         DxDataGrid,
@@ -81,7 +81,7 @@ Assign a non-negative integer to the **columns**.[groupIndex](/api-reference/_hi
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column,
@@ -181,7 +181,7 @@ You can change a column's **groupIndex** at runtime using the [columnOption(id, 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
 
@@ -208,7 +208,7 @@ You can change a column's **groupIndex** at runtime using the [columnOption(id, 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DataGrid, Column } from 'devextreme-react/data-grid';
 

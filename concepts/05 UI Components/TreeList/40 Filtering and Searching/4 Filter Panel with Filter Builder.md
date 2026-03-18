@@ -40,7 +40,7 @@ Set the **filterPanel**.[visible](/api-reference/10%20UI%20Components/GridBase/1
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {      
         DxFilterPanel
@@ -58,7 +58,7 @@ Set the **filterPanel**.[visible](/api-reference/10%20UI%20Components/GridBase/1
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         FilterPanel
@@ -106,7 +106,7 @@ If a user changes the filter expression in the filter panel or filter builder, t
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
 
@@ -121,7 +121,7 @@ If a user changes the filter expression in the filter panel or filter builder, t
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList from 'devextreme-react/tree-list';
 
@@ -198,7 +198,7 @@ The **filterValue** is updated when a user changes the filter expression from th
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxFilterPanel
@@ -226,7 +226,7 @@ The **filterValue** is updated when a user changes the filter expression from th
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         FilterPanel
@@ -368,7 +368,7 @@ The TreeList provides the [filterBuilder](/api-reference/10%20UI%20Components/Gr
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxButton from 'devextreme-vue/button';
 
@@ -412,7 +412,7 @@ The TreeList provides the [filterBuilder](/api-reference/10%20UI%20Components/Gr
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Button from 'devextreme-react/button';
 

@@ -64,7 +64,7 @@ In this tutorial, the [filterRow](/api-reference/10%20UI%20Components/GridBase/1
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         DataGrid,

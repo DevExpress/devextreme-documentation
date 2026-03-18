@@ -94,7 +94,7 @@ Each lookup column has an individual [data source](/api-reference/_hidden/GridBa
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxColumn,
@@ -140,7 +140,7 @@ Each lookup column has an individual [data source](/api-reference/_hidden/GridBa
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column,
@@ -255,7 +255,7 @@ Each lookup column has an individual [data source](/api-reference/_hidden/GridBa
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxColumn,
@@ -293,7 +293,7 @@ Each lookup column has an individual [data source](/api-reference/_hidden/GridBa
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column,

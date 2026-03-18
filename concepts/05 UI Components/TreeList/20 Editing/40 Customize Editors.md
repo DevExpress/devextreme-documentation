@@ -86,7 +86,7 @@ The columns's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Doc
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxColumn
@@ -128,7 +128,7 @@ The columns's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Doc
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Column
@@ -293,7 +293,7 @@ Implement the column's [editCellTemplate](/api-reference/_hidden/dxTreeListColum
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxColumn,
@@ -322,7 +322,7 @@ Implement the column's [editCellTemplate](/api-reference/_hidden/dxTreeListColum
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Column,
@@ -445,7 +445,7 @@ Editors are displayed in cells in the normal state too if you set the **columns*
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxColumn
@@ -464,7 +464,7 @@ Editors are displayed in cells in the normal state too if you set the **columns*
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Column

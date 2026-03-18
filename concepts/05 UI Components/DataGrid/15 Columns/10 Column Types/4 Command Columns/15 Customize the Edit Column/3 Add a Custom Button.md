@@ -75,7 +75,7 @@ Add and configure custom buttons in the **columns[]**.[buttons](/api-reference/_
 
     <script>
     import { ref } from 'vue';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxDataGrid, { DxColumn, DxButton } from 'devextreme-vue/data-grid';
 
     const savedRows = ref([]);
@@ -89,7 +89,7 @@ Add and configure custom buttons in the **columns[]**.[buttons](/api-reference/_
 
     <!-- tab: App.js -->
     import React, { useCallback, useState } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DataGrid, { Column, Button } from 'devextreme-react/data-grid';
 
     function App () {
@@ -212,7 +212,7 @@ Specify the **buttons[]**.[template](/api-reference/_hidden/dxDataGridColumnButt
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxColumn,
@@ -238,7 +238,7 @@ Specify the **buttons[]**.[template](/api-reference/_hidden/dxDataGridColumnButt
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column,

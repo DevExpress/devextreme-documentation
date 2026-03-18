@@ -68,7 +68,7 @@ Customize a summary item's text and value format using the [displayFormat](/api-
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxSummary,
@@ -89,7 +89,7 @@ Customize a summary item's text and value format using the [displayFormat](/api-
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Summary,
@@ -182,7 +182,7 @@ Specify the **customizeText** function for a more detailed customization.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxSummary,
@@ -208,7 +208,7 @@ Specify the **customizeText** function for a more detailed customization.
 
     <!-- tab: App.js -->
     import React, { useCallback } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Summary,

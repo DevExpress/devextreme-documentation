@@ -39,7 +39,7 @@ Call the [pageCount()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
 
@@ -60,7 +60,7 @@ Call the [pageCount()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
 
@@ -141,7 +141,7 @@ The DataGrid also provides the [pageIndex(newIndex)](/api-reference/10%20UI%20Co
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxPaging
@@ -175,7 +175,7 @@ The DataGrid also provides the [pageIndex(newIndex)](/api-reference/10%20UI%20Co
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Paging

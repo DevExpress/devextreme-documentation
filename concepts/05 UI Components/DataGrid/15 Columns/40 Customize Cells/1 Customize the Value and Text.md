@@ -57,7 +57,7 @@ Use the [customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxColumn
@@ -81,7 +81,7 @@ Use the [customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column
@@ -173,7 +173,7 @@ To use the text displayed in cells in those data processing operations, specify 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxColumn
@@ -197,7 +197,7 @@ To use the text displayed in cells in those data processing operations, specify 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column

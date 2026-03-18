@@ -56,7 +56,7 @@ Columns represent sets of data values that have the same type. To configure colu
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxColumn
@@ -76,7 +76,7 @@ Columns represent sets of data values that have the same type. To configure colu
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Column
@@ -144,7 +144,7 @@ The TreeList generates a column per data field if you do not specify the **colum
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxTreeList from 'devextreme-vue/tree-list';
 
     export default {
@@ -164,7 +164,7 @@ The TreeList generates a column per data field if you do not specify the **colum
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList from 'devextreme-react/tree-list';
 

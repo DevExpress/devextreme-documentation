@@ -83,7 +83,7 @@ Handle the DataGrid's [onEditorPreparing](/api-reference/10%20UI%20Components/dx
 
     <!-- tab: App.js -->
     import React, { useCallback } from "react";
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DataGrid } from 'devextreme-react/data-grid';
 

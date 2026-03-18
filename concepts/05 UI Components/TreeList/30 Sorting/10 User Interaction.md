@@ -44,7 +44,7 @@ With the TreeList UI component, a user can sort by single and multiple columns. 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTreeList, DxSorting } from 'devextreme-vue/tree-list';
 
@@ -61,7 +61,7 @@ With the TreeList UI component, a user can sort by single and multiple columns. 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TreeList, Sorting } from 'devextreme-react/tree-list';
 
@@ -135,7 +135,7 @@ To disable sorting in the whole UI component, set the **sorting**.**mode** prope
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTreeList, DxColumn } from 'devextreme-vue/tree-list';
 
@@ -152,7 +152,7 @@ To disable sorting in the whole UI component, set the **sorting**.**mode** prope
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TreeList, Column } from 'devextreme-react/tree-list';
 

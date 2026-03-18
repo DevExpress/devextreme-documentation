@@ -40,7 +40,7 @@ Set the **filterPanel**.[visible](/api-reference/10%20UI%20Components/GridBase/1
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {      
         DxFilterPanel
@@ -58,7 +58,7 @@ Set the **filterPanel**.[visible](/api-reference/10%20UI%20Components/GridBase/1
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         FilterPanel
@@ -114,7 +114,7 @@ If a user changes the filter expression in the filter panel or filter builder, t
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
 
@@ -129,7 +129,7 @@ If a user changes the filter expression in the filter panel or filter builder, t
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
 
@@ -214,7 +214,7 @@ The **filterValue** is updated when a user changes the filter expression from th
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxFilterPanel
@@ -242,7 +242,7 @@ The **filterValue** is updated when a user changes the filter expression from th
 
     <!-- tab: App.js -->
     import React, { useState, useCallback } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         FilterPanel
@@ -395,7 +395,7 @@ The DataGrid provides the [filterBuilder](/api-reference/10%20UI%20Components/Gr
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxButton from 'devextreme-vue/button';
 
@@ -439,7 +439,7 @@ The DataGrid provides the [filterBuilder](/api-reference/10%20UI%20Components/Gr
 
     <!-- tab: App.js -->
     import React, { useState, useCallback } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Button from 'devextreme-react/button';
 

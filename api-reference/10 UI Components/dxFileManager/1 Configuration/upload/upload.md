@@ -60,7 +60,7 @@ Configures upload settings.
         </DxFileManager>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.light.css';    
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';    
         
         import {
             DxFileManager,
@@ -85,7 +85,7 @@ Configures upload settings.
     <!-- tab: App.js -->
     import React from 'react';
     
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FileManager, { Upload } from 'devextreme-react/file-manager';
     

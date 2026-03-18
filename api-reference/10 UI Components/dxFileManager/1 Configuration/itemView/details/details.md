@@ -75,7 +75,7 @@ Configures the "Details" file system representation mode.
         </DxFileManager>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.light.css';    
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';    
         
         import {
             DxFileManager,
@@ -104,7 +104,7 @@ Configures the "Details" file system representation mode.
     <!-- tab: App.js -->
     import React from 'react';
     
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FileManager, { ItemView, Details, Column } from 'devextreme-react/file-manager';
     

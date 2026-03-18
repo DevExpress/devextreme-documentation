@@ -93,7 +93,7 @@ The UI component also has the [allowedFileExtensions](/api-reference/10%20UI%20C
         </DxFileManager>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.light.css';    
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';    
         
         import {
             DxFileManager,
@@ -118,7 +118,7 @@ The UI component also has the [allowedFileExtensions](/api-reference/10%20UI%20C
     <!-- tab: App.js -->
     import React from 'react';
     
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FileManager, { 
         Permissions 

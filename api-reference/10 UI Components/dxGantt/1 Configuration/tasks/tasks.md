@@ -187,7 +187,7 @@ The 'color' field accepts the following values:
         </DxGantt>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         import 'devexpress-gantt/dist/dx-gantt.css'; 
 
         import { 
@@ -234,7 +234,7 @@ The 'color' field accepts the following values:
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import 'devexpress-gantt/dist/dx-gantt.css'; 
 
     import Gantt, { 

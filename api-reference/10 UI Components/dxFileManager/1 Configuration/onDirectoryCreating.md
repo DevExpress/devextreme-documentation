@@ -93,7 +93,7 @@ The component executes the **onDirectoryCreating** function when a user enters a
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxFileManager from 'devextreme-vue/file-manager';
   

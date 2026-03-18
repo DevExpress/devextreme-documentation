@@ -59,7 +59,7 @@ Specifies whether a user can select a single or multiple files and directories i
         </DxFileManager>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.light.css';    
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';    
         
         import {
             DxFileManager
@@ -82,7 +82,7 @@ Specifies whether a user can select a single or multiple files and directories i
     <!-- tab: App.js -->
     import React from 'react';
     
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FileManager from 'devextreme-react/file-manager';
     

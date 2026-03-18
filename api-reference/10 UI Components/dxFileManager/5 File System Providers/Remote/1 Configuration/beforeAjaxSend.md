@@ -99,7 +99,7 @@ An object (fieldName/fieldValue pairs) to set on the native <a href="https://api
     </template>
     
     <script>
-    import 'devextreme/dist/css/dx.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
     
     import { DxFileManager } from 'devextreme-vue/file-manager';
     
@@ -131,7 +131,7 @@ An object (fieldName/fieldValue pairs) to set on the native <a href="https://api
     <!-- tab: App.js -->
     import React from 'react';
     
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
     import FileManager from 'devextreme-react/file-manager';
     import RemoteFileSystemProvider from 'devextreme/file_management/remote_provider';

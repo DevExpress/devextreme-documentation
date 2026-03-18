@@ -77,7 +77,7 @@ Specifies whether to show or hide dependencies.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import 'devexpress-gantt/dist/dx-gantt.css';
 
     import DxGantt from 'devextreme-vue/gantt';
@@ -112,7 +112,7 @@ Specifies whether to show or hide dependencies.
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Gantt from 'devextreme-react/gantt';
 

@@ -165,7 +165,7 @@ Users can search for the filter values in the header filter. Enable the **header
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import 'devexpress-gantt/dist/dx-gantt.css'; 
     
     import {
@@ -189,7 +189,7 @@ Users can search for the filter values in the header filter. Enable the **header
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import 'devexpress-gantt/dist/dx-gantt.css'; 
 
     import Gantt, {
@@ -386,7 +386,7 @@ The **Gantt** allows you to define initial filter settings in code. Specify the 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import 'devexpress-gantt/dist/dx-gantt.css'; 
     
     import {
@@ -410,7 +410,7 @@ The **Gantt** allows you to define initial filter settings in code. Specify the 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import 'devexpress-gantt/dist/dx-gantt.css'; 
 
     import Gantt, {

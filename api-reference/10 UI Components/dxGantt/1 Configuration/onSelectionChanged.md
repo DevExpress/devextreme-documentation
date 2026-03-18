@@ -79,7 +79,7 @@ The key of the row whose selection state was changed.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxGantt from 'devextreme-vue/gantt';
   
@@ -104,7 +104,7 @@ The key of the row whose selection state was changed.
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Gantt from 'devextreme-react/gantt';
 

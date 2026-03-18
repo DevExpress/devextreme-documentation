@@ -79,7 +79,7 @@ Configures validation properties.
         </DxGantt>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         import 'devexpress-gantt/dist/dx-gantt.css'; 
 
         import { 
@@ -102,7 +102,7 @@ Configures validation properties.
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import 'devexpress-gantt/dist/dx-gantt.css'; 
 
     import Gantt, { 

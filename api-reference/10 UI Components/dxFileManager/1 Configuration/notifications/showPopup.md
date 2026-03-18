@@ -60,7 +60,7 @@ Specifies whether to show the pop-up notification window.
     </template>
     
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
     import { DxFileManager, DxNotifications } from 'devextreme-vue/file-manager';
     

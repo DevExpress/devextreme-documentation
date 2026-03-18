@@ -89,7 +89,7 @@ The **insertTask** method does not update the following data fields in the data 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import 'devexpress-gantt/dist/dx-gantt.css';
 
     import DxGantt from 'devextreme-vue/gantt';
@@ -127,7 +127,7 @@ The **insertTask** method does not update the following data fields in the data 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Gantt from 'devextreme-react/gantt';
 

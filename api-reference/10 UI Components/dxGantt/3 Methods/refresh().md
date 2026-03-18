@@ -49,7 +49,7 @@ A Promise that is resolved after data is loaded.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import 'devexpress-gantt/dist/dx-gantt.css';
 
     import DxGantt from 'devextreme-vue/gantt';
@@ -84,7 +84,7 @@ A Promise that is resolved after data is loaded.
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Gantt from 'devextreme-react/gantt';
 

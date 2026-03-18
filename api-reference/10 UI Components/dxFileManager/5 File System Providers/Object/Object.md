@@ -122,7 +122,7 @@ The following code shows how to bind the FileManager to the **Object** file syst
     </template>
     
     <script>
-    import 'devextreme/dist/css/dx.light.css';     
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';     
     
     import { 
         DxFileManager
@@ -169,7 +169,7 @@ The following code shows how to bind the FileManager to the **Object** file syst
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import FileManager from 'devextreme-react/file-manager';
     import ObjectFileSystemProvider from 'devextreme/file_management/object_provider';
     

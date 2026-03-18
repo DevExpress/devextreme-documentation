@@ -70,7 +70,7 @@ You can also specify other column chooser settings, such as [mode](/api-referenc
 
     <!-- tab: App.tsx -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import CardView, { ColumnChooser, Position, Selection } from 'devextreme-react/card-view';
     import { employees } from './data.ts';
 

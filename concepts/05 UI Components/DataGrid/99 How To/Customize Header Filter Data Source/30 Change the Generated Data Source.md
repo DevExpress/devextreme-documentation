@@ -101,7 +101,7 @@ In the following code, the **postProcess** function adds a custom item to the ge
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         Dx{WidgetName},
@@ -137,7 +137,7 @@ In the following code, the **postProcess** function adds a custom item to the ge
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { {WidgetName}, Column, HeaderFilter } from 'devextreme-react/{widget-name}';
 

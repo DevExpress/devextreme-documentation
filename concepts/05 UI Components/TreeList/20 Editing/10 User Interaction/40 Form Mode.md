@@ -121,7 +121,7 @@ In the following code, the items with the specified **dataField** are simple ite
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxEditing,
@@ -152,7 +152,7 @@ In the following code, the items with the specified **dataField** are simple ite
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Editing,

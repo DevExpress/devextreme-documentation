@@ -40,7 +40,7 @@ The following code snippet shows how to supply sorting values with a field name:
     </template>
 
     <script setup>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
     </script>
 
@@ -48,7 +48,7 @@ The following code snippet shows how to supply sorting values with a field name:
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DataGrid, Column } from 'devextreme-react/data-grid';
 
@@ -124,7 +124,7 @@ The following code snippet shows how to use a function:
     </template>
 
     <script setup>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
 
     const calculateSortValue  = (rowData) => {
@@ -140,7 +140,7 @@ The following code snippet shows how to use a function:
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DataGrid, Column } from 'devextreme-react/data-grid';
 
@@ -212,7 +212,7 @@ Alternatively, adjust sorting with [sortingMethod](/api-reference/_hidden/GridBa
     </template>
 
     <script setup>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
 
     const sortingMethod = (value1, value2) => {
@@ -225,7 +225,7 @@ Alternatively, adjust sorting with [sortingMethod](/api-reference/_hidden/GridBa
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DataGrid, Column } from 'devextreme-react/data-grid';
 

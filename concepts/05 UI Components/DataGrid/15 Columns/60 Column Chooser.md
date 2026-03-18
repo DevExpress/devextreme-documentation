@@ -49,7 +49,7 @@ The column chooser allows a user to change the set of columns at runtime. It is 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxColumnChooser
@@ -69,7 +69,7 @@ The column chooser allows a user to change the set of columns at runtime. It is 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         ColumnChooser
@@ -156,7 +156,7 @@ Set a column's [allowHiding](/api-reference/_hidden/GridBaseColumn/allowHiding.m
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxColumnChooser,
@@ -178,7 +178,7 @@ Set a column's [allowHiding](/api-reference/_hidden/GridBaseColumn/allowHiding.m
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         ColumnChooser,
@@ -251,7 +251,7 @@ Call the [showColumnChooser()](/api-reference/10%20UI%20Components/GridBase/3%20
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
 
@@ -287,7 +287,7 @@ Call the [showColumnChooser()](/api-reference/10%20UI%20Components/GridBase/3%20
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
 

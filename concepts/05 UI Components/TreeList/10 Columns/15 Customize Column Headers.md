@@ -49,7 +49,7 @@ Specify the **columns**.[caption](/api-reference/_hidden/GridBaseColumn/caption.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxColumn
@@ -69,7 +69,7 @@ Specify the **columns**.[caption](/api-reference/_hidden/GridBaseColumn/caption.
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Column
@@ -169,7 +169,7 @@ If you need a more specific customization, define a custom template in the **col
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxColumn
@@ -188,7 +188,7 @@ If you need a more specific customization, define a custom template in the **col
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import TreeList, {
         Column
     } from 'devextreme-react/tree-list';
@@ -262,7 +262,7 @@ To hide column headers, assign **false** to the [showColumnHeaders](/api-referen
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
 
@@ -279,7 +279,7 @@ To hide column headers, assign **false** to the [showColumnHeaders](/api-referen
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList from 'devextreme-react/tree-list';
 

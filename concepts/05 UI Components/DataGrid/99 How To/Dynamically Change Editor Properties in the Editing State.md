@@ -95,7 +95,7 @@ Use the **editorOptions** parameter of [onEditorPreparing](/api-reference/10%20U
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, { 
         DxColumn,
@@ -128,7 +128,7 @@ Use the **editorOptions** parameter of [onEditorPreparing](/api-reference/10%20U
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, { 
         Column,

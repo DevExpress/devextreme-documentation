@@ -58,7 +58,7 @@ Assigning **true** to the **grouping**.[contextMenuEnabled](/api-reference/10%20
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         DxDataGrid,
@@ -80,7 +80,7 @@ Assigning **true** to the **grouping**.[contextMenuEnabled](/api-reference/10%20
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Grouping,
@@ -163,7 +163,7 @@ You can prevent a user from dragging columns to the group panel, in which case i
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         DxDataGrid,
@@ -183,7 +183,7 @@ You can prevent a user from dragging columns to the group panel, in which case i
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         GroupPanel
@@ -271,7 +271,7 @@ If a specific column should never take part in grouping, set its [allowGrouping]
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         DxDataGrid,
@@ -291,7 +291,7 @@ If a specific column should never take part in grouping, set its [allowGrouping]
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column

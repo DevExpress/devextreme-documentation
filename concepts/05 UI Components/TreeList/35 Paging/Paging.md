@@ -55,7 +55,7 @@ Paging improves the UI component's performance on large datasets because it rend
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxPaging
@@ -74,7 +74,7 @@ Paging improves the UI component's performance on large datasets because it rend
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Paging

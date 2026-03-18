@@ -74,7 +74,7 @@ Groups are sorted by values of a column they are grouped by. You can also sort t
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxSummary,
@@ -97,7 +97,7 @@ Groups are sorted by values of a column they are grouped by. You can also sort t
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Summary,
@@ -226,7 +226,7 @@ Summary-based sorting is applied when you group data by any column. If you need 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxSummary,
@@ -249,7 +249,7 @@ Summary-based sorting is applied when you group data by any column. If you need 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Summary,

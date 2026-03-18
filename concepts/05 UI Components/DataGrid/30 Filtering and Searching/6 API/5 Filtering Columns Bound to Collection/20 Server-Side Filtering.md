@@ -86,7 +86,7 @@ The following code example demonstrates how to bind the DataGrid to the [OData s
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxColumn,
@@ -123,7 +123,7 @@ The following code example demonstrates how to bind the DataGrid to the [OData s
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column, 

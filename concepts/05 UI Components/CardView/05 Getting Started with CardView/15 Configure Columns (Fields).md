@@ -64,7 +64,7 @@ The following code snippet restricts the CardView columns (fields) to `FullName`
 
     <!-- tab: App.tsx -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import CardView, { Column } from 'devextreme-react/card-view';
     import { employees } from './data.ts';
 

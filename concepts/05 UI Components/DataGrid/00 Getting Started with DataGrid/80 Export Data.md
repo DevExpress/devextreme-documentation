@@ -198,7 +198,7 @@ When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(optio
 
     <!-- tab: App.js -->
     import React, { useState } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import './App.css';
 
     import {

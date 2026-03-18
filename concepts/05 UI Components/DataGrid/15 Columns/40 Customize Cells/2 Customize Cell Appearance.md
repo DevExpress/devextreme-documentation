@@ -62,7 +62,7 @@ Remove the `e.column.dataField === "Speed"` condition to apply the appearance to
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
 
@@ -89,7 +89,7 @@ Remove the `e.column.dataField === "Speed"` condition to apply the appearance to
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
 
@@ -182,7 +182,7 @@ The example below shows how to use the [columns](/api-reference/10%20UI%20Compon
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxColumn
@@ -209,7 +209,7 @@ The example below shows how to use the [columns](/api-reference/10%20UI%20Compon
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column

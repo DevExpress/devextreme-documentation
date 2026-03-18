@@ -47,7 +47,7 @@ To specify cell focus order when a user navigates through DataGrid, call the [on
     </template>
     
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxDataGrid from 'devextreme-vue/data-grid';
     
     export default {
@@ -69,7 +69,7 @@ To specify cell focus order when a user navigates through DataGrid, call the [on
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DataGrid from 'devextreme-react/data-grid';
 
     const onFocusedCellChanging = (e) => {

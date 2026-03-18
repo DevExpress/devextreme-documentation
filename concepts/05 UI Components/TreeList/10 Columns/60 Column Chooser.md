@@ -49,7 +49,7 @@ The column chooser allows a user to change the set of columns at runtime. It is 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxColumnChooser
@@ -69,7 +69,7 @@ The column chooser allows a user to change the set of columns at runtime. It is 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         ColumnChooser
@@ -153,7 +153,7 @@ Set a column's [allowHiding](/api-reference/_hidden/GridBaseColumn/allowHiding.m
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxColumnChooser,
@@ -175,7 +175,7 @@ Set a column's [allowHiding](/api-reference/_hidden/GridBaseColumn/allowHiding.m
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         ColumnChooser,
@@ -245,7 +245,7 @@ Call the [showColumnChooser()](/api-reference/10%20UI%20Components/GridBase/3%20
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
 
@@ -280,7 +280,7 @@ Call the [showColumnChooser()](/api-reference/10%20UI%20Components/GridBase/3%20
 
     <!-- tab: App.js -->
     import React, { useRef } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import TreeList from 'devextreme-react/tree-list';
 
     export default function App() {

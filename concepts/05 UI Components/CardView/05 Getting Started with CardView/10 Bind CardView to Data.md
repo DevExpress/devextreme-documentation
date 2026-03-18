@@ -250,7 +250,7 @@ The CardView component can load and update data from different data source types
 
     <!-- tab: App.tsx -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import CardView from 'devextreme-react/card-view';
     import { employees } from './data.ts';
 

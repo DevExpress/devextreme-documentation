@@ -90,7 +90,7 @@ The following example demonstrates how to use the [onRowPrepared](/api-reference
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
 
@@ -119,7 +119,7 @@ The following example demonstrates how to use the [onRowPrepared](/api-reference
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
 

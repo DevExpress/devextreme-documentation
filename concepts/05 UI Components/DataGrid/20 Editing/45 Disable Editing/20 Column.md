@@ -66,7 +66,7 @@ Set a column's [allowEditing](/api-reference/_hidden/GridBaseColumn/allowEditing
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, { Column } from 'devextreme-react/data-grid';
 

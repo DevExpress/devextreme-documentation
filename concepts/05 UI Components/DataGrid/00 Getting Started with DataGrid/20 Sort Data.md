@@ -70,7 +70,7 @@ You can also set a column's [sortOrder](/api-reference/_hidden/GridBaseColumn/so
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         DataGrid,

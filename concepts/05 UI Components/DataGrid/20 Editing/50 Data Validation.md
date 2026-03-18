@@ -71,7 +71,7 @@ User input is validated against a set of [validation rules](/api-reference/10%20
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxColumn,
@@ -94,7 +94,7 @@ User input is validated against a set of [validation rules](/api-reference/10%20
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column,
@@ -178,7 +178,7 @@ The [onRowValidating](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configu
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
 
@@ -202,7 +202,7 @@ The [onRowValidating](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configu
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
 

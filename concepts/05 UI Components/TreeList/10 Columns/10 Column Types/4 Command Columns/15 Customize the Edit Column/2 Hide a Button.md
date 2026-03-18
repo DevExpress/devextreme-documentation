@@ -63,7 +63,7 @@ The **Add**, **Edit**, and **Delete** buttons can be hidden by omitting them whe
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxTreeList, {
         DxEditing,
         DxColumn,
@@ -89,7 +89,7 @@ The **Add**, **Edit**, and **Delete** buttons can be hidden by omitting them whe
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import TreeList, {
         Editing,
         Column,

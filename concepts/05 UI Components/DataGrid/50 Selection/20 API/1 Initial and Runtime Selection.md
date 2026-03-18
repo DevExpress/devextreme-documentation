@@ -59,7 +59,7 @@ Use the [selectedRowKeys](/api-reference/10%20UI%20Components/dxDataGrid/1%20Con
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
     import DataSource from 'devextreme/data/data_source';
@@ -92,7 +92,7 @@ Use the [selectedRowKeys](/api-reference/10%20UI%20Components/dxDataGrid/1%20Con
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
     import DataSource from 'devextreme/data/data_source';
@@ -191,7 +191,7 @@ The DataGrid provides two methods that select rows at runtime: [selectRows(keys,
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
 
@@ -218,7 +218,7 @@ The DataGrid provides two methods that select rows at runtime: [selectRows(keys,
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
 
@@ -301,7 +301,7 @@ To select all rows at once, call the [selectAll()](/api-reference/10%20UI%20Comp
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
 
@@ -334,7 +334,7 @@ To select all rows at once, call the [selectAll()](/api-reference/10%20UI%20Comp
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
 
@@ -412,7 +412,7 @@ Call the [getSelectedRowKeys()](/api-reference/10%20UI%20Components/dxDataGrid/3
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
 
@@ -448,7 +448,7 @@ Call the [getSelectedRowKeys()](/api-reference/10%20UI%20Components/dxDataGrid/3
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
 

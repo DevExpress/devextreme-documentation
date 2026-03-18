@@ -60,7 +60,7 @@ The TreeList UI component allows a user to add, delete and update data. Assign *
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxEditing,
@@ -81,7 +81,7 @@ The TreeList UI component allows a user to add, delete and update data. Assign *
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Editing,
@@ -155,7 +155,7 @@ With the TreeList you can edit data in several modes. Use the **editing**.[mode]
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxEditing
@@ -174,7 +174,7 @@ With the TreeList you can edit data in several modes. Use the **editing**.[mode]
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Editing

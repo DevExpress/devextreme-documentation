@@ -63,7 +63,7 @@ To make the filter row visible, assign **true** to the [filterRow](/api-referenc
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxColumn,
@@ -83,7 +83,7 @@ To make the filter row visible, assign **true** to the [filterRow](/api-referenc
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Column,
@@ -155,7 +155,7 @@ A user-specified filter is automatically applied with a delay by default. Altern
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxFilterRow
@@ -173,7 +173,7 @@ A user-specified filter is automatically applied with a delay by default. Altern
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         FilterRow
@@ -272,7 +272,7 @@ The set of available filter operations can be restricted using the [filterOperat
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxColumn,
@@ -305,7 +305,7 @@ The set of available filter operations can be restricted using the [filterOperat
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Column,

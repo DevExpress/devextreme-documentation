@@ -55,7 +55,7 @@ Specify the [remoteOperations](/api-reference/10%20UI%20Components/dxTreeList/1%
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxRemoteOperations
@@ -74,7 +74,7 @@ Specify the [remoteOperations](/api-reference/10%20UI%20Components/dxTreeList/1%
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         RemoteOperations

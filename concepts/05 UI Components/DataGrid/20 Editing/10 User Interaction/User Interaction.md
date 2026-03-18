@@ -64,7 +64,7 @@ Grid data can be edited in several modes. Set the **editing**.[mode](/api-refere
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxEditing,
@@ -85,7 +85,7 @@ Grid data can be edited in several modes. Set the **editing**.[mode](/api-refere
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Editing,

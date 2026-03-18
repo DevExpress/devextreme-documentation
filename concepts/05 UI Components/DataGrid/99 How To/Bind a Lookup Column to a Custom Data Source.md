@@ -102,7 +102,7 @@ In the following code snippet, `Author Name` is a [lookup column](/concepts/05%2
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxDataGrid, {
         DxColumn,
         DxLookup
@@ -143,7 +143,7 @@ In the following code snippet, `Author Name` is a [lookup column](/concepts/05%2
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column,
@@ -309,7 +309,7 @@ The following alternative **CustomStore** configuration delegates data processin
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxDataGrid, {
         DxColumn,
         DxLookup
@@ -374,7 +374,7 @@ The following alternative **CustomStore** configuration delegates data processin
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column,

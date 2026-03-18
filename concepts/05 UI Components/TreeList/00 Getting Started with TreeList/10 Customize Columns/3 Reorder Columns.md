@@ -86,7 +86,7 @@ To reorder columns, change their order in the **columns** array. Users can also 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         TreeList,

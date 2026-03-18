@@ -9,7 +9,7 @@ Configures the item context menu type.
 
 ---
 
-[note] When **menuMode** is *"slide"*, the List widget does not allow text selection within items.
+[note] When **menuMode** is *"slide"*, the List component does not allow text selection within items.
 
 #####See Also#####
 - [menuItems](/Documentation/ApiReference/UI_Components/dxList/Configuration/menuItems/)

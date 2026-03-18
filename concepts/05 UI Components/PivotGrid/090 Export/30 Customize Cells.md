@@ -77,7 +77,7 @@ For instance, to [outline (group)](https://support.microsoft.com/en-us/office/ou
     </template>
 
     <script setup lang="ts">
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxPivotGrid, DxPivotGridTypes } from 'devextreme-vue/pivot-grid';
     import { Workbook } from 'devextreme-exceljs-fork';
     import { saveAs } from 'file-saver-es';
@@ -106,7 +106,7 @@ For instance, to [outline (group)](https://support.microsoft.com/en-us/office/ou
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import PivotGrid, { PivotGridTypes } from 'devextreme-react/pivot-grid';
     import { Workbook } from 'devextreme-exceljs-fork';
     import { saveAs } from 'file-saver-es';

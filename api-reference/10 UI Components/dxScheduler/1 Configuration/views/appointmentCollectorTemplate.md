@@ -86,7 +86,7 @@ A template name or container.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxScheduler, DxView } from 'devextreme-vue/scheduler';
 
@@ -108,7 +108,7 @@ A template name or container.
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Scheduler, View } from 'devextreme-react/scheduler';
 

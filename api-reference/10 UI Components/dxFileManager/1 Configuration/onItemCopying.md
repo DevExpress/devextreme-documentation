@@ -95,7 +95,7 @@ The component executes the **onItemCopying** function when a user clicks **Copy*
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxFileManager from 'devextreme-vue/file-manager';
   

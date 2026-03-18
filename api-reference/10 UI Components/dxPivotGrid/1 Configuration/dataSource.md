@@ -105,7 +105,7 @@ Use one of the following extensions to enable the server to process data accordi
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import CustomStore from 'devextreme/data/custom_store';
         import { createStore } from 'devextreme-aspnet-data-nojquery';
@@ -135,7 +135,7 @@ Use one of the following extensions to enable the server to process data accordi
 
         <!-- tab: App.js -->
         import React from 'react';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import CustomStore from 'devextreme/data/custom_store';
         import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';

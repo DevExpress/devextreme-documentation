@@ -85,7 +85,7 @@ Specifies the request headers.
     </template>
     
     <script>
-    import 'devextreme/dist/css/dx.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
     
     import { DxFileManager } from 'devextreme-vue/file-manager';
     
@@ -115,7 +115,7 @@ Specifies the request headers.
     <!-- tab: App.js -->
     import React from 'react';
     
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
     import FileManager from 'devextreme-react/file-manager';
     import RemoteFileSystemProvider from 'devextreme/file_management/remote_provider';

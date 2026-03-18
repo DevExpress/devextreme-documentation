@@ -109,7 +109,7 @@ The data object, which is sent back from the server, contains attributes that st
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
     
     import { DxFileManager } from 'devextreme-vue/file-manager';
 
@@ -136,7 +136,7 @@ The data object, which is sent back from the server, contains attributes that st
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FileManager from 'devextreme-react/file-manager';
     import RemoteFileSystemProvider from 'devextreme/file_management/remote_provider';

@@ -123,7 +123,7 @@ The component executes the **onFileUploading** function when a user clicks **Ope
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxFileManager from 'devextreme-vue/file-manager';
   

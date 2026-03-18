@@ -130,7 +130,7 @@ An edit mode for recurring appointments.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxScheduler from 'devextreme-vue/scheduler';
     import { appointments } from './data.js';
 

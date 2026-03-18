@@ -94,7 +94,7 @@ Use the **Upload Files** [context menu](/api-reference/10%20UI%20Components/dxFi
     </template>
 
     <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import { 
             DxFileManager

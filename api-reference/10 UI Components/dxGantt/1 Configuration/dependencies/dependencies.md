@@ -204,7 +204,7 @@ Use the [dataSource](/api-reference/10%20UI%20Components/dxGantt/1%20Configurati
         </DxGantt>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         import 'devexpress-gantt/dist/dx-gantt.css'; 
 
         import { 
@@ -247,7 +247,7 @@ Use the [dataSource](/api-reference/10%20UI%20Components/dxGantt/1%20Configurati
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import 'devexpress-gantt/dist/dx-gantt.css'; 
 
     import Gantt, { 

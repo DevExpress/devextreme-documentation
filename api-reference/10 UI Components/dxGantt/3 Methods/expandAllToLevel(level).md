@@ -51,7 +51,7 @@ The **expandAllToLevel** method first collapses all expanded tasks and then expa
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import 'devexpress-gantt/dist/dx-gantt.css';
 
     import DxGantt from 'devextreme-vue/gantt';
@@ -86,7 +86,7 @@ The **expandAllToLevel** method first collapses all expanded tasks and then expa
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Gantt from 'devextreme-react/gantt';
 

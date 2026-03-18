@@ -58,7 +58,7 @@ Each path part has each own key. For example, path "directory1/directory2" has t
         </DxFileManager>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.light.css';    
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';    
         
         import {
             DxFileManager
@@ -81,7 +81,7 @@ Each path part has each own key. For example, path "directory1/directory2" has t
     <!-- tab: App.js -->
     import React from 'react';
     
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FileManager from 'devextreme-react/file-manager';
     

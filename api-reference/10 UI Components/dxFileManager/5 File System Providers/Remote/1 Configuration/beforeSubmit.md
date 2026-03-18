@@ -89,7 +89,7 @@ Custom data (key-value pairs) that are sent to the server with the request.
     </template>
     
     <script>
-    import 'devextreme/dist/css/dx.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
     
     import { DxFileManager } from 'devextreme-vue/file-manager';
     
@@ -119,7 +119,7 @@ Custom data (key-value pairs) that are sent to the server with the request.
     <!-- tab: App.js -->
     import React from 'react';
     
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
     import FileManager from 'devextreme-react/file-manager';
     import RemoteFileSystemProvider from 'devextreme/file_management/remote_provider';

@@ -88,7 +88,7 @@ TreeList columns have equal widths (the default setting). You can set each colum
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         TreeList,

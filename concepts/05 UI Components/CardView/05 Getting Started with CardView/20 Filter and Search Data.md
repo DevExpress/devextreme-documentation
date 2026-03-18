@@ -49,7 +49,7 @@ In this tutorial, the header filter and the search panel are displayed:
 
     <!-- tab: App.tsx -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import CardView, { HeaderFilter, SearchPanel } from 'devextreme-react/card-view';
     import { employees } from './data.ts';
 

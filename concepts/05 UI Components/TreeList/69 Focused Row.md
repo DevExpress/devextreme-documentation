@@ -77,7 +77,7 @@ You can use the [focusedRowKey](/api-reference/10%20UI%20Components/GridBase/1%2
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
 
@@ -93,7 +93,7 @@ You can use the [focusedRowKey](/api-reference/10%20UI%20Components/GridBase/1%2
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList from 'devextreme-react/tree-list';
 

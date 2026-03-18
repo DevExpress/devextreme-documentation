@@ -63,7 +63,7 @@ In the following code, a CSS class is added to the **Save** button. The **Add**,
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxTreeList, {
         DxColumn,
         DxButton
@@ -87,7 +87,7 @@ In the following code, a CSS class is added to the **Save** button. The **Add**,
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import TreeList, {
         Column,
         Button

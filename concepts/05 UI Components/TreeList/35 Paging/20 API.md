@@ -39,7 +39,7 @@ Call the [pageCount()](/api-reference/10%20UI%20Components/dxTreeList/3%20Method
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
 
@@ -60,7 +60,7 @@ Call the [pageCount()](/api-reference/10%20UI%20Components/dxTreeList/3%20Method
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList from 'devextreme-react/tree-list';
 
@@ -141,7 +141,7 @@ The TreeList also provides the [pageIndex(newIndex)](/api-reference/10%20UI%20Co
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxPaging
@@ -175,7 +175,7 @@ The TreeList also provides the [pageIndex(newIndex)](/api-reference/10%20UI%20Co
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Paging

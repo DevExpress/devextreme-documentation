@@ -76,7 +76,7 @@ The code below configures a group summary that counts grid records in each group
 
     <!-- tab: App.js -->
     import React, { useState } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import './App.css';
 
     import {

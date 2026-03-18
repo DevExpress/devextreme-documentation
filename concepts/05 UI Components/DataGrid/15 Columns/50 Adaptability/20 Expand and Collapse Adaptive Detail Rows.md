@@ -43,7 +43,7 @@ You can call the [expandAdaptiveDetailRow(key)](/api-reference/10%20UI%20Compone
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
 
@@ -77,7 +77,7 @@ You can call the [expandAdaptiveDetailRow(key)](/api-reference/10%20UI%20Compone
 
     <!-- tab: App.js -->
     import React, { useRef } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DataGrid from 'devextreme-react/data-grid';
 
     export default function App() {

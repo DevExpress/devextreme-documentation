@@ -62,7 +62,7 @@ The [cellValue(rowIndex, visibleColumnIndex, value)](/api-reference/10%20UI%20Co
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
     import DxButton from 'devextreme-vue/button';
@@ -98,7 +98,7 @@ The [cellValue(rowIndex, visibleColumnIndex, value)](/api-reference/10%20UI%20Co
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
     import Button from 'devextreme-react/button';
@@ -218,7 +218,7 @@ You can check if there are any unsaved changes by calling the [hasEditData()](/a
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
     import DxButton from 'devextreme-vue/button';
@@ -261,7 +261,7 @@ You can check if there are any unsaved changes by calling the [hasEditData()](/a
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
     import Button from 'devextreme-react/button';

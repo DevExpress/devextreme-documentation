@@ -10,8 +10,8 @@ Specifies how users delete items.
 ---
 [note]
 
-- If an [item context menu](/concepts/05%20UI%20Components/List/40%20Item%20Context%20Menu.md '/Documentation/Guide/UI_Components/List/Item_Context_Menu/') is configured, List adds a delete button to the context menu and ignores this property. To specify how users access the context menu, configure [menuMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/menuMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#menuMode').
-- When **itemDeleteMode** is *"swipe"* or *"slideItem"*, List does not allow text selection within items.
+- If an [item context menu](/concepts/05%20UI%20Components/List/40%20Item%20Context%20Menu.md '/Documentation/Guide/UI_Components/List/Item_Context_Menu/') is configured, the List widget adds a delete button to the context menu and ignores this property. To specify how users access the context menu, configure [menuMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/menuMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#menuMode').
+- When **itemDeleteMode** is *"swipe"* or *"slideItem"*, the List widget does not allow text selection within items.
 
 [/note]
 

@@ -96,7 +96,7 @@ In this tutorial, we use the [XmlaStore](/api-reference/30%20Data%20Layer/XmlaSt
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxPivotGrid } from 'devextreme-vue/pivot-grid';
     import AdventureWorksService from './adventureworks.service';
@@ -134,7 +134,7 @@ In this tutorial, we use the [XmlaStore](/api-reference/30%20Data%20Layer/XmlaSt
     }
 
     <!-- tab: App.js -->
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import AdventureWorksService from './adventureworks.service';
     import { PivotGrid } from 'devextreme-react/pivot-grid';

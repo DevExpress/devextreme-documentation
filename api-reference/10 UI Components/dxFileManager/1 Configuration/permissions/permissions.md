@@ -78,7 +78,7 @@ Specifies actions that a user is allowed to perform on files and directories.
     </template>
     
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
     import { DxFileManager, DxPermissions } from 'devextreme-vue/file-manager';
     

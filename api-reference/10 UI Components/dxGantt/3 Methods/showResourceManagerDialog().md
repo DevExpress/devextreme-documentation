@@ -75,7 +75,7 @@ Invokes the "Resource Manager" dialog.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxGantt from 'devextreme-vue/gantt';
 
@@ -96,7 +96,7 @@ Invokes the "Resource Manager" dialog.
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import Gantt from 'devextreme-react/gantt';
 
     const App = () => {

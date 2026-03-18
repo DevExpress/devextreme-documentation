@@ -94,7 +94,7 @@ Select a file/directory and click the **Rename** [context menu](/api-reference/1
     </template>
 
     <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import { 
             DxFileManager

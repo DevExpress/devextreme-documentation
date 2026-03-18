@@ -147,7 +147,7 @@ If you delete a recurring appointment from the data source, all its occurrences 
         </div>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
     import DxButton from 'devextreme-vue/button';
@@ -194,7 +194,7 @@ If you delete a recurring appointment from the data source, all its occurrences 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import Scheduler from 'devextreme-react/scheduler';
     import Button from 'devextreme-react/button';
     import { appointments } from './data.js';

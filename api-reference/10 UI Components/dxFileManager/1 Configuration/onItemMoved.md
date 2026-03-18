@@ -100,7 +100,7 @@ Select a file/folder and use the **Move To** [context menu](/api-reference/10%20
     </template>
 
     <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import { 
             DxFileManager

@@ -87,7 +87,7 @@ The file system items.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
     import { DxFileManager } from 'devextreme-vue/file-manager';
     import CustomFileSystemProvider from 'devextreme/file_management/custom_provider';
 
@@ -117,7 +117,7 @@ The file system items.
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import FileManager from 'devextreme-react/file-manager';
     import CustomFileSystemProvider from 'devextreme/file_management/custom_provider';
     

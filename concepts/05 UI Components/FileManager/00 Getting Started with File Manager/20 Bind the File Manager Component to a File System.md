@@ -125,7 +125,7 @@ In the example below, the FileManager UI component displays hierarchical data st
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';     
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';     
 
     import { 
         DxFileManager
@@ -173,7 +173,7 @@ In the example below, the FileManager UI component displays hierarchical data st
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FileManager from 'devextreme-react/file-manager';
     import { fileItems } from './data.js';

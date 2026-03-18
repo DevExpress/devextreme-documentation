@@ -97,7 +97,7 @@ The text the cell should display.
     </template>
     
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
     import { DxGantt, DxColumn } from "devextreme-vue/gantt";
     
@@ -119,7 +119,7 @@ The text the cell should display.
     <!-- tab: App.js -->
     import React from 'react';
     
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
     import Gantt, { Column } from "devextreme-react/gantt";
     

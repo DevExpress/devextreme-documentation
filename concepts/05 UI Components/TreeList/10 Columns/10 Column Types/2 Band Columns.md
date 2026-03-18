@@ -56,7 +56,7 @@ To set up this layout, describe the hierarchy of columns directly in an object o
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxTreeList, {
         DxColumn
     } from 'devextreme-vue/tree-list';
@@ -74,7 +74,7 @@ To set up this layout, describe the hierarchy of columns directly in an object o
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Column
@@ -159,7 +159,7 @@ If you use the [customizeColumns](/api-reference/10%20UI%20Components/dxTreeList
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxTreeList from 'devextreme-vue/tree-list';
 
     export default {
@@ -187,7 +187,7 @@ If you use the [customizeColumns](/api-reference/10%20UI%20Components/dxTreeList
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import TreeList from 'devextreme-react/tree-list';
 
     const customizeColumns = (columns) => {
@@ -291,7 +291,7 @@ Band columns support hierarchies of any nesting level making the following struc
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxTreeList, {
         DxColumn
     } from 'devextreme-vue/tree-list';
@@ -309,7 +309,7 @@ Band columns support hierarchies of any nesting level making the following struc
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import TreeList, {
         Column
     } from 'devextreme-react/tree-list';

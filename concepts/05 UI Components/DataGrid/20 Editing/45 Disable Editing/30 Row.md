@@ -75,7 +75,7 @@ To disable data editing within a specific row, follow the steps below:
 
     <!-- tab: App.js -->
     import React, { useCallback } from "react";
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DataGrid } from 'devextreme-react/data-grid';
 
@@ -182,7 +182,7 @@ DataGrid's [editing mode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Con
 
     <!-- tab: App.js -->
     import React, { useCallback } from "react";
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, { Column, Button } from 'devextreme-react/data-grid';
 

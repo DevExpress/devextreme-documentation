@@ -75,7 +75,7 @@ The TreeList UI component has an integrated filter builder that can be invoked u
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
     import DxFilterBuilder from 'devextreme-vue/filter-builder';
@@ -108,7 +108,7 @@ The TreeList UI component has an integrated filter builder that can be invoked u
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList from 'devextreme-react/tree-list';
     import FilterBuilder from 'devextreme-react/filter-builder';
@@ -211,7 +211,7 @@ Then, add a button that updates a filter of the TreeList's data source according
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
     import DxFilterBuilder from 'devextreme-vue/filter-builder';
@@ -253,7 +253,7 @@ Then, add a button that updates a filter of the TreeList's data source according
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList from 'devextreme-react/tree-list';
     import FilterBuilder from 'devextreme-react/filter-builder';

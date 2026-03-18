@@ -60,7 +60,7 @@ The DataGrid displays all columns from the [columns](/api-reference/10%20UI%20Co
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         DataGrid,

@@ -61,7 +61,7 @@ In the following code, a CSS class is added to the **Save** button. The **Edit**
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxColumn,
@@ -87,7 +87,7 @@ In the following code, a CSS class is added to the **Save** button. The **Edit**
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column,
@@ -218,7 +218,7 @@ You can also declare custom logic in the button configuration. For instance, the
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column,

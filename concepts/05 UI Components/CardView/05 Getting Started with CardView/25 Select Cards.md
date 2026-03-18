@@ -38,7 +38,7 @@ CardView supports single and multiple selection modes. Use the **selection**.[mo
 
     <!-- tab: App.tsx -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import CardView, { Selection } from 'devextreme-react/card-view';
     import { employees } from './data.ts';
 

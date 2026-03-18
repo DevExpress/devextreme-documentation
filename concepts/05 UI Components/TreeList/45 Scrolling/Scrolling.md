@@ -52,7 +52,7 @@ Use the **scrolling**.[mode](/api-reference/10%20UI%20Components/dxTreeList/1%20
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxScrolling
@@ -71,7 +71,7 @@ Use the **scrolling**.[mode](/api-reference/10%20UI%20Components/dxTreeList/1%20
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Scrolling
@@ -138,7 +138,7 @@ The TreeList adapts its scrolling mechanism to the current platform. It utilizes
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxScrolling
@@ -157,7 +157,7 @@ The TreeList adapts its scrolling mechanism to the current platform. It utilizes
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Scrolling
@@ -234,7 +234,7 @@ The current platform determines the native scrolling settings and you cannot adj
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxScrolling
@@ -253,7 +253,7 @@ The current platform determines the native scrolling settings and you cannot adj
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Scrolling

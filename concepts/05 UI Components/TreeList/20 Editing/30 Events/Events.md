@@ -55,7 +55,7 @@ The TreeList UI component raises events before and after a row is inserted, upda
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
 
@@ -76,7 +76,7 @@ The TreeList UI component raises events before and after a row is inserted, upda
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList from 'devextreme-react/tree-list';
 
@@ -168,7 +168,7 @@ In addition, the TreeList raises the [initNewRow](/api-reference/10%20UI%20Compo
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
 
@@ -190,7 +190,7 @@ In addition, the TreeList raises the [initNewRow](/api-reference/10%20UI%20Compo
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList from 'devextreme-react/tree-list';
 

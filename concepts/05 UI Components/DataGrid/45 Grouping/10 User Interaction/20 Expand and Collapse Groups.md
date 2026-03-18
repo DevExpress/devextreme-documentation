@@ -52,7 +52,7 @@ Set the **grouping**.[expandMode](/api-reference/10%20UI%20Components/dxDataGrid
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         DxDataGrid,
@@ -72,7 +72,7 @@ Set the **grouping**.[expandMode](/api-reference/10%20UI%20Components/dxDataGrid
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Grouping,
@@ -146,7 +146,7 @@ You can prevent a user from expanding and collapsing groups by assigning **false
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         DxDataGrid,
@@ -166,7 +166,7 @@ You can prevent a user from expanding and collapsing groups by assigning **false
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Grouping,

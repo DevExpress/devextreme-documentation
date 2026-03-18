@@ -117,7 +117,7 @@ You can use [templates](/api-reference/50%20Common/Object%20Structures/template 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         Dx{WidgetName},
@@ -159,7 +159,7 @@ You can use [templates](/api-reference/50%20Common/Object%20Structures/template 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { {WidgetName}, Column, HeaderFilter } from 'devextreme-react/{widget-name}';
 

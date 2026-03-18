@@ -55,7 +55,7 @@ To make the search panel visible, assign **true** to the [searchPanel](/api-refe
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxColumn,
@@ -75,7 +75,7 @@ To make the search panel visible, assign **true** to the [searchPanel](/api-refe
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Column,
@@ -156,7 +156,7 @@ Use the **searchPanel**.[text](/api-reference/10%20UI%20Components/GridBase/1%20
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxSearchPanel
@@ -184,7 +184,7 @@ Use the **searchPanel**.[text](/api-reference/10%20UI%20Components/GridBase/1%20
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         SearchPanel

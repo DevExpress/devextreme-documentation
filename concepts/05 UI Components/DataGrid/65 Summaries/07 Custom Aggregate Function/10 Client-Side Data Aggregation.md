@@ -69,7 +69,7 @@ Follow the steps below to configure custom client-side data aggregation.
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DxDataGrid, { 
             DxSummary,
@@ -90,7 +90,7 @@ Follow the steps below to configure custom client-side data aggregation.
 
         <!-- tab: App.js -->
         import React from 'react';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DataGrid, { 
             Summary,

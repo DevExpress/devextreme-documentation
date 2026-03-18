@@ -44,7 +44,7 @@ The TreeList UI component supports single and multiple row selection. Use the **
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxSelection
@@ -63,7 +63,7 @@ The TreeList UI component supports single and multiple row selection. Use the **
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Selection
@@ -137,7 +137,7 @@ You can disable the latter feature by setting the **selection**.[allowSelectAll]
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxSelection
@@ -156,7 +156,7 @@ You can disable the latter feature by setting the **selection**.[allowSelectAll]
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Selection
@@ -229,7 +229,7 @@ Selection is non-recursive by default, that is, only the clicked row is selected
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxSelection
@@ -248,7 +248,7 @@ Selection is non-recursive by default, that is, only the clicked row is selected
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Selection

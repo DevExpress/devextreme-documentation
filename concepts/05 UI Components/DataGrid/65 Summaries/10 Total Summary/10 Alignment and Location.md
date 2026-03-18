@@ -65,7 +65,7 @@ A summary item is under the [column providing data](/api-reference/10%20UI%20Com
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxSummary,
@@ -86,7 +86,7 @@ A summary item is under the [column providing data](/api-reference/10%20UI%20Com
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Summary,

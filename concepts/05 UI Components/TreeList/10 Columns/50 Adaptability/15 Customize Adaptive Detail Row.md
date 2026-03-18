@@ -53,7 +53,7 @@ Adaptive detail rows contain the [Form](/api-reference/10%20UI%20Components/dxFo
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList from 'devextreme-vue/tree-list';
 
@@ -78,7 +78,7 @@ Adaptive detail rows contain the [Form](/api-reference/10%20UI%20Components/dxFo
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList from 'devextreme-react/tree-list';
 

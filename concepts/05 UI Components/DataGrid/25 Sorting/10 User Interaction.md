@@ -44,7 +44,7 @@ With the DataGrid UI component, a user can sort by single and multiple columns. 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxDataGrid, DxSorting } from 'devextreme-vue/data-grid';
 
@@ -61,7 +61,7 @@ With the DataGrid UI component, a user can sort by single and multiple columns. 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DataGrid, Sorting } from 'devextreme-react/data-grid';
 
@@ -135,7 +135,7 @@ To disable sorting in the whole UI component, set the **sorting**.**mode** prope
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
 
@@ -152,7 +152,7 @@ To disable sorting in the whole UI component, set the **sorting**.**mode** prope
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DataGrid, Column } from 'devextreme-react/data-grid';
 

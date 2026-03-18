@@ -79,7 +79,7 @@ The master-detail interface becomes available after you specify the detail secti
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxMasterDetail
@@ -98,7 +98,7 @@ The master-detail interface becomes available after you specify the detail secti
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         MasterDetail

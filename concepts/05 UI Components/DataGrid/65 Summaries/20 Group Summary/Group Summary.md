@@ -89,7 +89,7 @@ Configure each summary item in the **summary**.[groupItems](/api-reference/10%20
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxColumn,
@@ -112,7 +112,7 @@ Configure each summary item in the **summary**.[groupItems](/api-reference/10%20
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column, 

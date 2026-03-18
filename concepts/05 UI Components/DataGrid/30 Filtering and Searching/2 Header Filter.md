@@ -51,7 +51,7 @@ Assign **true** to the [headerFilter](/api-reference/10%20UI%20Components/GridBa
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxColumn,
@@ -71,7 +71,7 @@ Assign **true** to the [headerFilter](/api-reference/10%20UI%20Components/GridBa
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column,
@@ -171,7 +171,7 @@ A user can change the applied filter by including or excluding values. Use a col
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxColumn
@@ -201,7 +201,7 @@ A user can change the applied filter by including or excluding values. Use a col
 
     <!-- tab: App.js -->
     import React, { useState, useCallback } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column
@@ -325,7 +325,7 @@ You can use the **headerFilter.search.enabled** property to enable searching in 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxColumn,
@@ -347,7 +347,7 @@ You can use the **headerFilter.search.enabled** property to enable searching in 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column,

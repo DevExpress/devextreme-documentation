@@ -38,7 +38,7 @@ Use the [addRow()](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/ad
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
 
@@ -59,7 +59,7 @@ Use the [addRow()](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/ad
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
 
@@ -142,7 +142,7 @@ You can specify initial values for a newly added row in the [onInitNewRow](/api-
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxColumn
@@ -166,7 +166,7 @@ You can specify initial values for a newly added row in the [onInitNewRow](/api-
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column

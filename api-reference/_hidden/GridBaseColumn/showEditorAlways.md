@@ -61,7 +61,7 @@ This property has the following specifics:
 
 - The **cellInfo.setValue** function does not work when **showEditorAlways** is **true** and the component is not in edit mode.
 
-- To ensure {WidgetName} initializes editors with the correct dimensions when **showEditorAlways** is enabled for a column, set [renderAsync]({basewidgetpath}/Configuration/#renderAsync) to `true`.
+- To ensure {WidgetName} initializes editors with the correct dimensions when **showEditorAlways** is enabled for a column, set [renderAsync](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/renderAsync.md '{basewidgetpath}/Configuration/#renderAsync') to `true`.
 
 ---
 

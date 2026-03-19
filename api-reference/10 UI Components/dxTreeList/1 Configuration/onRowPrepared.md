@@ -63,12 +63,17 @@ Values displayed in the row cells.
     $('#{widget-name}-container').dx{WidgetName}({
         onRowPrepared(e) {
             if (e.rowType === 'group' && !e.isExpanded) {
-                $(e.rowElement).addClass('collapsed-group-row');
+                e.rowElement.addClass('collapsed-group-row');
             }
         },
     })
 
 ##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-{widget-name}
+        (onRowPrepared)="handleRowPrepared($event)"
+    ></dx-{widget-name}>
 
     <!-- tab: app.component.ts -->
     import { type Dx{WidgetName}Types } from 'devextreme-angular/ui/{widget-name}';

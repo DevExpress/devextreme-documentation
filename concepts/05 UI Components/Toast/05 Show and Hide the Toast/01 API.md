@@ -70,7 +70,7 @@ To show or hide the Toast programmatically, bind the [visible](/api-reference/10
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxToast } from 'devextreme-vue/toast';
     import { DxButton } from 'devextreme-vue/button';
@@ -98,7 +98,7 @@ To show or hide the Toast programmatically, bind the [visible](/api-reference/10
 To show or hide the Toast programmatically, bind the [visible](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxToast/Configuration/#visible') property of the Toast to a state property. After that, change the latter property, and the Toast will appear or disappear.
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Toast } from 'devextreme-react/toast';
     import { Button } from 'devextreme-react/button';

@@ -44,7 +44,7 @@ By default, the ColorBox does _not_ allow an end user to control the transparenc
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxColorBox from 'devextreme-vue/color-box';
 
@@ -64,7 +64,7 @@ By default, the ColorBox does _not_ allow an end user to control the transparenc
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import ColorBox from 'devextreme-react/color-box';
 

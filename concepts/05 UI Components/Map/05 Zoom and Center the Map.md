@@ -53,7 +53,7 @@ To zoom the Map, set the [zoom](/api-reference/10%20UI%20Components/dxMap/1%20Co
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxMap } from 'devextreme-vue/map';
 
@@ -72,7 +72,7 @@ To zoom the Map, set the [zoom](/api-reference/10%20UI%20Components/dxMap/1%20Co
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Map } from 'devextreme-react/map';
 
@@ -151,7 +151,7 @@ Note that the UI component can automatically change the **center** and **zoom** 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxMap } from 'devextreme-vue/map';
 
@@ -174,7 +174,7 @@ Note that the UI component can automatically change the **center** and **zoom** 
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Map } from 'devextreme-react/map';
 

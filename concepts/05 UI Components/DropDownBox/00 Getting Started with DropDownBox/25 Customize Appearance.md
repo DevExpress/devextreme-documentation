@@ -74,7 +74,7 @@ Use the [buttons](/api-reference/10%20UI%20Components/dxDropDownEditor/1%20Confi
     <!-- tab: App.js -->
     import React, { useState, useRef, useCallback } from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DropDownBox } from 'devextreme-react/drop-down-box';
     import { List } from "devextreme-react/list";

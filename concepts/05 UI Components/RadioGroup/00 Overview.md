@@ -52,7 +52,7 @@ The following code adds a simple RadioGroup to your page. Here, the [value](/api
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxRadioGroup } from 'devextreme-vue/radio-group';
 
@@ -71,7 +71,7 @@ The following code adds a simple RadioGroup to your page. Here, the [value](/api
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { RadioGroup } from 'devextreme-react/radio-group';
 
@@ -154,7 +154,7 @@ If your data is an array of objects, bind it to the RadioGroup using the [displa
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxRadioGroup } from 'devextreme-vue/radio-group';
 
@@ -181,7 +181,7 @@ If your data is an array of objects, bind it to the RadioGroup using the [displa
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { RadioGroup } from 'devextreme-react/radio-group';
 
@@ -261,7 +261,7 @@ The RadioGroup UI component supports horizontal (default for tablets) and vertic
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxRadioGroup } from 'devextreme-vue/radio-group';
 
@@ -280,7 +280,7 @@ The RadioGroup UI component supports horizontal (default for tablets) and vertic
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { RadioGroup } from 'devextreme-react/radio-group';
 

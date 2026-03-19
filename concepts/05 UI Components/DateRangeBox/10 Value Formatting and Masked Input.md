@@ -49,7 +49,7 @@ If [useMaskBehavior](/api-reference/10%20UI%20Components/DateBoxBase/1%20Configu
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDateRangeBox from 'devextreme-vue/date-range-box';
 
@@ -70,7 +70,7 @@ If [useMaskBehavior](/api-reference/10%20UI%20Components/DateBoxBase/1%20Configu
     </template>
 
     <script setup>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDateRangeBox from 'devextreme-vue/date-range-box';
     // ...
@@ -81,7 +81,7 @@ If [useMaskBehavior](/api-reference/10%20UI%20Components/DateBoxBase/1%20Configu
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DateRangeBox from 'devextreme-react/date-range-box';
 

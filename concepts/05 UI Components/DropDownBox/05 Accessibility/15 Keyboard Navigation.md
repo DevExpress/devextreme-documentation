@@ -59,7 +59,7 @@ Use the [registerKeyHandler(key, handler)](/api-reference/10%20UI%20Components/W
         <DxDropDownBox :ref="myDropDownBoxRef" />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDropDownBox from 'devextreme-vue/{widget-name}';
 
@@ -94,7 +94,7 @@ Use the [registerKeyHandler(key, handler)](/api-reference/10%20UI%20Components/W
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
     import { DropDownBox } from 'devextreme-react/{widget-name}';
 

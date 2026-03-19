@@ -57,7 +57,7 @@ To add routes at design-time, pass an array of objects to the [routes](/api-refe
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxMap } from 'devextreme-vue/map';
 
@@ -83,7 +83,7 @@ To add routes at design-time, pass an array of objects to the [routes](/api-refe
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Map } from 'devextreme-react/map';
 
@@ -223,7 +223,7 @@ To add or remove a route at runtime, bind the **routes** property of the Map to 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxMap } from 'devextreme-vue/map';
     import { DxButton } from 'devextreme-vue/button';
@@ -266,7 +266,7 @@ To add or remove a route at runtime, bind the **routes** property of the Map to 
 To add or remove a route at runtime, bind the **routes** property of the Map to a state property.
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Map } from 'devextreme-react/map';
     import { Button } from 'devextreme-react/button';

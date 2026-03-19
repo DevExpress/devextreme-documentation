@@ -49,7 +49,7 @@ The DateBox UI component allows an end user to pick or type a value. To specify 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDateBox from 'devextreme-vue/date-box';
 
@@ -69,7 +69,7 @@ The DateBox UI component allows an end user to pick or type a value. To specify 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DateBox from 'devextreme-react/date-box';
 

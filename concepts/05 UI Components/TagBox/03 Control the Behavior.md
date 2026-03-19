@@ -56,7 +56,7 @@ By default, the TagBox closes the drop-down list _immediately_ after a user sele
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
 
@@ -80,7 +80,7 @@ By default, the TagBox closes the drop-down list _immediately_ after a user sele
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';
 
@@ -162,7 +162,7 @@ When selected items overflow the input field, they are arranged in several lines
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
 
@@ -186,7 +186,7 @@ When selected items overflow the input field, they are arranged in several lines
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';
 
@@ -267,7 +267,7 @@ By default, selected items stay in the drop-down list. If they should be hidden 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
 
@@ -291,7 +291,7 @@ By default, selected items stay in the drop-down list. If they should be hidden 
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';
 
@@ -372,7 +372,7 @@ The TagBox allows a user to clear selection in one click on the **Clear** button
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
 
@@ -396,7 +396,7 @@ The TagBox allows a user to clear selection in one click on the **Clear** button
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';
 

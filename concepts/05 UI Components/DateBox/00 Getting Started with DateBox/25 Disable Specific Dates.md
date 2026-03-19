@@ -125,7 +125,7 @@ To prevent users from setting specific dates, use the [disabledDates](/api-refer
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxDateBox } from 'devextreme-vue/date-box';
     
@@ -173,7 +173,7 @@ To prevent users from setting specific dates, use the [disabledDates](/api-refer
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DateBox } from 'devextreme-react/date-box';
 

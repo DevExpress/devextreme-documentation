@@ -55,7 +55,7 @@ The code below adds the Map UI component to your page. The Map is [centered](/ap
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxMap } from 'devextreme-vue/map';
 
@@ -74,7 +74,7 @@ The code below adds the Map UI component to your page. The Map is [centered](/ap
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Map } from 'devextreme-react/map';
 

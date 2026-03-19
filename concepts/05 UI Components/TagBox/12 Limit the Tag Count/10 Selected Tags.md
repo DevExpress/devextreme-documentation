@@ -108,7 +108,7 @@ The following code shows the [onValueChanged](/api-reference/10%20UI%20Component
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
     import { DxTooltip } from 'devextreme-vue/tooltip';
@@ -147,7 +147,7 @@ The following code shows the [onValueChanged](/api-reference/10%20UI%20Component
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';
     import { Tooltip } from 'devextreme-react/tooltip';

@@ -66,7 +66,7 @@ When the Popover is shown, the area beneath it can be shaded. To enable this beh
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxPopover } from 'devextreme-vue/popover';
 
@@ -80,7 +80,7 @@ When the Popover is shown, the area beneath it can be shaded. To enable this beh
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Popover } from 'devextreme-react/popover';
 

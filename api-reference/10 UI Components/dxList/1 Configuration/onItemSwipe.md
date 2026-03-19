@@ -14,7 +14,7 @@ Information about the event.
 The UI component's instance.
 
 ##### field(e.direction): String
-The direction in which the item is swiped.
+The item swipe direction.
 
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
@@ -29,8 +29,11 @@ The swiped item's data.
 #include common-ref-elementparam with { element: "item" }
 
 ##### field(e.itemIndex): Number | Object
-The item's index. In a grouped list, the index represents an object defining the group and item indexes: { group: 0, item: 0 }.
+The swiped item's index. In a grouped list, this property includes group information in the following format: `{ group: 0, item: 0 }`.
 
 ---
+
+[note] When **onItemSwipe** is defined, the List component does not allow text selection within items.
+
 #####See Also#####
 - [List - Touch-Screen Gestures](/concepts/05%20UI%20Components/List/45%20End-User%20Interaction/01%20Touch-Screen%20Gestures.md '/Documentation/Guide/UI_Components/List/End-User_Interaction/Touch-Screen_Gestures/')

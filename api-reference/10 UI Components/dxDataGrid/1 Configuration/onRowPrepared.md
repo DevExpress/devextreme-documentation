@@ -60,7 +60,7 @@ Values displayed in the row cells.
     $('#{widget-name}-container').dx{WidgetName}({
         onRowPrepared(e) {
             if (e.rowType === 'group' && !e.isExpanded) {
-                $(e.rowElement).addClass('collapsed-group-row');
+                e.rowElement.addClass('collapsed-group-row');
             }
         },
     })

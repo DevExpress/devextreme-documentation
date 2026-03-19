@@ -51,7 +51,7 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
     import ODataStore from "devextreme/data/odata/store";
@@ -74,7 +74,7 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';
     import ODataStore from "devextreme/data/odata/store";
@@ -163,7 +163,7 @@ Data kept in the **ODataStore** can be processed in a [DataSource](/api-referenc
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
     import DataSource from "devextreme/data/data_source";
@@ -190,7 +190,7 @@ Data kept in the **ODataStore** can be processed in a [DataSource](/api-referenc
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';
     import DataSource from "devextreme/data/data_source";

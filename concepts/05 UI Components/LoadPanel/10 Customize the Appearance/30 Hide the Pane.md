@@ -66,7 +66,7 @@ The pane is shown by default. To hide it, assign **false** to the [showPane](/ap
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxLoadPanel } from 'devextreme-vue/load-panel';
     import { DxButton } from 'devextreme-vue/button';
@@ -92,7 +92,7 @@ The pane is shown by default. To hide it, assign **false** to the [showPane](/ap
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { LoadPanel } from 'devextreme-react/load-panel';
     import { Button } from 'devextreme-react/button';

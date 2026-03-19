@@ -42,7 +42,7 @@ By default, the Popup allocates a part of its area to the title, regardless of w
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxPopup } from 'devextreme-vue/popup';
 
@@ -61,7 +61,7 @@ By default, the Popup allocates a part of its area to the title, regardless of w
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Popup } from 'devextreme-react/popup';
 
@@ -161,7 +161,7 @@ If you need to define the title completely, specify a template for it as shown i
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxPopup } from 'devextreme-vue/popup';
 
@@ -180,7 +180,7 @@ If you need to define the title completely, specify a template for it as shown i
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Popup } from 'devextreme-react/popup';
 

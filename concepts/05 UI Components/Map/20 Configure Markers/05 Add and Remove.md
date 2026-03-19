@@ -51,7 +51,7 @@ To add markers at design-time, pass an array of objects to the [markers](/api-re
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxMap } from 'devextreme-vue/map';
 
@@ -74,7 +74,7 @@ To add markers at design-time, pass an array of objects to the [markers](/api-re
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Map } from 'devextreme-react/map';
 
@@ -219,7 +219,7 @@ To add or remove a marker at runtime, bind the **markers** property of the Map t
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxMap } from 'devextreme-vue/map';
     import { DxButton } from 'devextreme-vue/button';
@@ -253,7 +253,7 @@ To add or remove a marker at runtime, bind the **markers** property of the Map t
 To add or remove a marker at runtime, bind the **markers** property of the Map to a state property:
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Map } from 'devextreme-react/map';
     import { Button } from 'devextreme-react/button';

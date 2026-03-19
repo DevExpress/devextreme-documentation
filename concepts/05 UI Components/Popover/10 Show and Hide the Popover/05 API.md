@@ -169,7 +169,7 @@ To show or hide the Popover programmatically, bind the [visible](/api-reference/
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxPopover } from 'devextreme-vue/popover';
     import { DxButton } from 'devextreme-vue/button';
@@ -201,7 +201,7 @@ To show or hide the Popover programmatically, bind the [visible](/api-reference/
 To show or hide the Popover programmatically, bind the [visible](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxPopover/Configuration/#visible') property of Popover to a state property. After that, change the latter property, and the Popover will appear or disappear.
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Popover } from 'devextreme-react/popover';
     import { Button } from 'devextreme-react/button';

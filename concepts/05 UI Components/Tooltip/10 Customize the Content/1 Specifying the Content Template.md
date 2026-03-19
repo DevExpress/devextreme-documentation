@@ -72,7 +72,7 @@ The following code shows how to create a template consisting of static (text) an
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTooltip } from 'devextreme-vue/tooltip';
     import { DxSwitch } from 'devextreme-vue/switch';
@@ -88,7 +88,7 @@ The following code shows how to create a template consisting of static (text) an
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Tooltip } from 'devextreme-react/tooltip';
     import { Switch } from 'devextreme-react/switch';

@@ -47,7 +47,7 @@ To respond to a date range change, handle the [onValueChanged](/api-reference/10
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxDateRangeBox } from 'devextreme-vue/date-range-box';
 
@@ -70,7 +70,7 @@ To respond to a date range change, handle the [onValueChanged](/api-reference/10
     </template>
 
     <script setup>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxDateRangeBox } from 'devextreme-vue/date-range-box';
 
@@ -85,7 +85,7 @@ To respond to a date range change, handle the [onValueChanged](/api-reference/10
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DateRangeBox } from 'devextreme-react/date-range-box';
 

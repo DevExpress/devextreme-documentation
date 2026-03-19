@@ -89,7 +89,7 @@ The Popup has two toolbars: top and bottom. Items on these toolbars can be plain
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         DxPopup,
@@ -118,7 +118,7 @@ The Popup has two toolbars: top and bottom. Items on these toolbars can be plain
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Popup, ToolbarItem } from 'devextreme-react/popup';
 

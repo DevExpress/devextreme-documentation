@@ -57,7 +57,7 @@
     <script setup lang="ts">
     import { reactive } from 'vue';
     import { DxFileUploader } from 'devextreme-vue/file-uploader';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     </script>
     <template>
         <DxFileUploader />
@@ -70,7 +70,7 @@
     <!-- tab: App.tsx -->
     import React, { JSX } from 'react';
     import { FileUploader } from 'devextreme-react/file-uploader';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     export default function App(): JSX.Element {
         return (

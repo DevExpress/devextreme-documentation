@@ -60,7 +60,7 @@ To specify when the Popover should be shown and hidden, set the [showEvent](/api
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxPopover } from 'devextreme-vue/popover';
 
@@ -74,7 +74,7 @@ To specify when the Popover should be shown and hidden, set the [showEvent](/api
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Popover } from 'devextreme-react/popover';
 
@@ -186,7 +186,7 @@ The Popover can also be hidden when a user clicks outside it. To control this be
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxPopover } from 'devextreme-vue/popover';
 
@@ -200,7 +200,7 @@ The Popover can also be hidden when a user clicks outside it. To control this be
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Popover } from 'devextreme-react/popover';
 

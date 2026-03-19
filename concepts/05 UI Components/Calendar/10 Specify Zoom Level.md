@@ -39,7 +39,7 @@ To specify which calendar view (month, year, decade or century) should be displa
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxCalendar from 'devextreme-vue/calendar';
 
@@ -55,7 +55,7 @@ To specify which calendar view (month, year, decade or century) should be displa
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Calendar from 'devextreme-react/calendar';
 
@@ -116,7 +116,7 @@ To make certain calendar views inaccessible, specify the [maxZoomLevel](/api-ref
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxCalendar from 'devextreme-vue/calendar';
 
@@ -132,7 +132,7 @@ To make certain calendar views inaccessible, specify the [maxZoomLevel](/api-ref
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Calendar from 'devextreme-react/calendar';
 

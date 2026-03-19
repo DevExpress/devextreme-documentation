@@ -56,7 +56,7 @@ To process a new RadioGroup value, you need to handle the value change event. If
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxRadioGroup } from 'devextreme-vue/radio-group';
 
@@ -85,7 +85,7 @@ To process a new RadioGroup value, you need to handle the value change event. If
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { RadioGroup } from 'devextreme-react/radio-group';
 

@@ -83,7 +83,7 @@ The following examples show how to configure the FileUploader for each upload mo
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';     
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';     
 
         import { 
             DxFileUploader
@@ -106,7 +106,7 @@ The following examples show how to configure the FileUploader for each upload mo
         <!-- tab: App.js -->
         import React from 'react';
 
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import FileUploader from 'devextreme-react/file-uploader';
         
@@ -226,7 +226,7 @@ The following examples show how to configure the FileUploader for each upload mo
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';     
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';     
 
         import { 
             DxFileUploader
@@ -249,7 +249,7 @@ The following examples show how to configure the FileUploader for each upload mo
         <!-- tab: App.js -->
         import React from 'react';
 
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import FileUploader from 'devextreme-react/file-uploader';
         

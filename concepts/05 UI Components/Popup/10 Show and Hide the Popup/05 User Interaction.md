@@ -29,7 +29,7 @@ Enable the [showCloseButton](/api-reference/10%20UI%20Components/dxPopup/1%20Con
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxPopup } from 'devextreme-vue/popup';
 
@@ -43,7 +43,7 @@ Enable the [showCloseButton](/api-reference/10%20UI%20Components/dxPopup/1%20Con
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Popup } from 'devextreme-react/popup';
 
@@ -108,7 +108,7 @@ The Popup can also be hidden when a user clicks outside of it. To control this P
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxPopup } from 'devextreme-vue/popup';
 
@@ -127,7 +127,7 @@ The Popup can also be hidden when a user clicks outside of it. To control this P
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Popup } from 'devextreme-react/popup';
 

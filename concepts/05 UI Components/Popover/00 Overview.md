@@ -66,7 +66,7 @@ The following code creates a simple Popover on your page and attaches it to anot
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxPopover } from 'devextreme-vue/popover';
 
@@ -80,7 +80,7 @@ The following code creates a simple Popover on your page and attaches it to anot
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Popover } from 'devextreme-react/popover';
 

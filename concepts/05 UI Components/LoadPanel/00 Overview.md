@@ -68,7 +68,7 @@ The following code adds to your page a simple LoadPanel and a [Button](/api-refe
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxLoadPanel } from 'devextreme-vue/load-panel';
     import { DxButton } from 'devextreme-vue/button';
@@ -94,7 +94,7 @@ The following code adds to your page a simple LoadPanel and a [Button](/api-refe
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { LoadPanel } from 'devextreme-react/load-panel';
     import { Button } from 'devextreme-react/button';

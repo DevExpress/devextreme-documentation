@@ -86,7 +86,7 @@ Follow the steps below to get a file's GUID in 'chunk' [upload mode](/api-refere
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxFileUploader } from "devextreme-vue/file-uploader";
 
@@ -108,7 +108,7 @@ Follow the steps below to get a file's GUID in 'chunk' [upload mode](/api-refere
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FileUploader from "devextreme-react/file-uploader";
 

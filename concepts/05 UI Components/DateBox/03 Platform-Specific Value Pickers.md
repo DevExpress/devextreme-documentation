@@ -69,7 +69,7 @@ For the List picker, you can specify the step of available time values in minute
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDateBox from 'devextreme-vue/date-box';
 
@@ -89,7 +89,7 @@ For the List picker, you can specify the step of available time values in minute
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DateBox from 'devextreme-react/date-box';
 

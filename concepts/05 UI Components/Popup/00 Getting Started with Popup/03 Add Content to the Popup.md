@@ -91,7 +91,7 @@ You can define content in the Popup's markup or use the [contentTemplate](/api-r
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         Popup

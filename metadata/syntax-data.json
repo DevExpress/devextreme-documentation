@@ -18204,6 +18204,9 @@
     "dxSchedulerOptions.showCurrentTimeIndicator": {
       "vue": "show-current-time-indicator"
     },
+    "dxSchedulerOptions.snapToCellsMode": {
+      "vue": "snap-to-cells-mode"
+    },
     "dxSchedulerOptions.startDateExpr": {
       "vue": "start-date-expr"
     },
@@ -18284,6 +18287,9 @@
       "angular": "dxo-scrolling",
       "react": "Scrolling",
       "vue": "DxScrolling"
+    },
+    "dxSchedulerOptions.views.snapToCellsMode": {
+      "vue": "snap-to-cells-mode"
     },
     "dxSchedulerOptions.views.startDate": {
       "vue": "start-date"
@@ -21510,6 +21516,9 @@
     },
     "enums.SmallValuesGroupingMode": {
       "vue": "small-values-grouping-mode"
+    },
+    "enums.SnapToCellsMode": {
+      "vue": "snap-to-cells-mode"
     },
     "enums.SortOrder": {
       "vue": "sort-order"

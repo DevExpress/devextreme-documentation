@@ -88,7 +88,7 @@ Values displayed in the row cells.
 
     <!-- tab: App.vue -->
     <template>
-        <DxDataGrid ...
+        <Dx{WidgetName} ...
             @row-prepared="handleRowPrepared"
         />
     </template>
@@ -118,7 +118,7 @@ Values displayed in the row cells.
 
     function App(): JSX.Element {
         return (
-            <DataGrid ...
+            <{WidgetName} ...
                 onRowPrepared={handleRowPrepared}
             />
         );

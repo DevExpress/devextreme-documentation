@@ -95,7 +95,7 @@ The example below shows how you can show and hide the Toast component without th
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxButton } from 'devextreme-vue/button';
     import { DxToast, DxPosition } from 'devextreme-vue/toast';
     import notify from "devextreme/ui/notify";
@@ -130,7 +130,7 @@ The example below shows how you can show and hide the Toast component without th
     <!-- tab: App.js -->
     import React, { useState } from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Button } from 'devextreme-react/button';
     import { Toast, Position } from 'devextreme-react/toast';

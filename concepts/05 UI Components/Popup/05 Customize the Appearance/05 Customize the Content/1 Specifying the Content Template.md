@@ -73,7 +73,7 @@ The example below shows how to create a template consisting of static (text) and
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxPopup } from 'devextreme-vue/popup';
     import { DxButton } from 'devextreme-vue/button';
@@ -98,7 +98,7 @@ The example below shows how to create a template consisting of static (text) and
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Popup } from 'devextreme-react/popup';
     import { Button } from 'devextreme-react/button';

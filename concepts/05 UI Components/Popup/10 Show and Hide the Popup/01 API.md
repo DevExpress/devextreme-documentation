@@ -159,7 +159,7 @@ To show or hide the Popup programmatically, bind the [visible](/api-reference/10
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxPopup } from 'devextreme-vue/popup';
     import { DxButton } from 'devextreme-vue/button';
@@ -191,7 +191,7 @@ To show or hide the Popup programmatically, bind the [visible](/api-reference/10
 To show or hide the Popup programmatically, bind the [visible](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#visible') property of Popup to a state property. After that, change the latter property, and the Popup will appear or disappear.
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Popup } from 'devextreme-react/popup';
     import { Button } from 'devextreme-react/button';

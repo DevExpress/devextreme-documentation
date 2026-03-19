@@ -63,7 +63,7 @@ The TextArea raises three keyboard events: [keyDown](/api-reference/10%20UI%20Co
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxTextArea } from 'devextreme-vue/text-area';
 
     export default {
@@ -89,7 +89,7 @@ The TextArea raises three keyboard events: [keyDown](/api-reference/10%20UI%20Co
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TextArea } from 'devextreme-react/text-area';
 

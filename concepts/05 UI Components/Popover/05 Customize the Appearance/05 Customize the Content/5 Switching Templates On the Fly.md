@@ -108,7 +108,7 @@ If you need to render different templates depending on a specific condition, def
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxPopover } from 'devextreme-vue/popover';
     import { DxButton } from 'devextreme-vue/button';
@@ -142,7 +142,7 @@ If you need to render different templates depending on a specific condition, def
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
     import { Popover } from 'devextreme-react/popover';
     import { Button } from 'devextreme-react/button';

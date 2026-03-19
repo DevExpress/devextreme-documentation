@@ -96,7 +96,7 @@ Note that you should implement the [onCustomItemCreating](/api-reference/10%20UI
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxSelectBox } from 'devextreme-vue/select-box';
     import DataSource from "devextreme/data/data_source";
@@ -139,7 +139,7 @@ Note that you should implement the [onCustomItemCreating](/api-reference/10%20UI
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import SelectBox from 'devextreme-react/select-box';
     import DataSource from "devextreme/data/data_source";

@@ -71,7 +71,7 @@ To change the size of the Toast, specify the [height](/api-reference/10%20UI%20C
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxToast } from 'devextreme-vue/toast';
     import { DxButton } from 'devextreme-vue/button';
@@ -97,7 +97,7 @@ To change the size of the Toast, specify the [height](/api-reference/10%20UI%20C
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Toast } from 'devextreme-react/toast';
     import { Button } from 'devextreme-react/button';
@@ -230,7 +230,7 @@ If you need to position the Toast against a specific element on your page, set t
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxToast, DxPosition } from 'devextreme-vue/toast';
     import { DxButton } from 'devextreme-vue/button';
@@ -257,7 +257,7 @@ If you need to position the Toast against a specific element on your page, set t
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Toast, Position } from 'devextreme-react/toast';
     import { Button } from 'devextreme-react/button';

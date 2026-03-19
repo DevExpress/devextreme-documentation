@@ -99,7 +99,7 @@ To customize group headers, specify a [groupTemplate](/api-reference/10%20UI%20C
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
     import DataSource from "devextreme/data/data_source";
@@ -144,7 +144,7 @@ To customize group headers, specify a [groupTemplate](/api-reference/10%20UI%20C
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';
     import DataSource from "devextreme/data/data_source";

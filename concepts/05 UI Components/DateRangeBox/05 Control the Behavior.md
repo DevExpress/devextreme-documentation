@@ -43,7 +43,7 @@ The DateRangeBox UI component allows users to type dates or pick them from a dro
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDateRangeBox from 'devextreme-vue/date-range-box';
 
@@ -63,7 +63,7 @@ The DateRangeBox UI component allows users to type dates or pick them from a dro
     </template>
 
     <script setup>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDateRangeBox from 'devextreme-vue/date-range-box';
     // ...
@@ -74,7 +74,7 @@ The DateRangeBox UI component allows users to type dates or pick them from a dro
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DateRangeBox from 'devextreme-react/date-range-box';
 

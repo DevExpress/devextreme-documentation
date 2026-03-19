@@ -67,7 +67,7 @@ To show or hide the LoadPanel programmatically, bind the [visible](/api-referenc
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxLoadPanel } from 'devextreme-vue/load-panel';
     import { DxButton } from 'devextreme-vue/button';
@@ -95,7 +95,7 @@ To show or hide the LoadPanel programmatically, bind the [visible](/api-referenc
 To show or hide the LoadPanel programmatically, bind the [visible](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#visible') property of the LoadPanel UI component to a component property. After that, change this property, and the LoadPanel will appear or disappear.
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { LoadPanel } from 'devextreme-react/load-panel';
     import { Button } from 'devextreme-react/button';
@@ -216,7 +216,7 @@ To execute certain commands before or after the LoadPanel is shown/hidden, handl
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxLoadPanel } from 'devextreme-vue/load-panel';
     import { DxButton } from 'devextreme-vue/button';
@@ -247,7 +247,7 @@ To execute certain commands before or after the LoadPanel is shown/hidden, handl
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { LoadPanel } from 'devextreme-react/load-panel';
     import { Button } from 'devextreme-react/button';

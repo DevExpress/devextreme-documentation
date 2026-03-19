@@ -55,7 +55,7 @@ The following code adds a simple ProgressBar to your page. The **value** propert
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxProgressBar } from 'devextreme-vue/progress-bar';
 
@@ -69,7 +69,7 @@ The following code adds a simple ProgressBar to your page. The **value** propert
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { ProgressBar } from 'devextreme-react/progress-bar';
 
@@ -149,7 +149,7 @@ When the ProgressBar reaches the [maximum](/api-reference/10%20UI%20Components/d
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxProgressBar } from 'devextreme-vue/progress-bar';
     import { alert } from "devextreme/ui/dialog";
@@ -169,7 +169,7 @@ When the ProgressBar reaches the [maximum](/api-reference/10%20UI%20Components/d
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { ProgressBar } from 'devextreme-react/progress-bar';
     import { alert } from "devextreme/ui/dialog";

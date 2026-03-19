@@ -56,7 +56,7 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme-PHP-Da
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
     import { createStore } from "devextreme-aspnet-data-nojquery";
@@ -82,7 +82,7 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme-PHP-Da
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';
     import { createStore } from "devextreme-aspnet-data-nojquery";

@@ -96,7 +96,7 @@ Assign the field's name to the DropDownBox's [valueExpr](/api-reference/10%20UI%
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DxDropDownBox from "devextreme-vue/drop-down-box";
         import DxDataGrid, DxSelection from "devextreme-vue/data-grid";
@@ -123,7 +123,7 @@ Assign the field's name to the DropDownBox's [valueExpr](/api-reference/10%20UI%
     ##### React
 
         import React from 'react';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import { DropDownBox } from 'devextreme-react/drop-down-box';
         import { DataGrid, Selection } from "devextreme-react/data-grid";
@@ -262,7 +262,7 @@ This step's implementation depends on the embedded UI component's API and the li
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DxDropDownBox from "devextreme-vue/drop-down-box";
         import { DxDataGrid, DxSelection } from "devextreme-vue/data-grid";
@@ -297,7 +297,7 @@ This step's implementation depends on the embedded UI component's API and the li
     ##### React
 
         import React from 'react';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import { DropDownBox } from 'devextreme-react/drop-down-box';
         import { DataGrid, Selection } from "devextreme-react/data-grid";

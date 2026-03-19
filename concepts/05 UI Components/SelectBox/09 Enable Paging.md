@@ -54,7 +54,7 @@ Paging properties are set in the [DataSource](/api-reference/30%20Data%20Layer/D
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxSelectBox } from 'devextreme-vue/select-box';
     import DataSource from "devextreme/data/data_source";
@@ -80,7 +80,7 @@ Paging properties are set in the [DataSource](/api-reference/30%20Data%20Layer/D
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import SelectBox from 'devextreme-react/select-box';
     import DataSource from "devextreme/data/data_source";

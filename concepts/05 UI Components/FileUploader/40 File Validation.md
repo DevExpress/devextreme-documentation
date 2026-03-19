@@ -46,7 +46,7 @@ The FileUploader allows you to restrict the extension ([allowedFileExtensions](/
         </DxFileUploader>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.light.css';    
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';    
         
         import {
             DxFileManager
@@ -69,7 +69,7 @@ The FileUploader allows you to restrict the extension ([allowedFileExtensions](/
     <!-- tab: App.js -->
     import React from 'react';
     
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FileUploader from 'devextreme-react/file-uploader';
     

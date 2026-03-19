@@ -37,7 +37,7 @@ When a user types a value into the TextBox, this value applies when the <a href=
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTextBox } from 'devextreme-vue/text-box';
 
@@ -51,7 +51,7 @@ When a user types a value into the TextBox, this value applies when the <a href=
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TextBox } from 'devextreme-react/text-box';
 
@@ -122,7 +122,7 @@ To process a new TextBox value, you need to handle the value change event. If th
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTextBox } from 'devextreme-vue/text-box';
 
@@ -148,7 +148,7 @@ To process a new TextBox value, you need to handle the value change event. If th
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TextBox } from 'devextreme-react/text-box';
 

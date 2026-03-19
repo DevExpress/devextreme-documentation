@@ -94,7 +94,7 @@ Note that you need to implement the [onCustomItemCreating](/api-reference/10%20U
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
     import DataSource from "devextreme/data/data_source";
@@ -136,7 +136,7 @@ Note that you need to implement the [onCustomItemCreating](/api-reference/10%20U
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';
     import DataSource from "devextreme/data/data_source";

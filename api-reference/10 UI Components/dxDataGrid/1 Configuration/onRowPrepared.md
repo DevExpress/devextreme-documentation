@@ -52,4 +52,81 @@ Values displayed in the row cells.
 
 ---
 
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $('#{widget-name}-container').dx{WidgetName}({
+        onRowPrepared(e) {
+            if (e.rowType === 'group' && !e.isExpanded) {
+                e.rowElement.addClass('collapsed-group-row');
+            }
+        },
+    })
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-{widget-name}
+        (onRowPrepared)="handleRowPrepared($event)"
+    ></dx-{widget-name}>
+
+    <!-- tab: app.component.ts -->
+    import { Dx{WidgetName}Module, type Dx{WidgetName}Types } from 'devextreme-angular/ui/{widget-name}';
+
+    // ...
+    export class AppComponent {
+        handleRowPrepared(e: Dx{WidgetName}Types.RowPreparedEvent) {
+            if (e.rowType === 'group' && !e.isExpanded) {
+                e.rowElement.classList.add('collapsed-group-row')
+            }
+        }
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <Dx{WidgetName} ...
+            @row-prepared="handleRowPrepared"
+        />
+    </template>
+
+    <script setup lang="ts">
+    import { Dx{WidgetName}, type Dx{WidgetName}Types } from 'devextreme-vue/{widget-name}';
+    // ...
+
+    function handleRowPrepared(e: Dx{WidgetName}Types.RowPreparedEvent): void {
+        if (e.rowType === 'group' && !e.isExpanded) {
+            e.rowElement.classList.add('collapsed-group-row');
+        }
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.tsx -->
+    import { {WidgetName}, type {WidgetName}Types } from 'devextreme-react/{widget-name}';
+    // ...
+
+    function handleRowPrepared(e: {WidgetName}Types.RowPreparedEvent): void {
+        if (e.rowType === 'group' && !e.isExpanded) {
+            e.rowElement.classList.add('collapsed-group-row');
+        }
+    }
+
+    function App(): JSX.Element {
+        return (
+            <{WidgetName} ...
+                onRowPrepared={handleRowPrepared}
+            />
+        );
+    }
+
+---
+
+#####See Also#####
+- [Customize Row Apperance](/Documentation/Guide/UI_Components/DataGrid/Columns/Customize_Cells/#Customize_Row_Apperance)
+
 <!-- import { field(e.isExpanded) } from 'api-reference\10 UI Components\dxDataGrid\1 Configuration\onRowClick.md' -->

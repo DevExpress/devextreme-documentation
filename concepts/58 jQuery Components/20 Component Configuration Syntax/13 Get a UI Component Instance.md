@@ -13,7 +13,7 @@ If the UI component is not yet instantiated, this code throws an [E0009](/api-re
         alert("Exception handled: " + err.message);
     }
 
-Instead of the exception, you can get a truthy or falsy value that can be used in conditional statements. To do this, call the UI component class's static **getInstance(element)** method. This method returns **undefined** if the UI component is not instantiated for the element:
+Instead of an exception, you can get a truthy or falsy value for use in conditional statements. Call the UI component class’s static **getInstance(element)**. This method returns **undefined** if no UI component instance is associated with the element:
 
     <!-- tab: index.js -->
     var element = document.getElementById("chart-container");

@@ -76,7 +76,7 @@ Values displayed in the row cells.
     ></dx-{widget-name}>
 
     <!-- tab: app.component.ts -->
-    import { type Dx{WidgetName}Types } from 'devextreme-angular/ui/{widget-name}';
+    import { Dx{WidgetName}Module, type Dx{WidgetName}Types } from 'devextreme-angular/ui/{widget-name}';
 
     // ...
     export class AppComponent {
@@ -97,7 +97,7 @@ Values displayed in the row cells.
     </template>
 
     <script setup lang="ts">
-    import { type Dx{WidgetName}Types } from 'devextreme-vue/{widget-name}';
+    import { Dx{WidgetName}, type Dx{WidgetName}Types } from 'devextreme-vue/{widget-name}';
     // ...
 
     function handleRowPrepared(e: Dx{WidgetName}Types.RowPreparedEvent): void {
@@ -110,7 +110,7 @@ Values displayed in the row cells.
 ##### React
 
     <!-- tab: App.tsx -->
-    import { type {WidgetName}Types } from 'devextreme-react/{widget-name}';
+    import { {WidgetName}, type {WidgetName}Types } from 'devextreme-react/{widget-name}';
     // ...
 
     function handleRowPrepared(e: {WidgetName}Types.RowPreparedEvent): void {

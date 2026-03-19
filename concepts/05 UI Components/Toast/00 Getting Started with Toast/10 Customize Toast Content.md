@@ -193,7 +193,7 @@ To customize toast content, either specify a [contentTemplate](/api-reference/10
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxButton } from 'devextreme-vue/button';
     import { DxToast, DxPosition } from 'devextreme-vue/toast';
     import notify from "devextreme/ui/notify";
@@ -242,7 +242,7 @@ To customize toast content, either specify a [contentTemplate](/api-reference/10
     <!-- tab: App.js -->
     import React, { useState } from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Button } from 'devextreme-react/button';
     import { Toast, Position } from 'devextreme-react/toast';

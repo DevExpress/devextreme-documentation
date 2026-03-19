@@ -35,7 +35,7 @@ To allow users to specify the date and time, set the [type](/api-reference/10%20
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DateBox } from 'devextreme-react/date-box';
 

@@ -99,7 +99,7 @@ The following code adds the List component, [binds it to data](/api-reference/10
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxDropDownBox } from 'devextreme-vue/drop-down-box';
     import DxList from "devextreme-vue/list";
 
@@ -133,7 +133,7 @@ The following code adds the List component, [binds it to data](/api-reference/10
     <!-- tab: App.js -->
     import React, { useState, useRef, useCallback } from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DropDownBox } from 'devextreme-react/drop-down-box';
     import { List } from "devextreme-react/list";

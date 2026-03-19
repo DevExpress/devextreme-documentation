@@ -72,7 +72,7 @@ Chunk upload allows large files to be divided into parts called "chunks" and sen
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';     
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';     
 
     import { 
         DxFileUploader
@@ -96,7 +96,7 @@ Chunk upload allows large files to be divided into parts called "chunks" and sen
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FileUploader from 'devextreme-react/file-uploader';
     

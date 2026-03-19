@@ -175,7 +175,7 @@ To show or hide the Tooltip programmatically, bind the [visible](/api-reference/
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTooltip } from 'devextreme-vue/tooltip';
     import { DxButton } from 'devextreme-vue/button';
@@ -206,7 +206,7 @@ To show or hide the Tooltip programmatically, bind the [visible](/api-reference/
 To show or hide the Tooltip programmatically, bind the [visible](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration/visible.md '/Documentation/ApiReference/UI_Components/dxTooltip/Configuration/#visible') property of the Tooltip to a state property. After that, change this state property, and the Tooltip will appear or disappear.
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Tooltip } from 'devextreme-react/tooltip';
     import { Button } from 'devextreme-react/button';

@@ -49,7 +49,7 @@ You can define constraints for date ranges that can be selected by end users. Sp
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxDateRangeBox } from 'devextreme-vue/date-range-box';
 
@@ -77,7 +77,7 @@ You can define constraints for date ranges that can be selected by end users. Sp
     </template>
 
     <script setup>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxDateRangeBox } from 'devextreme-vue/date-range-box';
 
@@ -91,7 +91,7 @@ You can define constraints for date ranges that can be selected by end users. Sp
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DateRangeBox } from 'devextreme-react/date-range-box';
 

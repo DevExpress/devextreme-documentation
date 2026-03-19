@@ -79,7 +79,7 @@ Items in the SelectBox can be grouped if they are grouped in the data source. Th
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxSelectBox } from 'devextreme-vue/select-box';
 
@@ -114,7 +114,7 @@ Items in the SelectBox can be grouped if they are grouped in the data source. Th
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import SelectBox from 'devextreme-react/select-box';
 
@@ -252,7 +252,7 @@ If objects in your data source miss the **key** and **items** fields, use the [m
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxSelectBox } from 'devextreme-vue/select-box';
     import DataSource from "devextreme/data/data_source";
@@ -298,7 +298,7 @@ If objects in your data source miss the **key** and **items** fields, use the [m
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import SelectBox from 'devextreme-react/select-box';
     import DataSource from "devextreme/data/data_source";
@@ -421,7 +421,7 @@ If your data is not grouped, you can group it using the [group](/api-reference/3
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxSelectBox } from 'devextreme-vue/select-box';
     import DataSource from "devextreme/data/data_source";
@@ -455,7 +455,7 @@ If your data is not grouped, you can group it using the [group](/api-reference/3
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import SelectBox from 'devextreme-react/select-box';
     import DataSource from "devextreme/data/data_source";

@@ -100,7 +100,7 @@ The Popover has two toolbars: top and bottom. Items on these toolbars can be pla
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         DxPopover,
@@ -128,7 +128,7 @@ The Popover has two toolbars: top and bottom. Items on these toolbars can be pla
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Popover, ToolbarItem } from 'devextreme-react/popover';
 

@@ -43,7 +43,7 @@ If you want to define start date and end date labels, use [startDateLabel](/api-
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxDateRangeBox } from 'devextreme-vue/date-range-box';
 
@@ -64,7 +64,7 @@ If you want to define start date and end date labels, use [startDateLabel](/api-
     </template>
 
     <script setup>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxDateRangeBox } from 'devextreme-vue/date-range-box';
     // ...
@@ -75,7 +75,7 @@ If you want to define start date and end date labels, use [startDateLabel](/api-
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DateRangeBox } from 'devextreme-react/date-range-box';
  

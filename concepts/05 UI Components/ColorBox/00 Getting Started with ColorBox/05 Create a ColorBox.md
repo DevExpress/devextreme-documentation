@@ -73,7 +73,7 @@
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxColorBox } from 'devextreme-vue/color-box';
 
     export default {
@@ -90,7 +90,7 @@
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { ColorBox } from 'devextreme-react/color-box';
 

@@ -73,7 +73,7 @@ Use the following code to create a basic DateRangeBox:
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxDateRangeBox } from 'devextreme-vue/date-range-box';
 
@@ -92,7 +92,7 @@ Use the following code to create a basic DateRangeBox:
     </template>
 
     <script setup>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxDateRangeBox } from 'devextreme-vue/date-range-box';
     // ...
@@ -103,7 +103,7 @@ Use the following code to create a basic DateRangeBox:
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DateRangeBox } from 'devextreme-react/date-range-box';
 

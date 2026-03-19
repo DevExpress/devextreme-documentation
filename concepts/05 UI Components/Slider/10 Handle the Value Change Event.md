@@ -52,7 +52,7 @@ To process a new Slider value, you need to handle the value change event. If the
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxSlider } from 'devextreme-vue/slider';
 
@@ -78,7 +78,7 @@ To process a new Slider value, you need to handle the value change event. If the
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Slider } from 'devextreme-react/slider';
 

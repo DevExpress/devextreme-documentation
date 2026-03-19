@@ -170,7 +170,7 @@ If you call the method that allows additional options, you can set the [width](/
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxButton } from 'devextreme-vue/button';
     import notify from "devextreme/ui/notify";
 
@@ -220,7 +220,7 @@ If you call the method that allows additional options, you can set the [width](/
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Button } from 'devextreme-react/button';
     import notify from 'devextreme/ui/notify';

@@ -74,7 +74,7 @@ The [route configuration](/api-reference/10%20UI%20Components/dxMap/1%20Configur
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxMap } from 'devextreme-vue/map';
 
@@ -108,7 +108,7 @@ The [route configuration](/api-reference/10%20UI%20Components/dxMap/1%20Configur
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Map } from 'devextreme-react/map';
 

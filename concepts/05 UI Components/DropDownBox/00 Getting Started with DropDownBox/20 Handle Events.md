@@ -64,7 +64,7 @@ You can allow users to type in the DropDownBox text field to add more values to 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxDropDownBox } from 'devextreme-vue/drop-down-box';
     import DxList from "devextreme-vue/list";
 
@@ -92,7 +92,7 @@ You can allow users to type in the DropDownBox text field to add more values to 
     <!-- tab: App.js -->
     import React, { useState, useRef, useCallback } from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DropDownBox } from 'devextreme-react/drop-down-box';
     import { List } from "devextreme-react/list";

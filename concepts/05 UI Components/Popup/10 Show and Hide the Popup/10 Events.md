@@ -68,7 +68,7 @@ To execute certain commands before or after the Popup was shown/hidden, handle t
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxPopup } from 'devextreme-vue/popup';
 
@@ -96,7 +96,7 @@ To execute certain commands before or after the Popup was shown/hidden, handle t
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Popup } from 'devextreme-react/popup';
 

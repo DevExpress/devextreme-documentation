@@ -74,7 +74,7 @@ Use the following code to create a basic DateBox:
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxDateBox } from 'devextreme-vue/date-box';
 
@@ -90,7 +90,7 @@ Use the following code to create a basic DateBox:
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DateBox } from 'devextreme-react/date-box';
 

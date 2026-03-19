@@ -65,7 +65,7 @@ Specify the **height** and **width** properties to change the LoadPanel's size:
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxLoadPanel } from 'devextreme-vue/load-panel';
     import { DxButton } from 'devextreme-vue/button';
@@ -91,7 +91,7 @@ Specify the **height** and **width** properties to change the LoadPanel's size:
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { LoadPanel } from 'devextreme-react/load-panel';
     import { Button } from 'devextreme-react/button';
@@ -217,7 +217,7 @@ The [container](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuratio
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxLoadPanel, DxPosition } from 'devextreme-vue/load-panel';
     import { DxButton } from 'devextreme-vue/button';
@@ -243,7 +243,7 @@ The [container](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuratio
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { LoadPanel, Position } from 'devextreme-react/load-panel';
     import { Button } from 'devextreme-react/button';

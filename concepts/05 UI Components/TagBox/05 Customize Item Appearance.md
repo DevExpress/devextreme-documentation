@@ -57,7 +57,7 @@ For a minor customization of TagBox items, you can define [specific fields](/api
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
 
@@ -80,7 +80,7 @@ For a minor customization of TagBox items, you can define [specific fields](/api
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';
 
@@ -198,7 +198,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
 
@@ -225,7 +225,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';
 
@@ -348,7 +348,7 @@ Using similar techniques, you can also customize tags of the selected items. The
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
 
@@ -370,7 +370,7 @@ Using similar techniques, you can also customize tags of the selected items. The
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';
 

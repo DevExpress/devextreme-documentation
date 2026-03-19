@@ -123,7 +123,7 @@ If the [uploadMode](/api-reference/10%20UI%20Components/dxFileUploader/1%20Confi
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';     
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';     
 
     import { 
         DxFileUploader
@@ -173,7 +173,7 @@ If the [uploadMode](/api-reference/10%20UI%20Components/dxFileUploader/1%20Confi
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FileUploader from 'devextreme-react/file-uploader';
     import NumberBox from 'devextreme-react/number-box';
@@ -370,7 +370,7 @@ When the **uploadMode** is *"useForm"*, define the parameters within hidden inpu
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';     
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';     
 
     import DxFileUploader from 'devextreme-vue/file-uploader';
     import DxNumberBox from 'devextreme-vue/number-box';
@@ -408,7 +408,7 @@ When the **uploadMode** is *"useForm"*, define the parameters within hidden inpu
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FileUploader from 'devextreme-react/file-uploader';
     import NumberBox from 'devextreme-react/number-box';

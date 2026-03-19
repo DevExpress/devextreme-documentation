@@ -78,7 +78,7 @@ Items in the TagBox can be grouped if they are grouped in the data source. The T
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
 
@@ -111,7 +111,7 @@ Items in the TagBox can be grouped if they are grouped in the data source. The T
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';
 
@@ -248,7 +248,7 @@ If objects in your data source miss the **key** and **items** fields, use the [m
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
     import DataSource from "devextreme/data/data_source";
@@ -292,7 +292,7 @@ If objects in your data source miss the **key** and **items** fields, use the [m
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';
     import DataSource from "devextreme/data/data_source";
@@ -419,7 +419,7 @@ If your data is not grouped at all, you can group it using the [group](/api-refe
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTagBox } from 'devextreme-vue/tag-box';
     import DataSource from "devextreme/data/data_source";
@@ -451,7 +451,7 @@ If your data is not grouped at all, you can group it using the [group](/api-refe
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TagBox } from 'devextreme-react/tag-box';
     import DataSource from "devextreme/data/data_source";

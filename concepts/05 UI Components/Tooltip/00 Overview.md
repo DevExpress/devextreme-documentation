@@ -68,7 +68,7 @@ The following code creates a simple Tooltip on your page and attaches it to anot
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTooltip } from 'devextreme-vue/tooltip';
 
@@ -82,7 +82,7 @@ The following code creates a simple Tooltip on your page and attaches it to anot
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Tooltip } from 'devextreme-react/tooltip';
 

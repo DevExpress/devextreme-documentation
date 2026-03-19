@@ -90,7 +90,7 @@ Refer to the article to learn more.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxDropDownBox } from 'devextreme-vue/drop-down-box';
     import DxList from "devextreme-vue/list";
 
@@ -122,7 +122,7 @@ Refer to the article to learn more.
     <!-- tab: App.js -->
     import React, { useState, useRef, useCallback } from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DropDownBox } from 'devextreme-react/drop-down-box';
     import { List } from "devextreme-react/list";

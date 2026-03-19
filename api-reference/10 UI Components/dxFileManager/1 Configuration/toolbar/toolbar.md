@@ -120,7 +120,7 @@ To add a predefined item to the toolbar, specify its [name](/api-reference/_hidd
         </DxFileManager>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.light.css';    
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';    
         
         import {
             DxFileManager,
@@ -149,7 +149,7 @@ To add a predefined item to the toolbar, specify its [name](/api-reference/_hidd
     <!-- tab: App.js -->
     import React from 'react';
     
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FileManager, { Toolbar, Item, FileSelectionItem } from 'devextreme-react/file-manager';
     
@@ -353,7 +353,7 @@ The [widget](/api-reference/_hidden/dxFileManagerToolbarItem/widget.md '/Documen
         </DxFileManager>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.light.css';    
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';    
         
         import {
             DxFileManager,
@@ -411,7 +411,7 @@ The [widget](/api-reference/_hidden/dxFileManagerToolbarItem/widget.md '/Documen
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import FileManager, { Toolbar, Item } from 'devextreme-react/file-manager';    
 
     const App = () => {

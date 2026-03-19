@@ -71,7 +71,7 @@
     </template>
 
     <script setup lang="ts">
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxPagination } from 'devextreme-vue/pagination';
     </script>
 
@@ -81,7 +81,7 @@
 
     <!-- tab: App.tsx -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { Pagination } from 'devextreme-react/pagination';
 
     function App(): JSX.Element {

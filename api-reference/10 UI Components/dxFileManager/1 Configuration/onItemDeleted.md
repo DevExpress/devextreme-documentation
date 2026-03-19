@@ -87,7 +87,7 @@ Select a file/folder and click the **Delete** [context menu](/api-reference/10%2
     </template>
 
     <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import { 
             DxFileManager

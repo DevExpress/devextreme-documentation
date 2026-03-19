@@ -82,7 +82,7 @@ The following code sorts data by the "Start" and "End" columns:
         </DxGantt>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         import 'devexpress-gantt/dist/dx-gantt.css'; 
 
         import { 
@@ -107,7 +107,7 @@ The following code sorts data by the "Start" and "End" columns:
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import 'devexpress-gantt/dist/dx-gantt.css'; 
 
     import Gantt, { 
@@ -239,7 +239,7 @@ Use the [ascendingText](/api-reference/_hidden/dxGanttSorting/ascendingText.md '
         </DxGantt>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         import 'devexpress-gantt/dist/dx-gantt.css'; 
 
         import { 
@@ -262,7 +262,7 @@ Use the [ascendingText](/api-reference/_hidden/dxGanttSorting/ascendingText.md '
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import 'devexpress-gantt/dist/dx-gantt.css'; 
 
     import Gantt, { 

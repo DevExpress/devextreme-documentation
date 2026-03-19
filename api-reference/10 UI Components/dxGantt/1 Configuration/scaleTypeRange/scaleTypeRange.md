@@ -77,7 +77,7 @@ Use the [scaleTypeRange.min](/api-reference/10%20UI%20Components/dxGantt/1%20Con
         </DxGantt>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         import 'devexpress-gantt/dist/dx-gantt.css'; 
 
         import { 
@@ -100,7 +100,7 @@ Use the [scaleTypeRange.min](/api-reference/10%20UI%20Components/dxGantt/1%20Con
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import 'devexpress-gantt/dist/dx-gantt.css'; 
 
     import Gantt, { 

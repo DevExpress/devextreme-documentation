@@ -103,7 +103,7 @@ Note that the **container** parameter contains the content of the default toolti
     </template>
     
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
     import { DxGantt } from 'devextreme-vue/gantt';
     

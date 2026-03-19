@@ -127,7 +127,7 @@ The following example illustrates how to configure an [Object](/api-reference/10
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';     
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';     
 
     import { 
         DxFileManager
@@ -175,7 +175,7 @@ The following example illustrates how to configure an [Object](/api-reference/10
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FileManager from 'devextreme-react/file-manager';
     import { fileSystem } from './data.js';

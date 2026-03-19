@@ -71,7 +71,7 @@
     </template>
 
     <script setup>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import 'devexpress-diagram/dist/dx-diagram.min.css';
     import { DxDiagram } from 'devextreme-vue/diagram';
     </script>
@@ -83,7 +83,7 @@
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import 'devexpress-diagram/dist/dx-diagram.min.css';
 
     import { Diagram } from 'devextreme-react/diagram';

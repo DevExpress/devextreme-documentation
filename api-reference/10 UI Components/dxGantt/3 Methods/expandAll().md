@@ -46,7 +46,7 @@ Expands all tasks.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import 'devexpress-gantt/dist/dx-gantt.css';
 
     import DxGantt from 'devextreme-vue/gantt';
@@ -81,7 +81,7 @@ Expands all tasks.
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Gantt from 'devextreme-react/gantt';
 

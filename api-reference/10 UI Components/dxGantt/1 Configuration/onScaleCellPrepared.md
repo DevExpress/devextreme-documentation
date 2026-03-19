@@ -106,7 +106,7 @@ The example below illustrates how to customize the scale.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxGantt from 'devextreme-vue/gantt';
   
@@ -136,7 +136,7 @@ The example below illustrates how to customize the scale.
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Gantt from 'devextreme-react/gantt';
 
@@ -264,7 +264,7 @@ The code below colors the scale cells depending on the season:
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxGantt from 'devextreme-vue/gantt';
   
@@ -296,7 +296,7 @@ The code below colors the scale cells depending on the season:
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Gantt from 'devextreme-react/gantt';
 

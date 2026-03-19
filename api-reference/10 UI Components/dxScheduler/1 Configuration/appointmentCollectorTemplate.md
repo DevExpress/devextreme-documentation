@@ -86,7 +86,7 @@ Initially hidden appointments that are displayed after a user clicks an overflow
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxScheduler } from 'devextreme-vue/scheduler';
 
@@ -107,7 +107,7 @@ Initially hidden appointments that are displayed after a user clicks an overflow
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Scheduler } from 'devextreme-react/scheduler';
 

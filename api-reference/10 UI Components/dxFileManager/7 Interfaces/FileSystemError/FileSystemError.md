@@ -177,7 +177,7 @@ An object that contains information about the error.
     import FileManager, { Permissions } from "devextreme-react/file-manager";
     import { fileItems } from "./data.js";
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     const objectProvider = new ObjectFileSystemProvider({
         data: fileItems

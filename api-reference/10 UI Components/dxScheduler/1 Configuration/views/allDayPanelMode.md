@@ -80,7 +80,7 @@ To also display appointments that have a duration equal to or more than 24 hours
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxScheduler } from 'devextreme-vue/scheduler';
 
@@ -102,7 +102,7 @@ To also display appointments that have a duration equal to or more than 24 hours
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Scheduler } from 'devextreme-react/scheduler';
 

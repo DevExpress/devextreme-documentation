@@ -84,7 +84,7 @@ The **onItemCopying** function is executed when a user clicks **Delete** in the 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxFileManager from 'devextreme-vue/file-manager';
   

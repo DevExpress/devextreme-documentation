@@ -77,7 +77,7 @@ Configures the file and directory view.
         </DxFileManager>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.light.css';    
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';    
         
         import {
             DxFileManager,
@@ -102,7 +102,7 @@ Configures the file and directory view.
     <!-- tab: App.js -->
     import React from 'react';
     
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FileManager, { ItemView } from 'devextreme-react/file-manager';
     

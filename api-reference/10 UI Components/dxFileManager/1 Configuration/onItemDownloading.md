@@ -82,7 +82,7 @@ The component executes the **onItemDownloading** function when a user clicks **D
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxFileManager from 'devextreme-vue/file-manager';
   

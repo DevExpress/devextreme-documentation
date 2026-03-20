@@ -12,5 +12,5 @@ Configures the item context menu type.
 [note] When **menuMode** is *"slide"*, the List component does not allow text selection within items.
 
 #####See Also#####
-- [menuItems](/Documentation/ApiReference/UI_Components/dxList/Configuration/menuItems/)
+- [menuItems](/api-reference/10%20UI%20Components/dxList/1%20Configuration/menuItems '/Documentation/ApiReference/UI_Components/dxList/Configuration/menuItems/')
 - [List - Item Context Menu](/concepts/05%20UI%20Components/List/40%20Item%20Context%20Menu.md '/Documentation/Guide/UI_Components/List/Item_Context_Menu/')

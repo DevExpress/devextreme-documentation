@@ -5,10 +5,10 @@ default: null
 ---
 ---
 ##### shortDescription
-Specifies a custom template for date scale items.
+Specifies custom markup for a specific view's date scale cells.
 
 ##### param(itemData): Object
-The data of the current date scale item.
+The date cell's data.
 
 ##### param(itemIndex): Number
 The item's index.
@@ -20,12 +20,22 @@ The item's index.
 A template name or container.
 
 ---
+Configure **dateCellTemplate** to customize the date scale. To customize the time scale, specify [timeCellTemplate]({currentpath}/#timeCellTemplate).
+
+[note] This property is ignored in views that do not display the date scale: *"day"* and *"timelineDay"*.
+
+The **itemData** parameter of **dateCellTemplate** includes the following fields:
+
+- **date**: The cell's date.
+- **groupIndex**: The index of the group that contains the cell. Use this field to determine the cell's location among all displayed Scheduler [groups](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#groups).
+- **groups**: An object that contains key-value pairs of the cell's groups. Use this object to determine the cell's location in each group.
+- **text**: The cell's text.
+
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CustomizeIndividualViews/"
 }
 
-[note] There is no **dateCellTemplate** in such views as "day" and "timelineDay".
-
 #####See Also#####
+- [timeCellTemplate]({currentpath}/#timeCellTemplate)
 - [Customize Individual Views](/concepts/05%20UI%20Components/Scheduler/060%20Views/020%20Customize%20Individual%20Views.md '/Documentation/Guide/UI_Components/Scheduler/Views/Customize_Individual_Views/')
 - [Timetable](/concepts/05%20UI%20Components/Scheduler/050%20Timetable.md '/Documentation/Guide/UI_Components/Scheduler/Timetable/')

@@ -127,6 +127,6 @@ Values displayed in the row cells.
 ---
 
 #####See Also#####
-- [Customize Row Appearance](/Documentation/Guide/UI_Components/DataGrid/Columns/Customize_Cells/#Customize_Row_Appearance)
+- [Customize Row Appearance](/concepts/05%20UI%20Components/DataGrid/15%20Columns/40%20Customize%20Cells/3%20Customize%20Row%20Appearance.md '/Documentation/Guide/UI_Components/DataGrid/Columns/Customize_Cells/#Customize_Row_Appearance')
 
 <!-- import { field(e.isExpanded) } from 'api-reference\10 UI Components\dxDataGrid\1 Configuration\onRowClick.md' -->

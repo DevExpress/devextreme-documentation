@@ -27,7 +27,7 @@ Configure **dateCellTemplate** to customize the date scale. To customize the tim
 The **itemData** parameter of **dateCellTemplate** includes the following fields:
 
 - **date**: The cell's date.
-- **groupIndex**: The index of the group that contains the cell. Use this field to determine the cell's location among all displayed Scheduler [groups](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#groups).
+- **groupIndex**: The index of the group that contains the cell. Use this field to determine the cell's location among displayed Scheduler [groups](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#groups).
 - **groups**: An object that contains key-value pairs of the cell's groups. Use this object to determine the cell's location in each group.
 - **text**: The cell's text.
 

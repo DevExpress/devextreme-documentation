@@ -2,11 +2,13 @@ Dictionaries contain localized strings for different languages. These strings ar
 
 DevExtreme dictionaries are community-sourced. For a list of all available dictionaries, refer to the DevExtreme repository on GitHub: [DevExtreme Dictionaries](https://github.com/DevExpress/DevExtreme/tree/25_1/packages/devextreme/js/localization/messages).
 
+[note] Certain messages may not be translated in community-sourced dictionaries. To translate these messages, refer to [Override Strings in a Dictionary](/Documentation/Guide/Common/Localization/#Dictionaries/Override_Strings_in_a_Dictionary). To contribute translations to the DevExtreme repository, refer to our [Contribution Guide](https://github.com/DevExpress/DevExtreme/blob/25_1/CONTRIBUTING.md).
+
 To localize your project, import dictionaries from the following locations:
 
 - `js/localization` within the `devextreme-dist` package.
 - `js/localization` in DevExtreme libraries on the DevExpress CDN.
-- `C:\Program Files\DevExpress 25.2\Components\Sources\DevExtreme\Lib\js\localization` on your computer if you used the DevExpress Unified Component Installer.
+- `C:\Program Files\DevExpress 25.1\Components\Sources\DevExtreme\Lib\js\localization` on your computer if you used the DevExpress Unified Component Installer.
 
 ---
 ##### jQuery

@@ -5,10 +5,10 @@ default: null
 ---
 ---
 ##### shortDescription
-Specifies a custom template for day scale items.
+Specifies custom markup for date scale cells in all views.
 
 ##### param(itemData): Object
-The data of the current date scale item.
+The date cell's data.
 
 ##### param(itemIndex): Number
 The item's index.
@@ -20,43 +20,30 @@ The item's index.
 A template name or container.
 
 ---
-The following image shows the difference between Scheduler cell types:
+Scheduler includes the following cell types:
 
-![DevExtreme Scheduler - Cell Types](/images/Scheduler/scheduler-cells.png)
+- **Date cells**: Displayed in the date scale.
+- **Time cells**: Displayed in the time scale.
+- **Data cells**: Cells that display appointments.
 
-Use this template for date cells only.
+<img src="/images/Scheduler/scheduler-cells.png" alt="DevExtreme Scheduler cell types." style="width: 80%; border-radius: 12px;"/>
 
-The data of this template consists of the following fields:
+Configure **dateCellTemplate** to customize the date scale. To customize the time scale, use [timeCellTemplate]({currentpath}/#timeCellTemplate).
 
-<table class="dx-table full-width">
-    <tr>
-        <th>Field name</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td><code>date</code></td>    
-        <td>Date of the cell.</td>
-    </tr>
-    <tr>
-        <td><code>groups</code></td>          
-        <td>A group object to which date cell belongs.</td> 
-    </tr>
-    <tr>
-        <td><code>groupIndex</code></td>          
-        <td>Index of a group to which date cell belongs.</td> 
-    </tr>
-    <tr>
-        <td><code>text</code></td>          
-        <td>Text of date cell.</td> 
-    </tr>
-</table>
+[note] This property is ignored in views that do not display the date scale: *"day"* and *"timelineDay"*.
+
+The **itemData** parameter of **dateCellTemplate** includes the following fields:
+
+- **date**: The cell's date.
+- **groupIndex**: The index of the group that contains the cell. Use this field to determine the cell's location among displayed Scheduler [groups](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#groups).
+- **groups**: An object that contains key-value pairs of the cell's groups. Use this object to determine the cell's location in each group.
+- **text**: The cell's text.
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CellTemplates/"
 }
 
-[note]There is no **dateCellTemplate** in such views as "day" and "timelineDay".
-
 #####See Also#####
+- [timeCellTemplate]({currentpath}/#timeCellTemplate)
 - [Timetable](/concepts/05%20UI%20Components/Scheduler/050%20Timetable.md '/Documentation/Guide/UI_Components/Scheduler/Timetable/')
 - [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

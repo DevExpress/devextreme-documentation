@@ -20,14 +20,14 @@ The item's index.
 A template name or container.
 
 ---
-Configure **timeCellTemplate** to customize the time scale. To customize the date scale, specify [dateCellTemplate]({currentpath}/#dateCellTemplate).
+Configure **timeCellTemplate** to customize the time scale. To customize the date scale, use [dateCellTemplate]({currentpath}/#dateCellTemplate).
 
 [note] This property is ignored in views that do not display the time scale: *"month"*, *"timelineMonth"* and *"agenda"*.
 
 The **itemData** parameter of **timeCellTemplate** includes the following fields:
 
 - **date**: The cell's date.
-- **groupIndex**: The index of the group that contains the cell. Use this field to determine the cell's location among all displayed Scheduler [groups](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#groups).
+- **groupIndex**: The index of the group that contains the cell. Use this field to determine the cell's location among displayed Scheduler [groups](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#groups).
 - **groups**: An object that contains key-value pairs of the cell's groups. Use this object to determine the cell's location in each group.
 - **text**: The cell's text.
 

@@ -20,7 +20,7 @@ The item's index.
 A template name or container.
 
 ---
-Configure **dateCellTemplate** to customize the date scale. To customize the time scale, specify [timeCellTemplate]({currentpath}/#timeCellTemplate).
+Configure **dateCellTemplate** to customize the date scale. To customize the time scale, use [timeCellTemplate]({currentpath}/#timeCellTemplate).
 
 [note] This property is ignored in views that do not display the date scale: *"day"* and *"timelineDay"*.
 

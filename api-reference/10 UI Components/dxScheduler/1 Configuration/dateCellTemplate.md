@@ -28,14 +28,14 @@ Scheduler includes the following cell types:
 
 <img src="/images/Scheduler/scheduler-cells.png" alt="DevExtreme Scheduler cell types." style="width: 80%; border-radius: 12px;"/>
 
-Configure **dateCellTemplate** to customize the date scale. To customize the time scale, use [timeCellTemplate]({currentpath}/#timeCellTemplate).
+Configure **dateCellTemplate** to customize the date scale. To customize the time scale, use [timeCellTemplate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/timeCellTemplate.md '{currentpath}/#timeCellTemplate').
 
 [note] This property is ignored in views that do not display the date scale: *"day"* and *"timelineDay"*.
 
 The **itemData** parameter of **dateCellTemplate** includes the following fields:
 
 - **date**: The cell's date.
-- **groupIndex**: The index of the group that contains the cell. Use this field to determine the cell's location among displayed Scheduler [groups](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#groups).
+- **groupIndex**: The index of the group that contains the cell. Use this field to determine the cell's location among displayed Scheduler [groups](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/groups.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#groups').
 - **groups**: An object that contains key-value pairs of the cell's groups. Use this object to determine the cell's location in each group.
 - **text**: The cell's text.
 
@@ -44,6 +44,6 @@ The **itemData** parameter of **dateCellTemplate** includes the following fields
 }
 
 #####See Also#####
-- [timeCellTemplate]({currentpath}/#timeCellTemplate)
+- [timeCellTemplate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/timeCellTemplate.md '{currentpath}/#timeCellTemplate')
 - [Timetable](/concepts/05%20UI%20Components/Scheduler/050%20Timetable.md '/Documentation/Guide/UI_Components/Scheduler/Timetable/')
 - [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

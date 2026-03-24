@@ -5,9 +5,10 @@ notUsedInTheme:
 ---
 ---
 ##### param(pointInfo): dxPolarChartPointInfo
-<!-- Description goes here -->
+Information on the series point being pressed or hovered over with the mouse pointer.
 
 ##### return: Object
-<!-- Description goes here -->
+The tooltip's text or markup and appearance settings.
 
 ---
+#include dataviz-customize-tooltip-return

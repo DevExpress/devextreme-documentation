@@ -17064,6 +17064,9 @@
     "dxPopupOptions.showTitle": {
       "vue": "show-title"
     },
+    "dxPopupOptions.tabFocusLoopEnabled": {
+      "vue": "tab-focus-loop-enabled"
+    },
     "dxPopupOptions.titleTemplate": {
       "vue": "title-template"
     },

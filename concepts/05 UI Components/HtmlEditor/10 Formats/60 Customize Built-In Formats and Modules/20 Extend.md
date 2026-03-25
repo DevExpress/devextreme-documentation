@@ -69,7 +69,7 @@ In the following code, the `strike` format is extended so that the strikethrough
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxHtmlEditor } from 'devextreme-vue/html-editor';
 
@@ -102,7 +102,7 @@ In the following code, the `strike` format is extended so that the strikethrough
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { HtmlEditor } from 'devextreme-react/html-editor';
 

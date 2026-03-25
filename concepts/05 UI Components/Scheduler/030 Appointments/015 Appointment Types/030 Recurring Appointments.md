@@ -78,7 +78,7 @@ If your appointment data objects contain different fields that perform the funct
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
 
@@ -105,7 +105,7 @@ If your appointment data objects contain different fields that perform the funct
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';
     

@@ -81,7 +81,7 @@
     </template>
 
     <script setup lang="ts">
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxChart from 'devextreme-vue/chart';
     </script>
 
@@ -91,7 +91,7 @@
 
     <!-- tab: App.tsx -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import Chart from 'devextreme-react/chart';
 
     function App() {

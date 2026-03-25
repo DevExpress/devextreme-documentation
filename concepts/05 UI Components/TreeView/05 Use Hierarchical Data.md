@@ -99,7 +99,7 @@ As you can see, all items in a hierarchical data source have the **id** and **te
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTreeView } from 'devextreme-vue/tree-view';
 
@@ -136,7 +136,7 @@ As you can see, all items in a hierarchical data source have the **id** and **te
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeView from 'devextreme-react/tree-view';
 
@@ -244,7 +244,7 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTreeView } from 'devextreme-vue/tree-view';
 
@@ -279,7 +279,7 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeView from 'devextreme-react/tree-view';
 

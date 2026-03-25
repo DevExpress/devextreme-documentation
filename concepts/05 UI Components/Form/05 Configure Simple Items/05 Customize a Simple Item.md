@@ -102,7 +102,7 @@ If none of the available editors suit your requirements, you can define a custom
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxForm, {
         DxSimpleItem
@@ -132,7 +132,7 @@ If none of the available editors suit your requirements, you can define a custom
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Form, {
         SimpleItem
@@ -265,7 +265,7 @@ A simple item can be accompanied by a line of text that gives a hint, for exampl
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxForm, {
         DxSimpleItem
@@ -292,7 +292,7 @@ A simple item can be accompanied by a line of text that gives a hint, for exampl
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Form, {
         SimpleItem
@@ -405,7 +405,7 @@ You can modify automatically generated items using the [customizeItem](/api-refe
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxForm from 'devextreme-vue/form';
 
@@ -446,7 +446,7 @@ You can modify automatically generated items using the [customizeItem](/api-refe
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Form from 'devextreme-react/form';
 

@@ -79,7 +79,7 @@
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxPieChart } from 'devextreme-vue/pie-chart';
 
     export default {
@@ -96,7 +96,7 @@
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { PieChart } from 'devextreme-react/pie-chart';
 

@@ -175,7 +175,7 @@ You can use the DevExtreme validation engine to validate a custom value, for exa
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTextBox from "devextreme-vue/text-box";
     import DxValidator, { DxRequiredRule } from "devextreme-vue/validator";
@@ -230,7 +230,7 @@ You can use the DevExtreme validation engine to validate a custom value, for exa
     <!-- tab: App.js -->
     import { useState, useCallback } from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { TextBox } from 'devextreme-react/text-box';
     import { Button } from 'devextreme-react/button';
     import { Validator, RequiredRule } from 'devextreme-react/validator';

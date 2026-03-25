@@ -106,7 +106,7 @@ To change an item property at runtime, bind the property that should be changed 
         </div>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxForm, DxSimpleItem, DxGroupItem } from 'devextreme-vue/form';
     import { DxCheckBox } from 'devextreme-vue/check-box';
@@ -138,7 +138,7 @@ To change an item property at runtime, bind the property that should be changed 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Form, SimpleItem, GroupItem } from 'devextreme-react/form';
     import { CheckBox } from 'devextreme-react/check-box';

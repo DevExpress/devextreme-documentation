@@ -122,7 +122,7 @@ Call a group's [validate()](/api-reference/10%20UI%20Components/dxValidator/3%20
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTextBox from 'devextreme-vue/text-box';
     import DxValidator, {
@@ -163,7 +163,7 @@ Call a group's [validate()](/api-reference/10%20UI%20Components/dxValidator/3%20
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TextBox from 'devextreme-react/text-box';
     import Validator, { 
@@ -362,7 +362,7 @@ Alternatively, you can get a group's instance and call its [validate](/api-refer
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTextBox from 'devextreme-vue/text-box';
     import DxValidator, { DxRequiredRule } from 'devextreme-vue/validator';
@@ -400,7 +400,7 @@ Alternatively, you can get a group's instance and call its [validate](/api-refer
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TextBox } from 'devextreme-react/text-box';
     import { Button } from 'devextreme-react/button';

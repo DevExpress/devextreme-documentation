@@ -54,7 +54,7 @@ For a minor customization of Lookup items, you can define [specific fields](/api
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxLookup } from 'devextreme-vue/lookup';
 
@@ -77,7 +77,7 @@ For a minor customization of Lookup items, you can define [specific fields](/api
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Lookup } from 'devextreme-react/lookup';
 
@@ -198,7 +198,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxLookup } from 'devextreme-vue/lookup';
 
@@ -227,7 +227,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Lookup } from 'devextreme-react/lookup';
 
@@ -361,7 +361,7 @@ Using similar techniques, you can customize the input field of the Lookup. The t
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxLookup } from 'devextreme-vue/lookup';
 
@@ -390,7 +390,7 @@ Using similar techniques, you can customize the input field of the Lookup. The t
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Lookup } from 'devextreme-react/lookup';
 

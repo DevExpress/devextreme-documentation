@@ -108,7 +108,7 @@ If you need to update form data at runtime, use two-way binding to bind the [for
         </div>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxForm } from 'devextreme-vue/form';
     import { DxButton } from 'devextreme-vue/button';
@@ -143,7 +143,7 @@ If you need to update form data at runtime, bind the [formData](/api-reference/1
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Form } from 'devextreme-react/form';
     import { Button } from 'devextreme-react/button';

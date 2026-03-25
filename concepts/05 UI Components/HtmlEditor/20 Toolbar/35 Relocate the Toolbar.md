@@ -56,7 +56,7 @@ In the following code, the toolbar is placed in a separate `<div>` under the HTM
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         DxHtmlEditor,
@@ -74,7 +74,7 @@ In the following code, the toolbar is placed in a separate `<div>` under the HTM
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { HtmlEditor, Toolbar } from 'devextreme-react/html-editor';
 

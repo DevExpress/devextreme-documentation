@@ -49,7 +49,7 @@ Items can be arranged in a row or in a column depending on the value of the [dir
         </DxBox>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxBox } from 'devextreme-vue/box';
 
@@ -64,7 +64,7 @@ Items can be arranged in a row or in a column depending on the value of the [dir
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Box from 'devextreme-react/box';
 
@@ -154,7 +154,7 @@ If the Box items do not occupy the entire Box, you can align them along and cros
         </DxBox>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxBox } from 'devextreme-vue/box';
 
@@ -169,7 +169,7 @@ If the Box items do not occupy the entire Box, you can align them along and cros
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Box from 'devextreme-react/box';
 

@@ -99,7 +99,7 @@ To switch the Gallery to the next or previous image, call the [nextItem(animatio
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxGallery } from 'devextreme-vue/gallery';
     import { DxButton } from 'devextreme-vue/button';
@@ -133,7 +133,7 @@ To switch the Gallery to the next or previous image, call the [nextItem(animatio
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Gallery } from 'devextreme-react/gallery';
     import { Button } from 'devextreme-react/button';
@@ -227,7 +227,7 @@ To navigate to a specific image, call the [goToItem(itemIndex, animation)](/api-
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxGallery } from 'devextreme-vue/gallery';
 

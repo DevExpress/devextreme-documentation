@@ -57,7 +57,7 @@ By default, the ContextMenu appears when a user right-clicks the [target element
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxContextMenu from 'devextreme-vue/context-menu';
 
@@ -81,7 +81,7 @@ By default, the ContextMenu appears when a user right-clicks the [target element
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { ContextMenu } from 'devextreme-react/context-menu';
 
@@ -171,7 +171,7 @@ The ContextMenu is hidden when a user clicks anywhere outside it. You can redefi
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxContextMenu from 'devextreme-vue/context-menu';
 
@@ -200,7 +200,7 @@ The ContextMenu is hidden when a user clicks anywhere outside it. You can redefi
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { ContextMenu } from 'devextreme-react/context-menu';
 

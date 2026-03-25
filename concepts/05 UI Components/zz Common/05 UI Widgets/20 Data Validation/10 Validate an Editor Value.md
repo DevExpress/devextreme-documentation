@@ -82,7 +82,7 @@ Associate a DevExtreme editor with the [Validator](/api-reference/10%20UI%20Comp
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTextBox from 'devextreme-vue/text-box';
     import DxValidator, {
@@ -110,7 +110,7 @@ Associate a DevExtreme editor with the [Validator](/api-reference/10%20UI%20Comp
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TextBox from 'devextreme-react/text-box';
     import Validator, {

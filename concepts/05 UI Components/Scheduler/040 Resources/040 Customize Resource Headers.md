@@ -98,7 +98,7 @@ Implement a Vue template and assign it to the [resourceCellTemplate](/api-refere
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxScheduler, { DxResource } from 'devextreme-vue/scheduler';
 
@@ -135,7 +135,7 @@ Implement a callback function with custom template and assign it to the [resourc
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Scheduler, { Resource } from 'devextreme-react/scheduler';
 

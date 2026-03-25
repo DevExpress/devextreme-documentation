@@ -62,7 +62,7 @@ Swipe can be used to [delete an item](/concepts/05%20UI%20Components/List/35%20I
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         import DxList from 'devextreme-vue/list';
 
         export default {
@@ -82,7 +82,7 @@ Swipe can be used to [delete an item](/concepts/05%20UI%20Components/List/35%20I
 
         <!-- tab: App.js -->
         import React from 'react';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         import List from 'devextreme-react/list';
 
         const onItemSwipe = (e) => {
@@ -146,7 +146,7 @@ Long tap can be used to access the commands of the [context menu](/concepts/05%2
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         import DxList from 'devextreme-vue/list';
 
         export default {
@@ -161,7 +161,7 @@ Long tap can be used to access the commands of the [context menu](/concepts/05%2
 
         <!-- tab: App.js -->
         import React from 'react';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         import List from 'devextreme-react/list';
 
         export default function App() {
@@ -219,7 +219,7 @@ This gesture refreshes data in the List. To enable it, assign **true** to the [p
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         import DxList from 'devextreme-vue/list';
 
         export default {
@@ -234,7 +234,7 @@ This gesture refreshes data in the List. To enable it, assign **true** to the [p
 
         <!-- tab: App.js -->
         import React from 'react';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         import List from 'devextreme-react/list';
 
         export default function App() {

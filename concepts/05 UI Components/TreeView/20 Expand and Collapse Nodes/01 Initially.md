@@ -77,7 +77,7 @@ If a node is supposed to be expanded initially, set its [expanded](/api-referenc
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
     import { DxTreeView } from 'devextreme-vue/tree-view';
 
@@ -116,7 +116,7 @@ If a node is supposed to be expanded initially, set its [expanded](/api-referenc
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
     import TreeView from 'devextreme-react/tree-view';
 

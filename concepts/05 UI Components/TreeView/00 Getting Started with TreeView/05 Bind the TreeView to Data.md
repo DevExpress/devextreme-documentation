@@ -386,7 +386,7 @@ The TreeView supports plain and hierarchical data structures. To use plain data,
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeView from 'devextreme-react/tree-view';
     import products from './products';

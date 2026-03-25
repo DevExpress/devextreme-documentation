@@ -78,7 +78,7 @@ The Scheduler UI component allows you to customize its timetable. You can specif
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxScheduler } from 'devextreme-vue/scheduler';
 
@@ -109,7 +109,7 @@ The Scheduler UI component allows you to customize its timetable. You can specif
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Scheduler } from 'devextreme-react/scheduler';
 
@@ -277,7 +277,7 @@ For a more detailed customization, define custom templates for cells, time scale
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxScheduler } from 'devextreme-vue/scheduler';
 
@@ -304,7 +304,7 @@ For a more detailed customization, define custom rendering functions for cells, 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Scheduler } from 'devextreme-react/scheduler';
 

@@ -74,7 +74,7 @@ Searching is disabled in the TreeView UI component by default. Assign **true** t
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTreeView } from 'devextreme-vue/tree-view';
 
@@ -105,7 +105,7 @@ Searching is disabled in the TreeView UI component by default. Assign **true** t
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeView from 'devextreme-react/tree-view';
 
@@ -210,7 +210,7 @@ When a user types a string in the input field, the TreeView suggests all nodes t
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTreeView } from 'devextreme-vue/tree-view';
 
@@ -241,7 +241,7 @@ When a user types a string in the input field, the TreeView suggests all nodes t
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeView from 'devextreme-react/tree-view';
 
@@ -351,7 +351,7 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
         </DxTreeView>    
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeView, {
         DxSearchEditorOptions
@@ -384,7 +384,7 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TreeView, SearchEditorOptions } from 'devextreme-react/tree-view';
 

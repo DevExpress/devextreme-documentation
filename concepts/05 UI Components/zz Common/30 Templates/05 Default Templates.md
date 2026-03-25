@@ -70,7 +70,7 @@ You can achieve the same in the markup using the [dxItem](/api-reference/10%20UI
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxList, {
         DxItem
@@ -89,7 +89,7 @@ You can achieve the same in the markup using the [dxItem](/api-reference/10%20UI
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import List, { Item } from 'devextreme-react/list';
 

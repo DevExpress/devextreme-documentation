@@ -61,7 +61,7 @@ The following code adds the Gallery UI component to your page. The simplest conf
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxGallery } from 'devextreme-vue/gallery';
 
@@ -85,7 +85,7 @@ The following code adds the Gallery UI component to your page. The simplest conf
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Gallery } from 'devextreme-react/gallery';
 

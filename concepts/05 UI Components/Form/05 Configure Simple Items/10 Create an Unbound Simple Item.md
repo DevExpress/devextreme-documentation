@@ -128,7 +128,7 @@ In the following example, the `order` item contains the [DataGrid](/concepts/05%
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxForm, {
         DxSimpleItem,
@@ -171,7 +171,7 @@ In the following example, the `order` item contains the [DataGrid](/concepts/05%
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Form, {
         SimpleItem,

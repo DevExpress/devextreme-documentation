@@ -202,7 +202,7 @@ The following code creates a simple ResponsiveBox. The UI component defines an o
         </DxResponsiveBox>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxResponsiveBox, DxItem, DxLocation, DxCol, DxRow } from 'devextreme-vue/responsive-box';
 
@@ -234,7 +234,7 @@ The following code creates a simple ResponsiveBox. The UI component defines an o
 
     <!--HTML-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import ResponsiveBox, { Row, Col, Item, Location } from 'devextreme-react/responsive-box';
 

@@ -71,7 +71,7 @@
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxCheckBox } from 'devextreme-vue/check-box';
 
     export default {
@@ -88,7 +88,7 @@
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { CheckBox } from 'devextreme-react/check-box';
 

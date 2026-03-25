@@ -66,7 +66,7 @@ If the user should be able to collapse or expand a group in the List, set the [c
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxList from 'devextreme-vue/list';
 
@@ -97,7 +97,7 @@ If the user should be able to collapse or expand a group in the List, set the [c
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import List from 'devextreme-react/list';
 
@@ -173,7 +173,7 @@ To collapse or expand a specific group programmatically, call the [collapseGroup
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxList from 'devextreme-vue/list';
 
@@ -209,7 +209,7 @@ To collapse or expand a specific group programmatically, call the [collapseGroup
 
     <!-- tab: App.js -->
     import React, { useRef } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import List from 'devextreme-react/list';
     // ...

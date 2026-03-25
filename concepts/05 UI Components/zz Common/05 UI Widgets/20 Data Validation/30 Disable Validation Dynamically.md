@@ -163,7 +163,7 @@ The following example illustrates this case. A page contains two [TextBoxes](/ap
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTextBox, DxButton, DxCheckBox } from 'devextreme-vue';
     import {
@@ -206,7 +206,7 @@ The following example illustrates this case. A page contains two [TextBoxes](/ap
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { 
         CheckBox, 

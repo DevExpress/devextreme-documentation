@@ -37,7 +37,7 @@ The List supports *"single"*, *"multiple"*, and *"all"* item selection modes. To
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     function App() {
         return (

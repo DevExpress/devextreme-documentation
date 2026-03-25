@@ -66,7 +66,7 @@ To specify whether the LoadIndicator is shown, change the [visible](/api-referen
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxLoadIndicator } from 'devextreme-vue/load-indicator';
     import { DxButton } from 'devextreme-vue/button';
@@ -92,7 +92,7 @@ To specify whether the LoadIndicator is shown, change the [visible](/api-referen
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { LoadIndicator } from 'devextreme-react/load-indicator';
     import { Button } from 'devextreme-react/button';

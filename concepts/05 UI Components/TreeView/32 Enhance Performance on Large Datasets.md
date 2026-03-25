@@ -69,7 +69,7 @@ To enable the Virtual Mode, set the [virtualModeEnabled](/api-reference/10%20UI%
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTreeView } from 'devextreme-vue/tree-view';
 
@@ -99,7 +99,7 @@ To enable the Virtual Mode, set the [virtualModeEnabled](/api-reference/10%20UI%
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeView from 'devextreme-react/tree-view';
 
@@ -195,7 +195,7 @@ If the Virtual Mode does not meet your requirements, you can get full control ov
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTreeView } from 'devextreme-vue/tree-view';
     import 'whatwg-fetch';
@@ -221,7 +221,7 @@ If the Virtual Mode does not meet your requirements, you can get full control ov
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeView from 'devextreme-react/tree-view';
     import 'whatwg-fetch';

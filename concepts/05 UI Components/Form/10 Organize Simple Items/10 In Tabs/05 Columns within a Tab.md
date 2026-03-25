@@ -104,7 +104,7 @@ The content of a tab can be organized in columns. The [colCount](/api-reference/
         </DxForm>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxForm, DxSimpleItem, DxTabbedItem, DxTab } from 'devextreme-vue/form';
 
@@ -134,7 +134,7 @@ The content of a tab can be organized in columns. The [colCount](/api-reference/
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Form, SimpleItem, TabbedItem, Tab } from 'devextreme-react/form';
 

@@ -80,7 +80,7 @@ For a minor customization of Scheduler appointments, you can define [specific fi
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
 
@@ -118,7 +118,7 @@ For a minor customization of Scheduler appointments, you can define [specific fi
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';
 
@@ -263,7 +263,7 @@ If you need a more flexible solution, define a custom template. The following co
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
 
@@ -299,7 +299,7 @@ If you need a more flexible solution, define a rendering function. The following
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';
 

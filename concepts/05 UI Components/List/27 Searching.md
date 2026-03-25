@@ -70,7 +70,7 @@ Searching is disabled in the List UI component by default. Assign **true** to th
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxList from 'devextreme-vue/list';
 
     const listData = [
@@ -95,7 +95,7 @@ Searching is disabled in the List UI component by default. Assign **true** to th
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import List from 'devextreme-react/list';
 
     const listData = [
@@ -213,7 +213,7 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxList, {
         DxSearchEditorOptions
     } from 'devextreme-vue/list';
@@ -231,7 +231,7 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import List, {
         SearchEditorOptions
     } from 'devextreme-react/list';

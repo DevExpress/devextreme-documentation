@@ -59,7 +59,7 @@ Pass the index to the [reorderItem(itemIndex, toItemIndex)](/api-reference/10%20
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxList from 'devextreme-vue/list';
 
     const listRefKey = "my-list";
@@ -100,7 +100,7 @@ Pass the index to the [reorderItem(itemIndex, toItemIndex)](/api-reference/10%20
 
     <!-- tab: App.js -->
     import React, { useRef } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import List from 'devextreme-react/list';
     // ...

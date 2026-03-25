@@ -58,7 +58,7 @@ Specify a tab's [title](/api-reference/_hidden/dxTabPanelItem/title.md '/Documen
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTabPanel, { DxItem } from "devextreme-vue/tab-panel";
 
@@ -74,7 +74,7 @@ Specify a tab's [title](/api-reference/_hidden/dxTabPanelItem/title.md '/Documen
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TabPanel, { Item } from "devextreme-react/tab-panel";
 

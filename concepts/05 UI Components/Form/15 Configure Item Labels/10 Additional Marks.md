@@ -70,7 +70,7 @@ To specify the mark or text for required and optional items, use the [requiredMa
         </DxForm>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxForm, DxSimpleItem } from 'devextreme-vue/form';
 
@@ -97,7 +97,7 @@ To specify the mark or text for required and optional items, use the [requiredMa
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Form, SimpleItem } from 'devextreme-react/form';
 
@@ -193,7 +193,7 @@ Each label ends with a colon. To hide it, assign **false** to the [showColonAfte
         </DxForm>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxForm, DxSimpleItem, DxLabel } from 'devextreme-vue/form';
 
@@ -220,7 +220,7 @@ Each label ends with a colon. To hide it, assign **false** to the [showColonAfte
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Form, SimpleItem, Label } from 'devextreme-react/form';
 

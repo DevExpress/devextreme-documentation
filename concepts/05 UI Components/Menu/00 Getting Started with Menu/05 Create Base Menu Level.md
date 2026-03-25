@@ -134,7 +134,7 @@ To create a base Menu level, define the component in the markup and populate it 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Menu, { Item } from 'devextreme-react/menu';
 

@@ -74,7 +74,7 @@ You can use the following code to create the ButtonGroup:
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxButtonGroup } from 'devextreme-vue/button-group';
 
@@ -89,7 +89,7 @@ You can use the following code to create the ButtonGroup:
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { ButtonGroup } from 'devextreme-react/button-group';
 

@@ -74,7 +74,7 @@ You can use the following code to create a DropDownButton:
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDropDownButton from 'devextreme-vue/drop-down-button';
 
@@ -90,7 +90,7 @@ You can use the following code to create a DropDownButton:
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DropDownButton from 'devextreme-react/drop-down-button';
 

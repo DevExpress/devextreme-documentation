@@ -98,7 +98,7 @@ By default, the UI component aligns all editors of all simple items in straight 
         </DxForm>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxForm, DxSimpleItem, DxGroupItem } from 'devextreme-vue/form';
 
@@ -129,7 +129,7 @@ By default, the UI component aligns all editors of all simple items in straight 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Form, SimpleItem, GroupItem } from 'devextreme-react/form';
 

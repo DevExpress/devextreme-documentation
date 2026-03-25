@@ -71,7 +71,7 @@ To process a new Switch value, you need to handle the value change event. If the
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxSwitch from 'devextreme-vue/switch';
 
@@ -97,7 +97,7 @@ To process a new Switch value, you need to handle the value change event. If the
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Switch from 'devextreme-react/switch';
 

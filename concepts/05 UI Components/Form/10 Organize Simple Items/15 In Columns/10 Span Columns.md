@@ -85,7 +85,7 @@ If an item should span more than one column, assign the required number to the [
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxForm, DxSimpleItem, DxTabbedItem, DxTab } from 'devextreme-vue/form';
 
@@ -112,7 +112,7 @@ If an item should span more than one column, assign the required number to the [
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Form, SimpleItem, TabbedItem, Tab } from 'devextreme-react/form';
 

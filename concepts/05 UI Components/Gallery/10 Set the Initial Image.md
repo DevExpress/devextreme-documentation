@@ -54,7 +54,7 @@ By default, the image that the Gallery UI component displays initially is the fi
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxGallery } from 'devextreme-vue/gallery';
 
@@ -77,7 +77,7 @@ By default, the image that the Gallery UI component displays initially is the fi
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Gallery } from 'devextreme-react/gallery';
 
@@ -172,7 +172,7 @@ As an alternative, you can specify the initial image using its data source objec
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxGallery } from 'devextreme-vue/gallery';
 
@@ -201,7 +201,7 @@ As an alternative, you can specify the initial image using its data source objec
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Gallery } from 'devextreme-react/gallery';
 

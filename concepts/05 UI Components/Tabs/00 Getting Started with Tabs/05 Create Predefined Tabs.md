@@ -107,7 +107,7 @@ You can use predefined item features to customize the items. The code below crea
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxTabs, { DxItem } from 'devextreme-vue/tabs';
 
     export default {
@@ -132,7 +132,7 @@ You can use predefined item features to customize the items. The code below crea
     import React from 'react';
     import Tabs, { Item } from 'devextreme-react/tabs';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     function App() {
         return (

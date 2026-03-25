@@ -85,7 +85,7 @@ Items in the List are grouped if they are grouped in the data source. The List r
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxList from 'devextreme-vue/list';
 
@@ -121,7 +121,7 @@ Items in the List are grouped if they are grouped in the data source. The List r
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import List from 'devextreme-react/list';
 
@@ -270,7 +270,7 @@ If objects in your data source miss the **key** and **items** fields, use the [m
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxList from 'devextreme-vue/list';
     import DataSource from 'devextreme/data/data_source';
@@ -317,7 +317,7 @@ If objects in your data source miss the **key** and **items** fields, use the [m
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import List from 'devextreme-react/list';
     import DataSource from 'devextreme/data/data_source';
@@ -447,7 +447,7 @@ If your data is not grouped at all, you can group it using the [group](/api-refe
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxList from 'devextreme-vue/list';
     import DataSource from 'devextreme/data/data_source';
@@ -482,7 +482,7 @@ If your data is not grouped at all, you can group it using the [group](/api-refe
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import List from 'devextreme-react/list';
     import DataSource from 'devextreme/data/data_source';

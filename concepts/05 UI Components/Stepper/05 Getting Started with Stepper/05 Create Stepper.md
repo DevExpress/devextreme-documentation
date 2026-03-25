@@ -79,7 +79,7 @@
     <script setup lang="ts">
         import { reactive } from 'vue';
         import { DxStepper, DxItem, DxStepperTypes } from 'devextreme-vue/stepper';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         const items: DxStepperTypes.Item[] = reactive([
             {}
@@ -101,7 +101,7 @@
     <!-- tab: App.tsx -->
     import React, { JSX, useState } from 'react';
     import { Stepper, Item, StepperTypes } from 'devextreme-react/stepper';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     export default function App(): JSX.Element {
         const [steps, setSteps] = useState<any[]>([

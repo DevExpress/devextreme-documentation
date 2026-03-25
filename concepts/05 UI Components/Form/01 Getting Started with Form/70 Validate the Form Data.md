@@ -101,7 +101,7 @@ The following example sets the **isRequired** property for the `Name` item. It a
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { 
         DxForm, 
@@ -133,7 +133,7 @@ The following example sets the **isRequired** property for the `Name` item. It a
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         Form,

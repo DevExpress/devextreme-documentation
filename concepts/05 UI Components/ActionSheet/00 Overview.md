@@ -93,7 +93,7 @@ The following code adds a simple ActionSheet to your page. The UI component is s
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxActionSheet from 'devextreme-vue/action-sheet';
     import DxButton from 'devextreme-vue/button';
@@ -129,7 +129,7 @@ The following code adds a simple ActionSheet to your page. The UI component is s
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { ActionSheet } from 'devextreme-react/action-sheet';
     import { Button } from 'devextreme-react/button';

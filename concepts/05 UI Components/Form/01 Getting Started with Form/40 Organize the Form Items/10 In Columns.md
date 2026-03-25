@@ -96,7 +96,7 @@ An item can span multiple columns. The example below sets the [colSpan](/api-ref
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxForm, DxSimpleItem } from 'devextreme-vue/form';
     
@@ -125,7 +125,7 @@ An item can span multiple columns. The example below sets the [colSpan](/api-ref
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         Form,

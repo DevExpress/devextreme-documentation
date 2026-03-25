@@ -156,7 +156,7 @@ The code below shows how to add a submit button, but does not show how to implem
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { 
         DxForm, 
@@ -207,7 +207,7 @@ The code below shows how to add a submit button, but does not show how to implem
 
     <!-- tab: App.js -->
     import React, { useCallback } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         Form,
@@ -338,7 +338,7 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { 
         DxForm, 
@@ -373,7 +373,7 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         Form,

@@ -66,7 +66,7 @@ All layout elements are arranged against a [layout grid](/concepts/05%20UI%20Com
         </DxResponsiveBox>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxResponsiveBox, DxCol, DxRow } from 'devextreme-vue/responsive-box';
 
@@ -86,7 +86,7 @@ All layout elements are arranged against a [layout grid](/concepts/05%20UI%20Com
 
     <!--HTML-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import ResponsiveBox, { Row, Col } from 'devextreme-react/responsive-box';
 
@@ -284,7 +284,7 @@ Every layout element has the [location](/api-reference/_hidden/dxResponsiveBoxIt
         </DxResponsiveBox>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxResponsiveBox, DxItem, DxLocation, DxCol, DxRow } from 'devextreme-vue/responsive-box';
 
@@ -316,7 +316,7 @@ Every layout element has the [location](/api-reference/_hidden/dxResponsiveBoxIt
 
     <!--HTML-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import ResponsiveBox, { Row, Col, Item, Location } from 'devextreme-react/responsive-box';
 
@@ -448,7 +448,7 @@ If on some screens, all elements should be arranged in a single column, assign t
         </DxResponsiveBox>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxResponsiveBox, DxCol, DxRow } from 'devextreme-vue/responsive-box';
 
@@ -468,7 +468,7 @@ If on some screens, all elements should be arranged in a single column, assign t
 
     <!--HTML-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import ResponsiveBox, { Row, Col } from 'devextreme-react/responsive-box';
 

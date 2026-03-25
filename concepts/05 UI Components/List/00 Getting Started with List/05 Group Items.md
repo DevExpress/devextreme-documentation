@@ -82,7 +82,7 @@ You can also display a hierarchy in a list bound to a flat array. In this case, 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     // ...    
     import { products } from './products';

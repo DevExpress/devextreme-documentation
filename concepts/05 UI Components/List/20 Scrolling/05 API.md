@@ -128,7 +128,7 @@ The following examples shows how to call these methods.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxList from 'devextreme-vue/list';
 
     const listRefKey = "my-list";
@@ -188,7 +188,7 @@ The following examples shows how to call these methods.
 
     <!-- tab: App.js -->
     import React, { useRef } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import List from 'devextreme-react/list';
     // ...

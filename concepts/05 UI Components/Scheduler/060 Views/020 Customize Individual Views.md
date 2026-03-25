@@ -90,7 +90,7 @@ The following code snippet customizes the *"day"* and *"workWeek"* views. This e
 
     <script>
     import { DxScheduler, DxResource, DxView } from 'devextreme-vue/scheduler';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     </script>
 
@@ -112,7 +112,7 @@ The following code snippet customizes the *"day"* and *"workWeek"* views. This e
 
     <!-- tab: App.tsx -->
     import { Scheduler, Resource, View } from 'devextreme-react/scheduler';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     function renderTimeCell(data: {text: string}): JSX.Element {
         return (

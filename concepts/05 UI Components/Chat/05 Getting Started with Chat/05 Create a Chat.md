@@ -71,7 +71,7 @@
     </template>
 
     <script setup>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxChat } from 'devextreme-vue/chat';
     </script>
 
@@ -82,7 +82,7 @@
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Chat } from 'devextreme-react/chat';
 

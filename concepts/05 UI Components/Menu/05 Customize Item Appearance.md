@@ -70,7 +70,7 @@ For a minor customization of Menu items, you can define [specific fields](/api-r
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxMenu from 'devextreme-vue/menu';
 
@@ -102,7 +102,7 @@ For a minor customization of Menu items, you can define [specific fields](/api-r
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Menu } from 'devextreme-react/menu';
 
@@ -216,7 +216,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
         </DxMenu>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxMenu from 'devextreme-vue/menu';
 
@@ -248,7 +248,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Menu } from 'devextreme-react/menu';
 

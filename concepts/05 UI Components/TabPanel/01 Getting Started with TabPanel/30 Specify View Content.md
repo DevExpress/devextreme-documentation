@@ -233,7 +233,7 @@ This tutorial demonstrates the use of the **items[]**.**template** property. Thi
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTabPanel, { DxItem } from "devextreme-vue/tab-panel";
     import DxForm, { DxSimpleItem, DxLabel } from "devextreme-vue/form";
@@ -270,7 +270,7 @@ This tutorial demonstrates the use of the **items[]**.**template** property. Thi
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TabPanel, { Item } from "devextreme-react/tab-panel";
     import Form, { SimpleItem, Label } from "devextreme-react/form";

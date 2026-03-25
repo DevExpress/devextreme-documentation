@@ -116,7 +116,7 @@ The following code creates two groups, each occupies a separate column. The resu
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxForm, DxSimpleItem, DxGroupItem } from 'devextreme-vue/form';
     
@@ -148,7 +148,7 @@ The following code creates two groups, each occupies a separate column. The resu
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         Form,

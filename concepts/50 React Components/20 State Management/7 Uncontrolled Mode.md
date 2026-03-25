@@ -14,3 +14,5 @@ To specify an initial property value in this mode, add the `default` prefix to p
             />
         );
     };
+
+[note] You cannot use this approach to specify an initial `dataSource`.

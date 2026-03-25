@@ -175,13 +175,15 @@ Assign the field's name to the DropDownBox's [valueExpr](/api-reference/10%20UI%
     ---
 
 1. **Synchronize the DropDownBox's value and the embedded UI component's selection**        
-This step's implementation depends on the embedded UI component's API and the library/framework you use. If the library/framework supports two-way binding, you can bind the DropDownBox's [value](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#value') and the UI component's **selectedRowKeys**/**selectedItemKeys** to the same variable. If not, handle events as described below.
+This step's implementation depends on the embedded UI component's API and the library/framework you use. If the library/framework supports two-way binding, you can bind the DropDownBox's [value](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#value') and the UI component's **selectedRowKeys**/**selectedItemKeys** to the same variable. If not, handle events as follows:
     1. **Set the initial selection in the embedded UI component**     
         Implement the UI component's **onContentReady** handler to select data items according to the DropDownBox's initial value. In some UI components, you can set the **selectedRowKeys** or **selectedItemKeys** option instead.
     1. **Update the selection**     
         Implement the DropDownBox's [onValueChanged](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onValueChanged') handler to update the selection when the DropDownBox's value changes.
     1. **Update the DropDownBox's value**     
         Implement the embedded UI component's **onSelectionChanged** handler to update the DropDownBox's value when the selection changes.
+
+    [important] Ensure the type of **value** matches the **selectedRowKeys**/**selectedItemKeys** type (such as [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)).
 
     ---
     ##### jQuery

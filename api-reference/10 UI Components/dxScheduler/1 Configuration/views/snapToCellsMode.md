@@ -22,11 +22,11 @@ The default **snapToCellsMode** value varies by view:
     </tr>
     <tr>
         <td><i>"never"</i></td>
-        <td>Day, Week, WorkWeek, TimelineDay, TimelineWeek, TimelineWorkWeek</td>
+        <td><i>"day"</i>, <i>"week"</i>, <i>"workWeek"</i>, <i>"timelineDay"</i>, <i>"timelineWeek"</i>, <i>"timelineWorkWeek"</i></td>
     </tr>
     <tr>
         <td><i>"always"</i></td>
-        <td>Month, Agenda, TimelineMonth</td>
+        <td><i>"month"</i>, <i>"agenda"</i>, <i>"timelineMonth"</i></td>
     </tr>
 </table>
 

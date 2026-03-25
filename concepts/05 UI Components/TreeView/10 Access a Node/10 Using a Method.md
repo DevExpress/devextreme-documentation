@@ -38,7 +38,7 @@ Call the [getNodes()](/api-reference/10%20UI%20Components/dxTreeView/3%20Methods
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
         
     import { DxTreeView } from 'devextreme-vue/tree-view';
     const treeViewRef = 'treeView';
@@ -71,7 +71,7 @@ Call the [getNodes()](/api-reference/10%20UI%20Components/dxTreeView/3%20Methods
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
     import TreeView from 'devextreme-react/tree-view';
 

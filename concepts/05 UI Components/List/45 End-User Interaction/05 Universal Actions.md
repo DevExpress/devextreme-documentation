@@ -61,7 +61,7 @@ Universal actions are those actions that raise the same event despite being perf
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         import DxList from 'devextreme-vue/list';
 
         export default {
@@ -81,7 +81,7 @@ Universal actions are those actions that raise the same event despite being perf
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import List from 'devextreme-react/list';
 
     const onItemClick = (e) => {

@@ -153,7 +153,7 @@ In the code below, the [CheckBox](/api-reference/10%20UI%20Components/dxCheckBox
     <!-- tab: App.js -->
     import React, { useState, useCallback } from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Menu, { Item } from 'devextreme-react/menu';
     import CheckBox from 'devextreme-react/check-box';

@@ -48,7 +48,7 @@ If you want to allow the user to reorder items on the List, define the [itemDrag
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxList, {
         DxItemDragging
     } from 'devextreme-vue/list';
@@ -66,7 +66,7 @@ If you want to allow the user to reorder items on the List, define the [itemDrag
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import List, {
         ItemDragging
     } from 'devextreme-react/list';

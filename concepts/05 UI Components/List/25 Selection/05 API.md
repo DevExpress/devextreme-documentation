@@ -74,7 +74,7 @@ To configure the initial selection or access selected item keys, use the [select
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxList from 'devextreme-vue/list';
 
     export default {
@@ -105,7 +105,7 @@ To configure the initial selection or access selected item keys, use the [select
 
     <!-- tab: App.js -->
     import React, { useState } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import List from 'devextreme-react/list';
 

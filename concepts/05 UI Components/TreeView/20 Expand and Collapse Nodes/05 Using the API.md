@@ -44,7 +44,7 @@ You can use the [expandAll()](/api-reference/10%20UI%20Components/dxTreeView/3%2
             />
         </template>
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import { DxTreeView } from 'devextreme-vue/tree-view';
 
@@ -82,7 +82,7 @@ You can use the [expandAll()](/api-reference/10%20UI%20Components/dxTreeView/3%2
         <!-- tab: App.js -->
         import React from 'react';
 
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import TreeView from 'devextreme-react/tree-view';
 
@@ -161,7 +161,7 @@ Call the [expandItem(key)](/api-reference/10%20UI%20Components/dxTreeView/3%20Me
             />
         </template>
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import { DxTreeView } from 'devextreme-vue/tree-view';
 
@@ -199,7 +199,7 @@ Call the [expandItem(key)](/api-reference/10%20UI%20Components/dxTreeView/3%20Me
         <!-- tab: App.js -->
         import React from 'react';
 
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import TreeView from 'devextreme-react/tree-view';
         const data = [ ... ];

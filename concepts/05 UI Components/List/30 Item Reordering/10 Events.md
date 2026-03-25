@@ -57,7 +57,7 @@ To execute certain commands when an item changes its position, handle the [itemR
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxList from 'devextreme-vue/list';
 
     export default {
@@ -81,7 +81,7 @@ To execute certain commands when an item changes its position, handle the [itemR
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import List from 'devextreme-react/list';
 
     const onItemReordered = (e) => {

@@ -252,7 +252,7 @@ The code example below specifies the [dataSource](/api-reference/10%20UI%20Compo
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxAutocomplete } from 'devextreme-vue/autocomplete';
     import { employeesTasks } from './data.js';
 
@@ -341,7 +341,7 @@ The code example below specifies the [dataSource](/api-reference/10%20UI%20Compo
 ##### React
 
     <!-- tab: App.js -->
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { employeesTasks } from './data';
     import { Autocomplete } from 'devextreme-react';
 

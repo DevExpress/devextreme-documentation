@@ -45,7 +45,7 @@ Use the [showCurrentTimeIndicator](/api-reference/10%20UI%20Components/dxSchedul
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxScheduler } from 'devextreme-vue/scheduler';
 
@@ -60,7 +60,7 @@ Use the [showCurrentTimeIndicator](/api-reference/10%20UI%20Components/dxSchedul
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Scheduler } from 'devextreme-react/scheduler';
 
@@ -124,7 +124,7 @@ Additionally, you can apply shading to cover the timetable up to the current tim
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxScheduler } from 'devextreme-vue/scheduler';
 
@@ -139,7 +139,7 @@ Additionally, you can apply shading to cover the timetable up to the current tim
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Scheduler } from 'devextreme-react/scheduler';
 

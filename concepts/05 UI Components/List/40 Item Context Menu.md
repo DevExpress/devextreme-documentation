@@ -113,7 +113,7 @@ If you want to offer the user a set of commands related to a List item, you can 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxList, {
         DxMenuItem
     } from 'devextreme-vue/list';
@@ -154,7 +154,7 @@ If you want to offer the user a set of commands related to a List item, you can 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import List, {
         MenuItem
     } from 'devextreme-react/list';

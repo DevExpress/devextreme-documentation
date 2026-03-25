@@ -53,7 +53,7 @@ The MultiView UI component can display views in a loop. The loop mode enables an
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxMultiView from 'devextreme-vue/multi-view';
 
@@ -76,7 +76,7 @@ The MultiView UI component can display views in a loop. The loop mode enables an
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { MultiView } from 'devextreme-react/multi-view';
 

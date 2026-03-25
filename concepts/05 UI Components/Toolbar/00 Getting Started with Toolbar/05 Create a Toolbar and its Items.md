@@ -178,7 +178,7 @@ The following code creates a Toolbar and adds a [dxTextBox](/api-reference/10%20
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxToolbar, { DxItem } from 'devextreme-vue/toolbar';
     import notify from "devextreme/ui/notify";
     import 'devextreme/ui/text_box';
@@ -225,7 +225,7 @@ The following code creates a Toolbar and adds a [dxTextBox](/api-reference/10%20
     import notify from 'devextreme/ui/notify';
     import 'devextreme/ui/text_box';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     const showMessage = (name) => {
         notify(

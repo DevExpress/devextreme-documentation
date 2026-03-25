@@ -82,7 +82,7 @@ The Form UI component allows you to place custom content, for example, an image,
         </DxForm>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxForm, DxGroupItem, DxSimpleItem } from 'devextreme-vue/form';
 
@@ -109,7 +109,7 @@ The Form UI component allows you to place custom content, for example, an image,
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Form, GroupItem, SimpleItem } from 'devextreme-react/form';
 

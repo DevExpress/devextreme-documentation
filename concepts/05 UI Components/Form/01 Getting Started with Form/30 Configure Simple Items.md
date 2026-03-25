@@ -89,7 +89,7 @@ Use the [items[]](/Documentation/ApiReference/UI_Components/dxForm/Configuration
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxForm, DxSimpleItem } from 'devextreme-vue/form';
     
@@ -121,7 +121,7 @@ Use the [items[]](/Documentation/ApiReference/UI_Components/dxForm/Configuration
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         Form,

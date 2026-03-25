@@ -57,7 +57,7 @@ The following code adds a simple RangeSlider to your page. The **start** and **e
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxRangeSlider } from 'devextreme-vue/range-slider';
 
@@ -77,7 +77,7 @@ The following code adds a simple RangeSlider to your page. The **start** and **e
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { RangeSlider } from 'devextreme-react/range-slider';
 
@@ -174,7 +174,7 @@ In addition, you can specify the step of RangeSlider values using the [step](/ap
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxRangeSlider } from 'devextreme-vue/range-slider';
 
@@ -194,7 +194,7 @@ In addition, you can specify the step of RangeSlider values using the [step](/ap
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { RangeSlider } from 'devextreme-react/range-slider';
 

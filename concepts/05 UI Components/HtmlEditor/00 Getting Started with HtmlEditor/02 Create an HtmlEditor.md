@@ -83,7 +83,7 @@ The HTML Editor uses the <a href="https://github.com/DevExpress/devextreme-quill
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxHtmlEditor } from 'devextreme-vue/html-editor';
 
     export default {
@@ -101,7 +101,7 @@ The HTML Editor uses the <a href="https://github.com/DevExpress/devextreme-quill
     <!-- tab: App.js -->
     import React from 'react';
     import './App.css';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { HtmlEditor } from 'devextreme-react/html-editor';
 
     const App = () => {

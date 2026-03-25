@@ -74,7 +74,7 @@ To change the [Form configuration](/api-reference/10%20UI%20Components/dxForm/1%
         </div>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxForm } from 'devextreme-vue/form';
     import { DxCheckBox } from 'devextreme-vue/check-box';
@@ -106,7 +106,7 @@ To change the [Form configuration](/api-reference/10%20UI%20Components/dxForm/1%
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Form } from 'devextreme-react/form';
     import { CheckBox } from 'devextreme-react/check-box';

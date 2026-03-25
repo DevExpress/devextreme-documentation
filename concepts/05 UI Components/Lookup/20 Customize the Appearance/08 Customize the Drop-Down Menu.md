@@ -62,7 +62,7 @@ To customize the Popup or Popover, use the [dropDownOptions](/api-reference/10%2
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxLookup, DxDropDownOptions } from 'devextreme-vue/lookup';
 
@@ -87,7 +87,7 @@ To customize the Popup or Popover, use the [dropDownOptions](/api-reference/10%2
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Lookup, DropDownOptions } from 'devextreme-react/lookup';
 
@@ -194,7 +194,7 @@ To change the size of the drop-down menu and position it against a specific elem
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxLookup, DxDropDownOptions, DxPosition } from 'devextreme-vue/lookup';
 
@@ -220,7 +220,7 @@ To change the size of the drop-down menu and position it against a specific elem
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Lookup, DropDownOptions, Position } from 'devextreme-react/lookup';
 
@@ -326,7 +326,7 @@ The drop-down menu can have a title. Use the **dropDownOptions**.[title](/api-re
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxLookup, DxDropDownOptions } from 'devextreme-vue/lookup';
 
@@ -351,7 +351,7 @@ The drop-down menu can have a title. Use the **dropDownOptions**.[title](/api-re
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Lookup, DropDownOptions } from 'devextreme-react/lookup';
 

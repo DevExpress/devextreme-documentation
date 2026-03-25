@@ -57,7 +57,7 @@ Extend a JavaScript array's functionality by placing it into an [ArrayStore](/ap
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxLookup } from 'devextreme-vue/lookup';
     import ArrayStore from "devextreme/data/array_store";
@@ -84,7 +84,7 @@ Extend a JavaScript array's functionality by placing it into an [ArrayStore](/ap
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Lookup } from 'devextreme-react/lookup';
     import ArrayStore from "devextreme/data/array_store";
@@ -181,7 +181,7 @@ Data kept in the **ArrayStore** can be processed in a [DataSource](/api-referenc
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxLookup } from 'devextreme-vue/lookup';
     import DataSource from "devextreme/data/data_source";
@@ -206,7 +206,7 @@ Data kept in the **ArrayStore** can be processed in a [DataSource](/api-referenc
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Lookup } from 'devextreme-react/lookup';
     import DataSource from "devextreme/data/data_source";

@@ -70,7 +70,7 @@ Use the [onItemClick](/api-reference/10%20UI%20Components/dxTabs/1%20Configurati
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxTabs, { DxItem } from 'devextreme-vue/tabs';
     import notify from "devextreme/ui/notify";
 
@@ -109,7 +109,7 @@ Use the [onItemClick](/api-reference/10%20UI%20Components/dxTabs/1%20Configurati
     import Tabs, { Item } from 'devextreme-react/tabs';
     import notify from 'devextreme/ui/notify';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     const showMessage = (id) => {
         notify(

@@ -45,7 +45,7 @@ By default, the ActionSheet comes up from the bottom of the page. If you set the
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxActionSheet } from 'devextreme-vue/action-sheet';
 
@@ -59,7 +59,7 @@ By default, the ActionSheet comes up from the bottom of the page. If you set the
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { ActionSheet } from 'devextreme-react/action-sheet';
 

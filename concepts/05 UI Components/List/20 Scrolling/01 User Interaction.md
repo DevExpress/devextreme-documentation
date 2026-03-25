@@ -45,7 +45,7 @@ An end user can scroll the List with a swipe gesture and with the scrollbar. Alt
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxList from 'devextreme-vue/list';
 
     export default {
@@ -60,7 +60,7 @@ An end user can scroll the List with a swipe gesture and with the scrollbar. Alt
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import List from 'devextreme-react/list';
 
     export default function App() {
@@ -118,7 +118,7 @@ The List employs native scrolling on most platforms, except non-Mac desktops and
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxList from 'devextreme-vue/list';
 
     export default {
@@ -133,7 +133,7 @@ The List employs native scrolling on most platforms, except non-Mac desktops and
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import List from 'devextreme-react/list';
 
     export default function App() {
@@ -193,7 +193,7 @@ If simulated scrolling is used, you can specify when to show the scrollbar. For 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxList from 'devextreme-vue/list';
 
     export default {
@@ -208,7 +208,7 @@ If simulated scrolling is used, you can specify when to show the scrollbar. For 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import List from 'devextreme-react/list';
 
     export default function App() {
@@ -266,7 +266,7 @@ On mobile devices, the user can pull the List to scroll it slightly further than
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxList from 'devextreme-vue/list';
 
     export default {
@@ -281,7 +281,7 @@ On mobile devices, the user can pull the List to scroll it slightly further than
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import List from 'devextreme-react/list';
 
     export default function App() {
@@ -338,7 +338,7 @@ If you want to disable scrolling completely, assign **false** to the [scrollingE
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxList from 'devextreme-vue/list';
 
     export default {
@@ -353,7 +353,7 @@ If you want to disable scrolling completely, assign **false** to the [scrollingE
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import List from 'devextreme-react/list';
 
     export default function App() {

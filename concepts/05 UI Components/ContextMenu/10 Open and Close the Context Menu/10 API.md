@@ -82,7 +82,7 @@ To open or close the ContextMenu from code, bind the [visible](/api-reference/10
         </div>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxButton from 'devextreme-vue/button';
     import DxContextMenu from 'devextreme-vue/context-menu';
@@ -116,7 +116,7 @@ To open or close the ContextMenu from code, bind the [visible](/api-reference/10
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Button } from 'devextreme-react/button';
     import { ContextMenu } from 'devextreme-react/context-menu';
@@ -226,7 +226,7 @@ When invoking the context menu from code, you may want to specify its [position]
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxContextMenu from 'devextreme-vue/context-menu';
 
@@ -249,7 +249,7 @@ When invoking the context menu from code, you may want to specify its [position]
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { ContextMenu } from 'devextreme-react/context-menu';
 

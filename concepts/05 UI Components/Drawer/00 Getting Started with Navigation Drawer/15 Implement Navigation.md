@@ -325,7 +325,7 @@ Each list item should navigate to a different view. To implement this, follow th
     <!-- tab: main.js -->
     import { createApp, h } from 'vue';
     import { createRouter, createWebHashHistory } from 'vue-router';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import App from './App.vue';
     import InboxItemComponent from "./components/InboxItem.vue";
     import SentMailComponent from "./components/SentMail.vue";

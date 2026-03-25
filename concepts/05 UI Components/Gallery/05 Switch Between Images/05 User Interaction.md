@@ -55,7 +55,7 @@ To switch between images on touch-enabled devices, the user can perform the swip
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxGallery } from 'devextreme-vue/gallery';
 
@@ -77,7 +77,7 @@ To switch between images on touch-enabled devices, the user can perform the swip
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Gallery } from 'devextreme-react/gallery';
 
@@ -159,7 +159,7 @@ With the buttons and swipe gesture, the user switches images in a particular ord
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxGallery } from 'devextreme-vue/gallery';
 
@@ -182,7 +182,7 @@ With the buttons and swipe gesture, the user switches images in a particular ord
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Gallery } from 'devextreme-react/gallery';
 
@@ -262,7 +262,7 @@ Below the current image, the Gallery shows navigation bullets that allow the use
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxGallery } from 'devextreme-vue/gallery';
 
@@ -284,7 +284,7 @@ Below the current image, the Gallery shows navigation bullets that allow the use
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Gallery } from 'devextreme-react/gallery';
 

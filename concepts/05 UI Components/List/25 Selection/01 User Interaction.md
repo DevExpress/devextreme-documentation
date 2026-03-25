@@ -41,7 +41,7 @@ To enable selection in the List component, use the [selectionMode](/api-referenc
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxList from 'devextreme-vue/list';
 
     export default {
@@ -56,7 +56,7 @@ To enable selection in the List component, use the [selectionMode](/api-referenc
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import List from 'devextreme-react/list';
 
     export default function App() {
@@ -114,7 +114,7 @@ If you want users to select List items only by checking checkboxes, assign `fals
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxList from 'devextreme-vue/list';
 
     export default {
@@ -129,7 +129,7 @@ If you want users to select List items only by checking checkboxes, assign `fals
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import List from 'devextreme-react/list';
 
     export default function App() {
@@ -185,7 +185,7 @@ When data in the List is [paginated](/concepts/05%20UI%20Components/List/08%20Pa
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxList from 'devextreme-vue/list';
 
     export default {
@@ -200,7 +200,7 @@ When data in the List is [paginated](/concepts/05%20UI%20Components/List/08%20Pa
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import List from 'devextreme-react/list';
 
     export default function App() {

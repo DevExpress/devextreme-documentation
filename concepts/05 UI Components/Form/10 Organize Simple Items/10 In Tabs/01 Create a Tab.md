@@ -87,7 +87,7 @@ The Form UI component allows you to organize items in tabs. In the context of th
         </DxForm>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxForm, DxSimpleItem, DxTabbedItem, DxTab } from 'devextreme-vue/form';
 
@@ -117,7 +117,7 @@ The Form UI component allows you to organize items in tabs. In the context of th
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Form, SimpleItem, TabbedItem, Tab } from 'devextreme-react/form';
 

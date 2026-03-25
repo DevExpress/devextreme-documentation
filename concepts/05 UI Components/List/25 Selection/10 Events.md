@@ -59,7 +59,7 @@ The List UI component fires the [selectionChanged](/api-reference/10%20UI%20Comp
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxList from 'devextreme-vue/list';
 
     export default {
@@ -85,7 +85,7 @@ The List UI component fires the [selectionChanged](/api-reference/10%20UI%20Comp
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import List from 'devextreme-react/list';
 

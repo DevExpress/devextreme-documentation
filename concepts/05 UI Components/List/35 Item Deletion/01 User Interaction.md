@@ -45,7 +45,7 @@ To allow the user to delete items from the List, set the [allowItemDeleting](/ap
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxList from 'devextreme-vue/list';
 
     export default {
@@ -60,7 +60,7 @@ To allow the user to delete items from the List, set the [allowItemDeleting](/ap
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import List from 'devextreme-react/list';
 
     export default function App() {

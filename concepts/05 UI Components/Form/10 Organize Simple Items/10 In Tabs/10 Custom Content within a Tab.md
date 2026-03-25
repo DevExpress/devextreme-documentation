@@ -129,7 +129,7 @@ The Form UI component allows you to specify custom templates for an individual t
         </DxForm>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxForm, DxSimpleItem, DxTabbedItem, DxTab } from 'devextreme-vue/form';
 
@@ -161,7 +161,7 @@ The Form UI component allows you to specify custom templates for an individual t
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Form, SimpleItem, TabbedItem, Tab } from 'devextreme-react/form';
 

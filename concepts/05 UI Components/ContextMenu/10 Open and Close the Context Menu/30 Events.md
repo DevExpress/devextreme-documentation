@@ -70,7 +70,7 @@ To execute certain commands before or after the ContextMenu was opened/closed, h
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxContextMenu from 'devextreme-vue/context-menu';
 
@@ -99,7 +99,7 @@ To execute certain commands before or after the ContextMenu was opened/closed, h
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { ContextMenu } from 'devextreme-react/context-menu';
 

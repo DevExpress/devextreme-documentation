@@ -107,7 +107,7 @@ This tutorial explicitly specifies the following properties: **size**, **minSize
     <!-- tab: App.js -->
     import React from 'react';
     import Splitter, { Item } from 'devextreme-react/splitter';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     const App = () => (
     <React.Fragment>

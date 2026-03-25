@@ -48,7 +48,7 @@ A user switches between views with the [View Switcher](/concepts/05%20UI%20Compo
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxScheduler from 'devextreme-vue/scheduler';
 
@@ -71,7 +71,7 @@ A user switches between views with the [View Switcher](/concepts/05%20UI%20Compo
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Scheduler from 'devextreme-react/scheduler';
 

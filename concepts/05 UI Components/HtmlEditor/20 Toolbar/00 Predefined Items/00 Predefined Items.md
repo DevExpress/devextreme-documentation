@@ -268,7 +268,7 @@ To add a button to the toolbar, add its [name](/concepts/05%20UI%20Components/Ht
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         DxHtmlEditor,
@@ -288,7 +288,7 @@ To add a button to the toolbar, add its [name](/concepts/05%20UI%20Components/Ht
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { HtmlEditor, Toolbar, Item } from 'devextreme-react/html-editor';
 
@@ -395,7 +395,7 @@ To add a select box, specify the [name](/api-reference/_hidden/dxHtmlEditorToolb
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         DxHtmlEditor,
@@ -421,7 +421,7 @@ To add a select box, specify the [name](/api-reference/_hidden/dxHtmlEditorToolb
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { HtmlEditor, Toolbar, Item } from 'devextreme-react/html-editor';
 

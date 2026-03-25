@@ -56,7 +56,7 @@ The RangeSlider can display labels for the [min](/api-reference/10%20UI%20Compon
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxRangeSlider, DxLabel } from 'devextreme-vue/range-slider';
 
@@ -76,7 +76,7 @@ The RangeSlider can display labels for the [min](/api-reference/10%20UI%20Compon
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { RangeSlider, Label } from 'devextreme-react/range-slider';
 
@@ -162,7 +162,7 @@ The RangeSlider can also display a tooltip for the slider handles. To configure 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxRangeSlider, DxTooltip } from 'devextreme-vue/range-slider';
 
@@ -182,7 +182,7 @@ The RangeSlider can also display a tooltip for the slider handles. To configure 
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { RangeSlider, Tooltip } from 'devextreme-react/range-slider';
 
@@ -249,7 +249,7 @@ To specify whether or not the selected range should be highlighted, use the **sh
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxRangeSlider } from 'devextreme-vue/range-slider';
 
@@ -263,7 +263,7 @@ To specify whether or not the selected range should be highlighted, use the **sh
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { RangeSlider } from 'devextreme-react/range-slider';
 

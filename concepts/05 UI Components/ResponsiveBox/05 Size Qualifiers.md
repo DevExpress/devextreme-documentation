@@ -91,7 +91,7 @@ If a size qualifier should be identified with other screen width values, use the
         </DxResponsiveBox>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxResponsiveBox } from 'devextreme-vue/responsive-box';
 
@@ -121,7 +121,7 @@ If a size qualifier should be identified with other screen width values, use the
 
     <!--HTML-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import ResponsiveBox from 'devextreme-react/responsive-box';
 

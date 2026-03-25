@@ -156,7 +156,7 @@ To define resource kinds, assign an array of objects specifying them to the [res
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataSource from 'devextreme/data/data_source';
     import { DxScheduler, DxResource } from 'devextreme-vue/scheduler';
@@ -207,7 +207,7 @@ To define resource kinds, assign an array of objects specifying them to the [res
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataSource from 'devextreme/data/data_source';
     import { Scheduler, Resource } from 'devextreme-react/scheduler';

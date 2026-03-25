@@ -218,7 +218,7 @@ This tutorial uses **templates** to define components inside panes:
 
     <script setup>  
         import { ref } from 'vue';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         import DxForm from 'devextreme-vue/form';
         import DxButton from 'devextreme-vue/button';
         import { DxSplitter, DxItem } from 'devextreme-vue/splitter';
@@ -259,7 +259,7 @@ This tutorial uses **templates** to define components inside panes:
 ##### React
 
     <!-- tab: App.js -->
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { useState } from 'react';
     import Form from 'devextreme-react/form';
     import Button from 'devextreme-react/button';

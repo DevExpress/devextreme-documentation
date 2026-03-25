@@ -50,7 +50,7 @@ For a minor customization of List items, you can define [specific fields](/api-r
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxList from 'devextreme-vue/list';
 
@@ -76,7 +76,7 @@ For a minor customization of List items, you can define [specific fields](/api-r
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import List from 'devextreme-react/list';
 
@@ -172,7 +172,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxList from 'devextreme-vue/list';
 
@@ -200,7 +200,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import List from 'devextreme-react/list';
 

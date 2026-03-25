@@ -82,7 +82,7 @@ In the context of the Form UI component, a group is called ["group item"](/api-r
         </DxForm>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxForm, DxGroupItem, DxSimpleItem } from 'devextreme-vue/form';
 
@@ -111,7 +111,7 @@ In the context of the Form UI component, a group is called ["group item"](/api-r
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Form, GroupItem, SimpleItem } from 'devextreme-react/form';
 

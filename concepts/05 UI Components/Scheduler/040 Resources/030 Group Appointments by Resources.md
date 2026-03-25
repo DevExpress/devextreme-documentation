@@ -101,7 +101,7 @@ To group appointments by resources, assign an array to the [groups](/api-referen
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxScheduler, { DxResource } from 'devextreme-vue/scheduler';
 
@@ -146,7 +146,7 @@ To group appointments by resources, assign an array to the [groups](/api-referen
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Scheduler, { Resource } from 'devextreme-react/scheduler';
 
@@ -252,7 +252,7 @@ You can change resource headers orientation in an individual view using the **vi
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxScheduler, { DxView } from 'devextreme-vue/scheduler';
 
@@ -274,7 +274,7 @@ You can change resource headers orientation in an individual view using the **vi
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Scheduler, { View } from 'devextreme-react/scheduler';
 

@@ -60,7 +60,7 @@ By default, the **agenda** view displays appointments for seven dates at a time 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxScheduler, DxView } from 'devextreme-vue/scheduler';
 
@@ -79,7 +79,7 @@ By default, the **agenda** view displays appointments for seven dates at a time 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Scheduler, View } from 'devextreme-react/scheduler';
 

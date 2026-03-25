@@ -109,7 +109,7 @@ To change the properties of an editor, bind the property that should be changed 
         </div>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxForm, DxSimpleItem } from 'devextreme-vue/form';
     import { DxCheckBox } from 'devextreme-vue/check-box';
@@ -148,7 +148,7 @@ To change the properties of an editor, bind the property that should be changed 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Form, SimpleItem } from 'devextreme-react/form';
     import { CheckBox } from 'devextreme-react/check-box';

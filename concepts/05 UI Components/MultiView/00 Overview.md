@@ -60,7 +60,7 @@ In the most simple case, the MultiView UI component requires only the [dataSourc
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxMultiView from 'devextreme-vue/multi-view';
 
@@ -84,7 +84,7 @@ In the most simple case, the MultiView UI component requires only the [dataSourc
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { MultiView } from 'devextreme-react/multi-view';
 

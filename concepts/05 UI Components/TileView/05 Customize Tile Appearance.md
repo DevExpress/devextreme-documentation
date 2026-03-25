@@ -45,7 +45,7 @@ For a minor customization of tiles, you can define [specific fields](/api-refere
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTileView } from 'devextreme-vue/tile-view';
 
@@ -68,7 +68,7 @@ For a minor customization of tiles, you can define [specific fields](/api-refere
 ##### React
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TileView } from 'devextreme-react/tile-view';
 
@@ -184,7 +184,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTileView from "devextreme-vue/tile-view";
 
@@ -218,7 +218,7 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
     import { TileView } from 'devextreme-react/tile-view';
 
@@ -329,7 +329,7 @@ You can also customize individual tiles. Declare them using the [dxItem](/api-re
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTileView, { DxItem } from "devextreme-vue/tile-view";
 
@@ -346,7 +346,7 @@ You can also customize individual tiles. Declare them using the [dxItem](/api-re
 You can also customize individual tiles. Declare them using the [dxItem](/api-reference/10%20UI%20Components/Markup%20Components/dxItem '/Documentation/ApiReference/UI_Components/Markup_Components/dxItem/') component.
 
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TileView, Item } from 'devextreme-react/tile-view';
 

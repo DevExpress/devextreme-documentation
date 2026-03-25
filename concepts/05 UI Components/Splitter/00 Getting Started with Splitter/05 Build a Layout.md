@@ -105,7 +105,7 @@ Once you set up pane layout, the Splitter displays separator bars between panes.
     </template>
 
     <script setup>  
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         import { DxSplitter, DxItem } from 'devextreme-vue/splitter';
     </script>
 
@@ -114,7 +114,7 @@ Once you set up pane layout, the Splitter displays separator bars between panes.
     <!-- tab: App.js -->
     import React from 'react';
     import Splitter, { Item } from 'devextreme-react/splitter';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     const App = () => (
     <React.Fragment>

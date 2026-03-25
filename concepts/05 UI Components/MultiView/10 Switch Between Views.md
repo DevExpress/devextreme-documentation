@@ -45,7 +45,7 @@ By default, an end user can switch between views by swiping. Assign **false** to
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxMultiView from 'devextreme-vue/multi-view';
 
@@ -60,7 +60,7 @@ By default, an end user can switch between views by swiping. Assign **false** to
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { MultiView } from 'devextreme-react/multi-view';
 
@@ -137,7 +137,7 @@ You can switch the views from code by changing the [selectedIndex](/api-referenc
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxMultiView from 'devextreme-vue/multi-view';
 
@@ -166,7 +166,7 @@ You can switch the views from code by changing the [selectedIndex](/api-referenc
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { MultiView } from 'devextreme-react/multi-view';
 
@@ -257,7 +257,7 @@ By default, the MultiView UI component animates switching between views. You can
         />
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxMultiView from 'devextreme-vue/multi-view';
 
@@ -272,7 +272,7 @@ By default, the MultiView UI component animates switching between views. You can
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { MultiView } from 'devextreme-react/multi-view';
 

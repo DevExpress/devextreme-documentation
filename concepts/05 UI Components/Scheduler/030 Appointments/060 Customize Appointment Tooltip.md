@@ -281,7 +281,7 @@ When a user clicks an appointment, the Scheduler shows a tooltip that can be cus
     import Scheduler from 'devextreme-react/scheduler';
     import Tooltip from './Tooltip.js';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     const App = () => {
         const schedulerRef = useRef(null);

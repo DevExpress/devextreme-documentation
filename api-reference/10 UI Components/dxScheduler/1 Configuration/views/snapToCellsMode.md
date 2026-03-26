@@ -26,9 +26,11 @@ The default **snapToCellsMode** value varies by view:
     </tr>
     <tr>
         <td><i>"always"</i></td>
-        <td><i>"month"</i>, <i>"agenda"</i>, <i>"timelineMonth"</i></td>
+        <td><i>"month"</i>, <i>"timelineMonth"</i></td>
     </tr>
 </table>
+
+[note] This property is ignored in the *"agenda"* view.
 
 #####See Also#####
 - [cellDuration]({currentpath}/#cellDuration)

@@ -4,7 +4,7 @@ The previous topic shows how to embed the List component into the DropDownBox co
 
 2. Specify the List [selectionMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/selectionMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#selectionMode') property to enable selection.
 
-3. Implement the [onSelectionChanged](/api-reference/10%20UI%20Components/dxList/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged') event handler. In this handler, pass the selected value to the DropDownBox component's [value](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#value') option.
+3. Implement the [onSelectionChanged](/api-reference/10%20UI%20Components/dxList/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged') event handler. In this handler, pass the selected value to the DropDownBox component's [value](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#value') option.
 
 The [Synchronize with the Embedded Element](/concepts/05%20UI%20Components/DropDownBox/15%20Synchronize%20with%20the%20Embedded%20Element.md '/Documentation/Guide/UI_Components/DropDownBox/Synchronize_with_the_Embedded_Element/') article shows how to implement other synchronization scenarios. For example, you can:
 

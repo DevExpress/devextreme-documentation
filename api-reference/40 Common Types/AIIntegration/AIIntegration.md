@@ -22,7 +22,7 @@ Pass the created `AIIntegration` object to components where you want to activate
 You need to link `AIIntegration` source.
 
     <!-- tab: index.js -->
-    const aiIntegration = new DevExpress.aiIntegration(provider);
+    const aiIntegration = new DevExpress.aiIntegration.AIIntegration(provider);
 
     $("#htmlEditor").dxHtmlEditor({
         // ...

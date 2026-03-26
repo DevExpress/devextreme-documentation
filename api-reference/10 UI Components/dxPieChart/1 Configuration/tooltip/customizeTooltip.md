@@ -5,10 +5,9 @@ notUsedInTheme:
 ---
 ---
 ##### param(pointInfo): dxPieChartPointInfo
-Information on the series point being pressed or hovered over with the mouse pointer.
+<!-- Description goes here -->
 
 ##### return: Object
-The tooltip's text or markup and appearance settings.
+<!-- Description goes here -->
 
 ---
-#include dataviz-customize-tooltip-return

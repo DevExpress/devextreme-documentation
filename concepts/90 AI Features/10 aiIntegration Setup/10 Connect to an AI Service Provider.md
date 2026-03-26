@@ -14,7 +14,7 @@ To configure [AIIntegration](/api-reference/40%20Common%20Types/AIIntegration '/
 To use REST APIs to connect to an AI service provider, implement the [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) within **aiIntegration**.**aiProvider**.[sendRequest](/api-reference/40%20Common%20Types/AIProvider/sendRequest.md '/Documentation/ApiReference/Common_Types/AIProvider/#sendRequest'):
 
     <!-- tab: index.js -->
-    const aiIntegration = new DevExpress.aiIntegration({
+    const aiIntegration = new DevExpress.aiIntegration.AIIntegration({
         sendRequest(params) {
             const promise = fetch('https://example.org/post', {
                 method: 'POST',

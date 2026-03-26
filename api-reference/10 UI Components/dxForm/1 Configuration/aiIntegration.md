@@ -17,7 +17,7 @@ Use the following members to activate the AI-powered **Smart Paste** functionali
 ##### jQuery
 
     <!-- tab: index.js -->
-    const aiIntegration = new DevExpress.aiIntegration(provider);
+    const aiIntegration = new DevExpress.aiIntegration.AIIntegration(provider);
 
     $("#form").dxForm({
         // ...

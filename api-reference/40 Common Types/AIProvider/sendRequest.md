@@ -17,7 +17,7 @@ An object with AI response.
 ##### jQuery
 
     <!-- tab: index.js -->
-    const aiIntegration = new DevExpress.aiIntegration({
+    const aiIntegration = new DevExpress.aiIntegration.AIIntegration({
         sendRequest({ prompt }) {
             const promise = fetch('https://example.org/post', {
                 method: 'POST',

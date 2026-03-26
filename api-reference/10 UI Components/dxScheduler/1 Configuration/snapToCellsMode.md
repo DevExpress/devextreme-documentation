@@ -4,14 +4,16 @@ type: Enums.SnapToCellsMode
 ---
 ---
 ##### shortDescription
-Specifies when Scheduler snaps appointment edges to the cell grid (all views).
+Specifies when Scheduler increases appointment dimensions to snap edges to the cell grid (all views).
 
 ---
+Scheduler supports snapping appointment containers to the cell grid. The component moves appointment edges away from the appointment center to implement this capability. Scheduler does not shrink appointment containers to snap to the cell grid.
+
 The following **snapToCellsMode** values are available:
 
-- *"always"*: Scheduler snaps all appointment edges to the cell grid.
-- *"auto"*: Appointments that cover at least 50% of a cell are stretched to fill the cell.
-- *"never"*: Scheduler does not adjust appointment dimensions.
+- *"always"*: Scheduler stretches all appointments to snap to the cell grid.
+- *"auto"*: Appointment edges that are less than half a cell duration away from the cell grid are moved.
+- *"never"*: Scheduler does not increase appointment dimensions.
 
 The default **snapToCellsMode** value varies by view:
 

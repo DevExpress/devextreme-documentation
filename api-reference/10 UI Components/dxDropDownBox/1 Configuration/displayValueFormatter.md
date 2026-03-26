@@ -7,7 +7,7 @@ type: function(value)
 Customizes text before it is displayed in the input field.
 
 ##### param(value): String | Array<any>
-One or more values from the [displayExpr](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#displayExpr') that correspond(s) to the selected UI component [values](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#value').
+One or more values from the [displayExpr](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#displayExpr') that correspond(s) to the selected UI component [values](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#value').
 
 ##### return: String
 Text for the input field.

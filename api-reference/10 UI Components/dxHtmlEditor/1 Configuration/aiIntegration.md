@@ -17,7 +17,7 @@ To activate AI functionality in HTML Editor, specify:
 ##### jQuery
 
     <!-- tab: index.js -->
-    const aiIntegration = new DevExpress.aiIntegration(provider);
+    const aiIntegration = new DevExpress.aiIntegration.AIIntegration(provider);
 
     $("#htmlEditor").dxHtmlEditor({
         // ...

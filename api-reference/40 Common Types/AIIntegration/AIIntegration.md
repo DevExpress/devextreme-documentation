@@ -17,7 +17,7 @@ This object's constructor accepts an [AIProvider](/api-reference/40%20Common%20T
 You need to link `AIIntegration` source.
 
     <!-- tab: index.js -->
-    const aiIntegration = new DevExpress.aiIntegration(provider);
+    const aiIntegration = new DevExpress.aiIntegration.AIIntegration(provider);
 
     $("#htmlEditor").dxHtmlEditor({
         // ...

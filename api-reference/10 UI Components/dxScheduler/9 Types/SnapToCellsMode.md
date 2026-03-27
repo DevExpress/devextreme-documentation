@@ -6,11 +6,11 @@ references: dxScheduler.Options.snapToCellsMode|dxScheduler.Options.views.snapTo
 ---
 ---
 ##### shortDescription
-Specifies when Scheduler increases appointment dimensions to snap edges to the cell grid.
+Specifies how Scheduler snaps appointment edges to the cell grid when loading data.
 
 ---
 The following **snapToCellsMode** values are available:
 
-- *"always"*: Scheduler stretches all appointments to snap to the cell grid.
-- *"auto"*: Appointment edges that are less than half a cell duration away from the cell grid are moved.
+- *"always"*: Appointments occupy cells fully.
+- *"auto"*: Appointments that cover more than half of a cell are stretched to occupy the full cell.
 - *"never"*: Scheduler does not increase appointment dimensions.

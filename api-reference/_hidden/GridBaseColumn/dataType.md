@@ -8,7 +8,7 @@ default: undefined
 Casts column values to a specific data type.
 
 ---
-If a data field provides values of one data type, but the UI component should cast them to another, specify the proper type in this property. In the following code, values of the `ID` and `hireDate` fields are cast to numeric and date data types, respectively.
+If data fields contain values of one type but the UI component requires another, set the correct type in this property. The following code snippet casts the `ID` and `hireDate` column values to *"number"* and *"date"* types, respectively:
 
 ---
 #####jQuery

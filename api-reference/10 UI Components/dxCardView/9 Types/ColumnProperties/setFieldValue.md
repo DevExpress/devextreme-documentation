@@ -112,7 +112,7 @@ This function allows you to process user input before it is saved to the data so
             return (
                 <{WidgetName} ... >
                     <Column dataField="Price" />
-                    <Column dataField="Count" dataType="numeric" setFieldValue={setFieldValue}/>
+                    <Column dataField="Count" dataType="number" setFieldValue={setFieldValue}/>
                     <Column dataField="TotalPrice" />
                 </{WidgetName}>
             );

@@ -22,7 +22,7 @@ The following table lists available filter operations by [data type](/api-refere
     <td>[ "contains", "notcontains", "startswith", "endswith", "=", "<>" ]</td>
   </tr>
   <tr>
-    <td>"numeric"</td>
+    <td>"number"</td>
     <td>[ "=", "<>", "<", ">", "<=", ">=", "between" ]</td>
   </tr>
   <tr>

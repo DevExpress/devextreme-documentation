@@ -1,6 +1,6 @@
 ---
 id: dxColorBox.Options.fieldRender
-deprecated: 
+deprecated: Use [fieldAddons]({basewidgetpath}/Configuration/fieldAddons) instead.
 ---
 ---
 ##### shortDescription

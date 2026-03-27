@@ -12,4 +12,4 @@ When this option is `true` and the popup has focus, the `Tab` key cycles through
 
 When this option is `false` (default) and focus is on the last focusable element, the `Tab` key moves focus outside the popup.
 
-This option has no effect when [shading](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#shading) is enabled. In this case, focus always stays within the popup content, regardless of the `tabFocusLoopEnabled` value.
+This option has no effect when [shading](/api-reference/10%20UI%20Components/dxOverlay/1%20Configuration/shading.md '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#shading') is enabled. In this case, focus always stays within the popup content, regardless of the `tabFocusLoopEnabled` value.

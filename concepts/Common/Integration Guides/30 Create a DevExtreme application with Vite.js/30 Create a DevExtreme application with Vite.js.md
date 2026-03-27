@@ -41,7 +41,7 @@ Install the new dependencies:
 
 ## 3. Remove unnecessary code
 
-1. Open the `srtc/App.vue` file, and replace its content with the following two tags:
+1. Open the `src/App.vue` file, and replace its content with the following two tags:
 
         <!--tab: App.vue-->        
         <template>

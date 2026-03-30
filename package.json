@@ -9,7 +9,7 @@
     "url": "https://github.com/DevExpress/devextreme-documentation.git"
   },
   "devDependencies": {
-    "devextreme-internal-tools": "^18.1.2",
+    "devextreme-internal-tools": "^18.2.0",
     "ts-node": "^10.9.1"
   },
   "scripts": {

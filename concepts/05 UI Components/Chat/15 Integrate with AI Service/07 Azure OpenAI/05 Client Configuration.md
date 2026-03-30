@@ -1,4 +1,4 @@
-Configure Chat to send user messages to your backend endpoint and render responses.
+Configure a Chat to send user messages to your backend endpoint and render responses.
 
 [important] Azure OpenAI credentials must remain on the server. Do not call Azure OpenAI directly from client code.
 

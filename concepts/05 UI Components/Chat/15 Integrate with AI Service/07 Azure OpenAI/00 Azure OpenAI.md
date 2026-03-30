@@ -1,0 +1,1 @@
+[Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai/) allows you to run OpenAI models in Microsoft Azure cloud services.

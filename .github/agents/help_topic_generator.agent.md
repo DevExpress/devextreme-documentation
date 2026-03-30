@@ -9,7 +9,7 @@ This agent is designed to generate API member help topics based on changes intro
 
 ## Target
 
-The help topic will be generated only in the currently open and visible editor file. The file should contain a pre-generated template. The agent will fill ONLY fields marked with the following comment:
+The help topic will be generated only in the currently open and visible editor file. The file should contain a pre-generated template. The agent will fill **ONLY** fields marked with the following comment:
 
 ```
 <!-- Description goes here -->
@@ -25,7 +25,7 @@ Scope is strict:
 ## Input Parameters
 
 - **GitHub Pull Request URLs**: The URLs of PRs that contain the API changes.
-- **Specifications**: _Optional_. Markdown or PDF files that provide additional details about the API changes. Basic specifications may be included in PR descriptions or comments.
+- **Specifications (optional)**: Markdown or PDF files that provide additional details about the API changes. Basic specifications may be included in PR descriptions or comments.  
   Treat provided specifications as the "source of truth" over PR descriptions if conflicts arise.
 - **Search for similar API members**: Look for similar API member topics in the existing documentation to maintain consistency in structure and tone. Reuse style patterns only. Do not copy technical statements unless they exactly match the current member.
 - **Similar API member patterns**:

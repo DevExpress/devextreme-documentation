@@ -4,16 +4,16 @@ type: Enums.SnapToCellsMode
 ---
 ---
 ##### shortDescription
-Specifies how Scheduler snaps appointment edges to the cell grid when loading data (within a specific view).
+Specifies how a Scheduler View snaps appointments to grid.
 
 ---
-Scheduler supports snapping appointments loaded from the component [dataSource](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource) to the cell grid. Scheduler increases appointment dimensions to implement this capability. The component does not shrink appointment containers to snap to the cell grid.
+If a Scheduler is bound to a [dataSource](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource), you can snap appointments to grid. If this functionality is active, the Scheduler increases appointment dimensions (never shrinks appointments).
 
 The following **snapToCellsMode** values are available:
 
-- *"always"*: Appointments occupy cells fully.
-- *"auto"*: Appointments that cover more than half of a cell are stretched to occupy the full cell.
-- *"never"*: Scheduler does not increase appointment dimensions.
+- *"always"*: Scheduler snaps all appointments to grid.
+- *"auto"*: Appointments that cover more than half of a cell are stretched to occupy the entire cell.
+- *"never"*: Scheduler does not snap appointments to grid.
 
 The default **snapToCellsMode** value varies by view:
 

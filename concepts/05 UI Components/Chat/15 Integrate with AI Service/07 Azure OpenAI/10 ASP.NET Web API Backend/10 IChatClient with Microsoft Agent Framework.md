@@ -8,7 +8,7 @@ Compared to the base `IChatClient` setup, this implementation adds:
 
 - Multiple specialized agents (`VisionAgent`, `SupportAgent`, `Editor`).
 - A sequential workflow (`VirtualAssistant`) that orchestrates agent execution.
-- [MCP-based documentation tools](/Documentation/Guide/AI_Features/DevExpress_MCP_Server_Configuration/) for the support agent.
+- [MCP-based documentation tools](/concepts/90%20AI%20Features/20%20DevExpress%20MCP%20Server%20Configuration/00%20DevExpress%20MCP%20Server%20Configuration.md '/Documentation/Guide/AI_Features/DevExpress_MCP_Server_Configuration/') for the support agent.
 - Multipart request handling for text and file attachments.
 
 The application uses one shared `IChatClient` instance, then composes agents and workflow on top of it:
@@ -81,4 +81,4 @@ This server accepts `multipart/form-data` for `POST /api/Chat/GetAIResponse`:
 
 Use this format when your Chat UI sends files with user messages.
 
-For baseline `IChatClient` registration and Azure options, see [IChatClient](/Documentation/Guide/UI_Components/Chat/Integrate_with_AI_Service/#Azure_OpenAI/ASPNET_Web_API_Backend/IChatClient).
+For baseline `IChatClient` registration and Azure options, see [IChatClient](/concepts/05%20UI%20Components/Chat/15%20Integrate%20with%20AI%20Service/07%20Azure%20OpenAI/10%20ASP.NET%20Web%20API%20Backend/05%20IChatClient.md '/Documentation/Guide/UI_Components/Chat/Integrate_with_AI_Service/#Azure_OpenAI/ASPNET_Web_API_Backend/IChatClient').

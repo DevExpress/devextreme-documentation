@@ -2,7 +2,7 @@ Configure a Chat to send user messages to your backend endpoint and render respo
 
 [important] Azure OpenAI credentials must remain on the server. Do not call Azure OpenAI directly from client code.
 
-Use [onMessageEntered](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#onMessageEntered) to send a message to your API and push the response to the data store:
+Use [onMessageEntered](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/onMessageEntered.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#onMessageEntered') to send a message to your API and push the response to the data store:
 
     <!-- tab: TypeScript -->
     async function onMessageEntered(e) {

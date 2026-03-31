@@ -13,5 +13,5 @@ Core endpoints:
 
 The following implementations are available:
 
-- [IChatClient](/Documentation/Guide/UI_Components/Chat/Integrate_with_AI_Service/#Azure_OpenAI/ASPNET_Web_API_Backend/IChatClient)
-- [IChatClient with Microsoft Agent Framework](/Documentation/Guide/UI_Components/Chat/Integrate_with_AI_Service/#Azure_OpenAI/ASPNET_Web_API_Backend/IChatClient_with_Microsoft_Agent_Framework)
+- [IChatClient](/concepts/05%20UI%20Components/Chat/15%20Integrate%20with%20AI%20Service/07%20Azure%20OpenAI/10%20ASP.NET%20Web%20API%20Backend/05%20IChatClient.md '/Documentation/Guide/UI_Components/Chat/Integrate_with_AI_Service/#Azure_OpenAI/ASPNET_Web_API_Backend/IChatClient')
+- [IChatClient with Microsoft Agent Framework](/concepts/05%20UI%20Components/Chat/15%20Integrate%20with%20AI%20Service/07%20Azure%20OpenAI/10%20ASP.NET%20Web%20API%20Backend/10%20IChatClient%20with%20Microsoft%20Agent%20Framework.md '/Documentation/Guide/UI_Components/Chat/Integrate_with_AI_Service/#Azure_OpenAI/ASPNET_Web_API_Backend/IChatClient_with_Microsoft_Agent_Framework')

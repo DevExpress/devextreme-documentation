@@ -1,6 +1,6 @@
 ---
 id: dxDataGrid.Options.rowComponent
-deprecated: Use [dataRowComponent]({basewidgetpath}/Configuration/#dataRowComponent) instead.
+deprecated: 
 ---
 ---
 ##### shortDescription

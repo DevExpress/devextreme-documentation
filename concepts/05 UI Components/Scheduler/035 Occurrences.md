@@ -28,7 +28,7 @@ Use this approach when you export only the visible appointments from the Schedul
 
 	const visibleStart = new Date(2026, 3, 1);
 	const visibleEnd = new Date(2026, 3, 2);
-	const appointments = scheduler.option("dataSource");
+	const appointments = scheduler.getDataSource().items();
 	const occurrences = scheduler.getOccurrences(visibleStart, visibleEnd, appointments);
 
 	const exportRows = occurrences.map((item) => ({
@@ -37,7 +37,7 @@ Use this approach when you export only the visible appointments from the Schedul
 		End: item.endDate.toISOString()
 	}));
 
-##### See Also #####
+#####See Also#####
 
 - [Scheduler API Reference](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')
 - [getOccurrences(startDate, endDate, appointments)](/api-reference/10%20UI%20Components/dxScheduler/3%20Methods/getOccurrences(startDate_endDate_appointments).md '/Documentation/ApiReference/UI_Components/dxScheduler/Methods/#getOccurrencesstartDate_endDate_appointments')

@@ -10,11 +10,13 @@ Apply occurrences in the following scenarios:
 
 Use this to prevent appointment time conflicts when users create or edit appointments. The function checks if a candidate interval intersects with any occurrence in the selected day.
 
-    function hasOverlap(scheduler, candidate, allAppointments) {
+    function hasOverlap(scheduler, candidate) {
         const dayStart = new Date(candidate.startDate);
         dayStart.setHours(0, 0, 0, 0);
         const dayEnd = new Date(dayStart);
         dayEnd.setDate(dayEnd.getDate() + 1);
+
+        const allAppointments = scheduler.getDataSource().items();
 
         const occurrences = scheduler.getOccurrences(dayStart, dayEnd, allAppointments);
         return occurrences.some((item) =>

@@ -10,32 +10,32 @@ Apply occurrences in the following scenarios:
 
 Use this to prevent appointment time conflicts when users create or edit appointments. The function checks if a candidate interval intersects with any occurrence in the selected day.
 
-	function hasOverlap(scheduler, candidate, allAppointments) {
-		const dayStart = new Date(candidate.startDate);
-		dayStart.setHours(0, 0, 0, 0);
-		const dayEnd = new Date(dayStart);
-		dayEnd.setDate(dayEnd.getDate() + 1);
+    function hasOverlap(scheduler, candidate, allAppointments) {
+        const dayStart = new Date(candidate.startDate);
+        dayStart.setHours(0, 0, 0, 0);
+        const dayEnd = new Date(dayStart);
+        dayEnd.setDate(dayEnd.getDate() + 1);
 
-		const occurrences = scheduler.getOccurrences(dayStart, dayEnd, allAppointments);
-		return occurrences.some((item) =>
-			item.startDate < candidate.endDate && candidate.startDate < item.endDate
-		);
-	}
+        const occurrences = scheduler.getOccurrences(dayStart, dayEnd, allAppointments);
+        return occurrences.some((item) =>
+             item.startDate < candidate.endDate && candidate.startDate < item.endDate
+        );
+    }
 
 ### Prepare Exports for a Visible Interval
 
 Use this approach when you export only the visible appointments from the Scheduler. The mapped array converts occurrences to a flat structure suitable for CSV, Excel, or API payloads.
 
-	const visibleStart = new Date(2026, 3, 1);
-	const visibleEnd = new Date(2026, 3, 2);
-	const appointments = scheduler.getDataSource().items();
-	const occurrences = scheduler.getOccurrences(visibleStart, visibleEnd, appointments);
+    const visibleStart = new Date(2026, 3, 1);
+    const visibleEnd = new Date(2026, 3, 2);
+    const appointments = scheduler.getDataSource().items();
+    const occurrences = scheduler.getOccurrences(visibleStart, visibleEnd, appointments);
 
-	const exportRows = occurrences.map((item) => ({
-		Subject: item.appointmentData.text,
-		Start: item.startDate.toISOString(),
-		End: item.endDate.toISOString()
-	}));
+    const exportRows = occurrences.map((item) => ({
+        Subject: item.appointmentData.text,
+        Start: item.startDate.toISOString(),
+        End: item.endDate.toISOString()
+    }));
 
 #####See Also#####
 

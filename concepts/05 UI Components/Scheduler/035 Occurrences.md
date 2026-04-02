@@ -8,7 +8,7 @@ Apply occurrences in the following scenarios:
 
 ### Detect Overlapping Appointments
 
-Use this to prevent appointment time conflicts when users create or edit appointments. The function checks if a candidate interval intersects with any occurrence in the selected day.
+Use this function to prevent appointment time conflicts when users create or edit appointments. The function checks if a candidate interval intersects with any occurrence in the selected day.
 
     function hasOverlap(scheduler, candidate) {
         const dayStart = new Date(candidate.startDate);

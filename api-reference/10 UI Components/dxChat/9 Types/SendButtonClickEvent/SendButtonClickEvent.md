@@ -1,5 +1,5 @@
 ---
-id: _ui_chat_SendButtonClickEvent
+uid: ui/chat:SendButtonClickEvent
 module: ui/chat
 export: SendButtonClickEvent
 type: Object

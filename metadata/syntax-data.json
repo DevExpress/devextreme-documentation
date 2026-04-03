@@ -571,6 +571,11 @@
       "react": "_ui_chat_OptionChangedEvent",
       "vue": "Dx_ui_chat_OptionChangedEvent"
     },
+    "_ui_chat_SendButtonClickEvent": {
+      "angular": "dxo-ui-chat--send-button-click-event",
+      "react": "_ui_chat_SendButtonClickEvent",
+      "vue": "Dx_ui_chat_SendButtonClickEvent"
+    },
     "_ui_chat_TypingEndEvent": {
       "angular": "dxo-ui-chat--typing-end-event",
       "react": "_ui_chat_TypingEndEvent",
@@ -10343,6 +10348,9 @@
     },
     "dxChatOptions.reloadOnChange": {
       "vue": "reload-on-change"
+    },
+    "dxChatOptions.sendButtonOptions": {
+      "vue": "send-button-options"
     },
     "dxChatOptions.showAvatar": {
       "vue": "show-avatar"
@@ -21478,6 +21486,9 @@
     "enums.SelectionSensitivity": {
       "vue": "selection-sensitivity"
     },
+    "enums.SendButtonAction": {
+      "vue": "send-button-action"
+    },
     "enums.SeriesHoverMode": {
       "vue": "series-hover-mode"
     },
@@ -23202,6 +23213,14 @@
     },
     "selectionConfiguration.showCheckBoxesMode": {
       "vue": "show-check-boxes-mode"
+    },
+    "sendButtonProperties": {
+      "angular": "dxo-send-button-properties",
+      "react": "SendButtonProperties",
+      "vue": "DxSendButtonProperties"
+    },
+    "sendButtonProperties.onClick": {
+      "vue": "@click"
     },
     "smartPasteInfo.aiResult": {
       "angular": "dxo-ai-result",

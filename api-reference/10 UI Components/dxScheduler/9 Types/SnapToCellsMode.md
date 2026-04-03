@@ -12,5 +12,5 @@ Specifies how Scheduler snaps appointments to the grid.
 The following **snapToCellsMode** values are available:
 
 - *"always"*: Scheduler snaps all appointments to the grid.
-- *"auto"*: Only appointments that occupy less than two cells are snapped to the grid.
+- *"auto"*: Only appointments that occupy two or fewer cells are snapped to the grid.
 - *"never"*: Scheduler does not snap appointments to the grid.

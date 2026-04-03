@@ -1,7 +1,5 @@
 An **Occurrence** is an [appointment](/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Types/) instance that falls within a specified time interval. A non-recurring appointment maps to one occurrence. A recurring appointment can generate multiple occurrences.
 
-[note] Occurrences are produced for the requested interval only.
-
 To obtain an occurrence list, call the [getOccurrences(startDate, endDate, appointments)](/Documentation/ApiReference/UI_Components/dxScheduler/Methods/#getOccurrencesstartDate_endDate_appointments) method. Pass `startDate`, `endDate`, and the appointment array.
 
 You may need this method in the following scenarios:

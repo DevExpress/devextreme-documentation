@@ -5,6 +5,7 @@ export: SendButtonClickEvent
 type: Object
 inherits: NativeEventInfo
 references: SendButtonProperties.onClick
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

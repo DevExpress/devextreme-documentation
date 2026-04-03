@@ -1,14 +1,14 @@
-**Occurrence** is an [appointment](/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Types/) instance that falls within a specified time interval. A non-recurring appointment maps to one occurrence. A recurring appointment can generate multiple occurrences.
+An **Occurrence** is an [appointment](/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Types/) instance that falls within a specified time interval. A non-recurring appointment maps to one occurrence. A recurring appointment can generate multiple occurrences.
 
 [note] Occurrences are produced for the requested interval only.
 
-To get occurrences, use the [getOccurrences(startDate, endDate, appointments)](/Documentation/ApiReference/UI_Components/dxScheduler/Methods/#getOccurrencesstartDate_endDate_appointments) method. Specify the interval boundaries with `startDate` and `endDate` and pass the appointments array as the third argument.
+To obtain an occurrence list, call the [getOccurrences(startDate, endDate, appointments)](/Documentation/ApiReference/UI_Components/dxScheduler/Methods/#getOccurrencesstartDate_endDate_appointments) method. Pass `startDate`, `endDate`, and the appointment array.
 
-Apply occurrences in the following scenarios:
+You may need this method in the following scenarios:
 
 ### Detect Overlapping Appointments
 
-Use this function to prevent appointment time conflicts when users create or edit appointments. The function checks if a candidate interval intersects with any occurrence in the selected day.
+Use the following function to prevent appointment time conflicts when users create or edit appointments. The function checks if a candidate interval intersects with any occurrence in the selected day.
 
     function hasOverlap(scheduler, candidate) {
         const dayStart = new Date(candidate.startDate);
@@ -20,13 +20,13 @@ Use this function to prevent appointment time conflicts when users create or edi
 
         const occurrences = scheduler.getOccurrences(dayStart, dayEnd, allAppointments);
         return occurrences.some((item) =>
-             item.startDate < candidate.endDate && candidate.startDate < item.endDate
+            item.startDate < candidate.endDate && candidate.startDate < item.endDate
         );
     }
 
-### Prepare Exports for a Visible Interval
+### Export Appointment Occurrences within the Specified Date Interval
 
-Use this approach when you export only the visible appointments from the Scheduler. The mapped array converts occurrences to a flat structure suitable for CSV, Excel, or API payloads.
+Use the following code snippet when you need to export events that fall within the specified date/time interval. The mapped array converts occurrences to a flat structure suitable for CSV, Excel, or API payloads.
 
     const visibleStart = new Date(2026, 3, 1);
     const visibleEnd = new Date(2026, 3, 2);

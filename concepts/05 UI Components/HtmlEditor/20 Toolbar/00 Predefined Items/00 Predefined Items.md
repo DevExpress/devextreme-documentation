@@ -212,7 +212,14 @@ The following table lists toolbar items and the formats they apply (if applicabl
         <td>-</td>
         <td>-</td>
     </tr>
+    <tr>
+        <td>"ai"</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
 </table>
+
+[note] Configure [aiIntegration](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#aiIntegration) to use the *"ai"* item.
  
 To add a button to the toolbar, add its [name](/concepts/05%20UI%20Components/HtmlEditor/20%20Toolbar/00%20Predefined%20Items '/Documentation/Guide/UI_Components/HtmlEditor/Toolbar/Predefined_Items/') to the [items](/api-reference/_hidden/dxHtmlEditorToolbar/items '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/') array:
  

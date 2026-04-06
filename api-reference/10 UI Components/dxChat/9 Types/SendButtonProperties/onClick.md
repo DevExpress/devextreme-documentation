@@ -4,19 +4,19 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed when the send button is clicked.
 
 ##### param(e): ui/chat:SendButtonClickEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
-<!-- Description goes here -->
+#include common-ref-eventparam
 
 ---
-<!-- Description goes here -->
+The function is called regardless of the [action](/Documentation/ApiReference/UI_Components/dxChat/Types/SendButtonProperties/#action) value, but in `'send'` mode it is called only when the button is enabled (when the input field has content).

@@ -5,7 +5,7 @@ default: 'arrowright'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the send button's icon.
 
 ---
-<!-- Description goes here -->
+Accepts a [built-in icon name](/Documentation/Guide/Themes_and_Styles/Icons/#Built-In_Icons), a URL to an image, or a CSS class from any icon library.

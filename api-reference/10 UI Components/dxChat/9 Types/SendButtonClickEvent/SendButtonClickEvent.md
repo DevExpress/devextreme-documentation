@@ -9,7 +9,6 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The argument type in the [sendButtonOptions.onClick](/Documentation/ApiReference/UI_Components/dxChat/Types/SendButtonProperties/#onClick) handler.
 
 ---
-<!-- Description goes here -->

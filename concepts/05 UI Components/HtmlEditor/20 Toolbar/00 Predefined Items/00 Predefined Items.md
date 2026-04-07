@@ -1,11 +1,11 @@
-Toolbar items allow users to format the HTML Editor's content and perform actions on it.
+Toolbar items allow users to format HTML Editor content and perform actions in it.
 
 Predefined toolbar items include:
 
-* Buttons that apply single-choice formats to the text.
-* Action buttons.
-* Select boxes that apply multiple-choice formats. 
-* Separators that are not user-interactive and only divide other elements.
+* Buttons that apply single-choice formats to the text
+* Action buttons
+* Select boxes that apply multiple-choice formats
+* Separators that are not user-interactive and only divide other elements
 
 ![DevExtreme HTML5 JavaScript HTML Editor Toolbar](/images/htmlEditor/visual_elements/toolbar.png)
 
@@ -212,7 +212,14 @@ The following table lists toolbar items and the formats they apply (if applicabl
         <td>-</td>
         <td>-</td>
     </tr>
+    <tr>
+        <td>"ai"</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
 </table>
+
+[note] Configure [aiIntegration](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#aiIntegration) to use the *"ai"* item.
  
 To add a button to the toolbar, add its [name](/concepts/05%20UI%20Components/HtmlEditor/20%20Toolbar/00%20Predefined%20Items '/Documentation/Guide/UI_Components/HtmlEditor/Toolbar/Predefined_Items/') to the [items](/api-reference/_hidden/dxHtmlEditorToolbar/items '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/items/') array:
  

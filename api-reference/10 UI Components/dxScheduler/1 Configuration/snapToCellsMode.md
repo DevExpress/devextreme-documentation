@@ -34,7 +34,7 @@ The default **snapToCellsMode** value varies by view:
 
 [note]
 
-- **snapToCellsMode** does not affect appointment [resizing](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/#allowResizing) behavior.
+- **snapToCellsMode** does not affect appointment [resizing](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/#allowResizing).
 - The *"agenda"* view ignores this property.
 
 [/note]

@@ -6,7 +6,7 @@ references: dxScheduler.Options.snapToCellsMode|dxScheduler.Options.views.snapTo
 ---
 ---
 ##### shortDescription
-Specifies how Scheduler snaps appointments to the grid.
+Specifies how the Scheduler snaps appointments to the grid.
 
 ---
 The following **snapToCellsMode** values are available:

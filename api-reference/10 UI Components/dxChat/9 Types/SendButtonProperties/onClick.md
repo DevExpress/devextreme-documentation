@@ -19,4 +19,4 @@ The UI component's instance.
 #include common-ref-eventparam
 
 ---
-The function is called for any [action](/Documentation/ApiReference/UI_Components/dxChat/Types/SendButtonProperties/#action) value. In `'send'` mode, it is called only when the button is enabled, because the input field contains content.
+The function is called for any [action](/Documentation/ApiReference/UI_Components/dxChat/Types/SendButtonProperties/#action) value. In `'send'` mode, it is called only when the button is enabled (the input field contains content).

@@ -4,7 +4,7 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-A function that is executed when the send button is clicked.
+A function that is executed when the Send button is clicked.
 
 ##### param(e): ui/chat:SendButtonClickEvent
 Information about the event.

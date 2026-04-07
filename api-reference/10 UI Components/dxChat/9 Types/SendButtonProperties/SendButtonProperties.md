@@ -7,6 +7,6 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-A configuration object for the Chat send button.
+A configuration object for the Send button.
 
 ---

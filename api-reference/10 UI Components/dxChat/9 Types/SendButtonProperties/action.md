@@ -5,7 +5,7 @@ default: 'send'
 ---
 ---
 ##### shortDescription
-Specifies the send button's behavior.
+Specifies the Send button's behavior.
 
 ---
 The `'send'` value (default) enables the standard send behavior: the button is disabled when the input field is empty, and a button click sends the message and clears the input field.

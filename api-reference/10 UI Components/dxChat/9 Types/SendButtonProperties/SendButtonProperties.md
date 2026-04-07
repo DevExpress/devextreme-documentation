@@ -7,7 +7,6 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A configuration object for the Send button.
 
 ---
-<!-- Description goes here -->

@@ -5,13 +5,13 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Binds the AI service to the HTML Editor.
+Binds AI service to the HTML Editor.
 
 ---
 To activate AI functionality in HTML Editor, specify:
 
-- [AIIntegration](/api-reference/40%20Common%20Types/AIIntegration '/Documentation/ApiReference/Common_Types/AIIntegration/') class
-- *'ai'* [toolbar](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/toolbar '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/') item
+1. The [AIIntegration](/api-reference/40%20Common%20Types/AIIntegration '/Documentation/ApiReference/Common_Types/AIIntegration/') class
+2. The *'ai'* [toolbar](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/toolbar '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/') item
 
 ---
 ##### jQuery
@@ -125,3 +125,7 @@ To activate AI functionality in HTML Editor, specify:
     }
 
 ---
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/HtmlEditor/AITextEditing/"
+}

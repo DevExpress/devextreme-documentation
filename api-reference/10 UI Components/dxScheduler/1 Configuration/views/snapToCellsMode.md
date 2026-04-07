@@ -7,7 +7,7 @@ type: Enums.SnapToCellsMode
 Specifies how a Scheduler View snaps appointments to the grid.
 
 ---
-The Scheduler can snap appointments to the grid. When **snapToCellsMode** is set to *"always"* or *"auto"*, the component increases appointment dimensions only.
+The Scheduler can snap appointments to the grid. When **snapToCellsMode** is set to *"always"* or *"auto"*, the component only increases appointment dimensions.
 
 The following **snapToCellsMode** values are available:
 
@@ -34,7 +34,7 @@ The default **snapToCellsMode** value varies by view:
 
 [note] 
 
-- **snapToCellsMode** does not affect appointment [resizing](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/#allowResizing) behavior.
+- **snapToCellsMode** does not affect appointment [resizing](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/#allowResizing).
 - This property overrides [snapToCellsMode](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#snapToCellsMode) defined at the component level.
 - The *"agenda"* view ignores this property.
 

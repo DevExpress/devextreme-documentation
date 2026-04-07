@@ -7,7 +7,7 @@ type: Enums.SnapToCellsMode
 Specifies how the Scheduler component snaps appointments to the grid (applies to all view types).
 
 ---
-The Scheduler can snap appointments to the grid. When this feature is enabled, the component increases appointment dimensions and never reduces them.
+The Scheduler can snap appointments to the grid. When **snapToCellsMode** is set to *"always"* or *"auto"*, the component only increases appointment dimensions.
 
 The following **snapToCellsMode** values are available:
 

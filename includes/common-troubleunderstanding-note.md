@@ -1,1 +1,1 @@
-[note] You should be familiar with the basic concepts and patterns of ${{technology}} to use this documentation. If you are not, refer to the <a href="${{docsLink}}" target="_blank">${{technology}} documentation</a> and follow the getting-started tutorial first.
+[note] You should be familiar with the basic concepts and patterns of ${{technology}} to use this documentation. If you are not, refer to the [${{technology}} documentation](${{docsLink}}) and follow the getting-started tutorial first.

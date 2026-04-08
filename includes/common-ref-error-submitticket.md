@@ -1,1 +1,1 @@
-To solve the issue, please submit a ticket to our <a href="https://www.devexpress.com/ask" target="_blank">Support Center</a>.  Include your UI component configuration, fake data, and the steps needed to reproduce the issue in the ticket.
+To solve the issue, please submit a ticket to our [Support Center](https://www.devexpress.com/ask). Include your UI component configuration, fake data, and the steps needed to reproduce the issue in the ticket.

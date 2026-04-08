@@ -1,1 +1,1 @@
-The event that caused the function to execute. It is an [EventObject](/Documentation/ApiReference/Common/Object_Structures/EventObject/) or a [jQuery.Event](http://api.jquery.com/category/events/event-object/) when you use jQuery.
+The event that caused the function to execute. It is an [EventObject](/Documentation/ApiReference/Common/Object_Structures/EventObject/) or a [jQuery.Event](https://api.jquery.com/category/events/event-object/) when you use jQuery.

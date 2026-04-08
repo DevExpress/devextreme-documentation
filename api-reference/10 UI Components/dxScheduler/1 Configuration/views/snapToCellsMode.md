@@ -32,7 +32,7 @@ The default **snapToCellsMode** value varies by view:
     </tr>
 </table>
 
-[note] 
+[note]
 
 - **snapToCellsMode** does not affect appointment [resizing](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/editing/allowResizing.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/#allowResizing').
 - This property overrides [snapToCellsMode](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/snapToCellsMode.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#snapToCellsMode') defined at the component level.

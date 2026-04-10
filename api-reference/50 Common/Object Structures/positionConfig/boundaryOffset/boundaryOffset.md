@@ -52,7 +52,7 @@ In the following code, left and right boundaries are narrowed (**x** is 50), but
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxPopup, {
         DxPosition,
@@ -73,7 +73,7 @@ In the following code, left and right boundaries are narrowed (**x** is 50), but
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Popup, {
         Position,

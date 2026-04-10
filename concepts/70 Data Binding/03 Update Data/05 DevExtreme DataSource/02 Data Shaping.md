@@ -114,7 +114,7 @@ The following code demonstrates the [filter(filterExpr)](/api-reference/30%20Dat
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         import DxDataGrid from 'devextreme-vue/data-grid';
 
         export default {
@@ -167,7 +167,7 @@ The following code demonstrates the [filter(filterExpr)](/api-reference/30%20Dat
 
         <!-- tab: App.js -->
         import React from 'react';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         import DataGrid from 'devextreme-react/data-grid';
 
         class App extends React.Component {

@@ -2,7 +2,7 @@ Open the main application file (`App.js`) and import a [predefined theme stylesh
 
     <!-- tab: App.js -->
     // ...
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
 [note]
 

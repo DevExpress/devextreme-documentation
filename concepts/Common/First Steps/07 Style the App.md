@@ -46,13 +46,13 @@ To apply a theme, open the `angular.json` file and reference a stylesheet:
 
 To apply a theme, import a stylesheet where DevExtreme components are used or in the main application file:
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
 ##### React
 
 To apply a theme, import a stylesheet where DevExtreme components are used or in the main application file:
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
 ---
 

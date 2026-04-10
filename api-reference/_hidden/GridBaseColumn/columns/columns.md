@@ -63,7 +63,7 @@ Unlike normal columns, band columns do not hold data. Instead, they collect two 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxColumn
@@ -82,7 +82,7 @@ Unlike normal columns, band columns do not hold data. Instead, they collect two 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         Column
@@ -177,7 +177,7 @@ For example, the following code specifies the **width** and **sortOrder** proper
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxColumn
@@ -196,7 +196,7 @@ For example, the following code specifies the **width** and **sortOrder** proper
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         Column
@@ -305,7 +305,7 @@ Band columns support hierarchies of any nesting level. It means that the followi
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxColumn
@@ -324,7 +324,7 @@ Band columns support hierarchies of any nesting level. It means that the followi
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         Column

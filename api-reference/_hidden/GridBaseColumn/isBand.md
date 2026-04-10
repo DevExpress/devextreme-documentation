@@ -80,7 +80,7 @@ The following code uses the **isBand** and **ownerBand** properties to display t
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         // ...
@@ -113,7 +113,7 @@ The following code uses the **isBand** and **ownerBand** properties to display t
 
     <!-- tab: App.js -->
     import React, { useCallback } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         // ...

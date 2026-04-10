@@ -54,7 +54,7 @@ Specifies whether the context menu is enabled in the UI component.
     </template>
     
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
     import { DxGantt, DxContextMenu } from 'devextreme-vue/gantt';
     

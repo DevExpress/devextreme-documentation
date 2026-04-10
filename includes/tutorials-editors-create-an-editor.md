@@ -73,7 +73,7 @@ Use the code below to create an empty {WidgetName}:
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { Dx{WidgetName} } from 'devextreme-vue/{widget-name}';
 
     export default {
@@ -90,7 +90,7 @@ Use the code below to create an empty {WidgetName}:
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { {WidgetName} } from 'devextreme-react/{widget-name}';
 

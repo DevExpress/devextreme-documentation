@@ -104,7 +104,7 @@ The following example adds a custom item to the component. Note that Angular and
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         Toolbar, Item

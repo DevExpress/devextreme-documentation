@@ -99,7 +99,7 @@ The following example shows how to save the UI component state in the local stor
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         // ...
@@ -142,7 +142,7 @@ The following example shows how to save the UI component state in the local stor
 
     <!-- tab: App.js -->
     import React, { useRef } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         // ...

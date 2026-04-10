@@ -156,7 +156,7 @@ The following instructions show how to enable and configure client-side export:
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import { DxDataGrid, 
             DxExport,
@@ -176,7 +176,7 @@ The following instructions show how to enable and configure client-side export:
 
         <!-- tab: App.js -->
         import React from 'react';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DataGrid, {
             Export,
@@ -303,7 +303,7 @@ The following instructions show how to enable and configure client-side export:
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
         import { exportDataGrid } from 'devextreme/excel_exporter';
@@ -341,7 +341,7 @@ The following instructions show how to enable and configure client-side export:
 
         <!-- tab: App.js -->
         import React from 'react';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import { Workbook } from 'devextreme-exceljs-fork';
         import saveAs from 'file-saver';
@@ -475,7 +475,7 @@ The following instructions show how to enable and configure client-side export:
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DxDataGrid from 'devextreme-vue/data-grid';
         import DxButton from 'devextreme-vue/button';
@@ -515,7 +515,7 @@ The following instructions show how to enable and configure client-side export:
 
         <!-- tab: App.js -->
         import React from 'react';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DataGrid from 'devextreme-react/data-grid';
         import Button from 'devextreme-react/button';

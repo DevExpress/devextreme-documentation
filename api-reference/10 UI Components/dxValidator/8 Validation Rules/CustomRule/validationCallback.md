@@ -98,7 +98,7 @@ The following code sample shows a **validationCallback** example. The **validate
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxNumberBox from 'devextreme-vue/number-box';
     import DxValidator, {
@@ -124,7 +124,7 @@ The following code sample shows a **validationCallback** example. The **validate
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import NumberBox from 'devextreme-react/number-box';
     import Validator, {
@@ -241,7 +241,7 @@ The code snippet below demonstrates how to implement multiple validation message
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxNumberBox from 'devextreme-vue/number-box';
     import DxValidator, {
@@ -279,7 +279,7 @@ The code snippet below demonstrates how to implement multiple validation message
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import NumberBox from 'devextreme-react/number-box';
     import Validator, {

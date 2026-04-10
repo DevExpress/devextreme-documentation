@@ -58,7 +58,7 @@ Call [saveEditData()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/s
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Dx{WidgetName} } from 'devextreme-vue/{widget-name}';
 
@@ -91,7 +91,7 @@ Call [saveEditData()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/s
     
     <!-- tab: App.js -->
     import React, { useRef } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName} from 'devextreme-react/{widget-name}';
 

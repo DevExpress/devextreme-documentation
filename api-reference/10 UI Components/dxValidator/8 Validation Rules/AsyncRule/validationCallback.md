@@ -142,7 +142,7 @@ The following code shows a generic **validationCallback** implementation for a s
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTextBox } from 'devextreme-vue/text-box';
     import {
@@ -193,7 +193,7 @@ The following code shows a generic **validationCallback** implementation for a s
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TextBox } from 'devextreme-react/text-box';
     import {

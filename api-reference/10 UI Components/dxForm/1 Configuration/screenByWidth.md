@@ -89,7 +89,7 @@ Implement the **screenByWidth** function to change the relation between a size q
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxForm, {
         // ...
@@ -115,7 +115,7 @@ Implement the **screenByWidth** function to change the relation between a size q
 ##### React
 
     <!-- tab: App.js -->
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Form, {
         // ...

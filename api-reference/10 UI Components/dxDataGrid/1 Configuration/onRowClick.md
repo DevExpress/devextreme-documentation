@@ -131,7 +131,7 @@ In the following code, the **onRowClick** function calls the [editRow](/api-refe
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxEditing 
@@ -156,7 +156,7 @@ In the following code, the **onRowClick** function calls the [editRow](/api-refe
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         Editing 

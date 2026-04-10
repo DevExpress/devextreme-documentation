@@ -93,7 +93,7 @@ Normally, when records are grouped by a column, the groups are sorted according 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxDataGrid, DxSummary, DxGroupItem } from 'devextreme-vue/data-grid';
 
@@ -111,7 +111,7 @@ Normally, when records are grouped by a column, the groups are sorted according 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DataGrid, Summary, GroupItem } from 'devextreme-react/data-grid';
 
@@ -199,7 +199,7 @@ To use these summary items for sorting groups, assign an array of objects to the
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         DxDataGrid,
@@ -219,7 +219,7 @@ To use these summary items for sorting groups, assign an array of objects to the
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DataGrid, SortByGroupSummaryInfo } from 'devextreme-react/data-grid';
 
@@ -308,7 +308,7 @@ After that, set the [groupColumn](/api-reference/10%20UI%20Components/dxDataGrid
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {
         DxDataGrid,
@@ -328,7 +328,7 @@ After that, set the [groupColumn](/api-reference/10%20UI%20Components/dxDataGrid
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DataGrid, SortByGroupSummaryInfo } from 'devextreme-react/data-grid';
 

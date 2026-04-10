@@ -80,7 +80,7 @@ Use this method if you want to add an empty row. If you need to add a row with d
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DxTreeList from 'devextreme-vue/tree-list';
         import DataSource from 'devextreme/data/data_source';
@@ -111,7 +111,7 @@ Use this method if you want to add an empty row. If you need to add a row with d
         <!-- tab: App.js -->
         import React from 'react';
 
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import TreeList from 'devextreme-react/tree-list';
         import DataSource from 'devextreme/data/data_source';
@@ -207,7 +207,7 @@ Use this method if you want to add an empty row. If you need to add a row with d
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DxTreeList from 'devextreme-vue/tree-list';
         import DataSource from 'devextreme/data/data_source';
@@ -240,7 +240,7 @@ Use this method if you want to add an empty row. If you need to add a row with d
         <!-- tab: App.js -->
         import React from 'react';
 
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import TreeList from 'devextreme-react/tree-list';
         import DataSource from 'devextreme/data/data_source';

@@ -105,7 +105,7 @@ In the following code, the **onContextMenuPreparing** function adds a custom ite
     </template>
 
     <script setup>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
 
@@ -129,7 +129,7 @@ In the following code, the **onContextMenuPreparing** function adds a custom ite
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import {WidgetName} from 'devextreme-react/{widget-name}';
 
     const App = () => {

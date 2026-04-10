@@ -1,6 +1,6 @@
 DevExtreme offers over 40 [predefined themes](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') for component styling. You can also create a custom theme with our [ThemeBuilder](https://devexpress.github.io/ThemeBuilder/).
 
-In the next step of the tutorial, apply the `dx.light` theme and add CSS styles to the components.
+In the next step of the tutorial, apply the `dx.fluent.blue.light` theme and add CSS styles to the components.
 
 ---
 ##### jQuery
@@ -10,7 +10,7 @@ To apply a theme, link its file in the `<head>` between jQuery and DevExtreme so
     <!-- tab: index.html -->
     <head>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_25_2/css/dx.light.css" />
+        <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_25_2/css/dx.fluent.blue.light.css" />
         <link rel="stylesheet" type="text/css" href="index.css" />
         <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_25_2/js/dx.all.js"></script>
     </head>

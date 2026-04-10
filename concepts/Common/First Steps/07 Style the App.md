@@ -27,7 +27,7 @@ To apply a theme, open the `angular.json` file and reference a stylesheet:
             "build": {
               "options": {
                 "styles": [
-                  "node_modules/devextreme/dist/css/dx.light.css",
+                  "node_modules/devextreme/dist/css/dx.fluent.blue.light.css",
                   "src/styles.css"
                 ],
                 ...

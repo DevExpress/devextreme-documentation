@@ -60,7 +60,7 @@ If you change a date value, the new value is saved in the same format as the ini
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxDateRangeBox } from 'devextreme-vue/date-range-box';
 
@@ -79,7 +79,7 @@ If you change a date value, the new value is saved in the same format as the ini
     </template>
 
     <script setup>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxDateRangeBox } from 'devextreme-vue/date-range-box';
     </script>
@@ -89,7 +89,7 @@ If you change a date value, the new value is saved in the same format as the ini
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DateRangeBox } from 'devextreme-react/date-range-box';
  

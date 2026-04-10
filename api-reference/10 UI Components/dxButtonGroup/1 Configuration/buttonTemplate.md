@@ -77,7 +77,7 @@ A template name or container.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxButtonGroup } from 'devextreme-vue';
 
@@ -98,7 +98,7 @@ A template name or container.
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { ButtonGroup } from 'devextreme-react';
 

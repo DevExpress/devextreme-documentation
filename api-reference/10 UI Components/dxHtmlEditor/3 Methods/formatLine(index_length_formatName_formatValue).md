@@ -61,7 +61,7 @@ Pass **null** to remove a format.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxHtmlEditor from 'devextreme-vue/html-editor';
 
     const htmlEditorRefKey = "my-html-editor";
@@ -92,7 +92,7 @@ Pass **null** to remove a format.
 
     <!-- tab: App.js -->
     import { useRef } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import HtmlEditor from 'devextreme-react/html-editor';
 

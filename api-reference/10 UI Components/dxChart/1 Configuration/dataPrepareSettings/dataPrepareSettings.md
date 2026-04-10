@@ -75,7 +75,7 @@ The following code shows the **dataPrepareSettings** declaration syntax:
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxChart, {
         DxDataPrepareSettings 
@@ -98,7 +98,7 @@ The following code shows the **dataPrepareSettings** declaration syntax:
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Chart, {
         DataPrepareSettings 

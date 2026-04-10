@@ -75,7 +75,7 @@ This property is a read-only flag. You can use it to check if the editor value c
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
     import DxButton from 'devextreme-vue/button';
     import notify from 'devextreme/ui/notify';
@@ -114,7 +114,7 @@ This property is a read-only flag. You can use it to check if the editor value c
     import React, { useRef } from 'react';
     import {WidgetName} from 'devextreme-react/{widget-name}';
     import Button from 'devextreme-react/button';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     const App = () => {
         const {widgetName}Ref = useRef(null);

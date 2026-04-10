@@ -62,7 +62,7 @@ The pager is an element that allows users to navigate through pages and change t
 
     <!-- tab: App.tsx -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import CardView, { Paging, Pager } from 'devextreme-react/card-view';
 
     function App() {

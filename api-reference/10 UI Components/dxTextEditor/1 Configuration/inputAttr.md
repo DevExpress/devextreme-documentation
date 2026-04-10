@@ -51,7 +51,7 @@ Specifies the attributes to be passed on to the underlying HTML element.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
 
@@ -70,7 +70,7 @@ Specifies the attributes to be passed on to the underlying HTML element.
 ##### React
 
     <!-- tab: App.js -->
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName} from 'devextreme-react/{widget-name}';
 

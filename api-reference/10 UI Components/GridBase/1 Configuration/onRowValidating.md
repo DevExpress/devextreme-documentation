@@ -144,7 +144,7 @@ The following code illustrates how to validate an email address on the server an
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
     import 'whatwg-fetch';
@@ -178,7 +178,7 @@ The following code illustrates how to validate an email address on the server an
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName} from 'devextreme-react/{widget-name}';
     import 'whatwg-fetch';

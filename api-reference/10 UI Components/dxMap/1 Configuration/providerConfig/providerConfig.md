@@ -70,7 +70,7 @@ A [provider](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/provide
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxMap, {
         DxProviderConfig
@@ -88,7 +88,7 @@ A [provider](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/provide
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Map, {
         ProviderConfig

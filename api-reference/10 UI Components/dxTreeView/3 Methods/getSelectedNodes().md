@@ -73,7 +73,7 @@ Selected nodes.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeView from 'devextreme-vue/tree-view';
 
@@ -105,7 +105,7 @@ Selected nodes.
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeView from 'devextreme-react/tree-view';
 

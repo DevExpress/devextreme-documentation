@@ -143,7 +143,7 @@ This function allows you to intercept row removal and perform additional actions
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
     import {WidgetName}, { ... } from 'devextreme-react/{widget-name}';
 

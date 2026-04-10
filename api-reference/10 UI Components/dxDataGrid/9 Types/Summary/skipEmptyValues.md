@@ -97,7 +97,7 @@ Summaries of the *count* type do not skip empty values regardless of the **skipE
     &lt;/template&gt;
 
     &lt;script&gt;
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxSummary,
@@ -132,7 +132,7 @@ Summaries of the *count* type do not skip empty values regardless of the **skipE
 
     &lt;!-- tab: App.js --&gt;
     import React, { useCallback } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Summary,

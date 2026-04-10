@@ -148,7 +148,7 @@ If you need to subscribe to **dxhold** for two elements that are in the parent-c
     import { on } from 'devextreme/events';
     import 'devextreme/events/hold';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     let parentStyle = {
         backgroundColor: "aquamarine",

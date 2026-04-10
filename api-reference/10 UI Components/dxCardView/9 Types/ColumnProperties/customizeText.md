@@ -82,7 +82,7 @@ The [formatted](/api-reference/10%20UI%20Components/dxCardView/9%20Types/ColumnP
     </template>
 
     <script setup lang="ts">
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { Dx{WidgetName}, DxColumn } from "devextreme-vue/{widget-name}";
 
     function customizeText(fieldInfo) {
@@ -94,7 +94,7 @@ The [formatted](/api-reference/10%20UI%20Components/dxCardView/9%20Types/ColumnP
 
     <!-- tab: App.tsx -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import {WidgetName}, { Column } from "devextreme-react/{widget-name}";
     
     const customizeText = (fieldInfo) => {

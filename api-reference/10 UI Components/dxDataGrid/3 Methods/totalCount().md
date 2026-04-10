@@ -212,7 +212,7 @@ The total row count.
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DxDataGrid from 'devextreme-vue/data-grid';
 
@@ -245,7 +245,7 @@ The total row count.
     
         <!-- tab: App.js -->
         import React, { useRef, useCallback } from 'react';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
         import DataGrid from 'devextreme-react/data-grid';
     

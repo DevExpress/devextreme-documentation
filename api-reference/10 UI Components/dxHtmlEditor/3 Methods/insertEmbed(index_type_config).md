@@ -62,7 +62,7 @@ An embedded format's [value](/concepts/05%20UI%20Components/HtmlEditor/10%20Form
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxHtmlEditor from 'devextreme-vue/html-editor';
 
     const htmlEditorRefKey = "my-html-editor";
@@ -98,7 +98,7 @@ An embedded format's [value](/concepts/05%20UI%20Components/HtmlEditor/10%20Form
 
     <!-- tab: App.js -->
     import { useRef } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import HtmlEditor from 'devextreme-react/html-editor';
 

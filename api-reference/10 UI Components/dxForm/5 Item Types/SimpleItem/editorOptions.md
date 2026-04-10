@@ -92,7 +92,7 @@ If you want to define multiple editors and avoid inline declarations, combine al
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxForm, {
         DxSimpleItem
@@ -125,7 +125,7 @@ If you use TypeScript, want to define multiple editors, and avoid inline declara
     import DxForm, { DxSimpleItem } from "devextreme-vue/form";
     import type { DxDateBoxTypes } from "devextreme-vue/date-box";
     import type { DxTextBoxTypes } from "devextreme-vue/text-box";
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     type EditorProps = DxDateBoxTypes.Properties | DxTextBoxTypes.Properties;
 
@@ -140,7 +140,7 @@ If you use TypeScript, want to define multiple editors, and avoid inline declara
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Form, {
         SimpleItem
@@ -165,7 +165,7 @@ If you use TypeScript, want to define multiple editors, and avoid inline declara
 If you use TypeScript, want to define multiple editors, and avoid inline declarations, combine all editor types into a [union](/concepts/Common/TypeScript%20Guides/10%20Best%20Practices/05%20Using%20Unions%20Instead%20of%20Base%20Classes.md '/Documentation/Guide/Common/TypeScript_Guides/Best_Practices/#Using_Unions_Instead_of_Base_Classes'). Next, assign each of your **editorOptions** an object with this union type.
 
     <!-- tab: App.tsx -->
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import Form, { SimpleItem } from 'devextreme-react/form';
     import type { JSX } from 'react';
     import type { DateBoxTypes } from 'devextreme-react/date-box';

@@ -213,7 +213,7 @@ To apply a single DevExtreme theme to your website, add a file named `gatsby-bro
 Add the following `import` statement to the file:
 
     <!--tab: gatsby-browser.js-->
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
 This statement applies the `light` theme to the DevExtreme DataGrid.
 

@@ -108,7 +108,7 @@ To add a predefined item to the context menu, add its [name](/api-reference/_hid
     </template>
 
     <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import { 
             DxFileManager, 
@@ -289,7 +289,7 @@ To add a custom context menu item, specify its [text](/api-reference/_hidden/dxM
     </template>
 
     <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import { 
             DxFileManager, 

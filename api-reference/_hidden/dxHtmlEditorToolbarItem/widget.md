@@ -122,7 +122,7 @@ In the following example, the [CheckBox](/api-reference/10%20UI%20Widgets/dxChec
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxHtmlEditor, {
         DxToolbar,
@@ -153,7 +153,7 @@ In the following example, the [CheckBox](/api-reference/10%20UI%20Widgets/dxChec
 
     <!-- tab: App.js -->
     import { useMemo } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import HtmlEditor, {
         Toolbar,

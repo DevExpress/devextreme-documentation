@@ -96,7 +96,7 @@ All `drivers` have the `busID` field, which refers to a bus. If `drivers` is the
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxColumn,
@@ -134,7 +134,7 @@ All `drivers` have the `busID` field, which refers to a bus. If `drivers` is the
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         Column,

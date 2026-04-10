@@ -108,7 +108,7 @@ DevExtreme text editors, such as [TextBox](/api-reference/10%20UI%20Components/d
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxHtmlEditor } from 'devextreme-vue/html-editor';
     import { DxButton } from 'devextreme-vue/button';
@@ -137,7 +137,7 @@ DevExtreme text editors, such as [TextBox](/api-reference/10%20UI%20Components/d
 
     <!-- tab: App.js -->
     import React, { useCallback, useState } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { HtmlEditor } from 'devextreme-react/html-editor';
     import { Button } from 'devextreme-react/button';

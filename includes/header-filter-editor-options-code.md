@@ -92,7 +92,7 @@
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import Dx{WidgetName}, {
         DxHeaderFilter, 
         DxSearch,
@@ -136,7 +136,7 @@
     </template>
 
     <script setup>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import Dx{WidgetName}, {
         DxHeaderFilter, 
         DxSearch,
@@ -158,7 +158,7 @@
 
     <!-- tab: App.js -->
     import React from 'react';  
-    import 'devextreme/dist/css/dx.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
 
     import {WidgetName}, {
         HeaderFilter, 

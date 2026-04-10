@@ -98,7 +98,7 @@ The following example adds a custom item to the Popup toolbar. Note that Angular
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         ToolbarItem

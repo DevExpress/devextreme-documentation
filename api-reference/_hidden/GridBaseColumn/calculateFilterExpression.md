@@ -124,7 +124,7 @@ The default *"between"* implementation is inclusive (filter results include the 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxColumn
@@ -161,7 +161,7 @@ The default *"between"* implementation is inclusive (filter results include the 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         Column
@@ -261,7 +261,7 @@ To specify a function as a `selector`, return a property from the `rowData` obje
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxColumn
@@ -290,7 +290,7 @@ To specify a function as a `selector`, return a property from the `rowData` obje
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         Column
@@ -383,7 +383,7 @@ You can also implement a function with [custom filter conditions](/concepts/70%2
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxColumn
@@ -412,7 +412,7 @@ You can also implement a function with [custom filter conditions](/concepts/70%2
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         Column
@@ -511,7 +511,7 @@ DataGrid uses *"anyof"* and *"noneof"* filter values for [headerFilter](/api-ref
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxColumn
@@ -540,7 +540,7 @@ DataGrid uses *"anyof"* and *"noneof"* filter values for [headerFilter](/api-ref
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         Column

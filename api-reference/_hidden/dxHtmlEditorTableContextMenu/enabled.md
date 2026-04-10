@@ -42,7 +42,7 @@ Specifies whether to enable the table context menu.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxHtmlEditor, {
         DxTableContextMenu
@@ -60,7 +60,7 @@ Specifies whether to enable the table context menu.
 ##### React
 
     <!-- tab: App.js -->
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import HtmlEditor, {
         TableContextMenu

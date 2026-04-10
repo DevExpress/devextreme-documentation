@@ -192,7 +192,7 @@ The following example shows a **CustomStore** that sends data processing setting
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxRemoteOperations
@@ -276,7 +276,7 @@ The following example shows a **CustomStore** that sends data processing setting
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         RemoteOperations 

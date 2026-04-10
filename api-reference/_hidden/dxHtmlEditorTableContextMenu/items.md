@@ -76,7 +76,7 @@ Use this property to customize the context menu. For example, the following code
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxHtmlEditor, {
         DxTableContextMenu,
@@ -96,7 +96,7 @@ Use this property to customize the context menu. For example, the following code
 ##### React
 
     <!-- tab: App.js -->
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import HtmlEditor, {
         TableContextMenu,

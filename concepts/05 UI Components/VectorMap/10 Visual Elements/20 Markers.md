@@ -17,9 +17,6 @@ Four types of markers are available in VectorMap: dot, bubble, pie and image, ea
     name: "Pie Markers"
 }
 
-#####See Also#####
-- [Vector Map - Data for Markers](/concepts/05%20UI%20Components/VectorMap/20%20Providing%20Data/20%20Data%20for%20Markers.md '/Documentation/Guide/UI_Components/VectorMap/Providing_Data#Data_for_Markers')
-
 You can configure map markers using fields of the [layer](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/') object, whose [type](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/type.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#type') is *'marker'*. To specify the type of markers, set the [elementType](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/type.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#type') field of this object.
 
 	<!--JavaScript-->var vectorMapOptions = {
@@ -66,3 +63,6 @@ Specified directly in the **layers** object, these properties are applied to all
 			}
 		}]
 	};
+
+#####See Also#####
+- [Vector Map - Data for Markers](/concepts/05%20UI%20Components/VectorMap/20%20Providing%20Data/20%20Data%20for%20Markers.md '/Documentation/Guide/UI_Components/VectorMap/Providing_Data#Data_for_Markers')

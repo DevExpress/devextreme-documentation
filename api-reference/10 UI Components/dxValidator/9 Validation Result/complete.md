@@ -46,7 +46,7 @@ In the following example, a button validates an editor with an async rule. The *
     <dx-text-box>
         <dx-validator
             [validationGroup]="validationGroupName">
-                <dxi-validator-validation-rule type="async" 
+                <dxi-validator-async-rule 
                     [validationCallback]="validateAsync">
                 </dxi-validator-validation-rule>
         </dx-validator>

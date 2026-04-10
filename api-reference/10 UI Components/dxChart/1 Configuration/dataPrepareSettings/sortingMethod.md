@@ -79,7 +79,7 @@ The following code sorts string arguments in alphabetical order:
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxChart, {
         DxDataPrepareSettings

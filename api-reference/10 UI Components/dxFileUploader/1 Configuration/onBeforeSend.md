@@ -89,7 +89,7 @@ An object that provides information about the file upload session.
     </template>
 
     <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import { 
             DxFileUploader

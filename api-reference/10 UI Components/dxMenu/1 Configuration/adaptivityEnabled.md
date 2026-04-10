@@ -64,7 +64,7 @@ The following code example sets the container's width to 400 pixels, sets the Me
     </template>
 
     <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DxMenu from 'devextreme-vue/menu';
 
@@ -90,7 +90,7 @@ The following code example sets the container's width to 400 pixels, sets the Me
 
     <!--tab: App.js-->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Menu } from 'devextreme-react/menu';
 

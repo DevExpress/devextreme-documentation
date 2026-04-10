@@ -179,7 +179,7 @@ The code below configures the [DateBox](/api-reference/10%20UI%20Components/dxDa
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxForm, {
         DxSimpleItem,
@@ -221,7 +221,7 @@ The code below configures the [DateBox](/api-reference/10%20UI%20Components/dxDa
     <!-- tab: App.js -->
     import React, { useState } from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Form, {
         SimpleItem,

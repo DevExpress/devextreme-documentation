@@ -83,7 +83,7 @@ The UI component animates its elements at the beginning of its lifetime and when
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxAnimation
@@ -103,7 +103,7 @@ The UI component animates its elements at the beginning of its lifetime and when
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         Animation 

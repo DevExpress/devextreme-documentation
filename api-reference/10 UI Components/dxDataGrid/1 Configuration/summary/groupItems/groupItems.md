@@ -81,7 +81,7 @@ To specify the items of the group summary, declare an array of objects, each of 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxSummary,
@@ -102,7 +102,7 @@ To specify the items of the group summary, declare an array of objects, each of 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Summary,

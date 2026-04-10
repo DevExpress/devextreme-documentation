@@ -124,7 +124,7 @@ If you need to save and load the state from a remote storage, use the following 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxStateStoring
@@ -167,7 +167,7 @@ If you need to save and load the state from a remote storage, use the following 
 
     <!-- tab: App.js -->
     import React, { useCallback } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         StateStoring

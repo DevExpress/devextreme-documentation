@@ -68,7 +68,7 @@ This property specifies the drawer's content. To specify the view's content, nes
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDrawer from 'devextreme-vue/drawer';
 
@@ -84,7 +84,7 @@ This property specifies the drawer's content. To specify the view's content, nes
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Drawer from 'devextreme-react/drawer';
 

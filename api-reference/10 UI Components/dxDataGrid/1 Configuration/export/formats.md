@@ -128,7 +128,7 @@ Since the **formats** property accepts an array, you can specify multiple format
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
     import { jsPDF } from 'jspdf';
     import { exportDataGrid as exportDataGridToPdf} from 'devextreme/pdf_exporter';
@@ -178,7 +178,7 @@ Since the **formats** property accepts an array, you can specify multiple format
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DataGrid, { Export } from 'devextreme-react/data-grid';
     import { jsPDF } from 'jspdf';
     import { exportDataGrid as exportDataGridToPdf} from 'devextreme/pdf_exporter';
@@ -342,7 +342,7 @@ The example below shows how to export DataGrid to CSV format.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
     import { Workbook } from 'devextreme-exceljs-fork';
     import { saveAs } from 'file-saver-es';
@@ -380,7 +380,7 @@ The example below shows how to export DataGrid to CSV format.
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DataGrid, { Export } from 'devextreme-react/data-grid';
     import { Workbook } from 'devextreme-exceljs-fork';
     import { saveAs } from 'file-saver-es';

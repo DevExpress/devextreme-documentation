@@ -104,7 +104,7 @@ In the following code, the **onFocusedCellChanging** function is used to customi
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Dx{WidgetName} } from 'devextreme-vue/{widget-name}';
 
@@ -127,7 +127,7 @@ In the following code, the **onFocusedCellChanging** function is used to customi
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName} from 'devextreme-react/{widget-name}';
 

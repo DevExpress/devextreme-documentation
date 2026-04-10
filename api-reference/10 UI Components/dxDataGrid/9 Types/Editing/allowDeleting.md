@@ -75,7 +75,7 @@ The following code allows a user to delete only odd data rows:
     &lt;/template&gt;
 
     &lt;script&gt;
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxEditing
@@ -99,7 +99,7 @@ The following code allows a user to delete only odd data rows:
 
     &lt;!-- tab: App.js --&gt;
     import React, { useCallback } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Editing

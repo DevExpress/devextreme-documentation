@@ -87,7 +87,7 @@ The following code demonstrates how to change separators from commas to semicolo
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxDropDownBox } from 'devextreme-vue/drop-down-box';
 
@@ -109,7 +109,7 @@ The following code demonstrates how to change separators from commas to semicolo
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DropDownBox } from 'devextreme-react/drop-down-box';
 

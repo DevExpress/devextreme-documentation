@@ -73,7 +73,7 @@ A user can insert variables in the text and remove them, but never modify them.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxHtmlEditor, {
         DxToolbar,
@@ -98,7 +98,7 @@ A user can insert variables in the text and remove them, but never modify them.
 ##### React
 
     <!-- tab: App.js -->
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import HtmlEditor, {
         Variables

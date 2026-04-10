@@ -86,7 +86,7 @@ When this property is set to **true**, the following applies:
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import Dx{WidgetName}, {
             DxButton as Dx{WidgetName}Button
@@ -115,7 +115,7 @@ When this property is set to **true**, the following applies:
         <!-- tab: App.js -->
         import React from 'react';
 
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import {WidgetName}, {
             Button as {WidgetName}Button
@@ -228,7 +228,7 @@ When this property is set to **true**, the following applies:
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import Dx{WidgetName}, {
             DxButton as Dx{WidgetName}Button
@@ -260,7 +260,7 @@ When this property is set to **true**, the following applies:
         <!-- tab: App.js -->
         import React from 'react';
 
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import {WidgetName}, {
             Button as {WidgetName}Button

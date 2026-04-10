@@ -83,7 +83,7 @@ You can use the following position markers in this text:
         </DxDataGrid>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxDataGrid, DxSummary, DxTotalItem } from 'devextreme-vue/data-grid';
 
@@ -100,7 +100,7 @@ You can use the following position markers in this text:
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DataGrid, Summary, TotalItem } from 'devextreme-react/data-grid';
 
     class App extends React.Component {

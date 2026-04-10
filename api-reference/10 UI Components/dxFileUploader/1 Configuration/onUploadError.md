@@ -102,7 +102,7 @@ The following code shows how you can handle a network error.
     </template>
 
     <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import { 
             DxFileUploader

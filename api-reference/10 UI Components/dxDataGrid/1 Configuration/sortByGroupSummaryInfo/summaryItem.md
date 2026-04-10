@@ -77,7 +77,7 @@ The **summaryItem** property accepts one of the following values.
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DxDataGrid, {
             DxSummary,
@@ -100,7 +100,7 @@ The **summaryItem** property accepts one of the following values.
 
         <!-- tab: App.js -->
         import React from 'react';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DataGrid, {
             Summary,
@@ -191,7 +191,7 @@ The **summaryItem** property accepts one of the following values.
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DxDataGrid, {
             DxSummary,
@@ -214,7 +214,7 @@ The **summaryItem** property accepts one of the following values.
 
         <!-- tab: App.js -->
         import React from 'react';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DataGrid, {
             Summary,
@@ -330,7 +330,7 @@ The **summaryItem** property accepts one of the following values.
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DxDataGrid, {
             DxSummary,
@@ -353,7 +353,7 @@ The **summaryItem** property accepts one of the following values.
 
         <!-- tab: App.js -->
         import React from 'react';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DataGrid, {
             Summary,
@@ -470,7 +470,7 @@ The **summaryItem** property accepts one of the following values.
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DxDataGrid, {
             DxSummary,
@@ -493,7 +493,7 @@ The **summaryItem** property accepts one of the following values.
 
         <!-- tab: App.js -->
         import React from 'react';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DataGrid, {
             Summary,

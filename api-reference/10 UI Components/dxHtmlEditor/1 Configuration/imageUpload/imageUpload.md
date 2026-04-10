@@ -95,7 +95,7 @@ Use the [fileUploadMode](/api-reference/_hidden/dxHtmlEditorImageUpload/fileUplo
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxHtmlEditor from 'devextreme-vue/html-editor';
 
@@ -119,7 +119,7 @@ Use the [fileUploadMode](/api-reference/_hidden/dxHtmlEditorImageUpload/fileUplo
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import HtmlEditor from 'devextreme-react/html-editor';
 

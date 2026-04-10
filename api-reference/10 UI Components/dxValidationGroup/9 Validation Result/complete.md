@@ -158,7 +158,7 @@ In the following example, a button validates a group of editors with async rules
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxTextBox } from 'devextreme-vue/text-box';
     import { DxDateBox } from 'devextreme-vue/date-box';
@@ -201,7 +201,7 @@ In the following example, a button validates a group of editors with async rules
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { TextBox } from 'devextreme-react/text-box';
     import { DateBox } from 'devextreme-react/date-box';

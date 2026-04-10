@@ -59,7 +59,7 @@ Specified in a summary configuration object, this property affects an individual
     &lt;/template&gt;
 
     &lt;script&gt;
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxSummary
@@ -78,7 +78,7 @@ Specified in a summary configuration object, this property affects an individual
 
     &lt;!-- tab: App.js --&gt;
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Summary

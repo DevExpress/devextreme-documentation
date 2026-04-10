@@ -63,7 +63,7 @@ The function passed to this property enables you to specify a custom condition f
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDrawer from 'devextreme-vue/drawer';
 
@@ -83,7 +83,7 @@ The function passed to this property enables you to specify a custom condition f
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Drawer from 'devextreme-react/drawer';
 

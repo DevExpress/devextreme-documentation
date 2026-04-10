@@ -60,7 +60,7 @@ In the following example, a button validates a group of editors with async rules
             [validationGroup]="validationGroupName">
                 <dxi-validator-async-rule 
                     [validationCallback]="validateAsync">
-                </dxi-validator-validation-rule>
+                </dxi-validator-async-rule>
         </dx-validator>
     </dx-text-box>
 
@@ -69,7 +69,7 @@ In the following example, a button validates a group of editors with async rules
             [validationGroup]="validationGroupName">
                 <dxi-validator-async-rule 
                     [validationCallback]="validateAsync">
-                </dxi-validator-validation-rule>
+                </dxi-validator-async-rule>
         </dx-validator>
     </dx-date-box>
 

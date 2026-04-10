@@ -69,7 +69,7 @@ The following code shows a generic **validationCallback** implementation for a s
         <dx-validator>
             <dxi-validator-async-rule 
                 [validationCallback]="validateAsync">
-            </dxi-validator-validation-rule>
+            </dxi-validator-async-rule>
         </dx-validator>
     </dx-text-box>
 

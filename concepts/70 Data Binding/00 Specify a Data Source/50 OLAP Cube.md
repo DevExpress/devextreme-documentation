@@ -87,7 +87,7 @@ Wrap the **XmlaStore** into a **PivotGridDataSource**. This component enables yo
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxPivotGrid from 'devextreme-vue/pivot-grid';
     import XmlaStore from 'devextreme/ui/pivot_grid/xmla_store';
@@ -120,7 +120,7 @@ Wrap the **XmlaStore** into a **PivotGridDataSource**. This component enables yo
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import PivotGrid from 'devextreme-react/pivot-grid';
     import XmlaStore from 'devextreme/ui/pivot_grid/xmla_store';

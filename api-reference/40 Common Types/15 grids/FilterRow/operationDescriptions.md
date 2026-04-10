@@ -70,7 +70,7 @@ The following code sample illustrates how to set this property:
     &lt;/template&gt;
 
     &lt;script&gt;
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxFilterRow,
@@ -90,7 +90,7 @@ The following code sample illustrates how to set this property:
 ##### React
 
     &lt;!-- tab: App.js --&gt;
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         FilterRow,

@@ -53,7 +53,7 @@ To position an element, specify the [my](/api-reference/50%20Common/Object%20Str
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxPopup, {
         DxPosition
@@ -72,7 +72,7 @@ To position an element, specify the [my](/api-reference/50%20Common/Object%20Str
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Popup, {
         Position

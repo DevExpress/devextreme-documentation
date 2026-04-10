@@ -53,7 +53,7 @@ In the following code snippet, a standalone ListItem component is created to ren
     import * as React from 'react';
     import List from 'devextreme-react/list';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     const dataSource = ['Apples', 'Bananas', 'Cranberries'];
     const defaultWeight = 1;

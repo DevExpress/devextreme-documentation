@@ -67,7 +67,7 @@ Set the **format** UI component property to apply a predefined format. In the fo
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxSlider, {
         DxTooltip,
@@ -92,7 +92,7 @@ Set the **format** UI component property to apply a predefined format. In the fo
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Slider, {
         Tooltip,

@@ -64,7 +64,7 @@ To set the **collision** property, use an object with the **x** and **y** fields
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxPopup, {
         DxPosition,
@@ -85,7 +85,7 @@ To set the **collision** property, use an object with the **x** and **y** fields
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Popup, {
         Position,

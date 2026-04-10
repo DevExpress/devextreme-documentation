@@ -59,7 +59,7 @@ To bind a UI component to JSON data, pass the data URL to the UI component's [da
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxDataGrid } from 'devextreme-vue/data-grid';
 
@@ -71,7 +71,7 @@ To bind a UI component to JSON data, pass the data URL to the UI component's [da
     <!-- tab: App.tsx -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DataGrid } from 'devextreme-react/data-grid';
 
     const jsonUrl: string = 'https://jsonplaceholder.typicode.com/posts';
@@ -195,7 +195,7 @@ The following code configures **CustomStore**.**load** to include custom paramet
     </template>
 
     <script setup>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxList } from 'devextreme-vue/list';
     import { CustomStore } from 'devextreme/data/custom_store';
@@ -230,7 +230,7 @@ The following code configures **CustomStore**.**load** to include custom paramet
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { List } from 'devextreme-react/list';
     import { CustomStore } from 'devextreme/data/custom_store';

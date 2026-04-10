@@ -125,7 +125,7 @@ Use the [dataSource](/api-reference/10%20UI%20Components/dxGantt/1%20Configurati
             "build": {
               "options": {
                 "styles": [
-                  "node_modules/devextreme/dist/css/dx.light.css",
+                  "node_modules/devextreme/dist/css/dx.fluent.blue.light.css",
                   "node_modules/devexpress-gantt/dist/dx-gantt.css",
                   "src/styles.css"
                 ],

@@ -119,7 +119,7 @@ To bind a UI component to a local array, pass this array to the UI component's [
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
     import DxSelectBox from 'devextreme-vue/select-box';
@@ -163,7 +163,7 @@ To bind a UI component to a local array, pass this array to the UI component's [
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
     import SelectBox from 'devextreme-react/select-box';
@@ -306,7 +306,7 @@ The following example declares an **ArrayStore**, wraps it in a **DataSource**, 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
     import DxSelectBox from 'devextreme-vue/select-box';
@@ -350,7 +350,7 @@ The following example declares an **ArrayStore**, wraps it in a **DataSource**, 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
     import SelectBox from 'devextreme-react/select-box';

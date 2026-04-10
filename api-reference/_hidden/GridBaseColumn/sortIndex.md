@@ -75,7 +75,7 @@ To sort data first by the *"Last Name"* and then by the *"First Name"* column, u
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxColumn
@@ -94,7 +94,7 @@ To sort data first by the *"Last Name"* and then by the *"First Name"* column, u
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         Column

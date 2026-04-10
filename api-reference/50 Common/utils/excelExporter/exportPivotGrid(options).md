@@ -120,7 +120,7 @@ You can call this method at any point in your application. In the example below,
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxPivotGrid, DxExport } from 'devextreme-vue/pivot-grid';
     import { exportPivotGrid } from 'devextreme/excel_exporter';
@@ -155,7 +155,7 @@ You can call this method at any point in your application. In the example below,
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import PivotGrid, { Export } from 'devextreme-react/pivot-grid';
     import { Workbook } from 'devextreme-exceljs-fork';

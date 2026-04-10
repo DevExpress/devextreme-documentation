@@ -116,7 +116,7 @@ The Gantt UI component allows you to add default and create custom toolbar items
         </DxGantt>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         import 'devexpress-gantt/dist/dx-gantt.css'; 
 
         import { 
@@ -148,7 +148,7 @@ The Gantt UI component allows you to add default and create custom toolbar items
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import 'devexpress-gantt/dist/dx-gantt.css'; 
 
     import Gantt, { 

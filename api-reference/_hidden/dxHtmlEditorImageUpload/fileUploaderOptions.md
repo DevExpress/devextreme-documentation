@@ -75,7 +75,7 @@ See [FileUploader Configuration](/api-reference/10%20UI%20Components/dxFileUploa
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxHtmlEditor from 'devextreme-vue/html-editor';
 
@@ -99,7 +99,7 @@ See [FileUploader Configuration](/api-reference/10%20UI%20Components/dxFileUploa
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import HtmlEditor from 'devextreme-react/html-editor';
 

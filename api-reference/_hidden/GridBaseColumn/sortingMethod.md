@@ -96,7 +96,7 @@ The string comparison is culture-insensitive by default. Use the following code 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxColumn
@@ -125,7 +125,7 @@ The string comparison is culture-insensitive by default. Use the following code 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         Column

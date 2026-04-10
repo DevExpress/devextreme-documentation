@@ -55,7 +55,7 @@ Because **editorOptions** depend on the **dataType**, they cannot be typed and a
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxFilterBuilder, {
         DxField
@@ -81,7 +81,7 @@ Because **editorOptions** depend on the **dataType**, they cannot be typed and a
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FilterBuilder, {
         Field
@@ -176,7 +176,7 @@ Do not specify the **onValueChanged** property in this object. If you need to ad
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxFilterBuilder from 'devextreme-vue/filter-builder';
 
@@ -209,7 +209,7 @@ Do not specify the **onValueChanged** property in this object. If you need to ad
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FilterBuilder from 'devextreme-react/filter-builder';
 

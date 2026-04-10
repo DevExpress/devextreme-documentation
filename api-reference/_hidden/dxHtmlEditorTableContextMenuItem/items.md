@@ -65,7 +65,7 @@ Use this property to create a hierarchical context menu. The following code demo
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxHtmlEditor, {
         DxTableContextMenu,
@@ -85,7 +85,7 @@ Use this property to create a hierarchical context menu. The following code demo
 ##### React
 
     <!-- tab: App.js -->
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import HtmlEditor, {
         TableContextMenu,

@@ -105,7 +105,7 @@ The `this` keyword refers to the column's configuration.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Dx{WidgetName}, DxColumn } from "devextreme-vue/{widget-name}";
 
@@ -127,7 +127,7 @@ The `this` keyword refers to the column's configuration.
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, { Column } from "devextreme-react/{widget-name}";
     

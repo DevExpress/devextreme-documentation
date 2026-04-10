@@ -64,7 +64,7 @@ Specifies the special character(s) that should surround the variables.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxHtmlEditor, {
         DxVariables
@@ -87,7 +87,7 @@ Specifies the special character(s) that should surround the variables.
 ##### React
 
     <!-- tab: App.js -->
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import HtmlEditor, {
         Variables

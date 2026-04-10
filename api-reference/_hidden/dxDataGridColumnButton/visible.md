@@ -87,7 +87,7 @@ Use the function to show or hide the button for specific rows. For example, the 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxColumn,
@@ -113,7 +113,7 @@ Use the function to show or hide the button for specific rows. For example, the 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         Column,

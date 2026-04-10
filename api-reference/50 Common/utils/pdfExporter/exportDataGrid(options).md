@@ -133,7 +133,7 @@ In the following example, a DevExtreme [Button](/concepts/05%20UI%20Components/B
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
     import DxButton from 'devextreme-vue/button';
@@ -175,7 +175,7 @@ In the following example, a DevExtreme [Button](/concepts/05%20UI%20Components/B
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
     import Button from 'devextreme-react/button';

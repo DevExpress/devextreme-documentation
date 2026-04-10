@@ -151,7 +151,7 @@ The following code snippet checks DataGrid cell [rowType](/api-reference/10%20UI
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
     import { exportDataGrid } from 'devextreme/excel_exporter';
@@ -194,7 +194,7 @@ The following code snippet checks DataGrid cell [rowType](/api-reference/10%20UI
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, { Export } from 'devextreme-react/data-grid';
     import { Workbook } from 'devextreme-exceljs-fork';

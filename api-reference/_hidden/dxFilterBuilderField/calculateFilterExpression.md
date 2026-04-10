@@ -109,7 +109,7 @@ In the following code, the **calculateFilterExpression** function implements an 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxFilterBuilder, {
         DxField
@@ -145,7 +145,7 @@ In the following code, the **calculateFilterExpression** function implements an 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FilterBuilder, {
         Field

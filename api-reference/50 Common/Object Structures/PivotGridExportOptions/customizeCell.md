@@ -140,7 +140,7 @@ In the following code, the **customizeCell** function customizes <a href="https:
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxPivotGrid, DxExport } from 'devextreme-vue/pivot-grid';
     import { exportPivotGrid } from 'devextreme/excel_exporter';
@@ -183,7 +183,7 @@ In the following code, the **customizeCell** function customizes <a href="https:
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import PivotGrid, { Export } from 'devextreme-react/pivot-grid';
     import { Workbook } from 'devextreme-exceljs-fork';

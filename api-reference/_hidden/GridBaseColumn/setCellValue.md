@@ -106,7 +106,7 @@ This function allows you to process user input before it is saved to the data so
         </Dx{WidgetName}>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Dx{WidgetName}, DxColumn } from 'devextreme-vue/{widget-name}';
 
@@ -130,7 +130,7 @@ This function allows you to process user input before it is saved to the data so
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { {WidgetName}, Column } from 'devextreme-react/{widget-name}';
 
@@ -290,7 +290,7 @@ To perform asynchronous operations in the **setCellValue** function, return a pr
         </Dx{WidgetName}>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Dx{WidgetName}, DxColumn } from 'devextreme-vue/{widget-name}';
     import 'whatwg-fetch';
@@ -327,7 +327,7 @@ To perform asynchronous operations in the **setCellValue** function, return a pr
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { {WidgetName}, Column } from 'devextreme-react/{widget-name}';
     import 'whatwg-fetch';

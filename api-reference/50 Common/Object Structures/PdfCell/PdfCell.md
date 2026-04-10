@@ -127,7 +127,7 @@ The [customDrawCell](/api-reference/50%20Common/Object%20Structures/PdfExportDat
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
     import DxButton from 'devextreme-vue/button';
@@ -177,7 +177,7 @@ The [customDrawCell](/api-reference/50%20Common/Object%20Structures/PdfExportDat
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
     import Button from 'devextreme-react/button';

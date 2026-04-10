@@ -91,7 +91,7 @@ In the following code, the `header` and `size` formats are configured as describ
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxHtmlEditor, {
         DxToolbar,
@@ -117,7 +117,7 @@ In the following code, the `header` and `size` formats are configured as describ
 ##### React
 
     <!-- tab: App.js -->
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import HtmlEditor, {
         Toolbar,

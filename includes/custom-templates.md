@@ -114,7 +114,7 @@ The following code shows how to declare a template and use these parameters. Thi
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxList from 'devextreme-vue/list';
 
@@ -147,7 +147,7 @@ The following code shows how to declare a template and use these parameters. Thi
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import List from 'devextreme-react/list';
 
@@ -297,7 +297,7 @@ Declare **named** templates within the component's markup but outside the templa
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxList, {
         DxItem
@@ -349,7 +349,7 @@ Declare **named** templates within the component's markup but outside the templa
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import List, { Item } from 'devextreme-react/list';
     import Button from 'devextreme-react/button';

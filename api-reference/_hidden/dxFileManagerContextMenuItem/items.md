@@ -95,7 +95,7 @@ The FileManager UI component allows you to add default and create custom context
     </template>
 
     <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import { 
             DxFileManager, 

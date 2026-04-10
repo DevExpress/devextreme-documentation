@@ -188,7 +188,7 @@ If you want to format and localize strings, numbers, dates, and currencies autom
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import config from 'devextreme/core/config';
 
@@ -215,7 +215,7 @@ If you want to format and localize strings, numbers, dates, and currencies autom
     <!-- tab: App.js -->
     import React from 'react';
     import config from 'devextreme/core/config';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column, Format

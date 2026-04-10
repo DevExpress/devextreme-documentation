@@ -83,7 +83,7 @@ To make your gauge "live", enable animation for it by setting the **enabled** pr
     &lt;/template&gt;
 
     &lt;script&gt;
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxAnimation
@@ -103,7 +103,7 @@ To make your gauge "live", enable animation for it by setting the **enabled** pr
     &lt;!-- tab: App.js --&gt;
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         Animation 

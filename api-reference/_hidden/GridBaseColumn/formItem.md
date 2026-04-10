@@ -81,7 +81,7 @@ In the following code, the `Full_Name` grid column in the editing state produces
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxEditing,
@@ -106,7 +106,7 @@ In the following code, the `Full_Name` grid column in the editing state produces
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         Editing,

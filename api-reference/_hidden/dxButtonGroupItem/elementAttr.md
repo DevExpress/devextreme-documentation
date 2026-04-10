@@ -103,7 +103,7 @@ Specifies the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import ButtonGroup from 'devextreme-react/button-group';
 

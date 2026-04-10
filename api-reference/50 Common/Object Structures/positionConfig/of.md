@@ -45,7 +45,7 @@ This property accepts the following value types:
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DxPopup, {
             DxPosition
@@ -64,7 +64,7 @@ This property accepts the following value types:
         <!-- tab: App.js -->
         import React from 'react';
 
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import Popup, {
             Position
@@ -133,7 +133,7 @@ This property accepts the following value types:
         </template>
     
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
         import DxPopup, {
             DxPosition
@@ -157,7 +157,7 @@ This property accepts the following value types:
         <!-- tab: App.js -->
         import React from 'react';
     
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
         import Popup, {
             Position
@@ -233,7 +233,7 @@ This property accepts the following value types:
         </template>
     
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
         import DxPopover, {
             DxPosition
@@ -257,7 +257,7 @@ This property accepts the following value types:
         <!-- tab: App.js -->
         import React from 'react';
     
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
         import Popover, {
             Position

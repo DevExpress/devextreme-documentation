@@ -106,7 +106,7 @@ If you apply [CSP rules](/concepts/Common/Security%20Considerations/40%20Content
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
     import { Workbook } from 'devextreme-exceljs-fork';
 
@@ -145,7 +145,7 @@ If you apply [CSP rules](/concepts/Common/Security%20Considerations/40%20Content
     </template>
 
     <script setup>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxDataGrid, DxExport } from 'devextreme-vue/data-grid';
     import { Workbook } from 'devextreme-exceljs-fork';
 
@@ -171,7 +171,7 @@ If you apply [CSP rules](/concepts/Common/Security%20Considerations/40%20Content
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DataGrid, { Export } from 'devextreme-react/data-grid';
     import { Workbook } from 'devextreme-exceljs-fork';
 

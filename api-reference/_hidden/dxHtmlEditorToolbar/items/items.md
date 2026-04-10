@@ -65,7 +65,7 @@ The toolbar provides [predefined items](/concepts/05%20UI%20Components/HtmlEdito
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxHtmlEditor, {
         DxToolbar,
@@ -85,7 +85,7 @@ The toolbar provides [predefined items](/concepts/05%20UI%20Components/HtmlEdito
 ##### React
 
     <!-- tab: App.js -->
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import HtmlEditor, {
         Toolbar,
@@ -188,7 +188,7 @@ Most of the predefined items are buttons. To customize a button, assign its name
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxHtmlEditor, {
         DxToolbar,
@@ -215,7 +215,7 @@ Most of the predefined items are buttons. To customize a button, assign its name
 ##### React
 
     <!-- tab: App.js -->
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import HtmlEditor, {
         Toolbar,

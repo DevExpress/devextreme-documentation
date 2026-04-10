@@ -69,7 +69,7 @@ The **columns** array can contain column objects and data field names as strings
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxColumn
@@ -88,7 +88,7 @@ The **columns** array can contain column objects and data field names as strings
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         Column

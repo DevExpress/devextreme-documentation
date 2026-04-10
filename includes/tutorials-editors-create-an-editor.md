@@ -14,7 +14,7 @@ Use the code below to create an empty {WidgetName}:
         <head>
             <!-- ... -->
             <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_26_1/css/dx.light.css">
+            <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/minor_26_1/css/dx.fluent.blue.light.css">
             <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/minor_26_1/js/dx.all.js"></script>
             <script type="text/javascript" src="index.js"></script>
         </head>
@@ -73,7 +73,7 @@ Use the code below to create an empty {WidgetName}:
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { Dx{WidgetName} } from 'devextreme-vue/{widget-name}';
 
     export default {
@@ -90,7 +90,7 @@ Use the code below to create an empty {WidgetName}:
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { {WidgetName} } from 'devextreme-react/{widget-name}';
 

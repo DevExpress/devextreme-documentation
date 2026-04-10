@@ -6,7 +6,7 @@ Handle component events to update the parent component's state. Note: components
 
     <!-- tab: App.js -->
     import React, { useState } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import TextBox from 'devextreme-react/text-box';
 
 

@@ -112,7 +112,7 @@ The default header filter for date columns is hierarchical. To implement a non-h
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Dx{WidgetName}, DxColumn, DxHeaderFilter } from 'devextreme-vue/{widget-name}';
 
@@ -130,7 +130,7 @@ The default header filter for date columns is hierarchical. To implement a non-h
 
     <!-- tab: App.tsx -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { {WidgetName}, Column, HeaderFilter } from 'devextreme-react/{widget-name}';
 

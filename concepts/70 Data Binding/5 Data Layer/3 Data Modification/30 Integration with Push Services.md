@@ -24,6 +24,14 @@ Call this method in the event handlers for client functions that can be invoked 
     name: "Chart SignalR"
 }
 
+[note]
+
+To update nested data, specify `changes.data` as a nested object:
+
+    store.push([{ type: "update", data: { Address: { City: "Bentonville" } }, key: key }]);
+
+[/note]
+
 After being notified, the **DataSource** can reapply sorting, filtering, grouping, and other data processing settings if you set the [reshapeOnPush](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/reshapeOnPush.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#reshapeOnPush') property to **true**. If pushes come too frequently, specify [pushAggregationTimeout](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/pushAggregationTimeout.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#pushAggregationTimeout') to aggregate them.
 
 #include btn-open-demo with {

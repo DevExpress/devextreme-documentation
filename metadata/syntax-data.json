@@ -10350,6 +10350,11 @@
     "dxChatOptions.speechToTextOptions": {
       "vue": "speech-to-text-options"
     },
+    "dxChatOptions.suggestions": {
+      "angular": "dxo-suggestions",
+      "react": "Suggestions",
+      "vue": "DxSuggestions"
+    },
     "dxChatOptions.tabIndex": {
       "vue": "tab-index"
     },

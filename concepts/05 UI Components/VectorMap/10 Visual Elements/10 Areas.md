@@ -2,9 +2,6 @@ An area is the fundamental element of the VectorMap UI component. Map areas usua
 
 ![DevExtreme ChartJS VectorMap](/images/ChartJS/MapAreas.png)
 
-#####See Also#####
-- [Vector Map - Data for Areas](/concepts/05%20UI%20Components/VectorMap/20%20Providing%20Data/10%20Data%20for%20Areas '/Documentation/Guide/UI_Components/VectorMap/Providing_Data#Data_for_Areas')
-
 You can configure map areas using fields of the [layer](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/') object, whose [type](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/layers/type.md '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/layers/#type') is *'area'*.
 
 	<!--JavaScript-->var vectorMapOptions = {
@@ -42,3 +39,6 @@ Specified directly in the **layer** object, these properties are applied to all 
 			}
 		}]
 	};
+
+#####See Also#####
+- [Vector Map - Data for Areas](/concepts/05%20UI%20Components/VectorMap/20%20Providing%20Data/10%20Data%20for%20Areas '/Documentation/Guide/UI_Components/VectorMap/Providing_Data#Data_for_Areas')

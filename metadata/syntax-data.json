@@ -18047,6 +18047,11 @@
     "dxSchedulerOptions.groupByDate": {
       "vue": "group-by-date"
     },
+    "dxSchedulerOptions.hiddenWeekDays": {
+      "angular": "dxi-hidden-week-day",
+      "react": "HiddenWeekDay",
+      "vue": "DxHiddenWeekDay"
+    },
     "dxSchedulerOptions.hoverStateEnabled": {
       "vue": "hover-state-enabled"
     },
@@ -18243,6 +18248,11 @@
     },
     "dxSchedulerOptions.views.groupOrientation": {
       "vue": "group-orientation"
+    },
+    "dxSchedulerOptions.views.hiddenWeekDays": {
+      "angular": "dxi-hidden-week-day",
+      "react": "HiddenWeekDay",
+      "vue": "DxHiddenWeekDay"
     },
     "dxSchedulerOptions.views.intervalCount": {
       "vue": "interval-count"
@@ -21102,6 +21112,9 @@
     },
     "enums.DateType": {
       "vue": "date-type"
+    },
+    "enums.DayOfWeek": {
+      "vue": "day-of-week"
     },
     "enums.Direction": {
       "vue": "direction"

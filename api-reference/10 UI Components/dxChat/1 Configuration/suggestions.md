@@ -64,7 +64,7 @@ The following code snippet configures **suggestions** that fill the Chat input f
                 { text: 'Write an email' },
                 { text: 'Fix my writing' },
             ],
-            onItemClick(e) {
+            onItemClick: (e) => {
                 this.inputFieldText = e.itemData.text;
             },
         };
@@ -75,8 +75,8 @@ The following code snippet configures **suggestions** that fill the Chat input f
     <!-- tab: App.vue -->
     <template>
         <DxChat
-            input-field-text="inputFieldText"
-            suggestions="chatSuggestions"
+            :input-field-text="inputFieldText"
+            :suggestions="chatSuggestions"
         />
     </template>
 

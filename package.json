@@ -9,8 +9,8 @@
     "url": "https://github.com/DevExpress/devextreme-documentation.git"
   },
   "devDependencies": {
-    "devextreme-internal-tools": "^18.1.2",
-    "ts-node": "^10.9.1"
+    "devextreme-internal-tools": "^18.2.0",
+    "ts-node": "^10.9.2"
   },
   "scripts": {
     "make-compact-docs": "dx-tools make-compact-docs --docs-root-path ./",
@@ -26,7 +26,7 @@
     "rename-uid": "ts-node ./tools/rename-uid.ts ./api-reference uid-map.json"
   },
   "dependencies": {
-    "@types/node": "^20.3.2"
+    "@types/node": "^20.19.39"
   },
   "packageManager": "pnpm@10.15.0"
 }

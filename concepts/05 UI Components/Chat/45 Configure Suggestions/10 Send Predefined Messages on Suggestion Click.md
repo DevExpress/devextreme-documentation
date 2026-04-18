@@ -6,7 +6,6 @@ To send predefined messages immediately when a **suggestions** button is clicked
 
     <!-- tab: index.js -->
     $('#chat').dxChat({
-        onMessageEntered: handleMessageEntered();
         suggestions: {
             items: [
                 { text: 'Summarize text' },

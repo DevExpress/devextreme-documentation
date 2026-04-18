@@ -27,7 +27,7 @@ jobs:
         dotnet-version: ${{ env.dotNetVersion }}
 
     - name: Install dependencies
-      run: npm install
+      run: npm ci
 
     - name: Validation
       run: npm run validate-docs
@@ -51,7 +51,7 @@ jobs:
         dotnet-version: ${{ env.dotNetVersion }}
 
     - name: Install dependencies
-      run: npm install
+      run: npm ci
 
     - name: Generate ContentMaps
       run: npm run generate-content-map
@@ -75,7 +75,7 @@ jobs:
         dotnet-version: ${{ env.dotNetVersion }}
 
     - name: Install dependencies
-      run: npm install
+      run: npm ci
 
     - name: Generate ContentMaps
       run: npm run generate-content-map

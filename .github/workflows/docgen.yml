@@ -35,7 +35,7 @@ jobs:
 
         - name: NPM - devextreme-documentation
           working-directory: documentation
-          run: npm i
+          run: npm ci
 
 #Generation
         - name: Discover declarations

@@ -12,11 +12,12 @@ Use this object to specify predefined messages or execute actions outside of the
 - The [items[]](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/items/) array
 - An [onItemClick](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#onItemClick) handler
 
-Chat ignores the following ButtonGroup options:
+Chat ignores the following ButtonGroup options in the **suggestions** object:
 
 - [selectionMode](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#selectionMode)
 - [selectedItemKeys](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#selectedItemKeys)
 - [selectedItems](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#selectedItems)
+- [onSelectionChanged](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#onSelectionChanged)
 
 Chat overrides the default values of the following ButtonGroup properties:
 

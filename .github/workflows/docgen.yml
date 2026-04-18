@@ -29,13 +29,11 @@ jobs:
 
         - name: NPM - devextreme
           working-directory: devextreme
-          run: |
-            npm ci
-            npm i devextreme-internal-tools@$(node -p "require('./package-lock').dependencies['devextreme-internal-tools'].version")
+          run: npm ci
 
         - name: NPM - devextreme-documentation
           working-directory: documentation
-          run: npm i
+          run: npm ci
 
 #Generation
         - name: Discover declarations

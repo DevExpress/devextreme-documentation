@@ -1,4 +1,4 @@
-To hide a suggestion item after a user clicks the button, update the suggestions.items[] array as follows:
+To hide a suggestion item after a user clicks the button, update the suggestions.items[] array:
 
 ---
 

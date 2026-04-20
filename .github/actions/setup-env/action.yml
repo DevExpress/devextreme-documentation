@@ -1,5 +1,5 @@
 name: Common Prepare
-description: "Node, pnpm, .NET setup and install dependencies"
+description: "Node, pnpm, .NET setup and dependencies"
 
 inputs:
   path:

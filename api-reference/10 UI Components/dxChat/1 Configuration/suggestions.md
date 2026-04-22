@@ -12,6 +12,15 @@ Use this object to specify predefined messages or execute actions outside of the
 - The [items[]](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/items/) array
 - An [onItemClick](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#onItemClick) handler
 
+You can store message texts in the **items[]**.[text](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/items/#text) field. This approach specifies identical values for message texts and suggestion button captions. To use different texts, specify message texts in a custom field:
+
+    const suggestions = {
+        items: [{
+            text: 'Weather Report',
+            message: 'Give me a weather report for the upcoming week, focus on changes in precipitation',
+        }],
+    }
+
 The Chat component ignores the following ButtonGroup options in the **suggestions** object:
 
 - [selectionMode](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#selectionMode)

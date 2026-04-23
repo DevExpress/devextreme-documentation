@@ -1,11 +1,20 @@
 ---
 id: dxGantt.Options.resourceAssignments.resourceIdExpr
-type: String | function()
+type: String | function(resourceAssignment, value)
 default: 'resourceId'
 ---
 ---
 ##### shortDescription
 Specifies the data field that provides resource IDs.
+
+##### param(resourceAssignment): any
+<!-- Description goes here -->
+
+##### param(value): any
+<!-- Description goes here -->
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 

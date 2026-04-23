@@ -1,11 +1,17 @@
 ---
 id: CollectionWidget.Options.keyExpr
-type: String | function()
+type: String | function(item)
 default: null
 ---
 ---
 ##### shortDescription
 Specifies the key property that provides key values to access data items. Each key value must be unique.
+
+##### param(item): any
+<!-- Description goes here -->
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 #####See Also#####

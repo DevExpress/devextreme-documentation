@@ -1,11 +1,17 @@
 ---
 id: dxGantt.Options.dependencies.keyExpr
-type: String | function()
+type: String | function(dependency)
 default: 'id'
 ---
 ---
 ##### shortDescription
 Specifies the data field that provides keys for dependencies.
+
+##### param(dependency): any
+<!-- Description goes here -->
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 

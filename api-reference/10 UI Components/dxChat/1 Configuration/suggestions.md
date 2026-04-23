@@ -140,3 +140,10 @@ The following code snippet configures **suggestions** that fill the Chat input f
     }
 
 ---
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Chat/PromptSuggestions/"
+}
+
+#####See Also#####
+- [Configure Suggestions](/Documentation/Guide/UI_Components/Chat/Configure_Suggestions/)

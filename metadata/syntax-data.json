@@ -761,6 +761,11 @@
       "react": "_ui_data_grid_AdaptiveDetailRowPreparingEvent",
       "vue": "Dx_ui_data_grid_AdaptiveDetailRowPreparingEvent"
     },
+    "_ui_data_grid_AIAssistantRequestCreatingEvent": {
+      "angular": "dxo-ui-data-grid--a-i-assistant-request-creating-event",
+      "react": "_ui_data_grid_AIAssistantRequestCreatingEvent",
+      "vue": "Dx_ui_data_grid_AIAssistantRequestCreatingEvent"
+    },
     "_ui_data_grid_AIColumnRequestCreatingEvent": {
       "angular": "dxo-ui-data-grid--a-i-column-request-creating-event",
       "react": "_ui_data_grid_AIColumnRequestCreatingEvent",
@@ -3505,6 +3510,11 @@
       "react": "_ui_scheduler_OptionChangedEvent",
       "vue": "Dx_ui_scheduler_OptionChangedEvent"
     },
+    "_ui_scheduler_SelectionEndEvent": {
+      "angular": "dxo-ui-scheduler--selection-end-event",
+      "react": "_ui_scheduler_SelectionEndEvent",
+      "vue": "Dx_ui_scheduler_SelectionEndEvent"
+    },
     "_ui_scroll_view_DisposingEvent": {
       "angular": "dxo-ui-scroll-view--disposing-event",
       "react": "_ui_scroll_view_DisposingEvent",
@@ -4520,6 +4530,11 @@
       "angular": "dxo-ui-tree-list--adaptive-detail-row-preparing-event",
       "react": "_ui_tree_list_AdaptiveDetailRowPreparingEvent",
       "vue": "Dx_ui_tree_list_AdaptiveDetailRowPreparingEvent"
+    },
+    "_ui_tree_list_AIAssistantRequestCreatingEvent": {
+      "angular": "dxo-ui-tree-list--a-i-assistant-request-creating-event",
+      "react": "_ui_tree_list_AIAssistantRequestCreatingEvent",
+      "vue": "Dx_ui_tree_list_AIAssistantRequestCreatingEvent"
     },
     "_ui_tree_list_AIColumnRequestCreatingEvent": {
       "angular": "dxo-ui-tree-list--a-i-column-request-creating-event",
@@ -6013,6 +6028,36 @@
     },
     "adaptiveDetailRowPreparingInfo.formOptions": {
       "vue": "form-options"
+    },
+    "aiAssistant": {
+      "angular": "dxo-a-i-assistant",
+      "react": "AIAssistant",
+      "vue": "DxAIAssistant"
+    },
+    "aiAssistant.aiIntegration": {
+      "angular": "dxo-ai-integration",
+      "react": "AiIntegration",
+      "vue": "DxAiIntegration"
+    },
+    "aiAssistant.chat": {
+      "angular": "dxo-chat",
+      "react": "Chat",
+      "vue": "DxChat"
+    },
+    "aiAssistant.popup": {
+      "angular": "dxo-popup",
+      "react": "Popup",
+      "vue": "DxPopup"
+    },
+    "aiAssistantRequestCreatingInfo.context": {
+      "angular": "dxo-context",
+      "react": "Context",
+      "vue": "DxContext"
+    },
+    "aiAssistantRequestCreatingInfo.responseSchema": {
+      "angular": "dxo-response-schema",
+      "react": "ResponseSchema",
+      "vue": "DxResponseSchema"
     },
     "aiChangeStyleCommand": {
       "angular": "dxo-a-i-change-style-command",
@@ -10223,6 +10268,9 @@
       "react": "Chat",
       "vue": "DxChat"
     },
+    "dxChatOptions": {
+      "vue": "dx-chat-options"
+    },
     "dxChatOptions.activeStateEnabled": {
       "vue": "active-state-enabled"
     },
@@ -10835,6 +10883,9 @@
     },
     "dxDataGridOptions.onAdaptiveDetailRowPreparing": {
       "vue": "@adaptive-detail-row-preparing"
+    },
+    "dxDataGridOptions.onAIAssistantRequestCreating": {
+      "vue": "@a-i-assistant-request-creating"
     },
     "dxDataGridOptions.onAIColumnRequestCreating": {
       "vue": "@a-i-column-request-creating"
@@ -18121,6 +18172,9 @@
     "dxSchedulerOptions.onOptionChanged": {
       "vue": "@option-changed"
     },
+    "dxSchedulerOptions.onSelectionEnd": {
+      "vue": "@selection-end"
+    },
     "dxSchedulerOptions.recurrenceEditMode": {
       "vue": "recurrence-edit-mode"
     },
@@ -19887,6 +19941,9 @@
     },
     "dxTreeListOptions.onAdaptiveDetailRowPreparing": {
       "vue": "@adaptive-detail-row-preparing"
+    },
+    "dxTreeListOptions.onAIAssistantRequestCreating": {
+      "vue": "@a-i-assistant-request-creating"
     },
     "dxTreeListOptions.onAIColumnRequestCreating": {
       "vue": "@a-i-column-request-creating"
@@ -21986,6 +22043,11 @@
     },
     "gridBaseColumnButton.cssClass": {
       "vue": "css-class"
+    },
+    "gridBaseOptions.aiAssistant": {
+      "angular": "dxo-ai-assistant",
+      "react": "AiAssistant",
+      "vue": "DxAiAssistant"
     },
     "gridBaseOptions.aiIntegration": {
       "angular": "dxo-ai-integration",

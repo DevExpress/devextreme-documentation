@@ -1,4 +1,4 @@
-To configure suggestion items for the Chat's input field, update the [inputFieldText](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#inputFieldText) property in the **suggestions**.[onItemClick](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#onItemClick) handler:
+To configure suggestion items for the Chat's input field, update the [inputFieldText](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/inputFieldText.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#inputFieldText') property in the **suggestions**.[onItemClick](/api-reference/10%20UI%20Components/dxButtonGroup/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#onItemClick') handler:
 
 ---
 

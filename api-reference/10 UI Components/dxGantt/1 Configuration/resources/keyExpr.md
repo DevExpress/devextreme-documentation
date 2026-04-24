@@ -1,11 +1,17 @@
 ---
 id: dxGantt.Options.resources.keyExpr
-type: String | function()
+type: String | function(resource)
 default: 'id'
 ---
 ---
 ##### shortDescription
 Specifies the data field that provides keys for resources.
+
+##### param(resource): any
+<!-- Description goes here -->
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 

@@ -1,11 +1,17 @@
 ---
 id: dxGantt.Options.tasks.keyExpr
-type: String | function()
+type: String | function(task)
 default: 'id'
 ---
 ---
 ##### shortDescription
 Specifies the data field that provides keys for tasks.
+
+##### param(task): any
+<!-- Description goes here -->
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 If the field name in your data source differs from default 'id', use this property to map data fields:

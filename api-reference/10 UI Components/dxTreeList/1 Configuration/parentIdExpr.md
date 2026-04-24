@@ -1,11 +1,20 @@
 ---
 id: dxTreeList.Options.parentIdExpr
-type: String | function()
+type: String | function(item, value)
 default: 'parentId'
 ---
 ---
 ##### shortDescription
 Specifies which data field provides parent keys.
+
+##### param(item): any
+<!-- Description goes here -->
+
+##### param(value): any
+<!-- Description goes here -->
+
+##### return: any | undefined
+<!-- Description goes here -->
 
 ---
 #include btn-open-demo with {

@@ -12,7 +12,7 @@ Use this object to specify predefined messages or execute actions outside of the
 - The [items[]](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/items/) array
 - An [onItemClick](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#onItemClick) handler
 
-You can store message texts in the **items[]**.[text](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/items/#text) field. This approach specifies identical values for message texts and suggestion button captions. To use different texts, specify message texts in a custom field:
+The [text](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/items/#text) field in an array item specifies the corresponding button caption. When handling the `onItemClick` event, you can choose to use the same text as a chat message. But in many cases you would prefer to use two strings: a shorter button caption and an extended message. To specify a separate message text, assign it to a custom field:
 
     const suggestions = {
         items: [{

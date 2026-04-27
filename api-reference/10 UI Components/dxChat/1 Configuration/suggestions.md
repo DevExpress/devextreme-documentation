@@ -7,12 +7,12 @@ type: dxButtonGroup_Options
 Configures suggestion buttons (DevExtreme [ButtonGroup](/Documentation/Guide/UI_Components/ButtonGroup/Getting_Started_with_ButtonGroup/)) displayed above the Chat input field.
 
 ---
-Use this object to specify predefined messages or execute actions outside of the Chat. To implement suggestions, configure the following [ButtonGroup properties](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/):
+Use this object to specify predefined messages or execute actions outside the Chat. Configure the following [ButtonGroup properties](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/) to implement suggestions:
 
 - The [items[]](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/items/) array
 - An [onItemClick](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#onItemClick) handler
 
-The [text](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/items/#text) field in an array item specifies the corresponding button caption. When handling the `onItemClick` event, you can choose to use the same text as a chat message. But in many cases you would prefer to use two strings: a shorter button caption and an extended message. To specify a separate message text, assign it to a custom field:
+The [text](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/items/#text) field in an array item specifies the corresponding button caption. In the `onItemClick` event handler, you can use the same text as a chat message. In many cases, however, it is better to use two strings: a shorter button caption and a longer message. To specify a separate message text, assign it to a custom field:
 
     const suggestions = {
         items: [{

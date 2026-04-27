@@ -3,6 +3,7 @@ id: ExecuteGridAssistantCommandResponse
 module: common/ai-integration
 export: ExecuteGridAssistantCommandResponse
 type: String | Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

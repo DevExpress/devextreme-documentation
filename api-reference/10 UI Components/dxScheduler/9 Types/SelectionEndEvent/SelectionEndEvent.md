@@ -5,6 +5,7 @@ export: SelectionEndEvent
 type: Object
 inherits: EventInfo
 references: dxScheduler.Options.onSelectionEnd
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

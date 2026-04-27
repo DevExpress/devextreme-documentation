@@ -5,6 +5,7 @@ export: AIAssistantRequestCreatingEvent
 type: Object
 inherits: EventInfo,Cancelable,AIAssistantRequestCreatingInfo
 references: dxDataGrid.Options.onAIAssistantRequestCreating
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

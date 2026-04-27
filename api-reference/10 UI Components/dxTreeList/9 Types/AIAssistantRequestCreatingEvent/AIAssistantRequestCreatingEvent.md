@@ -5,6 +5,7 @@ export: AIAssistantRequestCreatingEvent
 type: Object
 inherits: EventInfo,Cancelable,AIAssistantRequestCreatingInfo
 references: dxTreeList.Options.onAIAssistantRequestCreating
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

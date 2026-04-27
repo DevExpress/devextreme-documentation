@@ -67,4 +67,4 @@ The following restrictions apply when operations are remote:
 
 #####See Also#####
 - **Data Binding**: [Web API, PHP, MongoDB](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/30%20Web%20API%2C%20PHP%2C%20MongoDB.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/') | [Custom Sources](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/60%20Custom%20Data%20Sources '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/')
-
+- [Troubleshooting - A Request Error Occurs After Filtering or Searching](/Documentation/Guide/Troubleshooting/DataGrid_and_TreeList_Issues/A_Request_Error_Occurs_After_Filtering_or_Searching/)

@@ -14,4 +14,4 @@ Specify an array of day numbers from `0` (Sunday) to `6` (Saturday). Scheduler f
 
 This property applies to all views. To override it for a specific view, set the [same property](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#hiddenWeekDays) in the [view's configuration object](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/).
 
-If you specify all seven days, Scheduler logs warning `W1029` (`'hiddenWeekDays' must leave at least one day visible.`), and ignores this setting.
+If you specify all seven days, Scheduler logs the `W1029` warning (`'hiddenWeekDays' must leave at least one day visible.`) and ignores this setting.

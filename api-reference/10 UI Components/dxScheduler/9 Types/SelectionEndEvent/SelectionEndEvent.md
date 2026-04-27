@@ -1,5 +1,5 @@
 ---
-id: _ui_scheduler_SelectionEndEvent
+uid: ui/scheduler:SelectionEndEvent
 module: ui/scheduler
 export: SelectionEndEvent
 type: Object

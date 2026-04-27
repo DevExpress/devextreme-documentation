@@ -1,10 +1,10 @@
 ---
-id: _ui_tree_list_AIAssistantRequestCreatingEvent
-module: ui/tree_list
+uid: ui/data_grid:AIAssistantRequestCreatingEvent
+module: ui/data_grid
 export: AIAssistantRequestCreatingEvent
 type: Object
 inherits: EventInfo,Cancelable,AIAssistantRequestCreatingInfo
-references: dxTreeList.Options.onAIAssistantRequestCreating
+references: dxDataGrid.Options.onAIAssistantRequestCreating
 ---
 ---
 ##### shortDescription

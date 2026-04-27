@@ -5,28 +5,25 @@ default: null
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before an AI Assistant request is created.
 
 ##### param(e): Object
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Allows you to cancel the request.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.context): Record
-<!-- Description goes here -->
+{WidgetName} context (data and component state information) included in the AI Assistant request.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
-
-##### field(e.model): any
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.responseSchema): Record
-<!-- Description goes here -->
+The JSON schema of the AI Assistant response.
 
 ---
 <!-- Description goes here -->

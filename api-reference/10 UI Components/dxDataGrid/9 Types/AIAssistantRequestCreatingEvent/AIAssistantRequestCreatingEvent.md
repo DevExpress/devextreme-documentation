@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The argument type in [onAIAssistantRequestCreating]({basewidgetpath}/Configuration/#onAIAssistantRequestCreating).
 
 ---
 <!-- Description goes here -->

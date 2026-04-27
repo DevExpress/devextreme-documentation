@@ -5,7 +5,7 @@ default: 'AI Assistant'
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies the title displayed in the AI Assistant popup.
 
 ---
 <!-- Description goes here -->

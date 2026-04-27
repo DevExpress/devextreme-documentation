@@ -4,25 +4,25 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is executed before an AI Assistant request is created.
 
 ##### param(e): ui/tree_list:AIAssistantRequestCreatingEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Allows you to cancel the request.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.context): Object
-<!-- Description goes here -->
+{WidgetName} context (data and component state information) included in the AI Assistant request.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.responseSchema): Object
-<!-- Description goes here -->
+The JSON schema of the AI Assistant response.
 
 ---
 <!-- Description goes here -->

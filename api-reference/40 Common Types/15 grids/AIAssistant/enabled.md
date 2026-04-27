@@ -5,7 +5,7 @@ default: false
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether the AI Assistant is enabled.
 
 ---
-<!-- Description goes here -->
+To activate the AI Assistant in {WidgetName}, set this property to `true` and configure the **aiAssistant**.[aiIntegration]({basewidgetpath}/Configuration/aiAssistant/#aiIntegration) object.

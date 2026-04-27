@@ -1,11 +1,20 @@
 ---
 id: dxGantt.Options.resources.textExpr
-type: String | function()
+type: String | function(resource, value)
 default: 'text'
 ---
 ---
 ##### shortDescription
 Specifies the data field that provides resource texts.
+
+##### param(resource): any
+<!-- Description goes here -->
+
+##### param(value): any
+<!-- Description goes here -->
+
+##### return: String
+<!-- Description goes here -->
 
 ---
 

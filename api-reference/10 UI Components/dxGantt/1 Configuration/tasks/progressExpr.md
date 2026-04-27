@@ -1,11 +1,20 @@
 ---
 id: dxGantt.Options.tasks.progressExpr
-type: String | function()
+type: String | function(task, value)
 default: 'progress'
 ---
 ---
 ##### shortDescription
 Specifies the data field that provides tasks' progress.
+
+##### param(task): any
+<!-- Description goes here -->
+
+##### param(value): any
+<!-- Description goes here -->
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 If the field name in your data source differs from default 'progress', use this property to map data fields:

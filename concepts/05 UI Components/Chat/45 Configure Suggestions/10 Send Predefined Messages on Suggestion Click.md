@@ -2,7 +2,7 @@
 
 ##### jQuery
 
-To send predefined messages when a **suggestions** button is clicked, call [renderMessage()](/Documentation/ApiReference/UI_Components/dxChat/Methods/#renderMessagemessage) in **suggestions**.**onItemClick**:
+To send predefined messages when a **suggestions** button is clicked, call [renderMessage()](/api-reference/10%20UI%20Components/dxChat/3%20Methods/renderMessage(message).md '/Documentation/ApiReference/UI_Components/dxChat/Methods/#renderMessagemessage') in **suggestions**.**onItemClick**:
 
     <!-- tab: index.js -->
     $('#chat').dxChat({
@@ -26,7 +26,7 @@ To send predefined messages when a **suggestions** button is clicked, call [rend
 
 ##### Angular
 
-To send predefined messages when a **suggestions** button is clicked, update the Chat's [items](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items) array or [dataSource](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#dataSource) in **suggestions**.**onItemClick**. The following code snippet uses the **items** array:
+To send predefined messages when a **suggestions** button is clicked, update the Chat's [items](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items') array or [dataSource](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#dataSource') in **suggestions**.**onItemClick**. The following code snippet uses the **items** array:
 
     <!-- tab: app.component.html -->
     <dx-chat ...
@@ -60,7 +60,7 @@ To send predefined messages when a **suggestions** button is clicked, update the
 
 ##### Vue
 
-To send predefined messages when a **suggestions** button is clicked, update the Chat's [items](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items) array or [dataSource](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#dataSource) in **suggestions**.**onItemClick**. The following code snippet uses the **items** array:
+To send predefined messages when a **suggestions** button is clicked, update the Chat's [items](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items') array or [dataSource](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#dataSource') in **suggestions**.**onItemClick**. The following code snippet uses the **items** array:
 
     <!-- tab: App.vue -->
     <template>
@@ -95,7 +95,7 @@ To send predefined messages when a **suggestions** button is clicked, update the
 
 ##### React
 
-To send predefined messages when a **suggestions** button is clicked, update the Chat's [items](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items) array or [dataSource](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#dataSource) in **suggestions**.**onItemClick**. The following code snippet uses the **items** array:
+To send predefined messages when a **suggestions** button is clicked, update the Chat's [items](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/items.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#items') array or [dataSource](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#dataSource') in **suggestions**.**onItemClick**. The following code snippet uses the **items** array:
 
     <!-- tab: App.tsx -->
     import React, { useCallback, useState } from 'react';

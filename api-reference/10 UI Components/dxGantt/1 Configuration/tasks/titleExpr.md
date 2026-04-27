@@ -1,11 +1,20 @@
 ---
 id: dxGantt.Options.tasks.titleExpr
-type: String | function()
+type: String | function(task, value)
 default: 'title'
 ---
 ---
 ##### shortDescription
 Specifies the data field that provides task titles.
+
+##### param(task): any
+<!-- Description goes here -->
+
+##### param(value): any
+<!-- Description goes here -->
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 If the field name in your data source differs from default 'title', use this property to map data fields:

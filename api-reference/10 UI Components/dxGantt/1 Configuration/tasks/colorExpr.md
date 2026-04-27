@@ -1,11 +1,20 @@
 ---
 id: dxGantt.Options.tasks.colorExpr
-type: String | function()
+type: String | function(task, value)
 default: 'color'
 ---
 ---
 ##### shortDescription
 Specifies the data field that provides tasks' color.
+
+##### param(task): any
+<!-- Description goes here -->
+
+##### param(value): any
+<!-- Description goes here -->
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 If the field name in your data source differs from default 'color', use this property to map data fields:

@@ -22,7 +22,7 @@ The UI component's instance.
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
-#### field(e.model): any
+##### field(e.model): any
 <!-- Description goes here -->
 
 ##### field(e.responseSchema): Record

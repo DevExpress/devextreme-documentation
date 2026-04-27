@@ -1,11 +1,17 @@
 ---
 id: dxButtonGroup.Options.keyExpr
-type: String | function()
+type: String | function(item)
 default: 'text'
 ---
 ---
 ##### shortDescription
 Specifies which data field provides keys used to distinguish between the selected buttons.
+
+##### param(item): any
+<!-- Description goes here -->
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 #####See Also#####

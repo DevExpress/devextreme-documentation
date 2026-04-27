@@ -1,11 +1,20 @@
 ---
 id: dxGantt.Options.dependencies.typeExpr
-type: String | function()
+type: String | function(dependency, value)
 default: 'type'
 ---
 ---
 ##### shortDescription
 Specifies the data field that provides dependency types.
+
+##### param(dependency): any
+<!-- Description goes here -->
+
+##### param(value): any
+<!-- Description goes here -->
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 

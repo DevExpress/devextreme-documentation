@@ -1,12 +1,21 @@
 ---
 id: dxTreeView.Options.expandedExpr
-type: String | function()
+type: String | function(item, value)
 default: 'expanded'
 hidden: false
 ---
 ---
 ##### shortDescription
 Specifies which data source field specifies whether an item is expanded.
+
+##### param(item): any
+<!-- Description goes here -->
+
+##### param(value): Boolean | undefined
+<!-- Description goes here -->
+
+##### return: Boolean | undefined
+<!-- Description goes here -->
 
 ---
 #####See Also#####

@@ -1,11 +1,17 @@
 ---
 id: dxGantt.Options.resourceAssignments.keyExpr
-type: String | function()
+type: String | function(resourceAssignment)
 default: 'id'
 ---
 ---
 ##### shortDescription
 Specifies the data field that provides keys for resource assignments.
+
+##### param(resourceAssignment): any
+<!-- Description goes here -->
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 

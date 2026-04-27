@@ -1,11 +1,20 @@
 ---
 id: dxGantt.Options.dependencies.successorIdExpr
-type: String | function()
+type: String | function(dependency, value)
 default: 'successorId'
 ---
 ---
 ##### shortDescription
 Specifies the data field that provides successor IDs.
+
+##### param(dependency): any
+<!-- Description goes here -->
+
+##### param(value): any
+<!-- Description goes here -->
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 

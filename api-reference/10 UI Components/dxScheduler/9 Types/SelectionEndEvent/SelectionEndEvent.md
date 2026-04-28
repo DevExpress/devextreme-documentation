@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the [selectionEnd]({basewidgetpath}/Events/#selectionEnd) event handler's argument.
 
 ---
 <!-- Description goes here -->

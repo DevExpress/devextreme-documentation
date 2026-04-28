@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised when a user finishes selecting a date-time range.
 
 ---
-<!-- Description goes here -->
+Main article: [onSelectionEnd](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onSelectionEnd)
+
+#####See Also#####
+#include common-link-handleevents

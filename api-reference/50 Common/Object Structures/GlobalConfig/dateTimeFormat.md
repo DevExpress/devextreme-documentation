@@ -48,7 +48,7 @@ You can configure default formats for specific locales. To do this, assign a key
         }
     });
 
-##### Angular
+##### React
 
     <!-- tab: App.tsx -->
     import config from "devextreme/core/config";

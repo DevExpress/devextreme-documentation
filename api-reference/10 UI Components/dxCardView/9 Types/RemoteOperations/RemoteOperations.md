@@ -15,4 +15,4 @@ Server-side data processing improves the UI component's performance on large dat
 [note] Paging, filtering, and sorting are performed on the server for the [ODataStore](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/40%20OData.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/'), but you can change them to the client side by setting the corresponding **remoteOperations** fields to `false`. Other operations are always client-side.
 
 #####See Also#####
-- [Troubleshooting - A Request Error Occurs After Filtering or Searching](/Documentation/Guide/Troubleshooting/DataGrid_and_TreeList_Issues/A_Request_Error_Occurs_After_Filtering_or_Searching/)
+- [Troubleshooting - A Request Error Occurs After Filtering or Searching](/concepts/80%20Troubleshooting/05%20DataGrid%20and%20TreeList%20Issues/15%20A%20Request%20Error%20Occurs%20After%20Filtering%20or%20Searching.md '/Documentation/Guide/Troubleshooting/DataGrid_and_TreeList_Issues/A_Request_Error_Occurs_After_Filtering_or_Searching/')

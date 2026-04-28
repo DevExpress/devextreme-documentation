@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An AI Assistant response.
 
 ---
 <!-- Description goes here -->

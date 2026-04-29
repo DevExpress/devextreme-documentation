@@ -16,5 +16,8 @@ default: undefined
 ##### field(e.element): DxElement
 <!-- Description goes here -->
 
+##### field(e.selectedCellData): Array<any>
+<!-- Description goes here -->
+
 ---
 <!-- Description goes here -->

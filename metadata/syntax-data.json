@@ -3515,6 +3515,9 @@
       "react": "_ui_scheduler_SelectionEndEvent",
       "vue": "Dx_ui_scheduler_SelectionEndEvent"
     },
+    "_ui_scheduler_SelectionEndEvent.selectedCellData": {
+      "vue": "selected-cell-data"
+    },
     "_ui_scroll_view_DisposingEvent": {
       "angular": "dxo-ui-scroll-view--disposing-event",
       "react": "_ui_scroll_view_DisposingEvent",

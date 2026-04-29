@@ -6,10 +6,10 @@ references: dxScheduler.Options.hiddenWeekDays|dxScheduler.Options.views.hiddenW
 ---
 ---
 ##### shortDescription
-A numeric union that identifies a day of the week.
+A numeric union that identifies the day of the week.
 
 ---
-The union accepts the following values:
+The following values are accepted:
 
 - `0`: Sunday
 - `1`: Monday

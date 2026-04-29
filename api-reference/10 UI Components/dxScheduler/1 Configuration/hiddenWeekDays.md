@@ -8,9 +8,9 @@ default: undefined
 Hides specific days of the week in all Scheduler views.
 
 ---
-Use this property to hide days of the week globally.
+Use this property to hide specific days of the week regardless of the current view.
 
-Specify an array of day numbers from `0` (Sunday) to `6` (Saturday). Scheduler filters out invalid values, removes duplicates, and sorts the remaining values.
+Specify an array of day numbers from `0` (Sunday) to `6` (Saturday). Scheduler filters out invalid values and removes duplicates.
 
 This property applies to all views. To override it for a specific view, set the [same property](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#hiddenWeekDays) in the [view's configuration object](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/).
 

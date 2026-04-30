@@ -16,6 +16,9 @@ The UI component's instance.
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
+##### field(e.selectedCellData): Array<any>
+<!-- Description goes here -->
+
 ---
 This event fires after the user releases the pointer button following a drag across one or more scheduler cells. Use it to respond to a completed cell range selection (for example, to open the appointment popup pre-filled with the selected time range).
 

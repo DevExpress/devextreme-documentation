@@ -142,3 +142,5 @@ The following code shows how to handle a key combination:
     export default App;
 
 ---
+
+[note] When a drop-down editor within {WidgetName} is in focus, **onKeyDown** is not fired for up/down arrow key presses.

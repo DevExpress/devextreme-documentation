@@ -29,6 +29,7 @@ The picker type depends on the current platform or web browser.
     - When **pickerType** is *"native"*, the following DateBox methods have no effect:
         - [close()](/Documentation/ApiReference/UI_Components/dxDateBox/Methods/#close)
         - [open()](/Documentation/ApiReference/UI_Components/dxDateBox/Methods/#open)
+        - [content()](/Documentation/ApiReference/UI_Components/dxDateBox/Methods/#content) (always returns `null`)
 
     [/note]
 

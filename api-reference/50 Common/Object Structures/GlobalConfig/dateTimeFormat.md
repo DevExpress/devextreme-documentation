@@ -8,7 +8,7 @@ default: undefined
 Specifies the default date and time format for all DevExtreme components in the application.
 
 ---
-This property can accept a [predefined format string](/Documentation/ApiReference/Common_Types/#Format). Specify a [custom format string](/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String) or a [format function](/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Function).
+This property can accept a [predefined format string](/Documentation/ApiReference/Common_Types/#Format), a [custom format string](/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String) or a [format function](/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Function).
 
 ---
 

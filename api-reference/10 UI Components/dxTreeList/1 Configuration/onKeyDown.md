@@ -139,4 +139,4 @@ The following code shows how to handle a key combination:
 
 ---
 
-[note] When a drop-down editor in the DataGrid has focus,  **onKeyDown** does not fire for up and down arrow key presses
+[note] When a drop-down editor in the TreeList has focus, **onKeyDown** does not fire for up and down arrow key presses

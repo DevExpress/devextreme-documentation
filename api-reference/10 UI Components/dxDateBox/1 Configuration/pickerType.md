@@ -23,6 +23,12 @@ The picker type depends on the current platform or web browser.
 
     - The *"native"* picker overrides [DevExtreme localization](/concepts/Common/Localization '/Documentation/Guide/Common/Localization/') settings. The component formats dates using locales of user devices.
     - The default behaviour of DateBox is to emit the [onValueChanged](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#onValueChanged') event when users finish editing the component value. If you set the picker type to *"native"*, DateBox emits **onValueChanged** as users edit the value.
+    - When **pickerType** is *"native"*, DateBox does not emit the following events:
+        - [onClosed](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#onClosed)
+        - [onOpened](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#onOpened)
+    - When **pickerType** is *"native"*, the following DateBox methods have no effect:
+        - [close()](/Documentation/ApiReference/UI_Components/dxDateBox/Methods/#close)
+        - [open()](/Documentation/ApiReference/UI_Components/dxDateBox/Methods/#open)
 
     [/note]
 

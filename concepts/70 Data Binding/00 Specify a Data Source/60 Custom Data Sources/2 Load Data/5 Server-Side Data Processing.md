@@ -383,10 +383,10 @@ If the server did not receive the [group](/api-reference/30%20Data%20Layer/Custo
 
 [note]
 
-Enable **CustomStore**.[useDefaultSearch](/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#useDefaultSearch) in the following usage scenarios:
+Enable **CustomStore**.[useDefaultSearch](/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#useDefaultSearch) in the following scenarios:
 
-- To use a combined filter in requests (to specify only `filter` and omit `searchExpr`, `searchOperation`, and `searchValue`)
-- To wrap another DevExtreme data store in a **CustomStore** instance (within the [load](/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load) method)
+- To use a combined filter in requests (specify only `filter` and omit `searchExpr`, `searchOperation`, and `searchValue`)
+- To wrap another DevExtreme data store in a **CustomStore** instance inside the [load](/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load) method
 - To use [DevExtreme AspNet.Data](https://github.com/DevExpress/DevExtreme.AspNet.Data) on the server
 
 [/note]

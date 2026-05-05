@@ -17,12 +17,12 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.selectedCellData): Array<any>
-An array of objects describing the selected cells. Each object contains `startDate`, `endDate`, `allDay`, and `groups` properties.
+An object array that identifies selected cells. Each array element contains the following properties: `startDate`, `endDate`, `allDay`, and `groups`.
 
 ---
-This event fires after the user releases the pointer button following a drag across one or more scheduler cells. Use it to respond to a completed cell range selection (for example, to open the appointment popup pre-filled with the selected time range).
+This event fires after the user finishes a drag-and-drop selection operation. Handle the event to respond to a completed cell range selection (for example, to open the appointment popup pre-filled with the selected time range).
 
-The handler receives a [selectedCellData](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#selectedCellData) array whose items contain `startDate`, `endDate`, `allDay`, and `groups` properties describing each cell in the selection. To create an appointment that spans the selected range, pass the first cell's `startDate` and the last cell's `endDate` to [showAppointmentPopup](/Documentation/ApiReference/UI_Components/dxScheduler/Methods/#showAppointmentPopupappointmentData_createNewAppointment_currentAppointmentData).
+The handler receives a [selectedCellData](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#selectedCellData) array. Each item identifies a selected cell using the following properties: `startDate`, `endDate`, `allDay`, and `groups`. To create an appointment that spans the selected range, pass the first cell's `startDate` and the last cell's `endDate` to [showAppointmentPopup](/Documentation/ApiReference/UI_Components/dxScheduler/Methods/#showAppointmentPopupappointmentData_createNewAppointment_currentAppointmentData).
 
 [note]
 

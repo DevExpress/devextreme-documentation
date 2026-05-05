@@ -143,4 +143,4 @@ The following code shows how to handle a key combination:
 
 ---
 
-[note] When a drop-down editor within {WidgetName} is in focus, **onKeyDown** is not fired for up/down arrow key presses.
+[note] note] When a drop-down editor in the {WidgetName} has focus,  **onKeyDown** does not fire for up and down arrow key presses

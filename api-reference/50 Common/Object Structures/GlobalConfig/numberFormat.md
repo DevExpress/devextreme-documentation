@@ -8,7 +8,7 @@ default: undefined
 Specifies the default number format for all DevExtreme components in the application.
 
 ---
-Assign a string value to this property to use a [predefined format](/Documentation/ApiReference/Common_Types/#Format). Specify a [custom format string](/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String) or a [format function](/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Function) to use a custom format.
+This property can accept a [predefined format string](/Documentation/ApiReference/Common_Types/#Format), a [custom format string](/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String) or a [format function](/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Function).
 
 ---
 
@@ -48,7 +48,7 @@ Assign a string value to this property to use a [predefined format](/Documentati
 
 ---
 
-You can configure default formats for specific locales. To do this, assign a key-value pair object to this property. Use locale identifiers as keys to define formats for specific locales. Use the `default` key to specify a format for all other locales:
+You can configure default formats for specific locales. To do this, assign a key-value pair object to this property. Use locale identifiers as keys. Use the `default` key to specify a format for all other locales:
 
 ---
 

@@ -10,7 +10,7 @@ Configures overrides for predefined date/time formats.
 ---
 Use this object to override [predefined DevExtreme formats](/Documentation/ApiReference/Common_Types/#Format). You can specify overrides as [custom format strings](/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String) or [format functions](/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Function).
 
-You can configure overrides for specific locales. To do this, specify key-value pair objects. Use locale identifiers as keys to define overrides for specific locales. Use the `default` key to specify an override for all other locales:
+You can configure overrides for specific locales. To do this, specify key-value pair objects. Use locale identifiers as keys. Use the `default` key to specify an override for all other locales:
 
 ---
 

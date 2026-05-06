@@ -1,6 +1,6 @@
 ---
 id: dxDropDownEditor.Options.fieldAddons
-type: FieldAddons
+type: FieldAddons | null
 default: null
 ---
 ---

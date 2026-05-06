@@ -4,7 +4,7 @@ type: Array | String
 ---
 ---
 ##### shortDescription
-Executed actions in the AI Assistant response.
+Actions to be executed in the AI Assistant response.
 
 ---
 <!-- Description goes here -->

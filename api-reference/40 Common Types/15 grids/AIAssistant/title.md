@@ -5,7 +5,10 @@ default: 'AI Assistant'
 ---
 ---
 ##### shortDescription
-Specifies the title displayed in the AI Assistant popup.
+Specifies the AI Assistant title.
 
 ---
-<!-- Description goes here -->
+The component displays this title in the following elements:
+
+- The AI Assistant popup
+- The tooltip of the AI Assistant toolbar item

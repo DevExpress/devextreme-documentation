@@ -3264,6 +3264,26 @@
       "react": "_ui_range_slider_ValueChangedEvent",
       "vue": "Dx_ui_range_slider_ValueChangedEvent"
     },
+    "_ui_recurrence_editor_ContentReadyEvent": {
+      "angular": "dxo-ui-recurrence-editor--content-ready-event",
+      "react": "_ui_recurrence_editor_ContentReadyEvent",
+      "vue": "Dx_ui_recurrence_editor_ContentReadyEvent"
+    },
+    "_ui_recurrence_editor_DisposingEvent": {
+      "angular": "dxo-ui-recurrence-editor--disposing-event",
+      "react": "_ui_recurrence_editor_DisposingEvent",
+      "vue": "Dx_ui_recurrence_editor_DisposingEvent"
+    },
+    "_ui_recurrence_editor_OptionChangedEvent": {
+      "angular": "dxo-ui-recurrence-editor--option-changed-event",
+      "react": "_ui_recurrence_editor_OptionChangedEvent",
+      "vue": "Dx_ui_recurrence_editor_OptionChangedEvent"
+    },
+    "_ui_recurrence_editor_ValueChangedEvent": {
+      "angular": "dxo-ui-recurrence-editor--value-changed-event",
+      "react": "_ui_recurrence_editor_ValueChangedEvent",
+      "vue": "Dx_ui_recurrence_editor_ValueChangedEvent"
+    },
     "_ui_resizable_DisposingEvent": {
       "angular": "dxo-ui-resizable--disposing-event",
       "react": "_ui_resizable_DisposingEvent",
@@ -17494,6 +17514,32 @@
     },
     "dxRangeSliderOptions.startName": {
       "vue": "start-name"
+    },
+    "dxRecurrenceEditor": {
+      "angular": "dx-recurrence-editor",
+      "react": "RecurrenceEditor",
+      "vue": "DxRecurrenceEditor"
+    },
+    "dxRecurrenceEditorOptions.firstDayOfWeek": {
+      "vue": "first-day-of-week"
+    },
+    "dxRecurrenceEditorOptions.onContentReady": {
+      "vue": "@content-ready"
+    },
+    "dxRecurrenceEditorOptions.onDisposing": {
+      "vue": "@disposing"
+    },
+    "dxRecurrenceEditorOptions.onInitialized": {
+      "vue": "@initialized"
+    },
+    "dxRecurrenceEditorOptions.onOptionChanged": {
+      "vue": "@option-changed"
+    },
+    "dxRecurrenceEditorOptions.onValueChanged": {
+      "vue": "@value-changed"
+    },
+    "dxRecurrenceEditorOptions.startDate": {
+      "vue": "start-date"
     },
     "dxResizable": {
       "angular": "dx-resizable",

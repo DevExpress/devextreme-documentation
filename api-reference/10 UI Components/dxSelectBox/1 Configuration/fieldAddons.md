@@ -1,6 +1,6 @@
 ---
 id: dxSelectBox.Options.fieldAddons
-type: FieldAddons
+type: FieldAddons | null
 default: null
 inheritsType: FieldAddons
 ---

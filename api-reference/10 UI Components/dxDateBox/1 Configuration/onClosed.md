@@ -16,4 +16,5 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "UI component" }
 
 ---
-<!-- Description goes here -->
+
+[note] DateBox does not execute **onClosed** when [pickerType](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#pickerType) is *"native"*.

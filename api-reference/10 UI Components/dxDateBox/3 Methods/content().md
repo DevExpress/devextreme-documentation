@@ -10,7 +10,7 @@ An <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement" target
 
 ---
 
-[note] The **content()** method always returns `null` if [pickerType](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#pickerType) is *"native"*.
+[note] The **content()** method always returns `null` if [pickerType](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/pickerType.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#pickerType') is *"native"*.
 
 #####See Also#####
 #include common-link-callmethods

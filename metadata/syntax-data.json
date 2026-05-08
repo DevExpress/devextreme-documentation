@@ -21245,9 +21245,6 @@
     "enums.FinancialChartReductionLevel": {
       "vue": "financial-chart-reduction-level"
     },
-    "enums.FirstDayOfWeek": {
-      "vue": "first-day-of-week"
-    },
     "enums.FixedPosition": {
       "vue": "fixed-position"
     },

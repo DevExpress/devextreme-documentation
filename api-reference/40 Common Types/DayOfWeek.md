@@ -2,7 +2,7 @@
 id: Enums.DayOfWeek
 acceptValues: 0 | 1 | 2 | 3 | 4 | 5 | 6
 type: Union
-references: dxScheduler.Options.hiddenWeekDays|dxScheduler.Options.views.hiddenWeekDays
+references: dxCalendar.Options.firstDayOfWeek|dxGantt.Options.firstDayOfWeek|dxScheduler.Options.firstDayOfWeek|dxScheduler.Options.hiddenWeekDays|dxScheduler.Options.views.firstDayOfWeek|dxScheduler.Options.views.hiddenWeekDays
 ---
 ---
 ##### shortDescription

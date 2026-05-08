@@ -1,6 +1,6 @@
 ---
 id: dxScheduler.Options.hiddenWeekDays
-type: Array<Enums.DayOfWeek>
+type: Array<Enums.DayOfWeek> | undefined
 default: undefined
 ---
 ---

@@ -11,7 +11,7 @@ Use DevExtreme [Popup](/Documentation/ApiReference/UI_Components/dxPopup/Configu
 
 [note]
 
-We do not recommend you specify the following Popup options:
+We do not recommend that you specify the following Popup options:
 
 - [contentTemplate](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#contentTemplate)
 - [fullScreen](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#fullScreen)

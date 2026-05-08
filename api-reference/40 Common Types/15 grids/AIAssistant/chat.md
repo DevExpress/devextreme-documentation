@@ -11,7 +11,7 @@ Use DevExtreme [Chat](/Documentation/ApiReference/UI_Components/dxChat/Configura
 
 [note]
 
-We do not recommend you specify the following Chat options:
+We do not recommend that you specify the following Chat options:
 
 - [messageTemplate](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#messageTemplate)
 - [editing](/Documentation/ApiReference/UI_Components/dxChat/Configuration/editing/)

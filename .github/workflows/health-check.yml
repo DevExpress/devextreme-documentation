@@ -6,6 +6,9 @@ on:
     branches:
       - 26_1
 
+permissions:
+  contents: read
+
 jobs:
   invoke:
     name: Invoke

@@ -27,7 +27,7 @@ The JSON schema of the AI Assistant response.
 ---
 Use this handler to modify the AI Assistant request.
 
-The following code snippet modifies the **e.context** parameter to add context to the request:
+The following code snippet modifies the **e.context** parameter to add request context:
 
 ---
 

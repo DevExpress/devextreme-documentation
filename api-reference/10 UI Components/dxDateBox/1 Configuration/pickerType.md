@@ -26,13 +26,13 @@ The picker type depends on the current platform or web browser.
     - The component overrides [DevExtreme localization](/concepts/Common/Localization '/Documentation/Guide/Common/Localization/') settings and formats dates according to the user device locale.
     - DateBox raises [onValueChanged](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#onValueChanged') while the user edits the value, not after editing is complete.
     - The component does not raise the following events:
-        - [onClosed](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#onClosed)
-        - [onOpened](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#onOpened)
+        - [onClosed](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/onClosed.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#onClosed')
+        - [onOpened](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/onOpened.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#onOpened')
     - The following DateBox methods have no effect:
-        - [close()](/Documentation/ApiReference/UI_Components/dxDateBox/Methods/#close)
-        - [open()](/Documentation/ApiReference/UI_Components/dxDateBox/Methods/#open)
-        - [content()](/Documentation/ApiReference/UI_Components/dxDateBox/Methods/#content) (always returns `null`)
-    - DateBox ignores the [dropDownOptions](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#dropDownOptions) property.
+        - [close()](/api-reference/10%20UI%20Components/dxDateBox/3%20Methods/close().md '/Documentation/ApiReference/UI_Components/dxDateBox/Methods/#close')
+        - [open()](/api-reference/10%20UI%20Components/dxDateBox/3%20Methods/open().md '/Documentation/ApiReference/UI_Components/dxDateBox/Methods/#open')
+        - [content()](/api-reference/10%20UI%20Components/dxDateBox/3%20Methods/content().md '/Documentation/ApiReference/UI_Components/dxDateBox/Methods/#content') (always returns `null`)
+    - DateBox ignores the [dropDownOptions](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/dropDownOptions.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#dropDownOptions') property.
 
     [/note]
 

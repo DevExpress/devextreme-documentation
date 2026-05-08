@@ -17,4 +17,4 @@ The UI component's instance.
 
 ---
 
-[note] DateBox does not execute **onOpened** when [pickerType](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#pickerType) is *"native"*.
+[note] DateBox does not execute **onOpened** when [pickerType](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/pickerType.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#pickerType') is *"native"*.

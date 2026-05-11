@@ -17,4 +17,54 @@ If you want to integrate this capability into your application, you can examine 
 * The `selectedRows` signal monitors the state of the table and reports changes to the row selection.
 * The `selectionMessage` computed signal listens to the `selectedRows` signal. It joins the names of the selected employees into a single string. The table caption includes this string.
 
+[note]
+
+**dxForm**.[formData](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData) does not support signals. To use signals with **formData**, implement one of the following approaches:
+
+- Create a new object bound to a signal and synchronize this object with **formData** in [onFieldDataChanged](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#onFieldDataChanged):
+
+        <!-- tab: app.component.html -->
+        <dx-form
+            [formData]="formData"
+            (onFieldDataChanged)="handleFieldDataChanged($event)"
+        ></dx-form>
+
+        <!-- tab: app.component.ts -->
+        import { Component, signal } from "@angular/core";
+        import { DxFormModule, type DxFormTypes } from "devextreme-angular/ui/form";
+
+        // ...
+        export class AppComponent {
+            formData = { firstName: "John", lastName: "Doe", age: 30 };
+            formDataSignal = signal({ ...this.formData });
+            handleFieldDataChanged(e: DxFormTypes.FieldDataChangedEvent): void {
+                if (!e.dataField) return;
+                this.formDataSignal.set({ ...this.formData });
+            }
+        }
+
+
+- Configure item [templates](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#template) for all dxForm fields and bind signals to each component's **value** property:
+
+        <!-- tab: app.component.html -->
+        <dx-form>
+            <dxi-form-item>
+                <div *dxTemplate>
+                    <dx-date-box
+                        [(value)]="dateFieldValue"
+                    ></dx-date-box>
+                </div>
+            </dxi-form-item>
+        </dx-form>
+
+        <!-- tab: app.component.ts -->
+        import { Component, signal } from "@angular/core";
+
+        // ...
+        export class AppComponent {
+            dateFieldValue = signal(new Date());
+        }
+
+[/note]
+
 [tags] angular

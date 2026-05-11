@@ -4,7 +4,7 @@ type: AIIntegration
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Binds the AI Assistant to an AI service.
 
 ---
-<!-- Description goes here -->
+To activate the AI Assistant in {WidgetName}, configure this object and assign `true` to **aiAssistant**.[enabled]({basewidgetpath}/Configuration/aiAssistant/#enabled).

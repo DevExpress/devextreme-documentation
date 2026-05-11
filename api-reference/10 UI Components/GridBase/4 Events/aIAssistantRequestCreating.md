@@ -4,7 +4,10 @@ type: eventType
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Raised before an AI Assistant request is created.
 
 ---
-<!-- Description goes here -->
+Main article: [onAIAssistantRequestCreating]({basewidgetpath}/Configuration/#onAIAssistantRequestCreating)
+
+#####See Also#####
+#include common-link-handleevents

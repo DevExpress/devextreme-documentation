@@ -1,10 +1,11 @@
 ---
 id: GridBase.Options.aiAssistant
 type: AIAssistant
+inheritsType: AIAssistant
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the {WidgetName} AI Assistant.
 
 ---
 <!-- Description goes here -->

@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the {WidgetName} AI Assistant.
 
 ---
 <!-- Description goes here -->

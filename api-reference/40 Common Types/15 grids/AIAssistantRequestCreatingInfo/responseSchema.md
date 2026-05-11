@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The JSON schema of the AI Assistant response.
 
 ---
 <!-- Description goes here -->

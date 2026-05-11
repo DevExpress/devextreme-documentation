@@ -1,8 +1,8 @@
 ﻿$(function () {
     var rangeSelector = $("#rangeSelectorContainer").dxRangeSelector({
         scale: {
-            startValue: new Date(2012, 8, 29, 00, 00, 00),
-            endValue: new Date(2012, 8, 29, 24, 00, 00),
+            startValue: new Date(2012, 8, 29, 0, 0, 0),
+            endValue: new Date(2012, 8, 29, 24, 0, 0),
             marker: { visible: false }
         }
     }).dxRangeSelector("instance");

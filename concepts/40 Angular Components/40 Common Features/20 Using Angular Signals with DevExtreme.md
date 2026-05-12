@@ -48,11 +48,28 @@ If you want to integrate this capability into your application, you can examine 
 
         <!-- tab: app.component.html -->
         <dx-form>
-            <dxi-form-item>
+            <dxi-form-item itemType="simple" dataField="firstName">
                 <div *dxTemplate>
-                    <dx-date-box
-                        [(value)]="dateFieldValue"
-                    ></dx-date-box>
+                    <dx-text-box
+                        [value]="formDataSignal().firstName"
+                        (onValueChanged)="updateField('firstName', $event.value)"
+                    ></dx-text-box>
+                </div>
+            </dxi-form-item>
+            <dxi-form-item itemType="simple" dataField="lastName">
+                <div *dxTemplate>
+                    <dx-text-box
+                        [value]="formDataSignal().lastName"
+                        (onValueChanged)="updateField('lastName', $event.value)"
+                    ></dx-text-box>
+                </div>
+            </dxi-form-item>
+            <dxi-form-item itemType="simple" dataField="age">
+                <div *dxTemplate>
+                    <dx-number-box
+                        [value]="formDataSignal().age"
+                        (onValueChanged)="updateField('age', $event.value)"
+                    ></dx-number-box>
                 </div>
             </dxi-form-item>
         </dx-form>
@@ -62,7 +79,10 @@ If you want to integrate this capability into your application, you can examine 
 
         // ...
         export class AppComponent {
-            dateFieldValue = signal(new Date());
+            formDataSignal = signal({ firstName: "John", lastName: "Doe", age: 30 });
+            updateField(field: string, value: any) {
+                this.formDataSignal.update((d) => ({ ...d, [field]: value }));
+            }
         }
 
 [/note]

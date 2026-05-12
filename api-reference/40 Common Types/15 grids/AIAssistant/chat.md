@@ -7,13 +7,13 @@ type: dxChat_Options
 Configures the AI Assistant chat.
 
 ---
-Use DevExtreme [Chat](/Documentation/ApiReference/UI_Components/dxChat/Configuration/) options to configure this object.
+Use DevExtreme [Chat](/api-reference/10%20UI%20Components/dxChat/1%20Configuration '/Documentation/ApiReference/UI_Components/dxChat/Configuration/') options to configure this object.
 
 [note]
 
 We do not recommend that you specify the following Chat options:
 
-- [messageTemplate](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#messageTemplate)
-- [editing](/Documentation/ApiReference/UI_Components/dxChat/Configuration/editing/)
+- [messageTemplate](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/messageTemplate.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#messageTemplate')
+- [editing](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxChat/Configuration/editing/')
 
 [/note]

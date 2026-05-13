@@ -2,13 +2,7 @@ When a user cancels the appointment edit form, unsaved changes are lost. To prev
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/25_2/UIWidgets/Guides/SchedulerPreserveChanges/index.html, /Content/Applications/25_2/UIWidgets/Guides/SchedulerPreserveChanges/index.js, /Content/Applications/25_2/UIWidgets/Guides/SchedulerPreserveChanges/index.css" style="border: none !important;"></div>
 
-This topic demonstrates how to:
-
-- Detect cancellation by listening to the Popup's `hiding` event inside [onAppointmentFormOpening](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/onAppointmentFormOpening.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentFormOpening').
-- Restore a saved draft and add a **Discard Changes** button when the form opens.
-- Clear the draft after a successful save using [onAppointmentAdding](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/onAppointmentAdding.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentAdding') and [onAppointmentUpdating](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/onAppointmentUpdating.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentUpdating').
-
-## Save a Draft on Cancel
+### Save a Draft on Cancel
 
 The Scheduler does not expose a dedicated cancel event. To detect cancellation, listen to the Popup's `hiding` event inside `onAppointmentFormOpening`. Guard with an `isSaved` flag so that the handler fires only when the user closes the form without saving:
 
@@ -230,7 +224,7 @@ The Scheduler does not expose a dedicated cancel event. To detect cancellation, 
 
 [note] Remove any previously registered `hiding` handler before registering a new one to prevent duplicate draft saves when the same appointment is opened multiple times.
 
-## Restore a Draft and Add a Discard Changes Button
+### Restore a Draft and Add a Discard Changes Button
 
 When the edit form opens, check `localStorage` for a saved draft. If a draft exists, restore its values into the form with `form.option('formData', …)` and add a **Discard Changes** button so the user can revert to the appointment's last saved state:
 
@@ -523,7 +517,7 @@ When the edit form opens, check `localStorage` for a saved draft. If a draft exi
 ---
 
     
-## Clear the Draft After a Successful Save
+### Clear the Draft After a Successful Save
 
 Clear the draft from `localStorage` after the user saves the appointment to avoid restoring stale data on subsequent opens:
 

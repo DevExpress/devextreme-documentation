@@ -161,6 +161,7 @@ $(function () {
                             icon: 'undo',
                             onClick: function () {
                                 clearDraft(currentAppointmentId);
+                                isSaved = true;
 
                                 form.option('formData', $.extend({}, form.option('formData'), {
                                     text: originalData.text,
@@ -212,9 +213,10 @@ $(function () {
             clearDraft(null);
         },
 
-        onAppointmentUpdating: function () {
+        onAppointmentUpdating: function (e) {
             isSaved = true;
-            clearDraft(currentAppointmentId);
+            const appointmentId = e && e.oldData && e.oldData.id != null ? e.oldData.id : null;
+            clearDraft(appointmentId);
         }
     });
 });

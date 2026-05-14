@@ -144,7 +144,7 @@ Two details are critical for the recurrence panel to work correctly:
 ##### React
 
     <!-- tab: App.tsx -->
-    import { Scheduler, Editing, Form, Item } from 'devextreme-react/scheduler';
+    import { Scheduler, Editing, Form } from 'devextreme-react/scheduler';
 
     const legacyFormItems = [
         {

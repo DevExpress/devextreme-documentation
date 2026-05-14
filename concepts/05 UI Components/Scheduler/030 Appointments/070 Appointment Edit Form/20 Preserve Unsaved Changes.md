@@ -1,4 +1,4 @@
-When a user cancels the appointment edit form, unsaved changes are lost. To prevent data loss, you can save the current form state to `localStorage` when the form closes without saving, and restore the draft the next time the user opens the same appointment.
+Canceling the appointment edit form discards unsaved changes. You can prevent data loss by saving the current form state to `localStorage` when the form closes without saving and restoring the draft the next time the user opens the same appointment.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/25_2/UIWidgets/Guides/SchedulerPreserveChanges/index.html, /Content/Applications/25_2/UIWidgets/Guides/SchedulerPreserveChanges/index.js, /Content/Applications/25_2/UIWidgets/Guides/SchedulerPreserveChanges/index.css" style="border: none !important;"></div>
 
@@ -11,6 +11,7 @@ The Scheduler does not expose a dedicated cancel event. To detect cancellation, 
 
     <!-- tab: index.js -->
     let isSaved = false;
+    let hidingHandler = null;
 
     function onCanceled(form, originalData) {
         const formData = form.option('formData');
@@ -42,11 +43,13 @@ The Scheduler does not expose a dedicated cancel event. To detect cancellation, 
 
             isSaved = false;
 
-            popup.on('hiding', function () {
+            popup.off('hiding', hidingHandler);
+            hidingHandler = function () {
                 if (!isSaved) {
                     onCanceled(form, appointmentData);
                 }
-            });
+            };
+            popup.on('hiding', hidingHandler);
         },
     });
 
@@ -69,6 +72,7 @@ The Scheduler does not expose a dedicated cancel event. To detect cancellation, 
     })
     export class AppComponent {
         private isSaved = false;
+        private hidingHandler: (() => void) | null = null;
 
         private onCanceled(
             form: DxSchedulerTypes.AppointmentFormOpeningEvent['form'],
@@ -100,11 +104,15 @@ The Scheduler does not expose a dedicated cancel event. To detect cancellation, 
 
             this.isSaved = false;
 
-            popup.on('hiding', () => {
+            if (this.hidingHandler) {
+                popup.off('hiding', this.hidingHandler);
+            }
+            this.hidingHandler = () => {
                 if (!this.isSaved) {
                     this.onCanceled(form, appointmentData);
                 }
-            });
+            };
+            popup.on('hiding', this.hidingHandler);
         }
     }
 
@@ -122,6 +130,7 @@ The Scheduler does not expose a dedicated cancel event. To detect cancellation, 
     import { DxScheduler, type DxSchedulerTypes } from 'devextreme-vue/scheduler';
 
     const isSaved = ref(false);
+    let hidingHandler: (() => void) | null = null;
 
     function onCanceled(
         form: DxSchedulerTypes.AppointmentFormOpeningEvent['form'],
@@ -153,11 +162,15 @@ The Scheduler does not expose a dedicated cancel event. To detect cancellation, 
 
         isSaved.value = false;
 
-        popup.on('hiding', () => {
+        if (hidingHandler) {
+            popup.off('hiding', hidingHandler);
+        }
+        hidingHandler = () => {
             if (!isSaved.value) {
                 onCanceled(form, appointmentData);
             }
-        });
+        };
+        popup.on('hiding', hidingHandler);
     }
     </script>
 
@@ -196,6 +209,7 @@ The Scheduler does not expose a dedicated cancel event. To detect cancellation, 
 
     function App() {
         const isSaved = useRef(false);
+        const hidingHandlerRef = useRef<(() => void) | null>(null);
 
         const handleAppointmentFormOpening = useCallback(
             (e: SchedulerTypes.AppointmentFormOpeningEvent) => {
@@ -204,9 +218,13 @@ The Scheduler does not expose a dedicated cancel event. To detect cancellation, 
 
                 isSaved.current = false;
 
-                popup.on('hiding', () => {
+                if (hidingHandlerRef.current) {
+                    popup.off('hiding', hidingHandlerRef.current);
+                }
+                hidingHandlerRef.current = () => {
                     onCanceled(form, appointmentData, isSaved);
-                });
+                };
+                popup.on('hiding', hidingHandlerRef.current);
             },
             [],
         );
@@ -221,8 +239,6 @@ The Scheduler does not expose a dedicated cancel event. To detect cancellation, 
     export default App;
 
 ---
-
-[note] Remove any previously registered `hiding` handler before registering a new one to prevent duplicate draft saves when the same appointment is opened multiple times.
 
 ### Restore a Draft and Add a Discard Changes Button
 
@@ -516,7 +532,6 @@ When the edit form opens, check `localStorage` for a saved draft. If a draft exi
 
 ---
 
-    
 ### Clear the Draft After a Successful Save
 
 Clear the draft from `localStorage` after the user saves the appointment to avoid restoring stale data on subsequent opens:

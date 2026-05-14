@@ -4,7 +4,7 @@ Unsaved changes are lost when a user cancels the appointment edit form. To preve
 
 ### Save a Draft on Cancel
 
-The Scheduler does not expose a dedicated cancel event. To detect cancellation, listen to the Popup's `hiding` event inside `onAppointmentFormOpening`. Guard with an `isSaved` flag so that the handler fires only when the user closes the form without saving:
+The Scheduler does not expose a dedicated cancel event. To detect cancellation, listen to the Popup's [hiding](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxPopup/Configuration/#onHiding) event inside [onAppointmentFormOpening](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentFormOpening). Guard with an `isSaved` flag so that the handler fires only when the user closes the form without saving:
 
 ---
 ##### jQuery

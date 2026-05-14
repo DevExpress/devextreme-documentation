@@ -15,14 +15,8 @@ Allows you to cancel the request.
 ##### field(e.component): {WidgetName}
 The UI component's instance.
 
-##### field(e.context): Object
-{WidgetName} context (data and component state information) included in the AI Assistant request.
-
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
-
-##### field(e.responseSchema): Object
-The JSON schema of the AI Assistant response.
 
 ---
 Use this handler to modify the AI Assistant request.

@@ -28,6 +28,9 @@ The model data. Available only if you use Knockout.
 ##### field(e.responseSchema): Record
 The JSON schema of the AI Assistant response.
 
+##### field(e.additionalInfo): Record
+<!-- Description goes here -->
+
 ---
 Use this handler to modify the AI Assistant request.
 

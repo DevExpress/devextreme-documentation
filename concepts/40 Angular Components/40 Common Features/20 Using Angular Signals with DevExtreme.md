@@ -14,12 +14,12 @@ If you want to integrate this capability into your application, you can examine 
 }
 
 * The `prefix` signal in the example monitors the state of the "Prefix" dropdown. When the user changes the active option, the corresponding `effect` function filters the list of employees, and selects rows with employees that match the selected prefix.
-* The `selectedRows` signal monitors the state of the table and reports changes to the row selection.
-* The `selectionMessage` computed signal listens to the `selectedRows` signal. It joins the names of the selected employees into a single string. The table caption includes this string.
+* `selectedRows` monitors the state of the table and reports changes to the row selection.
+* `selectionMessage` listens to the `selectedRows` signal. It joins the names of the selected employees into a single string. The table caption includes this string.
 
 [note]
 
-**dxForm**.[formData](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData) does not support signals. To use signals with **formData**, implement one of the following approaches:
+**dxForm**.[formData](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData) does not support signals. To use signals with **formData**, implement one of the following:
 
 - Create a new object bound to a signal and synchronize this object with **formData** in [onFieldDataChanged](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#onFieldDataChanged):
 

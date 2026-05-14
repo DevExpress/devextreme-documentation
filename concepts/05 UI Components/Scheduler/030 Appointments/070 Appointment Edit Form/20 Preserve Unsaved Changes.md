@@ -1,4 +1,4 @@
-Canceling the appointment edit form discards unsaved changes. You can prevent data loss by saving the current form state to `localStorage` when the form closes without saving and restoring the draft the next time the user opens the same appointment.
+Unsaved changes are lost when a user cancels the appointment edit form. To prevent data loss, you can save the current form state to `localStorage` when the form closes without saving, and restore the draft the next time the user opens the same appointment.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/25_2/UIWidgets/Guides/SchedulerPreserveChanges/index.html, /Content/Applications/25_2/UIWidgets/Guides/SchedulerPreserveChanges/index.js, /Content/Applications/25_2/UIWidgets/Guides/SchedulerPreserveChanges/index.css" style="border: none !important;"></div>
 

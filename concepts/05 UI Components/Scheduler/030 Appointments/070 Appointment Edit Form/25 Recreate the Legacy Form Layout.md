@@ -369,7 +369,7 @@ Use [editing.popup](/api-reference/10%20UI%20Components/dxScheduler/1%20Configur
 
 ### Wire Up the Repeat Toggle
 
-The built-in recurrence panel switch fires when the user changes the **Repeat** drop-down in the default form. Because the legacy form replaces that drop-down with a custom `dxSwitch`, you must wire up the toggle logic manually in `onAppointmentFormOpening`.
+The built-in recurrence panel switch fires when the user changes the **Repeat** drop-down in the default form. You must wire up the toggle logic manually in `onAppointmentFormOpening` because the legacy form replaces that drop-down with a custom `dxSwitch`.
 
 The `applyRepeatState` helper toggles the layout between one and two columns, displays or hides `recurrenceGroup`, and sets or clears `formData.recurrenceRule`. All three operations must happen together.
 

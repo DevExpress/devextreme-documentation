@@ -19,9 +19,9 @@ If you want to integrate this capability into your application, you can examine 
 
 [note]
 
-**dxForm**.[formData](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData) does not support signals. To use signals with **formData**, implement one of the following:
+**dxForm**.[formData](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/formData.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#formData') does not support signals. To use signals with **formData**, implement one of the following:
 
-- Create a new object bound to a signal and synchronize this object with **formData** in [onFieldDataChanged](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#onFieldDataChanged):
+- Create a new object bound to a signal and synchronize this object with **formData** in [onFieldDataChanged](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/onFieldDataChanged.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#onFieldDataChanged'):
 
         <!-- tab: app.component.html -->
         <dx-form
@@ -44,7 +44,7 @@ If you want to integrate this capability into your application, you can examine 
         }
 
 
-- Configure item [templates](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#template) for all dxForm fields and bind signals to each component's **value** property:
+- Configure item [templates](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/template.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#template') for all dxForm fields and bind signals to each component's **value** property:
 
         <!-- tab: app.component.html -->
         <dx-form>

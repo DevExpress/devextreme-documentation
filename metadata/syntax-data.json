@@ -6052,6 +6052,11 @@
       "react": "Popup",
       "vue": "DxPopup"
     },
+    "aiAssistantRequestCreatingInfo.additionalInfo": {
+      "angular": "dxo-additional-info",
+      "react": "AdditionalInfo",
+      "vue": "DxAdditionalInfo"
+    },
     "aiAssistantRequestCreatingInfo.context": {
       "angular": "dxo-context",
       "react": "Context",

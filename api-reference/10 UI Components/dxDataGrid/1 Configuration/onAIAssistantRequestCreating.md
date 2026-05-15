@@ -24,6 +24,9 @@ The UI component's instance.
 ##### field(e.responseSchema): Object
 The JSON schema of the AI Assistant response.
 
+##### field(e.additionalInfo): Object
+<!-- Description goes here -->
+
 ---
 Use this handler to modify the AI Assistant request.
 

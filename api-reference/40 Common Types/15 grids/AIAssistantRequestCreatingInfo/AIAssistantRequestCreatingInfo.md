@@ -3,8 +3,9 @@ id: AIAssistantRequestCreatingInfo
 module: common/grids
 export: AIAssistantRequestCreatingInfo
 hidden: 
-type: Object
+type: Pick
 generateTypeLink: 
+acceptValues: 'context' | 'responseSchema' | 'additionalInfo'
 ---
 ---
 ##### shortDescription

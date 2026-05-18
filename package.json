@@ -4,6 +4,9 @@
   "author": "Developer Express Inc.",
   "version": "25.2.0",
   "license": "UNLICENSED",
+  "engines": {
+    "node": "24.15.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/DevExpress/devextreme-documentation.git"

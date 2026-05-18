@@ -12,7 +12,7 @@ Use this object to specify predefined messages or execute actions outside the Ch
 - The [items[]](/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/items/) array
 - An [onItemClick](/api-reference/10%20UI%20Components/dxButtonGroup/1%20Configuration/onItemClick.md '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/#onItemClick') handler
 
-The [text](/api-reference/_hidden/CollectionWidgetItem/text.md '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/items/#text') field in an array item specifies the corresponding button caption. In the **onItemClick** event handler, you can use the same text as a chat message. In many cases, however, it is better to use two strings: a shorter button caption and a longer message. To specify a separate message text, assign it to a custom field. Our [Chat - Suggestions](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Chat/PromptSuggestions/) technical demo uses the `prompt` field. The following code snippet uses the `message` field:
+The [text](/api-reference/_hidden/CollectionWidgetItem/text.md '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/items/#text') field in an array item specifies the button caption. In the **onItemClick** event handler, you can use the same text as a chat message. In many cases, however, it is better to use two strings: a shorter button caption and a longer message. To specify a separate message text, assign it to a custom field. The [Chat - Suggestions](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Chat/PromptSuggestions/) technical demo uses the `prompt` field. The following code snippet uses the `message` field:
 
     const suggestions = {
         items: [{

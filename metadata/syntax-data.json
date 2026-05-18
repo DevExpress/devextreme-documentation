@@ -6047,25 +6047,16 @@
       "react": "Chat",
       "vue": "DxChat"
     },
+    "aiAssistant.customizeResponseText": {
+      "vue": "customize-response-text"
+    },
+    "aiAssistant.customizeResponseTitle": {
+      "vue": "customize-response-title"
+    },
     "aiAssistant.popup": {
       "angular": "dxo-popup",
       "react": "Popup",
       "vue": "DxPopup"
-    },
-    "aiAssistantRequestCreatingInfo.additionalInfo": {
-      "angular": "dxo-additional-info",
-      "react": "AdditionalInfo",
-      "vue": "DxAdditionalInfo"
-    },
-    "aiAssistantRequestCreatingInfo.context": {
-      "angular": "dxo-context",
-      "react": "Context",
-      "vue": "DxContext"
-    },
-    "aiAssistantRequestCreatingInfo.responseSchema": {
-      "angular": "dxo-response-schema",
-      "react": "ResponseSchema",
-      "vue": "DxResponseSchema"
     },
     "aiChangeStyleCommand": {
       "angular": "dxo-a-i-change-style-command",
@@ -7269,6 +7260,9 @@
       "angular": "dxo-column",
       "react": "Column",
       "vue": "DxColumn"
+    },
+    "commandInfo": {
+      "vue": "command-info"
     },
     "commonIndicator.arrowLength": {
       "vue": "arrow-length"
@@ -10772,6 +10766,11 @@
     },
     "dxDataGridColumnButton.onClick": {
       "vue": "@click"
+    },
+    "dxDataGridOptions.aiAssistant": {
+      "angular": "dxo-ai-assistant",
+      "react": "AiAssistant",
+      "vue": "DxAiAssistant"
     },
     "dxDataGridOptions.columns": {
       "angular": "dxi-column",
@@ -21475,6 +21474,9 @@
     "enums.ResizeHandle": {
       "vue": "resize-handle"
     },
+    "enums.ResponseStatus": {
+      "vue": "response-status"
+    },
     "enums.RevealMode": {
       "vue": "reveal-mode"
     },
@@ -23118,6 +23120,11 @@
       "angular": "dxo-required-rule",
       "react": "RequiredRule",
       "vue": "DxRequiredRule"
+    },
+    "responseStatusTexts": {
+      "angular": "dxo-response-status-texts",
+      "react": "ResponseStatusTexts",
+      "vue": "DxResponseStatusTexts"
     },
     "rowUpdatingInfo.newData": {
       "angular": "dxo-new-data",

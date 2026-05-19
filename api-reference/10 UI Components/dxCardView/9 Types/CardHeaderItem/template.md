@@ -92,7 +92,7 @@ This property supports the following values:
 - A template name (as a string)
 - Template container as a DOM Node
 
-[note] Use the React-specific [render]({currentpath}/#render) and [component]({currentpath}/#component) properties instead of **template**.
+[note] Use the React-specific [render](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/cardHeader/items/#render) and [component](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/cardHeader/items/#component) properties instead of **template**.
 
 For more information about templates, refer to the following topic: [DevExtreme {Framework} - Custom Templates](/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates).
 

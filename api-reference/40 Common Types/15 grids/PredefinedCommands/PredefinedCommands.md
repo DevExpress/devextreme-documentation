@@ -17,7 +17,7 @@ The following code snippet lists available commands with their arguments:
     };
     columnsReorder: {
         dataField: string;
-        visibleIndex: boolean;
+        visibleIndex: number;
     };
     columnsPinning: {
         dataField: string;

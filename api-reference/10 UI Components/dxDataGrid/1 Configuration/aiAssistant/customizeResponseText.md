@@ -89,7 +89,7 @@ You can use this function to translate response texts. The following code snippe
     <template>
         <Dx{WidgetName}>
             <DxAIAssistant
-                :customize-response-text={customizeResponseText}
+                :customize-response-text="customizeResponseText"
             />
         </Dx{WidgetName}>
     </template>

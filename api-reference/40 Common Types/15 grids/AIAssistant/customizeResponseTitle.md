@@ -10,7 +10,7 @@ Customizes AI Assistant response titles.
 The response status. If a response includes multiple requested commands, all must succeed for this parameter to return *"success"*.
 
 ##### param(commandNames): Array<String>
-An array of requested commands ([PredefinedCommandNames]({basewidgetpath}/Types/PredefinedCommandNames/)).
+An array of requested commands ([PredefinedCommandNames]({basewidgetpath}/PredefinedCommandNames/)).
 
 ##### return: String
 The custom response title.
@@ -72,7 +72,7 @@ You can use this function to translate response texts. The following code snippe
     <template>
         <Dx{WidgetName}>
             <DxAIAssistant
-                :customize-response-title={customizeResponseTitle}
+                :customize-response-title="customizeResponseTitle"
             />
         </Dx{WidgetName}>
     </template>

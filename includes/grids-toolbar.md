@@ -11,7 +11,7 @@ Predefined controls appear on the toolbar depending on whether a specific {Widge
         </tr>
         <tr>
             <td><i>aiAssistantButton</i></td>
-            <td><img src="/images/DataGrid/icons/aiAssistantButton.png" alt="DevExtreme JavaScript jQuery Angular UI component {WidgetName} Toolbar AddButton" style="margin:1px; vertical-align:middle"/></td>
+            <td><img src="/images/DataGrid/icons/aiAssistantButton.png" alt="DevExtreme JavaScript jQuery Angular UI component {WidgetName} Toolbar AI Assistant Button" style="margin:1px; vertical-align:middle"/></td>
             <td><a href="{basewidgetpath}/Configuration/#aiIntegration">aiIntegration</a> or <b>aiAssistant</b>.<a href="{basewidgetpath}/Configuration/aiAssistant/#aiIntegration">aiIntegration</a> is configured and <b>aiAssistant</b>.<a href="{basewidgetpath}/Configuration/aiAssistant/#enabled">enabled</a> is <b>true</b></td>
         </tr>
         <tr>

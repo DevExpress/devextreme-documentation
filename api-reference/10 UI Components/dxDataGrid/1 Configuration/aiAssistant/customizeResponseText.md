@@ -1,16 +1,16 @@
 ---
-id: AIAssistant.customizeResponseText
+id: dxDataGrid.Options.aiAssistant.customizeResponseText
 type: function(command)
 ---
 ---
 ##### shortDescription
 Customizes AI Assistant response texts for each requested command.
 
-##### param(command): CommandInfo
+##### param(command): DataGridCommandInfo
 Information about the command.
 
 ##### return: ResponseStatusTexts
-Custom texts for `success` and `failure` response statuses.
+Custom texts for **success** and **failure** response statuses.
 
 ---
 Use this function to customize response message texts for AI Assistant commands. **customizeResponseText** is called for each requested command. The AI Assistant chat displays these texts below the response title. When a response includes multiple commands, the chat displays each command's text on separate lines.
@@ -19,8 +19,8 @@ When a command succeeds, the AI Assistant chat displays the response text in gre
 
 The **command** parameter contains the following fields:
 
-- **name**: The command's name ([PredefinedCommandNames](/Documentation/ApiReference/Common_Types/grids/PredefinedCommandNames/)).
-- **args**: Command arguments. Refer to [PredefinedCommands](/Documentation/ApiReference/Common_Types/grids/PredefinedCommands/) for information about the arguments of each available command.
+- **name**: The command's name ([DataGridPredefinedCommandNames]({basewidgetpath}/Types/DataGridPredefinedCommandNames/)).
+- **args**: Command arguments. Refer to [DataGridPredefinedCommands]({basewidgetpath}/Types/DataGridPredefinedCommands/) for information about the arguments of each available command.
 
 Configure **customizeResponseText** to return an object with the following fields:
 

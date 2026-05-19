@@ -3,6 +3,7 @@ id: CommandInfo
 module: common/grids
 export: CommandInfo
 type: any
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

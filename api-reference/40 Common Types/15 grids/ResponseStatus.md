@@ -3,6 +3,7 @@ id: Enums.ResponseStatus
 acceptValues: 'success' | 'failure'
 type: Union
 references: AIAssistant.customizeResponseTitle
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

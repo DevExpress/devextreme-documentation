@@ -3,6 +3,7 @@ id: ResponseStatusTexts
 module: common/grids
 export: ResponseStatusTexts
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

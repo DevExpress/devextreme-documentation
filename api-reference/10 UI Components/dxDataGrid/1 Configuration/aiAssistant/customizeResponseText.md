@@ -136,7 +136,7 @@ You can use this function to translate response texts. The following code snippe
             <{WidgetName}>
                 <AIAssistant
                     enabled={true}
-                    customizeResponseTitle={customizeResponseTitle}
+                    customizeResponseText={customizeResponseText}
                 />
             </{WidgetName}>
         );

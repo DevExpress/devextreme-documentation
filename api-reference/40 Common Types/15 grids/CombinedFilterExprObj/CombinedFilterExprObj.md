@@ -14,4 +14,4 @@ This object includes the following fields:
 - **type**: The expression type. Set to *"combined"*.
 - **left**: The first filter expression.
 - **combiner**: The combination operation. Accepted values: *"and"*, *"or"*.
-- **right**: The second filter expression
+- **right**: The second filter expression.

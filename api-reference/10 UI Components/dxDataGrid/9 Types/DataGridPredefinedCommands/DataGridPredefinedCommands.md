@@ -56,7 +56,7 @@ The following code snippet lists available commands with their arguments:
         preserve: boolean;
     };
     selectByIndexes: {
-        indexes: number[]
+        indexes: number[];
     };
     selectAll: {};
     deselectAll: {};

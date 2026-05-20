@@ -7,29 +7,29 @@ DevExtreme bundles are available on multiple hosting platforms.
 ### Scripts:
 
     <!-- Diagram and Gantt -->
-    <script src="https://cdn.jsdelivr.net/npm/devexpress-diagram@cdnjs_version/dx-diagram.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/devexpress-gantt@cdnjs_version/dx-gantt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/devexpress-diagram@cdnjs_version/dist/dx-diagram.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/devexpress-gantt@cdnjs_version/dist/dx-gantt.min.js"></script>
 
     <!-- DevExtreme Quill (required by the HTML Editor UI component) -->
-    <script src="https://cdn.jsdelivr.net/npm/devextreme-quill@cdnjs_version/dx-quill.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/devextreme-quill@cdnjs_version/dist/dx-quill.min.js"></script>
 
     <!-- DevExtreme library -->
     <script src="https://cdn.jsdelivr.net/npm/devextreme-dist@cdnjs_version/js/dx.all.js"></script>
 
     <!-- DevExpress.AspNet.Data -->
-    <script src="https://cdn.jsdelivr.net/npm/devextreme-aspnet-data@cdnjs_version/dx.aspnet.data.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/devextreme-aspnet-data@cdnjs_version/js/dx.aspnet.data.min.js"></script>
 
     <!-- Development scripts -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/devexpress-diagram@cdnjs_version/dx-diagram.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/devexpress-gantt@cdnjs_version/dx-gantt.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/devextreme-quill@cdnjs_version/dx-quill.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/devextreme-aspnet-data@cdnjs_version/dx.aspnet.data.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/devexpress-diagram@cdnjs_version/dist/dx-diagram.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/devexpress-gantt@cdnjs_version/dist/dx-gantt.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/devextreme-quill@cdnjs_version/dist/dx-quill.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/devextreme-aspnet-data@cdnjs_version/js/dx.aspnet.data.js"></script> -->
     
 ### Stylesheets:
 
     <!-- Diagram and Gantt stylesheets -->
-    <link href="https://cdn.jsdelivr.net/npm/devexpress-diagram@cdnjs_version/dx-diagram.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/devexpress-gantt@cdnjs_version/dx-gantt.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/devexpress-diagram@cdnjs_version/dist/dx-diagram.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/devexpress-gantt@cdnjs_version/dist/dx-gantt.min.css" rel="stylesheet">
 
     <!-- Theme stylesheets (reference only one of them) -->
     <link href="https://cdn.jsdelivr.net/npm/devextreme-dist@cdnjs_version/css/dx.carmine.compact.css" rel="stylesheet">
@@ -70,8 +70,8 @@ DevExtreme bundles are available on multiple hosting platforms.
     <link href="https://cdn.jsdelivr.net/npm/devextreme-dist@cdnjs_version/css/dx.softblue.css" rel="stylesheet">
 
     <!-- Diagram and Gantt development stylesheets -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/devexpress-diagram@cdnjs_version/dx-diagram.css" rel="stylesheet"> -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/devexpress-gantt@cdnjs_version/dx-gantt.css" rel="stylesheet"> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/devexpress-diagram@cdnjs_version/dist/dx-diagram.css" rel="stylesheet"> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/devexpress-gantt@cdnjs_version/dist/dx-gantt.css" rel="stylesheet"> -->
 
 ## CDNJS
 

@@ -1,4 +1,4 @@
-﻿DevExtreme components function on the client side, which requires a license check during client-side code execution. Create a `ClientComponent` that registers the assigned license key, and run it in the `RootLayout` section before rendering any content.
+DevExtreme components function on the client side, which requires a license check during client-side code execution. Create a `ClientComponent` that registers the assigned license key, and run it in the `RootLayout` section before rendering any content.
 
 For full instructions on setting up the license key in a Next.js application, refer to the following article:
 

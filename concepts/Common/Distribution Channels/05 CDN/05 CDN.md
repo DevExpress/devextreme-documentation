@@ -1,6 +1,6 @@
 DevExtreme bundles are available on multiple hosting platforms.
 
-[note] We recommend you use DevExtreme sources hosted on jsDelivr.
+[note] We recommend you use DevExtreme sources hosted on jsDelivr to minimize downtime for your application.
 
 ## jsDelivr
 
@@ -74,6 +74,8 @@ DevExtreme bundles are available on multiple hosting platforms.
     <!-- <link href="https://cdn.jsdelivr.net/npm/devexpress-gantt@cdnjs_version/dx-gantt.css" rel="stylesheet"> -->
 
 ## CDNJS
+
+[important] Due to reliability concerns, we plan to discontinue hosting DevExtreme bundles on CDNJS in the future. We recommend you migrate your application to jsDelivr to minimize downtime.
 
 ### Scripts:
 

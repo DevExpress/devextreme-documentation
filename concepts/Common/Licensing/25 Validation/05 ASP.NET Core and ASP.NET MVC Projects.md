@@ -12,10 +12,10 @@ If you use ASP.NET Core or ASP.NET MVC with DevExtreme and see a trial message a
 - Trial message links open `js.devexpress.com`. The message lists "**DevExtreme Complete**" in the subscription.
 - **Solutions**:
   - If you use both Razor and jQuery/JavaScript, render Razor-based components first.
-  - [Configure the license key](https://docs.devexpress.com/GeneralInformation/405494/trial-register/set-up-your-dev-express-license-key#option-2-non-modular-applications-jquery-cdn-based). In `devextreme-license.js`, add `DevExpress.config({ licenseKey: 'your_license_key' });`. Load scripts in this order:
+  - [Configure the license key](https://docs.devexpress.com/GeneralInformation/405494/trial-register/set-up-your-dev-express-license-key#option-2-non-modular-applications-jquery-cdn-based). Use the `devextreme-license` CLI to generate the DevExtreme runtime key file (`devextreme-license.js`), and load scripts in this order:
     1. jQuery scripts
     2. `dx.all.js`
-    3. `devextreme-license.js`
+    3. Generated `devextreme-license.js`
     4. Scripts with DevExtreme components
   - Use Razor syntax instead of jQuery or JavaScript.
 

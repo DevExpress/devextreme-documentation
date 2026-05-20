@@ -75,7 +75,7 @@ DevExtreme bundles are available on multiple hosting platforms.
 
 ## CDNJS
 
-[important] Due to reliability concerns, we plan to discontinue hosting DevExtreme bundles on CDNJS in the future. We recommend you migrate your application to jsDelivr to minimize downtime.
+[important] Due to reliability concerns, we plan to discontinue hosting new versions of DevExtreme bundles on CDNJS. We recommend you migrate your application to jsDelivr to minimize downtime.
 
 ### Scripts:
 

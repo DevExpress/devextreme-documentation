@@ -1,4 +1,4 @@
-﻿To use DevExtreme in a licensed project, you must register a valid license key in your application. The process involves two steps:
+To use DevExtreme in a licensed project, you must register a valid license key in your application. The process involves two steps:
 
 1. [Obtain your DevExpress license key](/concepts/Common/Licensing/09%20Obtain%20Your%20License%20Key.md '/Documentation/Guide/Common/Licensing/#Obtain_Your_License_Key') from the DevExpress Download Manager.
 2. Use the `devextreme-license` CLI tool to generate a DevExtreme-compatible runtime key and register it in your application.

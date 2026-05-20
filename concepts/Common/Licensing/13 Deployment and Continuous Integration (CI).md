@@ -1,4 +1,4 @@
-﻿To add DevExtreme license verification to your CI/CD processes, run the `devextreme-license` CLI tool in a pre-build step. The tool reads your DevExpress license key from an environment variable and generates a DevExtreme-compatible runtime key.
+﻿To add DevExtreme license verification to your CI/CD processes, run the `devextreme-license` CLI tool in a pre-build step. The tool reads your DevExpress license key from an environment variable and generates a DevExtreme-compatible runtime key file.
 
 For full instructions, including an example for GitHub Actions and Secrets, refer to the following article:
 

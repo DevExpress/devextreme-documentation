@@ -1,4 +1,4 @@
-﻿In a Module Federation setup, configure the license key in all applications (host and remotes) that use DevExtreme components.
+In a Module Federation setup, configure the license key in all applications (host and remotes) that use DevExtreme components.
 
 For full instructions on setting up the license key with Angular Module Federation, refer to the following article:
 

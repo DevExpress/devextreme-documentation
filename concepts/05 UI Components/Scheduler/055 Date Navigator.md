@@ -108,7 +108,7 @@ The date navigator is a DevExtreme [ButtonGroup](/api-reference/10%20UI%20Compon
 
 ---
 
-You can configure the [customizeDateNavigatorText](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/customizeDateNavigatorText.md 'Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#customizeDateNavigatorText') callback to customize the date interval text. To customize the range of available dates available in the date navigator, configure the [min](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/min.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#min') and [max](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/max.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#max') properties:
+You can configure the [customizeDateNavigatorText](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/customizeDateNavigatorText.md 'Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#customizeDateNavigatorText') callback to customize the date interval text. To customize the range of available dates available in the date navigator, configure [min](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/min.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#min') and [max](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/max.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#max') properties:
 
 ---
 ##### jQuery

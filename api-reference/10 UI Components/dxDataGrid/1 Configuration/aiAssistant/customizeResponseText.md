@@ -58,10 +58,10 @@ You can use this function to translate response texts. The following code snippe
 
     <!-- tab: app.component.html -->
     <dx-{widget-name}>
-        <dxo-data-grid-ai-assistant
+        <dxo-{widget-name}-ai-assistant
             [enabled]="true"
             [customizeResponseText]="customizeResponseText"
-        ></dxo-data-grid-ai-assistant>
+        ></dxo-{widget-name}-ai-assistant>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->

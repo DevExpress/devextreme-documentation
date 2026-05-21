@@ -32,4 +32,4 @@ The following commands are available:
 - **clearSorting**
 
 #####See Also#####
-- [PredefinedCommands]({basewidgetpath}/PredefinedCommands)
+- [PredefinedCommands]({basewidgetpath}/PredefinedCommands/)

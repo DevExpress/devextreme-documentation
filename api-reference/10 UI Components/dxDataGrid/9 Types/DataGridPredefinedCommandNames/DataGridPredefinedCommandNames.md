@@ -36,4 +36,4 @@ The following commands are available:
 - **clearSummary**
 
 #####See Also#####
-- [DataGridPredefinedCommands]({basewidgetpath}/Types/DataGridPredefinedCommands)
+- [DataGridPredefinedCommands]({basewidgetpath}/Types/DataGridPredefinedCommands/)

@@ -13,7 +13,7 @@ Configure this property to pass language information to the AI service in a syst
 ##### jQuery
 
     <!-- tab: index.js -->
-    const aiIntegration = new DevExpress.aiIntegration({
+    const aiIntegration = new DevExpress.aiIntegration.AIIntegration({
         sendRequest({ prompt }) {
             // ...
         },

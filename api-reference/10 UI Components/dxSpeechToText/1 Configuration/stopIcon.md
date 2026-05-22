@@ -8,4 +8,4 @@ default: 'stopfilled'
 The SpeechToText button icon in the "listening" component state.
 
 ---
-<!-- Description goes here -->
+#include uiwidgets-ref-icon

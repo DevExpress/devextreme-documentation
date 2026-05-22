@@ -10,7 +10,7 @@ Specifies a custom template for the base button in DropDownButton.
 The button's data.
 
 ##### field(data.icon): String
-The button's icon.
+The button's [icon](/Documentation/Guide/Themes_and_Styles/Icons/).
 
 ##### field(data.text): String
 The button's text.

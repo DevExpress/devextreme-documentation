@@ -1,4 +1,4 @@
-The date navigator is a [predefined toolbar item](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/) that allows you to change the displayed date in the dxScheduler.
+The date navigator is a [predefined toolbar item](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerToolbar/items.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/') that allows you to change the displayed date in the dxScheduler.
 
 ![Scheduler Date Navigator](/images/UiWidgets/Scheduler_Date_Navigator.png)
 

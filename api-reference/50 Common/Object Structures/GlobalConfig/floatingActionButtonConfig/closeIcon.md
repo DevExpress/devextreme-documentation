@@ -8,3 +8,4 @@ default: 'close'
 Specifies the icon the FAB displays when the speed dial is opened.
 
 ---
+#include uiwidgets-ref-icon

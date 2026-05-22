@@ -8,4 +8,4 @@ default: 'micfilled'
 The SpeechToText button icon in the initial component state.
 
 ---
-<!-- Description goes here -->
+#include uiwidgets-ref-icon

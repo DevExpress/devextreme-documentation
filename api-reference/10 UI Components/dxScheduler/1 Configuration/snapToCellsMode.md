@@ -39,6 +39,10 @@ The default **snapToCellsMode** value varies by view:
 
 [/note]
 
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Timelines/"
+}
+
 #####See Also#####
 - [cellDuration](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/cellDuration.md '{currentpath}/#cellDuration')
 - **views[]**.[snapToCellsMode](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/snapToCellsMode.md '{currentpath}/views/#snapToCellsMode')

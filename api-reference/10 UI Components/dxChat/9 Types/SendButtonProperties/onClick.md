@@ -20,3 +20,7 @@ The UI component's instance.
 
 ---
 The function is called for any [action](/api-reference/10%20UI%20Components/dxChat/9%20Types/SendButtonProperties/action.md '/Documentation/ApiReference/UI_Components/dxChat/Types/SendButtonProperties/#action') value. In `'send'` mode, it is called only when the button is enabled (the input field contains content).
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Chat/MessageStreaming/"
+}

@@ -14,3 +14,7 @@ Use the **sendButtonOptions** object to customize the Send button. The following
 - [icon](/api-reference/10%20UI%20Components/dxChat/9%20Types/SendButtonProperties/icon.md '/Documentation/ApiReference/UI_Components/dxChat/Types/SendButtonProperties/#icon') — specifies the button's icon. The default value is `'arrowright'`.
 
 - [onClick](/api-reference/10%20UI%20Components/dxChat/9%20Types/SendButtonProperties/onClick.md '/Documentation/ApiReference/UI_Components/dxChat/Types/SendButtonProperties/#onClick') — a handler function called when the button is clicked.
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Chat/MessageStreaming/"
+}

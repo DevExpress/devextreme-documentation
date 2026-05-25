@@ -98,3 +98,7 @@ You can also set this option to change the input field's value programmatically.
 
     export default App;
 ---
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Chat/PromptSuggestions/"
+}

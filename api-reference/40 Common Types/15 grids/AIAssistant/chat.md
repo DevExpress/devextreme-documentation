@@ -20,3 +20,8 @@ We do not recommend that you specify the following Chat options:
 - [reloadOnChange](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#reloadOnChange)
 
 [/note]
+
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/AIAssistant/",
+    name: "DataGrid"
+}

@@ -1,0 +1,33 @@
+name: Common Prepare
+description: "Node, pnpm, .NET setup and dependencies"
+
+inputs:
+  path:
+    required: false
+    type: string
+    default: '.'
+
+runs:
+  using: "composite"
+  steps:
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version-file: ${{ inputs.path }}/.node-version
+
+    - uses: pnpm/action-setup@v4
+      with:
+        run_install: false
+        package_json_file: ${{ inputs.path }}/package.json
+
+    - name: Set up .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: |
+          6.0.x
+          8.0.x
+
+    - name: Install dependencies
+      working-directory: ${{ inputs.path }}
+      shell: bash
+      run: pnpm install --frozen-lockfile

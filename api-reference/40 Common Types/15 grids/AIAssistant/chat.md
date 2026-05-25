@@ -23,5 +23,5 @@ We do not recommend that you specify the following Chat options:
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/AIAssistant/",
-    name: "DataGrid"
+    name: "DataGrid - AI Assistant"
 }

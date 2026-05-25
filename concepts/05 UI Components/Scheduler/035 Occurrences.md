@@ -1,5 +1,9 @@
 An **Occurrence** is an [appointment](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/015%20Appointment%20Types '/Documentation/Guide/UI_Components/Scheduler/Appointments/Appointment_Types/') instance that falls within a specified time interval. A non-recurring appointment maps to one occurrence. A recurring appointment can generate multiple occurrences.
 
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/ResolveTimeConflicts/"
+}
+
 To obtain an occurrence list, call the [getOccurrences(startDate, endDate, appointments)](/api-reference/10%20UI%20Components/dxScheduler/3%20Methods/getOccurrences(startDate_endDate_appointments).md '/Documentation/ApiReference/UI_Components/dxScheduler/Methods/#getOccurrencesstartDate_endDate_appointments') method. Pass `startDate`, `endDate`, and the appointment array.
 
 You may need this method in the following scenarios:
@@ -36,10 +40,6 @@ Use the following code snippet when you need to export events that fall within t
         Start: item.startDate.toISOString(),
         End: item.endDate.toISOString()
     }));
-
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/ResolveTimeConflicts/"
-}
 
 #####See Also#####
 

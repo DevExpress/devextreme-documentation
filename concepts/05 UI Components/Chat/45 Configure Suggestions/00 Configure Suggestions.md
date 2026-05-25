@@ -1,3 +1,7 @@
 DevExtreme Chat can display suggestion buttons (a DevExtreme [ButtonGroup](/concepts/05%20UI%20Components/ButtonGroup/00%20Getting%20Started%20with%20ButtonGroup '/Documentation/Guide/UI_Components/ButtonGroup/Getting_Started_with_ButtonGroup/') component) above the message input field. To enable this feature, use the [suggestions](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/suggestions.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#suggestions') object.
 
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Chat/PromptSuggestions/"
+}
+
 To display suggestion buttons, specify the **suggestions**.**items[]** array. Use ButtonGroup [item fields](/api-reference/10%20UI%20Components/dxButtonGroup/1%20Configuration/items '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/items/') to configure the appearance and visual elements of individual buttons. You can also specify custom fields to implement additional functionality. For instance, you can store predefined messages in a custom field and use short labels (**items[]**.[text](/api-reference/_hidden/CollectionWidgetItem/text.md '/Documentation/ApiReference/UI_Components/dxButtonGroup/Configuration/items/#text') values).

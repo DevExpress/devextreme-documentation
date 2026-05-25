@@ -32,14 +32,4 @@ If license key validation fails, DevExtreme will display one of the following me
         For additional information on this error message, see: <a href="/Documentation/ApiReference/Common/Utils/Errors_and_Warnings/#W0021">W0021</a>.
         </td>
     </tr>
-    <tr>
-        <td>Pre-release version (Alpha, Beta, Community Technology Preview "CTP", or Release Candidate "RC", Early Access Preview "EAP")</td>
-        <td><code>W0022 – DevExtreme: Pre-release software. Not suitable for commercial use.</code><br><br>
-        Pre-release software may contain deficiencies, and as such should not be considered for use or integrated in any mission critical application. For additional information on this error message, see: <a href="/Documentation/ApiReference/Common/Utils/Errors_and_Warnings/#W0022">W0022</a>. </td>
-    </tr>
-    <tr>
-        <td>The DevExtreme .NET license key is used instead of a DevExtreme key</td>
-        <td><code>W0024 - DevExtreme: Use Your DevExtreme License Key - Not Your DevExpress .NET License Key</code><br><br>
-        To remove the warning, enter the correct DevExtreme (React, Angular, Vue, JS) license key. For additional information on this error message, see: <a href="/Documentation/ApiReference/Common/Utils/Errors_and_Warnings/#W0024">W0024</a>. </td>
-    </tr>
 </table>

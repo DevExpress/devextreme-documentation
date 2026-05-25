@@ -10,6 +10,7 @@ Configures the {WidgetName} AI Assistant.
 ---
 <!-- Description goes here -->
 
-#include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/AIAssistant/"
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/AIAssistant/",
+    name: "DataGrid - AI Assistant"
 }

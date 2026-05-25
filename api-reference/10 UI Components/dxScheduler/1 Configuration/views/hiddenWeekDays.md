@@ -17,3 +17,7 @@ This per-view setting overrides the component-level [hiddenWeekDays](/api-refere
 In `workWeek` and `timelineWorkWeek` views, set this property to an empty array to display all days of the week.
 
 If you specify all seven days, Scheduler logs the `W1029` warning and ignores this setting.
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/HiddenDays/"
+}

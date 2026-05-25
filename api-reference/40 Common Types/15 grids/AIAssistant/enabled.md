@@ -12,5 +12,5 @@ To activate the AI Assistant in {WidgetName}, set this property to `true` and co
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/AIAssistant/",
-    name: "DataGrid"
+    name: "DataGrid - AI Assistant"
 }

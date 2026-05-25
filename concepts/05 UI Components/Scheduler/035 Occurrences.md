@@ -37,6 +37,10 @@ Use the following code snippet when you need to export events that fall within t
         End: item.endDate.toISOString()
     }));
 
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/ResolveTimeConflicts/"
+}
+
 #####See Also#####
 
 - [Scheduler API Reference](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')

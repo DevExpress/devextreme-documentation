@@ -13,3 +13,7 @@ You can specify most [SpeechToText properties](/api-reference/10%20UI%20Componen
 
 - [stylingMode](/api-reference/10%20UI%20Components/dxSpeechToText/1%20Configuration/stylingMode.md '/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/#stylingMode')
 - [type](/api-reference/10%20UI%20Components/dxSpeechToText/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxSpeechToText/Configuration/#type')
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Chat/Overview/"
+}

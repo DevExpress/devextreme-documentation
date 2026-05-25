@@ -31,3 +31,7 @@ The handler receives a [selectedCellData](/api-reference/10%20UI%20Components/dx
 - Keyboard-based range selection (Shift+Arrow) does not trigger this event.
 
 [/note]
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/CreateFromSelection/"
+}

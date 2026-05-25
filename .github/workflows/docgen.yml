@@ -15,9 +15,10 @@ jobs:
             path: documentation
             ref: ${{ github.ref_name }}
 
-        - uses: ./.github/actions/setup-env
+        - uses: ./documentation/.github/actions/setup-env
           with:
             path: documentation
+
         - name: Checkout DevExtreme
           uses: actions/checkout@v4
           with:

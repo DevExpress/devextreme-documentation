@@ -1,10 +1,11 @@
 name: Common Prepare
-description: "Node, pnpm, .NET setup and install dependencies"
+description: "Node, pnpm, .NET setup and dependencies"
 
 inputs:
   path:
     required: false
     type: string
+    default: '.'
 
 runs:
   using: "composite"

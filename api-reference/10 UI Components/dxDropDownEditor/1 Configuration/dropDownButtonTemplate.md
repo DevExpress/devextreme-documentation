@@ -11,7 +11,7 @@ Specifies a custom template for the drop-down button.
 Information about the button.
 
 ##### field(buttonData.icon): String
-The button's [icon](/Documentation/Guide/Themes_and_Styles/Icons/).
+The button's [icon](/concepts/60%20Themes%20and%20Styles/30%20Icons/00%20Icons.md '/Documentation/Guide/Themes_and_Styles/Icons/').
 
 ##### field(buttonData.text): String
 The button's text.

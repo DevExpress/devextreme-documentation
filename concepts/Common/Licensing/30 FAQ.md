@@ -46,8 +46,6 @@ A:
 
 And all related supplemental products like Application Templates, UI Template Gallery, and Demos (if you download them or copy to CodePen or CodeSandBox).
 
-[note] For more information about licensing in ASP.NET Core/MVC, refer to the following article: [ASP.NET Core and ASP.NET MVC Projects](/concepts/Common/Licensing/25%20Validation/05%20ASP.NET%20Core%20and%20ASP.NET%20MVC%20Projects.md '/Documentation/Guide/Common/Licensing/#Validation/ASPNET_Core_and_ASPNET_MVC_Projects').
-
 <br>
 
 **Q: Why are there no license keys available in Download Manager for alpha or beta version?**

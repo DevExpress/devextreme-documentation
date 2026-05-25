@@ -14,13 +14,9 @@ This object configures options for all AI columns within the component. To confi
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/AIColumns/",
-    name: "DataGrid - AI Columns"
+    name: "DataGrid"
 }
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/AIColumns/",
-    name: "TreeList - AI Columns"
-}
-#include common-demobutton-named with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/AIAssistant/",
-    name: "DataGrid - AI Assistant"
+    name: "TreeList"
 }

@@ -87,10 +87,10 @@ This topic lists supported versions of Angular (version ranges or oldest version
 
 [important]
 
-- Although earlier versions are supported, we recommend that you use Angular 19 or newer to protect against vulnerabilities found in older versions:
-    - [@angular/core](https://security.snyk.io/package/npm/%40angular%2Fcore)
-    - [@angular/common](https://security.snyk.io/package/npm/%40angular%2Fcommon)
-- To minimize security risks, update your application to newer Angular versions frequently.
+Although earlier versions are officially supported, we recommend that you use Angular 19 or newer to protect against vulnerabilities found in older versions:
+
+- [@angular/core](https://security.snyk.io/package/npm/%40angular%2Fcore)
+- [@angular/common](https://security.snyk.io/package/npm/%40angular%2Fcommon)
 
 [/important]
 

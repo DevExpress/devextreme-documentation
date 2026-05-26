@@ -1,5 +1,5 @@
 ---
-id: GridBaseColumn.dataField
+id: dxDataGrid.Options.columns.dataField
 type: String | undefined
 default: undefined
 ---
@@ -101,6 +101,8 @@ Review the following notes about data binding:
 - Data field names cannot be equal to `this` and should not contain the following characters: `.`, `:`, `[`, and `]`.
 
 - Column caption is generated from the **dataField** value. If you want to use a custom caption, specify it in the [caption](/api-reference/_hidden/GridBaseColumn/caption.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#caption') property. Unlike **dataField**, **caption** can contain any characters.
+
+- [Grouping](/Documentation/Guide/UI_Components/DataGrid/Grouping/#API) operations use **dataField** values as unique column identifiers (instead of [name]({basewidgetpath}/Configuration/columns/#name) values).
 
 [/note]
 

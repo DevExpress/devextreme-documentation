@@ -4,4 +4,4 @@ For full instructions, including an example for GitHub Actions and Secrets, refe
 
 [License Key for DevExpress Products — CI/CD Systems](https://docs.devexpress.com/GeneralInformation/405494/trial-register/set-up-your-dev-express-license-key#option-3-cicd-systems)
 
-[note] If your organization owns multiple DevExtreme licenses, you can use any valid license key issued to you or your employees for CI/CD processes. If you prefer not to tie your build servers to a specific employee key, you can purchase a dedicated license for CI, but a dedicated key is not necessary if you have purchased a license for each developer using DevExtreme.
+[note] If your organization owns multiple DevExtreme licenses, you can use any valid license key issued to you or your employees in CI/CD processes. If you prefer not to associate build servers with a specific employee key, you can purchase a dedicated CI license. However, a dedicated key is not required if you have purchased a license for each developer who uses DevExtreme.

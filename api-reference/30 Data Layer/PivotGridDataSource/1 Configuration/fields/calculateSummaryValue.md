@@ -184,7 +184,7 @@ To add a new grand totals column, add an item to **fields** and check that the *
                 calculateSummaryValue(cell){
                     const isGrandTotalCell = !cell.parent("column");  
                     if(isGrandTotalCell){  
-                        return e.value();  
+                        return cell.value();  
                     }  
                     return null;  
                 },
@@ -208,7 +208,7 @@ To add a new grand totals column, add an item to **fields** and check that the *
                     calculateSummaryValue(cell){
                         const isGrandTotalCell = !cell.parent("column");  
                         if(isGrandTotalCell){  
-                            return e.value();  
+                            return cell.value();  
                         }  
                         return null;  
                     },
@@ -231,7 +231,7 @@ To add a new grand totals column, add an item to **fields** and check that the *
             calculateSummaryValue(cell){
                 const isGrandTotalCell = !cell.parent("column");  
                 if(isGrandTotalCell){  
-                    return e.value();  
+                    return cell.value();  
                 }  
                 return null;  
             },
@@ -254,7 +254,7 @@ To add a new grand totals column, add an item to **fields** and check that the *
             calculateSummaryValue(cell){
                 const isGrandTotalCell = !cell.parent("column");  
                 if(isGrandTotalCell){  
-                    return e.value();  
+                    return cell.value();  
                 }  
                 return null;  
             },
@@ -262,6 +262,12 @@ To add a new grand totals column, add an item to **fields** and check that the *
     });
 
 ---
+
+You can configure **calculateSummaryValue** to apply custom aggregation logic to Total and Grand Total rows/columns. For more information, refer to the following example:
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-pivotgrid-grand-total-and-total-detection"
+}
 
 #include uiwidgets-ref-functioncontext with { 
     value: "field's configuration"

@@ -1,4 +1,4 @@
-After you obtain your DevExpress license key and register it on your machine, use the `devextreme-license` CLI tool to generate a DevExtreme-compatible runtime key and register it in your application. The configuration differs depending on whether your project is modular (files added with `import`or `require`) or non-modular (files referenced with `<script>` tags):
+After you obtain your DevExpress license key and register it on your machine, use the `devextreme-license` CLI tool to generate a DevExtreme-compatible runtime key and register it in your application. The configuration differs depending on whether your project is modular (files added with `import` or `require`) or non-modular (files referenced with `<script>` tags):
 
 - [Modular Apps (Angular, React, Vue)](https://docs.devexpress.com/GeneralInformation/405494/trial-register/set-up-your-dev-express-license-key#option-1-modular-apps-angular-react-vue)
 - [Non-Modular Applications (jQuery, CDN-based)](https://docs.devexpress.com/GeneralInformation/405494/trial-register/set-up-your-dev-express-license-key#option-2-non-modular-applications-jquery-cdn-based)

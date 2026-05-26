@@ -1,3 +1,5 @@
+This topic lists oldest supported versions of jQuery for major DevExtreme releases.
+
 <table class="dx-table">
     <tr>
         <th>DevExtreme</th>
@@ -17,7 +19,7 @@
     </tr>
 </table>
 
-[note] Although earlier versions are supported, we recommend that you use jQuery v3.7.1 to protect against [vulnerabilities](https://security.snyk.io/package/npm/jquery) found in earlier versions.
+[important] Although earlier versions are supported, we recommend that you use jQuery v3.7.1 to protect against [vulnerabilities](https://security.snyk.io/package/npm/jquery) found in earlier versions.
 
 #####See Also#####
 

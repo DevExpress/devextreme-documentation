@@ -12,11 +12,9 @@
 
 - [Information Security](/concepts/Common/Licensing/20%20Information%20Security.md '/Documentation/Guide/Common/Licensing/#Information_Security')
 
-- [Validation](/concepts/Common/Licensing/25%20Validation/00%20Validation.md '/Documentation/Guide/Common/Licensing/#Validation')
+- [Validation](/concepts/Common/Licensing/25%20Validation.md '/Documentation/Guide/Common/Licensing/#Validation')
 
 - [Redistribution](/concepts/Common/Licensing/27%20Redistribution.md '/Documentation/Guide/Common/Licensing/#Redistribution')
-
-- [FAQ](/concepts/Common/Licensing/30%20FAQ.md '/Documentation/Guide/Common/Licensing/#FAQ')
 
 ---
 
@@ -30,14 +28,19 @@ If a developer leaves or stops using DevExtreme, you can revoke their license an
 
 ### v23.2+
 
-With the release of v23.2, DevExpress checks the license status to determine whether a valid DevExtreme license exists. If you do not have a valid DevExtreme license, an error message is displayed on-screen. To complete the license verification process, you must [supply a valid license key](/concepts/Common/Licensing/10%20Validate%20Your%20License%20Key/00%20Validate%20Your%20License%20Key.md '/Documentation/Guide/Common/Licensing/#Validate_Your_License_Key'). This license key is auto-generated on your behalf once you purchase a license (it is also auto-generated for all active DevExtreme subscribers).
+With the release of v23.2, DevExpress checks the license status to determine whether a valid DevExtreme license exists. If you do not have a valid DevExtreme license, an error message is displayed on-screen. To complete the license verification process, you must [supply a valid license key](/concepts/Common/Licensing/10%20Validate%20Your%20License%20Key/00%20Validate%20Your%20License%20Key.md '/Documentation/Guide/Common/Licensing/#Validate_Your_License_Key').
 
-When you purchase a DevExtreme, ASP.NET and Blazor (includes DevExtreme), DXperience, or Universal Subscription, your auto-generated DevExtreme license key will be displayed within the DevExpress [Download Manager](https://www.devexpress.com/ClientCenter/DownloadManager/).
+The process involves two steps:
+
+1. Obtain your DevExpress license key from the [Download Manager](https://www.devexpress.com/ClientCenter/DownloadManager/) and register it on your machine.
+2. Use the `devextreme-license` CLI tool to generate a DevExtreme-compatible runtime key and register it in your application.
 
 [note]
 
-Regardless of the distribution channel you use - NuGet, npm, yarn, CDN, zip - you will still need to use the license key displayed within the DevExpress Download Manager.
+Regardless of the distribution channel you use — NuGet, npm, yarn, CDN — you must complete both steps above.
 
 [/note]
 
-Should you require purchase assistance or more information on our new license verification process, please contact a member of the <a href="mailto:clientservices@devexpress.com">DevExpress Client Services Team</a>.
+For complete setup instructions, refer to: [License Key for DevExpress Products](https://docs.devexpress.com/GeneralInformation/405494/trial-register/set-up-your-dev-express-license-key#manual-registration-additional-step-for-jsts-developers-devextreme)
+
+Should you require purchase assistance or more information on our license verification process, please contact a member of the <a href="mailto:clientservices@devexpress.com">DevExpress Client Services Team</a>.

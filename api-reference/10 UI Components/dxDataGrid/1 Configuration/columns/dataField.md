@@ -1,11 +1,11 @@
 ---
-id: GridBaseColumn.dataField
+id: dxDataGrid.Options.columns.dataField
 type: String | undefined
 default: undefined
 ---
 ---
 ##### shortDescription
-Binds the column to a field of the [dataSource](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource').
+Binds the column to a [dataSource](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource') field.
 
 ---
 
@@ -32,12 +32,12 @@ The following code snippet configures six columns:
     
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxi-column dataField="CustomerID"></dxi-column>
-        <dxi-column dataField="EmployeeID" [width]="200"></dxi-column>
-        <dxi-column dataField="OrderDate"></dxi-column>
-        <dxi-column dataField="Freight" format="fixedPoint"></dxi-column>
-        <dxi-column dataField="ShipName"></dxi-column>
-        <dxi-column dataField="ShipCity"></dxi-column>
+        <dxi-{widget-name}-column dataField="CustomerID"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="EmployeeID" [width]="200"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="OrderDate"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="Freight" format="fixedPoint"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="ShipName"></dxi-{widget-name}-column>
+        <dxi-{widget-name}-column dataField="ShipCity"></dxi-{widget-name}-column>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->
@@ -98,9 +98,11 @@ Review the following notes about data binding:
 
 - If you create an unbound column (use the [calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue') function), specify the **columns[]**.[name](/api-reference/_hidden/GridBaseColumn/name.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#name') property instead of **dataField**.
 
-- Data field names cannot be equal to `this` and should not contain the following characters: `.`, `:`, `[`, and `]`.
+- Data field names cannot be `this` or contain the following characters: `.`, `:`, `[`, and `]`.
 
-- Column caption is generated from the **dataField** value. If you want to use a custom caption, specify it in the [caption](/api-reference/_hidden/GridBaseColumn/caption.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#caption') property. Unlike **dataField**, **caption** can contain any characters.
+- The column caption is generated from the **dataField** value. If you want to use a custom caption, specify it in the [caption](/api-reference/_hidden/GridBaseColumn/caption.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#caption') property. Unlike **dataField**, **caption** can contain any characters.
+
+- [Grouping](/Documentation/Guide/UI_Components/DataGrid/Grouping/#API) operations use **dataField** values as unique column identifiers (instead of [name]({basewidgetpath}/Configuration/columns/#name) values).
 
 [/note]
 

@@ -7,7 +7,7 @@ type: function(status, commandNames)
 Customizes AI Assistant response titles.
 
 ##### param(status): Enums.ResponseStatus
-The response status. If a response describes multiple commands, all must succeed for this parameter's value to equal *"success"*.
+The response status. If a response describes multiple commands, this parameter equals *"success"* only if all commands succeed.
 
 ##### param(commandNames): Array<String>
 An array of commands ([DataGridPredefinedCommandNames]({basewidgetpath}/Types/DataGridPredefinedCommandNames/)).
@@ -16,7 +16,7 @@ An array of commands ([DataGridPredefinedCommandNames]({basewidgetpath}/Types/Da
 The custom response title.
 
 ---
-Use this function to customize titles of AI Assistant response messages. The following code snippet adds response statuses to titles:
+Use this function to customize the titles of AI Assistant response messages. The following code snippet adds response statuses to titles:
 
 ---
 

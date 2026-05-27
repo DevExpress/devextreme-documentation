@@ -4,18 +4,18 @@ type: function(command)
 ---
 ---
 ##### shortDescription
-Customizes AI Assistant response texts for each requested command.
+Customizes AI Assistant response messages for each command/request.
 
 ##### param(command): DataGridCommandInfo
 Information about the command.
 
 ##### return: ResponseStatusTexts
-Custom texts for **success** and **failure** response statuses.
+Custom messages for **success** and **failure** responses.
 
 ---
-Use this function to customize response message texts for AI Assistant commands. **customizeResponseText** is called for each requested command. The AI Assistant chat displays these texts below the response title. When a response includes multiple commands, the chat displays each command's text on separate lines.
+**customizeResponseText** is called for each command/request. Use this function to customize response messages for AI Assistant commands. The chat displays these message strings below the response title. When a response includes multiple commands, the chat displays individual messages on separate lines.
 
-When a command succeeds, the AI Assistant chat displays the response text in green and prefixes the text with a checkmark button emoji (✅). When a command fails, the AI Assistant chat displays the text in red and prefixes with a cross mark emoji (❌) instead.
+When a command succeeds, the AI Assistant chat displays the response in green and prefixes the text with a checkmark button emoji (✅). When a command fails, the AI Assistant chat displays the response in red and prefixes the text with a cross mark emoji (❌).
 
 The **command** parameter contains the following fields:
 
@@ -27,7 +27,7 @@ Configure **customizeResponseText** to return an object with the following field
 - **success**: Text to display when the command succeeds.
 - **failure**: Text to display when the command fails.
 
-Omit a field in the return object to use default texts.
+If you don't specify any of these fields, the AI Assistant chat displays the default message. 
 
 You can use this function to translate response texts. The following code snippet uses the [locale()](/Documentation/ApiReference/Common/Utils/localization/#locale) method to specify texts for multiple locales:
 

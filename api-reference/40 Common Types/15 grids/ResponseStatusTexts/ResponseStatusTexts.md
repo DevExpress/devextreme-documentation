@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-Response texts for each status.
+Response messages for each status.
 
 ---
 This object can contain two string values: `success` and `failure`.

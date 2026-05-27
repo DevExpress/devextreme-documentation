@@ -111,7 +111,7 @@ Use this function to customize the titles of AI Assistant response messages. The
 
 ---
 
-You can use this function to translate response titles. The following code snippet uses the [locale()](/Documentation/ApiReference/Common/Utils/localization/#locale) method to specify texts for multiple locales:
+You can use this function to translate response titles. The following code snippet uses the [locale()](/Documentation/ApiReference/Common/Utils/localization/#locale) method to specify titles for multiple locales:
 
 ---
 

@@ -7,16 +7,16 @@ type: function(status, commandNames)
 Customizes AI Assistant response titles.
 
 ##### param(status): Enums.ResponseStatus
-The response status. If a response includes multiple requested commands, all must succeed for this parameter's value to equal *"success"*.
+The response status. If a response describes multiple commands, all must succeed for this parameter's value to equal *"success"*.
 
 ##### param(commandNames): Array<String>
-An array of requested commands ([DataGridPredefinedCommandNames]({basewidgetpath}/Types/DataGridPredefinedCommandNames/)).
+An array of commands ([DataGridPredefinedCommandNames]({basewidgetpath}/Types/DataGridPredefinedCommandNames/)).
 
 ##### return: String
 The custom response title.
 
 ---
-Use this function to customize the titles of AI Assistant response messages. The following code snippet adds response statuses to titles:
+Use this function to customize titles of AI Assistant response messages. The following code snippet adds response statuses to titles:
 
 ---
 
@@ -111,7 +111,7 @@ Use this function to customize the titles of AI Assistant response messages. The
 
 ---
 
-You can use this function to translate response titles. The following code snippet uses the [locale()](/Documentation/ApiReference/Common/Utils/localization/#locale) method to specify texts for multiple locales:
+You can use this function to translate response titles. The following code snippet uses the [locale()](/Documentation/ApiReference/Common/Utils/localization/#locale) method to specify titles for multiple locales:
 
 ---
 

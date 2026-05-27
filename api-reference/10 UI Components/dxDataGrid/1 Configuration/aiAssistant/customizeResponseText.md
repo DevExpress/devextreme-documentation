@@ -4,7 +4,7 @@ type: function(command)
 ---
 ---
 ##### shortDescription
-Customizes AI Assistant response messages for each command/request.
+Customizes AI Assistant response messages for each command.
 
 ##### param(command): DataGridCommandInfo
 Information about the command.
@@ -13,7 +13,7 @@ Information about the command.
 Custom messages for **success** and **failure** responses.
 
 ---
-**customizeResponseText** is called for each command/request. Use this function to customize response messages for AI Assistant commands. The chat displays these message strings below the response title. When a response includes multiple commands, the chat displays individual messages on separate lines.
+**customizeResponseText** is called for each command. Use this function to customize response messages for AI Assistant commands. The chat displays these message strings below the response title. When a response includes multiple commands, the chat displays individual messages on separate lines.
 
 When a command succeeds, the AI Assistant chat displays the response in green and prefixes the text with a checkmark button emoji (✅). When a command fails, the AI Assistant chat displays the response in red and prefixes the text with a cross mark emoji (❌).
 

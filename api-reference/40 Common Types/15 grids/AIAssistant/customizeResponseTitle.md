@@ -7,16 +7,16 @@ type: function(status, commandNames)
 Customizes AI Assistant response titles.
 
 ##### param(status): Enums.ResponseStatus
-The response status. If a response includes multiple requested commands, all must succeed for this parameter's value to equal *"success"*.
+The response status. If a response describes multiple commands, all must succeed for this parameter's value to equal *"success"*.
 
 ##### param(commandNames): Array<String>
-An array of requested commands ([PredefinedCommandNames]({basewidgetpath}/PredefinedCommandNames/)).
+An array of commands ([PredefinedCommandNames]({basewidgetpath}/PredefinedCommandNames/)).
 
 ##### return: String
 The custom response title.
 
 ---
-Use this function to customize the titles of AI Assistant response messages. The following code snippet adds response statuses to titles:
+Use this function to customize titles of AI Assistant response messages. The following code snippet adds response statuses to titles:
 
 ---
 

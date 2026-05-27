@@ -13,6 +13,7 @@ Use this option to get the text that users type or [dictate](/api-reference/10%2
 You can also set this option to change the input field's value programmatically.
 
 ---
+
 ##### jQuery
 
     <!-- tab: index.js -->
@@ -97,6 +98,7 @@ You can also set this option to change the input field's value programmatically.
     }
 
     export default App;
+
 ---
 
 #include btn-open-demo with {

@@ -13,7 +13,7 @@ Information about the command.
 Custom messages for **success** and **failure** responses.
 
 ---
-**customizeResponseText** is called for each command. Use this function to customize response messages for AI Assistant commands. The chat displays these message strings below the response title. When a response includes multiple commands, the chat displays individual messages on separate lines.
+**customizeResponseText** is called for each command. Use this function to customize response messages for AI Assistant commands. The chat displays these messages below the response title. If a response includes multiple commands, the chat displays each message on a separate line.
 
 When a command succeeds, the AI Assistant chat displays the response in green and prefixes the text with a checkmark button emoji (✅). When a command fails, the AI Assistant chat displays the response in red and prefixes the text with a cross mark emoji (❌).
 
@@ -29,7 +29,7 @@ Configure **customizeResponseText** to return an object with the following field
 
 If you do not specify any of these fields, the AI Assistant chat displays the default message.
 
-You can use this function to translate response texts. The following code snippet uses the [locale()](/Documentation/ApiReference/Common/Utils/localization/#locale) method to specify texts for multiple locales:
+You can use this function to localize response text. The following code snippet uses the [locale()](/Documentation/ApiReference/Common/Utils/localization/#locale) method to specify text for multiple locales:
 
 ---
 

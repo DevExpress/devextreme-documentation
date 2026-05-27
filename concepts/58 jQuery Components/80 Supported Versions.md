@@ -1,4 +1,4 @@
-This topic lists oldest supported versions of jQuery for major DevExtreme releases.
+This topic lists the oldest supported versions of jQuery for major DevExtreme release cycles.
 
 <table class="dx-table">
     <tr>

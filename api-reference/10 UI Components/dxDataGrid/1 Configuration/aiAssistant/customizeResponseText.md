@@ -27,7 +27,7 @@ Configure **customizeResponseText** to return an object with the following field
 - **success**: Text to display when the command succeeds.
 - **failure**: Text to display when the command fails.
 
-If you don't specify any of these fields, the AI Assistant chat displays the default message. 
+If you do not specify any of these fields, the AI Assistant chat displays the default message. 
 
 You can use this function to translate response texts. The following code snippet uses the [locale()](/Documentation/ApiReference/Common/Utils/localization/#locale) method to specify texts for multiple locales:
 

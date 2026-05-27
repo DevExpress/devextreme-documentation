@@ -1,4 +1,4 @@
-This topic lists oldest supported versions of Vue for major DevExtreme releases.
+This topic lists the oldest supported versions of Vue for major DevExtreme release cycles.
 
 <div>
     <table class="dx-table" style="display: inline-block; vertical-align: top;">
@@ -75,7 +75,7 @@ This topic lists oldest supported versions of Vue for major DevExtreme releases.
     </table>
 </div>
 
-[important] To minimize security risks, update your application to the latest supported version of Vue.
+[important] To minimize security risks, update your application to the most recent supported version of Vue.
 
 #####See Also#####
 

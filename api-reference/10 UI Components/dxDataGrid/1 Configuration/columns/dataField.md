@@ -96,13 +96,13 @@ The following code snippet configures six columns:
 
 Review the following notes about data binding:
 
-- If you create an unbound column (use the [calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue') function), specify the **columns[]**.[name](/api-reference/_hidden/GridBaseColumn/name.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#name') property instead of **dataField**.
+- If you create an unbound column (use the [calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue') function), specify the **columns[]**.[name](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns/name.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#name') property instead of **dataField**.
 
 - Data field names cannot be `this` or contain the following characters: `.`, `:`, `[`, and `]`.
 
 - The column caption is generated from the **dataField** value. If you want to use a custom caption, specify it in the [caption](/api-reference/_hidden/GridBaseColumn/caption.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#caption') property. Unlike **dataField**, **caption** can contain any characters.
 
-- [Grouping](/Documentation/Guide/UI_Components/DataGrid/Grouping/#API) operations use **dataField** values as unique column identifiers (instead of [name]({basewidgetpath}/Configuration/columns/#name) values).
+- [Grouping](/concepts/05%20UI%20Components/DataGrid/45%20Grouping/20%20API '/Documentation/Guide/UI_Components/DataGrid/Grouping/#API') operations use **dataField** values as unique column identifiers (instead of [name](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns/name.md '{basewidgetpath}/Configuration/columns/#name') values).
 
 [/note]
 

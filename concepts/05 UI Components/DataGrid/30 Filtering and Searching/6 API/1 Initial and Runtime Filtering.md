@@ -124,7 +124,7 @@ The initial and runtime filtering API depends on the UI element and is described
 
 ---
 
-You can create a filter that combines all the applied filters by calling the [getCombinedFilter()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/getCombinedFilter().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getCombinedFilter') method. It returns a filter with [getters](/concepts/70%20Data%20Binding/5%20Data%20Layer/9%20Getters%20And%20Setters '/Documentation/Guide/Data_Binding/Data_Layer/#Getters_And_Setters') by default. Call it by passing **true** as the argument to get the combined filter with [data fields](/api-reference/_hidden/GridBaseColumn/dataField.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField').
+You can create a filter that combines all the applied filters by calling the [getCombinedFilter()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/getCombinedFilter().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#getCombinedFilter') method. It returns a filter with [getters](/concepts/70%20Data%20Binding/5%20Data%20Layer/9%20Getters%20And%20Setters '/Documentation/Guide/Data_Binding/Data_Layer/#Getters_And_Setters') by default. Call it by passing **true** as the argument to get the combined filter with [data fields](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns/dataField.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField').
 
 ---
 ##### jQuery

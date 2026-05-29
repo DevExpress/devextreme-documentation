@@ -13,7 +13,7 @@ The DevExtreme {WidgetName} ships with the following AI features:
 - AI Columns
 - AI Assistant
 
-To activate AI functionality, configure **aiIntegration** and specify {WidgetName} properties as follows:
+To activate these AI features, configure **aiIntegration** and specify {WidgetName} properties as follows:
 
 - Assign *"ai"* to a column's [type](/api-reference/_hidden/dxDataGridColumn/type.md '{basewidgetpath}/Configuration/columns/#type') property to implement an AI Column.
 - Set **aiAssistant**.[enabled]({basewidgetpath}/Configuration/aiAssistant/#enabled) to `true` to activate the AI Assistant.

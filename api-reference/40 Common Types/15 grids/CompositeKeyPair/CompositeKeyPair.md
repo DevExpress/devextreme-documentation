@@ -6,7 +6,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-A field/value pair used in composite DataGrid/TreeList keys.
+A field/value pair used in composite DataGrid or TreeList keys.
 
 ---
 This object includes the following fields:

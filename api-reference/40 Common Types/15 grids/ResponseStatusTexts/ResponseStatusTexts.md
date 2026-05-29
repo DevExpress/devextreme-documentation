@@ -10,4 +10,4 @@ generateTypeLink:
 Response messages for each status.
 
 ---
-This object can contain two string values: `success` and `failure`.
+This object can contain both `success` and `failure`.

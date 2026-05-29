@@ -6,6 +6,7 @@ DevExtreme major updates (released twice per year) include new components, featu
 
 ## Previous Major Versions
 
+- [v25.2 Release Notes](https://www.devexpress.com/subscriptions/new-2025-2.xml#devextreme)
 - [v25.1 Release Notes](https://www.devexpress.com/subscriptions/new-2025-1.xml#devextreme)
 - [v24.2 Release Notes](https://www.devexpress.com/subscriptions/new-2024-2.xml#devextreme)
 - [v24.1 Release Notes](https://www.devexpress.com/subscriptions/new-2024-1.xml#devextreme)

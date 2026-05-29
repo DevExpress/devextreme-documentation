@@ -1,12 +1,12 @@
 ---
-id: AIAssistant.customizeResponseText
+id: dxDataGrid.Options.aiAssistant.customizeResponseText
 type: function(command)
 ---
 ---
 ##### shortDescription
 Customizes AI Assistant response messages for each command.
 
-##### param(command): CommandInfo
+##### param(command): DataGridCommandInfo
 Information about the command.
 
 ##### return: ResponseStatusTexts
@@ -19,15 +19,15 @@ When a command succeeds, the AI Assistant chat displays the response in green an
 
 The **command** parameter contains the following fields:
 
-- **name**: The command's name ([PredefinedCommandNames](/Documentation/ApiReference/Common_Types/grids/PredefinedCommandNames/)).
-- **args**: Command arguments. Refer to [PredefinedCommands](/Documentation/ApiReference/Common_Types/grids/PredefinedCommands/) for information about the arguments of each available command.
+- **name**: The command's name ([DataGridPredefinedCommandNames]({basewidgetpath}/Types/DataGridPredefinedCommandNames/)).
+- **args**: Command arguments. Refer to [DataGridPredefinedCommands]({basewidgetpath}/Types/DataGridPredefinedCommands/) for information about the arguments of each available command.
 
 Configure **customizeResponseText** to return an object with the following fields:
 
 - **success**: Text to display when the command succeeds.
 - **failure**: Text to display when the command fails.
 
-If you do not specify any of these fields, the AI Assistant chat displays the default message.
+If you do not specify any of these fields, the AI Assistant chat displays the default message. 
 
 You can use this function to localize response text. The following code snippet uses the [locale()](/Documentation/ApiReference/Common/Utils/localization/#locale) method to specify text for multiple locales:
 

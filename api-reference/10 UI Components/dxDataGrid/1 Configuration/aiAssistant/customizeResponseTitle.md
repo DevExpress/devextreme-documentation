@@ -1,5 +1,5 @@
 ---
-id: AIAssistant.customizeResponseTitle
+id: dxDataGrid.Options.aiAssistant.customizeResponseTitle
 type: function(status, commandNames)
 ---
 ---
@@ -10,7 +10,7 @@ Customizes AI Assistant response titles.
 The response status. If a response describes multiple commands, this parameter equals *"success"* only if all commands succeed.
 
 ##### param(commandNames): Array<String>
-An array of commands ([PredefinedCommandNames]({basewidgetpath}/PredefinedCommandNames/)).
+An array of commands ([DataGridPredefinedCommandNames]({basewidgetpath}/Types/DataGridPredefinedCommandNames/)).
 
 ##### return: String
 The custom response title.

@@ -4,7 +4,7 @@ type: Object
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Additional information included in the AI Assistant request.
 
 ---
 <!-- Description goes here -->

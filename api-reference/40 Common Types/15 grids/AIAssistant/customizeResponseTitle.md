@@ -10,7 +10,7 @@ Customizes AI Assistant response titles.
 The response status. If a response describes multiple commands, this parameter equals *"success"* only if all commands succeed.
 
 ##### param(commandNames): Array<String>
-An array of commands ([PredefinedCommandNames]({basewidgetpath}/PredefinedCommandNames/)).
+An array of commands ([PredefinedCommandNames](/api-reference/40%20Common%20Types/15%20grids/PredefinedCommandNames '{basewidgetpath}/PredefinedCommandNames/')).
 
 ##### return: String
 The custom response title.
@@ -111,7 +111,7 @@ Use this function to customize the titles of AI Assistant response messages. The
 
 ---
 
-You can use this function to translate response titles. The following code snippet uses the [locale()](/Documentation/ApiReference/Common/Utils/localization/#locale) method to specify titles for multiple locales:
+You can use this function to translate response titles. The following code snippet uses the [locale()](/api-reference/50%20Common/utils/localization/locale().md '/Documentation/ApiReference/Common/Utils/localization/#locale') method to specify titles for multiple locales:
 
 ---
 

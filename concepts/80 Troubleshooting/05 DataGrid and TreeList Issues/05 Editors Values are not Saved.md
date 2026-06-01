@@ -2,9 +2,9 @@ If an editor does not pass its value to the DataGrid or TreeList component and i
 
 ### A Column's dataField is Empty
 
-Built-in column editors automatically write their values to the data row field specified in the column.[dataField](/api-reference/_hidden/GridBaseColumn/dataField.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField') property. Specify this property if you want to write an editor's value to a field.
+Built-in column editors automatically write their values to the data row field specified in the column.[dataField](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns/dataField.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField') property. Specify this property if you want to write an editor's value to a field.
 
-If you want to implement an unbound column, specify column.[name](/api-reference/_hidden/GridBaseColumn/name.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#name') instead of column.[dataField](/api-reference/_hidden/GridBaseColumn/dataField.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField') and define the column.[setCellValue](/api-reference/_hidden/GridBaseColumn/setCellValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#setCellValue') callback to write values in a custom way.
+If you want to implement an unbound column, specify column.[name](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns/name.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#name') instead of column.[dataField](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns/dataField.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField') and define the column.[setCellValue](/api-reference/_hidden/GridBaseColumn/setCellValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#setCellValue') callback to write values in a custom way.
 
 ---
 ##### jQuery

@@ -19,8 +19,8 @@ When a command succeeds, the AI Assistant chat displays the response in green an
 
 The **command** parameter contains the following fields:
 
-- **name**: The command's name ([PredefinedCommandNames](/Documentation/ApiReference/Common_Types/grids/PredefinedCommandNames/)).
-- **args**: Command arguments. Refer to [PredefinedCommands](/Documentation/ApiReference/Common_Types/grids/PredefinedCommands/) for information about the arguments of each available command.
+- **name**: The command's name ([PredefinedCommandNames](/api-reference/40%20Common%20Types/15%20grids/PredefinedCommandNames '/Documentation/ApiReference/Common_Types/grids/PredefinedCommandNames/')).
+- **args**: Command arguments. Refer to [PredefinedCommands](/api-reference/40%20Common%20Types/15%20grids/PredefinedCommands '/Documentation/ApiReference/Common_Types/grids/PredefinedCommands/') for information about the arguments of each available command.
 
 Configure **customizeResponseText** to return an object with the following fields:
 
@@ -29,7 +29,7 @@ Configure **customizeResponseText** to return an object with the following field
 
 If you do not specify any of these fields, the AI Assistant chat displays the default message.
 
-You can use this function to localize response text. The following code snippet uses the [locale()](/Documentation/ApiReference/Common/Utils/localization/#locale) method to specify text for multiple locales:
+You can use this function to localize response text. The following code snippet uses the [locale()](/api-reference/50%20Common/utils/localization/locale().md '/Documentation/ApiReference/Common/Utils/localization/#locale') method to specify text for multiple locales:
 
 ---
 

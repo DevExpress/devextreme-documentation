@@ -3,6 +3,7 @@ id: CompositeKeyPair
 module: common/grids
 export: CompositeKeyPair
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

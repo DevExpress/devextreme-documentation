@@ -4,6 +4,7 @@ module: ui/data_grid
 export: SummaryCommandGroupItem
 acceptValues: 'showInColumn' | 'displayFormat' | 'showInGroupFooter' | 'alignByColumn'
 type: Pick | Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription
@@ -17,7 +18,7 @@ This object includes the following fields:
 - **displayFormat**: The format of the summary item's text.
 - **showInColumn**: The column that displays the summary item.
 - **showInGroupFooter**: Specifies whether the summary item is displayed in the group footer.
-- **summaryType**: The summary calculation type ([SummaryType](/Documentation/ApiReference/Common_Types/grids/#SummaryType)).
+- **summaryType**: The summary calculation type ([SummaryType](/api-reference/40%20Common%20Types/15%20grids/SummaryType.md '/Documentation/ApiReference/Common_Types/grids/#SummaryType')).
 
 #####See Also#####
-- [SummaryGroupItem]({basewidgetpath}/Types/SummaryGroupItem/)
+- [SummaryGroupItem](/api-reference/10%20UI%20Components/dxDataGrid/9%20Types/SummaryGroupItem '{basewidgetpath}/Types/SummaryGroupItem/')

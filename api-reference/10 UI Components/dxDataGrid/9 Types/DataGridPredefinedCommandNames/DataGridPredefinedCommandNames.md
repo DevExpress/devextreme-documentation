@@ -3,6 +3,7 @@ id: DataGridPredefinedCommandNames
 module: ui/data_grid
 export: DataGridPredefinedCommandNames
 type: String
+generateTypeLink: 
 ---
 ---
 ##### shortDescription
@@ -36,4 +37,4 @@ The following commands are available:
 - **clearSummary**
 
 #####See Also#####
-- [DataGridPredefinedCommands]({basewidgetpath}/Types/DataGridPredefinedCommands/)
+- [DataGridPredefinedCommands](/api-reference/10%20UI%20Components/dxDataGrid/9%20Types/DataGridPredefinedCommands '{basewidgetpath}/Types/DataGridPredefinedCommands/')

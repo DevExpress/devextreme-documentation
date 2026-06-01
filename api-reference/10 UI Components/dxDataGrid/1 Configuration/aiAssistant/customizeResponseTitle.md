@@ -10,7 +10,7 @@ Customizes AI Assistant response titles.
 The response status. If a response describes multiple commands, this parameter equals *"success"* only if all commands succeed.
 
 ##### param(commandNames): Array<String>
-An array of commands ([DataGridPredefinedCommandNames]({basewidgetpath}/Types/DataGridPredefinedCommandNames/)).
+An array of commands ([DataGridPredefinedCommandNames](/api-reference/10%20UI%20Components/dxDataGrid/9%20Types/DataGridPredefinedCommandNames '{basewidgetpath}/Types/DataGridPredefinedCommandNames/')).
 
 ##### return: String
 The custom response title.
@@ -111,7 +111,7 @@ Use this function to customize the titles of AI Assistant response messages. The
 
 ---
 
-You can use this function to translate response titles. The following code snippet uses the [locale()](/Documentation/ApiReference/Common/Utils/localization/#locale) method to specify titles for multiple locales:
+You can use this function to translate response titles. The following code snippet uses the [locale()](/api-reference/50%20Common/utils/localization/locale().md '/Documentation/ApiReference/Common/Utils/localization/#locale') method to specify titles for multiple locales:
 
 ---
 

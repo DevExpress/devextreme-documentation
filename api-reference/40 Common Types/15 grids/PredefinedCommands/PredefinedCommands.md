@@ -3,6 +3,7 @@ id: PredefinedCommands
 module: common/grids
 export: PredefinedCommands
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

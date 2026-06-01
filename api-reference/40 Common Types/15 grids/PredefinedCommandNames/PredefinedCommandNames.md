@@ -3,6 +3,7 @@ id: PredefinedCommandNames
 module: common/grids
 export: PredefinedCommandNames
 type: String
+generateTypeLink: 
 ---
 ---
 ##### shortDescription
@@ -32,4 +33,4 @@ The following commands are available:
 - **clearSorting**
 
 #####See Also#####
-- [PredefinedCommands]({basewidgetpath}/PredefinedCommands/)
+- [PredefinedCommands](/api-reference/40%20Common%20Types/15%20grids/PredefinedCommands '{basewidgetpath}/PredefinedCommands/')

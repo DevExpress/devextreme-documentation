@@ -4,6 +4,7 @@ module: ui/data_grid
 export: DataGridPredefinedCommands
 type: PredefinedCommands | Object
 inherits: PredefinedCommands
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

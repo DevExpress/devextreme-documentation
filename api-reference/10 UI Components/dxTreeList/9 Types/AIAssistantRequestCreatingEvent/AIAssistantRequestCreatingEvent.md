@@ -13,3 +13,7 @@ The argument type in the [aIAssistantRequestCreating]({basewidgetpath}/Events/#a
 
 ---
 <!-- Description goes here -->
+
+#include common-ctp-note-wo-devextreme
+
+[tags] ctp

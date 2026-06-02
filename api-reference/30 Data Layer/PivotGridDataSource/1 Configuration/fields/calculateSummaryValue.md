@@ -263,7 +263,7 @@ To add a new grand totals column, add an item to **fields** and check that the *
 
 ---
 
-You can configure **calculateSummaryValue** to apply custom aggregation logic to Total and Grand Total rows/columns. For more information, refer to the following example:
+You can configure **calculateSummaryValue** to apply custom aggregation logic to total and grand total rows and columns. For more information, see the following example:
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-pivotgrid-grand-total-and-total-detection"

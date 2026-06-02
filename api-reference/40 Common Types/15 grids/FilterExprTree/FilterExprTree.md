@@ -13,4 +13,4 @@ A complex filter expression in a flat data structure.
 This object includes the following fields:
 
 - **rootId**: The ID of the root [FilterExprNode]({basewidgetpath}/FilterExprNode/). This node is evaluated first. **rootId** must match the **id** value of an object in the **nodes** array.
-- **nodes**: An array of [FilterExprNode]({basewidgetpath}/FilterExprNode/) objects. Each node must have a unique `id`.
+- **nodes**: An array of [FilterExprNode]({basewidgetpath}/FilterExprNode/) objects. Each node must have a unique **id**.

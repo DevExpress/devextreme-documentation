@@ -2,7 +2,7 @@
 
 The {WidgetName} AI Assistant allows you to interact with the component using natural language.
 
-You can use/configure the following DataGrid features via AI Assistant Chat prompts:
+You can use and configure the following DataGrid features via AI Assistant Chat prompts:
 
 - [Filtering and Searching](/Documentation/Guide/UI_Components/DataGrid/Filtering_and_Searching/)
 - [Sorting](/Documentation/Guide/UI_Components/DataGrid/Sorting/)

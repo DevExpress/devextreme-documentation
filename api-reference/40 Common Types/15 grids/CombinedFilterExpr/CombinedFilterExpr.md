@@ -1,7 +1,7 @@
 ---
-id: CombinedFilterExprObj
+id: CombinedFilterExpr
 module: common/grids
-export: CombinedFilterExprObj
+export: CombinedFilterExpr
 type: Object
 ---
 ---
@@ -12,6 +12,6 @@ A combined DataGrid/TreeList filter expression.
 This object includes the following fields:
 
 - **type**: The expression type. Set to *"combined"*.
-- **left**: The first filter expression.
+- **leftId**: The ID of the first filter expression's node ([FilterExprNode]({basewidgetpath}/FilterExprNode/)).
 - **combiner**: The combination operation. Accepted values: *"and"*, *"or"*.
-- **right**: The second filter expression.
+- **rightId**: The ID of the second filter expression's node ([FilterExprNode]({basewidgetpath}/FilterExprNode/)).

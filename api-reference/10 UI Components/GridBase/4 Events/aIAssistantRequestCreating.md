@@ -7,12 +7,7 @@ type: eventType
 Raised before an AI Assistant request is created.
 
 ---
-
-#include common-ctp-note-wo-devextreme
-
 Main article: [onAIAssistantRequestCreating](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/onAIAssistantRequestCreating.md '{basewidgetpath}/Configuration/#onAIAssistantRequestCreating')
 
 #####See Also#####
 #include common-link-handleevents
-
-[tags] ctp

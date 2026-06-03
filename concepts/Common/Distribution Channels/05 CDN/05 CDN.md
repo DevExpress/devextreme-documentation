@@ -1,6 +1,6 @@
 DevExtreme bundles are available on multiple hosting platforms.
 
-[note] We recommend that you use DevExtreme sources hosted on jsDelivr to minimize downtime for your application.
+[note] We recommend that you use DevExtreme sources hosted on jsDelivr to minimize application downtime.
 
 ## jsDelivr
 
@@ -75,7 +75,7 @@ DevExtreme bundles are available on multiple hosting platforms.
 
 ## CDNJS
 
-[important] Due to reliability concerns, we plan to discontinue hosting new versions of DevExtreme bundles on CDNJS. We recommend that you use jsDelivr in new projects and migrate your existing applications to jsDelivr sources to minimize downtime.
+[important] Due to reported reliability-related issues, we will discontinue hosting new versions of DevExtreme bundles on CDNJS. We recommend that you use jsDelivr for new projects and migrate your existing applications to jsDelivr sources to minimize future downtime.
 
 ### Scripts:
 

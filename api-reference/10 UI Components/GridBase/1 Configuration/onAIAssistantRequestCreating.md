@@ -32,9 +32,6 @@ The JSON schema of the AI Assistant response.
 Additional information included in the AI Assistant request.
 
 ---
-
-#include common-ctp-note-wo-devextreme
-
 Use this handler to modify the AI Assistant request.
 
 The following code snippet modifies the **e.context** parameter to add context to the request:
@@ -114,5 +111,3 @@ The following code snippet modifies the **e.context** parameter to add context t
 	}
 
 ---
-
-[tags] ctp

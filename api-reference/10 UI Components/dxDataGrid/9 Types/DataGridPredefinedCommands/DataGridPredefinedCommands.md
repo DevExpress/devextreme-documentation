@@ -31,7 +31,7 @@ The following code snippet lists available commands with their arguments:
         width: number | string;
     };
     filterValue: {
-        expression: FilterExprObj | null;
+        expression: FilterExprTree | null;
     };
     clearFilter: {};
     focusRowByKey: {

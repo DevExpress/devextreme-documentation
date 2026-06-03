@@ -1,7 +1,7 @@
 ---
-id: BasicFilterExprObj
+id: BasicFilterExpr
 module: common/grids
-export: BasicFilterExprObj
+export: BasicFilterExpr
 type: Object
 ---
 ---

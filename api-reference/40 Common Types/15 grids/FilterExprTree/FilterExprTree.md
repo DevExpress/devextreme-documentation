@@ -8,7 +8,7 @@ export: FilterExprTree
 A complex filter expression in a flat data structure.
 
 ---
-**FilterExprTree** stores a filter expression tree in a flat list instead of a hierarchical structure. A flat data structure ensures broader AI service compatibility for the `filterValue` AI Assistant command.
+**FilterExprTree** stores a filter expression tree as a flat list rather than a hierarchical structure. This flat structure improves compatibility with AI services for the AI Assistant's `filterValue` command.
 
 This object includes the following fields:
 

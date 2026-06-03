@@ -1,5 +1,3 @@
-#include common-ctp-note-wo-devextreme
-
 The {WidgetName} AI Assistant allows you to interact with the component using natural language.
 
 You can use and configure the following TreeList features via AI Assistant Chat prompts:
@@ -10,5 +8,3 @@ You can use and configure the following TreeList features via AI Assistant Chat 
 - [Focused Row](/Documentation/Guide/UI_Components/TreeList/Focused_Row/)
 - [Selection](/Documentation/Guide/UI_Components/TreeList/Selection/)
 - [Column Fixing](/Documentation/Guide/UI_Components/TreeList/Columns/Column_Fixing/), [Resizing](/Documentation/Guide/UI_Components/TreeList/Columns/Column_Sizing/), and [Reordering](/Documentation/Guide/UI_Components/TreeList/Columns/Column_Reordering/)
-
-[tags] ctp

@@ -1,5 +1,3 @@
-#include common-ctp-note-wo-devextreme
-
 The {WidgetName} AI Assistant allows you to interact with the component using natural language.
 
 You can use and configure the following DataGrid features via AI Assistant Chat prompts:
@@ -17,5 +15,3 @@ You can use and configure the following DataGrid features via AI Assistant Chat 
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/AIAssistant/",
     name: "DataGrid - AI Assistant"
 }
-
-[tags] ctp

@@ -19,9 +19,6 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "UI component" }
 
 ---
-
-#include common-ctp-note-wo-devextreme
-
 Use this handler to modify the AI Assistant request.
 
 The following code snippet modifies the **e.context** parameter to add request context:
@@ -101,5 +98,3 @@ The following code snippet modifies the **e.context** parameter to add request c
 	}
 
 ---
-
-[tags] ctp

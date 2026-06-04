@@ -57,6 +57,7 @@ The following code snippet lists available commands with their arguments:
     };
     selectByIndexes: {
         indexes: number[];
+        mode: 'select' | 'deselect';
     };
     selectAll: {};
     deselectAll: {};

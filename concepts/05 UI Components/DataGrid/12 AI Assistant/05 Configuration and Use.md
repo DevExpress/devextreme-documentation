@@ -7,7 +7,7 @@ Once activated, {WidgetName} adds a predefined item (*"aiAssistantButton"*) to t
 
 [note]
 
-To ensure users can access the AI Assistant, note the following recommendations:
+Ensure users can access the AI Assistant:
 
 - Do not hide the {WidgetName} toolbar (do not set **toolbar**.[visible](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/#visible) to `false`).
 - If you define **toolbar**.[items[]](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/items/), include *"aiAssistantButton"* in the array.

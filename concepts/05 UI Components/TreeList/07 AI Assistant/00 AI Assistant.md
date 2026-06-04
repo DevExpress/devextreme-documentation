@@ -1,10 +1,10 @@
 The {WidgetName} AI Assistant allows you to interact with the component using natural language.
 
-You can use and configure the following TreeList features via AI Assistant Chat prompts:
+You can use and configure the following {WidgetName} capabilities via AI Assistant Chat prompts:
 
-- [Filtering and Searching](/Documentation/Guide/UI_Components/TreeList/Filtering_and_Searching/)
-- [Sorting](/Documentation/Guide/UI_Components/TreeList/Sorting/)
-- [Paging](/Documentation/Guide/UI_Components/TreeList/Paging/)
-- [Focused Row](/Documentation/Guide/UI_Components/TreeList/Focused_Row/)
-- [Selection](/Documentation/Guide/UI_Components/TreeList/Selection/)
-- [Column Fixing](/Documentation/Guide/UI_Components/TreeList/Columns/Column_Fixing/), [Resizing](/Documentation/Guide/UI_Components/TreeList/Columns/Column_Sizing/), and [Reordering](/Documentation/Guide/UI_Components/TreeList/Columns/Column_Reordering/)
+- [Filter Rows and Search for Text/Values](/Documentation/Guide/UI_Components/TreeList/Filtering_and_Searching/)
+- [Sort Data](/Documentation/Guide/UI_Components/TreeList/Sorting/)
+- [Navigate between Pages](/Documentation/Guide/UI_Components/TreeList/Paging/)
+- [Change Row Focus](/Documentation/Guide/UI_Components/TreeList/Focused_Row/)
+- [Select Rows](/Documentation/Guide/UI_Components/TreeList/Selection/)
+- [Fix](/Documentation/Guide/UI_Components/TreeList/Columns/Column_Fixing/), [Resize](/Documentation/Guide/UI_Components/TreeList/Columns/Column_Sizing/), and [Reorder Columns](/Documentation/Guide/UI_Components/TreeList/Columns/Column_Reordering/)

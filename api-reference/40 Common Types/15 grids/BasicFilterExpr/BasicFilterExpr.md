@@ -3,6 +3,7 @@ id: BasicFilterExpr
 module: common/grids
 export: BasicFilterExpr
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -2,6 +2,7 @@
 id: FilterExprTree
 module: common/grids
 export: FilterExprTree
+generateTypeLink: 
 ---
 ---
 ##### shortDescription
@@ -12,5 +13,5 @@ A complex filter expression in a flat data structure.
 
 This object includes the following fields:
 
-- **rootId**: The ID of the root [FilterExprNode]({basewidgetpath}/FilterExprNode/). This node is evaluated first. **rootId** must match the **id** value of an object in the **nodes** array.
-- **nodes**: An array of [FilterExprNode]({basewidgetpath}/FilterExprNode/) objects. Each node must have a unique **id**.
+- **rootId**: The ID of the root [FilterExprNode](/api-reference/40%20Common%20Types/15%20grids/FilterExprNode '{basewidgetpath}/FilterExprNode/'). This node is evaluated first. **rootId** must match the **id** value of an object in the **nodes** array.
+- **nodes**: An array of [FilterExprNode](/api-reference/40%20Common%20Types/15%20grids/FilterExprNode '{basewidgetpath}/FilterExprNode/') objects. Each node must have a unique **id**.

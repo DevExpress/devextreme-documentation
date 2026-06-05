@@ -1,6 +1,6 @@
 Note the following AI Assistant specifics and best practices:
 
-- The assistant does not have access to component data out of the box. In certain usage scenarios, this approach can cause commands to fail.
+- The assistant does not have access to component data by default. In some scenarios, this approach can cause commands to fail.
 
     For instance, to select the last row on a [page](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/paging/), the assistant calls the `selectByIndexes` command and uses the page size to specify an index. If the number of rows on the active page is smaller than the page size, the command fails.
 

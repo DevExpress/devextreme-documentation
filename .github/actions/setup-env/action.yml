@@ -15,7 +15,7 @@ runs:
       with:
         node-version-file: ${{ inputs.path }}/.node-version
 
-    - uses: pnpm/action-setup@v4
+    - uses: pnpm/action-setup@v6
       with:
         run_install: false
         package_json_file: ${{ inputs.path }}/package.json

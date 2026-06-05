@@ -1,4 +1,4 @@
-The {WidgetName} AI Assistant allows you to interact with the component using natural language.
+The {WidgetName} AI Assistant allows you to use natural language to interact with the component.
 
 You can use and configure the following {WidgetName} capabilities via AI Assistant Chat prompts:
 

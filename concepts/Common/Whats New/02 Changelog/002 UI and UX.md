@@ -4,7 +4,7 @@ title: UI/UX
 
 ### v26.1.3
 
-- We updated DevExtreme Fluent and Material themes to improve color-contrast accessibility of multiple DevExtreme components, such as:
+- We updated DevExtreme Fluent and Material themes to improve color-contrast accessibility of the following DevExtreme components:
     - CardView
     - DataGrid
     - Gantt
@@ -20,9 +20,9 @@ title: UI/UX
         width: "50vw"
     }
 
-- We updated the listening animation in our [SpeechToText](/Documentation/Guide/UI_Components/SpeechToText/Overview/) component: previously, the whole button flickered, indicating the listening process. Now, only the Stop icon flickers. [See Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/SpeechToText/Overview/)
+- The listening animation in our [SpeechToText](/Documentation/Guide/UI_Components/SpeechToText/Overview/) component has also been updated: previously, the whole button flickered to indicate the listening process. Now, only the Stop icon flickers. [See Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/SpeechToText/Overview/)
 
-- In jQuery [Popup](/Documentation/Guide/UI_Components/Popup/Overview/), the `.dx-template-wrapper` element is now rendered inside `.dx-popup-title` when using templates.
+- In jQuery [Popup](/Documentation/Guide/UI_Components/Popup/Overview/), the `.dx-template-wrapper` element is now rendered inside `.dx-popup-title` when templates are used.
 
 - DevExtreme [List](/Documentation/Guide/UI_Components/List/Overview/) now allows users to select item text if no swipe actions are enabled (default on desktop).
 

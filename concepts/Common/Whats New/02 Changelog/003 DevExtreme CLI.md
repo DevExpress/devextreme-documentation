@@ -10,7 +10,7 @@
 ### v1.14.0
 
 - Updated DevExtreme Schematics to Angular 19.
-- Updated sample data source in application templates.
+- Updated the sample data source in application templates.
 - Added dependency and security fixes.
 
 ### v1.13.0

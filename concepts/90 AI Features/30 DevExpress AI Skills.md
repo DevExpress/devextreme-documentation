@@ -46,7 +46,7 @@ If you use only one:
 
 We also recommend using a top-tier model for the most accurate results. Lower-tier models may ignore skill instructions or produce less reliable output.
 
-##### See Also #####
+#####See Also#####
 
 - [DevExpress MCP Server Configuration](/concepts/90%20AI%20Features/20%20DevExpress%20MCP%20Server%20Configuration/00%20DevExpress%20MCP%20Server%20Configuration.md '/Documentation/Guide/AI_Features/DevExpress_MCP_Server_Configuration/')
 - [aiIntegration Setup](/concepts/90%20AI%20Features/10%20aiIntegration%20Setup/00%20aiIntegration%20Setup.md '/Documentation/Guide/AI_Features/aiIntegration_Setup/')

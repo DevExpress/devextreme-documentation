@@ -1,4 +1,4 @@
-We always do our best to minimize the impact an upgrade has on existing projects. However, it is often necessary to change our tools' bevavior, UI, or API to improve them.
+We always do our best to minimize the impact an upgrade has on existing projects. However, it is often necessary to change our tools' behavior, UI, or API to improve them.
 
 For a list of breaking changes introduced in v26.1, refer to the Version History section:
 

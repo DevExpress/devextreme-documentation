@@ -4,4 +4,4 @@ You must purchase a license to use DevExtreme UI components/libraries within a s
 
 Please remember that Developer Express Inc licenses DevExtreme on a per developer basis. Each developer using DevExtreme must purchase/acquire a license. If your organization owns multiple licenses, you can assign individual licenses to different developers. By assigning available licenses to developers within your organization, each developer will have access to their own personal license key within the DevExpress Download Manager (under their personal DevExpress account).
 
-If a developer leaves or stops using DevExtreme, you can revoke their license and re-assign it to another individual.
+If a developer leaves or stops using DevExtreme, you can revoke their license and reassign it to another individual.

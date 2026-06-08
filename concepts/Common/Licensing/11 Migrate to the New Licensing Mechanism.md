@@ -13,7 +13,7 @@ Your application most likely already contains a file that stores the DevExtreme 
 - `src/devextreme-license.ts` — for modular applications
 - `src/devextreme-license.js` — for non-modular (script-based) applications
 
-### Step 3: Add a Prebuild Script
+### Step 3: Add a `prebuild` Script
 
 Add the following script to your `package.json` to automatically regenerate the runtime key file before each build (update the `--out` path/extension to match your runtime key file):
 
@@ -44,4 +44,4 @@ If you previously stored your license key in a custom file, update that file to 
 
 ### Step 5: Configure CI/CD
 
-For CI/CD environments, the prebuild script added in Step 3 is sufficient on the build side. Additionally, register your DevExpress license key as an environment variable on your build server. For full instructions, refer to [Deployment and Continuous Integration (CI)](/concepts/Common/Licensing/13%20Deployment%20and%20Continuous%20Integration%20(CI).md '/Documentation/Guide/Common/Licensing/#Deployment_and_Continuous_Integration_CI').
+For CI/CD environments, the `prebuild` script added in Step 3 is sufficient on the build side. Additionally, register your DevExpress license key as an environment variable on your build server. For full instructions, refer to [Deployment and Continuous Integration (CI)](/concepts/Common/Licensing/13%20Deployment%20and%20Continuous%20Integration%20(CI).md '/Documentation/Guide/Common/Licensing/#Deployment_and_Continuous_Integration_CI').

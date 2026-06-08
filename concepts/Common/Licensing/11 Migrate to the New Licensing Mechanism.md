@@ -15,7 +15,7 @@ Your application most likely already contains a file that stores the DevExtreme 
 
 ### Step 3: Add a Prebuild Script
 
-Add the following script to your `package.json` to automatically regenerate the runtime key file before each build:
+Add the following script to your `package.json` to automatically regenerate the runtime key file before each build (update the `--out` path/extension to match your runtime key file):
 
     {
       "scripts": {

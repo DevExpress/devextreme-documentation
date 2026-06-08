@@ -1,9 +1,9 @@
 AI Assistant allows you to customize AI responses using the following callbacks:
 
-- [customizeResponseTitle](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/aiAssistant/#customizeResponseTitle): Customizes response titles (first line in a response)
-- [customizeResponseText](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/aiAssistant/#customizeResponseText): Customizes response messages (all lines below the title)
+- [customizeResponseTitle](/api-reference/40%20Common%20Types/15%20grids/AIAssistant/customizeResponseTitle.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/aiAssistant/#customizeResponseTitle'): Customizes response titles (first line in a response)
+- [customizeResponseText](/api-reference/40%20Common%20Types/15%20grids/AIAssistant/customizeResponseText.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/aiAssistant/#customizeResponseText'): Customizes response messages (all lines below the title)
 
-You can use these callbacks to localize responses. The following code snippet uses the [locale()](/Documentation/ApiReference/Common/Utils/localization/#locale) utility method to specify response messages and titles for multiple locales:
+You can use these callbacks to localize responses. The following code snippet uses the [locale()](/api-reference/50%20Common/utils/localization/locale().md '/Documentation/ApiReference/Common/Utils/localization/#locale') utility method to specify response messages and titles for multiple locales:
 
 ---
 

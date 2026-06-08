@@ -6,4 +6,4 @@ For a list of breaking changes introduced in v26.1, refer to the Version History
     <span style="padding-left: 8px;">v26.1 Breaking Changes</span>
 </a>
 
-Follow the given instructions for each change to mitigate possible impacts. If you experience any problems migrating to the latest DevExtreme version, you can submit a ticket to our [Support Center](http://www.devexpress.com/Support/Center/Question/List/1).
+Follow the given instructions for each change to mitigate possible impacts. If you experience any problems migrating to the latest DevExtreme version, you can submit a ticket to our [Support Center](https://www.devexpress.com/Support/Center/Question/List/1).

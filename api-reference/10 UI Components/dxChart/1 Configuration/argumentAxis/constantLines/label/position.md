@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.constantLineStyle.label.position
+id: dxChart.Options.argumentAxis.constantLines.label.position
 type: Enums.RelativePosition
 default: 'inside'
 ---

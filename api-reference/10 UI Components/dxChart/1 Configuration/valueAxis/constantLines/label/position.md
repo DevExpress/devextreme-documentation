@@ -1,5 +1,5 @@
 ---
-id: dxChart.Options.commonAxisSettings.constantLineStyle.label.position
+id: dxChart.Options.valueAxis.constantLines.label.position
 type: Enums.RelativePosition
 default: 'inside'
 ---
@@ -14,7 +14,7 @@ The component's default behavior is to display constant line labels inside the c
 
 When **position** is *"outside"*, note the following label alignment restrictions:
 
-- [verticalAlignment](/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/constantLines/label/#verticalAlignment) is always *"center"*
-- [horizontalAlignment](/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/constantLines/label/#horizontalAlignment) can be only *"left"* or *"right"*
+- [verticalAlignment](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/constantLines/label/#verticalAlignment) is always *"center"*
+- [horizontalAlignment](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/constantLines/label/#horizontalAlignment) can be only *"left"* or *"right"*
 
 [/note]

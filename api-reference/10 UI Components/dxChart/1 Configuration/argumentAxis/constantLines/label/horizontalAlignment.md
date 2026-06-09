@@ -9,4 +9,4 @@ Aligns constant line labels in the horizontal direction.
 
 ---
 
-[note] When the label's [position]({currentpath}/#position) is *"outside"*, **horizontalAlignment** can be only *"left"* or *"right"*.
+[note] When the label's [position](/Documentation/ApiReference/UI_Components/dxChart/Configuration/argumentAxis/constantLines/label/#position) is *"outside"*, **horizontalAlignment** can be only *"left"* or *"right"*.

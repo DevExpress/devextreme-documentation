@@ -11,8 +11,8 @@ The TreeList component meets a variety of <a href="https://www.access-board.gov/
         <td>1.1.1 Non-text Content (Level A)</td>
         <td>
             <ul>
-                <li>Drag icons do not have <code>alt</code> and <code>aria-label</code> attributes.</li>
-                <li>AI Assistant: Message status icons and command-result indicators have no <code>alt</code>/<code>aria-label</code> attributes.</li>
+                <li>Drag icons do not have <code>alt</code> or <code>aria-label</code> attributes.</li>
+                <li>AI Assistant: Message status icons and command-result indicators do not have <code>alt</code> or <code>aria-label</code> attributes.</li>
             </ul>
         </td>
     </tr>
@@ -33,7 +33,7 @@ The TreeList component meets a variety of <a href="https://www.access-board.gov/
             <ul>
                 <li>ColumnChooser items in 'drag' mode do not support keyboard navigation.</li>
                 <li>Users cannot resize columns using the keyboard (when <a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#allowColumnResizing">allowColumnResizing</a> is enabled).</li>
-                <li>AI Assistant: The "Regenerate" button is not focusable and cannot be clicked using a keyboard.</li>
+                <li>AI Assistant: The "Regenerate" button is not keyboard accessible.</li>
             </ul>
         </td>
     </tr>
@@ -42,8 +42,8 @@ The TreeList component meets a variety of <a href="https://www.access-board.gov/
         <td>2.4.3 Focus Order (Level A)</td>
         <td>
             <ul>
-                <li>AI Assistant: Focus is not returned to the toolbar button after the popup is closed.</li>
-                <li>AI Assistant: Focus is not returned to the chat input after a request is completed.</li>
+                <li>AI Assistant: Focus does not return to the toolbar button after the pop-up is closed.</li>
+                <li>AI Assistant: Focus does not return to the chat input after a request is completed.</li>
             </ul>
         </td>
     </tr>

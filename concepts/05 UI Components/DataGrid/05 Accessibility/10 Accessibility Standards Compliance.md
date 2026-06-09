@@ -9,7 +9,12 @@ The DataGrid component meets a variety of <a href="https://www.access-board.gov/
     <tr>
         <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
         <td>1.1.1 Non-text Content (Level A)</td>
-        <td>Drag icons do not have <code>alt</code> and aria-label attributes.</td>
+        <td>
+            <ul>
+                <li>Drag icons do not have <code>alt</code> or <code>aria-label</code> attributes.</li>
+                <li>AI Assistant: Message status icons and command-result indicators do not have <code>alt</code> or <code>aria-label</code> attributes.</li>
+            </ul>
+        </td>
     </tr>
     <tr>
         <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
@@ -27,7 +32,18 @@ The DataGrid component meets a variety of <a href="https://www.access-board.gov/
         <td>
             <ul>
                 <li>ColumnChooser items in 'drag' mode do not support keyboard navigation.</li>
-                <li>Column resizing does not support keyboard actions (when <a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#allowColumnResizing">allowColumnResizing</a> is enabled).</li>
+                <li>Users cannot resize columns using the keyboard (when <a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#allowColumnResizing">allowColumnResizing</a> is enabled).</li>
+                <li>AI Assistant: The "Regenerate" button is not keyboard accessible.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
+        <td>2.4.3 Focus Order (Level A)</td>
+        <td>
+            <ul>
+                <li>AI Assistant: Focus does not return to the toolbar button after the pop-up is closed.</li>
+                <li>AI Assistant: Focus does not return to the chat input after a request is completed.</li>
             </ul>
         </td>
     </tr>
@@ -50,6 +66,11 @@ The DataGrid component meets a variety of <a href="https://www.access-board.gov/
                 <li>Column separators when <a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#allowColumnResizing">allowColumnResizing</a> is enabled.</li>
             </ul>
         </td>
+    </tr>
+    <tr>
+        <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
+        <td>4.1.2 Name, Role, Value (Level A)</td>
+        <td>AI Assistant: The "Regenerate" button does not expose a name or role to assistive technologies.</td>
     </tr>
     <tr>
         <td>11.5.2.15 Change notification </td>

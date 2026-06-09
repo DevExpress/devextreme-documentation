@@ -25,7 +25,7 @@ Add the following script to your `package.json` to automatically regenerate the 
       }
     }
 
-The resulting file fully matches the format we [recommended](https://docs.devexpress.com/GeneralInformation/405494/trial-register/set-up-your-dev-express-license-key#option-1-modular-apps-angular-react-vue) in the documentation, but contains the key in the new format.
+The resulting file fully matches the format we [recommend](https://docs.devexpress.com/GeneralInformation/405494/trial-register/set-up-your-dev-express-license-key#option-1-modular-apps-angular-react-vue) in the documentation, but contains the key in the new format.
 
 ##### jQuery / Non-Modular Applications
 
@@ -33,7 +33,7 @@ Run `devextreme-license` with the `--non-modular` flag:
 
     devextreme-license --non-modular --out src/devextreme-license.js --force
 
-The resulting file fully matches the format we [recommended](https://docs.devexpress.com/GeneralInformation/405494/trial-register/set-up-your-dev-express-license-key#option-2-non-modular-apps-jquery) in the documentation, but contains the key in the new format.
+The resulting file fully matches the format we [recommend](https://docs.devexpress.com/GeneralInformation/405494/trial-register/set-up-your-dev-express-license-key#option-2-non-modular-applications-jquery-cdn-based) in the documentation, but contains the key in the new format.
 
 Verify that the generated file is included using a `<script>` tag:
 

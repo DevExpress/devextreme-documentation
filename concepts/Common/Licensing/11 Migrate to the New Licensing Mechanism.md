@@ -1,21 +1,19 @@
-DevExtreme v26.1 introduces a new licensing mechanism. If you are upgrading from an earlier version, follow the steps below to migrate your application.
+DevExtreme v26.1 introduces a new licensing mechanism. Follow the steps below to migrate your application when you upgrade from an earlier version.
 
-If your application already follows the setup described in [Validate Your License Key](/concepts/Common/Licensing/10%20Validate%20Your%20License%20Key.md '/Documentation/Guide/Common/Licensing/#Validate_Your_License_Key'), you do not need to change your application code.
+Applications that already follow the setup described in [Validate Your License Key](/concepts/Common/Licensing/10%20Validate%20Your%20License%20Key.md '/Documentation/Guide/Common/Licensing/#Validate_Your_License_Key') do not require application code changes.
 
 ### Step 1: Register Your DevExpress License Key
 
 Register your DevExpress license key on your machine using one of the methods described in [License Key for DevExpress Products](https://docs.devexpress.com/GeneralInformation/405494/trial-register/set-up-your-dev-express-license-key#register-your-key-basics). If you already use other DevExpress products, the key is likely already installed. Update the key as you normally would when upgrading to a new major version.
 
-### Step 2: Verify Your License Key File
+### Step 2: Generate Runtime Key
 
-Your application most likely already contains a file that stores the DevExtreme runtime key. The runtime key file is typically excluded from version control using `.gitignore`. DevExtreme recommends the following file names and locations:
+The `devextreme-license` CLI reads your registered DevExpress key and generates a DevExtreme-compatible runtime key. Your application most likely already contains a file that stores this key. DevExtreme recommends the following file names and locations:
 
 - `src/devextreme-license.ts` — for modular applications
 - `src/devextreme-license.js` — for non-modular (`<script>`-based) applications
 
-### Step 3: Generate Runtime Key
-
-The `devextreme-license` CLI reads your registered DevExpress key and generates a DevExtreme-compatible runtime key.
+The runtime key file is typically excluded from version control using `.gitignore`.
 
 ##### Modular Applications
 
@@ -27,7 +25,7 @@ Add the following script to your `package.json` to automatically regenerate the 
       }
     }
 
-The resulting file fully matches the format we [recommended](/concepts/Common/Licensing/10%20Validate%20Your%20License%20Key.md '/Documentation/Guide/Common/Licensing/#Validate_Your_License_Key') in the documentation, but contains the key in the new format.
+The resulting file fully matches the format we [recommended](https://docs.devexpress.com/GeneralInformation/405494/trial-register/set-up-your-dev-express-license-key#option-1-modular-apps-angular-react-vue) in the documentation, but contains the key in the new format.
 
 ##### jQuery / Non-Modular Applications
 
@@ -35,18 +33,18 @@ Run `devextreme-license` with the `--non-modular` flag:
 
     devextreme-license --non-modular --out src/devextreme-license.js --force
 
-The resulting file fully matches the format we [recommended](/concepts/Common/Licensing/10%20Validate%20Your%20License%20Key.md '/Documentation/Guide/Common/Licensing/#Validate_Your_License_Key') in the documentation, but contains the key in the new format.
+The resulting file fully matches the format we [recommended](https://docs.devexpress.com/GeneralInformation/405494/trial-register/set-up-your-dev-express-license-key#option-2-non-modular-apps-jquery) in the documentation, but contains the key in the new format.
 
 Verify that the generated file is included using a `<script>` tag:
 
-    <script src="./devextreme-license.js" type="text/javascript"></script>
+    <script src="./src/devextreme-license.js" type="text/javascript"></script>
 
-### Step 4: Verify Your Application
+### Step 3: Verify Your Application
 
 In most cases, no application code changes are required. Verify that the runtime key is read from the correct file in the location where you pass it to [DevExpress.config(GlobalConfig)](/api-reference/50%20Common/utils/config().md '/Documentation/ApiReference/Common/Utils/#config').
 
 If you previously used your license key from a custom file, use the `--out` parameter to specify a custom file path, or run `devextreme-license` without parameters (it outputs the key directly to the CLI).
 
-### Step 5: Configure CI/CD
+### Step 4: Configure CI/CD
 
-For CI/CD environments, the `prebuild` script added in Step 3 is sufficient on the build side. Additionally, set your DevExpress license key in an environment variable on your build server. For full instructions, refer to [Deployment and Continuous Integration (CI)](/concepts/Common/Licensing/13%20Deployment%20and%20Continuous%20Integration%20(CI).md '/Documentation/Guide/Common/Licensing/#Deployment_and_Continuous_Integration_CI').
+For CI/CD environments, the `prebuild` script added in Step 2 is sufficient on the build side. Additionally, set your DevExpress license key in an environment variable on your build server. For full instructions, refer to [Deployment and Continuous Integration (CI)](/concepts/Common/Licensing/13%20Deployment%20and%20Continuous%20Integration%20(CI).md '/Documentation/Guide/Common/Licensing/#Deployment_and_Continuous_Integration_CI').

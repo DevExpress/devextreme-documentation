@@ -11,8 +11,8 @@ The TreeList component meets a variety of <a href="https://www.access-board.gov/
         <td>1.1.1 Non-text Content (Level A)</td>
         <td>
             <ul>
-                <li>Drag icons do not have <code>alt</code> and aria-label attributes.</li>
-                <li>AI Assistant: Message status icons and command-result indicators have no "alt"/"aria-label" attributes.</li>
+                <li>Drag icons do not have <code>alt</code> and <code>aria-label</code> attributes.</li>
+                <li>AI Assistant: Message status icons and command-result indicators have no <code>alt</code>/<code>aria-label</code> attributes.</li>
             </ul>
         </td>
     </tr>

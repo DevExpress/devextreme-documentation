@@ -11,8 +11,8 @@ The DataGrid component meets a variety of <a href="https://www.access-board.gov/
         <td>1.1.1 Non-text Content (Level A)</td>
         <td>
             <ul>
-                <li>Drag icons do not have <code>alt</code> and aria-label attributes.</li>
-                <li>AI Assistant: Message status icons and command-result indicators have no "alt"/"aria-label" attributes.</li>
+                <li>Drag icons do not have <code>alt</code> and <code>aria-label</code> attributes.</li>
+                <li>AI Assistant: Message status icons and command-result indicators have no <code>alt</code>/<code>aria-label</code> attributes.</li>
             </ul>
         </td>
     </tr>
@@ -32,7 +32,7 @@ The DataGrid component meets a variety of <a href="https://www.access-board.gov/
         <td>
             <ul>
                 <li>ColumnChooser items in 'drag' mode do not support keyboard navigation.</li>
-                <li>Users cannot resize columns using the keyboard (when <a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#allowColumnResizing">allowColumnResizing</a> is enabled).</li>
+                <li>Users cannot resize columns using the keyboard (when <a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#allowColumnResizing">allowColumnResizing</a> is enabled).</li>
                 <li>AI Assistant: The "Regenerate" button is not focusable and cannot be clicked using a keyboard.</li>
             </ul>
         </td>

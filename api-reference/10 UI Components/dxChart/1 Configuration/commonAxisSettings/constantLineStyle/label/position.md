@@ -8,5 +8,13 @@ default: 'inside'
 Specifies the position of constant line labels on the chart plot.
 
 ---
-By default, constant line labels are displayed inside the chart plot near the constant lines they belong to. To place the labels outside the chart plot, set the **position** property to *"outside"*.
+The component's default behavior is to display constant line labels inside the chart plot. To place the labels outside the chart plot, set **position** to *"outside"*.
 
+[note]
+
+When **position** is *"outside"*, note the following label alignment restrictions:
+
+- [verticalAlignment]({currentpath}/#verticalAlignment) is always *"center"*
+- [horizontalAlignment]({currentpath}/#horizontalAlignment) can be only *"left"* or *"right"*
+
+[/note]

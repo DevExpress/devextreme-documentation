@@ -8,4 +8,5 @@ default: 'right'
 Aligns constant line labels in the horizontal direction.
 
 ---
-<!-- Description goes here -->
+
+[note] When the label's [position]({currentpath}/#position) is *"outside"*, **horizontalAlignment** can be only *"left"* or *"right"*.

@@ -1,4 +1,4 @@
-DevExpress AI Skills is a public repository of reusable agent skills for DevExpress products, including DevExtreme. The DevExtreme skills are located in the [plugins/devextreme/skills](https://github.com/DevExpress/agent-skills/tree/main/plugins/devextreme/skills) folder of the [DevExpress/agent-skills](https://github.com/DevExpress/agent-skills) repository and are designed for AI coding assistants such as GitHub Copilot, Claude Code, Cursor, and JetBrains AI Assistant.
+DevExpress AI Skills is a public repository of reusable agent skills for DevExpress products, including DevExtreme. The DevExtreme skills are located in the [skills](https://github.com/DevExpress/agent-skills/tree/main/plugins/dx-devextreme/skills/skills) folder of the [DevExpress/agent-skills](https://github.com/DevExpress/agent-skills) repository and are designed for AI coding assistants such as GitHub Copilot, Claude Code, Cursor, and JetBrains AI Assistant.
 
 Use these skills when you want an AI assistant to follow DevExpress-specific patterns, choose the right APIs, and generate code that matches the product and framework you are working with.
 
@@ -29,11 +29,11 @@ The repository includes skills for the following DevExtreme areas:
 
 ## How To Use The Repository
 
-1. Open the [plugins/devextreme/skills](https://github.com/DevExpress/agent-skills/tree/main/plugins/devextreme/skills) folder in the DevExpress/agent-skills repository.
+1. Open the [skills](https://github.com/DevExpress/agent-skills/tree/main/plugins/dx-devextreme/skills/skills) folder in the DevExpress/agent-skills repository.
 2. Copy the skill folders you need to your AI assistant's skills directory.
 3. Start a chat in agent mode and ask a product-specific question.
 
-For project-level use in VS Code, place skills in `.github/skills/`. For a global setup, follow the installation instructions in the repository README.
+For agent-specific and IDE-specific setup instructions, refer to the [repository README](https://github.com/DevExpress/agent-skills/blob/main/README.md).
 
 ## When To Use AI Skills And When To Use MCP
 
@@ -44,7 +44,7 @@ If you use only one:
 - Use DevExpress AI Skills when you want the assistant to follow curated task patterns and product-specific rules without a network connection to documentation.
 - Use the DevExpress MCP server when you need live documentation lookup, version-sensitive details, or a direct connection to the DevExpress documentation library.
 
-We also recommend using a top-tier model for the most accurate results. Lower-tier models may ignore skill instructions or produce less reliable output.
+[note] We recommend using a top-tier model for the most accurate results. Lower-tier models may ignore skill instructions or produce less reliable output.
 
 #####See Also#####
 

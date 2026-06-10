@@ -1,4 +1,4 @@
-You can use the following extensions to bind DevExtreme components to Web API and MongoDb services:
+You can use the following extensions to bind DevExtreme components to Web API and MongoDB services:
 
 - [DevExtreme.AspNet.Data](https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/README.md)
 - [devextreme-query-mongodb](https://github.com/oliversturm/devextreme-query-mongodb/blob/master/README.md)

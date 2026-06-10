@@ -1,4 +1,4 @@
-To bind DevExtreme PieChart to a custom data source, implement a [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/'). You can use the following extensions to configure **CustomStore** and implement server-side data processing to bind DevExtreme components to Web API and MongoDb services:
+To bind DevExtreme PieChart to a custom data source, implement a [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/'). You can use the following extensions to configure **CustomStore** and implement server-side data processing to bind DevExtreme components to Web API and MongoDB services:
 
 - [DevExtreme.AspNet.Data](https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/README.md)
 - [devextreme-query-mongodb](https://github.com/oliversturm/devextreme-query-mongodb/blob/master/README.md)

@@ -100,7 +100,7 @@ Assign the field's name to the DropDownBox's [valueExpr](/api-reference/10%20UI%
         import { DxDataGrid } from 'devextreme-vue/data-grid';
         import ArrayStore from 'devextreme/data/array_store';
 
-        const dropDownBoxData = dropDownBoxData;
+        const dropDownBoxData = [/* ... */];
         const gridDataSource = new ArrayStore({
             data: widgetData,
             key: 'ID',

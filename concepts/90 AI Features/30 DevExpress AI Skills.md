@@ -11,7 +11,7 @@ Use these skills when you want an AI assistant to follow DevExpress-specific pat
 
 ## DevExtreme Skills
 
-The repository includes skills for the following DevExtreme areas:
+The repository includes skills for the following DevExtreme components and features:
 
 - [DataGrid](/concepts/05%20UI%20Components/DataGrid/03%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/DataGrid/Overview/')
 - [Scheduler](/concepts/05%20UI%20Components/Scheduler/02%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/Scheduler/Overview/')

@@ -25,6 +25,6 @@
             System.import('./index.js');
         </script>
 
-[note] To use DevExtreme jQuery components in modular applications, you must import the [jQuery integration module](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/integration/jquery.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/jquery').
+[note] To use DevExtreme jQuery components in modular applications, import the [jQuery integration module](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure/integration/jquery.md '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#integration/jquery').
 
 [tags] jquery

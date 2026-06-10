@@ -19,7 +19,7 @@ Assign the array to the **store** property. [View Demo](https://js.devexpress.co
 - **OLAP Data**         
 Implement an [XmlaStore](/api-reference/30%20Data%20Layer/XmlaStore '/Documentation/ApiReference/Data_Layer/XmlaStore/'). [View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/OLAPDataSource)
 
-- **Web API, PHP, MongoDB**     
+- **Web API and MongoDB**     
 Use one of the following extensions to enable the server to process data according to the protocol DevExtreme UI components use:
 
     - <a href="https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/README.md" target="_blank">DevExtreme.AspNet.Data</a>

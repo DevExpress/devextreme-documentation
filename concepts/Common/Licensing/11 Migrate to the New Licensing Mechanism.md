@@ -1,10 +1,10 @@
-DevExtreme v26.1 introduces a new licensing mechanism. Follow the steps below to migrate your application when you upgrade from an earlier version.
+DevExtreme v26.1 introduces a new licensing mechanism. Follow the steps below to migrate your application from an earlier version.
 
 Applications that already follow the setup described in [Validate Your License Key](/concepts/Common/Licensing/10%20Validate%20Your%20License%20Key.md '/Documentation/Guide/Common/Licensing/#Validate_Your_License_Key') do not require application code changes.
 
 ### Step 1: Register Your DevExpress License Key
 
-Register your DevExpress license key on your machine using one of the methods described in [License Key for DevExpress Products](https://docs.devexpress.com/GeneralInformation/405494/trial-register/set-up-your-dev-express-license-key#register-your-key-basics). If you already use other DevExpress products, the key is likely already installed. Update the key as you normally would when upgrading to a new major version.
+Register your DevExpress license key on your machine using one of the methods described in [License Key for DevExpress Products](https://docs.devexpress.com/GeneralInformation/405494/trial-register/set-up-your-dev-express-license-key#register-your-key-basics). If you already use other DevExpress products, the key is likely already installed. Update the key as usual when you upgrade to a new major version.
 
 ### Step 2: Generate Runtime Key
 
@@ -47,4 +47,4 @@ If you previously used your license key from a custom file, use the `--out` para
 
 ### Step 4: Configure CI/CD
 
-For CI/CD environments, the `prebuild` script added in Step 2 is sufficient on the build side. Additionally, set your DevExpress license key in an environment variable on your build server. For full instructions, refer to [Deployment and Continuous Integration (CI)](/concepts/Common/Licensing/13%20Deployment%20and%20Continuous%20Integration%20(CI).md '/Documentation/Guide/Common/Licensing/#Deployment_and_Continuous_Integration_CI').
+For CI/CD environments, the `prebuild` script added in Step 2 is sufficient on the build side, but you must also set your DevExpress license key in an environment variable on the build server. For complete instructions, see [Deployment and Continuous Integration (CI)](/concepts/Common/Licensing/13%20Deployment%20and%20Continuous%20Integration%20(CI).md '/Documentation/Guide/Common/Licensing/#Deployment_and_Continuous_Integration_CI').

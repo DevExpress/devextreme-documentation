@@ -19,7 +19,7 @@ For numeric columns, assign a number that specifies the size of generated groups
 
 For date columns, set this property to a [HeaderFilterGroupInterval](/api-reference/40%20Common%20Types/15%20grids/HeaderFilterGroupInterval.md '/Documentation/ApiReference/Common_Types/grids/#HeaderFilterGroupInterval') value. This value indicates the smallest available filter value. For instance, the *"day"* value allows you to filter date columns by a specific day.
 
-The default header filter for date columns is hierarchical. To implement a non-hierarchical header filter, set **groupInterval** to **null** and specify the [calculateFilterExpression](/api-reference/_hidden/GridBaseColumn/calculateFilterExpression.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateFilterExpression') function:
+The default header filter for date columns is hierarchical. To implement a non-hierarchical header filter, set **groupInterval** to **null** and specify the [calculateFilterExpression](/api-reference/_hidden/GridBaseColumn/calculateFilterExpression.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#calculateFilterExpression') function:
 
 ---
 ##### jQuery

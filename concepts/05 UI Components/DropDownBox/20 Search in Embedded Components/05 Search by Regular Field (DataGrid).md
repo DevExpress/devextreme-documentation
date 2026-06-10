@@ -1,17 +1,16 @@
-By default, the [DropDownBox](https://js.devexpress.com/jQuery/Documentation/ApiReference/UI_Components/dxDropDownBox/) component does not support filtering because it does not contain built-in content. This topic shows how to implement search when a [DataGrid](https://js.devexpress.com/jQuery/Documentation/ApiReference/UI_Components/dxDataGrid/) is embedded inside the DropDownBox.
+This topic covers search by a regular (non-lookup) field in a [DropDownBox](/api-reference/10%20UI%20Components/dxDropDownBox '/Documentation/ApiReference/UI_Components/dxDropDownBox/') with an embedded [DataGrid](/api-reference/10%20UI%20Components/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid/'). The approach uses [`DataSource.searchExpr`](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/searchExpr.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#searchExpr') and [`DataSource.searchValue`](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/searchValue(value).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#searchValuevalue') to filter rows as the user types.
 
-(You can insert a GIF here to demonstrate the final behavior)
+[note] This example uses a plain DataGrid data structure. For search through a lookup column, see [Search by Lookup Column (TreeList)](/concepts/05%20UI%20Components/DropDownBox/20%20Search%20in%20Embedded%20Components/10%20Search%20by%20Lookup%20Column%20(TreeList).md '/Documentation/Guide/UI_Components/DropDownBox/Search_in_Embedded_Components/Search_by_Lookup_Column_(TreeList)/').
 
-**Note:** This example demonstrates how to search when DataGrid has a plain data structure. If you need to implement search through a lookup column, see the TreeList example: [DropDownBox with embedded TreeList](https://github.com/DevExpress-Examples/devextreme-dropdownbox-implement-search-for-treelist).
+### 1) Configure DropDownBox to Accept User Input
 
-## 1) Configure DropDownBox to accept user input
-
-- Enable [`acceptCustomValue`](https://js.devexpress.com/jQuery/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#acceptCustomValue) so the user can type text.
-- Set [`valueChangeEvent`](https://js.devexpress.com/jQuery/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#valueChangeEvent) to an empty string to prevent the component from trying to interpret typing as a value change.
+- Enable [`acceptCustomValue`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/acceptCustomValue.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#acceptCustomValue') so the user can type text.
+- Set [`valueChangeEvent`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/valueChangeEvent.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#valueChangeEvent') to an empty string to prevent the component from trying to interpret typing as a value change.
 
 ---
 ##### jQuery
 
+    <!-- tab: index.js -->
     $('#gridBox').dxDropDownBox({
         acceptCustomValue: true,
         valueChangeEvent: '',
@@ -21,7 +20,7 @@ By default, the [DropDownBox](https://js.devexpress.com/jQuery/Documentation/Api
 
 ##### Angular
 
-    <!-- drop-down-grid.component.html -->
+    <!-- tab: drop-down-grid.component.html -->
     <dx-drop-down-box
         [acceptCustomValue]="true"
         valueChangeEvent=""
@@ -32,7 +31,7 @@ By default, the [DropDownBox](https://js.devexpress.com/jQuery/Documentation/Api
 
 ##### Vue
 
-    <!-- DropDownBoxWithDataGrid.vue -->
+    <!-- tab: DropDownBoxWithDataGrid.vue -->
     <DxDropDownBox
         :accept-custom-value="true"
         value-change-event=""
@@ -42,7 +41,7 @@ By default, the [DropDownBox](https://js.devexpress.com/jQuery/Documentation/Api
 
 ##### React
 
-    // DropDownGrid.tsx
+    <!-- tab: DropDownGrid.tsx -->
     <DropDownBox
         acceptCustomValue={true}
         valueChangeEvent=""
@@ -52,6 +51,7 @@ By default, the [DropDownBox](https://js.devexpress.com/jQuery/Documentation/Api
 
 ##### ASP.NET Core Controls
 
+    <!--Razor C#-->
     @(Html.DevExtreme().DropDownBox()
         .AcceptCustomValue(true)
         .ValueChangeEvent("")
@@ -61,16 +61,17 @@ By default, the [DropDownBox](https://js.devexpress.com/jQuery/Documentation/Api
 
 ---
 
-## 2) Create a `DataSource` that supports search
+### 2) Create a `DataSource` That Supports Search
 
 Search is implemented with:
 
-- [`searchExpr`](https://js.devexpress.com/jQuery/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#searchExpr) — fields used for searching
-- [`searchValue`](https://js.devexpress.com/jQuery/Documentation/ApiReference/Data_Layer/DataSource/Methods/#searchValuevalue) — current search string
+- [`searchExpr`](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/searchExpr.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#searchExpr') — fields used for searching
+- [`searchValue`](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/searchValue(value).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#searchValuevalue') — current search string
 
 ---
 ##### jQuery
 
+    <!-- tab: index.js -->
     const dataSource = new DevExpress.data.DataSource({
         store: DevExpress.data.AspNet.createStore({
             key: 'OrderNumber',
@@ -81,10 +82,10 @@ Search is implemented with:
 
 ##### Angular
 
-    // drop-down-grid.component.ts
+    <!-- tab: drop-down-grid.component.ts -->
     @Input() dataSource!: DataSource;
 
-    // app.component.ts
+    <!-- tab: app.component.ts -->
     import AspNetData from 'devextreme-aspnet-data-nojquery';
     import { DataSource } from 'devextreme-angular/common/data';
 
@@ -98,7 +99,7 @@ Search is implemented with:
 
 ##### Vue
 
-    // DropDownBoxWithDataGrid.vue
+    <!-- tab: DropDownBoxWithDataGrid.vue -->
     import AspNetData from 'devextreme-aspnet-data-nojquery';
     import { DataSource } from 'devextreme-vue/common/data';
 
@@ -112,7 +113,7 @@ Search is implemented with:
 
 ##### React
 
-    // DropDownGrid.tsx
+    <!-- tab: DropDownGrid.tsx -->
     import AspNetData from 'devextreme-aspnet-data-nojquery';
     import { DataSource } from 'devextreme-react/common/data';
 
@@ -126,6 +127,7 @@ Search is implemented with:
 
 ##### ASP.NET Core Controls
 
+    <!--Razor C#-->
     @(Html.DevExtreme().DataGrid<SampleOrder>()
         .DataSource(d => d.Mvc().Controller("SampleData").LoadAction("Get").Key("OrderID"))
         .DataSourceOptions(op => { op.SearchExpr(new[] { "CustomerName" }); })
@@ -134,19 +136,19 @@ Search is implemented with:
 
 ---
 
-## 3) Configure `displayExpr`
+### 3) Configure `displayExpr`
 
-Use [`displayExpr`](https://js.devexpress.com/jQuery/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#displayExpr) to define how a selected record is displayed in the input:
+Use [`displayExpr`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#displayExpr') to define how a selected record is displayed in the input:
 
     function displayExpr(item) {
         if (!item || typeof item !== 'object') return '';
         return `${item.Employee}: ${item.StoreState} - ${item.StoreCity} <${item.OrderNumber}>`;
     }
 
----
-## 4) Implement search in `onInput`
+### 4) Implement Search in `onInput`
 
-Use the DropDownBox [`onInput`](https://js.devexpress.com/jQuery/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onInput) event to:
+Use the DropDownBox [`onInput`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/onInput.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onInput') event to:
+
 1. Ensure the dropdown is open
 2. Apply `dataSource.searchValue(text)`
 3. Load results and move focus to the first match
@@ -154,6 +156,7 @@ Use the DropDownBox [`onInput`](https://js.devexpress.com/jQuery/Documentation/A
 ---
 ##### jQuery
 
+    <!-- tab: index.js -->
     onInput: (e) => {
         clearTimeout(searchTimerId);
         searchTimerId = setTimeout(() => {
@@ -178,7 +181,7 @@ Use the DropDownBox [`onInput`](https://js.devexpress.com/jQuery/Documentation/A
 
 ##### Angular
 
-    // drop-down-grid.component.ts
+    <!-- tab: drop-down-grid.component.ts -->
     onInput(e: DxDropDownBoxTypes.InputEvent): void {
         if (this.searchTimer) clearTimeout(this.searchTimer);
         this.searchTimer = setTimeout(() => {
@@ -202,7 +205,7 @@ Use the DropDownBox [`onInput`](https://js.devexpress.com/jQuery/Documentation/A
 
 ##### Vue
 
-    // DropDownBoxWithDataGrid.vue
+    <!-- tab: DropDownBoxWithDataGrid.vue -->
     function onInput(e: DxDropDownBoxTypes.InputEvent): void {
         if (searchTimer.value) clearTimeout(searchTimer.value);
         searchTimer.value = setTimeout(() => {
@@ -226,7 +229,16 @@ Use the DropDownBox [`onInput`](https://js.devexpress.com/jQuery/Documentation/A
 
 ##### React
 
-    // DropDownGrid.tsx
+    <!-- tab: DropDownGrid.tsx -->
+    const onChanged = useCallback(() => {
+        const items = dataSource.items();
+        if (items.length > 0) {
+            dispatch({ type: 'SET_FOCUSED_KEY', key: items[0].OrderNumber });
+        }
+        dropDownBoxRef.current?.instance().focus();
+        dataSource.off('changed', onChanged);
+    }, []);
+
     const onInput = useCallback((e: DropDownBoxTypes.InputEvent) => {
         if (searchTimer.current) clearTimeout(searchTimer.current);
         searchTimer.current = setTimeout(() => {
@@ -257,11 +269,10 @@ Use the DropDownBox [`onInput`](https://js.devexpress.com/jQuery/Documentation/A
 
 ---
 
----
-
-## 5) Detect whether the user is currently searching (`isSearchIncomplete`)
+### 5) Detect Whether the User Is Currently Searching (`isSearchIncomplete`)
 
 This helper compares:
+
 - `text` — what the user typed
 - `displayValue` — formatted text for the currently selected value
 
@@ -274,20 +285,20 @@ If they differ, it means the user is searching and the popup state should be man
         return text !== displayValue;
     }
 
----
-## 6) Configure the embedded DataGrid in `contentTemplate`
+### 6) Configure the Embedded DataGrid in `contentTemplate`
 
-Use DropDownBox [`contentTemplate`](https://js.devexpress.com/jQuery/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#contentTemplate) to render the DataGrid.
+Use DropDownBox [`contentTemplate`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#contentTemplate') to render the DataGrid.
 
+To use focused and selection row features, specify the following settings:
 
-To use focused and selection row features, set the following settings:
-- Enable [`focusedRowEnabled`](https://js.devexpress.com/jQuery/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#focusedRowEnabled) to allow keyboard navigation.
-- Use [`focusedRowKey`](https://js.devexpress.com/jQuery/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#focusedRowKey) so search can focus the first match.
-- Use single selection: [`selection.mode`](https://js.devexpress.com/jQuery/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#mode).
+- Enable [`focusedRowEnabled`](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/focusedRowEnabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#focusedRowEnabled') to allow keyboard navigation.
+- Use [`focusedRowKey`](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/focusedRowKey.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#focusedRowKey') so search can focus the first match.
+- Use single selection: [`selection.mode`](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/selection/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#mode').
 
 ---
 ##### jQuery
 
+    <!-- tab: index.js -->
     contentTemplate: (e, container) => {
         const dropDownBox = e.component;
         const value = dropDownBox.option('value');
@@ -334,7 +345,7 @@ To use focused and selection row features, set the following settings:
 
 ##### Angular
 
-    <!-- drop-down-grid.component.html -->
+    <!-- tab: drop-down-grid.component.html -->
     <div *dxTemplate="let data of 'content'">
         <dx-data-grid
             #dataGrid
@@ -367,7 +378,7 @@ To use focused and selection row features, set the following settings:
 
 ##### Vue
 
-    <!-- DropDownBoxWithDataGrid.vue -->
+    <!-- tab: DropDownBoxWithDataGrid.vue -->
     <template #default>
         <DxDataGrid
             ref="dataGridRef"
@@ -400,7 +411,7 @@ To use focused and selection row features, set the following settings:
 
 ##### React
 
-    // DropDownGrid.tsx
+    <!-- tab: DropDownGrid.tsx -->
     <DataGrid
         ref={dataGridRef}
         dataSource={dataSource}
@@ -431,6 +442,7 @@ To use focused and selection row features, set the following settings:
 
 ##### ASP.NET Core Controls
 
+    <!--Razor C#-->
     @using (Html.DevExtreme().NamedTemplate("EmbeddedDataGridSingle"))
     {
         @(Html.DevExtreme().DataGrid<SampleOrder>()
@@ -465,15 +477,16 @@ To use focused and selection row features, set the following settings:
 
 ---
 
-## 7) Focus management in `onOpened`
+### 7) Focus Management in `onOpened`
 
-When the popup opens, move focus into the DataGrid. Use DropDownBox [`onOpened`](https://js.devexpress.com/jQuery/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onOpened).
+When the popup opens, move focus into the DataGrid. Use DropDownBox [`onOpened`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/onOpened.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onOpened').
 
 The example implementation waits until the grid is ready (first open) or until the popup animation is complete (subsequent opens), then calls `grid.focus()`.
 
 ---
 ##### jQuery
 
+    <!-- tab: index.js -->
     function onOpened(e) {
         const dropDownBox = e.component;
         const gridFirstLoadCompleted = dropDownBox.option('gridFirstLoadCompleted');
@@ -507,7 +520,7 @@ The example implementation waits until the grid is ready (first open) or until t
 
 ##### Angular
 
-    // drop-down-grid.component.ts
+    <!-- tab: drop-down-grid.component.ts -->
     onOpened(e: DxDropDownBoxTypes.OpenedEvent): void {
         let gridFirstLoadCompleted = this.gridFirstLoadCompleted;
         const dropDownBox = e.component;
@@ -541,7 +554,7 @@ The example implementation waits until the grid is ready (first open) or until t
 
 ##### Vue
 
-    // DropDownBoxWithDataGrid.vue
+    <!-- tab: DropDownBoxWithDataGrid.vue -->
     function onOpened(e: DxDropDownBoxTypes.OpenedEvent): void {
         const _gridFirstLoadCompleted = gridFirstLoadCompleted.value;
         const dropDownBox = e.component;
@@ -572,7 +585,7 @@ The example implementation waits until the grid is ready (first open) or until t
 
 ##### React
 
-    // DropDownGrid.tsx
+    <!-- tab: DropDownGrid.tsx -->
     const onOpened = useCallback((e: DropDownBoxTypes.OpenedEvent) => {
         const isFirstLoadComplete = gridFirstLoadCompleted.current;
         const dropDownBox = e.component;
@@ -637,17 +650,19 @@ The example implementation waits until the grid is ready (first open) or until t
 
 ---
 
-## 8) Reset state in `onClosed`
+### 8) Reset State in `onClosed`
 
-When the popup closes, DropDownBox [`onClosed`](https://js.devexpress.com/jQuery/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onClosed) restores consistent state if the user typed something but did not confirm a selection.
+When the popup closes, DropDownBox [`onClosed`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/onClosed.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onClosed') restores consistent state if the user typed something but did not confirm a selection.
 
 Typically:
+
 - If nothing was loaded, reset the DropDownBox and clear `searchValue`
 - If a search was in progress (`text !== displayValue`), auto-select the first row
 
 ---
 ##### jQuery
 
+    <!-- tab: index.js -->
     function onClosed(e) {
         const dropDownBox = e.component;
         const hasLoadedItems = dataGridInstance.getVisibleRows().length;
@@ -668,7 +683,7 @@ Typically:
 
 ##### Angular
 
-    // drop-down-grid.component.ts
+    <!-- tab: drop-down-grid.component.ts -->
     onClosed(e: DxDropDownBoxTypes.ClosedEvent): void {
         const dropDownBox = e.component;
         const hasLoadedItems = this.dataGrid.instance.getVisibleRows().length;
@@ -689,7 +704,7 @@ Typically:
 
 ##### Vue
 
-    // DropDownBoxWithDataGrid.vue
+    <!-- tab: DropDownBoxWithDataGrid.vue -->
     function onClosed(e: DxDropDownBoxTypes.ClosedEvent): void {
         const dropDownBox = e.component;
         const hasLoadedItems = dataGridRef.value?.instance?.getVisibleRows().length;
@@ -711,7 +726,7 @@ Typically:
 
 ##### React
 
-    // DropDownGrid.tsx
+    <!-- tab: DropDownGrid.tsx -->
     const onClosed = useCallback((e: DropDownBoxTypes.ClosedEvent) => {
         const dropDownBox = e.component;
         const hasLoadedItems = dataGridRef.current?.instance().getVisibleRows().length;
@@ -750,19 +765,18 @@ Typically:
     }
 
 ---
-## Example
+
+[note] This approach supports single selection only. To implement multiple selection, use the [TagBox](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/') component instead.
+
+### Example
 
 See this example for more details: [DropDownBox with embedded DataGrid](https://github.com/DevExpress-Examples/devextreme-dropdownbox-filter-data-in-nested-widget).
 
-## See Also
-
-- [DropDownBox](https://js.devexpress.com/jQuery/Documentation/ApiReference/UI_Components/dxDropDownBox/)
-- [DropDownBox — `onInput`](https://js.devexpress.com/jQuery/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onInput)
-- [DataGrid](https://js.devexpress.com/jQuery/Documentation/ApiReference/UI_Components/dxDataGrid/)
-- [DataSource — `searchExpr`](https://js.devexpress.com/jQuery/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#searchExpr)
-- [DataSource — `searchValue`](https://js.devexpress.com/jQuery/Documentation/ApiReference/Data_Layer/DataSource/Methods/#searchValuevalue)
+#####See Also#####
+- [DropDownBox - Configuration](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/')
+- [DropDownBox - onInput](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/onInput.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onInput')
+- [DataGrid - Configuration](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/')
+- [DataSource - searchExpr](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/searchExpr.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#searchExpr')
+- [DataSource - searchValue(value)](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/searchValue(value).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#searchValuevalue')
 - [DevExtreme.AspNet.Data](https://github.com/DevExpress/DevExtreme.AspNet.Data)
-- [Example: DropDownBox with embedded DataGrid](https://github.com/DevExpress-Examples/devextreme-dropdownbox-filter-data-in-nested-widget)
-
-
-**Note:** This approach can be used with a single selection. If you want to implement multiple selection, we recommend using TagBox component. 
+- [Search by Lookup Column (TreeList)](/concepts/05%20UI%20Components/DropDownBox/20%20Search%20in%20Embedded%20Components/10%20Search%20by%20Lookup%20Column%20(TreeList).md '/Documentation/Guide/UI_Components/DropDownBox/Search_in_Embedded_Components/Search_by_Lookup_Column_(TreeList)/')

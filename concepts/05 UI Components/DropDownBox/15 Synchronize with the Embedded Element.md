@@ -109,6 +109,7 @@ Assign the field's name to the DropDownBox's [valueExpr](/api-reference/10%20UI%
 
     ##### React
 
+        <!-- tab: App.tsx -->
         import React from 'react';
         import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
@@ -259,6 +260,7 @@ The synchronization implementation depends on the embedded UI component's API an
 
     ##### React
 
+        <!-- tab: App.tsx -->
         import React, { useState, useRef } from 'react';
         import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
@@ -269,12 +271,10 @@ The synchronization implementation depends on the embedded UI component's API an
         export default function App() {
             const [dropDownBoxValues, setDropDownBoxValues] = useState<number[]>([1]);
             const dropDownBoxRef = useRef<DropDownBoxRef>(null);
-
             const changeDropDownBoxValue = (e: SelectionChangedEvent) => {
                 setDropDownBoxValues(e.selectedRowKeys as number[]);
                 dropDownBoxRef.current?.instance().close();
             };
-
             return (
                 <DropDownBox
                     ref={dropDownBoxRef}

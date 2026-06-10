@@ -6,10 +6,9 @@ Remote operations help to improve the PivotGrid performance when the amount of d
         // ...
     }
 
-Now, the PivotGrid needs a special configuration of the **CustomStore** on the client and implementation of [filtering](/concepts/05%20UI%20Components/PivotGrid/080%20Filtering '/Documentation/Guide/UI_Components/PivotGrid/Filtering/'), [grouping](/concepts/05%20UI%20Components/PivotGrid/050%20Grouping '/Documentation/Guide/UI_Components/PivotGrid/Grouping/') and [summary calculation](/concepts/05%20UI%20Components/PivotGrid/040%20Summaries '/Documentation/Guide/UI_Components/PivotGrid/Summaries/') on the server. If the server does not perform these operations yet, employ one of the following extensions by DevExtreme. They implement server-side data processing and also configure the **CustomStore** for you. 
+Now, the PivotGrid needs a special configuration of the **CustomStore** on the client and implementation of [filtering](/concepts/05%20UI%20Components/PivotGrid/080%20Filtering '/Documentation/Guide/UI_Components/PivotGrid/Filtering/'), [grouping](/concepts/05%20UI%20Components/PivotGrid/050%20Grouping '/Documentation/Guide/UI_Components/PivotGrid/Grouping/') and [summary calculation](/concepts/05%20UI%20Components/PivotGrid/040%20Summaries '/Documentation/Guide/UI_Components/PivotGrid/Summaries/') on the server.
 
-- <a href="https://github.com/DevExpress/DevExtreme.AspNet.Data" target="_blank">DevExtreme ASP.NET Data</a>
-- <a href="https://github.com/DevExpress/DevExtreme-PHP-Data" target="_blank">DevExtreme PHP Data</a>
+You can use the following extension to implement server-side data processing: [DevExtreme ASP.NET Data](https://github.com/DevExpress/DevExtreme.AspNet.Data).
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/WebAPIService/"

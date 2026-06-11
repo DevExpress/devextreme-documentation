@@ -388,7 +388,7 @@ You can use the **headerFilter.search.enabled** property to enable searching in 
 
 ---
 
-A header filter's popup menu initially lists all column values. You can group them using the **headerFilter**.[groupInterval](/api-reference/40%20Common%20Types/15%20grids/ColumnHeaderFilter/groupInterval.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#groupInterval') property if they are numbers or dates. You can also supply a custom data source for a header filter using the [dataSource](/api-reference/40%20Common%20Types/15%20grids/ColumnHeaderFilter/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#dataSource') property. Refer to the property's description for details.
+A header filter's popup menu initially lists all column values. You can group them using the **headerFilter**.[groupInterval](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns/headerFilter/groupInterval.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#groupInterval') property if they are numbers or dates. You can also supply a custom data source for a header filter using the [dataSource](/api-reference/40%20Common%20Types/15%20grids/ColumnHeaderFilter/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/#dataSource') property. Refer to the property's description for details.
 
 [note] If a column has empty cells (`null` or `''`), the header filter popup menu displays a `(Blanks)` item.
 

@@ -31,12 +31,12 @@ DropDownBox does not have built-in search. To add search functionality, embed a 
     <tr>
         <td>Extra datasource required</td>
         <td>No</td>
-        <td>Yes (lookup datasource / store to resolve typed text &rarr; matching IDs)</td>
+        <td>Yes (lookup data source / store to resolve typed text &rarr; matching IDs)</td>
     </tr>
     <tr>
         <td>Filtering logic</td>
         <td>The DataSource performs searching internally using <code>searchExpr</code> + <code>searchValue</code></td>
-        <td>You query the lookup datasource by display field (for example, <code>Name contains text</code>), map results to keys, then build an <code>OR</code> filter like <code>[EmployeeID, '=', 1] or [EmployeeID, '=', 5]</code></td>
+        <td>You query the lookup data source by display field (for example, <code>Name contains text</code>), map results to keys, then build an <code>OR</code> filter like <code>[EmployeeID, '=', 1] or [EmployeeID, '=', 5]</code></td>
     </tr>
     <tr>
         <td>Reset search on close</td>

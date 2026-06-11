@@ -1,4 +1,4 @@
-This topic covers search by a lookup column display value in a [DropDownBox](/api-reference/10%20UI%20Components/dxDropDownBox '/Documentation/ApiReference/UI_Components/dxDropDownBox/') with an embedded [TreeList](/api-reference/10%20UI%20Components/dxTreeList '/Documentation/ApiReference/UI_Components/dxTreeList/'). Because the search target is a display value from a related dataset, the approach resolves the typed text to matching IDs via the lookup datasource, then applies a [`DataSource.filter`](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/filter(filterExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#filterfilterExpr') on the main datasource.
+This topic covers search by a lookup column display value in a [DropDownBox](/api-reference/10%20UI%20Components/dxDropDownBox '/Documentation/ApiReference/UI_Components/dxDropDownBox/') with an embedded [TreeList](/api-reference/10%20UI%20Components/dxTreeList '/Documentation/ApiReference/UI_Components/dxTreeList/'). Because the search target is a display value from a related dataset, the approach resolves the typed text to matching IDs via the lookup data source, then applies a [`DataSource.filter`](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/filter(filterExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#filterfilterExpr') on the main data source.
 
 [note] This example demonstrates search when the TreeList uses a lookup column and you want the DropDownBox search to work by the lookup display value (for example, employee name), not by the stored key. If you do not need a lookup column, see [Search by Regular Field (DataGrid)](/concepts/05%20UI%20Components/DropDownBox/20%20Search%20in%20Embedded%20Components/05%20Search%20by%20Regular%20Field%20(DataGrid).md '/Documentation/Guide/UI_Components/DropDownBox/Search_in_Embedded_Components/Search_by_Regular_Field_(DataGrid)/').
 
@@ -63,7 +63,63 @@ To allow typing and handle user input:
 
 ---
 
-### 2) Configure `displayExpr`
+### 2) Create the Main `DataSource` for TreeList
+
+TreeList search in this scenario uses [`DataSource.filter`](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/filter(filterExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#filterfilterExpr') instead of `searchValue`, because the typed text must first be resolved to IDs via the lookup data source.
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    const dataSource = new DevExpress.data.DataSource({
+        store: makeAsyncDataSource('Task_ID', `${url}/Tasks`),
+    });
+
+##### Angular
+
+    <!-- tab: app.component.ts -->
+    this.dataSource = new DataSource({
+        store: AspNetData.createStore({
+            key: 'Task_ID',
+            loadUrl: `${url}/Tasks`,
+        }),
+    });
+
+##### Vue
+
+    <!-- tab: DropDownList.vue -->
+    const dataSource = new DataSource({
+        store: AspNetData.createStore({
+            key: 'Task_ID',
+            loadUrl: `${url}/Tasks`,
+        }),
+    });
+
+##### React
+
+    <!-- tab: DropDownList.tsx -->
+    const dataSource = new DataSource({
+        store: AspNetData.createStore({
+            key: 'Task_ID',
+            loadUrl: `${url}/Tasks`,
+        }),
+    });
+
+##### ASP.NET Core Controls
+
+    <!--Razor C#-->
+    @(Html.DevExtreme().TreeList()
+        .DataSource(d => d.Mvc()
+            .Controller("SampleData")
+            .LoadAction("GetTasks")
+            .Key("Task_ID")
+        )
+        // ...
+    )
+
+---
+
+### 3) Configure `displayExpr`
 
 Use [`displayExpr`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#displayExpr') to define how a selected item appears in the input field.
 
@@ -163,62 +219,6 @@ Because the displayed text depends on lookup data (employee name from a related 
         if (!employeeData) return item.Task_Subject || '';
         return `${employeeData.Name}: ${item.Task_Subject} (${item.Task_Status})`;
     }
-
----
-
-### 3) Create the Main `DataSource` for TreeList
-
-TreeList search in this scenario uses [`DataSource.filter`](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/filter(filterExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#filterfilterExpr') instead of `searchValue`, because the typed text must first be resolved to IDs via the lookup datasource.
-
----
-##### jQuery
-
-    <!-- tab: index.js -->
-    const dataSource = new DevExpress.data.DataSource({
-        store: makeAsyncDataSource('Task_ID', `${url}/Tasks`),
-    });
-
-##### Angular
-
-    <!-- tab: app.component.ts -->
-    this.dataSource = new DataSource({
-        store: AspNetData.createStore({
-            key: 'Task_ID',
-            loadUrl: `${url}/Tasks`,
-        }),
-    });
-
-##### Vue
-
-    <!-- tab: DropDownList.vue -->
-    const dataSource = new DataSource({
-        store: AspNetData.createStore({
-            key: 'Task_ID',
-            loadUrl: `${url}/Tasks`,
-        }),
-    });
-
-##### React
-
-    <!-- tab: DropDownList.tsx -->
-    const dataSource = new DataSource({
-        store: AspNetData.createStore({
-            key: 'Task_ID',
-            loadUrl: `${url}/Tasks`,
-        }),
-    });
-
-##### ASP.NET Core Controls
-
-    <!--Razor C#-->
-    @(Html.DevExtreme().TreeList()
-        .DataSource(d => d.Mvc()
-            .Controller("SampleData")
-            .LoadAction("GetTasks")
-            .Key("Task_ID")
-        )
-        // ...
-    )
 
 ---
 
@@ -434,7 +434,7 @@ Use DropDownBox [`contentTemplate`](/api-reference/10%20UI%20Components/dxDropDo
 
 ### 5) Implement Search in `onInput`
 
-Use DropDownBox [`onInput`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/onInput.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onInput') to open the dropdown and trigger the search. Because the search targets a lookup column display value, the typed text must first be resolved to matching IDs via the lookup datasource, then applied as a [`DataSource.filter`](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/filter(filterExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#filterfilterExpr') on the main datasource:
+Use DropDownBox [`onInput`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/onInput.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onInput') to open the dropdown and trigger the search. Because the search targets a lookup column display value, the typed text must first be resolved to matching IDs via the lookup data source, then applied as a [`DataSource.filter`](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/filter(filterExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#filterfilterExpr') on the main data source:
 
     function applySearchFilter(text, lookupField, dataField, searchExprVal, lookupDataSource, dataSource) {
         // Step 1: find employees whose Name contains the typed text

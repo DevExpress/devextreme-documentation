@@ -145,147 +145,7 @@ Use [`displayExpr`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Config
         return `${item.Employee}: ${item.StoreState} - ${item.StoreCity} <${item.OrderNumber}>`;
     }
 
-### 4) Implement Search in `onInput`
-
-Use the DropDownBox [`onInput`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/onInput.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onInput') event to:
-
-1. Ensure the dropdown is open
-2. Apply `dataSource.searchValue(text)`
-3. Load results and move focus to the first match
-
----
-##### jQuery
-
-    <!-- tab: index.js -->
-    onInput: (e) => {
-        clearTimeout(searchTimerId);
-        searchTimerId = setTimeout(() => {
-            const dropDownBox = e.component;
-            if (!dropDownBox.option('opened')) dropDownBox.open();
-            const text = dropDownBox.option('text') || '';
-            dataSource.searchValue(text);
-            if (isSearchIncomplete(dropDownBox)) {
-                const onChanged = () => {
-                    const items = dataSource.items();
-                    if (items.length > 0) {
-                        dataGridInstance.option('focusedRowKey', items[0].OrderNumber);
-                    }
-                    dropDownBox.focus();
-                    dataSource.off('changed', onChanged);
-                };
-                dataSource.on('changed', onChanged);
-                dataSource.load();
-            }
-        }, searchTimeout);
-    },
-
-##### Angular
-
-    <!-- tab: drop-down-grid.component.ts -->
-    onInput(e: DxDropDownBoxTypes.InputEvent): void {
-        if (this.searchTimer) clearTimeout(this.searchTimer);
-        this.searchTimer = setTimeout(() => {
-            if (!this.gridBoxOpened) this.gridBoxOpened = true;
-            const text = e.component.option('text');
-            this.dataSource.searchValue(text ?? null);
-            if (this.isSearchIncomplete(e.component)) {
-                const onChanged = (): void => {
-                    const items = this.dataSource.items();
-                    if (items.length > 0) {
-                        this.focusedRowKey = items[0].OrderNumber;
-                    }
-                    this.focusInput();
-                    this.dataSource.off('changed', onChanged);
-                };
-                this.dataSource.on('changed', onChanged);
-                this.dataSource.load().catch(() => {});
-            }
-        }, this.searchTimeout);
-    }
-
-##### Vue
-
-    <!-- tab: DropDownBoxWithDataGrid.vue -->
-    function onInput(e: DxDropDownBoxTypes.InputEvent): void {
-        if (searchTimer.value) clearTimeout(searchTimer.value);
-        searchTimer.value = setTimeout(() => {
-            if (!gridBoxOpened.value) gridBoxOpened.value = true;
-            const text = e.component.option('text');
-            props.dataSource.searchValue(text ?? null);
-            if (isSearchIncomplete(e.component)) {
-                const onChanged = (): void => {
-                    const items = props.dataSource.items();
-                    if (items.length > 0) {
-                        focusedRowKey.value = (items[0] as OrderItem).OrderNumber;
-                    }
-                    dropDownBoxRef.value?.instance?.focus();
-                    props.dataSource.off('changed', onChanged);
-                };
-                props.dataSource.on('changed', onChanged);
-                props.dataSource.load().catch(() => {});
-            }
-        }, props.searchTimeout);
-    }
-
-##### React
-
-    <!-- tab: DropDownGrid.tsx -->
-    const onChanged = useCallback(() => {
-        const items = dataSource.items();
-        if (items.length > 0) {
-            dispatch({ type: 'SET_FOCUSED_KEY', key: items[0].OrderNumber });
-        }
-        dropDownBoxRef.current?.instance().focus();
-        dataSource.off('changed', onChanged);
-    }, []);
-
-    const onInput = useCallback((e: DropDownBoxTypes.InputEvent) => {
-        if (searchTimer.current) clearTimeout(searchTimer.current);
-        searchTimer.current = setTimeout(() => {
-            if (!gridBoxOpened) setGridBoxOpened(true);
-            const text = e.component.option('text');
-            dataSource.searchValue(text ?? null);
-            if (isSearchIncomplete(e.component)) {
-                dataSource.on('changed', onChanged);
-                dataSource.load().catch(() => {});
-            }
-        }, searchTimeout);
-    }, [dataSource, gridBoxOpened, searchTimeout]);
-
-##### ASP.NET Core Controls
-
-    function onInput(e) {
-        clearTimeout(searchTimerId);
-        searchTimerId = setTimeout(() => {
-            const dropDownBox = e.component;
-            if (!dropDownBox.option('opened')) dropDownBox.open();
-            performSearch({
-                dropDownBox,
-                dataSource: getGridDataSource(),
-                grid: dataGridInstance,
-            });
-        }, searchTimeout);
-    }
-
----
-
-### 5) Detect Whether the User Is Currently Searching (`isSearchIncomplete`)
-
-This helper compares:
-
-- `text` — what the user typed
-- `displayValue` — formatted text for the currently selected value
-
-If they differ, it means the user is searching and the popup state should be managed accordingly.
-
-    function isSearchIncomplete(dropDownBox) {
-        let displayValue = dropDownBox.option('displayValue');
-        let text = dropDownBox.option('text') || '';
-        displayValue = displayValue && displayValue.length && displayValue[0];
-        return text !== displayValue;
-    }
-
-### 6) Configure the Embedded DataGrid in `contentTemplate`
+### 4) Configure the Embedded DataGrid in `contentTemplate`
 
 Use DropDownBox [`contentTemplate`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#contentTemplate') to render the DataGrid.
 
@@ -476,6 +336,146 @@ To use focused and selection row features, specify the following settings:
     }
 
 ---
+
+### 5) Implement Search in `onInput`
+
+Use the DropDownBox [`onInput`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/onInput.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onInput') event to:
+
+1. Ensure the dropdown is open
+2. Apply `dataSource.searchValue(text)`
+3. Load results and move focus to the first match
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    onInput: (e) => {
+        clearTimeout(searchTimerId);
+        searchTimerId = setTimeout(() => {
+            const dropDownBox = e.component;
+            if (!dropDownBox.option('opened')) dropDownBox.open();
+            const text = dropDownBox.option('text') || '';
+            dataSource.searchValue(text);
+            if (isSearchIncomplete(dropDownBox)) {
+                const onChanged = () => {
+                    const items = dataSource.items();
+                    if (items.length > 0) {
+                        dataGridInstance.option('focusedRowKey', items[0].OrderNumber);
+                    }
+                    dropDownBox.focus();
+                    dataSource.off('changed', onChanged);
+                };
+                dataSource.on('changed', onChanged);
+                dataSource.load();
+            }
+        }, searchTimeout);
+    },
+
+##### Angular
+
+    <!-- tab: drop-down-grid.component.ts -->
+    onInput(e: DxDropDownBoxTypes.InputEvent): void {
+        if (this.searchTimer) clearTimeout(this.searchTimer);
+        this.searchTimer = setTimeout(() => {
+            if (!this.gridBoxOpened) this.gridBoxOpened = true;
+            const text = e.component.option('text');
+            this.dataSource.searchValue(text ?? null);
+            if (this.isSearchIncomplete(e.component)) {
+                const onChanged = (): void => {
+                    const items = this.dataSource.items();
+                    if (items.length > 0) {
+                        this.focusedRowKey = items[0].OrderNumber;
+                    }
+                    this.focusInput();
+                    this.dataSource.off('changed', onChanged);
+                };
+                this.dataSource.on('changed', onChanged);
+                this.dataSource.load().catch(() => {});
+            }
+        }, this.searchTimeout);
+    }
+
+##### Vue
+
+    <!-- tab: DropDownBoxWithDataGrid.vue -->
+    function onInput(e: DxDropDownBoxTypes.InputEvent): void {
+        if (searchTimer.value) clearTimeout(searchTimer.value);
+        searchTimer.value = setTimeout(() => {
+            if (!gridBoxOpened.value) gridBoxOpened.value = true;
+            const text = e.component.option('text');
+            props.dataSource.searchValue(text ?? null);
+            if (isSearchIncomplete(e.component)) {
+                const onChanged = (): void => {
+                    const items = props.dataSource.items();
+                    if (items.length > 0) {
+                        focusedRowKey.value = (items[0] as OrderItem).OrderNumber;
+                    }
+                    dropDownBoxRef.value?.instance?.focus();
+                    props.dataSource.off('changed', onChanged);
+                };
+                props.dataSource.on('changed', onChanged);
+                props.dataSource.load().catch(() => {});
+            }
+        }, props.searchTimeout);
+    }
+
+##### React
+
+    <!-- tab: DropDownGrid.tsx -->
+    const onChanged = useCallback(() => {
+        const items = dataSource.items();
+        if (items.length > 0) {
+            dispatch({ type: 'SET_FOCUSED_KEY', key: items[0].OrderNumber });
+        }
+        dropDownBoxRef.current?.instance().focus();
+        dataSource.off('changed', onChanged);
+    }, []);
+
+    const onInput = useCallback((e: DropDownBoxTypes.InputEvent) => {
+        if (searchTimer.current) clearTimeout(searchTimer.current);
+        searchTimer.current = setTimeout(() => {
+            if (!gridBoxOpened) setGridBoxOpened(true);
+            const text = e.component.option('text');
+            dataSource.searchValue(text ?? null);
+            if (isSearchIncomplete(e.component)) {
+                dataSource.on('changed', onChanged);
+                dataSource.load().catch(() => {});
+            }
+        }, searchTimeout);
+    }, [dataSource, gridBoxOpened, searchTimeout]);
+
+##### ASP.NET Core Controls
+
+    function onInput(e) {
+        clearTimeout(searchTimerId);
+        searchTimerId = setTimeout(() => {
+            const dropDownBox = e.component;
+            if (!dropDownBox.option('opened')) dropDownBox.open();
+            performSearch({
+                dropDownBox,
+                dataSource: getGridDataSource(),
+                grid: dataGridInstance,
+            });
+        }, searchTimeout);
+    }
+
+---
+
+### 6) Detect Whether the User Is Searching (`isSearchIncomplete`)
+
+This helper compares:
+
+- `text` — what the user typed
+- `displayValue` — formatted text for the currently selected value
+
+If they differ, it means the user is searching and the popup state should be managed accordingly.
+
+    function isSearchIncomplete(dropDownBox) {
+        let displayValue = dropDownBox.option('displayValue');
+        let text = dropDownBox.option('text') || '';
+        displayValue = displayValue && displayValue.length && displayValue[0];
+        return text !== displayValue;
+    }
 
 ### 7) Focus Management in `onOpened`
 

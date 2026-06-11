@@ -6,10 +6,9 @@ Remote operations help to improve the PivotGrid performance when the amount of d
         // ...
     }
 
-Now, the PivotGrid needs a special configuration of the **CustomStore** on the client and implementation of [filtering](/concepts/05%20UI%20Components/PivotGrid/080%20Filtering '/Documentation/Guide/UI_Components/PivotGrid/Filtering/'), [grouping](/concepts/05%20UI%20Components/PivotGrid/050%20Grouping '/Documentation/Guide/UI_Components/PivotGrid/Grouping/') and [summary calculation](/concepts/05%20UI%20Components/PivotGrid/040%20Summaries '/Documentation/Guide/UI_Components/PivotGrid/Summaries/') on the server. If the server does not perform these operations yet, employ one of the following extensions by DevExtreme. They implement server-side data processing and also configure the **CustomStore** for you. 
+Now, the PivotGrid needs a special configuration of the **CustomStore** on the client and implementation of [filtering](/concepts/05%20UI%20Components/PivotGrid/080%20Filtering '/Documentation/Guide/UI_Components/PivotGrid/Filtering/'), [grouping](/concepts/05%20UI%20Components/PivotGrid/050%20Grouping '/Documentation/Guide/UI_Components/PivotGrid/Grouping/') and [summary calculation](/concepts/05%20UI%20Components/PivotGrid/040%20Summaries '/Documentation/Guide/UI_Components/PivotGrid/Summaries/') on the server.
 
-- <a href="https://github.com/DevExpress/DevExtreme.AspNet.Data" target="_blank">DevExtreme ASP.NET Data</a>
-- <a href="https://github.com/DevExpress/DevExtreme-PHP-Data" target="_blank">DevExtreme PHP Data</a>
+You can use the following extension to implement server-side data processing: [DevExtreme.AspNet.Data](https://github.com/DevExpress/DevExtreme.AspNet.Data).
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/WebAPIService/"
@@ -18,7 +17,7 @@ Now, the PivotGrid needs a special configuration of the **CustomStore** on the c
     href: "https://github.com/DevExpress-Examples/devextreme-pivotgrid-with-webapi"
 }
 
-If these extensions do not suit your needs, configure the **CustomStore** and implement server-side data processing by yourself, following the instructions given below. Define the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function for the **CustomStore**. This function accepts a bag of **loadOptions** and passes them to the server. The server must process data according to the **loadOptions** and send processed data back. 
+If this extension does not suit your needs, configure the **CustomStore** and implement server-side data processing by yourself, following the instructions given below. Define the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function for the **CustomStore**. This function accepts a bag of **loadOptions** and passes them to the server. The server must process data according to the **loadOptions** and send processed data back. 
 
 The example below shows how to implement the **load** function. Note that in this example, the **CustomStore** is not declared explicitly. Instead, its load operation is implemented directly in the [PivotGridDataSource](/api-reference/30%20Data%20Layer/PivotGridDataSource '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/') configuration object to shorten the example.
 

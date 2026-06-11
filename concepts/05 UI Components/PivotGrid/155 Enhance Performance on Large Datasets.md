@@ -4,7 +4,7 @@ This help topic describes how to improve PivotGrid performance when binding and 
 
 The DevExtreme PivotGrid performs all data operations, such as filtering and grouping, on the client side. To enhance component performance, enable **PivotGridDataSource**.[remoteOperations](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/remoteOperations.md '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/#remoteOperations') to process data on the server side. PivotGrid **remoteOperations** support [XmlaStore](/api-reference/30%20Data%20Layer/XmlaStore '/Documentation/ApiReference/Data_Layer/XmlaStore/') and [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Documentation/ApiReference/Data_Layer/CustomStore/') store types, along with **CustomStore** instances created with [DevExtreme.AspNet.Data](https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/README.md).[createStore](https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/docs/client-side-with-jquery.md#api-reference).
 
-For more information about the **createStore** method, refer to the following topic: [Web API, PHP and MongoDB Data Sources](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/30%20Web%20API%2C%20PHP%2C%20MongoDB.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/')
+For more information about the **createStore** method, refer to the following topic: [Web API and MongoDB Data Sources](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API_and_MongoDB/)
 
 For more information about integrating a Web API service with PivotGrid, refer to the following demo:
 

@@ -17,7 +17,7 @@ You can use the following extension to implement server-side data processing: [D
     href: "https://github.com/DevExpress-Examples/devextreme-pivotgrid-with-webapi"
 }
 
-If these extensions do not suit your needs, configure the **CustomStore** and implement server-side data processing by yourself, following the instructions given below. Define the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function for the **CustomStore**. This function accepts a bag of **loadOptions** and passes them to the server. The server must process data according to the **loadOptions** and send processed data back. 
+If this extension does not suit your needs, configure the **CustomStore** and implement server-side data processing by yourself, following the instructions given below. Define the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') function for the **CustomStore**. This function accepts a bag of **loadOptions** and passes them to the server. The server must process data according to the **loadOptions** and send processed data back. 
 
 The example below shows how to implement the **load** function. Note that in this example, the **CustomStore** is not declared explicitly. Instead, its load operation is implemented directly in the [PivotGridDataSource](/api-reference/30%20Data%20Layer/PivotGridDataSource '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/') configuration object to shorten the example.
 

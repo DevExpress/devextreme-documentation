@@ -2,6 +2,12 @@ This topic covers search by a lookup column display value in a [DropDownBox](/ap
 
 [note] This example demonstrates search when the TreeList uses a lookup column and you want the DropDownBox search to work by the lookup display value (for example, employee name), not by the stored key. If you do not need a lookup column, see [Search by Regular Field (DataGrid)](/concepts/05%20UI%20Components/DropDownBox/20%20Search%20in%20Embedded%20Components/05%20Search%20by%20Regular%20Field%20(DataGrid).md '/Documentation/Guide/UI_Components/DropDownBox/Search_in_Embedded_Components/Search_by_Regular_Field_(DataGrid)/').
 
+The full working code is available in the GitHub repository:
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-dropdownbox-implement-search-for-treelist"
+}
+
 ### 1) Configure DropDownBox to Accept User Input
 
 To allow typing and handle user input:

@@ -2,6 +2,12 @@ This topic covers search by a regular (non-lookup) field in a [DropDownBox](/api
 
 [note] This example uses a plain DataGrid data structure. For search through a lookup column, see [Search by Lookup Column (TreeList)](/concepts/05%20UI%20Components/DropDownBox/20%20Search%20in%20Embedded%20Components/10%20Search%20by%20Lookup%20Column%20(TreeList).md '/Documentation/Guide/UI_Components/DropDownBox/Search_in_Embedded_Components/Search_by_Lookup_Column_(TreeList)/').
 
+The full working code is available in the GitHub repository:
+
+#include btn-open-github with {
+    href: "https://github.com/DevExpress-Examples/devextreme-dropdownbox-filter-data-in-nested-widget"
+}
+
 ### 1) Configure DropDownBox to Accept User Input
 
 - Enable [`acceptCustomValue`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/acceptCustomValue.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#acceptCustomValue') so the user can type text.
@@ -463,12 +469,7 @@ Use the DropDownBox [`onInput`](/api-reference/10%20UI%20Components/dxDropDownBo
 
 ### 6) Detect Whether the User Is Searching (`isSearchIncomplete`)
 
-This helper compares:
-
-- `text` — what the user typed
-- `displayValue` — formatted text for the currently selected value
-
-If they differ, it means the user is searching and the popup state should be managed accordingly.
+The `isSearchIncomplete` function returns `true` if the user has changed the input text and a new search must be applied (that is, `text` differs from the current `displayValue`):
 
     function isSearchIncomplete(dropDownBox) {
         let displayValue = dropDownBox.option('displayValue');
@@ -767,10 +768,6 @@ Typically:
 ---
 
 [note] This approach supports single selection only. To implement multiple selection, use the [TagBox](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/') component instead.
-
-### Example
-
-See this example for more details: [DropDownBox with embedded DataGrid](https://github.com/DevExpress-Examples/devextreme-dropdownbox-filter-data-in-nested-widget).
 
 #####See Also#####
 - [DropDownBox - Configuration](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/')

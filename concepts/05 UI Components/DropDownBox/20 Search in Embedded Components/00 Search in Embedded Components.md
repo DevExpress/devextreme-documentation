@@ -29,7 +29,7 @@ DropDownBox does not have built-in search. To add search functionality, embed a 
         <td><code>searchExpr</code> is not enough for lookup display text; you must build an ID-based filter</td>
     </tr>
     <tr>
-        <td>Extra datasource required</td>
+        <td>Extra data source required</td>
         <td>No</td>
         <td>Yes (lookup data source / store to resolve typed text &rarr; matching IDs)</td>
     </tr>

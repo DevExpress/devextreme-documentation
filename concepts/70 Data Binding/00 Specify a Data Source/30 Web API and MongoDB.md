@@ -1,8 +1,7 @@
-DevExtreme provides the following extensions for binding to Web API, PHP, and MongoDb services:
+You can use the following extensions to bind DevExtreme components to Web API and MongoDB services:
 
-- <a href="https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/README.md" target="_blank">DevExtreme.AspNet.Data</a>
-- <a href="https://github.com/DevExpress/DevExtreme-PHP-Data/blob/master/README.md" target="_blank">DevExtreme-PHP-Data</a>
-- <a href="https://github.com/oliversturm/devextreme-query-mongodb/blob/master/README.md" target="_blank">devextreme-query-mongodb</a>
+- [DevExtreme.AspNet.Data](https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/README.md)
+- [devextreme-query-mongodb](https://github.com/oliversturm/devextreme-query-mongodb/blob/master/README.md)
 
 These extensions enable server-side filtering, sorting, grouping, and other data shaping operations according to the protocol that DevExtreme UI components use. Follow the links above for information on how to configure the extensions on the server.
 

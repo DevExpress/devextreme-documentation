@@ -76,7 +76,7 @@ Set the **dataSource** property to the URL of a JSON file or service that return
 Implement an [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/').
 
 - **Web API and MongoDB**     
-Use one of the following extensions to enable the server to process data according to the protocol DevExtreme UI components use:
+Use one of the following extensions to enable server-side data processing for DevExtreme UI components:
 
     - <a href="https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/README.md" target="_blank">DevExtreme.AspNet.Data</a>
     - <a href="https://github.com/oliversturm/devextreme-query-mongodb/blob/master/README.md" target="_blank">devextreme-query-mongodb</a>

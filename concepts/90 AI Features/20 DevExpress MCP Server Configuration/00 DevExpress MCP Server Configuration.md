@@ -1,4 +1,4 @@
-The DevExpress MCP server connects MCP-compatible AI tools with the DevExpress documentation library, including DevExtreme documentation. The MCP server ensures AI tools (such as GitHub Copilot) have direct access to the latest information on DevExtreme JavaScript components.
+The DevExpress MCP Server connects MCP-compatible AI tools with the DevExpress documentation library, including DevExtreme documentation. The MCP Server ensures AI tools (such as GitHub Copilot) have direct access to the latest information on DevExtreme JavaScript components.
 
 [note] If you want reusable, task-focused prompts for AI coding assistants, refer to the following help topic: [DevExpress AI Skills](/concepts/90%20AI%20Features/30%20DevExpress%20AI%20Skills.md '/Documentation/Guide/AI_Features/DevExpress_AI_Skills/').
 

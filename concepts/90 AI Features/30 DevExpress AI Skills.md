@@ -1,6 +1,6 @@
 DevExpress AI Skills is a public repository of reusable agent skills for DevExpress products (including DevExtreme). DevExtreme-specific skills are located in the [skills](https://github.com/DevExpress/agent-skills/tree/main/plugins/dx-devextreme/skills/skills) folder of the [DevExpress/agent-skills](https://github.com/DevExpress/agent-skills) repository and are designed for AI coding assistants, such as GitHub Copilot, Claude Code, Cursor, and JetBrains AI Assistant.
 
-Use these skills when you want an AI assistant to follow DevExpress-specific patterns, use feature/task-specific APIs, and generate code that corresponds to the product and framework you are working with.
+Use these skills when you want an AI assistant to follow DevExpress-specific patterns, use feature/task-specific APIs, and generate code that corresponds to the product and framework with which you are working.
 
 ## What Each Skill Contains
 
@@ -11,7 +11,7 @@ Use these skills when you want an AI assistant to follow DevExpress-specific pat
 
 ## DevExtreme Skills
 
-The repository includes skills for the following DevExtreme components and features:
+This repository includes skills for the following DevExtreme components and features:
 
 - [DataGrid](/concepts/05%20UI%20Components/DataGrid/03%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/DataGrid/Overview/')
 - [Scheduler](/concepts/05%20UI%20Components/Scheduler/02%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/Scheduler/Overview/')
@@ -37,12 +37,12 @@ For agent-specific and IDE-specific setup instructions, refer to the [repository
 
 ## When to Use AI Skills and When to Use MCP
 
-For best results, use DevExpress AI Skills together with the [DevExpress MCP server](/concepts/90%20AI%20Features/20%20DevExpress%20MCP%20Server%20Configuration/00%20DevExpress%20MCP%20Server%20Configuration.md '/Documentation/Guide/AI_Features/DevExpress_MCP_Server_Configuration/'). Skills supply curated task patterns and product-specific rules while the MCP server adds live documentation lookup and version-sensitive details. DevExpress AI Skills and MCP server complement each other.
+For best results, use DevExpress AI Skills together with the [DevExpress MCP Server](/concepts/90%20AI%20Features/20%20DevExpress%20MCP%20Server%20Configuration/00%20DevExpress%20MCP%20Server%20Configuration.md '/Documentation/Guide/AI_Features/DevExpress_MCP_Server_Configuration/'). Skills supply curated task patterns and product-specific rules while the MCP Server adds live documentation lookup and version-sensitive details. DevExpress AI Skills and MCP Server complement each other.
 
 While DevExpress AI Skills and DevExpress MCP Server produce the best results when used together, separate usage of these tools may be beneficial in the following scenarios:
 
 - When you need the assistant to follow curated task patterns and product-specific rules without a network connection to documentation, use DevExpress AI Skills.
-- When you need live documentation lookup, version-sensitive details, or a direct connection to the DevExpress documentation library, use the DevExpress MCP server.
+- When you need live documentation lookup, version-sensitive details, or a direct connection to the DevExpress documentation library, use the DevExpress MCP Server.
 
 [note] We recommend using a top-tier model for the most accurate results. Lower-tier models may ignore skill instructions or produce less reliable output.
 

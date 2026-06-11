@@ -5,7 +5,7 @@
   "version": "26.1.0",
   "license": "UNLICENSED",
   "engines": {
-    "node": "^24.15.0"
+    "node": "^24.16.0"
   },
   "repository": {
     "type": "git",
@@ -29,7 +29,7 @@
     "rename-uid": "ts-node ./tools/rename-uid.ts ./api-reference uid-map.json"
   },
   "dependencies": {
-    "@types/node": "^20.19.41"
+    "@types/node": "^24.0.0"
   },
   "packageManager": "pnpm@11.5.1"
 }

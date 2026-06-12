@@ -8,4 +8,5 @@ default: 'left'
 Aligns constant line labels in the horizontal direction.
 
 ---
-<!-- Description goes here -->
+
+[note] When the label's [position](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/constantLines/label/#position) is *"outside"*, **horizontalAlignment** can only be *"left"* or *"right"*.

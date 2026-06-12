@@ -12,6 +12,7 @@ The `open` method returns a `DxPopupServiceComponent` object. This type extends 
 
     <!-- tab: app.component.ts -->
     import { DxPopupService } from 'devextreme-angular/ui/popup';
+
     // ...
     export class AppComponent {
         employees: Employee[];
@@ -32,44 +33,46 @@ The `open` method returns a `DxPopupServiceComponent` object. This type extends 
                 showCloseButton: true,
             });
 
-            popupRef.contentRef.instance.currentEmployee = employee;
+            popupRef.contentRef.instance.currentEmployee.set(employee);
         }
     }
 
     <!-- tab: employee-info.component.ts -->
-    import { Component, Input } from '@angular/core';
+    import { Component, signal } from '@angular/core';
+
     @Component({
         standalone: true,
         selector: '',
-        template: `<div>
-        <p>
-            Full Name:
-            <span>
-            {{ currentEmployee['FirstName'] }}
-            {{ currentEmployee['LastName'] }}
-            </span>
-        </p>
-        <p>
-            Birth Date:
-            <span>{{ currentEmployee['BirthDate'] }}</span>
-        </p>
-        <p>
-            Address:
-            <span>{{ currentEmployee['Address'] }}</span>
-        </p>
-        <p>
-            Hire Date:
-            <span>{{ currentEmployee['HireDate'] }}</span>
-        </p>
-        <p>
-            Position:
-            <span>{{ currentEmployee['Position'] }}</span>
-        </p>
-    </div>`,
+        template: `
+            <div>
+                <p>
+                    Full Name:
+                    <span>
+                        {{ currentEmployee()['FirstName'] }}
+                        {{ currentEmployee()['LastName'] }}
+                    </span>
+                </p>
+                <p>
+                    Birth Date:
+                    <span>{{ currentEmployee()['BirthDate'] }}</span>
+                </p>
+                <p>
+                    Address:
+                    <span>{{ currentEmployee()['Address'] }}</span>
+                </p>
+                <p>
+                    Hire Date:
+                    <span>{{ currentEmployee()['HireDate'] }}</span>
+                </p>
+                <p>
+                    Position:
+                    <span>{{ currentEmployee()['Position'] }}</span>
+                </p>
+            </div>
+        `,
     })
-
     export class EmployeeInfoComponent {
-        @Input() currentEmployee: Record<string, any> = {};
+        currentEmployee = signal<Record<string, unknown>>({});
     }
 
 ---
@@ -81,6 +84,7 @@ You can access the Popup instance through `DxPopupServiceComponent`. Call the [h
 
     <!-- tab: app.component.ts -->
     import { DxPopupService, DxPopupServiceComponent } from 'devextreme-angular/ui/popup';
+
     // ...
     export class AppComponent {
         employees: Employee[];
@@ -101,7 +105,7 @@ You can access the Popup instance through `DxPopupServiceComponent`. Call the [h
                 width: 300
             });
 
-            this.popupRef.contentRef.instance.currentEmployee = employee;
+            this.popupRef.contentRef.instance.currentEmployee.set(employee);
         }
 
         closePopup() {

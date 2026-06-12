@@ -1,1 +1,3 @@
 You can use AI-powered capabilities with a number of DevExtreme components. To activate these AI-powered features, implement any large language model (LLM) that offers REST/client APIs. Self-hosted or remote AI agents are supported.
+
+[note] If you use an AI coding assistant, DevExpress AI Skills can help you apply curated DevExtreme and DevExpress product-specific guidance. Refer to the following help topic for detailed information in this regard: [DevExpress AI Skills](/concepts/90%20AI%20Features/30%20DevExpress%20AI%20Skills.md '/Documentation/Guide/AI_Features/DevExpress_AI_Skills/').

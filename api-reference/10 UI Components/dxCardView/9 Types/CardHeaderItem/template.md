@@ -24,8 +24,8 @@ Template name or container.
 
 This property supports the following values:
 
-- Template container as a jQuery object or a DOM Node
-- A function that returns a template container (as a jQuery object or a DOM node)
+- Template container as a jQuery object or DOM Node
+- A function that returns a template container (as a jQuery object or DOM node)
 
 For more information about templates, refer to the following topic: [DevExtreme {Framework} - Custom Templates](/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates).
 

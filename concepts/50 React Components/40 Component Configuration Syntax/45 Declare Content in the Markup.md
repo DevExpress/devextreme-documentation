@@ -47,6 +47,6 @@ The following code snippet specifies inline ScrollView content:
     - Toast
     - Tooltip
 
-    This behavior initializes and renders embedded UI components on parent component initialization. To ensure embedded components are initialized and rendered only when the parent component is rendered, define **contentComponent** or **contentRender**.
+    This behavior initializes and renders embedded UI components on parent component initialization. To ensure embedded components are initialized and rendered only when the parent component is rendered or opened, define **contentComponent** or **contentRender**.
 
 [/note]

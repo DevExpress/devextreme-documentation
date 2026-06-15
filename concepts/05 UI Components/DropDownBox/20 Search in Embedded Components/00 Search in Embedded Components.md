@@ -4,12 +4,12 @@ DropDownBox does not have built-in search. To add search functionality, embed a 
 
 <table class="dx-table">
     <tr>
-        <th>Aspect</th>
+        <th>Implementation Aspect</th>
         <th>Search by regular field (no lookup column involved)</th>
         <th>Search by lookup column display value (lookup involved)</th>
     </tr>
     <tr>
-        <td>Typical component</td>
+        <td>Embedded component</td>
         <td>DataGrid / TreeList</td>
         <td>DataGrid / TreeList</td>
     </tr>
@@ -24,14 +24,9 @@ DropDownBox does not have built-in search. To add search functionality, embed a 
         <td><a href="/Documentation/ApiReference/Data_Layer/DataSource/Methods/#filterfilterExpr">DataSource.filter(filterExpr)</a></td>
     </tr>
     <tr>
-        <td>Search fields configuration</td>
-        <td><a href="/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#searchExpr">searchExpr</a> specifies the field(s) to search</td>
-        <td><code>searchExpr</code> is not enough for lookup display text; you must build an ID-based filter</td>
-    </tr>
-    <tr>
         <td>Extra data source required</td>
         <td>No</td>
-        <td>Yes (lookup data source / store to resolve typed text &rarr; matching IDs)</td>
+        <td>Yes, a lookup data source</td>
     </tr>
     <tr>
         <td>Filtering logic</td>
@@ -47,7 +42,7 @@ DropDownBox does not have built-in search. To add search functionality, embed a 
 
 [note] These approaches support single selection only. To implement multiple selection, use the [TagBox](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/') component instead.
 
-For complete working examples, see the GitHub repositories:
+For complete working examples, see the following GitHub repositories:
 - [DropDownBox with embedded DataGrid](https://github.com/DevExpress-Examples/devextreme-dropdownbox-filter-data-in-nested-widget) (search by regular field)
 - [DropDownBox with embedded TreeList](https://github.com/DevExpress-Examples/devextreme-dropdownbox-implement-search-for-treelist) (search by lookup column display value)
 

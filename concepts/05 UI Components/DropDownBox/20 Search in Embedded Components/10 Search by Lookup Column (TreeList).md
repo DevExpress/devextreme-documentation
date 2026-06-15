@@ -1,6 +1,6 @@
 This topic covers search by a lookup column display value in a [DropDownBox](/api-reference/10%20UI%20Components/dxDropDownBox '/Documentation/ApiReference/UI_Components/dxDropDownBox/') with an embedded [TreeList](/api-reference/10%20UI%20Components/dxTreeList '/Documentation/ApiReference/UI_Components/dxTreeList/'). Because the search target is a display value from a related dataset, the approach resolves the typed text to matching IDs via the lookup data source, then applies a [`DataSource.filter`](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/filter(filterExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#filterfilterExpr') on the main data source.
 
-[note] This example demonstrates search when the TreeList uses a lookup column and you want the DropDownBox search to work by the lookup display value (for example, employee name), not by the stored key. If you do not need a lookup column, see [Search by Regular Field (DataGrid)](/concepts/05%20UI%20Components/DropDownBox/20%20Search%20in%20Embedded%20Components/05%20Search%20by%20Regular%20Field%20(DataGrid).md '/Documentation/Guide/UI_Components/DropDownBox/Search_in_Embedded_Components/Search_by_Regular_Field_(DataGrid)/').
+[note] For a similar example that does not involve a lookup column, see [Search by Regular Field (DataGrid)](/concepts/05%20UI%20Components/DropDownBox/20%20Search%20in%20Embedded%20Components/05%20Search%20by%20Regular%20Field%20(DataGrid).md '/Documentation/Guide/UI_Components/DropDownBox/Search_in_Embedded_Components/Search_by_Regular_Field_(DataGrid)/').
 
 The full working code is available in the GitHub repository:
 
@@ -10,10 +10,9 @@ The full working code is available in the GitHub repository:
 
 ### 1) Configure DropDownBox to Accept User Input
 
-To allow typing and handle user input:
 
-- Enable [`acceptCustomValue`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/acceptCustomValue.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#acceptCustomValue').
-- Set [`valueChangeEvent`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/valueChangeEvent.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#valueChangeEvent') to an empty string.
+- Activate [`acceptCustomValue`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/acceptCustomValue.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#acceptCustomValue').
+- Set [`valueChangeEvent`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/valueChangeEvent.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#valueChangeEvent') to an empty string to prevent the component from trying to interpret typing as a value change.
 
 ---
 ##### jQuery
@@ -71,7 +70,7 @@ To allow typing and handle user input:
 
 ### 2) Create the Main `DataSource` for TreeList
 
-TreeList search in this scenario uses [`DataSource.filter`](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/filter(filterExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#filterfilterExpr') instead of `searchValue`, because the typed text must first be resolved to IDs via the lookup data source.
+Declare a data source for the TreeList. 
 
 ---
 ##### jQuery
@@ -230,7 +229,7 @@ Because the displayed text depends on lookup data (employee name from a related 
 
 ### 4) Configure the Embedded TreeList in `contentTemplate`
 
-Use DropDownBox [`contentTemplate`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#contentTemplate') to render the TreeList. Enable [`focusedRowEnabled`](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/focusedRowEnabled.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#focusedRowEnabled') and set single [`selection.mode`](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/selection/mode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/selection/#mode').
+Configure the DropDownBox component. Use [`contentTemplate`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#contentTemplate') to render the TreeList. In the TreeList component, activate [`focusedRowEnabled`](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/focusedRowEnabled.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#focusedRowEnabled') and set single [`selection.mode`](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/selection/mode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/selection/#mode').
 
 ---
 ##### jQuery
@@ -563,7 +562,7 @@ The `isSearchIncomplete` function returns `true` if the user has changed the inp
 
 ### 7) Focus Management in `onOpened`
 
-When the popup opens, move focus into the TreeList. Use DropDownBox [`onOpened`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/onOpened.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onOpened').
+When the popup opens and the DropDownBox raises its [`onOpened`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/onOpened.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onOpened') event, move focus into the TreeList. 
 
 The example implementation waits until the TreeList is ready (first open) or until the popup animation completes (subsequent opens), then calls `list.focus()`. It also clears the TreeList selection when the input text no longer matches the selected value.
 
@@ -755,7 +754,7 @@ The example implementation waits until the TreeList is ready (first open) or unt
 
 ---
 
-### 8) Reset State in `onClosed`
+### 8) Reset Component State in `onClosed`
 
 When the popup closes, DropDownBox [`onClosed`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/onClosed.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onClosed') restores consistent state if the user typed something but did not confirm a selection. The search state is cleared by calling `dataSource.filter(null)`.
 
@@ -875,7 +874,7 @@ When the popup closes, DropDownBox [`onClosed`](/api-reference/10%20UI%20Compone
 
 ---
 
-[note] This approach supports single selection only. To implement multiple selection, use the [TagBox](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/') component instead.
+[note] This implementation supports single selection only. To implement multiple selection, use the [TagBox](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/') component instead.
 
 ### Example
 

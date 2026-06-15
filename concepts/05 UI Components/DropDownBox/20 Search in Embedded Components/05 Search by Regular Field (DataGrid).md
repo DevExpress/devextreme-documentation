@@ -1,6 +1,6 @@
 This topic covers search by a regular (non-lookup) field in a [DropDownBox](/api-reference/10%20UI%20Components/dxDropDownBox '/Documentation/ApiReference/UI_Components/dxDropDownBox/') with an embedded [DataGrid](/api-reference/10%20UI%20Components/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid/'). The approach uses [`DataSource.searchExpr`](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/searchExpr.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#searchExpr') and [`DataSource.searchValue`](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/searchValue(value).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#searchValuevalue') to filter rows as the user types.
 
-[note] This example uses a plain DataGrid data structure. For search through a lookup column, see [Search by Lookup Column (TreeList)](/concepts/05%20UI%20Components/DropDownBox/20%20Search%20in%20Embedded%20Components/10%20Search%20by%20Lookup%20Column%20(TreeList).md '/Documentation/Guide/UI_Components/DropDownBox/Search_in_Embedded_Components/Search_by_Lookup_Column_(TreeList)/').
+[note] For a similar example that involves a lookup column, see [Search by Lookup Column (TreeList)](/concepts/05%20UI%20Components/DropDownBox/20%20Search%20in%20Embedded%20Components/10%20Search%20by%20Lookup%20Column%20(TreeList).md '/Documentation/Guide/UI_Components/DropDownBox/Search_in_Embedded_Components/Search_by_Lookup_Column_(TreeList)/').
 
 The full working code is available in the GitHub repository:
 
@@ -10,7 +10,7 @@ The full working code is available in the GitHub repository:
 
 ### 1) Configure DropDownBox to Accept User Input
 
-- Enable [`acceptCustomValue`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/acceptCustomValue.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#acceptCustomValue') so the user can type text.
+- Activate [`acceptCustomValue`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/acceptCustomValue.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#acceptCustomValue') so the user can type text.
 - Set [`valueChangeEvent`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/valueChangeEvent.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#valueChangeEvent') to an empty string to prevent the component from trying to interpret typing as a value change.
 
 ---
@@ -69,7 +69,7 @@ The full working code is available in the GitHub repository:
 
 ### 2) Create a `DataSource` That Supports Search
 
-Search is implemented with:
+Use the following `DataSource` members:
 
 - [`searchExpr`](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/searchExpr.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#searchExpr') — fields used for searching
 - [`searchValue`](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/searchValue(value).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#searchValuevalue') — current search string
@@ -153,9 +153,9 @@ Use [`displayExpr`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Config
 
 ### 4) Configure the Embedded DataGrid in `contentTemplate`
 
-Use DropDownBox [`contentTemplate`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#contentTemplate') to render the DataGrid.
+Configure the DropDownBox component.  Use [`contentTemplate`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#contentTemplate') to embed a DataGrid.
 
-To use focused and selection row features, specify the following settings:
+To activate focused row and single row selection, specify the following settings:
 
 - Enable [`focusedRowEnabled`](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/focusedRowEnabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#focusedRowEnabled') to allow keyboard navigation.
 - Use [`focusedRowKey`](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/focusedRowKey.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#focusedRowKey') so search can focus the first match.
@@ -345,7 +345,7 @@ To use focused and selection row features, specify the following settings:
 
 ### 5) Implement Search in `onInput`
 
-Use the DropDownBox [`onInput`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/onInput.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onInput') event to:
+Handle the DropDownBox [`onInput`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/onInput.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onInput') event:
 
 1. Ensure the dropdown is open
 2. Apply `dataSource.searchValue(text)`
@@ -480,7 +480,7 @@ The `isSearchIncomplete` function returns `true` if the user has changed the inp
 
 ### 7) Focus Management in `onOpened`
 
-When the popup opens, move focus into the DataGrid. Use DropDownBox [`onOpened`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/onOpened.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onOpened').
+When the popup opens and the DropDownBox raises its [`onOpened`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/onOpened.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onOpened') event, move focus into the DataGrid.
 
 The example implementation waits until the grid is ready (first open) or until the popup animation is complete (subsequent opens), then calls `grid.focus()`.
 
@@ -651,11 +651,10 @@ The example implementation waits until the grid is ready (first open) or until t
 
 ---
 
-### 8) Reset State in `onClosed`
+### 8) Reset Component State in `onClosed`
 
 When the popup closes, DropDownBox [`onClosed`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/onClosed.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onClosed') restores consistent state if the user typed something but did not confirm a selection.
 
-Typically:
 
 - If nothing was loaded, reset the DropDownBox and clear `searchValue`
 - If a search was in progress (`text !== displayValue`), auto-select the first row

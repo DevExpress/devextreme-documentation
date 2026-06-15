@@ -14,7 +14,7 @@ The component's default behavior is to display constant line labels inside the c
 
 When **position** is *"outside"*, note the following label alignment restrictions:
 
-- [verticalAlignment](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/constantLines/label/#verticalAlignment) is always *"center"*
-- [horizontalAlignment](/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/constantLines/label/#horizontalAlignment) can only be *"left"* or *"right"*
+- [verticalAlignment](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/constantLines/label/verticalAlignment.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/constantLines/label/#verticalAlignment') is always *"center"*
+- [horizontalAlignment](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/valueAxis/constantLines/label/horizontalAlignment.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/valueAxis/constantLines/label/#horizontalAlignment') can only be *"left"* or *"right"*
 
 [/note]

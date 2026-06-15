@@ -15,16 +15,16 @@ This repository includes skills for the following DevExtreme components and feat
 
 - [DataGrid](/concepts/05%20UI%20Components/DataGrid/03%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/DataGrid/Overview/')
 - [Scheduler](/concepts/05%20UI%20Components/Scheduler/02%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/Scheduler/Overview/')
-- [Form](/concepts/05%20UI%20Components/Form/00%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/Form/Overview/')
-- [Chat](/concepts/05%20UI%20Components/Chat/00%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/Chat/Overview/')
+- [Form](/concepts/05%20UI%20Components/Form/00%20Overview '/Documentation/Guide/UI_Components/Form/Overview/')
+- [Chat](/concepts/05%20UI%20Components/Chat/00%20Overview '/Documentation/Guide/UI_Components/Chat/Overview/')
 - [Button](/concepts/05%20UI%20Components/Button/02%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/Button/Overview/')
 - [SelectBox](/concepts/05%20UI%20Components/SelectBox/01%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/SelectBox/Overview/')
 - [DateBox](/concepts/05%20UI%20Components/DateBox/01%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/DateBox/Overview/')
-- [CheckBox](/concepts/05%20UI%20Components/CheckBox/00%20Getting%20Started%20with%20CheckBox/00%20Getting%20Started%20with%20CheckBox.md '/Documentation/Guide/UI_Components/CheckBox/Getting_Started_with_CheckBox/')
-- [NumberBox](/concepts/05%20UI%20Components/NumberBox/00%20Getting%20Started%20with%20NumberBox/00%20Getting%20Started%20with%20NumberBox.md '/Documentation/Guide/UI_Components/NumberBox/Getting_Started_with_NumberBox/')
+- [CheckBox](/concepts/05%20UI%20Components/CheckBox/00%20Getting%20Started%20with%20CheckBox '/Documentation/Guide/UI_Components/CheckBox/Getting_Started_with_CheckBox/')
+- [NumberBox](/concepts/05%20UI%20Components/NumberBox/00%20Getting%20Started%20with%20NumberBox '/Documentation/Guide/UI_Components/NumberBox/Getting_Started_with_NumberBox/')
 - [TextBox](/concepts/05%20UI%20Components/TextBox/02%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/TextBox/Overview/')
-- [TextArea](/concepts/05%20UI%20Components/TextArea/00%20Getting%20Started%20with%20TextArea/00%20Getting%20Started%20with%20TextArea.md '/Documentation/Guide/UI_Components/TextArea/Getting_Started_with_TextArea/')
-- [DataSource](/concepts/70%20Data%20Binding/5%20Data%20Layer/0%20Overview.md '/Documentation/Guide/Data_Binding/Data_Layer/')
+- [TextArea](/concepts/05%20UI%20Components/TextArea/00%20Getting%20Started%20with%20TextArea '/Documentation/Guide/UI_Components/TextArea/Getting_Started_with_TextArea/')
+- [DataSource](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/')
 - [Theming](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/')
 
 ## How to Use the Repository

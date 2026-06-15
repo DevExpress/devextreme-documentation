@@ -24,10 +24,8 @@ Template name or container.
 
 This property supports the following values:
 
-- A template name (as a string)
-- Template container as a jQuery object
-- Template container as a DOM Node
-- A function that returns a template container (as a jQuery object or DOM node)
+- Template container as a jQuery object or a DOM Node
+- A function that returns a template container (as a jQuery object or a DOM node)
 
 For more information about templates, refer to the following topic: [DevExtreme {Framework} - Custom Templates](/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates).
 
@@ -41,11 +39,6 @@ For more information about templates, refer to the following topic: [DevExtreme 
     });
 
 ##### Angular
-
-This property supports the following values:
-
-- A [template](/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/) name (as a string)
-- Template container as a DOM Node
 
 For more information about templates, refer to the following topic: [DevExtreme {Framework} - Custom Templates](/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates).
 
@@ -61,11 +54,6 @@ For more information about templates, refer to the following topic: [DevExtreme 
     </dx-card-view>
 
 ##### Vue
-
-This property supports the following values:
-
-- A template name (as a string)
-- Template container as a DOM Node
 
 For more information about templates, refer to the following topic: [DevExtreme {Framework} - Custom Templates](/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates).
 
@@ -86,11 +74,6 @@ For more information about templates, refer to the following topic: [DevExtreme 
     </script>
 
 ##### React
-
-This property supports the following values:
-
-- A template name (as a string)
-- Template container as a DOM Node
 
 [note] Use the React-specific [render](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/cardHeader/items/#render) and [component](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/cardHeader/items/#component) properties instead of **template**.
 

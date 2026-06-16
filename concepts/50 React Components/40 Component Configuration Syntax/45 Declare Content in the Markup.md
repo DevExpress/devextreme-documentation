@@ -39,7 +39,7 @@ The following code snippet specifies inline ScrollView content:
 
     Note that [Fragment](https://react.dev/reference/react/Fragment) is a dynamic element. Wrap content with tags such as `<div>` or `<span>`.
 
-- React mounts inline content within DevExtreme components immediately on component initialization. This behavior ignores **deferRendering** options in components that do not render content immediately:
+- React mounts inline content within DevExtreme components immediately at component initialization. This behavior ignores **deferRendering** options in components that do not render content immediately:
 
     - DropDownBox
     - Popup
@@ -47,6 +47,6 @@ The following code snippet specifies inline ScrollView content:
     - Toast
     - Tooltip
 
-    This behavior initializes and renders embedded UI components on parent component initialization. To ensure embedded components are initialized and rendered only when the parent component is rendered or opened, define **contentComponent** or **contentRender**.
+    This behavior initializes and renders embedded UI components at parent component initialization. To ensure embedded components are initialized and rendered only when the parent component is rendered or opened, define **contentComponent** or **contentRender**.
 
 [/note]

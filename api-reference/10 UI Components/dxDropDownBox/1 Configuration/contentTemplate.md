@@ -5,7 +5,7 @@ default: 'content'
 ---
 ---
 ##### shortDescription
-Specifies a custom template for the drop-down content.
+Specifies a custom template for drop-down content.
 
 ##### param(templateData): Object
 Data associated with the UI component.

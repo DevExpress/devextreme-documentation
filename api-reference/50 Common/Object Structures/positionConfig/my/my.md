@@ -102,12 +102,5 @@ To set this property, use an object with the **x** and **y** fields. These field
         )
     )
 
-    <!--Razor VB-->
-    @(Html.DevExtreme().Popup() _
-        .Position(Sub(p)
-            p.My(HorizontalAlignment.Left, VerticalAlignment.Top)
-        End Sub)
-    )
-
 ---
     

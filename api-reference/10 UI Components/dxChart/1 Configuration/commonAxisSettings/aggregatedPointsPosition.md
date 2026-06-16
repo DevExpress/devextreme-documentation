@@ -111,7 +111,9 @@ Specifies the start position of the aggregated series points in the aggregation 
 
     <!--Razor C#-->
     @(Html.DevExtreme().Chart()
-        .AggregatedPointsPosition(AggregatedPointsPosition.CrossTicks)
+        .CommonAxisSettings(s => s
+            .AggregatedPointsPosition(AggregatedPointsPosition.CrossTicks)
+        )
         // ...
     )
 
@@ -119,7 +121,9 @@ Specifies the start position of the aggregated series points in the aggregation 
 
     <!--Razor C#-->
     @(Html.DevExtreme().Chart()
-        .AggregatedPointsPosition(AggregatedPointsPosition.CrossTicks)
+        .CommonAxisSettings(s => s
+            .AggregatedPointsPosition(AggregatedPointsPosition.CrossTicks)
+        )
         // ...
     )
 

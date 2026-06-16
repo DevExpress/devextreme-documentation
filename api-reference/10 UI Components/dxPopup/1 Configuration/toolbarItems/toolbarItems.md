@@ -93,7 +93,7 @@ In the following code, two items are defined on the toolbar: one is plain text, 
 
     <!-- tab: Index.cshtml -->
     @(Html.DevExtreme().{WidgetName}()
-        <!-- ... -->
+        // ...
         .ContentTemplate(@<text>
             <p>{WidgetName} content</p>
         </text>)
@@ -106,7 +106,7 @@ In the following code, two items are defined on the toolbar: one is plain text, 
                     .Text("Refresh")
                     .OnClick("refresh"))
                 .Location(ToolbarItemLocation.After);
-        }
+        })
     )
     
     <script type="text/javascript">

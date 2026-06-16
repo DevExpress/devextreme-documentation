@@ -104,11 +104,4 @@ In the following code, the overlay element is shifted 50 pixels to the right and
         )
     )
 
-    <!--Razor VB-->
-    @(Html.DevExtreme().Popup() _
-        .Position(Sub(p)
-            p.Offset(50, -25)
-        End Sub)
-    )
-
 ---

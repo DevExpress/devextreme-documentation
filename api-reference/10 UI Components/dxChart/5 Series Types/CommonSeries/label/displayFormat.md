@@ -183,7 +183,6 @@ The example below illustrates how to customize label text for all series and ind
                 .Visible(true)                    
                 )
             )
-        )
         .Series(s => {
             s.Add().ValueField("y1564").Name("15-64 years");
             s.Add().ValueField("y014").Name("0-14 years");
@@ -205,7 +204,6 @@ The example below illustrates how to customize label text for all series and ind
                 .Visible(true)                    
                 )
             )
-        )
         .Series(s => {
             s.Add().ValueField("y1564").Name("15-64 years");
             s.Add().ValueField("y014").Name("0-14 years");

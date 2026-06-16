@@ -157,30 +157,6 @@ A function that returns the value to sort by.
         }
     </script>
 
-    <!--Razor VB-->
-    @(Html.DevExtreme().WidgetName() _
-        .DataSourceOptions(Sub(dso)
-            dso.Sort("Position", True) ' for sorting by a single field
-            ' === or ===
-            dso.Sort("sort_function")
-            ' === or ===
-            dso.Sort(Sub(s)             ' for sorting by multiple fields
-                s.AddSorting("Position")
-                s.AddSorting("Last_Name", True)
-            End Sub)
-        End Sub)
-    )
-
-    <script type="text/javascript">
-        function sort_function(e) {
-            // CEOs are always displayed at the top
-            if(e.Position == "CEO")
-                return "!";
-            else
-                return e.Position;
-        }
-    </script>
-
 ---
 
 #####See Also#####

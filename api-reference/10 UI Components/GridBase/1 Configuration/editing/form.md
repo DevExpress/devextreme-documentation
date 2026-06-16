@@ -125,7 +125,7 @@ Default form editors depend on the [columns' configuration](/api-reference/10%20
                             groupItems.AddSimple().DataField("Full_Name");
                             groupItems.AddSimple().DataField("Position");
                             groupItems.AddSimple().DataField("Duties")
-                                .Editor(e => e.TextArea());
+                                .Editor(g => g.TextArea());
                         });
                     i.AddGroup()
                         .Caption("Contacts")

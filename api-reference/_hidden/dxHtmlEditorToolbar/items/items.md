@@ -231,7 +231,7 @@ Most of the predefined items are buttons. To customize a button, assign its name
         return (
             <HtmlEditor>
                 <Toolbar>
-                    </* ... */}
+                    {/* ... */}
                     <Item
                         name="clear"
                         options={clearFormatOptions}

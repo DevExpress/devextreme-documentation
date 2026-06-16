@@ -175,26 +175,6 @@ dx.web.js, dx.viz.js, dx.all.js
         }, "id")
     )
 
-    <!--Razor VB-->@(Html.DevExtreme().WidgetName() _
-        .DataSource(Function(ds)
-            Return ds.Array() _
-                     .Key("id") _
-                     .Data({
-                         New With { .id = 1, .state = "Alabama", .capital = "Montgomery" },
-                         New With { .id = 2, .state = "Alaska", .capital = "Juneau" },
-                         New With { .id = 3, .state = "Arizona", .capital = "Phoenix" }
-                     })
-        End Function)
-    )
-    @* ===== or a simplified version ===== *@
-    @(Html.DevExtreme().WidgetName() _
-        .DataSource({
-            New With { .id = 1, .state = "Alabama", .capital = "Montgomery" },
-            New With { .id = 2, .state = "Alaska", .capital = "Juneau" },
-            New With { .id = 3, .state = "Arizona", .capital = "Phoenix" }
-        }, "id")
-    )
-
 ---
 
 #include datalayer-store-note-immutable with { name: "ArrayStore" }

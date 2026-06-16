@@ -151,26 +151,6 @@ To specify whether the LoadIndicator is shown, change the [visible](/api-referen
         </text>)
     )
 
-    <!--Razor VB-->
-    @(Html.DevExtreme().LoadIndicator() _
-        .ID("loadIndicator") _
-        .Visible(False)
-    )
-
-    @(Html.DevExtreme().Button() _
-        .ID("button") _
-        .Text("Toggle the LoadIndicator") _
-        .OnClick("button_click")
-    )
-
-    <script>
-        function button_click() {
-            const loadIndicator = $("#loadIndicator").dxLoadIndicator("instance");
-            const isLoadIndicatorVisible = loadIndicator.option("visible");
-            loadIndicator.option("visible", !isLoadIndicatorVisible);
-        }
-    </script>
-
 ---
 
 #####See Also#####

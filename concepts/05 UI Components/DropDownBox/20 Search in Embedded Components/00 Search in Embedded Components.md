@@ -1,12 +1,12 @@
-DropDownBox does not have built-in search. To add search functionality, embed a DataGrid or TreeList and implement filtering manually. The approach depends on whether you search a **regular field** or a **lookup column display value**.
+When using DevExtreme DropDownBox with an embedded DataGrid or TreeList component, you may want to allow users to search and filter records in the dropdown. DataGrid and TreeList include built-in search and filter UI that you can activate. You can also make the DropDownBox input field editable, so it acts as a search box for the embedded control. In that case, you need to implement custom code, because DropDownBox does not have built-in search functionality. The implementation depends on whether a lookup field is involved in search.
 
 ## When to Use Each Approach
 
 <table class="dx-table">
     <tr>
         <th>Implementation Aspect</th>
-        <th>Search by regular field (no lookup column involved)</th>
-        <th>Search by lookup column display value (lookup involved)</th>
+        <th>Search by field values (no lookup column involved)</th>
+        <th>Search by display values (lookup column involved)</th>
     </tr>
     <tr>
         <td>Embedded component</td>
@@ -14,9 +14,9 @@ DropDownBox does not have built-in search. To add search functionality, embed a 
         <td>DataGrid / TreeList</td>
     </tr>
     <tr>
-        <td>What user types</td>
-        <td>Text that exists in the main dataset (same record).</td>
-        <td>Text that exists in the main dataset, a related dataset (lookup display value), or both.</td>
+        <td>User input</td>
+        <td>Text that matches values in the main dataset (same record).</td>
+        <td>Text that matches values in the main dataset, a related dataset (lookup display text), or both.</td>
     </tr>
     <tr>
         <td>Main API used for search</td>
@@ -30,8 +30,8 @@ DropDownBox does not have built-in search. To add search functionality, embed a 
     </tr>
     <tr>
         <td>Filtering logic</td>
-        <td>The DataSource performs searching internally using <code>searchExpr</code> + <code>searchValue</code></td>
-        <td>You query the lookup data source by display field (for example, <code>Name contains text</code>), map results to keys, then build an <code>OR</code> filter like <code>[EmployeeID, '=', 1] or [EmployeeID, '=', 5]</code></td>
+        <td>The DataSource searches for values in fields specified in <a href="/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#searchExpr">searchExpr</a></td>
+        <td>You query the lookup data source by display field (for example, <code>Name contains text</code>), map results to keys, then build an <code>OR</code> filter such as <code>[EmployeeID, '=', 1] or [EmployeeID, '=', 5]</code></td>
     </tr>
     <tr>
         <td>Reset search on close</td>
@@ -40,7 +40,7 @@ DropDownBox does not have built-in search. To add search functionality, embed a 
     </tr>
 </table>
 
-[note] These approaches support single selection only. To implement multiple selection, use the [TagBox](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/') component instead.
+[note] This implementation strategies support single selection only. To implement multiple selection, use the [TagBox](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/') component instead.
 
 For complete working examples, see the following GitHub repositories:
 

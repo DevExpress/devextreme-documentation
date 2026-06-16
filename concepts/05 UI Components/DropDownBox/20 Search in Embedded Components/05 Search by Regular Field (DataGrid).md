@@ -469,7 +469,7 @@ Handle the DropDownBox [`onInput`](/api-reference/10%20UI%20Components/dxDropDow
 
 ### 6) Detect Whether the User Is Searching (`isSearchIncomplete`)
 
-The `isSearchIncomplete` function returns `true` if the user has changed the input text and a new search must be applied (that is, `text` differs from the current `displayValue`):
+The `isSearchIncomplete` function returns `true` if the user has changed the input text and a new search must be applied. It compares `text` (what the user typed) against the component's internal `displayValue` (the formatted display text of the currently selected value):
 
     function isSearchIncomplete(dropDownBox) {
         let displayValue = dropDownBox.option('displayValue');
@@ -653,8 +653,7 @@ The example implementation waits until the grid is ready (first open) or until t
 
 ### 8) Reset Component State in `onClosed`
 
-When the popup closes, DropDownBox [`onClosed`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/onClosed.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onClosed') restores consistent state if the user typed something but did not confirm a selection.
-
+When the popup closes, the [`onClosed`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/onClosed.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onClosed') event restores consistent state if the user typed something but did not confirm a selection.
 
 - If nothing was loaded, reset the DropDownBox and clear `searchValue`
 - If a search was in progress (`text !== displayValue`), auto-select the first row
@@ -766,7 +765,7 @@ When the popup closes, DropDownBox [`onClosed`](/api-reference/10%20UI%20Compone
 
 ---
 
-[note] This approach supports single selection only. To implement multiple selection, use the [TagBox](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/') component instead.
+[note] This implementation supports single selection only. To implement multiple selection, use the [TagBox](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/') component instead.
 
 #####See Also#####
 - [DropDownBox - Configuration](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/')

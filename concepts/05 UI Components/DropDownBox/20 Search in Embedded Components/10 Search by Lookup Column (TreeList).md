@@ -439,7 +439,7 @@ Configure the DropDownBox component. Use [`contentTemplate`](/api-reference/10%2
 
 ### 5) Implement Search in `onInput`
 
-Use DropDownBox [`onInput`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/onInput.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onInput') to open the dropdown and trigger the search. Because the search targets a lookup column display value, the typed text must first be resolved to matching IDs via the lookup data source, then applied as a [`DataSource.filter`](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/filter(filterExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#filterfilterExpr') on the main data source:
+Use the [`onInput`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/onInput.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onInput') event to open the dropdown and trigger the search. Because the search targets a lookup column display value, the typed text must first be resolved to matching IDs via the lookup data source, then applied as a [`DataSource.filter`](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/filter(filterExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#filterfilterExpr') to the main data source:
 
     function applySearchFilter(text, lookupField, dataField, searchExprVal, lookupDataSource, dataSource) {
         // Step 1: find employees whose Name contains the typed text
@@ -551,7 +551,7 @@ Use DropDownBox [`onInput`](/api-reference/10%20UI%20Components/dxDropDownBox/1%
 
 ### 6) Detect Whether the User Is Searching (`isSearchIncomplete`)
 
-The `isSearchIncomplete` function returns `true` if the user has changed the input text and a new search must be applied (that is, `text` differs from the current `displayValue`):
+The `isSearchIncomplete` function returns `true` if the user has changed the input text and a new search must be applied. It compares `text` (what the user typed) against the component's internal `displayValue` (the formatted display text of the currently selected value):
 
     function isSearchIncomplete(dropDownBox) {
         let displayValue = dropDownBox.option('displayValue');
@@ -756,7 +756,7 @@ The example implementation waits until the TreeList is ready (first open) or unt
 
 ### 8) Reset Component State in `onClosed`
 
-When the popup closes, DropDownBox [`onClosed`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/onClosed.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onClosed') restores consistent state if the user typed something but did not confirm a selection. The search state is cleared by calling `dataSource.filter(null)`.
+When the popup closes, the [`onClosed`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/onClosed.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onClosed') event restores consistent state if the user typed something but did not confirm a selection. The search state is cleared by calling `dataSource.filter(null)`.
 
 ---
 ##### jQuery

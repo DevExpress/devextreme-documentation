@@ -1,4 +1,4 @@
----
+﻿---
 id: PositionConfig.boundaryOffset
 type: String | Object
 ---
@@ -102,13 +102,6 @@ In the following code, left and right boundaries are narrowed (**x** is 50), but
         .Position(p => p
             .BoundaryOffset(50, -50)
         )
-    )
-
-    <!--Razor VB-->
-    @(Html.DevExtreme().Popup() _
-        .Position(Sub(p)
-            p.BoundaryOffset(50, -50)
-        End Sub)
     )
 
 ---

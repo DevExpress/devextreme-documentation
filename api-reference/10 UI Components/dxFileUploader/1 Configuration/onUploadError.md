@@ -157,7 +157,7 @@ The following code shows how you can handle a network error.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileUploader()
-        .OnUploadError("onUploadError");
+        .OnUploadError("onUploadError")
         // ...
     )
 
@@ -174,7 +174,7 @@ The following code shows how you can handle a network error.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileUploader()
-        .OnUploadError("onUploadError");
+        .OnUploadError("onUploadError")
         // ...
     )
 

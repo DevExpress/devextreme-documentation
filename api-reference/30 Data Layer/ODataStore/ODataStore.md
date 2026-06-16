@@ -1,4 +1,4 @@
----
+﻿---
 id: ODataStore
 module: common/data
 export: ODataStore
@@ -141,18 +141,6 @@ dx.web.js, dx.viz.js, dx.all.js
             .KeyType(EdmType.Int32)
             // Other ODataStore properties go here
         )
-    )
-
-    <!--Razor VB-->@(Html.DevExtreme().WidgetName() _
-        .DataSource(Function(ds)
-            Return ds.OData() _
-                     .Url("http://www.example.com/Northwind.svc/Products") _
-                     .Key("ProductID") _
-                     .KeyType(EdmType.Int32) _
-                     @* ... *@
-                     @* Other ODataStore properties go here *@
-                     @* ... *@
-        End Function)
     )
 
 ---

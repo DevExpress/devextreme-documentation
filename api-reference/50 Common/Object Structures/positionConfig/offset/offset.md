@@ -1,4 +1,4 @@
----
+﻿---
 id: PositionConfig.offset
 type: String | Object
 ---
@@ -102,13 +102,6 @@ In the following code, the overlay element is shifted 50 pixels to the right and
         .Position(p => p
             .Offset(50, -25)
         )
-    )
-
-    <!--Razor VB-->
-    @(Html.DevExtreme().Popup() _
-        .Position(Sub(p)
-            p.Offset(50, -25)
-        End Sub)
     )
 
 ---

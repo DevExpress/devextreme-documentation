@@ -129,7 +129,7 @@ The UI component's instance.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileUploader()
-        .OnFilesUploaded("onFilesUploaded");
+        .OnFilesUploaded("onFilesUploaded")
         // ...
     )
 
@@ -143,7 +143,7 @@ The UI component's instance.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileUploader()
-        .OnFilesUploaded("onFilesUploaded");
+        .OnFilesUploaded("onFilesUploaded")
         // ...
     )
 

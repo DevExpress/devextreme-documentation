@@ -1,4 +1,4 @@
----
+﻿---
 id: dxTextEditor.Options.inputAttr
 type: any
 default: {}
@@ -94,18 +94,6 @@ Specifies the attributes to be passed on to the underlying HTML element.
         })
         // ===== or =====
         .InputAttr(new Dictionary<string, object>() {
-            { "id", "inputId" }
-        })
-    )
-
-    <!--Razor VB-->@(Html.DevExtreme().{WidgetName}() _
-        .InputAttr("id", "inputId")
-        ' ===== or =====
-        .InputAttr(New With {
-            .id = "inputId"
-        })
-        ' ===== or =====
-        .InputAttr(New Dictionary(Of String, Object) From {
             { "id", "inputId" }
         })
     )

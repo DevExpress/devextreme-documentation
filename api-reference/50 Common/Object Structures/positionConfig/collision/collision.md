@@ -1,4 +1,4 @@
----
+﻿---
 id: PositionConfig.collision
 type: Enums.CollisionResolutionCombination | Object
 ---
@@ -114,13 +114,6 @@ To set the **collision** property, use an object with the **x** and **y** fields
         .Position(p => p
             .Collision(PositionResolveCollision.Flip, PositionResolveCollision.None)
         )
-    )
-
-    <!--Razor VB-->
-    @(Html.DevExtreme().Popup() _
-        .Position(Sub(p)
-            p.Collision(PositionResolveCollision.Flip, PositionResolveCollision.None)
-        End Sub)
     )
 
 ---

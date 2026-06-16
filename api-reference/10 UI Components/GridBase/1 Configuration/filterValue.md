@@ -116,7 +116,7 @@ The filter expression can contain the following operations: *"="*, *"<>"*, *"<"*
 ##### ASP.NET MVC Controls
 
     <!-- tab: Razor C# -->
-    @(Html.DevExtreme().DataGrid()
+    @(Html.DevExtreme().{WidgetName}()
         // ...
         .FilterSyncEnabled(true)
         .HeaderFilter(hf => hf.Visible(true))
@@ -257,7 +257,7 @@ If a column's [groupInterval](/api-reference/40%20Common%20Types/15%20grids/Colu
 ##### ASP.NET MVC Controls
 
     <!-- tab: Razor C# -->
-    @(Html.DevExtreme().DataGrid()
+    @(Html.DevExtreme().{WidgetName}()
         // ...
         // Filter intervals are 500-600 and 700-800
         .HeaderFilter(headerFilter => headerFilter.Visible(true))

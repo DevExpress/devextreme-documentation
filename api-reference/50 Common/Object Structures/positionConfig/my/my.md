@@ -1,4 +1,4 @@
----
+﻿---
 id: PositionConfig.my
 type: Enums.PositionAlignment | Object
 ---
@@ -100,13 +100,6 @@ To set this property, use an object with the **x** and **y** fields. These field
         .Position(p => p
             .My(HorizontalAlignment.Left, VerticalAlignment.Top)
         )
-    )
-
-    <!--Razor VB-->
-    @(Html.DevExtreme().Popup() _
-        .Position(Sub(p)
-            p.My(HorizontalAlignment.Left, VerticalAlignment.Top)
-        End Sub)
     )
 
 ---

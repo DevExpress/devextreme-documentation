@@ -1,4 +1,4 @@
----
+﻿---
 id: GridBaseColumn.calculateDisplayValue
 type: String | function(rowData)
 ---
@@ -116,15 +116,6 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
             .DataField("CountryID")
             .CalculateDisplayValue("Country")
         )
-    )
-
-    <!--Razor VB-->
-    @(Html.DevExtreme().{WidgetName}() _
-        .Columns(Sub(columns)
-            columns.Add() _
-                .DataField("CountryID") _
-                .CalculateDisplayValue("Country")
-        End Sub)        
     )
 
 ---
@@ -250,14 +241,6 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
         }        
     </script>
 
-    <!--Razor VB-->
-    @(Html.DevExtreme().{WidgetName}() _
-        .Columns(Sub(columns)
-            columns.Add() _
-                .DataField("CountryID") _
-                .CalculateDisplayValue(New JS("getCountryWithCapital"))
-        End Sub)        
-    )
 
     <script>
         function getCountryWithCapital(rowData) {

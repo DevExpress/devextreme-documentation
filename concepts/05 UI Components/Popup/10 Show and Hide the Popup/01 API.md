@@ -1,4 +1,4 @@
-[note] In this article, the [Button](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') UI component is used to demonstrate how to show and hide the Popup. This choice is made for purely demonstrational purposes, and you can do the same operations using another UI component following the same guidelines.
+﻿[note] In this article, the [Button](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/') UI component is used to demonstrate how to show and hide the Popup. This choice is made for purely demonstrational purposes, and you can do the same operations using another UI component following the same guidelines.
 
 ---
 ##### jQuery
@@ -66,38 +66,6 @@ To show or hide the Popup programmatically, call the [show()](/api-reference/10%
             } 
         </text>)
     )
-
-    <!--Razor VB-->@Code
-        Html.DevExtreme().Popup() _
-            .ID("popup") _
-            .Title("Popup Title") _
-            .ContentTemplate(Sub()
-                @<text>
-                    <p>Popup content</p>
-                </text>
-            End Sub).Render()
-        Html.DevExtreme().Button() _
-            .ID("showButton") _
-            .Text("Show the Popup") _
-            .OnClick("showButton_click").Render()
-        Html.DevExtreme().Button() _
-            .ID("hideButton") _
-            .Text("Hide the Popup") _
-            .OnClick("hideButton_click").Render()
-    End Code
-
-    <script>
-        function showButton_click() {
-            $("#popup").dxPopup("show");
-            // === or ===
-            $("#popup").dxPopup("toggle", true);
-        }
-        function hideButton_click() {
-            $("#popup").dxPopup("hide");
-            // === or ===
-            $("#popup").dxPopup("toggle", false);
-        }
-    </script>
 
 ##### Angular
 

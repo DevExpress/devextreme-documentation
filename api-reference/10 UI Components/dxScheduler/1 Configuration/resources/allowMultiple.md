@@ -290,7 +290,7 @@ Note that you should specify resources for appointments in your data source acco
     <!--Razor C#-->
     @(Html.DevExtreme().Scheduler()
         .DataSource(Model.Appointments)
-        .Resources(res => {
+        .Resources((Action<CollectionFactory>) (res => {
             res.Add()
                 .FieldExpr("RoomId")
                 .ValueExpr("Id")
@@ -306,29 +306,16 @@ Note that you should specify resources for appointments in your data source acco
                 .DisplayExpr("Text")
                 .AllowMultiple(true)
                 .DataSource(Model.Assignees);
-        })                
+        }))                
         // ...
     )
-    <!-- C# -->
-    public partial class SampleData {
-        public static readonly IEnumerable<AppointmentWithResources> AppointmentsWithResources = new[] {
-            new AppointmentWithResources {
-                Text = "Website Re-Design Plan",
-                AssigneeId = [3, 4], RoomId = 1, 
-                StartDate = "2021-04-26T16:30:00.000Z",
-                EndDate = "2021-04-26T18:30:00.000Z"
-            },
-            // ...
-        }         
-        // ...
-    }
 
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().Scheduler()
         .DataSource(Model.Appointments)
-        .Resources(res => {
+        .Resources((Action<CollectionFactory>) (res => {
             res.Add()
                 .FieldExpr("RoomId")
                 .ValueExpr("Id")
@@ -344,22 +331,9 @@ Note that you should specify resources for appointments in your data source acco
                 .DisplayExpr("Text")
                 .AllowMultiple(true)
                 .DataSource(Model.Assignees);
-        })                
+        }))                
         // ...
     )
-    <!-- C# -->
-    public partial class SampleData {
-        public static readonly IEnumerable<AppointmentWithResources> AppointmentsWithResources = new[] {
-            new AppointmentWithResources {
-                Text = "Website Re-Design Plan",
-                AssigneeId = [3, 4], RoomId = 1, 
-                StartDate = "2021-04-26T16:30:00.000Z",
-                EndDate = "2021-04-26T18:30:00.000Z"
-            },
-            // ...
-        }         
-        // ...
-    }
 
 ---
 

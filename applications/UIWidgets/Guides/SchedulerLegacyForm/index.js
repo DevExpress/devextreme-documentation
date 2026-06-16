@@ -180,6 +180,8 @@ $(function () {
         }
     }
 
+    let fieldDataChangedHandler = null;
+
     $('#scheduler').dxScheduler({
         dataSource: schedulerData,
         resources: resources,
@@ -198,11 +200,15 @@ $(function () {
         onAppointmentFormOpening: function (e) {
             const form = e.form;
 
-            form.on('fieldDataChanged', function (fe) {
+            if (fieldDataChangedHandler) {
+                form.off('fieldDataChanged', fieldDataChangedHandler);
+            }
+            fieldDataChangedHandler = function (fe) {
                 if (fe.dataField === 'recurrenceRule') {
                     form.option('formData.repeat', !!fe.value);
                 }
-            });
+            };
+            form.on('fieldDataChanged', fieldDataChangedHandler);
 
             const hasRecurrence = !!(e.appointmentData && e.appointmentData.recurrenceRule);
             form.option('formData.repeat', hasRecurrence);

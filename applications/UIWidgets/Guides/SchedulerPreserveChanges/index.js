@@ -44,17 +44,11 @@ $(function () {
 
     function saveDraft(appointmentId, formData) {
         const key = getDraftKey(appointmentId);
-        const serializable = {
-            text: formData.text,
-            description: formData.description,
-            startDate: formData.startDate instanceof Date
-                ? formData.startDate.toISOString()
-                : formData.startDate,
-            endDate: formData.endDate instanceof Date
-                ? formData.endDate.toISOString()
-                : formData.endDate,
-            allDay: formData.allDay || false
-        };
+        const serializable = {};
+        Object.keys(formData).forEach(function (k) {
+            const val = formData[k];
+            serializable[k] = val instanceof Date ? val.toISOString() : val;
+        });
         localStorage.setItem(key, JSON.stringify(serializable));
     }
 
@@ -133,59 +127,52 @@ $(function () {
             currentAppointmentId = appointmentData.id != null ? appointmentData.id : null;
             const draft = loadDraft(currentAppointmentId);
             if (draft) {
-                const mergedData = $.extend({}, form.option('formData'), {
-                    text: draft.text,
-                    description: draft.description,
-                    startDate: draft.startDate,
-                    endDate: draft.endDate,
-                    allDay: draft.allDay
-                });
-                form.option('formData', mergedData);
-                const items = form.option('items');
-                const hasDiscardBtn = items.some(function (item) {
-                    return item.name === 'discardChangesButton';
+                form.option('formData', $.extend({}, form.option('formData'), draft));
+
+                const originalData = $.extend({}, appointmentData);
+                const freshItems = form.option('items').filter(function (item) {
+                    return item.name !== 'discardChangesButton';
                 });
 
-                if (!hasDiscardBtn) {
-                    const originalData = $.extend({}, appointmentData);
-
-                    items.push({
-                        itemType: 'button',
-                        name: 'discardChangesButton',
-                        horizontalAlignment: 'left',
-                        cssClass: 'discard-btn-item',
-                        buttonOptions: {
-                            text: 'Discard Changes',
-                            type: 'danger',
-                            stylingMode: 'outlined',
-                            icon: 'undo',
-                            onClick: function () {
-                                clearDraft(currentAppointmentId);
-                                isSaved = true;
-
-                                form.option('formData', $.extend({}, form.option('formData'), {
-                                    text: originalData.text,
-                                    description: originalData.description,
-                                    startDate: originalData.startDate,
-                                    endDate: originalData.endDate,
-                                    allDay: originalData.allDay || false
-                                }));
-
-                                form.option('items', form.option('items').filter(function (item) {
-                                    return item.name !== 'discardChangesButton';
-                                }));
-
-                                DevExpress.ui.notify({
-                                    message: 'Changes discarded. Form reset to the last saved state.',
-                                    type: 'success',
-                                    displayTime: 3000
-                                });
+                freshItems.push({
+                    itemType: 'button',
+                    name: 'discardChangesButton',
+                    horizontalAlignment: 'left',
+                    cssClass: 'discard-btn-item',
+                    buttonOptions: {
+                        text: 'Discard Changes',
+                        type: 'danger',
+                        stylingMode: 'outlined',
+                        icon: 'undo',
+                        onClick: function () {
+                            clearDraft(currentAppointmentId);
+                            if (currentPopup && popupHidingHandler) {
+                                currentPopup.off('hiding', popupHidingHandler);
+                                popupHidingHandler = null;
                             }
-                        }
-                    });
 
-                    form.option('items', items);
-                }
+                            form.option('formData', $.extend({}, form.option('formData'), {
+                                text: originalData.text,
+                                description: originalData.description,
+                                startDate: originalData.startDate,
+                                endDate: originalData.endDate,
+                                allDay: originalData.allDay || false
+                            }));
+
+                            form.option('items', form.option('items').filter(function (item) {
+                                return item.name !== 'discardChangesButton';
+                            }));
+
+                            DevExpress.ui.notify({
+                                message: 'Changes discarded. Form reset to the last saved state.',
+                                type: 'success',
+                                displayTime: 3000
+                            });
+                        }
+                    }
+                });
+
+                form.option('items', freshItems);
 
                 DevExpress.ui.notify({
                     message: 'Unsaved draft restored. Use "Discard Changes" to revert to the saved appointment.',
@@ -208,14 +195,14 @@ $(function () {
             popup.on('hiding', popupHidingHandler);
         },
 
-        onAppointmentAdding: function () {
+        onAppointmentAdded: function () {
             isSaved = true;
             clearDraft(null);
         },
 
-        onAppointmentUpdating: function (e) {
+        onAppointmentUpdated: function (e) {
             isSaved = true;
-            const appointmentId = e && e.oldData && e.oldData.id != null ? e.oldData.id : null;
+            const appointmentId = e && e.appointmentData && e.appointmentData.id != null ? e.appointmentData.id : null;
             clearDraft(appointmentId);
         }
     });

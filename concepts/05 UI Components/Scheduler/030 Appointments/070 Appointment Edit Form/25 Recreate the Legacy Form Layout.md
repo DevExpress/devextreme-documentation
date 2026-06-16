@@ -202,7 +202,7 @@ Refer to [Predefined Items](/concepts/05%20UI%20Components/Scheduler/030%20Appoi
 
 ### Customize the Popup Toolbar
 
-Use [editing.popup](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/editing/popup.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#editing') to move the action buttons to the top toolbar and add a title label, matching the legacy popup appearance:
+Use [editing.popup](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/editing/popup.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/#popup') to move the action buttons to the top toolbar and add a title label, matching the legacy popup appearance:
 
 ---
 
@@ -395,15 +395,21 @@ The `fieldDataChanged` listener keeps the toggle in sync when the user edits the
         }
     }
 
+    let fieldDataChangedHandler = null;
+
     $('#scheduler').dxScheduler({
         onAppointmentFormOpening: function (e) {
             const form = e.form;
 
-            form.on('fieldDataChanged', function (fe) {
+            if (fieldDataChangedHandler) {
+                form.off('fieldDataChanged', fieldDataChangedHandler);
+            }
+            fieldDataChangedHandler = function (fe) {
                 if (fe.dataField === 'recurrenceRule') {
                     form.option('formData.repeat', !!fe.value);
                 }
-            });
+            };
+            form.on('fieldDataChanged', fieldDataChangedHandler);
 
             const hasRecurrence = !!(e.appointmentData && e.appointmentData.recurrenceRule);
             form.option('formData.repeat', hasRecurrence);
@@ -444,6 +450,8 @@ The `fieldDataChanged` listener keeps the toggle in sync when the user edits the
         imports: [DxSchedulerModule],
     })
     export class AppComponent {
+        private fieldDataChangedHandler: ((fe: { dataField: string; value: unknown }) => void) | null = null;
+
         private applyRepeatState(
             form: DxSchedulerTypes.AppointmentFormOpeningEvent['form'],
             isRepeat: boolean,
@@ -463,11 +471,15 @@ The `fieldDataChanged` listener keeps the toggle in sync when the user edits the
         handleAppointmentFormOpening(e: DxSchedulerTypes.AppointmentFormOpeningEvent): void {
             const { form } = e;
 
-            form.on('fieldDataChanged', (fe: { dataField: string; value: unknown }) => {
+            if (this.fieldDataChangedHandler) {
+                form.off('fieldDataChanged', this.fieldDataChangedHandler);
+            }
+            this.fieldDataChangedHandler = (fe: { dataField: string; value: unknown }) => {
                 if (fe.dataField === 'recurrenceRule') {
                     form.option('formData.repeat', !!fe.value);
                 }
-            });
+            };
+            form.on('fieldDataChanged', this.fieldDataChangedHandler);
 
             const hasRecurrence = !!(e.appointmentData && e.appointmentData['recurrenceRule']);
             form.option('formData.repeat', hasRecurrence);
@@ -503,6 +515,8 @@ The `fieldDataChanged` listener keeps the toggle in sync when the user edits the
     <script setup lang="ts">
     import { DxScheduler, type DxSchedulerTypes } from 'devextreme-vue/scheduler';
 
+    let fieldDataChangedHandler: ((fe: { dataField: string; value: unknown }) => void) | null = null;
+
     function applyRepeatState(
         form: DxSchedulerTypes.AppointmentFormOpeningEvent['form'],
         isRepeat: boolean,
@@ -522,11 +536,15 @@ The `fieldDataChanged` listener keeps the toggle in sync when the user edits the
     function handleAppointmentFormOpening(e: DxSchedulerTypes.AppointmentFormOpeningEvent): void {
         const { form } = e;
 
-        form.on('fieldDataChanged', (fe: { dataField: string; value: unknown }) => {
+        if (fieldDataChangedHandler) {
+            form.off('fieldDataChanged', fieldDataChangedHandler);
+        }
+        fieldDataChangedHandler = (fe: { dataField: string; value: unknown }) => {
             if (fe.dataField === 'recurrenceRule') {
                 form.option('formData.repeat', !!fe.value);
             }
-        });
+        };
+        form.on('fieldDataChanged', fieldDataChangedHandler);
 
         const hasRecurrence = !!(e.appointmentData && e.appointmentData['recurrenceRule']);
         form.option('formData.repeat', hasRecurrence);
@@ -551,7 +569,7 @@ The `fieldDataChanged` listener keeps the toggle in sync when the user edits the
 ##### React
 
     <!-- tab: App.tsx -->
-    import { useCallback } from 'react';
+    import { useRef, useCallback } from 'react';
     import { Scheduler, type SchedulerTypes } from 'devextreme-react/scheduler';
 
     function applyRepeatState(
@@ -571,15 +589,21 @@ The `fieldDataChanged` listener keeps the toggle in sync when the user edits the
     }
 
     function App() {
+        const fieldDataChangedHandlerRef = useRef<((fe: { dataField: string; value: unknown }) => void) | null>(null);
+
         const handleAppointmentFormOpening = useCallback(
             (e: SchedulerTypes.AppointmentFormOpeningEvent) => {
                 const { form } = e;
 
-                form.on('fieldDataChanged', (fe: { dataField: string; value: unknown }) => {
+                if (fieldDataChangedHandlerRef.current) {
+                    form.off('fieldDataChanged', fieldDataChangedHandlerRef.current);
+                }
+                fieldDataChangedHandlerRef.current = (fe: { dataField: string; value: unknown }) => {
                     if (fe.dataField === 'recurrenceRule') {
                         form.option('formData.repeat', !!fe.value);
                     }
-                });
+                };
+                form.on('fieldDataChanged', fieldDataChangedHandlerRef.current);
 
                 const hasRecurrence = !!(e.appointmentData && e.appointmentData['recurrenceRule']);
                 form.option('formData.repeat', hasRecurrence);

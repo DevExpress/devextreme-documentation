@@ -19,19 +19,12 @@ The Scheduler does not expose a dedicated cancel event. To detect cancellation, 
             ? originalData.id
             : null;
 
-        // Serialize dates as ISO strings for JSON compatibility
-        const draft = {
-            text: formData.text,
-            description: formData.description,
-            startDate: formData.startDate instanceof Date
-                ? formData.startDate.toISOString()
-                : formData.startDate,
-            endDate: formData.endDate instanceof Date
-                ? formData.endDate.toISOString()
-                : formData.endDate,
-            allDay: formData.allDay || false,
-        };
-        localStorage.setItem('dx-scheduler-draft-' + (appointmentId ?? 'new'), JSON.stringify(draft));
+        const serialized = {};
+        Object.keys(formData).forEach(function (key) {
+            const val = formData[key];
+            serialized[key] = val instanceof Date ? val.toISOString() : val;
+        });
+        localStorage.setItem('dx-scheduler-draft-' + (appointmentId ?? 'new'), JSON.stringify(serialized));
     }
 
     $('#scheduler').dxScheduler({
@@ -43,7 +36,9 @@ The Scheduler does not expose a dedicated cancel event. To detect cancellation, 
 
             isSaved = false;
 
-            popup.off('hiding', hidingHandler);
+            if (hidingHandler) {
+                popup.off('hiding', hidingHandler);
+            }
             hidingHandler = function () {
                 if (!isSaved) {
                     onCanceled(form, appointmentData);
@@ -81,20 +76,14 @@ The Scheduler does not expose a dedicated cancel event. To detect cancellation, 
             const formData = form.option('formData') as Record<string, unknown>;
             const appointmentId = originalData?.['id'] != null ? originalData['id'] : null;
 
-            const draft = {
-                text: formData['text'],
-                description: formData['description'],
-                startDate: formData['startDate'] instanceof Date
-                    ? (formData['startDate'] as Date).toISOString()
-                    : formData['startDate'],
-                endDate: formData['endDate'] instanceof Date
-                    ? (formData['endDate'] as Date).toISOString()
-                    : formData['endDate'],
-                allDay: formData['allDay'] ?? false,
-            };
+            const serialized: Record<string, unknown> = {};
+            Object.keys(formData).forEach((key) => {
+                const val = formData[key];
+                serialized[key] = val instanceof Date ? val.toISOString() : val;
+            });
             localStorage.setItem(
                 `dx-scheduler-draft-${appointmentId ?? 'new'}`,
-                JSON.stringify(draft),
+                JSON.stringify(serialized),
             );
         }
 
@@ -139,20 +128,14 @@ The Scheduler does not expose a dedicated cancel event. To detect cancellation, 
         const formData = form.option('formData') as Record<string, unknown>;
         const appointmentId = originalData?.['id'] != null ? originalData['id'] : null;
 
-        const draft = {
-            text: formData['text'],
-            description: formData['description'],
-            startDate: formData['startDate'] instanceof Date
-                ? (formData['startDate'] as Date).toISOString()
-                : formData['startDate'],
-            endDate: formData['endDate'] instanceof Date
-                ? (formData['endDate'] as Date).toISOString()
-                : formData['endDate'],
-            allDay: formData['allDay'] ?? false,
-        };
+        const serialized: Record<string, unknown> = {};
+        Object.keys(formData).forEach((key) => {
+            const val = formData[key];
+            serialized[key] = val instanceof Date ? val.toISOString() : val;
+        });
         localStorage.setItem(
             `dx-scheduler-draft-${appointmentId ?? 'new'}`,
-            JSON.stringify(draft),
+            JSON.stringify(serialized),
         );
     }
 
@@ -279,6 +262,7 @@ When the edit form opens, check `localStorage` for a saved draft. If a draft exi
                         stylingMode: 'outlined',
                         icon: 'undo',
                         onClick: function () {
+                            isSaved = true;
                             localStorage.removeItem('dx-scheduler-draft-' + (appointmentId ?? 'new'));
 
                             form.option('formData', Object.assign({}, form.option('formData'), {
@@ -344,7 +328,7 @@ When the edit form opens, check `localStorage` for a saved draft. If a draft exi
                             type: 'danger',
                             stylingMode: 'outlined',
                             icon: 'undo',
-                            onClick: () => {
+                            onClick: () => {                                this.isSaved = true;                                this.isSaved = true;
                                 localStorage.removeItem(`dx-scheduler-draft-${appointmentId ?? 'new'}`);
 
                                 form.option('formData', {
@@ -421,34 +405,10 @@ When the edit form opens, check `localStorage` for a saved draft. If a draft exi
                         stylingMode: 'outlined',
                         icon: 'undo',
                         onClick: () => {
+                            isSaved.value = true;
                             localStorage.removeItem(`dx-scheduler-draft-${appointmentId ?? 'new'}`);
 
                             form.option('formData', {
-                                ...form.option('formData') as object,
-                                text: originalData['text'],
-                                description: originalData['description'],
-                                startDate: originalData['startDate'],
-                                endDate: originalData['endDate'],
-                                allDay: originalData['allDay'] ?? false,
-                            });
-
-                            form.option(
-                                'items',
-                                (form.option('items') as object[]).filter(
-                                    (item) => (item as { name?: string })['name'] !== 'discardChangesButton',
-                                ),
-                            );
-                        },
-                    },
-                });
-                form.option('items', items);
-            }
-        }
-
-        // Wire up cancel detection
-        // ...
-    }
-    </script>
 
 ##### React
 
@@ -492,7 +452,10 @@ When the edit form opens, check `localStorage` for a saved draft. If a draft exi
                                 stylingMode: 'outlined',
                                 icon: 'undo',
                                 onClick: () => {
+                                    isSaved.current = true;
                                     localStorage.removeItem(`dx-scheduler-draft-${appointmentId ?? 'new'}`);
+
+                                    form.option('formData', {
 
                                     form.option('formData', {
                                         ...form.option('formData') as object,
@@ -543,13 +506,13 @@ Clear the draft from `localStorage` after the user saves the appointment to avoi
     <!-- tab: index.js -->
     $('#scheduler').dxScheduler({
         // ...
-        onAppointmentAdding: function () {
+        onAppointmentAdded: function () {
             isSaved = true;
             localStorage.removeItem('dx-scheduler-draft-new');
         },
-        onAppointmentUpdating: function (e) {
+        onAppointmentUpdated: function (e) {
             isSaved = true;
-            const appointmentId = e.oldData && e.oldData.id != null ? e.oldData.id : null;
+            const appointmentId = e.appointmentData && e.appointmentData.id != null ? e.appointmentData.id : 'new';
             localStorage.removeItem('dx-scheduler-draft-' + appointmentId);
         },
     });
@@ -558,8 +521,8 @@ Clear the draft from `localStorage` after the user saves the appointment to avoi
 
     <!-- tab: app.component.html -->
     <dx-scheduler ...
-        (onAppointmentAdding)="handleAppointmentAdding()"
-        (onAppointmentUpdating)="handleAppointmentUpdating($event)"
+        (onAppointmentAdded)="handleAppointmentAdded()"
+        (onAppointmentUpdated)="handleAppointmentUpdated($event)"
     ></dx-scheduler>
 
     <!-- tab: app.component.ts -->
@@ -567,14 +530,14 @@ Clear the draft from `localStorage` after the user saves the appointment to avoi
     // ...
     export class AppComponent {
         // ...
-        handleAppointmentAdding(): void {
+        handleAppointmentAdded(): void {
             this.isSaved = true;
             localStorage.removeItem('dx-scheduler-draft-new');
         }
 
-        handleAppointmentUpdating(e: DxSchedulerTypes.AppointmentUpdatingEvent): void {
+        handleAppointmentUpdated(e: DxSchedulerTypes.AppointmentUpdatedEvent): void {
             this.isSaved = true;
-            const appointmentId = e.oldData?.['id'] != null ? e.oldData['id'] : null;
+            const appointmentId = e.appointmentData?.['id'] != null ? e.appointmentData['id'] : 'new';
             localStorage.removeItem(`dx-scheduler-draft-${appointmentId}`);
         }
     }
@@ -584,8 +547,8 @@ Clear the draft from `localStorage` after the user saves the appointment to avoi
     <!-- tab: App.vue -->
     <template>
         <DxScheduler ...
-            @appointment-adding="handleAppointmentAdding"
-            @appointment-updating="handleAppointmentUpdating"
+            @appointment-added="handleAppointmentAdded"
+            @appointment-updated="handleAppointmentUpdated"
         />
     </template>
 
@@ -595,14 +558,14 @@ Clear the draft from `localStorage` after the user saves the appointment to avoi
 
     const isSaved = ref(false);
 
-    function handleAppointmentAdding(): void {
+    function handleAppointmentAdded(): void {
         isSaved.value = true;
         localStorage.removeItem('dx-scheduler-draft-new');
     }
 
-    function handleAppointmentUpdating(e: DxSchedulerTypes.AppointmentUpdatingEvent): void {
+    function handleAppointmentUpdated(e: DxSchedulerTypes.AppointmentUpdatedEvent): void {
         isSaved.value = true;
-        const appointmentId = e.oldData?.['id'] != null ? e.oldData['id'] : null;
+        const appointmentId = e.appointmentData?.['id'] != null ? e.appointmentData['id'] : 'new';
         localStorage.removeItem(`dx-scheduler-draft-${appointmentId}`);
     }
     </script>
@@ -616,15 +579,15 @@ Clear the draft from `localStorage` after the user saves the appointment to avoi
     function App() {
         const isSaved = useRef(false);
 
-        const handleAppointmentAdding = useCallback(() => {
+        const handleAppointmentAdded = useCallback(() => {
             isSaved.current = true;
             localStorage.removeItem('dx-scheduler-draft-new');
         }, []);
 
-        const handleAppointmentUpdating = useCallback(
-            (e: SchedulerTypes.AppointmentUpdatingEvent) => {
+        const handleAppointmentUpdated = useCallback(
+            (e: SchedulerTypes.AppointmentUpdatedEvent) => {
                 isSaved.current = true;
-                const appointmentId = e.oldData?.['id'] != null ? e.oldData['id'] : null;
+                const appointmentId = e.appointmentData?.['id'] != null ? e.appointmentData['id'] : 'new';
                 localStorage.removeItem(`dx-scheduler-draft-${appointmentId}`);
             },
             [],
@@ -632,8 +595,8 @@ Clear the draft from `localStorage` after the user saves the appointment to avoi
 
         return (
             <Scheduler ...
-                onAppointmentAdding={handleAppointmentAdding}
-                onAppointmentUpdating={handleAppointmentUpdating}
+                onAppointmentAdded={handleAppointmentAdded}
+                onAppointmentUpdated={handleAppointmentUpdated}
             />
         );
     }

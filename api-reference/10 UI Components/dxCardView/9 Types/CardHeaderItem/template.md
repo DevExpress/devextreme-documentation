@@ -27,7 +27,7 @@ This property supports the following values:
 - Template container as a jQuery object or DOM Node
 - A function that returns a template container (as a jQuery object or DOM node)
 
-For more information about templates, refer to the following topic: [DevExtreme {Framework} - Custom Templates](/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates).
+For more information about templates, refer to the following topic: [DevExtreme {Framework} - Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates').
 
     <!-- tab: index.js -->
     $("#card-view-container").dxCardView({
@@ -40,7 +40,7 @@ For more information about templates, refer to the following topic: [DevExtreme 
 
 ##### Angular
 
-For more information about templates, refer to the following topic: [DevExtreme {Framework} - Custom Templates](/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates).
+For more information about templates, refer to the following topic: [DevExtreme {Framework} - Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates').
 
     <!-- tab: app.component.html -->
     <dx-card-view>
@@ -55,7 +55,7 @@ For more information about templates, refer to the following topic: [DevExtreme 
 
 ##### Vue
 
-For more information about templates, refer to the following topic: [DevExtreme {Framework} - Custom Templates](/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates).
+For more information about templates, refer to the following topic: [DevExtreme {Framework} - Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates').
 
     <!-- tab: App.vue -->
     <template>
@@ -75,9 +75,9 @@ For more information about templates, refer to the following topic: [DevExtreme 
 
 ##### React
 
-[note] Use the React-specific [render](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/cardHeader/items/#render) and [component](/Documentation/ApiReference/UI_Components/dxCardView/Configuration/cardHeader/items/#component) properties instead of **template**.
+[note] Use the React-specific [render](/api-reference/_hidden/CollectionWidgetItem/render.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/cardHeader/items/#render') and [component](/api-reference/_hidden/CollectionWidgetItem/component.md '/Documentation/ApiReference/UI_Components/dxCardView/Configuration/cardHeader/items/#component') properties instead of **template**.
 
-For more information about templates, refer to the following topic: [DevExtreme {Framework} - Custom Templates](/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates).
+For more information about templates, refer to the following topic: [DevExtreme {Framework} - Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates').
 
     <!-- tab: App.tsx -->
     import { CardView, CardHeader, Item } from 'devextreme-react/card-view';
@@ -101,4 +101,4 @@ For more information about templates, refer to the following topic: [DevExtreme 
 ---
 
 #####See Also#####
-- [Custom Templates](/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates)
+- [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')

@@ -138,7 +138,7 @@ An object that provides information about the file upload session.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileUploader()
-        .OnBeforeSend("onBeforeSend");
+        .OnBeforeSend("onBeforeSend")
         // ...
     )
 
@@ -152,7 +152,7 @@ An object that provides information about the file upload session.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileUploader()
-        .OnBeforeSend("onBeforeSend");
+        .OnBeforeSend("onBeforeSend")
         // ...
     )
 

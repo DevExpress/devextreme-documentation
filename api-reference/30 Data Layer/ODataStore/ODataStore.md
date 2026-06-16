@@ -143,18 +143,6 @@ dx.web.js, dx.viz.js, dx.all.js
         )
     )
 
-    <!--Razor VB-->@(Html.DevExtreme().WidgetName() _
-        .DataSource(Function(ds)
-            Return ds.OData() _
-                     .Url("http://www.example.com/Northwind.svc/Products") _
-                     .Key("ProductID") _
-                     .KeyType(EdmType.Int32) _
-                     @* ... *@
-                     @* Other ODataStore properties go here *@
-                     @* ... *@
-        End Function)
-    )
-
 ---
 
 To access an entire OData service, use the [ODataContext](/api-reference/30%20Data%20Layer/ODataContext '/Documentation/ApiReference/Data_Layer/ODataContext/') instead.

@@ -176,7 +176,7 @@ Returns data objects of the end nodes ("leaves") only.
     <script type="text/javascript">
         function getSelectedData() {
             var treeList = $("#treeList").dxTreeList("instance");
-            var selectedRowsData = treeList.getSelectedRowsData();
+            var selectedRowsData = treeList.getSelectedRowsData("leavesOnly");
             // ...
         }
     </script>

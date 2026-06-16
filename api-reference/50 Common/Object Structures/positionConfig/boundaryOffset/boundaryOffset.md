@@ -104,11 +104,4 @@ In the following code, left and right boundaries are narrowed (**x** is 50), but
         )
     )
 
-    <!--Razor VB-->
-    @(Html.DevExtreme().Popup() _
-        .Position(Sub(p)
-            p.BoundaryOffset(50, -50)
-        End Sub)
-    )
-
 ---

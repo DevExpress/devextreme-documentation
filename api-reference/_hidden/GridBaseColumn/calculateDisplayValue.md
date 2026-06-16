@@ -118,15 +118,6 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
         )
     )
 
-    <!--Razor VB-->
-    @(Html.DevExtreme().{WidgetName}() _
-        .Columns(Sub(columns)
-            columns.Add() _
-                .DataField("CountryID") _
-                .CalculateDisplayValue("Country")
-        End Sub)        
-    )
-
 ---
 
 ... or a function that combines display values. Specify this function only if all data processing operations are [executed on the client](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/remoteOperations '{basewidgetpath}/Configuration/remoteOperations/').
@@ -250,14 +241,6 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
         }        
     </script>
 
-    <!--Razor VB-->
-    @(Html.DevExtreme().{WidgetName}() _
-        .Columns(Sub(columns)
-            columns.Add() _
-                .DataField("CountryID") _
-                .CalculateDisplayValue(New JS("getCountryWithCapital"))
-        End Sub)        
-    )
 
     <script>
         function getCountryWithCapital(rowData) {

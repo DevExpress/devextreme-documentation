@@ -1,4 +1,4 @@
-﻿---
+---
 id: dxTextEditor.Options.inputAttr
 type: any
 default: {}

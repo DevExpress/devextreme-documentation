@@ -1,4 +1,4 @@
-﻿---
+---
 id: GridBaseColumn.calculateDisplayValue
 type: String | function(rowData)
 ---

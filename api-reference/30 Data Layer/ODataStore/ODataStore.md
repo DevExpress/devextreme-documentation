@@ -1,4 +1,4 @@
-﻿---
+---
 id: ODataStore
 module: common/data
 export: ODataStore

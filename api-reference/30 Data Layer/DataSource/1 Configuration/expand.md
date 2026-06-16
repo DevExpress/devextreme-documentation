@@ -1,4 +1,4 @@
-﻿---
+---
 id: DataSource.Options.expand
 type: Array<String> | String
 ---

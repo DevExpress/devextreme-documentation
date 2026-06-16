@@ -1,4 +1,4 @@
-﻿---
+---
 id: PositionConfig.collision
 type: Enums.CollisionResolutionCombination | Object
 ---

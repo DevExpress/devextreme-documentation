@@ -1,4 +1,4 @@
-﻿---
+---
 id: PositionConfig.at
 type: Enums.PositionAlignment | Object
 ---

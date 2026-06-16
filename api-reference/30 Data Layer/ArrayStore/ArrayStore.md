@@ -1,4 +1,4 @@
-﻿---
+---
 id: ArrayStore
 module: common/data
 export: ArrayStore

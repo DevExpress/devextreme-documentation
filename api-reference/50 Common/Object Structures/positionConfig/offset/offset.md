@@ -1,4 +1,4 @@
-﻿---
+---
 id: PositionConfig.offset
 type: String | Object
 ---

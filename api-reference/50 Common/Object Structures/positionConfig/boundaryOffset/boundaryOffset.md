@@ -1,4 +1,4 @@
-﻿---
+---
 id: PositionConfig.boundaryOffset
 type: String | Object
 ---

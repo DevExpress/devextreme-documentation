@@ -1,4 +1,4 @@
-﻿---
+---
 id: PositionConfig.my
 type: Enums.PositionAlignment | Object
 ---

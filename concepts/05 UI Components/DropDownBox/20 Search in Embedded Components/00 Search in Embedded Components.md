@@ -40,7 +40,7 @@ When using DevExtreme DropDownBox with an embedded DataGrid or TreeList componen
     </tr>
 </table>
 
-[note] This implementation strategies support single selection only. To implement multiple selection, use the [TagBox](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/') component instead.
+[note] These implementation strategies support single selection only. To implement multiple selection, use the [TagBox](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/') component instead.
 
 For complete working examples, see the following GitHub repositories:
 

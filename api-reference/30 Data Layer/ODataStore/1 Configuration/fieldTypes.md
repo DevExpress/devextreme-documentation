@@ -93,7 +93,8 @@ Set this property if you are going to [filter data](/concepts/70%20Data%20Bindin
 
 ##### ASP.NET MVC Controls
 
-    <!--Razor C#-->@(Html.DevExtreme().WidgetName()
+    <!--Razor C#-->
+    @(Html.DevExtreme().WidgetName()
         .DataSource(d => d.OData()
             .Url("http://www.example.com/Northwind.svc/Products")
             .Key("Product_ID")

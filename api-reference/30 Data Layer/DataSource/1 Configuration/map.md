@@ -116,7 +116,7 @@ A modified data item.
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
-    @(Html.DevExtreme().WidgetName()
+    @(Html.DevExtreme().DataGrid()
         .DataSource(new [] {
             new {
                 firstName = "John",

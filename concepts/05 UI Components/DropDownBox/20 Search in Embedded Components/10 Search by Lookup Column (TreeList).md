@@ -1,6 +1,6 @@
 This topic covers search by a lookup column display value in a [DropDownBox](/api-reference/10%20UI%20Components/dxDropDownBox '/Documentation/ApiReference/UI_Components/dxDropDownBox/') with an embedded [TreeList](/api-reference/10%20UI%20Components/dxTreeList '/Documentation/ApiReference/UI_Components/dxTreeList/'). Because the search target is a display value from a related dataset, the approach resolves the typed text to matching IDs via the lookup data source, then applies a [`DataSource.filter`](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/filter(filterExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#filterfilterExpr') on the main data source.
 
-[note] For a similar example that does not involve a lookup column, see [Search by Regular Field (DataGrid)](/concepts/05%20UI%20Components/DropDownBox/20%20Search%20in%20Embedded%20Components/05%20Search%20by%20Regular%20Field%20(DataGrid).md '/Documentation/Guide/UI_Components/DropDownBox/Search_in_Embedded_Components/Search_by_Regular_Field_(DataGrid)/').
+[note] For a similar example that does not involve a lookup column, see [Search by Field Values (DataGrid)](/concepts/05%20UI%20Components/DropDownBox/20%20Search%20in%20Embedded%20Components/05%20Search%20by%20Field%20Values%20(DataGrid).md '/Documentation/Guide/UI_Components/DropDownBox/Search_in_Embedded_Components/Search_by_Field_Values_(DataGrid)/').
 
 The full working code is available in the GitHub repository:
 
@@ -886,4 +886,4 @@ See this example for more details: [DropDownBox with embedded TreeList](https://
 - [TreeList - Configuration](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/')
 - [DataSource - filter(filterExpr)](/api-reference/30%20Data%20Layer/DataSource/3%20Methods/filter(filterExpr).md '/Documentation/ApiReference/Data_Layer/DataSource/Methods/#filterfilterExpr')
 - [DevExtreme.AspNet.Data](https://github.com/DevExpress/DevExtreme.AspNet.Data)
-- [Search by Regular Field (DataGrid)](/concepts/05%20UI%20Components/DropDownBox/20%20Search%20in%20Embedded%20Components/05%20Search%20by%20Regular%20Field%20(DataGrid).md '/Documentation/Guide/UI_Components/DropDownBox/Search_in_Embedded_Components/Search_by_Regular_Field_(DataGrid)/')
+- [Search by Field Values (DataGrid)](/concepts/05%20UI%20Components/DropDownBox/20%20Search%20in%20Embedded%20Components/05%20Search%20by%20Field%20Values%20(DataGrid).md '/Documentation/Guide/UI_Components/DropDownBox/Search_in_Embedded_Components/Search_by_Field_Values_(DataGrid)/')

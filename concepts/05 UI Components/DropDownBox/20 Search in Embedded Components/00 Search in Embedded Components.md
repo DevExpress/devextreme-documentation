@@ -44,9 +44,9 @@ When using DevExtreme DropDownBox with an embedded DataGrid or TreeList componen
 
 For complete working examples, see the following GitHub repositories:
 
-- [DropDownBox with embedded DataGrid](https://github.com/DevExpress-Examples/devextreme-dropdownbox-filter-data-in-nested-widget) (search by regular field)
+- [DropDownBox with embedded DataGrid](https://github.com/DevExpress-Examples/devextreme-dropdownbox-filter-data-in-nested-widget) (search by field values)
 - [DropDownBox with embedded TreeList](https://github.com/DevExpress-Examples/devextreme-dropdownbox-implement-search-for-treelist) (search by lookup column display value)
 
 #####See Also#####
-- [Search by Regular Field (DataGrid)](/concepts/05%20UI%20Components/DropDownBox/20%20Search%20in%20Embedded%20Components/05%20Search%20by%20Regular%20Field%20(DataGrid).md '/Documentation/Guide/UI_Components/DropDownBox/Search_in_Embedded_Components/Search_by_Regular_Field_(DataGrid)/')
+- [Search by Field Values (DataGrid)](/concepts/05%20UI%20Components/DropDownBox/20%20Search%20in%20Embedded%20Components/05%20Search%20by%20Field%20Values%20(DataGrid).md '/Documentation/Guide/UI_Components/DropDownBox/Search_in_Embedded_Components/Search_by_Field_Values_(DataGrid)/')
 - [Search by Lookup Column (TreeList)](/concepts/05%20UI%20Components/DropDownBox/20%20Search%20in%20Embedded%20Components/10%20Search%20by%20Lookup%20Column%20(TreeList).md '/Documentation/Guide/UI_Components/DropDownBox/Search_in_Embedded_Components/Search_by_Lookup_Column_(TreeList)/')

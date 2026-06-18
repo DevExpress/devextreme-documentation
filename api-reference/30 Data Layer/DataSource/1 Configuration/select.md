@@ -82,7 +82,7 @@ A function implementing custom selection logic.
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
-    @(Html.DevExtreme().WidgetName()
+    @(Html.DevExtreme().DataGrid()
         .DataSourceOptions(dso => dso
             .Select("firstName", "lastName", "birthDate")
         )

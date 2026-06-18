@@ -134,7 +134,7 @@ A function that returns the value to sort by.
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
-    @(Html.DevExtreme().WidgetName()
+    @(Html.DevExtreme().DataGrid()
         .DataSourceOptions(dso => dso
             .Sort("Position", true) // for sorting by a single field
             // === or ===

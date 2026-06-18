@@ -1,7 +1,7 @@
 To use DropDownBox with an embedded UI component, synchronize the two components' data and selection state. The steps below use an embedded DataGrid as an example. The same approach applies to other DevExtreme UI components.
 
 1. **Specify data sources**    
-The DropDownBox's and embedded UI component's data sources can be the same or different. If they are different, the UI component's key field must be present in the DropDownBox's data source.        
+The DropDownBox and embedded UI component can have the same data source or different data sources. If the data sources are different, the UI component's key field must be present in the DropDownBox data source.       
 
         <!--JavaScript-->
         // Different data sources, both have the ID field

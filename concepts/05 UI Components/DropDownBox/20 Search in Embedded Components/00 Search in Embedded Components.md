@@ -1,4 +1,4 @@
-When using DevExtreme DropDownBox with an embedded DataGrid or TreeList component, you may want to allow users to search and filter records in the dropdown. DataGrid and TreeList include built-in search and filter UI that you can activate. You can also make the DropDownBox input field editable, so it acts as a search box for the embedded control. In that case, you need to implement custom code, because DropDownBox does not have built-in search functionality. The implementation depends on whether a lookup field is involved in search.
+When using DevExtreme DropDownBox with an embedded DataGrid or TreeList component, you may want to allow users to search and filter records in the dropdown. DataGrid and TreeList include a built-in search and filter UI that you can activate. You can also make the DropDownBox input field editable, so that it acts as a search box for the embedded control. In this case, you need to implement custom code, because DropDownBox does not have built-in search functionality. The implementation depends on whether a lookup field is involved in the search.
 
 ## When to Use Each Approach
 

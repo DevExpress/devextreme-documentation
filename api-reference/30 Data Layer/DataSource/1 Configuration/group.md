@@ -110,7 +110,8 @@ A function that returns the value to group by.
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
-    @(Html.DevExtreme().WidgetName()
+    @(Html.DevExtreme().DataGrid()
+        // ...
         .DataSourceOptions(dso => dso
             .Group("LastName", true)
             // === or as a function ===

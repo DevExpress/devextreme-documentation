@@ -84,7 +84,7 @@ Data after processing.
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
-    @(Html.DevExtreme().WidgetName()
+    @(Html.DevExtreme().DataGrid()
         .DataSourceOptions(dso => dso
             .PostProcess("dataSource_postProcess")
         )

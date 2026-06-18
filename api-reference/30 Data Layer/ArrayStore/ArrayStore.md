@@ -154,7 +154,7 @@ dx.web.js, dx.viz.js, dx.all.js
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
-    @(Html.DevExtreme().WidgetName()
+    @(Html.DevExtreme().DataGrid()
         .DataSource(ds => ds.Array()
             .Key("id")
             .Data(new[] {
@@ -166,7 +166,7 @@ dx.web.js, dx.viz.js, dx.all.js
         )
     )
     @* ===== or a simplified version ===== *@
-    @(Html.DevExtreme().WidgetName()
+    @(Html.DevExtreme().DataGrid()
         .DataSource(new[] {
             new { id = 1, state = "Alabama", capital = "Montgomery" },
             new { id = 2, state = "Alaska", capital = "Juneau" },

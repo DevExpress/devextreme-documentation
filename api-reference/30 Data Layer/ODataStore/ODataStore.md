@@ -135,7 +135,7 @@ dx.web.js, dx.viz.js, dx.all.js
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
-    @(Html.DevExtreme().WidgetName()
+    @(Html.DevExtreme().DataGrid()
         .DataSource(ds => ds.OData()
             .Url("http://www.example.com/Northwind.svc/Products")
             .Key("ProductID")

@@ -1,7 +1,7 @@
-You should synchronize the DropDownBox UI component with an embedded element. The following instructions show how to do it when the embedded element is another DevExtreme UI component, but they are also applicable in other cases.
+To use DropDownBox with an embedded UI component, synchronize the two components' data and selection state. The steps below use an embedded DataGrid as an example. The same approach applies to other DevExtreme UI components.
 
 1. **Specify data sources**    
-The DropDownBox's and embedded UI component's data sources can be the same or different. If they are different, the UI component's key field should be present in the DropDownBox's data source.        
+The DropDownBox and embedded UI component can have the same data source or different data sources. If the data sources are different, the UI component's key field must be present in the DropDownBox data source.       
 
         <!--JavaScript-->
         // Different data sources, both have the ID field
@@ -16,8 +16,8 @@ The DropDownBox's and embedded UI component's data sources can be the same or di
             // ...
         ];
 
-1. **Specify which data field provides the DropDownBox's values and the embedded UI component's keys**       
-Assign the field's name to the DropDownBox's [valueExpr](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#valueExpr') property and to the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/ArrayStore/Configuration/#key') property of the embedded UI component's store. The following example shows an [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/'):
+1. **Specify the shared key field**       
+Assign the field's name to the DropDownBox's [valueExpr](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/valueExpr.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#valueExpr') property and to the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/ArrayStore/Configuration/#key') property of the embedded UI component's store. The following example uses an [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/'):
 
     ---
     ##### jQuery
@@ -49,15 +49,23 @@ Assign the field's name to the DropDownBox's [valueExpr](/api-reference/10%20UI%
             valueExpr="ID"
             displayExpr="email"
             [dataSource]="dropDownBoxData">
-            <dx-data-grid ...
+            <dx-data-grid
                 [dataSource]="gridDataSource">
             </dx-data-grid>
         </dx-drop-down-box>
 
         <!--TypeScript-->
-        import { DxDropDownBoxModule, DxDataGridModule } from "devextreme-angular";
+        import { Component } from "@angular/core";
+        import { DxDropDownBoxComponent } from "devextreme-angular/ui/drop-down-box";
+        import { DxDataGridComponent } from "devextreme-angular/ui/data-grid";
         import ArrayStore from "devextreme/data/array_store";
-        // ...
+
+        @Component({
+            selector: "app-root",
+            templateUrl: "./app.component.html",
+            standalone: true,
+            imports: [DxDropDownBoxComponent, DxDataGridComponent]
+        })
         export class AppComponent {
             widgetData: any;
             dropDownBoxData: any;
@@ -70,14 +78,6 @@ Assign the field's name to the DropDownBox's [valueExpr](/api-reference/10%20UI%
                 });
             }
         }
-        @NgModule({
-            imports: [
-                // ...
-                DxDropDownBoxModule,
-                DxDataGridModule
-            ],
-            // ...
-        })
 
     ##### Vue
 
@@ -88,69 +88,51 @@ Assign the field's name to the DropDownBox's [valueExpr](/api-reference/10%20UI%
                     value-expr="ID"
                     display-expr="email"
                     :data-source="dropDownBoxData">
-                    <DxDataGrid ...
-                        :data-source="gridDataSource">
-                    </DxDataGrid>
+                    <DxDataGrid :data-source="gridDataSource" />
                 </DxDropDownBox>
             </div>
         </template>
 
-        <script>
+        <script setup lang="ts">
         import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-        import DxDropDownBox from "devextreme-vue/drop-down-box";
-        import DxDataGrid, DxSelection from "devextreme-vue/data-grid";
-        import ArrayStore from "devextreme/data/array_store";
+        import DxDropDownBox from 'devextreme-vue/drop-down-box';
+        import { DxDataGrid } from 'devextreme-vue/data-grid';
+        import ArrayStore from 'devextreme/data/array_store';
 
-        export default {
-            components: {
-                DxDropDownBox,
-                DxDataGrid
-            },
-            data() {
-                return {
-                    dropDownBoxData: dropDownBoxData,
-                    gridDataSource: new ArrayStore({
-                        data: widgetData,
-                        key: "ID"
-                    }),
-                    isDropDownBoxOpened: false
-                }
-            }
-        }
+        const dropDownBoxData = [/* ... */];
+        const gridDataSource = new ArrayStore({
+            data: widgetData,
+            key: 'ID',
+        });
         </script>
 
     ##### React
 
+        <!-- tab: App.tsx -->
         import React from 'react';
         import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import { DropDownBox } from 'devextreme-react/drop-down-box';
-        import { DataGrid, Selection } from "devextreme-react/data-grid";
-        import ArrayStore from "devextreme/data/array_store";
-        
-        const dropDownBoxData = {/* ... */};
+        import { DataGrid } from 'devextreme-react/data-grid';
+        import ArrayStore from 'devextreme/data/array_store';
+
+        const dropDownBoxData = [/* ... */];
         const gridDataSource = new ArrayStore({
             data: widgetData,
-            key: "ID"
+            key: 'ID',
         });
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <DropDownBox
-                        dataSource={dropDownBoxData}
-                        valueExpr="ID"
-                        displayExpr="email">
-                        <DataGrid ...
-                            dataSource={gridDataSource}
-                        />
-                    </DropDownBox>
-                );
-            }
+        export default function App() {
+            return (
+                <DropDownBox
+                    dataSource={dropDownBoxData}
+                    valueExpr="ID"
+                    displayExpr="email">
+                    <DataGrid dataSource={gridDataSource} />
+                </DropDownBox>
+            );
         }
-
-        export default App;
 
     ##### ASP.NET MVC Controls
 
@@ -175,9 +157,9 @@ Assign the field's name to the DropDownBox's [valueExpr](/api-reference/10%20UI%
     ---
 
 1. **Synchronize the DropDownBox's value and the embedded UI component's selection**        
-This step's implementation depends on the embedded UI component's API and the library/framework you use. If the library/framework supports two-way binding, you can bind the DropDownBox's [value](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#value') and the UI component's **selectedRowKeys**/**selectedItemKeys** to the same variable. If not, handle events as follows:
+The synchronization implementation depends on the embedded UI component's API and the library/framework you use. If the library/framework supports two-way binding, you can bind the DropDownBox's [value](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/value.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#value') and the UI component's **selectedRowKeys**/**selectedItemKeys** to the same variable. If not, handle events as follows:
     1. **Set the initial selection in the embedded UI component**     
-        Implement the UI component's **onContentReady** handler to select data items according to the DropDownBox's initial value. In some UI components, you can set the **selectedRowKeys** or **selectedItemKeys** option instead.
+        Implement the UI component's **onContentReady** handler to select data items according to the DropDownBox's initial value. In some UI components, you can set **selectedRowKeys** or **selectedItemKeys** directly instead of using **onContentReady**.
     1. **Update the selection**     
         Implement the DropDownBox's [onValueChanged](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#onValueChanged') handler to update the selection when the DropDownBox's value changes.
     1. **Update the DropDownBox's value**     
@@ -191,7 +173,7 @@ This step's implementation depends on the embedded UI component's API and the li
         <!--JavaScript-->
         $(function() {
             // ...
-            const dataGridInstance;
+            let dataGridInstance;
             $("#dropDownBox").dxDropDownBox({ 
                 // ...
                 value: [1],
@@ -217,20 +199,26 @@ This step's implementation depends on the embedded UI component's API and the li
     ##### Angular
 
         <!--HTML-->
-        <dx-drop-down-box ...
+        <dx-drop-down-box
             [(value)]="dropDownBoxValue">
-            <dx-data-grid ...
-                [selection]="{ mode: 'multiple' }"
+            <dx-data-grid
                 [(selectedRowKeys)]="dropDownBoxValue">
+                <dxo-data-grid-selection mode="multiple"></dxo-data-grid-selection>
             </dx-data-grid>
         </dx-drop-down-box>
 
         <!--TypeScript-->
-        import { DxDropDownBoxModule, DxDataGridModule } from "devextreme-angular";
-        import ArrayStore from "devextreme/data/array_store";
-        // ...
+        import { Component } from "@angular/core";
+        import { DxDropDownBoxComponent } from "devextreme-angular/ui/drop-down-box";
+        import { DxDataGridComponent, DxoDataGridSelectionComponent } from "devextreme-angular/ui/data-grid";
+
+        @Component({
+            selector: "app-root",
+            templateUrl: "./app.component.html",
+            standalone: true,
+            imports: [DxDropDownBoxComponent, DxDataGridComponent, DxoDataGridSelectionComponent]
+        })
         export class AppComponent {
-            // ...
             _dropDownBoxValue: number[] = [1];
             get dropDownBoxValue(): number[] {
                 return this._dropDownBoxValue;
@@ -239,14 +227,6 @@ This step's implementation depends on the embedded UI component's API and the li
                 this._dropDownBoxValue = value || [];
             }
         }
-        @NgModule({
-            imports: [
-                // ...
-                DxDropDownBoxModule,
-                DxDataGridModule
-            ],
-            // ...
-        })
 
     ##### Vue
 
@@ -263,86 +243,50 @@ This step's implementation depends on the embedded UI component's API and the li
             </div>
         </template>
 
-        <script>
+        <script setup lang="ts">
         import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-        import DxDropDownBox from "devextreme-vue/drop-down-box";
-        import { DxDataGrid, DxSelection } from "devextreme-vue/data-grid";
-        import ArrayStore from "devextreme/data/array_store";
+        import DxDropDownBox from 'devextreme-vue/drop-down-box';
+        import { DxDataGrid, DxSelection } from 'devextreme-vue/data-grid';
+        import { ref, computed } from 'vue';
 
-        export default {
-            components: {
-                DxDropDownBox,
-                DxDataGrid,
-                DxSelection
-            },
-            data() {
-                // ...
-                return {
-                    // ...
-                    dropDownBox_values: [1]
-                }
-            },
-            computed: {
-                dropDownBoxValues: {
-                    get: function() {
-                        return this.dropDownBox_values;
-                    },
-                    set: function(value) {
-                        this.dropDownBox_values = value || [];
-                    }
-                }
-            }
-        }
+        const _dropDownBoxValues = ref<number[]>([1]);
+
+        const dropDownBoxValues = computed<number[]>({
+            get: () => _dropDownBoxValues.value,
+            set: (value) => { _dropDownBoxValues.value = value ?? []; },
+        });
         </script>
 
     ##### React
 
-        import React from 'react';
+        <!-- tab: App.tsx -->
+        import React, { useState, useRef } from 'react';
         import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-        import { DropDownBox } from 'devextreme-react/drop-down-box';
-        import { DataGrid, Selection } from "devextreme-react/data-grid";
-        import ArrayStore from "devextreme/data/array_store";
+        import { DropDownBox, DropDownBoxRef } from 'devextreme-react/drop-down-box';
+        import { DataGrid, Selection } from 'devextreme-react/data-grid';
+        import type { SelectionChangedEvent } from 'devextreme/ui/data_grid';
 
-        class App extends React.Component {
-            constructor(props) {
-                super(props);
-
-                this.state = {
-                    dropDownBoxValues: [1]
-                };
-
-                this.dropDownBoxRef = React.createRef();
-            
-                this.changeDropDownBoxValue = this.changeDropDownBoxValue.bind(this);
-            }
-
-            changeDropDownBoxValue(e) {
-                const keys = e.selectedRowKeys;
-                this.setState({
-                    dropDownBoxValues: keys
-                });
-
-                this.dropDownBoxRef.current.instance().close();
-            }
-
-            render() {
-                return (
-                    <DropDownBox ...
-                        ref={this.dropDownBoxRef}
-                        value="this.state.dropDownBoxValues">
-                        <DataGrid ...
-                            selectedRowKeys={this.state.dropDownBoxValues}
-                            onSelectionChanged={this.changeDropDownBoxValue}>
-                            <Selection mode="multiple" />
-                        </DataGrid>
-                    </DropDownBox>
-                );
-            }
+        export default function App() {
+            const [dropDownBoxValues, setDropDownBoxValues] = useState<number[]>([1]);
+            const dropDownBoxRef = useRef<DropDownBoxRef>(null);
+            const changeDropDownBoxValue = (e: SelectionChangedEvent) => {
+                setDropDownBoxValues(e.selectedRowKeys as number[]);
+                dropDownBoxRef.current?.instance().close();
+            };
+            return (
+                <DropDownBox
+                    ref={dropDownBoxRef}
+                    value={dropDownBoxValues}>
+                    <DataGrid
+                        selectedRowKeys={dropDownBoxValues}
+                        onSelectionChanged={changeDropDownBoxValue}>
+                        <Selection mode="multiple" />
+                    </DataGrid>
+                </DropDownBox>
+            );
         }
-
-        export default App;
 
     ##### ASP.NET MVC Controls
 

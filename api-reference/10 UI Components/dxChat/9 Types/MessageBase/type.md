@@ -1,7 +1,6 @@
 ---
 id: MessageBase.type
-type: String | undefined
-default: undefined
+type: Enums.MessageType
 ---
 ---
 ##### shortDescription

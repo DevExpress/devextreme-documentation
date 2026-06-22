@@ -131,7 +131,7 @@ The following code shows how to use the **customizeAnnotation** function to appl
 
     <!--Razor C#-->
     @(Html.DevExtreme().PolarChart()
-        @* ... *@
+        // ...
         .CustomizeAnnotation("customizeAnnotation")
     )
 

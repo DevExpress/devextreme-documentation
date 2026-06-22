@@ -37,19 +37,19 @@ To enable data exporting, set **export**.[enabled](/api-reference/10%20UI%20Comp
             },
             onExporting(e) {
                 if (e.format === 'xlsx') {
-                    const workbook = new ExcelJS.Workbook(); 
-                    const worksheet = workbook.addWorksheet("Main sheet"); 
-                    DevExpress.excelExporter.exportDataGrid({ 
-                        worksheet: worksheet, 
+                    const workbook = new ExcelJS.Workbook();
+                    const worksheet = workbook.addWorksheet('Main sheet');
+                    DevExpress.excelExporter.exportDataGrid({
+                        worksheet,
                         component: e.component,
-                    }).then(function() {
-                        workbook.xlsx.writeBuffer().then(function(buffer) { 
-                            saveAs(new Blob([buffer], { type: "application/octet-stream" }), "DataGrid.xlsx"); 
-                        }); 
-                    }); 
-                } 
-                else if (e.format === 'pdf') {
-                    const doc = new jsPDF();
+                    }).then(() => {
+                        workbook.xlsx.writeBuffer().then((buffer) => {
+                            saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
+                        });
+                    });
+                    e.cancel = true;
+                } else if (e.format === 'pdf') {
+                    const doc = new window.jspdf.jsPDF();
                     DevExpress.pdfExporter.exportDataGrid({
                         jsPDFDocument: doc,
                         component: e.component,
@@ -78,25 +78,21 @@ To enable data exporting, set **export**.[enabled](/api-reference/10%20UI%20Comp
             if (e.format === 'xlsx') {
                 const workbook = new ExcelJS.Workbook();
                 const worksheet = workbook.addWorksheet('Main sheet');
-                DevExpress.excelExporter
-                .exportDataGrid({
+                DevExpress.excelExporter.exportDataGrid({
                     worksheet,
                     component: e.component,
-                })
-                .then(() => {
+                }).then(() => {
                     workbook.xlsx.writeBuffer().then((buffer) => {
-                    saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
+                        saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
                     });
                 });
                 e.cancel = true;
             } else if (e.format === 'pdf') {
                 const doc = new window.jspdf.jsPDF();
-                DevExpress.pdfExporter
-                .exportDataGrid({
+                DevExpress.pdfExporter.exportDataGrid({
                     jsPDFDocument: doc,
                     component: e.component,
-                })
-                .then(() => {
+                }).then(() => {
                     doc.save('DataGrid.pdf');
                 });
             }
@@ -111,16 +107,15 @@ To enable data exporting, set **export**.[enabled](/api-reference/10%20UI%20Comp
 
     <!-- tab: app.component.html -->
     <dx-data-grid (onExporting)="exportGrid($event)">
-        <!-- ... -->
         <dxo-data-grid-export 
             [enabled]="true"
             [formats]="['xlsx', 'pdf']"
-        >
-        </dxo-data-grid-export>
+        ></dxo-data-grid-export>
+        <!-- ... -->
     </dx-data-grid>
 
     <!-- tab: app.component.ts -->
-    // ...
+    import { type DxDataGridTypes } from 'devextreme-angular/ui/data-grid';
     import { Workbook } from 'devextreme-exceljs-fork';
     import saveAs from 'file-saver';
     import { exportDataGrid } from 'devextreme/excel_exporter';
@@ -129,8 +124,7 @@ To enable data exporting, set **export**.[enabled](/api-reference/10%20UI%20Comp
 
     // ...
     export class AppComponent {
-        // ...
-        exportGrid(e) {
+        exportGrid(e: DxDataGridTypes.ExportingEvent) {
             if (e.format === 'xlsx') {
                 const workbook = new Workbook(); 
                 const worksheet = workbook.addWorksheet("Main sheet"); 
@@ -142,8 +136,7 @@ To enable data exporting, set **export**.[enabled](/api-reference/10%20UI%20Comp
                         saveAs(new Blob([buffer], { type: "application/octet-stream" }), "DataGrid.xlsx"); 
                     }); 
                 }); 
-            } 
-            else if (e.format === 'pdf') {
+            } else if (e.format === 'pdf') {
                 const doc = new jsPDF();
                 exportDataGridToPdf({
                     jsPDFDocument: doc,
@@ -172,56 +165,38 @@ To enable data exporting, set **export**.[enabled](/api-reference/10%20UI%20Comp
         </DxDataGrid>
     </template>
 
-    <script>
-    import {
-        DxDataGrid,
-        // ...
-        DxExport
-    } from 'devextreme-vue/data-grid';
+    <script setup lang="ts">
+    import { DxDataGrid, DxExport, type DxDataGridTypes } from 'devextreme-vue/data-grid';
     import { Workbook } from 'devextreme-exceljs-fork';
-    import saveAs from 'file-saver';
+    import { saveAs } from 'file-saver';
     import { exportDataGrid } from 'devextreme/excel_exporter';
     import { jsPDF } from 'jspdf';
     import { exportDataGrid as exportDataGridToPdf} from 'devextreme/pdf_exporter';
 
-    export default {
-        components: {
-            DxDataGrid,
-            // ...
-            DxExport
-        },
-        // ...
-        methods: {
-            exportGrid(e) {
-                if (e.format === 'xlsx') {
-                    const workbook = new Workbook(); 
-                    const worksheet = workbook.addWorksheet("Main sheet"); 
-                    exportDataGrid({ 
-                        worksheet: worksheet, 
-                        component: e.component,
-                    }).then(function() {
-                        workbook.xlsx.writeBuffer().then(function(buffer) { 
-                            saveAs(new Blob([buffer], { type: "application/octet-stream" }), "DataGrid.xlsx"); 
-                        }); 
-                    }); 
-                } 
-                else if (e.format === 'pdf') {
-                    const doc = new jsPDF();
-                    exportDataGridToPdf({
-                        jsPDFDocument: doc,
-                        component: e.component,
-                    }).then(() => {
-                        doc.save('DataGrid.pdf');
-                    });
-                }
-            }
+    function exportGrid(e: DxDataGridTypes.ExportingEvent): void {
+        if (e.format === 'xlsx') {
+            const workbook = new Workbook();
+            const worksheet = workbook.addWorksheet('Main sheet');
+            exportDataGrid({
+                worksheet: worksheet,
+                component: e.component,
+            }).then(() => {
+                workbook.xlsx.writeBuffer().then((buffer: ArrayBuffer) => {
+                    saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
+                });
+            });
+            e.cancel = true;
+        } else if (e.format === 'pdf') {
+            const doc = new jsPDF();
+            exportDataGridToPdf({
+                jsPDFDocument: doc,
+                component: e.component,
+            }).then(() => {
+                doc.save('DataGrid.pdf');
+            });
         }
     }
     </script>
-
-    <style>
-    /* ... */
-    </style>
 
 ##### React
 
@@ -229,16 +204,10 @@ To enable data exporting, set **export**.[enabled](/api-reference/10%20UI%20Comp
     npm install --save devextreme-exceljs-fork file-saver
     npm install jspdf
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React, { useState } from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-    import './App.css';
 
-    import {
-        DataGrid,
-        // ...
-        Export
-    } from 'devextreme-react/data-grid';
+    import { DataGrid, Export, type DataGridTypes } from 'devextreme-react/data-grid';
 
     import { Workbook } from 'devextreme-exceljs-fork';
     import saveAs from 'file-saver';
@@ -249,7 +218,7 @@ To enable data exporting, set **export**.[enabled](/api-reference/10%20UI%20Comp
 
     const exportFormats = ['xlsx', 'pdf'];
 
-    function exportGrid(e) {
+    function exportGrid(e: DataGridTypes.ExportingEvent) {
         if (e.format === 'xlsx') {
             const workbook = new Workbook(); 
             const worksheet = workbook.addWorksheet("Main sheet"); 
@@ -261,8 +230,7 @@ To enable data exporting, set **export**.[enabled](/api-reference/10%20UI%20Comp
                     saveAs(new Blob([buffer], { type: "application/octet-stream" }), "DataGrid.xlsx"); 
                 }); 
             }); 
-        } 
-        else if (e.format === 'pdf') {
+        } else if (e.format === 'pdf') {
             const doc = new jsPDF();
             exportDataGridToPdf({
                 jsPDFDocument: doc,
@@ -274,18 +242,13 @@ To enable data exporting, set **export**.[enabled](/api-reference/10%20UI%20Comp
     }
 
     function App() {
-        // ...
         return (
-            <DataGrid ...
-                onExporting={exportGrid}>
-                {/* ... */}
+            <DataGrid onExporting={exportGrid}>
                 <Export enabled={true} formats={exportFormats} />
+                {/* ... */}
             </DataGrid>
         );
     }
-
-    export default App;
-    
 
 ---
 

@@ -103,22 +103,22 @@ The following code snippet initializes a DataGrid with a column for each data fi
     import { Injectable } from '@angular/core';
 
     export interface Employee {
-        EmployeeID: Number,
-        FullName: String,
-        Position: String,
-        TitleOfCourtesy: String,
-        BirthDate: String,
-        HireDate: String,
-        Address: String,
-        City: String,
-        Region: String,
-        PostalCode: String,
-        Country: String,
-        HomePhone: String,
-        Extension: String,
-        Photo: String,
-        Notes: String,
-        ReportsTo: Number
+        EmployeeID: number;
+        FullName: string;
+        Position: string;
+        TitleOfCourtesy: string;
+        BirthDate: string;
+        HireDate: string;
+        Address: string;
+        City: string;
+        Region: string;
+        PostalCode: string;
+        Country: string;
+        HomePhone: string;
+        Extension: string;
+        Photo: string;
+        Notes: string;
+        ReportsTo: number | null;
     }
 
     const employees: Employee[] = [
@@ -148,29 +148,29 @@ The following code snippet initializes a DataGrid with a column for each data fi
 
     <script setup lang="ts">
     // ...
-    import service from './employees.service';
+    import { getEmployees } from './employees.service';
 
-    const employees: service.getEmployees(),
+    const employees: getEmployees(),
     </script>
 
     <!-- tab: employees.service.ts -->
     export interface Employee {
-        EmployeeID: Number,
-        FullName: String,
-        Position: String,
-        TitleOfCourtesy: String,
-        BirthDate: String,
-        HireDate: String,
-        Address: String,
-        City: String,
-        Region: String,
-        PostalCode: String,
-        Country: String,
-        HomePhone: String,
-        Extension: String,
-        Photo: String,
-        Notes: String,
-        ReportsTo: Number
+        EmployeeID: number;
+        FullName: string;
+        Position: string;
+        TitleOfCourtesy: string;
+        BirthDate: string;
+        HireDate: string;
+        Address: string;
+        City: string;
+        Region: string | null;
+        PostalCode: string;
+        Country: string;
+        HomePhone: string;
+        Extension: string;
+        Photo: string;
+        Notes: string;
+        ReportsTo: number | null;
     }
 
     const employees = [
@@ -200,22 +200,22 @@ The following code snippet initializes a DataGrid with a column for each data fi
 
     <!-- tab: employees.ts -->
     export interface Employee {
-        EmployeeID: Number,
-        FullName: String,
-        Position: String,
-        TitleOfCourtesy: String,
-        BirthDate: String,
-        HireDate: String,
-        Address: String,
-        City: String,
-        Region: String,
-        PostalCode: String,
-        Country: String,
-        HomePhone: String,
-        Extension: String,
-        Photo: String,
-        Notes: String,
-        ReportsTo: Number
+        EmployeeID: number;
+        FullName: string;
+        Position: string;
+        TitleOfCourtesy: string;
+        BirthDate: string;
+        HireDate: string;
+        Address: string;
+        City: string;
+        Region: string | null;
+        PostalCode: string;
+        Country: string;
+        HomePhone: string;
+        Extension: string;
+        Photo: string;
+        Notes: string;
+        ReportsTo: number | null;
     }
 
     export const employees = [

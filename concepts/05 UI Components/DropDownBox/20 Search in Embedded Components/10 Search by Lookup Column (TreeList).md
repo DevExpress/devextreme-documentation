@@ -126,7 +126,7 @@ Declare a data source for the TreeList.
 
 ### 3) Configure `displayExpr`
 
-Use [`displayExpr`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#displayExpr') to define how a selected item appears in the input field.
+Use [`displayExpr`](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#displayExpr') to define how a selected item appears in the input field.
 
 Because the displayed text depends on lookup data (employee name from a related dataset), pre-load that data and resolve it in `displayExpr`:
 
@@ -229,7 +229,7 @@ Because the displayed text depends on lookup data (employee name from a related 
 
 ### 4) Configure the Embedded TreeList in `contentTemplate`
 
-Configure the DropDownBox component. Use [`contentTemplate`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#contentTemplate') to render the TreeList. In the TreeList component, activate [`focusedRowEnabled`](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/focusedRowEnabled.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#focusedRowEnabled') and set single [`selection.mode`](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/selection/mode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/selection/#mode').
+Configure the DropDownBox component. Use [`contentTemplate`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/contentTemplate.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#contentTemplate') to render the TreeList. In the TreeList component, activate [`focusedRowEnabled`](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/focusedRowEnabled.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#focusedRowEnabled') and set single [`selection.mode`](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/selection/mode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/selection/#mode').
 
 ---
 ##### jQuery

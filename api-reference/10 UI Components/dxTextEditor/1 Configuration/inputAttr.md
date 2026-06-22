@@ -86,7 +86,8 @@ Specifies the attributes to be passed on to the underlying HTML element.
 
 ##### ASP.NET MVC Controls
 
-    <!--Razor C#-->@(Html.DevExtreme().{WidgetName}()
+    <!--Razor C#-->
+    @(Html.DevExtreme().{WidgetName}()
         .InputAttr("id", "inputId")
         // ===== or =====
         .InputAttr(new {

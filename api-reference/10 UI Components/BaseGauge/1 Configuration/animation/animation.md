@@ -123,7 +123,7 @@ To make your gauge "live", enable animation for it by setting the **enabled** pr
 
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().{WidgetName}()
-        @* ... *@
+        // ...
         .Animation(a => a
             .Easing(VizAnimationEasing.Linear)
             .Duration(500)

@@ -221,13 +221,14 @@ The position in which the item is placed. If the item is dragged away from the U
         .AllowReordering(true)
         .OnDragMove("onDragMove")
         .DragTemplate(new JS("dragTemplateFunc"))
-        .Content(
-            Html.DevExtreme().TreeView()
+        .Content(@<text>
+            @(Html.DevExtreme().TreeView()
                 .ID("simple-treeview")
                 .DataStructure(TreeViewDataStructure.Plain)
                 .DataSource(d => d.Mvc().LoadAction("GetPlainDataForDragAndDrop"))
                 .DataSourceOptions(o => o.Map("mapIcons"))
-        )
+            )
+        </text>)
     )
     
     <script>

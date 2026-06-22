@@ -1,4 +1,4 @@
-The DataGrid allows users to export grid data as Excel and PDF documents. This capability makes use of the following third-party libraries:
+DataGrid allows users to export data as Excel and PDF documents. This capability uses the following third-party libraries:
 
 - Excel: <a href="https://github.com/DevExpress/devextreme-exceljs-fork" target="_blank">DevExtreme ExcelJS</a> v4.4.1+ and <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+
 
@@ -6,13 +6,7 @@ The DataGrid allows users to export grid data as Excel and PDF documents. This c
 
 [note] To generate PDFs with Unicode characters, refer to the following troubleshooting guide: [Export Unicode Characters - DataGrid](/concepts/80%20Troubleshooting/15%20PDF%20Export%20Issues/00%20Export%20Unicode%20Characters/00%20DataGrid '/Documentation/Guide/Troubleshooting/PDF_Export_Issues/Export_Unicode_Characters/DataGrid/').
 
-To configure grid data export, use the **excelExporter**.[exportDataGrid(options)](/api-reference/50%20Common/utils/excelExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions') and **pdfExporter**.[exportDataGrid(options)](/api-reference/50%20Common/utils/pdfExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions') methods. Both methods require a valid DataGrid instance and a target file of the appropriate format (Excel or PDF). You can call these methods at any point in your application.
-
-The following code calls export methods in the DataGrid's [onExporting](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExporting') event handler. The control executes this handler when users select one of the operations available in the **Export** button drop-down menu. The [export](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/export '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/').[enabled](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/export/enabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/#enabled') property adds this button to the DataGrid. Use the [formats](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/export/formats.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/#formats') property to configure available export operation types.
-
-When users click "Export all data to Excel", **excelExporter**.[exportDataGrid(options)](/api-reference/50%20Common/utils/excelExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions') exports grid data as a <a href="https://en.wikipedia.org/wiki/Binary_large_object" target="_blank">blob</a> that is then saved to an XLSX file.
-
-When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(options)](/api-reference/50%20Common/utils/pdfExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions') exports grid data to a PDF file.
+To enable data exporting, set **export**.[enabled](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/export/enabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/export/#enabled') to `true` and define an [onExporting](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onExporting.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onExporting') event handler. The component executes this handler when users click a button in the *"exportButton"* [toolbar item](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/toolbar/items/). Call **excelExporter**.[exportDataGrid(options)](/api-reference/50%20Common/utils/excelExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/excelExporter/#exportDataGridoptions') or **pdfExporter**.[exportDataGrid(options)](/api-reference/50%20Common/utils/pdfExporter/exportDataGrid(options).md '/Documentation/ApiReference/Common/Utils/pdfExporter/#exportDataGridoptions') in this handler as follows:
 
 ---
 ##### jQuery
@@ -67,6 +61,47 @@ When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(optio
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().DataGrid<Employee>()
+        .Export(e => e
+            .Enabled(true)
+            .Formats(new[] { DataGridExportFormat.Pdf, DataGridExportFormat.Xlsx })
+        )
+        .OnExporting("handleDataGridExporting")
+        @* ... *@
+    )
+
+    <script>
+        function handleDataGridExporting(e) {
+            if (e.format === 'xlsx') {
+                const workbook = new ExcelJS.Workbook();
+                const worksheet = workbook.addWorksheet('Main sheet');
+                DevExpress.excelExporter
+                .exportDataGrid({
+                    worksheet,
+                    component: e.component,
+                })
+                .then(() => {
+                    workbook.xlsx.writeBuffer().then((buffer) => {
+                    saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
+                    });
+                });
+                e.cancel = true;
+            } else if (e.format === 'pdf') {
+                const doc = new window.jspdf.jsPDF();
+                DevExpress.pdfExporter
+                .exportDataGrid({
+                    jsPDFDocument: doc,
+                    component: e.component,
+                })
+                .then(() => {
+                    doc.save('DataGrid.pdf');
+                });
+            }
+        }
+    </script>
 
 ##### Angular
 
@@ -75,8 +110,7 @@ When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(optio
     npm install jspdf
 
     <!-- tab: app.component.html -->
-    <dx-data-grid ...
-        (onExporting)="exportGrid($event)">
+    <dx-data-grid (onExporting)="exportGrid($event)">
         <!-- ... -->
         <dxo-data-grid-export 
             [enabled]="true"
@@ -129,8 +163,7 @@ When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(optio
 
     <!-- tab: App.vue -->
     <template>
-        <DxDataGrid ...
-            @exporting="exportGrid">
+        <DxDataGrid @exporting="exportGrid">
             <!-- ... -->
             <DxExport
                 :enabled="true"
@@ -269,7 +302,7 @@ When users click "Export all data to PDF", **pdfExporter**.[exportDataGrid(optio
     componentName: "DataGrid"
 }
 
-For further information on the DataGrid component, refer to the following resources:
+For more information about the DevExtreme DataGrid, refer to the following resources:
 
 * [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/)
 * [API Reference](/api-reference/10%20UI%20Components/dxDataGrid '/Documentation/ApiReference/UI_Components/dxDataGrid/')

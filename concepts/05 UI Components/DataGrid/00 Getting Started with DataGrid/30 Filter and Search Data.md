@@ -1,92 +1,71 @@
-The DataGrid includes the following UI elements used to filter and search data:
+DataGrid includes the following UI elements used to filter and search data:
 
 - [filterRow](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/')
 - [headerFilter](/api-reference/_hidden/GridBaseColumn/headerFilter '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/headerFilter/')
 - [filterPanel](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterPanel '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterPanel/') with [filterBuilder](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterBuilder.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#filterBuilder')
 - [searchPanel](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/searchPanel '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/searchPanel/')
 
-In this tutorial, the [filterRow](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/') and [searchPanel](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/searchPanel '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/searchPanel/') are displayed:
+This tutorial uses the [filterRow](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/') and [searchPanel](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/searchPanel '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/searchPanel/'):
 
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
-    $(function() {
-        $("#dataGrid").dxDataGrid({
-            // ...
-            filterRow: { visible: true },
-            searchPanel: { visible: true },
-        });
+    $("#dataGrid").dxDataGrid({
+        filterRow: { visible: true },
+        searchPanel: { visible: true },
+        // ...
     });
+
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().DataGrid<Employee>()
+        .FilterRow(f => f.Visible(true))
+        .SearchPanel(s => s.Visible(true))
+        @* ... *@
+    )
 
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-data-grid ... >
-        <!-- ... -->
+    <dx-data-grid>
         <dxo-data-grid-filter-row [visible]="true"></dxo-data-grid-filter-row>
         <dxo-data-grid-search-panel [visible]="true"></dxo-data-grid-search-panel>
+        <!-- ... -->
     </dx-data-grid>
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app-container">
-            <DxDataGrid ... >
-                <!-- ... -->
-                <DxFilterRow :visible="true" />
-                <DxSearchPanel :visible="true" />
-            </DxDataGrid>
-        </div>
+        <DxDataGrid ... >
+            <DxFilterRow :visible="true" />
+            <DxSearchPanel :visible="true" />
+            <!-- ... -->
+        </DxDataGrid>
     </template>
 
-    <script>
-    import {
-        DxDataGrid,
-        // ...
-        DxFilterRow,
-        DxSearchPanel
-    } from 'devextreme-vue/data-grid';
+    <script setup lang="ts">
+    import { DxDataGrid, DxFilterRow, DxSearchPanel } from 'devextreme-vue/data-grid';
 
-    export default {
-        components: {
-            DxDataGrid,
-            // ...
-            DxFilterRow,
-            DxSearchPanel
-        },
-        // ...
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import {
-        DataGrid,
-        // ...
-        FilterRow,
-        SearchPanel
-    } from 'devextreme-react/data-grid';
+    <!-- tab: App.tsx -->
+    import { DataGrid, FilterRow, SearchPanel } from 'devextreme-react/data-grid';
 
     function App() {
         return (
-            <div className="App">
-                <DataGrid ... >
-                    {/* ... */}
-                    <FilterRow visible={true} />
-                    <SearchPanel visible={true} />
-                </DataGrid>
-            </div>
+            <DataGrid ... >
+                <FilterRow visible={true} />
+                <SearchPanel visible={true} />
+                {/* ... */}
+            </DataGrid>
         );
     }
 
-    export default App;
-
 ---
 
-Run the code and enter a value in a filter row cell or the search panel. Grid data is filtered according to this value.
+<a href="/Documentation/Guide/UI_Components/DataGrid/Filtering_and_Searching/" class="button" style="margin-right: 5px;" target="_blank"><b>Read Tutorial</b>: DataGrid - Filtering and Searching</a>

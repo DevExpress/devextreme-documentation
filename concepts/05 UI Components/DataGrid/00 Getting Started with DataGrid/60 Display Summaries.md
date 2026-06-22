@@ -1,109 +1,84 @@
-Summaries can be divided into two groups:
+DataGrid supports two types of data summaries:
 
-- **Total summaries**       
-Calculated against all grid records; configured in the [totalItems](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/totalItems '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/') array.
+- **Total summaries**: Calculated against all grid records. Configured in the [totalItems](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/totalItems '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/') array.
+- **Group summaries**: Calculated for each data group. Configured in the [groupItems](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/groupItems '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/groupItems/') array.
 
-- **Group summaries**       
-Calculated for each data group; configured in the [groupItems](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/groupItems '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/groupItems/') array.
-
-Each summary item displays a value that is the result of applying an aggregate function to data. You can use [predefined aggregate functions](/concepts/05%20UI%20Components/DataGrid/65%20Summaries/05%20Predefined%20Aggregate%20Functions.md '/Documentation/Guide/UI_Components/DataGrid/Summaries/Predefined_Aggregate_Functions/'), such as *"sum"*, *"avg"*, and *"count"*, or implement a [custom aggregate function](/concepts/05%20UI%20Components/DataGrid/65%20Summaries/07%20Custom%20Aggregate%20Function '/Documentation/Guide/UI_Components/DataGrid/Summaries/Custom_Aggregate_Function/'). To apply an aggregate function, set the [summaryType](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/totalItems/summaryType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#summaryType') property.
-
-The code below configures a group summary that counts grid records in each group:
+Each summary item applies an aggregate function specified in [summaryType](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/totalItems/summaryType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/#summaryType') to display summarized values. You can use [predefined aggregate functions](/concepts/05%20UI%20Components/DataGrid/65%20Summaries/05%20Predefined%20Aggregate%20Functions.md '/Documentation/Guide/UI_Components/DataGrid/Summaries/Predefined_Aggregate_Functions/') (such as *"sum"*, *"avg"*, and *"count"*) or define a [custom aggregate function](/concepts/05%20UI%20Components/DataGrid/65%20Summaries/07%20Custom%20Aggregate%20Function '/Documentation/Guide/UI_Components/DataGrid/Summaries/Custom_Aggregate_Function/'). This tutorial implements a *"count"* group summary:
 
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
-    $(function() {
-        $("#dataGrid").dxDataGrid({
-            // ...
-            summary: {
-                groupItems: [{
-                    summaryType: "count"
-                }]
-            },
-        });
+    $("#dataGrid").dxDataGrid({
+        summary: {
+            groupItems: [{
+                summaryType: "count"
+            }]
+        },
+        // ...
     });
+
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().DataGrid<Employee>()
+        .Summary(s => s
+            .GroupItems(groupItems => {
+                groupItems.Add().SummaryType(SummaryType.Count);
+            })
+        )
+        @* ... *@
+    )
 
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-data-grid ... >
-        <!-- ... -->
+    <dx-data-grid>
         <dxo-data-grid-summary>
             <dxi-data-grid-group-item
                 summaryType="count">
             </dxi-data-grid-group-item>
         </dxo-data-grid-summary>
+        <!-- ... -->
     </dx-data-grid>
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app-container">
-            <DxDataGrid ... >
-                <!-- ... -->
-                <DxSummary>
-                    <DxGroupItem
-                        summary-type="count"
-                    />
-                </DxSummary>
-            </DxDataGrid>
-        </div>
+        <DxDataGrid>
+            <DxSummary>
+                <DxGroupItem summary-type="count" />
+            </DxSummary>
+            <!-- ... -->
+        </DxDataGrid>
     </template>
 
-    <script>
-    import {
-        DxDataGrid,
-        // ...
-        DxSummary,
-        DxGroupItem
-    } from 'devextreme-vue/data-grid';
+    <script setup lang="ts">
+    import { DxDataGrid, DxSummary, DxGroupItem } from 'devextreme-vue/data-grid';
 
-    export default {
-        components: {
-            DxDataGrid,
-            // ...
-            DxSummary,
-            DxGroupItem
-        },
-        // ...
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React, { useState } from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-    import './App.css';
+    <!-- tab: App.tsx -->
+    import { DataGrid, Summary, GroupItem } from 'devextreme-react/data-grid';
 
-    import {
-        DataGrid,
-        Column,
-        // ...
-        Summary,
-        GroupItem
-    } from 'devextreme-react/data-grid';
-
-    // ...
     function App() {
-        // ...
         return (
             <div className="App">
-                <DataGrid ... >
-                    {/* ... */}
+                <DataGrid>
                     <Summary>
-                        <GroupItem
-                            summaryType="count"
-                        />
+                        <GroupItem summaryType="count" />
                     </Summary>
+                    {/* ... */}
                 </DataGrid>
             </div>
         );
     }
 
-    export default App;
-
 ---
+
+<a href="/Documentation/Guide/UI_Components/DataGrid/Summaries/Total_Summary/" class="button" style="margin-right: 5px;" target="_blank"><b>Read Tutorial</b>: DataGrid - Total Summary</a>
+
+<a href="/Documentation/Guide/UI_Components/DataGrid/Summaries/Group_Summary/" class="button" style="margin-right: 5px;" target="_blank"><b>Read Tutorial</b>: DataGrid - Group Summary</a>

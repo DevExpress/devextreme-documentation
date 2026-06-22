@@ -60,6 +60,7 @@ $(function() {
             dataField: "PostalCode",
             visible: false
         }],
+        sorting: { mode: 'multiple' },
         filterRow: { visible: true },
         searchPanel: { visible: true },
         groupPanel: { visible: true },

@@ -144,7 +144,7 @@ Use the following `DataSource` members:
 
 ### 3) Configure `displayExpr`
 
-Use [`displayExpr`](/api-reference/10%20UI%20Components/dxDropDownBox/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#displayExpr') to define how a selected record is displayed in the input:
+Use [`displayExpr`](/api-reference/10%20UI%20Components/DataExpressionMixin/1%20Configuration/displayExpr.md '/Documentation/ApiReference/UI_Components/dxDropDownBox/Configuration/#displayExpr') to define how a selected record is displayed in the input:
 
     function displayExpr(item) {
         if (!item || typeof item !== 'object') return '';
@@ -157,9 +157,9 @@ Configure the DropDownBox component.  Use [`contentTemplate`](/api-reference/10%
 
 To activate focused row and single row selection, specify the following settings:
 
-- Enable [`focusedRowEnabled`](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/focusedRowEnabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#focusedRowEnabled') to allow keyboard navigation.
-- Use [`focusedRowKey`](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/focusedRowKey.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#focusedRowKey') so search can focus the first match.
-- Use single selection: [`selection.mode`](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/selection/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#mode').
+- Enable [`focusedRowEnabled`](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/focusedRowEnabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#focusedRowEnabled') to allow keyboard navigation.
+- Use [`focusedRowKey`](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/focusedRowKey.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#focusedRowKey') so search can focus the first match.
+- Use single selection: [`selection.mode`](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/selection/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#mode').
 
 ---
 ##### jQuery

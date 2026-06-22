@@ -96,7 +96,7 @@ The following code shows how to use the **controlBar** object to move the contro
 
     <!--Razor C#-->
     @(Html.DevExtreme().VectorMap()
-        @* ... *@
+        // ...
         .ControlBar(cb => cb
             .HorizontalAlignment(HorizontalAlignment.Right)
         )    

@@ -20939,6 +20939,9 @@
     "enums.MaskMode": {
       "vue": "mask-mode"
     },
+    "enums.MessageType": {
+      "vue": "message-type"
+    },
     "enums.Mode": {
       "vue": "mode"
     },

@@ -219,20 +219,18 @@ To display a styled [Tooltip](/Documentation/ApiReference/UI_Components/dxToolti
                 dataField: "description",
                 caption: "Description",
                 cellTemplate: function(container, options) {
-                    var cellEl = $("<span>")
-                        .attr("id", "cell_" + options.rowIndex)
-                        .text(options.value);
+                    const cellEl = $("<span>")
+                        .text(options.value)
+                        .appendTo(container);
 
                     $("<div>").dxTooltip({
-                        target: "#cell_" + options.rowIndex,
+                        target: cellEl,
                         showEvent: "mouseenter",
                         hideEvent: "mouseleave",
                         contentTemplate: function() {
                             return options.value;
                         }
                     }).appendTo(container);
-
-                    cellEl.appendTo(container);
                 }
             }]
         });

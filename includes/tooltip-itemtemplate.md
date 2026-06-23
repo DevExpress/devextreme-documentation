@@ -131,20 +131,18 @@ To display a styled [Tooltip](/Documentation/ApiReference/UI_Components/dxToolti
             displayExpr: "name",
             valueExpr: "id",
             itemTemplate: function(itemData, index, element) {
-                var itemEl = $("<span>")
-                    .attr("id", "item_" + itemData.id)
-                    .text(itemData.name);
+                const itemEl = $("<span>")
+                    .text(itemData.name)
+                    .appendTo(element);
 
                 $("<div>").dxTooltip({
-                    target: "#item_" + itemData.id,
+                    target: itemEl,
                     showEvent: "mouseenter",
                     hideEvent: "mouseleave",
                     contentTemplate: function() {
                         return itemData.description;
                     }
                 }).appendTo(element);
-
-                itemEl.appendTo(element);
             }
         });
     });

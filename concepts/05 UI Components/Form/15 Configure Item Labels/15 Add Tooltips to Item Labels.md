@@ -14,23 +14,21 @@ To add a tooltip to a Form item label, use the **label**.[template](/api-referen
                 dataField: "name",
                 label: {
                     template: function(data, element) {
-                        var labelText = $("<span>").text(data.text);
-                        var iconEl = $("<i>")
-                            .addClass("dx-icon dx-icon-info")
-                            .attr("id", "nameTooltipTarget")
-                            .css({ "margin-left": "4px", "cursor": "pointer" });
+                        $("<span>").text(data.text).appendTo(element);
 
-                        var tooltipEl = $("<div>");
-                        tooltipEl.dxTooltip({
-                            target: "#nameTooltipTarget",
+                        const iconEl = $("<i>")
+                            .addClass("dx-icon dx-icon-info")
+                            .css({ "margin-left": "4px", "cursor": "pointer" })
+                            .appendTo(element);
+
+                        $("<div>").dxTooltip({
+                            target: iconEl,
                             showEvent: "mouseenter",
                             hideEvent: "mouseleave",
                             contentTemplate: function() {
                                 return "Enter the full name as it appears on official documents.";
                             }
-                        });
-
-                        element.append(labelText, iconEl, tooltipEl);
+                        }).appendTo(element);
                     }
                 }
             },

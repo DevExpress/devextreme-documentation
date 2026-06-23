@@ -1,6 +1,6 @@
 ---
 id: ColumnHeaderFilter.groupInterval
-type: Enums.HeaderFilterGroupInterval | Number | undefined
+type: Enums.HeaderFilterGroupInterval | Number | Array<String, Number> | undefined
 default: undefined
 ---
 ---

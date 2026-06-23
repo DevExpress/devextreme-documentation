@@ -49,10 +49,11 @@ You can also use third-party libraries to connect to an AI service provider. The
     const deployment = 'my-deployment-name';
 
     const aiService = new AzureOpenAI({
+        dangerouslyAllowBrowser: true, // Disable in production
         deployment,
-        apiVersion: // ...
-        endpoint: // ...
-        apiKey: // ...
+        apiVersion: 'version',
+        endpoint: 'https://example.com/endpoint',
+        apiKey: 'AZURE_OPENAI_API_KEY',
     });
 
     const aiIntegration = new DevExpress.aiIntegration.AIIntegration({
@@ -135,10 +136,11 @@ You can also use third-party libraries to connect to an AI service provider. The
         private deployment = 'my-deployment-name';
 
         private aiService = new AzureOpenAI({
-            deployment: this.deployment,
-            apiVersion: // ...
-            endpoint: // ...
-            apiKey: // ...
+            dangerouslyAllowBrowser: true, // Disable in production
+            deployment,
+            apiVersion: 'version',
+            endpoint: 'https://example.com/endpoint',
+            apiKey: 'AZURE_OPENAI_API_KEY',
         });
 
         provider = {
@@ -226,10 +228,11 @@ You can also use third-party libraries to connect to an AI service provider. The
     const deployment = 'my-deployment-name';
 
     const aiService = new AzureOpenAI({
+        dangerouslyAllowBrowser: true, // Disable in production
         deployment,
-        apiVersion: // ...
-        endpoint: // ...
-        apiKey: // ...
+        apiVersion: 'version',
+        endpoint: 'https://example.com/endpoint',
+        apiKey: 'AZURE_OPENAI_API_KEY',
     });
 
     const provider = {
@@ -310,10 +313,11 @@ You can also use third-party libraries to connect to an AI service provider. The
     const deployment = 'my-deployment-name';
 
     const aiService = new AzureOpenAI({
+        dangerouslyAllowBrowser: true, // Disable in production
         deployment,
-        apiVersion: // ...
-        endpoint: // ...
-        apiKey: // ...
+        apiVersion: 'version',
+        endpoint: 'https://example.com/endpoint',
+        apiKey: 'AZURE_OPENAI_API_KEY',
     });
 
     const provider = {
@@ -346,5 +350,7 @@ You can also use third-party libraries to connect to an AI service provider. The
     const aiIntegration = new AIIntegration(provider);
 
 ---
+
+[important] `dangerouslyAllowBrowser: true` enables browser-side requests. This exposes your API key. For production, route requests through your backend.
 
 For additional AI integration examples, refer to [Overview of AI-powered Features - Demos](/Documentation/Guide/AI_Features/Overview_of_AI-powered_Features/#Demos).

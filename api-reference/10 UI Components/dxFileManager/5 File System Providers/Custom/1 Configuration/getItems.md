@@ -90,7 +90,7 @@ A Promise that is resolved after file system items are obtained.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxFileManager } from 'devextreme-vue/file-manager';
     import CustomFileSystemProvider from 'devextreme/file_management/custom_provider';
 

@@ -83,7 +83,7 @@ The following examples show how to configure the FileUploader for each upload mo
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.fluent.blue.light.css';     
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import { 
             DxFileUploader
@@ -226,7 +226,7 @@ The following examples show how to configure the FileUploader for each upload mo
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.fluent.blue.light.css';     
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import { 
             DxFileUploader

@@ -84,7 +84,7 @@ The following example illustrates how to use this method:
     </template>
 
     <script>
-        import 'devextreme/dist/css/dx.fluent.blue.light.css';    
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         
         import {
             DxFileManager

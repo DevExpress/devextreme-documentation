@@ -127,7 +127,7 @@ The following example illustrates how to configure an [Object](/api-reference/10
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';     
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { 
         DxFileManager

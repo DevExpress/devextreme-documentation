@@ -99,7 +99,7 @@ An object (fieldName/fieldValue pairs) to set on the native <a href="https://api
     </template>
     
     <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
     import { DxFileManager } from 'devextreme-vue/file-manager';
     

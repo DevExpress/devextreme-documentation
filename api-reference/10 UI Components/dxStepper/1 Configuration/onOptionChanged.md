@@ -101,7 +101,7 @@ The following code snippet shows how to subscribe to component property changes:
     </template> 
   
     <script>  
-    import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import Dx{WidgetName} from 'devextreme-vue/{widget-name}'; 
 
     export default { 
@@ -125,7 +125,7 @@ The following code snippet shows how to subscribe to component property changes:
 
     <!-- tab: App.js -->
     import React from 'react';  
-    import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName} from 'devextreme-react/{widget-name}'; 
 

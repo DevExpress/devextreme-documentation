@@ -99,7 +99,7 @@ The following code shows how to bind the FileManager to the **Remote** file syst
     </template>
     
     <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
     import { DxFileManager } from 'devextreme-vue/file-manager';
     

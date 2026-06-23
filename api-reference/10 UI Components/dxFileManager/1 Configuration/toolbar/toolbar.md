@@ -120,7 +120,7 @@ To add a predefined item to the toolbar, specify its [name](/api-reference/_hidd
         </DxFileManager>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.fluent.blue.light.css';    
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         
         import {
             DxFileManager,
@@ -353,7 +353,7 @@ The [widget](/api-reference/_hidden/dxFileManagerToolbarItem/widget.md '/Documen
         </DxFileManager>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.fluent.blue.light.css';    
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         
         import {
             DxFileManager,

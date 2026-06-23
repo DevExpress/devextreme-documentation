@@ -45,7 +45,8 @@ Define minimum and maximum file sizes in bytes. The following code snippet speci
             :max-file-size="1024*1024" 
         />   
     </template>
-    <script>
+
+    <script setup lang="ts">
     import { DxFileUploader } from 'devextreme-vue/file-uploader';
 
     const allowedFileExtensions = ['.jpeg', '.png'];

@@ -147,10 +147,10 @@ The following code snippet initializes a DataGrid with a column for each data fi
     </template>
 
     <script setup lang="ts">
-    // ...
+    import { ref } from 'vue';
     import { getEmployees } from './employees.service';
 
-    const employees: getEmployees(),
+    const employees = ref<Employee[]>(getEmployees());
     </script>
 
     <!-- tab: employees.service.ts -->

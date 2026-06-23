@@ -103,7 +103,7 @@ To obtain selected records at runtime, define [onSelectionChanged](/api-referenc
         </div>
     </template>
 
-    <script>
+    <script setup lang="ts">
     import { ref } from 'vue';
     import { DxDataGrid, DxSelection, type DataGridTypes } from 'devextreme-vue/data-grid';
     import { type Employee } from '../employees.service';
@@ -124,6 +124,7 @@ To obtain selected records at runtime, define [onSelectionChanged](/api-referenc
     <!-- tab: App.tsx -->
     import React, { useCallback, useState } from 'react';
     import { DataGrid, Selection, type DataGridTypes } from 'devextreme-react/data-grid';
+    import { type Employee } from './employees';
 
     function SelectedEmployee(props) {
         if(props.employee) {

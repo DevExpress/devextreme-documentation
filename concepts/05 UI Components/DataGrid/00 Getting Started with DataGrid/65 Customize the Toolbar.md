@@ -34,6 +34,7 @@
 
     <!-- tab: Index.cshtml -->
     @(Html.DevExtreme().DataGrid<Employee>()
+        .ID("grid-container")
         .Toolbar(t => t.Items(items => {
             items.Add().Name(DataGridToolbarItem.GroupPanel);
             items.Add()
@@ -85,7 +86,7 @@
     // ...
     export class AppComponent {
         // ...
-        expanded: Boolean = true;
+        expanded: boolean = true;
     }
 
     <!-- tab: app.module.ts -->

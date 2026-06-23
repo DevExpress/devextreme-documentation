@@ -33,13 +33,13 @@ The following code snippet also specifies [dataType](/api-reference/_hidden/Grid
     <!-- tab: Index.cshtml -->
     @(Html.DevExtreme().DataGrid<Employee>()
         .Columns(columns => {
-            columns.AddFor(m => m.FullName)
-            columns.AddFor(m => m.Position)
+            columns.AddFor(m => m.FullName);
+            columns.AddFor(m => m.Position);
             columns.AddFor(m => m.BirthDate)
-                .DataType(GridColumnDataType.Date)
+                .DataType(GridColumnDataType.Date);
             columns.AddFor(m => m.HireDate)
-                .DataType(GridColumnDataType.Date)
-            columns.AddFor(m => m.Country)
+                .DataType(GridColumnDataType.Date);
+            columns.AddFor(m => m.Country);
             columns.AddFor(m => m.Address);
             columns.AddFor(m => m.HomePhone);
             columns.AddFor(m => m.PostalCode).Visible(false);

@@ -28,10 +28,10 @@ DataGrid columns have equal widths in the default configuration ([width](/api-re
         .Columns(columns => {
             columns.AddFor(m => m.BirthDate)
                 .DataType(GridColumnDataType.Date)
-                .Width(100)
+                .Width(100);
             columns.AddFor(m => m.HireDate)
                 .DataType(GridColumnDataType.Date)
-                .Width(100)
+                .Width(100);
         })
         @* ... *@
     )
@@ -61,7 +61,7 @@ DataGrid columns have equal widths in the default configuration ([width](/api-re
     <!-- tab: App.vue -->
     <template>
         <DxDataGrid
-            :allow-column-reordering="true"
+            :allow-column-resizing="true"
             :column-auto-width="true"
         >
             <DxColumn
@@ -92,7 +92,7 @@ DataGrid columns have equal widths in the default configuration ([width](/api-re
         return (
             <DataGrid
                 columnAutoWidth={true}
-                allowColumnReordering={true}
+                allowColumnResizing={true}
             >
                 <Column
                     dataField="BirthDate"

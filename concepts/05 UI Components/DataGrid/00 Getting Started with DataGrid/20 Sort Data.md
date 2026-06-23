@@ -2,7 +2,7 @@ The **sorting**.[mode](/api-reference/10%20UI%20Components/GridBase/1%20Configur
 
 You can also set a column's [sortOrder](/api-reference/_hidden/GridBaseColumn/sortOrder.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#sortOrder') and [sortIndex](/api-reference/_hidden/GridBaseColumn/sortIndex.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#sortIndex') properties to specify initial sorting settings. [sortIndex](/api-reference/_hidden/GridBaseColumn/sortIndex.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#sortIndex') applies only in multiple sorting mode.
 
-To sort data and change sort orders in the UI, click column headers. Hold **shift** and click to add sorting by other columns in multiple sorting mode.
+To sort data and change sort orders in the UI, click column headers. Hold **Shift** and click to add sorting by other columns in multiple sorting mode.
 
 ---
 ##### jQuery
@@ -24,7 +24,7 @@ To sort data and change sort orders in the UI, click column headers. Hold **shif
         .Sorting(s => s.Mode(GridSortingMode.Multiple))
         .Columns(columns => {
             columns.AddFor(m => m.Country)
-                .SortOrder(SortOrder.Asc)
+                .SortOrder(SortOrder.Asc);
         })
         @* ... *@
     )

@@ -20,7 +20,7 @@ When the width of all columns exceeds the UI component's width, DataGrid enables
         .ColumnFixing(c => c.Enabled(true))
         .Columns(columns => {
             columns.AddFor(m => m.FullName)
-                .Fixed(true)
+                .Fixed(true);
         })
         @* ... *@
     )

@@ -22,7 +22,7 @@ To group data in code, define **columns[]**.[groupIndex](/api-reference/_hidden/
         .GroupPanel(p => p.Visible(true))
         .Columns(columns => {
             columns.AddFor(m => m.Country)
-                .GroupIndex(0)
+                .GroupIndex(0);
         })
         @* ... *@
     )

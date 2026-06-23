@@ -1,39 +1,39 @@
-The FileUploader allows you to restrict the extension ([allowedFileExtensions](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/allowedFileExtensions.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#allowedFileExtensions')) and size ([minFileSize](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/minFileSize.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#minFileSize') and [maxFileSize](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/maxFileSize.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#maxFileSize')) of the file being uploaded. Note that the minimum and maximum file sizes should be specified in bytes:
+FileUploader allows you to restrict uploaded file sizes and extensions using the following properties:
+
+- [allowedFileExtensions](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/allowedFileExtensions.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#allowedFileExtensions') 
+- [minFileSize](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/minFileSize.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#minFileSize')
+- [maxFileSize](/api-reference/10%20UI%20Components/dxFileUploader/1%20Configuration/maxFileSize.md '/Documentation/ApiReference/UI_Components/dxFileUploader/Configuration/#maxFileSize')
+
+Define minimum and maximum file sizes in bytes. The following code snippet specifies 1 KB minimum and 1 MB maximum sizes:
 
 ---
 ##### jQuery
 
-    <!--JavaScript-->$(function() {
-        $("#fileUploaderContainer").dxFileUploader({
-            // ...
-            allowedFileExtensions: [".jpg", ".png"],
-            minFileSize: 1024, // 1 KB
-            maxFileSize: 1024 * 1024 // 1 MB
-        });
+    <!-- tab: index.js -->
+    $("#fileUploaderContainer").dxFileUploader({
+        allowedFileExtensions: [".jpg", ".png"],
+        minFileSize: 1024,
+        maxFileSize: 1024 * 1024,
     });
 
 ##### Angular
 
-    <!--HTML-->
-    <dx-file-uploader ...
-        [allowedFileExtensions]="['.jpg', '.png']"
-        [minFileSize]="1024" <!-- 1 KB -->
-        [maxFileSize]="1024 * 1024"> <!-- 1 MB -->
-    </dx-file-uploader>
+    <!-- tab: app.component.html -->
+    <dx-file-uploader
+        [allowedFileExtensions]="allowedFileExtensions"
+        [minFileSize]="1024"
+        [maxFileSize]="1024 * 1024"
+    ></dx-file-uploader>
 
-    <!--TypeScript-->
+    <!-- tab: app.component.ts -->
     import { DxFileUploaderModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
-        // ...
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxFileUploaderModule
-        ],
-        // ...
+    
+    @Component({
+        imports: [DxFileUploaderModule],
     })
+    export class AppComponent {
+        allowedFileExtensions = ['.jpeg', '.png'];
+    }
 
 ##### Vue
 
@@ -42,61 +42,39 @@ The FileUploader allows you to restrict the extension ([allowedFileExtensions](/
         <DxFileUploader
             :allowed-file-extensions="allowedFileExtensions"
             :min-file-size="1024"
-            :max-file-size="1024*1024" >   
-        </DxFileUploader>
+            :max-file-size="1024*1024" 
+        />   
     </template>
     <script>
-        import 'devextreme/dist/css/dx.fluent.blue.light.css';    
-        
-        import {
-            DxFileManager
-        } from 'devextreme-vue/file-uploader';
+    import { DxFileUploader } from 'devextreme-vue/file-uploader';
 
-        export default {
-            components: {
-                DxFileUploader
-            },
-            data() {
-                return {
-                    allowedFileExtensions: ['.jpeg', '.png']
-                };
-            }            
-        };
+    const allowedFileExtensions = ['.jpeg', '.png'];
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import FileUploader from 'devextreme-react/file-uploader';
+    <!-- tab: App.tsx -->
+    import { FileUploader } from 'devextreme-react/file-uploader';
     
     const allowedFileExtensions = ['.jpeg', '.png'];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <FileUploader 
-                    allowedFileExtensions={allowedFileExtensions} 
-                    maxFileSize={1024*1024}
-                    minFileSize={1024}
-                    >
-                </FileUploader>
-            );
-        }
+    function App() {
+        return (
+            <FileUploader 
+                allowedFileExtensions={allowedFileExtensions}
+                minFileSize={1024}
+                maxFileSize={1024*1024}
+            />
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileUploader()
         .AllowedFileExtensions(new[] { ".jpeg", ".png" })
-        .MaxFileSize(1024*1024)
         .MinFileSize(1024)
-        // ...
+        .MaxFileSize(1024*1024)
     )
 
 ##### ASP.NET Core Controls
@@ -104,16 +82,14 @@ The FileUploader allows you to restrict the extension ([allowedFileExtensions](/
     <!--Razor C#-->
     @(Html.DevExtreme().FileUploader()
         .AllowedFileExtensions(new[] { ".jpeg", ".png" })
-        .MaxFileSize(1024*1024)
         .MinFileSize(1024)
-        // ...
+        .MaxFileSize(1024*1024)
     )
-
 
 ---
 
-Files are validated on the client. However, you should also implement server-side validation. Refer to the demo below to see an example for an ASP.NET server.
+FileUploader validates files on the client. You should also validate uploaded files on the server. Refer to the following demo for an ASP.NET server validation example:
 
 #include btn-open-demo with {
-    href: "https://demos.devexpress.com/ASPNetMvc/Demo/FileUploader/Validation"
+    href: "https://demos.devexpress.com/ASPNetMvc/Demo/FileUploader/Validation/"
 }

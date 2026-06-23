@@ -100,7 +100,7 @@ The following code shows how to create a custom file system provider and bind th
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxFileManager } from 'devextreme-vue/file-manager';
     import CustomFileSystemProvider from 'devextreme/file_management/custom_provider';
 

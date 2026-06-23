@@ -48,7 +48,7 @@ The following code creates the FileManager UI component and adds it to your page
     </template>
 
     <script>
-        import 'devextreme/dist/css/dx.fluent.blue.light.css';     
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import { DxFileManager } from 'devextreme-vue/file-manager';
 

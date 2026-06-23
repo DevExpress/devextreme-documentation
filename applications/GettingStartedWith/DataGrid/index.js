@@ -1,15 +1,15 @@
 const polyfill = $("<script>", { src: "https://cdn.jsdelivr.net/npm/babel-polyfill@6.26.0/dist/polyfill.min.js" });
 const exceljs = $("<script>", { src: "https://cdn.jsdelivr.net/npm/devextreme-exceljs-fork@4.4.11/dist/dx-exceljs-fork.min.js" });
 const fileSaver = $("<script>", { src: "https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js" });
-const jsPdf = $("<script>", { src: "https://cdn.jsdelivr.net/npm/jspdf@4.2.1/dist/jspdf.es.min.js" });
+const jsPdf = $("<script>", { src: "https://cdn.jsdelivr.net/npm/jspdf@4.2.1/dist/jspdf.umd.min.js" });
 
 $("head").append(
     polyfill, exceljs, fileSaver, jsPdf
 );
 
-window.jsPDF = window.jspdf.jsPDF;
-
 $(function() {
+    window.jsPDF = window.jspdf.jsPDF;
+
     const dataGrid = $("#dataGrid").dxDataGrid({
         dataSource: employees,
         keyExpr: "EmployeeID",
@@ -58,7 +58,7 @@ $(function() {
             dataField: "PostalCode",
             visible: false
         }],
-        sorting: { mode: 'multiple' },
+        sorting: { mode: "multiple" },
         filterRow: { visible: true },
         searchPanel: { visible: true },
         groupPanel: { visible: true },

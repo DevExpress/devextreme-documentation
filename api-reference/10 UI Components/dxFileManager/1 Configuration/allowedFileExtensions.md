@@ -64,7 +64,7 @@ The FileManager UI component cannot upload a file and displays an error message 
         </DxFileManager>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.fluent.blue.light.css';    
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         
         import {
             DxFileManager

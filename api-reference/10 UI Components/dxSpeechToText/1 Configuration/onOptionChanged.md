@@ -102,7 +102,7 @@ The following code snippet demonstrates how to subscribe to component property c
     </template> 
   
     <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { Dx{WidgetName}, type Dx{WidgetName}Types } from 'devextreme-vue/{widget-name}'; 
 
     function handlePropertyChange: function(e: Dx{WidgetName}Types.OptionChangedEvent) {

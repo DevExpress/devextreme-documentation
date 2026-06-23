@@ -125,7 +125,7 @@ In the example below, the FileManager UI component displays hierarchical data st
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';     
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { 
         DxFileManager

@@ -79,7 +79,7 @@ The UI component allows you to configure upload settings:
         </DxFileManager>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';    
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
     import {
         DxFileManager,

@@ -162,7 +162,7 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
 
     <!-- tab: App.js -->
     import React from 'react';  
-    import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         ColumnChooser, 

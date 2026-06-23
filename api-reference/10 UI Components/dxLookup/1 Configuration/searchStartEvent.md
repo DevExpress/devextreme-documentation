@@ -61,7 +61,7 @@ The recommended events are "keyup", "blur", "change", "input", and "focusout", b
     </template> 
   
     <script>  
-    import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxLookup from 'devextreme-vue/lookup'; 
 
     export default { 
@@ -77,7 +77,7 @@ The recommended events are "keyup", "blur", "change", "input", and "focusout", b
 
     <!-- tab: App.js -->
     import React from 'react';  
-    import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Lookup from 'devextreme-react/lookup'; 
 

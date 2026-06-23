@@ -95,7 +95,7 @@ Assign the [Custom](/api-reference/10%20UI%20Components/dxFileManager/5%20File%2
     </template>
 
     <script>
-        import 'devextreme/dist/css/dx.fluent.blue.light.css';     
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         
         import { DxFileManager } from 'devextreme-vue/file-manager';
         import CustomFileSystemProvider from 'devextreme/file_management/custom_provider';        

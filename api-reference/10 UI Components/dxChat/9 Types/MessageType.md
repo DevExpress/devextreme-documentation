@@ -6,7 +6,7 @@ references: MessageBase.type
 ---
 ---
 ##### shortDescription
-Specifies the type of a chat message.
+Specifies the chat message type.
 
 ---
 Use this type to define the format of a message in the [type](/Documentation/ApiReference/UI_Components/dxChat/Types/Message/#type) field.

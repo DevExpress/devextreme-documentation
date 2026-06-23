@@ -159,7 +159,7 @@ Configures the field's header filter.
 
     <!-- tab: App.js -->
     import React from 'react';  
-    import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import PivotGridDataSource from 'devextreme/ui/pivot_grid/data_source';
     import DxPivotGrid from 'devextreme-react/pivot-grid';

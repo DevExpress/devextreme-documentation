@@ -58,7 +58,7 @@ Each path part has each own key. For example, path "directory1/directory2" has t
         </DxFileManager>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.fluent.blue.light.css';    
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         
         import {
             DxFileManager

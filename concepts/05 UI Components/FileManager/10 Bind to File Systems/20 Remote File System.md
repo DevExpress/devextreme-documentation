@@ -109,7 +109,7 @@ The data object, which is sent back from the server, contains attributes that st
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
     import { DxFileManager } from 'devextreme-vue/file-manager';
 

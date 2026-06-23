@@ -77,7 +77,7 @@ Configures the file and directory view.
         </DxFileManager>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.fluent.blue.light.css';    
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         
         import {
             DxFileManager,

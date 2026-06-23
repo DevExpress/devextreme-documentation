@@ -132,7 +132,7 @@ You can specify the [my](/api-reference/50%20Common/Object%20Structures/position
 
     <!-- tab: App.js -->
     import React from 'react';  
-    import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         ColumnChooser, 

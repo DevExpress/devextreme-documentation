@@ -128,7 +128,7 @@ In the example below, the FileManager UI component displays hierarchical data st
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';     
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { 
         DxFileManager
@@ -364,7 +364,7 @@ If the data source's field names differ from the standard field names mentioned 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';     
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DxFileManager } from 'devextreme-vue/file-manager';
     import ObjectFileSystemProvider from 'devextreme/file_management/object_provider';

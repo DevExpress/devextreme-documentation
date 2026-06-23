@@ -77,7 +77,7 @@ Use this property if you need to change the element in which the column chooser 
 
     <!-- tab: App.js -->
     import React from 'react';  
-    import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         ColumnChooser 

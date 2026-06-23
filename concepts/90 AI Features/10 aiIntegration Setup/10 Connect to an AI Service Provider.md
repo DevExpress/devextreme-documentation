@@ -69,7 +69,7 @@ You can also use third-party libraries to connect to an AI service provider. The
             const chatParams = {
                 messages: aiPrompt,
                 model: deployment,
-                max_completion_tokens: // ...
+                max_completion_tokens: 1024,
             }
 
             const promise = aiService.chat.completions.create(chatParams, { signal })
@@ -156,7 +156,7 @@ You can also use third-party libraries to connect to an AI service provider. The
                 const chatParams = {
                     messages: aiPrompt,
                     model: this.deployment,
-                    max_completion_tokens: // ...
+                    max_completion_tokens: 1024,
                 };
 
                 const promise = this.aiService.chat.completions.create(chatParams, { signal })
@@ -248,7 +248,7 @@ You can also use third-party libraries to connect to an AI service provider. The
             const chatParams = {
                 messages: aiPrompt,
                 model: deployment,
-                max_completion_tokens: // ...
+                max_completion_tokens: 1024,
             };
 
             const promise = aiService.chat.completions.create(chatParams, { signal })
@@ -333,7 +333,7 @@ You can also use third-party libraries to connect to an AI service provider. The
             const chatParams = {
                 messages: aiPrompt,
                 model: deployment,
-                max_completion_tokens: // ...
+                max_completion_tokens: 1024,
             };
 
             const promise = aiService.chat.completions.create(chatParams, { signal })

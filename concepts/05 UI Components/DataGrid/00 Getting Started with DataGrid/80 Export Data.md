@@ -47,7 +47,6 @@ To enable data exporting, set **export**.[enabled](/api-reference/10%20UI%20Comp
                             saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
                         });
                     });
-                    e.cancel = true;
                 } else if (e.format === 'pdf') {
                     const doc = new window.jspdf.jsPDF();
                     DevExpress.pdfExporter.exportDataGrid({
@@ -86,7 +85,6 @@ To enable data exporting, set **export**.[enabled](/api-reference/10%20UI%20Comp
                         saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
                     });
                 });
-                e.cancel = true;
             } else if (e.format === 'pdf') {
                 const doc = new window.jspdf.jsPDF();
                 DevExpress.pdfExporter.exportDataGrid({
@@ -185,7 +183,6 @@ To enable data exporting, set **export**.[enabled](/api-reference/10%20UI%20Comp
                     saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
                 });
             });
-            e.cancel = true;
         } else if (e.format === 'pdf') {
             const doc = new jsPDF();
             exportDataGridToPdf({

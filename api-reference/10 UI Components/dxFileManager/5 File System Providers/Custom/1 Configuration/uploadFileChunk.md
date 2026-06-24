@@ -272,15 +272,15 @@ A Promise that is resolved after the file system item is uploaded.
     )
 
     <script>
-        var endpointUrl = '@Url.RouteUrl("FileManagerAzureAccessApi")';
-        var gateway = new AzureGateway(endpointUrl, onRequestExecuted);
-        var azure = new AzureFileSystem(gateway);
+        const endpointUrl = '@Url.RouteUrl("FileManagerAzureAccessApi")';
+        const gateway = new AzureGateway(endpointUrl, onRequestExecuted);
+        const azure = new AzureFileSystem(gateway);
         
         function uploadFileChunk(fileData, uploadInfo, destinationDirectory) {
-            var deferred = null;
+            let deferred = null;
 
             if(uploadInfo.chunkIndex === 0) {
-                var filePath = destinationDirectory.path ? destinationDirectory.path + "/" + fileData.name : fileData.name;
+                const filePath = destinationDirectory.path ? destinationDirectory.path + "/" + fileData.name : fileData.name;
                 deferred = gateway.getUploadAccessUrl(filePath).done(function(accessUrl) {
                     uploadInfo.customData.accessUrl = accessUrl;
                 });
@@ -314,15 +314,15 @@ A Promise that is resolved after the file system item is uploaded.
     )
 
     <script>
-        var endpointUrl = '@Url.RouteUrl("FileManagerAzureAccessApi")';
-        var gateway = new AzureGateway(endpointUrl, onRequestExecuted);
-        var azure = new AzureFileSystem(gateway);
+        const endpointUrl = '@Url.RouteUrl("FileManagerAzureAccessApi")';
+        const gateway = new AzureGateway(endpointUrl, onRequestExecuted);
+        const azure = new AzureFileSystem(gateway);
 
         function uploadFileChunk(fileData, uploadInfo, destinationDirectory) {
-            var deferred = null;
+            let deferred = null;
 
             if(uploadInfo.chunkIndex === 0) {
-                var filePath = destinationDirectory.path ? destinationDirectory.path + "/" + fileData.name : fileData.name;
+                const filePath = destinationDirectory.path ? destinationDirectory.path + "/" + fileData.name : fileData.name;
                 deferred = gateway.getUploadAccessUrl(filePath).done(function(accessUrl) {
                     uploadInfo.customData.accessUrl = accessUrl;
                 });

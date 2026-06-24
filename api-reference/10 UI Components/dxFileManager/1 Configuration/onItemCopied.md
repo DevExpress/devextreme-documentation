@@ -155,7 +155,7 @@ Select a file/folder and use the **Copy To** [context menu](/api-reference/10%20
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .OnItemCopied("onItemCopied");
+        .OnItemCopied("onItemCopied")
         // ...
     )
 
@@ -171,7 +171,7 @@ Select a file/folder and use the **Copy To** [context menu](/api-reference/10%20
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .OnItemCopied("onItemCopied");
+        .OnItemCopied("onItemCopied")
         // ...
     )
 

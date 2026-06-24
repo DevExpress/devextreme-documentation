@@ -44,7 +44,7 @@ The following code snippet also specifies [dataType](/api-reference/_hidden/Grid
             columns.AddFor(m => m.Country);
             columns.AddFor(m => m.Address);
             columns.AddFor(m => m.HomePhone);
-            columns.AddFor(m => m.PostalCode).Visible(false);
+            columns.AddFor(m => m.PostalCode);
         })
         @* ... *@
     )

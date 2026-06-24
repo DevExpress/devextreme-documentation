@@ -164,7 +164,7 @@ An object that contains information about the error.
                 },
                 getExtension(path) {
                     const index = path.lastIndexOf(".");
-                    return index !== -1 ? path.substr(index) : "";
+                    return index !== -1 ? path.slice(index) : "";
                 },
             },
         };

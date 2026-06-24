@@ -116,7 +116,7 @@ Configures the "Details" file system representation mode.
                         <Details>
                             <Column dataField="thumbnail" />
                             <Column dataField="name" />
-                            <!-- ... -->
+                            {/* ... */}
                         </Details>
                     </ItemView>
                 </FileManager>

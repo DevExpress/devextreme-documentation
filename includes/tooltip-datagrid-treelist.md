@@ -340,6 +340,6 @@ To display a styled [Tooltip](/Documentation/ApiReference/UI_Components/dxToolti
 
 ---
 
-To add a tooltip to a header cell, use the [headerCellTemplate](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/columns/#headerCellTemplate) property with the same approaches described above.
+To add a tooltip to a header cell, use the [headerCellTemplate](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/columns/#headerCellTemplate) property as described above.
 
 You can replace `"mouseenter"` and `"mouseleave"` with other events such as `"click"`, `"dblclick"`, `"focus"`, or `"blur"` to control when the Tooltip is displayed.

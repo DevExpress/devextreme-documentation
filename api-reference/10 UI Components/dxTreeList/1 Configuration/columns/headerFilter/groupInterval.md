@@ -8,7 +8,7 @@ default: undefined
 Specifies how the header filter combines values into groups.
 
 ---
-If you [specify a custom header filter data source](/concepts/05%20UI%20Components/DataGrid/99%20How%20To/Customize%20Header%20Filter%20Data%20Source/10%20Specify%20a%20Custom%20Data%20Source.md '/Documentation/Guide/UI_Components/DataGrid/How_To/Customize_Header_Filter_Data_Source/#Specify_a_Custom_Data_Source'), **groupInterval** accepts only string arrays that contain group fields for [hierarchical header filters](/concepts/05%20UI%20Components/DataGrid/75%20Implement%20a%20Hierarchical%20Header%20Filter/00%20Implement%20a%20Hierarchical%20Header%20Filter.md '/Documentation/Guide/UI_Components/DataGrid/Implement_a_Hierarchical_Header_Filter/').
+If you [specify a custom header filter data source](/concepts/05%20UI%20Components/DataGrid/99%20How%20To/Customize%20Header%20Filter%20Data%20Source/10%20Specify%20a%20Custom%20Data%20Source.md '/Documentation/Guide/UI_Components/DataGrid/How_To/Customize_Header_Filter_Data_Source/#Specify_a_Custom_Data_Source'), **groupInterval** accepts only an array of strings or numbers. This array should contain group fields for a [hierarchical header filter](/concepts/05%20UI%20Components/DataGrid/75%20Implement%20a%20Hierarchical%20Header%20Filter/00%20Implement%20a%20Hierarchical%20Header%20Filter.md '/Documentation/Guide/UI_Components/DataGrid/Implement_a_Hierarchical_Header_Filter/').
 
 For numeric columns, assign a number that specifies the size of generated groups. For an example of this **groupInterval** implementation, refer to the following demo:
 

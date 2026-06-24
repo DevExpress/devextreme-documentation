@@ -1,7 +1,7 @@
 To configure a hierarchical header filter, specify the following properties:
 
 - [groupInterval](/api-reference/40%20Common%20Types/15%20grids/ColumnHeaderFilter/groupInterval.md '/Documentation/ApiReference/Common_Types/grids/ColumnHeaderFilter/#groupInterval')    
-Assign a string array that contains multiple items to the **groupInterval** property. Specify the nesting levels you want to implement in this array:
+Assign an array of strings or numbers to the **groupInterval** property. Specify the nesting levels you want to implement in this array:
 
     ---
 

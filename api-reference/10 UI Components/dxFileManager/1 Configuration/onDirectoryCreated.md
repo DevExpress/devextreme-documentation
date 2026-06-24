@@ -147,7 +147,7 @@ Use the **Create Directory** [context menu](/api-reference/10%20UI%20Components/
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .OnDirectoryCreated("onDirectoryCreated");
+        .OnDirectoryCreated("onDirectoryCreated")
         // ...
     )
 
@@ -163,7 +163,7 @@ Use the **Create Directory** [context menu](/api-reference/10%20UI%20Components/
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .OnDirectoryCreated("onDirectoryCreated");
+        .OnDirectoryCreated("onDirectoryCreated")
         // ...
     )
 

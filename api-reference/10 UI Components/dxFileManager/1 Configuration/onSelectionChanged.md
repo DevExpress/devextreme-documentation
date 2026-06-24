@@ -137,7 +137,7 @@ The currently selected file system items.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .OnSelectionChanged("fileManager_onSelectionChanged");
+        .OnSelectionChanged("fileManager_onSelectionChanged")
         // ...
     )
 
@@ -151,7 +151,7 @@ The currently selected file system items.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .OnSelectionChanged("fileManager_onSelectionChanged");
+        .OnSelectionChanged("fileManager_onSelectionChanged")
         // ...
     )
 

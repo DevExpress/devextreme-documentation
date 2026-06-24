@@ -112,7 +112,7 @@ Configures the file and directory view.
                 <FileManager>
                     <ItemView 
                         mode="thumbnails"
-                        showFolder={false}
+                        showFolders={false}
                         showParentFolder={false}
                     />
                 </FileManager>
@@ -124,10 +124,10 @@ Configures the file and directory view.
 ##### ASP.NET Core Controls
 
     <!--Razor C#-->
-    @(Html.DevExtreme().Gantt()
+    @(Html.DevExtreme().FileManager()
         .ItemView(v => v
-            .Mode()
-            .ShowFolder(false)
+            .Mode(FileManagerItemViewMode.Thumbnails)
+            .ShowFolders(false)
             .ShowParentFolder(false)
         )
     )
@@ -135,10 +135,10 @@ Configures the file and directory view.
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
-    @(Html.DevExtreme().Gantt()
+    @(Html.DevExtreme().FileManager()
         .ItemView(v => v
-            .Mode()
-            .ShowFolder(false)
+            .Mode(FileManagerItemViewMode.Thumbnails)
+            .ShowFolders(false)
             .ShowParentFolder(false)
         )
     )

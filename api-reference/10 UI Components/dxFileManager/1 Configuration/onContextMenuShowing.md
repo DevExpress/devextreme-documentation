@@ -125,7 +125,7 @@ Specifies whether the context menu is invoked in the navigation panel or in the 
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
+    import React, { useState, useCallback } from 'react';
     import FileManager, { ContextMenu } from 'devextreme-react/file-manager';
 
     const App = () => {
@@ -146,7 +146,7 @@ Specifies whether the context menu is invoked in the navigation panel or in the 
                 // }
             },
             [filterMenuItems, contextMenuItems]
-        };
+        );
 
         return (
             <FileManager 

@@ -132,7 +132,7 @@ The current directory.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .OnCurrentDirectoryChanged("onDirectoryChanged");
+        .OnCurrentDirectoryChanged("onDirectoryChanged")
         // ...
     )
 
@@ -146,7 +146,7 @@ The current directory.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .OnCurrentDirectoryChanged("onDirectoryChanged");
+        .OnCurrentDirectoryChanged("onDirectoryChanged")
         // ...
     )
 

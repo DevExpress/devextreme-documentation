@@ -147,7 +147,7 @@ Select a file/directory and click the **Rename** [context menu](/api-reference/1
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .OnItemRenamed("onItemRenamed");
+        .OnItemRenamed("onItemRenamed")
         // ...
     )
 
@@ -163,7 +163,7 @@ Select a file/directory and click the **Rename** [context menu](/api-reference/1
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .OnItemRenamed("onItemRenamed");
+        .OnItemRenamed("onItemRenamed")
         // ...
     )
 

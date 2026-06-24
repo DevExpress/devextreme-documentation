@@ -146,7 +146,7 @@ Specifies whether the context menu is invoked in the navigation panel or in the 
                 // }
             },
             [filterMenuItems, contextMenuItems]
-        };
+        );
 
         return (
             <FileManager 

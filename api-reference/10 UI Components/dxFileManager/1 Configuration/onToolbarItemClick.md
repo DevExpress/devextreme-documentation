@@ -138,7 +138,7 @@ The clicked item's index.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .onToolbarItemClick("fileManager_onToolbarItemClick");
+        .onToolbarItemClick("fileManager_onToolbarItemClick")
         // ...
     )
 
@@ -152,7 +152,7 @@ The clicked item's index.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .onToolbarItemClick("fileManager_onToolbarItemClick");
+        .onToolbarItemClick("fileManager_onToolbarItemClick")
         // ...
     )
 

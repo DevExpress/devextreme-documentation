@@ -144,7 +144,7 @@ The columns after customization.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        @* ... *@
+        // ...
         .CustomizeDetailColumns("customizeDetailColumns")
     )
 
@@ -161,7 +161,7 @@ The columns after customization.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        @* ... *@
+        // ...
         .CustomizeDetailColumns("customizeDetailColumns")
     )
 

@@ -165,7 +165,7 @@ A Promise that is resolved after the file upload in aborted.
     )
 
     <script>
-        function abortfileUpload(fileData, chunksInfo, destinationDir) {
+        function abortFileUpload(fileData, chunksInfo, destinationDir) {
             // ...
         }
         // other functions
@@ -182,7 +182,7 @@ A Promise that is resolved after the file upload in aborted.
     )
 
     <script>
-        function abortfileUpload(fileData, chunksInfo, destinationDir) {
+        function abortFileUpload(fileData, chunksInfo, destinationDir) {
             // ...
         }
         // other functions

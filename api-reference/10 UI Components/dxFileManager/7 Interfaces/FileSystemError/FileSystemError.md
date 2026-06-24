@@ -144,24 +144,27 @@ An object that contains information about the error.
                         getItems: (parentDir) => this.getItems(parentDir),
                         renameItem: (item, newName) => this.renameItem(item, newName),
                     }),
-                    };
+                };
+            },
+            methods: {
+                getItems(parentDir) {
+                    return this.objectProvider.getItems(parentDir);
                 },
-                methods: {
-                    getItems(parentDir) {
-                        return this.objectProvider.getItems(parentDir);
-                    },
-                    renameItem(item, newName) {
-                        return new Promise((resolve, reject) => {
-                            if(item.getFileExtension() !== this.getExtension(newName)) {
-                                // 1 - reject
-                                reject(new FileSystemError(5, item, "You cannot change the file extension."));
-                                // 2 - throw
-                                // throw new FileSystemError(5, item, "You cannot change the file extension.");
-                            } else {
-                                resolve(this.objectProvider.renameItem(item, newName));
-                            }
-                        });
-                    },
+                renameItem(item, newName) {
+                    return new Promise((resolve, reject) => {
+                        if(item.getFileExtension() !== this.getExtension(newName)) {
+                            // 1 - reject
+                            reject(new FileSystemError(5, item, "You cannot change the file extension."));
+                            // 2 - throw
+                            // throw new FileSystemError(5, item, "You cannot change the file extension.");
+                        } else {
+                            resolve(this.objectProvider.renameItem(item, newName));
+                        }
+                    });
+                },
+                getExtension(path) {
+                    const index = path.lastIndexOf(".");
+                    return index !== -1 ? path.substr(index) : "";
                 },
             },
         };

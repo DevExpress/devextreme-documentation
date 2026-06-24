@@ -147,7 +147,7 @@ Use the **Upload Files** [context menu](/api-reference/10%20UI%20Components/dxFi
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .OnFileUploaded("onFileUploaded");
+        .OnFileUploaded("onFileUploaded")
         // ...
     )
 
@@ -163,7 +163,7 @@ Use the **Upload Files** [context menu](/api-reference/10%20UI%20Components/dxFi
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .OnFileUploaded("onFileUploaded");
+        .OnFileUploaded("onFileUploaded")
         // ...
     )
 

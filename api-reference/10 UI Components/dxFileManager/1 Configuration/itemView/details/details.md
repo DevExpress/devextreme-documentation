@@ -128,30 +128,30 @@ Configures the "Details" file system representation mode.
 ##### ASP.NET Core Controls
 
     <!--Razor C#-->
-    @(Html.DevExtreme().Gantt()
+    @(Html.DevExtreme().FileManager()
         .ItemView(itemView => {
             itemView.Details(details => {
                 details.Columns(columns => {
                     columns.Add().DataField("thumbnail");
                     columns.Add().DataField("name");
-                    <!-- ... -->
+                    // ...
                 });
-            })
+            });
         })
     )
 
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
-    @(Html.DevExtreme().Gantt()
+    @(Html.DevExtreme().FileManager()
         .ItemView(itemView => {
             itemView.Details(details => {
                 details.Columns(columns => {
                     columns.Add().DataField("thumbnail");
                     columns.Add().DataField("name");
-                    <!-- ... -->
+                    // ...
                 });
-            })
+            });
         })
     )
 

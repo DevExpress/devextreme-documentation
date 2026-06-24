@@ -153,7 +153,7 @@ Select a file/folder and use the **Move To** [context menu](/api-reference/10%20
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .OnItemMoved("onItemMoved");
+        .OnItemMoved("onItemMoved")
         // ...
     )
 
@@ -169,7 +169,7 @@ Select a file/folder and use the **Move To** [context menu](/api-reference/10%20
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .OnItemMoved("onItemMoved");
+        .OnItemMoved("onItemMoved")
         // ...
     )
 

@@ -1,3 +1,5 @@
+#include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Reordering/", name: "Column Reordering" }
+
 To specify an initial column order, reorder [columns[]](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') items. Enable [allowColumnReordering](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/allowColumnReordering.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#allowColumnReordering') to allow column reordering in the component's UI.
 
 The following code snippet also specifies [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataType') for `BirthDate` and `HireDate` columns to display string values as dates:
@@ -124,5 +126,3 @@ The following code snippet also specifies [dataType](/api-reference/_hidden/Grid
     }
 
 ---
-
-<a href="/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Reordering/" class="button" style="margin-right: 5px;" target="_blank"><b>Read Tutorial</b>: Column Reordering</a>

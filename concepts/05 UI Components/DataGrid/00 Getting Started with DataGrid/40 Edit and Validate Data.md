@@ -1,3 +1,5 @@
+#include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/DataGrid/Editing/", name: "DataGrid - Editing" }
+
 Users can add new records and update or delete existing records. To allow these operations, enable the following [editing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/') options:
 
 - [allowAdding](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/allowAdding.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowAdding')
@@ -161,8 +163,6 @@ This tutorial also implements [data validation](/Documentation/Guide/UI_Componen
     }
 
 ---
-
-<a href="/Documentation/Guide/UI_Components/DataGrid/Editing/" class="button" style="margin-right: 5px;" target="_blank"><b>Read Tutorial</b>: DataGrid - Editing</a>
 
 To implement validation for unchanged cells using a custom toolbar button, refer to the following example:
 

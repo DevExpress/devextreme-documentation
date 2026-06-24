@@ -1,3 +1,5 @@
+#include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Sizing/", name: "Column Sizing" }
+
 DataGrid columns have equal widths in the default configuration ([width](/api-reference/_hidden/GridBaseColumn/width.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#width') is set to *"auto"*). To change the column layout, you can define each column's **width** property or enable [columnAutoWidth](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnAutoWidth.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnAutoWidth') to adjust all columns to fit cell values. To allow users to change the column layout, enable [allowColumnResizing](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/allowColumnResizing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#allowColumnResizing').
 
 ---
@@ -110,5 +112,3 @@ DataGrid columns have equal widths in the default configuration ([width](/api-re
     }
 
 ---
-
-<a href="/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Sizing/" class="button" style="margin-right: 5px;" target="_blank"><b>Read Tutorial</b>: Column Sizing</a>

@@ -1,3 +1,6 @@
+#include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/DataGrid/Summaries/Total_Summary/", name: "DataGrid - Total Summary" }
+#include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/DataGrid/Summaries/Group_Summary/", name: "DataGrid - Group Summary" }
+
 DataGrid supports two types of data summaries:
 
 - **Total summaries**: Calculated against all grid records. Configured in the [totalItems](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/totalItems '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/totalItems/') array.
@@ -78,7 +81,3 @@ Each summary item applies an aggregate function specified in [summaryType](/api-
     }
 
 ---
-
-<a href="/Documentation/Guide/UI_Components/DataGrid/Summaries/Total_Summary/" class="button" style="margin-right: 5px;" target="_blank"><b>Read Tutorial</b>: DataGrid - Total Summary</a>
-
-<a href="/Documentation/Guide/UI_Components/DataGrid/Summaries/Group_Summary/" class="button" style="margin-right: 5px;" target="_blank"><b>Read Tutorial</b>: DataGrid - Group Summary</a>

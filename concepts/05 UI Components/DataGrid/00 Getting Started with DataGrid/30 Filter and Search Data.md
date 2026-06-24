@@ -1,3 +1,5 @@
+#include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/DataGrid/Filtering_and_Searching/", name: "DataGrid - Filtering and Searching" }
+
 DataGrid includes the following UI elements used to filter and search data:
 
 - [filterRow](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/')
@@ -67,5 +69,3 @@ This tutorial uses the [filterRow](/api-reference/10%20UI%20Components/GridBase/
     }
 
 ---
-
-<a href="/Documentation/Guide/UI_Components/DataGrid/Filtering_and_Searching/" class="button" style="margin-right: 5px;" target="_blank"><b>Read Tutorial</b>: DataGrid - Filtering and Searching</a>

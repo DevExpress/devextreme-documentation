@@ -1,3 +1,5 @@
+#include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Fixing/", name: "Column Fixing" }
+
 When the width of all columns exceeds the UI component's width, DataGrid enables horizontal scrolling. To ensure specific columns always remain in view, enable [columnFixing](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnFixing/enabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columnFixing/#enabled'). Set **columns[]**.[fixed](/api-reference/_hidden/GridBaseColumn/fixed.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#fixed') to `true` to initialize fixed columns. Define [fixedPosition](/api-reference/_hidden/GridBaseColumn/fixedPosition.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#fixedPosition') to specify a fixed column's position or implement a sticky column. Users can also modify column fixing options in the component UI using the DataGrid [context menu](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onContextMenuPreparing).
 
 ---
@@ -77,5 +79,3 @@ When the width of all columns exceeds the UI component's width, DataGrid enables
     }
 
 ---
-
-<a href="/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Fixing/" class="button" style="margin-right: 5px;" target="_blank"><b>Read Tutorial</b>: Column Fixing</a>

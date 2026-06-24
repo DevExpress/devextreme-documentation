@@ -1,3 +1,5 @@
+#include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/DataGrid/Grouping/", name: "DataGrid - Grouping" }
+
 You can group DataGrid records by single or multiple columns. To group records in the UI, you can right-click column headers if **grouping**.[contextMenuEnabled](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/#contextMenuEnabled) is `true` (default). You can also drag and drop column headers onto the group panel if **groupPanel**.[visible](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/groupPanel/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/groupPanel/#visible') is `true`.
 
 To group data in code, define **columns[]**.[groupIndex](/api-reference/_hidden/dxDataGridColumn/groupIndex.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#groupIndex') property. This tutorial specifies **groupIndex** for the `Country` column:
@@ -77,5 +79,3 @@ To group data in code, define **columns[]**.[groupIndex](/api-reference/_hidden/
     }
 
 ---
-
-<a href="/Documentation/Guide/UI_Components/DataGrid/Grouping/" class="button" style="margin-right: 5px;" target="_blank"><b>Read Tutorial</b>: DataGrid - Grouping</a>

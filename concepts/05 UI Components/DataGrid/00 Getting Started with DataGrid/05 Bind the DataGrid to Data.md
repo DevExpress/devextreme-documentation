@@ -148,7 +148,7 @@ The following code snippet initializes a DataGrid with a column for each data fi
 
     <script setup lang="ts">
     import { ref } from 'vue';
-    import { getEmployees } from './employees.service';
+    import { getEmployees, type Employee } from './employees.service';
 
     const employees = ref<Employee[]>(getEmployees());
     </script>

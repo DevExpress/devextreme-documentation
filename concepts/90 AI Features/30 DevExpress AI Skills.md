@@ -1,4 +1,4 @@
-DevExpress AI Skills is a public repository of reusable agent skills for DevExpress products (including DevExtreme). DevExtreme-specific skills are located in the [skills](https://github.com/DevExpress/agent-skills/tree/main/plugins/dx-devextreme/skills/skills) folder of the [DevExpress/agent-skills](https://github.com/DevExpress/agent-skills) repository and are designed for AI coding assistants, such as GitHub Copilot, Claude Code, Cursor, and JetBrains AI Assistant.
+DevExpress AI Skills is a public repository of reusable agent skills for DevExpress products (including DevExtreme). DevExtreme-specific skills are located in the [skills](https://github.com/DevExpress/agent-skills/tree/main/plugins/dx-devextreme/skills) folder of the [DevExpress/agent-skills](https://github.com/DevExpress/agent-skills) repository and are designed for AI coding assistants, such as GitHub Copilot, Claude Code, Cursor, and JetBrains AI Assistant.
 
 Use these skills when you want an AI assistant to follow DevExpress-specific patterns, use feature/task-specific APIs, and generate code that corresponds to the product and framework with which you are working.
 
@@ -29,7 +29,7 @@ This repository includes skills for the following DevExtreme components and feat
 
 ## How to Use the Repository
 
-1. Open the [skills](https://github.com/DevExpress/agent-skills/tree/main/plugins/dx-devextreme/skills/skills) folder in the DevExpress/agent-skills repository.
+1. Open the [skills](https://github.com/DevExpress/agent-skills/tree/main/plugins/dx-devextreme/skills) folder in the DevExpress/agent-skills repository.
 2. Copy all skill folders you need to your AI assistant's skills directory.
 3. Start a chat in agent mode and ask a product-specific question.
 

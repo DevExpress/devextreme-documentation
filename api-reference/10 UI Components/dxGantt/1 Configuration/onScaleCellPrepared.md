@@ -116,7 +116,7 @@ The example below illustrates how to customize the scale.
         },
         methods: {
             onScaleCellPrepared: function(e) {
-                var scaleElement = e.scaleElement[0];
+                const scaleElement = e.scaleElement[0];
                 if(e.scaleIndex === 0) {
                     scaleElement.style.backgroundColor = "silver";
                     scaleElement.innerText = "bottom";
@@ -124,7 +124,7 @@ The example below illustrates how to customize the scale.
                     scaleElement.style.backgroundColor = "LightSteelBlue";
                     scaleElement.innerText = "top";
                 }
-                var border = e.separatorElement[0];
+                const border = e.separatorElement[0];
                 border.style.borderColor = "steelBlue";
             }
         }
@@ -175,7 +175,7 @@ The example below illustrates how to customize the scale.
     )
     <script>
         function gantt_scaleCellPrepared_handler(e) {
-            var scaleElement = e.scaleElement[0];
+            const scaleElement = e.scaleElement[0];
             if(e.scaleIndex === 0) {
                 scaleElement.style.backgroundColor = "silver";
                 scaleElement.innerText = "bottom";
@@ -183,7 +183,7 @@ The example below illustrates how to customize the scale.
                 scaleElement.style.backgroundColor = "LightSteelBlue";
                 scaleElement.innerText = "top";
             }
-            var border = e.separatorElement[0];
+            const border = e.separatorElement[0];
             border.style.borderColor = "steelBlue";
         }
     </script>
@@ -274,9 +274,9 @@ The code below colors the scale cells depending on the season:
         },
         methods: {
             onScaleCellPrepared: function(e) {
-                var scaleElement = e.scaleElement;
-                var color = "";
-                var month = e.end.getMonth();
+                const scaleElement = e.scaleElement;
+                let color = "";
+                const month = e.end.getMonth();
                 if (month > 1 && month < 5) {
                     color = "lightGreen";
                 } else if (month > 4 && month < 8) {
@@ -337,9 +337,9 @@ The code below colors the scale cells depending on the season:
     )
     <script>
         function gantt_scaleCellPrepared_handler(e) {
-            var scaleElement = e.scaleElement;
-            var color = "";
-            var month = e.end.getMonth();
+            const scaleElement = e.scaleElement;
+            let color = "";
+            const month = e.end.getMonth();
             if (month > 1 && month < 5) {
                 color = "lightGreen";
             } else if (month > 4 && month < 8) {

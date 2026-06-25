@@ -353,4 +353,4 @@ You can also use third-party libraries to connect to an AI service provider. The
 
 [important] `dangerouslyAllowBrowser: true` enables browser-side requests. This exposes your API key. For production, route requests through your backend.
 
-For additional AI integration examples, refer to [Overview of AI-powered Features - Demos](/Documentation/Guide/AI_Features/Overview_of_AI-powered_Features/#Demos).
+For additional AI integration examples, refer to [Overview of AI-powered Features - Demos](/concepts/90%20AI%20Features/00%20Overview%20of%20AI-powered%20Features/10%20Demos.md '/Documentation/Guide/AI_Features/Overview_of_AI-powered_Features/#Demos').

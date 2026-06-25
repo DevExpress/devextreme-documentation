@@ -8,7 +8,7 @@ Specify the [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configu
 
 ##### Angular
 
-Specify the [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') array to define and customize DataGrid columns. To add a column, specify the [dataField](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns/dataField.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField') value.
+Specify the [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') array to define and customize DataGrid columns. Specify each column's [dataField](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns/dataField.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField') value.
 
 ##### Vue
 

@@ -1,6 +1,6 @@
 #include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/DataGrid/Selection/", name: "DataGrid - Selection" }
 
-DataGrid supports single and multiple selection. To enable this capability, configure the **selection**.[mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/selection/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#mode') property.
+DataGrid supports single and multiple row selection. To activate this capability, configure the **selection**.[mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/selection/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#mode') property.
 
 To obtain selected records at runtime, define [onSelectionChanged](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onSelectionChanged'). This tutorial configures **onSelectionChanged** to display selected employee names in an element outside of the component:
 

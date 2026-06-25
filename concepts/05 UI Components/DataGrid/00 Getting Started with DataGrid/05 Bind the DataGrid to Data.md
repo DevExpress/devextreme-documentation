@@ -1,6 +1,6 @@
 DataGrid can load and update data from different data source types. To use a local array, assign the array to [dataSource](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#dataSource') and specify the key field in [keyExpr](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr').
 
-The following code snippet initializes a DataGrid with a column for each data field. All column widths are equal, and columns are ordered following the data source structure.
+The following code snippet initializes a DataGrid and creates columns for all data fields. All columns are equal width, and the column order follows the data source structure.
 
 ---
 ##### jQuery

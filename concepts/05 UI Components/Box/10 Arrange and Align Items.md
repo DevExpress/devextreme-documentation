@@ -193,7 +193,7 @@ If the Box items do not occupy the entire Box, you can align them along and cros
 
 #####See Also#####
 - [Box - Nest One Box into Another](/concepts/05%20UI%20Components/Box/15%20Nest%20One%20Box%20Into%20Another.md '/Documentation/Guide/UI_Components/Box/Nest_One_Box_into_Another/')
-- [Box Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Box/Overview)
+- [Box Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Box/Overview/)
 - [Box API Reference](/api-reference/10%20UI%20Components/dxBox '/Documentation/ApiReference/UI_Components/dxBox/')
 
 [tags]box, arrange items in a column, arrange items in a row, direction, items alignment, align items, crossAlign

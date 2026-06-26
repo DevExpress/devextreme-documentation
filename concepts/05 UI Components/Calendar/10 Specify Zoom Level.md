@@ -153,6 +153,6 @@ To make certain calendar views inaccessible, specify the [maxZoomLevel](/api-ref
 - [Calendar - Handle the Value Change Event](/concepts/05%20UI%20Components/Calendar/05%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/Calendar/Handle_the_Value_Change_Event')
 - [Calendar - Specify Zoom Level](/concepts/05%20UI%20Components/Calendar/10%20Specify%20Zoom%20Level.md '/Documentation/Guide/UI_Components/Calendar/Specify_Zoom_Level')
 - [Calendar API Reference](/api-reference/10%20UI%20Components/dxCalendar '/Documentation/ApiReference/UI_Components/dxCalendar/')
-- [Calendar Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview)
+- [Calendar Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Calendar/Overview/)
 
 [tags]calendar, editor, calendar view, zoomLevel, zoom level

@@ -318,4 +318,4 @@ To hide column headers, assign **false** to the [showColumnHeaders](/api-referen
 ---
 
 #####See Also#####
-- [DataGrid Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/LocalDataSource)
+- [DataGrid Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/LocalDataSource/)

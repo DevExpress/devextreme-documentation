@@ -182,4 +182,4 @@ If you are going to change event handlers at runtime, or if you need to attach s
 #include common-link-handleevents
 - [Popover - Customize the Content](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/05%20Customize%20the%20Content '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Content/')
 - [Popover - Resize and Relocate](/concepts/05%20UI%20Components/Popover/15%20Resize%20and%20Relocate.md '/Documentation/Guide/UI_Components/Popover/Resize_and_Relocate/')
-- [Popover Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popover/Overview)
+- [Popover Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popover/Overview/)

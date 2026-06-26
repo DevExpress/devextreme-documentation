@@ -281,7 +281,7 @@ To specify whether or not the selected range should be highlighted, use the **sh
 
 #####See Also#####
 - [RangeSlider - Handle the Value Change Event](/concepts/05%20UI%20Components/RangeSlider/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/RangeSlider/Handle_the_Value_Change_Event')
-- [RangeSlider Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSlider/Overview)
+- [RangeSlider Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSlider/Overview/)
 - [RangeSlider API Reference](/api-reference/10%20UI%20Components/dxRangeSlider '/Documentation/ApiReference/UI_Components/dxRangeSlider/')
 
 [tags]range slider, rangeSlider, editor, label, tooltip, showRange

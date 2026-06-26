@@ -171,4 +171,4 @@ The examples below show different ways to apply percentage formatting to decimal
 [note] [Reference the Globalize library](/concepts/Common/Localization/05%20Localize%20Dates%2C%20Numbers%2C%20and%20Currencies/10%20Using%20Globalize.md '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/Using_Globalize') in your application to use other <a href="http://unicode.org/reports/tr35/tr35-numbers.html#Special_Pattern_Characters" target="_blank">numeric</a> or <a href="http://unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table" target="_blank">datetime</a> format characters.
 
 #####See Also#####
-- [NumberBox Formatting Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/NumberBox/Formatting)
+- [NumberBox Formatting Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/NumberBox/Formatting/)

@@ -108,5 +108,5 @@ All node objects contain a similar set of fields, which are described in the [No
 #####See Also#####
 - [TreeView - Search Nodes](/concepts/05%20UI%20Components/TreeView/15%20Search%20Nodes.md '/Documentation/Guide/UI_Components/TreeView/Search_Nodes/')
 - [TreeView - Expand and Collapse Nodes](/concepts/05%20UI%20Components/TreeView/20%20Expand%20and%20Collapse%20Nodes '/Documentation/Guide/UI_Components/TreeView/Expand_and_Collapse_Nodes')
-- [TreeView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/HierarchicalDataStructure)
+- [TreeView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeView/HierarchicalDataStructure/)
 - [TreeView API Reference](/api-reference/10%20UI%20Components/dxTreeView '/Documentation/ApiReference/UI_Components/dxTreeView/')

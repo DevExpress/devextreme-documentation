@@ -40,7 +40,7 @@ The row's [type](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row/rowType.
 
 ##### field(cellInfo.setValue(newValue, newText)): any
 A method called to change cell values; optionally, you can also call it to change the displayed value after the editor's value is changed.        
-See an example in the [Custom Editors](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomEditors) demo.
+See an example in the [Custom Editors](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomEditors/) demo.
 
 [note] In batch [editing mode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/mode.md '{basewidgetpath}/Configuration/editing/#mode'), confirm that the value is changed before calling this method to ensure correct cell highlighting.
 

@@ -302,6 +302,6 @@ This configuration of the **position** property reads as follows: "place **my** 
 
 #####See Also#####
 - [Customize the Appearance](/concepts/05%20UI%20Components/LoadPanel/10%20Customize%20the%20Appearance/10%20Customize%20the%20Loading%20Indicator.md '/Documentation/Guide/UI_Components/LoadPanel/Customize_the_Appearance/')
-- [LoadPanel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/LoadPanel/Overview)
+- [LoadPanel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/LoadPanel/Overview/)
 
 [tags]loadPanel, load panel, overlay, size, height, width, position

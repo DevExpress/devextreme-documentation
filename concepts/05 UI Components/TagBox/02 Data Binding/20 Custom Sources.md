@@ -312,6 +312,6 @@ If the TagBox allows a user [to add custom items](/concepts/05%20UI%20Components
 - [Access the DataSource](/concepts/05%20UI%20Components/TagBox/02%20Data%20Binding/30%20Access%20the%20DataSource.md '/Documentation/Guide/UI_Components/TagBox/Data_Binding/Access_the_DataSource/')
 - [Grouping](/concepts/05%20UI%20Components/TagBox/07%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/UI_Components/TagBox/Grouping/In_the_Data_Source/')
 - [Configure Search Parameters](/concepts/05%20UI%20Components/TagBox/10%20Configure%20Search%20Parameters.md '/Documentation/Guide/UI_Components/TagBox/Configure_Search_Parameters/')
-- [TagBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tag_Box/Overview)
+- [TagBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tag_Box/Overview/)
 
 [tags]tagBox, data binding, provide data, custom data source, CustomStore, DataSource, load

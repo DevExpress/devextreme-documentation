@@ -126,7 +126,7 @@ Not only you can bind the Form to an existing data object, but you can also gene
 - [Validate the Form Data](/concepts/05%20UI%20Components/Form/01%20Getting%20Started%20with%20Form/70%20Validate%20the%20Form%20Data.md '/Documentation/Guide/UI_Components/Form/Getting_Started_with_Form/#Validate_the_Form_Data')
 - [Submit the Form](/concepts/05%20UI%20Components/Form/01%20Getting%20Started%20with%20Form/80%20Submit%20the%20Form.md '/Documentation/Guide/UI_Components/Form/Getting_Started_with_Form/#Submit_the_Form')
 - [Form - Update Form Data Using the API](/concepts/05%20UI%20Components/Form/30%20Update%20Form%20Data%20Using%20the%20API.md '/Documentation/Guide/UI_Components/Form/Update_Form_Data_Using_the_API/')
-- [Form Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview)
+- [Form Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/Overview/)
 - [Form API Reference](/api-reference/10%20UI%20Components/dxForm '/Documentation/ApiReference/UI_Components/dxForm/')
 
 [tags]form, generate data, generate data object

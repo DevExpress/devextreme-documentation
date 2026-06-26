@@ -15,5 +15,5 @@ The UI component can allow a user to add, update and delete data. To control whi
 [note] Before allowing a user to add, update, and delete, make sure that your [data source](/api-reference/10%20UI%20Components/dxCardView/1%20Configuration/dataSource.md '{basewidgetpath}/Configuration/#dataSource') supports these actions.
 
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CardView/PopupEditing"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CardView/PopupEditing/"
 }

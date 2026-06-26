@@ -261,7 +261,7 @@ If you need to position the Tooltip against a certain side of the [target elemen
 
 #####See Also#####
 - [Tooltip - Customize the Content](/concepts/05%20UI%20Components/Tooltip/10%20Customize%20the%20Content '/Documentation/Guide/UI_Components/Tooltip/Customize_the_Content/')
-- [Tooltip Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tooltip/Overview)
+- [Tooltip Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tooltip/Overview/)
 - [Tooltip API Reference](/api-reference/10%20UI%20Components/dxTooltip '/Documentation/ApiReference/UI_Components/dxTooltip/')
 
 [tags]tooltip, overlay, template, size, height, width, position

@@ -103,7 +103,7 @@ The MultiView UI component can display views in a loop. The loop mode enables an
 #####See Also#####
 - [MultiView - Customize Item Appearance](/concepts/05%20UI%20Components/MultiView/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/MultiView/Customize_Item_Appearance')
 - [MultiView - Switch Between Views](/concepts/05%20UI%20Components/MultiView/10%20Switch%20Between%20Views.md '/Documentation/Guide/UI_Components/MultiView/Switch_Between_Views')
-- [MultiView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/MultiView/Overview)
+- [MultiView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/MultiView/Overview/)
 - [MultiView API Reference](/api-reference/10%20UI%20Components/dxMultiView '/Documentation/ApiReference/UI_Components/dxMultiView/')
 
 [tags]multi view, multiView, views, loop

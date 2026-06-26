@@ -111,7 +111,7 @@ For a multi-pane chart, the **panes** property accepts an array. For further det
 You can add custom styles (pattern or gradient) to the pane's background. To learn more, refer to the following API section: [backgroundColor](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/commonPaneSettings/backgroundColor.md '/Documentation/ApiReference/UI_Components/dxChart/Configuration/commonPaneSettings/#backgroundColor').
 
 #####See Also#####
-- [Multiple Panes Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/MultiplePanes)
+- [Multiple Panes Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/MultiplePanes/)
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
 [tags]chart, panes, overview, single-pane chart

@@ -607,6 +607,6 @@ You can find the full code in the following GitHub repository:
 
 For more information on the Floating Action Button's functionality, explore the following resources:
 
-- [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FloatingActionButton/Overview) 
+- [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FloatingActionButton/Overview/) 
 - [SpeedDialAction API Reference](/api-reference/10%20UI%20Components/dxSpeedDialAction '/Documentation/ApiReference/UI_Components/dxSpeedDialAction/')
 - [floatingActionButtonConfig API Reference](/api-reference/50%20Common/Object%20Structures/GlobalConfig/floatingActionButtonConfig '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/floatingActionButtonConfig/')

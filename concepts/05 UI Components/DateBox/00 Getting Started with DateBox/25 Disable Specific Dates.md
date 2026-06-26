@@ -235,5 +235,5 @@ Run the code and ensure that the disabled dates cannot be set.
 
 You have now configured the basic DateBox features. For more details on this UI component, explore the following resources:
 
-* [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Overview)
+* [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Overview/)
 * [API Reference](/api-reference/10%20UI%20Components/dxDateBox '/Documentation/ApiReference/UI_Components/dxDateBox/')

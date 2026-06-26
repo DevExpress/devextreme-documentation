@@ -146,5 +146,5 @@ You can also call the [selectItem](/api-reference/10%20UI%20Components/dxList/3%
 Implement the [onSelectionChanged](/api-reference/10%20UI%20Components/dxList/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanged') event handler to perform an action after a user selects items. To cancel selection programmatically, use [onSelectionChanging](/api-reference/10%20UI%20Components/dxList/1%20Configuration/onSelectionChanging.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#onSelectionChanging'). To see an example, refer to the following demo: [List Selection](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection/).
 
 #####See Also#####
-- [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection)
+- [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection/)
 - [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')

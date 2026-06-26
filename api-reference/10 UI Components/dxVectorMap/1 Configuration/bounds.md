@@ -23,7 +23,7 @@ If your [dataSource](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configu
 - To ensure **bounds** is applied correctly, specify the [projection](/api-reference/10%20UI%20Components/dxVectorMap/1%20Configuration/projection '/Documentation/ApiReference/UI_Components/dxVectorMap/Configuration/projection/') property. For more information about specifying a custom projection, refer to the following demo:
 
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/CustomProjection"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/VectorMap/CustomProjection/"
 }
 
 [/note]

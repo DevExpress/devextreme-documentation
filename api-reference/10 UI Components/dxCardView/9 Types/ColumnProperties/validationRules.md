@@ -8,5 +8,5 @@ Specifies [validation rules](/api-reference/10%20UI%20Components/dxValidator/8%2
 
 ---
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CardView/DataValidation"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CardView/DataValidation/"
 }

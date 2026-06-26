@@ -88,6 +88,6 @@ Now, you can call [any method](/api-reference/30%20Data%20Layer/DataSource/3%20M
 
 #####See Also#####
 - [Data Layer - Overview](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/')
-- [Lookup Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/Basics)
+- [Lookup Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/Basics/)
 
 [tags]Lookup, data binding, access data source, getDataSource, reload data

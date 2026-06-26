@@ -1,69 +1,52 @@
-DataGrid allows you to display expandable detail sections under data rows. To configure a UI like this, use the [masterDetail](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/masterDetail '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/masterDetail/') object. Set the [enabled](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/masterDetail/enabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/masterDetail/#enabled') property to **true** and specify a [template](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/masterDetail/template.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/masterDetail/#template') that is used as the detail section's content:
+#include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/DataGrid/Master-Detail_Interface/", name: "DataGrid - Master-Detail Interface" }
+
+DataGrid supports master-detail data presentation. You can display detail data in expandable sections below master rows. To configure master-detail mode, set **masterDetail**.[enabled](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/masterDetail/enabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/masterDetail/#enabled') to **true** and specify a [template](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/masterDetail/template.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/masterDetail/#template'). This tutorial configures a template that displays employee images from file paths stored in the component data source:
 
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
-    $(function() {
-        $("#dataGrid").dxDataGrid({
-            // ...
-            masterDetail: {
-                enabled: true,
-                template: function (_, options) {
-                    const employee = options.data;
-                    const photo = $("<img>")
-                        .addClass("employee-photo")
-                        .attr("src", employee.Photo);
-                    const notes = $("<p>")
-                        .addClass("employee-notes")
-                        .text(employee.Notes);
-                    return $("<div>").append(photo, notes);
-                }
-            },
-        });
+    $("#dataGrid").dxDataGrid({
+        masterDetail: {
+            enabled: true,
+            template: function (_, options) {
+                const employee = options.data;
+                const photo = $("<img>")
+                    .addClass("employee-photo")
+                    .attr("src", employee.Photo);
+                const notes = $("<p>")
+                    .addClass("employee-notes")
+                    .text(employee.Notes);
+                return $("<div>").append(photo, notes);
+            }
+        },
+        // ...
     });
 
-    <!-- tab: data.js -->
-    const employees = [{
-        "EmployeeID": 1,
-        "FullName": "Nancy Davolio",
-        "Position": "Sales Representative",
-        "TitleOfCourtesy": "Ms.",
-        "BirthDate": "1968-12-08T00:00:00.000Z",
-        "HireDate": "2011-05-01T00:00:00.000Z",
-        "Address": "507 - 20th Ave. E.\r\nApt. 2A",
-        "City": "Seattle",
-        "Region": "WA",
-        "PostalCode": "98122",
-        "Country": "USA",
-        "HomePhone": "(206) 555-9857",
-        "Extension": "5467",
-        "Photo": "https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/images/employees/06.png",
-        "Notes": "Education includes a BA in psychology from Colorado State University in 1990.  She also completed \"The Art of the Cold Call.\"  Nancy is a member of Toastmasters International.",
-        "ReportsTo": 2
-    },
-    // ...
-    ];
+##### ASP.NET Core Controls
 
-    <!-- tab: index.css -->
-    .employee-photo {
-        height: 140px;
-        float: left;
-        padding: 0 20px 20px 0;
-    }
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().DataGrid<Employee>()
+        .MasterDetail(m => m
+            .Enabled(true)
+            .Template(new JS ("masterDetailTemplate"))
+        )
+        @* ... *@
+    )
 
-    .employee-notes {
-        text-align: justify;
-        white-space: normal;
-    }
-
-    /* ... */
+    <script>
+        function masterDetailTemplate(_, options) {
+            const employee = options.data;
+            const photo = $('<img>').addClass('employee-photo').attr('src', employee.Photo);
+            const notes = $('<p>').addClass('employee-notes').text(employee.Notes);
+            return $('<div>').append(photo, notes);
+        }
+    </script>
 
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-data-grid ... >
-        <!-- ... -->
+    <dx-data-grid>
         <dxo-data-grid-master-detail
             [enabled]="true"
             [template]="'employee-info'">
@@ -72,135 +55,37 @@ DataGrid allows you to display expandable detail sections under data rows. To co
             <img class="employee-photo" [src]="employee.data.Photo">
             <p class="employee-notes">{{ employee.data.Notes }}</p>
         </div>
+        <!-- ... -->
     </dx-data-grid>
-
-    <!-- tab: employees.service.ts -->
-    // ...
-    const employees: Employee[] = [{
-        "EmployeeID": 1,
-        "FullName": "Nancy Davolio",
-        "Position": "Sales Representative",
-        "TitleOfCourtesy": "Ms.",
-        "BirthDate": "1968-12-08T00:00:00.000Z",
-        "HireDate": "2011-05-01T00:00:00.000Z",
-        "Address": "507 - 20th Ave. E.\r\nApt. 2A",
-        "City": "Seattle",
-        "Region": "WA",
-        "PostalCode": "98122",
-        "Country": "USA",
-        "HomePhone": "(206) 555-9857",
-        "Extension": "5467",
-        "Photo": "https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/images/employees/06.png",
-        "Notes": "Education includes a BA in psychology from Colorado State University in 1990.  She also completed \"The Art of the Cold Call.\"  Nancy is a member of Toastmasters International.",
-        "ReportsTo": 2
-    },
-    // ...
-    ];
-    // ...
-
-    <!-- tab: app.component.css -->
-    .employee-photo {
-        height: 140px;
-        float: left;
-        padding: 0 20px 20px 0;
-    }
-    
-    .employee-notes {
-        text-align: justify;
-        white-space: normal;
-    }
-
-    /* ... */
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app-container">
-            <DxDataGrid ... >
-                <!-- ... -->
-                <DxMasterDetail
-                    :enabled="true"
-                    template="employee-info"
-                />
-                <template #employee-info="{ data: employee }">
-                    <div>
-                        <img class="employee-photo" :src="employee.data.Photo">
-                        <p class="employee-notes">{{ employee.data.Notes }}</p>
-                    </div>
-                </template>
-            </DxDataGrid>
-        </div>
+        <DxDataGrid>
+            <DxMasterDetail
+                :enabled="true"
+                template="employee-info"
+            />
+            <template #employee-info="{ data: employee }">
+                <div>
+                    <img class="employee-photo" :src="employee.data.Photo">
+                    <p class="employee-notes">{{ employee.data.Notes }}</p>
+                </div>
+            </template>
+            <!-- ... -->
+        </DxDataGrid>
     </template>
 
-    <script>
-    import {
-        DxDataGrid,
-        // ...
-        DxMasterDetail
-    } from 'devextreme-vue/data-grid';
+    <script setup lang="ts">
+    import { DxDataGrid, DxMasterDetail } from 'devextreme-vue/data-grid';
 
-    export default {
-        components: {
-            DxDataGrid,
-            // ...
-            DxMasterDetail
-        },
-        // ...
-    }
     </script>
-
-    <style>
-    .employee-photo {
-        height: 140px;
-        float: left;
-        padding: 0 20px 20px 0;
-    }
-        
-    .employee-notes {
-        text-align: justify;
-        white-space: normal;
-    }
-
-    /* ... */
-    </style>
-
-    <!-- tab: employees.service.js -->
-    const employees = [{
-        "EmployeeID": 1,
-        "FullName": "Nancy Davolio",
-        "Position": "Sales Representative",
-        "TitleOfCourtesy": "Ms.",
-        "BirthDate": "1968-12-08T00:00:00.000Z",
-        "HireDate": "2011-05-01T00:00:00.000Z",
-        "Address": "507 - 20th Ave. E.\r\nApt. 2A",
-        "City": "Seattle",
-        "Region": "WA",
-        "PostalCode": "98122",
-        "Country": "USA",
-        "HomePhone": "(206) 555-9857",
-        "Extension": "5467",
-        "Photo": "https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/images/employees/06.png",
-        "Notes": "Education includes a BA in psychology from Colorado State University in 1990.  She also completed \"The Art of the Cold Call.\"  Nancy is a member of Toastmasters International.",
-        "ReportsTo": 2
-    },
-    // ...
-    ];
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React, { useState } from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-    import './App.css';
-
-    import {
-        DataGrid,
-        Column,
-        // ...
-        MasterDetail
-    } from 'devextreme-react/data-grid';
-    // ...
+    <!-- tab: App.tsx -->
+    import { DataGrid, MasterDetail } from 'devextreme-react/data-grid';
 
     function DetailSection(props) {
         const employee = props.data.data;
@@ -217,57 +102,15 @@ DataGrid allows you to display expandable detail sections under data rows. To co
     }
 
     function App() {
-        // ...
         return (
-            <div className="App">
-                <DataGrid ... >
-                    {/* ... */}
-                    <MasterDetail
-                        enabled={true}
-                        component={DetailSection}
-                    />
-                </DataGrid>
-            </div>
+            <DataGrid>
+                <MasterDetail
+                    enabled={true}
+                    component={DetailSection}
+                />
+                {/* ... */}
+            </DataGrid>
         );
     }
 
-    export default App;
-
-    <!-- tab: employees.js -->
-    export const employees = [{
-        "EmployeeID": 1,
-        "FullName": "Nancy Davolio",
-        "Position": "Sales Representative",
-        "TitleOfCourtesy": "Ms.",
-        "BirthDate": "1968-12-08T00:00:00.000Z",
-        "HireDate": "2011-05-01T00:00:00.000Z",
-        "Address": "507 - 20th Ave. E.\r\nApt. 2A",
-        "City": "Seattle",
-        "Region": "WA",
-        "PostalCode": "98122",
-        "Country": "USA",
-        "HomePhone": "(206) 555-9857",
-        "Extension": "5467",
-        "Photo": "https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/images/employees/06.png",
-        "Notes": "Education includes a BA in psychology from Colorado State University in 1990.  She also completed \"The Art of the Cold Call.\"  Nancy is a member of Toastmasters International.",
-        "ReportsTo": 2
-    },
-    // ...
-    ];
-    
-    <!-- tab: App.css -->
-    /* ... */
-    .employee-photo {
-        height: 140px;
-        float: left;
-        padding: 0 20px 20px 0;
-    }
-
-    .employee-notes {
-        text-align: justify;
-        white-space: normal;
-    }
-
 ---
-
-Run the code and click the Expand button in any row. You should see a detail section that contains an employee's photo and information.

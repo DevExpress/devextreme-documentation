@@ -166,4 +166,4 @@ The layout does not automatically adapt to changes made in the UI component's co
 [/note]
 
 #####See Also#####
-- [Funnel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart)
+- [Funnel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart/)

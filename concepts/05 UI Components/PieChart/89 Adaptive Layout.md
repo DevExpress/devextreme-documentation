@@ -175,4 +175,4 @@ The layout does not automatically adapt to changes made in the UI component's co
 [/note]
 
 #####See Also#####
-- [PieChart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Pie)
+- [PieChart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Pie/)

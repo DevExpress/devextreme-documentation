@@ -25,7 +25,7 @@ dx.web.js, dx.all.js
 
 ---
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Stepper/Overview"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Stepper/Overview/"
 }
 #include common-tutorialbutton with {
     url: "/Documentation/Guide/UI_Components/Stepper/Getting_Started_with_Stepper/"

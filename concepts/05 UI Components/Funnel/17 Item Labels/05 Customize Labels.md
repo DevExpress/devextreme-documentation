@@ -91,4 +91,4 @@ If you need to change the text displayed by funnel items, declare the [customize
 ---
 
 #####See Also#####
-- [Funnel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart)
+- [Funnel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart/)

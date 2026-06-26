@@ -147,6 +147,6 @@ If you are going to change the event handlers at runtime, or if you need to atta
 
 #####See Also#####
 #include common-link-handleevents
-- [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection)
+- [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection/)
 - [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 

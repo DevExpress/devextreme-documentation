@@ -246,7 +246,7 @@ You can also specify the time interval the UI component should wait before provi
 ---
 
 #####See Also#####
-- [AutoComplete Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Autocomplete/Overview)
+- [AutoComplete Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Autocomplete/Overview/)
 - [AutoComplete API Reference](/api-reference/10%20UI%20Components/dxAutocomplete '/Documentation/ApiReference/UI_Components/dxAutocomplete/')
 
 [tags]autocomplete, search, search mode, time interval, min search length

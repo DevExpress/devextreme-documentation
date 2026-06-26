@@ -9,5 +9,5 @@ Specifies the Stepper orientation.
 
 ---
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Stepper/Overview"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Stepper/Overview/"
 }

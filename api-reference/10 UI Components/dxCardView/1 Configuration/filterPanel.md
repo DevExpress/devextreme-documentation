@@ -9,5 +9,5 @@ Configures the filter panel.
 
 ---
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CardView/FilterPanel"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CardView/FilterPanel/"
 }

@@ -190,6 +190,6 @@ Note that you should implement the [onCustomItemCreating](/api-reference/10%20UI
 - [SelectBox - Configure Search Parameters](/concepts/05%20UI%20Components/SelectBox/10%20Configure%20Search%20Parameters.md '/Documentation/Guide/UI_Components/SelectBox/Configure_Search_Parameters/')
 - [SelectBox - Handle the Value Change Event](/concepts/05%20UI%20Components/SelectBox/00%20Getting%20Started%20with%20SelectBox/20%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/SelectBox/Getting_Started_with_SelectBox/#Handle_the_Value_Change_Event')
 - [SelectBox API Reference](/api-reference/10%20UI%20Components/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/')
-- [SelectBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview)
+- [SelectBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview/)
 
 [tags]selectBox, select box, editor, user-defined entry, user-defined item, custom entry, custom item, user-defined value, custom value

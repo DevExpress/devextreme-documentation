@@ -107,7 +107,7 @@ The Gallery UI component supports the display of images in a slideshow. To speci
 - [Gallery - Switch Between Images](/concepts/05%20UI%20Components/Gallery/05%20Switch%20Between%20Images '/Documentation/Guide/UI_Components/Gallery/Switch_Between_Images/')
 - [Gallery - Animate the Image Change](/concepts/05%20UI%20Components/Gallery/20%20Animate%20the%20Image%20Change.md '/Documentation/Guide/UI_Components/Gallery/Animate_the_Image_Change/')
 - [Gallery - Transform and Combine Images](/concepts/05%20UI%20Components/Gallery/25%20Transform%20and%20Combine%20Images.md '/Documentation/Guide/UI_Components/Gallery/Transform_and_Combine_Images/')
-- [Gallery Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gallery/Overview)
+- [Gallery Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gallery/Overview/)
 - [Gallery API Reference](/api-reference/10%20UI%20Components/dxGallery '/Documentation/ApiReference/UI_Components/dxGallery/')
 
 [tags]gallery, loop, slideshow, slideshowDelay

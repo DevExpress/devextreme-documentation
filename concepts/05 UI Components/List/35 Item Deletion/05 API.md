@@ -108,6 +108,6 @@ You can delete a list item by its index. Pass the index to the [deleteItem(itemI
 
 #####See Also#####
 #include common-link-callmethods
-- [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection)
+- [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection/)
 - [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 

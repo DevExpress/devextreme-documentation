@@ -119,7 +119,7 @@ The following code adds the Gallery UI component to your page. The simplest conf
 - [Gallery - Animate the Image Change](/concepts/05%20UI%20Components/Gallery/20%20Animate%20the%20Image%20Change.md '/Documentation/Guide/UI_Components/Gallery/Animate_the_Image_Change/')
 - [Gallery - Transform and Combine Images](/concepts/05%20UI%20Components/Gallery/25%20Transform%20and%20Combine%20Images.md '/Documentation/Guide/UI_Components/Gallery/Transform_and_Combine_Images/')
 - [Gallery - Customize Item Appearance](/concepts/05%20UI%20Components/Gallery/30%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/Gallery/Customize_Item_Appearance/')
-- [Gallery Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gallery/Overview)
+- [Gallery Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gallery/Overview/)
 - [Gallery API Reference](/api-reference/10%20UI%20Components/dxGallery '/Documentation/ApiReference/UI_Components/dxGallery/')
 
 [tags]dxgallery, gallery, overview

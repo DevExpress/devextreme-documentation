@@ -250,6 +250,6 @@ If you need to position the Popover against a certain side of the [target elemen
 #####See Also#####
 - [Popover - Show and Hide the Popover](/concepts/05%20UI%20Components/Popover/10%20Show%20and%20Hide%20the%20Popover '/Documentation/Guide/UI_Components/Popover/Show_and_Hide_the_Popover/')
 - [Popover - Customize the Content](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/05%20Customize%20the%20Content '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Content/')
-- [Popover Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popover/Overview)
+- [Popover Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popover/Overview/)
 
 [tags]popover, overlay, size, height, width, position

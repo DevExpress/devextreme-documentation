@@ -140,7 +140,7 @@ To access an OData service, implement the [ODataStore](/api-reference/30%20Data%
 
 Data from the **ODataStore** can be shaped (filtered, sorted, grouped, etc.) in the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/').
 
-The following example declares an **ODataStore**, wraps it in a **DataSource**, and binds the [DataGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview) UI component to this **DataSource**:
+The following example declares an **ODataStore**, wraps it in a **DataSource**, and binds the [DataGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/) UI component to this **DataSource**:
 
 ---
 ##### jQuery

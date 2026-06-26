@@ -148,7 +148,7 @@ The [route configuration](/api-reference/10%20UI%20Components/dxMap/1%20Configur
 #####See Also#####
 - [Map - Handle Route Related Events](/concepts/05%20UI%20Components/Map/25%20Configure%20Routes/15%20Handle%20the%20Related%20Events.md '/Documentation/Guide/UI_Components/Map/Configure_Routes/Handle_the_Related_Events/')
 - [Map - Add and Remove Routes](/concepts/05%20UI%20Components/Map/25%20Configure%20Routes/05%20Add%20and%20Remove.md '/Documentation/Guide/UI_Components/Map/Configure_Routes/Add_and_Remove/')
-- [Map Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Routes)
+- [Map Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Routes/)
 - [Map API Reference](/api-reference/10%20UI%20Components/dxMap '/Documentation/ApiReference/UI_Components/dxMap/')
 
 [tags]map, route, opacity, thickness, weight, color, mode

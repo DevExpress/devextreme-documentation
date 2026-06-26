@@ -196,7 +196,7 @@ To change an item property at runtime, bind the property that should be changed 
 #include common-link-callmethods
 - [Form - Change Editor Properties at Runtime](/concepts/05%20UI%20Components/Form/20%20Change%20Properties%20at%20Runtime/15%20Editor%20Properties.md '/Documentation/Guide/UI_Components/Form/Change_Properties_at_Runtime/Editor_Properties/')
 - [Form - Configure Simple Items](/concepts/05%20UI%20Components/Form/05%20Configure%20Simple%20Items '/Documentation/Guide/UI_Components/Form/Configure_Simple_Items/')
-- [Form Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields)
+- [Form Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields/)
 - [Form API Reference](/api-reference/10%20UI%20Components/dxForm '/Documentation/ApiReference/UI_Components/dxForm/')
 
 [tags]form, modify item, item property, change property

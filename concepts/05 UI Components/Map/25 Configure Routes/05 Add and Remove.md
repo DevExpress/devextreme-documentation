@@ -330,7 +330,7 @@ To add or remove a route at runtime, bind the **routes** property of the Map to 
 #####See Also#####
 - [Map - Customize Routes](/concepts/05%20UI%20Components/Map/25%20Configure%20Routes/10%20Customize.md '/Documentation/Guide/UI_Components/Map/Configure_Routes/Customize/')
 - [Map - Handle Route Related Events](/concepts/05%20UI%20Components/Map/25%20Configure%20Routes/15%20Handle%20the%20Related%20Events.md '/Documentation/Guide/UI_Components/Map/Configure_Routes/Handle_the_Related_Events/')
-- [Map Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Routes)
+- [Map Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Routes/)
 - [Map API Reference](/api-reference/10%20UI%20Components/dxMap '/Documentation/ApiReference/UI_Components/dxMap/')
 
 [tags]map, routes, location, add route, remove route

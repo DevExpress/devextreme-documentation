@@ -9,7 +9,7 @@ Specifies whether the next page is loaded when a user scrolls the UI component t
 
 ---
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/WebApi"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/WebApi/"
 }
 
 #####See Also#####

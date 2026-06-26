@@ -404,6 +404,6 @@ To customize group headers, specify a [groupTemplate](/api-reference/10%20UI%20C
 #####See Also#####
 - [Lookup - Customize the Appearance](/concepts/05%20UI%20Components/Lookup/20%20Customize%20the%20Appearance/05%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/Lookup/Customize_the_Appearance/')
 - [Lookup - Enable Pagination](/concepts/05%20UI%20Components/Lookup/00%20Getting%20Started%20with%20Lookup/30%20Enable%20Pagination.md '/Documentation/Guide/UI_Components/Lookup/Getting_Started_with_Lookup/#Enable_Pagination')
-- [Lookup Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/Basics)
+- [Lookup Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/Basics/)
 
 [tags]lookup, group, group template, customize

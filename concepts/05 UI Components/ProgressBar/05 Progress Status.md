@@ -107,7 +107,7 @@ The progress status displays a numeric value indicating the made progress. Wheth
 
 #####See Also#####
 - [ProgressBar - Handle the Value Change Event](/concepts/05%20UI%20Components/ProgressBar/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/ProgressBar/Handle_the_Value_Change_Event')
-- [ProgressBar Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ProgressBar/Overview)
+- [ProgressBar Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ProgressBar/Overview/)
 - [ProgressBar API Reference](/api-reference/10%20UI%20Components/dxProgressBar '/Documentation/ApiReference/UI_Components/dxProgressBar/')
 
 [tags]progress bar, progressBar, editor, progress status, showStatus, statusFormat

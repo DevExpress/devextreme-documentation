@@ -2,5 +2,5 @@ You can use the [position](/api-reference/10%20UI%20Components/dxDrawer/1%20Conf
 
 For more information about the Drawer, explore the following resources:
 
-- [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Drawer/LeftOrRightPosition)
+- [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Drawer/LeftOrRightPosition/)
 - [API Reference](/api-reference/10%20UI%20Components/dxDrawer '/Documentation/ApiReference/UI_Components/dxDrawer/')

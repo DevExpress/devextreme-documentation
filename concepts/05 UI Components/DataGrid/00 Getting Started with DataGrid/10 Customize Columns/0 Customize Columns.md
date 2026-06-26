@@ -4,7 +4,7 @@
 
 ##### jQuery
 
-Specify the [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') array to define and customize DataGrid columns. You can define columns as objects to configure options. To add a column with default options, add the column's [dataField](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns/dataField.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField') value to **columns[]** as a string.
+Use the [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') array to define and customize DataGrid columns. Configure columns as objects to specify options. To add columns with default options, add [dataField](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns/dataField.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField') values to **columns[]** as strings.
 
 ##### Angular
 

@@ -2,7 +2,7 @@
 id: FilterExpr
 module: common/grids
 export: FilterExpr
-type: BasicFilterExpr | CombinedFilterExpr | NegatedFilterExpr
+type: BasicFilterExpr | MultiValueFilterExpr | CombinedFilterExpr | NegatedFilterExpr
 generateTypeLink: 
 ---
 ---

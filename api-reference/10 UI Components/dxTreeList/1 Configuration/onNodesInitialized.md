@@ -22,7 +22,7 @@ The root node.
 ---
 Use **onNodesInitialized** to modify [node fields](/api-reference/10%20UI%20Components/dxTreeList/4%20Node '/Documentation/ApiReference/UI_Components/dxTreeList/Node/'). Call [forEachNode(callback)](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/forEachNode(callback).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#forEachNodecallback') in this function to iterate over nodes and apply changes.
 
-You can also implement custom iterative logic using the **root** parameter. To traverse the node tree, access each node's **children** field starting from **root** in a recursive function. The following example configures custom iterative logic in **onNodesInitialized** to display a summary for each TreeList branch:
+You can also implement custom iteration logic using the **root** parameter. To traverse the node tree, access each node's **children** field starting from **root** in a recursive function. The following example configures custom iteration logic in **onNodesInitialized** to display a summary for each TreeList branch:
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-treelist-display-summary-for-each-level/"

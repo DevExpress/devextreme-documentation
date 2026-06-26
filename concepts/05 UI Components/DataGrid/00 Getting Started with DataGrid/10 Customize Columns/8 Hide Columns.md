@@ -1,7 +1,7 @@
 #include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/DataGrid/Columns/Hide_a_Column_Using_the_API/", name: "Hide a Column Using the API" }
 #include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Chooser/", name: "Column Chooser" }
 
-To hide a DataGrid column, set **columns[]**.[visible](/api-reference/_hidden/GridBaseColumn/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#visible') to `false`. Users can restore hidden columns if you enable the [columnChooser](/api-reference/40%20Common%20Types/15%20grids/ColumnChooser/enabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columnChooser/#enabled'). To hide a column in the component and the column chooser, omit the corresponding [columns[]](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') item.
+To hide a DataGrid column, set **columns[]**.[visible](/api-reference/_hidden/GridBaseColumn/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#visible') to `false`. If the [columnChooser](/api-reference/40%20Common%20Types/15%20grids/ColumnChooser/enabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columnChooser/#enabled') is enabled, users can restore hidden columns. To hide a column in both the component and the column chooser, omit the corresponding [columns[]](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') item.
 
 ---
 ##### jQuery

@@ -9,5 +9,5 @@ Specifies whether users can reorder this column. Overrides the [allowColumnReord
 
 ---
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CardView/ColumnReordering"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CardView/ColumnReordering/"
 }

@@ -88,4 +88,4 @@ Below, you can try out these properties in action.
 
 #####See Also#####
 - [Rearrange Legend Items](/concepts/05%20UI%20Components/Funnel/35%20Legend/20%20Rearrange%20Legend%20Items.md '/Documentation/Guide/UI_Components/Funnel/Legend/Rearrange_Legend_Items/')
-- [Funnel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart)
+- [Funnel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart/)

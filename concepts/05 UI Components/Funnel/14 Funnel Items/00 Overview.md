@@ -202,4 +202,4 @@ Refer to other topics in this section for details on the main funnel item featur
 #####See Also#####
 - [Funnel Item Hover](/concepts/05%20UI%20Components/Funnel/14%20Funnel%20Items/10%20Hover '/Documentation/Guide/UI_Components/Funnel/Funnel_Items/Hover/')
 - [Funnel Item Selection](/concepts/05%20UI%20Components/Funnel/14%20Funnel%20Items/20%20Selection '/Documentation/Guide/UI_Components/Funnel/Funnel_Items/Selection/')
-- [Funnel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart)
+- [Funnel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart/)

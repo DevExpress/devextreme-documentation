@@ -113,4 +113,4 @@ Each funnel item allows you to show its tooltip programmatically by calling the 
 ---
 
 #####See Also#####
-- [Funnel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart)
+- [Funnel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart/)

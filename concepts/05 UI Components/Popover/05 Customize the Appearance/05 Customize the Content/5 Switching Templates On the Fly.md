@@ -248,4 +248,4 @@ If you need to render different templates depending on a specific condition, def
 #####See Also#####
 - [Popover - Customize the Title](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/10%20Customize%20the%20Title.md '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Title/')
 - [Popover - Specify Toolbar Items](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/20%20Specify%20Toolbar%20Items.md '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Specify_Toolbar_Items/')
-- [Popover Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popover/Overview)
+- [Popover Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popover/Overview/)

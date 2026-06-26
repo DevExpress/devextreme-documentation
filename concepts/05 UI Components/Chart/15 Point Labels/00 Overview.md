@@ -232,7 +232,7 @@ For details on other properties of point labels, refer to the [label](/api-refer
 #####See Also#####
 - [Customize Point Labels](/concepts/05%20UI%20Components/Chart/15%20Point%20Labels/05%20Customize%20Point%20Labels.md '/Documentation/Guide/UI_Components/Chart/Point_Labels/Customize_Point_Labels/')
 - [Resolve Label Overlapping](/concepts/05%20UI%20Components/Chart/15%20Point%20Labels/10%20Resolve%20Overlapping.md '/Documentation/Guide/UI_Components/Chart/Point_Labels/Resolve_Overlapping/')
-- [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/CustomizePointsAndLabels)
+- [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/CustomizePointsAndLabels/)
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
 [tags]chart, point labels, overview, common label settings, label connector

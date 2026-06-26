@@ -48,5 +48,5 @@ Use the [icon](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/ic
 
 For more information on this UI component, refer to the following resources:
 
-- [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/Overview) 
+- [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/Overview/) 
 - [API Reference](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/')

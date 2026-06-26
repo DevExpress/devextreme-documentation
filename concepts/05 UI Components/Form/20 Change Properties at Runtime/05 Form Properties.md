@@ -153,7 +153,7 @@ To change the [Form configuration](/api-reference/10%20UI%20Components/dxForm/1%
 ---
 
 #####See Also#####
-- [Form Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields)
+- [Form Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/GroupedFields/)
 - [Form API Reference](/api-reference/10%20UI%20Components/dxForm '/Documentation/ApiReference/UI_Components/dxForm/')
 
 [tags]form, UI component properties, change property

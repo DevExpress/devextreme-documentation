@@ -215,7 +215,7 @@ To bind a UI component to a local array, pass this array to the UI component's [
 
 If you plan to update the data or need to handle data-related events, wrap the array in an [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/'). You can use the store's [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/ArrayStore/Configuration/#key') property instead of the UI component's **keyExpr** or **valueExpr**. You can further wrap the **ArrayStore** in a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') if you need to filter, sort, group, and otherwise shape the data.
 
-The following example declares an **ArrayStore**, wraps it in a **DataSource**, and binds the [DataGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview) and [SelectBox](https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview) UI components to this **DataSource**:
+The following example declares an **ArrayStore**, wraps it in a **DataSource**, and binds the [DataGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/) and [SelectBox](https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview/) UI components to this **DataSource**:
 
 ---
 ##### jQuery

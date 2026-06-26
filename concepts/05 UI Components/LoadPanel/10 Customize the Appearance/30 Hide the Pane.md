@@ -148,7 +148,7 @@ The pane is shown by default. To hide it, assign **false** to the [showPane](/ap
 - [LoadPanel - Change the Text](/concepts/05%20UI%20Components/LoadPanel/10%20Customize%20the%20Appearance/20%20Change%20the%20Text.md '/Documentation/Guide/UI_Components/LoadPanel/Customize_the_Appearance/Change_the_Text/')
 - [LoadPanel - Color the Shading of the Background](/concepts/05%20UI%20Components/LoadPanel/10%20Customize%20the%20Appearance/40%20Color%20the%20Shading%20of%20the%20Background.md '/Documentation/Guide/UI_Components/LoadPanel/Customize_the_Appearance/Color_the_Shading_of_the_Background/')
 - [LoadPanel - Resize and Relocate](/concepts/05%20UI%20Components/LoadPanel/15%20Resize%20and%20Relocate.md '/Documentation/Guide/UI_Components/LoadPanel/Resize_and_Relocate/')
-- [LoadPanel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/LoadPanel/Overview)
+- [LoadPanel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/LoadPanel/Overview/)
 - [LoadPanel API Reference](/api-reference/10%20UI%20Components/dxLoadPanel '/Documentation/ApiReference/UI_Components/dxLoadPanel/')
 
 [tags]loadPanel, load panel, overlay, load panel pane, hide pane

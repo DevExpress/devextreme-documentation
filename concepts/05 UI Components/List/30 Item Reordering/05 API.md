@@ -129,6 +129,6 @@ Pass the index to the [reorderItem(itemIndex, toItemIndex)](/api-reference/10%20
 
 #####See Also#####
 #include common-link-callmethods
-- [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection)
+- [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListSelection/)
 - [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 

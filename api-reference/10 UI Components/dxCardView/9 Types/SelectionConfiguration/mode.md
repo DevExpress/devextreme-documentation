@@ -19,5 +19,5 @@ Select multiple cards.
 Users cannot select cards.    
 
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CardView/Selection"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CardView/Selection/"
 }

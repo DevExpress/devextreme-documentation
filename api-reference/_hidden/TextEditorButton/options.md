@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Configures the [Button](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes) UI component used as the action button.
+Configures the [Button](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/PredefinedTypes/) UI component used as the action button.
 
 ---
 [note] This property does not work for built-in buttons.

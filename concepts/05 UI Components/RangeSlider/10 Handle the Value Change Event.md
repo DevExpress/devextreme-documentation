@@ -150,7 +150,7 @@ If you are going to change event handlers at runtime, or if you need to attach s
 
 #####See Also#####
 #include common-link-handleevents
-- [RangeSlider Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSlider/Overview)
+- [RangeSlider Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSlider/Overview/)
 - [RangeSlider API Reference](/api-reference/10%20UI%20Components/dxRangeSlider '/Documentation/ApiReference/UI_Components/dxRangeSlider/')
 
 [tags]range slider, rangeSlider, editor, get value, set value

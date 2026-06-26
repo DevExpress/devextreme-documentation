@@ -1,4 +1,4 @@
----
+﻿---
 id: dxGantt.expandAllToLevel(level)
 ---
 ---
@@ -121,7 +121,7 @@ The **expandAllToLevel** method first collapses all expanded tasks and then expa
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -129,7 +129,7 @@ The **expandAllToLevel** method first collapses all expanded tasks and then expa
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.expandAllToLevel(3);
             // ...
         }
@@ -140,7 +140,7 @@ The **expandAllToLevel** method first collapses all expanded tasks and then expa
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -148,7 +148,7 @@ The **expandAllToLevel** method first collapses all expanded tasks and then expa
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.expandAllToLevel(3);
             // ...
         }

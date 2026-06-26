@@ -1,4 +1,4 @@
----
+﻿---
 id: dxGantt.insertTask(data)
 ---
 ---
@@ -165,7 +165,7 @@ The **insertTask** method does not update the following data fields in the data 
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -173,7 +173,7 @@ The **insertTask** method does not update the following data fields in the data 
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             // Inserts a new task with the specified subject at the end of the other tasks.
             ganttInstance.insertTask({ title: "New Task" });
 
@@ -187,7 +187,7 @@ The **insertTask** method does not update the following data fields in the data 
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -195,7 +195,7 @@ The **insertTask** method does not update the following data fields in the data 
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             // Inserts a new task with the specified subject at the end of the other tasks.
             ganttInstance.insertTask({ title: "New Task" });
 

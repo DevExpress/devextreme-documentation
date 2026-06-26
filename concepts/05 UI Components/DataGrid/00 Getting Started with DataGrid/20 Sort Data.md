@@ -1,102 +1,85 @@
-The **sorting**.[mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/sorting/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/sorting/#mode') property specifies whether users can sort grid records by single or multiple columns. This tutorial uses the default sorting mode - single. 
+#include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/DataGrid/Sorting/", name: "DataGrid - Sorting" }
 
-You can also set a column's [sortOrder](/api-reference/_hidden/GridBaseColumn/sortOrder.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#sortOrder') and [sortIndex](/api-reference/_hidden/GridBaseColumn/sortIndex.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#sortIndex') properties to specify the initial sorting settings. [sortIndex](/api-reference/_hidden/GridBaseColumn/sortIndex.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#sortIndex') applies only in multiple sorting mode.
+The **sorting**.[mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/sorting/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/sorting/#mode') property specifies whether users can sort grid records against single or multiple columns.
+
+You can also set a column's [sortOrder](/api-reference/_hidden/GridBaseColumn/sortOrder.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#sortOrder') and [sortIndex](/api-reference/_hidden/GridBaseColumn/sortIndex.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#sortIndex') properties to specify initial sorting settings. [sortIndex](/api-reference/_hidden/GridBaseColumn/sortIndex.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#sortIndex') applies only in multi-column sort mode.
+
+To sort data and change sort orders in the UI, click column headers. Hold **Shift** and click to sort data against multiple columns.
 
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
-    $(function() {
-        $("#dataGrid").dxDataGrid({
-            // ...
-            columns: [{
-                dataField: "Country",
-                sortOrder: "asc",
-            },
-            // ...
-            ],
-            // sorting: { mode: "single" },
-        });
+    $("#dataGrid").dxDataGrid({
+        sorting: { mode: "multiple" },
+        columns: [{
+            dataField: "Country",
+            sortOrder: "asc",
+        }, /* ... */ ],
+        // ...
     });
+
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().DataGrid<Employee>()
+        .Sorting(s => s.Mode(GridSortingMode.Multiple))
+        .Columns(columns => {
+            columns.AddFor(m => m.Country)
+                .SortOrder(SortOrder.Asc);
+        })
+        @* ... *@
+    )
 
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-data-grid ... >
-        <!-- ... -->
+    <dx-data-grid>
+        <dxo-sorting mode="multiple"></dxo-sorting>
         <dxi-data-grid-column
             dataField="Country"
-            sortOrder="asc">
-        </dxi-data-grid-column>
-        <!-- <dxo-sorting [mode]="single"></dxo-sorting> -->
+            sortOrder="asc"
+        ></dxi-data-grid-column>
+        <!-- ... -->
     </dx-data-grid>
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app-container">
-            <DxDataGrid ... >
-                <!-- ... -->
-                <DxColumn
-                    data-field="Country"
-                    sort-order="asc">
-                </DxColumn>
-                <!-- <DxSorting mode="single" /> -->
-            </DxDataGrid>
-        </div>
+        <DxDataGrid ... >
+            <DxSorting mode="multiple" />
+            <DxColumn
+                data-field="Country"
+                sort-order="asc"
+            />
+            <!-- ... -->
+        </DxDataGrid>
     </template>
 
-    <script>
-    import {
-        DxDataGrid,
-        DxColumn,
-        // ...
-        // DxSorting
-    } from 'devextreme-vue/data-grid';
+    <script setup lang="ts">
+    import { DxDataGrid, DxSorting, DxColumn } from 'devextreme-vue/data-grid';
 
-    export default {
-        components: {
-            DxDataGrid,
-            DxColumn,
-            // ...
-            // DxSorting
-        },
-        // ...
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import {
-        DataGrid,
-        Column,
-        // ...
-        // Sorting
-    } from 'devextreme-react/data-grid';
+    <!-- tab: App.tsx -->
+    import { DataGrid, Sorting, Column } from 'devextreme-react/data-grid';
 
     function App() {
         return (
             <div className="App">
                 <DataGrid ... >
-                    {/* ... */}
+                    <Sorting mode="multiple" />
                     <Column
                         dataField="Country"
-                        sortOrder="asc">
-                    </Column>
-                    {/* <Sorting mode="single" /> */}
+                        sortOrder="asc"
+                    />
+                    {/* ... */}
                 </DataGrid>
             </div>
         );
     }
 
-    export default App;
-
-
 ---
-
-Run the code and ensure that grid records are sorted by the `Country` column. Click a column header to sort the records by another column.

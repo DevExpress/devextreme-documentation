@@ -1,39 +1,58 @@
-To reorder grid columns, change their order in the [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') array. Users can also reorder columns if you enable the [allowColumnReordering](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/allowColumnReordering.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#allowColumnReordering') property.
+#include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Reordering/", name: "Column Reordering" }
+
+To set the initial column order, arrange items in the [columns[]](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') array as needed. Enable [allowColumnReordering](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/allowColumnReordering.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#allowColumnReordering') to allow users to reorder columns in the component UI.
+
+The following code snippet also specifies [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataType') for `BirthDate` and `HireDate` columns to display string values as dates:
 
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
-    $(function() {
-        $("#dataGrid").dxDataGrid({
-            // ...
-            columns: [{
-                dataField: "FullName"
-            }, {
-                dataField: "Position"
-            }, {
-                dataField: "BirthDate", 
-                dataType: "date",
-            }, {
-                dataField: "HireDate", 
-                dataType: "date",
-            },"City", {
-                dataField: "Country"
-            },
-            "Address",
-            "HomePhone",
-            {
-                dataField: "PostalCode",
-            }],
-            allowColumnReordering: true,
-        });
+    $("#dataGrid").dxDataGrid({
+        columns: [{
+            dataField: "FullName"
+        }, {
+            dataField: "Position"
+        }, {
+            dataField: "BirthDate", 
+            dataType: "date",
+        }, {
+            dataField: "HireDate", 
+            dataType: "date",
+        },"City", {
+            dataField: "Country"
+        },
+        "Address",
+        "HomePhone",
+        {
+            dataField: "PostalCode",
+        }],
+        allowColumnReordering: true,
     });
+
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().DataGrid<Employee>()
+        .Columns(columns => {
+            columns.AddFor(m => m.FullName);
+            columns.AddFor(m => m.Position);
+            columns.AddFor(m => m.BirthDate)
+                .DataType(GridColumnDataType.Date);
+            columns.AddFor(m => m.HireDate)
+                .DataType(GridColumnDataType.Date);
+            columns.AddFor(m => m.Country);
+            columns.AddFor(m => m.Address);
+            columns.AddFor(m => m.HomePhone);
+            columns.AddFor(m => m.PostalCode);
+        })
+        @* ... *@
+    )
 
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-data-grid ...
-        [allowColumnReordering]="true">
+    <dx-data-grid [allowColumnReordering]="true">
         <dxi-data-grid-column dataField="FullName"></dxi-data-grid-column>
         <dxi-data-grid-column dataField="Position"></dxi-data-grid-column>
         <dxi-data-grid-column
@@ -55,82 +74,55 @@ To reorder grid columns, change their order in the [columns](/api-reference/10%2
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app-container">
-            <DxDataGrid ...
-                :allow-column-reordering="true">
-                <DxColumn data-field="FullName"></DxColumn>
-                <DxColumn data-field="Position"></DxColumn>
-                <DxColumn
-                    data-field="BirthDate"
-                    data-type="date">
-                </DxColumn>
-                <DxColumn
-                    data-field="HireDate"
-                    data-type="date">
-                </DxColumn>
-                <DxColumn data-field="City" />
-                <DxColumn data-field="Country"></DxColumn>
-                <DxColumn data-field="Address" />
-                <DxColumn data-field="HomePhone" />
-                <DxColumn data-field="PostalCode" />
-            </DxDataGrid>
-        </div>
+        <DxDataGrid :allow-column-reordering="true">
+            <DxColumn data-field="FullName"></DxColumn>
+            <DxColumn data-field="Position"></DxColumn>
+            <DxColumn
+                data-field="BirthDate"
+                data-type="date">
+            </DxColumn>
+            <DxColumn
+                data-field="HireDate"
+                data-type="date">
+            </DxColumn>
+            <DxColumn data-field="City" />
+            <DxColumn data-field="Country"></DxColumn>
+            <DxColumn data-field="Address" />
+            <DxColumn data-field="HomePhone" />
+            <DxColumn data-field="PostalCode" />
+        </DxDataGrid>
     </template>
 
-    <script>
-    // ...
-    import {
-        DxDataGrid,
-        DxColumn
-    } from 'devextreme-vue/data-grid';
+    <script setup lang="ts">
+    import { DxDataGrid, DxColumn } from 'devextreme-vue/data-grid';
 
-    export default {
-        components: {
-            DxDataGrid,
-            DxColumn
-        },
-        // ...
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import {
-        DataGrid,
-        Column
-    } from 'devextreme-react/data-grid';
+    <!-- tab: App.tsx -->
+    import { DataGrid, Column } from 'devextreme-react/data-grid';
 
     function App() {
         return (
-            <div className="App">
-                <DataGrid ...
-                    allowColumnReordering={true}>
-                    <Column dataField="FullName"></Column>
-                    <Column dataField="Position"></Column>
-                    <Column
-                        dataField="BirthDate"
-                        dataType="date">
-                    </Column>
-                    <Column
-                        dataField="HireDate"
-                        dataType="date">
-                    </Column>
-                    <Column dataField="City" />
-                    <Column dataField="Country"></Column>
-                    <Column dataField="Address" />
-                    <Column dataField="HomePhone" />
-                    <Column dataField="PostalCode" />
-                </DataGrid>
-            </div>
+            <DataGrid allowColumnReordering={true}>
+                <Column dataField="FullName"></Column>
+                <Column dataField="Position"></Column>
+                <Column
+                    dataField="BirthDate"
+                    dataType="date">
+                </Column>
+                <Column
+                    dataField="HireDate"
+                    dataType="date">
+                </Column>
+                <Column dataField="City" />
+                <Column dataField="Country"></Column>
+                <Column dataField="Address" />
+                <Column dataField="HomePhone" />
+                <Column dataField="PostalCode" />
+            </DataGrid>
         );
     }
 
-    export default App;
-
 ---
-
-In the code above, we also specify the *"date"* [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataType') for the `BirthDate` and `HireDate` columns because `BirthDate` and `HireDate` are stored as strings, but you want the DataGrid to treat them as date-time values.

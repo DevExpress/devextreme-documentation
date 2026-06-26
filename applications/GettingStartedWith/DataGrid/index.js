@@ -1,17 +1,15 @@
-const polyfill = $("<script>", { src: "https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js" });
-const exceljs = $("<script>", { src: "https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.0.1/dx-exceljs-fork.min.js" });
-const fileSaver = $("<script>", { src: "https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js" });
-const jsPdf = $("<script>", { src: "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js" });
+const polyfill = $("<script>", { src: "https://cdn.jsdelivr.net/npm/babel-polyfill@6.26.0/dist/polyfill.min.js" });
+const exceljs = $("<script>", { src: "https://cdn.jsdelivr.net/npm/devextreme-exceljs-fork@4.4.11/dist/dx-exceljs-fork.min.js" });
+const fileSaver = $("<script>", { src: "https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js" });
+const jsPdf = $("<script>", { src: "https://cdn.jsdelivr.net/npm/jspdf@4.2.1/dist/jspdf.umd.min.js" });
 
 $("head").append(
     polyfill, exceljs, fileSaver, jsPdf
 );
 
-// This code is used for backwards compatibility with the older jsPDF variable name
-// Read more: https://github.com/MrRio/jsPDF/releases/tag/v2.0.0
-// window.jsPDF = window.jspdf.jsPDF;
-
 $(function() {
+    window.jsPDF = window.jspdf.jsPDF;
+
     const dataGrid = $("#dataGrid").dxDataGrid({
         dataSource: employees,
         keyExpr: "EmployeeID",
@@ -60,6 +58,7 @@ $(function() {
             dataField: "PostalCode",
             visible: false
         }],
+        sorting: { mode: "multiple" },
         filterRow: { visible: true },
         searchPanel: { visible: true },
         groupPanel: { visible: true },
@@ -137,8 +136,7 @@ $(function() {
                     }); 
                 }); 
                 e.cancel = true;
-            } 
-            else if (e.format === 'pdf') {
+            } else if (e.format === 'pdf') {
                 const doc = new jsPDF();
                 DevExpress.pdfExporter.exportDataGrid({
                     jsPDFDocument: doc,

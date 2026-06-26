@@ -1,0 +1,1 @@
+<a href="${{url}}" class="button" style="margin-right: 5px;" target="_blank"><b>Read Tutorial</b>: ${{name}}</a>

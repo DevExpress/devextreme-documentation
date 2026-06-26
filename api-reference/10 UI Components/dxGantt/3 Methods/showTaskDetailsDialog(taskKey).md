@@ -1,4 +1,4 @@
----
+﻿---
 id: dxGantt.showTaskDetailsDialog(taskKey)
 ---
 ---
@@ -147,7 +147,7 @@ A task key.
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -155,7 +155,7 @@ A task key.
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.showTaskDetailsDialog("task_key");
             // ...
         }
@@ -166,7 +166,7 @@ A task key.
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -174,7 +174,7 @@ A task key.
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.showTaskDetailsDialog("task_key");
             // ...
         }

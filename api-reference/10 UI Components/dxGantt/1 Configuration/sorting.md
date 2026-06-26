@@ -156,11 +156,11 @@ To clear sorting for a column, hold Ctrl and click the column header. You can al
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .Sorting(s => {
-            s.Mode(GridSortingMode.Multiple)
-            s.ShowSortIndexes(true)
-            s.AscendingText("Ascending Order")
-            s.DescendingText("Descending Order")
-            s.ClearText("Clear Sort")
+            s.Mode(GanttSortingMode.Multiple);
+            s.ShowSortIndexes(true);
+            s.AscendingText("Ascending Order");
+            s.DescendingText("Descending Order");
+            s.ClearText("Clear Sort");
         })
         // ...
     )
@@ -170,11 +170,11 @@ To clear sorting for a column, hold Ctrl and click the column header. You can al
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .Sorting(s => {
-            s.Mode(GridSortingMode.Multiple)
-            s.ShowSortIndexes(true)
-            s.AscendingText("Ascending Order")
-            s.DescendingText("Descending Order")
-            s.ClearText("Clear Sort")
+            s.Mode(GanttSortingMode.Multiple);
+            s.ShowSortIndexes(true);
+            s.AscendingText("Ascending Order");
+            s.DescendingText("Descending Order");
+            s.ClearText("Clear Sort");
         })
         // ...
     )

@@ -176,10 +176,10 @@ To learn how to display current and planned tasks in the Gantt chart area with *
 
     <script>
         function getTaskContentTemplate(task, container) {
-            var $customContainer = $(document.createElement("div"))
-                .addClass("custom-task");
-                .text(item.Task.Title);
-                .attr("style", "width:" + item.TaskSize.Width + "px"); 
+            const $customContainer = $(document.createElement("div"))
+                .addClass("custom-task")
+                .text(item.Task.Title)
+                .attr("style", "width:" + item.TaskSize.Width + "px");
             return $customContainer;
         }    
     </script>

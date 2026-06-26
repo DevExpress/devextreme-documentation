@@ -158,7 +158,7 @@ The task's start date.
 
     <script>
         function getTaskTimeTooltipContentTemplate(item, container) {
-            var $customTooltipTime = $(document.createElement("div"))
+            const $customTooltipTime = $(document.createElement("div"))
                 .addClass("custom-tooltip");
     ​
             $(document.createElement("div"))

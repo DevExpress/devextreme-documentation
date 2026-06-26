@@ -349,7 +349,7 @@ The Gallery UI component allows you to display not only the current image, but a
 
 #####See Also#####
 - [Gallery - Customize Item Appearance](/concepts/05%20UI%20Components/Gallery/30%20Customize%20Item%20Appearance.md '/Documentation/Guide/UI_Components/Gallery/Customize_Item_Appearance/')
-- [Gallery Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gallery/Overview)
+- [Gallery Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gallery/Overview/)
 - [Gallery API Reference](/api-reference/10%20UI%20Components/dxGallery '/Documentation/ApiReference/UI_Components/dxGallery/')
 
 [tags]gallery, item width, show several images, stretch image

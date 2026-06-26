@@ -119,4 +119,4 @@ Set the **format** UI component property to apply a predefined format. In the fo
 The **format** property in the previous example is specified with an object which allows you to specify the precision. However, you can specify the **format** property with a string literal if this is not required.
 
 #####See Also#####
-- [RangeSelector Formatting Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/CustomFormatting)
+- [RangeSelector Formatting Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/CustomFormatting/)

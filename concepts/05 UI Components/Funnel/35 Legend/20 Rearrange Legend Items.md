@@ -261,4 +261,4 @@ Below, you can try out all the mentioned properties in action.
 
 #####See Also#####
 - [Relocate the Legend](/concepts/05%20UI%20Components/Funnel/35%20Legend/10%20Relocate%20the%20Legend.md '/Documentation/Guide/UI_Components/Funnel/Legend/Relocate_the_Legend/')
-- [Funnel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart)
+- [Funnel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart/)

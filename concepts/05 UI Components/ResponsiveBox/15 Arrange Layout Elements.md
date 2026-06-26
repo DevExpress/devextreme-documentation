@@ -495,7 +495,7 @@ If on some screens, all elements should be arranged in a single column, assign t
 #####See Also#####
 - [ResponsiveBox - Create the Layout Grid](/concepts/05%20UI%20Components/ResponsiveBox/10%20Create%20the%20Layout%20Grid.md '/Documentation/Guide/UI_Components/ResponsiveBox/Create_the_Layout_Grid/')
 - [ResponsiveBox - Size Qualifiers](/concepts/05%20UI%20Components/ResponsiveBox/05%20Size%20Qualifiers.md '/Documentation/Guide/UI_Components/ResponsiveBox/Size_Qualifiers/')
-- [ResponsiveBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ResponsiveBox/Overview)
+- [ResponsiveBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ResponsiveBox/Overview/)
 - [ResponsiveBox API Reference](/api-reference/10%20UI%20Components/dxResponsiveBox '/Documentation/ApiReference/UI_Components/dxResponsiveBox/')
 
 [tags]responsive box, responsiveBox, adaptive layout, location, arrange in one column, singleColumnScreen

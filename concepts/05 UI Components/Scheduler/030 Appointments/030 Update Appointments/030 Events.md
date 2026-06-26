@@ -133,5 +133,5 @@ If you are going to change event handlers at runtime, or if you need to attach s
 #####See Also#####
 #include common-link-handleevents
 #include common-link-callmethods
-- [Scheduler Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview)
+- [Scheduler Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview/)
 - [Scheduler API Reference](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')

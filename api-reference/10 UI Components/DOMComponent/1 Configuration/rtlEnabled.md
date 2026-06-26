@@ -15,14 +15,14 @@ When this property is set to **true**, the UI component text flows from right to
     });
 
 #include common-demobutton-named with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RightToLeftSupport",
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RightToLeftSupport/",
     name: "DataGrid"
 }
 #include common-demobutton-named with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/NavigationRightToLeftSupport",
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/NavigationRightToLeftSupport/",
     name: "Navigation UI"
 }
 #include common-demobutton-named with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/EditorsRightToLeftSupport",
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Common/EditorsRightToLeftSupport/",
     name: "Editors"
 }

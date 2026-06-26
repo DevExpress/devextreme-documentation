@@ -17,4 +17,4 @@ You can obtain and change the gauge value at runtime. In order to do this, use t
 Only one main value can be indicated on a gauge. Besides the main gauge value, you can indicate several extra values. Refer to the **subvalues** property description for more information.
 
 #####See Also#####
-- **Update Data Demo**: [CircularGauge](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/UpdateCircularGaugeDataAtRuntime) | [LinearGauge](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/UpdateLinearGaugeDataAtRuntime)
+- **Update Data Demo**: [CircularGauge](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/UpdateCircularGaugeDataAtRuntime/) | [LinearGauge](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gauges/UpdateLinearGaugeDataAtRuntime/)

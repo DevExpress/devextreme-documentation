@@ -116,5 +116,5 @@ If you are going to change the **scroll** event handler at runtime, or if you ne
 
 #####See Also#####
 #include common-link-handleevents
-- [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI)
+- [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI/)
 - [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')

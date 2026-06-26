@@ -172,4 +172,4 @@ To toggle a row between expanded and collapsed states, you can implement the [is
 
 #####See Also#####
 #include common-link-callmethods
-- [TreeList Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview)
+- [TreeList Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview/)

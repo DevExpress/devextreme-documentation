@@ -151,7 +151,7 @@ DevExtreme editors may belong to different [validation groups](/api-reference/10
 #####See Also#####
 - [Validate the Form Data](/concepts/05%20UI%20Components/Form/01%20Getting%20Started%20with%20Form/70%20Validate%20the%20Form%20Data.md '/Documentation/Guide/UI_Components/Form/Getting_Started_with_Form/#Validate_the_Form_Data')
 - [Submit the Form](/concepts/05%20UI%20Components/Form/01%20Getting%20Started%20with%20Form/80%20Submit%20the%20Form.md '/Documentation/Guide/UI_Components/Form/Getting_Started_with_Form/#Submit_the_Form')
-- [Button Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/Icons)
+- [Button Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/Icons/)
 - [Button API Reference](/api-reference/10%20UI%20Components/dxButton '/Documentation/ApiReference/UI_Components/dxButton/')
 
 [tags]button, validate a form, submit a form, submit editors

@@ -107,5 +107,5 @@ If you [group appointments by resources](/concepts/05%20UI%20Components/Schedule
 #####See Also#####
 - [Scheduler - Customize Individual Views](/concepts/05%20UI%20Components/Scheduler/060%20Views/020%20Customize%20Individual%20Views.md '/Documentation/Guide/UI_Components/Scheduler/Views/Customize_Individual_Views/')
 - [Scheduler - Appointments](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/015%20Appointment%20Types/010%20One-Time%20Appointments.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/')
-- [Scheduler Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview)
+- [Scheduler Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview/)
 - [Scheduler API Reference](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')

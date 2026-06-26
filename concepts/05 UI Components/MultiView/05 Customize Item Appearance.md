@@ -276,7 +276,7 @@ You can also customize individual views. Declare the views as scripts and refere
 #####See Also#####
 - [MultiView - Switch Between Views](/concepts/05%20UI%20Components/MultiView/10%20Switch%20Between%20Views.md '/Documentation/Guide/UI_Components/MultiView/Switch_Between_Views/')
 - [MultiView - Loop the Views](/concepts/05%20UI%20Components/MultiView/15%20Loop%20the%20Views.md '/Documentation/Guide/UI_Components/MultiView/Loop_the_Views/')
-- [MultiView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/MultiView/Overview)
+- [MultiView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/MultiView/Overview/)
 - [MultiView API Reference](/api-reference/10%20UI%20Components/dxMultiView '/Documentation/ApiReference/UI_Components/dxMultiView/')
 
 [tags]multi view, multiView, item appearance, customize, templates, template, custom template

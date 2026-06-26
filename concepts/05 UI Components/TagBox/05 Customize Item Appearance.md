@@ -406,6 +406,6 @@ Using similar techniques, you can also customize tags of the selected items. The
 
 #####See Also#####
 - [TagBox API Reference](/api-reference/10%20UI%20Components/dxTagBox '/Documentation/ApiReference/UI_Components/dxTagBox/')
-- [TagBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TagBox/Overview)
+- [TagBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TagBox/Overview/)
 
 [tags]tagBox, tag box, editor, item appearance, customize, templates, template, tag template

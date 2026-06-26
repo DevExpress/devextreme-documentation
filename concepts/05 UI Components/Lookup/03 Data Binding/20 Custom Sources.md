@@ -284,6 +284,6 @@ If you specify the Lookup's [value](/api-reference/10%20UI%20Components/dxDropDo
 - [Data Layer - DataSource Examples | Connect to a RESTful Service](/concepts/70%20Data%20Binding/51%20Data%20Source%20Examples/3%20Custom%20Sources/0%20Connect%20to%20RESTful%20Service.md '/Documentation/Guide/Data_Binding/Data_Source_Examples/#Custom_Sources/Connect_to_RESTful_Service')
 - [Access the DataSource](/concepts/05%20UI%20Components/Lookup/03%20Data%20Binding/30%20Access%20the%20DataSource.md '/Documentation/Guide/UI_Components/Lookup/Data_Binding/Access_the_DataSource/')
 - [Enable Grouping](/concepts/05%20UI%20Components/Lookup/10%20Enable%20Grouping.md '/Documentation/Guide/UI_Components/Lookup/Enable_Grouping/')
-- [Lookup Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/Basics)
+- [Lookup Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/Basics/)
 
 [tags]lookup, data binding, provide data, custom data source, CustomStore, DataSource, load

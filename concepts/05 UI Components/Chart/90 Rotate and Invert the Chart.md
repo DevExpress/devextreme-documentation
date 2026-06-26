@@ -185,7 +185,7 @@ To invert both argument and value axes, assign **true** to the [inverted](/api-r
 ---
 
 #####See Also#####
-- [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/AjaxRequest)
+- [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/AjaxRequest/)
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
 [tags]chart, rotate, invert, mirror

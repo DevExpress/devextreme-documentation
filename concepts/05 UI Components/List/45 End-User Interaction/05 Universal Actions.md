@@ -116,7 +116,7 @@ The List supports other universal actions, which are provided as a part of basic
 - [Item Deletion - Handle Related Events](/concepts/05%20UI%20Components/List/35%20Item%20Deletion/10%20Events.md '/Documentation/Guide/UI_Components/List/Item_Deletion/#Events')
 
 #####See Also#####
-- [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI)
+- [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI/)
 - [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 
 [tags]list, item click, onItemClick

@@ -31,7 +31,7 @@ An end user can use the following keys to interact with the UI component.
 
 #####See Also#####
 #include common-link-callmethods
-- [TileView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TileView/Overview)
+- [TileView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TileView/Overview/)
 - [TileView API Reference](/api-reference/10%20UI%20Components/dxTileView '/Documentation/ApiReference/UI_Components/dxTileView/')
 
 [tags]tile view, tileView, accessibility, keyboard shortcuts

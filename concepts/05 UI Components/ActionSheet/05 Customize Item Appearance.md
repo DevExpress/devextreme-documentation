@@ -289,7 +289,7 @@ You can also customize an individual ActionSheet button. For this purpose, decla
 ---
 
 #####See Also#####
-- [ActionSheet Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ActionSheet/Basics)
+- [ActionSheet Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ActionSheet/Basics/)
 - [ActionSheet API Reference](/api-reference/10%20UI%20Components/dxActionSheet '/Documentation/ApiReference/UI_Components/dxActionSheet/')
 
 [tags]action sheet, actionSheet, item appearance, customize, templates, template

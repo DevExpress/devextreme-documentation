@@ -131,6 +131,6 @@ When the Popover is shown, the area beneath it can be shaded. To enable this beh
 - [Popover - Customize the Content](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/05%20Customize%20the%20Content '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Content/')
 - [Popover - Customize the Title](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/10%20Customize%20the%20Title.md '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Customize_the_Title/')
 - [Popover - Specify Toolbar Items](/concepts/05%20UI%20Components/Popover/05%20Customize%20the%20Appearance/20%20Specify%20Toolbar%20Items.md '/Documentation/Guide/UI_Components/Popover/Customize_the_Appearance/Specify_Toolbar_Items/')
-- [Popover Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popover/Overview)
+- [Popover Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Popover/Overview/)
 
 [tags]popover, overlay, shading, background, shading color

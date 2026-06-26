@@ -28,4 +28,4 @@ The following image is an element map. Click the element you want to customize t
 - [Editing: Customize editors inside the grid](/concepts/05%20UI%20Components/DataGrid/20%20Editing/40%20Customize%20Editors.md '/Documentation/Guide/UI_Components/DataGrid/Editing/#Customize_Editors')
 - [Editing: Customize edit form](/concepts/05%20UI%20Components/DataGrid/20%20Editing/43%20Customize%20Edit%20Form '/Documentation/Guide/UI_Components/DataGrid/Editing/#Customize_Edit_Form')
 - [Editing: Customize a button column](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CommandColumnCustomization/)
-- [Toolbar customization](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ToolbarCustomization)
+- [Toolbar customization](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/ToolbarCustomization/)

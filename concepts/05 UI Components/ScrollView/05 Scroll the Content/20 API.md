@@ -662,5 +662,5 @@ To get the current scroll position against the top left corner, call the [scroll
 
 #####See Also#####
 - [ScrollView - Handle Scroll Gestures](/concepts/05%20UI%20Components/ScrollView/10%20Handle%20Scroll%20Gestures.md '/Documentation/Guide/UI_Components/ScrollView/Handle_Scroll_Gestures/')
-- [ScrollView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ScrollView/Overview)
+- [ScrollView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ScrollView/Overview/)
 - [ScrollView API Reference](/api-reference/10%20UI%20Components/dxScrollView '/Documentation/ApiReference/UI_Components/dxScrollView/')

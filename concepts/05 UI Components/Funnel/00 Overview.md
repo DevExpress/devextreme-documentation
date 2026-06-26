@@ -43,7 +43,7 @@ The Web Dashboard is available as a part of a Universal subscription.
 [/note]
 
 #####See Also#####
-- [Funnel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart)
+- [Funnel Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart/)
 - [Funnel API Reference](/api-reference/10%20UI%20Components/dxFunnel '/Documentation/ApiReference/UI_Components/dxFunnel/')
 
 [tags]dxfunnel

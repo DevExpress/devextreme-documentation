@@ -263,7 +263,7 @@ Below, you can try out all the mentioned properties in action.
 
 #####See Also#####
 - [Relocate the Legend](/concepts/05%20UI%20Components/Chart/35%20Legend/10%20Relocate%20the%20Legend.md '/Documentation/Guide/UI_Components/Chart/Legend/Relocate_the_Legend/')
-- [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/StepLine)
+- [Chart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/StepLine/)
 - [Chart API Reference](/api-reference/10%20UI%20Components/dxChart '/Documentation/ApiReference/UI_Components/dxChart/')
 
 [tags]chart, legend, legend items, legend orientation, colum count, columnCount, row count, rowCount, empty space between legend items, columnItemSpacing, rowItemSpacing

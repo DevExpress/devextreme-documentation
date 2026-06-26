@@ -144,5 +144,5 @@ Now you should be able to select multiple buttons and see messages like the foll
 
 You have configured basic ButtonGroup features. To take a more detailed look at this UI component, explore the following resources:
 
-- [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ButtonGroup/Overview) 
+- [Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ButtonGroup/Overview/) 
 - [API Reference](/api-reference/10%20UI%20Components/dxButtonGroup '/Documentation/ApiReference/UI_Components/dxButtonGroup')

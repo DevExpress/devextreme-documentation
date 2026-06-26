@@ -224,4 +224,4 @@ For details on other properties of point labels, refer to the [label](/api-refer
 #####See Also#####
 - [Customize Labels](/concepts/05%20UI%20Components/PieChart/15%20Point%20Labels/05%20Customize%20Labels.md '/Documentation/Guide/UI_Components/PieChart/Point_Labels/Customize_Labels/')
 - [Resolve Label Overlapping](/concepts/05%20UI%20Components/PieChart/15%20Point%20Labels/10%20Resolve%20Overlapping.md '/Documentation/Guide/UI_Components/PieChart/Point_Labels/Resolve_Overlapping/')
-- [PieChart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Pie)
+- [PieChart Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Pie/)

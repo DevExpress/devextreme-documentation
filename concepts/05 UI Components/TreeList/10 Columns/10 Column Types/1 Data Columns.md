@@ -85,6 +85,6 @@ If data column values should be cast to another type (for example, date values s
 #####See Also#####
 - [Customize Cells](/concepts/05%20UI%20Components/TreeList/10%20Columns/40%20Customize%20Cells '/Documentation/Guide/UI_Components/TreeList/Columns/Customize_Cells/')
 - [Lookup Columns](/concepts/05%20UI%20Components/TreeList/10%20Columns/10%20Column%20Types/3%20Lookup%20Columns.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_Types/#Lookup_Columns')
-- [TreeList Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview)
+- [TreeList Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview/)
 
 [tags] treelist, tree list, column types, data columns

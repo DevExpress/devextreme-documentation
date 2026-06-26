@@ -321,7 +321,7 @@ You can also customize an individual menu item. For this purpose, declare a temp
 
 
 #####See Also#####
-- [Menu Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Menu/Overview)
+- [Menu Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Menu/Overview/)
 - [Menu API Reference](/api-reference/10%20UI%20Components/dxMenu '/Documentation/ApiReference/UI_Components/dxMenu/')
 
 [tags]menu, item appearance, customize, templates

@@ -1,4 +1,4 @@
----
+﻿---
 id: dxGantt.showDependencies(value)
 ---
 ---
@@ -147,7 +147,7 @@ Specifies whether to show or hide dependencies.
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -155,7 +155,7 @@ Specifies whether to show or hide dependencies.
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.showDependencies(false);
             ganttInstance.showDependencies(false);
             // ...

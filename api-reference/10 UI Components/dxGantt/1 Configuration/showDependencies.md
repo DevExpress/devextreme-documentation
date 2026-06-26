@@ -20,7 +20,7 @@ Specifies whether to display [dependencies](/api-reference/10%20UI%20Components/
     <!--JavaScript-->
     $(function() {
         $("#gantt").dxGantt({
-            showResources: false,
+            showDependencies: false,
             // ...
         });
     }); 
@@ -29,7 +29,7 @@ Specifies whether to display [dependencies](/api-reference/10%20UI%20Components/
 
     <!-- tab: app.component.html -->
     <dx-gantt
-        [showResources]="false">
+        [showDependencies]="false">
         <!-- ... -->
     </dx-gantt>
 
@@ -67,7 +67,7 @@ Specifies whether to display [dependencies](/api-reference/10%20UI%20Components/
     <!-- tab: App.vue -->
     <template>
         <DxGantt
-            :show-resources="false" >
+            :show-dependencies="false" >
             <!-- ... -->
         </DxGantt>
     </template>
@@ -103,7 +103,7 @@ Specifies whether to display [dependencies](/api-reference/10%20UI%20Components/
     const App = () => {
         return (
             <Gantt
-                showResources={false} >
+                showDependencies={false} >
                 {/* ... */}
             </Gantt>
         );
@@ -115,7 +115,7 @@ Specifies whether to display [dependencies](/api-reference/10%20UI%20Components/
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
-        .ShowResources(false)
+        .ShowDependencies(false)
         // ...
     )
 
@@ -123,7 +123,7 @@ Specifies whether to display [dependencies](/api-reference/10%20UI%20Components/
 
     <!-- Razor C# -->
     @(Html.DevExtreme().Gantt()
-        .ShowResources(false)
+        .ShowDependencies(false)
         // ...
     )
 

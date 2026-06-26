@@ -126,8 +126,8 @@ Use the [scaleTypeRange.min](/api-reference/10%20UI%20Components/dxGantt/1%20Con
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .ScaleTypeRange(e => {
-            e.Min(GanttScaleType.Days)
-            e.Max(GanttScaleType.Years)
+            e.Min(GanttScaleType.Days);
+            e.Max(GanttScaleType.Years);
         })
         // ...
     )
@@ -137,8 +137,8 @@ Use the [scaleTypeRange.min](/api-reference/10%20UI%20Components/dxGantt/1%20Con
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .ScaleTypeRange(e => {
-            e.Min(GanttScaleType.Days)
-            e.Max(GanttScaleType.Years)
+            e.Min(GanttScaleType.Days);
+            e.Max(GanttScaleType.Years);
         })
         // ...
     )

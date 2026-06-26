@@ -1,4 +1,4 @@
----
+﻿---
 id: dxGantt.showResources(value)
 ---
 ---
@@ -147,7 +147,7 @@ Specifies whether to show or hide task resources.
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -155,7 +155,7 @@ Specifies whether to show or hide task resources.
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.showResources(false);
             // ...
         }

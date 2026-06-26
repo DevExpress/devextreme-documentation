@@ -1,4 +1,4 @@
----
+﻿---
 id: dxGantt.expandAll()
 ---
 ---
@@ -116,7 +116,7 @@ Expands all tasks.
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -124,7 +124,7 @@ Expands all tasks.
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.expandAll();
             // ...
         }
@@ -135,7 +135,7 @@ Expands all tasks.
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -143,7 +143,7 @@ Expands all tasks.
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.expandAll();
             // ...
         }

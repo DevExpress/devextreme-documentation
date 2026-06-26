@@ -1,4 +1,4 @@
----
+﻿---
 id: dxGantt.deleteDependency(key)
 ---
 ---
@@ -145,7 +145,7 @@ The dependency key.
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -153,7 +153,7 @@ The dependency key.
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.deleteDependency("dependency_key");
             // ...
         }
@@ -164,7 +164,7 @@ The dependency key.
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -172,7 +172,7 @@ The dependency key.
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.deleteDependency("dependency_key");
             // ...
         }

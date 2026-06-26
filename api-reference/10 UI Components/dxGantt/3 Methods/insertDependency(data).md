@@ -1,4 +1,4 @@
----
+﻿---
 id: dxGantt.insertDependency(data)
 ---
 ---
@@ -145,7 +145,7 @@ The dependency data.
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -153,7 +153,7 @@ The dependency data.
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.insertDependency({ predecessorId: 1, successorId: 3, type: 3 });
             // ...
         }
@@ -164,7 +164,7 @@ The dependency data.
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -172,7 +172,7 @@ The dependency data.
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.insertDependency({ predecessorId: 1, successorId: 3, type: 3 });
             // ...
         }

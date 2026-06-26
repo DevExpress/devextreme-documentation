@@ -1,4 +1,4 @@
----
+﻿---
 id: dxGantt.refresh()
 ---
 ---
@@ -119,7 +119,7 @@ A Promise that is resolved after data is loaded.
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -127,7 +127,7 @@ A Promise that is resolved after data is loaded.
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.refresh();
             // ...
         }
@@ -138,7 +138,7 @@ A Promise that is resolved after data is loaded.
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -146,7 +146,7 @@ A Promise that is resolved after data is loaded.
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.refresh();
             // ...
         }

@@ -31,6 +31,9 @@ $(function() {
         }, 'city', {
             dataField: 'orderAmount',
             format: 'currency',
+            headerFilter: {
+                groupInterval: [100, 25],
+            }
         }],
         showColumnLines: true,
         height: 500,

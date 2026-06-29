@@ -4,12 +4,12 @@ $(function() {
     const ds = (count) => {
         let array = [];
 
-        for (let index = 1; index < count; index++) {
+        for (let index = 0; index < count; index++) {
             array.push({
-                city: cities[Math.round(Math.random() * 18)],
+                city: cities[Math.round(Math.random() * (cities.length - 1))],
                 orderAmount: Math.random() * 1000,
-                orderNumber: index,
-                parentId: Math.floor(Math.random() * Math.sqrt(index)),
+                orderNumber: index + 1,
+                parentId: Math.floor(Math.pow(Math.random(), 3) * index),
             })
         }
 
@@ -39,7 +39,7 @@ $(function() {
         height: 500,
     });
 
-    function openHeaderFilterAndExpand(gridSelector, column /* index or dataField */, expandBy /* key or text or true for expandAll */) {
+    function openHeaderFilterAndExpand(gridSelector, column, expandBy) {
         const grid = $(gridSelector).dxTreeList('instance');
 
         // Resolve column index
@@ -76,6 +76,4 @@ $(function() {
     setTimeout(() => {
         openHeaderFilterAndExpand('#tree-list', 'orderNumber', 1)
     }, 500)
-
-    console.log((1 % 3))
 });

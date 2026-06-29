@@ -1,7 +1,7 @@
 .app-container {
   display: flex;
   flex-direction: row;
-  justify-self: center;
+  justify-content: center;
 }
 
 #tree-list {

@@ -158,8 +158,3 @@ The default header filter for date columns is hierarchical. To implement a non-h
     }
 
 ---
-
-#include common-demobutton-named with {
-    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Filtering/",
-    name: "DataGrid - Filtering"
-}

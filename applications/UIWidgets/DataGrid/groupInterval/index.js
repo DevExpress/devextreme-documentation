@@ -6,7 +6,7 @@ $(function() {
 
         for (let index = 0; index < count; index++) {
             array.push({
-                city: cities[Math.round(Math.random() * 18)],
+                city: cities[Math.round(Math.random() * (cities.length - 1))],
                 orderAmount: Math.random() * 1000,
                 orderNumber: index + 1,
             })
@@ -15,7 +15,7 @@ $(function() {
         return array;
     }
 
-    const dataGrid = $("#data-grid").dxDataGrid({
+    $("#data-grid").dxDataGrid({
         dataSource: ds(10000),
         headerFilter: {
             visible: true,
@@ -34,9 +34,9 @@ $(function() {
         }],
         showColumnLines: true,
         height: 500,
-    }).dxDataGrid("instance");
+    });
 
-    function openHeaderFilterAndExpand(gridSelector, column /* index or dataField */, expandBy /* key or text or true for expandAll */) {
+    function openHeaderFilterAndExpand(gridSelector, column, expandBy) {
         const grid = $(gridSelector).dxDataGrid('instance');
 
         // Resolve column index

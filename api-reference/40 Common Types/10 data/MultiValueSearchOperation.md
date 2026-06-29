@@ -10,5 +10,5 @@ Multi-value search operations.
 ---
 The following operations are available:
 
-- *"anyof"*: Logical OR
-- *"noneof"*: Logical NOT
+- *"anyof"*: Matches specified values
+- *"noneof"*: Matches values that are not specified

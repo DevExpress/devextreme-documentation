@@ -1,6 +1,6 @@
 ---
 id: dxDropDownButton.Options.items
-type: Array<dxDropDownButtonItem, any>
+type: Array<dxDropDownButtonItem, any> | null
 default: null
 inheritsType: dxDropDownButtonItem
 ---

@@ -8,7 +8,7 @@ Users can add new records and update or delete existing records. To allow these 
 
 DataGrid supports multiple [edit modes](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode'). This tutorial uses the pop-up edit mode.
 
-This tutorial also implements [data validation](/Documentation/Guide/UI_Components/Common/UI_Widgets/Data_Validation/) to check that edited data is valid before saving. [Required](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules/RequiredRule '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/RequiredRule/') rules are configured to ensure certain column values are never empty:
+This tutorial also implements [data validation](/concepts/05%20UI%20Components/zz%20Common/05%20UI%20Widgets/20%20Data%20Validation '/Documentation/Guide/UI_Components/Common/UI_Widgets/Data_Validation/') to check that edited data is valid before saving. [Required](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules/RequiredRule '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/RequiredRule/') rules are configured to ensure certain column values are never empty:
 
 ---
 ##### jQuery

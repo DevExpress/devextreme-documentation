@@ -1,0 +1,10 @@
+.app-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#tree-list {
+  width: 100%;
+  max-width: 800px;
+}

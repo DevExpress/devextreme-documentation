@@ -10,7 +10,7 @@ Specifies which data field contains nested items. Set this property when your da
 ##### param(item): any
 <!-- Description goes here -->
 
-##### param(value): undefined | Array<any>
+##### param(value): Array<any> | undefined
 <!-- Description goes here -->
 
 ##### return: Array<any> | undefined

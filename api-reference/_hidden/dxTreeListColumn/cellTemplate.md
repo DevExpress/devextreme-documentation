@@ -60,7 +60,45 @@ A function called when this variable changes.
 A template name or container.
 
 ---
-[note]If you implement two-way data binding in your template, make sure that you have switched off the built-in implementation of this feature by setting the [twoWayBindingEnabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/twoWayBindingEnabled.md '{basewidgetpath}/Configuration/#twoWayBindingEnabled') property to **false**.
+The following details should be taken into account when you use a **cellTemplate**:
+
+- If you implement two-way data binding in your template, set [twoWayBindingEnabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/twoWayBindingEnabled.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#twoWayBindingEnabled') to **false** to switch off the built-in implementation of this feature.
+
+- In [fixed columns](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnFixing '{basewidgetpath}/Configuration/columnFixing/'), the template is initialized and rendered twice for each cell.
+
+- Template values have no effect on data operations. Implement the column's [calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#calculateCellValue') or [calculateDisplayValue](/api-reference/_hidden/GridBaseColumn/calculateDisplayValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#calculateDisplayValue') option to transform the cell's underlying value.
+
+- [cellHintEnabled]({basewidgetpath}/Configuration/#cellHintEnabled) has no effect for columns where **cellTemplate** is configured. To display native hints in these colums, add the [title](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/title) attribute to the **cellTemplate** container element. To display custom hints, configure the DevExtreme [Tooltip](/Documentation/Guide/UI_Components/Tooltip/Overview/) component.
+
+---
+##### jQuery
+
+The code snippet below uses the `watch` function. You can test the snippet in the [Real-Time Updates](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/RealTimeUpdates/) demo.
+
+Note the following:
+
+- You cannot call `watch` in a cell in which you want to track data.
+- The data in the cell where `watch` is called should remain constant.
+
+<!-- ... -->
+
+    <!-- tab: index.js -->
+    $("#treeListContainer").dxTreeList({
+        columns: [{
+            dataField: 'ProductName', 
+            dataType: 'string',
+            cellTemplate(container, info) {
+                const getter = (data) => data.Amount;
+                const handler = (newValue) => {
+                    container.css('background-color', newValue < 100000 ? 'red' : 'green');
+                };
+                info.watch(getter, handler);
+                return $('<div>').text(info.data.ProductName);
+            }
+        }]
+    });
+
+---
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview/"
@@ -70,5 +108,3 @@ A template name or container.
 - [Customize Cells Appearance](/concepts/05%20UI%20Components/TreeList/10%20Columns/40%20Customize%20Cells/2%20Customize%20the%20Appearance.md '/Documentation/Guide/UI_Components/TreeList/Columns/Customize_Cells/#Customize_the_Appearance')
 - [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')
 - [onCellPrepared](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/onCellPrepared.md '{basewidgetpath}/Configuration/#onCellPrepared')
-
-<!-- import * from 'api-reference\_hidden\dxDataGridColumn\cellTemplate.md' -->

@@ -1,6 +1,6 @@
 ---
 id: dxDropDownButton.Options.selectedItem
-type: String | Number | any
+type: String | Number | any | null
 default: null
 ---
 ---

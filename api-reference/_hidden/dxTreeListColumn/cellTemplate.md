@@ -64,11 +64,9 @@ The following details should be taken into account when you use a **cellTemplate
 
 - If you implement two-way data binding in your template, set [twoWayBindingEnabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/twoWayBindingEnabled.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#twoWayBindingEnabled') to **false** to switch off the built-in implementation of this feature.
 
-- In [fixed columns](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnFixing '{basewidgetpath}/Configuration/columnFixing/'), the template is initialized and rendered twice for each cell.
-
 - Template values have no effect on data operations. Implement the column's [calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#calculateCellValue') or [calculateDisplayValue](/api-reference/_hidden/GridBaseColumn/calculateDisplayValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#calculateDisplayValue') option to transform the cell's underlying value.
 
-- [cellHintEnabled]({basewidgetpath}/Configuration/#cellHintEnabled) has no effect for columns where **cellTemplate** is configured. To display native hints in these colums, add the [title](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/title) attribute to the **cellTemplate** container element. To display custom hints, configure the DevExtreme [Tooltip](/Documentation/Guide/UI_Components/Tooltip/Overview/) component.
+- [cellHintEnabled]({basewidgetpath}/Configuration/#cellHintEnabled) has no effect for columns where **cellTemplate** is configured. To display native hints in these columns, add the [title](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/title) attribute to the **cellTemplate** container element. To display custom hints, configure the DevExtreme [Tooltip](/Documentation/Guide/UI_Components/Tooltip/Overview/) component.
 
 ---
 ##### jQuery

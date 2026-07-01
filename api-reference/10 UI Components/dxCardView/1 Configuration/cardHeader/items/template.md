@@ -1,5 +1,5 @@
 ---
-id: CardHeaderItem.template
+id: dxCardView.Options.cardHeader.items.template
 type: template
 ---
 ---
@@ -82,7 +82,7 @@ For more information about templates, refer to the following topic: [DevExtreme 
     <!-- tab: App.tsx -->
     import { CardView, CardHeader, Item } from 'devextreme-react/card-view';
 
-    fucntion renderCustomItem() {
+    function renderCustomItem() {
         return <div>Custom Item</div>;
     }
 

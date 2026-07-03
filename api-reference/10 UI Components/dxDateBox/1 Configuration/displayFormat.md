@@ -20,4 +20,4 @@ The default display format is selected automatically based on the current [local
 }
 
 #####See Also#####
-- [Format Widget Values](/concepts/Common/Value%20Formatting/10%20Format%20UI%20Component%20Values '/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values')
+- [Format Widget Values](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/10%20Format%20UI%20Component%20Values '/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values')

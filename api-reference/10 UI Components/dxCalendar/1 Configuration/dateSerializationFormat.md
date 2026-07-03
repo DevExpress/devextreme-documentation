@@ -10,7 +10,7 @@ Specifies the date-time value serialization format.
 ---
 Date-time serialization involves date-time value conversion into a string format for storage or transmission. To ensure proper format detection, specify this property.
 
-Use LDML patterns to pass [custom format strings](/concepts/Common/Value%20Formatting/10%20Format%20UI%20Component%20Values/20%20Custom%20Format%20String.md '/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String') to this property.
+Use LDML patterns to pass [custom format strings](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/10%20Format%20UI%20Component%20Values/20%20Custom%20Format%20String.md '/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String') to this property.
 
 [important] **dateSerializationFormat** does not support all LDML pattern combinations.
 

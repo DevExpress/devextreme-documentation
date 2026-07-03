@@ -6,7 +6,7 @@ Note the following AI Assistant specifics and best practices:
 
 - The AI Assistant may not preserve the results of previously executed commands of the same type. To preserve or discard previous results, specify this in your request with keywords such as "also" or "only".
 
-- If {WidgetName} is bound to a large dataset, the `selectAll` command may increase the context size of requests beyond the limits of your AI service. The `selectAll` command adds all row keys to the request [context](/api-reference/40%20Common%20Types/15%20grids/AIAssistantRequestCreatingInfo/context.md '/Documentation/ApiReference/UI_Components/dxTreeList/Types/AIAssistantRequestCreatingEvent/#context') (in [onAIAssistantRequestCreating](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/onAIAssistantRequestCreating.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onAIAssistantRequestCreating')).
+- If {WidgetName} is bound to a large dataset, the `selectAll` command can increase the request context size beyond the limits of your AI service. This command adds all row keys to the request `context` in [onAIAssistantRequestCreating](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/onAIAssistantRequestCreating.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onAIAssistantRequestCreating').
 
 - The assistant does not support certain actions that are only accessible in the component UI (for instance, it cannot expand/collapse groups).
 

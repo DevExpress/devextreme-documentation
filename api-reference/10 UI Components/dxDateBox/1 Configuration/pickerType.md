@@ -23,7 +23,7 @@ The picker type depends on the current platform or web browser.
 
     When **pickerType** is *"native"*, DateBox behavior changes as follows:
 
-    - The component overrides [DevExtreme localization](/concepts/Common/Localization '/Documentation/Guide/Common/Localization/') settings and formats dates according to the user device locale.
+    - The component overrides [DevExtreme localization](/Documentation/Guide/Common/Localization/) settings and formats dates according to the user device locale.
     - DateBox raises [onValueChanged](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#onValueChanged') while the user edits the value, not after editing is complete.
     - The component does not raise the following events:
         - [onClosed](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/onClosed.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#onClosed')

@@ -12,4 +12,4 @@ The identifier.
 
 ---
 #####See Also#####
-- [Localization](/concepts/Common/Localization '/Documentation/Guide/Common/Localization/')
+- [Localization](/Documentation/Guide/Common/Localization/)

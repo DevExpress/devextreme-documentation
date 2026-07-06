@@ -17,7 +17,7 @@ The following libraries and data are required to activate Globalize in your proj
 ---
 ##### jQuery
 
-Specify the Globalize and CLDR libraries using `<script>` tags as shown below. In this example, the German [dictionary](/concepts/Common/Localization%20and%20Globalization/01%20Dictionaries '/Documentation/Guide/Common/Localization/#Dictionaries') is included. Include libraries in the order shown. Then, set the locale using the `Globalize.locale()` method:
+Specify the Globalize and CLDR libraries using `<script>` tags as shown below. In this example, the German [dictionary](/concepts/Common/Localization%20and%20Globalization/05%20UI%20Text%20Localization/05%20DevExtreme%20Dictionaries%20Reference.md '/Documentation/Guide/Common/Localization/#Dictionaries') is included. Include libraries in the order shown. Then, set the locale using the `Globalize.locale()` method:
 
     <!--HTML-->
     <head>

@@ -1,115 +1,74 @@
-Dictionaries contain localized strings for different languages. These strings are key/value pairs shipped as JavaScript or JSON files, depending on the package you use.
+DevExtreme UI text localization uses dictionaries from `devextreme/localization/messages/<code>.json`. Each dictionary contains over 800 localized strings. 
 
-For a list of all available dictionaries, refer to the DevExtreme repository on GitHub: [DevExtreme Dictionaries](https://github.com/DevExpress/DevExtreme/tree/26_1/packages/devextreme/js/localization/messages).
+A dictionary key (for example `de`, `fr`, `zh-tw`) is a [BCP 47](https://developer.mozilla.org/en-US/docs/Glossary/BCP_47_language_tag) language tag. If you set a region-qualified locale and no exact dictionary exists, DevExtreme resolves the locale through parent fallback and then to English (`en`). For example, `de-AT` resolves to `de`, and `ca-ES` resolves to `ca`.
 
-[note] Certain messages may not be translated in community-sourced dictionaries. To translate these messages, refer to [Override Strings in a Dictionary](/concepts/Common/Localization%20and%20Globalization/01%20Dictionaries/07%20Override%20Strings%20in%20a%20Dictionary.md '/Documentation/Guide/Common/Localization/#Dictionaries/Override_Strings_in_a_Dictionary'). To contribute translations to the DevExtreme repository, refer to our [Contribution Guide](https://github.com/DevExpress/DevExtreme/blob/26_1/CONTRIBUTING.md).
+Locale matching is case-insensitive. For example, `zh-TW` and `zh-tw` resolve to the same dictionary.
 
-To localize your project, import dictionaries from the following locations:
+Use one of the following dictionary delivery formats:
 
-- `js/localization` within the `devextreme-dist` package.
-- `js/localization` in DevExtreme libraries on the DevExpress CDN.
-- `C:\Program Files\DevExpress 26.1\Components\Sources\DevExtreme\Lib\js\localization` on your computer if you used the DevExpress Unified Component Installer.
+- `<code>.json` in module-based projects (Angular, Vue, React, or any bundler workflow).
+- `dx.messages.<code>.js` in script-tag projects (jQuery, CDN, or non-module setups).
 
 ---
 ##### jQuery
 
-Use the `<script>` tag to link the required dictionaries, and place the links *after* a link to the DevExtreme library:
+Use the script-tag dictionary file and set the locale after the file is loaded:
 
     <!--HTML-->
     <head>
-        <!-- ... -->
         <!-- DevExtreme library -->
         <script src="https://cdn3.devexpress.com/jslib/minor_26_1/js/dx.all.js"></script>
-        <!-- Dictionary files for German language -->
+        <!-- German dictionary -->
         <script src="https://cdn3.devexpress.com/jslib/minor_26_1/js/localization/dx.messages.de.js"></script>
     </head>
     <body>
         <script>
-            DevExpress.localization.locale(navigator.language);
-            // ...
-            // DevExtreme UI components are configured here
+            DevExpress.localization.locale("de");
             // ...
         </script>
     </body>
 
 ##### Angular
 
-Include the dictionaries using the `import` or `require` statement the statement depends on the syntax for working with modules. The following code shows ECMAScript 6 and CommonJS syntaxes:
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import deMessages from 'devextreme/localization/messages/de.json';
+    import { loadMessages, locale } from 'devextreme/localization';
 
-    <!-- tab: ECMAScript 6 syntax -->
-    // ...
-    // Dictionaries for German language
-    import deMessages from "devextreme/localization/messages/de.json";
-    import { locale, loadMessages } from "devextreme/localization";
-
+    @Component({
+        selector: 'app-root',
+        template: '',
+        standalone: true
+    })
     export class AppComponent {
         constructor() {
             loadMessages(deMessages);
-            locale(navigator.language);
+            locale('de');
         }
     }
-
-    <!-- tab: CommonJS syntax -->
-    // ...
-    // Dictionaries for German language
-    const deMessages = require('devextreme/localization/messages/de.json');
-    const localization = require('devextreme/localization');
-
-    localization.loadMessages(deMessages);
-    localization.locale(navigator.language);
 
 ##### Vue
 
-Include the dictionaries using the `import` or `require` statement the statement depends on the syntax for working with modules. The following code shows ECMAScript 6 and CommonJS syntaxes:
+    <!-- tab: App.vue -->
+    <script setup lang="ts">
+    import deMessages from 'devextreme/localization/messages/de.json';
+    import { loadMessages, locale } from 'devextreme/localization';
 
-    <!-- tab: ECMAScript 6 syntax -->
-    // ...
-    // Dictionaries for German language
-    import deMessages from "devextreme/localization/messages/de.json";
-    import { locale, loadMessages } from "devextreme/localization";
-
-    export default {
-        created() {
-            loadMessages(deMessages);
-            locale(navigator.language);
-        }
-    }
-
-    <!-- tab: CommonJS syntax -->
-    // ...
-    // Dictionaries for German language
-    const deMessages = require('devextreme/localization/messages/de.json');
-    const localization = require('devextreme/localization');
-
-    localization.loadMessages(deMessages);
-    localization.locale(navigator.language);
+    loadMessages(deMessages);
+    locale('de');
+    </script>
 
 ##### React
 
-Include the dictionaries using the `import` or `require` statement the statement depends on the syntax for working with modules. The following code shows ECMAScript 6 and CommonJS syntaxes:
+    <!-- tab: App.tsx -->
+    import deMessages from 'devextreme/localization/messages/de.json';
+    import { loadMessages, locale } from 'devextreme/localization';
 
-    <!-- tab: ECMAScript 6 syntax -->
-    // ...
-    // Dictionaries for German language
-    import deMessages from "devextreme/localization/messages/de.json";
-    import { locale, loadMessages } from "devextreme/localization";
+    loadMessages(deMessages);
+    locale('de');
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            loadMessages(deMessages);
-            locale(navigator.language);
-        }
+    export default function App() {
+        return null;
     }
 
-    <!-- tab: CommonJS syntax -->
-    // ...
-    // Dictionaries for German language
-    const deMessages = require('devextreme/localization/messages/de.json');
-    const localization = require('devextreme/localization');
-
-    localization.loadMessages(deMessages);
-    localization.locale(navigator.language);
-
----    
-
+---

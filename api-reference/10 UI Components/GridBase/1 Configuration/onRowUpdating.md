@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.onRowUpdating
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

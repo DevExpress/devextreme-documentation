@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.onSelectionChanged
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

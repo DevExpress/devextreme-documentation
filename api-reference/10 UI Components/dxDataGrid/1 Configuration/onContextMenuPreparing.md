@@ -1,7 +1,6 @@
 ---
 id: dxDataGrid.Options.onContextMenuPreparing
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

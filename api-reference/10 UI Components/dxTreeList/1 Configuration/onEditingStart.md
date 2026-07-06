@@ -1,7 +1,6 @@
 ---
 id: dxTreeList.Options.onEditingStart
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,6 @@
 ---
 id: dxTreeList.Options.onAIColumnRequestCreating
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

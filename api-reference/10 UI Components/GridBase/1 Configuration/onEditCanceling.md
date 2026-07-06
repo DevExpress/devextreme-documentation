@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.onEditCanceling
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,6 @@
 ---
 id: HeaderPanel.dragging.onDragMove
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

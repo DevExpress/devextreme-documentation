@@ -1,7 +1,7 @@
 ---
 id: GridBase.Options.dataSource
-type: Store | DataSource | DataSource_Options | String | Array<any> | null
-default: null
+type: Store | DataSource | DataSource_Options | String | Array<any> | undefined
+default: undefined
 ---
 ---
 ##### shortDescription

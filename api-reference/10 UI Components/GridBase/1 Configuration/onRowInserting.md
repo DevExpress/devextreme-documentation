@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.onRowInserting
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

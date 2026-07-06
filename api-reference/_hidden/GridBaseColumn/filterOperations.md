@@ -1,7 +1,6 @@
 ---
 id: GridBaseColumn.filterOperations
 type: Array<Enums.FilterOperation, String>
-default: undefined
 ---
 ---
 ##### shortDescription

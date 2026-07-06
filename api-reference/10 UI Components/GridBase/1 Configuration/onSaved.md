@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.onSaved
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

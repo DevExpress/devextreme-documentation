@@ -1,7 +1,6 @@
 ---
 id: dxDataGrid.Options.onRowDblClick
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

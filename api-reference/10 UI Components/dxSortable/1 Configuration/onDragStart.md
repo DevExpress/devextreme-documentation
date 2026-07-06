@@ -1,7 +1,7 @@
 ---
 id: dxSortable.Options.onDragStart
-type: function(e)
-default: null
+type: function(e) | undefined
+default: undefined
 ---
 ---
 ##### shortDescription

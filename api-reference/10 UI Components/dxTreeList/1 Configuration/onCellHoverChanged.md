@@ -1,7 +1,6 @@
 ---
 id: dxTreeList.Options.onCellHoverChanged
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

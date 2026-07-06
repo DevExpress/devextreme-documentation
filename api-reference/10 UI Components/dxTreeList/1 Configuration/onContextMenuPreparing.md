@@ -1,7 +1,6 @@
 ---
 id: dxTreeList.Options.onContextMenuPreparing
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

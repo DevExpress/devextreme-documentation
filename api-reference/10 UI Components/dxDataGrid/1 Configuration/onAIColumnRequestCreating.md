@@ -1,7 +1,6 @@
 ---
 id: dxDataGrid.Options.onAIColumnRequestCreating
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,6 @@
 ---
 id: GridBaseColumn.filterValues
 type: Array<any>
-default: undefined
 firedEvents: optionChanged
 ---
 ---

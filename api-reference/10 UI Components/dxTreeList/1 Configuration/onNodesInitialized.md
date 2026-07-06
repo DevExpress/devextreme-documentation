@@ -1,7 +1,6 @@
 ---
 id: dxTreeList.Options.onNodesInitialized
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,6 @@
 ---
 id: dxDataGrid.Options.onCellClick
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

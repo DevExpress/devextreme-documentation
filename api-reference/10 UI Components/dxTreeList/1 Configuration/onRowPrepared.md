@@ -1,7 +1,6 @@
 ---
 id: dxTreeList.Options.onRowPrepared
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

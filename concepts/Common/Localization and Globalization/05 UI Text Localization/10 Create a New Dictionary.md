@@ -1,4 +1,4 @@
-DevExtreme ships one message dictionary per language. To create a regional variant (for example `fr-CA`, `en-GB`, or `pt-PT`), follow these steps:
+DevExtreme ships one message dictionary per language. To create a regional variant (for example `fr-CA`, `en-GB`, or `de-CH`), follow these steps:
 
 1. Copy a base dictionary file, for example `fr.json`.
 2. Rename the file with a BCP 47 tag, for example `fr-CA.json`.

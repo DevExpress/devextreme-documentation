@@ -2,11 +2,11 @@
 
 The Globalize package is outdated and potentially unsafe.
  
-Use Globalize at your own risk. We recommend switching to [Intl](/concepts/Common/Localization%20and%20Globalization/05%20Localize%20Dates%2C%20Numbers%2C%20and%20Currencies/05%20Using%20Intl.md '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/Using_Intl') for a more secure solution.
+Use Globalize at your own risk. We recommend switching to [Intl](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/04%20Using%20Intl.md) for a more secure solution.
 
 [/important]
 
-[note]We recommend against using Globalize if you apply [CSP rules](/concepts/Common/Security%20Considerations/40%20Content%20Security%20Policy/00%20Content%20Security%20Policy.md '/Documentation/Guide/Common/Security_Considerations/#Content_Security_Policy'). Use [Intl](/concepts/Common/Localization%20and%20Globalization/05%20Localize%20Dates%2C%20Numbers%2C%20and%20Currencies/05%20Using%20Intl.md '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/Using_Intl') instead.
+[note]We recommend against using Globalize if you apply [CSP rules](/concepts/Common/Security%20Considerations/40%20Content%20Security%20Policy/00%20Content%20Security%20Policy.md '/Documentation/Guide/Common/Security_Considerations/#Content_Security_Policy'). Use [Intl](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/04%20Using%20Intl.md) instead.
 
 The following libraries and data are required to activate Globalize in your project:
 
@@ -17,7 +17,7 @@ The following libraries and data are required to activate Globalize in your proj
 ---
 ##### jQuery
 
-Specify the Globalize and CLDR libraries using `<script>` tags as shown below. In this example, the German [dictionary](/concepts/Common/Localization%20and%20Globalization/05%20UI%20Text%20Localization/05%20DevExtreme%20Dictionaries%20Reference.md '/Documentation/Guide/Common/Localization/#Dictionaries') is included. Include libraries in the order shown. Then, set the locale using the `Globalize.locale()` method:
+Specify the Globalize and CLDR libraries using `<script>` tags as shown below. In this example, the German [dictionary](/concepts/Common/Localization%20and%20Globalization/05%20UI%20Text%20Localization/05%20DevExtreme%20Dictionaries%20Reference.md) is included. Include libraries in the order shown. Then, set the locale using the `Globalize.locale()` method:
 
     <!--HTML-->
     <head>
@@ -218,3 +218,4 @@ You can also format values using structures accepted by <a href="https://github.
     }
 
 ---
+

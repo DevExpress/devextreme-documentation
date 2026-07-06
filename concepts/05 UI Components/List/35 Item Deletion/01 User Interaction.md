@@ -84,5 +84,6 @@ To allow the user to delete items from the List, set the [allowItemDeleting](/ap
 
 #####See Also#####
 - [List - Data Binding | Deletion in Custom Sources](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/60%20Custom%20Data%20Sources '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/')
-- [List - Localization](/concepts/05%20UI%20Components/List/50%20Localization.md '/Documentation/Guide/UI_Components/List/Localization/')
+- [List - Localization](/concepts/05%20UI%20Components/List/50%20Localization.md '/concepts/05%20UI%20Components/List/50%20Localization.md')
+
 

@@ -57,4 +57,4 @@ The [format](/api-reference/50%20Common/Object%20Structures/format '/Documentati
 ---
 
 #####See Also#####
-- [Format Custom Values](/Documentation/Guide/Common/Value_Formatting/#Format_Custom_Values)
+- [Format Custom Values](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/10%20Format%20UI%20Component%20Values/30%20Custom%20Function.md)

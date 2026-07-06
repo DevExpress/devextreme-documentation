@@ -15,7 +15,7 @@ Exceptions: *"quarter"* and *"quarterAndYear"* are exported as Short Date; *"min
 - **Function**  
 Cannot be converted automatically. Assign this function to the [customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#customizeText') property instead of the **format** property.   
 
-- [Custom format string](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/10%20Format%20Widget%20Values/20%20Custom%20Format%20String.md '/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String')   
+- [Custom format string](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/10%20Format%20Widget%20Values/20%20Custom%20Format%20String.md '/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/10%20Format%20UI%20Component%20Values/20%20Custom%20Format%20String.md')   
 Cannot be converted, the cell value is exported without formatting. To export this format, return the formatted string from the [customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#customizeText') callback as follows:
 
     ---
@@ -159,6 +159,6 @@ A column's default format depends on the data type, which is detected automatica
 
 #####See Also#####
 - [customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '{currentpath}/#customizeText')
-- [Value Formatting](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/')
+- [Value Formatting](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting '/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/00%20Value%20Formatting.md')
 
 <!-- import * from "api-reference\_hidden\GridBaseColumn\format.md" -->

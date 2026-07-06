@@ -103,4 +103,5 @@ Use [defaultCurrency](/api-reference/50%20Common/Object%20Structures/GlobalConfi
 
 ---
 
-You can apply Intl option objects directly to the **format** property. Refer to [Intl Formats](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/10%20Format%20UI%20Component%20Values/15%20Intl%20Formats.md '/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Intl_Formats') for details and additional examples.
+You can apply Intl option objects directly to the **format** property. Refer to [Intl Formats](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/10%20Format%20UI%20Component%20Values/15%20Intl%20Formats.md '/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/10%20Format%20UI%20Component%20Values/15%20Intl%20Formats.md') for details and additional examples.
+

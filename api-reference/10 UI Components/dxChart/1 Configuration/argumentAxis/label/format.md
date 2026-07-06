@@ -14,4 +14,5 @@ When this property value is `undefined`, the date-time axes display larger date 
 
 #####See Also#####
 - [customizeText](/api-reference/10%20UI%20Components/dxChart/1%20Configuration/argumentAxis/label/customizeText.md '{currentpath}/#customizeText')
-- [Value Formatting](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/')
+- [Value Formatting](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting '/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/00%20Value%20Formatting.md')
+

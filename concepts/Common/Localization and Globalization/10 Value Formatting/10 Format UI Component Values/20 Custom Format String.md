@@ -169,4 +169,5 @@ The examples below show different ways to apply percentage formatting to decimal
     format: "hh:mm a" // 08:45 PM
     format: "MMMM dd, yyyy HH:mm:ss" // July 15, 2021 20:45:34
 
-[note] Use the [Globalize library](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/55%20Using%20Globalize.md '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/Using_Globalize') in your application to use additional <a href="http://unicode.org/reports/tr35/tr35-numbers.html#Special_Pattern_Characters" target="_blank">numeric</a> or <a href="http://unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table" target="_blank">date-time</a> format characters.
+[note] Use the [Globalize library](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/08%20Using%20Globalize.md '/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/08%20Using%20Globalize.md') in your application to use additional <a href="http://unicode.org/reports/tr35/tr35-numbers.html#Special_Pattern_Characters" target="_blank">numeric</a> or <a href="http://unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table" target="_blank">date-time</a> format characters.
+

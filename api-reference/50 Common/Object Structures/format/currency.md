@@ -11,4 +11,4 @@ Alternatively, you can set the [GlobalConfig](/api-reference/50%20Common/Object%
 
 #####See Also#####
 - **format**.[precision](/api-reference/50%20Common/Object%20Structures/format/precision.md '/Documentation/ApiReference/Common/Object_Structures/Format/#precision')
-- [Localization](/Documentation/Guide/Common/Localization/)
+- [Localization](/concepts/Common/Localization%20and%20Globalization/00%20Overview.md)

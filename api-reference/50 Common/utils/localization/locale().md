@@ -12,4 +12,4 @@ The identifier.
 
 ---
 #####See Also#####
-- [Localization](/Documentation/Guide/Common/Localization/)
+- [Localization and Globalization](/concepts/Common/Localization%20and%20Globalization/00%20Overview.md)

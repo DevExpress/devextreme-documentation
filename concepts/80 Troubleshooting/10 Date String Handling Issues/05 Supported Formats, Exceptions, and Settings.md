@@ -40,4 +40,4 @@ DevExtreme **does not maintain** the format of the original date string when it 
 
 The **dateSerializationFormat** property *does not* determine how DevExtreme displays your date.
 
-The [Value Formatting](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/') guide explains how to change the way DevExtreme displays time and date data.
+The [Value Formatting](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting '/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/00%20Value%20Formatting.md') guide explains how to change the way DevExtreme displays time and date data.

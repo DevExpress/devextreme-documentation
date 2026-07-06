@@ -127,7 +127,7 @@ This tutorial also implements the **texts**.**message** variable defined in the 
     </tr>
 </table>
 
-Chat localizes these texts following your application locale. For more information about DevExtreme localization, refer to the following topic: [Localization](/concepts/Common/Localization '/Documentation/Guide/Common/Localization/').
+Chat localizes these texts following your application locale. For more information about DevExtreme localization, refer to the following topic: [Localization](/concepts/Common/Localization '/concepts/Common/Localization%20and%20Globalization/00%20Overview.md').
 
 ### Customize Chat when Empty View is Displayed
 
@@ -137,3 +137,4 @@ You can implement customizations outside of the empty view container and display
     #chat:has(.dx-chat-messagelist-empty-view) {
         background-color: #D8E9FF;
     }
+

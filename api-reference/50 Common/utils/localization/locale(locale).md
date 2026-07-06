@@ -14,4 +14,4 @@ The required locale identifier.
 [note] This method should be called only once - at the application's launch. It is necessary to reload the page each time you need to set new locale.
 
 #####See Also#####
-- [Localization](/Documentation/Guide/Common/Localization/)
+- [Localization](/concepts/Common/Localization%20and%20Globalization/00%20Overview.md)

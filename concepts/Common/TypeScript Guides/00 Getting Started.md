@@ -15,7 +15,7 @@ TypeScript definitions for DevExtreme libraries are available in the following l
         <!-- tab: Path -->
         C:\Program Files\DevExpress 26.1\Components\Sources\DevExtreme\Lib\ts
 
-Reference `dx.all.d.ts` and [jQuery types](https://www.npmjs.com/package/@types/jquery) in your project as follows:
+Reference `dx.all.d.ts` and [jQuery types](https://www.npmjs.com/package/@types/jquery) in your project:
 
     <!-- tab: Modular application -->
     import $ from 'jquery';

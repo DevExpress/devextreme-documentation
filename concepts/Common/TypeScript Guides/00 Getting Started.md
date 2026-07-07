@@ -3,11 +3,12 @@ TypeScript definitions for DevExtreme libraries are available in the following l
 - The [devextreme-dist](https://www.npmjs.com/package/devextreme-dist) package installed in your project:
     
         <!-- tab: Path -->
-        node_modules\devextreme-dist\ts\dx.all.d.ts
+        node_modules/devextreme-dist/ts/dx.all.d.ts
 
 - The **devextreme-dist** package hosted on a CDN:
 
-        <script src="https://cdn.jsdelivr.net/npm/devextreme-dist@26.1/ts/dx.all.d.ts"></script>
+        <!-- tab: URL -->
+        https://cdn.jsdelivr.net/npm/devextreme-dist@26.1/ts/dx.all.d.ts
 
 - Local DevExtreme sources installed using the [DevExpress Unified Component Installer](https://docs.devexpress.com/GeneralInformation/15615/installation/download-the-registered-version#download-a-registered-version):
 
@@ -18,7 +19,7 @@ Reference `dx.all.d.ts` and [jQuery types](https://www.npmjs.com/package/@types/
 
     <!-- tab: Modular application -->
     import $ from 'jquery';
-    import 'devextreme-dist/ts/dx.all'
+    import 'devextreme-dist/ts/dx.all';
 
     <!-- tab: Non-modular application -->
     /// <reference path="TypeScript/jquery.d.ts" />

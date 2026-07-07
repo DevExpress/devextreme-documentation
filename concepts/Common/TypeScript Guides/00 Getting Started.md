@@ -1,16 +1,28 @@
-The [devextreme-dist](https://www.npmjs.com/package/devextreme-dist) package ships with TypeScript definitions in the following file:
+TypeScript definitions for DevExtreme libraries are available in the following locations:
 
-    node_modules\devextreme-dist\ts\dx.all.d.ts
+- The [devextreme-dist](https://www.npmjs.com/package/devextreme-dist) package installed in your project:
+    
+        <!-- tab: Path -->
+        node_modules\devextreme-dist\ts\dx.all.d.ts
+
+- The **devextreme-dist** package hosted on a CDN:
+
+        <script src="https://cdn.jsdelivr.net/npm/devextreme-dist@26.1/ts/dx.all.d.ts"></script>
+
+- Local DevExtreme sources installed using the [DevExpress Unified Component Installer](https://docs.devexpress.com/GeneralInformation/15615/installation/download-the-registered-version#download-a-registered-version):
+
+        <!-- tab: Path -->
+        C:\Program Files\DevExpress 26.1\Components\Sources\DevExtreme\Lib\ts
 
 Reference `dx.all.d.ts` and [jQuery types](https://www.npmjs.com/package/@types/jquery) in your project as follows:
-
-    <!-- tab: Non-modular application -->
-    /// <reference path="TypeScript/jquery.d.ts" />
-    /// <reference path="TypeScript/dx.all.d.ts" />
 
     <!-- tab: Modular application -->
     import $ from 'jquery';
     import 'devextreme-dist/ts/dx.all'
+
+    <!-- tab: Non-modular application -->
+    /// <reference path="TypeScript/jquery.d.ts" />
+    /// <reference path="TypeScript/dx.all.d.ts" />
 
 To access specific type definitions, use the `DevExpress` namespace:
 

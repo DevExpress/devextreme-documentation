@@ -1,9 +1,37 @@
-You can find the TypeScript definition file for DevExtreme in the installation folder: **C:\Program Files\DevExpress 24.2\DevExtreme\Sources\Lib\ts**. Add this file to your project. Reference DevExtreme and jQuery TypeScript definition files from your *.ts* file.
+TypeScript definitions for DevExtreme libraries are available in the following locations:
 
-    <reference path="TypeScript/jquery.d.ts" />
-    //  File from the zip archive or from the installation folder:
-    <reference path="TypeScript/dx.all.d.ts" />
+- The [devextreme-dist](https://www.npmjs.com/package/devextreme-dist) package installed in your project:
+    
+        <!-- tab: Path -->
+        node_modules/devextreme-dist/ts/dx.all.d.ts
 
-Along with TypeScript definitions, you need to reference all DevExtreme libraries used in your app. Refer to the following help topic for detailed information: [Local Files](/concepts/58%20jQuery%20Components/05%20Add%20DevExtreme%20to%20a%20jQuery%20Application/10%20Local%20Files.md '/Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/#Local_Files').
+- The **devextreme-dist** package hosted on a CDN:
+
+        <!-- tab: URL -->
+        https://cdn.jsdelivr.net/npm/devextreme-dist@25.2/ts/dx.all.d.ts
+
+- Local DevExtreme sources installed using the [DevExpress Unified Component Installer](https://docs.devexpress.com/GeneralInformation/15615/installation/download-the-registered-version#download-a-registered-version):
+
+        <!-- tab: Path -->
+        C:\Program Files\DevExpress 25.2\Components\Sources\DevExtreme\Lib\ts
+
+Reference `dx.all.d.ts` and [jQuery types](https://www.npmjs.com/package/@types/jquery) in your project:
+
+    <!-- tab: Modular application -->
+    import $ from 'jquery';
+    import 'devextreme-dist/ts/dx.all';
+
+    <!-- tab: Non-modular application -->
+    /// <reference path="TypeScript/jquery.d.ts" />
+    /// <reference path="TypeScript/dx.all.d.ts" />
+
+To access specific type definitions, use the `DevExpress` namespace:
+
+    <!-- tab: index.ts -->
+    const handleDataGridInit = (e: DevExpress.ui.dxDataGrid.InitializedEvent) => { /* ... */ };
+
+#####See Also#####
+- [DevExtreme Modules Structure](/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/)
+- [TypeScript Guides - Scopes of Types](/Documentation/Guide/Common/TypeScript_Guides/Scopes_of_Types/)
 
 [tags] jquery

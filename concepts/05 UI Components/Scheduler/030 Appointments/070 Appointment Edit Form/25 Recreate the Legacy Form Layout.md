@@ -66,35 +66,35 @@ Two details are critical for the recurrence panel to work correctly:
     <!-- tab: app.component.html -->
     <dx-scheduler ...>
         <dxo-scheduler-editing>
-            <dxo-editing-form iconsShowMode="none">
-                <dxi-form-item
+            <dxo-scheduler-form iconsShowMode="none">
+                <dxi-scheduler-item
                     name="mainGroup"
                     cssClass=""
                 >
-                    <dxi-form-item name="subjectGroup"></dxi-form-item>
-                    <dxi-form-item name="dateGroup"></dxi-form-item>
-                    <dxi-form-item name="repeatGroup">
-                        <dxi-form-item name="repeatIcon"></dxi-form-item>
-                        <dxi-form-item
+                    <dxi-scheduler-item name="subjectGroup"></dxi-scheduler-item>
+                    <dxi-scheduler-item name="dateGroup"></dxi-scheduler-item>
+                    <dxi-scheduler-item name="repeatGroup">
+                        <dxi-scheduler-item name="repeatIcon"></dxi-scheduler-item>
+                        <dxi-scheduler-item
                             name="customRepeatEditor"
                             editorType="dxSwitch"
                             dataField="repeat"
                             [label]="{ text: 'Repeat' }"
-                        ></dxi-form-item>
-                    </dxi-form-item>
-                    <dxi-form-item name="resourcesGroup"></dxi-form-item>
-                    <dxi-form-item name="descriptionGroup"></dxi-form-item>
-                </dxi-form-item>
-                <dxi-form-item
+                        ></dxi-scheduler-item>
+                    </dxi-scheduler-item>
+                    <dxi-scheduler-item name="resourcesGroup"></dxi-scheduler-item>
+                    <dxi-scheduler-item name="descriptionGroup"></dxi-scheduler-item>
+                </dxi-scheduler-item>
+                <dxi-scheduler-item
                     name="recurrenceGroup"
                     itemType="group"
                     cssClass=""
                     [visible]="false"
                 >
-                    <dxi-form-item name="recurrenceRuleGroup"></dxi-form-item>
-                    <dxi-form-item name="recurrenceEndGroup"></dxi-form-item>
-                </dxi-form-item>
-            </dxo-editing-form>
+                    <dxi-scheduler-item name="recurrenceRuleGroup"></dxi-scheduler-item>
+                    <dxi-scheduler-item name="recurrenceEndGroup"></dxi-scheduler-item>
+                </dxi-scheduler-item>
+            </dxo-scheduler-form>
         </dxo-scheduler-editing>
     </dx-scheduler>
 
@@ -245,7 +245,7 @@ Use [editing.popup](/api-reference/10%20UI%20Components/dxScheduler/1%20Configur
     <!-- tab: app.component.html -->
     <dx-scheduler ...>
         <dxo-scheduler-editing>
-            <dxo-editing-popup [maxWidth]="800" [toolbarItems]="popupToolbarItems" />
+            <dxo-scheduler-popup [maxWidth]="800" [toolbarItems]="popupToolbarItems"></dxo-scheduler-popup>
         </dxo-scheduler-editing>
     </dx-scheduler>
 

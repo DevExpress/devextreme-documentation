@@ -44,12 +44,12 @@ $(function () {
 
     function saveDraft(appointmentId, formData) {
         const key = getDraftKey(appointmentId);
-        const serializable = {};
+        const serialize = {};
         Object.keys(formData).forEach(function (k) {
             const val = formData[k];
-            serializable[k] = val instanceof Date ? val.toISOString() : val;
+            serialize[k] = val instanceof Date ? val.toISOString() : val;
         });
-        localStorage.setItem(key, JSON.stringify(serializable));
+        localStorage.setItem(key, JSON.stringify(serialize));
     }
 
     function loadDraft(appointmentId) {
@@ -66,6 +66,7 @@ $(function () {
         localStorage.removeItem(getDraftKey(appointmentId));
     }
     let isSaved = false;
+    let suppressDraftSaveUntilChange = false;
     let currentAppointmentId = null;
     let popupHidingHandler = null;
     let currentPopup = null;
@@ -124,6 +125,7 @@ $(function () {
             const appointmentData = e.appointmentData || {};
 
             isSaved = false;
+            suppressDraftSaveUntilChange = false;
             currentAppointmentId = appointmentData.id != null ? appointmentData.id : null;
             const draft = loadDraft(currentAppointmentId);
             if (draft) {
@@ -146,10 +148,7 @@ $(function () {
                         icon: 'undo',
                         onClick: function () {
                             clearDraft(currentAppointmentId);
-                            if (currentPopup && popupHidingHandler) {
-                                currentPopup.off('hiding', popupHidingHandler);
-                                popupHidingHandler = null;
-                            }
+                            suppressDraftSaveUntilChange = true;
 
                             form.option('formData', $.extend({}, form.option('formData'), {
                                 text: originalData.text,
@@ -187,12 +186,17 @@ $(function () {
 
             currentPopup = popup;
             popupHidingHandler = function () {
-                if (!isSaved) {
+                if (!isSaved && !suppressDraftSaveUntilChange) {
                     onCanceled(form, appointmentData);
                 }
             };
 
             popup.on('hiding', popupHidingHandler);
+
+            form.off('fieldDataChanged.schedulerDraftTracking');
+            form.on('fieldDataChanged.schedulerDraftTracking', function () {
+                suppressDraftSaveUntilChange = false;
+            });
         },
 
         onAppointmentAdded: function () {

@@ -1,6 +1,6 @@
 A single-action FAB triggers the main screen action:
 
-<div class="simulator-desktop-container" style="height:362px" data-view="/Content/Applications/26_1/GettingStartedWith/FloatingActionButton/SingleAction/index.html, /Content/Applications/26_1/GettingStartedWith/FloatingActionButton/SingleAction/index.js, /Content/Applications/26_1/GettingStartedWith/FloatingActionButton/SingleAction/index.css"></div>
+<div class="simulator-desktop-container" style="height:362px" data-view="/Content/Applications/26_2/GettingStartedWith/FloatingActionButton/SingleAction/index.html, /Content/Applications/26_2/GettingStartedWith/FloatingActionButton/SingleAction/index.js, /Content/Applications/26_2/GettingStartedWith/FloatingActionButton/SingleAction/index.css"></div>
 
 Add one [SpeedDialAction](/api-reference/10%20UI%20Components/dxSpeedDialAction '/Documentation/ApiReference/UI_Components/dxSpeedDialAction/') to the page and specify its [onClick](/api-reference/10%20UI%20Components/dxSpeedDialAction/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxSpeedDialAction/Configuration/#onClick') and [icon](/api-reference/10%20UI%20Components/dxSpeedDialAction/1%20Configuration/icon.md '/Documentation/ApiReference/UI_Components/dxSpeedDialAction/Configuration/#icon') properties. You can also define a [hint](/api-reference/10%20UI%20Components/Widget/1%20Configuration/hint.md '/Documentation/ApiReference/UI_Components/dxSpeedDialAction/Configuration/#hint').
 

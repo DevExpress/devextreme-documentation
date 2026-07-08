@@ -6,7 +6,7 @@ CardView is a UI component that displays data in a card-based format. You can us
 
 This tutorial explains how to add a CardView to a page and configure the component's core settings. 
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/26_1/GettingStartedWith/CardView/index.html, /Content/Applications/26_1/GettingStartedWith/CardView/index.js, /Content/Applications/26_1/GettingStartedWith/CardView/index.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/26_2/GettingStartedWith/CardView/index.html, /Content/Applications/26_2/GettingStartedWith/CardView/index.js, /Content/Applications/26_2/GettingStartedWith/CardView/index.css"></div>
 
 Each section in this tutorial covers a single configuration step. You can find the complete source code in the following GitHub repository:
 

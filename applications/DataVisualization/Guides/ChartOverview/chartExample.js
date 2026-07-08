@@ -57,7 +57,7 @@
         month: "October",
         avgT: 17.9,
         minT: 9.7,
-        maxT: 26.1,
+        maxT: 26.2,
         prec: 24
     }, {
         month: "November",

@@ -12,7 +12,7 @@ If you [specify a custom header filter data source](/concepts/05%20UI%20Componen
 
 For numeric columns, assign a number that specifies generated group sizes. Assign an array of numbers to generate hierarchical groups. The following **groupInterval** value divides records into groups of 100 and then into nested groups of 25: `[100, 25]`
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/26_1/UIWidgets/TreeList/groupInterval/index.html, /Content/Applications/26_1/UIWidgets/TreeList/groupInterval/index.js, /Content/Applications/26_1/UIWidgets/TreeList/groupInterval/index.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/26_2/UIWidgets/TreeList/groupInterval/index.html, /Content/Applications/26_2/UIWidgets/TreeList/groupInterval/index.js, /Content/Applications/26_2/UIWidgets/TreeList/groupInterval/index.css"></div>
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Filtering/",

@@ -30,8 +30,8 @@ Add the following dependencies to the `package.json` file:
 
     <!--tab: package.json-->
     "dependencies": {
-        "devextreme": "^26.1",
-        "devextreme-vue": "^26.1",
+        "devextreme": "^26.2",
+        "devextreme-vue": "^26.2",
         ...
     }
 

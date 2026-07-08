@@ -1,4 +1,4 @@
-DevExtreme v26.1 introduces a new licensing mechanism. Follow the steps below to migrate your application from an earlier version.
+DevExtreme v26.2 introduces a new licensing mechanism. Follow the steps below to migrate your application from an earlier version.
 
 Applications that already follow the setup described in [Validate Your License Key](/concepts/Common/Licensing/10%20Validate%20Your%20License%20Key.md '/Documentation/Guide/Common/Licensing/#Validate_Your_License_Key') do not require application code changes.
 

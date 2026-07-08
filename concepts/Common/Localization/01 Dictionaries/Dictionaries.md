@@ -1,14 +1,14 @@
 Dictionaries contain localized strings for different languages. These strings are key/value pairs shipped as JavaScript or JSON files, depending on the package you use.
 
-DevExtreme dictionaries are community-sourced. For a list of all available dictionaries, refer to the DevExtreme repository on GitHub: [DevExtreme Dictionaries](https://github.com/DevExpress/DevExtreme/tree/26_1/packages/devextreme/js/localization/messages).
+DevExtreme dictionaries are community-sourced. For a list of all available dictionaries, refer to the DevExtreme repository on GitHub: [DevExtreme Dictionaries](https://github.com/DevExpress/DevExtreme/tree/26_2/packages/devextreme/js/localization/messages).
 
-[note] Certain messages may not be translated in community-sourced dictionaries. To translate these messages, refer to [Override Strings in a Dictionary](/concepts/Common/Localization/01%20Dictionaries/07%20Override%20Strings%20in%20a%20Dictionary.md '/Documentation/Guide/Common/Localization/#Dictionaries/Override_Strings_in_a_Dictionary'). To contribute translations to the DevExtreme repository, refer to our [Contribution Guide](https://github.com/DevExpress/DevExtreme/blob/26_1/CONTRIBUTING.md).
+[note] Certain messages may not be translated in community-sourced dictionaries. To translate these messages, refer to [Override Strings in a Dictionary](/concepts/Common/Localization/01%20Dictionaries/07%20Override%20Strings%20in%20a%20Dictionary.md '/Documentation/Guide/Common/Localization/#Dictionaries/Override_Strings_in_a_Dictionary'). To contribute translations to the DevExtreme repository, refer to our [Contribution Guide](https://github.com/DevExpress/DevExtreme/blob/26_2/CONTRIBUTING.md).
 
 To localize your project, import dictionaries from the following locations:
 
 - `js/localization` within the `devextreme-dist` package.
 - `js/localization` in DevExtreme libraries on the DevExpress CDN.
-- `C:\Program Files\DevExpress 26.1\Components\Sources\DevExtreme\Lib\js\localization` on your computer if you used the DevExpress Unified Component Installer.
+- `C:\Program Files\DevExpress 26.2\Components\Sources\DevExtreme\Lib\js\localization` on your computer if you used the DevExpress Unified Component Installer.
 
 ---
 ##### jQuery
@@ -19,9 +19,9 @@ Use the `<script>` tag to link the required dictionaries, and place the links *a
     <head>
         <!-- ... -->
         <!-- DevExtreme library -->
-        <script src="https://cdn3.devexpress.com/jslib/minor_26_1/js/dx.all.js"></script>
+        <script src="https://cdn3.devexpress.com/jslib/minor_26_2/js/dx.all.js"></script>
         <!-- Dictionary files for German language -->
-        <script src="https://cdn3.devexpress.com/jslib/minor_26_1/js/localization/dx.messages.de.js"></script>
+        <script src="https://cdn3.devexpress.com/jslib/minor_26_2/js/localization/dx.messages.de.js"></script>
     </head>
     <body>
         <script>

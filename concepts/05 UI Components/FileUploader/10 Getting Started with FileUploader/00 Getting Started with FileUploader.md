@@ -7,7 +7,7 @@ FileUploader is a UI component that allows users to upload files to your server.
 - Configure FileUploader validation and upload permissions.
 - Customize the appearance of FileUploader visual elements.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/26_1/GettingStartedWith/FileUploader/index.html, /Content/Applications/26_1/GettingStartedWith/FileUploader/index.js, /Content/Applications/26_1/GettingStartedWith/FileUploader/index.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/26_2/GettingStartedWith/FileUploader/index.html, /Content/Applications/26_2/GettingStartedWith/FileUploader/index.js, /Content/Applications/26_2/GettingStartedWith/FileUploader/index.css"></div>
 
 Each section in this tutorial covers a single configuration step. You can find the complete source code in the following GitHub repository:
 

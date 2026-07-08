@@ -2,11 +2,11 @@ DevExtreme includes an icon library with SVG and font icons across all DevExtrem
 
 The following icons are available:
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/26_1/Icons/markup.html, /Content/Applications/26_1/Icons/script.js, /Content/Applications/26_1/Icons/styles.css" style="border-radius: 12px; min-width: 540px; max-height: 700px; margin-bottom: 12px;"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/26_2/Icons/markup.html, /Content/Applications/26_2/Icons/script.js, /Content/Applications/26_2/Icons/styles.css" style="border-radius: 12px; min-width: 540px; max-height: 700px; margin-bottom: 12px;"></div>
 
 For icon sources, refer to the DevExtreme GitHub repository:
 
-- <a href="https://github.com/DevExpress/DevExtreme/tree/26_1/packages/devextreme-scss/icons">Font icons</a>
-- <a href="https://github.com/DevExpress/DevExtreme/tree/26_1/packages/devextreme-scss/images/icons">SVG icons</a>
+- <a href="https://github.com/DevExpress/DevExtreme/tree/26_2/packages/devextreme-scss/icons">Font icons</a>
+- <a href="https://github.com/DevExpress/DevExtreme/tree/26_2/packages/devextreme-scss/images/icons">SVG icons</a>
 
 [note] If you experience icon rendering issues (such as uneven line weights) on macOS, apply the following CSS style to icon elements: `-webkit-font-smoothing: antialiased;`.

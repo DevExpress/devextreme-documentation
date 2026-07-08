@@ -5,11 +5,11 @@ You can use **npm** to deliver <a href="https://www.npmjs.com/package/devextreme
 
 Install the latest stable version:
 
-    npm install devextreme-dist@26.1 --save --save-exact
+    npm install devextreme-dist@26.2 --save --save-exact
 
 Install the latest <a href="https://github.com/DevExpress/DevExtreme/releases" target="_blank">published version</a>. It can be stable or pre-release. Pre-release versions contain hotfixes and new features for early testing.
 
-    npm install devextreme-dist@26.1-next --save --save-exact
+    npm install devextreme-dist@26.2-next --save --save-exact
 
 [note] We recommend saving an exact version of DevExtreme to avoid unexpected updates because DevExtreme does not use Semantic Versioning. For more information about DevExtreme version nomenclature, refer to the following topic: [DevExtreme Versions](/concepts/Common/DevExtreme%20Versions/00%20DevExtreme%20Versions.md '/Documentation/Guide/Common/DevExtreme_Versions/').
 
@@ -22,15 +22,15 @@ You can use **npm** to deliver DevExtreme to an Angular application. The followi
 
 Install the latest stable version:
 
-    npm install devextreme@26.1 --save --save-exact
+    npm install devextreme@26.2 --save --save-exact
 
-    npm install devextreme-angular@26.1 --save --save-exact
+    npm install devextreme-angular@26.2 --save --save-exact
 
 Install the latest <a href="https://github.com/DevExpress/DevExtreme/releases" target="_blank">published version</a>. It can be stable or pre-release. Pre-release versions contain hotfixes and new features for early testing.
 
-    npm install devextreme@26.1-next --save --save-exact
+    npm install devextreme@26.2-next --save --save-exact
 
-    npm install devextreme-angular@26.1-next --save --save-exact
+    npm install devextreme-angular@26.2-next --save --save-exact
 
 [note] We recommend saving an exact version of DevExtreme to avoid unexpected updates because DevExtreme does not use Semantic Versioning. For more information about DevExtreme version nomenclature, refer to the following topic: [DevExtreme Versions](/concepts/Common/DevExtreme%20Versions/00%20DevExtreme%20Versions.md '/Documentation/Guide/Common/DevExtreme_Versions/').
 
@@ -46,15 +46,15 @@ You can use **npm** to deliver DevExtreme to a Vue application. The following pa
 
 Install the latest stable version:
 
-    npm install devextreme@26.1 --save --save-exact
+    npm install devextreme@26.2 --save --save-exact
 
-    npm install devextreme-vue@26.1 --save --save-exact
+    npm install devextreme-vue@26.2 --save --save-exact
 
 Install the latest <a href="https://github.com/DevExpress/DevExtreme/releases" target="_blank">published version</a>. It can be stable or pre-release. Pre-release versions contain hotfixes and new features for early testing.
 
-    npm install devextreme@26.1-next --save --save-exact
+    npm install devextreme@26.2-next --save --save-exact
 
-    npm install devextreme-vue@26.1-next --save --save-exact
+    npm install devextreme-vue@26.2-next --save --save-exact
 
 [note] We recommend saving an exact version of DevExtreme to avoid unexpected updates because DevExtreme does not use Semantic Versioning. For more information about DevExtreme version nomenclature, refer to the following topic: [DevExtreme Versions](/concepts/Common/DevExtreme%20Versions/00%20DevExtreme%20Versions.md '/Documentation/Guide/Common/DevExtreme_Versions/').
 
@@ -70,15 +70,15 @@ You can use **npm** to deliver DevExtreme to a React application. The following 
 
 Install the latest stable version:
 
-    npm install devextreme@26.1 --save --save-exact
+    npm install devextreme@26.2 --save --save-exact
 
-    npm install devextreme-react@26.1 --save --save-exact
+    npm install devextreme-react@26.2 --save --save-exact
 
 Install the latest <a href="https://github.com/DevExpress/DevExtreme/releases" target="_blank">published version</a>. It can be stable or pre-release. Pre-release versions contain hotfixes and new features for early testing.
 
-    npm install devextreme@26.1-next --save --save-exact
+    npm install devextreme@26.2-next --save --save-exact
 
-    npm install devextreme-react@26.1-next --save --save-exact
+    npm install devextreme-react@26.2-next --save --save-exact
 
 [note] We recommend saving an exact version of DevExtreme to avoid unexpected updates because DevExtreme does not use Semantic Versioning. For more information about DevExtreme version nomenclature, refer to the following topic: [DevExtreme Versions](/concepts/Common/DevExtreme%20Versions/00%20DevExtreme%20Versions.md '/Documentation/Guide/Common/DevExtreme_Versions/').
 

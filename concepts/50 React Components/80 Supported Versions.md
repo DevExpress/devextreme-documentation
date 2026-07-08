@@ -7,8 +7,8 @@ This topic lists the oldest supported versions of React for major DevExtreme rel
             <th>React</th>
         </tr>
         <tr>
-            <td>v26.1.x</td>
-            <td>react_version_26_1</td>
+            <td>v26.2.x</td>
+            <td>react_version_26_2</td>
         </tr>
         <tr>
             <td>v25.2.x</td>

@@ -1,4 +1,4 @@
-In addition to font icons, DevExtreme supplies the same icons in the SVG format. You can find SVG icons in the [DevExtreme repository](https://github.com/DevExpress/DevExtreme/tree/26_1/packages/devextreme-scss/images/icons) on GitHub.
+In addition to font icons, DevExtreme supplies the same icons in the SVG format. You can find SVG icons in the [DevExtreme repository](https://github.com/DevExpress/DevExtreme/tree/26_2/packages/devextreme-scss/images/icons) on GitHub.
 
 The following code uses SVG icons in the [Button](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Button/Icons/) UI component. The same technique can be used with any other UI component that has the [icon](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/icon.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#icon') property. 
 

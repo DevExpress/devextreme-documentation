@@ -3,36 +3,36 @@ Run the following commands:
 ---
 ##### jQuery
 
-    npm install devextreme-dist@26.1 --save --save-exact
+    npm install devextreme-dist@26.2 --save --save-exact
 
 ##### Angular
 
-    npm install devextreme@26.1 --save --save-exact
+    npm install devextreme@26.2 --save --save-exact
 
-    npm install devextreme-angular@26.1 --save --save-exact
+    npm install devextreme-angular@26.2 --save --save-exact
 
     // If the application is created using the DevExtreme CLI
-    npm install devextreme-themebuilder@26.1 --save --save-exact
+    npm install devextreme-themebuilder@26.2 --save --save-exact
     npm run build-themes
 
 ##### Vue
 
-    npm install devextreme@26.1 --save --save-exact
+    npm install devextreme@26.2 --save --save-exact
 
-    npm install devextreme-vue@26.1 --save --save-exact
+    npm install devextreme-vue@26.2 --save --save-exact
 
     // If the application is created using the DevExtreme CLI
-    npm install devextreme-themebuilder@26.1 --save --save-exact
+    npm install devextreme-themebuilder@26.2 --save --save-exact
     npm run build-themes
 
 ##### React
 
-    npm install devextreme@26.1 --save --save-exact
+    npm install devextreme@26.2 --save --save-exact
 
-    npm install devextreme-react@26.1 --save --save-exact
+    npm install devextreme-react@26.2 --save --save-exact
 
     // If the application is created using the DevExtreme CLI
-    npm install devextreme-themebuilder@26.1 --save --save-exact
+    npm install devextreme-themebuilder@26.2 --save --save-exact
     npm run build-themes
 
 ---

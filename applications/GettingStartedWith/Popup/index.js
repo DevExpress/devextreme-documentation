@@ -13,7 +13,7 @@ $(function () {
         contentTemplate: () => {
             const content = $("<div />");
             content.append(
-                $("<img />").attr("src", "/Content/images/doc/26_1/Common/dx-logo.png"),
+                $("<img />").attr("src", "/Content/images/doc/26_2/Common/dx-logo.png"),
                 $(popupText)
             );
             return content;

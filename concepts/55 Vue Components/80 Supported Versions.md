@@ -7,8 +7,8 @@ This topic lists the oldest supported versions of Vue for major DevExtreme relea
             <th>Vue</th>
         </tr>
         <tr>
-            <td>v26.1.x</td>
-            <td>vue_version_26_1</td>
+            <td>v26.2.x</td>
+            <td>vue_version_26_2</td>
         </tr>
         <tr>
             <td>v25.2.x</td>

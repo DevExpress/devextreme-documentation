@@ -5,11 +5,11 @@ You can use **Yarn** to install the <a href="https://www.npmjs.com/package/devex
 
 Install the latest stable version:
 
-    yarn add devextreme@26.1 --exact
+    yarn add devextreme@26.2 --exact
 
 Install the latest <a href="https://github.com/DevExpress/DevExtreme/releases" target="_blank">published version</a>. It can be stable or pre-release. Pre-release versions contain hotfixes and new features for early testing.
 
-    yarn add devextreme@26.1-next --exact
+    yarn add devextreme@26.2-next --exact
 
 [note] We recommend saving an exact version of DevExtreme to avoid unexpected updates because DevExtreme does not use Semantic Versioning. For more information about DevExtreme version nomenclature, refer to the following topic: [DevExtreme Versions](/concepts/Common/DevExtreme%20Versions/00%20DevExtreme%20Versions.md '/Documentation/Guide/Common/DevExtreme_Versions/').
 
@@ -22,15 +22,15 @@ You can use **Yarn** to install the following DevExtreme npm packages:
 
 Install the latest stable version:
 
-    yarn add devextreme@26.1 --exact
+    yarn add devextreme@26.2 --exact
 
-    yarn add devextreme-angular@26.1 --exact
+    yarn add devextreme-angular@26.2 --exact
 
 Install the latest <a href="https://github.com/DevExpress/DevExtreme/releases" target="_blank">published version</a>. It can be stable or pre-release. Pre-release versions contain hotfixes and new features for early testing.
 
-    yarn add devextreme@26.1-next --exact
+    yarn add devextreme@26.2-next --exact
 
-    yarn add devextreme-angular@26.1-next --exact 
+    yarn add devextreme-angular@26.2-next --exact 
 
 [note] We recommend saving an exact version of DevExtreme to avoid unexpected updates because DevExtreme does not use Semantic Versioning. For more information about DevExtreme version nomenclature, refer to the following topic: [DevExtreme Versions](/concepts/Common/DevExtreme%20Versions/00%20DevExtreme%20Versions.md '/Documentation/Guide/Common/DevExtreme_Versions/').
 
@@ -46,15 +46,15 @@ You can use **Yarn** to install the following DevExtreme npm packages:
 
 Install the latest stable version:
 
-    yarn add devextreme@26.1 --exact
+    yarn add devextreme@26.2 --exact
 
-    yarn add devextreme-vue@26.1 --exact
+    yarn add devextreme-vue@26.2 --exact
 
 Install the latest <a href="https://github.com/DevExpress/DevExtreme/releases" target="_blank">published version</a>. It can be stable or pre-release. Pre-release versions contain hotfixes and new features for early testing.
 
-    yarn add devextreme@26.1-next --exact
+    yarn add devextreme@26.2-next --exact
 
-    yarn add devextreme-vue@26.1-next --exact
+    yarn add devextreme-vue@26.2-next --exact
 
 [note] We recommend saving an exact version of DevExtreme to avoid unexpected updates because DevExtreme does not use Semantic Versioning. For more information about DevExtreme version nomenclature, refer to the following topic: [DevExtreme Versions](/concepts/Common/DevExtreme%20Versions/00%20DevExtreme%20Versions.md '/Documentation/Guide/Common/DevExtreme_Versions/').
 
@@ -70,15 +70,15 @@ You can use **Yarn** to install the following DevExtreme npm packages:
 
 Install the latest stable version:
 
-    yarn add devextreme@26.1 --exact
+    yarn add devextreme@26.2 --exact
 
-    yarn add devextreme-react@26.1 --exact
+    yarn add devextreme-react@26.2 --exact
 
 Install the latest <a href="https://github.com/DevExpress/DevExtreme/releases" target="_blank">published version</a>. It can be stable or pre-release. Pre-release versions contain hotfixes and new features for early testing.
 
-    yarn add devextreme@26.1-next --exact
+    yarn add devextreme@26.2-next --exact
 
-    yarn add devextreme-react@26.1-next --exact
+    yarn add devextreme-react@26.2-next --exact
 
 [note] We recommend saving an exact version of DevExtreme to avoid unexpected updates because DevExtreme does not use Semantic Versioning. For more information about DevExtreme version nomenclature, refer to the following topic: [DevExtreme Versions](/concepts/Common/DevExtreme%20Versions/00%20DevExtreme%20Versions.md '/Documentation/Guide/Common/DevExtreme_Versions/').
 

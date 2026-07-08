@@ -1,1 +1,1 @@
-This article covers changes introduced to DevExtreme in the v26.1 release cycle.
+This article covers changes introduced to DevExtreme in the v26.2 release cycle.

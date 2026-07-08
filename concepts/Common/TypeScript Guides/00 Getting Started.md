@@ -31,7 +31,7 @@ To access specific type definitions, use the `DevExpress` namespace:
     const handleDataGridInit = (e: DevExpress.ui.dxDataGrid.InitializedEvent) => { /* ... */ };
 
 #####See Also#####
-- [DevExtreme Modules Structure](/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/)
-- [TypeScript Guides - Scopes of Types](/Documentation/Guide/Common/TypeScript_Guides/Scopes_of_Types/)
+- [DevExtreme Modules Structure](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/')
+- [TypeScript Guides - Scopes of Types](/concepts/Common/TypeScript%20Guides/05%20Scopes%20of%20Types/00%20Scopes%20of%20Types.md '/Documentation/Guide/Common/TypeScript_Guides/Scopes_of_Types/')
 
 [tags] jquery

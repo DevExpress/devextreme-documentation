@@ -1,100 +1,85 @@
-The **sorting**.[mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/sorting/mode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/sorting/#mode') property specifies whether users can sort records by single or multiple columns. This tutorial uses the default sorting mode - single. 
+#include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/TreeList/Sorting/", name: "TreeList - Sorting" }
 
-You can also set a column's [sortOrder](/api-reference/_hidden/GridBaseColumn/sortOrder.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#sortOrder') and [sortIndex](/api-reference/_hidden/GridBaseColumn/sortIndex.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#sortIndex') properties to specify the initial sort settings. **sortIndex** applies only in multiple sorting mode.
+The **sorting**.[mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/sorting/mode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/sorting/#mode') property specifies whether users can sort grid records against single or multiple columns.
+
+You can also set a column's [sortOrder](/api-reference/_hidden/GridBaseColumn/sortOrder.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#sortOrder') and [sortIndex](/api-reference/_hidden/GridBaseColumn/sortIndex.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#sortIndex') properties to specify initial sorting settings. [sortIndex](/api-reference/_hidden/GridBaseColumn/sortIndex.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#sortIndex') applies only in multi-column sort mode.
+
+To sort data and change sort orders in the UI, click column headers. Hold **Shift** and click to sort data against multiple columns.
 
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
-    $(function() {
-        $("#treeList").dxTreeList({
-            // ...
-            columns: [{
-                dataField: "State",
-                sortOrder: "asc",
-            },
-            // ...
-            ],
-            // sorting: { mode: "single" },
-        });
+    $("#treeList").dxTreeList({
+        sorting: { mode: "multiple" },
+        columns: [{
+            dataField: "State",
+            sortOrder: "asc",
+        }, /* ... */ ],
+        // ...
     });
+
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().TreeList<Employee>()
+        .Sorting(s => s.Mode(GridSortingMode.Multiple))
+        .Columns(columns => {
+            columns.AddFor(m => m.State)
+                .SortOrder(SortOrder.Asc);
+        })
+        @* ... *@
+    )
 
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-tree-list ... >
-        <!-- ... -->
+    <dx-tree-list>
+        <dxo-tree-list-sorting mode="multiple"></dxo-sorting>
         <dxi-tree-list-column
             dataField="State"
-            sortOrder="asc">
-        </dxi-tree-list-column>
-        <!-- <dxo-sorting [mode]="single"></dxo-sorting> -->
+            sortOrder="asc"
+        ></dxi-tree-list-column>
+        <!-- ... -->
     </dx-tree-list>
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app-container">
-            <DxTreeList ... >
-                <!-- ... -->
-                <DxColumn
-                    data-field="State"
-                    sort-order="asc">
-                </DxColumn>
-                <!-- <DxSorting mode="single" /> -->
-            </DxTreeList>
-        </div>
+        <DxTreeList ... >
+            <DxSorting mode="multiple" />
+            <DxColumn
+                data-field="State"
+                sort-order="asc"
+            />
+            <!-- ... -->
+        </DxTreeList>
     </template>
 
-    <script>
-    import {
-        DxTreeList,
-        DxColumn,
-        // ...
-        // DxSorting
-    } from 'devextreme-vue/tree-list';
+    <script setup lang="ts">
+    import { DxTreeList, DxSorting, DxColumn } from 'devextreme-vue/tree-list';
 
-    export default {
-        components: {
-            DxTreeList,
-            DxColumn,
-            // ...
-            // DxSorting
-        },
-        // ...
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import {
-        TreeList,
-        Column,
-        // ...
-        // Sorting
-    } from 'devextreme-react/tree-list';
+    <!-- tab: App.tsx -->
+    import { TreeList, Sorting, Column } from 'devextreme-react/tree-list';
 
     function App() {
         return (
             <div className="App">
                 <TreeList ... >
-                    {/* ... */}
+                    <Sorting mode="multiple" />
                     <Column
                         dataField="State"
-                        sortOrder="asc">
-                    </Column>
-                    {/* <Sorting mode="single" /> */}
+                        sortOrder="asc"
+                    />
+                    {/* ... */}
                 </TreeList>
             </div>
         );
     }
-
-    export default App;
-
 
 ---

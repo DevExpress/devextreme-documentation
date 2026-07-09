@@ -3,10 +3,6 @@
   position: relative;
 }
 
-#treeList {
-  height: 500px;
-}
-
 #selected-employee {
   position: absolute;
   left: 50%;

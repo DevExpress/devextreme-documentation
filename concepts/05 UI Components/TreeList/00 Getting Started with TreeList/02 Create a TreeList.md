@@ -3,6 +3,23 @@
 
 [Add DevExtreme to your jQuery application](/concepts/58%20jQuery%20Components/05%20Add%20DevExtreme%20to%20a%20jQuery%20Application/00%20Add%20DevExtreme%20to%20a%20jQuery%20Application.md '/Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/') and use the following code to create a TreeList:
 
+##### Angular
+
+[Add DevExtreme to your Angular application](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/') and use the following code to create a TreeList:
+
+##### Vue
+
+[Add DevExtreme to your Vue application](/concepts/55%20Vue%20Components/05%20Add%20DevExtreme%20to%20a%20Vue%20Application/00%20Add%20DevExtreme%20to%20a%20Vue%20Application.md '/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/') and use the following code to create a TreeList:
+
+##### React
+
+[Add DevExtreme to your React application](/concepts/50%20React%20Components/05%20Add%20DevExtreme%20to%20a%20React%20Application/00%20Add%20DevExtreme%20to%20a%20React%20Application.md '/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/') and use the following code to create a TreeList:
+
+---
+
+---
+##### jQuery
+
     <!-- tab: index.js -->
     $(function() {
         $("#treeList").dxTreeList({
@@ -27,14 +44,14 @@
         </body>
     </html>
 
-    <!-- tab: index.css -->
-    #treeList {
-        height: 500px;
-    }
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().TreeList()
+        .ID("tree-list")
+    )
 
 ##### Angular
-
-[Add DevExtreme to your Angular application](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/') and use the following code to create a TreeList:
 
     <!-- tab: app.component.html -->
     <dx-tree-list id="treeList"
@@ -74,50 +91,28 @@
     })
     export class AppModule { }
 
-    <!-- tab: app.component.css -->
-    #treeList {
-        height: 500px;
-    }
-
 ##### Vue
-
-[Add DevExtreme to your Vue application](/concepts/55%20Vue%20Components/05%20Add%20DevExtreme%20to%20a%20Vue%20Application/00%20Add%20DevExtreme%20to%20a%20Vue%20Application.md '/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/') and use the following code to create a TreeList:
 
     <!-- tab: App.vue -->
     <template>
         <div id="app-container">
-            <DxTreeList id="treeList">
-                <!-- Configuration goes here -->
-            </DxTreeList>
+            <DxTreeList
+                id="treeList"
+            />
         </div>
     </template>
 
-    <script>
+    <script setup lang="ts">
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import { DxTreeList } from 'devextreme-vue/tree-list';
 
-    export default {
-        components: {
-            DxTreeList
-        }
-    }
     </script>
-
-    <style>
-    #treeList {
-        height: 500px;
-    }
-    </style>
 
 ##### React
 
-[Add DevExtreme to your React application](/concepts/50%20React%20Components/05%20Add%20DevExtreme%20to%20a%20React%20Application/00%20Add%20DevExtreme%20to%20a%20React%20Application.md '/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/') and use the following code to create a TreeList:
-
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import { TreeList } from 'devextreme-react/tree-list';
 
     function App() {
@@ -131,10 +126,5 @@
     }
 
     export default App;
-
-    <!-- tab: App.css -->
-    #treeList {
-        height: 500px;
-    }
 
 ---

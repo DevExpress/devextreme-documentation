@@ -13,7 +13,7 @@ The following examples add `greetingMessage` to English and German dictionaries.
                 "greetingMessage": "Good morning, {0}!"
             },
             "de": {
-                "greetingMessage": "Guten morgen, {0}!"
+                "greetingMessage": "Guten Morgen, {0}!"
             }
         });
         DevExpress.localization.locale(navigator.language);
@@ -44,7 +44,7 @@ The following examples add `greetingMessage` to English and German dictionaries.
                     'greetingMessage': 'Good morning, {0}!'
                 },
                 'de': {
-                    'greetingMessage': 'Guten morgen, {0}!'
+                    'greetingMessage': 'Guten Morgen, {0}!'
                 }
             });
             locale('de');
@@ -74,7 +74,7 @@ The following examples add `greetingMessage` to English and German dictionaries.
             'greetingMessage': 'Good morning, {0}!'
         },
         'de': {
-            'greetingMessage': 'Guten morgen, {0}!'
+            'greetingMessage': 'Guten Morgen, {0}!'
         }
     });
     locale('de');
@@ -93,7 +93,7 @@ The following examples add `greetingMessage` to English and German dictionaries.
             'greetingMessage': 'Good morning, {0}!'
         },
         'de': {
-            'greetingMessage': 'Guten morgen, {0}!'
+            'greetingMessage': 'Guten Morgen, {0}!'
         }
     });
     locale('de');

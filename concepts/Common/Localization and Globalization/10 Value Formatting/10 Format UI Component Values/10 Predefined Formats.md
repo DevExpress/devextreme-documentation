@@ -119,3 +119,7 @@ Set the **format** UI component property to apply a predefined format. In the fo
 ---
 
 The previous example assigns an object to the **format** property, which allows you to specify `precision`. You can assign a string literal to **format** if additional options are not required.
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/NumberBox/Formatting/"
+}

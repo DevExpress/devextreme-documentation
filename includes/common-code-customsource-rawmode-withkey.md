@@ -2,29 +2,29 @@
 ---
 ##### jQuery
 
-    <!--JavaScript-->$(function() {
-        $("#{widgetName}Container").dx{WidgetName}({
-            dataSource: new DevExpress.data.DataSource({
-                store: new DevExpress.data.CustomStore({
-                    key: "ID",
-                    loadMode: "raw",   
-                    load: function () {
-                        return $.getJSON('https://mydomain.com/MyDataService');
-                    }
-                })
-            })
-        });
+    <!-- tab: index.js -->
+    $("#{widgetName}Container").dx{WidgetName}({
+        dataSource: new DevExpress.data.DataSource({
+            store: new DevExpress.data.CustomStore({
+                key: "ID",
+                loadMode: "raw",
+                load: function () {
+                    return $.getJSON('https://mydomain.com/MyDataService');
+                }
+            }),
+            paginate: false,
+        })
     });
 
 ##### Angular
 
-    <!--TypeScript-->
-    import { ..., Inject } from "@angular/core";
-    import { HttpClient, HttpClientModule } from "@angular/common/http";
-    import { Dx{WidgetName}Module } from "devextreme-angular";
+    <!-- tab: app.component.ts -->
+    import { Component, Inject } from "@angular/core";
+    import { HttpClient } from "@angular/common/http";
     import DataSource from "devextreme/data/data_source";
     import CustomStore from "devextreme/data/custom_store";
-    import { lastValueFrom } from 'rxjs';
+    import { lastValueFrom } from "rxjs";
+
     // ...
     export class AppComponent {
         {widgetName}DataSource: any = {};
@@ -32,14 +32,26 @@
             this.{widgetName}DataSource = new DataSource({
                 store: new CustomStore({
                     key: "ID",
-                    loadMode: "raw",   
+                    loadMode: "raw",
                     load: () => {
-                        return lastValueFrom(httpClient.get('http://mydomain.com/MyDataService'));
+                        return lastValueFrom(httpClient.get('https://mydomain.com/MyDataService'));
                     }
-                })
+                }),
+                paginate: false,
             });
         }
     }
+
+    <!-- tab: app.component.html -->
+    <dx-{widget-name}
+        [dataSource]="{widgetName}DataSource"
+    ></dx-{widget-name}>
+
+    <!-- tab: app.module.ts -->
+    import { NgModule } from "@angular/core";
+    import { HttpClientModule } from "@angular/common/http";
+    import { Dx{WidgetName}Module } from "devextreme-angular";
+
     @NgModule({
         imports: [
             // ...
@@ -49,83 +61,69 @@
         // ...
     })
 
-    <!--HTML--><dx-{widget-name} ...
-        [dataSource]="{widgetName}DataSource">
-    </dx-{widget-name}>
+##### Vue
 
-#####Vue
-
+    <!-- tab: App.vue -->
     <template>
-        <Dx{WidgetName} ... 
-            :data-source="dataSource" />
+        <Dx{WidgetName} :data-source="{widgetName}DataSource" />
     </template>
-    <script>
+
+    <script setup lang="ts">
     import { Dx{WidgetName} } from "devextreme-vue/{widget-name}";
     import CustomStore from "devextreme/data/custom_store";
     import DataSource from "devextreme/data/data_source";
-    import 'whatwg-fetch';
-    // ...
+    import "whatwg-fetch";
+
     function handleErrors(response) {
         if (!response.ok)
             throw Error(response.statusText);
         return response;
     }
+
     const {widgetName}DataSource = new DataSource({
         store: new CustomStore({
             key: "ID",
-            loadMode: "raw",   
+            loadMode: "raw",
             load: () => {
                 return fetch("https://mydomain.com/MyDataService")
-                        .then(handleErrors);
+                    .then(handleErrors);
             }
-        })
+        }),
+        paginate: false,
     });
-    export default {
-        // ...
-        data() {
-            return {
-                dataSource: {widgetName}DataSource
-            };
-        },
-        components: {
-            // ...
-            Dx{WidgetName}
-        }
-    }
     </script>
 
-#####React
+##### React
 
+    <!-- tab: App.tsx -->
     import React from "react";
-    import {WidgetName} from "devextreme-react/{widget-name}";
+    import { {WidgetName} } from "devextreme-react/{widget-name}";
     import CustomStore from "devextreme/data/custom_store";
     import DataSource from "devextreme/data/data_source";
-    import 'whatwg-fetch';
-    // ...
+    import "whatwg-fetch";
+
     function handleErrors(response) {
         if (!response.ok)
             throw Error(response.statusText);
         return response;
     }
+
     const {widgetName}DataSource = new DataSource({
         store: new CustomStore({
             key: "ID",
-            loadMode: "raw",   
+            loadMode: "raw",
             load: () => {
                 return fetch("https://mydomain.com/MyDataService")
-                        .then(handleErrors);
+                    .then(handleErrors);
             }
-        })
+        }),
+        paginate: false,
     });
-    class App extends React.Component {
-        render() {
-            return (
-                <{WidgetName} ...
-                    dataSource={{widgetName}DataSource}>
-                </{WidgetName}>
-            );
-        }
+
+    function App() {
+        return (
+            <{WidgetName} dataSource={{widgetName}DataSource} />
+        );
     }
-    export default App;
 
 ---

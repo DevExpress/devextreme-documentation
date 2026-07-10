@@ -4,31 +4,31 @@ Use the [registerKeyHandler(key, handler)](/api-reference/10%20UI%20Widgets/Widg
 
 ##### jQuery
 
-    <!--JavaScript-->
-    function registerKeyHandlers () {
-        const {widgetName} = $("#{widgetName}Container").dx{WidgetName}("instance");
-        {widgetName}.registerKeyHandler("backspace", function(e) {
-            // The argument "e" contains information on the event
-        });
-        {widgetName}.registerKeyHandler("space", function(e) {
-            // ...
-        });
-    }
+    <!-- tab: index.js -->
+    const {widgetName} = $('#{widgetName}Container').dx{WidgetName}('instance');
+
+    {widgetName}.registerKeyHandler('backspace', function(e) {
+        // The argument 'e' contains information about the event
+    });
+    {widgetName}.registerKeyHandler('space', function(e) {
+        // ...
+    });
 
 ##### Angular
 
-    <!--TypeScript-->
-    import { ..., ViewChild, AfterViewInit } from '@angular/core';
+    <!-- tab: app.component.ts -->
+    import { ViewChild, AfterViewInit } from '@angular/core';
     import { Dx{WidgetName}Module, Dx{WidgetName}Component } from 'devextreme-angular';
+
     // ...
     export class AppComponent implements AfterViewInit {
-        @ViewChild(Dx{WidgetName}Component, { static: false }) {widgetName}: Dx{WidgetName}Component;
+        @ViewChild(Dx{WidgetName}Component, { static: false }) {widgetName}!: Dx{WidgetName}Component;
         // Prior to Angular 8
         // @ViewChild(Dx{WidgetName}Component) {widgetName}: Dx{WidgetName}Component;
 
         ngAfterViewInit () {
             this.{widgetName}.instance.registerKeyHandler('backspace', function(e) {
-                // The argument "e" contains information on the event
+                // The argument "e" contains information about the event
             });
             this.{widgetName}.instance.registerKeyHandler('space', function(e) {
                 // ...
@@ -37,84 +37,55 @@ Use the [registerKeyHandler(key, handler)](/api-reference/10%20UI%20Widgets/Widg
     }
     @NgModule({
         imports: [
-            // ...
-            Dx{WidgetName}Module
+            Dx{WidgetName}Module,
         ],
-        // ...
     })
 
 ##### Vue
 
     <template>
-        <Dx{WidgetName} :ref="my{WidgetName}Ref" />
+        <Dx{WidgetName} :ref="{widgetName}Ref" />
     </template>
-    <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
+    <script setup lang="ts">
+    import { onMounted, ref } from 'vue';
+    import { Dx{WidgetName} } from 'devextreme-vue/{widget-name}';
 
-    const my{WidgetName}Ref = 'my-{widget-name}';
+    const {widgetName}Ref = ref(null);
 
-    export default {
-        components: {
-            Dx{WidgetName}
-        },
-        data() {
-            return {
-                my{WidgetName}Ref
-            }
-        },
-        computed: {
-            {widgetName}: function() {
-                return this.$refs[my{WidgetName}Ref].instance;
-            }
-        },
-        mounted: function() {
-            this.{widgetName}.registerKeyHandler('backspace', function(e) {
-                // The argument "e" contains information on the event
-            });
-            this.{widgetName}.registerKeyHandler('space', function(e) {
-                // ...
-            });
-        }
-    }
+    onMounted(() => {
+        {widgetName}Ref.value.instance.registerKeyHandler('backspace', function(e) {
+            // The argument "e" contains information about the event
+        });
+        {widgetName}Ref.value.instance.registerKeyHandler('space', function(e) {
+            // ...
+        });
+    })
+
     </script>
 
 ##### React
 
-    <!--tab: App.js-->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-    
+    <!-- tab: App.tsx -->
+    import React, { useRef, useEffect } from 'react';
     import { {WidgetName} } from 'devextreme-react/{widget-name}';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
+    function App() {
+        const {widgetName}Ref = useRef(null);
 
-            this.{widgetName}Ref = React.createRef();
-        }
-
-        render() {
-            return (
-                <{WidgetName} ref={this.{widgetName}Ref} />
-            );
-        }
-
-        get {widgetName}() {
-            return this.{widgetName}Ref.current.instance();
-        }
-
-        componentDidMount() {
-            this.{widgetName}.registerKeyHandler('backspace', function(e) {
-                // The argument "e" contains information on the event
+        useEffect(() => {
+            const {widgetName} = {widgetName}Ref.current.instance();
+            {widgetName}.registerKeyHandler('backspace', function(e) {
+                // The argument "e" contains information about the event
             });
-            this.{widgetName}.registerKeyHandler('space', function(e) {
+            {widgetName}.registerKeyHandler('space', function(e) {
                 // ...
             });
-        }
-    }
+        }, []);
 
-    export default App;
+        return (
+            <{WidgetName} ref={{widgetName}Ref} />
+        );
+    }
 
 ---

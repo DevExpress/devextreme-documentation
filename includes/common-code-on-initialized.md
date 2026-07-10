@@ -1,23 +1,48 @@
+
 ---
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-{widget-name} ...
-        (onInitialized)="saveInstance($event)">
-    </dx-{widget-name}>
+    <dx-{widget-name}
+        (onInitialized)="saveInstance($event)"
+    ></dx-{widget-name}>
 
     <!-- tab: app.component.ts -->
     import { Component } from "@angular/core";
-    import {WidgetName} from "devextreme/ui/data_grid";
+    import { type Dx{WidgetName}Types } from 'devextreme-angular/ui/{widget-name}';
+    import dx{WidgetName} from "devextreme/ui/{widget_name}";
+
     // ...
     export class AppComponent {
-        {widgetName}Instance: {WidgetName};
-        saveInstance (e) {
-            this.{widgetName}Instance = e.component;
+        {widgetName}Instance!: dx{WidgetName};
+
+        saveInstance(e: Dx{WidgetName}Types.InitializedEvent): void {
+            if (e.component)
+                this.{widgetName}Instance = e.component;
         }
     }
 
 ##### Vue
+
+    <!-- tab: App.vue (Composition API) -->
+    <template>
+        <div>
+            <Dx{WidgetName} @initialized="saveInstance" />
+        </div>
+    </template>
+
+    <script setup lang="ts">
+    import { ref } from 'vue';
+    import { Dx{WidgetName}, type Dx{WidgetName}Types } from 'devextreme-vue/{widget-name}';
+    import dx{WidgetName} from "devextreme/ui/{widget_name}";
+
+    const {widgetName}Ref = ref<dx{WidgetName}>();
+ 
+    function saveInstance(e: Dx{WidgetName}Types.InitializedEvent) => {
+        if (e.component)
+            {widgetName}Ref.value = e.component;
+    }
+    </script>
 
     <!-- tab: App.vue (Options API) -->
     <template>
@@ -48,48 +73,25 @@
     };
     </script>
 
-    <!-- tab: App.vue (Composition API) -->
-    <template>
-        <div>
-            <Dx{WidgetName} ...
-                @initialized="saveInstance">
-            </Dx{WidgetName}>
-        </div>
-    </template>
-
-    <script setup>
-    import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
-
-    let {widgetName}Instance = null;
- 
-    const saveInstance = (e) => {
-        {widgetName}Instance = e.component;
-    }
-    </script>
-
 ##### React
 
-    <!-- tab: App.js -->
-    import {WidgetName} from 'devextreme-react/{widget-name}';
+    <!-- tab: App.tsx -->
+    import { useCallback, useRef } from 'react';
+    import { {WidgetName}, type {WidgetName}Types } from 'devextreme-react/{widget-name}';
+    import dx{WidgetName} from "devextreme/ui/{widget_name}";
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            
-            this.saveInstance = this.saveInstance.bind(this);
-        }
+    function App(): JSX.Element {
+        const {widgetName}Ref = useRef<dx{WidgetName}>();
 
-        saveInstance(e) {
-            this.{widgetName}Instance = e.component;
-        }
+        const saveInstance = useCallback((e: {WidgetName}Types.InitializedEvent) => {
+            {widgetName}Ref.current = e.component;
+        }, []);
 
-        render() {
-            return (
-                <div>
-                    <{WidgetName} onInitialized={this.saveInstance} />
-                </div>
-            );
-        }
+        return (
+            <div>
+                <{WidgetName} onInitialized={saveInstance} />
+            </div>
+        );
     }
 
 ---

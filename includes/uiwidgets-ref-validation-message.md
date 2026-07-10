@@ -1,52 +1,40 @@
-An error message can be specified as follows:
+You can configure an error message as follows:
 
-- **Hard-code the message** 
+- Hard-code a message:
 
     ---
     ##### jQuery
 
         <!-- tab: index.js -->
-        $(function() {
-            $("#textBox").dxTextBox({ ... })
-                .dxValidator({
-                    type: "${{ruleType}}",
-                    message: "My custom message"
-                });
+        $("#textBox").dxTextBox({
+            // ...
+        }).dxValidator({
+            type: "${{ruleType}}",
+            message: "My custom message"
         });
 
     ##### Angular
 
         <!-- tab: app.component.html -->
-        <dx-text-box> 
+        <dx-text-box>
             <dx-validator>
-                <dxi-validator-validation-rule 
-                    type="${{ruleType}}" 
+                <dxi-validator-validation-rule
+                    type="${{ruleType}}"
                     message="My custom message">
                 </dxi-validator-validation-rule>
             </dx-validator>
         </dx-text-box>
 
         <!-- tab: app.module.ts -->
-        import { BrowserModule } from '@angular/platform-browser';
-        import { NgModule } from '@angular/core';
-        import { AppComponent } from './app.component';
-
-        import { DxValidatorModule,
-                 DxTextBoxModule } from 'devextreme-angular';
+        import { DxValidatorModule, DxTextBoxModule } from 'devextreme-angular';
+        // ...
 
         @NgModule({
-            declarations: [
-                AppComponent
-            ],
             imports: [
                 DxTextBoxModule,
-                BrowserModule,
-                DxValidatorModule
+                DxValidatorModule,
             ],
-            providers: [],
-            bootstrap: [AppComponent]
         })
-        export class AppModule { }
 
     ##### Vue
 
@@ -61,65 +49,43 @@ An error message can be specified as follows:
             </DxTextBox>
         </template>
 
-        <script>
-        import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
+        <script setup lang="ts">
         import { DxTextBox } from 'devextreme-vue/text-box';
-        import {
-            DxValidator,
-            Dx${{ruleTypeUpperCase}}Rule
-        } from 'devextreme-vue/validator';
+        import { DxValidator, Dx${{ruleTypeUpperCase}}Rule } from 'devextreme-vue/validator';
 
-        export default {
-            components: {
-                DxTextBox,
-                DxValidator,
-                Dx${{ruleTypeUpperCase}}Rule
-            }
-        }
         </script>
 
     ##### React
 
-        <!-- tab: App.js -->
-        import React from 'react';
-
-        import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
+        <!-- tab: App.tsx -->
         import { TextBox } from 'devextreme-react/text-box';
-        import {
-            Validator,
-            ${{ruleTypeUpperCase}}Rule
-        } from 'devextreme-react/validator';
+        import { Validator, ${{ruleTypeUpperCase}}Rule } from 'devextreme-react/validator';
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <TextBox>
-                        <Validator>
-                            <${{ruleTypeUpperCase}}Rule
-                                message="My custom message" />
-                        </Validator>
-                    </TextBox>
-                );
-            }
+        function App() {
+            return (
+                <TextBox>
+                    <Validator>
+                        <${{ruleTypeUpperCase}}Rule
+                            message="My custom message"
+                        />
+                    </Validator>
+                </TextBox>
+            );
         }
-        export default App;
 
     ---
 
-- **Hide the message**
+- Hide the message:
 
     ---
     ##### jQuery
 
         <!-- tab: index.js -->
-        $(function() {
-            $("#textBox").dxTextBox({ ... })
-                .dxValidator({
-                    type: "${{ruleType}}",
-                    message: ""
-                });
+        $("#textBox").dxTextBox({
+            // ...
+        }).dxValidator({
+            type: "${{ruleType}}",
+            message: ""
         });
 
     ##### Angular
@@ -127,34 +93,12 @@ An error message can be specified as follows:
         <!-- tab: app.component.html -->
         <dx-text-box>
             <dx-validator>
-                <dxi-validator-validation-rule 
-                    type="${{ruleType}}" 
+                <dxi-validator-validation-rule
+                    type="${{ruleType}}"
                     message="">
                 </dxi-validator-validation-rule>
             </dx-validator>
         </dx-text-box>
-
-        <!-- tab: app.module.ts -->
-        import { BrowserModule } from '@angular/platform-browser';
-        import { NgModule } from '@angular/core';
-        import { AppComponent } from './app.component';
-
-         import { DxValidatorModule,
-                  DxTextBoxModule } from 'devextreme-angular';
-
-        @NgModule({
-            declarations: [
-                AppComponent
-            ],
-            imports: [
-                BrowserModule,
-                DxValidatorModule,
-                DxTextBoxModule
-            ],
-            providers: [],
-            bootstrap: [AppComponent]
-        })
-        export class AppModule { }
 
     ##### Vue
 
@@ -169,158 +113,77 @@ An error message can be specified as follows:
             </DxTextBox>
         </template>
 
-        <script>
-        import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-        import { DxTextBox } from 'devextreme-vue/text-box';
-        import {
-            DxValidator,
-            Dx${{ruleTypeUpperCase}}Rule
-        } from 'devextreme-vue/validator';
-
-        export default {
-            components: {
-                DxTextBox,
-                DxValidator,
-                Dx${{ruleTypeUpperCase}}Rule
-            }
-        }
-        </script>
-
     ##### React
 
-        <!-- tab: App.js -->
-        import React from 'react';
-
-        import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
+        <!-- tab: App.tsx -->
         import { TextBox } from 'devextreme-react/text-box';
-        import {
-            Validator,
-            ${{ruleTypeUpperCase}}Rule
-        } from 'devextreme-react/validator';
+        import { Validator, ${{ruleTypeUpperCase}}Rule } from 'devextreme-react/validator';
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <TextBox>
-                        <Validator>
-                            <${{ruleTypeUpperCase}}Rule
-                                message="" />
-                        </Validator>
-                    </TextBox>
-                );
-            }
+        function App() {
+            return (
+                <TextBox>
+                    <Validator>
+                        <${{ruleTypeUpperCase}}Rule
+                            message=""
+                        />
+                    </Validator>
+                </TextBox>
+            );
         }
-        export default App;
 
     ---
 
-- **Display the editor's name in the message**
+- Display the editor's name in the default message (for instance, *"${{errorMessage}}"*):
 
     ---
     ##### jQuery
 
         <!-- tab: index.js -->
-        $(function() {
-            $("#textBox").dxTextBox({ ... })
-                .dxValidator({
-                    name: "${{editorName}}", // The error message will be "${{errorMessage}}"
-                    validationRules: [{
-                        type: "${{ruleType}}"
-                    }]
-                });
+        $("#textBox").dxTextBox({
+            // ...
+        }).dxValidator({
+            name: "${{editorName}}",
+            validationRules: [{
+                type: "${{ruleType}}",
+            }],
         });
 
     ##### Angular
 
         <!-- tab: app.component.html -->
         <dx-text-box>
-            <!-- The error message will be "${{errorMessage}}" -->
             <dx-validator name="${{editorName}}">
-                <dxi-validator-validation-rule 
-                    type="${{ruleType}}">
-                </dxi-validator-validation-rule>
+                <dxi-validator-validation-rule
+                    type="${{ruleType}}"
+                ></dxi-validator-validation-rule>
             </dx-validator>
         </dx-text-box>
-
-        <!-- tab: app.module.ts -->
-        import { BrowserModule } from '@angular/platform-browser';
-        import { NgModule } from '@angular/core';
-        import { AppComponent } from './app.component';
-
-        import { DxValidatorModule,
-                 DxTextBoxModule } from 'devextreme-angular';
-
-        @NgModule({
-            declarations: [
-                AppComponent
-            ],
-            imports: [
-                BrowserModule,
-                DxValidatorModule,
-                DxTextBoxModule
-            ],
-            providers: [],
-            bootstrap: [AppComponent]
-        })
-        export class AppModule { }
 
     ##### Vue
 
         <!-- tab: App.vue -->
         <template>
             <DxTextBox>
-                <!-- The error message will be "${{errorMessage}}" -->
                 <DxValidator name="${{editorName}}">
                     <Dx${{ruleTypeUpperCase}}Rule />
                 </DxValidator>
             </DxTextBox>
         </template>
 
-        <script>
-        import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-        import { DxTextBox } from 'devextreme-vue/text-box';
-        import {
-            DxValidator,
-            Dx${{ruleTypeUpperCase}}Rule
-        } from 'devextreme-vue/validator';
-
-        export default {
-            components: {
-                DxValidator,
-                Dx${{ruleTypeUpperCase}}Rule
-            }
-        }
-        </script>
-
     ##### React
 
-        <!-- tab: App.js -->
-        import React from 'react';
-
-        import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
+        <!-- tab: App.tsx -->
         import { TextBox } from 'devextreme-react/text-box';
-        import {
-            Validator,
-            ${{ruleTypeUpperCase}}Rule
-        } from 'devextreme-react/validator';
+        import { Validator, ${{ruleTypeUpperCase}}Rule } from 'devextreme-react/validator';
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <TextBox>
-                        {/* The error message will be "${{errorMessage}}" */}
-                        <Validator name="${{editorName}}">
-                            <${{ruleTypeUpperCase}}Rule />
-                        </Validator>
-                    </TextBox>
-                );
-            }
+        function App() {
+            return (
+                <TextBox>
+                    <Validator name="${{editorName}}">
+                        <${{ruleTypeUpperCase}}Rule />
+                    </Validator>
+                </TextBox>
+            );
         }
-        
-        export default App;
 
     ---

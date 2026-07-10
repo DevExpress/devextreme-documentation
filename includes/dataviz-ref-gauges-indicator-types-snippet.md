@@ -15,15 +15,15 @@
 
 ##### Angular
 
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-{widget-name} [value]="40">
         <dxo-{widget-name}-value-indicator <!-- or dxo-subvalue-indicator -->
-            type="${{indicatorTypeCamelCase}}"          
+            type="${{indicatorTypeCamelCase}}"
             <!-- The rest of the indicator properties go here -->
         ></dxo-{widget-name}-value-indicator>
     <dx-{widget-name}>
 
-    <!--TypeScript-->
+    <!-- tab: app.module.ts -->
     import { Dx{WidgetName}Module } from "devextreme-angular";
     // ...
     export class AppComponent {
@@ -45,49 +45,39 @@
             <DxValueIndicator <!-- or DxSubvalueIndicator -->
                 type="${{indicatorTypeCamelCase}}"
                 <!-- The rest of the indicator properties go here -->
-            /> 
+            />
         </Dx{WidgetName}>
     </template>
 
-    <script>
+    <script setup lang="ts">
     import Dx{WidgetName}, {
         DxValueIndicator
     } from 'devextreme-vue/{widget-name}';
-
-    export default {
-        components: {
-            Dx{WidgetName},
-            DxValueIndicator
-        }
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
 
-    import {WidgetName}, {
-        ValueIndicator
-    } from 'devextreme-react/{widget-name}';
+    import { {WidgetName}, ValueIndicator } from 'devextreme-react/{widget-name}';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <{WidgetName} value={40}>
-                    <ValueIndicator {/* or SubvalueIndicator */}                        
-                        type="${{indicatorTypeCamelCase}}"
-                        {/* The rest of the indicator properties go here */}
-                    />
-                </{WidgetName}>
-            );
-        }
+    function App() {
+        return (
+            <{WidgetName} value={40}>
+                <ValueIndicator {/* or SubvalueIndicator */}
+                    type="${{indicatorTypeCamelCase}}"
+                    {/* The rest of the indicator properties go here */}
+                />
+            </{WidgetName}>
+        );
     }
+
     export default App;
 
 ##### ASP.NET MVC Controls
-    
-    <!--Razor C#-->
+
+    <!-- tab: Razor C# -->
     @(Html.DevExtreme().{WidgetName}()
         .ID("{widgetName}")
         .Value(40)

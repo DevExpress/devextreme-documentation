@@ -99,7 +99,7 @@ TreeList can load and update data from different data source types. To use a loc
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
-    import { Employee, EmployeesService } from './employees.service';
+    import { EmployeesService, type Employee } from './employees.service';
 
     @Component({
         selector: 'app-root',
@@ -162,7 +162,6 @@ TreeList can load and update data from different data source types. To use a loc
     import { ref } from 'vue';
     import { DxTreeList } from 'devextreme-vue/tree-list'; 
     import { employeesService, type Employee } from '../employeesService';
-    import service from './employees.service';
 
     const employees = ref<Employee[]>(employeesService.getEmployees());
     </script>

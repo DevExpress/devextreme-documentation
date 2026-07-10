@@ -168,6 +168,7 @@
 ##### React
 
     <!-- tab: App.tsx -->
+    import React, { useCallback, useState } from 'react';
     import { TreeList, Toolbar, Item } from 'devextreme-react/tree-list';
     import { Button } from 'devextreme-react/button';
 

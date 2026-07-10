@@ -295,7 +295,7 @@ TreeList allows users to drag and drop rows to reorder records or modify the nod
 
     <!-- tab: App.tsx -->
     import React, { useCallback, useState } from 'react';
-    import { TreeList, RowDragging } from 'devextreme-react/tree-list';
+    import { TreeList, RowDragging, type TreeListTypes } from 'devextreme-react/tree-list';
     import { employeesService, type Employee } from './employeesService';
 
     function App() {

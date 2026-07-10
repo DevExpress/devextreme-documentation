@@ -35,7 +35,7 @@ To sort data and change sort orders in the UI, click column headers. Hold **Shif
 
     <!-- tab: app.component.html -->
     <dx-tree-list>
-        <dxo-tree-list-sorting mode="multiple"></dxo-sorting>
+        <dxo-tree-list-sorting mode="multiple"></dxo-tree-list-sorting>
         <dxi-tree-list-column
             dataField="State"
             sortOrder="asc"

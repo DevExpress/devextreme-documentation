@@ -10,7 +10,7 @@ TreeList can load data in pages. To configure pagination, set **paging**.[enable
         paging: {
             enabled: true,
             pageSize: 12,
-        }
+        },
         // ...
     });
 
@@ -64,7 +64,7 @@ TreeList can load data in pages. To configure pagination, set **paging**.[enable
             <TreeList>
                 <Paging
                     enabled={true}
-                    defaultPageSize={10} 
+                    defaultPageSize={12} 
                 />
                 {/* ... */}
             </TreeList>

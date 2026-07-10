@@ -27,15 +27,15 @@ The following code snippet also specifies [dataType](/api-reference/_hidden/Grid
     <!-- tab: Index.cshtml -->
     @(Html.DevExtreme().TreeList<Employee>()
         .Columns(columns => {
-            columns.AddFor(m => m.FullName)
-            columns.AddFor(m => m.Position)
+            columns.AddFor(m => m.FullName);
+            columns.AddFor(m => m.Position);
             columns.AddFor(m => m.BirthDate)
-                .DataType(GridColumnDataType.Date)
+                .DataType(GridColumnDataType.Date);
             columns.AddFor(m => m.HireDate)
-                .DataType(GridColumnDataType.Date)
+                .DataType(GridColumnDataType.Date);
             columns.AddFor(m => m.City);
-            columns.AddFor(m => m.State)
-            columns.AddFor(m => m.Email)
+            columns.AddFor(m => m.State);
+            columns.AddFor(m => m.Email);
             columns.AddFor(m => m.MobilePhone);
             columns.AddFor(m => m.Skype);
         })
@@ -68,7 +68,7 @@ The following code snippet also specifies [dataType](/api-reference/_hidden/Grid
     <!-- tab: App.vue -->
     <template>
         <DxTreeList :allow-column-reordering="true">
-            <DxColumn data-field="FullName"" />
+            <DxColumn data-field="FullName" />
             <DxColumn data-field="Position" />
             <DxColumn
                 data-field="BirthDate"

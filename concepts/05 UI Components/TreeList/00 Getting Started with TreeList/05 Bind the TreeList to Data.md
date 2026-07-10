@@ -200,10 +200,12 @@ TreeList can load and update data from different data source types. To use a loc
     import { employeesService, type Employee } from './employeesService';
 
     function App() {
+        const [currentEmployees, setCurrentEmployees] = useState<Employee[]>(employeesService.getEmployees());
+
         return (
             <div className="App">
                 <TreeList
-                    dataSource={employees}
+                    dataSource={currentEmployees}
                     rootValue={-1}
                     keyExpr="ID"
                     parentIdExpr="HeadID">

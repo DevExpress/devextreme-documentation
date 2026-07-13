@@ -85,20 +85,28 @@ TreeList allows users to drag and drop rows to reorder records or modify the nod
         }
 
         function handleReorder(e) {
-            const targetRow = e.component.getVisibleRows()[e.toIndex];
-            if (!targetRow) {
-                return;
+            const treeList = e.component;
+            const store = treeList.getDataSource().store();
+            const visibleRows = treeList.getVisibleRows();
+            const sourceData = e.itemData;
+            const targetData = visibleRows[e.toIndex].data;
+            const newOrderIndex = targetData.OrderIndex;
+            const d = $.Deferred();
+
+            if (e.dropInsideItem) {
+                store.update(sourceData.ID, { HeadID: targetData.ID }).then(function() {
+                    treeList.refresh().then(d.resolve, d.reject);
+                }, d.reject);
+            } else {
+                store.update(sourceData.ID, {
+                    OrderIndex: newOrderIndex,
+                    HeadID: targetData.HeadID,
+                }).then(function() {
+                    treeList.refresh().then(d.resolve, d.reject);
+                }, d.reject);
             }
 
-            e.promise = $.ajax({
-                url: '@Url.Action("Reorder", "EmployeeData")',
-                method: 'PUT',
-                data: {
-                    sourceId: e.itemData.ID,
-                    targetId: targetRow.data.ID,
-                    dropInside: !!e.dropInsideItem,
-                },
-            }).then(() => e.component.refresh());
+            e.promise = d.promise();
         }
     </script>
 
@@ -115,25 +123,36 @@ TreeList allows users to drag and drop rows to reorder records or modify the nod
     public class EmployeeDataController : Controller {
 
         [HttpPut]
-        public IActionResult Reorder(int sourceId, int targetId, bool dropInside) {
-            var employees = EmployeeData.Employees;
-            var source = employees.FirstOrDefault(e => e.ID == sourceId);
-            var target = employees.FirstOrDefault(e => e.ID == targetId);
-            if (source == null || target == null)
+        public IActionResult Update(int key, string values) {
+            var employee = EmployeeData.Employees.FirstOrDefault(e => e.ID == key);
+            if(employee == null)
                 return NotFound();
 
-            if (dropInside) {
-                employees.Remove(source);
-                source.HeadID = target.ID;
-                employees.Insert(employees.IndexOf(target) + 1, source);
-            } else {
-                var targetIndex = employees.IndexOf(target);
-                employees.Remove(source);
-                source.HeadID = target.HeadID;
-                employees.Insert(targetIndex, source);
+            var oldOrderIndex = employee.OrderIndex;
+
+            PopulateEmployee(employee, values);
+
+            var newOrderIndex = employee.OrderIndex;
+
+            if (oldOrderIndex != newOrderIndex) {
+                employee.OrderIndex = oldOrderIndex;
+                var sortedEmployees = EmployeeData.Employees
+                    .OrderBy(e => e.OrderIndex)
+                    .ToList();
+
+                if (oldOrderIndex < newOrderIndex) {
+                    for(var i = oldOrderIndex + 1; i <= newOrderIndex; i++) {
+                        sortedEmployees[i].OrderIndex--;
+                    }
+                } else {
+                    for(var i = newOrderIndex; i < oldOrderIndex; i++) {
+                        sortedEmployees[i].OrderIndex++;
+                    }
+                }
+                employee.OrderIndex = newOrderIndex;
             }
 
-            return Ok();
+            return Ok(employee);
         }
 
     }

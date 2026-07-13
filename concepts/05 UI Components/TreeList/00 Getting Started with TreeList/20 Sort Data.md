@@ -12,10 +12,6 @@ To sort data and change sort orders in the UI, click column headers. Hold **Shif
     <!-- tab: index.js -->
     $("#treeList").dxTreeList({
         sorting: { mode: "multiple" },
-        columns: [{
-            dataField: "State",
-            sortOrder: "asc",
-        }, /* ... */ ],
         // ...
     });
 
@@ -24,10 +20,6 @@ To sort data and change sort orders in the UI, click column headers. Hold **Shif
     <!-- tab: Index.cshtml -->
     @(Html.DevExtreme().TreeList<Employee>()
         .Sorting(s => s.Mode(GridSortingMode.Multiple))
-        .Columns(columns => {
-            columns.AddFor(m => m.State)
-                .SortOrder(SortOrder.Asc);
-        })
         @* ... *@
     )
 
@@ -36,10 +28,6 @@ To sort data and change sort orders in the UI, click column headers. Hold **Shif
     <!-- tab: app.component.html -->
     <dx-tree-list>
         <dxo-tree-list-sorting mode="multiple"></dxo-tree-list-sorting>
-        <dxi-tree-list-column
-            dataField="State"
-            sortOrder="asc"
-        ></dxi-tree-list-column>
         <!-- ... -->
     </dx-tree-list>
 
@@ -49,10 +37,6 @@ To sort data and change sort orders in the UI, click column headers. Hold **Shif
     <template>
         <DxTreeList ... >
             <DxSorting mode="multiple" />
-            <DxColumn
-                data-field="State"
-                sort-order="asc"
-            />
             <!-- ... -->
         </DxTreeList>
     </template>
@@ -72,10 +56,6 @@ To sort data and change sort orders in the UI, click column headers. Hold **Shif
             <div className="App">
                 <TreeList ... >
                     <Sorting mode="multiple" />
-                    <Column
-                        dataField="State"
-                        sortOrder="asc"
-                    />
                     {/* ... */}
                 </TreeList>
             </div>

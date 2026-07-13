@@ -56,7 +56,7 @@ TreeList can load and update data from different data source types. To use a loc
 
         [HttpGet]
         public object Get(DataSourceLoadOptions loadOptions) {
-            return DataSourceLoader.Load(EmployeeData.Employees, loadOptions);
+            return DataSourceLoader.Load(EmployeeData.Employees.OrderBy(e => e.OrderIndex), loadOptions);
         }
 
         // ...
@@ -77,6 +77,7 @@ TreeList can load and update data from different data source types. To use a loc
         public string MobilePhone { get; set; }
         public string BirthDate { get; set; }
         public string HireDate { get; set; }
+        public int OrderIndex { get; set; }
     }
 
     <!-- tab: EmployeeData.cs -->

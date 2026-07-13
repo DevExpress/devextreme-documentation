@@ -1,4 +1,4 @@
-A user can use the following keys to interact with the Toolbar component when [allowKeyboardNavigation](/api-reference/10%20UI%20Components/dxToolbar/1%20Configuration/#allowKeyboardNavigation) is set to `true`: 
+A user can use the following keys to interact with the Toolbar component when [allowKeyboardNavigation](/api-reference/10%20UI%20Components/dxToolbar/1%20Configuration/allowKeyboardNavigation.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#allowKeyboardNavigation') is set to `true`:
 
 <table class="dx-table">
     <tr>

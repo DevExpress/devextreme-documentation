@@ -5,7 +5,9 @@ default: true
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Specifies whether the Toolbar manages keyboard navigation between the items.
 
 ---
-<!-- Description goes here -->
+When this property is set to `true`, the Toolbar uses keyboard patterns that match [APG/W3C](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/) recommendations. Users can move focus between available items with arrow keys and with the `Home` and `End` keys. The `Tab` and `Shift+Tab` keys move focus into and out of the Toolbar.
+
+When this property is set to `false`, the Toolbar does not process item-to-item keyboard movement, and each focusable item participates in the page tab order according to its settings.

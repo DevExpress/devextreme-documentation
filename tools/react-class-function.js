@@ -8,7 +8,7 @@ const specifiedPath = process.argv[2];
 
 function convertToFunctionComponent(match, body) {
     const dedentedBody = body.replace(/^ {4}/gm, '');
-    return `function App() {\n        return (\n${dedentedBody}        );\n    }`;
+    return `export default App() {\n        return (\n${dedentedBody}        );\n    }`;
 }
 
 function processFile(filePath) {

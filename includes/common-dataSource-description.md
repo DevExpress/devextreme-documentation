@@ -39,7 +39,7 @@ Use one of the following extensions to enable the server to process data accordi
 
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
-        import CustomStore from 'devextreme/data/custom_store';
+        import { CustomStore } from 'devextreme-angular/common/data';
         import { createStore } from 'devextreme-aspnet-data-nojquery';
 
         // ...
@@ -90,7 +90,7 @@ Use one of the following extensions to enable the server to process data accordi
         </template>
 
         <script setup lang="ts">
-        import CustomStore from 'devextreme/data/custom_store';
+        import { CustomStore } from 'devextreme-vue/common/data';
         import { createStore } from 'devextreme-aspnet-data-nojquery';
         import { Dx{WidgetName} } from 'devextreme-vue/{widget-name}';
 
@@ -107,7 +107,7 @@ Use one of the following extensions to enable the server to process data accordi
     ##### React
 
         <!-- tab: App.tsx -->
-        import CustomStore from 'devextreme/data/custom_store';
+        import { CustomStore } from 'devextreme-react/common/data';
         import { createStore } from 'devextreme-aspnet-data-nojquery';
         import { {WidgetName} } from 'devextreme-react/{widget-name}';
 

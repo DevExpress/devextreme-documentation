@@ -20,13 +20,12 @@
     <!-- tab: app.component.ts -->
     import { Component, Inject } from "@angular/core";
     import { HttpClient } from "@angular/common/http";
-    import DataSource from "devextreme/data/data_source";
-    import CustomStore from "devextreme/data/custom_store";
+    import { DataSource, CustomStore } from "devextreme-angular/common/data";
     import { lastValueFrom } from "rxjs";
 
     // ...
     export class AppComponent {
-        {widgetName}DataSource: any = {};
+        {widgetName}DataSource: DataSource;
         constructor(@Inject(HttpClient) httpClient: HttpClient) {
             this.{widgetName}DataSource = new DataSource({
                 store: new CustomStore({
@@ -68,8 +67,7 @@
 
     <script setup lang="ts">
     import { Dx{WidgetName} } from "devextreme-vue/{widget-name}";
-    import CustomStore from "devextreme/data/custom_store";
-    import DataSource from "devextreme/data/data_source";
+    import { DataSource, CustomStore } from "devextreme-vue/common/data";
     import "whatwg-fetch";
 
     function handleErrors(response) {
@@ -95,8 +93,7 @@
     <!-- tab: App.tsx -->
     import React from "react";
     import { {WidgetName} } from "devextreme-react/{widget-name}";
-    import CustomStore from "devextreme/data/custom_store";
-    import DataSource from "devextreme/data/data_source";
+    import { DataSource, CustomStore } from "devextreme-react/common/data";
     import "whatwg-fetch";
 
     function handleErrors(response) {

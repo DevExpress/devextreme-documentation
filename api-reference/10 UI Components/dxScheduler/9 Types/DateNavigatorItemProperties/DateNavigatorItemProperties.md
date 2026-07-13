@@ -2,7 +2,7 @@
 id: DateNavigatorItemProperties
 module: ui/scheduler
 export: DateNavigatorItemProperties
-type: dxButtonGroup_Options | Object
+type: Object
 inherits: dxButtonGroup.Options
 generateTypeLink: 
 ---

@@ -15,10 +15,10 @@ A user can use the following keys to interact with the Toolbar component when [a
     </tr>
     <tr>
         <td>Left Arrow / Right Arrow</td>
-        <td>Moves focus to the previous or next available toolbar item.</td>
+        <td>Moves focus to the previous or next available Toolbar item.</td>
     </tr>
     <tr>
         <td>Home / End</td>
-        <td>Moves focus to the first or last available toolbar item.</td>
+        <td>Moves focus to the first or last available Toolbar item.</td>
     </tr>
 </table>

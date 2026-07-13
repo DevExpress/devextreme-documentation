@@ -17,7 +17,7 @@ Use the [registerKeyHandler(key, handler)](/api-reference/10%20UI%20Widgets/Widg
 ##### Angular
 
     <!-- tab: app.component.ts -->
-    import { ViewChild, AfterViewInit } from '@angular/core';
+    import { ViewChild, AfterViewInit, NgModule } from '@angular/core';
     import { Dx{WidgetName}Module, Dx{WidgetName}Component } from 'devextreme-angular';
 
     // ...

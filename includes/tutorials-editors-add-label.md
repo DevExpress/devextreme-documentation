@@ -28,7 +28,7 @@ To specify label text, define the [label](/Documentation/ApiReference/UI_Compone
     </template>
 
     <script setup lang="ts">
-    import { Dx{WidgetName} } from 'devextreme-vue/{widget-name}'
+    import { Dx{WidgetName} } from 'devextreme-vue/{widget-name}';
 
     </script>
 

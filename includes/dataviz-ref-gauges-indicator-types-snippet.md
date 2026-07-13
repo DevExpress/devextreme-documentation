@@ -6,10 +6,12 @@
     $(function() {
         $("#{widgetName}").dx{WidgetName}({
             value: 40,
-            valueIndicator: { // or subvalueIndicator
+            valueIndicator: {
                 type: "${{indicatorTypeCamelCase}}",
-                // The rest of the indicator properties go here
-            }
+            },
+            subvalueIndicator: {
+                type: "${{indicatorTypeCamelCase}}",
+            },
         });
     });
 
@@ -17,11 +19,13 @@
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} [value]="40">
-        <dxo-{widget-name}-value-indicator <!-- or dxo-subvalue-indicator -->
+        <dxo-{widget-name}-value-indicator
             type="${{indicatorTypeCamelCase}}"
-            <!-- The rest of the indicator properties go here -->
         ></dxo-{widget-name}-value-indicator>
-    <dx-{widget-name}>
+        <dxo-{widget-name}-subvalue-indicator
+            type="${{indicatorTypeCamelCase}}"
+        ></dxo-{widget-name}-subvalue-indicator>
+    </dx-{widget-name}>
 
     <!-- tab: app.module.ts -->
     import { Dx{WidgetName}Module } from "devextreme-angular";
@@ -42,38 +46,37 @@
     <!-- tab: App.vue -->
     <template>
         <Dx{WidgetName} :value="40">
-            <DxValueIndicator <!-- or DxSubvalueIndicator -->
+            <DxValueIndicator
                 type="${{indicatorTypeCamelCase}}"
-                <!-- The rest of the indicator properties go here -->
+            />
+            <DxSubvalueIndicator
+                type="${{indicatorTypeCamelCase}}"
             />
         </Dx{WidgetName}>
     </template>
 
     <script setup lang="ts">
-    import Dx{WidgetName}, {
-        DxValueIndicator
-    } from 'devextreme-vue/{widget-name}';
+    import { Dx{WidgetName}, DxValueIndicator, DxSubvalueIndicator } from 'devextreme-vue/{widget-name}';
+
     </script>
 
 ##### React
 
     <!-- tab: App.tsx -->
-    import React from 'react';
+    import { {WidgetName}, ValueIndicator, SubvalueIndicator } from 'devextreme-react/{widget-name}';
 
-    import { {WidgetName}, ValueIndicator } from 'devextreme-react/{widget-name}';
-
-    function App() {
+    function App(): JSX.Element {
         return (
             <{WidgetName} value={40}>
-                <ValueIndicator {/* or SubvalueIndicator */}
+                <ValueIndicator
                     type="${{indicatorTypeCamelCase}}"
-                    {/* The rest of the indicator properties go here */}
+                />
+                <SubvalueIndicator
+                    type="${{indicatorTypeCamelCase}}"
                 />
             </{WidgetName}>
         );
     }
-
-    export default App;
 
 ##### ASP.NET MVC Controls
 
@@ -81,10 +84,8 @@
     @(Html.DevExtreme().{WidgetName}()
         .ID("{widgetName}")
         .Value(40)
-        .ValueIndicator(vi => vi // or .SubvalueIndicator
-            .Type(GaugeIndicatorType.${{indicatorTypePascalCase}})
-            // The rest of the indicator properties go here
-        )
+        .ValueIndicator(vi => vi.Type(GaugeIndicatorType.${{indicatorTypePascalCase}}))
+        .SubvalueIndicator(svi => svi.Type(GaugeIndicatorType.${{indicatorTypePascalCase}}))
     )
 
 

@@ -38,7 +38,7 @@
 
     const {widgetName}Ref = ref<dx{WidgetName}>();
  
-    function saveInstance(e: Dx{WidgetName}Types.InitializedEvent) => {
+    function saveInstance(e: Dx{WidgetName}Types.InitializedEvent): void {
         if (e.component)
             {widgetName}Ref.value = e.component;
     }

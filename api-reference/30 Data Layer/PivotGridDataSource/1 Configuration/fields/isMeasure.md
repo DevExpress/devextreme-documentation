@@ -1,7 +1,6 @@
 ---
 id: PivotGridDataSource.Options.fields.isMeasure
 type: Boolean
-default: undefined
 ---
 ---
 ##### shortDescription

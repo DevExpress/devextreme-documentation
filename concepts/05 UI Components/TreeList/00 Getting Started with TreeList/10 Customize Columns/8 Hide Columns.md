@@ -7,7 +7,7 @@ To hide a TreeList column, set **columns[]**.[visible](/api-reference/_hidden/Gr
 ##### jQuery
 
     <!-- tab: index.js -->
-    $("#treeList").dxTreeList({
+    $("#tree-list").dxTreeList({
         columnChooser: { enabled: true },
         columns: [{
             dataField: "Email",

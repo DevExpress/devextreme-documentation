@@ -6,7 +6,7 @@ TreeList columns have equal widths in the default configuration ([width](/api-re
 ##### jQuery
 
     <!-- tab: index.js -->
-    $("#treeList").dxTreeList({
+    $("#tree-list").dxTreeList({
         allowColumnResizing: true,
         columnAutoWidth: true,
         columns: [{

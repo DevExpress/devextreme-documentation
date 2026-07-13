@@ -11,7 +11,7 @@ TreeList allows users to drag and drop rows to reorder records or modify the nod
 ##### jQuery
 
     <!-- tab: index.js -->
-    const treeList = $("#treeList").dxTreeList({
+    const treeList = $("#tree-list").dxTreeList({
         rowDragging: {
             allowDropInsideItem: true,
             allowReordering: true,

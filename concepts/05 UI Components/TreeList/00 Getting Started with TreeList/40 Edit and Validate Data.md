@@ -14,7 +14,7 @@ This tutorial also implements [data validation](/concepts/05%20UI%20Components/z
 ##### jQuery
 
     <!-- tab: index.js -->
-    $("#treeList").dxTreeList({
+    $("#tree-list").dxTreeList({
         editing: {
             mode: "popup",
             allowUpdating: true,

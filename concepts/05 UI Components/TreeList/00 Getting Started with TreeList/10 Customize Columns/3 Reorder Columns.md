@@ -9,7 +9,7 @@ The following code snippet also specifies [dataType](/api-reference/_hidden/Grid
 
     <!-- tab: index.js -->
     $(function() {
-        $("#treeList").dxTreeList({
+        $("#tree-list").dxTreeList({
             columns: [ "FullName", "Position", {
                 dataField: "BirthDate", 
                 dataType: "date",

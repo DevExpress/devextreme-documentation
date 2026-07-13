@@ -13,7 +13,7 @@ TreeList can load and update data from different data source types. To use a loc
 ##### jQuery
 
     <!-- tab: index.js -->
-    $("#treeList").dxTreeList({
+    $("#tree-list").dxTreeList({
         dataSource: employees,
         rootValue: -1,
         keyExpr: "ID",

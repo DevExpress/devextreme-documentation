@@ -6,7 +6,7 @@ You can define [expandedRowKeys](/api-reference/10%20UI%20Components/dxTreeList/
 ##### jQuery
 
     <!-- tab: index.js -->
-    $("#treeList").dxTreeList({
+    $("#tree-list").dxTreeList({
         autoExpandAll: true,
         // ...
     });

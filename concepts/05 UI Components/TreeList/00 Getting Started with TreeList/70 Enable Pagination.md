@@ -6,7 +6,7 @@ TreeList can load data in pages. To configure pagination, set **paging**.[enable
 ##### jQuery
 
     <!-- tab: index.js -->
-    $("#treeList").dxTreeList({
+    $("#tree-list").dxTreeList({
         paging: {
             enabled: true,
             pageSize: 12,

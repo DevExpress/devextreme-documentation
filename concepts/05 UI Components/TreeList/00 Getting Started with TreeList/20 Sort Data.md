@@ -10,7 +10,7 @@ To sort data and change sort orders in the UI, click column headers. Hold **Shif
 ##### jQuery
 
     <!-- tab: index.js -->
-    $("#treeList").dxTreeList({
+    $("#tree-list").dxTreeList({
         sorting: { mode: "multiple" },
         // ...
     });
@@ -64,4 +64,4 @@ To sort data and change sort orders in the UI, click column headers. Hold **Shif
 
 ---
 
-[note] Sorting overrides row order changes applied using [drag and drop]({currentpath}/#Enable_Row_Drag_&_Drop). Do not specify initial sort orders (**columns[]**.[sortOrder](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#sortIndex)) to ensure row drag and drop functions correctly.
+[note] Sorting overrides row order changes applied using [drag and drop](/Documentation/Guide/UI_Components/TreeList/Getting_Started_with_TreeList/#Enable_Row_Drag_&_Drop). Do not specify initial sort orders (**columns[]**.[sortOrder](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#sortIndex)) to ensure row drag and drop functions correctly.

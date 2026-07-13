@@ -6,7 +6,7 @@ When the total column width exceeds the UI component width, a horizontal scroll 
 ##### jQuery
 
     <!-- tab: index.js -->
-    $("#treeList").dxTreeList({
+    $("#tree-list").dxTreeList({
         columnFixing: { enabled: true },
         columns: [{
             dataField: "FullName", 

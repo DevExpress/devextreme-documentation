@@ -13,7 +13,7 @@ This tutorial uses the [filterRow](/api-reference/10%20UI%20Components/GridBase/
 ##### jQuery
 
     <!-- tab: index.js -->
-    $("#treeList").dxTreeList({
+    $("#tree-list").dxTreeList({
         filterRow: { visible: true },
         searchPanel: { visible: true },
         // ...

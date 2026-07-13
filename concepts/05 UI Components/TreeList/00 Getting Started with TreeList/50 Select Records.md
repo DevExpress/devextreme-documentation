@@ -8,7 +8,7 @@ Handle [onSelectionChanged](/api-reference/10%20UI%20Components/dxTreeList/1%20C
 ##### jQuery
 
     <!-- tab: index.js -->
-    $("#treeList").dxTreeList({
+    $("#tree-list").dxTreeList({
         selection: { mode: "single" },
         onSelectionChanged: function(e) {
             e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
@@ -25,7 +25,7 @@ Handle [onSelectionChanged](/api-reference/10%20UI%20Components/dxTreeList/1%20C
         <!-- ... -->
         <body class="dx-viewport">
             <div id="app-container">
-                <div id="treeList"></div>
+                <div id="tree-list"></div>
                 <p id="selected-employee"></p>
             </div>
         </body>

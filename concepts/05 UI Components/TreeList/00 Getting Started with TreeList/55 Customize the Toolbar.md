@@ -6,7 +6,7 @@
 ##### jQuery
 
     <!-- tab: index.js -->
-    const treeList = $("#treeList").dxTreeList({
+    const treeList = $("#tree-list").dxTreeList({
         autoExpandAll: true,
         toolbar: {
             items: [{

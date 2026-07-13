@@ -22,7 +22,7 @@
 
     <!-- tab: index.js -->
     $(function() {
-        $("#treeList").dxTreeList({
+        $("#tree-list").dxTreeList({
             // Configuration goes here
         });
     });
@@ -40,7 +40,7 @@
             <script type="text/javascript" src="index.js"></script>
         </head>
         <body class="dx-viewport">
-            <div id="treeList"></div>
+            <div id="tree-list"></div>
         </body>
     </html>
 
@@ -54,7 +54,7 @@
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-tree-list id="treeList"
+    <dx-tree-list id="tree-list"
         <!-- Configuration goes here -->
     >
     </dx-tree-list>
@@ -97,7 +97,7 @@
     <template>
         <div id="app-container">
             <DxTreeList
-                id="treeList"
+                id="tree-list"
             />
         </div>
     </template>
@@ -118,7 +118,7 @@
     function App() {
         return (
             <div className="App">
-                <TreeList id="treeList">
+                <TreeList id="tree-list">
                     {/* Configuration goes here */}
                 </TreeList>
             </div>

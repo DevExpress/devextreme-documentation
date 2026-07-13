@@ -27,21 +27,19 @@ Use this function to make minor adjustments to automatically generated columns. 
 ##### Angular
 
     <!-- tab: app.component.ts -->
-    import { Dx{WidgetName}Module } from "devextreme-angular";
-    // ...
+    import { Component } from "@angular/core";
+    import { Dx{WidgetName}Component } from "devextreme-angular/ui/{widget-name}";
+    
+    @Component({
+        imports: [Dx{WidgetName}Component],
+        // ...
+    })
     export class AppComponent {
         customizeColumns (columns) {
             columns[0].width = 100;
             columns[1].width = 210;
         }
     }
-    @NgModule({
-        imports: [
-            // ...
-            Dx{WidgetName}Module
-        ],
-        // ...
-    })
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ...
@@ -69,13 +67,14 @@ Use this function to make minor adjustments to automatically generated columns. 
 ##### React
 
     <!-- tab: App.tsx -->
+    import { useCallback } from 'react'
     import { {WidgetName} } from 'devextreme-react/{widget-name}';
 
     function App() {
-        const customizeColumns = (columns) => {
+        const customizeColumns = useCallback((columns) => {
             columns[0].width = 100;
             columns[1].width = 210;
-        };
+        }, []);
 
         return (
             <{WidgetName} customizeColumns={customizeColumns} />

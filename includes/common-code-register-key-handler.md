@@ -17,10 +17,13 @@ Use the [registerKeyHandler(key, handler)](/api-reference/10%20UI%20Widgets/Widg
 ##### Angular
 
     <!-- tab: app.component.ts -->
-    import { ViewChild, AfterViewInit, NgModule } from '@angular/core';
-    import { Dx{WidgetName}Module, Dx{WidgetName}Component } from 'devextreme-angular';
+    import { ViewChild, AfterViewInit } from '@angular/core';
+    import { Dx{WidgetName}Component } from 'devextreme-angular/ui/{widget-name}';
 
-    // ...
+    @Component({
+        imports: [Dx{WidgetName}Component],
+        // ...
+    })
     export class AppComponent implements AfterViewInit {
         @ViewChild(Dx{WidgetName}Component, { static: false }) {widgetName}!: Dx{WidgetName}Component;
         // Prior to Angular 8
@@ -35,11 +38,6 @@ Use the [registerKeyHandler(key, handler)](/api-reference/10%20UI%20Widgets/Widg
             });
         }
     }
-    @NgModule({
-        imports: [
-            Dx{WidgetName}Module,
-        ],
-    })
 
 ##### Vue
 

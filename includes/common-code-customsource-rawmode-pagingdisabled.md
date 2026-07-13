@@ -18,15 +18,19 @@
 ##### Angular
 
     <!-- tab: app.component.ts -->
-    import { Component, Inject } from "@angular/core";
+    import { Component } from "@angular/core";
     import { HttpClient } from "@angular/common/http";
     import { DataSource, CustomStore } from "devextreme-angular/common/data";
     import { lastValueFrom } from "rxjs";
+    import { Dx{WidgetName}Component } from "devextreme-angular/ui/{widget-name}";
 
-    // ...
+    @Component({
+        imports: [Dx{WidgetName}Component],
+        // ...
+    })
     export class AppComponent {
         {widgetName}DataSource: DataSource;
-        constructor(@Inject(HttpClient) httpClient: HttpClient) {
+        constructor(httpClient: HttpClient) {
             this.{widgetName}DataSource = new DataSource({
                 store: new CustomStore({
                     loadMode: "raw",
@@ -43,20 +47,6 @@
     <dx-{widget-name}
         [dataSource]="{widgetName}DataSource"
     ></dx-{widget-name}>
-
-    <!-- tab: app.module.ts -->
-    import { NgModule } from "@angular/core";
-    import { HttpClientModule } from "@angular/common/http";
-    import { Dx{WidgetName}Module } from "devextreme-angular";
-
-    @NgModule({
-        imports: [
-            // ...
-            Dx{WidgetName}Module,
-            HttpClientModule
-        ],
-        // ...
-    })
 
 ##### Vue
 

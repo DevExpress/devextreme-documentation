@@ -1,7 +1,6 @@
 ---
 id: PivotGridDataSource.Options.fields.wordWrapEnabled
 type: Boolean
-default: undefined
 ---
 ---
 ##### shortDescription

@@ -49,7 +49,7 @@ Use the [registerKeyHandler(key, handler)](/api-reference/10%20UI%20Widgets/Widg
     import { onMounted, ref } from 'vue';
     import { Dx{WidgetName} } from 'devextreme-vue/{widget-name}';
 
-    const {widgetName}Ref = ref(null);
+    const {widgetName}Ref = ref<Dx{WidgetName} | null>(null);
 
     onMounted(() => {
         {widgetName}Ref.value.instance.registerKeyHandler('backspace', function(e) {

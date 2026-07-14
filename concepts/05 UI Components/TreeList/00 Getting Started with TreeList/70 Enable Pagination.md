@@ -1,88 +1,75 @@
-When pagination is enabled, TreeList loads records page by page instead of loading them all at once. To configure pagination, set the **paging**.[enabled](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/paging/enabled.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/paging/#enabled') property to **true** and use the **paging**.[pageSize](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging/pageSize.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/paging/#pageSize') property to specify the optimal number of records per page. Use this feature if your tests show noticeable lags without it.
+#include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/TreeList/Paging/", name: "TreeList - Paging" }
 
+TreeList can load data in pages. To configure pagination, set **paging**.[enabled](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/paging/enabled.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/paging/#enabled') to `true` and configure the [pageSize](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/paging/pageSize.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/paging/#pageSize') property:
 
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
-    $(function() {
-        $("#treeList").dxTreeList({
-            // ...
-            paging: {
-                enabled: true,
-                pageSize: 10
-            }   
-        });
+    $("#tree-list").dxTreeList({
+        paging: {
+            enabled: true,
+            pageSize: 12,
+        },
+        // ...
     });
+
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().TreeList<Employee>()
+        .Paging(p => p
+            .Enabled(true)
+            .PageSize(12)
+        )
+        @* ... *@
+    )
 
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-tree-list ... >
-        <!-- ... -->
+    <dx-tree-list>
         <dxo-tree-list-paging 
             [enabled]="true"
-            [pageSize]="10">
-        </dxo-tree-list-paging>
+            [pageSize]="12"
+        ></dxo-tree-list-paging>
+        <!-- ... -->
     </dx-tree-list>
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app-container">
-            <DxTreeList ... >
-                <!-- ... -->
-                <DxPaging
-                    :enabled="true"
-                    :page-size="10"
-                />
-            </DxTreeList>
-        </div>
+        <DxTreeList>
+            <DxPaging
+                :enabled="true"
+                :page-size="12"
+            />
+            <!-- ... -->
+        </DxTreeList>
     </template>
 
-    <script>
-    import {
-        // ...
-        DxPaging
-    } from 'devextreme-vue/tree-list';
+    <script setup lang="ts">
+    import { DxTreeList, DxPaging } from 'devextreme-vue/tree-list';
 
-    export default {
-        components: {
-            // ...
-            DxPaging
-        },
-        // ...
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import {
-        // ...
-        Paging
-    } from 'devextreme-react/tree-list';
+    <!-- tab: App.tsx -->
+    import { TreeList, Paging } from 'devextreme-react/tree-list';
 
     function App() {
         return (
-            <div className="App">
-                <TreeList ... >
-                    {/* ... */}
-                    <Paging
-                        enabled={true}
-                        defaultPageSize={10} 
-                    />
-                </TreeList>
-            </div>
+            <TreeList>
+                <Paging
+                    enabled={true}
+                    defaultPageSize={12} 
+                />
+                {/* ... */}
+            </TreeList>
         );
     }
-
-    export default App;
-
 
 ---
 

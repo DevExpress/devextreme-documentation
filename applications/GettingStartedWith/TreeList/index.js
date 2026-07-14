@@ -1,101 +1,101 @@
-$(function() {
-    const treeList = $("#treeList").dxTreeList({
+$(() => {
+    const treeList = $('#treeList').dxTreeList({
         dataSource: employees,
         rootValue: -1,
-        keyExpr: "ID",
-        parentIdExpr: "HeadID",
+        keyExpr: 'ID',
+        parentIdExpr: 'HeadID',
         autoExpandAll: true,
         allowColumnReordering: true,
         allowColumnResizing: true,
         columnAutoWidth: true,
         columnFixing: {
-            enabled: true
+            enabled: true,
         },
         columnChooser: { enabled: true },
         columns: [{
-            dataField: "FullName",
+            dataField: 'FullName',
             validationRules: [{
-                type: "required"
+                type: 'required',
             }],
-            fixed: true
+            fixed: true,
         }, {
-            dataField: "Position",
+            dataField: 'Position',
             validationRules: [{
-                type: "required"
-            }]
+                type: 'required',
+            }],
         }, {
-            dataField: "BirthDate", 
-            dataType: "date",
+            dataField: 'BirthDate',
+            dataType: 'date',
             width: 100,
             validationRules: [{
-                type: "required"
-            }]
+                type: 'required',
+            }],
         }, {
-            dataField: "HireDate", 
-            dataType: "date",
+            dataField: 'HireDate',
+            dataType: 'date',
             width: 100,
             validationRules: [{
-                type: "required"
-            }]
-        }, "City", {
-            dataField: "State",
+                type: 'required',
+            }],
+        }, 'City', {
+            dataField: 'State',
             validationRules: [{
-                type: "required"
-            }]
+                type: 'required',
+            }],
         }, {
-            dataField: "Email",
-            visible: false
-        }, "MobilePhone", "Skype"],
+            dataField: 'Email',
+            visible: false,
+        }, 'MobilePhone', 'Skype'],
         filterRow: { visible: true },
-        searchPanel: { visible: true },     
+        searchPanel: { visible: true },
         editing: {
-            mode: "popup",
+            mode: 'popup',
             allowUpdating: true,
             allowDeleting: true,
-            allowAdding: true
+            allowAdding: true,
         },
-        selection: { mode: "single" },
-        onSelectionChanged: function(e) {
-            e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
-                if(employee) {
-                    $("#selected-employee").text(`Selected employee: ${employee.FullName}`);
+        selection: { mode: 'single' },
+        onSelectionChanged(e) {
+            e.component.byKey(e.currentSelectedRowKeys[0]).done((employee) => {
+                if (employee) {
+                    $('#selected-employee').text(`Selected employee: ${employee.FullName}`);
                 }
             });
         },
         toolbar: {
             items: [
                 {
-                    location: "after",
-                    widget: "dxButton",
+                    location: 'after',
+                    widget: 'dxButton',
                     options: {
-                        text: "Collapse All",
+                        text: 'Collapse All',
                         width: 136,
                         onClick(e) {
-                            const expanding = e.component.option("text") === "Expand All";
+                            const expanding = e.component.option('text') === 'Expand All';
                             treeList.option({
                                 autoExpandAll: expanding,
-                                expandedRowKeys: []
+                                expandedRowKeys: [],
                             });
-                            e.component.option("text", expanding ? "Collapse All" : "Expand All");
+                            e.component.option('text', expanding ? 'Collapse All' : 'Expand All');
                         },
                     },
                 },
                 {
-                    name: "addRowButton",
-                    showText: "always"
+                    name: 'addRowButton',
+                    showText: 'always',
                 },
-                "exportButton",
-                "columnChooserButton",
-                "searchPanel"
-            ]
+                'exportButton',
+                'columnChooserButton',
+                'searchPanel',
+            ],
         },
         rowDragging: {
             allowDropInsideItem: true,
             allowReordering: true,
-            onDragChange: function(e) {
-                var visibleRows = treeList.getVisibleRows(),
-                    sourceNode = treeList.getNodeByKey(e.itemData.ID),
-                    targetNode = visibleRows[e.toIndex].node;
+            onDragChange(e) {
+                const visibleRows = treeList.getVisibleRows();
+                const sourceNode = treeList.getNodeByKey(e.itemData.ID);
+                let targetNode = visibleRows[e.toIndex].node;
 
                 while (targetNode && targetNode.data) {
                     if (targetNode.data.ID === sourceNode.data.ID) {
@@ -105,34 +105,38 @@ $(function() {
                     targetNode = targetNode.parent;
                 }
             },
-            onReorder: function(e) {
-                var visibleRows = e.component.getVisibleRows(),
-                    sourceData = e.itemData,
-                    targetData = visibleRows[e.toIndex].data;
+            onReorder(e) {
+                const visibleRows = e.component.getVisibleRows();
+                const sourceData = e.itemData;
+                const targetData = visibleRows[e.toIndex].data;
 
                 if (e.dropInsideItem) {
                     e.itemData.HeadID = targetData.ID;
                 } else {
-                    var sourceIndex = employees.indexOf(sourceData),
-                        targetIndex = employees.indexOf(targetData);
+                    const sourceIndex = employees.indexOf(sourceData);
+                    let targetIndex = employees.indexOf(targetData);
 
                     if (sourceData.HeadID !== targetData.HeadID) {
                         sourceData.HeadID = targetData.HeadID;
                         if (e.toIndex > e.fromIndex) {
-                            targetIndex++;
+                            targetIndex += 1;
                         }
                     }
                     employees.splice(sourceIndex, 1);
                     employees.splice(targetIndex, 0, sourceData);
                 }
                 e.component.refresh();
-            }
+            },
         },
         paging: {
             enabled: true,
-            pageSize: 10
+            pageSize: 10,
+        },
+        height: 500,
+        scrolling: {
+            mode: 'standard'
         }
-    }).dxTreeList("instance");
+    }).dxTreeList('instance');
 });
 
 const employees = [{ 

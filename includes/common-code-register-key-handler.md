@@ -42,7 +42,7 @@ Use the [registerKeyHandler(key, handler)](/api-reference/10%20UI%20Widgets/Widg
 ##### Vue
 
     <template>
-        <Dx{WidgetName} :ref="{widgetName}Ref" />
+        <Dx{WidgetName} ref="{widgetName}Ref" />
     </template>
 
     <script setup lang="ts">

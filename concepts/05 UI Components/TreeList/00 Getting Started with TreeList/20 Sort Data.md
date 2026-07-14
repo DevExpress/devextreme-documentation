@@ -1,6 +1,6 @@
 #include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/TreeList/Sorting/", name: "TreeList - Sorting" }
 
-The **sorting**.[mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/sorting/mode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/sorting/#mode') property specifies whether users can sort grid records against single or multiple columns.
+The **sorting**.[mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/sorting/mode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/sorting/#mode') property specifies whether users can sort TreeList records against single or multiple columns.
 
 You can also set a column's [sortOrder](/api-reference/_hidden/GridBaseColumn/sortOrder.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#sortOrder') and [sortIndex](/api-reference/_hidden/GridBaseColumn/sortIndex.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#sortIndex') properties to specify initial sorting settings. [sortIndex](/api-reference/_hidden/GridBaseColumn/sortIndex.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#sortIndex') applies only in multi-column sort mode.
 
@@ -64,4 +64,4 @@ To sort data and change sort orders in the UI, click column headers. Hold **Shif
 
 ---
 
-[note] Sorting overrides row order changes applied using [drag and drop](/Documentation/Guide/UI_Components/TreeList/Getting_Started_with_TreeList/#Enable_Row_Drag_&_Drop). Do not specify initial sort orders (**columns[]**.[sortOrder](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#sortIndex)) to ensure row drag and drop works correctly.
+[note] Sorting overrides row order changes applied using [drag and drop](/Documentation/Guide/UI_Components/TreeList/Getting_Started_with_TreeList/#Enable_Row_Drag_&_Drop). Do not specify initial sort orders (**columns[]**.[sortOrder](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#sortOrder)) to ensure row drag and drop works correctly.

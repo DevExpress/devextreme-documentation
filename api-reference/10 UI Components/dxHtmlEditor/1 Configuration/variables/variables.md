@@ -1,6 +1,6 @@
 ---
 id: dxHtmlEditor.Options.variables
-type: dxHtmlEditorVariables
+type: dxHtmlEditorVariables | null
 default: null
 inheritsType: dxHtmlEditorVariables
 ---

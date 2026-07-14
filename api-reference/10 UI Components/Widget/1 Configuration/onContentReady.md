@@ -1,7 +1,7 @@
 ---
 id: Widget.Options.onContentReady
-type: function(e)
-default: null
+type: function(e) | undefined
+default: undefined
 ---
 ---
 ##### shortDescription

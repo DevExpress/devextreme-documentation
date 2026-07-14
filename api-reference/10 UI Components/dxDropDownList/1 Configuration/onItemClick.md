@@ -1,7 +1,6 @@
 ---
 id: dxDropDownList.Options.onItemClick
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

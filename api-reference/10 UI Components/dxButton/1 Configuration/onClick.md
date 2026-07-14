@@ -1,7 +1,7 @@
 ---
 id: dxButton.Options.onClick
-type: function(e)
-default: null
+type: function(e) | undefined
+default: undefined
 ---
 ---
 ##### shortDescription

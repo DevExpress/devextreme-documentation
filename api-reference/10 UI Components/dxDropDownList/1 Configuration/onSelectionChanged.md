@@ -1,6 +1,6 @@
 ---
 id: dxDropDownList.Options.onSelectionChanged
-type: function(e)
+type: function(e) | null
 default: null
 ---
 ---

@@ -1,7 +1,6 @@
 ---
 id: dxGantt.Options.stripLines
 type: Array<dxGanttStripLine>
-default: undefined
 inheritsType: dxGanttStripLine
 ---
 ---

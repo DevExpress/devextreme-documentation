@@ -1,6 +1,6 @@
 ---
 id: dxTreeMap.Options.colorizer.range
-type: Array<Number>
+type: Array<Number> | undefined
 default: undefined
 ---
 ---

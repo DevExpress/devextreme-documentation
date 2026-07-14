@@ -1,6 +1,6 @@
 ---
 id: dxTextEditor.Options.onPaste
-type: function(e)
+type: function(e) | null
 default: null
 ---
 ---

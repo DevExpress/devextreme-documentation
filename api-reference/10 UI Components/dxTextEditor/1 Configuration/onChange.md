@@ -1,6 +1,6 @@
 ---
 id: dxTextEditor.Options.onChange
-type: function(e)
+type: function(e) | null
 default: null
 ---
 ---

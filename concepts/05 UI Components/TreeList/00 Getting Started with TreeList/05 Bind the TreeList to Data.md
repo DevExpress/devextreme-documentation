@@ -119,17 +119,17 @@ TreeList can load and update data from different data source types. To use a loc
     import { Injectable } from '@angular/core';
 
     export interface Employee {
-        ID: Number,
-        HeadID: Number,
-        FullName: String,
-        Position: String,
-        City: String,
-        State: String,
-        Email: String,
-        Skype: String,
-        MobilePhone: String,
-        BirthDate: String,
-        HireDate: String,
+        ID: number;
+        HeadID: number;
+        FullName: string;
+        Position: string;
+        City: string;
+        State: string;
+        Email: string;
+        Skype: string;
+        MobilePhone: string;
+        BirthDate: string;
+        HireDate: string;
     }
 
     @Injectable({
@@ -141,7 +141,7 @@ TreeList can load and update data from different data source types. To use a loc
         ];
 
         getEmployees(): Employee[] {
-            return employees;
+            return this.employees;
         }
     }
 
@@ -197,6 +197,7 @@ TreeList can load and update data from different data source types. To use a loc
 ##### React
 
     <!-- tab: App.tsx -->
+    import React, { useState } from 'react';
     import { TreeList } from 'devextreme-react/tree-list';
     import { employeesService, type Employee } from './employeesService';
 

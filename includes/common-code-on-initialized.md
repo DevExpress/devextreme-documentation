@@ -14,11 +14,10 @@
 
     // ...
     export class AppComponent {
-        {widgetName}Instance!: dx{WidgetName};
+         {widgetName}Instance: Dx{WidgetName}Types.InitializedEvent['component'] | null = null;
 
         saveInstance(e: Dx{WidgetName}Types.InitializedEvent): void {
-            if (e.component)
-                this.{widgetName}Instance = e.component;
+            this.{widgetName}Instance = e.component;
         }
     }
 
@@ -79,10 +78,10 @@
     import dx{WidgetName} from "devextreme/ui/{widget_name}";
 
     function App(): JSX.Element {
-        const {widgetName}Ref = useRef<dx{WidgetName}>();
-
+        const {widgetName}Ref = useRef<{WidgetName}Types.InitializedEvent['component'] | null>(null);
+        
         const saveInstance = useCallback((e: {WidgetName}Types.InitializedEvent) => {
-            {widgetName}Ref.current = e.component;
+            {widgetName}Ref.current = e.component ?? null;
         }, []);
 
         return (

@@ -66,10 +66,10 @@ Use the [registerKeyHandler(key, handler)](/api-reference/10%20UI%20Widgets/Widg
 
     <!-- tab: App.tsx -->
     import React, { useRef, useEffect } from 'react';
-    import { {WidgetName} } from 'devextreme-react/{widget-name}';
+    import { {WidgetName}, type {WidgetName}Ref } from 'devextreme-react/{widget-name}';
 
     function App() {
-        const {widgetName}Ref = useRef(null);
+        const {widgetName}Ref = useRef<{WidgetName}Ref>(null);
 
         useEffect(() => {
             const {widgetName} = {widgetName}Ref.current.instance();

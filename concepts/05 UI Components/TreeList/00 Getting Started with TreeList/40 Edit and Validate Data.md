@@ -166,7 +166,7 @@ This tutorial also implements [data validation](/concepts/05%20UI%20Components/z
 
 [note]
 
-Hierarchical data sources do not support editing in the TreeList component out of the box. To configure editing operations in hierarchical data sources, refer to the following example:
+The TreeList component does not support editing hierarchical data sources out of the box. To configure editing operations for hierarchical data sources, refer to the following example:
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-treelist-perform-crud-operations-on-hierarchical-data-source"

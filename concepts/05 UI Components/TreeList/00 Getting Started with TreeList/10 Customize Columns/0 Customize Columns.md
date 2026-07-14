@@ -4,7 +4,7 @@
 
 ##### jQuery
 
-Use the [columns](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/') array to define and customize TreeList columns. Configure columns as objects to specify options. To add columns with default options, add [dataField](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/columns/dataField.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#dataField') values to **columns[]** as strings.
+Use the [columns](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/') array to define and customize TreeList columns. Configure columns as objects to specify column options. To add columns with default options, specify [dataField](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/columns/dataField.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#dataField') values as strings in the **columns[]** array.
 
 ##### Angular
 

@@ -2,7 +2,7 @@
 
 TreeList supports single- and multiple-row selection. To enable row selection, configure the **selection**.[mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/selection/mode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/selection/#mode') property.
 
-Handle [onSelectionChanged](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onSelectionChanged') to obtain selected records at runtime. This tutorial uses **onSelectionChanged** to display selected employee names in an element outside the component:
+Handle [onSelectionChanged](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onSelectionChanged') to obtain the selected records at runtime. This tutorial uses **onSelectionChanged** to display the selected employee names in an element outside the component:
 
 ---
 ##### jQuery

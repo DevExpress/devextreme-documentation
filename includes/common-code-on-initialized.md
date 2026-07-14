@@ -34,13 +34,11 @@
     <script setup lang="ts">
     import { ref } from 'vue';
     import { Dx{WidgetName}, type Dx{WidgetName}Types } from 'devextreme-vue/{widget-name}';
-    import dx{WidgetName} from "devextreme/ui/{widget_name}";
 
-    const {widgetName}Ref = ref<dx{WidgetName}>();
+    let {widgetName}Instance: Dx{WidgetName}Types.InitializedEvent['component'] | undefined;
  
     function saveInstance(e: Dx{WidgetName}Types.InitializedEvent): void {
-        if (e.component)
-            {widgetName}Ref.value = e.component;
+        {widgetName}Instance = e.component;
     }
     </script>
 

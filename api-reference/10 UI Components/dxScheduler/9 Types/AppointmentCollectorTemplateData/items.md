@@ -1,6 +1,6 @@
 ---
 id: AppointmentCollectorTemplateData.items
-type: Array<dxSchedulerAppointment>
+type: Array
 ---
 ---
 ##### shortDescription

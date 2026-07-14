@@ -1,6 +1,6 @@
 ---
 id: Occurrence.appointmentData
-type: dxSchedulerAppointment
+type: Appointment
 ---
 ---
 ##### shortDescription

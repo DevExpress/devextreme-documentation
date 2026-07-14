@@ -10,10 +10,10 @@ A function that is executed before an appointment is deleted from the data sourc
 ##### param(e): ui/scheduler:AppointmentDeletingEvent
 Information about the event.
 
-##### field(e.appointmentData): dxSchedulerAppointment
+##### field(e.appointmentData): Appointment
 The data of the appointment to be deleted.
 
-##### field(e.cancel): Boolean | Promise<Boolean>
+##### field(e.cancel): Boolean | PromiseLike
 Allows you to prevent the appointment from being deleted.       
 If you pass a Promise to this field, appointment deleting is continued or canceled once the Promise has been resolved.
 

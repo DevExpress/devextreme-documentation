@@ -85,7 +85,7 @@ The following code shows how to declare a template and use these parameters. Thi
             BrowserModule,
             DxListModule
         ],
-        providers: [ ],
+        providers: [],
         bootstrap: [AppComponent]
     })
     export class AppModule { }
@@ -113,24 +113,15 @@ The following code shows how to declare a template and use these parameters. Thi
         </DxList>
     </template>
 
-    <script>
+    <script setup lang="ts">
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxList from 'devextreme-vue/list';
 
-    export default {
-        components: {
-            DxList
-        },
-        data() {
-            return {
-                listData: [
-                    { itemProperty: 'someValue' },
-                    // ...
-                ]
-            }
-        }
-    }
+    const listData = [
+        { itemProperty: 'someValue' },
+        // ...
+    ];
     </script>
 
 ##### React
@@ -145,7 +136,7 @@ A zero-based index of the item in the collection. Can be available only in colle
 
 The following code shows how to declare a template and use these parameters. This code declares an [itemRender](/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemRender) for the [List](/Documentation/ApiReference/UI_Components/dxList/) UI component:
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
@@ -157,21 +148,20 @@ The following code shows how to declare a template and use these parameters. Thi
         );
     }
 
-    class App extends React.Component {
-        listData = [
-            { itemProperty: 'someValue' },
-            // ...
-        ];
+    const listData = [
+        { itemProperty: 'someValue' },
+        // ...
+    ];
 
-        render() {
-            return (
-                <List
-                    items={this.listData}
-                    itemRender={renderListItem}
-                />
-            );
-        }
+    function App() {
+        return (
+            <List
+                items={listData}
+                itemRender={renderListItem}
+            />
+        );
     }
+
     export default App;
 
 ---
@@ -239,7 +229,7 @@ Collection UI components are components that include the **items** property. The
             DxListModule,
             DxButtonModule
         ],
-        providers: [ ],
+        providers: [],
         bootstrap: [AppComponent]
     })
     export class AppModule { }
@@ -286,7 +276,7 @@ Declare **named** templates within the component's markup but outside the templa
                 </template>
             </DxItem>
             <DxItem>
-                <template #default>               
+                <template #default>
                     <div>
                         Item with a nested component
                         <DxButton text="Click me" />
@@ -296,21 +286,13 @@ Declare **named** templates within the component's markup but outside the templa
         </DxList>
     </template>
 
-    <script>
+    <script setup lang="ts">
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxList, {
         DxItem
     } from 'devextreme-vue/list';
     import DxButton from 'devextreme-vue/button';
-    
-    export default {
-        components: {
-            DxList,
-            DxItem,
-            DxButton
-        }
-    }
     </script>
 
 Declare **named** templates within the component's markup but outside the templated element. **Non-named** templates should be declared inside the templated element.
@@ -347,31 +329,30 @@ Declare **named** templates within the component's markup but outside the templa
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import List, { Item } from 'devextreme-react/list';
     import Button from 'devextreme-react/button';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <List>
-                    <Item>
-                        <i>Item 1</i>
-                    </Item>
-                    <Item>
-                        <i>Item 2</i>
-                    </Item>
-                    <Item>
-                        Item with a nested component
-                        <Button text="Click me" />
-                    </Item>
-                </List>
-            );
-        }
+    function App() {
+        return (
+            <List>
+                <Item>
+                    <i>Item 1</i>
+                </Item>
+                <Item>
+                    <i>Item 2</i>
+                </Item>
+                <Item>
+                    Item with a nested component
+                    <Button text="Click me" />
+                </Item>
+            </List>
+        );
     }
+
     export default App;
 
 ---

@@ -115,7 +115,7 @@ Use this function to make minor adjustments to automatically generated columns. 
 [note]
 
 - Columns created using **customizeColumns** do not support data shaping operations such as sorting, filtering, and summaries.
-- You cannot configure templates in **customizeColumns** (render functions and components such as [cellRender](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellRender) and [cellComponent](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellComponent)).
+- You cannot configure templates in **customizeColumns**, including render functions and components such as [cellRender](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellRender) and [cellComponent](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#cellComponent).
 
 [/note]
 

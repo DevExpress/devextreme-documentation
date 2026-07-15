@@ -1,6 +1,6 @@
 ---
 id: TargetedAppointmentInfo.targetedAppointmentData
-type: dxSchedulerAppointment
+type: Appointment
 ---
 ---
 ##### shortDescription

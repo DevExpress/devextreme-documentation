@@ -27,6 +27,35 @@ You can customize the appearance of Chart elements. To configure a background gr
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Chart()
+        .CommonPaneSettings(c => c
+            .BackgroundColor(b => b
+                .Base("#ffffff")
+                .FillId(new JS("fillId"))
+            )
+        )
+        @* ... *@
+    )
+
+    <script>
+        const registerGradient = DevExpress.common.charts.registerGradient;
+
+        const fillId = registerGradient('linear', {
+            colors: [{
+                offset: '20%',
+                color: '#dee4ff',
+            }, {
+                offset: '90%',
+                color: '#ffdeff',
+            }],
+        });
+
+        // ...
+    </script>
+
 ##### Angular
 
     <!-- tab: app.component.html -->

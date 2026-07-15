@@ -1,6 +1,6 @@
-You can configure an error message as follows:
+You can configure an error message in the following ways:
 
-- Hard-code a message:
+- Specify a hard-coded message:
 
     ---
     ##### jQuery

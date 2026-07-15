@@ -37,6 +37,43 @@ To add tooltips to a Chart, assign `true` to the **tooltip**.[enabled](/api-refe
         return { text: `${formatNumber(data.value, 'currency')}\n${formatNumber(averageSpend - data.value, 'currency')} below average spending.` };
     }
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Chart()
+        .Tooltip(t => t
+            .Enabled(true)
+            .CustomizeTooltip("customizeTooltip")
+        )
+        @* ... *@
+    )
+
+    <script>
+        const formatNumber = DevExpress.localization.formatNumber;
+
+        function customizeTooltip(data) {
+            if (data.seriesName === 'Budget') {
+                return { text: formatNumber(data.value, 'currency') };
+            }
+            const isValueAboveAverage = data.value > @(ChartData.AverageSpend);
+            if (isValueAboveAverage) {
+                return { text: `${formatNumber(data.value, 'currency')}\n${formatNumber(data.value - @(ChartData.AverageSpend), 'currency')} above average spending.` };
+            }
+
+            return { text: `${formatNumber(data.value, 'currency')}\n${formatNumber(@(ChartData.AverageSpend) - data.value, 'currency')} below average spending.` };
+        }
+    </script>
+
+    <!-- tab: ChartData.cs -->
+    namespace ASP_NET_Core.Models;
+    static class ChartData {
+        public static List<ChartDataPoint> ChartDataPoints = [
+            // ...
+        ];
+
+        public static double AverageSpend => ChartDataPoints.Average(p => p.ActualSpend);
+    }
+
 ##### Angular
 
     <!-- tab: app.component.html -->

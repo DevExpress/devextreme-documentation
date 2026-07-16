@@ -169,12 +169,14 @@ Each lookup column has an individual [data source](/api-reference/_hidden/GridBa
     export default function App() {
         return (
             <DataGrid dataSource={orders}>
-                <Column
-                    dataField="statusId"> <!-- provides actual values -->
+                <Column dataField="statusId">
+                    {/* provides actual values */}
                     <Lookup
                         dataSource={lookupDataSourceConfig}
-                        valueExpr="id" <!-- contains the same values as the "statusId" field provides -->
-                        displayExpr="name" <!-- provides display values -->
+                        {/* contains the same values as the "statusId" field provides */}
+                        valueExpr="id"
+                        {/* provides display values */}
+                        displayExpr="name"
                     />
                 </Column>
             </DataGrid>
@@ -311,8 +313,8 @@ Each lookup column has an individual [data source](/api-reference/_hidden/GridBa
     export default function App() {
         return (
             <DataGrid dataSource={orders}>
-                <Column
-                    dataField="status"> <!-- provides column values -->
+                <Column dataField="status">
+                    {/* provides column values */}
                     <Lookup
                         dataSource={lookupData}
                     />

@@ -154,7 +154,7 @@ You can send the human-readable values from the server as a part of the main dat
                 <Column
                     caption="Customer"
                     dataField="CustomerID"
-                    calculateDisplayValue="CustomerName">   <!-- "CustomerName" provides human-readable values -->
+                    calculateDisplayValue="CustomerName"> {/* "CustomerName" provides human-readable values */}
                     <Lookup
                         dataSource={lookupDataSourceConfig}
                         displayExpr="ContactName"

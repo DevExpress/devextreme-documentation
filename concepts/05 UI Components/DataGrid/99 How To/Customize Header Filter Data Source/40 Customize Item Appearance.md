@@ -191,7 +191,7 @@ You can use [templates](/api-reference/50%20Common/Object%20Structures/template 
                         dataSource={headerFilterData}
                     />
                 </Column>
-                 <Template name="boldFont" render={renderBoldText} />
+                <Template name="boldFont" render={renderBoldText} />
             </{WidgetName}>
         );
     }

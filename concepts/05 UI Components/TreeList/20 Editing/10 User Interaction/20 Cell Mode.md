@@ -83,7 +83,7 @@ Clicking the *"Delete"* button invokes the confirmation dialog that allows a use
         return (
             <TreeList ... >
                 <Editing
-                    mode="row"
+                    mode="cell"
                     confirmDelete={false}
                     allowDeleting={true} 
                 />

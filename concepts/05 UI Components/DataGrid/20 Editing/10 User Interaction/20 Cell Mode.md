@@ -85,7 +85,7 @@ Clicking the "Delete" button invokes the confirmation dialog that allows a user 
         return (
             <DataGrid ... >
                 <Editing
-                    mode="row"
+                    mode="cell"
                     confirmDelete={false}
                     allowDeleting={true} 
                 />

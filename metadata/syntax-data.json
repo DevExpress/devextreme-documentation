@@ -19723,6 +19723,9 @@
     "dxToolbarOptions.activeStateEnabled": {
       "vue": "active-state-enabled"
     },
+    "dxToolbarOptions.allowKeyboardNavigation": {
+      "vue": "allow-keyboard-navigation"
+    },
     "dxToolbarOptions.dataSource": {
       "vue": "data-source"
     },

@@ -91,16 +91,13 @@ Paging properties are set in the [DataSource](/api-reference/30%20Data%20Layer/D
         pageSize: 10
     });  
 
-    class App extends React.Component {
-        render() {
-            return (
-                <SelectBox ...
-                    dataSource={selectBoxData}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <SelectBox ...
+                dataSource={selectBoxData}
+            />
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

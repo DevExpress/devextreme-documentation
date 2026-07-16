@@ -176,23 +176,20 @@ To group appointments by resources, assign an array to the [groups](/api-referen
         // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler
-                    dataSource={appointments}
-                    groups={groups}>
-                    <Resource
-                        fieldExpr="roomId"
-                        dataSource={rooms} />
-                    <Resource
-                        fieldExpr="teacherId"
-                        dataSource={teachers} />
-                </Scheduler>
-            );
-        }
+    export default function App() {
+        return (
+            <Scheduler
+                dataSource={appointments}
+                groups={groups}>
+                <Resource
+                    fieldExpr="roomId"
+                    dataSource={rooms} />
+                <Resource
+                    fieldExpr="teacherId"
+                    dataSource={teachers} />
+            </Scheduler>
+        );
     }
-    export default App;
 
 ---
 
@@ -278,19 +275,16 @@ You can change resource headers orientation in an individual view using the **vi
 
     import Scheduler, { View } from 'devextreme-react/scheduler';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler ... >
-                    <View type="month" />
-                    <View
-                        type="day"
-                        groupOrientaion="vertical" />
-                </Scheduler>
-            );
-        }
+    export default function App() {
+        return (
+            <Scheduler ... >
+                <View type="month" />
+                <View
+                    type="day"
+                    groupOrientaion="vertical" />
+            </Scheduler>
+        );
     }
-    export default App;
 
 ---
 

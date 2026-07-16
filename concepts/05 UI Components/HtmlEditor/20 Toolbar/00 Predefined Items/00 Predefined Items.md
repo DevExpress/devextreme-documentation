@@ -299,22 +299,18 @@ To add a button to the toolbar, add its [name](/concepts/05%20UI%20Components/Ht
 
     import { HtmlEditor, Toolbar, Item } from 'devextreme-react/html-editor';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <HtmlEditor>
-                    <Toolbar>
-                        <Item name="bold"/>
-                        <Item name="italic"/>
-                        <Item name="alignRight"/>
-                        <Item name="alignLeft"/>
-                    </Toolbar>
-                </HtmlEditor>
-            );
-        }
+    export default function App() {
+        return (
+            <HtmlEditor>
+                <Toolbar>
+                    <Item name="bold"/>
+                    <Item name="italic"/>
+                    <Item name="alignRight"/>
+                    <Item name="alignLeft"/>
+                </Toolbar>
+            </HtmlEditor>
+        );
     }
-
-    export default App;
 
 ##### ASP.NET MVC Controls
 
@@ -435,26 +431,22 @@ To add a select box, specify the [name](/api-reference/_hidden/dxHtmlEditorToolb
     const headerAcceptedValues = [1, 2, 3, false];
     const alignAcceptedValues = ['left', 'right', 'center'];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <HtmlEditor>
-                    <Toolbar>
-                        <Item
-                            acceptedValues={headerAcceptedValues}
-                            name="header"
-                        />
-                        <Item
-                            acceptedValues={alignAcceptedValues}
-                            name="align"
-                        />
-                    </Toolbar>
-                </HtmlEditor>
-            );
-        }
+    export default function App() {
+        return (
+            <HtmlEditor>
+                <Toolbar>
+                    <Item
+                        acceptedValues={headerAcceptedValues}
+                        name="header"
+                    />
+                    <Item
+                        acceptedValues={alignAcceptedValues}
+                        name="align"
+                    />
+                </Toolbar>
+            </HtmlEditor>
+        );
     }
-
-    export default App;
 
 ##### ASP.NET MVC Controls
 

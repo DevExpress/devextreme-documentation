@@ -115,18 +115,15 @@ If your appointment data objects contain different fields that perform the funct
         exception: "20210222T070000,20210223T070000"
     }];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler
-                    dataSource={recurringAppointments}
-                    recurrenceRuleExpr="rule"
-                    recurrenceExceptionExpr="exception"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Scheduler
+                dataSource={recurringAppointments}
+                recurrenceRuleExpr="rule"
+                recurrenceExceptionExpr="exception"
+            />
+        );
     }
-    export default App;
     
 ---
 

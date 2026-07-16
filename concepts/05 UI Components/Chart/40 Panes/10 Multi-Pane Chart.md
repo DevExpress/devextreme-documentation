@@ -255,7 +255,7 @@ Bind each series to a pane using the [pane](/api-reference/10%20UI%20Components/
                 <Series pane="bottomPane"/>
                 <Series pane="topPane"/>
                 <Series>
-                    <!-- This series will be bound to the default pane -->
+                    {/* This series will be bound to the default pane */}
                 </Series>
             </Chart>
         );

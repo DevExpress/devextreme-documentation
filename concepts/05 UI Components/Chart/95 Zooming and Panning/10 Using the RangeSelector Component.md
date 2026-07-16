@@ -237,11 +237,13 @@ When your data source is updated in real time, the behavior of both the Chart's 
 
     export default function App() {
         return (
-            <Chart ... >
-            </Chart>
-            <RangeSelector ...
-                selectedRangeUpdateMode="keep"> {/* the ranges remain unchanged */}
-            </RangeSelector>
+            <>
+                <Chart ... >
+                </Chart>
+                <RangeSelector ...
+                    selectedRangeUpdateMode="keep"> {/* the ranges remain unchanged */}
+                </RangeSelector>
+            </>
         );
     }
 
@@ -337,15 +339,17 @@ If you need to fix the zoom window and allow users to only move it along the sca
 
     export default function App() {
         return (
-            <Chart ... >
-            </Chart>
-            <RangeSelector ...
-                defaultValue={[0, 10]}>
-                <Scale
-                    minRange={10}
-                    maxRange={10}
-                />
-            </RangeSelector>
+            <>
+                <Chart ... >
+                </Chart>
+                <RangeSelector ...
+                    defaultValue={[0, 10]}>
+                    <Scale
+                        minRange={10}
+                        maxRange={10}
+                    />
+                </RangeSelector>
+            </>
         );
     }
 

@@ -107,12 +107,12 @@ Individual series settings override common settings.
             <Chart ... >
                 <Series ... >
                     <HoverStyle>
-                        <!-- high priority -->
+                        {/* high priority */}
                     </HoverStyle>
                 </Series>
                 <CommonSeriesSettings ... >
                     <HoverStyle>
-                        <!-- low priority -->
+                        {/* low priority */}
                     </HoverStyle>
                 </CommonSeriesSettings>
             </Chart>
@@ -210,12 +210,12 @@ To choose which series elements should be highlighted when a user pauses on a se
             <Chart ... >
                 <Series
                     type="bar"
-                    hoverMode="allSeriesPoints" <!-- or "onlyPoint" | "allArgumentPoints" | "none" -->
-                />
+                    hoverMode="allSeriesPoints"
+                /> {/* or "onlyPoint" | "allArgumentPoints" | "none" */}
                 <Series
                     type="line"
-                    hoverMode="includePoints" <!-- or "nearestPoint" | "excludePoints" | "none" -->
-                />
+                    hoverMode="includePoints"
+                /> {/* or "nearestPoint" | "excludePoints" | "none" */}
             </Chart>
         );
     }

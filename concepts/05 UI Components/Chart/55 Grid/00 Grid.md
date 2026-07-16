@@ -131,17 +131,17 @@ Note that axis-specific settings override common settings.
             <Chart ... >
                 <ArgumentAxis>
                     <Grid>
-                        <!-- high priority -->
+                        {/* high priority */}
                     </Grid>
                 </ArgumentAxis>
                 <ValueAxis>
                     <Grid>
-                        <!-- high priority -->
+                        {/* high priority */}
                     </Grid>
                 </ValueAxis>
                 <CommonAxisSettings>
                     <Grid>
-                        <!-- low priority -->
+                        {/* low priority */}
                     </Grid>
                 </CommonAxisSettings>
             </Chart>

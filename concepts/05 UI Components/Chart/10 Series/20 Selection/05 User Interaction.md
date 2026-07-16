@@ -108,12 +108,12 @@ Individual settings override common settings.
             <Chart ... >
                 <Series ... >
                     <SelectionStyle>
-                        <!-- high priority -->
+                        {/* high priority */}
                     </SelectionStyle>
                 </Series>
                 <CommonSeriesSettings ... >
                     <SelectionStyle>
-                        <!-- low priority -->
+                        {/* low priority */}
                     </SelectionStyle>
                 </CommonSeriesSettings>
             </Chart>
@@ -211,12 +211,12 @@ To choose which series elements should be highlighted when a user selects a seri
             <Chart ... >
                 <Series
                     type="bar"
-                    selectionMode="allSeriesPoints" <!-- or "onlyPoint" | "allArgumentPoints" | "none" -->
-                />
+                    selectionMode="allSeriesPoints"
+                /> {/* or "onlyPoint" | "allArgumentPoints" | "none" */}
                 <Series
                     type="line"
-                    selectionMode="includePoints" <!-- or "nearestPoint" | "excludePoints" | "none" -->
-                />
+                    selectionMode="includePoints"
+                /> {/* or "nearestPoint" | "excludePoints" | "none" */}
             </Chart>
         );
     }

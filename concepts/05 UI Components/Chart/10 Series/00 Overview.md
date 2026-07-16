@@ -261,10 +261,10 @@ Objects in the **series** array specify individual settings for series. You can 
         return (
             <Chart ... >
                 <Series ... >
-                    <!-- high priority -->
+                    {/* high priority */}
                 </Series>
                 <CommonSeriesSettings ... >
-                    <!-- low priority -->
+                    {/* low priority */}
                 </CommonSeriesSettings>
             </Chart>
         );

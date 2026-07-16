@@ -93,20 +93,17 @@ You can achieve the same in the markup using the [dxItem](/api-reference/10%20UI
 
     import List, { Item } from 'devextreme-react/list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <List>
-                    <Item text="Apples" disabled={true} />
-                    <Item text="Lemons" visible={false} />
-                    <Item>
-                        <i>Oranges</i>
-                    </Item>
-                </List>
-            );
-        }
+    export default function App() {
+        return (
+            <List>
+                <Item text="Apples" disabled={true} />
+                <Item text="Lemons" visible={false} />
+                <Item>
+                    <i>Oranges</i>
+                </Item>
+            </List>
+        );
     }
-    export default App;
 
 ---
 

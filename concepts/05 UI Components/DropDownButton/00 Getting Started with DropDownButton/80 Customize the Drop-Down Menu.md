@@ -61,16 +61,12 @@ The DropDownButton uses the [Popup](/concepts/05%20UI%20Components/Popup/00%20Ge
         height: 150
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DropDownButton ...
-                    dropDownOptions={dropDownOptions}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <DropDownButton ...
+                dropDownOptions={dropDownOptions}
+            />
+        );
     }
-
-    export default App;
 
 ---

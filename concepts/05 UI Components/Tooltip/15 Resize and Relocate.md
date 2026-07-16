@@ -95,25 +95,21 @@ To change the size of the Tooltip, specify the [height](/api-reference/10%20UI%2
         );
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <div>
-                    <img id="image" src="https://url/to/an/image" />
-                    <Tooltip
-                        target="#image"
-                        showEvent="dxhoverstart"
-                        hideEvent="dxhoverend"
-                        contentRender={renderContent}
-                        height={70}
-                        width={200}
-                    />
-                </div>
-            );
-        }
+    export default function App() {
+        return (
+            <div>
+                <img id="image" src="https://url/to/an/image" />
+                <Tooltip
+                    target="#image"
+                    showEvent="dxhoverstart"
+                    hideEvent="dxhoverend"
+                    contentRender={renderContent}
+                    height={70}
+                    width={200}
+                />
+            </div>
+        );
     }
-
-    export default App;
 
 ##### ASP.NET MVC Controls
 
@@ -225,23 +221,19 @@ If you need to position the Tooltip against a certain side of the [target elemen
         );
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <div>
-                    <img id="image" src="https://url/to/an/image" />
-                    <Tooltip
-                        target="#image"
-                        showEvent="dxhoverstart"
-                        hideEvent="dxhoverend"
-                        contentRender={renderContent}
-                        position="top"/> {/* or "bottom" | "left" | "right" */}
-                </div>
-            );
-        }
+    export default function App() {
+        return (
+            <div>
+                <img id="image" src="https://url/to/an/image" />
+                <Tooltip
+                    target="#image"
+                    showEvent="dxhoverstart"
+                    hideEvent="dxhoverend"
+                    contentRender={renderContent}
+                    position="top"/> {/* or "bottom" | "left" | "right" */}
+            </div>
+        );
     }
-
-    export default App;
 
 ##### ASP.NET MVC Controls
 

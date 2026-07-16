@@ -82,16 +82,13 @@ RTL layout can be specified for an individual UI component using its **rtlEnable
 
     import Slider from 'devextreme-react/slider';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Slider ...
-                    rtlEnabled={true}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Slider ...
+                rtlEnabled={true}
+            />
+        );
     }
-    export default App;
 
 ---
 

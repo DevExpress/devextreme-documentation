@@ -89,14 +89,10 @@ In the following code snippet, a standalone ListItem component is created to ren
         }
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <div style={{ maxWidth: 400 }}>
-                    <List activeStateEnabled={false} items={dataSource} itemComponent={ListItem} />
-                </div>
-            );
-        }
+    export default function App() {
+        return (
+            <div style={{ maxWidth: 400 }}>
+                <List activeStateEnabled={false} items={dataSource} itemComponent={ListItem} />
+            </div>
+        );
     }
-
-    export default App;

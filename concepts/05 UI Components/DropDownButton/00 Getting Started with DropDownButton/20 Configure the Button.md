@@ -37,15 +37,13 @@ Specify the button's [text](/api-reference/10%20UI%20Components/dxDropDownButton
 
     <!-- tab: App.js -->
     // ...
-    class App extends React.Component {
-        render() {
-            return (
-                <DropDownButton
-                    text="Sandra Johnson"
-                    icon="user"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <DropDownButton
+                text="Sandra Johnson"
+                icon="user"
+            />
+        );
     }
 
 ---

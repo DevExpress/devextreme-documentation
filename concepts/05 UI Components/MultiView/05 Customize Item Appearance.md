@@ -233,18 +233,14 @@ You can also customize individual views. Declare them using the [dxItem](/api-re
 
     import { MultiView, Item } from 'devextreme-react/multi-view';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <MultiView>
-                    <Item text="Personal Data"/>
-                    <Item text="Contacts"/>
-                </MultiView>
-            );
-        }
+    export default function App() {
+        return (
+            <MultiView>
+                <Item text="Personal Data"/>
+                <Item text="Contacts"/>
+            </MultiView>
+        );
     }
-
-    export default App;
 
 ##### jQuery
 

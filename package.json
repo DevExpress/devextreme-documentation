@@ -4,13 +4,16 @@
   "author": "Developer Express Inc.",
   "version": "26.1.0",
   "license": "UNLICENSED",
+  "engines": {
+    "node": "^24.16.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/DevExpress/devextreme-documentation.git"
   },
   "devDependencies": {
     "devextreme-internal-tools": "^18.2.0",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.2"
   },
   "scripts": {
     "make-compact-docs": "dx-tools make-compact-docs --docs-root-path ./",
@@ -27,7 +30,7 @@
     "convert-links": "ts-node ./tools/convert-links.js"
   },
   "dependencies": {
-    "@types/node": "^20.3.2"
+    "@types/node": "^24.0.0"
   },
-  "packageManager": "pnpm@10.15.0"
+  "packageManager": "pnpm@11.7.0+sha512.19cc852c120c7125760f2443ee6be0ca5b40f9f50598de1a09a1f177503e010e57c23c77646e01e761de59bf874fb22a3398c33ab9691fc13eb946b6f0f4d620"
 }

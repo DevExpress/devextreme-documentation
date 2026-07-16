@@ -134,7 +134,7 @@ The 'color' field accepts the following values:
             "build": {
               "options": {
                 "styles": [
-                  "node_modules/devextreme/dist/css/dx.light.css",
+                  "node_modules/devextreme/dist/css/dx.fluent.blue.light.css",
                   "node_modules/devexpress-gantt/dist/dx-gantt.css",
                   "src/styles.css"
                 ],
@@ -164,7 +164,7 @@ The 'color' field accepts the following values:
         </DxGantt>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         import 'devexpress-gantt/dist/dx-gantt.css'; 
 
         import { 

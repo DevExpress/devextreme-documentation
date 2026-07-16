@@ -119,7 +119,7 @@ To bind a UI component to a local array, pass this array to the UI component's [
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
     import DxSelectBox from 'devextreme-vue/select-box';
@@ -163,7 +163,7 @@ To bind a UI component to a local array, pass this array to the UI component's [
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
     import SelectBox from 'devextreme-react/select-box';
@@ -215,7 +215,7 @@ To bind a UI component to a local array, pass this array to the UI component's [
 
 If you plan to update the data or need to handle data-related events, wrap the array in an [ArrayStore](/api-reference/30%20Data%20Layer/ArrayStore '/Documentation/ApiReference/Data_Layer/ArrayStore/'). You can use the store's [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/ArrayStore/Configuration/#key') property instead of the UI component's **keyExpr** or **valueExpr**. You can further wrap the **ArrayStore** in a [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') if you need to filter, sort, group, and otherwise shape the data.
 
-The following example declares an **ArrayStore**, wraps it in a **DataSource**, and binds the [DataGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview) and [SelectBox](https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview) UI components to this **DataSource**:
+The following example declares an **ArrayStore**, wraps it in a **DataSource**, and binds the [DataGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/) and [SelectBox](https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview/) UI components to this **DataSource**:
 
 ---
 ##### jQuery
@@ -306,7 +306,7 @@ The following example declares an **ArrayStore**, wraps it in a **DataSource**, 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
     import DxSelectBox from 'devextreme-vue/select-box';
@@ -350,7 +350,7 @@ The following example declares an **ArrayStore**, wraps it in a **DataSource**, 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
     import SelectBox from 'devextreme-react/select-box';

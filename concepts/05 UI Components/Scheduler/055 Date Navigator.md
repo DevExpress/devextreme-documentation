@@ -1,8 +1,114 @@
-The date navigator is an element that allows you to change the date displayed on the view.
+The date navigator is a [predefined toolbar item](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerToolbar/items.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/') that allows you to change the displayed date in the dxScheduler.
 
 ![Scheduler Date Navigator](/images/UiWidgets/Scheduler_Date_Navigator.png)
 
-You can specify the range of available dates in the [min](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/min.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#min') and [max](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/max.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#max') properties:
+The date navigator is a DevExtreme [ButtonGroup](/api-reference/10%20UI%20Components/dxButtonGroup '/Documentation/ApiReference/UI_Components/dxButtonGroup/') with three buttons: previous date (*'prev'*), next date (*'next'*), and date interval (*'dateInterval'*). You can customize the order of these buttons or add new buttons using [options](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerToolbarItem/options.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/#options').**items**:
+
+---
+
+##### jQuery
+
+    <!--tab: index.js-->
+    $("#scheduler-container").dxScheduler({
+        // ...
+        toolbar: {
+            items: [{
+                name: "dateNavigator",      
+                options: {
+                    items: ['prev', 'dateInterval', 'next', {
+                        icon: 'more',
+                        onClick() {
+                            console.log("The custom button was clicked.")
+                        },
+                    }]
+                }
+            }]  
+        }
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-scheduler ... >
+        <dxo-scheduler-toolbar>
+            <dxi-scheduler-toolbar-item 
+                name="dateNavigator"
+                [options]="dateNavigatorOptions">
+            </dxi-scheduler-toolbar-item>
+        </dxo-scheduler-toolbar>
+    </dx-scheduler>
+
+    <!-- tab: app.component.ts -->
+    import { DxSchedulerModule } from 'devextreme-angular'
+    // ...
+    export class AppComponent {
+        dateNavigatorOptions = {
+            items: ['prev', 'dateInterval', 'next', {
+                icon: 'more',
+                onClick() {
+                    console.log("The custom button was clicked.")
+                },
+            }]
+        }
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler ... >
+            <DxToolbar>
+                <DxItem
+                    name="dateNavigator"
+                    :options="dateNavigatorOptions"
+                />
+            </DxToolbar>
+        </DxScheduler>
+    </template>
+    <script setup lang="ts">
+        import { DxScheduler, DxToolbar, DxItem } from 'devextreme-vue/scheduler';
+
+        const dateNavigatorOptions = {
+            items: ['prev', 'dateInterval', 'next', {
+                icon: 'more',
+                onClick() {
+                    console.log("The custom button was clicked.")
+                },
+            }]
+        }
+    </script>
+
+##### React
+
+    <!-- tab: App.tsx -->
+    import { Scheduler, Toolbar, Item } from 'devextreme-react/scheduler';
+    // ...
+
+    const dateNavigatorOptions = {
+        items: ['prev', 'dateInterval', 'next', {
+            icon: 'more',
+            onClick() {
+                console.log("The custom button was clicked.")
+            },
+        }]
+    };
+
+    function App() {
+        return (
+            <Scheduler ... >
+                <Toolbar>
+                    <Item
+                        name="dateNavigator"
+                        options={dateNavigatorOptions}
+                    />
+                </Toolbar>
+            </Scheduler>
+        );
+    }
+
+---
+
+You can configure the [customizeDateNavigatorText](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/customizeDateNavigatorText.md 'Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#customizeDateNavigatorText') callback to customize the date interval text. To customize the range of available dates in the date navigator, configure [min](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/min.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#min') and [max](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/max.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#max') properties:
 
 ---
 ##### jQuery
@@ -11,8 +117,8 @@ You can specify the range of available dates in the [min](/api-reference/10%20UI
     $(function() {
         $("#schedulerContainer").dxScheduler({
             // ...
-            min: new Date(2018, 2, 3),
-            max: new Date(2018, 4, 3)
+            min: new Date(2026, 2, 3),
+            max: new Date(2026, 4, 3)
         });
     });
 
@@ -25,90 +131,107 @@ You can specify the range of available dates in the [min](/api-reference/10%20UI
     </dx-scheduler>
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    import { DxSchedulerModule } from 'devextreme-angular'
+    // ...
     export class AppComponent {
-        minDate: Date = new Date(2018, 2, 3);
-        maxDate: Date = new Date(2018, 4, 3);
+        minDate: Date = new Date(2026, 2, 3);
+        maxDate: Date = new Date(2026, 4, 3);
     }
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxSchedulerModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxSchedulerModule
-        ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
         <DxScheduler
-            :min="min"
-            :max="max"
+            :min="minDate"
+            :max="maxDate"
         />
     </template>
 
-    <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
+    <script setup lang="ts">
     import { DxScheduler } from 'devextreme-vue/scheduler';
 
-    export default {
-        components: {
-            DxScheduler
-        },
-        data() {
-            return {
-                min: new Date(2018, 2, 3),
-                max: new Date(2018, 4, 3)
-            };
-        }
-    }
+    const minDate = new Date(2026, 2, 3);
+    const maxDate = new Date(2026, 4, 3);
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import Scheduler from 'devextreme-react/scheduler';
+    <!-- tab: App.tsx -->
+    import { Scheduler } from 'devextreme-react/scheduler';
     
-    const min = new Date(2018, 2, 3);
+    const minDate = new Date(2026, 2, 3);
+    const maxDate = new Date(2026, 4, 3);
 
-    const max = new Date(2018, 4, 3);
-
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler
-                    min={min}
-                    max={max}
-                />
-            );
-        }
+    function App() {
+        return (
+            <Scheduler
+                min={minDate}
+                max={maxDate}
+            />
+        );        
     }
-    export default App;
 
 ---
 
-Use the [customizeDateNavigatorText](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/customizeDateNavigatorText.md 'Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#customizeDateNavigatorText') function to customize the navigator's text. Refer to the function's description for an example.
+To hide the date navigator, configure **toolbar**.[items[]](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/items/) and omit *"dateNavigator"*. The following code snippet displays only the *"viewSwitcher"* predefined toolbar item:
+
+---
+##### jQuery
+
+    <!--tab: index.js-->
+    $("#scheduler-container").dxScheduler({
+        // ...
+        toolbar: {
+            items: ['viewSwitcher']
+        }
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-scheduler ... >
+        <dxo-scheduler-toolbar>
+            <dxi-scheduler-toolbar-item 
+                name="viewSwitcher"
+            </dxi-scheduler-toolbar-item>
+        </dxo-scheduler-toolbar>
+    </dx-scheduler>
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxScheduler ... >
+            <DxToolbar>
+                <DxItem
+                    name="viewSwitcher"
+                />
+            </DxToolbar>
+        </DxScheduler>
+    </template>
+    <script setup lang="ts">
+        import { DxScheduler, DxToolbar, DxItem } from 'devextreme-vue/scheduler';
+
+        // ...
+    </script>
+
+##### React
+
+    <!-- tab: App.tsx -->
+    import { Scheduler, Toolbar, Item } from 'devextreme-react/scheduler';
+    // ...
+
+    function App() {
+        return (
+            <Scheduler ... >
+                <Toolbar>
+                    <Item
+                        name="viewSwitcher"
+                    />
+                </Toolbar>
+            </Scheduler>
+        );
+    }
+
+---

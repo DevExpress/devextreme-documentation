@@ -761,6 +761,11 @@
       "react": "_ui_data_grid_AdaptiveDetailRowPreparingEvent",
       "vue": "Dx_ui_data_grid_AdaptiveDetailRowPreparingEvent"
     },
+    "_ui_data_grid_AIAssistantRequestCreatingEvent": {
+      "angular": "dxo-ui-data-grid--a-i-assistant-request-creating-event",
+      "react": "_ui_data_grid_AIAssistantRequestCreatingEvent",
+      "vue": "Dx_ui_data_grid_AIAssistantRequestCreatingEvent"
+    },
     "_ui_data_grid_AIColumnRequestCreatingEvent": {
       "angular": "dxo-ui-data-grid--a-i-column-request-creating-event",
       "react": "_ui_data_grid_AIColumnRequestCreatingEvent",
@@ -3505,6 +3510,14 @@
       "react": "_ui_scheduler_OptionChangedEvent",
       "vue": "Dx_ui_scheduler_OptionChangedEvent"
     },
+    "_ui_scheduler_SelectionEndEvent": {
+      "angular": "dxo-ui-scheduler--selection-end-event",
+      "react": "_ui_scheduler_SelectionEndEvent",
+      "vue": "Dx_ui_scheduler_SelectionEndEvent"
+    },
+    "_ui_scheduler_SelectionEndEvent.selectedCellData": {
+      "vue": "selected-cell-data"
+    },
     "_ui_scroll_view_DisposingEvent": {
       "angular": "dxo-ui-scroll-view--disposing-event",
       "react": "_ui_scroll_view_DisposingEvent",
@@ -4520,6 +4533,11 @@
       "angular": "dxo-ui-tree-list--adaptive-detail-row-preparing-event",
       "react": "_ui_tree_list_AdaptiveDetailRowPreparingEvent",
       "vue": "Dx_ui_tree_list_AdaptiveDetailRowPreparingEvent"
+    },
+    "_ui_tree_list_AIAssistantRequestCreatingEvent": {
+      "angular": "dxo-ui-tree-list--a-i-assistant-request-creating-event",
+      "react": "_ui_tree_list_AIAssistantRequestCreatingEvent",
+      "vue": "Dx_ui_tree_list_AIAssistantRequestCreatingEvent"
     },
     "_ui_tree_list_AIColumnRequestCreatingEvent": {
       "angular": "dxo-ui-tree-list--a-i-column-request-creating-event",
@@ -6014,6 +6032,32 @@
     "adaptiveDetailRowPreparingInfo.formOptions": {
       "vue": "form-options"
     },
+    "aiAssistant": {
+      "angular": "dxo-a-i-assistant",
+      "react": "AIAssistant",
+      "vue": "DxAIAssistant"
+    },
+    "aiAssistant.aiIntegration": {
+      "angular": "dxo-ai-integration",
+      "react": "AiIntegration",
+      "vue": "DxAiIntegration"
+    },
+    "aiAssistant.chat": {
+      "angular": "dxo-chat",
+      "react": "Chat",
+      "vue": "DxChat"
+    },
+    "aiAssistant.customizeResponseText": {
+      "vue": "customize-response-text"
+    },
+    "aiAssistant.customizeResponseTitle": {
+      "vue": "customize-response-title"
+    },
+    "aiAssistant.popup": {
+      "angular": "dxo-popup",
+      "react": "Popup",
+      "vue": "DxPopup"
+    },
     "aiChangeStyleCommand": {
       "angular": "dxo-a-i-change-style-command",
       "react": "AIChangeStyleCommand",
@@ -7216,6 +7260,9 @@
       "angular": "dxo-column",
       "react": "Column",
       "vue": "DxColumn"
+    },
+    "commandInfo": {
+      "vue": "command-info"
     },
     "commonIndicator.arrowLength": {
       "vue": "arrow-length"
@@ -10223,6 +10270,9 @@
       "react": "Chat",
       "vue": "DxChat"
     },
+    "dxChatOptions": {
+      "vue": "dx-chat-options"
+    },
     "dxChatOptions.activeStateEnabled": {
       "vue": "active-state-enabled"
     },
@@ -10349,6 +10399,11 @@
     },
     "dxChatOptions.speechToTextOptions": {
       "vue": "speech-to-text-options"
+    },
+    "dxChatOptions.suggestions": {
+      "angular": "dxo-suggestions",
+      "react": "Suggestions",
+      "vue": "DxSuggestions"
     },
     "dxChatOptions.tabIndex": {
       "vue": "tab-index"
@@ -10712,6 +10767,11 @@
     "dxDataGridColumnButton.onClick": {
       "vue": "@click"
     },
+    "dxDataGridOptions.aiAssistant": {
+      "angular": "dxo-ai-assistant",
+      "react": "AiAssistant",
+      "vue": "DxAiAssistant"
+    },
     "dxDataGridOptions.columns": {
       "angular": "dxi-column",
       "react": "Column",
@@ -10830,6 +10890,9 @@
     },
     "dxDataGridOptions.onAdaptiveDetailRowPreparing": {
       "vue": "@adaptive-detail-row-preparing"
+    },
+    "dxDataGridOptions.onAIAssistantRequestCreating": {
+      "vue": "@a-i-assistant-request-creating"
     },
     "dxDataGridOptions.onAIColumnRequestCreating": {
       "vue": "@a-i-column-request-creating"
@@ -18042,6 +18105,11 @@
     "dxSchedulerOptions.groupByDate": {
       "vue": "group-by-date"
     },
+    "dxSchedulerOptions.hiddenWeekDays": {
+      "angular": "dxi-hidden-week-day",
+      "react": "HiddenWeekDay",
+      "vue": "DxHiddenWeekDay"
+    },
     "dxSchedulerOptions.hoverStateEnabled": {
       "vue": "hover-state-enabled"
     },
@@ -18110,6 +18178,9 @@
     },
     "dxSchedulerOptions.onOptionChanged": {
       "vue": "@option-changed"
+    },
+    "dxSchedulerOptions.onSelectionEnd": {
+      "vue": "@selection-end"
     },
     "dxSchedulerOptions.recurrenceEditMode": {
       "vue": "recurrence-edit-mode"
@@ -18238,6 +18309,11 @@
     },
     "dxSchedulerOptions.views.groupOrientation": {
       "vue": "group-orientation"
+    },
+    "dxSchedulerOptions.views.hiddenWeekDays": {
+      "angular": "dxi-hidden-week-day",
+      "react": "HiddenWeekDay",
+      "vue": "DxHiddenWeekDay"
     },
     "dxSchedulerOptions.views.intervalCount": {
       "vue": "interval-count"
@@ -19873,6 +19949,9 @@
     "dxTreeListOptions.onAdaptiveDetailRowPreparing": {
       "vue": "@adaptive-detail-row-preparing"
     },
+    "dxTreeListOptions.onAIAssistantRequestCreating": {
+      "vue": "@a-i-assistant-request-creating"
+    },
     "dxTreeListOptions.onAIColumnRequestCreating": {
       "vue": "@a-i-column-request-creating"
     },
@@ -21098,6 +21177,9 @@
     "enums.DateType": {
       "vue": "date-type"
     },
+    "enums.DayOfWeek": {
+      "vue": "day-of-week"
+    },
     "enums.Direction": {
       "vue": "direction"
     },
@@ -21166,9 +21248,6 @@
     },
     "enums.FinancialChartReductionLevel": {
       "vue": "financial-chart-reduction-level"
-    },
-    "enums.FirstDayOfWeek": {
-      "vue": "first-day-of-week"
     },
     "enums.FixedPosition": {
       "vue": "fixed-position"
@@ -21284,6 +21363,9 @@
     "enums.MaskMode": {
       "vue": "mask-mode"
     },
+    "enums.MessageType": {
+      "vue": "message-type"
+    },
     "enums.Mode": {
       "vue": "mode"
     },
@@ -21394,6 +21476,9 @@
     },
     "enums.ResizeHandle": {
       "vue": "resize-handle"
+    },
+    "enums.ResponseStatus": {
+      "vue": "response-status"
     },
     "enums.RevealMode": {
       "vue": "reveal-mode"
@@ -21968,6 +22053,11 @@
     },
     "gridBaseColumnButton.cssClass": {
       "vue": "css-class"
+    },
+    "gridBaseOptions.aiAssistant": {
+      "angular": "dxo-ai-assistant",
+      "react": "AiAssistant",
+      "vue": "DxAiAssistant"
     },
     "gridBaseOptions.aiIntegration": {
       "angular": "dxo-ai-integration",
@@ -23033,6 +23123,11 @@
       "angular": "dxo-required-rule",
       "react": "RequiredRule",
       "vue": "DxRequiredRule"
+    },
+    "responseStatusTexts": {
+      "angular": "dxo-response-status-texts",
+      "react": "ResponseStatusTexts",
+      "vue": "DxResponseStatusTexts"
     },
     "rowUpdatingInfo.newData": {
       "angular": "dxo-new-data",

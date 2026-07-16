@@ -61,7 +61,7 @@ Specifies the root directory display name.
     </template>
 
     <script>
-        import 'devextreme/dist/css/dx.fluent.blue.light.css';    
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         
         import {
             DxFileManager

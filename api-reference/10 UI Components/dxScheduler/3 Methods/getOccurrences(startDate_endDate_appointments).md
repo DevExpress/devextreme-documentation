@@ -40,3 +40,7 @@ Use this method as follows:
     const occurrences = scheduler.getOccurrences(new Date(2026, 1, 2), new Date(2026, 1, 5), appointments); 
 
 Use the returned occurrences to implement custom logic for detecting overlapping appointments.
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/ResolveTimeConflicts/"
+}

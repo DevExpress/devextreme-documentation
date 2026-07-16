@@ -1,4 +1,4 @@
-To improve accessibility, use this property to specify <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label" target="_blank">aria-label</a> for the component.
+To improve accessibility, use this property to specify [aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label) for the component.
 
 ---
 ##### jQuery

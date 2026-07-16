@@ -128,8 +128,8 @@ Configures validation properties.
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .Validation(e => {
-            e.AutoUpdateParentTasks(true)
-            e.ValidateDependencies(true)
+            e.AutoUpdateParentTasks(true);
+            e.ValidateDependencies(true);
         })
         // ...
     )
@@ -139,8 +139,8 @@ Configures validation properties.
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .Validation(e => {
-            e.AutoUpdateParentTasks(true)
-            e.ValidateDependencies(true)
+            e.AutoUpdateParentTasks(true);
+            e.ValidateDependencies(true);
         })
         // ...
     )

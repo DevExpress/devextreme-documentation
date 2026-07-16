@@ -1,7 +1,6 @@
 ---
 id: PivotGridDataSource.Options.fields.dataType
 type: Enums.PivotGridDataType
-default: undefined
 ---
 ---
 ##### shortDescription

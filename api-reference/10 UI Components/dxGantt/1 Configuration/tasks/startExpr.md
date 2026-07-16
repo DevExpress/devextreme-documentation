@@ -1,11 +1,20 @@
 ---
 id: dxGantt.Options.tasks.startExpr
-type: String | function()
+type: String | function(task, value)
 default: 'start'
 ---
 ---
 ##### shortDescription
 Specifies the data field that provides tasks' start dates.
+
+##### param(task): any
+<!-- Description goes here -->
+
+##### param(value): any
+<!-- Description goes here -->
+
+##### return: any
+<!-- Description goes here -->
 
 ---
 If the field name in your data source differs from default 'start', use this property to map data fields:

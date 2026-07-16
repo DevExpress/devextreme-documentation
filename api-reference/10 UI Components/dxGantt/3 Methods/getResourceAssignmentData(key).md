@@ -1,4 +1,4 @@
----
+﻿---
 id: dxGantt.getResourceAssignmentData(key)
 ---
 ---
@@ -148,7 +148,7 @@ The resource assignment key.
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -156,7 +156,7 @@ The resource assignment key.
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.getResourceAssignmentData("res_assignment_key");
             // ...
         }
@@ -167,7 +167,7 @@ The resource assignment key.
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -175,7 +175,7 @@ The resource assignment key.
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.getResourceAssignmentData("res_assignment_key");
             // ...
         }

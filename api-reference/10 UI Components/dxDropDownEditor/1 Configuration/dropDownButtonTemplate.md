@@ -11,7 +11,7 @@ Specifies a custom template for the drop-down button.
 Information about the button.
 
 ##### field(buttonData.icon): String
-The button's icon.
+The button's [icon](/concepts/60%20Themes%20and%20Styles/30%20Icons/00%20Icons.md '/Documentation/Guide/Themes_and_Styles/Icons/').
 
 ##### field(buttonData.text): String
 The button's text.
@@ -24,7 +24,7 @@ A template name or container.
 
 ---
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Select_Box/CustomizeDropDownButton"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Select_Box/CustomizeDropDownButton/"
 }
 
 #####See Also#####

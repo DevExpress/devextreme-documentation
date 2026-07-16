@@ -75,7 +75,8 @@ Possible variants:
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
-    @(Html.DevExtreme().WidgetName()
+    @(Html.DevExtreme().DataGrid()
+        // ...
         .DataSourceOptions(dso => dso
             .Filter("[ 'count', '<', '10' ]")
         )

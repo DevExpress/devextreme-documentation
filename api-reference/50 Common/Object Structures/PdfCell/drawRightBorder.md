@@ -116,7 +116,7 @@ Specifies whether to show cell's right border.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
     import DxButton from 'devextreme-vue/button';
@@ -165,7 +165,7 @@ Specifies whether to show cell's right border.
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
     import Button from 'devextreme-react/button';

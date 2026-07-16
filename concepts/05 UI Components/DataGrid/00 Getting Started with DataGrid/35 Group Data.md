@@ -1,106 +1,81 @@
-Grid records can be grouped by single or multiple columns. To group records, users should drag and drop column headers onto the [groupPanel](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/groupPanel '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/groupPanel/'). Enable the **groupPanel**.[visible](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/groupPanel/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/groupPanel/#visible') property to display this UI element.
+#include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/DataGrid/Grouping/", name: "DataGrid - Grouping" }
 
-To group data in code, specify a column's [groupIndex](/api-reference/_hidden/dxDataGridColumn/groupIndex.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#groupIndex') property. In this tutorial, the [groupIndex](/api-reference/_hidden/dxDataGridColumn/groupIndex.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#groupIndex') is specified for the `Country` column:
+You can group DataGrid records against single or multiple columns. To group records in the UI, right-click column headers if **grouping**.[contextMenuEnabled](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/grouping/contextMenuEnabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/grouping/#contextMenuEnabled') is `true` (default). You can also drag and drop column headers onto the group panel if **groupPanel**.[visible](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/groupPanel/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/groupPanel/#visible') is `true`.
+
+To group data in code, define **columns[]**.[groupIndex](/api-reference/_hidden/dxDataGridColumn/groupIndex.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#groupIndex') property. This tutorial specifies **groupIndex** for the `Country` column:
 
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
-    $(function() {
-        $("#dataGrid").dxDataGrid({
-            columns: [
-            // ...
-            {
-                dataField: "Country",
-                // ...
-                groupIndex: 0,
-            },
-            // ...
-            ],
-            groupPanel: { visible: true },
-        });
+    $("#dataGrid").dxDataGrid({
+        groupPanel: { visible: true },
+        columns: [{
+            dataField: "Country",
+            groupIndex: 0,
+        }, /* ... */ ],
+        // ...
     });
+
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().DataGrid<Employee>()
+        .GroupPanel(p => p.Visible(true))
+        .Columns(columns => {
+            columns.AddFor(m => m.Country)
+                .GroupIndex(0);
+        })
+        @* ... *@
+    )
 
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-data-grid ... >
-        <!-- ... -->
+    <dx-data-grid>
+        <dxo-data-grid-group-panel [visible]="true"></dxo-data-grid-group-panel>
         <dxi-data-grid-column
             dataField="Country"
-            ...
-            [groupIndex]="0">
-        </dxi-data-grid-column>
-        <dxo-data-grid-group-panel [visible]="true"></dxo-data-grid-group-panel>
+            [groupIndex]="0"
+        ></dxi-data-grid-column>
+        <!-- ... -->
     </dx-data-grid>
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app-container">
-            <DxDataGrid ... >
-                <!-- ... -->
-                <DxColumn
-                    data-field="Country"
-                    ...
-                    :group-index="0">
-                </DxColumn>
-                <DxGroupPanel :visible="true" />
-            </DxDataGrid>
-        </div>
+        <DxDataGrid>
+            <DxGroupPanel :visible="true" />
+            <DxColumn
+                data-field="Country"
+                :group-index="0"
+            />
+            <!-- ... -->
+        </DxDataGrid>
     </template>
 
-    <script>
-    import {
-        DxDataGrid,
-        DxColumn,
-        // ...
-        DxGroupPanel
-    } from 'devextreme-vue/data-grid';
+    <script setup lang="ts">
+    import { DxDataGrid, DxGroupPanel, DxColumn } from 'devextreme-vue/data-grid';
 
-    export default {
-        components: {
-            DxDataGrid,
-            DxColumn,
-            // ...
-            DxGroupPanel
-        },
-        // ...
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import {
-        DataGrid,
-        Column,
-        // ...
-        GroupPanel
-    } from 'devextreme-react/data-grid';
+    <!-- tab: App.tsx -->
+    import { DataGrid, GroupPanel, Column } from 'devextreme-react/data-grid';
 
     function App() {
         return (
-            <div className="App">
-                <DataGrid ... >
-                    {/* ... */}
-                    <Column
-                        dataField="Country"
-                        ...
-                        groupIndex={0}>
-                    </Column>
-                    <GroupPanel visible={true} />
-                </DataGrid>
-            </div>
+            <DataGrid>
+                <GroupPanel visible={true} />
+                <Column
+                    dataField="Country"
+                    groupIndex={0}
+                />
+                {/* ... */}
+            </DataGrid>
         );
     }
 
-    export default App;
-
 ---
-
-If you run the code, records are grouped by the `Country` column. This column's header is on the group panel. Drag and drop column headers to and from the group panel to change the grouping.

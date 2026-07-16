@@ -120,7 +120,7 @@ To add a predefined item to the toolbar, specify its [name](/api-reference/_hidd
         </DxFileManager>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.fluent.blue.light.css';    
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         
         import {
             DxFileManager,
@@ -176,7 +176,7 @@ To add a predefined item to the toolbar, specify its [name](/api-reference/_hidd
 ##### ASP.NET Core Controls
 
     <!--Razor C#-->
-    @(Html.DevExtreme().Gantt()
+    @(Html.DevExtreme().FileManager()
         .Toolbar(toolbar => {
             toolbar.Items(items => {
                 // Specifies a predefined item's name and optional settings
@@ -196,7 +196,7 @@ To add a predefined item to the toolbar, specify its [name](/api-reference/_hidd
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
-    @(Html.DevExtreme().Gantt()
+    @(Html.DevExtreme().FileManager()
         .Toolbar(toolbar => {
             toolbar.Items(items => {
                 // Specifies a predefined item's name and optional settings
@@ -353,7 +353,7 @@ The [widget](/api-reference/_hidden/dxFileManagerToolbarItem/widget.md '/Documen
         </DxFileManager>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.fluent.blue.light.css';    
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         
         import {
             DxFileManager,
@@ -456,7 +456,7 @@ The [widget](/api-reference/_hidden/dxFileManagerToolbarItem/widget.md '/Documen
 ##### ASP.NET Core Controls
 
     <!--Razor C#-->
-    @(Html.DevExtreme().Gantt()
+    @(Html.DevExtreme().FileManager()
         .Toolbar(toolbar => {
             toolbar.Items(items => {
                 items.Add()
@@ -479,7 +479,7 @@ The [widget](/api-reference/_hidden/dxFileManagerToolbarItem/widget.md '/Documen
                         })
                         .OnItemClick("onItemClick")
                     );
-            })
+            });
         })
     )
 
@@ -493,7 +493,7 @@ The [widget](/api-reference/_hidden/dxFileManagerToolbarItem/widget.md '/Documen
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
-    @(Html.DevExtreme().Gantt()
+    @(Html.DevExtreme().FileManager()
         .Toolbar(toolbar => {
             toolbar.Items(items => {
                 items.Add()

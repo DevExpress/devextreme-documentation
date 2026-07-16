@@ -12,5 +12,5 @@ Specifies a visual indicator for validation.
 - If `undefined`, a step shows no validation information.
 
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Stepper/FormIntegration"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Stepper/FormIntegration/"
 }

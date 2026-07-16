@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.onAdaptiveDetailRowPreparing
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription
@@ -89,7 +88,7 @@ The following Form properties cannot be specified using **formOptions**:
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName} from 'devextreme-vue/{widget-name}';
   
@@ -117,7 +116,7 @@ The following Form properties cannot be specified using **formOptions**:
     </template>
 
     <script setup>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName} from 'devextreme-vue/{widget-name}';
     
@@ -135,7 +134,7 @@ The following Form properties cannot be specified using **formOptions**:
     <!-- tab: App.js -->
     import { useCallback } from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName} from 'devextreme-react/{widget-name}';
 

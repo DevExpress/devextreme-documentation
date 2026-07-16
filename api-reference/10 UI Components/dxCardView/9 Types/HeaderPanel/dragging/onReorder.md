@@ -1,7 +1,6 @@
 ---
 id: HeaderPanel.dragging.onReorder
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

@@ -66,7 +66,7 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxColumn 
@@ -86,7 +86,7 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         Column
@@ -116,15 +116,6 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
             .DataField("CountryID")
             .CalculateDisplayValue("Country")
         )
-    )
-
-    <!--Razor VB-->
-    @(Html.DevExtreme().{WidgetName}() _
-        .Columns(Sub(columns)
-            columns.Add() _
-                .DataField("CountryID") _
-                .CalculateDisplayValue("Country")
-        End Sub)        
     )
 
 ---
@@ -184,7 +175,7 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxColumn 
@@ -208,7 +199,7 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         Column
@@ -250,14 +241,6 @@ This property accepts the name of the [data source field](/api-reference/10%20UI
         }        
     </script>
 
-    <!--Razor VB-->
-    @(Html.DevExtreme().{WidgetName}() _
-        .Columns(Sub(columns)
-            columns.Add() _
-                .DataField("CountryID") _
-                .CalculateDisplayValue(New JS("getCountryWithCapital"))
-        End Sub)        
-    )
 
     <script>
         function getCountryWithCapital(rowData) {

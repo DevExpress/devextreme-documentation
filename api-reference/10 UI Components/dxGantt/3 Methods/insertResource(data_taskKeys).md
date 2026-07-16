@@ -1,4 +1,4 @@
----
+﻿---
 id: dxGantt.insertResource(data, taskKeys)
 ---
 ---
@@ -173,7 +173,7 @@ An array of task keys.
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -181,7 +181,7 @@ An array of task keys.
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             // Inserts a new resource 
             ganttInstance.insertResource({ text: "New Resource" });
 
@@ -198,7 +198,7 @@ An array of task keys.
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -206,7 +206,7 @@ An array of task keys.
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             // Inserts a new resource 
             ganttInstance.insertResource({ text: "New Resource" });
 

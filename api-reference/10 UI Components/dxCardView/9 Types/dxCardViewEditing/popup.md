@@ -21,5 +21,5 @@ The popup always contains a form whose items are used for editing. Use the [form
 }
 
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CardView/PopupEditing"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CardView/PopupEditing/"
 }

@@ -80,7 +80,7 @@ To access an OData service, implement the [ODataStore](/api-reference/30%20Data%
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
     import ODataStore from 'devextreme/data/odata/store';
@@ -111,7 +111,7 @@ To access an OData service, implement the [ODataStore](/api-reference/30%20Data%
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
     import ODataStore from 'devextreme/data/odata/store';
@@ -140,7 +140,7 @@ To access an OData service, implement the [ODataStore](/api-reference/30%20Data%
 
 Data from the **ODataStore** can be shaped (filtered, sorted, grouped, etc.) in the [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/').
 
-The following example declares an **ODataStore**, wraps it in a **DataSource**, and binds the [DataGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview) UI component to this **DataSource**:
+The following example declares an **ODataStore**, wraps it in a **DataSource**, and binds the [DataGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Overview/) UI component to this **DataSource**:
 
 ---
 ##### jQuery
@@ -223,7 +223,7 @@ The following example declares an **ODataStore**, wraps it in a **DataSource**, 
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
     import ODataStore from 'devextreme/data/odata/store';
@@ -255,7 +255,7 @@ The following example declares an **ODataStore**, wraps it in a **DataSource**, 
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
     import ODataStore from 'devextreme/data/odata/store';

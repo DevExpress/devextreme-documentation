@@ -79,7 +79,7 @@ To make your gauge "live", enable animation for it by setting the **enabled** pr
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxAnimation
@@ -99,7 +99,7 @@ To make your gauge "live", enable animation for it by setting the **enabled** pr
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         Animation 
@@ -123,7 +123,7 @@ To make your gauge "live", enable animation for it by setting the **enabled** pr
 
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().{WidgetName}()
-        @* ... *@
+        // ...
         .Animation(a => a
             .Easing(VizAnimationEasing.Linear)
             .Duration(500)

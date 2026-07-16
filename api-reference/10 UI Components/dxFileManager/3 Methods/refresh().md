@@ -84,7 +84,7 @@ The following example illustrates how to use this method:
     </template>
 
     <script>
-        import 'devextreme/dist/css/dx.fluent.blue.light.css';    
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         
         import {
             DxFileManager
@@ -162,7 +162,7 @@ The following example illustrates how to use this method:
             return $("#fileManager").dxFileManager("instance");
         }
         function yourCustomMethod() {
-            var fileManagerInstance = getFileManagerInstance();
+            const fileManagerInstance = getFileManagerInstance();
             fileManagerInstance.refresh();
             // ...
         }
@@ -180,7 +180,7 @@ The following example illustrates how to use this method:
             return $("#fileManager").dxFileManager("instance");
         }
         function yourCustomMethod() {
-            var fileManagerInstance = getFileManagerInstance();
+            const fileManagerInstance = getFileManagerInstance();
             fileManagerInstance.refresh();
             // ...
         }

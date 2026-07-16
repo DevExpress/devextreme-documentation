@@ -64,7 +64,7 @@ A custom function is useful when advanced formatting is required. The value to b
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxSlider, {
         DxTooltip
@@ -93,7 +93,7 @@ A custom function is useful when advanced formatting is required. The value to b
 
     <!-- tab: App.js -->
     import React, { useCallback } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Slider, {
         Tooltip

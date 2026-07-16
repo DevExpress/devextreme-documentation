@@ -1,4 +1,4 @@
----
+﻿---
 id: dxGantt.expandTask(key)
 ---
 ---
@@ -121,7 +121,7 @@ The **expandTask** method expands a task's parent tasks and the task itself.
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -129,7 +129,7 @@ The **expandTask** method expands a task's parent tasks and the task itself.
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.expandTask("task_key");
             // ...
         }
@@ -140,7 +140,7 @@ The **expandTask** method expands a task's parent tasks and the task itself.
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -148,7 +148,7 @@ The **expandTask** method expands a task's parent tasks and the task itself.
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.expandTask("task_key");
             // ...
         }

@@ -382,7 +382,7 @@ You can also customize individual tiles. Declare them using the [dxItem](/api-re
 
 #####See Also#####
 - [TileView - Specify the Size of Tiles](/concepts/05%20UI%20Components/TileView/03%20Specify%20the%20Size%20of%20Tiles.md '/Documentation/Guide/UI_Components/TileView/Specify_the_Size_of_Tiles')
-- [TileView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TileView/Overview)
+- [TileView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TileView/Overview/)
 - [TileView API Reference](/api-reference/10%20UI%20Components/dxTileView '/Documentation/ApiReference/UI_Components/dxTileView/')
 
 [tags]tile view, tileView, item appearance, tile appearance, customize, templates, template, custom template

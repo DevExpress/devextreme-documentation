@@ -99,7 +99,7 @@ Configures the column chooser's search functionality.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import Dx{WidgetName}, {
         DxColumnChooser, 
         DxColumnChooserSearch,
@@ -137,7 +137,7 @@ Configures the column chooser's search functionality.
     </template>
 
     <script setup>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import Dx{WidgetName}, {
         DxColumnChooser, 
         DxColumnChooserSearch,
@@ -156,7 +156,7 @@ Configures the column chooser's search functionality.
 
     <!-- tab: App.js -->
     import React from 'react';  
-    import 'devextreme/dist/css/dx.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         ColumnChooser, 

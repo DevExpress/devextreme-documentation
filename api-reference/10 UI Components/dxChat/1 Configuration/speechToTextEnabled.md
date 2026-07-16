@@ -13,3 +13,7 @@ This option displays a [SpeechToText](/concepts/05%20UI%20Components/SpeechToTex
 The Speech-to-Text feature uses the standard browser [Speech Recognition API](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition) and is only available in browsers that support it. To use a custom speech recognition engine, define `customSpeechRecognizer` in the [speechToTextOptions](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/speechToTextOptions.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#speechToTextOptions') object.
 
 Use `speechToTextOptions` to configure the feature's behavior and appearance.
+
+#include btn-open-demo with {
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Chat/Overview/"
+}

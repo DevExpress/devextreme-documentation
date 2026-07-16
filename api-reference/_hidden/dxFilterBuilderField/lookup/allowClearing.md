@@ -10,7 +10,7 @@ Specifies whether to display the Clear button in the lookup field while it is be
 ---
 Set this property to **true** only if your data source accepts null values.
 
-If you need to specify this property based on a condition, set the [showClearButton](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/showClearButton.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#showClearButton') property instead. This is a property of the [SelectBox](https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview) UI component, which is used as an editor for lookup fields. **allowClearing** is an alias for this property in the {WidgetName}. The following code shows how to set **showClearButton** in the [onEditorPreparing](/api-reference/10%20UI%20Components/dxFilterBuilder/1%20Configuration/onEditorPreparing.md '{basewidgetpath}/Configuration/#onEditorPreparing') event handler:
+If you need to specify this property based on a condition, set the [showClearButton](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/showClearButton.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#showClearButton') property instead. This is a property of the [SelectBox](https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview/) UI component, which is used as an editor for lookup fields. **allowClearing** is an alias for this property in the {WidgetName}. The following code shows how to set **showClearButton** in the [onEditorPreparing](/api-reference/10%20UI%20Components/dxFilterBuilder/1%20Configuration/onEditorPreparing.md '{basewidgetpath}/Configuration/#onEditorPreparing') event handler:
 
 ---
 ##### jQuery
@@ -81,7 +81,7 @@ If you need to specify this property based on a condition, set the [showClearBut
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
 
@@ -105,7 +105,7 @@ If you need to specify this property based on a condition, set the [showClearBut
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName} from 'devextreme-react/{widget-name}';
 

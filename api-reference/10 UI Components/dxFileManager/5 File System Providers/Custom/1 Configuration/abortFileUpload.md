@@ -97,7 +97,7 @@ A Promise that is resolved after the file upload in aborted.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DxFileManager } from 'devextreme-vue/file-manager';
     import CustomFileSystemProvider from 'devextreme/file_management/custom_provider';
 
@@ -165,7 +165,7 @@ A Promise that is resolved after the file upload in aborted.
     )
 
     <script>
-        function abortfileUpload(fileData, chunksInfo, destinationDir) {
+        function abortFileUpload(fileData, chunksInfo, destinationDir) {
             // ...
         }
         // other functions
@@ -182,7 +182,7 @@ A Promise that is resolved after the file upload in aborted.
     )
 
     <script>
-        function abortfileUpload(fileData, chunksInfo, destinationDir) {
+        function abortFileUpload(fileData, chunksInfo, destinationDir) {
             // ...
         }
         // other functions

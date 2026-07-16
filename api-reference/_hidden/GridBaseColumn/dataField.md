@@ -9,28 +9,28 @@ Binds the column to a field of the [dataSource](/api-reference/10%20UI%20Compone
 
 ---
 
-The **columns** array can contain column objects and data field names as strings. If you use column objects, specify the **dataField** property to bind the object to a column from a data source:
-
 ---
 ##### jQuery
 
-    <!--JavaScript-->$(function() {
-        $("#{widgetName}Container").dx{WidgetName}({
-            // ...
-            columns: [
-                "CustomerID",
-                { dataField: "EmployeeID", width: 200 },
-                "OrderDate",
-                { dataField: "Freight", format: "fixedPoint" },
-                "ShipName",
-                "ShipCity"
-            ]
-        });
+To specify only the **dataField** property in a column, you can add data field names as strings to the **columns** array. The following code snippet uses this approach for four columns:
+
+    <!-- tab: index.js -->
+    $("#{widget-name}-container").dx{WidgetName}({
+        columns: [
+            "CustomerID",
+            { dataField: "EmployeeID", width: 200 },
+            "OrderDate",
+            { dataField: "Freight", format: "fixedPoint" },
+            "ShipName",
+            "ShipCity",
+        ]
     });
 
 ##### Angular
+
+The following code snippet configures six columns:
     
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
         <dxi-{widget-name}-column dataField="CustomerID"></dxi-{widget-name}-column>
         <dxi-{widget-name}-column dataField="EmployeeID" [width]="200"></dxi-{widget-name}-column>
@@ -40,21 +40,18 @@ The **columns** array can contain column objects and data field names as strings
         <dxi-{widget-name}-column dataField="ShipCity"></dxi-{widget-name}-column>
     </dx-{widget-name}>
 
-    <!--TypeScript-->
+    <!-- tab: app.component.ts -->
     import { Dx{WidgetName}Module } from "devextreme-angular";
     // ...
-    export class AppComponent {
-        // ...
-    }
     @NgModule({
         imports: [
-            // ...
             Dx{WidgetName}Module
         ],
-        // ...
     })
 
 ##### Vue
+
+The following code snippet configures six columns:
 
     <!-- tab: App.vue -->
     <template>
@@ -69,30 +66,16 @@ The **columns** array can contain column objects and data field names as strings
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import { Dx{WidgetName}, DxColumn } from 'devextreme-vue/{widget-name}';
 
-    import Dx{WidgetName}, {
-        DxColumn
-    } from 'devextreme-vue/{widget-name}';
-
-    export default {
-        components: {
-            Dx{WidgetName},
-            DxColumn
-        },
-        // ...
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+The following code snippet configures six columns:
 
-    import {WidgetName}, {
-        Column
-    } from 'devextreme-react/{widget-name}';
+    <!-- tab: App.tsx -->
+    import { {WidgetName}, Column } from 'devextreme-react/{widget-name}';
 
     export default function App() {
         return (
@@ -113,7 +96,7 @@ The **columns** array can contain column objects and data field names as strings
 
 Review the following notes about data binding:
 
-- If you create an unbound column (use the [calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue') function), specify the **columns[]**.[name](/api-reference/_hidden/GridBaseColumn/name.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#name') property instead of **dataField**.
+- If you create an unbound column (use the [calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue') function), specify the **columns[]**.[name](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns/name.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#name') property instead of **dataField**.
 
 - Data field names cannot be equal to `this` and should not contain the following characters: `.`, `:`, `[`, and `]`.
 

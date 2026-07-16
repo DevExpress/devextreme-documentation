@@ -1,4 +1,4 @@
----
+﻿---
 id: dxGantt.getVisibleDependencyKeys()
 ---
 ---
@@ -146,7 +146,7 @@ The keys.
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -154,7 +154,7 @@ The keys.
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.getVisibleDependencyKeys();
             // ...
         }
@@ -165,7 +165,7 @@ The keys.
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -173,7 +173,7 @@ The keys.
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.getVisibleDependencyKeys();
             // ...
         }

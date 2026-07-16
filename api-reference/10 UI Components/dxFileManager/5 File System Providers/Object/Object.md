@@ -30,7 +30,7 @@ The following code shows how to bind the FileManager to the **Object** file syst
     });
 
     <!-- tab: data.js -->
-    var fileSystem = [
+    const fileSystem = [
     {
         name: "Documents",
         isDirectory: true,
@@ -122,7 +122,7 @@ The following code shows how to bind the FileManager to the **Object** file syst
     </template>
     
     <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';     
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
     import { 
         DxFileManager
@@ -215,6 +215,30 @@ The following code shows how to bind the FileManager to the **Object** file syst
 
     <script src="~/data/fileSystem.js"></script>
 
+    <!-- tab: data.js -->
+    const fileSystem = [
+    {
+        name: "Documents",
+        isDirectory: true,
+        items: [{
+            name: "Projects",
+            isDirectory: true,
+            items: [{
+                name: "About.rtf",
+                isDirectory: false,
+                size: 1024
+            }, {
+                name: "Passwords.rtf",
+                isDirectory: false,
+                size: 2048
+            }]
+        }, {
+            name: "About.xml",
+            isDirectory: false,
+            size: 1024
+        }]
+    }];
+
 ##### ASP.NET Core Controls
 
     <!--Razor C#-->
@@ -223,5 +247,29 @@ The following code shows how to bind the FileManager to the **Object** file syst
     )
 
     <script src="~/data/fileSystem.js"></script>
+
+    <!-- tab: data.js -->
+    const fileSystem = [
+    {
+        name: "Documents",
+        isDirectory: true,
+        items: [{
+            name: "Projects",
+            isDirectory: true,
+            items: [{
+                name: "About.rtf",
+                isDirectory: false,
+                size: 1024
+            }, {
+                name: "Passwords.rtf",
+                isDirectory: false,
+                size: 2048
+            }]
+        }, {
+            name: "About.xml",
+            isDirectory: false,
+            size: 1024
+        }]
+    }];
 
 ---

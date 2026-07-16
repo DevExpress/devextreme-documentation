@@ -159,7 +159,7 @@ Note that the **container** parameter contains the content of the default toolti
 
     <script>
         function getTaskTooltipContentTemplate(task, container) {
-            var $customTooltip = $(document.createElement("div"))
+            const $customTooltip = $(document.createElement("div"))
                 .addClass("custom-task-edit-tooltip");
 
             $(document.createElement("div"))

@@ -1,4 +1,4 @@
-An OLAP cube is a multi-dimensional dataset that allows data mining and analysis. DevExtreme provides the [PivotGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/Overview) UI component to display data from an OLAP cube.
+An OLAP cube is a multi-dimensional dataset that allows data mining and analysis. DevExtreme provides the [PivotGrid](https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/Overview/) UI component to display data from an OLAP cube.
 
 To access an OLAP cube, implement the [XmlaStore](/api-reference/30%20Data%20Layer/XmlaStore '/Documentation/ApiReference/Data_Layer/XmlaStore/'): specify the OLAP server's [url](/api-reference/30%20Data%20Layer/XmlaStore/1%20Configuration/url.md '/Documentation/ApiReference/Data_Layer/XmlaStore/Configuration/#url'), the [catalog](/api-reference/30%20Data%20Layer/XmlaStore/1%20Configuration/catalog.md '/Documentation/ApiReference/Data_Layer/XmlaStore/Configuration/#catalog') that contains the OLAP cube that you access, and the [cube](/api-reference/30%20Data%20Layer/XmlaStore/1%20Configuration/cube.md '/Documentation/ApiReference/Data_Layer/XmlaStore/Configuration/#cube').
 
@@ -87,7 +87,7 @@ Wrap the **XmlaStore** into a **PivotGridDataSource**. This component enables yo
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxPivotGrid from 'devextreme-vue/pivot-grid';
     import XmlaStore from 'devextreme/ui/pivot_grid/xmla_store';
@@ -120,7 +120,7 @@ Wrap the **XmlaStore** into a **PivotGridDataSource**. This component enables yo
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import PivotGrid from 'devextreme-react/pivot-grid';
     import XmlaStore from 'devextreme/ui/pivot_grid/xmla_store';

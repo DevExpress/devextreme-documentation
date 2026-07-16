@@ -1,7 +1,7 @@
 ---
 id: dxPivotGrid.Options.onExporting
-type: function(e)
-default: null
+type: function(e) | undefined
+default: undefined
 ---
 ---
 ##### shortDescription

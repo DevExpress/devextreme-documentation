@@ -275,5 +275,5 @@ To navigate to a specific image, call the [goToItem(itemIndex, animation)](/api-
 ---
 
 #####See Also#####
-- [Gallery Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gallery/Overview)
+- [Gallery Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Gallery/Overview/)
 - [Gallery API Reference](/api-reference/10%20UI%20Components/dxGallery '/Documentation/ApiReference/UI_Components/dxGallery/')

@@ -18,6 +18,21 @@ To configure how a Chart displays data, specify **series** object properties. Th
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Chart()
+        .Series(s => {
+            s.Add()
+                .Type(SeriesType.Bar)
+                .ArgumentField("Month")
+                .ValueField("TargetSpend")
+                .Name("Budget")
+                .Color("#5996ff");
+        })
+        @* ... *@
+    )
+
 ##### Angular
 
     <!-- tab: app.component.html -->

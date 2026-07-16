@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.onKeyDown
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription
@@ -97,7 +96,7 @@ The following code shows how to handle a key combination:
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
 
@@ -120,7 +119,7 @@ The following code shows how to handle a key combination:
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName} from 'devextreme-react/{widget-name}';
 
@@ -142,3 +141,5 @@ The following code shows how to handle a key combination:
     export default App;
 
 ---
+
+[note] When a drop-down editor in the {WidgetName} has focus, **onKeyDown** does not fire for up and down arrow key presses

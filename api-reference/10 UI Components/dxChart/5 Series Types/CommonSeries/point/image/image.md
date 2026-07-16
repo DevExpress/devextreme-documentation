@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.point.image
-type: String | undefined | Object
+type: String | Object | undefined
 default: undefined
 ---
 ---

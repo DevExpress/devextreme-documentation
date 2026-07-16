@@ -4,7 +4,7 @@ type: function(columns)
 ---
 ---
 ##### shortDescription
-Customizes columns in [details view](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/BindingToHierarchicalStructure). Applies only if **itemView**.[mode](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/itemView/mode.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/itemView/#mode') is *"details"*.
+Customizes columns in [details view](https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/BindingToHierarchicalStructure/). Applies only if **itemView**.[mode](/api-reference/10%20UI%20Components/dxFileManager/1%20Configuration/itemView/mode.md '/Documentation/ApiReference/UI_Components/dxFileManager/Configuration/itemView/#mode') is *"details"*.
 
 ##### param(columns): Array<dxFileManagerDetailsColumn>
 The columns before customization.
@@ -144,7 +144,7 @@ The columns after customization.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        @* ... *@
+        // ...
         .CustomizeDetailColumns("customizeDetailColumns")
     )
 
@@ -161,7 +161,7 @@ The columns after customization.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        @* ... *@
+        // ...
         .CustomizeDetailColumns("customizeDetailColumns")
     )
 

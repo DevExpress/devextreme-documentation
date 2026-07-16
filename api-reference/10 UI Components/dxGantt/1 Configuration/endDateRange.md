@@ -20,8 +20,8 @@ Specifies the end date of the date interval in the Gantt chart.
     <!--JavaScript-->
     $(function() {
         $("#gantt").dxGantt({
-            startDateRange: new Date(2018, 01, 1),
-            endDateRange: new Date(2020, 01, 1)
+            startDateRange: new Date(2024, 01, 1),
+            endDateRange: new Date(2026, 01, 1)
             // ...
         });
     });
@@ -49,8 +49,8 @@ Specifies the end date of the date interval in the Gantt chart.
         endDateRange: Date;
         
         constructor() {
-            startDateRange: new Date("2018/01/01");
-            endDateRange: new Date("2020/01/01");
+            startDateRange: new Date("2024/01/01");
+            endDateRange: new Date("2026/01/01");
         }
     }
 
@@ -96,8 +96,8 @@ Specifies the end date of the date interval in the Gantt chart.
             },
             data() {
                 return {
-                    startDateRange: new Date(2018, 12, 1),
-                    endDateRange: new Date(2020, 12, 1),
+                    startDateRange: new Date(2024, 12, 1),
+                    endDateRange: new Date(2026, 12, 1),
                 }
             }
         };
@@ -116,8 +116,8 @@ Specifies the end date of the date interval in the Gantt chart.
     } from 'devextreme-react/gantt';
 
     const App = () => {
-        const startDateRange = new Date(2018, 1, 1);
-        const endDateRange = new Date(2020, 1, 1);
+        const startDateRange = new Date(2024, 1, 1);
+        const endDateRange = new Date(2026, 1, 1);
 
         return (
             <Gantt
@@ -134,8 +134,8 @@ Specifies the end date of the date interval in the Gantt chart.
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
-        .StartDateRange(new Date("January 1, 2018"))
-        .EndDateRange(new Date("January 1, 2020"))
+        .StartDateRange(new DateTime(2024, 1, 1))
+        .EndDateRange(new DateTime(2026, 1, 1))
         // ...
     )
 
@@ -143,8 +143,8 @@ Specifies the end date of the date interval in the Gantt chart.
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
-        .StartDateRange(new Date("January 1, 2018"))
-        .EndDateRange(new Date("January 1, 2020"))
+        .StartDateRange(new DateTime(2024, 1, 1))
+        .EndDateRange(new DateTime(2026, 1, 1))
         // ...
     )
 

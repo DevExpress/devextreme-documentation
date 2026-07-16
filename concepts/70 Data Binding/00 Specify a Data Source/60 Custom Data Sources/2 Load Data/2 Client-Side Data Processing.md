@@ -83,7 +83,7 @@ To process data on the client, load all data from the server in the [load](/api-
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxList from 'devextreme-vue/list';
     import 'whatwg-fetch';
@@ -123,7 +123,7 @@ To process data on the client, load all data from the server in the [load](/api-
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import List from 'devextreme-react/list';
     import 'whatwg-fetch';

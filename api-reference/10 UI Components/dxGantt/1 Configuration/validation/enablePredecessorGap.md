@@ -137,8 +137,8 @@ The **enablePredecessorGap** option allows users to increase/decrease the gap be
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .Validation(e => {
-            e.EnablePredecessorGap(true)
-            e.ValidateDependencies(true)
+            e.EnablePredecessorGap(true);
+            e.ValidateDependencies(true);
         })
         // ...
     )
@@ -148,8 +148,8 @@ The **enablePredecessorGap** option allows users to increase/decrease the gap be
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .Validation(e => {
-            e.EnablePredecessorGap(true)
-            e.ValidateDependencies(true)
+            e.EnablePredecessorGap(true);
+            e.ValidateDependencies(true);
         })
         // ...
     )

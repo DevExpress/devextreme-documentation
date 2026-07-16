@@ -4,4 +4,4 @@ This property accepts either the name of a [predefined palette](/concepts/60%20T
 * RGB colors
 * RGBA colors
 * Predefined/cross-browser color names
-* <a href="https://www.w3.org/TR/SVG11/types.html#ColorKeywords" target="_blank">Predefined SVG colors</a>
+* [Predefined SVG colors](https://www.w3.org/TR/SVG11/types.html#ColorKeywords)

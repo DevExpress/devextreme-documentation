@@ -138,7 +138,7 @@ The processed file or directory.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .OnErrorOccurred("onError");
+        .OnErrorOccurred("onError")
         // ...
     )
 
@@ -152,7 +152,7 @@ The processed file or directory.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .OnErrorOccurred("onError");
+        .OnErrorOccurred("onError")
         // ...
     )
 

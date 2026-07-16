@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout Docs
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - uses: ./.github/actions/setup-env
 
@@ -19,7 +19,7 @@ jobs:
         run: npm run validate-docs
 
       - name: Archive internal-tools artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: internal-tools-artifacts-validation
           path: artifacts/internal-tools/
@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Docs
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - uses: ./.github/actions/setup-env
 
@@ -39,7 +39,7 @@ jobs:
         run: npm run generate-content-map
 
       - name: Archive internal-tools artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: internal-tools-artifacts-build
           path: artifacts/internal-tools/
@@ -51,7 +51,7 @@ jobs:
     name: Check links
     steps:
       - name: Checkout Docs
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - uses: ./.github/actions/setup-env
 
@@ -62,7 +62,7 @@ jobs:
         run: npm run validate-links
 
       - name: Archive internal-tools artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: internal-tools-artifacts-link
           path: artifacts/internal-tools/
@@ -77,7 +77,7 @@ jobs:
   #     run: npm run validate-modules-guide
 
   #   - name: Archive internal-tools artifacts
-  #     uses: actions/upload-artifact@v4
+  #     uses: actions/upload-artifact@v7
   #     with:
   #       name: internal-tools-artifacts
   #       path: artifacts/internal-tools/
@@ -89,7 +89,7 @@ jobs:
 
     steps:
       - name: Merge artifacts
-        uses: actions/upload-artifact/merge@v4
+        uses: actions/upload-artifact/merge@v7
         continue-on-error: true
         with:
           name: internal-tools-artifacts

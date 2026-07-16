@@ -51,7 +51,7 @@ Specifies the attributes to be passed on to the underlying HTML element.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
 
@@ -70,7 +70,7 @@ Specifies the attributes to be passed on to the underlying HTML element.
 ##### React
 
     <!-- tab: App.js -->
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName} from 'devextreme-react/{widget-name}';
 
@@ -86,7 +86,8 @@ Specifies the attributes to be passed on to the underlying HTML element.
 
 ##### ASP.NET MVC Controls
 
-    <!--Razor C#-->@(Html.DevExtreme().{WidgetName}()
+    <!--Razor C#-->
+    @(Html.DevExtreme().{WidgetName}()
         .InputAttr("id", "inputId")
         // ===== or =====
         .InputAttr(new {
@@ -94,18 +95,6 @@ Specifies the attributes to be passed on to the underlying HTML element.
         })
         // ===== or =====
         .InputAttr(new Dictionary<string, object>() {
-            { "id", "inputId" }
-        })
-    )
-
-    <!--Razor VB-->@(Html.DevExtreme().{WidgetName}() _
-        .InputAttr("id", "inputId")
-        ' ===== or =====
-        .InputAttr(New With {
-            .id = "inputId"
-        })
-        ' ===== or =====
-        .InputAttr(New Dictionary(Of String, Object) From {
             { "id", "inputId" }
         })
     )

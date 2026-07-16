@@ -128,7 +128,8 @@ The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%
 
 ##### ASP.NET MVC Controls
 
-    <!--Razor C#-->@(Html.DevExtreme().PivotGrid()
+    <!--Razor C#-->
+    @(Html.DevExtreme().PivotGrid()
         .DataSource(ds => ds
             .Store(s => s.Xmla()
                 .Url("http://my-web-srv01/OLAP/msmdpump.dll")
@@ -136,17 +137,6 @@ The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%
                 .Cube("Adventure Works")
             )
         )
-    )
-
-    <!--Razor VB-->@(Html.DevExtreme().PivotGrid() _
-        .DataSource(Function(ds)
-            Return ds.Store(Function(s)
-                    Return s.Xmla() _
-                            .Url("http://my-web-srv01/OLAP/msmdpump.dll") _
-                            .Catalog("AdventureWorksDW2012") _
-                            .Cube("Adventure Works")
-                    End Function)
-        End Function)
     )
 
 ---

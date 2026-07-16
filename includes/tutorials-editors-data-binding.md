@@ -2,5 +2,5 @@ The {WidgetName} can load data from different data source types. To use a local 
 
 - [Read-Only Data in JSON Format](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/)
 - [OData](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/)
-- [Web API, PHP, MongoDB](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API,_PHP,_MongoDB/)
+- [Web API and MongoDB](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API_and_MongoDB/)
 - [Custom Data Sources](/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/)

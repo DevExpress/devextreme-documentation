@@ -14,16 +14,15 @@ The PivotGrid is bound to data via the [PivotGridDataSource](/api-reference/30%2
 To bind the PivotGrid to data, assign a **PivotGridDataSource** to the UI component's **dataSource** property. In the **PivotGridDataSource**, specify the [store](/api-reference/30%20Data%20Layer/PivotGridDataSource/1%20Configuration/store '/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/store/') property depending on your data source as shown in the following list. In each case, also specify the [fields[]](/Documentation/ApiReference/Data_Layer/PivotGridDataSource/Configuration/fields/) array to configure pivot grid fields.
 
 - **Data Array**        
-Assign the array to the **store** property. [View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/SimpleArray)
+Assign the array to the **store** property. [View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/SimpleArray/)
 
 - **OLAP Data**         
-Implement an [XmlaStore](/api-reference/30%20Data%20Layer/XmlaStore '/Documentation/ApiReference/Data_Layer/XmlaStore/'). [View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/OLAPDataSource)
+Implement an [XmlaStore](/api-reference/30%20Data%20Layer/XmlaStore '/Documentation/ApiReference/Data_Layer/XmlaStore/'). [View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/OLAPDataSource/)
 
-- **Web API, PHP, MongoDB**     
+- **Web API and MongoDB**     
 Use one of the following extensions to enable the server to process data according to the protocol DevExtreme UI components use:
 
     - <a href="https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/README.md" target="_blank">DevExtreme.AspNet.Data</a>
-    - <a href="https://github.com/DevExpress/DevExtreme-PHP-Data/blob/master/README.md" target="_blank">DevExtreme-PHP-Data</a>
     - <a href="https://github.com/oliversturm/devextreme-query-mongodb/blob/master/README.md" target="_blank">devextreme-query-mongodb</a>
 
     Then, use the <a href="https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/docs/client-side-with-jquery.md#api-reference" target="_blank">createStore</a> method to configure access to the server on the client as shown below. This method is part of **DevExtreme.AspNet.Data**.

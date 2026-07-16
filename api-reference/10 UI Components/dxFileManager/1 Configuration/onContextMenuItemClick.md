@@ -193,7 +193,7 @@ Specifies whether the context menu is invoked in the navigation panel or in the 
                     .Option("extension", ".xls");
             });
         })
-        .OnContextMenuItemClick("onItemClick");
+        .OnContextMenuItemClick("onItemClick")
     )
 
     <script>
@@ -221,7 +221,7 @@ Specifies whether the context menu is invoked in the navigation panel or in the 
                     .Option("extension", ".xls");
             });
         })
-        .OnContextMenuItemClick("onItemClick");
+        .OnContextMenuItemClick("onItemClick")
     )
 
     <script>

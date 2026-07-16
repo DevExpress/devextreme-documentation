@@ -1,23 +1,23 @@
-The TreeList supports single and multiple record selection modes. Use the **selection**.[mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/selection/mode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/selection/#mode') property to specify the mode.
+#include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/TreeList/Selection/", name: "TreeList - Selection" }
 
-You can obtain the selected record's data in the [onSelectionChanged](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onSelectionChanged') function. In the code below, this function displays the selected employee under the TreeList:
+TreeList supports single- and multiple-row selection. To enable row selection, configure the **selection**.[mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/selection/mode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/selection/#mode') property.
+
+Handle [onSelectionChanged](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onSelectionChanged') to obtain the selected records at runtime. This tutorial uses **onSelectionChanged** to display the selected employee names in an element outside the component:
 
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
-    $(function() {
-        $("#treeList").dxTreeList({
-            // ...
-            selection: { mode: "single" },
-            onSelectionChanged: function(e) {
-                e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
-                    if(employee) {
-                        $("#selected-employee").text(`Selected employee: ${employee.FullName}`);
-                    }
-                });
-            },
-        });
+    $("#tree-list").dxTreeList({
+        selection: { mode: "single" },
+        onSelectionChanged: function(e) {
+            e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
+                if(employee) {
+                    $("#selected-employee").text(`Selected employee: ${employee.FullName}`);
+                }
+            });
+        },
+        // ...
     });
 
     <!-- tab: index.html -->
@@ -25,58 +25,63 @@ You can obtain the selected record's data in the [onSelectionChanged](/api-refer
         <!-- ... -->
         <body class="dx-viewport">
             <div id="app-container">
-                <div id="treeList"></div>
+                <div id="tree-list"></div>
                 <p id="selected-employee"></p>
             </div>
         </body>
     </html>
 
-    <!-- tab: index.css -->
-    /* ... */
-    #app-container {
-        width: 900px;
-        position: relative;
-    }
+##### ASP.NET Core Controls
 
-    #selected-employee {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
+    <!-- tab: Index.cshtml -->
+    <div id="app-container">
+        @(Html.DevExtreme().TreeList<Employee>()
+            .Selection(s => s.Mode(SelectionMode.Single))
+            .OnSelectionChanged("handleSelectionChanged")
+            @* ... *@
+        )
+        <p id="selected-employee"></p>
+    </div>
+
+    <script>
+        function handleSelectionChanged(e) {
+            e.component.byKey(e.currentSelectedRowKeys[0]).done((employee) => {
+                if (employee) {
+                    $('#selected-employee').text(`Selected employee: ${employee.FullName}`);
+                }
+            });
+        }
+    </script>
 
 ##### Angular
 
     <!-- tab: app.component.html -->
     <div id="app-container">
-        <dx-tree-list ...
-            (onSelectionChanged)="selectEmployee($event)">
-            <!-- ... -->
+        <dx-tree-list (onSelectionChanged)="selectEmployee($event)">
             <dxo-tree-list-selection mode="single"></dxo-tree-list-selection>
+            <!-- ... -->
         </dx-tree-list>
-        <p id="selected-employee" *ngIf="selectedEmployee">
-            Selected employee: {{ selectedEmployee.FullName }}
-        </p>
+        @if (selectedEmployee) {
+            <p id="selected-employee">
+                Selected employee: {{ selectedEmployee.FullName }}
+            </p>
+        }
     </div>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
+    import { DxTreeListTypes } from 'devextreme-angular/ui/tree-list';
     import { Employee, EmployeesService } from './employees.service';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    // ...
     export class AppComponent {
-        // ...
         selectedEmployee: Employee;
 
         constructor(service: EmployeesService) {
-            // ...
             this.selectEmployee = this.selectEmployee.bind(this);
         }
         
-        selectEmployee(e) {
+        selectEmployee(e: DxTreeListTypes.SelectionChangedEvent) {
             e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
                 if(employee) {
                     this.selectedEmployee = employee;
@@ -85,28 +90,14 @@ You can obtain the selected record's data in the [onSelectionChanged](/api-refer
         }
     }
 
-    <!-- tab: app.component.css -->
-    /* ... */
-    #app-container {
-        width: 900px;
-        position: relative;
-    }
-
-    #selected-employee {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
-
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
         <div id="app-container">
-            <DxTreeList ...
-                @selection-changed="selectEmployee">
-                <!-- ... -->
+            <DxTreeList @selection-changed="selectEmployee">
                 <DxSelection mode="single" />
+                <!-- ... -->
             </DxTreeList>
             <p id="selected-employee" v-if="selectedEmployee">
                 Selected employee: {{ selectedEmployee.FullName }}
@@ -114,64 +105,28 @@ You can obtain the selected record's data in the [onSelectionChanged](/api-refer
         </div>
     </template>
 
-    <script>
-    import {
-        DxTreeList,
-        // ...
-        DxSelection
-    } from 'devextreme-vue/tree-list';
+    <script setup lang="ts">
+    import { ref } from 'vue';
+    import { DxTreeList, DxSelection, type TreeListTypes } from 'devextreme-vue/tree-list';
+    import { type Employee } from '../employees.service';
 
-    export default {
-        components: {
-            DxTreeList,
-            // ...
-            DxSelection
-        },
-        data() {
-            return {
-                // ...
-                selectedEmployee: undefined,
+    const selectedEmployee = ref<Employee | undefined>();
+
+    function selectEmployee(e: TreeListTypes.SelectionChangedEvent): void {
+        e.component.byKey(e.currentSelectedRowKeys[0]).done((employee: Employee) => {
+            if (employee) {
+                selectedEmployee.value = employee;
             }
-        },
-        methods: {
-            selectEmployee(e) {
-                e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
-                    if(employee) {
-                        this.selectedEmployee = employee;
-                    }
-                });
-            }
-        }
+        });
     }
     </script>
 
-    <style>
-    /* ... */
-    #app-container {
-        width: 900px;
-        position: relative;
-    }
-
-    #selected-employee {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
-    </style>
-
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React, { useCallback, useState } from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-    import './App.css';
-
-    import {
-        TreeList,
-        Column,
-        // ...
-        Selection
-    } from 'devextreme-react/tree-list';
+    import { TreeList, Selection, type TreeListTypes } from 'devextreme-react/tree-list';
+    import { type Employee } from './employees';
 
     function SelectedEmployee(props) {
         if(props.employee) {
@@ -186,37 +141,21 @@ You can obtain the selected record's data in the [onSelectionChanged](/api-refer
 
     function App() {
         const [selectedEmployee, setSelectedEmployee] = useState();
-        const selectEmployee = useCallback((e) => {
-            e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
+        const selectEmployee = useCallback((e: TreeListTypes.SelectionChangedEvent): void => {
+            e.component.byKey(e.currentSelectedRowKeys[0]).then((employee: Employee) => {
                 setSelectedEmployee(employee);
-            });
+            }).catch(() => {});
         }, []);
 
         return (
             <div className="App">
-                <TreeList ...
-                    onSelectionChanged={selectEmployee}>
-                    {/* ... */}
+                <TreeList onSelectionChanged={selectEmployee}>
                     <Selection mode="single" />
+                    {/* ... */}
                 </TreeList>
                 <SelectedEmployee employee={selectedEmployee} />
             </div>
         );
-    }
-
-    export default App;
-
-    <!-- tab: App.css -->
-    /* ... */
-    .App {
-        width: 900px;
-        position: relative;
-    }
-
-    #selected-employee {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
     }
 
 ---

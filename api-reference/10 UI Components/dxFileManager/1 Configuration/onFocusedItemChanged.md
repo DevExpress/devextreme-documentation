@@ -135,7 +135,7 @@ The currently focused file or directory.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .OnFocusedItemChanged("onFocusedItemChangedEv");
+        .OnFocusedItemChanged("onFocusedItemChangedEv")
         // ...
     )
 
@@ -149,7 +149,7 @@ The currently focused file or directory.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .OnFocusedItemChanged("onFocusedItemChangedEv");
+        .OnFocusedItemChanged("onFocusedItemChangedEv")
         // ...
     )
 

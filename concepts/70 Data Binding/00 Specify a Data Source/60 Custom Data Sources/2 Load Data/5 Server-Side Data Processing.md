@@ -192,7 +192,7 @@ The following example shows a **CustomStore** that sends data processing setting
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxRemoteOperations
@@ -276,7 +276,7 @@ The following example shows a **CustomStore** that sends data processing setting
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         RemoteOperations 
@@ -380,3 +380,13 @@ If the server did not receive the [group](/api-reference/30%20Data%20Layer/Custo
         totalCount: 200,             // if requireTotalCount = true
         summary: [170, 20, 20, 1020] // total summary results
     }
+
+[note]
+
+Enable **CustomStore**.[useDefaultSearch](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/useDefaultSearch.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#useDefaultSearch') in the following scenarios:
+
+- To use a combined filter in requests (specify only `filter` and omit `searchExpr`, `searchOperation`, and `searchValue`)
+- To wrap another DevExtreme data store in a **CustomStore** instance inside the [load](/api-reference/30%20Data%20Layer/CustomStore/1%20Configuration/load.md '/Documentation/ApiReference/Data_Layer/CustomStore/Configuration/#load') method
+- To use [DevExtreme AspNet.Data](https://github.com/DevExpress/DevExtreme.AspNet.Data) on the server
+
+[/note]

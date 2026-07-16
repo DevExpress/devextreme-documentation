@@ -151,31 +151,11 @@ To specify whether the LoadIndicator is shown, change the [visible](/api-referen
         </text>)
     )
 
-    <!--Razor VB-->
-    @(Html.DevExtreme().LoadIndicator() _
-        .ID("loadIndicator") _
-        .Visible(False)
-    )
-
-    @(Html.DevExtreme().Button() _
-        .ID("button") _
-        .Text("Toggle the LoadIndicator") _
-        .OnClick("button_click")
-    )
-
-    <script>
-        function button_click() {
-            const loadIndicator = $("#loadIndicator").dxLoadIndicator("instance");
-            const isLoadIndicatorVisible = loadIndicator.option("visible");
-            loadIndicator.option("visible", !isLoadIndicatorVisible);
-        }
-    </script>
-
 ---
 
 #####See Also#####
 #include common-link-handleevents
-- [LoadIndicator Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/LoadIndicator/Overview)
+- [LoadIndicator Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/LoadIndicator/Overview/)
 - [LoadIndicator API Reference](/api-reference/10%20UI%20Components/dxLoadIndicator '/Documentation/ApiReference/UI_Components/dxLoadIndicator/')
 
 [tags]loadIndicator, load indicator, loading indicator, overlay, show, hide, open, close, showing, shown, hiding, hidden

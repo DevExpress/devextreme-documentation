@@ -65,7 +65,7 @@ The filter expression can contain the following operations: *"="*, *"<>"*, *"<"*
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxHeaderFilter,
@@ -91,7 +91,7 @@ The filter expression can contain the following operations: *"="*, *"<>"*, *"<"*
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         HeaderFilter,
@@ -116,7 +116,7 @@ The filter expression can contain the following operations: *"="*, *"<>"*, *"<"*
 ##### ASP.NET MVC Controls
 
     <!-- tab: Razor C# -->
-    @(Html.DevExtreme().DataGrid()
+    @(Html.DevExtreme().{WidgetName}()
         // ...
         .FilterSyncEnabled(true)
         .HeaderFilter(hf => hf.Visible(true))
@@ -195,7 +195,7 @@ If a column's [groupInterval](/api-reference/40%20Common%20Types/15%20grids/Colu
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxColumn,
@@ -225,7 +225,7 @@ If a column's [groupInterval](/api-reference/40%20Common%20Types/15%20grids/Colu
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         Column,
@@ -257,7 +257,7 @@ If a column's [groupInterval](/api-reference/40%20Common%20Types/15%20grids/Colu
 ##### ASP.NET MVC Controls
 
     <!-- tab: Razor C# -->
-    @(Html.DevExtreme().DataGrid()
+    @(Html.DevExtreme().{WidgetName}()
         // ...
         // Filter intervals are 500-600 and 700-800
         .HeaderFilter(headerFilter => headerFilter.Visible(true))

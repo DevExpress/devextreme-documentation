@@ -4,7 +4,7 @@ The following list points out the differences in editing modes.
 A user edits one row at a time. The UI component saves changes when the row leaves the editing state.
 
     #include btn-open-demo with {
-        href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RowEditingAndEditingEvents"
+        href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/RowEditingAndEditingEvents/"
     }
 
 - [**Batch**](/concepts/05%20Widgets/DataGrid/20%20Editing/10%20User%20Interaction/30%20Batch%20Mode.md '/Documentation/Guide/UI_Components/{WidgetName}/Editing/#User_Interaction/Batch_Mode')     

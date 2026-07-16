@@ -37,7 +37,7 @@ Reference a DevExtreme style file in `angular.json`:
     "test": {
         "options": {
             "styles": [
-                "node_modules/devextreme/dist/css/dx.light.css"
+                "node_modules/devextreme/dist/css/dx.fluent.blue.light.css"
             ]
         }
     }

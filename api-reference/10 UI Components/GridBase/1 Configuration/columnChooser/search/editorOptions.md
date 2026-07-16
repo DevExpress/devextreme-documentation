@@ -99,7 +99,7 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import Dx{WidgetName}, {
         DxColumnChooser, 
         DxColumnChooserSearch,
@@ -140,7 +140,7 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
     </template>
 
     <script setup>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import Dx{WidgetName}, {
         DxColumnChooser, 
         DxColumnChooserSearch,
@@ -162,7 +162,7 @@ See the [TextBox Configuration](/Documentation/ApiReference/UI_Components/dxText
 
     <!-- tab: App.js -->
     import React from 'react';  
-    import 'devextreme/dist/css/dx.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         ColumnChooser, 

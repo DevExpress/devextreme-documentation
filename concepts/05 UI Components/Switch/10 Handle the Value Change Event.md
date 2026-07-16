@@ -152,7 +152,7 @@ If you are going to change event handlers at runtime, or if you need to attach s
 
 #####See Also#####
 #include common-link-handleevents
-- [Switch Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Switch/Overview)
+- [Switch Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Switch/Overview/)
 - [Switch API Reference](/api-reference/10%20UI%20Components/dxSwitch '/Documentation/ApiReference/UI_Components/dxSwitch/')
 
 [tags]switch, editor, get value, set value

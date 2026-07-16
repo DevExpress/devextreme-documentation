@@ -1,6 +1,6 @@
 ---
 id: ColumnHeaderFilter.groupInterval
-type: Enums.HeaderFilterGroupInterval | Number | undefined
+type: Enums.HeaderFilterGroupInterval | Number | Array<String, Number> | undefined
 default: undefined
 ---
 ---
@@ -8,9 +8,11 @@ default: undefined
 Specifies how the header filter combines values into groups.
 
 ---
-If you [specify a custom header filter data source](/concepts/05%20UI%20Components/DataGrid/99%20How%20To/Customize%20Header%20Filter%20Data%20Source/10%20Specify%20a%20Custom%20Data%20Source.md '/Documentation/Guide/UI_Components/DataGrid/How_To/Customize_Header_Filter_Data_Source/#Specify_a_Custom_Data_Source'), **groupInterval** accepts only string arrays that contain group fields for [hierarchical header filters](/concepts/05%20UI%20Components/DataGrid/75%20Implement%20a%20Hierarchical%20Header%20Filter/00%20Implement%20a%20Hierarchical%20Header%20Filter.md '/Documentation/Guide/UI_Components/DataGrid/Implement_a_Hierarchical_Header_Filter/').
+If you [specify a custom header filter data source](/concepts/05%20UI%20Components/DataGrid/99%20How%20To/Customize%20Header%20Filter%20Data%20Source/10%20Specify%20a%20Custom%20Data%20Source.md '/Documentation/Guide/UI_Components/DataGrid/How_To/Customize_Header_Filter_Data_Source/#Specify_a_Custom_Data_Source'), assign a string array to **groupInterval**. This array should contain group fields for a [hierarchical header filter](/concepts/05%20UI%20Components/DataGrid/75%20Implement%20a%20Hierarchical%20Header%20Filter/00%20Implement%20a%20Hierarchical%20Header%20Filter.md '/Documentation/Guide/UI_Components/DataGrid/Implement_a_Hierarchical_Header_Filter/').
 
-For numeric columns, assign a number that specifies the size of generated groups. For an example of this **groupInterval** implementation, refer to the following demo:
+For numeric columns, assign a number that specifies generated group sizes. Assign an array of numbers to generate hierarchical groups. The following **groupInterval** value divides records into groups of 100 and then into nested groups of 25: `[100, 25]`
+
+<div class="simulator-desktop-container" data-view="/Content/Applications/26_1/UIWidgets/DataGrid/groupInterval/index.html, /Content/Applications/26_1/UIWidgets/DataGrid/groupInterval/index.js, /Content/Applications/26_1/UIWidgets/DataGrid/groupInterval/index.css"></div>
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/Filtering/",
@@ -26,7 +28,7 @@ The default header filter for date columns is hierarchical. To implement a non-h
 
     <!-- tab: index.js -->
     $(function() {
-        $("#{widgetName}Container").dx{WidgetName}({
+        $("#dataGridContainer").dxDataGrid({
             // ...
             columns: [{
                 // ...
@@ -81,7 +83,7 @@ The default header filter for date columns is hierarchical. To implement a non-h
     import { NgModule } from '@angular/core';
     import { AppComponent } from './app.component';
 
-    import { Dx{WidgetName}Module } from 'devextreme-angular';
+    import { DxDataGridModule } from 'devextreme-angular';
 
     @NgModule({
         declarations: [
@@ -89,7 +91,7 @@ The default header filter for date columns is hierarchical. To implement a non-h
         ],
         imports: [
             BrowserModule,
-            Dx{WidgetName}Module
+            DxDataGridModule
         ],
         providers: [ ],
         bootstrap: [AppComponent]
@@ -100,7 +102,7 @@ The default header filter for date columns is hierarchical. To implement a non-h
 
     <!-- tab: App.vue -->
     <template>
-        <Dx{WidgetName} ... >
+        <DxDataGrid ... >
             <DxColumn ...
                 data-type="date"
                 :calculate-filter-expression="calculateFilterExpression">
@@ -108,13 +110,13 @@ The default header filter for date columns is hierarchical. To implement a non-h
                     :group-interval="null"
                 />
             </DxColumn>
-        </Dx{WidgetName}>
+        </DxDataGrid>
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import { Dx{WidgetName}, DxColumn, DxHeaderFilter } from 'devextreme-vue/{widget-name}';
+    import { DxDataGrid, DxColumn, DxHeaderFilter } from 'devextreme-vue/{widget-name}';
 
     function calculateFilterExpression(value, operation, target) {
         const column = this;
@@ -130,9 +132,9 @@ The default header filter for date columns is hierarchical. To implement a non-h
 
     <!-- tab: App.tsx -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import { {WidgetName}, Column, HeaderFilter } from 'devextreme-react/{widget-name}';
+    import { DataGrid, Column, HeaderFilter } from 'devextreme-react/{widget-name}';
 
     function calculateFilterExpression (value, operation, target) {
         if(value && target === "headerFilter") {
@@ -143,7 +145,7 @@ The default header filter for date columns is hierarchical. To implement a non-h
 
     export default function App() {
         return (
-            <{WidgetName} ... >
+            <DataGrid ... >
                 <Column ...
                     dataType="date"
                     calculateFilterExpression={calculateFilterExpression}>
@@ -151,7 +153,7 @@ The default header filter for date columns is hierarchical. To implement a non-h
                         groupInterval={null}
                     />
                 </Column>
-            </{WidgetName}>
+            </DataGrid>
         );
     }
 

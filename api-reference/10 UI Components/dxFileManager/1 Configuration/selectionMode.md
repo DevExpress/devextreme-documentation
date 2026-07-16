@@ -59,7 +59,7 @@ Specifies whether a user can select a single or multiple files and directories i
         </DxFileManager>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.fluent.blue.light.css';    
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         
         import {
             DxFileManager

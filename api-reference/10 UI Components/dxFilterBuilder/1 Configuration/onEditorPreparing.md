@@ -1,7 +1,7 @@
 ---
 id: dxFilterBuilder.Options.onEditorPreparing
-type: function(e)
-default: null
+type: function(e) | undefined
+default: undefined
 ---
 ---
 ##### shortDescription
@@ -122,7 +122,7 @@ In the following code, the DevExtreme [TextArea](/concepts/05%20UI%20Components/
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxFilterBuilder from 'devextreme-vue/filter-builder';
 
@@ -151,7 +151,7 @@ In the following code, the DevExtreme [TextArea](/concepts/05%20UI%20Components/
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FilterBuilder from 'devextreme-react/filter-builder';
 

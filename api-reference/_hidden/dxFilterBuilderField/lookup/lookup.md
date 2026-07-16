@@ -1,7 +1,6 @@
 ---
 id: dxFilterBuilderField.lookup
 type: Object
-default: undefined
 ---
 ---
 ##### shortDescription

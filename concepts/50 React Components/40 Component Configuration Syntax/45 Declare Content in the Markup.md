@@ -1,4 +1,4 @@
-The following UI components allow you to declare their content directly in the markup:
+The following UI components allow you to declare content directly in the markup (inline):
 
 - [Drawer](/api-reference/10%20UI%20Components/dxDrawer '/Documentation/ApiReference/UI_Components/dxDrawer/')
 - [DropDownBox](/api-reference/10%20UI%20Components/dxDropDownBox '/Documentation/ApiReference/UI_Components/dxDropDownBox/')
@@ -7,58 +7,46 @@ The following UI components allow you to declare their content directly in the m
 - [Popup](/api-reference/10%20UI%20Components/dxPopup '/Documentation/ApiReference/UI_Components/dxPopup/')
 - [Resizable](/api-reference/10%20UI%20Components/dxResizable '/Documentation/ApiReference/UI_Components/dxResizable/')
 - [ScrollView](/api-reference/10%20UI%20Components/dxScrollView '/Documentation/ApiReference/UI_Components/dxScrollView/')
+- [Toast](/api-reference/10%20UI%20Components/dxToast '/Documentation/ApiReference/UI_Components/dxToast/')
 - [Tooltip](/api-reference/10%20UI%20Components/dxTooltip '/Documentation/ApiReference/UI_Components/dxTooltip/')
 - [ValidationGroup](/api-reference/10%20UI%20Components/dxValidationGroup '/Documentation/ApiReference/UI_Components/dxValidationGroup/')
 
-The following is an example with ScrollView:
+The following code snippet specifies inline ScrollView content:
 
-    <!-- tab: Function component -->
-    import ScrollView from 'devextreme-react/scroll-view';
+    <!-- tab: App.tsx -->
+    import { ScrollView } from 'devextreme-react/scroll-view';
 
-    export default function App() {
+    function App() {
         return (
             <ScrollView>
-                <div>Some scrollable content</div>
+                <div>ScrollView content</div>
             </ScrollView>
         );
     }
-    
-    <!-- tab: Class component -->
-    import ScrollView from 'devextreme-react/scroll-view';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <ScrollView>
-                    <div>Some scrollable content</div>
-                </ScrollView>
-            );
-        }
-    }
+[note]
 
-[important]
+- To specify dynamic or conditionally rendered content, wrap this content in a static element as follows:
 
-These UI components do not support dynamically or conditionally rendered content in their root element. For example, the following code **does not work**:
+        <!-- tab: App.tsx -->
+        <Popup ... >
+            <div>
+                {
+                    someCondition && <div> ... </div>
+                }
+            </div>
+        </Popup>
 
-    <!-- tab: App.js -->
-    <Drawer ... >
-        {
-            someCondition && <div> ... </div>
-            // when the condition changes in runtime, the UI component may not render content correctly
-        }
-    </Drawer>
+    Note that [Fragment](https://react.dev/reference/react/Fragment) is a dynamic element. Wrap content with tags such as `<div>` or `<span>`.
 
-Wrap the content in a static element:
+- React mounts inline content within DevExtreme components immediately at component initialization. This behavior ignores **deferRendering** options in components that do not render content immediately:
 
-    <!-- tab: App.js -->
-    <Drawer ... >
-        <div>
-            {
-                someCondition && <div> ... </div>
-            }
-        </div>
-    </Drawer>
+    - DropDownBox
+    - Popup
+    - Popover
+    - Toast
+    - Tooltip
 
-Note that `React.Fragment` is a dynamically rendered element and doesn't fit in this case. Use static elements such as `div` or `span` instead.
+    This behavior initializes and renders embedded UI components at parent component initialization. To ensure embedded components are initialized and rendered only when the parent component is rendered or opened, define **contentComponent** or **contentRender**.
 
-[/important]
+[/note]

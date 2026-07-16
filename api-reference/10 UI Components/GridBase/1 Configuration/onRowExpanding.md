@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.onRowExpanding
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

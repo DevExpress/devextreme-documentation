@@ -87,7 +87,7 @@ You should encode the value as follows:
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxList from 'devextreme-vue/list';
 
     const noDataTextUnsafe = "No data to display<img src=1 onerror=alert('XSS') \/>";
@@ -116,7 +116,7 @@ You should encode the value as follows:
 
     <!-- tab: App.js -->
     import React, { useState } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import List from 'devextreme-react/list';
 

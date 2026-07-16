@@ -125,7 +125,7 @@ Default form editors depend on the [columns' configuration](/api-reference/10%20
                             groupItems.AddSimple().DataField("Full_Name");
                             groupItems.AddSimple().DataField("Position");
                             groupItems.AddSimple().DataField("Duties")
-                                .Editor(e => e.TextArea());
+                                .Editor(g => g.TextArea());
                         });
                     i.AddGroup()
                         .Caption("Contacts")
@@ -177,7 +177,7 @@ Default form editors depend on the [columns' configuration](/api-reference/10%20
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, { DxColumn, DxEditing, DxForm } from 'devextreme-vue/{widget-name}';
     import { DxItem } from 'devextreme-vue/form';
@@ -202,7 +202,7 @@ Default form editors depend on the [columns' configuration](/api-reference/10%20
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         Column,

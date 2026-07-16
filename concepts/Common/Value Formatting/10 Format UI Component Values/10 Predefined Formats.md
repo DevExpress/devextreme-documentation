@@ -67,7 +67,7 @@ Set the **format** UI component property to apply a predefined format. In the fo
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxSlider, {
         DxTooltip,
@@ -92,7 +92,7 @@ Set the **format** UI component property to apply a predefined format. In the fo
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Slider, {
         Tooltip,
@@ -119,4 +119,4 @@ Set the **format** UI component property to apply a predefined format. In the fo
 The **format** property in the previous example is specified with an object which allows you to specify the precision. However, you can specify the **format** property with a string literal if this is not required.
 
 #####See Also#####
-- [RangeSelector Formatting Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/CustomFormatting)
+- [RangeSelector Formatting Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/RangeSelector/CustomFormatting/)

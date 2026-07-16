@@ -11,44 +11,41 @@ Set the **dataSource** property to the URL of a JSON file or service that return
 - **OData**         
 Implement an [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation/ApiReference/Data_Layer/ODataStore/').${{odata_key_note}} ${{odata_view_demo}}
 
-- **Web API, PHP, MongoDB**     
+- **Web API and MongoDB**     
 Use one of the following extensions to enable the server to process data according to the protocol DevExtreme UI components use:
 
-    - <a href="https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/README.md" target="_blank">DevExtreme.AspNet.Data</a>
-    - <a href="https://github.com/DevExpress/DevExtreme-PHP-Data/blob/master/README.md" target="_blank">DevExtreme-PHP-Data</a>
-    - <a href="https://github.com/oliversturm/devextreme-query-mongodb/blob/master/README.md" target="_blank">devextreme-query-mongodb</a>     
+    - [DevExtreme.AspNet.Data](https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/README.md)
+    - [devextreme-query-mongodb](https://github.com/oliversturm/devextreme-query-mongodb/blob/master/README.md)     
 
-    Then, use the <a href="https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/docs/client-side-with-jquery.md#api-reference" target="_blank">createStore</a> method to configure access to the server on the client as shown below. This method is part of **DevExtreme.AspNet.Data**.
+    Then, use the [createStore](https://github.com/DevExpress/DevExtreme.AspNet.Data/blob/master/docs/client-side-with-jquery.md#api-reference) method to configure access to the server on the client as shown below. This method is part of **DevExtreme.AspNet.Data**.
 
     ---
     ##### jQuery
 
-        <!-- tab: JavaScript -->
-        $(function() {
-            let serviceUrl = "https://url/to/my/service";
-            $("#{widgetName}Container").dx{WidgetName}({
-                // ...
-                dataSource: DevExpress.data.AspNet.createStore({
-                    key: "ID",
-                    loadUrl: serviceUrl + "/GetAction",
-                    insertUrl: serviceUrl + "/InsertAction",
-                    updateUrl: serviceUrl + "/UpdateAction",
-                    deleteUrl: serviceUrl + "/DeleteAction"
-                })
+        <!-- tab: index.js -->
+        let serviceUrl = "https://url/to/my/service";
+        $("#{widgetName}Container").dx{WidgetName}({
+            // ...
+            dataSource: DevExpress.data.AspNet.createStore({
+                key: "ID",
+                loadUrl: serviceUrl + "/GetAction",
+                insertUrl: serviceUrl + "/InsertAction",
+                updateUrl: serviceUrl + "/UpdateAction",
+                deleteUrl: serviceUrl + "/DeleteAction"
             })
-        });
+        })
 
     ##### Angular
 
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
-        import CustomStore from 'devextreme/data/custom_store';
+        import { CustomStore } from 'devextreme-angular/common/data';
         import { createStore } from 'devextreme-aspnet-data-nojquery';
+        import { Dx{WidgetName}Component } from 'devextreme-angular/ui/{widget-name}';
 
         @Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
+            imports: [Dx{WidgetName}Component],
+            // ...
         })
         export class AppComponent {
             store: CustomStore;
@@ -65,74 +62,38 @@ Use one of the following extensions to enable the server to process data accordi
         }
 
         <!-- tab: app.component.html -->
-        <dx-{widget-name} ...
-            [dataSource]="store">
-        </dx-{widget-name}>
-
-        <!-- tab: app.module.ts -->
-        import { BrowserModule } from '@angular/platform-browser';
-        import { NgModule } from '@angular/core';
-        import { AppComponent } from './app.component';
-
-        import { Dx{WidgetName}Module } from 'devextreme-angular';
-
-        @NgModule({
-            declarations: [
-                AppComponent
-            ],
-            imports: [
-                BrowserModule,
-                Dx{WidgetName}Module
-            ],
-            providers: [],
-            bootstrap: [AppComponent]
-        })
-        export class AppModule { }
+        <dx-{widget-name}
+            [dataSource]="store"
+        ></dx-{widget-name}>
 
     ##### Vue
 
         <!-- tab: App.vue -->
-        <template> 
-            <Dx{WidgetName} ...
-                :data-source="store" />
+        <template>
+            <Dx{WidgetName} :data-source="store" />
         </template>
 
-        <script>
-        import 'devextreme/dist/css/dx.light.css';
-
-        import CustomStore from 'devextreme/data/custom_store';
+        <script setup lang="ts">
+        import { CustomStore } from 'devextreme-vue/common/data';
         import { createStore } from 'devextreme-aspnet-data-nojquery';
         import { Dx{WidgetName} } from 'devextreme-vue/{widget-name}';
 
-        export default {
-            components: {
-                Dx{WidgetName}
-            },
-            data() {
-                const serviceUrl = "https://url/to/my/service";
-                const store = createStore({
-                    key: "ID",
-                    loadUrl: serviceUrl + "/GetAction",
-                    insertUrl: serviceUrl + "/InsertAction",
-                    updateUrl: serviceUrl + "/UpdateAction",
-                    deleteUrl: serviceUrl + "/DeleteAction"
-                });
-                return {
-                    store
-                }
-            }
-        }
+        const serviceUrl = "https://url/to/my/service";
+        const store = createStore({
+            key: "ID",
+            loadUrl: serviceUrl + "/GetAction",
+            insertUrl: serviceUrl + "/InsertAction",
+            updateUrl: serviceUrl + "/UpdateAction",
+            deleteUrl: serviceUrl + "/DeleteAction"
+        });
         </script>
 
     ##### React
 
-        <!-- tab: App.js -->
-        import React from 'react';
-        import 'devextreme/dist/css/dx.light.css';
-
-        import CustomStore from 'devextreme/data/custom_store';
+        <!-- tab: App.tsx -->
+        import { CustomStore } from 'devextreme-react/common/data';
         import { createStore } from 'devextreme-aspnet-data-nojquery';
-        import {WidgetName} from 'devextreme-react/{widget-name}';
+        import { {WidgetName} } from 'devextreme-react/{widget-name}';
 
         const serviceUrl = "https://url/to/my/service";
         const store = createStore({
@@ -143,15 +104,11 @@ Use one of the following extensions to enable the server to process data accordi
             deleteUrl: serviceUrl + "/DeleteAction"
         });
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <{WidgetName} ...
-                        dataSource={store} />
-                );
-            }
+        function App() {
+            return (
+                <{WidgetName} dataSource={store} />
+            );
         }
-        export default App;
 
     ---
 

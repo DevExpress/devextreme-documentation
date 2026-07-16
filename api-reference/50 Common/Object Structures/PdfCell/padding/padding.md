@@ -118,7 +118,7 @@ Uses the measure units which are specified in the constructor of the [jsPDFDocum
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid from 'devextreme-vue/data-grid';
     import DxButton from 'devextreme-vue/button';
@@ -167,7 +167,7 @@ Uses the measure units which are specified in the constructor of the [jsPDFDocum
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid from 'devextreme-react/data-grid';
     import Button from 'devextreme-react/button';

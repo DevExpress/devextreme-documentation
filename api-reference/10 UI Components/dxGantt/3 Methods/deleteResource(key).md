@@ -1,4 +1,4 @@
----
+﻿---
 id: dxGantt.deleteResource(key)
 ---
 ---
@@ -145,7 +145,7 @@ The resource key.
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -153,7 +153,7 @@ The resource key.
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.deleteResource("resource_key");
             // ...
         }
@@ -164,7 +164,7 @@ The resource key.
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -172,7 +172,7 @@ The resource key.
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.deleteResource("resource_key");
             // ...
         }

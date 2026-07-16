@@ -56,7 +56,7 @@ Applies several [text formats](/concepts/05%20UI%20Components/HtmlEditor/10%20Fo
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DxHtmlEditor from 'devextreme-vue/html-editor';
 
     const htmlEditorRefKey = "my-html-editor";
@@ -88,7 +88,7 @@ Applies several [text formats](/concepts/05%20UI%20Components/HtmlEditor/10%20Fo
 
     <!-- tab: App.js -->
     import { useRef } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import HtmlEditor from 'devextreme-react/html-editor';
 

@@ -85,7 +85,7 @@ A Promise that is resolved after the upload is aborted.
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxFileUploader from 'devextreme-vue/file-uploader';
 
@@ -106,7 +106,7 @@ A Promise that is resolved after the upload is aborted.
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FileUploader from 'devextreme-react/file-uploader';
 

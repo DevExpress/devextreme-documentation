@@ -163,6 +163,6 @@ You can also customize the SelectBox input field. Configure **fieldAddons**.[bef
 
 #####See Also#####
 - [SelectBox API Reference](/api-reference/10%20UI%20Components/dxSelectBox '/Documentation/ApiReference/UI_Components/dxSelectBox/')
-- [SelectBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview)
+- [SelectBox Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/Overview/)
 
 [tags]selectBox, select box, editor, item appearance, customize, templates, template, field template

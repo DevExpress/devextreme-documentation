@@ -154,7 +154,7 @@ dx.web.js, dx.viz.js, dx.all.js
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
-    @(Html.DevExtreme().WidgetName()
+    @(Html.DevExtreme().DataGrid()
         .DataSource(ds => ds.Array()
             .Key("id")
             .Data(new[] {
@@ -166,32 +166,12 @@ dx.web.js, dx.viz.js, dx.all.js
         )
     )
     @* ===== or a simplified version ===== *@
-    @(Html.DevExtreme().WidgetName()
+    @(Html.DevExtreme().DataGrid()
         .DataSource(new[] {
             new { id = 1, state = "Alabama", capital = "Montgomery" },
             new { id = 2, state = "Alaska", capital = "Juneau" },
             new { id = 3, state = "Arizona", capital = "Phoenix" },
             // ...
-        }, "id")
-    )
-
-    <!--Razor VB-->@(Html.DevExtreme().WidgetName() _
-        .DataSource(Function(ds)
-            Return ds.Array() _
-                     .Key("id") _
-                     .Data({
-                         New With { .id = 1, .state = "Alabama", .capital = "Montgomery" },
-                         New With { .id = 2, .state = "Alaska", .capital = "Juneau" },
-                         New With { .id = 3, .state = "Arizona", .capital = "Phoenix" }
-                     })
-        End Function)
-    )
-    @* ===== or a simplified version ===== *@
-    @(Html.DevExtreme().WidgetName() _
-        .DataSource({
-            New With { .id = 1, .state = "Alabama", .capital = "Montgomery" },
-            New With { .id = 2, .state = "Alaska", .capital = "Juneau" },
-            New With { .id = 3, .state = "Arizona", .capital = "Phoenix" }
         }, "id")
     )
 

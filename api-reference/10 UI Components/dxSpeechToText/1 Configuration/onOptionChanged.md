@@ -101,11 +101,11 @@ The following code snippet demonstrates how to subscribe to component property c
         />            
     </template> 
   
-    <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
+    <script setup lang="ts">
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { Dx{WidgetName}, type Dx{WidgetName}Types } from 'devextreme-vue/{widget-name}'; 
 
-    function handlePropertyChange: function(e: Dx{WidgetName}Types.OptionChangedEvent) {
+    function handlePropertyChange(e: Dx{WidgetName}Types.OptionChangedEvent) {
         if(e.name === "changedProperty") {
             // handle the property change here
         }
@@ -114,7 +114,7 @@ The following code snippet demonstrates how to subscribe to component property c
 
 ##### React 
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';  
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 

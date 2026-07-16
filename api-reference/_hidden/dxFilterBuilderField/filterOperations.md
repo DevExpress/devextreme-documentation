@@ -1,7 +1,6 @@
 ---
 id: dxFilterBuilderField.filterOperations
 type: Array<Enums.FilterBuilderOperation, String>
-default: undefined
 ---
 ---
 ##### shortDescription

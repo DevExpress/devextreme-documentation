@@ -11,7 +11,7 @@ jobs:
 
     steps:
         - name: Checkout Docs
-          uses: actions/checkout@v4
+          uses: actions/checkout@v6
           with:
             path: documentation
             ref: ${{ github.ref_name }}
@@ -21,7 +21,7 @@ jobs:
             path: documentation
 
         - name: Checkout DevExtreme
-          uses: actions/checkout@v4
+          uses: actions/checkout@v6
           with:
             path: devextreme
             repository: devexpress/devextreme
@@ -101,7 +101,7 @@ jobs:
                 --data-binary @prdata.json
 
         - name: Archive internal-tools artifacts
-          uses: actions/upload-artifact@v4
+          uses: actions/upload-artifact@v7
           with:
             name: internal-tools-artifacts
             path: ./devextreme/packages/devextreme-metadata/dist/

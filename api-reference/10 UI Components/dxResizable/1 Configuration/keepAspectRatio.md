@@ -48,7 +48,7 @@ Set this property to **false** to enable free-form resize:
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Resizable from 'devextreme-react/resizable';
 

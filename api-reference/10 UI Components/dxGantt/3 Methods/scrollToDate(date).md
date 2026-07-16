@@ -1,4 +1,4 @@
----
+﻿---
 id: dxGantt.scrollToDate(date)
 ---
 ---
@@ -169,7 +169,7 @@ Specify a timeout if you call the **scrollToDate** method in the [contentReady](
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -177,7 +177,7 @@ Specify a timeout if you call the **scrollToDate** method in the [contentReady](
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.scrollToDate(new Date("December 17, 2020"));
             // ...
         }

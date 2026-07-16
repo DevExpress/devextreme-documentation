@@ -1,7 +1,6 @@
 ---
 id: dxTreeList.Options.onCellDblClick
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

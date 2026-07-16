@@ -150,5 +150,5 @@ The Scheduler control saves the specified values in the appointment's **recurren
 - [Scheduler - Update Appointments](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/030%20Update%20Appointments '/Documentation/Guide/UI_Components/Scheduler/Appointments/Update_Appointments/')
 - [Scheduler - Delete Appointments](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/040%20Delete%20Appointments '/Documentation/Guide/UI_Components/Scheduler/Appointments/Delete_Appointments/')
 - [Scheduler - Customize Appointment](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/050%20Customize%20Appointment.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Customize_Appointment/')
-- [Scheduler Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview)
+- [Scheduler Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Overview/)
 - [Scheduler API Reference](/api-reference/10%20UI%20Components/dxScheduler '/Documentation/ApiReference/UI_Components/dxScheduler/')

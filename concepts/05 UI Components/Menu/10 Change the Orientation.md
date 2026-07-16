@@ -164,7 +164,7 @@ When the UI component is positioned at the bottom or at the left side, you may w
 ---
 
 #####See Also#####
-- [Menu Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Menu/Overview)
+- [Menu Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Menu/Overview/)
 - [Menu API Reference](/api-reference/10%20UI%20Components/dxMenu '/Documentation/ApiReference/UI_Components/dxMenu/')
 
 [tags]menu, orientation, direction, position, padding

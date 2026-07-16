@@ -128,7 +128,7 @@ The opened file.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .OnSelectedFileOpened("fileManager_onSelectedFileOpened");
+        .OnSelectedFileOpened("fileManager_onSelectedFileOpened")
         // ...
     )
 
@@ -142,7 +142,7 @@ The opened file.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .OnSelectedFileOpened("fileManager_onSelectedFileOpened");
+        .OnSelectedFileOpened("fileManager_onSelectedFileOpened")
         // ...
     )
 

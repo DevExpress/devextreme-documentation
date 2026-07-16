@@ -77,7 +77,7 @@ The **summaryItem** property accepts one of the following values.
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DxDataGrid, {
             DxSummary,
@@ -100,7 +100,7 @@ The **summaryItem** property accepts one of the following values.
 
         <!-- tab: App.js -->
         import React from 'react';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DataGrid, {
             Summary,
@@ -191,7 +191,7 @@ The **summaryItem** property accepts one of the following values.
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DxDataGrid, {
             DxSummary,
@@ -214,7 +214,7 @@ The **summaryItem** property accepts one of the following values.
 
         <!-- tab: App.js -->
         import React from 'react';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DataGrid, {
             Summary,
@@ -330,7 +330,7 @@ The **summaryItem** property accepts one of the following values.
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DxDataGrid, {
             DxSummary,
@@ -353,7 +353,7 @@ The **summaryItem** property accepts one of the following values.
 
         <!-- tab: App.js -->
         import React from 'react';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DataGrid, {
             Summary,
@@ -391,7 +391,7 @@ The **summaryItem** property accepts one of the following values.
         url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/GroupSummaries/"
     }
         
-- The [name](/api-reference/_hidden/GridBaseColumn/name.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#name'), [data field](/api-reference/_hidden/GridBaseColumn/dataField.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField') or [caption](/api-reference/_hidden/GridBaseColumn/caption.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#caption') of a column. In this case, the grid will use the first item from the **groupItems** array whose [column](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/groupItems/column.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/groupItems/#column') property matches the **summaryItem** property. For example, the following code declares two group summary items with identical values to the **column** property. However, groups will be sorted only according to the values of the group summary item whose **summaryType** property equals *"min"*, because this item is declared before the other one.        
+- The [name](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns/name.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#name'), [data field](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns/dataField.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#dataField') or [caption](/api-reference/_hidden/GridBaseColumn/caption.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#caption') of a column. In this case, the grid will use the first item from the **groupItems** array whose [column](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/summary/groupItems/column.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/summary/groupItems/#column') property matches the **summaryItem** property. For example, the following code declares two group summary items with identical values to the **column** property. However, groups will be sorted only according to the values of the group summary item whose **summaryType** property equals *"min"*, because this item is declared before the other one.        
 
     ---
     #####jQuery
@@ -470,7 +470,7 @@ The **summaryItem** property accepts one of the following values.
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DxDataGrid, {
             DxSummary,
@@ -493,7 +493,7 @@ The **summaryItem** property accepts one of the following values.
 
         <!-- tab: App.js -->
         import React from 'react';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DataGrid, {
             Summary,

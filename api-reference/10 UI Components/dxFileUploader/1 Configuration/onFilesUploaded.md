@@ -80,7 +80,7 @@ The UI component's instance.
     </template>
 
     <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import { 
             DxFileUploader
@@ -129,7 +129,7 @@ The UI component's instance.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileUploader()
-        .OnFilesUploaded("onFilesUploaded");
+        .OnFilesUploaded("onFilesUploaded")
         // ...
     )
 
@@ -143,7 +143,7 @@ The UI component's instance.
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileUploader()
-        .OnFilesUploaded("onFilesUploaded");
+        .OnFilesUploaded("onFilesUploaded")
         // ...
     )
 

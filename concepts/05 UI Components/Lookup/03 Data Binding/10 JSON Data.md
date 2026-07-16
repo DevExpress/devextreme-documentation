@@ -157,6 +157,6 @@ Implement the [CustomStore](/api-reference/30%20Data%20Layer/CustomStore '/Docum
 
 #####See Also#####
 - [Access the DataSource](/concepts/05%20UI%20Components/Lookup/03%20Data%20Binding/30%20Access%20the%20DataSource.md '/Documentation/Guide/UI_Components/Lookup/Data_Binding/Access_the_DataSource/')
-- [Lookup Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/Basics)
+- [Lookup Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Lookup/Basics/)
 
 [tags]Lookup, data binding, provide data, json, jsonp

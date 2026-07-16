@@ -72,7 +72,7 @@ In the following code, the **Add** button is added to rows whose status is _not_
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxEditing
@@ -96,7 +96,7 @@ In the following code, the **Add** button is added to rows whose status is _not_
 
     <!-- tab: App.js -->
     import React, { useCallback } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Editing

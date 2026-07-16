@@ -87,7 +87,7 @@ The following code shows the **editing**.**texts** declaration syntax:
     &lt;/template&gt;
 
     &lt;script&gt;
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxEditing,
@@ -111,7 +111,7 @@ The following code shows the **editing**.**texts** declaration syntax:
     &lt;!-- tab: App.js --&gt;
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         Editing,

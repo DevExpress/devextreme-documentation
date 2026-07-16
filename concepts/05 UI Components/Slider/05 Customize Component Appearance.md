@@ -285,7 +285,7 @@ To specify whether or not the part of the scale from the beginning to the slider
 
 #####See Also#####
 - [Slider - Handle the Value Change Event](/concepts/05%20UI%20Components/Slider/10%20Handle%20the%20Value%20Change%20Event.md '/Documentation/Guide/UI_Components/Slider/Handle_the_Value_Change_Event')
-- [Slider Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Slider/Overview)
+- [Slider Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Slider/Overview/)
 - [Slider API Reference](/api-reference/10%20UI%20Components/dxSlider '/Documentation/ApiReference/UI_Components/dxSlider/')
 
 [tags]slider, editor, label, tooltip, showRange

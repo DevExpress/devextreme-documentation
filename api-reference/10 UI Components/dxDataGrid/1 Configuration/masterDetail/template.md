@@ -118,7 +118,7 @@ You should call the [updateDimensions()](/api-reference/10%20UI%20Components/Gri
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxMasterDetail
@@ -155,7 +155,7 @@ You should call the [updateDimensions()](/api-reference/10%20UI%20Components/Gri
 
     <!-- tab: App.js -->
     import React, { useRef, useCallback } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         MasterDetail

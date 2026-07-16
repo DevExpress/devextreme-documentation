@@ -89,7 +89,7 @@ Custom data (key-value pairs) that are sent to the server with the request.
     </template>
     
     <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css'; 
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     
     import { DxFileManager } from 'devextreme-vue/file-manager';
     

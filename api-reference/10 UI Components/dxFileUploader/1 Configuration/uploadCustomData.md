@@ -60,7 +60,7 @@ Specifies custom data for the upload request.
         </DxFileUploader>
     </template>
     <script>
-        import 'devextreme/dist/css/dx.light.css';    
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         
         import {
             DxFileUploader
@@ -85,7 +85,7 @@ Specifies custom data for the upload request.
     <!-- tab: App.js -->
     import React from 'react';
     
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import FileUploader from 'devextreme-react/file-uploader';
     

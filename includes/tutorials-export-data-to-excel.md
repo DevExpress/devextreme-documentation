@@ -1,11 +1,11 @@
 {WidgetName} allows users to export grid data as Excel documents. This feature requires the following third-party libraries:
 
-- <a href="https://github.com/DevExpress/devextreme-exceljs-fork" target="_blank">DevExtreme ExcelJS</a> v4.4.1+
-- <a href="https://github.com/eligrey/FileSaver.js/" target="_blank">FileSaver</a> v2.0.2+
+- [DevExtreme ExcelJS](https://github.com/DevExpress/devextreme-exceljs-fork) v4.4.1+
+- [FileSaver](https://github.com/eligrey/FileSaver.js/) v2.0.2+
 
 To configure export operations, use the [export{WidgetName}(options)](/Documentation/ApiReference/Common/Utils/excelExporter/#export{WidgetName}options) method from the [excelExporter](/Documentation/ApiReference/Common/Utils/excelExporter/) module. It requires a {WidgetName} instance and a target Excel worksheet.
 
-You can call this method at any point in your application. The following code calls it in the {WidgetName}'s [onExporting](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/#onExporting) event handler. In this code, **export{WidgetName}(options)** exports grid data as a <a href="https://en.wikipedia.org/wiki/Binary_large_object" target="_blank">blob</a> that is then saved to an XLSX file. The **onExporting** event handler is executed when users click the Export button. The [export](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/export/).[enabled](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/export/#enabled) property adds this button to the {WidgetName}.
+You can call this method at any point in your application. The following code calls it in the {WidgetName}'s [onExporting](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/#onExporting) event handler. In this code, **export{WidgetName}(options)** exports grid data as a [blob](https://en.wikipedia.org/wiki/Binary_large_object) that is then saved to an XLSX file. The **onExporting** event handler is executed when users click the Export button. The [export](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/export/).[enabled](/Documentation/ApiReference/UI_Components/dx{WidgetName}/Configuration/export/#enabled) property adds this button to the {WidgetName}.
 
 ---
 ##### jQuery
@@ -140,7 +140,7 @@ You can call this method at any point in your application. The following code ca
 
     <!-- tab: App.js -->
     import React, { useState } from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import './App.css';
 
     import {

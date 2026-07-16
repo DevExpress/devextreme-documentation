@@ -1,7 +1,6 @@
 ---
 id: GridBaseColumn.filterValues
 type: Array<any>
-default: undefined
 firedEvents: optionChanged
 ---
 ---
@@ -83,7 +82,7 @@ If you specify the **headerFilter**.[groupInterval](/api-reference/40%20Common%2
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, {
         DxColumn,
@@ -104,7 +103,7 @@ If you specify the **headerFilter**.[groupInterval](/api-reference/40%20Common%2
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import {WidgetName}, {
         Column,

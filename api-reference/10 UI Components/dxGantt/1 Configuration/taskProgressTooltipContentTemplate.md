@@ -155,7 +155,7 @@ The task's progress.
 
     <script>
         function getTaskProgressTooltipContentTemplate(item, container) {
-            var $customTooltipProgress = $(document.createElement("div"))
+            const $customTooltipProgress = $(document.createElement("div"))
                 .addClass("custom-tooltip");
         ​
             $(document.createElement("div"))

@@ -1,4 +1,4 @@
----
+﻿---
 id: dxGantt.zoomOut()
 ---
 ---
@@ -117,7 +117,7 @@ Zooms out the Gantt chart.
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -125,7 +125,7 @@ Zooms out the Gantt chart.
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.zoomOut();
             // ...
         }
@@ -136,7 +136,7 @@ Zooms out the Gantt chart.
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -144,7 +144,7 @@ Zooms out the Gantt chart.
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.zoomOut();
             // ...
         }

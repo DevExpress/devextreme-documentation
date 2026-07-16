@@ -161,7 +161,7 @@ To include these components, you can use CDN or npm.
     ---
 
     #include common-demobutton with {
-        url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Localization/UsingGlobalize"
+        url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Localization/UsingGlobalize/"
     }
 
 You can format and localize strings, numbers, dates, and currencies automatically according to a locale. For this, apply the **format**.[type](/api-reference/50%20Common/Object%20Structures/format/type.md '/Documentation/ApiReference/Common/Object_Structures/Format/#type') property. You can also use a currency other than USD (see the last example in the [Using Intl](/concepts/Common/Localization/05%20Localize%20Dates%2C%20Numbers%2C%20and%20Currencies/05%20Using%20Intl.md '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/Using_Intl') topic).
@@ -250,7 +250,7 @@ In addition, you can now format values using structures accepted by <a href="htt
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
     // ...
     // import dictionaries and localization modules here
 
@@ -272,7 +272,7 @@ In addition, you can now format values using structures accepted by <a href="htt
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
         Column

@@ -16,4 +16,5 @@ The UI component's instance.
 #include common-ref-elementparam with { element: "UI component" }
 
 ---
-<!-- Description goes here -->
+
+[note] DateBox does not execute **onOpened** when [pickerType](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/pickerType.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#pickerType') is *"native"*.

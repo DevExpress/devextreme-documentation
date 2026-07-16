@@ -136,7 +136,7 @@ Select a file/folder and click the **Delete** [context menu](/api-reference/10%2
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .OnItemDeleted("onItemDeleted");
+        .OnItemDeleted("onItemDeleted")
         // ...
     )
 
@@ -150,7 +150,7 @@ Select a file/folder and click the **Delete** [context menu](/api-reference/10%2
 
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
-        .OnItemDeleted("onItemDeleted");
+        .OnItemDeleted("onItemDeleted")
         // ...
     )
 

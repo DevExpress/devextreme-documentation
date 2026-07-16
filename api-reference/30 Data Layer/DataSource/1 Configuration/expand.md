@@ -83,20 +83,12 @@ Specifies the navigation properties to be loaded with the OData entity. Availabl
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->
-    @(Html.DevExtreme().WidgetName()
+    @(Html.DevExtreme().DataGrid()
         .DataSource(ds => ds.OData()
             .Expand("PropertyName1", "PropertyName2")
         )
     )
 
-    <!--Razor VB-->
-    @(Html.DevExtreme().WidgetName() _
-        .DataSource(Function(ds)
-            Return ds.OData() _
-                     .Expand("PropertyName1", "PropertyName2")
-        End Function)
-    )
-    
 ---
 
 #####See Also#####

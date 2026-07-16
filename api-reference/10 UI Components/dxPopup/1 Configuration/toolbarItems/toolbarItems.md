@@ -93,7 +93,7 @@ In the following code, two items are defined on the toolbar: one is plain text, 
 
     <!-- tab: Index.cshtml -->
     @(Html.DevExtreme().{WidgetName}()
-        <!-- ... -->
+        // ...
         .ContentTemplate(@<text>
             <p>{WidgetName} content</p>
         </text>)
@@ -106,7 +106,7 @@ In the following code, two items are defined on the toolbar: one is plain text, 
                     .Text("Refresh")
                     .OnClick("refresh"))
                 .Location(ToolbarItemLocation.After);
-        }
+        })
     )
     
     <script type="text/javascript">
@@ -131,7 +131,7 @@ In the following code, two items are defined on the toolbar: one is plain text, 
         </Dx{WidgetName}>
     </template>
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import Dx{WidgetName}, { DxToolbarItem } from 'devextreme-vue/{widget-name}';
 
@@ -154,7 +154,7 @@ In the following code, two items are defined on the toolbar: one is plain text, 
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { {WidgetName}, ToolbarItem } from 'devextreme-react/{widget-name}';
 

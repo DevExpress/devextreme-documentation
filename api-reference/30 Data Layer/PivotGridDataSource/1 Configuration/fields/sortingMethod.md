@@ -1,7 +1,6 @@
 ---
 id: PivotGridDataSource.Options.fields.sortingMethod
 type: function(a, b)
-default: undefined
 ---
 ---
 ##### shortDescription

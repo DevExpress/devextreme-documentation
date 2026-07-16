@@ -1,7 +1,7 @@
 ---
 id: GridBase.Options.dataSource
-type: Store | DataSource | DataSource_Options | String | Array<any> | null
-default: null
+type: Store | DataSource | DataSource_Options | String | Array<any> | undefined
+default: undefined
 ---
 ---
 ##### shortDescription
@@ -13,17 +13,17 @@ Binds the UI component to data.
 
     array_key_note: " and specify the [keyExpr](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/keyExpr.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#keyExpr')",
 
-    array_view_demo: "[View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/BatchEditing)",
+    array_view_demo: "[View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/BatchEditing/)",
 
-    json_view_demo: "[View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/AjaxRequest)",
+    json_view_demo: "[View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/AjaxRequest/)",
 
     odata_key_note: " Make sure to specify the [key](/api-reference/30%20Data%20Layer/Store/1%20Configuration/key.md '/Documentation/ApiReference/Data_Layer/ODataStore/Configuration/#key').",
 
     odata_view_demo: "[View Example](https://github.com/DevExpress-Examples/devextreme-datagrid-odata)", 
 
-    create_store_view_demo: "[View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/WebAPIService)",
+    create_store_view_demo: "[View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/WebAPIService/)",
 
-    custom_store_view_demo: "[View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomDataSource)",
+    custom_store_view_demo: "[View Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CustomDataSource/)",
 
     remote_operations_note: "- If the component gets data from a server, configure [remoteOperations](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/remoteOperations '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/remoteOperations/') to notify {WidgetName} about data operations on the server.",
 

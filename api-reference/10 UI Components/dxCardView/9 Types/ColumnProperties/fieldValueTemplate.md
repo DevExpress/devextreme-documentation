@@ -17,7 +17,7 @@ A template name or container.
 
 ---
 #include btn-open-demo with {
-    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CardView/Overview"
+    href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/CardView/Overview/"
 }
 
 ---

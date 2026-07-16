@@ -1,189 +1,170 @@
-Users can add new records and update or delete existing records. To allow these operations, enable the [allowAdding](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/allowAdding.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowAdding'), [allowUpdating](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/allowUpdating.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowUpdating'), and [allowDeleting](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/allowDeleting.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowDeleting') properties in the [editing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/') object. Multiple [edit modes](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode') are available. This tutorial uses the pop-up edit mode.
+#include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/DataGrid/Editing/", name: "DataGrid - Editing" }
 
-DevExtreme includes a validation engine that checks edited values before they are saved. This engine supports different validation rule types, such as [Email](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules/EmailRule '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/EmailRule/'), [Compare](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules/CompareRule '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/CompareRule/'), [Range](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules/RangeRule '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/RangeRule/'), and more. Validation rules are specified per column; one column can use multiple rules. The code below assigns the [Required](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules/RequiredRule '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/RequiredRule/') rule to several columns.
+Users can add new records and update or delete existing records. To allow these operations, enable the following [editing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/') options:
+
+- [allowAdding](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/allowAdding.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowAdding')
+- [allowUpdating](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/allowUpdating.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowUpdating')
+- [allowDeleting](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/allowDeleting.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#allowDeleting')
+
+DataGrid supports multiple [edit modes](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/editing/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode'). This tutorial uses the pop-up edit mode.
+
+This tutorial also implements [data validation](/concepts/05%20UI%20Components/zz%20Common/05%20UI%20Widgets/20%20Data%20Validation '/Documentation/Guide/UI_Components/Common/UI_Widgets/Data_Validation/') to check that edited data is valid before saving. [Required](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules/RequiredRule '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/RequiredRule/') rules are configured to ensure certain column values are never empty:
 
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
-    $(function() {
-        $("#dataGrid").dxDataGrid({
-            editing: {
-                mode: "popup",
-                allowUpdating: true,
-                allowDeleting: true,
-                allowAdding: true
-            },
-            columns: [{
-                dataField: "FullName",
-                validationRules: [{ type: "required" }]
-            }, {
-                dataField: "Position",
-                validationRules: [{ type: "required" }]
-            }, {
-                dataField: "BirthDate",
-                // ...
-                validationRules: [{ type: "required" }]
-            }, {
-                dataField: "HireDate", 
-                // ...
-                validationRules: [{ type: "required" }]
-            },
-            // ...
-            {
-                dataField: "Country",
-                // ...
-                validationRules: [{ type: "required" }]
-            },
-            // ...
-            ],
-        });
+    $("#dataGrid").dxDataGrid({
+        editing: {
+            mode: "popup",
+            allowUpdating: true,
+            allowDeleting: true,
+            allowAdding: true
+        },
+        columns: [{
+            dataField: "FullName",
+            validationRules: [{ type: "required" }]
+        }, {
+            dataField: "Position",
+            validationRules: [{ type: "required" }]
+        }, {
+            dataField: "BirthDate",
+            validationRules: [{ type: "required" }]
+        }, {
+            dataField: "HireDate", 
+            validationRules: [{ type: "required" }]
+        }, {
+            dataField: "Country",
+            validationRules: [{ type: "required" }]
+        }, /* ... */ ],
+        // ...
     });
+
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().DataGrid<Employee>()
+        .Editing(e => e
+            .Mode(GridEditMode.Popup)
+            .AllowAdding(true)
+            .AllowDeleting(true)
+            .AllowUpdating(true)
+        )
+        .Columns(columns => {
+            columns.AddFor(m => m.FullName)
+                .ValidationRules(v => v.AddRequired());
+            columns.AddFor(m => m.Position)
+                .ValidationRules(v => v.AddRequired());
+            columns.AddFor(m => m.BirthDate)
+                .ValidationRules(v => v.AddRequired());
+            columns.AddFor(m => m.HireDate)
+                .ValidationRules(v => v.AddRequired());
+            columns.AddFor(m => m.Country)
+                .ValidationRules(v => v.AddRequired());
+        })
+        @* ... *@
+    )
 
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-data-grid ... >
-        <!-- ... -->
+    <dx-data-grid>
+        <dxo-data-grid-editing
+            mode="popup"
+            [allowUpdating]="true"
+            [allowDeleting]="true"
+            [allowAdding]="true"
+        ></dxo-data-grid-editing>
         <dxi-data-grid-column dataField="FullName">
             <dxi-data-grid-validation-rule type="required"></dxi-data-grid-validation-rule>
         </dxi-data-grid-column>
         <dxi-data-grid-column dataField="Position">
             <dxi-data-grid-validation-rule type="required"></dxi-data-grid-validation-rule>
         </dxi-data-grid-column>
-        <dxi-data-grid-column ...
-            dataField="BirthDate">
+        <dxi-data-grid-column dataField="BirthDate">
             <dxi-data-grid-validation-rule type="required"></dxi-data-grid-validation-rule>
         </dxi-data-grid-column>
-        <dxi-data-grid-column ...
-            dataField="HireDate">
+        <dxi-data-grid-column dataField="HireDate">
             <dxi-data-grid-validation-rule type="required"></dxi-data-grid-validation-rule>
         </dxi-data-grid-column>
-        <dxi-data-grid-column ...
-            dataField="Country">
+        <dxi-data-grid-column dataField="Country">
             <dxi-data-grid-validation-rule type="required"></dxi-data-grid-validation-rule>
         </dxi-data-grid-column>
-        <dxo-data-grid-editing
-            mode="popup"
-            [allowUpdating]="true"
-            [allowDeleting]="true"
-            [allowAdding]="true">
-        </dxo-data-grid-editing>
+        <!-- ... -->
     </dx-data-grid>
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <div id="app-container">
-            <DxDataGrid ... >
-                <!-- ... -->
-                <DxColumn data-field="FullName">
-                    <DxRequiredRule />
-                </DxColumn>
-                <DxColumn data-field="Position">
-                    <DxRequiredRule />
-                </DxColumn>
-                <DxColumn ...
-                    data-field="BirthDate">
-                    <DxRequiredRule />
-                </DxColumn>
-                <DxColumn ...
-                    data-field="HireDate">
-                    <DxRequiredRule />
-                </DxColumn>
-                <!-- ... -->
-                <DxColumn ...
-                    data-field="Country">
-                    <DxRequiredRule />
-                </DxColumn>
-                <DxEditing
-                    mode="popup"
-                    :allow-updating="true"
-                    :allow-adding="true"
-                    :allow-deleting="true"
-                />
-            </DxDataGrid>
-        </div>
+        <DxDataGrid>
+            <DxEditing
+                mode="popup"
+                :allow-updating="true"
+                :allow-adding="true"
+                :allow-deleting="true"
+            />
+            <DxColumn data-field="FullName">
+                <DxRequiredRule />
+            </DxColumn>
+            <DxColumn data-field="Position">
+                <DxRequiredRule />
+            </DxColumn>
+            <DxColumn data-field="BirthDate">
+                <DxRequiredRule />
+            </DxColumn>
+            <DxColumn data-field="HireDate">
+                <DxRequiredRule />
+            </DxColumn>
+            <DxColumn data-field="Country">
+                <DxRequiredRule />
+            </DxColumn>
+            <!-- ... -->
+        </DxDataGrid>
     </template>
 
-    <script>
-    import {
-        DxDataGrid,
-        DxColumn,
-        // ...
-        DxRequiredRule,
-        DxEditing
-    } from 'devextreme-vue/data-grid';
+    <script setup lang="ts">
+    import { DxDataGrid, DxEditing, DxColumn, DxRequiredRule } from 'devextreme-vue/data-grid';
 
-    export default {
-        components: {
-            DxDataGrid,
-            DxColumn,
-            // ...
-            DxRequiredRule,
-            DxEditing
-        },
-        // ...
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import {
-        DataGrid,
-        Column,
-        // ...
-        RequiredRule,
-        Editing
-    } from 'devextreme-react/data-grid';
+    <!-- tab: App.tsx -->
+    import { DataGrid, Editing, Column, RequiredRule } from 'devextreme-react/data-grid';
 
     function App() {
         return (
-            <div className="App">
-                <DataGrid ... >
-                    {/* ... */}
-                    <Column dataField="FullName">
-                        <RequiredRule />
-                    </Column>
-                    <Column dataField="Position">
-                        <RequiredRule />
-                    </Column>
-                    <Column ...
-                        dataField="BirthDate">
-                        <RequiredRule />
-                    </Column>
-                    <Column ...
-                        dataField="HireDate">
-                        <RequiredRule />
-                    </Column>
-                    {/* ... */}
-                    <Column ...
-                        dataField="Country">
-                        <RequiredRule />
-                    </Column>
-                    <Editing
-                        mode="popup"
-                        allowUpdating={true}
-                        allowDeleting={true}
-                        allowAdding={true}
-                    />
-                </DataGrid>
-            </div>
+            <DataGrid>
+                <Editing
+                    mode="popup"
+                    allowUpdating={true}
+                    allowDeleting={true}
+                    allowAdding={true}
+                />
+                <Column dataField="FullName">
+                    <RequiredRule />
+                </Column>
+                <Column dataField="Position">
+                    <RequiredRule />
+                </Column>
+                <Column dataField="BirthDate">
+                    <RequiredRule />
+                </Column>
+                <Column dataField="HireDate">
+                    <RequiredRule />
+                </Column>
+                <Column dataField="Country">
+                    <RequiredRule />
+                </Column>
+                {/* ... */}
+            </DataGrid>
         );
     }
 
-    export default App;
-
 ---
 
-Run the code and click the Edit button in any row. This invokes a pop-up window that contains an edit form. When you clear the Full Name text box on this form, the following validation error is shown: *"Full Name is required"*.
-
-To learn how to validate unchanged cells with a button click, refer to the following example:
+To implement validation for unchanged cells using a custom toolbar button, refer to the following example:
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-data-grid-validate-unchanged-cells"

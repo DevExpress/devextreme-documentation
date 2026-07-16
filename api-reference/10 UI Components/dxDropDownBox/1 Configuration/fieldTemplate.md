@@ -84,7 +84,7 @@ In the following code, the **fieldTemplate** is used to stylize the text field w
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDropDownBox from 'devextreme-vue/drop-down-box';
     import DxTextBox from 'devextreme-vue/text-box';
@@ -112,7 +112,7 @@ In the following code, the **fieldTemplate** is used to stylize the text field w
 
     <!-- tab: App.js -->
     import React from 'react';
-    import 'devextreme/dist/css/dx.light.css';
+    import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { DropDownBox } from 'devextreme-react/drop-down-box';
     import { TextBox } from 'devextreme-react/text-box';

@@ -102,7 +102,7 @@ This property accepts a string - the name of the data field that provides displa
         </template>
 
         <script setup>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
         import Dx{WidgetName}, { DxColumn, DxLookup } from 'devextreme-vue/{widget-name}';
 
         const calculateSortValue = (data) => {
@@ -116,7 +116,7 @@ This property accepts a string - the name of the data field that provides displa
 
         <!-- tab: App.js -->
         import React from 'react';
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import {WidgetName}, {
             Column,

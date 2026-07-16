@@ -29,7 +29,9 @@ Set the **headerFilter**.[visible](/api-reference/_hidden/dxGanttHeaderFilter/vi
                 visible: true,
                 width: 280,
                 height: 350,
-                searchTimeout: 800
+                search: {
+                    timeout: 800
+                }
             },
             // ...
         });
@@ -42,8 +44,9 @@ Set the **headerFilter**.[visible](/api-reference/_hidden/dxGanttHeaderFilter/vi
         <dxo-gantt-header-filter
             [visible]="true" 
             [width]="280"
-            [height]="350"
-            [searchTimeout]="800" >
+            [height]="350">
+            <dxo-gantt-header-filter-search [timeout]="800">
+            </dxo-gantt-header-filter-search>
         </dxo-gantt-header-filter>
         <!-- ... -->
     </dx-gantt>
@@ -86,12 +89,13 @@ Set the **headerFilter**.[visible](/api-reference/_hidden/dxGanttHeaderFilter/vi
                 :visible="true"
                 :width="280"
                 :height="350" 
-                :search-timeout="800"
-            />
+            >
+                <DxSearch timeout="800" />
+            </DxHeaderFilter>
             <!-- ... -->
         </DxGantt>
     </template>
-    <script>
+    <script setup lang="ts">
         import 'devextreme/dist/css/dx.fluent.blue.light.css';
         import 'devexpress-gantt/dist/dx-gantt.css'; 
 
@@ -100,14 +104,6 @@ Set the **headerFilter**.[visible](/api-reference/_hidden/dxGanttHeaderFilter/vi
             DxHeaderFilter, 
             // ... 
         } from 'devextreme-vue/gantt';
-        
-        export default {
-            components: { 
-                DxGantt, 
-                DxHeaderFilter, 
-                // ... 
-            }
-        };
     </script>
 	
 ##### React
@@ -129,8 +125,9 @@ Set the **headerFilter**.[visible](/api-reference/_hidden/dxGanttHeaderFilter/vi
                 <HeaderFilter
                     visible={true}
                     width={280} 
-                    height={350}
-                    searchTimeout={800} />
+                    height={350}>
+                    <Search timeout={800} />
+                </HeaderFilter>
                 {/* ... */}
             </Gantt>
         );
@@ -143,10 +140,10 @@ Set the **headerFilter**.[visible](/api-reference/_hidden/dxGanttHeaderFilter/vi
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .HeaderFilter(e => {
-            e.Visible(true)
-            e.Width(280)
-            e.Height(350)
-            e.SearchTimeout(800)
+            e.Visible(true);
+            e.Width(280);
+            e.Height(350);
+            e.Search(f => f.Timeout(500));
         })
         // ...
     )
@@ -156,10 +153,10 @@ Set the **headerFilter**.[visible](/api-reference/_hidden/dxGanttHeaderFilter/vi
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .HeaderFilter(e => {
-            e.Visible(true)
-            e.Width(280)
-            e.Height(350)
-            e.SearchTimeout(800)
+            e.Visible(true);
+            e.Width(280);
+            e.Height(350);
+            e.Search(f => f.Timeout(500));
         })
         // ...
     )

@@ -1,7 +1,6 @@
 ---
 id: dxDataGrid.Options.onEditorPreparing
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription
@@ -152,7 +151,7 @@ Use this function to:
         </template>
 
         <script>
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import Dx{WidgetName} from 'devextreme-vue/{widget-name}';
 
@@ -185,7 +184,7 @@ Use this function to:
         <!-- tab: App.js -->
         import React from 'react';
 
-        import 'devextreme/dist/css/dx.light.css';
+        import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import {WidgetName} from 'devextreme-react/{widget-name}';
 

@@ -247,5 +247,5 @@ If you need to render different templates depending on a specific condition, def
 
 #####See Also#####
 - [Tooltip - Resize and Relocate](/concepts/05%20UI%20Components/Tooltip/15%20Resize%20and%20Relocate.md '/Documentation//Guide/UI_Components/Tooltip/Resize_and_Relocate/')
-- [Tooltip Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tooltip/Overview)
+- [Tooltip Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tooltip/Overview/)
 - [Tooltip API Reference](/api-reference/10%20UI%20Components/dxTooltip '/Documentation/ApiReference/UI_Components/dxTooltip/')

@@ -1,23 +1,23 @@
-The DataGrid supports single and multiple record selection modes. Use the **selection**.[mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/selection/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#mode') property to specify the mode.
+#include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/DataGrid/Selection/", name: "DataGrid - Selection" }
 
-You can obtain the selected record's data in the [onSelectionChanged](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onSelectionChanged') function. In the code below, this function displays the selected employee under the DataGrid:
+DataGrid supports single- and multiple-row selection. To enable row selection, configure the **selection**.[mode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/selection/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#mode') property.
+
+Handle [onSelectionChanged](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onSelectionChanged.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onSelectionChanged') to obtain selected records at runtime. This tutorial uses **onSelectionChanged** to display selected employee names in an element outside the component:
 
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
-    $(function() {
-        $("#dataGrid").dxDataGrid({
-            // ...
-            selection: { mode: "single" },
-            onSelectionChanged: function(e) {
-                e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
-                    if(employee) {
-                        $("#selected-employee").text(`Selected employee: ${employee.FullName}`);
-                    }
-                });
-            },
-        });
+    $("#dataGrid").dxDataGrid({
+        selection: { mode: "single" },
+        onSelectionChanged: function(e) {
+            e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
+                if(employee) {
+                    $("#selected-employee").text(`Selected employee: ${employee.FullName}`);
+                }
+            });
+        },
+        // ...
     });
 
     <!-- tab: index.html -->
@@ -31,52 +31,57 @@ You can obtain the selected record's data in the [onSelectionChanged](/api-refer
         </body>
     </html>
 
-    <!-- tab: index.css -->
-    /* ... */
-    #app-container {
-        width: 900px;
-        position: relative;
-    }
+##### ASP.NET Core Controls
 
-    #selected-employee {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
+    <!-- tab: Index.cshtml -->
+    <div id="app-container">
+        @(Html.DevExtreme().DataGrid<Employee>()
+            .Selection(s => s.Mode(SelectionMode.Single))
+            .OnSelectionChanged("handleSelectionChanged")
+            @* ... *@
+        )
+        <p id="selected-employee"></p>
+    </div>
+
+    <script>
+        function handleSelectionChanged(e) {
+            e.component.byKey(e.currentSelectedRowKeys[0]).done((employee) => {
+                if (employee) {
+                    $('#selected-employee').text(`Selected employee: ${employee.FullName}`);
+                }
+            });
+        }
+    </script>
 
 ##### Angular
 
     <!-- tab: app.component.html -->
     <div id="app-container">
-        <dx-data-grid ...
-            (onSelectionChanged)="selectEmployee($event)">
-            <!-- ... -->
+        <dx-data-grid (onSelectionChanged)="selectEmployee($event)">
             <dxo-data-grid-selection mode="single"></dxo-data-grid-selection>
+            <!-- ... -->
         </dx-data-grid>
-        <p id="selected-employee" *ngIf="selectedEmployee">
-            Selected employee: {{ selectedEmployee.FullName }}
-        </p>
+        @if (selectedEmployee) {
+            <p id="selected-employee">
+                Selected employee: {{ selectedEmployee.FullName }}
+            </p>
+        }
     </div>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
+    import { DxDataGridTypes } from 'devextreme-angular/ui/data-grid';
     import { Employee, EmployeesService } from './employees.service';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    // ...
     export class AppComponent {
-        // ...
         selectedEmployee: Employee;
 
         constructor(service: EmployeesService) {
-            // ...
             this.selectEmployee = this.selectEmployee.bind(this);
         }
         
-        selectEmployee(e) {
+        selectEmployee(e: DxDataGridTypes.SelectionChangedEvent) {
             e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
                 if(employee) {
                     this.selectedEmployee = employee;
@@ -85,28 +90,14 @@ You can obtain the selected record's data in the [onSelectionChanged](/api-refer
         }
     }
 
-    <!-- tab: app.component.css -->
-    /* ... */
-    #app-container {
-        width: 900px;
-        position: relative;
-    }
-
-    #selected-employee {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
-
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
         <div id="app-container">
-            <DxDataGrid ...
-                @selection-changed="selectEmployee">
-                <!-- ... -->
+            <DxDataGrid @selection-changed="selectEmployee">
                 <DxSelection mode="single" />
+                <!-- ... -->
             </DxDataGrid>
             <p id="selected-employee" v-if="selectedEmployee">
                 Selected employee: {{ selectedEmployee.FullName }}
@@ -114,64 +105,28 @@ You can obtain the selected record's data in the [onSelectionChanged](/api-refer
         </div>
     </template>
 
-    <script>
-    import {
-        DxDataGrid,
-        // ...
-        DxSelection
-    } from 'devextreme-vue/data-grid';
+    <script setup lang="ts">
+    import { ref } from 'vue';
+    import { DxDataGrid, DxSelection, type DataGridTypes } from 'devextreme-vue/data-grid';
+    import { type Employee } from '../employees.service';
 
-    export default {
-        components: {
-            DxDataGrid,
-            // ...
-            DxSelection
-        },
-        data() {
-            return {
-                // ...
-                selectedEmployee: undefined,
+    const selectedEmployee = ref<Employee | undefined>();
+
+    function selectEmployee(e: DataGridTypes.SelectionChangedEvent): void {
+        e.component.byKey(e.currentSelectedRowKeys[0]).done((employee: Employee) => {
+            if (employee) {
+                selectedEmployee.value = employee;
             }
-        },
-        methods: {
-            selectEmployee(e) {
-                e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
-                    if(employee) {
-                        this.selectedEmployee = employee;
-                    }
-                });
-            }
-        }
+        });
     }
     </script>
 
-    <style>
-    /* ... */
-    #app-container {
-        width: 900px;
-        position: relative;
-    }
-
-    #selected-employee {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
-    </style>
-
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React, { useCallback, useState } from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-    import './App.css';
-
-    import {
-        DataGrid,
-        Column,
-        // ...
-        Selection
-    } from 'devextreme-react/data-grid';
+    import { DataGrid, Selection, type DataGridTypes } from 'devextreme-react/data-grid';
+    import { type Employee } from './employees';
 
     function SelectedEmployee(props) {
         if(props.employee) {
@@ -186,37 +141,21 @@ You can obtain the selected record's data in the [onSelectionChanged](/api-refer
 
     function App() {
         const [selectedEmployee, setSelectedEmployee] = useState();
-        const selectEmployee = useCallback((e) => {
-            e.component.byKey(e.currentSelectedRowKeys[0]).done(employee => {
+        const selectEmployee = useCallback((e: DataGridTypes.SelectionChangedEvent): void => {
+            e.component.byKey(e.currentSelectedRowKeys[0]).then((employee: Employee) => {
                 setSelectedEmployee(employee);
-            });
+            }).catch(() => {});
         }, []);
 
         return (
             <div className="App">
-                <DataGrid ...
-                    onSelectionChanged={selectEmployee}>
-                    {/* ... */}
+                <DataGrid onSelectionChanged={selectEmployee}>
                     <Selection mode="single" />
+                    {/* ... */}
                 </DataGrid>
                 <SelectedEmployee employee={selectedEmployee} />
             </div>
         );
-    }
-
-    export default App;
-
-    <!-- tab: App.css -->
-    /* ... */
-    .App {
-        width: 900px;
-        position: relative;
-    }
-
-    #selected-employee {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
     }
 
 ---

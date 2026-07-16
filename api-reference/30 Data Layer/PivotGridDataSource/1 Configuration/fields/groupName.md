@@ -1,7 +1,6 @@
 ---
 id: PivotGridDataSource.Options.fields.groupName
 type: String
-default: undefined
 ---
 ---
 ##### shortDescription

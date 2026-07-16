@@ -307,6 +307,6 @@ Each cell in the lookup column is based on the [SelectBox](/api-reference/10%20U
 #####See Also#####
 - [Bind a Lookup Column to a Custom Data Source](/concepts/05%20UI%20Components/TreeList/99%20How%20To/Bind%20a%20Lookup%20Column%20to%20a%20Custom%20Data%20Source.md '/Documentation/Guide/UI_Components/TreeList/How_To/Bind_a_Lookup_Column_to_a_Custom_Data_Source/')
 - [lookup](/api-reference/_hidden/GridBaseColumn/lookup '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/lookup/')
-- [TreeList Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_List/UsingFilterRow)
+- [TreeList Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Tree_List/UsingFilterRow/)
 
 [tags] treelist, tree list, column types, lookup columns

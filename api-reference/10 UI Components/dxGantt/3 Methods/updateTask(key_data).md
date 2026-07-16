@@ -1,4 +1,4 @@
----
+﻿---
 id: dxGantt.updateTask(key, data)
 ---
 ---
@@ -150,7 +150,7 @@ Note that the **updateTask** method does not allow you to change a task's parent
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -158,7 +158,7 @@ Note that the **updateTask** method does not allow you to change a task's parent
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.updateTask(3, {title: "New Title"});
             // ...
         }
@@ -169,7 +169,7 @@ Note that the **updateTask** method does not allow you to change a task's parent
     <!-- tab: Razor C# -->
     @(Html.DevExtreme().Gantt()
         .ID("gantt")
-        @* ... *@
+        // ...
     )
 
     <script type="text/javascript">
@@ -177,7 +177,7 @@ Note that the **updateTask** method does not allow you to change a task's parent
             return $("#gantt").dxGantt("instance");
         }
         function yourCustomMethod() {
-            var ganttInstance = getGanttInstance();
+            const ganttInstance = getGanttInstance();
             ganttInstance.updateTask(3, {title: "New Title"});
             // ...
         }

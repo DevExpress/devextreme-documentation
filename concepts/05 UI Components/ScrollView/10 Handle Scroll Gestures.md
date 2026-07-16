@@ -315,7 +315,7 @@ If you want to process each scroll gesture performed by a user, handle the [scro
 #####See Also#####
 #include common-link-handleevents
 - [ScrollView - Scroll the Content](/concepts/05%20UI%20Components/ScrollView/05%20Scroll%20the%20Content '/Documentation/Guide/UI_Components/ScrollView/Scroll_the_Content/')
-- [ScrollView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ScrollView/Overview)
+- [ScrollView Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/ScrollView/Overview/)
 - [ScrollView API Reference](/api-reference/10%20UI%20Components/dxScrollView '/Documentation/ApiReference/UI_Components/dxScrollView/')
 
 [tags]scrollView, scroll view, pull down, pull-to-refresh, refresh, reach bottom, boundaries

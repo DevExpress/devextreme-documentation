@@ -160,15 +160,15 @@ The UI component allows users to add, modify and delete tasks, resources and dep
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()
         .Editing(e => {
-            e.Enabled(true)
-            e.AllowDependencyAdding(false)
-            e.AllowDependencyDeleting(false)
-            e.AllowResourceAdding(false)
-            e.AllowResourceDeleting(false)
-            e.AllowTaskAdding(false)
-            e.AllowTaskDeleting(false)
-            e.AllowTaskResourceUpdating(false)
-            e.AllowTaskUpdating(false)
+            e.Enabled(true);
+            e.AllowDependencyAdding(false);
+            e.AllowDependencyDeleting(false);
+            e.AllowResourceAdding(false);
+            e.AllowResourceDeleting(false);
+            e.AllowTaskAdding(false);
+            e.AllowTaskDeleting(false);
+            e.AllowTaskResourceUpdating(false);
+            e.AllowTaskUpdating(false);
         })
         // ...
     )

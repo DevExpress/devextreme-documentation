@@ -102,26 +102,23 @@ Use the **editing**.[popup](/api-reference/10%20UI%20Components/GridBase/1%20Con
         Popup
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Editing
-                        allowUpdating={true}
-                        mode="popup">
-                        <Form
-                            labelLocation="top"
-                        />
-                        <Popup
-                            showTitle={true}
-                            title="Row in the editing state"
-                        />
-                    </Editing>
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Editing
+                    allowUpdating={true}
+                    mode="popup">
+                    <Form
+                        labelLocation="top"
+                    />
+                    <Popup
+                        showTitle={true}
+                        title="Row in the editing state"
+                    />
+                </Editing>
+            </DataGrid>
+        );
     }
-    export default App;
     
 ---
 

@@ -102,26 +102,23 @@ Use the **editing**.[popup](/api-reference/10%20UI%20Components/GridBase/1%20Con
         Popup
     } from 'devextreme-react/tree-list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList ... >
-                    <Editing
-                        allowUpdating={true}
-                        mode="popup">
-                        <Form
-                            labelLocation="top"
-                        />
-                        <Popup
-                            showTitle={true}
-                            title="Row in the editing state"
-                        />
-                    </Editing>
-                </TreeList>
-            );
-        }
+    export default function App() {
+        return (
+            <TreeList ... >
+                <Editing
+                    allowUpdating={true}
+                    mode="popup">
+                    <Form
+                        labelLocation="top"
+                    />
+                    <Popup
+                        showTitle={true}
+                        title="Row in the editing state"
+                    />
+                </Editing>
+            </TreeList>
+        );
     }
-    export default App;
     
 ---
 

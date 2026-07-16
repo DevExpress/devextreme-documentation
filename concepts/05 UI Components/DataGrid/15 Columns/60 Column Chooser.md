@@ -75,19 +75,16 @@ The column chooser allows a user to change the set of columns at runtime. It is 
         ColumnChooser
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <ColumnChooser
-                        enabled={true}
-                        mode="dragAndDrop" {/* or "select" */}
-                    />
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <ColumnChooser
+                    enabled={true}
+                    mode="dragAndDrop" {/* or "select" */}
+                />
+            </DataGrid>
+        );
     }
-    export default App;
     
 ---
 
@@ -185,24 +182,21 @@ Set a column's [allowHiding](/api-reference/_hidden/GridBaseColumn/allowHiding.m
         Column
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <ColumnChooser
-                        enabled={true}
-                    />
-                    <Column ...
-                        allowHiding={false} {/* cannot be hidden */}
-                    />
-                    <Column ...
-                        showInColumnChooser={false}> {/* does not appear in the column chooser even when hidden */}
-                    />
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <ColumnChooser
+                    enabled={true}
+                />
+                <Column ...
+                    allowHiding={false} {/* cannot be hidden */}
+                />
+                <Column ...
+                    showInColumnChooser={false}> {/* does not appear in the column chooser even when hidden */}
+                />
+            </DataGrid>
+        );
     }
-    export default App;
     
 ---
 

@@ -148,25 +148,22 @@ You can send the human-readable values from the server as a part of the main dat
         }    
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Column
-                        caption="Customer"
-                        dataField="CustomerID"
-                        calculateDisplayValue="CustomerName">   <!-- "CustomerName" provides human-readable values -->
-                        <Lookup
-                            dataSource={lookupDataSourceConfig}
-                            displayExpr="ContactName"
-                            valueExpr="CustomerID"
-                        />
-                    </Column>
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Column
+                    caption="Customer"
+                    dataField="CustomerID"
+                    calculateDisplayValue="CustomerName">   <!-- "CustomerName" provides human-readable values -->
+                    <Lookup
+                        dataSource={lookupDataSourceConfig}
+                        displayExpr="ContactName"
+                        valueExpr="CustomerID"
+                    />
+                </Column>
+            </DataGrid>
+        );
     }
-    export default App;
 
 ---
 

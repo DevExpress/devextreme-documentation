@@ -80,16 +80,13 @@ A data column automatically detects the type of its values. However, if the valu
         Column
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Column dataField="HireDate" dataType="date" />
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Column dataField="HireDate" dataType="date" />
+            </DataGrid>
+        );
     }
-    export default App;
     
 ---
 

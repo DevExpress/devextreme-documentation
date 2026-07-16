@@ -166,23 +166,20 @@ Each lookup column has an individual [data source](/api-reference/_hidden/GridBa
         paginate: true   
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid dataSource={orders}>
-                    <Column
-                        dataField="statusId"> <!-- provides actual values -->
-                        <Lookup
-                            dataSource={lookupDataSourceConfig}
-                            valueExpr="id" <!-- contains the same values as the "statusId" field provides -->
-                            displayExpr="name" <!-- provides display values -->
-                        />
-                    </Column>
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid dataSource={orders}>
+                <Column
+                    dataField="statusId"> <!-- provides actual values -->
+                    <Lookup
+                        dataSource={lookupDataSourceConfig}
+                        valueExpr="id" <!-- contains the same values as the "statusId" field provides -->
+                        displayExpr="name" <!-- provides display values -->
+                    />
+                </Column>
+            </DataGrid>
+        );
     }
-    export default App;
 
 ---
 
@@ -311,21 +308,18 @@ Each lookup column has an individual [data source](/api-reference/_hidden/GridBa
         // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid dataSource={orders}>
-                    <Column
-                        dataField="status"> <!-- provides column values -->
-                        <Lookup
-                            dataSource={lookupData}
-                        />
-                    </Column>
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid dataSource={orders}>
+                <Column
+                    dataField="status"> <!-- provides column values -->
+                    <Lookup
+                        dataSource={lookupData}
+                    />
+                </Column>
+            </DataGrid>
+        );
     }
-    export default App;
     
 ---
 

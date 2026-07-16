@@ -81,20 +81,17 @@ Clicking the "Delete" button invokes the confirmation dialog that allows a user 
 
     import { DataGrid, Editing } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Editing
-                        mode="row"
-                        confirmDelete={false}
-                        allowDeleting={true} 
-                    />
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Editing
+                    mode="row"
+                    confirmDelete={false}
+                    allowDeleting={true} 
+                />
+            </DataGrid>
+        );
     }
-    export default App;
     
 ---
 

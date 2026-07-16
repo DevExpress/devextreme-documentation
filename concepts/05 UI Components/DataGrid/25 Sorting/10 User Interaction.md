@@ -65,16 +65,13 @@ With the DataGrid UI component, a user can sort by single and multiple columns. 
 
     import { DataGrid, Sorting } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid>
-                    <Sorting mode="single"/> {/* or "multiple" | "none" */}
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid>
+                <Sorting mode="single"/> {/* or "multiple" | "none" */}
+            </DataGrid>
+        );
     }
-    export default App;
 
 ---
 
@@ -156,16 +153,13 @@ To disable sorting in the whole UI component, set the **sorting**.**mode** prope
 
     import { DataGrid, Column } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid>
-                    <Column allowSorting={false}/>
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid>
+                <Column allowSorting={false}/>
+            </DataGrid>
+        );
     }
-    export default App;
     
 ---
 

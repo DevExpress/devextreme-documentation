@@ -210,9 +210,7 @@ The Form UI component allows you to specify custom templates for an individual t
                 to the terms of the <a href='#'>Data Protection Policy</a></i>
             </p>
         );
-    }    
-
-    export default App;
+    }
 
 ---
 

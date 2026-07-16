@@ -93,8 +93,6 @@ When a funnel item's selection state is being changed, the Funnel raises the [se
         }
     }
 
-    export default App;
-
 ---
 
 ---

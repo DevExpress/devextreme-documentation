@@ -139,8 +139,6 @@ The Form UI component allows you to place custom content, for example, an image,
         );
     }
 
-    export default App;
-
 ---
 
 #####See Also#####

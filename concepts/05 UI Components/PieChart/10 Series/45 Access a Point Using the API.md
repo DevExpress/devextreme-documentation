@@ -519,8 +519,6 @@ Apart from the API methods, you can access a series point in the event handlers.
         // ...
     }
 
-    export default App;
-
 ---
 
 [note] Each [Point](/api-reference/10%20UI%20Components/dxPieChart/7%20Chart%20Elements/Point '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Point/') object contains a reference to its parent series in the [series](/api-reference/10%20UI%20Components/BaseChart/7%20Chart%20Elements/Point/2%20Fields/series.md '/Documentation/ApiReference/UI_Components/dxPieChart/Chart_Elements/Point/Fields/#series') field.

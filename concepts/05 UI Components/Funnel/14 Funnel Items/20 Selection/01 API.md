@@ -77,8 +77,6 @@ The selection capability is not provided out of the box, but it can be implement
         e.item.select(!e.item.isSelected())
     }
 
-    export default App;
-
 ---
 
 In the previous code example, selection was cleared of a specific item. If you need to clear selection of all items, call the Funnel's [clearSelection()](/api-reference/10%20UI%20Components/dxFunnel/3%20Methods/clearSelection().md '/Documentation/ApiReference/UI_Components/dxFunnel/Methods/#clearSelection') method.

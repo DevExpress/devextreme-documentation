@@ -93,8 +93,6 @@ When a funnel item's hover state is being changed, the Funnel raises the [hoverC
         }
     }
 
-    export default App;
-
 ---
 
 ---

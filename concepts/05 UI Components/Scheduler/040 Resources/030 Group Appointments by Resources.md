@@ -277,11 +277,12 @@ You can change resource headers orientation in an individual view using the **vi
 
     export default function App() {
         return (
-            <Scheduler ... >
+            <Scheduler>
                 <View type="month" />
                 <View
                     type="day"
-                    groupOrientaion="vertical" />
+                    groupOrientation="vertical"
+                />
             </Scheduler>
         );
     }

@@ -170,10 +170,10 @@ Implement a callback function with custom template and assign it to the [resourc
                 resourceCellRender={renderResourceCell}
             >
                 <Resource
-                  fieldExpr="roomId"
-                  dataSource={rooms}
+                    fieldExpr="roomId"
+                    dataSource={rooms}
                 />
-          </Scheduler>
+            </Scheduler>
         );
     }
 

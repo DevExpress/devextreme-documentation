@@ -186,21 +186,24 @@ In the following example, a button validates an editor with an async rule. The *
         res.status === "pending" && res.complete.then((r) => {
             console.log(r.status);
         });
-    });
+    };
 
     export default function App() {
         return (
-            <TextBox>
-                <Validator
-                    validationGroup={validationGroupName}>
-                    <AsyncRule
-                        validationCallback={validateAsync} />
-                </Validator>
-            </TextBox>
+            <>
+                <TextBox>
+                    <Validator
+                        validationGroup={validationGroupName}>
+                        <AsyncRule
+                            validationCallback={validateAsync} />
+                    </Validator>
+                </TextBox>
 
-            <Button 
-                validationGroup={validationGroupName}
-                onClick={validateEditor} />
+                <Button 
+                    validationGroup={validationGroupName}
+                    onClick={validateEditor}
+                />
+            </>
         );
     }
 

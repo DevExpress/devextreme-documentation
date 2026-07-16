@@ -69,7 +69,7 @@ The dxItem component defines custom markup for items in layout and collection UI
                 <Item text="Apples" disabled={true} />
                 <Item text="Oranges" visible={false} />
                 <Item>
-                    <!-- Custom markup -->
+                    {/* Custom markup */}
                 </Item>
             </List>
         );

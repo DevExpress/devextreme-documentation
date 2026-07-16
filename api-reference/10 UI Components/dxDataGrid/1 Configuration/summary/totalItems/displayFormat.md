@@ -106,13 +106,14 @@ You can use the following position markers in this text:
     export default function App() {
         return (
             <DataGrid>
-                <Summary
+                <Summary>
                     <TotalItem 
                         column="SaleAmount" 
                         summaryType="sum" 
                         showInColumn="TotalAmount" 
                         valueFormat="currency" 
-                        displayFormat="Column: {1}. Sales: {0}" /> <!-- for example, "Column: Total Amount. Sales: $1234" -->
+                        displayFormat="Column: {1}. Sales: {0}"
+                    /> {/* For instance, "Column: Total Amount. Sales: $1234" */}
                 </Summary>
             </DataGrid>
         );

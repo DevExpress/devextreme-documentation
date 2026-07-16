@@ -101,15 +101,14 @@ See [FileUploader Configuration](/api-reference/10%20UI%20Components/dxFileUploa
 
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import HtmlEditor from 'devextreme-react/html-editor';
+    import { HtmlEditor, ImageUpload } from 'devextreme-react/html-editor';
 
-    const fu_options = { maxFileSize: 4000000 };
+    const fileUploaderOptions = { maxFileSize: 4000000 };
 
     export default function App() {
         return (
-            <HtmlEditor ...>
-                <ImageUpload 
-                    fileUploaderOptions={this.fu_options} />
+            <HtmlEditor>
+                <ImageUpload fileUploaderOptions={fileUploaderOptions} />
             </HtmlEditor>
         );
     }

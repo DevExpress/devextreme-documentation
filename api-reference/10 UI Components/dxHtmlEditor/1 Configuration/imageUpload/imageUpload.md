@@ -121,16 +121,16 @@ Use the [fileUploadMode](/api-reference/_hidden/dxHtmlEditorImageUpload/fileUplo
 
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import HtmlEditor from 'devextreme-react/html-editor';
+    import { HtmlEditor, ImageUpload } from 'devextreme-react/html-editor';
 
     const dialogTabs = ['url', 'file'];
 
     export default function App() {
         return (
-            <HtmlEditor ...>
+            <HtmlEditor>
                 <ImageUpload 
                     fileUploadMode="both"
-                    :tabs={dialogTabs}
+                    tabs={dialogTabs}
                     uploadUrl="https://js.devexpress.com/Demos/Upload"
                     uploadDirectory="/Images"
                 />

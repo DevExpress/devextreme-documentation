@@ -80,10 +80,10 @@ The following code shows how to use the **controlBar** object to move the contro
     export default function App() {
         return (
             <VectorMap>
-                // ...
                 <ControlBar
                     horizontalAlignment="right"
                 />
+                {/* ... */}
             </VectorMap>
         );
     }

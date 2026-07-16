@@ -77,14 +77,12 @@ When a funnel item's hover state is being changed, the Funnel raises the [hoverC
     import React from 'react';
     import Funnel from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel
-                    onHoverChanged={onHoverChanged}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Funnel
+                onHoverChanged={onHoverChanged}
+            />
+        );
     }
 
     function onHoverChanged (e) {

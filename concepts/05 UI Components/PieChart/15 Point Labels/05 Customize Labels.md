@@ -89,19 +89,17 @@ If you need to change the text displayed by point labels, declare the [customize
         Label
     } from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PieChart ... >
-                    <Series>
-                        <Label
-                            visible={true}
-                            customizeText={customizeText}
-                        />
-                    </Series>
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PieChart ... >
+                <Series>
+                    <Label
+                        visible={true}
+                        customizeText={customizeText}
+                    />
+                </Series>
+            </PieChart>
+        );
     }
 
     function customizeText({ argument, value }) {
@@ -212,20 +210,18 @@ You can also customize an individual label. For this purpose, assign a function 
         Label
     } from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PieChart ...
-                    customizeLabel={customizeLabel}>
-                    <Series>
-                        <Label
-                            visible={true}
-                            backgroundColor="blue"
-                        />
-                    </Series>
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PieChart ...
+                customizeLabel={customizeLabel}>
+                <Series>
+                    <Label
+                        visible={true}
+                        backgroundColor="blue"
+                    />
+                </Series>
+            </PieChart>
+        );
     }
 
     // All point labels with the value more than 100 turn red

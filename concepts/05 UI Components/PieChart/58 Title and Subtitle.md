@@ -79,16 +79,14 @@ The title is configured by the [title](/api-reference/10%20UI%20Components/dxPie
         Subtitle
     } from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PieChart ...>
-                    <Title text="I am the Title">
-                        <Subtitle text="I am the Subtitle" />
-                    </Title>
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PieChart ...>
+                <Title text="I am the Title">
+                    <Subtitle text="I am the Subtitle" />
+                </Title>
+            </PieChart>
+        );
     }
 
 ---
@@ -154,14 +152,12 @@ You can set the title's text more concisely by assigning it directly to the **ti
     import React from 'react';
     import PieChart from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PieChart ...
-                    title="I am the Title">
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PieChart ...
+                title="I am the Title">
+            </PieChart>
+        );
     }
 
 ---

@@ -77,14 +77,12 @@ When a funnel item's selection state is being changed, the Funnel raises the [se
     import React from 'react';
     import Funnel from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel
-                    onSelectionChanged={onSelectionChanged}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Funnel
+                onSelectionChanged={onSelectionChanged}
+            />
+        );
     }
 
     function onSelectionChanged (e) {

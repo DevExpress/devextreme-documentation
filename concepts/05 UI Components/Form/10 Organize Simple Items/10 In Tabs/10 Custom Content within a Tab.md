@@ -174,29 +174,27 @@ The Form UI component allows you to specify custom templates for an individual t
         email: 'jheart@dx-email.com'
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Form formData={employee}>
-                    <SimpleItem dataField="name" />
-                    <TabbedItem colSpan={2}>
-                        <Tab
-                            title="Data Protection Policy"
-                            tabRender={tabRender}
-                            render={tabContentRender} />
-                        <Tab title="Info">
-                            <SimpleItem dataField="position" />
-                            <SimpleItem dataField="birthDate" />
-                            <SimpleItem dataField="city" />
-                        </Tab>
-                        <Tab title="Contacts">
-                            <SimpleItem dataField="phone" />
-                            <SimpleItem dataField="email" />
-                        </Tab>
-                    </TabbedItem>
-                </Form>
-            );
-        }
+    export default function App() {
+        return (
+            <Form formData={employee}>
+                <SimpleItem dataField="name" />
+                <TabbedItem colSpan={2}>
+                    <Tab
+                        title="Data Protection Policy"
+                        tabRender={tabRender}
+                        render={tabContentRender} />
+                    <Tab title="Info">
+                        <SimpleItem dataField="position" />
+                        <SimpleItem dataField="birthDate" />
+                        <SimpleItem dataField="city" />
+                    </Tab>
+                    <Tab title="Contacts">
+                        <SimpleItem dataField="phone" />
+                        <SimpleItem dataField="email" />
+                    </Tab>
+                </TabbedItem>
+            </Form>
+        );
     }
 
     function tabRender(data) {

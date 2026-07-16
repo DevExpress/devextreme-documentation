@@ -84,23 +84,19 @@ To specify when the Popover should be shown and hidden, set the [showEvent](/api
         );
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <div>
-                    <img id="image" src="https://url/to/an/image" />
-                    <Popover
-                        target="#image"
-                        showEvent="dxhoverstart"
-                        hideEvent="dxhoverend"
-                        contentRender={renderContent}
-                    />
-                </div>
-            );
-        }
+    export default function App() {
+        return (
+            <div>
+                <img id="image" src="https://url/to/an/image" />
+                <Popover
+                    target="#image"
+                    showEvent="dxhoverstart"
+                    hideEvent="dxhoverend"
+                    contentRender={renderContent}
+                />
+            </div>
+        );
     }
-
-    export default App;
 
 ##### ASP.NET MVC Controls
 
@@ -210,24 +206,20 @@ The Popover can also be hidden when a user clicks outside it. To control this be
         );
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <div>
-                    <img id="image" src="https://url/to/an/image" />
-                    <Popover
-                        target="#image"
-                        showEvent="dxhoverstart"
-                        hideEvent="dxhoverend"
-                        contentRender={renderContent}
-                        hideOnOutsideClick={false}
-                    />
-                </div>
-            );
-        }
+    export default function App() {
+        return (
+            <div>
+                <img id="image" src="https://url/to/an/image" />
+                <Popover
+                    target="#image"
+                    showEvent="dxhoverstart"
+                    hideEvent="dxhoverend"
+                    contentRender={renderContent}
+                    hideOnOutsideClick={false}
+                />
+            </div>
+        );
     }
-
-    export default App;
 
 ##### ASP.NET MVC Controls
 

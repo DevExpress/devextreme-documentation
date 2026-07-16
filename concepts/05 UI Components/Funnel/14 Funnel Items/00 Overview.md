@@ -92,20 +92,16 @@ Funnel items get their colors from the [palette](/api-reference/10%20UI%20Compon
         { fruit: "Lemons", count: 15, color: "yellow" }
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel
-                    dataSource={fruits}
-                    argumentField="fruit"
-                    valueField="count"
-                    colorField="color"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Funnel
+                dataSource={fruits}
+                argumentField="fruit"
+                valueField="count"
+                colorField="color"
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -181,19 +177,15 @@ To configure other aspects of the funnel items' appearance, use the [item](/api-
     import React from 'react';
     import Funnel, { Item, Border } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel ... >
-                    <Item>
-                        <Border visible={true} />
-                    </Item>
-                </Funnel>
-            );
-        }
+    export default function App() {
+        return (
+            <Funnel ... >
+                <Item>
+                    <Border visible={true} />
+                </Item>
+            </Funnel>
+        );
     }
-
-    export default App;
 
 ---
 

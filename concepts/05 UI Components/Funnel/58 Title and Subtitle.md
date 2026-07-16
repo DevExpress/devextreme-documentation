@@ -76,19 +76,15 @@ The [title](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/tit
     import React from 'react';
     import Funnel, { Title, Subtitle } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel ... >
-                    <Title text="I am the Title">
-                        <Subtitle text="I am the Subtitle" />
-                    </Title>
-                </Funnel>
-            );
-        }
+    export default function App() {
+        return (
+            <Funnel ... >
+                <Title text="I am the Title">
+                    <Subtitle text="I am the Subtitle" />
+                </Title>
+            </Funnel>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -151,15 +147,11 @@ You can set the title's text more concisely by assigning it directly to the **ti
     import React from 'react';
     import Funnel from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel title="I am the Title" />
-            );
-        }
+    export default function App() {
+        return (
+            <Funnel title="I am the Title" />
+        );
     }
-
-    export default App;
 
 ---
 

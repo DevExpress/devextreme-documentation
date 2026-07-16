@@ -125,22 +125,19 @@ The UI component also has the [allowedFileExtensions](/api-reference/10%20UI%20C
     } from 'devextreme-react/file-manager';
     const allowedFileExtensions = ['.txt', '.doc', '.png'];
     
-    class App extends React.Component {
-        render() {
-            return (
-                <FileManager allowedFileExtensions={allowedFileExtensions}>
-                    <Permissions
-                        create={true}
-                        copy={true}
-                        download={true}
-                        move={true}
-                        remove={true}
-                        rename={true}
-                        download={true} />
-                </FileManager>
-            );
-        }
+    export default function App() {
+        return (
+            <FileManager allowedFileExtensions={allowedFileExtensions}>
+                <Permissions
+                    create={true}
+                    copy={true}
+                    download={true}
+                    move={true}
+                    remove={true}
+                    rename={true}
+                    download={true} />
+            </FileManager>
+        );
     }
-    export default App;
 
 ---

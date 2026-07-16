@@ -82,20 +82,16 @@ Regulating the empty space on a bar's sides controls the relative angular bar wi
         CommonSeriesSettings
     } from 'devextreme-react/polar-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PolarChart ... >
-                    <Series barPadding={0.1} /> {/* for an individual series */}
-                    <Series ... />
-                    ...
-                    <CommonSeriesSettings barPadding={0.1}/> {/* for all series in the chart */}
-                </PolarChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PolarChart ... >
+                <Series barPadding={0.1} /> {/* for an individual series */}
+                <Series ... />
+                ...
+                <CommonSeriesSettings barPadding={0.1}/> {/* for all series in the chart */}
+            </PolarChart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -160,17 +156,13 @@ The parent group's width can be specified using the [barGroupPadding](/api-refer
     import React from 'react';
     import PolarChart from 'devextreme-react/polar-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PolarChart ...
-                    barGroupPadding={0.2}>
-                </PolarChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PolarChart ...
+                barGroupPadding={0.2}>
+            </PolarChart>
+        );
     }
-
-    export default App;
 
 ---
 

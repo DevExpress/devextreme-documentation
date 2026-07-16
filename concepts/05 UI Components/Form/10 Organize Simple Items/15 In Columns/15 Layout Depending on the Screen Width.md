@@ -131,15 +131,13 @@ The Form UI component supports different layouts for different screen widths. Us
         md: 3
         lg: 4
     };
-    class App extends React.Component {
-        render() {
-            return (
-                <Form
-                    formData={employee}
-                    colCountByScreen={colCountByScreen}
-                    screenByWidth={screenByWidth} />
-            );
-        }
+    export default function App() {
+        return (
+            <Form
+                formData={employee}
+                colCountByScreen={colCountByScreen}
+                screenByWidth={screenByWidth} />
+        );
     }
 
     function screenByWidth(width) {

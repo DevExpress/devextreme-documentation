@@ -71,19 +71,17 @@ The PieChart UI component comprises of a pie and other elements which can affect
     import React from 'react';
     import PieChart from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                 <PieChart ...
-                    id="pieChartContainer1"
-                    sizeGroup="pies">
-                </PieChart>
-                <PieChart ...
-                    id="pieChartContainer2"
-                    sizeGroup="pies">
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+             <PieChart ...
+                id="pieChartContainer1"
+                sizeGroup="pies">
+            </PieChart>
+            <PieChart ...
+                id="pieChartContainer2"
+                sizeGroup="pies">
+            </PieChart>
+        );
     }
 
 ---

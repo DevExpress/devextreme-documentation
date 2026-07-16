@@ -7,11 +7,11 @@ A user can use the following keys to interact with the Toolbar component when [a
     </tr>
     <tr>
         <td>Tab</td>
-        <td>Moves focus to the first Toolbar item or to the next focusable element after the Toolbar.</td>
+        <td>If a Toolbar receives focus, it focuses its first available item.</td>
     </tr>
     <tr>
         <td>Shift + Tab</td>
-        <td>Moves focus to the last Toolbar item or to the previous focusable element before the Toolbar.</td>
+        <td>If a Toolbar receives focus, it focuses its last available item.</td>
     </tr>
     <tr>
         <td>Left Arrow / Right Arrow</td>

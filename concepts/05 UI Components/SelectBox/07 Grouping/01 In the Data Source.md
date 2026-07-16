@@ -138,7 +138,7 @@ Items in the SelectBox can be grouped if they are grouped in the data source. Th
         return (
             <SelectBox ...
                 dataSource={fruitsVegetables}
-                grouped="true"
+                grouped={true}
                 displayExpr="name"
                 valueExpr="count"
             />
@@ -330,7 +330,7 @@ If objects in your data source miss the **key** and **items** fields, use the [m
         return (
             <SelectBox ...
                 dataSource={selectBoxDataSource}
-                grouped="true"
+                grouped={true}
                 displayExpr="name"
                 valueExpr="count"
             />
@@ -471,7 +471,7 @@ If your data is not grouped, you can group it using the [group](/api-reference/3
         return (
             <SelectBox ...
                 dataSource={selectBoxDataSource}
-                grouped="true"
+                grouped={true}
                 displayExpr="name"
                 valueExpr="count"
             />

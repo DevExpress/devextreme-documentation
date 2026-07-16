@@ -193,7 +193,7 @@ By default, group headers display text of the **key** field in a bold font. If y
         return (
             <SelectBox ...
                 dataSource={selectBoxDataSource}
-                grouped="true"
+                grouped={true}
                 displayExpr="name"
                 valueExpr="count"
                 groupRender={renderGroup}

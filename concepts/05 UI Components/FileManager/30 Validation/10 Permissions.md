@@ -135,7 +135,7 @@ The UI component also has the [allowedFileExtensions](/api-reference/10%20UI%20C
                     move={true}
                     remove={true}
                     rename={true}
-                    download={true} />
+                    upload={true} />
             </FileManager>
         );
     }

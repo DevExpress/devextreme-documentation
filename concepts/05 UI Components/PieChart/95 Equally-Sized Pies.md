@@ -73,14 +73,16 @@ The PieChart UI component comprises of a pie and other elements which can affect
 
     export default function App() {
         return (
-             <PieChart ...
-                id="pieChartContainer1"
-                sizeGroup="pies">
-            </PieChart>
-            <PieChart ...
-                id="pieChartContainer2"
-                sizeGroup="pies">
-            </PieChart>
+            <>
+                <PieChart ...
+                    id="pieChartContainer1"
+                    sizeGroup="pies">
+                </PieChart>
+                <PieChart ...
+                    id="pieChartContainer2"
+                    sizeGroup="pies">
+                </PieChart>
+            </>
         );
     }
 

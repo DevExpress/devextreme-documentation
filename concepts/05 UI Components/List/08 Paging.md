@@ -112,7 +112,7 @@ Paging properties are set in the [DataSource](/api-reference/30%20Data%20Layer/D
 
 ---
 
-The next page can be rendered when a user scrolls the List down to the bottom, or after a user clicks the **More** button. Set the [pageLoadMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/pageLoadMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#pageLoadMode') property to specify the mode:
+The next page can be rendered when a user scrolls the List down to the bottom, or after a user clicks the **More** button. Set the [pageLoadMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/pageLoadMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#pageLoadMode') property to specify your chosen mode:
 
 ---
 ##### jQuery

@@ -14,7 +14,7 @@ DevExtreme guarantees correct serialization of such data.
 
 ### Non-standard date strings
 
-If the format of your Date string is different, DevExtreme uses the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse" target="_blank">Date.parse()</a> method to extract the timestamp. Due to the differences in browser engines, this method can yield different results in different browsers. For example:
+If the format of your Date string is different, DevExtreme uses the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse" target="_blank">Date.parse()</a> method to extract the timestamp. Due to differences in browser engines, this method can yield different results in different browsers. For example:
 
     Date.parse("04 11 1991");
     // 671338800000 in Chrome and Firefox (Thu Nov 04 1991 00:00:00 GMT+0000);

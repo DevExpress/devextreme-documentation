@@ -103,26 +103,22 @@ For those series whose points are simple dots ([Range Area](/concepts/05%20UI%20
         Point
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series>
-                        <Point ... >
-                            {/* Settings for all points of an individual series */}
-                        </Point>
-                    </Series>
-                    <CommonSeriesSettings ... >
-                        <Point ... >
-                            {/* Settings for all points of all series */}
-                        </Point>
-                    </CommonSeriesSettings>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series>
+                    <Point ... >
+                        {/* Settings for all points of an individual series */}
+                    </Point>
+                </Series>
+                <CommonSeriesSettings ... >
+                    <Point ... >
+                        {/* Settings for all points of all series */}
+                    </Point>
+                </CommonSeriesSettings>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

@@ -84,18 +84,16 @@ For example, you can disallow users to zoom in further if the visual range's len
         ZoomAndPan
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ...
-                    onZoomEnd={chart_zoomEnd}>
-                    <ZoomAndPan
-                        argumentAxis="both"
-                        valueAxis="both"
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ...
+                onZoomEnd={chart_zoomEnd}>
+                <ZoomAndPan
+                    argumentAxis="both"
+                    valueAxis="both"
+                />
+            </Chart>
+        );
     }
 
     functon chart_zoomEnd(e) {

@@ -95,20 +95,16 @@ To specify the **Scatter** series type, assign *"scatter"* to the **series[]**.[
 
     const scatterSettings = { ... };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series type="scatter" />
-                    <Series ... />
-                    ...
-                    <CommonSeriesSettings scatter={scatterSettings} />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series type="scatter" />
+                <Series ... />
+                ...
+                <CommonSeriesSettings scatter={scatterSettings} />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

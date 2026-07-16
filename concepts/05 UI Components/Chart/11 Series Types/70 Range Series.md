@@ -112,27 +112,23 @@ Note that the range series require two value fields: [rangeValue1Field](/api-ref
     const rangeAreaSettings = { ... };
     const rangeBarSettings = { ... };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series
-                        type="rangearea"
-                        rangeValue1Field="low"
-                        rangeValue2Field="high"
-                    />
-                    <Series ... />
-                    ...
-                    <CommonSeriesSettings
-                        rangearea={rangeAreaSettings}
-                        rangebar={rangeBarSettings}
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series
+                    type="rangearea"
+                    rangeValue1Field="low"
+                    rangeValue2Field="high"
+                />
+                <Series ... />
+                ...
+                <CommonSeriesSettings
+                    rangearea={rangeAreaSettings}
+                    rangebar={rangeBarSettings}
+                />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

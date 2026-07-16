@@ -111,27 +111,23 @@ The following code shows how to specify aggregation methods for each series indi
         Aggregation
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <CommonSeriesSettings ... >
-                        <Aggregation enabled={true} />
-                    </CommonSeriesSettings>
-                    <Series ...
-                        type="line">
-                        <Aggregation method="min" />
-                    </Series>
-                    <Series ...
-                        type="bar">
-                        <Aggregation method="max" />
-                    </Series>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <CommonSeriesSettings ... >
+                    <Aggregation enabled={true} />
+                </CommonSeriesSettings>
+                <Series ...
+                    type="line">
+                    <Aggregation method="min" />
+                </Series>
+                <Series ...
+                    type="bar">
+                    <Aggregation method="max" />
+                </Series>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

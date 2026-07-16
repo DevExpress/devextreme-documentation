@@ -71,17 +71,13 @@ The most important characteristic of a series is its type. The Chart provides ov
         Series
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series type="bar"/>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series type="bar"/>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -163,24 +159,20 @@ A single Chart can contain several series at once. In this case, the [series](/a
         Series
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series
-                        ...
-                        type="bar"
-                        name="Men" />
-                    <Series
-                        ...
-                        type="area"
-                        name="Women" />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series
+                    ...
+                    type="bar"
+                    name="Men" />
+                <Series
+                    ...
+                    type="area"
+                    name="Women" />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -265,22 +257,18 @@ Objects in the **series** array specify individual settings for series. You can 
         CommonSeriesSettings
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series ... >
-                        <!-- high priority -->
-                    </Series>
-                    <CommonSeriesSettings ... >
-                        <!-- low priority -->
-                    </CommonSeriesSettings>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series ... >
+                    <!-- high priority -->
+                </Series>
+                <CommonSeriesSettings ... >
+                    <!-- low priority -->
+                </CommonSeriesSettings>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

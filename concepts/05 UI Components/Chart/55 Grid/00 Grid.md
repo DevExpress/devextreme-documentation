@@ -126,31 +126,27 @@ Note that axis-specific settings override common settings.
         CommonAxisSettings
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ArgumentAxis>
-                        <Grid>
-                            <!-- high priority -->
-                        </Grid>
-                    </ArgumentAxis>
-                    <ValueAxis>
-                        <Grid>
-                            <!-- high priority -->
-                        </Grid>
-                    </ValueAxis>
-                    <CommonAxisSettings>
-                        <Grid>
-                            <!-- low priority -->
-                        </Grid>
-                    </CommonAxisSettings>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ArgumentAxis>
+                    <Grid>
+                        <!-- high priority -->
+                    </Grid>
+                </ArgumentAxis>
+                <ValueAxis>
+                    <Grid>
+                        <!-- high priority -->
+                    </Grid>
+                </ValueAxis>
+                <CommonAxisSettings>
+                    <Grid>
+                        <!-- low priority -->
+                    </Grid>
+                </CommonAxisSettings>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

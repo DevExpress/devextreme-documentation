@@ -91,15 +91,13 @@ Each series point allows you to show or hide its tooltip programmatically. For t
     import React from 'react';
     import Chart from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ...
-                    onPointClick={onPointClick} 
-                    onPointHoverChanged={onPointHoverChanged}>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ...
+                onPointClick={onPointClick} 
+                onPointHoverChanged={onPointHoverChanged}>
+            </Chart>
+        );
     }
 
     function onPointHoverChanged (e) {

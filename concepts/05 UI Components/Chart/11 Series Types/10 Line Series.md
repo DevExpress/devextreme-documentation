@@ -131,28 +131,24 @@ To specify one or another series type, assign its name to the **series[]**.[type
     const fullStackedLineSettings = { ... };
     const fullStackedSplineSettings = { ... };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series type="spline" />
-                    <Series ... />
-                    ...
-                    <CommonSeriesSettings
-                        line={lineSettings}
-                        spline={splineSettings}
-                        stepline={stepLineSettings}
-                        stackedline={stackedLineSettings}
-                        stackedspline={stackedSplineSettings}
-                        fullstackedline={fullStackedLineSettings}
-                        fullstackedspline={fullStackedSplineSettings}
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series type="spline" />
+                <Series ... />
+                ...
+                <CommonSeriesSettings
+                    line={lineSettings}
+                    spline={splineSettings}
+                    stepline={stepLineSettings}
+                    stackedline={stackedLineSettings}
+                    stackedspline={stackedSplineSettings}
+                    fullstackedline={fullStackedLineSettings}
+                    fullstackedspline={fullStackedSplineSettings}
+                />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

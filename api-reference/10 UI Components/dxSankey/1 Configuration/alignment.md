@@ -74,17 +74,13 @@ A string value aligns all node columns uniformly. An array of strings allows you
         'bottom'
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Sankey ... 
-                    alignment={alignmentValues}>
-                </Sankey>
-            );
-        }
-    }
-
-    export default App;     
+    export default function App() {
+        return (
+            <Sankey ... 
+                alignment={alignmentValues}>
+            </Sankey>
+        );
+    }     
 
 ---
 

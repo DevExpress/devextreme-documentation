@@ -125,20 +125,17 @@ Use the [fileUploadMode](/api-reference/_hidden/dxHtmlEditorImageUpload/fileUplo
 
     const dialogTabs = ['url', 'file'];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <HtmlEditor ...>
-                    <ImageUpload 
-                        fileUploadMode="both"
-                        :tabs={dialogTabs}
-                        uploadUrl="https://js.devexpress.com/Demos/Upload"
-                        uploadDirectory="/Images"
-                    />
-                </HtmlEditor>
-            );
-        }
+    export default function App() {
+        return (
+            <HtmlEditor ...>
+                <ImageUpload 
+                    fileUploadMode="both"
+                    :tabs={dialogTabs}
+                    uploadUrl="https://js.devexpress.com/Demos/Upload"
+                    uploadDirectory="/Images"
+                />
+            </HtmlEditor>
+        );
     }
-    export default App;
 
 ---

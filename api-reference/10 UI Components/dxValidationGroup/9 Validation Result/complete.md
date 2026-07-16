@@ -225,32 +225,29 @@ In the following example, a button validates a group of editors with async rules
         });
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TextBox>
-                    <Validator
-                        validationGroup={validationGroupName}>
-                        <AsyncRule
-                            validationCallback={validateAsync} />
-                    </Validator>
-                </TextBox>
+    export default function App() {
+        return (
+            <TextBox>
+                <Validator
+                    validationGroup={validationGroupName}>
+                    <AsyncRule
+                        validationCallback={validateAsync} />
+                </Validator>
+            </TextBox>
 
-                <DateBox>
-                    <Validator
-                        validationGroup={validationGroupName}>
-                        <AsyncRule
-                            validationCallback={validateAsync} />
-                    </Validator>
-                </DateBox>
+            <DateBox>
+                <Validator
+                    validationGroup={validationGroupName}>
+                    <AsyncRule
+                        validationCallback={validateAsync} />
+                </Validator>
+            </DateBox>
 
-                <Button 
-                    text="Submit"
-                    validationGroup={validationGroupName}
-                    onClick={validateGroup} />
-            );
-        }
+            <Button 
+                text="Submit"
+                validationGroup={validationGroupName}
+                onClick={validateGroup} />
+        );
     }
-    export default App;
 
 ---

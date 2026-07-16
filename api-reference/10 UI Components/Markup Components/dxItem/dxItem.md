@@ -63,20 +63,17 @@ The dxItem component defines custom markup for items in layout and collection UI
     import React from 'react';
     import List, { Item } from 'devextreme-react/list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <List>
-                    <Item text="Apples" disabled={true} />
-                    <Item text="Oranges" visible={false} />
-                    <Item>
-                        <!-- Custom markup -->
-                    </Item>
-                </List>
-            );
-        }
+    export default function App() {
+        return (
+            <List>
+                <Item text="Apples" disabled={true} />
+                <Item text="Oranges" visible={false} />
+                <Item>
+                    <!-- Custom markup -->
+                </Item>
+            </List>
+        );
     }
-    export default App;
 
 ---
 

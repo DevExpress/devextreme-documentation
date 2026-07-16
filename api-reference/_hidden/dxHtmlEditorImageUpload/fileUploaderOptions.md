@@ -105,16 +105,13 @@ See [FileUploader Configuration](/api-reference/10%20UI%20Components/dxFileUploa
 
     const fu_options = { maxFileSize: 4000000 };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <HtmlEditor ...>
-                    <ImageUpload 
-                        fileUploaderOptions={this.fu_options} />
-                </HtmlEditor>
-            );
-        }
+    export default function App() {
+        return (
+            <HtmlEditor ...>
+                <ImageUpload 
+                    fileUploaderOptions={this.fu_options} />
+            </HtmlEditor>
+        );
     }
-    export default App;
 
 ---

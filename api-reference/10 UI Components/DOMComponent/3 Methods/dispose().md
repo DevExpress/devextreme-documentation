@@ -66,13 +66,10 @@ Use <a href="https://react.dev/learn/conditional-rendering" target="_blank">cond
         );
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Dx{WidgetName} shouldRender="condition" />
-            );
-        }
+    export default function App() {
+        return (
+            <Dx{WidgetName} shouldRender="condition" />
+        );
     }
-    export default App;
 
 ---

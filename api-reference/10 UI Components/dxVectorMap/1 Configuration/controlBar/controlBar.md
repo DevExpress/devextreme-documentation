@@ -77,20 +77,16 @@ The following code shows how to use the **controlBar** object to move the contro
     import React from 'react';
     import { VectorMap, ControlBar } from 'devextreme-react/vector-map';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <VectorMap>
-                    // ...
-                    <ControlBar
-                        horizontalAlignment="right"
-                    />
-                </VectorMap>
-            );
-        }
+    export default function App() {
+        return (
+            <VectorMap>
+                // ...
+                <ControlBar
+                    horizontalAlignment="right"
+                />
+            </VectorMap>
+        );
     }
-
-    export default App;
 
 ##### ASP.NET MVC Controls
 

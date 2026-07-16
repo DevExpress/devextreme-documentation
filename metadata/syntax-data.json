@@ -3345,9 +3345,7 @@
       "vue": "Dx_ui_scheduler_AppointmentAddedEvent"
     },
     "_ui_scheduler_AppointmentAddedEvent.appointmentData": {
-      "angular": "dxo-appointment-data",
-      "react": "AppointmentData",
-      "vue": "DxAppointmentData"
+      "vue": "appointment-data"
     },
     "_ui_scheduler_AppointmentAddingEvent": {
       "angular": "dxo-ui-scheduler--appointment-adding-event",
@@ -3355,9 +3353,7 @@
       "vue": "Dx_ui_scheduler_AppointmentAddingEvent"
     },
     "_ui_scheduler_AppointmentAddingEvent.appointmentData": {
-      "angular": "dxo-appointment-data",
-      "react": "AppointmentData",
-      "vue": "DxAppointmentData"
+      "vue": "appointment-data"
     },
     "_ui_scheduler_AppointmentClickEvent": {
       "angular": "dxo-ui-scheduler--appointment-click-event",
@@ -3389,9 +3385,7 @@
       "vue": "Dx_ui_scheduler_AppointmentDeletedEvent"
     },
     "_ui_scheduler_AppointmentDeletedEvent.appointmentData": {
-      "angular": "dxo-appointment-data",
-      "react": "AppointmentData",
-      "vue": "DxAppointmentData"
+      "vue": "appointment-data"
     },
     "_ui_scheduler_AppointmentDeletingEvent": {
       "angular": "dxo-ui-scheduler--appointment-deleting-event",
@@ -3399,9 +3393,7 @@
       "vue": "Dx_ui_scheduler_AppointmentDeletingEvent"
     },
     "_ui_scheduler_AppointmentDeletingEvent.appointmentData": {
-      "angular": "dxo-appointment-data",
-      "react": "AppointmentData",
-      "vue": "DxAppointmentData"
+      "vue": "appointment-data"
     },
     "_ui_scheduler_AppointmentFormOpeningEvent": {
       "angular": "dxo-ui-scheduler--appointment-form-opening-event",
@@ -3409,9 +3401,7 @@
       "vue": "Dx_ui_scheduler_AppointmentFormOpeningEvent"
     },
     "_ui_scheduler_AppointmentFormOpeningEvent.appointmentData": {
-      "angular": "dxo-appointment-data",
-      "react": "AppointmentData",
-      "vue": "DxAppointmentData"
+      "vue": "appointment-data"
     },
     "_ui_scheduler_AppointmentFormOpeningEvent.form": {
       "angular": "dxo-form",
@@ -3450,9 +3440,7 @@
       "vue": "Dx_ui_scheduler_AppointmentUpdatedEvent"
     },
     "_ui_scheduler_AppointmentUpdatedEvent.appointmentData": {
-      "angular": "dxo-appointment-data",
-      "react": "AppointmentData",
-      "vue": "DxAppointmentData"
+      "vue": "appointment-data"
     },
     "_ui_scheduler_AppointmentUpdatingEvent": {
       "angular": "dxo-ui-scheduler--appointment-updating-event",
@@ -3460,14 +3448,10 @@
       "vue": "Dx_ui_scheduler_AppointmentUpdatingEvent"
     },
     "_ui_scheduler_AppointmentUpdatingEvent.newData": {
-      "angular": "dxo-new-data",
-      "react": "NewData",
-      "vue": "DxNewData"
+      "vue": "new-data"
     },
     "_ui_scheduler_AppointmentUpdatingEvent.oldData": {
-      "angular": "dxo-old-data",
-      "react": "OldData",
-      "vue": "DxOldData"
+      "vue": "old-data"
     },
     "_ui_scheduler_CellClickEvent": {
       "angular": "dxo-ui-scheduler--cell-click-event",
@@ -6160,11 +6144,6 @@
     "appointmentCollectorTemplateData.isCompact": {
       "vue": "is-compact"
     },
-    "appointmentCollectorTemplateData.items": {
-      "angular": "dxi-item",
-      "react": "Item",
-      "vue": "DxItem"
-    },
     "appointmentFormProperties": {
       "angular": "dxo-appointment-form-properties",
       "react": "AppointmentFormProperties",
@@ -6172,6 +6151,11 @@
     },
     "appointmentFormProperties.iconsShowMode": {
       "vue": "icons-show-mode"
+    },
+    "appointmentTooltipShowingAppointmentInfo": {
+      "angular": "dxo-appointment-tooltip-showing-appointment-info",
+      "react": "AppointmentTooltipShowingAppointmentInfo",
+      "vue": "DxAppointmentTooltipShowingAppointmentInfo"
     },
     "arrayStoreOptions": {
       "vue": "array-store-options"
@@ -23387,14 +23371,10 @@
       "vue": "item-index"
     },
     "targetedAppointmentInfo.appointmentData": {
-      "angular": "dxo-appointment-data",
-      "react": "AppointmentData",
-      "vue": "DxAppointmentData"
+      "vue": "appointment-data"
     },
     "targetedAppointmentInfo.targetedAppointmentData": {
-      "angular": "dxo-targeted-appointment-data",
-      "react": "TargetedAppointmentData",
-      "vue": "DxTargetedAppointmentData"
+      "vue": "targeted-appointment-data"
     },
     "textEditorButton": {
       "angular": "dxo-text-editor-button",

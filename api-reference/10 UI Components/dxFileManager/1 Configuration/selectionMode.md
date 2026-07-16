@@ -88,7 +88,7 @@ Specifies whether a user can select a single or multiple files and directories i
     
     export default function App() {
         return (
-            <FileManager selectionMode={single} >
+            <FileManager selectionMode="single" >
             </FileManager>
         );
     }

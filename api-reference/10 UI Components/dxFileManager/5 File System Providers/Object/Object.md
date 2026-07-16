@@ -171,7 +171,7 @@ The following code shows how to bind the FileManager to the **Object** file syst
     import React from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import FileManager from 'devextreme-react/file-manager';
-    import ObjectFileSystemProvider from 'devextreme/file_management/object_provider';
+    import { fileItems } from './data.js';
     
     export default function App() {
         return (

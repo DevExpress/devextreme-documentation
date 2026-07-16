@@ -104,7 +104,7 @@ To also display appointments that have a duration equal to or more than 24 hours
 
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import { Scheduler } from 'devextreme-react/scheduler';
+    import { Scheduler, View } from 'devextreme-react/scheduler';
 
     export default function App() {
         return (
@@ -113,7 +113,7 @@ To also display appointments that have a duration equal to or more than 24 hours
                     type="week"
                     name="Week"
                     allDayPanelMode="all"
-                />                    
+                />
             </Scheduler>
         );
     }

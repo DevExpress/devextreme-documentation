@@ -5,7 +5,7 @@ default: 'Loading...', '' (Fluent, Material)
 ---
 ---
 ##### shortDescription
-Specifies the text shown in the pullDown panel, which is displayed when the list is scrolled to the bottom.
+Specifies the text shown in the pullDown panel that is displayed when the list is scrolled to the bottom.
 
 ---
 #####See Also#####

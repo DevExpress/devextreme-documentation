@@ -5,7 +5,7 @@ default: 'calendar', 'native' (Android, iOS)
 ---
 ---
 ##### shortDescription
-Specifies the type of the date/time picker.
+Specifies the date/time picker type.
 
 ---
 This property accepts the following values:

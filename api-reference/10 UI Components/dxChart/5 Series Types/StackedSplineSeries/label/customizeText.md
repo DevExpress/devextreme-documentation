@@ -5,7 +5,7 @@ notUsedInTheme:
 ---
 ---
 ##### shortDescription
-Customizes the text displayed by point labels.
+Customizes text displayed by point labels.
 
 ##### param(pointInfo): Object
 Information on the series point.

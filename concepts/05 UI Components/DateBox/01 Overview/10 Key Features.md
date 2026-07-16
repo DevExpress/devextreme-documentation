@@ -2,7 +2,7 @@
 You can configure the DateBox [type](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#type') to integrate the component as a date, time, or date and time picker.
 
 - **Picker Configuration**    
-DateBox supports multiple [picker types](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/pickerType.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#pickerType'), including calendar, list, and roller pickers. You can also implement native pickers that vary depending on the user's device and platforms.
+The DateBox supports multiple [picker types](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/pickerType.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#pickerType'), including calendar, list, and roller pickers. You can also implement native pickers that vary depending on the user's device and platforms.
 
 - **Formatting**    
 The DateBox component automatically formats values based on your application locale. You can also [specify display formats](/concepts/05%20UI%20Components/DateBox/04%20Value%20Formatting%20and%20Masked%20Input.md '/Documentation/Guide/UI_Components/DateBox/Value_Formatting_and_Masked_Input/'), including [predefined, Intl, and custom formats](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/10%20Format%20UI%20Component%20Values '/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/10%20Format%20UI%20Component%20Values/00%20Format%20UI%20Component%20Values.md').

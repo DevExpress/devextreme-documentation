@@ -44,7 +44,7 @@ Allows you to configure the format. Can have one of the following structures:
             parser: Function // a parsing function for string values
         }
 
-    You can specify the Intl <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NumberFormat#Parameters" target="_blank">NumberFormat</a>'s and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat#Parameters" target="_blank">DateTimeFormat</a>'s `options` parameter fields:    
+    You can specify Intl <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NumberFormat#Parameters" target="_blank">NumberFormat</a>'s and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat#Parameters" target="_blank">DateTimeFormat</a>'s `options` parameter fields:    
 
         <!-- tab: Intl -->
         format: { year: "2-digit", month: "narrow", day: "2-digit" }
@@ -56,7 +56,7 @@ Allows you to configure the format. Can have one of the following structures:
         <!-- tab: Globalize -->
         format: { skeleton: 'GyMMMd' }
 
-    [note] Depending on the object structure, the **format** utility chooses the mechanism to use: DevExtreme internal, Intl, or Globalize. If you mix properties from different zones (DevExtreme, Intl, or Globalize) in an object, the result can be unpredictable.
+    [note] Depending on object structure, the **format** utility chooses the mechanism to use: DevExtreme internal, Intl, or Globalize. If you mix properties from different zones (DevExtreme, Intl, or Globalize) in an object, the result can be unpredictable.
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Localization/UsingIntl/"

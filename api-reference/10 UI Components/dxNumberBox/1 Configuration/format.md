@@ -30,7 +30,7 @@ The format property can accept the following value types:
 
 - Custom format string    
 
-    Use Unicode Locale Data Markup Language (LDML) patterns to specify a custom format string. An LDML pattern consists of wildcard characters and characters displayed as is. The **format** property supports the following wildcard characters:
+    Use Unicode Locale Data Markup Language (LDML) patterns to specify a custom format string. An LDML pattern consists of wildcard characters and literal characters that are displayed as-is. The **format** property supports the following wildcard characters:
 
     <table class="dx-table">
         <tr>

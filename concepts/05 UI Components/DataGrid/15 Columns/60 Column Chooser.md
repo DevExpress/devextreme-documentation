@@ -80,8 +80,8 @@ The column chooser allows a user to change the set of columns at runtime. It is 
             <DataGrid ... >
                 <ColumnChooser
                     enabled={true}
-                    mode="dragAndDrop" {/* or "select" */}
-                />
+                    mode="dragAndDrop"
+                /> {/* or "select" */}
             </DataGrid>
         );
     }
@@ -189,11 +189,11 @@ Set a column's [allowHiding](/api-reference/_hidden/GridBaseColumn/allowHiding.m
                     enabled={true}
                 />
                 <Column ...
-                    allowHiding={false} {/* cannot be hidden */}
-                />
+                    allowHiding={false}
+                /> {/* cannot be hidden */}
                 <Column ...
-                    showInColumnChooser={false}> {/* does not appear in the column chooser even when hidden */}
-                />
+                    showInColumnChooser={false}
+                /> {/* does not appear in the column chooser even when hidden */}
             </DataGrid>
         );
     }

@@ -173,10 +173,8 @@ Each lookup column has an individual [data source](/api-reference/_hidden/GridBa
                     {/* provides actual values */}
                     <Lookup
                         dataSource={lookupDataSourceConfig}
-                        {/* contains the same values as the "statusId" field provides */}
-                        valueExpr="id"
-                        {/* provides display values */}
-                        displayExpr="name"
+                        valueExpr="id" /* contains the same values as the "statusId" field provides */
+                        displayExpr="name" /* provides display values */
                     />
                 </Column>
             </DataGrid>

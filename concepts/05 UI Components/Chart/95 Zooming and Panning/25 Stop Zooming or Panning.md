@@ -96,10 +96,8 @@ For example, you can disallow users to zoom in further if the visual range's len
         );
     }
 
-    functon chart_zoomEnd(e) {
+    function chart_zoomEnd(e) {
         e.cancel = (e.range.endValue - e.range.startValue) < 1;
     }
-
-    export default App;
 
 ---

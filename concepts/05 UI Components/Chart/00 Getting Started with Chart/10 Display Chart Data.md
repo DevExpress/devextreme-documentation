@@ -30,6 +30,66 @@ To bind a DevExtreme Chart to data, specify the [dataSource](/api-reference/10%2
         { month: 'December', targetSpend: 25000 },
     ];
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Chart()
+        .DataSource(d => d
+            .Mvc().Controller("ChartData")
+            .LoadAction("Get")
+        )
+        .Series(s => {
+            s.Add()
+                .ArgumentField("Month")
+                .ValueField("TargetSpend");
+        })
+    )
+
+    <!-- tab: ChartDataController.cs -->
+    using ASP_NET_Core.Models;
+    using DevExtreme.AspNet.Data;
+    using DevExtreme.AspNet.Mvc;
+    using Microsoft.AspNetCore.Mvc;
+
+    namespace ASP_NET_Core.Controllers;
+
+    public class ChartDataController : Controller {
+
+        [HttpGet]
+        public object Get(DataSourceLoadOptions loadOptions) {
+            return DataSourceLoader.Load(ChartData.ChartDataPoints, loadOptions);
+        }
+
+    }
+
+    <!-- tab: ChartDataPoint.cs -->
+    namespace ASP_NET_Core.Models;
+    public class ChartDataPoint {
+        public string Month { get; set; }
+        public int TargetSpend { get; set; }
+    }
+
+    <!-- tab: ChartData.cs -->
+    namespace ASP_NET_Core.Models;
+    static class ChartData {
+        public static List<ChartDataPoint> ChartDataPoints = [
+            new ChartDataPoint { Month = "January", TargetSpend = 12000 },
+            new ChartDataPoint { Month = "February", TargetSpend = 15500 },
+            new ChartDataPoint { Month = "March", TargetSpend = 13500 },
+            new ChartDataPoint { Month = "April", TargetSpend = 16000 },
+            new ChartDataPoint { Month = "May", TargetSpend = 17000 },
+            new ChartDataPoint { Month = "June", TargetSpend = 20000 },
+            new ChartDataPoint { Month = "July", TargetSpend = 14500 },
+            new ChartDataPoint { Month = "August", TargetSpend = 21000 },
+            new ChartDataPoint { Month = "September", TargetSpend = 19000 },
+            new ChartDataPoint { Month = "October", TargetSpend = 22000 },
+            new ChartDataPoint { Month = "November", TargetSpend = 16000 },
+            new ChartDataPoint { Month = "December", TargetSpend = 25000 },
+        ];
+
+        // ...
+    }
+
 ##### Angular
 
     <!-- tab: app.component.html -->

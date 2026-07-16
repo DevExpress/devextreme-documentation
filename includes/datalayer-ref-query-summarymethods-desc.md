@@ -3,75 +3,76 @@ First, call the [select(getter)](/api-reference/30%20Data%20Layer/Query/3%20Meth
 ---
 ##### jQuery
 
-    <!--JavaScript-->
-    var dataObjects = [ ... ];
+    <!-- tab: index.js -->
+    const dataObjects = [ ... ];
 
     DevExpress.data.query(dataObjects)
         .select("price")
         .${{summary}}()
         .done(function (result) {
-            // "result" contains the calculated value 
+            // "result" contains the calculated value
         });
 
 ##### Angular
 
-    <!--TypeScript-->
+    <!-- tab: app.component.ts -->
     import Query from "devextreme/data/query";
     // ...
     export class AppComponent {
         constructor () {
-            let dataObjects = [ ... ];
+            const dataObjects = [ ... ];
 
             Query(dataObjects)
                 .select("price")
                 .${{summary}}()
                 .then(result => {
-                    // "result" contains the calculated value 
+                    // "result" contains the calculated value
                 });
-        };
+        }
     }
 
 ##### Vue
 
     <!-- tab: App.vue -->
-    <script>
+    <script setup lang="ts">
+    import { onMounted } from 'vue';
     import Query from 'devextreme/data/query';
 
     const dataObjects = [ ... ];
 
-    export default {
-        mounted() {
-            Query(dataObjects)
-                .select('price')
-                .${{summary}}()
-                .then(result => {
-                    // "result" contains the calculated value 
-                });
-        },
-        // ...
-    }
+    onMounted(() => {
+        Query(dataObjects)
+            .select('price')
+            .${{summary}}()
+            .then(result => {
+                // "result" contains the calculated value
+            });
+    });
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    // ...
+    <!-- tab: App.tsx -->
+    import React, { useEffect } from 'react';
     import Query from 'devextreme/data/query';
 
     const dataObjects = [ ... ];
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-
+    function App() {
+        useEffect(() => {
             Query(dataObjects)
                 .select('price')
                 .${{summary}}()
                 .then(result => {
-                    // "result" contains the calculated value 
+                    // "result" contains the calculated value
                 });
-        }
+        }, []);
+
+        return (
+            // ...
+        );
     }
+
     export default App;
 
 ---

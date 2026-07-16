@@ -1,6 +1,6 @@
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl" target="_blank">Intl</a> is the ECMAScript Internationalization API. DevExtreme supports Intl value formatting out of the box.
 
-The UI component **format** property is compatible with the `options` objects accepted by <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#parameters" target="_blank">Intl.NumberFormat</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat#parameters" target="_blank">Intl.DateTimeFormat</a>. To apply an Intl format, assign these option fields to **format**:
+The UI component **format** property is compatible with `options` objects accepted by <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#parameters" target="_blank">Intl.NumberFormat</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat#parameters" target="_blank">Intl.DateTimeFormat</a>. To apply an Intl format, assign these option fields to the **format** property:
 
 ---
 ##### jQuery

@@ -42,7 +42,7 @@ Use Unicode Locale Data Markup Language (LDML) patterns to specify a custom form
     <td>;</td>
         <td>    Separates positive and negative format patterns.  <br/>
           For example, the "#0.##;(#0.##)" format displays a positive number according to the pattern before the semicolon (";"), and a negative number according to the pattern after the semicolon (";").<br/>
-            If you do not use this character and the additional pattern, negative numbers display a minus ("-") prefix.
+            If you do not use this character , nor the additional pattern, negative numbers display a minus ("-") prefix.
     </td>
     </tr>
     <tr>
@@ -78,7 +78,7 @@ The examples below demonstrate how `#` and `0` behave in fractional numbers:
     // Add a group separator
     format: ",##0.###" // 123,456.789
     
-The examples below show different ways to apply percentage formatting to decimals. Use caution if your format string starts with `0` because the formatted number may lose leading digits.
+The examples below demonstrate different options used to apply percentage formatting to decimals. Use caution if your format string starts with `0` because the formatted number may lose leading digits.
 
     <!-- tab: JavaScript -->
     const smallNumber = 0.01234;

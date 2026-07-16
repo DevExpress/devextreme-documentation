@@ -22,7 +22,7 @@ These areas work together, but each area solves a different task.
 
 ### Demos
 
-The following demo includes both text localization and value formatting scenarios:
+The following demo includes text localization and value formatting scenarios:
 
 #include common-demobutton-named with {
     url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Localization/UsingIntl/",

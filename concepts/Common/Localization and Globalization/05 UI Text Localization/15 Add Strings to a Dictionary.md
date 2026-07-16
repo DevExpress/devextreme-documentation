@@ -1,6 +1,6 @@
 Use [loadMessages(messages)](/api-reference/50%20Common/utils/localization/loadMessages(messages).md '/Documentation/ApiReference/Common/utils/localization/#loadMessagesmessages') to add custom keys to one or more dictionaries. Use [formatMessage(key, value)](/api-reference/50%20Common/utils/localization/formatMessage(key_value).md '/Documentation/ApiReference/Common/utils/localization/#formatMessagekey_value') to retrieve the message for the active locale.
 
-The following examples add `greetingMessage` to English and German dictionaries.
+The following examples add the `greetingMessage` to English and German dictionaries.
 
 ---
 ##### jQuery

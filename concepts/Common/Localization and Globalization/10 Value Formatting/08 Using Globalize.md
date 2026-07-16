@@ -47,7 +47,7 @@ Specify the Globalize and CLDR libraries using `<script>` tags as shown below. I
 
 ##### Angular
 
-Install the `devextreme-cldr-data` and `globalize` packages:
+Install `devextreme-cldr-data` and `globalize` packages:
 
     npm install --save-dev devextreme-cldr-data globalize
     
@@ -74,7 +74,7 @@ Register Globalize in your project as described in the following help topic: [Gl
     
 ##### Vue
 
-Install the `devextreme-cldr-data` and `globalize` packages:
+Install `devextreme-cldr-data` and `globalize` packages:
 
     npm install --save-dev devextreme-cldr-data globalize
     
@@ -97,7 +97,7 @@ Register Globalize in your project as described in the following help topic: [Gl
     
 ##### React
 
-Install the `devextreme-cldr-data` and `globalize` packages:
+Install `devextreme-cldr-data` and `globalize` packages:
 
     npm install --save-dev devextreme-cldr-data globalize
     

@@ -81,19 +81,15 @@ If the axis displays numbers, set the **minorTickInterval** to a number. This nu
         MinorTickInterval
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ValueAxis>
-                        <MinorTickInterval days={5} />
-                    </ValueAxis>
-                </Chart>
-            );
-        }
-    }
-
-    export default App;     
+    export default function App() {
+        return (
+            <Chart ... >
+                <ValueAxis>
+                    <MinorTickInterval days={5} />
+                </ValueAxis>
+            </Chart>
+        );
+    }     
 
 ---
 

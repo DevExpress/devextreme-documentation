@@ -90,21 +90,17 @@ If the axis displays numbers, assign a number to this property. For example, an 
         AggregationInterval
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ArgumentAxis
-                        aggregationInterval={"day"}>    {/* Interval of one day */}
-                        <AggregationInterval 
-                            days={5} />                 {/* Interval of five days */}
-                    </ArgumentAxis>
-                </Chart>
-            );
-        }
-    }
-
-    export default App;     
+    export default function App() {
+        return (
+            <Chart ... >
+                <ArgumentAxis
+                    aggregationInterval={"day"}>    {/* Interval of one day */}
+                    <AggregationInterval 
+                        days={5} />                 {/* Interval of five days */}
+                </ArgumentAxis>
+            </Chart>
+        );
+    }     
 
 ---
 

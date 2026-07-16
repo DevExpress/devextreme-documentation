@@ -106,20 +106,16 @@ To also display appointments that have a duration equal to or more than 24 hours
 
     import { Scheduler } from 'devextreme-react/scheduler';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler ...>
-                    <View
-                        type="week"
-                        name="Week"
-                        allDayPanelMode="all"
-                    />                    
-                </Scheduler>
-            );
-        }
+    export default function App() {
+        return (
+            <Scheduler ...>
+                <View
+                    type="week"
+                    name="Week"
+                    allDayPanelMode="all"
+                />                    
+            </Scheduler>
+        );
     }
-
-    export default App;
 
 ---

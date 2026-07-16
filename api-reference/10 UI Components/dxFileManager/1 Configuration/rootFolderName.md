@@ -88,17 +88,14 @@ Specifies the root directory display name.
 
     import FileManager from 'devextreme-react/file-manager';
     
-    class App extends React.Component {
-        render() {
-            return (
-                <FileManager 
-                    rootFolderName="Custom Root Folder" 
-                >
-                </FileManager>
-            );
-        }
+    export default function App() {
+        return (
+            <FileManager 
+                rootFolderName="Custom Root Folder" 
+            >
+            </FileManager>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

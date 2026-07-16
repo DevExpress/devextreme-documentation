@@ -153,25 +153,22 @@ To add a predefined item to the toolbar, specify its [name](/api-reference/_hidd
 
     import FileManager, { Toolbar, Item, FileSelectionItem } from 'devextreme-react/file-manager';
     
-    class App extends React.Component {
-        render() {
-            return (
-                <FileManager>
-                    <Toolbar>
-                        {/* Specifies a predefined item's name and optional settings */}
-                        <Item name="create" text="Create a directory" icon="newfolder" />
-                        {/* Specifies a predefined item's name only */}
-                        <Item name="switchView" />
-                        <Item name="separator" />
-                        {/* Specifies items that are visible when users select files */}
-                        <FileSelectionItem name="copy" />
-                        <FileSelectionItem name="rename" />
-                    </Toolbar>
-                </FileManager>
-            );
-        }
+    export default function App() {
+        return (
+            <FileManager>
+                <Toolbar>
+                    {/* Specifies a predefined item's name and optional settings */}
+                    <Item name="create" text="Create a directory" icon="newfolder" />
+                    {/* Specifies a predefined item's name only */}
+                    <Item name="switchView" />
+                    <Item name="separator" />
+                    {/* Specifies items that are visible when users select files */}
+                    <FileSelectionItem name="copy" />
+                    <FileSelectionItem name="rename" />
+                </Toolbar>
+            </FileManager>
+        );
     }
-    export default App;
 
 ##### ASP.NET Core Controls
 

@@ -93,15 +93,12 @@ The FileManager UI component cannot upload a file and displays an error message 
     
     const allowedFileExtensions = ['.txt', '.doc', '.png'];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <FileManager allowedFileExtensions={allowedFileExtensions} >
-                </FileManager>
-            );
-        }
+    export default function App() {
+        return (
+            <FileManager allowedFileExtensions={allowedFileExtensions} >
+            </FileManager>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

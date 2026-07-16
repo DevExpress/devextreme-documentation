@@ -85,15 +85,12 @@ Contains an array of initially or currently selected files and directories' keys
     
     const keys = ['item1_key', 'item2_key', 'item3_key']
 
-    class App extends React.Component {
-        render() {
-            return (
-                <FileManager selectedItemKeys={keys} >
-                </FileManager>
-            );
-        }
+    export default function App() {
+        return (
+            <FileManager selectedItemKeys={keys} >
+            </FileManager>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

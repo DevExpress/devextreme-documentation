@@ -86,15 +86,12 @@ Specifies whether a user can select a single or multiple files and directories i
 
     import FileManager from 'devextreme-react/file-manager';
     
-    class App extends React.Component {
-        render() {
-            return (
-                <FileManager selectionMode={single} >
-                </FileManager>
-            );
-        }
+    export default function App() {
+        return (
+            <FileManager selectionMode={single} >
+            </FileManager>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

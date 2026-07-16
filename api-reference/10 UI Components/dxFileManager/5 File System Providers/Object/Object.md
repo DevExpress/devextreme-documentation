@@ -173,15 +173,12 @@ The following code shows how to bind the FileManager to the **Object** file syst
     import FileManager from 'devextreme-react/file-manager';
     import ObjectFileSystemProvider from 'devextreme/file_management/object_provider';
     
-    class App extends React.Component {
-        render() {
-            return (
-                <FileManager fileSystemProvider={fileItems}>
-                </FileManager>
-            );
-        }
+    export default function App() {
+        return (
+            <FileManager fileSystemProvider={fileItems}>
+            </FileManager>
+        );
     }
-    export default App;
 
     <!-- tab: data.js -->
     export const fileItems = [{

@@ -291,8 +291,8 @@ By default, only a single series can be in the selected state at a time. If you 
         return (
             <Chart 
                 ...
-                seriesSelectionMode="multiple"> <!-- or 'single' -->
-            >
+                seriesSelectionMode="multiple"
+            > {/* or 'single' */}
             </Chart>
         );
     }

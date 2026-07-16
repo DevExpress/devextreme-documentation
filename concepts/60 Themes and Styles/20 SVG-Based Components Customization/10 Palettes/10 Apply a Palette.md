@@ -68,7 +68,7 @@ Every UI component that supports palettes has a [palette](/api-reference/10%20UI
             <PieChart ...
                 palette="Harmony Light">
                 {/* ===== or custom colors ===== */}
-                {/* palette={customPalette}> */}
+                {/* palette={customPalette} */}
             </PieChart>
         );
     }

@@ -345,8 +345,9 @@ The following example shows a **CustomStore** that sends data processing setting
     export default function App() {
         return (
             <DataGrid
-                dataSource={customDataSource}>
-                <RemoteOperations groupPaging={true}>
+                dataSource={customDataSource}
+            >
+                <RemoteOperations groupPaging={true} />
             </DataGrid>
         );
     }

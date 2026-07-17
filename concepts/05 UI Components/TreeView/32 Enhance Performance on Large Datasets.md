@@ -112,19 +112,15 @@ To enable the Virtual Mode, set the [virtualModeEnabled](/api-reference/10%20UI%
         { id: 22, text: 'Tomatoes',   parentId: 2, hasItems: false }
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeView
-                    dataStructure="plain"
-                    dataSource={plainData} 
-                    virtualModeEnabled={true}
-                    rootValue={-1} />
-            );
-        }
+    export default function App() {
+        return (
+            <TreeView
+                dataStructure="plain"
+                dataSource={plainData} 
+                virtualModeEnabled={true}
+                rootValue={-1} />
+        );
     }
-
-    export default App;
 
 ---
 

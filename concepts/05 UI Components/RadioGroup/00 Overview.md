@@ -77,18 +77,14 @@ The following code adds a simple RadioGroup to your page. Here, the [value](/api
 
     const dataSource = ['Low', 'Normal', 'Urgent', 'High'];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <RadioGroup
-                    dataSource={dataSource}
-                    value="Low"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <RadioGroup
+                dataSource={dataSource}
+                value="Low"
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -286,18 +282,14 @@ The RadioGroup UI component supports horizontal (default for tablets) and vertic
 
     const dataSource = ['Low', 'Normal', 'Urgent', 'High'];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <RadioGroup
-                    dataSource={dataSource}
-                    layout="horizontal"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <RadioGroup
+                dataSource={dataSource}
+                layout="horizontal"
+            />
+        );
     }
-
-    export default App;
 
 ---
 

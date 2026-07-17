@@ -84,20 +84,16 @@ The Slider can display labels for the [min](/api-reference/10%20UI%20Components/
         return value + " units";
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Slider>
-                    <Label
-                        visible={true}
-                        format={format}
-                        position="bottom" /> {/* or "top" */}
-                </Slider>
-            );
-        }
+    export default function App() {
+        return (
+            <Slider>
+                <Label
+                    visible={true}
+                    format={format}
+                    position="bottom" /> {/* or "top" */}
+            </Slider>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -190,21 +186,17 @@ The Slider can also display a tooltip for the slider handle. To configure it, us
         return value + " units";
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Slider>
-                    <Tooltip
-                        enabled={true}
-                        position="bottom"
-                        format={format}
-                        showMode="always" /> {/* or "onHover" */}
-                </Slider>
-            );
-        }
+    export default function App() {
+        return (
+            <Slider>
+                <Tooltip
+                    enabled={true}
+                    position="bottom"
+                    format={format}
+                    showMode="always" /> {/* or "onHover" */}
+            </Slider>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -269,17 +261,13 @@ To specify whether or not the part of the scale from the beginning to the slider
 
     import { Slider } from 'devextreme-react/slider';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Slider
-                    showRange={false}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Slider
+                showRange={false}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

@@ -79,20 +79,16 @@ The following code adds a simple ScrollView to your page. The [width](/api-refer
 
     import { ScrollView } from 'devextreme-react/scroll-view';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <ScrollView
-                    height={500}
-                    width={500}
-                    direction="vertical">  {/* or 'horizontal' | 'vertical' */}
-                    {/* Here goes long content */}
-                </ScrollView>
-            );
-        }
+    export default function App() {
+        return (
+            <ScrollView
+                height={500}
+                width={500}
+                direction="vertical">  {/* or 'horizontal' | 'vertical' */}
+                {/* Here goes long content */}
+            </ScrollView>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -161,17 +157,13 @@ The ScrollView employs native scrolling on most platforms, except desktops. To e
 
     import { ScrollView } from 'devextreme-react/scroll-view';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <ScrollView
-                    useNative={true}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <ScrollView
+                useNative={true}
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -243,18 +235,14 @@ If simulated scrolling is used, you can specify when to show the scrollbar. For 
 
     import { ScrollView } from 'devextreme-react/scroll-view';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <ScrollView
-                    useNative={false}
-                    showScrollbar="always" {/* or 'onScroll' | 'onHover' | 'never' */}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <ScrollView
+                useNative={false}
+                showScrollbar="always" {/* or 'onScroll' | 'onHover' | 'never' */}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

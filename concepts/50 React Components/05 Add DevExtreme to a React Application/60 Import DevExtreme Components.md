@@ -46,16 +46,12 @@ Nested DevExtreme components should also be imported (`ArgumentAxis`, `Series`, 
         val: 6916183482
     }];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart dataSource={data}>
-                    <ArgumentAxis tickInterval={10} />
-                    <Series type="bar" />
-                    <Legend visible={false} />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart dataSource={data}>
+                <ArgumentAxis tickInterval={10} />
+                <Series type="bar" />
+                <Legend visible={false} />
+            </Chart>
+        );
     }
-
-    export default App;

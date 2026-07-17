@@ -64,4 +64,4 @@ To sort data and change sort orders in the UI, click column headers. Hold **Shif
 
 ---
 
-[note] Sorting overrides row order changes applied using [drag and drop](/Documentation/Guide/UI_Components/TreeList/Getting_Started_with_TreeList/#Enable_Row_Drag_&_Drop). Do not specify initial sort orders (**columns[]**.[sortOrder](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#sortOrder)) to ensure row drag and drop works correctly.
+[note] Sorting overrides row order changes applied using [drag and drop](/concepts/05%20UI%20Components/TreeList/00%20Getting%20Started%20with%20TreeList/60%20Enable%20Row%20Drag%20&%20Drop.md '/Documentation/Guide/UI_Components/TreeList/Getting_Started_with_TreeList/#Enable_Row_Drag_&_Drop'). Do not specify initial sort orders (**columns[]**.[sortOrder](/api-reference/_hidden/GridBaseColumn/sortOrder.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#sortOrder')) to ensure row drag and drop works correctly.

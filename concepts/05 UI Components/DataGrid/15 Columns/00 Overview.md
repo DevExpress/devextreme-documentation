@@ -78,19 +78,16 @@ Columns represent sets of data values that have the same type. To configure colu
         Column
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Column dataField="Title" caption="Position" />
-                    <Column dataField="FullName" width={300} />
-                    <Column dataField="CompanyName" />
-                    <Column dataField="City" />
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Column dataField="Title" caption="Position" />
+                <Column dataField="FullName" width={300} />
+                <Column dataField="CompanyName" />
+                <Column dataField="City" />
+            </DataGrid>
+        );
     }
-    export default App;
     
 ---
 

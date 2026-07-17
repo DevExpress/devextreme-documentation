@@ -470,20 +470,17 @@ Editors are displayed in cells in the normal state too if you set the **columns*
         Column
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Column
-                        dataField="Hidden"
-                        dataType="boolean"
-                        showEditorAlways={true}
-                    />
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Column
+                    dataField="Hidden"
+                    dataType="boolean"
+                    showEditorAlways={true}
+                />
+            </DataGrid>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

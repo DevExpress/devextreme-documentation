@@ -470,20 +470,17 @@ Editors are displayed in cells in the normal state too if you set the **columns*
         Column
     } from 'devextreme-react/tree-list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList ... >
-                    <Column
-                        dataField="Hidden"
-                        dataType="boolean"
-                        showEditorAlways={true}
-                    />
-                </TreeList>
-            );
-        }
+    export default function App() {
+        return (
+            <TreeList ... >
+                <Column
+                    dataField="Hidden"
+                    dataType="boolean"
+                    showEditorAlways={true}
+                />
+            </TreeList>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

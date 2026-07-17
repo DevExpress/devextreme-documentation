@@ -72,20 +72,17 @@ Implement a custom sorting routine using the [calculateSortValue](/api-reference
 
     import { TreeList, Column } from 'devextreme-react/tree-list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList>
-                    {/* dataField provides values for the column */}
-                    {/* calculateSortValue provides values to be used in sorting */}
-                    <Column
-                        dataField="Position"
-                        calculateSortValue="isOnVacation" />
-                </TreeList>
-            );
-        }
+    export default function App() {
+        return (
+            <TreeList>
+                {/* dataField provides values for the column */}
+                {/* calculateSortValue provides values to be used in sorting */}
+                <Column
+                    dataField="Position"
+                    calculateSortValue="isOnVacation" />
+            </TreeList>
+        );
     }
-    export default App;
     
 ---
 

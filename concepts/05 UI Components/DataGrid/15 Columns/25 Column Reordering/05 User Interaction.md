@@ -75,16 +75,13 @@ If a specific column should not be moved, set its [allowReordering](/api-referen
         Column
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ...
-                    allowColumnReordering={true}>
-                    <Column dataField="CompanyName" allowReordering={false} />
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ...
+                allowColumnReordering={true}>
+                <Column dataField="CompanyName" allowReordering={false} />
+            </DataGrid>
+        );
     }
-    export default App;
     
 ---

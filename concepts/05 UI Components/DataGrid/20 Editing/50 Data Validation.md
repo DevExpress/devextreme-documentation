@@ -102,24 +102,21 @@ User input is validated against a set of [validation rules](/api-reference/10%20
         StringLengthRule
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Column dataField="Full_Name">
-                        <RequiredRule />
-                    </Column>
-                    <Column dataField="Login">
-                        <StringLengthRule
-                            min={3}
-                            message="Login should be at least 3 symbols long"
-                        />
-                    </Column>
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Column dataField="Full_Name">
+                    <RequiredRule />
+                </Column>
+                <Column dataField="Login">
+                    <StringLengthRule
+                        min={3}
+                        message="Login should be at least 3 symbols long"
+                    />
+                </Column>
+            </DataGrid>
+        );
     }
-    export default App;
 
     
 ---

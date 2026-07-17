@@ -78,16 +78,13 @@ Set the **grouping**.[expandMode](/api-reference/10%20UI%20Components/dxDataGrid
         Grouping,
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Grouping expandMode="rowClick" /> {/* or "buttonClick" */}
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Grouping expandMode="rowClick" /> {/* or "buttonClick" */}
+            </DataGrid>
+        );
     }
-    export default App;
 
 ---
 
@@ -172,18 +169,15 @@ You can prevent a user from expanding and collapsing groups by assigning **false
         Grouping,
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Grouping
-                        autoExpandAll={true}
-                        allowCollapsing={false}
-                    />
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Grouping
+                    autoExpandAll={true}
+                    allowCollapsing={false}
+                />
+            </DataGrid>
+        );
     }
-    export default App;
 
 ---

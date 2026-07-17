@@ -90,22 +90,19 @@ Specify the [remoteOperations](/api-reference/10%20UI%20Components/dxDataGrid/1%
         RemoteOperations
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <RemoteOperations
-                        filtering={true}
-                        paging={true}
-                        sorting={true}
-                        summary={true}
-                        grouping={true}
-                        groupPaging={true}
-                    />
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <RemoteOperations
+                    filtering={true}
+                    paging={true}
+                    sorting={true}
+                    summary={true}
+                    grouping={true}
+                    groupPaging={true}
+                />
+            </DataGrid>
+        );
     }
-    export default App;
 
 ---

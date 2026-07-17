@@ -100,20 +100,17 @@ The SelectBox UI component allows an end user to search through its items. To en
         // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <SelectBox ...
-                    dataSource={selectBoxData} 
-                    searchEnabled={true}
-                    searchExpr={['country', 'capital']}
-                    displayExpr="country"
-                    valueExpr="id"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <SelectBox ...
+                dataSource={selectBoxData} 
+                searchEnabled={true}
+                searchExpr={['country', 'capital']}
+                displayExpr="country"
+                valueExpr="id"
+            />
+        );
     }
-    export default App;
 
 ---
 
@@ -224,21 +221,18 @@ When a user types a string in the input field, the SelectBox suggests all items 
         // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <SelectBox ...
-                    dataSource={selectBoxData} 
-                    searchEnabled={true}
-                    searchExpr="country"
-                    displayExpr="country"
-                    valueExpr="id"
-                    searchMode="startswith"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <SelectBox ...
+                dataSource={selectBoxData} 
+                searchEnabled={true}
+                searchExpr="country"
+                displayExpr="country"
+                valueExpr="id"
+                searchMode="startswith"
+            />
+        );
     }
-    export default App;
 
 ---
 
@@ -345,21 +339,18 @@ There is a delay between the moment a user finishes typing and the moment the se
         // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <SelectBox ...
-                    dataSource={selectBoxData} 
-                    searchEnabled={true}
-                    searchTimeout={1000}
-                    searchExpr="country"
-                    displayExpr="country"
-                    valueExpr="id"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <SelectBox ...
+                dataSource={selectBoxData} 
+                searchEnabled={true}
+                searchTimeout={1000}
+                searchExpr="country"
+                displayExpr="country"
+                valueExpr="id"
+            />
+        );
     }
-    export default App;
 
 ---
 
@@ -462,21 +453,18 @@ The SelectBox UI component starts searching after a user types at least one char
         // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <SelectBox ...
-                    dataSource={selectBoxData} 
-                    searchEnabled={true}
-                    minSearchLength={3}
-                    searchExpr="country"
-                    displayExpr="country"
-                    valueExpr="id"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <SelectBox ...
+                dataSource={selectBoxData} 
+                searchEnabled={true}
+                minSearchLength={3}
+                searchExpr="country"
+                displayExpr="country"
+                valueExpr="id"
+            />
+        );
     }
-    export default App;
 
 ---
 

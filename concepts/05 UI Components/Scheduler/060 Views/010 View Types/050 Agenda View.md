@@ -83,18 +83,15 @@ By default, the **agenda** view displays appointments for seven dates at a time 
 
     import { Scheduler, View } from 'devextreme-react/scheduler';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler currentView="agenda">
-                    <View
-                        type="agenda"
-                        agendaDuration={5} />
-                </Scheduler>
-            );
-        }
+    export default function App() {
+        return (
+            <Scheduler currentView="agenda">
+                <View
+                    type="agenda"
+                    agendaDuration={5} />
+            </Scheduler>
+        );
     }
-    export default App;
 
 ---
 

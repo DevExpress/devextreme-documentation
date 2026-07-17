@@ -110,17 +110,14 @@ If your appointment data objects contain a different field that performs the fun
         long: true
     }];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler
-                    dataSource={dataSource}
-                    allDayExpr="long"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Scheduler
+                dataSource={dataSource}
+                allDayExpr="long"
+            />
+        );
     }
-    export default App;
 
 ---
 

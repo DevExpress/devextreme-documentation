@@ -189,20 +189,17 @@ By default, group headers display text of the **key** field in a bold font. If y
         );
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <SelectBox ...
-                    dataSource={selectBoxDataSource}
-                    grouped="true"
-                    displayExpr="name"
-                    valueExpr="count"
-                    groupRender={renderGroup}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <SelectBox ...
+                dataSource={selectBoxDataSource}
+                grouped={true}
+                displayExpr="name"
+                valueExpr="count"
+                groupRender={renderGroup}
+            />
+        );
     }
-    export default App;
 
 ---
 

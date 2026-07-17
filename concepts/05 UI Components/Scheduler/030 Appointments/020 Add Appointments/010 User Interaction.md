@@ -81,15 +81,12 @@ To prevent an end user from adding an appointment, set the **editing**.[allowAdd
 
     import Scheduler, { Editing } from 'devextreme-react/scheduler';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler ... >
-                    <Editing allowAdding={true} />
-                </Scheduler>
-            );
-        }
+    export default function App() {
+        return (
+            <Scheduler ... >
+                <Editing allowAdding={true} />
+            </Scheduler>
+        );
     }
-    export default App;
 
 ---

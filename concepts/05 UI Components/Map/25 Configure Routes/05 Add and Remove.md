@@ -96,18 +96,14 @@ To add routes at design-time, pass an array of objects to the [routes](/api-refe
         ]
     }];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Map
-                    defaultZoom={5}
-                    routes={mapRoutes}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Map
+                defaultZoom={5}
+                routes={mapRoutes}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

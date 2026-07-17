@@ -78,18 +78,14 @@ To zoom the Map, set the [zoom](/api-reference/10%20UI%20Components/dxMap/1%20Co
 
     const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Map
-                    defaultZoom={10}
-                    defaultCenter={centerCoordinates}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Map
+                defaultZoom={10}
+                defaultCenter={centerCoordinates}
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -184,20 +180,16 @@ Note that the UI component can automatically change the **center** and **zoom** 
         { location: "37.058435, -74.903842" }
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Map
-                    zoom={7}
-                    defaultCenter={centerCoordinates}
-                    markers={mapMarkers}
-                    autoAdjust={false}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Map
+                zoom={7}
+                defaultCenter={centerCoordinates}
+                markers={mapMarkers}
+                autoAdjust={false}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

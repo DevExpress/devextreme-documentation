@@ -242,29 +242,26 @@ To define resource kinds, assign an array of objects specifying them to the [res
         paginate: false
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler>
-                    {/* Definition of the first resource kind */}
-                    <Resource
-                        fieldExpr='roomId'      {/* 'roomId' is the data field in an appointment object that binds it to the resource */}
-                        label='Room'            {/* Label displayed for this resource kind in the appointment edit form */}
-                        dataSource={rooms} />
+    export default function App() {
+        return (
+            <Scheduler>
+                {/* Definition of the first resource kind */}
+                <Resource
+                    fieldExpr='roomId'      {/* 'roomId' is the data field in an appointment object that binds it to the resource */}
+                    label='Room'            {/* Label displayed for this resource kind in the appointment edit form */}
+                    dataSource={rooms} />
 
-                    {/* Definition of the second resource kind */}
-                    <Resource
-                        fieldExpr='teacherId'
-                        valueExpr='guid'            {/* Resource instance's field used instead of 'id' */}
-                        colorExpr='clr'             {/* Resource instance's field used instead of 'color' */}
-                        displayExpr='name'          {/* Resource instance's field used instead of 'text' */}
-                        label='Teacher'
-                        dataSource={teachers} />
-                </Scheduler>
-            );
-        }
+                {/* Definition of the second resource kind */}
+                <Resource
+                    fieldExpr='teacherId'
+                    valueExpr='guid'            {/* Resource instance's field used instead of 'id' */}
+                    colorExpr='clr'             {/* Resource instance's field used instead of 'color' */}
+                    displayExpr='name'          {/* Resource instance's field used instead of 'text' */}
+                    label='Teacher'
+                    dataSource={teachers} />
+            </Scheduler>
+        );
     }
-    export default App;
 
 ---
 

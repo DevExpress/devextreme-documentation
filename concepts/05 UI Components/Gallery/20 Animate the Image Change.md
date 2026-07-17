@@ -90,20 +90,16 @@ By default, the change of the image is animated. You can specify how long the an
         'https://js.devexpress.com/Content/images/doc/25_2/PhoneJS/person3.png'
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Gallery
-                    dataSource={dataSource}
-                    height={300}
-                    loop={true}
-                    animationDuration={100}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Gallery
+                dataSource={dataSource}
+                height={300}
+                loop={true}
+                animationDuration={100}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

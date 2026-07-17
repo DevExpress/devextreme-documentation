@@ -92,18 +92,14 @@ Gallery items are not sctrictly images. They can contain text or other elements 
         imageAlt: 'Peter'
     }];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Gallery
-                    dataSource={dataSource}
-                    height={300}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Gallery
+                dataSource={dataSource}
+                height={300}
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -215,19 +211,15 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
         );
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Gallery
-                    dataSource={dataSource}
-                    height={300}
-                    itemRender={renderGalleryItem}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Gallery
+                dataSource={dataSource}
+                height={300}
+                itemRender={renderGalleryItem}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

@@ -70,18 +70,14 @@ By default, the Map UI component uses **Google Maps** as a map provider. It can 
 
     const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Map
-                    defaultZoom={10}
-                    defaultCenter={centerCoordinates}
-                    provider="google"/> {/* or "azure" | "googleStatic" */}
-            );
-        }
+    export default function App() {
+        return (
+            <Map
+                defaultZoom={10}
+                defaultCenter={centerCoordinates}
+                provider="google"/> {/* or "azure" | "googleStatic" */}
+        );
     }
-
-    export default App;
 
 ---
 
@@ -180,20 +176,16 @@ When using maps, you should include an API key that authenticates your applicati
         googleStatic: "YOUR_GOOGLE_STATIC_MAPS_API_KEY"
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Map
-                    defaultZoom={10}
-                    defaultCenter={centerCoordinates}
-                    provider="azure"
-                    apiKey={authentificationKeys}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Map
+                defaultZoom={10}
+                defaultCenter={centerCoordinates}
+                provider="azure"
+                apiKey={authentificationKeys}
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -274,20 +266,16 @@ The Map UI component supports the following map types: *"hybrid"*, *"satellite"*
 
     const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Map
-                    defaultZoom={10}
-                    defaultCenter={centerCoordinates}
-                    provider="azure"
-                    type="satellite"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Map
+                defaultZoom={10}
+                defaultCenter={centerCoordinates}
+                provider="azure"
+                type="satellite"
+            />
+        );
     }
-
-    export default App;
 
 ---
 

@@ -111,20 +111,17 @@ Generates space around the UI component.
         Margin 
     } from 'devextreme-react/{widget-name}';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <{WidgetName} ... >
-                    <Margin
-                        top={20}
-                        bottom={20}
-                        left={30}
-                        right={30}
-                    />
-                </{WidgetName}>
-            );
-        }
+    export default function App() {
+        return (
+            <{WidgetName} ... >
+                <Margin
+                    top={20}
+                    bottom={20}
+                    left={30}
+                    right={30}
+                />
+            </{WidgetName}>
+        );
     }
-    export default App;
 
 ---

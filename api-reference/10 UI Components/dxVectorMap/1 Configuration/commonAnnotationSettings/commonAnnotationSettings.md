@@ -102,18 +102,15 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
         CommonAnnotationSettings
     } from 'devextreme-react/vector-map';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <VectorMap ... >
-                    <CommonAnnotationSettings
-                        tooltipEnabled={false}
-                    />
-                </VectorMap>
-            );
-        }
+    export default function App() {
+        return (
+            <VectorMap ... >
+                <CommonAnnotationSettings
+                    tooltipEnabled={false}
+                />
+            </VectorMap>
+        );
     }
-    export default App;
 
 ---
 

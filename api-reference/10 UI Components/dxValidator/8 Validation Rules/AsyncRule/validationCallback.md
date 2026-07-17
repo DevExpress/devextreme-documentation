@@ -229,18 +229,15 @@ The following code shows a generic **validationCallback** implementation for a s
         });
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TextBox>
-                    <Validator>
-                        <AsyncRule
-                            validationCallback={validateAsync} />
-                    </Validator>
-                </TextBox>
-            );
-        }
+    export default function App() {
+        return (
+            <TextBox>
+                <Validator>
+                    <AsyncRule
+                        validationCallback={validateAsync} />
+                </Validator>
+            </TextBox>
+        );
     }
-    export default App;
 
 ---

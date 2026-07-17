@@ -225,9 +225,9 @@ In the following example, a button validates a group of editors with async rules
         });
     };
 
-    class App extends React.Component {
-        render() {
-            return (
+    export default function App() {
+        return (
+            <>
                 <TextBox>
                     <Validator
                         validationGroup={validationGroupName}>
@@ -247,10 +247,10 @@ In the following example, a button validates a group of editors with async rules
                 <Button 
                     text="Submit"
                     validationGroup={validationGroupName}
-                    onClick={validateGroup} />
-            );
-        }
+                    onClick={validateGroup}
+                />
+            </>
+        );
     }
-    export default App;
 
 ---

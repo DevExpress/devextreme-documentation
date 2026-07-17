@@ -70,17 +70,13 @@ To configure the appearance, location, and content of the legend, use properties
         Legend
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Legend ... />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Legend ... />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

@@ -66,20 +66,16 @@ With the ever-growing variety of platforms, today's web sites and applications c
         AdaptiveLayout
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <AdaptiveLayout
-                        height={300}
-                        width={400}
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <AdaptiveLayout
+                    height={300}
+                    width={400}
+                />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

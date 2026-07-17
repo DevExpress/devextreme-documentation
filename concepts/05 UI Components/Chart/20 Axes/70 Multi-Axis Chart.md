@@ -280,25 +280,21 @@ All value axes in the Chart are synchronized by default, but you can explicitly 
         ValueAxis
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ValueAxis
-                        name="absoluteAxis"
-                        synchronizedValue={0}
-                    />
-                    <ValueAxis
-                        name="percentageAxis"
-                        synchronizedValue={0}
-                        multipleAxesSpacing={10}
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ValueAxis
+                    name="absoluteAxis"
+                    synchronizedValue={0}
+                />
+                <ValueAxis
+                    name="percentageAxis"
+                    synchronizedValue={0}
+                    multipleAxesSpacing={10}
+                />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

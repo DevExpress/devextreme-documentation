@@ -72,18 +72,14 @@ Declare several objects in the [panes](/api-reference/10%20UI%20Components/dxCha
         Pane
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Pane name="topPane"/>
-                    <Pane name="bottomPane"/>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Pane name="topPane"/>
+                <Pane name="bottomPane"/>
+            </Chart>
+        );
     }
-
-    export default App;
 
     ---
 
@@ -157,18 +153,14 @@ Bind each of them to a pane using the [pane](/api-reference/10%20UI%20Components
         ValueAxis
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ValueAxis pane="topPane"/>
-                    <ValueAxis pane="bottomPane"/>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ValueAxis pane="topPane"/>
+                <ValueAxis pane="bottomPane"/>
+            </Chart>
+        );
     }
-
-    export default App;
 
     ---
 
@@ -256,22 +248,18 @@ Bind each series to a pane using the [pane](/api-reference/10%20UI%20Components/
         Series
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series pane="topPane"/>
-                    <Series pane="bottomPane"/>
-                    <Series pane="topPane"/>
-                    <Series>
-                        <!-- This series will be bound to the default pane -->
-                    </Series>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series pane="topPane"/>
+                <Series pane="bottomPane"/>
+                <Series pane="topPane"/>
+                <Series>
+                    {/* This series will be bound to the default pane */}
+                </Series>
+            </Chart>
+        );
     }
-
-    export default App;
 
     ---
 
@@ -357,22 +345,18 @@ If all panes in a multi-pane chart should have uniform settings, you can specify
         Border
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <CommonPaneSettings backgroundColor="yellow">
-                        <Border 
-                            visible={true} 
-                            width={2}
-                        />
-                    </CommonPaneSettings>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <CommonPaneSettings backgroundColor="yellow">
+                    <Border 
+                        visible={true} 
+                        width={2}
+                    />
+                </CommonPaneSettings>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

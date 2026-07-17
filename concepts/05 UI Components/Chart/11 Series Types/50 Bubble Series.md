@@ -105,25 +105,21 @@ Note that **Bubble** series require an additional data field that provides size 
 
     const bubbleSettings = { ... };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ...
-                    minBubbleSize={14}
-                    maxBubbleSize={0.3}>
-                    <Series
-                        type="bubble"
-                        sizeField="size"
-                    />
-                    <Series ... />
-                    ...
-                    <CommonSeriesSettings bubble={bubbleSettings} />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ...
+                minBubbleSize={14}
+                maxBubbleSize={0.3}>
+                <Series
+                    type="bubble"
+                    sizeField="size"
+                />
+                <Series ... />
+                ...
+                <CommonSeriesSettings bubble={bubbleSettings} />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

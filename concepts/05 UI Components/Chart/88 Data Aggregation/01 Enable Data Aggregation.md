@@ -119,23 +119,19 @@ You can enable data aggregation for individual series, all series of a specific 
 
     const fullStackedBarSettings = { aggregation: { enabled: true } };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <CommonSeriesSettings ...
-                        fullstackedbar={fullStackedBarSettings}> {/* Enables data aggregation for all Full-Stacked Bar series */}
-                        <Aggregation enabled={true} /> {/* Enables data aggregation for all series in the Chart */}
-                    </CommonSeriesSettings>
-                    <Series>
-                        <Aggregation enabled={true} /> {/* Enables data aggregation for an individual series */}
-                    </Series>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <CommonSeriesSettings ...
+                    fullstackedbar={fullStackedBarSettings}> {/* Enables data aggregation for all Full-Stacked Bar series */}
+                    <Aggregation enabled={true} /> {/* Enables data aggregation for all series in the Chart */}
+                </CommonSeriesSettings>
+                <Series>
+                    <Aggregation enabled={true} /> {/* Enables data aggregation for an individual series */}
+                </Series>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

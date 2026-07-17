@@ -235,19 +235,17 @@ When your data source is updated in real time, the behavior of both the Chart's 
     import Chart from 'devextreme-react/chart';
     import RangeSelector from 'devextreme-react/range-selector';
 
-    class App extends React.Component {
-        render() {
-            return (
+    export default function App() {
+        return (
+            <>
                 <Chart ... >
                 </Chart>
                 <RangeSelector ...
                     selectedRangeUpdateMode="keep"> {/* the ranges remain unchanged */}
                 </RangeSelector>
-            );
-        }
+            </>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -339,9 +337,9 @@ If you need to fix the zoom window and allow users to only move it along the sca
         Scale
     } from 'devextreme-react/range-selector';
 
-    class App extends React.Component {
-        render() {
-            return (
+    export default function App() {
+        return (
+            <>
                 <Chart ... >
                 </Chart>
                 <RangeSelector ...
@@ -351,11 +349,9 @@ If you need to fix the zoom window and allow users to only move it along the sca
                         maxRange={10}
                     />
                 </RangeSelector>
-            );
-        }
+            </>
+        );
     }
-
-    export default App;
 
 ---
 

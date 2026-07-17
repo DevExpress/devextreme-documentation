@@ -160,18 +160,14 @@ Axes can be relocated to their opposite side using the [position](/api-reference
         ValueAxis
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ArgumentAxis position="top" />
-                    <ValueAxis position="right" />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ArgumentAxis position="top" />
+                <ValueAxis position="right" />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

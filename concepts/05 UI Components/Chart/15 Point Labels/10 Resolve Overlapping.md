@@ -56,16 +56,12 @@ In multi-series charts, point labels often overlap. To decide how to resolve ove
     import React from 'react';
     import Chart from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart resolveLabelOverlapping="stack"> {/* or 'hide' | 'none' */}
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart resolveLabelOverlapping="stack"> {/* or 'hide' | 'none' */}
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -140,20 +136,16 @@ Another way to deal with overlapping labels is to hide all labels of a specific 
         Series
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series
-                        maxLabelCount={10}
-                        ...
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series
+                    maxLabelCount={10}
+                    ...
+                />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

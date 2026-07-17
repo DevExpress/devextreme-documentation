@@ -92,23 +92,19 @@ All ResponsiveBox elements are arranged in a layout grid according to the [rows]
 
     import ResponsiveBox, { Row, Col } from 'devextreme-react/responsive-box';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <ResponsiveBox>
-                    {/* Creates two rows of equal height */}
-                    <Row/>
-                    <Row/>
-                    {/* Creates three columns of equal width */}
-                    <Col/>
-                    <Col/>
-                    <Col/>
-                </ResponsiveBox>
-            );
-        }
+    export default function App() {
+        return (
+            <ResponsiveBox>
+                {/* Creates two rows of equal height */}
+                <Row/>
+                <Row/>
+                {/* Creates three columns of equal width */}
+                <Col/>
+                <Col/>
+                <Col/>
+            </ResponsiveBox>
+        );
     }
-
-    export default App;
 
     <!--CSS-->
     html, body { height: 100%; }
@@ -235,23 +231,19 @@ The collections of rows and columns may differ depending on the screen's [size q
 
     import ResponsiveBox, { Row, Col } from 'devextreme-react/responsive-box';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <ResponsiveBox>
-                    <Row ratio={1}/>
-                    <Row ratio={2} shrink={2}/>
-                    <Row ratio={0.7}/>
-                    <Col ratio={0.5} shrink={0.5}/>
-                    {/* The following columns appear on medium and large screens only */}
-                    <Col ratio={2} screen="md lg"/>
-                    <Col ratio={0.5} screen="md lg"/>
-                </ResponsiveBox>
-            );
-        }
+    export default function App() {
+        return (
+            <ResponsiveBox>
+                <Row ratio={1}/>
+                <Row ratio={2} shrink={2}/>
+                <Row ratio={0.7}/>
+                <Col ratio={0.5} shrink={0.5}/>
+                {/* The following columns appear on medium and large screens only */}
+                <Col ratio={2} screen="md lg"/>
+                <Col ratio={0.5} screen="md lg"/>
+            </ResponsiveBox>
+        );
     }
-
-    export default App;
 
     <!--CSS-->
     html, body { height: 100%; }

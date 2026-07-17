@@ -94,16 +94,13 @@ Use the following code to create a basic DateBox:
 
     import { DateBox } from 'devextreme-react/date-box';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DateBox      
-                    // Configuration goes here
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <DateBox      
+                // Configuration goes here
+            />
+        );
     }
-    export default App;
 
 ---
 

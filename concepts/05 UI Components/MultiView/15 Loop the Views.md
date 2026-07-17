@@ -85,18 +85,14 @@ The MultiView UI component can display views in a loop. The loop mode enables an
         { text: 'Contacts' }
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <MultiView
-                    dataSource={multiViewItems}
-                    loop={true}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <MultiView
+                dataSource={multiViewItems}
+                loop={true}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

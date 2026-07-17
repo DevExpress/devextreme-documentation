@@ -120,17 +120,13 @@ For a minor customization of Menu items, you can define [specific fields](/api-r
         ]
     }];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Menu
-                    items={menuItems}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Menu
+                items={menuItems}
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -272,18 +268,14 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
         );
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Menu
-                    items={menuItems}
-                    itemRender={renderMenuItem}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Menu
+                items={menuItems}
+                itemRender={renderMenuItem}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

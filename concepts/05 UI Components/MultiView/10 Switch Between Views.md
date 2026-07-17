@@ -64,17 +64,13 @@ By default, an end user can switch between views by swiping. Assign **false** to
 
     import { MultiView } from 'devextreme-react/multi-view';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <MultiView
-                    swipeEnabled={false}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <MultiView
+                swipeEnabled={false}
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -276,17 +272,13 @@ By default, the MultiView UI component animates switching between views. You can
 
     import { MultiView } from 'devextreme-react/multi-view';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <MultiView
-                    animationEnabled={false}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <MultiView
+                animationEnabled={false}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

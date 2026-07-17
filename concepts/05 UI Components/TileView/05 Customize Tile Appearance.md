@@ -78,15 +78,11 @@ For a minor customization of tiles, you can define [specific fields](/api-refere
         { text: 'Arizona', visible: false }
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TileView dataSource={dataSource}/>
-            );
-        }
+    export default function App() {
+        return (
+            <TileView dataSource={dataSource}/>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -238,17 +234,14 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
         );
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TileView
-                    items={tileViewData}
-                    itemRender={renderTileItem}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TileView
+                items={tileViewData}
+                itemRender={renderTileItem}
+            />
+        );
     }
-    export default App;
 
     <!--tab: styles.css-->
     .tile {
@@ -350,22 +343,18 @@ You can also customize individual tiles. Declare them using the [dxItem](/api-re
 
     import { TileView, Item } from 'devextreme-react/tile-view';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TileView>
-                    <Item>
-                        <span>User</span>
-                    </Item>
-                    <Item>
-                        <span>Comment</span>
-                    </Item>
-                </TileView>
-            );
-        }
+    export default function App() {
+        return (
+            <TileView>
+                <Item>
+                    <span>User</span>
+                </Item>
+                <Item>
+                    <span>Comment</span>
+                </Item>
+            </TileView>
+        );
     }
-
-    export default App;
 
 ---
 

@@ -65,19 +65,15 @@ Depending on whether the legend is oriented vertically or horizontally, the Funn
     import React from 'react';
     import Funnel, { Legend } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel ... >
-                    <Legend
-                        orientation="vertical" {/* or "horizontal" */}
-                    />
-                </Funnel>
-            );
-        }
+    export default function App() {
+        return (
+            <Funnel ... >
+                <Legend
+                    orientation="vertical" {/* or "horizontal" */}
+                />
+            </Funnel>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -152,20 +148,16 @@ To distribute all legend items between several columns (in a vertically-oriented
     import React from 'react';
     import Funnel, { Legend } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel ... >
-                    <Legend
-                        columnCount={3} 
-                        {/* rowCount={2} */}
-                    />
-                </Funnel>
-            );
-        }
+    export default function App() {
+        return (
+            <Funnel ... >
+                <Legend
+                    columnCount={3} 
+                    {/* rowCount={2} */}
+                />
+            </Funnel>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -238,20 +230,16 @@ Regardless of the legend orientation, you can adjust the empty space between col
     import React from 'react';
     import Funnel, { Legend } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel ... >
-                    <Legend
-                        columnItemSpacing={20}
-                        rowItemSpacing={30}
-                    />
-                </Funnel>
-            );
-        }
+    export default function App() {
+        return (
+            <Funnel ... >
+                <Legend
+                    columnItemSpacing={20}
+                    rowItemSpacing={30}
+                />
+            </Funnel>
+        );
     }
-
-    export default App;
 
 ---
 

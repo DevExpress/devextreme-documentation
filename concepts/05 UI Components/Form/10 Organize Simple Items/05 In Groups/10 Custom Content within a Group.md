@@ -119,20 +119,18 @@ The Form UI component allows you to place custom content, for example, an image,
         picture: 'http://here/goes/the/picture.jpg'
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Form formData={employee}>
-                    <GroupItem
-                        caption="Picture"
-                        render={pictureRender} />
-                    <GroupItem caption="Personal Data">
-                        <SimpleItem dataField="firstName" />
-                        <SimpleItem dataField="lastName" />
-                    </GroupItem>
-                </Form>
-            );
-        }
+    export default function App() {
+        return (
+            <Form formData={employee}>
+                <GroupItem
+                    caption="Picture"
+                    render={pictureRender} />
+                <GroupItem caption="Personal Data">
+                    <SimpleItem dataField="firstName" />
+                    <SimpleItem dataField="lastName" />
+                </GroupItem>
+            </Form>
+        );
     }
 
     function pictureRender(data) {
@@ -140,8 +138,6 @@ The Form UI component allows you to place custom content, for example, an image,
             <img src={data.formData.picture}/>
         );
     }
-
-    export default App;
 
 ---
 

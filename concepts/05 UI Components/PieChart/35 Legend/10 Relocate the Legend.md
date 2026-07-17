@@ -69,17 +69,15 @@ The legend can be aligned in the horizontal or vertical direction using the [hor
         Legend
     } from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PieChart ... >
-                    <Legend
-                        horizontalAlignment="center" {/* or "left" | "right" */}
-                        verticalAlignment="top" {/* or "bottom" */}
-                    />
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PieChart ... >
+                <Legend
+                    horizontalAlignment="center" {/* or "left" | "right" */}
+                    verticalAlignment="top" {/* or "bottom" */}
+                />
+            </PieChart>
+        );
     }
 
 ---

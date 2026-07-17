@@ -66,17 +66,13 @@ All properties configuring tooltips are collected in the [tooltip](/api-referenc
     import React from 'react';
     import Funnel, { Tooltip } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel ... >
-                    <Tooltip enabled={true} />
-                </Funnel>
-            );
-        }
+    export default function App() {
+        return (
+            <Funnel ... >
+                <Tooltip enabled={true} />
+            </Funnel>
+        );
     }
-
-    export default App;
 
 ---
 

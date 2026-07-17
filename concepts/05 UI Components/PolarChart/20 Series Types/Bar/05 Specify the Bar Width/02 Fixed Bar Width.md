@@ -82,20 +82,16 @@ The [barWidth](/api-reference/10%20UI%20Components/dxPolarChart/5%20Series%20Typ
         CommonSeriesSettings
     } from 'devextreme-react/polar-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PolarChart ... >
-                    <Series barWidth={20} /> {/* for an individual series */}
-                    <Series ... />
-                    ...
-                    <CommonSeriesSettings barWidth={20}/> {/* for all series in the chart */}
-                </PolarChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PolarChart ... >
+                <Series barWidth={20} /> {/* for an individual series */}
+                <Series ... />
+                ...
+                <CommonSeriesSettings barWidth={20}/> {/* for all series in the chart */}
+            </PolarChart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -160,16 +156,12 @@ Bar groups' angular width can be changed using the [barGroupWidth](/api-referenc
     import React from 'react';
     import PolarChart from 'devextreme-react/polar-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PolarChart ...
-                    barGroupWidth={45}>
-                </PolarChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PolarChart ...
+                barGroupWidth={45}>
+            </PolarChart>
+        );
     }
-
-    export default App;
 
 ---

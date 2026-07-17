@@ -138,18 +138,14 @@ If a node is supposed to be expanded initially, set its [expanded](/api-referenc
         ]
     }];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeView
-                    keyExpr="key"
-                    displayExpr="name"
-                    expandedExpr="isExpanded"
-                    items={hierarchicalData} />
-            );
-        }
+    export default function App() {
+        return (
+            <TreeView
+                keyExpr="key"
+                displayExpr="name"
+                expandedExpr="isExpanded"
+                items={hierarchicalData} />
+        );
     }
-
-    export default App;
 
 ---

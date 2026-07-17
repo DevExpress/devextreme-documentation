@@ -342,17 +342,15 @@ The following example shows a **CustomStore** that sends data processing setting
         // }
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid
-                    dataSource={customDataSource}>
-                    <RemoteOperations groupPaging={true}>
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid
+                dataSource={customDataSource}
+            >
+                <RemoteOperations groupPaging={true} />
+            </DataGrid>
+        );
     }
-    export default App;
 
 ---
 

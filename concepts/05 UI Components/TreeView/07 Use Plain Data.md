@@ -100,17 +100,13 @@ If you use plain data in the TreeView, set the [dataStructure](/api-reference/10
         { id: '2_2', text: 'Tomatoes', parentId: '2' }
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeView
-                    dataStructure="plain"
-                    dataSource={plainData} />
-            );
-        }
+    export default function App() {
+        return (
+            <TreeView
+                dataStructure="plain"
+                dataSource={plainData} />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -224,20 +220,16 @@ As you can see, all items in a plain data source have the **id** and **text** fi
         { key: '2_2', name: 'Tomatoes', parent: '2' }
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeView
-                    dataStructure="plain"
-                    dataSource={plainData} 
-                    keyExpr="key"
-                    displayExpr="name"
-                    parentIdExpr="parent" />
-            );
-        }
+    export default function App() {
+        return (
+            <TreeView
+                dataStructure="plain"
+                dataSource={plainData} 
+                keyExpr="key"
+                displayExpr="name"
+                parentIdExpr="parent" />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -349,19 +341,15 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
         { name: 'Tomatoes', parentId: 'Vegetables' }
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeView
-                    dataStructure="plain"
-                    dataSource={plainData} 
-                    keyExpr="name"
-                    displayExpr="name" />
-            );
-        }
+    export default function App() {
+        return (
+            <TreeView
+                dataStructure="plain"
+                dataSource={plainData} 
+                keyExpr="name"
+                displayExpr="name" />
+        );
     }
-
-    export default App;
 
 ---
 

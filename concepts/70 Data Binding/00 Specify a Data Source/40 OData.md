@@ -125,16 +125,13 @@ To access an OData service, implement the [ODataStore](/api-reference/30%20Data%
         }
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid
-                    dataSource={productsStore}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid
+                dataSource={productsStore}
+            />
+        );
     }
-    export default App;
 
 ---
 
@@ -270,16 +267,13 @@ The following example declares an **ODataStore**, wraps it in a **DataSource**, 
         sort: 'Product_Name'
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid
-                    dataSource={productsDataSource}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid
+                dataSource={productsDataSource}
+            />
+        );
     }
-    export default App;
 
 ---
 

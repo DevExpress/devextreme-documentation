@@ -63,17 +63,13 @@ To arrange items on the menu panel in a row (horizontally) or in a column (verti
 
     import { Menu } from 'devextreme-react/menu';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Menu ...
-                    orientation="horizontal" {/* or "vertical" */}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Menu ...
+                orientation="horizontal" {/* or "vertical" */}
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -148,18 +144,14 @@ When the UI component is positioned at the bottom or at the left side, you may w
 
     import { Menu } from 'devextreme-react/menu';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Menu ...
-                    submenuDirection="rightToTop"
-                    orientation="horizontal" {/* or "vertical" */}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Menu ...
+                submenuDirection="rightToTop"
+                orientation="horizontal" {/* or "vertical" */}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

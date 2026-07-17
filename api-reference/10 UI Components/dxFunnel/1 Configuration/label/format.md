@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Formats the item value before displaying it in the label.
+Formats the item value before it is displayed in the label.
 
 ---
 See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') section for information on accepted values.
@@ -21,4 +21,5 @@ If you specify the format with an object, it can also contain the **percentPreci
 
 #####See Also#####
 - [customizeText](/api-reference/10%20UI%20Components/dxFunnel/1%20Configuration/label/customizeText.md '{currentpath}/#customizeText')
-- [Value Formatting](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/')
+- [Value Formatting](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/00%20Value%20Formatting.md)
+

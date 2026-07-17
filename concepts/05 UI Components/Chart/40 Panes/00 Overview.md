@@ -87,22 +87,18 @@ Panes are configured by the [panes](/api-reference/10%20UI%20Components/dxChart/
         Border
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Pane backgroundColor="yellow">
-                        <Border 
-                            visible={true} 
-                            width={2} 
-                        />
-                    </Pane>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Pane backgroundColor="yellow">
+                    <Border 
+                        visible={true} 
+                        width={2} 
+                    />
+                </Pane>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

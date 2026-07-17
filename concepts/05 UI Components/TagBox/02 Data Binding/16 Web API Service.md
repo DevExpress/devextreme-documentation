@@ -95,17 +95,13 @@ DevExtreme provides the <a href="https://github.com/DevExpress/DevExtreme.AspNet
         insertUrl: serviceUrl + "/InsertAction"
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TagBox ...
-                    dataSource={dataSource}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TagBox ...
+                dataSource={dataSource}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

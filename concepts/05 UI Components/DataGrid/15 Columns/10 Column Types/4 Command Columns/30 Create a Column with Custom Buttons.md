@@ -100,25 +100,22 @@ The following code shows how to add a command column with custom [buttons](/api-
         Button
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Column type="buttons">
-                        <Button name="edit" />
-                        <Button name="delete" />
-                    </Column>
-                    <Column dataField="firstName" />
-                    <Column dataField="lastName" />
-                    <Column type="buttons">
-                        <Button ... />
-                        {/* Declare and configure custom buttons here */}
-                    </Column>
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Column type="buttons">
+                    <Button name="edit" />
+                    <Button name="delete" />
+                </Column>
+                <Column dataField="firstName" />
+                <Column dataField="lastName" />
+                <Column type="buttons">
+                    <Button ... />
+                    {/* Declare and configure custom buttons here */}
+                </Column>
+            </DataGrid>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

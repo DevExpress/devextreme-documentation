@@ -110,25 +110,21 @@ The Form UI component displays labels on the left side of their editors and alig
         phone: '+1(360)684-1334'
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Form
-                    formData={employee}
-                    labelLocation="top"> { /* or "left" | "right" */ }
-                    <SimpleItem dataField="firstName" />
-                    <SimpleItem dataField="lastName" />
-                    <SimpleItem dataField="phone">
-                        <Label
-                            location="left"
-                            alignment="right" /> { /* or "left" | "right" */ }
-                    </SimpleItem>
-                </Form>
-            );
-        }
+    export default function App() {
+        return (
+            <Form
+                formData={employee}
+                labelLocation="top"> { /* or "left" | "right" */ }
+                <SimpleItem dataField="firstName" />
+                <SimpleItem dataField="lastName" />
+                <SimpleItem dataField="phone">
+                    <Label
+                        location="left"
+                        alignment="right" /> { /* or "left" | "right" */ }
+                </SimpleItem>
+            </Form>
+        );
     }
-
-    export default App;
 
 ---
 

@@ -68,14 +68,12 @@ All properties configuring tooltips are collected in the [tooltip](/api-referenc
         Tooltip
     } from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PieChart ... >
-                    <Tooltip enabled={true} />
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PieChart ... >
+                <Tooltip enabled={true} />
+            </PieChart>
+        );
     }
 
 ---
@@ -172,18 +170,16 @@ Properties declared in the **tooltip** object apply to all tooltips in the PieCh
         Tooltip
     } from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PieChart ...
-                    <DxTooltip
-                        enabled={true}
-                        customizeTooltip={customizeTooltip}
-                        color="yellow"
-                    />
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PieChart ...
+                <DxTooltip
+                    enabled={true}
+                    customizeTooltip={customizeTooltip}
+                    color="yellow"
+                />
+            </PieChart>
+        );
     }
 
     // Tooltips of all points with the value more than 100 turn red

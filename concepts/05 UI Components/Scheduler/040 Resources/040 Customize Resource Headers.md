@@ -161,24 +161,21 @@ Implement a callback function with custom template and assign it to the [resourc
         );
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler
-                    dataSource={schedulerData}
-                    defaultCurrentDate={new Date(2016, 4, 24)}
-                    groups={groups}
-                    resourceCellRender={renderResourceCell}
-                >
-                    <Resource
-                      fieldExpr="roomId"
-                      dataSource={rooms}
-                    />
-              </Scheduler>
-            );
-        }
+    export default function App() {
+        return (
+            <Scheduler
+                dataSource={schedulerData}
+                defaultCurrentDate={new Date(2016, 4, 24)}
+                groups={groups}
+                resourceCellRender={renderResourceCell}
+            >
+                <Resource
+                    fieldExpr="roomId"
+                    dataSource={rooms}
+                />
+            </Scheduler>
+        );
     }
-    export default App;
 
 ---
 

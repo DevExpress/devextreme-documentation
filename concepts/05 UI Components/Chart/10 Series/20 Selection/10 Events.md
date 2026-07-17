@@ -81,15 +81,13 @@ When a user selects a series, the Chart fires the [seriesSelectionChanged](/api-
     import React from 'react';
     import Chart from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart
-                    onSeriesSelectionChanged={onSeriesSelectionChanged}
-                >
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart
+                onSeriesSelectionChanged={onSeriesSelectionChanged}
+            >
+            </Chart>
+        );
     }
 
     function onSeriesSelectionChanged (e) {

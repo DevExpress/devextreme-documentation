@@ -97,19 +97,15 @@ Specify the [maxDisplayedTags](/api-reference/10%20UI%20Components/dxTagBox/1%20
         // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TagBox
-                    dataSource={products}
-                    maxDisplayedTags={3}
-                    showMultiTagOnly={false}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TagBox
+                dataSource={products}
+                maxDisplayedTags={3}
+                showMultiTagOnly={false}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

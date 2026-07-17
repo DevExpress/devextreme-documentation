@@ -80,19 +80,15 @@ The code below adds the Map UI component to your page. The Map is [centered](/ap
 
     const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Map
-                    defaultZoom={10}
-                    controls={true}
-                    defaultCenter={centerCoordinates}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Map
+                defaultZoom={10}
+                controls={true}
+                defaultCenter={centerCoordinates}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

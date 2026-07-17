@@ -83,19 +83,15 @@ If the axis displays numbers, assign a number to this property. If the axis disp
         MinorTickInterval
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                &lt;Chart ... &gt;
-                    &lt;ArgumentAxis&gt;
-                        &lt;MinorTickInterval days={5} /&gt;
-                    &lt;/ArgumentAxis&gt;
-                &lt;/Chart&gt;
-            );
-        }
-    }
-
-    export default App;     
+    export default function App() {
+        return (
+            &lt;Chart ... &gt;
+                &lt;ArgumentAxis&gt;
+                    &lt;MinorTickInterval days={5} /&gt;
+                &lt;/ArgumentAxis&gt;
+            &lt;/Chart&gt;
+        );
+    }     
 
 ---
 

@@ -66,17 +66,13 @@ Properties that configure item labels are collected in the [label](/api-referenc
     import React from 'react';
     import Funnel, { Label } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel ... >
-                    <Label {/* Settings for all item labels */} />
-                </Funnel>
-            );
-        }
+    export default function App() {
+        return (
+            <Funnel ... >
+                <Label {/* Settings for all item labels */} />
+            </Funnel>
+        );
     }
-
-    export default App;
 
 ---
 

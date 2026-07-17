@@ -58,18 +58,14 @@ You can use the Funnel UI component to create a pyramid chart. Change the [algor
     import React from 'react';
     import Funnel from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel
-                    algorithm="dynamicHeight"
-                    inverted={true}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Funnel
+                algorithm="dynamicHeight"
+                inverted={true}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

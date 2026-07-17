@@ -145,29 +145,26 @@ The example below illustrates how to customize label text for all series and ind
         CommonSeriesSettings
     } from 'devextreme-react/polar-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PolarChart ... >
-                    <Series valueField="y1564" name="15-64 years"></Series>
-                    <Series valueField="y014" name="0-14 years"></Series>
-                    <Series valueField="y65" name="65 years and older">
-                        <Label displayFormat="<u>65+ years</u>: {valueText}" >
-                        </Label>
-                    </Series>                
-                    <CommonSeriesSettings ... >
-                        <Label 
-                            format="thousands" 
-                            visible={true}
-                            displayFormat="{seriesName}: {valueText}"
-                            >
-                        </Label>
-                    </CommonSeriesSettings>
-                </PolarChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PolarChart ... >
+                <Series valueField="y1564" name="15-64 years"></Series>
+                <Series valueField="y014" name="0-14 years"></Series>
+                <Series valueField="y65" name="65 years and older">
+                    <Label displayFormat="<u>65+ years</u>: {valueText}" >
+                    </Label>
+                </Series>                
+                <CommonSeriesSettings ... >
+                    <Label 
+                        format="thousands" 
+                        visible={true}
+                        displayFormat="{seriesName}: {valueText}"
+                        >
+                    </Label>
+                </CommonSeriesSettings>
+            </PolarChart>
+        );
     }
-    export default App;
 
 ##### ASP.NET Core Controls
 

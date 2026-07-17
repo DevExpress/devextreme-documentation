@@ -173,17 +173,13 @@ You can hide a series on component initialization. To do this, assign **false** 
         Series
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series visible={false} />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series visible={false} />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

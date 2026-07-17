@@ -82,20 +82,16 @@ Regulating the empty space on a bar's sides controls the relative bar width. Use
         CommonSeriesSettings
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series barPadding={0.1} /> {/* for an individual series */}
-                    <Series ... />
-                    ...
-                    <CommonSeriesSettings barPadding={0.1}/> {/* for all series in the chart */}
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series barPadding={0.1} /> {/* for an individual series */}
+                <Series ... />
+                ...
+                <CommonSeriesSettings barPadding={0.1}/> {/* for all series in the chart */}
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -160,17 +156,13 @@ The parent group's width can be specified using the [barGroupPadding](/api-refer
     import React from 'react';
     import Chart from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ...
-                    barGroupPadding={0.2}>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ...
+                barGroupPadding={0.2}>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

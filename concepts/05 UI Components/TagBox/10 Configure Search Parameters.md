@@ -99,21 +99,17 @@ The TagBox UI component allows an end user to search through its items. This fea
     ];
     const searchExpr = ['capital', 'country'];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TagBox
-                    dataSource={tagBoxData}
-                    searchEnabled={true}
-                    searchExpr={searchExpr}
-                    valueExpr="id"
-                    displayExpr="country"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TagBox
+                dataSource={tagBoxData}
+                searchEnabled={true}
+                searchExpr={searchExpr}
+                valueExpr="id"
+                displayExpr="country"
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -211,22 +207,18 @@ When a user types a string in the input field, the TagBox suggests all items tha
         // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TagBox
-                    dataSource={tagBoxData}
-                    searchEnabled={true}
-                    valueExpr="id"
-                    displayExpr="country"
-                    searchExpr="country"
-                    searchMode="startswith"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TagBox
+                dataSource={tagBoxData}
+                searchEnabled={true}
+                valueExpr="id"
+                displayExpr="country"
+                searchExpr="country"
+                searchMode="startswith"
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -324,22 +316,18 @@ There is a delay between the moment a user finishes typing and the moment the se
         // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TagBox
-                    dataSource={tagBoxData}
-                    searchEnabled={true}
-                    searchTimeout={1000}
-                    valueExpr="id"
-                    displayExpr="country"
-                    searchExpr="country"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TagBox
+                dataSource={tagBoxData}
+                searchEnabled={true}
+                searchTimeout={1000}
+                valueExpr="id"
+                displayExpr="country"
+                searchExpr="country"
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -434,22 +422,18 @@ The TagBox UI component starts searching after a user has typed at least one cha
         // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TagBox
-                    dataSource={tagBoxData}
-                    searchEnabled={true}
-                    minSearchLength={3}
-                    valueExpr="id"
-                    displayExpr="country"
-                    searchExpr="country"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TagBox
+                dataSource={tagBoxData}
+                searchEnabled={true}
+                minSearchLength={3}
+                valueExpr="id"
+                displayExpr="country"
+                searchExpr="country"
+            />
+        );
     }
-
-    export default App;
 
 ---
 

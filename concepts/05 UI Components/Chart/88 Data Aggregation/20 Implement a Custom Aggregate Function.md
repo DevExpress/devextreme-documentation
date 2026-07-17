@@ -145,23 +145,21 @@ In the following code, a custom aggregation function implements the <a href="htt
         // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ...
-                    dataSource={data}>
-                    <Series
-                        argumentField="argument"
-                        valueField="value">
-                        <Aggregation
-                            enabled={true}
-                            calculate={calcMedianFilter}
-                            method="custom"
-                        />
-                    </Series>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ...
+                dataSource={data}>
+                <Series
+                    argumentField="argument"
+                    valueField="value">
+                    <Aggregation
+                        enabled={true}
+                        calculate={calcMedianFilter}
+                        method="custom"
+                    />
+                </Series>
+            </Chart>
+        );
     }
 
     function calcMedianFilter(aggregationInfo) {

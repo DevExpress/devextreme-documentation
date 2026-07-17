@@ -72,19 +72,15 @@ Values on a discrete axis are called ["categories"](/api-reference/10%20UI%20Com
         Tick
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ArgumentAxis
-                        discreteAxisDivisionMode="crossLabels"> {/* or 'betweenLabels' */}
-                        <Tick visible={true} />
-                    </ArgumentAxis>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ArgumentAxis
+                    discreteAxisDivisionMode="crossLabels"> {/* or 'betweenLabels' */}
+                    <Tick visible={true} />
+                </ArgumentAxis>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---

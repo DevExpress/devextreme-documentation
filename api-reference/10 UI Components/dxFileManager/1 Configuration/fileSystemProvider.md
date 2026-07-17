@@ -180,15 +180,12 @@ The following example illustrates how to configure an [Object](/api-reference/10
     import FileManager from 'devextreme-react/file-manager';
     import { fileSystem } from './data.js';
     
-    class App extends React.Component {
-        render() {
-            return (
-                <FileManager fileSystemProvider={fileSystem}>
-                </FileManager>
-            );
-        }
+    export default function App() {
+        return (
+            <FileManager fileSystemProvider={fileSystem}>
+            </FileManager>
+        );
     }
-    export default App;
 
     <!-- tab: data.js -->
     export const fileSystem = [{

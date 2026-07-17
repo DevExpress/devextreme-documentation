@@ -108,16 +108,12 @@ A template name or container.
         );
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <ButtonGroup ...
-                    buttonRender={renderButton}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <ButtonGroup ...
+                buttonRender={renderButton}
+            />
+        );
     }
-
-    export default App;
 
 ---

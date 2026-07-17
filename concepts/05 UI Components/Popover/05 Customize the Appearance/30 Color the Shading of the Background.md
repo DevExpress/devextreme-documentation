@@ -90,25 +90,21 @@ When the Popover is shown, the area beneath it can be shaded. To enable this beh
         );
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <div>
-                    <img id="image" src="https://url/to/an/image" />
-                    <Popover
-                        target="#image"
-                        showEvent="dxhoverstart"
-                        hideEvent="dxhoverend"
-                        contentRender={renderContent}
-                        shading={true}
-                        shadingColor="rgba(0, 0, 0, 0.2)"
-                    />
-                </div>
-            );
-        }
+    export default function App() {
+        return (
+            <div>
+                <img id="image" src="https://url/to/an/image" />
+                <Popover
+                    target="#image"
+                    showEvent="dxhoverstart"
+                    hideEvent="dxhoverend"
+                    contentRender={renderContent}
+                    shading={true}
+                    shadingColor="rgba(0, 0, 0, 0.2)"
+                />
+            </div>
+        );
     }
-
-    export default App;
 
 ##### ASP.NET MVC Controls
 

@@ -72,16 +72,12 @@ If a user updates a [recurring appointment](/concepts/05%20UI%20Components/Sched
 
     import { Scheduler } from 'devextreme-react/scheduler';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler
-                    recurrenceEditMode="occurrence" /> {/* or 'series' | 'dialog' */}
-            );
-        }
+    export default function App() {
+        return (
+            <Scheduler
+                recurrenceEditMode="occurrence" /> {/* or 'series' | 'dialog' */}
+        );
     }
-
-    export default App;
 
 ---
 
@@ -148,17 +144,13 @@ To prevent a user from updating an appointment, set the **editing**.[allowUpdati
 
     import { Scheduler, Editing } from 'devextreme-react/scheduler';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler ... >
-                    <Editing
-                        allowUpdating={false} />
-                </Scheduler>
-            );
-        }
+    export default function App() {
+        return (
+            <Scheduler ... >
+                <Editing
+                    allowUpdating={false} />
+            </Scheduler>
+        );
     }
-
-    export default App;
     
 ---

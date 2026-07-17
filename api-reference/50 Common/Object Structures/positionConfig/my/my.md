@@ -78,20 +78,17 @@ To set this property, use an object with the **x** and **y** fields. These field
         My
     } from 'devextreme-react/popup';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Popup ... >
-                    <Position
-                        my="left top">
-                        {/* or */}
-                        <My x="left" y="top" />
-                    </Position>
-                </Popup>
-            );
-        }
+    export default function App() {
+        return (
+            <Popup ... >
+                <Position
+                    my="left top">
+                    {/* or */}
+                    <My x="left" y="top" />
+                </Position>
+            </Popup>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

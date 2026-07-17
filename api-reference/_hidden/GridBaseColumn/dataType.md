@@ -133,18 +133,15 @@ If data fields contain values of one type but the UI component requires another,
     }, // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <{WidgetName} ...
-                    dataSource={employees}>
-                    <Column dataField="ID" dataType="number" />
-                    <Column dataField="hireDate" dataType="date" />
-                </{WidgetName}>
-            );
-        }
+    export default function App() {
+        return (
+            <{WidgetName} ...
+                dataSource={employees}>
+                <Column dataField="ID" dataType="number" />
+                <Column dataField="hireDate" dataType="date" />
+            </{WidgetName}>
+        );
     }
-    export default App;
 
 ---
 

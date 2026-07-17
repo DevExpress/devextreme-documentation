@@ -86,20 +86,17 @@ Set the [showNavigationButtons](/api-reference/10%20UI%20Components/GridBase/1%2
 
     const allowedPageSizes = [10, 20, 50];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList ... >
-                    <Pager
-                        showPageSizeSelector={true}
-                        allowedPageSizes={allowedPageSizes}
-                        showNavigationButtons={true}
-                    />
-                </TreeList>
-            );
-        }
+    export default function App() {
+        return (
+            <TreeList ... >
+                <Pager
+                    showPageSizeSelector={true}
+                    allowedPageSizes={allowedPageSizes}
+                    showNavigationButtons={true}
+                />
+            </TreeList>
+        );
     }
-    export default App;
 
 ---
 
@@ -186,19 +183,16 @@ Assign **true** to the [showInfo](/api-reference/10%20UI%20Components/GridBase/1
         Pager
     } from 'devextreme-react/tree-list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList ... >
-                    <Pager
-                        showInfo={true}
-                        infoText="Page #{0}. Total: {1} ({2} items)"
-                    />
-                </TreeList>
-            );
-        }
+    export default function App() {
+        return (
+            <TreeList ... >
+                <Pager
+                    showInfo={true}
+                    infoText="Page #{0}. Total: {1} ({2} items)"
+                />
+            </TreeList>
+        );
     }
-    export default App;
 
 ---
 

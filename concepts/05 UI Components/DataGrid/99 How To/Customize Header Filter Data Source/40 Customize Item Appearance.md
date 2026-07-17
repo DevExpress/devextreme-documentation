@@ -183,21 +183,17 @@ You can use [templates](/api-reference/50%20Common/Object%20Structures/template 
         value: ['OrderDate', '<', startOfWeek]
     }];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <{WidgetName}>
-                    <Column>
-                        <HeaderFilter
-                            dataSource={headerFilterData}
-                        />
-                    </Column>
-                     <Template name="boldFont" render={renderBoldText} />
-                </{WidgetName}>
-            );
-        }
+    export default function App() {
+        return (
+            <{WidgetName}>
+                <Column>
+                    <HeaderFilter
+                        dataSource={headerFilterData}
+                    />
+                </Column>
+                <Template name="boldFont" render={renderBoldText} />
+            </{WidgetName}>
+        );
     }
-
-    export default App;
 
 ---

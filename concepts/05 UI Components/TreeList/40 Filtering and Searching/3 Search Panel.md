@@ -82,15 +82,13 @@ To make the search panel visible, assign **true** to the [searchPanel](/api-refe
         SearchPanel
     } from 'devextreme-react/tree-list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList ... >
-                  <SearchPanel visible={true} />
-                  <Column allowSearch={false} />
-                </TreeList>
-            );
-        }
+    export default function App() {
+        return (
+            <TreeList ... >
+              <SearchPanel visible={true} />
+              <Column allowSearch={false} />
+            </TreeList>
+        );
     }
     
 ---

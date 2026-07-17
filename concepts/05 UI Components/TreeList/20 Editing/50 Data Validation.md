@@ -102,24 +102,21 @@ User input is validated against a set of [validation rules](/api-reference/10%20
         StringLengthRule
     } from 'devextreme-react/tree-list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList ... >
-                    <Column dataField="Full_Name">
-                        <RequiredRule />
-                    </Column>
-                    <Column dataField="Login">
-                        <StringLengthRule
-                            min={3}
-                            message="Login should be at least 3 symbols long"
-                        />
-                    </Column>
-                </TreeList>
-            );
-        }
+    export default function App() {
+        return (
+            <TreeList ... >
+                <Column dataField="Full_Name">
+                    <RequiredRule />
+                </Column>
+                <Column dataField="Login">
+                    <StringLengthRule
+                        min={3}
+                        message="Login should be at least 3 symbols long"
+                    />
+                </Column>
+            </TreeList>
+        );
     }
-    export default App;
     
 ---
 

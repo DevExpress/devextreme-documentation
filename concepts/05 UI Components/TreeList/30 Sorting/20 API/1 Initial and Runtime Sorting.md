@@ -76,23 +76,20 @@ Rows are sorted according to the data source by default. Set the [sortOrder](/ap
 
     import { TreeList, Column } from 'devextreme-react/tree-list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList>
-                    <Column
-                        dataField="City"
-                        defaultSortIndex={1}
-                        defaultSortOrder="asc" />
-                    <Column
-                        dataField="Country"
-                        defaultSortIndex={0}
-                        defaultSortOrder="asc" />
-                </TreeList>
-            );
-        }
+    export default function App() {
+        return (
+            <TreeList>
+                <Column
+                    dataField="City"
+                    defaultSortIndex={1}
+                    defaultSortOrder="asc" />
+                <Column
+                    dataField="Country"
+                    defaultSortIndex={0}
+                    defaultSortOrder="asc" />
+            </TreeList>
+        );
     }
-    export default App;
     
 ---
 

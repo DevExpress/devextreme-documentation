@@ -96,18 +96,14 @@ The following code adds the Gallery UI component to your page. The simplest conf
         'https://js.devexpress.com/Content/images/doc/25_2/PhoneJS/person4.png'
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Gallery
-                    dataSource={dataSource}
-                    height={300}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Gallery
+                dataSource={dataSource}
+                height={300}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

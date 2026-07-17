@@ -90,19 +90,15 @@ The Map UI component allows you to provide a single icon for all markers. For th
         { location: "37.058435, -74.903842" }
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Map
-                    defaultZoom={10}
-                    markerIconSrc={markerIconUrl}
-                    markers={mapMarkers}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Map
+                defaultZoom={10}
+                markerIconSrc={markerIconUrl}
+                markers={mapMarkers}
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -228,19 +224,15 @@ Apart from the icon, you can specify a [tooltip](/api-reference/10%20UI%20Compon
         }
     }];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Map
-                    defaultZoom={10}
-                    defaultCenter={centerCoordinates}
-                    markers={mapMarkers}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Map
+                defaultZoom={10}
+                defaultCenter={centerCoordinates}
+                markers={mapMarkers}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

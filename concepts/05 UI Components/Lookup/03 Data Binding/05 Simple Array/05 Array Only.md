@@ -64,15 +64,11 @@ Bind the Lookup to an array by passing it to the [dataSource](/api-reference/10%
 
     const products = ['HD Video Player', 'SuperHD Video Player', 'SuperPlasma 50', 'SuperLED 50'];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Lookup dataSource={products}/>
-            );
-        }
+    export default function App() {
+        return (
+            <Lookup dataSource={products}/>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -170,19 +166,15 @@ Bind the Lookup to an array by passing it to the [dataSource](/api-reference/10%
         { name: 'SuperLED 50', price: 200 }
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Lookup
-                    dataSource={products}
-                    valueExpr="price"
-                    displayExpr="name"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Lookup
+                dataSource={products}
+                valueExpr="price"
+                displayExpr="name"
+            />
+        );
     }
-
-    export default App;
 
 ---
 

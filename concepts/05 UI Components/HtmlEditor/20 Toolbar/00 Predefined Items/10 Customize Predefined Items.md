@@ -87,22 +87,18 @@ To customize a button, assign its [name](/concepts/05%20UI%20Components/HtmlEdit
 
     const clearFormatOptions = { icon: 'clear', type: 'danger' };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <HtmlEditor>
-                    <Toolbar>
-                        <Item
-                            options={clearFormatOptions}
-                            name="clear"
-                        />
-                    </Toolbar>
-                </HtmlEditor>
-            );
-        }
+    export default function App() {
+        return (
+            <HtmlEditor>
+                <Toolbar>
+                    <Item
+                        options={clearFormatOptions}
+                        name="clear"
+                    />
+                </Toolbar>
+            </HtmlEditor>
+        );
     }
-
-    export default App;
 
 ##### ASP.NET MVC Controls
 
@@ -218,23 +214,19 @@ To customize a select box, specify [select box properties](/api-reference/10%20U
     const sizeFormatOptions = { width: 150 };
     const sizeAcceptedValues = ["11px", "14px", "16px"];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <HtmlEditor>
-                    <Toolbar>
-                        <Item
-                            options={sizeFormatOptions}
-                            acceptedValues={sizeAcceptedValues}
-                            name="size"
-                        />
-                    </Toolbar>
-                </HtmlEditor>
-            );
-        }
+    export default function App() {
+        return (
+            <HtmlEditor>
+                <Toolbar>
+                    <Item
+                        options={sizeFormatOptions}
+                        acceptedValues={sizeAcceptedValues}
+                        name="size"
+                    />
+                </Toolbar>
+            </HtmlEditor>
+        );
     }
-
-    export default App;
 
 ##### ASP.NET MVC Controls
 

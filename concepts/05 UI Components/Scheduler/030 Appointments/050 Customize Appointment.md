@@ -140,17 +140,14 @@ For a minor customization of Scheduler appointments, you can define [specific fi
     // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler
-                    dataSource={appointments}
-                    defaultCurrentDate={new Date(2016, 4, 25)} 
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Scheduler
+                dataSource={appointments}
+                defaultCurrentDate={new Date(2016, 4, 25)} 
+            />
+        );
     }
-    export default App;
 
 ---
 
@@ -326,18 +323,15 @@ If you need a more flexible solution, define a rendering function. The following
         );
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler
-                    dataSource={appointments}
-                    defaultCurrentDate={new Date(2016, 4, 25)} 
-                    appointmentRender={renderAppointment}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Scheduler
+                dataSource={appointments}
+                defaultCurrentDate={new Date(2016, 4, 25)} 
+                appointmentRender={renderAppointment}
+            />
+        );
     }
-    export default App;
 
 ---
 

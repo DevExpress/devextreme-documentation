@@ -98,18 +98,14 @@ The Lookup can organize items in groups. If you use a simple array as a data sou
     }, // ... 
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Lookup
-                    dataSource={lookupData}
-                    grouped={true}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Lookup
+                dataSource={lookupData}
+                grouped={true}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

@@ -87,19 +87,15 @@ By default, the image that the Gallery UI component displays initially is the fi
         'https://js.devexpress.com/Content/images/doc/25_2/PhoneJS/person3.png'
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Gallery
-                    dataSource={dataSource}
-                    height={300}
-                    defaultSelectedIndex={2}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Gallery
+                dataSource={dataSource}
+                height={300}
+                defaultSelectedIndex={2}
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -218,19 +214,15 @@ As an alternative, you can specify the initial image using its data source objec
 
     const selectedItem = galleryData[1];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Gallery
-                    dataSource={galleryData}
-                    height={300}
-                    defaultSelectedItem={selectedItem}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Gallery
+                dataSource={galleryData}
+                height={300}
+                defaultSelectedItem={selectedItem}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

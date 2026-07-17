@@ -86,20 +86,16 @@ To switch between images on touch-enabled devices, the user can perform the swip
         'https://js.devexpress.com/Content/images/doc/25_2/PhoneJS/person2.png'
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Gallery
-                    dataSource={dataSource}
-                    height={300}
-                    swipeEnabled={false}
-                    showNavButtons={true}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Gallery
+                dataSource={dataSource}
+                height={300}
+                swipeEnabled={false}
+                showNavButtons={true}
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -192,19 +188,15 @@ With the buttons and swipe gesture, the user switches images in a particular ord
         'https://js.devexpress.com/Content/images/doc/25_2/PhoneJS/person3.png'
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Gallery
-                    dataSource={dataSource}
-                    height={300}
-                    loop={true}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Gallery
+                dataSource={dataSource}
+                height={300}
+                loop={true}
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -293,19 +285,15 @@ Below the current image, the Gallery shows navigation bullets that allow the use
         'https://js.devexpress.com/Content/images/doc/25_2/PhoneJS/person2.png'
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Gallery
-                    dataSource={dataSource}
-                    height={300}
-                    indicatorEnabled={false}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Gallery
+                dataSource={dataSource}
+                height={300}
+                indicatorEnabled={false}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

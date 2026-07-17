@@ -134,19 +134,16 @@ Items in the SelectBox can be grouped if they are grouped in the data source. Th
         ]
     }];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <SelectBox ...
-                    dataSource={fruitsVegetables}
-                    grouped="true"
-                    displayExpr="name"
-                    valueExpr="count"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <SelectBox ...
+                dataSource={fruitsVegetables}
+                grouped={true}
+                displayExpr="name"
+                valueExpr="count"
+            />
+        );
     }
-    export default App;
 
 ---
 
@@ -329,19 +326,16 @@ If objects in your data source miss the **key** and **items** fields, use the [m
         }
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                <SelectBox ...
-                    dataSource={selectBoxDataSource}
-                    grouped="true"
-                    displayExpr="name"
-                    valueExpr="count"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <SelectBox ...
+                dataSource={selectBoxDataSource}
+                grouped={true}
+                displayExpr="name"
+                valueExpr="count"
+            />
+        );
     }
-    export default App;
 
 ---
 
@@ -473,19 +467,16 @@ If your data is not grouped, you can group it using the [group](/api-reference/3
         group: "type"
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                <SelectBox ...
-                    dataSource={selectBoxDataSource}
-                    grouped="true"
-                    displayExpr="name"
-                    valueExpr="count"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <SelectBox ...
+                dataSource={selectBoxDataSource}
+                grouped={true}
+                displayExpr="name"
+                valueExpr="count"
+            />
+        );
     }
-    export default App;
 
 ---
 

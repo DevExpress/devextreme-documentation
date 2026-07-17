@@ -95,17 +95,13 @@ Use the third-party <a href="https://github.com/oliversturm/devextreme-query-mon
         insertUrl: serviceUrl
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TagBox ...
-                    dataSource={dataSource}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TagBox ...
+                dataSource={dataSource}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

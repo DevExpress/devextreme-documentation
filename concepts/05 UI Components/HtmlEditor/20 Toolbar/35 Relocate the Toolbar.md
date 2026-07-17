@@ -78,20 +78,16 @@ In the following code, the toolbar is placed in a separate `<div>` under the HTM
 
     import { HtmlEditor, Toolbar } from 'devextreme-react/html-editor';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <div>
-                    <HtmlEditor>
-                        <Toolbar ...
-                            container="#htmlEditorFooter"/>
-                    </HtmlEditor>
-                    <div id="htmlEditorFooter"></div>
-                </div>
-            );
-        }
+    export default function App() {
+        return (
+            <div>
+                <HtmlEditor>
+                    <Toolbar ...
+                        container="#htmlEditorFooter"/>
+                </HtmlEditor>
+                <div id="htmlEditorFooter"></div>
+            </div>
+        );
     }
-
-    export default App;
 
 ---

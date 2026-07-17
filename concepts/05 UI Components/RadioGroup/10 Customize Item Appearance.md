@@ -79,15 +79,11 @@ For a minor customization of RadioGroup items, you can define [specific fields](
         { text: 'Urgent', visible: false }
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <RadioGroup dataSource={dataSource}/>
-            );
-        }
+    export default function App() {
+        return (
+            <RadioGroup dataSource={dataSource}/>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -187,18 +183,14 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
         );
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <RadioGroup
-                    dataSource={dataSource}
-                    itemRender={renderRadioGroupItem}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <RadioGroup
+                dataSource={dataSource}
+                itemRender={renderRadioGroupItem}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

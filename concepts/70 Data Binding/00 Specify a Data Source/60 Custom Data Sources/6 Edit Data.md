@@ -208,13 +208,10 @@ To implement data editing in the **CustomStore**, add the [insert](/api-referenc
         }
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                {/* ... */}
-            );
-        }
+    export default function App() {
+        return (
+            {/* ... */}
+        );
     }
-    export default App;
 
 ---

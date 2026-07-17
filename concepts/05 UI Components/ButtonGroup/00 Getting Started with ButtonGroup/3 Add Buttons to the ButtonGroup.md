@@ -113,18 +113,14 @@ Assign the array to the [items](/api-reference/10%20UI%20Components/dxButtonGrou
         style: "strike"
     }];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <ButtonGroup
-                    items={fontStyles}
-                    keyExpr="style"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <ButtonGroup
+                items={fontStyles}
+                keyExpr="style"
+            />
+        );
     }
-
-    export default App;
 
 ##### ASP.NET MVC Controls
 

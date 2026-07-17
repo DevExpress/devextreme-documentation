@@ -130,27 +130,23 @@ The unoccupied area can be distributed among the items according to **ratio**s. 
 
     import Box, { Item } from 'devextreme-react/box';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Box
-                    height={100}
-                    width={600}>
-                    <Item baseSize={200} ratio={6}>
-                        <div className="box-item orange"> Item 1 </div>
-                    </Item>
-                    <Item baseSize={100} ratio={2}>
-                        <div className="box-item yellow"> Item 2 </div>
-                    </Item>
-                    <Item baseSize={150} ratio={1}>
-                        <div className="box-item green"> Item 3 </div>
-                    </Item>
-                </Box>
-            );
-        }
+    export default function App() {
+        return (
+            <Box
+                height={100}
+                width={600}>
+                <Item baseSize={200} ratio={6}>
+                    <div className="box-item orange"> Item 1 </div>
+                </Item>
+                <Item baseSize={100} ratio={2}>
+                    <div className="box-item yellow"> Item 2 </div>
+                </Item>
+                <Item baseSize={150} ratio={1}>
+                    <div className="box-item green"> Item 3 </div>
+                </Item>
+            </Box>
+        );
     }
-
-    export default App;
 
     <!--CSS-->
     .box-item {
@@ -293,27 +289,23 @@ If **ratio** applies when there is an available space, **shrink** applies when s
 
     import Box, { Item } from 'devextreme-react/box';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Box
-                    height={100}
-                    width={300}>
-                    <Item baseSize={200} shrink={1}>
-                        <div className="box-item orange"> Item 1 </div>
-                    </Item>
-                    <Item baseSize={200} shrink={1}>
-                        <div className="box-item yellow"> Item 2 </div>
-                    </Item>
-                    <Item baseSize={200} shrink={1}>
-                        <div className="box-item green"> Item 3 </div>
-                    </Item>
-                </Box>
-            );
-        }
+    export default function App() {
+        return (
+            <Box
+                height={100}
+                width={300}>
+                <Item baseSize={200} shrink={1}>
+                    <div className="box-item orange"> Item 1 </div>
+                </Item>
+                <Item baseSize={200} shrink={1}>
+                    <div className="box-item yellow"> Item 2 </div>
+                </Item>
+                <Item baseSize={200} shrink={1}>
+                    <div className="box-item green"> Item 3 </div>
+                </Item>
+            </Box>
+        );
     }
-
-    export default App;
 
     <!--CSS-->
     .box-item {
@@ -452,27 +444,23 @@ The result is different if *Item 2*'s **shrink** value is more than the other it
 
     import Box, { Item } from 'devextreme-react/box';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Box
-                    height={100}
-                    width={300}>
-                    <Item baseSize={200} shrink={1}>
-                        <div className="box-item orange"> Item 1 </div>
-                    </Item>
-                    <Item baseSize={200} shrink={2}>
-                        <div className="box-item yellow"> Item 2 </div>
-                    </Item>
-                    <Item baseSize={200} shrink={1}>
-                        <div className="box-item green"> Item 3 </div>
-                    </Item>
-                </Box>
-            );
-        }
+    export default function App() {
+        return (
+            <Box
+                height={100}
+                width={300}>
+                <Item baseSize={200} shrink={1}>
+                    <div className="box-item orange"> Item 1 </div>
+                </Item>
+                <Item baseSize={200} shrink={2}>
+                    <div className="box-item yellow"> Item 2 </div>
+                </Item>
+                <Item baseSize={200} shrink={1}>
+                    <div className="box-item green"> Item 3 </div>
+                </Item>
+            </Box>
+        );
     }
-
-    export default App;
 
     <!--CSS-->
     .box-item {

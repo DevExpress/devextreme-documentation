@@ -136,15 +136,12 @@ Wrap the **XmlaStore** into a **PivotGridDataSource**. This component enables yo
         store: adventureWorksStore
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PivotGrid
-                    dataSource={adventureWorksDataSource}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <PivotGrid
+                dataSource={adventureWorksDataSource}
+            />
+        );
     }
-    export default App;
 
 ---

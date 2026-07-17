@@ -98,24 +98,20 @@ When a sankey node or link is hovered over or pressed, it applies the appearance
         HoverStyle
     } from 'devextreme-react/sankey';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Sankey ... >
-                    <Node ... >
-                        <HoverStyle opacity={0.5} />
-                    </Node>
-                    <Link>
-                        <HoverStyle>
-                            <Border visible={true} />
-                        </HoverStyle>
-                    </Link>
-                </Sankey>
-            );
-        }
+    export default function App() {
+        return (
+            <Sankey ... >
+                <Node ... >
+                    <HoverStyle opacity={0.5} />
+                </Node>
+                <Link>
+                    <HoverStyle>
+                        <Border visible={true} />
+                    </HoverStyle>
+                </Link>
+            </Sankey>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -175,14 +171,10 @@ Set [hoverEnabled](/api-reference/10%20UI%20Components/dxSankey/1%20Configuratio
     import React from 'react';
     import Sankey from 'devextreme-react/sankey';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Sankey hoverEnabled={false} />
-            );
-        }
+    export default function App() {
+        return (
+            <Sankey hoverEnabled={false} />
+        );
     }
-
-    export default App;
 
 ---

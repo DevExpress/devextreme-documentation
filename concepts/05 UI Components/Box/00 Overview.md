@@ -128,27 +128,23 @@ The following code adds a simple Box containing three items to your page. These 
 
     import Box, { Item } from 'devextreme-react/box';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Box
-                    direction="row"
-                    height={100}>
-                    <Item ratio={1}>
-                        <div className="box-item orange"> Item 1 </div>
-                    </Item>
-                    <Item ratio={1}>
-                        <div className="box-item yellow"> Item 2 </div>
-                    </Item>
-                    <Item ratio={1}>
-                        <div className="box-item green"> Item 3 </div>
-                    </Item>
-                </Box>
-            );
-        }
+    export default function App() {
+        return (
+            <Box
+                direction="row"
+                height={100}>
+                <Item ratio={1}>
+                    <div className="box-item orange"> Item 1 </div>
+                </Item>
+                <Item ratio={1}>
+                    <div className="box-item yellow"> Item 2 </div>
+                </Item>
+                <Item ratio={1}>
+                    <div className="box-item green"> Item 3 </div>
+                </Item>
+            </Box>
+        );
     }
-
-    export default App;
 
     <!--CSS-->
     .box-item {

@@ -156,19 +156,15 @@ As you can see, all items in a hierarchical data source have the **id** and **te
         ]
     }];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeView
-                    keyExpr="key"
-                    displayExpr="name"
-                    itemsExpr="children"                   
-                    dataSource={hierarchicalData} />
-            );
-        }
+    export default function App() {
+        return (
+            <TreeView
+                keyExpr="key"
+                displayExpr="name"
+                itemsExpr="children"                   
+                dataSource={hierarchicalData} />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -297,18 +293,14 @@ Frequently, the **id** of an item is also its **text**. In this case, set both t
         ]
     }];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeView
-                    keyExpr="name"
-                    displayExpr="name"
-                    dataSource={hierarchicalData} />
-            );
-        }
+    export default function App() {
+        return (
+            <TreeView
+                keyExpr="name"
+                displayExpr="name"
+                dataSource={hierarchicalData} />
+        );
     }
-
-    export default App;
 
 ---
 

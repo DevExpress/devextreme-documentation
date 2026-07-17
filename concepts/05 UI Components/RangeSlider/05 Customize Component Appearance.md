@@ -84,20 +84,16 @@ The RangeSlider can display labels for the [min](/api-reference/10%20UI%20Compon
         return value + " units";
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <RangeSlider ... >
-                    <Label
-                        visible={true}
-                        format={format}
-                        position="bottom" /> {/* or "top" */}
-                </RangeSlider>
-            );
-        }
+    export default function App() {
+        return (
+            <RangeSlider ... >
+                <Label
+                    visible={true}
+                    format={format}
+                    position="bottom" /> {/* or "top" */}
+            </RangeSlider>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -190,21 +186,17 @@ The RangeSlider can also display a tooltip for the slider handles. To configure 
         return value + " units";
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <RangeSlider ... >
-                    <Tooltip
-                        enabled={true}
-                        position="bottom"
-                        format={format}
-                        showMode="always" /> {/* or "onHover" */}
-                </RangeSlider>
-            );
-        }
+    export default function App() {
+        return (
+            <RangeSlider ... >
+                <Tooltip
+                    enabled={true}
+                    position="bottom"
+                    format={format}
+                    showMode="always" /> {/* or "onHover" */}
+            </RangeSlider>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -267,15 +259,11 @@ To specify whether or not the selected range should be highlighted, use the **sh
 
     import { RangeSlider } from 'devextreme-react/range-slider';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <RangeSlider showRange={false}/>
-            );
-        }
+    export default function App() {
+        return (
+            <RangeSlider showRange={false}/>
+        );
     }
-
-    export default App;
 
 ---
 

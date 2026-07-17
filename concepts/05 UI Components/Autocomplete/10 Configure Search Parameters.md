@@ -89,19 +89,15 @@ The AutoComplete can provide suggestions in two different modes: *'contains'* (b
         // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Autocomplete
-                    dataSource={autocompleteData}
-                    valueExpr="country"
-                    searchMode="startswith"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Autocomplete
+                dataSource={autocompleteData}
+                valueExpr="country"
+                searchMode="startswith"
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -163,15 +159,11 @@ By default, the AutoComplete UI component starts providing suggestions once an e
 
     import { Autocomplete } from 'devextreme-react/autocomplete';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Autocomplete minSearchLength={3}/>
-            );
-        }
+    export default function App() {
+        return (
+            <Autocomplete minSearchLength={3}/>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -233,15 +225,11 @@ You can also specify the time interval the UI component should wait before provi
 
     import { Autocomplete } from 'devextreme-react/autocomplete';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Autocomplete searchTimeout={500}/>
-            );
-        }
+    export default function App() {
+        return (
+            <Autocomplete searchTimeout={500}/>
+        );
     }
-
-    export default App;
 
 ---
 

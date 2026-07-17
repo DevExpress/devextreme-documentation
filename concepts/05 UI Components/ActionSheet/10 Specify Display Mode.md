@@ -63,18 +63,14 @@ By default, the ActionSheet comes up from the bottom of the page. If you set the
 
     import { ActionSheet } from 'devextreme-react/action-sheet';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <ActionSheet ...
-                    usePopover={true}
-                    target="#actionSheetTarget"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <ActionSheet ...
+                usePopover={true}
+                target="#actionSheetTarget"
+            />
+        );
     }
-
-    export default App;
 
 ---
 

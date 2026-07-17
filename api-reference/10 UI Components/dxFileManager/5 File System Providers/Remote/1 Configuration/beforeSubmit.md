@@ -131,17 +131,14 @@ Custom data (key-value pairs) that are sent to the server with the request.
         }  
     });
     
-    class App extends React.Component {
-        render() {
-            return (
-                <FileManager 
-                    fileSystemProvider={remoteFileProvider}>
-                    {/* ... */}
-                </FileManager>
-            );
-        }
+    export default function App() {
+        return (
+            <FileManager 
+                fileSystemProvider={remoteFileProvider}>
+                {/* ... */}
+            </FileManager>
+        );
     }
-    export default App;
 
 
 ---

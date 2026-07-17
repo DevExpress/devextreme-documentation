@@ -101,18 +101,15 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
         CommonAnnotationSettings
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <CommonAnnotationSettings
-                        tooltipEnabled={false}
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <CommonAnnotationSettings
+                    tooltipEnabled={false}
+                />
+            </Chart>
+        );
     }
-    export default App;
 
 ---
 

@@ -108,18 +108,15 @@ Assign a number to this property if the visual range is set on a numeric axis. I
         MinVisualRangeLength
     } from 'devextreme-react/polar-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                &lt;PolarChart ... &gt;
-                    &lt;ValueAxis ... &gt;
-                        &lt;MinVisualRangeLength weeks={2} /&gt;
-                    &lt;/ValueAxis&gt;
-                &lt;/PolarChart&gt;
-            );
-        }
+    export default function App() {
+        return (
+            &lt;PolarChart ... &gt;
+                &lt;ValueAxis ... &gt;
+                    &lt;MinVisualRangeLength weeks={2} /&gt;
+                &lt;/ValueAxis&gt;
+            &lt;/PolarChart&gt;
+        );
     }
-    export default App;
 
 ---
 

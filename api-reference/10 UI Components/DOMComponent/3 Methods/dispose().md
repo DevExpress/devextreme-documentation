@@ -52,23 +52,15 @@ Use <a href="https://react.dev/learn/conditional-rendering" target="_blank">cond
 
     <!-- tab: App.js -->
     import React from 'react';
-
     import {WidgetName} from 'devextreme-react/{widget-name}';
-
-    function Dx{WidgetName}(props) {
-        if (!props.shouldRender) {
-            return null;
-        }
-
-        return (
-            <{WidgetName} ... >    
-            </{WidgetName}>
-        );
-    }
 
     export default function App() {
         return (
-            <Dx{WidgetName} shouldRender="condition" />
+            <>
+                {condition && <{WidgetName}
+                    /* ... */
+                />}
+            </>
         );
     }
 

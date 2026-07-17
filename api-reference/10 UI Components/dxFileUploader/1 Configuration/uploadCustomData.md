@@ -95,8 +95,7 @@ Specifies custom data for the upload request.
 
     export default function App() {
         return (
-            <FileUploader uploadCustomData={uploaderCustomData} >
-            </FileUploader>
+            <FileUploader uploadCustomData={uploaderCustomData} />
         );
     }
 

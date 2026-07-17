@@ -100,18 +100,15 @@ The filter expression can contain the following operations: *"="*, *"<>"*, *"<"*
 
     const filterValue = ['ID', 'anyof', [500, 700]];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <{WidgetName} ...
-                    filterSyncEnabled={true}
-                    defaultFilterValue={filterValue}>
-                    <HeaderFilter visible={true} />
-                </{WidgetName}>
-            );
-        }
+    export default function App() {
+        return (
+            <{WidgetName} ...
+                filterSyncEnabled={true}
+                defaultFilterValue={filterValue}>
+                <HeaderFilter visible={true} />
+            </{WidgetName}>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 
@@ -236,23 +233,20 @@ If a column's [groupInterval](/api-reference/40%20Common%20Types/15%20grids/Colu
 
     const filterValue = ['ID', 'anyof', [500, 700]];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <{WidgetName} ...
-                    {/* Filter intervals are 500-600 and 700-800 */}
-                    defaultFilterValue={filterValue}>
-                    <HeaderFilter visible={true} />
-                    <Column
-                        dataField="ID"
-                        dataType="number">
-                        <ColumnHeaderFilter groupInterval={100} />
-                    </Column>
-                </{WidgetName}>
-            );
-        }
+    export default function App() {
+        return (
+            <{WidgetName} ...
+                {/* Filter intervals are 500-600 and 700-800 */}
+                defaultFilterValue={filterValue}>
+                <HeaderFilter visible={true} />
+                <Column
+                    dataField="ID"
+                    dataType="number">
+                    <ColumnHeaderFilter groupInterval={100} />
+                </Column>
+            </{WidgetName}>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

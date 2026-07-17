@@ -108,18 +108,15 @@ If the visual range is set on a numeric axis, assign a number to this property. 
         MinVisualRangeLength
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                &lt;Chart ... &gt;
-                    &lt;ValueAxis ... &gt;
-                        &lt;MinVisualRangeLength weeks={2} /&gt;
-                    &lt;/ValueAxis&gt;
-                &lt;/Chart&gt;
-            );
-        }
+    export default function App() {
+        return (
+            &lt;Chart ... &gt;
+                &lt;ValueAxis ... &gt;
+                    &lt;MinVisualRangeLength weeks={2} /&gt;
+                &lt;/ValueAxis&gt;
+            &lt;/Chart&gt;
+        );
     }
-    export default App;
 
 ---
 

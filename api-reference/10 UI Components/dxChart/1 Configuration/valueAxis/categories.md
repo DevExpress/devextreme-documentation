@@ -185,20 +185,16 @@ Values of the `string` type on discrete axes maintain the order of objects in th
         'South America'
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <{WidgetName} ... 
-                    dataSource={dataSource}>
-                    <ValueAxis
-                        categories={continentNames}
-                        valueField="continent"
-                    />
-                </{WidgetName}>
-            );
-        }
-    }
-
-    export default App;     
+    export default function App() {
+        return (
+            <{WidgetName} ... 
+                dataSource={dataSource}>
+                <ValueAxis
+                    categories={continentNames}
+                    valueField="continent"
+                />
+            </{WidgetName}>
+        );
+    }     
 
 ---

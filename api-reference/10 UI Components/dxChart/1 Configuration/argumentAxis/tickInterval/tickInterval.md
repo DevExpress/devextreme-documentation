@@ -83,19 +83,15 @@ If the axis displays numbers, assign a number to this property. If the axis disp
         TickInterval
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ArgumentAxis>
-                        <TickInterval days={5} />
-                    </ArgumentAxis>
-                </Chart>
-            );
-        }
-    }
-
-    export default App;     
+    export default function App() {
+        return (
+            <Chart ... >
+                <ArgumentAxis>
+                    <TickInterval days={5} />
+                </ArgumentAxis>
+            </Chart>
+        );
+    }     
 
 ---
 

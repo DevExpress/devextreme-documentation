@@ -125,25 +125,22 @@ Declared in [commonSeriesSettings](/api-reference/10%20UI%20Components/dxChart/1
         CommonSeriesSettings
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series ... >
-                        <Label ... >
-                            // Settings for all point labels of an individual series
-                        </Label>
-                    </Series>
-                    <CommonSeriesSettings ... >
-                        <Label ... >
-                            // Settings for all point labels in the Chart
-                        </Label>
-                    </CommonSeriesSettings>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series ... >
+                    <Label ... >
+                        // Settings for all point labels of an individual series
+                    </Label>
+                </Series>
+                <CommonSeriesSettings ... >
+                    <Label ... >
+                        // Settings for all point labels in the Chart
+                    </Label>
+                </CommonSeriesSettings>
+            </Chart>
+        );
     }
-    export default App;
 
 ---
 

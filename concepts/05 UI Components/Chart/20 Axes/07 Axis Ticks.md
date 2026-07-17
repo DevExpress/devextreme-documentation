@@ -79,20 +79,16 @@ To configure major or minor ticks, use the [tick](/api-reference/10%20UI%20Compo
         MinorTick
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ArgumentAxis> {/* or ValueAxis, or CommonAxisSettings */}
-                        <Tick visible={true} />
-                        <MinorTick visible={true} />
-                    </ArgumentAxis>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ArgumentAxis> {/* or ValueAxis, or CommonAxisSettings */}
+                    <Tick visible={true} />
+                    <MinorTick visible={true} />
+                </ArgumentAxis>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

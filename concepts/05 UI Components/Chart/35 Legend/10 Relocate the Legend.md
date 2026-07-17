@@ -72,21 +72,17 @@ The legend can be moved inside the chart using the [position](/api-reference/10%
         Legend
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Legend
-                        position="inside"
-                        horizontalAlignment="center"
-                        verticalAlignment="top"
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Legend
+                    position="inside"
+                    horizontalAlignment="center"
+                    verticalAlignment="top"
+                />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

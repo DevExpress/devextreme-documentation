@@ -106,25 +106,21 @@ Error bars can be generated either from concrete or calculated values. To genera
         // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart
-                    dataSource={chartDataSource}
-                    ...
-                >
-                    <Series ... >
-                        <ValueErrorBar
-                            highValueField="highError"
-                            lowValueField="lowError"
-                        />
-                    </Series>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart
+                dataSource={chartDataSource}
+                ...
+            >
+                <Series ... >
+                    <ValueErrorBar
+                        highValueField="highError"
+                        lowValueField="lowError"
+                    />
+                </Series>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -209,22 +205,18 @@ Alternatively, error bar values can be calculated according to an algorithm. In 
         ValueErrorBar
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series ... >
-                        <ValueErrorBar
-                            value={5}
-                            type="percent"
-                        />
-                    </Series>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series ... >
+                    <ValueErrorBar
+                        value={5}
+                        type="percent"
+                    />
+                </Series>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -324,27 +316,23 @@ If error bars should have uniform settings, you can specify them using one of th
         ValueErrorBar
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series ... >
-                        <ValueErrorBar ... >
-                            {/* high priority */}
-                        </ValueErrorBar>
-                    </Series>
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series ... >
+                    <ValueErrorBar ... >
+                        {/* high priority */}
+                    </ValueErrorBar>
+                </Series>
 
-                    <CommonSeriesSettings ... >
-                        <ValueErrorBar ... >
-                            {/* low priority */}
-                        </ValueErrorBar>
-                    </CommonSeriesSettings>
-                </Chart>
-            );
-        }
+                <CommonSeriesSettings ... >
+                    <ValueErrorBar ... >
+                        {/* low priority */}
+                    </ValueErrorBar>
+                </CommonSeriesSettings>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

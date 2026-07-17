@@ -131,28 +131,24 @@ To specify one or another series type, assign its name to the **series[]**.[type
     const fullStackedAreaSettings = { ... };
     const fullStackedSplineAreaSettings = { ... };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series type="area" />
-                    <Series ... />
-                    ...
-                    <CommonSeriesSettings
-                        area={areaSettings}
-                        splinearea={splineAreaSettings}
-                        steparea={stepAreaSettings}
-                        stackedarea={stackedAreaSettings}
-                        stackedsplinearea={stackedSplineAreaSettings}
-                        fullstackedarea={fullStackedAreaSettings}
-                        fullstackedsplinearea={fullStackedSplineAreaSettings}
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series type="area" />
+                <Series ... />
+                ...
+                <CommonSeriesSettings
+                    area={areaSettings}
+                    splinearea={splineAreaSettings}
+                    steparea={stepAreaSettings}
+                    stackedarea={stackedAreaSettings}
+                    stackedsplinearea={stackedSplineAreaSettings}
+                    fullstackedarea={fullStackedAreaSettings}
+                    fullstackedsplinearea={fullStackedSplineAreaSettings}
+                />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

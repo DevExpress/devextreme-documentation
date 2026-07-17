@@ -313,13 +313,11 @@ Apart from the API methods, you can access a series in the event handlers. For e
     import React from 'react';
     import Chart from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart onSeriesClick={onSeriesClick}>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart onSeriesClick={onSeriesClick}>
+            </Chart>
+        );
     }
 
     function onSeriesClick (e) {

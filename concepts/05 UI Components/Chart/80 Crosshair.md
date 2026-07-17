@@ -76,19 +76,15 @@ To enable the crosshair, set the **crosshair**.[enabled](/api-reference/10%20UI%
         Label
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Crosshair enabled={true}>
-                        <Label visible={true}/>
-                    </Crosshair>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Crosshair enabled={true}>
+                    <Label visible={true}/>
+                </Crosshair>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

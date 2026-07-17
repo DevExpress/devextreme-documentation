@@ -71,17 +71,13 @@ To zoom a standalone Chart initially, specify the axis' [visualRange](/api-refer
 
     const chart_visualRange = [0, 10];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ArgumentAxis visualRange={chart_visualRange} />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ArgumentAxis visualRange={chart_visualRange} />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

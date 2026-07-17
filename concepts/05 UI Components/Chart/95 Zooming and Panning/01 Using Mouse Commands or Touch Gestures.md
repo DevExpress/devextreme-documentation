@@ -74,20 +74,16 @@ Zooming and panning are configured in the [zoomAndPan](/api-reference/10%20UI%20
         ZoomAndPan
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ZoomAndPan
-                        argumentAxis="both"
-                        valueAxis="both"
-                    /> {/* or "zoom" | "pan" | "none" */}
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ZoomAndPan
+                    argumentAxis="both"
+                    valueAxis="both"
+                /> {/* or "zoom" | "pan" | "none" */}
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -173,22 +169,18 @@ Users can zoom the chart using the drag gesture (area selection) if you enable t
         ZoomAndPan
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ZoomAndPan
-                        dragToZoom={true}
-                        panKey="ctrl"
-                        argumentAxis="both"
-                        valueAxis="both"
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ZoomAndPan
+                    dragToZoom={true}
+                    panKey="ctrl"
+                    argumentAxis="both"
+                    valueAxis="both"
+                />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -267,21 +259,17 @@ If you need to disable the mouse wheel or touch support, set the [allowMouseWhee
         ZoomAndPan
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ZoomAndPan
-                        allowTouchGestures={false}
-                        argumentAxis="both"
-                        valueAxis="both"
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ZoomAndPan
+                    allowTouchGestures={false}
+                    argumentAxis="both"
+                    valueAxis="both"
+                />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

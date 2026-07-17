@@ -87,23 +87,20 @@ Assign a non-negative integer to the **columns**.[groupIndex](/api-reference/_hi
         Column,
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Column
-                        dataField="Country"
-                        groupIndex={1}
-                    />
-                    <Column
-                        dataField="Continent"
-                        groupIndex={0}
-                    />
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Column
+                    dataField="Country"
+                    groupIndex={1}
+                />
+                <Column
+                    dataField="Continent"
+                    groupIndex={0}
+                />
+            </DataGrid>
+        );
     }
-    export default App;
 
 ---
 

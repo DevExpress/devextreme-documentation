@@ -83,17 +83,14 @@ To allow this, set the **columnFixing**.[enabled](/api-reference/10%20UI%20Compo
         ColumnFixing
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <ColumnFixing enabled={true} />
-                    <Column allowFixing={false} ... />
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <ColumnFixing enabled={true} />
+                <Column allowFixing={false} ... />
+            </DataGrid>
+        );
     }
-    export default App;
     
 ---
 
@@ -170,16 +167,13 @@ If a column should be fixed initially, assign **true** to its [fixed](/api-refer
         Column
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Column fixed={true} fixedPosition="sticky" ... />
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Column fixed={true} fixedPosition="sticky" ... />
+            </DataGrid>
+        );
     }
-    export default App;
     
 ---
 

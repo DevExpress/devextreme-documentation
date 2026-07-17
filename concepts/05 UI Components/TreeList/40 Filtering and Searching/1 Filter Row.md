@@ -90,15 +90,13 @@ To make the filter row visible, assign **true** to the [filterRow](/api-referenc
         FilterRow
     } from 'devextreme-react/tree-list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList ... >
-                    <FilterRow visible={true} />
-                    <Column allowFiltering={false} ... />
-                </TreeList>
-            );
-        }
+    export default function App() {
+        return (
+            <TreeList ... >
+                <FilterRow visible={true} />
+                <Column allowFiltering={false} ... />
+            </TreeList>
+        );
     }
     
 ---
@@ -179,17 +177,15 @@ A user-specified filter is automatically applied with a delay by default. Altern
         FilterRow
     } from 'devextreme-react/tree-list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList ... >
-                    <FilterRow 
-                        visible={true} 
-                        applyFilter="onClick" 
-                    />
-                </TreeList>
-            );
-        }
+    export default function App() {
+        return (
+            <TreeList ... >
+                <FilterRow 
+                    visible={true} 
+                    applyFilter="onClick" 
+                />
+            </TreeList>
+        );
     }
     
 ---

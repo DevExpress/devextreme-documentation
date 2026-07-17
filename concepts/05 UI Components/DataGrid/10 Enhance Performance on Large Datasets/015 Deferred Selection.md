@@ -113,20 +113,17 @@ Use deferred mode to increase the DataGrid's performance when [selecting multipl
         key: 'Product_ID'
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid dataSource={store}>
-                    <Selection
-                        mode="multiple"
-                        allowSelectAll={true}
-                        deferred={true}
-                    />
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid dataSource={store}>
+                <Selection
+                    mode="multiple"
+                    allowSelectAll={true}
+                    deferred={true}
+                />
+            </DataGrid>
+        );
     }
-    export default App;
 
 ---
 

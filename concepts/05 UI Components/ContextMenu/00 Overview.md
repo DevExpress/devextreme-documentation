@@ -169,21 +169,17 @@ The following code adds the ContextMenu UI component to your page and binds it t
         { text: 'Comment' }
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <div>
-                    <img id="someImage" src="http://here/goes/my.jpg" />
-                    <ContextMenu
-                        items={contextMenuItems}
-                        target="#someImage"
-                    />
-                </div>
-            );
-        }
+    export default function App() {
+        return (
+            <div>
+                <img id="someImage" src="http://here/goes/my.jpg" />
+                <ContextMenu
+                    items={contextMenuItems}
+                    target="#someImage"
+                />
+            </div>
+        );
     }
-
-    export default App;
 
 ---
 

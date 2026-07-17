@@ -82,15 +82,13 @@ Assign **true** to the [headerFilter](/api-reference/10%20UI%20Components/GridBa
         HeaderFilter
     } from 'devextreme-react/tree-list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList ... >
-                    <HeaderFilter visible={true} />
-                    <Column allowHeaderFiltering={false} ... />
-                </TreeList>
-            );
-        }
+    export default function App() {
+        return (
+            <TreeList ... >
+                <HeaderFilter visible={true} />
+                <Column allowHeaderFiltering={false} ... />
+            </TreeList>
+        );
     }
     
 ---
@@ -334,20 +332,18 @@ You can use the **headerFilter**.[allowSearch](/api-reference/10%20UI%20Componen
         ColumnHeaderFilter
     } from 'devextreme-react/tree-list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList ... >
-                    <HeaderFilter 
-                        allowSearch={true} 
-                        visible={true} 
-                    />
-                    <Column>
-                        <ColumnHeaderFilter allowSearch={false} />
-                    </Column>
-                </TreeList>
-            );
-        }
+    export default function App() {
+        return (
+            <TreeList ... >
+                <HeaderFilter 
+                    allowSearch={true} 
+                    visible={true} 
+                />
+                <Column>
+                    <ColumnHeaderFilter allowSearch={false} />
+                </Column>
+            </TreeList>
+        );
     }
     
 ---

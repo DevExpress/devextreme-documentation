@@ -1,7 +1,13 @@
 let fs = require('fs');
 let path = require('path');
 
-const mainRegex = /class App extends React\.Component \{\n {8}render\(\) \{\n {12}return \(\n((?:(?!return)[\s\S])+?) {12}\);\n {8}\}\n {4}\}/gi
+const indentLevel = 0;
+
+function tabCount(count) {
+    return indentLevel * 4 + count * 4;
+}
+
+const mainRegex = new RegExp(`class App extends React\\.Component \\{\\n {${tabCount(2)}}render\\(\\) \\{\\n {${tabCount(3)}}return \\(\\n((?:(?!return)[\\s\\S])+?) {${tabCount(3)}}\\);\\n {${tabCount(2)}}\\}\\n {${tabCount(1)}}\\}`, 'gi')
 const exportDefaultRegex = new RegExp(`(?<=${mainRegex.source})\\s+?export default App;`, 'gi')
 
 const specifiedPath = process.argv[2];

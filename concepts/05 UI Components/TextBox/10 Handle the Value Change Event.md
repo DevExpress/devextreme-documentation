@@ -55,17 +55,13 @@ When a user types a value into the TextBox, this value applies when the <a href=
 
     import { TextBox } from 'devextreme-react/text-box';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TextBox
-                    valueChangeEvent="keyup"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TextBox
+                valueChangeEvent="keyup"
+            />
+        );
     }
-
-    export default App;
 
 ---
 

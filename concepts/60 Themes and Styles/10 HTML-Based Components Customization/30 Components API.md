@@ -54,17 +54,13 @@ Each UI component has an API described in the UI component's [API reference sect
     import React from 'react';
     import { List } from 'devextreme-react/list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <List
-                    width={600}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <List
+                width={600}
+            />
+        );
     }
-
-    export default App;
 
 ##### ASP.NET MVC Controls
 

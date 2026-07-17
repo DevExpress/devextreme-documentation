@@ -146,16 +146,13 @@ To process data on the client, load all data from the server in the [load](/api-
         }
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                <List
-                    dataSource={customDataSource}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <List
+                dataSource={customDataSource}
+            />
+        );
     }
-    export default App;
 
 ---
 

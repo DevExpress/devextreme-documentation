@@ -68,20 +68,16 @@ Items can be arranged in a row or in a column depending on the value of the [dir
 
     import Box from 'devextreme-react/box';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Box
-                    height={200}
-                    width={200}
-                    direction="row"> {/* or "col" */}
-                    {/* ... */}
-                </Box>
-            );
-        }
+    export default function App() {
+        return (
+            <Box
+                height={200}
+                width={200}
+                direction="row"> {/* or "col" */}
+                {/* ... */}
+            </Box>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -173,21 +169,17 @@ If the Box items do not occupy the entire Box, you can align them along and cros
 
     import Box from 'devextreme-react/box';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Box
-                    height={200}
-                    width={200}
-                    align="center"
-                    crossAlign="stretch">
-                    {/* ... */}
-                </Box>
-            );
-        }
+    export default function App() {
+        return (
+            <Box
+                height={200}
+                width={200}
+                align="center"
+                crossAlign="stretch">
+                {/* ... */}
+            </Box>
+        );
     }
-
-    export default App;
 
 ---
 

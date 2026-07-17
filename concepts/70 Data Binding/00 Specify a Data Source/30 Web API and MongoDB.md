@@ -147,17 +147,14 @@ To access the server from the client, configure the [CustomStore](/api-reference
         deleteUrl: serviceUrl + '/DeleteAction'
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid
-                    dataSource={remoteDataSource}>
-                    <RemoteOperations groupPaging={true} />
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid
+                dataSource={remoteDataSource}>
+                <RemoteOperations groupPaging={true} />
+            </DataGrid>
+        );
     }
-    export default App;
 
 ---
 

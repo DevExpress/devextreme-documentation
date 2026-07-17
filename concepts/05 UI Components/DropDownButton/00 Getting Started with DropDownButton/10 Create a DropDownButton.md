@@ -94,15 +94,12 @@ You can use the following code to create a DropDownButton:
 
     import DropDownButton from 'devextreme-react/drop-down-button';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DropDownButton
-                    // Configuration goes here
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <DropDownButton
+                // Configuration goes here
+            />
+        );
     }
-    export default App;
 
 ---

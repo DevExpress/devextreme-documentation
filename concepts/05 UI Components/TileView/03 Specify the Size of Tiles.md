@@ -97,19 +97,15 @@ For example, the following code makes the *"Massachusetts"* tile twice bigger th
         // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TileView
-                    dataSource={tileViewData}
-                    baseItemHeight={130}
-                    baseItemWidth={180}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TileView
+                dataSource={tileViewData}
+                baseItemHeight={130}
+                baseItemWidth={180}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

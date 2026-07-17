@@ -69,16 +69,13 @@ The TreeList UI component supports single and multiple row selection. Use the **
         Selection
     } from 'devextreme-react/tree-list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList ... >
-                    <Selection mode="single" /> {/* "multiple" | "none" */}
-                </TreeList>
-            );
-        }
+    export default function App() {
+        return (
+            <TreeList ... >
+                <Selection mode="single" /> {/* "multiple" | "none" */}
+            </TreeList>
+        );
     }
-    export default App;
     
 ---
 
@@ -162,19 +159,16 @@ You can disable the latter feature by setting the **selection**.[allowSelectAll]
         Selection
     } from 'devextreme-react/tree-list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList ... >
-                    <Selection
-                        mode="single"
-                        allowSelectAll={false}
-                    />
-                </TreeList>
-            );
-        }
+    export default function App() {
+        return (
+            <TreeList ... >
+                <Selection
+                    mode="single"
+                    allowSelectAll={false}
+                />
+            </TreeList>
+        );
     }
-    export default App;
     
 ---
 
@@ -254,19 +248,16 @@ Selection is non-recursive by default, that is, only the clicked row is selected
         Selection
     } from 'devextreme-react/tree-list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList ... >
-                    <Selection
-                        mode="multiple"
-                        recursive={true}
-                    />
-                </TreeList>
-            );
-        }
+    export default function App() {
+        return (
+            <TreeList ... >
+                <Selection
+                    mode="multiple"
+                    recursive={true}
+                />
+            </TreeList>
+        );
     }
-    export default App;
     
 ---
 

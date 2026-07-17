@@ -77,20 +77,17 @@ Clicking the *"Delete"* button invokes the confirmation dialog that allows a use
 
     import { TreeList, Editing } from 'devextreme-react/tree-list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList ... >
-                    <Editing
-                        mode="row"
-                        confirmDelete={false}
-                        allowDeleting={true} 
-                    />
-                </TreeList>
-            );
-        }
+    export default function App() {
+        return (
+            <TreeList ... >
+                <Editing
+                    mode="row"
+                    confirmDelete={false}
+                    allowDeleting={true} 
+                />
+            </TreeList>
+        );
     }
-    export default App;
     
 ---
 

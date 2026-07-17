@@ -75,16 +75,13 @@ Specify the **columns**.[caption](/api-reference/_hidden/GridBaseColumn/caption.
         Column
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Column dataField="CompanyName" caption="Company" />
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Column dataField="CompanyName" caption="Company" />
+            </DataGrid>
+        );
     }
-    export default App;
     
 ---
 
@@ -205,24 +202,21 @@ If you need a more specific customization, define a custom template in the **col
         return <i style={{ color: 'black' }}>Mailing Address</i>;
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Column
-                        dataField="Title"
-                        caption="Position"
-                        headerCellRender={renderTitleHeader}
-                    />
-                    <Column
-                        dataField="Address"
-                        headerCellRender={renderAddressHeader}
-                    />
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Column
+                    dataField="Title"
+                    caption="Position"
+                    headerCellRender={renderTitleHeader}
+                />
+                <Column
+                    dataField="Address"
+                    headerCellRender={renderAddressHeader}
+                />
+            </DataGrid>
+        );
     }
-    export default App;
     
 ---
 
@@ -304,16 +298,13 @@ To hide column headers, assign **false** to the [showColumnHeaders](/api-referen
 
     import DataGrid from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ...
-                    showColumnHeaders={false}>
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ...
+                showColumnHeaders={false}>
+            </DataGrid>
+        );
     }
-    export default App;
     
 ---
 

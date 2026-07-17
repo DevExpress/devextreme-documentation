@@ -91,19 +91,15 @@ For a minor customization of ContextMenu items, you can define [specific fields]
         { text: 'Download', icon: 'download' }
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <ContextMenu
-                    items={contextMenuItems}
-                    target="#someElement"
-                    visible={true}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <ContextMenu
+                items={contextMenuItems}
+                target="#someElement"
+                visible={true}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

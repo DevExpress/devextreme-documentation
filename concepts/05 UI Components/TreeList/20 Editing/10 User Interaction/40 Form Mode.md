@@ -167,37 +167,34 @@ In the following code, the items with the specified **dataField** are simple ite
     
     import 'devextreme-react/text-area';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList ... >
-                    <Editing
-                        allowUpdating={true}
-                        mode="form">
-                        <Form>
-                            <GroupItem caption="Personal Data">
-                                <SimpleItem dataField="Prefix" />
-                                <SimpleItem dataField="Full_Name" />
-                                <SimpleItem dataField="Position" />
-                                <SimpleItem dataField="Duties" editorType="dxTextArea" />
-                            </GroupItem>
-                            <GroupItem caption="Contacts">
-                                <SimpleItem dataField="Email" />
-                                <SimpleItem dataField="Skype" />
-                            </GroupItem>
-                        </Form>
-                    </Editing>
-                    <Column dataField="Full_Name" />
-                    <Column dataField="Prefix" />
-                    <Column dataField="Position" />
-                    <Column dataField="Duties" />
-                    <Column dataField="Email" />
-                    <Column dataField="Skype" />
-                </TreeList>
-            );
-        }
+    export default function App() {
+        return (
+            <TreeList ... >
+                <Editing
+                    allowUpdating={true}
+                    mode="form">
+                    <Form>
+                        <GroupItem caption="Personal Data">
+                            <SimpleItem dataField="Prefix" />
+                            <SimpleItem dataField="Full_Name" />
+                            <SimpleItem dataField="Position" />
+                            <SimpleItem dataField="Duties" editorType="dxTextArea" />
+                        </GroupItem>
+                        <GroupItem caption="Contacts">
+                            <SimpleItem dataField="Email" />
+                            <SimpleItem dataField="Skype" />
+                        </GroupItem>
+                    </Form>
+                </Editing>
+                <Column dataField="Full_Name" />
+                <Column dataField="Prefix" />
+                <Column dataField="Position" />
+                <Column dataField="Duties" />
+                <Column dataField="Email" />
+                <Column dataField="Skype" />
+            </TreeList>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

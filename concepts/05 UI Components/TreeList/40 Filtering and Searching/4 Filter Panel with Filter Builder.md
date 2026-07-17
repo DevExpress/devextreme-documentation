@@ -64,14 +64,12 @@ Set the **filterPanel**.[visible](/api-reference/10%20UI%20Components/GridBase/1
         FilterPanel
     } from 'devextreme-react/tree-list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList ...>
-                    <FilterPanel visible={true} />                  
-                </TreeList>
-            );
-        }
+    export default function App() {
+        return (
+            <TreeList ...>
+                <FilterPanel visible={true} />                  
+            </TreeList>
+        );
     }
 
 ---
@@ -125,14 +123,12 @@ If a user changes the filter expression in the filter panel or filter builder, t
 
     import TreeList from 'devextreme-react/tree-list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList ...
-                    filterSyncEnabled={false}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TreeList ...
+                filterSyncEnabled={false}
+            />
+        );
     }
 
 ---

@@ -118,19 +118,15 @@ A template name or container.
         );
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler ... >
-                    <View ...
-                        appointmentCollectorRender={renderCellOverflowIndicator}
-                    />
-                </Scheduler>
-            );
-        }
+    export default function App() {
+        return (
+            <Scheduler ... >
+                <View ...
+                    appointmentCollectorRender={renderCellOverflowIndicator}
+                />
+            </Scheduler>
+        );
     }
-
-    export default App;
 
 ---
 

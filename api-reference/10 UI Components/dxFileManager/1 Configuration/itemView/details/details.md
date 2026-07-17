@@ -108,22 +108,19 @@ Configures the "Details" file system representation mode.
 
     import FileManager, { ItemView, Details, Column } from 'devextreme-react/file-manager';
     
-    class App extends React.Component {
-        render() {
-            return (
-                <FileManager>
-                    <ItemView>
-                        <Details>
-                            <Column dataField="thumbnail" />
-                            <Column dataField="name" />
-                            {/* ... */}
-                        </Details>
-                    </ItemView>
-                </FileManager>
-            );
-        }
+    export default function App() {
+        return (
+            <FileManager>
+                <ItemView>
+                    <Details>
+                        <Column dataField="thumbnail" />
+                        <Column dataField="name" />
+                        {/* ... */}
+                    </Details>
+                </ItemView>
+            </FileManager>
+        );
     }
-    export default App;
 
 ##### ASP.NET Core Controls
 

@@ -68,16 +68,13 @@ The following code creates the FileManager UI component and adds it to your page
 
     import FileManager from 'devextreme-react/file-manager';
     
-    class App extends React.Component {
-        render() {
-            return (
-                <FileManager>
-                    {/* ... */}
-                </FileManager>
-            );
-        }
+    export default function App() {
+        return (
+            <FileManager>
+                {/* ... */}
+            </FileManager>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

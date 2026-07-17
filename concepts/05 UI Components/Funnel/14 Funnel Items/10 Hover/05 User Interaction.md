@@ -79,21 +79,17 @@ When a user presses or hovers over funnel items, they change their style to the 
         Hatching
     } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel ... >
-                    <Item ... >
-                        <HoverStyle>
-                            <Hatching direction="left" />
-                        </HoverStyle>
-                    </Item>
-                </Funnel>
-            );
-        }
+    export default function App() {
+        return (
+            <Funnel ... >
+                <Item ... >
+                    <HoverStyle>
+                        <Hatching direction="left" />
+                    </HoverStyle>
+                </Item>
+            </Funnel>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -153,14 +149,10 @@ If you need to disable this feature, set the [hoverEnabled](/api-reference/10%20
     import React from 'react';
     import Funnel from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel hoverEnabled={false} />
-            );
-        }
+    export default function App() {
+        return (
+            <Funnel hoverEnabled={false} />
+        );
     }
-
-    export default App;
 
 ---

@@ -143,29 +143,25 @@ By default, the UI component aligns all editors of all simple items in straight 
         email: 'jheart@dx-email.com'
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Form
-                    formData={employee}
-                    alignItemLabels={false}
-                    alignItemLabelsInAllGroups={false}>
-                    <SimpleItem dataField="firstName" />
-                    <SimpleItem dataField="lastName" />
-                    <GroupItem caption="Contacts">
-                        <SimpleItem dataField="phone" />
-                        <SimpleItem dataField="email" />
-                    </GroupItem>
-                    <GroupItem caption="Misc Data">
-                        <SimpleItem dataField="position" />
-                        <SimpleItem dataField="city" />
-                    </GroupItem>
-                </Form>
-            );
-        }
+    export default function App() {
+        return (
+            <Form
+                formData={employee}
+                alignItemLabels={false}
+                alignItemLabelsInAllGroups={false}>
+                <SimpleItem dataField="firstName" />
+                <SimpleItem dataField="lastName" />
+                <GroupItem caption="Contacts">
+                    <SimpleItem dataField="phone" />
+                    <SimpleItem dataField="email" />
+                </GroupItem>
+                <GroupItem caption="Misc Data">
+                    <SimpleItem dataField="position" />
+                    <SimpleItem dataField="city" />
+                </GroupItem>
+            </Form>
+        );
     }
-
-    export default App;
 
 ---
 

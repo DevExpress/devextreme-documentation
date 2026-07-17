@@ -93,15 +93,13 @@ Each series point allows you to show or hide its tooltip programmatically by cal
     import React from 'react';
     import PieChart from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PieChart ...
-                    onPointClick={onPointClick}
-                    onPointHoverChanged={onPointHoverChanged}>
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PieChart ...
+                onPointClick={onPointClick}
+                onPointHoverChanged={onPointHoverChanged}>
+            </PieChart>
+        );
     }
 
     // Shows the tooltip only when a user clicks a series point

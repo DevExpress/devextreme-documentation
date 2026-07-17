@@ -73,17 +73,15 @@ You can enable both exporting and printing by setting the [export](/api-referenc
         Export
     } from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PieChart ... >
-                    <Export
-                        enabled={true}
-                        printingEnabled={false}
-                    />
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PieChart ... >
+                <Export
+                    enabled={true}
+                    printingEnabled={false}
+                />
+            </PieChart>
+        );
     }
 
 ---
@@ -171,18 +169,16 @@ If you want to restrict the set of formats available for exporting, change the *
 
     const formats = ['PNG', 'JPEG'];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PieChart ... >
-                    <Export
-                        enabled={true}
-                        formats={formats}
-                        fileName="exported_chart"
-                    />
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PieChart ... >
+                <Export
+                    enabled={true}
+                    formats={formats}
+                    fileName="exported_chart"
+                />
+            </PieChart>
+        );
     }
 
 ---

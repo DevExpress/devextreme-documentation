@@ -81,15 +81,13 @@ When a tooltip becomes shown or hidden, the PieChart fires the [tooltipShown](/a
     import React from 'react';
     import PieChart from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PieChart ...
-                    onTooltipShown={onTooltipShown}
-                    onTooltipHidden={onTooltipHidden}>
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PieChart ...
+                onTooltipShown={onTooltipShown}
+                onTooltipHidden={onTooltipHidden}>
+            </PieChart>
+        );
     }
 
     function onTooltipShown(e) {

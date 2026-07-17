@@ -103,26 +103,22 @@ Individual settings override common settings.
         SelectionStyle
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series ... >
-                        <SelectionStyle>
-                            <!-- high priority -->
-                        </SelectionStyle>
-                    </Series>
-                    <CommonSeriesSettings ... >
-                        <SelectionStyle>
-                            <!-- low priority -->
-                        </SelectionStyle>
-                    </CommonSeriesSettings>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series ... >
+                    <SelectionStyle>
+                        {/* high priority */}
+                    </SelectionStyle>
+                </Series>
+                <CommonSeriesSettings ... >
+                    <SelectionStyle>
+                        {/* low priority */}
+                    </SelectionStyle>
+                </CommonSeriesSettings>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -210,24 +206,20 @@ To choose which series elements should be highlighted when a user selects a seri
         Series
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series
-                        type="bar"
-                        selectionMode="allSeriesPoints" <!-- or "onlyPoint" | "allArgumentPoints" | "none" -->
-                    />
-                    <Series
-                        type="line"
-                        selectionMode="includePoints" <!-- or "nearestPoint" | "excludePoints" | "none" -->
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series
+                    type="bar"
+                    selectionMode="allSeriesPoints"
+                /> {/* or "onlyPoint" | "allArgumentPoints" | "none" */}
+                <Series
+                    type="line"
+                    selectionMode="includePoints"
+                /> {/* or "nearestPoint" | "excludePoints" | "none" */}
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -295,19 +287,15 @@ By default, only a single series can be in the selected state at a time. If you 
     import React from 'react';
     import Chart from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart 
-                    ...
-                    seriesSelectionMode="multiple"> <!-- or 'single' -->
-                >
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart 
+                ...
+                seriesSelectionMode="multiple"
+            > {/* or 'single' */}
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

@@ -107,24 +107,20 @@ To specify one or another series type, assign its name to the **series[]**.[type
     const stackedBarSettings = { ... };
     const fullStackedBarSettings = { ... };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series type="bar" />
-                    <Series ... />
-                    ...
-                    <CommonSeriesSettings
-                        bar={barSettings}
-                        stackedbar={stackedBarSettings}
-                        fullstackedbar={fullStackedBarSettings}
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series type="bar" />
+                <Series ... />
+                ...
+                <CommonSeriesSettings
+                    bar={barSettings}
+                    stackedbar={stackedBarSettings}
+                    fullstackedbar={fullStackedBarSettings}
+                />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

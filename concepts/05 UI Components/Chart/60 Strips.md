@@ -96,24 +96,20 @@ To configure the strips, declare the [strips](/api-reference/10%20UI%20Component
         Strip
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ArgumentAxis ... >
-                        <Strip startValue={100} endValue={150} color="yellow" />
-                        <Strip startValue={50} endValue={70} color="orange" />
-                    </ArgumentAxis>
-                    <ValueAxis ... >
-                        <Strip startValue={40} endValue={50} color="blue" />
-                        <Strip startValue={70} color="red" />
-                    </ValueAxis>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ArgumentAxis ... >
+                    <Strip startValue={100} endValue={150} color="yellow" />
+                    <Strip startValue={50} endValue={70} color="orange" />
+                </ArgumentAxis>
+                <ValueAxis ... >
+                    <Strip startValue={40} endValue={50} color="blue" />
+                    <Strip startValue={70} color="red" />
+                </ValueAxis>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -262,37 +258,33 @@ Note that individual settings override axis-specific settings which, in turn, ov
         StripStyle
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ArgumentAxis ... >
-                        <Strip ... >
-                            {/* high priority */}
-                        </Strip>
-                        <StripStyle ... >
-                            {/* middle priority */}
-                        </StripStyle>
-                    </ArgumentAxis>
-                    <ValueAxis ... >
-                        <Strip ... >
-                            {/* high priority */}
-                        </Strip>
-                        <StripStyle ... >
-                            {/* middle priority */}
-                        </StripStyle>
-                    </ValueAxis>
-                    <CommonAxisSettings>
-                        <StripStyle ... >
-                            {/* low priority */}
-                        </StripStyle>
-                    </CommonAxisSettings>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ArgumentAxis ... >
+                    <Strip ... >
+                        {/* high priority */}
+                    </Strip>
+                    <StripStyle ... >
+                        {/* middle priority */}
+                    </StripStyle>
+                </ArgumentAxis>
+                <ValueAxis ... >
+                    <Strip ... >
+                        {/* high priority */}
+                    </Strip>
+                    <StripStyle ... >
+                        {/* middle priority */}
+                    </StripStyle>
+                </ValueAxis>
+                <CommonAxisSettings>
+                    <StripStyle ... >
+                        {/* low priority */}
+                    </StripStyle>
+                </CommonAxisSettings>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

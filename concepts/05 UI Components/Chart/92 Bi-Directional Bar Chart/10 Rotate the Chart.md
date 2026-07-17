@@ -41,14 +41,12 @@ Bars in the **Stacked Bar** series are vertical by default. Change them to horiz
     import React from 'react';
     import Chart from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ...
-                    rotated={true}>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ...
+                rotated={true}>
+            </Chart>
+        );
     }
 
 ---

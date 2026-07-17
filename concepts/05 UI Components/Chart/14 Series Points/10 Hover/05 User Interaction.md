@@ -116,30 +116,26 @@ The hover style for all series points in the Chart. Individual series settings o
         HoverStyle
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series>
-                        <Point ... >
-                            <HoverStyle>
-                                {/* high priority */}
-                            </HoverStyle>
-                        </Point>
-                    </Series>
-                    <CommonSeriesSettings ... >
-                        <Point ... >
-                            <HoverStyle>
-                                {/* low priority */}
-                            </HoverStyle>
-                        </Point>
-                    </CommonSeriesSettings>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series>
+                    <Point ... >
+                        <HoverStyle>
+                            {/* high priority */}
+                        </HoverStyle>
+                    </Point>
+                </Series>
+                <CommonSeriesSettings ... >
+                    <Point ... >
+                        <HoverStyle>
+                            {/* low priority */}
+                        </HoverStyle>
+                    </Point>
+                </CommonSeriesSettings>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -219,20 +215,16 @@ To choose which series elements should be highlighted when a user pauses on a se
         Point
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <CommonSeriesSettings ... >
-                        <Point
-                            hoverMode="allArgumentPoints" /> {/* or 'onlyPoint' | 'allSeriesPoints' | 'none' */}
-                    </CommonSeriesSettings>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <CommonSeriesSettings ... >
+                    <Point
+                        hoverMode="allArgumentPoints" /> {/* or 'onlyPoint' | 'allSeriesPoints' | 'none' */}
+                </CommonSeriesSettings>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

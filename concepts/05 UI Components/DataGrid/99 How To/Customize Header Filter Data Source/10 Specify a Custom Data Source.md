@@ -152,21 +152,17 @@ The following code shows how to specify a custom data source:
         value: ['SaleAmount', '>', 3000]
     }];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <{WidgetName}>
-                    <Column>
-                        <HeaderFilter
-                            dataSource={headerFilterData}
-                        />
-                    </Column>
-                </{WidgetName}>
-            );
-        }
+    export default function App() {
+        return (
+            <{WidgetName}>
+                <Column>
+                    <HeaderFilter
+                        dataSource={headerFilterData}
+                    />
+                </Column>
+            </{WidgetName}>
+        );
     }
-
-    export default App;
 
 ---
 

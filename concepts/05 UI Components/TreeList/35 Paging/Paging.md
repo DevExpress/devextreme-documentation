@@ -80,19 +80,16 @@ Paging improves the UI component's performance on large datasets because it rend
         Paging
     } from 'devextreme-react/tree-list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList ... >
-                    <Paging
-                        enabled={true}
-                        defaultPageSize={15}
-                        defaultPageIndex={1} /> {/* Shows the second page */}
-                </TreeList>
-            );
-        }
+    export default function App() {
+        return (
+            <TreeList ... >
+                <Paging
+                    enabled={true}
+                    defaultPageSize={15}
+                    defaultPageIndex={1} /> {/* Shows the second page */}
+            </TreeList>
+        );
     }
-    export default App;
 
 ---
 

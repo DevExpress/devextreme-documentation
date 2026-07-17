@@ -77,18 +77,15 @@ Paging is used to load data in portions, which improves the UI component's perfo
         Paging
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Paging
-                        defaultPageSize={15}
-                        defaultPageIndex={1} /> {/* Shows the second page */}
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Paging
+                    defaultPageSize={15}
+                    defaultPageIndex={1} /> {/* Shows the second page */}
+            </DataGrid>
+        );
     }
-    export default App;
 
 ---
 
@@ -163,16 +160,13 @@ When working with small datasets, you can disable paging by setting the **paging
         Paging
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Paging enabled={false} />
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Paging enabled={false} />
+            </DataGrid>
+        );
     }
-    export default App;
 
 ---
 

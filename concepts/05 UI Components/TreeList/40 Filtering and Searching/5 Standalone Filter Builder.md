@@ -126,15 +126,13 @@ The TreeList UI component has an integrated filter builder that can be invoked u
         format: "currency"
     }];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <React.Fragment>
-                    <TreeList defaultColumns={columns} />              
-                    <FilterBuilder defaultFields={columns} />
-                </React.Fragment>
-            );
-        }
+    export default function App() {
+        return (
+            <React.Fragment>
+                <TreeList defaultColumns={columns} />              
+                <FilterBuilder defaultFields={columns} />
+            </React.Fragment>
+        );
     }
 
 ---

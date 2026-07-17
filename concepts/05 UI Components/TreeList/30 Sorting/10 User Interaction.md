@@ -65,16 +65,13 @@ With the TreeList UI component, a user can sort by single and multiple columns. 
 
     import { TreeList, Sorting } from 'devextreme-react/tree-list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList>
-                    <Sorting mode="single"/> {/* or "multiple" | "none" */}
-                </TreeList>
-            );
-        }
+    export default function App() {
+        return (
+            <TreeList>
+                <Sorting mode="single"/> {/* or "multiple" | "none" */}
+            </TreeList>
+        );
     }
-    export default App;
     
 ---
 
@@ -156,16 +153,13 @@ To disable sorting in the whole UI component, set the **sorting**.**mode** prope
 
     import { TreeList, Column } from 'devextreme-react/tree-list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList>
-                    <Column allowSorting={false}/>
-                </TreeList>
-            );
-        }
+    export default function App() {
+        return (
+            <TreeList>
+                <Column allowSorting={false}/>
+            </TreeList>
+        );
     }
-    export default App;
     
 ---
 

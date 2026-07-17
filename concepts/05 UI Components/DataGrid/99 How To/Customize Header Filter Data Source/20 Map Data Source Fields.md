@@ -183,20 +183,16 @@ In the following code, the `categoryName` and `categoryId` fields are mapped to 
         }
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <{WidgetName}>
-                    <Column>
-                        <HeaderFilter
-                            dataSource={headerFilterData}
-                        />
-                    </Column>
-                </{WidgetName}>
-            );
-        }
+    export default function App() {
+        return (
+            <{WidgetName}>
+                <Column>
+                    <HeaderFilter
+                        dataSource={headerFilterData}
+                    />
+                </Column>
+            </{WidgetName}>
+        );
     }
-
-    export default App;
 
 ---

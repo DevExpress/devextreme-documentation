@@ -74,20 +74,16 @@ The default size of the Map UI component is 300x300 pixels. To change it, use to
 
     const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Map
-                    defaultZoom={10}
-                    defaultCenter={centerCoordinates}
-                    width="100%"
-                    height={500}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Map
+                defaultZoom={10}
+                defaultCenter={centerCoordinates}
+                width="100%"
+                height={500}
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -188,20 +184,16 @@ If you prefer specifying the UI component size using CSS, set the **width** and 
 
     const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Map
-                    defaultZoom={10}
-                    defaultCenter={centerCoordinates}
-                    width={null}
-                    height={null}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Map
+                defaultZoom={10}
+                defaultCenter={centerCoordinates}
+                width={null}
+                height={null}
+            />
+        );
     }
-
-    export default App;
 
     <!-- tab: styles.css -->
     #mapContainer {

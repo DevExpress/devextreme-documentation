@@ -292,16 +292,13 @@ If the TagBox allows a user [to add custom items](/concepts/05%20UI%20Components
             }
         })
     }
-    class App extends React.Component {
-        render() {
-            return (
-                <TagBox ...
-                    dataSource={tagBoxDataSource}>
-                </TagBox>
-            );
-        }
+    export default function App() {
+        return (
+            <TagBox ...
+                dataSource={tagBoxDataSource}>
+            </TagBox>
+        );
     }
-    export default App;
 
 ---
 

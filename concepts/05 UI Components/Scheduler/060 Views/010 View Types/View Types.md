@@ -77,17 +77,14 @@ A user switches between views with the [View Switcher](/concepts/05%20UI%20Compo
 
     const views = ['day', 'week', 'agenda'];
     
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler
-                    views={views}
-                    currentView="week"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Scheduler
+                views={views}
+                currentView="week"
+            />
+        );
     }
-    export default App;
 
 ---
 

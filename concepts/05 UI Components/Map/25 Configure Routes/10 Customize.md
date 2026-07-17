@@ -129,19 +129,15 @@ The [route configuration](/api-reference/10%20UI%20Components/dxMap/1%20Configur
         weight: 2
     }];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Map
-                    defaultZoom={15}
-                    defaultCenter={centerCoordinates}
-                    routes={mapRoutes}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Map
+                defaultZoom={15}
+                defaultCenter={centerCoordinates}
+                routes={mapRoutes}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

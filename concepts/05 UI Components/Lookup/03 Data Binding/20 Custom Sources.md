@@ -266,16 +266,13 @@ If you specify the Lookup's [value](/api-reference/10%20UI%20Components/dxDropDo
             }
         })
     }
-    class App extends React.Component {
-        render() {
-            return (
-                <Lookup ...
-                    dataSource={lookupDataSource}>
-                </Lookup>
-            );
-        }
+    export default function App() {
+        return (
+            <Lookup ...
+                dataSource={lookupDataSource}>
+            </Lookup>
+        );
     }
-    export default App;
 
 ---
 

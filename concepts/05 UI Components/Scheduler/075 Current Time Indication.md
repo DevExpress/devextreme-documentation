@@ -64,15 +64,11 @@ Use the [showCurrentTimeIndicator](/api-reference/10%20UI%20Components/dxSchedul
 
     import { Scheduler } from 'devextreme-react/scheduler';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler showCurrentTimeIndicator={true}/>
-            );
-        }
+    export default function App() {
+        return (
+            <Scheduler showCurrentTimeIndicator={true}/>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -143,18 +139,14 @@ Additionally, you can apply shading to cover the timetable up to the current tim
 
     import { Scheduler } from 'devextreme-react/scheduler';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler
-                    showCurrentTimeIndicator={true}
-                    shadeUntilCurrentTime={true}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Scheduler
+                showCurrentTimeIndicator={true}
+                shadeUntilCurrentTime={true}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

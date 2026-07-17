@@ -95,17 +95,14 @@ To execute certain commands before or after an appointment was updated, handle t
         // Handler of the "appointmentUpdated" event
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler ...
-                    onAppointmentUpdating={onAppointmentUpdating}
-                    onAppointmentUpdated={onAppointmentUpdated}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Scheduler ...
+                onAppointmentUpdating={onAppointmentUpdating}
+                onAppointmentUpdated={onAppointmentUpdated}
+            />
+        );
     }
-    export default App;
 
 ---
 

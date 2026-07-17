@@ -95,17 +95,14 @@ To execute certain commands before or after an appointment was deleted, handle t
         // Handler of the "appointmentDeleted" event
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler ...
-                    onAppointmentDeleting={onAppointmentDeleting}
-                    onAppointmentDeleted={onAppointmentDeleted}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Scheduler ...
+                onAppointmentDeleting={onAppointmentDeleting}
+                onAppointmentDeleted={onAppointmentDeleted}
+            />
+        );
     }
-    export default App;
 
 ---
 

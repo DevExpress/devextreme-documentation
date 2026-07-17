@@ -84,18 +84,14 @@ To add markers at design-time, pass an array of objects to the [markers](/api-re
         { location: "37.058435, -74.903842" }
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Map
-                    defaultZoom={5}
-                    markers={mapMarkers}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Map
+                defaultZoom={5}
+                markers={mapMarkers}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

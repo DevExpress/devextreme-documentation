@@ -98,22 +98,18 @@ To customize the Popup or Popover, use the [dropDownOptions](/api-reference/10%2
         // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Lookup
-                    dataSource={dataSource}
-                    usePopover={false}>
-                    <DropDownOptions
-                        shading={false}
-                        fullScreen={false}
-                    />
-                </Lookup>
-            );
-        }
+    export default function App() {
+        return (
+            <Lookup
+                dataSource={dataSource}
+                usePopover={false}>
+                <DropDownOptions
+                    shading={false}
+                    fullScreen={false}
+                />
+            </Lookup>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -231,29 +227,25 @@ To change the size of the drop-down menu and position it against a specific elem
         // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <div>
-                    <img id="targetElement" src="http://here/goes/my.jpg" />
-                    <Lookup
-                        dataSource={dataSource}>
-                        <DropDownOptions
-                            width={300}
-                            height={300}>
-                            <Position
-                                my="left"
-                                at="left"
-                                of="#targetElement"
-                            />
-                        </DropDownOptions>
-                    </Lookup>
-                </div>
-            );
-        }
+    export default function App() {
+        return (
+            <div>
+                <img id="targetElement" src="http://here/goes/my.jpg" />
+                <Lookup
+                    dataSource={dataSource}>
+                    <DropDownOptions
+                        width={300}
+                        height={300}>
+                        <Position
+                            my="left"
+                            at="left"
+                            of="#targetElement"
+                        />
+                    </DropDownOptions>
+                </Lookup>
+            </div>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -368,21 +360,17 @@ The drop-down menu can have a title. Use the **dropDownOptions**.[title](/api-re
         );
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Lookup
-                    dataSource={dataSource}>
-                    <DropDownOptions
-                        title="Products"
-                        {/* titleRender={renderTitle} */}
-                    />
-                </Lookup>
-            );
-        }
+    export default function App() {
+        return (
+            <Lookup
+                dataSource={dataSource}>
+                <DropDownOptions
+                    title="Products"
+                    {/* titleRender={renderTitle} */}
+                />
+            </Lookup>
+        );
     }
-
-    export default App;
 
 ---
 

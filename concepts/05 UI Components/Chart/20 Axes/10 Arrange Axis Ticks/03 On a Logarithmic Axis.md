@@ -76,22 +76,18 @@ A logarithmic axis indicates numeric values; each of them is the [logarithmBase]
         Tick
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ArgumentAxis
-                        type="logarithmic"
-                        tickInterval={2}
-                    >
-                        <Tick visible={true} />
-                    </ArgumentAxis>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ArgumentAxis
+                    type="logarithmic"
+                    tickInterval={2}
+                >
+                    <Tick visible={true} />
+                </ArgumentAxis>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -173,22 +169,18 @@ As an alternative to **tickInterval**, you can use the [axisDivisionFactor](/api
         Tick
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ArgumentAxis
-                        type="logarithmic"
-                        axisDivisionFactor={20}
-                    >
-                        <Tick visible={true} />
-                    </ArgumentAxis>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ArgumentAxis
+                    type="logarithmic"
+                    axisDivisionFactor={20}
+                >
+                    <Tick visible={true} />
+                </ArgumentAxis>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

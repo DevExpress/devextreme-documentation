@@ -374,29 +374,26 @@ You can also use the following properties to customize label texts:
         CommonSeriesSettings
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series valueField="y1564" name="15-64 years"></Series>
-                    <Series valueField="y014" name="0-14 years"></Series>
-                    <Series valueField="y65" name="65 years and older">
-                        <Label displayFormat="<u>65+ years</u>: {valueText}" >
-                        </Label>
-                    </Series>                
-                    <CommonSeriesSettings ... >
-                        <Label 
-                            format="thousands" 
-                            visible={true}
-                            displayFormat="{seriesName}: {valueText}"
-                            >
-                        </Label>
-                    </CommonSeriesSettings>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series valueField="y1564" name="15-64 years"></Series>
+                <Series valueField="y014" name="0-14 years"></Series>
+                <Series valueField="y65" name="65 years and older">
+                    <Label displayFormat="<u>65+ years</u>: {valueText}" >
+                    </Label>
+                </Series>                
+                <CommonSeriesSettings ... >
+                    <Label 
+                        format="thousands" 
+                        visible={true}
+                        displayFormat="{seriesName}: {valueText}"
+                        >
+                    </Label>
+                </CommonSeriesSettings>
+            </Chart>
+        );
     }
-    export default App;
 
 ##### ASP.NET Core Controls
 

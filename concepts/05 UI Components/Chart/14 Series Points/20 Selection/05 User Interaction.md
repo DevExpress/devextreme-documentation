@@ -119,30 +119,26 @@ Individual series settings override common settings.
         SelectionStyle
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series>
-                        <Point ... >
-                            <SelectionStyle>
-                                {/* high priority */}
-                            </SelectionStyle>
-                        </Point>
-                    </Series>
-                    <CommonSeriesSettings ... >
-                        <Point ... >
-                            <SelectionStyle>
-                                {/* low priority */}
-                            </SelectionStyle>
-                        </Point>
-                    </CommonSeriesSettings>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series>
+                    <Point ... >
+                        <SelectionStyle>
+                            {/* high priority */}
+                        </SelectionStyle>
+                    </Point>
+                </Series>
+                <CommonSeriesSettings ... >
+                    <Point ... >
+                        <SelectionStyle>
+                            {/* low priority */}
+                        </SelectionStyle>
+                    </Point>
+                </CommonSeriesSettings>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -224,20 +220,16 @@ To choose which elements should be highlighted when a user selects a point, spec
         Point
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <CommonSeriesSettings ... >
-                        <Point
-                            selectionMode="allArgumentPoints" /> {/* or 'onlyPoint' | 'allSeriesPoints' | 'none' */}
-                    </CommonSeriesSettings>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <CommonSeriesSettings ... >
+                    <Point
+                        selectionMode="allArgumentPoints" /> {/* or 'onlyPoint' | 'allSeriesPoints' | 'none' */}
+                </CommonSeriesSettings>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -303,17 +295,13 @@ By default, only a single point can be in the selected state at a time. If you n
     import React from 'react';
     import Chart from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ...
-                    pointSelectionMode="multiple"> {/* or 'single' */}
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ...
+                pointSelectionMode="multiple"> {/* or 'single' */}
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

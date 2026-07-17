@@ -85,23 +85,19 @@ You can configure the scrollbar using the [scrollBar](/api-reference/10%20UI%20C
         ScrollBar
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ZoomAndPan
-                        argumentAxis="both"
-                        valueAxis="both"
-                    />
-                    <ScrollBar ...
-                        visible={true}
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ZoomAndPan
+                    argumentAxis="both"
+                    valueAxis="both"
+                />
+                <ScrollBar ...
+                    visible={true}
+                />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

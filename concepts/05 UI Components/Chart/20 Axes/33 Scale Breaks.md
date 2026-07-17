@@ -87,26 +87,22 @@ Use an axis' [breaks](/api-reference/10%20UI%20Components/dxChart/1%20Configurat
         Break
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ValueAxis> {/* or ArgumentAxis */}
-                        <Break
-                            startValue={100}
-                            endValue={500}
-                        />
-                        <Break
-                            startValue={1000}
-                            endValue={2000}
-                        />
-                    </ValueAxis>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ValueAxis> {/* or ArgumentAxis */}
+                    <Break
+                        startValue={100}
+                        endValue={500}
+                    />
+                    <Break
+                        startValue={1000}
+                        endValue={2000}
+                    />
+                </ValueAxis>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -182,20 +178,16 @@ The value axis supports auto-calculated scale breaks, which can be enabled by se
         ValueAxis
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ValueAxis
-                        autoBreaksEnabled={true}
-                        maxAutoBreakCount={2}
-                    /> {/* or ArgumentAxis */}
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ValueAxis
+                    autoBreaksEnabled={true}
+                    maxAutoBreakCount={2}
+                /> {/* or ArgumentAxis */}
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

@@ -83,19 +83,15 @@ The title is configured by the [title](/api-reference/10%20UI%20Components/dxCha
         Subtitle
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Title text="I am the Title">
-                        <Subtitle text="I am the Subtitle" />
-                    </Title>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Title text="I am the Title">
+                    <Subtitle text="I am the Subtitle" />
+                </Title>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -158,19 +154,15 @@ You can set the title's text more concisely by assigning it directly to the **ti
     import React from 'react';
     import Chart from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart
-                    title="I am the Title"
-                    ...
-                >
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart
+                title="I am the Title"
+                ...
+            >
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

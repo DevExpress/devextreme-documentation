@@ -70,19 +70,15 @@ The axis title is configured by the [title](/api-reference/10%20UI%20Components/
         ArgumentAxis
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ArgumentAxis
-                        title="Axis Title"
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ArgumentAxis
+                    title="Axis Title"
+                />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -161,21 +157,17 @@ is the same as this:
         Title
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ArgumentAxis> {/* or ValueAxis */}
-                        <Title
-                            text="Axis Title"
-                        />
-                    </ArgumentAxis>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ArgumentAxis> {/* or ValueAxis */}
+                    <Title
+                        text="Axis Title"
+                    />
+                </ArgumentAxis>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

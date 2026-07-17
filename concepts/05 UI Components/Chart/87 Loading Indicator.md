@@ -68,19 +68,15 @@ To activate the loading indicator, assign **true** to the [loadingIndicator](/ap
         LoadingIndicator
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <LoadingIndicator
-                        enabled={true}
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <LoadingIndicator
+                    enabled={true}
+                />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

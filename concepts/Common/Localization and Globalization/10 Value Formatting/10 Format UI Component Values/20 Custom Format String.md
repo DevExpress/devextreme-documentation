@@ -1,4 +1,4 @@
-Use Unicode Locale Data Markup Language (LDML) patterns to specify a custom format string. An LDML pattern consists of wildcard characters and characters displayed as is. The **format** property supports the following wildcard characters:
+Use Unicode Locale Data Markup Language (LDML) patterns to specify a custom format string. An LDML pattern consists of wildcard and literal characters. The **format** property supports the following wildcard characters:
 
 **Numeric Formats**
 
@@ -14,21 +14,21 @@ Use Unicode Locale Data Markup Language (LDML) patterns to specify a custom form
     <tr>
     <td>&#35;</td>
     <td>
-            Any number of leading digits, a single digit, or nothing. If this character goes first in the format string, it can match multiple leading digits (before the decimal point). Subsequent characters match a single digit. If the formatted number does not have a digit in the corresponding position, it displays nothing.</br>
-            For example, if you apply format "#0.#" to "123.45", the result is "123.5".
+            Any number of leading digits, a single digit, or nothing. If this character goes first in the format string, it can match multiple leading digits (before the decimal point). Subsequent characters match a single digit. If the formatted number does not have a digit in the corresponding position, it displays nothing.<br/>
+            For example, if you format "123.45" with "#0.#", the result is "123.5".
     </td>
     </tr>
     <tr>
     <td>.</td>
     <td>
-            A decimal separator. </br>
+            A decimal separator. <br/>
             Actual character depends on locale.
     </td>
     </tr>
     <tr>
     <td>,</td>
     <td>
-            A group separator. </br>
+            A group separator. <br/>
             Actual character depends on locale.
     </td>
     </tr>
@@ -40,9 +40,9 @@ Use Unicode Locale Data Markup Language (LDML) patterns to specify a custom form
     </tr>
     <tr>
     <td>;</td>
-    <td>    Separates positive and negative format patterns.  </br>
-            For example, the "#0.##;(#0.##)" format displays a positive number according to the pattern before the semicolon (";"), and a negative number according to the pattern after the semicolon (";").</br>
-            If you do not use this character and the additional pattern, negative numbers display a minus ("-") prefix.
+        <td>    Separates positive and negative format patterns.  <br/>
+          For example, the "#0.##;(#0.##)" format displays a positive number according to the pattern before the semicolon (";"), and a negative number according to the pattern after the semicolon (";").<br/>
+            If you do not use this character , nor the additional pattern, negative numbers display a minus ("-") prefix.
     </td>
     </tr>
     <tr>
@@ -52,14 +52,15 @@ Use Unicode Locale Data Markup Language (LDML) patterns to specify a custom form
             For example, '%'.
     </td>
     </tr>
-    <td>Other characters</td>
+        <tr>
+        <td>Other characters</td>
     <td>
             You can add any literal characters to the beginning or end of the format string.
     </td>
     </tr>
 </table>
 
-The examples below demonstrate the behavior of "#" and "0" in fractional numbers:
+The examples below demonstrate how `#` and `0` behave in fractional numbers:
 
     <!-- tab: JavaScript -->
     const number = 1234.567;
@@ -77,7 +78,7 @@ The examples below demonstrate the behavior of "#" and "0" in fractional numbers
     // Add a group separator
     format: ",##0.###" // 123,456.789
     
-The examples below show different ways to apply percentage formatting to decimals. Use caution if your format string starts with a zero ('0'), because the formatted number may lose leading digits.
+The examples below demonstrate different options used to apply percentage formatting to decimals. Use caution if your format string starts with `0` because the formatted number may lose leading digits.
 
     <!-- tab: JavaScript -->
     const smallNumber = 0.01234;
@@ -88,7 +89,7 @@ The examples below show different ways to apply percentage formatting to decimal
     // Add a percent sign and limit to two decimal digits
     format: "#0.##'%'" // 0.01%
 
- **Date-Time Formats** 
+**Date-Time Formats**
 
 <table class="dx-table">
     <tr>
@@ -102,14 +103,14 @@ The examples below show different ways to apply percentage formatting to decimal
     <tr>
       <td>Q</td>
       <td>
-        A quarter number or name.</br>       
+        A quarter number or name.<br/>
         Available combinations with example: "Q" - "2", "QQ" - "02", "QQQ" - "Q2" and "QQQQ" - "2nd quarter".
       </td>
     </tr>
     <tr>
       <td>M</td>
       <td>
-        A month number or name.</br>         
+        A month number or name.<br/>
         Available combinations with example: "M" - "9", "MM" - "09", "MMM" - "Sep", "MMMM" - "September", "MMMMM" - "S".
       </td>
     </tr>
@@ -120,7 +121,7 @@ The examples below show different ways to apply percentage formatting to decimal
     <tr>
       <td>E</td>
       <td>
-        A week day name.</br>    
+        A week day name.<br/>
         Available combinations with example: "E", "EE" or "EEE" - "Tue", "EEEE" - "Tuesday", "EEEEE" - "T". 
       </td>
     </tr>
@@ -168,7 +169,5 @@ The examples below show different ways to apply percentage formatting to decimal
     format: "hh:mm a" // 08:45 PM
     format: "MMMM dd, yyyy HH:mm:ss" // July 15, 2021 20:45:34
 
-[note] [Reference the Globalize library](/concepts/Common/Localization/05%20Localize%20Dates%2C%20Numbers%2C%20and%20Currencies/10%20Using%20Globalize.md '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/Using_Globalize') in your application to use other <a href="http://unicode.org/reports/tr35/tr35-numbers.html#Special_Pattern_Characters" target="_blank">numeric</a> or <a href="http://unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table" target="_blank">datetime</a> format characters.
+[note] Use the [Globalize library](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/08%20Using%20Globalize.md '/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/08%20Using%20Globalize.md') in your application to use additional <a href="http://unicode.org/reports/tr35/tr35-numbers.html#Special_Pattern_Characters" target="_blank">numeric</a> or <a href="http://unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table" target="_blank">date-time</a> format characters.
 
-#####See Also#####
-- [NumberBox Formatting Demo](https://js.devexpress.com/Demos/WidgetsGallery/Demo/NumberBox/Formatting/)

@@ -66,14 +66,12 @@ To configure the appearance, location, and content of the legend, use properties
         Legend
     } from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PieChart ... >
-                    <Legend ... />
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PieChart ... >
+                <Legend ... />
+            </PieChart>
+        );
     }
 
 ---

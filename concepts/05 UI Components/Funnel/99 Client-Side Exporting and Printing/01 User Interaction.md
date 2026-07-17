@@ -69,20 +69,16 @@ You can enable both exporting and printing by setting the [export](/api-referenc
     import React from 'react';
     import Funnel, { Export } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel ... >
-                    <Export 
-                        enabled={true}
-                        printingEnabled={false}
-                    />
-                </Funnel>
-            );
-        }
+    export default function App() {
+        return (
+            <Funnel ... >
+                <Export 
+                    enabled={true}
+                    printingEnabled={false}
+                />
+            </Funnel>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -163,20 +159,16 @@ If you want to restrict the set of formats available for exporting, change the *
 
     const exportFormats = ['PNG', 'JPEG'];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel ... >
-                    <Export 
-                        enabled={true}
-                        formats={exportFormats}
-                        fileName="exported_funnel"
-                    />
-                </Funnel>
-            );
-        }
+    export default function App() {
+        return (
+            <Funnel ... >
+                <Export 
+                    enabled={true}
+                    formats={exportFormats}
+                    fileName="exported_funnel"
+                />
+            </Funnel>
+        );
     }
-
-    export default App;
 
 ---

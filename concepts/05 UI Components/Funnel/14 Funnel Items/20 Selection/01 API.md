@@ -65,21 +65,17 @@ The selection capability is not provided out of the box, but it can be implement
     import React from 'react';
     import Funnel from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel
-                    onItemClick={onItemClick}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Funnel
+                onItemClick={onItemClick}
+            />
+        );
     }
 
     function onItemClick (e) {
         e.item.select(!e.item.isSelected())
     }
-
-    export default App;
 
 ---
 

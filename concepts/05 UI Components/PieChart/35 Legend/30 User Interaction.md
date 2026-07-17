@@ -62,14 +62,12 @@ A user can interact with the legend by pausing on legend items. When a user does
         Legend
     } from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PieChart ... >
-                    <Legend hoverMode="none" />
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PieChart ... >
+                <Legend hoverMode="none" />
+            </PieChart>
+        );
     }
 
 ---
@@ -160,14 +158,12 @@ In addition, a user can click legend items. The UI component does not react to t
     import React from 'react';
     import PieChart from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PieChart ...
-                    onLegendClick={onLegendClick}>
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PieChart ...
+                onLegendClick={onLegendClick}>
+            </PieChart>
+        );
     }
 
     function onLegendClick(e) {

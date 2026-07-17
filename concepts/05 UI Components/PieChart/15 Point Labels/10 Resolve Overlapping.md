@@ -56,14 +56,12 @@ In multi-series charts, point labels often overlap. To decide how to resolve ove
     import React from 'react';
     import PieChart from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PieChart ...
-                    resolveLabelOverlapping="shift"> {/* or 'hide' | 'none' */}
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PieChart ...
+                resolveLabelOverlapping="shift"> {/* or 'hide' | 'none' */}
+            </PieChart>
+        );
     }
 
 ---
@@ -138,16 +136,14 @@ Another way to deal with overlapping labels is to hide all labels of a specific 
         Series
     } from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PieChart ... >
-                    <Series ...
-                        maxLabelCount={10}
-                    />
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PieChart ... >
+                <Series ...
+                    maxLabelCount={10}
+                />
+            </PieChart>
+        );
     }
 
 ---

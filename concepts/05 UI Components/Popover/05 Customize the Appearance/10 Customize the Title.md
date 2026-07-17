@@ -85,25 +85,21 @@ The Popover is displayed without a title by default. To add it, set the [showTit
 
     import { Popover } from 'devextreme-react/popover';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <div>
-                    <img id="image" src="https://url/to/an/image" />
-                    <Popover
-                        showTitle={true}
-                        showCloseButton={true}
-                        target="#image"
-                        title="Popover Title"
-                        showEvent="dxhoverstart"
-                        hideEvent="dxhoverend"
-                    />
-                </div>
-            );
-        }
+    export default function App() {
+        return (
+            <div>
+                <img id="image" src="https://url/to/an/image" />
+                <Popover
+                    showTitle={true}
+                    showCloseButton={true}
+                    target="#image"
+                    title="Popover Title"
+                    showEvent="dxhoverstart"
+                    hideEvent="dxhoverend"
+                />
+            </div>
+        );
     }
-
-    export default App;
 
 ##### ASP.NET MVC Controls
 
@@ -221,24 +217,20 @@ If you need to define the title completely, specify a template for it as shown i
         );
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <div>
-                    <img id="image" src="https://url/to/an/image" />
-                    <Popover
-                        showTitle={true}
-                        target="#image"
-                        titleRender={renderTitle}
-                        showEvent="dxhoverstart"
-                        hideEvent="dxhoverend"
-                    />
-                </div>
-            );
-        }
+    export default function App() {
+        return (
+            <div>
+                <img id="image" src="https://url/to/an/image" />
+                <Popover
+                    showTitle={true}
+                    target="#image"
+                    titleRender={renderTitle}
+                    showEvent="dxhoverstart"
+                    hideEvent="dxhoverend"
+                />
+            </div>
+        );
     }
-
-    export default App;
 
 ##### ASP.NET MVC Controls
 

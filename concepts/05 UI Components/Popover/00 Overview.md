@@ -90,23 +90,19 @@ The following code creates a simple Popover on your page and attaches it to anot
         );
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <div>
-                    <img id="image" src="https://url/to/an/image" />
-                    <Popover
-                        target="#image"
-                        showEvent="dxhoverstart"
-                        hideEvent="dxhoverend"
-                        contentRender={renderContent}
-                    />
-                </div>
-            );
-        }
+    export default function App() {
+        return (
+            <div>
+                <img id="image" src="https://url/to/an/image" />
+                <Popover
+                    target="#image"
+                    showEvent="dxhoverstart"
+                    hideEvent="dxhoverend"
+                    contentRender={renderContent}
+                />
+            </div>
+        );
     }
-
-    export default App;
 
 ##### ASP.NET MVC Controls
 

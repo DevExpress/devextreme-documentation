@@ -114,19 +114,16 @@ You can specify a custom width and height for the component:
         Size
     } from 'devextreme-react/{widget-name}';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <{WidgetName} ... >
-                    <Size
-                        height={300}
-                        width={600}
-                    />
-                </{WidgetName}>
-            );
-        }
+    export default function App() {
+        return (
+            <{WidgetName} ... >
+                <Size
+                    height={300}
+                    width={600}
+                />
+            </{WidgetName}>
+        );
     }
-    export default App;
 
 ---
 
@@ -195,16 +192,13 @@ Alternatively, you can use CSS to style the UI component's container:
 
     import {WidgetName} from 'devextreme-react/{widget-name}';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <{WidgetName} ...
-                    id="{widgetName}">
-                </{WidgetName}>
-            );
-        }
+    export default function App() {
+        return (
+            <{WidgetName} ...
+                id="{widgetName}">
+            </{WidgetName}>
+        );
     }
-    export default App;
 
     <!-- tab: styles.css -->
     #{widgetName} {

@@ -116,13 +116,10 @@ An object for storing additional settings that should be sent to the server.
         }
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                {/* ... */}
-            );
-        }
+    export default function App() {
+        return (
+            {/* ... */}
+        );
     }
-    export default App;
 
 ---

@@ -112,16 +112,13 @@ This template replaces the default tag template. If you need to recreate the def
         );
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TagBox ...
-                    tagRender={renderTag}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TagBox ...
+                tagRender={renderTag}
+            />
+        );
     }
-    export default App;
 
 ---
 

@@ -130,16 +130,13 @@ See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documen
         }]
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PivotGrid
-                    dataSource={pivotGridDataSource}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <PivotGrid
+                dataSource={pivotGridDataSource}
+            />
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

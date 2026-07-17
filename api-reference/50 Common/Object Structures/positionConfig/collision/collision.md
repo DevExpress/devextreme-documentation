@@ -92,20 +92,17 @@ To set the **collision** property, use an object with the **x** and **y** fields
         Collision
     } from 'devextreme-react/popup';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Popup ... >
-                    <Position
-                        collision="flip none">
-                        {/* or */}
-                        <Collision x="flip" y="none" />
-                    </Position>
-                </Popup>
-            );
-        }
+    export default function App() {
+        return (
+            <Popup ... >
+                <Position
+                    collision="flip none">
+                    {/* or */}
+                    <Collision x="flip" y="none" />
+                </Position>
+            </Popup>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

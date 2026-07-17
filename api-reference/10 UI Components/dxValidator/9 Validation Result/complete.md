@@ -186,11 +186,11 @@ In the following example, a button validates an editor with an async rule. The *
         res.status === "pending" && res.complete.then((r) => {
             console.log(r.status);
         });
-    });
+    };
 
-    class App extends React.Component {
-        render() {
-            return (
+    export default function App() {
+        return (
+            <>
                 <TextBox>
                     <Validator
                         validationGroup={validationGroupName}>
@@ -201,10 +201,10 @@ In the following example, a button validates an editor with an async rule. The *
 
                 <Button 
                     validationGroup={validationGroupName}
-                    onClick={validateEditor} />
-            );
-        }
+                    onClick={validateEditor}
+                />
+            </>
+        );
     }
-    export default App;
 
 ---

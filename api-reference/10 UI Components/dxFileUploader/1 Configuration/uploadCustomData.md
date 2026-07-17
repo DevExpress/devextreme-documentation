@@ -93,15 +93,11 @@ Specifies custom data for the upload request.
         __RequestVerificationToken: document.getElementsByName("__RequestVerificationToken")[0].value
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <FileUploader uploadCustomData={uploaderCustomData} >
-                </FileUploader>
-            );
-        }
+    export default function App() {
+        return (
+            <FileUploader uploadCustomData={uploaderCustomData} />
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

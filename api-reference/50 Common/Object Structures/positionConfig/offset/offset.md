@@ -80,20 +80,17 @@ In the following code, the overlay element is shifted 50 pixels to the right and
         Offset
     } from 'devextreme-react/popup';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Popup ... >
-                    <Position
-                        offset="50 -25">
-                        {/* or */}
-                        <Offset x={50} y={-25} />
-                    </Position>
-                </Popup>
-            );
-        }
+    export default function App() {
+        return (
+            <Popup ... >
+                <Position
+                    offset="50 -25">
+                    {/* or */}
+                    <Offset x={50} y={-25} />
+                </Position>
+            </Popup>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

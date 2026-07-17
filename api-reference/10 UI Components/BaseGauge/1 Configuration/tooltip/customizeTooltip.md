@@ -15,7 +15,7 @@ The raw value.
 The [formatted](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/tooltip/format.md '{basewidgetpath}/Configuration/tooltip/#format') value converted to a string.
 
 ##### return: Object
-The tooltip's configuration.
+Tooltip configuration.
 
 ---
 #include dataviz-customize-tooltip-return
@@ -23,4 +23,4 @@ The tooltip's configuration.
 #include dataviz-ref-functioncontext
 
 #####See Also#####
-- [Value Formatting](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/')
+- [Value Formatting](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/00%20Value%20Formatting.md)

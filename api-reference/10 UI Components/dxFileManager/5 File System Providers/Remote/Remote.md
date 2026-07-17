@@ -135,17 +135,14 @@ The following code shows how to bind the FileManager to the **Remote** file syst
         endpointUrl: 'https://js.devexpress.com/Demos/Mvc/api/file-manager-file-system-scripts'
     });
     
-    class App extends React.Component {
-        render() {
-            return (
-                <FileManager 
-                    fileSystemProvider={remoteFileProvider}>
-                    {/* ... */}
-                </FileManager>
-            );
-        }
+    export default function App() {
+        return (
+            <FileManager 
+                fileSystemProvider={remoteFileProvider}>
+                {/* ... */}
+            </FileManager>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

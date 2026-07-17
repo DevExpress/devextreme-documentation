@@ -86,23 +86,20 @@ Rows are sorted according to the data source by default. Set the [sortOrder](/ap
 
     import { DataGrid, Column } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid>
-                    <Column
-                        dataField="City"
-                        defaultSortIndex={1}
-                        defaultSortOrder="asc" />
-                    <Column
-                        dataField="Country"
-                        defaultSortIndex={0}
-                        defaultSortOrder="asc" />
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid>
+                <Column
+                    dataField="City"
+                    defaultSortIndex={1}
+                    defaultSortOrder="asc" />
+                <Column
+                    dataField="Country"
+                    defaultSortIndex={0}
+                    defaultSortOrder="asc" />
+            </DataGrid>
+        );
     }
-    export default App;
 
 ---
 

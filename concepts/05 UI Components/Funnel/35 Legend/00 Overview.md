@@ -62,17 +62,13 @@ Properties that configure the legend's appearance, location, and content are col
     import React from 'react';
     import Funnel, { Legend } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel ... >
-                    <Legend visible={true} />
-                </Funnel>
-            );
-        }
+    export default function App() {
+        return (
+            <Funnel ... >
+                <Legend visible={true} />
+            </Funnel>
+        );
     }
-
-    export default App;
 
 ---
 

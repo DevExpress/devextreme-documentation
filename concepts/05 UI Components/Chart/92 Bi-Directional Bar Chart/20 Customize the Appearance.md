@@ -111,20 +111,18 @@ UI elements like [tooltips](/concepts/05%20UI%20Components/Chart/30%20Tooltips/0
         Label
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Tooltip
-                        enabled={true}
-                        customizeTooltip={customizeTooltip}
-                    />
-                    <ValueAxis>
-                        <Label customizeText={customizeLabel} />
-                    </ValueAxis>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Tooltip
+                    enabled={true}
+                    customizeTooltip={customizeTooltip}
+                />
+                <ValueAxis>
+                    <Label customizeText={customizeLabel} />
+                </ValueAxis>
+            </Chart>
+        );
     }
 
     function customizeTooltip(pointInfo) {

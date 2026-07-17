@@ -107,18 +107,15 @@ The following code sample illustrates how to set this property:
         Font
     } from 'devextreme-react/{widget-name}';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <{WidgetName} ... >
-                    <Title ... >
-                        <Font color="black" />
-                    </Title>
-                </{WidgetName}>
-            );
-        }
+    export default function App() {
+        return (
+            <{WidgetName} ... >
+                <Title ... >
+                    <Font color="black" />
+                </Title>
+            </{WidgetName}>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

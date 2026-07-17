@@ -63,19 +63,15 @@ Every UI component that supports palettes has a [palette](/api-reference/10%20UI
 
     const customPalette = ['#60a69f', '#78b6d9', '#6682bb', '#a37182', '#eeba69'];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PieChart ...
-                    palette="Harmony Light">
-                    {/* ===== or custom colors ===== */}
-                    {/* palette={customPalette}> */}
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PieChart ...
+                palette="Harmony Light">
+                {/* ===== or custom colors ===== */}
+                {/* palette={customPalette} */}
+            </PieChart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -183,23 +179,19 @@ In the CircularGauge and LinearGauge, the palette can be specified in the [range
 
     const subvalues = [25, 40, 68];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <CircularGauge
-                    subvalues={subvalues}>
-                    <SubvalueIndicator palette="Soft Pastel" />
-                    <RangeContainer palette="Violet">
-                        <Range startValue={0} endValue={30} />
-                        <Range startValue={30} endValue={70} />
-                        <Range startValue={70} endValue={100} />
-                    </RangeContainer>
-                </CircularGauge>
-            );
-        }
+    export default function App() {
+        return (
+            <CircularGauge
+                subvalues={subvalues}>
+                <SubvalueIndicator palette="Soft Pastel" />
+                <RangeContainer palette="Violet">
+                    <Range startValue={0} endValue={30} />
+                    <Range startValue={30} endValue={70} />
+                    <Range startValue={70} endValue={100} />
+                </RangeContainer>
+            </CircularGauge>
+        );
     }
-
-    export default App;
 
 ---
 

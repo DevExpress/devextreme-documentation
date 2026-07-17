@@ -87,19 +87,15 @@ For a minor customization of Lookup items, you can define [specific fields](/api
         { text: 'SuperPlasma 50', visible: false }
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Lookup
-                    dataSource={dataSource}
-                    valueExpr="text"
-                    displayExpr="text"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Lookup
+                dataSource={dataSource}
+                valueExpr="text"
+                displayExpr="text"
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -255,19 +251,15 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
         );
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Lookup
-                    dataSource={dataSource}
-                    valueExpr="id"
-                    itemRender={renderItem}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Lookup
+                dataSource={dataSource}
+                valueExpr="id"
+                itemRender={renderItem}
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -412,20 +404,16 @@ Using similar techniques, you can customize the input field of the Lookup. The t
         );
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Lookup
-                    dataSource={dataSource}
-                    valueExpr="id"
-                    displayExpr="name"
-                    fieldRender={renderField}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Lookup
+                dataSource={dataSource}
+                valueExpr="id"
+                displayExpr="name"
+                fieldRender={renderField}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

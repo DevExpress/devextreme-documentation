@@ -71,14 +71,11 @@ If a user deletes a [recurring appointment](/concepts/05%20UI%20Components/Sched
 
     import Scheduler from 'devextreme-react/scheduler';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler recurrenceEditMode="occurrence" /> {/* or 'series' | 'dialog' */}
-            );
-        }
+    export default function App() {
+        return (
+            <Scheduler recurrenceEditMode="occurrence" /> {/* or 'series' | 'dialog' */}
+        );
     }
-    export default App;
 
 ---
 
@@ -153,15 +150,12 @@ To prevent a user from deleting an appointment, set the **editing**.[allowDeleti
 
     import Scheduler, { Editing } from 'devextreme-react/scheduler';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler ... >
-                    <Editing allowDeleting={true} />
-                </Scheduler>
-            );
-        }
+    export default function App() {
+        return (
+            <Scheduler ... >
+                <Editing allowDeleting={true} />
+            </Scheduler>
+        );
     }
-    export default App;
 
 ---

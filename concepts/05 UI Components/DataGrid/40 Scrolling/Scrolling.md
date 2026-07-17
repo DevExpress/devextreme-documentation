@@ -95,16 +95,13 @@ Use the **scrolling**.[mode](/api-reference/10%20UI%20Components/dxDataGrid/1%20
         Scrolling
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Scrolling mode="standard" /> {/* or "virtual" | "infinite" */}
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Scrolling mode="standard" /> {/* or "virtual" | "infinite" */}
+            </DataGrid>
+        );
     }
-    export default App;
     
 ---
 
@@ -181,18 +178,15 @@ The DataGrid adapts its scrolling mechanism to the current platform. It utilizes
         Scrolling
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Scrolling
-                        useNative={true}
-                    />
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Scrolling
+                    useNative={true}
+                />
+            </DataGrid>
+        );
     }
-    export default App;
     
 ---
 
@@ -277,20 +271,17 @@ The current platform determines the native scrolling settings and you cannot adj
         Scrolling
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Scrolling
-                        useNative={false}
-                        scrollByContent={true}
-                        scrollByThumb={true}
-                        showScrollbar="onHover" /> {/* or "onScroll" | "always" | "never" */}
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Scrolling
+                    useNative={false}
+                    scrollByContent={true}
+                    scrollByThumb={true}
+                    showScrollbar="onHover" /> {/* or "onScroll" | "always" | "never" */}
+            </DataGrid>
+        );
     }
-    export default App;
     
 ---
 

@@ -131,20 +131,16 @@ Items in the TagBox can be grouped if they are grouped in the data source. The T
         ]
     }];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TagBox
-                    dataSource={fruitsVegetables}
-                    grouped={true}
-                    displayExpr="name"
-                    valueExpr="count"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TagBox
+                dataSource={fruitsVegetables}
+                grouped={true}
+                displayExpr="name"
+                valueExpr="count"
+            />
+        );
     }
-
-    export default App;
 
 ---
 

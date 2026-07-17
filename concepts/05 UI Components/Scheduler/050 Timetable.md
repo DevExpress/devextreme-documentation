@@ -127,22 +127,18 @@ The Scheduler UI component allows you to customize its timetable. You can specif
 
     const currentDate = new Date(2016, 4, 25);
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler
-                    dataSource={dataSource}
-                    defaultCurrentDate={currentDate}
-                    startDayHour={8}
-                    endDayHour={19}
-                    cellDuration={60}
-                    firstDayOfWeek={1}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Scheduler
+                dataSource={dataSource}
+                defaultCurrentDate={currentDate}
+                startDayHour={8}
+                endDayHour={19}
+                cellDuration={60}
+                firstDayOfWeek={1}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

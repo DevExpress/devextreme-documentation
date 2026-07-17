@@ -84,19 +84,15 @@ Use the [ODataStore](/api-reference/30%20Data%20Layer/ODataStore '/Documentation
         key: "Product_ID"
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TagBox
-                    dataSource={dataSource}
-                    valueExpr="Product_Cost"
-                    displayExpr="Product_Name"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TagBox
+                dataSource={dataSource}
+                valueExpr="Product_Cost"
+                displayExpr="Product_Name"
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -204,19 +200,15 @@ Data kept in the **ODataStore** can be processed in a [DataSource](/api-referenc
         filter: ["Product_Available", "=", true]
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TagBox
-                    dataSource={dataSource}
-                    valueExpr="Product_Cost"
-                    displayExpr="Product_Name"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TagBox
+                dataSource={dataSource}
+                valueExpr="Product_Cost"
+                displayExpr="Product_Name"
+            />
+        );
     }
-
-    export default App;
 
 ---
 

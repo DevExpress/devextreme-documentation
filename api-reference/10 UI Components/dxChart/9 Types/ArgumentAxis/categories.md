@@ -184,21 +184,17 @@ Arguments of the `string` type on discrete axes maintain the order of objects in
         'South America'
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                &lt;{WidgetName} ... 
-                    dataSource={dataSource}&gt;
-                    &lt;ArgumentAxis
-                        categories={continentNames}
-                        argumentField="continent"
-                    /&gt;
-                &lt;/{WidgetName}&gt;
-            );
-        }
-    }
-
-    export default App;     
+    export default function App() {
+        return (
+            &lt;{WidgetName} ... 
+                dataSource={dataSource}&gt;
+                &lt;ArgumentAxis
+                    categories={continentNames}
+                    argumentField="continent"
+                /&gt;
+            &lt;/{WidgetName}&gt;
+        );
+    }     
 
 ---
 

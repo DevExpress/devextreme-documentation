@@ -87,17 +87,14 @@ Assigning **true** to the **grouping**.[contextMenuEnabled](/api-reference/10%20
         GroupPanel
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Grouping contextMenuEnabled={true} />
-                    <GroupPanel visible={true} /> {/* or "auto" */}
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Grouping contextMenuEnabled={true} />
+                <GroupPanel visible={true} /> {/* or "auto" */}
+            </DataGrid>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 
@@ -189,19 +186,16 @@ You can prevent a user from dragging columns to the group panel, in which case i
         GroupPanel
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <GroupPanel
-                        visible={true}
-                        allowColumnDragging={false}
-                    />
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <GroupPanel
+                    visible={true}
+                    allowColumnDragging={false}
+                />
+            </DataGrid>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 
@@ -297,18 +291,15 @@ If a specific column should never take part in grouping, set its [allowGrouping]
         Column
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Column
-                        dataField="id"
-                        allowGrouping={false} />
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Column
+                    dataField="id"
+                    allowGrouping={false} />
+            </DataGrid>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

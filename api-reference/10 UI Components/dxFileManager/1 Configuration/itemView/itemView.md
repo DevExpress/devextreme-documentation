@@ -106,20 +106,17 @@ Configures the file and directory view.
 
     import FileManager, { ItemView } from 'devextreme-react/file-manager';
     
-    class App extends React.Component {
-        render() {
-            return (
-                <FileManager>
-                    <ItemView 
-                        mode="thumbnails"
-                        showFolders={false}
-                        showParentFolder={false}
-                    />
-                </FileManager>
-            );
-        }
+    export default function App() {
+        return (
+            <FileManager>
+                <ItemView 
+                    mode="thumbnails"
+                    showFolders={false}
+                    showParentFolder={false}
+                />
+            </FileManager>
+        );
     }
-    export default App;
 
 ##### ASP.NET Core Controls
 

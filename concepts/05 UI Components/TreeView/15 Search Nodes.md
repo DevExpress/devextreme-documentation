@@ -119,22 +119,18 @@ Searching is disabled in the TreeView UI component by default. Assign **true** t
     ];
 
     const searchExpr = ["count", "name"];
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeView
-                    dataStructure="plain"
-                    dataSource={treeViewData}
-                    keyExpr="key"
-                    displayExpr="name"
-                    parentIdExpr="parent"
-                    searchEnabled={true}
-                    searchExpr={searchExpr} />
-            );
-        }
+    export default function App() {
+        return (
+            <TreeView
+                dataStructure="plain"
+                dataSource={treeViewData}
+                keyExpr="key"
+                displayExpr="name"
+                parentIdExpr="parent"
+                searchEnabled={true}
+                searchExpr={searchExpr} />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -255,23 +251,19 @@ When a user types a string in the input field, the TreeView suggests all nodes t
     ];
 
     const searchExpr = ["count", "name"];
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeView
-                    dataStructure="plain"
-                    dataSource={treeViewData}
-                    keyExpr="key"
-                    displayExpr="name"
-                    parentIdExpr="parent"
-                    searchMode="startswith"
-                    searchEnabled={true}
-                    searchExpr={searchExpr} />
-            );
-        }
+    export default function App() {
+        return (
+            <TreeView
+                dataStructure="plain"
+                dataSource={treeViewData}
+                keyExpr="key"
+                displayExpr="name"
+                parentIdExpr="parent"
+                searchMode="startswith"
+                searchEnabled={true}
+                searchExpr={searchExpr} />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -397,26 +389,22 @@ You can customize the search panel by specifying the [searchEditorOptions](/api-
         { key: '2_2', name: 'Tomatoes', count: 23, parent: '2' }
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeView
-                    dataStructure="plain"
-                    dataSource={treeViewData}
-                    keyExpr="key"
-                    displayExpr="name"
-                    parentIdExpr="parent"
-                    searchEnabled={true}>
-                    <SearchEditorOptions
-                        placeholder="Type search value here..."
-                        width={300}
-                    />                    
-                </TreeView>    
-            );
-        }
+    export default function App() {
+        return (
+            <TreeView
+                dataStructure="plain"
+                dataSource={treeViewData}
+                keyExpr="key"
+                displayExpr="name"
+                parentIdExpr="parent"
+                searchEnabled={true}>
+                <SearchEditorOptions
+                    placeholder="Type search value here..."
+                    width={300}
+                />                    
+            </TreeView>    
+        );
     }
-
-    export default App;
 
 ---
 

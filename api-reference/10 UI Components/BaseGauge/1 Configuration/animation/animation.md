@@ -105,19 +105,16 @@ To make your gauge "live", enable animation for it by setting the **enabled** pr
         Animation 
     } from 'devextreme-react/{widget-name}';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <{WidgetName} ... >
-                    <Animation
-                        easing="linear"
-                        duration={500}
-                    />
-                </{WidgetName}>
-            );
-        }
+    export default function App() {
+        return (
+            <{WidgetName} ... >
+                <Animation
+                    easing="linear"
+                    duration={500}
+                />
+            </{WidgetName}>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

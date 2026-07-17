@@ -63,19 +63,15 @@ Load JSON data by assigning its URL to the [dataSource](/api-reference/10%20UI%2
 
     import { Lookup } from 'devextreme-react/lookup';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Lookup
-                    dataSource="https://jsonplaceholder.typicode.com/users"
-                    valueExpr="username"
-                    displayExpr="name"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Lookup
+                dataSource="https://jsonplaceholder.typicode.com/users"
+                valueExpr="username"
+                displayExpr="name"
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -139,17 +135,13 @@ Note that you can also use a JSONP callback parameter.
 
     import { Lookup } from 'devextreme-react/lookup';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Lookup ...
-                    dataSource="http://www.example.com/dataservices/jsonpdata?callback=?"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Lookup ...
+                dataSource="http://www.example.com/dataservices/jsonpdata?callback=?"
+            />
+        );
     }
-
-    export default App;
 
 ---
 

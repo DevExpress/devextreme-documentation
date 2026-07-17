@@ -164,18 +164,14 @@ You can also define custom masking elements using the [maskRules](/api-reference
         }
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TextBox
-                    maskRules={maskRules}
-                    mask="SFFFFHN"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TextBox
+                maskRules={maskRules}
+                mask="SFFFFHN"
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -255,18 +251,14 @@ By default, the UI component uses underscores to designate blanks in the masked 
 
     import { TextBox } from 'devextreme-react/text-box';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TextBox
-                    mask="+1 (200) 000-0000"
-                    maskChar="‒"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TextBox
+                mask="+1 (200) 000-0000"
+                maskChar="‒"
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -332,18 +324,14 @@ If the input value does not match the mask, the TextBox displays an error messag
 
     import { TextBox } from 'devextreme-react/text-box';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TextBox
-                    mask="+1 (200) 000-0000"
-                    maskInvalidMessage="The input value does not match the mask"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TextBox
+                mask="+1 (200) 000-0000"
+                maskInvalidMessage="The input value does not match the mask"
+            />
+        );
     }
-
-    export default App;
 
 ---
 

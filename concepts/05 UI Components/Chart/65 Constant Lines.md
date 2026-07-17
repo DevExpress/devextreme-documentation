@@ -95,24 +95,20 @@ To configure the constant lines, declare the [constantLines](/api-reference/10%2
         ConstantLine
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ArgumentAxis>
-                        <ConstantLine value={100}/>
-                        <ConstantLine value={50}/>
-                    </ArgumentAxis>
-                    <ValueAxis>
-                        <ConstantLine value={40}/>
-                        <ConstantLine value={70}/>
-                    </ValueAxis>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ArgumentAxis>
+                    <ConstantLine value={100}/>
+                    <ConstantLine value={50}/>
+                </ArgumentAxis>
+                <ValueAxis>
+                    <ConstantLine value={40}/>
+                    <ConstantLine value={70}/>
+                </ValueAxis>
+            </Chart>
+        );
     }
-
-    export default App;
     
 ---
 
@@ -261,37 +257,33 @@ Note that individual settings override axis-specific settings which, in turn, ov
         ConstantLineStyle
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ArgumentAxis ... >
-                        <ConstantLine ... >
-                            {/* high priority */}
-                        </ConstantLine>
-                        <ConstantLineStyle ... >
-                            {/* middle priority */}
-                        </ConstantLineStyle>
-                    </ArgumentAxis>
-                    <ValueAxis ... >
-                        <ConstantLine ... >
-                            {/* high priority */}
-                        </ConstantLine>
-                        <ConstantLineStyle ... >
-                            {/* middle priority */}
-                        </ConstantLineStyle>
-                    </ValueAxis>
-                    <CommonAxisSettings>
-                        <ConstantLineStyle ... >
-                            {/* low priority */}
-                        </ConstantLineStyle>
-                    </CommonAxisSettings>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ArgumentAxis ... >
+                    <ConstantLine ... >
+                        {/* high priority */}
+                    </ConstantLine>
+                    <ConstantLineStyle ... >
+                        {/* middle priority */}
+                    </ConstantLineStyle>
+                </ArgumentAxis>
+                <ValueAxis ... >
+                    <ConstantLine ... >
+                        {/* high priority */}
+                    </ConstantLine>
+                    <ConstantLineStyle ... >
+                        {/* middle priority */}
+                    </ConstantLineStyle>
+                </ValueAxis>
+                <CommonAxisSettings>
+                    <ConstantLineStyle ... >
+                        {/* low priority */}
+                    </ConstantLineStyle>
+                </CommonAxisSettings>
+            </Chart>
+        );
     }
-
-    export default App;
     
 ---
 

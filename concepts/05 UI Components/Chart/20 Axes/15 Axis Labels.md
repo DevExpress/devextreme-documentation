@@ -82,22 +82,18 @@ You can configure axis labels using the [label](/api-reference/10%20UI%20Compone
         Label
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ArgumentAxis> {/* or ValueAxis, or CommonAxisSettings */}
-                        <Label
-                            staggeringSpacing={10}
-                            displayMode="stagger"
-                        />
-                    </ArgumentAxis>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ArgumentAxis> {/* or ValueAxis, or CommonAxisSettings */}
+                    <Label
+                        staggeringSpacing={10}
+                        displayMode="stagger"
+                    />
+                </ArgumentAxis>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -181,22 +177,18 @@ Another noteworthy property is [overlappingBehavior](/api-reference/10%20UI%20Co
         Label
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ArgumentAxis> {/* or ValueAxis, or CommonAxisSettings */}
-                        <Label
-                            rotationAngle={45}
-                            overlappingBehavior="rotate"
-                        />
-                    </ArgumentAxis>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ArgumentAxis> {/* or ValueAxis, or CommonAxisSettings */}
+                    <Label
+                        rotationAngle={45}
+                        overlappingBehavior="rotate"
+                    />
+                </ArgumentAxis>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

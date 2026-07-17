@@ -103,23 +103,21 @@ You can use the following position markers in this text:
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DataGrid, Summary, TotalItem } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid>
-                    <Summary
-                        <TotalItem 
-                            column="SaleAmount" 
-                            summaryType="sum" 
-                            showInColumn="TotalAmount" 
-                            valueFormat="currency" 
-                            displayFormat="Column: {1}. Sales: {0}" /> <!-- for example, "Column: Total Amount. Sales: $1234" -->
-                    </Summary>
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid>
+                <Summary>
+                    <TotalItem 
+                        column="SaleAmount" 
+                        summaryType="sum" 
+                        showInColumn="TotalAmount" 
+                        valueFormat="currency" 
+                        displayFormat="Column: {1}. Sales: {0}"
+                    /> {/* For instance, "Column: Total Amount. Sales: $1234" */}
+                </Summary>
+            </DataGrid>
+        );
     }
-    export default App;
     
 ---
 

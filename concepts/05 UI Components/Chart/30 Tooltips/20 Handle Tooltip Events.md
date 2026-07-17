@@ -81,15 +81,13 @@ When a tooltip becomes shown or hidden, the Chart fires the [tooltipShown](/api-
     import React from 'react';
     import Chart from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... 
-                    onTooltipShown={onTooltipShown} 
-                    onTooltipHidden={onTooltipHidden}>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... 
+                onTooltipShown={onTooltipShown} 
+                onTooltipHidden={onTooltipHidden}>
+            </Chart>
+        );
     }
 
     function onTooltipShown (e) {

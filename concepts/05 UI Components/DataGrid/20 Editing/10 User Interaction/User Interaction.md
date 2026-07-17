@@ -92,21 +92,18 @@ Grid data can be edited in several modes. Set the **editing**.[mode](/api-refere
         Column
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Editing
-                        allowUpdating={true}
-                        allowAdding={true}
-                        allowDeleting={true}
-                        mode="row" /> {/* 'batch' | 'cell' | 'form' | 'popup' */}
-                    <Column dataField="id" allowEditing={false} />
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Editing
+                    allowUpdating={true}
+                    allowAdding={true}
+                    allowDeleting={true}
+                    mode="row" /> {/* 'batch' | 'cell' | 'form' | 'popup' */}
+                <Column dataField="id" allowEditing={false} />
+            </DataGrid>
+        );
     }
-    export default App;
     
 ---
 

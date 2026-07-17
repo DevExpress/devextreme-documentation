@@ -74,19 +74,15 @@ All properties configuring tooltips are collected in the [tooltip](/api-referenc
         Tooltip
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Tooltip
-                        enabled={true}
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Tooltip
+                    enabled={true}
+                />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -177,18 +173,16 @@ Properties declared in the **tooltip** object apply to all tooltips in the Chart
         Tooltip
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Tooltip
-                        enabled={true}
-                        color="yellow"
-                        customizeTooltip={customizeTooltip}
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Tooltip
+                    enabled={true}
+                    color="yellow"
+                    customizeTooltip={customizeTooltip}
+                />
+            </Chart>
+        );
     }
 
     function customizeTooltip(pointInfo) {

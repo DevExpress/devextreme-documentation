@@ -102,18 +102,15 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
         CommonAnnotationSettings
     } from 'devextreme-react/polar-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PolarChart ... >
-                    <CommonAnnotationSettings
-                        tooltipEnabled={false}
-                    />
-                </PolarChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PolarChart ... >
+                <CommonAnnotationSettings
+                    tooltipEnabled={false}
+                />
+            </PolarChart>
+        );
     }
-    export default App;
 
 ---
 

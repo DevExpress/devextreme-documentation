@@ -64,17 +64,13 @@ With the ever-growing variety of platforms, today's web sites and applications c
     import React from 'react';
     import Funnel, { AdaptiveLayout } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel ... >
-                    <AdaptiveLayout height={300} width={400} />
-                </Funnel>
-            );
-        }
+    export default function App() {
+        return (
+            <Funnel ... >
+                <AdaptiveLayout height={300} width={400} />
+            </Funnel>
+        );
     }
-
-    export default App;
 
 ---
 

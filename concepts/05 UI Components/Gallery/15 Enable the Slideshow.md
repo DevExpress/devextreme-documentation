@@ -87,19 +87,15 @@ The Gallery UI component supports the display of images in a slideshow. To speci
         'https://js.devexpress.com/Content/images/doc/26_1/PhoneJS/person3.png'
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Gallery
-                    dataSource={dataSource}
-                    height={300}
-                    slideshowDelay={1500}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Gallery
+                dataSource={dataSource}
+                height={300}
+                slideshowDelay={1500}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

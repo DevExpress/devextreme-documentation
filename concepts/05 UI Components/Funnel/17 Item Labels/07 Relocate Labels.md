@@ -63,17 +63,13 @@ Labels are arranged in a column by default. Change the **label**.[position](/api
     import React from 'react';
     import Funnel, { Label } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel ... >
-                    <Label position="columns" />
-                </Funnel>
-            );
-        }
+    export default function App() {
+        return (
+            <Funnel ... >
+                <Label position="columns" />
+            </Funnel>
+        );
     }
-
-    export default App;
 
 ---
 

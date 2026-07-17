@@ -103,26 +103,22 @@ To configure point labels, use the fields of the [label](/api-reference/10%20UI%
         Label
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series>
-                        <Label ... >
-                            {/* Settings for all point labels of an individual series */}
-                        </Label>
-                    </Series>
-                    <CommonSeriesSettings ... >
-                        <Label ... >
-                            {/* Settings for all point labels in the Chart */}
-                        </Label>
-                    </CommonSeriesSettings>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series>
+                    <Label ... >
+                        {/* Settings for all point labels of an individual series */}
+                    </Label>
+                </Series>
+                <CommonSeriesSettings ... >
+                    <Label ... >
+                        {/* Settings for all point labels in the Chart */}
+                    </Label>
+                </CommonSeriesSettings>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -209,21 +205,17 @@ Point labels are not visible by default. To make them visible, assign **true** t
         Label
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series>
-                        <Label visible={true}>
-                            <Connector visible={true} />
-                        </Label>
-                    </Series>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series>
+                    <Label visible={true}>
+                        <Connector visible={true} />
+                    </Label>
+                </Series>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

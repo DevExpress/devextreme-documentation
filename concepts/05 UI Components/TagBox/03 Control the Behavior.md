@@ -91,19 +91,15 @@ By default, the TagBox closes the drop-down list _immediately_ after a user sele
         // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TagBox
-                    dataSource={dataSource}
-                    showSelectionControls={true}
-                    applyValueMode="useButtons"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TagBox
+                dataSource={dataSource}
+                showSelectionControls={true}
+                applyValueMode="useButtons"
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -197,18 +193,14 @@ When selected items overflow the input field, they are arranged in several lines
         // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TagBox
-                    dataSource={dataSource}
-                    multiline={false}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TagBox
+                dataSource={dataSource}
+                multiline={false}
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -302,18 +294,14 @@ By default, selected items stay in the drop-down list. If they should be hidden 
         // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TagBox
-                    dataSource={dataSource}
-                    hideSelectedItems={true}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TagBox
+                dataSource={dataSource}
+                hideSelectedItems={true}
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -407,18 +395,14 @@ The TagBox allows a user to clear selection in one click on the **Clear** button
         // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TagBox
-                    dataSource={dataSource}
-                    showClearButton={true}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TagBox
+                dataSource={dataSource}
+                showClearButton={true}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

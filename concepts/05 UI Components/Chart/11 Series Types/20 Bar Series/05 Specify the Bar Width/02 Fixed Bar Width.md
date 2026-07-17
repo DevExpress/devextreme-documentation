@@ -83,20 +83,16 @@ The [barWidth](/api-reference/10%20UI%20Components/dxChart/5%20Series%20Types/Co
         CommonSeriesSettings
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series barWidth={50} /> {/* for an individual series */}
-                    <Series ... />
-                    ...
-                    <CommonSeriesSettings barWidth={50}/> {/* for all series in the chart */}
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series barWidth={50} /> {/* for an individual series */}
+                <Series ... />
+                ...
+                <CommonSeriesSettings barWidth={50}/> {/* for all series in the chart */}
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -161,16 +157,12 @@ Bar groups' width can be changed using the [barGroupWidth](/api-reference/10%20U
     import React from 'react';
     import Chart from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ...
-                    barGroupWidth={250}>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ...
+                barGroupWidth={250}>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---

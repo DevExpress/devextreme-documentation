@@ -147,33 +147,29 @@ The content of a tab can be organized in columns. The [colCount](/api-reference/
         email: 'jheart@dx-email.com'
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Form
-                    formData={employee}
-                    colCount={2}>
-                    <SimpleItem dataField="name" />
-                    <TabbedItem colSpan={2}>
-                        <Tab
-                            title="Info"
-                            colCount={3}>
-                            <SimpleItem dataField="position" />
-                            <SimpleItem dataField="hireDate" />
-                            <SimpleItem dataField="city" />
-                        </Tab>
-                        <Tab
-                            title="Contacts"
-                            colCount={2}>
-                            <SimpleItem dataField="phone" />
-                            <SimpleItem dataField="email" />
-                        </Tab>
-                    </TabbedItem>
-                </Form>
-            );
-        }
+    export default function App() {
+        return (
+            <Form
+                formData={employee}
+                colCount={2}>
+                <SimpleItem dataField="name" />
+                <TabbedItem colSpan={2}>
+                    <Tab
+                        title="Info"
+                        colCount={3}>
+                        <SimpleItem dataField="position" />
+                        <SimpleItem dataField="hireDate" />
+                        <SimpleItem dataField="city" />
+                    </Tab>
+                    <Tab
+                        title="Contacts"
+                        colCount={2}>
+                        <SimpleItem dataField="phone" />
+                        <SimpleItem dataField="email" />
+                    </Tab>
+                </TabbedItem>
+            </Form>
+        );
     }
-
-    export default App;
 
 ---

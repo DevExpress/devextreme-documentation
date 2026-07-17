@@ -94,17 +94,13 @@ In the most simple case, the MultiView UI component requires only the [dataSourc
         { text: 'Address' }
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <MultiView
-                    dataSource={multiViewItems}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <MultiView
+                dataSource={multiViewItems}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

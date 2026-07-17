@@ -17,6 +17,7 @@ The following code snippet calls **byKey()** and handles the returned promise:
 ---
 ##### jQuery
 
+    <!-- tab: index.js -->
     $('#{widget-name}-container').dx{WidgetName}('instance')
         .byKey(15).then((dataObject) => {
             // process "dataObject"
@@ -28,11 +29,11 @@ The following code snippet calls **byKey()** and handles the returned promise:
 
     <!-- tab: app.component.ts -->
     import { ViewChild, AfterViewInit } from '@angular/core';
-    import { Dx{WidgetName}Component } from "devextreme-angular/ui/{widget-name}";
+    import { Dx{WidgetName}Component } from 'devextreme-angular/ui/{widget-name}';
 
     // ...
     export class AppComponent implements AfterViewInit {
-        @ViewChild("{widgetName}Instance", { static: false }) {widgetName}!: Dx{WidgetName}Component;
+        @ViewChild('{widgetName}Instance', { static: false }) {widgetName}!: Dx{WidgetName}Component;
 
         ngAfterViewInit () {
             this.{widgetName}.instance
@@ -68,6 +69,8 @@ The following code snippet calls **byKey()** and handles the returned promise:
                 // handle error
             });
     })
+
+    </script>
 
 ##### React
 

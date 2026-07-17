@@ -224,11 +224,11 @@ To use these summary items for sorting groups, assign an array of objects to the
         return (
             <DataGrid>
                 <SortByGroupSummaryInfo
-                    summaryItem={1}/> {/* determines the maximum income item using its index in the "groupItems" array */}
+                    summaryItem={1} /> {/* determines the maximum income item using its index in the "groupItems" array */}
                 <SortByGroupSummaryInfo
-                    summaryItem="min"/> {/* determines the minimum tasks item using its aggregate function */}
+                    summaryItem="min" /> {/* determines the minimum tasks item using its aggregate function */}
                 <SortByGroupSummaryInfo
-                    summaryItem="Average Age Group Summary"/> {/* determines the average age item using its name */}
+                    summaryItem="Average Age Group Summary" /> {/* determines the average age item using its name */}
             </DataGrid>
         );
     }

@@ -107,23 +107,19 @@ To specify the mark or text for required and optional items, use the [requiredMa
         position: 'CEO'
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Form
-                    formData={employee}
-                    requiredMark="!"
-                    optionalMark="opt"
-                    showOptionalMark={true}>
-                    <SimpleItem dataField="firstName" isRequired={true} />
-                    <SimpleItem dataField="lastName"  isRequired={true} />
-                    <SimpleItem dataField="position" />
-                </Form>
-            );
-        }
+    export default function App() {
+        return (
+            <Form
+                formData={employee}
+                requiredMark="!"
+                optionalMark="opt"
+                showOptionalMark={true}>
+                <SimpleItem dataField="firstName" isRequired={true} />
+                <SimpleItem dataField="lastName"  isRequired={true} />
+                <SimpleItem dataField="position" />
+            </Form>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -230,23 +226,19 @@ Each label ends with a colon. To hide it, assign **false** to the [showColonAfte
         position: 'CEO'
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Form
-                    formData={employee}
-                    showColonAfterLabel={false}>
-                    <SimpleItem dataField="firstName" />
-                    <SimpleItem dataField="lastName" />
-                    <SimpleItem dataField="position">
-                        <Label showColon={true} />
-                    </SimpleItem>
-                </Form>
-            );
-        }
+    export default function App() {
+        return (
+            <Form
+                formData={employee}
+                showColonAfterLabel={false}>
+                <SimpleItem dataField="firstName" />
+                <SimpleItem dataField="lastName" />
+                <SimpleItem dataField="position">
+                    <Label showColon={true} />
+                </SimpleItem>
+            </Form>
+        );
     }
-
-    export default App;
 
 ---
 

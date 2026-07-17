@@ -507,21 +507,17 @@ Apart from the API methods, you can access a series point in the event handlers.
     import React from 'react';
     import PieChart from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PieChart onPointClick={onPointClick}>
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PieChart onPointClick={onPointClick}>
+            </PieChart>
+        );
     }
 
     function onPointClick (e) {
         const point = e.target;
         // ...
     }
-
-    export default App;
 
 ---
 

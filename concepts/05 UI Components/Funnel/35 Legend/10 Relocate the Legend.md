@@ -65,20 +65,16 @@ The legend can be aligned in the horizontal or vertical direction using the [hor
     import React from 'react';
     import Funnel, { Legend } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel ... >
-                    <Legend
-                        horizontalAlignment="center" {/* or "left" | "right" */}
-                        verticalAlignment="top" {/* or "bottom" */}
-                    />
-                </Funnel>
-            );
-        }
+    export default function App() {
+        return (
+            <Funnel ... >
+                <Legend
+                    horizontalAlignment="center" {/* or "left" | "right" */}
+                    verticalAlignment="top" {/* or "bottom" */}
+                />
+            </Funnel>
+        );
     }
-
-    export default App;
 
 ---
 

@@ -130,28 +130,24 @@ The Form UI component allows you to organize items in tabs. In the context of th
         email: 'jheart@dx-email.com'
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Form formData={employee}>
-                    <SimpleItem dataField="name" />
-                    <TabbedItem>
-                        <Tab title="Info">
-                            <SimpleItem dataField="position" />
-                            <SimpleItem dataField="hireDate" />
-                            <SimpleItem dataField="city" />
-                        </Tab>
-                        <Tab title="Contacts">
-                            <SimpleItem dataField="phone" />
-                            <SimpleItem dataField="email" />
-                        </Tab>
-                    </TabbedItem>
-                </Form>
-            );
-        }
+    export default function App() {
+        return (
+            <Form formData={employee}>
+                <SimpleItem dataField="name" />
+                <TabbedItem>
+                    <Tab title="Info">
+                        <SimpleItem dataField="position" />
+                        <SimpleItem dataField="hireDate" />
+                        <SimpleItem dataField="city" />
+                    </Tab>
+                    <Tab title="Contacts">
+                        <SimpleItem dataField="phone" />
+                        <SimpleItem dataField="email" />
+                    </Tab>
+                </TabbedItem>
+            </Form>
+        );
     }
-
-    export default App;
 
 ---
 

@@ -121,16 +121,13 @@ The following code snippet implements **selector** to group birth dates by decad
         }]
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PivotGrid ...
-                    dataSource={pivotGridDataSource}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <PivotGrid ...
+                dataSource={pivotGridDataSource}
+            />
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 
@@ -251,16 +248,13 @@ The following code snippet places values below and over 1000 into separate group
         }]
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PivotGrid
-                    dataSource={pivotGridDataSource}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <PivotGrid
+                dataSource={pivotGridDataSource}
+            />
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

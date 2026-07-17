@@ -80,20 +80,17 @@ In the following code, left and right boundaries are narrowed (**x** is 50), but
         BoundaryOffset
     } from 'devextreme-react/popup';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Popup ... >
-                    <Position
-                        boundaryOffset="50 -50">
-                        {/* or */}
-                        <BoundaryOffset x={50} y={-50} />
-                    </Position>
-                </Popup>
-            );
-        }
+    export default function App() {
+        return (
+            <Popup ... >
+                <Position
+                    boundaryOffset="50 -50">
+                    {/* or */}
+                    <BoundaryOffset x={50} y={-50} />
+                </Position>
+            </Popup>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

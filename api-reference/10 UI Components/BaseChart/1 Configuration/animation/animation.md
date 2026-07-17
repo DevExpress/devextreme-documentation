@@ -109,19 +109,16 @@ The UI component animates its elements at the beginning of its lifetime and when
         Animation 
     } from 'devextreme-react/{widget-name}';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <{WidgetName} ... >
-                    <Animation
-                        easing="linear"
-                        duration={500}
-                        maxPointCountSupported={100}
-                    />
-                </{WidgetName}>
-            );
-        }
+    export default function App() {
+        return (
+            <{WidgetName} ... >
+                <Animation
+                    easing="linear"
+                    duration={500}
+                    maxPointCountSupported={100}
+                />
+            </{WidgetName}>
+        );
     }
-    export default App;
 
 ---

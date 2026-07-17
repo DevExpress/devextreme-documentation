@@ -78,20 +78,17 @@ To position an element, specify the [my](/api-reference/50%20Common/Object%20Str
         Position
     } from 'devextreme-react/popup';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Popup ... >
-                    <Position
-                        my="left"
-                        at="right"
-                        of="#target"
-                    />
-                </Popup>
-            );
-        }
+    export default function App() {
+        return (
+            <Popup ... >
+                <Position
+                    my="left"
+                    at="right"
+                    of="#target"
+                />
+            </Popup>
+        );
     }
-    export default App;
 
 ---
 

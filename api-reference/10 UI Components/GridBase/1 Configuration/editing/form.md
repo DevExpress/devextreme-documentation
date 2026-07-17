@@ -211,37 +211,34 @@ Default form editors depend on the [columns' configuration](/api-reference/10%20
     } from 'devextreme-react/{widget-name}';
     import { Item } from 'devextreme-react/form';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <{WidgetName} ... >
-                    <Editing
-                        mode="form"
-                        allowUpdating={true}>
-                        <Form>
-                            <Item itemType="group" caption="Personal Data">
-                                <Item dataField="Prefix" />
-                                <Item dataField="Full_Name" />
-                                <Item dataField="Position" />
-                                <Item dataField="Duties" editorType="dxTextArea" />
-                            </Item>
-                            <Item itemType="group" caption="Contacts">
-                                <Item dataField="Email" />
-                                <Item dataField="Skype" />
-                            </Item>
-                        </Form>
-                    </Editing>
-                    <Column dataField="Prefix" />
-                    <Column dataField="Full_Name" />
-                    <Column dataField="Position" />
-                    <Column dataField="Duties" />
-                    <Column dataField="Email" />
-                    <Column dataField="Skype" />
-                </{WidgetName}>
-            );
-        }
+    export default function App() {
+        return (
+            <{WidgetName} ... >
+                <Editing
+                    mode="form"
+                    allowUpdating={true}>
+                    <Form>
+                        <Item itemType="group" caption="Personal Data">
+                            <Item dataField="Prefix" />
+                            <Item dataField="Full_Name" />
+                            <Item dataField="Position" />
+                            <Item dataField="Duties" editorType="dxTextArea" />
+                        </Item>
+                        <Item itemType="group" caption="Contacts">
+                            <Item dataField="Email" />
+                            <Item dataField="Skype" />
+                        </Item>
+                    </Form>
+                </Editing>
+                <Column dataField="Prefix" />
+                <Column dataField="Full_Name" />
+                <Column dataField="Position" />
+                <Column dataField="Duties" />
+                <Column dataField="Email" />
+                <Column dataField="Skype" />
+            </{WidgetName}>
+        );
     }
-    export default App;
 
 ---
 

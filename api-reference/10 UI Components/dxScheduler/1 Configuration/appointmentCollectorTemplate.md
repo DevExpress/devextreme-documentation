@@ -117,17 +117,13 @@ Initially hidden appointments that are displayed after a user clicks an overflow
         );
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler ...
-                    appointmentCollectorRender={renderCellOverflowIndicator}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Scheduler ...
+                appointmentCollectorRender={renderCellOverflowIndicator}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

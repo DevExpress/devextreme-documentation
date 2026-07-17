@@ -89,19 +89,16 @@ Configures upload settings.
 
     import FileManager, { Upload } from 'devextreme-react/file-manager';
     
-    class App extends React.Component {
-        render() {
-            return (
-                <FileManager>
-                    <Upload 
-                        chunkSize={500000} 
-                        maxFileSize={1000000}
-                    />
-                </FileManager>
-            );
-        }
+    export default function App() {
+        return (
+            <FileManager>
+                <Upload 
+                    chunkSize={500000} 
+                    maxFileSize={1000000}
+                />
+            </FileManager>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

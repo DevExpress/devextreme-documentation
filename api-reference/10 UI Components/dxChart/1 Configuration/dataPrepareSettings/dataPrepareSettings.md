@@ -104,17 +104,14 @@ The following code shows the **dataPrepareSettings** declaration syntax:
         DataPrepareSettings 
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <DataPrepareSettings
-                        sortingMethod={false}
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <DataPrepareSettings
+                    sortingMethod={false}
+                />
+            </Chart>
+        );
     }
-    export default App;
 
 ---

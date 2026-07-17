@@ -87,15 +87,12 @@ Each path part has each own key. For example, path "directory1/directory2" has t
     
     const keys = ['EB458000-0341-6943', '92F5-4722-A7D6-98EB']
 
-    class App extends React.Component {
-        render() {
-            return (
-                <FileManager currentPathKeys={keys} >
-                </FileManager>
-            );
-        }
+    export default function App() {
+        return (
+            <FileManager currentPathKeys={keys} >
+            </FileManager>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

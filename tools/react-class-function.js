@@ -3,18 +3,17 @@ let path = require('path');
 
 const indentLevel = 0;
 
-function tabCount(count) {
-    return indentLevel * 4 + count * 4;
-}
+const spaceCount = (tabCount) => (indentLevel * 4 + tabCount * 4);
+const generateTabs = (tabCount) => Array(spaceCount(tabCount)).fill(' ').join('');
 
-const mainRegex = new RegExp(`class App extends React\\.Component \\{\\n {${tabCount(2)}}render\\(\\) \\{\\n {${tabCount(3)}}return \\(\\n((?:(?!return)[\\s\\S])+?) {${tabCount(3)}}\\);\\n {${tabCount(2)}}\\}\\n {${tabCount(1)}}\\}`, 'gi')
+const mainRegex = new RegExp(`class App extends React\\.Component \\{\\n {${spaceCount(2)}}render\\(\\) \\{\\n {${spaceCount(3)}}return \\(\\n((?:(?!return)[\\s\\S])+?) {${spaceCount(3)}}\\);\\n {${spaceCount(2)}}\\}\\n {${spaceCount(1)}}\\}`, 'gi')
 const exportDefaultRegex = new RegExp(`(?<=${mainRegex.source})\\s+?export default App;`, 'gi')
 
 const specifiedPath = process.argv[2];
 
 function convertToFunctionComponent(match, body) {
     const dedentedBody = body.replace(/^ {4}/gm, '');
-    return `export default function App() {\n        return (\n${dedentedBody}        );\n    }`;
+    return `export default function App() {\n${generateTabs(2)}return (\n${dedentedBody}${generateTabs(2)});\n${generateTabs(1)}}`;
 }
 
 function processFile(filePath) {

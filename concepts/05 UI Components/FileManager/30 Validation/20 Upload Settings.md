@@ -112,19 +112,16 @@ The UI component allows you to configure upload settings:
         Upload, Permissions 
     } from 'devextreme-react/file-manager';
     
-    class App extends React.Component {
-        render() {
-            return (
-                <FileManager>
-                    <Upload 
-                        maxFileSize={1000000} 
-                        chunkSize={500000} />
-                    <Permissions
-                        upload={true} />
-                </FileManager>
-            );
-        }
+    export default function App() {
+        return (
+            <FileManager>
+                <Upload 
+                    maxFileSize={1000000} 
+                    chunkSize={500000} />
+                <Permissions
+                    upload={true} />
+            </FileManager>
+        );
     }
-    export default App;
 
 ---

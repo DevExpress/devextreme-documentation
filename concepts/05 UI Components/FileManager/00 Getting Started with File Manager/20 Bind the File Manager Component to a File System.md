@@ -178,15 +178,12 @@ In the example below, the FileManager UI component displays hierarchical data st
     import FileManager from 'devextreme-react/file-manager';
     import { fileItems } from './data.js';
     
-    class App extends React.Component {
-        render() {
-            return (
-                <FileManager fileSystemProvider={fileItems}>
-                </FileManager>
-            );
-        }
+    export default function App() {
+        return (
+            <FileManager fileSystemProvider={fileItems}>
+            </FileManager>
+        );
     }
-    export default App;
 
     <!-- tab: data.js -->
     export const fileItems = [{

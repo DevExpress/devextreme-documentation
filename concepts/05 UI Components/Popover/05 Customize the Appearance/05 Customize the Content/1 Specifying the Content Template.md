@@ -102,22 +102,18 @@ The following code shows how to create a template consisting of static (text) an
         );
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <div>
-                    <img id="image" src="https://url/to/an/image" />
-                    <Popover
-                        target="#image"
-                        showEvent="dxhoverstart"
-                        contentRender={renderContent}
-                    />
-                </div>
-            );
-        }
+    export default function App() {
+        return (
+            <div>
+                <img id="image" src="https://url/to/an/image" />
+                <Popover
+                    target="#image"
+                    showEvent="dxhoverstart"
+                    contentRender={renderContent}
+                />
+            </div>
+        );
     }
-
-    export default App;
 
 ##### ASP.NET MVC Controls
 

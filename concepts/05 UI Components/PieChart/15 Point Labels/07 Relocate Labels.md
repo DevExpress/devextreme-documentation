@@ -74,16 +74,14 @@ Labels are located beside their series points by default. Change the **series**.
         Label
     } from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PieChart ... >
-                    <Series>
-                        <Label position="columns" /> {/* or "inside" | "outside" */}
-                    </Series>
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PieChart ... >
+                <Series>
+                    <Label position="columns" /> {/* or "inside" | "outside" */}
+                </Series>
+            </PieChart>
+        );
     }
 
 ---

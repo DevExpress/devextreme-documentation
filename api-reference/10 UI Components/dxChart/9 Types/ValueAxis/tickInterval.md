@@ -81,19 +81,15 @@ If the axis displays numbers, set the **tickInterval** to a number. This number 
         TickInterval
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                &lt;Chart ... &gt;
-                    &lt;ValueAxis&gt;
-                        &lt;TickInterval days={5} /&gt;
-                    &lt;/ValueAxis&gt;
-                &lt;/Chart&gt;
-            );
-        }
-    }
-
-    export default App;     
+    export default function App() {
+        return (
+            &lt;Chart ... &gt;
+                &lt;ValueAxis&gt;
+                    &lt;TickInterval days={5} /&gt;
+                &lt;/ValueAxis&gt;
+            &lt;/Chart&gt;
+        );
+    }     
     
 ---
 

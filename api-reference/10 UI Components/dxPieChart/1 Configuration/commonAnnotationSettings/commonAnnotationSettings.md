@@ -102,18 +102,15 @@ The following code shows the **commonAnnotationSettings** declaration syntax:
         CommonAnnotationSettings
     } from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PieChart ... >
-                    <CommonAnnotationSettings
-                        tooltipEnabled={false}
-                    />
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PieChart ... >
+                <CommonAnnotationSettings
+                    tooltipEnabled={false}
+                />
+            </PieChart>
+        );
     }
-    export default App;
 
 ---
 

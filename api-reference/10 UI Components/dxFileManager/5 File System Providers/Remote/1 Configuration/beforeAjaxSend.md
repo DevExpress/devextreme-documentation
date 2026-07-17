@@ -145,16 +145,13 @@ An object (fieldName/fieldValue pairs) to set on the native <a href="https://api
         }  
     });
     
-    class App extends React.Component {
-        render() {
-            return (
-                <FileManager 
-                    fileSystemProvider={remoteFileProvider}>
-                    {/* ... */}
-                </FileManager>
-            );
-        }
+    export default function App() {
+        return (
+            <FileManager 
+                fileSystemProvider={remoteFileProvider}>
+                {/* ... */}
+            </FileManager>
+        );
     }
-    export default App;
 
 ---

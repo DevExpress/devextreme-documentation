@@ -142,28 +142,25 @@ The example below illustrates how to customize label text for all series and ind
         CommonSeriesSettings
     } from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PieChart ... >
-                    <Series valueField="y1564" name="15-64 years"></Series>
-                    <Series valueField="y014" name="0-14 years"></Series>
-                    <Series valueField="y65" name="65 years and older">
-                        <Label displayFormat="<u>65+ years</u>: {value}" >
-                        </Label>
-                    </Series>                
-                    <CommonSeriesSettings ... >
-                        <Label 
-                            visible={true}
-                            displayFormat="{series}: {value}"
-                            >
-                        </Label>
-                    </CommonSeriesSettings>
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PieChart ... >
+                <Series valueField="y1564" name="15-64 years"></Series>
+                <Series valueField="y014" name="0-14 years"></Series>
+                <Series valueField="y65" name="65 years and older">
+                    <Label displayFormat="<u>65+ years</u>: {value}" >
+                    </Label>
+                </Series>                
+                <CommonSeriesSettings ... >
+                    <Label 
+                        visible={true}
+                        displayFormat="{series}: {value}"
+                        >
+                    </Label>
+                </CommonSeriesSettings>
+            </PieChart>
+        );
     }
-    export default App;
 
 ##### ASP.NET Core Controls
 

@@ -114,19 +114,16 @@ The following code shows the **editing**.**texts** declaration syntax:
         Texts
     } from 'devextreme-react/{widget-name}';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <{WidgetName} ... >
-                    <Editing>
-                        <Texts
-                            deleteRow="Remove"
-                        />
-                    </Editing>
-                </{WidgetName}>
-            );
-        }
+    export default function App() {
+        return (
+            <{WidgetName} ... >
+                <Editing>
+                    <Texts
+                        deleteRow="Remove"
+                    />
+                </Editing>
+            </{WidgetName}>
+        );
     }
-    export default App;
 
 ---

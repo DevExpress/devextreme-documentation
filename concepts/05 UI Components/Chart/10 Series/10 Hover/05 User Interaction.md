@@ -102,26 +102,22 @@ Individual series settings override common settings.
         HoverStyle
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series ... >
-                        <HoverStyle>
-                            <!-- high priority -->
-                        </HoverStyle>
-                    </Series>
-                    <CommonSeriesSettings ... >
-                        <HoverStyle>
-                            <!-- low priority -->
-                        </HoverStyle>
-                    </CommonSeriesSettings>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series ... >
+                    <HoverStyle>
+                        {/* high priority */}
+                    </HoverStyle>
+                </Series>
+                <CommonSeriesSettings ... >
+                    <HoverStyle>
+                        {/* low priority */}
+                    </HoverStyle>
+                </CommonSeriesSettings>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -209,24 +205,20 @@ To choose which series elements should be highlighted when a user pauses on a se
         Series
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series
-                        type="bar"
-                        hoverMode="allSeriesPoints" <!-- or "onlyPoint" | "allArgumentPoints" | "none" -->
-                    />
-                    <Series
-                        type="line"
-                        hoverMode="includePoints" <!-- or "nearestPoint" | "excludePoints" | "none" -->
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series
+                    type="bar"
+                    hoverMode="allSeriesPoints"
+                /> {/* or "onlyPoint" | "allArgumentPoints" | "none" */}
+                <Series
+                    type="line"
+                    hoverMode="includePoints"
+                /> {/* or "nearestPoint" | "excludePoints" | "none" */}
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

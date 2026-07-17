@@ -64,19 +64,15 @@ A user can interact with the legend by pausing on legend items. When a user does
         Legend
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Legend
-                        hoverMode="none"
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Legend
+                    hoverMode="none"
+                />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -146,19 +142,15 @@ Series that consist of several elements rather than just series points ([Range A
         Legend
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Legend
-                        hoverMode="excludePoints"
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Legend
+                    hoverMode="excludePoints"
+                />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

@@ -119,29 +119,25 @@ Note that the financial series require four value fields: [openValueField](/api-
     const candleStickSettings = { ... };
     const stockSettings = { ... };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series
-                        type="candlestick"
-                        openValueField="o"
-                        closeValueField="c"
-                        highValueField="h"
-                        lowValueField="l"
-                    />
-                    <Series ... />
-                    ...
-                    <CommonSeriesSettings
-                        candlestick={candleStickSettings}
-                        stock={stockSettings}
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series
+                    type="candlestick"
+                    openValueField="o"
+                    closeValueField="c"
+                    highValueField="h"
+                    lowValueField="l"
+                />
+                <Series ... />
+                ...
+                <CommonSeriesSettings
+                    candlestick={candleStickSettings}
+                    stock={stockSettings}
+                />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -223,22 +219,18 @@ Financial series gauge price reduction by comparing the values of two neighborin
         Reduction
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series ... >
-                        <Reduction
-                            level="high"
-                            color="blue"
-                        />
-                    </Series>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Series ... >
+                    <Reduction
+                        level="high"
+                        color="blue"
+                    />
+                </Series>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

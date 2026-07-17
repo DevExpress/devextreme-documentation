@@ -76,28 +76,24 @@ You need two **Stacked Bar** series for the bi-directional bar chart. The follow
         Series
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <CommonSeriesSettings
-                        type="stackedbar"
-                        argumentField="age"
-                    />
-                    <Series 
-                        valueField="male"
-                        name="Male"
-                    />
-                    <Series
-                        valueField="female"
-                        name="Female"
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <CommonSeriesSettings
+                    type="stackedbar"
+                    argumentField="age"
+                />
+                <Series 
+                    valueField="male"
+                    name="Male"
+                />
+                <Series
+                    valueField="female"
+                    name="Female"
+                />
+            </Chart>
+        );
     }
-
-    export default App;
     
 ---
 

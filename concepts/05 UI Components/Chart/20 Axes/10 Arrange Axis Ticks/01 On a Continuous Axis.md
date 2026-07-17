@@ -131,40 +131,36 @@ A continuous axis indicates numeric or date-time values. If you know the range o
         MinorTickInterval
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ArgumentAxis
-                        tickInterval={10}
-                        minorTickInterval={2}
-                    >
-                        <Tick visible={true} />
-                        <MinorTick visible={true} />
-                    </ArgumentAxis>
+    export default function App() {
+        return (
+            <Chart ... >
+                <ArgumentAxis
+                    tickInterval={10}
+                    minorTickInterval={2}
+                >
+                    <Tick visible={true} />
+                    <MinorTick visible={true} />
+                </ArgumentAxis>
 
-                    {/* or */}
-                    <ArgumentAxis>
-                        <TickInterval years={1} />
-                        <MinorTickInterval months={6} />
-                        <Tick visible={true} />
-                        <MinorTick visible={true} />
-                    </ArgumentAxis>
+                {/* or */}
+                <ArgumentAxis>
+                    <TickInterval years={1} />
+                    <MinorTickInterval months={6} />
+                    <Tick visible={true} />
+                    <MinorTick visible={true} />
+                </ArgumentAxis>
 
-                    {/* or */}
-                    <ArgumentAxis
-                        tickInterval="year"
-                        minorTickInterval="month"
-                    >
-                        <Tick visible={true} />
-                        <MinorTick visible={true} />
-                    </ArgumentAxis>
-                </Chart>
-            );
-        }
+                {/* or */}
+                <ArgumentAxis
+                    tickInterval="year"
+                    minorTickInterval="month"
+                >
+                    <Tick visible={true} />
+                    <MinorTick visible={true} />
+                </ArgumentAxis>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -253,22 +249,18 @@ Without knowing the range of values on the axis, you can arrange major ticks by 
         MinorTick
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ArgumentAxis
-                        axisDivisionFactor={20}
-                        minorTickCount={4}
-                    >
-                        <Tick visible={true} />
-                        <MinorTick visible={true} />
-                    </ArgumentAxis>
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ArgumentAxis
+                    axisDivisionFactor={20}
+                    minorTickCount={4}
+                >
+                    <Tick visible={true} />
+                    <MinorTick visible={true} />
+                </ArgumentAxis>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---

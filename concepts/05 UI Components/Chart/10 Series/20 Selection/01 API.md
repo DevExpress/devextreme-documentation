@@ -81,15 +81,13 @@ The selection capability is not provided out of the box, but it can be implement
     import React from 'react';
     import Chart from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart
-                    onSeriesClick={onSeriesClick}
-                >
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart
+                onSeriesClick={onSeriesClick}
+            >
+            </Chart>
+        );
     }
 
     function onSeriesClick (e) {
@@ -188,15 +186,13 @@ There are series that consist of points only, for example, [bar](/concepts/05%20
     import React from 'react';
     import Chart from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart
-                    onPointClick={onPointClick}
-                >
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart
+                onPointClick={onPointClick}
+            >
+            </Chart>
+        );
     }
 
     function onPointClick (e) {

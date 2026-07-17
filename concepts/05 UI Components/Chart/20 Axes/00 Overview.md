@@ -100,27 +100,23 @@ To configure the argument or value axis individually, use the [argumentAxis](/ap
         CommonAxisSettings
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ArgumentAxis>
-                        {/* high priority */}
-                    </ArgumentAxis>
+    export default function App() {
+        return (
+            <Chart ... >
+                <ArgumentAxis>
+                    {/* high priority */}
+                </ArgumentAxis>
 
-                    <ValueAxis>
-                        {/* high priority */}
-                    </ValueAxis>
+                <ValueAxis>
+                    {/* high priority */}
+                </ValueAxis>
 
-                    <CommonAxisSettings>
-                        {/* low priority */}
-                    </CommonAxisSettings>
-                </Chart>
-            );
-        }
+                <CommonAxisSettings>
+                    {/* low priority */}
+                </CommonAxisSettings>
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -222,23 +218,19 @@ Usually, the Chart chooses the axis type automatically according to the type of 
         ValueAxis
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <ArgumentAxis
-                        argumentType="datetime"
-                        type="discrete"
-                    />
-                    <ValueAxis
-                        valueType="numeric"
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <ArgumentAxis
+                    argumentType="datetime"
+                    type="discrete"
+                />
+                <ValueAxis
+                    valueType="numeric"
+                />
+            </Chart>
+        );
     }
-
-    export default App;
     
 ---
 

@@ -12,4 +12,4 @@ DevExtreme components support the following AI-powered capabilities:
 
 To integrate these features into your application, refer to the following guide: [aiIntegration Setup](/concepts/90%20AI%20Features/10%20aiIntegration%20Setup/00%20aiIntegration%20Setup.md '/Documentation/Guide/AI_Features/aiIntegration_Setup/').
 
-DevExtreme also includes a documentation MCP server for AI coding assistants. For more information, refer to the following topic: [DevExpress MCP Server Configuration](/concepts/90%20AI%20Features/20%20DevExpress%20MCP%20Server%20Configuration/00%20DevExpress%20MCP%20Server%20Configuration.md '/Documentation/Guide/AI_Features/DevExpress_MCP_Server_Configuration/').
+DevExtreme also includes a documentation MCP server for AI coding assistants. For more information, refer to the following topic: [DevExpress MCP Server Configuration](/Documentation/Guide/AI-assisted_Development/DevExpress_MCP_Server_Configuration/).

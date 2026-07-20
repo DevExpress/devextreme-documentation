@@ -1,7 +1,6 @@
 ---
 id: dxDiagram.Options.edges
 type: Object
-default: null
 ---
 ---
 ##### shortDescription

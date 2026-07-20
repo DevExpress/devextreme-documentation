@@ -1,7 +1,7 @@
 ---
 id: BaseWidget.Options.title.subtitle.text
-type: String
-default: null
+type: String | undefined
+default: undefined
 ---
 ---
 ##### shortDescription

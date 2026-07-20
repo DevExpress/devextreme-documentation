@@ -1,6 +1,6 @@
 ---
 id: CollectionWidget.Options.onItemRendered
-type: function(e)
+type: function(e) | null
 default: null
 ---
 ---

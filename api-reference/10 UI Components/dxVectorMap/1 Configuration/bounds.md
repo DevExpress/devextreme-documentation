@@ -1,6 +1,6 @@
 ---
 id: dxVectorMap.Options.bounds
-type: Array<Number>
+type: Array<Number> | undefined
 default: undefined
 notUsedInTheme: 
 ---

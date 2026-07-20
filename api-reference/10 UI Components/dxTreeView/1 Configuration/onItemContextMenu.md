@@ -1,7 +1,7 @@
 ---
 id: dxTreeView.Options.onItemContextMenu
-type: function(e)
-default: null
+type: function(e) | undefined
+default: undefined
 ---
 ---
 ##### shortDescription

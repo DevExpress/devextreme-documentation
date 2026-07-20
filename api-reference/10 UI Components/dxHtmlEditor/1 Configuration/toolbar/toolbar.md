@@ -1,6 +1,6 @@
 ---
 id: dxHtmlEditor.Options.toolbar
-type: dxHtmlEditorToolbar
+type: dxHtmlEditorToolbar | null
 default: null
 inheritsType: dxHtmlEditorToolbar
 ---

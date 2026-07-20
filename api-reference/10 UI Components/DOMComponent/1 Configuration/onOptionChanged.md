@@ -1,7 +1,7 @@
 ---
 id: DOMComponent.Options.onOptionChanged
-type: function(e)
-default: null
+type: function(e) | undefined
+default: undefined
 ---
 ---
 ##### param(e): Object

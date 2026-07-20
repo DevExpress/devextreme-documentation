@@ -1,13 +1,13 @@
 ### v1.16.0
 
 - Added support for DevExtreme v26.1.
-- Added dependency and security fixes.
+- Updated dependencies and applied security fixes.
 
 ### v1.15.0
 
 - Migrated the repository from npm to pnpm.
-- Added dependency and security fixes.
-- Added minor security improvements in DevExtreme Schematics.
+- Updated dependencies and applied security fixes.
+- Added minor security improvements to DevExtreme Schematics.
 
 ### v1.14.2
 

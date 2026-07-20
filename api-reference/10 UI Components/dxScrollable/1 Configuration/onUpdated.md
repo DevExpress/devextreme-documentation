@@ -1,6 +1,6 @@
 ---
 id: dxScrollable.Options.onUpdated
-type: function(e)
+type: function(e) | null
 default: null
 ---
 ---

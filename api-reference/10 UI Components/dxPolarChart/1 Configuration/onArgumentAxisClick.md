@@ -1,7 +1,7 @@
 ---
 id: dxPolarChart.Options.onArgumentAxisClick
 type: function(e)
-default: null
+default: undefined
 notUsedInTheme: 
 ---
 ---

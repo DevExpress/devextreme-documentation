@@ -1,6 +1,6 @@
 ---
 id: Editor.Options.validationErrors
-type: Array<any>
+type: Array<any> | null
 default: null
 ---
 ---

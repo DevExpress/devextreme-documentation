@@ -1,6 +1,6 @@
 ---
 id: CollectionWidget.Options.keyExpr
-type: String | function(item)
+type: String | function(item) | null
 default: null
 ---
 ---

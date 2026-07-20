@@ -1,6 +1,6 @@
 ---
 uid: viz/chart:ArgumentAxis.singleWorkdays
-type: Array<Date, String> | Array<Number>
+type: Array<Date, String> | Array<Number> | undefined
 default: undefined
 ---
 ---

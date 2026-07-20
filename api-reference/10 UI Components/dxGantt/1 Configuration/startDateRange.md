@@ -1,7 +1,7 @@
 ---
 id: dxGantt.Options.startDateRange
-type: Date
-default: null
+type: Date | undefined
+default: undefined
 ---
 ---
 ##### shortDescription

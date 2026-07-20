@@ -1,7 +1,6 @@
 ---
 id: dxActionSheetItem.onClick
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

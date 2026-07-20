@@ -1,7 +1,6 @@
 ---
 id: dxDiagram.Options.toolbox.groups
 type: Array<Object> | Array<Enums.ShapeCategory>
-default: undefined
 ---
 ---
 ##### shortDescription

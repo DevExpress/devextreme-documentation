@@ -1,6 +1,6 @@
 ---
 id: dxTextEditor.Options.onKeyUp
-type: function(e)
+type: function(e) | null
 default: null
 ---
 ---

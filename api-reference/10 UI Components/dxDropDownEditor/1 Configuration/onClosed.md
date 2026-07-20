@@ -1,6 +1,6 @@
 ---
 id: dxDropDownEditor.Options.onClosed
-type: function(e)
+type: function(e) | null
 default: null
 ---
 ---

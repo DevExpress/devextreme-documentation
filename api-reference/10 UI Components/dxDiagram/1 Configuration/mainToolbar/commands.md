@@ -1,7 +1,6 @@
 ---
 id: dxDiagram.Options.mainToolbar.commands
 type: Array<CustomCommand, Enums.Command>
-default: undefined
 inheritsType: ui/diagram:CustomCommand
 ---
 ---

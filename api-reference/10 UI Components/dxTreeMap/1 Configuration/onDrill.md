@@ -1,7 +1,7 @@
 ---
 id: dxTreeMap.Options.onDrill
-type: function(e)
-default: null
+type: function(e) | undefined
+default: undefined
 notUsedInTheme: 
 ---
 ---

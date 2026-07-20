@@ -1,7 +1,7 @@
 ---
 id: BaseWidget.Options.onFileSaving
-type: function(e)
-default: null
+type: function(e) | undefined
+default: undefined
 ---
 ---
 ##### shortDescription

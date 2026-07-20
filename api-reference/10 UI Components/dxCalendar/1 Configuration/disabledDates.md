@@ -1,6 +1,6 @@
 ---
 id: dxCalendar.Options.disabledDates
-type: Array<Date> | function(data)
+type: Array<Date> | function(data) | null
 default: null
 ---
 ---

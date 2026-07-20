@@ -1,7 +1,6 @@
 ---
 id: dxFormTabbedItem.tabs
 type: Array<Object>
-default: undefined
 ---
 ---
 ##### shortDescription

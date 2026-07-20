@@ -1,7 +1,6 @@
 ---
 id: dxDiagram.Options.propertiesPanel.tabs
 type: Array<Object>
-default: undefined
 ---
 ---
 ##### shortDescription

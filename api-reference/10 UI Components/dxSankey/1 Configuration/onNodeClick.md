@@ -1,7 +1,7 @@
 ---
 id: dxSankey.Options.onNodeClick
 type: function(e)
-default: null
+default: undefined
 notUsedInTheme: 
 ---
 ---

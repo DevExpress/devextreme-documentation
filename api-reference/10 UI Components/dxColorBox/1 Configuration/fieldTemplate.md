@@ -1,6 +1,6 @@
 ---
 id: dxColorBox.Options.fieldTemplate
-type: template
+type: template | null
 default: null
 dep: dxDropDownEditor.Options.fieldAddons
 ---

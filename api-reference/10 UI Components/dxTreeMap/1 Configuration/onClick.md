@@ -1,7 +1,7 @@
 ---
 id: dxTreeMap.Options.onClick
 type: function(e)
-default: null
+default: undefined
 notUsedInTheme: 
 ---
 ---

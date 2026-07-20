@@ -1,7 +1,7 @@
 ---
 id: dxPolarChartSeriesTypes.CommonPolarChartSeries.hoverStyle.border.dashStyle
 type: Enums.DashStyle | undefined
-default: 'solid'
+default: undefined
 ---
 ---
 ##### shortDescription

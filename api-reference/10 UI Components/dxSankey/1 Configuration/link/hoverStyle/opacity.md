@@ -1,7 +1,7 @@
 ---
 id: dxSankey.Options.link.hoverStyle.opacity
 type: Number | undefined
-default: 0.5
+default: undefined
 ---
 ---
 ##### shortDescription

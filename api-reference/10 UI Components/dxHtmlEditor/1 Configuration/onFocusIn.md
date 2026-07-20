@@ -1,7 +1,7 @@
 ---
 id: dxHtmlEditor.Options.onFocusIn
-type: function(e)
-default: null
+type: function(e) | undefined
+default: undefined
 ---
 ---
 ##### shortDescription

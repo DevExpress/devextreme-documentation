@@ -1,6 +1,6 @@
 ---
 id: dxTextEditor.Options.onFocusOut
-type: function(e)
+type: function(e) | null
 default: null
 ---
 ---

@@ -1,7 +1,6 @@
 ---
 id: dxHtmlEditorMention.template
 type: template
-default: null
 ---
 ---
 ##### shortDescription

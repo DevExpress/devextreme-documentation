@@ -1,7 +1,6 @@
 ---
 id: dxRangeSelector.Options.chart.seriesTemplate
 type: Object
-default: undefined
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
 ---
 id: dxDropDownList.Options.selectedItem
-type: any
+type: any | null
 default: null
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: CollectionWidget.Options.onSelectionChanging
-type: function(e)
+type: function(e) | null
 default: null
 ---
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxVectorMap.Options.layers.sizeGroups
-type: Array<Number>
+type: Array<Number> | undefined
 default: undefined
 ---
 ---

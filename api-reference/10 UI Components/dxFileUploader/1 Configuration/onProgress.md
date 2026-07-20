@@ -1,7 +1,7 @@
 ---
 id: dxFileUploader.Options.onProgress
-type: function(e)
-default: null
+type: function(e) | undefined
+default: undefined
 ---
 ---
 ##### shortDescription

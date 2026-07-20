@@ -1,7 +1,7 @@
 ---
 notUsedInTheme: 
 uid: viz/chart:ValueAxis.breaks
-type: Array<ScaleBreak>
+type: Array<ScaleBreak> | undefined
 default: undefined
 ---
 ---

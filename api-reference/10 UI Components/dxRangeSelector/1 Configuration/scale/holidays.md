@@ -1,6 +1,6 @@
 ---
 id: dxRangeSelector.Options.scale.holidays
-type: Array<Date, String> | Array<Number>
+type: Array<Date, String> | Array<Number> | undefined
 default: undefined
 ---
 ---

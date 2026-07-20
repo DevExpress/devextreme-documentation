@@ -1,6 +1,6 @@
 ---
 id: dxTextBox.Options.maxLength
-type: String | Number
+type: String | Number | null
 default: null
 ---
 ---

@@ -1,7 +1,7 @@
 ---
 id: dxTreeMap.Options.group.selectionStyle.border.color
 type: String | undefined
-default: '#232323'
+default: undefined
 ---
 ---
 ##### shortDescription

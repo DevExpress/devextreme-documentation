@@ -1,7 +1,7 @@
 ---
 id: BaseChart.Options.onPointClick
 type: function(e)
-default: null
+default: undefined
 notUsedInTheme: 
 ---
 ---

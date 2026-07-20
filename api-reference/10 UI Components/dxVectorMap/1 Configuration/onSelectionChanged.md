@@ -1,7 +1,7 @@
 ---
 id: dxVectorMap.Options.onSelectionChanged
-type: function(e)
-default: null
+type: function(e) | undefined
+default: undefined
 notUsedInTheme: 
 ---
 ---

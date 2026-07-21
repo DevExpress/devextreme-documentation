@@ -112,7 +112,7 @@ Paging properties are set in the [DataSource](/api-reference/30%20Data%20Layer/D
 
 ---
 
-The next page can be rendered when a user scrolls the List down to the bottom, or after a user clicks the **More** button. Set the [pageLoadMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/pageLoadMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#pageLoadMode') property to specify the mode:
+The next page can be rendered when a user scrolls the List down to the bottom, or after a user clicks the **More** button. Set the [pageLoadMode](/api-reference/10%20UI%20Components/dxList/1%20Configuration/pageLoadMode.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#pageLoadMode') property to specify your chosen mode:
 
 ---
 ##### jQuery
@@ -176,6 +176,7 @@ The next page can be rendered when a user scrolls the List down to the bottom, o
 
 #####See Also#####
 - **Data Binding**: [Web API and MongoDB](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/30%20Web%20API%20and%20MongoDB.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API_and_MongoDB/') | [OData Service](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/40%20OData.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/') | [Custom Sources](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/60%20Custom%20Data%20Sources '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/') | [JavaScript Array](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/')
-- [List - Localization](/concepts/05%20UI%20Components/List/50%20Localization.md '/Documentation/Guide/UI_Components/List/Localization/')
+- [List - Localization](/concepts/05%20UI%20Components/List/50%20Localization.md '/concepts/05%20UI%20Components/List/50%20Localization.md')
 
 [tags]list, paging, paginate, pageSize, pageLoadMode
+

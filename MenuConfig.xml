@@ -72,6 +72,7 @@
   <MenuRule Destination="15 Common Concepts/60 Shadow DOM" SourcePattern="Howto:^Common/Shadow DOM" />
 
   <MenuRule Destination="17 AI Features" SourcePattern="Howto:^90 AI Features" />
+  <MenuRule Destination="18 AI-assisted Development" SourcePattern="Howto:^95 AI-assisted Development" />
 
   <MenuRule Destination="20 DevExtreme CLI" SourcePattern="Howto:^Common/DevExtreme CLI" />
   <MenuRule Destination="25 Angular Application Template" SourcePattern="Howto:^40 Angular Components/30 Application Template" />

@@ -260,35 +260,31 @@ The Form UI component can have a fixed number of columns in the layout...
         email: 'jheart@dx-email.com'
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Form 
-                    formData={employee}
-                    colCount="auto"
-                    minColWidth={500}>
-                    <SimpleItem dataField="firstName" />
-                    <SimpleItem dataField="lastName" />
-                    <TabbedItem>
-                        <Tab
-                            title="Info"
-                            colCount={3}>
-                            <SimpleItem dataField="position" />
-                            <SimpleItem dataField="hireDate" />
-                            <SimpleItem dataField="city" />
-                        </Tab>
-                        <Tab
-                            title="Contacts"
-                            colCount={2}>
-                            <SimpleItem dataField="phone" />
-                            <SimpleItem dataField="email" />
-                        </Tab>
-                    </TabbedItem>
-                </Form>
-            );
-        }
+    export default function App() {
+        return (
+            <Form 
+                formData={employee}
+                colCount="auto"
+                minColWidth={500}>
+                <SimpleItem dataField="firstName" />
+                <SimpleItem dataField="lastName" />
+                <TabbedItem>
+                    <Tab
+                        title="Info"
+                        colCount={3}>
+                        <SimpleItem dataField="position" />
+                        <SimpleItem dataField="hireDate" />
+                        <SimpleItem dataField="city" />
+                    </Tab>
+                    <Tab
+                        title="Contacts"
+                        colCount={2}>
+                        <SimpleItem dataField="phone" />
+                        <SimpleItem dataField="email" />
+                    </Tab>
+                </TabbedItem>
+            </Form>
+        );
     }
-
-    export default App;
 
 ---

@@ -1,7 +1,6 @@
 ---
 id: PivotGridDataSource.Options.fields.sortBySummaryPath
 type: Array<Number, String>
-default: undefined
 ---
 ---
 ##### shortDescription
@@ -167,16 +166,13 @@ In the following example, geographic regions displayed in the row header are sor
         }]
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PivotGrid
-                    dataSource={pivotGridDataSource}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <PivotGrid
+                dataSource={pivotGridDataSource}
+            />
+        );
     }
-    export default App;
 
 ---
 

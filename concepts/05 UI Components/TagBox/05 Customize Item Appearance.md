@@ -90,20 +90,16 @@ For a minor customization of TagBox items, you can define [specific fields](/api
         { text: 'SuperPlasma 50', visible: false }
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TagBox
-                    dataSource={dataSource}
-                    valueExpr="text"
-                    displayExpr="text"
-                    placeholder="Select products..."
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TagBox
+                dataSource={dataSource}
+                valueExpr="text"
+                displayExpr="text"
+                placeholder="Select products..."
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -248,20 +244,16 @@ If you need a more flexible solution, define an [itemTemplate](/api-reference/10
         );
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TagBox
-                    dataSource={dataSource}
-                    displayExpr="name"
-                    valueExpr="id"
-                    itemRender={renderItem}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TagBox
+                dataSource={dataSource}
+                displayExpr="name"
+                valueExpr="id"
+                itemRender={renderItem}
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -385,20 +377,16 @@ Using similar techniques, you can also customize tags of the selected items. The
         );
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TagBox
-                    dataSource={dataSource}
-                    valueExpr="id"
-                    displayExpr="name"
-                    tagRender={renderTag}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <TagBox
+                dataSource={dataSource}
+                valueExpr="id"
+                displayExpr="name"
+                tagRender={renderTag}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

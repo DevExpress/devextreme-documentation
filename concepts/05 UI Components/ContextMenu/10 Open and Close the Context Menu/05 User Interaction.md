@@ -91,19 +91,15 @@ By default, the ContextMenu appears when a user right-clicks the [target element
         { text: 'Download', icon: 'download' }
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <ContextMenu
-                    items={contextMenuItems}
-                    target="#someElement"
-                    showEvent="dxcontextmenu dblclick"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <ContextMenu
+                items={contextMenuItems}
+                target="#someElement"
+                showEvent="dxcontextmenu dblclick"
+            />
+        );
     }
-
-    export default App;
 
 ---
 

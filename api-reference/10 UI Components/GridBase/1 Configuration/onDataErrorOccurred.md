@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.onDataErrorOccurred
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

@@ -94,20 +94,16 @@ By default, the Gallery UI component displays one image at a time. To fit more i
         'https://js.devexpress.com/Content/images/doc/26_1/PhoneJS/person4.png'
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Gallery
-                    dataSource={dataSource}
-                    height={300}
-                    width={600}
-                    initialItemWidth={250}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Gallery
+                dataSource={dataSource}
+                height={300}
+                width={600}
+                initialItemWidth={250}
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -210,21 +206,17 @@ When distributing images along the total width, the Gallery may add margins betw
         'https://js.devexpress.com/Content/images/doc/26_1/PhoneJS/person3.png'
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Gallery
-                    dataSource={dataSource}
-                    height={200}
-                    width={320}
-                    initialItemWidth={120}
-                    stretchImages={true}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Gallery
+                dataSource={dataSource}
+                height={200}
+                width={320}
+                initialItemWidth={120}
+                stretchImages={true}
+            />
+        );
     }
-
-    export default App;
 
 ---
 
@@ -329,21 +321,17 @@ The Gallery UI component allows you to display not only the current image, but a
         'https://js.devexpress.com/Content/images/doc/26_1/PhoneJS/person3.png'
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Gallery
-                    dataSource={dataSource}
-                    height={200}
-                    width={320}
-                    initialItemWidth={200}
-                    wrapAround={true}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Gallery
+                dataSource={dataSource}
+                height={200}
+                width={320}
+                initialItemWidth={200}
+                wrapAround={true}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

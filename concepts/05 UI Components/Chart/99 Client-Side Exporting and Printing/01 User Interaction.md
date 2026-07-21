@@ -73,20 +73,16 @@ You can enable both exporting and printing by setting the [export](/api-referenc
         Export
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Export
-                        enabled={true}
-                        printingEnabled={false}
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Export
+                    enabled={true}
+                    printingEnabled={false}
+                />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -166,20 +162,16 @@ If you want to restrict the set of formats available for exporting, change the *
 
     const exportFormats = ['PNG', 'JPEG'];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Export
-                        enabled={true}
-                        formats={exportFormats}
-                        fileName="exported_chart"
-                    />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <Export
+                    enabled={true}
+                    formats={exportFormats}
+                    fileName="exported_chart"
+                />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---

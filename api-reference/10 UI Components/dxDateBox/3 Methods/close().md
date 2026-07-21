@@ -1,7 +1,4 @@
 ---
-id: dxDateBox.close()
----
----
 ##### shortDescription
 Closes the drop-down editor.
 

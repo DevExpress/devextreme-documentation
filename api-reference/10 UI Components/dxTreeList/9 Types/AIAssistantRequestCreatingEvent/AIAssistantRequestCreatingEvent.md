@@ -12,4 +12,8 @@ generateTypeLink:
 The argument type in the [aIAssistantRequestCreating]({basewidgetpath}/Events/#aIAssistantRequestCreating) event.
 
 ---
-<!-- Description goes here -->
+In addition to the fields described in this section, **AIAssistantRequestCreatingEvent** includes the following fields:
+
+- **additionalInfo**: Additional information included in the AI Assistant request.
+- **context**: {WidgetName} context included in the AI Assistant request, such as data and component state information.
+- **responseSchema**: The JSON schema for the AI Assistant response.

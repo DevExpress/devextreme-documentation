@@ -83,16 +83,14 @@ In addition, specify the data field that contains keys used to distinguish betwe
         { id: 4, text: "Log out", icon: "runner" }
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DropDownButton ...
-                    items={actions}
-                    keyExpr="id"
-                    displayExpr="text"
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <DropDownButton ...
+                items={actions}
+                keyExpr="id"
+                displayExpr="text"
+            />
+        );
     }
 
 ---

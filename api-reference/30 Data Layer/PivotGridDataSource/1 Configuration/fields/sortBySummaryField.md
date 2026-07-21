@@ -1,7 +1,6 @@
 ---
 id: PivotGridDataSource.Options.fields.sortBySummaryField
 type: String
-default: undefined
 ---
 ---
 ##### shortDescription
@@ -149,16 +148,13 @@ This and the [sortBySummaryPath](/api-reference/30%20Data%20Layer/PivotGridDataS
         ]
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PivotGrid
-                    dataSource={pivotGridDataSource}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <PivotGrid
+                dataSource={pivotGridDataSource}
+            />
+        );
     }
-    export default App;
 
 ---
 

@@ -95,17 +95,14 @@ To execute certain commands before or after an appointment was added, handle the
         // Handler of the "appointmentAdded" event
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Scheduler ...
-                    onAppointmentAdding={onAppointmentAdding}
-                    onAppointmentAdded={onAppointmentAdded}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <Scheduler ...
+                onAppointmentAdding={onAppointmentAdding}
+                onAppointmentAdded={onAppointmentAdded}
+            />
+        );
     }
-    export default App;
     
 ---
 

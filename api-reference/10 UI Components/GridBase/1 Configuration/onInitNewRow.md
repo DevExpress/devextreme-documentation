@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.onInitNewRow
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

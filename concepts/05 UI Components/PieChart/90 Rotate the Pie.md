@@ -58,15 +58,13 @@ The PieChart provides two properties that control the layout algorithm, allowing
     import React from 'react';
     import PieChart from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PieChart ...
-                    startAngle={45}
-                    segmentsDirection="anticlockwise"> {/* or "clockwise" */}
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PieChart ...
+                startAngle={45}
+                segmentsDirection="anticlockwise"> {/* or "clockwise" */}
+            </PieChart>
+        );
     }
 
 ---

@@ -1,7 +1,4 @@
 ---
-id: dxDateBox.open()
----
----
 ##### shortDescription
 Opens the drop-down editor.
 

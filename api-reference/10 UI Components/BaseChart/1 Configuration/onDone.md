@@ -1,7 +1,7 @@
 ---
 id: BaseChart.Options.onDone
-type: function(e)
-default: null
+type: function(e) | undefined
+default: undefined
 notUsedInTheme: 
 ---
 ---

@@ -1,7 +1,4 @@
 ---
-id: dxDateBox.content()
----
----
 ##### shortDescription
 Gets the popup window's content.
 

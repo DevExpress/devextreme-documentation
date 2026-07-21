@@ -79,20 +79,16 @@ When a user selects funnel items, they change their style to the one specified b
         Hatching
     } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel ... >
-                    <Item ... >
-                        <SelectionStyle>
-                            <Hatching direction="left" />
-                        </SelectionStyle>
-                    </Item>
-                </Funnel>
-            );
-        }
+    export default function App() {
+        return (
+            <Funnel ... >
+                <Item ... >
+                    <SelectionStyle>
+                        <Hatching direction="left" />
+                    </SelectionStyle>
+                </Item>
+            </Funnel>
+        );
     }
-
-    export default App;
 
 ---

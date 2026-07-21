@@ -1,7 +1,6 @@
 ---
 id: HeaderPanel.dragging.onRemove
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

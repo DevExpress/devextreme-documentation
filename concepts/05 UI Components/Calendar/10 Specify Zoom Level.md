@@ -59,14 +59,11 @@ To specify which calendar view (month, year, decade or century) should be displa
 
     import Calendar from 'devextreme-react/calendar';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Calendar zoomLevel="year" />
-            );
-        }
+    export default function App() {
+        return (
+            <Calendar zoomLevel="year" />
+        );
     }
-    export default App;
 
 ---
 
@@ -136,16 +133,13 @@ To make certain calendar views inaccessible, specify the [maxZoomLevel](/api-ref
 
     import Calendar from 'devextreme-react/calendar';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Calendar
-                    minZoomLevel="decade"
-                    maxZoomLevel="month" />
-            );
-        }
+    export default function App() {
+        return (
+            <Calendar
+                minZoomLevel="decade"
+                maxZoomLevel="month" />
+        );
     }
-    export default App;
 
 ---
 

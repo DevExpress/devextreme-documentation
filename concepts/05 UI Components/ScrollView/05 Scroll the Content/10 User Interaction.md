@@ -66,18 +66,14 @@ An end user can scroll the ScrollView content with the swipe gesture or with the
 
     import { ScrollView } from 'devextreme-react/scroll-view';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <ScrollView
-                    scrollByContent={true}  {/* enables the swipe gesture on all platforms */}
-                    scrollByThumb={true}   {/* makes the scrollbar active on all platforms */}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <ScrollView
+                scrollByContent={true}  {/* enables the swipe gesture on all platforms */}
+                scrollByThumb={true}   {/* makes the scrollbar active on all platforms */}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

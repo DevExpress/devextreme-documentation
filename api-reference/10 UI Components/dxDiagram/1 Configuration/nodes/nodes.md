@@ -1,7 +1,6 @@
 ---
 id: dxDiagram.Options.nodes
 type: Object
-default: null
 ---
 ---
 ##### shortDescription

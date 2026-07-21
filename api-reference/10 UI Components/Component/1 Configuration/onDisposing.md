@@ -1,7 +1,7 @@
 ---
 id: Component.Options.onDisposing
-type: function(e)
-default: null
+type: function(e) | undefined
+default: undefined
 ---
 ---
 ##### shortDescription

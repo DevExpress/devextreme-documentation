@@ -7,6 +7,6 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-A value compatible with [filtering operations](/Documentation/ApiReference/Common_Types/data/#SearchOperation).
+A value compatible with [filtering operations](/api-reference/40%20Common%20Types/10%20data/SearchOperation.md '/Documentation/ApiReference/Common_Types/data/#SearchOperation').
 
 ---

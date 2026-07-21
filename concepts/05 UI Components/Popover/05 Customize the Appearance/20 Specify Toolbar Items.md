@@ -145,33 +145,29 @@ The Popover has two toolbars: top and bottom. Items on these toolbars can be pla
         );
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <div>
-                    <img id="image" src="https://url/to/an/image" />
-                    <Popover
-                        width={200}
-                        target="#image"
-                        showEvent="dxhoverstart"
-                        hideEvent="dxhoverend"
-                        contentRender={renderContent}>
-                        <ToolbarItem
-                            text="Title"
-                            location="before"
-                        />
-                        <ToolbarItem
-                            options={buttonOptions}
-                            widget="dxButton"
-                            location="after"
-                        />
-                    </Popover>
-                </div>
-            );
-        }
+    export default function App() {
+        return (
+            <div>
+                <img id="image" src="https://url/to/an/image" />
+                <Popover
+                    width={200}
+                    target="#image"
+                    showEvent="dxhoverstart"
+                    hideEvent="dxhoverend"
+                    contentRender={renderContent}>
+                    <ToolbarItem
+                        text="Title"
+                        location="before"
+                    />
+                    <ToolbarItem
+                        options={buttonOptions}
+                        widget="dxButton"
+                        location="after"
+                    />
+                </Popover>
+            </div>
+        );
     }
-
-    export default App;
 
 ##### ASP.NET MVC Controls
 

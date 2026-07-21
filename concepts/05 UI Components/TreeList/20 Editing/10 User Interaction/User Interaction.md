@@ -88,21 +88,18 @@ The TreeList UI component allows a user to add, delete and update data. Assign *
         Column
     } from 'devextreme-react/tree-list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList ... >
-                    <Editing
-                        allowUpdating={true}
-                        allowAdding={true}
-                        allowDeleting={true}
-                    />
-                    <Column dataField="id" allowEditing={false} />
-                </TreeList>
-            );
-        }
+    export default function App() {
+        return (
+            <TreeList ... >
+                <Editing
+                    allowUpdating={true}
+                    allowAdding={true}
+                    allowDeleting={true}
+                />
+                <Column dataField="id" allowEditing={false} />
+            </TreeList>
+        );
     }
-    export default App;
     
 ---
 
@@ -180,17 +177,14 @@ With the TreeList you can edit data in several modes. Use the **editing**.[mode]
         Editing
     } from 'devextreme-react/tree-list';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList ... >
-                    <Editing ...
-                        mode="row" /> {/* 'batch' | 'cell' | 'form' | 'popup' */}
-                </TreeList>
-            );
-        }
+    export default function App() {
+        return (
+            <TreeList ... >
+                <Editing ...
+                    mode="row" /> {/* 'batch' | 'cell' | 'form' | 'popup' */}
+            </TreeList>
+        );
     }
-    export default App;
     
 ---
 

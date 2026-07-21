@@ -1,7 +1,7 @@
 ---
 id: dxList.Options.onItemDeleting
-type: function(e)
-default: null
+type: function(e) | undefined
+default: undefined
 hidden: false
 ---
 ---

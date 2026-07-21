@@ -10,7 +10,7 @@ If you want to use <a href="https://github.com/globalizejs/globalize#globalize" 
 
     npm install --save-dev devextreme-cldr-data globalize
 
-Then, register the Globalize and CLDR scripts in the TypeScript configuration file...
+Then, register Globalize and CLDR scripts in the TypeScript configuration file...
 
     <!-- tab: tsconfig.app.json -->
     {
@@ -52,6 +52,7 @@ Then, register the Globalize and CLDR scripts in the TypeScript configuration fi
         export default value;
     }
 
-Refer to the [Using Globalize](/concepts/Common/Localization/05%20Localize%20Dates%2C%20Numbers%2C%20and%20Currencies/10%20Using%20Globalize.md '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/Using_Globalize') article for usage examples.
+Refer to the [Using Globalize](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/08%20Using%20Globalize.md '/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/08%20Using%20Globalize.md') article for usage examples.
 
-Alternatively, you can [use Intl](/concepts/Common/Localization/05%20Localize%20Dates%2C%20Numbers%2C%20and%20Currencies/05%20Using%20Intl.md '/Documentation/Guide/Common/Localization/#Localize_Dates_Numbers_and_Currencies/Using_Intl') as a more lightweight localization solution.
+Alternatively, you can [use Intl](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/04%20Using%20Intl.md '/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/04%20Using%20Intl.md') as a more lightweight localization solution.
+

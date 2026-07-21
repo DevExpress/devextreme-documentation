@@ -211,20 +211,17 @@ If a command column should have custom content, specify the column's [cellTempla
         {/* Declare custom header content here */}
     }
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Column
-                        type="selection"
-                        cellRender={renderCell}
-                        headerCellRender={renderHeaderCell}
-                    />
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Column
+                    type="selection"
+                    cellRender={renderCell}
+                    headerCellRender={renderHeaderCell}
+                />
+            </DataGrid>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

@@ -1,7 +1,6 @@
 ---
 id: HeaderPanel.dragging.onDragEnd
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

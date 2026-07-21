@@ -80,17 +80,14 @@ Use the [min](/api-reference/10%20UI%20Components/dxCalendar/1%20Configuration/m
     const minDate = new Date(2000, 1, 1);
     const maxDate = new Date(2020, 12, 31);
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Calendar
-                    defaultValue={date}
-                    minDate={minDate}
-                    maxDate={maxDate} />
-            );
-        }
+    export default function App() {
+        return (
+            <Calendar
+                defaultValue={date}
+                minDate={minDate}
+                maxDate={maxDate} />
+        );
     }
-    export default App;
 
 ---
 

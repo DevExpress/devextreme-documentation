@@ -1,7 +1,7 @@
 ---
 uid: viz/core/base_widget:BaseWidgetTitle.text
-type: String
-default: null
+type: String | undefined
+default: undefined
 ---
 ---
 ##### shortDescription

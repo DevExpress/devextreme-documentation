@@ -64,16 +64,13 @@ If you need to add spin buttons to the NumberBox, set the [showSpinButtons](/api
 
     import NumberBox from 'devextreme-react/number-box';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <NumberBox
-                    defaultValue={20}
-                    showSpinButtons={true} />
-            );
-        }
+    export default function App() {
+        return (
+            <NumberBox
+                defaultValue={20}
+                showSpinButtons={true} />
+        );
     }
-    export default App;
 
 ---
 
@@ -146,17 +143,14 @@ To specify the step by which the value is changed, use the [step](/api-reference
 
     import NumberBox from 'devextreme-react/number-box';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <NumberBox
-                    defaultValue={20}
-                    showSpinButtons={true}
-                    step={10} />
-            );
-        }
+    export default function App() {
+        return (
+            <NumberBox
+                defaultValue={20}
+                showSpinButtons={true}
+                step={10} />
+        );
     }
-    export default App;
 
 ---
 

@@ -258,18 +258,14 @@ When invoking the context menu from code, you may want to specify its [position]
         at: 'top left' 
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <ContextMenu ...
-                    target="#someElement"
-                    position={contextMenuPosition}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <ContextMenu ...
+                target="#someElement"
+                position={contextMenuPosition}
+            />
+        );
     }
-
-    export default App;
 
 ---
 

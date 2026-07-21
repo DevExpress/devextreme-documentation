@@ -81,15 +81,13 @@ When a user pauses on a series, the Chart fires the [seriesHoverChanged](/api-re
     import React from 'react';
     import Chart from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart
-                    onSeriesHoverChanged={onSeriesHoverChanged}
-                >
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart
+                onSeriesHoverChanged={onSeriesHoverChanged}
+            >
+            </Chart>
+        );
     }
 
     function onSeriesHoverChanged (e) {

@@ -1,7 +1,6 @@
 ---
 id: PivotGridDataSource.Options.fields.areaIndex
 type: Number
-default: undefined
 ---
 ---
 ##### shortDescription
@@ -136,16 +135,13 @@ Specifies the field's order among the other fields in the same area. Corresponds
         ]
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PivotGrid
-                    dataSource={pivotGridDataSource}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <PivotGrid
+                dataSource={pivotGridDataSource}
+            />
+        );
     }
-    export default App;
 
 ---
 

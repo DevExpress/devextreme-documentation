@@ -1,6 +1,6 @@
 ---
 id: dxCheckBox.Options.value
-type: Boolean | null | undefined
+type: Boolean | null
 default: false
 ---
 ---

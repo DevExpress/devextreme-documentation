@@ -70,16 +70,13 @@ The DataGrid UI component supports single and multiple row selection. Use the **
         Selection
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Selection mode="single" /> {/* "multiple" | "none" */}
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Selection mode="single" /> {/* "multiple" | "none" */}
+            </DataGrid>
+        );
     }
-    export default App;
     
 ---
 
@@ -165,18 +162,15 @@ The check box in the column's header selects all rows or only the currently rend
         Selection
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Selection
-                        mode="single"
-                        selectAllMode="page" /> {/* or "allPages" */}
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Selection
+                    mode="single"
+                    selectAllMode="page" /> {/* or "allPages" */}
+            </DataGrid>
+        );
     }
-    export default App;
 
 ---
 
@@ -257,19 +251,16 @@ You can prevent users from selecting all rows by setting the **selection**.[allo
         Selection
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Selection
-                        mode="multiple"
-                        allowSelectAll={false}
-                    />
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Selection
+                    mode="multiple"
+                    allowSelectAll={false}
+                />
+            </DataGrid>
+        );
     }
-    export default App;
     
 ---
 
@@ -349,18 +340,15 @@ The [showCheckBoxesMode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Conf
         Selection
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Selection
-                        mode="multiple"
-                        showCheckBoxesMode="none" /> {/* or "onClick" | "onLongTap" | "always" */}
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Selection
+                    mode="multiple"
+                    showCheckBoxesMode="none" /> {/* or "onClick" | "onLongTap" | "always" */}
+            </DataGrid>
+        );
     }
-    export default App;
     
 ---
 

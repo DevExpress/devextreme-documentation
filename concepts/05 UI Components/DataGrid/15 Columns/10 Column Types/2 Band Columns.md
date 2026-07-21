@@ -82,20 +82,17 @@ To set up this layout, describe the hierarchy of columns directly in an object o
         Column
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Column caption="Contacts">
-                        <Column dataField="Email" />
-                        <Column dataField="Mobile_Phone" />
-                        <Column dataField="Skype" />
-                    </Column>
-                </DataGrid>
-            );
-        }
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Column caption="Contacts">
+                    <Column dataField="Email" />
+                    <Column dataField="Mobile_Phone" />
+                    <Column dataField="Skype" />
+                </Column>
+            </DataGrid>
+        );
     }
-    export default App;
     
 ---
 
@@ -332,28 +329,25 @@ Band columns support hierarchies of any nesting level and enables you to use the
         Column
     } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... >
-                    <Column caption="A">
-                        <Column dataField="A1" />
-                        <Column dataField="A2" />
-                        <Column caption="A3">
-                            <Column dataField="A31" />
-                            <Column dataField="A32" />
-                            <Column caption="A33">
-                                <Column dataField="A331" />
-                                <Column dataField="A332" />
-                                <Column dataField="A333" />
-                            </Column>
+    export default function App() {
+        return (
+            <DataGrid ... >
+                <Column caption="A">
+                    <Column dataField="A1" />
+                    <Column dataField="A2" />
+                    <Column caption="A3">
+                        <Column dataField="A31" />
+                        <Column dataField="A32" />
+                        <Column caption="A33">
+                            <Column dataField="A331" />
+                            <Column dataField="A332" />
+                            <Column dataField="A333" />
                         </Column>
                     </Column>
-                </DataGrid>
-            );
-        }
+                </Column>
+            </DataGrid>
+        );
     }
-    export default App;
     
 ---
 

@@ -100,36 +100,32 @@ This property accepts the *"before"*, *"center"*, and *"after"* values that spec
 
     import { HtmlEditor, Toolbar, Item } from 'devextreme-react/html-editor';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <HtmlEditor>
-                    <Toolbar>
-                        <Item
-                            name="undo"
-                            location="after"
-                        />
-                        <Item
-                            name="redo"
-                            location="after"
-                        />
-                        <Item name="alignLeft"/>
-                        <Item name="alignRight"/>
-                        <Item
-                            name="color"
-                            location="center"
-                        />
-                        <Item
-                            name="background"
-                            location="center"
-                        />
-                    </Toolbar>
-                </HtmlEditor>
-            );
-        }
+    export default function App() {
+        return (
+            <HtmlEditor>
+                <Toolbar>
+                    <Item
+                        name="undo"
+                        location="after"
+                    />
+                    <Item
+                        name="redo"
+                        location="after"
+                    />
+                    <Item name="alignLeft"/>
+                    <Item name="alignRight"/>
+                    <Item
+                        name="color"
+                        location="center"
+                    />
+                    <Item
+                        name="background"
+                        location="center"
+                    />
+                </Toolbar>
+            </HtmlEditor>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -218,25 +214,21 @@ If the toolbar cannot fit all the items, some of them are collected in the overf
 
     import { HtmlEditor, Toolbar, Item } from 'devextreme-react/html-editor';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <HtmlEditor>
-                    <Toolbar>
-                        <Item
-                            name="undo"
-                            locateInMenu="always"
-                        />
-                        <Item
-                            name="color"
-                            locateInMenu="never"
-                        />
-                    </Toolbar>
-                </HtmlEditor>
-            );
-        }
+    export default function App() {
+        return (
+            <HtmlEditor>
+                <Toolbar>
+                    <Item
+                        name="undo"
+                        locateInMenu="always"
+                    />
+                    <Item
+                        name="color"
+                        locateInMenu="never"
+                    />
+                </Toolbar>
+            </HtmlEditor>
+        );
     }
-
-    export default App;
 
 ---

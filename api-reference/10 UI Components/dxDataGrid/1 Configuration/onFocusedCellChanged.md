@@ -1,7 +1,6 @@
 ---
 id: dxDataGrid.Options.onFocusedCellChanged
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

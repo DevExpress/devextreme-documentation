@@ -137,29 +137,25 @@ Items within a group can be organized in several columns. To specify the number 
         email: 'jheart@dx-email.com'
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Form
-                    formData={employee}
-                    colCount={2}>
-                    <GroupItem
-                        caption="Personal Data"
-                        colSpan={2}
-                        colCount={3}>
-                        <SimpleItem dataField="firstName" />
-                        <SimpleItem dataField="lastName" />
-                        <SimpleItem dataField="position" />
-                    </GroupItem>
-                    <GroupItem caption="Contacts">
-                        <SimpleItem dataField="phone" />
-                        <SimpleItem dataField="email" />
-                    </GroupItem>
-                </Form>
-            );
-        }
+    export default function App() {
+        return (
+            <Form
+                formData={employee}
+                colCount={2}>
+                <GroupItem
+                    caption="Personal Data"
+                    colSpan={2}
+                    colCount={3}>
+                    <SimpleItem dataField="firstName" />
+                    <SimpleItem dataField="lastName" />
+                    <SimpleItem dataField="position" />
+                </GroupItem>
+                <GroupItem caption="Contacts">
+                    <SimpleItem dataField="phone" />
+                    <SimpleItem dataField="email" />
+                </GroupItem>
+            </Form>
+        );
     }
-
-    export default App;
 
 ---

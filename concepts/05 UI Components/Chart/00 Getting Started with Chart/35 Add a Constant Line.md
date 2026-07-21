@@ -22,6 +22,22 @@ DevExtreme Chart can display horizontal or vertical constant lines as points of 
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Chart()
+        .ValueAxis(v => v
+            .Add()
+            .ConstantLines(cl => cl
+                .Add()
+                .Value(ChartData.AverageSpend)
+                .Color("#0000c7")
+                .Label(l => l.Text("Yearly Spend Average"))
+            )
+        )
+        @* ... *@
+    )
+
 ##### Angular
 
     <!-- tab: app.component.html -->

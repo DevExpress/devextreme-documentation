@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.onRowRemoving
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

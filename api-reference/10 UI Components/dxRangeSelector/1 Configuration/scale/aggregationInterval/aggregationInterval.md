@@ -90,21 +90,17 @@ If the scale displays numbers, assign a number to this property. For example, an
         AggregationInterval
     } from 'devextreme-react/range-selector';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <RangeSelector ... >
-                    <Scale
-                        aggregationInterval="day">    {/* Interval of one day */}
-                        <AggregationInterval 
-                            days={5} />                 {/* Interval of five days */}
-                    </Scale>
-                </RangeSelector>
-            );
-        }
-    }
-
-    export default App;     
+    export default function App() {
+        return (
+            <RangeSelector ... >
+                <Scale
+                    aggregationInterval="day">    {/* Interval of one day */}
+                    <AggregationInterval 
+                        days={5} />                 {/* Interval of five days */}
+                </Scale>
+            </RangeSelector>
+        );
+    }     
 
 ---
 

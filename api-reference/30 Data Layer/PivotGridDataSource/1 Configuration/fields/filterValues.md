@@ -1,7 +1,6 @@
 ---
 id: PivotGridDataSource.Options.fields.filterValues
 type: Array<any>
-default: undefined
 ---
 ---
 ##### shortDescription
@@ -112,16 +111,13 @@ Specifies the values by which the field is filtered.
         }]
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PivotGrid
-                    dataSource={pivotGridDataSource}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <PivotGrid
+                dataSource={pivotGridDataSource}
+            />
+        );
     }
-    export default App;
 
 ---
 

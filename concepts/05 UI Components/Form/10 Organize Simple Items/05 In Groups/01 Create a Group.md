@@ -123,25 +123,21 @@ In the context of the Form UI component, a group is called ["group item"](/api-r
         email: 'jheart@dx-email.com'
     };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Form formData={employee}>
-                    <GroupItem caption="Personal Data">
-                        <SimpleItem dataField="firstName" />
-                        <SimpleItem dataField="lastName" />
-                        <SimpleItem dataField="position" />
-                    </GroupItem>
-                    <GroupItem caption="Contacts">
-                        <SimpleItem dataField="phone" />
-                        <SimpleItem dataField="email" />
-                    </GroupItem>
-                </Form>
-            );
-        }
+    export default function App() {
+        return (
+            <Form formData={employee}>
+                <GroupItem caption="Personal Data">
+                    <SimpleItem dataField="firstName" />
+                    <SimpleItem dataField="lastName" />
+                    <SimpleItem dataField="position" />
+                </GroupItem>
+                <GroupItem caption="Contacts">
+                    <SimpleItem dataField="phone" />
+                    <SimpleItem dataField="email" />
+                </GroupItem>
+            </Form>
+        );
     }
-
-    export default App;
 
 ---
 

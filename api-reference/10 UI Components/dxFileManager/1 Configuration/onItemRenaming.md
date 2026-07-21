@@ -1,7 +1,7 @@
 ---
 id: dxFileManager.Options.onItemRenaming
-type: function(e)
-default: null
+type: function(e) | undefined
+default: undefined
 ---
 ---
 ##### shortDescription

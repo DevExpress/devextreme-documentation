@@ -1,7 +1,6 @@
 ---
 id: dxCardView.Options.onDataErrorOccurred
 type: function(e)
-default: undefined
 ---
 ---
 ##### shortDescription

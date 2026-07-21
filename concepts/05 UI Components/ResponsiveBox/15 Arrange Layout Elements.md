@@ -90,22 +90,18 @@ All layout elements are arranged against a [layout grid](/concepts/05%20UI%20Com
 
     import ResponsiveBox, { Row, Col } from 'devextreme-react/responsive-box';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <ResponsiveBox>
-                    <Row ratio={1}/>     {/* Header */}
-                    <Row ratio={2}/>     {/* Content */}
-                    <Row ratio={0.7}/>   {/* Footer */}
-                    <Col ratio={0.5} screen="md lg"/>   {/* Left-side bar */}
-                    <Col ratio={2}/>                    {/* Content */}
-                    <Col ratio={0.5} screen="md lg"/>   {/* Right-side bar */}
-                </ResponsiveBox>
-            );
-        }
+    export default function App() {
+        return (
+            <ResponsiveBox>
+                <Row ratio={1}/>     {/* Header */}
+                <Row ratio={2}/>     {/* Content */}
+                <Row ratio={0.7}/>   {/* Footer */}
+                <Col ratio={0.5} screen="md lg"/>   {/* Left-side bar */}
+                <Col ratio={2}/>                    {/* Content */}
+                <Col ratio={0.5} screen="md lg"/>   {/* Right-side bar */}
+            </ResponsiveBox>
+        );
     }
-
-    export default App;
 
     <!--CSS-->
     html, body { height: 100%; }
@@ -320,55 +316,51 @@ Every layout element has the [location](/api-reference/_hidden/dxResponsiveBoxIt
 
     import ResponsiveBox, { Row, Col, Item, Location } from 'devextreme-react/responsive-box';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <ResponsiveBox>
-                    {/* Layout grid is configured here */}
-                    
-                    <Item>
-                        <Location screen="md lg" row={0} col={0} colspan={3}/>
-                        <Location screen="xs sm" row={0} col={0}/>
-                        <div className="header item">
-                            <p>Header</p>
-                        </div>
-                    </Item>
-                    
-                    <Item>
-                        <Location screen="md lg" row={1} col={1}/>
-                        <Location screen="xs sm" row={1} col={0}/>
-                        <div className="content item">
-                            <p>Content</p>
-                        </div>
-                    </Item>
-                    
-                    <Item>
-                        <Location screen="md lg" row={1} col={0}/>
-                        <div className="left-side-bar item">
-                            <p>Left Bar</p>
-                        </div>
-                    </Item>
-                    
-                    <Item>
-                        <Location screen="md lg" row={1} col={2}/>
-                        <div className="right-side-bar item">
-                            <p>Right Bar</p>
-                        </div>
-                    </Item>
-                    
-                    <Item>
-                        <Location screen="md lg" row={2} col={0} colspan={3}/>
-                        <Location screen="xs sm" row={2} col={0}/>
-                        <div className="footer item">
-                            <p>Footer</p>
-                        </div>
-                    </Item>
-                </ResponsiveBox>
-            );
-        }
+    export default function App() {
+        return (
+            <ResponsiveBox>
+                {/* Layout grid is configured here */}
+                
+                <Item>
+                    <Location screen="md lg" row={0} col={0} colspan={3}/>
+                    <Location screen="xs sm" row={0} col={0}/>
+                    <div className="header item">
+                        <p>Header</p>
+                    </div>
+                </Item>
+                
+                <Item>
+                    <Location screen="md lg" row={1} col={1}/>
+                    <Location screen="xs sm" row={1} col={0}/>
+                    <div className="content item">
+                        <p>Content</p>
+                    </div>
+                </Item>
+                
+                <Item>
+                    <Location screen="md lg" row={1} col={0}/>
+                    <div className="left-side-bar item">
+                        <p>Left Bar</p>
+                    </div>
+                </Item>
+                
+                <Item>
+                    <Location screen="md lg" row={1} col={2}/>
+                    <div className="right-side-bar item">
+                        <p>Right Bar</p>
+                    </div>
+                </Item>
+                
+                <Item>
+                    <Location screen="md lg" row={2} col={0} colspan={3}/>
+                    <Location screen="xs sm" row={2} col={0}/>
+                    <div className="footer item">
+                        <p>Footer</p>
+                    </div>
+                </Item>
+            </ResponsiveBox>
+        );
     }
-
-    export default App;
 
     <!--CSS-->
     html, body { height: 100%; }
@@ -472,20 +464,16 @@ If on some screens, all elements should be arranged in a single column, assign t
 
     import ResponsiveBox, { Row, Col } from 'devextreme-react/responsive-box';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <ResponsiveBox ...
-                    singleColumnScreen="xs sm">   {/* Single-column layout on small and extra small screens */}
-                    <Row ... />   {/* Ignored */}
-                    <Col ... />   {/* Ignored */}
-                    {/* ... */}
-                </ResponsiveBox>
-            );
-        }
+    export default function App() {
+        return (
+            <ResponsiveBox ...
+                singleColumnScreen="xs sm">   {/* Single-column layout on small and extra small screens */}
+                <Row ... />   {/* Ignored */}
+                <Col ... />   {/* Ignored */}
+                {/* ... */}
+            </ResponsiveBox>
+        );
     }
-
-    export default App;
 
     <!--CSS-->
     html, body { height: 100%; }

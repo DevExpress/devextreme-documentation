@@ -96,16 +96,13 @@ Specifies the start position of the aggregated series points in the aggregation 
         CommonAxisSettings
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <CommonAxisSettings aggregatedPointsPosition="crossTicks" />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <CommonAxisSettings aggregatedPointsPosition="crossTicks" />
+            </Chart>
+        );
     }
-    export default App;
 
 ##### ASP.NET Core Controls
 

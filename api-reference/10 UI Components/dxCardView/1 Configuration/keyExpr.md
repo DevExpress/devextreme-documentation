@@ -1,6 +1,6 @@
 ---
 id: dxCardView.Options.keyExpr
-type: String | Array<String>
+type: String | Array<String> | undefined
 default: undefined
 ---
 ---

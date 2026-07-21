@@ -114,31 +114,27 @@ Commonly, editors nested into an HTML form are supposed to be validated on the c
     import { TextBox } from 'devextreme-react/text-box';
     import { Validator, RequiredRule } from 'devextreme-react/validator';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <form action="/Login" method="post">
-                    <TextBox name="Login">
-                        <Validator>
-                            <RequiredRule />
-                        </Validator>
-                    </TextBox>
-                    <TextBox name="Password" mode="password">
-                        <Validator>
-                            <RequiredRule />
-                        </Validator>
-                    </TextBox>
-                    <Button
-                        text="Submit"
-                        type="success"
-                        useSubmitBehavior={true}
-                    />
-                </form>
-            );
-        }
+    export default function App() {
+        return (
+            <form action="/Login" method="post">
+                <TextBox name="Login">
+                    <Validator>
+                        <RequiredRule />
+                    </Validator>
+                </TextBox>
+                <TextBox name="Password" mode="password">
+                    <Validator>
+                        <RequiredRule />
+                    </Validator>
+                </TextBox>
+                <Button
+                    text="Submit"
+                    type="success"
+                    useSubmitBehavior={true}
+                />
+            </form>
+        );
     }
-
-    export default App;
 
 ---
 

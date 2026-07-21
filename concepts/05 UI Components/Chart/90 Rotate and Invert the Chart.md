@@ -62,19 +62,15 @@ To rotate the Chart, set the [rotated](/api-reference/10%20UI%20Components/dxCha
     import React from 'react';
     import Chart from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart
-                    rotated={true}
-                    ...
-                >
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart
+                rotated={true}
+                ...
+            >
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -167,20 +163,16 @@ To invert both argument and value axes, assign **true** to the [inverted](/api-r
         ValueAxis
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <CommonAxisSettings inverted={true} />
-                    {/* or for a specific axis */}
-                    <ArgumentAxis inverted={true} />
-                    <ValueAxis inverted={true} />
-                </Chart>
-            );
-        }
+    export default function App() {
+        return (
+            <Chart ... >
+                <CommonAxisSettings inverted={true} />
+                {/* or for a specific axis */}
+                <ArgumentAxis inverted={true} />
+                <ValueAxis inverted={true} />
+            </Chart>
+        );
     }
-
-    export default App;
 
 ---
 

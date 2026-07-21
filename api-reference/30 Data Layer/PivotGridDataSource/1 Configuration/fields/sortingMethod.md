@@ -1,7 +1,6 @@
 ---
 id: PivotGridDataSource.Options.fields.sortingMethod
 type: function(a, b)
-default: undefined
 ---
 ---
 ##### shortDescription
@@ -144,16 +143,13 @@ Inside this function, you can access the [field's configuration](/api-reference/
         ]
     });
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PivotGrid
-                    dataSource={pivotGridDataSource}
-                />
-            );
-        }
+    export default function App() {
+        return (
+            <PivotGrid
+                dataSource={pivotGridDataSource}
+            />
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

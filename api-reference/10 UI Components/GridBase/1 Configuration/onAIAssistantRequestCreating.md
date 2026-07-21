@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.onAIAssistantRequestCreating
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

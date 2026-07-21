@@ -1,6 +1,6 @@
 ---
 id: dxCardView.Options.dataSource
-type: String | Array<any> | Store | DataSource | DataSource_Options
+type: String | Array<any> | Store | DataSource | DataSource_Options | undefined
 default: undefined
 ---
 ---

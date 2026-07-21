@@ -1,7 +1,7 @@
 ---
 id: dxFileManager.Options.focusedItemKey
-type: String
-default: null
+type: String | undefined
+default: undefined
 ---
 ---
 ##### shortDescription
@@ -83,15 +83,12 @@ Specifies a key of the initially or currently focused item.
 
     import FileManager from 'devextreme-react/file-manager';
     
-    class App extends React.Component {
-        render() {
-            return (
-                <FileManager focusedItemKey="item1_key" >
-                </FileManager>
-            );
-        }
+    export default function App() {
+        return (
+            <FileManager focusedItemKey="item1_key" >
+            </FileManager>
+        );
     }
-    export default App;
 
 ##### ASP.NET MVC Controls
 

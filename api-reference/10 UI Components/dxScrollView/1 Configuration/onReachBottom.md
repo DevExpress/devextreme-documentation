@@ -1,7 +1,7 @@
 ---
 id: dxScrollView.Options.onReachBottom
-type: function(e)
-default: null
+type: function(e) | undefined
+default: undefined
 ---
 ---
 ##### shortDescription

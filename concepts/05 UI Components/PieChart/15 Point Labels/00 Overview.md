@@ -99,23 +99,21 @@ To configure point labels, use the [label](/api-reference/10%20UI%20Components/d
         Label
     } from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PieChart ... >
-                    <Series>
-                        <Label ... >
-                            {/* Settings for all point labels of an individual series */}
-                        </Label>
-                    </Series>
-                    <CommonSeriesSettings ... >
-                        <Label ... >
-                            {/* Settings for all point labels in the PieChart */}
-                        </Label>
-                    </CommonSeriesSettings>
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PieChart ... >
+                <Series>
+                    <Label ... >
+                        {/* Settings for all point labels of an individual series */}
+                    </Label>
+                </Series>
+                <CommonSeriesSettings ... >
+                    <Label ... >
+                        {/* Settings for all point labels in the PieChart */}
+                    </Label>
+                </CommonSeriesSettings>
+            </PieChart>
+        );
     }
 
 ---
@@ -203,18 +201,16 @@ Point labels are not visible by default. To make them visible, assign **true** t
         Connector
     } from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <PieChart ... >
-                    <Series>
-                        <Label visible={true}>
-                            <Connector visible={true} />
-                        </Label>
-                    </Series>
-                </PieChart>
-            );
-        }
+    export default function App() {
+        return (
+            <PieChart ... >
+                <Series>
+                    <Label visible={true}>
+                        <Connector visible={true} />
+                    </Label>
+                </Series>
+            </PieChart>
+        );
     }
 
 ---

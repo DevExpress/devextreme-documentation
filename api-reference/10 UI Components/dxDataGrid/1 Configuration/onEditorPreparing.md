@@ -1,7 +1,6 @@
 ---
 id: dxDataGrid.Options.onEditorPreparing
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

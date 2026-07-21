@@ -1,7 +1,6 @@
 ---
 id: GridBase.Options.onRowValidating
 type: function(e)
-default: null
 ---
 ---
 ##### shortDescription

@@ -90,15 +90,11 @@ The following code adds a primitive TileView to your page.
         // ...
     ];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TileView dataSource={dataSource}/>
-            );
-        }
+    export default function App() {
+        return (
+            <TileView dataSource={dataSource}/>
+        );
     }
-
-    export default App;
 
 ---
 
@@ -162,15 +158,11 @@ By default, the UI component is oriented horizontally, but you can orient it ver
 
     import { TileView } from 'devextreme-react/tile-view';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TileView direction="vertical"/>
-            );
-        }
+    export default function App() {
+        return (
+            <TileView direction="vertical"/>
+        );
     }
-
-    export default App;
 
 ---
 

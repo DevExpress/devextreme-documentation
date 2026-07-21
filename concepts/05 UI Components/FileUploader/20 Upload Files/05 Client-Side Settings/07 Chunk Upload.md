@@ -100,19 +100,16 @@ Chunk upload allows large files to be divided into parts called "chunks" and sen
 
     import FileUploader from 'devextreme-react/file-uploader';
     
-    class App extends React.Component {
-        render() {
-            return (
-                <FileUploader 
-                    name="file"
-                    chunkSize={400000}
-                    uploadMode="useButtons" {/* or "instantly" */} 
-                    uploadUrl="https://mydomain.com/MyUploadService">
-                </FileUploader>
-            );
-        }
+    export default function App() {
+        return (
+            <FileUploader 
+                name="file"
+                chunkSize={400000}
+                uploadMode="useButtons" {/* or "instantly" */} 
+                uploadUrl="https://mydomain.com/MyUploadService">
+            </FileUploader>
+        );
     }
-    export default App;
 
 ##### ASP.NET Core Controls
 

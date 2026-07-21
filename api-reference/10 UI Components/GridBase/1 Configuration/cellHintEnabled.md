@@ -16,3 +16,4 @@ When **cellHintEnabled** is `true`, {WidgetName} adds the [title](https://develo
 
 - **columns[]**.[width](/api-reference/_hidden/GridBaseColumn/width.md '{basewidgetpath}/Configuration/columns/#width')
 - [columnAutoWidth]({basewidgetpath}/Configuration/#columnAutoWidth)
+- [Customize Cells - Add Tooltips to Cells](/Documentation/Guide/UI_Components/{WidgetName}/Columns/Customize_Cells/#Add_Tooltips_to_Cells)

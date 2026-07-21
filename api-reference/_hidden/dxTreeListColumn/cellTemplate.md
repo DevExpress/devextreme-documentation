@@ -66,7 +66,7 @@ The following details should be taken into account when you use a **cellTemplate
 
 - Template values have no effect on data operations. Implement the column's [calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#calculateCellValue') or [calculateDisplayValue](/api-reference/_hidden/GridBaseColumn/calculateDisplayValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#calculateDisplayValue') option to transform the cell's underlying value.
 
-- [cellHintEnabled]({basewidgetpath}/Configuration/#cellHintEnabled) has no effect for columns where **cellTemplate** is configured. To display native hints in these columns, add the [title](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/title) attribute to the **cellTemplate** container element. To display custom hints, configure the DevExtreme [Tooltip](/Documentation/Guide/UI_Components/Tooltip/Overview/) component.
+- [cellHintEnabled]({basewidgetpath}/Configuration/#cellHintEnabled) has no effect for columns where **cellTemplate** is configured. To display native hints in these columns, add the [title](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/title) attribute to the **cellTemplate** container element. To display custom hints, configure the DevExtreme [Tooltip](/Documentation/Guide/UI_Components/Tooltip/Overview/) component. Refer to the following topic for more information: [Customize Cells - Add Tooltips to Cells](/Documentation/Guide/UI_Components/TreeList/Columns/Customize_Cells/#Add_Tooltips_to_Cells).
 
 ---
 ##### jQuery

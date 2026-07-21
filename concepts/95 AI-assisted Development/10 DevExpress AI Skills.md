@@ -37,7 +37,7 @@ For agent-specific and IDE-specific setup instructions, refer to the [repository
 
 ## When to Use AI Skills and When to Use MCP
 
-For best results, use DevExpress AI Skills together with the [DevExpress MCP Server](/Documentation/Guide/AI-assisted_Development/DevExpress_MCP_Server_Configuration/). Skills supply curated task patterns and product-specific rules while the MCP Server adds live documentation lookup and version-sensitive details. DevExpress AI Skills and MCP Server complement each other.
+For best results, use DevExpress AI Skills together with the [DevExpress MCP Server](/Documentation/Guide/AI-assisted_Development/DevExpress_MCP_Server/). Skills supply curated task patterns and product-specific rules while the MCP Server adds live documentation lookup and version-sensitive details. DevExpress AI Skills and MCP Server complement each other.
 
 While DevExpress AI Skills and DevExpress MCP Server produce the best results when used together, separate usage of these tools may be beneficial in the following scenarios:
 
@@ -48,5 +48,5 @@ While DevExpress AI Skills and DevExpress MCP Server produce the best results wh
 
 #####See Also#####
 
-- [DevExpress MCP Server Configuration](/Documentation/Guide/AI-assisted_Development/DevExpress_MCP_Server_Configuration/)
+- [DevExpress MCP Server Configuration](/Documentation/Guide/AI-assisted_Development/DevExpress_MCP_Server/)
 - [aiIntegration Setup](/concepts/90%20AI%20Features/10%20aiIntegration%20Setup/00%20aiIntegration%20Setup.md '/Documentation/Guide/AI_Features/aiIntegration_Setup/')

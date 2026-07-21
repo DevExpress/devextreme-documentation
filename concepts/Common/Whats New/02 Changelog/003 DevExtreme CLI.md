@@ -1,6 +1,17 @@
+### v1.16.0
+
+- Added support for DevExtreme v26.1.
+- Updated dependencies and applied security fixes.
+
+### v1.15.0
+
+- Migrated the repository from npm to pnpm.
+- Updated dependencies and applied security fixes.
+- Added minor security improvements to DevExtreme Schematics.
+
 ### v1.14.2
 
-- Added dependency and security fixes.
+- Updated dependencies and applied security fixes.
 
 ### v1.14.1
 
@@ -11,20 +22,20 @@
 
 - Updated DevExtreme Schematics to Angular 19.
 - Updated the sample data source in application templates.
-- Added dependency and security fixes.
+- Updated dependencies and applied security fixes.
 
 ### v1.13.0
 
 - Added support for DevExtreme v25.2 and updated scaffolders.
 - Angular templates updated to control flow syntax (`@if`/`@else`).
 - Fixed form state management in React and Next.js templates.
-- Added dependency and security fixes.
+- Updated dependencies and applied security fixes.
 
 ### v1.12.2
 
 - Fixed issues with Angular application creation.
 - Updated `migrate` command messages.
-- Added dependency and security fixes.
+- Updated dependencies and applied security fixes.
 
 ### v1.12.1
 

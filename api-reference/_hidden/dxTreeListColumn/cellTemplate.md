@@ -10,31 +10,31 @@ Specifies a custom template for data cells.
 #include common-ref-elementparam with { element: "current cell" }
 
 ##### param(cellInfo): Object
-The cell's properties.
+Cell properties.
 
 ##### field(cellInfo.column): dxTreeListColumn
-The column's properties.
+Column properties.
 
 ##### field(cellInfo.columnIndex): Number
-The index of the cell's column.
+Cell column index.
 
 ##### field(cellInfo.component): dxTreeList
-The UI component's instance.
+UI component instance.
 
 ##### field(cellInfo.data): Object
-The data of the row to which the cell belongs.
+Data of the row that contains the cell.
 
 ##### field(cellInfo.displayValue): any
-The cell's display value. Differs from the **value** field only when the column uses [lookup](/api-reference/_hidden/GridBaseColumn/lookup '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/lookup/') or [calculateDisplayValue](/api-reference/_hidden/GridBaseColumn/calculateDisplayValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#calculateDisplayValue').
+Cell display value. Differs from the **value** field only when the column uses [lookup](/api-reference/_hidden/GridBaseColumn/lookup '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/lookup/') or [calculateDisplayValue](/api-reference/_hidden/GridBaseColumn/calculateDisplayValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#calculateDisplayValue').
 
 ##### field(cellInfo.oldValue): any
 <!-- %field(cellInfo.oldValue)% -->
 
 ##### field(cellInfo.row): dxTreeListRowObject
-The cell's row.
+Cell row.
 
 ##### field(cellInfo.rowIndex): Number
-The index of the cell's row. Begins with 0 on each page.        
+Cell row index. Begins with 0 on each page.        
 Refer to [Column and Row Indexes](/concepts/05%20UI%20Components/TreeList/10%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_and_Row_Indexes/') for more information.
 
 ##### field(cellInfo.rowType): String

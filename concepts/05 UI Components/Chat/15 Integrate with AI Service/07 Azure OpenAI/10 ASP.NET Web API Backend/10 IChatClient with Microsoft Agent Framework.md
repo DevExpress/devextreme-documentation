@@ -8,7 +8,7 @@ Compared to the base `IChatClient` setup, this implementation adds:
 
 - Multiple specialized agents (`VisionAgent`, `SupportAgent`, `Editor`).
 - A sequential workflow (`VirtualAssistant`) that orchestrates agent execution.
-- [MCP-based documentation tools](/Documentation/Guide/AI-assisted_Development/DevExpress_MCP_Server/) for the support agent.
+- [MCP-based documentation tools](/concepts/95%20AI-assisted%20Development/00%20DevExpress%20MCP%20Server '/Documentation/Guide/AI-assisted_Development/DevExpress_MCP_Server/') for the support agent.
 - Multipart request handling for text and file attachments.
 
 The application uses one shared `IChatClient` instance, then composes agents and workflow on top of it:

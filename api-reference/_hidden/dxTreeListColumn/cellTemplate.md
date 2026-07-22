@@ -10,35 +10,35 @@ Specifies a custom template for data cells.
 #include common-ref-elementparam with { element: "current cell" }
 
 ##### param(cellInfo): Object
-The cell's properties.
+Cell properties.
 
 ##### field(cellInfo.column): dxTreeListColumn
-The column's properties.
+Column properties.
 
 ##### field(cellInfo.columnIndex): Number
-The index of the cell's column.
+Cell column index.
 
 ##### field(cellInfo.component): dxTreeList
-The UI component's instance.
+UI component instance.
 
 ##### field(cellInfo.data): Object
-The data of the row to which the cell belongs.
+Data of the row that contains the cell.
 
 ##### field(cellInfo.displayValue): any
-The cell's display value. Differs from the **value** field only when the column uses [lookup](/api-reference/_hidden/GridBaseColumn/lookup '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/lookup/') or [calculateDisplayValue](/api-reference/_hidden/GridBaseColumn/calculateDisplayValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#calculateDisplayValue').
+Cell display value. Differs from the **value** field only when the column uses [lookup](/api-reference/_hidden/GridBaseColumn/lookup '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/lookup/') or [calculateDisplayValue](/api-reference/_hidden/GridBaseColumn/calculateDisplayValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#calculateDisplayValue').
 
 ##### field(cellInfo.oldValue): any
 <!-- %field(cellInfo.oldValue)% -->
 
 ##### field(cellInfo.row): dxTreeListRowObject
-The cell's row.
+Cell row.
 
 ##### field(cellInfo.rowIndex): Number
-The index of the cell's row. Begins with 0 on each page.        
+Cell row index. Begins with 0 on each page.        
 Refer to [Column and Row Indexes](/concepts/05%20UI%20Components/TreeList/10%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_and_Row_Indexes/') for more information.
 
 ##### field(cellInfo.rowType): String
-The row's [type](/api-reference/10%20UI%20Components/dxTreeList/6%20Row/rowType.md '/Documentation/ApiReference/UI_Components/dxTreeList/Row/#rowType').
+Row [type](/api-reference/10%20UI%20Components/dxTreeList/6%20Row/rowType.md '/Documentation/ApiReference/UI_Components/dxTreeList/Row/#rowType').
 
 ##### field(cellInfo.text): String
 **displayValue** after applying [format](/api-reference/_hidden/GridBaseColumn/format.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#format') and [customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#customizeText').
@@ -60,7 +60,43 @@ A function called when this variable changes.
 A template name or container.
 
 ---
-[note]If you implement two-way data binding in your template, make sure that you have switched off the built-in implementation of this feature by setting the [twoWayBindingEnabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/twoWayBindingEnabled.md '{basewidgetpath}/Configuration/#twoWayBindingEnabled') property to **false**.
+The following details should be taken into account when you use a **cellTemplate**:
+
+- If you implement two-way data binding in your template, set [twoWayBindingEnabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/twoWayBindingEnabled.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#twoWayBindingEnabled') to **false** to switch off the built-in implementation of this feature.
+
+- Template values have no effect on data operations. Implement the column's [calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#calculateCellValue') or [calculateDisplayValue](/api-reference/_hidden/GridBaseColumn/calculateDisplayValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#calculateDisplayValue') option to transform the cell's underlying value.
+
+- [cellHintEnabled]({basewidgetpath}/Configuration/#cellHintEnabled) has no effect for columns where **cellTemplate** is configured. To display native hints in these columns, add the [title](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/title) attribute to the **cellTemplate** container element. To display custom hints, configure the DevExtreme [Tooltip](/Documentation/Guide/UI_Components/Tooltip/Overview/) component. Refer to the following help topic for more information: [Customize Cells - Add Tooltips to Cells](/Documentation/Guide/UI_Components/TreeList/Columns/Customize_Cells/#Add_Tooltips_to_Cells).
+
+---
+##### jQuery
+
+The code snippet below uses the `watch` function. You can test the snippet in the [Real-Time Updates](https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/RealTimeUpdates/) demo.
+
+Note the following:
+
+- You cannot call `watch` in a cell in which you want to track data.
+- The data in the cell where `watch` is called should remain constant.
+
+<!-- ... -->
+
+    <!-- tab: index.js -->
+    $("#treeListContainer").dxTreeList({
+        columns: [{
+            dataField: 'ProductName', 
+            dataType: 'string',
+            cellTemplate(container, info) {
+                const getter = (data) => data.Amount;
+                const handler = (newValue) => {
+                    container.css('background-color', newValue < 100000 ? 'red' : 'green');
+                };
+                info.watch(getter, handler);
+                return $('<div>').text(info.data.ProductName);
+            }
+        }]
+    });
+
+---
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/TreeList/Overview/"
@@ -70,5 +106,3 @@ A template name or container.
 - [Customize Cells Appearance](/concepts/05%20UI%20Components/TreeList/10%20Columns/40%20Customize%20Cells/2%20Customize%20the%20Appearance.md '/Documentation/Guide/UI_Components/TreeList/Columns/Customize_Cells/#Customize_the_Appearance')
 - [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')
 - [onCellPrepared](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/onCellPrepared.md '{basewidgetpath}/Configuration/#onCellPrepared')
-
-<!-- import * from 'api-reference\_hidden\dxDataGridColumn\cellTemplate.md' -->

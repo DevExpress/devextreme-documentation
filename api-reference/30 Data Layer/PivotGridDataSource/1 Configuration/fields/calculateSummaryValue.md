@@ -1,7 +1,6 @@
 ---
 id: PivotGridDataSource.Options.fields.calculateSummaryValue
 type: function(e)
-default: undefined
 ---
 ---
 ##### shortDescription

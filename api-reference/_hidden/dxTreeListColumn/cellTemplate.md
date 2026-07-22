@@ -38,7 +38,7 @@ Cell row index. Begins with 0 on each page.
 Refer to [Column and Row Indexes](/concepts/05%20UI%20Components/TreeList/10%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/TreeList/Columns/Column_and_Row_Indexes/') for more information.
 
 ##### field(cellInfo.rowType): String
-The row's [type](/api-reference/10%20UI%20Components/dxTreeList/6%20Row/rowType.md '/Documentation/ApiReference/UI_Components/dxTreeList/Row/#rowType').
+Row [type](/api-reference/10%20UI%20Components/dxTreeList/6%20Row/rowType.md '/Documentation/ApiReference/UI_Components/dxTreeList/Row/#rowType').
 
 ##### field(cellInfo.text): String
 **displayValue** after applying [format](/api-reference/_hidden/GridBaseColumn/format.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#format') and [customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#customizeText').

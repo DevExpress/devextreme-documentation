@@ -16,7 +16,8 @@ Cell properties.
 Column properties.
 
 ##### field(cellInfo.columnIndex): Number
-The index of the cell's column.         
+Cell column index.
+
 For more information on how this index is calculated, refer to the [Column and Row Indexes](/concepts/05%20UI%20Components/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_and_Row_Indexes/') topic.
 
 ##### field(cellInfo.component): dxDataGrid
@@ -32,7 +33,7 @@ Cell display value. Differs from the **value** field only when the column uses [
 The cell's previous raw value. Defined only if [repaintChangesOnly](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/repaintChangesOnly.md '{basewidgetpath}/Configuration/#repaintChangesOnly') is **true**.
 
 ##### field(cellInfo.row): dxDataGridRowObject
-The cell's row.
+Cell row.
 
 ##### field(cellInfo.rowIndex): Number
 Cell row index. Begins with 0 on each page. Group rows are included.       

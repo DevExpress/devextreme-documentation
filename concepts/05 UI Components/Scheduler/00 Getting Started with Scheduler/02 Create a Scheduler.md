@@ -30,6 +30,15 @@
         height: 600px;
     }
 
+##### ASP.NET Core Controls
+
+[Add DevExtreme to your ASP.NET Core application](https://docs.devexpress.com/AspNetCore/401034/devextreme-based-controls/get-started/add-controls-to-a-project) and use the following code snippet to create a Scheduler:
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Scheduler()
+        .ID("scheduler")
+    )
+
 ##### Angular 
 
 [Add DevExtreme to your Angular application](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/') and use the following code to create a Scheduler:

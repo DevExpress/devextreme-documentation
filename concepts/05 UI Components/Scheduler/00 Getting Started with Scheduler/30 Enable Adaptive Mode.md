@@ -11,6 +11,14 @@ The Scheduler can adapt its interface to small screens. To enable this behavior,
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Scheduler()
+        .AdaptivityEnabled(true)
+        // ...
+    )
+
 ##### Angular 
 
     <!-- tab: app.component.html -->

@@ -11,6 +11,14 @@ To specify the current date, use the [currentDate](/api-reference/10%20UI%20Comp
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Scheduler()
+        .CurrentDate(new DateTime(2021, 5, 25))
+        // ...
+    )
+
 ##### Angular 
 
     <!-- tab: app.component.html -->

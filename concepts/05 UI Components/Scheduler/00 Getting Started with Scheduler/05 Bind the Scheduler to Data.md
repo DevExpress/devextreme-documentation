@@ -87,6 +87,153 @@ Once you assign the data source, you need to map field values to appointment att
         <!-- ... -->
     </html>
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Scheduler()
+        .DataSource(d => d
+            .Mvc().Controller("SchedulerData")
+            .LoadAction("Get")
+            .InsertAction("Insert")
+            .UpdateAction("Update")
+            .DeleteAction("Delete")
+            .Key("ID")
+        )
+        .TextExpr("Title")
+        .StartDateExpr("StartDate")
+        .EndDateExpr("EndDate")
+        .AllDayExpr("DayLong")
+        .RecurrenceRuleExpr("Recurrence")
+        .RecurrenceExceptionExpr("RecurrenceException")
+    )
+
+    <!-- tab: SchedulerDataController.cs -->
+    public class SchedulerDataController : Controller {
+        [HttpGet]
+        public object Get(DataSourceLoadOptions loadOptions) {
+            return DataSourceLoader.Load(SchedulerData.Appointments, loadOptions);
+        }
+
+        [HttpPost]
+        public IActionResult Insert(string values) {
+            var appointment = new Appointment();
+            PopulateAppointment(appointment, values);
+            // ...
+            SchedulerData.Appointments.Add(appointment);
+        }
+
+        [HttpPut]
+        public IActionResult Update(int key, string values) {
+            var appointment = SchedulerData.Appointments.FirstOrDefault(e => e.ID == key);
+            // ...
+            PopulateAppointment(appointment, values);
+        }
+
+        [HttpDelete]
+        public IActionResult Delete(int key) {
+            var appointment = SchedulerData.Appointments.FirstOrDefault(e => e.ID == key);
+            // ...
+            SchedulerData.Appointments.Remove(appointment);
+        }
+
+        private static void PopulateAppointment(Appointment appointment, string values) {
+            using var document = JsonDocument.Parse(values);
+            foreach (var property in document.RootElement.EnumerateObject()) {
+                switch (property.Name) {
+                    case nameof(Appointment.Title):
+                        appointment.Title = property.Value.GetString();
+                        break;
+                    // ...
+                }
+            }
+        }
+    }
+
+    <!-- tab: Appointment.cs -->
+    namespace ASP_NET_Core.Models;
+    public class Appointment {
+        public int ID { get; set; }
+        public string Title { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
+        public bool? DayLong { get; set; }
+        public string? Recurrence { get; set; }
+        public string? RecurrenceException { get; set; }
+    }
+
+    <!-- tab: SchedulerData.cs -->
+    namespace ASP_NET_Core.Models;
+    static class SchedulerData {
+        public static List<Appointment> Appointments = [
+            new Appointment {
+                ID = 1,
+                Title = "Install New Database",
+                StartDate = new DateTime(2021, 5, 23, 8, 45, 0, DateTimeKind.Utc),
+                EndDate = new DateTime(2021, 5, 23, 9, 45, 0, DateTimeKind.Utc),
+            },
+            new Appointment {
+                ID = 2,
+                Title = "Create New Online Marketing Strategy",
+                StartDate = new DateTime(2021, 5, 24, 9, 0, 0, DateTimeKind.Utc),
+                EndDate = new DateTime(2021, 5, 24, 11, 0, 0, DateTimeKind.Utc),
+            },
+            new Appointment {
+                ID = 3,
+                Title = "Upgrade Personal Computers",
+                StartDate = new DateTime(2021, 5, 25, 10, 15, 0, DateTimeKind.Utc),
+                EndDate = new DateTime(2021, 5, 25, 13, 30, 0, DateTimeKind.Utc),
+            },
+            new Appointment {
+                ID = 4,
+                Title = "Customer Workshop",
+                StartDate = new DateTime(2021, 5, 26, 8, 0, 0, DateTimeKind.Utc),
+                EndDate = new DateTime(2021, 5, 26, 10, 0, 0, DateTimeKind.Utc),
+                DayLong = true,
+                Recurrence = "FREQ=WEEKLY;BYDAY=TU,FR;COUNT=10",
+            },
+            new Appointment {
+                ID = 5,
+                Title = "Prepare Development Plan",
+                StartDate = new DateTime(2021, 5, 27, 8, 0, 0, DateTimeKind.Utc),
+                EndDate = new DateTime(2021, 5, 27, 10, 30, 0, DateTimeKind.Utc),
+            },
+            new Appointment {
+                ID = 6,
+                Title = "Testing",
+                StartDate = new DateTime(2021, 5, 23, 9, 0, 0, DateTimeKind.Utc),
+                EndDate = new DateTime(2021, 5, 23, 10, 0, 0, DateTimeKind.Utc),
+                Recurrence = "FREQ=WEEKLY;INTERVAL=2;COUNT=2",
+            },
+            new Appointment {
+                ID = 7,
+                Title = "Meeting of Instructors",
+                StartDate = new DateTime(2021, 5, 24, 10, 0, 0, DateTimeKind.Utc),
+                EndDate = new DateTime(2021, 5, 24, 11, 15, 0, DateTimeKind.Utc),
+                Recurrence = "FREQ=DAILY;BYDAY=WE;UNTIL=20211001",
+            },
+            new Appointment {
+                ID = 8,
+                Title = "Recruiting students",
+                StartDate = new DateTime(2021, 5, 25, 8, 0, 0, DateTimeKind.Utc),
+                EndDate = new DateTime(2021, 5, 25, 9, 0, 0, DateTimeKind.Utc),
+                Recurrence = "FREQ=YEARLY",
+            },
+            new Appointment {
+                ID = 9,
+                Title = "Monthly Planning",
+                StartDate = new DateTime(2021, 5, 26, 9, 30, 0, DateTimeKind.Utc),
+                EndDate = new DateTime(2021, 5, 26, 10, 45, 0, DateTimeKind.Utc),
+                Recurrence = "FREQ=MONTHLY;BYMONTHDAY=28;COUNT=1",
+            },
+            new Appointment {
+                ID = 10,
+                Title = "Open Day",
+                StartDate = new DateTime(2021, 5, 27, 9, 30, 0, DateTimeKind.Utc),
+                EndDate = new DateTime(2021, 5, 27, 19, 0, 0, DateTimeKind.Utc),
+            },
+        ];
+    }
+
 ##### Angular 
 
     <!-- tab: app.component.html -->

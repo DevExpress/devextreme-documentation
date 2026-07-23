@@ -17,6 +17,16 @@ Users can edit the time zones of individual appointments. To enable this functio
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Scheduler()
+        .Editing(e => e
+            .AllowTimeZoneEditing(true)
+        )
+        // ...
+    )
+
 ##### Angular 
 
     <!-- tab: app.component.html -->

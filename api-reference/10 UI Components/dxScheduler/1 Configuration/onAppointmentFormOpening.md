@@ -1,7 +1,7 @@
 ---
 id: dxScheduler.Options.onAppointmentFormOpening
-type: function(e)
-default: null
+type: function(e) | undefined
+default: undefined
 ---
 ---
 ##### shortDescription
@@ -10,7 +10,7 @@ A function that is executed before Scheduler displays the appointment edit form.
 ##### param(e): ui/scheduler:AppointmentFormOpeningEvent
 Information about the event.
 
-##### field(e.appointmentData): dxSchedulerAppointment
+##### field(e.appointmentData): Appointment
 Data of the appointment edit form's target appointment.
 
 ##### field(e.cancel): Boolean

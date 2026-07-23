@@ -1,7 +1,7 @@
 ---
 id: dxScheduler.Options.onAppointmentTooltipShowing
-type: function(e)
-default: null
+type: function(e) | undefined
+default: undefined
 ---
 ---
 ##### shortDescription
@@ -10,7 +10,7 @@ Occurs before showing an appointment's tooltip.
 ##### param(e): ui/scheduler:AppointmentTooltipShowingEvent
 Information about the event.
 
-##### field(e.appointments): Array<Object>
+##### field(e.appointments): Array<AppointmentTooltipShowingAppointmentInfo>
 An array of appointments.
 
 ##### field(e.cancel): Boolean

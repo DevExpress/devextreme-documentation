@@ -1,7 +1,7 @@
 ---
 id: dxScheduler.Options.onAppointmentUpdating
-type: function(e)
-default: null
+type: function(e) | undefined
+default: undefined
 ---
 ---
 ##### shortDescription
@@ -10,7 +10,7 @@ A function that is executed before an appointment is updated in the data source.
 ##### param(e): ui/scheduler:AppointmentUpdatingEvent
 Information about the event.
 
-##### field(e.cancel): Boolean | Promise<Boolean>
+##### field(e.cancel): Boolean | PromiseLike
 Allows you to prevent an appointment update.    
 If you pass a Promise to this field, the appointment updating is continued or canceled once the Promise has been resolved.
 

@@ -1,7 +1,7 @@
 ---
 id: dxScheduler.Options.onAppointmentRendered
-type: function(e)
-default: null
+type: function(e) | undefined
+default: undefined
 ---
 ---
 ##### shortDescription
@@ -10,7 +10,7 @@ A function that is executed when an appointment is rendered.
 ##### param(e): ui/scheduler:AppointmentRenderedEvent
 Information about the event.
 
-##### field(e.appointmentData): dxSchedulerAppointment
+##### field(e.appointmentData): Appointment
 The initial appointment's data.
 
 ##### field(e.appointmentElement): DxElement
@@ -22,7 +22,7 @@ The UI component's instance.
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.targetedAppointmentData): dxSchedulerAppointment
+##### field(e.targetedAppointmentData): Appointment
 <!-- %field(model.targetedAppointmentData)% -->
 
 ---

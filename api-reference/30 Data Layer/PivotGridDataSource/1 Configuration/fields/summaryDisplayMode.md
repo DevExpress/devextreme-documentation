@@ -1,7 +1,6 @@
 ---
 id: PivotGridDataSource.Options.fields.summaryDisplayMode
 type: Enums.PivotGridSummaryDisplayMode
-default: undefined
 ---
 ---
 ##### shortDescription

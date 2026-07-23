@@ -1,7 +1,7 @@
 ---
 id: dxScheduler.Options.onAppointmentDeleted
-type: function(e)
-default: null
+type: function(e) | undefined
+default: undefined
 ---
 ---
 ##### shortDescription
@@ -10,7 +10,7 @@ A function that is executed after an appointment is deleted from the data source
 ##### param(e): ui/scheduler:AppointmentDeletedEvent
 Information about the event.
 
-##### field(e.appointmentData): dxSchedulerAppointment
+##### field(e.appointmentData): Appointment
 The deleted appointment's data.
 
 ##### field(e.component): {WidgetName}

@@ -1,7 +1,7 @@
 ---
 id: dxScheduler.Options.onAppointmentClick
 type: function(e)
-default: null
+default: undefined
 ---
 ---
 ##### shortDescription
@@ -10,7 +10,7 @@ A function that is executed when an appointment is clicked or tapped.
 ##### param(e): ui/scheduler:AppointmentClickEvent
 Information about the event.
 
-##### field(e.appointmentData): dxSchedulerAppointment
+##### field(e.appointmentData): Appointment
 The initial appointment.
 
 ##### field(e.appointmentElement): DxElement
@@ -28,7 +28,7 @@ The UI component's instance.
 ##### field(e.event): event
 #include common-ref-eventparam
 
-##### field(e.targetedAppointmentData): dxSchedulerAppointment
+##### field(e.targetedAppointmentData): Appointment
 The clicked appointment.
 
 ---

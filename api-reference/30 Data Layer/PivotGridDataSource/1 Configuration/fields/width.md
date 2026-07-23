@@ -1,7 +1,6 @@
 ---
 id: PivotGridDataSource.Options.fields.width
 type: Number
-default: undefined
 ---
 ---
 ##### shortDescription

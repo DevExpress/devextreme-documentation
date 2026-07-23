@@ -1,7 +1,7 @@
 ---
 id: dxScheduler.Options.onAppointmentFormOpening
-type: function(e)
-default: null
+type: function(e) | undefined
+default: undefined
 ---
 ---
 ##### shortDescription

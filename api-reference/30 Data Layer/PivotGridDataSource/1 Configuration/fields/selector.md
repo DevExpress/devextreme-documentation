@@ -1,7 +1,6 @@
 ---
 id: PivotGridDataSource.Options.fields.selector
 type: function()
-default: undefined
 ---
 ---
 ##### shortDescription

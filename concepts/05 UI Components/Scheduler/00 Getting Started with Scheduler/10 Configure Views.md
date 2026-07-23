@@ -52,6 +52,7 @@ To specify the view displayed initially, set the [currentView](/api-reference/10
             v.Add()
                 .Type(SchedulerViewType.Month);
         })
+        .CurrentView(SchedulerViewType.Week)
         // ...
     )
 

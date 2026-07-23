@@ -108,6 +108,15 @@ Once you assign the data source, you need to map field values to appointment att
     )
 
     <!-- tab: SchedulerDataController.cs -->
+    using System.Linq;
+    using System.Text.Json;
+    using ASP_NET_Core.Models;
+    using DevExtreme.AspNet.Data;
+    using DevExtreme.AspNet.Mvc;
+    using Microsoft.AspNetCore.Mvc;
+
+    namespace ASP_NET_Core.Controllers;
+
     public class SchedulerDataController : Controller {
         [HttpGet]
         public object Get(DataSourceLoadOptions loadOptions) {
@@ -120,6 +129,7 @@ Once you assign the data source, you need to map field values to appointment att
             PopulateAppointment(appointment, values);
             // ...
             SchedulerData.Appointments.Add(appointment);
+            return Ok(appointment);
         }
 
         [HttpPut]
@@ -127,6 +137,7 @@ Once you assign the data source, you need to map field values to appointment att
             var appointment = SchedulerData.Appointments.FirstOrDefault(e => e.ID == key);
             // ...
             PopulateAppointment(appointment, values);
+            return Ok(appointment);
         }
 
         [HttpDelete]
@@ -134,6 +145,7 @@ Once you assign the data source, you need to map field values to appointment att
             var appointment = SchedulerData.Appointments.FirstOrDefault(e => e.ID == key);
             // ...
             SchedulerData.Appointments.Remove(appointment);
+            return NoContent();
         }
 
         private static void PopulateAppointment(Appointment appointment, string values) {

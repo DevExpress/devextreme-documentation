@@ -10,36 +10,37 @@ Specifies a custom template for data cells.
 #include common-ref-elementparam with { element: "current cell" }
 
 ##### param(cellInfo): Object
-The cell's properties.
+Cell properties.
 
 ##### field(cellInfo.column): dxDataGridColumn
-The column's properties.
+Column properties.
 
 ##### field(cellInfo.columnIndex): Number
-The index of the cell's column.         
+Cell column index.
+
 For more information on how this index is calculated, refer to the [Column and Row Indexes](/concepts/05%20UI%20Components/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_and_Row_Indexes/') topic.
 
 ##### field(cellInfo.component): dxDataGrid
-The UI component's instance.
+UI component instance.
 
 ##### field(cellInfo.data): Object
-The data of the row to which the cell belongs.
+Data of the row that contains the cell.
 
 ##### field(cellInfo.displayValue): any
-The cell's display value. Differs from the **value** field only when the column uses [lookup](/api-reference/_hidden/GridBaseColumn/lookup '{basewidgetpath}/Configuration/columns/lookup/') or [calculateDisplayValue](/api-reference/_hidden/GridBaseColumn/calculateDisplayValue.md '{basewidgetpath}/Configuration/columns/#calculateDisplayValue').
+Cell display value. Differs from the **value** field only when the column uses [lookup](/api-reference/_hidden/GridBaseColumn/lookup '{basewidgetpath}/Configuration/columns/lookup/') or [calculateDisplayValue](/api-reference/_hidden/GridBaseColumn/calculateDisplayValue.md '{basewidgetpath}/Configuration/columns/#calculateDisplayValue').
 
 ##### field(cellInfo.oldValue): any
 The cell's previous raw value. Defined only if [repaintChangesOnly](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/repaintChangesOnly.md '{basewidgetpath}/Configuration/#repaintChangesOnly') is **true**.
 
 ##### field(cellInfo.row): dxDataGridRowObject
-The cell's row.
+Cell row.
 
 ##### field(cellInfo.rowIndex): Number
-The index of the cell's row. Begins with 0 on each page. Group rows are included.       
+Cell row index. Begins with 0 on each page. Group rows are included.       
 For details on row indexes, see the [Column and Row Indexes](/concepts/05%20UI%20Components/DataGrid/15%20Columns/12%20Column%20and%20Row%20Indexes.md '/Documentation/Guide/UI_Components/{WidgetName}/Columns/Column_and_Row_Indexes/') topic.
 
 ##### field(cellInfo.rowType): String
-The row's [type](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row/rowType.md '{basewidgetpath}/Row/#rowType').
+Row [type](/api-reference/10%20UI%20Components/dxDataGrid/6%20Row/rowType.md '{basewidgetpath}/Row/#rowType').
 
 ##### field(cellInfo.text): String
 **displayValue** after applying [format](/api-reference/_hidden/dxDataGridColumn/format.md '{basewidgetpath}/Configuration/columns/#format') and [customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '{basewidgetpath}/Configuration/columns/#customizeText').
@@ -71,9 +72,9 @@ The following details should be taken into account when you use a **cellTemplate
 
 - If you implement two-way data binding in your template, set [twoWayBindingEnabled](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/twoWayBindingEnabled.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#twoWayBindingEnabled') to **false** to switch off the built-in implementation of this feature.
 
-- In [fixed columns](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnFixing '{basewidgetpath}/Configuration/columnFixing/'), the template is initialized and rendered twice for each cell.
-
 - Template values have no effect on data operations. Implement the column's [calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue') or [calculateDisplayValue](/api-reference/_hidden/GridBaseColumn/calculateDisplayValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateDisplayValue') option to transform the cell's underlying value.
+
+- [cellHintEnabled]({basewidgetpath}/Configuration/#cellHintEnabled) has no effect for columns where **cellTemplate** is configured. To display native hints in these columns, add the [title](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/title) attribute to the **cellTemplate** container element. To display custom hints, configure the DevExtreme [Tooltip](/Documentation/Guide/UI_Components/Tooltip/Overview/) component. Refer to the following help topic for more information: [Customize Cells - Add Tooltips to Cells](/Documentation/Guide/UI_Components/DataGrid/Columns/Customize_Cells/#Add_Tooltips_to_Cells).
 
 ---
 ##### jQuery

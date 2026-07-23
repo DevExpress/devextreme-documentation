@@ -5,7 +5,15 @@ default: true
 ---
 ---
 ##### shortDescription
-Enables a hint that appears when a user hovers the mouse pointer over a cell with truncated content.
+Enables hints that appear when users hover over truncated cells.
 
 ---
-The cell's content may be truncated if the [width](/api-reference/_hidden/GridBaseColumn/width.md '{basewidgetpath}/Configuration/columns/#width') of the cell's column becomes very small. In this case, when a user hovers the mouse pointer over such a cell, a hint containing the cell's value appears. To disable cell hints, assign **false** to the **cellHintEnabled** property.
+When **cellHintEnabled** is `true`, {WidgetName} adds the [title](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/title) element attribute to truncated cells to display native (browser-specific) hints.
+
+[note] This property has no effect for columns where [cellTemplate]({basewidgetpath}/Configuration/columns/#cellTemplate) is configured. To display native hints in these columns, add the **title** attribute to the **cellTemplate** container element. To display custom hints, configure the DevExtreme [Tooltip](/Documentation/Guide/UI_Components/Tooltip/Overview/) component.
+
+#####See Also#####
+
+- **columns[]**.[width](/api-reference/_hidden/GridBaseColumn/width.md '{basewidgetpath}/Configuration/columns/#width')
+- [columnAutoWidth]({basewidgetpath}/Configuration/#columnAutoWidth)
+- [Customize Cells - Add Tooltips to Cells](/Documentation/Guide/UI_Components/{WidgetName}/Columns/Customize_Cells/#Add_Tooltips_to_Cells)

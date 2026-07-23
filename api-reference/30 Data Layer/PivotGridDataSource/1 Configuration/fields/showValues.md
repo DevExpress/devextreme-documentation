@@ -1,7 +1,6 @@
 ---
 id: PivotGridDataSource.Options.fields.showValues
 type: Boolean
-default: undefined
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,6 @@
 ---
 id: PivotGridDataSource.Options.fields.caption
 type: String
-default: undefined
 ---
 ---
 ##### shortDescription

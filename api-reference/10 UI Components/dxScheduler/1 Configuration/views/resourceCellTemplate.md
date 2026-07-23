@@ -1,7 +1,6 @@
 ---
 id: dxScheduler.Options.views.resourceCellTemplate
 type: template
-default: null
 ---
 ---
 ##### shortDescription

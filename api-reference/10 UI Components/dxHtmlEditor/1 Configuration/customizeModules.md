@@ -56,7 +56,7 @@ The DevExtreme Quill modules and the API you can use to customize them are descr
         />
     </template>
 
-    <script>
+    <script setup lang="ts">
     import { DxHtmlEditor } from 'devextreme-vue/html-editor';
 
     function customizeQuillModules(config) {
@@ -130,7 +130,7 @@ You can configure **customizeModules** to modify the [keyboard navigation](/Docu
         />
     </template>
 
-    <script>
+    <script setup lang="ts">
     import { DxHtmlEditor } from 'devextreme-vue/html-editor';
 
     function customizeQuillModules(config) {

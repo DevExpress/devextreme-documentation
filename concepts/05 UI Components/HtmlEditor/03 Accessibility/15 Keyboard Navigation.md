@@ -133,7 +133,7 @@ Configure [customizeModules](/Documentation/ApiReference/UI_Components/dxHtmlEdi
         />
     </template>
 
-    <script>
+    <script setup lang="ts">
     import { DxHtmlEditor } from 'devextreme-vue/html-editor';
 
     function customizeQuillModules(config) {

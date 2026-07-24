@@ -13,118 +13,147 @@ Module configurations.
 The DevExtreme Quill modules and the API you can use to customize them are described in the <a href="https://github.com/DevExpress/devextreme-quill/tree/master/docs/modules" target="_blank">Modules</a> documentation section. For example, the <a href="https://github.com/DevExpress/devextreme-quill/blob/master/docs/modules/history.md" target="_blank">History</a> module, which handles the undo and redo operations, can be customized as follows:
 
 ---
+
 ##### jQuery
 
     <!-- tab: index.js -->
-    $(function() {
-        $("#htmlEditorContainer").dxHtmlEditor({
-            // ...
-            customizeModules: function(config) {
-                config.history = {
-                    delay: 0,
-                    maxStack: 5000
-                }; 
-            }
-        });
+    $("#html-editor").dxHtmlEditor({
+        customizeModules(config) {
+            config.history = {
+                delay: 0,
+                maxStack: 5000
+            };
+        }
     });
 
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-html-editor ...
+    <dx-html-editor
         [customizeModules]="customizeQuillModules">
     </dx-html-editor>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
+    import { DxHtmlEditorModule } from 'devextreme-angular/ui/html-editor';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    // ...
     export class AppComponent {
         customizeQuillModules(config) {
             config.history = {
                 delay: 0,
-                maxStack: 5000
+                maxStack: 5000,
             }; 
         }
     }
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxHtmlEditorModule } from 'devextreme-angular';
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxHtmlEditorModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <DxHtmlEditor ...
+        <DxHtmlEditor
             :customize-modules="customizeQuillModules"
         />
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
+    import { DxHtmlEditor } from 'devextreme-vue/html-editor';
 
-    import DxHtmlEditor from 'devextreme-vue/html-editor';
-
-    export default {
-        components: {
-            DxHtmlEditor
-        },
-        methods: {
-            customizeQuillModules(config) {
-                config.history = {
-                    delay: 0,
-                    maxStack: 5000
-                }; 
-            }
-        }
+    function customizeQuillModules(config) {
+        config.history = {
+            delay: 0,
+            maxStack: 5000,
+        }; 
     }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
+    import { HtmlEditor } from 'devextreme-react/html-editor';
 
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import HtmlEditor from 'devextreme-react/html-editor';
-
-    class App extends React.Component {
-        render() {
-            return (
-                <HtmlEditor ...
-                    customizeModules={this.customizeQuillModules}
-                />
-            );
-        }
-        customizeQuillModules(config) {
+    export default function App() {
+        const customizeQuillModules = useCallback((config) => {
             config.history = {
                 delay: 0,
-                maxStack: 5000
-            }; 
+                maxStack: 5000,
+            };
+        }, []);
+
+        return (
+            <HtmlEditor
+                customizeModules={customizeQuillModules}
+            />
+        );
+    }
+
+---
+
+You can configure **customizeModules** to modify the [keyboard navigation](/Documentation/Guide/UI_Components/HtmlEditor/Accessibility/#Keyboard_Navigation) behavior of HtmlEditor using `keyboard.inlineTabInsertion`:
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $("#html-editor").dxHtmlEditor({
+        customizeModules(config) {
+            config.keyboard.inlineTabInsertion = false;
+        }
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-html-editor
+        [customizeModules]="customizeQuillModules">
+    </dx-html-editor>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import { DxHtmlEditorModule } from 'devextreme-angular/ui/html-editor';
+
+    // ...
+    export class AppComponent {
+        customizeQuillModules(config) {
+            config.keyboard.inlineTabInsertion = false;
         }
     }
-    export default App;
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxHtmlEditor
+            :customize-modules="customizeQuillModules"
+        />
+    </template>
+
+    <script>
+    import { DxHtmlEditor } from 'devextreme-vue/html-editor';
+
+    function customizeQuillModules(config) {
+        config.keyboard.inlineTabInsertion = false;
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.tsx -->
+    import React from 'react';
+    import { HtmlEditor } from 'devextreme-react/html-editor';
+
+    export default function App() {
+        const customizeQuillModules = useCallback((config) => {
+            config.keyboard.inlineTabInsertion = false;
+        }, []);
+
+        return (
+            <HtmlEditor
+                customizeModules={customizeQuillModules}
+            />
+        );
+    }
 
 ---
 

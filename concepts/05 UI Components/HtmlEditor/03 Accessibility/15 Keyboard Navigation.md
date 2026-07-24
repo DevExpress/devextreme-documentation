@@ -55,7 +55,7 @@ A user can use the following keys to interact with the HTML Editor component:
             <ul>
                 <li>Indent list items</li>
                 <li>Focus the next cell in tables</li>
-                <li>Insert a tab character (<code>\t</code>) in text. If <code>keyboard.inlineTabInsertion</code> is disabled, focus the next focusable element on the page.</li>
+                <li>Focus the next focusable element on the page. If <code>keyboard.inlineTabInsertion</code> is enabled, insert a tab character (<code>\t</code>) in text.</li>
             </ul>
         </td>
     </tr>
@@ -66,11 +66,12 @@ A user can use the following keys to interact with the HTML Editor component:
                 <li>Dedent list items</li>
                 <li>Focus the previous cell in tables</li>
                 <li>
-                    Remove a tab character (<code>\t</code>) from text. If <code>keyboard.inlineTabInsertion</code> is disabled or text contains no tab characters, focus one of the following elements:
+                    Focus one of the following elements:
                     <ul>
                         <li>The previous focusable element on the page</li>
                         <li>The HTML Editor <a href="/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/">toolbar</a> (if configured)</li>
                     </ul>
+                    If text contains tab characters (<code>\t</code>) and <code>keyboard.inlineTabInsertion</code> is enabled, remove a tab character from text.
                 </li>
             </ul>
         </td>    
@@ -112,7 +113,7 @@ Configure [customizeModules](/Documentation/ApiReference/UI_Components/dxHtmlEdi
     <!-- tab: index.js -->
     $("#html-editor").dxHtmlEditor({
         customizeModules(config) {
-            config.keyboard.inlineTabInsertion = false;
+            config.keyboard.inlineTabInsertion = true;
         }
     });
 
@@ -130,7 +131,7 @@ Configure [customizeModules](/Documentation/ApiReference/UI_Components/dxHtmlEdi
     // ...
     export class AppComponent {
         customizeQuillModules(config) {
-            config.keyboard.inlineTabInsertion = false;
+            config.keyboard.inlineTabInsertion = true;
         }
     }
 
@@ -147,7 +148,7 @@ Configure [customizeModules](/Documentation/ApiReference/UI_Components/dxHtmlEdi
     import { DxHtmlEditor } from 'devextreme-vue/html-editor';
 
     function customizeQuillModules(config) {
-        config.keyboard.inlineTabInsertion = false;
+        config.keyboard.inlineTabInsertion = true;
     }
     </script>
 
@@ -159,7 +160,7 @@ Configure [customizeModules](/Documentation/ApiReference/UI_Components/dxHtmlEdi
 
     export default function App() {
         const customizeQuillModules = useCallback((config) => {
-            config.keyboard.inlineTabInsertion = false;
+            config.keyboard.inlineTabInsertion = true;
         }, []);
 
         return (

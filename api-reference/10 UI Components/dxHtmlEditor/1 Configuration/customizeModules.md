@@ -99,7 +99,7 @@ You can configure **customizeModules** to modify the [keyboard navigation](/Docu
     <!-- tab: index.js -->
     $("#html-editor").dxHtmlEditor({
         customizeModules(config) {
-            config.keyboard.inlineTabInsertion = false;
+            config.keyboard.inlineTabInsertion = true;
         }
     });
 
@@ -117,7 +117,7 @@ You can configure **customizeModules** to modify the [keyboard navigation](/Docu
     // ...
     export class AppComponent {
         customizeQuillModules(config) {
-            config.keyboard.inlineTabInsertion = false;
+            config.keyboard.inlineTabInsertion = true;
         }
     }
 
@@ -134,7 +134,7 @@ You can configure **customizeModules** to modify the [keyboard navigation](/Docu
     import { DxHtmlEditor } from 'devextreme-vue/html-editor';
 
     function customizeQuillModules(config) {
-        config.keyboard.inlineTabInsertion = false;
+        config.keyboard.inlineTabInsertion = true;
     }
     </script>
 
@@ -146,7 +146,7 @@ You can configure **customizeModules** to modify the [keyboard navigation](/Docu
 
     export default function App() {
         const customizeQuillModules = useCallback((config) => {
-            config.keyboard.inlineTabInsertion = false;
+            config.keyboard.inlineTabInsertion = true;
         }, []);
 
         return (

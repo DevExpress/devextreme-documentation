@@ -5,13 +5,13 @@ id: dxScheduler.showAppointmentTooltip(appointmentData, target, currentAppointme
 ##### shortDescription
 Shows a tooltip for a target element.
 
-##### param(appointmentData): dxSchedulerAppointment
+##### param(appointmentData): Appointment
 The initial appointment.
 
-##### param(target): String | Element | jQuery
+##### param(target): String | UserDefinedElement
 The target element.
 
-##### param(currentAppointmentData): dxSchedulerAppointment | undefined
+##### param(currentAppointmentData): Appointment
 <!-- %field(model.targetedAppointmentData)% -->
 
 ---

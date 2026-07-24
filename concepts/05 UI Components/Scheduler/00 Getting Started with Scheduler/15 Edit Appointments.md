@@ -1,16 +1,10 @@
-Users can manage appointments in the following ways:
+#include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/Scheduler/Appointments/Add_Appointments/", name: "Add Appointments" }
+#include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/Scheduler/Appointments/Update_Appointments/", name: "Update Appointments" }
+#include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/Scheduler/Appointments/Delete_Appointments/", name: "Delete Appointments" }
 
-* Add new appointments
+Scheduler allows users to add, update, and modify appointments. All edit operations are enabled in the default component configuration. To disable specific operations, configure [editing](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/') properties.
 
-* Update appointments in an edit form
-
-* Resize an appointment to change its duration
-
-* Drag and drop an appointment to reschedule it
-
-* Remove appointments
-
-Edit operations are enabled (the default setting). To disable an individual operation, set the corresponding property in the [editing](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/') object to **false**. In this tutorial, we use the [allowDragging](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/editing/allowDragging.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/#allowDragging') property to disable appointment drag-and-drop.
+This tutorial disables [allowDragging](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/editing/allowDragging.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/#allowDragging'):
 
 ---
 ##### jQuery
@@ -38,7 +32,7 @@ Edit operations are enabled (the default setting). To disable an individual oper
 ##### Angular 
 
     <!-- tab: app.component.html -->
-    <dx-scheduler ... >
+    <dx-scheduler>
         <dxo-scheduler-editing
             [allowDragging]="false">
         </dxo-scheduler-editing>
@@ -48,44 +42,27 @@ Edit operations are enabled (the default setting). To disable an individual oper
 
     <!-- tab: App.vue -->
     <template> 
-        <DxScheduler ... >
+        <DxScheduler>
             <DxEditing
                 :allow-dragging="false"
             />
         </DxScheduler>
     </template> 
 
-    <script>
-    // ...
-    import {
-        DxScheduler,
-        // ...
-        DxEditing
-    } from 'devextreme-vue/scheduler';
+    <script setup lang="ts">
+    import { DxScheduler, DxEditing } from 'devextreme-vue/scheduler';
 
-    export default {
-        components: {
-            DxScheduler,
-            // ...
-            DxEditing
-        },
-        // ...
-    }
     </script>
 
 ##### React 
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
+    import { Scheduler, Editing } from 'devextreme-react/scheduler';
     // ...
-    import {
-        Scheduler,
-        // ...
-        Editing
-    } from 'devextreme-react/scheduler';
 
-    function App() {
+    export default function App() {
         return (
-            <Scheduler ... >
+            <Scheduler>
                 <Editing
                     allowDragging={false}
                 />
@@ -93,10 +70,15 @@ Edit operations are enabled (the default setting). To disable an individual oper
         );
     }
 
-    export default App;
-
 ---
-When users add or edit appointments, the Scheduler raises events like [onAppointmentAdding](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/onAppointmentAdding.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentAdding/') and [onAppointmentUpdating](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/onAppointmentUpdating.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentUpdating/'). You can use these events to extend the Scheduler component's functionality. The example below demonstrates how to prevent adding or moving appointments to cells with existing recurring appointments using **onAppointmentAdding** and **onAppointmentUpdating**.
+
+When users add, edit, or delete appointments, Scheduler calls the following event handlers:
+
+- [onAppointmentAdding](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/onAppointmentAdding.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentAdding/')
+- [onAppointmentUpdating](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/onAppointmentUpdating.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentUpdating/')
+- [onAppointmentDeleting](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentDeleting)
+
+You can use these handlers to extend Scheduler's functionality. The following example configures **onAppointmentAdding** and **onAppointmentUpdating** to prevent adding or moving appointments to cells with existing recurring appointments:
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-scheduler-prevent-recurrence-appointment"

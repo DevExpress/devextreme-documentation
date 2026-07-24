@@ -5,13 +5,13 @@ id: dxScheduler.showAppointmentPopup(appointmentData, createNewAppointment, curr
 ##### shortDescription
 Shows the appointment edit form.
 
-##### param(appointmentData): dxSchedulerAppointment | undefined
+##### param(appointmentData): Appointment
 The initial appointment.
 
-##### param(createNewAppointment): Boolean | undefined
+##### param(createNewAppointment): Boolean
 Specifies whether a new appointment is created when editing is finished.
 
-##### param(currentAppointmentData): dxSchedulerAppointment | undefined
+##### param(currentAppointmentData): Appointment
 <!-- %field(model.targetedAppointmentData)% -->
 
 ---

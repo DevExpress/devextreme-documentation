@@ -108,15 +108,6 @@ Once you assign the data source, you need to map field values to appointment att
     )
 
     <!-- tab: SchedulerDataController.cs -->
-    using System.Linq;
-    using System.Text.Json;
-    using ASP_NET_Core.Models;
-    using DevExtreme.AspNet.Data;
-    using DevExtreme.AspNet.Mvc;
-    using Microsoft.AspNetCore.Mvc;
-
-    namespace ASP_NET_Core.Controllers;
-
     public class SchedulerDataController : Controller {
         [HttpGet]
         public object Get(DataSourceLoadOptions loadOptions) {

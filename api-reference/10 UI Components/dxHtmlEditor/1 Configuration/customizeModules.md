@@ -90,7 +90,7 @@ The DevExtreme Quill modules and the API you can use to customize them are descr
 
 ---
 
-You can configure **customizeModules** to modify the [keyboard navigation](/Documentation/Guide/UI_Components/HtmlEditor/Accessibility/#Keyboard_Navigation) behavior of HtmlEditor using `keyboard.inlineTabInsertion`:
+You can configure **customizeModules** to modify the [keyboard navigation](/Documentation/Guide/UI_Components/HtmlEditor/Accessibility/#Keyboard_Navigation) behavior of HTML Editor using `keyboard.inlineTabInsertion`:
 
 ---
 

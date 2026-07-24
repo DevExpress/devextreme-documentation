@@ -52,17 +52,21 @@ A user can use the following keys to interact with the HTML Editor component:
     <tr>
         <td colspan="2">Tab</td>
         <td>
-            1. Indent list items<br>
-            2. Focus the next cell in tables<br>
-            3. Insert a tab character (<code>\t</code>) in text. If <code>keyboard.inlineTabInsertion</code> is disabled, focuses the next focusable element on the page.
+            <ol>
+                <li>Indent list items</li>
+                <li>Focus the next cell in tables</li>
+                <li>Insert a tab character (<code>\t</code>) in text. If <code>keyboard.inlineTabInsertion</code> is disabled, focuses the next focusable element on the page.</li>
+            </ol>
         </td>
     </tr>
     <tr>
         <td colspan="2">Shift + Tab</td>
         <td>
-            1. Dedent list items<br>
-            2. Focus the previous cell in tables<br>
-            3. Remove a tab character (<code>\t</code>) from text. If <code>keyboard.inlineTabInsertion</code> is disabled or text contains no tab characters, focuses the previous focusable element in the component.
+            <ol>
+                <li>Dedent list items</li>
+                <li>Focus the previous cell in tables</li>
+                <li>Remove a tab character (<code>\t</code>) from text. If <code>keyboard.inlineTabInsertion</code> is disabled or text contains no tab characters, focuses the previous focusable element in the component.</li>
+            </ol>
         </td>    
     </tr>
     <tr>

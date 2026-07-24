@@ -36,6 +36,26 @@ To specify the view displayed initially, set the [currentView](/api-reference/10
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Scheduler()
+        .Views(v => {
+            v.Add()
+                .Type(SchedulerViewType.Day)
+                .StartDayHour(10)
+                .EndDayHour(22);
+            v.Add()
+                .Type(SchedulerViewType.Week)
+                .StartDayHour(10)
+                .EndDayHour(22);
+            v.Add()
+                .Type(SchedulerViewType.Month);
+        })
+        .CurrentView(SchedulerViewType.Week)
+        // ...
+    )
+
 ##### Angular 
 
     <!-- tab: app.component.html -->

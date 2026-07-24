@@ -25,6 +25,16 @@ Edit operations are enabled (the default setting). To disable an individual oper
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Scheduler()
+        .Editing(e => e
+            .AllowDragging(false)
+        )
+        // ...
+    )
+
 ##### Angular 
 
     <!-- tab: app.component.html -->

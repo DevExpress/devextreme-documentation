@@ -72,12 +72,12 @@ A user can use the following keys to interact with the HTML Editor component:
     <tr>
         <td>Ctrl + Shift + Up&nbsp;Arrow</td>
         <td>&#8984; + Shift + Up&nbsp;Arrow</td>
-        <td>Focuses the previous focusable element in the component.</td>
+        <td>Focus the previous focusable element in the component.</td>
     </tr>
     <tr>
         <td>Ctrl + Shift + Down&nbsp;Arrow</td>
         <td>&#8984; + Shift + Down&nbsp;Arrow</td>
-        <td>Focuses the next focusable element on the page.</td>
+        <td>Focus the next focusable element on the page.</td>
     </tr>
     <tr>
         <td colspan="2">Enter</td>
@@ -93,7 +93,7 @@ A user can use the following keys to interact with the HTML Editor component:
     </tr>
 </table>
 
-To toggle `keyboard.inlineTabInsertion`, configure [customizeModules](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#customizeModules):
+Configure [customizeModules](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#customizeModules) to toggle `keyboard.inlineTabInsertion`:
 
 ---
 
@@ -144,7 +144,7 @@ To toggle `keyboard.inlineTabInsertion`, configure [customizeModules](/Documenta
 ##### React
 
     <!-- tab: App.tsx -->
-    import React from 'react';
+    import React, { useCallback } from 'react';
     import { HtmlEditor } from 'devextreme-react/html-editor';
 
     export default function App() {

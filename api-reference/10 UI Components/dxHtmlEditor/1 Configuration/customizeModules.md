@@ -70,7 +70,7 @@ The DevExtreme Quill modules and the API you can use to customize them are descr
 ##### React
 
     <!-- tab: App.tsx -->
-    import React from 'react';
+    import React, { useCallback } from 'react';
     import { HtmlEditor } from 'devextreme-react/html-editor';
 
     export default function App() {
@@ -93,6 +93,7 @@ The DevExtreme Quill modules and the API you can use to customize them are descr
 You can configure **customizeModules** to modify the [keyboard navigation](/Documentation/Guide/UI_Components/HtmlEditor/Accessibility/#Keyboard_Navigation) behavior of HtmlEditor using `keyboard.inlineTabInsertion`:
 
 ---
+
 ##### jQuery
 
     <!-- tab: index.js -->
@@ -140,7 +141,7 @@ You can configure **customizeModules** to modify the [keyboard navigation](/Docu
 ##### React
 
     <!-- tab: App.tsx -->
-    import React from 'react';
+    import React, { useCallback } from 'react';
     import { HtmlEditor } from 'devextreme-react/html-editor';
 
     export default function App() {

@@ -55,7 +55,7 @@ A user can use the following keys to interact with the HTML Editor component:
             <ul>
                 <li>Indent list items</li>
                 <li>Focus the next cell in tables</li>
-                <li>Insert a tab character (<code>\t</code>) in text. If <code>keyboard.inlineTabInsertion</code> is disabled, focuses the next focusable element on the page.</li>
+                <li>Insert a tab character (<code>\t</code>) in text. If <code>keyboard.inlineTabInsertion</code> is disabled, focus the next focusable element on the page.</li>
             </ul>
         </td>
     </tr>
@@ -65,7 +65,13 @@ A user can use the following keys to interact with the HTML Editor component:
             <ul>
                 <li>Dedent list items</li>
                 <li>Focus the previous cell in tables</li>
-                <li>Remove a tab character (<code>\t</code>) from text. If <code>keyboard.inlineTabInsertion</code> is disabled or text contains no tab characters, focuses the previous focusable element in the component.</li>
+                <li>
+                    Remove a tab character (<code>\t</code>) from text. If <code>keyboard.inlineTabInsertion</code> is disabled or text contains no tab characters, focus one of the following elements:
+                    <ul>
+                        <li>The previous focusable element on the page</li>
+                        <li>The HTML Editor <a href="/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/">toolbar</a> (if configured)</li>
+                    </ul>
+                </li>
             </ul>
         </td>    
     </tr>
@@ -76,12 +82,12 @@ A user can use the following keys to interact with the HTML Editor component:
     <tr>
         <td>Ctrl + Shift + Up&nbsp;Arrow</td>
         <td>&#8984; + Shift + Up&nbsp;Arrow</td>
-        <td>Focus the previous focusable element in the component.</td>
+        <td>Focus the previous focusable element on the page or the HTML Editor <a href="/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/">toolbar</a> (if configured)</td>
     </tr>
     <tr>
         <td>Ctrl + Shift + Down&nbsp;Arrow</td>
         <td>&#8984; + Shift + Down&nbsp;Arrow</td>
-        <td>Focus the next focusable element on the page.</td>
+        <td>Focus the next focusable element on the page</td>
     </tr>
     <tr>
         <td colspan="2">Enter</td>

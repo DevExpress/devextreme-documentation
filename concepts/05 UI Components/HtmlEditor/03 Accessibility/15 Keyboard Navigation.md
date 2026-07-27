@@ -2,8 +2,8 @@ A user can use the following keys to interact with the HTML Editor component:
 
 <table class="dx-table">
     <tr>
-        <th>PC</th>
-        <th>Mac</th>
+        <th style="min-width: 64px;">PC</th>
+        <th style="min-width: 64px;">Mac</th>
         <th>Action</th>
     </tr>
     <tr>
@@ -50,25 +50,45 @@ A user can use the following keys to interact with the HTML Editor component:
         <td>Insert a line break (in the same paragraph)</td>
     </tr>
     <tr>
-        <td colspan="2" rowspan="3">Tab</td>
-        <td>Nest current list item (when in a list)</td>
+        <td colspan="2">Tab</td>
+        <td>
+            <ul>
+                <li>Indent list items</li>
+                <li>Focus the next cell in tables</li>
+                <li>Focus the next focusable element on the page. If <code>keyboard.inlineTabInsertion</code> is enabled, insert a tab character (<code>\t</code>) in text.</li>
+            </ul>
+        </td>
     </tr>
     <tr>
-        <td>Increase indentation (when at the start of a paragraph)</td>    
-    </tr>
-    <tr>
-        <td>Move the cursor to the next table cell</td>
-    </tr>
-    <tr>
-        <td colspan="2" rowspan="2">Shift + Tab</td>
-        <td>Move the cursor to the previous table cell</td>
-    </tr>
-    <tr>
-        <td>Decrease indentation (when at the start of a paragraph)</td>    
+        <td colspan="2">Shift + Tab</td>
+        <td>
+            <ul>
+                <li>Dedent list items</li>
+                <li>Focus the previous cell in tables</li>
+                <li>
+                    Focus one of the following elements:
+                    <ul>
+                        <li>The previous focusable element on the page</li>
+                        <li>The HTML Editor <a href="/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/">toolbar</a> (if configured)</li>
+                    </ul>
+                    If text contains tab characters (<code>\t</code>) and <code>keyboard.inlineTabInsertion</code> is enabled, remove a tab character from text.
+                </li>
+            </ul>
+        </td>    
     </tr>
     <tr>
         <td colspan="2">Arrow Keys</td>
         <td>Navigate through the table</td>
+    </tr>
+    <tr>
+        <td>Ctrl + Shift + Up&nbsp;Arrow</td>
+        <td>&#8984; + Shift + Up&nbsp;Arrow</td>
+        <td>Focus the previous focusable element on the page or the HTML Editor <a href="/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/">toolbar</a> (if configured)</td>
+    </tr>
+    <tr>
+        <td>Ctrl + Shift + Down&nbsp;Arrow</td>
+        <td>&#8984; + Shift + Down&nbsp;Arrow</td>
+        <td>Focus the next focusable element on the page</td>
     </tr>
     <tr>
         <td colspan="2">Enter</td>
@@ -83,5 +103,73 @@ A user can use the following keys to interact with the HTML Editor component:
         <td>Apply active dialog data</td>
     </tr>
 </table>
+
+Configure [customizeModules](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#customizeModules) to toggle `keyboard.inlineTabInsertion`:
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    $("#html-editor").dxHtmlEditor({
+        customizeModules(config) {
+            config.keyboard.inlineTabInsertion = true;
+        }
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-html-editor
+        [customizeModules]="customizeQuillModules">
+    </dx-html-editor>
+
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import { DxHtmlEditorModule } from 'devextreme-angular/ui/html-editor';
+
+    // ...
+    export class AppComponent {
+        customizeQuillModules(config) {
+            config.keyboard.inlineTabInsertion = true;
+        }
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxHtmlEditor
+            :customize-modules="customizeQuillModules"
+        />
+    </template>
+
+    <script setup lang="ts">
+    import { DxHtmlEditor } from 'devextreme-vue/html-editor';
+
+    function customizeQuillModules(config) {
+        config.keyboard.inlineTabInsertion = true;
+    }
+    </script>
+
+##### React
+
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
+    import { HtmlEditor } from 'devextreme-react/html-editor';
+
+    export default function App() {
+        const customizeQuillModules = useCallback((config) => {
+            config.keyboard.inlineTabInsertion = true;
+        }, []);
+
+        return (
+            <HtmlEditor
+                customizeModules={customizeQuillModules}
+            />
+        );
+    }
+
+---
 
 #include common-code-register-key-handler

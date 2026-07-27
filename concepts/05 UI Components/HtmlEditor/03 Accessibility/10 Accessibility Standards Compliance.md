@@ -17,11 +17,6 @@ The HTML Editor component meets a variety of <a href="https://www.access-board.g
         <td>Users cannot resize images, Popup, and Resizable controls within HTML Editor.</td>
     </tr>
     <tr>
-        <td>501 (Web)(Software) <br> 504.2 (Authoring Tool) <br> 602.3 (Support Docs)</td>
-        <td>2.1.2 No Keyboard Trap (Level A)</td>
-        <td>The keyboard shortcut to focus out of the component does not exist.</td>
-    </tr>
-    <tr>
         <td>-</td>
         <td>4.1.2 Name, Role, Value</td>
         <td>NVDA does not pronounce the state of the button in the toolbar (active or not).</td>

@@ -5,78 +5,70 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the initial size of an item (pane) in pixels or as a percentage. The size changes after any layout alteration.
+Specifies the initial item (pane) size in pixels or as a percentage of the component's total size. Splitter initializes panes with equal sizes when this property is `undefined` (default).
 
 ---
+
+Splitter preserves configured pane sizes across layout changes in the UI. If you update the component layout programmatically (modify an item's **size** property using [option()](/Documentation/ApiReference/UI_Components/dxSplitter/Methods/#option)), Splitter recalculates the sizes of all panes. This may shift the layout of the entire component. To ensure only specific items are affected when you update the Splitter layout, define **size** for all panes and reassign all pane sizes.
+
+[note]
+
+- Specify [minSize](/api-reference/10%20UI%20Components/dxSplitter/7%20Interfaces/dxSplitterItem/minSize.md '/Documentation/ApiReference/UI_Components/dxSplitter/Interfaces/dxSplitterItem/#minSize') and [maxSize](/api-reference/10%20UI%20Components/dxSplitter/7%20Interfaces/dxSplitterItem/maxSize.md '/Documentation/ApiReference/UI_Components/dxSplitter/Interfaces/dxSplitterItem/#maxSize') to constrain pane sizes.
+- Ensure the combined size of all panes does not exceed Splitter dimensions to avoid truncated or hidden pane content.
+
+[/note]
+
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
-    $(() => {
-        $("#splitter").dxSplitter({
-            items: [
-                {
-                    // ...
-                    size: "50%",
-                }
-            ],
-        });
+    $("#splitter").dxSplitter({
+        items: [{
+            size: "50%",
+        }, /* ... */ ],
     });
 
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-splitter ... >
-        <dxi-splitter-item ...
+    <dx-splitter>
+        <dxi-splitter-item
             size="50%"
-        >
-        </dxi-splitter-item>
+        ></dxi-splitter-item>
     </dx-splitter>
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <DxSplitter ... >
-            <DxItem ... 
+        <DxSplitter>
+            <DxItem 
                 size="50%"
             />
         </DxSplitter>
     </template>
 
-    <script setup>
+    <script setup lang="ts">
     import { DxSplitter, DxItem } from "devextreme-vue/splitter";
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from "react";
-    import Splitter, { Item } from "devextreme-react/splitter";
+    import { Splitter, Item } from "devextreme-react/splitter";
 
-    const App = () => (
-        <React.Fragment>
-            <Splitter ... >
-                <Item ... 
+    export default function App() {
+        return (
+            <Splitter>
+                <Item
                     size="50%"
                 />
             </Splitter>
-        </React.Fragment>
-    );
-
-    export default App;
+        );
+    }
 
 ---
-
-If you do not specify pane sizes, the UI component splits up the panes automatically with even distribution.
-
-[note]
-
-- You can use [minSize](/api-reference/10%20UI%20Components/dxSplitter/7%20Interfaces/dxSplitterItem/minSize.md '/Documentation/ApiReference/UI_Components/dxSplitter/Interfaces/dxSplitterItem/#minSize') and [maxSize](/api-reference/10%20UI%20Components/dxSplitter/7%20Interfaces/dxSplitterItem/maxSize.md '/Documentation/ApiReference/UI_Components/dxSplitter/Interfaces/dxSplitterItem/#maxSize') properties to specify size constraints.
-
-- The total pane size should not exceed Splitter size.
-
-[/note]
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Splitter/Overview/"

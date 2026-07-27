@@ -10,7 +10,7 @@ Allows you to customize the DevExtreme Quill and 3rd-party modules.
 Module configurations.
 
 ---
-The  <a href="https://github.com/DevExpress/devextreme-quill/tree/master/docs/modules" target="_blank">Modules</a> documentation section describes the DevExtreme Quill modules and the API you can use to customize them. For example, the <a href="https://github.com/DevExpress/devextreme-quill/blob/master/docs/modules/history.md" target="_blank">History</a> module, which handles the undo and redo operations, can be customized as follows:
+The [Modules](https://github.com/DevExpress/devextreme-quill/tree/master/docs/modules) documentation section describes the DevExtreme Quill modules and the API you can use to customize them. For example, the [History](https://github.com/DevExpress/devextreme-quill/blob/master/docs/modules/history.md) module, which handles the undo and redo operations, can be customized as follows:
 
 ---
 

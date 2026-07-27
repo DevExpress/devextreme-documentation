@@ -49,7 +49,7 @@ Users can also edit the time zones of individual appointments when **editing**.[
             time-zone="Europe/Berlin"
         >
             <DxEditing
-                :allow-editing-time-zones="true"
+                :allow-time-zone-editing="true"
             />
             <!-- ... -->
         </DxScheduler>

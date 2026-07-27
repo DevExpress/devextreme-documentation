@@ -2,7 +2,7 @@
 #include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/Scheduler/Appointments/Update_Appointments/", name: "Update Appointments" }
 #include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/Scheduler/Appointments/Delete_Appointments/", name: "Delete Appointments" }
 
-Scheduler allows users to add, update, and modify appointments. All edit operations are enabled in the default component configuration. To disable specific operations, configure [editing](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/') properties.
+Scheduler allows users to add, update, and delete appointments. All edit operations are enabled in the default component configuration. To disable specific operations, configure [editing](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/') properties.
 
 This tutorial disables [allowDragging](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/editing/allowDragging.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/#allowDragging'):
 
@@ -72,13 +72,13 @@ This tutorial disables [allowDragging](/api-reference/10%20UI%20Components/dxSch
 
 ---
 
-When users add, edit, or delete appointments, Scheduler calls the following event handlers:
+When users add, update, or delete appointments, Scheduler calls the following event handlers:
 
 - [onAppointmentAdding](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/onAppointmentAdding.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentAdding/')
 - [onAppointmentUpdating](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/onAppointmentUpdating.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentUpdating/')
 - [onAppointmentDeleting](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentDeleting)
 
-You can use these handlers to extend Scheduler's functionality. The following example configures **onAppointmentAdding** and **onAppointmentUpdating** to prevent adding or moving appointments to cells with existing recurring appointments:
+You can use these handlers to extend Scheduler's functionality. The following example configures **onAppointmentAdding** and **onAppointmentUpdating** to ensure recurring appointments do not share cells with other appointments:
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-scheduler-prevent-recurrence-appointment"

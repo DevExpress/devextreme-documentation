@@ -43,7 +43,7 @@ Use [currentDate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configurat
     <!-- tab: App.vue -->
     <template> 
         <DxScheduler
-            :current-date.sync="currentDate">
+            v-model:current-date="currentDate">
         </DxScheduler>
     </template>
 

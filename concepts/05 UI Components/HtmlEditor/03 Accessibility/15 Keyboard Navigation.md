@@ -104,7 +104,7 @@ A user can use the following keys to interact with the HTML Editor component:
     </tr>
 </table>
 
-Configure [customizeModules](/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#customizeModules) to toggle `keyboard.inlineTabInsertion`:
+Configure [customizeModules](/api-reference/10%20UI%20Components/dxHtmlEditor/1%20Configuration/customizeModules.md '/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/#customizeModules') to toggle `keyboard.inlineTabInsertion`:
 
 ---
 

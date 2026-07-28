@@ -90,7 +90,7 @@ The [Modules](https://github.com/DevExpress/devextreme-quill/tree/master/docs/mo
 
 ---
 
-Use **customizeModules** and `keyboard.inlineTabInsertion` to modify the HTML Editor's [keyboard navigation](/Documentation/Guide/UI_Components/HtmlEditor/Accessibility/#Keyboard_Navigation) behavior:
+Use **customizeModules** and `keyboard.inlineTabInsertion` to modify the HTML Editor's [keyboard navigation](/concepts/05%20UI%20Components/HtmlEditor/03%20Accessibility/15%20Keyboard%20Navigation.md '/Documentation/Guide/UI_Components/HtmlEditor/Accessibility/#Keyboard_Navigation') behavior:
 
 ---
 

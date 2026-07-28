@@ -11,7 +11,7 @@ Converts a numeric value to a string using the specified format.
 The formatted string.
 
 ##### param(value): Number
-A numeric value to be converted.
+The numeric value to be converted.
 
 ##### param(format): Format
 The [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/Format/') to be used for conversion.
@@ -57,4 +57,4 @@ The [format](/api-reference/50%20Common/Object%20Structures/format '/Documentati
 ---
 
 #####See Also#####
-- [Format Custom Values](/concepts/Common/Value%20Formatting/40%20Format%20Custom%20Values.md '/Documentation/Guide/Common/Value_Formatting/#Format_Custom_Values')
+- [Format Custom Values](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/10%20Format%20UI%20Component%20Values/30%20Custom%20Function.md)

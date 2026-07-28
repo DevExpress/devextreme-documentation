@@ -218,4 +218,4 @@ When data in the List is [paginated](/concepts/05%20UI%20Components/List/08%20Pa
 
 #####See Also#####
 #include common-link-configurewidget
-- [List - Localization](/concepts/05%20UI%20Components/List/50%20Localization.md '/Documentation/Guide/UI_Components/List/Localization/')
+- [List - Localization](/concepts/05%20UI%20Components/List/50%20Localization.md '/concepts/05%20UI%20Components/List/50%20Localization.md')

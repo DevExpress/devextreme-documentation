@@ -30,7 +30,7 @@ The format property can accept the following value types:
 
 - Custom format string    
 
-    Use Unicode Locale Data Markup Language (LDML) patterns to specify a custom format string. An LDML pattern consists of wildcard characters and characters displayed as is. The **format** property supports the following wildcard characters:
+    Use Unicode Locale Data Markup Language (LDML) patterns to specify a custom format string. An LDML pattern consists of wildcard characters and literal characters that are displayed as-is. The **format** property supports the following wildcard characters:
 
     <table class="dx-table">
         <tr>
@@ -125,7 +125,7 @@ The format property can accept the following value types:
     }
     
 - Function    
-A function should apply a custom format to a value and return the formatted value as a string. A shortcut for the [formatter](/api-reference/50%20Common/Object%20Structures/format/formatter.md '/Documentation/ApiReference/Common/Object_Structures/Format/#formatter') property. Refer to the following article for more information: [Custom Function](/concepts/Common/Value%20Formatting/10%20Format%20UI%20Component%20Values/30%20Custom%20Function.md '/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Function').
+A function should apply a custom format to a value and return the formatted value as a string. A shortcut for the [formatter](/api-reference/50%20Common/Object%20Structures/format/formatter.md '/Documentation/ApiReference/Common/Object_Structures/Format/#formatter') property. Refer to the following article for more information: [Custom Function](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/10%20Format%20UI%20Component%20Values/30%20Custom%20Function.md).
 
     [important] If you allow users to edit the formatted value, implement the [parser](/api-reference/50%20Common/Object%20Structures/format/parser.md '/Documentation/ApiReference/Common/Object_Structures/format/#parser') function to convert the value back to a number.
 

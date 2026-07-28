@@ -39,7 +39,7 @@ Depending on the values you need to format, you can choose one of the following 
 
 - The *"fixedPoint"*, *"decimal"*, and *"currency"* format types can be paired with *"largeNumber", "thousands", "millions", "billions"*, and *"trillions"*, for example: *"fixedPoint thousands"*.
 
-- Editor components, such as [NumberBox](https://js.devexpress.com/Demos/WidgetsGallery/Demo/NumberBox/Overview/), do not support large number formats. If you want to apply these formats, you can implement the [formatter](/api-reference/50%20Common/Object%20Structures/format/formatter.md '/Documentation/ApiReference/Common/Object_Structures/format/#formatter') and [parser](/api-reference/50%20Common/Object%20Structures/format/parser.md '/Documentation/ApiReference/Common/Object_Structures/format/#parser') functions or specify a [custom format string](/concepts/Common/Value%20Formatting/10%20Format%20UI%20Component%20Values/20%20Custom%20Format%20String.md '/Documentation/Guide/Common/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String').
+- Editor components, such as [NumberBox](https://js.devexpress.com/Demos/WidgetsGallery/Demo/NumberBox/Overview/), do not support large number formats. If you want to apply these formats, you can implement the [formatter](/api-reference/50%20Common/Object%20Structures/format/formatter.md '/Documentation/ApiReference/Common/Object_Structures/format/#formatter') and [parser](/api-reference/50%20Common/Object%20Structures/format/parser.md '/Documentation/ApiReference/Common/Object_Structures/format/#parser') functions or specify a [custom format string](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/10%20Format%20UI%20Component%20Values/20%20Custom%20Format%20String.md).
 
 [/note]
 
@@ -76,4 +76,5 @@ If the **type** is the only field you need to specify in the **format** object, 
 }
 
 #####See Also#####
-- [Value Formatting](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/')
+- [Value Formatting](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/00%20Value%20Formatting.md)
+

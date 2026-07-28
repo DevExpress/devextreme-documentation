@@ -63,13 +63,12 @@
 
   <MenuRule Destination="15 Common Concepts/30 TypeScript Guides" SourcePattern="Howto:^Common/TypeScript Guides" />
 
-  <MenuRule Destination="15 Common Concepts/40 Localization and Globalization/Overview" SourcePattern="Howto:^Common/Localization" />
-  <MenuRule Destination="15 Common Concepts/40 Localization and Globalization/Value Formatting" SourcePattern="Howto:^Common/Value Formatting" />
+  <MenuRule Destination="15 Common Concepts/40 Localization and Globalization" SourcePattern="Howto:^Common/Localization and Globalization" />
   <MenuRule Destination="15 Common Concepts/40 Localization and Globalization/zz API/Methods" SourcePattern="ApiReference:^50 Common/utils/localization" />
   <MenuRule Destination="15 Common Concepts/40 Localization and Globalization/zz API/zz Interfaces/$1" SourcePattern="ApiReference:^50 Common/Object Structures/((F|f)ormat)" />
-  
+
   <MenuRule Destination="15 Common Concepts/50 Module Structure" SourcePattern="Howto:^Common/Modularity/02 DevExtreme Modules Structure" />
-  
+
   <MenuRule Destination="15 Common Concepts/60 Shadow DOM" SourcePattern="Howto:^Common/Shadow DOM" />
 
   <MenuRule Destination="17 AI Features" SourcePattern="Howto:^90 AI Features" />

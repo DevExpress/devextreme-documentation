@@ -251,7 +251,7 @@ This gesture refreshes data in the List. To enable it, assign **true** to the [p
 
 #####See Also#####
 - [List - End-User Interaction | Universal Actions](/concepts/05%20UI%20Components/List/45%20End-User%20Interaction/05%20Universal%20Actions.md '/Documentation/Guide/UI_Components/List/End-User_Interaction/Universal_Actions/')
-- [List - Localization](/concepts/05%20UI%20Components/List/50%20Localization.md '/Documentation/Guide/UI_Components/List/Localization/')
+- [List - Localization](/concepts/05%20UI%20Components/List/50%20Localization.md '/concepts/05%20UI%20Components/List/50%20Localization.md')
 - [List Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/List/ListEditingAndAPI/)
 - [List API Reference](/api-reference/10%20UI%20Components/dxList '/Documentation/ApiReference/UI_Components/dxList/')
 

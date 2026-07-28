@@ -38,4 +38,4 @@ Specifies the tag of the represented point.
 }
 
 #####See Also#####
-- [Value Formatting](/concepts/Common/Value%20Formatting '/Documentation/Guide/Common/Value_Formatting/')
+- [Value Formatting](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting '/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/00%20Value%20Formatting.md')

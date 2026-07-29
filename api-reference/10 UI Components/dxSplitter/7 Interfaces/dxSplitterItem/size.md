@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-Specifies the initial item (pane) size in pixels or as a percentage of the component's total size. Splitter initializes panes with equal sizes when this property is `undefined` (default).
+Specifies the initial size of an item (pane) in pixels or as a percentage of the component's total size. The Splitter initializes panes with equal sizes when this property is `undefined` (default).
 
 ---
 
@@ -13,7 +13,7 @@ Splitter preserves configured pane sizes across layout changes in the UI. If you
 
 [note]
 
-- Specify [minSize](/api-reference/10%20UI%20Components/dxSplitter/7%20Interfaces/dxSplitterItem/minSize.md '/Documentation/ApiReference/UI_Components/dxSplitter/Interfaces/dxSplitterItem/#minSize') and [maxSize](/api-reference/10%20UI%20Components/dxSplitter/7%20Interfaces/dxSplitterItem/maxSize.md '/Documentation/ApiReference/UI_Components/dxSplitter/Interfaces/dxSplitterItem/#maxSize') to constrain pane sizes.
+- Specify [minSize](/api-reference/10%20UI%20Components/dxSplitter/7%20Interfaces/dxSplitterItem/minSize.md '/Documentation/ApiReference/UI_Components/dxSplitter/Interfaces/dxSplitterItem/#minSize') and [maxSize](/api-reference/10%20UI%20Components/dxSplitter/7%20Interfaces/dxSplitterItem/maxSize.md '/Documentation/ApiReference/UI_Components/dxSplitter/Interfaces/dxSplitterItem/#maxSize') to limit pane sizes.
 - Ensure the combined size of all panes does not exceed Splitter dimensions to avoid truncated or hidden pane content.
 
 [/note]

@@ -1,0 +1,10 @@
+#scheduler {
+    height: 600px;
+}
+
+/* "Discard Changes" button inside the appointment edit form */
+.discard-btn-item {
+    padding-top: 8px !important;
+    border-top: 1px solid #eee;
+    margin-top: 4px;
+}

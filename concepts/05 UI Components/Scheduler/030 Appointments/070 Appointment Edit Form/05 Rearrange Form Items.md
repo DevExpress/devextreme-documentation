@@ -24,16 +24,16 @@ Configure **editing**.**form**.[items[]](/Documentation/ApiReference/UI_Componen
     <!-- tab: app.component.ts -->
     <dx-scheduler>
         <dxo-scheduler-editing>
-            <dxo-editing-form>
-    	        <dxi-form-item
+            <dxo-scheduler-form>
+    	        <dxi-scheduler-item
                     name="mainGroup"
                     itemType="group"
-                ></dxi-form-item>
-                <dxi-form-item
+                ></dxi-scheduler-item>
+                <dxi-scheduler-item
                     name="recurrenceGroup"
                     itemType="group"
-                ></dxi-form-item>
-            </dxo-editing-form>
+                ></dxi-scheduler-item>
+            </dxo-scheduler-form>
         </dxo-scheduler-editing>
     </dx-scheduler>
 
@@ -119,20 +119,20 @@ To add a resource field editor to **items[]**, use the resource [fieldExpr](/api
     <!-- tab: app.component.ts -->
     <dx-scheduler>
         <dxo-scheduler-editing>
-            <dxo-editing-form>
-    	        <dxi-form-item
+            <dxo-scheduler-form>
+    	        <dxi-scheduler-item
                     name="mainGroup"
                     itemType="group"
                 >
-                    <dxi-form-item
+                    <dxi-scheduler-item
                         name="priorityIdGroup"
                         itemType="group"
                     >
-                        <dxi-form-item name="priorityIdIcon"></dxi-form-item>
-                        <dxi-form-item name="priorityIdEditor"></dxi-form-item>
-                    </dxi-form-item>
-                </dxi-form-item>
-            </dxo-editing-form>
+                        <dxi-scheduler-item name="priorityIdIcon"></dxi-scheduler-item>
+                        <dxi-scheduler-item name="priorityIdEditor"></dxi-scheduler-item>
+                    </dxi-scheduler-item>
+                </dxi-scheduler-item>
+            </dxo-scheduler-form>
         </dxo-scheduler-editing>
     </dx-scheduler>
 

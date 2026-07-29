@@ -13,7 +13,7 @@ DevExtreme Scheduler ships with the following view types:
 
 ##### jQuery
 
-Specify the [views[]](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/) array to define and customize Scheduler views. Configure views as objects to specify view options. To add views with default options, specify [type](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type) values as strings in the **views[]** array.
+Use the [views[]](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/) array to define and customize Scheduler views. Add views as configuration objects to specify view options. To use default options, add [type](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type) values as strings to the **views[]** array.
 
 ##### Angular
 

@@ -78,7 +78,7 @@ When users add, update, or delete appointments, Scheduler calls the following ev
 - [onAppointmentUpdating](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/onAppointmentUpdating.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentUpdating/')
 - [onAppointmentDeleting](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentDeleting)
 
-You can use these handlers to extend Scheduler's functionality. The following example configures **onAppointmentAdding** and **onAppointmentUpdating** to ensure recurring appointments do not share cells with other appointments:
+You can use these handlers to extend Scheduler's functionality. The following example configures **onAppointmentAdding** and **onAppointmentUpdating** to prevent recurring appointments from sharing cells with other appointments:
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-scheduler-prevent-recurrence-appointment"

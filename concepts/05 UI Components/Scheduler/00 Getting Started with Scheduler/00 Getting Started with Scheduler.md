@@ -6,7 +6,7 @@ This tutorial adds DevExtreme Scheduler to a page, binds the component to data, 
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/26_2/GettingStartedWith/Scheduler/index.html, /Content/Applications/26_2/GettingStartedWith/Scheduler/index.js, /Content/Applications/26_2/GettingStartedWith/Scheduler/index.css" style="border: none !important;"></div>
 
-Each section in this tutorial covers a single configuration step. You can also find the full code in the following GitHub repository:
+Each section covers a single configuration step. The complete code is available in the following GitHub repository:
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/getting-started-with-devextreme-scheduler"

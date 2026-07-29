@@ -2,7 +2,7 @@
 #include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/Scheduler/Appointments/Update_Appointments/", name: "Update Appointments" }
 #include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/Scheduler/Appointments/Delete_Appointments/", name: "Delete Appointments" }
 
-Scheduler allows users to add, update, and delete appointments. All edit operations are enabled in the default component configuration. To disable specific operations, configure [editing](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/') properties.
+Scheduler allows users to add, update, and delete appointments. All editing operations are enabled in the default configuration. To disable specific operations, configure the [editing](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/editing '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/') properties.
 
 This tutorial disables [allowDragging](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/editing/allowDragging.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/editing/#allowDragging'):
 

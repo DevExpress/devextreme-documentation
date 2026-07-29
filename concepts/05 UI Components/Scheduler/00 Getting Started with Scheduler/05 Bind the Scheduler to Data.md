@@ -1,18 +1,34 @@
-The Scheduler can load and update data from these data source types:
+The DevExtreme Scheduler supports the following data source types:
 
 * [Local array](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/10%20Local%20Array.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Local_Array/')
-
 * [Read-only data in JSON format](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/20%20Read-Only%20Data%20in%20JSON%20Format.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Read-Only_Data_in_JSON_Format/')
-
 * [OData](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/40%20OData.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/OData/')
-
 * [Web API and MongoDB](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/30%20Web%20API%20and%20MongoDB.md '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Web_API_and_MongoDB/')
-
 * [Custom data sources](/concepts/70%20Data%20Binding/00%20Specify%20a%20Data%20Source/60%20Custom%20Data%20Sources '/Documentation/Guide/Data_Binding/Specify_a_Data_Source/Custom_Data_Sources/')
 
-Use the [dataSource](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource') property to specify a data source. In this tutorial, we use a local array.
+To bind Scheduler to data, configure the [dataSource](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/dataSource.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#dataSource') property. Specify data field names following the structure of the [SchedulerAppointment](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerAppointment '/Documentation/ApiReference/UI_Components/dxScheduler/Interfaces/dxSchedulerAppointment/') interface. To use custom field names, specify the following properties:
 
-Once you assign the data source, you need to map field values to appointment attributes. If data objects include fields that match the [predefined structure](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerAppointment '/Documentation/ApiReference/UI_Components/dxScheduler/Interfaces/dxSchedulerAppointment/'), the Scheduler recognizes them automatically and displays appointments without further configuration. To map other fields, use **...Expr** properties. In this tutorial, the [startDate](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerAppointment/startDate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Interfaces/dxSchedulerAppointment/#startDate') and [endDate](/api-reference/10%20UI%20Components/dxScheduler/7%20Interfaces/dxSchedulerAppointment/endDate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Interfaces/dxSchedulerAppointment/#endDate') fields are recognized automatically, whereas other field names are specified in the [textExpr](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/textExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#textExpr'), [allDayExpr](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/allDayExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#allDayExpr'), and [recurrenceRuleExpr](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/recurrenceRuleExpr.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#recurrenceRuleExpr') properties.
+<table class="multicolumn-list">
+    <tr>
+        <td>
+            <ul>
+                <li><a href="/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#allDayExpr">allDayExpr</a></li>
+                <li><a href="/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#descriptionExpr">descriptionExpr</a></li>
+                <li><a href="/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#endDateExpr">endDateExpr</a></li>
+                <li><a href="/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#endDateTimeZoneExpr">endDateTimeZoneExpr</a></li>
+                <li><a href="/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#recurrenceExceptionExpr">recurrenceExceptionExpr</a></li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li><a href="/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#recurrenceRuleExpr">recurrenceRuleExpr</a></li>
+                <li><a href="/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#startDateExpr">startDateExpr</a></li>
+                <li><a href="/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#startDateTimeZoneExpr">startDateTimeZoneExpr</a></li>
+                <li><a href="/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#textExpr">textExpr</a></li>
+            </ul>
+        </td>
+    </tr>
+</table>
 
 ---
 ##### jQuery
@@ -86,6 +102,156 @@ Once you assign the data source, you need to map field values to appointment att
         </head>
         <!-- ... -->
     </html>
+
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Scheduler()
+        .DataSource(d => d
+            .Mvc().Controller("SchedulerData")
+            .LoadAction("Get")
+            .InsertAction("Insert")
+            .UpdateAction("Update")
+            .DeleteAction("Delete")
+            .Key("ID")
+        )
+        .TextExpr("Title")
+        .StartDateExpr("StartDate")
+        .EndDateExpr("EndDate")
+        .AllDayExpr("DayLong")
+        .RecurrenceRuleExpr("Recurrence")
+        .RecurrenceExceptionExpr("RecurrenceException")
+    )
+
+    <!-- tab: SchedulerDataController.cs -->
+    public class SchedulerDataController : Controller {
+        [HttpGet]
+        public object Get(DataSourceLoadOptions loadOptions) {
+            return DataSourceLoader.Load(SchedulerData.Appointments, loadOptions);
+        }
+
+        [HttpPost]
+        public IActionResult Insert(string values) {
+            var appointment = new Appointment();
+            PopulateAppointment(appointment, values);
+            // ...
+            SchedulerData.Appointments.Add(appointment);
+            return Ok(appointment);
+        }
+
+        [HttpPut]
+        public IActionResult Update(int key, string values) {
+            var appointment = SchedulerData.Appointments.FirstOrDefault(e => e.ID == key);
+            // ...
+            PopulateAppointment(appointment, values);
+            return Ok(appointment);
+        }
+
+        [HttpDelete]
+        public IActionResult Delete(int key) {
+            var appointment = SchedulerData.Appointments.FirstOrDefault(e => e.ID == key);
+            // ...
+            SchedulerData.Appointments.Remove(appointment);
+            return NoContent();
+        }
+
+        private static void PopulateAppointment(Appointment appointment, string values) {
+            using var document = JsonDocument.Parse(values);
+            foreach (var property in document.RootElement.EnumerateObject()) {
+                switch (property.Name) {
+                    case nameof(Appointment.Title):
+                        appointment.Title = property.Value.GetString();
+                        break;
+                    // ...
+                }
+            }
+        }
+    }
+
+    <!-- tab: Appointment.cs -->
+    namespace ASP_NET_Core.Models;
+    public class Appointment {
+        public int ID { get; set; }
+        public string Title { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
+        public bool? DayLong { get; set; }
+        public string? Recurrence { get; set; }
+        public string? RecurrenceException { get; set; }
+    }
+
+    <!-- tab: SchedulerData.cs -->
+    namespace ASP_NET_Core.Models;
+    static class SchedulerData {
+        public static List<Appointment> Appointments = [
+            new Appointment {
+                ID = 1,
+                Title = "Install New Database",
+                StartDate = new DateTime(2021, 5, 23, 8, 45, 0, DateTimeKind.Utc),
+                EndDate = new DateTime(2021, 5, 23, 9, 45, 0, DateTimeKind.Utc),
+            },
+            new Appointment {
+                ID = 2,
+                Title = "Create New Online Marketing Strategy",
+                StartDate = new DateTime(2021, 5, 24, 9, 0, 0, DateTimeKind.Utc),
+                EndDate = new DateTime(2021, 5, 24, 11, 0, 0, DateTimeKind.Utc),
+            },
+            new Appointment {
+                ID = 3,
+                Title = "Upgrade Personal Computers",
+                StartDate = new DateTime(2021, 5, 25, 10, 15, 0, DateTimeKind.Utc),
+                EndDate = new DateTime(2021, 5, 25, 13, 30, 0, DateTimeKind.Utc),
+            },
+            new Appointment {
+                ID = 4,
+                Title = "Customer Workshop",
+                StartDate = new DateTime(2021, 5, 26, 8, 0, 0, DateTimeKind.Utc),
+                EndDate = new DateTime(2021, 5, 26, 10, 0, 0, DateTimeKind.Utc),
+                DayLong = true,
+                Recurrence = "FREQ=WEEKLY;BYDAY=TU,FR;COUNT=10",
+            },
+            new Appointment {
+                ID = 5,
+                Title = "Prepare Development Plan",
+                StartDate = new DateTime(2021, 5, 27, 8, 0, 0, DateTimeKind.Utc),
+                EndDate = new DateTime(2021, 5, 27, 10, 30, 0, DateTimeKind.Utc),
+            },
+            new Appointment {
+                ID = 6,
+                Title = "Testing",
+                StartDate = new DateTime(2021, 5, 23, 9, 0, 0, DateTimeKind.Utc),
+                EndDate = new DateTime(2021, 5, 23, 10, 0, 0, DateTimeKind.Utc),
+                Recurrence = "FREQ=WEEKLY;INTERVAL=2;COUNT=2",
+            },
+            new Appointment {
+                ID = 7,
+                Title = "Meeting of Instructors",
+                StartDate = new DateTime(2021, 5, 24, 10, 0, 0, DateTimeKind.Utc),
+                EndDate = new DateTime(2021, 5, 24, 11, 15, 0, DateTimeKind.Utc),
+                Recurrence = "FREQ=DAILY;BYDAY=WE;UNTIL=20211001",
+            },
+            new Appointment {
+                ID = 8,
+                Title = "Recruiting students",
+                StartDate = new DateTime(2021, 5, 25, 8, 0, 0, DateTimeKind.Utc),
+                EndDate = new DateTime(2021, 5, 25, 9, 0, 0, DateTimeKind.Utc),
+                Recurrence = "FREQ=YEARLY",
+            },
+            new Appointment {
+                ID = 9,
+                Title = "Monthly Planning",
+                StartDate = new DateTime(2021, 5, 26, 9, 30, 0, DateTimeKind.Utc),
+                EndDate = new DateTime(2021, 5, 26, 10, 45, 0, DateTimeKind.Utc),
+                Recurrence = "FREQ=MONTHLY;BYMONTHDAY=28;COUNT=1",
+            },
+            new Appointment {
+                ID = 10,
+                Title = "Open Day",
+                StartDate = new DateTime(2021, 5, 27, 9, 30, 0, DateTimeKind.Utc),
+                EndDate = new DateTime(2021, 5, 27, 19, 0, 0, DateTimeKind.Utc),
+            },
+        ];
+    }
 
 ##### Angular 
 
@@ -197,18 +363,10 @@ Once you assign the data source, you need to map field values to appointment att
         </DxScheduler>
     </template> 
 
-    <script>
-    // ...
+    <script setup lang="ts">
     import { appointments } from './data.js';
+    // ...
 
-    export default {
-        // ...
-        data() {
-            return {
-                appointments: appointments
-            };
-        }
-    }
     </script>
 
     <!-- tab: data.js -->
@@ -264,11 +422,11 @@ Once you assign the data source, you need to map field values to appointment att
 
 ##### React 
 
-    <!-- tab: App.js -->
-    // ...
+    <!-- tab: App.tsx -->
     import { appointments } from './data.js';
+    // ...
 
-    function App() {
+    export default function App() {
         return (
             <Scheduler
                 dataSource={appointments}
@@ -278,8 +436,6 @@ Once you assign the data source, you need to map field values to appointment att
             </Scheduler>
         );
     }
-
-    export default App;
 
     <!-- tab: data.js -->
     export const appointments = [
@@ -333,7 +489,5 @@ Once you assign the data source, you need to map field values to appointment att
     ];
 
 ---
-
-Run the code and ensure that the Scheduler properly displays all appointments.
 
 [tags] data binding

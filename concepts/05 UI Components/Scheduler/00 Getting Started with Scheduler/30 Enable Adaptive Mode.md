@@ -1,4 +1,9 @@
-The Scheduler can adapt its interface to small screens. To enable this behavior, set the [adaptivityEnabled](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/adaptivityEnabled.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#adaptivityEnabled') property to **true**. See the following demo description for a full list of adaptability features: [Adaptability](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Adaptability/).
+The Scheduler interface can adapt to small screens. Set [adaptivityEnabled](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/adaptivityEnabled.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#adaptivityEnabled') to **true** to enable this capability. For more information, see the following demo:
+
+#include common-demobutton-named with {
+    url: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Scheduler/Adaptability/",
+    name: "Scheduler - Adaptability"
+}
 
 ---
 ##### jQuery
@@ -11,39 +16,41 @@ The Scheduler can adapt its interface to small screens. To enable this behavior,
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Scheduler()
+        .AdaptivityEnabled(true)
+        // ...
+    )
+
 ##### Angular 
 
     <!-- tab: app.component.html -->
-    <dx-scheduler ...
-        [adaptivityEnabled]="true">
-    </dx-scheduler> 
+    <dx-scheduler
+        [adaptivityEnabled]="true"
+    ></dx-scheduler> 
 
 ##### Vue 
 
     <!-- tab: App.vue -->
     <template> 
-        <DxScheduler ...
-            :adaptivity-enabled="true">
-        </DxScheduler>
+        <DxScheduler
+            :adaptivity-enabled="true"
+        />
     </template>
-    
-    <script> 
-        // ...
-    </script> 
 
 ##### React 
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     // ...
-    function App() {
+    export default function App() {
         return (
-            <Scheduler ...
-                adaptivityEnabled={true}>
-            </Scheduler>
+            <Scheduler
+                adaptivityEnabled={true}
+            />
         );
     }
-
-    export default App;
 
 ---
 

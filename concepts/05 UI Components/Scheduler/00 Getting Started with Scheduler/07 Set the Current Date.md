@@ -1,4 +1,4 @@
-To specify the current date, use the [currentDate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/currentDate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#currentDate') property:
+Use [currentDate](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/currentDate.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#currentDate') to specify the date displayed in the Scheduler:
 
 ---
 ##### jQuery
@@ -11,10 +11,18 @@ To specify the current date, use the [currentDate](/api-reference/10%20UI%20Comp
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Scheduler()
+        .CurrentDate(new DateTime(2021, 5, 25))
+        // ...
+    )
+
 ##### Angular 
 
     <!-- tab: app.component.html -->
-    <dx-scheduler ...
+    <dx-scheduler
         [(currentDate)]="currentDate">
     </dx-scheduler> 
 
@@ -34,26 +42,21 @@ To specify the current date, use the [currentDate](/api-reference/10%20UI%20Comp
 
     <!-- tab: App.vue -->
     <template> 
-        <DxScheduler ...
-            :current-date.sync="currentDate">
+        <DxScheduler
+            v-model:current-date="currentDate">
         </DxScheduler>
     </template>
 
-    <script> 
+    <script setup lang="ts">
+    import { ref } from 'vue';
     // ...
-    export default { 
-        // ...
-        data() {
-            return {
-                currentDate: new Date(2021, 4, 25),
-            };
-        }
-    } 
+
+    const currentDate = ref<Date>(new Date(2021, 4, 25));
     </script>
 
 ##### React 
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     // ...
     import { useCallback, useState } from 'react';
 
@@ -66,7 +69,7 @@ To specify the current date, use the [currentDate](/api-reference/10%20UI%20Comp
         }, [])
 
         return (
-            <Scheduler ...
+            <Scheduler
                 currentDate={currentDate}
                 onOptionChanged={handlePropertyChange}>
             </Scheduler>

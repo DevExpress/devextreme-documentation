@@ -13,19 +13,19 @@ DevExtreme Scheduler ships with the following view types:
 
 ##### jQuery
 
-Use the [views[]](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/) array to define and customize Scheduler views. Add views as configuration objects to specify view options. To use default options, add [type](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type) values as strings to the **views[]** array.
+Use the [views[]](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/) array to define and customize Scheduler views. Add views as configuration objects to specify view options. To use default options, add [type](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views/type.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type') values as strings to the **views[]** array.
 
 ##### Angular
 
-Specify the [views[]](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/) array to define and customize Scheduler views. Specify each view's [type](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type) value.
+Specify the [views[]](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/) array to define and customize Scheduler views. Specify each view's [type](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views/type.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type') value.
 
 ##### Vue
 
-Specify the [views[]](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/) array to define and customize Scheduler views. Specify each view's [type](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type) value.
+Specify the [views[]](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/) array to define and customize Scheduler views. Specify each view's [type](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views/type.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type') value.
 
 ##### React
 
-Specify the [views[]](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/) array to define and customize Scheduler views. Specify each view's [type](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type) value.
+Specify the [views[]](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/) array to define and customize Scheduler views. Specify each view's [type](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/views/type.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/views/#type') value.
 
 ---
 

@@ -9,7 +9,7 @@ Specifies the initial size of an item (pane) in pixels or as a percentage of the
 
 ---
 
-Splitter preserves configured pane sizes across UI layout changes. If you update the component layout programmatically (modify an item's **size** property using [option()](/Documentation/ApiReference/UI_Components/dxSplitter/Methods/#option)), Splitter recalculates the sizes of all panes. This may shift the entire component layout. To prevent unintended changes to other panes, define **size** for every pane and reassign all pane sizes when you update the layout.
+Splitter preserves configured pane sizes across UI layout changes. If you update the component layout programmatically (modify an item's **size** property using [option()](/api-reference/10%20UI%20Components/Component/3%20Methods/option().md '/Documentation/ApiReference/UI_Components/dxSplitter/Methods/#option')), Splitter recalculates the sizes of all panes. This may shift the entire component layout. To prevent unintended changes to other panes, define **size** for every pane and reassign all pane sizes when you update the layout.
 
 [note]
 

@@ -24,37 +24,45 @@ body.React a {
   margin: 0;
   padding: 0;
 }
+
 .components .components-subtitle {
   text-align: center;
 }
+
 .components .components-frameworks {
   margin: 40px auto;
 }
+
 .components .components-block {
   padding: 16px 0;
 }
+
 .components .components-block-title {
   margin: 0;
   padding: 24px 0;
   border-bottom: 1px solid;
   display: flex;
 }
+
 .components .components-block-title svg {
   width: 32px;
   height: 32px;
   vertical-align: middle;
   padding-right: 8px;
 }
+
 .components .components-block-content {
   display: flex;
   gap: 24px 48px;
   padding: 32px 0;
 }
+
 .components .components-block-content-text {
   flex: 1;
   margin: 0;
   padding-top: 8px;
 }
+
 .components .components-list {
   flex: 3;
   display: flex;
@@ -62,6 +70,7 @@ body.React a {
   flex-wrap: wrap;
   gap: 50px 40px;
 }
+
 .components .components-list-item {
   position: relative;
   width: 100px;
@@ -72,10 +81,12 @@ body.React a {
   justify-content: center;
   border-radius: 8px;
 }
+
 .components .components-list-item svg {
   width: 64px;
   height: 64px;
 }
+
 .components .components-list-item .badge {
   position: absolute;
   font-size: 12px;
@@ -86,50 +97,61 @@ body.React a {
   border-radius: 999em;
   color: white;
 }
+
 .components .components-list-item-name {
   margin: 0;
   text-align: center;
 }
+
 .components .components-list-item:hover {
   text-decoration: none;
 }
+
 .components .components-list-container {
   column-width: 200px;
   margin: 8px 0 32px 0;
   padding: 0 20px;
   transition: opacity 0.5s ease;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
+
 .components .components-list-container.fade-in {
   animation: fadeIn 1.5s ease;
 }
+
 .components .components-list-container .category-container {
   padding-top: 32px;
   break-inside: avoid;
   min-width: 200px;
 }
+
 .components .components-list-container .category-container .category-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 8px;
 }
+
 .components .components-list-container .category-container .demos-list {
   display: flex;
   flex-flow: column;
   gap: 8px;
 }
+
 .components .components-list-container .category-container .demos-list .link-container a {
   line-height: 20px;
   text-decoration: underline;
 }
+
 .components .components-list-container .category-container .demos-list .link-container:after {
   display: inline-block;
   color: white;
@@ -142,37 +164,144 @@ body.React a {
   border-radius: 50px;
   text-decoration: none;
 }
+
 .components .components-list-container .category-container .demos-list .link-container.Roadmap:after {
   content: "In Progress";
   background-color: #fb8c00;
 }
+
 .components .components-list-container .category-container .demos-list .link-container.New:after {
   content: "New";
   background-color: #dd1144;
 }
+
 .components .components-list-container .category-container .demos-list .link-container.Updated:after {
   content: "Upd";
   background-color: #42b883;
 }
+
 @media only screen and (max-width: 1400px) {
+
   .components .components-title,
   .components .components-subtitle {
     text-align: center;
   }
+
   .components .components-frameworks {
     margin-left: auto;
     margin-right: auto;
   }
+
   .components .components-content {
     text-align: center;
   }
+
   .components .components-block-title {
     justify-content: center;
   }
+
   .components .components-block-content {
     flex-direction: column;
   }
+
   .components .components-list {
     justify-content: center;
+  }
+}
+
+.ai-features-section {
+  margin: 8px 0 32px;
+  padding: 20px;
+  border-radius: 14px;
+  background-color: light-dark(#edf0f2, #333a41);
+}
+
+.ai-features-section .ai-features-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.ai-features-section .category-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
+.ai-features-section .ai-badge {
+  width: 36px;
+  height: auto;
+}
+
+.ai-features-section .ai-features-list {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.ai-features-section .ai-feature-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 140px;
+}
+
+.ai-features-section .ai-feature-component {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.ai-features-section .ai-feature-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  width: 100%;
+}
+
+.ai-features-section .ai-feature-divider {
+  display: none;
+}
+
+.ai-features-section .link-container a {
+  display: inline-block;
+  max-width: 100%;
+  font-size: 14px;
+  line-height: 22px;
+  text-decoration: underline;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+@media only screen and (max-width: 900px) {
+  .ai-features-section {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .ai-features-section .ai-features-list {
+    grid-template-columns: inherit;
+  }
+
+  .ai-features-section .ai-badge {
+    width: 64px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+    .ai-features-section {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .ai-features-section .ai-features-list {
+    grid-auto-flow: row;
+    gap: 20px;
+  }
+
+  .ai-features-section .ai-feature-item {
+    width: 100%;
+    min-width: 0;
   }
 }

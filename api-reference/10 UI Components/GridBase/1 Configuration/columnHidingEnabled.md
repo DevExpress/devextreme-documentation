@@ -24,7 +24,7 @@ The component hides columns in order of [hidingPriority](/api-reference/_hidden/
 [note]
 
 - When this property is enabled and [columnResizingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnResizingMode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnResizingMode') is set to *"nextColumn"* (default), enable [columnAutoWidth](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/columnAutoWidth.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#columnAutoWidth').
-- If {WidgetName} hides an AI column, users cannot access the [AI header menu](/api-reference/40%20Common%20Types/15%20grids/ColumnAIOptions/showHeaderMenu.md '{basewidgetpath}/Configuration/columns/ai/#showHeaderMenu') to regenerate data or update the prompt.
+- {WidgetName} does not hide command columns or [AI columns](/Documentation/Guide/UI_Components/DataGrid/Columns/Column_Types/AI_Columns/) into the adaptive detail view.
 
 [/note]
 

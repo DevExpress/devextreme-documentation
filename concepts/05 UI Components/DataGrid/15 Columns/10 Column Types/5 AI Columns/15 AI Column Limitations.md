@@ -18,11 +18,11 @@ Note the following AI column limitations:
                 <li><strong>autoExpandGroup</strong></li>
                 <li><strong>buttons[]</strong></li>
                 <li><strong>calculateCellValue</strong></li>
+                <li><strong>calculateFilterExpression</strong></li>
             </ul>
         </td>
         <td>
             <ul>
-                <li><strong>calculateFilterExpression</strong></li>
                 <li><strong>calculateGroupValue</strong></li>
                 <li><strong>calculateSortValue</strong></li>
                 <li><strong>columns</strong></li>
@@ -32,26 +32,27 @@ Note the following AI column limitations:
                 <li><strong>editorOptions</strong></li>
                 <li><strong>falseText</strong></li>
                 <li><strong>filterOperations</strong></li>
+                <li><strong>filterType</strong></li>
+                <li><strong>filterValue</strong></li>
             </ul>
         </td>
         <td>
             <ul>
-                <li><strong>filterType</strong></li>
-                <li><strong>filterValue</strong></li>
                 <li><strong>filterValues</strong></li>
                 <li><strong>format</strong></li>
                 <li><strong>formItem</strong></li>
                 <li><strong>groupCellTemplate</strong></li>
                 <li><strong>groupIndex</strong></li>
                 <li><strong>headerFilter</strong></li>
+                <li><strong>hidingPriority</strong></li>
                 <li><strong>isBand</strong></li>
                 <li><strong>lookup</strong></li>
+                <li><strong>ownerBand</strong></li>
+                <li><strong>selectedFilterOperation</strong></li>
             </ul>
         </td>
         <td>
             <ul>
-                <li><strong>ownerBand</strong></li>
-                <li><strong>selectedFilterOperation</strong></li>
                 <li><strong>setCellValue</strong></li>
                 <li><strong>showEditorAlways</strong></li>
                 <li><strong>showWhenGrouped</strong></li>

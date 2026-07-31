@@ -13,8 +13,11 @@ Try out DevExtreme components in your projects with our [30-day trial](https://j
 1. **Install**    
 [Add DevExtreme](/concepts/58%20jQuery%20Components/05%20Add%20DevExtreme%20to%20a%20jQuery%20Application/00%20Add%20DevExtreme%20to%20a%20jQuery%20Application.md '//Documentation/Guide/jQuery_Components/Add_DevExtreme_to_a_jQuery_Application/') to your jQuery application.
 
-2. **Learn Basics**    
-Learn the [first steps](/concepts/Common/First%20Steps/00%20First%20Steps.md '/Documentation/Guide/Common/First_Steps/') and see the [component configuration syntax](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/').
+2. **Learn Basics**   
+
+    - Learn the [first steps](/concepts/Common/First%20Steps/00%20First%20Steps.md '/Documentation/Guide/Common/First_Steps/') and see the [component configuration syntax](/concepts/58%20jQuery%20Components/20%20Component%20Configuration%20Syntax '/Documentation/Guide/jQuery_Components/Component_Configuration_Syntax/').
+
+    - Use your preferred AI assistant with [DevExpress AI Skills](/concepts/95%20AI-assisted%20Development/10%20DevExpress%20AI%20Skills.md '/Documentation/Guide/AI-assisted_Development/DevExpress_AI_Skills/') and the [DevExpress MCP Server](/concepts/95%20AI-assisted%20Development/00%20DevExpress%20MCP%20Server '/Documentation/Guide/AI-assisted_Development/DevExpress_MCP_Server/') to receive context-aware guidance directly in your IDE.
 
 3. **Explore**    
 Examine [over 450 technical demos](https://js.devexpress.com/Demos/WidgetsGallery) you can edit and from which you can copy code.

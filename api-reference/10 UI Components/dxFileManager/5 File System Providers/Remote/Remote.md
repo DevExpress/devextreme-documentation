@@ -27,41 +27,40 @@ The server should return data objects of the following structure:
         hasSubDirectories: true
     }
 
-Fields in this structure have conventional names that you can change via **[fieldName]Expr** properties: [nameExpr](/api-reference/10%20UI%20Components/dxFileManager/5%20File%20System%20Providers/FileSystemProviderBase/1%20Configuration/nameExpr.md '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Remote/Configuration/#nameExpr'), [sizeExpr](/api-reference/10%20UI%20Components/dxFileManager/5%20File%20System%20Providers/FileSystemProviderBase/1%20Configuration/sizeExpr.md '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Remote/Configuration/#sizeExpr'), [dateModifiedExpr](/api-reference/10%20UI%20Components/dxFileManager/5%20File%20System%20Providers/FileSystemProviderBase/1%20Configuration/dateModifiedExpr.md '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Remote/Configuration/#dateModifiedExpr'), and so on.
+Fields in this structure have conventional names that you can change using **fieldNameExpr** properties, including the following:
 
-The following code shows how to bind the FileManager to the **Remote** file system provider:
+- [nameExpr](/api-reference/10%20UI%20Components/dxFileManager/5%20File%20System%20Providers/FileSystemProviderBase/1%20Configuration/nameExpr.md '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Remote/Configuration/#nameExpr')
+- [sizeExpr](/api-reference/10%20UI%20Components/dxFileManager/5%20File%20System%20Providers/FileSystemProviderBase/1%20Configuration/sizeExpr.md '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Remote/Configuration/#sizeExpr')
+- [dateModifiedExpr](/api-reference/10%20UI%20Components/dxFileManager/5%20File%20System%20Providers/FileSystemProviderBase/1%20Configuration/dateModifiedExpr.md '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Remote/Configuration/#dateModifiedExpr')
+
+The following code snippet binds the FileManager to a **RemoteFileSystemProvider**:
 
 ---
 ##### jQuery
 
     <!-- tab: index.js -->
-    $(function () {
-        $("#file-manager").dxFileManager({            
-            fileSystemProvider: new DevExpress.fileManagement.RemoteFileSystemProvider({
-                endpointUrl: "https://js.devexpress.com/Demos/Mvc/api/file-manager-file-system-scripts"
-            }),
-            // ...
-        });
+    $("#file-manager").dxFileManager({            
+        fileSystemProvider: new DevExpress.fileManagement.RemoteFileSystemProvider({
+            endpointUrl: "https://js.devexpress.com/Demos/Mvc/api/file-manager-file-system-scripts"
+        }),
+        // ...
     });
 
 ##### Angular
 
     <!-- tab: app.component.html -->
     <dx-file-manager id="fileManager"
-        [fileSystemProvider]="remoteFileProvider">
-        <!-- ... -->
-    </dx-file-manager>
+        [fileSystemProvider]="remoteFileProvider"
+    ></dx-file-manager>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
+    import { DxFileManagerModule } from 'devextreme-angular';
     import RemoteFileSystemProvider from 'devextreme/file_management/remote_provider';
     
     @Component({
-        selector: 'app-root',
-        templateUrl: 'app/app.component.html',
-        styleUrls: ['app/app.component.css']
-    })  
-    
+        imports: [DxFileManagerModule], // ...
+    })
     export class AppComponent {
         remoteFileProvider: RemoteFileSystemProvider;
     
@@ -72,63 +71,29 @@ The following code shows how to bind the FileManager to the **Remote** file syst
         }
     }
 
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule} from '@angular/core';
-    import { AppComponent } from './app.component';
-    import { DxFileManagerModule } from 'devextreme-angular';
-    
-    @NgModule({
-        imports: [
-            BrowserModule,
-            DxFileManagerModule
-        ],
-        declarations: [AppComponent],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
-
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
         <DxFileManager
-            :file-system-provider="remoteFileProvider">
-            <!-- ... -->
-        </DxFileManager>
+            :file-system-provider="remoteFileProvider"
+        />
     </template>
     
-    <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-    
+    <script setup lang="ts">
     import { DxFileManager } from 'devextreme-vue/file-manager';
-    
     import RemoteFileSystemProvider from 'devextreme/file_management/remote_provider';
     
     const remoteFileProvider = new RemoteFileSystemProvider({
         endpointUrl: 'https://js.devexpress.com/Demos/Mvc/api/file-manager-file-system-scripts'
     });
-    
-    export default {
-        components: {
-            DxFileManager
-        },
-        data() {
-            return {
-                remoteFileProvider
-            };
-        }
-    };
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
-    
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-    
-    import FileManager from 'devextreme-react/file-manager';
+    import { FileManager } from 'devextreme-react/file-manager';
     import RemoteFileSystemProvider from 'devextreme/file_management/remote_provider';
     
     const remoteFileProvider = new RemoteFileSystemProvider({
@@ -138,9 +103,8 @@ The following code shows how to bind the FileManager to the **Remote** file syst
     export default function App() {
         return (
             <FileManager 
-                fileSystemProvider={remoteFileProvider}>
-                {/* ... */}
-            </FileManager>
+                fileSystemProvider={remoteFileProvider}
+            />
         );
     }
 
@@ -152,7 +116,7 @@ The following code shows how to bind the FileManager to the **Remote** file syst
             .Url(Url.RouteUrl("FileManagerDBProviderApi")))
     )
 
-    <!--FileManagerDBProviderApiController-->
+    <!-- tab: FileManagerDBProviderApiController.cs -->
     [Route("api/file-manager-file-system", Name = "FileManagementFileSystemApi")]
     public object FileSystem(FileSystemCommand command, string arguments) {
         var config = new FileSystemConfiguration {
@@ -173,7 +137,7 @@ The following code shows how to bind the FileManager to the **Remote** file syst
             .Url(Url.RouteUrl("FileManagerDBProviderApi")))
     )
 
-    <!--FileManagerDBProviderApiController-->
+    <!-- tab: FileManagerDBProviderApiController.cs -->
     [Route("api/file-manager-file-system", Name = "FileManagementFileSystemApi")]
     public object FileSystem(FileSystemCommand command, string arguments) {
         var config = new FileSystemConfiguration {

@@ -76,7 +76,7 @@ When users add, update, or delete appointments, Scheduler calls the following ev
 
 - [onAppointmentAdding](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/onAppointmentAdding.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentAdding/')
 - [onAppointmentUpdating](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/onAppointmentUpdating.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentUpdating/')
-- [onAppointmentDeleting](/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentDeleting)
+- [onAppointmentDeleting](/api-reference/10%20UI%20Components/dxScheduler/1%20Configuration/onAppointmentDeleting.md '/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/#onAppointmentDeleting')
 
 You can use these handlers to extend Scheduler's functionality. The following example configures **onAppointmentAdding** and **onAppointmentUpdating** to prevent recurring appointments from sharing cells with other appointments:
 

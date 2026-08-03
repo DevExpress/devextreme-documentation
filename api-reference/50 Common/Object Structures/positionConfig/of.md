@@ -70,18 +70,15 @@ This property accepts the following value types:
             Position
         } from 'devextreme-react/popup';
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <Popup ... >
-                        <Position
-                            of="#target"
-                        />
-                    </Popup>
-                );
-            }
+        export default function App() {
+            return (
+                <Popup ... >
+                    <Position
+                        of="#target"
+                    />
+                </Popup>
+            );
         }
-        export default App;
 
     ---
 

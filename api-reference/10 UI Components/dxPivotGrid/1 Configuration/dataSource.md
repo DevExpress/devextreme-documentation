@@ -149,15 +149,12 @@ Use one of the following extensions to enable the server to process data accordi
             })
         });
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <PivotGrid ...
-                        dataSource={pivotGridDataSource} />
-                );
-            }
+        export default function App() {
+            return (
+                <PivotGrid ...
+                    dataSource={pivotGridDataSource} />
+            );
         }
-        export default App;
 
     ---
 

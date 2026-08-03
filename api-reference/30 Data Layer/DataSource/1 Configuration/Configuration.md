@@ -85,11 +85,6 @@ The **DataSource** allows you to specify [**CustomStore** properties](/api-refer
         }
     });
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ---
 
 [/note]

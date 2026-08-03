@@ -86,11 +86,6 @@ This should be the MSMDPUMP.dll URL and usually has the following format: *http:
         })
     });
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ---
 
 #include btn-open-demo with {

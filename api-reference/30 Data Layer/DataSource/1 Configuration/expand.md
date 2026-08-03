@@ -75,11 +75,6 @@ Specifies the navigation properties to be loaded with the OData entity. Availabl
         expand: ['PropertyName1', 'PropertyName2']
     });
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->

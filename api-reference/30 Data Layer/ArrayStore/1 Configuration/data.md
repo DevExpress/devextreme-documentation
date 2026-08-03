@@ -71,9 +71,4 @@ Specifies the store's associated array.
         ]
     });
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ---

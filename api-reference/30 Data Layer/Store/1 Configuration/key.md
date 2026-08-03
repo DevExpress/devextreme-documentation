@@ -64,10 +64,5 @@ In the following example, the `ProductID` and `ProductCode` properties are speci
         // ...
         key: ['ProductID', 'ProductCode']
     });
-
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
     
 ---

@@ -72,10 +72,5 @@ This function accepts a JavaScript <a href="https://developer.mozilla.org/en-US/
             console.log(error.message);
         }
     });
-
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
     
 ---

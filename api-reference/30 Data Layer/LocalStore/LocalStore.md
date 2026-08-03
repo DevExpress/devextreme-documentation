@@ -156,11 +156,6 @@ When configuring the **LocalStore**, specify the [name](/api-reference/30%20Data
         // Other DataSource properties go here
     });
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ---
 
 #include datalayer-store-note-immutable with { name: "LocalStore" }

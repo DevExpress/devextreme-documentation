@@ -71,10 +71,5 @@ Changes passed in the [push(changes)](/api-reference/30%20Data%20Layer/Store/3%2
             // Your code goes here
         }
     });
-
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
     
 ---

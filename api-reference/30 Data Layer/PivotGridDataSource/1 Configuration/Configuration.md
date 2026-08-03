@@ -88,11 +88,6 @@ The **PivotGridDataSource** allows you to specify [**CustomStore** properties](/
         })
     });
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ---
 
 [/note]

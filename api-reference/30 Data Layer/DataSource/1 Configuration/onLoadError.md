@@ -75,9 +75,4 @@ The error message.
         }
     });
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ---

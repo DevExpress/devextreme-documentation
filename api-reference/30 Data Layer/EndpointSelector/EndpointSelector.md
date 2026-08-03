@@ -89,9 +89,4 @@ This object selects local or production OData service URL depending on whether t
         // ...
     });
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ---

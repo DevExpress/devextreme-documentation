@@ -74,10 +74,5 @@ New values for the data item fields.
             // Your code goes here
         }
     });
-
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
     
 ---

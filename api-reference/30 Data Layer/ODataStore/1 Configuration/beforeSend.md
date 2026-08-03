@@ -120,9 +120,4 @@ The request URL.
         }
     });
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ---

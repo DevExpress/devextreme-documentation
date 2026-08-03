@@ -116,7 +116,7 @@ The following code snippet binds the FileManager to a **RemoteFileSystemProvider
             .Url(Url.RouteUrl("FileManagementFileSystemApi")))
     )
 
-    <!-- tab: FileManagementFileSystemApiController.cs -->
+    <!-- tab: FileSystemApiController.cs -->
     [Route("api/file-manager-file-system", Name = "FileManagementFileSystemApi")]
     public object FileSystem(FileSystemCommand command, string arguments) {
         var config = new FileSystemConfiguration {
@@ -137,7 +137,7 @@ The following code snippet binds the FileManager to a **RemoteFileSystemProvider
             .Url(Url.RouteUrl("FileManagementFileSystemApi")))
     )
 
-    <!-- tab: FileManagementFileSystemApiController.cs -->
+    <!-- tab: FileSystemApiController.cs -->
     [Route("api/file-manager-file-system", Name = "FileManagementFileSystemApi")]
     public object FileSystem(FileSystemCommand command, string arguments) {
         var config = new FileSystemConfiguration {

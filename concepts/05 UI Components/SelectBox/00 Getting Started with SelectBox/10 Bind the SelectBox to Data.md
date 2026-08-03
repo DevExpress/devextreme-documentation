@@ -34,6 +34,69 @@
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().SelectBox()
+        .DataSource(d => d
+            .Mvc().Controller("SelectBoxData")
+            .LoadAction("Get")
+            .Key("ID")
+        )
+        .ValueExpr("ID")
+        .DisplayExpr("Name")
+    )
+
+    <!-- tab: SelectBoxDataController.cs -->
+    public class SelectBoxDataController : Controller {
+        
+        [HttpGet]
+        public object Get(DataSourceLoadOptions loadOptions) {
+            return DataSourceLoader.Load(SelectBoxData.SelectBoxItems, loadOptions);
+        }
+
+    }
+
+    <!-- tab: SelectBoxItem.cs -->
+    namespace ASP_NET_Core.Models;
+    public class SelectBoxItem {
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public string Category { get; set; }
+    }
+
+    <!-- tab: SelectBoxData.cs -->
+    namespace ASP_NET_Core.Models;
+    static class SelectBoxData {
+        public static List<SelectBoxItem> SelectBoxItems = [
+            new SelectBoxItem {
+                ID = 1,
+                Name = "Banana",
+                Category = "Fruits",
+            },
+            new SelectBoxItem {
+                ID = 2,
+                Name = "Cucumber",
+                Category = "Vegetables",
+            },
+            new SelectBoxItem {
+                ID = 3,
+                Name = "Apple",
+                Category = "Fruits",
+            },
+            new SelectBoxItem {
+                ID = 4,
+                Name = "Tomato",
+                Category = "Vegetables",
+            },
+            new SelectBoxItem {
+                ID = 5,
+                Name = "Apricot",
+                Category = "Fruits",
+            },
+        ];
+    }
+
 ##### Angular
 
     <!-- tab: app.component.html -->
@@ -106,7 +169,7 @@
     </template>
 
     <script>
-    // ...
+    import { DxSelectBox } from 'devextreme-vue/select-box';
     import { data } from './data';
 
     export default {

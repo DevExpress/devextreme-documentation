@@ -1,6 +1,67 @@
-#include tutorials-editors-customize-drop-down-menu with {
-    value: 150
-} 
+SelectBox uses the [Popup](/Documentation/Guide/UI_Components/Popup/Getting_Started_with_Popup/) component as a drop-down menu. To customize the menu, specify [Popup properties](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/) in the [dropDownOptions](/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#dropDownOptions) object:
+
+---
+##### jQuery
+
+    <!-- tab: index.js -->
+    $("#selectBox").dxSelectBox({
+        dropDownOptions: {
+            height: 150,
+        }
+        // ...
+    });
+
+##### Angular
+
+    <!-- tab: app.component.html -->
+    <dx-select-box
+        [dropDownOptions]="dropDownOptions">
+    </dx-select-box>
+
+    <!-- tab: app.component.ts -->
+    // ...
+    export class AppComponent {
+        dropDownOptions = {
+            height: 150,
+        }
+    }
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    <template>
+        <DxSelectBox
+            :drop-down-options="dropDownOptions"
+        />
+    </template>
+
+    <script setup lang="ts">
+    // ...
+
+    const dropDownOptions = {
+        height: 150,
+    };
+    </script>
+
+##### React
+
+    <!-- tab: App.tsx -->
+    // ...
+    
+    const dropDownOptions = {
+        height: 150,
+    };
+
+    export default function App() {
+        return (
+            <SelectBox
+                dropDownOptions={dropDownOptions}
+            />
+        );
+    }
+
+---
+
 
 You have configured basic SelectBox features. To take a more detailed look at this UI component, explore the following resources:
 

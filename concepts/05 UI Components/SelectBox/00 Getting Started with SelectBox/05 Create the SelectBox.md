@@ -5,7 +5,7 @@
 
     <!-- tab: index.js -->
     $(function() { 
-        $("#select-box").dxSelectBox({
+        $("#selectBox").dxSelectBox({
             // Configuration goes here
         });
     });
@@ -21,7 +21,7 @@
             <script src="index.js"></script>
         </head>
         <body class="dx-viewport">
-            <div id="select-box"></div>
+            <div id="selectBox"></div>
         </body>
     </html>
 
@@ -31,7 +31,7 @@
 
     <!-- tab: Index.cshtml -->
     @(Html.DevExtreme().SelectBox()
-        .ID("select-box")
+        .ID("selectBox")
     )
 
 ##### Angular 
@@ -61,7 +61,7 @@
 
     <!-- tab: App.vue -->
     <template> 
-        <DxSelectBox id="select-box>
+        <DxSelectBox id="select-box">
             <!-- Configuration goes here -->
         </DxSelectBox>
     </template> 

@@ -41,6 +41,7 @@ Use [onValueChanged](/Documentation/ApiReference/UI_Components/dxSelectBox/Confi
 
     <!-- tab: app.component.ts -->
     import { DxSelectBoxModule, type DxSelectBoxTypes } from 'devextreme-angular/ui/select-box';
+    import notify from 'devextreme/ui/notify';
 
     // ...
     export class AppComponent {
@@ -64,6 +65,7 @@ Use [onValueChanged](/Documentation/ApiReference/UI_Components/dxSelectBox/Confi
 
     <script setup lang="ts">
     import { DxSelectBox, type DxSelectBoxTypes } from 'devextreme-vue/select-box';
+    import notify from 'devextreme/ui/notify';
 
     const onValueChanged = (e: DxSelectBoxTypes.ValueChangedEvent): void => {
         notify(
@@ -79,6 +81,7 @@ Use [onValueChanged](/Documentation/ApiReference/UI_Components/dxSelectBox/Confi
     <!-- tab: App.tsx -->
     import React, { useCallback } from 'react';
     import { SelectBox, type SelectBoxTypes } from 'devextreme-react/select-box';
+    import notify from 'devextreme/ui/notify';
 
     export default function App() { 
         const onValueChanged = useCallback((e: SelectBoxTypes.ValueChangedEvent) => {

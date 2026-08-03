@@ -7,7 +7,7 @@ SelectBox uses the [Popup](/Documentation/Guide/UI_Components/Popup/Getting_Star
     $("#selectBox").dxSelectBox({
         dropDownOptions: {
             height: 150,
-        }
+        },
         // ...
     });
 

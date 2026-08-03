@@ -20,6 +20,7 @@ SelectBox can display grouped data. To implement this capability using a flat da
     });
 
     $("#selectBox").dxSelectBox({
+        dataSource,
         grouped: true,
         // ...
     });
@@ -41,8 +42,9 @@ SelectBox can display grouped data. To implement this capability using a flat da
 
     <!-- tab: app.component.html -->
     <dx-select-box
-        [grouped]="true">
-    </dx-select-box>
+        [dataSource]="dataSource"
+        [grouped]="true"
+    ></dx-select-box>
 
     <!-- tab: app.component.ts -->
     // ...
@@ -71,6 +73,7 @@ SelectBox can display grouped data. To implement this capability using a flat da
     <!-- tab: App.vue -->
     <template>
         <DxSelectBox
+            :data-source="dataSource"
             :grouped="true"
         />
     </template>
@@ -107,6 +110,7 @@ SelectBox can display grouped data. To implement this capability using a flat da
     export default function App() {
         return (
             <SelectBox
+                dataSource={dataSource}
                 grouped={true}
             />
         );   

@@ -183,19 +183,16 @@ The following instructions show how to enable and configure client-side export:
             Column
         } from 'devextreme-react/data-grid';
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <DataGrid ... >
-                        <Export enabled={true} />
-                        <Column ...
-                            allowExporting={false}
-                        />
-                    </DataGrid>
-                );
-            }
+        export default function App() {
+            return (
+                <DataGrid ... >
+                    <Export enabled={true} />
+                    <Column ...
+                        allowExporting={false}
+                    />
+                </DataGrid>
+            );
         }
-        export default App;
 
     ---
 

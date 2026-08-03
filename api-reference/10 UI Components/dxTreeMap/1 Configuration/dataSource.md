@@ -191,15 +191,12 @@ Use one of the following extensions to enable server-side data processing for De
             loadUrl: serviceUrl + "/GetAction"
         });
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <TreeMap ...
-                        dataSource={store} />
-                );
-            }
+        export default function App() {
+            return (
+                <TreeMap ...
+                    dataSource={store} />
+            );
         }
-        export default App;
 
     ---
 

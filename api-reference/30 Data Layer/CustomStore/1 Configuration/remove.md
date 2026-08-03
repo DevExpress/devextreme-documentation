@@ -112,9 +112,4 @@ A Promise that is resolved after the data item is removed.
         });
     });
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ---

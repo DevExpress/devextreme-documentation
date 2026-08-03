@@ -72,9 +72,4 @@ Indicates whether data is being loaded.
         }
     });
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ---

@@ -71,10 +71,5 @@ The key of the data item to be removed.
             // Your code goes here
         }
     });
-
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
     
 ---

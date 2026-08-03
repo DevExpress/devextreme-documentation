@@ -57,11 +57,6 @@ Specifies the URL of an OData service.
         // ...
         url: 'http://www.example.com/Northwind.svc/'
     });
-    
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
 
 ---
 

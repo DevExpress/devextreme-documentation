@@ -140,11 +140,6 @@ This object creates several [ODataStore](/api-reference/30%20Data%20Layer/ODataS
         }
     });
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ---
 
 #include datalayer-store-note-immutable with { name: "ODataContext" }

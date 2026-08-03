@@ -82,9 +82,4 @@ Set this property if you do not need to [filter data](/concepts/70%20Data%20Bind
         }
     });
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ---

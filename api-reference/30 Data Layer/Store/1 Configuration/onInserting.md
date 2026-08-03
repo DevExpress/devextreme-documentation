@@ -71,10 +71,5 @@ The data item to be added.
             // Your code goes here
         }
     });
-
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
     
 ---

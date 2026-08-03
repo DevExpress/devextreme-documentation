@@ -68,10 +68,5 @@ A function that is executed before a data item is added, updated, or removed fro
             // Your code goes here
         }
     });
-
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
     
 ---

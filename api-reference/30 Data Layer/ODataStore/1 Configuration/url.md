@@ -63,9 +63,4 @@ Specifies the URL of an OData entity collection.
         url: 'http://www.example.com/Northwind.svc/Products'
     });
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ---

@@ -74,10 +74,5 @@ Data processing settings.
             // Your code goes here
         }
     });
-
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
     
 ---

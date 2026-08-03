@@ -98,9 +98,4 @@ When this property is **true**, the filter expression sent to the server contain
     // The filter expression in the request looks like the following:
     // https://...?filter=startswith(tolower(Product_Name), 'tel')
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ---

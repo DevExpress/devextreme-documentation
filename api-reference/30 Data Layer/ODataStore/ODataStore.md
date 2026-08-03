@@ -127,11 +127,6 @@ dx.web.js, dx.viz.js, dx.all.js
         // Other DataSource properties go here
     });
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->

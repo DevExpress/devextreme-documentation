@@ -63,9 +63,4 @@ Specifies the name under which data should be saved in the local storage. The `d
         name: 'myStore'
     });
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ---

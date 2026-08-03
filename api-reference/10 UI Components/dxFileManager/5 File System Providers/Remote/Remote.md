@@ -152,13 +152,13 @@ The following code snippet binds the FileManager to a **RemoteFileSystemProvider
 
 ---
 
-On the server-side, you need to process file management requests. DevExtreme includes request processing helpers for ASP.NET MVC and ASP.NET Core. For an implementation example, enable the **Backend API** toggle in the following demo and review `FileManagerScriptsApiController.cs`:
+On the server, process file management requests. DevExtreme includes request-processing helpers for ASP.NET MVC and ASP.NET Core. For an implementation example, enable the Backend API toggle in the following demo and review `FileManagerScriptsApiController.cs`:
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/FileManager/BindingToFileSystem/"
 }
 
-You can also use remote file system providers in other DevExtreme components. The following example integrates **RemoteFileSystemProvider** with DevExtreme TreeList:
+You can also use remote file system providers with other DevExtreme components. The following example integrates **RemoteFileSystemProvider** with the DevExtreme TreeList:
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-treelist-show-folders-and-files"

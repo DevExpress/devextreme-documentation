@@ -165,15 +165,12 @@ Use one of the following extensions to enable the server to process data accordi
             })
         }];
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <{WidgetName} ...
-                        resources={resources} />
-                );
-            }
+        export default function App() {
+            return (
+                <{WidgetName} ...
+                    resources={resources} />
+            );
         }
-        export default App;
         
     ---
 

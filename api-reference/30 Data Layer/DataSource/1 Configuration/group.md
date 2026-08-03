@@ -102,11 +102,6 @@ A function that returns the value to group by.
         } */
     });
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->

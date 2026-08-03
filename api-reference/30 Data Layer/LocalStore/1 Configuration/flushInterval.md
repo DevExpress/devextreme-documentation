@@ -68,9 +68,4 @@ Specifies a delay in milliseconds between when data changes and the moment these
         flushInterval: 3000
     });
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ---

@@ -86,11 +86,6 @@ Set this property if you are going to [filter data](/concepts/70%20Data%20Bindin
         }
     });
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->

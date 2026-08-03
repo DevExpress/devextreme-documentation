@@ -83,11 +83,6 @@ Custom parameters that should be passed to an OData service with the load query.
         }
     });
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ---
 
 #####See Also#####

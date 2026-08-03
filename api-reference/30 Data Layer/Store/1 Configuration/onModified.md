@@ -68,10 +68,5 @@ A function that is executed after a data item is added, updated, or removed from
             // Your code goes here
         }
     });
-
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
     
 ---

@@ -65,11 +65,6 @@ In most cases, you should pass the name of a field by whose value data items are
         searchExpr: ['firstName', 'lastName']
     });
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ---
 
 You can use this property along with [searchOperation](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/searchOperation.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#searchOperation') and [searchValue](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/searchValue.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#searchValue') to specify a simple filter. Use the [filter](/api-reference/30%20Data%20Layer/DataSource/1%20Configuration/filter.md '/Documentation/ApiReference/Data_Layer/DataSource/Configuration/#filter') property for more complex filtering conditions. Filters are combined if you specify them in both ways.

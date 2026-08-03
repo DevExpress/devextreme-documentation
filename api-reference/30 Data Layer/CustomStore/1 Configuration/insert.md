@@ -122,9 +122,4 @@ A Promise that is resolved after the data item is inserted.
         }
     });
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ---

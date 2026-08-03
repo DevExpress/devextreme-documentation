@@ -113,7 +113,7 @@ The following code snippet binds the FileManager to a **RemoteFileSystemProvider
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
         .FileSystemProvider(provider => provider.Remote()
-            .Url(Url.RouteUrl("FileManagerDBProviderApi")))
+            .Url(Url.RouteUrl("FileManagementFileSystemApi")))
     )
 
     <!-- tab: FileManagerDBProviderApiController.cs -->
@@ -134,7 +134,7 @@ The following code snippet binds the FileManager to a **RemoteFileSystemProvider
     <!--Razor C#-->
     @(Html.DevExtreme().FileManager()
         .FileSystemProvider(provider => provider.Remote()
-            .Url(Url.RouteUrl("FileManagerDBProviderApi")))
+            .Url(Url.RouteUrl("FileManagementFileSystemApi")))
     )
 
     <!-- tab: FileManagerDBProviderApiController.cs -->

@@ -116,10 +116,5 @@ Assigning an array to the **store** property automatically creates an **ArraySto
             { id: 1, name: 'John Doe' }
         ]
     });
-
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
     
 ---

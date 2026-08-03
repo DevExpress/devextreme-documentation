@@ -69,11 +69,6 @@ The [Query](/api-reference/30%20Data%20Layer/Query '/Documentation/ApiReference/
     
     const query = store.createQuery();
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ---
 
 #####See Also#####

@@ -99,9 +99,4 @@ A Promise that is resolved after the data item is loaded.
         }
     });
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ---

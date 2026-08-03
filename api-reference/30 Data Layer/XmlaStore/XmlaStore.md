@@ -121,11 +121,6 @@ The **XmlaStore** is used in the [PivotGridDataSource](/api-reference/30%20Data%
         // Other PivotGridDataSource properties go here
     });
 
-    class App extends React.Component {
-        // ...
-    }
-    export default App;
-
 ##### ASP.NET MVC Controls
 
     <!--Razor C#-->

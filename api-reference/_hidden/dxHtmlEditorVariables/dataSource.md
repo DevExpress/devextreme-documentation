@@ -143,16 +143,13 @@ Use one of the following extensions to enable the server to process data accordi
             loadUrl: serviceUrl + "/GetAction"
         });
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <{WidgetName} ... >
-                        <Variables dataSource={store} />
-                    </{WidgetName}>
-                );
-            }
+        export default function App() {
+            return (
+                <{WidgetName} ... >
+                    <Variables dataSource={store} />
+                </{WidgetName}>
+            );
         }
-        export default App;
 
     ---
 

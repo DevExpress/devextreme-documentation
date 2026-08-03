@@ -102,19 +102,16 @@ An error message can be specified as follows:
             AsyncRule
         } from 'devextreme-react/validator';
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <TextBox>
-                        <Validator>
-                            <AsyncRule
-                                message="My custom message" />
-                        </Validator>
-                    </TextBox>
-                );
-            }
+        export default function App() {
+            return (
+                <TextBox>
+                    <Validator>
+                        <AsyncRule
+                            message="My custom message" />
+                    </Validator>
+                </TextBox>
+            );
         }
-        export default App;
 
     ---
 
@@ -209,19 +206,16 @@ An error message can be specified as follows:
             AsyncRule
         } from 'devextreme-react/validator';
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <TextBox>
-                        <Validator>
-                            <AsyncRule
-                                message="" />
-                        </Validator>
-                    </TextBox>
-                );
-            }
+        export default function App() {
+            return (
+                <TextBox>
+                    <Validator>
+                        <AsyncRule
+                            message="" />
+                    </Validator>
+                </TextBox>
+            );
         }
-        export default App;
 
     ---
 
@@ -316,20 +310,16 @@ An error message can be specified as follows:
             AsyncRule
         } from 'devextreme-react/validator';
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <TextBox>
-                        {/* The error message will be "Password is invalid" */}
-                        <Validator name="Password">
-                            <AsyncRule />
-                        </Validator>
-                    </TextBox>
-                );
-            }
+        export default function App() {
+            return (
+                <TextBox>
+                    {/* The error message will be "Password is invalid" */}
+                    <Validator name="Password">
+                        <AsyncRule />
+                    </Validator>
+                </TextBox>
+            );
         }
-        
-        export default App;
 
     ---
 

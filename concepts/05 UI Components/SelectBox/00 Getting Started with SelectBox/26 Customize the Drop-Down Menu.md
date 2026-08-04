@@ -8,8 +8,14 @@ SelectBox uses the [Popup](/Documentation/Guide/UI_Components/Popup/Getting_Star
         dropDownOptions: {
             height: 150,
         },
-        // ...
     });
+
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().SelectBox()
+        .DropDownOptions(o => o.Height(150))
+    )
 
 ##### Angular
 
@@ -19,14 +25,6 @@ SelectBox uses the [Popup](/Documentation/Guide/UI_Components/Popup/Getting_Star
             [height]="150"
         ></dxo-select-box-drop-down-options>
     </dx-select-box>
-
-    <!-- tab: app.component.ts -->
-    // ...
-    export class AppComponent {
-        dropDownOptions = {
-            height: 150,
-        }
-    }
 
 ##### Vue
 
@@ -38,21 +36,14 @@ SelectBox uses the [Popup](/Documentation/Guide/UI_Components/Popup/Getting_Star
     </template>
 
     <script setup lang="ts">
-    // ...
+    import { DxSelectBox, DxDropDownOptions } from 'devextreme-vue/select-box';
 
-    const dropDownOptions = {
-        height: 150,
-    };
     </script>
 
 ##### React
 
     <!-- tab: App.tsx -->
-    // ...
-    
-    const dropDownOptions = {
-        height: 150,
-    };
+    import { SelectBox, DropDownOptions } from 'devextreme-react/select-box';
 
     export default function App() {
         return (

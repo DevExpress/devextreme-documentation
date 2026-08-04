@@ -14,7 +14,7 @@
     <html>
         <head>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/minor_26_2/css/dx.light.css" />
+            <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/minor_26_2/css/dx.fluent.blue.light.css" />
             <link rel="stylesheet" href="index.css" />
 
             <script src="https://cdn3.devexpress.com/jslib/minor_26_2/js/dx.all.js"></script>
@@ -34,7 +34,7 @@
         .ID("selectBox")
     )
 
-##### Angular 
+##### Angular
 
 [Add DevExtreme to your Angular application](/concepts/40%20Angular%20Components/10%20Getting%20Started/03%20Add%20DevExtreme%20to%20an%20Angular%20CLI%20Application '/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/') and use the following code to create a SelectBox:
 
@@ -55,7 +55,7 @@
 
     }
 
-##### Vue 
+##### Vue
 
 [Add DevExtreme to your Vue application](/concepts/55%20Vue%20Components/05%20Add%20DevExtreme%20to%20a%20Vue%20Application/00%20Add%20DevExtreme%20to%20a%20Vue%20Application.md '/Documentation/Guide/Vue_Components/Add_DevExtreme_to_a_Vue_Application/') and use the following code to create a SelectBox:
 
@@ -72,7 +72,7 @@
 
     </script>
 
-##### React 
+##### React
 
 [Add DevExtreme to your React application](/concepts/50%20React%20Components/05%20Add%20DevExtreme%20to%20a%20React%20Application/00%20Add%20DevExtreme%20to%20a%20React%20Application.md '/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/') and use the following code to create a SelectBox:
 

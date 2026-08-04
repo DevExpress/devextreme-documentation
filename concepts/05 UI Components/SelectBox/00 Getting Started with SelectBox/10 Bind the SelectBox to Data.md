@@ -110,11 +110,12 @@
     <dx-select-box
         [dataSource]="data"
         valueExpr="ID"
-        displayExpr="Name">
-    </dx-select-box>
+        displayExpr="Name"
+    ></dx-select-box>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
+    import { DxSelectBoxModule } from 'devextreme-angular/ui/select-box';
     import { AppService, Item } from './app.service';
 
     // ...
@@ -175,20 +176,10 @@
         />
     </template>
 
-    <script>
+    <script setup lang="ts">
     import { DxSelectBox } from 'devextreme-vue/select-box';
     import { data } from './data';
 
-    export default {
-        components: {
-            DxSelectBox
-        },
-        data() {
-            return {
-                data
-            }
-        }
-    }
     </script>
 
     <!-- tab: data.js -->
@@ -216,11 +207,11 @@
 
 ##### React
 
-    <!-- tab: App.js -->
-    // ...
+    <!-- tab: App.tsx -->
+    import { SelectBox } from 'devextreme-react/select-box';
     import { data } from './data';
 
-    function App() {
+    export default function App() {
         return (
             <SelectBox
                 dataSource={data}
@@ -229,8 +220,6 @@
             />
         ); 
     }
-
-    export default App;
 
     <!-- tab: data.js -->
     export const data = [{

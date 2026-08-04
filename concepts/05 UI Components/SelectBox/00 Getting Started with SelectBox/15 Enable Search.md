@@ -9,7 +9,6 @@ To allow users to search through SelectBox values, set [searchEnabled](/api-refe
     <!-- tab: index.js -->
     $("#selectBox").dxSelectBox({
         searchEnabled: true,
-        // ...
     });
 
 ##### ASP.NET Core Controls
@@ -38,7 +37,7 @@ To allow users to search through SelectBox values, set [searchEnabled](/api-refe
 ##### React
 
     <!-- tab: App.tsx -->
-    // ...
+    import { SelectBox } from 'devextreme-react/select-box';
 
     export default function App() {
         return (

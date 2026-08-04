@@ -45,7 +45,7 @@ To specify label text, define the [label](/Documentation/ApiReference/UI_Compone
     <!-- tab: App.tsx -->
     import { SelectBox } from 'devextreme-react/select-box';
 
-    function App(): JSX.Element {
+    export default function App() {
         return (
             <SelectBox
                 label="Product"

@@ -22,7 +22,6 @@ SelectBox can display grouped data. To implement this capability using a flat da
     $("#selectBox").dxSelectBox({
         dataSource,
         grouped: true,
-        // ...
     });
 
 ##### ASP.NET Core Controls
@@ -47,7 +46,7 @@ SelectBox can display grouped data. To implement this capability using a flat da
     ></dx-select-box>
 
     <!-- tab: app.component.ts -->
-    // ...
+    import { DxSelectBoxModule } from 'devextreme-angular/ui/select-box';
     import { DataSource } from 'devextreme-angular/common/data';
 
     // ...
@@ -79,7 +78,7 @@ SelectBox can display grouped data. To implement this capability using a flat da
     </template>
 
     <script setup lang="ts">
-    // ...
+    import { DxSelectBox } from 'devextreme-vue/select-box';
     import { DataSource } from 'devextreme-vue/common/data';
 
     const dataSource = new DataSource({
@@ -95,7 +94,7 @@ SelectBox can display grouped data. To implement this capability using a flat da
 ##### React
 
     <!-- tab: App.tsx -->
-    // ...
+    import { SelectBox } from 'devextreme-react/select-box';
     import { DataSource } from 'devextreme-react/common/data';
 
     const dataSource = new DataSource({

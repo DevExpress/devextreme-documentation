@@ -15,7 +15,7 @@
         <head>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/minor_26_2/css/dx.light.css" />
-            <link rel="stylesheet" href="index.css">
+            <link rel="stylesheet" href="index.css" />
 
             <script src="https://cdn3.devexpress.com/jslib/minor_26_2/js/dx.all.js"></script>
             <script src="index.js"></script>

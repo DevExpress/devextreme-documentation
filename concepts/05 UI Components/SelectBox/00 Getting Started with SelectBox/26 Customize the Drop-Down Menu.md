@@ -14,8 +14,10 @@ SelectBox uses the [Popup](/Documentation/Guide/UI_Components/Popup/Getting_Star
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-select-box
-        [dropDownOptions]="dropDownOptions">
+    <dx-select-box>
+        <dxo-select-box-drop-down-options
+            [height]="150"
+        ></dxo-select-box-drop-down-options>
     </dx-select-box>
 
     <!-- tab: app.component.ts -->
@@ -30,9 +32,9 @@ SelectBox uses the [Popup](/Documentation/Guide/UI_Components/Popup/Getting_Star
 
     <!-- tab: App.vue -->
     <template>
-        <DxSelectBox
-            :drop-down-options="dropDownOptions"
-        />
+        <DxSelectBox>
+            <DxDropDownOptions :height="150" />
+        </DxSelectBox>
     </template>
 
     <script setup lang="ts">
@@ -54,9 +56,9 @@ SelectBox uses the [Popup](/Documentation/Guide/UI_Components/Popup/Getting_Star
 
     export default function App() {
         return (
-            <SelectBox
-                dropDownOptions={dropDownOptions}
-            />
+            <SelectBox>
+                <DropDownOptions height={150} />
+            </SelectBox>
         );
     }
 

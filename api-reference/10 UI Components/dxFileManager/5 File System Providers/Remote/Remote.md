@@ -27,7 +27,7 @@ The server should return data objects of the following structure:
         hasSubDirectories: true
     }
 
-Fields in this structure have conventional names that you can change using **fieldNameExpr** properties, including the following:
+Fields in this structure have predefined names that FileManager uses in the default configuration. To use custom field names, configure **[fieldName]Expr** properties such as the following:
 
 - [nameExpr](/api-reference/10%20UI%20Components/dxFileManager/5%20File%20System%20Providers/FileSystemProviderBase/1%20Configuration/nameExpr.md '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Remote/Configuration/#nameExpr')
 - [sizeExpr](/api-reference/10%20UI%20Components/dxFileManager/5%20File%20System%20Providers/FileSystemProviderBase/1%20Configuration/sizeExpr.md '/Documentation/ApiReference/UI_Components/dxFileManager/File_System_Providers/Remote/Configuration/#sizeExpr')

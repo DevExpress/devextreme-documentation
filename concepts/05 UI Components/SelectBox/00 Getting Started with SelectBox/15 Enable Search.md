@@ -49,7 +49,7 @@ To allow users to search through SelectBox values, set [searchEnabled](/api-refe
 
 ---
 
-For more information about the search capabilities of DevExtreme SelectBox, refer to the following demo:
+For more information about DevExtreme SelectBox search capabilities, see the following demo:
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/SelectBox/SearchAndEditing/"

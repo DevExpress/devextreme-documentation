@@ -34,17 +34,88 @@
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().SelectBox()
+        .DataSource(d => d
+            .Mvc().Controller("SelectBoxData")
+            .LoadAction("Get")
+            .Key("ID")
+        )
+        .ValueExpr("ID")
+        .DisplayExpr("Name")
+    )
+
+    <!-- tab: SelectBoxDataController.cs -->
+    using ASP_NET_Core.Models;
+    using DevExtreme.AspNet.Data;
+    using DevExtreme.AspNet.Mvc;
+    using Microsoft.AspNetCore.Mvc;
+
+    namespace ASP_NET_Core.Controllers;
+    
+    public class SelectBoxDataController : Controller {
+        
+        [HttpGet]
+        public object Get(DataSourceLoadOptions loadOptions) {
+            return DataSourceLoader.Load(SelectBoxData.SelectBoxItems, loadOptions);
+        }
+
+    }
+
+    <!-- tab: SelectBoxItem.cs -->
+    namespace ASP_NET_Core.Models;
+    public class SelectBoxItem {
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public string Category { get; set; }
+    }
+
+    <!-- tab: SelectBoxData.cs -->
+    namespace ASP_NET_Core.Models;
+    static class SelectBoxData {
+        public static List<SelectBoxItem> SelectBoxItems = [
+            new SelectBoxItem {
+                ID = 1,
+                Name = "Banana",
+                Category = "Fruits",
+            },
+            new SelectBoxItem {
+                ID = 2,
+                Name = "Cucumber",
+                Category = "Vegetables",
+            },
+            new SelectBoxItem {
+                ID = 3,
+                Name = "Apple",
+                Category = "Fruits",
+            },
+            new SelectBoxItem {
+                ID = 4,
+                Name = "Tomato",
+                Category = "Vegetables",
+            },
+            new SelectBoxItem {
+                ID = 5,
+                Name = "Apricot",
+                Category = "Fruits",
+            },
+        ];
+    }
+
 ##### Angular
 
     <!-- tab: app.component.html -->
     <dx-select-box
         [dataSource]="data"
         valueExpr="ID"
-        displayExpr="Name">
-    </dx-select-box>
+        displayExpr="Name"
+    ></dx-select-box>
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
+    import { DxSelectBoxModule } from 'devextreme-angular/ui/select-box';
     import { AppService, Item } from './app.service';
 
     // ...
@@ -105,20 +176,10 @@
         />
     </template>
 
-    <script>
-    // ...
+    <script setup lang="ts">
+    import { DxSelectBox } from 'devextreme-vue/select-box';
     import { data } from './data';
 
-    export default {
-        components: {
-            DxSelectBox
-        },
-        data() {
-            return {
-                data
-            }
-        }
-    }
     </script>
 
     <!-- tab: data.js -->
@@ -146,11 +207,11 @@
 
 ##### React
 
-    <!-- tab: App.js -->
-    // ...
+    <!-- tab: App.tsx -->
+    import { SelectBox } from 'devextreme-react/select-box';
     import { data } from './data';
 
-    function App() {
+    export default function App() {
         return (
             <SelectBox
                 dataSource={data}
@@ -159,8 +220,6 @@
             />
         ); 
     }
-
-    export default App;
 
     <!-- tab: data.js -->
     export const data = [{

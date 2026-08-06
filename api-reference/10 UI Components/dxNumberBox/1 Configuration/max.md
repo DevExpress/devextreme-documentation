@@ -5,6 +5,6 @@ default: undefined
 ---
 ---
 ##### shortDescription
-The maximum value accepted by the number box.
+The maximum value NumberBox allows users to enter. Does not affect programmatic value changes.
 
 ---

@@ -1,4 +1,4 @@
-Set the [label](/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#label) property to specify label text. To enable floating labels, set [labelMode](/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#labelMode) to *"floating"*. In floating mode, the label acts as a placeholder and moves above the input field when the editor receives focus.
+Set the [label](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/label.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#label') property to specify label text. To enable floating labels, set [labelMode](/api-reference/10%20UI%20Components/dxTextEditor/1%20Configuration/labelMode.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#labelMode') to *"floating"*. In floating mode, the label acts as a placeholder and moves above the input field when the editor receives focus.
 
 ---
 ##### jQuery

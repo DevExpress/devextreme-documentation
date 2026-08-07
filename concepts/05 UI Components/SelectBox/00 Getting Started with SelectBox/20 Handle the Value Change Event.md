@@ -1,4 +1,4 @@
-Use [onValueChanged](/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#onValueChanged) to specify a function that the component executes when users change the SelectBox value. The following example calls the [notify](/Documentation/ApiReference/Common/Utils/ui/#notifymessage_type_displayTime) utility method within this function:
+Use [onValueChanged](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/onValueChanged.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#onValueChanged') to specify a function that the component executes when users change the SelectBox value. The following example calls the [notify](/api-reference/50%20Common/utils/ui/notify(message_type_displayTime).md '/Documentation/ApiReference/Common/Utils/ui/#notifymessage_type_displayTime') utility method within this function:
 
 ---
 ##### jQuery

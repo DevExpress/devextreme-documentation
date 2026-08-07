@@ -117,4 +117,4 @@ SelectBox can display grouped data. To implement this capability using a flat da
     
 ---
 
-SelectBox can also display grouped data from a nested data source with one nesting level. Each object in the data source contains a key field and an items array. For more information, refer to the following guide: [SelectBox - Grouping in the Data Source](/Documentation/Guide/UI_Components/SelectBox/Grouping/In_the_Data_Source/).
+SelectBox can also display grouped data from a nested data source with one nesting level. Each object in the data source contains a key field and an items array. For more information, refer to the following guide: [SelectBox - Grouping in the Data Source](/concepts/05%20UI%20Components/SelectBox/07%20Grouping/01%20In%20the%20Data%20Source.md '/Documentation/Guide/UI_Components/SelectBox/Grouping/In_the_Data_Source/').

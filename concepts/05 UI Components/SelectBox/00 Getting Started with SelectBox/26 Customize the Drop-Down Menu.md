@@ -1,4 +1,4 @@
-SelectBox uses the [Popup](/Documentation/Guide/UI_Components/Popup/Getting_Started_with_Popup/) component as a drop-down menu. To customize the menu, specify [Popup properties](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/) in the [dropDownOptions](/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#dropDownOptions) object:
+SelectBox uses the [Popup](/concepts/05%20UI%20Components/Popup/00%20Getting%20Started%20with%20Popup '/Documentation/Guide/UI_Components/Popup/Getting_Started_with_Popup/') component as a drop-down menu. To customize the menu, specify [Popup properties](/api-reference/10%20UI%20Components/dxPopup/1%20Configuration '/Documentation/ApiReference/UI_Components/dxPopup/Configuration/') in the [dropDownOptions](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/dropDownOptions.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#dropDownOptions') object:
 
 ---
 ##### jQuery

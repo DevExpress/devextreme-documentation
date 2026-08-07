@@ -13,7 +13,7 @@ If you use [DevExtreme modules](/concepts/Common/Modularity/02%20DevExtreme%20Mo
 
     import 'devextreme/ui/tag_box';
 
-You can omit modules for *"dxColorBox"*, *"dxMenu"*, *"dxNumberBox"*, and *"dxSelectBox"*. The HTML Editor component imports these modules automatically.
+You can omit modules for *"dxColorBox/color_view"*, *"dxMenu"*, *"dxNumberBox"*, and *"dxSelectBox"*. The HTML Editor component imports these modules automatically.
 
 ##### Angular
 
@@ -21,7 +21,7 @@ You can omit modules for *"dxColorBox"*, *"dxMenu"*, *"dxNumberBox"*, and *"dxSe
 
         import 'devextreme/ui/tag_box';
 
-    You can omit modules for *"dxColorBox"*, *"dxMenu"*, *"dxNumberBox"*, and *"dxSelectBox"*. The HTML Editor component imports these modules automatically.
+    You can omit modules for *"dxColorBox/color_view"*, *"dxMenu"*, *"dxNumberBox"*, and *"dxSelectBox"*. The HTML Editor component imports these modules automatically.
 
 - To update the item component's state/options at runtime, configure the component in a [template]({currentpath}/#template) instead of using this property.
 
@@ -31,7 +31,7 @@ You can omit modules for *"dxColorBox"*, *"dxMenu"*, *"dxNumberBox"*, and *"dxSe
 
         import 'devextreme/ui/tag_box';
 
-    You can omit modules for *"dxColorBox"*, *"dxMenu"*, *"dxNumberBox"*, and *"dxSelectBox"*. The HTML Editor component imports these modules automatically.
+    You can omit modules for *"dxColorBox/color_view"*, *"dxMenu"*, *"dxNumberBox"*, and *"dxSelectBox"*. The HTML Editor component imports these modules automatically.
 
 - To update the item component's state/options at runtime, configure the component in a [template]({currentpath}/#template) instead of using this property.
 
@@ -41,7 +41,7 @@ You can omit modules for *"dxColorBox"*, *"dxMenu"*, *"dxNumberBox"*, and *"dxSe
 
         import 'devextreme/ui/tag_box';
 
-    You can omit modules for *"dxColorBox"*, *"dxMenu"*, *"dxNumberBox"*, and *"dxSelectBox"*. The HTML Editor component imports these modules automatically.
+    You can omit modules for *"dxColorBox/color_view"*, *"dxMenu"*, *"dxNumberBox"*, and *"dxSelectBox"*. The HTML Editor component imports these modules automatically.
 
 - To update the item component's state/options at runtime, configure the component in [render]({currentpath}/#render) or [component]({currentpath}/#component) instead of using this property.
 

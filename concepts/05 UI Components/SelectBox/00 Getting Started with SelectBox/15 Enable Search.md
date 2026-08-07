@@ -1,6 +1,6 @@
 #include common-tutorialbutton-named with { url: "/Documentation/Guide/UI_Components/SelectBox/Configure_Search_Parameters/", name: "Configure Search Parameters" }
 
-To allow users to search through SelectBox values, set [searchEnabled](/api-reference/10%20UI%20Components/dxDropDownList/1%20Configuration/searchEnabled.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#searchEnabled') to **true**:
+To allow users to search through SelectBox values, set [searchEnabled](/api-reference/10%20UI%20Components/dxSelectBox/1%20Configuration/searchEnabled.md '/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#searchEnabled') to **true**:
 
 ---
 

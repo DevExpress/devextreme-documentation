@@ -5,6 +5,6 @@ default: undefined
 ---
 ---
 ##### shortDescription
-The minimum value accepted by the number box.
+The minimum value NumberBox allows users to enter. Does not affect programmatic value changes.
 
 ---

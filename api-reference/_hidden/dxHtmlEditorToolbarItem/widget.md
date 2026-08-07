@@ -13,11 +13,15 @@ If you use [DevExtreme modules](/concepts/Common/Modularity/02%20DevExtreme%20Mo
 
     import 'devextreme/ui/tag_box';
 
+You can omit modules for *"dxColorBox"*, *"dxMenu"*, *"dxNumberBox"*, and *"dxSelectBox"*. HTML Editor imports these modules automatically.
+
 ##### Angular
 
 - To use this property, import the specified editor's [module](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/') from the `devextreme` folder:
 
         import 'devextreme/ui/tag_box';
+
+    You can omit modules for *"dxColorBox"*, *"dxMenu"*, *"dxNumberBox"*, and *"dxSelectBox"*. HTML Editor imports these modules automatically.
 
 - To update the item component's state/options at runtime, configure the component in a [template]({currentpath}/#template) instead of using this property.
 
@@ -27,6 +31,8 @@ If you use [DevExtreme modules](/concepts/Common/Modularity/02%20DevExtreme%20Mo
 
         import 'devextreme/ui/tag_box';
 
+    You can omit modules for *"dxColorBox"*, *"dxMenu"*, *"dxNumberBox"*, and *"dxSelectBox"*. HTML Editor imports these modules automatically.
+
 - To update the item component's state/options at runtime, configure the component in a [template]({currentpath}/#template) instead of using this property.
 
 ##### React
@@ -34,6 +40,8 @@ If you use [DevExtreme modules](/concepts/Common/Modularity/02%20DevExtreme%20Mo
 - To use this property, import the specified editor's [module](/concepts/Common/Modularity/02%20DevExtreme%20Modules%20Structure '/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/') from the `devextreme` folder:
 
         import 'devextreme/ui/tag_box';
+
+    You can omit modules for *"dxColorBox"*, *"dxMenu"*, *"dxNumberBox"*, and *"dxSelectBox"*. HTML Editor imports these modules automatically.
 
 - To update the item component's state/options at runtime, configure the component in [render]({currentpath}/#render) or [component]({currentpath}/#component) instead of using this property.
 

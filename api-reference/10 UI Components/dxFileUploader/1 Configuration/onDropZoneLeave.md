@@ -1,7 +1,7 @@
 ---
 id: dxFileUploader.Options.onDropZoneLeave
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 ---
 ---
 ##### shortDescription

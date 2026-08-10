@@ -1,7 +1,7 @@
 ---
 id: dxScheduler.Options.onAppointmentDblClick
 type: function(e)
-default: undefined
+default: null
 ---
 ---
 ##### shortDescription

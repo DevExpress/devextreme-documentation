@@ -1,7 +1,7 @@
 ---
 id: dxPivotGridFieldChooser.Options.onContextMenuPreparing
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 ---
 ---
 ##### shortDescription

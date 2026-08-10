@@ -2,7 +2,7 @@
 id: dxSchedulerToolbarItem
 module: ui/scheduler
 export: ToolbarItem
-type: dxToolbarItem | Object
+type: ToolbarItemBase | Object
 inherits: dxToolbarItem
 generateTypeLink: 
 ---

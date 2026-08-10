@@ -1,6 +1,7 @@
 ---
 id: PivotGridDataSource.Options.fields.groupInterval
 type: Enums.PivotGridGroupInterval | Number
+default: undefined
 ---
 ---
 ##### shortDescription

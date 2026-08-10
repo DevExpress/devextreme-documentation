@@ -1,6 +1,6 @@
 ---
 id: Editor.Options.value
-type: any | null
+type: any
 default: null
 firedEvents: valueChanged
 ---

@@ -1,6 +1,6 @@
 ---
 id: dxDropDownEditor.Options.value
-type: any | null
+type: any
 default: null
 ---
 ---

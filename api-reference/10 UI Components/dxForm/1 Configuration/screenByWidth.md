@@ -1,6 +1,7 @@
 ---
 id: dxForm.Options.screenByWidth
 type: function()
+default: null
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,7 @@
 ---
 id: dxButtonGroup.Options.onItemClick
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 ---
 ---
 ##### shortDescription

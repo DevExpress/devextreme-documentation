@@ -1,6 +1,7 @@
 ---
 id: PivotGridDataSource.Options.fields.dataField
 type: String
+default: undefined
 ---
 ---
 ##### shortDescription

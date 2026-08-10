@@ -1,7 +1,7 @@
 ---
 id: dxVectorMap.Options.onCenterChanged
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 notUsedInTheme: 
 ---
 ---

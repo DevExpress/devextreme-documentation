@@ -1,6 +1,7 @@
 ---
 id: PivotGridDataSource.Options.fields.runningTotal
 type: Enums.PivotGridRunningTotalMode
+default: undefined
 ---
 ---
 ##### shortDescription

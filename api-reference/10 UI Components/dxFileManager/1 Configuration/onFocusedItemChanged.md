@@ -1,7 +1,7 @@
 ---
 id: dxFileManager.Options.onFocusedItemChanged
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 ---
 ---
 ##### shortDescription

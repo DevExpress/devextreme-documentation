@@ -1,6 +1,7 @@
 ---
 id: PivotGridDataSource.Options.fields.displayFolder
 type: String
+default: undefined
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,7 @@
 ---
 id: dxGantt.Options.onTaskMoving
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 ---
 ---
 ##### shortDescription

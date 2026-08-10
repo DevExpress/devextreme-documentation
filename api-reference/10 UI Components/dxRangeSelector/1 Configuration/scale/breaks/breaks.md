@@ -1,6 +1,6 @@
 ---
 id: dxRangeSelector.Options.scale.breaks
-type: Array<ScaleBreak> | undefined
+type: Array<ScaleBreak>
 inherits: ScaleBreak
 default: undefined
 notUsedInTheme: 

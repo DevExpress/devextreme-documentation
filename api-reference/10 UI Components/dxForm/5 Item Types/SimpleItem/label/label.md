@@ -1,6 +1,7 @@
 ---
 id: dxFormSimpleItem.label
 type: Object
+default: undefined
 ---
 ---
 ##### shortDescription

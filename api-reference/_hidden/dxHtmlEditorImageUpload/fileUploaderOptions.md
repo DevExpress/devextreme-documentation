@@ -1,6 +1,7 @@
 ---
 id: dxHtmlEditorImageUpload.fileUploaderOptions
 type: dxFileUploader_Options
+default: null
 ---
 ---
 ##### shortDescription

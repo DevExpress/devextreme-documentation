@@ -1,7 +1,7 @@
 ---
 id: dxMenu.Options.onSubmenuHidden
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 ---
 ---
 ##### shortDescription

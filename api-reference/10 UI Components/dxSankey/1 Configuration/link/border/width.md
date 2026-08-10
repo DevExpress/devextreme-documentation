@@ -1,7 +1,7 @@
 ---
 id: dxSankey.Options.link.border.width
 type: Number | undefined
-default: 1
+default: 2
 ---
 ---
 ##### shortDescription

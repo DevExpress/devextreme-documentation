@@ -1,7 +1,7 @@
 ---
 id: dxList.Options.onGroupRendered
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 ---
 ---
 ##### shortDescription

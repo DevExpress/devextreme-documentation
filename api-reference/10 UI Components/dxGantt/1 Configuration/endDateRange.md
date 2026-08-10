@@ -1,7 +1,7 @@
 ---
 id: dxGantt.Options.endDateRange
-type: Date | undefined
-default: undefined
+type: Date
+default: null
 ---
 ---
 ##### shortDescription

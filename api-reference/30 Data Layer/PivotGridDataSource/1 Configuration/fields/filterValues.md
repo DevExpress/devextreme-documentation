@@ -1,6 +1,7 @@
 ---
 id: PivotGridDataSource.Options.fields.filterValues
 type: Array<any>
+default: undefined
 ---
 ---
 ##### shortDescription

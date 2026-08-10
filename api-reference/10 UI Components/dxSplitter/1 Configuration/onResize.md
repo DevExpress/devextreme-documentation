@@ -1,7 +1,7 @@
 ---
 id: dxSplitter.Options.onResize
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 ---
 ---
 ##### shortDescription

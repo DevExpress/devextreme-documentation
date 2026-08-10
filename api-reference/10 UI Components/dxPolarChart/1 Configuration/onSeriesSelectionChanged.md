@@ -1,7 +1,7 @@
 ---
 id: dxPolarChart.Options.onSeriesSelectionChanged
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 notUsedInTheme: 
 ---
 ---

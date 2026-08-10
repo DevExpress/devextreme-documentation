@@ -1,7 +1,7 @@
 ---
 id: dxHtmlEditor.Options.onFocusOut
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,7 @@
 ---
 id: dxTreeMap.Options.onNodesRendering
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 notUsedInTheme: 
 ---
 ---

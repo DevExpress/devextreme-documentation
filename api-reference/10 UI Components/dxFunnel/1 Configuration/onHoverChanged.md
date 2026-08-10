@@ -1,7 +1,7 @@
 ---
 id: dxFunnel.Options.onHoverChanged
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 notUsedInTheme: 
 ---
 ---

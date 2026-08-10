@@ -1,7 +1,7 @@
 ---
 id: dxResponsiveBox.Options.screenByWidth
-type: function() | undefined
-default: undefined
+type: function()
+default: null
 ---
 ---
 ##### shortDescription

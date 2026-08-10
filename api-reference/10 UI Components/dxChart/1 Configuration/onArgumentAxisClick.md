@@ -1,7 +1,7 @@
 ---
 id: dxChart.Options.onArgumentAxisClick
 type: function(e)
-default: undefined
+default: null
 notUsedInTheme: 
 ---
 ---

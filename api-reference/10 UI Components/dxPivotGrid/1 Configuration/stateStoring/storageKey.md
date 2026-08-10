@@ -1,7 +1,7 @@
 ---
 id: dxPivotGrid.Options.stateStoring.storageKey
-type: String | undefined
-default: undefined
+type: String
+default: null
 ---
 ---
 ##### shortDescription

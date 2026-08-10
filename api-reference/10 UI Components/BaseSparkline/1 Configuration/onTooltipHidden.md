@@ -1,7 +1,7 @@
 ---
 id: BaseSparkline.Options.onTooltipHidden
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 notUsedInTheme: 
 ---
 ---

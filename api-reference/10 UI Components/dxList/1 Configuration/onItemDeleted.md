@@ -1,7 +1,7 @@
 ---
 id: dxList.Options.onItemDeleted
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 hidden: false
 ---
 ---

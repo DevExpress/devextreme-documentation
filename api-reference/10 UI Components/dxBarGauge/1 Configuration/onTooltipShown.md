@@ -1,7 +1,7 @@
 ---
 id: dxBarGauge.Options.onTooltipShown
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 notUsedInTheme: 
 ---
 ---

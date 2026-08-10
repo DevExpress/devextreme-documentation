@@ -1,7 +1,7 @@
 ---
 notUsedInTheme: 
 uid: viz/gauges/base_gauge:BaseGaugeScale.customTicks
-type: Array<Number> | undefined
+type: Array<Number>
 default: undefined
 ---
 ---

@@ -1,7 +1,7 @@
 ---
 id: Component.Options.onOptionChanged
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 ---
 ---
 ##### shortDescription

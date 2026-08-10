@@ -1,7 +1,7 @@
 ---
 id: dxRangeSlider.Options.onValueChanged
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 ---
 ---
 ##### shortDescription

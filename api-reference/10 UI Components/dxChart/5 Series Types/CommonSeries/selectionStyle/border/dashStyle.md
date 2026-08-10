@@ -1,7 +1,7 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.selectionStyle.border.dashStyle
 type: Enums.DashStyle | undefined
-default: undefined
+default: 'solid'
 ---
 ---
 ##### shortDescription

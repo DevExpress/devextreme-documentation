@@ -1,7 +1,7 @@
 ---
 id: DOMComponent.Options.onDisposing
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 ---
 ---
 ##### param(e): EventInfo

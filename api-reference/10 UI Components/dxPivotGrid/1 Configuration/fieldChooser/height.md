@@ -1,6 +1,6 @@
 ---
 id: dxPivotGrid.Options.fieldChooser.height
-type: Number | String
+type: Number
 default: 600
 ---
 ---

@@ -1,7 +1,7 @@
 ---
 id: dxFunnel.Options.onSelectionChanged
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 notUsedInTheme: 
 ---
 ---

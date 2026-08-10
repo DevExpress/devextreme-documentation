@@ -1,7 +1,7 @@
 ---
 id: dxScheduler.Options.resourceCellTemplate
-type: template | undefined
-default: undefined
+type: template
+default: null
 ---
 ---
 ##### shortDescription

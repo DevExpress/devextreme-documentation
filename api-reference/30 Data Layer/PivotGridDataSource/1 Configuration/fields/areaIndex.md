@@ -1,6 +1,7 @@
 ---
 id: PivotGridDataSource.Options.fields.areaIndex
 type: Number
+default: undefined
 ---
 ---
 ##### shortDescription

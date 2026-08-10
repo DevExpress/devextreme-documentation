@@ -1,6 +1,6 @@
 ---
 id: dxVectorMapCommonAnnotationConfig.coordinates
-type: Array<Number> | undefined
+type: Array<Number>
 default: undefined
 ---
 ---

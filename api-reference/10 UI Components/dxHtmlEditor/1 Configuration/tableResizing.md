@@ -1,6 +1,6 @@
 ---
 id: dxHtmlEditor.Options.tableResizing
-type: dxHtmlEditorTableResizing | null
+type: dxHtmlEditorTableResizing
 default: null
 inheritsType: dxHtmlEditorTableResizing
 ---

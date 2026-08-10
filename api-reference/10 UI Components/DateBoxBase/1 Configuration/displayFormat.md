@@ -1,6 +1,6 @@
 ---
 id: DateBoxBase.Options.displayFormat
-type: Format | null
+type: Format
 default: null
 ---
 ---

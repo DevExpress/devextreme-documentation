@@ -1,6 +1,6 @@
 ---
 id: dxHtmlEditor.Options.tableContextMenu
-type: dxHtmlEditorTableContextMenu | null
+type: dxHtmlEditorTableContextMenu
 inheritsType: dxHtmlEditorTableContextMenu
 default: null
 ---

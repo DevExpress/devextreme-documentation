@@ -1,7 +1,7 @@
 ---
 id: dxList.Options.onScroll
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 ---
 ---
 ##### shortDescription

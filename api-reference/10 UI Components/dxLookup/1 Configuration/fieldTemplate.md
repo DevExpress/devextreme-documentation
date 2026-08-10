@@ -1,6 +1,6 @@
 ---
 id: dxLookup.Options.fieldTemplate
-type: template | null
+type: template
 default: null
 ---
 ---

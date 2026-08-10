@@ -1,7 +1,7 @@
 ---
 id: dxVectorMap.Options.onZoomFactorChanged
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 notUsedInTheme: 
 ---
 ---

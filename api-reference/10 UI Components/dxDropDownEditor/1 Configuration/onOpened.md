@@ -1,6 +1,6 @@
 ---
 id: dxDropDownEditor.Options.onOpened
-type: function(e) | null
+type: function(e)
 default: null
 ---
 ---

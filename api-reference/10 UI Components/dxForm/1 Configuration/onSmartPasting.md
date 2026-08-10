@@ -1,7 +1,7 @@
 ---
 id: dxForm.Options.onSmartPasting
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
 ---
 id: CollectionWidget.Options.onItemContextMenu
-type: function(e) | null
+type: function(e)
 default: null
 ---
 ---

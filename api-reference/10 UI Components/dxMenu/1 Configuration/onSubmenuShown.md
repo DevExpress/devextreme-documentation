@@ -1,7 +1,7 @@
 ---
 id: dxMenu.Options.onSubmenuShown
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 ---
 ---
 ##### shortDescription

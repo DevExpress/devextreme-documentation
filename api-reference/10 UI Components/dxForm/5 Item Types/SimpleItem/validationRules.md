@@ -1,6 +1,7 @@
 ---
 id: dxFormSimpleItem.validationRules
 type: Array<RequiredRule, NumericRule, RangeRule, StringLengthRule, CustomRule, CompareRule, PatternRule, EmailRule, AsyncRule>
+default: undefined
 ---
 ---
 ##### shortDescription

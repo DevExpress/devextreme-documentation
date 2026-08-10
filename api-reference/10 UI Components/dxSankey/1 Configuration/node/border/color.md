@@ -1,7 +1,7 @@
 ---
 id: dxSankey.Options.node.border.color
 type: String | undefined
-default: '#ffffff'
+default: '#000000'
 ---
 ---
 ##### shortDescription

@@ -2,6 +2,7 @@
 id: dxVectorMap.Options.layers
 type: Array<Object> | Object
 notUsedInTheme: 
+default: undefined
 ---
 ---
 ##### shortDescription

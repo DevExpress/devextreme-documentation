@@ -1,6 +1,6 @@
 ---
 id: dxPivotGrid.Options.fieldChooser.width
-type: Number | String
+type: Number
 default: 600
 ---
 ---

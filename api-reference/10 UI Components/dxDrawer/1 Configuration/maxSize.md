@@ -1,6 +1,6 @@
 ---
 id: dxDrawer.Options.maxSize
-type: Number | null
+type: Number
 default: null
 ---
 ---

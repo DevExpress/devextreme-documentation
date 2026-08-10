@@ -2,6 +2,7 @@
 id: dxGantt.Options.stripLines
 type: Array<dxGanttStripLine>
 inheritsType: dxGanttStripLine
+default: undefined
 ---
 ---
 ##### shortDescription

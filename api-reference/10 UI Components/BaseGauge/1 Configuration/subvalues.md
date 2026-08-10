@@ -1,6 +1,6 @@
 ---
 id: BaseGauge.Options.subvalues
-type: Array<Number> | undefined
+type: Array<Number>
 default: undefined
 firedEvents: optionChanged
 notUsedInTheme: 

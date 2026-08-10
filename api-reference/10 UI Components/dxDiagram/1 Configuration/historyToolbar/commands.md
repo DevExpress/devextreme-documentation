@@ -2,6 +2,7 @@
 id: dxDiagram.Options.historyToolbar.commands
 type: Array<CustomCommand, Enums.Command>
 inheritsType: ui/diagram:CustomCommand
+default: undefined
 ---
 ---
 ##### shortDescription

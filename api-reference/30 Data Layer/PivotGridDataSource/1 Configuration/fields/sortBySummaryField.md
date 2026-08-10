@@ -1,6 +1,7 @@
 ---
 id: PivotGridDataSource.Options.fields.sortBySummaryField
 type: String
+default: undefined
 ---
 ---
 ##### shortDescription

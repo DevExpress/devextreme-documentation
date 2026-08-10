@@ -1,7 +1,7 @@
 ---
 id: dxPivotGridFieldChooser.Options.state
-type: any | undefined
-default: undefined
+type: any
+default: null
 ---
 ---
 ##### shortDescription

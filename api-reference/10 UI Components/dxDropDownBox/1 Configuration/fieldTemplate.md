@@ -1,6 +1,6 @@
 ---
 id: dxDropDownBox.Options.fieldTemplate
-type: template | null
+type: template
 default: null
 dep: dxDropDownEditor.Options.fieldAddons
 ---

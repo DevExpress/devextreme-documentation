@@ -1,7 +1,7 @@
 ---
 id: BaseLegend.title.subtitle.text
-type: String | undefined
-default: undefined
+type: String
+default: null
 ---
 ---
 ##### shortDescription

@@ -1,7 +1,7 @@
 ---
 id: dxScheduler.Options.dataCellTemplate
-type: template | undefined
-default: undefined
+type: template
+default: null
 ---
 ---
 ##### shortDescription

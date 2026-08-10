@@ -3448,14 +3448,10 @@
       "vue": "Dx_ui_scheduler_AppointmentUpdatingEvent"
     },
     "_ui_scheduler_AppointmentUpdatingEvent.newData": {
-      "angular": "dxo-new-data",
-      "react": "NewData",
-      "vue": "DxNewData"
+      "vue": "new-data"
     },
     "_ui_scheduler_AppointmentUpdatingEvent.oldData": {
-      "angular": "dxo-old-data",
-      "react": "OldData",
-      "vue": "DxOldData"
+      "vue": "old-data"
     },
     "_ui_scheduler_CellClickEvent": {
       "angular": "dxo-ui-scheduler--cell-click-event",
@@ -18205,6 +18201,9 @@
     "dxSchedulerOptions.resources.fieldExpr": {
       "vue": "field-expr"
     },
+    "dxSchedulerOptions.resources.parentIdExpr": {
+      "vue": "parent-id-expr"
+    },
     "dxSchedulerOptions.resources.useColorAsDefault": {
       "vue": "use-color-as-default"
     },
@@ -19710,9 +19709,6 @@
     },
     "dxToolbarOptions.activeStateEnabled": {
       "vue": "active-state-enabled"
-    },
-    "dxToolbarOptions.allowKeyboardNavigation": {
-      "vue": "allow-keyboard-navigation"
     },
     "dxToolbarOptions.dataSource": {
       "vue": "data-source"

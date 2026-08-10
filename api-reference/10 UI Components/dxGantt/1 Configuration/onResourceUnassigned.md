@@ -1,7 +1,7 @@
 ---
 id: dxGantt.Options.onResourceUnassigned
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 ---
 ---
 ##### shortDescription

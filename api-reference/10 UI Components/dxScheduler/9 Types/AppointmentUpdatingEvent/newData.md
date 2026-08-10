@@ -1,5 +1,5 @@
 ---
-type: Object
+type: any
 uid: ui/scheduler:AppointmentUpdatingEvent.newData
 ---
 ---

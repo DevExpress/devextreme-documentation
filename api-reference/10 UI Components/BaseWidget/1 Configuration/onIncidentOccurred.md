@@ -1,6 +1,7 @@
 ---
 id: BaseWidget.Options.onIncidentOccurred
 type: function(e)
+default: null
 ---
 ---
 ##### shortDescription

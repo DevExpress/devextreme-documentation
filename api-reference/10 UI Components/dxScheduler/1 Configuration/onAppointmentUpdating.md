@@ -1,7 +1,7 @@
 ---
 id: dxScheduler.Options.onAppointmentUpdating
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 ---
 ---
 ##### shortDescription
@@ -20,10 +20,10 @@ The UI component's instance.
 ##### field(e.element): DxElement
 #include common-ref-elementparam with { element: "UI component" }
 
-##### field(e.newData): Object
+##### field(e.newData): any
 The appointment with new data.
 
-##### field(e.oldData): Object
+##### field(e.oldData): any
 The data of the appointment to be updated.
 
 ---

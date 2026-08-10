@@ -1,7 +1,7 @@
 ---
 id: dxTreeView.Options.onItemExpanded
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 ---
 ---
 ##### shortDescription

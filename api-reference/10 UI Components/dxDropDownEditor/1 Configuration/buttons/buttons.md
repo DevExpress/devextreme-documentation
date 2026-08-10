@@ -1,6 +1,6 @@
 ---
 id: dxDropDownEditor.Options.buttons
-type: Array<Enums.DropDownPredefinedButton, TextEditorButton> | undefined
+type: Array<Enums.DropDownPredefinedButton, TextEditorButton>
 default: undefined
 inheritsType: TextEditorButton
 ---

@@ -1,7 +1,7 @@
 ---
 notUsedInTheme: 
 uid: viz/chart:ArgumentAxis.breaks
-type: Array<ScaleBreak> | undefined
+type: Array<ScaleBreak>
 default: undefined
 ---
 ---

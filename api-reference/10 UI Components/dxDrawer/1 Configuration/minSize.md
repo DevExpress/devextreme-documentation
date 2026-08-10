@@ -1,6 +1,6 @@
 ---
 id: dxDrawer.Options.minSize
-type: Number | null
+type: Number
 default: null
 ---
 ---

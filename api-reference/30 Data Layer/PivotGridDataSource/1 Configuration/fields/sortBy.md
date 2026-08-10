@@ -1,6 +1,7 @@
 ---
 id: PivotGridDataSource.Options.fields.sortBy
 type: Enums.PivotGridSortBy
+default: undefined
 ---
 ---
 ##### shortDescription

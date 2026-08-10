@@ -1,6 +1,6 @@
 ---
 id: Editor.Options.onValueChanged
-type: function(e) | null
+type: function(e)
 default: null
 ---
 ---

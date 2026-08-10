@@ -1,7 +1,7 @@
 ---
 id: dxPivotGrid.Options.onCellClick
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 ---
 ---
 ##### shortDescription

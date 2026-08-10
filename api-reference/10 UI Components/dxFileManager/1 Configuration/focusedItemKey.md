@@ -1,7 +1,7 @@
 ---
 id: dxFileManager.Options.focusedItemKey
-type: String | undefined
-default: undefined
+type: String
+default: null
 ---
 ---
 ##### shortDescription

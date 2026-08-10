@@ -1,6 +1,7 @@
 ---
 id: dxFileManager.Options.itemView
 type: Object
+default: null
 ---
 ---
 ##### shortDescription

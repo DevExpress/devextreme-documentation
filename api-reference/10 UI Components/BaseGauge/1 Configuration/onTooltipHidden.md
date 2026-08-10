@@ -1,6 +1,6 @@
 ---
 id: BaseGauge.Options.onTooltipHidden
-type: function(e) | undefined
+type: function(e)
 default: null
 notUsedInTheme: 
 ---

@@ -2,6 +2,7 @@
 id: dxGantt.Options.toolbar
 type: dxGanttToolbar
 inheritsType: dxGanttToolbar
+default: null
 ---
 ---
 ##### shortDescription

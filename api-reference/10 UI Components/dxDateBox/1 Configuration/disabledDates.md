@@ -1,6 +1,6 @@
 ---
 id: dxDateBox.Options.disabledDates
-type: Array<Date> | function(data) | null
+type: Array<Date> | function(data)
 default: null
 ---
 ---

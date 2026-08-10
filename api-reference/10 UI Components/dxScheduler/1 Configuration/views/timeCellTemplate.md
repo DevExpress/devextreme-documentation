@@ -1,6 +1,7 @@
 ---
 id: dxScheduler.Options.views.timeCellTemplate
 type: template
+default: null
 ---
 ---
 ##### shortDescription

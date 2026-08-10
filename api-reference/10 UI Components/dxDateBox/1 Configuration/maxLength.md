@@ -1,6 +1,6 @@
 ---
 id: dxDateBox.Options.maxLength
-type: String | Number | null
+type: String | Number
 default: null
 ---
 ---

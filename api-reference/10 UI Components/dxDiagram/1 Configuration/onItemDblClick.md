@@ -1,7 +1,7 @@
 ---
 id: dxDiagram.Options.onItemDblClick
-type: function(e) | undefined
-default: undefined
+type: function(e)
+default: null
 ---
 ---
 ##### shortDescription

@@ -1,6 +1,6 @@
 ---
 id: dxFileManager.Options.fileSystemProvider
-type: any | null
+type: any
 default: null
 ---
 ---

@@ -1,5 +1,5 @@
 ---
-type: Array<Object>
+type: Array<AppointmentTooltipShowingAppointmentInfo>
 uid: ui/scheduler:AppointmentTooltipShowingEvent.appointments
 ---
 ---

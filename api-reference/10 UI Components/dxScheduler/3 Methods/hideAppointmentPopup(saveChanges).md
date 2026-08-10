@@ -5,7 +5,7 @@ id: dxScheduler.hideAppointmentPopup(saveChanges)
 ##### shortDescription
 Hides an appointment edit form.
 
-##### param(saveChanges): Boolean | undefined
+##### param(saveChanges): Boolean
 Specifies whether to save changes.
 
 ---

@@ -14,7 +14,7 @@ The start date of the interval.
 ##### param(endDate): Date
 The end date of the interval.
 
-##### param(appointments): Array<dxSchedulerAppointment>
+##### param(appointments): Array
 An array of appointments to filter.
 
 ---

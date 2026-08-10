@@ -1,5 +1,5 @@
 ---
-type: dxSchedulerAppointment
+type: Appointment
 uid: ui/scheduler:AppointmentDeletedEvent.appointmentData
 ---
 ---

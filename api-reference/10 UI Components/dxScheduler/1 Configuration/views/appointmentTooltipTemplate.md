@@ -10,10 +10,10 @@ Specifies a custom template for tooltips displayed when users click an appointme
 ##### param(model): ui/scheduler:AppointmentTooltipTemplateData | Object
 The data of the appointment for which the tooltip is displayed.
 
-##### field(model.appointmentData): dxSchedulerAppointment
+##### field(model.appointmentData): Appointment
 The appointment's data object.
 
-##### field(model.targetedAppointmentData): dxSchedulerAppointment
+##### field(model.targetedAppointmentData): Appointment
 The clicked appointment's data object.
 
 ##### param(itemIndex): Number

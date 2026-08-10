@@ -1,6 +1,7 @@
 ---
-type: Appointment
-uid: ui/scheduler:AppointmentAddedEvent.appointmentData
+id: dxScheduler.Options.resources.parentIdExpr
+type: String
+default: undefined
 ---
 ---
 ##### shortDescription

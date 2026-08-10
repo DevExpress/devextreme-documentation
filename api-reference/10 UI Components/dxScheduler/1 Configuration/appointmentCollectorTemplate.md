@@ -22,7 +22,7 @@ The count of hidden appointments.
 ##### field(data.isCompact): Boolean
 Indicates whether the overflow indicator is [compact](/concepts/05%20UI%20Components/Scheduler/030%20Appointments/080%20Cell%20Overflow%20Indicator.md '/Documentation/Guide/UI_Components/Scheduler/Appointments/Cell_Overflow_Indicator/').
 
-##### field(data.items): Array<dxSchedulerAppointment>
+##### field(data.items): Array
 Initially hidden appointments that are displayed after a user clicks an overflow indicator.
 
 ---

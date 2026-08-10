@@ -1,5 +1,5 @@
 ---
-type: Boolean | Promise<Boolean>
+type: Boolean | PromiseLike
 uid: ui/scheduler:AppointmentAddingEvent.cancel
 ---
 ---

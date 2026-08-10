@@ -5,10 +5,10 @@ id: dxScheduler.updateAppointment(target, appointment)
 ##### shortDescription
 Updates an appointment.
 
-##### param(target): dxSchedulerAppointment
+##### param(target): Appointment
 The appointment to be updated.
 
-##### param(appointment): dxSchedulerAppointment
+##### param(appointment): Appointment
 The appointment with updated data.
 
 ---

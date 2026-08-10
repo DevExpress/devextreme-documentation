@@ -5,7 +5,7 @@ id: dxScheduler.deleteRecurrence(appointment, date, recurrenceEditMode)
 ##### shortDescription
 Deletes a recurring appointment occurrence.
 
-##### param(appointmentData): dxSchedulerAppointment
+##### param(appointmentData): Appointment
 The initial appointment.
 
 ##### param(date): Date | String

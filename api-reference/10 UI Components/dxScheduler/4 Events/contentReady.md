@@ -1,6 +1,6 @@
 ---
-type: Appointment
-uid: ui/scheduler:AppointmentAddedEvent.appointmentData
+id: dxScheduler.contentReady
+type: eventType
 ---
 ---
 ##### shortDescription

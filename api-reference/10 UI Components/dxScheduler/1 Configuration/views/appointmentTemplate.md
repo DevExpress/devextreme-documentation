@@ -10,10 +10,10 @@ Specifies a custom template for appointments.
 ##### param(model): ui/scheduler:AppointmentTemplateData | Object
 The data of the appointment being customized.
 
-##### field(model.appointmentData): dxSchedulerAppointment
+##### field(model.appointmentData): Appointment
 The appointment's data object.
 
-##### field(model.targetedAppointmentData): dxSchedulerAppointment
+##### field(model.targetedAppointmentData): Appointment
 <!-- %field(model.targetedAppointmentData)% -->
 
 ##### param(itemIndex): Number

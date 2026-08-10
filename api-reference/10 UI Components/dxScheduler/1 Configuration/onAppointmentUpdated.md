@@ -10,7 +10,7 @@ A function that is executed after an appointment is updated in the data source.
 ##### param(e): ui/scheduler:AppointmentUpdatedEvent
 Information about the event.
 
-##### field(e.appointmentData): dxSchedulerAppointment
+##### field(e.appointmentData): Appointment
 The updated appointment's data.
 
 ##### field(e.component): {WidgetName}

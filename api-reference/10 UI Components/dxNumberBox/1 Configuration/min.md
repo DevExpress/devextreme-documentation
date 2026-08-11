@@ -5,6 +5,6 @@ default: undefined
 ---
 ---
 ##### shortDescription
-The minimum value NumberBox allows users to enter. Does not affect programmatic value changes.
+The minimum value users can enter in the NumberBox. This option does not affect programmatic value changes.
 
 ---

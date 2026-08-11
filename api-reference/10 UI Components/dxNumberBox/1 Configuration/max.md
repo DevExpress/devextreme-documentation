@@ -5,6 +5,6 @@ default: undefined
 ---
 ---
 ##### shortDescription
-The maximum value NumberBox allows users to enter. Does not affect programmatic value changes.
+The maximum value users can enter in the NumberBox. This option does not affect programmatic value changes.
 
 ---

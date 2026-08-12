@@ -9,7 +9,7 @@ Icon sources are available in the DevExtreme repository on GitHub:
 - [Font icons](https://github.com/DevExpress/DevExtreme/tree/26_1/packages/devextreme-scss/icons)
 - [SVG icons](https://github.com/DevExpress/DevExtreme/tree/26_1/packages/devextreme-scss/images/icons)
 
-The size of icon source images varies by theme:
+The source size of each icon varies by theme:
 
 - **Fluent**: 20px x 20px
 - **Material**: 24px x 24px

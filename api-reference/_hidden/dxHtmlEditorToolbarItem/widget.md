@@ -1,6 +1,6 @@
 ---
 ##### shortDescription
-The DevExtreme component to use as a toolbar item.
+The item component. Review [ToolbarItemComponent](/Documentation/ApiReference/Common_Types/#ToolbarItemComponent) for a list of supported DevExtreme components.
 
 ---
 [note]

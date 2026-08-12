@@ -11,8 +11,8 @@ Icon sources are available in the DevExtreme repository on GitHub:
 
 The source size of each icon varies by theme:
 
-- **Fluent**: 20px x 20px
-- **Material**: 24px x 24px
-- **Generic**: 18px x 18px
+- **Fluent**: 20 x 20 px
+- **Material**: 24 x 24 px
+- **Generic**: 18 x 18 px
 
 [note] If you experience icon rendering issues (such as uneven line weights) on macOS, apply the following CSS style to icon elements: `-webkit-font-smoothing: antialiased;`.

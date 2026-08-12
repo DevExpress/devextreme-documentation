@@ -18205,6 +18205,9 @@
     "dxSchedulerOptions.resources.fieldExpr": {
       "vue": "field-expr"
     },
+    "dxSchedulerOptions.resources.parentIdExpr": {
+      "vue": "parent-id-expr"
+    },
     "dxSchedulerOptions.resources.useColorAsDefault": {
       "vue": "use-color-as-default"
     },

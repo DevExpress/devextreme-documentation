@@ -4,9 +4,15 @@ The following icons are available:
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/26_1/Icons/markup.html, /Content/Applications/26_1/Icons/script.js, /Content/Applications/26_1/Icons/styles.css" style="border-radius: 12px; min-width: 540px; max-height: 700px; margin-bottom: 12px;"></div>
 
-For icon sources, refer to the DevExtreme GitHub repository:
+Icon sources are available in the DevExtreme repository on GitHub:
 
-- <a href="https://github.com/DevExpress/DevExtreme/tree/26_1/packages/devextreme-scss/icons">Font icons</a>
-- <a href="https://github.com/DevExpress/DevExtreme/tree/26_1/packages/devextreme-scss/images/icons">SVG icons</a>
+- [Font icons](https://github.com/DevExpress/DevExtreme/tree/26_1/packages/devextreme-scss/icons)
+- [SVG icons](https://github.com/DevExpress/DevExtreme/tree/26_1/packages/devextreme-scss/images/icons)
+
+The size of icon source images varies by theme:
+
+- **Fluent**: 20px x 20px
+- **Material**: 24px x 24px
+- **Generic**: 18px x 18px
 
 [note] If you experience icon rendering issues (such as uneven line weights) on macOS, apply the following CSS style to icon elements: `-webkit-font-smoothing: antialiased;`.

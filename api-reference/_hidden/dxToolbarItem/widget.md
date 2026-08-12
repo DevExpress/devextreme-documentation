@@ -4,7 +4,7 @@ type: Enums.ToolbarItemComponent
 ---
 ---
 ##### shortDescription
-The DevExtreme component to use as a Toolbar item.
+The item component. Review [ToolbarItemComponent](/Documentation/ApiReference/Common_Types/#ToolbarItemComponent) for a list of supported DevExtreme components.
 
 ---
 To configure this component, use the [options](/api-reference/_hidden/dxToolbarItem/options.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#options') object.

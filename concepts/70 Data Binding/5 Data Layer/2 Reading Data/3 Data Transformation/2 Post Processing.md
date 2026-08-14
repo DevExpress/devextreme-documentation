@@ -5,12 +5,12 @@ The following code snippet uses the **postProcess** property to perform the task
     const data = [
         { 
             subject: "First message", 
-            message: "This message has been recieved at 12/09/2013", 
+            message: "This message has been received at 12/09/2013", 
             date: new Date(2013, 08, 11) 
         },
         { 
             subject: "Today message", 
-            message: "This message has been recieved today",
+            message: "This message has been received today",
             date: new Date() 
         },
         ...

@@ -11,6 +11,9 @@ importers:
       devextreme:
         specifier: ^26.1.4
         version: 26.1.4
+      devextreme-dist:
+        specifier: ^26.1.4
+        version: 26.1.4
     devDependencies:
       '@types/node':
         specifier: ^24.0.0
@@ -158,6 +161,9 @@ packages:
 
   devexpress-gantt@4.1.69:
     resolution: {integrity: sha512-UPrVT/U7voNRYLP1Kk5DEM7OB7WT2XwDiJi6zzAZOqhFu6sCuAViwth+WVQ7HmgWDNIyCxc/+cB13qq1p244lg==}
+
+  devextreme-dist@26.1.4:
+    resolution: {integrity: sha512-jFDdQaJi+e7eaqco0xb/w6I+UnLLlr9iy1VkyQ3SXsDNuZHmzcdle0muKG/zwvT3et1CMsjUV/rcnNQz8zMWYQ==}
 
   devextreme-internal-tools@18.2.0:
     resolution: {integrity: sha512-Su5AD43mR3Tg+AtL8R0MfAlt/yvHIHDC7yqrF2drdJwCjGdELKg+vwXwRrCbeBQiugrEIqym4l3O2JAM0ZWzyQ==}
@@ -663,6 +669,8 @@ snapshots:
     dependencies:
       '@devexpress/utils': 2.1.2
       tslib: 2.3.1
+
+  devextreme-dist@26.1.4: {}
 
   devextreme-internal-tools@18.2.0:
     dependencies:

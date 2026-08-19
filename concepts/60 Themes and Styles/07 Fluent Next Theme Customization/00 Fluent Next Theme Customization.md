@@ -1,0 +1,1 @@
+Fluent Next themes are based on the DevExpress Design System and support multiple customization options.

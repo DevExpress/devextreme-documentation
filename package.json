@@ -29,9 +29,5 @@
     "rename-topics": "ts-node ./tools/updateFolder.ts",
     "rename-uid": "ts-node ./tools/rename-uid.ts ./api-reference uid-map.json"
   },
-  "dependencies": {
-    "devextreme": "^25.2.9",
-    "devextreme-dist": "^25.2.9"
-  },
   "packageManager": "pnpm@11.5.1"
 }

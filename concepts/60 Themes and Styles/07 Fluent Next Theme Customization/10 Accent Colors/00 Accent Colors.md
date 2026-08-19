@@ -1,0 +1,1 @@
+This section describes accent colors in Fluent Next themes.

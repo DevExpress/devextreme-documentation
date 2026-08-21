@@ -1,9 +1,5 @@
 Fluent Next themes ship with 11 predefined accent colors. The blue accent color is available as part of complete theme stylesheets (for instance, `dx.fluent-next.blue.light`). To apply another color, add one of the following `:root` styles to your application before you load a Fluent Next stylesheet:
 
----
-
-##### Blue
-
     <!-- tab: Blue -->
     :root {
         --dxds-primary-10: #f4f8fc;
@@ -143,8 +139,6 @@ Fluent Next themes ship with 11 predefined accent colors. The blue accent color 
         --dxds-neutral-270: #161616;
         --dxds-neutral-280: #0a0a0a;
     }
-
-##### Cool Blue
 
     <!-- tab: Cool Blue -->
     :root {
@@ -286,8 +280,6 @@ Fluent Next themes ship with 11 predefined accent colors. The blue accent color 
         --dxds-neutral-280: #0a0a0a;
     }
 
-##### Desert
-
     <!-- tab: Desert -->
     :root {
         --dxds-primary-10: #f8f7f5;
@@ -427,8 +419,6 @@ Fluent Next themes ship with 11 predefined accent colors. The blue accent color 
         --dxds-neutral-270: #161616;
         --dxds-neutral-280: #0a0a0a;
     }
-
-##### Mint
 
     <!-- tab: Mint -->
     :root {
@@ -570,8 +560,6 @@ Fluent Next themes ship with 11 predefined accent colors. The blue accent color 
         --dxds-neutral-280: #0a0a0a;
     }
 
-##### Moss
-
     <!-- tab: Moss -->
     :root {
         --dxds-primary-10: #f6f8f7;
@@ -711,8 +699,6 @@ Fluent Next themes ship with 11 predefined accent colors. The blue accent color 
         --dxds-neutral-270: #161616;
         --dxds-neutral-280: #0a0a0a;
     }
-
-##### Orchid
 
     <!-- tab: Orchid -->
     :root {
@@ -854,8 +840,6 @@ Fluent Next themes ship with 11 predefined accent colors. The blue accent color 
         --dxds-neutral-280: #0a0a0a;
     }
 
-##### Purple
-
     <!-- tab: Purple -->
     :root {
         --dxds-primary-10: #f6f7fc;
@@ -995,8 +979,6 @@ Fluent Next themes ship with 11 predefined accent colors. The blue accent color 
         --dxds-neutral-270: #161616;
         --dxds-neutral-280: #0a0a0a;
     }
-
-##### Rose
 
     <!-- tab: Rose -->
     :root {
@@ -1138,8 +1120,6 @@ Fluent Next themes ship with 11 predefined accent colors. The blue accent color 
         --dxds-neutral-280: #0a0a0a;
     }
 
-##### Rust
-
     <!-- tab: Rust -->
     :root {
         --dxds-primary-10: #fdf5f3;
@@ -1279,8 +1259,6 @@ Fluent Next themes ship with 11 predefined accent colors. The blue accent color 
         --dxds-neutral-270: #161616;
         --dxds-neutral-280: #0a0a0a;
     }
-
-##### Steel
 
     <!-- tab: Steel -->
     :root {
@@ -1422,8 +1400,6 @@ Fluent Next themes ship with 11 predefined accent colors. The blue accent color 
         --dxds-neutral-280: #0a0a0a;
     }
 
-##### Storm
-
     <!-- tab: Storm -->
     :root {
         --dxds-primary-10: #f7f7f7;
@@ -1563,5 +1539,3 @@ Fluent Next themes ship with 11 predefined accent colors. The blue accent color 
         --dxds-neutral-270: #161616;
         --dxds-neutral-280: #0a0a0a;
     }
-
----

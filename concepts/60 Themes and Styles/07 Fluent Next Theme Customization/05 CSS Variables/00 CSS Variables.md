@@ -7,7 +7,7 @@ Fluent Next themes ship with CSS variables defined in the DevExpress Design Syst
 - [Opacity](https://docs.devexpress.com/DesignSystem/405634/opacity)
 - [Shadows](https://docs.devexpress.com/DesignSystem/405690/shadows)
 
-You can apply these variables to custom elements to ensure a consistent look across your application. The following example customizes an element in multiple states (rest and hover):
+You can apply these variables to custom elements to ensure a consistent look across your application. The following example uses Design System variables for rest and hover element states:
 
     <!-- tab: CSS -->
     .info-card {
@@ -36,11 +36,37 @@ You can apply these variables to custom elements to ensure a consistent look acr
         border-color: var(--dxds-color-border-neutral-default-hovered);
     }
 
-You can also override variables to modify styles for custom elements and DevExtreme components. The following example overrides the primary color within the `.custom-primary` selector:
+You can also override variables to modify styles for DevExtreme components. This allows you to apply unique styles to different parts of your application. For instance, you can use the following [semantic variable](https://docs.devexpress.com/DesignSystem/405706/colors/color-css-variables) overrides to apply dark mode styles to parts of a light mode application:
 
     <!-- tab: CSS -->
-    .custom-primary {
-        --dxds-color-surface-primary-default-rest: var(--dxds-color-surface-utility-green-default-rest);
+    /* Using dxds variables */
+    .dark-colors-dx {
+        --dxds-color-surface-neutral-default-rest: var(--dxds-color-surface-neutral-default-inverted-rest);
+        --dxds-color-content-neutral-default-rest: var(--dxds-color-content-neutral-default-inverted-rest);
+        --dxds-color-border-neutral-default-rest: var(--dxds-color-border-neutral-default-inverted-rest);
     }
 
-Apply the `.custom-primary` class to custom elements and DevExtreme components to use the modified primary color.
+    /* Using custom colors */
+    .dark-colors-custom {
+        --dxds-color-surface-neutral-default-rest: #341A51;
+        --dxds-color-content-neutral-default-rest: #341A51;
+        --dxds-color-border-neutral-default-rest: #532982;
+    }
+
+CSS variable overrides also allow you to apply custom colors to specific parts of your application. You can define custom colors or use [utility palette](https://docs.devexpress.com/DesignSystem/405639/colors/utility-palettes/fluent-utility-palette) colors:
+
+    <!-- tab: CSS -->
+    /* Utility palette colors */
+    .dark-colors-dx {
+        --dxds-color-surface-primary-default-rest: var(--dxds-utility-yellow-40);
+        --dxds-color-content-primary-default-rest: var(--dxds-utility-yellow-50);
+        --dxds-color-border-primary-default-rest: var(--dxds-utility-yellow-60);
+    }
+
+    /* Custom colors */
+    .dark-colors-dx {
+        --dxds-color-surface-primary-default-rest: #F2C661;
+        --dxds-color-content-primary-default-rest: #EFB839;
+        --dxds-color-border-primary-default-rest: #EDAD1C;
+    }
+

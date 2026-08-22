@@ -93,12 +93,12 @@ To customize the appointment edit form further, specify the **editing**.[form](/
     <!-- tab: app.component.html -->
     <dx-scheduler>
         <dxo-scheduler-editing>
-            <dxo-editing-popup
+            <dxo-scheduler-popup
                 width="50vw"
-            ></dxo-editing-popup>
-            <dxo-editing-form
+            ></dxo-scheduler-popup>
+            <dxo-scheduler-form
                 labelMode="static"
-            ></dxo-editing-form>
+            ></dxo-scheduler-form>
         </dxo-scheduler-editing>
     </dx-scheduler>
 

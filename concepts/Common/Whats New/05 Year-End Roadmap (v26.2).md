@@ -18,10 +18,67 @@ Once you've had the opportunity to review our Year-End Roadmap, take a moment to
 
 ##### jQuery
 
+- [DevExtreme AI Agent Skills — Planned Enhancements](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#ai-skills-enhancements)
+- [Security — SBOMs and CRA Readiness](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#sbom-cra-readiness)
+- DataGrid Enhancements
+    - [Semantic Search](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#semantic-search)
+    - [AI-powered Detail View](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#ai-powered-detail-view)
+- [DevExtreme Chat — Tool Call Visualization](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#chat-tool-call-visualization)
+- [DevExtreme Scheduler — Hierarchical Resource Grouping](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#scheduler-hierarchical-resource-grouping)
+- [DevExtreme Map — OpenStreetMap (OSM) Support](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#map-osm-support)
+- [Globalization – Separate Text and Date/Number Locales](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#globalization-text-date-number-locales)
+- [Accessibility](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#accessibility)
+    - [DevExtreme PivotGrid — Keyboard Navigation and ARIA Attribute Updates](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#pivotgrid-kbn-aria-enhancements)
+    - [DevExtreme Toolbar — Enhanced Keyboard Navigation](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#toolbar-kbn-enhancements)
+- [Globalize — Deprecation Plans](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#globalize-deprecation)
+- [ASP.NET Core](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#net)
+
 ##### Angular
+
+- [DevExtreme AI Agent Skills — Planned Enhancements](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#ai-skills-enhancements)
+- [Security — SBOMs and CRA Readiness](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#sbom-cra-readiness)
+- DataGrid Enhancements
+    - [Semantic Search](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#semantic-search)
+    - [AI-powered Detail View](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#ai-powered-detail-view)
+- [DevExtreme Chat — Tool Call Visualization](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#chat-tool-call-visualization)
+- [DevExtreme Scheduler — Hierarchical Resource Grouping](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#scheduler-hierarchical-resource-grouping)
+- [DevExtreme Map — OpenStreetMap (OSM) Support](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#map-osm-support)
+- [Globalization – Separate Text and Date/Number Locales](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#globalization-text-date-number-locales)
+- [Accessibility](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#accessibility)
+    - [DevExtreme PivotGrid — Keyboard Navigation and ARIA Attribute Updates](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#pivotgrid-kbn-aria-enhancements)
+    - [DevExtreme Toolbar — Enhanced Keyboard Navigation](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#toolbar-kbn-enhancements)
+- [Globalize — Deprecation Plans](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#globalize-deprecation)
 
 ##### Vue
 
+- [DevExtreme AI Agent Skills — Planned Enhancements](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#ai-skills-enhancements)
+- [Security — SBOMs and CRA Readiness](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#sbom-cra-readiness)
+- DataGrid Enhancements
+    - [Semantic Search](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#semantic-search)
+    - [AI-powered Detail View](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#ai-powered-detail-view)
+- [DevExtreme Chat — Tool Call Visualization](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#chat-tool-call-visualization)
+- [DevExtreme Scheduler — Hierarchical Resource Grouping](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#scheduler-hierarchical-resource-grouping)
+- [DevExtreme Map — OpenStreetMap (OSM) Support](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#map-osm-support)
+- [Globalization – Separate Text and Date/Number Locales](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#globalization-text-date-number-locales)
+- [Accessibility](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#accessibility)
+    - [DevExtreme PivotGrid — Keyboard Navigation and ARIA Attribute Updates](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#pivotgrid-kbn-aria-enhancements)
+    - [DevExtreme Toolbar — Enhanced Keyboard Navigation](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#toolbar-kbn-enhancements)
+- [Globalize — Deprecation Plans](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#globalize-deprecation)
+
 ##### React
+
+- [DevExtreme AI Agent Skills — Planned Enhancements](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#ai-skills-enhancements)
+- [Security — SBOMs and CRA Readiness](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#sbom-cra-readiness)
+- DataGrid Enhancements
+    - [Semantic Search](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#semantic-search)
+    - [AI-powered Detail View](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#ai-powered-detail-view)
+- [DevExtreme Chat — Tool Call Visualization](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#chat-tool-call-visualization)
+- [DevExtreme Scheduler — Hierarchical Resource Grouping](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#scheduler-hierarchical-resource-grouping)
+- [DevExtreme Map — OpenStreetMap (OSM) Support](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#map-osm-support)
+- [Globalization – Separate Text and Date/Number Locales](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#globalization-text-date-number-locales)
+- [Accessibility](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#accessibility)
+    - [DevExtreme PivotGrid — Keyboard Navigation and ARIA Attribute Updates](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#pivotgrid-kbn-aria-enhancements)
+    - [DevExtreme Toolbar — Enhanced Keyboard Navigation](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#toolbar-kbn-enhancements)
+- [Globalize — Deprecation Plans](https://community.devexpress.com/Blogs/javascript/archive/2026/08/24/devextreme-roadmap-v26-2.aspx#globalize-deprecation)
 
 ---

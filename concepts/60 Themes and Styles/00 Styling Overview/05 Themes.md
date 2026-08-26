@@ -7,8 +7,8 @@ DevExtreme ships with a set of built-in themes:
     - Custom accent color support
     - Light and dark modes
     - Compact mode
-    - High contrast mode
     - Theme customization using public `--dxds-*` CSS variables
 
 - **Fluent, Material, and Generic**    
-Themes that use SCSS to implement styles. For more information, refer to the following help topic: [Predefined Themes]().
+Themes that use SCSS to implement styles. For more information, refer to the following help topic: [Predefined Themes](/Documentation/Guide/Themes_and_Styles/Predefined_Themes/).
+

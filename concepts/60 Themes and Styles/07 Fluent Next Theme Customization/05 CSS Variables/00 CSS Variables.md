@@ -49,7 +49,7 @@ You can also override variables to modify styles for DevExtreme components. This
     /* Using custom colors */
     .dark-colors-custom {
         --dxds-color-surface-neutral-default-rest: #341A51;
-        --dxds-color-content-neutral-default-rest: #341A51;
+        --dxds-color-content-neutral-default-rest: #F5F0FA;
         --dxds-color-border-neutral-default-rest: #532982;
     }
 
@@ -57,16 +57,15 @@ CSS variable overrides also allow you to apply custom colors to specific parts o
 
     <!-- tab: CSS -->
     /* Utility palette colors */
-    .dark-colors-dx {
+    .yellow-accent {
         --dxds-color-surface-primary-default-rest: var(--dxds-utility-yellow-40);
         --dxds-color-content-primary-default-rest: var(--dxds-utility-yellow-50);
         --dxds-color-border-primary-default-rest: var(--dxds-utility-yellow-60);
     }
 
     /* Custom colors */
-    .dark-colors-dx {
+    .yellow-accent {
         --dxds-color-surface-primary-default-rest: #F2C661;
         --dxds-color-content-primary-default-rest: #EFB839;
         --dxds-color-border-primary-default-rest: #EDAD1C;
     }
-

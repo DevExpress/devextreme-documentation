@@ -5,11 +5,30 @@ DevExtreme ships with the following themes (all trademarks or registered tradema
 - **Material Design**
 - **Generic**
 
-The following colors are available:
+The following colors are available out of the box:
 
 ## Fluent Next Themes
 
-TBA: Need to discuss images in this section w/ designer
+<div id="fluent-next-themes" class="theme-images">
+    <div>
+        <p>Blue Light</p>
+        <img src="/images/themes/fluent-default.png" />
+    </div>
+    <div>
+        <p>Blue Light Compact</p>
+        <img src="/images/themes/fluent-compact.png" />
+    </div>
+    <div>
+        <p>Blue Dark</p>
+        <img src="/images/themes/fluent-dark-default.png" />
+    </div>
+    <div>
+        <p>Blue Dark Compact</p>
+        <img src="/images/themes/fluent-dark-compact.png" />
+    </div>
+</div>
+
+[note] Fluent Next themes ship with 11 predefined accent colors and support custom accent colors. Refer to the following help topic for more information: [Fluent Next Theme Customization - Accent Colors](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Accent_Colors).
 
 ## Fluent Themes
 

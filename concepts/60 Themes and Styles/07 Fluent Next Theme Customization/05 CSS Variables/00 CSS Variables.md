@@ -36,7 +36,7 @@ You can apply these variables to custom elements to ensure a consistent look acr
         border-color: var(--dxds-color-border-neutral-default-hovered);
     }
 
-You can also override variables to modify styles for DevExtreme components. This allows you to apply unique styles to different parts of your application. For instance, you can use the following [semantic variable](https://docs.devexpress.com/DesignSystem/405706/colors/color-css-variables) overrides to apply dark mode styles to parts of a light mode application:
+CSS variable overrides also allow you to modify styles of DevExtreme components. You can define overrides for individual components or wrap multiple components in a container and define overrides on the container level. This allows you to apply unique styles to different parts of your application. For instance, you can use the following [semantic variable](https://docs.devexpress.com/DesignSystem/405706/colors/color-css-variables) overrides to apply dark mode styles to parts of a light mode application:
 
     <!-- tab: CSS -->
     /* Using dxds variables */
@@ -53,7 +53,146 @@ You can also override variables to modify styles for DevExtreme components. This
         --dxds-color-border-neutral-default-rest: #532982;
     }
 
-CSS variable overrides also allow you to apply custom colors to specific parts of your application. You can define custom colors or use [utility palette](https://docs.devexpress.com/DesignSystem/405639/colors/utility-palettes/fluent-utility-palette) colors:
+[note]
+
+Components that display content in overlays do not apply component element styles to the overlay content. Use one of the following approaches to apply styles to the overlay content:
+
+1. **Use a `.dx-swatch-*` Component Container**    
+    If you initialize an overlay component in a container with a `dx-swatch-*` class, DevExtreme nests the component's overlay wrapper in a container with the same `dx-swatch-*` class. Use this class in your override definitions to style the overlay content.    
+
+    ---
+
+    ##### jQuery
+
+        <!-- tab: index.html -->
+        <html>
+            <!-- ... -->
+            <body class="dx-viewport">
+                <div class="dx-swatch-myswatch">
+                    <div id="popup"></div> <!-- Styles defined for .dx-swatch-myswatch will apply to the Popup content -->
+                </div>
+            </body>
+        </html>
+
+        <!-- tab: index.js -->
+        $('#popup').dxPopup({
+            // ...
+        });
+
+    ##### Angular
+
+        <!-- tab: app.component.html -->
+        <div class="dx-swatch-myswatch">
+            <dx-popup></dx-popup> <!-- Styles defined for .dx-swatch-myswatch will apply to the Popup content -->
+        </div>
+
+        <!-- tab: app.component.ts -->
+        import { Component } from '@angular/core';
+
+        @Component({
+            imports: [DxPopupModule, /* ... */],
+        })
+        export class AppComponent {
+            // ...
+        }
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template>
+            <div class="dx-swatch-myswatch">
+                <DxPopup /> <!-- Styles defined for .dx-swatch-myswatch will apply to the Popup content -->
+            </div>
+        </template>
+
+        <script setup lang="ts">
+        import { DxPopup } from 'devextreme-vue/popup';
+
+        </script>
+
+    ##### React
+
+        <!-- tab: App.tsx -->
+        import { Popup } from 'devextreme-react/popup';
+
+        export default function App() {
+            return (
+                <div className="dx-swatch-myswatch">
+                    <Popup /> {/* Styles defined for .dx-swatch-myswatch will apply to the Popup content */}
+                </div>
+            );
+        }
+
+    ---
+
+    Note that DevExtreme does not generate `.dx-swatch-*` wrapper containers for components where the **container** property is defined.
+
+2. **Use wrapperAttr Properties**    
+Components that include **wrapperAttr** properties allow you to add selectors that define variable overrides to overlay wrappers:
+
+    ---
+
+    ##### jQuery
+
+        <!-- tab: index.js -->
+        $("#popup").dxPopup({
+            wrapperAttr: {
+                class: "dark-colors-custom"
+            }
+        });
+
+    ##### Angular
+
+        <!-- tab: app.component.html-->
+        <dx-popup
+            [wrapperAttr]="popupWrapperAttr"
+        ></dx-popup>
+
+        <!-- tab: app.component.ts -->
+        import { Component } from '@angular/core';
+
+        @Component({
+            imports: [DxPopupModule, /* ... */],
+        })
+        export class AppComponent {
+            popupWrapperAttr = { class: 'dark-colors-custom' };
+        }
+
+    ##### Vue
+
+        <!-- tab: App.vue -->
+        <template>
+            <DxPopup
+                :wrapper-attr="popupWrapperAttr"
+            />
+        </template>
+
+        <script setup lang="ts">
+        import { DxPopup } from 'devextreme-vue/popup';
+
+        const popupWrapperAttr = { class: 'dark-colors-custom' };
+        </script>
+
+    ##### React
+
+        <!-- tab: App.tsx -->
+        import { Popup } from 'devextreme-react/popup';
+
+        const popupWrapperAttr = { class: 'dark-colors-custom' };
+
+        export default function App() {
+            return (
+                <Popup
+                    wrapperAttr={popupWrapperAttr}
+                />
+            );
+        }
+
+    ---
+
+[/note]
+
+You can also use CSS variable overrides to apply custom colors to specific parts of your application. You can define custom colors or use [utility palette](https://docs.devexpress.com/DesignSystem/405639/colors/utility-palettes/fluent-utility-palette) colors:
 
     <!-- tab: CSS -->
     /* Utility palette colors */

@@ -5,8 +5,8 @@ Fluent Next themes ship with 11 predefined accent colors. To apply one of these 
     import 'devextreme/dist/css/accents/rose.css';
 
     <!-- tab: Non-Modular Application -->
-    <link rel="stylesheet" href="node_modules/devextreme/dist/css/dx.fluent-next.blue.light.css"></link>
-    <link rel="stylesheet" href="node_modules/devextreme/dist/css/accents/rose.css"></link>
+    <link rel="stylesheet" href="node_modules/devextreme/dist/css/dx.fluent-next.blue.light.css">
+    <link rel="stylesheet" href="node_modules/devextreme/dist/css/accents/rose.css">
 
 The following accent stylesheets are available:
 

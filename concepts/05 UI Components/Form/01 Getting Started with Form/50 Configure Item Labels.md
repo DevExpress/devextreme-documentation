@@ -70,40 +70,6 @@ The following code shows how to configure the **labelLocation** property to plac
         </dxi-form-item>
     </dx-form>
 
-    <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-    export class AppComponent {
-        employee = {
-            // ...
-        }
-    }
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxFormModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxFormModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
-
 ##### Vue
 
     <!-- tab: App.vue -->
@@ -125,45 +91,23 @@ The following code shows how to configure the **labelLocation** property to plac
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import { DxForm, DxSimpleItem, DxLabel } from 'devextreme-vue/form';
     
     const employee = {
         // ...
     };
-
-    export default {
-        components: {
-            DxForm,
-            DxSimpleItem,
-            DxLabel
-        },
-        data: {
-            return: {
-                employee
-            }
-        }
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import {
-        Form,
-        SimpleItem,
-        Label
-    } from 'devextreme-react/form';
+    <!-- tab: App.tsx -->
+    import { Form, SimpleItem, Label } from 'devextreme-react/form';
 
     const employee = {
         // ...
     };
 
-    const App = () => {
+    export default function App() {
         return (
             <Form
                 formData={employee}
@@ -181,8 +125,5 @@ The following code shows how to configure the **labelLocation** property to plac
             </Form>
         );
     }
-
-    export default App;
-
 
 ---

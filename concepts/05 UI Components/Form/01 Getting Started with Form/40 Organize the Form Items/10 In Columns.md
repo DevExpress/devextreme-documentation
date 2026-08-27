@@ -62,13 +62,7 @@ An item can span multiple columns. The example below sets the [colSpan](/api-ref
     </dx-form>
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    // ...
     export class AppComponent {
         employee = {
             name: 'John Heart',
@@ -78,26 +72,6 @@ An item can span multiple columns. The example below sets the [colSpan](/api-ref
             notes: 'John has been in the Audio/Video industry since 1990.'
         }
     }
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxFormModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxFormModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
 
 ##### Vue
 
@@ -117,9 +91,7 @@ An item can span multiple columns. The example below sets the [colSpan](/api-ref
         </DxForm>
     </template>
 
-    <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
+    <script setup lang="ts">
     import { DxForm, DxSimpleItem } from 'devextreme-vue/form';
     
     const employee = {
@@ -129,30 +101,12 @@ An item can span multiple columns. The example below sets the [colSpan](/api-ref
         officeNumber: 901,
         notes: 'John has been in the Audio/Video industry since 1990.'
     };
-
-    export default {
-        components: {
-            DxForm,
-            DxSimpleItem
-        },
-        data: {
-            return: {
-                employee
-            }
-        }
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import {
-        Form,
-        SimpleItem
-    } from 'devextreme-react/form';
+    <!-- tab: App.tsx -->
+    import { Form, SimpleItem } from 'devextreme-react/form';
 
     const employee = {
         name: 'John Heart',
@@ -162,7 +116,7 @@ An item can span multiple columns. The example below sets the [colSpan](/api-ref
         notes: 'John has been in the Audio/Video industry since 1990.'
     };
 
-    const App = () => {
+    export default function App() {
         return (
             <Form
                 formData={employee}
@@ -178,7 +132,5 @@ An item can span multiple columns. The example below sets the [colSpan](/api-ref
             </Form>
         );
     }
-
-    export default App;
 
 ---

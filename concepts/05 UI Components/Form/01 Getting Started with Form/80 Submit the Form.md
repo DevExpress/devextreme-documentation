@@ -119,13 +119,7 @@ The code below shows how to add a submit button, but does not show how to implem
     </form>
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    // ...
     export class AppComponent {
         employee = {
             // ...
@@ -136,7 +130,7 @@ The code below shows how to add a submit button, but does not show how to implem
             useSubmitBehavior: true
         }
 
-        handleSubmit = function(e) {
+        handleSubmit = function(e: Event) {
             setTimeout(() => { 
                 alert("Submitted");          
             }, 1000);
@@ -144,26 +138,6 @@ The code below shows how to add a submit button, but does not show how to implem
             e.preventDefault();
         }
     }
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxFormModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxFormModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
 
 ##### Vue
 
@@ -189,17 +163,8 @@ The code below shows how to add a submit button, but does not show how to implem
         </form>
     </template>
 
-    <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import { 
-        DxForm, 
-        DxSimpleItem, 
-        DxGroupItem,
-        DxButtonItem,
-        DxNumericRule, 
-        DxEmailRule
-    } from 'devextreme-vue/form';
+    <script setup lang="ts">
+    import { DxForm, DxSimpleItem, DxGroupItem, DxButtonItem, DxNumericRule, DxEmailRule } from 'devextreme-vue/form';
     
     const employee = {
         // ...
@@ -210,47 +175,20 @@ The code below shows how to add a submit button, but does not show how to implem
         useSubmitBehavior: true
     };
 
-    export default {
-        components: {
-            DxForm,
-            DxSimpleItem,
-            DxGroupItem,
-            DxButtonItem,
-            DxNumericRule, 
-            DxEmailRule
-        },
-        data: {
-            return: {
-                employee,
-                submitButtonOptions
-            }
-        },
-        methods: {
-            handleSubmit(e) {
-                setTimeout(() => { 
-                    alert("Submitted");          
-                }, 1000);
-                
-                e.preventDefault();
-            }
-        }
-    }
+    const handleSubmit = (e: Event): void => {
+        setTimeout(() => {
+            notify('Submitted', 'success', 2000);
+        }, 1000);
+
+        e.preventDefault();
+    };
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React, { useCallback } from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import {
-        Form,
-        SimpleItem,
-        GroupItem,
-        ButtonItem,
-        NumericRule,
-        EmailRule
-    } from 'devextreme-react/form';
+    import { Form, SimpleItem, GroupItem, ButtonItem, NumericRule, EmailRule } from 'devextreme-react/form';
 
     const employee = {
         // ...
@@ -261,10 +199,10 @@ The code below shows how to add a submit button, but does not show how to implem
         useSubmitBehavior: true
     };
 
-    const App = () => {
-        const handleSubmit = useCallback((e) => {
-            setTimeout(() => { 
-                alert("Submitted");          
+    export default function App() {
+        const handleSubmit = useCallback((e: React.FormEvent<HTMLFormElement>) => {
+            setTimeout(() => {
+                notify('Submitted', 'success', 2000);
             }, 1000);
 
             e.preventDefault();
@@ -291,8 +229,6 @@ The code below shows how to add a submit button, but does not show how to implem
             </form>
         );
     }
-
-    export default App;
 
 ---
 
@@ -358,7 +294,7 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
 
     <!-- tab: app.component.html -->
     <form action="/employee-page" id="form-container">
-        <dx-form ... >
+        <dx-form>
             <dxi-form-item 
                 itemType="button"
                 [buttonOptions]="submitButtonOptions">
@@ -367,15 +303,8 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
     </form>
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    // ...
     export class AppComponent {
-
         submitButtonOptions = {
             text: "Submit the Form",
             onClick: function() {
@@ -385,7 +314,7 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
                 else
                     alert("Form is invalid");
             }
-        }
+        };
     }
 
 ##### Vue
@@ -393,19 +322,14 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
     <!-- tab: App.vue -->
     <template>
         <form action="/employee-page" id="form-container">
-            <DxForm ... >
+            <DxForm>
                 <DxButtonItem :button-options="submitButtonOptions"/>
             </DxForm>
         </form>
     </template>
 
-    <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import { 
-        DxForm, 
-        DxButtonItem,
-    } from 'devextreme-vue/form';
+    <script setup lang="ts">
+    import { DxForm, DxButtonItem } from 'devextreme-vue/form';
 
     const submitButtonOptions = {
         text: "Submit the Form",
@@ -417,30 +341,12 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
                 alert("Form is invalid");
         }
     };
-
-    export default {
-        components: {
-            DxForm,
-            DxButtonItem
-        },
-        data: {
-            return: {
-                submitButtonOptions
-            }
-        }
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import {
-        Form,
-        ButtonItem
-    } from 'devextreme-react/form';
+    <!-- tab: App.tsx -->
+    import { Form, ButtonItem } from 'devextreme-react/form';
 
     const submitButtonOptions = {
         text: "Submit the Form",
@@ -453,7 +359,7 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
         }
     };
 
-    const App = () => {
+    export default function App() {
         return (
             <form action="/employee-page" id="form-container">
                 <Form ... >
@@ -463,24 +369,13 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
         );
     }
 
-    export default App;
-
 [note]
 
 React 19 offers a [useActionState](https://react.dev/reference/react/useActionState) hook that allows you to update the state based on a form action result. When using this hook, [clear](/api-reference/10%20UI%20Components/dxForm/3%20Methods/clear().md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#clear') the Form as the initial step when you implement an action:
 
     <!-- tab: App.js -->
     import React, { useActionState, useRef } from "react";
-    import "devextreme/dist/css/dx.light.css";
-
-    import {
-        Form,
-        SimpleItem,
-        GroupItem,
-        ButtonItem,
-        NumericRule,
-        EmailRule,
-    } from "devextreme-react/form";
+    import { Form, SimpleItem, GroupItem, ButtonItem, NumericRule, EmailRule } from "devextreme-react/form";
 
     const employee = {
         // ...

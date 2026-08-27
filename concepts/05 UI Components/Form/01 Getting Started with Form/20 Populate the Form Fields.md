@@ -35,13 +35,7 @@ The Form chooses default editors based on value types: [TextBox](/api-reference/
     </dx-form>
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    // ...
     export class AppComponent {
         employee = {
             name: 'John Heart',
@@ -49,26 +43,6 @@ The Form chooses default editors based on value types: [TextBox](/api-reference/
             hireDate: new Date(2012, 4, 13)
         }
     }
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxFormModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxFormModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
 
 ##### Vue
 
@@ -79,9 +53,7 @@ The Form chooses default editors based on value types: [TextBox](/api-reference/
         </DxForm>
     </template>
 
-    <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
+    <script setup lang="ts">
     import { DxForm } from 'devextreme-vue/form';
 
     const employee = {
@@ -89,28 +61,12 @@ The Form chooses default editors based on value types: [TextBox](/api-reference/
         officeNumber: 901,
         hireDate: new Date(2012, 4, 13)
     };
-
-    export default {
-        components: {
-            DxForm
-        },
-        data: {
-            return: {
-                employee
-            }
-        }
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import {
-        Form
-    } from 'devextreme-react/form';
+    <!-- tab: App.tsx -->
+    import { Form } from 'devextreme-react/form';
 
     const employee = {
         name: 'John Heart',
@@ -118,15 +74,13 @@ The Form chooses default editors based on value types: [TextBox](/api-reference/
         hireDate: new Date(2012, 4, 13)
     };
 
-    const App = () => {
+    export default function App() {
         return (
             <Form
                 formData={employee}>
             </Form>
         );
     }
-
-    export default App;
 
 ---
 

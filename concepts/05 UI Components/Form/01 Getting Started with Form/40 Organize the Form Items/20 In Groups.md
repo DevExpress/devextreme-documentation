@@ -83,13 +83,7 @@ The following code creates two groups, each occupies a separate column. The resu
     </dx-form>
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    // ...
     export class AppComponent {
         employee = {
             name: 'John Heart',
@@ -101,26 +95,6 @@ The following code creates two groups, each occupies a separate column. The resu
             email: 'jheart@dx-email.com'
         }
     }
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxFormModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxFormModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
 
 ##### Vue
 
@@ -144,9 +118,7 @@ The following code creates two groups, each occupies a separate column. The resu
         </DxForm>
     </template>
 
-    <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
+    <script setup lang="ts">
     import { DxForm, DxSimpleItem, DxGroupItem } from 'devextreme-vue/form';
     
     const employee = {
@@ -158,32 +130,12 @@ The following code creates two groups, each occupies a separate column. The resu
         skype: 'jheart_DX_skype',
         email: 'jheart@dx-email.com'
     };
-
-    export default {
-        components: {
-            DxForm,
-            DxSimpleItem,
-            DxGroupItem
-        },
-        data: {
-            return: {
-                employee
-            }
-        }
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import {
-        Form,
-        SimpleItem,
-        GroupItem
-    } from 'devextreme-react/form';
+    <!-- tab: App.tsx -->
+    import { Form, SimpleItem, GroupItem } from 'devextreme-react/form';
 
     const employee = {
         name: 'John Heart',
@@ -195,7 +147,7 @@ The following code creates two groups, each occupies a separate column. The resu
         email: 'jheart@dx-email.com'
     };
 
-    const App = () => {
+    export default function App() {
         return (
             <Form
                 formData={employee}
@@ -215,7 +167,5 @@ The following code creates two groups, each occupies a separate column. The resu
             </Form>
         );
     }
-
-    export default App;
 
 ---

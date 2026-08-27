@@ -66,40 +66,6 @@ The following example sets the **isRequired** property for the `Name` item. It a
         </dxi-form-item>
     </dx-form>
 
-    <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-    export class AppComponent {
-        employee = {
-            // ...
-        }
-    }
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxFormModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxFormModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
-
 ##### Vue
 
     <!-- tab: App.vue -->
@@ -117,53 +83,18 @@ The following example sets the **isRequired** property for the `Name` item. It a
         </DxForm>
     </template>
 
-    <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
+    <script setup lang="ts">
+    import { DxForm, DxSimpleItem, DxNumericRule, DxEmailRule } from 'devextreme-vue/form';
 
-    import { 
-        DxForm, 
-        DxSimpleItem, 
-        DxNumericRule, 
-        DxEmailRule 
-    } from 'devextreme-vue/form';
-    
-    const employee = {
-        // ...
-    };
-
-    export default {
-        components: {
-            DxForm,
-            DxSimpleItem,
-            DxNumericRule, 
-            DxEmailRule
-        },
-        data: {
-            return: {
-                employee
-            }
-        }
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
+    <!-- tab: App.tsx -->
+    import { Form, SimpleItem, NumericRule, EmailRule } from 'devextreme-react/form';
 
-    import {
-        Form,
-        SimpleItem,
-        NumericRule,
-        EmailRule
-    } from 'devextreme-react/form';
-
-    const employee = {
-        // ...
-    };
-
-    const App = () => {
+    // ...
+    export default function App() {
         return (
             <Form
                 formData={employee}
@@ -179,9 +110,6 @@ The following example sets the **isRequired** property for the `Name` item. It a
         );
     }
 
-    export default App;
-
 ---
-
 
 You can also call the [validate()](/api-reference/10%20UI%20Components/dxForm/3%20Methods/validate().md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#validate') Form's method to validate all editors simultaneously. 

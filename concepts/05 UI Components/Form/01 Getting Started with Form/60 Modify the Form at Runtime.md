@@ -48,7 +48,8 @@ You can change any properties of the form, its items or editors at runtime. To u
     <!-- tab: app.component.html -->
     <dx-form
         [formData]="employee"
-        [readOnly]="isFormReadOnly">
+        [readOnly]="isFormReadOnly"
+    >
         <!-- ... -->
     </dx-form>
 
@@ -58,41 +59,16 @@ You can change any properties of the form, its items or editors at runtime. To u
     </dx-check-box>
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
+    import { DxFormModule, DxCheckBoxModule } from 'devextreme-angular';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    // ...
     export class AppComponent {
         employee = {
             // ...
-        }
+        };
 
-        isFormReadOnly = false
+        isFormReadOnly = false;
     }
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxFormModule, DxCheckBoxModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxFormModule,
-            DxCheckBoxModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
 
 ##### Vue
 
@@ -103,89 +79,63 @@ You can change any properties of the form, its items or editors at runtime. To u
         <div>
             <DxForm 
                 :form-data="employee"
-                :read-only="isFormReadOnly">
+                :read-only="isFormReadOnly"
+            >
                 <!-- ... -->
             </DxForm>
             <DxCheckBox
                 text="Enable read-only mode"
-                v-model:value="isFormDisabled"
+                v-model:value="isFormReadOnly"
             />
         </div>
     </template>
 
-    <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import { DxForm, 
-        // ... 
-    } from 'devextreme-vue/form';
+    <script setup lang="ts">
+    import { ref } from 'vue';
+    import { DxForm } from 'devextreme-vue/form';
     import { DxCheckBox } from 'devextreme-vue/check-box';
     
     const employee = {
         // ...
     };
 
-    let isFormDisabled = false;
-
-    export default {
-        components: {
-            DxForm,
-            // ...
-            DxCheckBox
-        },
-        data: {
-            return: {
-                employee,
-                isFormDisabled
-            }
-        }
-    }
+    const isFormReadOnly = ref<boolean>(false);
     </script>
 
 ##### React
 
 You can change any properties of the form, its items or editors at runtime. To update a property value, bind it to a component property. The code below shows how to modify the [readOnly](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/readOnly.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly') property's value:
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React, {useState, useCallback } from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import {
-        Form,
-        // ...
-    } from 'devextreme-react/form';
-
-    import { CheckBox } from 'devextreme-react/check-box';
+    import { Form } from 'devextreme-react/form';
+    import { CheckBox, type CheckBoxTypes } from 'devextreme-react/check-box';
 
     const employee = {
         // ...
     };
 
-    const App = () => {
-        const [isFormDisabled, setIsFormDisabled] = useState(false);
+    export default function App() {
+        const [isFormReadOnly, setIsFormReadOnly] = useState<boolean>(false);
 
-        const onCheckBoxValueChanged = useCallback((e) => {
-            setIsFormDisabled(e.value);
+        const onCheckBoxValueChanged = useCallback((e: CheckBoxTypes.ValueChangedEvent) => {
+            setIsFormReadOnly(e.value);
         }, []);
 
         return (
             <div>
                 <Form
                     formData={employee}
-                    readOnly={isFormDisabled}>
+                    readOnly={isFormReadOnly}>
                     {/* ... */}
                 </Form>
-
                 <CheckBox
                     text="Enable read-only mode"
-                    value={isFormDisabled}
+                    value={isFormReadOnly}
                     onValueChanged={onCheckBoxValueChanged} 
                 />
             </div>
         );
     }
-
-    export default App;
-
 
 ---

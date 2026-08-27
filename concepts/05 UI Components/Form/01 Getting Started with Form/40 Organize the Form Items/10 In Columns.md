@@ -23,6 +23,28 @@ An item can span multiple columns. The example below sets the [colSpan](/api-ref
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Form()
+        .FormData(new {
+            Name = "John Heart",
+            Position = "CEO",
+            HireDate = new DateOnly(2012, 4, 13),
+            OfficeNumber = 901,
+            Notes = "John has been in the Audio/Video industry since 1990."
+        })
+        .ColCount(2)
+        .Items(i => {
+            i.AddSimple().DataField("Name");
+            i.AddSimple().DataField("Position");
+            i.AddSimple().DataField("HireDate");
+            i.AddSimple().DataField("OfficeNumber");
+            i.AddSimple().DataField("Notes")
+                .ColSpan("2")
+        })
+    )
+
 ##### Angular
 
     <!-- tab: app.component.html -->

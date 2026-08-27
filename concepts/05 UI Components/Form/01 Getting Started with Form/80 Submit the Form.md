@@ -55,6 +55,40 @@ The code below shows how to add a submit button, but does not show how to implem
         <div id="form"></div>
     </form>
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    <form action="/employee-page" id="form-container">
+        @(Html.DevExtreme().Form()
+            .ColCount(2)
+            .Items(FormItems => {
+                FormItems.AddGroup().ColCount(2).Caption("Personal Information").Items(MainGroupItems => {
+                    MainGroupItems.AddSimple().DataField("Name")
+                        .IsRequired(true);
+                    MainGroupItems.AddSimple().DataField("OfficeNumber").ValidationRules(r => 
+                        Rules.AddNumeric()
+                    );
+                    MainGroupItems.AddSimple().DataField("Email").ValidationRules(r => 
+                        Rules.AddEmail()
+                    );
+                });
+                FormItems.AddButton().ButtonOptions(Button => 
+                    Button.Text("Submit the Form").UseSubmitBehavior(true)
+                );
+            })
+        )
+    </form>
+
+    <script>
+        $('#form-container').on('submit', (e) => {
+            setTimeout(() => {
+                DevExpress.ui.notify('Submitted', 'success', 2000);
+            }, 1000);
+
+            e.preventDefault();
+        });
+    </script>
+
 ##### Angular
 
     <!-- tab: app.component.html -->
@@ -291,6 +325,34 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
     <form action="/employee-page" id="form-container">
         <div id="form"></div>
     </form>
+
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    <form action="/employee-page" id="form-container">
+        @(Html.DevExtreme().Form()
+            .ColCount(2)
+            .Items(FormItems => {
+                @* ... *@
+                FormItems.AddButton().ButtonOptions(Button => 
+                    Button
+                        .Text("Submit the Form")
+                        .UseSubmitBehavior(true)
+                        .OnClick("handleSubmitButtonClick")
+                );
+            })
+        )
+    </form>
+
+    <script>
+        function handleSubmitButtonClick() {
+            const validationResult = formInstance.validate(); // get Form instance beforehand
+            if (validationResult.isValid)
+                document.getElementById("form-container").submit();
+            else
+                alert("Form is invalid");
+        }
+    </script>
 
 ##### Angular
 

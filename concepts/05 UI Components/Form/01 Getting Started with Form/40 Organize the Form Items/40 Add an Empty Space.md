@@ -21,6 +21,23 @@ In the following example, the empty item [spans](/api-reference/10%20UI%20Compon
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Form()
+        .ColCount(2)
+        .Items(FormItems => {
+            FormItems.AddSimple().DataField("Name");
+            FormItems.AddSimple().DataField("Position");
+            FormItems.AddSimple().DataField("HireDate");
+            FormItems.AddSimple().DataField("OfficeNumber");
+            FormItems.AddEmpty().ColSpan(2);
+            FormItems.AddSimple().DataField("Skype");
+            FormItems.AddSimple().DataField("Phone");
+            FormItems.AddSimple().DataField("Email");
+        })
+    )
+
 ##### Angular
 
     <!-- tab: app.component.html -->

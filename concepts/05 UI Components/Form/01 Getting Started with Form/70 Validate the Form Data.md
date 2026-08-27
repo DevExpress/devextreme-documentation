@@ -31,6 +31,23 @@ The following example sets the **isRequired** property for the `Name` item. It a
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Form()
+        .ColCount(2)
+        .Items(i => {
+            i.AddSimple().DataField("Name")
+                .IsRequired(true);
+            i.AddSimple().DataField("OfficeNumber").ValidationRules(r => 
+                r.AddNumeric()
+            );
+            i.AddSimple().DataField("Email").ValidationRules(r => 
+                r.AddEmail()
+            );
+        })
+    )
+
 ##### Angular
 
     <!-- tab: app.component.html -->

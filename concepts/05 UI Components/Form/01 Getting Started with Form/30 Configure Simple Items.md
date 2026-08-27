@@ -20,6 +20,22 @@ Use the [items[]](/Documentation/ApiReference/UI_Components/dxForm/Configuration
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Form()
+        .FormData(new {
+            Name = "John Heart",
+            OfficeNumber = 901,
+            HireDate = new DateOnly(2012, 4, 13)
+        })
+        .Items(i => {
+            i.AddSimple().DataField("Name");
+            i.AddSimple().DataField("OfficeNumber");
+            i.AddSimple().DataField("HireDate").Option("disabled", true);
+        })
+    )
+
 ##### Angular
 
     <!-- tab: app.component.html -->

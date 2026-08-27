@@ -32,6 +32,25 @@ The following code shows how to configure the **labelLocation** property to plac
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Form()
+        .LabelLocation(FormLabelLocation.Top)
+        .ColCount(2)
+        .Items(i => {
+            i.AddSimple().DataField("Name");
+            i.AddSimple().DataField("Position");
+            i.AddSimple().DataField("HireDate");
+            i.AddSimple().DataField("OfficeNumber");
+            i.AddSimple().DataField("Notes")
+                .ColSpan("2")
+                .Label(l => l
+                    .Alignment(HorizontalAlignment.Center)
+                );
+        })
+    )
+
 ##### Angular
 
     <!-- tab: app.component.html -->

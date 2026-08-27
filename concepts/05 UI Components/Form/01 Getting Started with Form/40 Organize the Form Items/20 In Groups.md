@@ -32,6 +32,35 @@ The following code creates two groups, each occupies a separate column. The resu
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Form()
+        .FormData(new {
+            Name = "John Heart",
+            Position = "CEO",
+            HireDate = new DateOnly(2012, 4, 13),
+            OfficeNumber = 901,
+            Phone = "+1(213) 555-9392",
+            Skype = "jheart_DX_skype",
+            Email = "jheart@dx-email.com"
+        })
+        .ColCount(2)
+        .Items(FormItems => {
+            FormItems.AddGroup().Caption("Personal Information").Items(PersonalInfoItems => {
+                PersonalInfoItems.AddSimple().DataField("Name");
+                PersonalInfoItems.AddSimple().DataField("Position");
+                PersonalInfoItems.AddSimple().DataField("HireDate");
+                PersonalInfoItems.AddSimple().DataField("OfficeNumber");
+            });
+            FormItems.AddGroup().Caption("Contacts").Items(ContactsItems => {
+                ContactsItems.AddSimple().DataField("Phone");
+                ContactsItems.AddSimple().DataField("Skype");
+                ContactsItems.AddSimple().DataField("Email");
+            });
+        })
+    )
+
 ##### Angular
 
     <!-- tab: app.component.html -->

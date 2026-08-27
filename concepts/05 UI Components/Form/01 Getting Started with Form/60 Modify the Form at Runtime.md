@@ -23,6 +23,24 @@ You can change any properties of the form, its items or editors at runtime. Use 
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Form()
+        .ID("form")
+    )
+
+    @(Html.DevExtreme().CheckBox()
+        .Text("Enable read-only mode")
+        .OnValueChanged("handleCheckBoxValueChanged")
+    )
+
+    <script>
+        function handleCheckBoxValueChanged(e) {
+            $('#form').dxForm('instance').option('readOnly', e.value);
+        }
+    </script>
+
 ##### Angular
 
 You can change any properties of the form, its items or editors at runtime. To update a property value, bind it to a component property. The code below modifies the [readOnly](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/readOnly.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#readOnly') property's value:

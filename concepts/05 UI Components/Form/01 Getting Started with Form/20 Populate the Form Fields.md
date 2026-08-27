@@ -16,6 +16,17 @@ The Form chooses default editors based on value types: [TextBox](/api-reference/
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Form()
+        .FormData(new {
+            Name = "John Heart",
+            OfficeNumber = 901,
+            HireDate = new DateOnly(2012, 4, 13)
+        })
+    )
+
 ##### Angular
 
     <!-- tab: app.component.html -->

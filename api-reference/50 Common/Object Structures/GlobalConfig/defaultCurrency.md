@@ -50,4 +50,4 @@ The default currency. Accepts a 3-letter <a href="https://www.currency-iso.org/e
 ---
 
 #####See Also#####
-- [Localization](/concepts/Common/Localization%20and%20Globalization/00%20Overview.md)
+- [Localization](/concepts/Common/Localization%20and%20Globalization/00%20Overview.md '/Documentation/Guide/Common/Localization_and_Globalization/Overview/')

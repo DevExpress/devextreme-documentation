@@ -1,6 +1,6 @@
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl" target="_blank">Intl</a> is the ECMAScript Internationalization API. DevExtreme supports Intl for locale-aware number, date, and currency formatting out of the box.
 
-Configure locale and message dictionaries in the [UI Text Localization](/concepts/Common/Localization%20and%20Globalization/05%20UI%20Text%20Localization/00%20UI%20Text%20Localization.md) section. This topic focuses on Intl-based value formatting.
+Configure locale and message dictionaries in the [UI Text Localization](/concepts/Common/Localization%20and%20Globalization/05%20UI%20Text%20Localization/00%20UI%20Text%20Localization.md '/Documentation/Guide/Common/Localization_and_Globalization/UI_Text_Localization/') section. This topic focuses on Intl-based value formatting.
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Localization/UsingIntl/"

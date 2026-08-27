@@ -1,8 +1,8 @@
-To submit a form, add a [Button Item](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/ButtonItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/ButtonItem/') and set its [useSubmitBehavior](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/useSubmitBehavior.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#useSubmitBehavior') property to **true**. The Form can be submitted to a server only if input validation is successful. 
+Add a [Button Item](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/ButtonItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/ButtonItem/') and set its [useSubmitBehavior](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/useSubmitBehavior.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#useSubmitBehavior') property to `true` to submit a form. You can submit the Form to a server only if input validation is successful. 
 
-The **useSubmitBehavior** property requires that you wrap the dxForm in the HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">form</a> element. You should also set the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault" target="_blank">preventDefault</a> property to **true** to override the HTML form submit event as shown in the code example.
+The **useSubmitBehavior** property requires that you wrap the dxForm in the HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">form</a> element. You should also set the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault" target="_blank">preventDefault</a> property to `true` to override the HTML form submit event as shown in the code example.
 
-The code below shows how to add a submit button, but does not show how to implement the backend. The example displays a confirmation message after the timeout:
+The following code shows how to add a submit button, but does not show how to implement the backend. The example displays a confirmation message after the timeout:
 
 ---
 ##### jQuery
@@ -371,7 +371,7 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
 
 [note]
 
-React 19 offers a [useActionState](https://react.dev/reference/react/useActionState) hook that allows you to update the state based on a form action result. When using this hook, [clear](/api-reference/10%20UI%20Components/dxForm/3%20Methods/clear().md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#clear') the Form as the initial step when you implement an action:
+React 19 offers a [useActionState](https://react.dev/reference/react/useActionState) hook that allows you to update state based on a form action result. When you use this hook, [clear](/api-reference/10%20UI%20Components/dxForm/3%20Methods/clear().md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#clear') the Form as the initial step when you implement an action:
 
     <!-- tab: App.js -->
     import React, { useActionState, useRef } from "react";

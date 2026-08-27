@@ -15,15 +15,15 @@ You can apply these variables to custom elements to ensure a consistent look acr
     <!-- tab: CSS -->
     .info-card {
         /* Surface and content colors */
-        background-color: var(--dxds-color-surface-neutral-default-rest);
-        color: var(--dxds-color-content-neutral-default-rest);
+        background-color: var(--dxds-color-bg);
+        color: var(--dxds-color-content);
 
         /* Spacing */
         padding: var(--dxds-spacing-240);
         margin-bottom: var(--dxds-spacing-160);
 
         /* Borders */
-        border: var(--dxds-border-width-10) solid var(--dxds-color-border-neutral-default-rest);
+        border: var(--dxds-border-width-10) solid var(--dxds-color-border);
         border-radius: var(--dxds-border-radius-40);
 
         /* Typography */
@@ -35,8 +35,8 @@ You can apply these variables to custom elements to ensure a consistent look acr
     }
 
     .info-card:hover {
-        background-color: var(--dxds-color-surface-neutral-default-hovered);
-        border-color: var(--dxds-color-border-neutral-default-hovered);
+        background-color: var(--dxds-color-bg-hovered);
+        border-color: var(--dxds-color-border-hovered);
     }
 
 CSS variable overrides also allow you to modify styles of DevExtreme components. You can define overrides for individual components or wrap multiple components in a container and define overrides on the container level. This allows you to apply unique styles to different parts of your application. For instance, you can use the following [semantic variable](https://docs.devexpress.com/DesignSystem/405706/colors/color-css-variables) overrides to apply dark mode styles to parts of a light mode application:
@@ -44,16 +44,16 @@ CSS variable overrides also allow you to modify styles of DevExtreme components.
     <!-- tab: CSS -->
     /* Using dxds variables */
     .dark-colors-dx {
-        --dxds-color-surface-neutral-default-rest: var(--dxds-color-surface-neutral-default-inverted-rest);
-        --dxds-color-content-neutral-default-rest: var(--dxds-color-content-neutral-default-inverted-rest);
-        --dxds-color-border-neutral-default-rest: var(--dxds-color-border-neutral-default-inverted-rest);
+        --dxds-color-bg: var(--dxds-color-bg-inverted);
+        --dxds-color-content: var(--dxds-color-content-inverted);
+        --dxds-color-border: var(--dxds-color-border-inverted);
     }
 
     /* Using custom colors */
     .dark-colors-custom {
-        --dxds-color-surface-neutral-default-rest: #341A51;
-        --dxds-color-content-neutral-default-rest: #F5F0FA;
-        --dxds-color-border-neutral-default-rest: #532982;
+        --dxds-color-bg: #341A51;
+        --dxds-color-content: #F5F0FA;
+        --dxds-color-border: #532982;
     }
 
 [note]
@@ -200,14 +200,14 @@ You can also use CSS variable overrides to apply custom colors to specific parts
     <!-- tab: CSS -->
     /* Utility palette colors */
     .yellow-accent {
-        --dxds-color-surface-primary-default-rest: var(--dxds-utility-yellow-40);
-        --dxds-color-content-primary-default-rest: var(--dxds-utility-yellow-50);
-        --dxds-color-border-primary-default-rest: var(--dxds-utility-yellow-60);
+        --dxds-color-bg: var(--dxds-color-bg-yellow);
+        --dxds-color-content: var(--dxds-color-content-yellow);
+        --dxds-color-border: var(--dxds-color-bg-yellow-subtle);
     }
 
     /* Custom colors */
     .yellow-accent {
-        --dxds-color-surface-primary-default-rest: #F2C661;
-        --dxds-color-content-primary-default-rest: #EFB839;
-        --dxds-color-border-primary-default-rest: #EDAD1C;
+        --dxds-color-bg: #F2C661;
+        --dxds-color-content: #EFB839;
+        --dxds-color-border: #EDAD1C;
     }

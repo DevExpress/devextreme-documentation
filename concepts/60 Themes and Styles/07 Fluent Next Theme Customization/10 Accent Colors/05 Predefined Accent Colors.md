@@ -1,4 +1,4 @@
-Fluent Next themes ship with 11 predefined accent colors. To apply one of these colors, import an accent stylesheet after the theme:
+The DevExpress Design System defines 11 [primary color palettes](https://docs.devexpress.com/DesignSystem/405638/colors/theme-palettes/fluent-theme-palettes) for Fluent themes. These color palettes ship as stylesheets in the DevExtreme NPM package. Import one of these accent stylesheets after a Fluent Next theme to apply an accent color:
 
     <!-- tab: Modular Application -->
     import 'devextreme/dist/css/dx.fluent-next.blue.light.css';

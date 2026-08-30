@@ -27,7 +27,8 @@
     "validate-modules-guide": "dx-tools validate-modules-guide --modules-meta-path ./metadata/modules-meta.json --modules-guide-path \"./concepts/Common/Modularity/02 DevExtreme Modules Structure\"",
     "validate-links": "dx-tools convert-links --docs-root-path ./ --validation true",
     "rename-topics": "ts-node ./tools/updateFolder.ts",
-    "rename-uid": "ts-node ./tools/rename-uid.ts ./api-reference uid-map.json"
+    "rename-uid": "ts-node ./tools/rename-uid.ts ./api-reference uid-map.json",
+    "convert-links": "ts-node ./tools/convert-links.js"
   },
   "packageManager": "pnpm@11.7.0+sha512.19cc852c120c7125760f2443ee6be0ca5b40f9f50598de1a09a1f177503e010e57c23c77646e01e761de59bf874fb22a3398c33ab9691fc13eb946b6f0f4d620"
 }

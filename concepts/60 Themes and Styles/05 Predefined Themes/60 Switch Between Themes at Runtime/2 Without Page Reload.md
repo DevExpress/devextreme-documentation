@@ -110,6 +110,21 @@ You can use this approach only if the themes belong to the same group. For insta
 
 The method accepts the `data-theme` attribute value. For example, if you want to switch to `dx.generic.dark`, pass `generic.dark` (without the 'dx' prefix) as an argument in the method. For a custom theme, specify the theme you used as a base. If both of your themes are derived from the same base, get the `data-theme` value from the `font-family` value of the `dx-theme-marker` CSS class, which is located in each theme's CSS file.
 
+[note]
+
+If you use an accent color stylesheet with Fluent Next themes, note the following specifics:
+
+- You do not need to switch the accent stylesheet when switching themes. These stylesheets apply to all variations of Fluent Next (light and dark modes, standard and compact sizes).
+- Ensure you load the accent stylesheet after all Fluent Next stylesheets. We recommend that you order theme and accent stylesheets as follows:
+
+        <link rel="dx-theme" data-theme="fluent-next.blue.dark" href="css/dx.fluent-next.blue.dark.css" data-active="false">
+        <link rel="dx-theme" data-theme="fluent-next.blue.light" href="css/dx.fluent-next.blue.light.css" data-active="false">
+        <link rel="stylesheet" href="node_modules/devextreme/dist/css/accents/rose.css">
+
+Refer to the following help topic for more information about accent colors in Fluent Next themes: [Fluent Next Theme Customization - Accent Colors](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Accent_Colors).
+
+[/note]
+
 If you use SVG components, you should also call the [refreshTheme()](/api-reference/50%20Common/utils/viz/refreshTheme().md '/Documentation/ApiReference/Common/Utils/viz/#refreshTheme') method to update their theme. The following example shows how to apply the Generic Contrast theme:
 
 ---

@@ -2,4 +2,9 @@ The ThemeBuilder allows you to create custom themes based on Bootstrap or predef
 
 ![DevExtreme ThemeBuilder UI: Main View](/images/Common/ThemeBuilder/themebuilder-main@2x.png)
 
-[important] The ThemeBuilder works only with HTML-based UI components. To create a custom theme for an SVG-based UI component, follow the instructions from [this article](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Components%20Customization/15%20Themes/30%20Create%20a%20Custom%20Theme.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Components_Customization/#Themes/Create_a_Custom_Theme').
+[note]
+
+- The ThemeBuilder supports only HTML-based UI components. To create a custom theme for SVG-based UI components, refer to the following article: [SVG-Based Components Customization - Create a Custom Theme](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Components%20Customization/15%20Themes/30%20Create%20a%20Custom%20Theme.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Components_Customization/#Themes/Create_a_Custom_Theme').
+- This section does not apply to Fluent Next themes. To customize these themes, refer to the following help topic: [Fluent Next Theme Customization](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/).
+
+[/note]

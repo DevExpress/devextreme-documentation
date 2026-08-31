@@ -12,19 +12,19 @@ The following colors are available out of the box:
 <div id="fluent-next-themes" class="theme-images">
     <div>
         <p>Blue Light</p>
-        <img src="/images/themes/fluent-default.png" />
+        <img src="/images/themes/fluent-next-light.png" />
     </div>
     <div>
         <p>Blue Light Compact</p>
-        <img src="/images/themes/fluent-compact.png" />
+        <img src="/images/themes/fluent-next-light-compact.png" />
     </div>
     <div>
         <p>Blue Dark</p>
-        <img src="/images/themes/fluent-dark-default.png" />
+        <img src="/images/themes/fluent-next-dark.png" />
     </div>
     <div>
         <p>Blue Dark Compact</p>
-        <img src="/images/themes/fluent-dark-compact.png" />
+        <img src="/images/themes/fluent-next-dark-compact.png" />
     </div>
 </div>
 

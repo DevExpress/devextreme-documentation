@@ -6573,6 +6573,9 @@
     "baseWidgetAnnotationConfig.wordWrap": {
       "vue": "word-wrap"
     },
+    "baseWidgetOptions.encodeHtml": {
+      "vue": "encode-html"
+    },
     "baseWidgetOptions.export": {
       "angular": "dxo-export",
       "react": "Export",

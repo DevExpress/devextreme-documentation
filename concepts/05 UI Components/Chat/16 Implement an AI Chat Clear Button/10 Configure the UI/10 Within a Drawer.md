@@ -32,7 +32,7 @@ Define a Drawer component and configure DevExtreme [Toolbar](/Documentation/Guid
                             disabled: true,
                             // ...
                         }
-                    }, // ... ]
+                    }, /* ... */ ]
                 }),
                 $('<div>').dxChat({
                     elementAttr: { id: 'dx-ai-chat'},
@@ -198,12 +198,12 @@ Define a Drawer component and configure DevExtreme [Toolbar](/Documentation/Guid
 
 ##### React
 
-    <!-- tab: FullPage.tsx -->
+    <!-- tab: Drawer.tsx -->
     import { useCallback } from 'react';
     import { Chat, type ChatRef } from 'devextreme-react/chat';
     import { Toolbar, Item } from 'devextreme-react/toolbar';
     import { Drawer } from 'devextreme-react/drawer';
-    import { Button } from 'devextreme-react/button';
+    import { Button, type ButtonTypes } from 'devextreme-react/button';
 
     const clearButtonOptions: ButtonTypes.Properties = {
         icon: 'clearhistory',

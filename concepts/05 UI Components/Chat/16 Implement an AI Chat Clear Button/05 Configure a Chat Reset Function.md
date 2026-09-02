@@ -25,7 +25,7 @@ This tutorial uses the same approach as the following technical demo to store me
 Call `clearChat()` in the [onClick](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick) handler of a DevExtreme [Button](/Documentation/Guide/UI_Components/Button/Overview/) to clear messages. You can initialize this button in the [disabled](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#disabled) state and enable the component in Chat's [onMessageEntered](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#onMessageEntered) handler:
 
     <!-- tab: JavaScript -->
-    function handleClearChatButtonClick() {
+    function handleClearChatButtonClick(e) {
         e.component.option('disabled', true);
         clearChat(chatInstance);
     }

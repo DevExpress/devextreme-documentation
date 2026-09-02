@@ -156,7 +156,7 @@ Configure a DevExtreme Popup and define a Chat component within the Popup's [con
     <script setup lang="ts">
     import { ref } from 'vue';
     import { DxChat } from 'devextreme-vue/chat';
-    import { DxButton } from 'devextreme-vue/button';
+    import { DxButton, type DxButtonTypes } from 'devextreme-vue/button';
     import { DxPopup, DxToolbarItem } from 'devextreme-vue/popup';
 
     const clearButtonOptions = ref<DxButtonTypes.Properties>({
@@ -171,9 +171,10 @@ Configure a DevExtreme Popup and define a Chat component within the Popup's [con
 ##### React
 
     <!-- tab: Popup.tsx -->
+    import { useCallback } from 'react';
     import { Chat, type ChatRef } from 'devextreme-react/chat';
     import { Popup, ToolbarItem } from 'devextreme-react/popup';
-    import { type ButtonTypes } from 'devextreme-react/button';
+    import { Button, type ButtonTypes } from 'devextreme-react/button';
 
     const clearButtonOptions: ButtonTypes.Properties = {
         icon: 'clearhistory',

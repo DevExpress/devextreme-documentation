@@ -2,7 +2,7 @@ This section configures a **Clear Chat** button with a standalone Chat component
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/26_1/UIWidgets/Chat/AIClearButtonExamples/fullpage.html, /Content/Applications/26_1/UIWidgets/Chat/AIClearButtonExamples/fullpage.js, /Content/Applications/26_1/UIWidgets/Chat/AIClearButtonExamples/fullpage.css" style="border-radius: 12px;"></div>
 
-Define DevExtreme Chat and [Toolbar](/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/) components in a container. Configure a the clear chat button within the Toolbar as follows:
+Define DevExtreme Chat and [Toolbar](/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/) components in a container. Configure the **Clear Chat** button within the Toolbar as follows:
 
 ---
 

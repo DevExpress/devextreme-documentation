@@ -1,4 +1,4 @@
-This property should be assigned a function that returns an object with the following fields:
+Assign a function to this property that returns an object with the following fields:
 
 <table class="dx-table full-width">
     <tr>
@@ -7,7 +7,7 @@ This property should be assigned a function that returns an object with the foll
     </tr>
     <tr>
         <td><code>text</code></td>
-        <td>The tooltip's text.</td>
+        <td>The tooltip's text. The component evaluates HTML text tags such as <code>&lt;p&gt;</code>, <code>&lt;b&gt;</code>, <code>&lt;i&gt;</code>, and <code>&lt;br&gt;</code> by default. To encode this field's value, enable <a href="{basewidgetpath}/Configuration/#encodeHtml">encodeHtml</a>.</td>
     </tr>
     <tr>
         <td><code>html</code></td>

@@ -1,0 +1,33 @@
+.demo-container, .dx-drawer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 700px;
+    padding: 12px;
+}
+
+.drawer-ai-chat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    min-width: 400px;
+    background-color: var(--dx-component-color-bg);
+    border-radius: 12px;
+    border: var(--dx-border-width) solid var(--dx-color-border);
+}
+
+.drawer-ai-chat-container #ai-chat-drawer-toolbar.dx-toolbar {
+    padding: 0 20px;
+    border-bottom: var(--dx-border-width) solid var(--dx-color-border);
+}
+
+.drawer-ai-chat-container .dx-chat {
+    border: none;
+}
+
+#toggle-drawer-button {
+    display: inline-flex;
+}

@@ -1,0 +1,21 @@
+.demo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 700px;
+    padding: 12px;
+}
+
+#open-popup-button {
+    display: inline-flex;
+}
+
+#ai-chat-popup-wrapper .dx-popup-content {
+    padding: 0;
+}
+
+#dx-ai-chat {
+    border: none;
+    min-height: 300px;
+}

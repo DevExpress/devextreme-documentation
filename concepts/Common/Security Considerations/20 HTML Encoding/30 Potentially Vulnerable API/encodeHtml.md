@@ -7,7 +7,7 @@
 - [TreeList](/api-reference/_hidden/GridBaseColumn/encodeHtml.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#encodeHtml'): Cell values in specific columns
 - **DevExtreme Viz Components (Charts, Gauges, and other)**: `text` field values in **customizeTooltip** return objects
 
-The default **encodeHtml** value is `false` in Viz components. These components evaluate tags in `text` field values and transform HTML tags to [tspan](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/tspan) SVG elements. These components also strip all attributes except `style` and `class`.
+The default **encodeHtml** value is `false` in Viz components. These components evaluate tags in `text` field values and transform HTML tags to [tspan](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/tspan) SVG elements. These components also strip all attributes from evaluated tags except `style` and `class`.
 
 In the remaining components, the default **encodeHtml** value is `true`. If you set the property to `false`, these components can execute malicious code.
 

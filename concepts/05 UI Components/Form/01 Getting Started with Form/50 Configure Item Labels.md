@@ -44,7 +44,7 @@ The following code shows how to configure the **labelLocation** property to plac
             i.AddSimple().DataField("HireDate");
             i.AddSimple().DataField("OfficeNumber");
             i.AddSimple().DataField("Notes")
-                .ColSpan("2")
+                .ColSpan(2)
                 .Label(l => l
                     .Alignment(HorizontalAlignment.Center)
                 );

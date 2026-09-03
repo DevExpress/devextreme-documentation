@@ -32,13 +32,19 @@ CardView offers different keyboard controls depending on the focused component a
     </tr>
     <tr>
         <td>Left Arrow / Right Arrow</td>
-        <td>Moves focus between header panel items.</td>
+        <td>Moves focus between header panel items.<br>Moves focus between toolbar items.</td>
+    </tr>
+    <tr>
+        <td>Home<br/>End</td>
+        <td>Moves focus to the first/last item in the toolbar.</td>
     </tr>
     <tr>
         <td>Shift + Right Arrow<br/>Shift + Left Arrow</td>
         <td>Reorders the focused header item if <a href="/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#allowColumnReordering">allowColumnReordering</a> is "true".</td>
     </tr>
 </table>
+
+#include toolbar-kbn-behavior-defaultoptions-override
 
 ##### Sorting and Filtering
 

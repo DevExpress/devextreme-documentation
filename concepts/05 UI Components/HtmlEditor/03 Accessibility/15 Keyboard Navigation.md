@@ -78,7 +78,16 @@ A user can use the following keys to interact with the HTML Editor component:
     </tr>
     <tr>
         <td colspan="2">Arrow Keys</td>
-        <td>Navigate through the table</td>
+        <td>
+            <ul>
+                <li>Navigate through the table</li>
+                <li>Move focus between toolbar items (left and right arrow keys only).</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">Home<br>End</td>
+        <td>Move focus to the first/last item in the toolbar.</td>
     </tr>
     <tr>
         <td>Ctrl + Shift + Up&nbsp;Arrow</td>
@@ -171,5 +180,7 @@ Configure [customizeModules](/api-reference/10%20UI%20Components/dxHtmlEditor/1%
     }
 
 ---
+
+#include toolbar-kbn-behavior-defaultoptions-override
 
 #include common-code-register-key-handler

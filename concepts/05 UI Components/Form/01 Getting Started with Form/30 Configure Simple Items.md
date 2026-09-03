@@ -32,7 +32,10 @@ Use the [items[]](/Documentation/ApiReference/UI_Components/dxForm/Configuration
         .Items(i => {
             i.AddSimple().DataField("Name");
             i.AddSimple().DataField("OfficeNumber");
-            i.AddSimple().DataField("HireDate").Option("disabled", true);
+            i.AddSimple().DataField("HireDate").Editor(e => e
+                .DateBox()
+                .Disabled(true)
+            );
         })
     )
 

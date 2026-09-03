@@ -43,7 +43,7 @@ The following code shows how to add a submit button, but does not show how to im
 
         $("#form-container").on("submit", function(e) {
             setTimeout(function () { 
-                alert("Submitted");          
+                DevExpress.ui.notify('Submitted', 'success', 2000);
             }, 1000);
             
             e.preventDefault();
@@ -119,6 +119,8 @@ The following code shows how to add a submit button, but does not show how to im
     </form>
 
     <!-- tab: app.component.ts -->
+    import notify from 'devextreme/ui/notify';
+
     // ...
     export class AppComponent {
         employee = {
@@ -132,7 +134,7 @@ The following code shows how to add a submit button, but does not show how to im
 
         handleSubmit = function(e: Event) {
             setTimeout(() => { 
-                alert("Submitted");          
+                notify('Submitted', 'success', 2000);
             }, 1000);
             
             e.preventDefault();
@@ -165,6 +167,7 @@ The following code shows how to add a submit button, but does not show how to im
 
     <script setup lang="ts">
     import { DxForm, DxSimpleItem, DxGroupItem, DxButtonItem, DxNumericRule, DxEmailRule } from 'devextreme-vue/form';
+    import notify from 'devextreme/ui/notify';
     
     const employee = {
         // ...
@@ -189,6 +192,7 @@ The following code shows how to add a submit button, but does not show how to im
     <!-- tab: App.tsx -->
     import React, { useCallback } from 'react';
     import { Form, SimpleItem, GroupItem, ButtonItem, NumericRule, EmailRule } from 'devextreme-react/form';
+    import notify from 'devextreme/ui/notify';
 
     const employee = {
         // ...
@@ -250,7 +254,7 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
                         if (validationResult.isValid)
                             document.getElementById("form-container").submit();
                         else
-                            alert("Form is invalid");
+                            DevExpress.ui.notify('Form is Invalid', 'error', 2000);
                     }
                 }
             }]
@@ -286,7 +290,7 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
             if (validationResult.isValid)
                 document.getElementById("form-container").submit();
             else
-                alert("Form is invalid");
+                DevExpress.ui.notify('Form is Invalid', 'error', 2000);
         }
     </script>
 
@@ -303,6 +307,8 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
     </form>
 
     <!-- tab: app.component.ts -->
+    import notify from 'devextreme/ui/notify';
+
     // ...
     export class AppComponent {
         submitButtonOptions = {
@@ -312,7 +318,7 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
                 if (validationResult.isValid)
                     document.getElementById("form-container").submit();
                 else
-                    alert("Form is invalid");
+                    notify('Form is Invalid', 'error', 2000);
             }
         };
     }
@@ -330,6 +336,7 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
 
     <script setup lang="ts">
     import { DxForm, DxButtonItem } from 'devextreme-vue/form';
+    import notify from 'devextreme/ui/notify';
 
     const submitButtonOptions = {
         text: "Submit the Form",
@@ -338,7 +345,7 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
             if (validationResult.isValid)
                 document.getElementById("form-container").submit();
             else
-                alert("Form is invalid");
+                notify('Form is Invalid', 'error', 2000);
         }
     };
     </script>
@@ -347,6 +354,7 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
 
     <!-- tab: App.tsx -->
     import { Form, ButtonItem } from 'devextreme-react/form';
+    import notify from 'devextreme/ui/notify';
 
     const submitButtonOptions = {
         text: "Submit the Form",
@@ -355,7 +363,7 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
             if (validationResult.isValid)
                 document.getElementById("form-container").submit();
             else
-                alert("Form is invalid");
+                notify('Form is Invalid', 'error', 2000);
         }
     };
 

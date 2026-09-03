@@ -2,16 +2,6 @@ DataGrid offers different keyboard controls depending on which action users want
 
 ### Navigation
 
-[note]
-
-- The following DataGrid features do not support the **Ctrl+Home** and **Ctrl+End** shortcuts:
-    - Group summaries
-    - Grouped data
-    - Expanded master-detail interfaces
-- When **scrolling**.[columnRenderingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/scrolling/columnRenderingMode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#columnRenderingMode') is *"virtual"*, the [filter row](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/') does not support keyboard navigation.
-
-[/note]
-
 <table class="dx-table full-width">
     <tr>
         <th>Key</th>
@@ -19,7 +9,7 @@ DataGrid offers different keyboard controls depending on which action users want
     </tr>
     <tr>
         <td>Arrow Keys</td>
-        <td>Moves focus between cells.</td>
+        <td>Moves focus between cells.<br>Moves focus between toolbar items (left and right arrow keys only).</td>
     </tr>
     <tr>
         <td>Tab<br/>Shift + Tab</td>
@@ -39,7 +29,7 @@ DataGrid offers different keyboard controls depending on which action users want
     </tr>
     <tr>
         <td>Home<br/>End</td>
-        <td>Moves focus to the first/last cell of the current row.</td>
+        <td>Moves focus to the first/last cell of the current row.<br>Moves focus to the first/last item in the toolbar.</td>
     </tr>
     <tr>
         <td>Ctrl + Home<br/>Ctrl + End</td>
@@ -54,6 +44,22 @@ DataGrid offers different keyboard controls depending on which action users want
         <td>When focused on a cell, moves focus to the search panel if <b>searchPanel</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/searchPanel/#visible">visible</a> is "true".</td>
     </tr>
 </table>
+
+[note]
+
+- The following DataGrid features do not support the **Ctrl+Home** and **Ctrl+End** shortcuts:
+    - Group summaries
+    - Grouped data
+    - Expanded master-detail interfaces
+- When **scrolling**.[columnRenderingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/scrolling/columnRenderingMode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#columnRenderingMode') is *"virtual"*, the [filter row](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/') does not support keyboard navigation.
+- To navigate between toolbar items using **Tab**, you can disable the [allowKeyboardNavigation](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#allowKeyboardNavigation) property of the built-in DataGrid toolbar. Configure [onToolbarPreparing](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onToolbarPreparing) as follows:
+
+        <!-- tab: JavaScript -->
+        onToolbarPreparing(e) {
+            e.toolbarOptions.allowKeyboardNavigation = false;
+        }
+
+[/note]
 
 ### Column Sorting and Reordering
 

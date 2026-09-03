@@ -2,8 +2,6 @@ TreeList offers different keyboard controls depending on what action users wish 
 
 ### Navigation
 
-[note] When **scrolling**.[columnRenderingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/scrolling/columnRenderingMode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/scrolling/#columnRenderingMode') is *"virtual"*, the [filter row](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/filterRow/') does not support keyboard navigation.
-
 <table class="dx-table full-width">
     <tr>
         <th>Key</th>
@@ -11,7 +9,7 @@ TreeList offers different keyboard controls depending on what action users wish 
     </tr>
     <tr>
         <td>Arrow Keys</td>
-        <td>Moves focus between cells.</td>
+        <td>Moves focus between cells.<br>Moves focus between toolbar items (left and right arrow keys only).</td>
     </tr>
     <tr>
         <td>Tab<br/>Shift + Tab</td>
@@ -35,7 +33,7 @@ TreeList offers different keyboard controls depending on what action users wish 
     </tr>
     <tr>
         <td>Home<br/>End</td>
-        <td>Moves focus to the first/last cell of the current row.</td>
+        <td>Moves focus to the first/last cell of the current row.<br>Moves focus to the first/last item in the toolbar.</td>
     </tr>
     <tr>
         <td>Ctrl + Home<br/>Ctrl + End</td>
@@ -50,6 +48,18 @@ TreeList offers different keyboard controls depending on what action users wish 
         <td>When focused on a cell, moves focus to the search panel if <b>searchPanel</b>.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/searchPanel/#visible">visible</a> is "true".</td>
     </tr>
 </table>
+
+[note]
+
+- When **scrolling**.[columnRenderingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/scrolling/columnRenderingMode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/scrolling/#columnRenderingMode') is *"virtual"*, the [filter row](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/filterRow/') does not support keyboard navigation.
+- To navigate between toolbar items using **Tab**, you can disable the [allowKeyboardNavigation](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#allowKeyboardNavigation) property of the built-in TreeList toolbar. Configure [onToolbarPreparing](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onToolbarPreparing) as follows:
+
+        <!-- tab: JavaScript -->
+        onToolbarPreparing(e) {
+            e.toolbarOptions.allowKeyboardNavigation = false;
+        }
+
+[/note]
 
 ### Column Sorting and Reordering
 

@@ -1,8 +1,8 @@
-To submit a form, add a [Button Item](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/ButtonItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/ButtonItem/') and set its [useSubmitBehavior](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/useSubmitBehavior.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#useSubmitBehavior') property to **true**. The Form can be submitted to a server only if input validation is successful. 
+Add a [Button Item](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/ButtonItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/ButtonItem/') and set its [useSubmitBehavior](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/useSubmitBehavior.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#useSubmitBehavior') property to `true` to submit a form. You can submit the Form to a server only if input validation is successful. 
 
-The **useSubmitBehavior** property requires that you wrap the dxForm in the HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">form</a> element. You should also set the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault" target="_blank">preventDefault</a> property to **true** to override the HTML form submit event as shown in the code example.
+The **useSubmitBehavior** property requires that you wrap the dxForm in the HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">form</a> element. You should also set the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault" target="_blank">preventDefault</a> property to `true` to override the HTML form submit event as shown in the code example.
 
-The code below shows how to add a submit button, but does not show how to implement the backend. The example displays a confirmation message after the timeout:
+The following code shows how to add a submit button, but does not show how to implement the backend. The example displays a confirmation message after the timeout:
 
 ---
 ##### jQuery
@@ -43,7 +43,7 @@ The code below shows how to add a submit button, but does not show how to implem
 
         $("#form-container").on("submit", function(e) {
             setTimeout(function () { 
-                alert("Submitted");          
+                DevExpress.ui.notify('Submitted', 'success', 2000);
             }, 1000);
             
             e.preventDefault();
@@ -54,6 +54,40 @@ The code below shows how to add a submit button, but does not show how to implem
     <form action="/employee-page" id="form-container">
         <div id="form"></div>
     </form>
+
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    <form action="/employee-page" id="form-container">
+        @(Html.DevExtreme().Form()
+            .ColCount(2)
+            .Items(FormItems => {
+                FormItems.AddGroup().ColCount(2).Caption("Personal Information").Items(MainGroupItems => {
+                    MainGroupItems.AddSimple().DataField("Name")
+                        .IsRequired(true);
+                    MainGroupItems.AddSimple().DataField("OfficeNumber").ValidationRules(r => 
+                        Rules.AddNumeric()
+                    );
+                    MainGroupItems.AddSimple().DataField("Email").ValidationRules(r => 
+                        Rules.AddEmail()
+                    );
+                });
+                FormItems.AddButton().ButtonOptions(Button => 
+                    Button.Text("Submit the Form").UseSubmitBehavior(true)
+                );
+            })
+        )
+    </form>
+
+    <script>
+        $('#form-container').on('submit', (e) => {
+            setTimeout(() => {
+                DevExpress.ui.notify('Submitted', 'success', 2000);
+            }, 1000);
+
+            e.preventDefault();
+        });
+    </script>
 
 ##### Angular
 
@@ -85,13 +119,9 @@ The code below shows how to add a submit button, but does not show how to implem
     </form>
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
+    import notify from 'devextreme/ui/notify';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    // ...
     export class AppComponent {
         employee = {
             // ...
@@ -102,34 +132,14 @@ The code below shows how to add a submit button, but does not show how to implem
             useSubmitBehavior: true
         }
 
-        handleSubmit = function(e) {
+        handleSubmit = function(e: Event) {
             setTimeout(() => { 
-                alert("Submitted");          
+                notify('Submitted', 'success', 2000);
             }, 1000);
             
             e.preventDefault();
         }
     }
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxFormModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxFormModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
 
 ##### Vue
 
@@ -155,17 +165,9 @@ The code below shows how to add a submit button, but does not show how to implem
         </form>
     </template>
 
-    <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import { 
-        DxForm, 
-        DxSimpleItem, 
-        DxGroupItem,
-        DxButtonItem,
-        DxNumericRule, 
-        DxEmailRule
-    } from 'devextreme-vue/form';
+    <script setup lang="ts">
+    import { DxForm, DxSimpleItem, DxGroupItem, DxButtonItem, DxNumericRule, DxEmailRule } from 'devextreme-vue/form';
+    import notify from 'devextreme/ui/notify';
     
     const employee = {
         // ...
@@ -176,47 +178,21 @@ The code below shows how to add a submit button, but does not show how to implem
         useSubmitBehavior: true
     };
 
-    export default {
-        components: {
-            DxForm,
-            DxSimpleItem,
-            DxGroupItem,
-            DxButtonItem,
-            DxNumericRule, 
-            DxEmailRule
-        },
-        data: {
-            return: {
-                employee,
-                submitButtonOptions
-            }
-        },
-        methods: {
-            handleSubmit(e) {
-                setTimeout(() => { 
-                    alert("Submitted");          
-                }, 1000);
-                
-                e.preventDefault();
-            }
-        }
-    }
+    const handleSubmit = (e: Event): void => {
+        setTimeout(() => {
+            notify('Submitted', 'success', 2000);
+        }, 1000);
+
+        e.preventDefault();
+    };
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React, { useCallback } from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import {
-        Form,
-        SimpleItem,
-        GroupItem,
-        ButtonItem,
-        NumericRule,
-        EmailRule
-    } from 'devextreme-react/form';
+    import { Form, SimpleItem, GroupItem, ButtonItem, NumericRule, EmailRule } from 'devextreme-react/form';
+    import notify from 'devextreme/ui/notify';
 
     const employee = {
         // ...
@@ -227,10 +203,10 @@ The code below shows how to add a submit button, but does not show how to implem
         useSubmitBehavior: true
     };
 
-    const App = () => {
-        const handleSubmit = useCallback((e) => {
-            setTimeout(() => { 
-                alert("Submitted");          
+    export default function App() {
+        const handleSubmit = useCallback((e: React.FormEvent<HTMLFormElement>) => {
+            setTimeout(() => {
+                notify('Submitted', 'success', 2000);
             }, 1000);
 
             e.preventDefault();
@@ -258,8 +234,6 @@ The code below shows how to add a submit button, but does not show how to implem
         );
     }
 
-    export default App;
-
 ---
 
 Alternatively, if you want to implement custom validation logic, handle the Button [click](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') event:
@@ -280,7 +254,7 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
                         if (validationResult.isValid)
                             document.getElementById("form-container").submit();
                         else
-                            alert("Form is invalid");
+                            DevExpress.ui.notify('Form is Invalid', 'error', 2000);
                     }
                 }
             }]
@@ -292,11 +266,39 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
         <div id="form"></div>
     </form>
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    <form action="/employee-page" id="form-container">
+        @(Html.DevExtreme().Form()
+            .ColCount(2)
+            .Items(FormItems => {
+                @* ... *@
+                FormItems.AddButton().ButtonOptions(Button => 
+                    Button
+                        .Text("Submit the Form")
+                        .UseSubmitBehavior(true)
+                        .OnClick("handleSubmitButtonClick")
+                );
+            })
+        )
+    </form>
+
+    <script>
+        function handleSubmitButtonClick() {
+            const validationResult = formInstance.validate(); // get Form instance beforehand
+            if (validationResult.isValid)
+                document.getElementById("form-container").submit();
+            else
+                DevExpress.ui.notify('Form is Invalid', 'error', 2000);
+        }
+    </script>
+
 ##### Angular
 
     <!-- tab: app.component.html -->
     <form action="/employee-page" id="form-container">
-        <dx-form ... >
+        <dx-form>
             <dxi-form-item 
                 itemType="button"
                 [buttonOptions]="submitButtonOptions">
@@ -305,15 +307,10 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
     </form>
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
+    import notify from 'devextreme/ui/notify';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    // ...
     export class AppComponent {
-
         submitButtonOptions = {
             text: "Submit the Form",
             onClick: function() {
@@ -321,9 +318,9 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
                 if (validationResult.isValid)
                     document.getElementById("form-container").submit();
                 else
-                    alert("Form is invalid");
+                    notify('Form is Invalid', 'error', 2000);
             }
-        }
+        };
     }
 
 ##### Vue
@@ -331,19 +328,15 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
     <!-- tab: App.vue -->
     <template>
         <form action="/employee-page" id="form-container">
-            <DxForm ... >
+            <DxForm>
                 <DxButtonItem :button-options="submitButtonOptions"/>
             </DxForm>
         </form>
     </template>
 
-    <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import { 
-        DxForm, 
-        DxButtonItem,
-    } from 'devextreme-vue/form';
+    <script setup lang="ts">
+    import { DxForm, DxButtonItem } from 'devextreme-vue/form';
+    import notify from 'devextreme/ui/notify';
 
     const submitButtonOptions = {
         text: "Submit the Form",
@@ -352,33 +345,16 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
             if (validationResult.isValid)
                 document.getElementById("form-container").submit();
             else
-                alert("Form is invalid");
+                notify('Form is Invalid', 'error', 2000);
         }
     };
-
-    export default {
-        components: {
-            DxForm,
-            DxButtonItem
-        },
-        data: {
-            return: {
-                submitButtonOptions
-            }
-        }
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import {
-        Form,
-        ButtonItem
-    } from 'devextreme-react/form';
+    <!-- tab: App.tsx -->
+    import { Form, ButtonItem } from 'devextreme-react/form';
+    import notify from 'devextreme/ui/notify';
 
     const submitButtonOptions = {
         text: "Submit the Form",
@@ -387,11 +363,11 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
             if (validationResult.isValid)
                 document.getElementById("form-container").submit();
             else
-                alert("Form is invalid");
+                notify('Form is Invalid', 'error', 2000);
         }
     };
 
-    const App = () => {
+    export default function App() {
         return (
             <form action="/employee-page" id="form-container">
                 <Form ... >
@@ -401,24 +377,13 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
         );
     }
 
-    export default App;
-
 [note]
 
-React 19 offers a [useActionState](https://react.dev/reference/react/useActionState) hook that allows you to update the state based on a form action result. When using this hook, [clear](/api-reference/10%20UI%20Components/dxForm/3%20Methods/clear().md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#clear') the Form as the initial step when you implement an action:
+React 19 offers a [useActionState](https://react.dev/reference/react/useActionState) hook that allows you to update state based on a form action result. When you use this hook, [clear](/api-reference/10%20UI%20Components/dxForm/3%20Methods/clear().md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#clear') the Form as the initial step when you implement an action:
 
     <!-- tab: App.js -->
     import React, { useActionState, useRef } from "react";
-    import "devextreme/dist/css/dx.light.css";
-
-    import {
-        Form,
-        SimpleItem,
-        GroupItem,
-        ButtonItem,
-        NumericRule,
-        EmailRule,
-    } from "devextreme-react/form";
+    import { Form, SimpleItem, GroupItem, ButtonItem, NumericRule, EmailRule } from "devextreme-react/form";
 
     const employee = {
         // ...

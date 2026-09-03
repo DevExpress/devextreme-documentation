@@ -7,7 +7,7 @@ The following properties apply to all labels in the Form:
 - [labelLocation](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/labelLocation.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#labelLocation')
 - [showColonAfterLabel](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/showColonAfterLabel.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#showColonAfterLabel')
 
-The following code shows how to configure the **labelLocation** property to place labels on top of editors. The example sets the **label**.[alignment](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/label/alignment.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/label/#alignment') property to align the `Notes` item label's text to the center:
+The following code shows how to configure the **labelLocation** property to place labels on top of editors. The example sets the **label**.[alignment](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/label/alignment.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/label/#alignment') property to align the `Notes` item label text to the center:
 
 ![DevExtreme Form: Item Labels](/images/UiWidgets/form-getting-started-configure-labels.png)
 
@@ -32,6 +32,25 @@ The following code shows how to configure the **labelLocation** property to plac
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Form()
+        .LabelLocation(FormLabelLocation.Top)
+        .ColCount(2)
+        .Items(i => {
+            i.AddSimple().DataField("Name");
+            i.AddSimple().DataField("Position");
+            i.AddSimple().DataField("HireDate");
+            i.AddSimple().DataField("OfficeNumber");
+            i.AddSimple().DataField("Notes")
+                .ColSpan(2)
+                .Label(l => l
+                    .Alignment(HorizontalAlignment.Center)
+                );
+        })
+    )
+
 ##### Angular
 
     <!-- tab: app.component.html -->
@@ -50,40 +69,6 @@ The following code shows how to configure the **labelLocation** property to plac
             </dxo-form-label>
         </dxi-form-item>
     </dx-form>
-
-    <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-    export class AppComponent {
-        employee = {
-            // ...
-        }
-    }
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxFormModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxFormModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
 
 ##### Vue
 
@@ -106,45 +91,23 @@ The following code shows how to configure the **labelLocation** property to plac
     </template>
 
     <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import { DxForm, DxSimpleItem, DxLabel } from 'devextreme-vue/form';
     
     const employee = {
         // ...
     };
-
-    export default {
-        components: {
-            DxForm,
-            DxSimpleItem,
-            DxLabel
-        },
-        data: {
-            return: {
-                employee
-            }
-        }
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import {
-        Form,
-        SimpleItem,
-        Label
-    } from 'devextreme-react/form';
+    <!-- tab: App.tsx -->
+    import { Form, SimpleItem, Label } from 'devextreme-react/form';
 
     const employee = {
         // ...
     };
 
-    const App = () => {
+    export default function App() {
         return (
             <Form
                 formData={employee}
@@ -162,8 +125,5 @@ The following code shows how to configure the **labelLocation** property to plac
             </Form>
         );
     }
-
-    export default App;
-
 
 ---

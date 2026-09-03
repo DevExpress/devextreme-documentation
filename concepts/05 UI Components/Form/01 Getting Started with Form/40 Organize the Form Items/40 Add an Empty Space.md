@@ -1,4 +1,4 @@
-If you need to add an empty space between neighboring items, use an empty item. To create an empty item, assign "empty" to the [itemType](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/EmptyItem/itemType.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/#itemType') property. To define how many columns the empty item should span, specify the [colSpan](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/EmptyItem/colSpan.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/#colSpan') option. For a list of available properties, refer to the [Empty Item](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/EmptyItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/') section.
+Use an empty item to add an empty space between neighboring items. Assign "empty" to the [itemType](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/EmptyItem/itemType.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/#itemType') property to create an empty item, and specify the [colSpan](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/EmptyItem/colSpan.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/#colSpan') property to define how many columns the empty item should span. For a list of available properties, refer to the [Empty Item](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/EmptyItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/') section.
 
 In the following example, the empty item [spans](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/EmptyItem/colSpan.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/EmptyItem/#colSpan') two columns. The resulting layout looks as follows:
 
@@ -21,6 +21,23 @@ In the following example, the empty item [spans](/api-reference/10%20UI%20Compon
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Form()
+        .ColCount(2)
+        .Items(FormItems => {
+            FormItems.AddSimple().DataField("Name");
+            FormItems.AddSimple().DataField("Position");
+            FormItems.AddSimple().DataField("HireDate");
+            FormItems.AddSimple().DataField("OfficeNumber");
+            FormItems.AddEmpty().ColSpan(2);
+            FormItems.AddSimple().DataField("Skype");
+            FormItems.AddSimple().DataField("Phone");
+            FormItems.AddSimple().DataField("Email");
+        })
+    )
+
 ##### Angular
 
     <!-- tab: app.component.html -->
@@ -41,38 +58,12 @@ In the following example, the empty item [spans](/api-reference/10%20UI%20Compon
     </dx-form>
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    // ...
     export class AppComponent {
         employee = {
             // ...
         }
     }
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxFormModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxFormModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
 
 ##### Vue
 
@@ -94,46 +85,24 @@ In the following example, the empty item [spans](/api-reference/10%20UI%20Compon
         </DxForm>
     </template>
 
-    <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
+    <script setup lang="ts">
     import { DxForm, DxSimpleItem, DxEmptyItem } from 'devextreme-vue/form';
     
     const employee = {
         // ...
     };
-
-    export default {
-        components: {
-            DxForm,
-            DxSimpleItem,
-            DxEmptyItem
-        },
-        data: {
-            return: {
-                employee
-            }
-        }
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import {
-        Form,
-        SimpleItem,
-        EmptyItem
-    } from 'devextreme-react/form';
+    <!-- tab: App.tsx -->
+    import { Form, SimpleItem, EmptyItem } from 'devextreme-react/form';
 
     const employee = {
         // ...
     };
 
-    const App = () => {
+    export default function App() {
         return (
             <Form
                 formData={employee}
@@ -151,7 +120,5 @@ In the following example, the empty item [spans](/api-reference/10%20UI%20Compon
             </Form>
         );
     }
-
-    export default App;
 
 ---

@@ -51,6 +51,52 @@ The code also shows how to configure the tab panel's [height](/api-reference/10%
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Form()
+        .FormData(new {
+            Name = "John Heart",
+            Position = "CEO",
+            HireDate = new DateOnly(2012, 4, 13),
+            OfficeNumber = 901,
+            Phone = "+1(213) 555-9392",
+            Skype = "jheart_DX_skype",
+            Email = "jheart@dx-email.com",
+            Notes = "John has been in the Audio/Video industry since 1990."
+        })
+        .ColCount(2)
+        .Items(FormItems => {
+            FormItems.AddGroup().ColCount(2).Items(MainGroupItems => {
+                MainGroupItems.AddGroup().Caption("Employee").Items(EmployeeItems);
+                MainGroupItems.AddGroup().Caption("Personal Information").Items(PersonalInfoItems);
+            });
+        })
+    )
+
+    @functions {
+        void EmployeeItems(FormItemsFactory<object> Items) {
+            Items.AddSimple().DataField("Name").IsRequired(true);
+            Items.AddSimple().DataField("Position");
+            Items.AddSimple().DataField("HireDate");
+            Items.AddSimple().DataField("OfficeNumber");
+        }
+
+        void PersonalInfoItems(FormItemsFactory<object> Items) {
+            Items.AddTabbed().TabPanelOptions(Options => 
+                Options.Height(280)
+            ).Tabs(Tabs => {
+                Tabs.Add().Title("Contacts").Items(ContactsItems => {
+                    ContactsItems.AddSimple().DataField("Skype");
+                    ContactsItems.AddSimple().DataField("Phone");
+                    ContactsItems.AddSimple().DataField("Email");
+                });
+                Tabs.Add().Title("Note").Items(NoteItems => 
+                    NoteItems.AddSimple().DataField("Notes")
+                );
+            });
+        }
+    }
 
 ##### Angular
 
@@ -83,13 +129,7 @@ The code also shows how to configure the tab panel's [height](/api-reference/10%
     </dx-form>
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    // ...
     export class AppComponent {
         employee = {
             name: 'John Heart',
@@ -102,26 +142,6 @@ The code also shows how to configure the tab panel's [height](/api-reference/10%
             notes: 'John has been in the Audio/Video industry since 1990.'
         }
     }
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxFormModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxFormModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
 
 ##### Vue
 
@@ -152,17 +172,8 @@ The code also shows how to configure the tab panel's [height](/api-reference/10%
         </DxForm>
     </template>
 
-    <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import { 
-        DxForm, 
-        DxSimpleItem, 
-        DxGroupItem, 
-        DxTabbedItem,
-        DxTab,
-        DxTabPanelOptions 
-    } from 'devextreme-vue/form';
+    <script setup lang="ts">
+    import { DxForm, DxSimpleItem, DxGroupItem, DxTabbedItem, DxTab, DxTabPanelOptions } from 'devextreme-vue/form';
     
     const employee = {
         name: 'John Heart',
@@ -174,37 +185,12 @@ The code also shows how to configure the tab panel's [height](/api-reference/10%
         email: 'jheart@dx-email.com',
         notes: 'John has been in the Audio/Video industry since 1990.'
     };
-
-    export default {
-        components: {
-            DxForm,
-            DxSimpleItem,
-            DxGroupItem,
-            DxTabbedItem,
-            DxTabPanelOptions
-        },
-        data: {
-            return: {
-                employee
-            }
-        }
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import {
-        Form,
-        SimpleItem,
-        GroupItem,
-        TabbedItem,
-        Tab,
-        TabPanelOptions
-    } from 'devextreme-react/form';
+    <!-- tab: App.tsx -->
+    import { Form, SimpleItem, GroupItem, TabbedItem, Tab, TabPanelOptions } from 'devextreme-react/form';
 
     const employee = {
         name: 'John Heart',
@@ -217,7 +203,7 @@ The code also shows how to configure the tab panel's [height](/api-reference/10%
         notes: 'John has been in the Audio/Video industry since 1990.'
     };
 
-    const App = () => {
+    export default function App() {
         return (
             <Form
                 formData={employee}
@@ -244,7 +230,5 @@ The code also shows how to configure the tab panel's [height](/api-reference/10%
             </Form>
         );
     }
-
-    export default App;
 
 ---

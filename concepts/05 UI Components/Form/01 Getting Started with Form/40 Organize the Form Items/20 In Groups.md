@@ -1,6 +1,6 @@
-You can use groups to organize the data entry form. To add a group, create a [group item](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/GroupItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/') and nest other items in it as shown in the code below. Items of any type can be nested, including other group items. You can configure each group's layout separately. 
+You can use groups to organize the data entry form. Create a [group item](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/GroupItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/') and nest other items in it as shown in the following code to add a group. Items of any type can be nested, including other group items. You can configure each group's layout separately. 
 
-The following code creates two groups, each occupies a separate column. The resulting layout looks as follows:
+The following code creates two groups; each occupies a separate column. The resulting layout looks as follows:
 
 ![DevExtreme Form: Grouped Items](/images/UiWidgets/form-getting-started-groups.png)
 
@@ -32,6 +32,35 @@ The following code creates two groups, each occupies a separate column. The resu
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Form()
+        .FormData(new {
+            Name = "John Heart",
+            Position = "CEO",
+            HireDate = new DateOnly(2012, 4, 13),
+            OfficeNumber = 901,
+            Phone = "+1(213) 555-9392",
+            Skype = "jheart_DX_skype",
+            Email = "jheart@dx-email.com"
+        })
+        .ColCount(2)
+        .Items(FormItems => {
+            FormItems.AddGroup().Caption("Personal Information").Items(PersonalInfoItems => {
+                PersonalInfoItems.AddSimple().DataField("Name");
+                PersonalInfoItems.AddSimple().DataField("Position");
+                PersonalInfoItems.AddSimple().DataField("HireDate");
+                PersonalInfoItems.AddSimple().DataField("OfficeNumber");
+            });
+            FormItems.AddGroup().Caption("Contacts").Items(ContactsItems => {
+                ContactsItems.AddSimple().DataField("Phone");
+                ContactsItems.AddSimple().DataField("Skype");
+                ContactsItems.AddSimple().DataField("Email");
+            });
+        })
+    )
+
 ##### Angular
 
     <!-- tab: app.component.html -->
@@ -54,13 +83,7 @@ The following code creates two groups, each occupies a separate column. The resu
     </dx-form>
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    // ...
     export class AppComponent {
         employee = {
             name: 'John Heart',
@@ -72,26 +95,6 @@ The following code creates two groups, each occupies a separate column. The resu
             email: 'jheart@dx-email.com'
         }
     }
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxFormModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxFormModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
 
 ##### Vue
 
@@ -115,9 +118,7 @@ The following code creates two groups, each occupies a separate column. The resu
         </DxForm>
     </template>
 
-    <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
+    <script setup lang="ts">
     import { DxForm, DxSimpleItem, DxGroupItem } from 'devextreme-vue/form';
     
     const employee = {
@@ -129,32 +130,12 @@ The following code creates two groups, each occupies a separate column. The resu
         skype: 'jheart_DX_skype',
         email: 'jheart@dx-email.com'
     };
-
-    export default {
-        components: {
-            DxForm,
-            DxSimpleItem,
-            DxGroupItem
-        },
-        data: {
-            return: {
-                employee
-            }
-        }
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import {
-        Form,
-        SimpleItem,
-        GroupItem
-    } from 'devextreme-react/form';
+    <!-- tab: App.tsx -->
+    import { Form, SimpleItem, GroupItem } from 'devextreme-react/form';
 
     const employee = {
         name: 'John Heart',
@@ -166,7 +147,7 @@ The following code creates two groups, each occupies a separate column. The resu
         email: 'jheart@dx-email.com'
     };
 
-    const App = () => {
+    export default function App() {
         return (
             <Form
                 formData={employee}
@@ -186,7 +167,5 @@ The following code creates two groups, each occupies a separate column. The resu
             </Form>
         );
     }
-
-    export default App;
 
 ---

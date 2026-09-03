@@ -27,10 +27,14 @@
         </body>
     </html>
 
-    <!-- tab: index.css -->
-    #form {
-        height: 400px;
-    }
+##### ASP.NET Core Controls
+
+[Add DevExtreme to your ASP.NET Core application](https://docs.devexpress.com/AspNetCore/401034/devextreme-based-controls/get-started/add-controls-to-a-project) and use the following code snippet to create a Form:
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Form()
+        .ID("form")
+    )
 
 ##### Angular
 
@@ -42,40 +46,14 @@
     </dx-form>
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
+    import { DxFormModule } from 'devextreme-angular';
 
     @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
+        imports: [DxFormModule, /* ... */],
+        // ...
     })
     export class AppComponent {
 
-    }
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxFormModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxFormModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
-
-    <!-- tab: app.component.css -->
-    #form {
-        height: 400px;
     }
 
 ##### Vue
@@ -91,37 +69,22 @@
         </div>
     </template>
 
-    <script>
+    <script setup lang="ts">
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import { DxForm } from 'devextreme-vue/form';
 
-    export default {
-        components: {
-            DxForm
-        }
-    }
     </script>
-
-    <style>
-    #form {
-        height: 400px;
-    }
-    </style>
 
 ##### React
 
 [Add DevExtreme to your React application](/concepts/50%20React%20Components/05%20Add%20DevExtreme%20to%20a%20React%20Application/00%20Add%20DevExtreme%20to%20a%20React%20Application.md '/Documentation/Guide/React_Components/Add_DevExtreme_to_a_React_Application/') and use the following code to create a Form:
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
+    import { Form } from 'devextreme-react/form';
 
-    import {
-        Form
-    } from 'devextreme-react/form';
-
-    const App = () => {
+    export default function App() {
         return (
             <div className="App">
                 <Form id="form">
@@ -129,13 +92,6 @@
                 </Form>
             </div>
         );
-    }
-
-    export default App;
-
-    <!-- tab: App.css -->
-    #form {
-        height: 400px;
     }
 
 ---

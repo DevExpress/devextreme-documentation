@@ -1,4 +1,4 @@
-Use the [items[]](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#items) array to configure all form items. This array can contain strings (**formData** field names) and objects (item configurations). Use a string to create a label-editor pair (a [simple item](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/')) with default configuration. To change the default settings, declare an item configuration object: specify the [dataField](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/dataField.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#dataField') and other properties. The example below configures the `HireDate` item:
+Use the [items[]](/Documentation/ApiReference/UI_Components/dxForm/Configuration/#items) array to configure all form items. This array can contain strings (**formData** field names) and objects (item configurations). Use a string to create a label-editor pair (a [simple item](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/')) with default configuration. To change the default settings, declare an item configuration object: specify the [dataField](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/dataField.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#dataField') and other properties. The following example configures the `HireDate` item:
 
 ---
 ##### jQuery
@@ -20,6 +20,25 @@ Use the [items[]](/Documentation/ApiReference/UI_Components/dxForm/Configuration
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Form()
+        .FormData(new {
+            Name = "John Heart",
+            OfficeNumber = 901,
+            HireDate = new DateOnly(2012, 4, 13)
+        })
+        .Items(i => {
+            i.AddSimple().DataField("Name");
+            i.AddSimple().DataField("OfficeNumber");
+            i.AddSimple().DataField("HireDate").Editor(e => e
+                .DateBox()
+                .Disabled(true)
+            );
+        })
+    )
+
 ##### Angular
 
     <!-- tab: app.component.html -->
@@ -34,13 +53,7 @@ Use the [items[]](/Documentation/ApiReference/UI_Components/dxForm/Configuration
     </dx-form>
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    // ...
     export class AppComponent {
         employee = {
             name: 'John Heart',
@@ -52,26 +65,6 @@ Use the [items[]](/Documentation/ApiReference/UI_Components/dxForm/Configuration
             disabled: true
         }
     }
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxFormModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxFormModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
 
 ##### Vue
 
@@ -88,9 +81,7 @@ Use the [items[]](/Documentation/ApiReference/UI_Components/dxForm/Configuration
         </DxForm>
     </template>
 
-    <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
+    <script setup lang="ts">
     import { DxForm, DxSimpleItem } from 'devextreme-vue/form';
     
     const employee = {
@@ -102,31 +93,12 @@ Use the [items[]](/Documentation/ApiReference/UI_Components/dxForm/Configuration
     const hireDateOptions = {
         disabled: true
     };
-
-    export default {
-        components: {
-            DxForm,
-            DxSimpleItem
-        },
-        data: {
-            return: {
-                employee,
-                hireDateOptions
-            }
-        }
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import {
-        Form,
-        SimpleItem
-    } from 'devextreme-react/form';
+    <!-- tab: App.tsx -->
+    import { Form, SimpleItem } from 'devextreme-react/form';
 
     const employee = {
         name: 'John Heart',
@@ -138,7 +110,7 @@ Use the [items[]](/Documentation/ApiReference/UI_Components/dxForm/Configuration
         disabled: true
     };
 
-    const App = () => {
+    export default function App() {
         return (
             <Form formData={employee}>
                 <SimpleItem dataField="name" />
@@ -150,7 +122,5 @@ Use the [items[]](/Documentation/ApiReference/UI_Components/dxForm/Configuration
             </Form>
         );
     }
-
-    export default App;
 
 ---

@@ -29,7 +29,7 @@ This keyboard navigation behavior applies to all Toolbar instances within your a
 
 ##### jQuery
 
-    <!--JavaScript-->
+    <!-- tab: index.js -->
     DevExpress.ui.dxToolbar.defaultOptions({
         options: {
             onInitialized(e) {
@@ -42,8 +42,9 @@ This keyboard navigation behavior applies to all Toolbar instances within your a
 
 ##### Angular
 
-    <!--TypeScript-->
-    import {WidgetName}, { Properties } from "devextreme/ui/{widget_name}";
+    <!-- tab: app.component.ts -->
+    import dxToolbar from "devextreme/ui/toolbar";
+    import { type DxToolbarTypes } from "devextreme-angular/ui/toolbar";
     // ...
     export class AppComponent {
         constructor() {
@@ -61,6 +62,7 @@ This keyboard navigation behavior applies to all Toolbar instances within your a
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <script setup lang="ts">
     import dxToolbar from "devextreme/ui/toolbar";
     import { type DxToolbarTypes } from "devextreme-vue/toolbar";
@@ -78,6 +80,7 @@ This keyboard navigation behavior applies to all Toolbar instances within your a
 
 ##### React
 
+    <!-- tab: App.tsx -->
     import dxToolbar from "devextreme/ui/toolbar";
     import { type ToolbarTypes } from "devextreme-react/toolbar";
     

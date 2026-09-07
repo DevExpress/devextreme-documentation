@@ -128,7 +128,7 @@ You can use **onToolbarPreparing** to modify the keyboard navigation behavior of
 
     <!-- tab: app.component.html -->
     <dx-{widget-name}
-        (onToolbarPreparing)="handleToolbarPreparing"
+        (onToolbarPreparing)="handleToolbarPreparing($event)"
     ></dx-{widget-name}> 
 
     <!-- tab: app.component.ts -->

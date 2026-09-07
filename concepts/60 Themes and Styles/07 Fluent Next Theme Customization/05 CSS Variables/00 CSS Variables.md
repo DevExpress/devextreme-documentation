@@ -202,7 +202,7 @@ You can also use CSS variable overrides to apply custom colors to specific parts
     .yellow-accent {
         --dxds-color-bg: var(--dxds-color-bg-yellow);
         --dxds-color-content: var(--dxds-color-content-yellow);
-        --dxds-color-border: var(--dxds-color-bg-yellow-subtle);
+        --dxds-color-border: var(--dxds-color-border-yellow);
     }
 
     /* Custom colors */

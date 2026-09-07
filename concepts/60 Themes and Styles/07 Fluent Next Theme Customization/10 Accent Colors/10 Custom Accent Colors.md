@@ -1,47 +1,22 @@
-You can define a custom accent color as a CSS variable and use this color to calculate `--dxds-primary-*` variables as follows:
+Fluent Next stylesheets ship with a CSS rule that calculates [primary shades](https://docs.devexpress.com/DesignSystem/405638/colors/theme-palettes/fluent-theme-palettes#fluent-primary) from the `--dx-accent-color` variable. Assign a color to this variable to use Fluent Next themes with a custom accent color:
 
-    <!-- tab: Custom -->
-    /* Set --my-accent-color to a brand color; load after the theme stylesheet. */
+    <!-- tab: CSS -->
     :root {
-        --my-accent-color-source: var(--my-accent-color, #0f6cbd);
-        --my-accent-lightness-max: 0.975;
-        --my-accent-lightness-min: 0.15;
-        --my-accent-chroma-min: 0.01;
-
-        --dxds-primary-10: oklch(from var(--my-accent-color-source) calc(l + var(--my-accent-lightness-max) - min(l, var(--my-accent-lightness-max))) calc(c - (max(c, var(--my-accent-chroma-min)) - var(--my-accent-chroma-min))) h);
-        --dxds-primary-20: oklch(from var(--my-accent-color-source) calc(l + 8 * (var(--my-accent-lightness-max) - min(l, var(--my-accent-lightness-max))) / 9) calc(c - 8 * (max(c, var(--my-accent-chroma-min)) - var(--my-accent-chroma-min)) / 9) h);
-        --dxds-primary-30: oklch(from var(--my-accent-color-source) calc(l + 7 * (var(--my-accent-lightness-max) - min(l, var(--my-accent-lightness-max))) / 9) calc(c - 7 * (max(c, var(--my-accent-chroma-min)) - var(--my-accent-chroma-min)) / 9) h);
-        --dxds-primary-40: oklch(from var(--my-accent-color-source) calc(l + 6 * (var(--my-accent-lightness-max) - min(l, var(--my-accent-lightness-max))) / 9) calc(c - 6 * (max(c, var(--my-accent-chroma-min)) - var(--my-accent-chroma-min)) / 9) h);
-        --dxds-primary-50: oklch(from var(--my-accent-color-source) calc(l + 5 * (var(--my-accent-lightness-max) - min(l, var(--my-accent-lightness-max))) / 9) calc(c - 5 * (max(c, var(--my-accent-chroma-min)) - var(--my-accent-chroma-min)) / 9) h);
-        --dxds-primary-60: oklch(from var(--my-accent-color-source) calc(l + 4 * (var(--my-accent-lightness-max) - min(l, var(--my-accent-lightness-max))) / 9) calc(c - 4 * (max(c, var(--my-accent-chroma-min)) - var(--my-accent-chroma-min)) / 9) h);
-        --dxds-primary-70: oklch(from var(--my-accent-color-source) calc(l + 3 * (var(--my-accent-lightness-max) - min(l, var(--my-accent-lightness-max))) / 9) calc(c - 3 * (max(c, var(--my-accent-chroma-min)) - var(--my-accent-chroma-min)) / 9) h);
-        --dxds-primary-80: oklch(from var(--my-accent-color-source) calc(l + 2 * (var(--my-accent-lightness-max) - min(l, var(--my-accent-lightness-max))) / 9) calc(c - 2 * (max(c, var(--my-accent-chroma-min)) - var(--my-accent-chroma-min)) / 9) h);
-        --dxds-primary-90: oklch(from var(--my-accent-color-source) calc(l + 1 * (var(--my-accent-lightness-max) - min(l, var(--my-accent-lightness-max))) / 9) calc(c - 1 * (max(c, var(--my-accent-chroma-min)) - var(--my-accent-chroma-min)) / 9) h);
-        --dxds-primary-100: var(--my-accent-color-source);
-        --dxds-primary-110: oklch(from var(--my-accent-color-source) calc(l - 1 * (max(l, var(--my-accent-lightness-min)) - var(--my-accent-lightness-min)) / 8) calc(c - 1 * (max(c, var(--my-accent-chroma-min)) - var(--my-accent-chroma-min)) / 8) h);
-        --dxds-primary-120: oklch(from var(--my-accent-color-source) calc(l - 2 * (max(l, var(--my-accent-lightness-min)) - var(--my-accent-lightness-min)) / 8) calc(c - 2 * (max(c, var(--my-accent-chroma-min)) - var(--my-accent-chroma-min)) / 8) h);
-        --dxds-primary-130: oklch(from var(--my-accent-color-source) calc(l - 3 * (max(l, var(--my-accent-lightness-min)) - var(--my-accent-lightness-min)) / 8) calc(c - 3 * (max(c, var(--my-accent-chroma-min)) - var(--my-accent-chroma-min)) / 8) h);
-        --dxds-primary-140: oklch(from var(--my-accent-color-source) calc(l - 4 * (max(l, var(--my-accent-lightness-min)) - var(--my-accent-lightness-min)) / 8) calc(c - 4 * (max(c, var(--my-accent-chroma-min)) - var(--my-accent-chroma-min)) / 8) h);
-        --dxds-primary-150: oklch(from var(--my-accent-color-source) calc(l - 5 * (max(l, var(--my-accent-lightness-min)) - var(--my-accent-lightness-min)) / 8) calc(c - 5 * (max(c, var(--my-accent-chroma-min)) - var(--my-accent-chroma-min)) / 8) h);
-        --dxds-primary-160: oklch(from var(--my-accent-color-source) calc(l - 6 * (max(l, var(--my-accent-lightness-min)) - var(--my-accent-lightness-min)) / 8) calc(c - 6 * (max(c, var(--my-accent-chroma-min)) - var(--my-accent-chroma-min)) / 8) h);
-        --dxds-primary-170: oklch(from var(--my-accent-color-source) calc(l - 7 * (max(l, var(--my-accent-lightness-min)) - var(--my-accent-lightness-min)) / 8) calc(c - 7 * (max(c, var(--my-accent-chroma-min)) - var(--my-accent-chroma-min)) / 8) h);
-        --dxds-primary-180: oklch(from var(--my-accent-color-source) calc(l - 8 * (max(l, var(--my-accent-lightness-min)) - var(--my-accent-lightness-min)) / 8) calc(c - 8 * (max(c, var(--my-accent-chroma-min)) - var(--my-accent-chroma-min)) / 8) h);
+        --dx-accent-color: SlateBlue;
     }
+
+To ensure your app is accessible to users with vision impairments, we recommend that you specify a bright color as your custom accent. Use a color that has high contrast ratios with background and content colors in your chosen theme mode (light or dark). Avoid light or pastel colors, as well as grayscale colors such as white or black. Refer to the following help topic for more information about color contrast: [Color Contrast - Accessibility | MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Understanding_WCAG/Perceivable/Color_contrast).
 
 [note]
 
-Older browsers may not support the [oklch()](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/oklch) CSS function. To ensure these browsers do not override `--dxds-primary-*` variables with invalid values, wrap color calculations in a feature query (a [@supports](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@supports) CSS at-rule):
+- Fluent Next stylesheets use the [oklch()](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/oklch) CSS function to calculate primary color shades. Older browsers may not support this function and may revert to predefined accents.
+- Certain calculated primary shades may not have sufficient color contrast with corresponding background or content colors. You can override these shades individually as follows:
 
-    :root {
-        --my-accent-color-source: var(--my-accent-color, #0f6cbd);
-        /* ... */
-    }
-
-    @supports (color: oklch(from red l c h)) {
+        <!-- tab: CSS -->
         :root {
-            --dxds-primary-10: oklch(from var(--my-accent-color-source) calc(l + var(--my-accent-lightness-max) - min(l, var(--my-accent-lightness-max))) calc(c - (max(c, var(--my-accent-chroma-min)) - var(--my-accent-chroma-min))) h);
-            /* ... */
+            --dx-accent-color-90: SlateBlue;
         }
-    }
+    
+    To ensure shade overrides are applied, load the stylesheet where you define these overrides immediately after your Fluent Next stylesheet.
 
 [/note]

@@ -5,9 +5,9 @@
 - [PivotGrid](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/encodeHtml.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#encodeHtml'): All cell values
 - [PivotGridFieldChooser](/api-reference/10%20UI%20Components/dxPivotGridFieldChooser/1%20Configuration/encodeHtml.md '/Documentation/ApiReference/UI_Components/dxPivotGridFieldChooser/Configuration/#encodeHtml'): Header filter values
 - [TreeList](/api-reference/_hidden/GridBaseColumn/encodeHtml.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#encodeHtml'): Cell values in specific columns
-- **DevExtreme Viz Components (Charts, Gauges, and other)**: `text` field values in **customizeTooltip** return objects
+- **DevExtreme Viz Components (Charts, Gauges, and other)**: All elements that display text such as labels, legends, and tooltips.
 
-The default **encodeHtml** value is `false` in Viz components. These components evaluate tags in `text` field values and transform HTML tags to [tspan](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/tspan) SVG elements. These components also strip all attributes from evaluated tags except `style` and `class`.
+The default **encodeHtml** value is `false` in Viz components. These components transform evaluated HTML elements into [tspan](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/tspan) SVG elements and do not render inline HTML directly. All attributes are also discarded except `style` and `class`.
 
 In the remaining components, the default **encodeHtml** value is `true`. If you set the property to `false`, these components can execute malicious code.
 

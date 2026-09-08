@@ -1,11 +1,8 @@
-The Form uses the [TabPanel](/api-reference/10%20UI%20Components/dxTabPanel '/Documentation/ApiReference/UI_Components/dxTabPanel/') component to display [tabs](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/TabbedItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/'). You can specify the tab panel's settings in the [tabPanelOptions](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/TabbedItem/tabPanelOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/#tabPanelOptions') object. A tab can contain any item type.
+The Form uses the [TabPanel](/api-reference/10%20UI%20Components/dxTabPanel '/Documentation/ApiReference/UI_Components/dxTabPanel/') component to display [tabbed items](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/TabbedItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/'). You can specify the tab panel's settings in the [tabPanelOptions](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/TabbedItem/tabPanelOptions.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/#tabPanelOptions') object. A tab can contain any item type.
 
-The following example shows a tabbed item nested in the `Personal Information` group. The resulting Form looks like this:
+The following example nests a tabbed item in the `Personal Information` group and configures the tab panel's [height](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#height') property. The resulting Form looks as follows:
 
 ![DevExtreme Form: Tabbed Items](/images/UiWidgets/form-getting-started-tabs.png)
-
-The code also shows how to configure the tab panel's [height](/api-reference/10%20UI%20Components/DOMComponent/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxTabPanel/Configuration/#height') property in the **tabPanelOptions** object.
-
 
 ---
 ##### jQuery

@@ -1,8 +1,8 @@
 Add a [Button Item](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/ButtonItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/ButtonItem/') and set its [useSubmitBehavior](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/useSubmitBehavior.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#useSubmitBehavior') property to `true` to submit a form. You can submit the Form to a server only if input validation is successful. 
 
-The **useSubmitBehavior** property requires that you wrap the dxForm in the HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">form</a> element. You should also set the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault" target="_blank">preventDefault</a> property to `true` to override the HTML form submit event as shown in the code example.
+The **useSubmitBehavior** property requires that you wrap the dxForm in the HTML [form](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form) element. You should also set the [preventDefault](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault) property to `true` to override the HTML form submit event.
 
-The following code shows how to add a submit button, but does not show how to implement the backend. The example displays a confirmation message after the timeout:
+The following code snippet adds a submit button but does not implement the backend. The example displays a confirmation message after a timeout:
 
 ---
 ##### jQuery

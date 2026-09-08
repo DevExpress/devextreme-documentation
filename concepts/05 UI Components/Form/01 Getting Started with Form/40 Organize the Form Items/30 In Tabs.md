@@ -36,7 +36,7 @@ The code also shows how to configure the tab panel's [height](/api-reference/10%
                     items: [{
                         itemType: "tabbed",
                         tabPanelOptions: {
-                            height: 260
+                            height: 280
                         },
                         tabs: [{
                             title: "Contacts",
@@ -114,7 +114,7 @@ The code also shows how to configure the tab panel's [height](/api-reference/10%
         </dxi-form-item>
         <dxi-form-item itemType="group" caption="Personal Information">
             <dxi-form-item itemType="tabbed">
-                <dxo-form-tab-panel-options [height]="260">
+                <dxo-form-tab-panel-options [height]="280">
                 </dxo-form-tab-panel-options>
                 <dxi-form-tab title="Contacts">
                 	<dxi-form-item dataField="skype"></dxi-form-item>
@@ -158,7 +158,7 @@ The code also shows how to configure the tab panel's [height](/api-reference/10%
             </DxGroupItem>
             <DxGroupItem caption="Personal Information">
                 <DxTabbedItem>
-                    <DxTabPanelOptions :height="260"/>
+                    <DxTabPanelOptions :height="280"/>
                     <DxTab title="Contacts">
                         <DxSimpleItem data-field="skype"/>
                         <DxSimpleItem data-field="phone"/>
@@ -216,7 +216,7 @@ The code also shows how to configure the tab panel's [height](/api-reference/10%
                 </GroupItem>
                 <GroupItem caption="Personal Information">
                     <TabbedItem>
-                        <TabPanelOptions height={260} />
+                        <TabPanelOptions height={280} />
                         <Tab title="Contacts">
                             <SimpleItem dataField="phone" />
                             <SimpleItem dataField="skype" />

@@ -11,6 +11,10 @@ This topic lists the oldest supported versions of React for major DevExtreme rel
             <td>react_version_26_2</td>
         </tr>
         <tr>
+            <td>v26.1.x</td>
+            <td>react_version_26_1</td>
+        </tr>
+        <tr>
             <td>v25.2.x</td>
             <td>react_version_25_2</td>
         </tr>
@@ -30,6 +34,12 @@ This topic lists the oldest supported versions of React for major DevExtreme rel
             <td>v23.2.x</td>
             <td>react_version_23_2</td>
         </tr>
+    </table>
+    <table class="dx-table" style="display: inline-block; vertical-align: top;">
+        <tr>
+            <th>DevExtreme</th>
+            <th>React</th>
+        </tr>
         <tr>
             <td>v23.1.x</td>
             <td>react_version_23_1</td>
@@ -37,12 +47,6 @@ This topic lists the oldest supported versions of React for major DevExtreme rel
         <tr>
             <td>v22.2.x</td>
             <td>react_version_22_2</td>
-        </tr>
-    </table>
-    <table class="dx-table" style="display: inline-block; vertical-align: top;">
-        <tr>
-            <th>DevExtreme</th>
-            <th>React</th>
         </tr>
         <tr>
             <td>v22.1.x</td>
@@ -63,18 +67,6 @@ This topic lists the oldest supported versions of React for major DevExtreme rel
         <tr>
             <td>v20.1.x</td>
             <td>react_version_20_1</td>
-        </tr>
-        <tr>
-            <td>v19.2.x</td>
-            <td>react_version_19_2</td>
-        </tr>
-        <tr>
-            <td>v19.1.x</td>
-            <td>react_version_19_1</td>
-        </tr>
-        <tr>
-            <td>v18.2.x</td>
-            <td>react_version_18_2</td>
         </tr>
     </table>
 </div>

@@ -1,3 +1,5 @@
-From v18.1, the DevExtreme hybrid mobile-related tools, including mobile tools for Visual Studio, are deprecated. See <a href="https://community.devexpress.com/blogs/aspnet/archive/2018/02/26/devextreme-hybrid-mobile-tools-deprecation-in-v18-1.aspx" target="_blank">this blog post</a> for more information. The mobile tools documentation was removed from the newer versions, but you can still find it [in the older versions](/Documentation/17_2/Guide/VS_Integration/Project_Templates/).
+Starting with v18.1, DevExtreme hybrid mobile tools have been deprecated, including mobile tools for Visual Studio. See the following blog post for more information: [DevExtreme Hybrid Mobile Tools Deprecation in v18.1](https://community.devexpress.com/blogs/aspnet/archive/2018/02/26/devextreme-hybrid-mobile-tools-deprecation-in-v18-1.aspx).
 
-<a href="https://docs.devexpress.com/DevExtremeAspNetMvc/400702/get-started/configure-a-project" target="_blank">Visual Studio tools for DevExtreme ASP.NET MVC Controls</a> remain in active development. 
+Related information has been removed from the DevExtreme documentation but remains accessible in the [devextreme-documentation](https://github.com/DevExpress/devextreme-documentation/tree/17_2/concepts/50%20VS%20Integration) repository on GitHub.
+
+[Visual Studio tools for DevExtreme ASP.NET MVC Controls](https://docs.devexpress.com/DevExtremeAspNetMvc/400702/get-started/configure-a-project) remain in active development.

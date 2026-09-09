@@ -34,15 +34,15 @@ This topic lists the oldest supported versions of Vue for major DevExtreme relea
             <td>v23.1.x</td>
             <td>vue_version_23_1</td>
         </tr>
-        <tr>
-            <td>v22.2.x</td>
-            <td>vue_version_22_2</td>
-        </tr>
     </table>
     <table class="dx-table" style="display: inline-block; vertical-align: top;">
         <tr>
             <th>DevExtreme</th>
             <th>Vue</th>
+        </tr>
+        <tr>
+            <td>v22.2.x</td>
+            <td>vue_version_22_2</td>
         </tr>
         <tr>
             <td>v22.1.x</td>
@@ -63,18 +63,6 @@ This topic lists the oldest supported versions of Vue for major DevExtreme relea
         <tr>
             <td>v20.1.x</td>
             <td>vue_version_20_1</td>
-        </tr>
-        <tr>
-            <td>v19.2.x</td>
-            <td>vue_version_19_2</td>
-        </tr>
-        <tr>
-            <td>v19.1.x</td>
-            <td>vue_version_19_1</td>
-        </tr>
-        <tr>
-            <td>v18.2.x</td>
-            <td>vue_version_18_2</td>
         </tr>
     </table>
 </div>

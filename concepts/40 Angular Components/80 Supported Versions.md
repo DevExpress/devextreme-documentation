@@ -36,6 +36,12 @@ This topic lists supported versions of Angular (version range or oldest versions
             <td>v23.1.x</td>
             <td>angular_version_23_1</td>
         </tr>
+    </table>
+    <table class="dx-table" style="display: inline-block; vertical-align: top;">
+        <tr>
+            <th>DevExtreme</th>
+            <th>Angular</th>
+        </tr>
         <tr>
             <td>v22.2.x</td>
             <td>angular_version_22_2</td>
@@ -43,12 +49,6 @@ This topic lists supported versions of Angular (version range or oldest versions
         <tr>
             <td>v22.1.x</td>
             <td>angular_version_22_1</td>
-        </tr>
-    </table>
-    <table class="dx-table" style="display: inline-block; vertical-align: top;">
-        <tr>
-            <th>DevExtreme</th>
-            <th>Angular</th>
         </tr>
         <tr>
             <td>v21.2.x</td>
@@ -65,26 +65,6 @@ This topic lists supported versions of Angular (version range or oldest versions
         <tr>
             <td>v20.1.x</td>
             <td>angular_version_20_1</td>
-        </tr>
-        <tr>
-            <td>v19.2.x</td>
-            <td>angular_version_19_2</td>
-        </tr>
-        <tr>
-            <td>v19.1.x</td>
-            <td>angular_version_19_1 (no Ivy support)</td>
-        </tr>
-        <tr>
-            <td>v18.2.x</td>
-            <td>angular_version_18_2</td>
-        </tr>
-        <tr>
-            <td>v18.1.x</td>
-            <td>angular_version_18_1</td>
-        </tr>
-        <tr>
-            <td>v17.2.x</td>
-            <td>angular_version_17_2</td>
         </tr>
     </table>
 </div>

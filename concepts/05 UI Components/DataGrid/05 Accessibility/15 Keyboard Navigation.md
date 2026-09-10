@@ -59,6 +59,8 @@ DataGrid offers different keyboard controls depending on which action users want
             e.toolbarOptions.allowKeyboardNavigation = false;
         }
 
+    If you disable **allowKeyboardNavigation**, the DataGrid toolbar no longer follows the [W3C ARIA APG Toolbar Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/). Your application will be less accessible to users who rely on keyboard navigation.
+
 [/note]
 
 ### Column Sorting and Reordering

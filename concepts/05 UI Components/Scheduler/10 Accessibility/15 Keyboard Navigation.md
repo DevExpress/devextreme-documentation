@@ -9,7 +9,7 @@ A user can use the following keys to interact with the Scheduler component:
     <tr>
         <td>Scheduler UI component</td>
         <td>Tab / Shift+Tab</td>        
-        <td>Shifts focus between appointments and the Scheduler toolbar.</td>
+        <td>Shifts focus between appointments and the Scheduler toolbar area.</td>
     </tr>
     <tr>
         <td><a href="/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/">Toolbar</a></td>

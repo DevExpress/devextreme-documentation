@@ -6,24 +6,28 @@ You can use the following keys to interact with the Toolbar component when [allo
         <th>Action</th>
     </tr>
     <tr>
-        <td>Tab</td>
-        <td>If a Toolbar receives focus, it focuses its first available item.</td>
-    </tr>
-    <tr>
-        <td>Shift + Tab</td>
-        <td>If a Toolbar receives focus, it focuses its last available item.</td>
+        <td>Tab / Shift + Tab</td>
+        <td>Moves focus to and away from the Toolbar. The first time users focus the Toolbar after initialization, the component highlights the first item. Subsequent focus events restore the previously highlighted item.</td>
     </tr>
     <tr>
         <td>Left Arrow / Right Arrow</td>
         <td>Moves focus to the previous or next available Toolbar item.</td>
     </tr>
     <tr>
+        <td>Up Arrow / Down Arrow</td>
+        <td>In the overflow, moves focus menu to the previous or next available Toolbar item.<br>When a ButtonGroup item has focus in the toolbar, moves focus between the ButtonGroup items.</td>
+    </tr>
+    <tr>
         <td>Home / End</td>
         <td>Moves focus to the first or last available Toolbar item.</td>
     </tr>
+    <tr>
+        <td>Enter / Space</td>
+        <td>Activates the focused Toolbar item.</td>
+    </tr>
 </table>
 
-This keyboard navigation behavior applies to all Toolbar instances within your app, including instances embedded in DevExtreme components such as DataGrid, FileManager, and Gantt. To modify this behavior in built-in Toolbar instances and allow users to navigate between items using **Tab**, you can disable [allowKeyboardNavigation](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#allowKeyboardNavigation) in a [defaultOptions()](/Documentation/ApiReference/UI_Components/dxToolbar/Methods/#defaultOptionsrule) call as follows:
+This keyboard navigation behavior applies to standalone Toolbar instances, as well as instances embedded in DevExtreme components such as DataGrid, FileManager, and Gantt. You can modify this behavior to allow users to navigate between items using **Tab**. Disable [allowKeyboardNavigation](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#allowKeyboardNavigation) in a [defaultOptions()](/Documentation/ApiReference/UI_Components/dxToolbar/Methods/#defaultOptionsrule) call as follows:
 
 ---
 
@@ -97,3 +101,5 @@ This keyboard navigation behavior applies to all Toolbar instances within your a
 ---
 
 Replace `.dx-component-name` with a component ID or class.
+
+[important] If you disable **allowKeyboardNavigation**, Toolbar no longer follows the [W3C ARIA APG Toolbar Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/). Your application will be less accessible to users who rely on keyboard navigation.

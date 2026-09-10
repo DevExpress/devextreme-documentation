@@ -39,18 +39,18 @@ You can apply these variables to custom elements to ensure a consistent look acr
         border-color: var(--dxds-color-border-hovered);
     }
 
-CSS variable overrides also allow you to modify styles of DevExtreme components. You can define overrides for individual components or wrap multiple components in a container and define overrides on the container level. This allows you to apply unique styles to different parts of your application. For instance, you can use the following [semantic variable](https://docs.devexpress.com/DesignSystem/405706/colors/color-css-variables) overrides to apply dark mode styles to parts of a light mode application:
+CSS variable overrides also allow you to modify styles of DevExtreme components. You can define overrides for individual components or wrap multiple components in a container and define overrides on the container level. This allows you to apply unique styles to different parts of your application. The following code snippet overrides [semantic variables](https://docs.devexpress.com/DesignSystem/405706/colors/color-css-variables):
 
     <!-- tab: CSS -->
     /* Using dxds variables */
-    .dark-colors-dx {
+    .custom-colors-var {
         --dxds-color-bg: var(--dxds-color-bg-inverted);
         --dxds-color-content: var(--dxds-color-content-inverted);
         --dxds-color-border: var(--dxds-color-border-inverted);
     }
 
     /* Using custom colors */
-    .dark-colors-custom {
+    .custom-colors-hex {
         --dxds-color-bg: #341A51;
         --dxds-color-content: #F5F0FA;
         --dxds-color-border: #532982;

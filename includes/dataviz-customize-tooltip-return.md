@@ -12,7 +12,7 @@ Assign a function to this property that returns an object with the following fie
     <tr>
         <td><code>html</code></td>
         <td>The HTML markup displayed in a tooltip.<br />
-        The {WidgetName} evaluates the markup. Make sure that it does not contain malicious code. Refer to the following help topic for more information: <a href="/Documentation/Guide/Common/Security_Considerations/#HTML_Encoding/Potentially_Vulnerable_API/customizeTooltip">Potentially Vulnerable API - customizeTooltip</a>.<br />
+        {WidgetName} evaluates the markup. Make sure that it does not contain malicious code. Refer to the following help topic for more information: <a href="/Documentation/Guide/Common/Security_Considerations/#HTML_Encoding/Potentially_Vulnerable_API/customizeTooltip">Potentially Vulnerable API - customizeTooltip</a>.<br />
         To use external resources (images, etc.) in the markup, specify the size of the area they occupy beforehand.</td>
     </tr>
     <tr>

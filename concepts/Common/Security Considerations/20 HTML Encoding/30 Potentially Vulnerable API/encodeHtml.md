@@ -19,7 +19,7 @@ The following example demonstrates what can occur if you disable **encodeHtml** 
     href: "https://codepen.io/vladaskorokhodova/pen/WNPgZMJ"
 }
 
-In this example, the data source stores the malicious code:
+In this example, the data source stores malicious code:
 
     <!-- tab: JavaScript -->
     const products = [{
@@ -34,10 +34,10 @@ In this example, the data source stores the malicious code:
     // ...
     ];
 
-When **encodeHtml** is `true`, the DataGrid interprets this code as text and simply displays it:
+When **encodeHtml** is `true`, the DataGrid interprets this code as text and displays it:
 
 ![DevExtreme DataGrid with enabled HTML encoding](/images/DataGrid/encodehtml-true.png)
 
-If you set **encodeHtml** to `false`, the malicious code will be interpreted as script, and you will see an alert pop-up window:
+If you set **encodeHtml** to `false`, malicious code will be interpreted as script, and you will see an alert pop-up window:
 
 ![DevExtreme DataGrid with disabled HTML encoding](/images/DataGrid/encodehtml-false.png)

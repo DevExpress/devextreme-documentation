@@ -1,6 +1,6 @@
 DevExtreme includes a validation engine that checks edited values before they are saved. This engine supports different [validation rule types](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/').
 
-To apply validation rules to a simple item, specify them in the [validationRules[]](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#validationRules) array. You can specify an item's [isRequired](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/isRequired.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#isRequired') property to implicitly apply the [RequiredRule](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules/RequiredRule '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/RequiredRule/').
+Specify validation rules for a simple item in the [validationRules[]](/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#validationRules) array. You can specify an item's [isRequired](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/isRequired.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#isRequired') property to implicitly apply the [RequiredRule](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules/RequiredRule '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/RequiredRule/').
 
 The following example sets the **isRequired** property for the `Name` item. It also adds the [NumericRule](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules/NumericRule '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/NumericRule/') for `officeNumber` and [EmailRule](/api-reference/10%20UI%20Components/dxValidator/8%20Validation%20Rules/EmailRule '/Documentation/ApiReference/UI_Components/dxValidator/Validation_Rules/EmailRule/') for `Email`.
 
@@ -31,6 +31,23 @@ The following example sets the **isRequired** property for the `Name` item. It a
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Form()
+        .ColCount(2)
+        .Items(i => {
+            i.AddSimple().DataField("Name")
+                .IsRequired(true);
+            i.AddSimple().DataField("OfficeNumber").ValidationRules(r => 
+                r.AddNumeric()
+            );
+            i.AddSimple().DataField("Email").ValidationRules(r => 
+                r.AddEmail()
+            );
+        })
+    )
+
 ##### Angular
 
     <!-- tab: app.component.html -->
@@ -49,40 +66,6 @@ The following example sets the **isRequired** property for the `Name` item. It a
         </dxi-form-item>
     </dx-form>
 
-    <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
-    export class AppComponent {
-        employee = {
-            // ...
-        }
-    }
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxFormModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxFormModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
-
 ##### Vue
 
     <!-- tab: App.vue -->
@@ -100,53 +83,18 @@ The following example sets the **isRequired** property for the `Name` item. It a
         </DxForm>
     </template>
 
-    <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
+    <script setup lang="ts">
+    import { DxForm, DxSimpleItem, DxNumericRule, DxEmailRule } from 'devextreme-vue/form';
 
-    import { 
-        DxForm, 
-        DxSimpleItem, 
-        DxNumericRule, 
-        DxEmailRule 
-    } from 'devextreme-vue/form';
-    
-    const employee = {
-        // ...
-    };
-
-    export default {
-        components: {
-            DxForm,
-            DxSimpleItem,
-            DxNumericRule, 
-            DxEmailRule
-        },
-        data: {
-            return: {
-                employee
-            }
-        }
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
+    <!-- tab: App.tsx -->
+    import { Form, SimpleItem, NumericRule, EmailRule } from 'devextreme-react/form';
 
-    import {
-        Form,
-        SimpleItem,
-        NumericRule,
-        EmailRule
-    } from 'devextreme-react/form';
-
-    const employee = {
-        // ...
-    };
-
-    const App = () => {
+    // ...
+    export default function App() {
         return (
             <Form
                 formData={employee}
@@ -162,9 +110,6 @@ The following example sets the **isRequired** property for the `Name` item. It a
         );
     }
 
-    export default App;
-
 ---
 
-
-You can also call the [validate()](/api-reference/10%20UI%20Components/dxForm/3%20Methods/validate().md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#validate') Form's method to validate all editors simultaneously. 
+You can also call the Form's [validate()](/api-reference/10%20UI%20Components/dxForm/3%20Methods/validate().md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#validate') method to validate all editors simultaneously. 

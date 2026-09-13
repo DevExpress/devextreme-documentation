@@ -1,10 +1,10 @@
 ---
-id: _ui_tree_list_RowDraggingRemoveEvent
-module: ui/tree_list
+uid: ui/data_grid:RowDraggingRemoveEvent
+module: ui/data_grid
 export: RowDraggingRemoveEvent
 type: Object
 inherits: NativeEventInfo,RowDraggingEventInfo
-references: dxTreeList.Options.rowDragging.onRemove
+references: dxDataGrid.Options.rowDragging.onRemove
 ---
 ---
 ##### shortDescription

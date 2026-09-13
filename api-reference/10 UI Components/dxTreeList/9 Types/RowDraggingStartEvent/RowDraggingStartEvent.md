@@ -1,5 +1,5 @@
 ---
-id: _ui_tree_list_RowDraggingStartEvent
+uid: ui/tree_list:RowDraggingStartEvent
 module: ui/tree_list
 export: RowDraggingStartEvent
 type: Object

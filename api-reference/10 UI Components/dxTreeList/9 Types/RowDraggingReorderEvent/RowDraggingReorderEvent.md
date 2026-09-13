@@ -1,5 +1,5 @@
 ---
-id: _ui_tree_list_RowDraggingReorderEvent
+uid: ui/tree_list:RowDraggingReorderEvent
 module: ui/tree_list
 export: RowDraggingReorderEvent
 type: Object

@@ -1,5 +1,5 @@
 ---
-id: _ui_data_grid_RowDraggingAddEvent
+uid: ui/data_grid:RowDraggingAddEvent
 module: ui/data_grid
 export: RowDraggingAddEvent
 type: Object

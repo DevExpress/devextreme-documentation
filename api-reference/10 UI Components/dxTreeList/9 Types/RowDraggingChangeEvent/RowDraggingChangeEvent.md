@@ -1,5 +1,5 @@
 ---
-id: _ui_tree_list_RowDraggingChangeEvent
+uid: ui/tree_list:RowDraggingChangeEvent
 module: ui/tree_list
 export: RowDraggingChangeEvent
 type: Object

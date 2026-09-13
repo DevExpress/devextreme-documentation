@@ -1,10 +1,10 @@
 ---
-id: _ui_tree_list_RowDraggingEndEvent
-module: ui/tree_list
-export: RowDraggingEndEvent
+uid: ui/data_grid:RowDraggingMoveEvent
+module: ui/data_grid
+export: RowDraggingMoveEvent
 type: Object
 inherits: Cancelable,NativeEventInfo,RowDraggingEventInfo,DragDropInfo
-references: dxTreeList.Options.rowDragging.onDragEnd
+references: dxDataGrid.Options.rowDragging.onDragMove
 ---
 ---
 ##### shortDescription

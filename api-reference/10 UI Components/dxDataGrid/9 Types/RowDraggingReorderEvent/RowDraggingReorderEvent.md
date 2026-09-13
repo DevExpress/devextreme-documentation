@@ -1,5 +1,5 @@
 ---
-id: _ui_data_grid_RowDraggingReorderEvent
+uid: ui/data_grid:RowDraggingReorderEvent
 module: ui/data_grid
 export: RowDraggingReorderEvent
 type: Object

@@ -5,6 +5,7 @@ export: RowDraggingChangeEvent
 type: Object
 inherits: Cancelable,NativeEventInfo,RowDraggingEventInfo,DragDropInfo
 references: dxTreeList.Options.rowDragging.onDragChange
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -5,6 +5,7 @@ export: RowDraggingRemoveEvent
 type: Object
 inherits: NativeEventInfo,RowDraggingEventInfo
 references: dxTreeList.Options.rowDragging.onRemove
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

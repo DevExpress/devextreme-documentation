@@ -5,6 +5,7 @@ export: RowDraggingRemoveEvent
 type: Object
 inherits: NativeEventInfo,RowDraggingEventInfo
 references: dxDataGrid.Options.rowDragging.onRemove
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

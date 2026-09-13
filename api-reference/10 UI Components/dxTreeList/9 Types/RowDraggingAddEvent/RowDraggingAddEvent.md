@@ -5,6 +5,7 @@ export: RowDraggingAddEvent
 type: Object
 inherits: NativeEventInfo,RowDraggingEventInfo,DragDropInfo
 references: dxTreeList.Options.rowDragging.onAdd
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

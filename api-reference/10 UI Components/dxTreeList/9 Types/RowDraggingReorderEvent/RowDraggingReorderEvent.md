@@ -5,6 +5,7 @@ export: RowDraggingReorderEvent
 type: Object
 inherits: NativeEventInfo,RowDraggingEventInfo,DragReorderInfo
 references: dxTreeList.Options.rowDragging.onReorder
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

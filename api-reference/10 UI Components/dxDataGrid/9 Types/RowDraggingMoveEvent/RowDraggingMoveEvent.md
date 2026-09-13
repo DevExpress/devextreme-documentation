@@ -5,6 +5,7 @@ export: RowDraggingMoveEvent
 type: Object
 inherits: Cancelable,NativeEventInfo,RowDraggingEventInfo,DragDropInfo
 references: dxDataGrid.Options.rowDragging.onDragMove
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

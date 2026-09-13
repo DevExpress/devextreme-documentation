@@ -2,6 +2,7 @@
 id: DragStartEventInfo
 module: common/grids
 export: DragStartEventInfo
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -3,6 +3,7 @@ id: DragDropInfo
 module: common/grids
 export: DragDropInfo
 type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

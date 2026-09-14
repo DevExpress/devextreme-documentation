@@ -1,6 +1,6 @@
 ---
 id: DragReorderInfo.promise
-type: PromiseLike
+type: Promise<void>
 ---
 ---
 ##### shortDescription

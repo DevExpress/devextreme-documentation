@@ -36,7 +36,7 @@ type: function(e)
 ##### field(e.itemElement): DxElement
 <!-- Description goes here -->
 
-##### field(e.promise): PromiseLike
+##### field(e.promise): Promise<void>
 <!-- Description goes here -->
 
 ##### field(e.toComponent): Sortable | Draggable

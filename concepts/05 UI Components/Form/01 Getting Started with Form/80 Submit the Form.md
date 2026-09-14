@@ -379,9 +379,9 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
 
 [note]
 
-React 19 offers a [useActionState](https://react.dev/reference/react/useActionState) hook that allows you to update state based on a form action result. When you use this hook, [clear](/api-reference/10%20UI%20Components/dxForm/3%20Methods/clear().md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#clear') the Form as the initial step when you implement an action:
+To use DevExtreme Form with the [useActionState](https://react.dev/reference/react/useActionState) hook, call [clear()](/api-reference/10%20UI%20Components/dxForm/3%20Methods/clear().md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#clear') at the start of the [reducerAction](https://react.dev/reference/react/useActionState#reduceraction) function:
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React, { useActionState, useRef } from "react";
     import { Form, SimpleItem, GroupItem, ButtonItem, NumericRule, EmailRule } from "devextreme-react/form";
 

@@ -1,4 +1,4 @@
-You can use groups to organize the data entry form. Create a [group item](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/GroupItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/') and nest other items within to add a group. You can nest items of any type in a group, including other group items. You can configure each group's layout separately.
+You can use groups to organize data entry forms. Create a [group item](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/GroupItem '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/') and nest other items within to add a group. You can nest items of any type in a group, including other group items. You can configure each group's layout separately.
 
 The following code snippet creates two groups. Each group occupies a separate column. The resulting layout looks as follows:
 

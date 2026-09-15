@@ -26,7 +26,7 @@ $(function() {
                 items: [{
                     itemType: "tabbed",
                     tabPanelOptions: {
-                        height: 260
+                        height: 280
                     },
                     tabs: [{
                         title: "Contacts",

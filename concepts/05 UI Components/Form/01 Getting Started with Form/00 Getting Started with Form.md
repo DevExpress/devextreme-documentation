@@ -4,9 +4,9 @@ The Form component creates a data entry UI for the underlying data object. The i
 
 This tutorial shows basic Form component configuration.
 
-<div class="simulator-desktop-container" data-view="/Content/Applications/26_1/GettingStartedWith/Form/index.html, /Content/Applications/26_1/GettingStartedWith/Form/index.js, /Content/Applications/26_1/GettingStartedWith/Form/index.css"></div>
+<div class="simulator-desktop-container" data-view="/Content/Applications/26_1/GettingStartedWith/Form/index.html, /Content/Applications/26_1/GettingStartedWith/Form/index.js, /Content/Applications/26_1/GettingStartedWith/Form/index.css" style="border-radius: 12px;"></div>
 
-Refer to the following sections for more information about each configuration step. The full code is available in the GitHub repository.
+Each section in this tutorial describes a single configuration step. The complete source code is available in the following GitHub repository:
 
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/getting-started-with-form"

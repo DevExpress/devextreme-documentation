@@ -1,12 +1,25 @@
-**encodeHtml** is a Boolean property that you can set for a [column in the DataGrid](/api-reference/_hidden/dxDataGridColumn/encodeHtml.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#encodeHtml'), a [column in the TreeList](/api-reference/_hidden/GridBaseColumn/encodeHtml.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#encodeHtml'), a [column in the Gantt](/api-reference/_hidden/GridBaseColumn/encodeHtml.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#encodeHtml'), a [cell in the PivotGrid](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/encodeHtml.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#encodeHtml'), and a [header filter value in the PivotGridFieldChooser](/api-reference/10%20UI%20Components/dxPivotGridFieldChooser/1%20Configuration/encodeHtml.md '/Documentation/ApiReference/UI_Components/dxPivotGridFieldChooser/Configuration/#encodeHtml'). The default **encodeHtml** value is `true`, and the component encodes corresponding values. If you set it to `false`, the component disables encoding, and malicious code can be executed. To mitigate security-related risks, we recommend that you always set this property to `true`.
+**encodeHtml** is a Boolean property that you can set for the following component values:
 
-To see what can occur if you disable the **encodeHtml** property open the following example:
+- [DataGrid](/api-reference/_hidden/dxDataGridColumn/encodeHtml.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#encodeHtml'): Cell values in specific columns
+- [Gantt](/api-reference/_hidden/GridBaseColumn/encodeHtml.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/#encodeHtml'): Cell values in specific task list columns
+- [PivotGrid](/api-reference/10%20UI%20Components/dxPivotGrid/1%20Configuration/encodeHtml.md '/Documentation/ApiReference/UI_Components/dxPivotGrid/Configuration/#encodeHtml'): All cell values
+- [PivotGridFieldChooser](/api-reference/10%20UI%20Components/dxPivotGridFieldChooser/1%20Configuration/encodeHtml.md '/Documentation/ApiReference/UI_Components/dxPivotGridFieldChooser/Configuration/#encodeHtml'): Header filter values
+- [TreeList](/api-reference/_hidden/GridBaseColumn/encodeHtml.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#encodeHtml'): Cell values in specific columns
+- **DevExtreme Viz Components (Charts, Gauges, and other)**: All elements that display text such as labels, legends, and tooltips.
+
+The default **encodeHtml** value is `false` in Viz components. These components transform evaluated HTML elements into [tspan](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/tspan) SVG elements and do not render inline HTML directly. All attributes are also discarded except `style` and `class`.
+
+In the remaining components, the default **encodeHtml** value is `true`. If you set the property to `false`, these components can execute malicious code.
+
+[note] To mitigate security-related risks, we recommend that you always use default **encodeHtml** values.
+
+The following example demonstrates what can occur if you disable **encodeHtml** in a DataGrid:
 
 #include btn-open-codepen with {
     href: "https://codepen.io/vladaskorokhodova/pen/WNPgZMJ"
 }
 
-In this example, the data source stores the malicious code:
+In this example, the data source stores malicious code:
 
     <!-- tab: JavaScript -->
     const products = [{
@@ -21,10 +34,10 @@ In this example, the data source stores the malicious code:
     // ...
     ];
 
-When **encodeHtml** is `true`, the DataGrid interprets this code as text and simply displays it:
+When **encodeHtml** is `true`, the DataGrid interprets this code as text and displays it:
 
 ![DevExtreme DataGrid with enabled HTML encoding](/images/DataGrid/encodehtml-true.png)
 
-If you set **encodeHtml** to `false`, the malicious code will be interpreted as script, and you will see an alert pop-up window:
+If you set **encodeHtml** to `false`, malicious code will be interpreted as script, and you will see an alert pop-up window:
 
 ![DevExtreme DataGrid with disabled HTML encoding](/images/DataGrid/encodehtml-false.png)

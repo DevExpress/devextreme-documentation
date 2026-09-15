@@ -379,7 +379,7 @@ Alternatively, if you want to implement custom validation logic, handle the Butt
 
 [note]
 
-To use DevExtreme Form with the [useActionState](https://react.dev/reference/react/useActionState) hook, call [clear()](/api-reference/10%20UI%20Components/dxForm/3%20Methods/clear().md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#clear') at the start of the [reducerAction](https://react.dev/reference/react/useActionState#reduceraction) function:
+To use the DevExtreme Form with the [useActionState](https://react.dev/reference/react/useActionState) hook, call [clear()](/api-reference/10%20UI%20Components/dxForm/3%20Methods/clear().md '/Documentation/ApiReference/UI_Components/dxForm/Methods/#clear') at the start of the [reducerAction](https://react.dev/reference/react/useActionState#reduceraction) function:
 
     <!-- tab: App.tsx -->
     import React, { useActionState, useRef } from "react";

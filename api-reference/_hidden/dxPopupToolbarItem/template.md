@@ -121,3 +121,5 @@ The following example adds a custom item to the Popup toolbar. Note that Angular
     export default App;
 
 ---
+
+#include toolbar-buttongroup-widget-template-menu-note

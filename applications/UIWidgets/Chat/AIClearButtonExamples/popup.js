@@ -275,7 +275,10 @@
         widget: 'dxButton',
         location: 'after',
         options: {
-          elementAttr: { id: clearButtonId },
+          elementAttr: {
+            id: clearButtonId,
+            'aria-label': 'Clear Chat',
+          },
           icon: 'clearhistory',
           hint: 'Clear Chat',
           disabled: true,

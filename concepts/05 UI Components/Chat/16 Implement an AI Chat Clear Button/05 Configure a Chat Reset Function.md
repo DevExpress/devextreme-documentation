@@ -13,6 +13,9 @@ To clear messages in DevExtreme Chat, follow these steps:
 
         chatMessages.length = 0;
         aiMessages.length = 0;
+
+        // Clear typingUsers indicators and alerts if any are displayed
+        chatInstance.option({ alerts: [], typingUsers: [] });
     }
 
 This tutorial uses the same approach as the following technical demo to store messages:

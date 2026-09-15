@@ -1,6 +1,6 @@
-The Form can organize items into a fixed number of columns or automatically adjust the layout based on the screen width. To keep the fixed number of columns, initialize the [colCount](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/colCount.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#colCount') property as done in the code below. To create an adaptive layout, configure the [screenByWidth](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/screenByWidth.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#screenByWidth') and [colCountByScreen](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/colCountByScreen '/Documentation/ApiReference/UI_Components/dxForm/Configuration/colCountByScreen/') properties. 
+The Form can organize items into a fixed number of columns or automatically adjust the layout based on the screen width. Initialize the [colCount](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/colCount.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#colCount') property as done in the following code to keep a fixed number of columns. To create an adaptive layout instead, configure the [screenByWidth](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/screenByWidth.md '/Documentation/ApiReference/UI_Components/dxForm/Configuration/#screenByWidth') and [colCountByScreen](/api-reference/10%20UI%20Components/dxForm/1%20Configuration/colCountByScreen '/Documentation/ApiReference/UI_Components/dxForm/Configuration/colCountByScreen/') properties. 
 
-An item can span multiple columns. The example below sets the [colSpan](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/colSpan.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#colSpan') property for the `Notes` item to `2` so that it spans two columns.
+An item can span multiple columns. The following example sets the [colSpan](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/SimpleItem/colSpan.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/SimpleItem/#colSpan') property for the `Notes` item to `2` so that it spans two columns.
 
 ---
 ##### jQuery
@@ -23,6 +23,28 @@ An item can span multiple columns. The example below sets the [colSpan](/api-ref
         });
     });
 
+##### ASP.NET Core Controls
+
+    <!-- tab: Index.cshtml -->
+    @(Html.DevExtreme().Form()
+        .FormData(new {
+            Name = "John Heart",
+            Position = "CEO",
+            HireDate = new DateOnly(2012, 4, 13),
+            OfficeNumber = 901,
+            Notes = "John has been in the Audio/Video industry since 1990."
+        })
+        .ColCount(2)
+        .Items(i => {
+            i.AddSimple().DataField("Name");
+            i.AddSimple().DataField("Position");
+            i.AddSimple().DataField("HireDate");
+            i.AddSimple().DataField("OfficeNumber");
+            i.AddSimple().DataField("Notes")
+                .ColSpan("2")
+        })
+    )
+
 ##### Angular
 
     <!-- tab: app.component.html -->
@@ -40,13 +62,7 @@ An item can span multiple columns. The example below sets the [colSpan](/api-ref
     </dx-form>
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
-
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    // ...
     export class AppComponent {
         employee = {
             name: 'John Heart',
@@ -56,26 +72,6 @@ An item can span multiple columns. The example below sets the [colSpan](/api-ref
             notes: 'John has been in the Audio/Video industry since 1990.'
         }
     }
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxFormModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxFormModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
 
 ##### Vue
 
@@ -95,9 +91,7 @@ An item can span multiple columns. The example below sets the [colSpan](/api-ref
         </DxForm>
     </template>
 
-    <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
+    <script setup lang="ts">
     import { DxForm, DxSimpleItem } from 'devextreme-vue/form';
     
     const employee = {
@@ -107,30 +101,12 @@ An item can span multiple columns. The example below sets the [colSpan](/api-ref
         officeNumber: 901,
         notes: 'John has been in the Audio/Video industry since 1990.'
     };
-
-    export default {
-        components: {
-            DxForm,
-            DxSimpleItem
-        },
-        data: {
-            return: {
-                employee
-            }
-        }
-    }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import {
-        Form,
-        SimpleItem
-    } from 'devextreme-react/form';
+    <!-- tab: App.tsx -->
+    import { Form, SimpleItem } from 'devextreme-react/form';
 
     const employee = {
         name: 'John Heart',
@@ -140,7 +116,7 @@ An item can span multiple columns. The example below sets the [colSpan](/api-ref
         notes: 'John has been in the Audio/Video industry since 1990.'
     };
 
-    const App = () => {
+    export default function App() {
         return (
             <Form
                 formData={employee}
@@ -156,7 +132,5 @@ An item can span multiple columns. The example below sets the [colSpan](/api-ref
             </Form>
         );
     }
-
-    export default App;
 
 ---

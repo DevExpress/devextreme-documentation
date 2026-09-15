@@ -1,13 +1,13 @@
+#app-container {
+    padding: 20px;
+}
+
 #form {
     padding: 10px;
-    border: 1px solid;
+    border: var(--dx-border-width) solid var(--dx-color-border);
+    border-radius: var(--dx-border-radius);
 }
 
 #check-box {
     margin-top: 10px;
-}
-
-#app-container {
-    width: 900px;
-    position: relative;
 }

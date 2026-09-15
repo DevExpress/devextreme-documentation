@@ -1,6 +1,6 @@
 This topic lists supported versions of Angular (version range or oldest versions) for major DevExtreme release cycles.
 
-[note] DevExtreme v26.1 supports [Angular 21](https://blog.angular.dev/announcing-angular-v21-57946c34f14b). Tests demonstrate full compatibility with DevExtreme UI components.
+[note] DevExtreme v26.1 supports [Angular 22](https://blog.angular.dev/announcing-angular-v22-c52bb83a4664). Tests demonstrate full compatibility with DevExtreme UI components.
 
 <div>
     <table class="dx-table" style="display: inline-block; vertical-align: top;">

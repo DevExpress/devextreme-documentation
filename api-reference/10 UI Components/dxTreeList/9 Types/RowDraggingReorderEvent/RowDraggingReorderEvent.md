@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the **rowDragging**.[onReorder]({basewidgetpath}/Configuration/rowDragging/#onReorder) event handler's argument.
 
 ---
 <!-- Description goes here -->

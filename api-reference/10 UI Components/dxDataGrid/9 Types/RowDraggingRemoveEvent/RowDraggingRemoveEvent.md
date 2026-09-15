@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the **rowDragging**.[onRemove]({basewidgetpath}/Configuration/rowDragging/#onRemove) event handler's argument.
 
 ---
 <!-- Description goes here -->

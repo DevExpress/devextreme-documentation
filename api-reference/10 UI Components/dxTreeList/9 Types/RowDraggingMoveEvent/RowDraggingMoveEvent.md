@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The type of the **rowDragging**.[onDragMove]({basewidgetpath}/Configuration/rowDragging/#onDragMove) event handler's argument.
 
 ---
 <!-- Description goes here -->

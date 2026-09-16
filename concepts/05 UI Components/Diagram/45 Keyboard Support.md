@@ -51,7 +51,7 @@ A user can press the following keys to interact with the UI component:
     </tr>
     <tr>
         <td>Arrow Keys</td>
-        <td>Moves the selected elements one grid cell in the specified direction.</td>
+        <td>Moves the selected elements one grid cell in the specified direction.<br>Moves focus between toolbar items (left and right arrow keys only).</td>
     </tr>
     <tr>
         <td>Ctrl + Arrow Keys</td>
@@ -62,16 +62,20 @@ A user can press the following keys to interact with the UI component:
         <td>Clones the selected elements.</td>
     </tr>
     <tr>
+        <td>Home<br/>End</td>
+        <td>Moves focus to the first/last item in a toolbar.</td>
+    </tr>
+    <tr>
         <td>Left Mouse Button Drag</td>
-        <td>Moves the selected elements. If you realize the mouse button above a container, places the elements inside this container.</td>
+        <td>Moves the selected elements. If you release the mouse button above a container, places the elements inside this container.</td>
     </tr>
     <tr>
         <td>Ctrl + Left Mouse Button Drag</td>
-        <td>Moves the selected elements. If you realize the mouse button above a container, places the elements outside this container.</td>
+        <td>Moves the selected elements. If you release the mouse button above a container, places the elements outside this container.</td>
     </tr>
     <tr>
         <td>Shift + Left Mouse Button Drag</td>
-        <td>Moves the selected elements horizontally or vertically. If you realize the mouse button above a container, places the elements outside this container.</td>
+        <td>Moves the selected elements horizontally or vertically. If you release the mouse button above a container, places the elements outside this container.</td>
     </tr>
     <tr>
         <td>Ctrl + Mouse Wheel</td>
@@ -86,5 +90,7 @@ A user can press the following keys to interact with the UI component:
         <td>Switches to full screen.</td>
     </tr>
 </table>
+
+#include toolbar-kbn-behavior-defaultoptions-override
 
 Refer to the following section for more information: [Work with Chart Elements](https://devexpress.github.io/dotnet-eud/interface-elements-for-web/articles/diagram.html).

@@ -55,7 +55,7 @@ A user can use the following keys to interact with the HTML Editor component:
             <ul>
                 <li>Indent list items</li>
                 <li>Focus the next cell in tables</li>
-                <li>Focus the next focusable element on the page. If <code>keyboard.inlineTabInsertion</code> is enabled, insert a tab character (<code>\t</code>) in text.</li>
+                <li>Focus the next focusable element on the page. If <code>keyboard.inlineTabInsertion</code> is enabled, insert a tab character (<code>\t</code>) in the text.</li>
             </ul>
         </td>
     </tr>
@@ -71,14 +71,23 @@ A user can use the following keys to interact with the HTML Editor component:
                         <li>The previous focusable element on the page</li>
                         <li>The HTML Editor <a href="/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/">toolbar</a> (if configured)</li>
                     </ul>
-                    If text contains tab characters (<code>\t</code>) and <code>keyboard.inlineTabInsertion</code> is enabled, remove a tab character from text.
+                    If text contains tab characters (<code>\t</code>) and <code>keyboard.inlineTabInsertion</code> is enabled, remove a tab character from the text.
                 </li>
             </ul>
         </td>    
     </tr>
     <tr>
         <td colspan="2">Arrow Keys</td>
-        <td>Navigate through the table</td>
+        <td>
+            <ul>
+                <li>Navigate through the table</li>
+                <li>Move focus between toolbar items (left and right arrow keys only).</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">Home<br>End</td>
+        <td>Move focus to the first/last item in the toolbar.</td>
     </tr>
     <tr>
         <td>Ctrl + Shift + Up&nbsp;Arrow</td>
@@ -171,5 +180,7 @@ Configure [customizeModules](/api-reference/10%20UI%20Components/dxHtmlEditor/1%
     }
 
 ---
+
+#include toolbar-kbn-behavior-defaultoptions-override
 
 #include common-code-register-key-handler

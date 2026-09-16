@@ -1,0 +1,1 @@
+Your **Clear Chat** button configuration depends on how you use the Chat component in your app. This tutorial includes steps for three usage scenarios.

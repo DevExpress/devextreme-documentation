@@ -32,13 +32,19 @@ CardView offers different keyboard controls depending on the focused component a
     </tr>
     <tr>
         <td>Left Arrow / Right Arrow</td>
-        <td>Moves focus between header panel items.</td>
+        <td>Moves focus between header panel items.<br>Moves focus between toolbar items.</td>
+    </tr>
+    <tr>
+        <td>Home<br/>End</td>
+        <td>Moves focus to the first/last item in the toolbar.</td>
     </tr>
     <tr>
         <td>Shift + Right Arrow<br/>Shift + Left Arrow</td>
-        <td>Reorders the focused header item if <a href="/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#allowColumnReordering">allowColumnReordering</a> is "true".</td>
+        <td>Reorders the focused header item if <a href="/Documentation/ApiReference/UI_Components/dxCardView/Configuration/#allowColumnReordering">allowColumnReordering</a> is set to <code>true</code>.</td>
     </tr>
 </table>
+
+#include toolbar-kbn-behavior-defaultoptions-override
 
 ##### Sorting and Filtering
 
@@ -53,11 +59,11 @@ CardView offers different keyboard controls depending on the focused component a
     </tr>
     <tr>
         <td>Shift + Enter<br/>Shift + Click</td>
-        <td>Enables/cycles between focused header sorting without clearing previous sorting options if <b>sorting</b>.<a href="/Documentation/ApiReference/UI_Components/dxCardView/Configuration/sorting/#mode">mode</a> is "multiple".</td>
+        <td>Enables/cycles between focused header sorting without clearing previous sorting options if <b>sorting</b>.<a href="/Documentation/ApiReference/UI_Components/dxCardView/Configuration/sorting/#mode">mode</a> is set to <i>"multiple"</i>.</td>
     </tr>
     <tr>
         <td>Ctrl + Enter<br/>Ctrl + Click</td>
-        <td>Disables focused header sorting. Does not clear previous sorting options if <b>sorting</b>.<b>mode</b> is "multiple".</td>
+        <td>Disables focused header sorting. Does not clear previous sorting options if <b>sorting</b>.<b>mode</b> is set to <i>"multiple"</i>.</td>
     </tr>
     <tr>
         <td>Alt + Down Arrow</td>
@@ -80,7 +86,7 @@ CardView offers different keyboard controls depending on the focused component a
     </tr>
     <tr>
         <td>PageUp<br/>PageDown</td>
-        <td>Moves focus to the previous/next page if <b>paging</b>.<a href="/Documentation/ApiReference/UI_Components/dxCardView/Configuration/paging/#enabled">enabled</a> is "true".</td>
+        <td>Moves focus to the previous/next page if <b>paging</b>.<a href="/Documentation/ApiReference/UI_Components/dxCardView/Configuration/paging/#enabled">enabled</a> is set to <code>true</code>.</td>
     </tr>
     <tr>
         <td>Home<br/>End</td>
@@ -101,19 +107,19 @@ CardView offers different keyboard controls depending on the focused component a
     </tr>
     <tr>
         <td>Space</td>
-        <td>Toggles selection of the focused card and clears previous selection if <b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxCardView/Configuration/selection/#mode">mode</a> is "single".</td>
+        <td>Toggles selection of the focused card and clears previous selection if <b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxCardView/Configuration/selection/#mode">mode</a> is set to <i>"single"</i>.</td>
     </tr>
     <tr>
         <td>Ctrl + Click</td>
-        <td>Toggles selection of the focused card without clearing previous selection if <b>selection</b>.<b>mode</b> is "multiple" and <b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxCardView/Configuration/selection/#showCheckBoxesMode">showCheckBoxesMode</a> is "onClick".</td>
+        <td>Toggles selection of the focused card without clearing previous selection if <b>selection</b>.<b>mode</b> is set to <i>"multiple"</i> and <b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxCardView/Configuration/selection/#showCheckBoxesMode">showCheckBoxesMode</a> is set to <i>"onClick"</i>.</td>
     </tr>
     <tr>
         <td>Shift + Space<br/>Shift + Click</td>
-        <td>Toggles selection of all cards between the last selected card and the focused card if <b>selection</b>.<b>mode</b> is "multiple".</td>
+        <td>Toggles selection of all cards between the last selected card and the focused card if <b>selection</b>.<b>mode</b> is set to <i>"multiple"</i>.</td>
     </tr>
     <tr>
         <td>Ctrl + A</td>
-        <td>Selects all cards if <b>selection</b>.<b>mode</b> is "multiple".</td>
+        <td>Selects all cards if <b>selection</b>.<b>mode</b> is set to <i>"multiple"</i>.</td>
     </tr>
     <tr>
         <td>Ctrl + F</td>

@@ -9,12 +9,17 @@ A user can use the following keys to interact with the Scheduler component:
     <tr>
         <td>Scheduler UI component</td>
         <td>Tab / Shift+Tab</td>        
-        <td>Shifts focus to the next/previous appointment.</td>
+        <td>Shifts focus between appointments and the Scheduler toolbar area.</td>
+    </tr>
+    <tr>
+        <td><a href="/Documentation/ApiReference/UI_Components/dxScheduler/Configuration/toolbar/">Toolbar</a></td>
+        <td>Left Arrow or Right Arrow</td>        
+        <td>Shifts focus between toolbar items.</td>
     </tr>
     <tr>
         <td>Scheduler UI component</td>
         <td>Shift + Mouse Wheel</td>
-        <td>Scrolls the content left/right if the horizontal scrolling is taking place.</td>
+        <td>Scrolls content left/right if horizontal scrolling is taking place.</td>
     </tr>
     <tr>
         <td><a href="/Documentation/Guide/UI_Components/Scheduler/View_Switcher/">View Switcher</a></td>
@@ -72,3 +77,5 @@ A user can use the following keys to interact with the Scheduler component:
         <td>Selects the focused element in the tooltip.</td>
     </tr>
 </table>
+
+#include toolbar-kbn-behavior-defaultoptions-override

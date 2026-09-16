@@ -2,16 +2,6 @@ DataGrid offers different keyboard controls depending on which action users want
 
 ### Navigation
 
-[note]
-
-- The following DataGrid features do not support the **Ctrl+Home** and **Ctrl+End** shortcuts:
-    - Group summaries
-    - Grouped data
-    - Expanded master-detail interfaces
-- When **scrolling**.[columnRenderingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/scrolling/columnRenderingMode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#columnRenderingMode') is *"virtual"*, the [filter row](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/') does not support keyboard navigation.
-
-[/note]
-
 <table class="dx-table full-width">
     <tr>
         <th>Key</th>
@@ -19,7 +9,7 @@ DataGrid offers different keyboard controls depending on which action users want
     </tr>
     <tr>
         <td>Arrow Keys</td>
-        <td>Moves focus between cells.</td>
+        <td>Moves focus between cells.<br>Moves focus between toolbar items (left and right arrow keys only).</td>
     </tr>
     <tr>
         <td>Tab<br/>Shift + Tab</td>
@@ -35,11 +25,11 @@ DataGrid offers different keyboard controls depending on which action users want
     </tr>
     <tr>
         <td>Enter</td>
-        <td>When focused on a cell, moves focus to the next cell if <b>keyboardNavigation</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/keyboardNavigation/#enterKeyAction">enterKeyAction</a> is "moveFocus". The next cell is determined by <b>keyboardNavigation</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/keyboardNavigation/#enterKeyDirection">enterKeyDirection</a>.</td>
+        <td>When focused on a cell, moves focus to the next cell if <b>keyboardNavigation</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/keyboardNavigation/#enterKeyAction">enterKeyAction</a> is set to <i>"moveFocus"</i>. The next cell is determined by <b>keyboardNavigation</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/keyboardNavigation/#enterKeyDirection">enterKeyDirection</a>.</td>
     </tr>
     <tr>
         <td>Home<br/>End</td>
-        <td>Moves focus to the first/last cell of the current row.</td>
+        <td>Moves focus to the first/last cell of the current row.<br>Moves focus to the first/last item in the toolbar.</td>
     </tr>
     <tr>
         <td>Ctrl + Home<br/>Ctrl + End</td>
@@ -51,9 +41,27 @@ DataGrid offers different keyboard controls depending on which action users want
     </tr>
     <tr>
         <td>Ctrl + F</td>
-        <td>When focused on a cell, moves focus to the search panel if <b>searchPanel</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/searchPanel/#visible">visible</a> is "true".</td>
+        <td>When focused on a cell, moves focus to the search panel if <b>searchPanel</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/searchPanel/#visible">visible</a> is set to <code>true</code>.</td>
     </tr>
 </table>
+
+[note]
+
+- The following DataGrid features do not support the **Ctrl+Home** and **Ctrl+End** shortcuts:
+    - Group summaries
+    - Grouped data
+    - Expanded master-detail interfaces
+- When **scrolling**.[columnRenderingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/scrolling/columnRenderingMode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#columnRenderingMode') is set to *"virtual"*, the [filter row](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/') does not support keyboard navigation.
+- To navigate between toolbar items using **Tab**, you can disable the [allowKeyboardNavigation](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#allowKeyboardNavigation) property of the built-in DataGrid toolbar. Configure [onToolbarPreparing](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onToolbarPreparing) as follows:
+
+        <!-- tab: JavaScript -->
+        onToolbarPreparing(e) {
+            e.toolbarOptions.allowKeyboardNavigation = false;
+        }
+
+    If you disable **allowKeyboardNavigation**, the DataGrid toolbar no longer follows the [W3C ARIA APG Toolbar Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/). Your application will be less accessible to users who rely on keyboard navigation.
+
+[/note]
 
 ### Column Sorting and Reordering
 
@@ -68,11 +76,11 @@ DataGrid offers different keyboard controls depending on which action users want
     </tr>
     <tr>
         <td>Shift + Enter<br/>Shift + Space<br/>Shift + Click</td>
-        <td>Enables/cycles focused column sorting without clearing previous sorting options if <b>sorting</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/sorting/#mode">mode</a> is "multiple".</td>
+        <td>Enables/cycles focused column sorting without clearing previous sorting options if <b>sorting</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/sorting/#mode">mode</a> is set to <i>"multiple"</i>.</td>
     </tr>
     <tr>
         <td>Ctrl + Enter<br/>Ctrl + Space<br/>Ctrl + Click</td>
-        <td>Disables focused column sorting. Does not clear previous sorting options if <b>sorting</b>.<b>mode</b> is "multiple".</td>
+        <td>Disables focused column sorting. Does not clear previous sorting options if <b>sorting</b>.<b>mode</b> is set to <i>"multiple"</i>.</td>
     </tr>
     <tr>
         <td>Ctrl + Right Arrow<br/>Ctrl + Left Arrow</td>
@@ -119,14 +127,14 @@ DataGrid offers different keyboard controls depending on which action users want
     <tr>
         <td>Enter</td>
         <td>
-            When focused on a cell in normal mode, switches the component to edit mode if <b>keyboardNavigation</b>.<b>enterKeyAction</b> is "startEdit".<br/>
+            When focused on a cell in normal mode, switches the component to edit mode if <b>keyboardNavigation</b>.<b>enterKeyAction</b> is set to <i>"startEdit"</i>.<br/>
             When focused on a cell in edit mode, saves changes and switches the component to normal mode.<br/>
             When focused on a button in a command column, triggers the focused command button.
         </td>
     </tr>
     <tr>
         <td>F2</td>
-        <td>When focused on a cell in normal mode, switches the component to edit mode unless the focused cell's <b>editing</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode">mode</a> is "popup".</td>
+        <td>When focused on a cell in normal mode, switches the component to edit mode unless the focused cell's <b>editing</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/editing/#mode">mode</a> is set to <i>"popup"</i>.</td>
     </tr>
     <tr>
         <td>Alt + Down Arrow</td>
@@ -151,7 +159,7 @@ DataGrid offers different keyboard controls depending on which action users want
     </tr>
     <tr>
         <td>Space</td>
-        <td>Selects the focused cell's row and clears the previous selection if <b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#mode">mode</a> is "multiple" or "single" and <b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#showCheckBoxesMode">showCheckBoxesMode</a> is "none", "onClick", or "onLongTap". Does not clear previous selection if <b>selection</b>.<b>showCheckBoxesMode</b> is "always".</td>
+        <td>Selects the focused cell's row and clears the previous selection if <b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#mode">mode</a> is set to <i>"multiple"</i> or <i>"single"</i> and <b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#showCheckBoxesMode">showCheckBoxesMode</a> is set to <i>"none"</i>, <i>"onClick"</i>, or <i>"onLongTap"</i>. Does not clear previous selection if <b>selection</b>.<b>showCheckBoxesMode</b> is set to <i>"always"</i>.</td>
     </tr>
     <tr>
         <td>Ctrl + Space<br/>Ctrl + Click</td>
@@ -159,11 +167,11 @@ DataGrid offers different keyboard controls depending on which action users want
     </tr>
     <tr>
         <td>Shift + Space<br/>Shift + Click</td>
-        <td>Selects all items between the last selected row and the focused cell's row if <b>selection</b>.<b>mode</b> is "multiple".</td>
+        <td>Selects all items between the last selected row and the focused cell's row if <b>selection</b>.<b>mode</b> is set to <i>"multiple"</i>.</td>
     </tr>
     <tr>
         <td>Ctrl + A</td>
-        <td>Selects all rows if <b>selection</b>.<b>mode</b> is "multiple" and <b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#allowSelectAll">allowSelectAll</a> is "true".</td>
+        <td>Selects all rows if <b>selection</b>.<b>mode</b> is set to <i>"multiple"</i> and <b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#allowSelectAll">allowSelectAll</a> is set to <code>true</code>.</td>
     </tr>
 </table>
 

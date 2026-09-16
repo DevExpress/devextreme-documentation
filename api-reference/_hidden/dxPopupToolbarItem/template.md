@@ -1,15 +1,13 @@
-The following types of the specified value are available.
-
-- Assign a jQuery object of the template's container.
-- Assign a DOM Node of the template's container.
-- Assign a function that returns the jQuery object or a DOM Node of the template's container.
-
-[note]You cannot use the [dxTemplate](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/') component as a **toolbarItems** template.
-
-The following example adds a custom item to the Popup toolbar. Note that Angular and Vue use [custom templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates') instead of the **template** property. In React, specify the [render](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/toolbarItems/#render) or [component](/Documentation/ApiReference/UI_Components/dxPopup/Configuration/toolbarItems/#component) properties.
 
 ---
 ##### jQuery
+
+This property supports the following values:
+
+- Template container as a jQuery object or DOM Node
+- A function that returns a template container (as a jQuery object or DOM node)
+
+For more information about templates, refer to the following help topic: [DevExtreme {Framework} - Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates').
 
     <!-- tab: index.js -->
     $(function() {
@@ -25,6 +23,8 @@ The following example adds a custom item to the Popup toolbar. Note that Angular
     });
 
 ##### Angular
+
+For more information about templates, refer to the following help topic: [DevExtreme {Framework} - Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates').
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
@@ -69,6 +69,8 @@ The following example adds a custom item to the Popup toolbar. Note that Angular
 
 ##### Vue
 
+For more information about templates, refer to the following help topic: [DevExtreme {Framework} - Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates').
+
     <!-- tab: App.vue -->
     <template>
         <Dx{WidgetName}>
@@ -94,6 +96,10 @@ The following example adds a custom item to the Popup toolbar. Note that Angular
     </script>
 
 ##### React
+
+[note] Use the React-specific [render]({basewidgetpath}/Configuration/items/#render) and [component]({basewidgetpath}/Configuration/items/#component) properties instead of **template**.
+
+For more information about templates, refer to the following help topic: [DevExtreme {Framework} - Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates').
 
     <!-- tab: App.js -->
     import React from 'react';

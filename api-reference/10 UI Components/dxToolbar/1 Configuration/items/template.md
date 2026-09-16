@@ -22,14 +22,12 @@ The template name or container.
 ---
 ##### jQuery
 
-You can specify the following values:
+This property supports the following values:
 
-- Assign a string containing the name of the required [template](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/').
-- Assign a jQuery object of the template's container.
-- Assign a DOM Node of the template's container.
-- Assign a function that returns the jQuery object or a DOM Node of the template's container.
+- Template container as a jQuery object or DOM Node
+- A function that returns a template container (as a jQuery object or DOM node)
 
-The following example adds a custom item to the component.
+For more information about templates, refer to the following help topic: [DevExtreme {Framework} - Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates').
 
     <!-- tab: index.js -->
     $(function() {
@@ -46,12 +44,7 @@ The following example adds a custom item to the component.
 
 ##### Angular
 
-You can specify the following values:
-
-- Assign a string containing the name of the required [template](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/').
-- Assign a DOM Node of the template's container.
-
-The following example adds a custom item to the component. Note that Angular uses [custom templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates') instead of the **template** property.
+For more information about templates, refer to the following help topic: [DevExtreme {Framework} - Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates').
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
@@ -96,19 +89,14 @@ The following example adds a custom item to the component. Note that Angular use
 
 ##### Vue
 
-The following types of the specified value are available.
-
-- Assign a string containing the name of the required [template](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/').
-- Assign a DOM Node of the template's container.
-
-The following example adds a custom item to the component. Vue uses [custom templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates') instead of the **template** property.
+For more information about templates, refer to the following help topic: [DevExtreme {Framework} - Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates').
 
     <!-- tab: App.vue -->
     <template>
         <Dx{WidgetName} ... >
-            <dxItem ... >
+            <DxItem ... >
                 <div>Custom Item</div>
-            </dxItem>
+            </DxItem>
         </Dx{WidgetName}>
     </template>
 
@@ -129,12 +117,9 @@ The following example adds a custom item to the component. Vue uses [custom temp
 
 ##### React
 
-The following types of the specified value are available.
+[note] Use the React-specific [render]({basewidgetpath}/Configuration/items/#render) and [component]({basewidgetpath}/Configuration/items/#component) properties instead of **template**.
 
-- Assign a string containing the name of the required [template](/api-reference/10%20UI%20Components/Markup%20Components/dxTemplate '/Documentation/ApiReference/UI_Components/Markup_Components/dxTemplate/').
-- Assign a DOM Node of the template's container.
-
-The following example adds a custom item to the component. In React, specify the [render](/api-reference/_hidden/CollectionWidgetItem/render.md '{basewidgetpath}/Configuration/items/#render') or [component](/api-reference/_hidden/CollectionWidgetItem/component.md '{basewidgetpath}/Configuration/items/#component') properties.
+For more information about templates, refer to the following help topic: [DevExtreme {Framework} - Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates').
 
     <!-- tab: App.js -->
     import React from 'react';

@@ -15,7 +15,7 @@ You can use the following keys to interact with the Toolbar component when [allo
     </tr>
     <tr>
         <td>Up Arrow / Down Arrow</td>
-        <td>In the overflow, moves focus menu to the previous or next available Toolbar item.<br>When a ButtonGroup item has focus in the toolbar, moves focus between the ButtonGroup items.</td>
+        <td>In the overflow menu, moves focus to the previous or next available Toolbar item.<br>When a ButtonGroup item has focus in the toolbar, moves focus between the ButtonGroup items.</td>
     </tr>
     <tr>
         <td>Home / End</td>

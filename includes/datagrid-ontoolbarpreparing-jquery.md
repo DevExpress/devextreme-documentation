@@ -24,7 +24,7 @@ The following code snippet adds a refresh button to the toolbar:
 
     <!-- tab: app.component.html -->
     <dx-{widget-name}
-        (onToolbarPreparing)="handleToolbarPreparing"
+        (onToolbarPreparing)="handleToolbarPreparing($event)"
     ></dx-{widget-name}> 
 
     <!-- tab: app.component.ts -->

@@ -127,7 +127,7 @@ This tutorial also implements the **texts**.**message** variable defined in the 
     </tr>
 </table>
 
-Chat localizes these texts following your application locale. For more information about DevExtreme localization, refer to the following topic: [Localization](/concepts/Common/Localization '/concepts/Common/Localization%20and%20Globalization/00%20Overview.md').
+Chat localizes these texts following your application locale. For more information about DevExtreme localization, refer to the following topic: [Localization](/concepts/Common/Localization%20and%20Globalization/00%20Overview.md '/Documentation/Guide/Common/Localization_and_Globalization/Overview/').
 
 ### Customize the Chat when the Empty View is displayed
 

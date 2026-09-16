@@ -1,4 +1,4 @@
-This section configures a **Clear Chat** button in the built-in toolbar of DevExtreme [Popup](/Documentation/Guide/UI_Components/Popup/Overview/).
+This section shows how to configure a **Clear Chat** button in the built-in toolbar of DevExtreme [Popup](/Documentation/Guide/UI_Components/Popup/Overview/).
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/26_1/UIWidgets/Chat/AIClearButtonExamples/popup.html, /Content/Applications/26_1/UIWidgets/Chat/AIClearButtonExamples/popup.js, /Content/Applications/26_1/UIWidgets/Chat/AIClearButtonExamples/popup.css" style="border-radius: 12px;"></div>
 
@@ -220,7 +220,7 @@ Configure a DevExtreme Popup and define a Chat component within the Popup's [con
 
 ---
 
-To visually integrate DevExtreme Chat in the Popup, define styles as follows:
+To visually integrate the Chat component in the Popup, define styles as follows:
 
 - **Popup content element**: Set padding to 0.
 - **Chat element**: Disable the built-in border.

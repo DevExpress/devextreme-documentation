@@ -1,4 +1,4 @@
-This section configures a **Clear Chat** button in a DevExtreme [Drawer](/Documentation/Guide/UI_Components/Drawer/Getting_Started_with_Navigation_Drawer/).
+This section shows how to configure a **Clear Chat** button in a DevExtreme [Drawer](/Documentation/Guide/UI_Components/Drawer/Getting_Started_with_Navigation_Drawer/).
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/26_1/UIWidgets/Chat/AIClearButtonExamples/drawer.html, /Content/Applications/26_1/UIWidgets/Chat/AIClearButtonExamples/drawer.js, /Content/Applications/26_1/UIWidgets/Chat/AIClearButtonExamples/drawer.css" style="border-radius: 12px;"></div>
 
@@ -253,11 +253,11 @@ Define a Drawer component and configure DevExtreme [Toolbar](/Documentation/Guid
 
 ---
 
-To visually combine Chat and Toolbar components within the Drawer, define styles as follows:
+To visually combine the Chat and Toolbar components within the Drawer, define styles as follows:
 
-- **Drawer container element**: Define background color and border styles following DevExtreme component styling.
+- **Drawer container element**: Define the background color and border styles following DevExtreme component styling.
 - **Chat element**: Disable the built-in border.
-- **Toolbar element**: Add a lower border following DevExtreme component styling.
+- **Toolbar element**: Add a bottom border following DevExtreme component styling.
 
 <nbsp>
 

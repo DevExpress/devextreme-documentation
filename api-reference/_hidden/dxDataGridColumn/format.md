@@ -159,6 +159,6 @@ A column's default format depends on the data type; this type is detected automa
 
 #####See Also#####
 - [customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '{currentpath}/#customizeText')
-- [Value Formatting](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting '/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/00%20Value%20Formatting.md')
+- [Value Formatting](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/00%20Value%20Formatting.md '/Documentation/Guide/Common/Localization_and_Globalization/Value_Formatting/')
 
 <!-- import * from "api-reference\_hidden\GridBaseColumn\format.md" -->

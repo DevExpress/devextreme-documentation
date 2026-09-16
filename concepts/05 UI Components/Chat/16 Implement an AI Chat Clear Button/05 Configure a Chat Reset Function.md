@@ -25,7 +25,7 @@ This tutorial uses the same approach as the following technical demo to store me
     name: "AI and Chatbot Integration"
 }
 
-Call `clearChat()` in the [onClick](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick) handler of a DevExtreme [Button](/Documentation/Guide/UI_Components/Button/Overview/) to clear messages. You can initialize this button in the [disabled](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#disabled) state and enable the component in Chat's [onMessageEntered](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#onMessageEntered) handler:
+Call `clearChat()` in the [onClick](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick) handler of a DevExtreme [Button](/Documentation/Guide/UI_Components/Button/Overview/) to clear messages. You can initialize this button in the [disabled](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#disabled) state and enable the button in Chat's [onMessageEntered](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#onMessageEntered) handler:
 
     <!-- tab: JavaScript -->
     function handleClearChatButtonClick(e) {
@@ -37,7 +37,7 @@ Call `clearChat()` in the [onClick](/Documentation/ApiReference/UI_Components/dx
         clearChatButtonInstance.option('disabled', false);
     }
 
-If a user clicks the **Clear Chat** button while an AI request is in progress, you must abort this request to ensure the button works as expected. This tutorial passes an [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) to [AzureOpenAI](https://developers.openai.com/api/reference/typescript#microsoft-azure-openai) and calls [abort()](https://developer.mozilla.org/en-US/docs/Web/API/AbortController/abort) in the button's **onClick** handler:
+If a user clicks the **Clear Chat** button while an AI request is in progress, you must abort the request to ensure the button works as expected. This tutorial passes an `AbortSignal` from an [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) to [AzureOpenAI](https://developers.openai.com/api/reference/typescript#microsoft-azure-openai) and calls [abort()](https://developer.mozilla.org/en-US/docs/Web/API/AbortController/abort) in the button's **onClick** handler:
 
     <!-- tab: JavaScript -->
     let controller = new AbortController();
@@ -64,7 +64,7 @@ If a user clicks the **Clear Chat** button while an AI request is in progress, y
         controller.abort();
     }
 
-Assign a new **AbortController** to the `controller` variable to reset the controller in **onMessageEntered**:
+Assign a new **AbortController** to the `controller` variable in **onMessageEntered** to allow subsequent requests:
 
     function handleMessageEntered() {
         // ...

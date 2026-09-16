@@ -1,4 +1,4 @@
-This section configures a **Clear Chat** button with a standalone Chat component.
+This section shows how to configure a **Clear Chat** button with a standalone Chat component.
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/26_1/UIWidgets/Chat/AIClearButtonExamples/fullpage.html, /Content/Applications/26_1/UIWidgets/Chat/AIClearButtonExamples/fullpage.js, /Content/Applications/26_1/UIWidgets/Chat/AIClearButtonExamples/fullpage.css" style="border-radius: 12px;"></div>
 
@@ -179,11 +179,11 @@ Define DevExtreme Chat and [Toolbar](/Documentation/Guide/UI_Components/Toolbar/
 
 ---
 
-To visually combine Chat and Toolbar components, define styles as follows:
+To visually combine the Chat and Toolbar components, define styles as follows:
 
-- **Container element**: Define background color and border styles following DevExtreme component styling.
+- **Container element**: Define the background color and border styles to match DevExtreme component styling.
 - **Chat element**: Disable the built-in border.
-- **Toolbar element**: Add a lower border following DevExtreme component styling. Omit this style if you want to mirror the built-in header appearance of the DevExpress Blazor AI Chat control.
+- **Toolbar element**: Add a bottom border to match DevExtreme component styling. Omit this style to match the built-in header appearance of the DevExpress Blazor AI Chat control.
 
 <nbsp>
 

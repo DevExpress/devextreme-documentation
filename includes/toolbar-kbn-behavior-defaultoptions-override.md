@@ -1,4 +1,4 @@
-To navigate between toolbar items using **Tab**, you can disable [allowKeyboardNavigation](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#allowKeyboardNavigation) in {WidgetName} Toolbar instances. Call **dxToolbar**.[defaultOptions()](/Documentation/ApiReference/UI_Components/dxToolbar/Methods/#defaultOptionsrule) as follows:
+To navigate between toolbar items using the **Tab** key, disable [allowKeyboardNavigation](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#allowKeyboardNavigation) in {WidgetName} Toolbar instances. Call **dxToolbar**.[defaultOptions()](/Documentation/ApiReference/UI_Components/dxToolbar/Methods/#defaultOptionsrule) as follows:
 
 ---
 
@@ -73,4 +73,4 @@ To navigate between toolbar items using **Tab**, you can disable [allowKeyboardN
 
 Replace `.dx-{widgetname}` with a component ID or class to modify keyboard navigation behavior in a specific component only.
 
-[important] If you disable **allowKeyboardNavigation**, DevExtreme Toolbar no longer follows the [W3C ARIA APG Toolbar Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/). Your application will be less accessible to users who rely on keyboard navigation.
+[important] If you disable **allowKeyboardNavigation**, the DevExtreme Toolbar no longer follows the [W3C ARIA APG Toolbar Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/). Your application will be less accessible to users who rely on keyboard navigation.

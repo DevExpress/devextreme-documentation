@@ -112,7 +112,7 @@ The following code snippet adds a refresh button to the toolbar:
     href: "https://github.com/DevExpress-Examples/devextreme-datagrid-custom-column-chooser"
 }
 
-You can use **onToolbarPreparing** to modify the keyboard navigation behavior of the built-in {WidgetName} toolbar. The following code snippet disables [allowKeyboardNavigation](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#allowKeyboardNavigation) to allow users to navigate between toolbar items using the **Tab** key:
+You can use **onToolbarPreparing** to modify keyboard navigation behavior of the built-in {WidgetName} toolbar. The following code snippet disables [allowKeyboardNavigation](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#allowKeyboardNavigation) to allow users to navigate between toolbar items with the **Tab** key:
 
 ---
 

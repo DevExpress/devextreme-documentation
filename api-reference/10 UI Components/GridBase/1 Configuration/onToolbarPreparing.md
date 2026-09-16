@@ -7,7 +7,7 @@ type: function(e)
 A function that is executed before the toolbar is created.
 
 ##### param(e): Object
-Information about the event that caused the function's execution.
+Information about the event that caused function execution.
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.

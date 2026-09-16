@@ -1,4 +1,4 @@
-TreeList offers different keyboard controls depending on what action users wish to perform.
+The TreeList offers different keyboard controls depending on what action users wish to perform.
 
 ### Navigation
 
@@ -21,7 +21,7 @@ TreeList offers different keyboard controls depending on what action users wish 
     </tr>
     <tr>
         <td>Ctrl + Up Arrow<br/>Ctrl + Down Arrow</td>
-        <td>Moves focus between the component's areas, such as the data area, column headers area, group panel, and others.</td>
+        <td>Moves focus between component areas, such as the data area, column headers area, group panel, and others.</td>
     </tr>
     <tr>
         <td>Shift + Mouse Wheel</td>
@@ -29,7 +29,7 @@ TreeList offers different keyboard controls depending on what action users wish 
     </tr>
     <tr>
         <td>Enter</td>
-        <td>When focused on a cell, moves focus to the next cell if <b>keyboardNavigation</b>.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/keyboardNavigation/#enterKeyAction">enterKeyAction</a> is "moveFocus". The next cell is determined by <b>keyboardNavigation</b>.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/keyboardNavigation/#enterKeyDirection">enterKeyDirection</a>.</td>
+        <td>When focused on a cell, moves focus to the next cell if <b>keyboardNavigation</b>.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/keyboardNavigation/#enterKeyAction">enterKeyAction</a> is set to "moveFocus". The next cell is determined by <b>keyboardNavigation</b>.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/keyboardNavigation/#enterKeyDirection">enterKeyDirection</a>.</td>
     </tr>
     <tr>
         <td>Home<br/>End</td>
@@ -45,14 +45,14 @@ TreeList offers different keyboard controls depending on what action users wish 
     </tr>
     <tr>
         <td>Ctrl + F</td>
-        <td>When focused on a cell, moves focus to the search panel if <b>searchPanel</b>.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/searchPanel/#visible">visible</a> is "true".</td>
+        <td>When focused on a cell, moves focus to the search panel if <b>searchPanel</b>.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/searchPanel/#visible">visible</a> is set to "true".</td>
     </tr>
 </table>
 
 [note]
 
-- When **scrolling**.[columnRenderingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/scrolling/columnRenderingMode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/scrolling/#columnRenderingMode') is *"virtual"*, the [filter row](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/filterRow/') does not support keyboard navigation.
-- To navigate between toolbar items using **Tab**, you can disable the [allowKeyboardNavigation](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#allowKeyboardNavigation) property of the built-in TreeList toolbar. Configure [onToolbarPreparing](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onToolbarPreparing) as follows:
+- When **scrolling**.[columnRenderingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/scrolling/columnRenderingMode.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/scrolling/#columnRenderingMode') is set to *"virtual"*, the [filter row](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/filterRow/') does not support keyboard navigation.
+- To navigate between toolbar items using the **Tab** key, disable the [allowKeyboardNavigation](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#allowKeyboardNavigation) property of the built-in TreeList toolbar. Configure [onToolbarPreparing](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onToolbarPreparing) as follows:
 
         <!-- tab: JavaScript -->
         onToolbarPreparing(e) {
@@ -76,11 +76,11 @@ TreeList offers different keyboard controls depending on what action users wish 
     </tr>
     <tr>
         <td>Shift + Enter<br/>Shift + Space<br/>Shift + Click</td>
-        <td>Enables/cycles focused column sorting without clearing previous sorting options if <b>sorting</b>.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/sorting/#mode">mode</a> is "multiple".</td>
+        <td>Enables/cycles focused column sorting without clearing previous sorting options if <b>sorting</b>.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/sorting/#mode">mode</a> is set to "multiple".</td>
     </tr>
     <tr>
         <td>Ctrl + Enter<br/>Ctrl + Space<br/>Ctrl + Click</td>
-        <td>Disables focused column sorting. Does not clear previous sorting options if <b>sorting</b>.<b>mode</b> is "multiple".</td>
+        <td>Disables focused column sorting. Does not clear previous sorting options if <b>sorting</b>.<b>mode</b> is set to "multiple".</td>
     </tr>
     <tr>
         <td>Ctrl + Right Arrow<br/>Ctrl + Left Arrow</td>
@@ -98,14 +98,14 @@ TreeList offers different keyboard controls depending on what action users wish 
     <tr>
         <td>Enter</td>
         <td>
-            When focused on a cell in normal mode, switches the component to edit mode if <b>keyboardNavigation</b>.<b>enterKeyAction</b> is "startEdit".<br/>
+            When focused on a cell in normal mode, switches the component to edit mode if <b>keyboardNavigation</b>.<b>enterKeyAction</b> is set to "startEdit".<br/>
             When focused on a cell in edit mode, saves changes and switches the component to normal mode.<br/>
             When focused on a button in a command column, triggers the focused command button.
         </td>
     </tr>
     <tr>
         <td>F2</td>
-        <td>When focused on a cell in normal mode, switches the component to edit mode unless the focused cell's <b>editing</b>.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/#mode">mode</a> is "popup".</td>
+        <td>When focused on a cell in normal mode, switches the component to edit mode unless the focused cell's <b>editing</b>.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/editing/#mode">mode</a> is set to "popup".</td>
     </tr>
     <tr>
         <td>Alt + Down Arrow</td>
@@ -130,15 +130,15 @@ TreeList offers different keyboard controls depending on what action users wish 
     </tr>
     <tr>
         <td>Space</td>
-        <td>Selects the focused cell's row if <b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/selection/#mode">mode</a> is "multiple" or "single".</td>
+        <td>Selects the focused cell's row if <b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/selection/#mode">mode</a> is set to either "multiple" or "single".</td>
     </tr>
     <tr>
         <td>Shift + Space<br/>Shift + Click</td>
-        <td>Selects all items between the last selected row and the focused cell's row if <b>selection</b>.<b>mode</b> is "multiple".</td>
+        <td>Selects all items between the last selected row and the focused cell's row if <b>selection</b>.<b>mode</b> is set to "multiple".</td>
     </tr>
     <tr>
         <td>Ctrl + A</td>
-        <td>Selects all rows if <b>selection</b>.<b>mode</b> is "multiple" and <b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/selection/#allowSelectAll">allowSelectAll<a> is "true".</td>
+        <td>Selects all rows if <b>selection</b>.<b>mode</b> is set to "multiple" and <b>selection</b>.<a href="/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/selection/#allowSelectAll">allowSelectAll<a> is set to "true".</td>
     </tr>
 </table>
 

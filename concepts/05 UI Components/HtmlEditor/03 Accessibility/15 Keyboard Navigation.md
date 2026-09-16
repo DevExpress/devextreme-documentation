@@ -55,7 +55,7 @@ A user can use the following keys to interact with the HTML Editor component:
             <ul>
                 <li>Indent list items</li>
                 <li>Focus the next cell in tables</li>
-                <li>Focus the next focusable element on the page. If <code>keyboard.inlineTabInsertion</code> is enabled, insert a tab character (<code>\t</code>) in text.</li>
+                <li>Focus the next focusable element on the page. If <code>keyboard.inlineTabInsertion</code> is enabled, insert a tab character (<code>\t</code>) in the text.</li>
             </ul>
         </td>
     </tr>
@@ -71,7 +71,7 @@ A user can use the following keys to interact with the HTML Editor component:
                         <li>The previous focusable element on the page</li>
                         <li>The HTML Editor <a href="/Documentation/ApiReference/UI_Components/dxHtmlEditor/Configuration/toolbar/">toolbar</a> (if configured)</li>
                     </ul>
-                    If text contains tab characters (<code>\t</code>) and <code>keyboard.inlineTabInsertion</code> is enabled, remove a tab character from text.
+                    If text contains tab characters (<code>\t</code>) and <code>keyboard.inlineTabInsertion</code> is enabled, remove a tab character from the text.
                 </li>
             </ul>
         </td>    

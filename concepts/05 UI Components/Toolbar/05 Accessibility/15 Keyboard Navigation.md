@@ -27,7 +27,7 @@ You can use the following keys to interact with the Toolbar component when [allo
     </tr>
 </table>
 
-This keyboard navigation behavior applies to standalone Toolbar instances, as well as instances embedded in DevExtreme components such as DataGrid, FileManager, and Gantt. You can modify this behavior to allow users to navigate between items using **Tab**. Disable [allowKeyboardNavigation](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#allowKeyboardNavigation) in a [defaultOptions()](/Documentation/ApiReference/UI_Components/dxToolbar/Methods/#defaultOptionsrule) call as follows:
+This keyboard navigation behavior applies to standalone Toolbar instances, as well as instances embedded in DevExtreme components such as DataGrid, FileManager, and Gantt. You can modify this behavior to allow users to navigate between items with the **Tab** key. Disable [allowKeyboardNavigation](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#allowKeyboardNavigation) in a [defaultOptions()](/Documentation/ApiReference/UI_Components/dxToolbar/Methods/#defaultOptionsrule) call as follows:
 
 ---
 
@@ -102,4 +102,4 @@ This keyboard navigation behavior applies to standalone Toolbar instances, as we
 
 Replace `.dx-component-name` with a component ID or class.
 
-[important] If you disable **allowKeyboardNavigation**, Toolbar no longer follows the [W3C ARIA APG Toolbar Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/). Your application will be less accessible to users who rely on keyboard navigation.
+[important] If you disable **allowKeyboardNavigation**, the Toolbar no longer follows the [W3C ARIA APG Toolbar Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/). Your application will be less accessible to users who rely on keyboard navigation.

@@ -9,6 +9,7 @@ To ensure your app is accessible to users with vision impairments, we recommend 
 
 [note]
 
+- Fluent Next stylesheets calculate primary shades only in the `:root` scope. A `--dx-accent-color` declaration on a descendant element does not affect component colors.
 - Fluent Next stylesheets use the [oklch()](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/oklch) CSS function to calculate primary color shades. Older browsers may not support this function and may revert to predefined accents.
 - Certain calculated primary shades may not have sufficient color contrast with corresponding background or content colors. You can override these shades individually as follows:
 

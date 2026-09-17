@@ -1,4 +1,4 @@
-Fluent Next themes ship with light and dark theme modes. These modes are available as separate stylesheets:
+Fluent Next themes ship with light and dark theme modes. Each mode is available as a separate stylesheet in standard and compact sizes:
 
 - **Light**:
     - `dx.fluent-next.blue.light.css`

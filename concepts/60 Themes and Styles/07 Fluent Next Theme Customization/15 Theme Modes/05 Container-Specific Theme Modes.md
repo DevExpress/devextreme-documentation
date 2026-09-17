@@ -13,11 +13,13 @@ Use one of the following classes to specify a theme mode for a container:
 - `dx-theme-mode-dark`: Applies **dark** mode styles to a container and its children
 - `dx-theme-mode-inverted`: Applies the opposite theme mode relative to a container's nearest enclosing mode
 
-Fluent Next stylesheets define the `--dx-theme-mode` CSS variable in containers that use theme mode classes. This variable allows you to add mode-specific styles to your application using the [@container](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@container) CSS at-rule:
+Fluent Next stylesheets store current modes in the `--dx-theme-mode` CSS variable. Each container that uses theme modes defines this variable, including the document root. Use the [@container](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@container) CSS at-rule to add mode-specific styles to your application:
 
     <!-- tab: CSS -->
     @container style(--dx-theme-mode: dark) {
-        .my-panel { background: #1d1d1d; }
+        .my-panel {
+            background: #1d1d1d;
+        }
     }
 
 You can change container theme modes at runtime. Styles in custom elements and DevExtreme components update immediately. Call [refreshMode()](/Documentation/ApiReference/Common/Utils/ui/themes/#refreshMode) only to update styles in open component overlays:
@@ -38,6 +40,7 @@ You can change container theme modes at runtime. Styles in custom elements and D
             $('.dx-theme-mode-light')
                 .removeClass('dx-theme-mode-light')
                 .addClass('dx-theme-mode-dark');
+            // Updates open overlays
             DevExpress.ui.themes.refreshMode();
         },
     })
@@ -63,6 +66,7 @@ You can change container theme modes at runtime. Styles in custom elements and D
 
         changeThemeMode() {
             this.containerClass = 'dx-theme-mode-dark';
+            // Updates open overlays
             refreshMode();
         }
     }
@@ -88,6 +92,7 @@ You can change container theme modes at runtime. Styles in custom elements and D
 
     function changeThemeMode() {
         containerClass.value = 'dx-theme-mode-dark';
+        // Updates open overlays
         refreshMode();
     }
     </script>
@@ -104,6 +109,7 @@ You can change container theme modes at runtime. Styles in custom elements and D
 
         const changeThemeMode = useCallback(() => {
             setContainerClass('dx-theme-mode-dark');
+            // Updates open overlays
             refreshMode();
         }, []);
 
@@ -139,7 +145,7 @@ You can change container theme modes at runtime. Styles in custom elements and D
         </body>
     </html>
 
-You can call the [mode(element)](/Documentation/ApiReference/Common/Utils/ui/themes/#modeelement) method to get the calculated theme mode of an element (*"light"* or *"dark"*) in JavaScript. The following code snippet returns *"light"* for the `.three` element from the previous sample:
+Call the [mode(element)](/Documentation/ApiReference/Common/Utils/ui/themes/#modeelement) method to get the calculated theme mode of an element (*"light"* or *"dark"*) in JavaScript. The following code snippet returns *"light"* for the `.three` element from the previous sample:
 
 ---
 
@@ -151,27 +157,47 @@ You can call the [mode(element)](/Documentation/ApiReference/Common/Utils/ui/the
 ##### Angular
 
     <!-- tab: app.component.ts -->
+    import { AfterViewInit } from "@angular/core";
     import { mode } from "devextreme/ui/themes";
     
     // ...
-    export class AppComponent {
-        calculatedMode = mode(document.querySelector('.three')!);
+    export class AppComponent implements AfterViewInit {
+        calculatedMode = '';
+
+        ngAfterViewInit() {
+            this.calculatedMode = mode(document.querySelector('.three')!);
+        }
     }
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <script setup lang="ts">
+    import { onMounted, ref } from "vue";
     import { mode } from "devextreme/ui/themes";
 
-    const calculatedMode = mode(document.querySelector('.three')!);
+    const calculatedMode = ref('');
+
+    onMounted(() => {
+        calculatedMode.value = mode(document.querySelector('.three')!);
+    });
     </script>
 
 ##### React
 
     <!-- tab: App.tsx -->
+    import { useEffect, useState } from 'react';
     import { mode } from "devextreme/ui/themes";
 
-    const calculatedMode = mode(document.querySelector('.three')!);
+    export default function App() {
+        const [calculatedMode, setCalculatedMode] = useState('');
+
+        useEffect(() => {
+            setCalculatedMode(mode(document.querySelector('.three')!));
+        }, []);
+        // ...
+    }
 
 ---
+
+[note] You can call this method for any element, inside or outside a theme mode container. If no container declares a mode, the method reads the mode from the active Fluent Next stylesheet. The method always returns *"light"* or *"dark"*.

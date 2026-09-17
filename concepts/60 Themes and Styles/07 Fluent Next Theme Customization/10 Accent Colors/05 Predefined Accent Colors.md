@@ -65,10 +65,11 @@ The following accent stylesheets are available:
 
 - Blue is the default accent color in Fluent Next themes. You do not need to import the blue accent stylesheet to apply this accent color.
 - Theme and accent stylesheets define colors on the same selector (`:root`). To ensure accent colors are applied, load your app's accent stylesheet immediately after the theme stylesheet.
-- [Custom accent colors]({currentpath}/#Accent_Colors/Custom_Accent_Colors) always override predefined accent colors regardless of the stylesheet load order. Predefined accent stylesheets define colors as fallback values to custom colors:
+- [Custom accent colors]({currentpath}/#Accent_Colors/Custom_Accent_Colors) override predefined accent colors regardless of stylesheet load order. Predefined accent stylesheets declare shades as fallback values for `--dx-accent-color-*` variables:
 
         <!-- tab: CSS -->
-        --dxds-primary-*: var(--dx-accent-color-*, #f4f8fc);
+        /* Shade 10 of the Blue accent stylesheet */
+        --dxds-primary-10: var(--dx-accent-color-10, #f4f8fc);
 
 - Accent stylesheets apply to all variations of Fluent Next (light and dark modes, standard and compact sizes). To switch theme modes or sizes, swap the theme stylesheet only.
 

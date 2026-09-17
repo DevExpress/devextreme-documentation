@@ -39,14 +39,14 @@ You can apply these variables to custom elements to ensure a consistent look acr
         border-color: var(--dxds-color-border-hovered);
     }
 
-To override variables for an entire page, define overrides for the `:root` selector.
+To override variables for an entire page, use the `:root` selector:
 
     <!-- tab: CSS -->
     :root {
         --dxds-color-bg-primary: #b06ab3;
     }
 
-[note] Load the stylesheet where you define `:root` overrides immediately after the Fluent Next stylesheet to ensure your application applies these styles. To define overrides in stylesheets loaded before the Fluent Next stylesheet, use class or ID selectors.
+[note] `:root` overrides and Fluent Next stylesheets share the same specificity. Load your override stylesheet after the Fluent Next stylesheet to apply these styles. Scoped overrides that use class or ID selectors apply regardless of load order.
 
 CSS variable overrides also allow you to modify styles of DevExtreme components. You can define overrides for individual components or wrap multiple components in a container and define overrides on the container level. This allows you to apply unique styles to different parts of your application. The following code snippet overrides [semantic variables](https://docs.devexpress.com/DesignSystem/405706/colors/color-css-variables):
 
@@ -141,8 +141,8 @@ Components that display content in overlays do not apply component element style
 
 2. **Use wrapperAttr Properties**    
     You can define the following properties to add selector attributes to component overlay wrappers:
-    - **wrapperAttr**
-    - **dropDownOptions**.**wrapperAttr**
+    - **wrapperAttr**: Specify this property in overlay components (Popup, Popover, Toast, LoadPanel).
+    - **dropDownOptions**.**wrapperAttr**: Specify this property in editors that display drop-downs (SelectBox, Lookup, DateBox, ColorBox, DropDownBox, DropDownButton, Autocomplete).
 
     ---
 
@@ -177,7 +177,7 @@ Components that display content in overlays do not apply component element style
 
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
-        import { DxPopupModule, DxSelectBoxModule }
+        import { DxPopupModule, DxSelectBoxModule } from 'devextreme-angular';
 
         @Component({
             imports: [DxPopupModule, DxSelectBoxModule, /* ... */],
@@ -215,7 +215,7 @@ Components that display content in overlays do not apply component element style
 
         <!-- tab: App.tsx -->
         import { Popup } from 'devextreme-react/popup';
-        import { SelectBox, DropDownOptions } from 'devextreme-react/popup';
+        import { SelectBox, DropDownOptions } from 'devextreme-react/select-box';
 
         const wrapperAttr = {
             class: 'dark-colors-custom',

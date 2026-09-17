@@ -39,6 +39,15 @@ You can apply these variables to custom elements to ensure a consistent look acr
         border-color: var(--dxds-color-border-hovered);
     }
 
+To override variables for an entire page, define overrides for the `:root` selector.
+
+    <!-- tab: CSS -->
+    :root {
+        --dxds-color-bg-primary: #b06ab3;
+    }
+
+[note] Load the stylesheet where you define `:root` overrides immediately after the Fluent Next stylesheet to ensure your application applies these styles. To define overrides in stylesheets loaded before the Fluent Next stylesheet, use class or ID selectors.
+
 CSS variable overrides also allow you to modify styles of DevExtreme components. You can define overrides for individual components or wrap multiple components in a container and define overrides on the container level. This allows you to apply unique styles to different parts of your application. The following code snippet overrides [semantic variables](https://docs.devexpress.com/DesignSystem/405706/colors/color-css-variables):
 
     <!-- tab: CSS -->
@@ -131,7 +140,9 @@ Components that display content in overlays do not apply component element style
     Note that DevExtreme does not generate `.dx-swatch-*` wrapper containers for components where the **container** property is defined.
 
 2. **Use wrapperAttr Properties**    
-Components that include **wrapperAttr** properties allow you to add selectors that define variable overrides to overlay wrappers:
+    You can define the following properties to add selector attributes to component overlay wrappers:
+    - **wrapperAttr**
+    - **dropDownOptions**.**wrapperAttr**
 
     ---
 
@@ -140,25 +151,41 @@ Components that include **wrapperAttr** properties allow you to add selectors th
         <!-- tab: index.js -->
         $("#popup").dxPopup({
             wrapperAttr: {
-                class: "dark-colors-custom"
-            }
+                class: "dark-colors-custom",
+            },
+        });
+
+        $("#selectBox").dxSelectBox({
+            dropDownOptions: {
+                wrapperAttr: {
+                    class: "dark-colors-custom",
+                },
+            },
         });
 
     ##### Angular
 
         <!-- tab: app.component.html-->
         <dx-popup
-            [wrapperAttr]="popupWrapperAttr"
+            [wrapperAttr]="wrapperAttr"
         ></dx-popup>
+        <dx-select-box>
+            <dxo-select-box-drop-down-options
+                [wrapperAttr]="wrapperAttr"
+            ></dxo-select-box-drop-down-options>
+        </dx-select-box>
 
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
+        import { DxPopupModule, DxSelectBoxModule }
 
         @Component({
-            imports: [DxPopupModule, /* ... */],
+            imports: [DxPopupModule, DxSelectBoxModule, /* ... */],
         })
         export class AppComponent {
-            popupWrapperAttr = { class: 'dark-colors-custom' };
+            wrapperAttr = {
+                class: 'dark-colors-custom',
+            };
         }
 
     ##### Vue
@@ -166,28 +193,46 @@ Components that include **wrapperAttr** properties allow you to add selectors th
         <!-- tab: App.vue -->
         <template>
             <DxPopup
-                :wrapper-attr="popupWrapperAttr"
+                :wrapper-attr="wrapperAttr"
             />
+            <DxSelectBox>
+                <DxDropDownOptions
+                    :wrapper-attr="wrapperAttr"
+                />
+            </DxSelectBox>
         </template>
 
         <script setup lang="ts">
         import { DxPopup } from 'devextreme-vue/popup';
+        import { DxSelectBox, DxDropDownOptions } from 'devextreme-vue/select-box';
 
-        const popupWrapperAttr = { class: 'dark-colors-custom' };
+        const wrapperAttr = {
+            class: 'dark-colors-custom',
+        };
         </script>
 
     ##### React
 
         <!-- tab: App.tsx -->
         import { Popup } from 'devextreme-react/popup';
+        import { SelectBox, DropDownOptions } from 'devextreme-react/popup';
 
-        const popupWrapperAttr = { class: 'dark-colors-custom' };
+        const wrapperAttr = {
+            class: 'dark-colors-custom',
+        };
 
         export default function App() {
             return (
-                <Popup
-                    wrapperAttr={popupWrapperAttr}
-                />
+                <>
+                    <Popup
+                        wrapperAttr={wrapperAttr}
+                    />
+                    <SelectBox>
+                        <DropDownOptions
+                            wrapperAttr={wrapperAttr}
+                        />
+                    </SelectBox>
+                </>
             );
         }
 

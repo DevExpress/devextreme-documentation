@@ -52,7 +52,7 @@ DataGrid offers different keyboard controls depending on which action users want
     - Grouped data
     - Expanded master-detail interfaces
 - When **scrolling**.[columnRenderingMode](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/scrolling/columnRenderingMode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#columnRenderingMode') is set to *"virtual"*, the [filter row](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/filterRow '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/filterRow/') does not support keyboard navigation.
-- To navigate between toolbar items using **Tab**, you can disable the [allowKeyboardNavigation](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#allowKeyboardNavigation) property of the built-in DataGrid toolbar. Configure [onToolbarPreparing](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onToolbarPreparing) as follows:
+- To navigate between toolbar items using **Tab**, you can disable the [allowKeyboardNavigation](/api-reference/10%20UI%20Components/dxToolbar/1%20Configuration/allowKeyboardNavigation.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#allowKeyboardNavigation') property of the built-in DataGrid toolbar. Configure [onToolbarPreparing](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onToolbarPreparing.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onToolbarPreparing') as follows:
 
         <!-- tab: JavaScript -->
         onToolbarPreparing(e) {

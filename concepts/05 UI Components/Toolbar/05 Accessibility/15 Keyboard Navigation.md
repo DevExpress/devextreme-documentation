@@ -27,7 +27,7 @@ You can use the following keys to interact with the Toolbar component when [allo
     </tr>
 </table>
 
-This keyboard navigation behavior applies to standalone Toolbar instances, as well as instances embedded in DevExtreme components such as DataGrid, FileManager, and Gantt. You can modify this behavior to allow users to navigate between items with the **Tab** key. Disable [allowKeyboardNavigation](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#allowKeyboardNavigation) in a [defaultOptions()](/Documentation/ApiReference/UI_Components/dxToolbar/Methods/#defaultOptionsrule) call as follows:
+This keyboard navigation behavior applies to standalone Toolbar instances, as well as instances embedded in DevExtreme components such as DataGrid, FileManager, and Gantt. You can modify this behavior to allow users to navigate between items with the **Tab** key. Disable [allowKeyboardNavigation](/api-reference/10%20UI%20Components/dxToolbar/1%20Configuration/allowKeyboardNavigation.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/#allowKeyboardNavigation') in a [defaultOptions()](/api-reference/10%20UI%20Components/DOMComponent/3%20Methods/defaultOptions(rule).md '/Documentation/ApiReference/UI_Components/dxToolbar/Methods/#defaultOptionsrule') call as follows:
 
 ---
 

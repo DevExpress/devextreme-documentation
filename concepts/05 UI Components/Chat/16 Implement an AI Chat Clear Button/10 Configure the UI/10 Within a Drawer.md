@@ -1,8 +1,8 @@
-This section shows how to configure a **Clear Chat** button in a DevExtreme [Drawer](/Documentation/Guide/UI_Components/Drawer/Getting_Started_with_Navigation_Drawer/).
+This section shows how to configure a **Clear Chat** button in a DevExtreme [Drawer](/concepts/05%20UI%20Components/Drawer/00%20Getting%20Started%20with%20Navigation%20Drawer '/Documentation/Guide/UI_Components/Drawer/Getting_Started_with_Navigation_Drawer/').
 
 <div class="simulator-desktop-container" data-view="/Content/Applications/26_1/UIWidgets/Chat/AIClearButtonExamples/drawer.html, /Content/Applications/26_1/UIWidgets/Chat/AIClearButtonExamples/drawer.js, /Content/Applications/26_1/UIWidgets/Chat/AIClearButtonExamples/drawer.css" style="border-radius: 12px;"></div>
 
-Define a Drawer component and configure DevExtreme [Toolbar](/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/) and Chat in the Drawer's [template](/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#template) as follows:
+Define a Drawer component and configure DevExtreme [Toolbar](/concepts/05%20UI%20Components/Toolbar/00%20Getting%20Started%20with%20Toolbar '/Documentation/Guide/UI_Components/Toolbar/Getting_Started_with_Toolbar/') and Chat in the Drawer's [template](/api-reference/10%20UI%20Components/dxDrawer/1%20Configuration/template.md '/Documentation/ApiReference/UI_Components/dxDrawer/Configuration/#template') as follows:
 
 ---
 

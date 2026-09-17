@@ -1,4 +1,4 @@
-Fluent Next themes allow you to define theme modes for specific containers in your application. Container-specific modes allow you to use dark mode styles in a lght mode application and vice versa. These modes apply to DevExtreme components and HTML elements.
+Fluent Next themes allow you to define theme modes for specific containers in your application. Container-specific modes allow you to use dark mode styles in a light mode application and vice versa. These modes apply to DevExtreme components and HTML elements.
 
 [note]
 
@@ -11,9 +11,16 @@ Use one of the following classes to specify a theme mode for a container:
 
 - `dx-theme-mode-light`: Applies **light** mode styles to a container and its children
 - `dx-theme-mode-dark`: Applies **dark** mode styles to a container and its children
-- `dx-theme-mode-inverted`: Applies the opposite theme mode relative to a container's parent
+- `dx-theme-mode-inverted`: Applies the opposite theme mode relative to a container's nearest enclosing mode
 
-You can change container theme modes at runtime. To ensure DevExtreme component styles are updated, call [refreshMode()]() after you update a container's theme mode:
+Fluent Next stylesheets define the `--dx-theme-mode` CSS variable in containers that use theme mode classes. This variable allows you to add mode-specific styles to your application using the [@container](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@container) CSS at-rule:
+
+    <!-- tab: CSS -->
+    @container style(--dx-theme-mode: dark) {
+        .my-panel { background: #1d1d1d; }
+    }
+
+You can change container theme modes at runtime. Styles in custom elements and DevExtreme components update immediately. Call [refreshMode()](/Documentation/ApiReference/Common/Utils/ui/themes/#refreshMode) only to update styles in open component overlays:
 
 ---
 
@@ -38,7 +45,7 @@ You can change container theme modes at runtime. To ensure DevExtreme component 
 ##### Angular
 
     <!-- tab: app.component.ts -->
-    import refreshMode from "devextreme/ui/themes";
+    import { refreshMode } from "devextreme/ui/themes";
     import { DxButtonModule } from "devextreme-angular";
     
     @Component({
@@ -56,7 +63,7 @@ You can change container theme modes at runtime. To ensure DevExtreme component 
 
         changeThemeMode() {
             this.containerClass = 'dx-theme-mode-dark';
-            refreshTheme();
+            refreshMode();
         }
     }
 
@@ -73,14 +80,15 @@ You can change container theme modes at runtime. To ensure DevExtreme component 
     </template>
 
     <script setup lang="ts">
-    import refreshMode from "devextreme/ui/themes";
+    import { ref } from "vue";
+    import { refreshMode } from "devextreme/ui/themes";
     import { DxButton } from 'devextreme-vue/button';
 
-    const containerClass: string = 'dx-theme-mode-light';
+    const containerClass = ref('dx-theme-mode-light');
 
     function changeThemeMode() {
-        containerClass = 'dx-theme-mode-dark';
-        refreshTheme();
+        containerClass.value = 'dx-theme-mode-dark';
+        refreshMode();
     }
     </script>
 
@@ -89,7 +97,7 @@ You can change container theme modes at runtime. To ensure DevExtreme component 
     <!-- tab: App.tsx -->
     import React, { useCallback, useState } from 'react';
     import Button from 'devextreme-react/button';
-    import refreshMode from 'devextreme/ui/themes';
+    import { refreshMode } from 'devextreme/ui/themes';
 
     export default function App() {
         const [containerClass, setContainerClass] = useState('dx-theme-mode-light');
@@ -100,7 +108,7 @@ You can change container theme modes at runtime. To ensure DevExtreme component 
         }, []);
 
         return (
-            <div class={containerClass}>
+            <div className={containerClass}>
                 <Button
                     text="Change Theme Mode"
                     onClick={changeThemeMode}
@@ -114,53 +122,56 @@ You can change container theme modes at runtime. To ensure DevExtreme component 
 `dx-theme-mode-inverted` supports nesting. The following code snippet demonstrates three nesting levels:
 
     <!-- tab: HTML -->
-    <body class="dx-viewport dx-theme-mode-dark">
-        <!-- Dark mode within body -->
-
-        <div class="one dx-theme-mode-inverted">
-            <!-- Light mode within .one -->
-            <div class="two dx-theme-mode-inverted">
-                <!-- Dark mode within .two -->
-                <div class="three dx-theme-mode-inverted">
-                    <!-- Light mode within .three -->
+    <!DOCTYPE html>
+    <html class="dx-theme-mode-dark">
+        <!-- Dark mode for the entire page -->
+        <head><!-- ... --></head>
+        <body class="dx-viewport">
+            <div class="one dx-theme-mode-inverted">
+                <!-- Light mode within .one -->
+                <div class="two dx-theme-mode-inverted">
+                    <!-- Dark mode within .two -->
+                    <div class="three dx-theme-mode-inverted">
+                        <!-- Light mode within .three -->
+                    </div>
                 </div>
             </div>
-        </div>
-    </body>
+        </body>
+    </html>
 
-You can call the [mode(element)]() method to get the calculated theme mode of an element (*"light"* or *"dark"*). The following code snippet returns *"light"* for the `.three` element from the previous sample:
+You can call the [mode(element)](/Documentation/ApiReference/Common/Utils/ui/themes/#modeelement) method to get the calculated theme mode of an element (*"light"* or *"dark"*) in JavaScript. The following code snippet returns *"light"* for the `.three` element from the previous sample:
 
 ---
 
 ##### jQuery  
 
     <!-- tab: index.js -->
-    const calculatedMode = DevExpress.ui.themes.mode('.three');
+    const calculatedMode = DevExpress.ui.themes.mode($('.three'));
 
 ##### Angular
 
     <!-- tab: app.component.ts -->
-    import mode from "devextreme/ui/themes";
+    import { mode } from "devextreme/ui/themes";
     
     // ...
     export class AppComponent {
-        calculatedMode: string = mode('.three');
+        calculatedMode = mode(document.querySelector('.three')!);
     }
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <script setup lang="ts">
-    import mode from "devextreme/ui/themes";
+    import { mode } from "devextreme/ui/themes";
 
-    const calculatedMode: string = mode('.three');
+    const calculatedMode = mode(document.querySelector('.three')!);
     </script>
 
 ##### React
 
     <!-- tab: App.tsx -->
-    import mode from "devextreme/ui/themes";
+    import { mode } from "devextreme/ui/themes";
 
-    const calculatedMode: string = mode('.three');
+    const calculatedMode = mode(document.querySelector('.three')!);
 
 ---

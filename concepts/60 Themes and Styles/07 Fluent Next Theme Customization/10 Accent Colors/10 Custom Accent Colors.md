@@ -1,4 +1,4 @@
-Fluent Next stylesheets ship with a CSS rule that calculates [primary shades](https://docs.devexpress.com/DesignSystem/405638/colors/theme-palettes/fluent-theme-palettes#fluent-primary) from the `--dx-accent-color` variable. Assign a color to this variable to use Fluent Next themes with a custom accent color:
+Fluent Next stylesheets ship with a CSS rule that calculates [primary shades](https://docs.devexpress.com/DesignSystem/405638/colors/theme-palettes/fluent-theme-palettes#fluent-primary) from the `--dx-accent-color` variable defined in `:root`. Assign a color to this variable in a `:root` declaration block to use Fluent Next themes with a custom accent color:
 
     <!-- tab: CSS -->
     :root {

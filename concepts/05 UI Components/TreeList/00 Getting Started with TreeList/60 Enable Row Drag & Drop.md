@@ -1,9 +1,9 @@
-TreeList allows users to drag and drop rows to reorder records or modify the node hierarchy. To configure this feature, specify the following [rowDragging](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/rowDragging '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/') options:
+TreeList allows users to drag and drop rows to reorder records or modify the node hierarchy. To configure this feature, specify the following [rowDragging](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/rowDragging '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/') options:
 
 - [allowReordering](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/rowDragging/allowReordering.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#allowReordering')
 - [allowDropInsideItem](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/rowDragging/allowDropInsideItem.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#allowDropInsideItem')
-- [onDragChange](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/rowDragging/onDragChange.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#onDragChange')
-- [onReorder](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/rowDragging/onReorder.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#onReorder')
+- [onDragChange](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/rowDragging/onDragChange.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#onDragChange')
+- [onReorder](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/rowDragging/onReorder.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#onReorder')
 
 [note] Sorting overrides row order changes applied using drag and drop. Do not specify initial sort orders (**columns[]**.[sortOrder](/api-reference/_hidden/GridBaseColumn/sortOrder.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#sortOrder')) to ensure row drag and drop functions correctly.
 

@@ -7115,9 +7115,6 @@
       "react": "ColumnChooser",
       "vue": "DxColumnChooser"
     },
-    "columnChooser.allowSearch": {
-      "vue": "allow-search"
-    },
     "columnChooser.emptyPanelText": {
       "vue": "empty-panel-text"
     },
@@ -7130,9 +7127,6 @@
       "angular": "dxo-search",
       "react": "Search",
       "vue": "DxSearch"
-    },
-    "columnChooser.searchTimeout": {
-      "vue": "search-timeout"
     },
     "columnChooser.selection": {
       "angular": "dxo-selection",
@@ -7165,9 +7159,6 @@
       "angular": "dxo-column-header-filter",
       "react": "ColumnHeaderFilter",
       "vue": "DxColumnHeaderFilter"
-    },
-    "columnHeaderFilter.allowSearch": {
-      "vue": "allow-search"
     },
     "columnHeaderFilter.allowSelectAll": {
       "vue": "allow-select-all"
@@ -13938,9 +13929,6 @@
       "react": "DxGanttHeaderFilter",
       "vue": "DxGanttHeaderFilter"
     },
-    "dxGanttHeaderFilter.allowSearch": {
-      "vue": "allow-search"
-    },
     "dxGanttHeaderFilter.allowSelectAll": {
       "vue": "allow-select-all"
     },
@@ -15939,9 +15927,6 @@
       "react": "HeaderFilter",
       "vue": "DxHeaderFilter"
     },
-    "dxPivotGridFieldChooserOptions.headerFilter.allowSearch": {
-      "vue": "allow-search"
-    },
     "dxPivotGridFieldChooserOptions.headerFilter.allowSelectAll": {
       "vue": "allow-select-all"
     },
@@ -16112,9 +16097,6 @@
       "angular": "dxo-header-filter",
       "react": "HeaderFilter",
       "vue": "DxHeaderFilter"
-    },
-    "dxPivotGridOptions.headerFilter.allowSearch": {
-      "vue": "allow-search"
     },
     "dxPivotGridOptions.headerFilter.allowSelectAll": {
       "vue": "allow-select-all"
@@ -22623,9 +22605,6 @@
       "react": "HeaderFilter",
       "vue": "DxHeaderFilter"
     },
-    "headerFilter.allowSearch": {
-      "vue": "allow-search"
-    },
     "headerFilter.allowSelectAll": {
       "vue": "allow-select-all"
     },
@@ -23076,9 +23055,6 @@
       "angular": "dxo-header-filter",
       "react": "HeaderFilter",
       "vue": "DxHeaderFilter"
-    },
-    "pivotGridDataSourceOptions.fields.headerFilter.allowSearch": {
-      "vue": "allow-search"
     },
     "pivotGridDataSourceOptions.fields.headerFilter.allowSelectAll": {
       "vue": "allow-select-all"

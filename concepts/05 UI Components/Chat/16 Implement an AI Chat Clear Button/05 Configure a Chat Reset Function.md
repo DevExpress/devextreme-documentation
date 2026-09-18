@@ -1,6 +1,6 @@
 To clear messages in DevExtreme Chat, follow these steps:
 
-1. Get the component [DataSource](/Documentation/ApiReference/Data_Layer/DataSource/) instance and call **store**.[push()](/Documentation/ApiReference/Data_Layer/CustomStore/Methods/#pushchanges) to clear messages in the UI.
+1. Get the component [DataSource](/api-reference/30%20Data%20Layer/DataSource '/Documentation/ApiReference/Data_Layer/DataSource/') instance and call **store**.[push()](/api-reference/30%20Data%20Layer/Store/3%20Methods/push(changes).md '/Documentation/ApiReference/Data_Layer/CustomStore/Methods/#pushchanges') to clear messages in the UI.
 2. Empty the dxChat's data source array.
 3. If you use a separate array to store AI messages, empty this array.
 
@@ -25,7 +25,7 @@ This tutorial uses the same approach as the following technical demo to store me
     name: "AI and Chatbot Integration"
 }
 
-Call `clearChat()` in the [onClick](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick) handler of a DevExtreme [Button](/Documentation/Guide/UI_Components/Button/Overview/) to clear messages. You can initialize this button in the [disabled](/Documentation/ApiReference/UI_Components/dxButton/Configuration/#disabled) state and enable the button in Chat's [onMessageEntered](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#onMessageEntered) handler:
+Call `clearChat()` in the [onClick](/api-reference/10%20UI%20Components/dxButton/1%20Configuration/onClick.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#onClick') handler of a DevExtreme [Button](/concepts/05%20UI%20Components/Button/02%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/Button/Overview/') to clear messages. You can initialize this button in the [disabled](/api-reference/10%20UI%20Components/Widget/1%20Configuration/disabled.md '/Documentation/ApiReference/UI_Components/dxButton/Configuration/#disabled') state and enable the button in Chat's [onMessageEntered](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/onMessageEntered.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#onMessageEntered') handler:
 
     <!-- tab: JavaScript -->
     function handleClearChatButtonClick(e) {

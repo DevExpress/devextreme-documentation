@@ -7,31 +7,31 @@ You can use the following keys to interact with the DevExtreme PivotGrid compone
     </tr>
     <tr>
         <td>Tab / Shift + Tab</td>
-        <td>Shifts focus between focusable component areas.</td>
+        <td>Moves focus to the next or previous area (column headers, row headers, and field areas).</td>
     </tr>
     <tr>
         <td>Arrow Keys</td>
-        <td>Moves focus between cells in the column, row, and filter areas.</td>
+        <td>Moves focus between row header cells, column header cells, and fields within an area.</td>
     </tr>
     <tr>
-        <td>Enter<br>Space</td>
-        <td>Expands or collapses focused cells.<br>Opens the integrated field chooser.<br>Enables sorting for field area items and toggles the sort order.</td>
+        <td>Enter / Space</td>
+        <td>Expands or collapses the focused header cell.<br>Opens the integrated field chooser when the Field Chooser button is focused.<br>Sorts fields and toggles their sort order.</td>
     </tr>
     <tr>
         <td>Alt + Down Arrow<br>&#8997; + Down Arrow (Mac)</td>
-        <td>Opens the focused header filter.</td>
+        <td>Opens the header filter for the focused field.</td>
     </tr>
     <tr>
-        <td>Shift + Mouse Wheel</td>	
+        <td>Shift + Mouse Wheel</td>
         <td>Scrolls content left/right if horizontal scrolling is active.</td>
     </tr>
     <tr>
         <td>Page Up / Page Down</td>
-        <td>Scrolls the content up/down by a whole page.</td>
+        <td>Scrolls content one page up/down.</td>
     </tr>
     <tr>
         <td>Home / End</td>
-        <td>Scrolls the content to the top/bottom.</td>
+        <td>Scrolls content to the top/bottom.</td>
     </tr>
     <tr>
         <td>Esc</td>

@@ -4,7 +4,7 @@
 
 This property supports the following values:
 
-- Template container as a jQuery object or DOM Node
+- A template container as a jQuery object or DOM Node
 - A function that returns a template container (as a jQuery object or DOM node)
 
 For more information about templates, refer to the following help topic: [DevExtreme {Framework} - Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates').

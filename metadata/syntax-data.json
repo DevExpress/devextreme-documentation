@@ -1228,6 +1228,41 @@
     "_ui_data_grid_RowDblClickEvent.rowType": {
       "vue": "row-type"
     },
+    "_ui_data_grid_RowDraggingAddEvent": {
+      "angular": "dxo-ui-data-grid--row-dragging-add-event",
+      "react": "_ui_data_grid_RowDraggingAddEvent",
+      "vue": "Dx_ui_data_grid_RowDraggingAddEvent"
+    },
+    "_ui_data_grid_RowDraggingChangeEvent": {
+      "angular": "dxo-ui-data-grid--row-dragging-change-event",
+      "react": "_ui_data_grid_RowDraggingChangeEvent",
+      "vue": "Dx_ui_data_grid_RowDraggingChangeEvent"
+    },
+    "_ui_data_grid_RowDraggingEndEvent": {
+      "angular": "dxo-ui-data-grid--row-dragging-end-event",
+      "react": "_ui_data_grid_RowDraggingEndEvent",
+      "vue": "Dx_ui_data_grid_RowDraggingEndEvent"
+    },
+    "_ui_data_grid_RowDraggingMoveEvent": {
+      "angular": "dxo-ui-data-grid--row-dragging-move-event",
+      "react": "_ui_data_grid_RowDraggingMoveEvent",
+      "vue": "Dx_ui_data_grid_RowDraggingMoveEvent"
+    },
+    "_ui_data_grid_RowDraggingRemoveEvent": {
+      "angular": "dxo-ui-data-grid--row-dragging-remove-event",
+      "react": "_ui_data_grid_RowDraggingRemoveEvent",
+      "vue": "Dx_ui_data_grid_RowDraggingRemoveEvent"
+    },
+    "_ui_data_grid_RowDraggingReorderEvent": {
+      "angular": "dxo-ui-data-grid--row-dragging-reorder-event",
+      "react": "_ui_data_grid_RowDraggingReorderEvent",
+      "vue": "Dx_ui_data_grid_RowDraggingReorderEvent"
+    },
+    "_ui_data_grid_RowDraggingStartEvent": {
+      "angular": "dxo-ui-data-grid--row-dragging-start-event",
+      "react": "_ui_data_grid_RowDraggingStartEvent",
+      "vue": "Dx_ui_data_grid_RowDraggingStartEvent"
+    },
     "_ui_data_grid_RowExpandedEvent": {
       "angular": "dxo-ui-data-grid--row-expanded-event",
       "react": "_ui_data_grid_RowExpandedEvent",
@@ -4906,6 +4941,41 @@
     "_ui_tree_list_RowDblClickEvent.rowType": {
       "vue": "row-type"
     },
+    "_ui_tree_list_RowDraggingAddEvent": {
+      "angular": "dxo-ui-tree-list--row-dragging-add-event",
+      "react": "_ui_tree_list_RowDraggingAddEvent",
+      "vue": "Dx_ui_tree_list_RowDraggingAddEvent"
+    },
+    "_ui_tree_list_RowDraggingChangeEvent": {
+      "angular": "dxo-ui-tree-list--row-dragging-change-event",
+      "react": "_ui_tree_list_RowDraggingChangeEvent",
+      "vue": "Dx_ui_tree_list_RowDraggingChangeEvent"
+    },
+    "_ui_tree_list_RowDraggingEndEvent": {
+      "angular": "dxo-ui-tree-list--row-dragging-end-event",
+      "react": "_ui_tree_list_RowDraggingEndEvent",
+      "vue": "Dx_ui_tree_list_RowDraggingEndEvent"
+    },
+    "_ui_tree_list_RowDraggingMoveEvent": {
+      "angular": "dxo-ui-tree-list--row-dragging-move-event",
+      "react": "_ui_tree_list_RowDraggingMoveEvent",
+      "vue": "Dx_ui_tree_list_RowDraggingMoveEvent"
+    },
+    "_ui_tree_list_RowDraggingRemoveEvent": {
+      "angular": "dxo-ui-tree-list--row-dragging-remove-event",
+      "react": "_ui_tree_list_RowDraggingRemoveEvent",
+      "vue": "Dx_ui_tree_list_RowDraggingRemoveEvent"
+    },
+    "_ui_tree_list_RowDraggingReorderEvent": {
+      "angular": "dxo-ui-tree-list--row-dragging-reorder-event",
+      "react": "_ui_tree_list_RowDraggingReorderEvent",
+      "vue": "Dx_ui_tree_list_RowDraggingReorderEvent"
+    },
+    "_ui_tree_list_RowDraggingStartEvent": {
+      "angular": "dxo-ui-tree-list--row-dragging-start-event",
+      "react": "_ui_tree_list_RowDraggingStartEvent",
+      "vue": "Dx_ui_tree_list_RowDraggingStartEvent"
+    },
     "_ui_tree_list_RowExpandedEvent": {
       "angular": "dxo-ui-tree-list--row-expanded-event",
       "react": "_ui_tree_list_RowExpandedEvent",
@@ -7519,6 +7589,9 @@
     "domComponentOptions.rtlEnabled": {
       "vue": "rtl-enabled"
     },
+    "dragDropInfo.dropInsideItem": {
+      "vue": "drop-inside-item"
+    },
     "draggableBaseOptions.autoScroll": {
       "vue": "auto-scroll"
     },
@@ -7538,6 +7611,21 @@
     },
     "draggableBaseOptions.scrollSpeed": {
       "vue": "scroll-speed"
+    },
+    "dragReorderInfo.dropInsideItem": {
+      "vue": "drop-inside-item"
+    },
+    "dragStartEventInfo.fromData": {
+      "vue": "from-data"
+    },
+    "dragStartEventInfo.fromIndex": {
+      "vue": "from-index"
+    },
+    "dragStartEventInfo.itemData": {
+      "vue": "item-data"
+    },
+    "dragStartEventInfo.itemElement": {
+      "vue": "item-element"
     },
     "dxAccordion": {
       "angular": "dx-accordion",
@@ -10959,6 +11047,32 @@
     },
     "dxDataGridOptions.remoteOperations.groupPaging": {
       "vue": "group-paging"
+    },
+    "dxDataGridOptions.rowDragging": {
+      "angular": "dxo-row-dragging",
+      "react": "RowDragging",
+      "vue": "DxRowDragging"
+    },
+    "dxDataGridOptions.rowDragging.onAdd": {
+      "vue": "@add"
+    },
+    "dxDataGridOptions.rowDragging.onDragChange": {
+      "vue": "@drag-change"
+    },
+    "dxDataGridOptions.rowDragging.onDragEnd": {
+      "vue": "@drag-end"
+    },
+    "dxDataGridOptions.rowDragging.onDragMove": {
+      "vue": "@drag-move"
+    },
+    "dxDataGridOptions.rowDragging.onDragStart": {
+      "vue": "@drag-start"
+    },
+    "dxDataGridOptions.rowDragging.onRemove": {
+      "vue": "@remove"
+    },
+    "dxDataGridOptions.rowDragging.onReorder": {
+      "vue": "@reorder"
     },
     "dxDataGridOptions.rowTemplate": {
       "vue": "row-template"
@@ -20024,6 +20138,32 @@
     "dxTreeListOptions.rootValue": {
       "vue": "root-value"
     },
+    "dxTreeListOptions.rowDragging": {
+      "angular": "dxo-row-dragging",
+      "react": "RowDragging",
+      "vue": "DxRowDragging"
+    },
+    "dxTreeListOptions.rowDragging.onAdd": {
+      "vue": "@add"
+    },
+    "dxTreeListOptions.rowDragging.onDragChange": {
+      "vue": "@drag-change"
+    },
+    "dxTreeListOptions.rowDragging.onDragEnd": {
+      "vue": "@drag-end"
+    },
+    "dxTreeListOptions.rowDragging.onDragMove": {
+      "vue": "@drag-move"
+    },
+    "dxTreeListOptions.rowDragging.onDragStart": {
+      "vue": "@drag-start"
+    },
+    "dxTreeListOptions.rowDragging.onRemove": {
+      "vue": "@remove"
+    },
+    "dxTreeListOptions.rowDragging.onReorder": {
+      "vue": "@reorder"
+    },
     "dxTreeListOptions.scrolling": {
       "angular": "dxo-scrolling",
       "react": "Scrolling",
@@ -22284,11 +22424,6 @@
     "gridBaseOptions.rowAlternationEnabled": {
       "vue": "row-alternation-enabled"
     },
-    "gridBaseOptions.rowDragging": {
-      "angular": "dxo-row-dragging",
-      "react": "RowDragging",
-      "vue": "DxRowDragging"
-    },
     "gridBaseOptions.rowDragging.allowDropInsideItem": {
       "vue": "allow-drop-inside-item"
     },
@@ -22311,27 +22446,6 @@
     },
     "gridBaseOptions.rowDragging.dropFeedbackMode": {
       "vue": "drop-feedback-mode"
-    },
-    "gridBaseOptions.rowDragging.onAdd": {
-      "vue": "@add"
-    },
-    "gridBaseOptions.rowDragging.onDragChange": {
-      "vue": "@drag-change"
-    },
-    "gridBaseOptions.rowDragging.onDragEnd": {
-      "vue": "@drag-end"
-    },
-    "gridBaseOptions.rowDragging.onDragMove": {
-      "vue": "@drag-move"
-    },
-    "gridBaseOptions.rowDragging.onDragStart": {
-      "vue": "@drag-start"
-    },
-    "gridBaseOptions.rowDragging.onRemove": {
-      "vue": "@remove"
-    },
-    "gridBaseOptions.rowDragging.onReorder": {
-      "vue": "@reorder"
     },
     "gridBaseOptions.rowDragging.scrollSensitivity": {
       "vue": "scroll-sensitivity"
@@ -23031,6 +23145,30 @@
       "angular": "dxo-required-rule",
       "react": "RequiredRule",
       "vue": "DxRequiredRule"
+    },
+    "rowDraggingEventInfo.fromComponent": {
+      "vue": "from-component"
+    },
+    "rowDraggingEventInfo.fromData": {
+      "vue": "from-data"
+    },
+    "rowDraggingEventInfo.fromIndex": {
+      "vue": "from-index"
+    },
+    "rowDraggingEventInfo.itemData": {
+      "vue": "item-data"
+    },
+    "rowDraggingEventInfo.itemElement": {
+      "vue": "item-element"
+    },
+    "rowDraggingEventInfo.toComponent": {
+      "vue": "to-component"
+    },
+    "rowDraggingEventInfo.toData": {
+      "vue": "to-data"
+    },
+    "rowDraggingEventInfo.toIndex": {
+      "vue": "to-index"
     },
     "rowUpdatingInfo.newData": {
       "angular": "dxo-new-data",

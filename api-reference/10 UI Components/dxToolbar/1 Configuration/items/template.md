@@ -1,10 +1,30 @@
+---
+id: dxToolbar.Options.items.template
+type: template
+---
+---
+##### shortDescription
+Specifies the template used to render this item.
 
+##### return: String | Element | jQuery
+The template name or container.
+
+##### param(itemData): CollectionWidgetItem
+<!-- %param(itemData)% -->
+
+##### param(itemIndex): Number
+<!-- %param(itemIndex)% -->
+
+##### param(itemElement): DxElement
+<!-- %param(itemElement)% -->
+
+---
 ---
 ##### jQuery
 
 This property supports the following values:
 
-- A template container as a jQuery object or DOM Node
+- A template container as a jQuery object or DOM node
 - A function that returns a template container (as a jQuery object or DOM node)
 
 For more information about templates, refer to the following help topic: [DevExtreme {Framework} - Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates').
@@ -13,12 +33,12 @@ For more information about templates, refer to the following help topic: [DevExt
     $(function() {
         $("#{widgetName}Container").dx{WidgetName}({
             // ...
-            toolbarItems: [
+            items: [
                 {
                     // ...
                     template: '<div>Custom Item</div>'
                 }
-            }]            
+            ]
         });
     });
 
@@ -28,11 +48,11 @@ For more information about templates, refer to the following help topic: [DevExt
 
     <!-- tab: app.component.html -->
     <dx-{widget-name} ... >
-        <dxi-popup-toolbar-item ...>
+        <dxi-{widget-name}-item ... >
             <div *dxTemplate>
                 <div>Custom Item</div>
             </div>
-        </dxi-popup-toolbar-item>
+        </dxi-{widget-name}-item>
     </dx-{widget-name}>
 
     <!-- tab: app.component.ts -->
@@ -73,23 +93,23 @@ For more information about templates, refer to the following help topic: [DevExt
 
     <!-- tab: App.vue -->
     <template>
-        <Dx{WidgetName}>
-            <DxToolbarItem ...>
+        <Dx{WidgetName} ... >
+            <DxItem ... >
                 <div>Custom Item</div>
-            </DxToolbarItem>
+            </DxItem>
         </Dx{WidgetName}>
     </template>
 
     <script>
 
     import Dx{WidgetName}, {
-        DxToolbarItem
+        DxItem
     } from 'devextreme-vue/{widget-name}';
 
     export default {
         components: {
             Dx{WidgetName},
-            DxToolbarItem
+            DxItem
         },
         // ...
     }
@@ -104,23 +124,21 @@ For more information about templates, refer to the following help topic: [DevExt
     <!-- tab: App.js -->
     import React from 'react';
 
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import {WidgetName}, {
-        ToolbarItem
+        Item
     } from 'devextreme-react/{widget-name}';
 
     const renderCustomItem = () => {
         return <div>Custom Item</div>;
     }
 
-    function App() {
+    const App() = () => {
         return (
             <{WidgetName} ... >
-                <ToolbarItem ... 
+                <Item ...
                     render={renderCustomItem}
                 >
-                </ToolbarItem>
+                </Item>
             </{WidgetName}>
         );
     }
@@ -129,3 +147,8 @@ For more information about templates, refer to the following help topic: [DevExt
 ---
 
 #include toolbar-buttongroup-widget-template-menu-note
+
+#####See Also#####
+- [Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates')
+
+<!-- import * from 'api-reference\10 UI Components\CollectionWidget\1 Configuration\itemTemplate.md' -->

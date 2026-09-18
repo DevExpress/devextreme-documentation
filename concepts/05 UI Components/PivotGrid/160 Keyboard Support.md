@@ -10,12 +10,12 @@ You can use the following keys to interact with the DevExtreme PivotGrid compone
         <td>Moves focus between cells in the column, row, and filter areas.</td>
     </tr>
     <tr>
-        <td>Enter<br/>Space</td>
+        <td>Enter<br>Space</td>
         <td>Expands or collapses focused cells.<br>Opens the integrated field chooser.<br>Enables sorting for field area items and toggles the sort order.</td>
     </tr>
     <tr>
         <td>Alt + Down Arrow<br>&#8997; + Down Arrow (Mac)</td>
-        <td>Expands or collapses focused cells.<br>Opens the integrated field chooser.<br>Enables sorting for field area items and toggles the sort order.</td>
+        <td>Opens the focused header filter.</td>
     </tr>
     <tr>
         <td>Shift + Mouse Wheel</td>	

@@ -1,4 +1,4 @@
-An end user can use the following keys to interact with the UI component.
+You can use the following keys to interact with the DevExtreme PivotGrid component:
 
 <table class="dx-table">
     <tr>
@@ -6,13 +6,21 @@ An end user can use the following keys to interact with the UI component.
         <th>Action</th>
     </tr>
     <tr>
-        <td>Up Arrow / Down Arrow</td>
-        <td>Scrolls the content up/down.</td>
+        <td>Arrow Keys</td>
+        <td>Moves focus between cells in the column, row, and filter areas.</td>
     </tr>
-    <tr>	
-        <td>Shift + Mouse Wheel or Left Arrow / Right Arrow</td>	
-        <td>Scrolls the content left/right.
-    </td>
+    <tr>
+        <td>Enter<br/>Space</td>
+        <td>Expands or collapses focused cells.<br>Opens the integrated field chooser.<br>Enables sorting for field area items and toggles the sort order.</td>
+    </tr>
+    <tr>
+        <td>Alt + Down Arrow<br>&#8997; + Down Arrow (Mac)</td>
+        <td>Expands or collapses focused cells.<br>Opens the integrated field chooser.<br>Enables sorting for field area items and toggles the sort order.</td>
+    </tr>
+    <tr>
+        <td>Shift + Mouse Wheel</td>	
+        <td>Scrolls content left/right if horizontal scrolling is active.</td>
+    </tr>
     <tr>
         <td>Page Up / Page Down</td>
         <td>Scrolls the content up/down by a whole page.</td>
@@ -24,7 +32,6 @@ An end user can use the following keys to interact with the UI component.
 </table>
 
 #####See Also#####
-#include common-link-callmethods
 - [PivotGrid Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/Overview/)
 - [PivotGrid API Reference](/api-reference/10%20UI%20Components/dxPivotGrid '/Documentation/ApiReference/UI_Components/dxPivotGrid/')
 

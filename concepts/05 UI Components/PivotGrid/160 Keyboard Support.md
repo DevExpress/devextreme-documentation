@@ -6,6 +6,10 @@ You can use the following keys to interact with the DevExtreme PivotGrid compone
         <th>Action</th>
     </tr>
     <tr>
+        <td>Tab / Shift + Tab</td>
+        <td>Shifts focus between focusable component areas.</td>
+    </tr>
+    <tr>
         <td>Arrow Keys</td>
         <td>Moves focus between cells in the column, row, and filter areas.</td>
     </tr>
@@ -28,6 +32,10 @@ You can use the following keys to interact with the DevExtreme PivotGrid compone
     <tr>
         <td>Home / End</td>
         <td>Scrolls the content to the top/bottom.</td>
+    </tr>
+    <tr>
+        <td>Esc</td>
+        <td>Closes the integrated field chooser.</td>
     </tr>
 </table>
 

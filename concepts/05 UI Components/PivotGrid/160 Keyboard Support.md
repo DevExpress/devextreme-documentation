@@ -1,4 +1,4 @@
-An end user can use the following keys to interact with the UI component.
+You can use the following keys to interact with the DevExtreme PivotGrid component:
 
 <table class="dx-table">
     <tr>
@@ -6,25 +6,40 @@ An end user can use the following keys to interact with the UI component.
         <th>Action</th>
     </tr>
     <tr>
-        <td>Up Arrow / Down Arrow</td>
-        <td>Scrolls the content up/down.</td>
+        <td>Tab / Shift + Tab</td>
+        <td>Moves focus to the next or previous area (column headers, row headers, and field areas).</td>
     </tr>
-    <tr>	
-        <td>Shift + Mouse Wheel or Left Arrow / Right Arrow</td>	
-        <td>Scrolls the content left/right.
-    </td>
+    <tr>
+        <td>Arrow Keys</td>
+        <td>Moves focus between row header cells, column header cells, and fields within an area.</td>
+    </tr>
+    <tr>
+        <td>Enter / Space</td>
+        <td>Expands or collapses the focused header cell.<br>Opens the integrated field chooser when the Field Chooser button is focused.<br>Sorts fields and toggles their sort order.</td>
+    </tr>
+    <tr>
+        <td>Alt + Down Arrow<br>&#8997; + Down Arrow (Mac)</td>
+        <td>Opens the header filter for the focused field.</td>
+    </tr>
+    <tr>
+        <td>Shift + Mouse Wheel</td>
+        <td>Scrolls content left/right if horizontal scrolling is active.</td>
+    </tr>
     <tr>
         <td>Page Up / Page Down</td>
-        <td>Scrolls the content up/down by a whole page.</td>
+        <td>Scrolls content one page up/down.</td>
     </tr>
     <tr>
         <td>Home / End</td>
-        <td>Scrolls the content to the top/bottom.</td>
+        <td>Scrolls content to the top/bottom.</td>
+    </tr>
+    <tr>
+        <td>Esc</td>
+        <td>Closes the integrated field chooser.</td>
     </tr>
 </table>
 
 #####See Also#####
-#include common-link-callmethods
 - [PivotGrid Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/Overview/)
 - [PivotGrid API Reference](/api-reference/10%20UI%20Components/dxPivotGrid '/Documentation/ApiReference/UI_Components/dxPivotGrid/')
 

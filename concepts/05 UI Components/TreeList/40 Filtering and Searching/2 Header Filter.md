@@ -241,7 +241,7 @@ A user can change the applied filter by including or excluding values. Use a col
     
 ---
 
-You can use the **headerFilter**.[allowSearch](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/headerFilter/allowSearch.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/headerFilter/#allowSearch') property to enable the header filter's searching capability. The same property can be declared in a column's configuration object, in which case it controls searching in that column's header filter.
+You can use the **headerFilter**.**search**.[enabled](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/headerFilter/search/#enabled) property to enable the header filter's searching capability. The same property can be declared in a column's configuration object, in which case it controls searching in that column's header filter.
 
 ---
 ##### jQuery

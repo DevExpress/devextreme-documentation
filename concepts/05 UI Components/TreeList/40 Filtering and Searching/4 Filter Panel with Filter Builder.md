@@ -220,43 +220,40 @@ The **filterValue** is updated when a user changes the filter expression from th
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import type { TreeListTypes } from 'devextreme-react/tree-list';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import TreeList, {
-        FilterPanel
-    } from 'devextreme-react/tree-list';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                filterValue: ['SaleAmount', '<>', null]
-            }
-        }
-
-        render() {
-            let { filterValue } = this.state;
-            return (
-                <TreeList ...
-                    onOptionChanged={this.onOptionChanged} 
-                    filterValue={filterValue}>
-                    <FilterPanel visible={true} />                  
-                </TreeList>
-            );
-        }
-        onOptionChanged = (e) => {
-            if(e.fullName === "filterValue") {
-                this.applyFilter(e.value);
-            }      
-        }
-        applyFilter = (filterExpression) => {
-            this.setState({
-                filterValue: filterExpression
-            });
-        }
+    import TreeList, { FilterPanel } from 'devextreme-react/tree-list';
+    function App() {
+        const [state, setState] = useState<{
+            filterValue: unknown[] | null;
+        }>({
+            filterValue: ['SaleAmount', '<>', null],
+        });
+        const applyFilter = useCallback((filterExpression: unknown[] | null) => {
+            setState((prevState) => ({ ...prevState, filterValue: filterExpression }));
+        }, []);
+        const onOptionChanged = useCallback(
+            (e: TreeListTypes.OptionChangedEvent) => {
+                if (e.fullName === 'filterValue') {
+                    applyFilter(e.value);
+                }
+            },
+            [applyFilter]
+        );
+        const { filterValue } = state;
+        return (
+            <TreeList
+                ...
+                onOptionChanged={onOptionChanged}
+                filterValue={filterValue}
+            >
+                <FilterPanel visible={true} />
+            </TreeList>
+        );
     }
+    export default App;
 
 ---
 
@@ -406,62 +403,53 @@ The TreeList provides the [filterBuilder](/api-reference/10%20UI%20Components/Gr
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import Button from 'devextreme-react/button';
-
     import TreeList, {
-        FilterPanel,        
+        FilterPanel,
         FilterBuilder,
-        FilterBuilderPopup
+        FilterBuilderPopup,
     } from 'devextreme-react/tree-list';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                popupVisible: false
-            }
-            this.customOperations = [{
-                name: "isZero",
-                caption: "Is Zero",
-                dataTypes: ["number"],
-                hasValue: false,
-                calculateFilterExpression: function(filterValue, field) {
-                    return [field.dataField, "=", 0];
-                }
-            }]
-        }
-
-        render() {
-            let { popupVisible } = this.state;
-            return (
-                <React.Fragment>
-                    <TreeList ... 
-                        filterSyncEnabled={true} >
-                        <FilterPanel visible={false} />
-                        <FilterBuilder customOperations={this.customOperations} />
-                        <FilterBuilderPopup 
-                            width={400}
-                            title="Synchronized Filter"
-                            visible={popupVisible}
-                        />                  
-                    </TreeList>
-                    <Button 
-                        text="Show Filter Builder" 
-                        onClick={this.showFilterBuilder} 
+    import type { FilterBuilderTypes } from 'devextreme-react/filter-builder';
+    const customOperations: FilterBuilderTypes.CustomOperation[] = [
+        {
+            name: 'isZero',
+            caption: 'Is Zero',
+            dataTypes: ['number'],
+            hasValue: false,
+            calculateFilterExpression: function (filterValue, field) {
+                return [field.dataField, '=', 0];
+            },
+        },
+    ];
+    function App() {
+        const [state, setState] = useState<{
+            popupVisible: boolean;
+        }>({
+            popupVisible: false,
+        });
+        const showFilterBuilder = useCallback(() => {
+            setState((prevState) => ({ ...prevState, popupVisible: true }));
+        }, []);
+        const { popupVisible } = state;
+        return (
+            <React.Fragment>
+                <TreeList ... filterSyncEnabled={true}>
+                    <FilterPanel visible={false} />
+                    <FilterBuilder customOperations={customOperations} />
+                    <FilterBuilderPopup
+                        width={400}
+                        title="Synchronized Filter"
+                        visible={popupVisible}
                     />
-                </React.Fragment>
-            );
-        }
-        showFilterBuilder = () => {
-            this.setState({
-                popupVisible: true
-            });
-        }
+                </TreeList>
+                <Button text="Show Filter Builder" onClick={showFilterBuilder} />
+            </React.Fragment>
+        );
     }
+    export default App;
 
 ---
 

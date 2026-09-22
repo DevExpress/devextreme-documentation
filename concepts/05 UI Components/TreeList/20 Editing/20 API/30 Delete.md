@@ -99,46 +99,29 @@ Call the [deleteRow(rowIndex)](/api-reference/10%20UI%20Components/GridBase/3%20
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { TreeListRef } from 'devextreme-react/tree-list';
+    import React, { useCallback, useRef } from 'react';
     import { TreeList, Editing } from 'devextreme-react/tree-list';
     import Button from 'devextreme-react/button';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-
-            this.treeListRef = React.createRef();
-            this.deleteRow = this.deleteRow.bind(this);
-        }
-        get treeList() {
-            return this.treeListRef.current.instance();
-        }
-
-        deleteRow() {
-            this.treeList.deleteRow(1);
-        }
-
-        render() {
-            return (
-                <TreeList  
-                    ref={this.treeListRef}>
-                    <Editing
-                        mode="row"
-                        confirmDelete={false}
-                        allowDeleting={true} 
-                    />
+    function App() {
+        const treeListRef = useRef<TreeListRef>(null);
+        const deleteRow = useCallback(() => {
+            const treeListRefInstance = treeListRef.current?.instance();
+            if (!treeListRefInstance) return;
+            treeListRefInstance.deleteRow(1);
+        }, []);
+        return (
+            <>
+                <TreeList ref={treeListRef}>
+                    <Editing mode="row" confirmDelete={false} allowDeleting={true} />
                 </TreeList>
-                <Button
-                    text="Delete Row"
-                    onClick={this.deleteRow}
-                />
-            );
-        }
+                <Button text="Delete Row" onClick={deleteRow} />
+            </>
+        );
     }
     export default App;
-    
+
 ---
 
 Note that in the [batch mode](/concepts/05%20UI%20Components/TreeList/20%20Editing/10%20User%20Interaction/30%20Batch%20Mode.md '/Documentation/Guide/UI_Components/TreeList/Editing/#User_Interaction/Batch_Mode') a row is only marked as deleted. To save changes, call the [saveEditData()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/saveEditData().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#saveEditData') method. Calling the [undeleteRow(rowIndex)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/undeleteRow(rowIndex).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#undeleteRowrowIndex') method cancels row deletion.
@@ -197,35 +180,20 @@ Note that in the [batch mode](/concepts/05%20UI%20Components/TreeList/20%20Editi
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { TreeListRef } from 'devextreme-react/tree-list';
+    import React, { useCallback, useRef } from 'react';
     import { TreeList } from 'devextreme-react/tree-list';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-
-            this.treeListRef = React.createRef();
-            this.undeleteRow = this.undeleteRow.bind(this);
-        }
-        get treeList() {
-            return this.treeListRef.current.instance();
-        }
-
-        undeleteRow() {
-            this.treeList.undeleteRow(1);
-        }
-
-        render() {
-            return (
-                <TreeList  
-                    ref={this.treeListRef}
-                />
-            );
-        }
+    function App() {
+        const treeListRef = useRef<TreeListRef>(null);
+        const undeleteRow = useCallback(() => {
+            const treeListRefInstance = treeListRef.current?.instance();
+            if (!treeListRefInstance) return;
+            treeListRefInstance.undeleteRow(1);
+        }, []);
+        return <TreeList ref={treeListRef} />;
     }
-    export default App;    
+    export default App;
 
 ---
 

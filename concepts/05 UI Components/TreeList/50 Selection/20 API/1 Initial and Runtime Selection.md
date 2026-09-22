@@ -89,39 +89,35 @@ Use the [selectedRowKeys](/api-reference/10%20UI%20Components/GridBase/1%20Confi
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
-
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import TreeList from 'devextreme-react/tree-list';
     import DataSource from 'devextreme/data/data_source';
     import 'devextreme/data/array_store';
     // or
     // import 'devextreme/data/odata/store';
     // import 'devextreme/data/custom_store';
-
     const treeListDataSource = new DataSource({
         store: {
             // ...
-            key: 'id'
-        }
+            type: 'array',
+            data: [],
+            key: 'id',
+        },
     });
-
-    class App extends React.Component {
-        selectedRowKeys = [1, 5, 18];
-
-        render() {
-            return (
-                <TreeList ...
-                    dataSource={treeListDataSource}
-                    defaultSelectedRowKeys={this.selectedRowKeys}>
-                </TreeList>
-            );
-        }
+    const selectedRowKeys = [1, 5, 18];
+    function App() {
+        return (
+            <TreeList
+                ...
+                dataSource={treeListDataSource}
+                defaultSelectedRowKeys={selectedRowKeys}
+            ></TreeList>
+        );
     }
     export default App;
-    
+
 ---
 
 You can select rows at runtime using the [selectRows(keys, preserve)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/selectRows(keys_preserve).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#selectRowskeys_preserve') method. Note that the **preserve** argument, which tells the UI component whether to keep or clear the previous selection, is **false** by default. Before selecting a row, you can call the [isRowSelected(key)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/isRowSelected(key).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#isRowSelectedkey') method to check if this row is already selected. If you need to select all rows at once, call the [selectAll()](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/selectAll().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#selectAll') method.
@@ -202,50 +198,42 @@ You can select rows at runtime using the [selectRows(keys, preserve)](/api-refer
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { TreeListTypes } from 'devextreme-react/tree-list';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import TreeList from 'devextreme-react/tree-list';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                selectedRowKeys: []
-            }
-            this.selectFirstRow = this.selectFirstRow.bind(this);
-        	this.handleOptionChange = this.handleOptionChange.bind(this);
-        }
-
-        selectFirstRow(e) {
+    function App() {
+        const [state, setState] = useState<{
+            selectedRowKeys: Array<string | number>;
+        }>({
+            selectedRowKeys: [],
+        });
+        const selectFirstRow = useCallback((e: TreeListTypes.ContentReadyEvent) => {
+            if (e.component.getVisibleRows().length === 0) return;
             const rowKey = e.component.getKeyByRowIndex(0);
-            this.setState(prevState => ({
-                selectedRowKeys: [...prevState.selectedRowKeys, rowKey]
-            }));
-        }
-
-        handleOptionChange(e) {
-            if(e.fullName === 'selectedRowKeys') {
-                this.setState({
-                    selectedRowKeys: e.value
-                });
-            }
-        }
-
-        render() {
-            return (
-                <TreeList ...
-                    selectedRowKeys={this.state.selectedRowKeys}
-                    onContentReady={this.selectFirstRow}
-                    onOptionChanged={this.handleOptionChange}>
-                </TreeList>
+            setState((prevState) =>
+                prevState.selectedRowKeys.includes(rowKey)
+                    ? prevState
+                    : { ...prevState, selectedRowKeys: [...prevState.selectedRowKeys, rowKey] }
             );
-        }
+        }, []);
+        const handleOptionChange = useCallback((e: TreeListTypes.OptionChangedEvent) => {
+            if (e.fullName === 'selectedRowKeys') {
+                setState((prevState) => ({ ...prevState, selectedRowKeys: e.value }));
+            }
+        }, []);
+        return (
+            <TreeList
+                ...
+                selectedRowKeys={state.selectedRowKeys}
+                onContentReady={selectFirstRow}
+                onOptionChanged={handleOptionChange}
+            ></TreeList>
+        );
     }
     export default App;
-    
+
 ---
 
 Call the [getSelectedRowKeys(mode)](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/getSelectedRowKeys(mode).md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#getSelectedRowKeysmode') or [getSelectedRowsData()](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/getSelectedRowsData().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#getSelectedRowsData') method to get the selected rows' keys or data.
@@ -325,38 +313,25 @@ Call the [getSelectedRowKeys(mode)](/api-reference/10%20UI%20Components/dxTreeLi
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { TreeListRef } from 'devextreme-react/tree-list';
+    import React, { useCallback, useRef } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import TreeList from 'devextreme-react/tree-list';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.treeListRef = React.createRef();
-    
-            this.getSelectedRowKeys = () => {
-                return this.treeList.getSelectedRowKeys("all"); // or "excludeRecursive" | "leavesOnly"
-            }
-            this.getSelectedRowsData = () => {
-                return this.treeList.getSelectedRowsData();
-            }
-        }
-
-        get treeList() {
-            return this.treeListRef.current.instance();
-        }
-
-        render() {
-            return (
-                <TreeList ...
-                    ref={this.treeListRef}>
-                </TreeList>
-            );
-        }
+    function App() {
+        const treeListRef = useRef<TreeListRef>(null);
+        const getSelectedRowKeys = useCallback(() => {
+            const treeListRefInstance = treeListRef.current?.instance();
+            if (!treeListRefInstance) return;
+            return treeListRefInstance.getSelectedRowKeys('all'); // or "excludeRecursive" | "leavesOnly"
+        }, []);
+        const getSelectedRowsData = useCallback(() => {
+            const treeListRefInstance = treeListRef.current?.instance();
+            if (!treeListRefInstance) return;
+            return treeListRefInstance.getSelectedRowsData();
+        }, []);
+        return <TreeList ... ref={treeListRef}></TreeList>;
     }
     export default App;
-    
+
 ---

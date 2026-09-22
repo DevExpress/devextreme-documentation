@@ -71,34 +71,22 @@ The [clearFilter(filterName)](/api-reference/10%20UI%20Components/GridBase/3%20M
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import type { TreeListRef } from 'devextreme-react/tree-list';
+    import React, { useCallback, useRef } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import TreeList from 'devextreme-react/tree-list';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);    
-            this.gridRef = React.createRef();                  
-        }
-        get treeList() {
-            return this.gridRef.current.instance();
-        }
-        
-        render() {
-            return (
-                <TreeList ... 
-                    :ref="gridRef" 
-                />
-            );
-        }
-
-        clearSearchPanel = () => {
-            this.treeList.clearFilter("search");
-        }
+    function App() {
+        const gridRef = useRef<TreeListRef>(null);
+        const clearSearchPanel = useCallback(() => {
+            const gridRefInstance = gridRef.current?.instance();
+            if (!gridRefInstance) return;
+            gridRefInstance.clearFilter('search');
+        }, []);
+        return <TreeList ... ref={gridRef} />;
     }
-    
+    export default App;
+
 ---
 
 #####See Also#####

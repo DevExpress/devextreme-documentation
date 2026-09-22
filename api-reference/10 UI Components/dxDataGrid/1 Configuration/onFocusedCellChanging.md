@@ -123,28 +123,25 @@ In the following code, the **onFocusedCellChanging** function is used to customi
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
 
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import {WidgetName} from 'devextreme-react/{widget-name}';
+    import {WidgetName}, { type {WidgetName}Types } from 'devextreme-react/{widget-name}';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <{WidgetName} ...
-                    onFocusedCellChanging={this.onFocusedCellChanging}
-                >
-                </{WidgetName}>
-            );
-        }
-
-        onFocusedCellChanging(e) { 
-            if (e.newColumnIndex == e.prevColumnIndex) {
-                e.newColumnIndex = (e.newColumnIndex == 0 ? e.columns.length - 1 : 0);
+    function App() {
+        const onFocusedCellChanging = useCallback((e: {WidgetName}Types.FocusedCellChangingEvent) => {
+            if (e.newColumnIndex === e.prevColumnIndex) {
+                e.newColumnIndex = e.newColumnIndex === 0 ? e.columns.length - 1 : 0;
             }
-        }
+        }, []);
+
+        return (
+            <{WidgetName} ...
+                onFocusedCellChanging={onFocusedCellChanging}>
+            </{WidgetName}>
+        );
     }
     export default App;
 

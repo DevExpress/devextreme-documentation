@@ -135,40 +135,39 @@ In the following code, the **postProcess** function adds a custom item to the ge
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import type { DataSourceOptions } from 'devextreme/data/data_source';
+    import React, { useCallback } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import { {WidgetName}, Column, HeaderFilter } from 'devextreme-react/{widget-name}';
-
-    class App extends React.Component {
-        render() {
-            return (
-                <{WidgetName}>
-                    <Column>
-                        <HeaderFilter
-                            dataSource={this.customizeHeaderFilterData}
-                        />
-                    </Column>
-                </{WidgetName}>
-            );
-        }
-
-        customizeHeaderFilterData(options) {
-            options.dataSource.postProcess = function(results) {
-                results.push({
-                    text: 'Weekends',
-                    value: [
-                        ['OrderDay', '=', 0],
-                            'or',
-                        ['OrderDay', '=', 6]
-                    ]
-                });
-                return results;
-            };
-        }
+    type HeaderFilterItem = {
+        text: string;
+        value: unknown;
+    };
+    function App() {
+        const customizeHeaderFilterData = useCallback(
+            (options: { dataSource?: DataSourceOptions | null }) => {
+                if (!options.dataSource) return;
+                if (!options.dataSource) return;
+                if (!options.dataSource) return;
+                options.dataSource.postProcess = function (results: HeaderFilterItem[]) {
+                    results.push({
+                        text: 'Weekends',
+                        value: [['OrderDay', '=', 0], 'or', ['OrderDay', '=', 6]],
+                    });
+                    return results;
+                };
+            },
+            []
+        );
+        return (
+            <{WidgetName}>
+                <Column>
+                    <HeaderFilter dataSource={customizeHeaderFilterData} />
+                </Column>
+            </{WidgetName}>
+        );
     }
-
     export default App;
 
 ---

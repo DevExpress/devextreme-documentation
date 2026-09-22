@@ -164,35 +164,20 @@ The DataGrid generates a column per data field if you do not specify the **colum
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridTypes } from 'devextreme-react/data-grid';
+    import React, { useCallback } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import DataGrid from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        constructor() {
-            super(props);
-            // Uncomment the line below if customizeColumns should be executed in the component's context
-            // this.customizeColumns = this.customizeColumns.bind(this);
-        }
-
-        customizeColumns(columns) {
+    function App() {
+        const customizeColumns = useCallback((columns: DataGridTypes.Column[]) => {
             columns[0].width = 100;
             columns[1].width = 210;
-        }
-
-        render() {
-            return (
-                <DataGrid ...
-                    customizeColumns={this.customizeColumns}>
-                </DataGrid>
-            );
-        }
+        }, []);
+        return <DataGrid ... customizeColumns={customizeColumns}></DataGrid>;
     }
     export default App;
-    
+
 ---
 
 This topic has outlined the ways to configure columns in the DataGrid UI component. For a detailed overview of column features, refer to other topics in this section.

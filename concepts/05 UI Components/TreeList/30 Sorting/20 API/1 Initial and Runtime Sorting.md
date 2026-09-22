@@ -166,46 +166,36 @@ Change the **sortOrder** and **sortIndex** properties using the [columnOption](/
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { TreeListTypes } from 'devextreme-react/tree-list';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import { TreeList, Column } from 'devextreme-react/tree-list';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                countrySortOrder: "asc"
-            };
-        }
-
-        render() {
-            return (
-                <TreeList ...
-                    onOptionChanged={this.onOptionChanged}>
-                    <Column
-                        dataField="Country"
-                        sortOrder={this.state.countrySortOrder} />
-                </TreeList>
-            );
-        }
-
-        sortByCountries = (order) => {
-            this.setState({
-                countrySortOrder: order
-            });
-        }
-
-        onOptionChanged = (e) => {
-            if (e.fullName === "columns[0].sortOrder") {
-                this.sortByCountries(e.value);
-            }
-        }
+    function App() {
+        const [state, setState] = useState<{
+            countrySortOrder: 'asc' | 'desc' | undefined;
+        }>({
+            countrySortOrder: 'asc',
+        });
+        const sortByCountries = useCallback((order: 'asc' | 'desc') => {
+            setState((prevState) => ({ ...prevState, countrySortOrder: order }));
+        }, []);
+        const onOptionChanged = useCallback(
+            (e: TreeListTypes.OptionChangedEvent) => {
+                if (e.fullName === 'columns[0].sortOrder') {
+                    sortByCountries(e.value);
+                }
+            },
+            [sortByCountries]
+        );
+        return (
+            <TreeList ... onOptionChanged={onOptionChanged}>
+                <Column dataField="Country" sortOrder={state.countrySortOrder} />
+            </TreeList>
+        );
     }
     export default App;
-    
+
 ---
 
 #include btn-open-demo with {

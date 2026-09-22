@@ -74,38 +74,23 @@ The DataGrid UI component raises the [selectionChanged](/api-reference/10%20UI%2
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridTypes } from 'devextreme-react/data-grid';
+    import React, { useCallback } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import DataGrid from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-
-            this.onSelectionChanged = this.onSelectionChanged.bind(this);
-        }
-        
-        onSelectionChanged(e) {
+    function App() {
+        const onSelectionChanged = useCallback((e: DataGridTypes.SelectionChangedEvent) => {
             const currentSelectedRowKeys = e.currentSelectedRowKeys;
             const currentDeselectedRowKeys = e.currentDeselectedRowKeys;
             const allSelectedRowKeys = e.selectedRowKeys;
             const allSelectedRowsData = e.selectedRowsData;
             // ...
-        }
-
-        render() {
-            return (
-                <DataGrid ...
-                    onSelectionChanged={this.onSelectionChanged}>
-                </DataGrid>
-            );
-        }
+        }, []);
+        return <DataGrid ... onSelectionChanged={onSelectionChanged}></DataGrid>;
     }
     export default App;
-    
+
 ---
 
 ---

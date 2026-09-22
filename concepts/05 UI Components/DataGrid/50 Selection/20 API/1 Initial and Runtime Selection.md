@@ -89,39 +89,35 @@ Use the [selectedRowKeys](/api-reference/10%20UI%20Components/dxDataGrid/1%20Con
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
-
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import DataGrid from 'devextreme-react/data-grid';
     import DataSource from 'devextreme/data/data_source';
     import 'devextreme/data/array_store';
     // or
     // import 'devextreme/data/odata/store';
     // import 'devextreme/data/custom_store';
-
     const dataGridDataSource = new DataSource({
         store: {
             // ...
-            key: 'id'
-        }
+            type: 'array',
+            data: [],
+            key: 'id',
+        },
     });
-
-    class App extends React.Component {
-        selectedRowKeys = [1, 5, 18];
-
-        render() {
-            return (
-                <DataGrid ...
-                    dataSource={dataGridDataSource}
-                    defaultSelectedRowKeys={this.selectedRowKeys}>
-                </DataGrid>
-            );
-        }
+    const selectedRowKeys = [1, 5, 18];
+    function App() {
+        return (
+            <DataGrid
+                ...
+                dataSource={dataGridDataSource}
+                defaultSelectedRowKeys={selectedRowKeys}
+            ></DataGrid>
+        );
     }
     export default App;
-    
+
 ---
 
 The DataGrid provides two methods that select rows at runtime: [selectRows(keys, preserve)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/selectRows(keys_preserve).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#selectRowskeys_preserve') and [selectRowsByIndexes(indexes)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/selectRowsByIndexes(indexes).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#selectRowsByIndexesindexes'). They both clear the previous selection by default, although with the **selectRows(keys, preserve)** method you can keep it if you pass **true** as the **preserve** parameter. Before selecting a row, you can call the [isRowSelected(key)](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/isRowSelected(key).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#isRowSelectedkey') method to check if this row is not already selected.
@@ -215,50 +211,42 @@ The DataGrid provides two methods that select rows at runtime: [selectRows(keys,
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridTypes } from 'devextreme-react/data-grid';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import DataGrid from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                selectedRowKeys: []
-            }
-            this.selectFirstRow = this.selectFirstRow.bind(this);
-        	this.handleOptionChange = this.handleOptionChange.bind(this);
-        }
-
-        selectFirstRow(e) {
+    function App() {
+        const [state, setState] = useState<{
+            selectedRowKeys: Array<string | number>;
+        }>({
+            selectedRowKeys: [],
+        });
+        const selectFirstRow = useCallback((e: DataGridTypes.ContentReadyEvent) => {
+            if (e.component.getVisibleRows().length === 0) return;
             const rowKey = e.component.getKeyByRowIndex(0);
-            this.setState(prevState => ({
-                selectedRowKeys: [...prevState.selectedRowKeys, rowKey]
-            }));
-        }
-
-        handleOptionChange(e) {
-            if(e.fullName === 'selectedRowKeys') {
-                this.setState({
-                    selectedRowKeys: e.value
-                });
-            }
-        }
-
-        render() {
-            return (
-                <DataGrid ...
-                    selectedRowKeys={this.state.selectedRowKeys}
-                    onContentReady={this.selectFirstRow}
-                    onOptionChanged={this.handleOptionChange}>
-                </DataGrid>
+            setState((prevState) =>
+                prevState.selectedRowKeys.includes(rowKey)
+                    ? prevState
+                    : { ...prevState, selectedRowKeys: [...prevState.selectedRowKeys, rowKey] }
             );
-        }
+        }, []);
+        const handleOptionChange = useCallback((e: DataGridTypes.OptionChangedEvent) => {
+            if (e.fullName === 'selectedRowKeys') {
+                setState((prevState) => ({ ...prevState, selectedRowKeys: e.value }));
+            }
+        }, []);
+        return (
+            <DataGrid
+                ...
+                selectedRowKeys={state.selectedRowKeys}
+                onContentReady={selectFirstRow}
+                onOptionChanged={handleOptionChange}
+            ></DataGrid>
+        );
     }
     export default App;
-    
+
 ---
 
 To select all rows at once, call the [selectAll()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/selectAll().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#selectAll') method.
@@ -331,34 +319,19 @@ To select all rows at once, call the [selectAll()](/api-reference/10%20UI%20Comp
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridRef } from 'devextreme-react/data-grid';
+    import React, { useCallback, useRef } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import DataGrid from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.dataGridRef = React.createRef();
-    
-            this.selectAllRows = () => {
-                this.dataGrid.selectAll();
-            }
-        }
-
-        get dataGrid() {
-            return this.dataGridRef.current.instance();
-        }
-
-        render() {
-            return (
-                <DataGrid ...
-                    ref={this.dataGridRef}>
-                </DataGrid>
-            );
-        }
+    function App() {
+        const dataGridRef = useRef<DataGridRef>(null);
+        const selectAllRows = useCallback(() => {
+            const dataGridRefInstance = dataGridRef.current?.instance();
+            if (!dataGridRefInstance) return;
+            dataGridRefInstance.selectAll();
+        }, []);
+        return <DataGrid ... ref={dataGridRef}></DataGrid>;
     }
     export default App;
 
@@ -445,40 +418,27 @@ Call the [getSelectedRowKeys()](/api-reference/10%20UI%20Components/dxDataGrid/3
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridRef } from 'devextreme-react/data-grid';
+    import React, { useCallback, useRef } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import DataGrid from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.dataGridRef = React.createRef();
-    
-            this.getSelectedRowKeys = () => {
-                return this.dataGrid.getSelectedRowKeys();
-            }
-            this.getSelectedRowsData = () => {
-                return this.dataGrid.getSelectedRowsData();
-            }
-        }
-
-        get dataGrid() {
-            return this.dataGridRef.current.instance();
-        }
-
-        render() {
-            return (
-                <DataGrid ...
-                    ref={this.dataGridRef}>
-                </DataGrid>
-            );
-        }
+    function App() {
+        const dataGridRef = useRef<DataGridRef>(null);
+        const getSelectedRowKeys = useCallback(() => {
+            const dataGridRefInstance = dataGridRef.current?.instance();
+            if (!dataGridRefInstance) return;
+            return dataGridRefInstance.getSelectedRowKeys();
+        }, []);
+        const getSelectedRowsData = useCallback(() => {
+            const dataGridRefInstance = dataGridRef.current?.instance();
+            if (!dataGridRefInstance) return;
+            return dataGridRefInstance.getSelectedRowsData();
+        }, []);
+        return <DataGrid ... ref={dataGridRef}></DataGrid>;
     }
     export default App;
-    
+
 ---
 
 #####See Also#####

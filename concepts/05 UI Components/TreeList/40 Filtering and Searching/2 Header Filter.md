@@ -24,51 +24,44 @@ Assign **true** to the [headerFilter](/api-reference/10%20UI%20Components/GridBa
 
 ##### Angular
     
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-tree-list ... >
         <dxo-tree-list-header-filter [visible]="true"></dxo-tree-list-header-filter>
         <dxi-tree-list-column [allowHeaderFiltering]="false" ... ></dxi-tree-list-column>
     </dx-tree-list>
 
-    <!--TypeScript-->
-    import { DxTreeListModule } from "devextreme-angular";
-    // ...
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import { DxTreeListModule } from 'devextreme-angular';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css'],
+        standalone: true,
+        imports: [DxTreeListModule]
+    })
     export class AppComponent {
         // ...
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxTreeListModule
-        ],
-        // ...
-    })
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
         <DxTreeList ... >
-           <DxHeaderFilter :visible="true" />
-           <DxColumn :allow-header-filtering="false" ... />
+            <DxHeaderFilter :visible="true" />
+            <DxColumn :allow-header-filtering="false" ... />
         </DxTreeList>
     </template>
 
-    <script>
+    <script setup>
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxColumn,
         DxHeaderFilter
     } from 'devextreme-vue/tree-list';
-
-    export default {
-        components: {
-            DxTreeList,
-            DxColumn,
-            DxHeaderFilter
-        }
-    }
     </script>
 
 ##### React
@@ -119,7 +112,7 @@ A user can change the applied filter by including or excluding values. Use a col
 
 ##### Angular
     
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-tree-list ... >
         <dxi-tree-list-column 
             dataField="OrderDate"
@@ -128,30 +121,31 @@ A user can change the applied filter by including or excluding values. Use a col
         </dxi-tree-list-column>
     </dx-tree-list>
 
-    <!--TypeScript-->
-    import { DxTreeListModule } from "devextreme-angular";
-    // ...
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import { DxTreeListModule } from 'devextreme-angular';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css'],
+        standalone: true,
+        imports: [DxTreeListModule]
+    })
     export class AppComponent {
         filterValues: Array<any> = [2014];
-        filterType: string = "exclude";    // or "include"
-        applyFilter (filterType, values) {
+        filterType: string = 'exclude'; // or 'include'
+        applyFilter(filterType: string, values: Array<any>) {
             this.filterType = filterType;
             this.filterValues = values;
         }
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxTreeListModule
-        ],
-        // ...
-    })
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <DxTreeList ... >           
+        <DxTreeList ... >
             <DxColumn 
                 v-model:filter-type="filterType"
                 v-model:filter-values="filterValues" 
@@ -160,88 +154,66 @@ A user can change the applied filter by including or excluding values. Use a col
         </DxTreeList>
     </template>
 
-    <script>
+    <script setup>
+    import { ref } from 'vue';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxColumn
     } from 'devextreme-vue/tree-list';
 
-    export default {
-        components: {
-            DxTreeList,
-            DxColumn
-        },
-        data() {
-            return {
-               filterType: "exclude", // or "include" 
-               filterValues: [2014]
-            }
-        },
-        methods: {
-            applyFilter (filterType, values) {
-                this.filterType = filterType;
-                this.filterValues = values;
-            }
-        }
+    const filterType = ref('exclude'); // or 'include'
+    const filterValues = ref([2014]);
+
+    function applyFilter(type, values) {
+        filterType.value = type;
+        filterValues.value = values;
     }
     </script>
 
 ##### React
 
     <!-- tab: App.js -->
-    import React from 'react';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import TreeList, {
         Column
     } from 'devextreme-react/tree-list';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);            
-            this.state = {
-                filterType: 'exclude', // or 'include'
-                filterValues: [2014]
-            }
-        }
+    export default function App() {
+        const [filterType, setFilterType] = useState('exclude'); // or 'include'
+        const [filterValues, setFilterValues] = useState([2014]);
 
-        render() {
-            let { filterType, filterValues } = this.state;
-            return (
-                <TreeList ... 
-                    onOptionChanged={this.onOptionChanged}>                
-                    <Column 
-                        dataField="OrderDate"
-                        filterType={filterType}                   
-                        filterValues={filterValues}
-                    />
-                </TreeList>
-            );
-        }
-        onOptionChanged = (e) => {
-            if(e.fullName === "columns[0].filterValues") {
-                this.setState({ 
-                    filterValues: e.value
-                })
+        const onOptionChanged = useCallback((e) => {
+            if (e.fullName === 'columns[0].filterValues') {
+                setFilterValues(e.value);
             }
-            if(e.fullName === "columns[0].filterType") {
-                this.setState({ 
-                    filterType: e.value
-                })
+            if (e.fullName === 'columns[0].filterType') {
+                setFilterType(e.value);
             }
-        }
-        applyFilter = (filterType, values) => {
-            this.setState({
-                filterType: filterType,
-                filterValues: values
-            })
-        }
+        }, []);
+
+        const applyFilter = useCallback((type, values) => {
+            setFilterType(type);
+            setFilterValues(values);
+        }, []);
+
+        return (
+            <TreeList ... 
+                onOptionChanged={onOptionChanged}>
+                <Column 
+                    dataField="OrderDate"
+                    filterType={filterType}
+                    filterValues={filterValues}
+                />
+            </TreeList>
+        );
     }
     
 ---
 
-You can use the **headerFilter**.[allowSearch](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/headerFilter/allowSearch.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/headerFilter/#allowSearch') property to enable the header filter's searching capability. The same property can be declared in a column's configuration object, in which case it controls searching in that column's header filter.
+You can use the **headerFilter**.**search**.[enabled](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/headerFilter/search/#enabled) property to enable the header filter's searching capability. The same property can be declared in a column's configuration object, in which case it controls searching in that column's header filter.
 
 ---
 ##### jQuery
@@ -251,12 +223,16 @@ You can use the **headerFilter**.[allowSearch](/api-reference/10%20UI%20Componen
             // ...
             headerFilter: { 
                 visible: true,
-                allowSearch: true
+                search: {
+                    enabled: true
+                }
             },
             columns: [{
                 // ...
                 headerFilter: { 
-                    allowSearch: false
+                    search: {
+                        enabled: false
+                    }
                 }
             }]
         });
@@ -264,60 +240,57 @@ You can use the **headerFilter**.[allowSearch](/api-reference/10%20UI%20Componen
 
 ##### Angular
     
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-tree-list ... >
-        <dxo-tree-list-header-filter [visible]="true" [allowSearch]="true"></dxo-tree-list-header-filter>
+        <dxo-tree-list-header-filter [visible]="true">
+            <dxo-tree-list-search [enabled]="true"></dxo-tree-list-search>
+        </dxo-tree-list-header-filter>
         <dxi-tree-list-column ... >
-            <dxo-tree-list-header-filter [allowSearch]="false"></dxo-tree-list-header-filter>
+            <dxo-tree-list-header-filter>
+                <dxo-tree-list-search [enabled]="false"></dxo-tree-list-search>
+            </dxo-tree-list-header-filter>
         </dxi-tree-list-column>
     </dx-tree-list>
 
-    <!--TypeScript-->
-    import { DxTreeListModule } from "devextreme-angular";
-    // ...
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import { DxTreeListModule } from 'devextreme-angular';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css'],
+        standalone: true,
+        imports: [DxTreeListModule]
+    })
     export class AppComponent {
         // ...
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxTreeListModule
-        ],
-        // ...
-    })
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
         <DxTreeList ... >
-            <DxHeaderFilter 
-                :allow-search="true" 
-                :visible="true" 
-            />
-            <DxColumn>
-                <DxColumnHeaderFilter :allow-search="false" />
+            <DxHeaderFilter :visible="true">
+                <DxSearch :enabled="true" />
+            </DxHeaderFilter>
+            <DxColumn ... >
+                <DxHeaderFilter>
+                    <DxSearch :enabled="false" />
+                </DxHeaderFilter>
             </DxColumn>
         </DxTreeList>
     </template>
 
-    <script>
+    <script setup>
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxTreeList, {
         DxColumn,
         DxHeaderFilter,
-        DxColumnHeaderFilter
+        DxSearch
     } from 'devextreme-vue/tree-list';
-
-    export default {
-        components: {
-            DxTreeList,
-            DxColumn,
-            DxHeaderFilter,
-            DxColumnHeaderFilter
-        }
-    }
     </script>
 
 ##### React
@@ -329,18 +302,19 @@ You can use the **headerFilter**.[allowSearch](/api-reference/10%20UI%20Componen
     import TreeList, {
         Column,
         HeaderFilter,
-        ColumnHeaderFilter
+        Search
     } from 'devextreme-react/tree-list';
 
     export default function App() {
         return (
             <TreeList ... >
-                <HeaderFilter 
-                    allowSearch={true} 
-                    visible={true} 
-                />
-                <Column>
-                    <ColumnHeaderFilter allowSearch={false} />
+                <HeaderFilter visible={true}>
+                    <Search enabled={true} />
+                </HeaderFilter>
+                <Column ... >
+                    <HeaderFilter>
+                        <Search enabled={false} />
+                    </HeaderFilter>
                 </Column>
             </TreeList>
         );

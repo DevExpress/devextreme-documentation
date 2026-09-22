@@ -117,7 +117,7 @@ For more information about templates, refer to the following help topic: [DevExt
 
 ##### React
 
-[note] Use the React-specific [render]({basewidgetpath}/Configuration/items/#render) and [component]({basewidgetpath}/Configuration/items/#component) properties instead of **template**.
+[note] Use the React-specific [render](/api-reference/10%20UI%20Components/dxToolbar/1%20Configuration/items/render.md '{basewidgetpath}/Configuration/items/#render') and [component](/api-reference/10%20UI%20Components/dxToolbar/1%20Configuration/items/component.md '{basewidgetpath}/Configuration/items/#component') properties instead of **template**.
 
 For more information about templates, refer to the following help topic: [DevExtreme {Framework} - Custom Templates](/concepts/05%20UI%20Components/zz%20Common/30%20Templates/10%20Custom%20Templates.md '/Documentation/Guide/UI_Components/Common/Templates/#Custom_Templates').
 

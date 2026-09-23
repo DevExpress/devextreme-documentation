@@ -1,0 +1,1 @@
+The PivotGrid component supports screen readers and complies to [WAI-ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) standards. Known exceptions are listed in the [Accessibility Standards Compliance](/Documentation/Guide/UI_Components/PivotGrid/Accessibility/#Accessibility_Standards_Compliance) topic.

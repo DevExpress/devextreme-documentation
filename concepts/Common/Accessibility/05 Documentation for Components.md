@@ -396,6 +396,32 @@ Refer to the following table for detailed information about each component's acc
             <td class="dx-table-row__center icon-success"></td>
         </tr>
         <tr>
+            <td><a href="/Documentation/Guide/UI_Components/PivotGrid/Accessibility/">PivotGrid</a></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+        </tr>
+        <tr>
+            <td><a href="/Documentation/Guide/UI_Components/PivotGridFieldChooser/Accessibility/">PivotGridFieldChooser</a></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-success"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+            <td class="dx-table-row__center icon-warning"></td>
+        </tr>
+        <tr>
             <td><a href="/Documentation/Guide/UI_Components/Popover/Accessibility/">Popover</a></td>
             <td class="dx-table-row__center icon-success"></td>
             <td class="dx-table-row__center icon-error"></td>
@@ -707,8 +733,6 @@ The following components do not meet any accessibility requirements and currentl
 - LinearGauge
 - LoadIndicator
 - PieChart
-- PivotGrid
-- PivotGridFieldChooser
 - PolarChart
 - RangeSelector
 - Resizable

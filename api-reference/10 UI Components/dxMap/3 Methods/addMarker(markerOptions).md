@@ -23,5 +23,7 @@ The marker object should include the following fields.
 - **onClick** (optional) - a callback function performed when the marker is clicked;
 - **iconSrc** (optional) - a URL pointing to the custom icon to be used for the marker.
 
+For **osm**, the returned marker instance is an OpenLayers Overlay.
+
 #####See Also#####
 #include common-link-callmethods

@@ -4,8 +4,15 @@ The **osm** provider supports keyboard interaction when **focusStateEnabled** is
 
 - **Tab** navigates to the map and available interactive elements.
 - Arrow keys pan a focused map; **+** and **-** change zoom.
+- **Enter** or **Space** activates a focused interactive marker.
+- A marker with a click handler or tooltip is interactive. A marker without either is not added as a button to the tab sequence.
+- Offscreen markers are excluded from keyboard navigation to avoid scrolling the map's DOM container into empty space.
 
-**rtlEnabled** changes the relevant UI direction; it does not mirror geographic coordinates.
+The provider does not pan the map to an offscreen marker when a user presses Tab. Give users another way to select locations if your workflow requires access to markers outside the view.
+
+The default marker has a localized generic accessible name. Replace it with a meaningful place name through **onMarkerAdded.originalMarker.getElement()** as shown in [Access the OpenLayers API](/concepts/05%20UI%20Components/Map/12%20OpenStreetMap%20Provider/25%20Access%20the%20OpenLayers%20API.md '/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/Access_the_OpenLayers_API/').
+
+**rtlEnabled** changes the relevant UI direction; it does not mirror geographic coordinates. Default marker colors use the light palette of the selected theme family in both light and dark themes because the tile background does not change with the DevExtreme theme.
 
 ## Network and Content Security Policy
 

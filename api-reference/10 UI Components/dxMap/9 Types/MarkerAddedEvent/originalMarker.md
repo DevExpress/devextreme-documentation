@@ -4,7 +4,9 @@ uid: ui/map:MarkerAddedEvent.originalMarker
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The current provider's native marker object.
 
 ---
-<!-- Description goes here -->
+For **osm**, this is an OpenLayers Overlay. Its **getElement()** method returns the marker element.
+
+See [Access the OpenLayers API](/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/Access_the_OpenLayers_API/).

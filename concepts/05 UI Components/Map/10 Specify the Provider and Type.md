@@ -1,4 +1,4 @@
-By default, the Map UI component uses **Google Maps** as a map provider. It can use **Azure Maps** or **Google Static Maps** instead. To change the provider, assign one of the values listed below to the [provider](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/provider.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider') property.
+By default, the Map UI component uses **Google Maps** as a map provider. It can use **Azure Maps**, **Google Static Maps**, or the **OpenStreetMap** provider instead. To change the provider, assign one of the values listed below to the [provider](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/provider.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider') property.
 
 ---
 ##### jQuery
@@ -81,7 +81,7 @@ By default, the Map UI component uses **Google Maps** as a map provider. It can 
 
 ---
 
-When using maps, you should include an API key that authenticates your application. Specify this key using the [apiKey](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/apiKey '/Documentation/ApiReference/UI_Components/dxMap/Configuration/apiKey/') property. Note that this property can also accept an object with keys for every available provider. For more information on API keys, refer to the documentation of the specific map provider.
+When using Google or Azure maps, you should include an API key that authenticates your application. Specify this key using the [apiKey](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/apiKey '/Documentation/ApiReference/UI_Components/dxMap/Configuration/apiKey/') property. Note that this property can also accept an object with keys for these providers. For more information on API keys, refer to the documentation of the specific map provider.
 
 ---
 ##### jQuery
@@ -278,6 +278,8 @@ The Map UI component supports the following map types: *"hybrid"*, *"satellite"*
     }
 
 ---
+
+For **provider: "osm"**, install or load OpenLayers and configure a tile service. The **apiKey** property does not apply to this provider. See [OpenStreetMap Provider](/concepts/05%20UI%20Components/Map/12%20OpenStreetMap%20Provider/00%20Overview.md '/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/') for setup instructions.
 
 #####See Also#####
 - [Map - Zoom and Center the Map](/concepts/05%20UI%20Components/Map/05%20Zoom%20and%20Center%20the%20Map.md '/Documentation/Guide/UI_Components/Map/Zoom_and_Center_the_Map/')

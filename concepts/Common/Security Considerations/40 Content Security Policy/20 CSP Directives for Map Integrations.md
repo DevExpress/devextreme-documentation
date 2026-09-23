@@ -29,3 +29,5 @@ If you want to integrate DevExtreme UI components with [Google](https://develope
             connect-src https://js.monitor.azure.com https://atlas.microsoft.com;
             "
     />
+
+The Map's **osm** provider does not require Google, Azure, or Bing domains. Its allowed origins depend on the OpenLayers resources, tile service, marker images, and location and route callbacks that your application uses. See [OSM Accessibility and Security](/concepts/05%20UI%20Components/Map/12%20OpenStreetMap%20Provider/30%20Accessibility%20and%20Security.md '/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/Accessibility_and_Security/') and test the integration with your application's actual CSP.

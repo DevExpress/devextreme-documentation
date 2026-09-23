@@ -6,12 +6,16 @@ You can use the following keys to interact with the DevExtreme PivotGrid compone
         <th>Action</th>
     </tr>
     <tr>
+        <td>Shift + F10</td>
+        <td>Opens the context menu.</td>
+    </tr>
+    <tr>
         <td>Tab / Shift + Tab</td>
-        <td>Moves focus to the next or previous area (column headers, row headers, and field areas).</td>
+        <td>Moves focus to the next or previous area (column and row headers, field areas, and the PivotGrid toolbar).</td>
     </tr>
     <tr>
         <td>Arrow Keys</td>
-        <td>Moves focus between row header cells, column header cells, and fields within an area.</td>
+        <td>Moves focus between row header cells, column header cells, and fields within an area.<br>Scrolls the data area when focused.</td>
     </tr>
     <tr>
         <td>Enter / Space</td>
@@ -39,8 +43,4 @@ You can use the following keys to interact with the DevExtreme PivotGrid compone
     </tr>
 </table>
 
-#####See Also#####
-- [PivotGrid Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/PivotGrid/Overview/)
-- [PivotGrid API Reference](/api-reference/10%20UI%20Components/dxPivotGrid '/Documentation/ApiReference/UI_Components/dxPivotGrid/')
-
-[tags]pivotGrid, pivot grid, keyboard shortcuts
+#include common-code-register-key-handler

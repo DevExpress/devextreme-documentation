@@ -99,43 +99,26 @@ Call the [deleteRow(rowIndex)](/api-reference/10%20UI%20Components/GridBase/3%20
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridRef } from 'devextreme-react/data-grid';
+    import React, { useCallback, useRef } from 'react';
     import { DataGrid, Editing } from 'devextreme-react/data-grid';
     import Button from 'devextreme-react/button';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-
-            this.dataGridRef = React.createRef();
-            this.deleteRow = this.deleteRow.bind(this);
-        }
-        get dataGrid() {
-            return this.dataGridRef.current.instance();
-        }
-
-        deleteRow() {
-            this.dataGrid.deleteRow(1);
-        }
-
-        render() {
-            return (
-                <DataGrid  
-                    ref={this.dataGridRef}>
-                    <Editing
-                        mode="row"
-                        confirmDelete={false}
-                        allowDeleting={true} 
-                    />
+    function App() {
+        const dataGridRef = useRef<DataGridRef>(null);
+        const deleteRow = useCallback(() => {
+            const dataGridRefInstance = dataGridRef.current?.instance();
+            if (!dataGridRefInstance) return;
+            dataGridRefInstance.deleteRow(1);
+        }, []);
+        return (
+            <>
+                <DataGrid ref={dataGridRef}>
+                    <Editing mode="row" confirmDelete={false} allowDeleting={true} />
                 </DataGrid>
-                <Button
-                    text="Delete Row"
-                    onClick={this.deleteRow}
-                />
-            );
-        }
+                <Button text="Delete Row" onClick={deleteRow} />
+            </>
+        );
     }
     export default App;
 
@@ -197,36 +180,21 @@ Note that in [batch mode](/concepts/05%20UI%20Components/DataGrid/20%20Editing/1
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridRef } from 'devextreme-react/data-grid';
+    import React, { useCallback, useRef } from 'react';
     import { DataGrid } from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-
-            this.dataGridRef = React.createRef();
-            this.undeleteRow = this.undeleteRow.bind(this);
-        }
-        get dataGrid() {
-            return this.dataGridRef.current.instance();
-        }
-
-        undeleteRow() {
-            this.dataGrid.undeleteRow(1);
-        }
-
-        render() {
-            return (
-                <DataGrid  
-                    ref={this.dataGridRef}
-                />
-            );
-        }
+    function App() {
+        const dataGridRef = useRef<DataGridRef>(null);
+        const undeleteRow = useCallback(() => {
+            const dataGridRefInstance = dataGridRef.current?.instance();
+            if (!dataGridRefInstance) return;
+            dataGridRefInstance.undeleteRow(1);
+        }, []);
+        return <DataGrid ref={dataGridRef} />;
     }
-    export default App;   
-     
+    export default App;
+
 ---
 
 #####See Also#####

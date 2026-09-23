@@ -193,57 +193,58 @@ In the following code, the **onInitNewRow** function is used to provide default 
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
 
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import { {WidgetName}, Column } from 'devextreme-react/{widget-name}';
-    import 'whatwg-fetch';
+    import { {WidgetName}, Column, type {WidgetName}Types } from 'devextreme-react/{widget-name}';
 
-    const employees = [{
+    const employees: Employee[] = [{
         ID: 1,
         hireDate: 1491821760000,
         position: "CTO"
     }, // ...
     ];
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.onInitNewRow = this.onInitNewRow.bind(this);
-            this.getDefaultData = this.getDefaultData.bind(this);
-        }
+    type Employee = {
+        ID: number;
+        hireDate: number | Date;
+        position: string;
+    };
 
-        onInitNewRow(e) {
-            e.promise = this.getDefaultData().then(data => {
+    type DefaultData = {
+        ID: number;
+        Position: string;
+    };
+
+    async function getDefaultData(): Promise<DefaultData> {
+        const response = await fetch("https://www.mywebsite.com/api/getDefaultData");
+        if (!response.ok) {
+            throw new Error('Data Loading Error');
+        }
+        // The response is { ID: 100, Position: "Programmer" }
+        return response.json();
+    }
+
+    function App() {
+        const onInitNewRow = useCallback((e: {WidgetName}Types.InitNewRowEvent<Employee, number>) => {
+            e.data.hireDate = new Date();
+            e.promise = getDefaultData().then((data) => {
                 e.data.ID = data.ID;
                 e.data.position = data.Position;
             });
-            e.data.hireDate = new Date();
-        }
+        }, []);
 
-        getDefaultData() {
-            return fetch("https://www.mywebsite.com/api/getDefaultData")
-                .then(response => response.json())
-                .then((data) => {
-                    // "data" is { ID: 100, Position: "Programmer" }
-                    return data;
-                }) 
-                .catch(() => { throw 'Data Loading Error' });
-        }
-
-        render() {
-            return (
-                <{WidgetName} ...
-                    dataSource={employees}
-                    onInitNewRow={this.onInitNewRow}>
-                    <Column dataField="ID" />
-                    <Column dataField="hireDate" dataType="date" />
-                    <Column dataField="position" />
-                </{WidgetName}>
-            );
-        }
+        return (
+            <{WidgetName} ...
+                dataSource={employees}
+                onInitNewRow={onInitNewRow}>
+                <Column dataField="ID" />
+                <Column dataField="hireDate" dataType="date" />
+                <Column dataField="position" />
+            </{WidgetName}>
+        );
     }
     export default App;
 

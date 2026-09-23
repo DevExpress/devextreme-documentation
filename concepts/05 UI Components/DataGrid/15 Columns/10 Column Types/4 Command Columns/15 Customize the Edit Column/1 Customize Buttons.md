@@ -84,29 +84,20 @@ In the following code, a CSS class is added to the **Save** button. The **Edit**
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
-
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import DataGrid, {
-        Column,
-        Button
-    } from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-
-        render() {
-            return (
-                <DataGrid ... >
-                    <Column type="buttons">
-                        <Button name="save" cssClass="my-class" />
-                        <Button name="edit" />
-                        <Button name="delete" />
-                    </Column>
-                </DataGrid>
-            );
-        }
+    import DataGrid, { Column, Button } from 'devextreme-react/data-grid';
+    function App() {
+        return (
+            <DataGrid ...>
+                <Column type="buttons">
+                    <Button name="save" cssClass="my-class" />
+                    <Button name="edit" />
+                    <Button name="delete" />
+                </Column>
+            </DataGrid>
+        );
     }
     export default App;
 

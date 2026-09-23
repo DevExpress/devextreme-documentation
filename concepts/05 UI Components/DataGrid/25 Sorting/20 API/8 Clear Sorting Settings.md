@@ -93,40 +93,28 @@ You can clear sorting settings for all columns by calling the [clearSorting()](/
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridRef } from 'devextreme-react/data-grid';
+    import React, { useCallback, useRef } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import { DataGrid, Column } from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.dataGridRef = React.createRef();
-        }
-
-        get dataGrid() {
-            return this.dataGridRef.current.instance();
-        }
-
-        render() {
-            return (
-                <DataGrid ref={this.dataGridRef} ...>
-                    <Column
-                        dataField="Name"
-                        defaultSortIndex={0} />
-                </DataGrid>
-            );
-        }
-
-        clearNameColumnSorting = () => {
-            this.dataGrid.columnOption("Name", "sortIndex", undefined);
-        }
-        
-        clearAllSorting = () => {
-            this.dataGrid.clearSorting();
-        }
+    function App() {
+        const dataGridRef = useRef<DataGridRef>(null);
+        const clearNameColumnSorting = useCallback(() => {
+            const dataGridRefInstance = dataGridRef.current?.instance();
+            if (!dataGridRefInstance) return;
+            dataGridRefInstance.columnOption('Name', 'sortIndex', undefined);
+        }, []);
+        const clearAllSorting = useCallback(() => {
+            const dataGridRefInstance = dataGridRef.current?.instance();
+            if (!dataGridRefInstance) return;
+            dataGridRefInstance.clearSorting();
+        }, []);
+        return (
+            <DataGrid ref={dataGridRef} ...>
+                <Column dataField="Name" defaultSortIndex={0} />
+            </DataGrid>
+        );
     }
     export default App;
 

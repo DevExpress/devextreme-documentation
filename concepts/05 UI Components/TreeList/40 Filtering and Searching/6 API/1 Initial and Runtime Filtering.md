@@ -80,37 +80,22 @@ The initial and runtime filtering API depends on the UI element and is described
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import type { TreeListRef } from 'devextreme-react/tree-list';
+    import React, { useCallback, useRef } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import TreeList from 'devextreme-react/tree-list';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);    
-            this.gridRef = React.createRef();                  
-        }
-        get treeList() {
-            return this.gridRef.current.instance();
-        }
-        
-        render() {
-            return (
-                <TreeList ... 
-                    :ref="gridRef" /> 
-            );
-        }
-
-        filterByCost = () => {
-            this.treeList.filter([
-                [ "Cost", ">", 1000 ],
-                "and",
-                [ "Cost", "<=", 2000 ]
-            ]);
-        }
+    function App() {
+        const gridRef = useRef<TreeListRef>(null);
+        const filterByCost = useCallback(() => {
+            const gridRefInstance = gridRef.current?.instance();
+            if (!gridRefInstance) return;
+            gridRefInstance.filter([['Cost', '>', 1000], 'and', ['Cost', '<=', 2000]]);
+        }, []);
+        return <TreeList ... ref={gridRef} />;
     }
-    
+    export default App;
+
 ---
 
 You can create a filter that combines all the applied filters by calling the [getCombinedFilter()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/getCombinedFilter().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#getCombinedFilter') method. It returns a filter with [getters](/concepts/70%20Data%20Binding/5%20Data%20Layer/9%20Getters%20And%20Setters '/Documentation/Guide/Data_Binding/Data_Layer/#Getters_And_Setters') by default. Call it by passing **true** as the argument to get the combined filter with [data fields](/api-reference/_hidden/GridBaseColumn/dataField.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#dataField').
@@ -185,33 +170,22 @@ You can create a filter that combines all the applied filters by calling the [ge
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import type { TreeListRef } from 'devextreme-react/tree-list';
+    import React, { useCallback, useRef } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import TreeList from 'devextreme-react/tree-list';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);    
-            this.gridRef = React.createRef();                  
-        }
-        get treeList() {
-            return this.gridRef.current.instance();
-        }
-        
-        render() {
-            return (               
-                <TreeList ... 
-                    :ref="gridRef" />
-            );
-        }
-
-        getCombinedFilter = () => {
-            return this.treeList.getCombinedFilter(true);
-        }
+    function App() {
+        const gridRef = useRef<TreeListRef>(null);
+        const getCombinedFilter = useCallback(() => {
+            const gridRefInstance = gridRef.current?.instance();
+            if (!gridRefInstance) return;
+            return gridRefInstance.getCombinedFilter(true);
+        }, []);
+        return <TreeList ... ref={gridRef} />;
     }
-    
+    export default App;
+
 ---
 
 #####See Also#####

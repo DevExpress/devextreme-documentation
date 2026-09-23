@@ -125,23 +125,20 @@ The columns's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Doc
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridTypes } from 'devextreme-react/data-grid';
+    import React, { useCallback } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import DataGrid, {
-        Column
-    } from 'devextreme-react/data-grid';
+    import DataGrid, { Column } from 'devextreme-react/data-grid';
     import 'devextreme-react/text-area';
-
-    class App extends React.Component {
-        textAreaOptions = { height: 200 };
-        onEditorPreparing(e) {
-            if(e.dataField == "Note" && e.parentType === "dataRow") {
+    import type { TextAreaTypes } from 'devextreme-react/text-area';
+    const textAreaOptions = { height: 200 };
+    function App() {
+        const onEditorPreparing = useCallback((e: DataGridTypes.EditorPreparingEvent) => {
+            if (e.dataField == 'Note' && e.parentType === 'dataRow') {
                 const defaultValueChangeHandler = e.editorOptions.onValueChanged;
-                e.editorName = "dxTextArea"; // Change the editor's type
-                e.editorOptions.onValueChanged = function (args) {  // Override the default handler
+                e.editorName = 'dxTextArea'; // Change the editor's type
+                e.editorOptions.onValueChanged = function (args: TextAreaTypes.ValueChangedEvent) {
                     // ...
                     // Custom commands go here
                     // ...
@@ -149,21 +146,14 @@ The columns's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Doc
                     // e.setValue(newValue);
                     // Otherwise, call the default handler:
                     defaultValueChangeHandler(args);
-                }
+                };
             }
-        }
-
-        render() {
-            return (
-                <DataGrid ...
-                    onEditorPreparing={this.onEditorPreparing}>
-                    <Column
-                        dataField="Note"
-                        editorOptions={this.textAreaOptions}
-                    />
-                </DataGrid>
-            );
-        }
+        }, []);
+        return (
+            <DataGrid ... onEditorPreparing={onEditorPreparing}>
+                <Column dataField="Note" editorOptions={textAreaOptions} />
+            </DataGrid>
+        );
     }
     export default App;
 
@@ -319,23 +309,18 @@ Implement the column's [editCellTemplate](/api-reference/_hidden/dxDataGridColum
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridTypes } from 'devextreme-react/data-grid';
+    import React, { useCallback } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import DataGrid, {
-        Column,
-        Editing
-    } from 'devextreme-react/data-grid';
-
+    import DataGrid, { Column, Editing } from 'devextreme-react/data-grid';
     import Switch from 'devextreme-react/switch';
-
-    class App extends React.Component {
-        renderSwitch(cellInfo) {
-            const setEditedValue = valueChangedEventArg => {
+    import type { SwitchTypes } from 'devextreme-react/switch';
+    function App() {
+        const renderSwitch = useCallback((cellInfo: DataGridTypes.ColumnEditCellTemplateData) => {
+            const setEditedValue = (valueChangedEventArg: SwitchTypes.ValueChangedEvent) => {
                 cellInfo.setValue(valueChangedEventArg.value);
-            }
+            };
             return (
                 <Switch
                     width={50}
@@ -344,23 +329,14 @@ Implement the column's [editCellTemplate](/api-reference/_hidden/dxDataGridColum
                     defaultValue={cellInfo.value}
                     onValueChanged={setEditedValue}
                 />
-            )
-        }
-
-        render() {
-            return (
-                <DataGrid ... >
-                    <Column
-                        dataField="isChecked"
-                        editCellRender={this.renderSwitch}
-                    />
-                    <Editing
-                        mode="batch"
-                        allowUpdating={true}
-                    />
-                </DataGrid>
             );
-        }
+        }, []);
+        return (
+            <DataGrid ...>
+                <Column dataField="isChecked" editCellRender={renderSwitch} />
+                <Editing mode="batch" allowUpdating={true} />
+            </DataGrid>
+        );
     }
     export default App;
 

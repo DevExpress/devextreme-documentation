@@ -57,30 +57,19 @@ Call the [pageCount()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridRef } from 'devextreme-react/data-grid';
+    import React, { useCallback, useRef } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import DataGrid from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.dataGridRef = React.createRef();
-
-            this.getTotalPageCount = () => {
-                return this.dataGridRef.current.instance().pageCount();
-            }
-        }
-
-        render() {
-            return (
-                <DataGrid ...
-                    ref={this.dataGridRef}>
-                </DataGrid>
-            );
-        }
+    function App() {
+        const dataGridRef = useRef<DataGridRef>(null);
+        const getTotalPageCount = useCallback(() => {
+            const dataGridRefInstance = dataGridRef.current?.instance();
+            if (!dataGridRefInstance) return;
+            return dataGridRefInstance.pageCount();
+        }, []);
+        return <DataGrid ... ref={dataGridRef}></DataGrid>;
     }
     export default App;
 
@@ -172,67 +161,42 @@ The DataGrid also provides the [pageIndex(newIndex)](/api-reference/10%20UI%20Co
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridTypes, DataGridRef } from 'devextreme-react/data-grid';
+    import React, { useCallback, useRef, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import DataGrid, {
-        Paging
-    } from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.dataGridRef = React.createRef();
-            this.state = {
-                pageSize: 20,
-                pageIndex: 0
-            };
-            
-            this.changePageSize = this.changePageSize.bind(this);
-        	this.goToLastPage = this.goToLastPage.bind(this);
-            this.handleOptionChange = this.handleOptionChange.bind(this);
-        }
-
-        changePageSize(value) {
-            this.setState({
-                pageSize: value
-            });
-        }
-
-        goToLastPage() {
-            const pageCount = this.dataGridRef.current.instance().pageCount();
-            this.setState({
-                pageIndex: pageCount - 1
-            });
-        }
-
-        handleOptionChange(e) {
-            if(e.fullName === 'paging.pageSize') {
-                this.setState({
-                    pageSize: e.value 
-                });
+    import DataGrid, { Paging } from 'devextreme-react/data-grid';
+    function App() {
+        const dataGridRef = useRef<DataGridRef>(null);
+        const [state, setState] = useState<{
+            pageSize: number;
+            pageIndex: number;
+        }>({
+            pageSize: 20,
+            pageIndex: 0,
+        });
+        const changePageSize = useCallback((value: number) => {
+            setState((prevState) => ({ ...prevState, pageSize: value }));
+        }, []);
+        const goToLastPage = useCallback(() => {
+            const dataGridRefInstance = dataGridRef.current?.instance();
+            if (!dataGridRefInstance) return;
+            const pageCount = dataGridRefInstance.pageCount();
+            setState((prevState) => ({ ...prevState, pageIndex: pageCount - 1 }));
+        }, []);
+        const handleOptionChange = useCallback((e: DataGridTypes.OptionChangedEvent) => {
+            if (e.fullName === 'paging.pageSize') {
+                setState((prevState) => ({ ...prevState, pageSize: e.value }));
             }
-            if(e.fullName === 'paging.pageIndex') {
-                this.setState({
-                    pageIndex: e.value 
-                });
+            if (e.fullName === 'paging.pageIndex') {
+                setState((prevState) => ({ ...prevState, pageIndex: e.value }));
             }
-        }
-
-        render() {
-            return (
-                <DataGrid ...
-                    ref={this.dataGridRef}
-                    onOptionChanged={this.handleOptionChange}>
-                    <Paging
-                        pageSize={this.state.pageSize}
-                        pageIndex={this.state.pageIndex}
-                    />
-                </DataGrid>
-            );
-        }
+        }, []);
+        return (
+            <DataGrid ... ref={dataGridRef} onOptionChanged={handleOptionChange}>
+                <Paging pageSize={state.pageSize} pageIndex={state.pageIndex} />
+            </DataGrid>
+        );
     }
     export default App;
 

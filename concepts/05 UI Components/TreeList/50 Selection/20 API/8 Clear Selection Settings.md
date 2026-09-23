@@ -68,55 +68,38 @@ Call the [deselectRows(keys)](/api-reference/10%20UI%20Components/GridBase/3%20M
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { TreeListTypes } from 'devextreme-react/tree-list';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import TreeList from 'devextreme-react/tree-list';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                selectedRowKeys: []
+    function App() {
+        const [state, setState] = useState<{
+            selectedRowKeys: Array<string | number>;
+        }>({
+            selectedRowKeys: [],
+        });
+        const deselectRows = useCallback((keys: Array<string | number>) => {
+            setState((prevState) => ({
+                ...prevState,
+                selectedRowKeys: prevState.selectedRowKeys.filter((key) => !keys.includes(key)),
+            }));
+        }, []);
+        const handleOptionChange = useCallback((e: TreeListTypes.OptionChangedEvent) => {
+            if (e.fullName === 'selectedRowKeys') {
+                setState((prevState) => ({ ...prevState, selectedRowKeys: e.value }));
             }
-            this.deselectRows = this.deselectRows.bind(this);
-        	this.handleOptionChange = this.handleOptionChange.bind(this);
-        }
-
-        deselectRows(keys) {
-            let selectedRowKeys = [...this.state.selectedRowKeys];
-            keys.forEach(function(item) {
-                const index = selectedRowKeys.indexOf(item);
-                if (index !== -1) {
-                    selectedRowKeys.splice(index, 1);
-                }
-            });
-            this.setState({
-                selectedRowKeys: selectedRowKeys
-            });
-        }
-
-        handleOptionChange(e) {
-            if(e.fullName === 'selectedRowKeys') {
-                this.setState({
-                    selectedRowKeys: e.value
-                });
-            }
-        }
-
-        render() {
-            return (
-                <TreeList ...
-                    selectedRowKeys={this.state.selectedRowKeys}
-                    onOptionChanged={this.handleOptionChange}>
-                </TreeList>
-            );
-        }
+        }, []);
+        return (
+            <TreeList
+                ...
+                selectedRowKeys={state.selectedRowKeys}
+                onOptionChanged={handleOptionChange}
+            ></TreeList>
+        );
     }
     export default App;
-    
+
 ---
 
 The [deselectAll()](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/deselectAll().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#deselectAll') method clears selection of all visible rows and can be used when you apply a [filter](/concepts/05%20UI%20Components/TreeList/40%20Filtering%20and%20Searching '/Documentation/Guide/UI_Components/TreeList/Filtering_and_Searching/') and want to keep the selection of invisible rows that do not meet the filtering conditions. To clear the selection of all rows regardless of their visibility, call the [clearSelection()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/clearSelection().md '/Documentation/ApiReference/UI_Components/dxTreeList/Methods/#clearSelection') method.
@@ -190,54 +173,42 @@ The [deselectAll()](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/d
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { TreeListTypes, TreeListRef } from 'devextreme-react/tree-list';
+    import React, { useCallback, useRef, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import TreeList from 'devextreme-react/tree-list';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                selectedRowKeys: []
+    function App() {
+        const treeListRef = useRef<TreeListRef>(null);
+        const [state, setState] = useState<{
+            selectedRowKeys: Array<string | number>;
+        }>({
+            selectedRowKeys: [],
+        });
+        const deselectAllRows = useCallback(() => {
+            setState((prevState) => ({ ...prevState, selectedRowKeys: [] }));
+        }, []);
+        const deselectVisibleRows = useCallback(() => {
+            const treeListRefInstance = treeListRef.current?.instance();
+            if (!treeListRefInstance) return;
+            treeListRefInstance.deselectAll();
+        }, []);
+        const handleOptionChange = useCallback((e: TreeListTypes.OptionChangedEvent) => {
+            if (e.fullName === 'selectedRowKeys') {
+                setState((prevState) => ({ ...prevState, selectedRowKeys: e.value }));
             }
-            this.treeListRef = React.createRef();
-            this.deselectAllRows = this.deselectAllRows.bind(this);
-            this.deselectVisibleRows = this.deselectVisibleRows.bind(this);
-        }
-
-        deselectAllRows() {
-            this.setState({
-                selectedRowKeys: []
-            });
-        }
-
-        deselectVisibleRows() {
-            this.treeListRef.current.instance().deselectAll();
-        }
-
-        handleOptionChange(e) {
-            if(e.fullName === 'selectedRowKeys') {
-                this.setState({
-                    selectedRowKeys: e.value
-                });
-            }
-        }
-
-        render() {
-            return (
-                <TreeList ...
-                    ref="treeListRef"
-                    selectedRowKeys={this.state.selectedRowKeys}
-                    onOptionChanged={this.handleOptionChange}>
-                </TreeList>
-            );
-        }
+        }, []);
+        return (
+            <TreeList
+                ...
+                ref={treeListRef}
+                selectedRowKeys={state.selectedRowKeys}
+                onOptionChanged={handleOptionChange}
+            ></TreeList>
+        );
     }
     export default App;
-    
+
 ---
 
 #####See Also#####

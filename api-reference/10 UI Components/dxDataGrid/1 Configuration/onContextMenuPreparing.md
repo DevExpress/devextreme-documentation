@@ -159,17 +159,16 @@ In the following code, the **onContextMenuPreparing** function adds a custom ite
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
 
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import {WidgetName} from 'devextreme-react/{widget-name}';
+    import {WidgetName}, { type {WidgetName}Types } from 'devextreme-react/{widget-name}';
 
-
-    class App extends React.Component {
-        addMenuItems(e) {
-            if (e.target == 'header') {
+    function App() {
+        const addMenuItems = useCallback((e: {WidgetName}Types.ContextMenuPreparingEvent) => {
+            if (e.target === 'header') {
                 // e.items can be undefined
                 if (!e.items) e.items = [];
 
@@ -177,19 +176,17 @@ In the following code, the **onContextMenuPreparing** function adds a custom ite
                 e.items.push({
                     text: 'Log Column Caption',
                     onItemClick: () => {
-                        console.log(e.column.caption);
+                        console.log(e.column?.caption);
                     }
                 });
             }
-        }
+        }, []);
 
-        render() {
-            return (
-                <{WidgetName} ...
-                    onContextMenuPreparing={this.addMenuItems}>
-                </{WidgetName}>
-            );
-        }
+        return (
+            <{WidgetName} ...
+                onContextMenuPreparing={addMenuItems}>
+            </{WidgetName}>
+        );
     }
     export default App;
 

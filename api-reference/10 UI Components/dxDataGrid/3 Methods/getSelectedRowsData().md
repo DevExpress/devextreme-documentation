@@ -123,44 +123,39 @@ When selection is [deferred](/api-reference/10%20UI%20Components/dxDataGrid/1%20
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef, useState } from 'react';
 
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import DataGrid from 'devextreme-react/data-grid';
+    import DataGrid, { type DataGridRef } from 'devextreme-react/data-grid';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
+    type RowData = Record<string, unknown>;
 
-            this.dataGridRef = React.createRef();
+    function App() {
+        const dataGridRef = useRef<DataGridRef<RowData>>(null);
+        const [selectedRowsData, setSelectedRowsData] = useState<RowData[]>([]);
 
-            this.selectedRowsData = [];
+        const getSelectedData = useCallback(async () => {
+            const dataGrid = dataGridRef.current?.instance();
+            if (!dataGrid) return;
 
-            this.getSelectedData = () => {
-                this.selectedRowsData = this.dataGrid.getSelectedRowsData();
+            // Works with both immediate and deferred selection.
+            const data: RowData[] = await dataGrid.getSelectedRowsData();
+            setSelectedRowsData(data);
+            // Your code goes here
+        }, []);
 
-                // ===== or when deferred selection is used =====
-                this.dataGrid.getSelectedRowsData().then((selectedRowsData) => {
-                    // Your code goes here
-                });
-            }
-        }
-
-        get dataGrid() {
-            return this.dataGridRef.current.instance();
-        }
-
-        render() {
-            return (
-                <DataGrid ...
-                    ref={this.dataGridRef}>
-                </DataGrid>
-            );
-        }
+        // Call getSelectedData() from your UI event handler.
+        // Use selectedRowsData to access the selection in your component.
+        return (
+            <DataGrid ...
+                ref={dataGridRef}>
+            </DataGrid>
+        );
     }
     export default App;
+
 
 ##### ASP.NET MVC Controls
 

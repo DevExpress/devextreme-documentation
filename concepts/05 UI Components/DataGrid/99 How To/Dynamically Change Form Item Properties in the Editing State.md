@@ -176,55 +176,50 @@ This function allows you to change form item properties dynamically. Within this
 
     ##### React
 
-        <!--tab: App.js-->
-        import React from 'react';
-
+        <!-- tab: App.tsx -->
+        import type { DataGridRef } from 'devextreme-react/data-grid';
+        import React, { useCallback, useRef } from 'react';
         import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-        import DataGrid, { 
-            Column,
-            Editing,
-            Form,
-            SimpleItem,
-            GroupItem
-        } from 'devextreme-react/data-grid';
-
-        class App extends React.Component {         
-            constructor(props) {
-                super(props);
-                this.dataGridRef = React.createRef();
-            }
-            get dataGrid() {
-                return this.dataGridRef.current.instance();
-            }
-            render() {
-                return (
-                    <DataGrid ref={this.dataGridRef} ... >
-                        {/* ... */}
-                        <Column dataField="State" /> 
-                        <Column dataField="Address" visible={false} />
-                        <Column dataField="AddressRequired" visible={false} />
-                        <Editing allowUpdating={true} allowAdding={true} mode="form">
-                            <Form customizeItem={this.customizeItem}>
-                                {/* ... */}
-                                <SimpleItem dataField="AddressRequired" />
-                                <GroupItem caption="Home Address">
-                                    <SimpleItem dataField="StateID" />
-                                    <SimpleItem dataField="Address" />
-                                </GroupItem>
-                            </Form>         
-                        </Editing>   
-                    </DataGrid>
-                );
-            }
-            customizeItem = (item) => {
-                if (item && item.itemType === "group" && item.caption === "Home Address") {
-                    let gridInstance = this.dataGrid.current.instance();
-                    const editRowKey = gridInstance.option('editing.editRowKey');
-                    const rowIndex = gridInstance.getRowIndexByKey(editRowKey);
-                    item.visible = gridInstance.cellValue(rowIndex, "AddressRequired");
-                }
-            }
+        import DataGrid, { Column, Editing, Form } from 'devextreme-react/data-grid';
+        import { SimpleItem, GroupItem, type FormTypes } from 'devextreme-react/form';
+        function App() {
+            const dataGridRef = useRef<DataGridRef>(null);
+            const customizeItem = useCallback(
+                (item: Parameters<NonNullable<FormTypes.Properties['customizeItem']>>[0]) => {
+                    const dataGridRefInstance = dataGridRef.current?.instance();
+                    if (!dataGridRefInstance) return;
+                    if (
+                        item &&
+                        item.itemType === 'group' &&
+                        'caption' in item &&
+                        item.caption === 'Home Address'
+                    ) {
+                        const gridInstance = dataGridRefInstance;
+                        const editRowKey = gridInstance.option('editing.editRowKey');
+                        const rowIndex = gridInstance.getRowIndexByKey(editRowKey);
+                        item.visible = gridInstance.cellValue(rowIndex, 'AddressRequired');
+                    }
+                },
+                []
+            );
+            return (
+                <DataGrid ref={dataGridRef} ...>
+                    {/* ... */}
+                    <Column dataField="State" />
+                    <Column dataField="Address" visible={false} />
+                    <Column dataField="AddressRequired" visible={false} />
+                    <Editing allowUpdating={true} allowAdding={true} mode="form">
+                        <Form customizeItem={customizeItem}>
+                            {/* ... */}
+                            <SimpleItem dataField="AddressRequired" />
+                            <GroupItem caption="Home Address">
+                                <SimpleItem dataField="StateID" />
+                                <SimpleItem dataField="Address" />
+                            </GroupItem>
+                        </Form>
+                    </Editing>
+                </DataGrid>
+            );
         }
         export default App;
 
@@ -344,22 +339,27 @@ Specify **setCellValue** for those columns whose editors affect other form items
 
     ##### React
 
-        <!--tab: App.js-->
+        <!-- tab: App.tsx -->
+        import type { DataGridTypes } from 'devextreme-react/data-grid';
+        import React, { useCallback } from 'react';
         // ...
-        class App extends React.Component {
-            // ...   
-            render() {
-                return (
-                    <DataGrid ... >             
-                        {/* ... */}
-                        <Column dataField="AddressRequired" setCellValue={this.setCellValue} />                       
-                    </DataGrid>
-                );
-            }
-            setCellValue(newData, value) {
-                let column = this;
-                column.defaultSetCellValue(newData, value);
-            }
+        import DataGrid, { Column } from 'devextreme-react/data-grid';
+        function App() {
+            const setCellValue = useCallback(function (
+                this: DataGridTypes.Column,
+                newData: Record<string, unknown>,
+                value: unknown,
+                currentRowData: Record<string, unknown>
+            ) {
+                this.defaultSetCellValue?.(newData, value, currentRowData);
+            },
+            []);
+            return (
+                <DataGrid ...>
+                    {/* ... */}
+                    <Column dataField="AddressRequired" setCellValue={setCellValue} />
+                </DataGrid>
+            );
         }
         export default App;
 

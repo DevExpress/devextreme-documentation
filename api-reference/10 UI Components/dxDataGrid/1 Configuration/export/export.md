@@ -174,7 +174,7 @@ The following instructions show how to enable and configure client-side export:
 
     ##### React
 
-        <!-- tab: App.js -->
+        <!-- tab: App.tsx -->
         import React from 'react';
         import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
@@ -336,43 +336,40 @@ The following instructions show how to enable and configure client-side export:
 
     ##### React
 
-        <!-- tab: App.js -->
-        import React from 'react';
+        <!-- tab: App.tsx -->
+        import React, { useCallback } from 'react';
         import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import { Workbook } from 'devextreme-exceljs-fork';
         import saveAs from 'file-saver';
-        import DataGrid, { Export } from 'devextreme-react/data-grid';
+        import DataGrid, { Export, type DataGridTypes } from 'devextreme-react/data-grid';
         import { exportDataGrid } from 'devextreme/excel_exporter';
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <DataGrid ...
-                        onExporting={this.onExporting}>
-                        <Export enabled={true} />
-                    </DataGrid>
-                );
-            }
-            onExporting(e) {
+        function App() {
+            const onExporting = useCallback(async (e: DataGridTypes.ExportingEvent) => {
                 const workbook = new Workbook();
                 const worksheet = workbook.addWorksheet('Main sheet');
-                exportDataGrid({
+                await exportDataGrid({
                     component: e.component,
                     worksheet: worksheet,
-                    customizeCell: function(options) {
+                    customizeCell: (options) => {
                         options.excelCell.font = { name: 'Arial', size: 12 };
                         options.excelCell.alignment = { horizontal: 'left' };
-                    } 
-                }).then(function() {
-                    workbook.xlsx.writeBuffer()
-                        .then(function(buffer) {
-                            saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
-                        });
+                    }
                 });
-            }
+                const buffer = await workbook.xlsx.writeBuffer();
+                saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
+            }, []);
+
+            return (
+                <DataGrid ...
+                    onExporting={onExporting}>
+                    <Export enabled={true} />
+                </DataGrid>
+            );
         }
         export default App;
+
 
     --- 
 
@@ -510,26 +507,27 @@ The following instructions show how to enable and configure client-side export:
 
     ##### React
 
-        <!-- tab: App.js -->
-        import React from 'react';
+        <!-- tab: App.tsx -->
+        import React, { useCallback, useRef } from 'react';
         import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-        import DataGrid from 'devextreme-react/data-grid';
+        import DataGrid, { type DataGridRef } from 'devextreme-react/data-grid';
         import Button from 'devextreme-react/button';
         import { jsPDF } from 'jspdf';
         import { exportDataGrid as exportDataGridToPdf } from 'devextreme/pdf_exporter';
         export default function App() {
-            const dataGridRef = useRef(null);
-            function exportGrid() {
+            const dataGridRef = useRef<DataGridRef>(null);
+            const exportGrid = useCallback(async () => {
+                const dataGrid = dataGridRef.current?.instance();
+                if (!dataGrid) return;
+
                 const doc = new jsPDF();
-                const dataGrid = dataGridRef.current.instance();
-                exportDataGridToPdf({
+                await exportDataGridToPdf({
                     jsPDFDocument: doc,
                     component: dataGrid
-                }).then(() => {
-                    doc.save('Customers.pdf');
                 });
-            }
+                doc.save('Customers.pdf');
+            }, []);
             return (
                 <React.Fragment>
                     <div>

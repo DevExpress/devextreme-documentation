@@ -106,31 +106,32 @@ The following code snippet shows how to call **refresh()**:
 
 #####React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef } from 'react';
 
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import { {WidgetName}, /* ... */ } from 'devextreme-react/{widget-name}';
+    import { {WidgetName}, type {WidgetName}Ref } from 'devextreme-react/{widget-name}';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <{WidgetName} ...
-                    ref={ref => this.{widgetName} = ref}>
-                    {/* ... */}
-                </{WidgetName}>
-            );
-        }
-        refresh{WidgetName}() {
-            this.{widgetName}.instance.refresh()
+    function App() {
+        const {widgetName}Ref = useRef<{WidgetName}Ref>(null);
+
+        const refresh{WidgetName} = useCallback(() => {
+            {widgetName}Ref.current?.instance().refresh()
                 .then(function() {
                     // ...
                 })
                 .catch(function(error) {
                     // ...
                 });
-        }
+        }, []);
+
+        return (
+            <{WidgetName} ...
+                ref={{widgetName}Ref}>
+                {/* ... */}
+            </{WidgetName}>
+        );
     }
     export default App;
 

@@ -116,27 +116,25 @@ The following code shows how to handle a key combination:
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
 
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import {WidgetName} from 'devextreme-react/{widget-name}';
+    import {WidgetName}, { type {WidgetName}Types } from 'devextreme-react/{widget-name}';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <{WidgetName} ...
-                    onKeyDown={this.onKeyDown}>
-                </{WidgetName}>
-            );
-        }
-
-        onKeyDown(e) {
-            if (e.event.ctrlKey && e.event.key === "Q") {
-                console.log("Ctrl + Q was pressed"); 
+    function App() {
+        const onKeyDown = useCallback((e: {WidgetName}Types.KeyDownEvent) => {
+            if (e.event?.ctrlKey && e.event.key === "Q") {
+                console.log("Ctrl + Q was pressed");
             }
-        }
+        }, []);
+
+        return (
+            <{WidgetName} ...
+                onKeyDown={onKeyDown}>
+            </{WidgetName}>
+        );
     }
     export default App;
 

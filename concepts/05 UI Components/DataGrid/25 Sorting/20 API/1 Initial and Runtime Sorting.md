@@ -181,43 +181,33 @@ Change the **sortOrder** and **sortIndex** properties using the [columnOption](/
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridTypes } from 'devextreme-react/data-grid';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import { DataGrid, Column } from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                countrySortOrder: "asc"
-            };
-        }
-
-        render() {
-            return (
-                <DataGrid ...
-                    onOptionChanged={this.onOptionChanged}>
-                    <Column
-                        dataField="Country"
-                        sortOrder={this.state.countrySortOrder} />
-                </DataGrid>
-            );
-        }
-
-        sortByCountries = (order) => {
-            this.setState({
-                countrySortOrder: order
-            });
-        }
-
-        onOptionChanged = (e) => {
-            if (e.fullName === "columns[0].sortOrder") {
-                this.sortByCountries(e.value);
-            }
-        }
+    function App() {
+        const [state, setState] = useState<{
+            countrySortOrder: 'asc' | 'desc' | undefined;
+        }>({
+            countrySortOrder: 'asc',
+        });
+        const sortByCountries = useCallback((order: 'asc' | 'desc') => {
+            setState((prevState) => ({ ...prevState, countrySortOrder: order }));
+        }, []);
+        const onOptionChanged = useCallback(
+            (e: DataGridTypes.OptionChangedEvent) => {
+                if (e.fullName === 'columns[0].sortOrder') {
+                    sortByCountries(e.value);
+                }
+            },
+            [sortByCountries]
+        );
+        return (
+            <DataGrid ... onOptionChanged={onOptionChanged}>
+                <Column dataField="Country" sortOrder={state.countrySortOrder} />
+            </DataGrid>
+        );
     }
     export default App;
 

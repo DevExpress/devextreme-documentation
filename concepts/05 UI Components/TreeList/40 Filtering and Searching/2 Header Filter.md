@@ -189,56 +189,39 @@ A user can change the applied filter by including or excluding values. Use a col
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import type { TreeListTypes } from 'devextreme-react/tree-list';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import TreeList, {
-        Column
-    } from 'devextreme-react/tree-list';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);            
-            this.state = {
-                filterType: 'exclude', // or 'include'
-                filterValues: [2014]
+    import TreeList, { Column } from 'devextreme-react/tree-list';
+    function App() {
+        const [state, setState] = useState<{
+            filterType: 'include' | 'exclude';
+            filterValues: number[];
+        }>({
+            filterType: 'exclude',
+            filterValues: [2014],
+        });
+        const onOptionChanged = useCallback((e: TreeListTypes.OptionChangedEvent) => {
+            if (e.fullName === 'columns[0].filterValues') {
+                setState((prevState) => ({ ...prevState, filterValues: e.value }));
             }
-        }
-
-        render() {
-            let { filterType, filterValues } = this.state;
-            return (
-                <TreeList ... 
-                    onOptionChanged={this.onOptionChanged}>                
-                    <Column 
-                        dataField="OrderDate"
-                        filterType={filterType}                   
-                        filterValues={filterValues}
-                    />
-                </TreeList>
-            );
-        }
-        onOptionChanged = (e) => {
-            if(e.fullName === "columns[0].filterValues") {
-                this.setState({ 
-                    filterValues: e.value
-                })
+            if (e.fullName === 'columns[0].filterType') {
+                setState((prevState) => ({ ...prevState, filterType: e.value }));
             }
-            if(e.fullName === "columns[0].filterType") {
-                this.setState({ 
-                    filterType: e.value
-                })
-            }
-        }
-        applyFilter = (filterType, values) => {
-            this.setState({
-                filterType: filterType,
-                filterValues: values
-            })
-        }
+        }, []);
+        const applyFilter = useCallback((filterType: 'include' | 'exclude', values: number[]) => {
+            setState((prevState) => ({ ...prevState, filterType: filterType, filterValues: values }));
+        }, []);
+        const { filterType, filterValues } = state;
+        return (
+            <TreeList ... onOptionChanged={onOptionChanged}>
+                <Column dataField="OrderDate" filterType={filterType} filterValues={filterValues} />
+            </TreeList>
+        );
     }
-    
+    export default App;
+
 ---
 
 You can use the **headerFilter**.[allowSearch](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/headerFilter/allowSearch.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/headerFilter/#allowSearch') property to enable the header filter's searching capability. The same property can be declared in a column's configuration object, in which case it controls searching in that column's header filter.

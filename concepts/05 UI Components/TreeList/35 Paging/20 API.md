@@ -57,30 +57,19 @@ Call the [pageCount()](/api-reference/10%20UI%20Components/dxTreeList/3%20Method
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { TreeListRef } from 'devextreme-react/tree-list';
+    import React, { useCallback, useRef } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import TreeList from 'devextreme-react/tree-list';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.treeListRef = React.createRef();
-
-            this.getTotalPageCount = () => {
-                return this.treeListRef.current.instance().pageCount();
-            }
-        }
-
-        render() {
-            return (
-                <TreeList ...
-                    ref={this.treeListRef}>
-                </TreeList>
-            );
-        }
+    function App() {
+        const treeListRef = useRef<TreeListRef>(null);
+        const getTotalPageCount = useCallback(() => {
+            const treeListRefInstance = treeListRef.current?.instance();
+            if (!treeListRefInstance) return;
+            return treeListRefInstance.pageCount();
+        }, []);
+        return <TreeList ... ref={treeListRef}></TreeList>;
     }
     export default App;
 
@@ -172,67 +161,42 @@ The TreeList also provides the [pageIndex(newIndex)](/api-reference/10%20UI%20Co
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { TreeListTypes, TreeListRef } from 'devextreme-react/tree-list';
+    import React, { useCallback, useRef, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import TreeList, {
-        Paging
-    } from 'devextreme-react/tree-list';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.treeListRef = React.createRef();
-            this.state = {
-                pageSize: 20,
-                pageIndex: 0
-            };
-            
-            this.changePageSize = this.changePageSize.bind(this);
-        	this.goToLastPage = this.goToLastPage.bind(this);
-            this.handleOptionChange = this.handleOptionChange.bind(this);
-        }
-
-        changePageSize(value) {
-            this.setState({
-                pageSize: value
-            });
-        }
-
-        goToLastPage() {
-            const pageCount = this.treeListRef.current.instance().pageCount();
-            this.setState({
-                pageIndex: pageCount - 1
-            });
-        }
-
-        handleOptionChange(e) {
-            if(e.fullName === 'paging.pageSize') {
-                this.setState({
-                    pageSize: e.value 
-                });
+    import TreeList, { Paging } from 'devextreme-react/tree-list';
+    function App() {
+        const treeListRef = useRef<TreeListRef>(null);
+        const [state, setState] = useState<{
+            pageSize: number;
+            pageIndex: number;
+        }>({
+            pageSize: 20,
+            pageIndex: 0,
+        });
+        const changePageSize = useCallback((value: number) => {
+            setState((prevState) => ({ ...prevState, pageSize: value }));
+        }, []);
+        const goToLastPage = useCallback(() => {
+            const treeListRefInstance = treeListRef.current?.instance();
+            if (!treeListRefInstance) return;
+            const pageCount = treeListRefInstance.pageCount();
+            setState((prevState) => ({ ...prevState, pageIndex: pageCount - 1 }));
+        }, []);
+        const handleOptionChange = useCallback((e: TreeListTypes.OptionChangedEvent) => {
+            if (e.fullName === 'paging.pageSize') {
+                setState((prevState) => ({ ...prevState, pageSize: e.value }));
             }
-            if(e.fullName === 'paging.pageIndex') {
-                this.setState({
-                    pageIndex: e.value 
-                });
+            if (e.fullName === 'paging.pageIndex') {
+                setState((prevState) => ({ ...prevState, pageIndex: e.value }));
             }
-        }
-
-        render() {
-            return (
-                <TreeList ...
-                    ref={this.treeListRef}
-                    onOptionChanged={this.handleOptionChange}>
-                    <Paging
-                        pageSize={this.state.pageSize}
-                        pageIndex={this.state.pageIndex}
-                    />
-                </TreeList>
-            );
-        }
+        }, []);
+        return (
+            <TreeList ... ref={treeListRef} onOptionChanged={handleOptionChange}>
+                <Paging pageSize={state.pageSize} pageIndex={state.pageIndex} />
+            </TreeList>
+        );
     }
     export default App;
 

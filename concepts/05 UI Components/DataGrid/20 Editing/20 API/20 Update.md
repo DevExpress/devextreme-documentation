@@ -95,46 +95,29 @@ The [cellValue(rowIndex, visibleColumnIndex, value)](/api-reference/10%20UI%20Co
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridRef } from 'devextreme-react/data-grid';
+    import React, { useCallback, useRef } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import DataGrid from 'devextreme-react/data-grid';
     import Button from 'devextreme-react/button';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.dataGridRef = React.createRef();
-            this.updateCell = this.updateCell.bind(this);
-        }
-
-        get dataGrid() {
-            return this.dataGridRef.current.instance();
-        }
-
-        updateCell() {
-            this.dataGrid.cellValue(1, "Position", "CTO");
-            this.dataGrid.saveEditData();
-        }
-
-        render() {
-            return (
-                <React.Fragment>
-                    <DataGrid ...
-                        ref={this.dataGridRef}>
-                    </DataGrid>
-                    <Button
-                        text="Update Cell"
-                        onClick={this.updateCell}
-                    />
-                </React.Fragment>
-            );
-        }
+    function App() {
+        const dataGridRef = useRef<DataGridRef>(null);
+        const updateCell = useCallback(() => {
+            const dataGridRefInstance = dataGridRef.current?.instance();
+            if (!dataGridRefInstance) return;
+            dataGridRefInstance.cellValue(1, 'Position', 'CTO');
+            dataGridRefInstance.saveEditData();
+        }, []);
+        return (
+            <React.Fragment>
+                <DataGrid ... ref={dataGridRef}></DataGrid>
+                <Button text="Update Cell" onClick={updateCell} />
+            </React.Fragment>
+        );
     }
     export default App;
-    
+
 ---
 
 To process an updated cell value before saving it to the data source, implement the **columns**.[setCellValue](/api-reference/_hidden/GridBaseColumn/setCellValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#setCellValue') function. Refer to the function's description for an example.
@@ -258,53 +241,36 @@ You can check if there are any unsaved changes by calling the [hasEditData()](/a
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridRef } from 'devextreme-react/data-grid';
+    import React, { useCallback, useRef } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import DataGrid from 'devextreme-react/data-grid';
     import Button from 'devextreme-react/button';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.dataGridRef = React.createRef();
-            this.saveChanges = this.saveChanges.bind(this);
-        }
-
-        get dataGrid() {
-            return this.dataGridRef.current.instance();
-        }
-
-        saveChanges() {
-            if(this.dataGrid.hasEditData()) {
-                this.dataGrid.saveEditData().then(() => {
-                    if(!this.dataGrid.hasEditData()) {
+    function App() {
+        const dataGridRef = useRef<DataGridRef>(null);
+        const saveChanges = useCallback(() => {
+            const dataGridRefInstance = dataGridRef.current?.instance();
+            if (!dataGridRefInstance) return;
+            if (dataGridRefInstance.hasEditData()) {
+                dataGridRefInstance.saveEditData().then(() => {
+                    if (!dataGridRefInstance.hasEditData()) {
                         // Saved successfully
                     } else {
                         // Saving failed
                     }
                 });
             }
-        }
-
-        render() {
-            return (
-                <React.Fragment>
-                    <DataGrid ...
-                        ref={this.dataGridRef}>
-                    </DataGrid>
-                    <Button
-                        text="Save changes"
-                        onClick={this.saveChanges}
-                    />
-                </React.Fragment>
-            );
-        }
+        }, []);
+        return (
+            <React.Fragment>
+                <DataGrid ... ref={dataGridRef}></DataGrid>
+                <Button text="Save changes" onClick={saveChanges} />
+            </React.Fragment>
+        );
     }
     export default App;
-    
+
 ---
 
 #####See Also#####

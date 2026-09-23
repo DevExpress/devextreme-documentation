@@ -109,3 +109,5 @@ A [provider](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/provide
     export default App;
 
 ---
+
+For **osm**, use **tileServer** to configure tiles and **calculateLocation** / **calculateRoute** to connect geocoding and routing services. See [OpenStreetMap Provider](/concepts/05%20UI%20Components/Map/12%20OpenStreetMap%20Provider/00%20Overview.md '/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/') for examples.

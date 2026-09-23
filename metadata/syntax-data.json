@@ -6803,6 +6803,11 @@
     "bubblePointInfo.sizeText": {
       "vue": "size-text"
     },
+    "calculateOsmRouteInfo": {
+      "angular": "dxo-calculate-osm-route-info",
+      "react": "CalculateOsmRouteInfo",
+      "vue": "DxCalculateOsmRouteInfo"
+    },
     "candleStickPointInfo": {
       "angular": "dxo-candle-stick-point-info",
       "react": "CandleStickPointInfo",
@@ -15163,6 +15168,12 @@
       "angular": "dxo-provider-config",
       "react": "ProviderConfig",
       "vue": "DxProviderConfig"
+    },
+    "dxMapOptions.providerConfig.calculateLocation": {
+      "vue": "calculate-location"
+    },
+    "dxMapOptions.providerConfig.calculateRoute": {
+      "vue": "calculate-route"
     },
     "dxMapOptions.providerConfig.mapId": {
       "vue": "map-id"

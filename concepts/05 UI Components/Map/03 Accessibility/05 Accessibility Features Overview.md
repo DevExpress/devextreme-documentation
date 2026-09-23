@@ -11,7 +11,7 @@
     </tr>
     <tr>
         <td>Keyboard Navigation Support</td>
-        <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-error"/></svg></td>
+        <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
     </tr>
     <tr>
         <td>Screen Reader Support</td>
@@ -52,4 +52,6 @@
    <li style="display: flex; align-items: center;"><svg width="18" height="18" style="padding: 2px 4px 0px 0px;"><use xlink:href="#svg-icon-warning"/></svg> - Some component features may not meet the requirement</li>
    <li style="display: flex; align-items: center;"><svg width="18" height="18" style="padding: 2px 4px 0px 0px;"><use xlink:href="#svg-icon-error"/></svg> - Accessibility requirement is not supported</li>
 </ul>
+
+Keyboard navigation support depends on the provider. The **osm** provider supports keyboard navigation; see [OSM Keyboard and Focus](/concepts/05%20UI%20Components/Map/12%20OpenStreetMap%20Provider/30%20Accessibility%20and%20Security.md '/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/Accessibility_and_Security/') for details.
 

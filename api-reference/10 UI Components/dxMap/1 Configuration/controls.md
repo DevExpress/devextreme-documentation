@@ -9,3 +9,5 @@ Specifies whether or not map UI component controls are available.
 
 ---
 Assign a Boolean value to this property to enable or disable all controls at once - both the map navigation control and the map type control.
+
+For **osm**, this setting controls only the zoom buttons; attribution remains visible.

@@ -21,3 +21,5 @@ The current provider's map data.
 
 ---
 You can use the `component` field to access properties that are common to all supported Map [providers](/api-reference/10%20UI%20Components/dxMap/9%20Types/MapProvider.md '/Documentation/ApiReference/UI_Components/dxMap/Types/#MapProvider'). To access provider-specific API, utilize the `originalMap` parameter.
+
+For **osm**, **originalMap** is an OpenLayers Map instance.

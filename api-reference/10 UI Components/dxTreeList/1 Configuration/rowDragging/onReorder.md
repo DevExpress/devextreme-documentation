@@ -7,7 +7,7 @@ type: function(e)
 A function that is called when the draggable rows are reordered.
 
 ##### param(e): ui/tree_list:RowDraggingReorderEvent
-Information about the event that caused the function's execution.
+Information about the event.
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.

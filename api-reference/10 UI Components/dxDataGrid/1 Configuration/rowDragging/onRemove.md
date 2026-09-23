@@ -7,7 +7,7 @@ type: function(e)
 A function that is called when a draggable row is removed.
 
 ##### param(e): ui/data_grid:RowDraggingRemoveEvent
-Information about the event that caused the function's execution.
+Information about the event.
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.

@@ -7,7 +7,7 @@ type: function(e)
 A function that is called when the drag gesture is finished.
 
 ##### param(e): ui/data_grid:RowDraggingEndEvent
-Information about the event that caused the function's execution.
+Information about the event.
 
 ##### field(e.cancel): Boolean
 Set this field to **true** to cancel the drag gesture.
@@ -49,4 +49,4 @@ Custom [data](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration
 The position in which a row is placed. If the row is dragged away from the UI component, the value is **-1**.
 
 ---
-Use this handler to check the result of a drag gesture and set **e.cancel** to **true** to cancel it. To update the data source after a drop, implement [onReorder](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#onReorder) for row reordering or [onAdd](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#onAdd) and [onRemove](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#onRemove) for transfers between components.
+Check the result of a drag gesture in this handler. Set **e.cancel** to **true** to cancel the gesture. To update the data source after a drop, implement [onReorder](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#onReorder) for row reordering or [onAdd](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#onAdd) and [onRemove](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#onRemove) for transfers between components.

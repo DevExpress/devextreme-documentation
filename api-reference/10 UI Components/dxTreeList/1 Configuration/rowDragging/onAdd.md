@@ -7,7 +7,7 @@ type: function(e)
 A function that is called when a new row is added.
 
 ##### param(e): ui/tree_list:RowDraggingAddEvent
-Information about the event that caused the function's execution.
+Information about the event.
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.

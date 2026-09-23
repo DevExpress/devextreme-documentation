@@ -7,7 +7,7 @@ type: function(e)
 A function that is called when a drag gesture is initialized.
 
 ##### param(e): ui/tree_list:RowDraggingStartEvent
-Information about the event that caused the function's execution.
+Information about the event.
 
 ##### field(e.cancel): Boolean
 Set this field to **true** to cancel the drag gesture.
@@ -34,4 +34,4 @@ The row's data before the drag operation.
 #include draganddrop-ref-itemelementparam
 
 ---
-Use this handler to check whether a row can be dragged. Set **e.cancel** to **true** to prevent the drag gesture. Use **e.itemData** to check the row's data.
+Use this handler to check whether users can drag a row. Set **e.cancel** to **true** to prevent the drag gesture. Use **e.itemData** to check the row's data.

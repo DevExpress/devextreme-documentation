@@ -7,7 +7,7 @@ type: function(e)
 A function that is called when the dragged row's position is changed.
 
 ##### param(e): ui/tree_list:RowDraggingChangeEvent
-Information about the event that caused the function's execution.
+Information about the event.
 
 ##### field(e.cancel): Boolean
 Set this field to **true** to cancel the drag gesture.

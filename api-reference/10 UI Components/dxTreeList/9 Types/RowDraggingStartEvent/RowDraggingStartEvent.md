@@ -12,4 +12,4 @@ generateTypeLink:
 The type of the **rowDragging**.[onDragStart](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#onDragStart) event handler's argument.
 
 ---
-Use this type to annotate the argument of a [onDragStart](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#onDragStart) handler. Refer to the handler's description for event fields and usage details. The **TRowData** and **TKey** type parameters specify the row data and key types.
+Use this type to annotate the argument of an [onDragStart](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#onDragStart) handler. Refer to the handler's description for details about the event argument. The **TRowData** and **TKey** type parameters specify the row data and key types.

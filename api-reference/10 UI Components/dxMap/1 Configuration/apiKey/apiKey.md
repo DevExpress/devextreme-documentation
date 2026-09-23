@@ -126,3 +126,5 @@ If you have more than one map provider in your application, specify the keys in 
 }
 
 [note] The value of this property cannot be changed dynamically.
+
+The **osm** provider does not use **apiKey**. Configure service credentials in the tile URL or geocoding and routing callbacks.

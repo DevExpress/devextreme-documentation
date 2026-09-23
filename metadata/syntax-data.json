@@ -15167,6 +15167,9 @@
     "dxMapOptions.providerConfig.mapId": {
       "vue": "map-id"
     },
+    "dxMapOptions.providerConfig.tileServer": {
+      "vue": "tile-server"
+    },
     "dxMapOptions.providerConfig.useAdvancedMarkers": {
       "vue": "use-advanced-markers"
     },
@@ -22897,6 +22900,19 @@
     },
     "oDataStoreOptions.withCredentials": {
       "vue": "with-credentials"
+    },
+    "osmTileServer": {
+      "angular": "dxo-osm-tile-server",
+      "react": "OsmTileServer",
+      "vue": "DxOsmTileServer"
+    },
+    "osmTileServerConfig": {
+      "angular": "dxo-osm-tile-server-config",
+      "react": "OsmTileServerConfig",
+      "vue": "DxOsmTileServerConfig"
+    },
+    "osmTileServerConfig.maxZoom": {
+      "vue": "max-zoom"
     },
     "pager": {
       "angular": "dxo-pager",

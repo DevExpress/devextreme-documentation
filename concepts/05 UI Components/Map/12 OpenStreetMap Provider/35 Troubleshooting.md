@@ -49,3 +49,18 @@ Check the following:
 - **providerConfig.tileServer** supplies a valid URL template. **W1030** indicates a missing configuration; it does not enable a fallback public tile service.
 - Tile requests succeed. Check credentials, mixed content, Content Security Policy, CORS where applicable, and the tile service's supported zoom levels.
 - **controls: false** intentionally hides the OSM zoom control.
+
+## Locations or Routes Are Missing
+
+Use the warning code to find the missing integration:
+
+| Code | Action |
+| --- | --- |
+| [W1031](/api-reference/10%20UI%20Components/Errors%20and%20Warnings/W1031.md '/Documentation/ApiReference/UI_Components/Errors_and_Warnings/#W1031') | Configure **calculateLocation**, or use coordinates instead of place names. |
+| [W1032](/api-reference/10%20UI%20Components/Errors%20and%20Warnings/W1032.md '/Documentation/ApiReference/UI_Components/Errors_and_Warnings/#W1032') | Specify the tile source's required attribution. |
+| [W1033](/api-reference/10%20UI%20Components/Errors%20and%20Warnings/W1033.md '/Documentation/ApiReference/UI_Components/Errors_and_Warnings/#W1033') | Configure **calculateRoute** to return geometry. |
+| [W1006](/api-reference/10%20UI%20Components/Errors%20and%20Warnings/W1006.md '/Documentation/ApiReference/UI_Components/Errors_and_Warnings/#W1006') | Inspect callback failures and validate the returned coordinates or geometry. |
+
+Map coordinate arrays use **[latitude, longitude]**. GeoJSON LineString positions use **[longitude, latitude]**. A routing response must contain at least two valid positions. Extract the geometry from your service response rather than returning a Feature or FeatureCollection.
+
+See [Calculate Locations](/concepts/05%20UI%20Components/Map/12%20OpenStreetMap%20Provider/10%20Calculate%20Locations.md '/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/Calculate_Locations/') and [Calculate Routes](/concepts/05%20UI%20Components/Map/12%20OpenStreetMap%20Provider/15%20Calculate%20Routes.md '/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/Calculate_Routes/') for skipped-route and unresolved-location behavior.

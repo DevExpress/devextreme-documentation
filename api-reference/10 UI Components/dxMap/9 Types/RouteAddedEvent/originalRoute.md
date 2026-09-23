@@ -4,7 +4,9 @@ uid: ui/map:RouteAddedEvent.originalRoute
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The current provider's native route object.
 
 ---
-<!-- Description goes here -->
+For **osm**, this is an OpenLayers Feature with LineString geometry.
+
+See [Access the OpenLayers API](/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/Access_the_OpenLayers_API/).

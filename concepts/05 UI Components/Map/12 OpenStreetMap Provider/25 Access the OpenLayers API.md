@@ -4,6 +4,7 @@ Use Map events to obtain native OpenLayers objects:
 | --- | --- |
 | onReady.originalMap | OpenLayers Map |
 | onMarkerAdded.originalMarker; addMarker(...) result | OpenLayers Overlay |
+| onRouteAdded.originalRoute; addRoute(...) result | OpenLayers Feature with LineString geometry |
 
 These objects are provider-specific. Check the active provider before you use an OpenLayers method in a handler shared by multiple providers.
 

@@ -20,5 +20,7 @@ Each location can be specified in any of the following formats.
  - [40.749825, -73.987963]
  - "Brooklyn Bridge,New York,NY"
 
+For **osm**, the returned route instance is an OpenLayers Feature with LineString geometry.
+
 #####See Also#####
 #include common-link-callmethods

@@ -20,8 +20,10 @@ The UI component's instance.
 The added route's data.
 
 ##### field(e.originalRoute): Object
-The original route that the current map provider uses (only for "google" provider).
+The original route that the current map provider uses.
 
 ---
+For **osm**, **originalRoute** is an OpenLayers Feature with LineString geometry.
+
 #####See Also#####
 - [Add and Remove a Route](/concepts/05%20UI%20Components/Map/25%20Configure%20Routes/05%20Add%20and%20Remove.md '/Documentation/Guide/UI_Components/Map/Configure_Routes/Add_and_Remove/')

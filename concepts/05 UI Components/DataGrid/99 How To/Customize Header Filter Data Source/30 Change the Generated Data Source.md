@@ -147,7 +147,7 @@ In the following code, the **postProcess** function adds a custom item to the ge
     function App() {
         const customizeHeaderFilterData = useCallback(
             (options: { dataSource?: DataSourceOptions | null }) => {
-if (!options.dataSource) return;
+                if (!options.dataSource) return;
                 options.dataSource.postProcess = function (results: HeaderFilterItem[]) {
                     results.push({
                         text: 'Weekends',

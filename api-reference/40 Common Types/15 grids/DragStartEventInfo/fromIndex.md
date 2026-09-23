@@ -4,7 +4,7 @@ type: Number
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The row's original position.
 
 ---
-<!-- Description goes here -->
+Use this field to locate the dragged row in the source component. The value is **-1** if the row comes from another UI component. With paging enabled, the index is relative to the active page.

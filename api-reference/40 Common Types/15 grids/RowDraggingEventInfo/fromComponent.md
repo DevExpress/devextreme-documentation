@@ -4,7 +4,7 @@ type: Sortable | Draggable
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The instance of the row's source UI component.
 
 ---
-<!-- Description goes here -->
+Use this field to access the source component during drag and drop between components. Use **fromData** to access the custom data associated with that component.

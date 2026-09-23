@@ -4,34 +4,34 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is called when a drag gesture is initialized.
 
 ##### param(e): ui/data_grid:RowDraggingStartEvent
-<!-- Description goes here -->
+Information about the event that caused the function's execution.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Set this field to **true** to cancel the drag gesture.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
-<!-- Description goes here -->
+#include common-ref-eventparam
 
 ##### field(e.fromData): any
-<!-- Description goes here -->
+Custom [data](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#data) associated with the source UI component. Works only for element drag and drop between components.
 
 ##### field(e.fromIndex): Number
-<!-- Description goes here -->
+The row's original position. If the row is dragged from another UI component, the value is **-1**.
 
 ##### field(e.itemData): any
-<!-- Description goes here -->
+The row's data before the drag operation.
 
 ##### field(e.itemElement): DxElement
-<!-- Description goes here -->
+#include draganddrop-ref-itemelementparam
 
 ---
-<!-- Description goes here -->
+Use this handler to check whether a row can be dragged. Set **e.cancel** to **true** to prevent the drag gesture. Use **e.itemData** to check the row's data.

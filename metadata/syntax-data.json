@@ -2810,6 +2810,21 @@
       "react": "OriginalMarker",
       "vue": "DxOriginalMarker"
     },
+    "_ui_map_MarkerClickEvent": {
+      "angular": "dxo-ui-map--marker-click-event",
+      "react": "_ui_map_MarkerClickEvent",
+      "vue": "Dx_ui_map_MarkerClickEvent"
+    },
+    "_ui_map_MarkerClickEvent.location": {
+      "angular": "dxo-location",
+      "react": "Location",
+      "vue": "DxLocation"
+    },
+    "_ui_map_MarkerClickEvent.tooltip": {
+      "angular": "dxo-tooltip",
+      "react": "Tooltip",
+      "vue": "DxTooltip"
+    },
     "_ui_map_MarkerRemovedEvent": {
       "angular": "dxo-ui-map--marker-removed-event",
       "react": "_ui_map_MarkerRemovedEvent",

@@ -6,13 +6,25 @@ The **osm** provider supports keyboard interaction when **focusStateEnabled** is
 - Arrow keys pan a focused map; **+** and **-** change zoom.
 - **Enter** or **Space** activates a focused interactive marker.
 - A marker with a click handler or tooltip is interactive. A marker without either is not added as a button to the tab sequence.
-- Offscreen markers are excluded from keyboard navigation to avoid scrolling the map's DOM container into empty space.
+- Offscreen markers and clipped interactive tooltip elements are excluded from keyboard navigation to avoid scrolling the map's DOM container into empty space.
 
 The provider does not pan the map to an offscreen marker when a user presses Tab. Give users another way to select locations if your workflow requires access to markers outside the view.
+
+The default informational tooltip keeps focus on the marker and uses an accessible description relationship. Keyboard dismissal uses the Popover's Escape handling. There is no default hover trigger or Close button. Do not describe this as an application-wide accessibility certification: test the completed UI, including its map controls, content, and navigation alternatives.
+
+For interactive or extensive content, manage the accessible name, role, focus entry and return, and keyboard behavior in your application. An application-owned dialog or details panel may fit this content better. The [WAI-ARIA tooltip pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/) distinguishes nonfocusable tooltip content from interactive dialogs.
 
 The default marker has a localized generic accessible name. Replace it with a meaningful place name through **onMarkerAdded.originalMarker.getElement()** as shown in [Access the OpenLayers API](/concepts/05%20UI%20Components/Map/12%20OpenStreetMap%20Provider/25%20Access%20the%20OpenLayers%20API.md '/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/Access_the_OpenLayers_API/').
 
 **rtlEnabled** changes the relevant UI direction; it does not mirror geographic coordinates. Default marker colors use the light palette of the selected theme family in both light and dark themes because the tile background does not change with the DevExtreme theme.
+
+## HTML and Custom Content
+
+Both **markers[].tooltip.text** and tile **attribution** can contain HTML. Treat external values as untrusted. Encode plain text or sanitize allowed markup before assigning it. Do not put untrusted HTML directly into these properties.
+
+For custom tooltip templates, use safe DOM APIs such as **textContent** for text. The Map does not expose a public arbitrary HTML marker property. Use **iconSrc** for a custom marker image.
+
+See [Customize Marker Tooltips](/concepts/05%20UI%20Components/Map/12%20OpenStreetMap%20Provider/20%20Customize%20Marker%20Tooltips.md '/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/Customize_Marker_Tooltips/') for public Popover customization examples.
 
 ## Network and Content Security Policy
 

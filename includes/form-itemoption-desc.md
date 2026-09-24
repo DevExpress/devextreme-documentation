@@ -3,7 +3,7 @@ The **id** parameter accepts the following values:
 - The **name** value of a root-level item
 - The path of an item nested in a group or tab
 
-Paths cannot include spaces and must separate nesting levels with periods. Use the following property values to define nesting levels:
+Paths must separate nesting levels with periods and cannot include spaces or start with a period. Use the following property values to define nesting levels:
 
 - **GroupItem**.[name](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/GroupItem/name.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/#name')
 - **GroupItem**.[caption](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/GroupItem/caption.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/#caption')
@@ -18,6 +18,8 @@ Review the following Form configuration. Code snippets in this section that demo
     $('#form').dxForm({
         items: [{
             itemType: 'group',
+            caption: 'Employee',
+            name: 'employeeInfo',
             items: ['name', 'position', 'hireDate', 'officeNumber']
         }, {
             itemType: 'group',
@@ -41,12 +43,15 @@ Review the following Form configuration. Code snippets in this section that demo
     <!-- tab: Index.cshtml -->
     @(Html.DevExtreme().Form()
         .Items(FormItems => {
-            FormItems.AddGroup().Items(GroupOneItems => {
-                GroupOneItems.AddSimple().DataField("name");
-                GroupOneItems.AddSimple().DataField("position");
-                GroupOneItems.AddSimple().DataField("hireDate");
-                GroupOneItems.AddSimple().DataField("officeNumber");
-            });
+            FormItems.AddGroup()
+                .Caption("Employee")
+                .Name("employeeInfo")
+                .Items(GroupOneItems => {
+                    GroupOneItems.AddSimple().DataField("name");
+                    GroupOneItems.AddSimple().DataField("position");
+                    GroupOneItems.AddSimple().DataField("hireDate");
+                    GroupOneItems.AddSimple().DataField("officeNumber");
+                });
             FormItems.AddGroup()
                 .Caption("Additional Information")
                 .Name("additionalInfo")
@@ -69,7 +74,11 @@ Review the following Form configuration. Code snippets in this section that demo
 
     <!-- tab: app.component.html -->
     <dx-form>
-        <dxi-form-item itemType="group">
+        <dxi-form-item
+            itemType="group"
+            caption="Employee"
+            name="employeeInfo"
+        >
             <dxi-form-item dataField="name"></dxi-form-item>
             <dxi-form-item dataField="position"></dxi-form-item>
             <dxi-form-item dataField="hireDate"></dxi-form-item>
@@ -98,7 +107,10 @@ Review the following Form configuration. Code snippets in this section that demo
     <!-- tab: App.vue -->
     <template>
         <DxForm>
-            <DxGroupItem>
+            <DxGroupItem
+                caption="Employee"
+                name="employeeInfo"
+            >
                 <DxSimpleItem data-field="name"/>
                 <DxSimpleItem data-field="position"/>
                 <DxSimpleItem data-field="hireDate"/>
@@ -138,7 +150,10 @@ Review the following Form configuration. Code snippets in this section that demo
     export default function App() {
         return (
             <Form>
-                <GroupItem>
+                <GroupItem
+                    caption="Employee"
+                    name="employeeInfo"
+                >
                     <SimpleItem dataField="name" />
                     <SimpleItem dataField="position" />
                     <SimpleItem dataField="hireDate" />
@@ -169,6 +184,8 @@ The following code snippet defines a path for the "phone" item. This snippet pas
 
     formInstance.itemOption('additionalInfo.Contacts.phone'${{additionalOptions}});
 
-If a root-level **GroupItem** or **TabbedItem** has no identifier, start **id** with a period to specify a path to a nested item:
+The "Employee" group is not nested in another item. Pass the group's **caption** or **name** to **itemOption()** instead of a path:
 
-    formInstance.itemOption('.name'${{additionalOptions}});
+    formInstance.itemOption('Employee'${{additionalOptions}});
+
+[note] You cannot call **itemOption()** for items nested in a root-level **GroupItem** or **TabbedItem** that has no identifier.

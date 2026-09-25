@@ -4,49 +4,49 @@ type: function(e)
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+A function that is called every time a draggable row is moved.
 
 ##### param(e): ui/tree_list:RowDraggingMoveEvent
-<!-- Description goes here -->
+Information about the event.
 
 ##### field(e.cancel): Boolean
-<!-- Description goes here -->
+Set this field to **true** to cancel the drag gesture.
 
 ##### field(e.component): {WidgetName}
-<!-- Description goes here -->
+The UI component's instance.
 
 ##### field(e.dropInsideItem): Boolean
-<!-- Description goes here -->
+Indicates if the dragged row is dropped inside another row. Available only for the TreeList UI component.
 
 ##### field(e.element): DxElement
-<!-- Description goes here -->
+#include common-ref-elementparam with { element: "UI component" }
 
 ##### field(e.event): event
-<!-- Description goes here -->
+#include common-ref-eventparam
 
 ##### field(e.fromComponent): Sortable | Draggable
-<!-- Description goes here -->
+The row's source UI component instance. Available only for drag-and-drop operations between components.
 
 ##### field(e.fromData): any
-<!-- Description goes here -->
+Custom [data](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#data) associated with the source UI component. Available only for drag-and-drop operations between components.
 
 ##### field(e.fromIndex): Number
-<!-- Description goes here -->
+The row's original position. If the row is dragged from another UI component, the value is **-1**.
 
 ##### field(e.itemData): any
-<!-- Description goes here -->
+The data object of the row being dragged.
 
 ##### field(e.itemElement): DxElement
-<!-- Description goes here -->
+#include draganddrop-ref-itemelementparam
 
 ##### field(e.toComponent): Sortable | Draggable
-<!-- Description goes here -->
+The instance of the row's target UI component. Available only for drag-and-drop operations between components.
 
 ##### field(e.toData): any
-<!-- Description goes here -->
+Custom [data](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#data) associated with the target UI component. Available only for drag-and-drop operations between components.
 
 ##### field(e.toIndex): Number
-<!-- Description goes here -->
+The position where the row is placed. If the row is dragged away from the UI component, the value is -1.
 
 ---
-<!-- Description goes here -->
+Use this handler to respond as the user moves a row during a drag gesture. Set **e.cancel** to **true** to cancel the gesture. To handle changes to the target row position, use [onDragChange](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#onDragChange).

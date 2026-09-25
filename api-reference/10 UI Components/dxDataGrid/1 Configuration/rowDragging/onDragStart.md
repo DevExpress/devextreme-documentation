@@ -22,16 +22,16 @@ The UI component's instance.
 #include common-ref-eventparam
 
 ##### field(e.fromData): any
-Custom [data](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#data) associated with the source UI component. Works only for element drag and drop between components.
+Custom [data](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#data) associated with the source UI component. Available only for drag-and-drop operations between components.
 
 ##### field(e.fromIndex): Number
 The row's original position. If the row is dragged from another UI component, the value is **-1**.
 
 ##### field(e.itemData): any
-The row's data before the drag operation.
+The data object of the row being dragged.
 
 ##### field(e.itemElement): DxElement
 #include draganddrop-ref-itemelementparam
 
 ---
-Use this handler to check whether users can drag a row. Set **e.cancel** to **true** to prevent the drag gesture. Use **e.itemData** to check the row's data.
+Use this handler to check whether users can drag a row. Set **e.cancel** to **true** to prevent drag operations. Use **e.itemData** to check the row's data.

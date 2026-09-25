@@ -22,7 +22,7 @@ Indicates if the dragged row is dropped inside another row.
 #include common-ref-eventparam
 
 ##### field(e.fromComponent): Sortable | Draggable
-The instance of the row's source UI component.
+The row's source UI component instance.
 
 ##### field(e.fromData): any
 Custom [data](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#data) associated with the source UI component.

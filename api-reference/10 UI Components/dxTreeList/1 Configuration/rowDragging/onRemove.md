@@ -19,7 +19,7 @@ The UI component's instance.
 #include common-ref-eventparam
 
 ##### field(e.fromComponent): Sortable | Draggable
-The instance of the row's source UI component.
+The row's source UI component instance.
 
 ##### field(e.fromData): any
 Custom [data](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#data) associated with the source UI component.
@@ -40,7 +40,7 @@ The instance of the row's target UI component.
 Custom [data](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#data) associated with the target UI component.
 
 ##### field(e.toIndex): Number
-The position in which a row is placed. If the row is dragged away from the UI component, the value is **-1**.
+The position where the row is placed. If the row is dragged away from the UI component, the value is -1.
 
 ---
 Implement this handler to remove the dragged row from the source data source. Use [onAdd](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#onAdd) in the target component to insert the row into its data source. Both handlers execute when a user drops a row between components with the same [group](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#group) value.

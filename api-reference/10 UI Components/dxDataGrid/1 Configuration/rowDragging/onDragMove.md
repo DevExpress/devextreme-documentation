@@ -25,28 +25,28 @@ Indicates if the dragged row is dropped inside another row. Available only for t
 #include common-ref-eventparam
 
 ##### field(e.fromComponent): Sortable | Draggable
-The instance of the row's source UI component. Works only for element drag and drop between components.
+The row's source UI component instance. Available only for drag-and-drop operations between components.
 
 ##### field(e.fromData): any
-Custom [data](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#data) associated with the source UI component. Works only for element drag and drop between components.
+Custom [data](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#data) associated with the source UI component. Available only for drag-and-drop operations between components.
 
 ##### field(e.fromIndex): Number
 The row's original position. If the row is dragged from another UI component, the value is **-1**.
 
 ##### field(e.itemData): any
-The row's data before the drag operation.
+The data object of the row being dragged.
 
 ##### field(e.itemElement): DxElement
 #include draganddrop-ref-itemelementparam
 
 ##### field(e.toComponent): Sortable | Draggable
-The instance of the row's target UI component. Works only for element drag and drop between components.
+The instance of the row's target UI component. Available only for drag-and-drop operations between components.
 
 ##### field(e.toData): any
-Custom [data](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#data) associated with the target UI component. Works only for element drag and drop between components.
+Custom [data](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#data) associated with the target UI component. Available only for drag-and-drop operations between components.
 
 ##### field(e.toIndex): Number
-The position in which the row is placed. If the row is dragged away from the UI component, the value is **-1**.
+The position where the row is placed. If the row is dragged away from the UI component, the value is -1.
 
 ---
-Use this handler to respond as the user moves a row during a drag gesture. Set **e.cancel** to **true** to cancel the gesture. To check changes to the target row position, use [onDragChange](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#onDragChange).
+Use this handler to respond as the user moves a row during a drag gesture. Set **e.cancel** to **true** to cancel the gesture. To handle changes to the target row position, use [onDragChange](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#onDragChange).

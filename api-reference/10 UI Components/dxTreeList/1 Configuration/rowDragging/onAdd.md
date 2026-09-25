@@ -22,7 +22,7 @@ Indicates if the dragged row is dropped inside another row. Available only for t
 #include common-ref-eventparam
 
 ##### field(e.fromComponent): Sortable | Draggable
-The instance of the row's source UI component.
+The row's source UI component instance.
 
 ##### field(e.fromData): any
 Custom [data](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#data) associated with the source UI component.
@@ -43,7 +43,7 @@ The instance of the row's target UI component.
 Custom [data](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#data) associated with the target UI component.
 
 ##### field(e.toIndex): Number
-The position in which the row is placed. If the row is dragged away from the UI component, the value is **-1**. If [virtual scrolling](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/scrolling/#mode) is enabled, the **toIndex** parameter starts from the top visible row.
+The position where the row is placed. If the row is dragged away from the UI component, the value is -1. When [virtual scrolling](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/scrolling/#mode) is enabled, the index is relative to the top visible row.
 
 ---
 Set [group](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#group) to the same value in the source and target components to allow users to drag rows between them. Implement this handler to add the dragged row's data to the target data source. Use [onRemove](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#onRemove) in the source component to remove the original row.

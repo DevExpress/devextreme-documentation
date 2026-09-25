@@ -4,7 +4,7 @@ type: DxElement
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+#include draganddrop-ref-itemelementparam
 
 ---
-<!-- Description goes here -->
+Use this field to access the dragged row's element in an event handler. To access the corresponding data object, use **itemData**.

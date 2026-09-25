@@ -7,7 +7,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Describes whether a dragged row is dropped inside another row.
 
 ---
-<!-- Description goes here -->
+This type supplies the **dropInsideItem** field for DataGrid and TreeList row-dragging events. Use this field in TreeList handlers to distinguish a drop inside a row from a drop between rows.

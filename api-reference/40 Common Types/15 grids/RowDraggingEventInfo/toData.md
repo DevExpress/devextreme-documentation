@@ -4,7 +4,7 @@ type: any
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Custom data associated with the target UI component.
 
 ---
-<!-- Description goes here -->
+Set the target component's [data](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#data) property to pass application-specific information to row-dragging handlers. Use **toData** to determine how to process a row dropped into that component.

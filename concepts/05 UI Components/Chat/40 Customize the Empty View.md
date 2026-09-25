@@ -107,7 +107,7 @@ To implement custom markup for the Chat's empty view, specify the [emptyViewTemp
 To view the full source code of this tutorial, refer to the following example:
 
 #include btn-open-github with {
-    href: "https://github.com/DevExpress-Examples/devextreme-chat-empty-view-customization9"
+    href: "https://github.com/DevExpress-Examples/devextreme-chat-empty-view-customization"
 }
 
 This tutorial also implements the **texts**.**message** variable defined in the **emptyViewTemplate** parameter. The **texts** object includes the following variables:

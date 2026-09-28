@@ -11118,9 +11118,6 @@
     "dxDataGridOptions.rowDragging.onReorder": {
       "vue": "@reorder"
     },
-    "dxDataGridOptions.rowTemplate": {
-      "vue": "row-template"
-    },
     "dxDataGridOptions.scrolling": {
       "angular": "dxo-scrolling",
       "react": "Scrolling",
@@ -14844,9 +14841,6 @@
     "dxLoadPanelOptions.indicatorOptions": {
       "vue": "indicator-options"
     },
-    "dxLoadPanelOptions.indicatorSrc": {
-      "vue": "indicator-src"
-    },
     "dxLoadPanelOptions.maxHeight": {
       "vue": "max-height"
     },
@@ -16119,8 +16113,8 @@
       "react": "LoadPanel",
       "vue": "DxLoadPanel"
     },
-    "dxPivotGridOptions.loadPanel.indicatorSrc": {
-      "vue": "indicator-src"
+    "dxPivotGridOptions.loadPanel.indicatorOptions": {
+      "vue": "indicator-options"
     },
     "dxPivotGridOptions.loadPanel.shadingColor": {
       "vue": "shading-color"
@@ -22437,9 +22431,6 @@
     },
     "gridBaseOptions.loadPanel.indicatorOptions": {
       "vue": "indicator-options"
-    },
-    "gridBaseOptions.loadPanel.indicatorSrc": {
-      "vue": "indicator-src"
     },
     "gridBaseOptions.loadPanel.shadingColor": {
       "vue": "shading-color"

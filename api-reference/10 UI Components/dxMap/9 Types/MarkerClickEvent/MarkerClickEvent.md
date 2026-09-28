@@ -1,5 +1,5 @@
 ---
-id: _ui_map_MarkerClickEvent
+id: MarkerClickEvent
 module: ui/map
 export: MarkerClickEvent
 type: Object

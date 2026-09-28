@@ -235,34 +235,23 @@ Specify the **buttons[]**.[template](/api-reference/_hidden/dxDataGridColumnButt
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import DataGrid, {
-        Column,
-        Button
-    } from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        renderMyCommand() {
-            return (
-                {/* Declare custom markup here */}
-            );
-        }
-
-        render() {
-            return (
-                <DataGrid ... >
-                    <Column type="buttons">
-                        <Button name="edit" />
-                        <Button name="delete" />
-                        <Button render={this.renderMyCommand} />
-                    </Column>
-                </DataGrid>
-            );
-        }
+    import DataGrid, { Column, Button } from 'devextreme-react/data-grid';
+    function App() {
+        const renderMyCommand = useCallback(() => {
+            return <>{/* Declare custom markup here */}</>;
+        }, []);
+        return (
+            <DataGrid ...>
+                <Column type="buttons">
+                    <Button name="edit" />
+                    <Button name="delete" />
+                    <Button render={renderMyCommand} />
+                </Column>
+            </DataGrid>
+        );
     }
     export default App;
 

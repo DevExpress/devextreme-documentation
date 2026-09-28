@@ -97,43 +97,36 @@ You can execute certain commands before or after a row was expanded or collapsed
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridTypes } from 'devextreme-react/data-grid';
+    import React, { useCallback } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import { DataGrid, Column } from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ... 
-                    onRowExpanding={this.onRowExpanding}
-                    onRowExpanded={this.onRowExpanded}
-                    onRowCollapsing={this.onRowCollapsing}
-                    onRowCollapsed={this.onRowCollapsed}>
-                </DataGrid>
-            );
-        }
-
-        onRowExpanding (e) {
+    function App() {
+        const onRowExpanding = useCallback((e: DataGridTypes.RowExpandingEvent) => {
             // Handler of the "rowExpanding" event
-        }
-
-        onRowExpanded (e) {
+        }, []);
+        const onRowExpanded = useCallback((e: DataGridTypes.RowExpandedEvent) => {
             // Handler of the "rowExpanded" event
-        }
-
-        onRowCollapsing (e) {
+        }, []);
+        const onRowCollapsing = useCallback((e: DataGridTypes.RowCollapsingEvent) => {
             // Handler of the "rowCollapsing" event
-        }
-
-        onRowCollapsed (e) {
+        }, []);
+        const onRowCollapsed = useCallback((e: DataGridTypes.RowCollapsedEvent) => {
             // Handler of the "rowCollapsed" event
-        }
+        }, []);
+        return (
+            <DataGrid
+                ...
+                onRowExpanding={onRowExpanding}
+                onRowExpanded={onRowExpanded}
+                onRowCollapsing={onRowCollapsing}
+                onRowCollapsed={onRowCollapsed}
+            ></DataGrid>
+        );
     }
     export default App;
-  
+
 ---
 
 ---

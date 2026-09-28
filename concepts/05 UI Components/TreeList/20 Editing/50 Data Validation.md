@@ -195,31 +195,22 @@ The [onRowValidating](/api-reference/10%20UI%20Components/dxTreeList/1%20Configu
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { TreeListTypes } from 'devextreme-react/tree-list';
+    import React, { useCallback } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import TreeList from 'devextreme-react/tree-list';
-
-    class App extends React.Component {
-        denyAdminLogin(e) {
-            if(e.isValid && e.newData.Login === "Administrator") {
+    function App() {
+        const denyAdminLogin = useCallback((e: TreeListTypes.RowValidatingEvent) => {
+            if (e.isValid && e.newData.Login === 'Administrator') {
                 e.isValid = false;
-                e.errorText = "You cannot log in as Administrator";
+                e.errorText = 'You cannot log in as Administrator';
             }
-        }
-
-        render() {
-            return (
-                <TreeList ...
-                    onRowValidating={this.denyAdminLogin}>
-                </TreeList>
-            );
-        }
+        }, []);
+        return <TreeList ... onRowValidating={denyAdminLogin}></TreeList>;
     }
     export default App;
-    
+
 ---
 
 #####See Also#####

@@ -175,32 +175,31 @@ Implement a custom sorting routine using the [calculateSortValue](/api-reference
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { TreeListTypes } from 'devextreme-react/tree-list';
+    import React, { useCallback } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import { TreeList, Column } from 'devextreme-react/tree-list';
-
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeList ...>
-                    <Column
-                        dataField="Position"
-                        defaultSortOrder="asc"
-                        calculateSortValue={this.calculateSortValue} />
-                </TreeList>
-            );
-        }
-
-        calculateSortValue(rowData) {
-            if (rowData.Position == "CEO")
-                return this.sortOrder == 'asc' ? "aaa" : "zzz"; // CEOs are always displayed at the top    
-            else
-                return rowData.Position; // Others are sorted as usual
-        }
+    function App() {
+        const calculateSortValue = useCallback(function (
+            this: TreeListTypes.Column,
+            rowData: {
+                Position: string;
+            }
+        ) {
+            if (rowData.Position === 'CEO') return this.sortOrder === 'asc' ? 'aaa' : 'zzz';
+            return rowData.Position;
+        }, []);
+        return (
+            <TreeList ...>
+                <Column
+                    dataField="Position"
+                    defaultSortOrder="asc"
+                    calculateSortValue={calculateSortValue}
+                />
+            </TreeList>
+        );
     }
     export default App;
-    
+
 ---

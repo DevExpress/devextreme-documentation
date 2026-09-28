@@ -68,55 +68,38 @@ Call the [deselectRows(keys)](/api-reference/10%20UI%20Components/GridBase/3%20M
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridTypes } from 'devextreme-react/data-grid';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import DataGrid from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                selectedRowKeys: []
+    function App() {
+        const [state, setState] = useState<{
+            selectedRowKeys: Array<string | number>;
+        }>({
+            selectedRowKeys: [],
+        });
+        const deselectRows = useCallback((keys: Array<string | number>) => {
+            setState((prevState) => ({
+                ...prevState,
+                selectedRowKeys: prevState.selectedRowKeys.filter((key) => !keys.includes(key)),
+            }));
+        }, []);
+        const handleOptionChange = useCallback((e: DataGridTypes.OptionChangedEvent) => {
+            if (e.fullName === 'selectedRowKeys') {
+                setState((prevState) => ({ ...prevState, selectedRowKeys: e.value }));
             }
-            this.deselectRows = this.deselectRows.bind(this);
-        	this.handleOptionChange = this.handleOptionChange.bind(this);
-        }
-
-        deselectRows(keys) {
-            let selectedRowKeys = [...this.state.selectedRowKeys];
-            keys.forEach(function(item) {
-                const index = selectedRowKeys.indexOf(item);
-                if (index !== -1) {
-                    selectedRowKeys.splice(index, 1);
-                }
-            });
-            this.setState({
-                selectedRowKeys: selectedRowKeys
-            });
-        }
-
-        handleOptionChange(e) {
-            if(e.fullName === 'selectedRowKeys') {
-                this.setState({
-                    selectedRowKeys: e.value
-                });
-            }
-        }
-
-        render() {
-            return (
-                <DataGrid ...
-                    selectedRowKeys={this.state.selectedRowKeys}
-                    onOptionChanged={this.handleOptionChange}>
-                </DataGrid>
-            );
-        }
+        }, []);
+        return (
+            <DataGrid
+                ...
+                selectedRowKeys={state.selectedRowKeys}
+                onOptionChanged={handleOptionChange}
+            ></DataGrid>
+        );
     }
     export default App;
-    
+
 ---
 
 Call the [clearSelection()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/clearSelection().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#clearSelection') method to clear selection of all rows. If you apply a [filter](/concepts/05%20UI%20Components/DataGrid/30%20Filtering%20and%20Searching '/Documentation/Guide/UI_Components/DataGrid/Filtering_and_Searching/') and want to keep the selection of invisible rows that do not meet the filtering conditions, use the [deselectAll()](/api-reference/10%20UI%20Components/GridBase/3%20Methods/deselectAll().md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#deselectAll') method. Also call this method to clear selection depending on the [selectAllMode](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/selection/selectAllMode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/selection/#selectAllMode').
@@ -190,54 +173,42 @@ Call the [clearSelection()](/api-reference/10%20UI%20Components/GridBase/3%20Met
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridTypes, DataGridRef } from 'devextreme-react/data-grid';
+    import React, { useCallback, useRef, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import DataGrid from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                selectedRowKeys: []
+    function App() {
+        const dataGridRef = useRef<DataGridRef>(null);
+        const [state, setState] = useState<{
+            selectedRowKeys: Array<string | number>;
+        }>({
+            selectedRowKeys: [],
+        });
+        const deselectAllRows = useCallback(() => {
+            setState((prevState) => ({ ...prevState, selectedRowKeys: [] }));
+        }, []);
+        const deselectVisibleRows = useCallback(() => {
+            const dataGridRefInstance = dataGridRef.current?.instance();
+            if (!dataGridRefInstance) return;
+            dataGridRefInstance.deselectAll();
+        }, []);
+        const handleOptionChange = useCallback((e: DataGridTypes.OptionChangedEvent) => {
+            if (e.fullName === 'selectedRowKeys') {
+                setState((prevState) => ({ ...prevState, selectedRowKeys: e.value }));
             }
-            this.dataGridRef = React.createRef();
-            this.deselectAllRows = this.deselectAllRows.bind(this);
-            this.deselectVisibleRows = this.deselectVisibleRows.bind(this);
-        }
-
-        deselectAllRows() {
-            this.setState({
-                selectedRowKeys: []
-            });
-        }
-
-        deselectVisibleRows() {
-            this.dataGridRef.current.instance().deselectAll();
-        }
-
-        handleOptionChange(e) {
-            if(e.fullName === 'selectedRowKeys') {
-                this.setState({
-                    selectedRowKeys: e.value
-                });
-            }
-        }
-
-        render() {
-            return (
-                <DataGrid ...
-                    ref="dataGridRef"
-                    selectedRowKeys={this.state.selectedRowKeys}
-                    onOptionChanged={this.handleOptionChange}>
-                </DataGrid>
-            );
-        }
+        }, []);
+        return (
+            <DataGrid
+                ...
+                ref={dataGridRef}
+                selectedRowKeys={state.selectedRowKeys}
+                onOptionChanged={handleOptionChange}
+            ></DataGrid>
+        );
     }
     export default App;
-    
+
 ---
 
 #include btn-open-demo with {

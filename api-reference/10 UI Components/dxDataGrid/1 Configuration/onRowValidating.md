@@ -171,42 +171,47 @@ The following code illustrates how to validate an email address on the server an
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
 
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import {WidgetName} from 'devextreme-react/{widget-name}';
-    import 'whatwg-fetch';
+    import {WidgetName}, { type {WidgetName}Types } from 'devextreme-react/{widget-name}';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.onRowValidating = this.onRowValidating.bind(this);
+    type Employee = {
+        Email: string;
+    };
+
+    type EmailValidationResult = {
+        errorText: string;
+        isValid: boolean;
+    };
+
+    async function checkEmail(email: string): Promise<EmailValidationResult> {
+        const params = new URLSearchParams({ email });
+        const response = await fetch("https://www.mywebsite.com/api/checkEmail?" + params);
+        if (!response.ok) {
+            throw new Error('Email Validation Error');
         }
+        return response.json();
+    }
 
-        onRowValidating(e) {
-            if(e.newData.Email) {
-                e.promise = this.checkEmail(e.newData.Email)
-                    .then((result: any) => {
-                        // "result" is { errorText: "The Email address you entered already exists.", isValid: false }
-                        e.errorText = result.errorText;
-                        e.isValid = result.isValid;
-                    });
+    function App() {
+        const onRowValidating = useCallback((e: {WidgetName}Types.RowValidatingEvent<Employee>) => {
+            if (e.newData.Email) {
+                e.promise = checkEmail(e.newData.Email).then((result) => {
+                    // The result is { errorText: "The Email address you entered already exists.", isValid: false }
+                    e.errorText = result.errorText;
+                    e.isValid = result.isValid;
+                });
             }
-        }
-        checkEmail(email) {
-            let params = '?' + 'email=' + email;
-            return fetch("https://www.mywebsite.com/api/checkEmail${params}");
-        }
+        }, []);
 
-        render() {
-            return (
-                <{WidgetName} ...
-                    onRowValidating={this.onRowValidating}>
-                </{WidgetName}>
-            );
-        }
+        return (
+            <{WidgetName} ...
+                onRowValidating={onRowValidating}>
+            </{WidgetName}>
+        );
     }
     export default App;
 

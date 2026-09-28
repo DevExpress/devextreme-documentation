@@ -299,59 +299,50 @@ The set of available filter operations can be restricted using the [filterOperat
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import type { TreeListTypes } from 'devextreme-react/tree-list';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import TreeList, {
-        Column,
-        FilterRow
-    } from 'devextreme-react/tree-list';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.filterOperations = ['contains', '='];
-            this.state = {
-                selectedOperation: 'contains',
-                filterValue: 'Pending'
+    import TreeList, { Column, FilterRow } from 'devextreme-react/tree-list';
+    const filterOperations: Array<'contains' | '='> = ['contains', '='];
+    function App() {
+        const [state, setState] = useState<{
+            selectedOperation: 'contains' | '=';
+            filterValue: string;
+        }>({
+            selectedOperation: 'contains',
+            filterValue: 'Pending',
+        });
+        const optionChanged = useCallback((e: TreeListTypes.OptionChangedEvent) => {
+            if (e.fullName === 'columns[0].filterValue') {
+                setState((prevState) => ({ ...prevState, filterValue: e.value }));
             }
-        }
-
-        render() {
-            let { selectedOperation, filterValue } = this.state;
-            return (
-                <TreeList (onOptionChanged)={this.optionChanged} ... >
-                    <FilterRow visible={true} />
-                    <Column 
-                        dataField="Status"
-                        filterOperations={this.filterOperations}
-                        selectedFilterOperation={selectedOperation}
-                        filterValue={filterValue}
-                    />
-                </TreeList>
-            );
-        }
-        optionChanged = (e) => {
-            if(e.fullName === "columns[0].filterValue") {
-                this.setState({ 
-                    filterValue: e.value
-                })
+            if (e.fullName === 'columns[0].selectedFilterOperation') {
+                setState((prevState) => ({ ...prevState, selectedOperation: e.value }));
             }
-            if(e.fullName === "columns[0].selectedFilterOperation") {
-                this.setState({ 
-                    selectedOperation: e.value
-                })
-            }
-        }
-        applyFilter = (operation, value) => {
-            this.setState({
+        }, []);
+        const applyFilter = useCallback((operation: 'contains' | '=', value: string) => {
+            setState((prevState) => ({
+                ...prevState,
                 selectedOperation: operation,
-                filterValue: value
-            })
-        }
+                filterValue: value,
+            }));
+        }, []);
+        const { selectedOperation, filterValue } = state;
+        return (
+            <TreeList onOptionChanged={optionChanged} ...>
+                <FilterRow visible={true} />
+                <Column
+                    dataField="Status"
+                    filterOperations={filterOperations}
+                    selectedFilterOperation={selectedOperation}
+                    filterValue={filterValue}
+                />
+            </TreeList>
+        );
     }
-    
+    export default App;
+
 ---
 
 #####See Also#####

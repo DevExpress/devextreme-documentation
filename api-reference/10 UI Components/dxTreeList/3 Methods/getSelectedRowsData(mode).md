@@ -131,39 +131,36 @@ Returns data objects of the end nodes ("leaves") only.
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef, useState } from 'react';
 
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import TreeList from 'devextreme-react/tree-list';
+    import TreeList, { type TreeListRef } from 'devextreme-react/tree-list';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
+    type RowData = Record<string, unknown>;
 
-            this.treeListRef = React.createRef();
+    function App() {
+        const treeListRef = useRef<TreeListRef<RowData>>(null);
+        const [selectedRowsData, setSelectedRowsData] = useState<RowData[]>([]);
 
-            this.selectedRowsData = [];
+        const getSelectedData = useCallback(() => {
+            const treeList = treeListRef.current?.instance();
+            if (!treeList) return;
 
-            this.getSelectedData = () => {
-                this.selectedRowsData = this.treeList.getSelectedRowsData('leavesOnly');
-            }
-        }
+            setSelectedRowsData(treeList.getSelectedRowsData('leavesOnly'));
+        }, []);
 
-        get treeList() {
-            return this.treeListRef.current.instance();
-        }
-
-        render() {
-            return (
-                <TreeList ...
-                    ref={this.treeListRef}>
-                </TreeList>
-            );
-        }
+        // Call getSelectedData() from your UI event handler.
+        // Use selectedRowsData to access the selection in your component.
+        return (
+            <TreeList ...
+                ref={treeListRef}>
+            </TreeList>
+        );
     }
     export default App;
+
 
 ##### ASP.NET MVC Controls
 

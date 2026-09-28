@@ -179,43 +179,42 @@ You can use this function to adjust column properties before export. In the foll
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { Workbook } from 'devextreme-exceljs-fork';
     import saveAs from 'file-saver';
-    import DataGrid, { Export, Column } from 'devextreme-react/data-grid';
+    import DataGrid, { Export, Column, type DataGridTypes } from 'devextreme-react/data-grid';
     import { exportDataGrid } from 'devextreme/excel_exporter';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <DataGrid ...
-                    onExporting={this.onExporting}>
-                    <Export enabled={true} />
-                    <Column dataField="ID" visible={false} />
-                </DataGrid>
-            );
-        }
-        onExporting(e) {
+    function App() {
+        const onExporting = useCallback(async (e: DataGridTypes.ExportingEvent) => {
             e.component.beginUpdate();
-            e.component.columnOption('ID', 'visible', true);
-            const workbook = new Workbook();
-            const worksheet = workbook.addWorksheet('Employees');
-        
-            exportDataGrid({
-                component: e.component,
-                worksheet: worksheet
-            }).then(function() {
-                workbook.xlsx.writeBuffer().then(function(buffer) {
-                    saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
+            try {
+                e.component.columnOption('ID', 'visible', true);
+                const workbook = new Workbook();
+                const worksheet = workbook.addWorksheet('Employees');
+
+                await exportDataGrid({
+                    component: e.component,
+                    worksheet: worksheet
                 });
-            }).then(function() {
+                const buffer = await workbook.xlsx.writeBuffer();
+                saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
+            } finally {
                 e.component.columnOption('ID', 'visible', false);
                 e.component.endUpdate();
-            });
-        }
+            }
+        }, []);
+
+        return (
+            <DataGrid ...
+                onExporting={onExporting}>
+                <Export enabled={true} />
+                <Column dataField="ID" visible={false} />
+            </DataGrid>
+        );
     }
     export default App;
 

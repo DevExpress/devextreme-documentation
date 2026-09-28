@@ -74,38 +74,23 @@ The TreeList UI component raises the [selectionChanged](/api-reference/10%20UI%2
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { TreeListTypes } from 'devextreme-react/tree-list';
+    import React, { useCallback } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import TreeList from 'devextreme-react/tree-list';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-
-            this.onSelectionChanged = this.onSelectionChanged.bind(this);
-        }
-        
-        onSelectionChanged(e) {
+    function App() {
+        const onSelectionChanged = useCallback((e: TreeListTypes.SelectionChangedEvent) => {
             const currentSelectedRowKeys = e.currentSelectedRowKeys;
             const currentDeselectedRowKeys = e.currentDeselectedRowKeys;
             const allSelectedRowKeys = e.selectedRowKeys;
             const allSelectedRowsData = e.selectedRowsData;
             // ...
-        }
-
-        render() {
-            return (
-                <TreeList ...
-                    onSelectionChanged={this.onSelectionChanged}>
-                </TreeList>
-            );
-        }
+        }, []);
+        return <TreeList ... onSelectionChanged={onSelectionChanged}></TreeList>;
     }
     export default App;
-    
+
 ---
 
 ---

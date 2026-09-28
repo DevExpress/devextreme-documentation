@@ -278,44 +278,27 @@ Call the [showColumnChooser()](/api-reference/10%20UI%20Components/GridBase/3%20
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridRef } from 'devextreme-react/data-grid';
+    import React, { useCallback, useRef } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import DataGrid from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.dataGridRef = React.createRef();
-
-            this.showColumnChooser = this.showColumnChooser.bind(this);
-            this.hideColumnChooser = this.hideColumnChooser.bind(this);
-        }
-
-        showColumnChooser() {
-            this.dataGrid.showColumnChooser();
-        }
-
-        hideColumnChooser() {
-            this.dataGrid.hideColumnChooser();
-        }
-
-        get dataGrid() {
-            return this.dataGridRef.current.instance();
-        }
-
-        render() {
-            return (
-                <DataGrid ref={this.dataGridRef}>
-                    {/* ... */ }
-                </DataGrid>
-            );
-        }
+    function App() {
+        const dataGridRef = useRef<DataGridRef>(null);
+        const showColumnChooser = useCallback(() => {
+            const dataGridRefInstance = dataGridRef.current?.instance();
+            if (!dataGridRefInstance) return;
+            dataGridRefInstance.showColumnChooser();
+        }, []);
+        const hideColumnChooser = useCallback(() => {
+            const dataGridRefInstance = dataGridRef.current?.instance();
+            if (!dataGridRefInstance) return;
+            dataGridRefInstance.hideColumnChooser();
+        }, []);
+        return <DataGrid ref={dataGridRef}>{/* ... */}</DataGrid>;
     }
     export default App;
-    
+
 ---
 
 #####See Also#####

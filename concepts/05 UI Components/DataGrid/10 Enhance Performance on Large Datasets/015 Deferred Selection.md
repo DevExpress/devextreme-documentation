@@ -188,17 +188,13 @@ The following tasks require using different API in deferred mode:
 
     ##### React
 
-        <!-- tab: App.js -->
+        <!-- tab: App.tsx -->
+        import React from 'react';
         // ...
-        class App extends React.Component {
-            selectionFilter = ['Task_Status', '=', 'Completed'];
-            render() {
-                return (
-                    <DataGrid ...
-                        defaultSelectionFilter={this.selectionFilter}>
-                    </DataGrid>
-                );
-            }
+        import DataGrid, { Column } from 'devextreme-react/data-grid';
+        const selectionFilter = ['Task_Status', '=', 'Completed'];
+        function App() {
+            return <DataGrid ... defaultSelectionFilter={selectionFilter}></DataGrid>;
         }
         export default App;
 
@@ -298,56 +294,41 @@ The following tasks require using different API in deferred mode:
 
     ##### React
 
-        <!-- tab: App.js -->
-        import 'whatwg-fetch';
+        <!-- tab: App.tsx -->
+        import type { DataGridTypes } from 'devextreme-react/data-grid';
+        import React, { useCallback, useState } from 'react';
         // ...
-        class App extends React.Component {
-            constructor(props) {
-                super(props);
-                this.state = {
-                    selectionFilter: ['Task_Status', '=', 'Completed']
+        import DataGrid from 'devextreme-react/data-grid';
+        function App() {
+            const [state, setState] = useState<{
+                selectionFilter: unknown[] | undefined;
+            }>({
+                selectionFilter: ['Task_Status', '=', 'Completed'],
+            });
+            const handleOptionChange = useCallback((e: DataGridTypes.OptionChangedEvent) => {
+                if (e.fullName === 'selectionFilter') {
+                    setState((prevState) => ({ ...prevState, selectionFilter: e.value }));
                 }
-                this.handleOptionChange = this.handleOptionChange.bind(this);
-            }
-            handleOptionChange(e) {
-                if(e.fullName === 'selectionFilter') {
-                    this.setState({
-                        selectionFilter: e.value
-                    });
-                }
-            }
-            render() {
-                return (
-                    <DataGrid ...
-                        selectionFilter={this.state.selectionFilter}
-                        onOptionChanged={this.handleOptionChange}>
-                    </DataGrid>
-                );
-            }
-            sendSelectedRows() {
-                return new Promise((resolve, reject) => {
-                    fetch('https://mydomain.com/MyDataService', {
-                        method: 'POST',
-                        body: JSON.stringify({
-                            filter: this.state.selectionFilter || null
-                        })
-                    }),
-                    .then(response => {
-                        if (!response.ok) {
-                            throw new Error(`HTTP error: ${res.status} ${res.statusText}`);
-                        }
-                        return response.json();
-                    })
-                    .then(res => { resolve(res); })
-                    .catch(error => {
-                        console.error(error);
-                        reject(error);
-                    });
+            }, []);
+            const sendSelectedRows = useCallback(async () => {
+                const response = await fetch('https://mydomain.com/MyDataService', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ filter: state.selectionFilter || null }),
                 });
-            }
+                if (!response.ok) throw new Error(`HTTP error: ${response.status} ${response.statusText}`);
+                return response.json();
+            }, [state]);
+            return (
+                <DataGrid
+                    ...
+                    selectionFilter={state.selectionFilter}
+                    onOptionChanged={handleOptionChange}
+                ></DataGrid>
+            );
         }
         export default App;
-        
+
     ---
 
 - **Checking whether a row is selected**  

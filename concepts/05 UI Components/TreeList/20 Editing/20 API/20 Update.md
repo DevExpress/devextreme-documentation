@@ -94,46 +94,29 @@ The [cellValue (rowIndex, visibleColumnIndex, value)](/api-reference/10%20UI%20C
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { TreeListRef } from 'devextreme-react/tree-list';
+    import React, { useCallback, useRef } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import TreeList from 'devextreme-react/tree-list';
     import Button from 'devextreme-react/button';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.treeListRef = React.createRef();
-            this.updateCell = this.updateCell.bind(this);
-        }
-
-        get treeList() {
-            return this.treeListRef.current.instance();
-        }
-
-        updateCell() {
-            this.treeList.cellValue(1, "Position", "CTO");
-            this.treeList.saveEditData();
-        }
-
-        render() {
-            return (
-                <React.Fragment>
-                    <TreeList ...
-                        ref={this.treeListRef}>
-                    </TreeList>
-                    <Button
-                        text="Update Cell"
-                        onClick={this.updateCell}
-                    />
-                </React.Fragment>
-            );
-        }
+    function App() {
+        const treeListRef = useRef<TreeListRef>(null);
+        const updateCell = useCallback(() => {
+            const treeListRefInstance = treeListRef.current?.instance();
+            if (!treeListRefInstance) return;
+            treeListRefInstance.cellValue(1, 'Position', 'CTO');
+            treeListRefInstance.saveEditData();
+        }, []);
+        return (
+            <React.Fragment>
+                <TreeList ... ref={treeListRef}></TreeList>
+                <Button text="Update Cell" onClick={updateCell} />
+            </React.Fragment>
+        );
     }
     export default App;
-    
+
 ---
 
 The TreeList UI component allows you to process an updated cell value in the **columns**.[setCellValue](/api-reference/_hidden/GridBaseColumn/setCellValue.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/columns/#setCellValue') function before this value is saved to the data source. Refer to the function's description for an example.
@@ -257,53 +240,36 @@ Call the [hasEditData()](/api-reference/10%20UI%20Components/GridBase/3%20Method
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { TreeListRef } from 'devextreme-react/tree-list';
+    import React, { useCallback, useRef } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import TreeList from 'devextreme-react/tree-list';
     import Button from 'devextreme-react/button';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.treeListRef = React.createRef();
-            this.saveChanges = this.saveChanges.bind(this);
-        }
-
-        get treeList() {
-            return this.treeListRef.current.instance();
-        }
-
-        saveChanges() {
-            if(this.treeList.hasEditData()) {
-                this.treeList.saveEditData().then(() => {
-                    if(!this.treeList.hasEditData()) {
+    function App() {
+        const treeListRef = useRef<TreeListRef>(null);
+        const saveChanges = useCallback(() => {
+            const treeListRefInstance = treeListRef.current?.instance();
+            if (!treeListRefInstance) return;
+            if (treeListRefInstance.hasEditData()) {
+                treeListRefInstance.saveEditData().then(() => {
+                    if (!treeListRefInstance.hasEditData()) {
                         // Saved successfully
                     } else {
                         // Saving failed
                     }
                 });
             }
-        }
-
-        render() {
-            return (
-                <React.Fragment>
-                    <TreeList ...
-                        ref={this.treeListRef}>
-                    </TreeList>
-                    <Button
-                        text="Save changes"
-                        onClick={this.saveChanges}
-                    />
-                </React.Fragment>
-            );
-        }
+        }, []);
+        return (
+            <React.Fragment>
+                <TreeList ... ref={treeListRef}></TreeList>
+                <Button text="Save changes" onClick={saveChanges} />
+            </React.Fragment>
+        );
     }
     export default App;
-    
+
 ---
 
 #####See Also#####

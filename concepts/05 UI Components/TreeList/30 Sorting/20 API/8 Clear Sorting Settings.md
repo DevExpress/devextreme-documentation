@@ -79,43 +79,31 @@ You can clear sorting settings for all columns by calling the [clearSorting()](/
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { TreeListRef } from 'devextreme-react/tree-list';
+    import React, { useCallback, useRef } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import { TreeList, Column } from 'devextreme-react/tree-list';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.treeListRef = React.createRef();
-        }
-
-        get treeList() {
-            return this.treeListRef.current.instance();
-        }
-
-        render() {
-            return (
-                <TreeList ref={this.treeListRef} ...>
-                    <Column
-                        dataField="Name"
-                        defaultSortIndex={0} />
-                </TreeList>
-            );
-        }
-
-        clearNameColumnSorting = () => {
-            this.treeList.columnOption("Name", "sortIndex", undefined);
-        }
-        
-        clearAllSorting = () => {
-            this.treeList.clearSorting();
-        }
+    function App() {
+        const treeListRef = useRef<TreeListRef>(null);
+        const clearNameColumnSorting = useCallback(() => {
+            const treeListRefInstance = treeListRef.current?.instance();
+            if (!treeListRefInstance) return;
+            treeListRefInstance.columnOption('Name', 'sortIndex', undefined);
+        }, []);
+        const clearAllSorting = useCallback(() => {
+            const treeListRefInstance = treeListRef.current?.instance();
+            if (!treeListRefInstance) return;
+            treeListRefInstance.clearSorting();
+        }, []);
+        return (
+            <TreeList ref={treeListRef} ...>
+                <Column dataField="Name" defaultSortIndex={0} />
+            </TreeList>
+        );
     }
     export default App;
-    
+
 ---
 
 #####See Also#####

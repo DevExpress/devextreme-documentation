@@ -56,34 +56,22 @@ Use the [addRow()](/api-reference/10%20UI%20Components/dxDataGrid/3%20Methods/ad
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridRef } from 'devextreme-react/data-grid';
+    import React, { useCallback, useRef } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import DataGrid from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.dataGridRef = React.createRef();
-            this.addNewRow = this.addNewRow.bind(this);
-        }
-
-        addNewRow() {
-            this.dataGridRef.current.instance().addRow();
-        }
-
-        render() {
-            return (
-                <DataGrid ...
-                    ref={this.dataGridRef}>
-                </DataGrid>
-            );
-        }
+    function App() {
+        const dataGridRef = useRef<DataGridRef>(null);
+        const addNewRow = useCallback(() => {
+            const dataGridRefInstance = dataGridRef.current?.instance();
+            if (!dataGridRefInstance) return;
+            dataGridRefInstance.addRow();
+        }, []);
+        return <DataGrid ... ref={dataGridRef}></DataGrid>;
     }
     export default App;
-    
+
 ---
 
 You can specify initial values for a newly added row in the [onInitNewRow](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/onInitNewRow.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/#onInitNewRow') event handler.
@@ -163,31 +151,23 @@ You can specify initial values for a newly added row in the [onInitNewRow](/api-
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridTypes } from 'devextreme-react/data-grid';
+    import React, { useCallback } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import DataGrid, {
-        Column
-    } from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        setHireDate(e) {
+    import DataGrid, { Column } from 'devextreme-react/data-grid';
+    function App() {
+        const setHireDate = useCallback((e: DataGridTypes.InitNewRowEvent) => {
             e.data.Hire_Date = new Date();
-        }
-
-        render() {
-            return (
-                <DataGrid ...
-                    onInitNewRow={this.setHireDate}>
-                    <Column dataField="Hire_Date" dataType="date" />
-                </DataGrid>
-            );
-        }
+        }, []);
+        return (
+            <DataGrid ... onInitNewRow={setHireDate}>
+                <Column dataField="Hire_Date" dataType="date" />
+            </DataGrid>
+        );
     }
     export default App;
-    
+
 ---
 
 #####See Also#####

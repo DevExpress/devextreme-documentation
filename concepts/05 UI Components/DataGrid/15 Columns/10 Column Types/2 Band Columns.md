@@ -192,37 +192,28 @@ If you use the [customizeColumns](/api-reference/10%20UI%20Components/dxDataGrid
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridTypes } from 'devextreme-react/data-grid';
+    import React, { useCallback } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import DataGrid from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        customizeColumns(columns) {
-            columns.push({ // Pushes the "Contacts" band column into the "columns" array
+    function App() {
+        const customizeColumns = useCallback((columns: DataGridTypes.Column[]) => {
+            columns.push({
                 caption: 'Contacts',
-                isBand: true
+                isBand: true,
             });
-    
             const contactsFields = ['Email', 'Mobile_Phone', 'Skype'];
             for (let i = 0; i < columns.length - 1; i++) {
-                if (contactsFields.indexOf(columns[i].dataField) > -1) // If the column belongs to "Contacts",
+                if (contactsFields.indexOf(columns[i].dataField ?? '') > -1)
+                    // If the column belongs to "Contacts",
                     columns[i].ownerBand = columns.length - 1; // assigns "Contacts" as the owner band column
             }
-        }
-
-        render() {
-            return (
-                <DataGrid ...
-                    customizeColumns={this.customizeColumns}>
-                </DataGrid>
-            );
-        }
+        }, []);
+        return <DataGrid ... customizeColumns={customizeColumns}></DataGrid>;
     }
     export default App;
-    
+
 ---
 
 [note] Nested columns have every [data column property](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/columns '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/') except [fixed](/api-reference/_hidden/GridBaseColumn/fixed.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#fixed'), [fixedPosition](/api-reference/_hidden/GridBaseColumn/fixedPosition.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#fixedPosition'), [type](/api-reference/_hidden/dxDataGridColumn/type.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#type'), and [buttons](/api-reference/_hidden/dxDataGridColumn/buttons '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/buttons/'). Band columns only support the properties listed in the [isBand](/api-reference/_hidden/GridBaseColumn/isBand.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#isBand') property's description.

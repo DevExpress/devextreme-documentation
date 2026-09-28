@@ -152,30 +152,26 @@ In the following code, the **onRowClick** function calls the [editRow](/api-refe
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
 
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import {WidgetName}, {
-        Editing 
-    } from 'devextreme-react/{widget-name}';
+    import {WidgetName}, { Editing, type {WidgetName}Types } from 'devextreme-react/{widget-name}';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <{WidgetName} ...
-                    onRowClick={this.startEdit}>
-                    <Editing mode="form">
-                </{WidgetName}>
-            );
-        }
-
-        startEdit = (e) => {
-            if(e.rowType === "data") {
+    function App() {
+        const startEdit = useCallback((e: {WidgetName}Types.RowClickEvent) => {
+            if (e.rowType === "data") {
                 e.component.editRow(e.rowIndex);
             }
-        }
+        }, []);
+
+        return (
+            <{WidgetName} ...
+                onRowClick={startEdit}>
+                <Editing mode="form" />
+            </{WidgetName}>
+        );
     }
     export default App;
 

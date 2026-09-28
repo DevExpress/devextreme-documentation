@@ -180,45 +180,36 @@ Use the **searchPanel**.[text](/api-reference/10%20UI%20Components/GridBase/1%20
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import type { TreeListTypes } from 'devextreme-react/tree-list';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import TreeList, {
-        SearchPanel
-    } from 'devextreme-react/tree-list';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                searchText: "4/1/2015"
-            }
-        }
-
-        render() {
-            let { searchText } = this.state;
-            return (
-                <TreeList ... 
-                    onOptionChanged={this.onOptionChanged}>
-                    <SearchPanel 
-                        visible={true}
-                        text={searchText} 
-                    />
-                </TreeList>
-            );
-        }
-        onOptionChanged = (e) => {
-            if(e.fullName === "searchPanel.text") {
-                this.setSearchValue(e.value);
-            }
-        }
-        setSearchValue = (searchText) => {
-            this.setState({
-                searchText: searchText
-            })
-        }
+    import TreeList, { SearchPanel } from 'devextreme-react/tree-list';
+    function App() {
+        const [state, setState] = useState<{
+            searchText: string;
+        }>({
+            searchText: '4/1/2015',
+        });
+        const setSearchValue = useCallback((searchText: string) => {
+            setState((prevState) => ({ ...prevState, searchText: searchText }));
+        }, []);
+        const onOptionChanged = useCallback(
+            (e: TreeListTypes.OptionChangedEvent) => {
+                if (e.fullName === 'searchPanel.text') {
+                    setSearchValue(e.value);
+                }
+            },
+            [setSearchValue]
+        );
+        const { searchText } = state;
+        return (
+            <TreeList ... onOptionChanged={onOptionChanged}>
+                <SearchPanel visible={true} text={searchText} />
+            </TreeList>
+        );
     }
+    export default App;
 
 ---
 

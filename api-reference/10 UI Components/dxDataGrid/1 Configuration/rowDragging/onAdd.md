@@ -25,7 +25,7 @@ Indicates if the dragged row is dropped inside another row. Available only for t
 The row's source UI component instance.
 
 ##### field(e.fromData): any
-Custom [data](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#data) associated with the source UI component.
+Custom [data](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/rowDragging/data.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#data') associated with the source UI component.
 
 ##### field(e.fromIndex): Number
 The row's original position. If the row is dragged from another UI component, the value is **-1**.
@@ -40,12 +40,12 @@ The data object of the row being dragged.
 The instance of the row's target UI component.
 
 ##### field(e.toData): any
-Custom [data](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#data) associated with the target UI component.
+Custom [data](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/rowDragging/data.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#data') associated with the target UI component.
 
 ##### field(e.toIndex): Number
-The position where the row is placed. If the row is dragged away from the UI component, the value is -1. When [virtual scrolling](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#mode) is enabled, the index is relative to the top visible row.
+The position where the row is placed. If the row is dragged away from the UI component, the value is -1. When [virtual scrolling](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/scrolling/mode.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/scrolling/#mode') is enabled, the index is relative to the top visible row.
 
 ---
-Set [group](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#group) to the same value in the source and target components to allow users to drag rows between them. Implement this handler to add the dragged row's data to the target data source. Use [onRemove](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#onRemove) in the source component to remove the original row.
+Set [group](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/rowDragging/group.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#group') to the same value in the source and target components to allow users to drag rows between them. Implement this handler to add the dragged row's data to the target data source. Use [onRemove](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/rowDragging/onRemove.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#onRemove') in the source component to remove the original row.
 
 Use **e.itemData** to access the dragged row's data and **e.toIndex** to determine its target position.

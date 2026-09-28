@@ -22,7 +22,7 @@ The UI component's instance.
 The row's source UI component instance.
 
 ##### field(e.fromData): any
-Custom [data](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#data) associated with the source UI component.
+Custom [data](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/rowDragging/data.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#data') associated with the source UI component.
 
 ##### field(e.fromIndex): Number
 The row's original position. If the row is dragged from another UI component, the value is **-1**.
@@ -37,12 +37,12 @@ The data object of the row being dragged.
 The instance of the row's target UI component.
 
 ##### field(e.toData): any
-Custom [data](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#data) associated with the target UI component.
+Custom [data](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/rowDragging/data.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#data') associated with the target UI component.
 
 ##### field(e.toIndex): Number
 The position where the row is placed. If the row is dragged away from the UI component, the value is -1.
 
 ---
-Implement this handler to remove the dragged row from the source data source. Use [onAdd](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#onAdd) in the target component to insert the row into its data source. Both handlers execute when a user drops a row between components with the same [group](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#group) value.
+Implement this handler to remove the dragged row from the source data source. Use [onAdd](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/rowDragging/onAdd.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#onAdd') in the target component to insert the row into its data source. Both handlers execute when a user drops a row between components with the same [group](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/rowDragging/group.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#group') value.
 
 Use **e.itemData** to identify the row to remove.

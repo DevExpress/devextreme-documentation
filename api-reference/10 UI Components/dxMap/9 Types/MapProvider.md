@@ -1,6 +1,6 @@
 ---
 id: Enums.MapProvider
-acceptValues: 'azure' | 'bing' | 'google' | 'googleStatic'
+acceptValues: 'azure' | 'bing' | 'google' | 'googleStatic' | 'osm'
 type: Union
 references: dxMap.Options.provider
 ---

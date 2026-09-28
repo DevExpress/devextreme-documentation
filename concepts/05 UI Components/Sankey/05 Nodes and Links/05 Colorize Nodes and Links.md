@@ -62,20 +62,19 @@ When the palette does not have enough colors to paint each node differently, it 
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import Sankey from 'devextreme-react/sankey';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Sankey
-                    paletteExtensionMode="alternate"
-                    palette="Bright" />
-                    {/* or a custom palette */}
-                    {/* palette={['#70c92f', '#f8ca00', '#bd1550']} */}
-            )
-        }
+    function App() {
+        return (
+            <Sankey
+                paletteExtensionMode="alternate"
+                palette="Bright"
+                // or a custom palette
+                // palette={['#70c92f', '#f8ca00', '#bd1550']}
+            />
+        );
     }
 
     export default App;
@@ -141,18 +140,16 @@ Links also support several [colorization modes](/api-reference/10%20UI%20Compone
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import Sankey, { Link } from 'devextreme-react/sankey';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Sankey ... >
-                    <Link colorMode="source" {/* or "target" | "gradient" */} />
-                </Sankey>
-            )
-        }
+    function App() {
+        return (
+            <Sankey ... >
+                <Link colorMode="source" /* or "target" | "gradient" */ />
+            </Sankey>
+        );
     }
 
     export default App;
@@ -222,19 +219,17 @@ To colorize nodes or links uniformly, specify the color using the **node**.[colo
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import Sankey, { Link, Node } from 'devextreme-react/sankey';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Sankey ... >
-                    <Node color="blue" />
-                    <Link color="green" />
-                </Sankey>
-            )
-        }
+    function App() {
+        return (
+            <Sankey ... >
+                <Node color="blue" />
+                <Link color="green" />
+            </Sankey>
+        );
     }
 
     export default App;

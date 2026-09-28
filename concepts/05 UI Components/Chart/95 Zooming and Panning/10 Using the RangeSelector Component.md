@@ -26,7 +26,7 @@ The Chart can be zoomed and panned using the [RangeSelector](/concepts/05%20UI%2
                 chart.getArgumentAxis().visualRange(e.value);
             },
             // Makes zooming and panning smoother
-            behavior: { callValueChanged: "onMoving" }
+            behavior: { valueChangeMode: "onHandleMove" }
         });
     });
 
@@ -45,7 +45,7 @@ The Chart can be zoomed and panned using the [RangeSelector](/concepts/05%20UI%2
         <!-- Displays the Chart in the background of the RangeSelector -->
         <dxo-range-selector-chart [series]="seriesConfiguration"></dxo-range-selector-chart>
         <!-- Makes zooming and panning smoother -->
-        <dxo-range-selector-behavior callValueChanged="onMoving"></dxo-range-selector-behavior>
+        <dxo-range-selector-behavior valueChangeMode="onHandleMove"></dxo-range-selector-behavior>
     </dx-range-selector>
 
     <!--TypeScript-->
@@ -82,7 +82,7 @@ The Chart can be zoomed and panned using the [RangeSelector](/concepts/05%20UI%2
             <!-- Displays the Chart in the background of the RangeSelector -->
             <DxRsChart :series="seriesConfiguration"/>
             <!-- Makes zooming and panning smoother -->
-            <DxBehavior call-value-changed="onMoving"/>
+            <DxBehavior value-change-mode="onHandleMove"/>
         </DxRangeSelector>
     </template>
 
@@ -117,14 +117,15 @@ The Chart can be zoomed and panned using the [RangeSelector](/concepts/05%20UI%2
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useState } from 'react';
     import Chart, {
         ArgumentAxis
     } from 'devextreme-react/chart';
     import RangeSelector, {
         Chart as RsChart,
-        Behavior
+        Behavior,
+        type RangeSelectorTypes
     } from 'devextreme-react/range-selector';
 
     // Common data source for both UI components
@@ -132,30 +133,30 @@ The Chart can be zoomed and panned using the [RangeSelector](/concepts/05%20UI%2
     // Common series configuration for both UI components
     const seriesConfiguration = [ ... ];
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = { chart_visualRange: [ ... ] };
-            this.updateChartVisualRange = () => this.setState({ chart_visualRange: e.value });
-        }
+    function App() {
+        const [visualRange, setVisualRange] = useState<Array<number | string | Date>>([ ... ]);
 
-        render() {
-            return (
+        const updateChartVisualRange = useCallback((e: RangeSelectorTypes.ValueChangedEvent) => {
+            setVisualRange(e.value);
+        }, []);
+
+        return (
+            <React.Fragment>
                 <Chart
                     dataSource={data}
                     series={seriesConfiguration}>
-                    <ArgumentAxis visualRange={this.state.chart_visualRange} />
+                    <ArgumentAxis visualRange={visualRange} />
                 </Chart>
                 <RangeSelector
                     dataSource={data}
-                    onValueChanged={this.updateChartVisualRange}>
+                    onValueChanged={updateChartVisualRange}>
                     {/* Displays the Chart in the background of the RangeSelector */}
                     <RsChart series={seriesConfiguration} />
                     {/* Makes zooming and panning smoother */}
-                    <Behavior callValueChanged="onMoving" />
+                    <Behavior valueChangeMode="onHandleMove" />
                 </RangeSelector>
-            );
-        }
+            </React.Fragment>
+        );
     }
 
     export default App;

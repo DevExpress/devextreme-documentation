@@ -181,31 +181,38 @@ To navigate from the first to the second view, filter data by a different `paren
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useState } from 'react';
     import Chart, {
-        Series
+        Series,
+        type ChartTypes
     } from 'devextreme-react/chart';
     import Button from 'devextreme-react/button';
     import service from './data.js';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                isFirstLevel: true,
-                dataSorce: service.filterData('')
-            };
+    function App() {
+        const [isFirstLevel, setIsFirstLevel] = useState(true);
+        const [dataSource, setDataSource] = useState(() => service.filterData(''));
 
-            this.onPointClick = this.onPointClick.bind(this);
-            this.onButtonClick = this.onButtonClick.bind(this);
-        }
+        const onPointClick = useCallback(({ target }: ChartTypes.PointClickEvent) => {
+            if (isFirstLevel) {
+                setIsFirstLevel(false);
+                setDataSource(service.filterData(target.originalArgument as string));
+            }
+        }, [isFirstLevel]);
 
-        render() {
-            return (
+        const onButtonClick = useCallback(() => {
+            if (!isFirstLevel) {
+                setIsFirstLevel(true);
+                setDataSource(service.filterData(''));
+            }
+        }, [isFirstLevel]);
+
+        return (
+            <React.Fragment>
                 <Chart ...
-                    dataSource={this.state.dataSource}
-                    onPointClick={this.onPointClick}>
+                    dataSource={dataSource}
+                    onPointClick={onPointClick}>
                     <Series
                         argumentField="arg"
                         valueField="val"
@@ -215,30 +222,14 @@ To navigate from the first to the second view, filter data by a different `paren
                 <Button className="button-container"
                     text="Back"
                     icon="chevronleft"
-                    visible={!this.state.isFirstLevel}
-                    onClick={this.onButtonClick}
+                    visible={!isFirstLevel}
+                    onClick={onButtonClick}
                 />
-            );
-        }
-
-        onPointClick({ target }) {
-            if(this.state.isFirstLevel) {
-                this.setState({
-                    isFirstLevel: false,
-                    dataSource: service.filterData(target.originalArgument)
-                });
-            }
-        }
-
-        onButtonClick() {
-            if(!this.state.isFirstLevel) {
-                this.setState({
-                    isFirstLevel: true,
-                    dataSource: service.filterData('')
-                });
-            }
-        }
+            </React.Fragment>
+        );
     }
+
+    export default App;
 
     <!--CSS-->
     .button-container {
@@ -455,39 +446,57 @@ The following code shows how to implement navigation when using the DevExtreme *
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useState } from 'react';
     import Chart, {
-        Series
+        Series,
+        type ChartTypes
     } from 'devextreme-react/chart';
     import Button from 'devextreme-react/button';
-    import DataSource from "devextreme/data/data_source";
+    import DataSource from 'devextreme/data/data_source';
 
-    const population = [
+    type DataItem = {
+        arg: string;
+        val: number;
+        parentID: string;
+    };
+
+    const population: DataItem[] = [
         // ...
     ];
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = { isFirstLevel: true };
-            this.dxDataSource = new DataSource({
-                store: {
-                    type: 'array',
-                    data: population
-                },
-                filter: ['parentID', '=', '']
-            });
+    const dxDataSource = new DataSource<DataItem>({
+        store: {
+            type: 'array',
+            data: population
+        },
+        filter: ['parentID', '=', '']
+    });
 
-            this.onPointClick = this.onPointClick.bind(this);
-            this.onButtonClick = this.onButtonClick.bind(this);
-        }
+    function App() {
+        const [isFirstLevel, setIsFirstLevel] = useState(true);
 
-        render() {
-            return (
+        const onPointClick = useCallback(({ target }: ChartTypes.PointClickEvent) => {
+            if (isFirstLevel) {
+                setIsFirstLevel(false);
+                dxDataSource.filter(['parentID', '=', target.originalArgument]);
+                dxDataSource.load();
+            }
+        }, [isFirstLevel]);
+
+        const onButtonClick = useCallback(() => {
+            if (!isFirstLevel) {
+                setIsFirstLevel(true);
+                dxDataSource.filter(['parentID', '=', '']);
+                dxDataSource.load();
+            }
+        }, [isFirstLevel]);
+
+        return (
+            <React.Fragment>
                 <Chart ...
-                    dataSource={this.dxDataSource}
-                    onPointClick={this.onPointClick}>
+                    dataSource={dxDataSource}
+                    onPointClick={onPointClick}>
                     <Series
                         argumentField="arg"
                         valueField="val"
@@ -497,28 +506,14 @@ The following code shows how to implement navigation when using the DevExtreme *
                 <Button className="button-container"
                     text="Back"
                     icon="chevronleft"
-                    visible={!this.state.isFirstLevel}
-                    onClick={this.onButtonClick}
+                    visible={!isFirstLevel}
+                    onClick={onButtonClick}
                 />
-            );
-        }
-
-        onPointClick({ target }) {
-            if(this.state.isFirstLevel) {
-                this.setState({ isFirstLevel: false });
-                this.dxDataSource.filter(['parentID', '=', target.originalArgument]);
-                this.dxDataSource.load();
-            }
-        }
-
-        onButtonClick() {
-            if(!this.state.isFirstLevel) {
-                this.setState({ isFirstLevel: true });
-                this.dxDataSource.filter(['parentID', '=', '']);
-                this.dxDataSource.load();
-            }
-        }
+            </React.Fragment>
+        );
     }
+
+    export default App;
 
     <!--CSS-->
     .button-container {

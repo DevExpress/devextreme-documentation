@@ -70,23 +70,21 @@ Declare several objects in the [valueAxis](/api-reference/10%20UI%20Components/d
 
     ##### React
 
-        <!-- tab: App.js -->
+        <!-- tab: App.tsx -->
         import React from 'react';
         import Chart, {
             ValueAxis
             // ...
         } from 'devextreme-react/chart';
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <Chart ... >
-                        <ValueAxis name="absoluteAxis"/>
-                        <ValueAxis name="percentageAxis"/>
-                        {/* ... */}
-                    </Chart>
-                );
-            }
+        function App() {
+            return (
+                <Chart ... >
+                    <ValueAxis name="absoluteAxis"/>
+                    <ValueAxis name="percentageAxis"/>
+                    {/* ... */}
+                </Chart>
+            );
         }
 
         export default App;
@@ -168,26 +166,24 @@ Bind each series to a value axis using the [axis](/api-reference/10%20UI%20Compo
 
     ##### React
 
-        <!-- tab: App.js -->
+        <!-- tab: App.tsx -->
         import React from 'react';
         import Chart, {
             Series
             // ...
         } from 'devextreme-react/chart';
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <Chart ... >
-                        <Series axis="percentageAxis"/>
-                        <Series axis="percentageAxis"/>
-                        <Series>
-                            {/* This series will be automatically bound to the 'absoluteAxis' */}
-                        </Series>
-                        {/* ... */}
-                    </Chart>
-                );
-            }
+        function App() {
+            return (
+                <Chart ... >
+                    <Series axis="percentageAxis"/>
+                    <Series axis="percentageAxis"/>
+                    <Series>
+                        {/* This series will be automatically bound to the 'absoluteAxis' */}
+                    </Series>
+                    {/* ... */}
+                </Chart>
+            );
         }
 
         export default App;

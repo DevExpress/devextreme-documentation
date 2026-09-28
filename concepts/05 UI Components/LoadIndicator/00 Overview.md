@@ -73,28 +73,21 @@ The following code adds a simple LoadIndicator to your page. You can change the 
 
 ##### React
 
-    import React from 'react';
+    import React, { useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { LoadIndicator } from 'devextreme-react/load-indicator';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                isLoadIndicatorVisible: true
-            };
-        }
+    function App() {
+        const [isLoadIndicatorVisible] = useState(true);
 
-        render() {
-            return (
-                <LoadIndicator
-                    visible={this.state.isLoadIndicatorVisible}
-                    height={40}
-                    width={40}
-                />
-            );
-        }
+        return (
+            <LoadIndicator
+                visible={isLoadIndicatorVisible}
+                height={40}
+                width={40}
+            />
+        );
     }
 
     export default App;
@@ -166,28 +159,22 @@ If you need to use a custom image in the LoadIndicator, assign its URL to the [i
 
 ##### React
 
-    import React from 'react';
+    import React, { useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { LoadIndicator } from 'devextreme-react/load-indicator';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                isLoadIndicatorVisible: true
-                indicatorUrl: "https://js.devexpress.com/Content/data/loadingIcons/rolling.svg"
-            };
-        }
+    const indicatorUrl = 'https://js.devexpress.com/Content/data/loadingIcons/rolling.svg';
 
-        render() {
-            return (
-                <LoadIndicator
-                    visible={this.state.isLoadIndicatorVisible}
-                    indicatorSrc={this.state.indicatorUrl}
-                />
-            );
-        }
+    function App() {
+        const [isLoadIndicatorVisible] = useState(true);
+
+        return (
+            <LoadIndicator
+                visible={isLoadIndicatorVisible}
+                indicatorSrc={indicatorUrl}
+            />
+        );
     }
 
     export default App;

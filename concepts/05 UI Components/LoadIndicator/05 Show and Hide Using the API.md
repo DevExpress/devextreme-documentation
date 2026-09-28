@@ -91,42 +91,30 @@ To specify whether the LoadIndicator is shown, change the [visible](/api-referen
 
 ##### React
 
-    import React from 'react';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { LoadIndicator } from 'devextreme-react/load-indicator';
     import { Button } from 'devextreme-react/button';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                isLoadIndicatorVisible: false
-            };
-            this.handleButtonClick = this.handleButtonClick.bind(this);
-        }
+    function App() {
+        const [isLoadIndicatorVisible, setIsLoadIndicatorVisible] = useState(false);
 
-        handleButtonClick() {
-            const value = this.state.isLoadIndicatorVisible;
+        const handleButtonClick = useCallback(() => {
+            setIsLoadIndicatorVisible((prevValue) => !prevValue);
+        }, []);
 
-            this.setState({
-                isLoadIndicatorVisible: !value
-            });
-        }
-
-        render() {
-            return (
-                <div>
-                    <LoadIndicator
-                        visible={this.state.isLoadIndicatorVisible}
-                    />
-                    <Button
-                        text="Toggle the LoadIndicator"
-                        onClick={this.handleButtonClick}
-                    />
-                </div>
-            );
-        }
+        return (
+            <div>
+                <LoadIndicator
+                    visible={isLoadIndicatorVisible}
+                />
+                <Button
+                    text="Toggle the LoadIndicator"
+                    onClick={handleButtonClick}
+                />
+            </div>
+        );
     }
 
     export default App;

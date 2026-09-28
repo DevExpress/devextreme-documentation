@@ -42,13 +42,20 @@ You can switch a series into the hover state by calling its [hover()](/api-refer
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
+    import Chart from 'devextreme-react/chart';
+    import type { chartSeriesObject } from 'devextreme/viz/chart';
 
-    class App extends React.Component {
-        toggleSeriesHoverState (series) {
-            !series.isHovered() ? series.hover() : series.clearHover();
-        }
+    function toggleSeriesHoverState(series: chartSeriesObject) {
+        !series.isHovered() ? series.hover() : series.clearHover();
+    }
+
+    function App() {
+        return (
+            <Chart ... >
+            </Chart>
+        );
     }
 
     export default App;

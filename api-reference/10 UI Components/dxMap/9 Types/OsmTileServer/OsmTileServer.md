@@ -3,6 +3,7 @@ id: OsmTileServer
 module: ui/map
 export: OsmTileServer
 type: String | OsmTileServerConfig | function(type)
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

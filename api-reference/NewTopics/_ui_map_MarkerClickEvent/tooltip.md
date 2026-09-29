@@ -1,9 +1,6 @@
 ---
-id: OsmGeoJsonLineString
-module: ui/map
-export: OsmGeoJsonLineString
-type: Object
-generateTypeLink: 
+id: _ui_map_MarkerClickEvent.tooltip
+type: dxPopover
 ---
 ---
 ##### shortDescription

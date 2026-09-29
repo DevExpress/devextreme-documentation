@@ -1,9 +1,10 @@
 ---
-id: CalculateOsmRouteInfo
+id: _ui_map_MarkerClickEvent
 module: ui/map
-export: CalculateOsmRouteInfo
+export: MarkerClickEvent
 type: Object
-generateTypeLink: 
+inherits: EventInfo
+references: dxMap.Options.markers.onClick
 ---
 ---
 ##### shortDescription

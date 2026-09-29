@@ -3,6 +3,7 @@ id: OsmRouteResult
 module: ui/map
 export: OsmRouteResult
 type: Array<Array<Number>> | OsmGeoJsonLineString
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

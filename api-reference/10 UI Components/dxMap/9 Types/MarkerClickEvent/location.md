@@ -1,5 +1,5 @@
 ---
-id: MarkerClickEvent.location
+id: ui/map:MarkerClickEvent.location
 type: MapLocation
 ---
 ---

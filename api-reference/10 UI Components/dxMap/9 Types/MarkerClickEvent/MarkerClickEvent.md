@@ -1,9 +1,10 @@
 ---
-id: MarkerClickEvent
 module: ui/map
 export: MarkerClickEvent
 type: Object
 inherits: EventInfo
+uid: ui/map:MarkerAddedEvent
+generateTypeLink: 
 references: dxMap.Options.markers.onClick
 ---
 ---

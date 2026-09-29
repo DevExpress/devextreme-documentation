@@ -1,5 +1,5 @@
 ---
-id: ui/map:MarkerClickEvent.tooltip
+uid: ui/map:MarkerClickEvent.tooltip
 type: dxPopover
 ---
 ---

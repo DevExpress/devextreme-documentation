@@ -3,7 +3,7 @@ module: ui/map
 export: MarkerClickEvent
 type: Object
 inherits: EventInfo
-uid: ui/map:MarkerAddedEvent
+uid: ui/map:MarkerClickEvent
 generateTypeLink: 
 references: dxMap.Options.markers.onClick
 ---

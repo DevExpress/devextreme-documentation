@@ -22,4 +22,4 @@ The clicked marker's coordinates.
 The clicked marker's Popover instance (only for the *"osm"* provider).
 
 ---
-Map also calls this function when a user presses Enter or Space on a focused marker (*"osm"* [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider) only).
+If you use the *"osm"* [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider), Map also calls this function when a user presses Enter or Space on a focused marker.

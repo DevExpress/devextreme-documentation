@@ -13,7 +13,7 @@ Information about the route to calculate.
 A promise that resolves with the route geometry ([OsmRouteResult](/Documentation/ApiReference/UI_Components/dxMap/Types/OsmRouteResult/)).
 
 ---
-Map does not include a routing service. Implement this function to request route geometry from an external routing service. Map calls this function for each [routes[]](/Documentation/ApiReference/UI_Components/dxMap/Configuration/routes/) item that contains two or more [locations](/Documentation/ApiReference/UI_Components/dxMap/Configuration/routes/locations/). Map converts locations specified as strings or arrays to [MapLocation](/Documentation/ApiReference/UI_Components/dxMap/Types/MapLocation/) objects before the component calls **calculateRoute**.
+Map does not include a routing service. Implement this function to return route geometry from an external routing service or from predefined coordinates. Map calls this function for each [routes[]](/Documentation/ApiReference/UI_Components/dxMap/Configuration/routes/) item that contains two or more [locations](/Documentation/ApiReference/UI_Components/dxMap/Configuration/routes/locations/). Map converts locations specified as strings or arrays to [MapLocation](/Documentation/ApiReference/UI_Components/dxMap/Types/MapLocation/) objects before the component calls **calculateRoute**.
 
 Map does not display route geometry in the following instances:
 

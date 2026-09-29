@@ -4,7 +4,7 @@ uid: ui/map:ReadyEvent.originalMap
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The current provider's map data.
 
 ---
-<!-- Description goes here -->
+If you use the *"osm"* [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider), this field contains an OpenLayers [Map](https://openlayers.org/en/latest/apidoc/module-ol_Map-Map.html) instance.

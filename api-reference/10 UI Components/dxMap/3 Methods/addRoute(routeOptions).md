@@ -20,5 +20,7 @@ Each location can be specified in any of the following formats.
  - [40.749825, -73.987963]
  - "Brooklyn Bridge,New York,NY"
 
+If you use the *"osm"* [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider), the original route instance is an OpenLayers [Feature](https://openlayers.org/en/latest/apidoc/module-ol_Feature-Feature.html) with [LineString](https://openlayers.org/en/latest/apidoc/module-ol_geom_LineString-LineString.html) geometry. If Map cannot display the route, the Promise is resolved with **undefined**.
+
 #####See Also#####
 #include common-link-callmethods

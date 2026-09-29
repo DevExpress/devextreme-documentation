@@ -12,5 +12,7 @@ A Promise that is resolved after the marker is removed.
 The [Marker](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/markers '/Documentation/ApiReference/UI_Components/dxMap/Configuration/markers/') object(s) or an index.
 
 ---
+You cannot pass an OpenLayers Overlay to this method when you use the *"osm"* [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider).
+
 #####See Also#####
 #include common-link-callmethods

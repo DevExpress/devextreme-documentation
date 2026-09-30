@@ -7,7 +7,7 @@ If you already use a predefined CSS theme on the page, a corresponding SVG theme
 If you use Fluent Next themes in your application, note the following specifics:
 
 - SVG components use [Fluent Next CSS variables](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#CSS_Variables/SVG-Based_Component_Colors) and support [container-specific theme modes](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes).
-- [Accent colors](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Accent_Colors) in Fluent Next themes apply only to HTML-based components and to the following [RangeSelector elements](/Documentation/Guide/UI_Components/RangeSelector/Visual_Elements/):
+- [Accent colors](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Accent_Colors) apply only to HTML-based components and to the following [RangeSelector elements](/Documentation/Guide/UI_Components/RangeSelector/Visual_Elements/):
     - The selected range
     - Slider handles
     - Slider markers

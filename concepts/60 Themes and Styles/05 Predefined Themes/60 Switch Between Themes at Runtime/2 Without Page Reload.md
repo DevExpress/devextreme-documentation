@@ -111,12 +111,12 @@ You can use this approach only if the themes belong to the same group. For insta
     The browser applies the new stylesheet after **current(themeName)** returns. Call **refreshMode()** in a [ready(callback)](/Documentation/ApiReference/Common/utils/ui/themes/#readycallback) callback function. Callback functions passed to **ready(callback)** run only once, so register a callback before each **current(themeName)** call:
 
         <!-- tab: Modular Application -->
-        import { current, ready, refreshMode } from 'devextreme/ui/themes';
+        import themes from 'devextreme/ui/themes';
 
-        ready(() => {
-            refreshMode();
+        themes.ready(() => {
+            themes.refreshMode();
         });
-        current('fluent-next.blue.dark');
+        themes.current('fluent-next.blue.dark');
 
         <!-- tab: Non-Modular Application -->
         DevExpress.ui.themes.ready(() => {

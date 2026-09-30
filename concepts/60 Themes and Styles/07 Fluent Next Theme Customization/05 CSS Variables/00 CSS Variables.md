@@ -113,6 +113,8 @@ Components that display content in overlays do not apply component element style
         import { DxPopupModule } from 'devextreme-angular';
 
         @Component({
+            selector: 'app-root',
+            templateUrl: './app.component.html',
             imports: [DxPopupModule, /* ... */],
         })
         export class AppComponent {
@@ -176,7 +178,7 @@ Components that display content in overlays do not apply component element style
 
     ##### Angular
 
-        <!-- tab: app.component.html-->
+        <!-- tab: app.component.html -->
         <dx-popup
             [wrapperAttr]="wrapperAttr"
         ></dx-popup>
@@ -191,6 +193,8 @@ Components that display content in overlays do not apply component element style
         import { DxPopupModule, DxSelectBoxModule } from 'devextreme-angular';
 
         @Component({
+            selector: 'app-root',
+            templateUrl: './app.component.html',
             imports: [DxPopupModule, DxSelectBoxModule, /* ... */],
         })
         export class AppComponent {

@@ -40,16 +40,17 @@ You can change container theme modes at runtime. Styles in custom elements and D
             // Updates open overlays
             DevExpress.ui.themes.refreshMode();
         },
-    })
+    });
 
 ##### Angular
 
     <!-- tab: app.component.ts -->
-    import { Component } from "@angular/core";
+    import { ChangeDetectorRef, Component, inject } from "@angular/core";
     import { refreshMode } from "devextreme/ui/themes";
     import { DxButtonModule } from "devextreme-angular";
-    
+
     @Component({
+        selector: 'app-root',
         imports: [DxButtonModule],
         template: `
             <div [class]="containerClass">
@@ -61,10 +62,14 @@ You can change container theme modes at runtime. Styles in custom elements and D
         `,
     })
     export class AppComponent {
+        private changeDetector = inject(ChangeDetectorRef);
+
         containerClass: string = 'dx-theme-mode-light';
 
         changeThemeMode() {
             this.containerClass = 'dx-theme-mode-dark';
+            // Applies the new class to the DOM
+            this.changeDetector.detectChanges();
             // Updates open overlays
             refreshMode();
         }
@@ -83,14 +88,16 @@ You can change container theme modes at runtime. Styles in custom elements and D
     </template>
 
     <script setup lang="ts">
-    import { ref } from "vue";
+    import { nextTick, ref } from "vue";
     import { refreshMode } from "devextreme/ui/themes";
     import { DxButton } from 'devextreme-vue/button';
 
     const containerClass = ref('dx-theme-mode-light');
 
-    function changeThemeMode() {
+    async function changeThemeMode() {
         containerClass.value = 'dx-theme-mode-dark';
+        // Waits until Vue applies the new class to the DOM
+        await nextTick();
         // Updates open overlays
         refreshMode();
     }
@@ -99,17 +106,20 @@ You can change container theme modes at runtime. Styles in custom elements and D
 ##### React
 
     <!-- tab: App.tsx -->
-    import React, { useCallback, useState } from 'react';
+    import { useCallback, useEffect, useState } from 'react';
     import Button from 'devextreme-react/button';
     import { refreshMode } from 'devextreme/ui/themes';
 
     export default function App() {
         const [containerClass, setContainerClass] = useState('dx-theme-mode-light');
 
+        useEffect(() => {
+            // Updates open overlays after React applies the new class to the DOM
+            refreshMode();
+        }, [containerClass]);
+
         const changeThemeMode = useCallback(() => {
             setContainerClass('dx-theme-mode-dark');
-            // Updates open overlays
-            refreshMode();
         }, []);
 
         return (

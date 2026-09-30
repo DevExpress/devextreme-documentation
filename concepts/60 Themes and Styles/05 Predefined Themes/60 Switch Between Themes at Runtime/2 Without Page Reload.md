@@ -108,18 +108,32 @@ You can use this approach only if the themes belong to the same group. For insta
 
 2. Use the [DevExpress.ui.themes.current(themeName)](/api-reference/50%20Common/utils/ui/themes/current(themeName).md '/Documentation/ApiReference/Common/utils/ui/themes/#currentthemeName') method to switch to another theme. When you switch between Fluent Next themes, call [refreshMode()](/Documentation/ApiReference/Common/Utils/ui/themes/#refreshMode) to update open overlays that use [container-specific theme modes](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes).
 
-The method accepts the `data-theme` attribute value. For example, if you want to switch to `dx.generic.dark`, pass `generic.dark` (without the 'dx' prefix) as an argument in the method. For a custom theme, specify the theme you used as a base. If both of your themes are derived from the same base, get the `data-theme` value from the `font-family` value of the `dx-theme-marker` CSS class, which is located in each theme's CSS file.
+    The browser applies the new stylesheet after **current(themeName)** returns. Call **refreshMode()** in a [ready(callback)](/Documentation/ApiReference/Common/utils/ui/themes/#readycallback) callback function. Callback functions passed to **ready(callback)** run only once, so register a callback before each **current(themeName)** call:
+
+        <!-- tab: Modular Application -->
+        import { current, ready, refreshMode } from 'devextreme/ui/themes';
+
+        ready(() => {
+            refreshMode();
+        });
+        current('fluent-next.blue.dark');
+
+        <!-- tab: Non-Modular Application -->
+        DevExpress.ui.themes.ready(() => {
+            DevExpress.ui.themes.refreshMode();
+        });
+        DevExpress.ui.themes.current('fluent-next.blue.dark');
+
+The **current(themeName)** method accepts the `data-theme` attribute value. For example, if you want to switch to `dx.generic.dark`, pass `generic.dark` (without the 'dx' prefix) as an argument in the method. For a custom theme, specify the theme you used as a base. If both of your themes are derived from the same base, get the `data-theme` value from the `font-family` value of the `dx-theme-marker` CSS class, which is located in each theme's CSS file.
 
 [note]
 
-If you use an accent color stylesheet with Fluent Next themes, note the following specifics:
+If you use an accent color stylesheet with Fluent Next themes, ensure you load the accent stylesheet after all Fluent Next stylesheets. We recommend that you use the following order:
 
-- You do not need to switch the accent stylesheet when switching themes. These stylesheets apply to all variations of Fluent Next (light and dark modes, standard and compact sizes).
-- Ensure you load the accent stylesheet after all Fluent Next stylesheets. We recommend that you order theme and accent stylesheets as follows:
-
-        <link rel="dx-theme" data-theme="fluent-next.blue.dark" href="css/dx.fluent-next.blue.dark.css" data-active="false">
-        <link rel="dx-theme" data-theme="fluent-next.blue.light" href="css/dx.fluent-next.blue.light.css" data-active="false">
-        <link rel="stylesheet" href="node_modules/devextreme/dist/css/accents/rose.css">
+    <!-- tab: index.html -->
+    <link rel="dx-theme" data-theme="fluent-next.blue.dark" href="css/dx.fluent-next.blue.dark.css" data-active="false">
+    <link rel="dx-theme" data-theme="fluent-next.blue.light" href="css/dx.fluent-next.blue.light.css" data-active="true">
+    <link rel="stylesheet" href="css/accents/rose.css">
 
 Refer to the following help topic for more information about accent colors in Fluent Next themes: [Fluent Next Theme Customization - Accent Colors](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Accent_Colors).
 

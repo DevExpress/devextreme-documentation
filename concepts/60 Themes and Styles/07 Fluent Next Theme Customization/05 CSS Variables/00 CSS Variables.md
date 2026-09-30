@@ -46,7 +46,17 @@ To override variables for an entire page, use the `:root` selector:
         --dxds-color-bg-primary: #b06ab3;
     }
 
-[note] `:root` overrides and Fluent Next stylesheets share the same specificity. Load your override stylesheet after the Fluent Next stylesheet to apply these styles. Scoped overrides that use class or ID selectors apply regardless of load order.
+[note]
+
+- `:root` overrides and Fluent Next stylesheets share the same specificity. Load your override stylesheet after the Fluent Next stylesheet to apply these styles. Scoped overrides that use class or ID selectors apply regardless of load order.
+- [Theme mode containers](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes) redeclare variables that have different values in light and dark modes (for instance, `--dxds-color-bg` and `--dxds-color-content-primary`). `:root` overrides for these variables do not apply to elements within `dx-theme-mode-*` containers. To customize these variables within a theme mode container, define overrides for the container and include the mode class in the selector:
+
+        <!-- tab: CSS -->
+        .sidebar.dx-theme-mode-dark {
+            --dxds-color-bg: #1f1f1f;
+        }
+
+[/note]
 
 CSS variable overrides also allow you to modify styles of DevExtreme components. You can define overrides for individual components or wrap multiple components in a container and define overrides on the container level. This allows you to apply unique styles to different parts of your application. The following code snippet overrides [semantic variables](https://docs.devexpress.com/DesignSystem/405706/colors/color-css-variables):
 
@@ -100,6 +110,7 @@ Components that display content in overlays do not apply component element style
 
         <!-- tab: app.component.ts -->
         import { Component } from '@angular/core';
+        import { DxPopupModule } from 'devextreme-angular';
 
         @Component({
             imports: [DxPopupModule, /* ... */],
@@ -151,14 +162,14 @@ Components that display content in overlays do not apply component element style
         <!-- tab: index.js -->
         $("#popup").dxPopup({
             wrapperAttr: {
-                class: "dark-colors-custom",
+                class: "custom-colors-hex",
             },
         });
 
         $("#selectBox").dxSelectBox({
             dropDownOptions: {
                 wrapperAttr: {
-                    class: "dark-colors-custom",
+                    class: "custom-colors-hex",
                 },
             },
         });
@@ -184,7 +195,7 @@ Components that display content in overlays do not apply component element style
         })
         export class AppComponent {
             wrapperAttr = {
-                class: 'dark-colors-custom',
+                class: 'custom-colors-hex',
             };
         }
 
@@ -207,7 +218,7 @@ Components that display content in overlays do not apply component element style
         import { DxSelectBox, DxDropDownOptions } from 'devextreme-vue/select-box';
 
         const wrapperAttr = {
-            class: 'dark-colors-custom',
+            class: 'custom-colors-hex',
         };
         </script>
 
@@ -218,7 +229,7 @@ Components that display content in overlays do not apply component element style
         import { SelectBox, DropDownOptions } from 'devextreme-react/select-box';
 
         const wrapperAttr = {
-            class: 'dark-colors-custom',
+            class: 'custom-colors-hex',
         };
 
         export default function App() {
@@ -244,15 +255,14 @@ You can also use CSS variable overrides to apply custom colors to specific parts
 
     <!-- tab: CSS -->
     /* Utility palette colors */
-    .yellow-accent {
-        --dxds-color-bg: var(--dxds-color-bg-yellow);
-        --dxds-color-content: var(--dxds-color-content-yellow);
+    .yellow-utility {
+        --dxds-color-bg: var(--dxds-color-bg-yellow-subtle);
         --dxds-color-border: var(--dxds-color-border-yellow);
     }
 
     /* Custom colors */
-    .yellow-accent {
+    .yellow-custom {
         --dxds-color-bg: #F2C661;
-        --dxds-color-content: #EFB839;
+        --dxds-color-content: #3F2900;
         --dxds-color-border: #EDAD1C;
     }

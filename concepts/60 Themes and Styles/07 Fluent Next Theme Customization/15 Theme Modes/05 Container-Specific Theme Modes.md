@@ -1,11 +1,4 @@
-Fluent Next themes allow you to define theme modes for specific containers in your application. Container-specific modes allow you to use dark mode styles in a light mode application and vice versa. These modes apply to DevExtreme components and HTML elements.
-
-[note]
-
-- SVG components do not support container-specific theme modes and always use the application's theme mode (from the active Fluent Next stylesheet).
-- You do not need to import both light and dark stylesheets to use container-specific theme modes. All Fluent Next stylesheets ship with both light and dark CSS rules.
-
-[/note]
+Fluent Next themes allow you to define theme modes for specific containers in your application. Container-specific modes allow you to use dark mode styles in a light mode application and vice versa. These modes apply to HTML elements and DevExtreme components (both HTML- and SVG-based).
 
 Use one of the following classes to specify a theme mode for a container:
 
@@ -22,7 +15,11 @@ Fluent Next stylesheets store current modes in the `--dx-theme-mode` CSS variabl
         }
     }
 
-You can change container theme modes at runtime. Styles in custom elements and DevExtreme components update immediately. Call [refreshMode()](/Documentation/ApiReference/Common/Utils/ui/themes/#refreshMode) only to update styles in open component overlays:
+Mode-specific rules apply to descendants of a theme mode container, but not to the container itself (style queries evaluate an element's ancestors).
+
+Component overlays (for instance, popups and drop-down lists) open in the theme mode of the component's container, even though DevExtreme renders overlays at the viewport level.
+
+You can change container theme modes at runtime. Styles in custom elements and DevExtreme components update immediately. If an overlay is open when you change the mode, call [refreshMode()](/Documentation/ApiReference/Common/Utils/ui/themes/#refreshMode) to update the overlay's styles:
 
 ---
 
@@ -48,15 +45,17 @@ You can change container theme modes at runtime. Styles in custom elements and D
 ##### Angular
 
     <!-- tab: app.component.ts -->
+    import { Component } from "@angular/core";
     import { refreshMode } from "devextreme/ui/themes";
     import { DxButtonModule } from "devextreme-angular";
     
     @Component({
+        imports: [DxButtonModule],
         template: `
             <div [class]="containerClass">
                 <dx-button
                     text="Change Theme Mode"
-                    (onClick)="changeThemeMode($event)"
+                    (onClick)="changeThemeMode()"
                 ></dx-button>
             </div>
         `,
@@ -200,4 +199,4 @@ Call the [mode(element)](/Documentation/ApiReference/Common/Utils/ui/themes/#mod
 
 ---
 
-[note] You can call this method for any element, inside or outside a theme mode container. If no container declares a mode, the method reads the mode from the active Fluent Next stylesheet. The method always returns *"light"* or *"dark"*.
+[note] You can call **mode(element)** for any element, inside or outside a theme mode container. If no container declares a mode, the method reads the mode from the active Fluent Next stylesheet and always returns *"light"* or *"dark"*.

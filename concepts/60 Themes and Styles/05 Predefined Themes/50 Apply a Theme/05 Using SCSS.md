@@ -1,3 +1,9 @@
+[note]
+
+This section does not apply to Fluent Next themes.
+
+[/note]
+
 You can import a theme bundle from the `bundles` folder of the `devextreme` package into the root `.scss` file:
 
     /* @use 'devextreme/scss/bundles/dx.theme_name.scss';  */

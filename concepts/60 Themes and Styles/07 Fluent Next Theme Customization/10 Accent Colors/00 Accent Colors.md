@@ -2,7 +2,7 @@ This section describes accent colors in Fluent Next themes.
 
 [note]
 
-Accent colors in Fluent Next themes apply to HTML-based components and to the following [RangeSelector elements](/Documentation/Guide/UI_Components/RangeSelector/Visual_Elements/):
+Accent colors in Fluent Next themes apply only to HTML-based components and to the following [RangeSelector elements](/Documentation/Guide/UI_Components/RangeSelector/Visual_Elements/):
 
 - The selected range
 - Slider handles

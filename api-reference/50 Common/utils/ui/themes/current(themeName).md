@@ -3,149 +3,86 @@ id: ui.themes.current(themeName)
 ---
 ---
 ##### shortDescription
-Sets a theme with a specific name.
+Switches the active theme.
 
 ##### param(themeName): String
-The theme's name.
+The theme name.
 
 ---
-The theme name passed as a parameter should be the value of the **data-theme** attribute used within the **rel="dx-theme"** links to the theme. For instance, if you have links to two of your themes...
+**current(themeName)** switches between themes that you link in the `<head>` element. Add a `<link rel="dx-theme">` element for each theme:
 
-    <!--HTML--><link rel="dx-theme" data-theme="generic.dark" href="css/mytheme-dark.css" data-active="true">
-    <link rel="dx-theme" data-theme="generic.light" href="css/mytheme-light.css" data-active="false">
+    <!-- tab: index.html -->
+    <link rel="dx-theme" data-theme="fluent-next.blue.dark" href="css/dx.fluent-next.blue.dark.css" data-active="true">
+    <link rel="dx-theme" data-theme="fluent-next.blue.light" href="css/dx.fluent-next.blue.light.css" data-active="false">
 
-... you can switch between them as shown in the code below. Note that you should specify a callback function that repaints all UI components after the theme has been loaded using the [ready(callback)](/api-reference/50%20Common/utils/ui/themes/ready(callback).md '/Documentation/ApiReference/Common/utils/ui/themes/#readycallback') method.
+Pass a `data-theme` attribute value to **current(themeName)** to switch the active theme. The **current(themeName)** method updates DevExtreme styles automatically. To ensure that specific components apply the new styles, call their **repaint()** methods (if available) in a [ready(callback)](/Documentation/ApiReference/Common/utils/ui/themes/#readycallback) callback function. If you use [container-specific theme modes](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes) with a Fluent Next theme, call [refreshMode()](/Documentation/ApiReference/Common/utils/ui/themes/#refreshMode) to apply updated modes to open overlays.
+
+Callback functions passed to **ready(callback)** run only once, so register a callback before each **current(themeName)** call:
 
 ---
 ##### jQuery  
 
-    <!--JavaScript-->DevExpress.ui.themes.ready(function () {
-        $("#dataGridContainer").dxDataGrid("repaint");
-        // Call other UI components' repaint() method here
-    });
-    DevExpress.ui.themes.current('generic.light');
-    // DevExpress.ui.themes.current('generic.dark');
+    <!-- tab: index.js -->
+    function switchToLightTheme() {
+        DevExpress.ui.themes.ready(() => {
+            dataGridInstance.repaint();
+            DevExpress.ui.themes.refreshMode();
+        });
+        DevExpress.ui.themes.current('fluent-next.blue.light');
+    }
 
 ##### Angular
 
-    <!--TypeScript-->
+    <!-- tab: app.component.ts -->
     import themes from "devextreme/ui/themes";
-    import { Component, ViewChild } from "@angular/core";
-    import { DxDataGridComponent, DxButtonComponent } from "devextreme-angular";
-    
-    @Component({
-        selector: 'my-app',
-        template: `
-            <dx-data-grid [dataSource]="dataSource"></dx-data-grid>
-            <dx-button text="Change Theme" (onClick)="changeTheme()"></dx-button>
-        `
-    })
-    
-    export class AppComponent {
-        @ViewChild(DxDataGridComponent, { static: false }) dataGrid: DxDataGridComponent;
-        @ViewChild(DxButtonComponent, { static: false }) button: DxButtonComponent;
-        // Prior to Angular 8
-        // @ViewChild(DxDataGridComponent) dataGrid: DxDataGridComponent;
-        // @ViewChild(DxButtonComponent) button: DxButtonComponent;
 
-        changeTheme() {
+    // ...
+    export class AppComponent {
+        switchToLightTheme() {
             themes.ready(() => {
-                this.dataGrid.instance.repaint();
-                this.button.instance.repaint();
+                dataGridInstance.repaint();
+                themes.refreshMode();
             });
-            themes.current('generic.light');
-            // themes.current('generic.dark');
+            themes.current('fluent-next.blue.light');
         }
     }
 
 ##### Vue
 
     <!-- tab: App.vue -->
-    <template>
-        <DxDataGrid ...
-            :ref="dataGridRefKey"
-        />
-        <DxButton
-            :ref="buttonRefKey"
-            text="Change Theme"
-            @click="changeTheme"
-        />
-    </template>
+    <script setup lang="ts">
+    import themes from "devextreme/ui/themes";
 
-    <script>
-    import DxDataGrid from 'devextreme-vue/data-grid';
-    import DxButton from 'devextreme-vue/button';
-
-    const dataGridRefKey = 'my-data-grid';
-    const buttonRefKey = 'my-button';
-
-    export default {
-        components: {
-            DxDataGrid,
-            DxButton
-        },
-        data() {
-            return {
-                dataGridRefKey,
-                buttonRefKey
-            }
-        },
-        computed: {
-            dataGrid: function () {
-                return this.$refs[dataGridRefKey].instance;
-            },
-            button: function () {
-                return this.$refs[buttonRefKey].instance;
-            }
-        },
-        methods: {
-            changeTheme() {
-                themes.ready(() => {
-                    this.dataGrid.repaint();
-                    this.button.repaint();
-                });
-                themes.current('generic.light');
-                // themes.current('generic.dark');
-            }
-        }
+    function switchToLightTheme() {
+        themes.ready(() => {
+            dataGridInstance.repaint();
+            themes.refreshMode();
+        });
+        themes.current('fluent-next.blue.light');
     }
     </script>
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import DataGrid from 'devextreme-react/data-grid';
-    import Button from 'devextreme-react/button';
-    import themes from 'devextreme/ui/themes';
+    <!-- tab: App.tsx -->
+    import { useCallback } from 'react';
+    import themes from "devextreme/ui/themes";
 
     export default function App() {
-        const dataGrid = React.useRef(null);
-        const button = React.useRef(null);
-
-        const changeTheme = React.useCallback(() => {
+        const switchToLightTheme = useCallback(() => {
             themes.ready(() => {
-                dataGrid.current.instance().repaint();
-                button.current.instance().repaint();
+                dataGridInstance.repaint();
+                themes.refreshMode();
             });
-            themes.current('generic.light');
-            // themes.current('generic.dark');
+            themes.current('fluent-next.blue.light');
         }, []);
 
-        return (
-            <React.Fragment>
-                <DataGrid ...
-                    ref={dataGrid}
-                />
-                <Button
-                    ref={button}
-                    text="Change Theme"
-                    onClick={changeTheme}
-                />
-            </React.Fragment>
-        );
+        // ...
     }
 
 ---
 
-Refer to the [Predefined Themes](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/') article for details on the themes that are supplied with DevExtreme.
+#####See Also#####
+
+- [Predefined Themes](/Documentation/Guide/Themes_and_Styles/Predefined_Themes/)
+- [Fluent Next Theme Customization](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/)

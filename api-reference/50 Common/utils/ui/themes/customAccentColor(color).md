@@ -11,9 +11,9 @@ A CSS color value. Pass `null` or an empty string to remove the custom accent co
 ---
 This method defines the `--dx-accent-color` CSS variable in the `:root` scope. Fluent Next stylesheets calculate primary color shades from this variable, and DevExtreme components update their colors immediately. If you define a `--dx-accent-color` value in your stylesheets, **customAccentColor(color)** overrides this value.
 
-**customAccentColor(color)** accepts all valid CSS color values:
+**customAccentColor(color)** accepts the following CSS color values:
 
-- Color names (such as *"SlateBlue"*)
+- Color names (for instance, *"SlateBlue"*)
 - Hexadecimal values
 - `rgb()`, `hsl()`, and `oklch()` color functions
 - References to CSS variables (for instance, *"var(--my-brand-color)"*)

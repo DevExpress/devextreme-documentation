@@ -5,7 +5,7 @@ The following table lists color variables. Fluent Next themes declare these vari
 <table class="dx-table">
     <tr>
         <th>Legacy Variable</th>
-        <th>Fluent Next Value</th>
+        <th>Design System Variable</th>
     </tr>
     <tr>
         <td><code>--dx-color-primary</code></td>
@@ -74,8 +74,8 @@ The following table lists size variables for standard and compact sizes. Fluent 
 <table class="dx-table">
     <tr>
         <th>Legacy Variable</th>
-        <th>Standard Size</th>
-        <th>Compact Size</th>
+        <th>Design System Variable (Standard Size)</th>
+        <th>Design System Variable (Compact Size)</th>
     </tr>
     <tr>
         <td><code>--dx-font-size</code></td>
@@ -104,7 +104,7 @@ The following table lists size variables for standard and compact sizes. Fluent 
     </tr>
     <tr>
         <td><code>--dx-font-size-xl</code></td>
-        <td><code>--dxds-spacing-340</code> (34px)</td>
+        <td><code>--dxds-spacing-340</code></td>
         <td><code>--dxds-font-size-240</code></td>
     </tr>
     <tr>
@@ -174,9 +174,29 @@ The following table lists size variables for standard and compact sizes. Fluent 
     </tr>
 </table>
 
-The following table lists legacy variables that Fluent Next themes do not declare:
+The following table lists legacy variables that Fluent Next themes do not declare in the `:root` scope. Replace these variables with the corresponding Design System variables:
 
-- `--dx-color-shadow`
-- `--dx-popup-toolbar-item-padding-inline`
-- `--dx-texteditor-color-text`
-- `--dx-button-padding-inline` (Fluent Next themes declare this variable only for elements with the `dx-button` or `dx-dropdowneditor-button` class)
+<table class="dx-table">
+    <tr>
+        <th>Legacy Variable</th>
+        <th>Design System Variable</th>
+    </tr>
+    <tr>
+        <td><code>--dx-color-shadow</code></td>
+        <td><code>--dxds-box-shadow-*</code> (these variables define complete <code>box-shadow</code> values instead of only shadow colors)</td>
+    </tr>
+    <tr>
+        <td><code>--dx-texteditor-color-text</code></td>
+        <td><code>--dxds-color-content</code></td>
+    </tr>
+    <tr>
+        <td><code>--dx-popup-toolbar-item-padding-inline</code></td>
+        <td><code>--dxds-spacing-80</code></td>
+    </tr>
+    <tr>
+        <td><code>--dx-button-padding-inline</code></td>
+        <td><code>--dxds-spacing-120</code> (standard size) or <code>--dxds-spacing-80</code> (compact size)</td>
+    </tr>
+</table>
+
+[note] Fluent Next themes declare `--dx-button-padding-inline` only for elements with the `dx-button` or `dx-dropdowneditor-button` class.

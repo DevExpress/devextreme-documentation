@@ -17,50 +17,43 @@ The load panel is shown only for remote data sources by default. To show it rega
 
 ##### Angular
     
-    <!--HTML-->
-    <dx-data-grid ... >
+    <!-- tab: app.component.html -->
+    <dx-data-grid>
         <dxo-data-grid-load-panel
             [enabled]="true">
         </dxo-data-grid-load-panel>
     </dx-data-grid>
 
-    <!--TypeScript-->
-    import { DxDataGridModule } from "devextreme-angular";
-    // ...
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import { DxDataGridModule } from 'devextreme-angular';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css'],
+        standalone: true,
+        imports: [DxDataGridModule]
+    })
     export class AppComponent {
         // ...
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxDataGridModule
-        ],
-        // ...
-    })
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <DxDataGrid ... >
+        <DxDataGrid>
             <DxLoadPanel :enabled="true" />
         </DxDataGrid>
     </template>
 
-    <script>
+    <script setup>
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxLoadPanel
     } from 'devextreme-vue/data-grid';
-
-    export default {
-        components: {
-            DxDataGrid,
-            DxLoadPanel
-        },
-        // ...
-    }
     </script>
 
 ##### React
@@ -75,7 +68,7 @@ The load panel is shown only for remote data sources by default. To show it rega
 
     export default function App() {
         return (
-            <DataGrid ... >
+            <DataGrid>
                 <LoadPanel enabled />
             </DataGrid>
         );
@@ -95,68 +88,50 @@ You can also control the load panel programmatically using the [beginCustomLoadi
 
 ##### Angular
 
-    <!--TypeScript-->
-    import { ..., ViewChild } from "@angular/core";
-    import { DxDataGridModule, DxDataGridComponent } from "devextreme-angular";
-    // ...
+    <!-- tab: app.component.ts -->
+    import { Component, ViewChild } from '@angular/core';
+    import { DxDataGridModule, DxDataGridComponent } from 'devextreme-angular';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css'],
+        standalone: true,
+        imports: [DxDataGridModule]
+    })
     export class AppComponent {
         @ViewChild(DxDataGridComponent, { static: false }) dataGrid: DxDataGridComponent;
-        // Prior to Angular 8
-        // @ViewChild(DxDataGridComponent) dataGrid: DxDataGridComponent;
+
         performLongOperation() {
             this.dataGrid.instance.beginCustomLoading();
             // ...
             this.dataGrid.instance.endCustomLoading();
         }
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxDataGridModule
-        ],
-        // ...
-    })
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <DxDataGrid ref="dataGridRefKey">
+        <DxDataGrid ref="dataGridRef">
             <!-- ... -->
         </DxDataGrid>
     </template>
 
-    <script>
+    <script setup>
+    import { ref } from 'vue';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         // ...
     } from 'devextreme-vue/data-grid';
 
-    const dataGridRefKey = "my-data-grid";
+    const dataGridRef = ref(null);
 
-    export default {
-        components: {
-            DxDataGrid,
-            // ...
-        },
-        data: function() {
-            return {
-                dataGridRefKey
-            };
-        },
-        methods: {
-            performLongOperation: function() {
-                this.dataGrid.beginCustomLoading();
-                // ...
-                this.dataGrid.endCustomLoading();
-            }
-        },
-        computed: {
-            dataGrid: function() {
-                return this.$refs[dataGridRefKey].instance;
-            }
-        }
+    function performLongOperation() {
+        dataGridRef.value.instance.beginCustomLoading();
+        // ...
+        dataGridRef.value.instance.endCustomLoading();
     }
     </script>
 
@@ -179,7 +154,7 @@ You can also control the load panel programmatically using the [beginCustomLoadi
         }, []);
 
         return (
-            <DataGrid ref="dataGrid">
+            <DataGrid ref={dataGrid}>
                 {/* ... */}
             </DataGrid>
         );
@@ -187,7 +162,7 @@ You can also control the load panel programmatically using the [beginCustomLoadi
     
 ---
 
-Since the load panel is a DevExtreme [LoadPanel](/concepts/05%20UI%20Components/LoadPanel/00%20Overview.md '/Documentation/Guide/UI_Components/LoadPanel/Overview/') UI component, you can declare any [properties of this UI component](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/') in the DataGrid's [loadPanel](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/loadPanel '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/loadPanel/') object. For example, you can change the panel's size with the [height](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#height') and [width](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#width') properties, or employ another loading indicator using the [indicatorSrc](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/indicatorSrc.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#indicatorSrc') property.
+Since the load panel is a DevExtreme [LoadPanel](/concepts/05%20UI%20Components/LoadPanel/00%20Overview.md '/Documentation/Guide/UI_Components/LoadPanel/Overview/') UI component, you can declare any [properties of this UI component](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/') in the DataGrid's [loadPanel](/api-reference/10%20UI%20Components/GridBase/1%20Configuration/loadPanel '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/loadPanel/') object. For example, you can change the panel's size with the [height](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/height.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#height') and [width](/api-reference/10%20UI%20Components/dxLoadPanel/1%20Configuration/width.md '/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/#width') properties, or employ another loading indicator using the **indicatorOptions**.[src](/Documentation/ApiReference/UI_Components/dxLoadPanel/Configuration/indicatorOptions/#src) property.
 
 ---
 ##### jQuery
@@ -197,63 +172,63 @@ Since the load panel is a DevExtreme [LoadPanel](/concepts/05%20UI%20Components/
             loadPanel: {
                 height: 100,
                 width: 250,
-                indicatorSrc: "https://js.devexpress.com/Content/data/loadingIcons/rolling.svg"
+                indicatorOptions: {
+                    src: "https://js.devexpress.com/Content/data/loadingIcons/rolling.svg"
+                }
             }
         });
     });
 
 ##### Angular
     
-    <!--HTML-->
-    <dx-data-grid ... >
+    <!-- tab: app.component.html -->
+    <dx-data-grid>
         <dxo-data-grid-load-panel
             [height]="100"
-            [width]="250"
-            indicatorSrc="https://js.devexpress.com/Content/data/loadingIcons/rolling.svg">
+            [width]="250">
+            <dxo-data-grid-indicator-options
+                src="https://js.devexpress.com/Content/data/loadingIcons/rolling.svg">
+            </dxo-data-grid-indicator-options>
         </dxo-data-grid-load-panel>
     </dx-data-grid>
 
-    <!--TypeScript-->
-    import { DxDataGridModule } from "devextreme-angular";
-    // ...
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import { DxDataGridModule } from 'devextreme-angular';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css'],
+        standalone: true,
+        imports: [DxDataGridModule]
+    })
     export class AppComponent {
         // ...
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxDataGridModule
-        ],
-        // ...
-    })
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <DxDataGrid ... >
+        <DxDataGrid>
             <DxLoadPanel
                 :height="100"
-                :width="250"
-                indicator-src="https://js.devexpress.com/Content/data/loadingIcons/rolling.svg"
-            />
+                :width="250">
+                <DxIndicatorOptions
+                    src="https://js.devexpress.com/Content/data/loadingIcons/rolling.svg"
+                />
+            </DxLoadPanel>
         </DxDataGrid>
     </template>
 
-    <script>
+    <script setup>
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
-        DxLoadPanel
+        DxLoadPanel,
+        DxIndicatorOptions
     } from 'devextreme-vue/data-grid';
-
-    export default {
-        components: {
-            DxDataGrid,
-            DxLoadPanel
-        },
-        // ...
-    }
     </script>
 
 ##### React
@@ -263,17 +238,20 @@ Since the load panel is a DevExtreme [LoadPanel](/concepts/05%20UI%20Components/
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DataGrid, {
-        LoadPanel
+        LoadPanel,
+        IndicatorOptions
     } from 'devextreme-react/data-grid';
 
     export default function App() {
         return (
-            <DataGrid ... >
+            <DataGrid>
                 <LoadPanel
                     height={100}
-                    width={250}
-                    indicatorSrc="https://js.devexpress.com/Content/data/loadingIcons/rolling.svg"
-                />
+                    width={250}>
+                    <IndicatorOptions
+                        src="https://js.devexpress.com/Content/data/loadingIcons/rolling.svg"
+                    />
+                </LoadPanel>
             </DataGrid>
         );
     }

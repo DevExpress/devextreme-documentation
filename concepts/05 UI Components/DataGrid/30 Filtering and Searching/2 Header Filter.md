@@ -20,51 +20,44 @@ Assign **true** to the [headerFilter](/api-reference/10%20UI%20Components/GridBa
 
 ##### Angular
     
-    <!--HTML-->
-    <dx-data-grid ... >
+    <!-- tab: app.component.html -->
+    <dx-data-grid>
         <dxo-data-grid-header-filter [visible]="true"></dxo-data-grid-header-filter>
-        <dxi-data-grid-column [allowHeaderFiltering]="false" ... ></dxi-data-grid-column>
+        <dxi-data-grid-column [allowHeaderFiltering]="false"></dxi-data-grid-column>
     </dx-data-grid>
 
-    <!--TypeScript-->
-    import { DxDataGridModule } from "devextreme-angular";
-    // ...
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import { DxDataGridModule } from 'devextreme-angular';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css'],
+        standalone: true,
+        imports: [DxDataGridModule]
+    })
     export class AppComponent {
         // ...
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxDataGridModule
-        ],
-        // ...
-    })
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <DxDataGrid ... >
-           <DxHeaderFilter :visible="true" />
-           <DxColumn :allow-header-filtering="false" ... />
+        <DxDataGrid>
+            <DxHeaderFilter :visible="true" />
+            <DxColumn :allow-header-filtering="false" ... />
         </DxDataGrid>
     </template>
 
-    <script>
+    <script setup>
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxColumn,
         DxHeaderFilter
     } from 'devextreme-vue/data-grid';
-
-    export default {
-        components: {
-            DxDataGrid,
-            DxColumn,
-            DxHeaderFilter
-        }
-    }
     </script>
 
 ##### React
@@ -80,7 +73,7 @@ Assign **true** to the [headerFilter](/api-reference/10%20UI%20Components/GridBa
 
     function App() {
         return (
-            <DataGrid ... >
+            <DataGrid>
                 <HeaderFilter visible={true} />
                 <Column allowHeaderFiltering={false} ... />
             </DataGrid>
@@ -129,8 +122,8 @@ A user can change the applied filter by including or excluding values. Use a col
 
 ##### Angular
     
-    <!--HTML-->
-    <dx-data-grid ... >
+    <!-- tab: app.component.html -->
+    <dx-data-grid>
         <dxi-data-grid-column 
             dataField="OrderDate"
             [(filterValues)]="filterValues"
@@ -138,30 +131,31 @@ A user can change the applied filter by including or excluding values. Use a col
         </dxi-data-grid-column>
     </dx-data-grid>
 
-    <!--TypeScript-->
-    import { DxDataGridModule } from "devextreme-angular";
-    // ...
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import { DxDataGridModule } from 'devextreme-angular';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css'],
+        standalone: true,
+        imports: [DxDataGridModule]
+    })
     export class AppComponent {
         filterValues: Array<any> = [2014];
-        filterType: string = "exclude";    // or "include"
-        applyFilter (filterType, values) {
+        filterType: string = 'exclude'; // or 'include'
+        applyFilter(filterType: string, values: Array<any>) {
             this.filterType = filterType;
             this.filterValues = values;
         }
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxDataGridModule
-        ],
-        // ...
-    })
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <DxDataGrid ... >           
+        <DxDataGrid>
             <DxColumn 
                 v-model:filter-type="filterType"
                 v-model:filter-values="filterValues" 
@@ -170,30 +164,20 @@ A user can change the applied filter by including or excluding values. Use a col
         </DxDataGrid>
     </template>
 
-    <script>
+    <script setup>
+    import { ref } from 'vue';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxColumn
     } from 'devextreme-vue/data-grid';
 
-    export default {
-        components: {
-            DxDataGrid,
-            DxColumn
-        },
-        data() {
-            return {
-               filterType: "exclude", // or "include" 
-               filterValues: [2014]
-            }
-        },
-        methods: {
-            applyFilter (filterType, values) {
-                this.filterType = filterType;
-                this.filterValues = values;
-            }
-        }
+    const filterType = ref('exclude'); // or 'include'
+    const filterValues = ref([2014]);
+
+    function applyFilter(type, values) {
+        filterType.value = type;
+        filterValues.value = values;
     }
     </script>
 
@@ -226,7 +210,7 @@ A user can change the applied filter by including or excluding values. Use a col
         };
 
         return (
-            <DataGrid onOptionChanged={onOptionChanged} ... >
+            <DataGrid onOptionChanged={onOptionChanged}>
                 <Column 
                     dataField="OrderDate"
                     filterType={filterType}                   
@@ -264,7 +248,7 @@ A user can change the applied filter by including or excluding values. Use a col
 
 #include datagrid-filtering-rowandheaderconflicts
 
-You can use the **headerFilter.search.enabled** property to enable searching in the header filter. You can also declare this property in a column's configuration object to enable/disable searching in this column's header filter.
+You can use the **headerFilter**.**search**.[enabled](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/headerFilter/search/#enabled) property to enable searching in the header filter. You can also declare this property in a column's configuration object to enable/disable searching in this column's header filter.
 
 ---
 ##### jQuery
@@ -275,12 +259,16 @@ You can use the **headerFilter.search.enabled** property to enable searching in 
             // ...
             headerFilter: { 
                 visible: true,
-                allowSearch: true
+                search: {
+                    enabled: true
+                }
             },
             columns: [{
                 // ...
                 headerFilter: { 
-                    allowSearch: false
+                    search: {
+                        enabled: false
+                    }
                 }
             }]
         });
@@ -288,59 +276,57 @@ You can use the **headerFilter.search.enabled** property to enable searching in 
 
 ##### Angular
     
-    <!--HTML-->
-    <dx-data-grid ... >
-        <dxo-data-grid-header-filter [visible]="true" [allowSearch]="true"></dxo-data-grid-header-filter>
-        <dxi-data-grid-column ... >
-            <dxo-data-grid-header-filter [allowSearch]="false"></dxo-data-grid-header-filter>
+    <!-- tab: app.component.html -->
+    <dx-data-grid>
+        <dxo-data-grid-header-filter [visible]="true">
+            <dxo-data-grid-search [enabled]="true"></dxo-data-grid-search>
+        </dxo-data-grid-header-filter>
+        <dxi-data-grid-column>
+            <dxo-data-grid-header-filter>
+                <dxo-data-grid-search [enabled]="false"></dxo-data-grid-search>
+            </dxo-data-grid-header-filter>
         </dxi-data-grid-column>
     </dx-data-grid>
 
-    <!--TypeScript-->
-    import { DxDataGridModule } from "devextreme-angular";
-    // ...
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import { DxDataGridModule } from 'devextreme-angular';
+
+    @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css'],
+        standalone: true,
+        imports: [DxDataGridModule]
+    })
     export class AppComponent {
         // ...
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxDataGridModule
-        ],
-        // ...
-    })
+
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
-        <DxDataGrid ... >
-            <DxHeaderFilter 
-                :allow-search="true" 
-                :visible="true" 
-            />
+        <DxDataGrid>
+            <DxHeaderFilter :visible="true">
+                <DxSearch :enabled="true" />
+            </DxHeaderFilter>
             <DxColumn>
-                <DxColumnHeaderFilter :allow-search="false" />
+                <DxHeaderFilter>
+                    <DxSearch :enabled="false" />
+                </DxHeaderFilter>
             </DxColumn>
         </DxDataGrid>
     </template>
 
-    <script>
+    <script setup>
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import DxDataGrid, {
         DxColumn,
         DxHeaderFilter,
-        DxColumnHeaderFilter
+        DxSearch
     } from 'devextreme-vue/data-grid';
-
-    export default {
-        components: {
-            DxDataGrid,
-            DxColumn,
-            DxHeaderFilter,
-            DxColumnHeaderFilter
-        }
-    }
     </script>
 
 ##### React
@@ -352,18 +338,19 @@ You can use the **headerFilter.search.enabled** property to enable searching in 
     import DataGrid, {
         Column,
         HeaderFilter,
-        ColumnHeaderFilter
+        Search
     } from 'devextreme-react/data-grid';
 
     function App() {
         return (
-            <DataGrid ... >
-                <HeaderFilter 
-                    allowSearch={true} 
-                    visible={true} 
-                />
+            <DataGrid>
+                <HeaderFilter visible={true}>
+                    <Search enabled={true} />
+                </HeaderFilter>
                 <Column>
-                    <ColumnHeaderFilter allowSearch={false} />
+                    <HeaderFilter>
+                        <Search enabled={false} />
+                    </HeaderFilter>
                 </Column>
             </DataGrid>
         );
@@ -378,13 +365,13 @@ You can use the **headerFilter.search.enabled** property to enable searching in 
         @* ... *@
         .HeaderFilter(hf => hf
             .Visible(true)
-            .AllowSearch(true)
+            .Search(s => s.Enabled(true))
         )
         .Columns(columns => {
             columns.Add()
-                .HeaderFilter(hf => hf.AllowSearch(false));
+                .HeaderFilter(hf => hf.Search(s => s.Enabled(false)));
         })
-    )    
+    )
 
 ---
 

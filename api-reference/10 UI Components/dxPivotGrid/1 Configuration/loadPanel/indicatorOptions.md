@@ -4,7 +4,7 @@ type: LoadPanelIndicatorProperties
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+Configures the load indicator.
 
 ---
 <!-- Description goes here -->

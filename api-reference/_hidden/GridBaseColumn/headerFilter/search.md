@@ -1,1 +1,1 @@
-#include grids-headerfilter-allowsearch-note
+#include grids-headerfilter-odata-number-search-note

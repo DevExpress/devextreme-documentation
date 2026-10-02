@@ -1,6 +1,7 @@
 ---
 id: dxPivotGrid.Options.loadPanel.indicatorOptions
 type: LoadPanelIndicatorProperties
+inheritsType: LoadPanelIndicatorProperties
 ---
 ---
 ##### shortDescription

@@ -1,13 +1,15 @@
 The **id** parameter accepts the following values:
 
-- The **name** value of a root-level item
-- The path of an item nested in a group or tab
+- A root-level item identifier
+- A nested item path composed of multiple item identifiers
 
-Paths must separate nesting levels with periods and cannot include spaces or start with a period. Use the following property values to define nesting levels:
+Use the following property values as item identifiers:
 
 - **GroupItem**.[name](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/GroupItem/name.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/#name')
 - **GroupItem**.[caption](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/GroupItem/caption.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/#caption')
 - **TabbedItem**.**tabs[]**.[title](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/TabbedItem/tabs/title.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/tabs/#title')
+
+Paths must separate nesting levels with periods and cannot include spaces or start with a period.
 
 Review the following Form configuration. Code snippets in this section that demonstrate **itemOption()** reference these items:
 

@@ -20,7 +20,7 @@ The header filter contains unique column values. You can change them in the foll
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering HeaderFilter](/images/Gantt/Visual_elements/Header_filter_groupInterval.png)
 
-Users can search for the filter values in the header filter. Enable the **headerFilter.**[allowSearch](/api-reference/_hidden/dxGanttHeaderFilter/allowSearch.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/#allowSearch') property at the component level or **columns.headerFilter.**[allowSearch](/api-reference/40%20Common%20Types/15%20grids/ColumnHeaderFilter/allowSearch.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#allowSearch') property at the column level to display the search panel. Use the [searchMode](/api-reference/40%20Common%20Types/15%20grids/ColumnHeaderFilter/searchMode.md '/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#searchMode') property to define a comparison type for a specific column. 
+Users can search for the filter values in the header filter. Enable the **headerFilter**.**search**.[enabled](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/headerFilter/search/#enabled) property at the component level or **columns[]**.**headerFilter**.[search](/Documentation/ApiReference/UI_Components/dxGantt/Configuration/columns/headerFilter/#search).**enabled** property at the column level to display the search panel. Use the **search**.**mode** property to define a comparison type for a specific column. 
 
 ![DevExtreme HTML5 JavaScript jQuery Knockout Angular Gantt Filtering HeaderFilter](/images/Gantt/Visual_elements/Header_filter_SearchPanel.png)
 
@@ -35,7 +35,9 @@ Users can search for the filter values in the header filter. Enable the **header
                 caption: 'Subject',
                 filterType: 'exclude',
                 headerFilter: {
-                    searchMode: 'startswith'
+                    search: {
+                        mode: 'startswith'
+                    }
                 }
             }, {
                 dataField: 'start',
@@ -50,7 +52,9 @@ Users can search for the filter values in the header filter. Enable the **header
             }],
             headerFilter: { 
                 visible: true,
-                allowSearch: true
+                search: {
+                    enabled: true
+                }
             }
         });
     });
@@ -59,20 +63,17 @@ Users can search for the filter values in the header filter. Enable the **header
     
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxo-gantt-header-filter 
-            [visible]="true"
-            [allowSearch]="true">
+        <dxo-gantt-header-filter [visible]="true">
+            <dxo-gantt-search [enabled]="true"></dxo-gantt-search>
         </dxo-gantt-header-filter>
 
         <dxi-gantt-column 
-    	    dataField="title"
+            dataField="title"
             caption="Subject"
-            filterType = "exclude">
-  		    
-            <dxo-gantt-header-filter 
-                searchMode="startswith"
-            />
-            
+            filterType="exclude">
+            <dxo-gantt-header-filter>
+                <dxo-gantt-search mode="startswith"></dxo-gantt-search>
+            </dxo-gantt-header-filter>
         </dxi-gantt-column>
 
         <dxi-gantt-column
@@ -86,103 +87,71 @@ Users can search for the filter values in the header filter. Enable the **header
             dataField="end"
             caption="End Date"
             dataType="date">
-            
-            <dxo-gantt-header-filter 
-                groupInterval="month"
-            />
-
+            <dxo-gantt-header-filter groupInterval="month"></dxo-gantt-header-filter>
         </dxi-gantt-column>
         <!--...-->
     </dx-gantt>
     
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
+    import { DxGanttModule } from 'devextreme-angular';
 
     @Component({
         selector: 'app-root',
         templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
+        styleUrls: ['./app.component.css'],
+        standalone: true,
+        imports: [DxGanttModule]
     })
-
     export class AppComponent {
-        // ...      
-    }    
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-    import { DxGanttModule } from 'devextreme-angular';
-
-    @NgModule({
-        imports: [
-            BrowserModule,
-            DxGanttModule
-        ],        
-        declarations: [AppComponent],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+        // ...
+    }
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
         <DxGantt ... >
-            <DxGanttHeaderFilter 
-                :visible="true"
-                allowSearch="true"
-            />
+            <DxHeaderFilter :visible="true">
+                <DxSearch :enabled="true" />
+            </DxHeaderFilter>
             
             <DxColumn
                 data-field="title"
                 caption="Subject"
-                filterType="exclude">
-                
-                <DxGanttHeaderFilter
-                    searchMode="startswith"
-                />
-
+                filter-type="exclude">
+                <DxHeaderFilter>
+                    <DxSearch mode="startswith" />
+                </DxHeaderFilter>
             </DxColumn>
             
             <DxColumn
                 data-field="start"
                 caption="Start Date"
-                :allowHeaderFiltering="false">
-            </DxColumn>
+                :allow-header-filtering="false"
+            />
 
             <DxColumn
-                data-field="start"
-                caption="Start Date">
-
-                <DxGanttHeaderFilter
-        	        groupInterval="month" />
-
+                data-field="end"
+                caption="End Date">
+                <DxHeaderFilter group-interval="month" />
             </DxColumn>
 
             <!--...-->
         </DxGantt>
     </template>
 
-    <script>
+    <script setup>
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import 'devexpress-gantt/dist/dx-gantt.css'; 
     
     import {
-      DxGantt,
-      DxGanttHeaderFilter,
-      DxColumn,
-      // ...
-    } from 'devextreme-vue/gantt';
-
-    export default {
-      components: {
         DxGantt,
-        DxGanttHeaderFilter,
+        DxHeaderFilter,
+        DxSearch,
         DxColumn,
         // ...
-      }
-    }
+    } from 'devextreme-vue/gantt';
     </script>
 
 ##### React
@@ -194,6 +163,7 @@ Users can search for the filter values in the header filter. Enable the **header
 
     import Gantt, {
         HeaderFilter,
+        Search,
         Column,
         // ...
     } from 'devextreme-react/gantt';
@@ -201,35 +171,29 @@ Users can search for the filter values in the header filter. Enable the **header
     const App = () => {
         return (
             <Gantt ... >
-                <HeaderFilter
-                    visible={true}
-                    allowSearch={true}>
+                <HeaderFilter visible={true}>
+                    <Search enabled={true} />
+                </HeaderFilter>
 
                 <Column 
                     dataField="title"
                     caption="Subject"
                     filterType="exclude">
-                    
-                    <HeaderFilter
-                        searchMode="startswith">
+                    <HeaderFilter>
+                        <Search mode="startswith" />
                     </HeaderFilter>
-
                 </Column>
                 
                 <Column
                     dataField="start"
                     caption="Start Date"
-                    allowHeaderFiltering={false}>
-                </Column>
+                    allowHeaderFiltering={false}
+                />
 
                 <Column 
                     dataField="end"
                     caption="End Date">
-
-      	            <HeaderFilter
-                        groupInterval="month"
-                    />
-
+                    <HeaderFilter groupInterval="month" />
                 </Column>
                 {/* ... */}
             </Gantt>
@@ -247,12 +211,12 @@ Users can search for the filter values in the header filter. Enable the **header
                 .DataField("title")
                 .Caption("Subject")
                 .FilterType(FilterType.Exclude)
-                .HeaderFilter(headerFilter => headerFilter.SearchMode(CollectionSearchMode.StartsWith));
+                .HeaderFilter(headerFilter => headerFilter.Search(s => s.Mode(CollectionSearchMode.StartsWith)));
 
             columns.AddFor(m => m.Title)
                 .DataField("start")
                 .Caption("Start Date")
-                .AllowHeaderFiltering(false)
+                .AllowHeaderFiltering(false);
             
             columns.AddFor(m => m.Title)
                 .DataField("end")
@@ -261,8 +225,8 @@ Users can search for the filter values in the header filter. Enable the **header
             @* ... *@
         })
         .HeaderFilter(e => {
-            e.Visible(true)
-            e.allowSearch(true);
+            e.Visible(true);
+            e.Search(s => s.Enabled(true));
         })
         
         // ...
@@ -277,12 +241,12 @@ Users can search for the filter values in the header filter. Enable the **header
                 .DataField("title")
                 .Caption("Subject")
                 .FilterType(FilterType.Exclude)
-                .HeaderFilter(headerFilter => headerFilter.SearchMode(CollectionSearchMode.StartsWith));
+                .HeaderFilter(headerFilter => headerFilter.Search(s => s.Mode(CollectionSearchMode.StartsWith)));
 
             columns.AddFor(m => m.Title)
                 .DataField("start")
                 .Caption("Start Date")
-                .AllowHeaderFiltering(false)
+                .AllowHeaderFiltering(false);
             
             columns.AddFor(m => m.Title)
                 .DataField("end")
@@ -292,7 +256,7 @@ Users can search for the filter values in the header filter. Enable the **header
         })
         .HeaderFilter(e => {
             e.Visible(true);
-            e.allowSearch(true);
+            e.Search(s => s.Enabled(true));
         })
         
         // ...
@@ -318,7 +282,7 @@ The **Gantt** allows you to define initial filter settings in code. Specify the 
                 //...
             }],
             headerFilter: { 
-                visible: true,
+                visible: true
             }
         });
     });
@@ -327,12 +291,10 @@ The **Gantt** allows you to define initial filter settings in code. Specify the 
     
     <!-- tab: app.component.html -->
     <dx-gantt ... >
-        <dxo-gantt-header-filter 
-            [visible]="true">
-        </dxo-gantt-header-filter>
+        <dxo-gantt-header-filter [visible]="true"></dxo-gantt-header-filter>
         
         <dxi-gantt-column 
-    	    dataField="title"
+            dataField="title"
             caption="Subject"
             [filterValues]="['Deploy software', 'Deployment', 'Deployment complete', 'Testing', 'Unit testing']">
         </dxi-gantt-column>
@@ -341,69 +303,44 @@ The **Gantt** allows you to define initial filter settings in code. Specify the 
     
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
+    import { DxGanttModule } from 'devextreme-angular';
 
     @Component({
         selector: 'app-root',
         templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
+        styleUrls: ['./app.component.css'],
+        standalone: true,
+        imports: [DxGanttModule]
     })
-
     export class AppComponent {
-        // ...      
-    }    
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-    import { DxGanttModule } from 'devextreme-angular';
-
-    @NgModule({
-        imports: [
-            BrowserModule,
-            DxGanttModule
-        ],        
-        declarations: [AppComponent],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+        // ...
+    }
 
 ##### Vue
 
     <!-- tab: App.vue -->
     <template>
         <DxGantt ... >
-            <DxGanttHeaderFilter 
-                :visible="true"
-            />
+            <DxHeaderFilter :visible="true" />
             <DxColumn
                 data-field="title"
                 caption="Subject"
-                :filterValues="['Deploy software', 'Deployment', 'Deployment complete', 'Testing', 'Unit testing']">
-            </DxColumn>
+                :filter-values="['Deploy software', 'Deployment', 'Deployment complete', 'Testing', 'Unit testing']"
+            />
             <!--...-->
         </DxGantt>
     </template>
 
-    <script>
+    <script setup>
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import 'devexpress-gantt/dist/dx-gantt.css'; 
     
     import {
-      DxGantt,
-      DxGanttHeaderFilter,
-      DxColumn,
-      // ...
-    } from 'devextreme-vue/gantt';
-
-    export default {
-      components: {
         DxGantt,
-        DxGanttHeaderFilter,
+        DxHeaderFilter,
         DxColumn,
         // ...
-      }
-    }
+    } from 'devextreme-vue/gantt';
     </script>
 
 ##### React

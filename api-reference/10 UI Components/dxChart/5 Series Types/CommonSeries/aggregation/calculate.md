@@ -116,35 +116,34 @@ One or several aggregated data objects. Should have the same structure as the or
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
 
     import Chart, {
         Series,
         Aggregation
     } from 'devextreme-react/chart';
+    import type { chartPointAggregationInfoObject, chartSeriesObject } from 'devextreme/viz/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series ... >
-                        <Aggregation
-                            calculate={this.customAggregateFunc}
-                        />
-                    </Series>
-                </Chart>
-            );
-        }
+    function customAggregateFunc(aggregationInfo: chartPointAggregationInfoObject, series: chartSeriesObject) {
+        const dataObjects = aggregationInfo.data;
+        const result = { }; // or [ ]
 
-        customAggregateFunc (aggregationInfo, series) {
-            let dataObjects = aggregationInfo.data;
-            let result = { }; // or [ ]
+        // Aggregate the data objects here
 
-            // Aggregate the data objects here
-            
-            return result;
-        }
+        return result;
+    }
+
+    function App() {
+        return (
+            <Chart ... >
+                <Series ... >
+                    <Aggregation
+                        calculate={customAggregateFunc}
+                    />
+                </Series>
+            </Chart>
+        );
     }
 
     export default App;

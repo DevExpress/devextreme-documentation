@@ -112,53 +112,43 @@ The Chart provides the [customizePoint](/api-reference/10%20UI%20Components/Base
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Chart from 'devextreme-react/chart';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useState } from 'react';
+    import Chart, { type ChartTypes } from 'devextreme-react/chart';
     import Button from 'devextreme-react/button';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                isFirstLevel: true,
-                currentTitle: 'The Most Populated Countries by Continents'
-            };
+    function App() {
+        const [isFirstLevel, setIsFirstLevel] = useState(true);
+        const [currentTitle, setCurrentTitle] = useState('The Most Populated Countries by Continents');
 
-            this.onPointClick = this.onPointClick.bind(this);
-            this.onButtonClick = this.onButtonClick.bind(this);
-        }
+        const onPointClick = useCallback(({ target }: ChartTypes.PointClickEvent) => {
+            if (isFirstLevel) {
+                // ...
+                setCurrentTitle(`The Most Populated Countries in ${target.originalArgument}`);
+            }
+        }, [isFirstLevel]);
 
-        render() {
-            return (
+        const onButtonClick = useCallback(() => {
+            if (!isFirstLevel) {
+                // ...
+                setCurrentTitle('The Most Populated Countries by Continents');
+            }
+        }, [isFirstLevel]);
+
+        return (
+            <React.Fragment>
                 <Chart ...
-                    title={this.state.currentTitle}
-                    onPointClick={this.onPointClick}>
+                    title={currentTitle}
+                    onPointClick={onPointClick}>
                 </Chart>
                 <Button ...
-                    onClick={this.onButtonClick}
+                    onClick={onButtonClick}
                 />
-            );
-        }
-
-        onPointClick({ target }) {
-            if(this.state.isFirstLevel) {
-                this.setState({
-                    // ...
-                    currentTitle: `The Most Populated Countries in ${target.originalArgument}`
-                });
-            }
-        }
-
-        onButtonClick() {
-            if(!this.state.isFirstLevel) {
-                this.setState({
-                    // ...
-                    currentTitle: 'The Most Populated Countries by Continents'
-                });
-            }
-        }
+            </React.Fragment>
+        );
     }
+
+    export default App;
 
 ---
 

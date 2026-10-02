@@ -51,22 +51,20 @@ You can switch a point into the hover state by calling its [hover()](/api-refere
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import Chart from 'devextreme-react/chart';
+    import type { chartPointObject } from 'devextreme/viz/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                </Chart>
-            );
-        }
+    function togglePointHoverState(point: chartPointObject) {
+        !point.isHovered() ? point.hover() : point.clearHover();
+    }
 
-        togglePointHoverState (point) {
-            !point.isHovered() ? point.hover() : point.clearHover();
-        }
-
+    function App() {
+        return (
+            <Chart ... >
+            </Chart>
+        );
     }
 
     export default App;

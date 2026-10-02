@@ -16,7 +16,7 @@ In the following example, the **customizeText** function is used to add incoming
             // ...
             label: {
                 customizeText: function(node) {
-                    return node.title + " (in: " + node.linksIn.reduce(weightsReducer, 0) + ", "
+                    return node.label + " (in: " + node.linksIn.reduce(weightsReducer, 0) + ", "
                         + "out: " + node.linksOut.reduce(weightsReducer, 0) + ")";
                 }
             }
@@ -36,7 +36,7 @@ In the following example, the **customizeText** function is used to add incoming
             return accumulator + currentValue.weight;
         }
         sankey_label_customizeText(node) {
-            return node.title + " (in: " + node.linksIn.reduce(this.weightsReducer, 0) + ", "
+            return node.label + " (in: " + node.linksIn.reduce(this.weightsReducer, 0) + ", "
                 + "out: " + node.linksOut.reduce(this.weightsReducer, 0) + ")";
         }
     }
@@ -79,7 +79,7 @@ In the following example, the **customizeText** function is used to add incoming
         },
         methods: {
             customizeText(node) {
-                return `${node.title} (in: ${node.linksIn.reduce(weightsReducer, 0)}, out: ${node.linksOut.reduce(weightsReducer, 0)})`;
+                return `${node.label} (in: ${node.linksIn.reduce(weightsReducer, 0)}, out: ${node.linksOut.reduce(weightsReducer, 0)})`;
             }
         }
     }
@@ -87,25 +87,25 @@ In the following example, the **customizeText** function is used to add incoming
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import Sankey, { Label } from 'devextreme-react/sankey';
+    import type { dxSankeyNode } from 'devextreme/viz/sankey';
 
-    const weightsReducer = (accumulator, currentValue) => {
+    const weightsReducer = (accumulator: number, currentValue: { weight: number }) => {
         return accumulator + currentValue.weight;
-    }
+    };
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Sankey ... >
-                    <Label customizeText={this.customizeText} />
-                </Sankey>
-            )
-        }
-        customizeText(node) {
-            return `${node.title} (in: ${node.linksIn.reduce(weightsReducer, 0)}, out: ${node.linksOut.reduce(weightsReducer, 0)})`;
-        }
+    const customizeText = (node: dxSankeyNode) => {
+        return `${node.label} (in: ${(node.linksIn ?? []).reduce(weightsReducer, 0)}, out: ${(node.linksOut ?? []).reduce(weightsReducer, 0)})`;
+    };
+
+    function App() {
+        return (
+            <Sankey ... >
+                <Label customizeText={customizeText} />
+            </Sankey>
+        );
     }
 
     export default App;

@@ -61,21 +61,21 @@ Depending on whether the legend is oriented vertically or horizontally, the PieC
 
     ##### React
 
-        <!-- tab: App.js -->
+        <!-- tab: App.tsx -->
         import React from 'react';
         import PieChart, {
             Legend
         } from 'devextreme-react/pie-chart';
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <PieChart ... >
-                        <Legend orientation="vertical" /> {/* or "horizontal" */}
-                    </PieChart>
-                );
-            }
+        function App() {
+            return (
+                <PieChart ... >
+                    <Legend orientation="vertical" /> {/* or "horizontal" */}
+                </PieChart>
+            );
         }
+
+        export default App;
 
     ---
 
@@ -148,24 +148,24 @@ To distribute all legend items between several columns (in a vertically-oriented
 
     ##### React
 
-        <!-- tab: App.js -->
+        <!-- tab: App.tsx -->
         import React from 'react';
         import PieChart, {
             Legend
         } from 'devextreme-react/pie-chart';
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <PieChart ... >
-                        <Legend
-                            columnCount={3}
-                            {/* rowCount={2} */}
-                        />
-                    </PieChart>
-                );
-            }
+        function App() {
+            return (
+                <PieChart ... >
+                    <Legend
+                        columnCount={3}
+                        /* rowCount={2} */
+                    />
+                </PieChart>
+            );
         }
+
+        export default App;
 
     ---
 
@@ -236,24 +236,24 @@ Regardless the legend orientation, you can adjust the empty space between column
 
     ##### React
 
-        <!-- tab: App.js -->
+        <!-- tab: App.tsx -->
         import React from 'react';
         import PieChart, {
             Legend
         } from 'devextreme-react/pie-chart';
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <PieChart ... >
-                        <Legend
-                            columnItemSpacing={20}
-                            rowItemSpacing={30}
-                        />
-                    </PieChart>
-                );
-            }
+        function App() {
+            return (
+                <PieChart ... >
+                    <Legend
+                        columnItemSpacing={20}
+                        rowItemSpacing={30}
+                    />
+                </PieChart>
+            );
         }
+
+        export default App;
 
     ---
 

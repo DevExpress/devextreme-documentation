@@ -64,26 +64,24 @@ Gets all points of the series.
 
     ##### React
 
-        <!-- tab: App.js -->
-        import React from 'react';
-        import Chart from 'devextreme-react/chart';
+        <!-- tab: App.tsx -->
+        import React, { useCallback, useRef } from 'react';
+        import Chart, { type ChartRef } from 'devextreme-react/chart';
 
-        class App extends React.Component {
-            constructor(props) {
-                super(props);
-                this.chartRef = React.createRef();
-            }
-            render() {
-                return (
-                    <Chart ref={this.chartRef} ... >
-                    </Chart>
-                );
-            }
-            getSeriesPoints () {
-                const series = this.chartRef.current.instance().getSeriesByName("Series 1");
-                const seriesPoints = series.getAllPoints();
+        function App() {
+            const chartRef = useRef<ChartRef>(null);
+
+            const getSeriesPoints = useCallback(() => {
+                const chart = chartRef.current?.instance();
+                const series = chart?.getSeriesByName("Series 1");
+                const seriesPoints = series?.getAllPoints();
                 // ...
-            }
+            }, []);
+
+            return (
+                <Chart ref={chartRef} ... >
+                </Chart>
+            );
         }
 
         export default App;
@@ -151,26 +149,24 @@ Gets those points of the series that has a specific argument. Returns more than 
 
     ##### React
 
-        <!-- tab: App.js -->
-        import React from 'react';
-        import Chart from 'devextreme-react/chart';
+        <!-- tab: App.tsx -->
+        import React, { useCallback, useRef } from 'react';
+        import Chart, { type ChartRef } from 'devextreme-react/chart';
 
-        class App extends React.Component {
-            constructor(props) {
-                super(props);
-                this.chartRef = React.createRef();
-            }
-            render() {
-                return (
-                    <Chart ref={this.chartRef} ... >
-                    </Chart>
-                );
-            }
-            getChinaPoints () {
-                const series = this.chartRef.current.instance().getSeriesByName("Series 1");
-                const chinaPoints = series.getPointsByArg("China");
+        function App() {
+            const chartRef = useRef<ChartRef>(null);
+
+            const getChinaPoints = useCallback(() => {
+                const chart = chartRef.current?.instance();
+                const series = chart?.getSeriesByName("Series 1");
+                const chinaPoints = series?.getPointsByArg("China");
                 // ...
-            }
+            }, []);
+
+            return (
+                <Chart ref={chartRef} ... >
+                </Chart>
+            );
         }
 
         export default App;
@@ -238,26 +234,24 @@ Gets a point by its index in the series. The index is zero-based.
 
     ##### React
 
-        <!-- tab: App.js -->
-        import React from 'react';
-        import Chart from 'devextreme-react/chart';
+        <!-- tab: App.tsx -->
+        import React, { useCallback, useRef } from 'react';
+        import Chart, { type ChartRef } from 'devextreme-react/chart';
 
-        class App extends React.Component {
-            constructor(props) {
-                super(props);
-                this.chartRef = React.createRef();
-            }
-            render() {
-                return (
-                    <Chart ref={this.chartRef} ... >
-                    </Chart>
-                );
-            }
-            getFirstPoint () {
-                const series = this.chartRef.current.instance().getSeriesByName("Series 1");
-                const firstPoint = series.getPointByPos(0);
+        function App() {
+            const chartRef = useRef<ChartRef>(null);
+
+            const getFirstPoint = useCallback(() => {
+                const chart = chartRef.current?.instance();
+                const series = chart?.getSeriesByName("Series 1");
+                const firstPoint = series?.getPointByPos(0);
                 // ...
-            }
+            }, []);
+
+            return (
+                <Chart ref={chartRef} ... >
+                </Chart>
+            );
         }
 
         export default App;
@@ -325,26 +319,24 @@ Gets those points of the series that fall into the axis's [visual range](/api-re
 
     ##### React
 
-        <!-- tab: App.js -->
-        import React from 'react';
-        import Chart from 'devextreme-react/chart';
+        <!-- tab: App.tsx -->
+        import React, { useCallback, useRef } from 'react';
+        import Chart, { type ChartRef } from 'devextreme-react/chart';
 
-        class App extends React.Component {
-            constructor(props) {
-                super(props);
-                this.chartRef = React.createRef();
-            }
-            render() {
-                return (
-                    <Chart ref={this.chartRef} ... >
-                    </Chart>
-                );
-            }
-            getVisiblePoints () {
-                const series = this.chartRef.current.instance().getSeriesByName("Series 1");
-                const visiblePoints = series.getVisiblePoints();
+        function App() {
+            const chartRef = useRef<ChartRef>(null);
+
+            const getVisiblePoints = useCallback(() => {
+                const chart = chartRef.current?.instance();
+                const series = chart?.getSeriesByName("Series 1");
+                const visiblePoints = series?.getVisiblePoints();
                 // ...
-            }
+            }, []);
+
+            return (
+                <Chart ref={chartRef} ... >
+                </Chart>
+            );
         }
 
         export default App;
@@ -419,25 +411,23 @@ Apart from the API methods, you can access a series point in the event handlers.
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Chart from 'devextreme-react/chart';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
+    import Chart, { type ChartTypes } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart
-                    onPointClick={this.onPointClick}
-                    ...
-                >
-                </Chart>
-            );
-        }
-
-        onPointClick (e) {
+    function App() {
+        const onPointClick = useCallback((e: ChartTypes.PointClickEvent) => {
             const point = e.target;
             // ...
-        };
+        }, []);
+
+        return (
+            <Chart
+                onPointClick={onPointClick}
+                ...
+            >
+            </Chart>
+        );
     }
 
     export default App;

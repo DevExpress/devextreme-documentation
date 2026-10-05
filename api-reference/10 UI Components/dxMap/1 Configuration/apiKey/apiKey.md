@@ -127,4 +127,4 @@ If you have more than one map provider in your application, specify the keys in 
 
 [note] The value of this property cannot be changed dynamically.
 
-If you use the *"osm"* [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider), Map ignores **apiKey**. Include credentials that your tile, geocoding, and routing services require in the tile URL template or in [providerConfig](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/) function requests.
+If [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider) is *"osm"*, the Map ignores **apiKey**. Include credentials that your tile, geocoding, and routing services require in the tile URL template or in [providerConfig](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/) function requests.

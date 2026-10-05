@@ -19,7 +19,7 @@ The UI component's instance.
 The clicked marker's coordinates.
 
 ##### field(e.tooltip): dxPopover
-The clicked marker's Popover instance (only for the *"osm"* provider).
+The clicked marker's Popover instance (only if **provider** is *"osm"*).
 
 ---
-If you use the *"osm"* [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider), Map also calls this function when a user presses Enter or Space on a focused marker.
+If [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider) is *"osm"*, the Map also calls this function when a user presses Enter or Space on a focused marker.

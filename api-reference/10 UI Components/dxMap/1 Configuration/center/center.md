@@ -16,4 +16,4 @@ You can specify the **center** value in one of the following formats:
  - [40.749825, -73.987963]
  - "Brooklyn Bridge,New York,NY"
 
-If you use the *"osm"* [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider), define **providerConfig**.[calculateLocation](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#calculateLocation) to specify **center** as an address string. If Map cannot resolve this address, the component sets **center** to `{lat: 0, lng: 0}`.
+If [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider) is *"osm"* and you specify **center** as an address string, implement **providerConfig**.[calculateLocation](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#calculateLocation) to convert this address to coordinates. If the Map cannot resolve this address, the component sets **center** to `{lat: 0, lng: 0}`.

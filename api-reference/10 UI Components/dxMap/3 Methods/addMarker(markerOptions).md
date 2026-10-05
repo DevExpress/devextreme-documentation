@@ -23,7 +23,7 @@ The marker object should include the following fields.
 - **onClick** (optional) - a callback function performed when the marker is clicked;
 - **iconSrc** (optional) - a URL pointing to the custom icon to be used for the marker.
 
-If you use the *"osm"* [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider), the original marker instance is an OpenLayers [Overlay](https://openlayers.org/en/latest/apidoc/module-ol_Overlay-Overlay.html).
+If [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider) is *"osm"*, the original marker instance is an OpenLayers [Overlay](https://openlayers.org/en/latest/apidoc/module-ol_Overlay-Overlay.html).
 
 #####See Also#####
 #include common-link-callmethods

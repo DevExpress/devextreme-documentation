@@ -7,7 +7,7 @@ type: String
 The tile URL template.
 
 ---
-This field is required. Map replaces the following placeholders in the template:
+This field is required. The Map replaces the following placeholders in the template:
 
 - `{z}`: The zoom level
 - `{x}`: The tile column

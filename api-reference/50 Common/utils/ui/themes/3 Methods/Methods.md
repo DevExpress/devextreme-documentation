@@ -1,5 +1,0 @@
----
-##### shortDescription
-<!-- Description goes here -->
-
----

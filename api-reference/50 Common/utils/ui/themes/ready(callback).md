@@ -3,7 +3,7 @@ id: ui.themes.ready(callback)
 ---
 ---
 ##### shortDescription
-Specifies a function to be executed each time a theme is switched.
+Specifies a function to be executed once, the next time a theme is applied.
 
 ##### param(callback): function()
 The function.

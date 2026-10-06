@@ -12,11 +12,9 @@ The DevExtreme FileUploader component can upload blobs to Azure Storage using a 
         object UploadBlob(string blobName) {
             if (blobName.Contains("/"))
                 return CreateErrorResult("Invalid blob name.");
-
             string prefix = Guid.NewGuid().ToString("N");
             string fullBlobName = $"{prefix}_{blobName}";
             var blob = Container.GetBlockBlobClient(fullBlobName);
-
             if (blob.Exists() && blob.GetProperties().Value.ContentLength > MaxBlobSize) {
                 return CreateErrorResult();
             }
@@ -24,7 +22,7 @@ The DevExtreme FileUploader component can upload blobs to Azure Storage using a 
                 var sasUri = blob.GenerateSasUri(BlobSasPermissions.Write, DateTimeOffset.UtcNow.AddHours(1));
                 return CreateSuccessResult(sasUri.AbsoluteUri);
             } else {
-                        return CreateErrorResult("BlobClient cannot generate SasUri");
+                return CreateErrorResult("BlobClient cannot generate SasUri");
             }
         }
 
@@ -35,25 +33,22 @@ The DevExtreme FileUploader component can upload blobs to Azure Storage using a 
 
         function uploadChunk(file, uploadInfo) {
             let promise = null;
-
             if (uploadInfo.chunkIndex === 0) {
                 promise = gateway.getUploadAccessUrl(file.name).then((accessUrl) => {
-                uploadInfo.customData.accessUrl = accessUrl.url1;
+                    uploadInfo.customData.accessUrl = accessUrl.url1;
                 });
             } else {
                 promise = Promise.resolve();
             }
-
             promise = promise.then(() => gateway.putBlock(
                 uploadInfo.customData.accessUrl,
                 uploadInfo.chunkIndex,
                 uploadInfo.chunkBlob,
             ));
-
             if (uploadInfo.chunkIndex === uploadInfo.chunkCount - 1) {
                 promise = promise.then(() => gateway.putBlockList(
-                uploadInfo.customData.accessUrl,
-                uploadInfo.chunkCount,
+                    uploadInfo.customData.accessUrl,
+                    uploadInfo.chunkCount,
                 ));
             }
             return promise;

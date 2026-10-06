@@ -1,71 +1,69 @@
-DevExtreme provides Generic, Generic Compact, Material Design, and Fluent (all trademarks or registered trademarks are property of their respective owners) themes. These themes are available in the following colors:
+DevExtreme ships with the following themes (all trademarks or registered trademarks are property of their respective owners):
 
-## Generic Themes
+- **Fluent Next**
+- **Fluent**
+- **Material Design**
+- **Generic**
 
-<div id="generic-themes" class="theme-images">
+The following colors are available out of the box:
+
+## Fluent Next Themes
+
+<div id="fluent-next-themes" class="theme-images">
     <div>
-        <p>Light</p>
-        <img src="/images/themes/generic-light.png" />
+        <p>Blue Light</p>
+        <img src="/images/themes/fluent-next-light.png" />
     </div>
     <div>
-        <p>Light Compact</p>
-        <img src="/images/themes/generic-light-compact.png" />
+        <p>Blue Light Compact</p>
+        <img src="/images/themes/fluent-next-light-compact.png" />
     </div>
     <div>
-        <p>Dark</p>
-        <img src="/images/themes/generic-dark.png" />
+        <p>Blue Dark</p>
+        <img src="/images/themes/fluent-next-dark.png" />
     </div>
     <div>
-        <p>Dark Compact</p>
-        <img src="/images/themes/generic-dark-compact.png" />
+        <p>Blue Dark Compact</p>
+        <img src="/images/themes/fluent-next-dark-compact.png" />
+    </div>
+</div>
+
+[note] Fluent Next themes ship with 11 predefined accent colors and support custom accent colors. Refer to the following help topic for more information: [Fluent Next Theme Customization - Accent Colors](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Accent_Colors).
+
+## Fluent Themes
+
+<div id="fluent-themes" class="theme-images">
+    <div>
+        <p>Blue Light</p>
+        <img src="/images/themes/fluent-default.png" />
     </div>
     <div>
-        <p>Carmine</p>
-        <img src="/images/themes/generic-carmine.png" />
+        <p>Blue Light Compact</p>
+        <img src="/images/themes/fluent-compact.png" />
     </div>
     <div>
-        <p>Carmine Compact</p>
-        <img src="/images/themes/generic-carmine-compact.png" />
+        <p>Blue Dark</p>
+        <img src="/images/themes/fluent-dark-default.png" />
     </div>
     <div>
-        <p>Soft Blue</p>
-        <img src="/images/themes/generic-softblue.png" />
+        <p>Blue Dark Compact</p>
+        <img src="/images/themes/fluent-dark-compact.png" />
     </div>
     <div>
-        <p>Soft Blue Compact</p>
-        <img src="/images/themes/generic-softblue-compact.png" />
+        <p>SaaS Light</p>
+        <img src="/images/themes/saas-default-light.png" />
     </div>
-    <div>
-        <p>Dark Moon</p>
-        <img src="/images/themes/generic-darkmoon.png" />
+        <div>
+        <p>SaaS Light Compact</p>
+        <img src="/images/themes/saas-compact-light.png" />
     </div>
-    <div>
-        <p>Dark Moon Compact</p>
-        <img src="/images/themes/generic-darkmoon-compact.png" />
+        <div>
+        <p>SaaS Dark</p>
+        <img src="/images/themes/saas-default.png" />
     </div>
-    <div>
-        <p>Dark Violet</p>
-        <img src="/images/themes/generic-darkviolet.png" />
-    </div>
-    <div>
-        <p>Dark Violet Compact</p>
-        <img src="/images/themes/generic-darkviolet-compact.png" />
-    </div>
-    <div>
-        <p>Green Mist</p>
-        <img src="/images/themes/generic-greenmist.png" />
-    </div>
-    <div>
-        <p>Green Mist Compact</p>
-        <img src="/images/themes/generic-greenmist-compact.png" />
-    </div>
-    <div>
-        <p>Contrast</p>
-        <img src="/images/themes/generic-contrast.png" />
-    </div>
-    <div>
-        <p>Contrast Compact</p>
-        <img src="/images/themes/generic-contrast-compact.png" />
+        <div>
+        <p>SaaS Dark Compact</p>
+        <img src="/images/themes/saas-compact.png" />
     </div>
 </div>
 
@@ -154,40 +152,72 @@ DevExtreme provides Generic, Generic Compact, Material Design, and Fluent (all t
     </div>
 </div>
 
-## Fluent Themes
+## Generic Themes
 
-<div id="fluent-themes" class="theme-images">
+<div id="generic-themes" class="theme-images">
     <div>
-        <p>Blue Light</p>
-        <img src="/images/themes/fluent-default.png" />
-    </div>
-    <div>
-        <p>Blue Light Compact</p>
-        <img src="/images/themes/fluent-compact.png" />
+        <p>Light</p>
+        <img src="/images/themes/generic-light.png" />
     </div>
     <div>
-        <p>Blue Dark</p>
-        <img src="/images/themes/fluent-dark-default.png" />
+        <p>Light Compact</p>
+        <img src="/images/themes/generic-light-compact.png" />
     </div>
     <div>
-        <p>Blue Dark Compact</p>
-        <img src="/images/themes/fluent-dark-compact.png" />
+        <p>Dark</p>
+        <img src="/images/themes/generic-dark.png" />
     </div>
     <div>
-        <p>SaaS Light</p>
-        <img src="/images/themes/saas-default-light.png" />
+        <p>Dark Compact</p>
+        <img src="/images/themes/generic-dark-compact.png" />
     </div>
-        <div>
-        <p>SaaS Light Compact</p>
-        <img src="/images/themes/saas-compact-light.png" />
+    <div>
+        <p>Carmine</p>
+        <img src="/images/themes/generic-carmine.png" />
     </div>
-        <div>
-        <p>SaaS Dark</p>
-        <img src="/images/themes/saas-default.png" />
+    <div>
+        <p>Carmine Compact</p>
+        <img src="/images/themes/generic-carmine-compact.png" />
     </div>
-        <div>
-        <p>SaaS Dark Compact</p>
-        <img src="/images/themes/saas-compact.png" />
+    <div>
+        <p>Soft Blue</p>
+        <img src="/images/themes/generic-softblue.png" />
+    </div>
+    <div>
+        <p>Soft Blue Compact</p>
+        <img src="/images/themes/generic-softblue-compact.png" />
+    </div>
+    <div>
+        <p>Dark Moon</p>
+        <img src="/images/themes/generic-darkmoon.png" />
+    </div>
+    <div>
+        <p>Dark Moon Compact</p>
+        <img src="/images/themes/generic-darkmoon-compact.png" />
+    </div>
+    <div>
+        <p>Dark Violet</p>
+        <img src="/images/themes/generic-darkviolet.png" />
+    </div>
+    <div>
+        <p>Dark Violet Compact</p>
+        <img src="/images/themes/generic-darkviolet-compact.png" />
+    </div>
+    <div>
+        <p>Green Mist</p>
+        <img src="/images/themes/generic-greenmist.png" />
+    </div>
+    <div>
+        <p>Green Mist Compact</p>
+        <img src="/images/themes/generic-greenmist-compact.png" />
+    </div>
+    <div>
+        <p>Contrast</p>
+        <img src="/images/themes/generic-contrast.png" />
+    </div>
+    <div>
+        <p>Contrast Compact</p>
+        <img src="/images/themes/generic-contrast-compact.png" />
     </div>
 </div>
 
@@ -196,29 +226,37 @@ Each theme is a stylesheet that contains a collection of CSS classes. The follow
 <div id="theme-files">
     <div class="first-level">
         <div class="second-level">
-            <div class="header">Generic</div>
+            <div class="header">Fluent Next</div>
             <ul>
-                <li><code>dx.light.css</code></li>
-                <li><code>dx.dark.css</code></li>
-                <li><code>dx.carmine.css</code></li>
-                <li><code>dx.softblue.css</code></li>
-                <li><code>dx.darkmoon.css</code></li>
-                <li><code>dx.darkviolet.css</code></li>
-                <li><code>dx.greenmist.css</code></li>
-                <li><code>dx.contrast.css</code></li>
+                <li><code>dx.fluent-next.blue.light.css</code></li>
+                <li><code>dx.fluent-next.blue.dark.css</code></li>
             </ul>
         </div>
         <div class="second-level">
-            <div class="header">Generic Compact</div>
+            <div class="header">Fluent Next Compact</div>
             <ul>
-                <li><code>dx.light.compact.css</code></li>
-                <li><code>dx.dark.compact.css</code></li>
-                <li><code>dx.carmine.compact.css</code></li>
-                <li><code>dx.softblue.compact.css</code></li>
-                <li><code>dx.darkmoon.compact.css</code></li>
-                <li><code>dx.darkviolet.compact.css</code></li>
-                <li><code>dx.greenmist.compact.css</code></li>
-                <li><code>dx.contrast.compact.css</code></li>
+                <li><code>dx.fluent-next.blue.light.compact.css</code></li>
+                <li><code>dx.fluent-next.blue.dark.compact.css</code></li>
+            </ul>
+        </div>
+    </div>
+    <div class="first-level">
+        <div class="second-level">
+            <div class="header">Fluent</div>
+            <ul>
+                <li><code>dx.fluent.blue.light.css</code></li>
+                <li><code>dx.fluent.blue.dark.css</code></li>
+                <li><code>dx.fluent.saas.light.css</code></li>
+                <li><code>dx.fluent.saas.dark.css</code></li>
+            </ul>
+        </div>
+        <div class="second-level">
+            <div class="header">Fluent Compact</div>
+            <ul>
+                <li><code>dx.fluent.blue.light.compact.css</code></li>
+                <li><code>dx.fluent.blue.dark.compact.css</code></li>
+                <li><code>dx.fluent.saas.light.compact.css</code></li>
+                <li><code>dx.fluent.saas.dark.compact.css</code></li>
             </ul>
         </div>
     </div>
@@ -256,24 +294,32 @@ Each theme is a stylesheet that contains a collection of CSS classes. The follow
     </div>    
     <div class="first-level">
         <div class="second-level">
-            <div class="header">Fluent</div>
+            <div class="header">Generic</div>
             <ul>
-                <li><code>dx.fluent.blue.light.css</code></li>
-                <li><code>dx.fluent.blue.dark.css</code></li>
-                <li><code>dx.fluent.saas.light.css</code></li>
-                <li><code>dx.fluent.saas.dark.css</code></li>
+                <li><code>dx.light.css</code></li>
+                <li><code>dx.dark.css</code></li>
+                <li><code>dx.carmine.css</code></li>
+                <li><code>dx.softblue.css</code></li>
+                <li><code>dx.darkmoon.css</code></li>
+                <li><code>dx.darkviolet.css</code></li>
+                <li><code>dx.greenmist.css</code></li>
+                <li><code>dx.contrast.css</code></li>
             </ul>
         </div>
         <div class="second-level">
-            <div class="header">Fluent Compact</div>
+            <div class="header">Generic Compact</div>
             <ul>
-                <li><code>dx.fluent.blue.light.compact.css</code></li>
-                <li><code>dx.fluent.blue.dark.compact.css</code></li>
-                <li><code>dx.fluent.saas.light.compact.css</code></li>
-                <li><code>dx.fluent.saas.dark.compact.css</code></li>
+                <li><code>dx.light.compact.css</code></li>
+                <li><code>dx.dark.compact.css</code></li>
+                <li><code>dx.carmine.compact.css</code></li>
+                <li><code>dx.softblue.compact.css</code></li>
+                <li><code>dx.darkmoon.compact.css</code></li>
+                <li><code>dx.darkviolet.compact.css</code></li>
+                <li><code>dx.greenmist.compact.css</code></li>
+                <li><code>dx.contrast.compact.css</code></li>
             </ul>
         </div>
-    </div>    
+    </div>
 </div>
 
 CSS themes are designed to customize HTML-based UI components. However, [SVG-based UI components](/concepts/60%20Themes%20and%20Styles/00%20Styling%20Methods.md '/Documentation/Guide/Themes_and_Styles/Styling_Methods/') use their own themes to assume an appearance that matches a particular CSS theme. Refer to the [Themes](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Components%20Customization/15%20Themes/00%20Themes.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Components_Customization/#Themes') article for more information on themes in SVG-based UI components.
@@ -323,8 +369,5 @@ CSS themes are designed to customize HTML-based UI components. However, [SVG-bas
         display: inline-block;
         margin-right: 15px;
         vertical-align: middle;
-    }
-    .second-level:last-child {
-        border-left: 1px solid #e6e6e6;
     }
 </style>

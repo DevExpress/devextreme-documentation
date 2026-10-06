@@ -8,7 +8,7 @@ Updates theme modes in open overlays.
 ---
 When a container's [theme mode](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes) changes at runtime, DevExtreme styles in this container update automatically. DevExtreme component overlays (for instance, popups and drop-down lists) render at the viewport level by default and do not update automatically. To apply updated modes to open overlays, call **refreshMode()**.
 
-If a theme mode container includes DevExtreme components that display overlays, call **refreshMode()** in the following usage scenarios:
+If a theme mode container includes DevExtreme components that display overlays, call **refreshMode()** in the following scenarios:
 
 - When you change the container's theme mode class
 - When you call [current(themeName)](/Documentation/ApiReference/Common/utils/ui/themes/#currentthemeName) to switch between Fluent Next stylesheets (if the container uses the `dx-theme-mode-inverted` class)

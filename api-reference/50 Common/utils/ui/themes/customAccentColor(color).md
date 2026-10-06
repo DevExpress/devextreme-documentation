@@ -20,9 +20,9 @@ This method defines the `--dx-accent-color` CSS variable in the `:root` scope. F
 
 The accent color does not change if you pass an invalid value to this method.
 
-Pass `null` or an empty string to remove a custom accent color specified using this method. Components then use the `--dx-accent-color` value from your stylesheets. If you do not define this value, components use the predefined accent color.
+Pass `null` or an empty string to remove a custom accent color that you specified with this method. Components then use the `--dx-accent-color` value from your stylesheets. If you do not define this value, components use the predefined accent color.
 
-[note] Only Fluent Next themes support custom accent colors. Other themes ignore the color that **customAccentColor(color)** specifies.
+[note] Only Fluent Next themes support custom accent colors. If another theme is active when you call **customAccentColor(color)**, the method defines the `--dx-accent-color` variable but logs a warning and does not change the application appearance. The `--dx-accent-color` value is then applied when you switch to a Fluent Next theme.
 
 #####See Also#####
 

@@ -306,6 +306,7 @@ This example also configures **columns[]**.[cellTemplate](/api-reference/_hidden
             </DataGrid>
         );
     }
+
 ---
 
 You can find the full source code of this example in the following GitHub repository:

@@ -151,7 +151,7 @@ If you use SVG components, you should also call the [refreshTheme()](/api-refere
 
 ##### Angular
 
-    import { themes } from "devextreme/ui/themes";
+    import themes from "devextreme/ui/themes";
     themes.current("generic.contrast");
 
     // When using SVG components
@@ -160,7 +160,7 @@ If you use SVG components, you should also call the [refreshTheme()](/api-refere
 
 ##### Vue
 
-    import { themes } from "devextreme/ui/themes";
+    import themes from "devextreme/ui/themes";
     themes.current("generic.contrast");
 
     // When using SVG components
@@ -169,7 +169,7 @@ If you use SVG components, you should also call the [refreshTheme()](/api-refere
 
 ##### React
 
-    import { themes } from "devextreme/ui/themes";
+    import themes from "devextreme/ui/themes";
     themes.current("generic.contrast");
 
     // When using SVG components

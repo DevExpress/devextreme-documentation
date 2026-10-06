@@ -104,7 +104,7 @@ The following table lists size variables for standard and compact sizes. Fluent 
     </tr>
     <tr>
         <td><code>--dx-font-size-xl</code></td>
-        <td><code>--dxds-spacing-340</code></td>
+        <td><code>--dxds-spacing-340</code> (34px; the font size scale does not include this value)</td>
         <td><code>--dxds-font-size-240</code></td>
     </tr>
     <tr>

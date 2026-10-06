@@ -30,5 +30,3 @@ You can use the following keys to interact with the DevExtreme PivotGridFieldCho
         <td>Scrolls content to the top/bottom.</td>
     </tr>
 </table>
-
-#include common-code-register-key-handler

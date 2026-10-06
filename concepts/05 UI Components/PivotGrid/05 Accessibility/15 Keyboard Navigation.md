@@ -42,5 +42,3 @@ You can use the following keys to interact with the DevExtreme PivotGrid compone
         <td>Closes the integrated field chooser.</td>
     </tr>
 </table>
-
-#include common-code-register-key-handler

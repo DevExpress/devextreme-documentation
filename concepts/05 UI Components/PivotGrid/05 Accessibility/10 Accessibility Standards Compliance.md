@@ -24,7 +24,7 @@ The PivotGrid component meets a variety of <a href="https://www.access-board.gov
     <tr>
         <td>-</td>
         <td>2.4.11 Focus Not Obscured (Minimum) (Level AA 2.2 only)</td>
-        <td>The field chooser and HeaderFilter in PivotGrid do not meet this criterion.</td>
+        <td>The field chooser and HeaderFilter in the PivotGrid do not meet this criterion.</td>
     </tr>
     <tr>
         <td>-</td>
@@ -44,7 +44,7 @@ The PivotGrid component meets a variety of <a href="https://www.access-board.gov
     <tr>
         <td>11.5.2.15 Change notification</td>
         <td>4.1.3 Status Messages (Level AA 2.1 and 2.2)</td>
-        <td>PivotGrid does not provide accessibility information about status changes.</td>
+        <td>The PivotGrid does not provide accessibility information about status changes.</td>
     </tr>
 </table>
 

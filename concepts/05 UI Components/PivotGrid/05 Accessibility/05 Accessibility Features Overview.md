@@ -50,6 +50,6 @@
 <ul style="list-style-type: none;">
    <li style="display: flex; align-items: center;"><svg width="18" height="18" style="padding: 2px 4px 0px 0px;"><use xlink:href="#svg-icon-success"/></svg> - All component features meet the requirement</li>
    <li style="display: flex; align-items: center;"><svg width="18" height="18" style="padding: 2px 4px 0px 0px;"><use xlink:href="#svg-icon-warning"/></svg> - Some component features may not meet the requirement</li>
-   <li style="display: flex; align-items: center;"><svg width="18" height="18" style="padding: 2px 4px 0px 0px;"><use xlink:href="#svg-icon-error"/></svg> - Accessibility requirement is not supported</li>
+   <li style="display: flex; align-items: center;"><svg width="18" height="18" style="padding: 2px 4px 0px 0px;"><use xlink:href="#svg-icon-error"/></svg> -The accessibility requirement is not supported</li>
 </ul>
 

@@ -717,7 +717,7 @@ Refer to the following table for detailed information about each component's acc
    <li><div class="icon icon-error"></div> Accessibility requirement is not supported</li>
 </ul>
 
-The following components do not meet any accessibility requirements and currently are not accessible:
+The following components do not meet any accessibility requirements and are not currently accessible:
 
 - BarGauge
 - Bullet

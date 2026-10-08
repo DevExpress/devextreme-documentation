@@ -80,27 +80,25 @@ Properties that configure tooltips are collected in the [tooltip](/api-reference
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import Sankey, { Tooltip } from 'devextreme-react/sankey';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Sankey ... >
-                    <Tooltip
-                        color="yellow"
-                        customizeNodeTooltip={this.customizeNodeTooltip}
-                    />
-                </Sankey>
-            )
-        }
-        
-        // Tooltips of all nodes with outgoing weight less than 1 turn red
-        // Other tooltips remain yellow
-        customizeNodeTooltip(nodeInfo) {
-            return nodeInfo.weightOut < 1 ? { color: "red" } : { }
-        }
+    // Tooltips of all nodes with outgoing weight less than 1 turn red
+    // Other tooltips remain yellow
+    const customizeNodeTooltip = (nodeInfo: { weightOut?: number }) => {
+        return (nodeInfo.weightOut ?? 0) < 1 ? { color: 'red' } : {};
+    };
+
+    function App() {
+        return (
+            <Sankey ... >
+                <Tooltip
+                    color="yellow"
+                    customizeNodeTooltip={customizeNodeTooltip}
+                />
+            </Sankey>
+        );
     }
 
     export default App;

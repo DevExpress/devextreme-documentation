@@ -61,20 +61,18 @@ Depending on whether the legend is oriented vertically or horizontally, the Char
 
     ##### React
 
-        <!-- tab: App.js -->
+        <!-- tab: App.tsx -->
         import React from 'react';
         import Chart, {
             Legend
         } from 'devextreme-react/chart';
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <Chart ... >
-                        <Legend orientation="vertical" /> {/* or "horizontal" */}
-                    </Chart>
-                );
-            }
+        function App() {
+            return (
+                <Chart ... >
+                    <Legend orientation="vertical" /> {/* or "horizontal" */}
+                </Chart>
+            );
         }
 
         export default App;
@@ -147,20 +145,18 @@ To distribute all legend items between several columns (in a vertically-oriented
 
     ##### React
 
-        <!-- tab: App.js -->
+        <!-- tab: App.tsx -->
         import React from 'react';
         import Chart, {
             Legend
         } from 'devextreme-react/chart';
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <Chart ... >
-                        <Legend columnCount={3}/> {/* or rowCount={2} */}
-                    </Chart>
-                );
-            }
+        function App() {
+            return (
+                <Chart ... >
+                    <Legend columnCount={3}/> {/* or rowCount={2} */}
+                </Chart>
+            );
         }
 
         export default App;
@@ -234,23 +230,21 @@ Regardless the legend orientation, you can adjust the empty space between column
 
     ##### React
 
-        <!-- tab: App.js -->
+        <!-- tab: App.tsx -->
         import React from 'react';
         import Chart, {
             Legend
         } from 'devextreme-react/chart';
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <Chart ... >
-                        <Legend
-                            columnItemSpacing={20}
-                            rowItemSpacing={30}
-                        />
-                    </Chart>
-                );
-            }
+        function App() {
+            return (
+                <Chart ... >
+                    <Legend
+                        columnItemSpacing={20}
+                        rowItemSpacing={30}
+                    />
+                </Chart>
+            );
         }
 
         export default App;

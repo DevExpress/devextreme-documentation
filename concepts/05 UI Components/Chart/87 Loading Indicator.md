@@ -144,31 +144,27 @@ If you need to show or hide the loading indicator at runtime, call the [showLoad
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Chart from 'devextreme-react/chart';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef } from 'react';
+    import Chart, { type ChartRef } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
+    function App() {
+        const chartRef = useRef<ChartRef>(null);
 
-            this.chartRef = React.createRef();
+        const showLoadingIndicator = useCallback(() => {
+            const chart = chartRef.current?.instance();
+            chart?.showLoadingIndicator();
+        }, []);
 
-            this.showLoadingIndicator = function() {
-                this.chartRef.current.instance().showLoadingIndicator();
-            }
+        const hideLoadingIndicator = useCallback(() => {
+            const chart = chartRef.current?.instance();
+            chart?.hideLoadingIndicator();
+        }, []);
 
-            this.hideLoadingIndicator = function() {
-                this.chartRef.current.instance().hideLoadingIndicator();
-            }
-        }
-
-        render() {
-            return (
-                <Chart ref={this.chartRef} ... >
-                </Chart>
-            );
-        }
+        return (
+            <Chart ref={chartRef} ... >
+            </Chart>
+        );
     }
 
     export default App;

@@ -94,29 +94,30 @@ You can handle these events with functions. If the handling functions are not go
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Funnel from 'devextreme-react/funnel';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
+    import Funnel, { type FunnelTypes } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel
-                    onExporting={this.onExporting}
-                    onExported={this.onExported}
-                    onFileSaving={this.onFileSaving}
-                />
-            );
-        }
-        onExporting (e) {
+    function App() {
+        const onExporting = useCallback((e: FunnelTypes.ExportingEvent) => {
             // Handler of the "exporting" event
-        };
-        onExported (e) {
+        }, []);
+
+        const onExported = useCallback((e: FunnelTypes.ExportedEvent) => {
             // Handler of the "exported" event
-        };
-        onFileSaving (e) {
+        }, []);
+
+        const onFileSaving = useCallback((e: FunnelTypes.FileSavingEvent) => {
             // Handler of the "fileSaving" event
-        }
+        }, []);
+
+        return (
+            <Funnel
+                onExporting={onExporting}
+                onExported={onExported}
+                onFileSaving={onFileSaving}
+            />
+        );
     }
 
     export default App;

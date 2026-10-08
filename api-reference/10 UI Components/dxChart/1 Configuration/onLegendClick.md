@@ -92,23 +92,21 @@ The [onSeriesClick](/api-reference/10%20UI%20Components/dxChart/1%20Configuratio
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
 
-    import Chart from 'devextreme-react/chart';
+    import Chart, { type ChartTypes } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ...
-                    onLegendClick={this.cancelSeriesClick}>
-                </Chart>
-            );
-        }
-
-        cancelSeriesClick (e) {
+    function App() {
+        const cancelSeriesClick = useCallback((e: ChartTypes.LegendClickEvent) => {
             e.cancel = true;
-        }
+        }, []);
+
+        return (
+            <Chart ...
+                onLegendClick={cancelSeriesClick}>
+            </Chart>
+        );
     }
 
     export default App;

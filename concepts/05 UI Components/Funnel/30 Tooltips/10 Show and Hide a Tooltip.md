@@ -83,29 +83,29 @@ Each funnel item allows you to show its tooltip programmatically by calling the 
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Funnel from 'devextreme-react/funnel';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
+    import Funnel, { type FunnelTypes } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel
-                    onItemClick={this.onItemClick}
-                    onHoverChanged={this.onHoverChanged}
-                />
-            );
-        }
+    function App() {
         // Shows the tooltip only when a user clicks a funnel item
-        onItemClick (e) {
+        const onItemClick = useCallback((e: FunnelTypes.ItemClickEvent) => {
             e.item.showTooltip();
-        },
+        }, []);
+
         // Hides the tooltip once the user moves the pointer away from the funnel item
-        onHoverChanged (e) {
+        const onHoverChanged = useCallback((e: FunnelTypes.HoverChangedEvent) => {
             if (!e.item.isHovered()) {
                 e.component.hideTooltip();
             }
-        }
+        }, []);
+
+        return (
+            <Funnel
+                onItemClick={onItemClick}
+                onHoverChanged={onHoverChanged}
+            />
+        );
     }
 
     export default App;

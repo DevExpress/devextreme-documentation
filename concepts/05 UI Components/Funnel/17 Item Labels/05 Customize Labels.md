@@ -69,21 +69,20 @@ If you need to change the text displayed by funnel items, declare the [customize
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
-    import Funnel, { Label } from 'devextreme-react/funnel';
+    import Funnel, { Label, type FunnelTypes } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel ... >
-                    <Label customizeText={this.customizeText} />
-                </Funnel>
-            );
-        }
-        customizeText(itemInfo) {
-            return `${itemInfo.item.argument}: ${itemInfo.value}`;
-        }
+    function customizeText(itemInfo: { item?: FunnelTypes.Item; value?: number }) {
+        return `${itemInfo.item?.argument}: ${itemInfo.value}`;
+    }
+
+    function App() {
+        return (
+            <Funnel ... >
+                <Label customizeText={customizeText} />
+            </Funnel>
+        );
     }
 
     export default App;

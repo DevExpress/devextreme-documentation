@@ -1,6 +1,6 @@
 ---
 id: dxChart.Options.crosshair.dashStyle
-type: Enums.DashStyle
+type: DashStyle
 default: 'solid'
 ---
 ---

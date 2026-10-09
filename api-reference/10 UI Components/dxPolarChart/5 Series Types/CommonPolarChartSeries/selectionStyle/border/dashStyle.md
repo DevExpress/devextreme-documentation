@@ -1,6 +1,6 @@
 ---
 id: dxPolarChartSeriesTypes.CommonPolarChartSeries.selectionStyle.border.dashStyle
-type: Enums.DashStyle | undefined
+type: DashStyle | undefined
 default: undefined
 ---
 ---

@@ -100,3 +100,75 @@ You can configure default formats for specific locales. Assign an object with ke
 
 ---
 
+You can also specify locale-specific formats and the `default` format as [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects. These objects can include the [locale](/Documentation/ApiReference/Common/Object_Structures/Format/#locale) field. Components use this locale in the following scenarios:
+
+- When a component uses the global **numberFormat**
+- When a component format does not specify **locale**
+
+This locale also defines decimal and group separators in [custom format strings](/Documentation/Guide/Common/Localization_and_Globalization/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String). To apply another locale to component formats, specify **locale** in these formats.
+
+The following code specifies the *"de-DE"* locale for the global **numberFormat**:
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    DevExpress.config({
+        numberFormat: {
+            default: {
+                type: 'fixedPoint',
+                precision: 2,
+                locale: 'de-DE',
+            },
+        }
+    });
+
+##### Angular
+
+    <!-- tab: app.component.ts -->
+    import config from "devextreme/core/config";
+
+    config({
+        numberFormat: {
+            default: {
+                type: 'fixedPoint',
+                precision: 2,
+                locale: 'de-DE',
+            },
+        }
+    });
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    import config from "devextreme/core/config";
+
+    config({
+        numberFormat: {
+            default: {
+                type: 'fixedPoint',
+                precision: 2,
+                locale: 'de-DE',
+            },
+        }
+    });
+
+##### React
+
+    <!-- tab: App.tsx -->
+    import config from "devextreme/core/config";
+
+    config({
+        numberFormat: {
+            default: {
+                type: 'fixedPoint',
+                precision: 2,
+                locale: 'de-DE',
+            },
+        }
+    });
+
+---
+
+[note] Assign [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects to the `default` key or specific locale keys instead of declaring format options directly inside **numberFormat**.

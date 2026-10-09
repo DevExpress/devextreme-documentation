@@ -32,7 +32,8 @@ Allows you to configure the format. Can have one of the following structures:
         format: {
             type: String, // one of the predefined formats
             precision: Number, // the precision of values
-            currency: String // a specific 3-letter code for the "currency" format
+            currency: String, // a specific 3-letter code for the "currency" format
+            locale: String // the locale in which to format values, for example, "de-DE"
         }
 
     or
@@ -50,6 +51,11 @@ Allows you to configure the format. Can have one of the following structures:
         format: { year: "2-digit", month: "narrow", day: "2-digit" }
         === or ===
         format: { style: "currency", currency: "EUR", useGrouping: true }
+
+    Add the [locale](/Documentation/ApiReference/Common/Object_Structures/Format/#locale) field to apply Intl options in a specific locale:
+
+        <!-- tab: Intl -->
+        format: { style: "currency", currency: "EUR", locale: "de-DE" }
 
     If you [use Globalize](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/08%20Using%20Globalize.md '/Documentation/Guide/Common/Localization_and_Globalization/Value_Formatting/#Using_Globalize'), you can use the fields that the <a href="https://github.com/jquery/globalize/blob/master/doc/api/number/number-formatter.md" target="_blank">numberFormatter</a>, <a href="https://github.com/jquery/globalize/blob/master/doc/api/currency/currency-formatter.md" target="_blank">currencyFormatter</a>, and <a href="https://github.com/jquery/globalize/blob/master/doc/api/date/date-formatter.md" target="_blank">dateFormatter</a> accept instead of the fields described in this section. For example, you can use skeletons to format dates. Note that this approach can require additional <a href="https://github.com/jquery/globalize/blob/master/README.md#2-cldr-content" target="_blank">CLDR modules</a> not shipped with the DevExtreme package.
 

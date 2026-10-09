@@ -12,5 +12,7 @@ A Promise that is resolved after the route is removed.
 The [Route](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/routes '/Documentation/ApiReference/UI_Components/dxMap/Configuration/routes/') object(s) or an index.
 
 ---
+You cannot pass an OpenLayers Feature to this method (when [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider) is *"osm"*).
+
 #####See Also#####
 #include common-link-callmethods

@@ -33,7 +33,7 @@
 </tr>
 <tr>
 <td>PivotGrid</td>
-<td><b>headerFilter.</b><a href="https://js.devexpress.com/Documentation/26_1/ApiReference/UI_Components/dxPivotGrid/Configuration/headerFilter/#allowSearch">allowSearch</a><br><b>headerFilter.</b><a href="https://js.devexpress.com/Documentation/26_1/ApiReference/UI_Components/dxPivotGrid/Configuration/headerFilter/#searchTimeout">searchTimeout</a></td>
+<td><b>headerFilter.</b><a href="https://js.devexpress.com/Documentation/26_1/ApiReference/UI_Components/dxPivotGrid/Configuration/headerFilter/#allowSearch">allowSearch</a><br><b>headerFilter.</b><a href="https://js.devexpress.com/Documentation/26_1/ApiReference/UI_Components/dxPivotGrid/Configuration/headerFilter/#searchTimeout">searchTimeout</a><br><b>loadPanel.</b><a href="https://js.devexpress.com/Documentation/26_1/ApiReference/UI_Components/dxPivotGrid/Configuration/loadPanel/#indicatorSrc">indicatorSrc</a></td>
 </tr>
 <tr>
 <td>PivotGridFieldChooser</td>

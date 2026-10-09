@@ -16161,6 +16161,9 @@
       "react": "LoadPanel",
       "vue": "DxLoadPanel"
     },
+    "dxPivotGridOptions.loadPanel.indicatorOptions": {
+      "vue": "indicator-options"
+    },
     "dxPivotGridOptions.loadPanel.indicatorSrc": {
       "vue": "indicator-src"
     },

@@ -4,7 +4,7 @@ uid: ui/map:MarkerAddedEvent.originalMarker
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The original marker that the current map provider uses (unavailable if **provider** is *"googleStatic"*).
 
 ---
-<!-- Description goes here -->
+If [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider) is *"osm"*, this field contains an OpenLayers [Overlay](https://openlayers.org/en/latest/apidoc/module-ol_Overlay-Overlay.html).

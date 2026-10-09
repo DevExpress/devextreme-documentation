@@ -7,7 +7,6 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An object that configures a tile source for the **providerConfig**.[tileServer](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#tileServer) property.
 
 ---
-<!-- Description goes here -->

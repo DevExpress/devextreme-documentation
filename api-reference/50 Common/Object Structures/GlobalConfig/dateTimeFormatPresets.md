@@ -74,4 +74,72 @@ You can configure overrides for specific locales. To do this, specify key-value 
 
 ---
 
+You can also define overrides as [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects. Assign these objects to specific locale keys or the `default` key. To apply an override in a specific locale, add the [locale](/Documentation/ApiReference/Common/Object_Structures/Format/#locale) field to the format object.
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    DevExpress.config({
+        dateTimeFormatPresets: {
+            dateTimeFormat: {
+                default: {
+                    type: 'longDateLongTime',
+                    locale: 'en-CA',
+                },
+            },
+        },
+    });
+
+##### Angular
+
+    <!-- tab: app.component.ts -->
+    import config from "devextreme/core/config";
+
+    config({
+        dateTimeFormatPresets: {
+            dateTimeFormat: {
+                default: {
+                    type: 'longDateLongTime',
+                    locale: 'en-CA',
+                },
+            },
+        },
+    });
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    import config from "devextreme/core/config";
+
+    config({
+        dateTimeFormatPresets: {
+            dateTimeFormat: {
+                default: {
+                    type: 'longDateLongTime',
+                    locale: 'en-CA',
+                },
+            },
+        },
+    });
+
+##### React
+
+    <!-- tab: App.tsx -->
+    import config from "devextreme/core/config";
+
+    config({
+        dateTimeFormatPresets: {
+            dateTimeFormat: {
+                default: {
+                    type: 'longDateLongTime',
+                    locale: 'en-CA',
+                },
+            },
+        },
+    });
+
+---
+
 [note] You cannot use **dateTimeFormatPresets** to override number formats.

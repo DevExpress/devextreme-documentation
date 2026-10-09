@@ -100,3 +100,74 @@ You can configure default formats for specific locales. Assign an object with ke
 
 ---
 
+You can also specify locale-specific formats and the `default` format as [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects. These objects can include the [locale](/Documentation/ApiReference/Common/Object_Structures/Format/#locale) field. Components use this locale in the following scenarios:
+
+- When a component uses the global **dateTimeFormat**
+- When a component format does not specify **locale** and matches the global **dateTimeFormat** or *"shortDateShortTime"*
+- When a component uses an Intl format that does not specify **locale** and includes at least one field from each group:
+    - Date: **year**, **month**, **day**, **weekday**
+    - Time: **hour**, **minute**, **second**
+
+If a component uses any other date-time format, such as *"longDateLongTime"*, it displays values in the [current application locale](/Documentation/ApiReference/Common/utils/localization/#locale). To apply another locale to component formats, specify **locale** in these formats.
+
+The following code specifies the *"de-DE"* locale for the global **dateTimeFormat**:
+
+---
+
+##### jQuery
+
+    <!-- tab: index.js -->
+    DevExpress.config({
+        dateTimeFormat: {
+            default: {
+                type: 'shortDateShortTime',
+                locale: 'de-DE',
+            },
+        }
+    });
+
+##### Angular
+
+    <!-- tab: app.component.ts -->
+    import config from "devextreme/core/config";
+
+    config({
+        dateTimeFormat: {
+            default: {
+                type: 'shortDateShortTime',
+                locale: 'de-DE',
+            },
+        }
+    });
+
+##### Vue
+
+    <!-- tab: App.vue -->
+    import config from "devextreme/core/config";
+
+    config({
+        dateTimeFormat: {
+            default: {
+                type: 'shortDateShortTime',
+                locale: 'de-DE',
+            },
+        }
+    });
+
+##### React
+
+    <!-- tab: App.tsx -->
+    import config from "devextreme/core/config";
+
+    config({
+        dateTimeFormat: {
+            default: {
+                type: 'shortDateShortTime',
+                locale: 'de-DE',
+            },
+        }
+    });
+
+---
+
+[note] Assign [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects to the `default` key or specific locale keys instead of declaring format options directly inside **dateTimeFormat**.

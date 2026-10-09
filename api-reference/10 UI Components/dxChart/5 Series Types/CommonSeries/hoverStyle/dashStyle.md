@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.hoverStyle.dashStyle
-type: Enums.DashStyle
+type: DashStyle
 default: 'solid'
 ---
 ---

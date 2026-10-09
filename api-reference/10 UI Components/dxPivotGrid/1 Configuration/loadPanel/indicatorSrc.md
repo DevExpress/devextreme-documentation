@@ -2,6 +2,7 @@
 id: dxPivotGrid.Options.loadPanel.indicatorSrc
 type: String
 default: ''
+dep: dxPivotGrid.Options.loadPanel.indicatorOptions
 ---
 ---
 ##### shortDescription

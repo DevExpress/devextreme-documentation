@@ -6398,7 +6398,9 @@
       "vue": "corner-radius"
     },
     "baseLegend.border.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "baseLegend.columnCount": {
       "vue": "column-count"
@@ -6577,7 +6579,9 @@
       "vue": "corner-radius"
     },
     "baseWidgetAnnotationConfig.border.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "baseWidgetAnnotationConfig.font": {
       "angular": "dxo-font",
@@ -6733,7 +6737,9 @@
       "vue": "DxBorder"
     },
     "baseWidgetOptions.tooltip.border.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "baseWidgetOptions.tooltip.cornerRadius": {
       "vue": "corner-radius"
@@ -7443,6 +7449,11 @@
     },
     "customStoreOptions.useDefaultSearch": {
       "vue": "use-default-search"
+    },
+    "dashStyle": {
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dataChange": {
       "angular": "dxo-data-change",
@@ -8907,7 +8918,9 @@
       "vue": "DxConstantLineStyle"
     },
     "dxChartOptions.commonAxisSettings.constantLineStyle.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxChartOptions.commonAxisSettings.constantLineStyle.label": {
       "angular": "dxo-label",
@@ -9053,7 +9066,9 @@
       "vue": "DxBorder"
     },
     "dxChartOptions.commonPaneSettings.border.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxChartOptions.commonSeriesSettings": {
       "angular": "dxo-common-series-settings",
@@ -9069,7 +9084,9 @@
       "vue": "DxCrosshair"
     },
     "dxChartOptions.crosshair.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxChartOptions.crosshair.horizontalLine": {
       "angular": "dxo-horizontal-line",
@@ -9077,7 +9094,9 @@
       "vue": "DxHorizontalLine"
     },
     "dxChartOptions.crosshair.horizontalLine.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxChartOptions.crosshair.horizontalLine.label": {
       "angular": "dxo-label",
@@ -9127,7 +9146,9 @@
       "vue": "DxVerticalLine"
     },
     "dxChartOptions.crosshair.verticalLine.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxChartOptions.crosshair.verticalLine.label": {
       "angular": "dxo-label",
@@ -9617,7 +9638,9 @@
       "vue": "DxBorder"
     },
     "dxChartSeriesTypes.CommonSeries.border.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxChartSeriesTypes.CommonSeries.closeValueField": {
       "vue": "close-value-field"
@@ -9631,7 +9654,9 @@
       "vue": "corner-radius"
     },
     "dxChartSeriesTypes.CommonSeries.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxChartSeriesTypes.CommonSeries.highValueField": {
       "vue": "high-value-field"
@@ -9650,7 +9675,9 @@
       "vue": "DxBorder"
     },
     "dxChartSeriesTypes.CommonSeries.hoverStyle.border.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxChartSeriesTypes.CommonSeries.hoverStyle.color": {
       "angular": "dxo-color",
@@ -9658,7 +9685,9 @@
       "vue": "DxColor"
     },
     "dxChartSeriesTypes.CommonSeries.hoverStyle.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxChartSeriesTypes.CommonSeries.hoverStyle.hatching": {
       "angular": "dxo-hatching",
@@ -9690,7 +9719,9 @@
       "vue": "DxBorder"
     },
     "dxChartSeriesTypes.CommonSeries.label.border.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxChartSeriesTypes.CommonSeries.label.connector": {
       "angular": "dxo-connector",
@@ -9851,7 +9882,9 @@
       "vue": "DxBorder"
     },
     "dxChartSeriesTypes.CommonSeries.selectionStyle.border.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxChartSeriesTypes.CommonSeries.selectionStyle.color": {
       "angular": "dxo-color",
@@ -9859,7 +9892,9 @@
       "vue": "DxColor"
     },
     "dxChartSeriesTypes.CommonSeries.selectionStyle.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxChartSeriesTypes.CommonSeries.selectionStyle.hatching": {
       "angular": "dxo-hatching",
@@ -13509,7 +13544,9 @@
       "vue": "DxBorder"
     },
     "dxFunnelOptions.label.border.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxFunnelOptions.label.connector": {
       "angular": "dxo-connector",
@@ -15720,7 +15757,9 @@
       "vue": "DxBorder"
     },
     "dxPieChartSeriesTypes.CommonPieChartSeries.border.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxPieChartSeriesTypes.CommonPieChartSeries.color": {
       "angular": "dxo-color",
@@ -15741,7 +15780,9 @@
       "vue": "DxBorder"
     },
     "dxPieChartSeriesTypes.CommonPieChartSeries.hoverStyle.border.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxPieChartSeriesTypes.CommonPieChartSeries.hoverStyle.color": {
       "angular": "dxo-color",
@@ -15772,7 +15813,9 @@
       "vue": "DxBorder"
     },
     "dxPieChartSeriesTypes.CommonPieChartSeries.label.border.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxPieChartSeriesTypes.CommonPieChartSeries.label.connector": {
       "angular": "dxo-connector",
@@ -15827,7 +15870,9 @@
       "vue": "DxBorder"
     },
     "dxPieChartSeriesTypes.CommonPieChartSeries.selectionStyle.border.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxPieChartSeriesTypes.CommonPieChartSeries.selectionStyle.color": {
       "angular": "dxo-color",
@@ -16397,7 +16442,9 @@
       "vue": "DxConstantLineStyle"
     },
     "dxPolarChartOptions.commonAxisSettings.constantLineStyle.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxPolarChartOptions.commonAxisSettings.constantLineStyle.label": {
       "angular": "dxo-label",
@@ -16760,7 +16807,9 @@
       "vue": "DxBorder"
     },
     "dxPolarChartSeriesTypes.CommonPolarChartSeries.border.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxPolarChartSeriesTypes.CommonPolarChartSeries.color": {
       "angular": "dxo-color",
@@ -16768,7 +16817,9 @@
       "vue": "DxColor"
     },
     "dxPolarChartSeriesTypes.CommonPolarChartSeries.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxPolarChartSeriesTypes.CommonPolarChartSeries.hoverMode": {
       "vue": "hover-mode"
@@ -16784,7 +16835,9 @@
       "vue": "DxBorder"
     },
     "dxPolarChartSeriesTypes.CommonPolarChartSeries.hoverStyle.border.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxPolarChartSeriesTypes.CommonPolarChartSeries.hoverStyle.color": {
       "angular": "dxo-color",
@@ -16792,7 +16845,9 @@
       "vue": "DxColor"
     },
     "dxPolarChartSeriesTypes.CommonPolarChartSeries.hoverStyle.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxPolarChartSeriesTypes.CommonPolarChartSeries.hoverStyle.hatching": {
       "angular": "dxo-hatching",
@@ -16821,7 +16876,9 @@
       "vue": "DxBorder"
     },
     "dxPolarChartSeriesTypes.CommonPolarChartSeries.label.border.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxPolarChartSeriesTypes.CommonPolarChartSeries.label.connector": {
       "angular": "dxo-connector",
@@ -16926,7 +16983,9 @@
       "vue": "DxBorder"
     },
     "dxPolarChartSeriesTypes.CommonPolarChartSeries.selectionStyle.border.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxPolarChartSeriesTypes.CommonPolarChartSeries.selectionStyle.color": {
       "angular": "dxo-color",
@@ -16934,7 +16993,9 @@
       "vue": "DxColor"
     },
     "dxPolarChartSeriesTypes.CommonPolarChartSeries.selectionStyle.dashStyle": {
-      "vue": "dash-style"
+      "angular": "dxo-dash-style",
+      "react": "DashStyle",
+      "vue": "DxDashStyle"
     },
     "dxPolarChartSeriesTypes.CommonPolarChartSeries.selectionStyle.hatching": {
       "angular": "dxo-hatching",
@@ -21210,9 +21271,6 @@
     },
     "enums.CrosswiseDistribution": {
       "vue": "crosswise-distribution"
-    },
-    "enums.DashStyle": {
-      "vue": "dash-style"
     },
     "enums.DataChangeType": {
       "vue": "data-change-type"

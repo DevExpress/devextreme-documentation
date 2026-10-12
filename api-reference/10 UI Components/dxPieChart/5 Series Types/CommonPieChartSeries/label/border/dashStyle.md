@@ -1,6 +1,6 @@
 ---
 id: dxPieChartSeriesTypes.CommonPieChartSeries.label.border.dashStyle
-type: Enums.DashStyle | undefined
+type: DashStyle | undefined
 default: 'solid'
 ---
 ---

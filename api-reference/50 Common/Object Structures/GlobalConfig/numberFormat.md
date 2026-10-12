@@ -172,3 +172,6 @@ The following code specifies the *"de-DE"* locale for the global **numberFormat*
 ---
 
 [note] Assign [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects to the `default` key or specific locale keys instead of declaring format options directly inside **numberFormat**.
+
+#####See Also#####
+- [Use Different Locales for Value Formats and UI Text](/Documentation/Guide/Common/Localization_and_Globalization/Value_Formatting/#Use_Different_Locales_for_Value_Formats_and_UI_Text)

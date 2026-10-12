@@ -74,7 +74,7 @@ You can configure overrides for specific locales. To do this, specify key-value 
 
 ---
 
-You can also define overrides as [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects. Assign these objects to specific locale keys or the `default` key. To apply an override in a specific locale, add the [locale](/Documentation/ApiReference/Common/Object_Structures/Format/#locale) field to the format object.
+You can also define overrides as [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects. Assign these objects to specific locale keys or the `default` key. To display values in a specific locale, add the [locale](/Documentation/ApiReference/Common/Object_Structures/Format/#locale) field to the format object.
 
 ---
 
@@ -83,7 +83,7 @@ You can also define overrides as [format](/Documentation/ApiReference/Common/Obj
     <!-- tab: index.js -->
     DevExpress.config({
         dateTimeFormatPresets: {
-            dateTimeFormat: {
+            longDateLongTime: {
                 default: {
                     type: 'longDateLongTime',
                     locale: 'en-CA',
@@ -99,7 +99,7 @@ You can also define overrides as [format](/Documentation/ApiReference/Common/Obj
 
     config({
         dateTimeFormatPresets: {
-            dateTimeFormat: {
+            longDateLongTime: {
                 default: {
                     type: 'longDateLongTime',
                     locale: 'en-CA',
@@ -115,7 +115,7 @@ You can also define overrides as [format](/Documentation/ApiReference/Common/Obj
 
     config({
         dateTimeFormatPresets: {
-            dateTimeFormat: {
+            longDateLongTime: {
                 default: {
                     type: 'longDateLongTime',
                     locale: 'en-CA',
@@ -131,7 +131,7 @@ You can also define overrides as [format](/Documentation/ApiReference/Common/Obj
 
     config({
         dateTimeFormatPresets: {
-            dateTimeFormat: {
+            longDateLongTime: {
                 default: {
                     type: 'longDateLongTime',
                     locale: 'en-CA',

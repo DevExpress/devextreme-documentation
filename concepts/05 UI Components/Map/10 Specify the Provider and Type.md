@@ -1,71 +1,65 @@
-By default, the Map UI component uses **Google Maps** as a map provider. It can use **Azure Maps** or **Google Static Maps** instead. To change the provider, assign one of the values listed below to the [provider](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/provider.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider') property.
+The Map supports the following map providers:
+
+- Google Maps (default)
+- Azure Maps
+- Google Static Maps
+- OpenStreetMap (OSM)
+
+Use the [provider](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/provider.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider') property to select a provider:
 
 ---
 ##### jQuery
 
     <!--JavaScript-->
-    $(function() {
+    $(() => {
         $("#mapContainer").dxMap({
             center: { lat: 40.749825, lng: -73.987963 },
             zoom: 10,
-            provider: "google" // or "azure" | "googleStatic"
+            provider: "google" // or "azure" | "googleStatic" | "osm"
         });
     });
 
 ##### Angular
 
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-map
         [center]="{ lat: 40.749825, lng: -73.987963 }"
         [zoom]="10"
-        provider="google"> <!-- or "azure" | "googleStatic" -->
+        provider="google"> <!-- or "azure" | "googleStatic" | "osm" -->
     </dx-map>
 
-    <!--TypeScript-->
-    import { DxMapModule } from "devextreme-angular";
-    // ...
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import { DxMapModule } from 'devextreme-angular';
+
+    @Component({
+        // ...
+        standalone: true,
+        imports: [DxMapModule]
+    })
     export class AppComponent {
         // ...
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxMapModule
-        ],
-        // ...
-    })
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxMap
             :zoom="10"
             :center="centerCoordinates"
-            provider="google"/> <!-- or "azure" | "googleStatic" -->
+            provider="google"/> <!-- or "azure" | "googleStatic" | "osm" -->
     </template>
 
-    <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
+    <script setup>
     import { DxMap } from 'devextreme-vue/map';
 
-    export default {
-        components: {
-            DxMap
-        },
-        data() {
-            return {
-                centerCoordinates: { lat: 40.749825, lng: -73.987963 }
-            };
-        }
-    }
+    const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
     </script>
 
 ##### React
 
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
+    <!-- tab: App.tsx -->
     import { Map } from 'devextreme-react/map';
 
     const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
@@ -75,19 +69,22 @@ By default, the Map UI component uses **Google Maps** as a map provider. It can 
             <Map
                 defaultZoom={10}
                 defaultCenter={centerCoordinates}
-                provider="google"/> {/* or "azure" | "googleStatic" */}
+                provider="google" // or "azure" | "googleStatic" | "osm"
+            />
         );
     }
 
 ---
 
-When using maps, you should include an API key that authenticates your application. Specify this key using the [apiKey](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/apiKey '/Documentation/ApiReference/UI_Components/dxMap/Configuration/apiKey/') property. Note that this property can also accept an object with keys for every available provider. For more information on API keys, refer to the documentation of the specific map provider.
+If **provider** is *"osm"*, load [OpenLayers](https://openlayers.org/) before Map initialization and specify a tile source in **providerConfig**.[tileServer](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#tileServer).
+
+Google Maps, Azure Maps, and Google Static Maps require an API key to authenticate your application. To obtain a key, refer to your provider's documentation. Assign the key to the [apiKey](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/apiKey '/Documentation/ApiReference/UI_Components/dxMap/Configuration/apiKey/') property. If your application uses more than one of these providers, specify an object with a key for each provider:
 
 ---
 ##### jQuery
 
     <!--JavaScript-->
-    $(function() {
+    $(() => {
         $("#mapContainer").dxMap({
             center: { lat: 40.749825, lng: -73.987963 },
             zoom: 10,
@@ -102,78 +99,64 @@ When using maps, you should include an API key that authenticates your applicati
 
 ##### Angular
 
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-map
         [center]="{ lat: 40.749825, lng: -73.987963 }"
         [zoom]="10"
         provider="azure"
-        [apiKey]="authentificationKeys">
+        [apiKey]="apiKeys">
     </dx-map>
 
-    <!--TypeScript-->
-    import { DxMapModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import { DxMapModule } from 'devextreme-angular';
+
+    @Component({
         // ...
-        authentificationKeys = {
-            azure: "YOUR_AZURE_MAPS_API_KEY",
-            google: "YOUR_GOOGLE_MAPS_API_KEY",
-            googleStatic: "YOUR_GOOGLE_STATIC_MAPS_API_KEY"
-        }
-    }
-    @NgModule({
-        imports: [
-            // ...
-            DxMapModule
-        ],
-        // ...
+        standalone: true,
+        imports: [DxMapModule]
     })
+    export class AppComponent {
+        apiKeys = {
+            azure: 'YOUR_AZURE_MAPS_API_KEY',
+            google: 'YOUR_GOOGLE_MAPS_API_KEY',
+            googleStatic: 'YOUR_GOOGLE_STATIC_MAPS_API_KEY'
+        };
+    }
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxMap
             :zoom="10"
             :center="centerCoordinates"
             provider="azure"
-            :apiKey="authentificationKeys"
+            :api-key="apiKeys"
         />
     </template>
 
-    <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
+    <script setup>
     import { DxMap } from 'devextreme-vue/map';
 
-    export default {
-        components: {
-            DxMap
-        },
-        data() {
-            return {
-                centerCoordinates: { lat: 40.749825, lng: -73.987963 },
-                authentificationKeys: {
-                    azure: "YOUR_AZURE_MAPS_API_KEY",
-                    google: "YOUR_GOOGLE_MAPS_API_KEY",
-                    googleStatic: "YOUR_GOOGLE_STATIC_MAPS_API_KEY"
-                }
-            };
-        }
-    }
+    const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
+    const apiKeys = {
+        azure: 'YOUR_AZURE_MAPS_API_KEY',
+        google: 'YOUR_GOOGLE_MAPS_API_KEY',
+        googleStatic: 'YOUR_GOOGLE_STATIC_MAPS_API_KEY'
+    };
     </script>
 
 ##### React
 
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
+    <!-- tab: App.tsx -->
     import { Map } from 'devextreme-react/map';
 
     const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
-    const authentificationKeys = {
-        azure: "YOUR_AZURE_MAPS_API_KEY",
-        google: "YOUR_GOOGLE_MAPS_API_KEY",
-        googleStatic: "YOUR_GOOGLE_STATIC_MAPS_API_KEY"
+    const apiKeys = {
+        azure: 'YOUR_AZURE_MAPS_API_KEY',
+        google: 'YOUR_GOOGLE_MAPS_API_KEY',
+        googleStatic: 'YOUR_GOOGLE_STATIC_MAPS_API_KEY'
     };
 
     export default function App() {
@@ -182,21 +165,22 @@ When using maps, you should include an API key that authenticates your applicati
                 defaultZoom={10}
                 defaultCenter={centerCoordinates}
                 provider="azure"
-                apiKey={authentificationKeys}
+                apiKey={apiKeys}
             />
         );
     }
 
 ---
 
-The Map UI component supports the following map types: *"hybrid"*, *"satellite"* and *"roadmap"* (default). To change the map type, use the [type](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#type') property. **Azure Maps** names map types differently. In the Map UI component, *satellite_road_labels* and *road* become *"hybrid"* and *"roadmap"*.
+If **provider** is *"osm"*, the Map ignores **apiKey**.
+
+The Map supports the following map types: *"roadmap"* (default), *"satellite"*, and *"hybrid"*. Use the [type](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#type') property to change the map type:
 
 ---
 ##### jQuery
 
-
     <!--JavaScript-->
-    $(function() {
+    $(() => {
         $("#mapContainer").dxMap({
             center: { lat: 40.749825, lng: -73.987963 },
             zoom: 10,
@@ -207,7 +191,7 @@ The Map UI component supports the following map types: *"hybrid"*, *"satellite"*
 
 ##### Angular
 
-    <!--HTML-->
+    <!-- tab: app.component.html -->
     <dx-map
         [center]="{ lat: 40.749825, lng: -73.987963 }"
         [zoom]="10"
@@ -215,22 +199,22 @@ The Map UI component supports the following map types: *"hybrid"*, *"satellite"*
         type="satellite">
     </dx-map>
 
-    <!--TypeScript-->
-    import { DxMapModule } from "devextreme-angular";
-    // ...
+    <!-- tab: app.component.ts -->
+    import { Component } from '@angular/core';
+    import { DxMapModule } from 'devextreme-angular';
+
+    @Component({
+        // ...
+        standalone: true,
+        imports: [DxMapModule]
+    })
     export class AppComponent {
         // ...
     }
-    @NgModule({
-        imports: [
-            // ...
-            DxMapModule
-        ],
-        // ...
-    })
 
 ##### Vue
 
+    <!-- tab: App.vue -->
     <template>
         <DxMap
             :zoom="10"
@@ -240,28 +224,15 @@ The Map UI component supports the following map types: *"hybrid"*, *"satellite"*
         />
     </template>
 
-    <script>
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
+    <script setup>
     import { DxMap } from 'devextreme-vue/map';
 
-    export default {
-        components: {
-            DxMap
-        },
-        data() {
-            return {
-                centerCoordinates: { lat: 40.749825, lng: -73.987963 }
-            };
-        }
-    }
+    const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
     </script>
 
 ##### React
 
-    import React from 'react';
-    import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
+    <!-- tab: App.tsx -->
     import { Map } from 'devextreme-react/map';
 
     const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
@@ -278,6 +249,10 @@ The Map UI component supports the following map types: *"hybrid"*, *"satellite"*
     }
 
 ---
+
+If **provider** is *"azure"*, the *"roadmap"* and *"hybrid"* types correspond to the Azure Maps *road* and *satellite_road_labels* styles.
+
+If **provider** is *"osm"*, assign a function to **providerConfig**.[tileServer](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#tileServer) to display different tiles for each map type. A URL template or an [OsmTileServerConfig](/Documentation/ApiReference/UI_Components/dxMap/Types/OsmTileServerConfig/) object displays the same tiles for all types.
 
 #####See Also#####
 - [Map - Zoom and Center the Map](/concepts/05%20UI%20Components/Map/05%20Zoom%20and%20Center%20the%20Map.md '/Documentation/Guide/UI_Components/Map/Zoom_and_Center_the_Map/')

@@ -23,9 +23,12 @@ Use the [provider](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/p
 
     <!-- tab: app.component.html -->
     <dx-map
-        [center]="{ lat: 40.749825, lng: -73.987963 }"
         [zoom]="10"
         provider="google"> <!-- or "azure" | "googleStatic" | "osm" -->
+        <dxo-map-center
+            [lat]="40.749825"
+            [lng]="-73.987963">
+        </dxo-map-center>
     </dx-map>
 
     <!-- tab: app.component.ts -->
@@ -47,14 +50,16 @@ Use the [provider](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/p
     <template>
         <DxMap
             :zoom="10"
-            :center="centerCoordinates"
-            provider="google"/> <!-- or "azure" | "googleStatic" | "osm" -->
+            provider="google"> <!-- or "azure" | "googleStatic" | "osm" -->
+            <DxCenter
+                :lat="40.749825"
+                :lng="-73.987963"
+            />
+        </DxMap>
     </template>
 
     <script setup>
-    import { DxMap } from 'devextreme-vue/map';
-
-    const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
+    import { DxMap, DxCenter } from 'devextreme-vue/map';
     </script>
 
 ##### React
@@ -101,10 +106,17 @@ Google Maps, Azure Maps, and Google Static Maps require an API key to authentica
 
     <!-- tab: app.component.html -->
     <dx-map
-        [center]="{ lat: 40.749825, lng: -73.987963 }"
         [zoom]="10"
-        provider="azure"
-        [apiKey]="apiKeys">
+        provider="azure">
+        <dxo-map-center
+            [lat]="40.749825"
+            [lng]="-73.987963">
+        </dxo-map-center>
+        <dxo-map-api-key
+            azure="YOUR_AZURE_MAPS_API_KEY"
+            google="YOUR_GOOGLE_MAPS_API_KEY"
+            googleStatic="YOUR_GOOGLE_STATIC_MAPS_API_KEY">
+        </dxo-map-api-key>
     </dx-map>
 
     <!-- tab: app.component.ts -->
@@ -117,11 +129,7 @@ Google Maps, Azure Maps, and Google Static Maps require an API key to authentica
         imports: [DxMapModule]
     })
     export class AppComponent {
-        apiKeys = {
-            azure: 'YOUR_AZURE_MAPS_API_KEY',
-            google: 'YOUR_GOOGLE_MAPS_API_KEY',
-            googleStatic: 'YOUR_GOOGLE_STATIC_MAPS_API_KEY'
-        };
+        // ...
     }
 
 ##### Vue
@@ -130,43 +138,42 @@ Google Maps, Azure Maps, and Google Static Maps require an API key to authentica
     <template>
         <DxMap
             :zoom="10"
-            :center="centerCoordinates"
-            provider="azure"
-            :api-key="apiKeys"
-        />
+            provider="azure">
+            <DxCenter
+                :lat="40.749825"
+                :lng="-73.987963"
+            />
+            <DxApiKey
+                azure="YOUR_AZURE_MAPS_API_KEY"
+                google="YOUR_GOOGLE_MAPS_API_KEY"
+                google-static="YOUR_GOOGLE_STATIC_MAPS_API_KEY"
+            />
+        </DxMap>
     </template>
 
     <script setup>
-    import { DxMap } from 'devextreme-vue/map';
-
-    const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
-    const apiKeys = {
-        azure: 'YOUR_AZURE_MAPS_API_KEY',
-        google: 'YOUR_GOOGLE_MAPS_API_KEY',
-        googleStatic: 'YOUR_GOOGLE_STATIC_MAPS_API_KEY'
-    };
+    import { DxMap, DxCenter, DxApiKey } from 'devextreme-vue/map';
     </script>
 
 ##### React
 
     <!-- tab: App.tsx -->
-    import { Map } from 'devextreme-react/map';
+    import { Map, ApiKey } from 'devextreme-react/map';
 
     const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
-    const apiKeys = {
-        azure: 'YOUR_AZURE_MAPS_API_KEY',
-        google: 'YOUR_GOOGLE_MAPS_API_KEY',
-        googleStatic: 'YOUR_GOOGLE_STATIC_MAPS_API_KEY'
-    };
 
     export default function App() {
         return (
             <Map
                 defaultZoom={10}
                 defaultCenter={centerCoordinates}
-                provider="azure"
-                apiKey={apiKeys}
-            />
+                provider="azure">
+                <ApiKey
+                    azure="YOUR_AZURE_MAPS_API_KEY"
+                    google="YOUR_GOOGLE_MAPS_API_KEY"
+                    googleStatic="YOUR_GOOGLE_STATIC_MAPS_API_KEY"
+                />
+            </Map>
         );
     }
 
@@ -193,10 +200,13 @@ The Map supports the following map types: *"roadmap"* (default), *"satellite"*, 
 
     <!-- tab: app.component.html -->
     <dx-map
-        [center]="{ lat: 40.749825, lng: -73.987963 }"
         [zoom]="10"
         provider="azure"
         type="satellite">
+        <dxo-map-center
+            [lat]="40.749825"
+            [lng]="-73.987963">
+        </dxo-map-center>
     </dx-map>
 
     <!-- tab: app.component.ts -->
@@ -218,16 +228,17 @@ The Map supports the following map types: *"roadmap"* (default), *"satellite"*, 
     <template>
         <DxMap
             :zoom="10"
-            :center="centerCoordinates"
             provider="azure"
-            type="satellite"
-        />
+            type="satellite">
+            <DxCenter
+                :lat="40.749825"
+                :lng="-73.987963"
+            />
+        </DxMap>
     </template>
 
     <script setup>
-    import { DxMap } from 'devextreme-vue/map';
-
-    const centerCoordinates = { lat: 40.749825, lng: -73.987963 };
+    import { DxMap, DxCenter } from 'devextreme-vue/map';
     </script>
 
 ##### React

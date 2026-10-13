@@ -29,6 +29,6 @@ To integrate DevExtreme [Map](/Documentation/ApiReference/UI_Components/dxMap/) 
 
 To integrate DevExtreme Map with an OSM [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider), configure CSP directives and specify origins for the following resources:
 
-- `img-src`: Tile servers (including **providerConfig**.[subdomains](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#calculateLocation)) and custom marker images
+- `img-src`: Tile servers (including **OsmTileServerConfig**.[subdomains](/Documentation/ApiReference/UI_Components/dxMap/Types/OsmTileServerConfig/#subdomains)) and custom marker images
 - `connect-src`: Geocoding and routing services that **providerConfig**.[calculateLocation](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#calculateLocation) and **providerConfig**.[calculateRoute](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#calculateRoute) call
 - `script-src` and `style-src`: Origins of OpenLayers library sources (if you load the library from another origin)

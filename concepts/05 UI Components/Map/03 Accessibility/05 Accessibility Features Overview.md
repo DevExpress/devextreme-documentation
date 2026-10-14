@@ -11,7 +11,7 @@
     </tr>
     <tr>
         <td>Keyboard Navigation Support</td>
-        <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-error"/></svg></td>
+        <td class="dx-table-row__center"><svg width="18" height="18"><use xlink:href="#svg-icon-warning"/></svg></td>
     </tr>
     <tr>
         <td>Screen Reader Support</td>
@@ -53,3 +53,4 @@
    <li style="display: flex; align-items: center;"><svg width="18" height="18" style="padding: 2px 4px 0px 0px;"><use xlink:href="#svg-icon-error"/></svg> - Accessibility requirement is not supported</li>
 </ul>
 
+[note] Keyboard navigation support depends on the Map [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider).

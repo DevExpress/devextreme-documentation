@@ -81,7 +81,10 @@ Use the [provider](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/p
 
 ---
 
-If **provider** is *"osm"*, load [OpenLayers](https://openlayers.org/) before Map initialization and specify a tile source in **providerConfig**.[tileServer](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#tileServer).
+If **provider** is *"osm"*, specify a tile source in **providerConfig**.[tileServer](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#tileServer) and configure [OpenLayers](https://openlayers.org/) as follows:
+
+- **Modular Applications**: Install the [ol](https://www.npmjs.com/package/ol) package and import [devextreme/ui/map/openlayers](/Documentation/Guide/Common/Modularity/DevExtreme_Modules_Structure/#ui/map/openlayers) before Map initialization.
+- **Non-modular Applications**: Load OpenLayers (`ol.js` and `ol.css`) before Map initialization.
 
 Google Maps, Azure Maps, and Google Static Maps require an API key to authenticate your application. To obtain a key, refer to your provider's documentation. Assign the key to the [apiKey](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/apiKey '/Documentation/ApiReference/UI_Components/dxMap/Configuration/apiKey/') property. If your application uses more than one of these providers, specify an object with a key for each provider:
 

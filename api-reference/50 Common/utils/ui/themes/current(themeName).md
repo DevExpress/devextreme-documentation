@@ -15,9 +15,9 @@ The theme name.
     <link rel="dx-theme" data-theme="fluent-next.blue.dark" href="css/dx.fluent-next.blue.dark.css" data-active="true">
     <link rel="dx-theme" data-theme="fluent-next.blue.light" href="css/dx.fluent-next.blue.light.css" data-active="false">
 
-Pass a `data-theme` attribute value to **current(themeName)** to switch the active theme. The **current(themeName)** method updates DevExtreme styles automatically. To ensure that specific components apply the new styles, call their **repaint()** methods (if available) in a [ready(callback)](/Documentation/ApiReference/Common/utils/ui/themes/#readycallback) callback function. If you use [container-specific theme modes](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes) with a Fluent Next theme, call [refreshMode()](/Documentation/ApiReference/Common/utils/ui/themes/#refreshMode) to apply updated modes to open overlays.
+Pass a `data-theme` attribute value to **current(themeName)** to switch the active theme. This method updates DevExtreme styles automatically. To ensure that specific components apply the new styles, call their **repaint()** methods (if available) in a callback function passed to [ready(callback)](/Documentation/ApiReference/Common/utils/ui/themes/#readycallback). If you use [container-specific theme modes](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes) with a Fluent Next theme, call [refreshMode()](/Documentation/ApiReference/Common/utils/ui/themes/#refreshMode) to apply updated modes to open overlays.
 
-Callback functions passed to **ready(callback)** run only once, so register a callback before each **current(themeName)** call:
+Callback functions passed to **ready(callback)** run only once, so call **ready(callback)** before each **current(themeName)** call:
 
 ---
 ##### jQuery  

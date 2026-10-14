@@ -17,7 +17,7 @@ If a theme mode container includes DevExtreme components that display overlays, 
 
 - **refreshMode()** preserves focus in open overlays.
 - Closed overlays apply the current theme mode when they open. **refreshMode()** does nothing if no overlays are open.
-- To update open overlays after you switch between Fluent Next stylesheets, call **refreshMode()** in a [ready(callback)](/Documentation/ApiReference/Common/utils/ui/themes/#readycallback) callback function. Callback functions passed to **ready(callback)** run only once, so register a callback before each **current(themeName)** call.
+- Call **refreshMode()** in a callback function passed to [ready(callback)](/Documentation/ApiReference/Common/utils/ui/themes/#readycallback) to update open overlays after you switch between Fluent Next stylesheets. Callback functions passed to **ready(callback)** run only once, so call **ready(callback)** before each **current(themeName)** call.
 
 [/note]
 

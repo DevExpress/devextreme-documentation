@@ -25,7 +25,7 @@ jobs:
           with:
             path: devextreme
             repository: devexpress/devextreme
-            ref: ${{ github.ref_name }}
+            ref: main
 
         - name: NPM - devextreme
           working-directory: devextreme

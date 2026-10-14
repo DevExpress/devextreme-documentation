@@ -106,9 +106,9 @@ You can use this approach only if the themes belong to the same group. For insta
 
     ---
 
-2. Use the [DevExpress.ui.themes.current(themeName)](/api-reference/50%20Common/utils/ui/themes/current(themeName).md '/Documentation/ApiReference/Common/utils/ui/themes/#currentthemeName') method to switch to another theme. When you switch between Fluent Next themes, call [refreshMode()](/Documentation/ApiReference/Common/Utils/ui/themes/#refreshMode) to update open overlays that use [container-specific theme modes](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes).
+2. Call the [DevExpress.ui.themes.current(themeName)](/api-reference/50%20Common/utils/ui/themes/current(themeName).md '/Documentation/ApiReference/Common/utils/ui/themes/#currentthemeName') method to switch to another theme. When you switch between Fluent Next themes, call [refreshMode()](/Documentation/ApiReference/Common/Utils/ui/themes/#refreshMode) to update open overlays that use [container-specific theme modes](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes).
 
-    The browser applies the new stylesheet after **current(themeName)** returns. Call **refreshMode()** in a [ready(callback)](/Documentation/ApiReference/Common/utils/ui/themes/#readycallback) callback function. Callback functions passed to **ready(callback)** run only once, so register a callback before each **current(themeName)** call:
+    The browser applies the new stylesheet after **current(themeName)** returns. Call **refreshMode()** in a [ready(callback)](/Documentation/ApiReference/Common/utils/ui/themes/#readycallback) callback function. Callback functions passed to **ready(callback)** only run once, so register a callback before each **current(themeName)** call:
 
         <!-- tab: Modular Application -->
         import themes from 'devextreme/ui/themes';
@@ -124,7 +124,7 @@ You can use this approach only if the themes belong to the same group. For insta
         });
         DevExpress.ui.themes.current('fluent-next.blue.dark');
 
-The **current(themeName)** method accepts the `data-theme` attribute value. For example, if you want to switch to `dx.generic.dark`, pass `generic.dark` (without the 'dx' prefix) as an argument in the method. For a custom theme, specify the theme you used as a base. If both of your themes are derived from the same base, get the `data-theme` value from the `font-family` value of the `dx-theme-marker` CSS class, which is located in each theme's CSS file.
+The **current(themeName)** method accepts the `data-theme` attribute value. For example, to switch to `dx.generic.dark`, pass `generic.dark` (without the `dx` prefix) to the method. For a custom theme, specify the theme you used as a base. If both of your themes derive from the same base, read the `data-theme` value from the `font-family` value in the `dx-theme-marker` CSS class in each theme's CSS file.
 
 [note]
 

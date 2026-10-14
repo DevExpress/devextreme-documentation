@@ -1,4 +1,4 @@
-Non-Fluent Next DevExtreme themes use internal `--dx-*` variables instead of Design System variables to define shared CSS values such as colors. To ensure migration compatibility with these themes, Fluent Next themes declare these `--dx-*` variables and map them to Design System variables. This section lists mapped variables and corresponding public `--dxds-*` variables that you should upgrade to.
+DevExtreme themes other than Fluent Next use internal `--dx-*` variables instead of Design System variables to define shared CSS values such as colors. To ensure migration compatibility with these themes, Fluent Next themes declare these `--dx-*` variables and map them to Design System variables. This section lists mapped variables and corresponding public `--dxds-*` variables that you should upgrade to.
 
 The following table lists color variables. Fluent Next themes declare these variables in the `:root` scope and on elements that use [container-specific theme modes](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes):
 
@@ -104,7 +104,7 @@ The following table lists size variables for standard and compact sizes. Fluent 
     </tr>
     <tr>
         <td><code>--dx-font-size-xl</code></td>
-        <td><code>--dxds-spacing-340</code> (34px; the font size scale does not include this value)</td>
+        <td><code>--dxds-spacing-340</code> (34px, not included in the font size scale)</td>
         <td><code>--dxds-font-size-240</code></td>
     </tr>
     <tr>
@@ -199,4 +199,4 @@ The following table lists legacy variables that Fluent Next themes do not declar
     </tr>
 </table>
 
-[note] Fluent Next themes declare `--dx-button-padding-inline` only for elements with the `dx-button` or `dx-dropdowneditor-button` class.
+[note] Fluent Next themes only declare `--dx-button-padding-inline` for elements with the `dx-button` or `dx-dropdowneditor-button` class.

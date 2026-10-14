@@ -11,7 +11,9 @@ You can switch the theme mode for the entire page without loading another styles
 
 [note]
 
-- [Accent colors](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Accent_Colors) apply to all variations of Fluent Next (light and dark modes, standard and compact sizes). When you switch theme modes or sizes, you do not need to change your accent stylesheet or custom accent color.
-- [Palette](/Documentation/Guide/Themes_and_Styles/SVG-Based_Components_Customization/#Palettes) colors in SVG-based components apply to all variations of Fluent Next (light and dark modes, standard and compact sizes). Theme modes change other colors in these components, such as backgrounds, text, and grid lines.
+The following colors apply to all Fluent Next variations (light and dark modes, standard and compact sizes):
+
+- [Accent colors](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Accent_Colors). You do not need to change your accent stylesheet or custom accent color when you switch theme modes or sizes.
+- [Palette](/Documentation/Guide/Themes_and_Styles/SVG-Based_Components_Customization/#Palettes) colors in SVG-based components. Theme modes change other colors in these components (such as backgrounds, text, and grid lines).
 
 [/note]

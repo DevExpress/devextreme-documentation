@@ -5,7 +5,7 @@ DevExtreme ships with the following themes (all trademarks or registered tradema
 - **Material Design**
 - **Generic**
 
-The following colors are available out of the box:
+The following colors are built-in:
 
 ## Fluent Next Themes
 

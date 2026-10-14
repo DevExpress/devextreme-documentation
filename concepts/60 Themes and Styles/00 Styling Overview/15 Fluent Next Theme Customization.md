@@ -1,1 +1,1 @@
-To customize Fluent Next themes, refer to the following help topic: [Fluent Next Theme Customization](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/).
+Refer to the following help topic for information about how to customize Fluent Next themes: [Fluent Next Theme Customization](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/).

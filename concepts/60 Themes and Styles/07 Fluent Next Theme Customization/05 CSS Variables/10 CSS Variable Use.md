@@ -1,4 +1,4 @@
-You can apply these variables to custom elements to ensure a consistent look across your application. The following example uses Design System variables for rest and hover element states:
+You can apply Design System variables to custom elements to ensure a consistent look across your application. The following example uses Design System variables for rest and hover states:
 
     <!-- tab: CSS -->
     .info-card {

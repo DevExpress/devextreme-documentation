@@ -1,10 +1,10 @@
-DevExtreme ships with a set of built-in themes:
+DevExtreme ships with the following built-in themes:
 
 - **Fluent Next**    
-[Design System](https://docs.devexpress.com/DesignSystem/405636/foundation)-based themes that use CSS variables to declare color, typography, spacing, border, opacity, and shadow styles. Key features include:
+[DevExpress Design System](https://docs.devexpress.com/DesignSystem/405636/foundation)-based themes that use CSS variables to declare color, typography, spacing, border, opacity, and shadow styles. Key capabilities include the following:
 
     - Predefined accent colors
-    - Custom accent color support
+    - Custom accent colors
     - Light and dark modes
     - Compact mode
     - Theme customization using public `--dxds-*` CSS variables

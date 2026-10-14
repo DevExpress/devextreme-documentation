@@ -1,4 +1,4 @@
-Fluent Next themes ship with CSS variables defined in the DevExpress Design System. Refer to the following help topics for additional information about key styling principles and a list of available CSS variables:
+Fluent Next themes ship with CSS variables defined in the DevExpress Design System. Refer to the following help topics for additional information about key styling principles and for a list of available CSS variables:
 
 - [Colors](https://docs.devexpress.com/DesignSystem/405637/colors)
     - [Theme Palettes](https://docs.devexpress.com/DesignSystem/405686/colors/theme-palettes)

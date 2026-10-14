@@ -7,7 +7,9 @@ You can override Design System variables to modify default Fluent Next styles. T
 
 [note]
 
-- `:root` overrides and Fluent Next stylesheets share the same specificity. Load your override stylesheet after the Fluent Next stylesheet to apply these styles. Scoped overrides that use class or ID selectors apply regardless of load order.
+Consider the following when you define `:root` overrides:
+
+- `:root` overrides and Fluent Next stylesheets share the same specificity. Load your override stylesheet after the Fluent Next stylesheet to apply your overrides. Scoped overrides that use class or ID selectors are applied regardless of load order.
 - [Theme mode containers](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes) redeclare variables that have different values in light and dark modes (for instance, `--dxds-color-bg` and `--dxds-color-content-primary`). `:root` overrides for these variables do not apply to elements within `dx-theme-mode-*` containers. To customize these variables within a theme mode container, define overrides for the container and include the mode class in the selector:
 
         <!-- tab: CSS -->
@@ -17,7 +19,7 @@ You can override Design System variables to modify default Fluent Next styles. T
 
 [/note]
 
-CSS variable overrides also allow you to modify styles of DevExtreme components. You can define overrides for individual components or wrap multiple components in a container and define overrides on the container level. This allows you to apply unique styles to different parts of your application. The following code snippet overrides [semantic variables](https://docs.devexpress.com/DesignSystem/405706/colors/color-css-variables):
+CSS variable overrides also allow you to modify DevExtreme component styles. You can define overrides for individual components or for a container that wraps multiple components. These overrides allow you to apply unique styles to different parts of your application. The following code snippet overrides [semantic variables](https://docs.devexpress.com/DesignSystem/405706/colors/color-css-variables):
 
     <!-- tab: CSS -->
     /* Using dxds variables */
@@ -34,7 +36,7 @@ CSS variable overrides also allow you to modify styles of DevExtreme components.
         --dxds-color-border: #532982;
     }
 
-Components that display content in overlays do not apply component element styles to the overlay content. Use one of the following approaches to apply styles to the overlay content:
+Components that display content in overlays do not apply styles from the component element to overlay content. Use one of the following approaches to style overlay content:
 
 1. **Use a `.dx-swatch-*` Component Container**    
     If you initialize an overlay component in a container with a `dx-swatch-*` class, DevExtreme nests the component's overlay wrapper in a container with the same `dx-swatch-*` class. Use this class in your override definitions to style the overlay content.    
@@ -107,10 +109,10 @@ Components that display content in overlays do not apply component element style
 
     ---
 
-    Note that DevExtreme does not generate `.dx-swatch-*` wrapper containers for components where the **container** property is defined.
+    Note that DevExtreme does not generate `.dx-swatch-*` wrapper containers for components if you define their **container** property.
 
 2. **Use wrapperAttr Properties**    
-    You can define the following properties to add selector attributes to component overlay wrappers:
+    You can define the following properties to add selector attributes to overlay wrappers:
     - **wrapperAttr**: Specify this property in overlay components (Popup, Popover, Toast, LoadPanel).
     - **dropDownOptions**.**wrapperAttr**: Specify this property in editors that display drop-downs (SelectBox, Lookup, DateBox, ColorBox, DropDownBox, DropDownButton, Autocomplete).
 
@@ -210,7 +212,7 @@ Components that display content in overlays do not apply component element style
 
     ---
 
-You can also use CSS variable overrides to apply custom colors to specific parts of your application. You can define custom colors or use [utility palette](https://docs.devexpress.com/DesignSystem/405639/colors/utility-palettes/fluent-utility-palette) colors:
+You can also use CSS variable overrides to apply custom or [utility palette](https://docs.devexpress.com/DesignSystem/405639/colors/utility-palettes/fluent-utility-palette) colors to specific parts of your application:
 
     <!-- tab: CSS -->
     /* Utility palette colors */

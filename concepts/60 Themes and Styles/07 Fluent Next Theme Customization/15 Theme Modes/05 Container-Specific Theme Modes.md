@@ -1,4 +1,4 @@
-Fluent Next themes allow you to define theme modes for specific containers in your application. Container-specific modes allow you to use dark mode styles in a light mode application and vice versa. These modes apply to HTML elements and DevExtreme components (both HTML- and SVG-based).
+Fluent Next themes allow you to define theme modes for specific containers in your application. You can use container-specific modes to apply dark mode styles in a light mode application and vice versa. These modes apply to HTML elements and to both HTML- and SVG-based DevExtreme components.
 
 Use one of the following classes to specify a theme mode for a container:
 
@@ -6,7 +6,7 @@ Use one of the following classes to specify a theme mode for a container:
 - `dx-theme-mode-dark`: Applies **dark** mode styles to a container and its children
 - `dx-theme-mode-inverted`: Applies the opposite theme mode relative to a container's nearest enclosing mode
 
-Fluent Next stylesheets store current modes in the `--dx-theme-mode` CSS variable. Each container that uses theme modes defines this variable, including the document root. Use the [@container](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@container) CSS at-rule to add mode-specific styles to your application:
+Fluent Next stylesheets store current modes in the `--dx-theme-mode` CSS variable. Each container that uses theme modes (including the document root) defines this variable. Use the [@container](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@container) CSS at-rule to add mode-specific styles to your application:
 
     <!-- tab: CSS -->
     @container style(--dx-theme-mode: dark) {
@@ -17,9 +17,9 @@ Fluent Next stylesheets store current modes in the `--dx-theme-mode` CSS variabl
 
 Mode-specific rules apply to descendants of a theme mode container, but not to the container itself (style queries evaluate an element's ancestors).
 
-Component overlays (for instance, popups and drop-down lists) open in the theme mode of the component's container, even though DevExtreme renders overlays at the viewport level.
+Component overlays (for instance, popups and drop-down lists) open in the same theme mode as the component's container, even though DevExtreme renders overlays at the viewport level.
 
-You can change container theme modes at runtime. Styles in custom elements and DevExtreme components update immediately. If an overlay is open when you change the mode, call [refreshMode()](/Documentation/ApiReference/Common/Utils/ui/themes/#refreshMode) to update the overlay's styles:
+You can change container theme modes at runtime. Styles in custom elements and DevExtreme components are updated immediately. If an overlay is open when you change the mode, call [refreshMode()](/Documentation/ApiReference/Common/Utils/ui/themes/#refreshMode) to update overlay styles:
 
 ---
 
@@ -134,7 +134,7 @@ You can change container theme modes at runtime. Styles in custom elements and D
 
 ---
 
-`dx-theme-mode-inverted` supports nesting. The following code snippet demonstrates three nesting levels:
+You can nest `dx-theme-mode-inverted` containers. The following code snippet demonstrates three nesting levels:
 
     <!-- tab: HTML -->
     <!DOCTYPE html>
@@ -154,7 +154,7 @@ You can change container theme modes at runtime. Styles in custom elements and D
         </body>
     </html>
 
-Call the [mode(element)](/Documentation/ApiReference/Common/Utils/ui/themes/#modeelement) method to get the calculated theme mode of an element (*"light"* or *"dark"*) in JavaScript. The following code snippet returns *"light"* for the `.three` element from the previous sample:
+In JavaScript, call the [mode(element)](/Documentation/ApiReference/Common/Utils/ui/themes/#modeelement) method to get an element's calculated theme mode (*"light"* or *"dark"*). The following code snippet returns *"light"* for the `.three` element from the previous snippet:
 
 ---
 

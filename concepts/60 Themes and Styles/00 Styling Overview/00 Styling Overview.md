@@ -1,1 +1,1 @@
-The appearance of DevExtreme-powered applications depends on the app's theme and applied customizations. This topic describes all available options you can use to customize your DevExtreme-powered application.
+A DevExtreme-powered application's appearance depends on its theme and applied customizations. This topic describes all available customization options.

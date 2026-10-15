@@ -1,4 +1,4 @@
-## v1.18.0
+### v1.18.0
 
 - Updated DevExtreme Schematics to Angular 20.
 - Bumped `create-next-app` version to `16.3.3`.
@@ -7,7 +7,7 @@
 - Moved theme generation into the application scaffolding pipeline and removed `postinstall` scripts from application templates. Applications scaffolded with DevExtreme CLI now support the `ignore-scripts` npm setting.
 - Updated dependencies and applied security fixes.
   
-## v1.17.0
+### v1.17.0
 
 - Updated the `less` dependency from v3 to v4.
 - Updated dependencies and applied security fixes.

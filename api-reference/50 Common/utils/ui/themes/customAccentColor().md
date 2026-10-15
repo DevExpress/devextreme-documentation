@@ -3,7 +3,7 @@ id: ui.themes.customAccentColor()
 ---
 ---
 ##### shortDescription
-Gets the custom accent color applied to the active Fluent Next stylesheet.
+Gets the custom accent color (primary color) applied to the active Fluent Next stylesheet.
 
 ##### return: String
 The custom accent color or an empty string if no custom accent color is defined.

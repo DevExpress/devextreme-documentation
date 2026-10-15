@@ -3,7 +3,7 @@ id: ui.themes.customAccentColor(color)
 ---
 ---
 ##### shortDescription
-Applies a custom accent color to the active Fluent Next stylesheet.
+Applies a custom accent color (primary color) to the active Fluent Next stylesheet.
 
 ##### param(color): String | null
 A CSS color value. Pass `null` or an empty string to remove the custom accent color.

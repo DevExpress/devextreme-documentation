@@ -4,6 +4,7 @@ DevExtreme libraries use the current application locale to display UI text and f
 - [timeFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#timeFormat)
 - [dateTimeFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateTimeFormat)
 - [numberFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat)
+- [dateTimeFormatPresets](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateTimeFormatPresets)
 
 The following code snippet displays German [UI text](/Documentation/Guide/Common/Localization_and_Globalization/UI_Text_Localization/) and specifies the *"en-CA"* locale in **dateFormat** and the *"en-US"* locale in **numberFormat**:
 

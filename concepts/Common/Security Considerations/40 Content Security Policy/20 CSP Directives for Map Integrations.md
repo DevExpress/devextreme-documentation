@@ -32,3 +32,7 @@ To integrate DevExtreme Map with an OSM [provider](/Documentation/ApiReference/U
 - `img-src`: Tile servers (including **OsmTileServerConfig**.[subdomains](/Documentation/ApiReference/UI_Components/dxMap/Types/OsmTileServerConfig/#subdomains)) and custom marker images
 - `connect-src`: Geocoding and routing services that **providerConfig**.[calculateLocation](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#calculateLocation) and **providerConfig**.[calculateRoute](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#calculateRoute) call
 - `script-src` and `style-src`: Origins of OpenLayers library sources (if you load the library from another origin)
+
+#####See Also#####
+
+- [Map - OpenStreetMap Provider - Security](/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/#Security)

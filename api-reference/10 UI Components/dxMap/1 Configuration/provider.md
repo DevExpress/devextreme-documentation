@@ -25,3 +25,6 @@ Each provider offers different functionality that you can integrate. Refer to th
 #include btn-open-github with {
     href: "https://github.com/DevExpress-Examples/devextreme-map-add-marker-with-label"
 }
+
+#####See Also#####
+- [Map - OpenStreetMap Provider](/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/)

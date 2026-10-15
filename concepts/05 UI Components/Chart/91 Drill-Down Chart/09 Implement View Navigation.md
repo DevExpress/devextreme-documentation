@@ -188,7 +188,7 @@ To navigate from the first to the second view, filter data by a different `paren
         type ChartTypes
     } from 'devextreme-react/chart';
     import Button from 'devextreme-react/button';
-    import service from './data.js';
+    import service from './data';
 
     function App() {
         const [isFirstLevel, setIsFirstLevel] = useState(true);

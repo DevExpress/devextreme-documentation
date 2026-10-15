@@ -79,8 +79,7 @@ The following code adds a simple LoadIndicator to your page. You can change the 
     import { LoadIndicator } from 'devextreme-react/load-indicator';
 
     function App() {
-        const [isLoadIndicatorVisible] = useState(true);
-
+        const isLoadIndicatorVisible = true;
         return (
             <LoadIndicator
                 visible={isLoadIndicatorVisible}

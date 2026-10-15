@@ -67,38 +67,30 @@ To access a point label, call the [getLabel()](/api-reference/10%20UI%20Componen
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import PieChart from 'devextreme-react/pie-chart';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef } from 'react';
+    import PieChart, { type PieChartRef } from 'devextreme-react/pie-chart';
+    import type { baseLabelObject } from 'devextreme/viz/chart';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
+    function App() {
+        const pieChartRef = useRef<PieChartRef>(null);
+        const labelRef = useRef<baseLabelObject | undefined>(undefined);
 
-            this.pieChartRef = React.createRef();
-            this.label = {};
+        const getPointLabel = useCallback(() => {
+            const pieChart = pieChartRef.current?.instance();
+            const series = pieChart?.getAllSeries()[0];
+            const seriesPoints = series?.getAllPoints();
+            labelRef.current = seriesPoints?.[0].getLabel();
+        }, []);
 
-            this.getPointLabel = this.getPointLabel.bind(this);
-        }
-
-        render() {
-            return (
-                <PieChart ...
-                    ref={this.pieChartRef}>
-                </PieChart>
-            );
-        }
-
-        get pieChart() {
-            return this.pieChartRef.current.instance();
-        }
-
-        getPointLabel() {
-            const series = this.pieChart.getAllSeries()[0];
-            const seriesPoints = series.getAllPoints();
-            this.label = seriesPoints[0].getLabel();
-        }
+        return (
+            <PieChart ...
+                ref={pieChartRef}>
+            </PieChart>
+        );
     }
+
+    export default App;
 
 ---
 

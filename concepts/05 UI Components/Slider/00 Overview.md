@@ -73,42 +73,30 @@ The following code adds a simple Slider to your page. The **min** and **max** pr
 
 ##### React
 
-    import React from 'react';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import { Slider } from 'devextreme-react/slider';
+    import { Slider, type SliderTypes } from 'devextreme-react/slider';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
+    function App() {
+        const [value, setValue] = useState<number>(25);
 
-            this.state = {
-                value: 25
-            };
-
-            this.handleValueChange = this.handleValueChange.bind(this);
-        }
-
-        handleValueChange(e) {
+        const handleValueChange = useCallback((e: SliderTypes.ValueChangedEvent) => {
             const previousValue = e.previousValue;
             const newValue = e.value;
             // Event handling commands go here
 
-            this.setState({
-                value: newValue
-            });
-        }
+            setValue(newValue);
+        }, []);
 
-        render() {
-            return (
-                <Slider
-                    min={0}
-                    max={100}
-                    value={this.state.value}
-                    onValueChanged={this.handleValueChange}
-                />
-            );
-        }
+        return (
+            <Slider
+                min={0}
+                max={100}
+                value={value}
+                onValueChanged={handleValueChange}
+            />
+        );
     }
 
     export default App;
@@ -184,43 +172,31 @@ In addition, you can specify the step of Slider values using the [step](/api-ref
 
 ##### React
 
-    import React from 'react';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import { Slider } from 'devextreme-react/slider';
+    import { Slider, type SliderTypes } from 'devextreme-react/slider';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
+    function App() {
+        const [value, setValue] = useState<number>(25);
 
-            this.state = {
-                value: 25
-            };
-
-            this.handleValueChange = this.handleValueChange.bind(this);
-        }
-
-        handleValueChange(e) {
+        const handleValueChange = useCallback((e: SliderTypes.ValueChangedEvent) => {
             const previousValue = e.previousValue;
             const newValue = e.value;
             // Event handling commands go here
 
-            this.setState({
-                value: newValue
-            });
-        }
+            setValue(newValue);
+        }, []);
 
-        render() {
-            return (
-                <Slider
-                    min={0}
-                    max={100}
-                    step={10}
-                    value={this.state.value}
-                    onValueChanged={this.handleValueChange}
-                />
-            );
-        }
+        return (
+            <Slider
+                min={0}
+                max={100}
+                step={10}
+                value={value}
+                onValueChanged={handleValueChange}
+            />
+        );
     }
 
     export default App;

@@ -94,29 +94,30 @@ You can handle these events with functions. If the handling functions are not go
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Sankey from 'devextreme-react/sankey';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
+    import Sankey, { type SankeyTypes } from 'devextreme-react/sankey';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Sankey
-                    onExporting={this.onExporting}
-                    onExported={this.onExported}
-                    onFileSaving={this.onFileSaving}
-                />
-            )
-        }
-        onExporting(e) {
+    function App() {
+        const onExporting = useCallback((e: SankeyTypes.ExportingEvent) => {
             // Handler of the "exporting" event
-        };
-        onExported(e) {
+        }, []);
+
+        const onExported = useCallback((e: SankeyTypes.ExportedEvent) => {
             // Handler of the "exported" event
-        };
-        onFileSaving(e) {
+        }, []);
+
+        const onFileSaving = useCallback((e: SankeyTypes.FileSavingEvent) => {
             // Handler of the "fileSaving" event
-        }
+        }, []);
+
+        return (
+            <Sankey
+                onExporting={onExporting}
+                onExported={onExported}
+                onFileSaving={onFileSaving}
+            />
+        );
     }
 
     export default App;

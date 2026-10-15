@@ -60,24 +60,22 @@ The visual range of arguments/values on an axis should include all arguments/val
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import Chart, {
         ArgumentAxis
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        visualRange = [1950, 2000];
+    const visualRange = [1950, 2000];
 
-        render() {
-            return (
-                <Chart ... >
-                    <ArgumentAxis
-                        defaultVisualRange={this.visualRange}
-                    />
-                </Chart>
-            );
-        }
+    function App() {
+        return (
+            <Chart ... >
+                <ArgumentAxis
+                    defaultVisualRange={visualRange}
+                />
+            </Chart>
+        );
     }
 
     export default App;

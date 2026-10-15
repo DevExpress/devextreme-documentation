@@ -78,29 +78,27 @@ The selection capability is not provided out of the box, but it can be implement
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Chart from 'devextreme-react/chart';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
+    import Chart, { type ChartTypes } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart
-                    onPointClick={this.onPointClick}
-                    ...
-                >
-                </Chart>
-            );
-        }
-
-        onPointClick (e) {
+    function App() {
+        const onPointClick = useCallback((e: ChartTypes.PointClickEvent) => {
             const point = e.target;
             if (point.isSelected()) {
                 point.clearSelection();
             } else {
                 point.select();
             }
-        }
+        }, []);
+
+        return (
+            <Chart
+                onPointClick={onPointClick}
+                ...
+            >
+            </Chart>
+        );
     }
 
     export default App;
@@ -116,7 +114,8 @@ In the previous code example, selection was cleared of a specific point. If you 
         $("#chartContainer").dxChart({
             // ...
             onPointClick: function (e) {
-                e.target.series.getAllPoints(function(point) {
+                var series = e.target.series;
+                series.getAllPoints().forEach(function(point) {
                     series.deselectPoint(point);
                 });
             }
@@ -135,7 +134,8 @@ In the previous code example, selection was cleared of a specific point. If you 
     // ...
     export class AppComponent {
         onPointClick (e) {
-            e.target.series.getAllPoints(point => series.deselectPoint(point));
+            const series = e.target.series;
+            series.getAllPoints().forEach((point) => series.deselectPoint(point));
         }
     }
     @NgModule({
@@ -166,7 +166,8 @@ In the previous code example, selection was cleared of a specific point. If you 
         },
         methods: {
             onPointClick (e) {
-                e.target.series.getAllPoints(point => series.deselectPoint(point));
+                const series = e.target.series;
+                series.getAllPoints().forEach((point) => series.deselectPoint(point));
             }
         }
     }
@@ -174,24 +175,23 @@ In the previous code example, selection was cleared of a specific point. If you 
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Chart from 'devextreme-react/chart';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
+    import Chart, { type ChartTypes } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart
-                    onPointClick={this.onPointClick}
-                    ...
-                >
-                </Chart>
-            );
-        }
+    function App() {
+        const onPointClick = useCallback((e: ChartTypes.PointClickEvent) => {
+            const series = e.target.series;
+            series.getAllPoints().forEach((point) => series.deselectPoint(point));
+        }, []);
 
-        onPointClick (e) {
-            e.target.series.getAllPoints(point => series.deselectPoint(point));
-        }
+        return (
+            <Chart
+                onPointClick={onPointClick}
+                ...
+            >
+            </Chart>
+        );
     }
 
     export default App;
@@ -254,27 +254,22 @@ If you need to clear selection of all series in the Chart along with their point
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Chart from 'devextreme-react/chart';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef } from 'react';
+    import Chart, { type ChartRef } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
+    function App() {
+        const chartRef = useRef<ChartRef>(null);
 
-            this.chartRef = React.createRef();
-        }
+        const clearSelection = useCallback(() => {
+            const chart = chartRef.current?.instance();
+            chart?.clearSelection();
+        }, []);
 
-        render() {
-            return (
-                <Chart ref={this.chartRef} ... >
-                </Chart>
-            );
-        }
-
-        clearSelection () {
-            this.chartRef.current.instance().clearSelection();
-        }
+        return (
+            <Chart ref={chartRef} ... >
+            </Chart>
+        );
     }
 
     export default App;

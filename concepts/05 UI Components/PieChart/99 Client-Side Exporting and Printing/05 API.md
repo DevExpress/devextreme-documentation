@@ -62,39 +62,31 @@ To export the PieChart using the API, call the [exportTo(fileName, format)](/api
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import PieChart from 'devextreme-react/pie-chart';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef } from 'react';
+    import PieChart, { type PieChartRef } from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
+    function App() {
+        const pieChartRef = useRef<PieChartRef>(null);
 
-            this.pieChartRef = React.createRef();
+        const exportChart = useCallback(() => {
+            const pieChart = pieChartRef.current?.instance();
+            pieChart?.exportTo('Exported Chart', 'PDF');
+        }, []);
 
-            this.exportChart = this.exportChart.bind(this);
-            this.printChart = this.printChart.bind(this);
-        }
+        const printChart = useCallback(() => {
+            const pieChart = pieChartRef.current?.instance();
+            pieChart?.print();
+        }, []);
 
-        render() {
-            return (
-                <PieChart ...
-                    ref={this.pieChartRef}>
-                </PieChart>
-            );
-        }
-
-        get pieChart() {
-            return this.pieChartRef.current.instance();
-        }
-
-        exportChart() {
-            this.pieChart.exportTo('Exported Chart', 'PDF');
-        }
-        printChart() {
-            this.pieChart.print();
-        }
+        return (
+            <PieChart ...
+                ref={pieChartRef}>
+            </PieChart>
+        );
     }
+
+    export default App;
 
 ---
 
@@ -188,48 +180,42 @@ You can also export several UI components at once using their SVG markup. Gather
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import PieChart from 'devextreme-react/pie-chart';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef } from 'react';
+    import PieChart, { type PieChartRef } from 'devextreme-react/pie-chart';
     import { getMarkup, exportFromMarkup } from "devextreme/viz/export";
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
+    function App() {
+        const pieChart1Ref = useRef<PieChartRef>(null);
+        const pieChart2Ref = useRef<PieChartRef>(null);
 
-            this.pieChart1Ref = React.createRef();
-            this.pieChart2Ref = React.createRef();
-
-            this.exportSeveralCharts = this.exportSeveralCharts.bind(this);
-        }
-
-        render() {
-            return (
-                <PieChart ...
-                    ref={this.pieChart1Ref}>
-                </PieChart>
-                <PieChart ...
-                    ref={this.pieChart2Ref}>
-                </PieChart>
-            );
-        }
-
-        get pieChart1() {
-            return this.pieChart1Ref.current.instance();
-        }
-        get pieChart2() {
-            return this.pieChart2Ref.current.instance();
-        }
-
-        exportSeveralCharts() {
-            const chartMarkup = getMarkup([this.pieChart1, this.pieChart2]);
+        const exportSeveralCharts = useCallback(() => {
+            const pieChart1 = pieChart1Ref.current?.instance();
+            const pieChart2 = pieChart2Ref.current?.instance();
+            if (!pieChart1 || !pieChart2) {
+                return;
+            }
+            const chartMarkup = getMarkup([pieChart1, pieChart2]);
             exportFromMarkup(chartMarkup, {
                 height: 768,
                 width: 1024,
                 fileName: 'Exported Charts',
-                format: 'PDF';
+                format: 'PDF'
             });
-        }
+        }, []);
+
+        return (
+            <>
+                <PieChart ...
+                    ref={pieChart1Ref}>
+                </PieChart>
+                <PieChart ...
+                    ref={pieChart2Ref}>
+                </PieChart>
+            </>
+        );
     }
+
+    export default App;
 
 ---

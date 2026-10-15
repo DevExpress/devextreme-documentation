@@ -58,18 +58,16 @@ All node labels are colored according to the **label**.**font**.[color](/api-ref
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import Sankey, { Label } from 'devextreme-react/sankey';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Sankey ... >
-                    <Label useNodeColors={true} />
-                </Sankey>
-            )
-        }
+    function App() {
+        return (
+            <Sankey ... >
+                <Label useNodeColors={true} />
+            </Sankey>
+        );
     }
 
     export default App;

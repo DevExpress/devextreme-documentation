@@ -77,39 +77,28 @@ To process a new Slider value, you need to handle the value change event. If the
 
 ##### React
 
-    import React from 'react';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import { Slider } from 'devextreme-react/slider';
+    import { Slider, type SliderTypes } from 'devextreme-react/slider';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
+    function App() {
+        const [value, setValue] = useState<number>(25);
 
-            this.state = {
-                value: 25
-            };
-            this.handleValueChange = this.handleValueChange.bind(this);
-        }
-
-        handleValueChange(e) {
+        const handleValueChange = useCallback((e: SliderTypes.ValueChangedEvent) => {
             const previousValue = e.previousValue;
             const newValue = e.value;
             // Event handling commands go here
 
-            this.setState({
-                value: newValue
-            });
-        }
+            setValue(newValue);
+        }, []);
 
-        render() {
-            return (
-                <Slider
-                    value={this.state.value}
-                    onValueChanged={this.handleValueChange}
-                />
-            );
-        }
+        return (
+            <Slider
+                value={value}
+                onValueChanged={handleValueChange}
+            />
+        );
     }
 
     export default App;

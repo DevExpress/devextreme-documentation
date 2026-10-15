@@ -55,26 +55,21 @@ Gets all series of the Chart.
 
     ##### React
 
-        <!-- tab: App.js -->
-        import React from 'react';
-        import Chart from 'devextreme-react/chart';
+        <!-- tab: App.tsx -->
+        import React, { useCallback, useRef } from 'react';
+        import Chart, { type ChartRef } from 'devextreme-react/chart';
 
-        class App extends React.Component {
-            constructor(props) {
-                super(props);
-                this.chartRef = React.createRef();
-            }
-            render() {
-                return (
-                    <Chart ref={this.chartRef}></Chart>
-                );
-            }
-            get chart() {
-                return this.chartRef.current.instance();
-            }
-            getAllSeries () {
-                return this.chart.getAllSeries();
-            }
+        function App() {
+            const chartRef = useRef<ChartRef>(null);
+
+            const getAllSeries = useCallback(() => {
+                const chart = chartRef.current?.instance();
+                return chart?.getAllSeries();
+            }, []);
+
+            return (
+                <Chart ref={chartRef}></Chart>
+            );
         }
 
         export default App;
@@ -137,26 +132,21 @@ Gets a series by its [name](/api-reference/10%20UI%20Components/dxChart/5%20Seri
 
     ##### React
 
-        <!-- tab: App.js -->
-        import React from 'react';
-        import Chart from 'devextreme-react/chart';
+        <!-- tab: App.tsx -->
+        import React, { useCallback, useRef } from 'react';
+        import Chart, { type ChartRef } from 'devextreme-react/chart';
 
-        class App extends React.Component {
-            constructor(props) {
-                super(props);
-                this.chartRef = React.createRef();
-            }
-            render() {
-                return (
-                    <Chart ref={this.chartRef}></Chart>
-                );
-            }
-            get chart() {
-                return this.chartRef.current.instance();
-            }
-            getSeriesByName (seriesName) {
-                return this.chart.getSeriesByName(seriesName);
-            }
+        function App() {
+            const chartRef = useRef<ChartRef>(null);
+
+            const getSeriesByName = useCallback((seriesName: string) => {
+                const chart = chartRef.current?.instance();
+                return chart?.getSeriesByName(seriesName);
+            }, []);
+
+            return (
+                <Chart ref={chartRef}></Chart>
+            );
         }
 
         export default App;
@@ -218,26 +208,21 @@ Gets a series by its index in the [series](/api-reference/10%20UI%20Components/d
 
     ##### React
 
-        <!-- tab: App.js -->
-        import React from 'react';
-        import Chart from 'devextreme-react/chart';
+        <!-- tab: App.tsx -->
+        import React, { useCallback, useRef } from 'react';
+        import Chart, { type ChartRef } from 'devextreme-react/chart';
 
-        class App extends React.Component {
-            constructor(props) {
-                super(props);
-                this.chartRef = React.createRef();
-            }
-            render() {
-                return (
-                    <Chart ref={this.chartRef}></Chart>
-                );
-            }
-            get chart() {
-                return this.chartRef.current.instance();
-            }
-            getSeriesByPos(seriesIndex) {
-                return this.chart.getSeriesByPos(seriesIndex);
-            }
+        function App() {
+            const chartRef = useRef<ChartRef>(null);
+
+            const getSeriesByPos = useCallback((seriesIndex: number) => {
+                const chart = chartRef.current?.instance();
+                return chart?.getSeriesByPos(seriesIndex);
+            }, []);
+
+            return (
+                <Chart ref={chartRef}></Chart>
+            );
         }
 
         export default App;

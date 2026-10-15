@@ -59,21 +59,19 @@ The Sankey UI component has an adaptive layout that enables the UI component to 
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import Sankey, { AdaptiveLayout } from 'devextreme-react/sankey';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Sankey ... >
-                    <AdaptiveLayout
-                        height={300}
-                        width={400}
-                    />
-                </Sankey>
-            )
-        }
+    function App() {
+        return (
+            <Sankey ... >
+                <AdaptiveLayout
+                    height={300}
+                    width={400}
+                />
+            </Sankey>
+        );
     }
 
     export default App;
@@ -136,26 +134,21 @@ The layout does not automatically adapt if the UI component's container is resiz
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Sankey from 'devextreme-react/sankey';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef } from 'react';
+    import Sankey, { type SankeyRef } from 'devextreme-react/sankey';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.sankeyRef = React.createRef();
-        }
-        render() {
-            return (
-                <Sankey ref={this.sankeyRef} />
-            )
-        }
-        get sankey() {
-            return this.sankeyRef.current.instance();
-        }
-        renderSankey() {
-            this.sankey.render();
-        }
+    function App() {
+        const sankeyRef = useRef<SankeyRef>(null);
+
+        const renderSankey = useCallback(() => {
+            const sankey = sankeyRef.current?.instance();
+            sankey?.render();
+        }, []);
+
+        return (
+            <Sankey ref={sankeyRef} />
+        );
     }
 
     export default App;

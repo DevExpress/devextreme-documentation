@@ -132,26 +132,21 @@ In the previous code example, selection was cleared of a specific item. If you n
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Funnel from 'devextreme-react/funnel';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef } from 'react';
+    import Funnel, { type FunnelRef } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.funnelRef = React.createRef();
-        }
-        render() {
-            return (
-                <Funnel ref={this.funnelRef} />
-            );
-        }
-        get funnel() {
-            return this.funnelRef.current.instance();
-        }
-        clearSelection () {
-            return this.funnel.clearSelection();
-        }
+    function App() {
+        const funnelRef = useRef<FunnelRef>(null);
+
+        const clearSelection = useCallback(() => {
+            const funnel = funnelRef.current?.instance();
+            funnel?.clearSelection();
+        }, []);
+
+        return (
+            <Funnel ref={funnelRef} />
+        );
     }
 
     export default App;

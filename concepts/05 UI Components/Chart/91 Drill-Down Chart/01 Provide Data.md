@@ -139,39 +139,42 @@ The main idea is to filter the data source by the `parentID` for different drill
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import React, { useState } from 'react';
     import Chart, {
         Series
     } from 'devextreme-react/chart';
 
-    const population = [
+    type DataItem = {
+        arg: string;
+        val: number;
+        parentID: string;
+    };
+
+    const population: DataItem[] = [
         // ...
     ];
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = { dataSource: this.filterData('') };
-        }
-
-        render() {
-            return (
-                <Chart ...
-                    dataSource={this.state.dataSource}>
-                    <Series
-                        argumentField="arg"
-                        valueField="val"
-                        type="bar"
-                    />
-                </Chart>
-            );
-        }
-
-        filterData(name) {
-            return population.filter(item => item.parentID === name);
-        }
+    function filterData(name: string): DataItem[] {
+        return population.filter((item) => item.parentID === name);
     }
+
+    function App() {
+        const [dataSource] = useState<DataItem[]>(() => filterData(''));
+
+        return (
+            <Chart ...
+                dataSource={dataSource}>
+                <Series
+                    argumentField="arg"
+                    valueField="val"
+                    type="bar"
+                />
+            </Chart>
+        );
+    }
+
+    export default App;
 
 ---
 
@@ -281,42 +284,44 @@ The main idea is to filter the data source by the `parentID` for different drill
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import Chart, {
         Series
     } from 'devextreme-react/chart';
     import DataSource from 'devextreme/data/data_source';
 
-    const population = [
+    type DataItem = {
+        arg: string;
+        val: number;
+        parentID: string;
+    };
+
+    const population: DataItem[] = [
         // ...
     ];
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
+    const dxDataSource = new DataSource<DataItem>({
+        store: {
+            type: 'array',
+            data: population
+        },
+        filter: ['parentID', '=', '']
+    });
 
-            this.dxDataSource = new DataSource({
-                store: {
-                    type: 'array',
-                    data: population
-                },
-                filter: ['parentID', '=', '']
-            });
-        }
-
-        render() {
-            return (
-                <Chart ...
-                    dataSource={this.dxDataSource}>
-                    <Series
-                        argumentField="arg"
-                        valueField="val"
-                        type="bar"
-                    />
-                </Chart>
-            );
-        }
+    function App() {
+        return (
+            <Chart ...
+                dataSource={dxDataSource}>
+                <Series
+                    argumentField="arg"
+                    valueField="val"
+                    type="bar"
+                />
+            </Chart>
+        );
     }
+
+    export default App;
 
 ---

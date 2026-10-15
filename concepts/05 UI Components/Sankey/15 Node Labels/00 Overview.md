@@ -60,18 +60,16 @@ Properties that configure node labels are collected in the [label](/api-referenc
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import Sankey, { Label } from 'devextreme-react/sankey';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Sankey ... >
-                    <Label {/* Settings for all node labels */} />
-                </Sankey>
-            )
-        }
+    function App() {
+        return (
+            <Sankey ... >
+                <Label /* Settings for all node labels */ />
+            </Sankey>
+        );
     }
 
     export default App;

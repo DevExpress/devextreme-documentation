@@ -110,43 +110,42 @@ If your framework supports two-way binding, bind the axis' **visualRange** to a 
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useState } from 'react';
     import Chart, {
-        ArgumentAxis
+        ArgumentAxis,
+        type ChartTypes
     } from 'devextreme-react/chart';
     import Button from 'devextreme-react/button';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = { chart_visualRange: [] };
-            this.setChartRange = () => this.setState({ chart_visualRange: [40, 60] });
-        }
+    function App() {
+        const [visualRange, setVisualRange] = useState<number[]>([]);
 
-        render() {
-            return (
-                <React.Fragment>
+        const setChartRange = useCallback(() => {
+            setVisualRange([40, 60]);
+        }, []);
+
+        const handleChange = useCallback((e: ChartTypes.OptionChangedEvent) => {
+            if (e.fullName === 'argumentAxis.visualRange') {
+                const range = e.value;
+                // ...
+            }
+        }, []);
+
+        return (
+            <React.Fragment>
                 <Chart
-                    onOptionChanged={this.handleChange}>
+                    onOptionChanged={handleChange}>
                     <ArgumentAxis
-                        visualRange={this.state.chart_visualRange}
+                        visualRange={visualRange}
                     />
                 </Chart>
                 <Button
                     text="Change Visual Range"
-                    onClick={this.setChartRange}
+                    onClick={setChartRange}
                 />
-                </React.Fragment>
-            );
-        }
-
-        handleChange(e) {
-            if(e.fullName === 'argumentAxis.visualRange') {
-                const range = e.value;
-                // ...
-            }
-        }
+            </React.Fragment>
+        );
     }
 
     export default App;

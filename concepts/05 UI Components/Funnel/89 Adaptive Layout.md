@@ -133,26 +133,21 @@ The layout does not automatically adapt to changes made in the UI component's co
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Funnel from 'devextreme-react/funnel';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef } from 'react';
+    import Funnel, { type FunnelRef } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.funnelRef = React.createRef();
-        }
-        render() {
-            return (
-                <Funnel ref={this.funnelRef} />
-            );
-        }
-        get funnel() {
-            return this.funnelRef.current.instance();
-        }
-        renderFunnel () {
-            this.funnel.render();
-        }
+    function App() {
+        const funnelRef = useRef<FunnelRef>(null);
+
+        const renderFunnel = useCallback(() => {
+            const funnel = funnelRef.current?.instance();
+            funnel?.render();
+        }, []);
+
+        return (
+            <Funnel ref={funnelRef} />
+        );
     }
 
     export default App;

@@ -79,39 +79,28 @@ To process a new ProgressBar value, you need to handle the value change event. I
 
 ##### React
 
-    import React from 'react';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import { ProgressBar } from 'devextreme-react/progress-bar';
+    import { ProgressBar, type ProgressBarTypes } from 'devextreme-react/progress-bar';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
+    function App() {
+        const [value, setValue] = useState<number>(49);
 
-            this.state = {
-                value: 49
-            };
-            this.handleValueChange = this.handleValueChange.bind(this);
-        }
-
-        handleValueChange(e) {
+        const handleValueChange = useCallback((e: ProgressBarTypes.ValueChangedEvent) => {
             const previousValue = e.previousValue;
             const newValue = e.value;
             // Event handling commands go here
 
-            this.setState({
-                value: newValue
-            });
-        }
+            setValue(newValue);
+        }, []);
 
-        render() {
-            return (
-                <ProgressBar
-                    value={this.state.value}
-                    onValueChanged={this.handleValueChange}
-                />
-            );
-        }
+        return (
+            <ProgressBar
+                value={value}
+                onValueChanged={handleValueChange}
+            />
+        );
     }
 
     export default App;

@@ -81,42 +81,31 @@ To process new RangeSlider values, you need to handle the value change event. If
 
 ##### React
 
-    import React from 'react';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import { RangeSlider } from 'devextreme-react/range-slider';
+    import { RangeSlider, type RangeSliderTypes } from 'devextreme-react/range-slider';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
+    function App() {
+        const [startValue, setStartValue] = useState<number | undefined>(20);
+        const [endValue, setEndValue] = useState<number | undefined>(60);
 
-            this.state = {
-                startValue: 20,
-                endValue: 60
-            };
-            this.handleValueChange = this.handleValueChange.bind(this);
-        }
-
-        handleValueChange(e) {
+        const handleValueChange = useCallback((e: RangeSliderTypes.ValueChangedEvent) => {
             const newStartValue = e.start;
             const newEndValue = e.end;
             // Event handling commands go here
 
-            this.setState({
-                startValue: newStartValue,
-                endValue: newEndValue
-            });
-        }
+            setStartValue(newStartValue);
+            setEndValue(newEndValue);
+        }, []);
 
-        render() {
-            return (
-                <RangeSlider
-                    start={this.state.startValue}
-                    end={this.state.endValue}
-                    onValueChanged={this.handleValueChange}
-                />
-            );
-        }
+        return (
+            <RangeSlider
+                start={startValue}
+                end={endValue}
+                onValueChanged={handleValueChange}
+            />
+        );
     }
 
     export default App;

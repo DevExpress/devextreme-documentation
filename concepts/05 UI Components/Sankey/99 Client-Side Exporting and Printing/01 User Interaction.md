@@ -69,21 +69,19 @@ Set [export](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/ex
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import Sankey, { Export } from 'devextreme-react/sankey';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Sankey ... >
-                    <Export
-                        enabled={true}
-                        printingEnabled={false}
-                    />
-                </Sankey>
-            )
-        }
+    function App() {
+        return (
+            <Sankey ... >
+                <Export
+                    enabled={true}
+                    printingEnabled={false}
+                />
+            </Sankey>
+        );
     }
 
     export default App;
@@ -161,24 +159,23 @@ Change the **export**.[formats](/api-reference/10%20UI%20Components/BaseWidget/1
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import Sankey, { Export } from 'devextreme-react/sankey';
+    import type { ExportFormat } from 'devextreme/common';
 
-    const exportFormats = ['PNG', 'JPEG'];
+    const exportFormats: ExportFormat[] = ['PNG', 'JPEG'];
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Sankey ... >
-                    <Export
-                        enabled={true}
-                        formats={exportFormats}
-                        fileName="exported_sankey"
-                    />
-                </Sankey>
-            )
-        }
+    function App() {
+        return (
+            <Sankey ... >
+                <Export
+                    enabled={true}
+                    formats={exportFormats}
+                    fileName="exported_sankey"
+                />
+            </Sankey>
+        );
     }
 
     export default App;

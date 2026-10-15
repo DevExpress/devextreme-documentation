@@ -78,21 +78,19 @@ To configure the elements' appearance, use the [node](/api-reference/10%20UI%20C
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import Sankey, { Node, Link, Border } from 'devextreme-react/sankey';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Sankey ... >
-                    <Node opacity={0.5} />
-                    <Link>
-                        <Border visible={true} />
-                    </Link>
-                </Sankey>
-            )
-        }
+    function App() {
+        return (
+            <Sankey ... >
+                <Node opacity={0.5} />
+                <Link>
+                    <Border visible={true} />
+                </Link>
+            </Sankey>
+        );
     }
 
     export default App;

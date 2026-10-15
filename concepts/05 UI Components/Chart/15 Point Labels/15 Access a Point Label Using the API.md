@@ -64,29 +64,25 @@ To access a point label, call the [getLabel()](/api-reference/10%20UI%20Componen
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Chart from 'devextreme-react/chart';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef } from 'react';
+    import Chart, { type ChartRef } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.chartRef = React.createRef();
-        }
+    function App() {
+        const chartRef = useRef<ChartRef>(null);
 
-        render() {
-            return (
-                <Chart ref={this.chartRef} ... >
-                </Chart>
-            );
-        }
-
-        getPointLabel () {
-            const series = this.chartRef.current.instance().getSeriesByName("Series 1");
-            const seriesPoints = series.getAllPoints();
-            const label = seriesPoints[0].getLabel();
+        const getPointLabel = useCallback(() => {
+            const chart = chartRef.current?.instance();
+            const series = chart?.getSeriesByName("Series 1");
+            const seriesPoints = series?.getAllPoints();
+            const label = seriesPoints?.[0].getLabel();
             // ...
-        }
+        }, []);
+
+        return (
+            <Chart ref={chartRef} ... >
+            </Chart>
+        );
     }
 
     export default App;

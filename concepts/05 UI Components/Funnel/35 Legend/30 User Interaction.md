@@ -82,22 +82,21 @@ Otherwise, or if you need several handlers for the **legendClick** event, subscr
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Funnel from 'devextreme-react/funnel';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
+    import Funnel, { type FunnelTypes } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel ...
-                    onLegendClick={this.onLegendClick} 
-                 />
-            );
-        }
-        onLegendClick(e) {
-            var item = e.item;
+    function App() {
+        const onLegendClick = useCallback((e: FunnelTypes.LegendClickEvent) => {
+            const item = e.item;
             // Event handling commands go here
-        }
+        }, []);
+
+        return (
+            <Funnel ...
+                onLegendClick={onLegendClick}
+            />
+        );
     }
 
     export default App;

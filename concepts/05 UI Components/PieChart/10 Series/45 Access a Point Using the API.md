@@ -53,26 +53,21 @@ Before accessing a series point, gain access to its series by calling the [getAl
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import PieChart from 'devextreme-react/pie-chart';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef } from 'react';
+    import PieChart, { type PieChartRef } from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.chartRef = React.createRef();
-        }
-        render() {
-            return (
-                <PieChart ref={this.chartRef}></PieChart>
-            );
-        }
-        get chart() {
-            return this.chartRef.current.instance();
-        }
-        getSeries () {
-            return this.chart.getAllSeries()[0];
-        }
+    function App() {
+        const chartRef = useRef<PieChartRef>(null);
+
+        const getSeries = useCallback(() => {
+            const chart = chartRef.current?.instance();
+            return chart?.getAllSeries()[0];
+        }, []);
+
+        return (
+            <PieChart ref={chartRef}></PieChart>
+        );
     }
 
     export default App;
@@ -142,29 +137,25 @@ Gets all the series points.
 
     ##### React
 
-        <!-- tab: App.js -->
-        import React from 'react';
-        import PieChart from 'devextreme-react/pie-chart';
+        <!-- tab: App.tsx -->
+        import React, { useCallback, useRef } from 'react';
+        import PieChart, { type PieChartRef } from 'devextreme-react/pie-chart';
 
-        class App extends React.Component {
-            constructor(props) {
-                super(props);
-                this.chartRef = React.createRef();
-            }
-            render() {
-                return (
-                    <PieChart ref={this.chartRef}></PieChart>
-                );
-            }
-            get chart() {
-                return this.chartRef.current.instance();
-            }
-            getSeries () {
-                return this.chart.getAllSeries()[0];
-            }
-            getSeriesPoints () {
-                return this.getSeries().getAllPoints();
-            }
+        function App() {
+            const chartRef = useRef<PieChartRef>(null);
+
+            const getSeries = useCallback(() => {
+                const chart = chartRef.current?.instance();
+                return chart?.getAllSeries()[0];
+            }, []);
+
+            const getSeriesPoints = useCallback(() => {
+                return getSeries()?.getAllPoints();
+            }, [getSeries]);
+
+            return (
+                <PieChart ref={chartRef}></PieChart>
+            );
         }
 
         export default App;
@@ -231,29 +222,25 @@ Gets those series points that have a specific argument.
 
     ##### React
 
-        <!-- tab: App.js -->
-        import React from 'react';
-        import PieChart from 'devextreme-react/pie-chart';
+        <!-- tab: App.tsx -->
+        import React, { useCallback, useRef } from 'react';
+        import PieChart, { type PieChartRef } from 'devextreme-react/pie-chart';
 
-        class App extends React.Component {
-            constructor(props) {
-                super(props);
-                this.chartRef = React.createRef();
-            }
-            render() {
-                return (
-                    <PieChart ref={this.chartRef}></PieChart>
-                );
-            }
-            get chart() {
-                return this.chartRef.current.instance();
-            }
-            getSeries () {
-                return this.chart.getAllSeries()[0];
-            }
-            getChinaPoints () {
-                return this.getSeries().getPointsByArg("China");
-            }
+        function App() {
+            const chartRef = useRef<PieChartRef>(null);
+
+            const getSeries = useCallback(() => {
+                const chart = chartRef.current?.instance();
+                return chart?.getAllSeries()[0];
+            }, []);
+
+            const getChinaPoints = useCallback(() => {
+                return getSeries()?.getPointsByArg("China");
+            }, [getSeries]);
+
+            return (
+                <PieChart ref={chartRef}></PieChart>
+            );
         }
 
         export default App;
@@ -320,29 +307,25 @@ Gets a point using its index. The index is zero-based.
 
     ##### React
 
-        <!-- tab: App.js -->
-        import React from 'react';
-        import PieChart from 'devextreme-react/pie-chart';
+        <!-- tab: App.tsx -->
+        import React, { useCallback, useRef } from 'react';
+        import PieChart, { type PieChartRef } from 'devextreme-react/pie-chart';
 
-        class App extends React.Component {
-            constructor(props) {
-                super(props);
-                this.chartRef = React.createRef();
-            }
-            render() {
-                return (
-                    <PieChart ref={this.chartRef}></PieChart>
-                );
-            }
-            get chart() {
-                return this.chartRef.current.instance();
-            }
-            getSeries () {
-                return this.chart.getAllSeries()[0];
-            }
-            getFirstPoint () {
-                return this.getSeries().getPointByPos(0);
-            }
+        function App() {
+            const chartRef = useRef<PieChartRef>(null);
+
+            const getSeries = useCallback(() => {
+                const chart = chartRef.current?.instance();
+                return chart?.getAllSeries()[0];
+            }, []);
+
+            const getFirstPoint = useCallback(() => {
+                return getSeries()?.getPointByPos(0);
+            }, [getSeries]);
+
+            return (
+                <PieChart ref={chartRef}></PieChart>
+            );
         }
 
         export default App;
@@ -409,29 +392,25 @@ Gets only [visible](/api-reference/10%20UI%20Components/dxPieChart/7%20Chart%20E
 
     ##### React
 
-        <!-- tab: App.js -->
-        import React from 'react';
-        import PieChart from 'devextreme-react/pie-chart';
+        <!-- tab: App.tsx -->
+        import React, { useCallback, useRef } from 'react';
+        import PieChart, { type PieChartRef } from 'devextreme-react/pie-chart';
 
-        class App extends React.Component {
-            constructor(props) {
-                super(props);
-                this.chartRef = React.createRef();
-            }
-            render() {
-                return (
-                    <PieChart ref={this.chartRef}></PieChart>
-                );
-            }
-            get chart() {
-                return this.chartRef.current.instance();
-            }
-            getSeries () {
-                return this.chart.getAllSeries()[0];
-            }
-            getVisiblePoints () {
-                return this.getSeries().getVisiblePoints();
-            }
+        function App() {
+            const chartRef = useRef<PieChartRef>(null);
+
+            const getSeries = useCallback(() => {
+                const chart = chartRef.current?.instance();
+                return chart?.getAllSeries()[0];
+            }, []);
+
+            const getVisiblePoints = useCallback(() => {
+                return getSeries()?.getVisiblePoints();
+            }, [getSeries]);
+
+            return (
+                <PieChart ref={chartRef}></PieChart>
+            );
         }
 
         export default App;

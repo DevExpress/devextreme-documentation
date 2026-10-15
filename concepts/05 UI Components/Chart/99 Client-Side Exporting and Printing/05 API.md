@@ -65,35 +65,28 @@ To export a UI component using the API, call the [exportTo(fileName, format)](/a
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Chart, { Export } from 'devextreme-react/chart';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef } from 'react';
+    import Chart, { Export, type ChartRef } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.chartRef = React.createRef();
-        }
+    function App() {
+        const chartRef = useRef<ChartRef>(null);
 
-        render() {
-            return (
-                <Chart ref={this.chartRef} ... >
-                    <Export enabled={true}>
-                </Chart>
-            );
-        }
+        const exportChart = useCallback(() => {
+            const chart = chartRef.current?.instance();
+            chart?.exportTo('Exported Chart', 'PDF');
+        }, []);
 
-        get chart() {
-            return this.chartRef.current.instance();
-        }
+        const printChart = useCallback(() => {
+            const chart = chartRef.current?.instance();
+            chart?.print();
+        }, []);
 
-        exportChart() {
-            this.chart.exportTo('Exported Chart', 'PDF');
-        }
-
-        printChart() {
-            this.chart.print();
-        }
+        return (
+            <Chart ref={chartRef} ... >
+                <Export enabled={true} />
+            </Chart>
+        );
     }
 
     export default App;

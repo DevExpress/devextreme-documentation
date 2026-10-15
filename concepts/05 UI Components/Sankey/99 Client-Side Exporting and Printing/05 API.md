@@ -60,29 +60,26 @@ To export the UI component using the API, call the [exportTo(fileName, format)](
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Sankey from 'devextreme-react/sankey';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef } from 'react';
+    import Sankey, { type SankeyRef } from 'devextreme-react/sankey';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.sankeyRef = React.createRef();
-        }
-        render() {
-            return (
-                <Sankey ref={this.sankeyRef} />
-            )
-        }
-        get sankey() {
-            return this.sankeyRef.current.instance();
-        }
-        exportSankey () {
-            return this.sankey.exportTo("exported_sankey", "PDF");
-        }
-        printSankey() {
-            return this.sankey.print();
-        }
+    function App() {
+        const sankeyRef = useRef<SankeyRef>(null);
+
+        const exportSankey = useCallback(() => {
+            const sankey = sankeyRef.current?.instance();
+            sankey?.exportTo('exported_sankey', 'PDF');
+        }, []);
+
+        const printSankey = useCallback(() => {
+            const sankey = sankeyRef.current?.instance();
+            sankey?.print();
+        }, []);
+
+        return (
+            <Sankey ref={sankeyRef} />
+        );
     }
 
     export default App;
@@ -175,38 +172,36 @@ You can also export several UI components simultaneously using their SVG markup.
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Sankey from 'devextreme-react/sankey';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef } from 'react';
+    import Sankey, { type SankeyRef } from 'devextreme-react/sankey';
     import { getMarkup, exportFromMarkup } from 'devextreme/viz/export';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.sankey1Ref = React.createRef();
-            this.sankey2Ref = React.createRef();
-        }
-        render() {
-            return (
-                <Sankey ref={this.sankey1Ref} />
-                <Sankey ref={this.sankey2Ref} />
-            )
-        }
-        get sankey1() {
-            return this.sankey1Ref.current.instance();
-        }
-        get sankey2() {
-            return this.sankey2Ref.current.instance();
-        }
-        exportSeveralSankeys () {
-            const sankeyMarkup = getMarkup([this.sankey1, this.sankey2]);
+    function App() {
+        const sankey1Ref = useRef<SankeyRef>(null);
+        const sankey2Ref = useRef<SankeyRef>(null);
+
+        const exportSeveralSankeys = useCallback(() => {
+            const sankey1 = sankey1Ref.current?.instance();
+            const sankey2 = sankey2Ref.current?.instance();
+            if (!sankey1 || !sankey2) {
+                return;
+            }
+            const sankeyMarkup = getMarkup([sankey1, sankey2]);
             exportFromMarkup(sankeyMarkup, {
                 height: 768,
                 width: 1024,
-                fileName: "exported_sankeys",
-                format: "PDF"
+                fileName: 'exported_sankeys',
+                format: 'PDF'
             });
-        }
+        }, []);
+
+        return (
+            <>
+                <Sankey ref={sankey1Ref} />
+                <Sankey ref={sankey2Ref} />
+            </>
+        );
     }
 
     export default App;

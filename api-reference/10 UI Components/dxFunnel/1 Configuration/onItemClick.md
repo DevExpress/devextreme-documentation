@@ -86,21 +86,19 @@ This function is often used to implement item selection as shown in the followin
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
 
-    import Funnel from 'devextreme-react/funnel';
+    import Funnel, { type FunnelTypes } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel onItemClick={this.selectItem} />
-            );
-        }
+    function App() {
+        const selectItem = useCallback((e: FunnelTypes.ItemClickEvent) => {
+            e.item.select(!e.item.isSelected());
+        }, []);
 
-        selectItem (e) {
-            e.item.select(!e.item.isSelected())
-        }
+        return (
+            <Funnel onItemClick={selectItem} />
+        );
     }
 
     export default App;

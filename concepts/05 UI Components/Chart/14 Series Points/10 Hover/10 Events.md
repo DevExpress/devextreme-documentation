@@ -78,29 +78,27 @@ When a user pauses on a series point, the Chart fires the [pointHoverChanged](/a
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Chart from 'devextreme-react/chart';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
+    import Chart, { type ChartTypes } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart
-                    onPointHoverChanged={this.onPointHoverChanged}
-                    ...
-                >
-                </Chart>
-            );
-        }
-
-        onPointHoverChanged (e) {
+    function App() {
+        const onPointHoverChanged = useCallback((e: ChartTypes.PointHoverChangedEvent) => {
             const point = e.target;
             if (point.isHovered()) {
                 // Commands to execute when the point is hovered over
             } else {
                 // Commands to execute when the point is hovered out
             }
-        }
+        }, []);
+
+        return (
+            <Chart
+                onPointHoverChanged={onPointHoverChanged}
+                ...
+            >
+            </Chart>
+        );
     }
 
     export default App;

@@ -4,4 +4,6 @@ Check the following:
 - [controls](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#controls) is `true` (required for zoom buttons).
 - Your application loads the OpenLayers stylesheet (`ol.css`).
 
-OpenLayers displays attribution in a collapsed control. Users can click the **i** button to expand this control.
+OpenLayers displays attribution in a collapsed control by default. Users can click the **i** button to expand this control.
+
+[note] Certain tile services prohibit collapsible attributions. Configure the OpenLayers [Attribution](https://openlayers.org/en/latest/apidoc/module-ol_control_Attribution.html) control to comply with your tile service's terms of use.

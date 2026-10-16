@@ -103,12 +103,12 @@ You can configure default formats for specific locales. Assign an object with ke
 You can also specify locale-specific formats and the `default` format as [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects. These objects can include the [locale](/Documentation/ApiReference/Common/Object_Structures/Format/#locale) field. Components use this locale in the following scenarios:
 
 - When a component uses the global **timeFormat**
-- When a component format does not specify **locale** and matches the global **timeFormat** or *"shortTime"*
+- When a component format does not specify **locale** and uses the *"shortTime"* [type](/Documentation/ApiReference/Common/Object_Structures/Format/#type) or the same **type** as the global **timeFormat**
 - When a component uses an Intl format that does not specify **locale** and includes time fields but no date fields:
     - Time: **hour**, **minute**, **second**
     - Date: **year**, **month**, **day**, **weekday**
 
-If a component uses any other time format, such as *"longTime"*, it displays values in the [current application locale](/Documentation/ApiReference/Common/utils/localization/#locale). To apply another locale to component formats, specify **locale** in these formats.
+If a component uses a different time format (such as *"longTime"*), the component displays values in the [current application locale](/Documentation/ApiReference/Common/utils/localization/#locale). To apply another locale, specify **locale** in this format.
 
 The following code specifies the *"de-DE"* locale for the global **timeFormat**:
 
@@ -170,7 +170,12 @@ The following code specifies the *"de-DE"* locale for the global **timeFormat**:
 
 ---
 
-[note] Assign [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects to the `default` key or specific locale keys instead of declaring format options directly inside **timeFormat**.
+[note]
+
+- Assign [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects to the `default` key or specific locale keys instead of declaring format options directly inside **timeFormat**.
+- If a format object in **timeFormat** does not specify **type**, only the *"shortTime"* predefined format uses the format object's **locale**.
+
+[/note]
 
 #####See Also#####
 - [Use Different Locales for Value Formats and UI Text](/Documentation/Guide/Common/Localization_and_Globalization/Value_Formatting/#Use_Different_Locales_for_Value_Formats_and_UI_Text)

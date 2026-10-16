@@ -108,7 +108,7 @@ You can use this approach only if the themes belong to the same group. For insta
 
 2. Call the [DevExpress.ui.themes.current(themeName)](/api-reference/50%20Common/utils/ui/themes/current(themeName).md '/Documentation/ApiReference/Common/utils/ui/themes/#currentthemeName') method to switch to another theme. When you switch between Fluent Next themes, call [refreshMode()](/Documentation/ApiReference/Common/Utils/ui/themes/#refreshMode) to update open overlays that use [container-specific inverted dark/light modes](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes).
 
-    The browser applies the new stylesheet after **current(themeName)** returns. Call **refreshMode()** in a callback function passed to the [ready(callback)](/Documentation/ApiReference/Common/utils/ui/themes/#readycallback). Callback functions passed to **ready(callback)** only run once, so register a callback before each **current(themeName)** call:
+    The browser applies the new stylesheet after **current(themeName)** returns. Call **refreshMode()** in a callback function passed to the [ready(callback)](/Documentation/ApiReference/Common/utils/ui/themes/#readycallback) method. Callback functions passed to **ready(callback)** only run once, so register a callback before each **current(themeName)** call:
 
         <!-- tab: Modular Application -->
         import themes from 'devextreme/ui/themes';

@@ -54,3 +54,7 @@
 </ul>
 
 [note] Keyboard navigation support depends on the Map [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider).
+
+#####See Also#####
+
+- [OpenStreetMap Provider - Accessibility](/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/#Accessibility/Keyboard_Navigation)

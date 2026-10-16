@@ -1,3 +1,9 @@
+[note]
+
+This section does not apply to Fluent Next themes. To customize these themes, refer to the following help topic: [Fluent Next Theme Customization](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/).
+
+[/note]
+
 You can use <a href="https://developer.mozilla.org/en-US/docs/Web/API/StyleSheet" target="_blank">StyleSheet API</a> to switch between color swatches. In the following code, theme swatches are called `theme.custom-scheme.light.css` and `theme.custom-scheme.dark.css` and are placed in the same folder as `index.html`. The code uses SelectBox to implement the swatch selector. To switch between themes too, call [DevExpress.ui.themes.current(themeName)](/api-reference/50%20Common/utils/ui/themes/current(themeName).md '/Documentation/ApiReference/Common/utils/ui/themes/#currentthemeName') method in the `onValueChanged` callback.
 
 ---

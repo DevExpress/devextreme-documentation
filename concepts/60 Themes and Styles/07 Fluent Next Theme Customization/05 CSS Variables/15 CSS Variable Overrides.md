@@ -7,7 +7,7 @@ You can override Design System variables to modify default Fluent Next styles. T
 
 [note]
 
-Consider the following when you define `:root` overrides:
+Note the following when you define `:root` overrides:
 
 - `:root` overrides and Fluent Next stylesheets share the same specificity. Load your override stylesheet after the Fluent Next stylesheet to apply your overrides. Scoped overrides that use class or ID selectors are applied regardless of load order.
 - [Theme mode containers](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes) redeclare variables that have different values in light and dark modes (for instance, `--dxds-color-bg` and `--dxds-color-content-primary`). `:root` overrides for these variables do not apply to elements within `dx-theme-mode-*` containers. To customize these variables within a theme mode container, define overrides for the container and include the mode class in the selector:

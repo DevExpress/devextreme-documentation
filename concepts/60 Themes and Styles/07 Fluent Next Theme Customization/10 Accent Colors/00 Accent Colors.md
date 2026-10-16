@@ -8,6 +8,6 @@ Accent colors only apply to HTML-based components and to the following [RangeSel
 - Slider handles
 - Slider markers
 
-Other SVG-based components use palette colors that do not depend on the accent color. Refer to the following help topic to customize colors in SVG-based components: [SVG-Based Components Customization - Palettes](/Documentation/Guide/Themes_and_Styles/SVG-Based_Components_Customization/#Palettes).
+Other SVG-based components use palette colors that do not depend on the accent color. Refer to the following help topic for additional information: [SVG-Based Components Customization - Palettes](/Documentation/Guide/Themes_and_Styles/SVG-Based_Components_Customization/#Palettes).
 
 [/note]

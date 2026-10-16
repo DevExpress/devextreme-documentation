@@ -7,7 +7,7 @@ Fluent Next themes ship with light and dark theme modes. Each Fluent Next styles
     - `dx.fluent-next.blue.dark.css`
     - `dx.fluent-next.blue.dark.compact.css`
 
-You can switch the theme mode for the entire page without loading another stylesheet. Assign the `dx-theme-mode-light` or `dx-theme-mode-dark` class to the `<html>` element. For more information about theme mode classes, refer to the following help topic: [Container-Specific Theme Modes](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes).
+You can switch the theme mode for the entire page without loading another stylesheet. Assign the `dx-theme-mode-light` or `dx-theme-mode-dark` class to the `<html>` element. Refer to the following help topic for additional information: [Container-Specific Theme Modes](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes).
 
 [note]
 

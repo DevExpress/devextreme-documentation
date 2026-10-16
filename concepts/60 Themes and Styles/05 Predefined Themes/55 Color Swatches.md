@@ -4,7 +4,7 @@ This section does not apply to Fluent Next themes. To customize these themes, re
 
 [/note]
 
-Color swatches are secondary color schemes used alongside a primary color scheme. You can use them to stylize parts of your application differently, for instance, when the navigation sidebar should be dark and the content area light.
+Color swatches are secondary color schemes used alongside a primary color scheme. You can use them to style parts of your application differently, for example, to make the navigation sidebar dark and the content area light.
 
 A color swatch is defined by scoped CSS rules that are prefixed with a specific selector: `dx-swatch-xxx` (for instance, `dx-swatch-green`). To apply a color swatch to a part of an HTML document, wrap this part as follows:
 

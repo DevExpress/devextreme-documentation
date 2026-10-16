@@ -41,4 +41,4 @@ Load your override stylesheet after the Fluent Next stylesheet. Palette variable
 
 `--dx-viz-*` color overrides also apply to palette extensions. An SVG-based component automatically extends the applied palette based on an [extension mode](/Documentation/ApiReference/Common_Types/charts/#PaletteExtensionMode) when the component needs more colors than the palette contains. The [generateColors(palette, count, options)](/Documentation/ApiReference/Common/Utils/viz/#generateColorspalette_count_options) utility method also uses color overrides.
 
-Methods that return colors (for instance, a Chart point's [getColor()](/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Point/Methods/#getColor)) return resolved colors that components paint. These methods return opaque colors in hexadecimal format and colors with transparency in `rgba()` format.
+Methods that return colors (for instance, a Chart point's [getColor()](/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Point/Methods/#getColor)) return resolved colors used to render elements. These methods return opaque colors in hexadecimal format and colors with transparency in `rgba()` format.

@@ -135,7 +135,7 @@ Follow the steps below to get a file's GUID in 'chunk' [upload mode](/api-refere
 
     export default App;
 
-##### ASP.NET MVC/CORE Controls
+##### ASP.NET Core Controls
 
     @(Html.DevExtreme().FileUploader()
         .ID("file-uploader")

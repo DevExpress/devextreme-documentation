@@ -22226,8 +22226,16 @@
       "react": "Format",
       "vue": "DxFormat"
     },
+    "format.locale": {
+      "angular": "dxo-locale",
+      "react": "Locale",
+      "vue": "DxLocale"
+    },
     "format.useCurrencyAccountingStyle": {
       "vue": "use-currency-accounting-style"
+    },
+    "formatLocale": {
+      "vue": "format-locale"
     },
     "funnelItemInfo.item": {
       "angular": "dxo-item",

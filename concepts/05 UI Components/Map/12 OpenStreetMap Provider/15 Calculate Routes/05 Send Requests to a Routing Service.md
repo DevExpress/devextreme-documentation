@@ -1,4 +1,4 @@
-**calculateRoute** receives a [CalculateOsmRouteInfo](/Documentation/ApiReference/UI_Components/dxMap/Types/CalculateOsmRouteInfo/) object. The object contains route waypoints (**CalculateOsmRouteInfo**.**locations**) and the transportation mode. Send these values to a routing service and return the route geometry you obtained from the service:
+**calculateRoute** receives a [CalculateOsmRouteInfo](/Documentation/ApiReference/UI_Components/dxMap/Types/CalculateOsmRouteInfo/) object. The object contains route waypoints (**CalculateOsmRouteInfo**.**locations**) and the transportation mode. Send these values to a routing service and return the route geometry received from the service:
 
     <!--JavaScript-->
     async function calculateRoute({ locations, mode }) {
@@ -14,4 +14,4 @@
         return route.features[0].geometry; // A GeoJSON LineString object
     }
 
-This example sends route parameters to an application endpoint (`/api/route`) that returns a GeoJSON [FeatureCollection](https://www.rfc-editor.org/info/rfc7946/#section-3.3). Adapt request/response formats to your routing service.
+This example sends route parameters to an application endpoint (`/api/route`) that returns a GeoJSON [FeatureCollection](https://www.rfc-editor.org/info/rfc7946/#section-3.3). Adapt request and response formats to your routing service.

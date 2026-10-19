@@ -11,6 +11,6 @@ The Map does not add attribution automatically. Specify the copyright notices an
 
 OpenLayers displays attribution in a collapsed control by default. Users can click the **i** button to expand this control.
 
-[note] Certain tile services prohibit collapsible attributions. Configure the OpenLayers [Attribution](https://openlayers.org/en/latest/apidoc/module-ol_control_Attribution.html) control to comply with your tile service's terms of use.
+[note] Tile service terms may prohibit collapsible attributions. Configure the OpenLayers [Attribution](https://openlayers.org/en/latest/apidoc/module-ol_control_Attribution.html) control to comply with your tile service's terms of use.
 
-The Map passes the **attribution** value to OpenLayers as HTML. This behavior makes the Map potentially vulnerable to XSS attacks. If the **attribution** value comes from an untrusted source, sanitize this value before assignment. Refer to the following help topic for more information: [Potentially Vulnerable API - OsmTileServerConfig.attribution](/Documentation/Guide/Common/Security_Considerations/#HTML_Encoding/Potentially_Vulnerable_API/OsmTileServerConfigattribution).
+The Map passes the attribution value to OpenLayers as HTML. This behavior makes the Map potentially vulnerable to XSS attacks. If the attribution value comes from an untrusted source, sanitize this value before assignment. Refer to the following help topic for more information: [Potentially Vulnerable API - OsmTileServerConfig.attribution](/Documentation/Guide/Common/Security_Considerations/#HTML_Encoding/Potentially_Vulnerable_API/OsmTileServerConfigattribution).

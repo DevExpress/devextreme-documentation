@@ -88,23 +88,21 @@ This function is often used to implement item selection as shown in the followin
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
 
-    import TreeMap from 'devextreme-react/tree-map';
+    import TreeMap, { type TreeMapTypes } from 'devextreme-react/tree-map';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <TreeMap ...
-                    onClick={this.selectItem}>
-                </TreeMap>
-            );
-        }
+    function App() {
+        const selectItem = useCallback((e: TreeMapTypes.ClickEvent) => {
+            e.node.select(!e.node.isSelected());
+        }, []);
 
-        selectItem (e) {
-            e.node.select(!e.node.isSelected())
-        }
+        return (
+            <TreeMap ...
+                onClick={selectItem}>
+            </TreeMap>
+        );
     }
 
     export default App;

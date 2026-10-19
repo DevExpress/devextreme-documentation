@@ -4,7 +4,7 @@ type: any
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+The data object of the row being dragged.
 
 ---
-<!-- Description goes here -->
+Use this field to identify the row in your data source. Access a key field in the data object instead of treating a visible row index as an index in the underlying data source.

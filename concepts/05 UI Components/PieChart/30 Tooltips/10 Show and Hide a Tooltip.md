@@ -172,33 +172,26 @@ You can also hide the tooltip regardless of the point to which it belongs by cal
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import PieChart from 'devextreme-react/pie-chart';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef } from 'react';
+    import PieChart, { type PieChartRef } from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
+    function App() {
+        const pieChartRef = useRef<PieChartRef>(null);
 
-            this.pieChartRef = React.createRef();
+        const hideTooltip = useCallback(() => {
+            const pieChart = pieChartRef.current?.instance();
+            pieChart?.hideTooltip();
+        }, []);
 
-            this.hideTooltip = () => {
-                this.pieChart.hideTooltip();
-            };
-        }
-
-        render() {
-            return (
-                <PieChart ...
-                    ref={this.pieChartRef}>
-                </PieChart>
-            );
-        }
-
-        get pieChart() {
-            return this.pieChartRef.current.instance();
-        }
+        return (
+            <PieChart ...
+                ref={pieChartRef}>
+            </PieChart>
+        );
     }
+
+    export default App;
 
 ---
 

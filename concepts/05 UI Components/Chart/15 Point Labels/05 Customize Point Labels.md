@@ -82,30 +82,28 @@ If you need to change the text displayed by point labels, declare the [customize
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import Chart, {
         Series,
         Label
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart ... >
-                    <Series>
-                        <Label
-                            visible={true}
-                            customizeText={this.customizeText}
-                        />
-                    </Series>
-                </Chart>
-            );
-        }
+    function customizeText(pointInfo: { argument: string; value: number }) {
+        return `${pointInfo.argument}: ${pointInfo.value}`;
+    }
 
-        customizeText (pointInfo) {
-            return `${pointInfo.argument}: ${pointInfo.value}`;
-        }
+    function App() {
+        return (
+            <Chart ... >
+                <Series>
+                    <Label
+                        visible={true}
+                        customizeText={customizeText}
+                    />
+                </Series>
+            </Chart>
+        );
     }
 
     export default App;
@@ -202,34 +200,32 @@ You can also customize an individual label. For this purpose, assign a function 
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import Chart, {
         Series,
         Label
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart
-                    customizeLabel={this.customizeLabel}
-                >
-                    <Series>
-                        <Label
-                            visible={true}
-                            backgroundColor="blue"
-                        />
-                    </Series>
-                </Chart>
-            );
-        }
+    // Assigns the red color to all labels whose series points have value more than 100
+    // Other labels remain painted in blue
+    function customizeLabel(pointInfo: { value: number }) {
+        return pointInfo.value > 100 ? { backgroundColor: 'red' } : { };
+    }
 
-        // Assigns the red color to all labels whose series points have value more than 100
-        // Other labels remain painted in blue
-        customizeLabel (pointInfo) {
-            return pointInfo.value > 100 ? { backgroundColor: 'red' } : { };
-        }
+    function App() {
+        return (
+            <Chart
+                customizeLabel={customizeLabel}
+            >
+                <Series>
+                    <Label
+                        visible={true}
+                        backgroundColor="blue"
+                    />
+                </Series>
+            </Chart>
+        );
     }
 
     export default App;

@@ -160,30 +160,30 @@ If the Chart is [bound to the RangeSelector](/concepts/05%20UI%20Components/Char
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useState } from 'react';
     import Chart, {
         ArgumentAxis
     } from 'devextreme-react/chart';
-    import RangeSelector from 'devextreme-react/range-selector';
+    import RangeSelector, { type RangeSelectorTypes } from 'devextreme-react/range-selector';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = { chart_visualRange: [0, 10] };
-            this.updateChartVisualRange = () => this.setState({ chart_visualRange: e.value });
-        }
+    function App() {
+        const [visualRange, setVisualRange] = useState<Array<number | string | Date>>([0, 10]);
 
-        render() {
-            return (
+        const updateChartVisualRange = useCallback((e: RangeSelectorTypes.ValueChangedEvent) => {
+            setVisualRange(e.value);
+        }, []);
+
+        return (
+            <React.Fragment>
                 <Chart ... >
-                    <ArgumentAxis visualRange={this.state.chart_visualRange} />
+                    <ArgumentAxis visualRange={visualRange} />
                 </Chart>
                 <RangeSelector ...
-                    onValueChanged={this.updateChartVisualRange}>
+                    onValueChanged={updateChartVisualRange}>
                 </RangeSelector>
-            );
-        }
+            </React.Fragment>
+        );
     }
 
     export default App;

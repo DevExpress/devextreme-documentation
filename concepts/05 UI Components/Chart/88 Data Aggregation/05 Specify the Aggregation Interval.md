@@ -91,36 +91,34 @@ Specify the **argumentAxis**.[aggregationInterval](/api-reference/10%20UI%20Comp
 
     ##### React
 
-        <!-- tab: App.js -->
+        <!-- tab: App.tsx -->
         import React from 'react';
         import Chart, {
             ArgumentAxis,
             AggregationInterval
         } from 'devextreme-react/chart';
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <>
-                        <Chart ... >
-                            <!-- A new interval every 100 units -->
-                            <ArgumentAxis ... aggregationInterval={100} >
-                            </ArgumentAxis>
-                        </Chart>
-                        <Chart ... >
-                            <!-- A new interval every day -->
-                            <ArgumentAxis ... aggregationInterval="day">
-                            </ArgumentAxis>
-                        </Chart>
-                        <Chart ... >
-                            <ArgumentAxis ... >
-                                <!-- A new interval every five days -->
-                                <AggregationInterval days={5} />
-                            </ArgumentAxis>
-                        </Chart>
-                    </>
-                );
-            }
+        function App() {
+            return (
+                <>
+                    <Chart ... >
+                        {/* A new interval every 100 units */}
+                        <ArgumentAxis ... aggregationInterval={100} >
+                        </ArgumentAxis>
+                    </Chart>
+                    <Chart ... >
+                        {/* A new interval every day */}
+                        <ArgumentAxis ... aggregationInterval="day">
+                        </ArgumentAxis>
+                    </Chart>
+                    <Chart ... >
+                        <ArgumentAxis ... >
+                            {/* A new interval every five days */}
+                            <AggregationInterval days={5} />
+                        </ArgumentAxis>
+                    </Chart>
+                </>
+            );
         }
 
         export default App;
@@ -177,21 +175,19 @@ Specify the **argumentAxis**.[aggregationGroupWidth](/api-reference/10%20UI%20Co
 
     ##### React
 
-        <!-- tab: App.js -->
+        <!-- tab: App.tsx -->
         import React from 'react';
         import Chart, {
             ArgumentAxis
         } from 'devextreme-react/chart';
 
-        class App extends React.Component {
-            render() {
-                return (
-                    <Chart ... >
-                        <!-- A new interval every 100 pixels -->
-                        <ArgumentAxis ... aggregationGroupWidth={100} />
-                    </Chart>
-                );
-            }
+        function App() {
+            return (
+                <Chart ... >
+                    {/* A new interval every 100 pixels */}
+                    <ArgumentAxis ... aggregationGroupWidth={100} />
+                </Chart>
+            );
         }
 
         export default App;

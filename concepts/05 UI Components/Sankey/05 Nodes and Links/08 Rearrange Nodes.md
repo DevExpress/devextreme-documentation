@@ -59,18 +59,16 @@ Nodes in a column are separated by a space. You can use the **node**.[padding](/
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import Sankey, { Node } from 'devextreme-react/sankey';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Sankey ... >
-                    <Node padding={1} />
-                </Sankey>
-            )
-        }
+    function App() {
+        return (
+            <Sankey ... >
+                <Node padding={1} />
+            </Sankey>
+        );
     }
 
     export default App;

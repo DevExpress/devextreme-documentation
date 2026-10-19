@@ -90,23 +90,21 @@ The [onSeriesClick](/api-reference/10%20UI%20Components/dxChart/1%20Configuratio
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
 
-    import {WidgetName} from 'devextreme-react/{widget-name}';
+    import {WidgetName}, { type {WidgetName}Types } from 'devextreme-react/{widget-name}';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <{WidgetName} ...
-                    onPointClick={this.cancelSeriesClick}>
-                </{WidgetName}>
-            );
-        }
-
-        cancelSeriesClick (e) {
+    function App() {
+        const cancelSeriesClick = useCallback((e: {WidgetName}Types.PointClickEvent) => {
             e.cancel = true;
-        }
+        }, []);
+
+        return (
+            <{WidgetName} ...
+                onPointClick={cancelSeriesClick}>
+            </{WidgetName}>
+        );
     }
 
     export default App;

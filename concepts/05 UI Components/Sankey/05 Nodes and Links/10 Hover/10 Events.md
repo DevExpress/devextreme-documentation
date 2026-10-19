@@ -96,33 +96,33 @@ The Sankey UI component raises individual events for nodes and links when their 
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Sankey from 'devextreme-react/sankey';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
+    import Sankey, { type SankeyTypes } from 'devextreme-react/sankey';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Sankey
-                    onNodeHoverChanged={this.onNodeHoverChanged}
-                    onLinkHoverChanged={this.onLinkHoverChanged}
-                />
-            );
-        }
-        onNodeHoverChanged (e) {
-            if(e.target.isHovered()) {
+    function App() {
+        const onNodeHoverChanged = useCallback((e: SankeyTypes.NodeHoverEvent) => {
+            if (e.target.isHovered()) {
                 // Commands to execute when the pointer enters a node
             } else {
                 // Commands to execute when the pointer leaves a node
             }
-        },
-        onLinkHoverChanged (e) {
-            if(e.target.isHovered()) {
+        }, []);
+
+        const onLinkHoverChanged = useCallback((e: SankeyTypes.LinkHoverEvent) => {
+            if (e.target.isHovered()) {
                 // Commands to execute when the pointer enters a link
             } else {
                 // Commands to execute when the pointer leaves a link
             }
-        }
+        }, []);
+
+        return (
+            <Sankey
+                onNodeHoverChanged={onNodeHoverChanged}
+                onLinkHoverChanged={onLinkHoverChanged}
+            />
+        );
     }
 
     export default App;

@@ -43,43 +43,43 @@ Declare several objects in the [panes](/api-reference/10%20UI%20Components/dxCha
 
     ##### Vue
 
-    <!-- tab: App.vue -->
-    <template> 
-        <DxChart ... >
-            <DxPane name="topPane"/>
-            <DxPane name="bottomPane"/>
-        </DxChart>
-    </template>
+        <!-- tab: App.vue -->
+        <template> 
+            <DxChart ... >
+                <DxPane name="topPane"/>
+                <DxPane name="bottomPane"/>
+            </DxChart>
+        </template>
 
-    <script>
-    import DxChart, {
-        DxPane
-    } from 'devextreme-vue/chart';
-
-    export default {
-        components: {
-            DxChart,
+        <script>
+        import DxChart, {
             DxPane
+        } from 'devextreme-vue/chart';
+
+        export default {
+            components: {
+                DxChart,
+                DxPane
+            }
         }
-    }
-    </script>
+        </script>
 
     ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Chart, {
-        Pane
-    } from 'devextreme-react/chart';
+        <!-- tab: App.js -->
+        import React from 'react';
+        import Chart, {
+            Pane
+        } from 'devextreme-react/chart';
 
-    export default function App() {
-        return (
-            <Chart ... >
-                <Pane name="topPane"/>
-                <Pane name="bottomPane"/>
-            </Chart>
-        );
-    }
+        export default function App() {
+            return (
+                <Chart ... >
+                    <Pane name="topPane"/>
+                    <Pane name="bottomPane"/>
+                </Chart>
+            );
+        }
 
     ---
 
@@ -124,43 +124,43 @@ Bind each of them to a pane using the [pane](/api-reference/10%20UI%20Components
 
     ##### Vue
 
-    <!-- tab: App.vue -->
-    <template> 
-        <DxChart ... >
-            <DxValueAxis pane="topPane"/>
-            <DxValueAxis pane="bottomPane"/>
-        </DxChart>
-    </template>
+        <!-- tab: App.vue -->
+        <template> 
+            <DxChart ... >
+                <DxValueAxis pane="topPane"/>
+                <DxValueAxis pane="bottomPane"/>
+            </DxChart>
+        </template>
 
-    <script>
-    import DxChart, {
-        DxValueAxis
-    } from 'devextreme-vue/chart';
-
-    export default {
-        components: {
-            DxChart,
+        <script>
+        import DxChart, {
             DxValueAxis
+        } from 'devextreme-vue/chart';
+
+        export default {
+            components: {
+                DxChart,
+                DxValueAxis
+            }
         }
-    }
-    </script>
+        </script>
 
     ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Chart, {
-        ValueAxis
-    } from 'devextreme-react/chart';
+        <!-- tab: App.js -->
+        import React from 'react';
+        import Chart, {
+            ValueAxis
+        } from 'devextreme-react/chart';
 
-    export default function App() {
-        return (
-            <Chart ... >
-                <ValueAxis pane="topPane"/>
-                <ValueAxis pane="bottomPane"/>
-            </Chart>
-        );
-    }
+        export default function App() {
+            return (
+                <Chart ... >
+                    <ValueAxis pane="topPane"/>
+                    <ValueAxis pane="bottomPane"/>
+                </Chart>
+            );
+        }
 
     ---
 
@@ -215,51 +215,51 @@ Bind each series to a pane using the [pane](/api-reference/10%20UI%20Components/
 
     ##### Vue
 
-    <!-- tab: App.vue -->
-    <template> 
-        <DxChart ... >
-            <DxSeries pane="topPane"/>
-            <DxSeries pane="bottomPane"/>
-            <DxSeries pane="topPane"/>
-            <DxSeries>
-                <!-- This series will be bound to the default pane -->
-            </DxSeries>
-        </DxChart>
-    </template>
+        <!-- tab: App.vue -->
+        <template> 
+            <DxChart ... >
+                <DxSeries pane="topPane"/>
+                <DxSeries pane="bottomPane"/>
+                <DxSeries pane="topPane"/>
+                <DxSeries>
+                    <!-- This series will be bound to the default pane -->
+                </DxSeries>
+            </DxChart>
+        </template>
 
-    <script>
-    import DxChart, {
-        DxSeries
-    } from 'devextreme-vue/chart';
-
-    export default {
-        components: {
-            DxChart,
+        <script>
+        import DxChart, {
             DxSeries
+        } from 'devextreme-vue/chart';
+
+        export default {
+            components: {
+                DxChart,
+                DxSeries
+            }
         }
-    }
-    </script>
+        </script>
 
     ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Chart, {
-        Series
-    } from 'devextreme-react/chart';
+        <!-- tab: App.js -->
+        import React from 'react';
+        import Chart, {
+            Series
+        } from 'devextreme-react/chart';
 
-    export default function App() {
-        return (
-            <Chart ... >
-                <Series pane="topPane"/>
-                <Series pane="bottomPane"/>
-                <Series pane="topPane"/>
-                <Series>
-                    {/* This series will be bound to the default pane */}
-                </Series>
-            </Chart>
-        );
-    }
+        export default function App() {
+            return (
+                <Chart ... >
+                    <Series pane="topPane"/>
+                    <Series pane="bottomPane"/>
+                    <Series pane="topPane"/>
+                    <Series>
+                        {/* This series will be bound to the default pane */}
+                    </Series>
+                </Chart>
+            );
+        }
 
     ---
 

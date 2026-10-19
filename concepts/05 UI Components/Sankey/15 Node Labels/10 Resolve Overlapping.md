@@ -57,18 +57,16 @@ Node labels can overlap when the Sankey contains many nodes. You can specify the
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import Sankey, { Label } from 'devextreme-react/sankey';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Sankey ... >
-                    <Label overlappingBehavior="ellipsis" {/* or "hide" | "none" */} />
-                </Sankey>
-            )
-        }
+    function App() {
+        return (
+            <Sankey ... >
+                <Label overlappingBehavior="ellipsis" /* or "hide" | "none" */ />
+            </Sankey>
+        );
     }
 
     export default App;

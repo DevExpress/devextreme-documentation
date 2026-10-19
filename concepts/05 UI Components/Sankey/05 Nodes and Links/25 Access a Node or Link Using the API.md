@@ -62,29 +62,26 @@ Call the [getAllNodes()](/api-reference/10%20UI%20Components/dxSankey/3%20Method
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Sankey from 'devextreme-react/sankey';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef } from 'react';
+    import Sankey, { type SankeyRef } from 'devextreme-react/sankey';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.sankeyRef = React.createRef();
-        }
-        render() {
-            return (
-                <Sankey ref={this.sankeyRef} />
-            )
-        }
-        get sankey() {
-            return this.sankeyRef.current.instance();
-        }
-        getAllNodes() {
-            return this.sankey.getAllNodes();
-        }
-        getAllLinks() {
-            return this.sankey.getAllLinks();
-        }
+    function App() {
+        const sankeyRef = useRef<SankeyRef>(null);
+
+        const getAllNodes = useCallback(() => {
+            const sankey = sankeyRef.current?.instance();
+            return sankey?.getAllNodes();
+        }, []);
+
+        const getAllLinks = useCallback(() => {
+            const sankey = sankeyRef.current?.instance();
+            return sankey?.getAllLinks();
+        }, []);
+
+        return (
+            <Sankey ref={sankeyRef} />
+        );
     }
 
     export default App;
@@ -155,20 +152,19 @@ You can also access a node or link in the event handlers. For example, the [onNo
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Sankey from 'devextreme-react/sankey';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
+    import Sankey, { type SankeyTypes } from 'devextreme-react/sankey';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Sankey onNodeClick={this.onNodeClick} />
-            )
-        }
-        onNodeClick(e) {
-            let node = e.target;
+    function App() {
+        const onNodeClick = useCallback((e: SankeyTypes.NodeClickEvent) => {
+            const node = e.target;
             // ...
-        }
+        }, []);
+
+        return (
+            <Sankey onNodeClick={onNodeClick} />
+        );
     }
 
     export default App;

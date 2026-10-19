@@ -1,6 +1,6 @@
 ---
 id: dxFunnel.Options.label.border.dashStyle
-type: Enums.DashStyle
+type: DashStyle
 default: 'solid'
 ---
 ---

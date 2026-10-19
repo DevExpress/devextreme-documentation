@@ -141,27 +141,22 @@ The layout does not automatically adapt to changes made in the UI component's co
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Chart from 'devextreme-react/chart';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef } from 'react';
+    import Chart, { type ChartRef } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
+    function App() {
+        const chartRef = useRef<ChartRef>(null);
 
-            this.chartRef = React.createRef();
-        }
+        const renderChart = useCallback(() => {
+            const chart = chartRef.current?.instance();
+            chart?.render();
+        }, []);
 
-        render() {
-            return (
-                <Chart ref={this.chartRef} ... >
-                </Chart>
-            );
-        }
-
-        renderChart () {
-            this.chartRef.current.instance().render();
-        }
+        return (
+            <Chart ref={chartRef} ... >
+            </Chart>
+        );
     }
 
     export default App;

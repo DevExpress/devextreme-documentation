@@ -78,29 +78,27 @@ When a user selects a series point, the Chart fires the [pointSelectionChanged](
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Chart from 'devextreme-react/chart';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
+    import Chart, { type ChartTypes } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart
-                    onPointSelectionChanged={this.onPointSelectionChanged}
-                    ...
-                >
-                </Chart>
-            );
-        }
-
-        onPointSelectionChanged (e) {
+    function App() {
+        const onPointSelectionChanged = useCallback((e: ChartTypes.PointSelectionChangedEvent) => {
             const point = e.target;
             if (point.isSelected()) {
                 // Commands to execute when the point is selected
             } else {
                 // Commands to execute when the selection is cleared
             }
-        }
+        }, []);
+
+        return (
+            <Chart
+                onPointSelectionChanged={onPointSelectionChanged}
+                ...
+            >
+            </Chart>
+        );
     }
 
     export default App;

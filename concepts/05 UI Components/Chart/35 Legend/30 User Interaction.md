@@ -241,24 +241,22 @@ In addition, a user can click legend items. By default, the UI component does no
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Chart from 'devextreme-react/chart';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
+    import Chart, { type ChartTypes } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart
-                    onLegendClick={this.legendClickHandler}
-                    ... >
-                </Chart>
-            );
-        }
-
-        legendClickHandler(e) {
+    function App() {
+        const legendClickHandler = useCallback((e: ChartTypes.LegendClickEvent) => {
             const series = e.target;
             // Event handling commands go here
-        }
+        }, []);
+
+        return (
+            <Chart
+                onLegendClick={legendClickHandler}
+                ... >
+            </Chart>
+        );
     }
 
     export default App;

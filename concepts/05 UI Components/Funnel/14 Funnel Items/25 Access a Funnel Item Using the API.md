@@ -53,26 +53,21 @@ Call the [getAllItems()](/api-reference/10%20UI%20Components/dxFunnel/3%20Method
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Funnel from 'devextreme-react/funnel';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef } from 'react';
+    import Funnel, { type FunnelRef } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.funnelRef = React.createRef();
-        }
-        render() {
-            return (
-                <Funnel ref={this.funnelRef} />
-            );
-        }
-        get funnel() {
-            return this.funnelRef.current.instance();
-        }
-        getAllItems () {
-            return this.funnel.getAllItems();
-        }
+    function App() {
+        const funnelRef = useRef<FunnelRef>(null);
+
+        const getAllItems = useCallback(() => {
+            const funnel = funnelRef.current?.instance();
+            return funnel?.getAllItems();
+        }, []);
+
+        return (
+            <Funnel ref={funnelRef} />
+        );
     }
 
     export default App;
@@ -143,20 +138,19 @@ You can also access a funnel item in the event handlers. For example, the [onIte
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Funnel from 'devextreme-react/funnel';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
+    import Funnel, { type FunnelTypes } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel onItemClick={this.onItemClick} />
-            );
-        }
-        onItemClick () {
-            let item = e.item;
+    function App() {
+        const onItemClick = useCallback((e: FunnelTypes.ItemClickEvent) => {
+            const item = e.item;
             // ...
-        }
+        }, []);
+
+        return (
+            <Funnel onItemClick={onItemClick} />
+        );
     }
 
     export default App;

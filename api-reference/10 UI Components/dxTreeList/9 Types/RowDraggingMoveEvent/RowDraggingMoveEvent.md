@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-The type of the **rowDragging**.[onDragMove]({basewidgetpath}/Configuration/rowDragging/#onDragMove) event handler's argument.
+The type of the **rowDragging**.[onDragMove](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#onDragMove) event handler's argument.
 
 ---
-<!-- Description goes here -->
+Use this type to annotate the argument of an [onDragMove](/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/rowDragging/#onDragMove) handler. Refer to the handler's description for details about the event argument. The **TRowData** and **TKey** type parameters specify the row data and key types.

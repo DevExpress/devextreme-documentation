@@ -157,25 +157,24 @@ Properties declared in the **tooltip** object apply to all tooltips in the Funne
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
-    import Funnel, { Tooltip } from 'devextreme-react/funnel';
+    import Funnel, { Tooltip, type FunnelTypes } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Funnel ... >
-                    <Tooltip
-                        enabled={true}
-                        color="yellow"
-                        customizeTooltip={this.customizeTooltip}
-                    />
-                </Funnel>
-            );
-        }
-        customizeTooltip (itemInfo) {
-            return itemInfo.value > 100 ? { color: 'red' } : { }
-        }
+    function customizeTooltip(itemInfo: { item?: FunnelTypes.Item; value?: number }) {
+        return (itemInfo.value ?? 0) > 100 ? { color: 'red' } : { };
+    }
+
+    function App() {
+        return (
+            <Funnel ... >
+                <Tooltip
+                    enabled={true}
+                    color="yellow"
+                    customizeTooltip={customizeTooltip}
+                />
+            </Funnel>
+        );
     }
 
     export default App;

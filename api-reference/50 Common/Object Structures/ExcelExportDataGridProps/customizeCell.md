@@ -249,9 +249,7 @@ To add asynchronous operations to **customizeCell**, follow these steps:
         onExporting(e) {
             const workbook = new Workbook();
             const worksheet = workbook.addWorksheet('Companies');
-
             let promiseArray = [];
-
             exportDataGrid({
                 component: e.component,
                 worksheet: worksheet,
@@ -260,7 +258,6 @@ To add asynchronous operations to **customizeCell**, follow these steps:
                     const asyncOperation = new Promise((resolve, reject) => {
                         // ...
                     });
-
                     promiseArray.push(asyncOperation);
                 }
             }).then(() => {

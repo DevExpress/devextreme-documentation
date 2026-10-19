@@ -77,28 +77,26 @@ The Chart provides an API for showing and hiding a series at runtime. The most c
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Chart from 'devextreme-react/chart';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
+    import Chart, { type ChartTypes } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart
-                    onLegendClick={this.legendClickHandler}
-                    ... >
-                </Chart>
-            );
-        }
-
-        legendClickHandler(e) {
+    function App() {
+        const legendClickHandler = useCallback((e: ChartTypes.LegendClickEvent) => {
             const series = e.target;
             if (series.isVisible()) {
                 series.hide();
             } else {
                 series.show();
             }
-        }
+        }, []);
+
+        return (
+            <Chart
+                onLegendClick={legendClickHandler}
+                ... >
+            </Chart>
+        );
     }
 
     export default App;

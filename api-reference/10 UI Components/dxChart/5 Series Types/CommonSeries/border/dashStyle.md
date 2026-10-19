@@ -1,6 +1,6 @@
 ---
 id: dxChartSeriesTypes.CommonSeries.border.dashStyle
-type: Enums.DashStyle | undefined
+type: DashStyle | undefined
 default: undefined
 ---
 ---

@@ -93,28 +93,27 @@ You can handle these events with functions. If the handling functions are not go
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
     import Chart, {
-        Export
+        Export,
+        type ChartTypes
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart
-                    onExporting={this.onExporting}
-                    onExported={this.onExported}
-                    onFileSaving={this.onFileSaving}
-                    >
-                    <Export enabled={true}/>
-                </Chart>
-            );
-        }
+    function App() {
+        const onExporting = useCallback((e: ChartTypes.ExportingEvent) => {}, []);
+        const onExported = useCallback((e: ChartTypes.ExportedEvent) => {}, []);
+        const onFileSaving = useCallback((e: ChartTypes.FileSavingEvent) => {}, []);
 
-        onExporting(e) {}
-        onExported(e) {}
-        onFileSaving(e) {}
+        return (
+            <Chart
+                onExporting={onExporting}
+                onExported={onExported}
+                onFileSaving={onFileSaving}
+                >
+                <Export enabled={true}/>
+            </Chart>
+        );
     }
 
     export default App;

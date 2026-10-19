@@ -69,20 +69,18 @@ The [title](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/tit
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import Sankey, { Title, Subtitle } from 'devextreme-react/sankey';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Sankey ... >
-                    <Title text="I am the Title">
-                        <Subtitle text="I am the Subtitle" />
-                    </Title>
-                </Sankey>
-            )
-        }
+    function App() {
+        return (
+            <Sankey ... >
+                <Title text="I am the Title">
+                    <Subtitle text="I am the Subtitle" />
+                </Title>
+            </Sankey>
+        );
     }
 
     export default App;
@@ -140,16 +138,14 @@ You can set the title's text more concisely if you assign it directly to the **t
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import Sankey from 'devextreme-react/sankey';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Sankey title="I am the Title" />
-            )
-        }
+    function App() {
+        return (
+            <Sankey title="I am the Title" />
+        );
     }
 
     export default App;

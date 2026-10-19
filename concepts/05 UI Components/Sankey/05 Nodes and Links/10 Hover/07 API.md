@@ -42,13 +42,19 @@ To change a node or link's hover state, pass **true** or **false** to their [hov
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
+    import Sankey from 'devextreme-react/sankey';
+    import type { dxSankeyLink, dxSankeyNode } from 'devextreme/viz/sankey';
 
-    class App extends React.Component {
-        toggleItemHoverState (item) {
-            item.hover(!item.isHovered());
-        }
+    function toggleItemHoverState(item: dxSankeyNode | dxSankeyLink) {
+        item.hover(!item.isHovered());
+    }
+
+    function App() {
+        return (
+            <Sankey ... />
+        );
     }
 
     export default App;

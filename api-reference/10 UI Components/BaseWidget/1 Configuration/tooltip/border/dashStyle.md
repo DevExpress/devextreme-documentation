@@ -1,6 +1,6 @@
 ---
 id: BaseWidget.Options.tooltip.border.dashStyle
-type: Enums.DashStyle
+type: DashStyle
 default: 'solid'
 ---
 ---

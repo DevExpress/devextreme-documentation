@@ -1,6 +1,6 @@
 ---
 id: dxPolarChartSeriesTypes.CommonPolarChartSeries.hoverStyle.dashStyle
-type: Enums.DashStyle
+type: DashStyle
 default: 'solid'
 ---
 ---

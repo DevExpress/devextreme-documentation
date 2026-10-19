@@ -171,27 +171,21 @@ You can also hide the tooltip regardless of the point to which it belongs. To do
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Chart from 'devextreme-react/chart';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef } from 'react';
+    import Chart, { type ChartRef } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.chartRef = React.createRef();
-            this.hideTooltip = this.hideTooltip.bind(this);
-        }
-        render() {
-            return (
-                <Chart ref={this.chartRef}></Chart>
-            );
-        }
-        get chart() {
-            return this.chartRef.current.instance();
-        }
-        hideTooltip () {
-            this.chart.hideTooltip();
-        }
+    function App() {
+        const chartRef = useRef<ChartRef>(null);
+
+        const hideTooltip = useCallback(() => {
+            const chart = chartRef.current?.instance();
+            chart?.hideTooltip();
+        }, []);
+
+        return (
+            <Chart ref={chartRef}></Chart>
+        );
     }
 
     export default App;

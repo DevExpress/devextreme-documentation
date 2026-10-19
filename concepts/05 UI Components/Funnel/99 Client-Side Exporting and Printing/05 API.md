@@ -60,29 +60,26 @@ To export the Funnel using the API, call the [exportTo(fileName, format)](/api-r
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Funnel from 'devextreme-react/funnel';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef } from 'react';
+    import Funnel, { type FunnelRef } from 'devextreme-react/funnel';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.funnelRef = React.createRef();
-        }
-        render() {
-            return (
-                <Funnel ref={this.funnelRef} />
-            );
-        }
-        get funnel() {
-            return this.funnelRef.current.instance();
-        }
-        exportFunnel () {
-            return this.funnel.exportTo('Exported Funnel', 'PDF');
-        }
-        printFunnel () {
-            return this.funnel.print();
-        }
+    function App() {
+        const funnelRef = useRef<FunnelRef>(null);
+
+        const exportFunnel = useCallback(() => {
+            const funnel = funnelRef.current?.instance();
+            funnel?.exportTo('Exported Funnel', 'PDF');
+        }, []);
+
+        const printFunnel = useCallback(() => {
+            const funnel = funnelRef.current?.instance();
+            funnel?.print();
+        }, []);
+
+        return (
+            <Funnel ref={funnelRef} />
+        );
     }
 
     export default App;
@@ -175,38 +172,36 @@ You can also export several UI components at once using their SVG markup. Gather
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Funnel from 'devextreme-react/funnel';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef } from 'react';
+    import Funnel, { type FunnelRef } from 'devextreme-react/funnel';
     import { getMarkup, exportFromMarkup } from "devextreme/viz/export";
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.funnel1Ref = React.createRef();
-            this.funnel2Ref = React.createRef();
-        }
-        render() {
-            return (
-                <Funnel ref={this.funnel1Ref} />
-                <Funnel ref={this.funnel2Ref} />
-            );
-        }
-        get funnel1() {
-            return this.funnel1Ref.current.instance();
-        }
-        get funnel2() {
-            return this.funnel2Ref.current.instance();
-        }
-        exportSeveralFunnels () {
-            const funnelMarkup = getMarkup([this.funnel1, this.funnel2]);
+    function App() {
+        const funnel1Ref = useRef<FunnelRef>(null);
+        const funnel2Ref = useRef<FunnelRef>(null);
+
+        const exportSeveralFunnels = useCallback(() => {
+            const funnel1 = funnel1Ref.current?.instance();
+            const funnel2 = funnel2Ref.current?.instance();
+            if (!funnel1 || !funnel2) {
+                return;
+            }
+            const funnelMarkup = getMarkup([funnel1, funnel2]);
             exportFromMarkup(funnelMarkup, {
                 height: 768,
                 width: 1024,
                 fileName: "Exported Funnels",
                 format: "PDF"
             });
-        }
+        }, []);
+
+        return (
+            <>
+                <Funnel ref={funnel1Ref} />
+                <Funnel ref={funnel2Ref} />
+            </>
+        );
     }
 
     export default App;

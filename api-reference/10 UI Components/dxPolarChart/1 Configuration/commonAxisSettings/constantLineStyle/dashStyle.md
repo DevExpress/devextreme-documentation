@@ -1,6 +1,6 @@
 ---
 id: dxPolarChart.Options.commonAxisSettings.constantLineStyle.dashStyle
-type: Enums.DashStyle
+type: DashStyle
 default: 'solid'
 ---
 ---

@@ -212,32 +212,30 @@ Settings specified in the manner described above apply to a congregation of seri
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
     import Chart, {
         Series,
         Point
     } from 'devextreme-react/chart';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Chart
-                    customizePoint={this.customizePoint}
-                    ...
-                >
-                    <Series>
-                        <Point color="blue" />
-                    </Series>
-                </Chart>
-            );
-        }
+    // Assigns the red color to all series points with value more than 100
+    // Other series points remain painted in blue
+    function customizePoint(pointInfo: { value: number }) {
+        return pointInfo.value > 100 ? { color: 'red' } : { };
+    }
 
-        // Assigns the red color to all series points with value more than 100
-        // Other series points remain painted in blue
-        customizePoint (pointInfo: any) {
-            return pointInfo.value > 100 ? { color: 'red' } : { }
-        }
+    function App() {
+        return (
+            <Chart
+                customizePoint={customizePoint}
+                ...
+            >
+                <Series>
+                    <Point color="blue" />
+                </Series>
+            </Chart>
+        );
     }
 
     export default App;

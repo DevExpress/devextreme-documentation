@@ -9,7 +9,7 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-The type of the **rowDragging**.[onReorder]({basewidgetpath}/Configuration/rowDragging/#onReorder) event handler's argument.
+The type of the **rowDragging**.[onReorder](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#onReorder) event handler's argument.
 
 ---
-<!-- Description goes here -->
+Use this type to annotate the argument of an [onReorder](/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/rowDragging/#onReorder) handler. Refer to the handler's description for details about the event argument. The **TRowData** and **TKey** type parameters specify the row data and key types.

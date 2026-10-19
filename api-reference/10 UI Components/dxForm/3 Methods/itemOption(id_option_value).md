@@ -3,57 +3,26 @@ id: dxForm.itemOption(id, option, value)
 ---
 ---
 ##### shortDescription
-Updates the value of a single item option.
+Updates a single item option.
 
 ##### param(id): String
-An item's **name** or path without spaces if the item is in a group or a tab.     
-The path may include the group's [name](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/GroupItem/name.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/#name') or [caption](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/GroupItem/caption.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/GroupItem/#caption') or the tab's [title](/api-reference/10%20UI%20Components/dxForm/5%20Item%20Types/TabbedItem/tabs/title.md '/Documentation/ApiReference/UI_Components/dxForm/Item_Types/TabbedItem/tabs/#title').
+An item identifier.
 
 ##### param(option): String
-The option's name.
+The option name.
 
 ##### param(value): any
 The new option value.
 
 ---
+
+#include form-itemoption-desc with { additionalOptions: ", optionName, newValue" }
+
+#include form-item-options
+
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Form/UpdateItemsDynamically/"
 }
-
----
-
-##### jQuery
-
-The following code shows how to call this method for an item organized in a group.
-
-    <!-- tab: index.js -->
-    $(function () {
-        const form = $("#formContainer").dxForm({
-            formData: {
-                firstName: "John",
-                lastName: "Heart",
-                phone: "+1(213) 555-9392",
-                email: "jheart@dx-email.com"
-            },
-            items: ["firstName", "lastName", {
-                itemType: "group",
-                caption: "Contacts",
-                name: "groupName",
-                items: ["phone", "email"]
-            }]
-        }).dxForm("instance");
-
-    // ...
-    
-    form.itemOption("groupName.phone", "visible", false);
-    // ==== or ====
-    form.itemOption("Contacts.phone", "visible", false);
-
-    });
-
----
-
-#include form-item-options
 
 #####See Also#####
 #include common-link-callmethods

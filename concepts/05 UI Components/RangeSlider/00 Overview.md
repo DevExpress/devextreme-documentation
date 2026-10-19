@@ -76,45 +76,33 @@ The following code adds a simple RangeSlider to your page. The **start** and **e
 
 ##### React
 
-    import React from 'react';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import { RangeSlider } from 'devextreme-react/range-slider';
+    import { RangeSlider, type RangeSliderTypes } from 'devextreme-react/range-slider';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
+    function App() {
+        const [startValue, setStartValue] = useState<number | undefined>(20);
+        const [endValue, setEndValue] = useState<number | undefined>(60);
 
-            this.state = {
-                startValue: 20,
-                endValue: 60
-            };
-
-            this.handleValueChange = this.handleValueChange.bind(this);
-        }
-
-        handleValueChange(e) {
+        const handleValueChange = useCallback((e: RangeSliderTypes.ValueChangedEvent) => {
             const newStartValue = e.start;
             const newEndValue = e.end;
             // Event handling commands go here
 
-            this.setState({
-                startValue: newStartValue,
-                endValue: newEndValue
-            });
-        }
+            setStartValue(newStartValue);
+            setEndValue(newEndValue);
+        }, []);
 
-        render() {
-            return (
-                <RangeSlider
-                    min={0}
-                    max={100}
-                    start={this.state.startValue}
-                    end={this.state.endValue}
-                    onValueChanged={this.handleValueChange}
-                />
-            );
-        }
+        return (
+            <RangeSlider
+                min={0}
+                max={100}
+                start={startValue}
+                end={endValue}
+                onValueChanged={handleValueChange}
+            />
+        );
     }
 
     export default App;
@@ -193,46 +181,34 @@ In addition, you can specify the step of RangeSlider values using the [step](/ap
 
 ##### React
 
-    import React from 'react';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import { RangeSlider } from 'devextreme-react/range-slider';
+    import { RangeSlider, type RangeSliderTypes } from 'devextreme-react/range-slider';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
+    function App() {
+        const [startValue, setStartValue] = useState<number | undefined>(20);
+        const [endValue, setEndValue] = useState<number | undefined>(60);
 
-            this.state = {
-                startValue: 20,
-                endValue: 60
-            };
-
-            this.handleValueChange = this.handleValueChange.bind(this);
-        }
-
-        handleValueChange(e) {
+        const handleValueChange = useCallback((e: RangeSliderTypes.ValueChangedEvent) => {
             const newStartValue = e.start;
             const newEndValue = e.end;
             // Event handling commands go here
 
-            this.setState({
-                startValue: newStartValue,
-                endValue: newEndValue
-            });
-        }
+            setStartValue(newStartValue);
+            setEndValue(newEndValue);
+        }, []);
 
-        render() {
-            return (
-                <RangeSlider
-                    min={0}
-                    max={100}
-                    step={10}
-                    start={this.state.startValue}
-                    end={this.state.endValue}
-                    onValueChanged={this.handleValueChange}
-                />
-            );
-        }
+        return (
+            <RangeSlider
+                min={0}
+                max={100}
+                step={10}
+                start={startValue}
+                end={endValue}
+                onValueChanged={handleValueChange}
+            />
+        );
     }
 
     export default App;

@@ -10,7 +10,7 @@ The progress status displays a numeric value indicating the made progress. Wheth
              min: 0,
              max: 100,
              showStatus: true,
-             statusFormat: function(value) {
+             statusFormat: function(ratio, value) {
                  return value + " USD";
              }
          });
@@ -31,7 +31,7 @@ The progress status displays a numeric value indicating the made progress. Wheth
     import { DxProgressBarModule } from "devextreme-angular";
     // ...
     export class AppComponent {
-        statusFormat(value) {
+        statusFormat(ratio, value) {
             return value + " USD";
         }
     }
@@ -65,7 +65,7 @@ The progress status displays a numeric value indicating the made progress. Wheth
             DxProgressBar
         },
         methods: {
-            statusFormat(value) {
+            statusFormat(ratio, value) {
                 return value + " USD";
             }
         }
@@ -79,26 +79,20 @@ The progress status displays a numeric value indicating the made progress. Wheth
 
     import { ProgressBar } from 'devextreme-react/progress-bar';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
+    function statusFormat(ratio: number, value: number): string {
+        return value + ' USD';
+    }
 
-        statusFormat(value) {
-            return value + " USD";
-        }
-
-        render() {
-            return (
-                <ProgressBar
-                    min={0}
-                    max={100}
-                    value={40}
-                    showStatus={true}
-                    statusFormat={this.statusFormat}
-                />
-            );
-        }
+    function App() {
+        return (
+            <ProgressBar
+                min={0}
+                max={100}
+                value={40}
+                showStatus={true}
+                statusFormat={statusFormat}
+            />
+        );
     }
 
     export default App;

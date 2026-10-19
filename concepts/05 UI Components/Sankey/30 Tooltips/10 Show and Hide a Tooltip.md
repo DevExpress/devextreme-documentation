@@ -91,32 +91,30 @@ Tooltips can be invoked programmatically by calling a [Node](/api-reference/10%2
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Sankey, { Tooltip } from 'devextreme-react/sankey';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
+    import Sankey, { Tooltip, type SankeyTypes } from 'devextreme-react/sankey';
 
-    class App extends React.Component {
-        render() {
-            return (
-                <Sankey ... >
-                    <Tooltip
-                        enabled={false}
-                        onLinkClick={this.onLinkClick}
-                        onLinkHoverChanged={this.onLinkHoverChanged}
-                    />
-                </Sankey>
-            )
-        }
+    function App() {
         // Shows the tooltip only when a sankey link is clicked
-        onLinkClick(e) {
+        const onLinkClick = useCallback((e: SankeyTypes.LinkClickEvent) => {
             e.target.showTooltip();
-        },
+        }, []);
+
         // Hides the tooltip when the sankey link is no longer hovered over or pressed
-        onLinkHoverChanged(e) {
+        const onLinkHoverChanged = useCallback((e: SankeyTypes.LinkHoverEvent) => {
             if (!e.target.isHovered()) {
                 e.component.hideTooltip();
             }
-        }
+        }, []);
+
+        return (
+            <Sankey ...
+                onLinkClick={onLinkClick}
+                onLinkHoverChanged={onLinkHoverChanged}>
+                <Tooltip enabled={false} />
+            </Sankey>
+        );
     }
 
     export default App;

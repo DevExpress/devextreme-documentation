@@ -73,20 +73,14 @@ The following code adds a simple ProgressBar to your page. The **value** propert
 
     import { ProgressBar } from 'devextreme-react/progress-bar';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
-        render() {
-            return (
-                <ProgressBar
-                    min={0}
-                    max={100}
-                    value={49}
-                />
-            );
-        }
+    function App() {
+        return (
+            <ProgressBar
+                min={0}
+                max={100}
+                value={49}
+            />
+        );
     }
 
     export default App;
@@ -168,31 +162,25 @@ When the ProgressBar reaches the [maximum](/api-reference/10%20UI%20Components/d
 
 ##### React
 
-    import React from 'react';
+    import React, { useCallback } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
     import { ProgressBar } from 'devextreme-react/progress-bar';
-    import { alert } from "devextreme/ui/dialog";
+    import { alert } from 'devextreme/ui/dialog';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-        }
+    function App() {
+        const onComplete = useCallback(() => {
+            alert('Completed', 'ProgressBar');
+        }, []);
 
-        onComplete() {
-            alert('Completed');
-        }
-
-        render() {
-            return (
-                <ProgressBar
-                    min={0}
-                    max={100}
-                    value={49}
-                    onComplete={this.onComplete}
-                />
-            );
-        }
+        return (
+            <ProgressBar
+                min={0}
+                max={100}
+                value={49}
+                onComplete={onComplete}
+            />
+        );
     }
 
     export default App;

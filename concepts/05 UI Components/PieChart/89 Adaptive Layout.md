@@ -140,33 +140,26 @@ The layout does not automatically adapt to changes made in the UI component's co
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import PieChart from 'devextreme-react/pie-chart';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef } from 'react';
+    import PieChart, { type PieChartRef } from 'devextreme-react/pie-chart';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
+    function App() {
+        const pieChartRef = useRef<PieChartRef>(null);
 
-            this.pieChartRef = React.createRef();
+        const renderPieChart = useCallback(() => {
+            const pieChart = pieChartRef.current?.instance();
+            pieChart?.render();
+        }, []);
 
-            this.renderPieChart = () => {
-                this.pieChart.render();
-            };
-        }
-
-        render() {
-            return (
-                <PieChart ...
-                    ref={this.pieChartRef}>
-                </PieChart>
-            );
-        }
-
-        get pieChart() {
-            return this.pieChartRef.current.instance();
-        }
+        return (
+            <PieChart ...
+                ref={pieChartRef}>
+            </PieChart>
+        );
     }
+
+    export default App;
 
 ---
 

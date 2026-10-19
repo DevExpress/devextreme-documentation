@@ -172,7 +172,7 @@ The following code specifies the *"de-DE"* locale for the global **dateTimeForma
 
 [note]
 
-- Assign [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects to the `default` key or specific locale keys instead of declaring format options directly inside **dateTimeFormat**.
+- Assign [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects to the `default` key or to specific locale keys. Do not declare format options directly inside **dateTimeFormat**.
 - If a format object in **dateTimeFormat** does not specify **type**, only the *"shortDateShortTime"* predefined format uses the format object's **locale**.
 
 [/note]

@@ -1,4 +1,4 @@
-DevExtreme libraries use the current application locale to display UI text and format values. Specify **Format**.[locale](/Documentation/ApiReference/Common/Object_Structures/Format/#locale) in the following [GlobalConfig](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/) properties to format date, time, and number values in another locale:
+DevExtreme libraries use the current application locale to display UI text and to format values. You can use a different locale to format date, time, and number values. To do that, specify **Format**.[locale](/Documentation/ApiReference/Common/Object_Structures/Format/#locale) in the following [GlobalConfig](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/) properties:
 
 - [dateFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateFormat)
 - [timeFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#timeFormat)

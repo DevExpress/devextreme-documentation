@@ -172,7 +172,7 @@ The following code specifies the *"de-DE"* locale for the global **timeFormat**:
 
 [note]
 
-- Assign [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects to the `default` key or specific locale keys instead of declaring format options directly inside **timeFormat**.
+- Assign [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects to the `default` key or to specific locale keys. Do not declare format options directly inside **timeFormat**.
 - If a format object in **timeFormat** does not specify **type**, only the *"shortTime"* predefined format uses the format object's **locale**.
 
 [/note]

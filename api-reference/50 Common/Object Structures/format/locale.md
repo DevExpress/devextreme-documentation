@@ -4,7 +4,7 @@ type: FormatLocale
 ---
 ---
 ##### shortDescription
-Specifies the locale in which to format and parse values.
+Specifies the locale used to format and parse values.
 
 ---
 If you specify only **locale**, DevExtreme uses default predefined formats. For example, `{ locale: "de-DE" }` formats values as follows:

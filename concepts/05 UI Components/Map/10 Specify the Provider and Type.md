@@ -92,6 +92,8 @@ If **provider** is *"osm"*, specify a tile source in **providerConfig**.[tileSer
 - **Non-modular Applications**    
     Load OpenLayers (`ol.js` and `ol.css`) before Map initialization.
 
+Refer to the following help topic for more information: [OpenStreetMap Provider](/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/).
+
 Google Maps, Azure Maps, and Google Static Maps require an API key to authenticate your application. To obtain a key, refer to your provider's documentation. Assign the key to the [apiKey](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/apiKey '/Documentation/ApiReference/UI_Components/dxMap/Configuration/apiKey/') property. If your application uses more than one of these providers, specify an object with a key for each provider:
 
 ---

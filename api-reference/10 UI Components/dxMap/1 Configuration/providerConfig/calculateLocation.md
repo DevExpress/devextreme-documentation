@@ -20,3 +20,6 @@ The Map does not include a geocoding service. Implement this function to request
 - **routes[]**.[locations[]](/Documentation/ApiReference/UI_Components/dxMap/Configuration/routes/locations/)
 
 The component caches coordinates for each location string.
+
+#####See Also#####
+- [OpenStreetMap Provider - Calculate Locations](/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/#Calculate_Locations)

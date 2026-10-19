@@ -1,4 +1,4 @@
-**calculateRoute** receives a [CalculateOsmRouteInfo](/Documentation/ApiReference/UI_Components/dxMap/Types/CalculateOsmRouteInfo/) object that contains route waypoints (**CalculateOsmRouteInfo**.**locations**) and the transportation mode. Send these values to a routing service and return route geometry:
+**calculateRoute** receives a [CalculateOsmRouteInfo](/Documentation/ApiReference/UI_Components/dxMap/Types/CalculateOsmRouteInfo/) object. The object contains route waypoints (**CalculateOsmRouteInfo**.**locations**) and the transportation mode. Send these values to a routing service and return the route geometry you obtained from the service:
 
     <!--JavaScript-->
     async function calculateRoute({ locations, mode }) {

@@ -19,7 +19,7 @@ Mode-specific rules apply to descendants of a theme mode container, but not to t
 
 Component overlays (for instance, popups and drop-down lists) open in the same theme mode as the component's container, even though DevExtreme renders overlays at the viewport level.
 
-You can change container theme modes at runtime. Styles in custom elements and DevExtreme components are updated immediately. If an overlay is open when you change the mode, call [refreshMode()](/Documentation/ApiReference/Common/Utils/ui/themes/#refreshMode) to update overlay styles:
+You can change container theme modes at runtime. Styles in custom elements and DevExtreme components are updated immediately. If an overlay is open when you change the mode, call [refreshMode()](/api-reference/50%20Common/utils/ui/themes/refreshMode().md '/Documentation/ApiReference/Common/Utils/ui/themes/#refreshMode') to update overlay styles:
 
 ---
 
@@ -154,7 +154,7 @@ You can nest `dx-theme-mode-inverted` containers. The following code snippet dem
         </body>
     </html>
 
-In JavaScript, call the [mode(element)](/Documentation/ApiReference/Common/Utils/ui/themes/#modeelement) method to get an element's calculated theme mode (*"light"* or *"dark"*). The following code snippet returns *"light"* for the `.three` element from the previous snippet:
+In JavaScript, call the [mode(element)](/api-reference/50%20Common/utils/ui/themes/mode(element).md '/Documentation/ApiReference/Common/Utils/ui/themes/#modeelement') method to get an element's calculated theme mode (*"light"* or *"dark"*). The following code snippet returns *"light"* for the `.three` element from the previous snippet:
 
 ---
 

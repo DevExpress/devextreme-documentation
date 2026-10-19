@@ -1,4 +1,4 @@
-SVG-based components (such as charts and gauges) use `--dx-viz-*` CSS variables in Fluent Next themes to paint elements. These themes ship with the Fluent Next [palette](/Documentation/Guide/Themes_and_Styles/SVG-Based_Components_Customization/#Palettes), which defines the following color sets:
+SVG-based components (such as charts and gauges) use `--dx-viz-*` CSS variables in Fluent Next themes to paint elements. These themes ship with the Fluent Next [palette](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Components%20Customization/10%20Palettes/00%20Palettes.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Components_Customization/#Palettes'), which defines the following color sets:
 
 <table class="dx-table">
     <tr>
@@ -21,7 +21,7 @@ SVG-based components (such as charts and gauges) use `--dx-viz-*` CSS variables 
 
 [note]
 
-[Accent colors](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Accent_Colors) in Fluent Next themes only apply to HTML-based components and to the following [RangeSelector elements](/Documentation/Guide/UI_Components/RangeSelector/Visual_Elements/):
+[Accent colors](/concepts/60%20Themes%20and%20Styles/07%20Fluent%20Next%20Theme%20Customization/10%20Accent%20Colors/00%20Accent%20Colors.md '/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Accent_Colors') in Fluent Next themes only apply to HTML-based components and to the following [RangeSelector elements](/concepts/05%20UI%20Components/RangeSelector/10%20Visual%20Elements '/Documentation/Guide/UI_Components/RangeSelector/Visual_Elements/'):
 
 - Selected range
 - Slider handles
@@ -37,8 +37,8 @@ You can override palette variables to change colors in all SVG-based components:
         --dx-viz-red: #d13438;
     }
 
-Load your override stylesheet after the Fluent Next stylesheet. Palette variables apply to all Fluent Next variations (light and dark modes, standard and compact sizes), so `:root` overrides also apply to components in [theme mode containers](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes). SVG-based components apply CSS variable changes immediately, and you do not need to call [refreshTheme()](/Documentation/ApiReference/Common/Utils/viz/#refreshTheme).
+Load your override stylesheet after the Fluent Next stylesheet. Palette variables apply to all Fluent Next variations (light and dark modes, standard and compact sizes), so `:root` overrides also apply to components in [theme mode containers](/concepts/60%20Themes%20and%20Styles/07%20Fluent%20Next%20Theme%20Customization/15%20Theme%20Modes/05%20Container-Specific%20Theme%20Modes.md '/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes'). SVG-based components apply CSS variable changes immediately, and you do not need to call [refreshTheme()](/api-reference/50%20Common/utils/viz/refreshTheme().md '/Documentation/ApiReference/Common/Utils/viz/#refreshTheme').
 
-`--dx-viz-*` color overrides also apply to palette extensions. An SVG-based component automatically extends the applied palette based on an [extension mode](/Documentation/ApiReference/Common_Types/charts/#PaletteExtensionMode) when the component needs more colors than the palette contains. The [generateColors(palette, count, options)](/Documentation/ApiReference/Common/Utils/viz/#generateColorspalette_count_options) utility method also uses color overrides.
+`--dx-viz-*` color overrides also apply to palette extensions. An SVG-based component automatically extends the applied palette based on an [extension mode](/api-reference/40%20Common%20Types/05%20charts/PaletteExtensionMode.md '/Documentation/ApiReference/Common_Types/charts/#PaletteExtensionMode') when the component needs more colors than the palette contains. The [generateColors(palette, count, options)](/api-reference/50%20Common/utils/viz/generateColors(palette_count_options).md '/Documentation/ApiReference/Common/Utils/viz/#generateColorspalette_count_options') utility method also uses color overrides.
 
-Methods that return colors (for instance, a Chart point's [getColor()](/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Point/Methods/#getColor)) return resolved colors used to render elements. These methods return opaque colors in hexadecimal format and colors with transparency in `rgba()` format.
+Methods that return colors (for instance, a Chart point's [getColor()](/api-reference/10%20UI%20Components/BaseChart/7%20Chart%20Elements/Point/3%20Methods/getColor().md '/Documentation/ApiReference/UI_Components/dxChart/Chart_Elements/Point/Methods/#getColor')) return resolved colors used to render elements. These methods return opaque colors in hexadecimal format and colors with transparency in `rgba()` format.

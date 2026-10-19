@@ -80,22 +80,18 @@ Set a column's [groupIndex](/api-reference/_hidden/dxDataGridColumn/groupIndex.m
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DataGrid, Column } from 'devextreme-react/data-grid';
     function App() {
-        const [state, setState] = useState<{
-            cityGroupIndex: number | undefined;
-        }>({
-            cityGroupIndex: 0,
-        });
+        const [cityGroupIndex, setCityGroupIndex] = useState<number | undefined>(0);
         const ungroupCity = useCallback(() => {
-            setState((prevState) => ({ ...prevState, cityGroupIndex: undefined }));
+            setCityGroupIndex(undefined);
         }, []);
         const onOptionChanged = useCallback((e: DataGridTypes.OptionChangedEvent) => {
             if (e.fullName === 'columns[0].groupIndex') {
-                setState((prevState) => ({ ...prevState, cityGroupIndex: e.value }));
+                setCityGroupIndex(e.value);
             }
         }, []);
         return (
             <DataGrid ... onOptionChanged={onOptionChanged}>
-                <Column dataField="City" groupIndex={state.cityGroupIndex} />
+                <Column dataField="City" groupIndex={cityGroupIndex} />
             </DataGrid>
         );
     }

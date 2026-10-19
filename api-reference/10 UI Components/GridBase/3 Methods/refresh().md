@@ -117,7 +117,9 @@ The following code snippet shows how to call **refresh()**:
         const {widgetName}Ref = useRef<{WidgetName}Ref>(null);
 
         const refresh{WidgetName} = useCallback(() => {
-            {widgetName}Ref.current?.instance().refresh()
+            const {widgetName} = {widgetName}Ref.current?.instance();
+            if (!{widgetName}) return;
+            {widgetName}.refresh()
                 .then(function() {
                     // ...
                 })

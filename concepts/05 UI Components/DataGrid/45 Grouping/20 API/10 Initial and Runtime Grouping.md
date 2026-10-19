@@ -208,13 +208,9 @@ You can change a column's **groupIndex** at runtime using the [columnOption(id, 
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DataGrid, Column } from 'devextreme-react/data-grid';
     function App() {
-        const [state, setState] = useState<{
-            cityGroupIndex: number | undefined;
-        }>({
-            cityGroupIndex: 0,
-        });
+        const [cityGroupIndex, setCityGroupIndex] = useState<number | undefined>(0);
         const groupByCity = useCallback((index: number) => {
-            setState((prevState) => ({ ...prevState, cityGroupIndex: index }));
+            setCityGroupIndex(index);
         }, []);
         const onOptionChanged = useCallback(
             (e: DataGridTypes.OptionChangedEvent) => {
@@ -226,7 +222,7 @@ You can change a column's **groupIndex** at runtime using the [columnOption(id, 
         );
         return (
             <DataGrid ... onOptionChanged={onOptionChanged}>
-                <Column dataField="City" groupIndex={state.cityGroupIndex} />
+                <Column dataField="City" groupIndex={cityGroupIndex} />
             </DataGrid>
         );
     }

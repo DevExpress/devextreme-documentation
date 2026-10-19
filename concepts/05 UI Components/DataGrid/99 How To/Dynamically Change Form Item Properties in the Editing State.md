@@ -185,7 +185,7 @@ This function allows you to change form item properties dynamically. Within this
         function App() {
             const dataGridRef = useRef<DataGridRef>(null);
             const customizeItem = useCallback(
-                (item: Parameters<NonNullable<FormTypes.Properties['customizeItem']>>[0]) => {
+                (item: FormTypes.Item) => {
                     const dataGridRefInstance = dataGridRef.current?.instance();
                     if (!dataGridRefInstance) return;
                     if (

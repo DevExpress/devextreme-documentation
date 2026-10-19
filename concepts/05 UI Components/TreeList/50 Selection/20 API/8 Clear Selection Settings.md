@@ -74,26 +74,19 @@ Call the [deselectRows(keys)](/api-reference/10%20UI%20Components/GridBase/3%20M
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import TreeList from 'devextreme-react/tree-list';
     function App() {
-        const [state, setState] = useState<{
-            selectedRowKeys: Array<string | number>;
-        }>({
-            selectedRowKeys: [],
-        });
+        const [selectedRowKeys, setSelectedRowKeys] = useState<Array<string | number>>([]);
         const deselectRows = useCallback((keys: Array<string | number>) => {
-            setState((prevState) => ({
-                ...prevState,
-                selectedRowKeys: prevState.selectedRowKeys.filter((key) => !keys.includes(key)),
-            }));
+            setSelectedRowKeys((prevKeys) => prevKeys.filter((key) => !keys.includes(key)));
         }, []);
         const handleOptionChange = useCallback((e: TreeListTypes.OptionChangedEvent) => {
             if (e.fullName === 'selectedRowKeys') {
-                setState((prevState) => ({ ...prevState, selectedRowKeys: e.value }));
+                setSelectedRowKeys(e.value);
             }
         }, []);
         return (
             <TreeList
                 ...
-                selectedRowKeys={state.selectedRowKeys}
+                selectedRowKeys={selectedRowKeys}
                 onOptionChanged={handleOptionChange}
             ></TreeList>
         );
@@ -180,13 +173,9 @@ The [deselectAll()](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/d
     import TreeList from 'devextreme-react/tree-list';
     function App() {
         const treeListRef = useRef<TreeListRef>(null);
-        const [state, setState] = useState<{
-            selectedRowKeys: Array<string | number>;
-        }>({
-            selectedRowKeys: [],
-        });
+        const [selectedRowKeys, setSelectedRowKeys] = useState<Array<string | number>>([]);
         const deselectAllRows = useCallback(() => {
-            setState((prevState) => ({ ...prevState, selectedRowKeys: [] }));
+            setSelectedRowKeys([]);
         }, []);
         const deselectVisibleRows = useCallback(() => {
             const treeListRefInstance = treeListRef.current?.instance();
@@ -195,14 +184,14 @@ The [deselectAll()](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/d
         }, []);
         const handleOptionChange = useCallback((e: TreeListTypes.OptionChangedEvent) => {
             if (e.fullName === 'selectedRowKeys') {
-                setState((prevState) => ({ ...prevState, selectedRowKeys: e.value }));
+                setSelectedRowKeys(e.value);
             }
         }, []);
         return (
             <TreeList
                 ...
                 ref={treeListRef}
-                selectedRowKeys={state.selectedRowKeys}
+                selectedRowKeys={selectedRowKeys}
                 onOptionChanged={handleOptionChange}
             ></TreeList>
         );

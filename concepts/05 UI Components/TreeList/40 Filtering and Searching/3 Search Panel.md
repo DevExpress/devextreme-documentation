@@ -186,13 +186,9 @@ Use the **searchPanel**.[text](/api-reference/10%20UI%20Components/GridBase/1%20
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import TreeList, { SearchPanel } from 'devextreme-react/tree-list';
     function App() {
-        const [state, setState] = useState<{
-            searchText: string;
-        }>({
-            searchText: '4/1/2015',
-        });
+        const [searchText, setSearchText] = useState<string>('4/1/2015');
         const setSearchValue = useCallback((searchText: string) => {
-            setState((prevState) => ({ ...prevState, searchText: searchText }));
+            setSearchText(searchText);
         }, []);
         const onOptionChanged = useCallback(
             (e: TreeListTypes.OptionChangedEvent) => {
@@ -202,7 +198,6 @@ Use the **searchPanel**.[text](/api-reference/10%20UI%20Components/GridBase/1%20
             },
             [setSearchValue]
         );
-        const { searchText } = state;
         return (
             <TreeList ... onOptionChanged={onOptionChanged}>
                 <SearchPanel visible={true} text={searchText} />

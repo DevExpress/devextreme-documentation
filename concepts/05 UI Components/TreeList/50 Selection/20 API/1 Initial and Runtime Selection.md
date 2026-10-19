@@ -204,29 +204,23 @@ You can select rows at runtime using the [selectRows(keys, preserve)](/api-refer
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import TreeList from 'devextreme-react/tree-list';
     function App() {
-        const [state, setState] = useState<{
-            selectedRowKeys: Array<string | number>;
-        }>({
-            selectedRowKeys: [],
-        });
+        const [selectedRowKeys, setSelectedRowKeys] = useState<Array<string | number>>([]);
         const selectFirstRow = useCallback((e: TreeListTypes.ContentReadyEvent) => {
             if (e.component.getVisibleRows().length === 0) return;
             const rowKey = e.component.getKeyByRowIndex(0);
-            setState((prevState) =>
-                prevState.selectedRowKeys.includes(rowKey)
-                    ? prevState
-                    : { ...prevState, selectedRowKeys: [...prevState.selectedRowKeys, rowKey] }
+            setSelectedRowKeys((prevKeys) =>
+                prevKeys.includes(rowKey) ? prevKeys : [...prevKeys, rowKey]
             );
         }, []);
         const handleOptionChange = useCallback((e: TreeListTypes.OptionChangedEvent) => {
             if (e.fullName === 'selectedRowKeys') {
-                setState((prevState) => ({ ...prevState, selectedRowKeys: e.value }));
+                setSelectedRowKeys(e.value);
             }
         }, []);
         return (
             <TreeList
                 ...
-                selectedRowKeys={state.selectedRowKeys}
+                selectedRowKeys={selectedRowKeys}
                 onContentReady={selectFirstRow}
                 onOptionChanged={handleOptionChange}
             ></TreeList>

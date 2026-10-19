@@ -168,33 +168,28 @@ The TreeList also provides the [pageIndex(newIndex)](/api-reference/10%20UI%20Co
     import TreeList, { Paging } from 'devextreme-react/tree-list';
     function App() {
         const treeListRef = useRef<TreeListRef>(null);
-        const [state, setState] = useState<{
-            pageSize: number;
-            pageIndex: number;
-        }>({
-            pageSize: 20,
-            pageIndex: 0,
-        });
+        const [pageSize, setPageSize] = useState<number>(20);
+        const [pageIndex, setPageIndex] = useState<number>(0);
         const changePageSize = useCallback((value: number) => {
-            setState((prevState) => ({ ...prevState, pageSize: value }));
+            setPageSize(value);
         }, []);
         const goToLastPage = useCallback(() => {
             const treeListRefInstance = treeListRef.current?.instance();
             if (!treeListRefInstance) return;
             const pageCount = treeListRefInstance.pageCount();
-            setState((prevState) => ({ ...prevState, pageIndex: pageCount - 1 }));
+            setPageIndex(pageCount - 1);
         }, []);
         const handleOptionChange = useCallback((e: TreeListTypes.OptionChangedEvent) => {
             if (e.fullName === 'paging.pageSize') {
-                setState((prevState) => ({ ...prevState, pageSize: e.value }));
+                setPageSize(e.value);
             }
             if (e.fullName === 'paging.pageIndex') {
-                setState((prevState) => ({ ...prevState, pageIndex: e.value }));
+                setPageIndex(e.value);
             }
         }, []);
         return (
             <TreeList ... ref={treeListRef} onOptionChanged={handleOptionChange}>
-                <Paging pageSize={state.pageSize} pageIndex={state.pageIndex} />
+                <Paging pageSize={pageSize} pageIndex={pageIndex} />
             </TreeList>
         );
     }

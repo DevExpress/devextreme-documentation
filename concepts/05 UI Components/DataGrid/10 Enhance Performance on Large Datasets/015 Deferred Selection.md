@@ -191,7 +191,7 @@ The following tasks require using different API in deferred mode:
         <!-- tab: App.tsx -->
         import React from 'react';
         // ...
-        import DataGrid, { Column } from 'devextreme-react/data-grid';
+        import DataGrid from 'devextreme-react/data-grid';
         const selectionFilter = ['Task_Status', '=', 'Completed'];
         function App() {
             return <DataGrid ... defaultSelectionFilter={selectionFilter}></DataGrid>;
@@ -300,29 +300,25 @@ The following tasks require using different API in deferred mode:
         // ...
         import DataGrid from 'devextreme-react/data-grid';
         function App() {
-            const [state, setState] = useState<{
-                selectionFilter: unknown[] | undefined;
-            }>({
-                selectionFilter: ['Task_Status', '=', 'Completed'],
-            });
+            const [selectionFilter, setSelectionFilter] = useState<unknown[] | undefined>(['Task_Status', '=', 'Completed']);
             const handleOptionChange = useCallback((e: DataGridTypes.OptionChangedEvent) => {
                 if (e.fullName === 'selectionFilter') {
-                    setState((prevState) => ({ ...prevState, selectionFilter: e.value }));
+                    setSelectionFilter(e.value);
                 }
             }, []);
             const sendSelectedRows = useCallback(async () => {
                 const response = await fetch('https://mydomain.com/MyDataService', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ filter: state.selectionFilter || null }),
+                    body: JSON.stringify({ filter: selectionFilter || null }),
                 });
                 if (!response.ok) throw new Error(`HTTP error: ${response.status} ${response.statusText}`);
                 return response.json();
-            }, [state]);
+            }, [selectionFilter]);
             return (
                 <DataGrid
                     ...
-                    selectionFilter={state.selectionFilter}
+                    selectionFilter={selectionFilter}
                     onOptionChanged={handleOptionChange}
                 ></DataGrid>
             );

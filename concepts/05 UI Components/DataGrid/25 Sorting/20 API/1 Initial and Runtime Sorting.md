@@ -187,13 +187,9 @@ Change the **sortOrder** and **sortIndex** properties using the [columnOption](/
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import { DataGrid, Column } from 'devextreme-react/data-grid';
     function App() {
-        const [state, setState] = useState<{
-            countrySortOrder: 'asc' | 'desc' | undefined;
-        }>({
-            countrySortOrder: 'asc',
-        });
+        const [countrySortOrder, setCountrySortOrder] = useState<'asc' | 'desc' | undefined>('asc');
         const sortByCountries = useCallback((order: 'asc' | 'desc') => {
-            setState((prevState) => ({ ...prevState, countrySortOrder: order }));
+            setCountrySortOrder(order);
         }, []);
         const onOptionChanged = useCallback(
             (e: DataGridTypes.OptionChangedEvent) => {
@@ -205,7 +201,7 @@ Change the **sortOrder** and **sortIndex** properties using the [columnOption](/
         );
         return (
             <DataGrid ... onOptionChanged={onOptionChanged}>
-                <Column dataField="Country" sortOrder={state.countrySortOrder} />
+                <Column dataField="Country" sortOrder={countrySortOrder} />
             </DataGrid>
         );
     }

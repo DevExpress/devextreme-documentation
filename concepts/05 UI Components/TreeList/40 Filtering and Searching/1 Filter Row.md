@@ -306,29 +306,20 @@ The set of available filter operations can be restricted using the [filterOperat
     import TreeList, { Column, FilterRow } from 'devextreme-react/tree-list';
     const filterOperations: Array<'contains' | '='> = ['contains', '='];
     function App() {
-        const [state, setState] = useState<{
-            selectedOperation: 'contains' | '=';
-            filterValue: string;
-        }>({
-            selectedOperation: 'contains',
-            filterValue: 'Pending',
-        });
+        const [selectedOperation, setSelectedOperation] = useState<'contains' | '='>('contains');
+        const [filterValue, setFilterValue] = useState<string>('Pending');
         const optionChanged = useCallback((e: TreeListTypes.OptionChangedEvent) => {
             if (e.fullName === 'columns[0].filterValue') {
-                setState((prevState) => ({ ...prevState, filterValue: e.value }));
+                setFilterValue(e.value);
             }
             if (e.fullName === 'columns[0].selectedFilterOperation') {
-                setState((prevState) => ({ ...prevState, selectedOperation: e.value }));
+                setSelectedOperation(e.value);
             }
         }, []);
         const applyFilter = useCallback((operation: 'contains' | '=', value: string) => {
-            setState((prevState) => ({
-                ...prevState,
-                selectedOperation: operation,
-                filterValue: value,
-            }));
+            setSelectedOperation(operation);
+            setFilterValue(value);
         }, []);
-        const { selectedOperation, filterValue } = state;
         return (
             <TreeList onOptionChanged={optionChanged} ...>
                 <FilterRow visible={true} />

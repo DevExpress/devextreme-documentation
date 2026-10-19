@@ -74,26 +74,19 @@ Call the [deselectRows(keys)](/api-reference/10%20UI%20Components/GridBase/3%20M
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DataGrid from 'devextreme-react/data-grid';
     function App() {
-        const [state, setState] = useState<{
-            selectedRowKeys: Array<string | number>;
-        }>({
-            selectedRowKeys: [],
-        });
+        const [selectedRowKeys, setSelectedRowKeys] = useState<Array<string | number>>([]);
         const deselectRows = useCallback((keys: Array<string | number>) => {
-            setState((prevState) => ({
-                ...prevState,
-                selectedRowKeys: prevState.selectedRowKeys.filter((key) => !keys.includes(key)),
-            }));
+            setSelectedRowKeys((prevKeys) => prevKeys.filter((key) => !keys.includes(key)));
         }, []);
         const handleOptionChange = useCallback((e: DataGridTypes.OptionChangedEvent) => {
             if (e.fullName === 'selectedRowKeys') {
-                setState((prevState) => ({ ...prevState, selectedRowKeys: e.value }));
+                setSelectedRowKeys(e.value);
             }
         }, []);
         return (
             <DataGrid
                 ...
-                selectedRowKeys={state.selectedRowKeys}
+                selectedRowKeys={selectedRowKeys}
                 onOptionChanged={handleOptionChange}
             ></DataGrid>
         );
@@ -180,13 +173,9 @@ Call the [clearSelection()](/api-reference/10%20UI%20Components/GridBase/3%20Met
     import DataGrid from 'devextreme-react/data-grid';
     function App() {
         const dataGridRef = useRef<DataGridRef>(null);
-        const [state, setState] = useState<{
-            selectedRowKeys: Array<string | number>;
-        }>({
-            selectedRowKeys: [],
-        });
+        const [selectedRowKeys, setSelectedRowKeys] = useState<Array<string | number>>([]);
         const deselectAllRows = useCallback(() => {
-            setState((prevState) => ({ ...prevState, selectedRowKeys: [] }));
+            setSelectedRowKeys([]);
         }, []);
         const deselectVisibleRows = useCallback(() => {
             const dataGridRefInstance = dataGridRef.current?.instance();
@@ -195,14 +184,14 @@ Call the [clearSelection()](/api-reference/10%20UI%20Components/GridBase/3%20Met
         }, []);
         const handleOptionChange = useCallback((e: DataGridTypes.OptionChangedEvent) => {
             if (e.fullName === 'selectedRowKeys') {
-                setState((prevState) => ({ ...prevState, selectedRowKeys: e.value }));
+                setSelectedRowKeys(e.value);
             }
         }, []);
         return (
             <DataGrid
                 ...
                 ref={dataGridRef}
-                selectedRowKeys={state.selectedRowKeys}
+                selectedRowKeys={selectedRowKeys}
                 onOptionChanged={handleOptionChange}
             ></DataGrid>
         );

@@ -226,13 +226,9 @@ The **filterValue** is updated when a user changes the filter expression from th
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import TreeList, { FilterPanel } from 'devextreme-react/tree-list';
     function App() {
-        const [state, setState] = useState<{
-            filterValue: unknown[] | null;
-        }>({
-            filterValue: ['SaleAmount', '<>', null],
-        });
+        const [filterValue, setFilterValue] = useState<unknown[] | null>(['SaleAmount', '<>', null]);
         const applyFilter = useCallback((filterExpression: unknown[] | null) => {
-            setState((prevState) => ({ ...prevState, filterValue: filterExpression }));
+            setFilterValue(filterExpression);
         }, []);
         const onOptionChanged = useCallback(
             (e: TreeListTypes.OptionChangedEvent) => {
@@ -242,7 +238,6 @@ The **filterValue** is updated when a user changes the filter expression from th
             },
             [applyFilter]
         );
-        const { filterValue } = state;
         return (
             <TreeList
                 ...
@@ -425,15 +420,10 @@ The TreeList provides the [filterBuilder](/api-reference/10%20UI%20Components/Gr
         },
     ];
     function App() {
-        const [state, setState] = useState<{
-            popupVisible: boolean;
-        }>({
-            popupVisible: false,
-        });
+        const [popupVisible, setPopupVisible] = useState<boolean>(false);
         const showFilterBuilder = useCallback(() => {
-            setState((prevState) => ({ ...prevState, popupVisible: true }));
+            setPopupVisible(true);
         }, []);
-        const { popupVisible } = state;
         return (
             <React.Fragment>
                 <TreeList ... filterSyncEnabled={true}>

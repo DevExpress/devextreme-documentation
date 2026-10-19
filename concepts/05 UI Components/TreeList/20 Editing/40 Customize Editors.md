@@ -135,7 +135,7 @@ The columns's [dataType](/api-reference/_hidden/GridBaseColumn/dataType.md '/Doc
     const textAreaOptions = { height: 200 };
     function App() {
         const onEditorPreparing = useCallback((e: TreeListTypes.EditorPreparingEvent) => {
-            if (e.dataField == 'Note' && e.parentType === 'dataRow') {
+            if (e.dataField === 'Note' && e.parentType === 'dataRow') {
                 const defaultValueChangeHandler = e.editorOptions.onValueChanged;
                 e.editorName = 'dxTextArea'; // Change the editor's type
                 e.editorOptions.onValueChanged = function (args: TextAreaTypes.ValueChangedEvent) {

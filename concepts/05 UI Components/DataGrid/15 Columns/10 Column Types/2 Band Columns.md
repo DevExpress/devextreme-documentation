@@ -205,9 +205,10 @@ If you use the [customizeColumns](/api-reference/10%20UI%20Components/dxDataGrid
             });
             const contactsFields = ['Email', 'Mobile_Phone', 'Skype'];
             for (let i = 0; i < columns.length - 1; i++) {
-                if (contactsFields.indexOf(columns[i].dataField ?? '') > -1)
+                if (contactsFields.indexOf(columns[i].dataField ?? '') > -1) {
                     // If the column belongs to "Contacts",
                     columns[i].ownerBand = columns.length - 1; // assigns "Contacts" as the owner band column
+                }
             }
         }, []);
         return <DataGrid ... customizeColumns={customizeColumns}></DataGrid>;

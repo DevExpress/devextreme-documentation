@@ -102,7 +102,7 @@ Use the [selectedRowKeys](/api-reference/10%20UI%20Components/dxDataGrid/1%20Con
         store: {
             // ...
             type: 'array',
-            data: [],
+            data: ...,
             key: 'id',
         },
     });
@@ -217,29 +217,23 @@ The DataGrid provides two methods that select rows at runtime: [selectRows(keys,
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DataGrid from 'devextreme-react/data-grid';
     function App() {
-        const [state, setState] = useState<{
-            selectedRowKeys: Array<string | number>;
-        }>({
-            selectedRowKeys: [],
-        });
+        const [selectedRowKeys, setSelectedRowKeys] = useState<Array<string | number>>([]);
         const selectFirstRow = useCallback((e: DataGridTypes.ContentReadyEvent) => {
             if (e.component.getVisibleRows().length === 0) return;
             const rowKey = e.component.getKeyByRowIndex(0);
-            setState((prevState) =>
-                prevState.selectedRowKeys.includes(rowKey)
-                    ? prevState
-                    : { ...prevState, selectedRowKeys: [...prevState.selectedRowKeys, rowKey] }
+            setSelectedRowKeys((prevKeys) =>
+                prevKeys.includes(rowKey) ? prevKeys : [...prevKeys, rowKey]
             );
         }, []);
         const handleOptionChange = useCallback((e: DataGridTypes.OptionChangedEvent) => {
             if (e.fullName === 'selectedRowKeys') {
-                setState((prevState) => ({ ...prevState, selectedRowKeys: e.value }));
+                setSelectedRowKeys(e.value);
             }
         }, []);
         return (
             <DataGrid
                 ...
-                selectedRowKeys={state.selectedRowKeys}
+                selectedRowKeys={selectedRowKeys}
                 onContentReady={selectFirstRow}
                 onOptionChanged={handleOptionChange}
             ></DataGrid>

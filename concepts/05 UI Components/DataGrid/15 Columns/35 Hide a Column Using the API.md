@@ -101,22 +101,18 @@ A column is considered hidden when its [visible](/api-reference/_hidden/GridBase
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
     import DataGrid, { Column } from 'devextreme-react/data-grid';
     function App() {
-        const [state, setState] = useState<{
-            isEmailVisible: boolean;
-        }>({
-            isEmailVisible: true,
-        });
+        const [isEmailVisible, setIsEmailVisible] = useState<boolean>(true);
         const handleOptionChange = useCallback((e: DataGridTypes.OptionChangedEvent) => {
             if (e.fullName === 'columns[0].visible') {
-                setState((prevState) => ({ ...prevState, isEmailVisible: e.value }));
+                setIsEmailVisible(e.value);
             }
         }, []);
         const hideEmails = useCallback(() => {
-            setState((prevState) => ({ ...prevState, isEmailVisible: false }));
+            setIsEmailVisible(false);
         }, []);
         return (
             <DataGrid ... onOptionChanged={handleOptionChange}>
-                <Column dataField="Email" visible={state.isEmailVisible} />
+                <Column dataField="Email" visible={isEmailVisible} />
             </DataGrid>
         );
     }

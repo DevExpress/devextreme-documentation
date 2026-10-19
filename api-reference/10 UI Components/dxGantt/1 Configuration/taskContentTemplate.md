@@ -166,7 +166,7 @@ To learn how to display current and planned tasks in the Gantt chart area with *
 
     export default App;
 
-##### ASP.NET MVC
+##### ASP.NET MVC Controls
 
     <!--Razor C#-->
     @(Html.DevExtreme().Gantt()

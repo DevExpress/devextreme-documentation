@@ -3,79 +3,79 @@ Although the legend's layout is virtually universal, in some cases, you may need
 - **Choose legend orientation**        
 Depending on whether the legend is oriented vertically or horizontally, the Funnel arranges legend items in columns or in rows. To change the legend orientation, use the [orientation](/api-reference/10%20UI%20Components/BaseLegend/orientation.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/legend/#orientation') property.
 
----
-##### jQuery
+    ---
+    ##### jQuery
 
-    <!--JavaScript-->$(function() {
-        $("#funnelContainer").dxFunnel({
-            // ...
-            legend: {
-                orientation: "vertical" // or "horizontal"
-            }
+        <!--JavaScript-->$(function() {
+            $("#funnelContainer").dxFunnel({
+                // ...
+                legend: {
+                    orientation: "vertical" // or "horizontal"
+                }
+            });
         });
-    });
 
-##### Angular
+    ##### Angular
 
-    <!--HTML--><dx-funnel ...>
-        <dxo-funnel-legend
-            orientation="vertical"> <!-- or "horizontal" -->
-        </dxo-funnel-legend>
-    </dx-funnel>
+        <!--HTML--><dx-funnel ...>
+            <dxo-funnel-legend
+                orientation="vertical"> <!-- or "horizontal" -->
+            </dxo-funnel-legend>
+        </dx-funnel>
 
-    <!--TypeScript-->
-    import { DxFunnelModule } from "devextreme-angular";
-    // ...
-    export class AppComponent {
+        <!--TypeScript-->
+        import { DxFunnelModule } from "devextreme-angular";
         // ...
-    }
-    @NgModule({
-        imports: [
+        export class AppComponent {
             // ...
-            DxFunnelModule
-        ],
-        // ...
-    })
-
-##### Vue
-
-    <!-- tab: App.vue -->
-    <template> 
-        <DxFunnel ... >
-            <DxLegend
-                orientation="vertical" <!-- or "horizontal" -->
-            />
-        </DxFunnel>
-    </template>
-
-    <script>
-    import DxFunnel, { DxLegend } from 'devextreme-vue/funnel';
-
-    export default {
-        components: {
-            DxFunnel,
-            DxLegend
         }
-    }
-    </script>
+        @NgModule({
+            imports: [
+                // ...
+                DxFunnelModule
+            ],
+            // ...
+        })
 
-##### React
+    ##### Vue
 
-    <!-- tab: App.js -->
-    import React from 'react';
-    import Funnel, { Legend } from 'devextreme-react/funnel';
-
-    export default function App() {
-        return (
-            <Funnel ... >
-                <Legend
-                    orientation="vertical" {/* or "horizontal" */}
+        <!-- tab: App.vue -->
+        <template> 
+            <DxFunnel ... >
+                <DxLegend
+                    orientation="vertical" <!-- or "horizontal" -->
                 />
-            </Funnel>
-        );
-    }
+            </DxFunnel>
+        </template>
 
----
+        <script>
+        import DxFunnel, { DxLegend } from 'devextreme-vue/funnel';
+
+        export default {
+            components: {
+                DxFunnel,
+                DxLegend
+            }
+        }
+        </script>
+
+    ##### React
+
+        <!-- tab: App.js -->
+        import React from 'react';
+        import Funnel, { Legend } from 'devextreme-react/funnel';
+
+        export default function App() {
+            return (
+                <Funnel ... >
+                    <Legend
+                        orientation="vertical" {/* or "horizontal" */}
+                    />
+                </Funnel>
+            );
+        }
+
+    ---
 
     [note] To center a horizontally-oriented legend, assign *"center"* to the [horizontalAlignment](/api-reference/10%20UI%20Components/BaseLegend/horizontalAlignment.md '/Documentation/ApiReference/UI_Components/dxFunnel/Configuration/legend/#horizontalAlignment') property. For details on the legend's location, refer to the [Relocate the Legend](/concepts/05%20UI%20Components/Funnel/35%20Legend/10%20Relocate%20the%20Legend.md '/Documentation/Guide/UI_Components/Funnel/Legend/Relocate_the_Legend/') topic.
 

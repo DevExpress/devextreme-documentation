@@ -33,7 +33,7 @@ Allows you to configure the format. Can have one of the following structures:
             type: String, // one of the predefined formats
             precision: Number, // the precision of values
             currency: String, // a 3-letter currency code used to format the value
-            locale: String // the locale in which to format values, for example, "de-DE"
+            locale: String // the locale used to format values, for example, "de-DE"
         }
 
     or

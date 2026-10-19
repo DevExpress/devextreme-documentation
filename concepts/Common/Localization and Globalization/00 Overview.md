@@ -17,7 +17,7 @@ These areas work together, but each area solves a different task.
 ### Initial Behavior
 
 - DevExtreme resolves UI messages through locale fallback and uses the English dictionary (`en`) when no matching localized string exists.
-- Value formatting uses the active locale and your selected formatting engine (`Intl` or `Globalize`).
+- Value formatting uses the active locale and your selected formatting engine (`Intl` or `Globalize`). Format objects can [specify different locales](/Documentation/Guide/Common/Localization_and_Globalization/Value_Formatting/#Use_Different_Locales_for_Value_Formats_and_UI_Text) for date and number values.
 - Layout direction stays left-to-right until you enable `rtlEnabled`.
 
 ### Demos

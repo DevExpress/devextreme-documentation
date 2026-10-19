@@ -211,7 +211,7 @@ Use the [valueChanged](/api-reference/10%20UI%20Components/dxFileUploader/4%20Ev
 
     export default App;
 
-##### ASP.NET MVC/Core Controls
+##### ASP.NET Core Controls
 
     @(Html.DevExtreme().FileUploader()
         .ID("file-uploader")

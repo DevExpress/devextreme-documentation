@@ -8,7 +8,7 @@ Create the DevExtreme configuration file in your project directory:
 
     devextreme-bundler-init <bundle_name>
 
-*<bundle_name>* is a name of the configuration file (without an extension). If none is specified, **dx.custom** is set.  
+`<bundle_name>` is a name of the configuration file (without an extension). If none is specified, **dx.custom** is set.  
 
 After the file is created, you can edit it to include only the required modules and exports. 
 

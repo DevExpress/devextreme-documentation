@@ -1,4 +1,4 @@
-**calculateRoute** doesn't have to request route geometry from a routing service. It can return predefined coordinates instead. The function receives only route waypoints and the transportation mode, so use waypoints to identify predefined routes:
+**calculateRoute** does not have to request route geometry from a routing service. It can return predefined coordinates instead. The function receives only route waypoints and the transportation mode, so use waypoints to identify predefined routes:
 
     <!--JavaScript-->
     const predefinedRoutes = {

@@ -1,3 +1,5 @@
+packages:
+  - .
 allowBuilds:
-  core-js: false
-  inferno: false
+  core-js: true
+  inferno: true

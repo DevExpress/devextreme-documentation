@@ -25,7 +25,7 @@
     "validate-docs": "dx-tools validate-topics --docs-root-path ./",
     "validate-modules-guide": "dx-tools validate-modules-guide --modules-meta-path ./metadata/modules-meta.json --modules-guide-path \"./concepts/Common/Modularity/02 DevExtreme Modules Structure\"",
     "validate-links": "dx-tools convert-links --docs-root-path ./ --validation true",
-    "snippet-check:setup": "pnpm --dir tools/snippet-check/playground --ignore-workspace install --frozen-lockfile",
+    "snippet-check:setup": "pnpm --dir tools/snippet-check/playground install --frozen-lockfile",
     "check-snippets": "node tools/snippet-check/cli.ts",
     "test-snippet-check": "node --test \"tools/snippet-check/test/*.test.ts\"",
     "rename-topics": "ts-node ./tools/updateFolder.ts",

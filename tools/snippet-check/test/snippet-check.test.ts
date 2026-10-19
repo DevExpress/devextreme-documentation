@@ -4,6 +4,7 @@ import { describe, it } from 'node:test';
 import { parseDiagnostics } from '../src/adapters/common.ts';
 import { checkSnippets } from '../src/check.ts';
 import { extractSnippets } from '../src/extract.ts';
+import { buildReport } from '../src/report.ts';
 import { replaceElisions, widgetsFromPath } from '../src/resolve.ts';
 import type { Framework } from '../src/types.ts';
 
@@ -73,6 +74,18 @@ describe('parseDiagnostics', () => {
 
     it('throws when the compiler reports errors outside of the snippets', () => {
         assert.throws(() => parseDiagnostics('error TS500: The Angular Compiler requires TypeScript >=6.0.0'), /outside of the snippets/);
+    });
+});
+
+describe('buildReport (runs the real compilers)', () => {
+    it('groups failures by cause and lists one root error per snippet', () => {
+        const results = checkSnippets({ paths: [join(FIXTURES, 'broken.md')], frameworks: ALL });
+        const report = buildReport(results, join(FIXTURES, 'report.md'), 'npm run check-snippets');
+        assert.match(report, /## Vue: `return\(\) \{` instead of `return \{`/);
+        assert.match(report, /## Unknown member or name/);
+        assert.match(report, /## Type mismatch or unknown option/);
+        const failed = results.filter((r) => r.status === 'fail').length;
+        assert.equal((report.match(/^- \[ \] /gm) ?? []).length, failed);
     });
 });
 

@@ -46,6 +46,8 @@ npm run check-snippets -- <path> --widget DataGrid --quiet
 | `--framework a,b` | Limits the run to `react`, `jquery`, `vue`, `angular`. |
 | `--widget Name` | Fills `{WidgetName}` placeholders when the widget cannot be read from the article path. |
 | `--check-js` | Type-checks JavaScript tabs instead of only their syntax. Expect many false positives, because most JavaScript snippets are fragments. |
+| `--report` | Writes a categorized markdown checklist of the failures (see below). |
+| `--report-file path` | Where to write the report. Default: `tools/snippet-check/playground/.work/report.md`, which Git ignores. |
 | `--json` | Prints machine-readable results. |
 | `--quiet` | Prints only failures and the summary. |
 
@@ -61,6 +63,24 @@ SKIP  angular concepts/.../Foo.md:12  - no angular code tab (app.component.html)
 ```
 
 Locations point at the markdown file and line, not at the generated scratch files.
+
+## Reading the failures
+
+Raw compiler output is hard to work through: one broken line can produce ten errors, and codes such as `TS1005` say little. Add `--report` to get a markdown checklist instead:
+
+```console
+npm run check-snippets -- "concepts/05 UI Components/TreeList" --report --quiet
+```
+
+Open `playground/.work/report.md` in the editor's markdown preview. It contains:
+
+- a summary table of causes, such as "Vue: `return() {` instead of `return {`", "Invalid JSX structure", or "Import problem", with the number of snippets, articles, and frameworks affected;
+- one section per cause, with a short explanation of the fix;
+- under each section, the failing snippets grouped by article, one checkbox each. Each item links to the line in the article, shows the compiler message, and quotes the line.
+
+Only the first error of a snippet is listed. The rest are usually follow-ups, and their count is shown. The reported line is where the compiler noticed the problem, so read the lines just before it as well.
+
+Causes are assigned by rules in [src/report.ts](src/report.ts), based on the error code and the quoted line. A failure that matches no rule lands in "Other syntax error" or "Other". When a group like that keeps growing, add a rule.
 
 ## How a snippet is prepared
 
@@ -88,7 +108,7 @@ If a compiler crashes, or reports an error in a file that is not a snippet, the 
 
 ## Maintaining the tool
 
-- **DevExtreme version.** Edit the pinned versions in [playground/package.json](playground/package.json), run `pnpm --dir tools/snippet-check/playground --ignore-workspace install`, and commit the lock file. Angular requires a matching TypeScript version; the Angular compiler refuses to start otherwise, and the tool reports that.
+- **DevExtreme version.** Edit the pinned versions in [playground/package.json](playground/package.json), run `pnpm --dir tools/snippet-check/playground install`, and commit the lock file. Angular requires a matching TypeScript version; the Angular compiler refuses to start otherwise, and the tool reports that.
 - **A new framework or checker.** Add an adapter in [src/adapters/](src/adapters/) that implements `skipReason` and `check`, and register it in `src/adapters/index.ts`.
 - **Tests.** `npm run test-snippet-check` runs the unit tests and compiles two fixture articles (one valid, one broken) with the real compilers. Run it after changing the resolver or an adapter.
 - **Scratch files.** Generated projects are written to `playground/.work/` and are ignored by Git.

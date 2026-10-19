@@ -16,9 +16,10 @@ The checker lives in `tools/snippet-check` (see its `README.md`). It writes each
    - The user means "my changes" or a PR: `npm run check-snippets -- --changed`
    - Only one framework matters (for example, a React migration): add `--framework react`.
    - Placeholder-heavy `api-reference` articles outside grids: add `--widget <Name>`.
-4. Read the output. Locations are markdown `file:line`, so open that line to see the snippet.
-5. For each FAIL, decide whether it is a real snippet error (fix the markdown) or a gap in the tool (see below). Do not weaken `config.json` or `playground/globals.d.ts` just to turn a failure green.
-6. After fixing, rerun the same command and confirm the failures are gone.
+4. Add `--report` when there are many failures or the user wants to review them. It writes `tools/snippet-check/playground/.work/report.md`, a checklist grouped by cause. Summarize that file for the user instead of pasting the raw output.
+5. Read the output. Locations are markdown `file:line`, so open that line to see the snippet.
+6. For each FAIL, decide whether it is a real snippet error (fix the markdown) or a gap in the tool (see below). Do not weaken `config.json` or `playground/globals.d.ts` just to turn a failure green.
+7. After fixing, rerun the same command and confirm the failures are gone.
 
 ## Reporting
 

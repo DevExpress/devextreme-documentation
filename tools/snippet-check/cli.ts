@@ -1,8 +1,9 @@
 import { execFileSync } from 'node:child_process';
-import { existsSync } from 'node:fs';
-import { join, resolve } from 'node:path';
+import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
+import { dirname, join, resolve } from 'node:path';
 import { parseArgs } from 'node:util';
 import { checkSnippets, DOCS_ROOT, PLAYGROUND } from './src/check.ts';
+import { buildReport } from './src/report.ts';
 import type { Framework, SnippetResult } from './src/types.ts';
 
 const ALL: Framework[] = ['react', 'jquery', 'vue', 'angular'];
@@ -15,6 +16,8 @@ const USAGE = `Usage: npm run check-snippets -- <path...> [options]
   --framework <list>     Comma-separated: ${ALL.join(', ')} (default: all).
   --widget <Name>        Widget for {WidgetName} placeholders, for example DataGrid.
   --check-js             Type-check JavaScript tabs instead of only their syntax.
+  --report               Write a categorized markdown checklist of the failures.
+  --report-file <path>   Where to write it (default: tools/snippet-check/playground/.work/report.md).
   --json                 Print results as JSON.
   --quiet                Print only failures and the summary.
 `;
@@ -55,6 +58,8 @@ function main() {
             framework: { type: 'string' },
             widget: { type: 'string' },
             'check-js': { type: 'boolean' },
+            report: { type: 'boolean' },
+            'report-file': { type: 'string' },
             json: { type: 'boolean' },
             quiet: { type: 'boolean' },
             help: { type: 'boolean' },
@@ -81,6 +86,12 @@ function main() {
         widget: values.widget,
         checkJs: values['check-js'],
     });
+    if (values.report || values['report-file']) {
+        const target = resolve(values['report-file'] ?? join(PLAYGROUND, '.work', 'report.md'));
+        mkdirSync(dirname(target), { recursive: true });
+        writeFileSync(target, buildReport(results, target, `npm run check-snippets -- ${process.argv.slice(2).join(' ')}`));
+        console.log(`Report written to ${target}`);
+    }
     if (values.json) console.log(JSON.stringify(results, null, 2));
     else print(results, values.quiet ?? false);
     return results.some((r) => r.status === 'fail') ? 1 : 0;

@@ -1,3 +1,13 @@
+---
+id: dxChart.Options.title
+type: viz/chart:Title
+inheritsType: viz/chart:Title
+---
+---
+##### shortDescription
+<!-- %shortDescription% -->
+
+---
 <!-- %fullDescription% -->
 
 #include btn-open-demo with {

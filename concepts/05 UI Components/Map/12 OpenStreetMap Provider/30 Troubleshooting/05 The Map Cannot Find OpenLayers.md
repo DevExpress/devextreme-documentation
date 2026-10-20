@@ -1,0 +1,1 @@
+The Map logs an error if the component cannot find a compatible OpenLayers version. Ensure that your application loads OpenLayers before Map initialization. Modular applications must import the `devextreme/ui/map/openlayers` module.

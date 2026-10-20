@@ -1,9 +1,25 @@
 ---
 id: dxMap.Options.markers.onClick
-type: function()
+type: function(e)
 ---
 ---
 ##### shortDescription
 A callback function performed when the marker is clicked.
 
+##### param(e): ui/map:MarkerClickEvent
+Information about the event.
+
+##### field(e.component): {WidgetName}
+The UI component's instance.
+
+##### field(e.element): DxElement
+#include common-ref-elementparam with { element: "UI component" }
+
+##### field(e.location): MapLocation
+The clicked marker's coordinates.
+
+##### field(e.tooltip): dxPopover
+The clicked marker's Popover instance (only if **provider** is *"osm"*).
+
 ---
+If [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider) is *"osm"*, the Map also calls this function when a user presses Enter or Space on a focused marker.

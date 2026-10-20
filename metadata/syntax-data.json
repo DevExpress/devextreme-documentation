@@ -2866,6 +2866,21 @@
       "react": "OriginalMarker",
       "vue": "DxOriginalMarker"
     },
+    "_ui_map_MarkerClickEvent": {
+      "angular": "dxo-ui-map--marker-click-event",
+      "react": "_ui_map_MarkerClickEvent",
+      "vue": "Dx_ui_map_MarkerClickEvent"
+    },
+    "_ui_map_MarkerClickEvent.location": {
+      "angular": "dxo-location",
+      "react": "Location",
+      "vue": "DxLocation"
+    },
+    "_ui_map_MarkerClickEvent.tooltip": {
+      "angular": "dxo-tooltip",
+      "react": "Tooltip",
+      "vue": "DxTooltip"
+    },
     "_ui_map_MarkerRemovedEvent": {
       "angular": "dxo-ui-map--marker-removed-event",
       "react": "_ui_map_MarkerRemovedEvent",
@@ -6947,6 +6962,11 @@
     },
     "bubblePointInfo.sizeText": {
       "vue": "size-text"
+    },
+    "calculateOsmRouteInfo": {
+      "angular": "dxo-calculate-osm-route-info",
+      "react": "CalculateOsmRouteInfo",
+      "vue": "DxCalculateOsmRouteInfo"
     },
     "candleStickPointInfo": {
       "angular": "dxo-candle-stick-point-info",
@@ -15379,8 +15399,19 @@
       "react": "ProviderConfig",
       "vue": "DxProviderConfig"
     },
+    "dxMapOptions.providerConfig.calculateLocation": {
+      "vue": "calculate-location"
+    },
+    "dxMapOptions.providerConfig.calculateRoute": {
+      "vue": "calculate-route"
+    },
     "dxMapOptions.providerConfig.mapId": {
       "vue": "map-id"
+    },
+    "dxMapOptions.providerConfig.tileServer": {
+      "angular": "dxo-tile-server",
+      "react": "TileServer",
+      "vue": "DxTileServer"
     },
     "dxMapOptions.providerConfig.useAdvancedMarkers": {
       "vue": "use-advanced-markers"
@@ -23173,6 +23204,19 @@
     },
     "oDataStoreOptions.withCredentials": {
       "vue": "with-credentials"
+    },
+    "osmTileServer": {
+      "angular": "dxo-osm-tile-server",
+      "react": "OsmTileServer",
+      "vue": "DxOsmTileServer"
+    },
+    "osmTileServerConfig": {
+      "angular": "dxo-osm-tile-server-config",
+      "react": "OsmTileServerConfig",
+      "vue": "DxOsmTileServerConfig"
+    },
+    "osmTileServerConfig.maxZoom": {
+      "vue": "max-zoom"
     },
     "pager": {
       "angular": "dxo-pager",

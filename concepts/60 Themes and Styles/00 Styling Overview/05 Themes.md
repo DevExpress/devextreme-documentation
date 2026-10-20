@@ -10,5 +10,5 @@ DevExtreme ships with the following built-in themes:
     - Theme customization using public `--dxds-*` CSS variables
 
 - **Fluent, Material, and Generic**    
-Themes that use SCSS to implement styles. For more information, refer to the following help topic: [Predefined Themes](/Documentation/Guide/Themes_and_Styles/Predefined_Themes/).
+Themes that use SCSS to implement styles. For more information, refer to the following help topic: [Predefined Themes](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/').
 

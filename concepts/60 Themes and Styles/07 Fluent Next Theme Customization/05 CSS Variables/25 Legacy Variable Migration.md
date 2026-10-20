@@ -1,6 +1,6 @@
 DevExtreme themes other than Fluent Next use internal `--dx-*` variables instead of Design System variables to define shared CSS values such as colors. To support migration from these themes, Fluent Next themes declare these`--dx-*` variables and map them to Design System variables. This section lists mapped variables and corresponding public `--dxds-*` variables that you should migrate to.
 
-The following table lists color variables. Fluent Next themes declare these variables in the `:root` scope and on elements that use [container-specific theme modes](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes):
+The following table lists color variables. Fluent Next themes declare these variables in the `:root` scope and on elements that use [container-specific theme modes](/concepts/60%20Themes%20and%20Styles/07%20Fluent%20Next%20Theme%20Customization/15%20Theme%20Modes/05%20Container-Specific%20Theme%20Modes.md '/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes'):
 
 <table class="dx-table">
     <tr>

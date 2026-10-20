@@ -74,7 +74,7 @@ You can configure overrides for specific locales. To do this, specify key-value 
 
 ---
 
-You can also define overrides as [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects. Assign these objects to specific locale keys or the `default` key. To display values in a specific locale, add the [locale](/Documentation/ApiReference/Common/Object_Structures/Format/#locale) field to the format object.
+You can also define overrides as [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/Format/') objects. Assign these objects to specific locale keys or the `default` key. To display values in a specific locale, add the [locale](/api-reference/50%20Common/Object%20Structures/format/locale.md '/Documentation/ApiReference/Common/Object_Structures/Format/#locale') field to the format object.
 
 ---
 

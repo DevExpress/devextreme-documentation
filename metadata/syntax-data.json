@@ -367,7 +367,9 @@
       "vue": "column-index"
     },
     "_ui_card_view_ContextMenuPreparingEvent.targetElement": {
-      "vue": "target-element"
+      "angular": "dxo-target-element",
+      "react": "TargetElement",
+      "vue": "DxTargetElement"
     },
     "_ui_card_view_EditCanceledEvent": {
       "angular": "dxo-ui-card-view--edit-canceled-event",
@@ -777,7 +779,9 @@
       "vue": "Dx_ui_data_grid_CellClickEvent"
     },
     "_ui_data_grid_CellClickEvent.cellElement": {
-      "vue": "cell-element"
+      "angular": "dxo-cell-element",
+      "react": "CellElement",
+      "vue": "DxCellElement"
     },
     "_ui_data_grid_CellClickEvent.column": {
       "angular": "dxo-column",
@@ -807,7 +811,9 @@
       "vue": "Dx_ui_data_grid_CellDblClickEvent"
     },
     "_ui_data_grid_CellDblClickEvent.cellElement": {
-      "vue": "cell-element"
+      "angular": "dxo-cell-element",
+      "react": "CellElement",
+      "vue": "DxCellElement"
     },
     "_ui_data_grid_CellDblClickEvent.column": {
       "angular": "dxo-column",
@@ -837,7 +843,9 @@
       "vue": "Dx_ui_data_grid_CellHoverChangedEvent"
     },
     "_ui_data_grid_CellHoverChangedEvent.cellElement": {
-      "vue": "cell-element"
+      "angular": "dxo-cell-element",
+      "react": "CellElement",
+      "vue": "DxCellElement"
     },
     "_ui_data_grid_CellHoverChangedEvent.column": {
       "angular": "dxo-column",
@@ -870,7 +878,9 @@
       "vue": "Dx_ui_data_grid_CellPreparedEvent"
     },
     "_ui_data_grid_CellPreparedEvent.cellElement": {
-      "vue": "cell-element"
+      "angular": "dxo-cell-element",
+      "react": "CellElement",
+      "vue": "DxCellElement"
     },
     "_ui_data_grid_CellPreparedEvent.column": {
       "angular": "dxo-column",
@@ -953,7 +963,9 @@
       "vue": "row-index"
     },
     "_ui_data_grid_ContextMenuPreparingEvent.targetElement": {
-      "vue": "target-element"
+      "angular": "dxo-target-element",
+      "react": "TargetElement",
+      "vue": "DxTargetElement"
     },
     "_ui_data_grid_DataErrorOccurredEvent": {
       "angular": "dxo-ui-data-grid--data-error-occurred-event",
@@ -994,7 +1006,9 @@
       "vue": "data-field"
     },
     "_ui_data_grid_EditorPreparedEvent.editorElement": {
-      "vue": "editor-element"
+      "angular": "dxo-editor-element",
+      "react": "EditorElement",
+      "vue": "DxEditorElement"
     },
     "_ui_data_grid_EditorPreparedEvent.parentType": {
       "vue": "parent-type"
@@ -1025,7 +1039,9 @@
       "vue": "data-field"
     },
     "_ui_data_grid_EditorPreparingEvent.editorElement": {
-      "vue": "editor-element"
+      "angular": "dxo-editor-element",
+      "react": "EditorElement",
+      "vue": "DxEditorElement"
     },
     "_ui_data_grid_EditorPreparingEvent.editorName": {
       "vue": "editor-name"
@@ -1070,7 +1086,9 @@
       "vue": "Dx_ui_data_grid_FocusedCellChangedEvent"
     },
     "_ui_data_grid_FocusedCellChangedEvent.cellElement": {
-      "vue": "cell-element"
+      "angular": "dxo-cell-element",
+      "react": "CellElement",
+      "vue": "DxCellElement"
     },
     "_ui_data_grid_FocusedCellChangedEvent.column": {
       "angular": "dxo-column",
@@ -1094,7 +1112,9 @@
       "vue": "Dx_ui_data_grid_FocusedCellChangingEvent"
     },
     "_ui_data_grid_FocusedCellChangingEvent.cellElement": {
-      "vue": "cell-element"
+      "angular": "dxo-cell-element",
+      "react": "CellElement",
+      "vue": "DxCellElement"
     },
     "_ui_data_grid_FocusedCellChangingEvent.columns": {
       "angular": "dxi-column",
@@ -1132,7 +1152,9 @@
       "vue": "DxRow"
     },
     "_ui_data_grid_FocusedRowChangedEvent.rowElement": {
-      "vue": "row-element"
+      "angular": "dxo-row-element",
+      "react": "RowElement",
+      "vue": "DxRowElement"
     },
     "_ui_data_grid_FocusedRowChangedEvent.rowIndex": {
       "vue": "row-index"
@@ -1149,7 +1171,9 @@
       "vue": "prev-row-index"
     },
     "_ui_data_grid_FocusedRowChangingEvent.rowElement": {
-      "vue": "row-element"
+      "angular": "dxo-row-element",
+      "react": "RowElement",
+      "vue": "DxRowElement"
     },
     "_ui_data_grid_FocusedRowChangingEvent.rows": {
       "angular": "dxi-row",
@@ -1194,7 +1218,9 @@
       "vue": "is-selected"
     },
     "_ui_data_grid_RowClickEvent.rowElement": {
-      "vue": "row-element"
+      "angular": "dxo-row-element",
+      "react": "RowElement",
+      "vue": "DxRowElement"
     },
     "_ui_data_grid_RowClickEvent.rowIndex": {
       "vue": "row-index"
@@ -1235,7 +1261,9 @@
       "vue": "is-selected"
     },
     "_ui_data_grid_RowDblClickEvent.rowElement": {
-      "vue": "row-element"
+      "angular": "dxo-row-element",
+      "react": "RowElement",
+      "vue": "DxRowElement"
     },
     "_ui_data_grid_RowDblClickEvent.rowIndex": {
       "vue": "row-index"
@@ -1321,7 +1349,9 @@
       "vue": "is-selected"
     },
     "_ui_data_grid_RowPreparedEvent.rowElement": {
-      "vue": "row-element"
+      "angular": "dxo-row-element",
+      "react": "RowElement",
+      "vue": "DxRowElement"
     },
     "_ui_data_grid_RowPreparedEvent.rowIndex": {
       "vue": "row-index"
@@ -1616,7 +1646,9 @@
       "vue": "item-data"
     },
     "_ui_draggable_DragEndEvent.itemElement": {
-      "vue": "item-element"
+      "angular": "dxo-item-element",
+      "react": "ItemElement",
+      "vue": "DxItemElement"
     },
     "_ui_draggable_DragEndEvent.toComponent": {
       "angular": "dxo-to-component",
@@ -1643,7 +1675,9 @@
       "vue": "item-data"
     },
     "_ui_draggable_DragMoveEvent.itemElement": {
-      "vue": "item-element"
+      "angular": "dxo-item-element",
+      "react": "ItemElement",
+      "vue": "DxItemElement"
     },
     "_ui_draggable_DragMoveEvent.toComponent": {
       "angular": "dxo-to-component",
@@ -1665,7 +1699,9 @@
       "vue": "item-data"
     },
     "_ui_draggable_DragStartEvent.itemElement": {
-      "vue": "item-element"
+      "angular": "dxo-item-element",
+      "react": "ItemElement",
+      "vue": "DxItemElement"
     },
     "_ui_draggable_OptionChangedEvent": {
       "angular": "dxo-ui-draggable--option-changed-event",
@@ -1788,7 +1824,9 @@
       "vue": "DxItemData"
     },
     "_ui_drop_down_button_ItemClickEvent.itemElement": {
-      "vue": "item-element"
+      "angular": "dxo-item-element",
+      "react": "ItemElement",
+      "vue": "DxItemElement"
     },
     "_ui_drop_down_button_OptionChangedEvent": {
       "angular": "dxo-ui-drop-down-button--option-changed-event",
@@ -1836,7 +1874,9 @@
       "vue": "DxItemData"
     },
     "_ui_file_manager_ContextMenuItemClickEvent.itemElement": {
-      "vue": "item-element"
+      "angular": "dxo-item-element",
+      "react": "ItemElement",
+      "vue": "DxItemElement"
     },
     "_ui_file_manager_ContextMenuItemClickEvent.itemIndex": {
       "vue": "item-index"
@@ -1855,7 +1895,9 @@
       "vue": "DxFileSystemItem"
     },
     "_ui_file_manager_ContextMenuShowingEvent.targetElement": {
-      "vue": "target-element"
+      "angular": "dxo-target-element",
+      "react": "TargetElement",
+      "vue": "DxTargetElement"
     },
     "_ui_file_manager_ContextMenuShowingEvent.viewArea": {
       "vue": "view-area"
@@ -1948,7 +1990,9 @@
       "vue": "DxItem"
     },
     "_ui_file_manager_FocusedItemChangedEvent.itemElement": {
-      "vue": "item-element"
+      "angular": "dxo-item-element",
+      "react": "ItemElement",
+      "vue": "DxItemElement"
     },
     "_ui_file_manager_ItemCopiedEvent": {
       "angular": "dxo-ui-file-manager--item-copied-event",
@@ -2123,7 +2167,9 @@
       "vue": "DxItemData"
     },
     "_ui_file_manager_ToolbarItemClickEvent.itemElement": {
-      "vue": "item-element"
+      "angular": "dxo-item-element",
+      "react": "ItemElement",
+      "vue": "DxItemElement"
     },
     "_ui_file_manager_ToolbarItemClickEvent.itemIndex": {
       "vue": "item-index"
@@ -2154,7 +2200,9 @@
       "vue": "Dx_ui_file_uploader_DropZoneEnterEvent"
     },
     "_ui_file_uploader_DropZoneEnterEvent.dropZoneElement": {
-      "vue": "drop-zone-element"
+      "angular": "dxo-drop-zone-element",
+      "react": "DropZoneElement",
+      "vue": "DxDropZoneElement"
     },
     "_ui_file_uploader_DropZoneLeaveEvent": {
       "angular": "dxo-ui-file-uploader--drop-zone-leave-event",
@@ -2162,7 +2210,9 @@
       "vue": "Dx_ui_file_uploader_DropZoneLeaveEvent"
     },
     "_ui_file_uploader_DropZoneLeaveEvent.dropZoneElement": {
-      "vue": "drop-zone-element"
+      "angular": "dxo-drop-zone-element",
+      "react": "DropZoneElement",
+      "vue": "DxDropZoneElement"
     },
     "_ui_file_uploader_FilesUploadedEvent": {
       "angular": "dxo-ui-file-uploader--files-uploaded-event",
@@ -2235,7 +2285,9 @@
       "vue": "data-field"
     },
     "_ui_filter_builder_EditorPreparedEvent.editorElement": {
-      "vue": "editor-element"
+      "angular": "dxo-editor-element",
+      "react": "EditorElement",
+      "vue": "DxEditorElement"
     },
     "_ui_filter_builder_EditorPreparedEvent.editorName": {
       "vue": "editor-name"
@@ -2264,7 +2316,9 @@
       "vue": "data-field"
     },
     "_ui_filter_builder_EditorPreparingEvent.editorElement": {
-      "vue": "editor-element"
+      "angular": "dxo-editor-element",
+      "react": "EditorElement",
+      "vue": "DxEditorElement"
     },
     "_ui_filter_builder_EditorPreparingEvent.editorName": {
       "vue": "editor-name"
@@ -2594,7 +2648,9 @@
       "vue": "DxGroupData"
     },
     "_ui_list_GroupRenderedEvent.groupElement": {
-      "vue": "group-element"
+      "angular": "dxo-group-element",
+      "react": "GroupElement",
+      "vue": "DxGroupElement"
     },
     "_ui_list_GroupRenderedEvent.groupIndex": {
       "vue": "group-index"
@@ -2891,10 +2947,14 @@
       "vue": "DxItemData"
     },
     "_ui_menu_SubmenuHiddenEvent.rootItem": {
-      "vue": "root-item"
+      "angular": "dxo-root-item",
+      "react": "RootItem",
+      "vue": "DxRootItem"
     },
     "_ui_menu_SubmenuHiddenEvent.submenuContainer": {
-      "vue": "submenu-container"
+      "angular": "dxo-submenu-container",
+      "react": "SubmenuContainer",
+      "vue": "DxSubmenuContainer"
     },
     "_ui_menu_SubmenuHidingEvent": {
       "angular": "dxo-ui-menu--submenu-hiding-event",
@@ -2907,10 +2967,14 @@
       "vue": "DxItemData"
     },
     "_ui_menu_SubmenuHidingEvent.rootItem": {
-      "vue": "root-item"
+      "angular": "dxo-root-item",
+      "react": "RootItem",
+      "vue": "DxRootItem"
     },
     "_ui_menu_SubmenuHidingEvent.submenuContainer": {
-      "vue": "submenu-container"
+      "angular": "dxo-submenu-container",
+      "react": "SubmenuContainer",
+      "vue": "DxSubmenuContainer"
     },
     "_ui_menu_SubmenuShowingEvent": {
       "angular": "dxo-ui-menu--submenu-showing-event",
@@ -2923,10 +2987,14 @@
       "vue": "DxItemData"
     },
     "_ui_menu_SubmenuShowingEvent.rootItem": {
-      "vue": "root-item"
+      "angular": "dxo-root-item",
+      "react": "RootItem",
+      "vue": "DxRootItem"
     },
     "_ui_menu_SubmenuShowingEvent.submenuContainer": {
-      "vue": "submenu-container"
+      "angular": "dxo-submenu-container",
+      "react": "SubmenuContainer",
+      "vue": "DxSubmenuContainer"
     },
     "_ui_menu_SubmenuShownEvent": {
       "angular": "dxo-ui-menu--submenu-shown-event",
@@ -2939,10 +3007,14 @@
       "vue": "DxItemData"
     },
     "_ui_menu_SubmenuShownEvent.rootItem": {
-      "vue": "root-item"
+      "angular": "dxo-root-item",
+      "react": "RootItem",
+      "vue": "DxRootItem"
     },
     "_ui_menu_SubmenuShownEvent.submenuContainer": {
-      "vue": "submenu-container"
+      "angular": "dxo-submenu-container",
+      "react": "SubmenuContainer",
+      "vue": "DxSubmenuContainer"
     },
     "_ui_multi_view_ContentReadyEvent": {
       "angular": "dxo-ui-multi-view--content-ready-event",
@@ -3065,7 +3137,9 @@
       "vue": "DxCell"
     },
     "_ui_pivot_grid_CellClickEvent.cellElement": {
-      "vue": "cell-element"
+      "angular": "dxo-cell-element",
+      "react": "CellElement",
+      "vue": "DxCellElement"
     },
     "_ui_pivot_grid_CellClickEvent.columnFields": {
       "angular": "dxi-column-field",
@@ -3099,7 +3173,9 @@
       "vue": "DxCell"
     },
     "_ui_pivot_grid_CellPreparedEvent.cellElement": {
-      "vue": "cell-element"
+      "angular": "dxo-cell-element",
+      "react": "CellElement",
+      "vue": "DxCellElement"
     },
     "_ui_pivot_grid_CellPreparedEvent.columnIndex": {
       "vue": "column-index"
@@ -3123,7 +3199,9 @@
       "vue": "DxCell"
     },
     "_ui_pivot_grid_ContextMenuPreparingEvent.cellElement": {
-      "vue": "cell-element"
+      "angular": "dxo-cell-element",
+      "react": "CellElement",
+      "vue": "DxCellElement"
     },
     "_ui_pivot_grid_ContextMenuPreparingEvent.columnFields": {
       "angular": "dxi-column-field",
@@ -3400,7 +3478,9 @@
       "vue": "Dx_ui_scheduler_AppointmentClickEvent"
     },
     "_ui_scheduler_AppointmentClickEvent.appointmentElement": {
-      "vue": "appointment-element"
+      "angular": "dxo-appointment-element",
+      "react": "AppointmentElement",
+      "vue": "DxAppointmentElement"
     },
     "_ui_scheduler_AppointmentContextMenuEvent": {
       "angular": "dxo-ui-scheduler--appointment-context-menu-event",
@@ -3408,7 +3488,9 @@
       "vue": "Dx_ui_scheduler_AppointmentContextMenuEvent"
     },
     "_ui_scheduler_AppointmentContextMenuEvent.appointmentElement": {
-      "vue": "appointment-element"
+      "angular": "dxo-appointment-element",
+      "react": "AppointmentElement",
+      "vue": "DxAppointmentElement"
     },
     "_ui_scheduler_AppointmentDblClickEvent": {
       "angular": "dxo-ui-scheduler--appointment-dbl-click-event",
@@ -3416,7 +3498,9 @@
       "vue": "Dx_ui_scheduler_AppointmentDblClickEvent"
     },
     "_ui_scheduler_AppointmentDblClickEvent.appointmentElement": {
-      "vue": "appointment-element"
+      "angular": "dxo-appointment-element",
+      "react": "AppointmentElement",
+      "vue": "DxAppointmentElement"
     },
     "_ui_scheduler_AppointmentDeletedEvent": {
       "angular": "dxo-ui-scheduler--appointment-deleted-event",
@@ -3464,7 +3548,9 @@
       "vue": "Dx_ui_scheduler_AppointmentRenderedEvent"
     },
     "_ui_scheduler_AppointmentRenderedEvent.appointmentElement": {
-      "vue": "appointment-element"
+      "angular": "dxo-appointment-element",
+      "react": "AppointmentElement",
+      "vue": "DxAppointmentElement"
     },
     "_ui_scheduler_AppointmentTooltipShowingEvent": {
       "angular": "dxo-ui-scheduler--appointment-tooltip-showing-event",
@@ -3477,7 +3563,9 @@
       "vue": "DxAppointment"
     },
     "_ui_scheduler_AppointmentTooltipShowingEvent.targetElement": {
-      "vue": "target-element"
+      "angular": "dxo-target-element",
+      "react": "TargetElement",
+      "vue": "DxTargetElement"
     },
     "_ui_scheduler_AppointmentUpdatedEvent": {
       "angular": "dxo-ui-scheduler--appointment-updated-event",
@@ -3515,7 +3603,9 @@
       "vue": "DxCellData"
     },
     "_ui_scheduler_CellClickEvent.cellElement": {
-      "vue": "cell-element"
+      "angular": "dxo-cell-element",
+      "react": "CellElement",
+      "vue": "DxCellElement"
     },
     "_ui_scheduler_CellContextMenuEvent": {
       "angular": "dxo-ui-scheduler--cell-context-menu-event",
@@ -3528,7 +3618,9 @@
       "vue": "DxCellData"
     },
     "_ui_scheduler_CellContextMenuEvent.cellElement": {
-      "vue": "cell-element"
+      "angular": "dxo-cell-element",
+      "react": "CellElement",
+      "vue": "DxCellElement"
     },
     "_ui_scheduler_ContentReadyEvent": {
       "angular": "dxo-ui-scheduler--content-ready-event",
@@ -3726,7 +3818,9 @@
       "vue": "item-data"
     },
     "_ui_sortable_DragChangeEvent.itemElement": {
-      "vue": "item-element"
+      "angular": "dxo-item-element",
+      "react": "ItemElement",
+      "vue": "DxItemElement"
     },
     "_ui_sortable_DragChangeEvent.toComponent": {
       "angular": "dxo-to-component",
@@ -3762,7 +3856,9 @@
       "vue": "item-data"
     },
     "_ui_sortable_DragEndEvent.itemElement": {
-      "vue": "item-element"
+      "angular": "dxo-item-element",
+      "react": "ItemElement",
+      "vue": "DxItemElement"
     },
     "_ui_sortable_DragEndEvent.toComponent": {
       "angular": "dxo-to-component",
@@ -3798,7 +3894,9 @@
       "vue": "item-data"
     },
     "_ui_sortable_DragMoveEvent.itemElement": {
-      "vue": "item-element"
+      "angular": "dxo-item-element",
+      "react": "ItemElement",
+      "vue": "DxItemElement"
     },
     "_ui_sortable_DragMoveEvent.toComponent": {
       "angular": "dxo-to-component",
@@ -3826,7 +3924,9 @@
       "vue": "item-data"
     },
     "_ui_sortable_DragStartEvent.itemElement": {
-      "vue": "item-element"
+      "angular": "dxo-item-element",
+      "react": "ItemElement",
+      "vue": "DxItemElement"
     },
     "_ui_sortable_OptionChangedEvent": {
       "angular": "dxo-ui-sortable--option-changed-event",
@@ -3853,7 +3953,9 @@
       "vue": "item-data"
     },
     "_ui_sortable_RemoveEvent.itemElement": {
-      "vue": "item-element"
+      "angular": "dxo-item-element",
+      "react": "ItemElement",
+      "vue": "DxItemElement"
     },
     "_ui_sortable_RemoveEvent.toComponent": {
       "angular": "dxo-to-component",
@@ -3889,7 +3991,9 @@
       "vue": "item-data"
     },
     "_ui_sortable_ReorderEvent.itemElement": {
-      "vue": "item-element"
+      "angular": "dxo-item-element",
+      "react": "ItemElement",
+      "vue": "DxItemElement"
     },
     "_ui_sortable_ReorderEvent.toComponent": {
       "angular": "dxo-to-component",
@@ -3948,7 +4052,9 @@
       "vue": "Dx_ui_speed_dial_action_ClickEvent"
     },
     "_ui_speed_dial_action_ClickEvent.actionElement": {
-      "vue": "action-element"
+      "angular": "dxo-action-element",
+      "react": "ActionElement",
+      "vue": "DxActionElement"
     },
     "_ui_speed_dial_action_ContentReadyEvent": {
       "angular": "dxo-ui-speed-dial-action--content-ready-event",
@@ -3956,7 +4062,9 @@
       "vue": "Dx_ui_speed_dial_action_ContentReadyEvent"
     },
     "_ui_speed_dial_action_ContentReadyEvent.actionElement": {
-      "vue": "action-element"
+      "angular": "dxo-action-element",
+      "react": "ActionElement",
+      "vue": "DxActionElement"
     },
     "_ui_speed_dial_action_DisposingEvent": {
       "angular": "dxo-ui-speed-dial-action--disposing-event",
@@ -4019,7 +4127,9 @@
       "vue": "Dx_ui_splitter_ResizeEvent"
     },
     "_ui_splitter_ResizeInfo.handleElement": {
-      "vue": "handle-element"
+      "angular": "dxo-handle-element",
+      "react": "HandleElement",
+      "vue": "DxHandleElement"
     },
     "_ui_splitter_ResizeStartEvent": {
       "angular": "dxo-ui-splitter--resize-start-event",
@@ -4252,7 +4362,9 @@
       "vue": "Dx_ui_tag_box_MultiTagPreparingEvent"
     },
     "_ui_tag_box_MultiTagPreparingEvent.multiTagElement": {
-      "vue": "multi-tag-element"
+      "angular": "dxo-multi-tag-element",
+      "react": "MultiTagElement",
+      "vue": "DxMultiTagElement"
     },
     "_ui_tag_box_MultiTagPreparingEvent.selectedItems": {
       "angular": "dxi-selected-item",
@@ -4661,7 +4773,9 @@
       "vue": "row-index"
     },
     "_ui_tree_list_ContextMenuPreparingEvent.targetElement": {
-      "vue": "target-element"
+      "angular": "dxo-target-element",
+      "react": "TargetElement",
+      "vue": "DxTargetElement"
     },
     "_ui_tree_list_DataErrorOccurredEvent": {
       "angular": "dxo-ui-tree-list--data-error-occurred-event",
@@ -4702,7 +4816,9 @@
       "vue": "data-field"
     },
     "_ui_tree_list_EditorPreparedEvent.editorElement": {
-      "vue": "editor-element"
+      "angular": "dxo-editor-element",
+      "react": "EditorElement",
+      "vue": "DxEditorElement"
     },
     "_ui_tree_list_EditorPreparedEvent.parentType": {
       "vue": "parent-type"
@@ -4733,7 +4849,9 @@
       "vue": "data-field"
     },
     "_ui_tree_list_EditorPreparingEvent.editorElement": {
-      "vue": "editor-element"
+      "angular": "dxo-editor-element",
+      "react": "EditorElement",
+      "vue": "DxEditorElement"
     },
     "_ui_tree_list_EditorPreparingEvent.editorName": {
       "vue": "editor-name"
@@ -4767,7 +4885,9 @@
       "vue": "Dx_ui_tree_list_FocusedCellChangedEvent"
     },
     "_ui_tree_list_FocusedCellChangedEvent.cellElement": {
-      "vue": "cell-element"
+      "angular": "dxo-cell-element",
+      "react": "CellElement",
+      "vue": "DxCellElement"
     },
     "_ui_tree_list_FocusedCellChangedEvent.column": {
       "angular": "dxo-column",
@@ -4791,7 +4911,9 @@
       "vue": "Dx_ui_tree_list_FocusedCellChangingEvent"
     },
     "_ui_tree_list_FocusedCellChangingEvent.cellElement": {
-      "vue": "cell-element"
+      "angular": "dxo-cell-element",
+      "react": "CellElement",
+      "vue": "DxCellElement"
     },
     "_ui_tree_list_FocusedCellChangingEvent.columns": {
       "angular": "dxi-column",
@@ -4829,7 +4951,9 @@
       "vue": "DxRow"
     },
     "_ui_tree_list_FocusedRowChangedEvent.rowElement": {
-      "vue": "row-element"
+      "angular": "dxo-row-element",
+      "react": "RowElement",
+      "vue": "DxRowElement"
     },
     "_ui_tree_list_FocusedRowChangedEvent.rowIndex": {
       "vue": "row-index"
@@ -4846,7 +4970,9 @@
       "vue": "prev-row-index"
     },
     "_ui_tree_list_FocusedRowChangingEvent.rowElement": {
-      "vue": "row-element"
+      "angular": "dxo-row-element",
+      "react": "RowElement",
+      "vue": "DxRowElement"
     },
     "_ui_tree_list_FocusedRowChangingEvent.rows": {
       "angular": "dxi-row",
@@ -4903,7 +5029,9 @@
       "vue": "DxNode"
     },
     "_ui_tree_list_RowClickEvent.rowElement": {
-      "vue": "row-element"
+      "angular": "dxo-row-element",
+      "react": "RowElement",
+      "vue": "DxRowElement"
     },
     "_ui_tree_list_RowClickEvent.rowIndex": {
       "vue": "row-index"
@@ -4941,7 +5069,9 @@
       "vue": "is-selected"
     },
     "_ui_tree_list_RowDblClickEvent.rowElement": {
-      "vue": "row-element"
+      "angular": "dxo-row-element",
+      "react": "RowElement",
+      "vue": "DxRowElement"
     },
     "_ui_tree_list_RowDblClickEvent.rowIndex": {
       "vue": "row-index"
@@ -5029,7 +5159,9 @@
       "vue": "DxNode"
     },
     "_ui_tree_list_RowPreparedEvent.rowElement": {
-      "vue": "row-element"
+      "angular": "dxo-row-element",
+      "react": "RowElement",
+      "vue": "DxRowElement"
     },
     "_ui_tree_list_RowPreparedEvent.rowIndex": {
       "vue": "row-index"
@@ -5123,7 +5255,9 @@
       "vue": "DxItemData"
     },
     "_ui_tree_view_ItemInfo.itemElement": {
-      "vue": "item-element"
+      "angular": "dxo-item-element",
+      "react": "ItemElement",
+      "vue": "DxItemElement"
     },
     "_ui_tree_view_ItemInfo.itemIndex": {
       "vue": "item-index"
@@ -6775,6 +6909,11 @@
       "react": "DashStyle",
       "vue": "DxDashStyle"
     },
+    "baseWidgetOptions.tooltip.container": {
+      "angular": "dxo-container",
+      "react": "Container",
+      "vue": "DxContainer"
+    },
     "baseWidgetOptions.tooltip.cornerRadius": {
       "vue": "corner-radius"
     },
@@ -6945,7 +7084,9 @@
       "vue": "DxCard"
     },
     "cellInfo.cellElement": {
-      "vue": "cell-element"
+      "angular": "dxo-cell-element",
+      "react": "CellElement",
+      "vue": "DxCellElement"
     },
     "cellInfo.column": {
       "angular": "dxo-column",
@@ -7046,7 +7187,9 @@
       "vue": "DxCollectionWidgetItem"
     },
     "collectionWidgetOptions.focusedElement": {
-      "vue": "focused-element"
+      "angular": "dxo-focused-element",
+      "react": "FocusedElement",
+      "vue": "DxFocusedElement"
     },
     "collectionWidgetOptions.itemHoldTimeout": {
       "vue": "item-hold-timeout"
@@ -7135,6 +7278,11 @@
     },
     "columnChooser.allowSearch": {
       "vue": "allow-search"
+    },
+    "columnChooser.container": {
+      "angular": "dxo-container",
+      "react": "Container",
+      "vue": "DxContainer"
     },
     "columnChooser.emptyPanelText": {
       "vue": "empty-panel-text"
@@ -7643,6 +7791,16 @@
     "draggableBaseOptions.autoScroll": {
       "vue": "auto-scroll"
     },
+    "draggableBaseOptions.boundary": {
+      "angular": "dxo-boundary",
+      "react": "Boundary",
+      "vue": "DxBoundary"
+    },
+    "draggableBaseOptions.container": {
+      "angular": "dxo-container",
+      "react": "Container",
+      "vue": "DxContainer"
+    },
     "draggableBaseOptions.contentTemplate": {
       "vue": "content-template"
     },
@@ -7673,7 +7831,9 @@
       "vue": "item-data"
     },
     "dragStartEventInfo.itemElement": {
-      "vue": "item-element"
+      "angular": "dxo-item-element",
+      "react": "ItemElement",
+      "vue": "DxItemElement"
     },
     "dxAccordion": {
       "angular": "dx-accordion",
@@ -7848,6 +8008,11 @@
     },
     "dxActionSheetOptions.tabIndex": {
       "vue": "tab-index"
+    },
+    "dxActionSheetOptions.target": {
+      "angular": "dxo-target",
+      "react": "Target",
+      "vue": "DxTarget"
     },
     "dxActionSheetOptions.usePopover": {
       "vue": "use-popover"
@@ -10835,6 +11000,11 @@
     "dxContextMenuOptions.submenuDirection": {
       "vue": "submenu-direction"
     },
+    "dxContextMenuOptions.target": {
+      "angular": "dxo-target",
+      "react": "Target",
+      "vue": "DxTarget"
+    },
     "dxDataGrid": {
       "angular": "dx-data-grid",
       "react": "DataGrid",
@@ -12950,10 +13120,14 @@
       "vue": "chunk-size"
     },
     "dxFileUploaderOptions.dialogTrigger": {
-      "vue": "dialog-trigger"
+      "angular": "dxo-dialog-trigger",
+      "react": "DialogTrigger",
+      "vue": "DxDialogTrigger"
     },
     "dxFileUploaderOptions.dropZone": {
-      "vue": "drop-zone"
+      "angular": "dxo-drop-zone",
+      "react": "DropZone",
+      "vue": "DxDropZone"
     },
     "dxFileUploaderOptions.extendSelection": {
       "vue": "extend-selection"
@@ -14545,6 +14719,11 @@
       "react": "DxHtmlEditorToolbar",
       "vue": "DxHtmlEditorToolbar"
     },
+    "dxHtmlEditorToolbar.container": {
+      "angular": "dxo-container",
+      "react": "Container",
+      "vue": "DxContainer"
+    },
     "dxHtmlEditorToolbar.items": {
       "angular": "dxi-item",
       "react": "Item",
@@ -14901,6 +15080,11 @@
       "angular": "dxo-show",
       "react": "Show",
       "vue": "DxShow"
+    },
+    "dxLoadPanelOptions.container": {
+      "angular": "dxo-container",
+      "react": "Container",
+      "vue": "DxContainer"
     },
     "dxLoadPanelOptions.contentTemplate": {
       "vue": "content-template"
@@ -17143,7 +17327,9 @@
       "vue": "DxShow"
     },
     "dxPopoverOptions.dragAndResizeArea": {
-      "vue": "drag-and-resize-area"
+      "angular": "dxo-drag-and-resize-area",
+      "react": "DragAndResizeArea",
+      "vue": "DxDragAndResizeArea"
     },
     "dxPopoverOptions.dragEnabled": {
       "vue": "drag-enabled"
@@ -17226,6 +17412,11 @@
     "dxPopoverOptions.tabIndex": {
       "vue": "tab-index"
     },
+    "dxPopoverOptions.target": {
+      "angular": "dxo-target",
+      "react": "Target",
+      "vue": "DxTarget"
+    },
     "dxPopup": {
       "angular": "dx-popup",
       "react": "Popup",
@@ -17249,8 +17440,15 @@
       "react": "Show",
       "vue": "DxShow"
     },
+    "dxPopupOptions.container": {
+      "angular": "dxo-container",
+      "react": "Container",
+      "vue": "DxContainer"
+    },
     "dxPopupOptions.dragAndResizeArea": {
-      "vue": "drag-and-resize-area"
+      "angular": "dxo-drag-and-resize-area",
+      "react": "DragAndResizeArea",
+      "vue": "DxDragAndResizeArea"
     },
     "dxPopupOptions.dragEnabled": {
       "vue": "drag-enabled"
@@ -17771,6 +17969,11 @@
       "angular": "dx-resizable",
       "react": "Resizable",
       "vue": "DxResizable"
+    },
+    "dxResizableOptions.area": {
+      "angular": "dxo-area",
+      "react": "Area",
+      "vue": "DxArea"
     },
     "dxResizableOptions.keepAspectRatio": {
       "vue": "keep-aspect-ratio"
@@ -21942,6 +22145,11 @@
       "react": "Component",
       "vue": "DxComponent"
     },
+    "eventInfo.element": {
+      "angular": "dxo-element",
+      "react": "Element",
+      "vue": "DxElement"
+    },
     "eventObject": {
       "vue": "event-object"
     },
@@ -22584,6 +22792,16 @@
     "gridBaseOptions.rowDragging.autoScroll": {
       "vue": "auto-scroll"
     },
+    "gridBaseOptions.rowDragging.boundary": {
+      "angular": "dxo-boundary",
+      "react": "Boundary",
+      "vue": "DxBoundary"
+    },
+    "gridBaseOptions.rowDragging.container": {
+      "angular": "dxo-container",
+      "react": "Container",
+      "vue": "DxContainer"
+    },
     "gridBaseOptions.rowDragging.cursorOffset": {
       "angular": "dxo-cursor-offset",
       "react": "CursorOffset",
@@ -22805,7 +23023,9 @@
       "vue": "DxItemData"
     },
     "itemInfo.itemElement": {
-      "vue": "item-element"
+      "angular": "dxo-item-element",
+      "react": "ItemElement",
+      "vue": "DxItemElement"
     },
     "itemInfo.itemIndex": {
       "vue": "item-index"
@@ -22834,7 +23054,9 @@
       "vue": "DxItemData"
     },
     "listItemInfo.itemElement": {
-      "vue": "item-element"
+      "angular": "dxo-item-element",
+      "react": "ItemElement",
+      "vue": "DxItemElement"
     },
     "listItemInfo.itemIndex": {
       "angular": "dxo-item-index",
@@ -22956,6 +23178,11 @@
       "angular": "dxo-component",
       "react": "Component",
       "vue": "DxComponent"
+    },
+    "nativeEventInfo.element": {
+      "angular": "dxo-element",
+      "react": "Element",
+      "vue": "DxElement"
     },
     "nativeEventInfo.event": {
       "angular": "dxo-event",
@@ -23219,6 +23446,11 @@
       "react": "At",
       "vue": "DxAt"
     },
+    "positionConfig.boundary": {
+      "angular": "dxo-boundary",
+      "react": "Boundary",
+      "vue": "DxBoundary"
+    },
     "positionConfig.boundaryOffset": {
       "angular": "dxo-boundary-offset",
       "react": "BoundaryOffset",
@@ -23233,6 +23465,11 @@
       "angular": "dxo-my",
       "react": "My",
       "vue": "DxMy"
+    },
+    "positionConfig.of": {
+      "angular": "dxo-of",
+      "react": "Of",
+      "vue": "DxOf"
     },
     "positionConfig.offset": {
       "angular": "dxo-offset",
@@ -23320,7 +23557,9 @@
       "vue": "item-data"
     },
     "rowDraggingEventInfo.itemElement": {
-      "vue": "item-element"
+      "angular": "dxo-item-element",
+      "react": "ItemElement",
+      "vue": "DxItemElement"
     },
     "rowDraggingEventInfo.toComponent": {
       "vue": "to-component"
@@ -23583,7 +23822,9 @@
       "vue": "DxItemData"
     },
     "tabPanelItemInfo.itemElement": {
-      "vue": "item-element"
+      "angular": "dxo-item-element",
+      "react": "ItemElement",
+      "vue": "DxItemElement"
     },
     "tabPanelItemInfo.itemIndex": {
       "vue": "item-index"
@@ -23597,6 +23838,11 @@
       "angular": "dxo-targeted-appointment-data",
       "react": "TargetedAppointmentData",
       "vue": "DxTargetedAppointmentData"
+    },
+    "template": {
+      "angular": "dxo-template",
+      "react": "Template",
+      "vue": "DxTemplate"
     },
     "textEditorButton": {
       "angular": "dxo-text-editor-button",
@@ -23725,7 +23971,9 @@
       "vue": "DxCard"
     },
     "withCardInfo.cardElement": {
-      "vue": "card-element"
+      "angular": "dxo-card-element",
+      "react": "CardElement",
+      "vue": "DxCardElement"
     },
     "withFieldCaptionInfo.field": {
       "angular": "dxo-field",
@@ -23733,7 +23981,9 @@
       "vue": "DxField"
     },
     "withFieldCaptionInfo.fieldCaptionElement": {
-      "vue": "field-caption-element"
+      "angular": "dxo-field-caption-element",
+      "react": "FieldCaptionElement",
+      "vue": "DxFieldCaptionElement"
     },
     "withFieldValueInfo.field": {
       "angular": "dxo-field",
@@ -23741,7 +23991,9 @@
       "vue": "DxField"
     },
     "withFieldValueInfo.fieldValueElement": {
-      "vue": "field-value-element"
+      "angular": "dxo-field-value-element",
+      "react": "FieldValueElement",
+      "vue": "DxFieldValueElement"
     }
   }
 }

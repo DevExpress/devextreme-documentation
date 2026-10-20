@@ -6,7 +6,7 @@ Interactive markers use a generic accessible name (*"Map marker"*). Specify a de
         e.originalMarker.getElement().setAttribute('aria-label', 'Empire State Building');
     }
 
-If marker tooltips contain plain text, you can assign this text to each marker's [aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-label) attribute to specify unique accessible names:
+If marker tooltips contain plain text, you can assign this text to each marker's [aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-label) attribute to specify descriptive names:
 
     <!--JavaScript-->
     function onMarkerAdded(e) {

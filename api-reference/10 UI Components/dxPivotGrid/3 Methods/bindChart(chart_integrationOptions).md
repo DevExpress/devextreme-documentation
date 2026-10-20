@@ -24,7 +24,7 @@ Applies only if the PivotGrid contains multiple data fields.
 Allows you to customize the Chart's appearance.
 
 ##### field(integrationOptions.customizeSeries): function()
-Allows you to customize the [series](/Documentation/Guide/UI_Components/Chart/Series/Overview/).
+Allows you to customize the [series](/concepts/05%20UI%20Components/Chart/10%20Series/00%20Overview.md '/Documentation/Guide/UI_Components/Chart/Series/Overview/').
 
 ##### field(integrationOptions.dataFieldsDisplayMode): String
 Default Value: *"splitAxes"*.   

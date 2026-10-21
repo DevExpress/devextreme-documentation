@@ -9,7 +9,7 @@ Specifies a predefined format. Does not apply if you have specified the [formatt
 ---
 Depending on the values you need to format, you can choose one of the following predefined formats:
 
-**Numeric Formats**
+**Number Formats**
 
     <!-- tab: JavaScript -->
     const smallNumber = 1.2345;
@@ -43,7 +43,7 @@ Depending on the values you need to format, you can choose one of the following 
 
 [/note]
 
-**Date-Time Formats**  
+**Date/Time Formats**  
 
     <!-- tab: JavaScript -->
     const date = new Date(2021, 6, 15, 20, 45, 34);
@@ -70,6 +70,8 @@ Depending on the values you need to format, you can choose one of the following 
 If the **type** is the only field you need to specify in the **format** object, assign the value of this field straight to the **format** property as shown below.
 
     <!--JavaScript-->format: "shortDate"
+
+Components that use predefined formats display values in the current application locale by default. Define the [locale](/Documentation/ApiReference/Common/Object_Structures/format/#locale) property to specify another locale.
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Localization/UsingIntl/"

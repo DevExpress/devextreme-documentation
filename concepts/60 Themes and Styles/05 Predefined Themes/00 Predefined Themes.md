@@ -28,7 +28,7 @@ The following colors are built-in:
     </div>
 </div>
 
-[note] Fluent Next themes ship with 11 predefined accent colors and support custom accent colors. Refer to the following help topic for additional information: [Fluent Next Theme Customization - Accent Colors](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Accent_Colors).
+[note] Fluent Next themes ship with 11 predefined accent colors and support custom accent colors. Refer to the following help topic for additional information: [Fluent Next Theme Customization - Accent Colors](/concepts/60%20Themes%20and%20Styles/07%20Fluent%20Next%20Theme%20Customization/10%20Accent%20Colors/00%20Accent%20Colors.md '/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Accent_Colors').
 
 ## Fluent Themes
 
@@ -322,7 +322,7 @@ Each theme is a stylesheet that contains a collection of CSS classes. The follow
     </div>
 </div>
 
-CSS themes are designed to customize HTML-based UI components. However, [SVG-based UI components](/concepts/60%20Themes%20and%20Styles/00%20Styling%20Methods.md '/Documentation/Guide/Themes_and_Styles/Styling_Methods/') use their own themes to match the appearance of a particular CSS theme. Refer to the [Themes](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Components%20Customization/15%20Themes/00%20Themes.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Components_Customization/#Themes') article for additional information about themes in SVG-based UI components.
+CSS themes are designed to customize HTML-based UI components. However, [SVG-based UI components](/concepts/60%20Themes%20and%20Styles/02%20Styling%20Methods.md '/Documentation/Guide/Themes_and_Styles/Styling_Methods/') use their own themes to match the appearance of a particular CSS theme. Refer to the [Themes](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Components%20Customization/15%20Themes/00%20Themes.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Components_Customization/#Themes') article for additional information about themes in SVG-based UI components.
 
 <style>
     #material-themes {

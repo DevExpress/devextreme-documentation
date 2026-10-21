@@ -106,9 +106,9 @@ You can use this approach only if the themes belong to the same group. For insta
 
     ---
 
-2. Call the [DevExpress.ui.themes.current(themeName)](/api-reference/50%20Common/utils/ui/themes/current(themeName).md '/Documentation/ApiReference/Common/utils/ui/themes/#currentthemeName') method to switch to another theme. When you switch between Fluent Next themes, call [refreshMode()](/Documentation/ApiReference/Common/Utils/ui/themes/#refreshMode) to update open overlays that use [container-specific inverted dark/light modes](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes).
+2. Call the [DevExpress.ui.themes.current(themeName)](/api-reference/50%20Common/utils/ui/themes/current(themeName).md '/Documentation/ApiReference/Common/utils/ui/themes/#currentthemeName') method to switch to another theme. When you switch between Fluent Next themes, call [refreshMode()](/api-reference/50%20Common/utils/ui/themes/refreshMode().md '/Documentation/ApiReference/Common/Utils/ui/themes/#refreshMode') to update open overlays that use [container-specific inverted dark/light modes](/concepts/60%20Themes%20and%20Styles/07%20Fluent%20Next%20Theme%20Customization/15%20Theme%20Modes/05%20Container-Specific%20Theme%20Modes.md '/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes').
 
-    The browser applies the new stylesheet after **current(themeName)** returns. Call **refreshMode()** in a callback function passed to the [ready(callback)](/Documentation/ApiReference/Common/utils/ui/themes/#readycallback) method. Callback functions passed to **ready(callback)** only run once, so register a callback before each **current(themeName)** call:
+    The browser applies the new stylesheet after **current(themeName)** returns. Call **refreshMode()** in a callback function passed to the [ready(callback)](/api-reference/50%20Common/utils/ui/themes/ready(callback).md '/Documentation/ApiReference/Common/utils/ui/themes/#readycallback') method. Callback functions passed to **ready(callback)** only run once, so register a callback before each **current(themeName)** call:
 
         <!-- tab: Modular Application -->
         import themes from 'devextreme/ui/themes';
@@ -135,7 +135,7 @@ If you use an accent color stylesheet with Fluent Next themes, ensure you load t
     <link rel="dx-theme" data-theme="fluent-next.blue.light" href="css/dx.fluent-next.blue.light.css" data-active="true">
     <link rel="stylesheet" href="css/accents/rose.css">
 
-Refer to the following help topic for additional information about accent colors in Fluent Next themes: [Fluent Next Theme Customization - Accent Colors](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Accent_Colors).
+Refer to the following help topic for additional information about accent colors in Fluent Next themes: [Fluent Next Theme Customization - Accent Colors](/concepts/60%20Themes%20and%20Styles/07%20Fluent%20Next%20Theme%20Customization/10%20Accent%20Colors/00%20Accent%20Colors.md '/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Accent_Colors').
 
 [/note]
 

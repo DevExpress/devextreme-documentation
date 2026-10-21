@@ -1,12 +1,12 @@
-DevExtreme libraries use the current application locale to display UI text and to format values. You can use a different locale to format date, time, and number values. To do that, specify **Format**.[locale](/Documentation/ApiReference/Common/Object_Structures/Format/#locale) in the following [GlobalConfig](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/) properties:
+DevExtreme libraries use the current application locale to display UI text and to format values. You can use a different locale to format date, time, and number values. To do that, specify **Format**.[locale](/api-reference/50%20Common/Object%20Structures/format/locale.md '/Documentation/ApiReference/Common/Object_Structures/Format/#locale') in the following [GlobalConfig](/api-reference/50%20Common/Object%20Structures/GlobalConfig '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/') properties:
 
-- [dateFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateFormat)
-- [timeFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#timeFormat)
-- [dateTimeFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateTimeFormat)
-- [numberFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat)
-- [dateTimeFormatPresets](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateTimeFormatPresets)
+- [dateFormat](/api-reference/50%20Common/Object%20Structures/GlobalConfig/dateFormat.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateFormat')
+- [timeFormat](/api-reference/50%20Common/Object%20Structures/GlobalConfig/timeFormat.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#timeFormat')
+- [dateTimeFormat](/api-reference/50%20Common/Object%20Structures/GlobalConfig/dateTimeFormat.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateTimeFormat')
+- [numberFormat](/api-reference/50%20Common/Object%20Structures/GlobalConfig/numberFormat.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat')
+- [dateTimeFormatPresets](/api-reference/50%20Common/Object%20Structures/GlobalConfig/dateTimeFormatPresets.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateTimeFormatPresets')
 
-The following code snippet displays German [UI text](/Documentation/Guide/Common/Localization_and_Globalization/UI_Text_Localization/) and specifies the *"en-CA"* locale in **dateFormat** and the *"en-US"* locale in **numberFormat**:
+The following code snippet displays German [UI text](/concepts/Common/Localization%20and%20Globalization/05%20UI%20Text%20Localization/00%20UI%20Text%20Localization.md '/Documentation/Guide/Common/Localization_and_Globalization/UI_Text_Localization/') and specifies the *"en-CA"* locale in **dateFormat** and the *"en-US"* locale in **numberFormat**:
 
 ---
 ##### jQuery
@@ -133,7 +133,7 @@ If a format object in a date/time format property specifies only **locale**, thi
 
 Components that use other predefined formats (such as *"longDate"*) without **locale** display values in the current application locale.
 
-To apply a specific locale to a predefined date/time format in all components, override this format in [dateTimeFormatPresets](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateTimeFormatPresets) with a format object that specifies **locale**. The following code snippet displays *"longDate"* values in the *"en-CA"* locale:
+To apply a specific locale to a predefined date/time format in all components, override this format in [dateTimeFormatPresets](/api-reference/50%20Common/Object%20Structures/GlobalConfig/dateTimeFormatPresets.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateTimeFormatPresets') with a format object that specifies **locale**. The following code snippet displays *"longDate"* values in the *"en-CA"* locale:
 
 ---
 ##### jQuery
@@ -202,7 +202,7 @@ To apply a specific locale to a predefined date/time format in all components, o
 
 ---
 
-Define **locale** in a component format property to format component values in a specific locale. The following code snippet configures [displayFormat](/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#displayFormat).**locale** in a DevExtreme DateBox:
+Define **locale** in a component format property to format component values in a specific locale. The following code snippet configures [displayFormat](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/displayFormat.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#displayFormat').**locale** in a DevExtreme DateBox:
 
 ---
 ##### jQuery

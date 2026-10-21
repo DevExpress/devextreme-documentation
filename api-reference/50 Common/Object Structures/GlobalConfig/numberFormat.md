@@ -100,12 +100,12 @@ You can configure default formats for specific locales. Assign an object with ke
 
 ---
 
-You can also specify locale-specific formats and the `default` format as [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects. These objects can include the [locale](/Documentation/ApiReference/Common/Object_Structures/Format/#locale) field. Components use this locale in the following scenarios:
+You can also specify locale-specific formats and the `default` format as [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/Format/') objects. These objects can include the [locale](/api-reference/50%20Common/Object%20Structures/format/locale.md '/Documentation/ApiReference/Common/Object_Structures/Format/#locale') field. Components use this locale in the following scenarios:
 
 - When a component uses the global **numberFormat**
 - When a component format does not specify **locale**
 
-This locale also defines decimal and group separators in [custom format strings](/Documentation/Guide/Common/Localization_and_Globalization/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String). To apply another locale to component formats, specify **locale** in these formats.
+This locale also defines decimal and group separators in [custom format strings](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/10%20Format%20UI%20Component%20Values/20%20Custom%20Format%20String.md '/Documentation/Guide/Common/Localization_and_Globalization/Value_Formatting/#Format_UI_Component_Values/Custom_Format_String'). To apply another locale to component formats, specify **locale** in these formats.
 
 The following code specifies the *"de-DE"* locale for the global **numberFormat**:
 
@@ -171,7 +171,7 @@ The following code specifies the *"de-DE"* locale for the global **numberFormat*
 
 ---
 
-[note] Assign [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects to the `default` key or to specific locale keys. Do not declare format options directly inside **numberFormat**.
+[note] Assign [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/Format/') objects to the `default` key or to specific locale keys. Do not declare format options directly inside **numberFormat**.
 
 #####See Also#####
-- [Use Different Locales for Value Formats and UI Text](/Documentation/Guide/Common/Localization_and_Globalization/Value_Formatting/#Use_Different_Locales_for_Value_Formats_and_UI_Text)
+- [Use Different Locales for Value Formats and UI Text](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/30%20Use%20Different%20Locales%20for%20Value%20Formats%20and%20UI%20Text.md '/Documentation/Guide/Common/Localization_and_Globalization/Value_Formatting/#Use_Different_Locales_for_Value_Formats_and_UI_Text')

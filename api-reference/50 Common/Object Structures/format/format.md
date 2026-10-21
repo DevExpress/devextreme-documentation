@@ -52,7 +52,7 @@ Allows you to configure the format. Can have one of the following structures:
         === or ===
         format: { style: "currency", currency: "EUR", useGrouping: true }
 
-    Add the [locale](/Documentation/ApiReference/Common/Object_Structures/Format/#locale) field to apply Intl options in a specific locale:
+    Add the [locale](/api-reference/50%20Common/Object%20Structures/format/locale.md '/Documentation/ApiReference/Common/Object_Structures/Format/#locale') field to apply Intl options in a specific locale:
 
         <!-- tab: Intl -->
         format: { style: "currency", currency: "EUR", locale: "de-DE" }

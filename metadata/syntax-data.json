@@ -9483,6 +9483,14 @@
     "dxChartOptions.synchronizeMultiAxes": {
       "vue": "synchronize-multi-axes"
     },
+    "dxChartOptions.title": {
+      "angular": "dxo-title",
+      "react": "Title",
+      "vue": "DxTitle"
+    },
+    "dxChartOptions.title.horizontalAlignment": {
+      "vue": "horizontal-alignment"
+    },
     "dxChartOptions.tooltip": {
       "angular": "dxo-tooltip",
       "react": "Tooltip",
@@ -17858,6 +17866,14 @@
     "dxRangeSelectorOptions.sliderMarker.placeholderHeight": {
       "vue": "placeholder-height"
     },
+    "dxRangeSelectorOptions.title": {
+      "angular": "dxo-title",
+      "react": "Title",
+      "vue": "DxTitle"
+    },
+    "dxRangeSelectorOptions.title.horizontalAlignment": {
+      "vue": "horizontal-alignment"
+    },
     "dxRangeSelectorOptions.tooltip": {
       "angular": "dxo-tooltip",
       "react": "Tooltip",
@@ -18258,6 +18274,14 @@
     },
     "dxSankeyOptions.targetField": {
       "vue": "target-field"
+    },
+    "dxSankeyOptions.title": {
+      "angular": "dxo-title",
+      "react": "Title",
+      "vue": "DxTitle"
+    },
+    "dxSankeyOptions.title.horizontalAlignment": {
+      "vue": "horizontal-alignment"
     },
     "dxSankeyOptions.tooltip": {
       "angular": "dxo-tooltip",
@@ -20689,6 +20713,14 @@
       "react": "Border",
       "vue": "DxBorder"
     },
+    "dxTreeMapOptions.title": {
+      "angular": "dxo-title",
+      "react": "Title",
+      "vue": "DxTitle"
+    },
+    "dxTreeMapOptions.title.horizontalAlignment": {
+      "vue": "horizontal-alignment"
+    },
     "dxTreeMapOptions.tooltip": {
       "angular": "dxo-tooltip",
       "react": "Tooltip",
@@ -21241,6 +21273,14 @@
       "angular": "dxo-projection",
       "react": "Projection",
       "vue": "DxProjection"
+    },
+    "dxVectorMapOptions.title": {
+      "angular": "dxo-title",
+      "react": "Title",
+      "vue": "DxTitle"
+    },
+    "dxVectorMapOptions.title.horizontalAlignment": {
+      "vue": "horizontal-alignment"
     },
     "dxVectorMapOptions.tooltip": {
       "angular": "dxo-tooltip",

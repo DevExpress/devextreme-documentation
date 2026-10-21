@@ -56,34 +56,22 @@ Use the [addRow()](/api-reference/10%20UI%20Components/dxTreeList/3%20Methods/ad
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { TreeListRef } from 'devextreme-react/tree-list';
+    import React, { useCallback, useRef } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import TreeList from 'devextreme-react/tree-list';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.treeListRef = React.createRef();
-            this.addNewRow = this.addNewRow.bind(this);
-        }
-
-        addNewRow() {
-            this.treeListRef.current.instance().addRow();
-        }
-
-        render() {
-            return (
-                <TreeList ...
-                    ref={this.treeListRef}>
-                </TreeList>
-            );
-        }
+    function App() {
+        const treeListRef = useRef<TreeListRef>(null);
+        const addNewRow = useCallback(() => {
+            const treeListRefInstance = treeListRef.current?.instance();
+            if (!treeListRefInstance) return;
+            treeListRefInstance.addRow();
+        }, []);
+        return <TreeList ... ref={treeListRef}></TreeList>;
     }
     export default App;
-    
+
 ---
 
 You can specify initial values for a newly added row in the [onInitNewRow](/api-reference/10%20UI%20Components/dxTreeList/1%20Configuration/onInitNewRow.md '/Documentation/ApiReference/UI_Components/dxTreeList/Configuration/#onInitNewRow') event handler.
@@ -163,31 +151,23 @@ You can specify initial values for a newly added row in the [onInitNewRow](/api-
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { TreeListTypes } from 'devextreme-react/tree-list';
+    import React, { useCallback } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import TreeList, {
-        Column
-    } from 'devextreme-react/tree-list';
-
-    class App extends React.Component {
-        setHireDate(e) {
+    import TreeList, { Column } from 'devextreme-react/tree-list';
+    function App() {
+        const setHireDate = useCallback((e: TreeListTypes.InitNewRowEvent) => {
             e.data.Hire_Date = new Date();
-        }
-
-        render() {
-            return (
-                <TreeList ...
-                    onInitNewRow={this.setHireDate}>
-                    <Column dataField="Hire_Date" dataType="date" />
-                </TreeList>
-            );
-        }
+        }, []);
+        return (
+            <TreeList ... onInitNewRow={setHireDate}>
+                <Column dataField="Hire_Date" dataType="date" />
+            </TreeList>
+        );
     }
     export default App;
-    
+
 ---
 
 #####See Also#####

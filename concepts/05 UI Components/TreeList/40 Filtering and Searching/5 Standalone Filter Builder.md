@@ -249,44 +249,33 @@ Then, add a button that updates a filter of the TreeList's data source according
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import type { FilterBuilderRef } from 'devextreme-react/filter-builder';
+    import type { TreeListRef } from 'devextreme-react/tree-list';
+    import React, { useCallback, useRef } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import TreeList from 'devextreme-react/tree-list';
     import FilterBuilder from 'devextreme-react/filter-builder';
     import Button from 'devextreme-react/button';
-   
-    class App extends React.Component {
-        constructor(props) {
-            super(props);    
-            this.gridRef = React.createRef();
-            this.fbRef = React.createRef();                   
-        }
-        get treeList() {
-            return this.gridRef.current.instance();
-        }
-        get filterBuilder() {
-            return this.fbRef.current.instance();
-        }
-        
-        render() {
-            return (
-                <React.Fragment>
-                    <TreeList ... 
-                        :ref="gridRef" />              
-                    <FilterBuilder ...
-                        :ref="fbRef" />
-                    <Button 
-                        text="Apply Filter" 
-                        onClick={this.buttonClick} />    
-                </React.Fragment>
-            );
-        }
-        buttonClick = () => {
-            this.treeList.filter(this.filterBuilder.getFilterExpression());
-        }
+    function App() {
+        const gridRef = useRef<TreeListRef>(null);
+        const fbRef = useRef<FilterBuilderRef>(null);
+        const buttonClick = useCallback(() => {
+            const gridRefInstance = gridRef.current?.instance();
+            if (!gridRefInstance) return;
+            const fbRefInstance = fbRef.current?.instance();
+            if (!fbRefInstance) return;
+            gridRefInstance.filter(fbRefInstance.getFilterExpression());
+        }, []);
+        return (
+            <React.Fragment>
+                <TreeList ... ref={gridRef} />
+                <FilterBuilder ... ref={fbRef} />
+                <Button text="Apply Filter" onClick={buttonClick} />
+            </React.Fragment>
+        );
     }
+    export default App;
 
 ---
 

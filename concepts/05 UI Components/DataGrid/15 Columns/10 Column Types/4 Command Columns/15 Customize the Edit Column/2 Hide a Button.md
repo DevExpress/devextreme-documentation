@@ -88,32 +88,19 @@ The **Edit** and **Delete** buttons can be hidden by omitting them when declarin
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
-
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import DataGrid, {
-        Editing,
-        Column,
-        Button
-    } from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-
-        render() {
-            return (
-                <DataGrid ... >
-                    <Editing
-                        allowUpdating={true}
-                        allowDeleting={true}
-                    />
-                    <Column type="buttons">
-                        <Button name="edit" />
-                    </Column>
-                </DataGrid>
-            );
-        }
+    import DataGrid, { Editing, Column, Button } from 'devextreme-react/data-grid';
+    function App() {
+        return (
+            <DataGrid ...>
+                <Editing allowUpdating={true} allowDeleting={true} />
+                <Column type="buttons">
+                    <Button name="edit" />
+                </Column>
+            </DataGrid>
+        );
     }
     export default App;
 

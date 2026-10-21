@@ -112,31 +112,34 @@ Use this method if you want to add an empty row. If you need to add a row with d
 
     ##### React
 
-        <!-- tab: App.js -->
-        import React from 'react';
+        <!-- tab: App.tsx -->
+        import React, { useCallback } from 'react';
 
         import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DataGrid from 'devextreme-react/data-grid';
         import DataSource from 'devextreme/data/data_source';
 
-        const ds = new DataSource({
+        type RowData = Record<string, unknown>;
+
+        const ds = new DataSource<RowData>({
             // ...
         });
 
-        class App extends React.Component {
-            insertRowRemote(dataObj) {
-                ds.store().insert(dataObj).then(() => ds.reload());
-            }
-            render() {
-                return (
-                    <DataGrid
-                        dataSource={ds}
-                    />
-                );
-            }
+        function App() {
+            const insertRowRemote = useCallback((dataObj: RowData) => {
+                return ds.store().insert(dataObj).then(() => ds.reload());
+            }, []);
+
+            // Call insertRowRemote(dataObj) from your UI event handler.
+            return (
+                <DataGrid
+                    dataSource={ds}
+                />
+            );
         }
         export default App;
+
 
     ---
 
@@ -239,33 +242,36 @@ Use this method if you want to add an empty row. If you need to add a row with d
 
     ##### React
 
-        <!-- tab: App.js -->
-        import React from 'react';
+        <!-- tab: App.tsx -->
+        import React, { useCallback } from 'react';
 
         import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
         import DataGrid from 'devextreme-react/data-grid';
         import DataSource from 'devextreme/data/data_source';
 
-        const ds = new DataSource({
+        type RowData = Record<string, unknown>;
+
+        const ds = new DataSource<RowData>({
             // ...
         });
 
-        class App extends React.Component {
-            insertRowLocal(dataObj) {
+        function App() {
+            const insertRowLocal = useCallback((dataObj: RowData) => {
                 ds.store().push([
                     { type: "insert", data: dataObj }
                 ]);
-            }
-            render() {
-                return (
-                    <DataGrid
-                        dataSource={ds}
-                    />
-                );
-            }
+            }, []);
+
+            // Call insertRowLocal(dataObj) from your UI event handler.
+            return (
+                <DataGrid
+                    dataSource={ds}
+                />
+            );
         }
         export default App;
+
 
     ---
 

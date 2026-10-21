@@ -74,45 +74,26 @@ Set a column's [groupIndex](/api-reference/_hidden/dxDataGridColumn/groupIndex.m
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridTypes } from 'devextreme-react/data-grid';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import { DataGrid, Column } from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                cityGroupIndex: 0
-            };
-        }
-
-        render() {
-            return (
-                <DataGrid ...
-                    onOptionChanged={this.onOptionChanged}>
-                    <Column
-                        dataField="City"
-                        groupIndex={this.state.cityGroupIndex} />
-                </DataGrid>
-            );
-        }
-
-        ungroupCity = () => {
-            this.setState({
-                cityGroupIndex: undefined
-            });
-        }
-
-        onOptionChanged = (e) => {
-            if (e.fullName === "columns[0].groupIndex") {
-                this.setState({
-                    cityGroupIndex: e.value
-                });
+    function App() {
+        const [cityGroupIndex, setCityGroupIndex] = useState<number | undefined>(0);
+        const ungroupCity = useCallback(() => {
+            setCityGroupIndex(undefined);
+        }, []);
+        const onOptionChanged = useCallback((e: DataGridTypes.OptionChangedEvent) => {
+            if (e.fullName === 'columns[0].groupIndex') {
+                setCityGroupIndex(e.value);
             }
-        }
+        }, []);
+        return (
+            <DataGrid ... onOptionChanged={onOptionChanged}>
+                <Column dataField="City" groupIndex={cityGroupIndex} />
+            </DataGrid>
+        );
     }
     export default App;
 

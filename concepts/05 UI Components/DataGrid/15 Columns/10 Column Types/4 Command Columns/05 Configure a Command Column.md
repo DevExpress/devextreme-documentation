@@ -68,24 +68,16 @@ The following example shows how to specify the adaptive column's [width](/api-re
 
 ##### React
 
-    <!-- tab: App.js -->
+    <!-- tab: App.tsx -->
     import React from 'react';
-
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import DataGrid, {
-        Column
-    } from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-
-        render() {
-            return (
-                <DataGrid ... >
-                    <Column type="adaptive" width={50} />
-                </DataGrid>
-            );
-        }
+    import DataGrid, { Column } from 'devextreme-react/data-grid';
+    function App() {
+        return (
+            <DataGrid ...>
+                <Column type="adaptive" width={50} />
+            </DataGrid>
+        );
     }
     export default App;
 

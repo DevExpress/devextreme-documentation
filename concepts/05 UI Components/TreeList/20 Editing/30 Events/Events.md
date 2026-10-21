@@ -73,28 +73,19 @@ The TreeList UI component raises events before and after a row is inserted, upda
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { TreeListTypes } from 'devextreme-react/tree-list';
+    import React, { useCallback } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import TreeList from 'devextreme-react/tree-list';
-
-    class App extends React.Component {
-        onRowInserting(e) {
+    function App() {
+        const onRowInserting = useCallback((e: TreeListTypes.RowInsertingEvent) => {
             // Handler of the "rowInserting" event
-        }
-
-        render() {
-            return (
-                <TreeList ...
-                    onRowInserting={this.onRowInserting}>
-                </TreeList>
-            );
-        }
+        }, []);
+        return <TreeList ... onRowInserting={onRowInserting}></TreeList>;
     }
     export default App;
-    
+
 ---
 
 ---
@@ -187,29 +178,20 @@ In addition, the TreeList raises the [initNewRow](/api-reference/10%20UI%20Compo
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { TreeListTypes } from 'devextreme-react/tree-list';
+    import React, { useCallback } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import TreeList from 'devextreme-react/tree-list';
-
-    class App extends React.Component {
-        onInitNewRow(e) { // Handler of the "initNewRow" event
+    function App() {
+        const onInitNewRow = useCallback((e: TreeListTypes.InitNewRowEvent) => {
             // Sets an initial value for the "Hire_Date" field
             e.data.Hire_Date = new Date();
-        }
-
-        render() {
-            return (
-                <TreeList ...
-                    onInitNewRow={this.onInitNewRow}>
-                </TreeList>
-            );
-        }
+        }, []);
+        return <TreeList ... onInitNewRow={onInitNewRow}></TreeList>;
     }
     export default App;
-    
+
 ---
     
 #####See Also#####

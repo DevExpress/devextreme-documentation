@@ -166,34 +166,35 @@ In the following code, the **onCellPrepared** function is used to change a `Prod
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
 
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import {WidgetName} from 'devextreme-react/{widget-name}';
+    import {WidgetName}, { type {WidgetName}Types } from 'devextreme-react/{widget-name}';
 
-    class App extends React.Component {
-        // ...
-        render() {
-            return (
-                <{WidgetName}
-                     repaintChangesOnly={true}
-                     onCellPrepared={this.onCellPrepared}
-                />
-            );
-        }
-        onCellPrepared = (e) => {
-            if(e.rowType === "data" && e.column.dataField === "ProductName") {
+    type Product = {
+        ProductName: string;
+        Amount: number;
+    };
+
+    function App() {
+        const onCellPrepared = useCallback((e: {WidgetName}Types.CellPreparedEvent<Product>) => {
+            if (e.rowType === "data" && e.column.dataField === "ProductName") {
                 e.cellElement.style.color = e.data.Amount >= 10000 ? "green" : "red";
                 // Tracks the `Amount` data field
-                e.watch(function() {
-                    return e.data.Amount;
-                }, function() {
+                e.watch?.(() => e.data.Amount, () => {
                     e.cellElement.style.color = e.data.Amount >= 10000 ? "green" : "red";
-                })
+                });
             }
-        }
+        }, []);
+
+        return (
+            <{WidgetName}
+                repaintChangesOnly={true}
+                onCellPrepared={onCellPrepared}
+            />
+        );
     }
     export default App;
 

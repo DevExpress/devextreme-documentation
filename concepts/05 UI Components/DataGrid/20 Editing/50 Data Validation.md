@@ -196,31 +196,22 @@ The [onRowValidating](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configu
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridTypes } from 'devextreme-react/data-grid';
+    import React, { useCallback } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import DataGrid from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        denyAdminLogin(e) {
-            if(e.isValid && e.newData.Login === "Administrator") {
+    function App() {
+        const denyAdminLogin = useCallback((e: DataGridTypes.RowValidatingEvent) => {
+            if (e.isValid && e.newData.Login === 'Administrator') {
                 e.isValid = false;
-                e.errorText = "You cannot log in as Administrator";
+                e.errorText = 'You cannot log in as Administrator';
             }
-        }
-
-        render() {
-            return (
-                <DataGrid ...
-                    onRowValidating={this.denyAdminLogin}>
-                </DataGrid>
-            );
-        }
+        }, []);
+        return <DataGrid ... onRowValidating={denyAdminLogin}></DataGrid>;
     }
     export default App;
-    
+
 ---
 
 #include btn-open-demo with {

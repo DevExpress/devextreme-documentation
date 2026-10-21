@@ -95,54 +95,29 @@ A column is considered hidden when its [visible](/api-reference/_hidden/GridBase
 
 A column is considered hidden when its [visible](/api-reference/_hidden/GridBaseColumn/visible.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#visible') property is **false**. You can bind this property to a state property and change the latter property. For example, the following code hides an *"Email"* column:
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridTypes } from 'devextreme-react/data-grid';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import DataGrid, {
-        Column
-    } from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                isEmailVisible: true
-            };
-
-            this.handleOptionChange = this.handleOptionChange.bind(this);
-            this.hideEmails = this.hideEmails.bind(this);
-        }
-
-        handleOptionChange(e) {
-            if(e.fullName === 'columns[0].visible') {
-                this.setState({
-                    isEmailVisible: e.value
-                });
+    import DataGrid, { Column } from 'devextreme-react/data-grid';
+    function App() {
+        const [isEmailVisible, setIsEmailVisible] = useState<boolean>(true);
+        const handleOptionChange = useCallback((e: DataGridTypes.OptionChangedEvent) => {
+            if (e.fullName === 'columns[0].visible') {
+                setIsEmailVisible(e.value);
             }
-        }
-
-        hideEmails() {
-            this.setState({
-                isEmailVisible: false
-            });
-        }
-
-        render() {
-            return (
-                <DataGrid ...
-                    onOptionChanged={this.handleOptionChange}>
-                    <Column 
-                        dataField="Email"
-                        visible={this.state.isEmailVisible}
-                    />
-                </DataGrid>
-            );
-        }
+        }, []);
+        const hideEmails = useCallback(() => {
+            setIsEmailVisible(false);
+        }, []);
+        return (
+            <DataGrid ... onOptionChanged={handleOptionChange}>
+                <Column dataField="Email" visible={isEmailVisible} />
+            </DataGrid>
+        );
     }
     export default App;
-    
+
 ---
 
 #####See Also#####

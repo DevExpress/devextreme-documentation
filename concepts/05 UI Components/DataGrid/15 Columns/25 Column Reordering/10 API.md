@@ -64,28 +64,19 @@ The [columns](/api-reference/10%20UI%20Components/dxDataGrid/1%20Configuration/c
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridTypes } from 'devextreme-react/data-grid';
+    import React, { useCallback } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import DataGrid from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        customizeColumns(columns) {
+    function App() {
+        const customizeColumns = useCallback((columns: DataGridTypes.Column[]) => {
             columns[2].visibleIndex = 1;
-        }
-
-        render() {
-            return (
-                <DataGrid ...
-                    customizeColumns={this.customizeColumns}>
-                </DataGrid>
-            );
-        }
+        }, []);
+        return <DataGrid ... customizeColumns={customizeColumns}></DataGrid>;
     }
     export default App;
-    
+
 ---
 
 The **visibleIndex** property can also be changed at runtime to reorder columns regardless of the way you configured them. For this, call the [columnOption(id, optionName, optionValue)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/columnOption(id_optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#columnOptionid_optionName_optionValue') method. The following code swaps the second and first column:
@@ -157,37 +148,22 @@ The **visibleIndex** property can also be changed at runtime to reorder columns 
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridRef } from 'devextreme-react/data-grid';
+    import React, { useCallback, useRef } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import DataGrid from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.dataGridRef = React.createRef();
-
-            this.swapColumns = () => {
-                this.dataGrid.columnOption(1, 'visibleIndex', 0);
-            }
-        }
-
-        get dataGrid() {
-            return this.dataGridRef.current.instance();
-        }
-
-        render() {
-            return (
-                <DataGrid ref={this.dataGridRef}>
-                    {/* ... */ }
-                </DataGrid>
-            );
-        }
+    function App() {
+        const dataGridRef = useRef<DataGridRef>(null);
+        const swapColumns = useCallback(() => {
+            const dataGridRefInstance = dataGridRef.current?.instance();
+            if (!dataGridRefInstance) return;
+            dataGridRefInstance.columnOption(1, 'visibleIndex', 0);
+        }, []);
+        return <DataGrid ref={dataGridRef}>{/* ... */}</DataGrid>;
     }
     export default App;
-    
+
 ---
 
 #####See Also#####

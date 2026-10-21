@@ -125,35 +125,24 @@ Use the **editorOptions** parameter of [onEditorPreparing](/api-reference/10%20U
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridTypes } from 'devextreme-react/data-grid';
+    import React, { useCallback } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import DataGrid, { 
-        Column,
-        Editing
-    } from 'devextreme-react/data-grid';
-
-    class App extends React.Component {        
-        render() {
-            return (
-                <DataGrid ...
-                    onEditorPreparing={this.onEditorPreparing}>
-                    <Column dataField="FirstName" />
-                    <Column dataField="LastName" />  
-                    <Editing
-                        allowAdding={true}
-                        allowUpdating={true}
-                    />            
-                </DataGrid>
-            );
-        }
-        onEditorPreparing = (e) => {
-            if(e.dataField === "LastName" && e.parentType ==="dataRow"){
-                e.editorOptions.disabled = e.row.data && e.row.data.FirstName === "";
+    import DataGrid, { Column, Editing } from 'devextreme-react/data-grid';
+    function App() {
+        const onEditorPreparing = useCallback((e: DataGridTypes.EditorPreparingEvent) => {
+            if (e.dataField === 'LastName' && e.parentType === 'dataRow') {
+                e.editorOptions.disabled = e.row?.data && e.row.data.FirstName === '';
             }
-        }          
+        }, []);
+        return (
+            <DataGrid ... onEditorPreparing={onEditorPreparing}>
+                <Column dataField="FirstName" />
+                <Column dataField="LastName" />
+                <Editing allowAdding={true} allowUpdating={true} />
+            </DataGrid>
+        );
     }
     export default App;
 
@@ -255,22 +244,27 @@ Specify [setCellValue](/api-reference/_hidden/GridBaseColumn/setCellValue.md '/D
 
 ##### React
 
-    <!--tab: App.js-->
+    <!-- tab: App.tsx -->
+    import type { DataGridTypes } from 'devextreme-react/data-grid';
+    import React, { useCallback } from 'react';
     // ...
-    class App extends React.Component {
-        // ...   
-        render() {
-            return (
-                <DataGrid ... >             
-                    <Column dataField="FirstName" setCellValue={this.setCellValue} />
-                    <Column dataField="LastName" /> 
-                </DataGrid>
-            );
-        }
-        setCellValue(newData, value) {
-            let column = this;
-            column.defaultSetCellValue(newData, value);
-        }
+    import DataGrid, { Column } from 'devextreme-react/data-grid';
+    function App() {
+        const setCellValue = useCallback(function (
+            this: DataGridTypes.Column,
+            newData: Record<string, unknown>,
+            value: unknown,
+            currentRowData: Record<string, unknown>
+        ) {
+            this.defaultSetCellValue?.(newData, value, currentRowData);
+        },
+        []);
+        return (
+            <DataGrid ...>
+                <Column dataField="FirstName" setCellValue={setCellValue} />
+                <Column dataField="LastName" />
+            </DataGrid>
+        );
     }
     export default App;
 

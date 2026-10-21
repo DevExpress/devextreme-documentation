@@ -181,18 +181,18 @@ Use this function to:
 
     ##### React
 
-        <!-- tab: App.js -->
-        import React from 'react';
+        <!-- tab: App.tsx -->
+        import React, { useCallback } from 'react';
 
         import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-        import {WidgetName} from 'devextreme-react/{widget-name}';
+        import {WidgetName}, { type {WidgetName}Types } from 'devextreme-react/{widget-name}';
 
-        class App extends React.Component {
-            overrideOnValueChanged(e) {
+        function App() {
+            const overrideOnValueChanged = useCallback((e: {WidgetName}Types.EditorPreparingEvent) => {
                 if (e.dataField === 'requiredDataField' && e.parentType === 'dataRow') {
                     const defaultValueChangeHandler = e.editorOptions.onValueChanged;
-                    e.editorOptions.onValueChanged = function (args) { // Override the default handler
+                    e.editorOptions.onValueChanged = (args: { value?: unknown }) => { // Override the default handler
                         // ...
                         // Custom commands go here
                         // ...
@@ -200,16 +200,15 @@ Use this function to:
                         // e.setValue(newValue);
                         // Otherwise, call the default handler:
                         defaultValueChangeHandler(args);
-                    }
+                    };
                 }
-            }
-            render() {
-                return (
-                    <{WidgetName} ...
-                        onEditorPreparing={this.overrideOnValueChanged}>
-                    </{WidgetName}>
-                );
-            }
+            }, []);
+
+            return (
+                <{WidgetName} ...
+                    onEditorPreparing={overrideOnValueChanged}>
+                </{WidgetName}>
+            );
         }
         export default App;
 

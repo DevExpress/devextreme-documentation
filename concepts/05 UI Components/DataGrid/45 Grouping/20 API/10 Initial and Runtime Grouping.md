@@ -202,43 +202,29 @@ You can change a column's **groupIndex** at runtime using the [columnOption(id, 
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridTypes } from 'devextreme-react/data-grid';
+    import React, { useCallback, useState } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import { DataGrid, Column } from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                cityGroupIndex: 0
-            };
-        }
-
-        render() {
-            return (
-                <DataGrid ...
-                    onOptionChanged={this.onOptionChanged}>
-                    <Column
-                        dataField="City"
-                        groupIndex={this.state.cityGroupIndex} />
-                </DataGrid>
-            );
-        }
-
-        groupByCity = (index) => {
-            this.setState({
-                cityGroupIndex: index
-            });
-        }
-
-        onOptionChanged = (e) => {
-            if (e.fullName === "columns[0].groupIndex") {
-                this.groupByCity(e.value);
-            }
-        }
+    function App() {
+        const [cityGroupIndex, setCityGroupIndex] = useState<number | undefined>(0);
+        const groupByCity = useCallback((index: number) => {
+            setCityGroupIndex(index);
+        }, []);
+        const onOptionChanged = useCallback(
+            (e: DataGridTypes.OptionChangedEvent) => {
+                if (e.fullName === 'columns[0].groupIndex') {
+                    groupByCity(e.value);
+                }
+            },
+            [groupByCity]
+        );
+        return (
+            <DataGrid ... onOptionChanged={onOptionChanged}>
+                <Column dataField="City" groupIndex={cityGroupIndex} />
+            </DataGrid>
+        );
     }
     export default App;
 

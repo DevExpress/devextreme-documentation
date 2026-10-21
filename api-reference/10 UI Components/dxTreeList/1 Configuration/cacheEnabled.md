@@ -79,39 +79,33 @@ To update data in cache, call the [refresh()](/api-reference/10%20UI%20Component
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
+    <!-- tab: App.tsx -->
+    import React, { useCallback, useRef } from 'react';
 
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
 
-    import {WidgetName} from 'devextreme-react/{widget-name}';
+    import {WidgetName}, { type {WidgetName}Ref } from 'devextreme-react/{widget-name}';
 
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
+    function App() {
+        const {widgetName}Ref = useRef<{WidgetName}Ref>(null);
 
-            this.{widgetName}Ref = React.createRef();
+        const refreshData = useCallback(() => {
+            const {widgetName} = {widgetName}Ref.current?.instance();
+            if (!{widgetName}) return;
 
-            this.refreshData = () => {
-                this.{widgetName}.refresh();
-                // ===== or =====
-                const {widgetName}DataSource = this.{widgetName}.getDataSource();
-                {widgetName}DataSource.reload();
-            }
-        }
+            {widgetName}.refresh();
+            // Alternatively, reload the data source instead of calling refresh():
+            // {widgetName}.getDataSource().reload();
+        }, []);
 
-        get {widgetName}() {
-            return this.{widgetName}Ref.current.instance();
-        }
-
-        render() {
-            return (
-                <{WidgetName} ref={this.{widgetName}Ref}>
-                    {/* ... */ }
-                </{WidgetName}>
-            );
-        }
+        // Call refreshData() from your UI event handler.
+        return (
+            <{WidgetName} ref={{widgetName}Ref}>
+                {/* ... */}
+            </{WidgetName}>
+        );
     }
     export default App;
-    
+
+
 ---

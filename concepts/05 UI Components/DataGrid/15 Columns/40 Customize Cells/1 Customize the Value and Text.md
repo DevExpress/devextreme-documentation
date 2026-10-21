@@ -78,40 +78,22 @@ Use the [customizeText](/api-reference/_hidden/GridBaseColumn/customizeText.md '
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import DataGrid, {
-        Column
-    } from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-
-            // Uncomment the line below if the function should be executed in the component's context
-            // this.priceColumn_customizeText = this.priceColumn_customizeText.bind(this);
-        }
-
-        priceColumn_customizeText(cellInfo) {
+    import DataGrid, { Column } from 'devextreme-react/data-grid';
+    function App() {
+        const priceColumn_customizeText = useCallback((cellInfo: { value: string | number }) => {
             return cellInfo.value + '$';
-        }
-
-        render() {
-            return (
-                <DataGrid ... >
-                    <Column
-                        dataField="Price"
-                        customizeText={priceColumn_customizeText}
-                    />
-                </DataGrid>
-            );
-        }
+        }, []);
+        return (
+            <DataGrid ...>
+                <Column dataField="Price" customizeText={priceColumn_customizeText} />
+            </DataGrid>
+        );
     }
     export default App;
-    
+
 ---
 
 To use the text displayed in cells in those data processing operations, specify the [calculateCellValue](/api-reference/_hidden/GridBaseColumn/calculateCellValue.md '/Documentation/ApiReference/UI_Components/dxDataGrid/Configuration/columns/#calculateCellValue') function instead. It populates a column with custom values and allows you to create unbound columns - columns that are not bound to any individual data field. In the following example, this function combines full names using data from the **firstName** and **lastName** fields: 
@@ -194,40 +176,25 @@ To use the text displayed in cells in those data processing operations, specify 
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import React, { useCallback } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
-    import DataGrid, {
-        Column
-    } from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        constructor(props) {
-            super(props);
-
-            // Uncomment the line below if the function should be executed in the component's context
-            // this.fullNameColumn_calculateCellValue = this.fullNameColumn_calculateCellValue.bind(this);
-        }
-
-        fullNameColumn_calculateCellValue(rowData) {
-            return rowData.firstName + ' ' + rowData.lastName;
-        }
-
-        render() {
-            return (
-                <DataGrid ... >
-                    <Column
-                        caption="Full Name"
-                        calculateCellValue={fullNameColumn_calculateCellValue}
-                    />
-                </DataGrid>
-            );
-        }
+    import DataGrid, { Column } from 'devextreme-react/data-grid';
+    function App() {
+        const fullNameColumn_calculateCellValue = useCallback(
+            (rowData: { firstName: string; lastName: string }) => {
+                return rowData.firstName + ' ' + rowData.lastName;
+            },
+            []
+        );
+        return (
+            <DataGrid ...>
+                <Column caption="Full Name" calculateCellValue={fullNameColumn_calculateCellValue} />
+            </DataGrid>
+        );
     }
     export default App;
-    
+
 ---
 
 #include btn-open-demo with {

@@ -73,28 +73,19 @@ The DataGrid UI component raises events before and after a row is inserted, upda
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridTypes } from 'devextreme-react/data-grid';
+    import React, { useCallback } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import DataGrid from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        onRowInserting(e) {
+    function App() {
+        const onRowInserting = useCallback((e: DataGridTypes.RowInsertingEvent) => {
             // Handler of the "rowInserting" event
-        }
-
-        render() {
-            return (
-                <DataGrid ...
-                    onRowInserting={this.onRowInserting}>
-                </DataGrid>
-            );
-        }
+        }, []);
+        return <DataGrid ... onRowInserting={onRowInserting}></DataGrid>;
     }
     export default App;
-    
+
 ---
 
 ---
@@ -186,29 +177,20 @@ In addition, the DataGrid raises the [initNewRow](/api-reference/10%20UI%20Compo
 
 ##### React
 
-    <!-- tab: App.js -->
-    import React from 'react';
-
+    <!-- tab: App.tsx -->
+    import type { DataGridTypes } from 'devextreme-react/data-grid';
+    import React, { useCallback } from 'react';
     import 'devextreme/dist/css/dx.fluent.blue.light.css';
-
     import DataGrid from 'devextreme-react/data-grid';
-
-    class App extends React.Component {
-        onInitNewRow(e) { // Handler of the "initNewRow" event
+    function App() {
+        const onInitNewRow = useCallback((e: DataGridTypes.InitNewRowEvent) => {
             // Sets an initial value for the "Hire_Date" field
             e.data.Hire_Date = new Date();
-        }
-
-        render() {
-            return (
-                <DataGrid ...
-                    onInitNewRow={this.onInitNewRow}>
-                </DataGrid>
-            );
-        }
+        }, []);
+        return <DataGrid ... onInitNewRow={onInitNewRow}></DataGrid>;
     }
     export default App;
-    
+
 ---
     
 #####See Also#####

@@ -6,3 +6,7 @@ declare const customers: any[];
 declare const products: any[];
 declare const data: any;
 declare const dataSource: any;
+
+// Theme stylesheets that snippets import for side effects, such as
+// 'devextreme/dist/css/dx.fluent.blue.light.css'.
+declare module '*.css';

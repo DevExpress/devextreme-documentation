@@ -125,13 +125,7 @@ Components that use these global formats display values as follows:
     </tr>
 </table>
 
-If a format object in a date/time format property specifies only **locale**, this locale applies to the property's default predefined format:
-
-- **dateFormat**: *"shortDate"*
-- **timeFormat**: *"shortTime"*
-- **dateTimeFormat**: *"shortDateShortTime"*
-
-Components that use other predefined formats (such as *"longDate"*) without **locale** display values in the current application locale.
+The **dateFormat**, **timeFormat**, and **dateTimeFormat** properties specify default formats. If you define a format in a component, this format ignores these defaults, including **locale**.
 
 To apply a specific locale to a predefined date/time format (**format**.[type](/Documentation/ApiReference/Common/Object_Structures/format/#type)), override this format in [dateTimeFormatPresets](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateTimeFormatPresets) with a format object that specifies **locale**. The following code snippet displays *"longDate"* values in the *"en-CA"* locale:
 

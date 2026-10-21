@@ -8,6 +8,8 @@ default: ''
 Specifies the value's display format and controls user input accordingly.
 
 ---
+If you do not specify this property, the component uses the global [numberFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat). If you do not specify this global format either, the component displays unformatted values. The **format** value uses the **numberFormat** locale if this global format specifies a locale. To specify another locale, define the [locale](/Documentation/ApiReference/Common/Object_Structures/format/#locale) property in **format**.
+
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/NumberBox/Formatting/"
 }

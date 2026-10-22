@@ -10,7 +10,10 @@ Formats the item value before it is displayed in the label.
 ---
 See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') section for information on accepted values.
 
-If you do not specify this property, the component formats numbers using the global [numberFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat). If you do not specify this global format either, the component displays unformatted numbers. Number formats in this property use the **numberFormat** locale if this global format specifies a locale. To specify another locale, define the [locale](/Documentation/ApiReference/Common/Object_Structures/format/#locale) property in **format**.
+#include common-global-format-note with {
+    property: "format",
+    globalFormats: "[numberFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat)"
+}
 
 If you specify the format with an object, it can also contain the **percentPrecision** field. Funnel items have absolute and percentage values. The **percentPrecision** field specifies how many decimal digits the percentage values should have:
 

@@ -10,7 +10,10 @@ Formats field values before they are displayed.
 ---
 See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') section for information on accepted values.
 
-If you do not specify this property, the PivotGrid formats numbers using the global [numberFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat). If you do not specify this global format either, the PivotGrid displays unformatted numbers. Number formats in this property use the **numberFormat** locale if this global format specifies a locale. To specify another locale, define the [locale](/Documentation/ApiReference/Common/Object_Structures/format/#locale) property in **format**.
+#include common-global-format-note with {
+    property: "format",
+    globalFormats: "[numberFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat)"
+}
 
 ---
 ##### jQuery

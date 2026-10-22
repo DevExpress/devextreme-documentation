@@ -10,7 +10,10 @@ Formats a value before it is displayed.
 ---
 See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') section for information on accepted values.
 
-If you do not specify this property, the component uses the global [dateFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateFormat), [dateTimeFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateTimeFormat), or [numberFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat) that matches the [dataType](/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/#dataType) value. If you do not specify the matching global format either, the component formats dates based on the current application [locale](/Documentation/ApiReference/Common/utils/localization/#locale) and displays unformatted numbers. Date formats that you specify in **format** also use this locale. Number formats use the **numberFormat** locale if this global format specifies a locale. To specify another locale, define the [locale](/Documentation/ApiReference/Common/Object_Structures/format/#locale) property in **format**. To change a predefined date format's locale in all components, override this format in [dateTimeFormatPresets](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateTimeFormatPresets).
+#include common-global-format-note with {
+    property: "format",
+    globalFormats: "[dateFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateFormat), [dateTimeFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateTimeFormat), or [numberFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat)"
+}
 
 This property also controls user input in cells that use the [DateBox](/api-reference/10%20UI%20Components/dxDateBox '/Documentation/ApiReference/UI_Components/dxDateBox/') UI component for editing. For cells that use other UI components, you can specify the [editorOptions](/api-reference/_hidden/dxFilterBuilderField/editorOptions.md '/Documentation/ApiReference/UI_Components/dxFilterBuilder/Configuration/fields/#editorOptions') **format** property.
 

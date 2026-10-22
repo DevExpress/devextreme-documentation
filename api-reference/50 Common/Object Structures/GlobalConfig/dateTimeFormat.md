@@ -100,15 +100,7 @@ You can configure default formats for specific locales. Assign an object with ke
 
 ---
 
-You can also specify locale-specific formats and the `default` format as [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects. These objects can include the [locale](/Documentation/ApiReference/Common/Object_Structures/Format/#locale) field. Components use this locale in the following scenarios:
-
-- When a component uses the global **dateTimeFormat**
-- When a component format does not specify **locale** and uses the *"shortDateShortTime"* [type](/Documentation/ApiReference/Common/Object_Structures/Format/#type) or the same **type** as the global **dateTimeFormat**
-- When a component uses an Intl format that does not specify **locale** and includes at least one field from each group:
-    - Date: **year**, **month**, **day**, **weekday**
-    - Time: **hour**, **minute**, **second**
-
-If a component uses a different date-time format (such as *"longDateLongTime"*), the component displays values in the [current application locale](/Documentation/ApiReference/Common/utils/localization/#locale). To apply another locale, specify **locale** in this format.
+You can also specify locale-specific formats and the `default` format as [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects. These objects can include the [locale](/Documentation/ApiReference/Common/Object_Structures/Format/#locale) field. Components that use the global **dateTimeFormat** display values in this locale. It does not affect formats defined in components: specify **locale** in these formats instead.
 
 The following code specifies the *"de-DE"* locale for the global **dateTimeFormat**:
 
@@ -170,12 +162,7 @@ The following code specifies the *"de-DE"* locale for the global **dateTimeForma
 
 ---
 
-[note]
-
-- Assign [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects to the `default` key or to specific locale keys. Do not declare format options directly inside **dateTimeFormat**.
-- If a format object in **dateTimeFormat** does not specify **type**, only the *"shortDateShortTime"* predefined format uses the format object's **locale**.
-
-[/note]
+[note] Assign [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects to the `default` key or to specific locale keys. Do not declare format options directly inside **dateTimeFormat**.
 
 #####See Also#####
 - [Use Different Locales for Value Formats and UI Text](/Documentation/Guide/Common/Localization_and_Globalization/Value_Formatting/#Use_Different_Locales_for_Value_Formats_and_UI_Text)

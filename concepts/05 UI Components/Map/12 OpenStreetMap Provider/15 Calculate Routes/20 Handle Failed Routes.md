@@ -1,4 +1,4 @@
-If **calculateRoute** fails, the Map does not display a route. The [addRoute(routeOptions)](/Documentation/ApiReference/UI_Components/dxMap/Methods/#addRouterouteOptions) promise resolves with `undefined`:
+If **calculateRoute** fails, the Map does not display a route. The [addRoute(routeOptions)](/api-reference/10%20UI%20Components/dxMap/3%20Methods/addRoute(routeOptions).md '/Documentation/ApiReference/UI_Components/dxMap/Methods/#addRouterouteOptions') promise resolves with `undefined`:
 
     <!--JavaScript-->
     const route = await mapInstance.addRoute(routeOptions);

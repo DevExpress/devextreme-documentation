@@ -4,7 +4,7 @@ type: String | Array<String>
 ---
 ---
 ##### shortDescription
-Values for the `{s}` placeholder in the [url](/Documentation/ApiReference/UI_Components/dxMap/Types/OsmTileServerConfig/#url) template.
+Values for the `{s}` placeholder in the [url](/api-reference/10%20UI%20Components/dxMap/9%20Types/OsmTileServerConfig/url.md '/Documentation/ApiReference/UI_Components/dxMap/Types/OsmTileServerConfig/#url') template.
 
 ---
 Specify subdomains in one of the following formats:

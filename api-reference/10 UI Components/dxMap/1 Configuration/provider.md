@@ -27,4 +27,4 @@ Each provider offers different functionality that you can integrate. Refer to th
 }
 
 #####See Also#####
-- [Map - OpenStreetMap Provider](/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/)
+- [Map - OpenStreetMap Provider](/concepts/05%20UI%20Components/Map/12%20OpenStreetMap%20Provider/00%20OpenStreetMap%20Provider.md '/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/')

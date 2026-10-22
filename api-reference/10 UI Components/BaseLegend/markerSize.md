@@ -1,7 +1,7 @@
 ---
 id: BaseLegend.markerSize
 type: Number
-default: 20
+default: 12
 ---
 ---
 ##### shortDescription

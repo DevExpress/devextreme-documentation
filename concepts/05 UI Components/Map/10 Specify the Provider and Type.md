@@ -81,7 +81,7 @@ Use the [provider](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/p
 
 ---
 
-If **provider** is *"osm"*, specify a tile source in **providerConfig**.[tileServer](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#tileServer) and configure [OpenLayers](https://openlayers.org/) as follows:
+If **provider** is *"osm"*, specify a tile source in **providerConfig**.[tileServer](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/providerConfig/tileServer.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#tileServer') and configure [OpenLayers](https://openlayers.org/) as follows:
 
 - **Modular Applications**    
     Install the [ol](https://www.npmjs.com/package/ol) package and define the following imports before Map initialization:
@@ -92,7 +92,7 @@ If **provider** is *"osm"*, specify a tile source in **providerConfig**.[tileSer
 - **Non-modular Applications**    
     Load OpenLayers (`ol.js` and `ol.css`) before Map initialization.
 
-Refer to the following help topic for more information: [OpenStreetMap Provider](/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/).
+Refer to the following help topic for more information: [OpenStreetMap Provider](/concepts/05%20UI%20Components/Map/12%20OpenStreetMap%20Provider/00%20OpenStreetMap%20Provider.md '/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/').
 
 Google Maps, Azure Maps, and Google Static Maps require an API key to authenticate your application. To obtain a key, refer to your provider's documentation. Assign the key to the [apiKey](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/apiKey '/Documentation/ApiReference/UI_Components/dxMap/Configuration/apiKey/') property. If your application uses more than one of these providers, specify an object with a key for each provider:
 
@@ -274,7 +274,7 @@ The Map supports the following map types: *"roadmap"* (default), *"satellite"*, 
 
 If **provider** is *"azure"*, the *"roadmap"* and *"hybrid"* types correspond to the Azure Maps *road* and *satellite_road_labels* styles.
 
-If **provider** is *"osm"*, assign a function to **providerConfig**.[tileServer](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#tileServer) to display different tiles for each map type. A URL template or an [OsmTileServerConfig](/Documentation/ApiReference/UI_Components/dxMap/Types/OsmTileServerConfig/) object displays the same tiles for all types.
+If **provider** is *"osm"*, assign a function to **providerConfig**.[tileServer](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/providerConfig/tileServer.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#tileServer') to display different tiles for each map type. A URL template or an [OsmTileServerConfig](/api-reference/10%20UI%20Components/dxMap/9%20Types/OsmTileServerConfig '/Documentation/ApiReference/UI_Components/dxMap/Types/OsmTileServerConfig/') object displays the same tiles for all types.
 
 #####See Also#####
 - [Map - Zoom and Center the Map](/concepts/05%20UI%20Components/Map/05%20Zoom%20and%20Center%20the%20Map.md '/Documentation/Guide/UI_Components/Map/Zoom_and_Center_the_Map/')

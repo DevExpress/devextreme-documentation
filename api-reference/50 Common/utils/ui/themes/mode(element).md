@@ -12,7 +12,7 @@ The element's theme mode (*"light"* or *"dark"*).
 The element for which to retrieve the theme mode.
 
 ---
-**mode(element)** returns a calculated theme mode, not the mode class assigned to the passed element. The calculated theme mode for a `dx-theme-mode-inverted` container depends on the nearest enclosing theme mode. Refer to the following help topic for additional information: [Container-Specific Theme Modes](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes).
+**mode(element)** returns a calculated theme mode, not the mode class assigned to the passed element. The calculated theme mode for a `dx-theme-mode-inverted` container depends on the nearest enclosing theme mode. Refer to the following help topic for additional information: [Container-Specific Theme Modes](/concepts/60%20Themes%20and%20Styles/07%20Fluent%20Next%20Theme%20Customization/15%20Theme%20Modes/05%20Container-Specific%20Theme%20Modes.md '/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes').
 
 You can call this method under any DevExtreme theme and for any element (including elements outside theme mode containers). If no container specifies a mode for the element, **mode(element)** returns the active theme's mode (*"light"* or *"dark"*).
 

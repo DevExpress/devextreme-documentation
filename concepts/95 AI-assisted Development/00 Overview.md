@@ -17,7 +17,7 @@ DevExpress offers the following tools that ground AI assistants in accurate, up-
 ## When to Use AI Skills and When to Use MCP
 
 For best results, use DevExpress AI Skills together with the DevExpress MCP Server. Skills supply curated task patterns and product-specific rules while the MCP Server adds live documentation lookup and version-sensitive details.
-While DevExpress AI Skills and DevExpress MCP Server produce the best results when used together, you can use each tool separately in the following scenarios:
+You can use each tool separately in the following scenarios:
 
 - When you need the assistant to follow curated task patterns and product-specific rules without a network connection to documentation, use DevExpress AI Skills.
 - When you need live documentation lookup, version-sensitive details, or a direct connection to the DevExpress documentation library, use the DevExpress MCP Server.

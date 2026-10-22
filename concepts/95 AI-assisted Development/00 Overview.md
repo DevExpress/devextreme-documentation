@@ -1,3 +1,7 @@
+---
+title: AI-assisted Development
+---
+
 AI coding assistants (such as GitHub Copilot, Claude Code, Cursor, and JetBrains AI Assistant) can speed up DevExtreme development: they scaffold applications, configure UI components, and explain API members. General-purpose AI models, however, learn from a snapshot of public data. As a result, they can suggest outdated or non-existent DevExtreme APIs, use the wrong import paths for your framework, or ignore the version of DevExtreme you use.
 
 DevExpress offers the following tools that ground AI assistants in accurate, up-to-date DevExtreme information:

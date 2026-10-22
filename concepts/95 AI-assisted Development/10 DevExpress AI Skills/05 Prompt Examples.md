@@ -1,27 +1,5 @@
 Use the following prompts with DevExpress AI Skills to build parts of your application. Copy a prompt, paste it into your AI assistant, and adjust it to fit your requirements.
 
-#### Basic Project
-
----
-
-##### jQuery
-
-    Create a ready-to-run jQuery 4 app with DevExtreme 26.1 and the Fluent light theme installed.
-
-##### Angular
-
-    Create a ready-to-run Angular 22 app with DevExtreme 26.1 and the Fluent light theme installed.
-
-##### Vue
-
-    Create a ready-to-run Vue 3 app with DevExtreme 26.1 and the Fluent light theme installed.
-
-##### React
-
-    Create a ready-to-run React 19 app with DevExtreme 26.1 and the Fluent light theme installed.
-
----
-
 #### DataGrid
 
     Create a DataGrid with the following features:
@@ -37,6 +15,12 @@ Use the following prompts with DevExpress AI Skills to build parts of your appli
     Create an AI-powered chat interface using the DevExtreme Chat component. 
     Add Regenerate and Copy buttons to each message using the messageTemplate option.
 
+#### Scheduler
+ 
+    Create a meeting room booking app using the DevExtreme Scheduler component.
+    Add Day, Week, and Month views, and group appointments by room using resources.
+    Use the appointmentTemplate option to display the organizer's name in each appointment.
+
 #### Form
 
     Create a registration form using the DevExtreme Form component. 
@@ -47,9 +31,3 @@ Use the following prompts with DevExpress AI Skills to build parts of your appli
 
     Create a theme switcher component with sun and moon icons. 
     Allow users to toggle between the Fluent light and dark themes dynamically.
-
-#### Advanced Project
-
-    Create a complex dashboard application using DevExtreme components.
-    Include a DataGrid with advanced filtering and sorting, a Chart with dynamic data updates, and a Form for user input. 
-    Implement theme switching and AI-powered chat integration within the dashboard.

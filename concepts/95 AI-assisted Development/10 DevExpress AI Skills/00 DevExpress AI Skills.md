@@ -13,7 +13,6 @@ Use these skills when you want an AI assistant to follow DevExpress-specific pat
 
 This repository includes skills for the following DevExtreme components and features:
 
-- Application setup
 - [DataGrid](/concepts/05%20UI%20Components/DataGrid/03%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/DataGrid/Overview/')
 - [Scheduler](/concepts/05%20UI%20Components/Scheduler/02%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/Scheduler/Overview/')
 - [Form](/concepts/05%20UI%20Components/Form/00%20Overview '/Documentation/Guide/UI_Components/Form/Overview/')
@@ -23,7 +22,6 @@ This repository includes skills for the following DevExtreme components and feat
 - [DateBox](/concepts/05%20UI%20Components/DateBox/01%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/DateBox/Overview/')
 - [CheckBox](/concepts/05%20UI%20Components/CheckBox/00%20Getting%20Started%20with%20CheckBox '/Documentation/Guide/UI_Components/CheckBox/Getting_Started_with_CheckBox/')
 - [NumberBox](/concepts/05%20UI%20Components/NumberBox/00%20Getting%20Started%20with%20NumberBox '/Documentation/Guide/UI_Components/NumberBox/Getting_Started_with_NumberBox/')
-- [TabPanel](/Documentation/Guide/UI_Components/TabPanel/Overview/)
 - [TextBox](/concepts/05%20UI%20Components/TextBox/02%20Overview/00%20Overview.md '/Documentation/Guide/UI_Components/TextBox/Overview/')
 - [TextArea](/concepts/05%20UI%20Components/TextArea/00%20Getting%20Started%20with%20TextArea '/Documentation/Guide/UI_Components/TextArea/Getting_Started_with_TextArea/')
 - [DataSource](/concepts/70%20Data%20Binding/5%20Data%20Layer '/Documentation/Guide/Data_Binding/Data_Layer/')

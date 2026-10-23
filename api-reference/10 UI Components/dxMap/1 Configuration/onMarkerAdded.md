@@ -23,7 +23,7 @@ The added marker's data.
 The original marker that the current map provider uses (unavailable if **provider** is *"googleStatic"*).
 
 ---
-If [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider) is *"osm"*, **originalMarker** is an OpenLayers [Overlay](https://openlayers.org/en/latest/apidoc/module-ol_Overlay-Overlay.html).
+If [provider](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/provider.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider') is *"osm"*, **originalMarker** is an OpenLayers [Overlay](https://openlayers.org/en/latest/apidoc/module-ol_Overlay-Overlay.html).
 
 #####See Also#####
 - [Add and Remove a Marker](/concepts/05%20UI%20Components/Map/20%20Configure%20Markers/05%20Add%20and%20Remove.md '/Documentation/Guide/UI_Components/Map/Configure_Markers/Add_and_Remove/')

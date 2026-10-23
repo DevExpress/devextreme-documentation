@@ -1,4 +1,4 @@
-Interactive markers use a generic accessible name (*"Map marker"*). Specify a descriptive name for each marker in the [onMarkerAdded](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#onMarkerAdded) handler:
+Interactive markers use a generic accessible name (*"Map marker"*). Specify a descriptive name for each marker in the [onMarkerAdded](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/onMarkerAdded.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#onMarkerAdded') handler:
 
     <!--JavaScript-->
     function onMarkerAdded(e) {

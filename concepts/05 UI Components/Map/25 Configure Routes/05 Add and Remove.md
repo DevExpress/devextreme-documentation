@@ -326,7 +326,7 @@ To add or remove a route at runtime, bind the **routes** property of the Map to 
 #####See Also#####
 - [Map - Customize Routes](/concepts/05%20UI%20Components/Map/25%20Configure%20Routes/10%20Customize.md '/Documentation/Guide/UI_Components/Map/Configure_Routes/Customize/')
 - [Map - Handle Route Related Events](/concepts/05%20UI%20Components/Map/25%20Configure%20Routes/15%20Handle%20the%20Related%20Events.md '/Documentation/Guide/UI_Components/Map/Configure_Routes/Handle_the_Related_Events/')
-- [Map - OpenStreetMap Provider - Calculate Routes](/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/#Calculate_Routes)
+- [Map - OpenStreetMap Provider - Calculate Routes](/concepts/05%20UI%20Components/Map/12%20OpenStreetMap%20Provider/15%20Calculate%20Routes/00%20Calculate%20Routes.md '/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/#Calculate_Routes')
 - [Map Demos](https://js.devexpress.com/Demos/WidgetsGallery/Demo/Map/Routes/)
 - [Map API Reference](/api-reference/10%20UI%20Components/dxMap '/Documentation/ApiReference/UI_Components/dxMap/')
 

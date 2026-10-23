@@ -6,8 +6,8 @@ If you already use a predefined CSS theme on the page, a corresponding SVG theme
 
 If you use Fluent Next themes in your application, note the following:
 
-- SVG-based components use [Fluent Next CSS variables](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#CSS_Variables/SVG-Based_Component_Colors) and support [container-specific theme modes](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes).
-- [Accent colors](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Accent_Colors) only apply to HTML-based components and to the following [RangeSelector elements](/Documentation/Guide/UI_Components/RangeSelector/Visual_Elements/):
+- SVG-based components use [Fluent Next CSS variables](/concepts/60%20Themes%20and%20Styles/07%20Fluent%20Next%20Theme%20Customization/05%20CSS%20Variables/20%20SVG-Based%20Component%20Colors.md '/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#CSS_Variables/SVG-Based_Component_Colors') and support [container-specific theme modes](/concepts/60%20Themes%20and%20Styles/07%20Fluent%20Next%20Theme%20Customization/15%20Theme%20Modes/05%20Container-Specific%20Theme%20Modes.md '/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes').
+- [Accent colors](/concepts/60%20Themes%20and%20Styles/07%20Fluent%20Next%20Theme%20Customization/10%20Accent%20Colors/00%20Accent%20Colors.md '/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Accent_Colors') only apply to HTML-based components and to the following [RangeSelector elements](/concepts/05%20UI%20Components/RangeSelector/10%20Visual%20Elements '/Documentation/Guide/UI_Components/RangeSelector/Visual_Elements/'):
     - Selected range
     - Slider handles
     - Slider markers

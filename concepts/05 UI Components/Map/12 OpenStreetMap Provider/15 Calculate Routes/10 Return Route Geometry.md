@@ -1,4 +1,4 @@
-**calculateRoute** can return route geometry in one of the following [OsmRouteResult](/Documentation/ApiReference/UI_Components/dxMap/Types/OsmRouteResult/) formats:
+**calculateRoute** can return route geometry in one of the following [OsmRouteResult](/api-reference/10%20UI%20Components/dxMap/9%20Types/OsmRouteResult '/Documentation/ApiReference/UI_Components/dxMap/Types/OsmRouteResult/') formats:
 
     <!--JavaScript-->
     // An array of coordinate pairs (latitude then longitude)

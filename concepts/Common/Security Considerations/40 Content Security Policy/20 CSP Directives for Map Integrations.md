@@ -1,4 +1,4 @@
-To integrate DevExtreme [Map](/Documentation/ApiReference/UI_Components/dxMap/) with [Google](https://developers.google.com/maps), [Azure](https://learn.microsoft.com/en-us/azure/azure-maps/), or [Bing](https://www.microsoft.com/en-us/maps/choose-your-bing-maps-api) maps API, specify the following CSP directives:  
+To integrate DevExtreme [Map](/api-reference/10%20UI%20Components/dxMap '/Documentation/ApiReference/UI_Components/dxMap/') with [Google](https://developers.google.com/maps), [Azure](https://learn.microsoft.com/en-us/azure/azure-maps/), or [Bing](https://www.microsoft.com/en-us/maps/choose-your-bing-maps-api) maps API, specify the following CSP directives:  
 
     <!-- tab: Google Maps -->
     <meta http-equiv="Content-Security-Policy" content="
@@ -27,12 +27,12 @@ To integrate DevExtreme [Map](/Documentation/ApiReference/UI_Components/dxMap/) 
         connect-src 'self' https://*.bing.com
     "/>
 
-To integrate DevExtreme Map with an OSM [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider), configure CSP directives and specify origins for the following resources:
+To integrate DevExtreme Map with an OSM [provider](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/provider.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider'), configure CSP directives and specify origins for the following resources:
 
-- `img-src`: Tile servers (including **OsmTileServerConfig**.[subdomains](/Documentation/ApiReference/UI_Components/dxMap/Types/OsmTileServerConfig/#subdomains)) and custom marker images
-- `connect-src`: Geocoding and routing services that **providerConfig**.[calculateLocation](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#calculateLocation) and **providerConfig**.[calculateRoute](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#calculateRoute) call
+- `img-src`: Tile servers (including **OsmTileServerConfig**.[subdomains](/api-reference/10%20UI%20Components/dxMap/9%20Types/OsmTileServerConfig/subdomains.md '/Documentation/ApiReference/UI_Components/dxMap/Types/OsmTileServerConfig/#subdomains')) and custom marker images
+- `connect-src`: Geocoding and routing services that **providerConfig**.[calculateLocation](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/providerConfig/calculateLocation.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#calculateLocation') and **providerConfig**.[calculateRoute](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/providerConfig/calculateRoute.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#calculateRoute') call
 - `script-src` and `style-src`: Origins of OpenLayers library sources (if you load the library from another origin)
 
 #####See Also#####
 
-- [Map - OpenStreetMap Provider - Security](/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/#Security)
+- [Map - OpenStreetMap Provider - Security](/concepts/05%20UI%20Components/Map/12%20OpenStreetMap%20Provider/20%20Security.md '/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/#Security')

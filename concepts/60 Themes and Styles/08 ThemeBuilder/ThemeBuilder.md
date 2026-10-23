@@ -6,6 +6,6 @@ The ThemeBuilder allows you to create custom themes based on Bootstrap or predef
 
 The ThemeBuilder only supports HTML-based UI components. To create a custom theme for SVG-based UI components, refer to the following help topic: [SVG-Based Components Customization - Create a Custom Theme](/concepts/60%20Themes%20and%20Styles/20%20SVG-Based%20Components%20Customization/15%20Themes/30%20Create%20a%20Custom%20Theme.md '/Documentation/Guide/Themes_and_Styles/SVG-Based_Components_Customization/#Themes/Create_a_Custom_Theme').
 
-This section does not apply to Fluent Next themes. To customize these themes, refer to the following help topic: [Fluent Next Theme Customization](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/).
+This section does not apply to Fluent Next themes. To customize these themes, refer to the following help topic: [Fluent Next Theme Customization](/concepts/60%20Themes%20and%20Styles/07%20Fluent%20Next%20Theme%20Customization/00%20Fluent%20Next%20Theme%20Customization.md '/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/').
 
 [/note]

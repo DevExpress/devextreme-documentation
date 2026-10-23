@@ -8,6 +8,11 @@ default: ''
 Specifies the value's display format and controls user input accordingly.
 
 ---
+#include common-global-format-note with {
+    property: "format",
+    globalFormats: "[numberFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat)"
+}
+
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/NumberBox/Formatting/"
 }

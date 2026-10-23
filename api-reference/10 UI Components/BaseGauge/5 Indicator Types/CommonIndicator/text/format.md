@@ -13,4 +13,4 @@ circularRangeBar,linearRangeBar,circularTextCloud,linearTextCloud
 ---
 <!-- %fullDescription% -->
 
-<!-- import * from 'api-reference\10 UI Components\dxChart\1 Configuration\argumentAxis\label\format.md' -->
+<!-- import * from 'api-reference\10 UI Components\dxChart\1 Configuration\crosshair\label\format.md' -->

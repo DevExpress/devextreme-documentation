@@ -1,0 +1,1 @@
+[note] If you do not specify **${{property}}**, the global ${{globalFormats}} applies. If you specify **${{property}}**, global format settings, including [locale](/Documentation/ApiReference/Common/Object_Structures/format/#locale), do not apply.

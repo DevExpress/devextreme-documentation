@@ -10,6 +10,11 @@ Formats the item value before it is displayed in the label.
 ---
 See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') section for information on accepted values.
 
+#include common-global-format-note with {
+    property: "format",
+    globalFormats: "[numberFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat)"
+}
+
 If you specify the format with an object, it can also contain the **percentPrecision** field. Funnel items have absolute and percentage values. The **percentPrecision** field specifies how many decimal digits the percentage values should have:
 
     <!-- tab: JavaScript -->

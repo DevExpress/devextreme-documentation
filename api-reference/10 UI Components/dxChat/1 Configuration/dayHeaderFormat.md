@@ -8,4 +8,7 @@ default: 'shortdate'
 Specifies the day header format.
 
 ---
-<!-- Description goes here -->
+#include common-global-format-note with {
+    property: "dayHeaderFormat",
+    globalFormats: "[dateFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateFormat)"
+}

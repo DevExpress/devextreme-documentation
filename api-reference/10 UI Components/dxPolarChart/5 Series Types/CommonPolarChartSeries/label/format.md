@@ -10,4 +10,4 @@ Formats a value before it is displayed in a point label.
 ---
 <!-- %fullDescription% -->
 
-<!-- import * from 'api-reference\10 UI Components\dxChart\1 Configuration\argumentAxis\label\format.md' -->
+<!-- import * from 'api-reference\10 UI Components\dxPieChart\5 Series Types\CommonPieChartSeries\label\format.md' -->

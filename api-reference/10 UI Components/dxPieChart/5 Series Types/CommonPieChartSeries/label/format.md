@@ -15,7 +15,7 @@ See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documen
     globalFormats: "[numberFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat)"
 }
 
-When this property value is `undefined`, the date-time axes display larger date range boundaries in labels. For example, if an axis displays months, it also displays a year near each instance of January. If an axis displays days, it also displays the month near each first visible day mark.
+When this property value is `undefined`, date-time axis labels include higher-level range boundaries. For example, if an axis displays months, each January label includes a year number. If an axis displays days, the first visible label in a month includes the month name.
 
 #####See Also#####
 - [customizeText](/api-reference/10%20UI%20Components/dxPieChart/5%20Series%20Types/CommonPieChartSeries/label/customizeText.md '{currentpath}/#customizeText')

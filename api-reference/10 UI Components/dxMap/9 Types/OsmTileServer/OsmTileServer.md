@@ -7,20 +7,20 @@ generateTypeLink:
 ---
 ---
 ##### shortDescription
-Tile source settings for the **providerConfig**.[tileServer](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#tileServer) property.
+Tile source settings for the **providerConfig**.[tileServer](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/providerConfig/tileServer.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#tileServer') property.
 
 ##### param(type): Enums.MapType
-The map [type](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#type) to display.
+The map [type](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#type') to display.
 
 ##### return: String | OsmTileServerConfig | undefined
-The tile source for the specified map type (a URL template or an [OsmTileServerConfig](/Documentation/ApiReference/UI_Components/dxMap/Types/OsmTileServerConfig/) object).
+The tile source for the specified map type (a URL template or an [OsmTileServerConfig](/api-reference/10%20UI%20Components/dxMap/9%20Types/OsmTileServerConfig '/Documentation/ApiReference/UI_Components/dxMap/Types/OsmTileServerConfig/') object).
 
 ---
 **OsmTileServer** can be one of the following:
 
 - A tile URL template
-- An [OsmTileServerConfig](/Documentation/ApiReference/UI_Components/dxMap/Types/OsmTileServerConfig/) object
-- A function that returns a tile source for the current map [type](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#type)
+- An [OsmTileServerConfig](/api-reference/10%20UI%20Components/dxMap/9%20Types/OsmTileServerConfig '/Documentation/ApiReference/UI_Components/dxMap/Types/OsmTileServerConfig/') object
+- A function that returns a tile source for the current map [type](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#type')
 
 A URL template only specifies the tile URL. To also specify attribution and other tile source settings, use an **OsmTileServerConfig** object.
 

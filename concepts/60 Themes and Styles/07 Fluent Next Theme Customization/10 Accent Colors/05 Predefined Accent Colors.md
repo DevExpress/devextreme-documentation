@@ -67,7 +67,7 @@ Note the following when you apply accent stylesheets:
 
 - Blue is the default accent color in Fluent Next themes. You do not need to import the Blue accent stylesheet to apply this accent color.
 - Theme and accent stylesheets define colors on the same selector (`:root`). To ensure accent colors take effect, load your accent stylesheet after the theme stylesheet.
-- [Custom accent colors](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Accent_Colors/Custom_Accent_Colors) override predefined accent colors regardless of stylesheet load order. Predefined accent stylesheets declare shades as fallback values for `--dx-accent-color-*` variables:
+- [Custom accent colors](/concepts/60%20Themes%20and%20Styles/07%20Fluent%20Next%20Theme%20Customization/10%20Accent%20Colors/10%20Custom%20Accent%20Colors.md '/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Accent_Colors/Custom_Accent_Colors') override predefined accent colors regardless of stylesheet load order. Predefined accent stylesheets declare shades as fallback values for `--dx-accent-color-*` variables:
 
         <!-- tab: CSS -->
         /* Shade 10 of the Blue accent stylesheet */

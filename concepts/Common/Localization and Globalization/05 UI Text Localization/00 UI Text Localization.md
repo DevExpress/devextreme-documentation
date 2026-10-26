@@ -17,9 +17,9 @@ Use the script-tag dictionary file and set the locale after the file is loaded:
     <!--HTML-->
     <head>
         <!-- DevExtreme library -->
-        <script src="https://cdn3.devexpress.com/jslib/minor_26_1/js/dx.all.js"></script>
+        <script src="https://cdn3.devexpress.com/jslib/minor_26_2/js/dx.all.js"></script>
         <!-- German dictionary -->
-        <script src="https://cdn3.devexpress.com/jslib/minor_26_1/js/localization/dx.messages.de.js"></script>
+        <script src="https://cdn3.devexpress.com/jslib/minor_26_2/js/localization/dx.messages.de.js"></script>
     </head>
     <body>
         <script>

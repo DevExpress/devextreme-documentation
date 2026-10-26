@@ -15,7 +15,7 @@ See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documen
     globalFormats: "[numberFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat)"
 }
 
-If you specify the format with an object, it can also contain the **percentPrecision** field. Funnel items have absolute and percentage values. The **percentPrecision** field specifies how many decimal digits the percentage values should have:
+If you specify the format as an object, it can also contain the **percentPrecision** field. Funnel items have absolute and percentage values. The **percentPrecision** field specifies how many decimal digits the percentage values should have:
 
     <!-- tab: JavaScript -->
     format: {

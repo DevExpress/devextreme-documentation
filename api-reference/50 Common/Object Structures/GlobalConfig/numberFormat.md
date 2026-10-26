@@ -100,7 +100,7 @@ You can configure default formats for specific locales. Assign an object with ke
 
 ---
 
-You can also specify locale-specific formats and the `default` format as [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects. These objects can include the [locale](/Documentation/ApiReference/Common/Object_Structures/Format/#locale) field. Components that use the global **numberFormat** display values in this locale. It does not affect formats defined in components: specify **locale** in these formats instead.
+You can also specify locale-specific formats and the `default` format as [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects. These objects can include the [locale](/Documentation/ApiReference/Common/Object_Structures/Format/#locale) field. Components that use the global **numberFormat** display values in this locale. The global **numberFormat** setting does not affect formats defined in components: specify **locale** in these formats instead.
 
 The following code specifies the *"de-DE"* locale for the global **numberFormat**:
 

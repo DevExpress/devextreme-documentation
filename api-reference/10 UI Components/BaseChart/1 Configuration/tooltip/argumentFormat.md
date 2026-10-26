@@ -6,6 +6,10 @@ id: BaseChart.Options.tooltip.argumentFormat
 Formats the point argument before it is displayed in the tooltip. To format the point value, use the [format](/api-reference/10%20UI%20Components/BaseWidget/1%20Configuration/tooltip/format.md '{basewidgetpath}/Configuration/tooltip/#format') property.
 
 ---
+#include common-global-format-note with {
+    property: "argumentFormat",
+    globalFormats: "[numberFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat)"
+}
 
 #####See Also#####
 - [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/Format/') - provides a comprehensive overview of formatting capabilities.

@@ -8,6 +8,10 @@ default: undefined
 Formats the point argument before it is displayed in the point label. To format the point value, use the [format](/api-reference/10%20UI%20Components/dxPolarChart/5%20Series%20Types/CommonPolarChartSeries/label/format.md '/Documentation/ApiReference/UI_Components/dxPolarChart/Configuration/series/label/#format') property.
 
 ---
+#include common-global-format-note with {
+    property: "argumentFormat",
+    globalFormats: "[numberFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat)"
+}
 
 #####See Also#####
 - [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/Format/') - provides a comprehensive overview of formatting capabilities.

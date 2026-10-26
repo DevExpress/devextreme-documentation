@@ -10,6 +10,11 @@ Formats a value before it is displayed in a slider marker.
 ---
 See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/format/') section for information on accepted values. 
 
+#include common-global-format-note with {
+    property: "format",
+    globalFormats: "[numberFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat)"
+}
+
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Range_Selector/CustomFormatting/"
 }

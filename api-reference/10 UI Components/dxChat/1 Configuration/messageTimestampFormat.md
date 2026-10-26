@@ -8,4 +8,7 @@ default: 'shorttime'
 Specifies the message timestamp format.
 
 ---
-<!-- Description goes here -->
+#include common-global-format-note with {
+    property: "messageTimestampFormat",
+    globalFormats: "[timeFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#timeFormat)"
+}

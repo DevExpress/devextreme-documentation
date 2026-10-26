@@ -8,9 +8,14 @@ default: null
 Specifies the date display format. Ignored if the [pickerType](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/pickerType.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#pickerType') property is *"native"*
 
 ---
-Set [useMaskBehavior](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/useMaskBehavior.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#useMaskBehavior') to **true** to control user input according to the display format.
+Activate [useMaskBehavior](/api-reference/10%20UI%20Components/dxDateBox/1%20Configuration/useMaskBehavior.md '/Documentation/ApiReference/UI_Components/dxDateBox/Configuration/#useMaskBehavior') to control user input according to the display format.
 
 The default display format is selected automatically based on the current [locale](/api-reference/50%20Common/utils/localization/locale().md '/Documentation/ApiReference/Common/utils/localization/#locale').
+
+#include common-global-format-note with {
+    property: "displayFormat",
+    globalFormats: "[dateFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateFormat), [timeFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#timeFormat), or [dateTimeFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateTimeFormat)"
+}
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/DateBox/Formatting/"
@@ -20,4 +25,4 @@ The default display format is selected automatically based on the current [local
 }
 
 #####See Also#####
-- [Format Widget Values](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/10%20Format%20UI%20Component%20Values/00%20Format%20UI%20Component%20Values.md '/Documentation/Guide/Common/Localization_and_Globalization/Value_Formatting/#Format_UI_Component_Values')
+- [Format UI Component Values](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/10%20Format%20UI%20Component%20Values/00%20Format%20UI%20Component%20Values.md '/Documentation/Guide/Common/Localization_and_Globalization/Value_Formatting/#Format_UI_Component_Values')

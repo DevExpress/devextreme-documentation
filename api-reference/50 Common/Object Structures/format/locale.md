@@ -27,11 +27,7 @@ If you specify only **locale**, DevExtreme uses default predefined formats. For 
 DevExtreme selects a locale for each value in the following order:
 
 1. The **locale** field in this format.
-2. The **locale** field in the global format for the value type:
-    - [numberFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat)
-    - [dateFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateFormat)
-    - [timeFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#timeFormat)
-    - [dateTimeFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateTimeFormat)
+2. The **locale** field in a [dateTimeFormatPresets](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateTimeFormatPresets) override for this format (predefined date/time formats only).
 3. The [current locale](/Documentation/ApiReference/Common/utils/localization/#locale).
 
 The **locale** field does not affect [formatter](/Documentation/ApiReference/Common/Object_Structures/Format/#formatter) and [parser](/Documentation/ApiReference/Common/Object_Structures/Format/#parser) functions.

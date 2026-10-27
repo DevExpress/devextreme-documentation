@@ -85,7 +85,7 @@ Assign a non-negative integer to the **columns**.[groupIndex](/api-reference/_hi
 
 ---
 
-Call the [columnOption(id, optionName, optionValue)](/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#columnOptionid_optionName_optionValue) method to change **groupIndex** at runtime.
+Call the [columnOption(id, optionName, optionValue)](/api-reference/10%20UI%20Components/GridBase/3%20Methods/columnOption(id_optionName_optionValue).md '/Documentation/ApiReference/UI_Components/dxDataGrid/Methods/#columnOptionid_optionName_optionValue') method to change **groupIndex** at runtime.
 
 #####See Also#####
 #include common-link-callmethods

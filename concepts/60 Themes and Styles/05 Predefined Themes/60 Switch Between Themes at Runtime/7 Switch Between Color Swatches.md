@@ -1,6 +1,6 @@
 [note]
 
-This section does not apply to Fluent Next themes. To customize these themes, refer to the following help topic: [Fluent Next Theme Customization](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/).
+This section does not apply to Fluent Next themes. To customize these themes, refer to the following help topic: [Fluent Next Theme Customization](/concepts/60%20Themes%20and%20Styles/07%20Fluent%20Next%20Theme%20Customization/00%20Fluent%20Next%20Theme%20Customization.md '/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/').
 
 [/note]
 

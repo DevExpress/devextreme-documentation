@@ -14,7 +14,7 @@ The default display format is selected automatically based on the current [local
 
 #include common-global-format-note with {
     property: "displayFormat",
-    globalFormats: "[dateFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateFormat)"
+    globalFormats: "[dateFormat](/api-reference/50%20Common/Object%20Structures/GlobalConfig/dateFormat.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateFormat')"
 }
 
 #include btn-open-demo with {

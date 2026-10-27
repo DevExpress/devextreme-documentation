@@ -10,7 +10,7 @@ See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documen
 
 #include common-global-format-note with {
     property: "valueFormat",
-    globalFormats: "[dateFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateFormat), [dateTimeFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateTimeFormat), or [numberFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat)"
+    globalFormats: "[dateFormat](/api-reference/50%20Common/Object%20Structures/GlobalConfig/dateFormat.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateFormat'), [dateTimeFormat](/api-reference/50%20Common/Object%20Structures/GlobalConfig/dateTimeFormat.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateTimeFormat'), or [numberFormat](/api-reference/50%20Common/Object%20Structures/GlobalConfig/numberFormat.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat')"
 }
 
 #include btn-open-demo with {

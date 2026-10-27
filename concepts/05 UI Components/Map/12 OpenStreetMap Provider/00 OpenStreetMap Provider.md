@@ -1,10 +1,10 @@
-Set [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider) to *"osm"* to use the OpenStreetMap (OSM) provider. This provider uses the [OpenLayers](https://openlayers.org/) library to display maps.
+Set [provider](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/provider.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider') to *"osm"* to use the OpenStreetMap (OSM) provider. This provider uses the [OpenLayers](https://openlayers.org/) library to display maps.
 
-DevExtreme does not include map services for the OSM provider. Specify self-hosted or third-party services in the following [providerConfig](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/) properties:
+DevExtreme does not include map services for the OSM provider. Specify self-hosted or third-party services in the following [providerConfig](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/providerConfig '/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/') properties:
 
-- [tileServer](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#tileServer): Tile source settings
-- [calculateLocation](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#calculateLocation): A function that converts addresses to coordinates
-- [calculateRoute](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#calculateRoute): A function that calculates route geometry
+- [tileServer](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/providerConfig/tileServer.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#tileServer'): Tile source settings
+- [calculateLocation](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/providerConfig/calculateLocation.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#calculateLocation'): A function that converts addresses to coordinates
+- [calculateRoute](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/providerConfig/calculateRoute.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#calculateRoute'): A function that calculates route geometry
 
 The following code snippet configures a Map that uses the OSM provider:
 

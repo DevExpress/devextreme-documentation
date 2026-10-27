@@ -1,0 +1,10 @@
+{
+    "checkJs": false,
+    "ignore": [
+        {
+            "code": "TS2307",
+            "messageMatches": "module '\\.{1,2}/",
+            "reason": "Snippets import sibling files (data, services) that the article does not show."
+        }
+    ]
+}

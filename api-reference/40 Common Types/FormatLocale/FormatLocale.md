@@ -3,6 +3,7 @@ id: FormatLocale
 module: common/core/localization
 export: FormatLocale
 type: String | function()
+generateTypeLink: 
 ---
 ---
 ##### shortDescription
@@ -17,4 +18,4 @@ Locale identifiers are [BCP 47](https://developer.mozilla.org/en-US/docs/Glossar
 Use a function to change this locale at runtime. DevExtreme libraries call this function each time a value is parsed or formatted. To ensure a DevExtreme component updates displayed values when you change this locale, call the component's **repaint()** method.
 
 #####See Also#####
-- **format**.[locale](/Documentation/ApiReference/Common/Object_Structures/Format/#locale)
+- **format**.[locale](/api-reference/50%20Common/Object%20Structures/format/locale.md '/Documentation/ApiReference/Common/Object_Structures/Format/#locale')

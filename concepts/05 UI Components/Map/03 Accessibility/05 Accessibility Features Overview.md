@@ -53,8 +53,8 @@
    <li style="display: flex; align-items: center;"><svg width="18" height="18" style="padding: 2px 4px 0px 0px;"><use xlink:href="#svg-icon-error"/></svg> - Accessibility requirement is not supported</li>
 </ul>
 
-[note] Keyboard navigation support depends on the Map [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider).
+[note] Keyboard navigation support depends on the Map [provider](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/provider.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider').
 
 #####See Also#####
 
-- [OpenStreetMap Provider - Accessibility](/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/#Accessibility/Keyboard_Navigation)
+- [OpenStreetMap Provider - Accessibility](/concepts/05%20UI%20Components/Map/12%20OpenStreetMap%20Provider/25%20Accessibility/05%20Keyboard%20Navigation.md '/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/#Accessibility/Keyboard_Navigation')

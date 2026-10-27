@@ -18,7 +18,7 @@ Open the main application file (`main.js`) and import a [predefined theme styles
             </body>
         </html>
 
-- [SVG-based UI components](/concepts/60%20Themes%20and%20Styles/00%20Styling%20Methods.md '/Documentation/Guide/Themes_and_Styles/Styling_Methods/') do not require theme stylesheets. If you choose to import the stylesheets, the UI components apply an appearance that matches them.
+- [SVG-based UI components](/concepts/60%20Themes%20and%20Styles/02%20Styling%20Methods.md '/Documentation/Guide/Themes_and_Styles/Styling_Methods/') do not require theme stylesheets. If you choose to import the stylesheets, the UI components apply an appearance that matches them.
 
 [/note]
 

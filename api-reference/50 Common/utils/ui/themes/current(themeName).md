@@ -15,7 +15,7 @@ The theme name.
     <link rel="dx-theme" data-theme="fluent-next.blue.dark" href="css/dx.fluent-next.blue.dark.css" data-active="true">
     <link rel="dx-theme" data-theme="fluent-next.blue.light" href="css/dx.fluent-next.blue.light.css" data-active="false">
 
-Pass a `data-theme` attribute value to **current(themeName)** to switch the active theme. This method updates DevExtreme styles automatically. To ensure that specific components apply the new styles, call their **repaint()** methods (if available) in a callback function passed to [ready(callback)](/Documentation/ApiReference/Common/utils/ui/themes/#readycallback). If you applied an [inverted dark/light mode to specific containers](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes) while using a Fluent Next theme, call [refreshMode()](/Documentation/ApiReference/Common/utils/ui/themes/#refreshMode) to apply updated modes to open overlays.
+Pass a `data-theme` attribute value to **current(themeName)** to switch the active theme. This method updates DevExtreme styles automatically. To ensure that specific components apply the new styles, call their **repaint()** methods (if available) in a callback function passed to [ready(callback)](/api-reference/50%20Common/utils/ui/themes/ready(callback).md '/Documentation/ApiReference/Common/utils/ui/themes/#readycallback'). If you applied an [inverted dark/light mode to specific containers](/concepts/60%20Themes%20and%20Styles/07%20Fluent%20Next%20Theme%20Customization/15%20Theme%20Modes/05%20Container-Specific%20Theme%20Modes.md '/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Theme_Modes/Container-Specific_Theme_Modes') while using a Fluent Next theme, call [refreshMode()](/api-reference/50%20Common/utils/ui/themes/refreshMode().md '/Documentation/ApiReference/Common/utils/ui/themes/#refreshMode') to apply updated modes to open overlays.
 
 Callback functions passed to **ready(callback)** run only once, so call **ready(callback)** before each **current(themeName)** call:
 
@@ -84,5 +84,5 @@ Callback functions passed to **ready(callback)** run only once, so call **ready(
 
 #####See Also#####
 
-- [Predefined Themes](/Documentation/Guide/Themes_and_Styles/Predefined_Themes/)
-- [Fluent Next Theme Customization](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/)
+- [Predefined Themes](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/00%20Predefined%20Themes.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/')
+- [Fluent Next Theme Customization](/concepts/60%20Themes%20and%20Styles/07%20Fluent%20Next%20Theme%20Customization/00%20Fluent%20Next%20Theme%20Customization.md '/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/')

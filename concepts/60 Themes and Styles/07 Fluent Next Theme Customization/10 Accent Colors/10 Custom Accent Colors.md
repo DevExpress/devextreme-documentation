@@ -5,7 +5,7 @@ Fluent Next stylesheets ship with a CSS rule that calculates [primary shades](ht
         --dx-accent-color: SlateBlue;
     }
 
-You can also call the [customAccentColor(color)](/Documentation/ApiReference/Common/utils/ui/themes/#customAccentColorcolor) method to change the accent color at runtime:
+You can also call the [customAccentColor(color)](/api-reference/50%20Common/utils/ui/themes/customAccentColor(color).md '/Documentation/ApiReference/Common/utils/ui/themes/#customAccentColorcolor') method to change the accent color at runtime:
 
     <!-- tab: Modular Application -->
     import { customAccentColor } from 'devextreme/ui/themes';

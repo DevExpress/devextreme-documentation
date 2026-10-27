@@ -12,7 +12,7 @@ See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documen
 
 #include common-global-format-note with {
     property: "format",
-    globalFormats: "[dateFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateFormat), [dateTimeFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateTimeFormat), or [numberFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat)"
+    globalFormats: "[dateFormat](/api-reference/50%20Common/Object%20Structures/GlobalConfig/dateFormat.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateFormat'), [dateTimeFormat](/api-reference/50%20Common/Object%20Structures/GlobalConfig/dateTimeFormat.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#dateTimeFormat'), or [numberFormat](/api-reference/50%20Common/Object%20Structures/GlobalConfig/numberFormat.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat')"
 }
 
 In the following code, the *"fixedPoint"* [format type](/api-reference/50%20Common/Object%20Structures/format/type.md '/Documentation/ApiReference/Common/Object_Structures/Format/#type') with a [precision](/api-reference/50%20Common/Object%20Structures/format/precision.md '/Documentation/ApiReference/Common/Object_Structures/Format/#precision') of **2** decimal places is applied to column values:

@@ -1,9 +1,9 @@
-Assign an [OsmTileServerConfig](/Documentation/ApiReference/UI_Components/dxMap/Types/OsmTileServerConfig/) object to **providerConfig**.[tileServer](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#tileServer) to configure a tile source. Specify the following fields in this object:
+Assign an [OsmTileServerConfig](/api-reference/10%20UI%20Components/dxMap/9%20Types/OsmTileServerConfig '/Documentation/ApiReference/UI_Components/dxMap/Types/OsmTileServerConfig/') object to **providerConfig**.[tileServer](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/providerConfig/tileServer.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/#tileServer') to configure a tile source. Specify the following fields in this object:
 
-- [url](/Documentation/ApiReference/UI_Components/dxMap/Types/OsmTileServerConfig/#url): A tile URL template
-- [attribution](/Documentation/ApiReference/UI_Components/dxMap/Types/OsmTileServerConfig/#attribution): Copyright notices that your tile and data providers require
-- [subdomains](/Documentation/ApiReference/UI_Components/dxMap/Types/OsmTileServerConfig/#subdomains) (optional): Values for the `{s}` placeholder in **url**
-- [maxZoom](/Documentation/ApiReference/UI_Components/dxMap/Types/OsmTileServerConfig/#maxZoom) (optional): The highest zoom level that your tile source supports
+- [url](/api-reference/10%20UI%20Components/dxMap/9%20Types/OsmTileServerConfig/url.md '/Documentation/ApiReference/UI_Components/dxMap/Types/OsmTileServerConfig/#url'): A tile URL template
+- [attribution](/api-reference/10%20UI%20Components/dxMap/9%20Types/OsmTileServerConfig/attribution.md '/Documentation/ApiReference/UI_Components/dxMap/Types/OsmTileServerConfig/#attribution'): Copyright notices that your tile and data providers require
+- [subdomains](/api-reference/10%20UI%20Components/dxMap/9%20Types/OsmTileServerConfig/subdomains.md '/Documentation/ApiReference/UI_Components/dxMap/Types/OsmTileServerConfig/#subdomains') (optional): Values for the `{s}` placeholder in **url**
+- [maxZoom](/api-reference/10%20UI%20Components/dxMap/9%20Types/OsmTileServerConfig/maxZoom.md '/Documentation/ApiReference/UI_Components/dxMap/Types/OsmTileServerConfig/#maxZoom') (optional): The highest zoom level that your tile source supports
 
 The following code snippet configures a tile source that uses two subdomains:
 
@@ -15,7 +15,7 @@ The following code snippet configures a tile source that uses two subdomains:
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
     };
 
-Assign a function to **tileServer** to display different tiles for each map [type](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#type):
+Assign a function to **tileServer** to display different tiles for each map [type](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/type.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#type'):
 
     <!--JavaScript-->
     const tileSources = {

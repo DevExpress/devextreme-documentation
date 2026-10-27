@@ -10,7 +10,7 @@ Specifies the value's display format and controls user input accordingly.
 ---
 #include common-global-format-note with {
     property: "format",
-    globalFormats: "[numberFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat)"
+    globalFormats: "[numberFormat](/api-reference/50%20Common/Object%20Structures/GlobalConfig/numberFormat.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat')"
 }
 
 #include btn-open-demo with {

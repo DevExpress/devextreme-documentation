@@ -12,7 +12,7 @@ A point label displays only the point value by default. Using the **label**.[cus
 
 #include common-global-format-note with {
     property: "argumentFormat",
-    globalFormats: "[numberFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat)"
+    globalFormats: "[numberFormat](/api-reference/50%20Common/Object%20Structures/GlobalConfig/numberFormat.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat')"
 }
 
 #####See Also#####

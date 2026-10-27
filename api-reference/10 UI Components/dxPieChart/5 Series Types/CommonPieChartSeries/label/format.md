@@ -12,7 +12,7 @@ See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documen
 
 #include common-global-format-note with {
     property: "format",
-    globalFormats: "[numberFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat)"
+    globalFormats: "[numberFormat](/api-reference/50%20Common/Object%20Structures/GlobalConfig/numberFormat.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat')"
 }
 
 When this property value is `undefined`, date-time axis labels include higher-level range boundaries. For example, if an axis displays months, each January label includes a year number. If an axis displays days, the first visible label in a month includes the month name.

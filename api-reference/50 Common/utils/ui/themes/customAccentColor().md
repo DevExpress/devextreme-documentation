@@ -13,4 +13,4 @@ The custom accent color or an empty string if no custom accent color is defined.
 
 #####See Also#####
 
-- [Fluent Next Theme Customization - Custom Accent Colors](/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Accent_Colors/Custom_Accent_Colors)
+- [Fluent Next Theme Customization - Custom Accent Colors](/concepts/60%20Themes%20and%20Styles/07%20Fluent%20Next%20Theme%20Customization/10%20Accent%20Colors/10%20Custom%20Accent%20Colors.md '/Documentation/Guide/Themes_and_Styles/Fluent_Next_Theme_Customization/#Accent_Colors/Custom_Accent_Colors')

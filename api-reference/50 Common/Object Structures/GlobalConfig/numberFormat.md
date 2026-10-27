@@ -100,7 +100,7 @@ You can configure default formats for specific locales. Assign an object with ke
 
 ---
 
-You can also specify locale-specific formats and the `default` format as [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects. These objects can include the [locale](/Documentation/ApiReference/Common/Object_Structures/Format/#locale) field. Components that use the global **numberFormat** display values in this locale. The global **numberFormat** setting does not affect formats defined in components: specify **locale** in these formats instead.
+You can also specify locale-specific formats and the `default` format as [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/Format/') objects. These objects can include the [locale](/api-reference/50%20Common/Object%20Structures/format/locale.md '/Documentation/ApiReference/Common/Object_Structures/Format/#locale') field. Components that use the global **numberFormat** display values in this locale. The global **numberFormat** setting does not affect formats defined in components: specify **locale** in these formats instead.
 
 The following code specifies the *"de-DE"* locale for the global **numberFormat**:
 
@@ -166,7 +166,7 @@ The following code specifies the *"de-DE"* locale for the global **numberFormat*
 
 ---
 
-[note] Assign [format](/Documentation/ApiReference/Common/Object_Structures/Format/) objects to the `default` key or to specific locale keys. Do not declare format options directly inside **numberFormat**.
+[note] Assign [format](/api-reference/50%20Common/Object%20Structures/format '/Documentation/ApiReference/Common/Object_Structures/Format/') objects to the `default` key or to specific locale keys. Do not declare format options directly inside **numberFormat**.
 
 #####See Also#####
-- [Use Different Locales for Value Formats and UI Text](/Documentation/Guide/Common/Localization_and_Globalization/Value_Formatting/#Use_Different_Locales_for_Value_Formats_and_UI_Text)
+- [Use Different Locales for Value Formats and UI Text](/concepts/Common/Localization%20and%20Globalization/10%20Value%20Formatting/30%20Use%20Different%20Locales%20for%20Value%20Formats%20and%20UI%20Text.md '/Documentation/Guide/Common/Localization_and_Globalization/Value_Formatting/#Use_Different_Locales_for_Value_Formats_and_UI_Text')

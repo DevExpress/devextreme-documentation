@@ -71,7 +71,7 @@ If the **type** is the only field you need to specify in the **format** object, 
 
     <!--JavaScript-->format: "shortDate"
 
-Predefined formats use the current application locale by default. Set the [locale](/Documentation/ApiReference/Common/Object_Structures/format/#locale) property to specify another locale.
+Predefined formats use the current application locale by default. Set the [locale](/api-reference/50%20Common/Object%20Structures/format/locale.md '/Documentation/ApiReference/Common/Object_Structures/format/#locale') property to specify another locale.
 
 #include btn-open-demo with {
     href: "https://js.devexpress.com/Demos/WidgetsGallery/Demo/Localization/UsingIntl/"

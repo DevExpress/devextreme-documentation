@@ -12,7 +12,7 @@ See the [format](/api-reference/50%20Common/Object%20Structures/format '/Documen
 
 #include common-global-format-note with {
     property: "format",
-    globalFormats: "[numberFormat](/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat)"
+    globalFormats: "[numberFormat](/api-reference/50%20Common/Object%20Structures/GlobalConfig/numberFormat.md '/Documentation/ApiReference/Common/Object_Structures/GlobalConfig/#numberFormat')"
 }
 
 If you specify the format with an object and apply it to a full-stacked-like series, this object can also contain the **percentPrecision** field. Full-stacked-like series points have absolute and percentage values. The **percentPrecision** field specifies how many decimal digits the percentage values should have:

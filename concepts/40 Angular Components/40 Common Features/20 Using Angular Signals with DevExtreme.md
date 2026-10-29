@@ -7,6 +7,8 @@ Angular v16+ features "Angular Signals", a new method to track and respond to ch
 
 You can respond to signals with **effects**. Effects are functions that run when one or more signals fire.
 
+In zoneless applications (the default in Angular 21 and later), use signals to store data that asynchronous code or callback functions change.
+
 If you want to integrate this capability into your application, you can examine a sample DevExtreme application with signals and effects.
 
 #include btn-open-codesandbox with {
@@ -86,5 +88,8 @@ If you want to integrate this capability into your application, you can examine 
         }
 
 [/note]
+
+#####See Also#####
+- [Zoneless Change Detection](/Documentation/Guide/Angular_Components/Common_Features/Zoneless_Change_Detection/)
 
 [tags] angular

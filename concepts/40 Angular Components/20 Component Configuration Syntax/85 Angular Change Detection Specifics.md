@@ -1,3 +1,5 @@
+DevExtreme Angular components support both zone-based and zoneless change detection. Refer to the following help topic for more information: [Zoneless Change Detection](/Documentation/Guide/Angular_Components/Common_Features/Zoneless_Change_Detection/).
+
 Angular activates change detection on each property change. This approach backfires when you try to pass functions to UI component properties that do not accept them. For example:
 
     <!-- tab: app.component.ts -->
@@ -45,7 +47,7 @@ In the code above, the `getColumns()` function returns an array of objects, but 
 1. The `getColumns()` function returns an array.
 2. The array gets assigned to the `columns` property. This activates change detection.
 3. When comparing the old and new `columns` values, the change detection mechanism calls `getColumns()` again and receives a different array.
-4. The array gets assigned to the `columns` property, and the cycle repeats infinitely.
+4. If the application is zone-based and the component uses the `Eager` (`Default`) change detection strategy, the change detection mechanism assigns the array to the `columns` property, and the cycle repeats infinitely.
 
 To work around this behavior, implement one of the following techniques:
 

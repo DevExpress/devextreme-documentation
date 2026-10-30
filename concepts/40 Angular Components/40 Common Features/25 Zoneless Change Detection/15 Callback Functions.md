@@ -19,8 +19,7 @@ In zoneless applications, Angular does not update the view when one of these fun
 
     <!-- tab: app.component.ts -->
     import { Component, signal } from '@angular/core';
-    import { DxDataGridModule } from 'devextreme-angular';
-    import { type DxDataGridTypes } from 'devextreme-angular/ui/data-grid';
+    import { DxDataGridModule, type DxDataGridTypes } from 'devextreme-angular/ui/data-grid';
 
     @Component({
         // ...

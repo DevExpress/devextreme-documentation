@@ -5,7 +5,7 @@ In zoneless applications, Angular does not update the view when asynchronous cod
 
     <!-- tab: app.component.ts -->
     import { Component, signal } from '@angular/core';
-    import { DxListModule } from 'devextreme-angular';
+    import { DxListModule } from 'devextreme-angular/ui/list';
 
     @Component({
         // ...

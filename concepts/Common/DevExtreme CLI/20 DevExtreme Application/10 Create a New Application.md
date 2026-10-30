@@ -1,16 +1,22 @@
-[note] If you experience issues when you create a new application with DevExtreme CLI, refer to the following troubleshooting topic: [DevExtreme CLI Issues - Create a New Application](/concepts/80%20Troubleshooting/03%20DevExtreme%20CLI%20Issues/00%20Create%20a%20New%20Application.md '/Documentation/Guide/Troubleshooting/DevExtreme_CLI_Issues/Create_a_New_Application/')
 
 ---
 
 ##### Angular
 
-Creates a new <a href="https://devexpress.github.io/devextreme-angular-template" target="_blank">DevExtreme Angular application</a> that uses the [DevExtreme layout template](/concepts/40%20Angular%20Components/30%20Application%20Template/00%20Application%20Template.md '/Documentation/Guide/Angular_Components/Application_Template/'):
+[note]
+
+- If you experience issues when you create a new application with DevExtreme CLI, refer to the following troubleshooting topic: [DevExtreme CLI Issues - Create a New Application](/concepts/80%20Troubleshooting/03%20DevExtreme%20CLI%20Issues/00%20Create%20a%20New%20Application.md '/Documentation/Guide/Troubleshooting/DevExtreme_CLI_Issues/Create_a_New_Application/')
+- DevExtreme CLI generates zoneless applications. Refer to the following help topic for more infomration about zoneless change detection: [DevExtreme Angular - Zoneless Change Detection](/Documentation/Guide/Angular_Components/Common_Features/Zoneless_Change_Detection/).
+
+[/note]
+
+Run the following command to create a new project using the [DevExtreme Angular Application Template](/concepts/40%20Angular%20Components/30%20Application%20Template/00%20Application%20Template.md '/Documentation/Guide/Angular_Components/Application_Template/'):
 
     devextreme new angular-app app-name [--layout][--empty]
     // ===== or without installing the DevExtreme CLI =====
     npx devextreme-cli new angular-app app-name [--layout][--empty]
 
-Arguments:
+This command supports the following arguments:
 
 * `--layout`        
 Specifies the DevExtreme layout. Available values:
@@ -24,13 +30,15 @@ Specifies whether to skip sample view generation (default: `false`).
 
 ##### Vue
 
-Creates a new <a href="https://devexpress.github.io/devextreme-vue-template" target="_blank">DevExtreme Vue application</a> that uses the [DevExtreme layout template](/concepts/55%20Vue%20Components/50%20Application%20Template/00%20Application%20Template.md '/Documentation/Guide/Vue_Components/Application_Template/'):
+[note] If you experience issues when you create a new application with DevExtreme CLI, refer to the following troubleshooting topic: [DevExtreme CLI Issues - Create a New Application](/concepts/80%20Troubleshooting/03%20DevExtreme%20CLI%20Issues/00%20Create%20a%20New%20Application.md '/Documentation/Guide/Troubleshooting/DevExtreme_CLI_Issues/Create_a_New_Application/')
+
+Run the following command to create a new project using the [DevExtreme Vue Application Template](/concepts/55%20Vue%20Components/50%20Application%20Template/00%20Application%20Template.md '/Documentation/Guide/Vue_Components/Application_Template/'):
 
     devextreme new vue-app app-name [--layout][--empty][--version]
     // ===== or without installing the DevExtreme CLI =====
     npx devextreme-cli new vue-app app-name [--layout][--empty][--version]
 
-Arguments:
+This command supports the following arguments:
 
 * `--layout`        
 Specifies the DevExtreme layout. Available values:
@@ -47,13 +55,15 @@ Specifies whether to generate a Vue 2 or Vue 3 application. Available values: `2
 
 ##### React
 
-Creates a new <a href="https://devexpress.github.io/devextreme-react-template" target="_blank">DevExtreme React application</a> that uses the [DevExtreme layout template](/concepts/50%20React%20Components/50%20Application%20Template/00%20Application%20Template.md '/Documentation/Guide/React_Components/Application_Template/'):
+[note] If you experience issues when you create a new application with DevExtreme CLI, refer to the following troubleshooting topic: [DevExtreme CLI Issues - Create a New Application](/concepts/80%20Troubleshooting/03%20DevExtreme%20CLI%20Issues/00%20Create%20a%20New%20Application.md '/Documentation/Guide/Troubleshooting/DevExtreme_CLI_Issues/Create_a_New_Application/')
+
+Run the following command to create a new project using the [DevExtreme React Application Template](/concepts/50%20React%20Components/50%20Application%20Template/00%20Application%20Template.md '/Documentation/Guide/React_Components/Application_Template/'):
 
     devextreme new react-app app-name [--layout][--empty][--template][--app-type][--transpiler]
     // ===== or without installing the DevExtreme CLI =====
     npx devextreme-cli new react-app app-name [--layout][--empty][--template][--app-type][--transpiler]
 
-Arguments:
+This command supports the following arguments:
 
 * `--layout`        
 Specifies the DevExtreme layout. Available values:

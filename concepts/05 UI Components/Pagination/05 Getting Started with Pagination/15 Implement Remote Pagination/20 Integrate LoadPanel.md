@@ -78,10 +78,17 @@ To integrate the DevExtreme LoadPanel component:
     </dx-load-panel>
 
     <!-- tab: app.component.ts -->
+    import { signal } from '@angular/core';
+    import { DxLoadPanelModule } from 'devextreme-angular/ui/load-panel';
     // ...
+
+    @Component({
+        // ...
+        imports: [DxPaginationModule, DxLoadPanelModule],
+    })
     export class AppComponent {
         // ...
-        loadPanelVisible = false;
+        loadPanelVisible = signal(false);
 
         async fetchColorsForPage(): Promise<void> {
             const startIndex = (this.pageIndex - 1) * this.pageSize;
@@ -92,14 +99,14 @@ To integrate the DevExtreme LoadPanel component:
                 // ...
             });
 
-            this.loadPanelVisible = true;
+            this.loadPanelVisible.set(true);
             try {
                 const fetchedColors = await Promise.all(promises);
-                this.visibleCards = fetchedColors;
+                this.visibleCards.set(fetchedColors);
             } catch (error) {
                 console.error('Error fetching colors:', error);
             } finally {
-                this.loadPanelVisible = false;
+                this.loadPanelVisible.set(false);
             }
         }
     }

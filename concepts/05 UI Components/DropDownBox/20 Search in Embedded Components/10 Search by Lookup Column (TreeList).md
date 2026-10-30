@@ -164,9 +164,13 @@ Because the displayed text depends on lookup data (employee name from a related 
     }
 
     <!-- tab: app.component.ts -->
+    private readonly cdr = inject(ChangeDetectorRef);
+
+    // ...
     (this.service.lookupStore.load() as Promise<Employee[]>).then((items) => {
         this.displayExpr = (item: Task): string =>
             this.service.getDisplayExpr(item, items);
+        this.cdr.markForCheck();
     });
 
 ##### Vue

@@ -70,7 +70,7 @@ Each list item should navigate to a different view. To implement this, follow th
 
 1. **Configure routing**
 
-    Specify routes and set up the router in the `AppRountingModule`.
+    Specify routes in the `app.routes.ts` file and pass them to `provideRouter()` in the `app.config.ts` file.
 
 1. **Define an [itemTemplate](/api-reference/10%20UI%20Components/dxList/1%20Configuration/itemTemplate.md '/Documentation/ApiReference/UI_Components/dxList/Configuration/#itemTemplate')**
 
@@ -89,7 +89,7 @@ Each list item should navigate to a different view. To implement this, follow th
                 [items]="navigation"
                 [width]="200"
                 selectionMode="single"
-                (onSelectionChanged)="this.isDrawerOpen = false"
+                (onSelectionChanged)="isDrawerOpen.set(false)"
                 itemTemplate="links">
                 <div *dxTemplate="let link of 'links'">
                     <a [routerLink]="['/' + link.path]">
@@ -109,21 +109,26 @@ Each list item should navigate to a different view. To implement this, follow th
     </dx-drawer>
 
     <!-- tab: app.component.ts -->
-    import { Component } from "@angular/core";
+    import { Component, signal } from '@angular/core';
+    import { RouterLink, RouterOutlet } from '@angular/router';
+    import { DxDrawerModule } from 'devextreme-angular/ui/drawer';
+    import { DxListModule } from 'devextreme-angular/ui/list';
+    import { DxToolbarModule } from 'devextreme-angular/ui/toolbar';
 
     @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
+        // ...
+        standalone: true,
+        imports: [RouterLink, RouterOutlet, DxDrawerModule, DxListModule, DxToolbarModule]
     })
     export class AppComponent {
-        navigation: any[] = [
-            { id: 1, text: "Inbox", icon: "message", path: "inbox" },
-            { id: 2, text: "Sent Mail", icon: "check", path: "sent-mail" },
-            { id: 3, text: "Trash", icon: "trash", path: "trash" },
-            { id: 4, text: "Spam", icon: "mention", path: "spam" }
+        navigation = [
+            { id: 1, text: 'Inbox', icon: 'message', path: 'inbox' },
+            { id: 2, text: 'Sent Mail', icon: 'check', path: 'sent-mail' },
+            { id: 3, text: 'Trash', icon: 'trash', path: 'trash' },
+            { id: 4, text: 'Spam', icon: 'mention', path: 'spam' }
         ];
-        isDrawerOpen: Boolean = false;
+        isDrawerOpen = signal(false);
+        // ...
     }
 
     <!-- tab: app.component.css -->
@@ -132,15 +137,14 @@ Each list item should navigate to a different view. To implement this, follow th
         margin-right: 10px;
     }
 
-    <!-- tab: app-routing.module.ts -->
-    import { NgModule } from "@angular/core";
-    import { Routes, RouterModule } from "@angular/router";
-    import { InboxComponent } from "./views/inbox.component";
-    import { SentMailComponent } from "./views/sent-mail.component";
-    import { TrashComponent } from "./views/trash.component";
-    import { SpamComponent } from "./views/spam.component";
+    <!-- tab: app.routes.ts -->
+    import { type Routes } from '@angular/router';
+    import { InboxComponent } from './views/inbox.component';
+    import { SentMailComponent } from './views/sent-mail.component';
+    import { TrashComponent } from './views/trash.component';
+    import { SpamComponent } from './views/spam.component';
 
-    const routes: Routes = [
+    export const routes: Routes = [
         { path: '', redirectTo: '/inbox', pathMatch: 'full' },
         { path: 'inbox', component: InboxComponent },
         { path: 'sent-mail', component: SentMailComponent },
@@ -148,73 +152,53 @@ Each list item should navigate to a different view. To implement this, follow th
         { path: 'spam', component: SpamComponent },
     ];
 
-    @NgModule({
-        imports: [RouterModule.forRoot(routes)],
-        exports: [RouterModule],
-        declarations: [
-            InboxComponent,
-            SentMailComponent,
-            TrashComponent,
-            SpamComponent
-        ]
-    })
-    export class AppRoutingModule { }
+    <!-- tab: app.config.ts -->
+    import { type ApplicationConfig } from '@angular/core';
+    import { provideRouter } from '@angular/router';
+    import { routes } from './app.routes';
 
-    <!-- tab: app.module.ts -->
-    import { AppRoutingModule } from "./app-routing.module";
-    import { DxDrawerModule, DxToolbarModule, DxListModule } from "devextreme-angular";
-    // ...
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
+    export const appConfig: ApplicationConfig = {
+        providers: [
             // ...
-            AppRoutingModule,
-            DxDrawerModule,
-            DxToolbarModule,
-            DxListModule
-        ],
-        providers: [],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+            provideRouter(routes)
+        ]
+    };
 
     <!-- tab: inbox.component.ts -->
-    import { Component } from "@angular/core";
+    import { Component } from '@angular/core';
 
     @Component({
         selector: 'app-inbox',
         template: '<div>Inbox</div>'
     })
-    export class InboxComponent { constructor() { } }
+    export class InboxComponent { }
 
     <!-- tab: sent-mail.component.ts -->
-    import { Component } from "@angular/core";
+    import { Component } from '@angular/core';
 
     @Component({
         selector: 'app-sent-mail',
         template: '<div>Sent Mail</div>'
     })
-    export class SentMailComponent { constructor() { } }
+    export class SentMailComponent { }
 
     <!-- tab: spam.component.ts -->
-    import { Component } from "@angular/core";
+    import { Component } from '@angular/core';
 
     @Component({
         selector: 'app-spam',
         template: '<div>Spam</div>'
     })
-    export class SpamComponent { constructor() { } }
+    export class SpamComponent { }
 
     <!-- tab: trash.component.ts -->
-    import { Component } from "@angular/core";
+    import { Component } from '@angular/core';
 
     @Component({
         selector: 'app-trash',
         template: '<div>Trash</div>'
     })
-    export class TrashComponent { constructor() { } }
+    export class TrashComponent { }
 
 ##### Vue
 

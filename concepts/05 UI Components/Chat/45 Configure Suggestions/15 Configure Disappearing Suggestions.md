@@ -30,33 +30,37 @@ To hide a suggestion item after a user clicks the button, update the suggestions
 
     <!-- tab: app.component.html -->
     <dx-chat ...
-        [suggestions]="chatSuggestions"
+        [suggestions]="chatSuggestions()"
     >
     </dx-chat>
 
     <!-- tab: app.component.ts -->
-    import { DxChatModule, type DxChatTypes } from "devextreme-angular/ui/chat";
-    import { type DxButtonGroupTypes } from "devextreme-angular/ui/button-group";
+    import { Component, computed, signal } from '@angular/core';
+    import { DxChatModule } from 'devextreme-angular/ui/chat';
+    import { type DxButtonGroupTypes } from 'devextreme-angular/ui/button-group';
 
-    // ...
+    @Component({
+        // ...
+        standalone: true,
+        imports: [DxChatModule]
+    })
     export class AppComponent {
-        suggestionItems = [
+        // ...
+        suggestionItems = signal<DxButtonGroupTypes.Item[]>([
             { text: 'Summarize text' },
             { text: 'Write an email' },
             { text: 'Fix my writing' },
-        ];
-        chatSuggestions: DxChatTypes.Properties['suggestions'] = {
-            items: this.suggestionItems,
-            onItemClick: this.handleSuggestionClick.bind(this),
-        };
-        handleSuggestionClick(e: DxButtonGroupTypes.ItemClickEvent): void {
-            this.chatSuggestions = {
-                items: this.chatSuggestions.items.filter((item) => item.text !== e.itemData.text),
-                onItemClick: this.handleSuggestionClick.bind(this),
-            };
+        ]);
+        chatSuggestions = computed<DxButtonGroupTypes.Properties>(() => ({
+            items: this.suggestionItems(),
+            onItemClick: this.handleSuggestionClick,
+        }));
+
+        handleSuggestionClick = (e: DxButtonGroupTypes.ItemClickEvent) => {
+            this.suggestionItems.update((items) => items.filter((item) => item.text !== e.itemData.text));
 
             // ...
-            this.messages = [...messages, newMessage];
+            this.messages.update((messages) => [...messages, newMessage]);
         };
     }
 
@@ -161,30 +165,25 @@ Alternatively, you can disable clicked items:
 
     <!-- tab: app.component.html -->
     <dx-chat ...
-        [suggestions]="chatSuggestions"
+        [suggestions]="chatSuggestions()"
     >
     </dx-chat>
 
     <!-- tab: app.component.ts -->
-    import { DxChatModule, type DxChatTypes } from "devextreme-angular/ui/chat";
-    import { type DxButtonGroupTypes } from "devextreme-angular/ui/button-group";
+    import { type DxButtonGroupTypes } from 'devextreme-angular/ui/button-group';
 
     // ...
     export class AppComponent {
         // ...
-
-        handleSuggestionClick(e: DxButtonGroupTypes.ItemClickEvent): void {
-            this.chatSuggestions = {
-                items: this.chatSuggestions.items.map((item) => (
-                    item.text === e.itemData.text
-                        ? { ...item, disabled: true }
-                        : item
-                )),
-                onItemClick: this.handleSuggestionClick.bind(this),
-            };
+        handleSuggestionClick = (e: DxButtonGroupTypes.ItemClickEvent) => {
+            this.suggestionItems.update((items) => items.map((item) => (
+                item.text === e.itemData.text
+                    ? { ...item, disabled: true }
+                    : item
+            )));
 
             // ...
-            this.messages = [...messages, newMessage];
+            this.messages.update((messages) => [...messages, newMessage]);
         };
     }
 

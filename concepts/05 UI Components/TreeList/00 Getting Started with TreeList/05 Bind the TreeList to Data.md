@@ -92,27 +92,20 @@ TreeList can load and update data from different data source types. To use a loc
 
     <!-- tab: app.component.html -->
     <dx-tree-list
-        [dataSource]="employees"
+        [dataSource]="employees()"
         [rootValue]="-1"
         keyExpr="ID"
         parentIdExpr="HeadID">
     </dx-tree-list>
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
+    import { inject, signal } from '@angular/core';
     import { EmployeesService, type Employee } from './employees.service';
 
-    @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
-    })
+    // ...
     export class AppComponent {
-        employees: Employee[] = [];
-
-        constructor(service: EmployeesService) {
-            this.employees = service.getEmployees();
-        }
+        private readonly employeesService = inject(EmployeesService);
+        employees = signal<Employee[]>(this.employeesService.getEmployees());
     }
 
     <!-- tab: employees.service.ts -->
@@ -144,6 +137,8 @@ TreeList can load and update data from different data source types. To use a loc
             return this.employees;
         }
     }
+
+#include ng-zoneless-callbacks-note
 
 ##### Vue
 

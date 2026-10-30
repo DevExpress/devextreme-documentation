@@ -66,37 +66,15 @@ You can also specify the [minSize](/api-reference/10%20UI%20Components/dxDrawer/
     </dx-drawer>
 
     <!-- tab: app.component.ts -->
-    import { Component } from "@angular/core";
+    import { Component } from '@angular/core';
+    import { DxDrawerModule } from 'devextreme-angular/ui/drawer';
 
     @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
+        // ...
+        standalone: true,
+        imports: [DxDrawerModule]
     })
-
-    export class AppComponent {
-        
-    }
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from "@angular/platform-browser";
-    import { NgModule } from "@angular/core";
-    import { AppComponent } from "./app.component";
-
-    import { DxDrawerModule } from "devextreme-angular";
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxDrawerModule
-        ],
-        providers: [],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    export class AppComponent { }
 
     <!-- tab: app.component.css -->
     ::ng-deep .dx-overlay-content {

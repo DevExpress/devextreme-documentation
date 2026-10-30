@@ -21,21 +21,24 @@ In {Framework}, the primary way to render a new message is updating your [items]
 
     <!-- tab: app.component.html -->
     <dx-chat ...
-        [items]="messages"
+        [items]="messages()"
         (onMessageEntered)="onMessageEntered($event)"
     >
     </dx-chat>
 
     <!-- tab: app.component.ts -->
-    import { DxChatTypes } from "devextreme-angular/ui/chat";
+    import { signal } from '@angular/core';
+    import { type DxChatTypes } from 'devextreme-angular/ui/chat';
     // ...
     export class AppComponent {
-        messages: DxChatTypes.Message[] = [];
+        messages = signal<DxChatTypes.Message[]>([]);
 
-        onMessageEntered({ message }) {
-            this.messages = [...this.messages, message];
+        onMessageEntered({ message }: DxChatTypes.MessageEnteredEvent) {
+            this.messages.update((messages) => [...messages, message]);
         }
     }
+
+#include ng-zoneless-async-note
 
 ##### Vue
 

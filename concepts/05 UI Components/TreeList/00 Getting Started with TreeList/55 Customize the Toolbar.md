@@ -92,7 +92,13 @@
     </dx-tree-list>
 
     <!-- tab: app.component.ts -->
+    import { DxButtonModule } from 'devextreme-angular/ui/button';
     // ...
+
+    @Component({
+        // ...
+        imports: [DxTreeListModule, DxButtonModule]
+    })
     export class AppComponent {
         expanded: boolean = true;
         expandedRowKeys: number[] = [];
@@ -102,21 +108,6 @@
             this.expandedRowKeys = [];
         }
     }
-
-    <!-- tab: app.module.ts -->
-    import {
-        // ...
-        DxButtonModule
-    } from 'devextreme-angular';
-
-    @NgModule({
-        // ...
-        imports: [
-            // ...
-            DxButtonModule
-        ],
-    })
-    export class AppModule { }
 
 ##### Vue
 

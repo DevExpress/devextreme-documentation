@@ -173,14 +173,16 @@ TreeList allows users to drag and drop rows to reorder records or modify the nod
     </dx-tree-list>
 
     <!-- tab: app.component.ts -->
+    import { inject, signal } from '@angular/core';
     import { type DxTreeListTypes } from 'devextreme-angular/ui/tree-list';
     import { EmployeesService, type Employee } from './employees.service';
 
     // ...
     export class AppComponent {
-        employees: Employee[] = [];
+        private readonly employeesService = inject(EmployeesService);
+        employees = signal<Employee[]>(this.employeesService.getEmployees());
 
-        onDragChange(e: DxTreeListTypes.RowDraggingChangeEvent): void {
+        onDragChange = (e: DxTreeListTypes.RowDraggingChangeEvent): void => {
             const visibleRows = e.component.getVisibleRows();
             const sourceNode = e.component.getNodeByKey(e.itemData.ID);
             let targetNode = visibleRows[e.toIndex].node;
@@ -196,9 +198,9 @@ TreeList allows users to drag and drop rows to reorder records or modify the nod
                 }
                 targetNode = parentNode;
             }
-        }
+        };
 
-        onReorder(e: DxTreeListTypes.RowDraggingReorderEvent): void {
+        onReorder = (e: DxTreeListTypes.RowDraggingReorderEvent): void => {
             const visibleRows = e.component.getVisibleRows();
             const sourceData = e.itemData;
             const targetData = visibleRows[e.toIndex].data;
@@ -209,7 +211,7 @@ TreeList allows users to drag and drop rows to reorder records or modify the nod
                     // Handle error silently
                 });
             } else {
-                let targetIndex = this.employees.indexOf(targetData);
+                let targetIndex = this.employees().indexOf(targetData);
 
                 if (sourceData.HeadID !== targetData.HeadID) {
                     sourceData.HeadID = targetData.HeadID;
@@ -219,9 +221,9 @@ TreeList allows users to drag and drop rows to reorder records or modify the nod
                 }
 
                 this.employeesService.reorderEmployees(sourceData, targetIndex);
-                this.employees = this.employeesService.getEmployees();
+                this.employees.set([...this.employeesService.getEmployees()]);
             }
-        }
+        };
     }
 
     <!-- tab: employees.service.ts -->

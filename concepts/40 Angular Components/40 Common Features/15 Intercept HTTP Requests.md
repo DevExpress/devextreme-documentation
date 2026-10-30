@@ -17,20 +17,23 @@ The following code snippet demonstrates how to intercept a request in DataSource
 ---
 ##### Angular
 
+    <!-- tab: app.component.html -->
+    <dx-tree-view
+        [dataSource]="dataSource"
+        [noDataText]="loadError()"
+    ></dx-tree-view>
+
     <!-- tab: app.component.ts -->
-    import { Component, effect, signal } from '@angular/core';
+    import { Component, signal } from '@angular/core';
     import DataSource from 'devextreme/data/data_source';
     import ODataStore from 'devextreme/data/odata/store';
-    import { DxTreeViewModule } from 'devextreme-angular';
+    import { DxTreeViewModule } from 'devextreme-angular/ui/tree-view';
     import { DxHttpModule } from 'devextreme-angular/http';
 
     @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css'],
-        providers: [],
+        // ...
         standalone: true,
-        imports: [DxHttpModule, DxTreeViewModule],
+        imports: [DxHttpModule, DxTreeViewModule]
     })
     export class AppComponent {
         title = 'DxHttpModule Example';
@@ -46,13 +49,8 @@ The following code snippet demonstrates how to intercept a request in DataSource
             }),
         });
         loadError = signal('');
-        noDataText = '';
 
         constructor() {
-            effect(() => {
-                this.noDataText = this.loadError();
-            });
-
             this.dataSource.load().then((data) => {
                 console.log('DataSource is loaded:', data);
             });
@@ -91,6 +89,8 @@ The following code snippet demonstrates how to intercept a request in DataSource
             { provide: HTTP_INTERCEPTORS, useClass: LoggingInterceptor, multi: true },
         ],
     });
+
+#include ng-zoneless-async-note
 
 ---
 

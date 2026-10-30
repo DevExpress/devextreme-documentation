@@ -60,26 +60,27 @@ The render function determines the subset of cards to be displayed and populates
     <!-- tab: app.component.html -->
     <dx-pagination ... ></dx-pagination>
     <div id="cards">
-        <ng-container *ngFor="let color of visibleCards">
+        @for (color of visibleCards(); track color.image) {
             <img [src]="color.image" [alt]="color.name" />
-        </ng-container>
+        }
     </div>
 
     <!-- tab: app.component.ts -->
-    import { Component } from '@angular/core';
+    import { Component, signal } from '@angular/core';
     import { firstValueFrom } from 'rxjs';
-    import { ColorService, Color } from './app.service';
+    import { DxPaginationModule } from 'devextreme-angular/ui/pagination';
+    import { ColorService, type Color } from './app.service';
 
     @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css'],
+        // ...
+        standalone: true,
+        imports: [DxPaginationModule],
         providers: [ColorService],
     })
     export class AppComponent {
         // ...
         colors: Map<string, Color> = new Map();
-        visibleCards: Color[] = [];
+        visibleCards = signal<Color[]>([]);
 
         constructor(private readonly colorService: ColorService) {}
 
@@ -107,7 +108,7 @@ The render function determines the subset of cards to be displayed and populates
 
             try {
                 const fetchedColors = await Promise.all(promises);
-                this.visibleCards = fetchedColors;
+                this.visibleCards.set(fetchedColors);
             } catch (error) {
                 console.error('Error fetching colors:', error);
             }
@@ -127,6 +128,8 @@ The render function determines the subset of cards to be displayed and populates
         justify-content: center;
         flex-wrap: wrap;
     }
+
+#include ng-zoneless-async-note
 
 ##### Vue
 

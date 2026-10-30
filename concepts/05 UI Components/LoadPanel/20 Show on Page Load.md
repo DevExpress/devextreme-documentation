@@ -25,26 +25,34 @@ To display a LoadPanel on page load, initialize the component with [visible](/ap
     <!-- tab: app.component.html -->
     <dx-load-panel
         shadingColor="rgba(0,0,0,0.4)"
-        [visible]="loadingVisible"
+        [visible]="loadingVisible()"
     ></dx-load-panel>
 
     <!-- tab: app.component.ts -->
-    import { DxLoadPanelModule } from 'devextreme-angular';
-    import ODataStore from "devextreme/data/odata/store";
+    import { Component, signal } from '@angular/core';
+    import { DxLoadPanelModule } from 'devextreme-angular/ui/load-panel';
+    import ODataStore from 'devextreme/data/odata/store';
 
+    @Component({
+        // ...
+        standalone: true,
+        imports: [DxLoadPanelModule]
+    })
     export class AppComponent {
-        loadingVisible: boolean = true;
-    
-        data: ODataStore = new ODataStore({
-            url: "http://www.example.com/Northwind.svc/Products"
+        loadingVisible = signal(true);
+
+        data = new ODataStore({
+            url: 'http://www.example.com/Northwind.svc/Products'
         });
 
-        constructor() {    
+        constructor() {
             this.data.load().then(() => {
-                this.loadingVisible = false;
+                this.loadingVisible.set(false);
             });
         }
     }
+
+#include ng-zoneless-async-note
 
 ##### Vue
 

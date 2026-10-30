@@ -37,27 +37,35 @@ The code snippet below produces the following result:
 ##### Angular
 
     <!-- tab: app.component.html -->
-    <dx-chat 
-        [alerts]="alerts"
-        (onMessageEntered)="onMessageEntered($event)"
+    <dx-chat
+        [alerts]="alerts()"
+        (onMessageEntered)="onMessageEntered()"
     ></dx-chat>
 
     <!-- tab: app.component.ts -->
-    import { DxChatTypes } from "devextreme-angular/ui/chat";
-    // ...
+    import { Component, signal } from '@angular/core';
+    import { DxChatModule, type DxChatTypes } from 'devextreme-angular/ui/chat';
+
+    @Component({
+        // ...
+        standalone: true,
+        imports: [DxChatModule]
+    })
     export class AppComponent {
-        alerts: DxChatTypes.Alert[] = [];
-        newAlert: DxChatTypes.Alert =
-        {
+        alerts = signal<DxChatTypes.Alert[]>([]);
+        newAlert: DxChatTypes.Alert = {
             id: 1,
-            message: "You have been disconnected"
+            message: 'You have been disconnected'
         };
+
         onMessageEntered() {
             setTimeout(() => {
-                this.alerts = [...this.alerts, newAlert];
+                this.alerts.update((alerts) => [...alerts, this.newAlert]);
             }, 1000);
         }
     }
+
+#include ng-zoneless-async-note
 
 ##### Vue
 

@@ -22,28 +22,36 @@ To configure suggestion items for the Chat's input field, update the [inputField
 
     <!-- tab: app.component.html -->
     <dx-chat ...
-        [inputFieldText]="inputFieldText"
+        [(inputFieldText)]="inputFieldText"
         [suggestions]="chatSuggestions"
     >
     </dx-chat>
 
     <!-- tab: app.component.ts -->
-    import { DxChatModule, type DxChatTypes } from "devextreme-angular/ui/chat";
+    import { Component, signal } from '@angular/core';
+    import { DxChatModule } from 'devextreme-angular/ui/chat';
+    import { type DxButtonGroupTypes } from 'devextreme-angular/ui/button-group';
 
-    // ...
+    @Component({
+        // ...
+        standalone: true,
+        imports: [DxChatModule]
+    })
     export class AppComponent {
-        inputFieldText: string = '';
-        chatSuggestions: DxChatTypes.Properties['suggestions'] = {
+        inputFieldText = signal('');
+        chatSuggestions: DxButtonGroupTypes.Properties = {
             items: [
                 { text: 'Summarize text' },
                 { text: 'Write an email' },
                 { text: 'Fix my writing' },
             ],
             onItemClick: (e) => {
-                this.inputFieldText = e.itemData.text;
+                this.inputFieldText.set(e.itemData.text);
             },
         };
     }
+
+#include ng-zoneless-callbacks-note
 
 ##### Vue
 

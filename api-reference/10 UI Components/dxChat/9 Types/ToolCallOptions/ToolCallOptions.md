@@ -6,7 +6,6 @@ type: ui/chat:ToolCallOptions
 ---
 ---
 ##### shortDescription
-<!-- Description goes here -->
+An object that configures how Chat displays tool calls.
 
 ---
-<!-- Description goes here -->

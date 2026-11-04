@@ -9,9 +9,9 @@ Configures how Chat displays [tool calls](/api-reference/10%20UI%20Components/dx
 ---
 The settings in this object apply to tool calls in all chat messages. The following fields are available:
 
-- [expandAll](/api-reference/10%20UI%20Components/dxChat/9%20Types/ToolCallOptions/expandAll.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/toolCallOptions/#expandAll') — specifies whether tool calls are initially expanded.
+- [expandAll](/api-reference/10%20UI%20Components/dxChat/9%20Types/ToolCallOptions/expandAll.md '/Documentation/ApiReference/UI_Components/dxChat/Types/ToolCallOptions/#expandAll') — specifies whether tool calls are initially expanded.
 
-- [showInMessageTemplate](/api-reference/10%20UI%20Components/dxChat/9%20Types/ToolCallOptions/showInMessageTemplate.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/toolCallOptions/#showInMessageTemplate') — specifies whether to display the built-in tool call block when you use a [messageTemplate](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/messageTemplate.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#messageTemplate').
+- [showInMessageTemplate](/api-reference/10%20UI%20Components/dxChat/9%20Types/ToolCallOptions/showInMessageTemplate.md '/Documentation/ApiReference/UI_Components/dxChat/Types/ToolCallOptions/#showInMessageTemplate') — specifies whether to display the built-in tool call block when you use a [messageTemplate](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/messageTemplate.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#messageTemplate').
 
 Specify one or both fields. You can also change them at runtime. The following code expands all tool calls when users click a button:
 

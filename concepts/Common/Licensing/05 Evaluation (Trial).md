@@ -1,4 +1,4 @@
-Per the terms of the End User License Agreement (EULA), you are permitted to evaluate DevExtreme components [for 30-days](https://js.devexpress.com/Download/). You cannot redistribute DevExtreme during or after the trial period.
+Per the terms of the End User License Agreement (EULA), you are permitted to evaluate DevExtreme components [for 30 days](https://js.devexpress.com/Download/). You cannot redistribute DevExtreme during or after the trial period.
 
 During the 30-day trial period, an on-screen message and [console warning](/concepts/Common/Licensing/25%20Validation.md '/Documentation/Guide/Common/Licensing/#Validation') indicate that you are using an unlicensed version of DevExtreme.
 

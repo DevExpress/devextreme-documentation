@@ -51,10 +51,10 @@
         for (const theme of themes) {
             if (selectedTheme === theme) {
                 $('.icon-container i').addClass(`${theme.name}-icons`);
-                $('.dx-cardview-content.dx-cardview-content-grid .dx-button').addClass(`${theme}-icons`);
+                $('.dx-cardview-content.dx-cardview-content-grid .dx-button').addClass(`${theme.name}-icons`);
             } else {
                 $('.icon-container i').removeClass(`${theme.name}-icons`);
-                $('.dx-cardview-content.dx-cardview-content-grid .dx-button').removeClass(`${theme}-icons`);
+                $('.dx-cardview-content.dx-cardview-content-grid .dx-button').removeClass(`${theme.name}-icons`);
             }
         }
     }

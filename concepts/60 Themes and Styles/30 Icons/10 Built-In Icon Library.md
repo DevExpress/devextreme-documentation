@@ -11,7 +11,7 @@ Icon sources are available in the DevExtreme repository on GitHub:
 
 The source size of each icon varies by theme:
 
-- **Fluent**: 20 × 20 px
+- **Fluent Next** / **Fluent**: 20 × 20 px
 - **Material**: 24 × 24 px
 - **Generic**: 18 × 18 px
 

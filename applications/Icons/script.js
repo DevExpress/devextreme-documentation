@@ -36,23 +36,32 @@
         }
     }
 
-    const themes = ['Fluent', 'Material', 'Generic'];
+    const themes = [{
+        name: 'fluent',
+        text: 'Fluent Next / Fluent',
+    }, {
+        name: 'material',
+        text: 'Material',
+    }, {
+        name: 'generic',
+        text: 'Generic',
+    }];
 
     function changeIconTheme(selectedTheme) {
         for (const theme of themes) {
             if (selectedTheme === theme) {
-                $('.icon-container i').addClass(`${theme}-icons`);
-                $('.dx-cardview-content.dx-cardview-content-grid .dx-button').addClass(`${theme}-icons`);
+                $('.icon-container i').addClass(`${theme.name}-icons`);
+                $('.dx-cardview-content.dx-cardview-content-grid .dx-button').addClass(`${theme.name}-icons`);
             } else {
-                $('.icon-container i').removeClass(`${theme}-icons`);
-                $('.dx-cardview-content.dx-cardview-content-grid .dx-button').removeClass(`${theme}-icons`);
+                $('.icon-container i').removeClass(`${theme.name}-icons`);
+                $('.dx-cardview-content.dx-cardview-content-grid .dx-button').removeClass(`${theme.name}-icons`);
             }
         }
     }
 
     const tabs = $('#tabs').dxTabs({
         dataSource: themes,
-        selectedItem: 'Fluent',
+        selectedItem: themes[0],
         onSelectionChanged(data) {
             const selectedTheme = data.addedItems[0];
             changeIconTheme(selectedTheme);

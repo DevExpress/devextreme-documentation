@@ -62,15 +62,15 @@
     font-style: normal
 }
 
-#cardview-container i.Material-icons, .dx-cardview-content.dx-cardview-content-grid .dx-button.Material-icons::after {
+#cardview-container i.material-icons, .dx-cardview-content.dx-cardview-content-grid .dx-button.material-icons::after {
     font-family: DXIconsMaterial !important;
 }
 
-#cardview-container i.Generic-icons, .dx-cardview-content.dx-cardview-content-grid .dx-button.Generic-icons::after {
+#cardview-container i.generic-icons, .dx-cardview-content.dx-cardview-content-grid .dx-button.generic-icons::after {
     font-family: DXIconsGeneric !important;
 }
 
-#cardview-container i.Fluent-icons, .dx-cardview-content.dx-cardview-content-grid .dx-button.Fluent-icons::after {
+#cardview-container i.fluent-icons, .dx-cardview-content.dx-cardview-content-grid .dx-button.fluent-icons::after {
     font-family: DXIcons !important;
 }
 

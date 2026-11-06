@@ -8,6 +8,6 @@ The generated application already contains the [DataGrid](https://js.devexpress.
 
 ##### Angular
 
-[note] DevExtreme CLI generates zoneless applications. Refer to the following help topic for more infomration about zoneless change detection: [DevExtreme Angular - Zoneless Change Detection](/Documentation/Guide/Angular_Components/Common_Features/Zoneless_Change_Detection/).
+[note] DevExtreme CLI generates zoneless applications. Refer to the following help topic for more information about zoneless change detection: [DevExtreme Angular - Zoneless Change Detection](/Documentation/Guide/Angular_Components/Common_Features/Zoneless_Change_Detection/).
 
 ---

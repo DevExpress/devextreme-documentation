@@ -6,7 +6,7 @@
 [note]
 
 - If you experience issues when you create a new application with DevExtreme CLI, refer to the following troubleshooting topic: [DevExtreme CLI Issues - Create a New Application](/concepts/80%20Troubleshooting/03%20DevExtreme%20CLI%20Issues/00%20Create%20a%20New%20Application.md '/Documentation/Guide/Troubleshooting/DevExtreme_CLI_Issues/Create_a_New_Application/')
-- DevExtreme CLI generates zoneless applications. Refer to the following help topic for more infomration about zoneless change detection: [DevExtreme Angular - Zoneless Change Detection](/Documentation/Guide/Angular_Components/Common_Features/Zoneless_Change_Detection/).
+- DevExtreme CLI generates zoneless applications. Refer to the following help topic for more information about zoneless change detection: [DevExtreme Angular - Zoneless Change Detection](/Documentation/Guide/Angular_Components/Common_Features/Zoneless_Change_Detection/).
 
 [/note]
 

@@ -55,7 +55,7 @@ v5.0.0+:
     worksheet.addRow(['a', 'b']);
     await workbook.xlsx.writeFile('./file.xlsx');
 
-You can also call `workbook.xlsx.write(stream)` to write to a stream or `workbook.xlsx.writeBuffer()` to write to a buffer. For additional information, refer to [Writing XLSX](README.md#writing-xlsx).
+You can also call `workbook.xlsx.write(stream)` to write to a stream or `workbook.xlsx.writeBuffer()` to write to a buffer.
 
 **Replace `WorkbookReader` with `Workbook`**
 
@@ -80,7 +80,7 @@ v5.0.0+:
         });
     });
 
-You can also call `workbook.xlsx.read(stream)` to read from a stream or `workbook.xlsx.load(buffer)` to read a buffer. For additional information, refer to [Reading XLSX](README.md#reading-xlsx).
+You can also call `workbook.xlsx.read(stream)` to read from a stream or `workbook.xlsx.load(buffer)` to read a buffer.
 
 **Replace `createInputStream()` with `read()`**
 

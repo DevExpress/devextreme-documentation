@@ -7,4 +7,4 @@ type: String
 Specifies the name of the called tool (function).
 
 ---
-Chat displays the name in the tool call title.
+The Chat component displays the name in the header of the tool call block.

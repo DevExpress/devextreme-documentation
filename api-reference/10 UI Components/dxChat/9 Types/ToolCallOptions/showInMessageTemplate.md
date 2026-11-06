@@ -5,12 +5,12 @@ default: false
 ---
 ---
 ##### shortDescription
-Specifies whether to display the built-in tool call block in messages that use a [messageTemplate](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/messageTemplate.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#messageTemplate').
+Specifies whether to display built-in tool call blocks in messages that use a [messageTemplate](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/messageTemplate.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#messageTemplate').
 
 ---
-When you specify a **messageTemplate**, the template renders the entire content of the message bubble, and Chat does not display tool calls. To display your own tool call markup, use `data.message.toolCalls` in the template.
+When you specify a **messageTemplate**, the template renders the entire content of the message bubble, and the Chat component does not display tool call blocks. To display your own tool call markup, use `data.message.toolCalls` in the template.
 
-Set **showInMessageTemplate** to `true` to display the built-in block above the template content. In this instance, the template should only render message text (not tool calls). The following code converts message text from [Markdown](/concepts/05%20UI%20Components/Chat/13%20Markdown%20Support.md '/Documentation/Guide/UI_Components/Chat/Markdown_Support/') to HTML and displays the built-in tool call block:
+Set **showInMessageTemplate** to `true` to display built-in tool call blocks above the template content. In this instance, the template should only render message text (not tool calls). The following code converts message text from [Markdown](/concepts/05%20UI%20Components/Chat/13%20Markdown%20Support.md '/Documentation/Guide/UI_Components/Chat/Markdown_Support/') to HTML and displays built-in tool call blocks:
 
 ---
 ##### jQuery
@@ -116,6 +116,6 @@ Set **showInMessageTemplate** to `true` to display the built-in block above the 
 
 ---
 
-This setting is useful if you stream responses. Chat renders the template again for each text chunk. Chat also re-creates tool calls rendered in the template, and expanded items collapse. Chat does not re-create the built-in block when text changes, so expanded items stay expanded.
+This setting is useful if you stream responses. The Chat component renders the template again for each text chunk. The component also re-creates tool call markup rendered in the template, so expanded elements collapse. The component does not re-create built-in tool call blocks when text changes, so expanded blocks stay expanded.
 
-If you do not specify a **messageTemplate**, this setting has no effect: Chat always displays the built-in block.
+If you do not specify a **messageTemplate**, this setting has no effect: the Chat component always displays built-in tool call blocks.

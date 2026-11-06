@@ -7,11 +7,11 @@ type: Array<ToolCall>
 An array of [tool calls](/api-reference/10%20UI%20Components/dxChat/9%20Types/ToolCall '/Documentation/ApiReference/UI_Components/dxChat/Types/ToolCall/') to display in the message.
 
 ---
-Use this field to display which tools (functions) an AI assistant called to generate a response. Chat displays tool calls at the top of the message bubble, above the message text and attachments. Chat initially collapses the tool call block. Users can click a tool call to expand it and view its arguments and result.
+Use this field to display which tools (functions) an AI assistant called to generate a response. The Chat component displays each tool call as a block at the top of the message bubble, above the message text and attachments. The component initially collapses tool call blocks. Users can click a block to expand it and view the tool arguments and result.
 
-If a message contains multiple tool calls, Chat displays them in one block with a "*N* tools" title.
+If a message contains multiple tool calls, the component groups their blocks under a "*N* tools" header.
 
-Chat does not execute tools and does not interact with AI services. Your application must run the tool loop, then pass the executed calls to the message in the **toolCalls** array:
+The Chat component does not execute tools and does not interact with AI services. Your application must run the tool loop, then pass the executed calls to the message in the **toolCalls** array:
 
 ---
 ##### jQuery
@@ -125,7 +125,7 @@ Chat does not execute tools and does not interact with AI services. Your applica
 
 ---
 
-You can add or replace tool calls in an existing message. To do this, update the message in the data source store. Chat renders the block again, and all calls revert to their initial expanded state:
+You can add or replace tool calls in an existing message. To do this, update the message in the data source store. The component renders tool call blocks again, and all blocks revert to their initial expanded state:
 
 ---
 ##### jQuery
@@ -242,7 +242,7 @@ You can add or replace tool calls in an existing message. To do this, update the
 
 ---
 
-Chat does not display tool calls in the following instances:
+The Chat component does not display tool call blocks in the following instances:
 
 - The **toolCalls** array is empty or not specified.
 - The message is [deleted](/api-reference/10%20UI%20Components/dxChat/9%20Types/MessageBase/isDeleted.md '/Documentation/ApiReference/UI_Components/dxChat/Types/Message/#isDeleted').

@@ -21,19 +21,21 @@ If you want to specify initial messages in the Chat, use the [items](/api-refere
 
     <!-- tab: app.component.html -->
     <dx-chat ...
-        [items]="messages"
+        [items]="messages()"
     >
     </dx-chat>
 
     <!-- tab: app.component.ts -->
-    import { DxChatTypes } from "devextreme-angular/ui/chat";
+    import { signal } from '@angular/core';
+    import { type DxChatTypes } from 'devextreme-angular/ui/chat';
     // ...
     export class AppComponent {
-        messages: DxChatTypes.Message[] = [{
+        // ...
+        messages = signal<DxChatTypes.Message[]>([{
             timestamp: Date.now(),
-            author: secondUser,
+            author: this.secondUser,
             text: "Hello! We'd love to hear your feedback. Please share your thoughts below!"
-        }];
+        }]);
     }
 
 ##### Vue

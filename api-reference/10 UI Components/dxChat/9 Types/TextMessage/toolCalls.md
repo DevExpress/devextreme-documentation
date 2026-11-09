@@ -7,11 +7,11 @@ type: Array<ToolCall>
 An array of [tool calls](/api-reference/10%20UI%20Components/dxChat/9%20Types/ToolCall '/Documentation/ApiReference/UI_Components/dxChat/Types/ToolCall/') to display in the message.
 
 ---
-Use this field to display which tools (functions) an AI assistant called to generate a response. The Chat component displays each tool call as a block at the top of the message bubble, above the message text and attachments. The component initially collapses tool call blocks. Users can click a block to expand it and view the tool arguments and result.
+Use this field to display tools (functions) called by an AI assistant to generate a response. The Chat component displays each tool call as a block at the top of the message bubble, above the message text and attachments. The component initially collapses tool call blocks. Users can click a block to expand it and view the tool arguments and result.
 
-If a message contains multiple tool calls, the component groups their blocks under a "*N* tools" header.
+If a message contains multiple tool calls, the component groups their blocks under a header: "*N* tools".
 
-The Chat component does not execute tools and does not interact with AI services. Your application must run the tool loop, then pass the executed calls to the message in the **toolCalls** array:
+The Chat component does not execute tools and does not interact with AI services. Your application must run the tool loop, then pass executed calls as the **toolCalls** array associated with the message:
 
 ---
 ##### jQuery

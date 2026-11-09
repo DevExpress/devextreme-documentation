@@ -7,7 +7,7 @@ type: ToolCall_Options
 Configures how the Chat component displays [tool calls](/api-reference/10%20UI%20Components/dxChat/9%20Types/TextMessage/toolCalls.md '/Documentation/ApiReference/UI_Components/dxChat/Types/TextMessage/#toolCalls').
 
 ---
-The settings in this object apply to tool calls in all chat messages. The following fields are available:
+Settings in this object apply to tool calls in all chat messages. The following fields are available:
 
 - [expandAll](/api-reference/10%20UI%20Components/dxChat/9%20Types/ToolCallOptions/expandAll.md '/Documentation/ApiReference/UI_Components/dxChat/Types/ToolCallOptions/#expandAll') — specifies whether tool call blocks are initially expanded.
 

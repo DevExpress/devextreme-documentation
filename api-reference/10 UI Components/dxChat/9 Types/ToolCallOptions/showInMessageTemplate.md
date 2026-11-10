@@ -118,4 +118,4 @@ Set **showInMessageTemplate** to `true` to display built-in tool call blocks abo
 
 This setting is useful if you stream responses. The Chat component renders the template again for each text chunk. The component also re-creates tool call markup rendered in the template, so expanded elements collapse. The component does not re-create built-in tool call blocks when text changes, so expanded blocks stay expanded.
 
-If you do not specify a **messageTemplate**, this setting has no effect: the Chat component always displays built-in tool call blocks.
+If you do not specify a **messageTemplate**, this setting has no effect. The Chat component always displays built-in tool call blocks.

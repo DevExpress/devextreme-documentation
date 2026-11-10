@@ -125,7 +125,7 @@ The Chat component does not execute tools and does not interact with AI services
 
 ---
 
-You can add or replace tool calls in an existing message. To do this, update the message in the data source store. The component renders tool call blocks again, and all blocks revert to their initial expanded state:
+You can add or replace tool calls in an existing message. To do this, update the message in the data source store. The component renders tool call blocks again, and all blocks revert to their initial collapsed or expanded state:
 
 ---
 ##### jQuery

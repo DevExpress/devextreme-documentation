@@ -7,7 +7,7 @@ type: Boolean
 Specifies whether the tool call block is initially expanded.
 
 ---
-This field overrides [toolCallOptions](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/toolCallOptions.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#toolCallOptions').[expandAll](/api-reference/10%20UI%20Components/dxChat/9%20Types/ToolCallOptions/expandAll.md '/Documentation/ApiReference/UI_Components/dxChat/Types/ToolCallOptions/#expandAll'). If you do not specify **expanded**, the **expandAll** value applies. For example, you can expand all tool call blocks in the chat and leave one block collapsed:
+This field takes precedence over [toolCallOptions](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/toolCallOptions.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#toolCallOptions').[expandAll](/api-reference/10%20UI%20Components/dxChat/9%20Types/ToolCallOptions/expandAll.md '/Documentation/ApiReference/UI_Components/dxChat/Types/ToolCallOptions/#expandAll'). If you do not specify **expanded**, the **expandAll** value applies. For example, you can expand all tool call blocks in the chat and leave one block collapsed:
 
 ---
 ##### jQuery

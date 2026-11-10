@@ -13,7 +13,7 @@ Scrollbars help to scroll content vertically and horizontally. Vertical scrollin
 
 **showScrollbar** values behave as follows when the UI component uses native scrolling (see [useNative]({currentpath}/#useNative)):
 
-- *"always"*, *"onScroll"*, and *"onHover"*: Scrollbar visibility depends on the platform.
-- *"never"*: The component hides scrollbars and disables user scrolling.
+- *"always"*, *"onScroll"*, and *"onHover"*: scrollbar visibility depends on the platform.
+- *"never"*: the component hides scrollbars and disables user scrolling.
 
 [/note]

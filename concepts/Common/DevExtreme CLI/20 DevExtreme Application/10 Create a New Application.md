@@ -5,7 +5,7 @@
 
 [note]
 
-- If you experience issues when you create a new application with DevExtreme CLI, refer to the following troubleshooting topic: [DevExtreme CLI Issues - Create a New Application](/concepts/80%20Troubleshooting/03%20DevExtreme%20CLI%20Issues/00%20Create%20a%20New%20Application.md '/Documentation/Guide/Troubleshooting/DevExtreme_CLI_Issues/Create_a_New_Application/')
+- If you experience issues when you create a new application with DevExtreme CLI, refer to the following troubleshooting guide: [DevExtreme CLI Issues - Create a New Application](/concepts/80%20Troubleshooting/03%20DevExtreme%20CLI%20Issues/00%20Create%20a%20New%20Application.md '/Documentation/Guide/Troubleshooting/DevExtreme_CLI_Issues/Create_a_New_Application/')
 - DevExtreme CLI generates zoneless applications. Refer to the following help topic for more information about zoneless change detection: [DevExtreme Angular - Zoneless Change Detection](/Documentation/Guide/Angular_Components/Common_Features/Zoneless_Change_Detection/).
 
 [/note]
@@ -30,7 +30,7 @@ Specifies whether to skip sample view generation (default: `false`).
 
 ##### Vue
 
-[note] If you experience issues when you create a new application with DevExtreme CLI, refer to the following troubleshooting topic: [DevExtreme CLI Issues - Create a New Application](/concepts/80%20Troubleshooting/03%20DevExtreme%20CLI%20Issues/00%20Create%20a%20New%20Application.md '/Documentation/Guide/Troubleshooting/DevExtreme_CLI_Issues/Create_a_New_Application/')
+[note] If you experience issues when you create a new application with DevExtreme CLI, refer to the following troubleshooting guide: [DevExtreme CLI Issues - Create a New Application](/concepts/80%20Troubleshooting/03%20DevExtreme%20CLI%20Issues/00%20Create%20a%20New%20Application.md '/Documentation/Guide/Troubleshooting/DevExtreme_CLI_Issues/Create_a_New_Application/')
 
 Run the following command to create a new project using the [DevExtreme Vue Application Template](/concepts/55%20Vue%20Components/50%20Application%20Template/00%20Application%20Template.md '/Documentation/Guide/Vue_Components/Application_Template/'):
 
@@ -55,7 +55,7 @@ Specifies whether to generate a Vue 2 or Vue 3 application. Available values: `2
 
 ##### React
 
-[note] If you experience issues when you create a new application with DevExtreme CLI, refer to the following troubleshooting topic: [DevExtreme CLI Issues - Create a New Application](/concepts/80%20Troubleshooting/03%20DevExtreme%20CLI%20Issues/00%20Create%20a%20New%20Application.md '/Documentation/Guide/Troubleshooting/DevExtreme_CLI_Issues/Create_a_New_Application/')
+[note] If you experience issues when you create a new application with DevExtreme CLI, refer to the following troubleshooting guide: [DevExtreme CLI Issues - Create a New Application](/concepts/80%20Troubleshooting/03%20DevExtreme%20CLI%20Issues/00%20Create%20a%20New%20Application.md '/Documentation/Guide/Troubleshooting/DevExtreme_CLI_Issues/Create_a_New_Application/')
 
 Run the following command to create a new project using the [DevExtreme React Application Template](/concepts/50%20React%20Components/50%20Application%20Template/00%20Application%20Template.md '/Documentation/Guide/React_Components/Application_Template/'):
 

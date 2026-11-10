@@ -7,7 +7,7 @@ Angular v16+ features "Angular Signals", a new method to track and respond to ch
 
 You can respond to signals with **effects**. Effects are functions that run when one or more signals fire.
 
-In zoneless applications (the default in Angular 21 and later), use signals to store data that asynchronous code or callback functions change.
+In zoneless applications (default in Angular 21 and later), use signals to store data that changed by asynchronous code or callback functions.
 
 If you want to integrate this capability into your application, you can examine a sample DevExtreme application with signals and effects.
 

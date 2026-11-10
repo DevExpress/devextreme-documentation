@@ -3,12 +3,15 @@
 In the DevExtreme Angular Template, a color swatch is applied to the navigation menu. You can configure it in the `src\themes\metadata.additional.json` and `src\themes\metadata.additional.dark.json` files. To use this color swatch on an element, add the `dx-swatch-additional` class (or `dx-swatch-additional-dark` for a dark theme) to the element:
 
     <!-- tab: HTML -->
-    <div [ngClass]="swatchClassName">
+    <div [class]="swatchClassName()">
         <!-- Your content here -->
     </div>
 
     <!-- tab: TypeScript -->
-    swatchClassName = 'dx-swatch-additional';
-    themeService.isDark.subscribe((isDark) => {
-        this.swatchClassName = 'dx-swatch-additional' + (isDark ? '-dark' : '');
-    })
+    swatchClassName = signal('dx-swatch-additional');
+
+    constructor(themeService: ThemeService) {
+        themeService.isDark.subscribe((isDark) => {
+            this.swatchClassName.set('dx-swatch-additional' + (isDark ? '-dark' : ''));
+        });
+    }

@@ -22,6 +22,6 @@ In zoneless applications, Angular does not update the view when asynchronous cod
         }
     }
 
-If asynchronous code changes a bound array or its items in place, the component does not receive the change. Pass a new array to the signal's `set()` or `update()` method instead.
+If asynchronous code changes a bound array, the component does not receive the change. Pass a new array to the signal's `set()` or `update()` method instead.
 
 You can also call [markForCheck()](https://angular.dev/api/core/ChangeDetectorRef#markForCheck) after the change.

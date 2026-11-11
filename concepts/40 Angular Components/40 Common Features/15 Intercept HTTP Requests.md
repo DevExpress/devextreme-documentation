@@ -20,8 +20,10 @@ The following code snippet demonstrates how to intercept a request in DataSource
     <!-- tab: app.component.html -->
     <dx-tree-view
         [dataSource]="dataSource"
-        [noDataText]="loadError()"
     ></dx-tree-view>
+    @if (loadError()) {
+        <p>{{ loadError() }}</p>
+    }
 
     <!-- tab: app.component.ts -->
     import { Component, signal } from '@angular/core';

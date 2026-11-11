@@ -5,10 +5,18 @@ default: 'onScroll', 'onHover' (desktop)
 ---
 ---
 ##### shortDescription
-Specifies when the UI component shows the scrollbar.
+Specifies when the UI component displays the scrollbar.
 
 ---
-Setting this property makes sense only when the [useNativeScrolling](/api-reference/10%20UI%20Components/dxList/1%20Configuration/useNativeScrolling.md '{basewidgetpath}/Configuration/#useNativeScrolling') property is set to **false**.
+
+[note]
+
+**showScrollbar** values behave as follows when the UI component uses native scrolling (see [useNativeScrolling]({basewidgetpath}/Configuration/#useNativeScrolling)):
+
+- *"always"*, *"onScroll"*, and *"onHover"*: scrollbar visibility depends on the platform.
+- *"never"*: the component hides scrollbars and disables user scrolling.
+
+[/note]
 
 #####See Also#####
 - [List - Scrolling - User Interaction](/concepts/05%20UI%20Components/List/20%20Scrolling/01%20User%20Interaction.md '/Documentation/Guide/UI_Components/List/Scrolling/#User_Interaction')

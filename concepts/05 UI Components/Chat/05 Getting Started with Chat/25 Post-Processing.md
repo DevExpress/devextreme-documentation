@@ -38,44 +38,47 @@ Use [onMessageEntered](/api-reference/10%20UI%20Components/dxChat/1%20Configurat
 
     <!-- tab: app.component.html -->
     <dx-chat ...
+        [typingUsers]="typingUsers()"
         [(alerts)]="alerts"
         [(disabled)]="disabled"
     >
     </dx-chat>
 
     <!-- tab: app.component.ts -->
-    import { DxChatTypes } from "devextreme-angular/ui/chat";
+    import { signal } from '@angular/core';
+    import { type DxChatTypes } from 'devextreme-angular/ui/chat';
     // ...
     export class AppComponent {
-        messages: DxChatTypes.Message[] = [...];
-        alerts: DxChatTypes.Alert[] = [];
-        disabled: boolean = false;
+        messages = signal<DxChatTypes.Message[]>([...]);
+        typingUsers = signal<DxChatTypes.User[]>([]);
+        alerts = signal<DxChatTypes.Alert[]>([]);
+        disabled = signal(false);
 
-        onMessageEntered({ message }) {
+        onMessageEntered({ message }: DxChatTypes.MessageEnteredEvent) {
             // ...
-            this.typingUsers = [this.secondUser];
+            this.typingUsers.set([this.secondUser]);
             this.sendToBackend();
         }
 
         sendToBackend() {
             setTimeout(() => {
-                this.typingUsers = [];
-                this.messages = [
-                    ...this.messages,
+                this.typingUsers.set([]);
+                this.messages.update((messages) => [
+                    ...messages,
                     {
-                        text: "Thanks for helping us improve!",
+                        text: 'Thanks for helping us improve!',
                         author: this.secondUser,
                         timestamp: Date.now(),
                     },
-                ];
-                this.alerts = [
-                    ...this.alerts,
+                ]);
+                this.alerts.update((alerts) => [
+                    ...alerts,
                     {
                         id: 1,
-                        message: "Session expired",
+                        message: 'Session expired',
                     },
-                ];
-                this.disabled = true;
+                ]);
+                this.disabled.set(true);
             }, 1000);
         }
     }

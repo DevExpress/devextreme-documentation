@@ -60,41 +60,24 @@ In the following code, a toolbar button outside the Drawer opens and closes it:
     </dx-drawer>
 
     <!-- tab: app.component.ts -->
-    import { Component } from "@angular/core";
+    import { Component, signal } from '@angular/core';
+    import { DxDrawerModule } from 'devextreme-angular/ui/drawer';
+    import { DxToolbarModule } from 'devextreme-angular/ui/toolbar';
 
     @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
+        // ...
+        standalone: true,
+        imports: [DxDrawerModule, DxToolbarModule]
     })
-
     export class AppComponent {
-        isDrawerOpen: Boolean = false;
-        buttonOptions: any = {
-            icon: "menu",
+        isDrawerOpen = signal(false);
+        buttonOptions = {
+            icon: 'menu',
             onClick: () => {
-                this.isDrawerOpen = !this.isDrawerOpen;
+                this.isDrawerOpen.update((opened) => !opened);
             }
-        }
+        };
     }
-
-    <!-- tab: app.module.ts -->
-    // ...
-    import { DxDrawerModule, DxToolbarModule } from "devextreme-angular";
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            // ...
-            DxDrawerModule,
-            DxToolbarModule,
-        ],
-        providers: [],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
 
     <!-- tab: app.component.css -->
     /* ... */
@@ -109,6 +92,8 @@ In the following code, a toolbar button outside the Drawer opens and closes it:
     ::ng-deep .dx-toolbar-button > .dx-toolbar-item-content {
         margin-left: -7px;
     }
+
+#include ng-zoneless-callbacks-note
 
 ##### Vue
 

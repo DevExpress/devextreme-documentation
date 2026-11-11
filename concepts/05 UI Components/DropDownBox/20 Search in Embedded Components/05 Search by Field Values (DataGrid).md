@@ -380,10 +380,13 @@ Handle the DropDownBox [`onInput`](/api-reference/10%20UI%20Components/dxDropDow
 ##### Angular
 
     <!-- tab: drop-down-grid.component.ts -->
+    private readonly cdr = inject(ChangeDetectorRef);
+
     onInput(e: DxDropDownBoxTypes.InputEvent): void {
         if (this.searchTimer) clearTimeout(this.searchTimer);
         this.searchTimer = setTimeout(() => {
             if (!this.gridBoxOpened) this.gridBoxOpened = true;
+            this.cdr.markForCheck();
             const text = e.component.option('text');
             this.dataSource.searchValue(text ?? null);
             if (this.isSearchIncomplete(e.component)) {
@@ -391,6 +394,7 @@ Handle the DropDownBox [`onInput`](/api-reference/10%20UI%20Components/dxDropDow
                     const items = this.dataSource.items();
                     if (items.length > 0) {
                         this.focusedRowKey = items[0].OrderNumber;
+                        this.cdr.markForCheck();
                     }
                     this.focusInput();
                     this.dataSource.off('changed', onChanged);

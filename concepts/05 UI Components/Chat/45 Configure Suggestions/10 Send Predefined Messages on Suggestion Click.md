@@ -30,31 +30,38 @@ To send predefined messages when a **suggestions** button is clicked, update the
 
     <!-- tab: app.component.html -->
     <dx-chat ...
-        [items]="messages"
+        [items]="messages()"
         [suggestions]="chatSuggestions"
     >
     </dx-chat>
 
     <!-- tab: app.component.ts -->
-    import { DxChatModule, type DxChatTypes } from "devextreme-angular/ui/chat";
-    // ...
+    import { Component, signal } from '@angular/core';
+    import { DxChatModule, type DxChatTypes } from 'devextreme-angular/ui/chat';
+    import { type DxButtonGroupTypes } from 'devextreme-angular/ui/button-group';
+
+    @Component({
+        // ...
+        standalone: true,
+        imports: [DxChatModule]
+    })
     export class AppComponent {
-        messages: DxChatTypes.Message[] = [];
-        suggestions: DxChatTypes.Properties['suggestions'] = {
+        messages = signal<DxChatTypes.Message[]>([]);
+        chatSuggestions: DxButtonGroupTypes.Properties = {
             items: [
                 { text: 'Summarize text' },
                 { text: 'Write an email' },
                 { text: 'Fix my writing' },
             ],
-            onItemClick(e) {
+            onItemClick: (e) => {
                 const newMessage: DxChatTypes.Message = {
                     id: Date.now(),
                     timestamp: new Date(),
                     text: e.itemData.text,
                 };
 
-                this.messages = [...messages, newMessage]
-            }
+                this.messages.update((messages) => [...messages, newMessage]);
+            },
         };
     }
 

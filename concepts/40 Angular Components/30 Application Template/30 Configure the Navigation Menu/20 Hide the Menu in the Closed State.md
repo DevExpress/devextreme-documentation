@@ -2,10 +2,10 @@ In the closed state, the navigation menu is partially visible because it display
 
     <!-- tab: side-nav-outer-toolbar.component.ts -->
     // ...
-    export class SideNavInnerToolbarComponent implements OnInit {
+    export class SideNavOuterToolbarComponent implements OnInit {
         // ...
         updateDrawer() {
             // ...
-            this.minMenuSize = 0;
+            this.minMenuSize.set(0);
         }
     }

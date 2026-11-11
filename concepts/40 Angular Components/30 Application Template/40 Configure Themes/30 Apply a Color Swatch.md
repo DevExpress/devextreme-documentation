@@ -1,14 +1,17 @@
 [Color swatches](/concepts/60%20Themes%20and%20Styles/05%20Predefined%20Themes/55%20Color%20Swatches.md '/Documentation/Guide/Themes_and_Styles/Predefined_Themes/#Color_Swatches') are secondary color schemes used alongside a primary color scheme.
 
-In the DevExtreme Angular Template, a color swatch is applied to the navigation menu. You can configure it in the `src\themes\metadata.additional.json` and `src\themes\metadata.additional.dark.json` files. To use this color swatch on an element, add the `dx-swatch-additional` class (or `dx-swatch-additional-dark` for a dark theme) to the element:
+In the DevExtreme Angular Template, the navigation menu uses a color swatch. You can configure it in the `src\themes\metadata.additional.json` and `src\themes\metadata.additional.dark.json` files. To use this color swatch on an element, add the `dx-swatch-additional` class (or `dx-swatch-additional-dark` for a dark theme) to the element:
 
     <!-- tab: HTML -->
-    <div [ngClass]="swatchClassName">
+    <div [class]="swatchClassName()">
         <!-- Your content here -->
     </div>
 
     <!-- tab: TypeScript -->
-    swatchClassName = 'dx-swatch-additional';
-    themeService.isDark.subscribe((isDark) => {
-        this.swatchClassName = 'dx-swatch-additional' + (isDark ? '-dark' : '');
-    })
+    swatchClassName = signal('dx-swatch-additional');
+
+    constructor(themeService: ThemeService) {
+        themeService.isDark.subscribe((isDark) => {
+            this.swatchClassName.set('dx-swatch-additional' + (isDark ? '-dark' : ''));
+        });
+    }

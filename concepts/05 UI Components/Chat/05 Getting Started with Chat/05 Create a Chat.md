@@ -31,35 +31,14 @@
 
     <!-- tab: app.component.ts -->
     import { Component } from '@angular/core';
+    import { DxChatModule } from 'devextreme-angular/ui/chat';
 
     @Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.css']
+        // ...
+        standalone: true,
+        imports: [DxChatModule]
     })
-    export class AppComponent {
-
-    }
-
-    <!-- tab: app.module.ts -->
-    import { BrowserModule } from '@angular/platform-browser';
-    import { NgModule } from '@angular/core';
-    import { AppComponent } from './app.component';
-
-    import { DxChatModule } from 'devextreme-angular';
-
-    @NgModule({
-        declarations: [
-            AppComponent
-        ],
-        imports: [
-            BrowserModule,
-            DxChatModule
-        ],
-        providers: [ ],
-        bootstrap: [AppComponent]
-    })
-    export class AppModule { }
+    export class AppComponent { }
 
 ##### Vue
 

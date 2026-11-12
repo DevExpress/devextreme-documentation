@@ -1,7 +1,7 @@
 Functions that you pass as property values are called outside Angular event bindings. Examples include the following:
 
 - Event handlers in nested components, such as `[onClick]` in `dxi-data-grid-button`
-- Functions in objects, such as **onItemClick** in Chat [suggestions](/Documentation/ApiReference/UI_Components/dxChat/Configuration/#suggestions) or **onClick** in Toolbar item [options](/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#options)
+- Functions in objects, such as **onItemClick** in Chat [suggestions](/api-reference/10%20UI%20Components/dxChat/1%20Configuration/suggestions.md '/Documentation/ApiReference/UI_Components/dxChat/Configuration/#suggestions') or **onClick** in Toolbar item [options](/api-reference/_hidden/dxToolbarItem/options.md '/Documentation/ApiReference/UI_Components/dxToolbar/Configuration/items/#options')
 
 In zoneless applications, Angular does not update the view when one of these functions assigns a value to a class field. Store data in a signal:
 

@@ -2,7 +2,7 @@
 module: ui/card_view
 export: ContextMenuPreparingEvent
 type: Object
-inherits: EventInfo
+inherits: NativeEventInfo
 references: dxCardView.Options.onContextMenuPreparing
 uid: ui/card_view:ContextMenuPreparingEvent
 generateTypeLink: 

@@ -14,7 +14,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        branch: ['24_2', '25_1', '25_2', '26_1', 'main']
+        branch: ['24_2', '25_1', '25_2', '26_1', '26_2', 'main']
 
     steps:
       - name: Get sources

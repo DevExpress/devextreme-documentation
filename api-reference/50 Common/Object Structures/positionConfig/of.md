@@ -1,6 +1,6 @@
 ---
 id: PositionConfig.of
-type: String | UserDefinedElement | Window
+type: String | UserDefinedElement | Window | DxEvent
 ---
 ---
 ##### shortDescription

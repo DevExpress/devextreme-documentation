@@ -2,7 +2,7 @@
 module: ui/data_grid
 export: ContextMenuPreparingEvent
 type: Object
-inherits: EventInfo
+inherits: NativeEventInfo
 uid: ui/data_grid:ContextMenuPreparingEvent
 generateTypeLink: 
 references: dxDataGrid.Options.onContextMenuPreparing

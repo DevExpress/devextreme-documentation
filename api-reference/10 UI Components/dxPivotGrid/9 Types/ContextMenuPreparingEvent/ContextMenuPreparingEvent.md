@@ -2,7 +2,7 @@
 module: ui/pivot_grid
 export: ContextMenuPreparingEvent
 type: Object
-inherits: EventInfo
+inherits: NativeEventInfo
 uid: ui/pivot_grid:ContextMenuPreparingEvent
 generateTypeLink: 
 references: dxPivotGrid.Options.onContextMenuPreparing

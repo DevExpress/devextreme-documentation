@@ -14,3 +14,6 @@ OpenLayers displays attribution in a collapsed control by default. Users can cli
 [note] Tile service terms may prohibit collapsible attributions. Configure the OpenLayers [Attribution](https://openlayers.org/en/latest/apidoc/module-ol_control_Attribution.html) control to comply with your tile service's terms of use.
 
 The Map passes the attribution value to OpenLayers as HTML. This behavior makes the Map potentially vulnerable to XSS attacks. If the attribution value comes from an untrusted source, sanitize this value before assignment. Refer to the following help topic for more information: [Potentially Vulnerable API - OsmTileServerConfig.attribution](/concepts/Common/Security%20Considerations/20%20HTML%20Encoding/30%20Potentially%20Vulnerable%20API/OsmTileServerConfig.attribution.md '/Documentation/Guide/Common/Security_Considerations/#HTML_Encoding/Potentially_Vulnerable_API/OsmTileServerConfigattribution').
+
+#####See Also#####
+- [Customize the OpenStreetMap Provider - Customize the Attribution Control](/Documentation/Guide/UI_Components/Map/Customize_the_OpenStreetMap_Provider/#Customize_the_OpenLayers_Map/Customize_the_Attribution_Control)

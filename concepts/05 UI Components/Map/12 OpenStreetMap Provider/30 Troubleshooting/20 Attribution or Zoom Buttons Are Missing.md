@@ -7,3 +7,7 @@ Check the following:
 OpenLayers displays attribution in a collapsed control by default. Users can click the **i** button to expand this control.
 
 [note] Certain tile services prohibit collapsible attributions. Configure the OpenLayers [Attribution](https://openlayers.org/en/latest/apidoc/module-ol_control_Attribution.html) control to comply with your tile service's terms of use.
+
+#####See Also#####
+
+- [Customize the OpenStreetMap Provider - Customize the Attribution Control](/Documentation/Guide/UI_Components/Map/Customize_the_OpenStreetMap_Provider/#Customize_the_OpenLayers_Map/Customize_the_Attribution_Control)

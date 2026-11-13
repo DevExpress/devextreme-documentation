@@ -1,0 +1,3 @@
+The [onReady](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#onReady) handler receives the OpenLayers [Map](https://openlayers.org/en/latest/apidoc/module-ol_Map-Map.html) instance in **e.originalMap**. The Map calls **onReady** each time it creates an OpenLayers map (for instance, after you change [providerConfig](/Documentation/ApiReference/UI_Components/dxMap/Configuration/providerConfig/)), so customizations in this handler apply to each new map.
+
+[note] Code examples in this section import OpenLayers classes from the `ol` package. Non-modular applications can use the global `ol` object instead (for instance, `ol.View`).

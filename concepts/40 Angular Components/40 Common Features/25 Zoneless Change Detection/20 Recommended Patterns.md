@@ -28,4 +28,4 @@ Use the following patterns in zoneless applications:
 </table>
 
 #####See Also#####
-- [Using Angular Signals with DevExtreme](/Documentation/Guide/Angular_Components/Common_Features/Using_Angular_Signals_with_DevExtreme/)
+- [Using Angular Signals with DevExtreme](/concepts/40%20Angular%20Components/40%20Common%20Features/20%20Using%20Angular%20Signals%20with%20DevExtreme.md '/Documentation/Guide/Angular_Components/Common_Features/Using_Angular_Signals_with_DevExtreme/')

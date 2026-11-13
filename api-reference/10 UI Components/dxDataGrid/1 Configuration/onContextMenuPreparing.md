@@ -36,6 +36,9 @@ The name of the element on which the context menu is invoked: *"headerPanel"*, *
 ##### field(e.targetElement): DxElement
 #include common-ref-elementparam with { element: "grid element" }
 
+##### field(e.event): event
+<!-- Description goes here -->
+
 ---
 In the following code, the **onContextMenuPreparing** function adds a custom item to the context menu invoked when a user right-clicks any column header:
 

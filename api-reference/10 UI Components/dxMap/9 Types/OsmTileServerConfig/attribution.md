@@ -4,7 +4,7 @@ type: String
 ---
 ---
 ##### shortDescription
-The attribution for the tile source (an HTML string).
+An attribution for a tile source (an HTML string).
 
 ---
 The Map does not add attribution automatically. Specify the copyright notices and links that your tile and data providers require.

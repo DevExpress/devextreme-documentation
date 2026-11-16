@@ -25,4 +25,4 @@ The following code snippet hides all tooltips when a user clicks outside markers
         hideTooltips();
     }
 
-This code does not hide tooltips that appear at marker creation ([isShown](/Documentation/ApiReference/UI_Components/dxMap/Configuration/markers/tooltip/#isShown) is `true`) until users click the corresponding markers.
+This code does not hide tooltips that appear at marker creation ([isShown](/Documentation/ApiReference/UI_Components/dxMap/Configuration/markers/tooltip/#isShown) is `true`) until users click corresponding markers.

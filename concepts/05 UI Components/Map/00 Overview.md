@@ -104,7 +104,7 @@ The Web Dashboard is a data analysis UI component that you can embed into your A
 
 The set of components allows you to deploy an all-in-one solution and switch between Viewer and Designer modes directly on the web client (includes adaptive layouts for tablet & mobile).
 
-The Web Dashboard is available as a part of a Universal subscription.
+The Web Dashboard is available as a part of our [Universal Subscription](https://www.devexpress.com/subscriptions/universal.xml).
 
 [Get Started with DevExpress BI Dashboard](https://docs.devexpress.com/Dashboard/115955/web-dashboard) | [Explore Demos](https://demos.devexpress.com/Dashboard/)
 

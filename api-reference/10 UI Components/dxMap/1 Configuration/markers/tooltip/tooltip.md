@@ -4,7 +4,7 @@ type: String | Object
 ---
 ---
 ##### shortDescription
-A tooltip to be used for the marker.
+A marker tooltip.
 
 ---
 This property takes an object that contains **text** and **isShown** fields. The **text** field specifies the tooltip text. The **isShown** field takes a Boolean value that specifies whether a tooltip is visible by default. If the tooltip should be hidden by default, pass the tooltip text directly to the tooltip property.

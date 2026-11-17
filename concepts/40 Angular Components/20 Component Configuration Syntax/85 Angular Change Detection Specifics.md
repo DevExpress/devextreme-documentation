@@ -1,4 +1,4 @@
-DevExtreme Angular components support both zone-based and zoneless change detection. Refer to the following help topic for more information: [Zoneless Change Detection](/Documentation/Guide/Angular_Components/Common_Features/Zoneless_Change_Detection/).
+DevExtreme Angular components support both zone-based and zoneless change detection. Refer to the following help topic for more information: [Zoneless Change Detection](/concepts/40%20Angular%20Components/40%20Common%20Features/25%20Zoneless%20Change%20Detection/00%20Zoneless%20Change%20Detection.md '/Documentation/Guide/Angular_Components/Common_Features/Zoneless_Change_Detection/').
 
 Angular activates change detection on each property change. This approach backfires when you try to pass functions to UI component properties that do not accept them. For example:
 

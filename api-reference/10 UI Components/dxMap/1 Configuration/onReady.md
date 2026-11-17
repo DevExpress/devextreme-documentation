@@ -8,7 +8,7 @@ default: undefined
 A function that is executed when the map is ready.
 
 ##### param(e): ui/map:ReadyEvent
-Information about the event.
+Information about the event that caused function execution.
 
 ##### field(e.component): {WidgetName}
 The UI component's instance.

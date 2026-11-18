@@ -3,7 +3,7 @@ id: ToolCall
 module: ui/chat
 export: ToolCall
 type: Object
-generateTypeLink:
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

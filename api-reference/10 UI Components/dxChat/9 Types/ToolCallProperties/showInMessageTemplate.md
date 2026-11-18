@@ -1,5 +1,5 @@
 ---
-id: ToolCall.Options.showInMessageTemplate
+id: ToolCallProperties.showInMessageTemplate
 type: Boolean
 default: false
 ---

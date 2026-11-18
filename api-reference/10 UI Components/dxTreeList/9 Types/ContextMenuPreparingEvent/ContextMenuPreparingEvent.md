@@ -2,7 +2,7 @@
 module: ui/tree_list
 export: ContextMenuPreparingEvent
 type: Object
-inherits: EventInfo
+inherits: NativeEventInfo
 uid: ui/tree_list:ContextMenuPreparingEvent
 generateTypeLink: 
 references: dxTreeList.Options.onContextMenuPreparing

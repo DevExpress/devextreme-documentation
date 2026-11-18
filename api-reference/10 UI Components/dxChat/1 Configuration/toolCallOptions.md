@@ -1,6 +1,6 @@
 ---
 id: dxChat.Options.toolCallOptions
-type: ToolCall_Options
+type: ToolCallProperties
 ---
 ---
 ##### shortDescription

@@ -1,5 +1,5 @@
 ---
-id: ToolCall.Options.expandAll
+id: ToolCallProperties.expandAll
 type: Boolean
 default: false
 ---

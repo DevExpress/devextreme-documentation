@@ -11,7 +11,7 @@ Specifies when the UI component displays the scrollbar.
 
 [note]
 
-**showScrollbar** values behave as follows when the UI component uses native scrolling (see [useNativeScrolling]({basewidgetpath}/Configuration/#useNativeScrolling)):
+**showScrollbar** values behave as follows when the UI component uses native scrolling (see [useNativeScrolling](/api-reference/10%20UI%20Components/dxList/1%20Configuration/useNativeScrolling.md '{basewidgetpath}/Configuration/#useNativeScrolling')):
 
 - *"always"*, *"onScroll"*, and *"onHover"*: scrollbar visibility depends on the platform.
 - *"never"*: the component hides scrollbars and disables user scrolling.

@@ -10703,6 +10703,9 @@
     "dxChatOptions.tabIndex": {
       "vue": "tab-index"
     },
+    "dxChatOptions.toolCallOptions": {
+      "vue": "tool-call-options"
+    },
     "dxChatOptions.typingUsers": {
       "angular": "dxi-typing-user",
       "react": "TypingUser",
@@ -12862,6 +12865,11 @@
     },
     "dxElement": {
       "vue": "dx-element"
+    },
+    "dxEvent": {
+      "angular": "dxo-dx-event",
+      "react": "DxEvent",
+      "vue": "DxDxEvent"
     },
     "dxFileManager": {
       "angular": "dx-file-manager",
@@ -22069,6 +22077,9 @@
     "enums.ToolboxDisplayMode": {
       "vue": "toolbox-display-mode"
     },
+    "enums.ToolCallStatus": {
+      "vue": "tool-call-status"
+    },
     "enums.TooltipShowMode": {
       "vue": "tooltip-show-mode"
     },
@@ -23893,8 +23904,39 @@
     "textMessage.isEdited": {
       "vue": "is-edited"
     },
+    "textMessage.toolCalls": {
+      "angular": "dxi-tool-call",
+      "react": "ToolCall",
+      "vue": "DxToolCall"
+    },
     "toolbarPreparingInfo.toolbarOptions": {
       "vue": "toolbar-options"
+    },
+    "toolCall": {
+      "angular": "dxo-tool-call",
+      "react": "ToolCall",
+      "vue": "DxToolCall"
+    },
+    "toolCall.arguments": {
+      "angular": "dxo-arguments",
+      "react": "Arguments",
+      "vue": "DxArguments"
+    },
+    "toolCall.result": {
+      "angular": "dxo-result",
+      "react": "Result",
+      "vue": "DxResult"
+    },
+    "toolCallProperties": {
+      "angular": "dxo-tool-call-properties",
+      "react": "ToolCallProperties",
+      "vue": "DxToolCallProperties"
+    },
+    "toolCallProperties.expandAll": {
+      "vue": "expand-all"
+    },
+    "toolCallProperties.showInMessageTemplate": {
+      "vue": "show-in-message-template"
     },
     "uploadInfo": {
       "vue": "upload-info"

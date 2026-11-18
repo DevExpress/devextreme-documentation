@@ -1,8 +1,9 @@
 ---
-id: ToolCall.Options
+id: ToolCallProperties
 module: ui/chat
-export: ToolCall_Options
-type: ui/chat:ToolCallOptions
+export: ToolCallProperties
+type: Object
+generateTypeLink: 
 ---
 ---
 ##### shortDescription

@@ -1,0 +1,1 @@
+If [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider) is *"osm"*, the Map uses [OpenLayers](https://openlayers.org/) to display maps. This provider displays marker tooltips in DevExtreme [Popover](/Documentation/ApiReference/UI_Components/dxPopover/) instances. Use OpenLayers and dxPopover APIs to customize the map and its marker tooltips.

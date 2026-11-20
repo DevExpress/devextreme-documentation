@@ -104,7 +104,7 @@ The Web Dashboard is a data analysis UI component that you can embed into your A
 
 The set of components allows you to deploy an all-in-one solution and switch between Viewer and Designer modes directly on the web client (includes adaptive layouts for tablet & mobile).
 
-The Web Dashboard is available as a part of a Universal subscription.
+The Web Dashboard is available as a part of our [Universal Subscription](https://www.devexpress.com/subscriptions/universal.xml).
 
 [Get Started with DevExpress BI Dashboard](https://docs.devexpress.com/Dashboard/115955/web-dashboard) | [Explore Demos](https://demos.devexpress.com/Dashboard/)
 
@@ -115,6 +115,7 @@ The Web Dashboard is available as a part of a Universal subscription.
 - [Map - Zoom and Center the Map](/concepts/05%20UI%20Components/Map/05%20Zoom%20and%20Center%20the%20Map.md '/Documentation/Guide/UI_Components/Map/Zoom_and_Center_the_Map/')
 - [Map - Specify the Provider and Type](/concepts/05%20UI%20Components/Map/10%20Specify%20the%20Provider%20and%20Type.md '/Documentation/Guide/UI_Components/Map/Specify_the_Provider_and_Type/')
 - [Map - OpenStreetMap Provider](/concepts/05%20UI%20Components/Map/12%20OpenStreetMap%20Provider/00%20OpenStreetMap%20Provider.md '/Documentation/Guide/UI_Components/Map/OpenStreetMap_Provider/')
+- [Map - Customize the OpenStreetMap Provider](/Documentation/Guide/UI_Components/Map/Customize_the_OpenStreetMap_Provider/)
 - [Map - Specify the Size](/concepts/05%20UI%20Components/Map/15%20Specify%20the%20Size.md '/Documentation/Guide/UI_Components/Map/Specify_the_Size/')
 - [Map - Configure Markers](/concepts/05%20UI%20Components/Map/20%20Configure%20Markers/05%20Add%20and%20Remove.md '/Documentation/Guide/UI_Components/Map/Configure_Markers/')
 - [Map - Configure Routes](/concepts/05%20UI%20Components/Map/25%20Configure%20Routes/05%20Add%20and%20Remove.md '/Documentation/Guide/UI_Components/Map/Configure_Routes/')

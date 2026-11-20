@@ -10,4 +10,4 @@ OpenLayers displays attributions in a collapsed control by default. Users can cl
 
 #####See Also#####
 
-- [Customize the OpenStreetMap Provider - Customize the Attribution Control](/Documentation/Guide/UI_Components/Map/Customize_the_OpenStreetMap_Provider/#Customize_the_OpenLayers_Map/Customize_the_Attribution_Control)
+- [Customize the OpenStreetMap Provider - Customize the Attribution Control](/concepts/05%20UI%20Components/Map/13%20Customize%20the%20OpenStreetMap%20Provider/10%20Customize%20the%20OpenLayers%20Map/15%20Customize%20the%20Attribution%20Control.md '/Documentation/Guide/UI_Components/Map/Customize_the_OpenStreetMap_Provider/#Customize_the_OpenLayers_Map/Customize_the_Attribution_Control')

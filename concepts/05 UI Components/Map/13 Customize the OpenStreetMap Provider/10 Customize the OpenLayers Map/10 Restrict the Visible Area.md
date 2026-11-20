@@ -17,4 +17,4 @@ Create an OpenLayers [View](https://openlayers.org/en/latest/apidoc/module-ol_Vi
         }));
     }
 
-The Map also applies this restriction to [center](/Documentation/ApiReference/UI_Components/dxMap/Configuration/center/) and [zoom](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#zoom) values.
+The Map also applies this restriction to [center](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/center '/Documentation/ApiReference/UI_Components/dxMap/Configuration/center/') and [zoom](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/zoom.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#zoom') values.

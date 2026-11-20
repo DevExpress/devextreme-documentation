@@ -7,4 +7,4 @@ Call [setMinZoom](https://openlayers.org/en/latest/apidoc/module-ol_View-View.ht
         view.setMaxZoom(16);
     }
 
-The Map also applies these limits to [zoom](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#zoom) values.
+The Map also applies these limits to [zoom](/api-reference/10%20UI%20Components/dxMap/1%20Configuration/zoom.md '/Documentation/ApiReference/UI_Components/dxMap/Configuration/#zoom') values.

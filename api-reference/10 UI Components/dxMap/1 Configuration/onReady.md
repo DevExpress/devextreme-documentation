@@ -5,7 +5,7 @@ default: undefined
 ---
 ---
 ##### shortDescription
-A function that is executed when the map is ready.
+A function that is executed when the Map component is ready.
 
 ##### param(e): ui/map:ReadyEvent
 Information about the event that caused function execution.

@@ -4,7 +4,7 @@ type: dxPopover
 ---
 ---
 ##### shortDescription
-The clicked marker's Popover instance.
+The Popover instance for the marker that the user clicked.
 
 ---
 **MarkerClickEvent**.**tooltip** is only available if [provider](/Documentation/ApiReference/UI_Components/dxMap/Configuration/#provider) is *"osm"*. This field contains the [Popover](/Documentation/ApiReference/UI_Components/dxPopover/) instance that displays the marker's [tooltip](/Documentation/ApiReference/UI_Components/dxMap/Configuration/markers/tooltip/) (or **undefined** if the marker has no tooltip).

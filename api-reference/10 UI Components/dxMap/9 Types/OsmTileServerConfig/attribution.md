@@ -7,7 +7,7 @@ type: String
 An attribution for a tile source (an HTML string).
 
 ---
-The Map does not add attribution automatically. Specify the copyright notices and links that your tile and data providers require.
+The Map component does not add attribution automatically. Specify copyright notices and links that your tile and data providers require.
 
 OpenLayers displays attribution in a collapsed control by default. Users can click the **i** button to expand this control.
 

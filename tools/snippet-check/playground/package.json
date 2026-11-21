@@ -1,0 +1,36 @@
+{
+  "name": "snippet-check-playground",
+  "private": true,
+  "description": "Pinned dependencies used to compile documentation snippets. Not published.",
+  "engines": {
+    "node": "^24.16.0"
+  },
+  "dependencies": {
+    "@angular/common": "~22.2.3",
+    "@angular/compiler": "~22.2.3",
+    "@angular/compiler-cli": "~22.2.3",
+    "@angular/core": "~22.2.3",
+    "@angular/forms": "~22.2.3",
+    "@angular/platform-browser": "~22.2.3",
+    "@types/file-saver": "^2.0.7",
+    "@types/file-saver-es": "^2.0.3",
+    "@types/jquery": "^3.5.32",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "devextreme": "26.1.5",
+    "devextreme-angular": "26.1.5",
+    "devextreme-exceljs-fork": "^4.5.0",
+    "devextreme-react": "26.1.5",
+    "devextreme-vue": "26.1.5",
+    "file-saver": "^2.0.5",
+    "file-saver-es": "^2.0.5",
+    "jquery": "^3.7.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "rxjs": "^7.8.0",
+    "typescript": "~6.0.0",
+    "vue": "^3.5.0",
+    "vue-tsc": "^3.0.0",
+    "zone.js": "^0.15.0"
+  }
+}
